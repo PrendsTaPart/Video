@@ -35,12 +35,13 @@
     },
     "12": {
       "scene1": "2f1f2533-00ce-4bc1-aa7f-bb3e2a50d22e",
-      "scene2": "d6533af5-f81b-4872-850c-2670deb5cc80",
+      "scene2": "cb1b8361-869c-44fd-a315-ab5fc087e032",
       "vo": {
         "generation_id": "kzEB3wToSJBmojcYmDGC",
         "duree_s": 5.8
       },
-      "note": "⚠️ Tenue de saison rompue entre les deux scènes : Michael porte la toque, la veste blanche et le tablier FoodEatUp en scène 1, mais une chemise puis une veste sombres, sans toque, en scène 2. La checklist de saison l'interdit — la scène 2 est à regénérer avant validation. L'épisode n'est pas déposé au catalogue pour cette raison."
+      "note": "Scène 2 regénérée : la tenue de saison est rétablie — toque, veste blanche et tablier FoodEatUp sur les deux scènes. Le plan précédent (d6533af5-f81b-4872-850c-2670deb5cc80) montrait Michael en chemise puis en veste sombres, sans toque ; il reste dans la bibliothèque Higgsfield mais n'est plus monté.",
+      "scene2_ecartee": "d6533af5-f81b-4872-850c-2670deb5cc80"
     },
     "13": {
       "scene1": "c1e87345-db97-4473-b1ef-2d5b5c43fd96",
@@ -78,7 +79,111 @@
         "generation_id": "39H9p4GwLO4iPUGKibSj",
         "duree_s": 6.73
       },
-      "note": "⚠️ La scène 2 tient un ticket couvert de texte généré en gros plan de 14 à 18 s. La checklist de saison interdit le texte généré par Seedance et nomme le ticket. Les glyphes ne forment pas de mots lisibles, mais le ticket est le sujet du plan : l’épisode n’est pas déposé au catalogue tant que ce point n’est pas tranché. La tenue de saison est respectée sur les deux scènes."
+      "note": "Le ticket couvert de glyphes en gros plan de 14 à 18 s a été soumis à l'auteur : il valide le plan tel quel. Les glyphes ne forment aucun mot lisible et la tenue de saison est respectée sur les deux scènes. L'épisode est déposé au catalogue."
+    },
+    "17": {
+      "scene1": "42de5879-32a2-4091-94bd-f736b5e8309e",
+      "scene2": "f029fff4-2c7a-4417-a158-235a992c538e",
+      "vo": {
+        "generation_id": "K8ywYl60KIlIe3L3evCa",
+        "duree_s": 5.57
+      }
+    },
+    "18": {
+      "scene1": "2c1b4679-fd3c-4db9-b5dd-7c4399f4ebcd",
+      "scene2": "39acf7eb-1444-4493-91a1-fb743e4d3cf1",
+      "vo": {
+        "generation_id": "pbec8pbxWpKYf90d5wQn",
+        "duree_s": 6.5
+      }
+    },
+    "19": {
+      "scene1": "8243f203-3d3b-4349-a4cb-91ed3ecbd544",
+      "scene2": "e0afe77b-f30e-4bcb-bc59-786da89a1839",
+      "vo": {
+        "generation_id": "4jisePeNMrs3mq9Uo5iK",
+        "duree_s": 6.87
+      }
+    },
+    "20": {
+      "scene1": "f9f8a822-61ea-4e68-80e7-fe28ca214dd7",
+      "scene2": "2d167e0e-4936-4f71-bedc-26217b8f69e6",
+      "vo": {
+        "generation_id": "FNSay7YHZUiVOo6SXk9I",
+        "duree_s": 6.83
+      }
+    },
+    "21": {
+      "scene1": "bbfe33e6-bd3b-44e7-a484-10b919104a9f",
+      "scene2": "ab21e8ff-2004-4365-aae2-8ffd1a98b645",
+      "vo": {
+        "generation_id": "RhAtiStMtDqovYiof3wi",
+        "duree_s": 6.46
+      }
+    },
+    "22": {
+      "scene1": "adbb3f0b-0e13-43f8-bc41-f9210e49f274",
+      "scene2": "72971adc-edc1-4f5d-99bb-1db4a8d26dfa",
+      "vo": {
+        "generation_id": "iqfN4HB8Hdtjk69B9w34",
+        "duree_s": 5.99
+      }
+    },
+    "23": {
+      "scene1": "68dc9e1b-cf1f-42c4-817d-39a6d1946ab6",
+      "scene2": "19560430-ac76-4c1b-94d9-c1e1ae1fb959",
+      "vo": {
+        "generation_id": "FXtGSHkI1jUoEK6SVeeP",
+        "duree_s": 5.43
+      }
+    },
+    "24": {
+      "scene1": "65ae83db-d956-4b1d-8193-2cb6d5313f71",
+      "scene2": "9402b57a-914c-4afb-8739-3742b7c022cf",
+      "vo": {
+        "generation_id": "dJqAzPmyilA8Mda27oVu",
+        "duree_s": 5.39
+      }
+    },
+    "25": {
+      "scene1": "698bedab-ab2e-4a11-85cf-686bf13fffec",
+      "scene2": "b46ea5a6-bdd9-4263-b7a4-10a44ee3ae13",
+      "vo": {
+        "generation_id": "0nzjed51sXsSm7DVw7wT",
+        "duree_s": 5.29
+      }
+    },
+    "26": {
+      "scene1": "3c69f12d-3cc6-4b9c-9213-de2b293a711c",
+      "scene2": "7d252bf4-91f1-42e4-b7b5-74414b108f9f",
+      "vo": {
+        "generation_id": "CiUTNt0MYx9aWqUzro4X",
+        "duree_s": 5.39
+      }
+    },
+    "27": {
+      "scene1": "ee9a4c7e-8a38-4407-b450-f0fe44a1af43",
+      "scene2": "1f0419f3-82c1-421d-a5d9-48c6678384f3",
+      "vo": {
+        "generation_id": "UJPziP244tCA6zKuSZwX",
+        "duree_s": 6.04
+      }
+    },
+    "28": {
+      "scene1": "2f3da8e7-86fd-4022-8179-c069f51f70c5",
+      "scene2": "3dea2561-0353-4abb-960e-09bb7a1ecf2c",
+      "vo": {
+        "generation_id": "7xcVEksmZnVJe9HmpSrV",
+        "duree_s": 6.5
+      },
+      "catalogue": {
+        "id": "EPC28",
+        "serie": "michael-fait-son-cinema",
+        "saison": 2,
+        "piece": "master",
+        "etat": "pret",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC28-le-jeu-tele-master"
+      }
     },
     "01": {
       "scene1": "2855b8b2-37c8-441f-8b56-58c02c6b1fe1",
@@ -109,7 +214,8 @@
         "saison": 2,
         "piece": "master",
         "etat": "pret",
-        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC02-le-controle-master"
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC02-le-controle-master-v2",
+        "note": "Master v2 : la cinquième carte « Checklist hygiène » n'apparaissait qu'au moment du fondu. Seul le calage des cartes change ; les plans et la voix sont les mêmes."
       }
     },
     "03": {
@@ -219,6 +325,30 @@
         "etat": "pret",
         "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC09-le-sous-marin-master"
       }
+    },
+    "29": {
+      "scene1": "1a21ac96-9504-46d6-8533-f30d9836789a",
+      "scene2": "9d1d2ab4-01fb-44fe-b267-7b1b320567cd",
+      "vo": {
+        "generation_id": "TX4phHru0XutcuEG5FzN",
+        "duree_s": 5.9
+      }
+    },
+    "30": {
+      "scene1": "5d8105b4-4032-4f72-94e0-0a19f9fe53ea",
+      "scene2": "a7946079-99e3-446c-bcd0-d95858ce1d87",
+      "vo": {
+        "generation_id": "8UYikEDTf3Frtxr0cEcL",
+        "duree_s": 3.34
+      },
+      "catalogue": {
+        "id": "EPC30",
+        "serie": "michael-fait-son-cinema",
+        "saison": 2,
+        "piece": "master",
+        "etat": "pret",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC30-la-ceremonie-master"
+      }
     }
   },
   "transition": {
@@ -263,7 +393,8 @@
     "d6533af5-f81b-4872-850c-2670deb5cc80": {
       "episode": 12,
       "scene": 2,
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_190616_d6533af5-f81b-4872-850c-2670deb5cc80.mp4"
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_190616_d6533af5-f81b-4872-850c-2670deb5cc80.mp4",
+      "note": "Écarté du montage : Michael y perd la tenue de saison (chemise puis veste sombres, sans toque). Conservé pour mémoire ; la scène 2 montée est cb1b8361."
     },
     "c1e87345-db97-4473-b1ef-2d5b5c43fd96": {
       "episode": 13,
@@ -394,6 +525,169 @@
       "episode": 9,
       "scene": 2,
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_161005_0e9d1f66-5fca-4a91-84e9-444996933ea8.mp4"
+    },
+    "42de5879-32a2-4091-94bd-f736b5e8309e": {
+      "episode": 17,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260829_232413_42de5879-32a2-4091-94bd-f736b5e8309e.mp4"
+    },
+    "f029fff4-2c7a-4417-a158-235a992c538e": {
+      "episode": 17,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_073208_f029fff4-2c7a-4417-a158-235a992c538e.mp4"
+    },
+    "2c1b4679-fd3c-4db9-b5dd-7c4399f4ebcd": {
+      "episode": 18,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_075609_2c1b4679-fd3c-4db9-b5dd-7c4399f4ebcd.mp4"
+    },
+    "39acf7eb-1444-4493-91a1-fb743e4d3cf1": {
+      "episode": 18,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_082005_39acf7eb-1444-4493-91a1-fb743e4d3cf1.mp4"
+    },
+    "8243f203-3d3b-4349-a4cb-91ed3ecbd544": {
+      "episode": 19,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_084314_8243f203-3d3b-4349-a4cb-91ed3ecbd544.mp4"
+    },
+    "e0afe77b-f30e-4bcb-bc59-786da89a1839": {
+      "episode": 19,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_090931_e0afe77b-f30e-4bcb-bc59-786da89a1839.mp4"
+    },
+    "f9f8a822-61ea-4e68-80e7-fe28ca214dd7": {
+      "episode": 20,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_094943_f9f8a822-61ea-4e68-80e7-fe28ca214dd7.mp4"
+    },
+    "2d167e0e-4936-4f71-bedc-26217b8f69e6": {
+      "episode": 20,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_101339_2d167e0e-4936-4f71-bedc-26217b8f69e6.mp4"
+    },
+    "bbfe33e6-bd3b-44e7-a484-10b919104a9f": {
+      "episode": 21,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_103811_bbfe33e6-bd3b-44e7-a484-10b919104a9f.mp4"
+    },
+    "ab21e8ff-2004-4365-aae2-8ffd1a98b645": {
+      "episode": 21,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_110112_ab21e8ff-2004-4365-aae2-8ffd1a98b645.mp4"
+    },
+    "adbb3f0b-0e13-43f8-bc41-f9210e49f274": {
+      "episode": 22,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_114845_adbb3f0b-0e13-43f8-bc41-f9210e49f274.mp4"
+    },
+    "72971adc-edc1-4f5d-99bb-1db4a8d26dfa": {
+      "episode": 22,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_122207_72971adc-edc1-4f5d-99bb-1db4a8d26dfa.mp4"
+    },
+    "328cec63-91cb-4771-8f1d-07164ded96dc": {
+      "episode": 23,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_125321_328cec63-91cb-4771-8f1d-07164ded96dc.mp4",
+      "ecartee": "Demandée en 16:9 par erreur — refaite en 9:16 à 13:20 (68dc9e1b)."
+    },
+    "68dc9e1b-cf1f-42c4-817d-39a6d1946ab6": {
+      "episode": 23,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_132033_68dc9e1b-cf1f-42c4-817d-39a6d1946ab6.mp4"
+    },
+    "19560430-ac76-4c1b-94d9-c1e1ae1fb959": {
+      "episode": 23,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_135055_19560430-ac76-4c1b-94d9-c1e1ae1fb959.mp4"
+    },
+    "65ae83db-d956-4b1d-8193-2cb6d5313f71": {
+      "episode": 24,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_142603_65ae83db-d956-4b1d-8193-2cb6d5313f71.mp4"
+    },
+    "9402b57a-914c-4afb-8739-3742b7c022cf": {
+      "episode": 24,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_145316_9402b57a-914c-4afb-8739-3742b7c022cf.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré)."
+    },
+    "698bedab-ab2e-4a11-85cf-686bf13fffec": {
+      "episode": 25,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_153536_698bedab-ab2e-4a11-85cf-686bf13fffec.mp4"
+    },
+    "b46ea5a6-bdd9-4263-b7a4-10a44ee3ae13": {
+      "episode": 25,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_160545_b46ea5a6-bdd9-4263-b7a4-10a44ee3ae13.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré)."
+    },
+    "3c69f12d-3cc6-4b9c-9213-de2b293a711c": {
+      "episode": 26,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_162819_3c69f12d-3cc6-4b9c-9213-de2b293a711c.mp4"
+    },
+    "7d252bf4-91f1-42e4-b7b5-74414b108f9f": {
+      "episode": 26,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_165431_7d252bf4-91f1-42e4-b7b5-74414b108f9f.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré)."
+    },
+    "ee9a4c7e-8a38-4407-b450-f0fe44a1af43": {
+      "episode": 27,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_172208_ee9a4c7e-8a38-4407-b450-f0fe44a1af43.mp4"
+    },
+    "1f0419f3-82c1-421d-a5d9-48c6678384f3": {
+      "episode": 27,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_174514_1f0419f3-82c1-421d-a5d9-48c6678384f3.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré)."
+    },
+    "2f3da8e7-86fd-4022-8179-c069f51f70c5": {
+      "episode": 28,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_181029_2f3da8e7-86fd-4022-8179-c069f51f70c5.mp4"
+    },
+    "3dea2561-0353-4abb-960e-09bb7a1ecf2c": {
+      "episode": 28,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_183646_3dea2561-0353-4abb-960e-09bb7a1ecf2c.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré).",
+      "bibliotheque": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC28-le-jeu-tele-source-scene2"
+    },
+    "1a21ac96-9504-46d6-8533-f30d9836789a": {
+      "episode": 29,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_190127_1a21ac96-9504-46d6-8533-f30d9836789a.mp4",
+      "bibliotheque": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC29-les-gangsters-source-scene1"
+    },
+    "5d8105b4-4032-4f72-94e0-0a19f9fe53ea": {
+      "episode": 30,
+      "scene": 1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_195140_5d8105b4-4032-4f72-94e0-0a19f9fe53ea.mp4",
+      "bibliotheque": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC30-la-ceremonie-source-scene1"
+    },
+    "a7946079-99e3-446c-bcd0-d95858ce1d87": {
+      "episode": 30,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_201440_a7946079-99e3-446c-bcd0-d95858ce1d87.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré).",
+      "bibliotheque": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC30-la-ceremonie-source-scene2"
+    },
+    "9d1d2ab4-01fb-44fe-b267-7b1b320567cd": {
+      "episode": 29,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_210504_9d1d2ab4-01fb-44fe-b267-7b1b320567cd.mp4",
+      "note": "Généré par l'utilisateur dans l'interface Higgsfield, en reprenant la mise en scène d'origine (le rouleau sort par la porte) que la remise en scène au comptoir devait contourner. Le plan est passé : « seventies movie » au lieu de « seventies gangster movie », et « chèque de banque » au lieu de « chéquier »."
+    },
+    "cb1b8361-869c-44fd-a315-ab5fc087e032": {
+      "episode": 12,
+      "scene": 2,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GXYlNxkbz83gXaGDVVrTni1dX2/hf_20260830_214452_cb1b8361-869c-44fd-a315-ab5fc087e032.mp4",
+      "note": "Produit en extension de la scène 1 : le job annonce 16:9 dans ses paramètres, le fichier livré est en 720×1280 (mesuré). Remplace le plan écarté pour rupture de tenue."
     }
   }
 }

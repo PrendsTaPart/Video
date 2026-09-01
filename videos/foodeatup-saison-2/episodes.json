@@ -2572,6 +2572,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "300 crêpes"
+       },
+       {
+        "chip": "12 kg farine"
+       },
+       {
+        "chip": "lait manquant"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Production",
+      "chips": [
+       "À lancer",
+       "Validées"
+      ],
+      "chip_actif": 0,
+      "confirmation": "production validée",
+      "lignes": 3,
+      "cible": 0,
+      "statut_initial": "à lancer",
+      "statut_final": "validé",
+      "label_bas": "Le stock suit"
+     }
+    },
     "vo": "Trois cents crêpes, c'est un plan de production. FoodEatUp calcule les ingrédients, prévient ce qui manque et met le stock à jour.",
     "vo_variante_courte": "Trois cents crêpes, c'est un plan de production. FoodEatUp calcule les ingrédients et suit le stock.",
     "beats": [
@@ -2683,6 +2714,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "12 couverts"
+       },
+       {
+        "chip": "50 couverts"
+       },
+       {
+        "chip": "devis 1 240 €"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Privatisations",
+      "chips": [
+       "Demandes",
+       "Confirmées"
+      ],
+      "chip_actif": 0,
+      "confirmation": "devis envoyé",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "demande",
+      "statut_final": "confirmée",
+      "label_bas": "Événements privés"
+     }
+    },
     "vo": "Douze ou cinquante, tout est écrit : la demande, le devis, la salle, la facture. FoodEatUp gère vos privatisations de bout en bout.",
     "vo_variante_courte": "Douze ou cinquante : la demande, le devis, la salle, la facture. FoodEatUp gère vos privatisations.",
     "beats": [
@@ -2796,6 +2858,38 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "3 km"
+       },
+       {
+        "chip": "8 km"
+       },
+       {
+        "chip": "hors zone"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "titre": "Zones de livraison",
+      "chips": [
+       "Zone 1",
+       "Zone 2",
+       "Hors zone"
+      ],
+      "chip_actif": 0,
+      "confirmation": "zone enregistrée",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 4
+      },
+      "label_bas": "Frais de livraison"
+     }
+    },
     "vo": "Livrez là où vous livrez, pas plus loin. FoodEatUp définit vos zones, vos frais, et suit chaque commande.",
     "beats": [
      {
@@ -2906,6 +3000,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "17:00"
+       },
+       {
+        "chip": "19:00"
+       },
+       {
+        "chip": "−30 %"
+       }
+      ],
+      "alerte": false
+     },
+     "acte3": {
+      "titre": "Happy hours",
+      "chips": [
+       "Lun–Jeu",
+       "Ven–Dim"
+      ],
+      "chip_actif": 0,
+      "confirmation": "happy hour activée",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 1
+      },
+      "label_bas": "Boissons"
+     }
+    },
     "vo": "Le jour, l'heure, la remise, les boissons : tout est réglé d'avance. Quand ils sortent, FoodEatUp est déjà prêt.",
     "vo_variante_courte": "Le jour, l'heure, la remise : tout est réglé d'avance. Quand ils sortent, FoodEatUp est prêt.",
     "beats": [
@@ -3017,6 +3142,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "12 couverts"
+       },
+       {
+        "chip": "vin ÷ 5"
+       },
+       {
+        "chip": "reste 0 €"
+       }
+      ],
+      "alerte": false
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Note",
+      "chips": [
+       "Par article",
+       "Par personne"
+      ],
+      "chip_actif": 0,
+      "confirmation": "note divisée",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "à répartir",
+      "statut_final": "réglé",
+      "label_bas": "Caisse"
+     }
+    },
     "vo": "Douze personnes, une note, zéro migraine. FoodEatUp divise la note par article, par personne ou en parts égales.",
     "vo_variante_courte": "Douze personnes, une note, zéro migraine. FoodEatUp divise par article, par personne ou en parts égales.",
     "beats": [
@@ -3131,6 +3287,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "14,00 €"
+       },
+       {
+        "chip": "16,20 €"
+       },
+       {
+        "chip": "−2,20 €"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Recettes",
+      "chips": [
+       "Rentables",
+       "À revoir"
+      ],
+      "chip_actif": 1,
+      "confirmation": "prix ajusté",
+      "lignes": 3,
+      "cible": 0,
+      "statut_initial": "marge −16 %",
+      "statut_final": "marge 32 %",
+      "label_bas": "Analyse de la carte"
+     }
+    },
     "vo": "Chaque plat a un coût, une marge, un prix juste. FoodEatUp les calcule avant que vous misiez.",
     "beats": [
      {
@@ -3242,6 +3429,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "47 visites"
+       },
+       {
+        "chip": "sans oignon"
+       },
+       {
+        "chip": "table 4"
+       }
+      ],
+      "alerte": false
+     },
+     "acte3": {
+      "titre": "Clients",
+      "chips": [
+       "Habitués",
+       "Nouveaux"
+      ],
+      "chip_actif": 0,
+      "confirmation": "fiche client à jour",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 0
+      },
+      "label_bas": "Fidélité"
+     }
+    },
     "vo": "Ses habitudes, vous les connaissez, même sans mémoire. FoodEatUp garde l'historique, les préférences et la fidélité de chaque client.",
     "vo_variante_courte": "Même sans mémoire, vous connaissez ses habitudes. FoodEatUp garde l'historique et la fidélité.",
     "beats": [
@@ -3354,6 +3572,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "table 6"
+       },
+       {
+        "chip": "2 pizzas"
+       },
+       {
+        "chip": "envoyée"
+       }
+      ],
+      "alerte": false
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Commandes",
+      "chips": [
+       "En salle",
+       "En cuisine"
+      ],
+      "chip_actif": 0,
+      "confirmation": "commande envoyée",
+      "lignes": 3,
+      "cible": 0,
+      "statut_initial": "prise",
+      "statut_final": "en cuisine",
+      "label_bas": "Écran cuisine"
+     }
+    },
     "vo": "Une commande, ça ne s'envole pas. Avec FoodEatUp, elle part de la table à la cuisine en une seconde.",
     "beats": [
      {
@@ -3464,6 +3713,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "3 appels"
+       },
+       {
+        "chip": "1 réservation"
+       },
+       {
+        "chip": "0 manqué"
+       }
+      ],
+      "alerte": false
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Appels",
+      "chips": [
+       "Pris",
+       "Manqués"
+      ],
+      "chip_actif": 0,
+      "confirmation": "réservation enregistrée",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "en attente",
+      "statut_final": "traité",
+      "label_bas": "Agent vocal"
+     }
+    },
     "vo": "Le téléphone répond tout seul. L'agent vocal FoodEatUp prend la réservation ou la commande pendant que vous servez.",
     "vo_variante_courte": "Le téléphone répond tout seul. L'agent vocal FoodEatUp prend la réservation pendant que vous servez.",
     "beats": [
@@ -3578,6 +3858,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "lundi"
+       },
+       {
+        "chip": "hotte"
+       },
+       {
+        "chip": "Michael"
+       }
+      ],
+      "alerte": false
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Plan de nettoyage",
+      "chips": [
+       "À faire",
+       "Fait"
+      ],
+      "chip_actif": 1,
+      "confirmation": "action enregistrée",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "à faire",
+      "statut_final": "fait",
+      "label_bas": "Checklist hygiène"
+     }
+    },
     "vo": "Qui, quoi, quand : c'est écrit. Le plan de nettoyage FoodEatUp enregistre chaque action, pas besoin de détective.",
     "vo_variante_courte": "Qui, quoi, quand : c'est écrit. Le plan de nettoyage FoodEatUp enregistre chaque action.",
     "beats": [
@@ -3690,6 +4001,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "samedi"
+       },
+       {
+        "chip": "3 demandes"
+       },
+       {
+        "chip": "0 en salle"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "titre": "Planning",
+      "chips": [
+       "Semaine",
+       "Samedi"
+      ],
+      "chip_actif": 1,
+      "confirmation": "samedi couvert",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 4
+      },
+      "label_bas": "Congés"
+     }
+    },
     "vo": "Un congé validé, un planning à jour, un samedi couvert. FoodEatUp vous prévient avant que vous signiez.",
     "beats": [
      {
@@ -3801,6 +4143,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "roue"
+       },
+       {
+        "chip": "30 desserts"
+       },
+       {
+        "chip": "stock à sec"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Roue cadeaux",
+      "chips": [
+       "Lots",
+       "Bons"
+      ],
+      "chip_actif": 1,
+      "confirmation": "stock à jour",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "à valider",
+      "statut_final": "validé",
+      "label_bas": "Fidélité"
+     }
+    },
     "vo": "La roue tourne, les lots sont limités, le stock suit. La fidélité FoodEatUp, c'est du jeu avec des règles.",
     "vo_variante_courte": "La roue tourne, les lots sont limités, le stock suit. La fidélité FoodEatUp, c'est réglé.",
     "beats": [
@@ -3884,35 +4257,66 @@
     {
      "n": 2,
      "titre": "Tu prends les chèques ?",
-     "resume": "Le rouleau de caisse traverse la salle et descend la rue",
-     "location_line": "Location = @Image 3.",
+     "resume": "Le rouleau de caisse déborde du comptoir et s'entasse par terre",
+     "location_line": "Location = @Image 3 (counter), one single place for the whole shot.",
      "format_line": "9:16, 10 s, 4 shots, realistic comedy shot like a seventies gangster movie.",
-     "scene": "One evening the regular returns, jovial, and asks for his total.",
+     "scene": "One evening the regular returns, jovial, and asks for his total; Michael pulls the till roll and it does not stop.",
      "action": [
       {
        "t": "0–2 s",
-       "texte": "the regular asks; Michael reaches for the till roll."
+       "texte": "the regular sets his glass on the counter and asks; Michael reaches for the till roll."
       },
       {
        "t": "2–5 s",
-       "texte": "he unrolls the paper: it crosses the room, passes the door and rolls down the street in slow motion."
+       "texte": "the paper keeps coming: it spills over the edge of the counter and starts piling on the floor between them."
       },
       {
        "t": "5–8 s",
-       "texte": "the regular follows the paper with his eyes, very slowly; both react with the same syllable."
+       "texte": "wide: the heap now reaches their knees; the regular looks down at it, then at Michael; both react with the same syllable."
       },
       {
        "t": "8–10 s",
-       "texte": "the regular pulls out a chequebook; Michael looks at the camera as the roll flutters in the wind."
+       "texte": "the regular pulls a chequebook from his jacket; Michael looks at the camera, paper still falling behind him."
       }
      ],
      "dialogue": "Regular: « Je dois combien ? » Regular: « Ah. » Michael: « Ah. » Regular: « Tu prends les chèques ? »",
-     "camera": "two-shot → tracking along the unrolling paper out the door → slow pan on the regular's face → close-up on Michael.",
-     "light": "amber interior, blue street at dusk, paper glowing in the doorway.",
-     "audio": "paper unrolling endlessly, street ambience, silence, chequebook flap, wind on paper."
+     "camera": "two-shot at the counter → close-up on the paper spilling over the edge → wide on the growing heap → close-up on Michael, the counter always in frame.",
+     "light": "amber practicals, seventies grain, deep brown shadows, the paper bright against the wood.",
+     "audio": "paper unrolling without pause, glass set down, ice, silence, chequebook flap."
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "habitué"
+       },
+       {
+        "chip": "six mois"
+       },
+       {
+        "chip": "solde inconnu"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Ardoises",
+      "chips": [
+       "Ouvertes",
+       "Soldées"
+      ],
+      "chip_actif": 1,
+      "confirmation": "ardoise soldée",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "dû",
+      "statut_final": "réglé",
+      "label_bas": "Caisse"
+     }
+    },
     "vo": "L'ardoise est numérique : elle ne s'oublie pas, elle ne s'envole pas. Solde, historique, règlement, dans FoodEatUp.",
     "vo_variante_courte": "L'ardoise est numérique : elle ne s'oublie pas. Solde, historique, règlement, dans FoodEatUp.",
     "beats": [
@@ -4026,6 +4430,37 @@
     }
    ],
    "montage": {
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "30 films"
+       },
+       {
+        "chip": "1 restaurant"
+       },
+       {
+        "chip": "1 système"
+       }
+      ],
+      "alerte": false
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Le restaurant",
+      "chips": [
+       "Hier",
+       "Aujourd'hui"
+      ],
+      "chip_actif": 1,
+      "confirmation": "tout est relié",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "papier",
+      "statut_final": "FoodEatUp",
+      "label_bas": "Trente épisodes"
+     }
+    },
     "vo": "Trente films. Un restaurant. Un seul système. FoodEatUp.",
     "beats": [
      {

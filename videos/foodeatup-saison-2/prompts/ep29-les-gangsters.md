@@ -35,21 +35,21 @@ PHYSICS: realistic body weight, no morphing, no sliding feet, correct hands and 
 
 ## SEEDANCE 02 — Tu prends les chèques ?
 
-*Le rouleau de caisse traverse la salle et descend la rue*
+*Le rouleau de caisse déborde du comptoir et s'entasse par terre*
 
 ```text
-REF: Michael = @Image 1 (face, hair, build) + @Image 2 (season outfit), keep identical. Location = @Image 3.
+REF: Michael = @Image 1 (face, hair, build) + @Image 2 (season outfit), keep identical. Location = @Image 3 (counter), one single place for the whole shot.
 FORMAT: 9:16, 10 s, 4 shots, realistic comedy shot like a seventies gangster movie.
-SCENE: One evening the regular returns, jovial, and asks for his total.
+SCENE: One evening the regular returns, jovial, and asks for his total; Michael pulls the till roll and it does not stop.
 ACTION:
-0–2 s: the regular asks; Michael reaches for the till roll.
-2–5 s: he unrolls the paper: it crosses the room, passes the door and rolls down the street in slow motion.
-5–8 s: the regular follows the paper with his eyes, very slowly; both react with the same syllable.
-8–10 s: the regular pulls out a chequebook; Michael looks at the camera as the roll flutters in the wind.
+0–2 s: the regular sets his glass on the counter and asks; Michael reaches for the till roll.
+2–5 s: the paper keeps coming: it spills over the edge of the counter and starts piling on the floor between them.
+5–8 s: wide: the heap now reaches their knees; the regular looks down at it, then at Michael; both react with the same syllable.
+8–10 s: the regular pulls a chequebook from his jacket; Michael looks at the camera, paper still falling behind him.
 DIALOGUE (spoken French, slow and clear, natural lip-sync, no captions): Regular: « Je dois combien ? » Regular: « Ah. » Michael: « Ah. » Regular: « Tu prends les chèques ? »
-CAMERA: two-shot → tracking along the unrolling paper out the door → slow pan on the regular's face → close-up on Michael.
-LIGHT & GRADE: amber interior, blue street at dusk, paper glowing in the doorway.
-AUDIO: paper unrolling endlessly, street ambience, silence, chequebook flap, wind on paper.
+CAMERA: two-shot at the counter → close-up on the paper spilling over the edge → wide on the growing heap → close-up on Michael, the counter always in frame.
+LIGHT & GRADE: amber practicals, seventies grain, deep brown shadows, the paper bright against the wood.
+AUDIO: paper unrolling without pause, glass set down, ice, silence, chequebook flap.
 PHYSICS: realistic body weight, no morphing, no sliding feet, correct hands and fingers, no extra limbs. SKIN: preserve Michael's natural skin and features from @Image 1, no smoothing, no plastic look. NO-IP: no brands, no logos, no readable text, no captions or subtitles, no recognizable songs, no real celebrity likeness, no minors. Keep Michael's face, hair, build and outfit identical through the whole clip. Sharp, clean, cinematic render.
 ```
 

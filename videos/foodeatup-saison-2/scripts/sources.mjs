@@ -44,9 +44,20 @@ for (const [n, src] of Object.entries(SRC.episodes)) {
   L.push(`| Voix | **${S.voix_off.voix}** \`${S.voix_off.voice_id}\`, modèle \`${S.voix_off.model_id}\` |`);
   L.push(`| Transition (commune aux 30 épisodes) | « ${S.transition.texte} » — prise \`${SRC.transition.generation_id}\` (${fr(SRC.transition.duree_s)} s), calée à ${fr(S.transition.cale_s)} s |`);
   L.push(`| Ligne de l'épisode | « ${ep.montage.vo} » |`);
-  L.push(`| Prise retenue | \`${src.vo.generation_id}\` (${fr(src.vo.duree_s)} s) |`);
-  const depart = Math.max(4.25, Math.min(4.6, 10.9 - src.vo.duree_s));
-  L.push(`| Calage | démarre à **${fr(depart.toFixed(2))} s**, se termine à **${fr((depart + src.vo.duree_s).toFixed(2))} s** (fenêtre : avant 11,0 s) ${depart + src.vo.duree_s <= 11 ? "✅" : "⚠️"} |`, "");
+  /*
+   * Un épisode dont les plans viennent d'arriver n'a pas encore sa voix off.
+   * Le générateur mourait dessus, et emportait avec lui les fiches des
+   * épisodes suivants — la provenance des plans déjà récupérés devenait
+   * illisible parce qu'une étape ultérieure manquait. Elle doit s'écrire à
+   * chaque étape, en disant ce qui n'est pas encore fait.
+   */
+  if (src.vo) {
+    L.push(`| Prise retenue | \`${src.vo.generation_id}\` (${fr(src.vo.duree_s)} s) |`);
+    const depart = Math.max(4.25, Math.min(4.6, 10.9 - src.vo.duree_s));
+    L.push(`| Calage | démarre à **${fr(depart.toFixed(2))} s**, se termine à **${fr((depart + src.vo.duree_s).toFixed(2))} s** (fenêtre : avant 11,0 s) ${depart + src.vo.duree_s <= 11 ? "✅" : "⚠️"} |`, "");
+  } else {
+    L.push(`| Prise retenue | *pas encore enregistrée* |`, "");
+  }
   L.push(`Les prises ElevenLabs sortent très bas : chacune est normalisée à −16 LUFS / −1,5 dBTP.`);
   L.push(`Le départ de la voix est calculé pour qu'elle finisse avant 11,0 s : 4,60 s par défaut, avancé quand
 la prise est longue. L'outro est ensuite calé au niveau de saison (−18,5 LUFS), puis le master normalisé`);

@@ -1,0 +1,39 @@
+{
+  "commentaire": [
+    "Les bornes de section de « C'est ma maison », relevées sur l'audio et non",
+    "sur les durées visées du plan d'écriture : la chanson fait 175,08 s là où le",
+    "plan en visait 256. Chaque borne tombe sur un début de mesure de la grille",
+    "mesurée à 92,29 BPM (2,60 s la mesure, premier temps à 0,163 s).",
+    "",
+    "La méthode : profil d'énergie par mesure, en séparant le total du bas du",
+    "spectre. Le pont est écrit sans batterie — c'est le grave qui doit",
+    "s'effondrer, pas seulement le volume. Il s'effondre : 0,94 à la mesure 36,",
+    "0,15 à la mesure 41. La prise remplit donc le premier critère du prompt.",
+    "",
+    "`coupe_beats` dit la longueur d'une coupe en temps. Une valeur unique tient",
+    "toute la section ; une liste de deux valeurs [a, b] resserre de a vers b."
+  ],
+  "chanson": "clip-musical/chanson/c-est-ma-maison.mp3",
+  "bpm_mesure": 92.29,
+  "duree_s": 175.08,
+  "sections": [
+    { "nom": "intro",         "mesure_debut": 0,  "mesure_fin": 4,  "coupe_beats": 8,
+      "note": "Deux plans, deux mesures chacun. On installe le lieu avant l'histoire." },
+    { "nom": "couplet-1",     "mesure_debut": 4,  "mesure_fin": 12, "coupe_beats": 3,
+      "note": "Dix plans, dix coupes : chacun passe une fois, on laisse voir." },
+    { "nom": "refrain-1",     "mesure_debut": 12, "mesure_fin": 20, "coupe_beats": 2,
+      "note": "Deux temps par coupe. Les sept plans reviennent, jamais la même fenêtre." },
+    { "nom": "couplet-2",     "mesure_debut": 20, "mesure_fin": 29, "coupe_beats": [2, 1],
+      "note": "La noyade : les coupes se resserrent de deux temps à un, ligne après ligne." },
+    { "nom": "refrain-2",     "mesure_debut": 29, "mesure_fin": 37, "coupe_beats": 1,
+      "note": "Mêmes plans qu'au premier refrain, coupes plus dures : un temps." },
+    { "nom": "pont",          "mesure_debut": 37, "mesure_fin": 45, "coupe_beats": 0,
+      "note": "UN SEUL PLAN, AUCUNE COUPE. 0 signifie : la section entière d'un trait." },
+    { "nom": "couplet-3",     "mesure_debut": 45, "mesure_fin": 54, "coupe_beats": 3,
+      "note": "Les gestes qui se posent. Coupes régulières, aucune accélération." },
+    { "nom": "refrain-final", "mesure_debut": 54, "mesure_fin": 63, "coupe_beats": "un-par-plan",
+      "note": "Trente coupes pour trente épisodes, dans l'ordre du catalogue." },
+    { "nom": "outro",         "mesure_debut": 63, "mesure_fin": null, "coupe_beats": 0,
+      "note": "Le dernier plan de la saison, d'un trait, jusqu'au fondu au noir." }
+  ]
+}

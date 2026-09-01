@@ -46,7 +46,7 @@ la prise est longue. L'outro est ensuite calé au niveau de saison (−18,5 LUFS
 | Épisode au catalogue | `EPC02` — série `michael-fait-son-cinema`, saison 2 |
 | Pièce | `master` |
 | État | **pret** |
-| Fichier | https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC02-le-controle-master |
+| Fichier | https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/michael-fait-son-cinema-EPC02-le-controle-master-v2 |
 
 « pret » s'écrit par un agent, « valide » est un geste humain dans /admin/production. Rien ne se planifie sur les réseaux sans « valide » : aucun outil n'expose cette bascule.
 

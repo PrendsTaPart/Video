@@ -1,0 +1,172 @@
+<!-- Cartons d'ouverture et de fin du clip musical — gabarit déterministe.
+     Même méthode que outro/template.html : aucune animation CSS, tout est calculé
+     par seek(image). Deux rôles dans un seul fichier, parce que les deux cartons
+     partagent le fond, la typo, le halo et la façon dont le logo entre : les
+     séparer en deux gabarits, c'est se condamner à les faire diverger. -->
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "Goodly"; src: url(__FONT__) format("woff2"); font-weight: 300 700; font-display: block; }
+:root{ --bg:#0F1A23; --blue:#007BFF; --orange:#FFA500; --cream:#FCF9E6; --sky:#A6D0FF; }
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg)}
+body{font-family:"Goodly","Fredoka",system-ui,sans-serif;color:var(--cream);-webkit-font-smoothing:antialiased}
+.stage{position:absolute;inset:0;width:1080px;height:1920px;overflow:hidden}
+
+/* Le halo bleu derrière le logo. Il ne porte aucune information : il donne au
+   logo un fond à lui sur l'anthracite, sans ajouter la bordure que la charte
+   interdit. */
+#halo{position:absolute;left:50%;top:50%;width:900px;height:900px;margin:-450px 0 0 -450px;
+  border-radius:999px;background:radial-gradient(circle,rgba(0,123,255,.42) 0%,rgba(0,123,255,0) 62%)}
+
+/* L'anneau orange du carton de fin : une onde qui part du logo et sort du cadre. */
+.ring{position:absolute;left:50%;top:50%;border-radius:999px;border:6px solid var(--orange)}
+
+/* Le logo. Jamais redessiné, jamais recoloré, jamais rogné : c'est le PNG
+   officiel, mis à l'échelle et rien d'autre. */
+#logo{position:absolute;left:50%;top:50%;width:600px;margin-left:-300px;transform-origin:50% 50%}
+#logo img{width:100%;display:block}
+
+/* Le trait bleu qui balaie sous le logo — il donne le mouvement pendant que le
+   texte monte, et il reprend le « flux lumineux » de la charte. */
+#trait{position:absolute;left:50%;height:6px;margin-left:-270px;border-radius:6px;
+  background:linear-gradient(90deg,rgba(0,123,255,0),var(--blue),rgba(0,123,255,0))}
+
+.mention{position:absolute;left:0;right:0;text-align:center;font-size:46px;font-weight:500;
+  letter-spacing:14px;color:var(--sky)}
+.credit{position:absolute;left:0;right:0;text-align:center;font-size:86px;font-weight:600;line-height:1.12}
+.titre{position:absolute;left:0;right:0;text-align:center;font-size:126px;font-weight:700;
+  letter-spacing:-2px;line-height:1}
+.contexte{position:absolute;left:0;right:0;text-align:center;font-size:50px;font-weight:500;color:var(--sky)}
+.signature{position:absolute;left:0;right:0;text-align:center;font-size:58px;font-weight:500;color:var(--sky)}
+
+/* Le voile de sortie : le carton s'éteint vers le noir exact du fond, pour que
+   le raccord avec le montage (qui ouvre et ferme sur un fondu au noir) ne
+   laisse pas voir une bascule de niveau. */
+#voile{position:absolute;inset:0;background:#000;opacity:0}
+</style>
+
+<div class="stage">
+  <div id="halo"></div>
+  <div id="anneaux"></div>
+  <div id="logo"><img src="__LOGO__" alt=""></div>
+  <div id="trait"></div>
+  <div class="mention" id="m1"></div>
+  <div class="credit"  id="m2"></div>
+  <div class="titre"   id="t1"></div>
+  <div class="contexte" id="t2"></div>
+  <div class="signature" id="sg"></div>
+  <div id="voile"></div>
+</div>
+
+<script>
+const D = __DATA__;
+const clamp = (v,a,b)=>Math.min(b,Math.max(a,v));
+const lin = (f,a,b)=>clamp((f-a)/(b-a),0,1);
+const expoOut = t => t>=1?1:1-Math.pow(2,-10*t);
+const px = v => v.toFixed(2)+"px";
+const el = id => document.getElementById(id);
+
+/* Trois anneaux pour l'onde de fin, posés une fois. */
+for (let i=0;i<3;i++){
+  const r = document.createElement("div");
+  r.className = "ring"; r.dataset.i = String(i);
+  el("anneaux").appendChild(r);
+}
+const ANNEAUX = [...document.querySelectorAll(".ring")];
+
+/* Tout ce qui n'appartient pas au rôle courant est retiré du calcul, pas
+   seulement caché : un élément à opacité 0 qui traîne finit toujours par
+   réapparaître le jour où l'on ajoute une étape. */
+const OUVERTURE = D.role === "ouverture";
+el("m1").textContent = OUVERTURE ? D.mention : "";
+el("m2").innerHTML   = OUVERTURE ? D.credit : "";
+el("t1").textContent = OUVERTURE ? "" : D.titre;
+el("t2").textContent = OUVERTURE ? "" : D.contexte;
+el("sg").textContent = OUVERTURE ? "" : D.signature;
+
+function seek(f){
+  const N = D.images;
+  ANNEAUX.forEach(r => { r.style.opacity = "0"; });
+
+  if (OUVERTURE){
+    /* ---------- 0,00–0,60 s : le logo arrive ----------
+       Il entre légèrement trop grand et se pose : c'est le seul dépassement de
+       tout le carton, et il sert à faire exister la marque avant le texte. */
+    const lIn = expoOut(lin(f, 0, 18));
+    el("logo").style.top = "790px";
+    el("logo").style.opacity = String(lIn);
+    el("logo").style.transform = `translateY(-50%) scale(${(1.06 - 0.06*lIn).toFixed(4)})`;
+    el("halo").style.top = "790px";
+    el("halo").style.opacity = String(0.9*lIn);
+    el("halo").style.transform = `scale(${(0.55 + 0.45*lIn).toFixed(3)})`;
+
+    /* 0,25–0,85 s : le trait bleu s'ouvre sous le logo. */
+    const tIn = expoOut(lin(f, 8, 26));
+    el("trait").style.top = "990px";
+    el("trait").style.width = px(540*tIn);
+    el("trait").style.marginLeft = px(-270*tIn);
+    el("trait").style.opacity = String(tIn);
+
+    /* 0,60–1,20 s : la mention monte. */
+    const a1 = expoOut(lin(f, 18, 36));
+    el("m1").style.top = "1110px";
+    el("m1").style.opacity = String(a1);
+    el("m1").style.transform = `translateY(${px(28*(1-a1))})`;
+
+    /* 0,93–1,60 s : les deux noms. */
+    const a2 = expoOut(lin(f, 28, 48));
+    el("m2").style.top = "1200px";
+    el("m2").style.opacity = String(a2);
+    el("m2").style.transform = `translateY(${px(34*(1-a2))})`;
+
+  } else {
+    /* ---------- carton de fin ----------
+       0,00–0,70 s : le titre du clip. */
+    const t = expoOut(lin(f, 0, 21));
+    el("t1").style.top = "700px";
+    el("t1").style.opacity = String(t);
+    el("t1").style.transform = `translateY(${px(36*(1-t))})`;
+
+    /* 0,40–1,10 s : la série et la saison, sous le titre. */
+    const c = expoOut(lin(f, 12, 33));
+    el("t2").style.top = "860px";
+    el("t2").style.opacity = String(c);
+    el("t2").style.transform = `translateY(${px(24*(1-c))})`;
+
+    /* 1,00–1,70 s : le logo se pose plus bas que le titre. */
+    const lIn = expoOut(lin(f, 30, 51));
+    el("logo").style.top = "1150px";
+    el("logo").style.opacity = String(lIn);
+    el("logo").style.transform = `translateY(-50%) scale(${(0.90 + 0.10*lIn).toFixed(4)})`;
+    el("halo").style.top = "1150px";
+    el("halo").style.opacity = String(0.85*lIn);
+    el("halo").style.transform = `scale(${(0.55 + 0.45*lIn).toFixed(3)})`;
+
+    /* 1,20–2,60 s : trois anneaux orange partent du logo, décalés, et sortent
+       du cadre. C'est l'animation de fin — elle s'éteint en s'élargissant, donc
+       elle ne laisse rien à nettoyer avant le fondu. */
+    ANNEAUX.forEach((r,i) => {
+      const p = lin(f, 36 + i*10, 36 + i*10 + 42);
+      if (p <= 0 || p >= 1) return;
+      const e = expoOut(p);
+      const taille = 180 + 1180*e;
+      r.style.width = px(taille); r.style.height = px(taille);
+      r.style.margin = `${px(1150 - 960 - taille/2)} 0 0 ${px(-taille/2)}`;
+      r.style.opacity = (0.55*(1-p)).toFixed(3);
+    });
+
+    /* 1,90–2,60 s : la signature de la saison, la même que sur les épisodes. */
+    const s = expoOut(lin(f, 57, 78));
+    el("sg").style.top = "1420px";
+    el("sg").style.opacity = String(s);
+    el("sg").style.transform = `translateY(${px(20*(1-s))})`;
+  }
+
+  /* ---------- la sortie ----------
+     Les deux cartons se referment sur le noir pendant les 20 dernières images.
+     Le carton d'ouverture le fait parce que le montage ouvre sur un fondu au
+     noir de 1,2 s ; le carton de fin, parce qu'il termine le fichier. */
+  el("voile").style.opacity = lin(f, N-20, N-1).toFixed(4);
+}
+window.seek = seek;
+</script>

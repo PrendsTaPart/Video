@@ -8,7 +8,7 @@ existaient déjà dans la bibliothèque du compte et sont **réutilisés tels qu
 | Scène 1 — « Je cherche une facture » | `7f078c41-0cd2-4bb0-a2ce-7da2dc98d5e4` | `source/ep16-scene1.mp4` |
 | Scène 2 — « Impayée » | `ce1752e4-4fcc-4bb7-80d6-5b68a1cb0d57` | `source/ep16-scene2.mp4` |
 
-> ⚠️ La scène 2 tient un ticket couvert de texte généré en gros plan de 14 à 18 s. La checklist de saison interdit le texte généré par Seedance et nomme le ticket. Les glyphes ne forment pas de mots lisibles, mais le ticket est le sujet du plan : l’épisode n’est pas déposé au catalogue tant que ce point n’est pas tranché. La tenue de saison est respectée sur les deux scènes.
+> Le ticket couvert de glyphes en gros plan de 14 à 18 s a été soumis à l'auteur : il valide le plan tel quel. Les glyphes ne forment aucun mot lisible et la tenue de saison est respectée sur les deux scènes. L'épisode est déposé au catalogue.
 
 Sources d'origine : 720×1280, 24 fps, ~10 s, audio AAC 32 kHz (dialogue français et ambiance
 générés dans la même passe). Les prompts stockés côté Higgsfield correspondent à la fiche

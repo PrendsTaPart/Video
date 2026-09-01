@@ -139,19 +139,51 @@ const px = n => n.toFixed(2)+"px";
 
 /* ---- cartes modules : bloc centré, l'écart se resserre quand il y en a beaucoup ---- */
 const cardsRoot = document.getElementById("cards");
-const NC = DATA.cartes.length, CH = 150, CGAP = NC <= 4 ? 36 : 22;
-const CTOP = 1050 - (NC * CH + (NC - 1) * CGAP) / 2;
+const NC = DATA.cartes.length;
+/*
+ * Au-delà de six cartes, la colonne unique ne tient plus dans l'écran : les
+ * douze modules du final font 2042 px pour 1920 disponibles. On passe alors
+ * sur deux colonnes, remplies de haut en bas puis de gauche à droite, et le
+ * libellé se mesure comme ailleurs puisque la carte est deux fois moins large
+ * (« Synthèse financière » ne rentre pas à 64 px dans 400 px). Jusqu'à six
+ * cartes, la mise en page ne bouge pas d'un pixel.
+ */
+const DEUXCOL = NC > 6;
+const CW = DEUXCOL ? 400 : 720;
+const CH = DEUXCOL ? 130 : 150;
+const NROW = DEUXCOL ? Math.ceil(NC / 2) : NC;
+const CGAP = DEUXCOL ? 20 : (NC <= 4 ? 36 : 22);
+const CTOP = 1050 - (NROW * CH + (NROW - 1) * CGAP) / 2;
 DATA.cartes.forEach((nom, i) => {
-  const y = CTOP + i * (CH + CGAP);
-  if (i > 0) {
+  const row = DEUXCOL ? i % NROW : i;
+  const col = DEUXCOL ? Math.floor(i / NROW) : 0;
+  const dx  = DEUXCOL ? (col === 0 ? -410 : 10) : -360;   // décalage depuis le centre
+  const y = CTOP + row * (CH + CGAP);
+  if (row > 0) {
     const flow = document.createElement("div");
     flow.className = "flow"; flow.style.top = px(y - CGAP); flow.style.height = "0px";
+    if (DEUXCOL) flow.style.marginLeft = px(dx + CW / 2 - 3);
     cardsRoot.appendChild(flow);
   }
   const c = document.createElement("div");
   c.className = "modcard"; c.style.top = px(y); c.textContent = nom;
+  if (DEUXCOL) {
+    c.style.width = px(CW); c.style.height = px(CH); c.style.marginLeft = px(dx);
+  }
   cardsRoot.appendChild(c);
+  if (DEUXCOL) ajusterCarte(c, nom, 52, 40, 36);
 });
+/*
+ * Décalage d'apparition entre deux cartes. À 10 images d'écart fixes, la
+ * cinquième carte ne commençait qu'à g=260 alors que l'acte s'efface dès
+ * g=262 : elle traversait l'écran en gris, sans jamais être lue (constaté
+ * sur ep28 « Le jeu télé », et vrai aussi pour ep02). Au-delà de quatre
+ * cartes, on resserre le pas pour que la dernière soit installée avant le
+ * fondu ; à quatre cartes ou moins le pas reste 10, donc les épisodes déjà
+ * livrés se rendent à l'identique.
+ */
+const CSTEP = NC <= 4 ? 10 : Math.max(2, Math.floor(24 / (NC - 1)));
+
 const punchEl = document.getElementById("punch");
 punchEl.style.top = "auto";
 punchEl.style.bottom = px(1920 - CTOP + 56);   // toujours au-dessus de la première carte
@@ -160,6 +192,25 @@ const FLOWS = [...cardsRoot.querySelectorAll(".flow")];
 
 /* Ajuste un libellé à la largeur réelle de sa boîte : les textes changent d'un
    épisode à l'autre, on mesure au lieu de deviner à partir du nombre de lettres. */
+/* Même idée pour une carte de la mise en page à deux colonnes, à ceci près
+   que le libellé a le droit de passer sur deux lignes : mesuré sur une seule,
+   « Synthèse financière » tombait à 28 px dans 400 px de large, très en
+   dessous du plancher de lisibilité de la saison. On réduit donc la taille
+   seulement quand les deux lignes ne tiennent plus en hauteur. */
+function ajusterCarte(el, texte, max, min, marge) {
+  const s = document.createElement("span");
+  s.style.display = "block";
+  s.style.width = px(el.clientWidth - marge);
+  s.style.textAlign = "center";
+  s.style.lineHeight = "1.06";
+  s.textContent = texte;
+  el.textContent = "";
+  el.appendChild(s);
+  let fs = max;
+  el.style.fontSize = px(fs);
+  while (fs > min && s.scrollHeight > el.clientHeight - 16) { fs -= 1; el.style.fontSize = px(fs); }
+}
+
 function ajusterTexte(el, texte, max, min, marge) {
   const s = document.createElement("span");
   s.style.whiteSpace = "nowrap";
@@ -209,7 +260,21 @@ for (let i = 0; i < 14; i++) {
 const A3 = DATA.ui.acte3;
 const scrtitle = document.getElementById("scrtitle");
 ajusterTexte(scrtitle, A3.titre, 64, 34, 88);   // 44 px de retrait à gauche, autant de marge à droite
-document.getElementById("dispo").textContent = "✓ " + A3.confirmation;
+/*
+ * La confirmation tient sur une ligne, quelle que soit sa longueur.
+ *
+ * `.check` est posé en absolu sans largeur : un texte long passait à la ligne
+ * et la deuxième retombait sur la grille — « congé validé, samedi couvert »
+ * écrivait « couvert » par-dessus les cases. On lui donne la largeur utile de
+ * l'écran et on mesure, comme pour le titre, les pastilles et les badges.
+ * Les confirmations courtes déjà livrées tiennent à 60 px : leur mise en page
+ * ne bouge pas.
+ */
+const confirme = document.getElementById("dispo");
+/* 760 px d'écran moins le retrait de 44 px : exactement la place dont le texte
+   disposait avant, sinon les confirmations déjà livrées rétréciraient pour rien. */
+confirme.style.width = px(760 - 44);
+ajusterTexte(confirme, "✓ " + A3.confirmation, 60, 34, 0);
 const HASCHIPS = (A3.chips || []).length > 0;
 document.getElementById("dispo").style.top = px(HASCHIPS ? 346 : 196);
 const chipsRoot = document.getElementById("chips");
@@ -374,13 +439,13 @@ function seek(f){
   p.style.opacity = String(pIn);
   p.style.transform = `translateY(${px(30*(1-expoOut(pIn)))})`;
   CARDS.forEach((c,i)=>{
-    const t = expoOut(lin(g, 220+i*10, 238+i*10));
+    const t = expoOut(lin(g, 220+i*CSTEP, 238+i*CSTEP));
     c.style.opacity = String(t);
     c.style.transform = `translateY(${px(40*(1-t))}) scale(${(0.94+0.06*t).toFixed(3)})`;
     c.style.borderColor = t>0.99 ? "rgba(0,123,255,.75)" : "rgba(166,208,255,.30)";
   });
   FLOWS.forEach((fl,i)=>{
-    const t = expoOut(lin(g, 242+i*10, 258+i*10));
+    const t = expoOut(lin(g, 242+i*CSTEP, 258+i*CSTEP));
     fl.style.height = px(t*CGAP);
     fl.style.opacity = String(t*(1-lin(g,262,270)));
   });

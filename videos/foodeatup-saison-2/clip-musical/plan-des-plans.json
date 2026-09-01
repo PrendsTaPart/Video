@@ -1,0 +1,86 @@
+{
+  "commentaire": [
+    "Répartition des 60 plans de la saison entre les sections de « LA MAISON ».",
+    "Le clip suit l'histoire de la chanson, pas l'ordre des épisodes : un plan est",
+    "choisi pour ce qu'il montre à cet endroit du récit, jamais pour son numéro.",
+    "Chaque entrée est un couple [épisode, scène]. Le montage découpe chaque plan de",
+    "10 s en fenêtres qui ne se recouvrent pas, et ne consomme chaque fenêtre qu'une",
+    "seule fois — un épisode peut donc revenir dans une autre section, jamais la même",
+    "image. Les bornes de section se calent sur la grille de temps mesurée par",
+    "scripts/clip-tempo.py, pas sur les durées visées ci-dessous, qui ne sont qu'une",
+    "cible d'écriture."
+  ],
+  "format": "9:16, 1080×1920, 30 i/s, master à -16 LUFS comme les épisodes",
+  "sections": [
+    {
+      "nom": "intro",
+      "paroles": "Sept heures du matin. La salle est vide. Elle m'attend.",
+      "duree_visee_s": 14,
+      "regle": "Deux plans, très lents, presque pas de coupe. On installe le lieu avant l'histoire.",
+      "plans": [[23, 1], [8, 1]]
+    },
+    {
+      "nom": "couplet-1",
+      "paroles": "J'avais vingt-six ans, un bail, et pas un rond…",
+      "duree_visee_s": 40,
+      "regle": "Les visages et les premiers services. Coupes larges, 2 à 3 s, on laisse voir.",
+      "plans": [[1, 1], [3, 1], [5, 1], [11, 1], [15, 1], [20, 1], [22, 1], [23, 2], [8, 2], [11, 2]]
+    },
+    {
+      "nom": "refrain-1",
+      "paroles": "C'est ma maison, c'est mes murs, c'est mes tables…",
+      "duree_visee_s": 26,
+      "regle": "La salle pleine, les plans larges, l'énergie. Coupes sur les temps forts.",
+      "plans": [[4, 1], [9, 1], [18, 1], [28, 1], [30, 1], [20, 2], [1, 2]]
+    },
+    {
+      "nom": "couplet-2",
+      "paroles": "Puis l'année m'est tombée dessus comme un service sans fin…",
+      "duree_visee_s": 40,
+      "regle": "Le chaos, et lui seul. Coupes courtes, 0,8 à 1,2 s, qui se resserrent ligne après ligne.",
+      "plans": [[25, 1], [25, 2], [6, 1], [6, 2], [13, 1], [13, 2], [19, 2], [24, 2], [2, 1], [12, 2], [2, 2], [15, 2]]
+    },
+    {
+      "nom": "refrain-2",
+      "paroles": "identique au premier refrain",
+      "duree_visee_s": 26,
+      "regle": "Mêmes plans larges qu'au refrain 1, autres fenêtres, coupes plus dures : le refrain n'a pas changé, lui si.",
+      "plans": [[4, 2], [9, 2], [18, 2], [28, 2], [14, 2]]
+    },
+    {
+      "nom": "pont",
+      "paroles": "Un mardi de février, j'ai posé les clés sur le comptoir…",
+      "duree_visee_s": 26,
+      "regle": "UN SEUL PLAN, AUCUNE COUPE, ralenti à 0,85×. C'est le seul endroit du clip où l'image s'arrête de bouger, et c'est ce qui donne son poids au dernier couplet. Si la prise Suno ne fait pas retomber la batterie ici, changer de prise avant de monter.",
+      "plans": [[26, 2]]
+    },
+    {
+      "nom": "couplet-3",
+      "paroles": "J'ai pas changé de métier, j'ai changé de méthode…",
+      "duree_visee_s": 40,
+      "regle": "Les gestes qui se posent. Les scènes 2 tardives et les actes centraux des outros : un statut qui bascule, une case qui s'allume. Coupes régulières, 2 s, sans accélération — le calme est le sujet.",
+      "plans": [[10, 2], [17, 2], [21, 2], [22, 2], [27, 2], [29, 2], [7, 2], [16, 2], [3, 2], [5, 2]]
+    },
+    {
+      "nom": "refrain-final",
+      "paroles": "…j'ai rien repris dans la gueule… je respire.",
+      "duree_visee_s": 30,
+      "regle": "Un plan par épisode, les trente, dans l'ordre des épisodes. Une seconde chacun. C'est le seul moment du clip où l'ordre du catalogue reprend ses droits.",
+      "plans": [[1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1], [10, 1], [11, 1], [12, 1], [13, 1], [14, 1], [15, 1], [16, 1], [17, 1], [18, 1], [19, 1], [20, 1], [21, 1], [22, 1], [23, 1], [24, 1], [25, 1], [26, 1], [27, 1], [28, 1], [29, 1], [30, 1]]
+    },
+    {
+      "nom": "outro",
+      "paroles": "Et mon père, dans le cadre, il dit rien. Mais je crois qu'il sourit.",
+      "duree_visee_s": 14,
+      "regle": "Le dernier plan de la saison, celui qui recule jusque dans la rue. Fondu au noir sur le dernier accord.",
+      "plans": [[30, 2]]
+    }
+  ],
+  "plans_ecartes": [
+    {
+      "plan": [12, 2],
+      "version": "d6533af5-f81b-4872-850c-2670deb5cc80",
+      "raison": "Tenue de saison rompue. La scène 2 montée est cb1b8361 ; c'est elle qui entre dans le clip."
+    }
+  ]
+}
