@@ -195,6 +195,22 @@ T=$(node -p "
 ffmpeg -y -nostdin -loglevel error -ss "$T" -i "$D/clip-c-est-ma-maison-9x16.mp4" \
   -frames:v 1 "$D/clip-c-est-ma-maison-vignette.png"
 
+echo "→ vignette 16:9 : celle que lit la carte de la saison"
+# L'affiche 9:16 sert de poster au lecteur ; la carte de la saison et les listes,
+# elles, sont en 16:9. Sans cette pièce-là, la carte n'a rien à afficher.
+#
+# Le plan retenu est le PREMIER de l'intro, à 1,5 s : Michael de face, toque et
+# veste blanche. À la taille d'une vignette, c'est le seul plan du clip qui dise
+# tout de suite de quelle série il s'agit — un plan de décor ou un contre-jour
+# ne se lit plus à cette échelle. Le recadrage prend la bande centrale du 9:16,
+# décalée vers le haut pour garder le visage et la toque entiers.
+T16=$(node -p "
+  const c = require('$ROOT/clip-musical/conduite.json');
+  (c.plans[0].t + 1.5 + $IMG_OUV / c.fps).toFixed(3)")
+ffmpeg -y -nostdin -loglevel error -ss "$T16" -i "$D/clip-c-est-ma-maison-9x16.mp4" \
+  -frames:v 1 -vf "crop=1080:608:0:380,scale=1280:720:flags=lanczos" \
+  "$D/clip-c-est-ma-maison-vignette-16x9.png"
+
 # Le dépôt refuse au-delà de 100 Mo : mieux vaut le savoir ici qu'au push.
 MO=$(node -p "(require('fs').statSync('$D/clip-c-est-ma-maison-9x16.mp4').size/1048576).toFixed(1)")
 echo "   $MO Mo (limite du dépôt : $LIMITE_MO Mo)"
