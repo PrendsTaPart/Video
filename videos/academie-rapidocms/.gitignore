@@ -1,0 +1,16 @@
+# Intermédiaires de montage — régénérés par `produire.sh`.
+composition/
+*/composition/
+_logs/
+_frames/
+
+# Captures brutes et voix off : lourdes, et reproductibles depuis leurs sources
+# (téléversement d'origine pour les captures, MCP ElevenLabs pour la voix).
+_sources/
+_subs/
+*/audio/vo-brute.mp3
+*/audio/*.wav
+*/audio/*.brut.wav
+
+# Paquets de validation, régénérés par paquet-validation.sh
+_validation/
