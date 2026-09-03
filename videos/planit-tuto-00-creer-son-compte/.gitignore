@@ -1,3 +1,10 @@
-.work/
-.frames/
-.presenter/
+# Fichiers de travail du masquage — l'intermédiaire non compressé et son journal.
+.masque-brut.mp4
+.masque.log
+
+# La capture d'origine n'a pas sa place dans un dépôt public : elle laisse voir
+# trois adresses e-mail réelles de tiers dans la barre de suggestions du clavier.
+# Seule la version masquée est versionnée. `masquer.py` sait la régénérer à
+# partir d'elle, et l'original reste récupérable dans l'historique du dépôt —
+# raison pour laquelle une réécriture d'historique reste à trancher.
+assets/screencast-original.mp4

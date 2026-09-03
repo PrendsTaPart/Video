@@ -19,6 +19,71 @@ succès : ils ne sont conservés ci-dessous que comme trace du contenu déposé.
 13 et 21 ont été reportées dans `contenuDepose.cartes` via
 `ajouter_carte_prompt`.
 
+**Mise à jour du 26/08/2026, 21 h.** Quatre épisodes déposés — **07**, **10**,
+**28** et **33**. `videos_manquantes` annonce **18 déposées / 25 manquantes**.
+
+| Fiche | Vidéo (S3 RapidoCMS) | Vignette (S3 RapidoCMS) | Durée |
+|---|---|---|---|
+| 07 | `…/bibliotheque/planit-academie-tuto-07-enregistrer-sa-propre-carte-v2` | `…/bibliotheque/planit-academie-vignette-tuto-07-v2` | 1 min 07 |
+| 10 | `…/bibliotheque/planit-academie-tuto-10-lancer-une-tache-longue` | `…/bibliotheque/planit-academie-vignette-tuto-10` | 32 s |
+| 28 | `…/bibliotheque/planit-academie-tuto-28-installer-un-plugin` | `…/bibliotheque/planit-academie-vignette-tuto-28` | 48 s |
+| 33 | `…/bibliotheque/planit-academie-tuto-33-choisir-son-avatar` | `…/bibliotheque/planit-academie-vignette-tuto-33` | 1 min 05 |
+
+La **07 est un remplacement**, pas un ajout : elle était déjà `en_ligne` depuis
+le 19/08. Le nouveau montage a été téléversé sous un nom distinct — suffixe
+`-v2` — plutôt qu'en écrasant l'objet S3 existant : `upload_file_tool` ne
+documente pas son comportement en cas de nom déjà pris, et un remplacement
+silencieux aurait été invérifiable. **Les deux objets du 19/08 restent sur S3 et
+ne sont plus référencés** ; ils peuvent être supprimés via `delete_file_tool`
+une fois le nouveau montage validé.
+
+Sa transcription a dû être réécrite en deux temps : `enregistrer_video` ne
+touche pas au champ `transcription`, si bien que l'ancien texte — qui parlait
+encore de laisser la visibilité sur « Privé » — a survécu au dépôt de la
+nouvelle vidéo. Un appel explicite à `enregistrer_transcription` l'a corrigé.
+**À retenir pour tout remontage : redéposer la transcription même quand seule
+la vidéo change.**
+
+Les fiches 10, 28 et 33 ne déclarent aucune carte de prompt (`fiche.cartes`
+vide) : aucun `ajouter_carte_prompt` n'était à jouer. La carte de la 07 était
+déjà en place et a été conservée telle quelle.
+
+**Mise à jour du 27/08/2026.** Trois épisodes déposés — **15**, **26** et
+**29**. `videos_manquantes` annonce **21 déposées / 22 manquantes**.
+
+| Fiche | Vidéo (S3 RapidoCMS) | Vignette (S3 RapidoCMS) | Durée |
+|---|---|---|---|
+| 15 | `…/bibliotheque/planit-academie-tuto-15-premiere-conversation` | `…/bibliotheque/planit-academie-vignette-tuto-15` | 41 s |
+| 26 | `…/bibliotheque/planit-academie-tuto-26-comprendre-les-skills` | `…/bibliotheque/planit-academie-vignette-tuto-26` | 51 s |
+| 29 | `…/bibliotheque/planit-academie-tuto-29-desactiver-un-skill` | `…/bibliotheque/planit-academie-vignette-tuto-29` | 48 s |
+
+Aucune des trois fiches ne déclare de carte de prompt : pas d'appel à
+`ajouter_carte_prompt`. Les trois `vignette_spec` confirment une fois de plus la
+réserve n° 2 ci-dessous — celle du numéro 28 décrit « Actualiser le catalogue »,
+c'est-à-dire l'écran de la **capture** 28, pas celui de la fiche 28.
+
+**Mise à jour du 27/08/2026, soir.** La fiche **3** est déposée (42 s), la
+fiche **15** repassée hors ligne. `enregistrer_video` avec `enLigne: false`
+bascule `contenuDepose.statut` de `en_ligne` à **`en_montage`** — c'est le
+moyen de retirer un montage du site sans effacer ce qui a été déposé.
+
+| Fiche | Vidéo (S3 RapidoCMS) | Vignette (S3 RapidoCMS) | Durée |
+|---|---|---|---|
+| 3 | `…/bibliotheque/planit-academie-tuto-03-premiers-reglages` | `…/bibliotheque/planit-academie-vignette-tuto-03` | 42 s |
+
+La carte de prompt déclarée par la fiche 3 — « Décrire mon activité en trois
+lignes » — a été reportée via `ajouter_carte_prompt`.
+
+**Mise à jour du 27/08/2026, 18 h.** Le tutoriel 00 est redéposé sous
+`…/bibliotheque/planit-academie-tuto-00-creer-son-compte-v2`, après masquage des
+adresses e-mail de sa capture. Comme pour le 07, le nouveau fichier porte un
+suffixe `-v2` plutôt que d'écraser l'objet S3 existant. Durée 1 min 03, douze
+chapitres — le plan 5 ayant été raccourci, tous les repères suivants ont bougé.
+
+Les publications YouTube du jour sont consignées dans `YOUTUBE.md` : le MCP
+Plan'It Video n'a pas d'outil `enregistrer_youtube` pour les porter sur les
+fiches.
+
 ### Deux réserves qui subsistent
 
 1. **`fiche.statut` reste à `a_produire`** sur une fiche déposée, alors que

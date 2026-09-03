@@ -15,7 +15,62 @@ de connaissance », **23** « Mettre à jour un document », **25** « Retirer u
 document » et **27** « Activer un skill ». Les quinze fiches sont `en_ligne` ;
 `videos_manquantes` annonce **15 déposées / 28 manquantes**.
 
-Les dix derniers sont montés depuis les captures téléversées le 19/08 (voir
+**État au 26/08/2026** : quatre épisodes de plus, montés **et déposés** —
+**07** (remonté depuis la 2ᵉ version de la capture : l'écran de visibilité
+« Privé » a disparu de l'application, la ligne de voix off correspondante a été
+réenregistrée), **10** « Lancer une tâche qui prend du temps », **28**
+« Installer un plugin » et **33** « Choisir l'avatar 3D de son agent ». Le
+tutoriel 33 inaugure le module *Profil & Avatar 3D* (`#CA4DD8`). La 07
+remplace son montage du 19/08 : nouvelle vidéo, nouvelle vignette, nouvelle
+transcription. `videos_manquantes` annonce **18 déposées / 25 manquantes**.
+
+Deux réserves consignées avec ce dépôt :
+
+- **Le tutoriel 10 ne couvre que la moitié de sa fiche.** La capture montre la
+  notification qui arrive puis le résultat qu'on retrouve ; le geste « Exécuter
+  en tâche de fond », cœur de la fiche, n'est pas filmé. La voix off le porte,
+  l'écran ne le montre pas. Une capture du lancement compléterait l'épisode.
+- **Aucune capture « Vidéo 7 » n'existe** dans le dossier Drive : le lien
+  fourni pour « Détail d'une tâche et historique d'exécutions » pointe vers
+  « Vidéo 9 — Liste des prompts et recherche », déjà utilisée pour la fiche 06.
+
+**État au 27/08/2026** : trois épisodes de plus, montés **et déposés** — **15**
+« Sa première conversation avec un agent », **26** « Comprendre à quoi servent
+les skills » et **29** « Désactiver un skill ou un plugin ». Le tutoriel 15
+inaugure le module *Chat agentique* (`#9438F0`). `videos_manquantes` annonce
+**21 déposées / 22 manquantes**.
+
+**Correction du 27/08, en fin de journée.** La capture « Vidéo 25 » avait été
+rattachée à la fiche 15 parce qu'elle s'ouvre sur l'accueil du chat. C'était
+l'écran d'accès, pas le sujet : le sujet est l'entretien « Faire connaissance »
+en huit sections — *L'entreprise*, *Produits & services*, *Ton & style*,
+*Cibles & personas*. C'est mot pour mot ce que demande la **fiche 3**,
+« Renseignez votre activité, votre clientèle et votre ton de communication ».
+L'épisode est remonté pour la 3, avec sa propre voix off ; la fiche 15 est
+repassée `en_montage` et attend une capture d'un vrai premier échange.
+
+**Deux captures toujours sans fiche.** « Vidéo 30 — Affichage du profil » et
+« Vidéo 31 — Édition du profil » montrent le **profil de l'utilisateur** :
+adresse e-mail, nom d'utilisateur, bouton « Modifier ». Aucune des 43 fiches ne
+couvre ce sujet — les fiches 32, 33 et 34 portent sur l'**agent** (sa voix, son
+avatar, sa fiche), pas sur le compte. Il manque une fiche « Son profil
+utilisateur » côté produit. Ces deux captures affichent elles aussi l'adresse du
+compte de démonstration : elles demanderont le même masquage que le tutoriel 00.
+
+Le rattachement s'est fait **par le contenu de la capture**, jamais par son
+numéro :
+
+| Capture Drive | Ce qu'elle filme | Fiche |
+|---|---|---|
+| Vidéo 28 | liste des skills, « Actualiser », toast, puis Plugins | **26** |
+| Vidéo 27 | liste Plugins, recherche, interrupteurs, « Connecteur requis » | **29** |
+| Vidéo 25 | accueil du chat, bandeau « Faire connaissance », les 8 sections | **15** |
+
+**Réserve sur le 15.** La capture ne montre pas la rédaction d'un premier
+message : trois des quatre étapes de la fiche sont portées par la voix, pas par
+l'écran. Une capture d'un premier échange compléterait l'épisode.
+
+Les dix précédents sont montés depuis les captures téléversées le 19/08 (voir
 § 3, « Les captures et leur numérotation »). Deux captures restent de côté,
 faute de fiche correspondante : « Affichage du profil » et « Édition du
 profil » décrivent le compte *utilisateur*, alors que les fiches 32 · 33 · 34
@@ -142,6 +197,23 @@ lequel un utilisateur découvre le produit, et donc l'ordre de production.
 
 ## 3. Les captures d'écran — le vrai goulot
 
+> ### ⚠️ Deux numérotations à ne jamais confondre
+>
+> - **« Vidéo N »** — le numéro du fichier dans le Drive, celui de la personne
+>   qui filme. Il ne veut rien dire hors de ce dossier.
+> - **« tuto NN »** sur le site et dans le MCP — le numéro de la **fiche**, dans
+>   le plan des 43 tutoriels.
+>
+> Les deux se croisent par hasard et le résultat trompe. Exemple relevé le
+> 26/08 : la page `/tutoriel/suivre-ses-taches` porte le **11** — c'est la
+> *fiche* 11, « Suivre l'avancement de ses tâches », montée depuis la capture
+> **« Vidéo 5 — Liste des tâches et filtres »**. La « Vidéo 11 » du Drive
+> (« Soumission d'un prompt en public ») n'a rien à voir — et cette
+> fonctionnalité n'existe plus dans l'application.
+>
+> **Toujours rattacher une capture à sa fiche par son contenu, jamais par son
+> numéro.** Le tableau ci-dessous fait foi.
+
 > **Où sont les captures.** Elles arrivent dans le dossier Drive partagé
 > **« enregistrements d'écran »** (`1HTE6WPmD52qBSV0t-uYKF1a-OGbmtBgD`). Chaque
 > fichier y est numéroté selon la liste de la personne qui filme — cette
@@ -168,8 +240,12 @@ lequel un utilisateur découvre le produit, et donc l'ordre de production.
 > | Vidéo 26 | Liste et gestion des Skills | **27** |
 > | Vidéo 30 | Affichage du profil | *aucune* |
 > | Vidéo 31 | Édition du profil | *aucune* |
+> | Vidéo 10 (2ᵉ version) | Création et modification d'un prompt | **07** (remonté) |
+> | Vidéo 29 | Import de Skills/Plugins en ZIP | **28** |
+> | Vidéo 32 | Création et génération d'un avatar 3D | **33** |
+> | Vidéo 37 | Navigation depuis une notification | **10** (partiel) |
 >
-> Les deux dernières sont **en attente** : elles montrent le compte
+> Les vidéos 30 et 31 sont **en attente** : elles montrent le compte
 > *utilisateur*, quand les fiches 32 · 33 · 34 traitent de l'avatar 3D de
 > l'*agent*. Il manque donc une fiche « profil utilisateur » au plan des 43.
 >

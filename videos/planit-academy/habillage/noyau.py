@@ -54,8 +54,14 @@ MODULES = {
     "Prompts": "#772FF3",
     "Tâches": "#6A2EF5",
     "Connexions API & MCP": "#8236F8",
+    "Chat agentique": "#9438F0",
     "Base de connaissance": "#A63FE8",
     "Skills & Plugins": "#B846E0",
+    "Profil & Avatar 3D": "#CA4DD8",
+    "Accueil & Statistiques": "#5C2DF7",
+    "Notifications": "#DC54D0",
+    "Crédits & Facturation": "#F45FC4",
+    "Automatisations": "#E85AC9",
     "Authentification": "#4F2DF9",
 }
 
