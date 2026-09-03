@@ -162,8 +162,14 @@ export const publierSite = async (dossier: string): Promise<Publication> => {
       'configurer_agent_tutoriel',
       {
         ...commun,
-        instructions: instructionsAgent(script, fiche),
-        outils_autorises: fiche.outils_mcp.map((o) => o.nom),
+        // Le schéma de l'Académie nomme ces deux champs « agent_instructions »
+        // et « agent_outils_mcp ». Envoyés sous « instructions » et
+        // « outils_autorises », ils étaient ignorés : la mise à jour ne portait
+        // sur aucune colonne et le serveur échouait sur son propre résultat
+        // vide (« Cannot coerce the result to a single JSON object »), sans
+        // que `updated_at` bouge.
+        agent_instructions: instructionsAgent(script, fiche),
+        agent_outils_mcp: fiche.outils_mcp.map((o) => o.nom),
       },
     ],
   ];
@@ -269,7 +275,7 @@ const explication = (script: Script): string =>
 
 const instructionsAgent = (script: Script, fiche: Fiche): string =>
   [
-    `Tu accompagnes un utilisateur sur « ${script.meta.titre} » (module ${script.meta.module}).`,
+    `Tu accompagnes un utilisateur sur « ${script.meta.titre} » (module ${script.meta.module_slug ?? script.meta.module}).`,
     `À quoi ça sert : ${fiche.a_quoi_ca_sert}`,
     `Pour qui : ${fiche.pour_qui}`,
     '',
