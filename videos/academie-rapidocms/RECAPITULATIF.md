@@ -16,7 +16,7 @@
 | 12 | `decouvrir-l-editeur` | 2 min 48 s | 2 min 25 s | oui | `10-decouvrir-l-editeur` |
 | 13 | `choisir-un-template-de-post` | 2 min 52 s | 2 min 32 s | oui | `10-utiliser-un-template` |
 | 14 | `creer-une-carte-de-visite` | 2 min 49 s | 2 min 29 s | oui | `12-choisir-un-template-de-carte` |
-| 15 | `creer-une-carte-nfc` | — | — | — | `10-choisir-un-modele-de-carte-nfc` |
+| 15 | `creer-une-carte-nfc` | 2 min 48 s | 2 min 28 s | oui | `10-choisir-un-modele-de-carte-nfc` |
 | 16 | `creer-une-carte-digitale` | 2 min 36 s | 2 min 13 s | oui | `12-creer-une-carte-digitale` |
 
-**15 masters sur 16.**
+**16 masters sur 16.**
