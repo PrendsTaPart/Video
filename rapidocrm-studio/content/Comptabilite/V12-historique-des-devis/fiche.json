@@ -1,0 +1,106 @@
+{
+  "fonctionnalite": "Retrouver un devis et le rouvrir",
+  "a_quoi_ca_sert": "Ouvrir l'historique des devis, filtrer par statut ou par entreprise, et repartir de la ligne trouvée : la consulter dans un nouvel onglet, la modifier, ou en télécharger le fichier.",
+  "pour_qui": "Gérant ou commercial qui cherche un devis passé",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir au moins un devis créé"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Statut et Entreprise",
+      "obligatoire": false,
+      "explication": "Les deux listes déroulantes en haut de page. Elles s'ajoutent l'une à l'autre."
+    },
+    {
+      "nom": "rechercher",
+      "obligatoire": false,
+      "explication": "Le champ libre à droite du tableau, qui cherche dans les lignes affichées."
+    },
+    {
+      "nom": "Actions",
+      "obligatoire": true,
+      "explication": "Les trois points en fin de ligne : Visualiser, Modifier, Télécharger, Voir l'entreprise."
+    },
+    {
+      "nom": "afficher N entrées",
+      "obligatoire": false,
+      "explication": "Le nombre de lignes par page, en haut à gauche du tableau."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_devis",
+      "role": "Liste les devis avec filtres : statut, entreprise, recherche par destinataire, période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [
+        "statut",
+        "entreprise_id",
+        "q",
+        "periode",
+        "limit"
+      ],
+      "exemple_appel": {
+        "statut": "en_attente",
+        "limit": 10
+      }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Filtrer avant de chercher : deux listes bien posées valent mieux qu'un défilement.",
+    "Utiliser Visualiser pour lire sans risquer de modifier."
+  ],
+  "erreurs_frequentes": [
+    "Croire que le devis a disparu alors qu'un filtre est encore actif.",
+    "Confondre Visualiser et Modifier : le premier ouvre le devis en lecture dans un nouvel onglet, le second rouvre le formulaire."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Relire un devis envoyé",
+      "contexte": "Le client vous rappelle au sujet d'un devis d'il y a deux mois.",
+      "action": "Ouvrez le menu Actions de sa ligne et choisissez Visualiser.",
+      "resultat_attendu": "Le devis s'ouvre dans un nouvel onglet, sans quitter la liste."
+    },
+    {
+      "titre": "Renvoyer le fichier au client",
+      "contexte": "Le client dit ne pas l'avoir reçu.",
+      "action": "Depuis le même menu, choisissez Télécharger.",
+      "resultat_attendu": "Le fichier du devis est récupéré sur le poste."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Visualiser ouvre un onglet",
+      "contenu": "La liste reste où elle est : on lit le devis à côté, puis on revient.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Quatre gestes par ligne",
+      "contenu": "Visualiser, Modifier, Télécharger, Voir l'entreprise. Le dernier bascule sur la fiche du client.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Les filtres se cumulent",
+      "contenu": "Statut et entreprise s'ajoutent, et le compteur sous le tableau dit ce qui reste.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver un devis sans filtrer",
+    "texte": "Liste-moi mes [nombre] derniers devis avec leur destinataire, leur statut et leur montant.",
+    "variables": [
+      "nombre"
+    ],
+    "outil_mcp": "list_devis"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 et 00:07 — filtres et menu Actions",
+    "a_quoi_ca_sert": "frames 00:07 à 00:25",
+    "champs_cles": "frames 00:02 et 00:07",
+    "outils_mcp": "schéma list_devis",
+    "erreurs_frequentes": "frames 00:07 et 00:13 — l'onglet « Devis 5 » s'ajoute au navigateur",
+    "cas_usage": "frames 00:13 (nouvel onglet) et 00:19 (téléchargement)",
+    "astuces": "frames 00:07 et 00:13"
+  },
+  "a_verifier": []
+}

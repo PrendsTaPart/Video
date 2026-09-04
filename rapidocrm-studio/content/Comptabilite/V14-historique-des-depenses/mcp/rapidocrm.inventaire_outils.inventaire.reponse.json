@@ -1,0 +1,19 @@
+{
+  "outils": [
+    {
+      "nom": "list_depenses",
+      "role": "Liste les dépenses avec filtres : statut, entreprise, période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [
+        "statut",
+        "entreprise_id",
+        "periode",
+        "limit"
+      ],
+      "exemple_appel": {
+        "statut": "en_attente",
+        "limit": 10
+      }
+    }
+  ]
+}

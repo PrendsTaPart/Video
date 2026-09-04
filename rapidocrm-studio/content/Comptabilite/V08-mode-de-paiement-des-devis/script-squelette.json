@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "module": "Comptabilite",
+    "numero": 8,
+    "titre": "Renseigner le mode de paiement d'un devis",
+    "titre_court": "Renseigner le mode de paieme",
+    "slug": "renseigner-le-mode-de-paiement-d-un-devis"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir la liste des devis",
+        "voix": "",
+        "debut_source": 0,
+        "fin_source": 4.5,
+        "zone_focus": {
+          "x": 0.24,
+          "y": 0.25,
+          "w": 0.74,
+          "h": 0.72
+        },
+        "annotation": "Ouvrir la liste des devis"
+      },
+      {
+        "numero": 2,
+        "titre": "Ouvrir le devis en modification",
+        "voix": "",
+        "debut_source": 4.5,
+        "fin_source": 8.5,
+        "zone_focus": {
+          "x": 0.62,
+          "y": 0.35,
+          "w": 0.28,
+          "h": 0.35
+        },
+        "annotation": "Ouvrir le devis en modification"
+      },
+      {
+        "numero": 3,
+        "titre": "Descendre au mode de paiement",
+        "voix": "",
+        "debut_source": 8.5,
+        "fin_source": 12.5,
+        "zone_focus": {
+          "x": 0.27,
+          "y": 0.28,
+          "w": 0.41,
+          "h": 0.38
+        },
+        "annotation": "Descendre au mode de paiement"
+      },
+      {
+        "numero": 4,
+        "titre": "Choisir le mode et enregistrer",
+        "voix": "",
+        "debut_source": 12.5,
+        "fin_source": 15,
+        "zone_focus": {
+          "x": 0.27,
+          "y": 0,
+          "w": 0.41,
+          "h": 0.9
+        },
+        "annotation": "Choisir le mode et enregistrer"
+      },
+      {
+        "numero": 5,
+        "titre": "Lire la confirmation",
+        "voix": "",
+        "debut_source": 15,
+        "fin_source": 17.08,
+        "zone_focus": {
+          "x": 0.68,
+          "y": 0,
+          "w": 0.32,
+          "h": 0.2
+        },
+        "annotation": "Lire la confirmation"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] devis en attente avec leur destinataire et leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_devis"
+    }
+  }
+}

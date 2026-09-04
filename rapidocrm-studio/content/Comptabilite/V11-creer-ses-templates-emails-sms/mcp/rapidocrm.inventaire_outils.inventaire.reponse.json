@@ -1,0 +1,31 @@
+{
+  "outils": [
+    {
+      "nom": "list_templates_sms",
+      "role": "Liste les templates SMS disponibles, avec recherche par nom. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [
+        "search",
+        "limit"
+      ],
+      "exemple_appel": {
+        "limit": 10
+      }
+    },
+    {
+      "nom": "get_template",
+      "role": "Contenu complet d'un template email, SMS ou newsletter, par identifiant ou par nom. Lecture seule.",
+      "parametres_obligatoires": [
+        "type"
+      ],
+      "parametres_optionnels": [
+        "template_id",
+        "template_nom"
+      ],
+      "exemple_appel": {
+        "type": "sms",
+        "template_nom": "Facture"
+      }
+    }
+  ]
+}
