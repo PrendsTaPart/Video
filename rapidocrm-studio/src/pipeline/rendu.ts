@@ -60,9 +60,23 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
     if (!existsSync(destination)) copyFileSync(cheminLogo(nom), destination);
   }
   // Le logo complet fourni par la marque, monté tel quel en fin de vidéo.
+  // `assets/logos/*.png` est ignoré par git : sur un poste neuf, seuls les
+  // logos téléchargés par assurerLogos() sont là. La carte de fin demande
+  // toujours `logos/rapidocrm-complet.png` (Punchline.tsx), et une source
+  // absente fait échouer le rendu à 85 % sur « The source image cannot be
+  // decoded ». À défaut du logo complet, on met donc le logo officiel
+  // RapidoCRM à cette adresse — téléchargé depuis la bibliothèque de marque,
+  // lui aussi monté tel quel, jamais redessiné.
   const complet = join(racineProjet(), 'assets', 'logos', 'rapidocrm-complet.png');
+  const destinationComplet = join(racinePublic, 'logos', 'rapidocrm-complet.png');
   if (existsSync(complet)) {
-    copyFileSync(complet, join(racinePublic, 'logos', 'rapidocrm-complet.png'));
+    copyFileSync(complet, destinationComplet);
+  } else if (!existsSync(destinationComplet)) {
+    avertir(
+      'assets/logos/rapidocrm-complet.png absent — la carte de fin monte le logo ' +
+        'officiel rapidocrm.png à la place.',
+    );
+    copyFileSync(cheminLogo('rapidocrm'), destinationComplet);
   }
 
   const sortie = assurerDossier(join(dossier, 'out'));
