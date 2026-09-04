@@ -1,0 +1,101 @@
+{
+  "duree": 57.2,
+  "resolution": [1920, 882],
+  "fps": 25,
+  "ecrans": [
+    { "t": 0.0, "nom": "Campagne mail — étape 1, ciblage de la campagne" },
+    { "t": 41.0, "nom": "Campagne mail — étape 2, texte de l'email" },
+    { "t": 50.0, "nom": "Campagne mail — étape 3, validation" }
+  ],
+  "actions": [
+    {
+      "t": 6.0,
+      "type": "ouverture",
+      "cible": "Bloc Cible de la campagne",
+      "zone": { "x": 0.22, "y": 0.12, "w": 0.76, "h": 0.40 },
+      "texte_visible": "Cible · Envoyé à · Choisir une cible · Domaine d'activité · Choisir un domaine"
+    },
+    {
+      "t": 14.0,
+      "type": "selection",
+      "cible": "Modèle de template email",
+      "zone": { "x": 0.22, "y": 0.42, "w": 0.76, "h": 0.54 },
+      "texte_visible": "Modèle de template email · Chercher un template · ajouter un template email · Création de devis · Création de facture · Création de rendez-vous · choisir"
+    },
+    {
+      "t": 35.0,
+      "type": "selection",
+      "cible": "Portefeuille et date d'envoi",
+      "zone": { "x": 0.22, "y": 0.10, "w": 0.76, "h": 0.80 },
+      "texte_visible": "Envoi de devis · Envoi de facture · Promo été quais · Portefeuille de · Date et heure d'envoi · suivant"
+    },
+    {
+      "t": 45.0,
+      "type": "saisie",
+      "cible": "Éditeur du message",
+      "zone": { "x": 0.22, "y": 0.15, "w": 0.76, "h": 0.68 },
+      "texte_visible": "Police · Taille · Format · Source · Précédent · Suivant"
+    },
+    {
+      "t": 53.0,
+      "type": "validation",
+      "cible": "Aperçu et validation de l'envoi",
+      "zone": { "x": 0.24, "y": 0.10, "w": 0.72, "h": 0.80 },
+      "texte_visible": "Date d'envoi · précédent · valider"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Choisir qui reçoit la campagne",
+      "debut": 1.0,
+      "fin": 10.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.22, "y": 0.12, "w": 0.76, "h": 0.40 }
+    },
+    {
+      "numero": 2,
+      "titre": "Choisir un modèle et une date",
+      "debut": 30.0,
+      "fin": 40.0,
+      "actions": [1, 2],
+      "zone_focus": { "x": 0.22, "y": 0.10, "w": 0.76, "h": 0.80 }
+    },
+    {
+      "numero": 3,
+      "titre": "Écrire le message",
+      "debut": 42.0,
+      "fin": 49.0,
+      "actions": [3],
+      "zone_focus": { "x": 0.22, "y": 0.15, "w": 0.76, "h": 0.68 }
+    },
+    {
+      "numero": 4,
+      "titre": "Valider l'envoi",
+      "debut": 50.0,
+      "fin": 56.5,
+      "actions": [4],
+      "zone_focus": { "x": 0.24, "y": 0.10, "w": 0.72, "h": 0.80 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 57.2,
+      "zone": { "x": 0.685, "y": 0.02, "w": 0.31, "h": 0.115 },
+      "raison": "Nom et photo du titulaire du compte (Dupont lina) et solde de crédits affiché dans la barre du haut"
+    },
+    {
+      "t": 30.0,
+      "fin": 41.0,
+      "zone": { "x": 0.235, "y": 0.62, "w": 0.24, "h": 0.12 },
+      "raison": "Portefeuille : noms et photos des commerciaux rattachés à la campagne"
+    },
+    {
+      "t": 41.0,
+      "fin": 50.0,
+      "zone": { "x": 0.235, "y": 0.31, "w": 0.74, "h": 0.19 },
+      "raison": "Corps de l'email : il contient un numéro de téléphone de réservation, et l'avertissement technique de l'éditeur de texte affiché par-dessus"
+    }
+  ]
+}

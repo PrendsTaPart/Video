@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "module": "Crm",
+    "module_slug": "06-crm-marketing",
+    "numero": 2,
+    "titre": "Importer un fichier Excel entreprise",
+    "titre_court": "Importer des entreprises",
+    "slug": "06-importer-un-fichier-excel-entreprise"
+  },
+  "hook": {
+    "texte": "Trois cents entreprises dans un tableur. Et une fiche à créer, une par une.",
+    "promesse": "Un fichier, un bouton, et la liste est là.",
+    "duree": 5,
+    "alternatives": [
+      "Votre base clients existe déjà. Elle est juste dans le mauvais outil.",
+      "Recopier un tableur à la main, c'est une soirée perdue.",
+      "Vos clients sont dans Excel. Votre CRM, lui, est vide."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page Clients, et on ressort avec toutes vos entreprises dedans. Une fenêtre, un fichier Excel, et c'est fini. Le logiciel vous donne même le modèle à remplir, pour que les colonnes tombent au bon endroit du premier coup.",
+    "duree": 15
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir la page Clients",
+        "voix": "Votre liste de clients.",
+        "debut_source": 0.3,
+        "fin_source": 2.4,
+        "zone_focus": { "x": 0.22, "y": 0.22, "w": 0.76, "h": 0.14 },
+        "annotation": "L'icône d'import",
+        "point": { "x": 0.478, "y": 0.27 }
+      },
+      {
+        "numero": 2,
+        "titre": "Ouvrir la fenêtre d'import",
+        "voix": "La fenêtre d'import. Le modèle à remplir est juste dessous.",
+        "debut_source": 2.4,
+        "fin_source": 7.5,
+        "zone_focus": { "x": 0.34, "y": 0.01, "w": 0.34, "h": 0.92 },
+        "annotation": "télécharger un template excel",
+        "point": { "x": 0.50, "y": 0.72 }
+      },
+      {
+        "numero": 3,
+        "titre": "Choisir le fichier et importer",
+        "voix": "On choisit son fichier, on importe.",
+        "debut_source": 7.5,
+        "fin_source": 12.5,
+        "zone_focus": { "x": 0.34, "y": 0.20, "w": 0.34, "h": 0.73 },
+        "annotation": "importer",
+        "point": { "x": 0.50, "y": 0.84 }
+      },
+      {
+        "numero": 4,
+        "titre": "Retrouver les entreprises importées",
+        "voix": "Et elles sont là, avec leur ville et leur code postal.",
+        "debut_source": 15.5,
+        "fin_source": 20.9,
+        "zone_focus": { "x": 0.22, "y": 0.45, "w": 0.76, "h": 0.52 },
+        "annotation": "Les fiches créées",
+        "point": { "x": 0.32, "y": 0.60 }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Faites-le avec Claude",
+    "voix": "Votre base est remplie. Pour vérifier ce qui est entré sans faire défiler la page, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] dernières entreprises avec leur ville et leur code postal.",
+      "variables": ["nombre"],
+      "outil_mcp": "list_entreprises"
+    },
+    "resultat_affiche": {
+      "titre": "Vos entreprises",
+      "lignes": [
+        "Le fleuriste — lyon, 69002",
+        "Pain d'or — villeurbanne, 69100",
+        "Le fournil saint-jean — lyon, 69005"
+      ]
+    },
+    "duree": 19
+  },
+  "punchline": {
+    "texte": "Un fichier déposé une fois, et votre base clients est debout.",
+    "duree": 6,
+    "alternatives": [
+      "Le tableur devient une base. En une fenêtre.",
+      "Vos clients arrivent tous ensemble, pas un par un.",
+      "Ce qui prenait une soirée tient dans un import."
+    ]
+  },
+  "seo": {
+    "titre": "Importer des entreprises depuis Excel — RapidoCRM",
+    "description": "Importez votre liste d'entreprises dans RapidoCRM depuis un fichier Excel : la fenêtre d'import, le modèle à remplir, et les fiches créées d'un coup.",
+    "mots_cles": [
+      "importer excel",
+      "RapidoCRM",
+      "base clients",
+      "entreprises",
+      "reprise de données",
+      "tableur"
+    ],
+    "youtube_titre": "Importer un fichier Excel entreprise — RapidoCRM Académie",
+    "youtube_description": "Votre base clients existe déjà, dans un tableur. Dans RapidoCRM, l'icône d'import de la page Clients ouvre une fenêtre où l'on dépose son fichier Excel — et le modèle à remplir se télécharge depuis cette même fenêtre, colonnes déjà nommées. Un clic sur importer, et les entreprises apparaissent dans la liste avec leur ville et leur code postal.\n\nAu programme :\n00:00 Le problème\n00:05 Ce qu'on va faire\n00:20 Ouvrir la page Clients\n00:22 Ouvrir la fenêtre d'import\n00:25 Choisir le fichier et importer\n00:28 Retrouver les entreprises importées\n00:32 Faites-le avec Claude\n00:51 À retenir\n\nRapidoCRM Académie — un tutoriel par fonctionnalité.\nUne démo sur votre activité ? WhatsApp 06.14.18.92.25",
+    "youtube_tags": [
+      "RapidoCRM",
+      "import excel",
+      "CRM",
+      "base clients",
+      "tutoriel",
+      "PME"
+    ]
+  }
+}
