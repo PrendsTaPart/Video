@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "module": "Comptabilite",
+    "numero": 10,
+    "titre": "Transformer un devis accepté en facture",
+    "titre_court": "Du devis à la facture",
+    "slug": "05-conversion-d-un-devis-en-facture",
+    "module_slug": "05-comptabilite"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir le devis à convertir",
+        "voix": "On ouvre le devis par Signer, comme pour le faire valider.",
+        "debut_source": 0,
+        "fin_source": 6,
+        "zone_focus": {
+          "x": 0.68,
+          "y": 0.6,
+          "w": 0.2,
+          "h": 0.38
+        },
+        "annotation": "Ouvrir le devis à convertir"
+      },
+      {
+        "numero": 2,
+        "titre": "Signer le devis et enregistrer",
+        "voix": "Le devis s'ouvre, on signe, et on enregistre. Le logiciel travaille : il signe le devis, crée la facture, et tente d'envoyer le mail au client.",
+        "debut_source": 6,
+        "fin_source": 29,
+        "zone_focus": {
+          "x": 0.48,
+          "y": 0.05,
+          "w": 0.42,
+          "h": 0.6
+        },
+        "annotation": "Signer le devis et enregistrer"
+      },
+      {
+        "numero": 3,
+        "titre": "Lire ce que le logiciel annonce",
+        "voix": "Le bandeau dit tout : devis signé, facture créée. Seul le mail n'est pas parti.",
+        "debut_source": 29,
+        "fin_source": 34,
+        "zone_focus": {
+          "x": 0.6,
+          "y": 0,
+          "w": 0.4,
+          "h": 0.2
+        },
+        "annotation": "Lire ce que le logiciel annonce"
+      },
+      {
+        "numero": 4,
+        "titre": "Passer à l'onglet facture",
+        "voix": "On passe à l'onglet facture. En haut, les compteurs se sont recalculés : le total facturé a grimpé, l'en attente aussi.",
+        "debut_source": 34,
+        "fin_source": 46,
+        "zone_focus": {
+          "x": 0.24,
+          "y": 0,
+          "w": 0.74,
+          "h": 0.6
+        },
+        "annotation": "Passer à l'onglet facture"
+      },
+      {
+        "numero": 5,
+        "titre": "Retrouver la facture créée",
+        "voix": "Et la voilà, en tête de liste. Même client, même montant que le devis, avec son propre numéro.",
+        "debut_source": 46,
+        "fin_source": 55.5,
+        "zone_focus": {
+          "x": 0.24,
+          "y": 0.3,
+          "w": 0.74,
+          "h": 0.5
+        },
+        "annotation": "Retrouver la facture créée"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "La facture existe. Pour vérifier ce qui vient de partir en facturation, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] dernières factures avec leur statut et leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_factures"
+    },
+    "resultat_affiche": {
+      "titre": "5 factures ce mois-ci",
+      "lignes": [
+        "N° 11 — olive & lin — 3 360,00 € — En attente",
+        "N° 10 — brasserie du quai — 7 018,95 € — En attente",
+        "N° 3 — brasserie du quai — 5 760,00 € — Payée"
+      ]
+    },
+    "duree": 18
+  },
+  "hook": {
+    "texte": "Le devis est accepté. Et vous vous apprêtez à retaper les mêmes lignes dans une facture.",
+    "promesse": "Signez le devis, la facture se crée toute seule.",
+    "duree": 8,
+    "alternatives": [
+      "Retaper une facture depuis un devis, c'est une erreur qui attend son tour.",
+      "Ce qui a été accepté n'a pas à être ressaisi.",
+      "Le devis signé contient déjà tout ce qu'il faut facturer."
+    ]
+  },
+  "intro": {
+    "texte": "On part d'un devis en attente, et on ressort avec une facture. Il n'y a pas de bouton « convertir » : c'est la signature du devis qui crée la facture, avec le même client et le même montant.",
+    "duree": 16
+  },
+  "punchline": {
+    "texte": "Un devis signé, une facture créée. Vous n'avez rien retapé.",
+    "duree": 8,
+    "alternatives": [
+      "La signature fait le travail de la saisie.",
+      "Ce qui est accepté devient facturable sans détour.",
+      "Un geste, deux documents cohérents."
+    ]
+  },
+  "seo": {
+    "titre": "Convertir un devis en facture — RapidoCRM",
+    "description": "Transformez un devis accepté en facture sur RapidoCRM : signer le devis crée la facture, avec le même client et le même montant. Le tutoriel de l'Académie.",
+    "mots_cles": [
+      "devis en facture",
+      "RapidoCRM",
+      "conversion",
+      "facturation",
+      "signature",
+      "CRM"
+    ],
+    "youtube_titre": "Convertir un devis en facture — RapidoCRM",
+    "youtube_description": "Le tutoriel de la conversion d'un devis en facture sur RapidoCRM : il n'y a pas de bouton convertir, c'est la signature qui crée la facture. RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "devis",
+      "facture",
+      "conversion",
+      "CRM"
+    ]
+  }
+}

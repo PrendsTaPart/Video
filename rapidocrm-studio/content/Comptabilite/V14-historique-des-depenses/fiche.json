@@ -1,0 +1,105 @@
+{
+  "fonctionnalite": "Suivre ses dépenses",
+  "a_quoi_ca_sert": "Voir en un écran ce que l'entreprise a dépensé, ce qui reste à payer et ce qui est réglé, puis descendre au détail ligne par ligne, filtrer, et repartir vers le fournisseur concerné.",
+  "pour_qui": "Gérant qui surveille ses sorties d'argent",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir au moins une dépense enregistrée"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Total dépenses, en attente de paiement, payées",
+      "obligatoire": false,
+      "explication": "Les trois cartes du haut de page. Elles donnent la photo avant le détail."
+    },
+    {
+      "nom": "Total bénéfices",
+      "obligatoire": false,
+      "explication": "La quatrième carte : ce qui reste une fois les dépenses retirées."
+    },
+    {
+      "nom": "Statut et Entreprise",
+      "obligatoire": false,
+      "explication": "Les deux listes déroulantes au-dessus du tableau."
+    },
+    {
+      "nom": "Actions",
+      "obligatoire": true,
+      "explication": "Les trois points en fin de ligne : Modifier, Télécharger, Voir l'entreprise. Pas de Visualiser ici."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_depenses",
+      "role": "Liste les dépenses avec filtres : statut, entreprise, période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [
+        "statut",
+        "entreprise_id",
+        "periode",
+        "limit"
+      ],
+      "exemple_appel": {
+        "statut": "en_attente",
+        "limit": 10
+      }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Lire les cartes du haut avant le tableau : elles disent tout de suite ce qui reste dû.",
+    "Trier par statut pour isoler ce qui n'est pas encore payé."
+  ],
+  "erreurs_frequentes": [
+    "Chercher les dépenses ailleurs que dans le troisième onglet de la page Facturation.",
+    "Chercher une entrée Visualiser dans le menu d'une dépense : il n'y en a pas, seulement Modifier, Télécharger et Voir l'entreprise."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Faire le point sur ce qui reste à payer",
+      "contexte": "Vous préparez vos règlements de fin de mois.",
+      "action": "Ouvrez l'onglet dépenses et lisez la carte « Total dépenses en attente de paiement », puis triez le tableau par statut.",
+      "resultat_attendu": "Le montant en attente et les lignes concernées sont à l'écran."
+    },
+    {
+      "titre": "Remonter au fournisseur",
+      "contexte": "Une dépense demande une explication.",
+      "action": "Ouvrez le menu Actions de la ligne et choisissez Voir l'entreprise.",
+      "resultat_attendu": "La fiche du fournisseur s'ouvre depuis la dépense."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Les dépenses sont le troisième onglet",
+      "contenu": "facture, devis, dépenses : elles vivent sur la même page que la facturation.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Trois actions seulement",
+      "contenu": "Modifier, Télécharger, Voir l'entreprise. Une dépense ne se visualise pas comme un devis.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "La carte bénéfices tient compte des dépenses",
+      "contenu": "Elle se lit à côté du total facturé : c'est ce qui reste une fois les sorties retirées.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Voir ce qui reste à payer",
+    "texte": "Liste-moi mes [nombre] dépenses en attente avec leur montant.",
+    "variables": [
+      "nombre"
+    ],
+    "outil_mcp": "list_depenses"
+  },
+  "sources": {
+    "fonctionnalite": "frame 00:02 — onglet dépenses et cartes du haut",
+    "a_quoi_ca_sert": "frames 00:02 à 00:30",
+    "champs_cles": "frames 00:02, 00:09 et 00:23",
+    "outils_mcp": "schéma list_depenses",
+    "erreurs_frequentes": "frames 00:02 (troisième onglet) et 00:23 (menu à trois entrées)",
+    "cas_usage": "frames 00:02 et 00:29",
+    "astuces": "frames 00:02 et 00:23"
+  },
+  "a_verifier": []
+}

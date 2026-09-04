@@ -12,11 +12,11 @@ import { ecrireJson, lireJson } from '../util/chemins.ts';
 import { avertir, discret, info } from '../util/journal.ts';
 
 export const DEBIT_MOTS_MINUTE = 150;
-// Fenêtre resserrée sur demande de Michael (03/09) : des tutoriels plus courts,
-// en mots simples. L'ancienne cible 90–150 s étirait la voix bien au-delà de ce
-// que dure l'enregistrement d'écran.
+// Format court : les scripts sont volontairement resserrés, un tutoriel de
+// quatre étapes tient en une minute. Même recalage que la QA et que
+// `controlerAvantPublication`.
 const CIBLE_MIN = 55;
-const CIBLE_MAX = 95;
+const CIBLE_MAX = 150;
 
 export const compterMots = (texte: string): number =>
   texte.trim().split(/\s+/).filter(Boolean).length;
@@ -118,7 +118,7 @@ bloque. On dit **ce que ça change** pour l'utilisateur avant de dire où clique
 - **Débit 150 mots/minute** : la voix de chaque étape doit tenir dans sa fenêtre
   vidéo (\`fin_source − debut_source\`). Si la voix déborde, on **ralentit la vidéo
   source** au rendu, on n'accélère jamais la voix.
-- **Durée cible 90 à 150 s.** Si ça dépasse, on coupe dans la démo — jamais dans
+- **Durée cible 55 à 150 s.** Si ça dépasse, on coupe dans la démo — jamais dans
   le hook ni dans la punchline.
 
 ## Matière disponible

@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "module": "Comptabilite",
+    "numero": 9,
+    "titre": "Signer un devis à l'écran",
+    "titre_court": "Signer un devis",
+    "slug": "05-signature-electronique-d-un-devis",
+    "module_slug": "05-comptabilite"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir le menu du devis",
+        "voix": "Les trois points de la ligne. Le menu d'un devis porte une entrée de plus : Signer.",
+        "debut_source": 0,
+        "fin_source": 5.5,
+        "zone_focus": {
+          "x": 0.68,
+          "y": 0.35,
+          "w": 0.2,
+          "h": 0.4
+        },
+        "annotation": "Ouvrir le menu du devis"
+      },
+      {
+        "numero": 2,
+        "titre": "Ouvrir le devis à signer",
+        "voix": "Le devis s'ouvre en pleine page.",
+        "debut_source": 5.5,
+        "fin_source": 8,
+        "zone_focus": {
+          "x": 0.48,
+          "y": 0.3,
+          "w": 0.3,
+          "h": 0.5
+        },
+        "annotation": "Ouvrir le devis à signer"
+      },
+      {
+        "numero": 3,
+        "titre": "Signer dans le cadre",
+        "voix": "Le cadre est en bas, sous les totaux. On signe à la souris.",
+        "debut_source": 8,
+        "fin_source": 12,
+        "zone_focus": {
+          "x": 0.49,
+          "y": 0.12,
+          "w": 0.29,
+          "h": 0.45
+        },
+        "annotation": "Signer dans le cadre"
+      },
+      {
+        "numero": 4,
+        "titre": "Remonter et enregistrer",
+        "voix": "On remonte, et on enregistre. Le bouton est en haut.",
+        "debut_source": 12,
+        "fin_source": 16.2,
+        "zone_focus": {
+          "x": 0.75,
+          "y": 0.03,
+          "w": 0.24,
+          "h": 0.2
+        },
+        "annotation": "Remonter et enregistrer"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Le devis est signé. Pour voir ceux qui attendent encore une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] devis en attente avec leur destinataire et leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_devis"
+    },
+    "resultat_affiche": {
+      "titre": "3 devis en attente",
+      "lignes": [
+        "N° 2 — cabinet lefèvre — 5 760,00 €",
+        "N° 3 — olive & lin — 3 360,00 €",
+        "N° 4 — agence lumière — 5 760,00 €"
+      ]
+    },
+    "duree": 18
+  },
+  "hook": {
+    "texte": "Le client dit oui. Vous, vous imprimez, vous faites signer, vous scannez.",
+    "promesse": "Le devis se signe à l'écran, en trois gestes.",
+    "duree": 8,
+    "alternatives": [
+      "Un devis signé au stylo, c'est deux jours de perdus.",
+      "La signature n'a pas besoin de passer par le papier.",
+      "Ce qui est accepté doit être signé tout de suite."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la liste des devis, et on ressort avec un devis signé. Tout se passe dans le logiciel : on ouvre le devis en pleine page, on trace la signature dans le cadre prévu, on enregistre.",
+    "duree": 16
+  },
+  "punchline": {
+    "texte": "Un devis signé à l'écran, c'est un aller-retour de moins.",
+    "duree": 8,
+    "alternatives": [
+      "Le papier n'ajoute rien à un accord déjà donné.",
+      "Signé sur place, classé aussitôt.",
+      "Trois gestes valent mieux qu'une imprimante."
+    ]
+  },
+  "seo": {
+    "titre": "Signer un devis à l'écran — RapidoCRM",
+    "description": "Signez un devis directement dans RapidoCRM : l'entrée Signer du menu, le cadre en bas du devis, puis le bouton enregistrer. Le tutoriel de l'Académie.",
+    "mots_cles": [
+      "signature électronique",
+      "devis",
+      "RapidoCRM",
+      "signer",
+      "commercial",
+      "CRM"
+    ],
+    "youtube_titre": "Signer un devis à l'écran — RapidoCRM",
+    "youtube_description": "Le tutoriel de la signature d'un devis sur RapidoCRM : où trouver l'entrée Signer, où se trace la signature, et quel bouton la garde. RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "devis",
+      "signature",
+      "CRM",
+      "commercial"
+    ]
+  }
+}

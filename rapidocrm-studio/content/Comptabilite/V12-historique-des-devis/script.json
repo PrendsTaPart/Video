@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "module": "Comptabilite",
+    "numero": 12,
+    "titre": "Retrouver un devis et le rouvrir",
+    "titre_court": "Historique des devis",
+    "slug": "05-historique-des-devis",
+    "module_slug": "05-comptabilite"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'historique des devis",
+        "voix": "L'onglet devis. Deux filtres, une recherche, et le tableau.",
+        "debut_source": 0,
+        "fin_source": 6,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.35,
+          "w": 0.75,
+          "h": 0.6
+        },
+        "annotation": "Ouvrir l'historique des devis"
+      },
+      {
+        "numero": 2,
+        "titre": "Ouvrir le menu d'une ligne",
+        "voix": "Les trois points en fin de ligne ouvrent le menu. Quatre entrées.",
+        "debut_source": 6,
+        "fin_source": 12,
+        "zone_focus": {
+          "x": 0.68,
+          "y": 0.35,
+          "w": 0.2,
+          "h": 0.25
+        },
+        "annotation": "Ouvrir le menu d'une ligne"
+      },
+      {
+        "numero": 3,
+        "titre": "Visualiser le devis",
+        "voix": "Visualiser ouvre le devis dans un nouvel onglet. La liste reste où elle est.",
+        "debut_source": 12,
+        "fin_source": 18,
+        "zone_focus": {
+          "x": 0.1,
+          "y": 0,
+          "w": 0.35,
+          "h": 0.08
+        },
+        "annotation": "Visualiser le devis"
+      },
+      {
+        "numero": 4,
+        "titre": "Télécharger le devis",
+        "voix": "Télécharger sort le fichier. Le navigateur le prend en charge.",
+        "debut_source": 18,
+        "fin_source": 24,
+        "zone_focus": {
+          "x": 0.6,
+          "y": 0.7,
+          "w": 0.4,
+          "h": 0.3
+        },
+        "annotation": "Télécharger le devis"
+      },
+      {
+        "numero": 5,
+        "titre": "Les autres actions de la ligne",
+        "voix": "Et les deux dernières : modifier, ou basculer sur la fiche du client.",
+        "debut_source": 24,
+        "fin_source": 28.1,
+        "zone_focus": {
+          "x": 0.68,
+          "y": 0.35,
+          "w": 0.2,
+          "h": 0.25
+        },
+        "annotation": "Les autres actions de la ligne"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Les filtres trient à l'écran. Pour le même point sans toucher aux listes, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] derniers devis avec leur destinataire, leur statut et leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_devis"
+    },
+    "resultat_affiche": {
+      "titre": "5 devis au total",
+      "lignes": [
+        "N° 5 — brasserie du quai — 7 018,95 € — Accepté",
+        "N° 2 — cabinet lefèvre — 5 760,00 € — En attente",
+        "N° 4 — agence lumière — 5 760,00 € — Refusé"
+      ]
+    },
+    "duree": 18
+  },
+  "hook": {
+    "texte": "Le client vous rappelle au sujet d'un devis de mars. Vous, vous faites défiler la liste.",
+    "promesse": "Deux filtres, et quatre gestes par ligne.",
+    "duree": 8,
+    "alternatives": [
+      "Chercher un devis à la main, c'est du temps qu'on ne facture pas.",
+      "Un historique sert s'il se filtre.",
+      "Le devis d'il y a six mois est à deux clics."
+    ]
+  },
+  "intro": {
+    "texte": "On part de l'historique des devis, et on ressort avec le bon devis sous les yeux. Deux listes en haut de page filtrent, et chaque ligne porte un menu qui dit ce qu'on peut en faire.",
+    "duree": 16
+  },
+  "punchline": {
+    "texte": "Deux filtres posés, et le bon devis est devant vous.",
+    "duree": 8,
+    "alternatives": [
+      "Un historique qui se filtre est un historique qui sert.",
+      "Quatre gestes par ligne, aucun détour.",
+      "Le devis se relit sans quitter la liste."
+    ]
+  },
+  "seo": {
+    "titre": "Retrouver un devis — RapidoCRM",
+    "description": "Filtrez l'historique des devis RapidoCRM par statut et par entreprise, puis visualisez ou téléchargez la ligne trouvée. Le tutoriel de l'Académie.",
+    "mots_cles": [
+      "historique des devis",
+      "RapidoCRM",
+      "filtrer",
+      "télécharger",
+      "commercial",
+      "CRM"
+    ],
+    "youtube_titre": "Retrouver un devis dans l'historique — RapidoCRM",
+    "youtube_description": "Le tutoriel de l'historique des devis sur RapidoCRM : les deux filtres, la recherche, et les quatre gestes du menu de chaque ligne. RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "devis",
+      "historique",
+      "CRM",
+      "commercial"
+    ]
+  }
+}

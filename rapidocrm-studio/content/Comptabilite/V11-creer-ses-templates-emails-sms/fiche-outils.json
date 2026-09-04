@@ -1,0 +1,19 @@
+{
+  "outils": [
+    {
+      "nom": "list_templates_sms",
+      "description": "",
+      "parametres": []
+    },
+    {
+      "nom": "get_template",
+      "description": "",
+      "parametres": []
+    }
+  ],
+  "divergences": [
+    "Divergence : « champ Nom du template » (8.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « zone de texte du message » (14.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « liste Ajouter un CTA » (20.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}
