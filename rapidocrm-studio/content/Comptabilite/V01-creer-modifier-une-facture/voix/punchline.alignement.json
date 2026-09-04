@@ -1,0 +1,52 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.197
+  },
+  {
+    "mot": "produit",
+    "debut": 0.232,
+    "fin": 0.546
+  },
+  {
+    "mot": "choisi,",
+    "debut": 0.569,
+    "fin": 0.975
+  },
+  {
+    "mot": "la",
+    "debut": 1.01,
+    "fin": 1.08
+  },
+  {
+    "mot": "facture",
+    "debut": 1.126,
+    "fin": 1.428
+  },
+  {
+    "mot": "s'écrit.",
+    "debut": 1.451,
+    "fin": 1.881
+  },
+  {
+    "mot": "Et",
+    "debut": 2.159,
+    "fin": 2.276
+  },
+  {
+    "mot": "elle",
+    "debut": 2.299,
+    "fin": 2.403
+  },
+  {
+    "mot": "reste",
+    "debut": 2.438,
+    "fin": 2.659
+  },
+  {
+    "mot": "corrigeable.",
+    "debut": 2.694,
+    "fin": 3.286
+  }
+]

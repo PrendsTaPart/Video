@@ -1,0 +1,15 @@
+Un client conteste une facture d'il y a six mois. Vous, vous faites défiler la liste. Deux filtres croisés, et il ne reste que ce que vous cherchez.
+
+On part de l'historique complet, et on ressort avec la facture voulue. Deux listes en haut de page : le statut et l'entreprise. Elles s'ajoutent l'une à l'autre, et le compteur sous le tableau dit toujours combien de lignes sont retenues, sur combien au total.
+
+L'historique des factures. Toutes y sont, la plus récente en tête, avec son client et son montant.
+
+Le statut, puis l'entreprise. Les deux s'ajoutent. Et quand rien ne correspond, le tableau le dit : aucun résultat trouvé. Ce n'est pas une panne.
+
+On change d'entreprise, et deux factures apparaissent. Le compteur précise : deux entrées sur cinq. Vous savez ce que le filtre a écarté.
+
+Et le menu de la ligne : visualiser, modifier, télécharger, ou voir l'entreprise.
+
+Les filtres trient à l'écran. Pour le même point sans toucher aux listes, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, lancez-le tel quel.
+
+Deux filtres, et la bonne facture est sous vos yeux.

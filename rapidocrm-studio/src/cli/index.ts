@@ -8,7 +8,7 @@ import { construireFiche } from '../pipeline/fiche.ts';
 import { construireScript } from '../pipeline/script.ts';
 import { genererVoix } from '../pipeline/voix.ts';
 import { copierAssetsPartages, rendre, type Format } from '../pipeline/rendu.ts';
-import { assurerLogos, cheminLogo, LOGOS, type NomLogo } from '../brand/logos.ts';
+import { assurerLogos, cheminLogo, installerLogoComplet, LOGOS, type NomLogo } from '../brand/logos.ts';
 import { ECRANS, ecranPour } from '../brand/ecrans.ts';
 import { genererVignettes, vignettesEnLot } from '../pipeline/vignette.ts';
 import { publierRapidoCms } from '../pipeline/publier-rapidocms.ts';
@@ -223,10 +223,7 @@ programme
       const destination = join(assurerDossier(join(racinePublic, 'logos')), `${nom}.png`);
       if (!existsSync(destination)) copyFileSync(cheminLogo(nom), destination);
     }
-    const complet = join(racineProjet(), 'assets', 'logos', 'rapidocrm-complet.png');
-    if (existsSync(complet)) {
-      copyFileSync(complet, join(racinePublic, 'logos', 'rapidocrm-complet.png'));
-    }
+    installerLogoComplet(racinePublic);
     copierAssetsPartages(racinePublic);
     info(`  Assets prêts dans ${racinePublic}`);
   });

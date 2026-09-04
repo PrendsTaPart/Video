@@ -1,0 +1,142 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "client",
+    "debut": 0.186,
+    "fin": 0.43
+  },
+  {
+    "mot": "conteste",
+    "debut": 0.453,
+    "fin": 0.813
+  },
+  {
+    "mot": "une",
+    "debut": 0.848,
+    "fin": 0.929
+  },
+  {
+    "mot": "facture",
+    "debut": 0.964,
+    "fin": 1.347
+  },
+  {
+    "mot": "d'il",
+    "debut": 1.37,
+    "fin": 1.509
+  },
+  {
+    "mot": "y",
+    "debut": 1.556,
+    "fin": 1.579
+  },
+  {
+    "mot": "a",
+    "debut": 1.637,
+    "fin": 1.66
+  },
+  {
+    "mot": "six",
+    "debut": 1.776,
+    "fin": 1.927
+  },
+  {
+    "mot": "mois.",
+    "debut": 1.95,
+    "fin": 2.218
+  },
+  {
+    "mot": "Vous,",
+    "debut": 2.426,
+    "fin": 2.752
+  },
+  {
+    "mot": "vous",
+    "debut": 2.786,
+    "fin": 2.914
+  },
+  {
+    "mot": "faites",
+    "debut": 2.937,
+    "fin": 3.135
+  },
+  {
+    "mot": "défiler",
+    "debut": 3.158,
+    "fin": 3.518
+  },
+  {
+    "mot": "la",
+    "debut": 3.541,
+    "fin": 3.622
+  },
+  {
+    "mot": "liste.",
+    "debut": 3.68,
+    "fin": 4.029
+  },
+  {
+    "mot": "Deux",
+    "debut": 4.203,
+    "fin": 4.4
+  },
+  {
+    "mot": "filtres",
+    "debut": 4.447,
+    "fin": 4.818
+  },
+  {
+    "mot": "croisés,",
+    "debut": 4.841,
+    "fin": 5.375
+  },
+  {
+    "mot": "et",
+    "debut": 5.654,
+    "fin": 5.759
+  },
+  {
+    "mot": "il",
+    "debut": 5.817,
+    "fin": 5.875
+  },
+  {
+    "mot": "ne",
+    "debut": 5.921,
+    "fin": 5.991
+  },
+  {
+    "mot": "reste",
+    "debut": 6.037,
+    "fin": 6.281
+  },
+  {
+    "mot": "que",
+    "debut": 6.339,
+    "fin": 6.467
+  },
+  {
+    "mot": "ce",
+    "debut": 6.49,
+    "fin": 6.536
+  },
+  {
+    "mot": "que",
+    "debut": 6.56,
+    "fin": 6.653
+  },
+  {
+    "mot": "vous",
+    "debut": 6.676,
+    "fin": 6.792
+  },
+  {
+    "mot": "cherchez.",
+    "debut": 6.815,
+    "fin": 7.268
+  }
+]

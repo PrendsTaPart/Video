@@ -1,4 +1,4 @@
-import { createWriteStream, existsSync, mkdirSync } from 'node:fs';
+import { copyFileSync, createWriteStream, existsSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { pipeline } from 'node:stream/promises';
 import { Readable } from 'node:stream';
@@ -36,4 +36,19 @@ export const assurerLogos = async (): Promise<void> => {
     await pipeline(Readable.fromWeb(reponse.body as never), createWriteStream(dest));
     console.log(`  logo téléchargé : ${nom}.png`);
   }
+};
+
+/**
+ * Le logo monté en fin de vidéo, copié dans `public/logos/`.
+ *
+ * La marque fournit `assets/logos/rapidocrm-complet.png`, mais `assets/logos/`
+ * est ignoré par git : sur un clone neuf, le fichier n'existe pas et le rendu
+ * échouait à la carte de fin sur un 404. Le repli est le logo officiel
+ * `rapidocrm.png`, qui porte déjà le logomark et la signature — téléchargé
+ * depuis la bibliothèque de la marque, jamais redessiné.
+ */
+export const installerLogoComplet = (racinePublic: string): void => {
+  const destination = join(racinePublic, 'logos', 'rapidocrm-complet.png');
+  const fourni = join(racineProjet(), 'assets', 'logos', 'rapidocrm-complet.png');
+  copyFileSync(existsSync(fourni) ? fourni : cheminLogo('rapidocrm'), destination);
 };

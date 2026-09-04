@@ -1,0 +1,32 @@
+[
+  {
+    "mot": "Et",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "le",
+    "debut": 0.163,
+    "fin": 0.221
+  },
+  {
+    "mot": "bandeau",
+    "debut": 0.267,
+    "fin": 0.522
+  },
+  {
+    "mot": "confirme",
+    "debut": 0.569,
+    "fin": 0.952
+  },
+  {
+    "mot": "la",
+    "debut": 0.975,
+    "fin": 1.057
+  },
+  {
+    "mot": "modification.",
+    "debut": 1.138,
+    "fin": 1.869
+  }
+]

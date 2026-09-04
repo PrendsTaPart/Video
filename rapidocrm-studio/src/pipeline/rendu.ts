@@ -11,7 +11,7 @@ import {
   type Rendu,
   type Script,
 } from '../schema/index.ts';
-import { assurerLogos, cheminLogo, LOGOS, type NomLogo } from '../brand/logos.ts';
+import { assurerLogos, cheminLogo, installerLogoComplet, LOGOS, type NomLogo } from '../brand/logos.ts';
 import { calculerMinutage, FPS } from '../template/minutage.ts';
 import { assurerDossier, ecrireJson, lireJson, racineProjet } from '../util/chemins.ts';
 import { lancer } from '../util/ffmpeg.ts';
@@ -36,9 +36,7 @@ export interface OptionsRendu {
 export const navigateur = (): string | null =>
   process.env.REMOTION_BROWSER_EXECUTABLE ?? null;
 
-// Aligné sur la cible resserrée du script (55–95 s), avec la marge des
-// séquences d'habillage qui encadrent la démonstration.
-const DUREE_MIN = 50;
+const DUREE_MIN = 80;
 const DUREE_MAX = 170;
 
 /** Étape 5 — rendu vidéo. */
@@ -59,25 +57,7 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
     const destination = join(assurerDossier(join(racinePublic, 'logos')), `${nom}.png`);
     if (!existsSync(destination)) copyFileSync(cheminLogo(nom), destination);
   }
-  // Le logo complet fourni par la marque, monté tel quel en fin de vidéo.
-  // `assets/logos/*.png` est ignoré par git : sur un poste neuf, seuls les
-  // logos téléchargés par assurerLogos() sont là. La carte de fin demande
-  // toujours `logos/rapidocrm-complet.png` (Punchline.tsx), et une source
-  // absente fait échouer le rendu à 85 % sur « The source image cannot be
-  // decoded ». À défaut du logo complet, on met donc le logo officiel
-  // RapidoCRM à cette adresse — téléchargé depuis la bibliothèque de marque,
-  // lui aussi monté tel quel, jamais redessiné.
-  const complet = join(racineProjet(), 'assets', 'logos', 'rapidocrm-complet.png');
-  const destinationComplet = join(racinePublic, 'logos', 'rapidocrm-complet.png');
-  if (existsSync(complet)) {
-    copyFileSync(complet, destinationComplet);
-  } else if (!existsSync(destinationComplet)) {
-    avertir(
-      'assets/logos/rapidocrm-complet.png absent — la carte de fin monte le logo ' +
-        'officiel rapidocrm.png à la place.',
-    );
-    copyFileSync(cheminLogo('rapidocrm'), destinationComplet);
-  }
+  installerLogoComplet(racinePublic);
 
   const sortie = assurerDossier(join(dossier, 'out'));
   const formats: ('16x9' | '9x16')[] =

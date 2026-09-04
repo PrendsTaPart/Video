@@ -117,10 +117,11 @@ export const controlerQualite = async (dossier: string): Promise<Qa> => {
     ? readFileSync(join(dossier, 'transcription.txt'), 'utf8')
     : '';
   const mots = compterMots(transcription);
-  // Seuil aligné sur la cible resserrée du script (55–95 s, soit 140–240 mots
-  // à 150 mots/minute). L'ancien plancher de 200 mots datait de la cible
-  // 90–150 s : il rendait rouge, par construction, tout tutoriel court.
-  ajouter('Complétude', 'Transcription ≥ 120 mots', mots >= 120 ? 'ok' : 'echec', `${mots} mots`);
+  // Plancher recalé sur le format court : les scripts du module Comptabilité
+  // sont volontairement resserrés, un tutoriel de quatre étapes tient en 175
+  // mots. Le plancher reste un plancher — sous 140 mots, la démonstration n'est
+  // plus expliquée, elle est seulement montrée.
+  ajouter('Complétude', 'Transcription ≥ 140 mots', mots >= 140 ? 'ok' : 'echec', `${mots} mots`);
   ajouter(
     'Complétude',
     'Au moins 3 étapes',
@@ -146,8 +147,8 @@ export const controlerQualite = async (dossier: string): Promise<Qa> => {
     const rendu = RenduSchema.parse(lireJson(join(dossier, 'rendu.json')));
     ajouter(
       'Complétude',
-      'Durée finale dans la fenêtre 50–170 s',
-      rendu.duree >= 50 && rendu.duree <= 170 ? 'ok' : 'avertissement',
+      'Durée finale dans la fenêtre 55–170 s',
+      rendu.duree >= 55 && rendu.duree <= 170 ? 'ok' : 'avertissement',
       `${rendu.duree.toFixed(0)} s`,
     );
   }

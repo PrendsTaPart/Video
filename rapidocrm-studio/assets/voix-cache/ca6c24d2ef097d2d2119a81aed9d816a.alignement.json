@@ -1,0 +1,62 @@
+[
+  {
+    "mot": "Page",
+    "debut": 0,
+    "fin": 0.267
+  },
+  {
+    "mot": "Facturation.",
+    "debut": 0.302,
+    "fin": 0.929
+  },
+  {
+    "mot": "Trois",
+    "debut": 0.987,
+    "fin": 1.242
+  },
+  {
+    "mot": "onglets,",
+    "debut": 1.312,
+    "fin": 1.672
+  },
+  {
+    "mot": "deux",
+    "debut": 1.8,
+    "fin": 1.939
+  },
+  {
+    "mot": "filtres,",
+    "debut": 1.974,
+    "fin": 2.322
+  },
+  {
+    "mot": "et",
+    "debut": 2.473,
+    "fin": 2.589
+  },
+  {
+    "mot": "le",
+    "debut": 2.635,
+    "fin": 2.705
+  },
+  {
+    "mot": "bouton",
+    "debut": 2.763,
+    "fin": 3.053
+  },
+  {
+    "mot": "créer",
+    "debut": 3.088,
+    "fin": 3.274
+  },
+  {
+    "mot": "une",
+    "debut": 3.332,
+    "fin": 3.413
+  },
+  {
+    "mot": "facture.",
+    "debut": 3.437,
+    "fin": 3.924
+  }
+]

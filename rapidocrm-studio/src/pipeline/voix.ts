@@ -205,7 +205,15 @@ const synthetiser = async (
   return { audio, mots };
 };
 
-/** Regroupe l'alignement caractère par caractère en mots. */
+/**
+ * Regroupe l'alignement caractère par caractère en mots.
+ *
+ * Les balises SSML sont écartées. `pourLaVoix` ajoute une pause finale
+ * `<break time="0.4s" />` : ElevenLabs la renvoie dans l'alignement, caractère
+ * par caractère comme le reste du texte, et elle se retrouvait brûlée dans les
+ * sous-titres — « facture n'est pas réglée. <break time="0.4s" /> ». Une balise
+ * n'est jamais prononcée, elle n'a donc rien à faire dans un sous-titre.
+ */
 export const motsDepuisCaracteres = (
   caracteres: string[],
   debuts: number[],
@@ -214,7 +222,20 @@ export const motsDepuisCaracteres = (
   const mots: { mot: string; debut: number; fin: number }[] = [];
   let courant = '';
   let debut = 0;
+  let dansBalise = false;
   caracteres.forEach((c, i) => {
+    if (c === '<') {
+      if (courant) {
+        mots.push({ mot: courant, debut, fin: fins[i - 1] ?? debut });
+        courant = '';
+      }
+      dansBalise = true;
+      return;
+    }
+    if (dansBalise) {
+      if (c === '>') dansBalise = false;
+      return;
+    }
     if (/\s/.test(c)) {
       if (courant) {
         mots.push({ mot: courant, debut, fin: fins[i - 1] ?? debut });

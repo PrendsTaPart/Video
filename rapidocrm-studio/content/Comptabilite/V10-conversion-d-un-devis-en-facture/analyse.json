@@ -1,0 +1,162 @@
+{
+  "duree": 55.5,
+  "resolution": [1920, 882],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Facturation — onglet devis, cinq devis" },
+    { "t": 5.0, "nom": "Menu Actions du devis n°3 — Signer" },
+    { "t": 7.0, "nom": "Devis n°3 en pleine page — cadre de signature" },
+    { "t": 13.0, "nom": "Haut du devis — bouton enregistrer" },
+    { "t": 30.0, "nom": "Bandeau : devis signé et facture créée" },
+    { "t": 31.0, "nom": "Retour à la liste des devis" },
+    { "t": 35.0, "nom": "Onglet facture — quatre factures" },
+    { "t": 41.0, "nom": "Statistiques mises à jour — total facturé 27 658,95 €" },
+    { "t": 47.0, "nom": "Onglet facture — la facture n°11 est apparue" },
+    { "t": 53.0, "nom": "Menu Actions de la facture n°11" }
+  ],
+  "actions": [
+    {
+      "t": 2.0,
+      "type": "ouverture",
+      "cible": "onglet devis et tableau des devis",
+      "zone": { "x": 0.24, "y": 0.35, "w": 0.74, "h": 0.63 },
+      "texte_visible": "facture · devis · dépenses — créer un devis — Affichage de 1 à 5 sur 5 entrées"
+    },
+    {
+      "t": 5.0,
+      "type": "clic",
+      "cible": "entrée Signer du menu Actions du devis n°3",
+      "zone": { "x": 0.7, "y": 0.65, "w": 0.15, "h": 0.33 },
+      "texte_visible": "olive & lin — 3360.00 — En attente — Visualiser · Modifier · Signer · Télécharger · Renvoyer · Voir l'entreprise"
+    },
+    {
+      "t": 8.0,
+      "type": "ouverture",
+      "cible": "bas du devis, cadre cachet et signature",
+      "zone": { "x": 0.49, "y": 0.05, "w": 0.28, "h": 0.5 },
+      "texte_visible": "total : 3,360.00€ — cachet et signature — Signature"
+    },
+    {
+      "t": 14.0,
+      "type": "validation",
+      "cible": "bouton enregistrer, en haut du devis",
+      "zone": { "x": 0.77, "y": 0.06, "w": 0.11, "h": 0.13 },
+      "texte_visible": "Devis n°3 — enregistrer · télécharger"
+    },
+    {
+      "t": 30.0,
+      "type": "validation",
+      "cible": "bandeau de confirmation",
+      "zone": { "x": 0.62, "y": 0.02, "w": 0.38, "h": 0.16 },
+      "texte_visible": "Devis signé et facture créée, mais l'envoi de l'e-mail a échoué."
+    },
+    {
+      "t": 36.0,
+      "type": "selection",
+      "cible": "onglet facture",
+      "zone": { "x": 0.24, "y": 0.1, "w": 0.74, "h": 0.85 },
+      "texte_visible": "facture — Affichage de 1 à 4 sur 4 entrées"
+    },
+    {
+      "t": 42.0,
+      "type": "ouverture",
+      "cible": "cartes de statistiques recalculées",
+      "zone": { "x": 0.24, "y": 0.0, "w": 0.74, "h": 0.5 },
+      "texte_visible": "Total facturé 27658.95 € — En attente 16138.95 € — Total bénéfices 27 600,15 €"
+    },
+    {
+      "t": 48.0,
+      "type": "ouverture",
+      "cible": "ligne de la facture créée",
+      "zone": { "x": 0.24, "y": 0.35, "w": 0.74, "h": 0.25 },
+      "texte_visible": "11 — olive & lin — 26/08/2026 10:07:31 — En attente — 3360.00"
+    },
+    {
+      "t": 54.0,
+      "type": "clic",
+      "cible": "menu Actions de la facture n°11",
+      "zone": { "x": 0.7, "y": 0.42, "w": 0.15, "h": 0.3 },
+      "texte_visible": "Visualiser · Modifier · Télécharger · Renvoyer · Voir l'entreprise"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir le devis à convertir",
+      "debut": 0,
+      "fin": 6.0,
+      "actions": [0, 1],
+      "zone_focus": { "x": 0.68, "y": 0.6, "w": 0.2, "h": 0.38 }
+    },
+    {
+      "numero": 2,
+      "titre": "Signer le devis et enregistrer",
+      "debut": 6.0,
+      "fin": 29.0,
+      "actions": [2, 3],
+      "zone_focus": { "x": 0.48, "y": 0.05, "w": 0.42, "h": 0.6 }
+    },
+    {
+      "numero": 3,
+      "titre": "Lire ce que le logiciel annonce",
+      "debut": 29.0,
+      "fin": 34.0,
+      "actions": [4],
+      "zone_focus": { "x": 0.6, "y": 0.0, "w": 0.4, "h": 0.2 }
+    },
+    {
+      "numero": 4,
+      "titre": "Passer à l'onglet facture",
+      "debut": 34.0,
+      "fin": 46.0,
+      "actions": [5, 6],
+      "zone_focus": { "x": 0.24, "y": 0.0, "w": 0.74, "h": 0.6 }
+    },
+    {
+      "numero": 5,
+      "titre": "Retrouver la facture créée",
+      "debut": 46.0,
+      "fin": 55.5,
+      "actions": [7, 8],
+      "zone_focus": { "x": 0.24, "y": 0.3, "w": 0.74, "h": 0.5 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 6.2,
+      "zone": { "x": 0.855, "y": 0.02, "w": 0.145, "h": 0.115 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    },
+    {
+      "t": 30.8,
+      "fin": 55.5,
+      "zone": { "x": 0.855, "y": 0.02, "w": 0.145, "h": 0.115 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    },
+    {
+      "t": 2.0,
+      "fin": 6.2,
+      "zone": { "x": 0.385, "y": 0.6, "w": 0.125, "h": 0.4 },
+      "raison": "Adresses e-mail des destinataires dans le tableau des devis"
+    },
+    {
+      "t": 12.5,
+      "fin": 30.9,
+      "zone": { "x": 0.185, "y": 0.74, "w": 0.63, "h": 0.26 },
+      "raison": "Coordonnées de la société cliente sur le devis : adresse, téléphone, code postal, e-mail et SIRET"
+    },
+    {
+      "t": 30.9,
+      "fin": 39.0,
+      "zone": { "x": 0.385, "y": 0.2, "w": 0.125, "h": 0.8 },
+      "raison": "Adresses e-mail des destinataires dans les tableaux des devis puis des factures"
+    },
+    {
+      "t": 46.0,
+      "fin": 55.5,
+      "zone": { "x": 0.385, "y": 0.38, "w": 0.125, "h": 0.62 },
+      "raison": "Adresses e-mail des destinataires dans le tableau des factures"
+    }
+  ]
+}

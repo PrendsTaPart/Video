@@ -1,0 +1,247 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "part",
+    "debut": 0.174,
+    "fin": 0.337
+  },
+  {
+    "mot": "de",
+    "debut": 0.36,
+    "fin": 0.418
+  },
+  {
+    "mot": "la",
+    "debut": 0.464,
+    "fin": 0.522
+  },
+  {
+    "mot": "liste",
+    "debut": 0.557,
+    "fin": 0.778
+  },
+  {
+    "mot": "des",
+    "debut": 0.824,
+    "fin": 0.929
+  },
+  {
+    "mot": "factures,",
+    "debut": 0.952,
+    "fin": 1.474
+  },
+  {
+    "mot": "et",
+    "debut": 1.591,
+    "fin": 1.718
+  },
+  {
+    "mot": "on",
+    "debut": 1.753,
+    "fin": 1.811
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.858,
+    "fin": 2.194
+  },
+  {
+    "mot": "avec",
+    "debut": 2.218,
+    "fin": 2.415
+  },
+  {
+    "mot": "un",
+    "debut": 2.45,
+    "fin": 2.496
+  },
+  {
+    "mot": "règlement",
+    "debut": 2.519,
+    "fin": 2.891
+  },
+  {
+    "mot": "noté.",
+    "debut": 2.926,
+    "fin": 3.367
+  },
+  {
+    "mot": "Le",
+    "debut": 3.692,
+    "fin": 3.773
+  },
+  {
+    "mot": "moyen",
+    "debut": 3.82,
+    "fin": 4.052
+  },
+  {
+    "mot": "de",
+    "debut": 4.098,
+    "fin": 4.156
+  },
+  {
+    "mot": "paiement",
+    "debut": 4.214,
+    "fin": 4.516
+  },
+  {
+    "mot": "se",
+    "debut": 4.551,
+    "fin": 4.632
+  },
+  {
+    "mot": "choisit",
+    "debut": 4.667,
+    "fin": 4.957
+  },
+  {
+    "mot": "dans",
+    "debut": 4.981,
+    "fin": 5.097
+  },
+  {
+    "mot": "la",
+    "debut": 5.12,
+    "fin": 5.178
+  },
+  {
+    "mot": "facture,",
+    "debut": 5.236,
+    "fin": 5.7
+  },
+  {
+    "mot": "sous",
+    "debut": 5.747,
+    "fin": 5.921
+  },
+  {
+    "mot": "le",
+    "debut": 5.944,
+    "fin": 6.014
+  },
+  {
+    "mot": "statut",
+    "debut": 6.037,
+    "fin": 6.536
+  },
+  {
+    "mot": ":",
+    "debut": 6.583,
+    "fin": 6.629
+  },
+  {
+    "mot": "espèces,",
+    "debut": 6.908,
+    "fin": 7.628
+  },
+  {
+    "mot": "carte,",
+    "debut": 7.802,
+    "fin": 8.324
+  },
+  {
+    "mot": "virement",
+    "debut": 8.568,
+    "fin": 9.009
+  },
+  {
+    "mot": "ou",
+    "debut": 9.253,
+    "fin": 9.404
+  },
+  {
+    "mot": "chèque.",
+    "debut": 9.451,
+    "fin": 9.88
+  },
+  {
+    "mot": "Un",
+    "debut": 10.263,
+    "fin": 10.391
+  },
+  {
+    "mot": "seul",
+    "debut": 10.449,
+    "fin": 10.588
+  },
+  {
+    "mot": "à",
+    "debut": 10.635,
+    "fin": 10.658
+  },
+  {
+    "mot": "la",
+    "debut": 10.693,
+    "fin": 10.751
+  },
+  {
+    "mot": "fois.",
+    "debut": 10.82,
+    "fin": 11.157
+  },
+  {
+    "mot": "Juste",
+    "debut": 11.54,
+    "fin": 11.831
+  },
+  {
+    "mot": "en",
+    "debut": 11.854,
+    "fin": 11.9
+  },
+  {
+    "mot": "dessous,",
+    "debut": 11.947,
+    "fin": 12.399
+  },
+  {
+    "mot": "le",
+    "debut": 12.481,
+    "fin": 12.585
+  },
+  {
+    "mot": "total",
+    "debut": 12.632,
+    "fin": 12.922
+  },
+  {
+    "mot": "à",
+    "debut": 12.968,
+    "fin": 12.992
+  },
+  {
+    "mot": "retrouver",
+    "debut": 13.026,
+    "fin": 13.41
+  },
+  {
+    "mot": "sur",
+    "debut": 13.456,
+    "fin": 13.56
+  },
+  {
+    "mot": "votre",
+    "debut": 13.584,
+    "fin": 13.827
+  },
+  {
+    "mot": "relevé",
+    "debut": 13.874,
+    "fin": 14.106
+  },
+  {
+    "mot": "de",
+    "debut": 14.153,
+    "fin": 14.222
+  },
+  {
+    "mot": "banque.",
+    "debut": 14.269,
+    "fin": 14.675
+  }
+]

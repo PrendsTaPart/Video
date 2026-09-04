@@ -1,0 +1,172 @@
+[
+  {
+    "mot": "Vos",
+    "debut": 0,
+    "fin": 0.209
+  },
+  {
+    "mot": "factures",
+    "debut": 0.232,
+    "fin": 0.685
+  },
+  {
+    "mot": "s'empilent.",
+    "debut": 0.743,
+    "fin": 1.3
+  },
+  {
+    "mot": "Pour",
+    "debut": 1.579,
+    "fin": 1.73
+  },
+  {
+    "mot": "savoir",
+    "debut": 1.765,
+    "fin": 1.997
+  },
+  {
+    "mot": "ce",
+    "debut": 2.032,
+    "fin": 2.113
+  },
+  {
+    "mot": "qui",
+    "debut": 2.171,
+    "fin": 2.252
+  },
+  {
+    "mot": "reste",
+    "debut": 2.299,
+    "fin": 2.496
+  },
+  {
+    "mot": "à",
+    "debut": 2.519,
+    "fin": 2.543
+  },
+  {
+    "mot": "encaisser,",
+    "debut": 2.624,
+    "fin": 3.274
+  },
+  {
+    "mot": "RapidoCRM",
+    "debut": 3.483,
+    "fin": 4.272
+  },
+  {
+    "mot": "parle",
+    "debut": 4.319,
+    "fin": 4.505
+  },
+  {
+    "mot": "à",
+    "debut": 4.528,
+    "fin": 4.551
+  },
+  {
+    "mot": "Claude",
+    "debut": 4.609,
+    "fin": 4.911
+  },
+  {
+    "mot": ":",
+    "debut": 4.957,
+    "fin": 4.981
+  },
+  {
+    "mot": "vous",
+    "debut": 5.155,
+    "fin": 5.306
+  },
+  {
+    "mot": "demandez",
+    "debut": 5.329,
+    "fin": 5.666
+  },
+  {
+    "mot": "en",
+    "debut": 5.7,
+    "fin": 5.759
+  },
+  {
+    "mot": "français,",
+    "debut": 5.805,
+    "fin": 6.351
+  },
+  {
+    "mot": "il",
+    "debut": 6.56,
+    "fin": 6.699
+  },
+  {
+    "mot": "lit",
+    "debut": 6.792,
+    "fin": 6.896
+  },
+  {
+    "mot": "vos",
+    "debut": 6.931,
+    "fin": 7.047
+  },
+  {
+    "mot": "données",
+    "debut": 7.07,
+    "fin": 7.43
+  },
+  {
+    "mot": "et",
+    "debut": 7.581,
+    "fin": 7.755
+  },
+  {
+    "mot": "répond.",
+    "debut": 7.802,
+    "fin": 8.243
+  },
+  {
+    "mot": "Copiez",
+    "debut": 8.568,
+    "fin": 8.963
+  },
+  {
+    "mot": "ce",
+    "debut": 8.986,
+    "fin": 9.102
+  },
+  {
+    "mot": "prompt,",
+    "debut": 9.16,
+    "fin": 9.659
+  },
+  {
+    "mot": "remplacez",
+    "debut": 9.985,
+    "fin": 10.542
+  },
+  {
+    "mot": "ce",
+    "debut": 10.658,
+    "fin": 10.855
+  },
+  {
+    "mot": "qui",
+    "debut": 10.913,
+    "fin": 11.041
+  },
+  {
+    "mot": "est",
+    "debut": 11.088,
+    "fin": 11.18
+  },
+  {
+    "mot": "entre",
+    "debut": 11.262,
+    "fin": 11.482
+  },
+  {
+    "mot": "crochets.",
+    "debut": 11.517,
+    "fin": 11.97
+  }
+]

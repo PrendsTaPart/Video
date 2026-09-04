@@ -1,0 +1,82 @@
+{
+  "duree": 60.8,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V03-gestion-des-statuts-d-une-facture/out/master-16x9.mp4",
+      "octets": 11106620
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V03-gestion-des-statuts-d-une-facture/out/master-9x16.mp4",
+      "octets": 8155354
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 11.033333333333333
+    },
+    {
+      "nom": "titre",
+      "debut": 11.033333333333333,
+      "fin": 24.8
+    },
+    {
+      "nom": "demo",
+      "debut": 24.8,
+      "fin": 43.7
+    },
+    {
+      "nom": "claude",
+      "debut": 43.7,
+      "fin": 57.233333333333334
+    },
+    {
+      "nom": "punchline",
+      "debut": 57.233333333333334,
+      "fin": 60.8
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Le client a payé la semaine dernière. Votre liste, elle, le compte encore parmi les impayés."
+    },
+    {
+      "timecode": "00:11",
+      "titre": "Changer le statut d'une facture"
+    },
+    {
+      "timecode": "00:24",
+      "titre": "Repérer le statut dans la liste"
+    },
+    {
+      "timecode": "00:31",
+      "titre": "Ouvrir la facture"
+    },
+    {
+      "timecode": "00:35",
+      "titre": "Passer en payée, et dire comment"
+    },
+    {
+      "timecode": "00:41",
+      "titre": "Voir la liste à jour"
+    },
+    {
+      "timecode": "00:43",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:57",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 61s, hors de la fenêtre 80–170s."
+  ]
+}

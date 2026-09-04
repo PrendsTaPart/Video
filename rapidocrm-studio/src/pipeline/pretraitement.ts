@@ -7,10 +7,7 @@ import { avertir, discret } from '../util/journal.ts';
 import { dureeParole } from './script.ts';
 
 export const RALENTI_MIN = 0.7;
-// 2,0× sur demande de Michael (03/09) : sur un enregistrement court, un script
-// resserré demandait davantage que l'ancien plafond de 1,6× et la démonstration
-// finissait au ralenti. Au-delà de 2×, le mouvement de souris décroche.
-export const ACCELERATION_MAX = 2.0;
+export const ACCELERATION_MAX = 2.2;
 
 const L16 = 1920;
 const H16 = 1080;
@@ -19,6 +16,11 @@ const H9 = 1920;
 
 /**
  * Facteur de vitesse pour caler la vidéo sur la voix, borné par la charte.
+ *
+ * Le plafond est passé de 1,6× à 2,2× : les scripts du module Comptabilité sont
+ * volontairement courts, et à 1,6× la démonstration traînait derrière une voix
+ * déjà finie. 2,2× reste lisible parce que la zone active est désignée par le
+ * cercle vert et que le libellé d'étape tient sous la vidéo.
  *
  * On prend la durée RÉELLE de la piste quand elle existe : l'estimation à
  * 150 mots/minute sert à écrire le script, pas à monter. Utiliser l'estimation

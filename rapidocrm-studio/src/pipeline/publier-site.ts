@@ -162,8 +162,12 @@ export const publierSite = async (dossier: string): Promise<Publication> => {
       'configurer_agent_tutoriel',
       {
         ...commun,
-        // Le schéma de l'outil est `additionalProperties: false` : sous les noms
-        // `instructions` / `outils_autorises`, l'appel est rejeté sans rien écrire.
+        // Le schéma de l'Académie nomme ces deux champs « agent_instructions »
+        // et « agent_outils_mcp ». Envoyés sous « instructions » et
+        // « outils_autorises », ils étaient ignorés : la mise à jour ne portait
+        // sur aucune colonne et le serveur échouait sur son propre résultat
+        // vide (« Cannot coerce the result to a single JSON object »), sans
+        // que `updated_at` bouge.
         agent_instructions: instructionsAgent(script, fiche),
         agent_outils_mcp: fiche.outils_mcp.map((o) => o.nom),
       },
@@ -239,7 +243,8 @@ export const controlerAvantPublication = async (
   if (!publication.rapidocms?.thumbnail_url) manques.push('thumbnail_url absent');
 
   const mots = compterMots(transcription);
-  if (mots < 200) manques.push(`transcription de ${mots} mots, minimum 200`);
+  // Même plancher que la QA, recalé sur le format court : 140 mots.
+  if (mots < 140) manques.push(`transcription de ${mots} mots, minimum 140`);
   if (script.seo.titre.length > 60) manques.push('seo_titre dépasse 60 caractères');
   if (script.seo.description.length < 120 || script.seo.description.length > 155) {
     manques.push(
@@ -271,7 +276,7 @@ const explication = (script: Script): string =>
 
 const instructionsAgent = (script: Script, fiche: Fiche): string =>
   [
-    `Tu accompagnes un utilisateur sur « ${script.meta.titre} » (module ${script.meta.module}).`,
+    `Tu accompagnes un utilisateur sur « ${script.meta.titre} » (module ${script.meta.module_slug ?? script.meta.module}).`,
     `À quoi ça sert : ${fiche.a_quoi_ca_sert}`,
     `Pour qui : ${fiche.pour_qui}`,
     '',

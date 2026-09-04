@@ -1,0 +1,15 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V03-05-gestion-des-statuts-d-une-facture.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V03-05-gestion-des-statuts-d-une-facture-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V03-05-gestion-des-statuts-d-une-facture-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V03-05-gestion-des-statuts-d-une-facture-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "37433bb0ee60d947",
+      "video_vertical_url": "1847d24f3044a0e4",
+      "thumbnail_url": "ecce71e63ba777b7",
+      "thumbnail_vertical_url": "3cf78672810ea503"
+    },
+    "publie_le": "2026-09-04T01:33:45.966Z"
+  }
+}
