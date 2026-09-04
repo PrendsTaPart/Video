@@ -1,0 +1,15 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V04-05-mode-de-paiement-des-factures.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V04-05-mode-de-paiement-des-factures-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V04-05-mode-de-paiement-des-factures-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V04-05-mode-de-paiement-des-factures-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "31012c62e5a69e5e",
+      "video_vertical_url": "d2962a83ad51f551",
+      "thumbnail_url": "1e7116cc7f45f720",
+      "thumbnail_vertical_url": "bfbcf6eb3de0f5ea"
+    },
+    "publie_le": "2026-09-04T01:33:50.675Z"
+  }
+}

@@ -243,7 +243,8 @@ export const controlerAvantPublication = async (
   if (!publication.rapidocms?.thumbnail_url) manques.push('thumbnail_url absent');
 
   const mots = compterMots(transcription);
-  if (mots < 200) manques.push(`transcription de ${mots} mots, minimum 200`);
+  // Même plancher que la QA, recalé sur le format court : 140 mots.
+  if (mots < 140) manques.push(`transcription de ${mots} mots, minimum 140`);
   if (script.seo.titre.length > 60) manques.push('seo_titre dépasse 60 caractères');
   if (script.seo.description.length < 120 || script.seo.description.length > 155) {
     manques.push(

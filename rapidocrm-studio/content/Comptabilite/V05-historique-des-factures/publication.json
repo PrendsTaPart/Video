@@ -1,0 +1,15 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V05-05-historique-des-factures.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V05-05-historique-des-factures-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V05-05-historique-des-factures-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V05-05-historique-des-factures-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "5334d89d7fbb0e16",
+      "video_vertical_url": "f41ed1d276dac1fe",
+      "thumbnail_url": "7b88907f33a372ad",
+      "thumbnail_vertical_url": "0ffb37aaed6cef0b"
+    },
+    "publie_le": "2026-09-04T01:33:55.517Z"
+  }
+}
