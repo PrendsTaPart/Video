@@ -19,10 +19,17 @@ succès : ils ne sont conservés ci-dessous que comme trace du contenu déposé.
 13 et 21 ont été reportées dans `contenuDepose.cartes` via
 `ajouter_carte_prompt`.
 
-**Mise à jour du 04/09/2026.** Épisode **42 — Gérer ses appareils connectés**
-déposé : vidéo, vignette, transcription, onze chapitres, durée « 47 s » et
-`statut: "en_ligne"`. Relu par `tutoriel_spec(42)` : `contenuDepose` est complet.
-`videos_manquantes` passe à **27 déposées / 16 manquantes**.
+**Mise à jour du 04/09/2026.** Deux épisodes déposés — **42 — Gérer ses
+appareils connectés** (« 47 s », onze chapitres) et **41 — Gérer son abonnement
+et ses factures** (« 45 s », neuf chapitres). Chacun reçoit vidéo, vignette,
+transcription, chapitres, `accroche`, `pointsCles`, `prerequis`, `aRetenir`,
+`couvertureUrl` et une note de production. Relus par `tutoriel_spec` :
+`contenuDepose` est complet dans les deux cas. `videos_manquantes` passe à
+**28 déposées / 15 manquantes**.
+
+Le master de la 41 est monté sur une source **anonymisée** : la facture PDF de
+la capture portait des données personnelles réelles, pixellisées avant montage.
+La note de production de la fiche 41 le consigne.
 
 Nouveauté côté serveur : `enregistrer_details_tutoriel` remplit désormais
 `accroche`, `pointsCles`, `prerequis`, `aRetenir`, `couvertureUrl`, `duree`,
