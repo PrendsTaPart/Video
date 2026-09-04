@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "module": "Comptabilite",
+    "module_slug": "05-comptabilite",
+    "numero": 3,
+    "titre": "Changer le statut d'une facture",
+    "titre_court": "Statut d'une facture",
+    "slug": "05-gestion-des-statuts-d-une-facture"
+  },
+  "hook": {
+    "texte": "Le client a payé la semaine dernière. Votre liste, elle, le compte encore parmi les impayés.",
+    "promesse": "Deux clics, et vos relances redeviennent justes.",
+    "duree": 9,
+    "alternatives": [
+      "Relancer un client qui a déjà réglé coûte plus qu'un oubli.",
+      "Une facture réglée qui reste en attente fausse tout le reste.",
+      "Ce que vous avez encaissé mérite d'être écrit quelque part."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la liste des factures, et on ressort avec une facture passée de en attente à payée. Le statut ne se change pas depuis le tableau : il vit dans le formulaire de la facture, juste au-dessus du mode de paiement. Et c'est voulu — le logiciel vous fait dire dans le même geste que l'argent est arrivé, et par quel moyen. Dans la liste, la couleur fait le reste : rouge pour ce qui reste dû, vert pour ce qui est encaissé. Un coup d'œil vous dit qui relancer.",
+    "duree": 32
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Repérer le statut dans la liste",
+        "voix": "La colonne Statut. Rouge pour en attente, vert pour payée. Ici, la première facture n'est pas réglée.",
+        "debut_source": 0,
+        "fin_source": 5.0,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.1,
+          "w": 0.77,
+          "h": 0.85
+        },
+        "annotation": "Statut",
+        "point": {
+          "x": 0.65,
+          "y": 0.62
+        }
+      },
+      {
+        "numero": 2,
+        "titre": "Ouvrir la facture",
+        "voix": "On rouvre la facture. Le formulaire revient tel qu'il a été rempli.",
+        "debut_source": 5.0,
+        "fin_source": 10.5,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.02,
+          "w": 0.42,
+          "h": 0.95
+        },
+        "annotation": "le formulaire",
+        "point": {
+          "x": 0.53,
+          "y": 0.4
+        }
+      },
+      {
+        "numero": 3,
+        "titre": "Passer en payée, et dire comment",
+        "voix": "Statut : payée. Et juste en dessous, le moyen — espèces, carte, virement ou chèque.",
+        "debut_source": 10.5,
+        "fin_source": 15.5,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.05,
+          "w": 0.42,
+          "h": 0.75
+        },
+        "annotation": "Statut et paiement",
+        "point": {
+          "x": 0.53,
+          "y": 0.35
+        }
+      },
+      {
+        "numero": 4,
+        "titre": "Voir la liste à jour",
+        "voix": "Et la ligne passe au vert.",
+        "debut_source": 15.5,
+        "fin_source": 18.411,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.02,
+          "w": 0.77,
+          "h": 0.8
+        },
+        "annotation": "Payée",
+        "point": {
+          "x": 0.65,
+          "y": 0.42
+        }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Vos statuts sont à jour. Pour savoir ce qui reste à encaisser sans parcourir la liste, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond, montant et date compris. Copiez ce prompt, collez-le, et lancez-le tel quel.",
+    "prompt": {
+      "texte": "Liste-moi mes factures en attente avec leur montant et leur date.",
+      "variables": [],
+      "outil_mcp": "list_factures"
+    },
+    "resultat_affiche": {
+      "titre": "2 factures en attente",
+      "lignes": [
+        "N° 2 — cabinet lefèvre — 5 760,00 € — 24/08/2026",
+        "N° 5 — olive & lin — 3 360,00 € — 26/08/2026"
+      ]
+    },
+    "duree": 21
+  },
+  "punchline": {
+    "texte": "Un statut à jour, et vous ne relancez plus ceux qui ont payé.",
+    "duree": 7,
+    "alternatives": [
+      "La couleur de la ligne vous dit qui appeler.",
+      "Encaissé, c'est écrit. Impayé aussi.",
+      "Vos relances valent ce que vaut votre suivi."
+    ]
+  },
+  "seo": {
+    "titre": "Statut d'une facture sur RapidoCRM — tutoriel",
+    "description": "Passez une facture de en attente à payée dans RapidoCRM, avec son mode de paiement, et gardez une liste d'impayés juste. Le tutoriel de l'Académie.",
+    "mots_cles": [
+      "statut facture",
+      "RapidoCRM",
+      "facture payée",
+      "impayés",
+      "relance client",
+      "comptabilité"
+    ],
+    "youtube_titre": "Changer le statut d'une facture — RapidoCRM",
+    "youtube_description": "Le tutoriel des statuts de facture de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "facture",
+      "impayés",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}
