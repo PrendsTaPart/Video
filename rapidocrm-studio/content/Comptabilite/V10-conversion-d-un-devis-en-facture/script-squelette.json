@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "module": "Comptabilite",
+    "numero": 10,
+    "titre": "Transformer un devis accepté en facture",
+    "titre_court": "Transformer un devis accepté",
+    "slug": "transformer-un-devis-accepte-en-facture"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir le devis à convertir",
+        "voix": "",
+        "debut_source": 0,
+        "fin_source": 6,
+        "zone_focus": {
+          "x": 0.68,
+          "y": 0.6,
+          "w": 0.2,
+          "h": 0.38
+        },
+        "annotation": "Ouvrir le devis à convertir"
+      },
+      {
+        "numero": 2,
+        "titre": "Signer le devis et enregistrer",
+        "voix": "",
+        "debut_source": 6,
+        "fin_source": 29,
+        "zone_focus": {
+          "x": 0.48,
+          "y": 0.05,
+          "w": 0.42,
+          "h": 0.6
+        },
+        "annotation": "Signer le devis et enregistrer"
+      },
+      {
+        "numero": 3,
+        "titre": "Lire ce que le logiciel annonce",
+        "voix": "",
+        "debut_source": 29,
+        "fin_source": 34,
+        "zone_focus": {
+          "x": 0.6,
+          "y": 0,
+          "w": 0.4,
+          "h": 0.2
+        },
+        "annotation": "Lire ce que le logiciel annonce"
+      },
+      {
+        "numero": 4,
+        "titre": "Passer à l'onglet facture",
+        "voix": "",
+        "debut_source": 34,
+        "fin_source": 46,
+        "zone_focus": {
+          "x": 0.24,
+          "y": 0,
+          "w": 0.74,
+          "h": 0.6
+        },
+        "annotation": "Passer à l'onglet facture"
+      },
+      {
+        "numero": 5,
+        "titre": "Retrouver la facture créée",
+        "voix": "",
+        "debut_source": 46,
+        "fin_source": 55.5,
+        "zone_focus": {
+          "x": 0.24,
+          "y": 0.3,
+          "w": 0.74,
+          "h": 0.5
+        },
+        "annotation": "Retrouver la facture créée"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] dernières factures avec leur statut et leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_factures"
+    }
+  }
+}
