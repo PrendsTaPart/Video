@@ -10,5 +10,4 @@ build/closing*.mp4
 build/video-track*.mp4
 animation/node_modules/
 assets/resto-2-0.mp3
-dist/*.mp4
 build/thumb_src.jpg
