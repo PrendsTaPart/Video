@@ -18,7 +18,7 @@
     ]
   },
   "intro": {
-    "texte": "On part de la page Facturation et on ressort avec une facture émise, puis corrigée. Un seul formulaire : l'entreprise, le produit, la date, et les montants se remplissent seuls. Vous n'avez plus qu'à décider du délai de paiement, des mentions légales et du statut. Un point à retenir tout de suite : le prix toutes taxes comprises ne se saisit pas. Il découle du prix hors taxes et de la T.V.A. du produit.",
+    "texte": "On part de la page Facturation, et on ressort avec une facture faite, puis corrigée. Un seul formulaire : le client, le produit, la date. Les montants se calculent seuls. Retenez une chose : le prix toutes taxes comprises ne se tape jamais à la main.",
     "duree": 28
   },
   "demo": {
@@ -44,9 +44,9 @@
       {
         "numero": 2,
         "titre": "Choisir le client et le produit",
-        "voix": "L'entreprise d'abord, prise dans vos clients. Puis le produit, avec son prix hors taxes. C'est lui qui remplit la facture.",
+        "voix": "L'entreprise d'abord, prise dans vos clients. Puis le produit, avec son prix. C'est lui qui remplit la facture.",
         "debut_source": 4.5,
-        "fin_source": 12.0,
+        "fin_source": 12,
         "zone_focus": {
           "x": 0.26,
           "y": 0.02,
@@ -63,8 +63,8 @@
         "numero": 3,
         "titre": "Laisser les montants se calculer",
         "voix": "La date, puis les montants : hors taxes, TVA, total. Vous n'écrivez rien.",
-        "debut_source": 12.0,
-        "fin_source": 19.0,
+        "debut_source": 12,
+        "fin_source": 19,
         "zone_focus": {
           "x": 0.26,
           "y": 0.1,
@@ -80,9 +80,9 @@
       {
         "numero": 4,
         "titre": "Fixer le délai et le statut",
-        "voix": "Le délai de paiement, les mentions légales, le statut. Et l'envoi : le logiciel peut expédier la facture.",
-        "debut_source": 19.0,
-        "fin_source": 25.0,
+        "voix": "Le délai de paiement, les mentions légales, le statut. Le logiciel peut aussi envoyer la facture.",
+        "debut_source": 19,
+        "fin_source": 25,
         "zone_focus": {
           "x": 0.26,
           "y": 0.02,
@@ -99,8 +99,8 @@
         "numero": 5,
         "titre": "Relire les totaux",
         "voix": "Dernière ligne : total TTC final. C'est ce que le client paiera.",
-        "debut_source": 25.0,
-        "fin_source": 29.0,
+        "debut_source": 25,
+        "fin_source": 29,
         "zone_focus": {
           "x": 0.26,
           "y": 0.02,
@@ -117,8 +117,8 @@
         "numero": 6,
         "titre": "Retrouver la facture au tableau",
         "voix": "Facture créée. Elle prend sa place dans la liste, avec son client et son statut.",
-        "debut_source": 29.0,
-        "fin_source": 36.0,
+        "debut_source": 29,
+        "fin_source": 36,
         "zone_focus": {
           "x": 0.22,
           "y": 0.02,
@@ -134,8 +134,8 @@
       {
         "numero": 7,
         "titre": "Corriger une facture",
-        "voix": "Une erreur de produit ? La fiche se rouvre telle quelle, on change ce qu'il faut.",
-        "debut_source": 36.0,
+        "voix": "Une erreur de produit ? La fiche se rouvre telle quelle, on corrige.",
+        "debut_source": 36,
         "fin_source": 48.5,
         "zone_focus": {
           "x": 0.26,
@@ -171,7 +171,7 @@
   },
   "segment_claude": {
     "accroche": "Ensuite, demandez-lui.",
-    "voix": "Vos factures s'empilent. Pour savoir ce qui reste dû sans ouvrir la comptabilité, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond, statut et montant compris. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.",
+    "voix": "Vos factures s'empilent. Pour savoir ce qui reste à encaisser, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
     "prompt": {
       "texte": "Liste-moi mes [nombre] dernières factures avec leur statut et leur montant.",
       "variables": [

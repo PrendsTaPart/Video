@@ -18,7 +18,7 @@
     ]
   },
   "intro": {
-    "texte": "On part de la liste des factures, et on ressort avec une facture passée de en attente à payée. Le statut ne se change pas depuis le tableau : il vit dans le formulaire de la facture, juste au-dessus du mode de paiement. Et c'est voulu — le logiciel vous fait dire dans le même geste que l'argent est arrivé, et par quel moyen. Dans la liste, la couleur fait le reste : rouge pour ce qui reste dû, vert pour ce qui est encaissé. Un coup d'œil vous dit qui relancer.",
+    "texte": "On part de la liste des factures, et on ressort avec une facture passée de « en attente » à « payée ». Le statut se change dans la facture, pas dans le tableau — juste au-dessus du moyen de paiement. On dit du même geste que l'argent est arrivé, et comment.",
     "duree": 32
   },
   "demo": {
@@ -28,7 +28,7 @@
         "titre": "Repérer le statut dans la liste",
         "voix": "La colonne Statut. Rouge pour en attente, vert pour payée. Ici, la première facture n'est pas réglée.",
         "debut_source": 0,
-        "fin_source": 5.0,
+        "fin_source": 5,
         "zone_focus": {
           "x": 0.22,
           "y": 0.1,
@@ -45,7 +45,7 @@
         "numero": 2,
         "titre": "Ouvrir la facture",
         "voix": "On rouvre la facture. Le formulaire revient tel qu'il a été rempli.",
-        "debut_source": 5.0,
+        "debut_source": 5,
         "fin_source": 10.5,
         "zone_focus": {
           "x": 0.26,
@@ -99,7 +99,7 @@
   },
   "segment_claude": {
     "accroche": "Ensuite, demandez-lui.",
-    "voix": "Vos statuts sont à jour. Pour savoir ce qui reste à encaisser sans parcourir la liste, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond, montant et date compris. Copiez ce prompt, collez-le, et lancez-le tel quel.",
+    "voix": "Vos statuts sont à jour. Pour savoir ce qui reste à encaisser sans relire la liste, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, lancez-le tel quel.",
     "prompt": {
       "texte": "Liste-moi mes factures en attente avec leur montant et leur date.",
       "variables": [],

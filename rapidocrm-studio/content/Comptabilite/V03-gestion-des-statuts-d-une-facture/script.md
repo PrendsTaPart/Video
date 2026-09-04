@@ -1,6 +1,6 @@
 # Changer le statut d'une facture
 
-Module **Comptabilite** · V02 · `05-gestion-des-statuts-d-une-facture`
+Module **Comptabilite** · V03 · `05-gestion-des-statuts-d-une-facture`
 
 ## Hook
 
@@ -14,7 +14,7 @@ Module **Comptabilite** · V02 · `05-gestion-des-statuts-d-une-facture`
 
 ## Intro
 
-On part de la liste des factures, et on ressort avec une facture passée de en attente à payée. Le statut ne se change pas depuis le tableau : il vit dans le formulaire de la facture, juste au-dessus du mode de paiement. Et c'est voulu — le logiciel vous fait dire dans le même geste que l'argent est arrivé, et par quel moyen. Dans la liste, la couleur fait le reste : rouge pour ce qui reste dû, vert pour ce qui est encaissé. Un coup d'œil vous dit qui relancer.
+On part de la liste des factures, et on ressort avec une facture passée de « en attente » à « payée ». Le statut se change dans la facture, pas dans le tableau — juste au-dessus du moyen de paiement. On dit du même geste que l'argent est arrivé, et comment.
 
 ## Démo
 
@@ -46,7 +46,7 @@ Et la ligne passe au vert.
 
 **Ensuite, demandez-lui.**
 
-Vos statuts sont à jour. Pour savoir ce qui reste à encaisser sans parcourir la liste, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond, montant et date compris. Copiez ce prompt, collez-le, et lancez-le tel quel.
+Vos statuts sont à jour. Pour savoir ce qui reste à encaisser sans relire la liste, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, lancez-le tel quel.
 
 ```
 Liste-moi mes factures en attente avec leur montant et leur date.

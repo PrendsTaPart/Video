@@ -18,7 +18,7 @@
     ]
   },
   "intro": {
-    "texte": "On part de l'historique complet et on ressort avec la facture voulue, prête à être renvoyée. Deux listes déroulantes en haut de page : le statut et l'entreprise. Elles se cumulent, et le compteur sous le tableau vous dit toujours combien de lignes ont été retenues, et sur combien au total. C'est important : tant qu'un filtre est actif, ce que vous ne voyez pas n'a pas disparu. Et sur chaque ligne, un menu donne quatre gestes — visualiser, modifier, télécharger, ou basculer sur la fiche du client.",
+    "texte": "On part de l'historique complet, et on ressort avec la facture voulue. Deux listes en haut de page : le statut et l'entreprise. Elles s'ajoutent l'une à l'autre, et le compteur sous le tableau dit toujours combien de lignes sont retenues, sur combien au total.",
     "duree": 32
   },
   "demo": {
@@ -28,7 +28,7 @@
         "titre": "Ouvrir l'historique",
         "voix": "L'historique des factures. Toutes y sont, la plus récente en tête, avec son client et son montant.",
         "debut_source": 0,
-        "fin_source": 11.0,
+        "fin_source": 11,
         "zone_focus": {
           "x": 0.22,
           "y": 0.1,
@@ -44,9 +44,9 @@
       {
         "numero": 2,
         "titre": "Croiser les deux filtres",
-        "voix": "Le statut, puis l'entreprise. Les deux se cumulent. Et quand rien ne correspond, le tableau le dit franchement : aucun résultat trouvé. Ce n'est pas une panne, c'est une réponse.",
-        "debut_source": 11.0,
-        "fin_source": 22.0,
+        "voix": "Le statut, puis l'entreprise. Les deux s'ajoutent. Et quand rien ne correspond, le tableau le dit : aucun résultat trouvé. Ce n'est pas une panne.",
+        "debut_source": 11,
+        "fin_source": 22,
         "zone_focus": {
           "x": 0.23,
           "y": 0.25,
@@ -62,9 +62,9 @@
       {
         "numero": 3,
         "titre": "Lire ce qui a été retenu",
-        "voix": "On change d'entreprise, et deux factures apparaissent. Le compteur précise : deux entrées, filtrées à partir de cinq. Vous savez toujours ce que le filtre a écarté.",
-        "debut_source": 22.0,
-        "fin_source": 39.0,
+        "voix": "On change d'entreprise, et deux factures apparaissent. Le compteur précise : deux entrées sur cinq. Vous savez ce que le filtre a écarté.",
+        "debut_source": 22,
+        "fin_source": 39,
         "zone_focus": {
           "x": 0.23,
           "y": 0.15,
@@ -81,7 +81,7 @@
         "numero": 4,
         "titre": "Visualiser ou télécharger",
         "voix": "Et le menu de la ligne : visualiser, modifier, télécharger, ou voir l'entreprise.",
-        "debut_source": 39.0,
+        "debut_source": 39,
         "fin_source": 47.403,
         "zone_focus": {
           "x": 0.6,
@@ -99,7 +99,7 @@
   },
   "segment_claude": {
     "accroche": "Ensuite, demandez-lui.",
-    "voix": "Les filtres font le tri à l'écran. Pour obtenir le même point sans toucher aux listes, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond, statut et montant compris. Copiez ce prompt, collez-le, et lancez-le tel quel.",
+    "voix": "Les filtres trient à l'écran. Pour le même point sans toucher aux listes, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, lancez-le tel quel.",
     "prompt": {
       "texte": "Liste-moi mes factures du mois avec leur statut et leur montant.",
       "variables": [],

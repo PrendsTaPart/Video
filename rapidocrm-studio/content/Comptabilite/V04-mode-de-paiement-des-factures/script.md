@@ -1,6 +1,6 @@
 # Renseigner le mode de paiement d'une facture
 
-Module **Comptabilite** · V03 · `05-mode-de-paiement-des-factures`
+Module **Comptabilite** · V04 · `05-mode-de-paiement-des-factures`
 
 ## Hook
 
@@ -14,7 +14,7 @@ Module **Comptabilite** · V03 · `05-mode-de-paiement-des-factures`
 
 ## Intro
 
-On part de la liste des factures, et on ressort avec un règlement documenté. Le mode de paiement se choisit dans le formulaire de la facture, sous le statut : espèces, carte bleue, virement ou chèque. Un seul à la fois. Le champ porte une étoile, le logiciel l'attend. Et juste en dessous, le récapitulatif rappelle les montants — c'est le total TTC final, remise déduite, qu'il faudra retrouver sur votre relevé. Rien à calculer, tout est à l'écran au moment de valider.
+On part de la liste des factures, et on ressort avec un règlement noté. Le moyen de paiement se choisit dans la facture, sous le statut : espèces, carte, virement ou chèque. Un seul à la fois. Juste en dessous, le total à retrouver sur votre relevé de banque.
 
 ## Démo
 
@@ -46,7 +46,7 @@ On enregistre, et c'est écrit.
 
 **Ensuite, demandez-lui.**
 
-Le règlement est documenté. Pour rouvrir une facture précise sans la chercher dans la liste, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le numéro de la facture.
+Le règlement est noté. Pour rouvrir une facture précise sans la chercher, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez le numéro entre crochets.
 
 ```
 Donne-moi le détail de la facture numéro [id].

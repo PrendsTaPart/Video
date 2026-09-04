@@ -1,6 +1,6 @@
 # Retrouver une facture dans l'historique
 
-Module **Comptabilite** · V04 · `05-historique-des-factures`
+Module **Comptabilite** · V05 · `05-historique-des-factures`
 
 ## Hook
 
@@ -14,7 +14,7 @@ Module **Comptabilite** · V04 · `05-historique-des-factures`
 
 ## Intro
 
-On part de l'historique complet et on ressort avec la facture voulue, prête à être renvoyée. Deux listes déroulantes en haut de page : le statut et l'entreprise. Elles se cumulent, et le compteur sous le tableau vous dit toujours combien de lignes ont été retenues, et sur combien au total. C'est important : tant qu'un filtre est actif, ce que vous ne voyez pas n'a pas disparu. Et sur chaque ligne, un menu donne quatre gestes — visualiser, modifier, télécharger, ou basculer sur la fiche du client.
+On part de l'historique complet, et on ressort avec la facture voulue. Deux listes en haut de page : le statut et l'entreprise. Elles s'ajoutent l'une à l'autre, et le compteur sous le tableau dit toujours combien de lignes sont retenues, sur combien au total.
 
 ## Démo
 
@@ -26,15 +26,15 @@ L'historique des factures. Toutes y sont, la plus récente en tête, avec son cl
 
 ### 2. Croiser les deux filtres
 
-_11.0s → 22.0s · 30 mots · ~12.0s_
+_11.0s → 22.0s · 25 mots · ~10.0s_
 
-Le statut, puis l'entreprise. Les deux se cumulent. Et quand rien ne correspond, le tableau le dit franchement : aucun résultat trouvé. Ce n'est pas une panne, c'est une réponse.
+Le statut, puis l'entreprise. Les deux s'ajoutent. Et quand rien ne correspond, le tableau le dit : aucun résultat trouvé. Ce n'est pas une panne.
 
 ### 3. Lire ce qui a été retenu
 
-_22.0s → 39.0s · 27 mots · ~10.8s_
+_22.0s → 39.0s · 23 mots · ~9.2s_
 
-On change d'entreprise, et deux factures apparaissent. Le compteur précise : deux entrées, filtrées à partir de cinq. Vous savez toujours ce que le filtre a écarté.
+On change d'entreprise, et deux factures apparaissent. Le compteur précise : deux entrées sur cinq. Vous savez ce que le filtre a écarté.
 
 ### 4. Visualiser ou télécharger
 
@@ -46,7 +46,7 @@ Et le menu de la ligne : visualiser, modifier, télécharger, ou voir l'entrepri
 
 **Ensuite, demandez-lui.**
 
-Les filtres font le tri à l'écran. Pour obtenir le même point sans toucher aux listes, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond, statut et montant compris. Copiez ce prompt, collez-le, et lancez-le tel quel.
+Les filtres trient à l'écran. Pour le même point sans toucher aux listes, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, lancez-le tel quel.
 
 ```
 Liste-moi mes factures du mois avec leur statut et leur montant.

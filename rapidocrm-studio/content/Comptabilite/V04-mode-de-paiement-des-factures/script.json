@@ -18,7 +18,7 @@
     ]
   },
   "intro": {
-    "texte": "On part de la liste des factures, et on ressort avec un règlement documenté. Le mode de paiement se choisit dans le formulaire de la facture, sous le statut : espèces, carte bleue, virement ou chèque. Un seul à la fois. Le champ porte une étoile, le logiciel l'attend. Et juste en dessous, le récapitulatif rappelle les montants — c'est le total TTC final, remise déduite, qu'il faudra retrouver sur votre relevé. Rien à calculer, tout est à l'écran au moment de valider.",
+    "texte": "On part de la liste des factures, et on ressort avec un règlement noté. Le moyen de paiement se choisit dans la facture, sous le statut : espèces, carte, virement ou chèque. Un seul à la fois. Juste en dessous, le total à retrouver sur votre relevé de banque.",
     "duree": 31
   },
   "demo": {
@@ -28,7 +28,7 @@
         "titre": "Ouvrir la facture réglée",
         "voix": "Depuis la liste, les trois points en fin de ligne ouvrent la facture.",
         "debut_source": 0,
-        "fin_source": 6.0,
+        "fin_source": 6,
         "zone_focus": {
           "x": 0.22,
           "y": 0.1,
@@ -45,7 +45,7 @@
         "numero": 2,
         "titre": "Choisir le moyen",
         "voix": "Quatre moyens, un seul coché. Ici, virement.",
-        "debut_source": 6.0,
+        "debut_source": 6,
         "fin_source": 11.5,
         "zone_focus": {
           "x": 0.26,
@@ -99,7 +99,7 @@
   },
   "segment_claude": {
     "accroche": "Ensuite, demandez-lui.",
-    "voix": "Le règlement est documenté. Pour rouvrir une facture précise sans la chercher dans la liste, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le numéro de la facture.",
+    "voix": "Le règlement est noté. Pour rouvrir une facture précise sans la chercher, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez le numéro entre crochets.",
     "prompt": {
       "texte": "Donne-moi le détail de la facture numéro [id].",
       "variables": [
