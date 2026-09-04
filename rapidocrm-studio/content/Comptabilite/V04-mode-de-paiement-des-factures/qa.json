@@ -4,8 +4,8 @@
     {
       "famille": "Charte",
       "intitule": "Couleurs dominantes dans la palette",
-      "statut": "avertissement",
-      "detail": "qa-006.jpg → #9898A8"
+      "statut": "ok",
+      "detail": ""
     },
     {
       "famille": "Charte",
@@ -29,7 +29,7 @@
       "famille": "Lisibilité",
       "intitule": "Titre de vignette lisible en petit",
       "statut": "ok",
-      "detail": "20 caractères"
+      "detail": "16 caractères"
     },
     {
       "famille": "Audio",
@@ -41,7 +41,7 @@
       "famille": "Audio",
       "intitule": "Niveau de voix constant entre les blocs",
       "statut": "ok",
-      "detail": "écart de 1.5 dB"
+      "detail": "écart de 2.6 dB"
     },
     {
       "famille": "Audio",
@@ -71,7 +71,7 @@
       "famille": "Complétude",
       "intitule": "Transcription ≥ 140 mots",
       "statut": "ok",
-      "detail": "175 mots"
+      "detail": "161 mots"
     },
     {
       "famille": "Complétude",
@@ -89,14 +89,14 @@
       "famille": "Complétude",
       "intitule": "SEO aux bonnes longueurs",
       "statut": "ok",
-      "detail": "titre 45 car., description 147 car."
+      "detail": "titre 42 car., description 153 car."
     },
     {
       "famille": "Complétude",
       "intitule": "Durée finale dans la fenêtre 55–170 s",
       "statut": "ok",
-      "detail": "61 s"
+      "detail": "60 s"
     }
   ],
-  "produit_le": "2026-09-04T01:28:56.474Z"
+  "produit_le": "2026-09-04T01:29:02.206Z"
 }

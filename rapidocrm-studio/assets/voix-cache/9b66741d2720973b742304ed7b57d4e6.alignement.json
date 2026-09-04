@@ -1,0 +1,157 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "virement",
+    "debut": 0.209,
+    "fin": 0.639
+  },
+  {
+    "mot": "tombe",
+    "debut": 0.708,
+    "fin": 0.952
+  },
+  {
+    "mot": "sur",
+    "debut": 0.987,
+    "fin": 1.103
+  },
+  {
+    "mot": "le",
+    "debut": 1.126,
+    "fin": 1.196
+  },
+  {
+    "mot": "compte.",
+    "debut": 1.242,
+    "fin": 1.614
+  },
+  {
+    "mot": "Trois",
+    "debut": 1.73,
+    "fin": 1.95
+  },
+  {
+    "mot": "semaines",
+    "debut": 1.974,
+    "fin": 2.287
+  },
+  {
+    "mot": "plus",
+    "debut": 2.31,
+    "fin": 2.426
+  },
+  {
+    "mot": "tard,",
+    "debut": 2.45,
+    "fin": 2.81
+  },
+  {
+    "mot": "vous",
+    "debut": 3.135,
+    "fin": 3.274
+  },
+  {
+    "mot": "cherchez",
+    "debut": 3.297,
+    "fin": 3.553
+  },
+  {
+    "mot": "encore",
+    "debut": 3.576,
+    "fin": 3.831
+  },
+  {
+    "mot": "à",
+    "debut": 3.855,
+    "fin": 3.878
+  },
+  {
+    "mot": "quelle",
+    "debut": 3.947,
+    "fin": 4.133
+  },
+  {
+    "mot": "facture",
+    "debut": 4.156,
+    "fin": 4.563
+  },
+  {
+    "mot": "il",
+    "debut": 4.621,
+    "fin": 4.714
+  },
+  {
+    "mot": "correspond.",
+    "debut": 4.76,
+    "fin": 5.317
+  },
+  {
+    "mot": "Un",
+    "debut": 5.759,
+    "fin": 5.886
+  },
+  {
+    "mot": "champ",
+    "debut": 5.944,
+    "fin": 6.142
+  },
+  {
+    "mot": "coché",
+    "debut": 6.177,
+    "fin": 6.583
+  },
+  {
+    "mot": "le",
+    "debut": 6.734,
+    "fin": 6.827
+  },
+  {
+    "mot": "jour",
+    "debut": 6.873,
+    "fin": 7.012
+  },
+  {
+    "mot": "même,",
+    "debut": 7.059,
+    "fin": 7.454
+  },
+  {
+    "mot": "et",
+    "debut": 7.663,
+    "fin": 7.779
+  },
+  {
+    "mot": "le",
+    "debut": 7.814,
+    "fin": 7.86
+  },
+  {
+    "mot": "rapprochement",
+    "debut": 7.895,
+    "fin": 8.475
+  },
+  {
+    "mot": "se",
+    "debut": 8.545,
+    "fin": 8.638
+  },
+  {
+    "mot": "fait",
+    "debut": 8.696,
+    "fin": 8.824
+  },
+  {
+    "mot": "tout",
+    "debut": 8.847,
+    "fin": 8.975
+  },
+  {
+    "mot": "seul.",
+    "debut": 8.998,
+    "fin": 9.311
+  }
+]

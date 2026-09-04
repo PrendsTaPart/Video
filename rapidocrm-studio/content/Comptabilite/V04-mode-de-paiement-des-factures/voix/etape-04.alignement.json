@@ -1,0 +1,27 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "enregistre,",
+    "debut": 0.197,
+    "fin": 0.685
+  },
+  {
+    "mot": "et",
+    "debut": 0.801,
+    "fin": 0.894
+  },
+  {
+    "mot": "c'est",
+    "debut": 0.917,
+    "fin": 1.068
+  },
+  {
+    "mot": "écrit.",
+    "debut": 1.138,
+    "fin": 1.44
+  }
+]

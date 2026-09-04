@@ -1,0 +1,72 @@
+[
+  {
+    "mot": "Dernière",
+    "debut": 0,
+    "fin": 0.372
+  },
+  {
+    "mot": "ligne",
+    "debut": 0.395,
+    "fin": 0.65
+  },
+  {
+    "mot": ":",
+    "debut": 0.708,
+    "fin": 0.743
+  },
+  {
+    "mot": "total",
+    "debut": 0.859,
+    "fin": 1.196
+  },
+  {
+    "mot": "toutes",
+    "debut": 1.277,
+    "fin": 1.509
+  },
+  {
+    "mot": "taxes",
+    "debut": 1.544,
+    "fin": 1.834
+  },
+  {
+    "mot": "comprises",
+    "debut": 1.95,
+    "fin": 2.334
+  },
+  {
+    "mot": "final.",
+    "debut": 2.357,
+    "fin": 2.647
+  },
+  {
+    "mot": "C'est",
+    "debut": 2.682,
+    "fin": 2.844
+  },
+  {
+    "mot": "ce",
+    "debut": 2.868,
+    "fin": 2.972
+  },
+  {
+    "mot": "que",
+    "debut": 3.03,
+    "fin": 3.146
+  },
+  {
+    "mot": "le",
+    "debut": 3.17,
+    "fin": 3.239
+  },
+  {
+    "mot": "client",
+    "debut": 3.297,
+    "fin": 3.541
+  },
+  {
+    "mot": "paiera.",
+    "debut": 3.576,
+    "fin": 3.936
+  }
+]
