@@ -76,5 +76,7 @@
       "titre": "À retenir"
     }
   ],
-  "avertissements": []
+  "avertissements": [
+    "Durée finale 50s, hors de la fenêtre 80–170s."
+  ]
 }
