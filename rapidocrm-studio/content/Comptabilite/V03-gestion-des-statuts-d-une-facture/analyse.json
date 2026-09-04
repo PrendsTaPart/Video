@@ -1,39 +1,71 @@
 {
   "duree": 18.411,
-  "resolution": [1920, 882],
+  "resolution": [
+    1920,
+    882
+  ],
   "fps": 30,
   "ecrans": [
-    { "t": 0, "nom": "Facturation — la facture 3 est En attente" },
-    { "t": 5.0, "nom": "Formulaire de modification de la facture" },
-    { "t": 15.5, "nom": "Facturation — « Facture modifiée avec succès », la facture 3 est Payée" }
+    {
+      "t": 0,
+      "nom": "Facturation — la facture 3 est En attente"
+    },
+    {
+      "t": 5.0,
+      "nom": "Formulaire de modification de la facture"
+    },
+    {
+      "t": 15.5,
+      "nom": "Facturation — « Facture modifiée avec succès », la facture 3 est Payée"
+    }
   ],
   "actions": [
     {
       "t": 3.0,
       "type": "ouverture",
       "cible": "colonne Statut du tableau des factures",
-      "zone": { "x": 0.6, "y": 0.4, "w": 0.2, "h": 0.55 },
+      "zone": {
+        "x": 0.6,
+        "y": 0.4,
+        "w": 0.2,
+        "h": 0.55
+      },
       "texte_visible": "Statut — En attente · Payée · En attente"
     },
     {
       "t": 8.0,
       "type": "ouverture",
       "cible": "haut du formulaire de modification, entreprise et produit",
-      "zone": { "x": 0.26, "y": 0.02, "w": 0.42, "h": 0.95 },
+      "zone": {
+        "x": 0.26,
+        "y": 0.02,
+        "w": 0.42,
+        "h": 0.95
+      },
       "texte_visible": "Informations — Entreprise Brasserie du Quai — Choisir un produit"
     },
     {
       "t": 12.5,
       "type": "selection",
       "cible": "bloc Statut puis Mode de paiement",
-      "zone": { "x": 0.26, "y": 0.05, "w": 0.42, "h": 0.75 },
+      "zone": {
+        "x": 0.26,
+        "y": 0.05,
+        "w": 0.42,
+        "h": 0.75
+      },
       "texte_visible": "Statut Payée / En attente — Mode de paiement Espèce · Carte bleue · Virement · Chèque"
     },
     {
       "t": 16.5,
       "type": "ouverture",
       "cible": "bandeau de confirmation et statut mis à jour dans le tableau",
-      "zone": { "x": 0.22, "y": 0.02, "w": 0.77, "h": 0.8 },
+      "zone": {
+        "x": 0.22,
+        "y": 0.02,
+        "w": 0.77,
+        "h": 0.8
+      },
       "texte_visible": "Facture modifiée avec succès — la facture 3 est Payée"
     }
   ],
@@ -43,51 +75,94 @@
       "titre": "Repérer le statut dans la liste",
       "debut": 0,
       "fin": 5.0,
-      "actions": [0],
-      "zone_focus": { "x": 0.22, "y": 0.1, "w": 0.77, "h": 0.85 }
+      "actions": [
+        0
+      ],
+      "zone_focus": {
+        "x": 0.22,
+        "y": 0.1,
+        "w": 0.77,
+        "h": 0.85
+      }
     },
     {
       "numero": 2,
       "titre": "Ouvrir la facture en modification",
       "debut": 5.0,
       "fin": 10.5,
-      "actions": [1],
-      "zone_focus": { "x": 0.26, "y": 0.02, "w": 0.42, "h": 0.95 }
+      "actions": [
+        1
+      ],
+      "zone_focus": {
+        "x": 0.26,
+        "y": 0.02,
+        "w": 0.42,
+        "h": 0.95
+      }
     },
     {
       "numero": 3,
       "titre": "Passer le statut à Payée et dire comment",
       "debut": 10.5,
       "fin": 15.5,
-      "actions": [2],
-      "zone_focus": { "x": 0.26, "y": 0.05, "w": 0.42, "h": 0.75 }
+      "actions": [
+        2
+      ],
+      "zone_focus": {
+        "x": 0.26,
+        "y": 0.05,
+        "w": 0.42,
+        "h": 0.75
+      }
     },
     {
       "numero": 4,
       "titre": "Voir le statut à jour dans la liste",
       "debut": 15.5,
       "fin": 18.411,
-      "actions": [3],
-      "zone_focus": { "x": 0.22, "y": 0.02, "w": 0.77, "h": 0.8 }
+      "actions": [
+        3
+      ],
+      "zone_focus": {
+        "x": 0.22,
+        "y": 0.02,
+        "w": 0.77,
+        "h": 0.8
+      }
     }
   ],
   "zones_sensibles": [
     {
       "t": 0,
       "fin": 18.411,
-      "zone": { "x": 0.855, "y": 0.02, "w": 0.145, "h": 0.115 },
+      "zone": {
+        "x": 0.855,
+        "y": 0.02,
+        "w": 0.145,
+        "h": 0.115
+      },
       "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
     },
     {
       "t": 0,
       "fin": 5.0,
-      "zone": { "x": 0.385, "y": 0.62, "w": 0.115, "h": 0.33 },
+      "zone": {
+        "x": 0.383,
+        "y": 0.5,
+        "w": 0.125,
+        "h": 0.28
+      },
       "raison": "Adresses e-mail des destinataires dans le tableau des factures"
     },
     {
       "t": 15.5,
       "fin": 18.411,
-      "zone": { "x": 0.385, "y": 0.5, "w": 0.115, "h": 0.28 },
+      "zone": {
+        "x": 0.385,
+        "y": 0.5,
+        "w": 0.115,
+        "h": 0.28
+      },
       "raison": "Adresses e-mail des destinataires dans le tableau des factures"
     }
   ]

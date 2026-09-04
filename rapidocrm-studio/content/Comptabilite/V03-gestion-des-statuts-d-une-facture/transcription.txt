@@ -1,0 +1,15 @@
+Le client a payé la semaine dernière. Votre liste, elle, le compte encore parmi les impayés. Deux clics, et vos relances redeviennent justes.
+
+On part de la liste des factures, et on ressort avec une facture passée de « en attente » à « payée ». Le statut se change dans la facture, pas dans le tableau — juste au-dessus du moyen de paiement. On dit du même geste que l'argent est arrivé, et comment.
+
+La colonne Statut. Rouge pour en attente, vert pour payée. Ici, la première facture n'est pas réglée.
+
+On rouvre la facture. Le formulaire revient tel qu'il a été rempli.
+
+Statut : payée. Et juste en dessous, le moyen — espèces, carte, virement ou chèque.
+
+Et la ligne passe au vert.
+
+Vos statuts sont à jour. Pour savoir ce qui reste à encaisser sans relire la liste, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, lancez-le tel quel.
+
+Un statut à jour, et vous ne relancez plus ceux qui ont payé.

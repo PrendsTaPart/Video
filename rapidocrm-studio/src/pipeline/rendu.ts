@@ -11,7 +11,7 @@ import {
   type Rendu,
   type Script,
 } from '../schema/index.ts';
-import { assurerLogos, cheminLogo, LOGOS, type NomLogo } from '../brand/logos.ts';
+import { assurerLogos, cheminLogo, installerLogoComplet, LOGOS, type NomLogo } from '../brand/logos.ts';
 import { calculerMinutage, FPS } from '../template/minutage.ts';
 import { assurerDossier, ecrireJson, lireJson, racineProjet } from '../util/chemins.ts';
 import { lancer } from '../util/ffmpeg.ts';
@@ -57,11 +57,7 @@ export const rendre = async (dossier: string, options: OptionsRendu = {}): Promi
     const destination = join(assurerDossier(join(racinePublic, 'logos')), `${nom}.png`);
     if (!existsSync(destination)) copyFileSync(cheminLogo(nom), destination);
   }
-  // Le logo complet fourni par la marque, monté tel quel en fin de vidéo.
-  const complet = join(racineProjet(), 'assets', 'logos', 'rapidocrm-complet.png');
-  if (existsSync(complet)) {
-    copyFileSync(complet, join(racinePublic, 'logos', 'rapidocrm-complet.png'));
-  }
+  installerLogoComplet(racinePublic);
 
   const sortie = assurerDossier(join(dossier, 'out'));
   const formats: ('16x9' | '9x16')[] =
