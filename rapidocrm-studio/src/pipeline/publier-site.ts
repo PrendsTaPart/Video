@@ -162,8 +162,10 @@ export const publierSite = async (dossier: string): Promise<Publication> => {
       'configurer_agent_tutoriel',
       {
         ...commun,
-        instructions: instructionsAgent(script, fiche),
-        outils_autorises: fiche.outils_mcp.map((o) => o.nom),
+        // Le schéma de l'outil est `additionalProperties: false` : sous les noms
+        // `instructions` / `outils_autorises`, l'appel est rejeté sans rien écrire.
+        agent_instructions: instructionsAgent(script, fiche),
+        agent_outils_mcp: fiche.outils_mcp.map((o) => o.nom),
       },
     ],
   ];

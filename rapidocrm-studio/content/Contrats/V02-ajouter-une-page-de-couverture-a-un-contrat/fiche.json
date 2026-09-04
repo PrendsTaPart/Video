@@ -1,0 +1,87 @@
+{
+  "fonctionnalite": "Ajouter une page de couverture à un template de contrat",
+  "a_quoi_ca_sert": "Mettre une vraie première page devant un contrat, choisie dans une galerie, sans ouvrir d'éditeur. Le contrat s'ouvre ensuite sur cette page au lieu de commencer sec sur l'article 1.",
+  "pour_qui": "Gérant ou commercial qui envoie ses contrats lui-même",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir au moins un template de contrat dans la liste"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Couverture",
+      "obligatoire": false,
+      "explication": "La vignette choisie dans la galerie. « Aucun » retire la couverture et laisse le contrat commencer directement par son texte."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_contrat_templates",
+      "role": "Lister les templates de contrat de l'espace, pour retrouver celui à habiller.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["search", "limit"],
+      "exemple_appel": { "limit": 10 }
+    },
+    {
+      "nom": "get_contrat",
+      "role": "Relire un contrat en détail une fois sa couverture posée.",
+      "parametres_obligatoires": ["id"],
+      "parametres_optionnels": [],
+      "exemple_appel": { "id": 1 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Choisir une couverture qui porte déjà les mots « Document contractuel » plutôt qu'un visuel de newsletter : le lecteur doit comprendre en une seconde ce qu'il ouvre.",
+    "Poser la couverture sur le template, pas sur un contrat isolé : tous les contrats issus de ce template en héritent."
+  ],
+  "erreurs_frequentes": [
+    "Fermer la fenêtre par la croix sans cliquer sur confirmer : la couverture n'est pas enregistrée.",
+    "Chercher la couverture dans l'éditeur de contrat : elle se choisit depuis la liste des templates, par le bouton plus de la ligne."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Donner une première page à un contrat",
+      "contexte": "Votre contrat s'ouvre directement sur l'article 1, sans page de garde.",
+      "action": "Depuis la liste des templates, ouvrez le choix de couverture et sélectionnez « Page de couverture — contrat », puis confirmez.",
+      "resultat_attendu": "Le contrat s'ouvre sur une page portant « Document contractuel », le prestataire et le client."
+    },
+    {
+      "titre": "Revenir à un contrat sans couverture",
+      "contexte": "La page de garde ne convient plus pour ce type de document.",
+      "action": "Rouvrez le choix de couverture et sélectionnez la vignette « Aucun », puis confirmez.",
+      "resultat_attendu": "Le bandeau « contrat modifié avec succès » s'affiche et le contrat repart sans page de garde."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "La galerie tient sur deux pages",
+      "contenu": "Sous les vignettes, une pagination 1 et 2. Si vous ne trouvez pas votre couverture, elle est sur la deuxième page.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "« Aucun » est un choix, pas un vide",
+      "contenu": "La vignette « Aucun » est une option de la galerie : elle retire la couverture existante.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le marketplace prolonge la galerie",
+      "contenu": "À côté de confirmer, le bouton « visiter le marketplace » ouvre d'autres modèles que ceux déjà présents dans votre espace.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Faire le tour de ses templates de contrat",
+    "texte": "Liste-moi mes [nombre] templates de contrat avec leur titre.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_contrat_templates"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:05 à 00:14 — modale « Choisissez votre couverture »",
+    "a_quoi_ca_sert": "frames 00:21 et 00:26 — le contrat ouvert sur sa page de couverture puis son corps",
+    "champs_cles": "frames 00:07 à 00:13 — galerie de vignettes et vignette « Aucun »",
+    "erreurs_frequentes": "frame 00:13 — bouton confirmer et croix de fermeture ; frame 00:05 — bouton plus sur la ligne du template",
+    "astuces": "frame 00:13 — pagination 1/2, vignette « Aucun », bouton « visiter le marketplace »",
+    "outils_mcp": "schémas des outils list_contrat_templates et get_contrat du MCP RapidoCRM",
+    "cas_usage": "frame 00:14 — bandeau « contrat modifié avec succès »"
+  },
+  "a_verifier": []
+}

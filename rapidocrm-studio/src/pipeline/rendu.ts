@@ -36,7 +36,9 @@ export interface OptionsRendu {
 export const navigateur = (): string | null =>
   process.env.REMOTION_BROWSER_EXECUTABLE ?? null;
 
-const DUREE_MIN = 80;
+// Aligné sur la cible resserrée du script (55–95 s), avec la marge des
+// séquences d'habillage qui encadrent la démonstration.
+const DUREE_MIN = 50;
 const DUREE_MAX = 170;
 
 /** Étape 5 — rendu vidéo. */

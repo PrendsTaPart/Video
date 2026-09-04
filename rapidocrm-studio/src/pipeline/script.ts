@@ -12,8 +12,11 @@ import { ecrireJson, lireJson } from '../util/chemins.ts';
 import { avertir, discret, info } from '../util/journal.ts';
 
 export const DEBIT_MOTS_MINUTE = 150;
-const CIBLE_MIN = 90;
-const CIBLE_MAX = 150;
+// Fenêtre resserrée sur demande de Michael (03/09) : des tutoriels plus courts,
+// en mots simples. L'ancienne cible 90–150 s étirait la voix bien au-delà de ce
+// que dure l'enregistrement d'écran.
+const CIBLE_MIN = 55;
+const CIBLE_MAX = 95;
 
 export const compterMots = (texte: string): number =>
   texte.trim().split(/\s+/).filter(Boolean).length;

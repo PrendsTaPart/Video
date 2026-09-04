@@ -1,0 +1,97 @@
+{
+  "fonctionnalite": "Consulter l'historique des contrats et rouvrir un contrat généré",
+  "a_quoi_ca_sert": "Savoir où en sont vos contrats — combien sont partis, combien sont signés, combien attendent — et rouvrir n'importe lequel d'entre eux tel qu'il a été envoyé au client.",
+  "pour_qui": "Gérant ou commercial qui suit ses contrats en cours",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir déjà généré au moins un contrat"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Statut",
+      "obligatoire": false,
+      "explication": "L'état du contrat. Trois valeurs : brouillon, en attente, signé. C'est ce filtre qui sépare ce qui est parti de ce qui est revenu."
+    },
+    {
+      "nom": "Entreprise",
+      "obligatoire": false,
+      "explication": "Le client rattaché au contrat. Sert à ne voir que les contrats d'une société."
+    },
+    {
+      "nom": "Date de création",
+      "obligatoire": false,
+      "explication": "Les deux champs jj/mm/aaaa bornent la période affichée : une date de début et une date de fin."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_contrats",
+      "role": "Lister les contrats clients, filtrables par statut, par entreprise et par période.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["q", "statut", "entreprise_id", "date_debut", "date_fin", "limit"],
+      "exemple_appel": { "statut": "en_attente", "limit": 20 }
+    },
+    {
+      "nom": "get_contrat",
+      "role": "Ouvrir le détail complet d'un contrat de l'historique.",
+      "parametres_obligatoires": ["id"],
+      "parametres_optionnels": [],
+      "exemple_appel": { "id": 1 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Lire les trois compteurs avant le tableau : ils disent en un coup d'œil combien de contrats attendent encore une signature.",
+    "Filtrer sur le statut « en attente » pour savoir qui relancer, plutôt que de parcourir toute la liste."
+  ],
+  "erreurs_frequentes": [
+    "Oublier de cliquer sur appliquer après avoir choisi un filtre : le tableau ne bouge pas tant que le filtre n'est pas appliqué.",
+    "Laisser un filtre posé et croire que l'historique est vide : le bouton annuler remet la liste complète."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Savoir quels contrats relancer",
+      "contexte": "Vous avez envoyé plusieurs contrats et vous ne savez plus lesquels sont revenus signés.",
+      "action": "Lisez le compteur « Total de contrats en attente », puis filtrez le tableau sur ce statut et appliquez.",
+      "resultat_attendu": "Le tableau n'affiche que les contrats encore en attente, avec leur client et leur date de création."
+    },
+    {
+      "titre": "Relire un contrat tel qu'il est parti",
+      "contexte": "Un client conteste une clause de son contrat.",
+      "action": "Depuis la colonne Action de la ligne, ouvrez le contrat généré.",
+      "resultat_attendu": "Le contrat s'ouvre dans son lecteur, page par page, jusqu'aux blocs de signature du prestataire et du client."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Trois compteurs, trois états",
+      "contenu": "Créés, signés, en attente. Le troisième est celui qui demande une action de votre part.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "La recherche porte sur le fichier",
+      "contenu": "Le champ « Chercher un fichier » retrouve un contrat par son nom, sans passer par les filtres.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le contrat garde ses pages de signature",
+      "contenu": "La dernière page porte les deux blocs Signature, prestataire et client. C'est cette version-là que le client a reçue.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Lister les contrats qui attendent encore",
+    "texte": "Liste-moi mes contrats au statut [statut] avec leur entreprise et leur date de création.",
+    "variables": ["statut"],
+    "outil_mcp": "list_contrats"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 et 00:05 — bandeau Statistiques et tableau de l'historique",
+    "a_quoi_ca_sert": "frames 00:02, 00:05 et 00:12 — compteurs, ligne de contrat, lecteur du contrat généré",
+    "champs_cles": "frame 00:05 — filtres Statut, Entreprise, jj/mm/aaaa ; valeurs de statut du schéma list_contrats",
+    "erreurs_frequentes": "frame 00:05 — boutons appliquer et annuler",
+    "astuces": "frames 00:02 et 00:16 — compteurs, champ « Chercher un fichier », blocs de signature de la dernière page",
+    "outils_mcp": "schémas des outils list_contrats et get_contrat du MCP RapidoCRM",
+    "cas_usage": "frames 00:05 et 00:16 — statut « En attente » et dernière page du contrat"
+  },
+  "a_verifier": []
+}

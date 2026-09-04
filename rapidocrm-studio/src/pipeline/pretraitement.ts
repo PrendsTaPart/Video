@@ -7,7 +7,10 @@ import { avertir, discret } from '../util/journal.ts';
 import { dureeParole } from './script.ts';
 
 export const RALENTI_MIN = 0.7;
-export const ACCELERATION_MAX = 1.6;
+// 2,0× sur demande de Michael (03/09) : sur un enregistrement court, un script
+// resserré demandait davantage que l'ancien plafond de 1,6× et la démonstration
+// finissait au ralenti. Au-delà de 2×, le mouvement de souris décroche.
+export const ACCELERATION_MAX = 2.0;
 
 const L16 = 1920;
 const H16 = 1080;
