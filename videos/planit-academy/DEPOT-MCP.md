@@ -19,6 +19,21 @@ succès : ils ne sont conservés ci-dessous que comme trace du contenu déposé.
 13 et 21 ont été reportées dans `contenuDepose.cartes` via
 `ajouter_carte_prompt`.
 
+**Mise à jour du 04/09/2026.** Épisode **42 — Gérer ses appareils connectés**
+déposé : vidéo, vignette, transcription, onze chapitres, durée « 47 s » et
+`statut: "en_ligne"`. Relu par `tutoriel_spec(42)` : `contenuDepose` est complet.
+`videos_manquantes` passe à **27 déposées / 16 manquantes**.
+
+Nouveauté côté serveur : `enregistrer_details_tutoriel` remplit désormais
+`accroche`, `pointsCles`, `prerequis`, `aRetenir`, `couvertureUrl`, `duree`,
+`ressources` et `promptsMarketplace`. Trois des quatre champs signalés plus bas
+comme « sans outil d'écriture » sont donc adressables ; seul `cartes` garde son
+outil dédié (`ajouter_carte_prompt`). La section « Ce qui n'a toujours pas
+d'outil d'écriture » est caduque.
+
+`definir_statut` accepte en plus une `note` de production, visible dans le
+Studio : l'écart de la fiche 42 y est consigné.
+
 ### Deux réserves qui subsistent
 
 1. **`fiche.statut` reste à `a_produire`** sur une fiche déposée, alors que
