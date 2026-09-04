@@ -1,0 +1,53 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Lyric,Poppins,70,&H00E6F9FC,&H8CE6F9FC,&H96231A0F,&H96231A0F,-1,0,0,0,100,100,0,0,3,14,0,2,80,80,110,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:11.12,0:00:13.64,Lyric,,0,0,0,,{\k31}T'en {\k18}as {\k37}marre {\k18}de {\k25}pas {\k61}connaître {\k25}ton {\k37}stock
+Dialogue: 0,0:00:13.64,0:00:16.26,Lyric,,0,0,0,,{\k22}Le {\k44}frigo {\k29}dit {\k36}oui, {\k22}le {\k51}carnet {\k29}dit {\k29}non
+Dialogue: 0,0:00:16.26,0:00:18.62,Lyric,,0,0,0,,{\k36}T'as {\k29}pas {\k21}le {\k43}temps {\k21}de {\k86}communiquer
+Dialogue: 0,0:00:18.62,0:00:21.40,Lyric,,0,0,0,,{\k39}T'as {\k31}pas {\k23}le {\k46}temps {\k23}de {\k46}gérer {\k31}tes {\k39}avis
+Dialogue: 0,0:00:21.40,0:00:24.08,Lyric,,0,0,0,,{\k32}T'as {\k32}peur {\k38}qu'un {\k57}contrôle {\k38}sonne {\k13}à {\k19}la {\k38}porte
+Dialogue: 0,0:00:24.08,0:00:26.70,Lyric,,0,0,0,,{\k22}Le {\k67}classeur {\k45}dort, {\k22}la {\k37}date {\k67}s'efface
+Dialogue: 0,0:00:26.70,0:00:28.98,Lyric,,0,0,0,,{\k50}T'as {\k30}du {\k40}mal {\k20}à {\k89}recruter
+Dialogue: 0,0:00:28.98,0:00:31.70,Lyric,,0,0,0,,{\k56}Trois {\k94}annonces, {\k47}zéro {\k75}réponse
+Dialogue: 0,0:00:32.32,0:00:34.82,Lyric,,0,0,0,,{\k17}Tu {\k33}perds {\k22}tes {\k44}clients {\k17}et {\k17}tu {\k28}sais {\k22}pas {\k50}pourquoi
+Dialogue: 0,0:00:34.82,0:00:37.40,Lyric,,0,0,0,,{\k25}Tu {\k67}galères {\k17}à {\k33}les {\k50}faire {\k67}revenir
+Dialogue: 0,0:00:37.40,0:00:39.76,Lyric,,0,0,0,,{\k25}Tu {\k25}te {\k101}transformes {\k25}en {\k59}médium
+Dialogue: 0,0:00:39.76,0:00:42.10,Lyric,,0,0,0,,{\k43}pour {\k69}deviner {\k35}tes {\k87}commandes
+Dialogue: 0,0:00:44.64,0:00:48.60,Lyric,,0,0,0,,{\k141}FoodEatUp {\k57}est {\k71}fait {\k71}pour {\k57}toi
+Dialogue: 0,0:00:55.32,0:00:59.60,Lyric,,0,0,0,,{\k76}Prêt {\k31}à {\k122}devenir {\k46}un {\k92}resto {\k61}2.0
+Dialogue: 0,0:01:00.22,0:01:03.80,Lyric,,0,0,0,,{\k119}FoodEatUp, {\k54}huit {\k87}boucles {\k98}logiciel
+Dialogue: 0,0:01:03.90,0:01:06.40,Lyric,,0,0,0,,{\k33}et {\k33}ça {\k76}tourne {\k54}tout {\k54}seul
+Dialogue: 0,0:01:11.00,0:01:13.26,Lyric,,0,0,0,,{\k21}Tu {\k42}perds {\k28}tes {\k57}tickets {\k21}en {\k57}cuisine
+Dialogue: 0,0:01:13.26,0:01:16.60,Lyric,,0,0,0,,{\k29}Le {\k49}pass {\k69}hurle, {\k88}personne {\k29}ne {\k69}répond
+Dialogue: 0,0:01:16.72,0:01:19.08,Lyric,,0,0,0,,{\k21}45 {\k57}minutes {\k36}pour {\k50}servir {\k29}une {\k43}table
+Dialogue: 0,0:01:19.08,0:01:21.20,Lyric,,0,0,0,,{\k18}Le {\k41}client {\k47}attend, {\k18}le {\k41}client {\k29}s'en {\k18}va
+Dialogue: 0,0:01:21.24,0:01:24.26,Lyric,,0,0,0,,{\k40}Ton {\k91}planning {\k30}au {\k60}doigt {\k81}mouillé
+Dialogue: 0,0:01:24.26,0:01:26.70,Lyric,,0,0,0,,{\k34}Deux {\k20}en {\k41}salle {\k41}quand {\k20}il {\k20}en {\k34}faut {\k34}cinq
+Dialogue: 0,0:01:26.76,0:01:29.36,Lyric,,0,0,0,,{\k32}Ton {\k39}site {\k47}c'est {\k47}juste {\k32}une {\k63}vitrine
+Dialogue: 0,0:01:29.36,0:01:31.80,Lyric,,0,0,0,,{\k33}une {\k49}belle {\k49}photo {\k33}qui {\k41}vend {\k41}rien
+Dialogue: 0,0:01:32.50,0:01:34.86,Lyric,,0,0,0,,{\k16}Tu {\k31}perds {\k21}tes {\k42}clients {\k16}et {\k16}tu {\k26}sais {\k21}pas {\k47}pourquoi
+Dialogue: 0,0:01:34.86,0:01:37.30,Lyric,,0,0,0,,{\k24}Tu {\k63}galères {\k16}à {\k31}les {\k47}faire {\k63}revenir
+Dialogue: 0,0:01:37.34,0:01:39.74,Lyric,,0,0,0,,{\k60}Arrête {\k26}de {\k51}jouer {\k34}les {\k69}voyants
+Dialogue: 0,0:01:39.74,0:01:42.20,Lyric,,0,0,0,,{\k27}le {\k91}logiciel, {\k55}c'est {\k46}déjà {\k27}là
+Dialogue: 0,0:01:44.66,0:01:48.50,Lyric,,0,0,0,,{\k137}FoodEatUp {\k55}est {\k69}fait {\k69}pour {\k55}toi
+Dialogue: 0,0:01:49.50,0:01:53.70,Lyric,,0,0,0,,{\k150}FoodEatUp {\k60}est {\k75}fait {\k75}pour {\k60}toi
+Dialogue: 0,0:01:55.40,0:01:59.50,Lyric,,0,0,0,,{\k73}Prêt {\k29}à {\k117}devenir {\k44}un {\k88}resto {\k59}2.0
+Dialogue: 0,0:02:00.32,0:02:03.80,Lyric,,0,0,0,,{\k116}FoodEatUp, {\k53}huit {\k84}boucles {\k95}logiciel
+Dialogue: 0,0:02:03.92,0:02:06.30,Lyric,,0,0,0,,{\k31}et {\k31}ça {\k72}tourne {\k52}tout {\k52}seul
+Dialogue: 0,0:02:06.36,0:02:09.18,Lyric,,0,0,0,,{\k60}Caroline {\k60}décroche {\k54}pendant {\k27}que {\k20}tu {\k60}cuisines
+Dialogue: 0,0:02:09.18,0:02:11.50,Lyric,,0,0,0,,{\k60}Jarvis {\k60}répond {\k17}à {\k34}ton {\k60}équipe
+Dialogue: 0,0:02:11.56,0:02:14.04,Lyric,,0,0,0,,{\k66}PrediBot {\k22}te {\k29}dit {\k22}ce {\k29}qui {\k22}va {\k58}manquer
+Dialogue: 0,0:02:14.04,0:02:16.30,Lyric,,0,0,0,,{\k43}Iris {\k52}parle {\k43}pour {\k35}ton {\k52}resto
+Dialogue: 0,0:02:17.12,0:02:21.30,Lyric,,0,0,0,,{\k149}FoodEatUp {\k60}est {\k75}fait {\k75}pour {\k60}toi
+Dialogue: 0,0:02:26.86,0:02:32.20,Lyric,,0,0,0,,{\k63}Ton {\k94}resto {\k126}tourne, {\k63}toi {\k47}tu {\k141}respires

@@ -1,0 +1,370 @@
+{
+ "duration": 168.52,
+ "open_end": 11.12,
+ "close_in": 152.28,
+ "logo_flash": [
+  44.629,
+  60.349,
+  104.676,
+  109.563,
+  120.337,
+  137.125,
+  152.311
+ ],
+ "infinity": [
+  61.68,
+  121.66
+ ],
+ "shots": [
+  {
+   "start": 11.111,
+   "end": 13.723,
+   "dur": 2.612,
+   "ep": "EP045",
+   "note": "t'en as marre de pas connaître ton stock"
+  },
+  {
+   "start": 13.723,
+   "end": 16.3,
+   "dur": 2.577,
+   "ep": "EP046",
+   "note": "le frigo dit oui, le carnet dit non"
+  },
+  {
+   "start": 16.3,
+   "end": 18.599,
+   "dur": 2.299,
+   "ep": "EP100",
+   "note": "t'as pas le temps de communiquer"
+  },
+  {
+   "start": 18.599,
+   "end": 21.513,
+   "dur": 2.914,
+   "ep": "EP088",
+   "note": "t'as pas le temps de gérer tes avis"
+  },
+  {
+   "start": 21.513,
+   "end": 24.114,
+   "dur": 2.601,
+   "ep": "EP050",
+   "note": "t'as peur qu'un contrôle sonne à la porte"
+  },
+  {
+   "start": 24.114,
+   "end": 26.738,
+   "dur": 2.624,
+   "ep": "EP031",
+   "note": "le classeur dort, la date s'efface"
+  },
+  {
+   "start": 26.738,
+   "end": 29.037,
+   "dur": 2.299,
+   "ep": "EP065",
+   "note": "t'as du mal à recruter"
+  },
+  {
+   "start": 29.037,
+   "end": 32.299,
+   "dur": 3.262,
+   "ep": "EP142",
+   "note": "trois annonces, zéro réponse"
+  },
+  {
+   "start": 32.299,
+   "end": 34.9,
+   "dur": 2.601,
+   "ep": "EP085",
+   "note": "tu perds tes clients et tu sais pas pourquoi"
+  },
+  {
+   "start": 34.9,
+   "end": 37.512,
+   "dur": 2.612,
+   "ep": "EP122",
+   "note": "tu galères à les faire revenir"
+  },
+  {
+   "start": 37.512,
+   "end": 44.629,
+   "dur": 7.117,
+   "ep": "EP035",
+   "note": "tu te transformes en médium"
+  },
+  {
+   "start": 44.629,
+   "end": 47.311,
+   "dur": 2.682,
+   "ep": "EP141",
+   "note": "FoodEatUp #1 - cockpit"
+  },
+  {
+   "start": 47.311,
+   "end": 49.888,
+   "dur": 2.577,
+   "ep": "EP013",
+   "note": "notifications maîtrisées"
+  },
+  {
+   "start": 49.888,
+   "end": 52.698,
+   "dur": 2.81,
+   "ep": "EP029",
+   "note": "les douze assiettes"
+  },
+  {
+   "start": 52.698,
+   "end": 55.287,
+   "dur": 2.589,
+   "ep": "EP010",
+   "note": "le flambage"
+  },
+  {
+   "start": 55.287,
+   "end": 58.061,
+   "dur": 2.774,
+   "ep": "EP021",
+   "note": "prêt à devenir un resto 2.0"
+  },
+  {
+   "start": 58.061,
+   "end": 60.349,
+   "dur": 2.288,
+   "ep": "EP087",
+   "note": "les trois tablettes"
+  },
+  {
+   "start": 60.349,
+   "end": 63.936,
+   "dur": 3.587,
+   "ep": "EP112",
+   "note": "FoodEatUp #2 - huit boucles"
+  },
+  {
+   "start": 63.936,
+   "end": 71.03,
+   "dur": 7.094,
+   "ep": "EP111",
+   "note": "et ça tourne tout seul"
+  },
+  {
+   "start": 71.03,
+   "end": 73.236,
+   "dur": 2.206,
+   "ep": "EP021",
+   "note": "tu perds tes tickets en cuisine"
+  },
+  {
+   "start": 73.236,
+   "end": 76.637,
+   "dur": 3.401,
+   "ep": "EP008",
+   "note": "le pass hurle, personne ne répond"
+  },
+  {
+   "start": 76.637,
+   "end": 78.936,
+   "dur": 2.299,
+   "ep": "EP108",
+   "note": "45 minutes pour servir une table"
+  },
+  {
+   "start": 78.936,
+   "end": 81.212,
+   "dur": 2.276,
+   "ep": "EP037",
+   "note": "le client attend, le client s'en va"
+  },
+  {
+   "start": 81.212,
+   "end": 84.312,
+   "dur": 3.1,
+   "ep": "EP064",
+   "note": "ton planning au doigt mouillé"
+  },
+  {
+   "start": 84.312,
+   "end": 86.75,
+   "dur": 2.438,
+   "ep": "EP063",
+   "note": "deux en salle quand il en faut cinq"
+  },
+  {
+   "start": 86.75,
+   "end": 89.374,
+   "dur": 2.624,
+   "ep": "EP087",
+   "note": "ton site c'est juste une vitrine"
+  },
+  {
+   "start": 89.374,
+   "end": 92.462,
+   "dur": 3.088,
+   "ep": "EP073",
+   "note": "une belle photo qui vend rien"
+  },
+  {
+   "start": 92.462,
+   "end": 97.187,
+   "dur": 4.725,
+   "ep": "EP083",
+   "note": "tu perds tes clients et tu sais pas pourquoi"
+  },
+  {
+   "start": 97.187,
+   "end": 104.676,
+   "dur": 7.489,
+   "ep": "EP089",
+   "note": "arrête de jouer les voyants  [SUBSTITUTION: EP090 bloque]"
+  },
+  {
+   "start": 104.676,
+   "end": 107.265,
+   "dur": 2.589,
+   "ep": "EP143",
+   "note": "FoodEatUp #3 - la commande de 200"
+  },
+  {
+   "start": 107.265,
+   "end": 109.563,
+   "dur": 2.298,
+   "ep": "EP128",
+   "note": "Saint-Valentin surbookée"
+  },
+  {
+   "start": 109.563,
+   "end": 112.152,
+   "dur": 2.589,
+   "ep": "EP103",
+   "note": "FoodEatUp #4 - le car de 40"
+  },
+  {
+   "start": 112.152,
+   "end": 115.426,
+   "dur": 3.274,
+   "ep": "EP114",
+   "note": "la choré pendant que ça brûle"
+  },
+  {
+   "start": 115.426,
+   "end": 118.062,
+   "dur": 2.636,
+   "ep": "EP119",
+   "note": "prêt à devenir un resto 2.0"
+  },
+  {
+   "start": 118.062,
+   "end": 120.337,
+   "dur": 2.275,
+   "ep": "EP099",
+   "note": "le répondeur"
+  },
+  {
+   "start": 120.337,
+   "end": 123.937,
+   "dur": 3.6,
+   "ep": "EP143",
+   "note": "FoodEatUp #5 - huit boucles"
+  },
+  {
+   "start": 123.937,
+   "end": 126.386,
+   "dur": 2.449,
+   "ep": "EP128",
+   "note": "et ça tourne tout seul"
+  },
+  {
+   "start": 126.386,
+   "end": 129.126,
+   "dur": 2.74,
+   "ep": "EP099",
+   "note": "AGENT:Caroline"
+  },
+  {
+   "start": 129.126,
+   "end": 131.611,
+   "dur": 2.485,
+   "ep": "EP063",
+   "note": "AGENT:Jarvis"
+  },
+  {
+   "start": 131.611,
+   "end": 134.026,
+   "dur": 2.415,
+   "ep": "EP141",
+   "note": "AGENT:PrediBot"
+  },
+  {
+   "start": 134.026,
+   "end": 137.125,
+   "dur": 3.099,
+   "ep": "EP100",
+   "note": "AGENT:Iris"
+  },
+  {
+   "start": 137.125,
+   "end": 139.54,
+   "dur": 2.415,
+   "ep": "EP141",
+   "note": "FoodEatUp #6"
+  },
+  {
+   "start": 139.54,
+   "end": 141.886,
+   "dur": 2.346,
+   "ep": "EP029",
+   "note": "reprise"
+  },
+  {
+   "start": 141.886,
+   "end": 144.0,
+   "dur": 2.114,
+   "ep": "EP013",
+   "note": "reprise"
+  },
+  {
+   "start": 144.0,
+   "end": 146.03,
+   "dur": 2.03,
+   "ep": "EP111",
+   "note": "reprise"
+  },
+  {
+   "start": 146.03,
+   "end": 147.6,
+   "dur": 1.57,
+   "ep": "EP143",
+   "note": "reprise"
+  },
+  {
+   "start": 147.6,
+   "end": 149.037,
+   "dur": 1.437,
+   "ep": "EP103",
+   "note": "reprise"
+  },
+  {
+   "start": 149.037,
+   "end": 150.349,
+   "dur": 1.312,
+   "ep": "EP114",
+   "note": "reprise"
+  },
+  {
+   "start": 150.349,
+   "end": 151.464,
+   "dur": 1.115,
+   "ep": "EP119",
+   "note": "reprise"
+  },
+  {
+   "start": 151.464,
+   "end": 152.311,
+   "dur": 0.847,
+   "ep": "EP141",
+   "note": "dernier plan avant fermeture"
+  }
+ ]
+}

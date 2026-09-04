@@ -1,0 +1,14 @@
+build/rushes-9x16/
+build/rushes-16x9/
+build/shots/
+build/shots_v/
+build/*.mov
+build/base*.mp4
+build/rush*.mp4
+build/opening*.mp4
+build/closing*.mp4
+build/video-track*.mp4
+animation/node_modules/
+assets/resto-2-0.mp3
+dist/*.mp4
+build/thumb_src.jpg
