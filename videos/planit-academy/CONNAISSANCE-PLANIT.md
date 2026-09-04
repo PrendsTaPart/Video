@@ -310,6 +310,19 @@ Vide : « Aucun périphérique audio appairé. Associez une oreillette ou un hau
 utiliser Jarvis en mains libres. » · « Associer un périphérique » · états *Connecté* / *Appairé* ·
 « Oublier ce périphérique ».
 
+Vérifié à la capture du tutoriel 42 :
+
+- **« Langue de Jarvis »** est un menu déroulant à quatre entrées — *Détection automatique*,
+  *Français*, *العربية / Darija*, *English*. Français est la valeur par défaut.
+- **« Associer un périphérique »** ne pose aucune feuille interne : le bouton **bascule vers
+  les réglages Bluetooth du téléphone** (écran système, hors application). L'utilisateur
+  y active le Bluetooth, choisit son oreillette, puis revient dans Plan'It.
+- De retour, chaque ligne de la liste porte le nom du périphérique, l'état **« Appairé »**
+  ou **« Connecté »** (un seul actif à la fois) et une **icône corbeille** à droite pour
+  l'oublier. Aucune boîte de confirmation observée sur la capture.
+- L'écran se rejoint depuis **Paramètres → « Voix & périphériques »**, juste au-dessus de
+  « Déconnexion ».
+
 ---
 
 ## 5. Écarts relevés entre le produit et les fiches du MCP
@@ -323,6 +336,7 @@ utiliser Jarvis en mains libres. » · « Associer un périphérique » · état
 | 3 | Après vérification OTP, retour sur `/signin` : il faut ressaisir des identifiants tout juste choisis | Expliqué dans le tutoriel 00 |
 | 4 | `vignette_spec` a des `titreCourt` **décalés d'un cran** : fiche 1 annonce « Créer son compte », fiche 2 « Se connecter », fiche 5 « Retrouver ses tâches » (module Tâches alors que la fiche traite des cartes de prompt) | On utilise `fiche.titreVignette`, qui est juste |
 | 5 | Le gabarit de vignette du MCP est passé de 1280 × 720 à **1080 × 1920 (export 2160 × 3840)** en cours de production | Les vignettes ont été refaites au nouveau format |
+| 6 | **Fiche 42 « Gérer ses appareils connectés »** promet « chaque appareil connecté à votre compte » et une coupure à distance (« Ouvrez Réglages puis "Appareils" », « Repérez les appareils inconnus », « Touchez "Déconnecter" »). **Cet écran n'existe pas.** L'écran réel est « Voix & périphériques » : langue de Jarvis et appairage Bluetooth des oreillettes | Le tutoriel 42 est monté sur l'application réelle. À corriger côté produit : `promesse`, `commentCaMarche`, `aQuoiCaSert` et l'écran de vignette `ecran-appareils` |
 
 ---
 
