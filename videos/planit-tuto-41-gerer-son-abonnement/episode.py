@@ -6,7 +6,8 @@ Capture source : « Vidéo 41 — Factures et reçus de paiement » — 25,85 s,
 
 `assets/screencast.mp4` n'est PAS la capture brute : les blocs d'identité de la
 facture PDF (vendeur et « Facturer à » — nom, adresse, téléphone, e-mail) y sont
-pixellisés à partir de t = 23,5 s. Voir SCRIPT.md, section « Données
+pixellisés à partir de t = 23,5 s, et quatre secondes de gel sont ajoutées à la
+fin pour tenir la conclusion sur la facture. Voir SCRIPT.md, section « Données
 personnelles ». Ne jamais remplacer ce fichier par la capture d'origine.
 
     python3 episode.py
@@ -45,15 +46,14 @@ EPISODE = Episode(
         # 16,2 → 24,2 (retour sur un login CRM, puis le panneau Téléchargements
         # d'Android, qui liste des fichiers personnels sans rapport, puis les
         # recadrages du PDF avant qu'il ne se stabilise).
-        Segment("N1",  0.0,  2.3, "1 · Le solde de crédits"),
-        Segment("N2",  2.3,  4.0, "2 · Les crédits reçus"),
-        Segment("N3",  4.0,  5.6, "3 · Formules et factures"),
-        Segment("N4",  5.6,  8.2, "4 · Mes factures"),
-        Segment("N5",  8.2, 11.7, "5 · Recherche et filtres"),
-        Segment("N6", 14.3, 16.2, "6 · Télécharger le PDF"),
-        Segment("N7", 24.2, 25.6, "7 · La facture"),
-        # L'astuce se repose sur la facture : la capture n'a pas de plan libre.
-        Segment("N8", 24.2, 25.6, "8 · Choisir sa formule"),
+        # Le dernier plan déborde sur les quatre secondes de gel ajoutées en fin
+        # de source : la facture reste à l'écran le temps de la conclusion.
+        Segment("N1",  0.0,  3.6, "1 · Le solde de crédits"),
+        Segment("N2",  3.6,  5.6, "2 · Crédits, formules, factures"),
+        Segment("N3",  5.6,  8.2, "3 · Mes factures"),
+        Segment("N4",  8.2, 11.7, "4 · Recherche et filtres"),
+        Segment("N5", 14.3, 16.2, "5 · Télécharger le PDF"),
+        Segment("N6", 24.2, 27.6, "6 · La facture"),
     ],
 )
 

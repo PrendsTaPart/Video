@@ -3,17 +3,15 @@
 Fiche MCP `tutoriel_spec(numero: 41)`, slug `gerer-son-abonnement`.
 Capture source : « Vidéo 41 — Factures et reçus de paiement » — 25,85 s, 392 × 852.
 
-| Ligne | Rôle | Texte |
-|---|---|---|
-| N0 | présentation | Bienvenue dans l'Académie Plan'It. Aujourd'hui : votre abonnement et vos factures. Vous changez de formule et vous récupérez vos justificatifs sans écrire à personne. |
-| N1 | écran de départ | Dans « Mes crédits IA », le solde s'affiche en haut : 342 crédits, plan Starter. |
-| N2 | l'historique | En dessous, chaque crédit reçu est daté, avec son expiration. |
-| N3 | l'accès | Plus bas, les formules — Starter, Pro — et « Voir mes factures ». |
-| N4 | la liste | Chaque facture porte son numéro, son montant et la mention « Payée ». |
-| N5 | retrouver | La recherche et les filtres — aujourd'hui, sept jours, trente jours — retrouvent une période. |
-| N6 | télécharger | « Télécharger » passe par Stripe : vingt et un kilo-octets de PDF. |
-| N7 | le résultat | Votre justificatif est prêt pour la comptabilité. |
-| N8 | astuce (leo) | Regardez deux mois de consommation avant de changer de formule. |
+| Ligne | Rôle | Texte | Durée |
+|---|---|---|---|
+| N0 | présentation | Bienvenue dans l'Académie Plan'It. Aujourd'hui : votre abonnement et vos factures. Vous changez de formule et vous récupérez vos justificatifs sans écrire à personne. | 8,92 s |
+| N1 | écran de départ | Dans « Mes crédits IA », le solde s'affiche en haut : 342 crédits, plan Starter. | 6,59 s |
+| N2 | descendre | En dessous, les crédits reçus, les formules, et « Voir mes factures ». | 3,95 s |
+| N3 | la liste | Chaque facture porte son numéro, son montant et la mention « Payée ». | 3,85 s |
+| N4 | retrouver | La recherche et les filtres retrouvent une période. | 2,83 s |
+| N5 | télécharger | « Télécharger » passe par Stripe : vingt et un kilo-octets de PDF. | 4,37 s |
+| N6 | résultat + astuce (leo) | Votre justificatif est prêt pour la comptabilité. Regardez deux mois de consommation avant de changer de formule. | 5,48 s |
 
 Voix : ElevenLabs *Perle* `UaGvaD7NWzU5mJNoUqoY`, `eleven_multilingual_v2`.
 Flux : `sKOYDZDaS0015NSEy5C1`.
@@ -58,14 +56,13 @@ d'entrée « Facturation » : l'écran s'appelle **« Mes crédits IA »**, et l
 factures s'atteignent par le lien **« Voir mes factures »**, à droite du titre
 « Plans ». La voix off suit l'application.
 
-## État
+## Le gel de fin
 
-Le montage est prêt à être lancé, mais **les neuf lignes de voix n'ont pas pu
-être générées** : l'API ElevenLabs répond « Your subscription has a failed or
-incomplete payment. Complete the latest invoice to continue usage. » La lecture
-du compte fonctionne toujours (les voix se listent) ; seule la génération est
-bloquée. Une fois la facture ElevenLabs réglée, il suffit de générer les neuf
-lignes ci-dessus dans `vo/` puis de lancer `python3 episode.py`.
+La capture s'arrête à 25,85 s, à peine plus d'une seconde après que la facture
+se stabilise à l'écran. Ce n'est pas assez pour porter la conclusion. La source
+retravaillée ajoute donc **quatre secondes de gel** (`tpad=stop_mode=clone`) :
+la dernière image, déjà pixellisée, reste affichée. Le plan N6 va de 24,2 à
+27,6 s et déborde sur ce gel.
 
 ## La capture 39 — ce qu'elle contient, et où elle pourrait aller
 
