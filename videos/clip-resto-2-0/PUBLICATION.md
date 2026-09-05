@@ -28,29 +28,51 @@ Facebook, mais il n'est pas déposé au catalogue.
 - `rattacher_clip_saison` → Le Coup de Feu, saison 5.
 - **La validation reste un geste humain** : aucun outil n'écrit `valide`.
 
-## RapidoCMS — trois brouillons à relire, rien de planifié
+## RapidoCMS — publié (programmé)
 
 Campagne « Lancement FoodEatUp — Resto 2.0 », id **37**.
 
-| Réseau | Compte | Draft id | Vidéo |
-|---|---|---|---|
-| LinkedIn | FoodEatUp (68807312) | **958** | 16:9 |
-| Facebook | Foodeatup (201499969703551) | **959** | 4:5 |
-| Instagram | FoodEatUp (17841477689869013) | **960** | verticale |
+| Réseau | Compte | Draft | Post | Vidéo | Créneau |
+|---|---|---|---|---|---|
+| LinkedIn | FoodEatUp (68807312) | 958 | **833** | 16:9 | 05/09/2026 12:00 |
+| Facebook | Foodeatup (201499969703551) | 959 | **834** | 4:5 | 05/09/2026 12:00 |
+| Instagram | FoodEatUp (17841477689869013) | 960 | **835** | verticale | 05/09/2026 **12:10** |
 
-Rien n'est planifié ni publié, comme demandé. Après relecture :
-`schedule_draft_tool` sur les trois au même créneau, puis
-`add_post_campagne` (campagne 37) — cet outil refuse un id de brouillon, il
-attend un post déjà planifié, l'ordre du brief est donc à inverser sur ce
-point.
+Les trois sont rattachés à la campagne 37 (liens 119, 120, 121).
 
-## TikTok — relais manuel
+Deux remarques sur l'outillage :
+- `schedule_draft_tool` documente `post_heure` au format `H-i-s` mais l'API
+  exige `H:i:s`.
+- `add_post_campagne` refuse un id de brouillon : il attend un id de *post*
+  déjà planifié. L'ordre du brief est donc à inverser — planifier, puis
+  rattacher.
+- RapidoCMS a décalé Instagram de dix minutes tout seul (12:10 au lieu de
+  12:00 demandé).
+
+## YouTube — publié
+
+Chaîne **FoodEatUp** (`UC0Mc8pkW4t3uVjbI-ULptUA`), active et favorite, le
+2026-09-04, en **public**. `get_video_status` renvoie `completed` sur les deux.
+
+| Pièce | Lien | id interne |
+|---|---|---|
+| Clip 16:9 | https://www.youtube.com/watch?v=OFLbCs7IFlk | `fe72393a-…` |
+| Short 9:16 | https://www.youtube.com/watch?v=vIaiReHEZRI | `493e0502-…` |
+
+Les deux adresses sont enregistrées au catalogue en `lien_public`, sur la
+pièce `paysage` et sur la pièce `master`.
+
+`get_quota_status` annonçait pourtant `remaining: 0` et `uploads_remaining: 0`
+(33 600 unités consommées sur 10 000). Les deux envois sont passés malgré ce
+compteur : il est à considérer comme peu fiable, pas comme un feu vert.
+
+## TikTok — relais manuel, reste à faire
 
 `create_draft_tool` refuse le compte TikTok : la fiche connectée expose
 `account_id: 5`, un identifiant de ligne interne et non un `open_id` TikTok,
 et l'API rejette aussi bien `5` que le nom du compte. C'est cohérent avec ce
 que documente le MCP Social : « WhatsApp et TikTok ne se publient par aucun
-outil ». Vidéo à poster à la main : la verticale ci-dessus.
+outil ». Vidéo à poster à la main : la verticale.
 
 Légende (sans emoji, accroche dans les trois premiers mots) :
 
@@ -68,45 +90,11 @@ Devis : https://site.foodeatup.com/creer-mon-devis
 #restaurant #restaurateur #cuisine #restauration #chef #logicielrestaurant #gestionrestaurant #coupdefeu
 ```
 
-## YouTube — impossible dans cette session
+## Deux points ouverts
 
-Aucun serveur MCP YouTube Publisher n'est connecté : ni `get_channel_status`,
-ni `publish_video`, ni `get_video_status` n'existent dans les outils
-disponibles. Le MCP Social le confirme en creux — `dossier_publication_video`
-dit que YouTube « ne passe pas par RapidoCMS » et qu'il faut donner sa fiche
-« au serveur MCP YouTube Publisher », absent ici.
-
-Métadonnées prêtes, à passer au serveur une fois connecté :
-
-**Vidéo longue (16:9)** — `foodeatup-clip-resto-2-0-master-16x9`
-- Titre : `FoodEatUp — Resto 2.0 (clip officiel)`
-- Vignette : `foodeatup-clip-resto-2-0-vignette-16x9`
-- Tags : `restaurant, gestion de restaurant, logiciel restaurant, logiciel de caisse, HACCP, restauration, restaurateur, chef de cuisine, stock restaurant, planning équipe, FoodEatUp, clip officiel`
-- Description :
-
-```
-Resto 2.0 — le clip de lancement de FoodEatUp.
-
-Le frigo dit oui, le carnet dit non. Le contrôle qui peut tomber n'importe
-quand. Trois annonces, zéro réponse. Quarante-cinq minutes pour servir une
-table. Les couplets alignent ce qui coince dans un restaurant ; les refrains
-rejouent les mêmes scènes à l'endroit où le logiciel résout le problème.
-
-Huit boucles logiciel qui parlent entre elles, et quatre agents qui
-travaillent pendant que vous cuisinez : Caroline décroche, Jarvis répond à
-l'équipe, PrediBot annonce ce qui va manquer, Iris parle pour votre
-restaurant.
-
-Ton resto tourne, toi tu respires.
-
-Demander un devis : https://site.foodeatup.com/creer-mon-devis
-
-Images tirées de la série « Le Coup de Feu » (33 épisodes).
-```
-
-**Short (9:16)** — `foodeatup-clip-resto-2-0-vertical-9x16`
-- Titre : `Ton stock ment. Le frigo dit oui, le carnet dit non #Shorts`
-- Description : accroche + `https://site.foodeatup.com/creer-mon-devis`
-
-Une fois les deux vidéos en ligne, enregistrer les adresses avec
-`publier_clip_musical` et son champ `lien_public`.
+- Le catalogue porte encore `date_prevue: 2026-09-26`, alors que le clip est
+  sorti le 04/09 sur YouTube et sort le 05/09 sur les réseaux. Aucun outil
+  exposé ne réécrit cette date : `declarer_clip_musical` refuse un slug déjà
+  pris. À corriger dans /admin.
+- Le statut du clip reste `monte`. La validation est un geste humain :
+  aucun outil n'écrit `valide`.
