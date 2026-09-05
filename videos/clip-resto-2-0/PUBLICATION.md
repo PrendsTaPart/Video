@@ -28,7 +28,7 @@ Facebook, mais il n'est pas déposé au catalogue.
 - `rattacher_clip_saison` → Le Coup de Feu, saison 5.
 - **La validation reste un geste humain** : aucun outil n'écrit `valide`.
 
-## RapidoCMS — publié (programmé)
+## RapidoCMS — un post sorti, deux encore en file
 
 Campagne « Lancement FoodEatUp — Resto 2.0 », id **37**.
 
@@ -37,6 +37,21 @@ Campagne « Lancement FoodEatUp — Resto 2.0 », id **37**.
 | LinkedIn | FoodEatUp (68807312) | 958 | **833** | 16:9 | 05/09/2026 12:00 |
 | Facebook | Foodeatup (201499969703551) | 959 | **834** | 4:5 | 05/09/2026 12:00 |
 | Instagram | FoodEatUp (17841477689869013) | 960 | **835** | verticale | 05/09/2026 **12:10** |
+
+État au 05/09 13:10 CEST, après le créneau :
+
+| Post | Réseau | Statut | Identifiant du post |
+|---|---|---|---|
+| 834 | Facebook | **sorti** à 11:00 UTC | `1811183623210952` |
+| 835 | Instagram | en file (`statut 0`, job relancé 949 → 954) | — |
+| 833 | LinkedIn | en file (`statut 0`, jamais repris depuis sa création) | — |
+
+Le retard n'est pas propre à ces posts : le post 836 (EPC05, LinkedIn,
+créneau 08:00) est lui aussi encore à `statut 0` à 13:10, et le seul autre
+post sorti aujourd'hui est un Facebook. Le planificateur passe donc sur
+Facebook et traîne sur LinkedIn et Instagram, pour tout le compte.
+**Ne pas replanifier** 833 et 835 : leur job existe, une seconde
+programmation publierait deux fois.
 
 Les trois sont rattachés à la campagne 37 (liens 119, 120, 121).
 
@@ -72,7 +87,10 @@ compteur : il est à considérer comme peu fiable, pas comme un feu vert.
 `account_id: 5`, un identifiant de ligne interne et non un `open_id` TikTok,
 et l'API rejette aussi bien `5` que le nom du compte. C'est cohérent avec ce
 que documente le MCP Social : « WhatsApp et TikTok ne se publient par aucun
-outil ». Vidéo à poster à la main : la verticale.
+outil ». Vérifié aussi du côté Higgsfield, qui sait publier sur TikTok :
+`tiktok_accounts` renvoie une liste vide, aucun compte n'y est connecté.
+Il n'existe donc aucune voie automatique dans cette session. Vidéo à poster
+à la main : la verticale.
 
 Légende (sans emoji, accroche dans les trois premiers mots) :
 
@@ -98,3 +116,11 @@ Devis : https://site.foodeatup.com/creer-mon-devis
   pris. À corriger dans /admin.
 - Le statut du clip reste `monte`. La validation est un geste humain :
   aucun outil n'écrit `valide`.
+
+## Vérifications du 05/09
+
+- Les six fichiers de la bibliothèque répondent en 206 avec le bon
+  content-type (`video/mp4`, `image/jpeg`).
+- `get_video_status` : les deux vidéos YouTube sont `completed` et `public`.
+- `publier_clip_musical` avait renvoyé `controle: ok` sur les cinq pièces
+  au dépôt.
