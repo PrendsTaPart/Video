@@ -1,0 +1,124 @@
+{
+  "nom": "Queue animée RapidoCMS — transition, méthode, hook de fin",
+  "duree_s": 30,
+  "format": {
+    "largeur": 1080,
+    "hauteur": 1920,
+    "fps": 30
+  },
+  "regle_de_serie": {
+    "note": "La règle des soixante secondes, valable pour tous les épisodes.",
+    "blocs": [
+      {
+        "quoi": "film Higgsfield",
+        "de_s": 0,
+        "a_s": 30
+      },
+      {
+        "quoi": "transition « COUPEZ »",
+        "de_s": 30,
+        "a_s": 33
+      },
+      {
+        "quoi": "méthode — les cinq étapes",
+        "de_s": 33,
+        "a_s": 53
+      },
+      {
+        "quoi": "hook de fin — la punchline",
+        "de_s": 53,
+        "a_s": 60
+      }
+    ]
+  },
+  "gabarit": {
+    "fichier": "animation.html",
+    "rendu_par": "scripts/rendre.mjs",
+    "note": "Rendu par épisode : le numéro de séquence, le titre sur l'ardoise et la punchline changent. Tout le reste est identique d'un film à l'autre."
+  },
+  "audio": {
+    "etapes": {
+      "fichier": "audio/vo-etapes-2a7.wav",
+      "note": "Les six lignes fixes, déjà calées sur les trente secondes. Les créneaux de la ligne d'ouverture (3 → 5 s) et de la punchline (23,8 → 28,8 s) y sont silencieux : chaque épisode y pose les siennes."
+    },
+    "sfx": {
+      "whoosh": "sfx/whoosh.mp3",
+      "clap": "sfx/clap.mp3"
+    }
+  },
+  "a_generer_par_episode": [
+    {
+      "role": "ouverture",
+      "creneau_s": [
+        33.0,
+        35.0
+      ],
+      "exemples": {
+        "S01E01": "Vous aussi, faites vos publicités vous-même.",
+        "S01E02": "Écrivez une fois. Publiez partout."
+      }
+    },
+    {
+      "role": "hook",
+      "creneau_s": [
+        53.8,
+        58.8
+      ],
+      "exemples": {
+        "S01E01": "Lui, il cherchait le poivre. Vous, vous avez RapidoCMS.",
+        "S01E02": "Lui, il a fondu des lettres en métal. Vous, vous avez RapidoCMS."
+      }
+    }
+  ],
+  "lignes_fixes": [
+    {
+      "n": 2,
+      "debut_s": 35.0,
+      "fin_s": 37.6,
+      "vo": "Un : installez les MCP."
+    },
+    {
+      "n": 3,
+      "debut_s": 37.6,
+      "fin_s": 40.2,
+      "vo": "Deux : demandez le script à Claude."
+    },
+    {
+      "n": 4,
+      "debut_s": 40.2,
+      "fin_s": 42.8,
+      "vo": "Trois : ajoutez HyperFrames."
+    },
+    {
+      "n": 5,
+      "debut_s": 42.8,
+      "fin_s": 45.4,
+      "vo": "Quatre : lancez votre prompt."
+    },
+    {
+      "n": 6,
+      "debut_s": 45.4,
+      "fin_s": 48.0,
+      "vo": "Cinq : RapidoCMS planifie tout."
+    },
+    {
+      "n": 7,
+      "debut_s": 48.0,
+      "fin_s": 53.0,
+      "vo": "RapidoCMS orchestre Claude, Higgsfield et ElevenLabs. Vos réseaux suivent."
+    }
+  ],
+  "voix": {
+    "moteur": "ElevenLabs",
+    "modele": "eleven_multilingual_v2",
+    "voix_id": "ecxPjiGTvAfpGEams6ec",
+    "voix_nom": "Paul K — French Ad & Trailer Voice",
+    "note": "Toute ligne d'un épisode doit être générée avec cette voix et ce modèle, sinon le timbre change au milieu du film."
+  },
+  "partage": {
+    "montage": "scripts/monter.mjs",
+    "controles": "scripts/verifier.mjs",
+    "incrustations": "incrustations.html",
+    "note": "Les épisodes n'ont qu'un pilote de quelques lignes ; le montage et les contrôles sont ici."
+  }
+}

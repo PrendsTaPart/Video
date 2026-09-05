@@ -6,7 +6,7 @@
     "largeur": 1080,
     "hauteur": 1920,
     "fps": 30,
-    "duree_s": 45
+    "duree_s": 60
   },
   "charte": {
     "fond": "#F2F4F7",
@@ -109,7 +109,11 @@
         ]
       }
     ],
-    "etiquette_annonceur": {
+    "coupe_finale": {
+      "t_s": 30,
+      "noir_images": 4
+    },
+    "incrustation_produit": {
       "debut_s": 29,
       "fin_s": 30,
       "fichier": "assets/annonceur/etiquette.png",
@@ -157,86 +161,68 @@
             "pixels": 80752
           }
         }
-      ]
-    },
-    "coupe_finale": {
-      "t_s": 30,
-      "noir_images": 4
+      ],
+      "quoi": "étiquette de la bouteille",
+      "y_soustitre": 1440
     }
   },
-  "methode": {
-    "debut_s": 30,
-    "fin_s": 45,
-    "voix": {
-      "moteur": "ElevenLabs",
-      "langue": "fr-FR",
-      "profil": "voix masculine française, timbre chaud, âge perçu 35-45 ans, débit soutenu mais net",
-      "reglages": {
-        "stability": 0.45,
-        "similarity_boost": 0.8,
-        "style": 0.25,
-        "use_speaker_boost": true
-      },
-      "passe_unique": true,
-      "decoupe_s": [
-        2.5,
-        5.52,
-        8.49,
-        11.06,
-        13.42,
-        17.05
-      ],
-      "note_decoupe": "Les six instants de coupe de la passe unique, relevés sur la prise. Chacun doit tomber dans un silence : scripts/voix-off.mjs le vérifie et refuse la prise sinon. Les bornes exactes de chaque ligne sont les bords du silence qui l'entoure, pas ces instants."
+  "audio": {
+    "lufs": -14,
+    "ducking_db": 6,
+    "fondu_sortie_s": 0.5,
+    "coupe_musique_film_s": 30,
+    "nappe_queue_debut_s": 33.0,
+    "nappe": "assets/musique/nappe-methode.mp3"
+  },
+  "exports": [
+    {
+      "fichier": "S01E01-colomb-60s.mp4",
+      "de_s": 0,
+      "a_s": 60,
+      "note": "film complet"
     },
-    "lignes": [
-      {
-        "debut_s": 30,
-        "fin_s": 31.6,
-        "vo": "Vous aussi, faites vos publicités vous-même.",
-        "ecran": "transition"
+    {
+      "fichier": "S01E01-colomb-30s.mp4",
+      "de_s": 0,
+      "a_s": 30,
+      "note": "bloc film seul — TikTok et Reels"
+    },
+    {
+      "fichier": "S01E01-colomb-30s-queue.mp4",
+      "de_s": 30,
+      "a_s": 60,
+      "note": "transition + méthode + hook, à remettre derrière n'importe quel épisode"
+    }
+  ],
+  "vignette": {
+    "fichier": "S01E01-colomb-vignette.jpg",
+    "t_s": 26
+  },
+  "queue": {
+    "debut_s": 30.0,
+    "fin_s": 60.0,
+    "blocs": {
+      "transition": {
+        "debut_s": 30.0,
+        "fin_s": 33.0,
+        "sequence": "2",
+        "note": "L'ardoise monte du bas, le bâton claque à 31,0 s, « COUPEZ » à 31,0 → 32,6. Trois secondes, identiques d'un épisode à l'autre.",
+        "clap_s": 31.0
       },
-      {
-        "debut_s": 31.6,
-        "fin_s": 33.3,
-        "vo": "Un : installez les MCP.",
-        "ecran": "etape",
-        "etape": 1
+      "methode": {
+        "debut_s": 33.0,
+        "fin_s": 53.0
       },
-      {
-        "debut_s": 33.3,
-        "fin_s": 35,
-        "vo": "Deux : demandez le script à Claude.",
-        "ecran": "etape",
-        "etape": 2
-      },
-      {
-        "debut_s": 35,
-        "fin_s": 36.6,
-        "vo": "Trois : ajoutez HyperFrames.",
-        "ecran": "etape",
-        "etape": 3
-      },
-      {
-        "debut_s": 36.6,
-        "fin_s": 38.2,
-        "vo": "Quatre : lancez votre prompt.",
-        "ecran": "etape",
-        "etape": 4
-      },
-      {
-        "debut_s": 38.2,
-        "fin_s": 40,
-        "vo": "Cinq : RapidoCMS planifie tout.",
-        "ecran": "etape",
-        "etape": 5
-      },
-      {
-        "debut_s": 40,
-        "fin_s": 45,
-        "vo": "RapidoCMS orchestre Claude, Higgsfield et ElevenLabs. Vos réseaux suivent.",
-        "ecran": "orchestration"
+      "hook": {
+        "debut_s": 53.0,
+        "fin_s": 60.0,
+        "punchline": [
+          "Lui, il cherchait le poivre.",
+          "Vous, vous avez RapidoCMS."
+        ],
+        "cta": "FAITES LA VÔTRE"
       }
-    ],
+    },
     "etapes": [
       {
         "n": 1,
@@ -270,7 +256,8 @@
       ],
       "orbite_ecart_s": 0.15,
       "trait_duree_s": 0.3,
-      "reseaux_debut_s": 43,
+      "debut_s": 48.0,
+      "reseaux_debut_s": 50.0,
       "reseaux_ecart_s": 0.12,
       "reseaux": [
         "facebook",
@@ -279,107 +266,72 @@
         "linkedin",
         "youtube"
       ],
-      "fondu_blanc_s": 0.3,
-      "immobile_s": 0.8
-    }
-  },
-  "audio": {
-    "lufs": -14,
-    "ducking_db": 6,
-    "fondu_sortie_s": 0.5,
-    "coupe_musique_film_s": 30,
-    "nappe_methode_debut_s": 30.2
-  },
-  "exports": [
-    {
-      "fichier": "S01E01-colomb-45s.mp4",
-      "de_s": 0,
-      "a_s": 45,
-      "note": "film complet"
+      "fondu_blanc_s": 0.3
     },
-    {
-      "fichier": "S01E01-colomb-30s.mp4",
-      "de_s": 0,
-      "a_s": 30,
-      "note": "bloc film seul — TikTok et Reels"
-    },
-    {
-      "fichier": "S01E01-colomb-15s-methode.mp4",
-      "de_s": 30,
-      "a_s": 45,
-      "note": "méthode + orchestration, réutilisable devant n'importe quel épisode"
-    }
-  ],
-  "vignette": {
-    "fichier": "S01E01-colomb-vignette.jpg",
-    "t_s": 26
-  },
-  "variante_par_defaut": "45s",
-  "variantes": {
-    "45s": {
-      "nom": "45 s — la voix dit court, l'écran dit long",
-      "note": "Le montage du plan. Les cinq étapes tiennent en dix secondes ; chaque ligne est accélérée du minimum nécessaire, de 1,02× à 1,34×."
-    },
-    "50s": {
-      "nom": "50 s — phrases entières",
-      "note": "La variante que le plan propose : les cinq étapes lues en entier, sans accélération. Le plan les chiffrait à 3 s chacune ; sur cette prise 2,6 s suffisent à les dire entièrement, ce qui fait tomber le total sur 50 s pile — 13 s d'étapes, 2 s pour la ligne d'ouverture, 5 s d'orchestration. Seule la dernière phrase reste à 1,15×, comme dans le 45 s. Le bloc film est identique.",
-      "format": {
-        "duree_s": 50
+    "lignes": [
+      {
+        "debut_s": 33.0,
+        "fin_s": 35.0,
+        "vo": "Vous aussi, faites vos publicités vous-même.",
+        "ecran": "ouverture",
+        "source": "audio/vo-ouverture.mp3"
       },
-      "methode": {
-        "fin_s": 50.0,
-        "lignes": [
-          {
-            "debut_s": 30.0,
-            "fin_s": 32.0
-          },
-          {
-            "debut_s": 32.0,
-            "fin_s": 34.6
-          },
-          {
-            "debut_s": 34.6,
-            "fin_s": 37.2
-          },
-          {
-            "debut_s": 37.2,
-            "fin_s": 39.8
-          },
-          {
-            "debut_s": 39.8,
-            "fin_s": 42.4
-          },
-          {
-            "debut_s": 42.4,
-            "fin_s": 45.0
-          },
-          {
-            "debut_s": 45.0,
-            "fin_s": 50.0
-          }
-        ],
-        "orchestration": {
-          "reseaux_debut_s": 48.0
-        }
+      {
+        "debut_s": 35.0,
+        "fin_s": 37.6,
+        "vo": "Un : installez les MCP.",
+        "ecran": "etape",
+        "etape": 1,
+        "source": "module — non regénéré"
       },
-      "exports": [
-        {
-          "fichier": "S01E01-colomb-50s.mp4",
-          "de_s": 0,
-          "a_s": 50,
-          "note": "film complet, phrases entières"
-        },
-        {
-          "fichier": "S01E01-colomb-20s-methode.mp4",
-          "de_s": 30,
-          "a_s": 50,
-          "note": "méthode + orchestration, phrases entières"
-        }
-      ],
-      "vignette": {
-        "fichier": "S01E01-colomb-50s-vignette.jpg",
-        "t_s": 26.0
+      {
+        "debut_s": 37.6,
+        "fin_s": 40.2,
+        "vo": "Deux : demandez le script à Claude.",
+        "ecran": "etape",
+        "etape": 2,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 40.2,
+        "fin_s": 42.8,
+        "vo": "Trois : ajoutez HyperFrames.",
+        "ecran": "etape",
+        "etape": 3,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 42.8,
+        "fin_s": 45.4,
+        "vo": "Quatre : lancez votre prompt.",
+        "ecran": "etape",
+        "etape": 4,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 45.4,
+        "fin_s": 48.0,
+        "vo": "Cinq : RapidoCMS planifie tout.",
+        "ecran": "etape",
+        "etape": 5,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 48.0,
+        "fin_s": 53.0,
+        "vo": "RapidoCMS orchestre Claude, Higgsfield et ElevenLabs. Vos réseaux suivent.",
+        "ecran": "orchestration",
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 53.8,
+        "fin_s": 58.8,
+        "vo": "Lui, il cherchait le poivre. Vous, vous avez RapidoCMS.",
+        "ecran": "hook",
+        "source": "audio/vo-hook.mp3"
       }
-    }
+    ],
+    "note": "La queue animée : 3 s de transition « COUPEZ », 20 s de méthode, 7 s de hook de fin. Les visuels et les six lignes de voix off des étapes viennent du module partagé ; seuls le numéro de séquence, le titre sur l'ardoise, la ligne d'ouverture et la punchline appartiennent à l'épisode.",
+    "module": "../module-methode-rapidocms"
   }
 }

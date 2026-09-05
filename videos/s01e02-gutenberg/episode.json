@@ -1,0 +1,336 @@
+{
+  "id": "S01E02",
+  "slug": "gutenberg",
+  "titre": "Un livre, deux ans",
+  "serie": "Michael remonte le temps",
+  "format": {
+    "largeur": 1080,
+    "hauteur": 1920,
+    "fps": 30,
+    "duree_s": 60
+  },
+  "charte": {
+    "fond": "#F2F4F7",
+    "bleu": "#03A9F5",
+    "violet": "#7E57C2",
+    "texte": "#383838",
+    "blanc": "#FFFFFF",
+    "reseaux": {
+      "facebook": "#1877F2",
+      "instagram": "#E1306C",
+      "tiktok": "#000000",
+      "linkedin": "#0A66C2",
+      "youtube": "#FF0000"
+    }
+  },
+  "film": {
+    "debut_s": 0,
+    "fin_s": 30,
+    "raccords_s": [
+      10.0,
+      20.0
+    ],
+    "clips": [
+      {
+        "n": 1,
+        "fichier": "source/P1-scriptorium.mp4",
+        "debut_s": 0,
+        "higgsfield": "83a87fe0-5f50-4547-9b1e-aebe4f80d94a",
+        "scene": "Scriptorium de pierre la nuit, le copiste et sa plume"
+      },
+      {
+        "n": 2,
+        "fichier": "source/P2-presse.mp4",
+        "debut_s": 10,
+        "higgsfield": "b9a5c85b-2cc9-4037-b013-2838d9612e24",
+        "scene": "Atelier d'imprimerie, l'encrage, le chariot, le tirage"
+      },
+      {
+        "n": 3,
+        "fichier": "source/P3-etabli.mp4",
+        "debut_s": 20,
+        "higgsfield": "61b45278-2671-4585-ba3c-6a1182f792c0",
+        "scene": "L'établi : le parchemin seul à gauche, la pile de livres à droite"
+      }
+    ],
+    "accroche": {
+      "texte": "Un livre : deux ans de travail.",
+      "debut_s": 0.3,
+      "fin_s": 3.0,
+      "fond": "#03A9F5",
+      "couleur": "#FFFFFF"
+    },
+    "sous_titres": [
+      {
+        "debut_s": 6.0,
+        "fin_s": 8.0,
+        "lignes": [
+          "Il était une fois un homme",
+          "qui copiait les livres à la main."
+        ]
+      },
+      {
+        "debut_s": 8.0,
+        "fin_s": 10.0,
+        "lignes": [
+          "Pour un seul livre,",
+          "il lui fallait deux ans."
+        ]
+      },
+      {
+        "debut_s": 17.5,
+        "fin_s": 18.9,
+        "lignes": [
+          "Alors il a fondu",
+          "des lettres en métal."
+        ]
+      },
+      {
+        "debut_s": 18.9,
+        "fin_s": 20.0,
+        "lignes": [
+          "Une page, cent fois,",
+          "sans la réécrire."
+        ]
+      },
+      {
+        "debut_s": 24.0,
+        "fin_s": 27.0,
+        "lignes": [
+          "En trois ans, il a sorti",
+          "cent quatre-vingts livres."
+        ]
+      },
+      {
+        "debut_s": 27.0,
+        "fin_s": 30.0,
+        "lignes": [
+          "Le copiste, lui,",
+          "en avait fini un seul."
+        ]
+      }
+    ],
+    "coupe_finale": {
+      "t_s": 30.0,
+      "noir_images": 4,
+      "son_coupe": true
+    },
+    "incrustation_produit": {
+      "debut_s": 24.0,
+      "fin_s": 30.0,
+      "fichier": "assets/annonceur/couverture.png",
+      "note": "Aucune marque fournie : la couverture reste vierge et rien n'est incrusté. Déposer une PNG à fond transparent à ce chemin pour l'activer.",
+      "suivi_releve": "à l'œil, sur trois images gabarit, faute d'un repère colorimétrique fiable sur le cuir sombre",
+      "suivi": [
+        {
+          "t_s": 24.0,
+          "x": 520,
+          "y": 1380,
+          "l": 470,
+          "h": 140
+        },
+        {
+          "t_s": 27.0,
+          "x": 495,
+          "y": 1415,
+          "l": 470,
+          "h": 140
+        },
+        {
+          "t_s": 30.0,
+          "x": 470,
+          "y": 1470,
+          "l": 470,
+          "h": 140
+        }
+      ],
+      "quoi": "couverture du livre",
+      "y_soustitre": 1250
+    },
+    "accent": {
+      "t_s": 16.4,
+      "noir_images": 3,
+      "son_maintenu": true,
+      "note": "Le seul effet de montage du bloc film : trois images de noir sur le claquement de la presse, le son continue par-dessus. Le point mesuré : entre 16 et 17 s, l'énergie sonore du plan 2 culmine à 15,7 s puis à 16,3 et 16,5 s — 16,4 tombe bien sur un transitoire de la presse."
+    }
+  },
+  "audio": {
+    "lufs": -14,
+    "ducking_db": 6,
+    "fondu_sortie_s": 0.5,
+    "coupe_musique_film_s": 30.0,
+    "nappe": "../s01e01-colomb/assets/musique/nappe-methode.mp3",
+    "nappe_queue_debut_s": 33.0
+  },
+  "exports": [
+    {
+      "fichier": "S01E02-gutenberg-60s.mp4",
+      "de_s": 0,
+      "a_s": 60,
+      "note": "film complet"
+    },
+    {
+      "fichier": "S01E02-gutenberg-30s.mp4",
+      "de_s": 0,
+      "a_s": 30,
+      "note": "bloc film seul — TikTok et Reels"
+    },
+    {
+      "fichier": "S01E02-gutenberg-30s-queue.mp4",
+      "de_s": 30,
+      "a_s": 60,
+      "note": "transition + méthode + hook, à remettre derrière n'importe quel épisode"
+    }
+  ],
+  "vignette": {
+    "fichier": "S01E02-gutenberg-vignette.jpg",
+    "t_s": 25.0
+  },
+  "faits": {
+    "note": "Les faits que porte l'épisode, pour qu'on puisse les revérifier sans rouvrir le brief.",
+    "points": [
+      "Bible à 42 lignes : premier livre imprimé en Europe avec des caractères mobiles, Mayence, 1452-1455.",
+      "Deux volumes in-folio, 1 286 pages, deux colonnes de 42 lignes.",
+      "Tirage estimé à environ 180 exemplaires, dont une trentaine sur vélin.",
+      "Atelier de 15 à 20 personnes ; trois ans pour sortir le tirage.",
+      "Dans le même temps, un moine copiste achevait une seule Bible.",
+      "48 à 49 exemplaires subsistent aujourd'hui."
+    ]
+  },
+  "queue": {
+    "debut_s": 30.0,
+    "fin_s": 60.0,
+    "blocs": {
+      "transition": {
+        "debut_s": 30.0,
+        "fin_s": 33.0,
+        "sequence": "2",
+        "note": "L'ardoise monte du bas, le bâton claque à 31,0 s, « COUPEZ » à 31,0 → 32,6. Trois secondes, identiques d'un épisode à l'autre.",
+        "clap_s": 31.0
+      },
+      "methode": {
+        "debut_s": 33.0,
+        "fin_s": 53.0
+      },
+      "hook": {
+        "debut_s": 53.0,
+        "fin_s": 60.0,
+        "punchline": [
+          "Lui, il a fondu des lettres.",
+          "Vous, vous avez RapidoCMS."
+        ],
+        "cta": "FAITES LA VÔTRE"
+      }
+    },
+    "etapes": [
+      {
+        "n": 1,
+        "titre": "Installez les MCP RapidoCMS, Higgsfield et ElevenLabs sur Claude"
+      },
+      {
+        "n": 2,
+        "titre": "Demandez à Claude un script qui résume votre idée"
+      },
+      {
+        "n": 3,
+        "titre": "Installez le dépôt",
+        "mono": "github.com/heygen-com/hyperframes"
+      },
+      {
+        "n": 4,
+        "titre": "Lancez votre prompt sur Claude"
+      },
+      {
+        "n": 5,
+        "titre": "Demandez à Claude de planifier votre vidéo sur vos réseaux avec RapidoCMS"
+      }
+    ],
+    "orchestration": {
+      "centre": "rapidocms",
+      "orbite": [
+        "claude",
+        "higgsfield",
+        "elevenlabs",
+        "heygen"
+      ],
+      "orbite_ecart_s": 0.15,
+      "trait_duree_s": 0.3,
+      "debut_s": 48.0,
+      "reseaux_debut_s": 50.0,
+      "reseaux_ecart_s": 0.12,
+      "reseaux": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "linkedin",
+        "youtube"
+      ],
+      "fondu_blanc_s": 0.3
+    },
+    "lignes": [
+      {
+        "debut_s": 33.0,
+        "fin_s": 35.0,
+        "vo": "Écrivez une fois. Publiez partout.",
+        "ecran": "ouverture",
+        "source": "audio/vo-ouverture.mp3"
+      },
+      {
+        "debut_s": 35.0,
+        "fin_s": 37.6,
+        "vo": "Un : installez les MCP.",
+        "ecran": "etape",
+        "etape": 1,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 37.6,
+        "fin_s": 40.2,
+        "vo": "Deux : demandez le script à Claude.",
+        "ecran": "etape",
+        "etape": 2,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 40.2,
+        "fin_s": 42.8,
+        "vo": "Trois : ajoutez HyperFrames.",
+        "ecran": "etape",
+        "etape": 3,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 42.8,
+        "fin_s": 45.4,
+        "vo": "Quatre : lancez votre prompt.",
+        "ecran": "etape",
+        "etape": 4,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 45.4,
+        "fin_s": 48.0,
+        "vo": "Cinq : RapidoCMS planifie tout.",
+        "ecran": "etape",
+        "etape": 5,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 48.0,
+        "fin_s": 53.0,
+        "vo": "RapidoCMS orchestre Claude, Higgsfield et ElevenLabs. Vos réseaux suivent.",
+        "ecran": "orchestration",
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 53.8,
+        "fin_s": 58.8,
+        "vo": "Lui, il a fondu des lettres en métal. Vous, vous avez RapidoCMS.",
+        "ecran": "hook",
+        "source": "audio/vo-hook.mp3"
+      }
+    ],
+    "note": "La queue animée : 3 s de transition « COUPEZ », 20 s de méthode, 7 s de hook de fin. Les visuels et les six lignes de voix off des étapes viennent du module partagé ; seuls le numéro de séquence, le titre sur l'ardoise, la ligne d'ouverture et la punchline appartiennent à l'épisode.",
+    "module": "../module-methode-rapidocms"
+  }
+}

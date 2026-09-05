@@ -2,14 +2,12 @@
   "name": "s01e01-colomb",
   "private": true,
   "type": "module",
-  "description": "S01E01 « colomb » — 30 s de film Higgsfield + 15 s de méthode et d'orchestration",
+  "description": "S01E01 « colomb » — 30 s de film Higgsfield + la queue animée RapidoCMS",
   "scripts": {
-    "voix": "node scripts/voix-off.mjs",
-    "methode": "node scripts/rendre-methode.mjs",
+    "queue": "node scripts/queue.mjs",
     "monter": "node scripts/monter.mjs",
     "verifier": "node scripts/verifier.mjs",
-    "build": "npm run voix && npm run methode && npm run monter && npm run verifier",
-    "build:50s": "VARIANTE=50s npm run build"
+    "build": "npm run queue && npm run monter && npm run verifier"
   },
   "dependencies": {
     "ffmpeg-static": "^5.2.0"

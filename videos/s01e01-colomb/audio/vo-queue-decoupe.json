@@ -1,0 +1,34 @@
+{
+ "voix": {
+  "moteur": "ElevenLabs",
+  "modele": "eleven_multilingual_v2",
+  "voix_id": "ecxPjiGTvAfpGEams6ec",
+  "voix_nom": "Paul K — French Ad & Trailer Voice",
+  "note": "Toute ligne d'ouverture doit être générée avec cette voix et ce modèle, sinon le timbre change au milieu du module."
+ },
+ "etapes": "module — lignes 2 à 7, jamais regénérées",
+ "lignes_de_l_episode": [
+  {
+   "role": "ouverture",
+   "vo": "Vous aussi, faites vos publicités vous-même.",
+   "source": "audio/vo-ouverture.mp3",
+   "prise_s": 2.06,
+   "phrases": 1,
+   "dit_s": 2.06,
+   "creneau_s": 2,
+   "tempo": 1.03,
+   "cale_a_s": 33
+  },
+  {
+   "role": "hook",
+   "vo": "Lui, il cherchait le poivre. Vous, vous avez RapidoCMS.",
+   "source": "audio/vo-hook.mp3",
+   "prise_s": 4.49,
+   "phrases": 3,
+   "dit_s": 3.598,
+   "creneau_s": 5,
+   "tempo": 1,
+   "cale_a_s": 53.8
+  }
+ ]
+}

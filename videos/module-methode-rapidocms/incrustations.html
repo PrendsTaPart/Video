@@ -1,0 +1,51 @@
+<meta charset="utf-8">
+<title>Incrustations du bloc film</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1920px;overflow:hidden;background:transparent}
+  body{font-family:"Liberation Sans",Arial,Helvetica,sans-serif}
+
+  /* L'accroche : bandeau bleu au tiers bas, au-dessus de la zone d'interface des réseaux. */
+  #accroche{position:absolute;left:0;right:0;display:none;justify-content:center}
+  #accroche .bandeau{display:inline-block;padding:26px 46px;border-radius:14px;
+    font-size:76px;font-weight:700;line-height:1.1;letter-spacing:-1px;white-space:nowrap}
+
+  /* Les sous-titres : deux lignes au plus, contour noir de 2 px, jamais dans la zone
+     d'interface des réseaux ni sur l'étiquette de la bouteille. */
+  #soustitre{position:absolute;left:60px;right:60px;display:none;text-align:center}
+  #soustitre div{font-size:60px;font-weight:700;line-height:1.24;color:#fff;
+    paint-order:stroke fill;-webkit-text-stroke:4px #000;                 /* 4 px de trait = 2 px visibles */
+    text-shadow:0 4px 18px rgba(0,0,0,.55)}
+</style>
+
+<div id="accroche"><span class="bandeau"></span></div>
+<div id="soustitre"></div>
+
+<script>
+
+function accroche(a) {
+  const bloc = document.getElementById("accroche");
+  const bandeau = bloc.querySelector(".bandeau");
+  bandeau.textContent = a.texte;
+  bandeau.style.background = a.fond;
+  bandeau.style.color = a.couleur;
+  bloc.style.top = a.y + "px";
+  bloc.style.display = "flex";
+  document.getElementById("soustitre").style.display = "none";
+}
+
+function soustitre(lignes, y) {
+  const bloc = document.getElementById("soustitre");
+  bloc.innerHTML = lignes.map((l) => `<div>${l}</div>`).join("");
+  bloc.style.display = "block";
+  bloc.style.top = y + "px";
+  // le bloc est calé sur son milieu : deux lignes ou une, il reste centré au même endroit
+  bloc.style.top = (y - bloc.offsetHeight / 2) + "px";
+  document.getElementById("accroche").style.display = "none";
+}
+
+window.montrer = (quoi) => {
+  if (quoi.type === "accroche") accroche(quoi);
+  else soustitre(quoi.lignes, quoi.y);
+};
+</script>
