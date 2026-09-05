@@ -3,11 +3,11 @@
   "fichiers": [
     {
       "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V13-planifier-un-email-sms/out/master-16x9.mp4",
-      "octets": 10097613
+      "octets": 10439092
     },
     {
       "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V13-planifier-un-email-sms/out/master-9x16.mp4",
-      "octets": 7355226
+      "octets": 7578850
     }
   ],
   "sequences": [
@@ -84,7 +84,5 @@
       "titre": "À retenir"
     }
   ],
-  "avertissements": [
-    "Durée finale 64s, hors de la fenêtre 80–170s."
-  ]
+  "avertissements": []
 }

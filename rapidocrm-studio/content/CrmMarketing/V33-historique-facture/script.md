@@ -14,7 +14,7 @@ Module **CrmMarketing** · V33 · `06-historique-facture`
 
 ## Intro
 
-On part de la page Historique, et on ressort avec la facture ouverte. Le tableau donne le statut et le total ; l'icône en bout de ligne ouvre le document, prêt à télécharger.
+On part de la page Historique, et on ressort avec la facture ouverte. Le tableau donne le statut et le total ; l'icône en bout de ligne ouvre le document, prêt à télécharger. Rien à recalculer, rien à reconstituer : la facture est déjà écrite.
 
 ## Démo
 

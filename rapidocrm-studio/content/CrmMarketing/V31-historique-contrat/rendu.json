@@ -1,0 +1,82 @@
+{
+  "duree": 54.333333333333336,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V31-historique-contrat/out/master-16x9.mp4",
+      "octets": 7164311
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V31-historique-contrat/out/master-9x16.mp4",
+      "octets": 6431981
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.333333333333334
+    },
+    {
+      "nom": "titre",
+      "debut": 9.333333333333334,
+      "fin": 20.033333333333335
+    },
+    {
+      "nom": "demo",
+      "debut": 20.033333333333335,
+      "fin": 35.4
+    },
+    {
+      "nom": "claude",
+      "debut": 35.4,
+      "fin": 48.7
+    },
+    {
+      "nom": "punchline",
+      "debut": 48.7,
+      "fin": 54.333333333333336
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Un contrat envoyé en mai, une question sur sa durée en septembre. Où est le document ?"
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Historique contrat"
+    },
+    {
+      "timecode": "00:20",
+      "titre": "Ouvrir l'historique des contrats"
+    },
+    {
+      "timecode": "00:24",
+      "titre": "Lire le tableau des contrats"
+    },
+    {
+      "timecode": "00:28",
+      "titre": "Ouvrir le contrat"
+    },
+    {
+      "timecode": "00:30",
+      "titre": "Parcourir le contrat, page par page"
+    },
+    {
+      "timecode": "00:35",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:48",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 54s, hors de la fenêtre 55–170s."
+  ]
+}

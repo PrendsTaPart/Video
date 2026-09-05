@@ -18,8 +18,8 @@
     ]
   },
   "intro": {
-    "texte": "On part de la page Historique, et on ressort avec la facture ouverte. Le tableau donne le statut et le total ; l'icône en bout de ligne ouvre le document, prêt à télécharger.",
-    "duree": 17
+    "texte": "On part de la page Historique, et on ressort avec la facture ouverte. Le tableau donne le statut et le total ; l'icône en bout de ligne ouvre le document, prêt à télécharger. Rien à recalculer, rien à reconstituer : la facture est déjà écrite.",
+    "duree": 21
   },
   "demo": {
     "etapes": [
@@ -29,7 +29,12 @@
         "voix": "Deuxième rangée de la page Historique : les factures. On consulte, et le tableau se charge.",
         "debut_source": 1,
         "fin_source": 8,
-        "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.6 },
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.6
+        },
         "annotation": "Historique des factures"
       },
       {
@@ -38,7 +43,12 @@
         "voix": "Statut et total TTC : l'essentiel se lit ici.",
         "debut_source": 8,
         "fin_source": 11.85,
-        "zone_focus": { "x": 0.23, "y": 0.35, "w": 0.75, "h": 0.3 },
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.35,
+          "w": 0.75,
+          "h": 0.3
+        },
         "annotation": "Statut et Total TTC"
       },
       {
@@ -47,7 +57,12 @@
         "voix": "L'icône ouvre la facture dans un onglet.",
         "debut_source": 11.85,
         "fin_source": 15.5,
-        "zone_focus": { "x": 0, "y": 0.14, "w": 1, "h": 0.5 },
+        "zone_focus": {
+          "x": 0,
+          "y": 0.14,
+          "w": 1,
+          "h": 0.5
+        },
         "annotation": "Ouvrir la facture"
       },
       {
@@ -56,7 +71,12 @@
         "voix": "Et le bouton Télécharger l'enregistre.",
         "debut_source": 15.5,
         "fin_source": 18.23,
-        "zone_focus": { "x": 0, "y": 0.14, "w": 1, "h": 0.5 },
+        "zone_focus": {
+          "x": 0,
+          "y": 0.14,
+          "w": 1,
+          "h": 0.5
+        },
         "annotation": "Télécharger"
       }
     ]
@@ -66,7 +86,9 @@
     "voix": "Le journal montre un client. Pour voir toutes les factures qui attendent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
     "prompt": {
       "texte": "Liste-moi mes [nombre] factures en attente avec leur montant.",
-      "variables": ["nombre"],
+      "variables": [
+        "nombre"
+      ],
       "outil_mcp": "list_factures"
     },
     "resultat_affiche": {
@@ -91,9 +113,22 @@
   "seo": {
     "titre": "Historique des factures — RapidoCRM",
     "description": "Consultez le journal des factures d'un client dans RapidoCRM : statut, total TTC, ouverture de la facture et téléchargement du document. Le tutoriel.",
-    "mots_cles": ["historique facture", "RapidoCRM", "CRM", "facturation", "encaissement", "suivi client"],
+    "mots_cles": [
+      "historique facture",
+      "RapidoCRM",
+      "CRM",
+      "facturation",
+      "encaissement",
+      "suivi client"
+    ],
     "youtube_titre": "Historique des factures — RapidoCRM",
     "youtube_description": "Le tutoriel du journal des factures sur RapidoCRM : les colonnes du tableau dont le statut et le total TTC, l'ouverture de la facture dans un onglet, et son téléchargement. RapidoCRM Académie.",
-    "youtube_tags": ["RapidoCRM", "historique", "facture", "CRM", "facturation"]
+    "youtube_tags": [
+      "RapidoCRM",
+      "historique",
+      "facture",
+      "CRM",
+      "facturation"
+    ]
   }
 }

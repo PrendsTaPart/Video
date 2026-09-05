@@ -1,0 +1,15 @@
+Le client rappelle pour accepter un devis de juillet. Vous, vous ne savez plus s'il est encore valable. Le devis vous le dit lui-même, dès l'ouverture.
+
+On part de la page Historique, et on ressort avec le devis ouvert. Le tableau donne les dates, le statut et le prix ; le devis, lui, prévient quand la période de signature est passée.
+
+Troisième rangée de la page Historique : les devis. On consulte. La page reste vide quelques secondes, le temps que le tableau arrive : ce n'est pas une liste vide.
+
+Dates, statut, prix. Vert pour accepté, orange pour en attente.
+
+L'icône ouvre le devis.
+
+Et le bandeau dit qu'il n'est plus signable.
+
+Le journal montre un client. Pour voir tous les devis qui attendent une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Un devis dit lui-même qu'il a expiré : la relance part sur ce qui peut encore se signer.

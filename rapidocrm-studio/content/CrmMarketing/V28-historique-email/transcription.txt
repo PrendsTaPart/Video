@@ -1,0 +1,15 @@
+« Je n'ai jamais reçu votre devis. » Et vous, vous cherchez dans vos envoyés. Le journal des e-mails le retrouve, avec son contenu.
+
+On part de la page Historique, et on ressort avec l'e-mail sous les yeux. Le tableau liste les envois ; l'icône en bout de ligne rouvre le message tel qu'il est parti.
+
+Première carte de la page Historique : les e-mails. On consulte.
+
+Une ligne par envoi, avec sa date.
+
+L'icône en bout de ligne rouvre le message : objet, destinataire, contenu.
+
+Et on referme.
+
+Le journal montre le détail. Pour le total du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Ce qui est parti reste lisible : la discussion ne dépend plus de votre boîte mail.

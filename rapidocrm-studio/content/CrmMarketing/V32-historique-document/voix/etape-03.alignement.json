@@ -1,0 +1,42 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "menu",
+    "debut": 0.209,
+    "fin": 0.395
+  },
+  {
+    "mot": "de",
+    "debut": 0.43,
+    "fin": 0.476
+  },
+  {
+    "mot": "la",
+    "debut": 0.511,
+    "fin": 0.58
+  },
+  {
+    "mot": "ligne",
+    "debut": 0.627,
+    "fin": 0.836
+  },
+  {
+    "mot": "propose",
+    "debut": 0.871,
+    "fin": 1.242
+  },
+  {
+    "mot": "les",
+    "debut": 1.277,
+    "fin": 1.393
+  },
+  {
+    "mot": "deux.",
+    "debut": 1.451,
+    "fin": 1.695
+  }
+]

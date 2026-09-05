@@ -1,0 +1,8 @@
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V29-historique-sms/voix/hook.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V29-historique-sms/voix/intro.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V29-historique-sms/voix/etape-01.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V29-historique-sms/voix/etape-02.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V29-historique-sms/voix/etape-03.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V29-historique-sms/voix/etape-04.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V29-historique-sms/voix/claude.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V29-historique-sms/voix/punchline.mp3'

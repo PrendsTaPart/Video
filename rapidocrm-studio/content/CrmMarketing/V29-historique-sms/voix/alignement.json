@@ -1,0 +1,752 @@
+{
+  "duree_totale": 47.928000000000004,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 9.672,
+      "texte": "Le client dit qu'il n'a pas été prévenu. Vous, vous croyez lui avoir envoyé un SMS. Le journal tranche : le message, le numéro, la date.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "client",
+          "debut": 0.221,
+          "fin": 0.534
+        },
+        {
+          "mot": "dit",
+          "debut": 0.569,
+          "fin": 0.697
+        },
+        {
+          "mot": "qu'il",
+          "debut": 0.72,
+          "fin": 0.848
+        },
+        {
+          "mot": "n'a",
+          "debut": 0.894,
+          "fin": 0.987
+        },
+        {
+          "mot": "pas",
+          "debut": 1.138,
+          "fin": 1.335
+        },
+        {
+          "mot": "été",
+          "debut": 1.358,
+          "fin": 1.509
+        },
+        {
+          "mot": "prévenu.",
+          "debut": 1.544,
+          "fin": 1.974
+        },
+        {
+          "mot": "Vous,",
+          "debut": 2.148,
+          "fin": 2.438
+        },
+        {
+          "mot": "vous",
+          "debut": 2.473,
+          "fin": 2.612
+        },
+        {
+          "mot": "croyez",
+          "debut": 2.635,
+          "fin": 2.902
+        },
+        {
+          "mot": "lui",
+          "debut": 2.937,
+          "fin": 3.007
+        },
+        {
+          "mot": "avoir",
+          "debut": 3.042,
+          "fin": 3.262
+        },
+        {
+          "mot": "envoyé",
+          "debut": 3.344,
+          "fin": 3.808
+        },
+        {
+          "mot": "un",
+          "debut": 3.855,
+          "fin": 3.924
+        },
+        {
+          "mot": "S.M.S.",
+          "debut": 4.005,
+          "fin": 4.574
+        },
+        {
+          "mot": "Le",
+          "debut": 4.818,
+          "fin": 4.923
+        },
+        {
+          "mot": "journal",
+          "debut": 4.957,
+          "fin": 5.236
+        },
+        {
+          "mot": "tranche",
+          "debut": 5.306,
+          "fin": 5.77
+        },
+        {
+          "mot": ":",
+          "debut": 5.863,
+          "fin": 5.898
+        },
+        {
+          "mot": "le",
+          "debut": 6.072,
+          "fin": 6.153
+        },
+        {
+          "mot": "message,",
+          "debut": 6.211,
+          "fin": 6.873
+        },
+        {
+          "mot": "le",
+          "debut": 7.047,
+          "fin": 7.129
+        },
+        {
+          "mot": "numéro,",
+          "debut": 7.187,
+          "fin": 7.872
+        },
+        {
+          "mot": "la",
+          "debut": 8.081,
+          "fin": 8.197
+        },
+        {
+          "mot": "date.",
+          "debut": 8.255,
+          "fin": 8.719
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 9.672,
+      "duree": 9.312,
+      "texte": "On part de la page Historique, et on ressort avec le SMS sous les yeux. Le tableau montre le numéro et la date ; l'icône en bout de ligne rouvre le message.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.186
+        },
+        {
+          "mot": "part",
+          "debut": 0.232,
+          "fin": 0.383
+        },
+        {
+          "mot": "de",
+          "debut": 0.406,
+          "fin": 0.464
+        },
+        {
+          "mot": "la",
+          "debut": 0.499,
+          "fin": 0.557
+        },
+        {
+          "mot": "page",
+          "debut": 0.615,
+          "fin": 0.836
+        },
+        {
+          "mot": "Historique,",
+          "debut": 0.871,
+          "fin": 1.463
+        },
+        {
+          "mot": "et",
+          "debut": 1.498,
+          "fin": 1.591
+        },
+        {
+          "mot": "on",
+          "debut": 1.637,
+          "fin": 1.683
+        },
+        {
+          "mot": "ressort",
+          "debut": 1.73,
+          "fin": 2.02
+        },
+        {
+          "mot": "avec",
+          "debut": 2.043,
+          "fin": 2.218
+        },
+        {
+          "mot": "le",
+          "debut": 2.276,
+          "fin": 2.38
+        },
+        {
+          "mot": "S.M.S.",
+          "debut": 2.415,
+          "fin": 3.007
+        },
+        {
+          "mot": "sous",
+          "debut": 3.065,
+          "fin": 3.239
+        },
+        {
+          "mot": "les",
+          "debut": 3.262,
+          "fin": 3.355
+        },
+        {
+          "mot": "yeux.",
+          "debut": 3.413,
+          "fin": 3.634
+        },
+        {
+          "mot": "Le",
+          "debut": 3.843,
+          "fin": 3.947
+        },
+        {
+          "mot": "tableau",
+          "debut": 4.005,
+          "fin": 4.354
+        },
+        {
+          "mot": "montre",
+          "debut": 4.447,
+          "fin": 4.725
+        },
+        {
+          "mot": "le",
+          "debut": 4.748,
+          "fin": 4.807
+        },
+        {
+          "mot": "numéro",
+          "debut": 4.841,
+          "fin": 5.178
+        },
+        {
+          "mot": "et",
+          "debut": 5.248,
+          "fin": 5.317
+        },
+        {
+          "mot": "la",
+          "debut": 5.352,
+          "fin": 5.422
+        },
+        {
+          "mot": "date",
+          "debut": 5.48,
+          "fin": 5.793
+        },
+        {
+          "mot": ";",
+          "debut": 5.817,
+          "fin": 5.851
+        },
+        {
+          "mot": "l'icône",
+          "debut": 6.06,
+          "fin": 6.49
+        },
+        {
+          "mot": "en",
+          "debut": 6.513,
+          "fin": 6.56
+        },
+        {
+          "mot": "bout",
+          "debut": 6.594,
+          "fin": 6.722
+        },
+        {
+          "mot": "de",
+          "debut": 6.757,
+          "fin": 6.815
+        },
+        {
+          "mot": "ligne",
+          "debut": 6.861,
+          "fin": 7.14
+        },
+        {
+          "mot": "rouvre",
+          "debut": 7.256,
+          "fin": 7.558
+        },
+        {
+          "mot": "le",
+          "debut": 7.581,
+          "fin": 7.628
+        },
+        {
+          "mot": "message.",
+          "debut": 7.663,
+          "fin": 8.15
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 18.984,
+      "duree": 4.344,
+      "texte": "Deuxième carte de la page Historique : les SMS. On consulte.",
+      "mots": [
+        {
+          "mot": "Deuxième",
+          "debut": 0,
+          "fin": 0.395
+        },
+        {
+          "mot": "carte",
+          "debut": 0.418,
+          "fin": 0.592
+        },
+        {
+          "mot": "de",
+          "debut": 0.615,
+          "fin": 0.673
+        },
+        {
+          "mot": "la",
+          "debut": 0.708,
+          "fin": 0.778
+        },
+        {
+          "mot": "page",
+          "debut": 0.836,
+          "fin": 1.033
+        },
+        {
+          "mot": "Historique",
+          "debut": 1.068,
+          "fin": 1.614
+        },
+        {
+          "mot": ":",
+          "debut": 1.637,
+          "fin": 1.672
+        },
+        {
+          "mot": "les",
+          "debut": 1.741,
+          "fin": 1.904
+        },
+        {
+          "mot": "S.M.S.",
+          "debut": 1.927,
+          "fin": 2.647
+        },
+        {
+          "mot": "On",
+          "debut": 2.775,
+          "fin": 2.868
+        },
+        {
+          "mot": "consulte.",
+          "debut": 2.914,
+          "fin": 3.425
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 23.328000000000003,
+      "duree": 3.264,
+      "texte": "Ici, le numéro du destinataire est une colonne.",
+      "mots": [
+        {
+          "mot": "Ici,",
+          "debut": 0,
+          "fin": 0.325
+        },
+        {
+          "mot": "le",
+          "debut": 0.348,
+          "fin": 0.418
+        },
+        {
+          "mot": "numéro",
+          "debut": 0.453,
+          "fin": 0.743
+        },
+        {
+          "mot": "du",
+          "debut": 0.778,
+          "fin": 0.859
+        },
+        {
+          "mot": "destinataire",
+          "debut": 0.906,
+          "fin": 1.556
+        },
+        {
+          "mot": "est",
+          "debut": 1.579,
+          "fin": 1.672
+        },
+        {
+          "mot": "une",
+          "debut": 1.753,
+          "fin": 1.846
+        },
+        {
+          "mot": "colonne.",
+          "debut": 1.881,
+          "fin": 2.31
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 26.592000000000002,
+      "duree": 2.712,
+      "texte": "L'icône rouvre le message, mot pour mot.",
+      "mots": [
+        {
+          "mot": "L'icône",
+          "debut": 0,
+          "fin": 0.418
+        },
+        {
+          "mot": "rouvre",
+          "debut": 0.441,
+          "fin": 0.639
+        },
+        {
+          "mot": "le",
+          "debut": 0.673,
+          "fin": 0.731
+        },
+        {
+          "mot": "message,",
+          "debut": 0.778,
+          "fin": 1.196
+        },
+        {
+          "mot": "mot",
+          "debut": 1.231,
+          "fin": 1.358
+        },
+        {
+          "mot": "pour",
+          "debut": 1.382,
+          "fin": 1.509
+        },
+        {
+          "mot": "mot.",
+          "debut": 1.544,
+          "fin": 1.753
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 29.304000000000002,
+      "duree": 1.632,
+      "texte": "Puis on ferme.",
+      "mots": [
+        {
+          "mot": "Puis",
+          "debut": 0,
+          "fin": 0.221
+        },
+        {
+          "mot": "on",
+          "debut": 0.244,
+          "fin": 0.29
+        },
+        {
+          "mot": "ferme.",
+          "debut": 0.348,
+          "fin": 0.708
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 30.936000000000003,
+      "duree": 11.904,
+      "texte": "Le journal montre le détail. Pour le total du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "journal",
+          "debut": 0.197,
+          "fin": 0.499
+        },
+        {
+          "mot": "montre",
+          "debut": 0.557,
+          "fin": 0.801
+        },
+        {
+          "mot": "le",
+          "debut": 0.824,
+          "fin": 0.882
+        },
+        {
+          "mot": "détail.",
+          "debut": 0.917,
+          "fin": 1.37
+        },
+        {
+          "mot": "Pour",
+          "debut": 1.463,
+          "fin": 1.66
+        },
+        {
+          "mot": "le",
+          "debut": 1.683,
+          "fin": 1.741
+        },
+        {
+          "mot": "total",
+          "debut": 1.788,
+          "fin": 2.055
+        },
+        {
+          "mot": "du",
+          "debut": 2.101,
+          "fin": 2.183
+        },
+        {
+          "mot": "mois,",
+          "debut": 2.241,
+          "fin": 2.473
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 2.543,
+          "fin": 3.332
+        },
+        {
+          "mot": "parle",
+          "debut": 3.402,
+          "fin": 3.611
+        },
+        {
+          "mot": "à",
+          "debut": 3.634,
+          "fin": 3.657
+        },
+        {
+          "mot": "Claude",
+          "debut": 3.727,
+          "fin": 4.087
+        },
+        {
+          "mot": ":",
+          "debut": 4.122,
+          "fin": 4.191
+        },
+        {
+          "mot": "vous",
+          "debut": 4.516,
+          "fin": 4.656
+        },
+        {
+          "mot": "demandez",
+          "debut": 4.679,
+          "fin": 4.992
+        },
+        {
+          "mot": "en",
+          "debut": 5.016,
+          "fin": 5.074
+        },
+        {
+          "mot": "français,",
+          "debut": 5.132,
+          "fin": 5.619
+        },
+        {
+          "mot": "il",
+          "debut": 5.666,
+          "fin": 5.782
+        },
+        {
+          "mot": "lit",
+          "debut": 5.84,
+          "fin": 5.944
+        },
+        {
+          "mot": "vos",
+          "debut": 5.968,
+          "fin": 6.084
+        },
+        {
+          "mot": "données",
+          "debut": 6.107,
+          "fin": 6.467
+        },
+        {
+          "mot": "et",
+          "debut": 6.641,
+          "fin": 6.78
+        },
+        {
+          "mot": "répond.",
+          "debut": 6.827,
+          "fin": 7.198
+        },
+        {
+          "mot": "Copiez",
+          "debut": 7.523,
+          "fin": 7.848
+        },
+        {
+          "mot": "ce",
+          "debut": 7.872,
+          "fin": 7.976
+        },
+        {
+          "mot": "prompt,",
+          "debut": 8.034,
+          "fin": 8.475
+        },
+        {
+          "mot": "remplacez",
+          "debut": 8.51,
+          "fin": 8.963
+        },
+        {
+          "mot": "ce",
+          "debut": 8.986,
+          "fin": 9.067
+        },
+        {
+          "mot": "qui",
+          "debut": 9.125,
+          "fin": 9.242
+        },
+        {
+          "mot": "est",
+          "debut": 9.288,
+          "fin": 9.369
+        },
+        {
+          "mot": "entre",
+          "debut": 9.439,
+          "fin": 9.625
+        },
+        {
+          "mot": "crochets.",
+          "debut": 9.671,
+          "fin": 10.17
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 42.84,
+      "duree": 5.088,
+      "texte": "Le numéro, la date, le texte : trois colonnes qui valent mieux qu'une discussion.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "numéro,",
+          "debut": 0.186,
+          "fin": 0.522
+        },
+        {
+          "mot": "la",
+          "debut": 0.546,
+          "fin": 0.627
+        },
+        {
+          "mot": "date,",
+          "debut": 0.697,
+          "fin": 0.975
+        },
+        {
+          "mot": "le",
+          "debut": 1.01,
+          "fin": 1.091
+        },
+        {
+          "mot": "texte",
+          "debut": 1.138,
+          "fin": 1.567
+        },
+        {
+          "mot": ":",
+          "debut": 1.614,
+          "fin": 1.637
+        },
+        {
+          "mot": "trois",
+          "debut": 1.788,
+          "fin": 1.985
+        },
+        {
+          "mot": "colonnes",
+          "debut": 2.009,
+          "fin": 2.322
+        },
+        {
+          "mot": "qui",
+          "debut": 2.345,
+          "fin": 2.438
+        },
+        {
+          "mot": "valent",
+          "debut": 2.485,
+          "fin": 2.694
+        },
+        {
+          "mot": "mieux",
+          "debut": 2.775,
+          "fin": 2.949
+        },
+        {
+          "mot": "qu'une",
+          "debut": 2.972,
+          "fin": 3.111
+        },
+        {
+          "mot": "discussion.",
+          "debut": 3.135,
+          "fin": 3.715
+        }
+      ]
+    }
+  ]
+}

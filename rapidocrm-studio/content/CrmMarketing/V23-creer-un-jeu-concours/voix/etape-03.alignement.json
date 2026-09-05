@@ -1,0 +1,32 @@
+[
+  {
+    "mot": "Trois",
+    "debut": 0,
+    "fin": 0.279
+  },
+  {
+    "mot": "étapes",
+    "debut": 0.36,
+    "fin": 0.743
+  },
+  {
+    "mot": ":",
+    "debut": 0.766,
+    "fin": 0.789
+  },
+  {
+    "mot": "informations,",
+    "debut": 0.882,
+    "fin": 1.614
+  },
+  {
+    "mot": "apparence,",
+    "debut": 1.683,
+    "fin": 2.252
+  },
+  {
+    "mot": "validation.",
+    "debut": 2.322,
+    "fin": 2.949
+  }
+]

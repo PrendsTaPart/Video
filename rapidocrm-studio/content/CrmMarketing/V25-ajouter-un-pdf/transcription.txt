@@ -1,0 +1,15 @@
+Le tarif du client est dans un mail de mars. Ou dans un dossier partagé. Ou sur le bureau de quelqu'un. Il peut être sur sa fiche.
+
+On part de la fiche d'une entreprise, et on ressort avec un document attaché. Deux champs seulement : un nom, un fichier. Le nom qu'on donne remplace celui du fichier.
+
+Panneau Documentation : ajouter un PDF.
+
+Le nom d'abord. C'est lui qu'on relira dans la fiche, alors autant qu'il dise ce que le fichier contient.
+
+Parcourir, puis Ajouter. C'est ce bouton-là qui attache le document.
+
+Retour à la fiche : le document y est rangé, avec le reste du dossier client.
+
+Une fiche client contient plus que ses documents. Pour la relire d'un coup, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Un document nommé et rangé sur la fiche, c'est un mail qu'on ne rouvrira jamais.

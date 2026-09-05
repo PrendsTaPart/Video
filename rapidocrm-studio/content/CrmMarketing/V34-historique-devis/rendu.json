@@ -1,0 +1,80 @@
+{
+  "duree": 61.733333333333334,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V34-historique-devis/out/master-16x9.mp4",
+      "octets": 9921039
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V34-historique-devis/out/master-9x16.mp4",
+      "octets": 7768679
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.866666666666667
+    },
+    {
+      "nom": "titre",
+      "debut": 9.866666666666667,
+      "fin": 20.933333333333334
+    },
+    {
+      "nom": "demo",
+      "debut": 20.933333333333334,
+      "fin": 42.3
+    },
+    {
+      "nom": "claude",
+      "debut": 42.3,
+      "fin": 55.733333333333334
+    },
+    {
+      "nom": "punchline",
+      "debut": 55.733333333333334,
+      "fin": 61.733333333333334
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Le client rappelle pour accepter un devis de juillet. Vous, vous ne savez plus s'il est encore valable."
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Historique devis"
+    },
+    {
+      "timecode": "00:20",
+      "titre": "Ouvrir l'historique des devis"
+    },
+    {
+      "timecode": "00:32",
+      "titre": "Lire le tableau des devis"
+    },
+    {
+      "timecode": "00:37",
+      "titre": "Ouvrir un devis"
+    },
+    {
+      "timecode": "00:39",
+      "titre": "Lire l'alerte de période de signature"
+    },
+    {
+      "timecode": "00:42",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:55",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

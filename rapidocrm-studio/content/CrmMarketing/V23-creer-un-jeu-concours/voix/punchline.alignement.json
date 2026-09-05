@@ -1,0 +1,87 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "modèle,",
+    "debut": 0.186,
+    "fin": 0.697
+  },
+  {
+    "mot": "une",
+    "debut": 0.731,
+    "fin": 0.917
+  },
+  {
+    "mot": "image,",
+    "debut": 0.94,
+    "fin": 1.312
+  },
+  {
+    "mot": "trois",
+    "debut": 1.37,
+    "fin": 1.614
+  },
+  {
+    "mot": "lots",
+    "debut": 1.637,
+    "fin": 1.834
+  },
+  {
+    "mot": ":",
+    "debut": 1.858,
+    "fin": 1.892
+  },
+  {
+    "mot": "l'animation",
+    "debut": 2.067,
+    "fin": 2.705
+  },
+  {
+    "mot": "est",
+    "debut": 2.775,
+    "fin": 2.856
+  },
+  {
+    "mot": "en",
+    "debut": 2.926,
+    "fin": 2.984
+  },
+  {
+    "mot": "ligne",
+    "debut": 3.007,
+    "fin": 3.204
+  },
+  {
+    "mot": "avant",
+    "debut": 3.251,
+    "fin": 3.471
+  },
+  {
+    "mot": "la",
+    "debut": 3.495,
+    "fin": 3.553
+  },
+  {
+    "mot": "fin",
+    "debut": 3.622,
+    "fin": 3.762
+  },
+  {
+    "mot": "de",
+    "debut": 3.785,
+    "fin": 3.831
+  },
+  {
+    "mot": "la",
+    "debut": 3.866,
+    "fin": 3.936
+  },
+  {
+    "mot": "pause.",
+    "debut": 4.005,
+    "fin": 4.377
+  }
+]

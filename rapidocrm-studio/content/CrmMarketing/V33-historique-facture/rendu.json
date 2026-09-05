@@ -1,0 +1,82 @@
+{
+  "duree": 53.96666666666667,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V33-historique-facture/out/master-16x9.mp4",
+      "octets": 6850750
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V33-historique-facture/out/master-9x16.mp4",
+      "octets": 6215026
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.633333333333333
+    },
+    {
+      "nom": "titre",
+      "debut": 9.633333333333333,
+      "fin": 19.6
+    },
+    {
+      "nom": "demo",
+      "debut": 19.6,
+      "fin": 34.733333333333334
+    },
+    {
+      "nom": "claude",
+      "debut": 34.733333333333334,
+      "fin": 47.833333333333336
+    },
+    {
+      "nom": "punchline",
+      "debut": 47.833333333333336,
+      "fin": 53.96666666666667
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "« Où en est mon compte ? » Le client demande, et vous ouvrez trois onglets."
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Historique facture"
+    },
+    {
+      "timecode": "00:19",
+      "titre": "Ouvrir l'historique des factures"
+    },
+    {
+      "timecode": "00:25",
+      "titre": "Lire les colonnes du tableau"
+    },
+    {
+      "timecode": "00:29",
+      "titre": "Ouvrir une facture"
+    },
+    {
+      "timecode": "00:32",
+      "titre": "Lire la facture et la télécharger"
+    },
+    {
+      "timecode": "00:34",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:47",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 54s, hors de la fenêtre 55–170s."
+  ]
+}

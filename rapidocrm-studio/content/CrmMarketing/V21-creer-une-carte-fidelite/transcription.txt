@@ -1,0 +1,17 @@
+Une carte de fidélité, d'habitude, ça passe par un imprimeur, un graphiste, et trois allers-retours. Ici, trois écrans suffisent.
+
+On part de l'assistant de carte de fidélité, et on ressort avec une carte enregistrée. Trois étapes : la taille, le modèle, la relecture. La barre du haut dit toujours où on en est.
+
+L'assistant s'ouvre sur sa première étape : la taille du template.
+
+Trois formats, avec leurs millimètres. Le standard est celui d'une carte bancaire.
+
+Puis le modèle. Voir l'agrandit, Choisir le retient.
+
+Le récapitulatif reprend tout. Chaque ligne reste modifiable.
+
+Et la page des programmes compte clients et points.
+
+Une carte, ce sont des clients et des points. Pour en avoir le compte, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Trois écrans, une carte : la fidélité n'attend plus l'imprimeur.

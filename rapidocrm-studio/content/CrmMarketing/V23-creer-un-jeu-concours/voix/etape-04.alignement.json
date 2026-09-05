@@ -1,0 +1,117 @@
+[
+  {
+    "mot": "L'écran",
+    "debut": 0,
+    "fin": 0.337
+  },
+  {
+    "mot": "se",
+    "debut": 0.395,
+    "fin": 0.488
+  },
+  {
+    "mot": "coupe",
+    "debut": 0.546,
+    "fin": 0.755
+  },
+  {
+    "mot": "en",
+    "debut": 0.778,
+    "fin": 0.824
+  },
+  {
+    "mot": "deux",
+    "debut": 0.871,
+    "fin": 1.01
+  },
+  {
+    "mot": ":",
+    "debut": 1.057,
+    "fin": 1.103
+  },
+  {
+    "mot": "ce",
+    "debut": 1.277,
+    "fin": 1.347
+  },
+  {
+    "mot": "qu'on",
+    "debut": 1.382,
+    "fin": 1.498
+  },
+  {
+    "mot": "règle",
+    "debut": 1.556,
+    "fin": 1.788
+  },
+  {
+    "mot": "à",
+    "debut": 1.846,
+    "fin": 1.904
+  },
+  {
+    "mot": "gauche,",
+    "debut": 1.997,
+    "fin": 2.276
+  },
+  {
+    "mot": "ce",
+    "debut": 2.299,
+    "fin": 2.368
+  },
+  {
+    "mot": "que",
+    "debut": 2.403,
+    "fin": 2.473
+  },
+  {
+    "mot": "le",
+    "debut": 2.508,
+    "fin": 2.577
+  },
+  {
+    "mot": "client",
+    "debut": 2.612,
+    "fin": 2.856
+  },
+  {
+    "mot": "verra",
+    "debut": 2.879,
+    "fin": 3.065
+  },
+  {
+    "mot": "à",
+    "debut": 3.1,
+    "fin": 3.135
+  },
+  {
+    "mot": "droite.",
+    "debut": 3.181,
+    "fin": 3.506
+  },
+  {
+    "mot": "Image,",
+    "debut": 3.576,
+    "fin": 4.11
+  },
+  {
+    "mot": "texte,",
+    "debut": 4.238,
+    "fin": 4.609
+  },
+  {
+    "mot": "et",
+    "debut": 4.667,
+    "fin": 4.772
+  },
+  {
+    "mot": "l'aperçu",
+    "debut": 4.818,
+    "fin": 5.236
+  },
+  {
+    "mot": "suit.",
+    "debut": 5.283,
+    "fin": 5.596
+  }
+]

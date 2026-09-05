@@ -1,0 +1,822 @@
+{
+  "duree_totale": 52.92,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 7.92,
+      "texte": "Un contrat envoyé en mai, une question sur sa durée en septembre. Où est le document ? Dans l'historique du client, à une ligne de là.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "contrat",
+          "debut": 0.174,
+          "fin": 0.604
+        },
+        {
+          "mot": "envoyé",
+          "debut": 0.65,
+          "fin": 1.068
+        },
+        {
+          "mot": "en",
+          "debut": 1.091,
+          "fin": 1.184
+        },
+        {
+          "mot": "mai,",
+          "debut": 1.242,
+          "fin": 1.498
+        },
+        {
+          "mot": "une",
+          "debut": 1.544,
+          "fin": 1.695
+        },
+        {
+          "mot": "question",
+          "debut": 1.741,
+          "fin": 2.055
+        },
+        {
+          "mot": "sur",
+          "debut": 2.101,
+          "fin": 2.218
+        },
+        {
+          "mot": "sa",
+          "debut": 2.252,
+          "fin": 2.357
+        },
+        {
+          "mot": "durée",
+          "debut": 2.415,
+          "fin": 2.694
+        },
+        {
+          "mot": "en",
+          "debut": 2.74,
+          "fin": 2.821
+        },
+        {
+          "mot": "septembre.",
+          "debut": 2.879,
+          "fin": 3.437
+        },
+        {
+          "mot": "Où",
+          "debut": 3.611,
+          "fin": 3.727
+        },
+        {
+          "mot": "est",
+          "debut": 3.785,
+          "fin": 3.878
+        },
+        {
+          "mot": "le",
+          "debut": 3.913,
+          "fin": 3.971
+        },
+        {
+          "mot": "document",
+          "debut": 4.017,
+          "fin": 4.4
+        },
+        {
+          "mot": "?",
+          "debut": 4.447,
+          "fin": 4.481
+        },
+        {
+          "mot": "Dans",
+          "debut": 4.656,
+          "fin": 4.807
+        },
+        {
+          "mot": "l'historique",
+          "debut": 4.83,
+          "fin": 5.306
+        },
+        {
+          "mot": "du",
+          "debut": 5.329,
+          "fin": 5.41
+        },
+        {
+          "mot": "client,",
+          "debut": 5.457,
+          "fin": 5.956
+        },
+        {
+          "mot": "à",
+          "debut": 6.084,
+          "fin": 6.13
+        },
+        {
+          "mot": "une",
+          "debut": 6.223,
+          "fin": 6.316
+        },
+        {
+          "mot": "ligne",
+          "debut": 6.339,
+          "fin": 6.502
+        },
+        {
+          "mot": "de",
+          "debut": 6.525,
+          "fin": 6.606
+        },
+        {
+          "mot": "là.",
+          "debut": 6.664,
+          "fin": 6.943
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 7.92,
+      "duree": 10.704,
+      "texte": "On part de la page Historique, et on ressort avec le contrat ouvert. Le tableau donne le destinataire, les dates et le statut ; le menu de la ligne ouvre le document.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.128
+        },
+        {
+          "mot": "part",
+          "debut": 0.174,
+          "fin": 0.337
+        },
+        {
+          "mot": "de",
+          "debut": 0.372,
+          "fin": 0.43
+        },
+        {
+          "mot": "la",
+          "debut": 0.464,
+          "fin": 0.522
+        },
+        {
+          "mot": "page",
+          "debut": 0.58,
+          "fin": 0.789
+        },
+        {
+          "mot": "Historique,",
+          "debut": 0.813,
+          "fin": 1.405
+        },
+        {
+          "mot": "et",
+          "debut": 1.44,
+          "fin": 1.567
+        },
+        {
+          "mot": "on",
+          "debut": 1.614,
+          "fin": 1.66
+        },
+        {
+          "mot": "ressort",
+          "debut": 1.707,
+          "fin": 2.032
+        },
+        {
+          "mot": "avec",
+          "debut": 2.055,
+          "fin": 2.218
+        },
+        {
+          "mot": "le",
+          "debut": 2.276,
+          "fin": 2.322
+        },
+        {
+          "mot": "contrat",
+          "debut": 2.368,
+          "fin": 2.659
+        },
+        {
+          "mot": "ouvert.",
+          "debut": 2.682,
+          "fin": 3.123
+        },
+        {
+          "mot": "Le",
+          "debut": 3.402,
+          "fin": 3.529
+        },
+        {
+          "mot": "tableau",
+          "debut": 3.576,
+          "fin": 3.901
+        },
+        {
+          "mot": "donne",
+          "debut": 3.936,
+          "fin": 4.145
+        },
+        {
+          "mot": "le",
+          "debut": 4.168,
+          "fin": 4.249
+        },
+        {
+          "mot": "destinataire,",
+          "debut": 4.307,
+          "fin": 5.097
+        },
+        {
+          "mot": "les",
+          "debut": 5.306,
+          "fin": 5.422
+        },
+        {
+          "mot": "dates",
+          "debut": 5.457,
+          "fin": 5.77
+        },
+        {
+          "mot": "et",
+          "debut": 5.944,
+          "fin": 6.107
+        },
+        {
+          "mot": "le",
+          "debut": 6.142,
+          "fin": 6.211
+        },
+        {
+          "mot": "statut",
+          "debut": 6.246,
+          "fin": 6.757
+        },
+        {
+          "mot": ";",
+          "debut": 6.792,
+          "fin": 6.827
+        },
+        {
+          "mot": "le",
+          "debut": 7.21,
+          "fin": 7.303
+        },
+        {
+          "mot": "menu",
+          "debut": 7.349,
+          "fin": 7.535
+        },
+        {
+          "mot": "de",
+          "debut": 7.581,
+          "fin": 7.651
+        },
+        {
+          "mot": "la",
+          "debut": 7.686,
+          "fin": 7.744
+        },
+        {
+          "mot": "ligne",
+          "debut": 7.802,
+          "fin": 8.046
+        },
+        {
+          "mot": "ouvre",
+          "debut": 8.115,
+          "fin": 8.394
+        },
+        {
+          "mot": "le",
+          "debut": 8.417,
+          "fin": 8.487
+        },
+        {
+          "mot": "document.",
+          "debut": 8.522,
+          "fin": 9.021
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 18.624000000000002,
+      "duree": 4.656,
+      "texte": "Deuxième rangée de la page Historique : les contrats. On consulte.",
+      "mots": [
+        {
+          "mot": "Deuxième",
+          "debut": 0,
+          "fin": 0.418
+        },
+        {
+          "mot": "rangée",
+          "debut": 0.453,
+          "fin": 0.685
+        },
+        {
+          "mot": "de",
+          "debut": 0.72,
+          "fin": 0.778
+        },
+        {
+          "mot": "la",
+          "debut": 0.824,
+          "fin": 0.894
+        },
+        {
+          "mot": "page",
+          "debut": 0.952,
+          "fin": 1.3
+        },
+        {
+          "mot": "Historique",
+          "debut": 1.358,
+          "fin": 1.95
+        },
+        {
+          "mot": ":",
+          "debut": 1.997,
+          "fin": 2.032
+        },
+        {
+          "mot": "les",
+          "debut": 2.206,
+          "fin": 2.31
+        },
+        {
+          "mot": "contrats.",
+          "debut": 2.345,
+          "fin": 2.798
+        },
+        {
+          "mot": "On",
+          "debut": 2.972,
+          "fin": 3.088
+        },
+        {
+          "mot": "consulte.",
+          "debut": 3.123,
+          "fin": 3.68
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 23.28,
+      "duree": 3.408,
+      "texte": "Destinataire, dates, statut : tout est là.",
+      "mots": [
+        {
+          "mot": "Destinataire,",
+          "debut": 0,
+          "fin": 0.778
+        },
+        {
+          "mot": "dates,",
+          "debut": 0.813,
+          "fin": 1.08
+        },
+        {
+          "mot": "statut",
+          "debut": 1.196,
+          "fin": 1.602
+        },
+        {
+          "mot": ":",
+          "debut": 1.637,
+          "fin": 1.66
+        },
+        {
+          "mot": "tout",
+          "debut": 1.834,
+          "fin": 2.032
+        },
+        {
+          "mot": "est",
+          "debut": 2.078,
+          "fin": 2.148
+        },
+        {
+          "mot": "là.",
+          "debut": 2.171,
+          "fin": 2.368
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 26.688000000000002,
+      "duree": 2.112,
+      "texte": "Le menu de la ligne l'ouvre.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "menu",
+          "debut": 0.209,
+          "fin": 0.406
+        },
+        {
+          "mot": "de",
+          "debut": 0.441,
+          "fin": 0.499
+        },
+        {
+          "mot": "la",
+          "debut": 0.546,
+          "fin": 0.604
+        },
+        {
+          "mot": "ligne",
+          "debut": 0.65,
+          "fin": 0.813
+        },
+        {
+          "mot": "l'ouvre.",
+          "debut": 0.848,
+          "fin": 1.173
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 28.800000000000004,
+      "duree": 5.184,
+      "texte": "Le document s'ouvre dans un onglet, avec ses pages en vignettes sur le côté.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "document",
+          "debut": 0.186,
+          "fin": 0.557
+        },
+        {
+          "mot": "s'ouvre",
+          "debut": 0.604,
+          "fin": 0.882
+        },
+        {
+          "mot": "dans",
+          "debut": 0.906,
+          "fin": 1.045
+        },
+        {
+          "mot": "un",
+          "debut": 1.115,
+          "fin": 1.161
+        },
+        {
+          "mot": "onglet,",
+          "debut": 1.231,
+          "fin": 1.753
+        },
+        {
+          "mot": "avec",
+          "debut": 2.032,
+          "fin": 2.276
+        },
+        {
+          "mot": "ses",
+          "debut": 2.31,
+          "fin": 2.426
+        },
+        {
+          "mot": "pages",
+          "debut": 2.461,
+          "fin": 2.763
+        },
+        {
+          "mot": "en",
+          "debut": 2.798,
+          "fin": 2.868
+        },
+        {
+          "mot": "vignettes",
+          "debut": 2.914,
+          "fin": 3.355
+        },
+        {
+          "mot": "sur",
+          "debut": 3.564,
+          "fin": 3.738
+        },
+        {
+          "mot": "le",
+          "debut": 3.762,
+          "fin": 3.82
+        },
+        {
+          "mot": "côté.",
+          "debut": 3.855,
+          "fin": 4.226
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 33.984,
+      "duree": 13.296,
+      "texte": "Un contrat envoyé n'est pas signé. Pour repérer ceux qui traînent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "contrat",
+          "debut": 0.209,
+          "fin": 0.534
+        },
+        {
+          "mot": "envoyé",
+          "debut": 0.569,
+          "fin": 1.01
+        },
+        {
+          "mot": "n'est",
+          "debut": 1.161,
+          "fin": 1.335
+        },
+        {
+          "mot": "pas",
+          "debut": 1.382,
+          "fin": 1.567
+        },
+        {
+          "mot": "signé.",
+          "debut": 1.591,
+          "fin": 2.078
+        },
+        {
+          "mot": "Pour",
+          "debut": 2.229,
+          "fin": 2.392
+        },
+        {
+          "mot": "repérer",
+          "debut": 2.438,
+          "fin": 2.798
+        },
+        {
+          "mot": "ceux",
+          "debut": 2.844,
+          "fin": 2.984
+        },
+        {
+          "mot": "qui",
+          "debut": 3.019,
+          "fin": 3.123
+        },
+        {
+          "mot": "traînent,",
+          "debut": 3.181,
+          "fin": 3.634
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 3.878,
+          "fin": 4.725
+        },
+        {
+          "mot": "parle",
+          "debut": 4.807,
+          "fin": 5.016
+        },
+        {
+          "mot": "à",
+          "debut": 5.039,
+          "fin": 5.062
+        },
+        {
+          "mot": "Claude",
+          "debut": 5.12,
+          "fin": 5.492
+        },
+        {
+          "mot": ":",
+          "debut": 5.55,
+          "fin": 5.596
+        },
+        {
+          "mot": "vous",
+          "debut": 5.77,
+          "fin": 5.921
+        },
+        {
+          "mot": "demandez",
+          "debut": 5.956,
+          "fin": 6.293
+        },
+        {
+          "mot": "en",
+          "debut": 6.316,
+          "fin": 6.362
+        },
+        {
+          "mot": "français,",
+          "debut": 6.409,
+          "fin": 7.036
+        },
+        {
+          "mot": "il",
+          "debut": 7.279,
+          "fin": 7.419
+        },
+        {
+          "mot": "lit",
+          "debut": 7.477,
+          "fin": 7.605
+        },
+        {
+          "mot": "vos",
+          "debut": 7.639,
+          "fin": 7.779
+        },
+        {
+          "mot": "données",
+          "debut": 7.802,
+          "fin": 8.243
+        },
+        {
+          "mot": "et",
+          "debut": 8.417,
+          "fin": 8.557
+        },
+        {
+          "mot": "répond.",
+          "debut": 8.603,
+          "fin": 9.033
+        },
+        {
+          "mot": "Copiez",
+          "debut": 9.416,
+          "fin": 9.776
+        },
+        {
+          "mot": "ce",
+          "debut": 9.799,
+          "fin": 9.903
+        },
+        {
+          "mot": "prompt,",
+          "debut": 9.95,
+          "fin": 10.449
+        },
+        {
+          "mot": "remplacez",
+          "debut": 10.658,
+          "fin": 11.18
+        },
+        {
+          "mot": "ce",
+          "debut": 11.215,
+          "fin": 11.308
+        },
+        {
+          "mot": "qui",
+          "debut": 11.366,
+          "fin": 11.459
+        },
+        {
+          "mot": "est",
+          "debut": 11.494,
+          "fin": 11.575
+        },
+        {
+          "mot": "entre",
+          "debut": 11.645,
+          "fin": 11.842
+        },
+        {
+          "mot": "crochets.",
+          "debut": 11.877,
+          "fin": 12.353
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 47.28,
+      "duree": 5.64,
+      "texte": "Le statut au tableau, la clause dans le document : deux clics séparent la question de la réponse.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "statut",
+          "debut": 0.186,
+          "fin": 0.522
+        },
+        {
+          "mot": "au",
+          "debut": 0.557,
+          "fin": 0.604
+        },
+        {
+          "mot": "tableau,",
+          "debut": 0.65,
+          "fin": 1.057
+        },
+        {
+          "mot": "la",
+          "debut": 1.138,
+          "fin": 1.219
+        },
+        {
+          "mot": "clause",
+          "debut": 1.277,
+          "fin": 1.498
+        },
+        {
+          "mot": "dans",
+          "debut": 1.521,
+          "fin": 1.637
+        },
+        {
+          "mot": "le",
+          "debut": 1.66,
+          "fin": 1.718
+        },
+        {
+          "mot": "document",
+          "debut": 1.765,
+          "fin": 2.159
+        },
+        {
+          "mot": ":",
+          "debut": 2.206,
+          "fin": 2.229
+        },
+        {
+          "mot": "deux",
+          "debut": 2.345,
+          "fin": 2.485
+        },
+        {
+          "mot": "clics",
+          "debut": 2.508,
+          "fin": 2.705
+        },
+        {
+          "mot": "séparent",
+          "debut": 2.728,
+          "fin": 3.077
+        },
+        {
+          "mot": "la",
+          "debut": 3.1,
+          "fin": 3.17
+        },
+        {
+          "mot": "question",
+          "debut": 3.228,
+          "fin": 3.553
+        },
+        {
+          "mot": "de",
+          "debut": 3.587,
+          "fin": 3.646
+        },
+        {
+          "mot": "la",
+          "debut": 3.68,
+          "fin": 3.738
+        },
+        {
+          "mot": "réponse.",
+          "debut": 3.762,
+          "fin": 4.214
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V27-historique-de-l-entreprise/voix/hook.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V27-historique-de-l-entreprise/voix/intro.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V27-historique-de-l-entreprise/voix/etape-01.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V27-historique-de-l-entreprise/voix/etape-02.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V27-historique-de-l-entreprise/voix/etape-03.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V27-historique-de-l-entreprise/voix/etape-04.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V27-historique-de-l-entreprise/voix/claude.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V27-historique-de-l-entreprise/voix/punchline.mp3'

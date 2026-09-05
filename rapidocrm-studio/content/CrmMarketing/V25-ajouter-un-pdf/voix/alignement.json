@@ -1,0 +1,877 @@
+{
+  "duree_totale": 54.431999999999995,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 8.232,
+      "texte": "Le tarif du client est dans un mail de mars. Ou dans un dossier partagé. Ou sur le bureau de quelqu'un. Il peut être sur sa fiche.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "tarif",
+          "debut": 0.221,
+          "fin": 0.464
+        },
+        {
+          "mot": "du",
+          "debut": 0.511,
+          "fin": 0.604
+        },
+        {
+          "mot": "client",
+          "debut": 0.639,
+          "fin": 0.952
+        },
+        {
+          "mot": "est",
+          "debut": 1.01,
+          "fin": 1.091
+        },
+        {
+          "mot": "dans",
+          "debut": 1.115,
+          "fin": 1.265
+        },
+        {
+          "mot": "un",
+          "debut": 1.335,
+          "fin": 1.382
+        },
+        {
+          "mot": "mail",
+          "debut": 1.416,
+          "fin": 1.579
+        },
+        {
+          "mot": "de",
+          "debut": 1.649,
+          "fin": 1.718
+        },
+        {
+          "mot": "mars.",
+          "debut": 1.776,
+          "fin": 2.276
+        },
+        {
+          "mot": "Ou",
+          "debut": 2.554,
+          "fin": 2.694
+        },
+        {
+          "mot": "dans",
+          "debut": 2.74,
+          "fin": 2.879
+        },
+        {
+          "mot": "un",
+          "debut": 2.937,
+          "fin": 2.984
+        },
+        {
+          "mot": "dossier",
+          "debut": 3.019,
+          "fin": 3.297
+        },
+        {
+          "mot": "partagé.",
+          "debut": 3.332,
+          "fin": 3.982
+        },
+        {
+          "mot": "Ou",
+          "debut": 4.191,
+          "fin": 4.307
+        },
+        {
+          "mot": "sur",
+          "debut": 4.365,
+          "fin": 4.481
+        },
+        {
+          "mot": "le",
+          "debut": 4.505,
+          "fin": 4.551
+        },
+        {
+          "mot": "bureau",
+          "debut": 4.598,
+          "fin": 4.795
+        },
+        {
+          "mot": "de",
+          "debut": 4.83,
+          "fin": 4.876
+        },
+        {
+          "mot": "quelqu'un.",
+          "debut": 4.899,
+          "fin": 5.352
+        },
+        {
+          "mot": "Il",
+          "debut": 5.596,
+          "fin": 5.712
+        },
+        {
+          "mot": "peut",
+          "debut": 5.77,
+          "fin": 5.886
+        },
+        {
+          "mot": "être",
+          "debut": 5.968,
+          "fin": 6.06
+        },
+        {
+          "mot": "sur",
+          "debut": 6.095,
+          "fin": 6.211
+        },
+        {
+          "mot": "sa",
+          "debut": 6.258,
+          "fin": 6.351
+        },
+        {
+          "mot": "fiche.",
+          "debut": 6.42,
+          "fin": 6.838
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 8.232,
+      "duree": 9.576,
+      "texte": "On part de la fiche d'une entreprise, et on ressort avec un document attaché. Deux champs seulement : un nom, un fichier. Le nom qu'on donne remplace celui du fichier.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "part",
+          "debut": 0.174,
+          "fin": 0.313
+        },
+        {
+          "mot": "de",
+          "debut": 0.337,
+          "fin": 0.383
+        },
+        {
+          "mot": "la",
+          "debut": 0.43,
+          "fin": 0.499
+        },
+        {
+          "mot": "fiche",
+          "debut": 0.557,
+          "fin": 0.743
+        },
+        {
+          "mot": "d'une",
+          "debut": 0.766,
+          "fin": 0.906
+        },
+        {
+          "mot": "entreprise,",
+          "debut": 0.929,
+          "fin": 1.463
+        },
+        {
+          "mot": "et",
+          "debut": 1.498,
+          "fin": 1.567
+        },
+        {
+          "mot": "on",
+          "debut": 1.625,
+          "fin": 1.672
+        },
+        {
+          "mot": "ressort",
+          "debut": 1.707,
+          "fin": 2.009
+        },
+        {
+          "mot": "avec",
+          "debut": 2.032,
+          "fin": 2.229
+        },
+        {
+          "mot": "un",
+          "debut": 2.287,
+          "fin": 2.334
+        },
+        {
+          "mot": "document",
+          "debut": 2.403,
+          "fin": 2.798
+        },
+        {
+          "mot": "attaché.",
+          "debut": 2.833,
+          "fin": 3.332
+        },
+        {
+          "mot": "Deux",
+          "debut": 3.413,
+          "fin": 3.587
+        },
+        {
+          "mot": "champs",
+          "debut": 3.611,
+          "fin": 3.808
+        },
+        {
+          "mot": "seulement",
+          "debut": 3.831,
+          "fin": 4.168
+        },
+        {
+          "mot": ":",
+          "debut": 4.214,
+          "fin": 4.238
+        },
+        {
+          "mot": "un",
+          "debut": 4.331,
+          "fin": 4.447
+        },
+        {
+          "mot": "nom,",
+          "debut": 4.493,
+          "fin": 4.737
+        },
+        {
+          "mot": "un",
+          "debut": 4.795,
+          "fin": 4.911
+        },
+        {
+          "mot": "fichier.",
+          "debut": 4.957,
+          "fin": 5.41
+        },
+        {
+          "mot": "Le",
+          "debut": 5.584,
+          "fin": 5.677
+        },
+        {
+          "mot": "nom",
+          "debut": 5.724,
+          "fin": 5.84
+        },
+        {
+          "mot": "qu'on",
+          "debut": 5.875,
+          "fin": 5.991
+        },
+        {
+          "mot": "donne",
+          "debut": 6.037,
+          "fin": 6.223
+        },
+        {
+          "mot": "remplace",
+          "debut": 6.258,
+          "fin": 6.687
+        },
+        {
+          "mot": "celui",
+          "debut": 6.722,
+          "fin": 6.978
+        },
+        {
+          "mot": "du",
+          "debut": 7.012,
+          "fin": 7.082
+        },
+        {
+          "mot": "fichier.",
+          "debut": 7.14,
+          "fin": 7.558
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 17.808,
+      "duree": 3.168,
+      "texte": "Panneau Documentation : ajouter un PDF.",
+      "mots": [
+        {
+          "mot": "Panneau",
+          "debut": 0,
+          "fin": 0.337
+        },
+        {
+          "mot": "Documentation",
+          "debut": 0.383,
+          "fin": 1.091
+        },
+        {
+          "mot": ":",
+          "debut": 1.126,
+          "fin": 1.149
+        },
+        {
+          "mot": "ajouter",
+          "debut": 1.219,
+          "fin": 1.544
+        },
+        {
+          "mot": "un",
+          "debut": 1.567,
+          "fin": 1.614
+        },
+        {
+          "mot": "P.D.F.",
+          "debut": 1.66,
+          "fin": 2.194
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 20.976,
+      "duree": 6,
+      "texte": "Le nom d'abord. C'est lui qu'on relira dans la fiche, alors autant qu'il dise ce que le fichier contient.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "nom",
+          "debut": 0.186,
+          "fin": 0.313
+        },
+        {
+          "mot": "d'abord.",
+          "debut": 0.348,
+          "fin": 0.813
+        },
+        {
+          "mot": "C'est",
+          "debut": 1.138,
+          "fin": 1.324
+        },
+        {
+          "mot": "lui",
+          "debut": 1.347,
+          "fin": 1.509
+        },
+        {
+          "mot": "qu'on",
+          "debut": 1.556,
+          "fin": 1.672
+        },
+        {
+          "mot": "relira",
+          "debut": 1.718,
+          "fin": 1.962
+        },
+        {
+          "mot": "dans",
+          "debut": 2.009,
+          "fin": 2.113
+        },
+        {
+          "mot": "la",
+          "debut": 2.136,
+          "fin": 2.194
+        },
+        {
+          "mot": "fiche,",
+          "debut": 2.264,
+          "fin": 2.624
+        },
+        {
+          "mot": "alors",
+          "debut": 2.717,
+          "fin": 2.949
+        },
+        {
+          "mot": "autant",
+          "debut": 2.972,
+          "fin": 3.379
+        },
+        {
+          "mot": "qu'il",
+          "debut": 3.413,
+          "fin": 3.564
+        },
+        {
+          "mot": "dise",
+          "debut": 3.622,
+          "fin": 3.808
+        },
+        {
+          "mot": "ce",
+          "debut": 3.831,
+          "fin": 3.936
+        },
+        {
+          "mot": "que",
+          "debut": 3.994,
+          "fin": 4.063
+        },
+        {
+          "mot": "le",
+          "debut": 4.098,
+          "fin": 4.168
+        },
+        {
+          "mot": "fichier",
+          "debut": 4.214,
+          "fin": 4.516
+        },
+        {
+          "mot": "contient.",
+          "debut": 4.563,
+          "fin": 4.981
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 26.976,
+      "duree": 4.752,
+      "texte": "Parcourir, puis Ajouter. C'est ce bouton-là qui attache le document.",
+      "mots": [
+        {
+          "mot": "Parcourir,",
+          "debut": 0,
+          "fin": 0.697
+        },
+        {
+          "mot": "puis",
+          "debut": 0.766,
+          "fin": 1.033
+        },
+        {
+          "mot": "Ajouter.",
+          "debut": 1.115,
+          "fin": 1.614
+        },
+        {
+          "mot": "C'est",
+          "debut": 1.672,
+          "fin": 1.939
+        },
+        {
+          "mot": "ce",
+          "debut": 1.974,
+          "fin": 2.171
+        },
+        {
+          "mot": "bouton-là",
+          "debut": 2.252,
+          "fin": 2.74
+        },
+        {
+          "mot": "qui",
+          "debut": 2.798,
+          "fin": 2.914
+        },
+        {
+          "mot": "attache",
+          "debut": 2.961,
+          "fin": 3.228
+        },
+        {
+          "mot": "le",
+          "debut": 3.251,
+          "fin": 3.32
+        },
+        {
+          "mot": "document.",
+          "debut": 3.367,
+          "fin": 3.82
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 31.727999999999998,
+      "duree": 4.608,
+      "texte": "Retour à la fiche : le document y est rangé, avec le reste du dossier client.",
+      "mots": [
+        {
+          "mot": "Retour",
+          "debut": 0,
+          "fin": 0.337
+        },
+        {
+          "mot": "à",
+          "debut": 0.36,
+          "fin": 0.383
+        },
+        {
+          "mot": "la",
+          "debut": 0.43,
+          "fin": 0.499
+        },
+        {
+          "mot": "fiche",
+          "debut": 0.569,
+          "fin": 0.894
+        },
+        {
+          "mot": ":",
+          "debut": 0.94,
+          "fin": 0.964
+        },
+        {
+          "mot": "le",
+          "debut": 1.057,
+          "fin": 1.126
+        },
+        {
+          "mot": "document",
+          "debut": 1.161,
+          "fin": 1.533
+        },
+        {
+          "mot": "y",
+          "debut": 1.567,
+          "fin": 1.591
+        },
+        {
+          "mot": "est",
+          "debut": 1.637,
+          "fin": 1.741
+        },
+        {
+          "mot": "rangé,",
+          "debut": 1.811,
+          "fin": 2.159
+        },
+        {
+          "mot": "avec",
+          "debut": 2.194,
+          "fin": 2.415
+        },
+        {
+          "mot": "le",
+          "debut": 2.473,
+          "fin": 2.531
+        },
+        {
+          "mot": "reste",
+          "debut": 2.589,
+          "fin": 2.833
+        },
+        {
+          "mot": "du",
+          "debut": 2.879,
+          "fin": 2.961
+        },
+        {
+          "mot": "dossier",
+          "debut": 3.007,
+          "fin": 3.286
+        },
+        {
+          "mot": "client.",
+          "debut": 3.32,
+          "fin": 3.669
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 36.336,
+      "duree": 13.248,
+      "texte": "Une fiche client contient plus que ses documents. Pour la relire d'un coup, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Une",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "fiche",
+          "debut": 0.209,
+          "fin": 0.441
+        },
+        {
+          "mot": "client",
+          "debut": 0.464,
+          "fin": 0.789
+        },
+        {
+          "mot": "contient",
+          "debut": 0.824,
+          "fin": 1.207
+        },
+        {
+          "mot": "plus",
+          "debut": 1.324,
+          "fin": 1.602
+        },
+        {
+          "mot": "que",
+          "debut": 1.66,
+          "fin": 1.753
+        },
+        {
+          "mot": "ses",
+          "debut": 1.788,
+          "fin": 1.904
+        },
+        {
+          "mot": "documents.",
+          "debut": 1.927,
+          "fin": 2.45
+        },
+        {
+          "mot": "Pour",
+          "debut": 2.624,
+          "fin": 2.81
+        },
+        {
+          "mot": "la",
+          "debut": 2.833,
+          "fin": 2.879
+        },
+        {
+          "mot": "relire",
+          "debut": 2.914,
+          "fin": 3.146
+        },
+        {
+          "mot": "d'un",
+          "debut": 3.17,
+          "fin": 3.297
+        },
+        {
+          "mot": "coup,",
+          "debut": 3.344,
+          "fin": 3.646
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 3.738,
+          "fin": 4.586
+        },
+        {
+          "mot": "parle",
+          "debut": 4.667,
+          "fin": 4.888
+        },
+        {
+          "mot": "à",
+          "debut": 4.911,
+          "fin": 4.934
+        },
+        {
+          "mot": "Claude",
+          "debut": 5.016,
+          "fin": 5.41
+        },
+        {
+          "mot": ":",
+          "debut": 5.433,
+          "fin": 5.468
+        },
+        {
+          "mot": "vous",
+          "debut": 5.642,
+          "fin": 5.793
+        },
+        {
+          "mot": "demandez",
+          "debut": 5.828,
+          "fin": 6.188
+        },
+        {
+          "mot": "en",
+          "debut": 6.235,
+          "fin": 6.293
+        },
+        {
+          "mot": "français,",
+          "debut": 6.339,
+          "fin": 6.908
+        },
+        {
+          "mot": "il",
+          "debut": 7.187,
+          "fin": 7.338
+        },
+        {
+          "mot": "lit",
+          "debut": 7.43,
+          "fin": 7.581
+        },
+        {
+          "mot": "vos",
+          "debut": 7.605,
+          "fin": 7.732
+        },
+        {
+          "mot": "données",
+          "debut": 7.755,
+          "fin": 8.173
+        },
+        {
+          "mot": "et",
+          "debut": 8.452,
+          "fin": 8.615
+        },
+        {
+          "mot": "répond.",
+          "debut": 8.661,
+          "fin": 9.091
+        },
+        {
+          "mot": "Copiez",
+          "debut": 9.369,
+          "fin": 9.718
+        },
+        {
+          "mot": "ce",
+          "debut": 9.741,
+          "fin": 9.845
+        },
+        {
+          "mot": "prompt,",
+          "debut": 9.892,
+          "fin": 10.356
+        },
+        {
+          "mot": "remplacez",
+          "debut": 10.53,
+          "fin": 11.076
+        },
+        {
+          "mot": "ce",
+          "debut": 11.134,
+          "fin": 11.227
+        },
+        {
+          "mot": "qui",
+          "debut": 11.297,
+          "fin": 11.389
+        },
+        {
+          "mot": "est",
+          "debut": 11.424,
+          "fin": 11.505
+        },
+        {
+          "mot": "entre",
+          "debut": 11.575,
+          "fin": 11.784
+        },
+        {
+          "mot": "crochets.",
+          "debut": 11.819,
+          "fin": 12.318
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 49.583999999999996,
+      "duree": 4.848,
+      "texte": "Un document nommé et rangé sur la fiche, c'est un mail qu'on ne rouvrira jamais.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "document",
+          "debut": 0.186,
+          "fin": 0.569
+        },
+        {
+          "mot": "nommé",
+          "debut": 0.604,
+          "fin": 0.894
+        },
+        {
+          "mot": "et",
+          "debut": 0.929,
+          "fin": 0.998
+        },
+        {
+          "mot": "rangé",
+          "debut": 1.045,
+          "fin": 1.277
+        },
+        {
+          "mot": "sur",
+          "debut": 1.324,
+          "fin": 1.451
+        },
+        {
+          "mot": "la",
+          "debut": 1.474,
+          "fin": 1.533
+        },
+        {
+          "mot": "fiche,",
+          "debut": 1.602,
+          "fin": 1.985
+        },
+        {
+          "mot": "c'est",
+          "debut": 2.055,
+          "fin": 2.241
+        },
+        {
+          "mot": "un",
+          "debut": 2.31,
+          "fin": 2.357
+        },
+        {
+          "mot": "mail",
+          "debut": 2.392,
+          "fin": 2.566
+        },
+        {
+          "mot": "qu'on",
+          "debut": 2.612,
+          "fin": 2.74
+        },
+        {
+          "mot": "ne",
+          "debut": 2.763,
+          "fin": 2.81
+        },
+        {
+          "mot": "rouvrira",
+          "debut": 2.856,
+          "fin": 3.309
+        },
+        {
+          "mot": "jamais.",
+          "debut": 3.46,
+          "fin": 3.855
+        }
+      ]
+    }
+  ]
+}

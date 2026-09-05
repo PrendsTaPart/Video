@@ -1,0 +1,122 @@
+[
+  {
+    "mot": "«",
+    "debut": 0,
+    "fin": 0.081
+  },
+  {
+    "mot": "Je",
+    "debut": 0.104,
+    "fin": 0.186
+  },
+  {
+    "mot": "n'ai",
+    "debut": 0.209,
+    "fin": 0.325
+  },
+  {
+    "mot": "jamais",
+    "debut": 0.372,
+    "fin": 0.65
+  },
+  {
+    "mot": "reçu",
+    "debut": 0.685,
+    "fin": 0.94
+  },
+  {
+    "mot": "votre",
+    "debut": 0.975,
+    "fin": 1.173
+  },
+  {
+    "mot": "devis.",
+    "debut": 1.219,
+    "fin": 1.73
+  },
+  {
+    "mot": "»",
+    "debut": 1.776,
+    "fin": 1.846
+  },
+  {
+    "mot": "Et",
+    "debut": 2.287,
+    "fin": 2.426
+  },
+  {
+    "mot": "vous,",
+    "debut": 2.461,
+    "fin": 2.798
+  },
+  {
+    "mot": "vous",
+    "debut": 3.123,
+    "fin": 3.297
+  },
+  {
+    "mot": "cherchez",
+    "debut": 3.32,
+    "fin": 3.692
+  },
+  {
+    "mot": "dans",
+    "debut": 3.738,
+    "fin": 3.855
+  },
+  {
+    "mot": "vos",
+    "debut": 3.878,
+    "fin": 3.994
+  },
+  {
+    "mot": "envoyés.",
+    "debut": 4.04,
+    "fin": 4.493
+  },
+  {
+    "mot": "Le",
+    "debut": 4.876,
+    "fin": 4.981
+  },
+  {
+    "mot": "journal",
+    "debut": 5.027,
+    "fin": 5.329
+  },
+  {
+    "mot": "des",
+    "debut": 5.387,
+    "fin": 5.515
+  },
+  {
+    "mot": "e-mails",
+    "debut": 5.573,
+    "fin": 5.909
+  },
+  {
+    "mot": "le",
+    "debut": 5.968,
+    "fin": 6.072
+  },
+  {
+    "mot": "retrouve,",
+    "debut": 6.118,
+    "fin": 6.687
+  },
+  {
+    "mot": "avec",
+    "debut": 7.012,
+    "fin": 7.268
+  },
+  {
+    "mot": "son",
+    "debut": 7.303,
+    "fin": 7.407
+  },
+  {
+    "mot": "contenu.",
+    "debut": 7.454,
+    "fin": 7.906
+  }
+]
