@@ -65,7 +65,23 @@ Il n'y a aucune voie pour forcer la sortie depuis le MCP :
 À reprendre à la main depuis /admin/social, ou une fois le worker LinkedIn
 remis en route — le post 833 est prêt et n'attend que ça.
 
-### Tentative par le profil Michael Kebail
+### Diagnostic : c'est la vidéo qui casse, pas LinkedIn
+
+Deux échecs, deux causes différentes :
+
+- **833** (page société, vidéo native) : le job 947 n'a **jamais tourné**.
+  `updated_at` n'a pas bougé depuis la création.
+- **842** (profil Michael Kebail, vidéo native) : le job a tourné à 16:00:04
+  et **a planté** — `errors: Undefined array key "etag"`, `post_urn: null`.
+  RapidoCMS met quand même `statut: 1` : un post marqué publié sans
+  `post_urn` et avec un `errors` renseigné n'est **pas** en ligne.
+
+L'erreur `etag` tombe dans la gestion du média. En passant les posts en
+`post_type: text` avec le lien YouTube — `media_url` devient `null`, tout le
+chemin d'envoi vidéo est court-circuité — les deux sont sortis du premier
+coup.
+
+### Sorti sur LinkedIn, en texte + lien YouTube
 
 Le profil personnel est connecté (`linkedin_profile`, `6Z5izYBhkC`, actif) et
 constitue une seconde voie, indépendante du post 833 de la page société.
@@ -73,13 +89,25 @@ constitue une seconde voie, indépendante du post 833 de la page société.
 n'accepte que les quatre réseaux de base — mais accepte l'identifiant du
 profil sous `social_type: linkedin`.
 
-- brouillon **967**, texte à la première personne (voix du fondateur),
-  vidéo 16:9 ;
-- post **842**, job 957, créneau 17:00 heure plateforme ;
-- rattaché à la campagne 37 (lien 122).
+| Compte | Brouillon | Post | `post_urn` |
+|---|---|---|---|
+| Michael Kebail (profil, `6Z5izYBhkC`) | 968 | **843** | `urn:li:share:7502034902524092417` |
+| FoodEatUp (page, `68807312`) | 969 | **844** | `urn:li:share:7502036659132071936` |
 
-La page société n'a **pas** reçu de second post : 833 garde son job, en
-créer un autre publierait deux fois si le worker repart.
+Les deux sont rattachés à la campagne 37 (liens 123, 124). Textes
+différenciés : première personne (voix du fondateur) sur le profil, voix de
+marque sur la page.
+
+`create_draft_tool` refuse `linkedin_profile` comme `social_type` — il
+n'accepte que les quatre réseaux de base — mais accepte l'identifiant du
+profil sous `social_type: linkedin`.
+
+**Reste à nettoyer, à la main :** les posts vidéo 833 (page) et 842 (profil)
+traînent encore. 842 est déjà marqué `statut 1` et ne repartira pas. 833 est
+toujours à `statut 0` avec son job 947 : si le chemin vidéo est un jour
+réparé et que ce job repart, la page société publierait une seconde fois le
+même clip. `cancel_schedules_post` étant verrouillé côté serveur, la
+suppression est à faire depuis /admin/social.
 
 Les trois sont rattachés à la campagne 37 (liens 119, 120, 121).
 
