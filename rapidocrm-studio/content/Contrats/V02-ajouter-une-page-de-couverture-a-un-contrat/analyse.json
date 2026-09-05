@@ -1,0 +1,117 @@
+{
+  "duree": 26.0,
+  "resolution": [1920, 882],
+  "fps": 25,
+  "ecrans": [
+    { "t": 0.0, "nom": "Contrat — liste des templates de contrat" },
+    { "t": 4.84, "nom": "Modale « Choisissez votre couverture »" },
+    { "t": 13.92, "nom": "Contrat — confirmation « contrat modifié avec succès »" },
+    { "t": 19.5, "nom": "Contrat — le document ouvert sur sa page de couverture" }
+  ],
+  "actions": [
+    {
+      "t": 1.5,
+      "type": "ouverture",
+      "cible": "Page Contrat, liste des templates",
+      "zone": { "x": 0.23, "y": 0.40, "w": 0.75, "h": 0.55 },
+      "texte_visible": "Chercher un template · ajouter une template de contrat · Contrat de prestation web · Accord de confidentialité (nda) · Contrat de maintenance"
+    },
+    {
+      "t": 4.84,
+      "type": "clic",
+      "cible": "Bouton + sur la ligne d'un template",
+      "zone": { "x": 0.88, "y": 0.44, "w": 0.05, "h": 0.10 },
+      "texte_visible": "+"
+    },
+    {
+      "t": 6.5,
+      "type": "ouverture",
+      "cible": "Modale Choisissez votre couverture",
+      "zone": { "x": 0.22, "y": 0.02, "w": 0.43, "h": 0.95 },
+      "texte_visible": "Choisissez votre couverture · Chercher un template · Page de couverture — contrat · Carte visite le petit paris · Newsletter — bienvenue · Site vitrine — moderne · Aucun"
+    },
+    {
+      "t": 11.0,
+      "type": "selection",
+      "cible": "Vignette « Page de couverture — contrat »",
+      "zone": { "x": 0.24, "y": 0.30, "w": 0.18, "h": 0.25 },
+      "texte_visible": "Page de couverture — contrat"
+    },
+    {
+      "t": 13.2,
+      "type": "validation",
+      "cible": "Bouton confirmer",
+      "zone": { "x": 0.31, "y": 0.79, "w": 0.11, "h": 0.10 },
+      "texte_visible": "confirmer · visiter le marketplace"
+    },
+    {
+      "t": 13.92,
+      "type": "validation",
+      "cible": "Bandeau de confirmation",
+      "zone": { "x": 0.74, "y": 0.03, "w": 0.25, "h": 0.10 },
+      "texte_visible": "contrat modifié avec succès"
+    },
+    {
+      "t": 21.0,
+      "type": "ouverture",
+      "cible": "Le contrat ouvert sur sa page de couverture",
+      "zone": { "x": 0.16, "y": 0.15, "w": 0.68, "h": 0.80 },
+      "texte_visible": "Document contractuel · Contrat · Entre le prestataire et le client · Prestataire · Client · À personnaliser dans l'éditeur"
+    },
+    {
+      "t": 25.0,
+      "type": "defilement",
+      "cible": "Corps du contrat sous la couverture",
+      "zone": { "x": 0.05, "y": 0.10, "w": 0.90, "h": 0.85 },
+      "texte_visible": "Article 1 - objet · Délais · La livraison sous 30 jours ouvrés après la validation des maquettes"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir la liste des templates de contrat",
+      "debut": 0.5,
+      "fin": 4.8,
+      "actions": [0],
+      "zone_focus": { "x": 0.23, "y": 0.40, "w": 0.75, "h": 0.55 }
+    },
+    {
+      "numero": 2,
+      "titre": "Ouvrir le choix de la couverture",
+      "debut": 4.8,
+      "fin": 9.5,
+      "actions": [1, 2],
+      "zone_focus": { "x": 0.22, "y": 0.02, "w": 0.43, "h": 0.95 }
+    },
+    {
+      "numero": 3,
+      "titre": "Choisir la couverture et confirmer",
+      "debut": 9.5,
+      "fin": 15.5,
+      "actions": [3, 4, 5],
+      "zone_focus": { "x": 0.22, "y": 0.20, "w": 0.43, "h": 0.75 }
+    },
+    {
+      "numero": 4,
+      "titre": "Voir la couverture en tête du contrat",
+      "debut": 19.5,
+      "fin": 26.0,
+      "actions": [6, 7],
+      "zone_focus": { "x": 0.16, "y": 0.15, "w": 0.68, "h": 0.80 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 26.0,
+      "zone": { "x": 0.685, "y": 0.02, "w": 0.31, "h": 0.115 },
+      "raison": "Nom et photo du titulaire du compte (Dupont lina) et solde de crédits affiché dans la barre du haut"
+    },
+    {
+      "t": 19.0,
+      "fin": 26.0,
+      "zone": { "x": 0.19, "y": 0.76, "w": 0.28, "h": 0.24 },
+      "raison": "Raison sociale et adresse postale du prestataire imprimées sur la page de couverture"
+    }
+  ]
+}

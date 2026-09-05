@@ -1,0 +1,82 @@
+{
+  "duree": 50.43333333333333,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Contrats/V03-historique-des-templates-de-contrat/out/master-16x9.mp4",
+      "octets": 9111481
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Contrats/V03-historique-des-templates-de-contrat/out/master-9x16.mp4",
+      "octets": 6266710
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 8.033333333333333
+    },
+    {
+      "nom": "titre",
+      "debut": 8.033333333333333,
+      "fin": 19.933333333333334
+    },
+    {
+      "nom": "demo",
+      "debut": 19.933333333333334,
+      "fin": 30.233333333333334
+    },
+    {
+      "nom": "claude",
+      "debut": 30.233333333333334,
+      "fin": 46.3
+    },
+    {
+      "nom": "punchline",
+      "debut": 46.3,
+      "fin": 50.43333333333333
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Un client vous demande où en est son contrat. Vous cherchez dans vos mails."
+    },
+    {
+      "timecode": "00:08",
+      "titre": "Historique des templates de contrat"
+    },
+    {
+      "timecode": "00:19",
+      "titre": "Lire les trois compteurs"
+    },
+    {
+      "timecode": "00:22",
+      "titre": "Retrouver un contrat dans l'historique"
+    },
+    {
+      "timecode": "00:24",
+      "titre": "Ouvrir le contrat généré"
+    },
+    {
+      "timecode": "00:28",
+      "titre": "Revenir à la liste"
+    },
+    {
+      "timecode": "00:30",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:46",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 50s, hors de la fenêtre 80–170s."
+  ]
+}

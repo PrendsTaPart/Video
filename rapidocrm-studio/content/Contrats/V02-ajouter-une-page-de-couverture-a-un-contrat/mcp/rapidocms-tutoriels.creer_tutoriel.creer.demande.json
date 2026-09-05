@@ -1,0 +1,39 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "rapido_ac_8d2a14623245e47f0da39b8606e3a055952d5773bf699f27",
+    "slug": "04-ajouter-une-page-de-couverture-a-un-contrat",
+    "module": "04-contrat",
+    "numero": 2,
+    "titre": "Ajouter une page de couverture à un contrat",
+    "titre_court": "Page de couverture",
+    "accroche": "Une vraie première page, choisie en trois clics.",
+    "explication": "On part de la liste de vos contrats types, et on ressort avec une vraie page de garde. Vous la choisissez dans une galerie d'images, comme un fond d'écran. Aucun éditeur à ouvrir.\n\n1. Ouvrir la liste des contrats types — Vos contrats types. Le bouton plus.\n2. Ouvrir le choix de la couverture — La galerie s'ouvre. Chaque image, une couverture.\n3. Choisir la couverture et confirmer — On prend la première, on confirme. C'est enregistré.\n4. Voir la couverture en tête du contrat — Et le contrat s'ouvre dessus. Prestataire, client, tout y est.\n\nVos couvertures sont posées. Pour savoir quels contrats types vous avez sous la main, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.",
+    "etapes": [
+      {
+        "titre": "Ouvrir la liste des contrats types",
+        "texte": "Vos contrats types. Le bouton plus."
+      },
+      {
+        "titre": "Ouvrir le choix de la couverture",
+        "texte": "La galerie s'ouvre. Chaque image, une couverture."
+      },
+      {
+        "titre": "Choisir la couverture et confirmer",
+        "texte": "On prend la première, on confirme. C'est enregistré."
+      },
+      {
+        "titre": "Voir la couverture en tête du contrat",
+        "texte": "Et le contrat s'ouvre dessus. Prestataire, client, tout y est."
+      }
+    ],
+    "a_quoi_ca_sert": "Mettre une vraie première page devant un contrat, choisie dans une galerie, sans ouvrir d'éditeur. Le contrat s'ouvre ensuite sur cette page au lieu de commencer sec sur l'article 1.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir au moins un template de contrat dans la liste"
+    ]
+  },
+  "demande_le": "2026-09-04T08:07:47.371Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}
