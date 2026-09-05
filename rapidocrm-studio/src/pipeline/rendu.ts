@@ -36,7 +36,10 @@ export interface OptionsRendu {
 export const navigateur = (): string | null =>
   process.env.REMOTION_BROWSER_EXECUTABLE ?? null;
 
-const DUREE_MIN = 80;
+// Même fenêtre que la QA et que le script : le format court a été recalé à
+// 55 s, et ce plancher-ci était resté à 80. Un tutoriel de 64 s partait donc
+// avec un avertissement alors qu'il tenait la règle de la série.
+const DUREE_MIN = 55;
 const DUREE_MAX = 170;
 
 /** Étape 5 — rendu vidéo. */
