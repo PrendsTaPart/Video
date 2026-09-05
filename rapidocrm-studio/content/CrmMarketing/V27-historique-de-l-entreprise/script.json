@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 27,
+    "titre": "Historique de l'entreprise",
+    "titre_court": "Historique client",
+    "slug": "06-historique-de-l-entreprise"
+  },
+  "hook": {
+    "texte": "Un client rappelle après six semaines. Qui lui a écrit ? Quand ? À propos de quoi ?",
+    "promesse": "Neuf journaux répondent, sur une seule page.",
+    "duree": 8,
+    "alternatives": [
+      "Reprendre un dossier de mémoire, c'est reprendre un dossier de travers.",
+      "Ce qui s'est passé avec un client est écrit quelque part — encore faut-il savoir où.",
+      "Un historique complet vaut mieux qu'un bon souvenir."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec sa page d'historique. Neuf journaux : e-mails, SMS, rendez-vous, contrats, documents, factures, devis, dépenses et notes.",
+    "duree": 17
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir le panneau Entreprise de la fiche",
+        "voix": "Le panneau de droite, premier bloc : Entreprise. Il tient quatre entrées.",
+        "debut_source": 1,
+        "fin_source": 6.5,
+        "zone_focus": { "x": 0.71, "y": 0.15, "w": 0.28, "h": 0.75 },
+        "annotation": "Entreprise"
+      },
+      {
+        "numero": 2,
+        "titre": "Ouvrir l'historique de l'entreprise",
+        "voix": "La troisième : historique de l'entreprise.",
+        "debut_source": 6.5,
+        "fin_source": 10.5,
+        "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.65 },
+        "annotation": "Historique"
+      },
+      {
+        "numero": 3,
+        "titre": "Parcourir les neuf journaux",
+        "voix": "Neuf cartes, trois par rangée. Chacune couvre un type d'échange.",
+        "debut_source": 10.5,
+        "fin_source": 14.5,
+        "zone_focus": { "x": 0.23, "y": 0.22, "w": 0.75, "h": 0.73 },
+        "annotation": "Neuf journaux"
+      },
+      {
+        "numero": 4,
+        "titre": "Choisir le journal à consulter",
+        "voix": "Et le même bouton partout : Consulter.",
+        "debut_source": 14.5,
+        "fin_source": 17.79,
+        "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.65 },
+        "annotation": "Consulter"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Et pour compter les échanges ?",
+    "voix": "Neuf journaux, c'est beaucoup à ouvrir. Pour avoir le total d'un coup, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Donne-moi les statistiques d'interactions du mois pour l'entreprise numéro [identifiant].",
+      "variables": ["identifiant"],
+      "outil_mcp": "get_interaction_stats"
+    },
+    "resultat_affiche": {
+      "titre": "Interactions du mois",
+      "lignes": [
+        "E-mails : 2",
+        "SMS : 2",
+        "Rendez-vous : 1"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Neuf journaux sur une page : reprendre un dossier prend moins de temps que de s'en souvenir.",
+    "duree": 8,
+    "alternatives": [
+      "L'historique dit ce qui a été fait ; la mémoire dit ce qu'on croit avoir fait.",
+      "Une page, neuf réponses.",
+      "Avant de rappeler, on lit."
+    ]
+  },
+  "seo": {
+    "titre": "Historique d'une entreprise — RapidoCRM",
+    "description": "Ouvrez l'historique d'un client dans RapidoCRM : neuf journaux — e-mails, SMS, RDV, contrats, documents, factures, devis, dépenses, notes. Le tutoriel.",
+    "mots_cles": ["historique", "RapidoCRM", "fiche entreprise", "CRM", "suivi client", "journaux"],
+    "youtube_titre": "Historique d'une entreprise — RapidoCRM",
+    "youtube_description": "Le tutoriel de l'historique client sur RapidoCRM : où se trouve l'entrée dans le panneau Entreprise, et les neuf journaux qui rassemblent tout ce qui s'est passé avec un client. RapidoCRM Académie.",
+    "youtube_tags": ["RapidoCRM", "historique", "CRM", "suivi client", "fiche entreprise"]
+  }
+}

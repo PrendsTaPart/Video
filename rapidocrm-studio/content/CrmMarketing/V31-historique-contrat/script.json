@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 31,
+    "titre": "Historique contrat",
+    "titre_court": "Historique des contrats",
+    "slug": "06-historique-contrat"
+  },
+  "hook": {
+    "texte": "Un contrat envoyé en mai, une question sur sa durée en septembre. Où est le document ?",
+    "promesse": "Dans l'historique du client, à une ligne de là.",
+    "duree": 8,
+    "alternatives": [
+      "Un contrat qu'on ne retrouve pas ne protège personne.",
+      "Le statut dit s'il est signé ; le document dit ce qu'il engage.",
+      "Ce qui expire demain mérite autant d'attention que ce qui attend signature."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page Historique, et on ressort avec le contrat ouvert. Le tableau donne le destinataire, les dates et le statut ; le menu de la ligne ouvre le document.",
+    "duree": 17
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'historique des contrats",
+        "voix": "Deuxième rangée de la page Historique : les contrats. On consulte.",
+        "debut_source": 0.5,
+        "fin_source": 6.5,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.55
+        },
+        "annotation": "Historique des contrats"
+      },
+      {
+        "numero": 2,
+        "titre": "Lire le tableau des contrats",
+        "voix": "Destinataire, dates, statut : tout est là.",
+        "debut_source": 6.5,
+        "fin_source": 9.83,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.45
+        },
+        "annotation": "Le tableau"
+      },
+      {
+        "numero": 3,
+        "titre": "Ouvrir le contrat",
+        "voix": "Le menu de la ligne l'ouvre.",
+        "debut_source": 9.83,
+        "fin_source": 12.25,
+        "zone_focus": {
+          "x": 0.6,
+          "y": 0.3,
+          "w": 0.38,
+          "h": 0.4
+        },
+        "annotation": "Menu de la ligne"
+      },
+      {
+        "numero": 4,
+        "titre": "Parcourir le contrat, page par page",
+        "voix": "Le document s'ouvre dans un onglet, avec ses pages en vignettes sur le côté.",
+        "debut_source": 12.25,
+        "fin_source": 17.91,
+        "zone_focus": {
+          "x": 0,
+          "y": 0.14,
+          "w": 1,
+          "h": 0.86
+        },
+        "annotation": "Le contrat"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Et pour voir ceux qui attendent ?",
+    "voix": "Un contrat envoyé n'est pas signé. Pour repérer ceux qui traînent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] contrats en attente avec leur destinataire et leurs dates.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_contrats"
+    },
+    "resultat_affiche": {
+      "titre": "3 contrats en attente",
+      "lignes": [
+        "Prestation web — 2026-05-28 → 2027-05-28",
+        "Maintenance — 2026-06-01 → 2027-05-31",
+        "Vente de produits — 2026-07-15 → 2027-01-15"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Le statut au tableau, la clause dans le document : deux clics séparent la question de la réponse.",
+    "duree": 8,
+    "alternatives": [
+      "Un contrat rangé se relit ; un contrat perdu se renégocie.",
+      "Les vignettes servent de sommaire.",
+      "La date de fin est une alerte qui ne sonne pas toute seule : regardez-la."
+    ]
+  },
+  "seo": {
+    "titre": "Historique des contrats — RapidoCRM",
+    "description": "Consultez le journal des contrats d'un client dans RapidoCRM : destinataire, dates, statut, et ouverture du document dans la visionneuse. Le tutoriel.",
+    "mots_cles": [
+      "historique contrat",
+      "RapidoCRM",
+      "CRM",
+      "contrat",
+      "signature",
+      "suivi client"
+    ],
+    "youtube_titre": "Historique des contrats — RapidoCRM",
+    "youtube_description": "Le tutoriel du journal des contrats sur RapidoCRM : les colonnes du tableau, le menu qui ouvre le document, et la visionneuse avec ses vignettes de pages. RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "historique",
+      "contrat",
+      "CRM",
+      "suivi client"
+    ]
+  }
+}

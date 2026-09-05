@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 31,
+    "titre": "Consulter l'historique des contrats d'une entreprise",
+    "titre_court": "Consulter l'historique des c",
+    "slug": "consulter-l-historique-des-contrats-d-une-entreprise"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'historique des contrats",
+        "voix": "",
+        "debut_source": 0.5,
+        "fin_source": 6.5,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.55
+        },
+        "annotation": "Ouvrir l'historique des contrats"
+      },
+      {
+        "numero": 2,
+        "titre": "Lire le tableau des contrats",
+        "voix": "",
+        "debut_source": 6.5,
+        "fin_source": 9.83,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.45
+        },
+        "annotation": "Lire le tableau des contrats"
+      },
+      {
+        "numero": 3,
+        "titre": "Ouvrir le contrat",
+        "voix": "",
+        "debut_source": 9.83,
+        "fin_source": 12.25,
+        "zone_focus": {
+          "x": 0.6,
+          "y": 0.3,
+          "w": 0.38,
+          "h": 0.4
+        },
+        "annotation": "Ouvrir le contrat"
+      },
+      {
+        "numero": 4,
+        "titre": "Parcourir le contrat, page par page",
+        "voix": "",
+        "debut_source": 12.25,
+        "fin_source": 17.91,
+        "zone_focus": {
+          "x": 0,
+          "y": 0.14,
+          "w": 1,
+          "h": 0.86
+        },
+        "annotation": "Parcourir le contrat, page par page"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] contrats en attente avec leur destinataire et leurs dates.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_contrats"
+    }
+  }
+}

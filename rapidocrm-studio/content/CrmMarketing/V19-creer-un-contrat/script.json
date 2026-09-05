@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 19,
+    "titre": "Créer un contrat",
+    "titre_court": "Créer un contrat",
+    "slug": "06-creer-un-contrat"
+  },
+  "hook": {
+    "texte": "Le devis est accepté. Reste à sortir un contrat, à le relire, à trouver la bonne adresse.",
+    "promesse": "Un modèle, deux dates, et il part.",
+    "duree": 8,
+    "alternatives": [
+      "Un contrat repart rarement de zéro : il repart d'un modèle.",
+      "Le plus long dans un contrat, c'est souvent de le retrouver.",
+      "Ce qui est signé compte ; ce qui traîne en brouillon, non."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec un contrat envoyé. La bibliothèque propose des modèles, le formulaire tient en quatre champs, et le logiciel confirme l'envoi.",
+    "duree": 17
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir « Créer un contrat » depuis la fiche",
+        "voix": "Panneau Finance : créer un contrat.",
+        "debut_source": 1,
+        "fin_source": 4.5,
+        "zone_focus": { "x": 0.72, "y": 0.3, "w": 0.27, "h": 0.5 },
+        "annotation": "Créer un contrat"
+      },
+      {
+        "numero": 2,
+        "titre": "Choisir un modèle dans la bibliothèque",
+        "voix": "La bibliothèque annonce ses modèles. Chacun dit ce qu'il couvre.",
+        "debut_source": 4.5,
+        "fin_source": 9.5,
+        "zone_focus": { "x": 0.23, "y": 0.02, "w": 0.44, "h": 0.9 },
+        "annotation": "Modèles de contrat"
+      },
+      {
+        "numero": 3,
+        "titre": "Vérifier le destinataire du contrat",
+        "voix": "Le destinataire est déjà rempli : c'est le client de la fiche.",
+        "debut_source": 9.5,
+        "fin_source": 15,
+        "zone_focus": { "x": 0.34, "y": 0.05, "w": 0.31, "h": 0.4 },
+        "annotation": "Destinataire"
+      },
+      {
+        "numero": 4,
+        "titre": "Fixer les dates de début et de fin",
+        "voix": "Puis les deux bornes. La date de début ouvre l'engagement, la date de fin le referme. C'est elle qui dira, plus tard, qu'il faut renouveler.",
+        "debut_source": 15,
+        "fin_source": 26,
+        "zone_focus": { "x": 0.34, "y": 0.35, "w": 0.31, "h": 0.35 },
+        "annotation": "Début et fin"
+      },
+      {
+        "numero": 5,
+        "titre": "Choisir le modèle d'e-mail et envoyer",
+        "voix": "Le message qui portera le contrat, puis envoyer.",
+        "debut_source": 26,
+        "fin_source": 31,
+        "zone_focus": { "x": 0.34, "y": 0.55, "w": 0.31, "h": 0.4 },
+        "annotation": "Template mail"
+      },
+      {
+        "numero": 6,
+        "titre": "Lire la confirmation",
+        "voix": "Le bandeau confirme : le contrat est envoyé. Il rejoint l'historique du client, où on ira lire son statut.",
+        "debut_source": 31,
+        "fin_source": 39,
+        "zone_focus": { "x": 0.68, "y": 0.02, "w": 0.32, "h": 0.25 },
+        "annotation": "Contrat envoyé"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Et pour savoir qui n'a pas signé ?",
+    "voix": "Un contrat envoyé n'est pas un contrat signé. Pour voir ceux qui attendent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] contrats en attente avec leur destinataire et leurs dates.",
+      "variables": ["nombre"],
+      "outil_mcp": "list_contrats"
+    },
+    "resultat_affiche": {
+      "titre": "3 contrats en attente",
+      "lignes": [
+        "Prestation web — 28/08/2026 → 28/10/2027",
+        "Maintenance — 01/09/2026 → 31/08/2027",
+        "Vente de produits — 15/09/2026 → 15/03/2027"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Un modèle, deux dates, un message : le contrat part le jour où le devis est accepté.",
+    "duree": 8,
+    "alternatives": [
+      "La bibliothèque garde les modèles ; vous gardez le temps.",
+      "Un contrat envoyé vite est un contrat signé plus tôt.",
+      "Ce qui est daté se renouvelle ; ce qui ne l'est pas s'oublie."
+    ]
+  },
+  "seo": {
+    "titre": "Créer un contrat — RapidoCRM",
+    "description": "Envoyez un contrat depuis la fiche d'une entreprise RapidoCRM : modèle de la bibliothèque, destinataire, dates de validité et modèle d'e-mail. Le tutoriel.",
+    "mots_cles": ["contrat", "RapidoCRM", "modèle de contrat", "CRM", "signature", "commercial"],
+    "youtube_titre": "Créer un contrat — RapidoCRM",
+    "youtube_description": "Le tutoriel du contrat sur RapidoCRM : la bibliothèque de modèles, le destinataire repris de la fiche, les dates de validité, le modèle d'e-mail et la confirmation d'envoi. RapidoCRM Académie.",
+    "youtube_tags": ["RapidoCRM", "contrat", "CRM", "signature", "commercial"]
+  }
+}

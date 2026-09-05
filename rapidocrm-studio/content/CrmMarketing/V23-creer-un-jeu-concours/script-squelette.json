@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 23,
+    "titre": "Lancer un jeu concours sur la fiche d'une entreprise",
+    "titre_court": "Lancer un jeu concours sur l",
+    "slug": "lancer-un-jeu-concours-sur-la-fiche-d-une-entreprise"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir les jeux depuis la fiche entreprise",
+        "voix": "",
+        "debut_source": 1,
+        "fin_source": 5,
+        "zone_focus": {
+          "x": 0.7,
+          "y": 0.15,
+          "w": 0.29,
+          "h": 0.6
+        },
+        "annotation": "Ouvrir les jeux depuis la fiche entreprise"
+      },
+      {
+        "numero": 2,
+        "titre": "Choisir un modèle de jeu",
+        "voix": "",
+        "debut_source": 5,
+        "fin_source": 10,
+        "zone_focus": {
+          "x": 0.17,
+          "y": 0.11,
+          "w": 0.66,
+          "h": 0.85
+        },
+        "annotation": "Choisir un modèle de jeu"
+      },
+      {
+        "numero": 3,
+        "titre": "Les trois étapes de personnalisation",
+        "voix": "",
+        "debut_source": 10,
+        "fin_source": 15,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.3,
+          "w": 0.77,
+          "h": 0.4
+        },
+        "annotation": "Les trois étapes de personnalisation"
+      },
+      {
+        "numero": 4,
+        "titre": "Régler l'apparence et voir l'aperçu",
+        "voix": "",
+        "debut_source": 15,
+        "fin_source": 24,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.3,
+          "w": 0.77,
+          "h": 0.68
+        },
+        "annotation": "Régler l'apparence et voir l'aperçu"
+      },
+      {
+        "numero": 5,
+        "titre": "Décrire les lots à gagner",
+        "voix": "",
+        "debut_source": 24,
+        "fin_source": 30.5,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.22,
+          "w": 0.4,
+          "h": 0.76
+        },
+        "annotation": "Décrire les lots à gagner"
+      },
+      {
+        "numero": 6,
+        "titre": "Revenir à la fiche",
+        "voix": "",
+        "debut_source": 30.5,
+        "fin_source": 34.19,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.15,
+          "w": 0.77,
+          "h": 0.8
+        },
+        "annotation": "Revenir à la fiche"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] jeux concours du mois avec leur statut.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_jeux_concours"
+    }
+  }
+}
