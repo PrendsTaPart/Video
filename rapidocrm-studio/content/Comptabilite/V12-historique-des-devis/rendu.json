@@ -1,0 +1,86 @@
+{
+  "duree": 60.03333333333333,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V12-historique-des-devis/out/master-16x9.mp4",
+      "octets": 12284240
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V12-historique-des-devis/out/master-9x16.mp4",
+      "octets": 8122146
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.6
+    },
+    {
+      "nom": "titre",
+      "debut": 9.6,
+      "fin": 20.966666666666665
+    },
+    {
+      "nom": "demo",
+      "debut": 20.966666666666665,
+      "fin": 43.53333333333333
+    },
+    {
+      "nom": "claude",
+      "debut": 43.53333333333333,
+      "fin": 56.53333333333333
+    },
+    {
+      "nom": "punchline",
+      "debut": 56.53333333333333,
+      "fin": 60.03333333333333
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Le client vous rappelle au sujet d'un devis de mars. Vous, vous faites défiler la liste."
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Retrouver un devis et le rouvrir"
+    },
+    {
+      "timecode": "00:20",
+      "titre": "Ouvrir l'historique des devis"
+    },
+    {
+      "timecode": "00:25",
+      "titre": "Ouvrir le menu d'une ligne"
+    },
+    {
+      "timecode": "00:30",
+      "titre": "Visualiser le devis"
+    },
+    {
+      "timecode": "00:34",
+      "titre": "Télécharger le devis"
+    },
+    {
+      "timecode": "00:38",
+      "titre": "Les autres actions de la ligne"
+    },
+    {
+      "timecode": "00:43",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:56",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 60s, hors de la fenêtre 80–170s."
+  ]
+}
