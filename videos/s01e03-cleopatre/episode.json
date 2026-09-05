@@ -1,0 +1,331 @@
+{
+  "id": "S01E03",
+  "slug": "cleopatre",
+  "titre": "Le visage qu'elle a choisi",
+  "serie": "Michael remonte le temps",
+  "format": {
+    "largeur": 1080,
+    "hauteur": 1920,
+    "fps": 30,
+    "duree_s": 60
+  },
+  "charte": {
+    "fond": "#F2F4F7",
+    "bleu": "#03A9F5",
+    "violet": "#7E57C2",
+    "texte": "#383838",
+    "blanc": "#FFFFFF",
+    "reseaux": {
+      "facebook": "#1877F2",
+      "instagram": "#E1306C",
+      "tiktok": "#000000",
+      "linkedin": "#0A66C2",
+      "youtube": "#FF0000"
+    }
+  },
+  "film": {
+    "debut_s": 0,
+    "fin_s": 30,
+    "raccords_s": [
+      10,
+      20
+    ],
+    "clips": [
+      {
+        "n": 1,
+        "fichier": "source/P1-atelier.mp4",
+        "debut_s": 0,
+        "higgsfield": "088e5eca-07fd-4f27-abf6-3b1055dfd2d0",
+        "scene": "Atelier monétaire du palais d'Alexandrie, le burin dans la matrice"
+      },
+      {
+        "n": 2,
+        "fichier": "source/P2-frappe.mp4",
+        "debut_s": 10,
+        "higgsfield": "0684bfeb-8159-4809-9a09-b6b6087ecb37",
+        "scene": "La frappe : deux coups de marteau, puis la matrice pressée dans la cire"
+      },
+      {
+        "n": 3,
+        "fichier": "source/P3-nuit.mp4",
+        "debut_s": 20,
+        "higgsfield": "8ad6d27b-aaf2-49b0-a751-3896d894579b",
+        "scene": "La nuit tombée : la matrice à gauche, trois pièces à droite, le pot au centre"
+      }
+    ],
+    "accroche": {
+      "texte": "Elle n'a jamais posté. On connaît son visage.",
+      "debut_s": 0.3,
+      "fin_s": 3,
+      "fond": "#03A9F5",
+      "couleur": "#FFFFFF"
+    },
+    "sous_titres": [
+      {
+        "debut_s": 6,
+        "fin_s": 8,
+        "lignes": [
+          "Il était une fois une reine",
+          "qui voulait choisir son visage."
+        ]
+      },
+      {
+        "debut_s": 8,
+        "fin_s": 10,
+        "lignes": [
+          "Sur chaque pièce du royaume,",
+          "le même profil."
+        ]
+      },
+      {
+        "debut_s": 17,
+        "fin_s": 18.5,
+        "lignes": [
+          "Une seule matrice.",
+          "Mille pièces."
+        ]
+      },
+      {
+        "debut_s": 18.5,
+        "fin_s": 20,
+        "lignes": [
+          "Et le même sceau",
+          "sur chaque pot."
+        ]
+      },
+      {
+        "debut_s": 24,
+        "fin_s": 27,
+        "lignes": [
+          "Deux mille ans plus tard,",
+          "il ne reste rien d'elle."
+        ]
+      },
+      {
+        "debut_s": 27,
+        "fin_s": 30,
+        "lignes": [
+          "Rien, sauf l'image",
+          "qu'elle avait choisie."
+        ]
+      }
+    ],
+    "accent": {
+      "t_s": 11.9,
+      "noir_images": 3,
+      "son_maintenu": true,
+      "note": "Trois images de noir sur le second coup de marteau, le son maintenu. Le brief annonçait 12,6 s ; la mesure dit autre chose — entre 1 et 5 s du plan 2, les deux coups sortent à 1,5 s (−8,3 dB) et 1,9 s (−5,5 dB), soit 11,5 et 11,9 s de film. À 12,6 s il n'y a plus que −14 dB, l'accent tomberait dans le vide. Il est donc calé sur le second coup, à 11,9 s, ce que le plan demande en toutes lettres."
+    },
+    "incrustation_produit": {
+      "quoi": "emblème dans le sceau de cire",
+      "debut_s": 27.0,
+      "fin_s": 30,
+      "fichier": "assets/annonceur/embleme.png",
+      "relief": true,
+      "note": "Aucune marque fournie : le sceau reste lisse et rien n'est incrusté. Déposer une PNG à fond transparent à ce chemin l'active — elle sera posée avec un relief et une ombre portée, pour se lire comme pressée dans la cire et non collée dessus.",
+      "y_soustitre": 1110,
+      "suivi": [
+        {
+          "t_s": 27.0,
+          "x": 400,
+          "y": 1235,
+          "l": 215,
+          "h": 100
+        },
+        {
+          "t_s": 30.0,
+          "x": 400,
+          "y": 1235,
+          "l": 215,
+          "h": 100
+        }
+      ],
+      "suivi_releve": "relevé à l'œil sur trois images, puis vérifié par npm run suivre. Le suivi à la couleur ne marche pas sur ce plan : le brasero est la source principale et inonde tout l'établi de la même teinte que la cire — la boîte détectée fait mille pixels de large au lieu de deux cent soixante. La fenêtre commence à 27 s et non à 24 comme l'annonçait le brief : avant, la perche finit sa montée, le pot n'est pas encore posé et le sceau est hors champ. Sur 27 → 30 s le plan est verrouillé, le sceau ne bouge pas : deux points suffisent.",
+      "note_soustitre": "Les sous-titres sont montés à 1110 : le sceau de cire commence à 1235 et l'emblème de l'annonceur s'y pose — à 1250, hérité de l'épisode 2, le texte tombait dessus."
+    },
+    "coupe_finale": {
+      "t_s": 30,
+      "noir_images": 4,
+      "son_coupe": true
+    }
+  },
+  "audio": {
+    "lufs": -14,
+    "ducking_db": 6,
+    "fondu_sortie_s": 0.5,
+    "coupe_musique_film_s": 30,
+    "nappe": "../s01e01-colomb/assets/musique/nappe-methode.mp3",
+    "nappe_queue_debut_s": 33
+  },
+  "exports": [
+    {
+      "fichier": "S01E03-cleopatre-60s.mp4",
+      "de_s": 0,
+      "a_s": 60,
+      "note": "film complet"
+    },
+    {
+      "fichier": "S01E03-cleopatre-30s.mp4",
+      "de_s": 0,
+      "a_s": 30,
+      "note": "bloc film seul — TikTok et Reels"
+    },
+    {
+      "fichier": "S01E03-cleopatre-30s-queue.mp4",
+      "de_s": 30,
+      "a_s": 60,
+      "note": "transition + méthode + hook"
+    }
+  ],
+  "vignette": {
+    "fichier": "S01E03-cleopatre-vignette.jpg",
+    "t_s": 25
+  },
+  "faits": {
+    "note": "Les faits que porte l'épisode, pour qu'on puisse les revérifier sans rouvrir le brief.",
+    "points": [
+      "Les rois d'Alexandrie figuraient des divinités sur leurs bronzes ; Cléopâtre VII y met sa propre image.",
+      "Son portrait monétaire est volontairement non idéalisé : profil puissant, nez proéminent, menton saillant.",
+      "Les tétradrachmes d'argent frappés à Antioche vers 36 av. J.-C. portent son buste d'un côté, Marc Antoine de l'autre, sans face principale distinguable.",
+      "Ces monnaies servaient de propagande et de solde : elles payaient les soldats des deux camps.",
+      "Son portrait circule jusqu'à Patras, en Grèce.",
+      "Les monnaies sont la seule image réaliste de la reine qui nous reste ; les statues et tableaux postérieurs sont des inventions."
+    ]
+  },
+  "queue": {
+    "debut_s": 30,
+    "fin_s": 60,
+    "blocs": {
+      "transition": {
+        "debut_s": 30,
+        "fin_s": 33,
+        "sequence": "3",
+        "note": "L'ardoise monte du bas, le bâton claque à 31,0 s, « COUPEZ » à 31,0 → 32,6. Trois secondes, identiques d'un épisode à l'autre.",
+        "clap_s": 31
+      },
+      "methode": {
+        "debut_s": 33,
+        "fin_s": 53
+      },
+      "hook": {
+        "debut_s": 53,
+        "fin_s": 60,
+        "punchline": [
+          "Elle, elle a choisi son visage.",
+          "Vous, vous avez RapidoCMS."
+        ],
+        "cta": "FAITES LA VÔTRE"
+      }
+    },
+    "etapes": [
+      {
+        "n": 1,
+        "titre": "Installez les MCP RapidoCMS, Higgsfield et ElevenLabs sur Claude"
+      },
+      {
+        "n": 2,
+        "titre": "Demandez à Claude un script qui résume votre idée"
+      },
+      {
+        "n": 3,
+        "titre": "Installez le dépôt",
+        "mono": "github.com/heygen-com/hyperframes"
+      },
+      {
+        "n": 4,
+        "titre": "Lancez votre prompt sur Claude"
+      },
+      {
+        "n": 5,
+        "titre": "Demandez à Claude de planifier votre vidéo sur vos réseaux avec RapidoCMS"
+      }
+    ],
+    "orchestration": {
+      "centre": "rapidocms",
+      "orbite": [
+        "claude",
+        "higgsfield",
+        "elevenlabs",
+        "heygen"
+      ],
+      "orbite_ecart_s": 0.15,
+      "trait_duree_s": 0.3,
+      "debut_s": 48,
+      "reseaux_debut_s": 50,
+      "reseaux_ecart_s": 0.12,
+      "reseaux": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "linkedin",
+        "youtube"
+      ],
+      "fondu_blanc_s": 0.3
+    },
+    "lignes": [
+      {
+        "debut_s": 33,
+        "fin_s": 35,
+        "vo": "Votre image, partout la même.",
+        "ecran": "ouverture",
+        "source": "audio/vo-ouverture.mp3"
+      },
+      {
+        "debut_s": 35,
+        "fin_s": 37.6,
+        "vo": "Un : installez les MCP.",
+        "ecran": "etape",
+        "etape": 1,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 37.6,
+        "fin_s": 40.2,
+        "vo": "Deux : demandez le script à Claude.",
+        "ecran": "etape",
+        "etape": 2,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 40.2,
+        "fin_s": 42.8,
+        "vo": "Trois : ajoutez HyperFrames.",
+        "ecran": "etape",
+        "etape": 3,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 42.8,
+        "fin_s": 45.4,
+        "vo": "Quatre : lancez votre prompt.",
+        "ecran": "etape",
+        "etape": 4,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 45.4,
+        "fin_s": 48,
+        "vo": "Cinq : RapidoCMS planifie tout.",
+        "ecran": "etape",
+        "etape": 5,
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 48,
+        "fin_s": 53,
+        "vo": "RapidoCMS orchestre Claude, Higgsfield et ElevenLabs. Vos réseaux suivent.",
+        "ecran": "orchestration",
+        "source": "module — non regénéré"
+      },
+      {
+        "debut_s": 53.8,
+        "fin_s": 58.8,
+        "vo": "Elle, elle a choisi son visage. Vous, vous avez RapidoCMS.",
+        "ecran": "hook",
+        "source": "audio/vo-hook.mp3"
+      }
+    ],
+    "note": "La queue animée : 3 s de transition « COUPEZ », 20 s de méthode, 7 s de hook de fin. Les visuels et les six lignes de voix off des étapes viennent du module partagé ; seuls le numéro de séquence, le titre sur l'ardoise, la ligne d'ouverture et la punchline appartiennent à l'épisode.",
+    "module": "../module-methode-rapidocms"
+  }
+}

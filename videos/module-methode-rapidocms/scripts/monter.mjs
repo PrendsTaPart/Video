@@ -112,8 +112,21 @@ export async function monter({ EP, ROOT, WORK, OUT, chromium, chrome, ff, sonder
       }
       return bouts.join(", ") + `, ${p[p.length - 1][champ]}` + ")".repeat(p.length - 1);
     };
-    chaine.push(`[${src}:v]scale=${p[0].l}:${p[0].h}[prod]`);
-    chaine.push(`[${courant}][prod]overlay=x='${interp("x")}':y='${interp("y")}':enable='between(t,${s2(IP.debut_s)},${s2(IP.fin_s)})'[oprod]`);
+    const fenetre = `enable='between(t,${s2(IP.debut_s)},${s2(IP.fin_s)})'`;
+    if (IP.relief) {
+      /* « pressé dans la cire, pas posé dessus » : une copie sombre et floue décalée de
+         quelques pixels fait le creux, et l'emblème lui-même passe à l'opacité réduite pour
+         que la matière du support continue de se lire à travers. */
+      const D = 5;
+      chaine.push(`[${src}:v]scale=${p[0].l}:${p[0].h},split=2[pr1][pr2]`);
+      chaine.push(`[pr1]format=rgba,colorchannelmixer=rr=0:gg=0:bb=0:aa=0.55,gblur=sigma=3[ombre]`);
+      chaine.push(`[pr2]format=rgba,colorchannelmixer=aa=0.82[embleme]`);
+      chaine.push(`[${courant}][ombre]overlay=x='(${interp("x")})+${D}':y='(${interp("y")})+${D}':${fenetre}[oomb]`);
+      chaine.push(`[oomb][embleme]overlay=x='${interp("x")}':y='${interp("y")}':${fenetre}[oprod]`);
+    } else {
+      chaine.push(`[${src}:v]scale=${p[0].l}:${p[0].h}[prod]`);
+      chaine.push(`[${courant}][prod]overlay=x='${interp("x")}':y='${interp("y")}':${fenetre}[oprod]`);
+    }
     courant = "oprod";
   }
 
