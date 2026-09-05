@@ -1,14 +1,12 @@
 Le client dit qu'il n'a pas été prévenu. Vous, vous croyez lui avoir envoyé un SMS. Le journal tranche : le message, le numéro, la date.
 
-On part de la page Historique, et on ressort avec le SMS sous les yeux. Le tableau montre le numéro et la date ; l'icône en bout de ligne rouvre le message.
+On part de la page Historique, et on ressort avec le SMS sous les yeux. Le tableau montre le numéro du destinataire et la date de chaque envoi ; l'icône en bout de ligne rouvre le message mot pour mot. C'est la trace de ce qui est parti, pas un brouillon.
 
 Deuxième carte de la page Historique : les SMS. On consulte.
 
 Ici, le numéro du destinataire est une colonne.
 
-L'icône rouvre le message, mot pour mot.
-
-Puis on ferme.
+L'icône rouvre le message, mot pour mot. Puis on ferme.
 
 Le journal montre le détail. Pour le total du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
 

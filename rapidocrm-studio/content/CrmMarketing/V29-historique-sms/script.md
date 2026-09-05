@@ -14,7 +14,7 @@ Module **CrmMarketing** · V29 · `06-historique-sms`
 
 ## Intro
 
-On part de la page Historique, et on ressort avec le SMS sous les yeux. Le tableau montre le numéro et la date ; l'icône en bout de ligne rouvre le message.
+On part de la page Historique, et on ressort avec le SMS sous les yeux. Le tableau montre le numéro du destinataire et la date de chaque envoi ; l'icône en bout de ligne rouvre le message mot pour mot. C'est la trace de ce qui est parti, pas un brouillon.
 
 ## Démo
 
@@ -32,15 +32,9 @@ Ici, le numéro du destinataire est une colonne.
 
 ### 3. Rouvrir un SMS envoyé
 
-_10.0s → 13.0s · 7 mots · ~2.8s_
+_10.0s → 14.2s · 10 mots · ~4.0s_
 
-L'icône rouvre le message, mot pour mot.
-
-### 4. Revenir à la liste
-
-_13.0s → 14.2s · 3 mots · ~1.2s_
-
-Puis on ferme.
+L'icône rouvre le message, mot pour mot. Puis on ferme.
 
 ## Faites-le avec Claude
 

@@ -1,13 +1,13 @@
 {
-  "duree": 49.3,
+  "duree": 55.3,
   "fichiers": [
     {
       "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V29-historique-sms/out/master-16x9.mp4",
-      "octets": 7506866
+      "octets": 7275268
     },
     {
       "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V29-historique-sms/out/master-9x16.mp4",
-      "octets": 5728967
+      "octets": 5967871
     }
   ],
   "sequences": [
@@ -19,27 +19,27 @@
     {
       "nom": "hook",
       "debut": 1.4,
-      "fin": 11.066666666666666
+      "fin": 9.833333333333334
     },
     {
       "nom": "titre",
-      "debut": 11.066666666666666,
-      "fin": 20.366666666666667
+      "debut": 9.833333333333334,
+      "fin": 24.866666666666667
     },
     {
       "nom": "demo",
-      "debut": 20.366666666666667,
-      "fin": 32.3
+      "debut": 24.866666666666667,
+      "fin": 36.4
     },
     {
       "nom": "claude",
-      "debut": 32.3,
-      "fin": 44.2
+      "debut": 36.4,
+      "fin": 49.4
     },
     {
       "nom": "punchline",
-      "debut": 44.2,
-      "fin": 49.3
+      "debut": 49.4,
+      "fin": 55.3
     }
   ],
   "chapitres_youtube": [
@@ -48,35 +48,29 @@
       "titre": "Le client dit qu'il n'a pas été prévenu. Vous, vous croyez lui avoir envoyé un SMS."
     },
     {
-      "timecode": "00:11",
+      "timecode": "00:09",
       "titre": "Historique SMS"
     },
     {
-      "timecode": "00:20",
+      "timecode": "00:24",
       "titre": "Ouvrir l'historique des SMS"
     },
     {
-      "timecode": "00:24",
+      "timecode": "00:29",
       "titre": "Lire le tableau des envois"
     },
     {
-      "timecode": "00:27",
+      "timecode": "00:32",
       "titre": "Rouvrir un SMS envoyé"
     },
     {
-      "timecode": "00:30",
-      "titre": "Revenir à la liste"
-    },
-    {
-      "timecode": "00:32",
+      "timecode": "00:36",
       "titre": "Faites-le avec Claude"
     },
     {
-      "timecode": "00:44",
+      "timecode": "00:49",
       "titre": "À retenir"
     }
   ],
-  "avertissements": [
-    "Durée finale 49s, hors de la fenêtre 55–170s."
-  ]
+  "avertissements": []
 }

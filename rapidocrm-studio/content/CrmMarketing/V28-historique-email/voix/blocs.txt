@@ -3,6 +3,5 @@ file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V28-historique-e
 file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V28-historique-email/voix/etape-01.mp3'
 file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V28-historique-email/voix/etape-02.mp3'
 file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V28-historique-email/voix/etape-03.mp3'
-file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V28-historique-email/voix/etape-04.mp3'
 file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V28-historique-email/voix/claude.mp3'
 file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V28-historique-email/voix/punchline.mp3'

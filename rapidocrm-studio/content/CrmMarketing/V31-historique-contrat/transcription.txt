@@ -1,6 +1,6 @@
 Un contrat envoyé en mai, une question sur sa durée en septembre. Où est le document ? Dans l'historique du client, à une ligne de là.
 
-On part de la page Historique, et on ressort avec le contrat ouvert. Le tableau donne le destinataire, les dates et le statut ; le menu de la ligne ouvre le document.
+On part de la page Historique, et on ressort avec le contrat ouvert. Le tableau donne le destinataire, les dates et le statut ; le menu de la ligne ouvre le document. Le statut dit s'il est signé, le document dit ce qu'il engage.
 
 Deuxième rangée de la page Historique : les contrats. On consulte.
 

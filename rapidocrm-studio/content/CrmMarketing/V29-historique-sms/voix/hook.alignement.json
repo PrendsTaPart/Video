@@ -2,131 +2,131 @@
   {
     "mot": "Le",
     "debut": 0,
-    "fin": 0.174
+    "fin": 0.197
   },
   {
     "mot": "client",
-    "debut": 0.221,
-    "fin": 0.534
+    "debut": 0.232,
+    "fin": 0.488
   },
   {
     "mot": "dit",
-    "debut": 0.569,
-    "fin": 0.697
+    "debut": 0.522,
+    "fin": 0.639
   },
   {
     "mot": "qu'il",
-    "debut": 0.72,
-    "fin": 0.848
+    "debut": 0.662,
+    "fin": 0.778
   },
   {
     "mot": "n'a",
-    "debut": 0.894,
-    "fin": 0.987
+    "debut": 0.801,
+    "fin": 0.882
   },
   {
     "mot": "pas",
-    "debut": 1.138,
-    "fin": 1.335
+    "debut": 0.952,
+    "fin": 1.08
   },
   {
     "mot": "été",
-    "debut": 1.358,
-    "fin": 1.509
+    "debut": 1.115,
+    "fin": 1.265
   },
   {
     "mot": "prévenu.",
-    "debut": 1.544,
-    "fin": 1.974
+    "debut": 1.312,
+    "fin": 1.73
   },
   {
     "mot": "Vous,",
-    "debut": 2.148,
-    "fin": 2.438
+    "debut": 1.846,
+    "fin": 2.02
   },
   {
     "mot": "vous",
-    "debut": 2.473,
-    "fin": 2.612
+    "debut": 2.055,
+    "fin": 2.183
   },
   {
     "mot": "croyez",
-    "debut": 2.635,
-    "fin": 2.902
+    "debut": 2.206,
+    "fin": 2.485
   },
   {
     "mot": "lui",
-    "debut": 2.937,
-    "fin": 3.007
+    "debut": 2.531,
+    "fin": 2.647
   },
   {
     "mot": "avoir",
-    "debut": 3.042,
-    "fin": 3.262
+    "debut": 2.682,
+    "fin": 2.868
   },
   {
     "mot": "envoyé",
-    "debut": 3.344,
-    "fin": 3.808
+    "debut": 2.891,
+    "fin": 3.262
   },
   {
     "mot": "un",
-    "debut": 3.855,
-    "fin": 3.924
+    "debut": 3.297,
+    "fin": 3.367
   },
   {
     "mot": "S.M.S.",
-    "debut": 4.005,
-    "fin": 4.574
+    "debut": 3.402,
+    "fin": 3.947
   },
   {
     "mot": "Le",
-    "debut": 4.818,
-    "fin": 4.923
+    "debut": 4.191,
+    "fin": 4.261
   },
   {
     "mot": "journal",
-    "debut": 4.957,
-    "fin": 5.236
+    "debut": 4.296,
+    "fin": 4.563
   },
   {
     "mot": "tranche",
-    "debut": 5.306,
-    "fin": 5.77
+    "debut": 4.598,
+    "fin": 4.969
   },
   {
     "mot": ":",
-    "debut": 5.863,
-    "fin": 5.898
+    "debut": 5.027,
+    "fin": 5.062
   },
   {
     "mot": "le",
-    "debut": 6.072,
-    "fin": 6.153
+    "debut": 5.236,
+    "fin": 5.317
   },
   {
     "mot": "message,",
-    "debut": 6.211,
-    "fin": 6.873
+    "debut": 5.364,
+    "fin": 5.886
   },
   {
     "mot": "le",
-    "debut": 7.047,
-    "fin": 7.129
+    "debut": 6.037,
+    "fin": 6.107
   },
   {
     "mot": "numéro,",
-    "debut": 7.187,
-    "fin": 7.872
+    "debut": 6.153,
+    "fin": 6.711
   },
   {
     "mot": "la",
-    "debut": 8.081,
-    "fin": 8.197
+    "debut": 6.92,
+    "fin": 7.024
   },
   {
     "mot": "date.",
-    "debut": 8.255,
-    "fin": 8.719
+    "debut": 7.082,
+    "fin": 7.442
   }
 ]

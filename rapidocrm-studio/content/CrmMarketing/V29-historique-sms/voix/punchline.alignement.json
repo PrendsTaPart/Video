@@ -2,71 +2,71 @@
   {
     "mot": "Le",
     "debut": 0,
-    "fin": 0.139
+    "fin": 0.151
   },
   {
     "mot": "numéro,",
-    "debut": 0.186,
-    "fin": 0.522
+    "debut": 0.197,
+    "fin": 0.685
   },
   {
     "mot": "la",
-    "debut": 0.546,
-    "fin": 0.627
+    "debut": 0.766,
+    "fin": 0.882
   },
   {
     "mot": "date,",
-    "debut": 0.697,
-    "fin": 0.975
+    "debut": 0.952,
+    "fin": 1.242
   },
   {
     "mot": "le",
-    "debut": 1.01,
-    "fin": 1.091
+    "debut": 1.393,
+    "fin": 1.498
   },
   {
     "mot": "texte",
-    "debut": 1.138,
-    "fin": 1.567
+    "debut": 1.544,
+    "fin": 1.892
   },
   {
     "mot": ":",
-    "debut": 1.614,
-    "fin": 1.637
+    "debut": 1.916,
+    "fin": 1.95
   },
   {
     "mot": "trois",
-    "debut": 1.788,
-    "fin": 1.985
+    "debut": 2.159,
+    "fin": 2.368
   },
   {
     "mot": "colonnes",
-    "debut": 2.009,
-    "fin": 2.322
+    "debut": 2.392,
+    "fin": 2.763
   },
   {
     "mot": "qui",
-    "debut": 2.345,
-    "fin": 2.438
+    "debut": 2.879,
+    "fin": 3.03
   },
   {
     "mot": "valent",
-    "debut": 2.485,
-    "fin": 2.694
+    "debut": 3.088,
+    "fin": 3.297
   },
   {
     "mot": "mieux",
-    "debut": 2.775,
-    "fin": 2.949
+    "debut": 3.344,
+    "fin": 3.518
   },
   {
     "mot": "qu'une",
-    "debut": 2.972,
-    "fin": 3.111
+    "debut": 3.541,
+    "fin": 3.68
   },
   {
     "mot": "discussion.",
-    "debut": 3.135,
-    "fin": 3.715
+    "debut": 3.704,
+    "fin": 4.249
   }
 ]

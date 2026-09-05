@@ -18,8 +18,8 @@
     ]
   },
   "intro": {
-    "texte": "On part de la page Historique, et on ressort avec l'e-mail sous les yeux. Le tableau liste les envois ; l'icône en bout de ligne rouvre le message tel qu'il est parti.",
-    "duree": 17
+    "texte": "On part de la page Historique, et on ressort avec l'e-mail sous les yeux. Le tableau liste les envois ; l'icône en bout de ligne rouvre le message tel qu'il est parti, avec son objet, son destinataire et son contenu. Rien n'est reconstitué : c'est l'envoi lui-même.",
+    "duree": 22
   },
   "demo": {
     "etapes": [
@@ -29,7 +29,12 @@
         "voix": "Première carte de la page Historique : les e-mails. On consulte.",
         "debut_source": 0.5,
         "fin_source": 7,
-        "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.5 },
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.5
+        },
         "annotation": "Historique des emails"
       },
       {
@@ -38,26 +43,27 @@
         "voix": "Une ligne par envoi, avec sa date.",
         "debut_source": 7,
         "fin_source": 10,
-        "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.55 },
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.55
+        },
         "annotation": "Le tableau"
       },
       {
         "numero": 3,
         "titre": "Rouvrir un e-mail envoyé",
-        "voix": "L'icône en bout de ligne rouvre le message : objet, destinataire, contenu.",
+        "voix": "L'icône en bout de ligne rouvre le message : objet, destinataire, contenu. Puis on referme.",
         "debut_source": 10,
-        "fin_source": 15,
-        "zone_focus": { "x": 0.34, "y": 0.14, "w": 0.31, "h": 0.85 },
-        "annotation": "Rouvrir l'e-mail"
-      },
-      {
-        "numero": 4,
-        "titre": "Revenir à la liste",
-        "voix": "Et on referme.",
-        "debut_source": 15,
         "fin_source": 15.83,
-        "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.5 },
-        "annotation": "Retour"
+        "zone_focus": {
+          "x": 0.34,
+          "y": 0.14,
+          "w": 0.31,
+          "h": 0.85
+        },
+        "annotation": "Rouvrir l'e-mail"
       }
     ]
   },
@@ -66,7 +72,9 @@
     "voix": "Le journal montre le détail. Pour le total du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
     "prompt": {
       "texte": "Donne-moi les statistiques d'interactions du mois pour l'entreprise numéro [identifiant].",
-      "variables": ["identifiant"],
+      "variables": [
+        "identifiant"
+      ],
       "outil_mcp": "get_interaction_stats"
     },
     "resultat_affiche": {
@@ -91,9 +99,22 @@
   "seo": {
     "titre": "Historique des e-mails — RapidoCRM",
     "description": "Consultez le journal des e-mails d'un client dans RapidoCRM : tableau des envois avec leur date, et réouverture du message avec son contenu. Le tutoriel.",
-    "mots_cles": ["historique email", "RapidoCRM", "CRM", "suivi client", "e-mail", "journal"],
+    "mots_cles": [
+      "historique email",
+      "RapidoCRM",
+      "CRM",
+      "suivi client",
+      "e-mail",
+      "journal"
+    ],
     "youtube_titre": "Historique des e-mails — RapidoCRM",
     "youtube_description": "Le tutoriel du journal des e-mails sur RapidoCRM : les colonnes du tableau, l'icône qui rouvre un message envoyé, et le bouton qui permet de repartir sur un nouvel envoi. RapidoCRM Académie.",
-    "youtube_tags": ["RapidoCRM", "historique", "email", "CRM", "suivi client"]
+    "youtube_tags": [
+      "RapidoCRM",
+      "historique",
+      "email",
+      "CRM",
+      "suivi client"
+    ]
   }
 }

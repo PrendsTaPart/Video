@@ -7,126 +7,126 @@
   {
     "mot": "contrat",
     "debut": 0.174,
-    "fin": 0.604
+    "fin": 0.557
   },
   {
     "mot": "envoyé",
-    "debut": 0.65,
-    "fin": 1.068
+    "debut": 0.58,
+    "fin": 0.917
   },
   {
     "mot": "en",
-    "debut": 1.091,
-    "fin": 1.184
+    "debut": 0.952,
+    "fin": 1.01
   },
   {
     "mot": "mai,",
-    "debut": 1.242,
-    "fin": 1.498
+    "debut": 1.068,
+    "fin": 1.196
   },
   {
     "mot": "une",
-    "debut": 1.544,
-    "fin": 1.695
+    "debut": 1.219,
+    "fin": 1.324
   },
   {
     "mot": "question",
-    "debut": 1.741,
-    "fin": 2.055
+    "debut": 1.358,
+    "fin": 1.695
   },
   {
     "mot": "sur",
-    "debut": 2.101,
-    "fin": 2.218
+    "debut": 1.741,
+    "fin": 1.834
   },
   {
     "mot": "sa",
-    "debut": 2.252,
-    "fin": 2.357
+    "debut": 1.869,
+    "fin": 1.962
   },
   {
     "mot": "durée",
-    "debut": 2.415,
-    "fin": 2.694
+    "debut": 2.009,
+    "fin": 2.241
   },
   {
     "mot": "en",
-    "debut": 2.74,
-    "fin": 2.821
+    "debut": 2.287,
+    "fin": 2.345
   },
   {
     "mot": "septembre.",
-    "debut": 2.879,
-    "fin": 3.437
+    "debut": 2.403,
+    "fin": 2.914
   },
   {
     "mot": "Où",
-    "debut": 3.611,
-    "fin": 3.727
+    "debut": 2.995,
+    "fin": 3.123
   },
   {
     "mot": "est",
-    "debut": 3.785,
-    "fin": 3.878
+    "debut": 3.17,
+    "fin": 3.251
   },
   {
     "mot": "le",
-    "debut": 3.913,
-    "fin": 3.971
+    "debut": 3.274,
+    "fin": 3.344
   },
   {
     "mot": "document",
-    "debut": 4.017,
-    "fin": 4.4
+    "debut": 3.39,
+    "fin": 3.75
   },
   {
     "mot": "?",
-    "debut": 4.447,
-    "fin": 4.481
+    "debut": 3.796,
+    "fin": 3.82
   },
   {
     "mot": "Dans",
-    "debut": 4.656,
-    "fin": 4.807
+    "debut": 3.913,
+    "fin": 4.075
   },
   {
     "mot": "l'historique",
-    "debut": 4.83,
-    "fin": 5.306
+    "debut": 4.098,
+    "fin": 4.528
   },
   {
     "mot": "du",
-    "debut": 5.329,
-    "fin": 5.41
+    "debut": 4.551,
+    "fin": 4.621
   },
   {
     "mot": "client,",
-    "debut": 5.457,
-    "fin": 5.956
+    "debut": 4.667,
+    "fin": 5.004
   },
   {
     "mot": "à",
-    "debut": 6.084,
-    "fin": 6.13
+    "debut": 5.062,
+    "fin": 5.108
   },
   {
     "mot": "une",
-    "debut": 6.223,
-    "fin": 6.316
+    "debut": 5.224,
+    "fin": 5.329
   },
   {
     "mot": "ligne",
-    "debut": 6.339,
-    "fin": 6.502
+    "debut": 5.352,
+    "fin": 5.596
   },
   {
     "mot": "de",
-    "debut": 6.525,
-    "fin": 6.606
+    "debut": 5.642,
+    "fin": 5.712
   },
   {
     "mot": "là.",
-    "debut": 6.664,
-    "fin": 6.943
+    "debut": 5.759,
+    "fin": 5.991
   }
 ]

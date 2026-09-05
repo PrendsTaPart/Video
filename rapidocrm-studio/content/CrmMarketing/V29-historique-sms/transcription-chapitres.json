@@ -5,37 +5,32 @@
     "texte": "Le client dit qu'il n'a pas été prévenu. Vous, vous croyez lui avoir envoyé un SMS. Le journal tranche : le message, le numéro, la date."
   },
   {
-    "timestamp_secondes": 10,
+    "timestamp_secondes": 8,
     "titre": "Ce qu'on va faire",
-    "texte": "On part de la page Historique, et on ressort avec le SMS sous les yeux. Le tableau montre le numéro et la date ; l'icône en bout de ligne rouvre le message."
+    "texte": "On part de la page Historique, et on ressort avec le SMS sous les yeux. Le tableau montre le numéro du destinataire et la date de chaque envoi ; l'icône en bout de ligne rouvre le message mot pour mot. C'est la trace de ce qui est parti, pas un brouillon."
   },
   {
-    "timestamp_secondes": 19,
+    "timestamp_secondes": 23,
     "titre": "Ouvrir l'historique des SMS",
     "texte": "Deuxième carte de la page Historique : les SMS. On consulte."
   },
   {
-    "timestamp_secondes": 23,
+    "timestamp_secondes": 28,
     "titre": "Lire le tableau des envois",
     "texte": "Ici, le numéro du destinataire est une colonne."
   },
   {
-    "timestamp_secondes": 27,
-    "titre": "Rouvrir un SMS envoyé",
-    "texte": "L'icône rouvre le message, mot pour mot."
-  },
-  {
-    "timestamp_secondes": 29,
-    "titre": "Revenir à la liste",
-    "texte": "Puis on ferme."
-  },
-  {
     "timestamp_secondes": 31,
+    "titre": "Rouvrir un SMS envoyé",
+    "texte": "L'icône rouvre le message, mot pour mot. Puis on ferme."
+  },
+  {
+    "timestamp_secondes": 35,
     "titre": "Faites-le avec Claude",
     "texte": "Le journal montre le détail. Pour le total du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
   },
   {
-    "timestamp_secondes": 43,
+    "timestamp_secondes": 48,
     "titre": "À retenir",
     "texte": "Le numéro, la date, le texte : trois colonnes qui valent mieux qu'une discussion."
   }

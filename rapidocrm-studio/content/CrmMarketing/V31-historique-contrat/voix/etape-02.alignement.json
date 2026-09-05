@@ -2,36 +2,36 @@
   {
     "mot": "Destinataire,",
     "debut": 0,
-    "fin": 0.778
+    "fin": 0.836
   },
   {
     "mot": "dates,",
-    "debut": 0.813,
-    "fin": 1.08
+    "debut": 0.906,
+    "fin": 1.231
   },
   {
     "mot": "statut",
-    "debut": 1.196,
-    "fin": 1.602
+    "debut": 1.347,
+    "fin": 1.823
   },
   {
     "mot": ":",
-    "debut": 1.637,
-    "fin": 1.66
+    "debut": 1.846,
+    "fin": 1.892
   },
   {
     "mot": "tout",
-    "debut": 1.834,
-    "fin": 2.032
+    "debut": 2.101,
+    "fin": 2.299
   },
   {
     "mot": "est",
-    "debut": 2.078,
-    "fin": 2.148
+    "debut": 2.334,
+    "fin": 2.403
   },
   {
     "mot": "là.",
-    "debut": 2.171,
-    "fin": 2.368
+    "debut": 2.426,
+    "fin": 2.624
   }
 ]

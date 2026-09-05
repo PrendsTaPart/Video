@@ -2,56 +2,56 @@
   {
     "mot": "Première",
     "debut": 0,
-    "fin": 0.395
+    "fin": 0.372
   },
   {
     "mot": "carte",
-    "debut": 0.418,
-    "fin": 0.627
+    "debut": 0.395,
+    "fin": 0.592
   },
   {
     "mot": "de",
-    "debut": 0.65,
-    "fin": 0.72
+    "debut": 0.615,
+    "fin": 0.685
   },
   {
     "mot": "la",
-    "debut": 0.766,
-    "fin": 0.836
+    "debut": 0.72,
+    "fin": 0.789
   },
   {
     "mot": "page",
-    "debut": 0.906,
-    "fin": 1.207
+    "debut": 0.848,
+    "fin": 1.115
   },
   {
     "mot": "Historique",
-    "debut": 1.231,
-    "fin": 1.73
+    "debut": 1.149,
+    "fin": 1.695
   },
   {
     "mot": ":",
-    "debut": 1.753,
-    "fin": 1.776
+    "debut": 1.73,
+    "fin": 1.753
   },
   {
     "mot": "les",
-    "debut": 1.823,
-    "fin": 1.939
+    "debut": 1.962,
+    "fin": 2.125
   },
   {
     "mot": "e-mails.",
-    "debut": 1.997,
-    "fin": 2.357
+    "debut": 2.183,
+    "fin": 2.543
   },
   {
     "mot": "On",
-    "debut": 2.403,
-    "fin": 2.508
+    "debut": 2.717,
+    "fin": 2.821
   },
   {
     "mot": "consulte.",
-    "debut": 2.554,
-    "fin": 3.088
+    "debut": 2.868,
+    "fin": 3.437
   }
 ]

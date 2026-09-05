@@ -2,56 +2,56 @@
   {
     "mot": "Deuxième",
     "debut": 0,
-    "fin": 0.395
+    "fin": 0.43
   },
   {
     "mot": "carte",
-    "debut": 0.418,
-    "fin": 0.592
+    "debut": 0.453,
+    "fin": 0.65
   },
   {
     "mot": "de",
-    "debut": 0.615,
-    "fin": 0.673
+    "debut": 0.673,
+    "fin": 0.731
   },
   {
     "mot": "la",
-    "debut": 0.708,
-    "fin": 0.778
+    "debut": 0.778,
+    "fin": 0.859
   },
   {
     "mot": "page",
-    "debut": 0.836,
-    "fin": 1.033
+    "debut": 0.917,
+    "fin": 1.289
   },
   {
     "mot": "Historique",
-    "debut": 1.068,
-    "fin": 1.614
+    "debut": 1.358,
+    "fin": 2.009
   },
   {
     "mot": ":",
-    "debut": 1.637,
-    "fin": 1.672
+    "debut": 2.043,
+    "fin": 2.067
   },
   {
     "mot": "les",
-    "debut": 1.741,
-    "fin": 1.904
+    "debut": 2.218,
+    "fin": 2.38
   },
   {
     "mot": "S.M.S.",
-    "debut": 1.927,
-    "fin": 2.647
+    "debut": 2.496,
+    "fin": 3.1
   },
   {
     "mot": "On",
-    "debut": 2.775,
-    "fin": 2.868
+    "debut": 3.17,
+    "fin": 3.274
   },
   {
     "mot": "consulte.",
-    "debut": 2.914,
-    "fin": 3.425
+    "debut": 3.32,
+    "fin": 3.82
   }
 ]

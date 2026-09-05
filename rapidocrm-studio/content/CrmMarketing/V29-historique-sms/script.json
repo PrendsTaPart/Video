@@ -18,8 +18,8 @@
     ]
   },
   "intro": {
-    "texte": "On part de la page Historique, et on ressort avec le SMS sous les yeux. Le tableau montre le numéro et la date ; l'icône en bout de ligne rouvre le message.",
-    "duree": 16
+    "texte": "On part de la page Historique, et on ressort avec le SMS sous les yeux. Le tableau montre le numéro du destinataire et la date de chaque envoi ; l'icône en bout de ligne rouvre le message mot pour mot. C'est la trace de ce qui est parti, pas un brouillon.",
+    "duree": 22
   },
   "demo": {
     "etapes": [
@@ -29,7 +29,12 @@
         "voix": "Deuxième carte de la page Historique : les SMS. On consulte.",
         "debut_source": 0.5,
         "fin_source": 6.5,
-        "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.5 },
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.5
+        },
         "annotation": "Historique des SMS"
       },
       {
@@ -38,26 +43,27 @@
         "voix": "Ici, le numéro du destinataire est une colonne.",
         "debut_source": 6.5,
         "fin_source": 10,
-        "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.55 },
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.55
+        },
         "annotation": "Colonne Numéro"
       },
       {
         "numero": 3,
         "titre": "Rouvrir un SMS envoyé",
-        "voix": "L'icône rouvre le message, mot pour mot.",
+        "voix": "L'icône rouvre le message, mot pour mot. Puis on ferme.",
         "debut_source": 10,
-        "fin_source": 13,
-        "zone_focus": { "x": 0.34, "y": 0.22, "w": 0.31, "h": 0.7 },
-        "annotation": "Rouvrir le SMS"
-      },
-      {
-        "numero": 4,
-        "titre": "Revenir à la liste",
-        "voix": "Puis on ferme.",
-        "debut_source": 13,
         "fin_source": 14.16,
-        "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.5 },
-        "annotation": "Fermer"
+        "zone_focus": {
+          "x": 0.34,
+          "y": 0.22,
+          "w": 0.31,
+          "h": 0.7
+        },
+        "annotation": "Rouvrir le SMS"
       }
     ]
   },
@@ -66,7 +72,9 @@
     "voix": "Le journal montre le détail. Pour le total du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
     "prompt": {
       "texte": "Donne-moi les statistiques d'interactions du mois pour l'entreprise numéro [identifiant].",
-      "variables": ["identifiant"],
+      "variables": [
+        "identifiant"
+      ],
       "outil_mcp": "get_interaction_stats"
     },
     "resultat_affiche": {
@@ -91,9 +99,22 @@
   "seo": {
     "titre": "Historique des SMS — RapidoCRM",
     "description": "Consultez le journal des SMS d'un client dans RapidoCRM : numéro du destinataire, date d'envoi, et réouverture du message mot pour mot. Le tutoriel.",
-    "mots_cles": ["historique SMS", "RapidoCRM", "CRM", "suivi client", "SMS", "journal"],
+    "mots_cles": [
+      "historique SMS",
+      "RapidoCRM",
+      "CRM",
+      "suivi client",
+      "SMS",
+      "journal"
+    ],
     "youtube_titre": "Historique des SMS — RapidoCRM",
     "youtube_description": "Le tutoriel du journal des SMS sur RapidoCRM : les colonnes du tableau dont le numéro du destinataire, et la fenêtre qui rouvre le message envoyé. RapidoCRM Académie.",
-    "youtube_tags": ["RapidoCRM", "historique", "SMS", "CRM", "suivi client"]
+    "youtube_tags": [
+      "RapidoCRM",
+      "historique",
+      "SMS",
+      "CRM",
+      "suivi client"
+    ]
   }
 }

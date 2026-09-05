@@ -2,121 +2,121 @@
   {
     "mot": "«",
     "debut": 0,
-    "fin": 0.081
+    "fin": 0.07
   },
   {
     "mot": "Je",
-    "debut": 0.104,
-    "fin": 0.186
+    "debut": 0.093,
+    "fin": 0.163
   },
   {
     "mot": "n'ai",
     "debut": 0.209,
-    "fin": 0.325
+    "fin": 0.313
   },
   {
     "mot": "jamais",
-    "debut": 0.372,
-    "fin": 0.65
+    "debut": 0.36,
+    "fin": 0.615
   },
   {
     "mot": "reçu",
-    "debut": 0.685,
-    "fin": 0.94
+    "debut": 0.65,
+    "fin": 1.022
   },
   {
     "mot": "votre",
-    "debut": 0.975,
-    "fin": 1.173
+    "debut": 1.091,
+    "fin": 1.335
   },
   {
     "mot": "devis.",
-    "debut": 1.219,
-    "fin": 1.73
+    "debut": 1.37,
+    "fin": 1.765
   },
   {
     "mot": "»",
-    "debut": 1.776,
-    "fin": 1.846
+    "debut": 1.811,
+    "fin": 1.834
   },
   {
     "mot": "Et",
-    "debut": 2.287,
-    "fin": 2.426
+    "debut": 2.009,
+    "fin": 2.125
   },
   {
     "mot": "vous,",
-    "debut": 2.461,
-    "fin": 2.798
+    "debut": 2.159,
+    "fin": 2.438
   },
   {
     "mot": "vous",
-    "debut": 3.123,
-    "fin": 3.297
+    "debut": 2.485,
+    "fin": 2.612
   },
   {
     "mot": "cherchez",
-    "debut": 3.32,
-    "fin": 3.692
+    "debut": 2.635,
+    "fin": 2.914
   },
   {
     "mot": "dans",
-    "debut": 3.738,
-    "fin": 3.855
+    "debut": 2.937,
+    "fin": 3.03
   },
   {
     "mot": "vos",
-    "debut": 3.878,
-    "fin": 3.994
+    "debut": 3.053,
+    "fin": 3.146
   },
   {
     "mot": "envoyés.",
-    "debut": 4.04,
-    "fin": 4.493
+    "debut": 3.204,
+    "fin": 3.657
   },
   {
     "mot": "Le",
-    "debut": 4.876,
-    "fin": 4.981
+    "debut": 3.704,
+    "fin": 3.808
   },
   {
     "mot": "journal",
-    "debut": 5.027,
-    "fin": 5.329
+    "debut": 3.843,
+    "fin": 4.133
   },
   {
     "mot": "des",
-    "debut": 5.387,
-    "fin": 5.515
+    "debut": 4.191,
+    "fin": 4.307
   },
   {
     "mot": "e-mails",
-    "debut": 5.573,
-    "fin": 5.909
+    "debut": 4.365,
+    "fin": 4.644
   },
   {
     "mot": "le",
-    "debut": 5.968,
-    "fin": 6.072
+    "debut": 4.667,
+    "fin": 4.725
   },
   {
     "mot": "retrouve,",
-    "debut": 6.118,
-    "fin": 6.687
+    "debut": 4.783,
+    "fin": 5.271
   },
   {
     "mot": "avec",
-    "debut": 7.012,
-    "fin": 7.268
+    "debut": 5.445,
+    "fin": 5.689
   },
   {
     "mot": "son",
-    "debut": 7.303,
-    "fin": 7.407
+    "debut": 5.724,
+    "fin": 5.828
   },
   {
     "mot": "contenu.",
-    "debut": 7.454,
-    "fin": 7.906
+    "debut": 5.863,
+    "fin": 6.397
   }
 ]

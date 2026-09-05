@@ -14,7 +14,7 @@ Module **CrmMarketing** · V31 · `06-historique-contrat`
 
 ## Intro
 
-On part de la page Historique, et on ressort avec le contrat ouvert. Le tableau donne le destinataire, les dates et le statut ; le menu de la ligne ouvre le document.
+On part de la page Historique, et on ressort avec le contrat ouvert. Le tableau donne le destinataire, les dates et le statut ; le menu de la ligne ouvre le document. Le statut dit s'il est signé, le document dit ce qu'il engage.
 
 ## Démo
 

@@ -5,37 +5,37 @@
     "texte": "Un contrat envoyé en mai, une question sur sa durée en septembre. Où est le document ? Dans l'historique du client, à une ligne de là."
   },
   {
-    "timestamp_secondes": 8,
+    "timestamp_secondes": 7,
     "titre": "Ce qu'on va faire",
-    "texte": "On part de la page Historique, et on ressort avec le contrat ouvert. Le tableau donne le destinataire, les dates et le statut ; le menu de la ligne ouvre le document."
+    "texte": "On part de la page Historique, et on ressort avec le contrat ouvert. Le tableau donne le destinataire, les dates et le statut ; le menu de la ligne ouvre le document. Le statut dit s'il est signé, le document dit ce qu'il engage."
   },
   {
-    "timestamp_secondes": 19,
+    "timestamp_secondes": 21,
     "titre": "Ouvrir l'historique des contrats",
     "texte": "Deuxième rangée de la page Historique : les contrats. On consulte."
   },
   {
-    "timestamp_secondes": 23,
+    "timestamp_secondes": 25,
     "titre": "Lire le tableau des contrats",
     "texte": "Destinataire, dates, statut : tout est là."
   },
   {
-    "timestamp_secondes": 27,
+    "timestamp_secondes": 29,
     "titre": "Ouvrir le contrat",
     "texte": "Le menu de la ligne l'ouvre."
   },
   {
-    "timestamp_secondes": 29,
+    "timestamp_secondes": 31,
     "titre": "Parcourir le contrat, page par page",
     "texte": "Le document s'ouvre dans un onglet, avec ses pages en vignettes sur le côté."
   },
   {
-    "timestamp_secondes": 34,
+    "timestamp_secondes": 36,
     "titre": "Faites-le avec Claude",
     "texte": "Un contrat envoyé n'est pas signé. Pour repérer ceux qui traînent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
   },
   {
-    "timestamp_secondes": 47,
+    "timestamp_secondes": 48,
     "titre": "À retenir",
     "texte": "Le statut au tableau, la clause dans le document : deux clics séparent la question de la réponse."
   }

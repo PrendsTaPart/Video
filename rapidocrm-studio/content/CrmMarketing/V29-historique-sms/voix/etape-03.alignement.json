@@ -2,36 +2,51 @@
   {
     "mot": "L'icône",
     "debut": 0,
-    "fin": 0.418
+    "fin": 0.441
   },
   {
     "mot": "rouvre",
-    "debut": 0.441,
-    "fin": 0.639
+    "debut": 0.476,
+    "fin": 0.685
   },
   {
     "mot": "le",
-    "debut": 0.673,
-    "fin": 0.731
+    "debut": 0.708,
+    "fin": 0.766
   },
   {
     "mot": "message,",
-    "debut": 0.778,
-    "fin": 1.196
+    "debut": 0.813,
+    "fin": 1.265
   },
   {
     "mot": "mot",
-    "debut": 1.231,
-    "fin": 1.358
+    "debut": 1.289,
+    "fin": 1.428
   },
   {
     "mot": "pour",
-    "debut": 1.382,
-    "fin": 1.509
+    "debut": 1.451,
+    "fin": 1.579
   },
   {
     "mot": "mot.",
-    "debut": 1.544,
-    "fin": 1.753
+    "debut": 1.625,
+    "fin": 1.834
+  },
+  {
+    "mot": "Puis",
+    "debut": 2.009,
+    "fin": 2.241
+  },
+  {
+    "mot": "on",
+    "debut": 2.299,
+    "fin": 2.392
+  },
+  {
+    "mot": "ferme.",
+    "debut": 2.45,
+    "fin": 2.763
   }
 ]

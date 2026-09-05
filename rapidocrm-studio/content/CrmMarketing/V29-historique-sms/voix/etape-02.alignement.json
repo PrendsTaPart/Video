@@ -2,41 +2,41 @@
   {
     "mot": "Ici,",
     "debut": 0,
-    "fin": 0.325
+    "fin": 0.302
   },
   {
     "mot": "le",
-    "debut": 0.348,
-    "fin": 0.418
+    "debut": 0.325,
+    "fin": 0.395
   },
   {
     "mot": "numéro",
-    "debut": 0.453,
-    "fin": 0.743
+    "debut": 0.43,
+    "fin": 0.65
   },
   {
     "mot": "du",
-    "debut": 0.778,
-    "fin": 0.859
+    "debut": 0.72,
+    "fin": 0.778
   },
   {
     "mot": "destinataire",
-    "debut": 0.906,
-    "fin": 1.556
+    "debut": 0.824,
+    "fin": 1.37
   },
   {
     "mot": "est",
-    "debut": 1.579,
-    "fin": 1.672
+    "debut": 1.393,
+    "fin": 1.474
   },
   {
     "mot": "une",
-    "debut": 1.753,
-    "fin": 1.846
+    "debut": 1.567,
+    "fin": 1.66
   },
   {
     "mot": "colonne.",
-    "debut": 1.881,
-    "fin": 2.31
+    "debut": 1.695,
+    "fin": 2.136
   }
 ]

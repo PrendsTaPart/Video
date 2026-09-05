@@ -1,770 +1,836 @@
 {
-  "duree_totale": 50.232000000000006,
+  "duree_totale": 54.55200000000001,
   "blocs": [
     {
       "id": "hook",
       "fichier": "voix/hook.mp3",
       "debut": 0,
-      "duree": 8.832,
+      "duree": 7.32,
       "texte": "« Je n'ai jamais reçu votre devis. » Et vous, vous cherchez dans vos envoyés. Le journal des e-mails le retrouve, avec son contenu.",
       "mots": [
         {
           "mot": "«",
           "debut": 0,
-          "fin": 0.081
+          "fin": 0.07
         },
         {
           "mot": "Je",
-          "debut": 0.104,
-          "fin": 0.186
+          "debut": 0.093,
+          "fin": 0.163
         },
         {
           "mot": "n'ai",
           "debut": 0.209,
-          "fin": 0.325
+          "fin": 0.313
         },
         {
           "mot": "jamais",
-          "debut": 0.372,
-          "fin": 0.65
+          "debut": 0.36,
+          "fin": 0.615
         },
         {
           "mot": "reçu",
-          "debut": 0.685,
-          "fin": 0.94
+          "debut": 0.65,
+          "fin": 1.022
         },
         {
           "mot": "votre",
-          "debut": 0.975,
-          "fin": 1.173
+          "debut": 1.091,
+          "fin": 1.335
         },
         {
           "mot": "devis.",
-          "debut": 1.219,
-          "fin": 1.73
+          "debut": 1.37,
+          "fin": 1.765
         },
         {
           "mot": "»",
-          "debut": 1.776,
-          "fin": 1.846
+          "debut": 1.811,
+          "fin": 1.834
         },
         {
           "mot": "Et",
-          "debut": 2.287,
-          "fin": 2.426
+          "debut": 2.009,
+          "fin": 2.125
         },
         {
           "mot": "vous,",
-          "debut": 2.461,
-          "fin": 2.798
+          "debut": 2.159,
+          "fin": 2.438
         },
         {
           "mot": "vous",
-          "debut": 3.123,
-          "fin": 3.297
+          "debut": 2.485,
+          "fin": 2.612
         },
         {
           "mot": "cherchez",
-          "debut": 3.32,
-          "fin": 3.692
+          "debut": 2.635,
+          "fin": 2.914
         },
         {
           "mot": "dans",
-          "debut": 3.738,
-          "fin": 3.855
+          "debut": 2.937,
+          "fin": 3.03
         },
         {
           "mot": "vos",
-          "debut": 3.878,
-          "fin": 3.994
+          "debut": 3.053,
+          "fin": 3.146
         },
         {
           "mot": "envoyés.",
-          "debut": 4.04,
-          "fin": 4.493
+          "debut": 3.204,
+          "fin": 3.657
         },
         {
           "mot": "Le",
-          "debut": 4.876,
-          "fin": 4.981
+          "debut": 3.704,
+          "fin": 3.808
         },
         {
           "mot": "journal",
-          "debut": 5.027,
-          "fin": 5.329
+          "debut": 3.843,
+          "fin": 4.133
         },
         {
           "mot": "des",
-          "debut": 5.387,
-          "fin": 5.515
+          "debut": 4.191,
+          "fin": 4.307
         },
         {
           "mot": "e-mails",
-          "debut": 5.573,
-          "fin": 5.909
+          "debut": 4.365,
+          "fin": 4.644
         },
         {
           "mot": "le",
-          "debut": 5.968,
-          "fin": 6.072
+          "debut": 4.667,
+          "fin": 4.725
         },
         {
           "mot": "retrouve,",
-          "debut": 6.118,
-          "fin": 6.687
+          "debut": 4.783,
+          "fin": 5.271
         },
         {
           "mot": "avec",
-          "debut": 7.012,
-          "fin": 7.268
+          "debut": 5.445,
+          "fin": 5.689
         },
         {
           "mot": "son",
-          "debut": 7.303,
-          "fin": 7.407
+          "debut": 5.724,
+          "fin": 5.828
         },
         {
           "mot": "contenu.",
-          "debut": 7.454,
-          "fin": 7.906
+          "debut": 5.863,
+          "fin": 6.397
         }
       ]
     },
     {
       "id": "intro",
       "fichier": "voix/intro.mp3",
-      "debut": 8.832,
-      "duree": 10.656,
-      "texte": "On part de la page Historique, et on ressort avec l'e-mail sous les yeux. Le tableau liste les envois ; l'icône en bout de ligne rouvre le message tel qu'il est parti.",
+      "debut": 7.32,
+      "duree": 16.032,
+      "texte": "On part de la page Historique, et on ressort avec l'e-mail sous les yeux. Le tableau liste les envois ; l'icône en bout de ligne rouvre le message tel qu'il est parti, avec son objet, son destinataire et son contenu. Rien n'est reconstitué : c'est l'envoi lui-même.",
       "mots": [
         {
           "mot": "On",
           "debut": 0,
-          "fin": 0.128
+          "fin": 0.139
         },
         {
           "mot": "part",
-          "debut": 0.163,
-          "fin": 0.302
+          "debut": 0.186,
+          "fin": 0.337
         },
         {
           "mot": "de",
-          "debut": 0.325,
-          "fin": 0.383
+          "debut": 0.36,
+          "fin": 0.418
         },
         {
           "mot": "la",
-          "debut": 0.418,
-          "fin": 0.476
+          "debut": 0.453,
+          "fin": 0.499
         },
         {
           "mot": "page",
-          "debut": 0.546,
-          "fin": 0.894
+          "debut": 0.557,
+          "fin": 0.801
         },
         {
           "mot": "Historique,",
-          "debut": 0.917,
-          "fin": 1.579
+          "debut": 0.824,
+          "fin": 1.509
         },
         {
           "mot": "et",
-          "debut": 1.602,
-          "fin": 1.718
+          "debut": 1.625,
+          "fin": 1.753
         },
         {
           "mot": "on",
-          "debut": 1.765,
-          "fin": 1.823
+          "debut": 1.8,
+          "fin": 1.869
         },
         {
           "mot": "ressort",
-          "debut": 1.881,
+          "debut": 1.916,
           "fin": 2.229
         },
         {
           "mot": "avec",
           "debut": 2.252,
-          "fin": 2.45
+          "fin": 2.438
         },
         {
           "mot": "l'e-mail",
-          "debut": 2.531,
-          "fin": 2.821
+          "debut": 2.508,
+          "fin": 2.81
         },
         {
           "mot": "sous",
-          "debut": 2.891,
-          "fin": 3.03
+          "debut": 2.926,
+          "fin": 3.1
         },
         {
           "mot": "les",
-          "debut": 3.053,
-          "fin": 3.17
+          "debut": 3.123,
+          "fin": 3.216
         },
         {
           "mot": "yeux.",
-          "debut": 3.228,
-          "fin": 3.46
+          "debut": 3.262,
+          "fin": 3.495
         },
         {
           "mot": "Le",
-          "debut": 3.785,
-          "fin": 3.901
+          "debut": 3.738,
+          "fin": 3.866
         },
         {
           "mot": "tableau",
-          "debut": 3.947,
-          "fin": 4.238
+          "debut": 3.913,
+          "fin": 4.191
         },
         {
           "mot": "liste",
-          "debut": 4.296,
-          "fin": 4.551
+          "debut": 4.238,
+          "fin": 4.493
         },
         {
           "mot": "les",
-          "debut": 4.598,
-          "fin": 4.702
+          "debut": 4.54,
+          "fin": 4.644
         },
         {
           "mot": "envois",
-          "debut": 4.772,
-          "fin": 5.108
+          "debut": 4.702,
+          "fin": 5.05
         },
         {
           "mot": ";",
-          "debut": 5.132,
-          "fin": 5.19
+          "debut": 5.085,
+          "fin": 5.132
         },
         {
           "mot": "l'icône",
-          "debut": 5.468,
-          "fin": 5.886
+          "debut": 5.457,
+          "fin": 5.909
         },
         {
           "mot": "en",
-          "debut": 5.909,
-          "fin": 5.956
+          "debut": 5.933,
+          "fin": 5.979
         },
         {
           "mot": "bout",
-          "debut": 6.014,
-          "fin": 6.165
+          "debut": 6.026,
+          "fin": 6.153
         },
         {
           "mot": "de",
-          "debut": 6.188,
-          "fin": 6.258
+          "debut": 6.177,
+          "fin": 6.246
         },
         {
           "mot": "ligne",
           "debut": 6.304,
-          "fin": 6.618
+          "fin": 6.548
         },
         {
           "mot": "rouvre",
-          "debut": 6.734,
-          "fin": 7.129
+          "debut": 6.629,
+          "fin": 7.001
         },
         {
           "mot": "le",
-          "debut": 7.152,
-          "fin": 7.221
+          "debut": 7.036,
+          "fin": 7.105
         },
         {
           "mot": "message",
-          "debut": 7.268,
-          "fin": 7.767
+          "debut": 7.163,
+          "fin": 7.628
         },
         {
           "mot": "tel",
-          "debut": 7.941,
-          "fin": 8.115
+          "debut": 7.686,
+          "fin": 7.86
         },
         {
           "mot": "qu'il",
-          "debut": 8.162,
-          "fin": 8.301
+          "debut": 7.918,
+          "fin": 8.057
         },
         {
           "mot": "est",
-          "debut": 8.348,
-          "fin": 8.417
+          "debut": 8.115,
+          "fin": 8.185
         },
         {
-          "mot": "parti.",
-          "debut": 8.487,
-          "fin": 8.975
+          "mot": "parti,",
+          "debut": 8.301,
+          "fin": 8.928
+        },
+        {
+          "mot": "avec",
+          "debut": 9.044,
+          "fin": 9.3
+        },
+        {
+          "mot": "son",
+          "debut": 9.334,
+          "fin": 9.451
+        },
+        {
+          "mot": "objet,",
+          "debut": 9.509,
+          "fin": 9.868
+        },
+        {
+          "mot": "son",
+          "debut": 10.019,
+          "fin": 10.205
+        },
+        {
+          "mot": "destinataire",
+          "debut": 10.252,
+          "fin": 10.913
+        },
+        {
+          "mot": "et",
+          "debut": 10.96,
+          "fin": 11.122
+        },
+        {
+          "mot": "son",
+          "debut": 11.157,
+          "fin": 11.273
+        },
+        {
+          "mot": "contenu.",
+          "debut": 11.32,
+          "fin": 11.749
+        },
+        {
+          "mot": "Rien",
+          "debut": 11.993,
+          "fin": 12.249
+        },
+        {
+          "mot": "n'est",
+          "debut": 12.272,
+          "fin": 12.388
+        },
+        {
+          "mot": "reconstitué",
+          "debut": 12.446,
+          "fin": 13.119
+        },
+        {
+          "mot": ":",
+          "debut": 13.212,
+          "fin": 13.235
+        },
+        {
+          "mot": "c'est",
+          "debut": 13.479,
+          "fin": 13.665
+        },
+        {
+          "mot": "l'envoi",
+          "debut": 13.688,
+          "fin": 13.955
+        },
+        {
+          "mot": "lui-même.",
+          "debut": 14.002,
+          "fin": 14.536
         }
       ]
     },
     {
       "id": "etape-01",
       "fichier": "voix/etape-01.mp3",
-      "debut": 19.488,
-      "duree": 4.056,
+      "debut": 23.352,
+      "duree": 4.344,
       "texte": "Première carte de la page Historique : les e-mails. On consulte.",
       "mots": [
         {
           "mot": "Première",
           "debut": 0,
-          "fin": 0.395
+          "fin": 0.372
         },
         {
           "mot": "carte",
-          "debut": 0.418,
-          "fin": 0.627
+          "debut": 0.395,
+          "fin": 0.592
         },
         {
           "mot": "de",
-          "debut": 0.65,
-          "fin": 0.72
+          "debut": 0.615,
+          "fin": 0.685
         },
         {
           "mot": "la",
-          "debut": 0.766,
-          "fin": 0.836
+          "debut": 0.72,
+          "fin": 0.789
         },
         {
           "mot": "page",
-          "debut": 0.906,
-          "fin": 1.207
+          "debut": 0.848,
+          "fin": 1.115
         },
         {
           "mot": "Historique",
-          "debut": 1.231,
-          "fin": 1.73
+          "debut": 1.149,
+          "fin": 1.695
         },
         {
           "mot": ":",
-          "debut": 1.753,
-          "fin": 1.776
+          "debut": 1.73,
+          "fin": 1.753
         },
         {
           "mot": "les",
-          "debut": 1.823,
-          "fin": 1.939
+          "debut": 1.962,
+          "fin": 2.125
         },
         {
           "mot": "e-mails.",
-          "debut": 1.997,
-          "fin": 2.357
+          "debut": 2.183,
+          "fin": 2.543
         },
         {
           "mot": "On",
-          "debut": 2.403,
-          "fin": 2.508
+          "debut": 2.717,
+          "fin": 2.821
         },
         {
           "mot": "consulte.",
-          "debut": 2.554,
-          "fin": 3.088
+          "debut": 2.868,
+          "fin": 3.437
         }
       ]
     },
     {
       "id": "etape-02",
       "fichier": "voix/etape-02.mp3",
-      "debut": 23.544,
-      "duree": 3.048,
+      "debut": 27.696,
+      "duree": 2.76,
       "texte": "Une ligne par envoi, avec sa date.",
       "mots": [
         {
           "mot": "Une",
           "debut": 0,
-          "fin": 0.255
+          "fin": 0.209
         },
         {
           "mot": "ligne",
-          "debut": 0.279,
-          "fin": 0.464
+          "debut": 0.232,
+          "fin": 0.441
         },
         {
           "mot": "par",
-          "debut": 0.488,
-          "fin": 0.639
+          "debut": 0.476,
+          "fin": 0.592
         },
         {
           "mot": "envoi,",
-          "debut": 0.673,
-          "fin": 1.08
+          "debut": 0.615,
+          "fin": 0.998
         },
         {
           "mot": "avec",
-          "debut": 1.161,
-          "fin": 1.405
+          "debut": 1.091,
+          "fin": 1.335
         },
         {
           "mot": "sa",
-          "debut": 1.463,
-          "fin": 1.556
+          "debut": 1.37,
+          "fin": 1.451
         },
         {
           "mot": "date.",
-          "debut": 1.614,
-          "fin": 1.974
+          "debut": 1.509,
+          "fin": 1.811
         }
       ]
     },
     {
       "id": "etape-03",
       "fichier": "voix/etape-03.mp3",
-      "debut": 26.592,
-      "duree": 5.304,
-      "texte": "L'icône en bout de ligne rouvre le message : objet, destinataire, contenu.",
+      "debut": 30.456000000000003,
+      "duree": 6.792,
+      "texte": "L'icône en bout de ligne rouvre le message : objet, destinataire, contenu. Puis on referme.",
       "mots": [
         {
           "mot": "L'icône",
           "debut": 0,
-          "fin": 0.406
+          "fin": 0.464
         },
         {
           "mot": "en",
-          "debut": 0.43,
-          "fin": 0.476
+          "debut": 0.499,
+          "fin": 0.58
         },
         {
           "mot": "bout",
-          "debut": 0.511,
-          "fin": 0.639
-        },
-        {
-          "mot": "de",
-          "debut": 0.662,
+          "debut": 0.627,
           "fin": 0.743
         },
         {
+          "mot": "de",
+          "debut": 0.766,
+          "fin": 0.848
+        },
+        {
           "mot": "ligne",
-          "debut": 0.789,
-          "fin": 1.045
+          "debut": 0.894,
+          "fin": 1.091
         },
         {
           "mot": "rouvre",
-          "debut": 1.103,
-          "fin": 1.358
+          "debut": 1.149,
+          "fin": 1.44
         },
         {
           "mot": "le",
-          "debut": 1.393,
-          "fin": 1.451
+          "debut": 1.463,
+          "fin": 1.509
         },
         {
           "mot": "message",
-          "debut": 1.498,
-          "fin": 1.939
+          "debut": 1.556,
+          "fin": 1.974
         },
         {
           "mot": ":",
-          "debut": 1.985,
-          "fin": 2.009
+          "debut": 2.009,
+          "fin": 2.032
         },
         {
           "mot": "objet,",
-          "debut": 2.45,
-          "fin": 2.937
+          "debut": 2.241,
+          "fin": 2.728
         },
         {
           "mot": "destinataire,",
-          "debut": 2.995,
-          "fin": 3.738
+          "debut": 3.007,
+          "fin": 3.785
         },
         {
           "mot": "contenu.",
-          "debut": 3.855,
-          "fin": 4.389
-        }
-      ]
-    },
-    {
-      "id": "etape-04",
-      "fichier": "voix/etape-04.mp3",
-      "debut": 31.896,
-      "duree": 1.728,
-      "texte": "Et on referme.",
-      "mots": [
+          "debut": 4.029,
+          "fin": 4.563
+        },
         {
-          "mot": "Et",
-          "debut": 0,
-          "fin": 0.151
+          "mot": "Puis",
+          "debut": 5.004,
+          "fin": 5.236
         },
         {
           "mot": "on",
-          "debut": 0.186,
-          "fin": 0.279
+          "debut": 5.259,
+          "fin": 5.317
         },
         {
           "mot": "referme.",
-          "debut": 0.337,
-          "fin": 0.755
+          "debut": 5.364,
+          "fin": 5.851
         }
       ]
     },
     {
       "id": "claude",
       "fichier": "voix/claude.mp3",
-      "debut": 33.624,
-      "duree": 11.904,
+      "debut": 37.248000000000005,
+      "duree": 12.408,
       "texte": "Le journal montre le détail. Pour le total du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
       "mots": [
         {
           "mot": "Le",
           "debut": 0,
-          "fin": 0.151
+          "fin": 0.163
         },
         {
           "mot": "journal",
-          "debut": 0.197,
-          "fin": 0.499
+          "debut": 0.186,
+          "fin": 0.511
         },
         {
           "mot": "montre",
-          "debut": 0.557,
-          "fin": 0.801
+          "debut": 0.58,
+          "fin": 0.836
         },
         {
           "mot": "le",
-          "debut": 0.824,
-          "fin": 0.882
+          "debut": 0.859,
+          "fin": 0.929
         },
         {
           "mot": "détail.",
-          "debut": 0.917,
-          "fin": 1.37
+          "debut": 0.964,
+          "fin": 1.393
         },
         {
           "mot": "Pour",
-          "debut": 1.463,
-          "fin": 1.66
+          "debut": 1.428,
+          "fin": 1.602
         },
         {
           "mot": "le",
-          "debut": 1.683,
-          "fin": 1.741
+          "debut": 1.625,
+          "fin": 1.683
         },
         {
           "mot": "total",
-          "debut": 1.788,
-          "fin": 2.055
+          "debut": 1.73,
+          "fin": 2.02
         },
         {
           "mot": "du",
-          "debut": 2.101,
-          "fin": 2.183
+          "debut": 2.055,
+          "fin": 2.148
         },
         {
           "mot": "mois,",
-          "debut": 2.241,
-          "fin": 2.473
+          "debut": 2.206,
+          "fin": 2.485
         },
         {
           "mot": "RapidoCRM",
-          "debut": 2.543,
-          "fin": 3.332
+          "debut": 2.612,
+          "fin": 3.402
         },
         {
           "mot": "parle",
-          "debut": 3.402,
-          "fin": 3.611
+          "debut": 3.448,
+          "fin": 3.646
         },
         {
           "mot": "à",
-          "debut": 3.634,
-          "fin": 3.657
+          "debut": 3.669,
+          "fin": 3.692
         },
         {
           "mot": "Claude",
-          "debut": 3.727,
-          "fin": 4.087
+          "debut": 3.75,
+          "fin": 4.122
         },
         {
           "mot": ":",
-          "debut": 4.122,
-          "fin": 4.191
+          "debut": 4.145,
+          "fin": 4.168
         },
         {
           "mot": "vous",
-          "debut": 4.516,
-          "fin": 4.656
+          "debut": 4.319,
+          "fin": 4.47
         },
         {
           "mot": "demandez",
-          "debut": 4.679,
-          "fin": 4.992
+          "debut": 4.505,
+          "fin": 4.853
         },
         {
           "mot": "en",
-          "debut": 5.016,
-          "fin": 5.074
+          "debut": 4.899,
+          "fin": 4.957
         },
         {
           "mot": "français,",
-          "debut": 5.132,
-          "fin": 5.619
+          "debut": 5.016,
+          "fin": 5.55
         },
         {
           "mot": "il",
-          "debut": 5.666,
-          "fin": 5.782
+          "debut": 5.677,
+          "fin": 5.828
         },
         {
           "mot": "lit",
-          "debut": 5.84,
-          "fin": 5.944
+          "debut": 5.909,
+          "fin": 6.014
         },
         {
           "mot": "vos",
-          "debut": 5.968,
-          "fin": 6.084
+          "debut": 6.049,
+          "fin": 6.165
         },
         {
           "mot": "données",
-          "debut": 6.107,
-          "fin": 6.467
+          "debut": 6.188,
+          "fin": 6.56
         },
         {
           "mot": "et",
-          "debut": 6.641,
+          "debut": 6.618,
           "fin": 6.78
         },
         {
           "mot": "répond.",
           "debut": 6.827,
-          "fin": 7.198
+          "fin": 7.245
         },
         {
           "mot": "Copiez",
-          "debut": 7.523,
-          "fin": 7.848
+          "debut": 7.396,
+          "fin": 7.79
         },
         {
           "mot": "ce",
-          "debut": 7.872,
-          "fin": 7.976
+          "debut": 7.814,
+          "fin": 7.918
         },
         {
           "mot": "prompt,",
-          "debut": 8.034,
-          "fin": 8.475
+          "debut": 7.976,
+          "fin": 8.429
         },
         {
           "mot": "remplacez",
-          "debut": 8.51,
-          "fin": 8.963
+          "debut": 8.58,
+          "fin": 9.16
         },
         {
           "mot": "ce",
-          "debut": 8.986,
-          "fin": 9.067
+          "debut": 9.242,
+          "fin": 9.381
         },
         {
           "mot": "qui",
-          "debut": 9.125,
-          "fin": 9.242
+          "debut": 9.427,
+          "fin": 9.532
         },
         {
           "mot": "est",
-          "debut": 9.288,
-          "fin": 9.369
-        },
-        {
-          "mot": "entre",
-          "debut": 9.439,
+          "debut": 9.555,
           "fin": 9.625
         },
         {
+          "mot": "entre",
+          "debut": 9.694,
+          "fin": 9.88
+        },
+        {
           "mot": "crochets.",
-          "debut": 9.671,
-          "fin": 10.17
+          "debut": 9.915,
+          "fin": 10.391
         }
       ]
     },
     {
       "id": "punchline",
       "fichier": "voix/punchline.mp3",
-      "debut": 45.528000000000006,
-      "duree": 4.704,
+      "debut": 49.656000000000006,
+      "duree": 4.896,
       "texte": "Ce qui est parti reste lisible : la discussion ne dépend plus de votre boîte mail.",
       "mots": [
         {
           "mot": "Ce",
           "debut": 0,
-          "fin": 0.151
+          "fin": 0.186
         },
         {
           "mot": "qui",
-          "debut": 0.209,
-          "fin": 0.302
+          "debut": 0.232,
+          "fin": 0.36
         },
         {
           "mot": "est",
-          "debut": 0.337,
-          "fin": 0.406
+          "debut": 0.418,
+          "fin": 0.488
         },
         {
           "mot": "parti",
-          "debut": 0.43,
-          "fin": 0.72
+          "debut": 0.511,
+          "fin": 0.789
         },
         {
           "mot": "reste",
-          "debut": 0.789,
-          "fin": 1.01
+          "debut": 0.836,
+          "fin": 1.045
         },
         {
           "mot": "lisible",
-          "debut": 1.057,
-          "fin": 1.474
-        },
-        {
-          "mot": ":",
-          "debut": 1.498,
+          "debut": 1.091,
           "fin": 1.521
         },
         {
+          "mot": ":",
+          "debut": 1.567,
+          "fin": 1.614
+        },
+        {
           "mot": "la",
-          "debut": 1.695,
-          "fin": 1.765
+          "debut": 1.73,
+          "fin": 1.823
         },
         {
           "mot": "discussion",
-          "debut": 1.823,
-          "fin": 2.322
+          "debut": 1.869,
+          "fin": 2.473
         },
         {
           "mot": "ne",
-          "debut": 2.357,
-          "fin": 2.426
+          "debut": 2.531,
+          "fin": 2.601
         },
         {
           "mot": "dépend",
-          "debut": 2.473,
-          "fin": 2.752
-        },
-        {
-          "mot": "plus",
-          "debut": 2.786,
+          "debut": 2.647,
           "fin": 2.926
         },
         {
+          "mot": "plus",
+          "debut": 2.961,
+          "fin": 3.1
+        },
+        {
           "mot": "de",
-          "debut": 2.949,
-          "fin": 3.007
+          "debut": 3.123,
+          "fin": 3.17
         },
         {
           "mot": "votre",
-          "debut": 3.042,
-          "fin": 3.262
+          "debut": 3.204,
+          "fin": 3.367
         },
         {
           "mot": "boîte",
-          "debut": 3.297,
-          "fin": 3.495
+          "debut": 3.413,
+          "fin": 3.611
         },
         {
           "mot": "mail.",
-          "debut": 3.529,
-          "fin": 3.785
+          "debut": 3.646,
+          "fin": 3.936
         }
       ]
     }

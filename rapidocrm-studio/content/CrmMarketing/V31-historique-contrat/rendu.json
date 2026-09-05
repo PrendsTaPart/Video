@@ -1,13 +1,13 @@
 {
-  "duree": 54.333333333333336,
+  "duree": 55.1,
   "fichiers": [
     {
       "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V31-historique-contrat/out/master-16x9.mp4",
-      "octets": 7164311
+      "octets": 7613698
     },
     {
       "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V31-historique-contrat/out/master-9x16.mp4",
-      "octets": 6431981
+      "octets": 6699735
     }
   ],
   "sequences": [
@@ -19,27 +19,27 @@
     {
       "nom": "hook",
       "debut": 1.4,
-      "fin": 9.333333333333334
+      "fin": 8.4
     },
     {
       "nom": "titre",
-      "debut": 9.333333333333334,
-      "fin": 20.033333333333335
+      "debut": 8.4,
+      "fin": 22.433333333333334
     },
     {
       "nom": "demo",
-      "debut": 20.033333333333335,
-      "fin": 35.4
+      "debut": 22.433333333333334,
+      "fin": 37.5
     },
     {
       "nom": "claude",
-      "debut": 35.4,
-      "fin": 48.7
+      "debut": 37.5,
+      "fin": 49.4
     },
     {
       "nom": "punchline",
-      "debut": 48.7,
-      "fin": 54.333333333333336
+      "debut": 49.4,
+      "fin": 55.1
     }
   ],
   "chapitres_youtube": [
@@ -48,35 +48,33 @@
       "titre": "Un contrat envoyé en mai, une question sur sa durée en septembre. Où est le document ?"
     },
     {
-      "timecode": "00:09",
+      "timecode": "00:08",
       "titre": "Historique contrat"
     },
     {
-      "timecode": "00:20",
+      "timecode": "00:22",
       "titre": "Ouvrir l'historique des contrats"
     },
     {
-      "timecode": "00:24",
+      "timecode": "00:26",
       "titre": "Lire le tableau des contrats"
     },
     {
-      "timecode": "00:28",
+      "timecode": "00:30",
       "titre": "Ouvrir le contrat"
     },
     {
-      "timecode": "00:30",
+      "timecode": "00:32",
       "titre": "Parcourir le contrat, page par page"
     },
     {
-      "timecode": "00:35",
+      "timecode": "00:37",
       "titre": "Faites-le avec Claude"
     },
     {
-      "timecode": "00:48",
+      "timecode": "00:49",
       "titre": "À retenir"
     }
   ],
-  "avertissements": [
-    "Durée finale 54s, hors de la fenêtre 55–170s."
-  ]
+  "avertissements": []
 }

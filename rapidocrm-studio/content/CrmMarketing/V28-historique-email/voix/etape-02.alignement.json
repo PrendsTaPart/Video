@@ -2,36 +2,36 @@
   {
     "mot": "Une",
     "debut": 0,
-    "fin": 0.255
+    "fin": 0.209
   },
   {
     "mot": "ligne",
-    "debut": 0.279,
-    "fin": 0.464
+    "debut": 0.232,
+    "fin": 0.441
   },
   {
     "mot": "par",
-    "debut": 0.488,
-    "fin": 0.639
+    "debut": 0.476,
+    "fin": 0.592
   },
   {
     "mot": "envoi,",
-    "debut": 0.673,
-    "fin": 1.08
+    "debut": 0.615,
+    "fin": 0.998
   },
   {
     "mot": "avec",
-    "debut": 1.161,
-    "fin": 1.405
+    "debut": 1.091,
+    "fin": 1.335
   },
   {
     "mot": "sa",
-    "debut": 1.463,
-    "fin": 1.556
+    "debut": 1.37,
+    "fin": 1.451
   },
   {
     "mot": "date.",
-    "debut": 1.614,
-    "fin": 1.974
+    "debut": 1.509,
+    "fin": 1.811
   }
 ]

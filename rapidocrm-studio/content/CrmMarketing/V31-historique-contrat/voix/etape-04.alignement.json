@@ -2,71 +2,71 @@
   {
     "mot": "Le",
     "debut": 0,
-    "fin": 0.151
+    "fin": 0.139
   },
   {
     "mot": "document",
-    "debut": 0.186,
-    "fin": 0.557
+    "debut": 0.174,
+    "fin": 0.534
   },
   {
     "mot": "s'ouvre",
-    "debut": 0.604,
-    "fin": 0.882
+    "debut": 0.58,
+    "fin": 0.778
   },
   {
     "mot": "dans",
-    "debut": 0.906,
-    "fin": 1.045
+    "debut": 0.801,
+    "fin": 0.952
   },
   {
     "mot": "un",
-    "debut": 1.115,
-    "fin": 1.161
+    "debut": 1.01,
+    "fin": 1.068
   },
   {
     "mot": "onglet,",
-    "debut": 1.231,
-    "fin": 1.753
+    "debut": 1.149,
+    "fin": 1.683
   },
   {
     "mot": "avec",
-    "debut": 2.032,
-    "fin": 2.276
+    "debut": 2.009,
+    "fin": 2.299
   },
   {
     "mot": "ses",
-    "debut": 2.31,
-    "fin": 2.426
+    "debut": 2.357,
+    "fin": 2.461
   },
   {
     "mot": "pages",
-    "debut": 2.461,
-    "fin": 2.763
+    "debut": 2.508,
+    "fin": 2.81
   },
   {
     "mot": "en",
-    "debut": 2.798,
-    "fin": 2.868
+    "debut": 2.844,
+    "fin": 2.914
   },
   {
     "mot": "vignettes",
-    "debut": 2.914,
-    "fin": 3.355
+    "debut": 2.961,
+    "fin": 3.297
   },
   {
     "mot": "sur",
-    "debut": 3.564,
-    "fin": 3.738
+    "debut": 3.32,
+    "fin": 3.448
   },
   {
     "mot": "le",
-    "debut": 3.762,
-    "fin": 3.82
+    "debut": 3.483,
+    "fin": 3.541
   },
   {
     "mot": "côté.",
-    "debut": 3.855,
-    "fin": 4.226
+    "debut": 3.576,
+    "fin": 3.947
   }
 ]

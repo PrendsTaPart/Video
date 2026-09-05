@@ -1,13 +1,13 @@
 {
-  "duree": 51.63333333333333,
+  "duree": 55.96666666666667,
   "fichiers": [
     {
       "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V28-historique-email/out/master-16x9.mp4",
-      "octets": 7722726
+      "octets": 7588419
     },
     {
       "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V28-historique-email/out/master-9x16.mp4",
-      "octets": 6053683
+      "octets": 6311814
     }
   ],
   "sequences": [
@@ -19,27 +19,27 @@
     {
       "nom": "hook",
       "debut": 1.4,
-      "fin": 10.233333333333333
+      "fin": 8.733333333333333
     },
     {
       "nom": "titre",
-      "debut": 10.233333333333333,
-      "fin": 20.9
+      "debut": 8.733333333333333,
+      "fin": 24.766666666666666
     },
     {
       "nom": "demo",
-      "debut": 20.9,
-      "fin": 35.03333333333333
+      "debut": 24.766666666666666,
+      "fin": 38.666666666666664
     },
     {
       "nom": "claude",
-      "debut": 35.03333333333333,
-      "fin": 46.93333333333333
+      "debut": 38.666666666666664,
+      "fin": 51.06666666666667
     },
     {
       "nom": "punchline",
-      "debut": 46.93333333333333,
-      "fin": 51.63333333333333
+      "debut": 51.06666666666667,
+      "fin": 55.96666666666667
     }
   ],
   "chapitres_youtube": [
@@ -48,35 +48,29 @@
       "titre": "« Je n'ai jamais reçu votre devis. » Et vous, vous cherchez dans vos envoyés."
     },
     {
-      "timecode": "00:10",
+      "timecode": "00:08",
       "titre": "Historique email"
     },
     {
-      "timecode": "00:20",
+      "timecode": "00:24",
       "titre": "Ouvrir l'historique des e-mails"
     },
     {
-      "timecode": "00:24",
+      "timecode": "00:29",
       "titre": "Lire le tableau des envois"
     },
     {
-      "timecode": "00:28",
+      "timecode": "00:31",
       "titre": "Rouvrir un e-mail envoyé"
     },
     {
-      "timecode": "00:33",
-      "titre": "Revenir à la liste"
-    },
-    {
-      "timecode": "00:35",
+      "timecode": "00:38",
       "titre": "Faites-le avec Claude"
     },
     {
-      "timecode": "00:46",
+      "timecode": "00:51",
       "titre": "À retenir"
     }
   ],
-  "avertissements": [
-    "Durée finale 52s, hors de la fenêtre 55–170s."
-  ]
+  "avertissements": []
 }

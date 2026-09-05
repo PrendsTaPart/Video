@@ -1,13 +1,13 @@
 {
-  "duree": 53.96666666666667,
+  "duree": 59.7,
   "fichiers": [
     {
       "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V33-historique-facture/out/master-16x9.mp4",
-      "octets": 6850750
+      "octets": 7556033
     },
     {
       "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V33-historique-facture/out/master-9x16.mp4",
-      "octets": 6215026
+      "octets": 6891604
     }
   ],
   "sequences": [
@@ -19,27 +19,27 @@
     {
       "nom": "hook",
       "debut": 1.4,
-      "fin": 9.633333333333333
+      "fin": 9.866666666666667
     },
     {
       "nom": "titre",
-      "debut": 9.633333333333333,
-      "fin": 19.6
+      "debut": 9.866666666666667,
+      "fin": 26.1
     },
     {
       "nom": "demo",
-      "debut": 19.6,
-      "fin": 34.733333333333334
+      "debut": 26.1,
+      "fin": 42.166666666666664
     },
     {
       "nom": "claude",
-      "debut": 34.733333333333334,
-      "fin": 47.833333333333336
+      "debut": 42.166666666666664,
+      "fin": 54.266666666666666
     },
     {
       "nom": "punchline",
-      "debut": 47.833333333333336,
-      "fin": 53.96666666666667
+      "debut": 54.266666666666666,
+      "fin": 59.7
     }
   ],
   "chapitres_youtube": [
@@ -52,31 +52,29 @@
       "titre": "Historique facture"
     },
     {
-      "timecode": "00:19",
+      "timecode": "00:26",
       "titre": "Ouvrir l'historique des factures"
     },
     {
-      "timecode": "00:25",
+      "timecode": "00:32",
       "titre": "Lire les colonnes du tableau"
     },
     {
-      "timecode": "00:29",
+      "timecode": "00:36",
       "titre": "Ouvrir une facture"
     },
     {
-      "timecode": "00:32",
+      "timecode": "00:39",
       "titre": "Lire la facture et la télécharger"
     },
     {
-      "timecode": "00:34",
+      "timecode": "00:42",
       "titre": "Faites-le avec Claude"
     },
     {
-      "timecode": "00:47",
+      "timecode": "00:54",
       "titre": "À retenir"
     }
   ],
-  "avertissements": [
-    "Durée finale 54s, hors de la fenêtre 55–170s."
-  ]
+  "avertissements": []
 }

@@ -14,7 +14,7 @@ Module **CrmMarketing** · V28 · `06-historique-email`
 
 ## Intro
 
-On part de la page Historique, et on ressort avec l'e-mail sous les yeux. Le tableau liste les envois ; l'icône en bout de ligne rouvre le message tel qu'il est parti.
+On part de la page Historique, et on ressort avec l'e-mail sous les yeux. Le tableau liste les envois ; l'icône en bout de ligne rouvre le message tel qu'il est parti, avec son objet, son destinataire et son contenu. Rien n'est reconstitué : c'est l'envoi lui-même.
 
 ## Démo
 
@@ -32,15 +32,9 @@ Une ligne par envoi, avec sa date.
 
 ### 3. Rouvrir un e-mail envoyé
 
-_10.0s → 15.0s · 12 mots · ~4.8s_
+_10.0s → 15.8s · 15 mots · ~6.0s_
 
-L'icône en bout de ligne rouvre le message : objet, destinataire, contenu.
-
-### 4. Revenir à la liste
-
-_15.0s → 15.8s · 3 mots · ~1.2s_
-
-Et on referme.
+L'icône en bout de ligne rouvre le message : objet, destinataire, contenu. Puis on referme.
 
 ## Faites-le avec Claude
 
