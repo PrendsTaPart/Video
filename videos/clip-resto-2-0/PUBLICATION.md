@@ -65,9 +65,34 @@ Il n'y a aucune voie pour forcer la sortie depuis le MCP :
 À reprendre à la main depuis /admin/social, ou une fois le worker LinkedIn
 remis en route — le post 833 est prêt et n'attend que ça.
 
-### Diagnostic : c'est la vidéo qui casse, pas LinkedIn
+### Diagnostic : c'est la taille du fichier
 
-Deux échecs, deux causes différentes :
+Des vidéos sortent bien sur LinkedIn — mais uniquement des petites. Relevé
+sur les posts d'août et septembre :
+
+| Post | Fichier | Taille | Résultat |
+|---|---|---|---|
+| 614 | EP501 | 1,5 Mo | ✅ `urn:li:ugcPost:7497767232018489344` |
+| 617 | EP502 | 2,1 Mo | ✅ `urn:li:ugcPost:7497949939990286336` |
+| 632, 635, 639 | EP505/506/507 | ~2 Mo | ✅ |
+| 487 | haccp-historique | 5,2 Mo | ❌ `error creating asset401` |
+| 490 | etiquettes | 7,7 Mo | ❌ `error creating asset401` |
+| 637 | clip « il était une fois un restaurant » | **83 Mo** | ❌ jamais sorti |
+| 842 | clip « Resto 2.0 » | **60 Mo** | ❌ `Undefined array key "etag"` |
+
+Vingt-quatre tutoriels FoodEatUp (5 à 8 Mo) échouent tous en `asset401`, et
+**le clip musical précédent n'est jamais sorti sur LinkedIn non plus**. La
+bascule se situe entre 2,1 Mo (passe) et 5,2 Mo (échoue).
+
+Les deux messages d'erreur sont le même incident à deux étapes : la création
+de l'asset chez LinkedIn répond 401, puis le code lit `etag` dans une réponse
+vide. L'envoi vidéo de RapidoCMS ne tient donc pas les gros fichiers — ce
+n'est ni le compte, ni le jeton, ni le clip.
+
+### Ce qui avait été conclu à tort
+
+Premier diagnostic, incomplet — il concluait que « le chemin vidéo est
+cassé », alors qu'il ne l'est que passé un certain poids :
 
 - **833** (page société, vidéo native) : le job 947 n'a **jamais tourné**.
   `updated_at` n'a pas bougé depuis la création.
@@ -101,6 +126,17 @@ marque sur la page.
 `create_draft_tool` refuse `linkedin_profile` comme `social_type` — il
 n'accepte que les quatre réseaux de base — mais accepte l'identifiant du
 profil sous `social_type: linkedin`.
+
+### Teaser LinkedIn, pour la vidéo native
+
+`dist/FoodEatUp-Resto-2-0-teaser-linkedin-1280x720.mp4` — 21,8 s, 1280×720,
+**1,70 Mo**, découpé sur le premier refrain (accroche chantée, flash logo,
+double-O en signe infini). Il tient dans la bande qui fonctionne (1,5–2,1 Mo)
+et devrait donc passer en vidéo native.
+
+Son import en bibliothèque échoue encore : `upload_file_tool` récupère un 404
+sur `raw.githubusercontent.com` alors que le fichier y répond en 206 — un
+retard de propagation du CDN, à réessayer.
 
 **Reste à nettoyer, à la main :** les posts vidéo 833 (page) et 842 (profil)
 traînent encore. 842 est déjà marqué `statut 1` et ne repartira pas. 833 est
