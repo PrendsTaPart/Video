@@ -53,7 +53,39 @@
     ],
     "cartes": ["Plan de nettoyage", "Checklist hygiène", "HACCP", "Employés"],
     "texte_ecran": "Qui a nettoyé ? C'est écrit.",
-    "sfx": "passage couleur, tick par action, impact final."
+    "sfx": "passage couleur, tick par action, impact final.",
+    "ui": {
+      "acte2": {
+        "lignes": [
+          {
+            "chip": "hotte"
+          },
+          {
+            "chip": "qui ?"
+          },
+          {
+            "chip": "quand ?"
+          }
+        ],
+        "alerte": true
+      },
+      "acte3": {
+        "titre": "Plan de nettoyage",
+        "chips": [
+          "Jour",
+          "Semaine",
+          "Mois"
+        ],
+        "chip_actif": 0,
+        "confirmation": "nettoyage tracé",
+        "grille": {
+          "cols": 3,
+          "rows": 2,
+          "cible": 3
+        },
+        "label_bas": "Checklist hygiène"
+      }
+    }
   }
 },
 {
@@ -107,7 +139,38 @@
     ],
     "cartes": ["Congés", "Planning", "Shifts", "Employés"],
     "texte_ecran": "Validez sans vous retrouver seul.",
-    "sfx": "alerte douce, tick de validation, impact final."
+    "sfx": "alerte douce, tick de validation, impact final.",
+    "ui": {
+      "acte2": {
+        "lignes": [
+          {
+            "chip": "samedi"
+          },
+          {
+            "chip": "samedi"
+          },
+          {
+            "chip": "samedi"
+          }
+        ],
+        "alerte": true
+      },
+      "acte3": {
+        "type": "liste",
+        "titre": "Congés",
+        "chips": [
+          "À valider",
+          "Validés"
+        ],
+        "chip_actif": 0,
+        "confirmation": "conflit évité",
+        "lignes": 3,
+        "cible": 2,
+        "statut_initial": "à valider",
+        "statut_final": "refusé",
+        "label_bas": "Planning"
+      }
+    }
   }
 },
 {
@@ -162,7 +225,38 @@
     ],
     "cartes": ["Fidélité", "Récompenses", "Roue cadeaux", "Bons", "Stock"],
     "texte_ecran": "La roue tourne. Le stock suit.",
-    "sfx": "tick de roue, ding de gain, impact final."
+    "sfx": "tick de roue, ding de gain, impact final.",
+    "ui": {
+      "acte2": {
+        "lignes": [
+          {
+            "chip": "1 tour"
+          },
+          {
+            "chip": "30 desserts"
+          },
+          {
+            "chip": "stock 12"
+          }
+        ],
+        "alerte": true
+      },
+      "acte3": {
+        "titre": "Roue cadeaux",
+        "chips": [
+          "Lots",
+          "Lancers"
+        ],
+        "chip_actif": 0,
+        "confirmation": "bon validé",
+        "grille": {
+          "cols": 3,
+          "rows": 2,
+          "cible": 5
+        },
+        "label_bas": "Fidélité"
+      }
+    }
   }
 },
 {
@@ -217,7 +311,38 @@
     ],
     "cartes": ["Ardoises", "Caisse", "Clients", "Paiements"],
     "texte_ecran": "L'ardoise ne s'oublie plus.",
-    "sfx": "papier qui se replie, tick de règlement, impact final."
+    "sfx": "papier qui se replie, tick de règlement, impact final.",
+    "ui": {
+      "acte2": {
+        "lignes": [
+          {
+            "chip": "6 mois"
+          },
+          {
+            "chip": "84 lignes"
+          },
+          {
+            "chip": "412 €"
+          }
+        ],
+        "alerte": true
+      },
+      "acte3": {
+        "type": "liste",
+        "titre": "Ardoises",
+        "chips": [
+          "Ouvertes",
+          "Réglées"
+        ],
+        "chip_actif": 0,
+        "confirmation": "ardoise réglée",
+        "lignes": 3,
+        "cible": 1,
+        "statut_initial": "ouverte",
+        "statut_final": "réglée",
+        "label_bas": "Caisse"
+      }
+    }
   }
 },
 {

@@ -9,6 +9,8 @@
 5. Aucun mot de la liste « à éviter » du lexique voix dans les répliques.
 6. Dialogues en guillemets français, au moins 3 plans par scène.
 7. Voix off tenant dans sa fenêtre (4,6 s → 11,0 s).
+8. Bloc « ui » de l'acte central : présent, cible dans la grille ou la liste, libellés autorisés,
+   confirmation tenant dans la maquette — seul le final de saison en est dispensé.
 
 ## À l'œil, sur chaque épisode monté
 

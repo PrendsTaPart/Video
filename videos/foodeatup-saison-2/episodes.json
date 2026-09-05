@@ -2595,7 +2595,38 @@
      "Alertes production"
     ],
     "texte_ecran": "Planifiez. Produisez. Le stock suit.",
-    "sfx": "cloche courte, tick par ingrédient, impact final."
+    "sfx": "cloche courte, tick par ingrédient, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "300"
+       },
+       {
+        "chip": "299"
+       },
+       {
+        "chip": "il en manque 1"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Production",
+      "chips": [
+       "150",
+       "300"
+      ],
+      "chip_actif": 1,
+      "confirmation": "réappro lancé",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "manquant",
+      "statut_final": "commandé",
+      "label_bas": "Alertes production"
+     }
+    }
    }
   },
   {
@@ -2706,7 +2737,38 @@
      "Factures"
     ],
     "texte_ecran": "Privatisation : tout est écrit.",
-    "sfx": "souffle de bougie, tick par étape, impact final."
+    "sfx": "souffle de bougie, tick par étape, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "12"
+       },
+       {
+        "chip": "12 familles"
+       },
+       {
+        "chip": "50"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Événements privés",
+      "chips": [
+       "Nouvelles",
+       "Devis"
+      ],
+      "chip_actif": 1,
+      "confirmation": "devis accepté",
+      "lignes": 3,
+      "cible": 0,
+      "statut_initial": "nouvelle",
+      "statut_final": "gagnée",
+      "label_bas": "Devis"
+     }
+    }
    }
   },
   {
@@ -2817,7 +2879,39 @@
      "Commandes"
     ],
     "texte_ecran": "Vos zones. Vos règles. Vos livraisons.",
-    "sfx": "tick par zone, notification livrée, impact final."
+    "sfx": "tick par zone, notification livrée, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "12 km"
+       },
+       {
+        "chip": "28 km"
+       },
+       {
+        "chip": "hors zone"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "titre": "Zones de livraison",
+      "chips": [
+       "2 km",
+       "5 km",
+       "10 km"
+      ],
+      "chip_actif": 1,
+      "confirmation": "zone couverte",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 1
+      },
+      "label_bas": "Livraison"
+     }
+    }
    }
   },
   {
@@ -2929,7 +3023,38 @@
      "Stock"
     ],
     "texte_ecran": "Happy hour : réglé d'avance.",
-    "sfx": "tick horloge, remise « ding », impact final."
+    "sfx": "tick horloge, remise « ding », impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "18:00"
+       },
+       {
+        "chip": "20:00"
+       },
+       {
+        "chip": "−30 %"
+       }
+      ],
+      "alerte": false
+     },
+     "acte3": {
+      "titre": "Happy hours",
+      "chips": [
+       "Boissons",
+       "Carte"
+      ],
+      "chip_actif": 0,
+      "confirmation": "remise appliquée",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 4
+      },
+      "label_bas": "Boissons"
+     }
+    }
    }
   },
   {
@@ -3040,7 +3165,39 @@
      "Tables"
     ],
     "texte_ecran": "Divisez la note. Pas vos nerfs.",
-    "sfx": "effacement, tick par part, impact final."
+    "sfx": "effacement, tick par part, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "12 couverts"
+       },
+       {
+        "chip": "1 addition"
+       },
+       {
+        "chip": "÷ 5"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Caisse",
+      "chips": [
+       "Par article",
+       "Par personne",
+       "Parts égales"
+      ],
+      "chip_actif": 1,
+      "confirmation": "note divisée",
+      "lignes": 3,
+      "cible": 2,
+      "statut_initial": "à payer",
+      "statut_final": "payé",
+      "label_bas": "Paiements"
+     }
+    }
    }
   },
   {
@@ -3153,7 +3310,39 @@
      "Commandes"
     ],
     "texte_ecran": "Un plat beau. Et rentable.",
-    "sfx": "tick par ingrédient, jeton, impact final."
+    "sfx": "tick par ingrédient, jeton, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "14 €"
+       },
+       {
+        "chip": "16 €"
+       },
+       {
+        "chip": "− 2 €"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "titre": "Analyse de la carte",
+      "chips": [
+       "Coût",
+       "Marge",
+       "Prix"
+      ],
+      "chip_actif": 1,
+      "confirmation": "prix conseillé 18 €",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 2
+      },
+      "label_bas": "Recettes"
+     }
+    }
    }
   },
   {
@@ -3265,7 +3454,38 @@
      "Récompenses"
     ],
     "texte_ecran": "Comme d'habitude. Vraiment.",
-    "sfx": "tick par fiche, ding de points, impact final."
+    "sfx": "tick par fiche, ding de points, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "3e visite"
+       },
+       {
+        "chip": "sans olives"
+       },
+       {
+        "chip": "table 4"
+       }
+      ],
+      "alerte": false
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Clients",
+      "chips": [
+       "Historique",
+       "Fidélité"
+      ],
+      "chip_actif": 1,
+      "confirmation": "comme d'habitude",
+      "lignes": 3,
+      "cible": 0,
+      "statut_initial": "habitué",
+      "statut_final": "commandé",
+      "label_bas": "Fidélité"
+     }
+    }
    }
   },
   {
@@ -3376,7 +3596,38 @@
      "Postes"
     ],
     "texte_ecran": "De la table à la cuisine. Sans serviette.",
-    "sfx": "whoosh d'envoi, ping cuisine, impact final."
+    "sfx": "whoosh d'envoi, ping cuisine, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "table 7"
+       },
+       {
+        "chip": "3 plats"
+       },
+       {
+        "chip": "envolée"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Commandes",
+      "chips": [
+       "Table 7",
+       "Table 9"
+      ],
+      "chip_actif": 0,
+      "confirmation": "commande envoyée",
+      "lignes": 3,
+      "cible": 0,
+      "statut_initial": "en salle",
+      "statut_final": "en cuisine",
+      "label_bas": "Écran cuisine"
+     }
+    }
    }
   },
   {
@@ -3487,7 +3738,38 @@
      "Notifications"
     ],
     "texte_ecran": "Le téléphone répond. Vous servez.",
-    "sfx": "sonnerie coupée, tick de création, impact final."
+    "sfx": "sonnerie coupée, tick de création, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "3 appels"
+       },
+       {
+        "chip": "1 rush"
+       },
+       {
+        "chip": "0 main libre"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Agent vocal",
+      "chips": [
+       "Réservation",
+       "Commande"
+      ],
+      "chip_actif": 0,
+      "confirmation": "réservation créée",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "en attente",
+      "statut_final": "traité",
+      "label_bas": "Notifications"
+     }
+    }
    }
   },
   {
@@ -3601,7 +3883,39 @@
      "Employés"
     ],
     "texte_ecran": "Qui a nettoyé ? C'est écrit.",
-    "sfx": "passage couleur, tick par action, impact final."
+    "sfx": "passage couleur, tick par action, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "hotte"
+       },
+       {
+        "chip": "qui ?"
+       },
+       {
+        "chip": "quand ?"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "titre": "Plan de nettoyage",
+      "chips": [
+       "Jour",
+       "Semaine",
+       "Mois"
+      ],
+      "chip_actif": 0,
+      "confirmation": "nettoyage tracé",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 3
+      },
+      "label_bas": "Checklist hygiène"
+     }
+    }
    }
   },
   {
@@ -3712,7 +4026,38 @@
      "Employés"
     ],
     "texte_ecran": "Validez sans vous retrouver seul.",
-    "sfx": "alerte douce, tick de validation, impact final."
+    "sfx": "alerte douce, tick de validation, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "samedi"
+       },
+       {
+        "chip": "samedi"
+       },
+       {
+        "chip": "samedi"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Congés",
+      "chips": [
+       "À valider",
+       "Validés"
+      ],
+      "chip_actif": 0,
+      "confirmation": "conflit évité",
+      "lignes": 3,
+      "cible": 2,
+      "statut_initial": "à valider",
+      "statut_final": "refusé",
+      "label_bas": "Planning"
+     }
+    }
    }
   },
   {
@@ -3825,7 +4170,38 @@
      "Stock"
     ],
     "texte_ecran": "La roue tourne. Le stock suit.",
-    "sfx": "tick de roue, ding de gain, impact final."
+    "sfx": "tick de roue, ding de gain, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "1 tour"
+       },
+       {
+        "chip": "30 desserts"
+       },
+       {
+        "chip": "stock 12"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "titre": "Roue cadeaux",
+      "chips": [
+       "Lots",
+       "Lancers"
+      ],
+      "chip_actif": 0,
+      "confirmation": "bon validé",
+      "grille": {
+       "cols": 3,
+       "rows": 2,
+       "cible": 5
+      },
+      "label_bas": "Fidélité"
+     }
+    }
    }
   },
   {
@@ -3936,7 +4312,38 @@
      "Paiements"
     ],
     "texte_ecran": "L'ardoise ne s'oublie plus.",
-    "sfx": "papier qui se replie, tick de règlement, impact final."
+    "sfx": "papier qui se replie, tick de règlement, impact final.",
+    "ui": {
+     "acte2": {
+      "lignes": [
+       {
+        "chip": "6 mois"
+       },
+       {
+        "chip": "84 lignes"
+       },
+       {
+        "chip": "412 €"
+       }
+      ],
+      "alerte": true
+     },
+     "acte3": {
+      "type": "liste",
+      "titre": "Ardoises",
+      "chips": [
+       "Ouvertes",
+       "Réglées"
+      ],
+      "chip_actif": 0,
+      "confirmation": "ardoise réglée",
+      "lignes": 3,
+      "cible": 1,
+      "statut_initial": "ouverte",
+      "statut_final": "réglée",
+      "label_bas": "Caisse"
+     }
+    }
    }
   },
   {

@@ -182,8 +182,14 @@ en `video/mp4`) → `publier_video`.
 
 L'acte central de l'outro (ce qui devient des données, l'écran produit) est **décrit dans
 `episodes/*.json`** sous `montage.ui`, pas codé : un épisode se monte en remplissant ce bloc.
-Les épisodes 13 à 30 ne l'ont pas encore — `render-outro.mjs` le dit explicitement au lieu de
-rendre n'importe quoi.
+Les vingt-neuf épisodes l'ont désormais — 17 à 29 l'ont reçu sans qu'un plan soit généré, il ne
+manque plus que les scènes Seedance pour les rendre. `npm run check` vérifie chaque bloc (cible
+dans la grille ou dans la liste, libellés pris dans la liste autorisée, confirmation qui tient
+dans la maquette) plutôt que de laisser la faute apparaître au rendu.
+
+L'épisode 30 fait exception, et c'est voulu : son découpage remplace la structure imposée
+(mosaïque des 29 chutes, convergence, douze cartes reliées), le gabarit commun ne sait pas le
+rendre et `render-outro.mjs` refuse l'épisode en le disant.
 
 ## Points ouverts
 
@@ -194,3 +200,8 @@ rendre n'importe quoi.
 - **Continuité épisode 01** : la scène 1 et la scène 2 ne se passent pas dans la même salle
   (bistro sombre boisé vs salle rustique à fenêtre). Acceptable en l'état, mais à verrouiller via
   `@Image 3` sur les prochains épisodes.
+- **Final de saison (épisode 30)** : il lui faut son propre gabarit d'outro. Les autres tiennent
+  dans `outro/template.html` ; celui-là a besoin de la mosaïque et de la convergence, qui n'y sont
+  pas. Tant qu'il n'existe pas, l'épisode 30 ne se rend pas.
+- **Épisodes 17 à 30** : aucun plan Seedance dans la bibliothèque. Les fiches de `prompts/` sont
+  prêtes à coller dans l'interface Higgsfield ; rien n'est monté tant que les scènes n'existent pas.

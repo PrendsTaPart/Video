@@ -10,6 +10,8 @@ Généré par `npm run build` (`scripts/build.mjs`) sur 30 épisodes / 60 prompt
 5. Aucun mot de la liste « à éviter » du lexique voix dans les répliques.
 6. Dialogues en guillemets français, au moins 3 plans par scène.
 7. Voix off tenant dans la fenêtre de 6.4 s (4,6 s → 11,0 s).
+8. Bloc « ui » de l'acte central : présent, cible dans la grille ou la liste, libellés autorisés,
+   confirmation tenant dans la maquette — un seul épisode en est dispensé, le final de saison.
 
 ## Ce qui reste à l'œil humain
 Identité de Michael d'une scène à l'autre · absence de texte lisible généré par Seedance ·

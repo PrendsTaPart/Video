@@ -22,6 +22,7 @@ const n = NN(num);
 const S = JSON.parse(readFileSync(join(ROOT, "episodes.json"), "utf8"));
 const ep = S.episodes.find((e) => e.num === num);
 if (!ep) throw new Error(`épisode ${n} introuvable`);
+if (ep.final_saison) throw new Error(`épisode ${n} : final de saison — son découpage remplace la structure imposée (mosaïque des 29 chutes, convergence, douze cartes reliées) et ce gabarit ne sait pas le rendre. Il lui faut le sien.`);
 if (!ep.montage.ui) throw new Error(`épisode ${n} : pas de bloc « ui » dans episodes/ — l'acte central de l'outro n'est pas décrit.`);
 
 const EPDIR = join(ROOT, "renders", `ep${n}`);

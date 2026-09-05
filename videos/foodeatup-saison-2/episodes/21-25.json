@@ -51,7 +51,39 @@
     ],
     "cartes": ["Caisse", "Paiements", "Commandes", "Tables"],
     "texte_ecran": "Divisez la note. Pas vos nerfs.",
-    "sfx": "effacement, tick par part, impact final."
+    "sfx": "effacement, tick par part, impact final.",
+    "ui": {
+      "acte2": {
+        "lignes": [
+          {
+            "chip": "12 couverts"
+          },
+          {
+            "chip": "1 addition"
+          },
+          {
+            "chip": "÷ 5"
+          }
+        ],
+        "alerte": true
+      },
+      "acte3": {
+        "type": "liste",
+        "titre": "Caisse",
+        "chips": [
+          "Par article",
+          "Par personne",
+          "Parts égales"
+        ],
+        "chip_actif": 1,
+        "confirmation": "note divisée",
+        "lignes": 3,
+        "cible": 2,
+        "statut_initial": "à payer",
+        "statut_final": "payé",
+        "label_bas": "Paiements"
+      }
+    }
   }
 },
 {
@@ -107,7 +139,39 @@
     ],
     "cartes": ["Recettes", "Ingrédients", "Analyse de la carte", "Commandes"],
     "texte_ecran": "Un plat beau. Et rentable.",
-    "sfx": "tick par ingrédient, jeton, impact final."
+    "sfx": "tick par ingrédient, jeton, impact final.",
+    "ui": {
+      "acte2": {
+        "lignes": [
+          {
+            "chip": "14 €"
+          },
+          {
+            "chip": "16 €"
+          },
+          {
+            "chip": "− 2 €"
+          }
+        ],
+        "alerte": true
+      },
+      "acte3": {
+        "titre": "Analyse de la carte",
+        "chips": [
+          "Coût",
+          "Marge",
+          "Prix"
+        ],
+        "chip_actif": 1,
+        "confirmation": "prix conseillé 18 €",
+        "grille": {
+          "cols": 3,
+          "rows": 2,
+          "cible": 2
+        },
+        "label_bas": "Recettes"
+      }
+    }
   }
 },
 {
@@ -162,7 +226,38 @@
     ],
     "cartes": ["Clients", "Fidélité", "Commandes", "Récompenses"],
     "texte_ecran": "Comme d'habitude. Vraiment.",
-    "sfx": "tick par fiche, ding de points, impact final."
+    "sfx": "tick par fiche, ding de points, impact final.",
+    "ui": {
+      "acte2": {
+        "lignes": [
+          {
+            "chip": "3e visite"
+          },
+          {
+            "chip": "sans olives"
+          },
+          {
+            "chip": "table 4"
+          }
+        ],
+        "alerte": false
+      },
+      "acte3": {
+        "type": "liste",
+        "titre": "Clients",
+        "chips": [
+          "Historique",
+          "Fidélité"
+        ],
+        "chip_actif": 1,
+        "confirmation": "comme d'habitude",
+        "lignes": 3,
+        "cible": 0,
+        "statut_initial": "habitué",
+        "statut_final": "commandé",
+        "label_bas": "Fidélité"
+      }
+    }
   }
 },
 {
@@ -216,7 +311,38 @@
     ],
     "cartes": ["Commandes", "Écran cuisine", "Tables", "Postes"],
     "texte_ecran": "De la table à la cuisine. Sans serviette.",
-    "sfx": "whoosh d'envoi, ping cuisine, impact final."
+    "sfx": "whoosh d'envoi, ping cuisine, impact final.",
+    "ui": {
+      "acte2": {
+        "lignes": [
+          {
+            "chip": "table 7"
+          },
+          {
+            "chip": "3 plats"
+          },
+          {
+            "chip": "envolée"
+          }
+        ],
+        "alerte": true
+      },
+      "acte3": {
+        "type": "liste",
+        "titre": "Commandes",
+        "chips": [
+          "Table 7",
+          "Table 9"
+        ],
+        "chip_actif": 0,
+        "confirmation": "commande envoyée",
+        "lignes": 3,
+        "cible": 0,
+        "statut_initial": "en salle",
+        "statut_final": "en cuisine",
+        "label_bas": "Écran cuisine"
+      }
+    }
   }
 },
 {
@@ -271,7 +397,38 @@
     ],
     "cartes": ["Agent vocal", "Réservations", "Commandes", "Notifications"],
     "texte_ecran": "Le téléphone répond. Vous servez.",
-    "sfx": "sonnerie coupée, tick de création, impact final."
+    "sfx": "sonnerie coupée, tick de création, impact final.",
+    "ui": {
+      "acte2": {
+        "lignes": [
+          {
+            "chip": "3 appels"
+          },
+          {
+            "chip": "1 rush"
+          },
+          {
+            "chip": "0 main libre"
+          }
+        ],
+        "alerte": true
+      },
+      "acte3": {
+        "type": "liste",
+        "titre": "Agent vocal",
+        "chips": [
+          "Réservation",
+          "Commande"
+        ],
+        "chip_actif": 0,
+        "confirmation": "réservation créée",
+        "lignes": 3,
+        "cible": 1,
+        "statut_initial": "en attente",
+        "statut_final": "traité",
+        "label_bas": "Notifications"
+      }
+    }
   }
 }
 ]

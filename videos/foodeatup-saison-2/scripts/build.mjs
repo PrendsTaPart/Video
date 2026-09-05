@@ -118,8 +118,63 @@ function ficheEpisode(ep) {
 const MODULES = new Set(S.modules_autorises);
 const MOTS_INTERDITS = ["malheureusement", "organisationnellement", "synchronisation", "approvisionnement", "spécifiquement"];
 const MINEURS = ["child", "children", "kid", "kids", "boy", "girl", "teen", "teenager", "years old", "baby", "toddler"];
+const CONFIRMATION_MAX = 22;   // la plus longue confirmation qui tienne dans la maquette (« disponibilité vérifiée »), mesurée à 60 px dans les 716 px utiles de l'écran
 const alertes = [];
 const add = (ep, niveau, texte) => alertes.push({ ep: ep ? NN(ep.num) : "—", niveau, texte });
+
+/* Le bloc « ui » décrit l'acte central de l'outro : la feuille de papier (acte 2) puis l'écran
+   produit et son unique tap (acte 3). C'est lui que `render-outro.mjs` donne au gabarit ; une
+   cible hors grille ou un libellé inventé ne se voit qu'au rendu, donc on le vérifie ici. */
+function controlerUI(ep) {
+  const ui = ep.montage.ui;
+  if (ep.final_saison) {
+    if (ui) add(ep, "ERREUR", `final de saison : le découpage remplace la structure imposée, un bloc « ui » n'y a pas de place.`);
+    return;
+  }
+  if (!ui) return add(ep, "ERREUR", `pas de bloc « ui » : l'acte central de l'outro n'est pas décrit, l'épisode ne peut pas être rendu.`);
+
+  const a2 = ui.acte2 ?? {};
+  if (!Array.isArray(a2.lignes) || a2.lignes.length < 2 || a2.lignes.length > 4) {
+    add(ep, "ERREUR", `ui.acte2.lignes : 2 à 4 lignes attendues.`);
+  } else if (a2.lignes.some((l) => typeof l?.chip !== "string" || !l.chip.trim())) {
+    add(ep, "ERREUR", `ui.acte2.lignes : chaque ligne porte un « chip » non vide.`);
+  }
+  if (typeof a2.alerte !== "boolean") add(ep, "ERREUR", `ui.acte2.alerte : vrai ou faux attendu.`);
+
+  const a3 = ui.acte3 ?? {};
+  for (const [champ, valeur] of [["titre", a3.titre], ["label_bas", a3.label_bas]]) {
+    if (!MODULES.has(valeur)) add(ep, "ERREUR", `ui.acte3.${champ} « ${valeur} » n'est pas un libellé FoodEatUp autorisé.`);
+  }
+  if (a3.label_bas && !ep.montage.cartes.includes(a3.label_bas)) {
+    add(ep, "ALERTE", `ui.acte3.label_bas « ${a3.label_bas} » n'est pas dans les cartes de l'épisode.`);
+  }
+  if (typeof a3.confirmation !== "string" || !a3.confirmation.trim()) {
+    add(ep, "ERREUR", `ui.acte3.confirmation : texte attendu.`);
+  } else if (a3.confirmation.length > CONFIRMATION_MAX) {
+    add(ep, "ALERTE", `ui.acte3.confirmation : ${a3.confirmation.length} caractères (au-delà de ${CONFIRMATION_MAX}, le texte n'est plus ajusté et sort de l'écran).`);
+  }
+
+  const chips = a3.chips ?? [];
+  if (!Array.isArray(chips) || chips.length > 3) add(ep, "ERREUR", `ui.acte3.chips : 0 à 3 pastilles.`);
+  const actif = a3.chip_actif;
+  const actifAttendu = chips.length ? `entre 0 et ${chips.length - 1}` : "−1 sans pastille";
+  if (!Number.isInteger(actif) || (chips.length ? actif < 0 || actif >= chips.length : actif !== -1)) {
+    add(ep, "ERREUR", `ui.acte3.chip_actif = ${actif} : ${actifAttendu} attendu.`);
+  }
+
+  if (a3.type === "liste") {
+    if (!Number.isInteger(a3.lignes) || a3.lignes < 2 || a3.lignes > 4) add(ep, "ERREUR", `ui.acte3.lignes : 2 à 4 lignes attendues.`);
+    else if (!Number.isInteger(a3.cible) || a3.cible < 0 || a3.cible >= a3.lignes) add(ep, "ERREUR", `ui.acte3.cible = ${a3.cible} : hors des ${a3.lignes} lignes.`);
+    if (!a3.statut_initial || !a3.statut_final) add(ep, "ERREUR", `ui.acte3 : statut_initial et statut_final attendus.`);
+    else if (a3.statut_initial === a3.statut_final) add(ep, "ERREUR", `ui.acte3 : le tap ne change rien, les deux statuts sont identiques.`);
+  } else if (a3.type === undefined) {
+    const g = a3.grille ?? {};
+    if (!Number.isInteger(g.cols) || !Number.isInteger(g.rows) || g.cols < 1 || g.rows < 1) add(ep, "ERREUR", `ui.acte3.grille : cols et rows attendus.`);
+    else if (!Number.isInteger(g.cible) || g.cible < 0 || g.cible >= g.cols * g.rows) add(ep, "ERREUR", `ui.acte3.grille.cible = ${g.cible} : hors des ${g.cols * g.rows} cases.`);
+  } else {
+    add(ep, "ERREUR", `ui.acte3.type « ${a3.type} » inconnu : « liste », ou absent pour une grille.`);
+  }
+}
 
 if (EPISODES.length !== 30) add(null, "ERREUR", `${EPISODES.length} épisodes au lieu de 30.`);
 const vus = new Set();
@@ -140,6 +195,7 @@ for (const ep of EPISODES) {
     if (!/«/.test(sc.dialogue)) add(ep, "ALERTE", `scène ${sc.n} : dialogue sans guillemets français.`);
     if (sc.action.length < 3) add(ep, "ALERTE", `scène ${sc.n} : moins de 3 plans dans l'ACTION.`);
   }
+  controlerUI(ep);
   const duree = ep.montage.vo.length / CPS;
   if (duree > FENETRE_VO_S) {
     add(ep, "ALERTE", `voix off ≈ ${duree.toFixed(1)} s (fenêtre ${FENETRE_VO_S} s)${ep.montage.vo_variante_courte ? " — variante courte proposée dans la fiche" : " — raccourcir ou accélérer le débit"}.`);
@@ -291,6 +347,8 @@ writeFileSync(
     `5. Aucun mot de la liste « à éviter » du lexique voix dans les répliques.`,
     `6. Dialogues en guillemets français, au moins 3 plans par scène.`,
     `7. Voix off tenant dans la fenêtre de ${FENETRE_VO_S} s (4,6 s → 11,0 s).`,
+    `8. Bloc « ui » de l'acte central : présent, cible dans la grille ou la liste, libellés autorisés,`,
+    `   confirmation tenant dans la maquette — un seul épisode en est dispensé, le final de saison.`,
     ``,
     `## Ce qui reste à l'œil humain`,
     `Identité de Michael d'une scène à l'autre · absence de texte lisible généré par Seedance ·`,

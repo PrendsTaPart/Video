@@ -251,7 +251,38 @@
         "Alertes production"
       ],
       "texte_ecran": "Planifiez. Produisez. Le stock suit.",
-      "sfx": "cloche courte, tick par ingrédient, impact final."
+      "sfx": "cloche courte, tick par ingrédient, impact final.",
+      "ui": {
+        "acte2": {
+          "lignes": [
+            {
+              "chip": "300"
+            },
+            {
+              "chip": "299"
+            },
+            {
+              "chip": "il en manque 1"
+            }
+          ],
+          "alerte": true
+        },
+        "acte3": {
+          "type": "liste",
+          "titre": "Production",
+          "chips": [
+            "150",
+            "300"
+          ],
+          "chip_actif": 1,
+          "confirmation": "réappro lancé",
+          "lignes": 3,
+          "cible": 1,
+          "statut_initial": "manquant",
+          "statut_final": "commandé",
+          "label_bas": "Alertes production"
+        }
+      }
     }
   },
   {
@@ -361,7 +392,38 @@
         "Factures"
       ],
       "texte_ecran": "Privatisation : tout est écrit.",
-      "sfx": "souffle de bougie, tick par étape, impact final."
+      "sfx": "souffle de bougie, tick par étape, impact final.",
+      "ui": {
+        "acte2": {
+          "lignes": [
+            {
+              "chip": "12"
+            },
+            {
+              "chip": "12 familles"
+            },
+            {
+              "chip": "50"
+            }
+          ],
+          "alerte": true
+        },
+        "acte3": {
+          "type": "liste",
+          "titre": "Événements privés",
+          "chips": [
+            "Nouvelles",
+            "Devis"
+          ],
+          "chip_actif": 1,
+          "confirmation": "devis accepté",
+          "lignes": 3,
+          "cible": 0,
+          "statut_initial": "nouvelle",
+          "statut_final": "gagnée",
+          "label_bas": "Devis"
+        }
+      }
     }
   },
   {
@@ -471,7 +533,39 @@
         "Commandes"
       ],
       "texte_ecran": "Vos zones. Vos règles. Vos livraisons.",
-      "sfx": "tick par zone, notification livrée, impact final."
+      "sfx": "tick par zone, notification livrée, impact final.",
+      "ui": {
+        "acte2": {
+          "lignes": [
+            {
+              "chip": "12 km"
+            },
+            {
+              "chip": "28 km"
+            },
+            {
+              "chip": "hors zone"
+            }
+          ],
+          "alerte": true
+        },
+        "acte3": {
+          "titre": "Zones de livraison",
+          "chips": [
+            "2 km",
+            "5 km",
+            "10 km"
+          ],
+          "chip_actif": 1,
+          "confirmation": "zone couverte",
+          "grille": {
+            "cols": 3,
+            "rows": 2,
+            "cible": 1
+          },
+          "label_bas": "Livraison"
+        }
+      }
     }
   },
   {
@@ -582,7 +676,38 @@
         "Stock"
       ],
       "texte_ecran": "Happy hour : réglé d'avance.",
-      "sfx": "tick horloge, remise « ding », impact final."
+      "sfx": "tick horloge, remise « ding », impact final.",
+      "ui": {
+        "acte2": {
+          "lignes": [
+            {
+              "chip": "18:00"
+            },
+            {
+              "chip": "20:00"
+            },
+            {
+              "chip": "−30 %"
+            }
+          ],
+          "alerte": false
+        },
+        "acte3": {
+          "titre": "Happy hours",
+          "chips": [
+            "Boissons",
+            "Carte"
+          ],
+          "chip_actif": 0,
+          "confirmation": "remise appliquée",
+          "grille": {
+            "cols": 3,
+            "rows": 2,
+            "cible": 4
+          },
+          "label_bas": "Boissons"
+        }
+      }
     }
   }
 ]
