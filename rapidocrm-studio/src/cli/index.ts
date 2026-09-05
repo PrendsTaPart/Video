@@ -50,8 +50,21 @@ programme
   .command('fiche')
   .argument('<chemin>')
   .option('--force')
+  .option(
+    '--mots-cles <liste>',
+    'mots-clés séparés par des virgules pour retenir les outils MCP ; ' +
+      'à défaut, ils sont déduits des titres d\'étapes, ce qui rate un outil ' +
+      'dont le nom ne reprend aucun mot de l\'écran (« list_jeux_concours » ' +
+      'face à une étape « Choisir un modèle de jeu »)',
+  )
   .action(async (chemin, o) => {
-    await construireFiche(dossierTutoriel(chemin), { force: o.force });
+    await construireFiche(dossierTutoriel(chemin), {
+      force: o.force,
+      motsCles: o.motsCles
+        ?.split(',')
+        .map((m: string) => m.trim().toLowerCase())
+        .filter(Boolean),
+    });
   });
 
 programme

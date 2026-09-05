@@ -1,0 +1,86 @@
+{
+  "fonctionnalite": "Ajouter un PDF à la fiche d'une entreprise",
+  "a_quoi_ca_sert": "Attacher un document au client — une carte, un tarif, une fiche technique — pour le retrouver dans sa fiche plutôt que dans une boîte mail.",
+  "pour_qui": "Gérant ou commercial qui range les documents d'un client",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert la fiche d'une entreprise cliente",
+    "Avoir le fichier PDF sur son poste"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Nom du fichier",
+      "obligatoire": true,
+      "explication": "Le libellé sous lequel le document apparaîtra dans la fiche. C'est ce nom-là qu'on relira, pas celui du fichier d'origine."
+    },
+    {
+      "nom": "Importer un fichier",
+      "obligatoire": true,
+      "explication": "La zone en pointillés, avec « Sélectionner un fichier » et un bouton Parcourir."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "get_entreprise",
+      "role": "Détail complet d'une entreprise : tous les champs de la fiche, pas seulement le nom et le statut. Lecture seule.",
+      "parametres_obligatoires": ["id"],
+      "parametres_optionnels": [],
+      "exemple_appel": { "id": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Nommer le document par ce qu'il contient et sa période : « Carte pains et viennoiseries — printemps » se retrouve, « scan01 » non.",
+    "Ranger le document sur la fiche du client concerné plutôt que dans un dossier partagé."
+  ],
+  "erreurs_frequentes": [
+    "Fermer la fenêtre après avoir choisi le fichier : c'est le bouton Ajouter qui l'attache à la fiche.",
+    "Chercher l'import dans le bloc Documentation de la page : le bouton s'appelle « Ajouter un PDF » dans le panneau de droite."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Attacher la carte de saison d'un client",
+      "contexte": "Le client envoie sa nouvelle carte en PDF.",
+      "action": "Ouvrez Ajouter un PDF depuis le panneau Documentation, nommez le document, choisissez le fichier et validez.",
+      "resultat_attendu": "Le document rejoint la fiche de l'entreprise."
+    },
+    {
+      "titre": "Retrouver un document rangé",
+      "contexte": "Il faut relire un tarif transmis il y a deux mois.",
+      "action": "Ouvrez la fiche du client et descendez jusqu'à ses documents.",
+      "resultat_attendu": "Le document apparaît sous le nom qu'on lui a donné."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Deux champs, pas plus",
+      "contenu": "Un nom, un fichier : la fenêtre d'import ne demande rien d'autre.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le nom prime sur le fichier",
+      "contenu": "Le libellé saisi remplace le nom d'origine dans l'affichage de la fiche.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Annuler reste possible",
+      "contenu": "Le bouton Annuler ferme la fenêtre sans rien attacher.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Relire la fiche complète d'une entreprise",
+    "texte": "Donne-moi la fiche complète de l'entreprise numéro [identifiant].",
+    "variables": ["identifiant"],
+    "outil_mcp": "get_entreprise"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 à 00:06 — entrée « Ajouter un PDF » puis fenêtre « Ajouter un fichier »",
+    "a_quoi_ca_sert": "frames 00:10 et 00:18 — nom du document, puis retour à la fiche",
+    "champs_cles": "frames 00:06 et 00:10",
+    "outils_mcp": "schéma get_entreprise",
+    "erreurs_frequentes": "frames 00:06 (boutons Annuler et Ajouter) et 00:02 (panneau Documentation)",
+    "cas_usage": "frames 00:10 à 00:24 — document « Carte pains et viennoiseries — printemps »",
+    "astuces": "frames 00:06 et 00:10"
+  },
+  "a_verifier": []
+}

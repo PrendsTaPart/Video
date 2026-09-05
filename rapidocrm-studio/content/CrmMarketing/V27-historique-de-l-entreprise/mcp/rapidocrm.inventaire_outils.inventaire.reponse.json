@@ -1,0 +1,43 @@
+{
+  "outils": [
+    {
+      "nom": "get_entreprise",
+      "description": "Détail complet d'une entreprise (tous les champs, pas seulement nom/statut).",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer",
+          "obligatoire": true,
+          "valeurs_autorisees": [],
+          "description": "ID de l'entreprise"
+        }
+      ]
+    },
+    {
+      "nom": "get_interaction_stats",
+      "description": "Statistiques d'interactions (emails, SMS, appels, RDV...) par type.",
+      "parametres": [
+        {
+          "nom": "entreprise_id",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Limiter à une entreprise (optionnel)"
+        },
+        {
+          "nom": "periode",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": ""
+        }
+      ]
+    }
+  ]
+}
