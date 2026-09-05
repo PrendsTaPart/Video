@@ -66,3 +66,53 @@ est flouté sur les seize.
 liste des clients défile, puis une page Entreprise vide, puis « S'il vous
 plaît, attendez… » jusqu'à la fin. À refaire ; le reste du module n'en dépend
 pas.
+
+## Envois YouTube planifiés
+
+Le quota YouTube est de cinq envois par jour. Les cinq derniers tutoriels
+Comptabilité occupaient déjà des créneaux les 6, 7 et 8 septembre ; les seize
+de ce module se glissent autour, en mode `upload_at_time` sur la chaîne
+RapidoCRM (`UCXyptH13bJF7AVr2TZJWA-Q`).
+
+| Date (Paris) | 08:00 | 10:00 | 12:00 | 14:00 | 16:00 |
+|---|---|---|---|---|---|
+| 06/09 | V13 | *V09 (compta)* | V14 | *V10 (compta)* | V15 |
+| 07/09 | V17 | *V11 (compta)* | V18 | *V12 (compta)* | V19 |
+| 08/09 | V21 | *V14 (compta)* | V23 | V25 | V27 |
+| 09/09 | V28 | V29 | V31 | V32 | V33 |
+| 10/09 | V34 | | | | |
+
+Les vingt-quatre médias sont déposés dans la bibliothèque RapidoCMS et
+`publier:cms` est passé pour les seize. Il ne manque à chaque page que
+l'URL YouTube.
+
+## Ce qui reste, une fois chaque envoi effectué
+
+1. Écrire `youtube.publish_video.publication.reponse.json` avec le `video_id`.
+2. `npm run publier:youtube` puis `npm run publier:site`. Une page se remplit
+   entièrement ou pas du tout : `publier-site` refuse tant que l'URL YouTube
+   ne répond pas.
+
+## Une leçon de méthode sur le floutage
+
+V14 a fuité trois fois de suite au même endroit, à chaque fois de quelques
+centièmes : les adresses e-mail des invités, puis les noms des organisateurs,
+puis le premier nom de la liste déroulante. La cause n'était pas le choix des
+bornes mais le principe : entre la 55e et la 60e seconde, la modale **défile
+en continu**, et un rectangle fixe sur une fenêtre de temps ne suit pas un
+mouvement continu.
+
+Deux règles en sortent, valables pour tout le reste de la série :
+
+- **Découper de part et d'autre du défilement** plutôt qu'élargir le flou.
+  Une étape qui s'arrête avant le mouvement et une autre qui reprend après
+  ont chacune une position stable, où un rectangle suffit.
+- **Couvrir largement quand une liste peut s'ouvrir.** Une liste déroulante
+  apparaît là où on ne l'attend pas — celle des utilisateurs remontait
+  au-dessus du champ. Mieux vaut flouter tout le corps d'une modale pendant
+  l'étape concernée que viser la bande où l'on croit que sont les étiquettes.
+
+Et surtout : **la QA ne voit pas ces fuites.** Elle vérifie que les zones
+*déclarées* sont floutées, pas qu'il ne reste rien de lisible ailleurs. Seule
+la relecture des frames rendues les trouve. Les seize ont été relues aux
+moments les plus risqués.

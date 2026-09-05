@@ -1,0 +1,15 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V31-06-historique-contrat.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V31-06-historique-contrat-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V31-06-historique-contrat-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V31-06-historique-contrat-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "1baf79f14c931b86",
+      "video_vertical_url": "5b9974a57cd8ac22",
+      "thumbnail_url": "36c54e56718cddb1",
+      "thumbnail_vertical_url": "831d8b0d2ea4598e"
+    },
+    "publie_le": "2026-09-05T23:28:55.786Z"
+  }
+}

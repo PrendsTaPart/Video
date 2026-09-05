@@ -1,0 +1,62 @@
+[
+  {
+    "mot": "Trois",
+    "debut": 0,
+    "fin": 0.29
+  },
+  {
+    "mot": "formats,",
+    "debut": 0.325,
+    "fin": 0.708
+  },
+  {
+    "mot": "avec",
+    "debut": 0.801,
+    "fin": 1.045
+  },
+  {
+    "mot": "leurs",
+    "debut": 1.103,
+    "fin": 1.242
+  },
+  {
+    "mot": "millimètres.",
+    "debut": 1.277,
+    "fin": 1.858
+  },
+  {
+    "mot": "Le",
+    "debut": 2.009,
+    "fin": 2.113
+  },
+  {
+    "mot": "standard",
+    "debut": 2.148,
+    "fin": 2.519
+  },
+  {
+    "mot": "est",
+    "debut": 2.543,
+    "fin": 2.612
+  },
+  {
+    "mot": "celui",
+    "debut": 2.635,
+    "fin": 2.856
+  },
+  {
+    "mot": "d'une",
+    "debut": 2.891,
+    "fin": 3.042
+  },
+  {
+    "mot": "carte",
+    "debut": 3.065,
+    "fin": 3.274
+  },
+  {
+    "mot": "bancaire.",
+    "debut": 3.297,
+    "fin": 3.75
+  }
+]

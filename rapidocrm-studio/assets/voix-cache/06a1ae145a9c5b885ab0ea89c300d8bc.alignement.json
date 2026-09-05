@@ -1,0 +1,192 @@
+[
+  {
+    "mot": "Une",
+    "debut": 0,
+    "fin": 0.186
+  },
+  {
+    "mot": "carte,",
+    "debut": 0.221,
+    "fin": 0.627
+  },
+  {
+    "mot": "ce",
+    "debut": 0.685,
+    "fin": 0.766
+  },
+  {
+    "mot": "sont",
+    "debut": 0.824,
+    "fin": 0.952
+  },
+  {
+    "mot": "des",
+    "debut": 0.975,
+    "fin": 1.068
+  },
+  {
+    "mot": "clients",
+    "debut": 1.091,
+    "fin": 1.474
+  },
+  {
+    "mot": "et",
+    "debut": 1.498,
+    "fin": 1.591
+  },
+  {
+    "mot": "des",
+    "debut": 1.625,
+    "fin": 1.73
+  },
+  {
+    "mot": "points.",
+    "debut": 1.765,
+    "fin": 2.055
+  },
+  {
+    "mot": "Pour",
+    "debut": 2.229,
+    "fin": 2.461
+  },
+  {
+    "mot": "en",
+    "debut": 2.485,
+    "fin": 2.531
+  },
+  {
+    "mot": "avoir",
+    "debut": 2.589,
+    "fin": 2.763
+  },
+  {
+    "mot": "le",
+    "debut": 2.798,
+    "fin": 2.868
+  },
+  {
+    "mot": "compte,",
+    "debut": 2.926,
+    "fin": 3.274
+  },
+  {
+    "mot": "RapidoCRM",
+    "debut": 3.39,
+    "fin": 4.249
+  },
+  {
+    "mot": "parle",
+    "debut": 4.331,
+    "fin": 4.609
+  },
+  {
+    "mot": "à",
+    "debut": 4.656,
+    "fin": 4.69
+  },
+  {
+    "mot": "Claude",
+    "debut": 4.783,
+    "fin": 5.085
+  },
+  {
+    "mot": ":",
+    "debut": 5.178,
+    "fin": 5.294
+  },
+  {
+    "mot": "vous",
+    "debut": 5.538,
+    "fin": 5.666
+  },
+  {
+    "mot": "demandez",
+    "debut": 5.7,
+    "fin": 6.037
+  },
+  {
+    "mot": "en",
+    "debut": 6.072,
+    "fin": 6.118
+  },
+  {
+    "mot": "français,",
+    "debut": 6.177,
+    "fin": 6.757
+  },
+  {
+    "mot": "il",
+    "debut": 6.908,
+    "fin": 7.059
+  },
+  {
+    "mot": "lit",
+    "debut": 7.117,
+    "fin": 7.291
+  },
+  {
+    "mot": "vos",
+    "debut": 7.314,
+    "fin": 7.43
+  },
+  {
+    "mot": "données",
+    "debut": 7.454,
+    "fin": 7.814
+  },
+  {
+    "mot": "et",
+    "debut": 7.906,
+    "fin": 8.069
+  },
+  {
+    "mot": "répond.",
+    "debut": 8.127,
+    "fin": 8.545
+  },
+  {
+    "mot": "Copiez",
+    "debut": 8.754,
+    "fin": 9.172
+  },
+  {
+    "mot": "ce",
+    "debut": 9.195,
+    "fin": 9.3
+  },
+  {
+    "mot": "prompt,",
+    "debut": 9.346,
+    "fin": 9.787
+  },
+  {
+    "mot": "remplacez",
+    "debut": 9.961,
+    "fin": 10.542
+  },
+  {
+    "mot": "ce",
+    "debut": 10.623,
+    "fin": 10.716
+  },
+  {
+    "mot": "qui",
+    "debut": 10.774,
+    "fin": 10.913
+  },
+  {
+    "mot": "est",
+    "debut": 10.971,
+    "fin": 11.064
+  },
+  {
+    "mot": "entre",
+    "debut": 11.146,
+    "fin": 11.355
+  },
+  {
+    "mot": "crochets.",
+    "debut": 11.401,
+    "fin": 11.9
+  }
+]

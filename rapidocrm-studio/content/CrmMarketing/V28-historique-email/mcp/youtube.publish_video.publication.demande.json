@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V28-06-historique-email.mp4",
+    "titre": "Historique des e-mails — RapidoCRM",
+    "description": "Le journal des e-mails le retrouve, avec son contenu.\n\nOn part de la page Historique, et on ressort avec l'e-mail sous les yeux. Le tableau liste les envois ; l'icône en bout de ligne rouvre le message tel qu'il est parti, avec son objet, son destinataire et son contenu. Rien n'est reconstitué : c'est l'envoi lui-même.\n\nChapitres\n00:00 « Je n'ai jamais reçu votre devis. » Et vous, vous cherchez dans vos envoyés.\n00:08 Historique email\n00:24 Ouvrir l'historique des e-mails\n00:29 Lire le tableau des envois\n00:31 Rouvrir un e-mail envoyé\n00:38 Faites-le avec Claude\n00:51 À retenir\n\nLe prompt Claude de ce tutoriel\nDonne-moi les statistiques d'interactions du mois pour l'entreprise numéro [identifiant].\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/06-historique-email\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "historique",
+      "email",
+      "CRM",
+      "suivi client",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "CrmMarketing"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V28-06-historique-email-thumb.jpg",
+    "playlist": "RapidoCRM — CrmMarketing",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T23:29:54.128Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

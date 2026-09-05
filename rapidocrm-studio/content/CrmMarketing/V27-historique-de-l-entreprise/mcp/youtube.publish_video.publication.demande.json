@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V27-06-historique-de-l-entreprise.mp4",
+    "titre": "Historique d'une entreprise — RapidoCRM",
+    "description": "Neuf journaux répondent, sur une seule page.\n\nOn part de la fiche d'une entreprise, et on ressort avec sa page d'historique. Neuf journaux : e-mails, SMS, rendez-vous, contrats, documents, factures, devis, dépenses et notes.\n\nChapitres\n00:00 Un client rappelle après six semaines. Qui lui a écrit ? Quand ? À propos de quoi ?\n00:10 Historique de l'entreprise\n00:24 Ouvrir le panneau Entreprise de la fiche\n00:29 Ouvrir l'historique de l'entreprise\n00:32 Parcourir les neuf journaux\n00:36 Choisir le journal à consulter\n00:39 Faites-le avec Claude\n00:52 À retenir\n\nLe prompt Claude de ce tutoriel\nDonne-moi les statistiques d'interactions du mois pour l'entreprise numéro [identifiant].\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/06-historique-de-l-entreprise\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "historique",
+      "CRM",
+      "suivi client",
+      "fiche entreprise",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "CrmMarketing"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V27-06-historique-de-l-entreprise-thumb.jpg",
+    "playlist": "RapidoCRM — CrmMarketing",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T23:29:50.859Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

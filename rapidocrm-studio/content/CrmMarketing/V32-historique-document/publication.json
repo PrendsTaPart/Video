@@ -1,0 +1,15 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V32-06-historique-document.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V32-06-historique-document-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V32-06-historique-document-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V32-06-historique-document-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "17474854257edaa4",
+      "video_vertical_url": "c4abc92fe6fd4fcc",
+      "thumbnail_url": "b7ef028c0c31f078",
+      "thumbnail_vertical_url": "ffa6577995009a10"
+    },
+    "publie_le": "2026-09-05T23:28:59.887Z"
+  }
+}

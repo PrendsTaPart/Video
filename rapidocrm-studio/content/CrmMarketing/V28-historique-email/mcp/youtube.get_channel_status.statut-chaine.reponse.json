@@ -1,0 +1,10 @@
+{
+  "connectee": true,
+  "chaines": [
+    { "id": "UCkzJ09dnoBuOpcY-cDmGK2w", "nom": "PrendsTaPart", "active": false },
+    { "id": "UCLQxmt2Wgsm-tX44CUOobPg", "nom": "RapidoCMS", "active": false },
+    { "id": "UCj2P8FZ4YwygALBLITfOKNA", "nom": "Plan-it", "active": false },
+    { "id": "UC0Mc8pkW4t3uVjbI-ULptUA", "nom": "FoodEatUp", "active": true },
+    { "id": "UCXyptH13bJF7AVr2TZJWA-Q", "nom": "RapidoCRM", "active": false }
+  ]
+}

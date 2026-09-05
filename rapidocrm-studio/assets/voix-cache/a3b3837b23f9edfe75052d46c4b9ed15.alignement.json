@@ -1,0 +1,42 @@
+[
+  {
+    "mot": "Puis",
+    "debut": 0,
+    "fin": 0.209
+  },
+  {
+    "mot": "le",
+    "debut": 0.232,
+    "fin": 0.313
+  },
+  {
+    "mot": "modèle.",
+    "debut": 0.36,
+    "fin": 0.789
+  },
+  {
+    "mot": "Voir",
+    "debut": 0.871,
+    "fin": 1.068
+  },
+  {
+    "mot": "l'agrandit,",
+    "debut": 1.115,
+    "fin": 1.788
+  },
+  {
+    "mot": "Choisir",
+    "debut": 1.869,
+    "fin": 2.276
+  },
+  {
+    "mot": "le",
+    "debut": 2.322,
+    "fin": 2.38
+  },
+  {
+    "mot": "retient.",
+    "debut": 2.438,
+    "fin": 2.891
+  }
+]

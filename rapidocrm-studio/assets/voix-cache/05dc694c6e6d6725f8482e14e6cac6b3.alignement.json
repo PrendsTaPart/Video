@@ -1,0 +1,62 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "destinataire",
+    "debut": 0.197,
+    "fin": 0.755
+  },
+  {
+    "mot": "est",
+    "debut": 0.778,
+    "fin": 0.848
+  },
+  {
+    "mot": "déjà",
+    "debut": 0.917,
+    "fin": 1.173
+  },
+  {
+    "mot": "rempli",
+    "debut": 1.207,
+    "fin": 1.544
+  },
+  {
+    "mot": ":",
+    "debut": 1.567,
+    "fin": 1.614
+  },
+  {
+    "mot": "c'est",
+    "debut": 1.788,
+    "fin": 1.985
+  },
+  {
+    "mot": "le",
+    "debut": 2.009,
+    "fin": 2.078
+  },
+  {
+    "mot": "client",
+    "debut": 2.113,
+    "fin": 2.38
+  },
+  {
+    "mot": "de",
+    "debut": 2.403,
+    "fin": 2.45
+  },
+  {
+    "mot": "la",
+    "debut": 2.485,
+    "fin": 2.543
+  },
+  {
+    "mot": "fiche.",
+    "debut": 2.612,
+    "fin": 3.019
+  }
+]

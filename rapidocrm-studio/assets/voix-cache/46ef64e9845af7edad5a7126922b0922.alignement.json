@@ -1,0 +1,127 @@
+[
+  {
+    "mot": "Puis",
+    "debut": 0,
+    "fin": 0.279
+  },
+  {
+    "mot": "les",
+    "debut": 0.302,
+    "fin": 0.395
+  },
+  {
+    "mot": "deux",
+    "debut": 0.43,
+    "fin": 0.546
+  },
+  {
+    "mot": "bornes.",
+    "debut": 0.58,
+    "fin": 0.998
+  },
+  {
+    "mot": "La",
+    "debut": 1.509,
+    "fin": 1.602
+  },
+  {
+    "mot": "date",
+    "debut": 1.649,
+    "fin": 1.823
+  },
+  {
+    "mot": "de",
+    "debut": 1.846,
+    "fin": 1.927
+  },
+  {
+    "mot": "début",
+    "debut": 1.974,
+    "fin": 2.299
+  },
+  {
+    "mot": "ouvre",
+    "debut": 2.334,
+    "fin": 2.566
+  },
+  {
+    "mot": "l'engagement,",
+    "debut": 2.589,
+    "fin": 3.297
+  },
+  {
+    "mot": "la",
+    "debut": 3.471,
+    "fin": 3.553
+  },
+  {
+    "mot": "date",
+    "debut": 3.611,
+    "fin": 3.82
+  },
+  {
+    "mot": "de",
+    "debut": 3.843,
+    "fin": 3.947
+  },
+  {
+    "mot": "fin",
+    "debut": 4.029,
+    "fin": 4.238
+  },
+  {
+    "mot": "le",
+    "debut": 4.272,
+    "fin": 4.319
+  },
+  {
+    "mot": "referme.",
+    "debut": 4.389,
+    "fin": 5.039
+  },
+  {
+    "mot": "C'est",
+    "debut": 5.642,
+    "fin": 5.851
+  },
+  {
+    "mot": "elle",
+    "debut": 5.921,
+    "fin": 6.026
+  },
+  {
+    "mot": "qui",
+    "debut": 6.06,
+    "fin": 6.153
+  },
+  {
+    "mot": "dira,",
+    "debut": 6.2,
+    "fin": 6.653
+  },
+  {
+    "mot": "plus",
+    "debut": 6.711,
+    "fin": 6.873
+  },
+  {
+    "mot": "tard,",
+    "debut": 6.896,
+    "fin": 7.303
+  },
+  {
+    "mot": "qu'il",
+    "debut": 7.419,
+    "fin": 7.581
+  },
+  {
+    "mot": "faut",
+    "debut": 7.628,
+    "fin": 7.767
+  },
+  {
+    "mot": "renouveler.",
+    "debut": 7.79,
+    "fin": 8.348
+  }
+]

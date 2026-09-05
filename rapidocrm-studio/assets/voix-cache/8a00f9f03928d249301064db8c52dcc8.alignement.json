@@ -1,0 +1,57 @@
+[
+  {
+    "mot": "Première",
+    "debut": 0,
+    "fin": 0.395
+  },
+  {
+    "mot": "carte",
+    "debut": 0.418,
+    "fin": 0.627
+  },
+  {
+    "mot": "de",
+    "debut": 0.65,
+    "fin": 0.72
+  },
+  {
+    "mot": "la",
+    "debut": 0.766,
+    "fin": 0.836
+  },
+  {
+    "mot": "page",
+    "debut": 0.906,
+    "fin": 1.207
+  },
+  {
+    "mot": "Historique",
+    "debut": 1.231,
+    "fin": 1.73
+  },
+  {
+    "mot": ":",
+    "debut": 1.753,
+    "fin": 1.776
+  },
+  {
+    "mot": "les",
+    "debut": 1.823,
+    "fin": 1.939
+  },
+  {
+    "mot": "e-mails.",
+    "debut": 1.997,
+    "fin": 2.357
+  },
+  {
+    "mot": "On",
+    "debut": 2.403,
+    "fin": 2.508
+  },
+  {
+    "mot": "consulte.",
+    "debut": 2.554,
+    "fin": 3.088
+  }
+]

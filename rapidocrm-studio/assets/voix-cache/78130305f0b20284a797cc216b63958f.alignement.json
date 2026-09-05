@@ -1,0 +1,42 @@
+[
+  {
+    "mot": "Puis",
+    "debut": 0,
+    "fin": 0.325
+  },
+  {
+    "mot": "on",
+    "debut": 0.383,
+    "fin": 0.464
+  },
+  {
+    "mot": "revient",
+    "debut": 0.534,
+    "fin": 0.824
+  },
+  {
+    "mot": "à",
+    "debut": 0.871,
+    "fin": 0.894
+  },
+  {
+    "mot": "la",
+    "debut": 0.94,
+    "fin": 0.998
+  },
+  {
+    "mot": "fiche",
+    "debut": 1.057,
+    "fin": 1.277
+  },
+  {
+    "mot": "du",
+    "debut": 1.312,
+    "fin": 1.393
+  },
+  {
+    "mot": "client.",
+    "debut": 1.428,
+    "fin": 1.788
+  }
+]

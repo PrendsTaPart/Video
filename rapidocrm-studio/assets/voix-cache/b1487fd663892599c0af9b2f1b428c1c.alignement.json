@@ -1,0 +1,42 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "récapitulatif",
+    "debut": 0.209,
+    "fin": 0.952
+  },
+  {
+    "mot": "reprend",
+    "debut": 0.998,
+    "fin": 1.3
+  },
+  {
+    "mot": "tout.",
+    "debut": 1.335,
+    "fin": 1.533
+  },
+  {
+    "mot": "Chaque",
+    "debut": 1.591,
+    "fin": 1.916
+  },
+  {
+    "mot": "ligne",
+    "debut": 1.939,
+    "fin": 2.159
+  },
+  {
+    "mot": "reste",
+    "debut": 2.218,
+    "fin": 2.438
+  },
+  {
+    "mot": "modifiable.",
+    "debut": 2.485,
+    "fin": 3.019
+  }
+]

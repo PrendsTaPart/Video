@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V33-06-historique-facture.mp4",
+    "titre": "Historique des factures — RapidoCRM",
+    "description": "Un tableau répond : statut et total, ligne par ligne.\n\nOn part de la page Historique, et on ressort avec la facture ouverte. Le tableau donne le statut et le total ; l'icône en bout de ligne ouvre le document, prêt à télécharger. Rien à recalculer, rien à reconstituer : la facture est déjà écrite.\n\nChapitres\n00:00 « Où en est mon compte ? » Le client demande, et vous ouvrez trois onglets.\n00:09 Historique facture\n00:26 Ouvrir l'historique des factures\n00:32 Lire les colonnes du tableau\n00:36 Ouvrir une facture\n00:39 Lire la facture et la télécharger\n00:42 Faites-le avec Claude\n00:54 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] factures en attente avec leur montant.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/06-historique-facture\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "historique",
+      "facture",
+      "CRM",
+      "facturation",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "CrmMarketing"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V33-06-historique-facture-thumb.jpg",
+    "playlist": "RapidoCRM — CrmMarketing",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T23:30:07.229Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

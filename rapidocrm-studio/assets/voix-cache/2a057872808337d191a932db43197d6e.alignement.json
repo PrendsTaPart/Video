@@ -1,0 +1,87 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.186
+  },
+  {
+    "mot": "modèle,",
+    "debut": 0.209,
+    "fin": 0.708
+  },
+  {
+    "mot": "deux",
+    "debut": 0.987,
+    "fin": 1.126
+  },
+  {
+    "mot": "dates,",
+    "debut": 1.161,
+    "fin": 1.509
+  },
+  {
+    "mot": "un",
+    "debut": 1.683,
+    "fin": 1.776
+  },
+  {
+    "mot": "message",
+    "debut": 1.811,
+    "fin": 2.241
+  },
+  {
+    "mot": ":",
+    "debut": 2.299,
+    "fin": 2.334
+  },
+  {
+    "mot": "le",
+    "debut": 2.577,
+    "fin": 2.659
+  },
+  {
+    "mot": "contrat",
+    "debut": 2.717,
+    "fin": 3.077
+  },
+  {
+    "mot": "part",
+    "debut": 3.111,
+    "fin": 3.297
+  },
+  {
+    "mot": "le",
+    "debut": 3.32,
+    "fin": 3.39
+  },
+  {
+    "mot": "jour",
+    "debut": 3.46,
+    "fin": 3.796
+  },
+  {
+    "mot": "où",
+    "debut": 3.866,
+    "fin": 4.029
+  },
+  {
+    "mot": "le",
+    "debut": 4.075,
+    "fin": 4.133
+  },
+  {
+    "mot": "devis",
+    "debut": 4.18,
+    "fin": 4.447
+  },
+  {
+    "mot": "est",
+    "debut": 4.481,
+    "fin": 4.563
+  },
+  {
+    "mot": "accepté.",
+    "debut": 4.632,
+    "fin": 5.132
+  }
+]
