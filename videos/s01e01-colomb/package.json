@@ -8,7 +8,10 @@
     "methode": "node scripts/rendre-methode.mjs",
     "monter": "node scripts/monter.mjs",
     "verifier": "node scripts/verifier.mjs",
-    "build": "npm run voix && npm run methode && npm run monter && npm run verifier"
+    "build": "npm run voix && npm run methode && npm run monter && npm run verifier",
+    "build:50s": "VARIANTE=50s npm run build"
   },
-  "dependencies": { "ffmpeg-static": "^5.2.0" }
+  "dependencies": {
+    "ffmpeg-static": "^5.2.0"
+  }
 }

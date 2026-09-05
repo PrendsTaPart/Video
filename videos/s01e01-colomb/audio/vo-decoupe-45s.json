@@ -1,0 +1,101 @@
+{
+ "source": "audio/vo-methode-passe-unique.mp3",
+ "voix": {
+  "moteur": "ElevenLabs",
+  "langue": "fr-FR",
+  "profil": "voix masculine française, timbre chaud, âge perçu 35-45 ans, débit soutenu mais net",
+  "reglages": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true
+  },
+  "passe_unique": true,
+  "decoupe_s": [
+   2.5,
+   5.52,
+   8.49,
+   11.06,
+   13.42,
+   17.05
+  ],
+  "note_decoupe": "Les six instants de coupe de la passe unique, relevés sur la prise. Chacun doit tomber dans un silence : scripts/voix-off.mjs le vérifie et refuse la prise sinon. Les bornes exactes de chaque ligne sont les bords du silence qui l'entoure, pas ces instants."
+ },
+ "passe_duree_s": 23.72,
+ "pauses_detectees": 13,
+ "coupes_s": [
+  2.5,
+  5.52,
+  8.49,
+  11.06,
+  13.42,
+  17.05
+ ],
+ "pauses_retenues_s": [
+  0.933,
+  1.085,
+  0.862,
+  0.258,
+  1.186,
+  1.25
+ ],
+ "tempo_max": 1.4,
+ "lignes": [
+  {
+   "ligne": 1,
+   "vo": "Vous aussi, faites vos publicités vous-même.",
+   "dit_s": 2.031,
+   "creneau_s": 1.6,
+   "tempo": 1.269,
+   "cale_a_s": 30
+  },
+  {
+   "ligne": 2,
+   "vo": "Un : installez les MCP.",
+   "dit_s": 2.013,
+   "creneau_s": 1.7,
+   "tempo": 1.184,
+   "cale_a_s": 31.6
+  },
+  {
+   "ligne": 3,
+   "vo": "Deux : demandez le script à Claude.",
+   "dit_s": 2,
+   "creneau_s": 1.7,
+   "tempo": 1.176,
+   "cale_a_s": 33.3
+  },
+  {
+   "ligne": 4,
+   "vo": "Trois : ajoutez HyperFrames.",
+   "dit_s": 2.012,
+   "creneau_s": 1.6,
+   "tempo": 1.257,
+   "cale_a_s": 35
+  },
+  {
+   "ligne": 5,
+   "vo": "Quatre : lancez votre prompt.",
+   "dit_s": 1.635,
+   "creneau_s": 1.6,
+   "tempo": 1.022,
+   "cale_a_s": 36.6
+  },
+  {
+   "ligne": 6,
+   "vo": "Cinq : RapidoCMS planifie tout.",
+   "dit_s": 2.415,
+   "creneau_s": 1.8,
+   "tempo": 1.342,
+   "cale_a_s": 38.2
+  },
+  {
+   "ligne": 7,
+   "vo": "RapidoCMS orchestre Claude, Higgsfield et ElevenLabs. Vos réseaux suivent.",
+   "dit_s": 5.728,
+   "creneau_s": 5,
+   "tempo": 1.146,
+   "cale_a_s": 40
+  }
+ ]
+}

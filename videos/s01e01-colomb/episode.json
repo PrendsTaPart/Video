@@ -313,5 +313,73 @@
   "vignette": {
     "fichier": "S01E01-colomb-vignette.jpg",
     "t_s": 26
+  },
+  "variante_par_defaut": "45s",
+  "variantes": {
+    "45s": {
+      "nom": "45 s — la voix dit court, l'écran dit long",
+      "note": "Le montage du plan. Les cinq étapes tiennent en dix secondes ; chaque ligne est accélérée du minimum nécessaire, de 1,02× à 1,34×."
+    },
+    "50s": {
+      "nom": "50 s — phrases entières",
+      "note": "La variante que le plan propose : les cinq étapes lues en entier, sans accélération. Le plan les chiffrait à 3 s chacune ; sur cette prise 2,6 s suffisent à les dire entièrement, ce qui fait tomber le total sur 50 s pile — 13 s d'étapes, 2 s pour la ligne d'ouverture, 5 s d'orchestration. Seule la dernière phrase reste à 1,15×, comme dans le 45 s. Le bloc film est identique.",
+      "format": {
+        "duree_s": 50
+      },
+      "methode": {
+        "fin_s": 50.0,
+        "lignes": [
+          {
+            "debut_s": 30.0,
+            "fin_s": 32.0
+          },
+          {
+            "debut_s": 32.0,
+            "fin_s": 34.6
+          },
+          {
+            "debut_s": 34.6,
+            "fin_s": 37.2
+          },
+          {
+            "debut_s": 37.2,
+            "fin_s": 39.8
+          },
+          {
+            "debut_s": 39.8,
+            "fin_s": 42.4
+          },
+          {
+            "debut_s": 42.4,
+            "fin_s": 45.0
+          },
+          {
+            "debut_s": 45.0,
+            "fin_s": 50.0
+          }
+        ],
+        "orchestration": {
+          "reseaux_debut_s": 48.0
+        }
+      },
+      "exports": [
+        {
+          "fichier": "S01E01-colomb-50s.mp4",
+          "de_s": 0,
+          "a_s": 50,
+          "note": "film complet, phrases entières"
+        },
+        {
+          "fichier": "S01E01-colomb-20s-methode.mp4",
+          "de_s": 30,
+          "a_s": 50,
+          "note": "méthode + orchestration, phrases entières"
+        }
+      ],
+      "vignette": {
+        "fichier": "S01E01-colomb-50s-vignette.jpg",
+        "t_s": 26.0
+      }
+    }
   }
 }

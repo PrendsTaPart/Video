@@ -1,6 +1,7 @@
 # S01E01 — « Il cherchait le poivre. »
 
-45 s · 1080×1920 · 30 ips. Trente secondes de film, quinze secondes de méthode.
+1080×1920 · 30 ips. Trente secondes de film, puis la méthode — en 15 s ou en 20 s,
+les deux sont livrées.
 Le film raconte Christophe Colomb parti chercher le poivre ; le bloc méthode explique,
 en cinq étapes, comment le spectateur peut faire la même publicité lui-même.
 
@@ -9,6 +10,11 @@ Higgsfield et ont été récupérés par MCP. C'est la règle du dépôt et cell
 
 ## Les livrables
 
+Deux montages du même épisode. Le bloc film est identique dans les deux ; seul le bloc
+méthode change de rythme.
+
+**45 s — la voix dit court, l'écran dit long** (le montage du plan)
+
 | Fichier | Durée | Pour quoi |
 |---|---|---|
 | `deliverable/S01E01-colomb-45s.mp4` | 45 s | le film complet |
@@ -16,18 +22,30 @@ Higgsfield et ont été récupérés par MCP. C'est la règle du dépôt et cell
 | `deliverable/S01E01-colomb-15s-methode.mp4` | 15 s | méthode + orchestration, à remettre devant n'importe quel épisode |
 | `deliverable/S01E01-colomb-vignette.jpg` | — | image à 00:26,0, la bouteille nette au premier plan |
 
-Les trois sont normalisés à −14 LUFS (mesuré : −13,4 · −14,1 · −14,2) et se terminent
-par un fondu de 0,5 s.
+**50 s — phrases entières** (la variante que le plan proposait)
+
+| Fichier | Durée | Pour quoi |
+|---|---|---|
+| `deliverable/S01E01-colomb-50s.mp4` | 50 s | le film complet, les cinq étapes lues en entier |
+| `deliverable/S01E01-colomb-20s-methode.mp4` | 20 s | méthode + orchestration, phrases entières |
+| `deliverable/S01E01-colomb-50s-vignette.jpg` | — | même image, à 00:26,0 |
+
+Tous sont normalisés à −14 LUFS (mesuré : −13,4 · −14,1 · −14,2 · −13,4 · −14,1) et se
+terminent par un fondu de 0,5 s.
 
 ## Comment c'est fabriqué
 
 ```bash
-npm run voix      # découpe la passe unique de voix off et la cale aux timecodes
-npm run methode   # rend le bloc 30 → 45 s : HTML → 450 images → MP4 muet
-npm run monter    # assemble tout et sort les trois exports + la vignette
-npm run verifier  # contrôle format, durée, niveau sonore, coupe franche, sous-titres
-npm run build     # les quatre à la suite
+npm run voix       # découpe la passe unique de voix off et la cale aux timecodes
+npm run methode    # rend le bloc méthode : HTML → images → MP4 muet
+npm run monter     # assemble tout et sort les exports + la vignette
+npm run verifier   # contrôle format, durée, niveau sonore, coupe franche, sous-titres
+npm run build      # les quatre à la suite, en 45 s
+npm run build:50s  # les quatre à la suite, en 50 s
 ```
+
+Toute commande accepte `--variante 50s` ou la variable `VARIANTE=50s`. Sans rien, c'est
+le 45 s : `episode.json` porte `variante_par_defaut`.
 
 `episode.json` est la source de vérité : timecodes, textes, couleurs, suivi de la
 bouteille. Les scripts n'inventent rien, ils l'exécutent.
@@ -36,11 +54,11 @@ bouteille. Les scripts n'inventent rien, ils l'exécutent.
 |---|---|
 | `episode.json` | ✍️ **source de vérité** — tout le plan de montage en données |
 | `source/P*.mp4` | les trois plans Higgsfield, tels que récupérés |
-| `outro/methode.html` | le gabarit animé du bloc 30 → 45 s |
+| `outro/methode.html` | le gabarit animé du bloc méthode |
 | `outro/incrustations.html` | l'accroche et les sous-titres du bloc film |
 | `assets/logos/` + `assets/LOGOS.md` | les logos officiels et leur provenance |
 | `audio/vo-methode-passe-unique.mp3` | la prise ElevenLabs, d'un seul trait |
-| `audio/vo-decoupe.json` | 🔁 où la passe a été coupée et de combien chaque ligne est accélérée |
+| `audio/vo-decoupe-*.json` | 🔁 où la passe a été coupée et de combien chaque ligne est accélérée, par variante |
 | `scripts/suivre-bouteille.mjs` | relève la position de la bouteille pour l'étiquette annonceur |
 | `work/` | intermédiaires, jamais versionnés |
 
@@ -76,27 +94,41 @@ couleur dans le bas de l'image, à 29,0 · 29,5 · 30,0 s, et écrit le résulta
 `episode.json`. Le verre fait 428 px de large et ne bouge que de trois pixels sur la
 seconde — le plan est fixe depuis sa quatrième seconde, l'étiquette tiendra sans glisser.
 
-## Le bloc méthode — 00:30 → 00:45
+## Le bloc méthode — à partir de 00:30
 
 Fond `#F2F4F7`, grandes diagonales `#03A9F5` et `#7E57C2` du haut-droit vers le bas-gauche,
 animées très lentement. RapidoCMS et ElevenLabs arrivent côte à côte, puis se rangent en
 haut du cadre où ils restent. Cinq cartes d'étape, une par créneau de voix off, jamais deux
 à l'écran en même temps. Puis l'orchestration : RapidoCMS au centre, Claude, Higgsfield,
 ElevenLabs et HeyGen en orbite, chacun relié par un trait bleu qui se trace en 0,3 s ; les
-cinq réseaux arrivent en cascade à 00:43,0 ; fondu au fond clair sur les 0,3 dernières secondes.
+cinq réseaux arrivent en cascade trois secondes avant la fin (00:43,0 en 45 s, 00:48,0 en
+50 s) ; fondu au fond clair sur les 0,3 dernières secondes.
 
-## Trois choses à savoir
+## Ce qu'il faut savoir
 
-**La voix off est une seule prise, et elle a été accélérée pour tenir.** Le plan demande
-une passe unique — c'est ce qui garde la ligne mélodique — et donne quinze secondes.
-La prise en fait 23,7. Chaque ligne est donc découpée puis accélérée du strict minimum
-nécessaire à son créneau, entre 1,02× et 1,34× ; `atempo` conserve la hauteur de voix, et
-le détail ligne par ligne est dans `audio/vo-decoupe.json`. Au-delà de 1,4× le script
+**Deux rythmes, une seule prise.** Le plan demande une passe unique — c'est ce qui garde
+la ligne mélodique — et donne quinze secondes. La prise en fait 23,7. Les deux montages
+partent donc du même enregistrement, découpé aux mêmes silences, et n'en changent que
+les créneaux :
+
+| | 45 s | 50 s |
+|---|---|---|
+| Ligne d'ouverture | 1,6 s → **1,27×** | 2,0 s → 1,01× |
+| Les cinq étapes | 1,6 à 1,8 s → **1,18× à 1,34×** | 2,6 s chacune → **1,00×, lues en entier** |
+| Orchestration | 5,0 s → 1,15× | 5,0 s → 1,15× |
+| Bloc méthode | 15 s | 20 s |
+
+`atempo` conserve la hauteur de voix, et le détail ligne par ligne est dans
+`audio/vo-decoupe-45s.json` et `audio/vo-decoupe-50s.json`. Au-delà de 1,4× le script
 refuse de monter plutôt que de livrer une voix qui court.
 
-Si ce rythme est trop serré à l'oreille, le plan prévoit lui-même l'issue : la variante
-50 s, qui garde les mêmes cinq étapes en leur donnant 3 s chacune. Il suffit d'élargir les
-créneaux dans `episode.json` et de relancer — rien d'autre ne change.
+Le plan chiffrait la variante à « 3 s chacune ». Sur cette prise, **2,6 s suffisent** à
+dire chaque étape en entier : c'est ce qui fait tomber le total sur 50 s pile — 2 s
+d'ouverture, 13 s d'étapes, 5 s d'orchestration — au lieu de déborder à 52. Seule la
+dernière phrase reste accélérée, à 1,15×, dans les deux montages.
+
+Une variante ne duplique rien : `episode.json` porte le plan complet et, sous
+`variantes`, uniquement ce qui diffère. Les scripts fondent les deux.
 
 **Les réglages de voix n'ont pas pu être appliqués tels quels.** Le plan demande
 stability 0,45 · similarity 0,80 · style 0,25 · speaker boost. L'outil MCP ElevenLabs
@@ -115,12 +147,13 @@ toucher aux scripts.
 
 ## Ce qui n'a pas été fait
 
-**L'épisode n'est pas déclaré au catalogue.** Le plan demande de le déclarer « monté dans
-RapidoCMS, avec les cinq réseaux en `a_venir` ». Ce vocabulaire — un épisode, un état de
-production, des pièces par réseau — est celui du catalogue Social, pas celui de RapidoCMS,
-qui gère des campagnes et des posts programmés. La série S01 n'existe encore dans aucun
-des deux. Déclarer un épisode dans un produit en service demande de savoir lequel, et sous
-quelle série : c'est une question posée, pas une décision prise ici.
+**L'épisode n'est pas déclaré au catalogue, et c'est décidé.** Le plan demande de le
+déclarer « monté dans RapidoCMS, avec les cinq réseaux en `a_venir` ». Ce vocabulaire —
+un épisode, un état de production, des pièces par réseau — est celui du catalogue Social,
+pas celui de RapidoCMS, qui gère des campagnes et des posts programmés. Et le catalogue
+Social ne porte que les cinq séries FoodEatUp : `colomb` n'y a pas de série d'accueil.
+La question a été posée, la réponse est « on verra plus tard ». Rien n'a été écrit dans
+l'un ni dans l'autre.
 
 ## Fontes
 

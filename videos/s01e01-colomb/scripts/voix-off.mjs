@@ -8,11 +8,11 @@
 // ligne ne dépasse TEMPO_MAX — au-delà on l'entendrait.
 import { existsSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { EP, ROOT, WORK, ff, sonder, silences, dossiers, s2 } from "./outils.mjs";
+import { EP, ROOT, WORK, VARIANTE, ff, sonder, silences, dossiers, s2 } from "./outils.mjs";
 
 const SOURCE = join(ROOT, "audio", "vo-methode-passe-unique.mp3");
-const SORTIE = join(ROOT, "audio", "vo-methode-calee.wav");
-const DECOUPE = join(ROOT, "audio", "vo-decoupe.json");
+const SORTIE = join(ROOT, "audio", `vo-methode-calee-${VARIANTE}.wav`);
+const DECOUPE = join(ROOT, "audio", `vo-decoupe-${VARIANTE}.json`);
 /* La ligne la plus serrée de cette prise sort à 1,35× ; le garde-fou est un peu au-dessus,
    pour attraper une prise franchement trop lente plutôt que pour discuter des centièmes. */
 const TEMPO_MAX = 1.4;
@@ -98,6 +98,7 @@ ff([...entrees,
 
 writeFileSync(DECOUPE, JSON.stringify({
   source: "audio/vo-methode-passe-unique.mp3",
+  variante: EP.variante,
   voix: EP.methode.voix,
   passe_duree_s: +duree_passe.toFixed(3),
   pauses_detectees: pauses.length,
@@ -107,7 +108,7 @@ writeFileSync(DECOUPE, JSON.stringify({
   lignes: trace,
 }, null, 1) + "\n");
 
-console.log(`✅ ${SORTIE} — ${duree} s, ${trace.length} lignes calées`);
+console.log(`✅ ${SORTIE} — variante ${VARIANTE}, ${duree} s, ${trace.length} lignes calées`);
 for (const t of trace) {
   console.log(`   ${String(t.ligne).padStart(2)} · ${t.dit_s.toFixed(2)}s → ${t.creneau_s.toFixed(2)}s (${t.tempo.toFixed(2)}×)  « ${t.vo} »`);
 }

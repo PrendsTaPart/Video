@@ -4,7 +4,7 @@
 import { existsSync, writeFileSync, readFileSync, rmSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { createRequire } from "node:module";
-import { EP, ROOT, WORK, OUT, CHROME, PLAYWRIGHT, FPS, L, H, ff, sonder, dossiers, s2 } from "./outils.mjs";
+import { EP, ROOT, WORK, OUT, VARIANTE, CHROME, PLAYWRIGHT, FPS, L, H, ff, sonder, dossiers, s2 } from "./outils.mjs";
 
 const require = createRequire(import.meta.url);
 const { chromium } = require(PLAYWRIGHT);
@@ -12,7 +12,7 @@ const { chromium } = require(PLAYWRIGHT);
 const F = EP.film, M = EP.methode, A = EP.audio;
 const INCRUST = join(WORK, "incrustations");
 const METHODE_MUET = join(WORK, "methode-muet.mp4");
-const VO = join(ROOT, "audio", "vo-methode-calee.wav");
+const VO = join(ROOT, "audio", `vo-methode-calee-${VARIANTE}.wav`);
 const NAPPE = join(ROOT, "assets", "musique", "nappe-methode.mp3");
 
 for (const [quoi, chemin] of [["le bloc méthode", METHODE_MUET], ["la voix off calée", VO]]) {
