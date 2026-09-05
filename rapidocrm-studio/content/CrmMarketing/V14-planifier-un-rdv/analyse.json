@@ -293,37 +293,37 @@
       "raison": "Ligne du tableau Contacts qui dépasse sous la modale (Nicola charbit, son e-mail et son téléphone)."
     },
     {
-      "t": 44.0,
-      "fin": 58.0,
+      "t": 43.0,
+      "fin": 56.0,
       "zone": {
-        "x": 0.25,
-        "y": 0.4,
-        "w": 0.44,
-        "h": 0.58
+        "x": 0.24,
+        "y": 0.28,
+        "w": 0.46,
+        "h": 0.7
       },
-      "raison": "Bloc des invités et des organisateurs, position basse : étiquettes d'adresses e-mail réelles et liste déroulante des utilisateurs du compte avec leur e-mail. Les étiquettes se lisaient au montage, la zone déclarée s'arrêtant une ligne trop bas."
+      "raison": "Corps de la modale pendant le choix des invités : étiquettes d'adresses e-mail, noms et photos des organisateurs, et liste déroulante des utilisateurs du compte, qui remonte au-dessus du champ."
     },
     {
-      "t": 56.0,
-      "fin": 68.0,
+      "t": 59.0,
+      "fin": 67.0,
       "zone": {
-        "x": 0.25,
-        "y": 0.04,
-        "w": 0.44,
-        "h": 0.44
-      },
-      "raison": "Mêmes étiquettes, position haute après défilement : adresses e-mail des invités et noms des organisateurs."
-    },
-    {
-      "t": 68.0,
-      "fin": 73.0,
-      "zone": {
-        "x": 0.25,
-        "y": 0.56,
-        "w": 0.44,
+        "x": 0.24,
+        "y": 0.05,
+        "w": 0.46,
         "h": 0.42
       },
-      "raison": "Retour en haut de la modale : les étiquettes d'invités et d'organisateurs redeviennent lisibles."
+      "raison": "Mêmes étiquettes, position haute après défilement."
+    },
+    {
+      "t": 66.0,
+      "fin": 73.0,
+      "zone": {
+        "x": 0.24,
+        "y": 0.56,
+        "w": 0.46,
+        "h": 0.42
+      },
+      "raison": "Retour en haut de la modale : les étiquettes redeviennent lisibles."
     }
   ]
 }

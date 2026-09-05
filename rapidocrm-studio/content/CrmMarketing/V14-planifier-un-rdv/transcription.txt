@@ -10,7 +10,7 @@ Puis le créneau. Deux champs : l'heure de début, l'heure de fin. Le formulaire
 
 Les invités, ensuite. Le champ propose les utilisateurs du compte dès les premières lettres. Chaque nom retenu devient une étiquette. En dessous, les organisateurs : ceux qui tiennent le rendez-vous.
 
-Visio, présentiel ou téléphone. Le rappel : trente minutes, vingt-quatre heures, quarante-huit heures. Et par quel canal il part.
+Visio, présentiel ou téléphone. Puis le rappel, et le canal d'envoi.
 
 Une note pour ce qu'il faut préparer, puis enregistrer.
 

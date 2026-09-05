@@ -2,7 +2,7 @@
   {
     "mot": "Les",
     "debut": 0,
-    "fin": 0.197
+    "fin": 0.186
   },
   {
     "mot": "invités,",
@@ -11,142 +11,142 @@
   },
   {
     "mot": "ensuite.",
-    "debut": 0.627,
-    "fin": 1.103
+    "debut": 0.615,
+    "fin": 1.08
   },
   {
     "mot": "Le",
-    "debut": 1.277,
-    "fin": 1.405
+    "debut": 1.405,
+    "fin": 1.533
   },
   {
     "mot": "champ",
-    "debut": 1.44,
-    "fin": 1.649
+    "debut": 1.567,
+    "fin": 1.776
   },
   {
     "mot": "propose",
-    "debut": 1.672,
-    "fin": 2.032
+    "debut": 1.8,
+    "fin": 2.171
   },
   {
     "mot": "les",
-    "debut": 2.055,
-    "fin": 2.159
+    "debut": 2.194,
+    "fin": 2.31
   },
   {
     "mot": "utilisateurs",
-    "debut": 2.206,
-    "fin": 2.833
+    "debut": 2.368,
+    "fin": 2.949
   },
   {
     "mot": "du",
-    "debut": 2.856,
-    "fin": 2.937
+    "debut": 2.972,
+    "fin": 3.053
   },
   {
     "mot": "compte",
-    "debut": 2.995,
-    "fin": 3.437
+    "debut": 3.1,
+    "fin": 3.483
   },
   {
     "mot": "dès",
-    "debut": 3.646,
-    "fin": 3.82
+    "debut": 3.692,
+    "fin": 3.843
   },
   {
     "mot": "les",
-    "debut": 3.843,
-    "fin": 3.924
+    "debut": 3.866,
+    "fin": 3.959
   },
   {
     "mot": "premières",
-    "debut": 3.947,
-    "fin": 4.319
+    "debut": 3.982,
+    "fin": 4.307
   },
   {
     "mot": "lettres.",
-    "debut": 4.342,
+    "debut": 4.331,
     "fin": 4.679
   },
   {
     "mot": "Chaque",
-    "debut": 4.888,
-    "fin": 5.201
+    "debut": 4.853,
+    "fin": 5.166
   },
   {
     "mot": "nom",
-    "debut": 5.236,
-    "fin": 5.352
+    "debut": 5.213,
+    "fin": 5.329
   },
   {
     "mot": "retenu",
     "debut": 5.387,
-    "fin": 5.851
+    "fin": 5.828
   },
   {
     "mot": "devient",
-    "debut": 5.944,
-    "fin": 6.269
+    "debut": 5.898,
+    "fin": 6.246
   },
   {
     "mot": "une",
     "debut": 6.327,
-    "fin": 6.42
+    "fin": 6.49
   },
   {
     "mot": "étiquette.",
-    "debut": 6.444,
-    "fin": 7.047
+    "debut": 6.513,
+    "fin": 7.07
   },
   {
     "mot": "En",
-    "debut": 7.291,
-    "fin": 7.454
+    "debut": 7.396,
+    "fin": 7.558
   },
   {
     "mot": "dessous,",
-    "debut": 7.5,
-    "fin": 7.883
+    "debut": 7.605,
+    "fin": 8.081
   },
   {
     "mot": "les",
-    "debut": 7.918,
-    "fin": 8.011
+    "debut": 8.197,
+    "fin": 8.324
   },
   {
     "mot": "organisateurs",
-    "debut": 8.081,
-    "fin": 8.916
+    "debut": 8.382,
+    "fin": 9.149
   },
   {
     "mot": ":",
-    "debut": 8.94,
-    "fin": 8.963
+    "debut": 9.172,
+    "fin": 9.288
   },
   {
     "mot": "ceux",
-    "debut": 9.114,
-    "fin": 9.323
+    "debut": 9.567,
+    "fin": 9.718
   },
   {
     "mot": "qui",
-    "debut": 9.369,
-    "fin": 9.462
+    "debut": 9.741,
+    "fin": 9.834
   },
   {
     "mot": "tiennent",
-    "debut": 9.52,
-    "fin": 9.799
+    "debut": 9.892,
+    "fin": 10.194
   },
   {
     "mot": "le",
-    "debut": 9.834,
-    "fin": 9.88
+    "debut": 10.31,
+    "fin": 10.391
   },
   {
     "mot": "rendez-vous.",
-    "debut": 9.927,
-    "fin": 10.519
+    "debut": 10.426,
+    "fin": 10.925
   }
 ]

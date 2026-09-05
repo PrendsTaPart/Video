@@ -38,15 +38,15 @@ Puis le créneau. Deux champs : l'heure de début, l'heure de fin. Le formulaire
 
 ### 4. Choisir les invités et les organisateurs
 
-_44.0s → 56.0s · 30 mots · ~12.0s_
+_44.0s → 55.0s · 30 mots · ~12.0s_
 
 Les invités, ensuite. Le champ propose les utilisateurs du compte dès les premières lettres. Chaque nom retenu devient une étiquette. En dessous, les organisateurs : ceux qui tiennent le rendez-vous.
 
 ### 5. Type de rendez-vous, rappel et mode d'envoi
 
-_56.0s → 66.0s · 19 mots · ~7.6s_
+_60.0s → 66.0s · 11 mots · ~4.4s_
 
-Visio, présentiel ou téléphone. Le rappel : trente minutes, vingt-quatre heures, quarante-huit heures. Et par quel canal il part.
+Visio, présentiel ou téléphone. Puis le rappel, et le canal d'envoi.
 
 ### 6. Ajouter une note et enregistrer
 

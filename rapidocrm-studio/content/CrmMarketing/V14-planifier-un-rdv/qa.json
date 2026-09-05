@@ -5,7 +5,7 @@
       "famille": "Charte",
       "intitule": "Couleurs dominantes dans la palette",
       "statut": "avertissement",
-      "detail": "qa-009.jpg → #9898A8"
+      "detail": "qa-005.jpg → #9898A8, qa-010.jpg → #9898A8"
     },
     {
       "famille": "Charte",
@@ -41,7 +41,7 @@
       "famille": "Audio",
       "intitule": "Niveau de voix constant entre les blocs",
       "statut": "ok",
-      "detail": "écart de 1.8 dB"
+      "detail": "écart de 1.5 dB"
     },
     {
       "famille": "Audio",
@@ -71,7 +71,7 @@
       "famille": "Complétude",
       "intitule": "Transcription ≥ 140 mots",
       "statut": "ok",
-      "detail": "232 mots"
+      "detail": "224 mots"
     },
     {
       "famille": "Complétude",
@@ -95,8 +95,8 @@
       "famille": "Complétude",
       "intitule": "Durée finale dans la fenêtre 55–170 s",
       "statut": "ok",
-      "detail": "88 s"
+      "detail": "85 s"
     }
   ],
-  "produit_le": "2026-09-05T22:19:50.018Z"
+  "produit_le": "2026-09-05T23:24:15.284Z"
 }

@@ -2,71 +2,71 @@
   {
     "mot": "Un",
     "debut": 0,
-    "fin": 0.104
+    "fin": 0.151
   },
   {
     "mot": "rendez-vous",
-    "debut": 0.128,
-    "fin": 0.534
+    "debut": 0.186,
+    "fin": 0.58
   },
   {
     "mot": "posé,",
-    "debut": 0.569,
-    "fin": 0.952
+    "debut": 0.604,
+    "fin": 1.033
   },
   {
     "mot": "des",
-    "debut": 0.975,
-    "fin": 1.103
+    "debut": 1.08,
+    "fin": 1.207
   },
   {
     "mot": "invités",
-    "debut": 1.149,
-    "fin": 1.463
+    "debut": 1.265,
+    "fin": 1.602
   },
   {
     "mot": "prévenus,",
-    "debut": 1.486,
-    "fin": 1.904
+    "debut": 1.637,
+    "fin": 2.113
   },
   {
     "mot": "un",
-    "debut": 1.962,
-    "fin": 2.032
+    "debut": 2.171,
+    "fin": 2.241
   },
   {
     "mot": "rappel",
-    "debut": 2.09,
-    "fin": 2.368
+    "debut": 2.287,
+    "fin": 2.601
   },
   {
     "mot": "programmé",
-    "debut": 2.426,
-    "fin": 2.902
+    "debut": 2.659,
+    "fin": 3.216
   },
   {
     "mot": ":",
-    "debut": 2.926,
-    "fin": 2.961
+    "debut": 3.251,
+    "fin": 3.274
   },
   {
     "mot": "trois",
-    "debut": 3.077,
-    "fin": 3.286
+    "debut": 3.448,
+    "fin": 3.68
   },
   {
     "mot": "oublis",
-    "debut": 3.332,
-    "fin": 3.576
+    "debut": 3.738,
+    "fin": 3.971
   },
   {
     "mot": "en",
-    "debut": 3.611,
-    "fin": 3.657
+    "debut": 4.005,
+    "fin": 4.075
   },
   {
     "mot": "moins.",
-    "debut": 3.692,
-    "fin": 3.924
+    "debut": 4.11,
+    "fin": 4.365
   }
 ]

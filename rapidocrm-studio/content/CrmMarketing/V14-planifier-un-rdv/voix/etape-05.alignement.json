@@ -2,96 +2,56 @@
   {
     "mot": "Visio,",
     "debut": 0,
-    "fin": 0.499
+    "fin": 0.569
   },
   {
     "mot": "présentiel",
-    "debut": 0.534,
-    "fin": 0.998
+    "debut": 0.685,
+    "fin": 1.382
   },
   {
     "mot": "ou",
-    "debut": 1.045,
-    "fin": 1.091
+    "debut": 1.591,
+    "fin": 1.707
   },
   {
     "mot": "téléphone.",
-    "debut": 1.138,
-    "fin": 1.695
+    "debut": 1.765,
+    "fin": 2.299
   },
   {
-    "mot": "Le",
-    "debut": 1.974,
-    "fin": 2.078
-  },
-  {
-    "mot": "rappel",
-    "debut": 2.125,
-    "fin": 2.508
-  },
-  {
-    "mot": ":",
-    "debut": 2.577,
+    "mot": "Puis",
+    "debut": 2.45,
     "fin": 2.612
   },
   {
-    "mot": "trente",
-    "debut": 2.786,
-    "fin": 3.053
+    "mot": "le",
+    "debut": 2.635,
+    "fin": 2.682
   },
   {
-    "mot": "minutes,",
-    "debut": 3.077,
-    "fin": 3.541
+    "mot": "rappel,",
+    "debut": 2.728,
+    "fin": 3.158
   },
   {
-    "mot": "vingt-quatre",
-    "debut": 3.785,
-    "fin": 4.284
+    "mot": "et",
+    "debut": 3.274,
+    "fin": 3.413
   },
   {
-    "mot": "heures,",
-    "debut": 4.307,
-    "fin": 4.621
-  },
-  {
-    "mot": "quarante-huit",
-    "debut": 4.795,
-    "fin": 5.306
-  },
-  {
-    "mot": "heures.",
-    "debut": 5.341,
-    "fin": 5.654
-  },
-  {
-    "mot": "Et",
-    "debut": 5.979,
-    "fin": 6.118
-  },
-  {
-    "mot": "par",
-    "debut": 6.153,
-    "fin": 6.269
-  },
-  {
-    "mot": "quel",
-    "debut": 6.316,
-    "fin": 6.444
+    "mot": "le",
+    "debut": 3.437,
+    "fin": 3.495
   },
   {
     "mot": "canal",
-    "debut": 6.49,
-    "fin": 6.745
+    "debut": 3.541,
+    "fin": 3.808
   },
   {
-    "mot": "il",
-    "debut": 6.792,
-    "fin": 6.838
-  },
-  {
-    "mot": "part.",
-    "debut": 6.908,
-    "fin": 7.245
+    "mot": "d'envoi.",
+    "debut": 3.855,
+    "fin": 4.238
   }
 ]

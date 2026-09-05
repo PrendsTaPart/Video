@@ -6,127 +6,127 @@
   },
   {
     "mot": "rendez-vous",
-    "debut": 0.221,
-    "fin": 0.615
+    "debut": 0.197,
+    "fin": 0.592
   },
   {
     "mot": "est",
-    "debut": 0.65,
-    "fin": 0.72
+    "debut": 0.615,
+    "fin": 0.685
   },
   {
     "mot": "calé.",
-    "debut": 0.743,
-    "fin": 1.207
+    "debut": 0.708,
+    "fin": 1.161
   },
   {
     "mot": "Reste",
-    "debut": 1.718,
-    "fin": 1.997
+    "debut": 1.335,
+    "fin": 1.602
   },
   {
     "mot": "à",
-    "debut": 2.02,
-    "fin": 2.043
+    "debut": 1.625,
+    "fin": 1.649
   },
   {
     "mot": "prévenir",
-    "debut": 2.101,
-    "fin": 2.508
+    "debut": 1.707,
+    "fin": 2.067
   },
   {
     "mot": "le",
-    "debut": 2.543,
-    "fin": 2.601
+    "debut": 2.101,
+    "fin": 2.171
   },
   {
     "mot": "client,",
-    "debut": 2.647,
-    "fin": 3.088
+    "debut": 2.218,
+    "fin": 2.589
   },
   {
     "mot": "l'équipe,",
-    "debut": 3.158,
-    "fin": 3.762
+    "debut": 2.67,
+    "fin": 3.204
   },
   {
     "mot": "et",
-    "debut": 3.936,
-    "fin": 4.075
+    "debut": 3.251,
+    "fin": 3.379
   },
   {
     "mot": "à",
-    "debut": 4.122,
-    "fin": 4.145
+    "debut": 3.413,
+    "fin": 3.437
   },
   {
     "mot": "penser",
-    "debut": 4.203,
-    "fin": 4.574
+    "debut": 3.495,
+    "fin": 3.808
   },
   {
     "mot": "au",
-    "debut": 4.621,
-    "fin": 4.702
+    "debut": 3.831,
+    "fin": 3.889
   },
   {
     "mot": "rappel",
-    "debut": 4.737,
-    "fin": 5.12
+    "debut": 3.936,
+    "fin": 4.214
   },
   {
     "mot": "la",
-    "debut": 5.201,
-    "fin": 5.294
+    "debut": 4.272,
+    "fin": 4.342
   },
   {
     "mot": "veille.",
-    "debut": 5.352,
-    "fin": 5.712
+    "debut": 4.4,
+    "fin": 4.76
   },
   {
     "mot": "Un",
-    "debut": 6.316,
-    "fin": 6.444
+    "debut": 5.004,
+    "fin": 5.12
   },
   {
     "mot": "seul",
-    "debut": 6.478,
-    "fin": 6.618
+    "debut": 5.213,
+    "fin": 5.375
   },
   {
     "mot": "formulaire,",
-    "debut": 6.664,
-    "fin": 7.256
+    "debut": 5.433,
+    "fin": 6.072
   },
   {
     "mot": "et",
-    "debut": 7.407,
-    "fin": 7.546
+    "debut": 6.281,
+    "fin": 6.42
   },
   {
     "mot": "tout",
-    "debut": 7.605,
-    "fin": 7.767
+    "debut": 6.49,
+    "fin": 6.606
   },
   {
     "mot": "le",
-    "debut": 7.79,
-    "fin": 7.848
+    "debut": 6.629,
+    "fin": 6.676
   },
   {
     "mot": "monde",
-    "debut": 7.883,
-    "fin": 8.115
+    "debut": 6.711,
+    "fin": 6.908
   },
   {
     "mot": "est",
-    "debut": 8.139,
-    "fin": 8.231
+    "debut": 6.931,
+    "fin": 7.012
   },
   {
     "mot": "prévenu.",
-    "debut": 8.255,
-    "fin": 8.696
+    "debut": 7.059,
+    "fin": 7.523
   }
 ]

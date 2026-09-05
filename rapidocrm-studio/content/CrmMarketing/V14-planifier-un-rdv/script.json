@@ -70,7 +70,7 @@
         "titre": "Choisir les invités et les organisateurs",
         "voix": "Les invités, ensuite. Le champ propose les utilisateurs du compte dès les premières lettres. Chaque nom retenu devient une étiquette. En dessous, les organisateurs : ceux qui tiennent le rendez-vous.",
         "debut_source": 44,
-        "fin_source": 56,
+        "fin_source": 55.0,
         "zone_focus": {
           "x": 0.26,
           "y": 0.5,
@@ -82,9 +82,9 @@
       {
         "numero": 5,
         "titre": "Type de rendez-vous, rappel et mode d'envoi",
-        "voix": "Visio, présentiel ou téléphone. Le rappel : trente minutes, vingt-quatre heures, quarante-huit heures. Et par quel canal il part.",
-        "debut_source": 56,
-        "fin_source": 66,
+        "voix": "Visio, présentiel ou téléphone. Puis le rappel, et le canal d'envoi.",
+        "debut_source": 60.0,
+        "fin_source": 66.0,
         "zone_focus": {
           "x": 0.26,
           "y": 0.38,

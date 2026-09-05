@@ -6,82 +6,82 @@
   },
   {
     "mot": "titre,",
-    "debut": 0.163,
-    "fin": 0.511
+    "debut": 0.197,
+    "fin": 0.464
   },
   {
     "mot": "d'abord.",
-    "debut": 0.534,
-    "fin": 0.929
+    "debut": 0.488,
+    "fin": 0.871
   },
   {
     "mot": "C'est",
-    "debut": 1.08,
-    "fin": 1.289
+    "debut": 1.196,
+    "fin": 1.382
   },
   {
     "mot": "lui",
-    "debut": 1.312,
-    "fin": 1.405
+    "debut": 1.405,
+    "fin": 1.486
   },
   {
     "mot": "qu'on",
-    "debut": 1.451,
-    "fin": 1.579
+    "debut": 1.544,
+    "fin": 1.66
   },
   {
     "mot": "relira",
-    "debut": 1.625,
-    "fin": 1.95
+    "debut": 1.718,
+    "fin": 2.043
   },
   {
     "mot": "dans",
-    "debut": 1.997,
-    "fin": 2.125
+    "debut": 2.101,
+    "fin": 2.229
   },
   {
     "mot": "l'agenda,",
-    "debut": 2.148,
-    "fin": 2.705
+    "debut": 2.252,
+    "fin": 2.81
   },
   {
     "mot": "alors",
-    "debut": 2.786,
-    "fin": 3.007
+    "debut": 2.926,
+    "fin": 3.17
   },
   {
     "mot": "autant",
-    "debut": 3.042,
-    "fin": 3.32
+    "debut": 3.216,
+    "fin": 3.471
   },
   {
     "mot": "qu'il",
-    "debut": 3.355,
-    "fin": 3.506
+    "debut": 3.506,
+    "fin": 3.657
   },
   {
     "mot": "dise",
-    "debut": 3.553,
-    "fin": 3.773
-  },
-  {
-    "mot": "de",
-    "debut": 3.808,
+    "debut": 3.715,
     "fin": 3.889
   },
   {
-    "mot": "quoi",
-    "debut": 3.947,
-    "fin": 4.075
+    "mot": "de",
+    "debut": 3.913,
+    "fin": 3.994
   },
   {
-    "mot": "on",
-    "debut": 4.098,
+    "mot": "quoi",
+    "debut": 4.04,
     "fin": 4.156
   },
   {
+    "mot": "on",
+    "debut": 4.18,
+    "fin": 4.238
+  },
+  {
     "mot": "parle.",
-    "debut": 4.226,
-    "fin": 4.621
+    "debut": 4.307,
+    "fin": 4.598
   }
 ]
