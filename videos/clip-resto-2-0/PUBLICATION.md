@@ -43,15 +43,27 @@ Campagne « Lancement FoodEatUp — Resto 2.0 », id **37**.
 | Post | Réseau | Statut | Identifiant du post |
 |---|---|---|---|
 | 834 | Facebook | **sorti** à 11:00 UTC | `1811183623210952` |
-| 835 | Instagram | en file (`statut 0`, job relancé 949 → 954) | — |
-| 833 | LinkedIn | en file (`statut 0`, jamais repris depuis sa création) | — |
+| 835 | Instagram | **sorti** à 11:10 UTC | `17964993396075791` |
+| 833 | LinkedIn | **bloqué** (`statut 0`, jamais repris) | — |
 
-Le retard n'est pas propre à ces posts : le post 836 (EPC05, LinkedIn,
-créneau 08:00) est lui aussi encore à `statut 0` à 13:10, et le seul autre
-post sorti aujourd'hui est un Facebook. Le planificateur passe donc sur
-Facebook et traîne sur LinkedIn et Instagram, pour tout le compte.
-**Ne pas replanifier** 833 et 835 : leur job existe, une seconde
-programmation publierait deux fois.
+Facebook et Instagram sont sortis à l'heure. LinkedIn ne sort pas, et le
+problème n'est pas ce post : au 05/09 16:49, **les six posts LinkedIn du
+jour sont à `statut 0`** — 671, 672, 679, 680 (compte 101119107), 833 et 836
+(compte 68807312). Deux comptes LinkedIn différents, aucun `errors`
+renseigné, aucun `updated_at` touché depuis la création. Le worker LinkedIn
+est en panne pour tout le compte ; Facebook et Instagram fonctionnent.
+
+Il n'y a aucune voie pour forcer la sortie depuis le MCP :
+- aucun outil « publier maintenant » — RapidoCMS n'expose que créer,
+  planifier, lister ;
+- `cancel_schedules_post` est verrouillé côté serveur : « Destruction
+  refusée, sans exception. Si quelque chose doit sortir, dites-le et
+  arrêtez-vous : c'est une décision humaine. » ;
+- replanifier sans annuler créerait un second job : si le worker repart, le
+  post sortirait deux fois. **Non fait pour cette raison.**
+
+À reprendre à la main depuis /admin/social, ou une fois le worker LinkedIn
+remis en route — le post 833 est prêt et n'attend que ça.
 
 Les trois sont rattachés à la campagne 37 (liens 119, 120, 121).
 
