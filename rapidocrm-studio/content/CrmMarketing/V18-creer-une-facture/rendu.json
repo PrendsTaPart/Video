@@ -1,0 +1,92 @@
+{
+  "duree": 67.7,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V18-creer-une-facture/out/master-16x9.mp4",
+      "octets": 12003912
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V18-creer-une-facture/out/master-9x16.mp4",
+      "octets": 8845186
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 11.266666666666667
+    },
+    {
+      "nom": "titre",
+      "debut": 11.266666666666667,
+      "fin": 22.533333333333335
+    },
+    {
+      "nom": "demo",
+      "debut": 22.533333333333335,
+      "fin": 49.53333333333333
+    },
+    {
+      "nom": "claude",
+      "debut": 49.53333333333333,
+      "fin": 62.6
+    },
+    {
+      "nom": "punchline",
+      "debut": 62.6,
+      "fin": 67.7
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "La prestation est livrée. Il ne reste qu'à facturer — et à retrouver le prix, la TVA, l'adresse du client."
+    },
+    {
+      "timecode": "00:11",
+      "titre": "Créer une facture"
+    },
+    {
+      "timecode": "00:22",
+      "titre": "Ouvrir « Créer une facture » depuis la fiche"
+    },
+    {
+      "timecode": "00:25",
+      "titre": "Logo et charte graphique de la facture"
+    },
+    {
+      "timecode": "00:28",
+      "titre": "Choisir le produit à facturer"
+    },
+    {
+      "timecode": "00:33",
+      "titre": "Laisser les montants se calculer"
+    },
+    {
+      "timecode": "00:39",
+      "titre": "Délai, mentions légales et statut"
+    },
+    {
+      "timecode": "00:43",
+      "titre": "Mode de paiement, totaux et enregistrement"
+    },
+    {
+      "timecode": "00:46",
+      "titre": "Retrouver la facture dans l'activité de la fiche"
+    },
+    {
+      "timecode": "00:49",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:02",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

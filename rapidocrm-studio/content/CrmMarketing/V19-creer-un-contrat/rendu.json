@@ -1,0 +1,88 @@
+{
+  "duree": 70.9,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V19-creer-un-contrat/out/master-16x9.mp4",
+      "octets": 11689666
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V19-creer-un-contrat/out/master-9x16.mp4",
+      "octets": 9261440
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.366666666666667
+    },
+    {
+      "nom": "titre",
+      "debut": 9.366666666666667,
+      "fin": 20.2
+    },
+    {
+      "nom": "demo",
+      "debut": 20.2,
+      "fin": 50.43333333333333
+    },
+    {
+      "nom": "claude",
+      "debut": 50.43333333333333,
+      "fin": 64.8
+    },
+    {
+      "nom": "punchline",
+      "debut": 64.8,
+      "fin": 70.9
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Le devis est accepté. Reste à sortir un contrat, à le relire, à trouver la bonne adresse."
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Créer un contrat"
+    },
+    {
+      "timecode": "00:20",
+      "titre": "Ouvrir « Créer un contrat » depuis la fiche"
+    },
+    {
+      "timecode": "00:23",
+      "titre": "Choisir un modèle dans la bibliothèque"
+    },
+    {
+      "timecode": "00:26",
+      "titre": "Vérifier le destinataire du contrat"
+    },
+    {
+      "timecode": "00:30",
+      "titre": "Fixer les dates de début et de fin"
+    },
+    {
+      "timecode": "00:40",
+      "titre": "Choisir le modèle d'e-mail et envoyer"
+    },
+    {
+      "timecode": "00:43",
+      "titre": "Lire la confirmation"
+    },
+    {
+      "timecode": "00:50",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:04",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

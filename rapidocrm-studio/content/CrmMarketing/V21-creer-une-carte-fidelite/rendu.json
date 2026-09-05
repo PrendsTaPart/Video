@@ -1,0 +1,84 @@
+{
+  "duree": 56.2,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V21-creer-une-carte-fidelite/out/master-16x9.mp4",
+      "octets": 10339869
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V21-creer-une-carte-fidelite/out/master-9x16.mp4",
+      "octets": 7459411
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 8.933333333333334
+    },
+    {
+      "nom": "titre",
+      "debut": 8.933333333333334,
+      "fin": 19.6
+    },
+    {
+      "nom": "demo",
+      "debut": 19.6,
+      "fin": 39.4
+    },
+    {
+      "nom": "claude",
+      "debut": 39.4,
+      "fin": 52.233333333333334
+    },
+    {
+      "nom": "punchline",
+      "debut": 52.233333333333334,
+      "fin": 56.2
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Une carte de fidélité, d'habitude, ça passe par un imprimeur, un graphiste, et trois allers-retours."
+    },
+    {
+      "timecode": "00:08",
+      "titre": "Créer une carte fidélité"
+    },
+    {
+      "timecode": "00:19",
+      "titre": "Ouvrir l'assistant de carte de fidélité"
+    },
+    {
+      "timecode": "00:23",
+      "titre": "Choisir la taille de la carte"
+    },
+    {
+      "timecode": "00:28",
+      "titre": "Choisir le modèle de carte"
+    },
+    {
+      "timecode": "00:32",
+      "titre": "Relire le récapitulatif et enregistrer"
+    },
+    {
+      "timecode": "00:36",
+      "titre": "Retrouver la carte dans les programmes de fidélité"
+    },
+    {
+      "timecode": "00:39",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:52",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

@@ -1,0 +1,88 @@
+{
+  "duree": 88.06666666666666,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V14-planifier-un-rdv/out/master-16x9.mp4",
+      "octets": 14661865
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V14-planifier-un-rdv/out/master-9x16.mp4",
+      "octets": 12676399
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 10.966666666666667
+    },
+    {
+      "nom": "titre",
+      "debut": 10.966666666666667,
+      "fin": 21.9
+    },
+    {
+      "nom": "demo",
+      "debut": 21.9,
+      "fin": 70.33333333333333
+    },
+    {
+      "nom": "claude",
+      "debut": 70.33333333333333,
+      "fin": 83.06666666666666
+    },
+    {
+      "nom": "punchline",
+      "debut": 83.06666666666666,
+      "fin": 88.06666666666666
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Le rendez-vous est calé. Reste à prévenir le client, l'équipe, et à penser au rappel la veille."
+    },
+    {
+      "timecode": "00:10",
+      "titre": "Planifier un RDV"
+    },
+    {
+      "timecode": "00:21",
+      "titre": "Ouvrir « Prendre un rendez-vous »"
+    },
+    {
+      "timecode": "00:24",
+      "titre": "Donner un titre au rendez-vous"
+    },
+    {
+      "timecode": "00:30",
+      "titre": "Fixer le créneau, début et fin"
+    },
+    {
+      "timecode": "00:45",
+      "titre": "Choisir les invités et les organisateurs"
+    },
+    {
+      "timecode": "00:58",
+      "titre": "Type de rendez-vous, rappel et mode d'envoi"
+    },
+    {
+      "timecode": "01:06",
+      "titre": "Ajouter une note et enregistrer"
+    },
+    {
+      "timecode": "01:10",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:23",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

@@ -1,0 +1,90 @@
+{
+  "duree": 63.6,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V13-planifier-un-email-sms/out/master-16x9.mp4",
+      "octets": 10097613
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V13-planifier-un-email-sms/out/master-9x16.mp4",
+      "octets": 7355226
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 12.333333333333334
+    },
+    {
+      "nom": "titre",
+      "debut": 12.333333333333334,
+      "fin": 24.233333333333334
+    },
+    {
+      "nom": "demo",
+      "debut": 24.233333333333334,
+      "fin": 46.06666666666667
+    },
+    {
+      "nom": "claude",
+      "debut": 46.06666666666667,
+      "fin": 58.46666666666667
+    },
+    {
+      "nom": "punchline",
+      "debut": 58.46666666666667,
+      "fin": 63.6
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Il est vingt-deux heures. Vous écrivez le SMS de demain matin, et vous vous notez de l'envoyer à huit heures."
+    },
+    {
+      "timecode": "00:12",
+      "titre": "Planifier un email/SMS"
+    },
+    {
+      "timecode": "00:24",
+      "titre": "Ouvrir le panneau Communication de la fiche"
+    },
+    {
+      "timecode": "00:27",
+      "titre": "Choisir « Planifier un SMS »"
+    },
+    {
+      "timecode": "00:30",
+      "titre": "Dire à qui le SMS part"
+    },
+    {
+      "timecode": "00:33",
+      "titre": "Choisir le modèle de SMS"
+    },
+    {
+      "timecode": "00:36",
+      "titre": "Fixer la date et l'heure d'envoi"
+    },
+    {
+      "timecode": "00:42",
+      "titre": "Valider la planification"
+    },
+    {
+      "timecode": "00:46",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:58",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 64s, hors de la fenêtre 80–170s."
+  ]
+}

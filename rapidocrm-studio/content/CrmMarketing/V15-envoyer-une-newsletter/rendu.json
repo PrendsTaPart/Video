@@ -1,0 +1,84 @@
+{
+  "duree": 56.233333333333334,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V15-envoyer-une-newsletter/out/master-16x9.mp4",
+      "octets": 9445310
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V15-envoyer-une-newsletter/out/master-9x16.mp4",
+      "octets": 6895917
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 10.166666666666666
+    },
+    {
+      "nom": "titre",
+      "debut": 10.166666666666666,
+      "fin": 20.766666666666666
+    },
+    {
+      "nom": "demo",
+      "debut": 20.766666666666666,
+      "fin": 38.96666666666667
+    },
+    {
+      "nom": "claude",
+      "debut": 38.96666666666667,
+      "fin": 51.333333333333336
+    },
+    {
+      "nom": "punchline",
+      "debut": 51.333333333333336,
+      "fin": 56.233333333333334
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Vous avez une nouvelle à annoncer, et un fichier client. Entre les deux, d'habitude, il y a un outil d'e-mailing."
+    },
+    {
+      "timecode": "00:10",
+      "titre": "Envoyer une newsletter"
+    },
+    {
+      "timecode": "00:20",
+      "titre": "Ouvrir « Envoyer une newsletter »"
+    },
+    {
+      "timecode": "00:23",
+      "titre": "Dire à qui la newsletter part"
+    },
+    {
+      "timecode": "00:27",
+      "titre": "Fixer la date et l'heure d'envoi"
+    },
+    {
+      "timecode": "00:34",
+      "titre": "Choisir le modèle de newsletter"
+    },
+    {
+      "timecode": "00:36",
+      "titre": "Lire la confirmation"
+    },
+    {
+      "timecode": "00:38",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:51",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}
