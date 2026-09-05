@@ -1,5 +1,9 @@
 # La queue animée RapidoCMS — et la règle des soixante secondes
 
+> **Vous reprenez la série sans avoir suivi ce qui précède ?** Lisez `REPRISE.md`, à côté
+> de ce fichier : il dit ce qui ne doit jamais changer, ce qui change à chaque épisode,
+> et les pièges déjà rencontrés.
+
 Les trente dernières secondes de chaque épisode, plus le montage et les contrôles que tous
 les épisodes partagent. Un épisode n'a qu'un pilote de quelques lignes ; tout le reste est ici.
 
