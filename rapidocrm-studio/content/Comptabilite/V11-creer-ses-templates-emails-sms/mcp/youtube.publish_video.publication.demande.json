@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V11-05-creer-ses-templates-emails-sms.mp4",
+    "titre": "Créer un template SMS — RapidoCRM",
+    "description": "Écrit une fois, repris d'un clic.\n\nOn part de la page Template SMS, et on ressort avec un modèle de plus. Un nom, une catégorie, le texte du message, et un bouton d'action à joindre. Tout tient dans une seule fenêtre.\n\nChapitres\n00:00 Vous écrivez le même SMS dix fois par semaine. À chaque fois, vous le retapez.\n00:10 Créer un template de SMS\n00:22 Ouvrir la page des templates SMS\n00:26 Nommer le template\n00:32 Écrire le message\n00:37 Ajouter le bouton et valider\n00:41 Retrouver le template dans la liste\n00:45 Faites-le avec Claude\n00:59 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] templates SMS.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/05-creer-ses-templates-emails-sms\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "SMS",
+      "template",
+      "CRM",
+      "relance",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "Comptabilite"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V11-05-creer-ses-templates-emails-sms-thumb.jpg",
+    "playlist": "RapidoCRM — Comptabilite",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T17:22:16.077Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

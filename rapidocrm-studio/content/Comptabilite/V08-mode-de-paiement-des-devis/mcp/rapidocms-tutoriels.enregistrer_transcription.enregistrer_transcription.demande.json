@@ -1,0 +1,58 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "rapido_ac_8d2a14623245e47f0da39b8606e3a055952d5773bf699f27",
+    "slug": "05-mode-de-paiement-des-devis",
+    "transcription": "Le client vous dit qu'il paiera par virement. Trois semaines plus tard, personne ne s'en souvient. Une case cochée sur le devis, et c'est écrit.\n\nOn part de la liste des devis, et on ressort avec un moyen de paiement noté sur l'un d'eux. Le réglage est dans le devis, sous le statut : espèce, carte, virement ou chèque. Une seule case à la fois.\n\nL'onglet devis, et la liste. Les trois points ouvrent le menu.\n\nModifier. Le formulaire se rouvre tel qu'il a été rempli.\n\nOn descend au bloc Mode de paiement. Quatre moyens, et une étoile.\n\nVirement. Puis modifier, en bas.\n\nEt c'est enregistré.\n\nLe moyen est noté. Pour retrouver les devis qui attendent encore une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nUn moyen de paiement noté sur le devis, c'est une question de moins à la facture.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème",
+        "texte": "Le client vous dit qu'il paiera par virement. Trois semaines plus tard, personne ne s'en souvient. Une case cochée sur le devis, et c'est écrit."
+      },
+      {
+        "debut": 8,
+        "titre": "Ce qu'on va faire",
+        "texte": "On part de la liste des devis, et on ressort avec un moyen de paiement noté sur l'un d'eux. Le réglage est dans le devis, sous le statut : espèce, carte, virement ou chèque. Une seule case à la fois."
+      },
+      {
+        "debut": 19,
+        "titre": "Ouvrir la liste des devis",
+        "texte": "L'onglet devis, et la liste. Les trois points ouvrent le menu."
+      },
+      {
+        "debut": 23,
+        "titre": "Ouvrir le devis en modification",
+        "texte": "Modifier. Le formulaire se rouvre tel qu'il a été rempli."
+      },
+      {
+        "debut": 27,
+        "titre": "Descendre au mode de paiement",
+        "texte": "On descend au bloc Mode de paiement. Quatre moyens, et une étoile."
+      },
+      {
+        "debut": 31,
+        "titre": "Choisir le mode et enregistrer",
+        "texte": "Virement. Puis modifier, en bas."
+      },
+      {
+        "debut": 34,
+        "titre": "Lire la confirmation",
+        "texte": "Et c'est enregistré."
+      },
+      {
+        "debut": 36,
+        "titre": "Faites-le avec Claude",
+        "texte": "Le moyen est noté. Pour retrouver les devis qui attendent encore une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+      },
+      {
+        "debut": 50,
+        "titre": "À retenir",
+        "texte": "Un moyen de paiement noté sur le devis, c'est une question de moins à la facture."
+      }
+    ]
+  },
+  "demande_le": "2026-09-05T17:16:50.209Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

@@ -1,0 +1,15 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V14-05-historique-des-depenses.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V14-05-historique-des-depenses-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V14-05-historique-des-depenses-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V14-05-historique-des-depenses-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "0a61dcc79da6365e",
+      "video_vertical_url": "aaec9371d6c89168",
+      "thumbnail_url": "a6775e1a2c273847",
+      "thumbnail_vertical_url": "3694f4d61060b329"
+    },
+    "publie_le": "2026-09-05T17:10:00.655Z"
+  }
+}

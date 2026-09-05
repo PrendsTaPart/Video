@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V09-05-signature-electronique-d-un-devis.mp4",
+    "titre": "Signer un devis à l'écran — RapidoCRM",
+    "description": "Le devis se signe à l'écran, en trois gestes.\n\nOn part de la liste des devis, et on ressort avec un devis signé. Tout se passe dans le logiciel : on ouvre le devis en pleine page, on trace la signature dans le cadre prévu, on enregistre.\n\nChapitres\n00:00 Le client dit oui. Vous, vous imprimez, vous faites signer, vous scannez.\n00:08 Signer un devis à l'écran\n00:21 Ouvrir le menu du devis\n00:26 Ouvrir le devis à signer\n00:28 Signer dans le cadre\n00:32 Remonter et enregistrer\n00:36 Faites-le avec Claude\n00:49 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] devis en attente avec leur destinataire et leur montant.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/05-signature-electronique-d-un-devis\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "devis",
+      "signature",
+      "CRM",
+      "commercial",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "Comptabilite"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V09-05-signature-electronique-d-un-devis-thumb.jpg",
+    "playlist": "RapidoCRM — Comptabilite",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T17:22:09.220Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

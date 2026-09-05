@@ -32,7 +32,10 @@ const StatutVideoSchema = z.object({
   erreur: z.string().optional(),
 });
 
-const URL_ACADEMIE = 'https://academie.rapidosoftware.com';
+// academie.rapidosoftware.com n'a pas d'enregistrement DNS : les liens de
+// description pointaient dans le vide. Le domaine servi par l'Académie est
+// tutoriel.rapido-crm.com, et une page s'y ouvre sous /tutoriel/<slug>.
+const URL_ACADEMIE = 'https://tutoriel.rapido-crm.com';
 const URL_ESSAI = 'https://crm.rapidosoftware.com';
 
 /** Étape 8 — publication sur la chaîne YouTube RapidoCRM. */
@@ -149,7 +152,7 @@ export const descriptionYoutube = (script: Script, rendu: Rendu): string =>
     'Le prompt Claude de ce tutoriel',
     script.segment_claude.prompt.texte,
     '',
-    `La page du tutoriel : ${URL_ACADEMIE}/${script.meta.slug}`,
+    `La page du tutoriel : ${URL_ACADEMIE}/tutoriel/${script.meta.slug}`,
     `Essayer RapidoCRM : ${URL_ESSAI}`,
     `Tous les modules : ${URL_ACADEMIE}`,
   ].join('\n');

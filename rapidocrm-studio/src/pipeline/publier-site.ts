@@ -93,11 +93,12 @@ export const publierSite = async (dossier: string): Promise<Publication> => {
       {
         ...commun,
         transcription,
-        // Côté Académie, un chapitre porte « debut », pas « timestamp_secondes ».
+        // Côté Académie, un chapitre porte « debut », pas « timestamp_secondes »,
+        // et son schéma refuse toute autre clé : le corps du chapitre n'a pas
+        // sa place ici, il est déjà dans la transcription intégrale.
         chapitres: chapitres.map((c) => ({
           debut: c.timestamp_secondes,
           titre: c.titre,
-          texte: c.texte,
         })),
       },
     ],
@@ -198,6 +199,16 @@ export const publierSite = async (dossier: string): Promise<Publication> => {
     ReponseTutoriel,
     'publier',
   );
+
+  // La passe de collecte n'a rien publié : elle a seulement déposé les douze
+  // demandes MCP. Elle s'arrête ici pour ne pas écrire un `publication.json`
+  // qui affirmerait une mise en ligne qui n'a pas eu lieu.
+  if (process.env.MCP_PONT_COLLECTE === '1') {
+    throw new Error(
+      'Passe de collecte terminée : exécute les demandes MCP déposées, écris les ' +
+        'réponses, puis relance sans MCP_PONT_COLLECTE.',
+    );
+  }
 
   const url = publie.url ?? tutoriel.url;
   if (!url) throw new Error("Publication effectuée mais aucune URL de page retournée.");

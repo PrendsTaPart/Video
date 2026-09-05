@@ -1,0 +1,15 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V10-05-conversion-d-un-devis-en-facture.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V10-05-conversion-d-un-devis-en-facture-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V10-05-conversion-d-un-devis-en-facture-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V10-05-conversion-d-un-devis-en-facture-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "3c4ae067e0e25ec4",
+      "video_vertical_url": "2b037048e81823f4",
+      "thumbnail_url": "75761bef2d1fd848",
+      "thumbnail_vertical_url": "9a43a4849eb3ef95"
+    },
+    "publie_le": "2026-09-05T17:09:48.015Z"
+  }
+}

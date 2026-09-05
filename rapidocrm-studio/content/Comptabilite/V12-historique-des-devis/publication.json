@@ -1,0 +1,15 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V12-05-historique-des-devis.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V12-05-historique-des-devis-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V12-05-historique-des-devis-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V12-05-historique-des-devis-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "85b9f922f364aff6",
+      "video_vertical_url": "afc499ffd62d14a9",
+      "thumbnail_url": "d0abaa8f77590b6a",
+      "thumbnail_vertical_url": "d3e0e8d2b97a5e3a"
+    },
+    "publie_le": "2026-09-05T17:09:56.628Z"
+  }
+}

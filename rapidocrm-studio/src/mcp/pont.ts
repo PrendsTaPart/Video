@@ -85,6 +85,16 @@ export const appelMcp = <T>(
       'Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier ' +
       '.reponse.json portant le même nom.',
   });
+  // Mode collecte : une passe `MCP_PONT_COLLECTE=1` dépose TOUTES les demandes
+  // d'une étape d'un coup, au lieu de s'arrêter à la première. Claude Code
+  // exécute alors le lot entier, écrit les réponses, puis relance la commande
+  // normalement. Cette passe ne publie rien : elle rend un objet vide, et la
+  // commande s'arrête plus loin, faute de réponse réelle.
+  if (process.env.MCP_PONT_COLLECTE === '1') {
+    const vide = schema.safeParse({});
+    if (vide.success) return vide.data;
+  }
+
   throw new DemandeEnAttente(serveur, outil, demande, parametres);
 };
 
