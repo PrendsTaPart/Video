@@ -17,3 +17,6 @@ videos/**/work/
 
 # Le journal des appels MCP est une trace d'exécution, pas du code.
 .claude/journal-mcp.jsonl
+
+# Les dépendances npm des projets vidéo se réinstallent, elles ne se versionnent pas.
+videos/*/node_modules/

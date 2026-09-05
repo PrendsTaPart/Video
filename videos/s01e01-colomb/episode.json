@@ -1,0 +1,317 @@
+{
+  "id": "S01E01",
+  "slug": "colomb",
+  "titre": "Il cherchait le poivre.",
+  "format": {
+    "largeur": 1080,
+    "hauteur": 1920,
+    "fps": 30,
+    "duree_s": 45
+  },
+  "charte": {
+    "fond": "#F2F4F7",
+    "bleu": "#03A9F5",
+    "violet": "#7E57C2",
+    "texte": "#383838",
+    "blanc": "#FFFFFF",
+    "reseaux": {
+      "facebook": "#1877F2",
+      "instagram": "#E1306C",
+      "tiktok": "#000000",
+      "linkedin": "#0A66C2",
+      "youtube": "#FF0000"
+    }
+  },
+  "film": {
+    "debut_s": 0,
+    "fin_s": 30,
+    "raccords_s": [
+      10,
+      20
+    ],
+    "clips": [
+      {
+        "n": 1,
+        "fichier": "source/P1-quai.mp4",
+        "debut_s": 0,
+        "higgsfield": "d2420e5c-f407-41c8-84cd-6fb270b7dde7",
+        "scene": "Quai d'un port espagnol à l'aube, les grains de poivre dans la paume"
+      },
+      {
+        "n": 2,
+        "fichier": "source/P2-plage.mp4",
+        "debut_s": 10,
+        "higgsfield": "c1085fef-5228-46cd-9405-f228633a0b3d",
+        "scene": "Plage des Caraïbes, il mord le piment"
+      },
+      {
+        "n": 3,
+        "fichier": "source/P3-voile.mp4",
+        "debut_s": 20,
+        "higgsfield": "c8c0bc2d-d17d-42f6-ac4b-1b816a4a7778",
+        "scene": "À l'ombre de la voile, la bouteille au centre"
+      }
+    ],
+    "accroche": {
+      "texte": "Il cherchait le poivre.",
+      "debut_s": 0.3,
+      "fin_s": 3,
+      "fond": "#03A9F5",
+      "couleur": "#FFFFFF"
+    },
+    "sous_titres": [
+      {
+        "debut_s": 4,
+        "fin_s": 7,
+        "lignes": [
+          "Il était une fois un homme",
+          "qui cherchait le poivre."
+        ]
+      },
+      {
+        "debut_s": 7,
+        "fin_s": 10,
+        "lignes": [
+          "À cette époque, le poivre coûtait",
+          "plus cher que l'or."
+        ]
+      },
+      {
+        "debut_s": 17,
+        "fin_s": 20,
+        "lignes": [
+          "Il cherchait le poivre.",
+          "Il a trouvé ça."
+        ]
+      },
+      {
+        "debut_s": 24,
+        "fin_s": 26,
+        "lignes": [
+          "Ce n'était pas du poivre.",
+          "C'était le piment."
+        ]
+      },
+      {
+        "debut_s": 26,
+        "fin_s": 28,
+        "lignes": [
+          "Il lui a donné",
+          "le nom du poivre."
+        ]
+      },
+      {
+        "debut_s": 28,
+        "fin_s": 30,
+        "lignes": [
+          "Et le monde entier",
+          "a changé de goût."
+        ]
+      }
+    ],
+    "etiquette_annonceur": {
+      "debut_s": 29,
+      "fin_s": 30,
+      "fichier": "assets/annonceur/etiquette.png",
+      "note": "Aucune marque fournie : l'étiquette reste vierge et rien n'est incrusté. Déposer une PNG à ce chemin pour l'activer.",
+      "suivi": [
+        {
+          "t_s": 29,
+          "x": 343,
+          "y": 1532,
+          "l": 342,
+          "h": 266,
+          "bouteille": {
+            "x": 300,
+            "y": 1112,
+            "l": 428,
+            "h": 807,
+            "pixels": 81496
+          }
+        },
+        {
+          "t_s": 29.5,
+          "x": 343,
+          "y": 1535,
+          "l": 342,
+          "h": 264,
+          "bouteille": {
+            "x": 300,
+            "y": 1118,
+            "l": 428,
+            "h": 801,
+            "pixels": 80550
+          }
+        },
+        {
+          "t_s": 30,
+          "x": 343,
+          "y": 1536,
+          "l": 342,
+          "h": 263,
+          "bouteille": {
+            "x": 300,
+            "y": 1121,
+            "l": 428,
+            "h": 798,
+            "pixels": 80752
+          }
+        }
+      ]
+    },
+    "coupe_finale": {
+      "t_s": 30,
+      "noir_images": 4
+    }
+  },
+  "methode": {
+    "debut_s": 30,
+    "fin_s": 45,
+    "voix": {
+      "moteur": "ElevenLabs",
+      "langue": "fr-FR",
+      "profil": "voix masculine française, timbre chaud, âge perçu 35-45 ans, débit soutenu mais net",
+      "reglages": {
+        "stability": 0.45,
+        "similarity_boost": 0.8,
+        "style": 0.25,
+        "use_speaker_boost": true
+      },
+      "passe_unique": true,
+      "decoupe_s": [
+        2.5,
+        5.52,
+        8.49,
+        11.06,
+        13.42,
+        17.05
+      ],
+      "note_decoupe": "Les six instants de coupe de la passe unique, relevés sur la prise. Chacun doit tomber dans un silence : scripts/voix-off.mjs le vérifie et refuse la prise sinon. Les bornes exactes de chaque ligne sont les bords du silence qui l'entoure, pas ces instants."
+    },
+    "lignes": [
+      {
+        "debut_s": 30,
+        "fin_s": 31.6,
+        "vo": "Vous aussi, faites vos publicités vous-même.",
+        "ecran": "transition"
+      },
+      {
+        "debut_s": 31.6,
+        "fin_s": 33.3,
+        "vo": "Un : installez les MCP.",
+        "ecran": "etape",
+        "etape": 1
+      },
+      {
+        "debut_s": 33.3,
+        "fin_s": 35,
+        "vo": "Deux : demandez le script à Claude.",
+        "ecran": "etape",
+        "etape": 2
+      },
+      {
+        "debut_s": 35,
+        "fin_s": 36.6,
+        "vo": "Trois : ajoutez HyperFrames.",
+        "ecran": "etape",
+        "etape": 3
+      },
+      {
+        "debut_s": 36.6,
+        "fin_s": 38.2,
+        "vo": "Quatre : lancez votre prompt.",
+        "ecran": "etape",
+        "etape": 4
+      },
+      {
+        "debut_s": 38.2,
+        "fin_s": 40,
+        "vo": "Cinq : RapidoCMS planifie tout.",
+        "ecran": "etape",
+        "etape": 5
+      },
+      {
+        "debut_s": 40,
+        "fin_s": 45,
+        "vo": "RapidoCMS orchestre Claude, Higgsfield et ElevenLabs. Vos réseaux suivent.",
+        "ecran": "orchestration"
+      }
+    ],
+    "etapes": [
+      {
+        "n": 1,
+        "titre": "Installez les MCP RapidoCMS, Higgsfield et ElevenLabs sur Claude"
+      },
+      {
+        "n": 2,
+        "titre": "Demandez à Claude un script qui résume votre idée"
+      },
+      {
+        "n": 3,
+        "titre": "Installez le dépôt",
+        "mono": "github.com/heygen-com/hyperframes"
+      },
+      {
+        "n": 4,
+        "titre": "Lancez votre prompt sur Claude"
+      },
+      {
+        "n": 5,
+        "titre": "Demandez à Claude de planifier votre vidéo sur vos réseaux avec RapidoCMS"
+      }
+    ],
+    "orchestration": {
+      "centre": "rapidocms",
+      "orbite": [
+        "claude",
+        "higgsfield",
+        "elevenlabs",
+        "heygen"
+      ],
+      "orbite_ecart_s": 0.15,
+      "trait_duree_s": 0.3,
+      "reseaux_debut_s": 43,
+      "reseaux_ecart_s": 0.12,
+      "reseaux": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "linkedin",
+        "youtube"
+      ],
+      "fondu_blanc_s": 0.3,
+      "immobile_s": 0.8
+    }
+  },
+  "audio": {
+    "lufs": -14,
+    "ducking_db": 6,
+    "fondu_sortie_s": 0.5,
+    "coupe_musique_film_s": 30,
+    "nappe_methode_debut_s": 30.2
+  },
+  "exports": [
+    {
+      "fichier": "S01E01-colomb-45s.mp4",
+      "de_s": 0,
+      "a_s": 45,
+      "note": "film complet"
+    },
+    {
+      "fichier": "S01E01-colomb-30s.mp4",
+      "de_s": 0,
+      "a_s": 30,
+      "note": "bloc film seul — TikTok et Reels"
+    },
+    {
+      "fichier": "S01E01-colomb-15s-methode.mp4",
+      "de_s": 30,
+      "a_s": 45,
+      "note": "méthode + orchestration, réutilisable devant n'importe quel épisode"
+    }
+  ],
+  "vignette": {
+    "fichier": "S01E01-colomb-vignette.jpg",
+    "t_s": 26
+  }
+}

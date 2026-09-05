@@ -1,0 +1,14 @@
+{
+  "name": "s01e01-colomb",
+  "private": true,
+  "type": "module",
+  "description": "S01E01 « colomb » — 30 s de film Higgsfield + 15 s de méthode et d'orchestration",
+  "scripts": {
+    "voix": "node scripts/voix-off.mjs",
+    "methode": "node scripts/rendre-methode.mjs",
+    "monter": "node scripts/monter.mjs",
+    "verifier": "node scripts/verifier.mjs",
+    "build": "npm run voix && npm run methode && npm run monter && npm run verifier"
+  },
+  "dependencies": { "ffmpeg-static": "^5.2.0" }
+}
