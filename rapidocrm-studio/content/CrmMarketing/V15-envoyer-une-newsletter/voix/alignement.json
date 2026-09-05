@@ -1,0 +1,821 @@
+{
+  "duree_totale": 54.816,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 8.76,
+      "texte": "Vous avez une nouvelle à annoncer, et un fichier client. Entre les deux, d'habitude, il y a un outil d'e-mailing. Cette fois, la newsletter part du CRM.",
+      "mots": [
+        {
+          "mot": "Vous",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "avez",
+          "debut": 0.197,
+          "fin": 0.36
+        },
+        {
+          "mot": "une",
+          "debut": 0.383,
+          "fin": 0.453
+        },
+        {
+          "mot": "nouvelle",
+          "debut": 0.499,
+          "fin": 0.848
+        },
+        {
+          "mot": "à",
+          "debut": 0.871,
+          "fin": 0.894
+        },
+        {
+          "mot": "annoncer,",
+          "debut": 0.929,
+          "fin": 1.509
+        },
+        {
+          "mot": "et",
+          "debut": 1.533,
+          "fin": 1.649
+        },
+        {
+          "mot": "un",
+          "debut": 1.695,
+          "fin": 1.765
+        },
+        {
+          "mot": "fichier",
+          "debut": 1.823,
+          "fin": 2.113
+        },
+        {
+          "mot": "client.",
+          "debut": 2.148,
+          "fin": 2.543
+        },
+        {
+          "mot": "Entre",
+          "debut": 2.694,
+          "fin": 2.984
+        },
+        {
+          "mot": "les",
+          "debut": 3.007,
+          "fin": 3.111
+        },
+        {
+          "mot": "deux,",
+          "debut": 3.146,
+          "fin": 3.309
+        },
+        {
+          "mot": "d'habitude,",
+          "debut": 3.332,
+          "fin": 4.017
+        },
+        {
+          "mot": "il",
+          "debut": 4.226,
+          "fin": 4.296
+        },
+        {
+          "mot": "y",
+          "debut": 4.342,
+          "fin": 4.365
+        },
+        {
+          "mot": "a",
+          "debut": 4.412,
+          "fin": 4.435
+        },
+        {
+          "mot": "un",
+          "debut": 4.481,
+          "fin": 4.528
+        },
+        {
+          "mot": "outil",
+          "debut": 4.609,
+          "fin": 4.83
+        },
+        {
+          "mot": "d'e-mailing.",
+          "debut": 4.876,
+          "fin": 5.433
+        },
+        {
+          "mot": "Cette",
+          "debut": 5.503,
+          "fin": 5.747
+        },
+        {
+          "mot": "fois,",
+          "debut": 5.77,
+          "fin": 6.084
+        },
+        {
+          "mot": "la",
+          "debut": 6.211,
+          "fin": 6.281
+        },
+        {
+          "mot": "newsletter",
+          "debut": 6.351,
+          "fin": 6.838
+        },
+        {
+          "mot": "part",
+          "debut": 6.931,
+          "fin": 7.152
+        },
+        {
+          "mot": "du",
+          "debut": 7.175,
+          "fin": 7.279
+        },
+        {
+          "mot": "C.R.M.",
+          "debut": 7.326,
+          "fin": 7.802
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 8.76,
+      "duree": 10.608,
+      "texte": "On part de la fiche d'une entreprise, et on ressort avec une newsletter programmée. Qui la reçoit, quand elle part, à quoi elle ressemble : la fenêtre suit cet ordre.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "part",
+          "debut": 0.209,
+          "fin": 0.383
+        },
+        {
+          "mot": "de",
+          "debut": 0.406,
+          "fin": 0.476
+        },
+        {
+          "mot": "la",
+          "debut": 0.522,
+          "fin": 0.592
+        },
+        {
+          "mot": "fiche",
+          "debut": 0.662,
+          "fin": 0.906
+        },
+        {
+          "mot": "d'une",
+          "debut": 0.94,
+          "fin": 1.115
+        },
+        {
+          "mot": "entreprise,",
+          "debut": 1.138,
+          "fin": 1.823
+        },
+        {
+          "mot": "et",
+          "debut": 1.858,
+          "fin": 1.939
+        },
+        {
+          "mot": "on",
+          "debut": 1.974,
+          "fin": 2.032
+        },
+        {
+          "mot": "ressort",
+          "debut": 2.101,
+          "fin": 2.682
+        },
+        {
+          "mot": "avec",
+          "debut": 2.856,
+          "fin": 3.135
+        },
+        {
+          "mot": "une",
+          "debut": 3.193,
+          "fin": 3.32
+        },
+        {
+          "mot": "newsletter",
+          "debut": 3.367,
+          "fin": 3.843
+        },
+        {
+          "mot": "programmée.",
+          "debut": 3.901,
+          "fin": 4.458
+        },
+        {
+          "mot": "Qui",
+          "debut": 4.702,
+          "fin": 4.853
+        },
+        {
+          "mot": "la",
+          "debut": 4.911,
+          "fin": 4.969
+        },
+        {
+          "mot": "reçoit,",
+          "debut": 5.016,
+          "fin": 5.48
+        },
+        {
+          "mot": "quand",
+          "debut": 5.55,
+          "fin": 5.735
+        },
+        {
+          "mot": "elle",
+          "debut": 5.805,
+          "fin": 5.909
+        },
+        {
+          "mot": "part,",
+          "debut": 5.956,
+          "fin": 6.316
+        },
+        {
+          "mot": "à",
+          "debut": 6.467,
+          "fin": 6.525
+        },
+        {
+          "mot": "quoi",
+          "debut": 6.641,
+          "fin": 6.792
+        },
+        {
+          "mot": "elle",
+          "debut": 6.815,
+          "fin": 6.908
+        },
+        {
+          "mot": "ressemble",
+          "debut": 6.954,
+          "fin": 7.419
+        },
+        {
+          "mot": ":",
+          "debut": 7.5,
+          "fin": 7.581
+        },
+        {
+          "mot": "la",
+          "debut": 7.86,
+          "fin": 7.953
+        },
+        {
+          "mot": "fenêtre",
+          "debut": 8.034,
+          "fin": 8.475
+        },
+        {
+          "mot": "suit",
+          "debut": 8.533,
+          "fin": 8.754
+        },
+        {
+          "mot": "cet",
+          "debut": 8.777,
+          "fin": 8.951
+        },
+        {
+          "mot": "ordre.",
+          "debut": 9.079,
+          "fin": 9.358
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 19.368000000000002,
+      "duree": 3.216,
+      "texte": "Panneau Communication, envoyer une newsletter.",
+      "mots": [
+        {
+          "mot": "Panneau",
+          "debut": 0,
+          "fin": 0.302
+        },
+        {
+          "mot": "Communication,",
+          "debut": 0.337,
+          "fin": 1.033
+        },
+        {
+          "mot": "envoyer",
+          "debut": 1.068,
+          "fin": 1.451
+        },
+        {
+          "mot": "une",
+          "debut": 1.486,
+          "fin": 1.567
+        },
+        {
+          "mot": "newsletter.",
+          "debut": 1.591,
+          "fin": 2.229
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 22.584000000000003,
+      "duree": 3.552,
+      "texte": "La cible d'abord : entreprises. C'est le premier champ.",
+      "mots": [
+        {
+          "mot": "La",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "cible",
+          "debut": 0.197,
+          "fin": 0.406
+        },
+        {
+          "mot": "d'abord",
+          "debut": 0.453,
+          "fin": 0.801
+        },
+        {
+          "mot": ":",
+          "debut": 0.848,
+          "fin": 0.894
+        },
+        {
+          "mot": "entreprises.",
+          "debut": 0.929,
+          "fin": 1.637
+        },
+        {
+          "mot": "C'est",
+          "debut": 1.695,
+          "fin": 1.869
+        },
+        {
+          "mot": "le",
+          "debut": 1.892,
+          "fin": 1.95
+        },
+        {
+          "mot": "premier",
+          "debut": 2.009,
+          "fin": 2.31
+        },
+        {
+          "mot": "champ.",
+          "debut": 2.334,
+          "fin": 2.589
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 26.136000000000003,
+      "duree": 6.792,
+      "texte": "Puis la date et l'heure. Dix heures trente se lit ; dix-sept heures trente attend le lendemain.",
+      "mots": [
+        {
+          "mot": "Puis",
+          "debut": 0,
+          "fin": 0.209
+        },
+        {
+          "mot": "la",
+          "debut": 0.232,
+          "fin": 0.313
+        },
+        {
+          "mot": "date",
+          "debut": 0.383,
+          "fin": 0.615
+        },
+        {
+          "mot": "et",
+          "debut": 0.639,
+          "fin": 0.685
+        },
+        {
+          "mot": "l'heure.",
+          "debut": 0.731,
+          "fin": 1.115
+        },
+        {
+          "mot": "Dix",
+          "debut": 1.556,
+          "fin": 1.834
+        },
+        {
+          "mot": "heures",
+          "debut": 1.881,
+          "fin": 2.067
+        },
+        {
+          "mot": "trente",
+          "debut": 2.113,
+          "fin": 2.473
+        },
+        {
+          "mot": "se",
+          "debut": 2.508,
+          "fin": 2.647
+        },
+        {
+          "mot": "lit",
+          "debut": 2.717,
+          "fin": 2.984
+        },
+        {
+          "mot": ";",
+          "debut": 3.03,
+          "fin": 3.065
+        },
+        {
+          "mot": "dix-sept",
+          "debut": 3.576,
+          "fin": 4.029
+        },
+        {
+          "mot": "heures",
+          "debut": 4.075,
+          "fin": 4.249
+        },
+        {
+          "mot": "trente",
+          "debut": 4.284,
+          "fin": 4.714
+        },
+        {
+          "mot": "attend",
+          "debut": 4.83,
+          "fin": 5.178
+        },
+        {
+          "mot": "le",
+          "debut": 5.213,
+          "fin": 5.283
+        },
+        {
+          "mot": "lendemain.",
+          "debut": 5.329,
+          "fin": 5.84
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 32.928000000000004,
+      "duree": 2.256,
+      "texte": "Le modèle, avec son aperçu.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "modèle,",
+          "debut": 0.186,
+          "fin": 0.511
+        },
+        {
+          "mot": "avec",
+          "debut": 0.557,
+          "fin": 0.743
+        },
+        {
+          "mot": "son",
+          "debut": 0.766,
+          "fin": 0.859
+        },
+        {
+          "mot": "aperçu.",
+          "debut": 0.906,
+          "fin": 1.324
+        }
+      ]
+    },
+    {
+      "id": "etape-05",
+      "fichier": "voix/etape-05.mp3",
+      "debut": 35.184000000000005,
+      "duree": 2.376,
+      "texte": "Campagne ajoutée avec succès.",
+      "mots": [
+        {
+          "mot": "Campagne",
+          "debut": 0,
+          "fin": 0.441
+        },
+        {
+          "mot": "ajoutée",
+          "debut": 0.488,
+          "fin": 0.824
+        },
+        {
+          "mot": "avec",
+          "debut": 0.848,
+          "fin": 0.998
+        },
+        {
+          "mot": "succès.",
+          "debut": 1.045,
+          "fin": 1.428
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 37.56,
+      "duree": 12.36,
+      "texte": "Une newsletter devient une campagne. Pour retrouver les dernières, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Une",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "newsletter",
+          "debut": 0.197,
+          "fin": 0.639
+        },
+        {
+          "mot": "devient",
+          "debut": 0.685,
+          "fin": 0.94
+        },
+        {
+          "mot": "une",
+          "debut": 1.022,
+          "fin": 1.103
+        },
+        {
+          "mot": "campagne.",
+          "debut": 1.138,
+          "fin": 1.614
+        },
+        {
+          "mot": "Pour",
+          "debut": 1.649,
+          "fin": 1.858
+        },
+        {
+          "mot": "retrouver",
+          "debut": 1.881,
+          "fin": 2.241
+        },
+        {
+          "mot": "les",
+          "debut": 2.264,
+          "fin": 2.357
+        },
+        {
+          "mot": "dernières,",
+          "debut": 2.392,
+          "fin": 2.856
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 2.972,
+          "fin": 3.843
+        },
+        {
+          "mot": "parle",
+          "debut": 3.913,
+          "fin": 4.145
+        },
+        {
+          "mot": "à",
+          "debut": 4.168,
+          "fin": 4.191
+        },
+        {
+          "mot": "Claude",
+          "debut": 4.238,
+          "fin": 4.609
+        },
+        {
+          "mot": ":",
+          "debut": 4.644,
+          "fin": 4.679
+        },
+        {
+          "mot": "vous",
+          "debut": 4.83,
+          "fin": 4.969
+        },
+        {
+          "mot": "demandez",
+          "debut": 5.004,
+          "fin": 5.341
+        },
+        {
+          "mot": "en",
+          "debut": 5.375,
+          "fin": 5.422
+        },
+        {
+          "mot": "français,",
+          "debut": 5.48,
+          "fin": 6.037
+        },
+        {
+          "mot": "il",
+          "debut": 6.246,
+          "fin": 6.397
+        },
+        {
+          "mot": "lit",
+          "debut": 6.467,
+          "fin": 6.594
+        },
+        {
+          "mot": "vos",
+          "debut": 6.629,
+          "fin": 6.757
+        },
+        {
+          "mot": "données",
+          "debut": 6.78,
+          "fin": 7.163
+        },
+        {
+          "mot": "et",
+          "debut": 7.233,
+          "fin": 7.384
+        },
+        {
+          "mot": "répond.",
+          "debut": 7.43,
+          "fin": 7.779
+        },
+        {
+          "mot": "Copiez",
+          "debut": 8.057,
+          "fin": 8.44
+        },
+        {
+          "mot": "ce",
+          "debut": 8.464,
+          "fin": 8.568
+        },
+        {
+          "mot": "prompt,",
+          "debut": 8.626,
+          "fin": 9.125
+        },
+        {
+          "mot": "remplacez",
+          "debut": 9.3,
+          "fin": 9.88
+        },
+        {
+          "mot": "ce",
+          "debut": 9.996,
+          "fin": 10.101
+        },
+        {
+          "mot": "qui",
+          "debut": 10.159,
+          "fin": 10.275
+        },
+        {
+          "mot": "est",
+          "debut": 10.31,
+          "fin": 10.403
+        },
+        {
+          "mot": "entre",
+          "debut": 10.472,
+          "fin": 10.658
+        },
+        {
+          "mot": "crochets.",
+          "debut": 10.704,
+          "fin": 11.122
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 49.92,
+      "duree": 4.896,
+      "texte": "Le fichier est déjà là, la newsletter part de là : un outil de moins à ouvrir.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "fichier",
+          "debut": 0.197,
+          "fin": 0.499
+        },
+        {
+          "mot": "est",
+          "debut": 0.557,
+          "fin": 0.627
+        },
+        {
+          "mot": "déjà",
+          "debut": 0.65,
+          "fin": 0.848
+        },
+        {
+          "mot": "là,",
+          "debut": 0.906,
+          "fin": 1.103
+        },
+        {
+          "mot": "la",
+          "debut": 1.138,
+          "fin": 1.196
+        },
+        {
+          "mot": "newsletter",
+          "debut": 1.254,
+          "fin": 1.672
+        },
+        {
+          "mot": "part",
+          "debut": 1.741,
+          "fin": 1.892
+        },
+        {
+          "mot": "de",
+          "debut": 1.916,
+          "fin": 1.974
+        },
+        {
+          "mot": "là",
+          "debut": 2.02,
+          "fin": 2.183
+        },
+        {
+          "mot": ":",
+          "debut": 2.241,
+          "fin": 2.264
+        },
+        {
+          "mot": "un",
+          "debut": 2.334,
+          "fin": 2.438
+        },
+        {
+          "mot": "outil",
+          "debut": 2.508,
+          "fin": 2.728
+        },
+        {
+          "mot": "de",
+          "debut": 2.752,
+          "fin": 2.821
+        },
+        {
+          "mot": "moins",
+          "debut": 2.868,
+          "fin": 3.1
+        },
+        {
+          "mot": "à",
+          "debut": 3.17,
+          "fin": 3.193
+        },
+        {
+          "mot": "ouvrir.",
+          "debut": 3.239,
+          "fin": 3.622
+        }
+      ]
+    }
+  ]
+}

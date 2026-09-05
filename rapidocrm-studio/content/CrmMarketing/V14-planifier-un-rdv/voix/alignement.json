@@ -1,0 +1,1255 @@
+{
+  "duree_totale": 86.664,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 9.576,
+      "texte": "Le rendez-vous est calé. Reste à prévenir le client, l'équipe, et à penser au rappel la veille. Un seul formulaire, et tout le monde est prévenu.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "rendez-vous",
+          "debut": 0.221,
+          "fin": 0.615
+        },
+        {
+          "mot": "est",
+          "debut": 0.65,
+          "fin": 0.72
+        },
+        {
+          "mot": "calé.",
+          "debut": 0.743,
+          "fin": 1.207
+        },
+        {
+          "mot": "Reste",
+          "debut": 1.718,
+          "fin": 1.997
+        },
+        {
+          "mot": "à",
+          "debut": 2.02,
+          "fin": 2.043
+        },
+        {
+          "mot": "prévenir",
+          "debut": 2.101,
+          "fin": 2.508
+        },
+        {
+          "mot": "le",
+          "debut": 2.543,
+          "fin": 2.601
+        },
+        {
+          "mot": "client,",
+          "debut": 2.647,
+          "fin": 3.088
+        },
+        {
+          "mot": "l'équipe,",
+          "debut": 3.158,
+          "fin": 3.762
+        },
+        {
+          "mot": "et",
+          "debut": 3.936,
+          "fin": 4.075
+        },
+        {
+          "mot": "à",
+          "debut": 4.122,
+          "fin": 4.145
+        },
+        {
+          "mot": "penser",
+          "debut": 4.203,
+          "fin": 4.574
+        },
+        {
+          "mot": "au",
+          "debut": 4.621,
+          "fin": 4.702
+        },
+        {
+          "mot": "rappel",
+          "debut": 4.737,
+          "fin": 5.12
+        },
+        {
+          "mot": "la",
+          "debut": 5.201,
+          "fin": 5.294
+        },
+        {
+          "mot": "veille.",
+          "debut": 5.352,
+          "fin": 5.712
+        },
+        {
+          "mot": "Un",
+          "debut": 6.316,
+          "fin": 6.444
+        },
+        {
+          "mot": "seul",
+          "debut": 6.478,
+          "fin": 6.618
+        },
+        {
+          "mot": "formulaire,",
+          "debut": 6.664,
+          "fin": 7.256
+        },
+        {
+          "mot": "et",
+          "debut": 7.407,
+          "fin": 7.546
+        },
+        {
+          "mot": "tout",
+          "debut": 7.605,
+          "fin": 7.767
+        },
+        {
+          "mot": "le",
+          "debut": 7.79,
+          "fin": 7.848
+        },
+        {
+          "mot": "monde",
+          "debut": 7.883,
+          "fin": 8.115
+        },
+        {
+          "mot": "est",
+          "debut": 8.139,
+          "fin": 8.231
+        },
+        {
+          "mot": "prévenu.",
+          "debut": 8.255,
+          "fin": 8.696
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 9.576,
+      "duree": 10.92,
+      "texte": "On part de la fiche d'une entreprise, et on ressort avec un rendez-vous posé. Un titre, un créneau, les invités, le type, le rappel : le formulaire descend dans cet ordre.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "part",
+          "debut": 0.186,
+          "fin": 0.337
+        },
+        {
+          "mot": "de",
+          "debut": 0.36,
+          "fin": 0.418
+        },
+        {
+          "mot": "la",
+          "debut": 0.464,
+          "fin": 0.522
+        },
+        {
+          "mot": "fiche",
+          "debut": 0.604,
+          "fin": 0.836
+        },
+        {
+          "mot": "d'une",
+          "debut": 0.859,
+          "fin": 1.01
+        },
+        {
+          "mot": "entreprise,",
+          "debut": 1.033,
+          "fin": 1.718
+        },
+        {
+          "mot": "et",
+          "debut": 1.927,
+          "fin": 2.032
+        },
+        {
+          "mot": "on",
+          "debut": 2.067,
+          "fin": 2.125
+        },
+        {
+          "mot": "ressort",
+          "debut": 2.171,
+          "fin": 2.496
+        },
+        {
+          "mot": "avec",
+          "debut": 2.519,
+          "fin": 2.694
+        },
+        {
+          "mot": "un",
+          "debut": 2.763,
+          "fin": 2.821
+        },
+        {
+          "mot": "rendez-vous",
+          "debut": 2.879,
+          "fin": 3.274
+        },
+        {
+          "mot": "posé.",
+          "debut": 3.297,
+          "fin": 3.704
+        },
+        {
+          "mot": "Un",
+          "debut": 4.087,
+          "fin": 4.214
+        },
+        {
+          "mot": "titre,",
+          "debut": 4.261,
+          "fin": 4.632
+        },
+        {
+          "mot": "un",
+          "debut": 4.748,
+          "fin": 4.865
+        },
+        {
+          "mot": "créneau,",
+          "debut": 4.899,
+          "fin": 5.468
+        },
+        {
+          "mot": "les",
+          "debut": 5.677,
+          "fin": 5.817
+        },
+        {
+          "mot": "invités,",
+          "debut": 5.886,
+          "fin": 6.409
+        },
+        {
+          "mot": "le",
+          "debut": 6.525,
+          "fin": 6.629
+        },
+        {
+          "mot": "type,",
+          "debut": 6.687,
+          "fin": 7.14
+        },
+        {
+          "mot": "le",
+          "debut": 7.349,
+          "fin": 7.442
+        },
+        {
+          "mot": "rappel",
+          "debut": 7.488,
+          "fin": 7.825
+        },
+        {
+          "mot": ":",
+          "debut": 7.941,
+          "fin": 8.011
+        },
+        {
+          "mot": "le",
+          "debut": 8.394,
+          "fin": 8.487
+        },
+        {
+          "mot": "formulaire",
+          "debut": 8.568,
+          "fin": 9.079
+        },
+        {
+          "mot": "descend",
+          "debut": 9.114,
+          "fin": 9.369
+        },
+        {
+          "mot": "dans",
+          "debut": 9.392,
+          "fin": 9.497
+        },
+        {
+          "mot": "cet",
+          "debut": 9.52,
+          "fin": 9.694
+        },
+        {
+          "mot": "ordre.",
+          "debut": 9.776,
+          "fin": 10.031
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 20.496000000000002,
+      "duree": 2.904,
+      "texte": "Panneau Communication, prendre un rendez-vous.",
+      "mots": [
+        {
+          "mot": "Panneau",
+          "debut": 0,
+          "fin": 0.29
+        },
+        {
+          "mot": "Communication,",
+          "debut": 0.325,
+          "fin": 0.964
+        },
+        {
+          "mot": "prendre",
+          "debut": 1.022,
+          "fin": 1.265
+        },
+        {
+          "mot": "un",
+          "debut": 1.289,
+          "fin": 1.335
+        },
+        {
+          "mot": "rendez-vous.",
+          "debut": 1.382,
+          "fin": 1.869
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 23.400000000000002,
+      "duree": 5.64,
+      "texte": "Un titre, d'abord. C'est lui qu'on relira dans l'agenda, alors autant qu'il dise de quoi on parle.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "titre,",
+          "debut": 0.163,
+          "fin": 0.511
+        },
+        {
+          "mot": "d'abord.",
+          "debut": 0.534,
+          "fin": 0.929
+        },
+        {
+          "mot": "C'est",
+          "debut": 1.08,
+          "fin": 1.289
+        },
+        {
+          "mot": "lui",
+          "debut": 1.312,
+          "fin": 1.405
+        },
+        {
+          "mot": "qu'on",
+          "debut": 1.451,
+          "fin": 1.579
+        },
+        {
+          "mot": "relira",
+          "debut": 1.625,
+          "fin": 1.95
+        },
+        {
+          "mot": "dans",
+          "debut": 1.997,
+          "fin": 2.125
+        },
+        {
+          "mot": "l'agenda,",
+          "debut": 2.148,
+          "fin": 2.705
+        },
+        {
+          "mot": "alors",
+          "debut": 2.786,
+          "fin": 3.007
+        },
+        {
+          "mot": "autant",
+          "debut": 3.042,
+          "fin": 3.32
+        },
+        {
+          "mot": "qu'il",
+          "debut": 3.355,
+          "fin": 3.506
+        },
+        {
+          "mot": "dise",
+          "debut": 3.553,
+          "fin": 3.773
+        },
+        {
+          "mot": "de",
+          "debut": 3.808,
+          "fin": 3.889
+        },
+        {
+          "mot": "quoi",
+          "debut": 3.947,
+          "fin": 4.075
+        },
+        {
+          "mot": "on",
+          "debut": 4.098,
+          "fin": 4.156
+        },
+        {
+          "mot": "parle.",
+          "debut": 4.226,
+          "fin": 4.621
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 29.040000000000003,
+      "duree": 15.528,
+      "texte": "Puis le créneau. Deux champs : l'heure de début, l'heure de fin. Le formulaire accepte le matin comme le soir, alors on relit. Dix heures, dix heures quarante-cinq : le rendez-vous est borné, et il tiendra la place qu'on lui a donnée dans l'agenda, ni plus ni moins.",
+      "mots": [
+        {
+          "mot": "Puis",
+          "debut": 0,
+          "fin": 0.36
+        },
+        {
+          "mot": "le",
+          "debut": 0.395,
+          "fin": 0.476
+        },
+        {
+          "mot": "créneau.",
+          "debut": 0.511,
+          "fin": 0.929
+        },
+        {
+          "mot": "Deux",
+          "debut": 0.998,
+          "fin": 1.196
+        },
+        {
+          "mot": "champs",
+          "debut": 1.219,
+          "fin": 1.451
+        },
+        {
+          "mot": ":",
+          "debut": 1.486,
+          "fin": 1.521
+        },
+        {
+          "mot": "l'heure",
+          "debut": 1.614,
+          "fin": 1.834
+        },
+        {
+          "mot": "de",
+          "debut": 1.858,
+          "fin": 1.939
+        },
+        {
+          "mot": "début,",
+          "debut": 1.985,
+          "fin": 2.485
+        },
+        {
+          "mot": "l'heure",
+          "debut": 2.659,
+          "fin": 2.891
+        },
+        {
+          "mot": "de",
+          "debut": 2.914,
+          "fin": 3.007
+        },
+        {
+          "mot": "fin.",
+          "debut": 3.088,
+          "fin": 3.413
+        },
+        {
+          "mot": "Le",
+          "debut": 3.622,
+          "fin": 3.727
+        },
+        {
+          "mot": "formulaire",
+          "debut": 3.785,
+          "fin": 4.226
+        },
+        {
+          "mot": "accepte",
+          "debut": 4.249,
+          "fin": 4.76
+        },
+        {
+          "mot": "le",
+          "debut": 4.83,
+          "fin": 4.911
+        },
+        {
+          "mot": "matin",
+          "debut": 4.969,
+          "fin": 5.283
+        },
+        {
+          "mot": "comme",
+          "debut": 5.364,
+          "fin": 5.561
+        },
+        {
+          "mot": "le",
+          "debut": 5.584,
+          "fin": 5.654
+        },
+        {
+          "mot": "soir,",
+          "debut": 5.712,
+          "fin": 6.153
+        },
+        {
+          "mot": "alors",
+          "debut": 6.281,
+          "fin": 6.664
+        },
+        {
+          "mot": "on",
+          "debut": 6.687,
+          "fin": 6.838
+        },
+        {
+          "mot": "relit.",
+          "debut": 6.885,
+          "fin": 7.279
+        },
+        {
+          "mot": "Dix",
+          "debut": 7.488,
+          "fin": 7.721
+        },
+        {
+          "mot": "heures,",
+          "debut": 7.779,
+          "fin": 8.046
+        },
+        {
+          "mot": "dix",
+          "debut": 8.173,
+          "fin": 8.359
+        },
+        {
+          "mot": "heures",
+          "debut": 8.394,
+          "fin": 8.545
+        },
+        {
+          "mot": "quarante-cinq",
+          "debut": 8.568,
+          "fin": 9.125
+        },
+        {
+          "mot": ":",
+          "debut": 9.276,
+          "fin": 9.3
+        },
+        {
+          "mot": "le",
+          "debut": 9.543,
+          "fin": 9.625
+        },
+        {
+          "mot": "rendez-vous",
+          "debut": 9.671,
+          "fin": 10.077
+        },
+        {
+          "mot": "est",
+          "debut": 10.101,
+          "fin": 10.17
+        },
+        {
+          "mot": "borné,",
+          "debut": 10.194,
+          "fin": 10.751
+        },
+        {
+          "mot": "et",
+          "debut": 10.925,
+          "fin": 11.064
+        },
+        {
+          "mot": "il",
+          "debut": 11.088,
+          "fin": 11.134
+        },
+        {
+          "mot": "tiendra",
+          "debut": 11.204,
+          "fin": 11.471
+        },
+        {
+          "mot": "la",
+          "debut": 11.529,
+          "fin": 11.598
+        },
+        {
+          "mot": "place",
+          "debut": 11.668,
+          "fin": 11.935
+        },
+        {
+          "mot": "qu'on",
+          "debut": 11.97,
+          "fin": 12.109
+        },
+        {
+          "mot": "lui",
+          "debut": 12.156,
+          "fin": 12.237
+        },
+        {
+          "mot": "a",
+          "debut": 12.283,
+          "fin": 12.318
+        },
+        {
+          "mot": "donnée",
+          "debut": 12.388,
+          "fin": 12.701
+        },
+        {
+          "mot": "dans",
+          "debut": 12.725,
+          "fin": 12.852
+        },
+        {
+          "mot": "l'agenda,",
+          "debut": 12.875,
+          "fin": 13.514
+        },
+        {
+          "mot": "ni",
+          "debut": 13.688,
+          "fin": 13.827
+        },
+        {
+          "mot": "plus",
+          "debut": 13.874,
+          "fin": 14.06
+        },
+        {
+          "mot": "ni",
+          "debut": 14.083,
+          "fin": 14.176
+        },
+        {
+          "mot": "moins.",
+          "debut": 14.222,
+          "fin": 14.524
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 44.568000000000005,
+      "duree": 12.36,
+      "texte": "Les invités, ensuite. Le champ propose les utilisateurs du compte dès les premières lettres. Chaque nom retenu devient une étiquette. En dessous, les organisateurs : ceux qui tiennent le rendez-vous.",
+      "mots": [
+        {
+          "mot": "Les",
+          "debut": 0,
+          "fin": 0.197
+        },
+        {
+          "mot": "invités,",
+          "debut": 0.244,
+          "fin": 0.592
+        },
+        {
+          "mot": "ensuite.",
+          "debut": 0.627,
+          "fin": 1.103
+        },
+        {
+          "mot": "Le",
+          "debut": 1.277,
+          "fin": 1.405
+        },
+        {
+          "mot": "champ",
+          "debut": 1.44,
+          "fin": 1.649
+        },
+        {
+          "mot": "propose",
+          "debut": 1.672,
+          "fin": 2.032
+        },
+        {
+          "mot": "les",
+          "debut": 2.055,
+          "fin": 2.159
+        },
+        {
+          "mot": "utilisateurs",
+          "debut": 2.206,
+          "fin": 2.833
+        },
+        {
+          "mot": "du",
+          "debut": 2.856,
+          "fin": 2.937
+        },
+        {
+          "mot": "compte",
+          "debut": 2.995,
+          "fin": 3.437
+        },
+        {
+          "mot": "dès",
+          "debut": 3.646,
+          "fin": 3.82
+        },
+        {
+          "mot": "les",
+          "debut": 3.843,
+          "fin": 3.924
+        },
+        {
+          "mot": "premières",
+          "debut": 3.947,
+          "fin": 4.319
+        },
+        {
+          "mot": "lettres.",
+          "debut": 4.342,
+          "fin": 4.679
+        },
+        {
+          "mot": "Chaque",
+          "debut": 4.888,
+          "fin": 5.201
+        },
+        {
+          "mot": "nom",
+          "debut": 5.236,
+          "fin": 5.352
+        },
+        {
+          "mot": "retenu",
+          "debut": 5.387,
+          "fin": 5.851
+        },
+        {
+          "mot": "devient",
+          "debut": 5.944,
+          "fin": 6.269
+        },
+        {
+          "mot": "une",
+          "debut": 6.327,
+          "fin": 6.42
+        },
+        {
+          "mot": "étiquette.",
+          "debut": 6.444,
+          "fin": 7.047
+        },
+        {
+          "mot": "En",
+          "debut": 7.291,
+          "fin": 7.454
+        },
+        {
+          "mot": "dessous,",
+          "debut": 7.5,
+          "fin": 7.883
+        },
+        {
+          "mot": "les",
+          "debut": 7.918,
+          "fin": 8.011
+        },
+        {
+          "mot": "organisateurs",
+          "debut": 8.081,
+          "fin": 8.916
+        },
+        {
+          "mot": ":",
+          "debut": 8.94,
+          "fin": 8.963
+        },
+        {
+          "mot": "ceux",
+          "debut": 9.114,
+          "fin": 9.323
+        },
+        {
+          "mot": "qui",
+          "debut": 9.369,
+          "fin": 9.462
+        },
+        {
+          "mot": "tiennent",
+          "debut": 9.52,
+          "fin": 9.799
+        },
+        {
+          "mot": "le",
+          "debut": 9.834,
+          "fin": 9.88
+        },
+        {
+          "mot": "rendez-vous.",
+          "debut": 9.927,
+          "fin": 10.519
+        }
+      ]
+    },
+    {
+      "id": "etape-05",
+      "fichier": "voix/etape-05.mp3",
+      "debut": 56.928000000000004,
+      "duree": 8.232,
+      "texte": "Visio, présentiel ou téléphone. Le rappel : trente minutes, vingt-quatre heures, quarante-huit heures. Et par quel canal il part.",
+      "mots": [
+        {
+          "mot": "Visio,",
+          "debut": 0,
+          "fin": 0.499
+        },
+        {
+          "mot": "présentiel",
+          "debut": 0.534,
+          "fin": 0.998
+        },
+        {
+          "mot": "ou",
+          "debut": 1.045,
+          "fin": 1.091
+        },
+        {
+          "mot": "téléphone.",
+          "debut": 1.138,
+          "fin": 1.695
+        },
+        {
+          "mot": "Le",
+          "debut": 1.974,
+          "fin": 2.078
+        },
+        {
+          "mot": "rappel",
+          "debut": 2.125,
+          "fin": 2.508
+        },
+        {
+          "mot": ":",
+          "debut": 2.577,
+          "fin": 2.612
+        },
+        {
+          "mot": "trente",
+          "debut": 2.786,
+          "fin": 3.053
+        },
+        {
+          "mot": "minutes,",
+          "debut": 3.077,
+          "fin": 3.541
+        },
+        {
+          "mot": "vingt-quatre",
+          "debut": 3.785,
+          "fin": 4.284
+        },
+        {
+          "mot": "heures,",
+          "debut": 4.307,
+          "fin": 4.621
+        },
+        {
+          "mot": "quarante-huit",
+          "debut": 4.795,
+          "fin": 5.306
+        },
+        {
+          "mot": "heures.",
+          "debut": 5.341,
+          "fin": 5.654
+        },
+        {
+          "mot": "Et",
+          "debut": 5.979,
+          "fin": 6.118
+        },
+        {
+          "mot": "par",
+          "debut": 6.153,
+          "fin": 6.269
+        },
+        {
+          "mot": "quel",
+          "debut": 6.316,
+          "fin": 6.444
+        },
+        {
+          "mot": "canal",
+          "debut": 6.49,
+          "fin": 6.745
+        },
+        {
+          "mot": "il",
+          "debut": 6.792,
+          "fin": 6.838
+        },
+        {
+          "mot": "part.",
+          "debut": 6.908,
+          "fin": 7.245
+        }
+      ]
+    },
+    {
+      "id": "etape-06",
+      "fichier": "voix/etape-06.mp3",
+      "debut": 65.16,
+      "duree": 3.768,
+      "texte": "Une note pour ce qu'il faut préparer, puis enregistrer.",
+      "mots": [
+        {
+          "mot": "Une",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "note",
+          "debut": 0.186,
+          "fin": 0.372
+        },
+        {
+          "mot": "pour",
+          "debut": 0.406,
+          "fin": 0.534
+        },
+        {
+          "mot": "ce",
+          "debut": 0.569,
+          "fin": 0.615
+        },
+        {
+          "mot": "qu'il",
+          "debut": 0.65,
+          "fin": 0.801
+        },
+        {
+          "mot": "faut",
+          "debut": 0.871,
+          "fin": 1.231
+        },
+        {
+          "mot": "préparer,",
+          "debut": 1.382,
+          "fin": 1.892
+        },
+        {
+          "mot": "puis",
+          "debut": 1.916,
+          "fin": 2.101
+        },
+        {
+          "mot": "enregistrer.",
+          "debut": 2.125,
+          "fin": 2.786
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 68.928,
+      "duree": 12.744,
+      "texte": "Les rendez-vous s'empilent. Pour savoir ce qui vous attend, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Les",
+          "debut": 0,
+          "fin": 0.186
+        },
+        {
+          "mot": "rendez-vous",
+          "debut": 0.221,
+          "fin": 0.639
+        },
+        {
+          "mot": "s'empilent.",
+          "debut": 0.662,
+          "fin": 1.265
+        },
+        {
+          "mot": "Pour",
+          "debut": 1.591,
+          "fin": 1.753
+        },
+        {
+          "mot": "savoir",
+          "debut": 1.8,
+          "fin": 2.067
+        },
+        {
+          "mot": "ce",
+          "debut": 2.101,
+          "fin": 2.183
+        },
+        {
+          "mot": "qui",
+          "debut": 2.241,
+          "fin": 2.345
+        },
+        {
+          "mot": "vous",
+          "debut": 2.38,
+          "fin": 2.485
+        },
+        {
+          "mot": "attend,",
+          "debut": 2.554,
+          "fin": 3.053
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 3.379,
+          "fin": 4.331
+        },
+        {
+          "mot": "parle",
+          "debut": 4.481,
+          "fin": 4.748
+        },
+        {
+          "mot": "à",
+          "debut": 4.772,
+          "fin": 4.795
+        },
+        {
+          "mot": "Claude",
+          "debut": 4.841,
+          "fin": 5.201
+        },
+        {
+          "mot": ":",
+          "debut": 5.248,
+          "fin": 5.271
+        },
+        {
+          "mot": "vous",
+          "debut": 5.445,
+          "fin": 5.584
+        },
+        {
+          "mot": "demandez",
+          "debut": 5.619,
+          "fin": 5.956
+        },
+        {
+          "mot": "en",
+          "debut": 5.991,
+          "fin": 6.037
+        },
+        {
+          "mot": "français,",
+          "debut": 6.084,
+          "fin": 6.583
+        },
+        {
+          "mot": "il",
+          "debut": 6.757,
+          "fin": 6.885
+        },
+        {
+          "mot": "lit",
+          "debut": 6.954,
+          "fin": 7.07
+        },
+        {
+          "mot": "vos",
+          "debut": 7.105,
+          "fin": 7.233
+        },
+        {
+          "mot": "données",
+          "debut": 7.256,
+          "fin": 7.628
+        },
+        {
+          "mot": "et",
+          "debut": 7.779,
+          "fin": 7.953
+        },
+        {
+          "mot": "répond.",
+          "debut": 7.999,
+          "fin": 8.406
+        },
+        {
+          "mot": "Copiez",
+          "debut": 8.731,
+          "fin": 9.137
+        },
+        {
+          "mot": "ce",
+          "debut": 9.16,
+          "fin": 9.276
+        },
+        {
+          "mot": "prompt,",
+          "debut": 9.323,
+          "fin": 9.776
+        },
+        {
+          "mot": "remplacez",
+          "debut": 10.054,
+          "fin": 10.612
+        },
+        {
+          "mot": "ce",
+          "debut": 10.646,
+          "fin": 10.739
+        },
+        {
+          "mot": "qui",
+          "debut": 10.786,
+          "fin": 10.89
+        },
+        {
+          "mot": "est",
+          "debut": 10.913,
+          "fin": 10.995
+        },
+        {
+          "mot": "entre",
+          "debut": 11.064,
+          "fin": 11.273
+        },
+        {
+          "mot": "crochets.",
+          "debut": 11.32,
+          "fin": 11.807
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 81.672,
+      "duree": 4.992,
+      "texte": "Un rendez-vous posé, des invités prévenus, un rappel programmé : trois oublis en moins.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.104
+        },
+        {
+          "mot": "rendez-vous",
+          "debut": 0.128,
+          "fin": 0.534
+        },
+        {
+          "mot": "posé,",
+          "debut": 0.569,
+          "fin": 0.952
+        },
+        {
+          "mot": "des",
+          "debut": 0.975,
+          "fin": 1.103
+        },
+        {
+          "mot": "invités",
+          "debut": 1.149,
+          "fin": 1.463
+        },
+        {
+          "mot": "prévenus,",
+          "debut": 1.486,
+          "fin": 1.904
+        },
+        {
+          "mot": "un",
+          "debut": 1.962,
+          "fin": 2.032
+        },
+        {
+          "mot": "rappel",
+          "debut": 2.09,
+          "fin": 2.368
+        },
+        {
+          "mot": "programmé",
+          "debut": 2.426,
+          "fin": 2.902
+        },
+        {
+          "mot": ":",
+          "debut": 2.926,
+          "fin": 2.961
+        },
+        {
+          "mot": "trois",
+          "debut": 3.077,
+          "fin": 3.286
+        },
+        {
+          "mot": "oublis",
+          "debut": 3.332,
+          "fin": 3.576
+        },
+        {
+          "mot": "en",
+          "debut": 3.611,
+          "fin": 3.657
+        },
+        {
+          "mot": "moins.",
+          "debut": 3.692,
+          "fin": 3.924
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "mot": "Une",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "note",
+    "debut": 0.186,
+    "fin": 0.372
+  },
+  {
+    "mot": "pour",
+    "debut": 0.406,
+    "fin": 0.534
+  },
+  {
+    "mot": "ce",
+    "debut": 0.569,
+    "fin": 0.615
+  },
+  {
+    "mot": "qu'il",
+    "debut": 0.65,
+    "fin": 0.801
+  },
+  {
+    "mot": "faut",
+    "debut": 0.871,
+    "fin": 1.231
+  },
+  {
+    "mot": "préparer,",
+    "debut": 1.382,
+    "fin": 1.892
+  },
+  {
+    "mot": "puis",
+    "debut": 1.916,
+    "fin": 2.101
+  },
+  {
+    "mot": "enregistrer.",
+    "debut": 2.125,
+    "fin": 2.786
+  }
+]

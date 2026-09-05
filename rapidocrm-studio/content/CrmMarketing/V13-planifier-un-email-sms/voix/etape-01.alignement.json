@@ -1,0 +1,32 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "panneau",
+    "debut": 0.186,
+    "fin": 0.406
+  },
+  {
+    "mot": "de",
+    "debut": 0.43,
+    "fin": 0.476
+  },
+  {
+    "mot": "droite,",
+    "debut": 0.499,
+    "fin": 0.859
+  },
+  {
+    "mot": "bloc",
+    "debut": 0.975,
+    "fin": 1.173
+  },
+  {
+    "mot": "Communication.",
+    "debut": 1.207,
+    "fin": 1.858
+  }
+]

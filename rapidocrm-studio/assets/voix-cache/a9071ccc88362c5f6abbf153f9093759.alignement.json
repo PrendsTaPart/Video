@@ -1,0 +1,87 @@
+[
+  {
+    "mot": "Puis",
+    "debut": 0,
+    "fin": 0.209
+  },
+  {
+    "mot": "la",
+    "debut": 0.232,
+    "fin": 0.313
+  },
+  {
+    "mot": "date",
+    "debut": 0.383,
+    "fin": 0.615
+  },
+  {
+    "mot": "et",
+    "debut": 0.639,
+    "fin": 0.685
+  },
+  {
+    "mot": "l'heure.",
+    "debut": 0.731,
+    "fin": 1.115
+  },
+  {
+    "mot": "Dix",
+    "debut": 1.556,
+    "fin": 1.834
+  },
+  {
+    "mot": "heures",
+    "debut": 1.881,
+    "fin": 2.067
+  },
+  {
+    "mot": "trente",
+    "debut": 2.113,
+    "fin": 2.473
+  },
+  {
+    "mot": "se",
+    "debut": 2.508,
+    "fin": 2.647
+  },
+  {
+    "mot": "lit",
+    "debut": 2.717,
+    "fin": 2.984
+  },
+  {
+    "mot": ";",
+    "debut": 3.03,
+    "fin": 3.065
+  },
+  {
+    "mot": "dix-sept",
+    "debut": 3.576,
+    "fin": 4.029
+  },
+  {
+    "mot": "heures",
+    "debut": 4.075,
+    "fin": 4.249
+  },
+  {
+    "mot": "trente",
+    "debut": 4.284,
+    "fin": 4.714
+  },
+  {
+    "mot": "attend",
+    "debut": 4.83,
+    "fin": 5.178
+  },
+  {
+    "mot": "le",
+    "debut": 5.213,
+    "fin": 5.283
+  },
+  {
+    "mot": "lendemain.",
+    "debut": 5.329,
+    "fin": 5.84
+  }
+]

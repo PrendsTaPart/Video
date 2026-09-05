@@ -1,0 +1,32 @@
+[
+  {
+    "mot": "Panneau",
+    "debut": 0,
+    "fin": 0.325
+  },
+  {
+    "mot": "Finance",
+    "debut": 0.383,
+    "fin": 0.894
+  },
+  {
+    "mot": ":",
+    "debut": 0.929,
+    "fin": 0.952
+  },
+  {
+    "mot": "créer",
+    "debut": 1.196,
+    "fin": 1.498
+  },
+  {
+    "mot": "un",
+    "debut": 1.521,
+    "fin": 1.567
+  },
+  {
+    "mot": "devis.",
+    "debut": 1.614,
+    "fin": 1.939
+  }
+]

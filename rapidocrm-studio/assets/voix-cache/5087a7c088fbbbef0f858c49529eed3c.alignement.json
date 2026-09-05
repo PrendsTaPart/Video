@@ -1,0 +1,47 @@
+[
+  {
+    "mot": "La",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "cible",
+    "debut": 0.197,
+    "fin": 0.406
+  },
+  {
+    "mot": "d'abord",
+    "debut": 0.453,
+    "fin": 0.801
+  },
+  {
+    "mot": ":",
+    "debut": 0.848,
+    "fin": 0.894
+  },
+  {
+    "mot": "entreprises.",
+    "debut": 0.929,
+    "fin": 1.637
+  },
+  {
+    "mot": "C'est",
+    "debut": 1.695,
+    "fin": 1.869
+  },
+  {
+    "mot": "le",
+    "debut": 1.892,
+    "fin": 1.95
+  },
+  {
+    "mot": "premier",
+    "debut": 2.009,
+    "fin": 2.31
+  },
+  {
+    "mot": "champ.",
+    "debut": 2.334,
+    "fin": 2.589
+  }
+]

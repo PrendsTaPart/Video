@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Le rendez-vous est calé. Reste à prévenir le client, l'équipe, et à penser au rappel la veille. Un seul formulaire, et tout le monde est prévenu."
+  },
+  {
+    "timestamp_secondes": 10,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec un rendez-vous posé. Un titre, un créneau, les invités, le type, le rappel : le formulaire descend dans cet ordre."
+  },
+  {
+    "timestamp_secondes": 20,
+    "titre": "Ouvrir « Prendre un rendez-vous »",
+    "texte": "Panneau Communication, prendre un rendez-vous."
+  },
+  {
+    "timestamp_secondes": 23,
+    "titre": "Donner un titre au rendez-vous",
+    "texte": "Un titre, d'abord. C'est lui qu'on relira dans l'agenda, alors autant qu'il dise de quoi on parle."
+  },
+  {
+    "timestamp_secondes": 29,
+    "titre": "Fixer le créneau, début et fin",
+    "texte": "Puis le créneau. Deux champs : l'heure de début, l'heure de fin. Le formulaire accepte le matin comme le soir, alors on relit. Dix heures, dix heures quarante-cinq : le rendez-vous est borné, et il tiendra la place qu'on lui a donnée dans l'agenda, ni plus ni moins."
+  },
+  {
+    "timestamp_secondes": 45,
+    "titre": "Choisir les invités et les organisateurs",
+    "texte": "Les invités, ensuite. Le champ propose les utilisateurs du compte dès les premières lettres. Chaque nom retenu devient une étiquette. En dessous, les organisateurs : ceux qui tiennent le rendez-vous."
+  },
+  {
+    "timestamp_secondes": 57,
+    "titre": "Type de rendez-vous, rappel et mode d'envoi",
+    "texte": "Visio, présentiel ou téléphone. Le rappel : trente minutes, vingt-quatre heures, quarante-huit heures. Et par quel canal il part."
+  },
+  {
+    "timestamp_secondes": 65,
+    "titre": "Ajouter une note et enregistrer",
+    "texte": "Une note pour ce qu'il faut préparer, puis enregistrer."
+  },
+  {
+    "timestamp_secondes": 69,
+    "titre": "Faites-le avec Claude",
+    "texte": "Les rendez-vous s'empilent. Pour savoir ce qui vous attend, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 82,
+    "titre": "À retenir",
+    "texte": "Un rendez-vous posé, des invités prévenus, un rappel programmé : trois oublis en moins."
+  }
+]

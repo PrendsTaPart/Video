@@ -1,0 +1,57 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "La prestation est livrée. Il ne reste qu'à facturer — et à retrouver le prix, la TVA, l'adresse du client. Tout est déjà dans sa fiche."
+  },
+  {
+    "timestamp_secondes": 10,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec une facture. Le panneau Finance l'ouvre, le produit choisi remplit les montants, et la facture rejoint l'activité du client."
+  },
+  {
+    "timestamp_secondes": 21,
+    "titre": "Ouvrir « Créer une facture » depuis la fiche",
+    "texte": "Panneau Finance : créer une facture."
+  },
+  {
+    "timestamp_secondes": 24,
+    "titre": "Logo et charte graphique de la facture",
+    "texte": "Le logo est repris du client. On choisit la couleur."
+  },
+  {
+    "timestamp_secondes": 28,
+    "titre": "Choisir le produit à facturer",
+    "texte": "Le catalogue défile deux par deux. Les flèches font venir les suivants."
+  },
+  {
+    "timestamp_secondes": 32,
+    "titre": "Laisser les montants se calculer",
+    "texte": "Prix hors taxes, TVA, total, remise : vous n'écrivez rien, sauf la remise."
+  },
+  {
+    "timestamp_secondes": 38,
+    "titre": "Délai, mentions légales et statut",
+    "texte": "Le délai de paiement, les mentions, le statut : payée ou en attente."
+  },
+  {
+    "timestamp_secondes": 43,
+    "titre": "Mode de paiement, totaux et enregistrement",
+    "texte": "Le règlement, les totaux, enregistrer."
+  },
+  {
+    "timestamp_secondes": 45,
+    "titre": "Retrouver la facture dans l'activité de la fiche",
+    "texte": "Et la voilà en tête de l'activité."
+  },
+  {
+    "timestamp_secondes": 48,
+    "titre": "Faites-le avec Claude",
+    "texte": "Les factures s'accumulent. Pour voir celles qui attendent encore un règlement, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 61,
+    "titre": "À retenir",
+    "texte": "Une facture faite depuis la fiche du client, c'est une facture qu'on ne relit pas deux fois."
+  }
+]

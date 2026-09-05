@@ -1,0 +1,87 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "message",
+    "debut": 0.174,
+    "fin": 0.534
+  },
+  {
+    "mot": "écrit",
+    "debut": 0.569,
+    "fin": 0.813
+  },
+  {
+    "mot": "le",
+    "debut": 0.836,
+    "fin": 0.906
+  },
+  {
+    "mot": "soir,",
+    "debut": 0.952,
+    "fin": 1.37
+  },
+  {
+    "mot": "envoyé",
+    "debut": 1.428,
+    "fin": 1.8
+  },
+  {
+    "mot": "le",
+    "debut": 1.834,
+    "fin": 1.892
+  },
+  {
+    "mot": "matin",
+    "debut": 1.939,
+    "fin": 2.229
+  },
+  {
+    "mot": ":",
+    "debut": 2.299,
+    "fin": 2.322
+  },
+  {
+    "mot": "la",
+    "debut": 2.438,
+    "fin": 2.543
+  },
+  {
+    "mot": "relance",
+    "debut": 2.601,
+    "fin": 2.902
+  },
+  {
+    "mot": "ne",
+    "debut": 2.926,
+    "fin": 2.995
+  },
+  {
+    "mot": "dépend",
+    "debut": 3.03,
+    "fin": 3.286
+  },
+  {
+    "mot": "plus",
+    "debut": 3.309,
+    "fin": 3.448
+  },
+  {
+    "mot": "de",
+    "debut": 3.471,
+    "fin": 3.518
+  },
+  {
+    "mot": "votre",
+    "debut": 3.553,
+    "fin": 3.785
+  },
+  {
+    "mot": "réveil.",
+    "debut": 3.831,
+    "fin": 4.191
+  }
+]

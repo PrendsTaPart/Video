@@ -1,0 +1,152 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "client",
+    "debut": 0.209,
+    "fin": 0.488
+  },
+  {
+    "mot": "demande",
+    "debut": 0.522,
+    "fin": 0.824
+  },
+  {
+    "mot": "un",
+    "debut": 0.871,
+    "fin": 0.952
+  },
+  {
+    "mot": "devis.",
+    "debut": 0.998,
+    "fin": 1.382
+  },
+  {
+    "mot": "Vous",
+    "debut": 1.533,
+    "fin": 1.695
+  },
+  {
+    "mot": "ouvrez",
+    "debut": 1.765,
+    "fin": 1.939
+  },
+  {
+    "mot": "un",
+    "debut": 1.985,
+    "fin": 2.032
+  },
+  {
+    "mot": "tableur,",
+    "debut": 2.078,
+    "fin": 2.566
+  },
+  {
+    "mot": "vous",
+    "debut": 2.74,
+    "fin": 2.879
+  },
+  {
+    "mot": "recopiez",
+    "debut": 2.902,
+    "fin": 3.309
+  },
+  {
+    "mot": "son",
+    "debut": 3.344,
+    "fin": 3.506
+  },
+  {
+    "mot": "nom,",
+    "debut": 3.553,
+    "fin": 3.843
+  },
+  {
+    "mot": "son",
+    "debut": 4.087,
+    "fin": 4.249
+  },
+  {
+    "mot": "adresse,",
+    "debut": 4.319,
+    "fin": 4.83
+  },
+  {
+    "mot": "votre",
+    "debut": 5.039,
+    "fin": 5.306
+  },
+  {
+    "mot": "prix.",
+    "debut": 5.352,
+    "fin": 5.642
+  },
+  {
+    "mot": "Ou",
+    "debut": 6.084,
+    "fin": 6.177
+  },
+  {
+    "mot": "bien",
+    "debut": 6.211,
+    "fin": 6.374
+  },
+  {
+    "mot": "vous",
+    "debut": 6.409,
+    "fin": 6.525
+  },
+  {
+    "mot": "partez",
+    "debut": 6.548,
+    "fin": 6.815
+  },
+  {
+    "mot": "de",
+    "debut": 6.85,
+    "fin": 6.92
+  },
+  {
+    "mot": "sa",
+    "debut": 6.966,
+    "fin": 7.07
+  },
+  {
+    "mot": "fiche,",
+    "debut": 7.14,
+    "fin": 7.523
+  },
+  {
+    "mot": "et",
+    "debut": 7.697,
+    "fin": 7.814
+  },
+  {
+    "mot": "le",
+    "debut": 7.86,
+    "fin": 7.93
+  },
+  {
+    "mot": "prix",
+    "debut": 7.976,
+    "fin": 8.162
+  },
+  {
+    "mot": "vient",
+    "debut": 8.185,
+    "fin": 8.371
+  },
+  {
+    "mot": "tout",
+    "debut": 8.394,
+    "fin": 8.522
+  },
+  {
+    "mot": "seul.",
+    "debut": 8.545,
+    "fin": 8.87
+  }
+]
