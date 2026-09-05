@@ -65,6 +65,22 @@ Il n'y a aucune voie pour forcer la sortie depuis le MCP :
 À reprendre à la main depuis /admin/social, ou une fois le worker LinkedIn
 remis en route — le post 833 est prêt et n'attend que ça.
 
+### Tentative par le profil Michael Kebail
+
+Le profil personnel est connecté (`linkedin_profile`, `6Z5izYBhkC`, actif) et
+constitue une seconde voie, indépendante du post 833 de la page société.
+`create_draft_tool` refuse `linkedin_profile` comme `social_type` — il
+n'accepte que les quatre réseaux de base — mais accepte l'identifiant du
+profil sous `social_type: linkedin`.
+
+- brouillon **967**, texte à la première personne (voix du fondateur),
+  vidéo 16:9 ;
+- post **842**, job 957, créneau 17:00 heure plateforme ;
+- rattaché à la campagne 37 (lien 122).
+
+La page société n'a **pas** reçu de second post : 833 garde son job, en
+créer un autre publierait deux fois si le worker repart.
+
 Les trois sont rattachés à la campagne 37 (liens 119, 120, 121).
 
 Deux remarques sur l'outillage :
