@@ -1,0 +1,92 @@
+[
+  {
+    "mot": "Troisième",
+    "debut": 0,
+    "fin": 0.476
+  },
+  {
+    "mot": "onglet",
+    "debut": 0.499,
+    "fin": 0.894
+  },
+  {
+    "mot": ":",
+    "debut": 0.929,
+    "fin": 0.952
+  },
+  {
+    "mot": "dépenses.",
+    "debut": 1.08,
+    "fin": 1.753
+  },
+  {
+    "mot": "En",
+    "debut": 1.811,
+    "fin": 1.869
+  },
+  {
+    "mot": "haut,",
+    "debut": 1.939,
+    "fin": 2.276
+  },
+  {
+    "mot": "ce",
+    "debut": 2.45,
+    "fin": 2.531
+  },
+  {
+    "mot": "qui",
+    "debut": 2.566,
+    "fin": 2.647
+  },
+  {
+    "mot": "est",
+    "debut": 2.682,
+    "fin": 2.752
+  },
+  {
+    "mot": "dépensé,",
+    "debut": 2.786,
+    "fin": 3.402
+  },
+  {
+    "mot": "ce",
+    "debut": 3.495,
+    "fin": 3.553
+  },
+  {
+    "mot": "qui",
+    "debut": 3.587,
+    "fin": 3.669
+  },
+  {
+    "mot": "reste",
+    "debut": 3.727,
+    "fin": 3.982
+  },
+  {
+    "mot": "dû,",
+    "debut": 4.04,
+    "fin": 4.331
+  },
+  {
+    "mot": "ce",
+    "debut": 4.447,
+    "fin": 4.563
+  },
+  {
+    "mot": "qui",
+    "debut": 4.621,
+    "fin": 4.714
+  },
+  {
+    "mot": "est",
+    "debut": 4.748,
+    "fin": 4.818
+  },
+  {
+    "mot": "payé.",
+    "debut": 4.865,
+    "fin": 5.213
+  }
+]

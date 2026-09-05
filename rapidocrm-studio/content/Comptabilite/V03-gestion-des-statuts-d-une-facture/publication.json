@@ -11,5 +11,15 @@
       "thumbnail_vertical_url": "3cf78672810ea503"
     },
     "publie_le": "2026-09-04T01:33:45.966Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=_kcUjdX4dxs",
+    "video_id": "_kcUjdX4dxs",
+    "publie_le": "2026-09-05T16:00:39.813960+00:00"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/05-gestion-des-statuts-d-une-facture",
+    "tutoriel_id": "3a2107bf-586a-45a8-922e-c6cb5d92aab5",
+    "publie_le": "2026-09-05T16:11:55.484963+00:00"
   }
 }

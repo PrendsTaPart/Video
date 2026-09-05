@@ -1,0 +1,72 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "joint",
+    "debut": 0.186,
+    "fin": 0.557
+  },
+  {
+    "mot": "un",
+    "debut": 0.639,
+    "fin": 0.766
+  },
+  {
+    "mot": "bouton",
+    "debut": 0.813,
+    "fin": 1.057
+  },
+  {
+    "mot": "d'action",
+    "debut": 1.08,
+    "fin": 1.44
+  },
+  {
+    "mot": "—",
+    "debut": 1.463,
+    "fin": 1.521
+  },
+  {
+    "mot": "voir",
+    "debut": 1.556,
+    "fin": 1.672
+  },
+  {
+    "mot": "facture",
+    "debut": 1.718,
+    "fin": 2.125
+  },
+  {
+    "mot": "—",
+    "debut": 2.159,
+    "fin": 2.206
+  },
+  {
+    "mot": "et",
+    "debut": 2.357,
+    "fin": 2.45
+  },
+  {
+    "mot": "on",
+    "debut": 2.496,
+    "fin": 2.554
+  },
+  {
+    "mot": "valide",
+    "debut": 2.589,
+    "fin": 2.868
+  },
+  {
+    "mot": "en",
+    "debut": 2.891,
+    "fin": 2.937
+  },
+  {
+    "mot": "bas.",
+    "debut": 2.984,
+    "fin": 3.262
+  }
+]

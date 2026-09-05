@@ -1,0 +1,192 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "part",
+    "debut": 0.186,
+    "fin": 0.337
+  },
+  {
+    "mot": "de",
+    "debut": 0.36,
+    "fin": 0.418
+  },
+  {
+    "mot": "la",
+    "debut": 0.453,
+    "fin": 0.522
+  },
+  {
+    "mot": "page",
+    "debut": 0.592,
+    "fin": 0.882
+  },
+  {
+    "mot": "Facturation,",
+    "debut": 0.998,
+    "fin": 1.765
+  },
+  {
+    "mot": "et",
+    "debut": 2.009,
+    "fin": 2.113
+  },
+  {
+    "mot": "on",
+    "debut": 2.148,
+    "fin": 2.206
+  },
+  {
+    "mot": "ressort",
+    "debut": 2.252,
+    "fin": 2.635
+  },
+  {
+    "mot": "avec",
+    "debut": 2.659,
+    "fin": 2.868
+  },
+  {
+    "mot": "une",
+    "debut": 2.949,
+    "fin": 3.03
+  },
+  {
+    "mot": "vue",
+    "debut": 3.065,
+    "fin": 3.251
+  },
+  {
+    "mot": "claire",
+    "debut": 3.274,
+    "fin": 3.611
+  },
+  {
+    "mot": "des",
+    "debut": 3.669,
+    "fin": 3.831
+  },
+  {
+    "mot": "sorties.",
+    "debut": 3.855,
+    "fin": 4.365
+  },
+  {
+    "mot": "Les",
+    "debut": 4.807,
+    "fin": 4.911
+  },
+  {
+    "mot": "dépenses",
+    "debut": 4.934,
+    "fin": 5.399
+  },
+  {
+    "mot": "sont",
+    "debut": 5.433,
+    "fin": 5.573
+  },
+  {
+    "mot": "le",
+    "debut": 5.596,
+    "fin": 5.642
+  },
+  {
+    "mot": "troisième",
+    "debut": 5.677,
+    "fin": 6.072
+  },
+  {
+    "mot": "onglet,",
+    "debut": 6.095,
+    "fin": 6.455
+  },
+  {
+    "mot": "à",
+    "debut": 6.513,
+    "fin": 6.56
+  },
+  {
+    "mot": "côté",
+    "debut": 6.629,
+    "fin": 6.873
+  },
+  {
+    "mot": "des",
+    "debut": 6.92,
+    "fin": 7.012
+  },
+  {
+    "mot": "factures",
+    "debut": 7.047,
+    "fin": 7.535
+  },
+  {
+    "mot": "et",
+    "debut": 7.709,
+    "fin": 7.837
+  },
+  {
+    "mot": "des",
+    "debut": 7.883,
+    "fin": 7.988
+  },
+  {
+    "mot": "devis.",
+    "debut": 8.022,
+    "fin": 8.429
+  },
+  {
+    "mot": "Quatre",
+    "debut": 8.812,
+    "fin": 9.114
+  },
+  {
+    "mot": "cartes",
+    "debut": 9.172,
+    "fin": 9.52
+  },
+  {
+    "mot": "donnent",
+    "debut": 9.543,
+    "fin": 9.776
+  },
+  {
+    "mot": "la",
+    "debut": 9.868,
+    "fin": 9.938
+  },
+  {
+    "mot": "photo,",
+    "debut": 9.985,
+    "fin": 10.495
+  },
+  {
+    "mot": "le",
+    "debut": 10.646,
+    "fin": 10.751
+  },
+  {
+    "mot": "tableau",
+    "debut": 10.797,
+    "fin": 11.146
+  },
+  {
+    "mot": "donne",
+    "debut": 11.262,
+    "fin": 11.447
+  },
+  {
+    "mot": "le",
+    "debut": 11.471,
+    "fin": 11.54
+  },
+  {
+    "mot": "détail.",
+    "debut": 11.587,
+    "fin": 12.028
+  }
+]

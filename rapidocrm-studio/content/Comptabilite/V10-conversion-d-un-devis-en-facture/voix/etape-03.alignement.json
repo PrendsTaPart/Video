@@ -1,0 +1,77 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "bandeau",
+    "debut": 0.209,
+    "fin": 0.511
+  },
+  {
+    "mot": "dit",
+    "debut": 0.58,
+    "fin": 0.731
+  },
+  {
+    "mot": "tout",
+    "debut": 0.778,
+    "fin": 0.975
+  },
+  {
+    "mot": ":",
+    "debut": 0.998,
+    "fin": 1.022
+  },
+  {
+    "mot": "devis",
+    "debut": 1.196,
+    "fin": 1.486
+  },
+  {
+    "mot": "signé,",
+    "debut": 1.509,
+    "fin": 1.916
+  },
+  {
+    "mot": "facture",
+    "debut": 2.009,
+    "fin": 2.403
+  },
+  {
+    "mot": "créée.",
+    "debut": 2.426,
+    "fin": 2.821
+  },
+  {
+    "mot": "Seul",
+    "debut": 3.03,
+    "fin": 3.286
+  },
+  {
+    "mot": "le",
+    "debut": 3.309,
+    "fin": 3.379
+  },
+  {
+    "mot": "mail",
+    "debut": 3.437,
+    "fin": 3.611
+  },
+  {
+    "mot": "n'est",
+    "debut": 3.646,
+    "fin": 3.785
+  },
+  {
+    "mot": "pas",
+    "debut": 3.808,
+    "fin": 3.924
+  },
+  {
+    "mot": "parti.",
+    "debut": 3.947,
+    "fin": 4.389
+  }
+]

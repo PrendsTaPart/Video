@@ -1,0 +1,72 @@
+[
+  {
+    "mot": "Visualiser",
+    "debut": 0,
+    "fin": 0.58
+  },
+  {
+    "mot": "ouvre",
+    "debut": 0.615,
+    "fin": 0.859
+  },
+  {
+    "mot": "le",
+    "debut": 0.882,
+    "fin": 0.964
+  },
+  {
+    "mot": "devis",
+    "debut": 1.01,
+    "fin": 1.242
+  },
+  {
+    "mot": "dans",
+    "debut": 1.265,
+    "fin": 1.393
+  },
+  {
+    "mot": "un",
+    "debut": 1.451,
+    "fin": 1.498
+  },
+  {
+    "mot": "nouvel",
+    "debut": 1.533,
+    "fin": 1.765
+  },
+  {
+    "mot": "onglet.",
+    "debut": 1.811,
+    "fin": 2.183
+  },
+  {
+    "mot": "La",
+    "debut": 2.392,
+    "fin": 2.496
+  },
+  {
+    "mot": "liste",
+    "debut": 2.531,
+    "fin": 2.775
+  },
+  {
+    "mot": "reste",
+    "debut": 2.821,
+    "fin": 3.077
+  },
+  {
+    "mot": "où",
+    "debut": 3.1,
+    "fin": 3.158
+  },
+  {
+    "mot": "elle",
+    "debut": 3.204,
+    "fin": 3.332
+  },
+  {
+    "mot": "est.",
+    "debut": 3.355,
+    "fin": 3.471
+  }
+]

@@ -11,5 +11,15 @@
       "thumbnail_vertical_url": "0ffb37aaed6cef0b"
     },
     "publie_le": "2026-09-04T01:33:55.517Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=Dm13SaU-lsg",
+    "video_id": "Dm13SaU-lsg",
+    "publie_le": "2026-09-05T16:00:39.813960+00:00"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/05-historique-des-factures",
+    "tutoriel_id": "136af25a-0108-48b1-87fd-b290b25f0f75",
+    "publie_le": "2026-09-05T16:11:55.484963+00:00"
   }
 }

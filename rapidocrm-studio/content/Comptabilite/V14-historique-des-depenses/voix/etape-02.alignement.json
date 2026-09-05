@@ -1,0 +1,122 @@
+[
+  {
+    "mot": "Et",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "la",
+    "debut": 0.174,
+    "fin": 0.232
+  },
+  {
+    "mot": "quatrième",
+    "debut": 0.29,
+    "fin": 0.697
+  },
+  {
+    "mot": "carte",
+    "debut": 0.72,
+    "fin": 1.126
+  },
+  {
+    "mot": ":",
+    "debut": 1.149,
+    "fin": 1.207
+  },
+  {
+    "mot": "les",
+    "debut": 1.533,
+    "fin": 1.637
+  },
+  {
+    "mot": "bénéfices,",
+    "debut": 1.66,
+    "fin": 2.287
+  },
+  {
+    "mot": "une",
+    "debut": 2.334,
+    "fin": 2.485
+  },
+  {
+    "mot": "fois",
+    "debut": 2.519,
+    "fin": 2.67
+  },
+  {
+    "mot": "les",
+    "debut": 2.694,
+    "fin": 2.786
+  },
+  {
+    "mot": "dépenses",
+    "debut": 2.81,
+    "fin": 3.146
+  },
+  {
+    "mot": "retirées.",
+    "debut": 3.17,
+    "fin": 3.646
+  },
+  {
+    "mot": "Puis",
+    "debut": 4.156,
+    "fin": 4.331
+  },
+  {
+    "mot": "le",
+    "debut": 4.354,
+    "fin": 4.423
+  },
+  {
+    "mot": "tableau,",
+    "debut": 4.481,
+    "fin": 4.946
+  },
+  {
+    "mot": "ligne",
+    "debut": 5.155,
+    "fin": 5.433
+  },
+  {
+    "mot": "par",
+    "debut": 5.468,
+    "fin": 5.654
+  },
+  {
+    "mot": "ligne,",
+    "debut": 5.689,
+    "fin": 6.026
+  },
+  {
+    "mot": "avec",
+    "debut": 6.142,
+    "fin": 6.385
+  },
+  {
+    "mot": "son",
+    "debut": 6.42,
+    "fin": 6.536
+  },
+  {
+    "mot": "entreprise",
+    "debut": 6.583,
+    "fin": 7.07
+  },
+  {
+    "mot": "et",
+    "debut": 7.117,
+    "fin": 7.187
+  },
+  {
+    "mot": "son",
+    "debut": 7.221,
+    "fin": 7.361
+  },
+  {
+    "mot": "montant.",
+    "debut": 7.384,
+    "fin": 7.755
+  }
+]

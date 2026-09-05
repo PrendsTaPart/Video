@@ -1,0 +1,87 @@
+[
+  {
+    "mot": "Puis",
+    "debut": 0,
+    "fin": 0.209
+  },
+  {
+    "mot": "le",
+    "debut": 0.232,
+    "fin": 0.29
+  },
+  {
+    "mot": "texte.",
+    "debut": 0.348,
+    "fin": 0.755
+  },
+  {
+    "mot": "Si",
+    "debut": 1.138,
+    "fin": 1.289
+  },
+  {
+    "mot": "la",
+    "debut": 1.335,
+    "fin": 1.382
+  },
+  {
+    "mot": "rédaction",
+    "debut": 1.416,
+    "fin": 1.823
+  },
+  {
+    "mot": "vous",
+    "debut": 1.858,
+    "fin": 1.962
+  },
+  {
+    "mot": "arrête,",
+    "debut": 2.032,
+    "fin": 2.392
+  },
+  {
+    "mot": "le",
+    "debut": 2.543,
+    "fin": 2.624
+  },
+  {
+    "mot": "bouton",
+    "debut": 2.682,
+    "fin": 2.972
+  },
+  {
+    "mot": "d'aide",
+    "debut": 3.007,
+    "fin": 3.17
+  },
+  {
+    "mot": "du",
+    "debut": 3.193,
+    "fin": 3.286
+  },
+  {
+    "mot": "bot",
+    "debut": 3.332,
+    "fin": 3.529
+  },
+  {
+    "mot": "propose",
+    "debut": 3.587,
+    "fin": 3.947
+  },
+  {
+    "mot": "un",
+    "debut": 3.971,
+    "fin": 4.017
+  },
+  {
+    "mot": "premier",
+    "debut": 4.052,
+    "fin": 4.319
+  },
+  {
+    "mot": "jet.",
+    "debut": 4.354,
+    "fin": 4.598
+  }
+]

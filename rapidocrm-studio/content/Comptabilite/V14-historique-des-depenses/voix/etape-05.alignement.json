@@ -1,0 +1,42 @@
+[
+  {
+    "mot": "La",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "dernière",
+    "debut": 0.209,
+    "fin": 0.546
+  },
+  {
+    "mot": "remonte",
+    "debut": 0.569,
+    "fin": 0.917
+  },
+  {
+    "mot": "à",
+    "debut": 0.94,
+    "fin": 0.964
+  },
+  {
+    "mot": "la",
+    "debut": 0.998,
+    "fin": 1.057
+  },
+  {
+    "mot": "fiche",
+    "debut": 1.126,
+    "fin": 1.358
+  },
+  {
+    "mot": "du",
+    "debut": 1.382,
+    "fin": 1.463
+  },
+  {
+    "mot": "fournisseur.",
+    "debut": 1.521,
+    "fin": 2.136
+  }
+]

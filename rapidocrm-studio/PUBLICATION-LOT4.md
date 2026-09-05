@@ -1,41 +1,43 @@
 # Module Comptabilité — état au 04/09
 
-Dix tutoriels, dix analyses, dix fiches, dix scripts. Quatre sont montés et
-déposés ; six attendent la voix.
+Dix tutoriels, dix analyses, dix fiches, dix scripts, dix voix. **Quatre sont
+en ligne** — vidéo YouTube publique et page d'Académie complète. Les six autres
+attendent leur rendu.
 
-| # | Tutoriel | Analyse | Fiche | Script | Voix | Rendu | Bibliothèque | Page |
-|---|---|---|---|---|---|---|---|---|
-| 1 | Créer et modifier une facture | ✅ | ✅ | 219 mots | ✅ | 88 s | ✅ | ⏳ |
-| 3 | Changer le statut d'une facture | ✅ | ✅ | 175 mots | ✅ | 61 s | ✅ | ⏳ |
-| 4 | Renseigner le mode de paiement | ✅ | ✅ | 161 mots | ✅ | 60 s | ✅ | ⏳ |
-| 5 | Retrouver une facture | ✅ | ✅ | 195 mots | ✅ | 73 s | ✅ | ⏳ |
-| 8 | Mode de paiement d'un devis | ✅ | ✅ | 159 mots | ⛔ | — | — | — |
-| 9 | Signer un devis à l'écran | ✅ | ✅ | 151 mots | ⛔ | — | — | — |
-| 10 | Convertir un devis en facture | ✅ | ✅ | 201 mots | ⛔ | — | — | — |
-| 11 | Créer un template de SMS | ✅ | ✅ | 174 mots | ⛔ | — | — | — |
-| 12 | Retrouver un devis | ✅ | ✅ | 164 mots | ⛔ | — | — | — |
-| 14 | Suivre ses dépenses | ✅ | ✅ | 193 mots | ⛔ | — | — | — |
+| # | Tutoriel | Analyse | Fiche | Script | Voix | Rendu | Bibliothèque | YouTube | Page |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | Créer et modifier une facture | ✅ | ✅ | 219 mots | ✅ | 88 s | ✅ | HSQazBmzAS4 | ✅ en ligne |
+| 3 | Changer le statut d'une facture | ✅ | ✅ | 175 mots | ✅ | 61 s | ✅ | _kcUjdX4dxs | ✅ en ligne |
+| 4 | Renseigner le mode de paiement | ✅ | ✅ | 161 mots | ✅ | 60 s | ✅ | FYSMeqjGEwk | ✅ en ligne |
+| 5 | Retrouver une facture | ✅ | ✅ | 195 mots | ✅ | 73 s | ✅ | Dm13SaU-lsg | ✅ en ligne |
+| 8 | Mode de paiement d'un devis | ✅ | ✅ | 159 mots | ✅ 55 s | ⏳ | — | — | — |
+| 9 | Signer un devis à l'écran | ✅ | ✅ | 151 mots | ✅ 51 s | ⏳ | — | — | — |
+| 10 | Convertir un devis en facture | ✅ | ✅ | 201 mots | ✅ 69 s | ⏳ | — | — | — |
+| 11 | Créer un template de SMS | ✅ | ✅ | 174 mots | ✅ 62 s | ⏳ | — | — | — |
+| 12 | Retrouver un devis | ✅ | ✅ | 164 mots | ✅ 59 s | ⏳ | — | — | — |
+| 14 | Suivre ses dépenses | ✅ | ✅ | 193 mots | ✅ 69 s | ⏳ | — | — | — |
 
 Le numéro est celui du catalogue, pas celui du dossier local. Les `a_verifier`
 des dix fiches sont vides.
 
-## Deux dépendances externes bloquent la suite
+## Où en sont les dépendances externes
 
-**Le compte ElevenLabs a un impayé.** La synthèse des 36 blocs des quatre
-premiers tutoriels est passée, puis l'API a répondu 401 :
+**ElevenLabs** — l'impayé est réglé, les dix voix sont synthétisées.
 
-> `payment_required` — Your subscription has a failed or incomplete payment.
-> Complete the latest invoice to continue usage.
+**YouTube** — le connecteur est ouvert. Les quatre vidéos sont publiques sur la
+chaîne **RapidoCRM** (`UCXyptH13bJF7AVr2TZJWA-Q`). Attention : la chaîne active
+du compte est FoodEatUp, il faut passer `channel_id` explicitement à chaque
+envoi, sinon les tutoriels partent sur la mauvaise chaîne.
 
-Rien à corriger côté code : il faut régler la facture ElevenLabs. Les six
-scripts restants partiront ensuite d'une traite — environ 50 blocs, dont une
-part sera reprise du cache mutualisé.
+Le quota YouTube est la vraie limite : **5 envois par jour** (1 600 unités sur
+10 000). Les quatre masters 16:9 en ont consommé quatre. Les quatre Shorts 9:16
+n'ont pas encore été envoyés, et les six tutoriels restants demanderont douze
+envois de plus — soit trois jours à ce rythme.
 
-**Aucun connecteur YouTube n'est ouvert.** `publier:site` refuse les quatre
-pages prêtes sur `youtube_url absent`. Une page d'Académie se remplit
-entièrement ou pas du tout : les publier sans leur lien YouTube les laisserait
-en retrait des dix-neuf déjà en ligne. Deux sorties — ouvrir le connecteur
-YouTube Publisher, ou décider que ces pages partent sans le lien.
+**Le domaine des pages est `tutoriel.rapido-crm.com`**, avec un trait d'union.
+`publier_tutoriel` renvoie encore `tutoriel.rapidocrm.com`, qui n'a aucun DNS :
+les `publication.json` de ce lot portent le domaine qui répond, vérifié en 200
+sur les quatre pages.
 
 ## Le format court, et ce qu'il a fallu recaler
 

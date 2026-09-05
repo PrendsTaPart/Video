@@ -1,0 +1,17 @@
+[
+  {
+    "mot": "Et",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "c'est",
+    "debut": 0.163,
+    "fin": 0.36
+  },
+  {
+    "mot": "enregistré.",
+    "debut": 0.441,
+    "fin": 1.173
+  }
+]

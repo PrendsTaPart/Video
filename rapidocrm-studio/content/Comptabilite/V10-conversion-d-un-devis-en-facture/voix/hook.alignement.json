@@ -1,0 +1,127 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.186
+  },
+  {
+    "mot": "devis",
+    "debut": 0.244,
+    "fin": 0.511
+  },
+  {
+    "mot": "est",
+    "debut": 0.534,
+    "fin": 0.615
+  },
+  {
+    "mot": "accepté.",
+    "debut": 0.685,
+    "fin": 1.254
+  },
+  {
+    "mot": "Et",
+    "debut": 1.405,
+    "fin": 1.521
+  },
+  {
+    "mot": "vous",
+    "debut": 1.556,
+    "fin": 1.672
+  },
+  {
+    "mot": "vous",
+    "debut": 1.695,
+    "fin": 1.823
+  },
+  {
+    "mot": "apprêtez",
+    "debut": 1.881,
+    "fin": 2.264
+  },
+  {
+    "mot": "à",
+    "debut": 2.299,
+    "fin": 2.334
+  },
+  {
+    "mot": "retaper",
+    "debut": 2.415,
+    "fin": 2.891
+  },
+  {
+    "mot": "les",
+    "debut": 2.961,
+    "fin": 3.065
+  },
+  {
+    "mot": "mêmes",
+    "debut": 3.1,
+    "fin": 3.32
+  },
+  {
+    "mot": "lignes",
+    "debut": 3.344,
+    "fin": 3.634
+  },
+  {
+    "mot": "dans",
+    "debut": 3.657,
+    "fin": 3.796
+  },
+  {
+    "mot": "une",
+    "debut": 3.855,
+    "fin": 3.936
+  },
+  {
+    "mot": "facture.",
+    "debut": 3.959,
+    "fin": 4.435
+  },
+  {
+    "mot": "Signez",
+    "debut": 4.714,
+    "fin": 5.097
+  },
+  {
+    "mot": "le",
+    "debut": 5.132,
+    "fin": 5.201
+  },
+  {
+    "mot": "devis,",
+    "debut": 5.248,
+    "fin": 5.619
+  },
+  {
+    "mot": "la",
+    "debut": 5.793,
+    "fin": 5.886
+  },
+  {
+    "mot": "facture",
+    "debut": 5.944,
+    "fin": 6.432
+  },
+  {
+    "mot": "se",
+    "debut": 6.548,
+    "fin": 6.687
+  },
+  {
+    "mot": "crée",
+    "debut": 6.722,
+    "fin": 6.92
+  },
+  {
+    "mot": "toute",
+    "debut": 6.954,
+    "fin": 7.14
+  },
+  {
+    "mot": "seule.",
+    "debut": 7.175,
+    "fin": 7.477
+  }
+]

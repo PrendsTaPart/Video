@@ -1,0 +1,832 @@
+{
+  "duree_totale": 51.36,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 6.936,
+      "texte": "Le client dit oui. Vous, vous imprimez, vous faites signer, vous scannez. Le devis se signe à l'écran, en trois gestes.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "client",
+          "debut": 0.197,
+          "fin": 0.464
+        },
+        {
+          "mot": "dit",
+          "debut": 0.488,
+          "fin": 0.627
+        },
+        {
+          "mot": "oui.",
+          "debut": 0.662,
+          "fin": 0.894
+        },
+        {
+          "mot": "Vous,",
+          "debut": 1.01,
+          "fin": 1.289
+        },
+        {
+          "mot": "vous",
+          "debut": 1.312,
+          "fin": 1.44
+        },
+        {
+          "mot": "imprimez,",
+          "debut": 1.498,
+          "fin": 1.939
+        },
+        {
+          "mot": "vous",
+          "debut": 1.985,
+          "fin": 2.09
+        },
+        {
+          "mot": "faites",
+          "debut": 2.113,
+          "fin": 2.322
+        },
+        {
+          "mot": "signer,",
+          "debut": 2.345,
+          "fin": 2.844
+        },
+        {
+          "mot": "vous",
+          "debut": 2.995,
+          "fin": 3.158
+        },
+        {
+          "mot": "scannez.",
+          "debut": 3.181,
+          "fin": 3.587
+        },
+        {
+          "mot": "Le",
+          "debut": 3.762,
+          "fin": 3.889
+        },
+        {
+          "mot": "devis",
+          "debut": 3.936,
+          "fin": 4.168
+        },
+        {
+          "mot": "se",
+          "debut": 4.203,
+          "fin": 4.296
+        },
+        {
+          "mot": "signe",
+          "debut": 4.342,
+          "fin": 4.516
+        },
+        {
+          "mot": "à",
+          "debut": 4.54,
+          "fin": 4.563
+        },
+        {
+          "mot": "l'écran,",
+          "debut": 4.598,
+          "fin": 5.027
+        },
+        {
+          "mot": "en",
+          "debut": 5.074,
+          "fin": 5.19
+        },
+        {
+          "mot": "trois",
+          "debut": 5.236,
+          "fin": 5.422
+        },
+        {
+          "mot": "gestes.",
+          "debut": 5.445,
+          "fin": 5.863
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 6.936,
+      "duree": 12.792,
+      "texte": "On part de la liste des devis, et on ressort avec un devis signé. Tout se passe dans le logiciel : on ouvre le devis en pleine page, on trace la signature dans le cadre prévu, on enregistre.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.128
+        },
+        {
+          "mot": "part",
+          "debut": 0.197,
+          "fin": 0.36
+        },
+        {
+          "mot": "de",
+          "debut": 0.383,
+          "fin": 0.464
+        },
+        {
+          "mot": "la",
+          "debut": 0.511,
+          "fin": 0.58
+        },
+        {
+          "mot": "liste",
+          "debut": 0.639,
+          "fin": 0.987
+        },
+        {
+          "mot": "des",
+          "debut": 1.057,
+          "fin": 1.173
+        },
+        {
+          "mot": "devis,",
+          "debut": 1.207,
+          "fin": 1.695
+        },
+        {
+          "mot": "et",
+          "debut": 1.904,
+          "fin": 2.043
+        },
+        {
+          "mot": "on",
+          "debut": 2.101,
+          "fin": 2.159
+        },
+        {
+          "mot": "ressort",
+          "debut": 2.206,
+          "fin": 2.589
+        },
+        {
+          "mot": "avec",
+          "debut": 2.612,
+          "fin": 2.879
+        },
+        {
+          "mot": "un",
+          "debut": 2.961,
+          "fin": 3.019
+        },
+        {
+          "mot": "devis",
+          "debut": 3.077,
+          "fin": 3.309
+        },
+        {
+          "mot": "signé.",
+          "debut": 3.332,
+          "fin": 3.878
+        },
+        {
+          "mot": "Tout",
+          "debut": 4.203,
+          "fin": 4.377
+        },
+        {
+          "mot": "se",
+          "debut": 4.4,
+          "fin": 4.493
+        },
+        {
+          "mot": "passe",
+          "debut": 4.551,
+          "fin": 4.737
+        },
+        {
+          "mot": "dans",
+          "debut": 4.76,
+          "fin": 4.876
+        },
+        {
+          "mot": "le",
+          "debut": 4.899,
+          "fin": 4.969
+        },
+        {
+          "mot": "logiciel",
+          "debut": 5.016,
+          "fin": 5.55
+        },
+        {
+          "mot": ":",
+          "debut": 5.666,
+          "fin": 5.724
+        },
+        {
+          "mot": "on",
+          "debut": 5.898,
+          "fin": 6.026
+        },
+        {
+          "mot": "ouvre",
+          "debut": 6.107,
+          "fin": 6.316
+        },
+        {
+          "mot": "le",
+          "debut": 6.339,
+          "fin": 6.42
+        },
+        {
+          "mot": "devis",
+          "debut": 6.467,
+          "fin": 6.699
+        },
+        {
+          "mot": "en",
+          "debut": 6.722,
+          "fin": 6.769
+        },
+        {
+          "mot": "pleine",
+          "debut": 6.815,
+          "fin": 7.012
+        },
+        {
+          "mot": "page,",
+          "debut": 7.036,
+          "fin": 7.454
+        },
+        {
+          "mot": "on",
+          "debut": 7.663,
+          "fin": 7.755
+        },
+        {
+          "mot": "trace",
+          "debut": 7.79,
+          "fin": 8.034
+        },
+        {
+          "mot": "la",
+          "debut": 8.057,
+          "fin": 8.127
+        },
+        {
+          "mot": "signature",
+          "debut": 8.173,
+          "fin": 8.731
+        },
+        {
+          "mot": "dans",
+          "debut": 8.754,
+          "fin": 8.882
+        },
+        {
+          "mot": "le",
+          "debut": 8.905,
+          "fin": 8.963
+        },
+        {
+          "mot": "cadre",
+          "debut": 9.009,
+          "fin": 9.253
+        },
+        {
+          "mot": "prévu,",
+          "debut": 9.288,
+          "fin": 9.822
+        },
+        {
+          "mot": "on",
+          "debut": 10.205,
+          "fin": 10.333
+        },
+        {
+          "mot": "enregistre.",
+          "debut": 10.403,
+          "fin": 10.948
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 19.728,
+      "duree": 5.352,
+      "texte": "Les trois points de la ligne. Le menu d'un devis porte une entrée de plus : Signer.",
+      "mots": [
+        {
+          "mot": "Les",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "trois",
+          "debut": 0.197,
+          "fin": 0.395
+        },
+        {
+          "mot": "points",
+          "debut": 0.418,
+          "fin": 0.615
+        },
+        {
+          "mot": "de",
+          "debut": 0.639,
+          "fin": 0.697
+        },
+        {
+          "mot": "la",
+          "debut": 0.72,
+          "fin": 0.801
+        },
+        {
+          "mot": "ligne.",
+          "debut": 0.848,
+          "fin": 1.126
+        },
+        {
+          "mot": "Le",
+          "debut": 1.196,
+          "fin": 1.265
+        },
+        {
+          "mot": "menu",
+          "debut": 1.312,
+          "fin": 1.509
+        },
+        {
+          "mot": "d'un",
+          "debut": 1.556,
+          "fin": 1.683
+        },
+        {
+          "mot": "devis",
+          "debut": 1.741,
+          "fin": 2.125
+        },
+        {
+          "mot": "porte",
+          "debut": 2.194,
+          "fin": 2.473
+        },
+        {
+          "mot": "une",
+          "debut": 2.496,
+          "fin": 2.601
+        },
+        {
+          "mot": "entrée",
+          "debut": 2.624,
+          "fin": 2.949
+        },
+        {
+          "mot": "de",
+          "debut": 2.972,
+          "fin": 3.053
+        },
+        {
+          "mot": "plus",
+          "debut": 3.1,
+          "fin": 3.379
+        },
+        {
+          "mot": ":",
+          "debut": 3.506,
+          "fin": 3.553
+        },
+        {
+          "mot": "Signer.",
+          "debut": 3.878,
+          "fin": 4.354
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 25.080000000000002,
+      "duree": 2.424,
+      "texte": "Le devis s'ouvre en pleine page.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.186
+        },
+        {
+          "mot": "devis",
+          "debut": 0.221,
+          "fin": 0.441
+        },
+        {
+          "mot": "s'ouvre",
+          "debut": 0.464,
+          "fin": 0.697
+        },
+        {
+          "mot": "en",
+          "debut": 0.743,
+          "fin": 0.836
+        },
+        {
+          "mot": "pleine",
+          "debut": 0.871,
+          "fin": 1.091
+        },
+        {
+          "mot": "page.",
+          "debut": 1.115,
+          "fin": 1.474
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 27.504,
+      "duree": 3.744,
+      "texte": "Le cadre est en bas, sous les totaux. On signe à la souris.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.186
+        },
+        {
+          "mot": "cadre",
+          "debut": 0.232,
+          "fin": 0.488
+        },
+        {
+          "mot": "est",
+          "debut": 0.511,
+          "fin": 0.58
+        },
+        {
+          "mot": "en",
+          "debut": 0.65,
+          "fin": 0.708
+        },
+        {
+          "mot": "bas,",
+          "debut": 0.755,
+          "fin": 0.94
+        },
+        {
+          "mot": "sous",
+          "debut": 1.057,
+          "fin": 1.231
+        },
+        {
+          "mot": "les",
+          "debut": 1.254,
+          "fin": 1.347
+        },
+        {
+          "mot": "totaux.",
+          "debut": 1.37,
+          "fin": 1.73
+        },
+        {
+          "mot": "On",
+          "debut": 1.765,
+          "fin": 1.892
+        },
+        {
+          "mot": "signe",
+          "debut": 1.974,
+          "fin": 2.206
+        },
+        {
+          "mot": "à",
+          "debut": 2.229,
+          "fin": 2.252
+        },
+        {
+          "mot": "la",
+          "debut": 2.276,
+          "fin": 2.334
+        },
+        {
+          "mot": "souris.",
+          "debut": 2.392,
+          "fin": 2.74
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 31.248,
+      "duree": 3.552,
+      "texte": "On remonte, et on enregistre. Le bouton est en haut.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "remonte,",
+          "debut": 0.209,
+          "fin": 0.685
+        },
+        {
+          "mot": "et",
+          "debut": 0.731,
+          "fin": 0.824
+        },
+        {
+          "mot": "on",
+          "debut": 0.848,
+          "fin": 0.94
+        },
+        {
+          "mot": "enregistre.",
+          "debut": 1.01,
+          "fin": 1.544
+        },
+        {
+          "mot": "Le",
+          "debut": 1.66,
+          "fin": 1.776
+        },
+        {
+          "mot": "bouton",
+          "debut": 1.834,
+          "fin": 2.113
+        },
+        {
+          "mot": "est",
+          "debut": 2.171,
+          "fin": 2.241
+        },
+        {
+          "mot": "en",
+          "debut": 2.322,
+          "fin": 2.392
+        },
+        {
+          "mot": "haut.",
+          "debut": 2.438,
+          "fin": 2.624
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 34.800000000000004,
+      "duree": 13.248,
+      "texte": "Le devis est signé. Pour voir ceux qui attendent encore une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "devis",
+          "debut": 0.197,
+          "fin": 0.522
+        },
+        {
+          "mot": "est",
+          "debut": 0.569,
+          "fin": 0.708
+        },
+        {
+          "mot": "signé.",
+          "debut": 0.743,
+          "fin": 1.289
+        },
+        {
+          "mot": "Pour",
+          "debut": 1.985,
+          "fin": 2.183
+        },
+        {
+          "mot": "voir",
+          "debut": 2.218,
+          "fin": 2.438
+        },
+        {
+          "mot": "ceux",
+          "debut": 2.508,
+          "fin": 2.694
+        },
+        {
+          "mot": "qui",
+          "debut": 2.74,
+          "fin": 2.821
+        },
+        {
+          "mot": "attendent",
+          "debut": 2.856,
+          "fin": 3.135
+        },
+        {
+          "mot": "encore",
+          "debut": 3.193,
+          "fin": 3.437
+        },
+        {
+          "mot": "une",
+          "debut": 3.46,
+          "fin": 3.541
+        },
+        {
+          "mot": "réponse,",
+          "debut": 3.564,
+          "fin": 4.11
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 4.284,
+          "fin": 5.166
+        },
+        {
+          "mot": "parle",
+          "debut": 5.317,
+          "fin": 5.573
+        },
+        {
+          "mot": "à",
+          "debut": 5.619,
+          "fin": 5.654
+        },
+        {
+          "mot": "Claude",
+          "debut": 5.735,
+          "fin": 6.072
+        },
+        {
+          "mot": ":",
+          "debut": 6.095,
+          "fin": 6.13
+        },
+        {
+          "mot": "vous",
+          "debut": 6.304,
+          "fin": 6.432
+        },
+        {
+          "mot": "demandez",
+          "debut": 6.467,
+          "fin": 6.792
+        },
+        {
+          "mot": "en",
+          "debut": 6.827,
+          "fin": 6.873
+        },
+        {
+          "mot": "français,",
+          "debut": 6.92,
+          "fin": 7.407
+        },
+        {
+          "mot": "il",
+          "debut": 7.581,
+          "fin": 7.732
+        },
+        {
+          "mot": "lit",
+          "debut": 7.802,
+          "fin": 7.918
+        },
+        {
+          "mot": "vos",
+          "debut": 7.941,
+          "fin": 8.057
+        },
+        {
+          "mot": "données",
+          "debut": 8.081,
+          "fin": 8.394
+        },
+        {
+          "mot": "et",
+          "debut": 8.452,
+          "fin": 8.591
+        },
+        {
+          "mot": "répond.",
+          "debut": 8.638,
+          "fin": 9.044
+        },
+        {
+          "mot": "Copiez",
+          "debut": 9.323,
+          "fin": 9.706
+        },
+        {
+          "mot": "ce",
+          "debut": 9.741,
+          "fin": 9.834
+        },
+        {
+          "mot": "prompt,",
+          "debut": 9.88,
+          "fin": 10.379
+        },
+        {
+          "mot": "remplacez",
+          "debut": 10.623,
+          "fin": 11.122
+        },
+        {
+          "mot": "ce",
+          "debut": 11.157,
+          "fin": 11.25
+        },
+        {
+          "mot": "qui",
+          "debut": 11.296,
+          "fin": 11.401
+        },
+        {
+          "mot": "est",
+          "debut": 11.447,
+          "fin": 11.517
+        },
+        {
+          "mot": "entre",
+          "debut": 11.587,
+          "fin": 11.784
+        },
+        {
+          "mot": "crochets.",
+          "debut": 11.831,
+          "fin": 12.33
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 48.048,
+      "duree": 3.312,
+      "texte": "Un devis signé à l'écran, c'est un aller-retour de moins.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "devis",
+          "debut": 0.197,
+          "fin": 0.464
+        },
+        {
+          "mot": "signé",
+          "debut": 0.488,
+          "fin": 0.708
+        },
+        {
+          "mot": "à",
+          "debut": 0.743,
+          "fin": 0.766
+        },
+        {
+          "mot": "l'écran,",
+          "debut": 0.813,
+          "fin": 1.126
+        },
+        {
+          "mot": "c'est",
+          "debut": 1.161,
+          "fin": 1.312
+        },
+        {
+          "mot": "un",
+          "debut": 1.382,
+          "fin": 1.428
+        },
+        {
+          "mot": "aller-retour",
+          "debut": 1.498,
+          "fin": 1.962
+        },
+        {
+          "mot": "de",
+          "debut": 2.009,
+          "fin": 2.078
+        },
+        {
+          "mot": "moins.",
+          "debut": 2.125,
+          "fin": 2.38
+        }
+      ]
+    }
+  ]
+}
