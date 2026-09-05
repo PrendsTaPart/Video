@@ -1,0 +1,82 @@
+{
+  "duree": 49.3,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V29-historique-sms/out/master-16x9.mp4",
+      "octets": 7506866
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V29-historique-sms/out/master-9x16.mp4",
+      "octets": 5728967
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 11.066666666666666
+    },
+    {
+      "nom": "titre",
+      "debut": 11.066666666666666,
+      "fin": 20.366666666666667
+    },
+    {
+      "nom": "demo",
+      "debut": 20.366666666666667,
+      "fin": 32.3
+    },
+    {
+      "nom": "claude",
+      "debut": 32.3,
+      "fin": 44.2
+    },
+    {
+      "nom": "punchline",
+      "debut": 44.2,
+      "fin": 49.3
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Le client dit qu'il n'a pas été prévenu. Vous, vous croyez lui avoir envoyé un SMS."
+    },
+    {
+      "timecode": "00:11",
+      "titre": "Historique SMS"
+    },
+    {
+      "timecode": "00:20",
+      "titre": "Ouvrir l'historique des SMS"
+    },
+    {
+      "timecode": "00:24",
+      "titre": "Lire le tableau des envois"
+    },
+    {
+      "timecode": "00:27",
+      "titre": "Rouvrir un SMS envoyé"
+    },
+    {
+      "timecode": "00:30",
+      "titre": "Revenir à la liste"
+    },
+    {
+      "timecode": "00:32",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:44",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 49s, hors de la fenêtre 55–170s."
+  ]
+}
