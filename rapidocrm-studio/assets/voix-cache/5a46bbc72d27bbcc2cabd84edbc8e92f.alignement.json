@@ -1,0 +1,27 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "modèle,",
+    "debut": 0.186,
+    "fin": 0.511
+  },
+  {
+    "mot": "avec",
+    "debut": 0.557,
+    "fin": 0.743
+  },
+  {
+    "mot": "son",
+    "debut": 0.766,
+    "fin": 0.859
+  },
+  {
+    "mot": "aperçu.",
+    "debut": 0.906,
+    "fin": 1.324
+  }
+]

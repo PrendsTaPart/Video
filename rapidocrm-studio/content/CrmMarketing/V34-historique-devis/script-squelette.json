@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 34,
+    "titre": "Consulter l'historique des devis d'une entreprise",
+    "titre_court": "Consulter l'historique des d",
+    "slug": "consulter-l-historique-des-devis-d-une-entreprise"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'historique des devis",
+        "voix": "",
+        "debut_source": 1,
+        "fin_source": 12.5,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.6
+        },
+        "annotation": "Ouvrir l'historique des devis"
+      },
+      {
+        "numero": 2,
+        "titre": "Lire le tableau des devis",
+        "voix": "",
+        "debut_source": 12.5,
+        "fin_source": 18,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.4,
+          "w": 0.75,
+          "h": 0.58
+        },
+        "annotation": "Lire le tableau des devis"
+      },
+      {
+        "numero": 3,
+        "titre": "Ouvrir un devis",
+        "voix": "",
+        "debut_source": 18,
+        "fin_source": 21.5,
+        "zone_focus": {
+          "x": 0.6,
+          "y": 0.4,
+          "w": 0.38,
+          "h": 0.35
+        },
+        "annotation": "Ouvrir un devis"
+      },
+      {
+        "numero": 4,
+        "titre": "Lire l'alerte de période de signature",
+        "voix": "",
+        "debut_source": 21.5,
+        "fin_source": 24.69,
+        "zone_focus": {
+          "x": 0.58,
+          "y": 0.13,
+          "w": 0.42,
+          "h": 0.25
+        },
+        "annotation": "Lire l'alerte de période de signature"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] devis en attente avec leur destinataire et leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_devis"
+    }
+  }
+}

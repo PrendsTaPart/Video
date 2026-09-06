@@ -1,0 +1,24 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_cas_usage",
+  "parametres": {
+    "cle_api": "rapido_ac_8d2a14623245e47f0da39b8606e3a055952d5773bf699f27",
+    "slug": "05-signature-electronique-d-un-devis",
+    "cas_usage": [
+      {
+        "titre": "Faire signer devant le client",
+        "contexte": "Le client accepte le devis en rendez-vous.",
+        "action": "Ouvrez le devis par Signer, tracez la signature dans le cadre, remontez et enregistrez.",
+        "resultat": "Le devis porte la signature et reste attaché au dossier."
+      },
+      {
+        "titre": "Récupérer le devis signé",
+        "contexte": "Le client veut son exemplaire.",
+        "action": "Depuis le devis ouvert, utilisez le bouton télécharger, à côté d'enregistrer.",
+        "resultat": "Le devis part en fichier, signature comprise."
+      }
+    ]
+  },
+  "demande_le": "2026-09-06T08:34:43.538Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

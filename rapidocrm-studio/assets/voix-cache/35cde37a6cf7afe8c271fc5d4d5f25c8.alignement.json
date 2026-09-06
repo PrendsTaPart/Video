@@ -1,0 +1,132 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "client",
+    "debut": 0.209,
+    "fin": 0.476
+  },
+  {
+    "mot": "rappelle",
+    "debut": 0.499,
+    "fin": 0.824
+  },
+  {
+    "mot": "pour",
+    "debut": 0.848,
+    "fin": 0.987
+  },
+  {
+    "mot": "accepter",
+    "debut": 1.022,
+    "fin": 1.428
+  },
+  {
+    "mot": "un",
+    "debut": 1.474,
+    "fin": 1.521
+  },
+  {
+    "mot": "devis",
+    "debut": 1.579,
+    "fin": 1.858
+  },
+  {
+    "mot": "de",
+    "debut": 1.904,
+    "fin": 1.985
+  },
+  {
+    "mot": "juillet.",
+    "debut": 2.032,
+    "fin": 2.485
+  },
+  {
+    "mot": "Vous,",
+    "debut": 2.694,
+    "fin": 2.984
+  },
+  {
+    "mot": "vous",
+    "debut": 3.019,
+    "fin": 3.135
+  },
+  {
+    "mot": "ne",
+    "debut": 3.158,
+    "fin": 3.239
+  },
+  {
+    "mot": "savez",
+    "debut": 3.286,
+    "fin": 3.518
+  },
+  {
+    "mot": "plus",
+    "debut": 3.553,
+    "fin": 3.715
+  },
+  {
+    "mot": "s'il",
+    "debut": 3.738,
+    "fin": 3.878
+  },
+  {
+    "mot": "est",
+    "debut": 3.936,
+    "fin": 4.005
+  },
+  {
+    "mot": "encore",
+    "debut": 4.075,
+    "fin": 4.307
+  },
+  {
+    "mot": "valable.",
+    "debut": 4.331,
+    "fin": 4.737
+  },
+  {
+    "mot": "Le",
+    "debut": 4.911,
+    "fin": 5.027
+  },
+  {
+    "mot": "devis",
+    "debut": 5.074,
+    "fin": 5.329
+  },
+  {
+    "mot": "vous",
+    "debut": 5.352,
+    "fin": 5.468
+  },
+  {
+    "mot": "le",
+    "debut": 5.492,
+    "fin": 5.573
+  },
+  {
+    "mot": "dit",
+    "debut": 5.619,
+    "fin": 5.747
+  },
+  {
+    "mot": "lui-même,",
+    "debut": 5.77,
+    "fin": 6.211
+  },
+  {
+    "mot": "dès",
+    "debut": 6.362,
+    "fin": 6.49
+  },
+  {
+    "mot": "l'ouverture.",
+    "debut": 6.513,
+    "fin": 7.129
+  }
+]

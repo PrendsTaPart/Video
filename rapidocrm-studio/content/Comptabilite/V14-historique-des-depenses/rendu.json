@@ -1,0 +1,86 @@
+{
+  "duree": 70.46666666666667,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V14-historique-des-depenses/out/master-16x9.mp4",
+      "octets": 14317173
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V14-historique-des-depenses/out/master-9x16.mp4",
+      "octets": 9971095
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.533333333333333
+    },
+    {
+      "nom": "titre",
+      "debut": 9.533333333333333,
+      "fin": 22.6
+    },
+    {
+      "nom": "demo",
+      "debut": 22.6,
+      "fin": 53.06666666666667
+    },
+    {
+      "nom": "claude",
+      "debut": 53.06666666666667,
+      "fin": 67.43333333333334
+    },
+    {
+      "nom": "punchline",
+      "debut": 67.43333333333334,
+      "fin": 70.46666666666667
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Vous savez ce que vous facturez. Ce que vous dépensez, beaucoup moins."
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Suivre ses dépenses"
+    },
+    {
+      "timecode": "00:22",
+      "titre": "Ouvrir l'onglet dépenses"
+    },
+    {
+      "timecode": "00:28",
+      "titre": "Lire le tableau des dépenses"
+    },
+    {
+      "timecode": "00:37",
+      "titre": "Filtrer et trier la liste"
+    },
+    {
+      "timecode": "00:43",
+      "titre": "Ouvrir le menu d'une dépense"
+    },
+    {
+      "timecode": "00:49",
+      "titre": "Remonter à la fiche de l'entreprise"
+    },
+    {
+      "timecode": "00:53",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:07",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 70s, hors de la fenêtre 80–170s."
+  ]
+}

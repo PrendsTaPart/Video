@@ -1,0 +1,122 @@
+[
+  {
+    "mot": "Votre",
+    "debut": 0,
+    "fin": 0.302
+  },
+  {
+    "mot": "facture",
+    "debut": 0.348,
+    "fin": 0.685
+  },
+  {
+    "mot": "part",
+    "debut": 0.708,
+    "fin": 0.894
+  },
+  {
+    "mot": "sur",
+    "debut": 0.929,
+    "fin": 1.103
+  },
+  {
+    "mot": "un",
+    "debut": 1.149,
+    "fin": 1.207
+  },
+  {
+    "mot": "tableur,",
+    "debut": 1.242,
+    "fin": 1.614
+  },
+  {
+    "mot": "recopiée",
+    "debut": 1.683,
+    "fin": 2.113
+  },
+  {
+    "mot": "à",
+    "debut": 2.148,
+    "fin": 2.194
+  },
+  {
+    "mot": "la",
+    "debut": 2.252,
+    "fin": 2.31
+  },
+  {
+    "mot": "main.",
+    "debut": 2.368,
+    "fin": 2.554
+  },
+  {
+    "mot": "Et",
+    "debut": 2.612,
+    "fin": 2.717
+  },
+  {
+    "mot": "le",
+    "debut": 2.752,
+    "fin": 2.821
+  },
+  {
+    "mot": "total,",
+    "debut": 2.879,
+    "fin": 3.181
+  },
+  {
+    "mot": "vous",
+    "debut": 3.204,
+    "fin": 3.332
+  },
+  {
+    "mot": "le",
+    "debut": 3.355,
+    "fin": 3.413
+  },
+  {
+    "mot": "vérifiez",
+    "debut": 3.46,
+    "fin": 3.855
+  },
+  {
+    "mot": "deux",
+    "debut": 3.924,
+    "fin": 4.04
+  },
+  {
+    "mot": "fois.",
+    "debut": 4.075,
+    "fin": 4.296
+  },
+  {
+    "mot": "Le",
+    "debut": 4.389,
+    "fin": 4.516
+  },
+  {
+    "mot": "produit",
+    "debut": 4.551,
+    "fin": 4.853
+  },
+  {
+    "mot": "choisi,",
+    "debut": 4.876,
+    "fin": 5.294
+  },
+  {
+    "mot": "les",
+    "debut": 5.375,
+    "fin": 5.48
+  },
+  {
+    "mot": "montants",
+    "debut": 5.515,
+    "fin": 5.828
+  },
+  {
+    "mot": "suivent.",
+    "debut": 5.886,
+    "fin": 6.258
+  }
+]

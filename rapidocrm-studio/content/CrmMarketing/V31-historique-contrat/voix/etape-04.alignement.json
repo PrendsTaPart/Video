@@ -1,0 +1,72 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "document",
+    "debut": 0.174,
+    "fin": 0.534
+  },
+  {
+    "mot": "s'ouvre",
+    "debut": 0.58,
+    "fin": 0.778
+  },
+  {
+    "mot": "dans",
+    "debut": 0.801,
+    "fin": 0.952
+  },
+  {
+    "mot": "un",
+    "debut": 1.01,
+    "fin": 1.068
+  },
+  {
+    "mot": "onglet,",
+    "debut": 1.149,
+    "fin": 1.683
+  },
+  {
+    "mot": "avec",
+    "debut": 2.009,
+    "fin": 2.299
+  },
+  {
+    "mot": "ses",
+    "debut": 2.357,
+    "fin": 2.461
+  },
+  {
+    "mot": "pages",
+    "debut": 2.508,
+    "fin": 2.81
+  },
+  {
+    "mot": "en",
+    "debut": 2.844,
+    "fin": 2.914
+  },
+  {
+    "mot": "vignettes",
+    "debut": 2.961,
+    "fin": 3.297
+  },
+  {
+    "mot": "sur",
+    "debut": 3.32,
+    "fin": 3.448
+  },
+  {
+    "mot": "le",
+    "debut": 3.483,
+    "fin": 3.541
+  },
+  {
+    "mot": "côté.",
+    "debut": 3.576,
+    "fin": 3.947
+  }
+]

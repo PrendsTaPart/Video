@@ -1,0 +1,62 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "catalogue",
+    "debut": 0.197,
+    "fin": 0.662
+  },
+  {
+    "mot": "défile",
+    "debut": 0.685,
+    "fin": 1.057
+  },
+  {
+    "mot": "deux",
+    "debut": 1.091,
+    "fin": 1.219
+  },
+  {
+    "mot": "par",
+    "debut": 1.242,
+    "fin": 1.382
+  },
+  {
+    "mot": "deux.",
+    "debut": 1.44,
+    "fin": 1.649
+  },
+  {
+    "mot": "Les",
+    "debut": 1.776,
+    "fin": 1.927
+  },
+  {
+    "mot": "flèches",
+    "debut": 1.974,
+    "fin": 2.287
+  },
+  {
+    "mot": "font",
+    "debut": 2.31,
+    "fin": 2.461
+  },
+  {
+    "mot": "venir",
+    "debut": 2.485,
+    "fin": 2.752
+  },
+  {
+    "mot": "les",
+    "debut": 2.786,
+    "fin": 2.891
+  },
+  {
+    "mot": "suivants.",
+    "debut": 2.914,
+    "fin": 3.379
+  }
+]

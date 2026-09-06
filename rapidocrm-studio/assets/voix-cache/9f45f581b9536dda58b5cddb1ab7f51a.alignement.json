@@ -1,0 +1,157 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "part",
+    "debut": 0.174,
+    "fin": 0.36
+  },
+  {
+    "mot": "de",
+    "debut": 0.383,
+    "fin": 0.453
+  },
+  {
+    "mot": "la",
+    "debut": 0.476,
+    "fin": 0.534
+  },
+  {
+    "mot": "fiche",
+    "debut": 0.615,
+    "fin": 0.836
+  },
+  {
+    "mot": "d'une",
+    "debut": 0.859,
+    "fin": 1.022
+  },
+  {
+    "mot": "entreprise,",
+    "debut": 1.045,
+    "fin": 1.73
+  },
+  {
+    "mot": "et",
+    "debut": 1.765,
+    "fin": 1.881
+  },
+  {
+    "mot": "on",
+    "debut": 1.95,
+    "fin": 1.997
+  },
+  {
+    "mot": "ressort",
+    "debut": 2.043,
+    "fin": 2.461
+  },
+  {
+    "mot": "avec",
+    "debut": 2.485,
+    "fin": 2.763
+  },
+  {
+    "mot": "un",
+    "debut": 2.833,
+    "fin": 2.879
+  },
+  {
+    "mot": "devis.",
+    "debut": 2.914,
+    "fin": 3.274
+  },
+  {
+    "mot": "Le",
+    "debut": 3.599,
+    "fin": 3.727
+  },
+  {
+    "mot": "panneau",
+    "debut": 3.785,
+    "fin": 4.029
+  },
+  {
+    "mot": "Finance",
+    "debut": 4.087,
+    "fin": 4.481
+  },
+  {
+    "mot": "l'ouvre,",
+    "debut": 4.516,
+    "fin": 4.899
+  },
+  {
+    "mot": "le",
+    "debut": 5.108,
+    "fin": 5.201
+  },
+  {
+    "mot": "catalogue",
+    "debut": 5.248,
+    "fin": 5.828
+  },
+  {
+    "mot": "remplit",
+    "debut": 5.909,
+    "fin": 6.235
+  },
+  {
+    "mot": "les",
+    "debut": 6.258,
+    "fin": 6.339
+  },
+  {
+    "mot": "montants,",
+    "debut": 6.362,
+    "fin": 6.838
+  },
+  {
+    "mot": "et",
+    "debut": 7.082,
+    "fin": 7.21
+  },
+  {
+    "mot": "le",
+    "debut": 7.245,
+    "fin": 7.314
+  },
+  {
+    "mot": "devis",
+    "debut": 7.361,
+    "fin": 7.686
+  },
+  {
+    "mot": "se",
+    "debut": 7.709,
+    "fin": 7.79
+  },
+  {
+    "mot": "retrouve",
+    "debut": 7.848,
+    "fin": 8.266
+  },
+  {
+    "mot": "dans",
+    "debut": 8.29,
+    "fin": 8.429
+  },
+  {
+    "mot": "l'activité",
+    "debut": 8.452,
+    "fin": 8.94
+  },
+  {
+    "mot": "du",
+    "debut": 8.986,
+    "fin": 9.079
+  },
+  {
+    "mot": "client.",
+    "debut": 9.114,
+    "fin": 9.52
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-produits-V04-03-ajouter-le-produit-a-un-programme-fidelite.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-produits-V04-03-ajouter-le-produit-a-un-programme-fidelite-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-produits-V04-03-ajouter-le-produit-a-un-programme-fidelite-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-produits-V04-03-ajouter-le-produit-a-un-programme-fidelite-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "fc8cfa1dba1b0378",
+      "video_vertical_url": "9505ffcd17d1fa08",
+      "thumbnail_url": "aa9c1ea54b953e92",
+      "thumbnail_vertical_url": "f1b9de357a760c5b"
+    },
+    "publie_le": "2026-08-28T01:47:33.628Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=QVt4pDOBB2k",
+    "video_id": "QVt4pDOBB2k",
+    "publie_le": "2026-08-28T11:33:21.463453+00:00",
+    "short_url": "https://www.youtube.com/watch?v=TmjySZcVU0E",
+    "short_id": "TmjySZcVU0E"
+  },
+  "site": {
+    "url": "https://tutoriel.rapidocrm.com/tutoriel/03-ajouter-le-produit-a-un-programme-fidelite",
+    "tutoriel_id": "5dc8ce16-b5bc-4630-ac3b-6e79154e50a4",
+    "publie_le": "2026-08-28T12:02:32.813+00:00"
+  }
+}

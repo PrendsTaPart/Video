@@ -1,0 +1,15 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V14-06-planifier-un-rdv.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V14-06-planifier-un-rdv-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V14-06-planifier-un-rdv-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V14-06-planifier-un-rdv-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "2705cdd01338fce2",
+      "video_vertical_url": "2ec157e34c07985d",
+      "thumbnail_url": "5de4fc3489b4c78c",
+      "thumbnail_vertical_url": "deb9132e46a85113"
+    },
+    "publie_le": "2026-09-05T23:28:12.506Z"
+  }
+}

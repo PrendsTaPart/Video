@@ -1,0 +1,107 @@
+{
+  "duree": 49.6,
+  "resolution": [1920, 882],
+  "fps": 25,
+  "ecrans": [
+    { "t": 0.0, "nom": "Campagne SMS — étape 1, ciblage de la campagne" },
+    { "t": 30.5, "nom": "Campagne SMS — étape 2, texte du SMS" },
+    { "t": 38.5, "nom": "Campagne SMS — étape 3, validation" }
+  ],
+  "actions": [
+    {
+      "t": 4.0,
+      "type": "ouverture",
+      "cible": "Les trois étapes de la campagne et le bloc Cible",
+      "zone": { "x": 0.22, "y": 0.10, "w": 0.76, "h": 0.50 },
+      "texte_visible": "1 Ciblage de la compagne · 2 Texte du SMS · 3 Validation · Cible · Envoyé à · Toutes mes entreprises · Domaine d'activité · Choisir un domaine"
+    },
+    {
+      "t": 12.0,
+      "type": "selection",
+      "cible": "Modèle de template SMS",
+      "zone": { "x": 0.22, "y": 0.60, "w": 0.76, "h": 0.36 },
+      "texte_visible": "Modèle de template SMS · Chercher un template · ajouter un templateSMS"
+    },
+    {
+      "t": 24.0,
+      "type": "selection",
+      "cible": "Choix du modèle, portefeuille et date d'envoi",
+      "zone": { "x": 0.22, "y": 0.08, "w": 0.76, "h": 0.80 },
+      "texte_visible": "Devis prêt · Facture envoyée · Promo été quais · choisir · Portefeuille de · Date et heure d'envoi · suivant"
+    },
+    {
+      "t": 33.0,
+      "type": "saisie",
+      "cible": "Texte du SMS et récapitulatif de la cible",
+      "zone": { "x": 0.22, "y": 0.12, "w": 0.76, "h": 0.72 },
+      "texte_visible": "Votre campagne SMS · Cible · Portefeuille · Personnes touchées · Texte du SMS · Précédent · Suivant"
+    },
+    {
+      "t": 42.0,
+      "type": "validation",
+      "cible": "Aperçu sur téléphone et validation",
+      "zone": { "x": 0.24, "y": 0.10, "w": 0.72, "h": 0.80 },
+      "texte_visible": "Date d'envoi · précédent · valider"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Choisir qui reçoit la campagne",
+      "debut": 1.0,
+      "fin": 9.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.22, "y": 0.10, "w": 0.76, "h": 0.50 }
+    },
+    {
+      "numero": 2,
+      "titre": "Choisir un modèle et une date",
+      "debut": 20.0,
+      "fin": 29.0,
+      "actions": [1, 2],
+      "zone_focus": { "x": 0.22, "y": 0.08, "w": 0.76, "h": 0.80 }
+    },
+    {
+      "numero": 3,
+      "titre": "Relire le texte du SMS",
+      "debut": 30.5,
+      "fin": 37.5,
+      "actions": [3],
+      "zone_focus": { "x": 0.22, "y": 0.12, "w": 0.76, "h": 0.72 }
+    },
+    {
+      "numero": 4,
+      "titre": "Valider l'envoi",
+      "debut": 38.5,
+      "fin": 46.0,
+      "actions": [4],
+      "zone_focus": { "x": 0.24, "y": 0.10, "w": 0.72, "h": 0.80 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 49.6,
+      "zone": { "x": 0.685, "y": 0.02, "w": 0.31, "h": 0.115 },
+      "raison": "Nom et photo du titulaire du compte (Dupont lina) et solde de crédits affiché dans la barre du haut"
+    },
+    {
+      "t": 20.0,
+      "fin": 29.5,
+      "zone": { "x": 0.235, "y": 0.58, "w": 0.34, "h": 0.13 },
+      "raison": "Portefeuille : noms et photos des commerciaux rattachés à la campagne"
+    },
+    {
+      "t": 30.0,
+      "fin": 38.0,
+      "zone": { "x": 0.46, "y": 0.16, "w": 0.28, "h": 0.14 },
+      "raison": "Portefeuille : noms des commerciaux dans le récapitulatif de la campagne"
+    },
+    {
+      "t": 30.0,
+      "fin": 38.0,
+      "zone": { "x": 0.235, "y": 0.53, "w": 0.74, "h": 0.14 },
+      "raison": "Texte du SMS : il contient un numéro de téléphone de réservation"
+    }
+  ]
+}

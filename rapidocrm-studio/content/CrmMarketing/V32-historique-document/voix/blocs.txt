@@ -1,0 +1,8 @@
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V32-historique-document/voix/hook.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V32-historique-document/voix/intro.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V32-historique-document/voix/etape-01.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V32-historique-document/voix/etape-02.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V32-historique-document/voix/etape-03.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V32-historique-document/voix/etape-04.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V32-historique-document/voix/claude.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V32-historique-document/voix/punchline.mp3'

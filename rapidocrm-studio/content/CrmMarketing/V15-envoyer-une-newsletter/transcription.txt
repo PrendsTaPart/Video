@@ -1,0 +1,17 @@
+Vous avez une nouvelle à annoncer, et un fichier client. Entre les deux, d'habitude, il y a un outil d'e-mailing. Cette fois, la newsletter part du CRM.
+
+On part de la fiche d'une entreprise, et on ressort avec une newsletter programmée. Qui la reçoit, quand elle part, à quoi elle ressemble : la fenêtre suit cet ordre.
+
+Panneau Communication, envoyer une newsletter.
+
+La cible d'abord : entreprises. C'est le premier champ.
+
+Puis la date et l'heure. Dix heures trente se lit ; dix-sept heures trente attend le lendemain.
+
+Le modèle, avec son aperçu.
+
+Campagne ajoutée avec succès.
+
+Une newsletter devient une campagne. Pour retrouver les dernières, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Le fichier est déjà là, la newsletter part de là : un outil de moins à ouvrir.

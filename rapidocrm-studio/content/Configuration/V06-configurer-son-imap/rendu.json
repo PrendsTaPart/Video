@@ -1,0 +1,86 @@
+{
+  "duree": 79.56666666666666,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V06-configurer-son-imap/out/master-16x9.mp4",
+      "octets": 9718578
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V06-configurer-son-imap/out/master-9x16.mp4",
+      "octets": 8673479
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 8.933333333333334
+    },
+    {
+      "nom": "titre",
+      "debut": 8.933333333333334,
+      "fin": 34.93333333333333
+    },
+    {
+      "nom": "demo",
+      "debut": 34.93333333333333,
+      "fin": 57
+    },
+    {
+      "nom": "claude",
+      "debut": 57,
+      "fin": 76.73333333333333
+    },
+    {
+      "nom": "punchline",
+      "debut": 76.73333333333333,
+      "fin": 79.56666666666666
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Vos factures partent de votre webmail, et le CRM n'en sait rien."
+    },
+    {
+      "timecode": "00:08",
+      "titre": "Configurer son IMAP"
+    },
+    {
+      "timecode": "00:34",
+      "titre": "Ouvrir la section Boîte mail"
+    },
+    {
+      "timecode": "00:40",
+      "titre": "Coller le mot de passe d'application"
+    },
+    {
+      "timecode": "00:46",
+      "titre": "Renseigner les quatre paramètres"
+    },
+    {
+      "timecode": "00:53",
+      "titre": "Enregistrer"
+    },
+    {
+      "timecode": "00:55",
+      "titre": "Vérifier la fiche complétée"
+    },
+    {
+      "timecode": "00:57",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:16",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 80s, hors de la fenêtre 80–170s."
+  ]
+}

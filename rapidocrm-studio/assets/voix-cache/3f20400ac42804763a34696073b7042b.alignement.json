@@ -1,0 +1,52 @@
+[
+  {
+    "mot": "Neuf",
+    "debut": 0,
+    "fin": 0.244
+  },
+  {
+    "mot": "cartes,",
+    "debut": 0.313,
+    "fin": 0.662
+  },
+  {
+    "mot": "trois",
+    "debut": 0.778,
+    "fin": 1.022
+  },
+  {
+    "mot": "par",
+    "debut": 1.057,
+    "fin": 1.173
+  },
+  {
+    "mot": "rangée.",
+    "debut": 1.196,
+    "fin": 1.567
+  },
+  {
+    "mot": "Chacune",
+    "debut": 1.602,
+    "fin": 1.974
+  },
+  {
+    "mot": "couvre",
+    "debut": 1.997,
+    "fin": 2.194
+  },
+  {
+    "mot": "un",
+    "debut": 2.218,
+    "fin": 2.276
+  },
+  {
+    "mot": "type",
+    "debut": 2.322,
+    "fin": 2.496
+  },
+  {
+    "mot": "d'échange.",
+    "debut": 2.519,
+    "fin": 2.995
+  }
+]

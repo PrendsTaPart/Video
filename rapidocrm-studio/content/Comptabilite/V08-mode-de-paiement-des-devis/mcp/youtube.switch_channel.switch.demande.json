@@ -1,0 +1,9 @@
+{
+  "serveur": "YouTube",
+  "outil": "switch_channel",
+  "parametres": {
+    "channel_id": "UCXyptH13bJF7AVr2TZJWA-Q"
+  },
+  "demande_le": "2026-09-05T17:10:48.664Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

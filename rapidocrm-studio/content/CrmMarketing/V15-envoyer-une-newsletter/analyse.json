@@ -1,0 +1,137 @@
+{
+  "duree": 20.0,
+  "resolution": [1920, 882],
+  "fps": 25,
+  "ecrans": [
+    { "t": 0.0, "nom": "Fiche entreprise — La baguetterie" },
+    { "t": 3.5, "nom": "Modale « Envoyer une newsletter »" },
+    { "t": 14.5, "nom": "Modèles de newsletter" },
+    { "t": 17.6, "nom": "Confirmation — campagne ajoutée" }
+  ],
+  "actions": [
+    {
+      "t": 1.5,
+      "type": "ouverture",
+      "cible": "Fiche entreprise, panneau Communication déployé",
+      "zone": { "x": 0.72, "y": 0.15, "w": 0.27, "h": 0.8 },
+      "texte_visible": "Envoyer un message SMS · Envoyer un e-mail · Envoyer une newsletter · Appeler avec IA"
+    },
+    {
+      "t": 2.84,
+      "type": "clic",
+      "cible": "Envoyer une newsletter",
+      "zone": { "x": 0.74, "y": 0.42, "w": 0.24, "h": 0.1 },
+      "texte_visible": "Envoyer une newsletter"
+    },
+    {
+      "t": 4.5,
+      "type": "ouverture",
+      "cible": "Modale Envoyer une newsletter",
+      "zone": { "x": 0.26, "y": 0.09, "w": 0.42, "h": 0.9 },
+      "texte_visible": "Envoyer une newsletter · Envoyé à · Choisir une cible · Date et heure d'envoi · Modèle de template newsletter · Chercher un modèle"
+    },
+    {
+      "t": 7.0,
+      "type": "selection",
+      "cible": "Liste déroulante Envoyé à",
+      "zone": { "x": 0.28, "y": 0.37, "w": 0.38, "h": 0.1 },
+      "texte_visible": "entreprises"
+    },
+    {
+      "t": 10.0,
+      "type": "saisie",
+      "cible": "Champ Date et heure d'envoi",
+      "zone": { "x": 0.28, "y": 0.52, "w": 0.38, "h": 0.11 },
+      "texte_visible": "28/08/2026 05:30 PM"
+    },
+    {
+      "t": 13.0,
+      "type": "saisie",
+      "cible": "Correction de l'heure d'envoi",
+      "zone": { "x": 0.28, "y": 0.52, "w": 0.38, "h": 0.11 },
+      "texte_visible": "28/08/2026 10:30 AM"
+    },
+    {
+      "t": 16.0,
+      "type": "selection",
+      "cible": "Modèle de newsletter",
+      "zone": { "x": 0.28, "y": 0.45, "w": 0.38, "h": 0.45 },
+      "texte_visible": "Newsletter — bien… · Promo été horizon · Aperçu"
+    },
+    {
+      "t": 17.56,
+      "type": "validation",
+      "cible": "Bandeau de confirmation",
+      "zone": { "x": 0.71, "y": 0.09, "w": 0.29, "h": 0.12 },
+      "texte_visible": "Campagne ajoutée avec succès!"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir « Envoyer une newsletter »",
+      "debut": 0.5,
+      "fin": 4.0,
+      "actions": [0, 1],
+      "zone_focus": { "x": 0.72, "y": 0.12, "w": 0.27, "h": 0.85 }
+    },
+    {
+      "numero": 2,
+      "titre": "Dire à qui la newsletter part",
+      "debut": 4.0,
+      "fin": 8.5,
+      "actions": [2, 3],
+      "zone_focus": { "x": 0.26, "y": 0.12, "w": 0.42, "h": 0.4 }
+    },
+    {
+      "numero": 3,
+      "titre": "Fixer la date et l'heure d'envoi",
+      "debut": 8.5,
+      "fin": 14.5,
+      "actions": [4, 5],
+      "zone_focus": { "x": 0.26, "y": 0.45, "w": 0.42, "h": 0.25 }
+    },
+    {
+      "numero": 4,
+      "titre": "Choisir le modèle de newsletter",
+      "debut": 14.5,
+      "fin": 17.5,
+      "actions": [6],
+      "zone_focus": { "x": 0.26, "y": 0.4, "w": 0.42, "h": 0.55 }
+    },
+    {
+      "numero": 5,
+      "titre": "Lire la confirmation",
+      "debut": 17.5,
+      "fin": 20.0,
+      "actions": [7],
+      "zone_focus": { "x": 0.68, "y": 0.08, "w": 0.32, "h": 0.2 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 20.0,
+      "zone": { "x": 0.0, "y": 0.0, "w": 1.0, "h": 0.09 },
+      "raison": "Barre du navigateur : l'adresse locale 127.0.0.1:8000 et les extensions du poste. Rien de tout cela n'appartient au produit."
+    },
+    {
+      "t": 0.0,
+      "fin": 20.0,
+      "zone": { "x": 0.79, "y": 0.08, "w": 0.21, "h": 0.15 },
+      "raison": "Photo et nom du titulaire du compte (Dupont lina)."
+    },
+    {
+      "t": 0.0,
+      "fin": 4.5,
+      "zone": { "x": 0.23, "y": 0.7, "w": 0.52, "h": 0.3 },
+      "raison": "Tableau Contacts : noms, e-mails et téléphones réels."
+    },
+    {
+      "t": 17.0,
+      "fin": 20.0,
+      "zone": { "x": 0.23, "y": 0.7, "w": 0.52, "h": 0.3 },
+      "raison": "Retour à la fiche : le tableau Contacts redevient lisible."
+    }
+  ]
+}

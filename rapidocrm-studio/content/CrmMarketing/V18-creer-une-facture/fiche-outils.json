@@ -1,0 +1,42 @@
+{
+  "outils": [
+    {
+      "nom": "list_factures",
+      "description": "Lister les factures du CRM (en attente, payées, etc.).",
+      "parametres": [
+        {
+          "nom": "statut",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtrer par statut"
+        },
+        {
+          "nom": "periode",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": ""
+        },
+        {
+          "nom": "limit",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre maximum de lignes (défaut 20)"
+        }
+      ]
+    }
+  ],
+  "divergences": [
+    "Divergence : « Produit « Pack site vitrine » » (14.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Dates de début et de fin » (19.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Mode de paiement et totaux » (29.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

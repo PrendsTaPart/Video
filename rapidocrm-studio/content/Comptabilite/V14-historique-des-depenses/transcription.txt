@@ -1,0 +1,17 @@
+Vous savez ce que vous facturez. Ce que vous dépensez, beaucoup moins. Quatre cartes, un tableau, et le compte est clair.
+
+On part de la page Facturation, et on ressort avec une vue claire des sorties. Les dépenses sont le troisième onglet, à côté des factures et des devis. Quatre cartes donnent la photo, le tableau donne le détail.
+
+Troisième onglet : dépenses. En haut, ce qui est dépensé, ce qui reste dû, ce qui est payé.
+
+Et la quatrième carte : les bénéfices, une fois les dépenses retirées. Puis le tableau, ligne par ligne, avec son entreprise et son montant.
+
+Deux filtres au-dessus, statut et entreprise. Et les colonnes se trient d'un clic sur leur titre.
+
+Les trois points ouvrent le menu. Trois entrées ici, pas quatre : une dépense ne se visualise pas.
+
+La dernière remonte à la fiche du fournisseur.
+
+Vos sorties sont sous les yeux. Pour savoir ce qui reste à régler sans filtrer, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Ce qui sort se lit aussi vite que ce qui rentre.

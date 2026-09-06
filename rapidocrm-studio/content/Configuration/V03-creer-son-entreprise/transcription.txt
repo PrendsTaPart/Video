@@ -1,0 +1,19 @@
+Votre accès est créé. Il manque encore l'essentiel : votre société. Trois champs, et tout ce que vous ferez ensuite lui sera rattaché.
+
+On part de l'écran de création d'entreprise, et on ressort sur votre tableau de bord, votre société en place. C'est le point d'ancrage de tout le reste : vos clients, vos devis et vos factures s'y rattacheront sans que vous ayez à y penser.
+
+Premier champ : le nom de votre société. Pas le vôtre. C'est celui qui apparaîtra sur vos documents, alors écrivez-le comme vous voulez le lire sur un devis.
+
+Deuxième champ : l'adresse de contact de la société. Elle est distincte de la vôtre : la vôtre vous sert à entrer, celle-ci sert à être joint.
+
+Troisième champ : le SIRET, quatorze chiffres qui identifient votre établissement. Il n'est pas obligatoire, mais le mettre tout de suite vous évitera des doublons plus tard.
+
+Cliquez sur création : votre société est enregistrée.
+
+Dernière formalité : votre mot de passe, deux fois.
+
+Un bandeau confirme, vous vous connectez, et voilà votre tableau de bord. Votre société est en place : vos clients et vos factures viendront s'y ranger.
+
+Votre société est enregistrée. Vous pouvez le vérifier sans ouvrir un seul menu. RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.
+
+Une société bien nommée, et tout le reste sait où se ranger.

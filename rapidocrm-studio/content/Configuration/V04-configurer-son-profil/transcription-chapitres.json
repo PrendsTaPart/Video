@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Votre première facture part demain. Elle portera quel nom, quelle adresse, quel logo ? Une page, et vos documents sortent à votre image."
+  },
+  {
+    "timestamp_secondes": 9,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la page Profil, et on ressort avec deux fiches complètes : la vôtre, et celle de la société émettrice. C'est la seconde qui compte le plus : son logo, son adresse et sa couleur seront repris en tête de chaque devis et de chaque facture."
+  },
+  {
+    "timestamp_secondes": 25,
+    "titre": "Ouvrir sa fiche profil",
+    "texte": "La page Profil s'ouvre sur votre photo. Glissez un fichier dans le cadre, ou passez par parcourir : elle remplacera l'initiale affichée en haut à droite."
+  },
+  {
+    "timestamp_secondes": 35,
+    "titre": "Renseigner son identité",
+    "texte": "En dessous, votre nom, votre prénom et votre adresse e-mail. C'est vous, pas votre société : les deux ne se mélangent pas."
+  },
+  {
+    "timestamp_secondes": 43,
+    "titre": "Ajouter numéro et adresse",
+    "texte": "Puis vos coordonnées : un numéro, une adresse, un code postal. Elles restent les vôtres et ne partent pas sur vos documents."
+  },
+  {
+    "timestamp_secondes": 50,
+    "titre": "Sauvegarder",
+    "texte": "Un clic sur sauvegarder, et votre photo apparaît en haut à droite."
+  },
+  {
+    "timestamp_secondes": 54,
+    "titre": "Compléter la fiche entreprise",
+    "texte": "Deuxième bloc : votre société. Déposez son logo, il sera imprimé en tête de vos factures. Puis son nom et son SIRET."
+  },
+  {
+    "timestamp_secondes": 62,
+    "titre": "Adresse et couleur des factures",
+    "texte": "Enfin l'adresse complète, et cette couleur, qui teinte tous vos documents commerciaux. Prenez celle de votre marque : elle sera reprise partout."
+  },
+  {
+    "timestamp_secondes": 72,
+    "titre": "Faites-le avec Claude",
+    "texte": "Votre fiche est complète. Pour la relire sans rouvrir la page, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et lancez-le."
+  },
+  {
+    "timestamp_secondes": 86,
+    "titre": "À retenir",
+    "texte": "Une fiche remplie une fois, et chaque facture part complète."
+  }
+]

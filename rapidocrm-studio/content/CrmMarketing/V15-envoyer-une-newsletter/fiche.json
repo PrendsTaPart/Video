@@ -1,0 +1,98 @@
+{
+  "fonctionnalite": "Envoyer une newsletter depuis la fiche d'une entreprise",
+  "a_quoi_ca_sert": "Adresser la même lettre d'information à toutes ses entreprises clientes, à la date choisie, sans repasser par un outil d'e-mailing. Le logiciel en fait une campagne et confirme qu'elle est enregistrée.",
+  "pour_qui": "Gérant ou responsable marketing qui anime son fichier clients",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert la fiche d'une entreprise cliente",
+    "Avoir au moins un modèle de newsletter enregistré"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Envoyé à",
+      "obligatoire": true,
+      "explication": "La cible de l'envoi, choisie dans une liste déroulante en haut de la fenêtre."
+    },
+    {
+      "nom": "Date et heure d'envoi",
+      "obligatoire": true,
+      "explication": "Le champ jj/mm/aaaa --:-- juste en dessous. C'est ce moment-là qui déclenche l'envoi."
+    },
+    {
+      "nom": "Modèle de template newsletter",
+      "obligatoire": true,
+      "explication": "La galerie de modèles, avec un champ de recherche au-dessus et un bouton Aperçu sous chacun."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_newsletters",
+      "role": "Liste les newsletters, filtrables par statut et par période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["id", "statut", "periode", "q", "limit"],
+      "exemple_appel": { "periode": "month", "limit": 10 }
+    },
+    {
+      "nom": "list_campagnes",
+      "role": "Liste les campagnes marketing, filtrables par statut et par période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["id", "statut", "periode", "q", "limit"],
+      "exemple_appel": { "periode": "month", "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Prévoir l'envoi le matin plutôt qu'en fin de journée : une newsletter datée de 10:30 se lit, une newsletter de 17:30 attend le lendemain.",
+    "Passer par l'aperçu du modèle avant de valider : c'est la seule façon de voir ce que le client recevra."
+  ],
+  "erreurs_frequentes": [
+    "Choisir le modèle sans avoir renseigné la cible : la fenêtre commence par « Envoyé à », pas par la galerie.",
+    "Croire que l'envoi est parti : le bandeau dit « Campagne ajoutée avec succès », c'est-à-dire programmée."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Annoncer la carte de saison",
+      "contexte": "La nouvelle carte sort lundi et vous voulez prévenir tout le fichier.",
+      "action": "Ouvrez Envoyer une newsletter, choisissez la cible « entreprises », datez l'envoi au lundi 10:30 et prenez le modèle d'annonce.",
+      "resultat_attendu": "Le bandeau « Campagne ajoutée avec succès! » confirme l'enregistrement."
+    },
+    {
+      "titre": "Reprogrammer un envoi trop tardif",
+      "contexte": "L'envoi avait été calé à 17:30, personne ne le lira le soir.",
+      "action": "Rouvrez la fenêtre et corrigez la date et l'heure d'envoi.",
+      "resultat_attendu": "La nouvelle heure remplace l'ancienne dans le champ."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Trois champs, dans l'ordre",
+      "contenu": "Qui la reçoit, quand elle part, à quoi elle ressemble : la fenêtre suit cet ordre de haut en bas.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Un aperçu sous chaque modèle",
+      "contenu": "Le bouton Aperçu ouvre le rendu du modèle sans quitter la fenêtre.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Une newsletter devient une campagne",
+      "contenu": "Le bandeau de confirmation parle de campagne : c'est là que l'envoi se retrouve ensuite.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver ses newsletters",
+    "texte": "Liste-moi mes [nombre] dernières newsletters avec leur statut.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_newsletters"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 à 00:04 — entrée « Envoyer une newsletter » puis ouverture de la fenêtre",
+    "a_quoi_ca_sert": "frames 00:07 à 00:18 — cible, date d'envoi et bandeau de confirmation",
+    "champs_cles": "frames 00:04, 00:07, 00:10 et 00:16",
+    "outils_mcp": "schémas list_newsletters et list_campagnes",
+    "erreurs_frequentes": "frames 00:04 (ordre des champs) et 00:18 (bandeau « Campagne ajoutée avec succès! »)",
+    "cas_usage": "frames 00:07 à 00:18 — cible « entreprises », envoi au 28/08/2026 10:30 AM",
+    "astuces": "frames 00:04 et 00:16"
+  },
+  "a_verifier": []
+}

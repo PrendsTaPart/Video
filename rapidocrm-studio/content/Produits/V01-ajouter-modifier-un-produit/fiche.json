@@ -1,0 +1,118 @@
+{
+  "fonctionnalite": "Créer un produit ou une offre au catalogue",
+  "a_quoi_ca_sert": "Poser une fois ce que vous vendez — son nom, sa période de validité, sa nature, son prix et sa TVA — pour le retrouver ensuite dans vos devis et vos factures sans le ressaisir. C'est le catalogue qui alimente tout le reste.",
+  "pour_qui": "Gérant ou administrateur qui met son offre au propre",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Connaître le prix hors taxes et le taux de TVA applicable"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Nom du produit",
+      "obligatoire": true,
+      "explication": "Le libellé qui apparaîtra dans la liste et sur vos documents commerciaux."
+    },
+    {
+      "nom": "Image du produit",
+      "obligatoire": false,
+      "explication": "Choisie par le bouton parcourir. C'est elle qui illustre la fiche dans la liste des produits."
+    },
+    {
+      "nom": "Date de début et Date de fin",
+      "obligatoire": false,
+      "explication": "La période de validité de l'offre. Utile pour une promotion ou une prestation datée."
+    },
+    {
+      "nom": "Nature",
+      "obligatoire": true,
+      "explication": "Ce que vous vendez — un service, par exemple. La liste des produits se filtre ensuite par nature."
+    },
+    {
+      "nom": "Prix ht et Pourcentage tva",
+      "obligatoire": true,
+      "explication": "Le prix hors taxes, et le taux choisi dans la liste — « tva france (5.00 %) » par exemple."
+    },
+    {
+      "nom": "Prix ttc",
+      "obligatoire": false,
+      "explication": "Il ne se saisit pas : le logiciel le calcule à partir du prix hors taxes et du taux retenu."
+    },
+    {
+      "nom": "Description du produit",
+      "obligatoire": false,
+      "explication": "Ce que recouvre l'offre, en clair. C'est ce texte que le client lira."
+    },
+    {
+      "nom": "Ajouter au programme de fidélité ?",
+      "obligatoire": true,
+      "explication": "Oui ou non. Répondre oui ouvre le choix du programme et le nombre de points accordés."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_products",
+      "role": "Liste les produits et offres de l'entreprise. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["q", "statut", "limit", "periode"],
+      "exemple_appel": { "limit": 10 }
+    },
+    {
+      "nom": "get_product",
+      "role": "Détail complet d'un produit : prix, TVA, description. Lecture seule.",
+      "parametres_obligatoires": ["id"],
+      "parametres_optionnels": [],
+      "exemple_appel": { "id": 1 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Renseignez le prix hors taxes et laissez le logiciel calculer le TTC : c'est une source d'erreur en moins sur vos documents.",
+    "Décrivez le produit en une phrase que le client comprendra : c'est ce texte qui part avec le devis."
+  ],
+  "erreurs_frequentes": [
+    "Saisir le prix TTC dans le champ hors taxes : le calcul repart alors d'une base fausse.",
+    "Laisser la nature vide et ne plus retrouver le produit derrière le filtre « sélectionner une nature »."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Mettre son offre au catalogue",
+      "contexte": "Vous ressaisissez les mêmes lignes à la main sur chaque devis.",
+      "resultat_attendu": "Le produit existe une fois, avec son prix et sa TVA, et se reprend sur tous vos documents."
+    },
+    {
+      "titre": "Cadrer une offre datée",
+      "contexte": "Vous lancez une promotion valable jusqu'à la fin de l'année.",
+      "resultat_attendu": "Les dates de début et de fin bornent l'offre sur sa fiche."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le TTC se calcule tout seul",
+      "contenu": "Vous saisissez le prix hors taxes et vous choisissez le taux. Le champ Prix ttc se remplit de lui-même — inutile d'y toucher.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Trois actions sur chaque fiche",
+      "contenu": "Au survol d'un produit dans la liste, trois boutons apparaissent : voir, modifier, supprimer.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "La fidélité se décide ici",
+      "contenu": "La dernière question du formulaire rattache le produit à un programme de fidélité. Vous pouvez répondre non maintenant et y revenir plus tard.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Relire son catalogue",
+    "texte": "Liste-moi mes [nombre] produits avec leur prix et leur TVA.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_products"
+  },
+  "sources": {
+    "champs_cles": "frames 00:08 à 00:43 de l'enregistrement : modale « Ajouter un produit » et ses champs Nom du produit, Image du produit, Date de début, Date de fin, Nature, Prix ht, Pourcentage tva, Prix ttc, Description du produit, « Ajouter au programme de fidélité ? »",
+    "a_quoi_ca_sert": "frame 00:02 : page Produits vide — « Votre liste des produits ne contient encore aucun produit » — et frame 00:50, la fiche créée dans la liste",
+    "astuces": "frames 00:28 et 00:37 : le champ Prix ttc affiche 0,00 tant que le prix hors taxes n'est pas saisi, puis se remplit seul une fois le taux « tva france (5.00 %) » choisi ; frame 00:57 : les trois boutons voir, modifier, supprimer au survol de la fiche",
+    "erreurs_frequentes": "frame 00:02 : la barre de la page porte un filtre « sélectionner une nature » ; frames 00:28 à 00:37 : le calcul du TTC repart du prix hors taxes",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne crée un produit depuis ce pipeline : la fiche se saisit uniquement dans cette modale. Les prompts proposés relisent le catalogue, en aval."
+  },
+  "a_verifier": []
+}

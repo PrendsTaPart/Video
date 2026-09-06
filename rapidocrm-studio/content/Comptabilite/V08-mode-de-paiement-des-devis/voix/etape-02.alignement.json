@@ -1,0 +1,52 @@
+[
+  {
+    "mot": "Modifier.",
+    "debut": 0,
+    "fin": 0.65
+  },
+  {
+    "mot": "Le",
+    "debut": 0.859,
+    "fin": 0.964
+  },
+  {
+    "mot": "formulaire",
+    "debut": 1.022,
+    "fin": 1.393
+  },
+  {
+    "mot": "se",
+    "debut": 1.416,
+    "fin": 1.533
+  },
+  {
+    "mot": "rouvre",
+    "debut": 1.579,
+    "fin": 1.869
+  },
+  {
+    "mot": "tel",
+    "debut": 1.927,
+    "fin": 2.113
+  },
+  {
+    "mot": "qu'il",
+    "debut": 2.159,
+    "fin": 2.299
+  },
+  {
+    "mot": "a",
+    "debut": 2.334,
+    "fin": 2.357
+  },
+  {
+    "mot": "été",
+    "debut": 2.438,
+    "fin": 2.624
+  },
+  {
+    "mot": "rempli.",
+    "debut": 2.67,
+    "fin": 3.088
+  }
+]

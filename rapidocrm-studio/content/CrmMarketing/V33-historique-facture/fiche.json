@@ -1,0 +1,95 @@
+{
+  "fonctionnalite": "Consulter l'historique des factures d'une entreprise",
+  "a_quoi_ca_sert": "Voir les factures émises pour un client, avec leur statut et leur total, puis ouvrir la facture elle-même pour la relire ou la télécharger.",
+  "pour_qui": "Gérant ou commercial qui suit ce qui a été facturé à un client",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert l'historique de l'entreprise"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Colonnes du tableau",
+      "obligatoire": false,
+      "explication": "ID, Destinataire, Date de début, Date de fin, Statut, Total TTC et Action. Une ligne par facture."
+    },
+    {
+      "nom": "Icône œil",
+      "obligatoire": false,
+      "explication": "Le bouton de la colonne Action. Il ouvre la facture dans un onglet."
+    },
+    {
+      "nom": "Bouton Télécharger",
+      "obligatoire": false,
+      "explication": "En haut à gauche de la facture ouverte. Il enregistre le document."
+    },
+    {
+      "nom": "Informations de facture",
+      "obligatoire": false,
+      "explication": "Le tableau du bas de la facture : DÉTAIL, PRIX, TVA et TOTAL, ligne par ligne."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_factures",
+      "role": "Liste les factures du CRM, filtrables par statut et par période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["statut", "periode", "limit"],
+      "exemple_appel": { "statut": "en_attente", "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Lire le total TTC dans le tableau avant d'ouvrir la facture : c'est souvent la seule information cherchée.",
+    "Télécharger la facture depuis son propre écran plutôt que de la reconstituer depuis le CRM."
+  ],
+  "erreurs_frequentes": [
+    "Chercher le détail des lignes dans le tableau : il est dans la facture, en bas.",
+    "Fermer l'onglet de la facture en croyant revenir en arrière : le journal est resté sur l'onglet précédent."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Vérifier ce qui reste à encaisser",
+      "contexte": "Le client demande où en est son compte.",
+      "action": "Ouvrez l'historique des factures et lisez les colonnes Statut et Total TTC.",
+      "resultat_attendu": "Chaque facture affiche son état et son montant."
+    },
+    {
+      "titre": "Renvoyer une facture au client",
+      "contexte": "Le client réclame un duplicata.",
+      "action": "Ouvrez la facture depuis l'œil, puis cliquez sur Télécharger.",
+      "resultat_attendu": "La facture s'enregistre sur le poste."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "La facture s'ouvre dans un onglet",
+      "contenu": "Le journal reste derrière : on revient dessus sans le recharger.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le détail est en bas",
+      "contenu": "DÉTAIL, PRIX, TVA et TOTAL : le tableau de la facture reprend les lignes une à une.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Un champ de recherche au-dessus du tableau",
+      "contenu": "Le champ Chercher filtre le journal quand les factures s'accumulent.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver les factures en attente",
+    "texte": "Liste-moi mes [nombre] factures en attente avec leur montant.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_factures"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 à 00:10 — bouton Consulter puis colonnes du journal",
+    "a_quoi_ca_sert": "frames 00:10 et 00:16 — tableau puis facture ouverte",
+    "champs_cles": "frames 00:10, 00:14 et 00:16",
+    "outils_mcp": "schéma list_factures",
+    "erreurs_frequentes": "frames 00:16 (tableau de détail en bas de facture) et 00:14 (nouvel onglet)",
+    "cas_usage": "frames 00:10 à 00:18",
+    "astuces": "frames 00:14, 00:16 et 00:10"
+  },
+  "a_verifier": []
+}

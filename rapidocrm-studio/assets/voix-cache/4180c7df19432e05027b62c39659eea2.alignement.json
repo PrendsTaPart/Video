@@ -1,0 +1,237 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "part",
+    "debut": 0.186,
+    "fin": 0.337
+  },
+  {
+    "mot": "de",
+    "debut": 0.36,
+    "fin": 0.418
+  },
+  {
+    "mot": "la",
+    "debut": 0.453,
+    "fin": 0.499
+  },
+  {
+    "mot": "page",
+    "debut": 0.557,
+    "fin": 0.801
+  },
+  {
+    "mot": "Historique,",
+    "debut": 0.824,
+    "fin": 1.509
+  },
+  {
+    "mot": "et",
+    "debut": 1.625,
+    "fin": 1.753
+  },
+  {
+    "mot": "on",
+    "debut": 1.8,
+    "fin": 1.869
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.916,
+    "fin": 2.229
+  },
+  {
+    "mot": "avec",
+    "debut": 2.252,
+    "fin": 2.438
+  },
+  {
+    "mot": "l'e-mail",
+    "debut": 2.508,
+    "fin": 2.81
+  },
+  {
+    "mot": "sous",
+    "debut": 2.926,
+    "fin": 3.1
+  },
+  {
+    "mot": "les",
+    "debut": 3.123,
+    "fin": 3.216
+  },
+  {
+    "mot": "yeux.",
+    "debut": 3.262,
+    "fin": 3.495
+  },
+  {
+    "mot": "Le",
+    "debut": 3.738,
+    "fin": 3.866
+  },
+  {
+    "mot": "tableau",
+    "debut": 3.913,
+    "fin": 4.191
+  },
+  {
+    "mot": "liste",
+    "debut": 4.238,
+    "fin": 4.493
+  },
+  {
+    "mot": "les",
+    "debut": 4.54,
+    "fin": 4.644
+  },
+  {
+    "mot": "envois",
+    "debut": 4.702,
+    "fin": 5.05
+  },
+  {
+    "mot": ";",
+    "debut": 5.085,
+    "fin": 5.132
+  },
+  {
+    "mot": "l'icône",
+    "debut": 5.457,
+    "fin": 5.909
+  },
+  {
+    "mot": "en",
+    "debut": 5.933,
+    "fin": 5.979
+  },
+  {
+    "mot": "bout",
+    "debut": 6.026,
+    "fin": 6.153
+  },
+  {
+    "mot": "de",
+    "debut": 6.177,
+    "fin": 6.246
+  },
+  {
+    "mot": "ligne",
+    "debut": 6.304,
+    "fin": 6.548
+  },
+  {
+    "mot": "rouvre",
+    "debut": 6.629,
+    "fin": 7.001
+  },
+  {
+    "mot": "le",
+    "debut": 7.036,
+    "fin": 7.105
+  },
+  {
+    "mot": "message",
+    "debut": 7.163,
+    "fin": 7.628
+  },
+  {
+    "mot": "tel",
+    "debut": 7.686,
+    "fin": 7.86
+  },
+  {
+    "mot": "qu'il",
+    "debut": 7.918,
+    "fin": 8.057
+  },
+  {
+    "mot": "est",
+    "debut": 8.115,
+    "fin": 8.185
+  },
+  {
+    "mot": "parti,",
+    "debut": 8.301,
+    "fin": 8.928
+  },
+  {
+    "mot": "avec",
+    "debut": 9.044,
+    "fin": 9.3
+  },
+  {
+    "mot": "son",
+    "debut": 9.334,
+    "fin": 9.451
+  },
+  {
+    "mot": "objet,",
+    "debut": 9.509,
+    "fin": 9.868
+  },
+  {
+    "mot": "son",
+    "debut": 10.019,
+    "fin": 10.205
+  },
+  {
+    "mot": "destinataire",
+    "debut": 10.252,
+    "fin": 10.913
+  },
+  {
+    "mot": "et",
+    "debut": 10.96,
+    "fin": 11.122
+  },
+  {
+    "mot": "son",
+    "debut": 11.157,
+    "fin": 11.273
+  },
+  {
+    "mot": "contenu.",
+    "debut": 11.32,
+    "fin": 11.749
+  },
+  {
+    "mot": "Rien",
+    "debut": 11.993,
+    "fin": 12.249
+  },
+  {
+    "mot": "n'est",
+    "debut": 12.272,
+    "fin": 12.388
+  },
+  {
+    "mot": "reconstitué",
+    "debut": 12.446,
+    "fin": 13.119
+  },
+  {
+    "mot": ":",
+    "debut": 13.212,
+    "fin": 13.235
+  },
+  {
+    "mot": "c'est",
+    "debut": 13.479,
+    "fin": 13.665
+  },
+  {
+    "mot": "l'envoi",
+    "debut": 13.688,
+    "fin": 13.955
+  },
+  {
+    "mot": "lui-même.",
+    "debut": 14.002,
+    "fin": 14.536
+  }
+]

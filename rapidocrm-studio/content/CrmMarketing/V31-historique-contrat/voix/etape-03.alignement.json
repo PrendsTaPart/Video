@@ -1,0 +1,32 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "menu",
+    "debut": 0.186,
+    "fin": 0.36
+  },
+  {
+    "mot": "de",
+    "debut": 0.383,
+    "fin": 0.43
+  },
+  {
+    "mot": "la",
+    "debut": 0.464,
+    "fin": 0.534
+  },
+  {
+    "mot": "ligne",
+    "debut": 0.58,
+    "fin": 0.789
+  },
+  {
+    "mot": "l'ouvre.",
+    "debut": 0.824,
+    "fin": 1.161
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V32-06-historique-document.mp4",
+    "titre": "Historique des documents — RapidoCRM",
+    "description": "La date d'ajout tranche, et le fichier se télécharge d'ici.\n\nOn part de la page Historique, et on ressort avec le document en main. Le tableau donne le nom, le type, le poids et la date. Le menu de la ligne télécharge ou supprime.\n\nChapitres\n00:00 Deux versions de la même carte, deux mois d'écart. Laquelle renvoyer au client ?\n00:09 Historique document\n00:20 Ouvrir l'historique des documents\n00:28 Lire le tableau des documents\n00:32 Télécharger ou supprimer un document\n00:35 Annuler et revenir à la liste\n00:37 Faites-le avec Claude\n00:50 À retenir\n\nLe prompt Claude de ce tutoriel\nDonne-moi la fiche complète de l'entreprise numéro [identifiant].\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/06-historique-document\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "historique",
+      "document",
+      "CRM",
+      "PDF",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "CrmMarketing"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V32-06-historique-document-thumb.jpg",
+    "playlist": "RapidoCRM — CrmMarketing",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T23:30:03.993Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

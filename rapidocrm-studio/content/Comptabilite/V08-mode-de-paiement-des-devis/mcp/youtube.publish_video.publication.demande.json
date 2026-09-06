@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V08-05-mode-de-paiement-des-devis.mp4",
+    "titre": "Mode de paiement d'un devis — RapidoCRM",
+    "description": "Une case cochée sur le devis, et c'est écrit.\n\nOn part de la liste des devis, et on ressort avec un moyen de paiement noté sur l'un d'eux. Le réglage est dans le devis, sous le statut : espèce, carte, virement ou chèque. Une seule case à la fois.\n\nChapitres\n00:00 Le client vous dit qu'il paiera par virement. Trois semaines plus tard, personne ne s'en souvient.\n00:09 Renseigner le mode de paiement d'un devis\n00:20 Ouvrir la liste des devis\n00:24 Ouvrir le devis en modification\n00:28 Descendre au mode de paiement\n00:32 Choisir le mode et enregistrer\n00:35 Lire la confirmation\n00:37 Faites-le avec Claude\n00:51 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] devis en attente avec leur destinataire et leur montant.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/05-mode-de-paiement-des-devis\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "devis",
+      "mode de paiement",
+      "CRM",
+      "facturation",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "Comptabilite"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V08-05-mode-de-paiement-des-devis-thumb.jpg",
+    "playlist": "RapidoCRM — Comptabilite",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T17:12:02.999Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

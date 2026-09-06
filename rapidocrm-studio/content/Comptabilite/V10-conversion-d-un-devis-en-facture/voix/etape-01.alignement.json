@@ -1,0 +1,57 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "ouvre",
+    "debut": 0.221,
+    "fin": 0.406
+  },
+  {
+    "mot": "le",
+    "debut": 0.43,
+    "fin": 0.499
+  },
+  {
+    "mot": "devis",
+    "debut": 0.546,
+    "fin": 0.813
+  },
+  {
+    "mot": "par",
+    "debut": 0.836,
+    "fin": 1.022
+  },
+  {
+    "mot": "Signer,",
+    "debut": 1.057,
+    "fin": 1.44
+  },
+  {
+    "mot": "comme",
+    "debut": 1.521,
+    "fin": 1.741
+  },
+  {
+    "mot": "pour",
+    "debut": 1.765,
+    "fin": 1.916
+  },
+  {
+    "mot": "le",
+    "debut": 1.95,
+    "fin": 2.009
+  },
+  {
+    "mot": "faire",
+    "debut": 2.055,
+    "fin": 2.229
+  },
+  {
+    "mot": "valider.",
+    "debut": 2.252,
+    "fin": 2.67
+  }
+]

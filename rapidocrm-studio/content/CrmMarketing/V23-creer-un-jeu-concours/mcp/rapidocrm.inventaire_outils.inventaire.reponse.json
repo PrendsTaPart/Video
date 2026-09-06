@@ -1,0 +1,51 @@
+{
+  "outils": [
+    {
+      "nom": "list_jeux_concours",
+      "description": "Tool RapidoCRM (Marketing) : list_jeux_concours. Utiliser ce tool pour cette action metier.",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "ID principal"
+        },
+        {
+          "nom": "statut",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtre de statut"
+        },
+        {
+          "nom": "periode",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": ""
+        },
+        {
+          "nom": "q",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche libre"
+        },
+        {
+          "nom": "limit",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre maximum de résultats"
+        }
+      ]
+    }
+  ]
+}

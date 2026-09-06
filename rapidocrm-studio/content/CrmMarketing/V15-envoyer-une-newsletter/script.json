@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 15,
+    "titre": "Envoyer une newsletter",
+    "titre_court": "Envoyer une newsletter",
+    "slug": "06-envoyer-une-newsletter"
+  },
+  "hook": {
+    "texte": "Vous avez une nouvelle à annoncer, et un fichier client. Entre les deux, d'habitude, il y a un outil d'e-mailing.",
+    "promesse": "Cette fois, la newsletter part du CRM.",
+    "duree": 8,
+    "alternatives": [
+      "Exporter, importer, recopier : trois étapes pour un seul message.",
+      "Le fichier client est déjà là ; la newsletter peut partir de là aussi.",
+      "Une nouvelle qui n'atteint personne n'est pas une nouvelle."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec une newsletter programmée. Qui la reçoit, quand elle part, à quoi elle ressemble : la fenêtre suit cet ordre.",
+    "duree": 16
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir « Envoyer une newsletter »",
+        "voix": "Panneau Communication, envoyer une newsletter.",
+        "debut_source": 0.5,
+        "fin_source": 4,
+        "zone_focus": { "x": 0.72, "y": 0.12, "w": 0.27, "h": 0.85 },
+        "annotation": "Envoyer une newsletter"
+      },
+      {
+        "numero": 2,
+        "titre": "Dire à qui la newsletter part",
+        "voix": "La cible d'abord : entreprises. C'est le premier champ.",
+        "debut_source": 4,
+        "fin_source": 8.5,
+        "zone_focus": { "x": 0.26, "y": 0.12, "w": 0.42, "h": 0.4 },
+        "annotation": "Envoyé à"
+      },
+      {
+        "numero": 3,
+        "titre": "Fixer la date et l'heure d'envoi",
+        "voix": "Puis la date et l'heure. Dix heures trente se lit ; dix-sept heures trente attend le lendemain.",
+        "debut_source": 8.5,
+        "fin_source": 14.5,
+        "zone_focus": { "x": 0.26, "y": 0.45, "w": 0.42, "h": 0.25 },
+        "annotation": "Date et heure d'envoi"
+      },
+      {
+        "numero": 4,
+        "titre": "Choisir le modèle de newsletter",
+        "voix": "Le modèle, avec son aperçu.",
+        "debut_source": 14.5,
+        "fin_source": 17.5,
+        "zone_focus": { "x": 0.26, "y": 0.4, "w": 0.42, "h": 0.55 },
+        "annotation": "Modèle"
+      },
+      {
+        "numero": 5,
+        "titre": "Lire la confirmation",
+        "voix": "Campagne ajoutée avec succès.",
+        "debut_source": 17.5,
+        "fin_source": 20,
+        "zone_focus": { "x": 0.68, "y": 0.08, "w": 0.32, "h": 0.2 },
+        "annotation": "Campagne ajoutée"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Et pour suivre ce qui est parti ?",
+    "voix": "Une newsletter devient une campagne. Pour retrouver les dernières, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] dernières newsletters avec leur statut.",
+      "variables": ["nombre"],
+      "outil_mcp": "list_newsletters"
+    },
+    "resultat_affiche": {
+      "titre": "3 newsletters",
+      "lignes": [
+        "Carte d'automne — programmée",
+        "Offre de rentrée — envoyée",
+        "Nouveautés d'été — envoyée"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Le fichier est déjà là, la newsletter part de là : un outil de moins à ouvrir.",
+    "duree": 8,
+    "alternatives": [
+      "Ce qui est programmé part tout seul ; ce qui est prévu, non.",
+      "Une nouvelle datée vaut mieux qu'une nouvelle bien écrite mais jamais envoyée.",
+      "Trois champs, et la campagne existe."
+    ]
+  },
+  "seo": {
+    "titre": "Envoyer une newsletter — RapidoCRM",
+    "description": "Programmez une newsletter depuis la fiche d'une entreprise RapidoCRM : cible, date et heure d'envoi, modèle. Le tutoriel de l'Académie, pas à pas.",
+    "mots_cles": ["newsletter", "RapidoCRM", "campagne", "e-mailing", "CRM", "marketing"],
+    "youtube_titre": "Envoyer une newsletter — RapidoCRM",
+    "youtube_description": "Le tutoriel de la newsletter sur RapidoCRM : où se trouve l'entrée dans la fiche entreprise, la cible, la date d'envoi, le choix du modèle, et ce que dit le bandeau de confirmation. RapidoCRM Académie.",
+    "youtube_tags": ["RapidoCRM", "newsletter", "campagne", "CRM", "marketing"]
+  }
+}

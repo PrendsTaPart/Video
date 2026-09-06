@@ -1,0 +1,80 @@
+{
+  "duree": 83.76666666666667,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Produits/V03-ajouter-modifier-des-documents-a-un-produit/out/master-16x9.mp4",
+      "octets": 11179701
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Produits/V03-ajouter-modifier-des-documents-a-un-produit/out/master-9x16.mp4",
+      "octets": 9519758
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 10.733333333333333
+    },
+    {
+      "nom": "titre",
+      "debut": 10.733333333333333,
+      "fin": 34.63333333333333
+    },
+    {
+      "nom": "demo",
+      "debut": 34.63333333333333,
+      "fin": 59.96666666666667
+    },
+    {
+      "nom": "claude",
+      "debut": 59.96666666666667,
+      "fin": 80.16666666666667
+    },
+    {
+      "nom": "punchline",
+      "debut": 80.16666666666667,
+      "fin": 83.76666666666667
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "La consigne est écrite. Le brief commercial, lui, dort dans une pièce jointe d'octobre."
+    },
+    {
+      "timecode": "00:10",
+      "titre": "Attacher des documents à une stratégie"
+    },
+    {
+      "timecode": "00:34",
+      "titre": "Ouvrir les descriptions de la stratégie"
+    },
+    {
+      "timecode": "00:43",
+      "titre": "Nommer le fichier"
+    },
+    {
+      "timecode": "00:48",
+      "titre": "Importer le fichier"
+    },
+    {
+      "timecode": "00:51",
+      "titre": "Relire ce qui est attaché"
+    },
+    {
+      "timecode": "00:59",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:20",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

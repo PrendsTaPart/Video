@@ -1,0 +1,15 @@
+Un contrat envoyé en mai, une question sur sa durée en septembre. Où est le document ? Dans l'historique du client, à une ligne de là.
+
+On part de la page Historique, et on ressort avec le contrat ouvert. Le tableau donne le destinataire, les dates et le statut ; le menu de la ligne ouvre le document. Le statut dit s'il est signé, le document dit ce qu'il engage.
+
+Deuxième rangée de la page Historique : les contrats. On consulte.
+
+Destinataire, dates, statut : tout est là.
+
+Le menu de la ligne l'ouvre.
+
+Le document s'ouvre dans un onglet, avec ses pages en vignettes sur le côté.
+
+Un contrat envoyé n'est pas signé. Pour repérer ceux qui traînent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Le statut au tableau, la clause dans le document : deux clics séparent la question de la réponse.

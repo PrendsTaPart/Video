@@ -1,0 +1,177 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "règlement",
+    "debut": 0.186,
+    "fin": 0.615
+  },
+  {
+    "mot": "est",
+    "debut": 0.685,
+    "fin": 0.778
+  },
+  {
+    "mot": "noté.",
+    "debut": 0.813,
+    "fin": 1.219
+  },
+  {
+    "mot": "Pour",
+    "debut": 1.463,
+    "fin": 1.637
+  },
+  {
+    "mot": "rouvrir",
+    "debut": 1.672,
+    "fin": 1.974
+  },
+  {
+    "mot": "une",
+    "debut": 2.043,
+    "fin": 2.125
+  },
+  {
+    "mot": "facture",
+    "debut": 2.148,
+    "fin": 2.496
+  },
+  {
+    "mot": "précise",
+    "debut": 2.519,
+    "fin": 2.995
+  },
+  {
+    "mot": "sans",
+    "debut": 3.088,
+    "fin": 3.297
+  },
+  {
+    "mot": "la",
+    "debut": 3.32,
+    "fin": 3.39
+  },
+  {
+    "mot": "chercher,",
+    "debut": 3.437,
+    "fin": 3.947
+  },
+  {
+    "mot": "RapidoCRM",
+    "debut": 4.226,
+    "fin": 5.074
+  },
+  {
+    "mot": "parle",
+    "debut": 5.19,
+    "fin": 5.433
+  },
+  {
+    "mot": "à",
+    "debut": 5.457,
+    "fin": 5.48
+  },
+  {
+    "mot": "Claude",
+    "debut": 5.526,
+    "fin": 5.875
+  },
+  {
+    "mot": ":",
+    "debut": 5.909,
+    "fin": 5.933
+  },
+  {
+    "mot": "vous",
+    "debut": 6.258,
+    "fin": 6.397
+  },
+  {
+    "mot": "demandez",
+    "debut": 6.432,
+    "fin": 6.792
+  },
+  {
+    "mot": "en",
+    "debut": 6.827,
+    "fin": 6.885
+  },
+  {
+    "mot": "français,",
+    "debut": 6.943,
+    "fin": 7.5
+  },
+  {
+    "mot": "il",
+    "debut": 7.779,
+    "fin": 7.918
+  },
+  {
+    "mot": "lit",
+    "debut": 7.999,
+    "fin": 8.15
+  },
+  {
+    "mot": "vos",
+    "debut": 8.185,
+    "fin": 8.313
+  },
+  {
+    "mot": "données",
+    "debut": 8.348,
+    "fin": 8.707
+  },
+  {
+    "mot": "et",
+    "debut": 8.916,
+    "fin": 9.067
+  },
+  {
+    "mot": "répond.",
+    "debut": 9.114,
+    "fin": 9.543
+  },
+  {
+    "mot": "Copiez",
+    "debut": 9.985,
+    "fin": 10.356
+  },
+  {
+    "mot": "ce",
+    "debut": 10.379,
+    "fin": 10.495
+  },
+  {
+    "mot": "prompt,",
+    "debut": 10.553,
+    "fin": 11.053
+  },
+  {
+    "mot": "remplacez",
+    "debut": 11.262,
+    "fin": 11.796
+  },
+  {
+    "mot": "le",
+    "debut": 11.842,
+    "fin": 11.912
+  },
+  {
+    "mot": "numéro",
+    "debut": 11.947,
+    "fin": 12.423
+  },
+  {
+    "mot": "entre",
+    "debut": 12.597,
+    "fin": 12.945
+  },
+  {
+    "mot": "crochets.",
+    "debut": 12.992,
+    "fin": 13.491
+  }
+]

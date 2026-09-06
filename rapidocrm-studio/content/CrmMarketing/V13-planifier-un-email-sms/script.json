@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 13,
+    "titre": "Planifier un email/SMS",
+    "titre_court": "Planifier un SMS",
+    "slug": "06-planifier-un-email-sms"
+  },
+  "hook": {
+    "texte": "Il est vingt-deux heures. Vous écrivez le SMS de demain matin, et vous vous notez de l'envoyer à huit heures.",
+    "promesse": "Écrivez-le maintenant, le logiciel l'enverra à l'heure dite.",
+    "duree": 8,
+    "alternatives": [
+      "Le bon message au mauvais moment, c'est un message perdu.",
+      "Se relancer soi-même pour relancer un client, ça fait une relance de trop.",
+      "Ce qui est écrit ce soir peut partir demain matin, sans vous."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec un SMS programmé. Trois choses à dire : qui le reçoit, quel message, et à quelle date. Tout tient dans une seule fenêtre.",
+    "duree": 17
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir le panneau Communication de la fiche",
+        "voix": "Le panneau de droite, bloc Communication.",
+        "debut_source": 0.5,
+        "fin_source": 4,
+        "zone_focus": { "x": 0.72, "y": 0.05, "w": 0.27, "h": 0.85 },
+        "annotation": "Communication"
+      },
+      {
+        "numero": 2,
+        "titre": "Choisir « Planifier un SMS »",
+        "voix": "Tout en bas : planifier un SMS.",
+        "debut_source": 4,
+        "fin_source": 6.5,
+        "zone_focus": { "x": 0.72, "y": 0.12, "w": 0.27, "h": 0.72 },
+        "annotation": "Planifier un SMS"
+      },
+      {
+        "numero": 3,
+        "titre": "Dire à qui le SMS part",
+        "voix": "D'abord la cible. Ici, toutes mes entreprises.",
+        "debut_source": 6.5,
+        "fin_source": 10.5,
+        "zone_focus": { "x": 0.26, "y": 0.05, "w": 0.42, "h": 0.45 },
+        "annotation": "Envoyé à"
+      },
+      {
+        "numero": 4,
+        "titre": "Choisir le modèle de SMS",
+        "voix": "Puis le modèle. Un aperçu sous chacun.",
+        "debut_source": 10.5,
+        "fin_source": 14,
+        "zone_focus": { "x": 0.26, "y": 0.05, "w": 0.42, "h": 0.55 },
+        "annotation": "Modèle de SMS"
+      },
+      {
+        "numero": 5,
+        "titre": "Fixer la date et l'heure d'envoi",
+        "voix": "Reste la date et l'heure. C'est ce moment-là qui déclenche l'envoi, pas le clic.",
+        "debut_source": 14,
+        "fin_source": 20.5,
+        "zone_focus": { "x": 0.26, "y": 0.6, "w": 0.42, "h": 0.35 },
+        "annotation": "Date et heure d'envoi"
+      },
+      {
+        "numero": 6,
+        "titre": "Valider la planification",
+        "voix": "Envoyer. Le message attendra huit heures du matin.",
+        "debut_source": 20.5,
+        "fin_source": 25.32,
+        "zone_focus": { "x": 0.26, "y": 0.6, "w": 0.42, "h": 0.38 },
+        "annotation": "Envoyer"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Et pour choisir le bon modèle ?",
+    "voix": "Vos modèles s'accumulent. Pour savoir lesquels vous avez sous la main, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] modèles de SMS.",
+      "variables": ["nombre"],
+      "outil_mcp": "list_templates_sms"
+    },
+    "resultat_affiche": {
+      "titre": "3 modèles de SMS",
+      "lignes": [
+        "Création de devis",
+        "Rappel RDV",
+        "Relance facture"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Un message écrit le soir, envoyé le matin : la relance ne dépend plus de votre réveil.",
+    "duree": 8,
+    "alternatives": [
+      "Ce qui est daté part tout seul ; ce qui est noté sur un post-it, non.",
+      "Le bon message, à la bonne heure, sans vous.",
+      "Planifier, c'est décider maintenant pour ne plus y penser."
+    ]
+  },
+  "seo": {
+    "titre": "Planifier un SMS — RapidoCRM",
+    "description": "Programmez un SMS depuis la fiche d'une entreprise RapidoCRM : cible, modèle, date et heure d'envoi. Le tutoriel de l'Académie, pas à pas.",
+    "mots_cles": ["planifier un SMS", "RapidoCRM", "relance", "CRM", "marketing", "modèle de SMS"],
+    "youtube_titre": "Planifier un SMS — RapidoCRM",
+    "youtube_description": "Le tutoriel de la planification de SMS sur RapidoCRM : où se trouve l'entrée dans la fiche entreprise, comment choisir la cible et le modèle, et pourquoi la date d'envoi compte plus que le clic. RapidoCRM Académie.",
+    "youtube_tags": ["RapidoCRM", "SMS", "planification", "CRM", "marketing"]
+  }
+}

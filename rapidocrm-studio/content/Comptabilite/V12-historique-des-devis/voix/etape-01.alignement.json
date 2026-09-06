@@ -1,0 +1,47 @@
+[
+  {
+    "mot": "L'onglet",
+    "debut": 0,
+    "fin": 0.453
+  },
+  {
+    "mot": "devis.",
+    "debut": 0.488,
+    "fin": 0.94
+  },
+  {
+    "mot": "Deux",
+    "debut": 1.091,
+    "fin": 1.265
+  },
+  {
+    "mot": "filtres,",
+    "debut": 1.3,
+    "fin": 1.741
+  },
+  {
+    "mot": "une",
+    "debut": 1.823,
+    "fin": 1.974
+  },
+  {
+    "mot": "recherche,",
+    "debut": 2.009,
+    "fin": 2.519
+  },
+  {
+    "mot": "et",
+    "debut": 2.601,
+    "fin": 2.705
+  },
+  {
+    "mot": "le",
+    "debut": 2.74,
+    "fin": 2.798
+  },
+  {
+    "mot": "tableau.",
+    "debut": 2.856,
+    "fin": 3.262
+  }
+]

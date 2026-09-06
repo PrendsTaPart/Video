@@ -1,0 +1,1091 @@
+{
+  "duree_totale": 68.85600000000001,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 8.376,
+      "texte": "Le devis est accepté. Et vous vous apprêtez à retaper les mêmes lignes dans une facture. Signez le devis, la facture se crée toute seule.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.186
+        },
+        {
+          "mot": "devis",
+          "debut": 0.244,
+          "fin": 0.511
+        },
+        {
+          "mot": "est",
+          "debut": 0.534,
+          "fin": 0.615
+        },
+        {
+          "mot": "accepté.",
+          "debut": 0.685,
+          "fin": 1.254
+        },
+        {
+          "mot": "Et",
+          "debut": 1.405,
+          "fin": 1.521
+        },
+        {
+          "mot": "vous",
+          "debut": 1.556,
+          "fin": 1.672
+        },
+        {
+          "mot": "vous",
+          "debut": 1.695,
+          "fin": 1.823
+        },
+        {
+          "mot": "apprêtez",
+          "debut": 1.881,
+          "fin": 2.264
+        },
+        {
+          "mot": "à",
+          "debut": 2.299,
+          "fin": 2.334
+        },
+        {
+          "mot": "retaper",
+          "debut": 2.415,
+          "fin": 2.891
+        },
+        {
+          "mot": "les",
+          "debut": 2.961,
+          "fin": 3.065
+        },
+        {
+          "mot": "mêmes",
+          "debut": 3.1,
+          "fin": 3.32
+        },
+        {
+          "mot": "lignes",
+          "debut": 3.344,
+          "fin": 3.634
+        },
+        {
+          "mot": "dans",
+          "debut": 3.657,
+          "fin": 3.796
+        },
+        {
+          "mot": "une",
+          "debut": 3.855,
+          "fin": 3.936
+        },
+        {
+          "mot": "facture.",
+          "debut": 3.959,
+          "fin": 4.435
+        },
+        {
+          "mot": "Signez",
+          "debut": 4.714,
+          "fin": 5.097
+        },
+        {
+          "mot": "le",
+          "debut": 5.132,
+          "fin": 5.201
+        },
+        {
+          "mot": "devis,",
+          "debut": 5.248,
+          "fin": 5.619
+        },
+        {
+          "mot": "la",
+          "debut": 5.793,
+          "fin": 5.886
+        },
+        {
+          "mot": "facture",
+          "debut": 5.944,
+          "fin": 6.432
+        },
+        {
+          "mot": "se",
+          "debut": 6.548,
+          "fin": 6.687
+        },
+        {
+          "mot": "crée",
+          "debut": 6.722,
+          "fin": 6.92
+        },
+        {
+          "mot": "toute",
+          "debut": 6.954,
+          "fin": 7.14
+        },
+        {
+          "mot": "seule.",
+          "debut": 7.175,
+          "fin": 7.477
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 8.376,
+      "duree": 11.664,
+      "texte": "On part d'un devis en attente, et on ressort avec une facture. Il n'y a pas de bouton « convertir » : c'est la signature du devis qui crée la facture, avec le même client et le même montant.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "part",
+          "debut": 0.197,
+          "fin": 0.383
+        },
+        {
+          "mot": "d'un",
+          "debut": 0.406,
+          "fin": 0.522
+        },
+        {
+          "mot": "devis",
+          "debut": 0.569,
+          "fin": 0.824
+        },
+        {
+          "mot": "en",
+          "debut": 0.848,
+          "fin": 0.917
+        },
+        {
+          "mot": "attente,",
+          "debut": 0.987,
+          "fin": 1.393
+        },
+        {
+          "mot": "et",
+          "debut": 1.416,
+          "fin": 1.509
+        },
+        {
+          "mot": "on",
+          "debut": 1.556,
+          "fin": 1.625
+        },
+        {
+          "mot": "ressort",
+          "debut": 1.695,
+          "fin": 2.252
+        },
+        {
+          "mot": "avec",
+          "debut": 2.368,
+          "fin": 2.635
+        },
+        {
+          "mot": "une",
+          "debut": 2.705,
+          "fin": 2.798
+        },
+        {
+          "mot": "facture.",
+          "debut": 2.833,
+          "fin": 3.344
+        },
+        {
+          "mot": "Il",
+          "debut": 3.669,
+          "fin": 3.785
+        },
+        {
+          "mot": "n'y",
+          "debut": 3.808,
+          "fin": 3.901
+        },
+        {
+          "mot": "a",
+          "debut": 3.936,
+          "fin": 3.959
+        },
+        {
+          "mot": "pas",
+          "debut": 4.029,
+          "fin": 4.168
+        },
+        {
+          "mot": "de",
+          "debut": 4.203,
+          "fin": 4.261
+        },
+        {
+          "mot": "bouton",
+          "debut": 4.307,
+          "fin": 4.632
+        },
+        {
+          "mot": "«",
+          "debut": 4.748,
+          "fin": 4.818
+        },
+        {
+          "mot": "convertir",
+          "debut": 4.969,
+          "fin": 5.631
+        },
+        {
+          "mot": "»",
+          "debut": 5.689,
+          "fin": 5.712
+        },
+        {
+          "mot": ":",
+          "debut": 5.747,
+          "fin": 5.77
+        },
+        {
+          "mot": "c'est",
+          "debut": 5.921,
+          "fin": 6.107
+        },
+        {
+          "mot": "la",
+          "debut": 6.13,
+          "fin": 6.211
+        },
+        {
+          "mot": "signature",
+          "debut": 6.293,
+          "fin": 6.78
+        },
+        {
+          "mot": "du",
+          "debut": 6.803,
+          "fin": 6.896
+        },
+        {
+          "mot": "devis",
+          "debut": 6.954,
+          "fin": 7.245
+        },
+        {
+          "mot": "qui",
+          "debut": 7.279,
+          "fin": 7.372
+        },
+        {
+          "mot": "crée",
+          "debut": 7.419,
+          "fin": 7.581
+        },
+        {
+          "mot": "la",
+          "debut": 7.605,
+          "fin": 7.663
+        },
+        {
+          "mot": "facture,",
+          "debut": 7.709,
+          "fin": 8.208
+        },
+        {
+          "mot": "avec",
+          "debut": 8.417,
+          "fin": 8.649
+        },
+        {
+          "mot": "le",
+          "debut": 8.719,
+          "fin": 8.789
+        },
+        {
+          "mot": "même",
+          "debut": 8.847,
+          "fin": 9.056
+        },
+        {
+          "mot": "client",
+          "debut": 9.079,
+          "fin": 9.532
+        },
+        {
+          "mot": "et",
+          "debut": 9.706,
+          "fin": 9.845
+        },
+        {
+          "mot": "le",
+          "debut": 9.88,
+          "fin": 9.938
+        },
+        {
+          "mot": "même",
+          "debut": 9.985,
+          "fin": 10.159
+        },
+        {
+          "mot": "montant.",
+          "debut": 10.182,
+          "fin": 10.6
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 20.04,
+      "duree": 3.768,
+      "texte": "On ouvre le devis par Signer, comme pour le faire valider.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "ouvre",
+          "debut": 0.221,
+          "fin": 0.406
+        },
+        {
+          "mot": "le",
+          "debut": 0.43,
+          "fin": 0.499
+        },
+        {
+          "mot": "devis",
+          "debut": 0.546,
+          "fin": 0.813
+        },
+        {
+          "mot": "par",
+          "debut": 0.836,
+          "fin": 1.022
+        },
+        {
+          "mot": "Signer,",
+          "debut": 1.057,
+          "fin": 1.44
+        },
+        {
+          "mot": "comme",
+          "debut": 1.521,
+          "fin": 1.741
+        },
+        {
+          "mot": "pour",
+          "debut": 1.765,
+          "fin": 1.916
+        },
+        {
+          "mot": "le",
+          "debut": 1.95,
+          "fin": 2.009
+        },
+        {
+          "mot": "faire",
+          "debut": 2.055,
+          "fin": 2.229
+        },
+        {
+          "mot": "valider.",
+          "debut": 2.252,
+          "fin": 2.67
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 23.808,
+      "duree": 9.216,
+      "texte": "Le devis s'ouvre, on signe, et on enregistre. Le logiciel travaille : il signe le devis, crée la facture, et tente d'envoyer le mail au client.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "devis",
+          "debut": 0.221,
+          "fin": 0.499
+        },
+        {
+          "mot": "s'ouvre,",
+          "debut": 0.546,
+          "fin": 0.906
+        },
+        {
+          "mot": "on",
+          "debut": 0.952,
+          "fin": 1.08
+        },
+        {
+          "mot": "signe,",
+          "debut": 1.149,
+          "fin": 1.533
+        },
+        {
+          "mot": "et",
+          "debut": 1.625,
+          "fin": 1.73
+        },
+        {
+          "mot": "on",
+          "debut": 1.765,
+          "fin": 1.846
+        },
+        {
+          "mot": "enregistre.",
+          "debut": 1.892,
+          "fin": 2.438
+        },
+        {
+          "mot": "Le",
+          "debut": 2.531,
+          "fin": 2.624
+        },
+        {
+          "mot": "logiciel",
+          "debut": 2.659,
+          "fin": 3.065
+        },
+        {
+          "mot": "travaille",
+          "debut": 3.1,
+          "fin": 3.529
+        },
+        {
+          "mot": ":",
+          "debut": 3.564,
+          "fin": 3.599
+        },
+        {
+          "mot": "il",
+          "debut": 3.808,
+          "fin": 3.913
+        },
+        {
+          "mot": "signe",
+          "debut": 4.005,
+          "fin": 4.214
+        },
+        {
+          "mot": "le",
+          "debut": 4.238,
+          "fin": 4.307
+        },
+        {
+          "mot": "devis,",
+          "debut": 4.365,
+          "fin": 4.737
+        },
+        {
+          "mot": "crée",
+          "debut": 4.911,
+          "fin": 5.097
+        },
+        {
+          "mot": "la",
+          "debut": 5.12,
+          "fin": 5.178
+        },
+        {
+          "mot": "facture,",
+          "debut": 5.236,
+          "fin": 5.77
+        },
+        {
+          "mot": "et",
+          "debut": 5.805,
+          "fin": 5.933
+        },
+        {
+          "mot": "tente",
+          "debut": 5.991,
+          "fin": 6.165
+        },
+        {
+          "mot": "d'envoyer",
+          "debut": 6.188,
+          "fin": 6.513
+        },
+        {
+          "mot": "le",
+          "debut": 6.536,
+          "fin": 6.594
+        },
+        {
+          "mot": "mail",
+          "debut": 6.641,
+          "fin": 6.769
+        },
+        {
+          "mot": "au",
+          "debut": 6.815,
+          "fin": 6.861
+        },
+        {
+          "mot": "client.",
+          "debut": 6.885,
+          "fin": 7.245
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 33.024,
+      "duree": 5.304,
+      "texte": "Le bandeau dit tout : devis signé, facture créée. Seul le mail n'est pas parti.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "bandeau",
+          "debut": 0.209,
+          "fin": 0.511
+        },
+        {
+          "mot": "dit",
+          "debut": 0.58,
+          "fin": 0.731
+        },
+        {
+          "mot": "tout",
+          "debut": 0.778,
+          "fin": 0.975
+        },
+        {
+          "mot": ":",
+          "debut": 0.998,
+          "fin": 1.022
+        },
+        {
+          "mot": "devis",
+          "debut": 1.196,
+          "fin": 1.486
+        },
+        {
+          "mot": "signé,",
+          "debut": 1.509,
+          "fin": 1.916
+        },
+        {
+          "mot": "facture",
+          "debut": 2.009,
+          "fin": 2.403
+        },
+        {
+          "mot": "créée.",
+          "debut": 2.426,
+          "fin": 2.821
+        },
+        {
+          "mot": "Seul",
+          "debut": 3.03,
+          "fin": 3.286
+        },
+        {
+          "mot": "le",
+          "debut": 3.309,
+          "fin": 3.379
+        },
+        {
+          "mot": "mail",
+          "debut": 3.437,
+          "fin": 3.611
+        },
+        {
+          "mot": "n'est",
+          "debut": 3.646,
+          "fin": 3.785
+        },
+        {
+          "mot": "pas",
+          "debut": 3.808,
+          "fin": 3.924
+        },
+        {
+          "mot": "parti.",
+          "debut": 3.947,
+          "fin": 4.389
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 38.328,
+      "duree": 7.584,
+      "texte": "On passe à l'onglet facture. En haut, les compteurs se sont recalculés : le total facturé a grimpé, l'en attente aussi.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "passe",
+          "debut": 0.186,
+          "fin": 0.406
+        },
+        {
+          "mot": "à",
+          "debut": 0.43,
+          "fin": 0.453
+        },
+        {
+          "mot": "l'onglet",
+          "debut": 0.476,
+          "fin": 0.743
+        },
+        {
+          "mot": "facture.",
+          "debut": 0.766,
+          "fin": 1.219
+        },
+        {
+          "mot": "En",
+          "debut": 1.37,
+          "fin": 1.451
+        },
+        {
+          "mot": "haut,",
+          "debut": 1.498,
+          "fin": 1.718
+        },
+        {
+          "mot": "les",
+          "debut": 1.776,
+          "fin": 1.881
+        },
+        {
+          "mot": "compteurs",
+          "debut": 1.916,
+          "fin": 2.252
+        },
+        {
+          "mot": "se",
+          "debut": 2.276,
+          "fin": 2.357
+        },
+        {
+          "mot": "sont",
+          "debut": 2.403,
+          "fin": 2.566
+        },
+        {
+          "mot": "recalculés",
+          "debut": 2.601,
+          "fin": 3.228
+        },
+        {
+          "mot": ":",
+          "debut": 3.262,
+          "fin": 3.309
+        },
+        {
+          "mot": "le",
+          "debut": 3.46,
+          "fin": 3.553
+        },
+        {
+          "mot": "total",
+          "debut": 3.611,
+          "fin": 3.866
+        },
+        {
+          "mot": "facturé",
+          "debut": 3.913,
+          "fin": 4.238
+        },
+        {
+          "mot": "a",
+          "debut": 4.261,
+          "fin": 4.284
+        },
+        {
+          "mot": "grimpé,",
+          "debut": 4.342,
+          "fin": 4.83
+        },
+        {
+          "mot": "l'en",
+          "debut": 4.981,
+          "fin": 5.132
+        },
+        {
+          "mot": "attente",
+          "debut": 5.213,
+          "fin": 5.503
+        },
+        {
+          "mot": "aussi.",
+          "debut": 5.526,
+          "fin": 5.886
+        }
+      ]
+    },
+    {
+      "id": "etape-05",
+      "fichier": "voix/etape-05.mp3",
+      "debut": 45.912000000000006,
+      "duree": 6.096,
+      "texte": "Et la voilà, en tête de liste. Même client, même montant que le devis, avec son propre numéro.",
+      "mots": [
+        {
+          "mot": "Et",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "la",
+          "debut": 0.163,
+          "fin": 0.221
+        },
+        {
+          "mot": "voilà,",
+          "debut": 0.279,
+          "fin": 0.604
+        },
+        {
+          "mot": "en",
+          "debut": 0.627,
+          "fin": 0.72
+        },
+        {
+          "mot": "tête",
+          "debut": 0.766,
+          "fin": 0.929
+        },
+        {
+          "mot": "de",
+          "debut": 0.952,
+          "fin": 1.022
+        },
+        {
+          "mot": "liste.",
+          "debut": 1.068,
+          "fin": 1.451
+        },
+        {
+          "mot": "Même",
+          "debut": 1.776,
+          "fin": 2.02
+        },
+        {
+          "mot": "client,",
+          "debut": 2.043,
+          "fin": 2.519
+        },
+        {
+          "mot": "même",
+          "debut": 2.601,
+          "fin": 2.798
+        },
+        {
+          "mot": "montant",
+          "debut": 2.821,
+          "fin": 3.181
+        },
+        {
+          "mot": "que",
+          "debut": 3.216,
+          "fin": 3.297
+        },
+        {
+          "mot": "le",
+          "debut": 3.332,
+          "fin": 3.402
+        },
+        {
+          "mot": "devis,",
+          "debut": 3.448,
+          "fin": 3.831
+        },
+        {
+          "mot": "avec",
+          "debut": 3.913,
+          "fin": 4.156
+        },
+        {
+          "mot": "son",
+          "debut": 4.203,
+          "fin": 4.307
+        },
+        {
+          "mot": "propre",
+          "debut": 4.377,
+          "fin": 4.644
+        },
+        {
+          "mot": "numéro.",
+          "debut": 4.679,
+          "fin": 5.132
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 52.00800000000001,
+      "duree": 12.888,
+      "texte": "La facture existe. Pour vérifier ce qui vient de partir en facturation, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "La",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "facture",
+          "debut": 0.221,
+          "fin": 0.673
+        },
+        {
+          "mot": "existe.",
+          "debut": 0.743,
+          "fin": 1.358
+        },
+        {
+          "mot": "Pour",
+          "debut": 1.602,
+          "fin": 1.776
+        },
+        {
+          "mot": "vérifier",
+          "debut": 1.811,
+          "fin": 2.171
+        },
+        {
+          "mot": "ce",
+          "debut": 2.206,
+          "fin": 2.299
+        },
+        {
+          "mot": "qui",
+          "debut": 2.345,
+          "fin": 2.45
+        },
+        {
+          "mot": "vient",
+          "debut": 2.473,
+          "fin": 2.624
+        },
+        {
+          "mot": "de",
+          "debut": 2.647,
+          "fin": 2.705
+        },
+        {
+          "mot": "partir",
+          "debut": 2.752,
+          "fin": 3.019
+        },
+        {
+          "mot": "en",
+          "debut": 3.042,
+          "fin": 3.111
+        },
+        {
+          "mot": "facturation,",
+          "debut": 3.146,
+          "fin": 3.82
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 4.063,
+          "fin": 4.969
+        },
+        {
+          "mot": "parle",
+          "debut": 5.05,
+          "fin": 5.248
+        },
+        {
+          "mot": "à",
+          "debut": 5.271,
+          "fin": 5.294
+        },
+        {
+          "mot": "Claude",
+          "debut": 5.341,
+          "fin": 5.642
+        },
+        {
+          "mot": ":",
+          "debut": 5.677,
+          "fin": 5.724
+        },
+        {
+          "mot": "vous",
+          "debut": 5.933,
+          "fin": 6.06
+        },
+        {
+          "mot": "demandez",
+          "debut": 6.084,
+          "fin": 6.385
+        },
+        {
+          "mot": "en",
+          "debut": 6.409,
+          "fin": 6.455
+        },
+        {
+          "mot": "français,",
+          "debut": 6.513,
+          "fin": 6.978
+        },
+        {
+          "mot": "il",
+          "debut": 7.187,
+          "fin": 7.326
+        },
+        {
+          "mot": "lit",
+          "debut": 7.396,
+          "fin": 7.5
+        },
+        {
+          "mot": "vos",
+          "debut": 7.535,
+          "fin": 7.639
+        },
+        {
+          "mot": "données",
+          "debut": 7.663,
+          "fin": 8.034
+        },
+        {
+          "mot": "et",
+          "debut": 8.162,
+          "fin": 8.313
+        },
+        {
+          "mot": "répond.",
+          "debut": 8.359,
+          "fin": 8.777
+        },
+        {
+          "mot": "Copiez",
+          "debut": 9.021,
+          "fin": 9.427
+        },
+        {
+          "mot": "ce",
+          "debut": 9.451,
+          "fin": 9.555
+        },
+        {
+          "mot": "prompt,",
+          "debut": 9.613,
+          "fin": 10.077
+        },
+        {
+          "mot": "remplacez",
+          "debut": 10.356,
+          "fin": 10.879
+        },
+        {
+          "mot": "ce",
+          "debut": 10.913,
+          "fin": 11.006
+        },
+        {
+          "mot": "qui",
+          "debut": 11.064,
+          "fin": 11.157
+        },
+        {
+          "mot": "est",
+          "debut": 11.192,
+          "fin": 11.262
+        },
+        {
+          "mot": "entre",
+          "debut": 11.331,
+          "fin": 11.529
+        },
+        {
+          "mot": "crochets.",
+          "debut": 11.575,
+          "fin": 11.981
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 64.89600000000002,
+      "duree": 3.96,
+      "texte": "Un devis signé, une facture créée. Vous n'avez rien retapé.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "devis",
+          "debut": 0.197,
+          "fin": 0.488
+        },
+        {
+          "mot": "signé,",
+          "debut": 0.511,
+          "fin": 0.917
+        },
+        {
+          "mot": "une",
+          "debut": 0.952,
+          "fin": 1.068
+        },
+        {
+          "mot": "facture",
+          "debut": 1.103,
+          "fin": 1.474
+        },
+        {
+          "mot": "créée.",
+          "debut": 1.498,
+          "fin": 1.834
+        },
+        {
+          "mot": "Vous",
+          "debut": 1.869,
+          "fin": 1.985
+        },
+        {
+          "mot": "n'avez",
+          "debut": 2.009,
+          "fin": 2.229
+        },
+        {
+          "mot": "rien",
+          "debut": 2.252,
+          "fin": 2.415
+        },
+        {
+          "mot": "retapé.",
+          "debut": 2.45,
+          "fin": 2.972
+        }
+      ]
+    }
+  ]
+}

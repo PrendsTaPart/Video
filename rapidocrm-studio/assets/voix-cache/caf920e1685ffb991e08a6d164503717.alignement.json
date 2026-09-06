@@ -1,0 +1,57 @@
+[
+  {
+    "mot": "L'onglet",
+    "debut": 0,
+    "fin": 0.372
+  },
+  {
+    "mot": "devis,",
+    "debut": 0.406,
+    "fin": 0.801
+  },
+  {
+    "mot": "et",
+    "debut": 0.848,
+    "fin": 0.94
+  },
+  {
+    "mot": "la",
+    "debut": 0.975,
+    "fin": 1.045
+  },
+  {
+    "mot": "liste.",
+    "debut": 1.091,
+    "fin": 1.486
+  },
+  {
+    "mot": "Les",
+    "debut": 1.66,
+    "fin": 1.8
+  },
+  {
+    "mot": "trois",
+    "debut": 1.834,
+    "fin": 2.032
+  },
+  {
+    "mot": "points",
+    "debut": 2.067,
+    "fin": 2.345
+  },
+  {
+    "mot": "ouvrent",
+    "debut": 2.38,
+    "fin": 2.67
+  },
+  {
+    "mot": "le",
+    "debut": 2.694,
+    "fin": 2.752
+  },
+  {
+    "mot": "menu.",
+    "debut": 2.798,
+    "fin": 3.17
+  }
+]

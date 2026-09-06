@@ -1,0 +1,122 @@
+[
+  {
+    "mot": "Deux",
+    "debut": 0,
+    "fin": 0.232
+  },
+  {
+    "mot": "versions",
+    "debut": 0.267,
+    "fin": 0.592
+  },
+  {
+    "mot": "de",
+    "debut": 0.615,
+    "fin": 0.673
+  },
+  {
+    "mot": "la",
+    "debut": 0.708,
+    "fin": 0.766
+  },
+  {
+    "mot": "même",
+    "debut": 0.801,
+    "fin": 0.975
+  },
+  {
+    "mot": "carte,",
+    "debut": 0.998,
+    "fin": 1.358
+  },
+  {
+    "mot": "deux",
+    "debut": 1.451,
+    "fin": 1.602
+  },
+  {
+    "mot": "mois",
+    "debut": 1.637,
+    "fin": 1.753
+  },
+  {
+    "mot": "d'écart.",
+    "debut": 1.776,
+    "fin": 2.287
+  },
+  {
+    "mot": "Laquelle",
+    "debut": 2.612,
+    "fin": 3.1
+  },
+  {
+    "mot": "renvoyer",
+    "debut": 3.158,
+    "fin": 3.518
+  },
+  {
+    "mot": "au",
+    "debut": 3.541,
+    "fin": 3.611
+  },
+  {
+    "mot": "client",
+    "debut": 3.646,
+    "fin": 4.017
+  },
+  {
+    "mot": "?",
+    "debut": 4.087,
+    "fin": 4.122
+  },
+  {
+    "mot": "La",
+    "debut": 4.365,
+    "fin": 4.481
+  },
+  {
+    "mot": "date",
+    "debut": 4.54,
+    "fin": 4.714
+  },
+  {
+    "mot": "d'ajout",
+    "debut": 4.737,
+    "fin": 5.016
+  },
+  {
+    "mot": "tranche,",
+    "debut": 5.039,
+    "fin": 5.433
+  },
+  {
+    "mot": "et",
+    "debut": 5.608,
+    "fin": 5.712
+  },
+  {
+    "mot": "le",
+    "debut": 5.747,
+    "fin": 5.805
+  },
+  {
+    "mot": "fichier",
+    "debut": 5.863,
+    "fin": 6.188
+  },
+  {
+    "mot": "se",
+    "debut": 6.235,
+    "fin": 6.327
+  },
+  {
+    "mot": "télécharge",
+    "debut": 6.374,
+    "fin": 6.815
+  },
+  {
+    "mot": "d'ici.",
+    "debut": 6.838,
+    "fin": 7.303
+  }
+]

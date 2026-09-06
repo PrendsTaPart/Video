@@ -1,0 +1,72 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "numéro,",
+    "debut": 0.197,
+    "fin": 0.685
+  },
+  {
+    "mot": "la",
+    "debut": 0.766,
+    "fin": 0.882
+  },
+  {
+    "mot": "date,",
+    "debut": 0.952,
+    "fin": 1.242
+  },
+  {
+    "mot": "le",
+    "debut": 1.393,
+    "fin": 1.498
+  },
+  {
+    "mot": "texte",
+    "debut": 1.544,
+    "fin": 1.892
+  },
+  {
+    "mot": ":",
+    "debut": 1.916,
+    "fin": 1.95
+  },
+  {
+    "mot": "trois",
+    "debut": 2.159,
+    "fin": 2.368
+  },
+  {
+    "mot": "colonnes",
+    "debut": 2.392,
+    "fin": 2.763
+  },
+  {
+    "mot": "qui",
+    "debut": 2.879,
+    "fin": 3.03
+  },
+  {
+    "mot": "valent",
+    "debut": 3.088,
+    "fin": 3.297
+  },
+  {
+    "mot": "mieux",
+    "debut": 3.344,
+    "fin": 3.518
+  },
+  {
+    "mot": "qu'une",
+    "debut": 3.541,
+    "fin": 3.68
+  },
+  {
+    "mot": "discussion.",
+    "debut": 3.704,
+    "fin": 4.249
+  }
+]

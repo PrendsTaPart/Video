@@ -1,0 +1,57 @@
+[
+  {
+    "mot": "Ce",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "qui",
+    "debut": 0.221,
+    "fin": 0.325
+  },
+  {
+    "mot": "sort",
+    "debut": 0.383,
+    "fin": 0.627
+  },
+  {
+    "mot": "se",
+    "debut": 0.65,
+    "fin": 0.743
+  },
+  {
+    "mot": "lit",
+    "debut": 0.801,
+    "fin": 0.94
+  },
+  {
+    "mot": "aussi",
+    "debut": 0.975,
+    "fin": 1.219
+  },
+  {
+    "mot": "vite",
+    "debut": 1.277,
+    "fin": 1.44
+  },
+  {
+    "mot": "que",
+    "debut": 1.463,
+    "fin": 1.544
+  },
+  {
+    "mot": "ce",
+    "debut": 1.579,
+    "fin": 1.625
+  },
+  {
+    "mot": "qui",
+    "debut": 1.649,
+    "fin": 1.741
+  },
+  {
+    "mot": "rentre.",
+    "debut": 1.776,
+    "fin": 2.078
+  }
+]

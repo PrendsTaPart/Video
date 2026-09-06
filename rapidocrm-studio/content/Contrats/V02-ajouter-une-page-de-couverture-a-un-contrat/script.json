@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "module": "Contrats",
+    "module_slug": "04-contrat",
+    "numero": 2,
+    "titre": "Ajouter une page de couverture à un contrat",
+    "titre_court": "Page de couverture",
+    "slug": "04-ajouter-une-page-de-couverture-a-un-contrat"
+  },
+  "hook": {
+    "texte": "Votre contrat s'ouvre sur l'article 1. Le client, lui, voit un mur de texte.",
+    "promesse": "Une vraie première page, choisie en trois clics.",
+    "duree": 5,
+    "alternatives": [
+      "Un contrat sans page de garde, c'est un livre sans couverture.",
+      "Le fond est bon. La première impression, beaucoup moins.",
+      "Vos contrats commencent tous par une ligne d'article. Dommage."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la liste de vos contrats types, et on ressort avec une vraie page de garde. Vous la choisissez dans une galerie d'images, comme un fond d'écran. Aucun éditeur à ouvrir.",
+    "duree": 13
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir la liste des contrats types",
+        "voix": "Vos contrats types. Le bouton plus.",
+        "debut_source": 0.5,
+        "fin_source": 4.8,
+        "zone_focus": { "x": 0.23, "y": 0.40, "w": 0.75, "h": 0.55 },
+        "annotation": "Le bouton plus de la ligne",
+        "point": { "x": 0.903, "y": 0.49 }
+      },
+      {
+        "numero": 2,
+        "titre": "Ouvrir le choix de la couverture",
+        "voix": "La galerie s'ouvre. Chaque image, une couverture.",
+        "debut_source": 4.8,
+        "fin_source": 9.5,
+        "zone_focus": { "x": 0.22, "y": 0.02, "w": 0.43, "h": 0.95 },
+        "annotation": "Choisissez votre couverture",
+        "point": { "x": 0.33, "y": 0.40 }
+      },
+      {
+        "numero": 3,
+        "titre": "Choisir la couverture et confirmer",
+        "voix": "On prend la première, on confirme. C'est enregistré.",
+        "debut_source": 9.5,
+        "fin_source": 15.5,
+        "zone_focus": { "x": 0.22, "y": 0.20, "w": 0.43, "h": 0.75 },
+        "annotation": "confirmer",
+        "point": { "x": 0.36, "y": 0.84 }
+      },
+      {
+        "numero": 4,
+        "titre": "Voir la couverture en tête du contrat",
+        "voix": "Et le contrat s'ouvre dessus. Prestataire, client, tout y est.",
+        "debut_source": 19.5,
+        "fin_source": 26.0,
+        "zone_focus": { "x": 0.16, "y": 0.15, "w": 0.68, "h": 0.80 },
+        "annotation": "Document contractuel",
+        "point": { "x": 0.30, "y": 0.50 }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Faites-le avec Claude",
+    "voix": "Vos couvertures sont posées. Pour savoir quels contrats types vous avez sous la main, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] templates de contrat avec leur titre.",
+      "variables": ["nombre"],
+      "outil_mcp": "list_contrat_templates"
+    },
+    "resultat_affiche": {
+      "titre": "Vos contrats types",
+      "lignes": [
+        "Contrat de prestation web",
+        "Accord de confidentialité (nda)",
+        "Contrat de maintenance"
+      ]
+    },
+    "duree": 19
+  },
+  "punchline": {
+    "texte": "Une page de garde choisie une fois, et tous vos contrats en profitent. Sans éditeur.",
+    "duree": 6,
+    "alternatives": [
+      "Trois clics, et vos contrats ont enfin une couverture.",
+      "Le même contrat, mais il donne envie de l'ouvrir.",
+      "Une galerie, un clic, et la première page est là."
+    ]
+  },
+  "seo": {
+    "titre": "Page de couverture d'un contrat — RapidoCRM",
+    "description": "Ajoutez une page de couverture à un contrat RapidoCRM : ouvrez la galerie depuis la liste des contrats types, choisissez une image, confirmez.",
+    "mots_cles": [
+      "page de couverture",
+      "contrat",
+      "RapidoCRM",
+      "template de contrat",
+      "page de garde",
+      "document contractuel"
+    ],
+    "youtube_titre": "Ajouter une page de couverture à un contrat — RapidoCRM Académie",
+    "youtube_description": "Votre contrat s'ouvre sur l'article 1, sans page de garde. Dans RapidoCRM, la couverture se choisit dans une galerie, depuis la liste des contrats types : le bouton plus de la ligne ouvre « Choisissez votre couverture », vous prenez une image, vous confirmez, et le contrat s'ouvre désormais dessus.\n\nAu programme :\n00:00 Le problème\n00:05 Ce qu'on va faire\n00:18 Ouvrir la liste des contrats types\n00:21 Ouvrir le choix de la couverture\n00:24 Choisir la couverture et confirmer\n00:27 Voir la couverture en tête du contrat\n00:31 Faites-le avec Claude\n00:50 À retenir\n\nRapidoCRM Académie — un tutoriel par fonctionnalité.\nUne démo sur votre activité ? WhatsApp 06.14.18.92.25",
+    "youtube_tags": [
+      "RapidoCRM",
+      "contrat",
+      "page de couverture",
+      "CRM",
+      "tutoriel",
+      "PME"
+    ]
+  }
+}

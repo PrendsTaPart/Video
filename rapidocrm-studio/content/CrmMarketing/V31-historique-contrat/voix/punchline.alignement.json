@@ -1,0 +1,92 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "statut",
+    "debut": 0.163,
+    "fin": 0.464
+  },
+  {
+    "mot": "au",
+    "debut": 0.488,
+    "fin": 0.534
+  },
+  {
+    "mot": "tableau,",
+    "debut": 0.592,
+    "fin": 1.126
+  },
+  {
+    "mot": "la",
+    "debut": 1.219,
+    "fin": 1.3
+  },
+  {
+    "mot": "clause",
+    "debut": 1.358,
+    "fin": 1.649
+  },
+  {
+    "mot": "dans",
+    "debut": 1.672,
+    "fin": 1.811
+  },
+  {
+    "mot": "le",
+    "debut": 1.834,
+    "fin": 1.881
+  },
+  {
+    "mot": "document",
+    "debut": 1.939,
+    "fin": 2.368
+  },
+  {
+    "mot": ":",
+    "debut": 2.426,
+    "fin": 2.45
+  },
+  {
+    "mot": "deux",
+    "debut": 2.659,
+    "fin": 2.81
+  },
+  {
+    "mot": "clics",
+    "debut": 2.833,
+    "fin": 3.077
+  },
+  {
+    "mot": "séparent",
+    "debut": 3.1,
+    "fin": 3.425
+  },
+  {
+    "mot": "la",
+    "debut": 3.448,
+    "fin": 3.506
+  },
+  {
+    "mot": "question",
+    "debut": 3.553,
+    "fin": 3.855
+  },
+  {
+    "mot": "de",
+    "debut": 3.889,
+    "fin": 3.936
+  },
+  {
+    "mot": "la",
+    "debut": 3.982,
+    "fin": 4.04
+  },
+  {
+    "mot": "réponse.",
+    "debut": 4.063,
+    "fin": 4.54
+  }
+]

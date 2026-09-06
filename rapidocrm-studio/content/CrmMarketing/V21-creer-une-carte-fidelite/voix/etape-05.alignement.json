@@ -1,0 +1,47 @@
+[
+  {
+    "mot": "Et",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "la",
+    "debut": 0.163,
+    "fin": 0.221
+  },
+  {
+    "mot": "page",
+    "debut": 0.279,
+    "fin": 0.464
+  },
+  {
+    "mot": "des",
+    "debut": 0.488,
+    "fin": 0.58
+  },
+  {
+    "mot": "programmes",
+    "debut": 0.604,
+    "fin": 1.033
+  },
+  {
+    "mot": "compte",
+    "debut": 1.08,
+    "fin": 1.37
+  },
+  {
+    "mot": "clients",
+    "debut": 1.405,
+    "fin": 1.741
+  },
+  {
+    "mot": "et",
+    "debut": 1.8,
+    "fin": 1.892
+  },
+  {
+    "mot": "points.",
+    "debut": 1.916,
+    "fin": 2.206
+  }
+]

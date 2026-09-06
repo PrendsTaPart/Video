@@ -1,0 +1,21 @@
+Votre commercial commence lundi. Son accès au logiciel, lui, n'existe pas encore. Une fiche, et il a son compte et ses objectifs.
+
+On part de la page Commerciaux, vide, et on ressort avec une fiche complète et un compte ouvert. Un seul formulaire, deux sections. Les informations personnelles d'abord : identité, fonction, coordonnées, photo. Puis les objectifs mensuels — sms, emails, rendez-vous, contrats. Ce sont eux qui feront ensuite le suivi de sa performance. Et à l'enregistrement, un message vous attend, qui mérite qu'on s'y arrête.
+
+Page Commerciaux. Aucune fiche pour l'instant. Bouton ajouter un utilisateur.
+
+Le formulaire s'ouvre sur les informations personnelles : nom, prénom, fonction, email, coordonnées, photo.
+
+Nom, prénom, puis la fonction : c'est elle qui s'affichera sous son nom dans la liste. Commercial terrain, par exemple.
+
+L'email compte plus que les autres : c'est son identifiant de connexion, et c'est là qu'arrive son mail d'activation. Mettez celui qu'il relève. Numéro, adresse et code postal suivent.
+
+La photo, par le bouton parcourir. Sur une équipe de dix, elle fait gagner du temps dans la liste.
+
+Puis les objectifs du mois : sms, emails, rendez-vous, contrats. Quatre compteurs, et on enregistre.
+
+La fiche est créée. Et le logiciel prévient : si votre boîte mail n'est pas branchée, le mail d'activation ne part pas. Le commercial définira son mot de passe lui-même, par mot de passe oublié.
+
+Votre équipe se remplit. Pour la relire sans ouvrir chaque fiche, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.
+
+Une fiche remplie une fois, et le suivi du mois se fait tout seul.

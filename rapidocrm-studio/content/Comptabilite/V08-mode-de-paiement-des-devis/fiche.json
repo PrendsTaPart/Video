@@ -1,0 +1,96 @@
+{
+  "fonctionnalite": "Renseigner le mode de paiement d'un devis",
+  "a_quoi_ca_sert": "Dire, sur le devis lui-même, par quel moyen le client réglera — espèce, carte bleue, virement ou chèque. Le devis part avec l'information, et quand il devient une facture, personne n'a à la redemander.",
+  "pour_qui": "Gérant ou commercial qui prépare un devis avant de l'envoyer",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir au moins un devis créé",
+    "Savoir par quel moyen le client va régler"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Mode de paiement",
+      "obligatoire": true,
+      "explication": "Le bloc du formulaire, marqué d'une étoile : espèce, carte bleu, virement ou chèque. Une seule case à la fois."
+    },
+    {
+      "nom": "Statut",
+      "obligatoire": true,
+      "explication": "Juste au-dessus du mode de paiement : accepté, en attente ou refusé."
+    },
+    {
+      "nom": "Email",
+      "obligatoire": false,
+      "explication": "La question « Envoyer votre devis directement depuis rapido CRM ? », oui ou non, posée entre le statut et le mode de paiement."
+    },
+    {
+      "nom": "Total HT, Total TVA, Total TTC, Remise, Total TTC final",
+      "obligatoire": false,
+      "explication": "Le récapitulatif affiché sous le mode de paiement. C'est le total TTC final, remise déduite, que le client réglera."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_devis",
+      "role": "Liste les devis avec filtres : statut, entreprise, recherche par destinataire, période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["statut", "entreprise_id", "q", "periode", "limit"],
+      "exemple_appel": { "statut": "en_attente", "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Renseigner le mode de paiement au moment où le client l'annonce, pas au moment de facturer.",
+    "Relire le total TTC final avant d'enregistrer : c'est lui, remise déduite, qu'il faudra retrouver sur le relevé."
+  ],
+  "erreurs_frequentes": [
+    "Chercher le mode de paiement dans le tableau des devis : il est dans le formulaire du devis, sous le statut.",
+    "Cocher un mode et quitter sans enregistrer : c'est le bouton modifier, en bas de la modale, qui valide."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Noter le moyen annoncé par le client",
+      "contexte": "Le client dit au téléphone qu'il réglera par virement.",
+      "action": "Ouvrez le devis en modification, cochez Virement dans le bloc Mode de paiement, puis enregistrez.",
+      "resultat_attendu": "Le devis porte le mode de paiement, et le bandeau confirme « Devis modifié avec succès »."
+    },
+    {
+      "titre": "Corriger un mode déjà choisi",
+      "contexte": "Le client change d'avis et passera par carte plutôt que par virement.",
+      "action": "Rouvrez le même devis en modification et cochez l'autre case.",
+      "resultat_attendu": "Le nouveau mode remplace l'ancien : une seule case reste cochée."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Un seul moyen à la fois",
+      "contenu": "Les quatre cases s'excluent. Cocher virement décoche carte bleu.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le récapitulatif est juste en dessous",
+      "contenu": "Total HT, TVA, TTC, remise et total TTC final s'affichent sous le bloc de paiement. Rien à calculer au moment de valider.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "L'envoi se décide dans la même modale",
+      "contenu": "La question « Envoyer votre devis directement depuis rapido CRM ? » se pose juste au-dessus du mode de paiement.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver les devis en attente",
+    "texte": "Liste-moi mes [nombre] devis en attente avec leur destinataire et leur montant.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_devis"
+  },
+  "sources": {
+    "fonctionnalite": "frame 00:09 — bloc « Mode de paiement* » de la modale du devis",
+    "a_quoi_ca_sert": "frames 00:09 à 00:13 — quatre cases, une seule cochée",
+    "champs_cles": "frames 00:09 et 00:13 — statut, email, mode de paiement, récapitulatif des totaux",
+    "outils_mcp": "schéma list_devis",
+    "erreurs_frequentes": "frames 00:05 (menu Actions du tableau) et 00:13 (bouton modifier en bas de modale)",
+    "cas_usage": "frames 00:09 à 00:17 — passage de Carte bleu à Virement, puis bandeau de confirmation",
+    "astuces": "frames 00:09 et 00:13"
+  },
+  "a_verifier": []
+}

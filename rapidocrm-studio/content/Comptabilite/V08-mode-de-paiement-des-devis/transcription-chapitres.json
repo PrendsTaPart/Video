@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Le client vous dit qu'il paiera par virement. Trois semaines plus tard, personne ne s'en souvient. Une case cochée sur le devis, et c'est écrit."
+  },
+  {
+    "timestamp_secondes": 8,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la liste des devis, et on ressort avec un moyen de paiement noté sur l'un d'eux. Le réglage est dans le devis, sous le statut : espèce, carte, virement ou chèque. Une seule case à la fois."
+  },
+  {
+    "timestamp_secondes": 19,
+    "titre": "Ouvrir la liste des devis",
+    "texte": "L'onglet devis, et la liste. Les trois points ouvrent le menu."
+  },
+  {
+    "timestamp_secondes": 23,
+    "titre": "Ouvrir le devis en modification",
+    "texte": "Modifier. Le formulaire se rouvre tel qu'il a été rempli."
+  },
+  {
+    "timestamp_secondes": 27,
+    "titre": "Descendre au mode de paiement",
+    "texte": "On descend au bloc Mode de paiement. Quatre moyens, et une étoile."
+  },
+  {
+    "timestamp_secondes": 31,
+    "titre": "Choisir le mode et enregistrer",
+    "texte": "Virement. Puis modifier, en bas."
+  },
+  {
+    "timestamp_secondes": 34,
+    "titre": "Lire la confirmation",
+    "texte": "Et c'est enregistré."
+  },
+  {
+    "timestamp_secondes": 36,
+    "titre": "Faites-le avec Claude",
+    "texte": "Le moyen est noté. Pour retrouver les devis qui attendent encore une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 50,
+    "titre": "À retenir",
+    "texte": "Un moyen de paiement noté sur le devis, c'est une question de moins à la facture."
+  }
+]

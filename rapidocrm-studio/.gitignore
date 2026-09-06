@@ -1,0 +1,14 @@
+node_modules/
+.env
+content/**/frames/
+content/**/voix/*.mp3
+content/**/out/*.mp4
+# ... sauf les masters livrés : ils sont versionnés pour que RapidoCMS
+# puisse les ingérer depuis leur URL raw GitHub (méthode FoodEatUp).
+!content/**/out/master-*.mp4
+content/**/tmp/
+assets/logos/*.png
+public/
+content/**/tmp/
+content/**/analyse-brute.json
+assets/avatar/manager.glb

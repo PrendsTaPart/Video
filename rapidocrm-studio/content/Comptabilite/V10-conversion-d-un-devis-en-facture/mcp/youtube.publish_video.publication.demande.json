@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V10-05-conversion-d-un-devis-en-facture.mp4",
+    "titre": "Convertir un devis en facture — RapidoCRM",
+    "description": "Signez le devis, la facture se crée toute seule.\n\nOn part d'un devis en attente, et on ressort avec une facture. Il n'y a pas de bouton « convertir » : c'est la signature du devis qui crée la facture, avec le même client et le même montant.\n\nChapitres\n00:00 Le devis est accepté. Et vous vous apprêtez à retaper les mêmes lignes dans une facture.\n00:09 Transformer un devis accepté en facture\n00:21 Ouvrir le devis à convertir\n00:25 Signer le devis et enregistrer\n00:34 Lire ce que le logiciel annonce\n00:39 Passer à l'onglet facture\n00:47 Retrouver la facture créée\n00:53 Faites-le avec Claude\n01:06 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] dernières factures avec leur statut et leur montant.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/05-conversion-d-un-devis-en-facture\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "devis",
+      "facture",
+      "conversion",
+      "CRM",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "Comptabilite"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V10-05-conversion-d-un-devis-en-facture-thumb.jpg",
+    "playlist": "RapidoCRM — Comptabilite",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T17:22:12.619Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

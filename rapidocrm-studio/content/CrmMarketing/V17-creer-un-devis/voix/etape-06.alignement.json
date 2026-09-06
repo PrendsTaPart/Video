@@ -1,0 +1,42 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "mode",
+    "debut": 0.186,
+    "fin": 0.372
+  },
+  {
+    "mot": "de",
+    "debut": 0.395,
+    "fin": 0.476
+  },
+  {
+    "mot": "règlement,",
+    "debut": 0.534,
+    "fin": 1.184
+  },
+  {
+    "mot": "les",
+    "debut": 1.254,
+    "fin": 1.37
+  },
+  {
+    "mot": "totaux,",
+    "debut": 1.405,
+    "fin": 1.904
+  },
+  {
+    "mot": "et",
+    "debut": 1.962,
+    "fin": 2.055
+  },
+  {
+    "mot": "enregistrer.",
+    "debut": 2.09,
+    "fin": 2.635
+  }
+]

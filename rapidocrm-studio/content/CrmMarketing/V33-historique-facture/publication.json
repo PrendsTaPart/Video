@@ -1,0 +1,15 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V33-06-historique-facture.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V33-06-historique-facture-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V33-06-historique-facture-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V33-06-historique-facture-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "38ad28182b1cd51d",
+      "video_vertical_url": "c82f6a6213227b3e",
+      "thumbnail_url": "fd559e42273ae61c",
+      "thumbnail_vertical_url": "43bfa6749e263960"
+    },
+    "publie_le": "2026-09-05T23:29:03.755Z"
+  }
+}

@@ -1,0 +1,831 @@
+{
+  "duree_totale": 54.791999999999994,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 7.536,
+      "texte": "Une carte de fidélité, d'habitude, ça passe par un imprimeur, un graphiste, et trois allers-retours. Ici, trois écrans suffisent.",
+      "mots": [
+        {
+          "mot": "Une",
+          "debut": 0,
+          "fin": 0.186
+        },
+        {
+          "mot": "carte",
+          "debut": 0.209,
+          "fin": 0.418
+        },
+        {
+          "mot": "de",
+          "debut": 0.441,
+          "fin": 0.511
+        },
+        {
+          "mot": "fidélité,",
+          "debut": 0.557,
+          "fin": 1.01
+        },
+        {
+          "mot": "d'habitude,",
+          "debut": 1.033,
+          "fin": 1.498
+        },
+        {
+          "mot": "ça",
+          "debut": 1.521,
+          "fin": 1.614
+        },
+        {
+          "mot": "passe",
+          "debut": 1.672,
+          "fin": 1.858
+        },
+        {
+          "mot": "par",
+          "debut": 1.881,
+          "fin": 2.02
+        },
+        {
+          "mot": "un",
+          "debut": 2.078,
+          "fin": 2.159
+        },
+        {
+          "mot": "imprimeur,",
+          "debut": 2.218,
+          "fin": 2.728
+        },
+        {
+          "mot": "un",
+          "debut": 2.763,
+          "fin": 2.868
+        },
+        {
+          "mot": "graphiste,",
+          "debut": 2.902,
+          "fin": 3.495
+        },
+        {
+          "mot": "et",
+          "debut": 3.704,
+          "fin": 3.82
+        },
+        {
+          "mot": "trois",
+          "debut": 3.878,
+          "fin": 4.122
+        },
+        {
+          "mot": "allers-retours.",
+          "debut": 4.18,
+          "fin": 4.818
+        },
+        {
+          "mot": "Ici,",
+          "debut": 5.062,
+          "fin": 5.433
+        },
+        {
+          "mot": "trois",
+          "debut": 5.48,
+          "fin": 5.724
+        },
+        {
+          "mot": "écrans",
+          "debut": 5.793,
+          "fin": 6.049
+        },
+        {
+          "mot": "suffisent.",
+          "debut": 6.072,
+          "fin": 6.548
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 7.536,
+      "duree": 10.656,
+      "texte": "On part de l'assistant de carte de fidélité, et on ressort avec une carte enregistrée. Trois étapes : la taille, le modèle, la relecture. La barre du haut dit toujours où on en est.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "part",
+          "debut": 0.209,
+          "fin": 0.348
+        },
+        {
+          "mot": "de",
+          "debut": 0.383,
+          "fin": 0.441
+        },
+        {
+          "mot": "l'assistant",
+          "debut": 0.476,
+          "fin": 0.848
+        },
+        {
+          "mot": "de",
+          "debut": 0.871,
+          "fin": 0.917
+        },
+        {
+          "mot": "carte",
+          "debut": 0.964,
+          "fin": 1.138
+        },
+        {
+          "mot": "de",
+          "debut": 1.161,
+          "fin": 1.231
+        },
+        {
+          "mot": "fidélité,",
+          "debut": 1.289,
+          "fin": 1.985
+        },
+        {
+          "mot": "et",
+          "debut": 2.159,
+          "fin": 2.299
+        },
+        {
+          "mot": "on",
+          "debut": 2.345,
+          "fin": 2.415
+        },
+        {
+          "mot": "ressort",
+          "debut": 2.485,
+          "fin": 2.891
+        },
+        {
+          "mot": "avec",
+          "debut": 2.914,
+          "fin": 3.123
+        },
+        {
+          "mot": "une",
+          "debut": 3.274,
+          "fin": 3.402
+        },
+        {
+          "mot": "carte",
+          "debut": 3.437,
+          "fin": 3.68
+        },
+        {
+          "mot": "enregistrée.",
+          "debut": 3.704,
+          "fin": 4.319
+        },
+        {
+          "mot": "Trois",
+          "debut": 4.4,
+          "fin": 4.679
+        },
+        {
+          "mot": "étapes",
+          "debut": 4.748,
+          "fin": 5.097
+        },
+        {
+          "mot": ":",
+          "debut": 5.143,
+          "fin": 5.178
+        },
+        {
+          "mot": "la",
+          "debut": 5.329,
+          "fin": 5.433
+        },
+        {
+          "mot": "taille,",
+          "debut": 5.503,
+          "fin": 5.851
+        },
+        {
+          "mot": "le",
+          "debut": 6.002,
+          "fin": 6.084
+        },
+        {
+          "mot": "modèle,",
+          "debut": 6.13,
+          "fin": 6.583
+        },
+        {
+          "mot": "la",
+          "debut": 6.734,
+          "fin": 6.815
+        },
+        {
+          "mot": "relecture.",
+          "debut": 6.873,
+          "fin": 7.477
+        },
+        {
+          "mot": "La",
+          "debut": 7.721,
+          "fin": 7.837
+        },
+        {
+          "mot": "barre",
+          "debut": 7.895,
+          "fin": 8.069
+        },
+        {
+          "mot": "du",
+          "debut": 8.092,
+          "fin": 8.185
+        },
+        {
+          "mot": "haut",
+          "debut": 8.208,
+          "fin": 8.324
+        },
+        {
+          "mot": "dit",
+          "debut": 8.348,
+          "fin": 8.464
+        },
+        {
+          "mot": "toujours",
+          "debut": 8.499,
+          "fin": 8.905
+        },
+        {
+          "mot": "où",
+          "debut": 8.963,
+          "fin": 9.16
+        },
+        {
+          "mot": "on",
+          "debut": 9.183,
+          "fin": 9.253
+        },
+        {
+          "mot": "en",
+          "debut": 9.323,
+          "fin": 9.381
+        },
+        {
+          "mot": "est.",
+          "debut": 9.451,
+          "fin": 9.613
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 18.192,
+      "duree": 4.152,
+      "texte": "L'assistant s'ouvre sur sa première étape : la taille du template.",
+      "mots": [
+        {
+          "mot": "L'assistant",
+          "debut": 0,
+          "fin": 0.534
+        },
+        {
+          "mot": "s'ouvre",
+          "debut": 0.569,
+          "fin": 0.824
+        },
+        {
+          "mot": "sur",
+          "debut": 0.848,
+          "fin": 0.964
+        },
+        {
+          "mot": "sa",
+          "debut": 0.998,
+          "fin": 1.08
+        },
+        {
+          "mot": "première",
+          "debut": 1.126,
+          "fin": 1.451
+        },
+        {
+          "mot": "étape",
+          "debut": 1.474,
+          "fin": 1.8
+        },
+        {
+          "mot": ":",
+          "debut": 1.823,
+          "fin": 1.869
+        },
+        {
+          "mot": "la",
+          "debut": 2.078,
+          "fin": 2.171
+        },
+        {
+          "mot": "taille",
+          "debut": 2.229,
+          "fin": 2.45
+        },
+        {
+          "mot": "du",
+          "debut": 2.473,
+          "fin": 2.554
+        },
+        {
+          "mot": "template.",
+          "debut": 2.601,
+          "fin": 3.181
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 22.344,
+      "duree": 4.656,
+      "texte": "Trois formats, avec leurs millimètres. Le standard est celui d'une carte bancaire.",
+      "mots": [
+        {
+          "mot": "Trois",
+          "debut": 0,
+          "fin": 0.29
+        },
+        {
+          "mot": "formats,",
+          "debut": 0.325,
+          "fin": 0.708
+        },
+        {
+          "mot": "avec",
+          "debut": 0.801,
+          "fin": 1.045
+        },
+        {
+          "mot": "leurs",
+          "debut": 1.103,
+          "fin": 1.242
+        },
+        {
+          "mot": "millimètres.",
+          "debut": 1.277,
+          "fin": 1.858
+        },
+        {
+          "mot": "Le",
+          "debut": 2.009,
+          "fin": 2.113
+        },
+        {
+          "mot": "standard",
+          "debut": 2.148,
+          "fin": 2.519
+        },
+        {
+          "mot": "est",
+          "debut": 2.543,
+          "fin": 2.612
+        },
+        {
+          "mot": "celui",
+          "debut": 2.635,
+          "fin": 2.856
+        },
+        {
+          "mot": "d'une",
+          "debut": 2.891,
+          "fin": 3.042
+        },
+        {
+          "mot": "carte",
+          "debut": 3.065,
+          "fin": 3.274
+        },
+        {
+          "mot": "bancaire.",
+          "debut": 3.297,
+          "fin": 3.75
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 27,
+      "duree": 3.816,
+      "texte": "Puis le modèle. Voir l'agrandit, Choisir le retient.",
+      "mots": [
+        {
+          "mot": "Puis",
+          "debut": 0,
+          "fin": 0.209
+        },
+        {
+          "mot": "le",
+          "debut": 0.232,
+          "fin": 0.313
+        },
+        {
+          "mot": "modèle.",
+          "debut": 0.36,
+          "fin": 0.789
+        },
+        {
+          "mot": "Voir",
+          "debut": 0.871,
+          "fin": 1.068
+        },
+        {
+          "mot": "l'agrandit,",
+          "debut": 1.115,
+          "fin": 1.788
+        },
+        {
+          "mot": "Choisir",
+          "debut": 1.869,
+          "fin": 2.276
+        },
+        {
+          "mot": "le",
+          "debut": 2.322,
+          "fin": 2.38
+        },
+        {
+          "mot": "retient.",
+          "debut": 2.438,
+          "fin": 2.891
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 30.816,
+      "duree": 4.008,
+      "texte": "Le récapitulatif reprend tout. Chaque ligne reste modifiable.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "récapitulatif",
+          "debut": 0.209,
+          "fin": 0.952
+        },
+        {
+          "mot": "reprend",
+          "debut": 0.998,
+          "fin": 1.3
+        },
+        {
+          "mot": "tout.",
+          "debut": 1.335,
+          "fin": 1.533
+        },
+        {
+          "mot": "Chaque",
+          "debut": 1.591,
+          "fin": 1.916
+        },
+        {
+          "mot": "ligne",
+          "debut": 1.939,
+          "fin": 2.159
+        },
+        {
+          "mot": "reste",
+          "debut": 2.218,
+          "fin": 2.438
+        },
+        {
+          "mot": "modifiable.",
+          "debut": 2.485,
+          "fin": 3.019
+        }
+      ]
+    },
+    {
+      "id": "etape-05",
+      "fichier": "voix/etape-05.mp3",
+      "debut": 34.824,
+      "duree": 3.168,
+      "texte": "Et la page des programmes compte clients et points.",
+      "mots": [
+        {
+          "mot": "Et",
+          "debut": 0,
+          "fin": 0.128
+        },
+        {
+          "mot": "la",
+          "debut": 0.163,
+          "fin": 0.221
+        },
+        {
+          "mot": "page",
+          "debut": 0.279,
+          "fin": 0.464
+        },
+        {
+          "mot": "des",
+          "debut": 0.488,
+          "fin": 0.58
+        },
+        {
+          "mot": "programmes",
+          "debut": 0.604,
+          "fin": 1.033
+        },
+        {
+          "mot": "compte",
+          "debut": 1.08,
+          "fin": 1.37
+        },
+        {
+          "mot": "clients",
+          "debut": 1.405,
+          "fin": 1.741
+        },
+        {
+          "mot": "et",
+          "debut": 1.8,
+          "fin": 1.892
+        },
+        {
+          "mot": "points.",
+          "debut": 1.916,
+          "fin": 2.206
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 37.992,
+      "duree": 12.84,
+      "texte": "Une carte, ce sont des clients et des points. Pour en avoir le compte, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Une",
+          "debut": 0,
+          "fin": 0.186
+        },
+        {
+          "mot": "carte,",
+          "debut": 0.221,
+          "fin": 0.627
+        },
+        {
+          "mot": "ce",
+          "debut": 0.685,
+          "fin": 0.766
+        },
+        {
+          "mot": "sont",
+          "debut": 0.824,
+          "fin": 0.952
+        },
+        {
+          "mot": "des",
+          "debut": 0.975,
+          "fin": 1.068
+        },
+        {
+          "mot": "clients",
+          "debut": 1.091,
+          "fin": 1.474
+        },
+        {
+          "mot": "et",
+          "debut": 1.498,
+          "fin": 1.591
+        },
+        {
+          "mot": "des",
+          "debut": 1.625,
+          "fin": 1.73
+        },
+        {
+          "mot": "points.",
+          "debut": 1.765,
+          "fin": 2.055
+        },
+        {
+          "mot": "Pour",
+          "debut": 2.229,
+          "fin": 2.461
+        },
+        {
+          "mot": "en",
+          "debut": 2.485,
+          "fin": 2.531
+        },
+        {
+          "mot": "avoir",
+          "debut": 2.589,
+          "fin": 2.763
+        },
+        {
+          "mot": "le",
+          "debut": 2.798,
+          "fin": 2.868
+        },
+        {
+          "mot": "compte,",
+          "debut": 2.926,
+          "fin": 3.274
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 3.39,
+          "fin": 4.249
+        },
+        {
+          "mot": "parle",
+          "debut": 4.331,
+          "fin": 4.609
+        },
+        {
+          "mot": "à",
+          "debut": 4.656,
+          "fin": 4.69
+        },
+        {
+          "mot": "Claude",
+          "debut": 4.783,
+          "fin": 5.085
+        },
+        {
+          "mot": ":",
+          "debut": 5.178,
+          "fin": 5.294
+        },
+        {
+          "mot": "vous",
+          "debut": 5.538,
+          "fin": 5.666
+        },
+        {
+          "mot": "demandez",
+          "debut": 5.7,
+          "fin": 6.037
+        },
+        {
+          "mot": "en",
+          "debut": 6.072,
+          "fin": 6.118
+        },
+        {
+          "mot": "français,",
+          "debut": 6.177,
+          "fin": 6.757
+        },
+        {
+          "mot": "il",
+          "debut": 6.908,
+          "fin": 7.059
+        },
+        {
+          "mot": "lit",
+          "debut": 7.117,
+          "fin": 7.291
+        },
+        {
+          "mot": "vos",
+          "debut": 7.314,
+          "fin": 7.43
+        },
+        {
+          "mot": "données",
+          "debut": 7.454,
+          "fin": 7.814
+        },
+        {
+          "mot": "et",
+          "debut": 7.906,
+          "fin": 8.069
+        },
+        {
+          "mot": "répond.",
+          "debut": 8.127,
+          "fin": 8.545
+        },
+        {
+          "mot": "Copiez",
+          "debut": 8.754,
+          "fin": 9.172
+        },
+        {
+          "mot": "ce",
+          "debut": 9.195,
+          "fin": 9.3
+        },
+        {
+          "mot": "prompt,",
+          "debut": 9.346,
+          "fin": 9.787
+        },
+        {
+          "mot": "remplacez",
+          "debut": 9.961,
+          "fin": 10.542
+        },
+        {
+          "mot": "ce",
+          "debut": 10.623,
+          "fin": 10.716
+        },
+        {
+          "mot": "qui",
+          "debut": 10.774,
+          "fin": 10.913
+        },
+        {
+          "mot": "est",
+          "debut": 10.971,
+          "fin": 11.064
+        },
+        {
+          "mot": "entre",
+          "debut": 11.146,
+          "fin": 11.355
+        },
+        {
+          "mot": "crochets.",
+          "debut": 11.401,
+          "fin": 11.9
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 50.831999999999994,
+      "duree": 3.96,
+      "texte": "Trois écrans, une carte : la fidélité n'attend plus l'imprimeur.",
+      "mots": [
+        {
+          "mot": "Trois",
+          "debut": 0,
+          "fin": 0.279
+        },
+        {
+          "mot": "écrans,",
+          "debut": 0.348,
+          "fin": 0.755
+        },
+        {
+          "mot": "une",
+          "debut": 0.813,
+          "fin": 0.975
+        },
+        {
+          "mot": "carte",
+          "debut": 0.998,
+          "fin": 1.324
+        },
+        {
+          "mot": ":",
+          "debut": 1.358,
+          "fin": 1.382
+        },
+        {
+          "mot": "la",
+          "debut": 1.509,
+          "fin": 1.591
+        },
+        {
+          "mot": "fidélité",
+          "debut": 1.637,
+          "fin": 2.055
+        },
+        {
+          "mot": "n'attend",
+          "debut": 2.101,
+          "fin": 2.334
+        },
+        {
+          "mot": "plus",
+          "debut": 2.357,
+          "fin": 2.473
+        },
+        {
+          "mot": "l'imprimeur.",
+          "debut": 2.496,
+          "fin": 3.03
+        }
+      ]
+    }
+  ]
+}

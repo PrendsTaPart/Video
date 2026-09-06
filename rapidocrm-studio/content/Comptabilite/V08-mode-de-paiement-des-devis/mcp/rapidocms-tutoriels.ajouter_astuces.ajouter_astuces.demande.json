@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "rapido_ac_8d2a14623245e47f0da39b8606e3a055952d5773bf699f27",
+    "slug": "05-mode-de-paiement-des-devis",
+    "astuces": [
+      {
+        "titre": "Un seul moyen à la fois",
+        "texte": "Les quatre cases s'excluent. Cocher virement décoche carte bleu.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Le récapitulatif est juste en dessous",
+        "texte": "Total HT, TVA, TTC, remise et total TTC final s'affichent sous le bloc de paiement. Rien à calculer au moment de valider.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "L'envoi se décide dans la même modale",
+        "texte": "La question « Envoyer votre devis directement depuis rapido CRM ? » se pose juste au-dessus du mode de paiement.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-05T17:16:50.209Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

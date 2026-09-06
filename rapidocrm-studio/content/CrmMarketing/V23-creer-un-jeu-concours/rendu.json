@@ -1,0 +1,88 @@
+{
+  "duree": 64.76666666666667,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V23-creer-un-jeu-concours/out/master-16x9.mp4",
+      "octets": 12872533
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V23-creer-un-jeu-concours/out/master-9x16.mp4",
+      "octets": 9299984
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.866666666666667
+    },
+    {
+      "nom": "titre",
+      "debut": 9.866666666666667,
+      "fin": 21.166666666666668
+    },
+    {
+      "nom": "demo",
+      "debut": 21.166666666666668,
+      "fin": 46.733333333333334
+    },
+    {
+      "nom": "claude",
+      "debut": 46.733333333333334,
+      "fin": 59.46666666666667
+    },
+    {
+      "nom": "punchline",
+      "debut": 59.46666666666667,
+      "fin": 64.76666666666667
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Une roue à faire tourner, une carte à gratter : ça attire, mais ça se code, et c'est là que le projet meurt."
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Créer un jeu concours"
+    },
+    {
+      "timecode": "00:21",
+      "titre": "Ouvrir les jeux depuis la fiche entreprise"
+    },
+    {
+      "timecode": "00:23",
+      "titre": "Choisir un modèle de jeu"
+    },
+    {
+      "timecode": "00:27",
+      "titre": "Les trois étapes de personnalisation"
+    },
+    {
+      "timecode": "00:31",
+      "titre": "Régler l'apparence et voir l'aperçu"
+    },
+    {
+      "timecode": "00:38",
+      "titre": "Décrire les lots à gagner"
+    },
+    {
+      "timecode": "00:44",
+      "titre": "Revenir à la fiche"
+    },
+    {
+      "timecode": "00:46",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:59",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

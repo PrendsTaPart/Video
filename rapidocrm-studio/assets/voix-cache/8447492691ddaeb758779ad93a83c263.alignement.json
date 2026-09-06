@@ -1,0 +1,52 @@
+[
+  {
+    "mot": "Deux",
+    "debut": 0,
+    "fin": 0.221
+  },
+  {
+    "mot": "filtres,",
+    "debut": 0.255,
+    "fin": 0.65
+  },
+  {
+    "mot": "et",
+    "debut": 0.975,
+    "fin": 1.068
+  },
+  {
+    "mot": "la",
+    "debut": 1.103,
+    "fin": 1.161
+  },
+  {
+    "mot": "bonne",
+    "debut": 1.219,
+    "fin": 1.37
+  },
+  {
+    "mot": "facture",
+    "debut": 1.393,
+    "fin": 1.753
+  },
+  {
+    "mot": "est",
+    "debut": 1.776,
+    "fin": 1.869
+  },
+  {
+    "mot": "sous",
+    "debut": 1.904,
+    "fin": 2.09
+  },
+  {
+    "mot": "vos",
+    "debut": 2.113,
+    "fin": 2.241
+  },
+  {
+    "mot": "yeux.",
+    "debut": 2.287,
+    "fin": 2.508
+  }
+]

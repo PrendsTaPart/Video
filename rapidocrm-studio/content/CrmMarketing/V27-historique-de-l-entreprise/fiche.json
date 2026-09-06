@@ -1,0 +1,92 @@
+{
+  "fonctionnalite": "Ouvrir l'historique d'une entreprise",
+  "a_quoi_ca_sert": "Rassembler en une page tout ce qui s'est passé avec un client : e-mails, SMS, rendez-vous, contrats, documents, factures, devis, dépenses et notes. Chaque journal s'ouvre d'un clic.",
+  "pour_qui": "Gérant ou commercial qui reprend un dossier client",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert la fiche d'une entreprise cliente"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Accordéon Entreprise",
+      "obligatoire": false,
+      "explication": "Le premier bloc du panneau de droite. Il réunit « A propos de l'entreprise », « avis utilisateurs », « historique de l'entreprise » et « Supprimer l'entreprise »."
+    },
+    {
+      "nom": "Les neuf journaux",
+      "obligatoire": false,
+      "explication": "La page Historique aligne neuf cartes : emails, SMS, RDV, contrats, documents, factures, devis, dépenses et notes. Chacune porte un bouton Consulter."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "get_entreprise",
+      "role": "Détail complet d'une entreprise : tous les champs de la fiche, pas seulement le nom et le statut. Lecture seule.",
+      "parametres_obligatoires": ["id"],
+      "parametres_optionnels": [],
+      "exemple_appel": { "id": 10 }
+    },
+    {
+      "nom": "get_interaction_stats",
+      "role": "Statistiques d'interactions par type — e-mails, SMS, appels, rendez-vous — sur une période, éventuellement pour une seule entreprise. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["entreprise_id", "periode"],
+      "exemple_appel": { "periode": "month" }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Passer par l'historique avant de rappeler un client : neuf journaux valent mieux qu'une mémoire.",
+    "Se souvenir que « Supprimer l'entreprise » vit dans le même accordéon que l'historique : viser la bonne ligne."
+  ],
+  "erreurs_frequentes": [
+    "Chercher l'historique dans le bloc Communication : il est dans l'accordéon Entreprise.",
+    "S'arrêter à la première rangée de cartes : six autres journaux attendent plus bas."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Reprendre un dossier avant un appel",
+      "contexte": "Un client rappelle après plusieurs semaines.",
+      "action": "Ouvrez sa fiche, dépliez l'accordéon Entreprise et cliquez sur « historique de l'entreprise ».",
+      "resultat_attendu": "Les neuf journaux s'affichent, prêts à être consultés."
+    },
+    {
+      "titre": "Retrouver le dernier document envoyé",
+      "contexte": "Il faut vérifier ce qui a été transmis.",
+      "action": "Depuis la page Historique, descendez à la carte « Historique des documents » et cliquez sur Consulter.",
+      "resultat_attendu": "Le journal des documents s'ouvre."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Neuf journaux, un seul écran",
+      "contenu": "Trois rangées de trois cartes : tout l'historique du client tient sur une page.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le même bouton partout",
+      "contenu": "Chaque carte porte le même bouton Consulter : rien de nouveau à apprendre d'un journal à l'autre.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Quatre entrées dans l'accordéon",
+      "contenu": "A propos, avis utilisateurs, historique, suppression : le bloc Entreprise réunit ce qui touche à la fiche elle-même.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Compter les échanges avec un client",
+    "texte": "Donne-moi les statistiques d'interactions du mois pour l'entreprise numéro [identifiant].",
+    "variables": ["identifiant"],
+    "outil_mcp": "get_interaction_stats"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:05 à 00:08 — accordéon Entreprise puis page Historique",
+    "a_quoi_ca_sert": "frames 00:08 et 00:11 — les neuf cartes de journaux",
+    "champs_cles": "frames 00:05, 00:08 et 00:11",
+    "outils_mcp": "schémas get_entreprise et get_interaction_stats",
+    "erreurs_frequentes": "frames 00:05 (accordéon Entreprise) et 00:11 (seconde rangée de cartes)",
+    "cas_usage": "frames 00:05 à 00:14",
+    "astuces": "frames 00:08 et 00:05"
+  },
+  "a_verifier": []
+}

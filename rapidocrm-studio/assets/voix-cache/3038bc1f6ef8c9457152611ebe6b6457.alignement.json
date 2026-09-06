@@ -1,0 +1,227 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "part",
+    "debut": 0.174,
+    "fin": 0.325
+  },
+  {
+    "mot": "de",
+    "debut": 0.348,
+    "fin": 0.406
+  },
+  {
+    "mot": "la",
+    "debut": 0.453,
+    "fin": 0.511
+  },
+  {
+    "mot": "page",
+    "debut": 0.569,
+    "fin": 0.801
+  },
+  {
+    "mot": "Historique,",
+    "debut": 0.824,
+    "fin": 1.451
+  },
+  {
+    "mot": "et",
+    "debut": 1.521,
+    "fin": 1.66
+  },
+  {
+    "mot": "on",
+    "debut": 1.695,
+    "fin": 1.753
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.823,
+    "fin": 2.276
+  },
+  {
+    "mot": "avec",
+    "debut": 2.31,
+    "fin": 2.577
+  },
+  {
+    "mot": "la",
+    "debut": 2.624,
+    "fin": 2.67
+  },
+  {
+    "mot": "facture",
+    "debut": 2.728,
+    "fin": 3.077
+  },
+  {
+    "mot": "ouverte.",
+    "debut": 3.123,
+    "fin": 3.646
+  },
+  {
+    "mot": "Le",
+    "debut": 3.971,
+    "fin": 4.087
+  },
+  {
+    "mot": "tableau",
+    "debut": 4.133,
+    "fin": 4.447
+  },
+  {
+    "mot": "donne",
+    "debut": 4.516,
+    "fin": 4.725
+  },
+  {
+    "mot": "le",
+    "debut": 4.76,
+    "fin": 4.818
+  },
+  {
+    "mot": "statut",
+    "debut": 4.865,
+    "fin": 5.341
+  },
+  {
+    "mot": "et",
+    "debut": 5.375,
+    "fin": 5.492
+  },
+  {
+    "mot": "le",
+    "debut": 5.526,
+    "fin": 5.584
+  },
+  {
+    "mot": "total",
+    "debut": 5.631,
+    "fin": 6.026
+  },
+  {
+    "mot": ";",
+    "debut": 6.06,
+    "fin": 6.107
+  },
+  {
+    "mot": "l'icône",
+    "debut": 6.281,
+    "fin": 6.769
+  },
+  {
+    "mot": "en",
+    "debut": 6.803,
+    "fin": 6.908
+  },
+  {
+    "mot": "bout",
+    "debut": 6.954,
+    "fin": 7.094
+  },
+  {
+    "mot": "de",
+    "debut": 7.117,
+    "fin": 7.187
+  },
+  {
+    "mot": "ligne",
+    "debut": 7.233,
+    "fin": 7.5
+  },
+  {
+    "mot": "ouvre",
+    "debut": 7.581,
+    "fin": 7.895
+  },
+  {
+    "mot": "le",
+    "debut": 7.918,
+    "fin": 7.976
+  },
+  {
+    "mot": "document,",
+    "debut": 8.011,
+    "fin": 8.603
+  },
+  {
+    "mot": "prêt",
+    "debut": 8.847,
+    "fin": 9.114
+  },
+  {
+    "mot": "à",
+    "debut": 9.137,
+    "fin": 9.172
+  },
+  {
+    "mot": "télécharger.",
+    "debut": 9.242,
+    "fin": 9.903
+  },
+  {
+    "mot": "Rien",
+    "debut": 10.228,
+    "fin": 10.519
+  },
+  {
+    "mot": "à",
+    "debut": 10.577,
+    "fin": 10.6
+  },
+  {
+    "mot": "recalculer,",
+    "debut": 10.646,
+    "fin": 11.378
+  },
+  {
+    "mot": "rien",
+    "debut": 11.656,
+    "fin": 11.947
+  },
+  {
+    "mot": "à",
+    "debut": 12.005,
+    "fin": 12.028
+  },
+  {
+    "mot": "reconstituer",
+    "debut": 12.074,
+    "fin": 12.841
+  },
+  {
+    "mot": ":",
+    "debut": 12.899,
+    "fin": 12.945
+  },
+  {
+    "mot": "la",
+    "debut": 13.189,
+    "fin": 13.27
+  },
+  {
+    "mot": "facture",
+    "debut": 13.328,
+    "fin": 13.746
+  },
+  {
+    "mot": "est",
+    "debut": 13.793,
+    "fin": 13.897
+  },
+  {
+    "mot": "déjà",
+    "debut": 13.92,
+    "fin": 14.141
+  },
+  {
+    "mot": "écrite.",
+    "debut": 14.164,
+    "fin": 14.629
+  }
+]

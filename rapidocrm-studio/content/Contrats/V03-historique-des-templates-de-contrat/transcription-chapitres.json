@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Un client vous demande où en est son contrat. Vous cherchez dans vos mails. Trois chiffres, et vous savez qui relancer."
+  },
+  {
+    "timestamp_secondes": 7,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la page Contrat, et on ressort en sachant exactement où en est chaque document. Trois compteurs en haut, un tableau en dessous, et le contrat lui-même qu'on rouvre tel qu'il est parti chez le client."
+  },
+  {
+    "timestamp_secondes": 19,
+    "titre": "Lire les trois compteurs",
+    "texte": "Trois compteurs : créés, signés, en attente."
+  },
+  {
+    "timestamp_secondes": 22,
+    "titre": "Retrouver un contrat dans l'historique",
+    "texte": "En dessous, le tableau."
+  },
+  {
+    "timestamp_secondes": 23,
+    "titre": "Ouvrir le contrat généré",
+    "texte": "On ouvre le contrat. Quatre pages, jusqu'aux deux cases de signature."
+  },
+  {
+    "timestamp_secondes": 27,
+    "titre": "Revenir à la liste",
+    "texte": "Retour à la liste."
+  },
+  {
+    "timestamp_secondes": 29,
+    "titre": "Faites-le avec Claude",
+    "texte": "Vous savez où en est chaque contrat. Pour faire le tri sans ouvrir la page, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le statut voulu."
+  },
+  {
+    "timestamp_secondes": 45,
+    "titre": "À retenir",
+    "texte": "Trois chiffres en haut, et vous savez qui relancer. Sans chercher dans vos mails."
+  }
+]

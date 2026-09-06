@@ -1,0 +1,92 @@
+[
+  {
+    "mot": "L'entreprise",
+    "debut": 0,
+    "fin": 0.592
+  },
+  {
+    "mot": "d'abord,",
+    "debut": 0.615,
+    "fin": 1.103
+  },
+  {
+    "mot": "prise",
+    "debut": 1.254,
+    "fin": 1.509
+  },
+  {
+    "mot": "dans",
+    "debut": 1.533,
+    "fin": 1.649
+  },
+  {
+    "mot": "vos",
+    "debut": 1.672,
+    "fin": 1.765
+  },
+  {
+    "mot": "clients.",
+    "debut": 1.788,
+    "fin": 2.136
+  },
+  {
+    "mot": "Puis",
+    "debut": 2.287,
+    "fin": 2.45
+  },
+  {
+    "mot": "le",
+    "debut": 2.473,
+    "fin": 2.531
+  },
+  {
+    "mot": "produit,",
+    "debut": 2.577,
+    "fin": 3.077
+  },
+  {
+    "mot": "avec",
+    "debut": 3.193,
+    "fin": 3.425
+  },
+  {
+    "mot": "son",
+    "debut": 3.46,
+    "fin": 3.587
+  },
+  {
+    "mot": "prix.",
+    "debut": 3.622,
+    "fin": 3.901
+  },
+  {
+    "mot": "C'est",
+    "debut": 4.18,
+    "fin": 4.389
+  },
+  {
+    "mot": "lui",
+    "debut": 4.412,
+    "fin": 4.516
+  },
+  {
+    "mot": "qui",
+    "debut": 4.563,
+    "fin": 4.656
+  },
+  {
+    "mot": "remplit",
+    "debut": 4.69,
+    "fin": 4.946
+  },
+  {
+    "mot": "la",
+    "debut": 4.969,
+    "fin": 5.027
+  },
+  {
+    "mot": "facture.",
+    "debut": 5.085,
+    "fin": 5.55
+  }
+]

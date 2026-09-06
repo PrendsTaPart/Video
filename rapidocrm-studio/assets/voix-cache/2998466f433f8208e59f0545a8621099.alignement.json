@@ -1,0 +1,127 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "client",
+    "debut": 0.186,
+    "fin": 0.418
+  },
+  {
+    "mot": "vous",
+    "debut": 0.441,
+    "fin": 0.569
+  },
+  {
+    "mot": "dit",
+    "debut": 0.592,
+    "fin": 0.766
+  },
+  {
+    "mot": "qu'il",
+    "debut": 0.789,
+    "fin": 0.906
+  },
+  {
+    "mot": "paiera",
+    "debut": 0.964,
+    "fin": 1.196
+  },
+  {
+    "mot": "par",
+    "debut": 1.242,
+    "fin": 1.358
+  },
+  {
+    "mot": "virement.",
+    "debut": 1.393,
+    "fin": 1.8
+  },
+  {
+    "mot": "Trois",
+    "debut": 1.858,
+    "fin": 2.136
+  },
+  {
+    "mot": "semaines",
+    "debut": 2.159,
+    "fin": 2.461
+  },
+  {
+    "mot": "plus",
+    "debut": 2.485,
+    "fin": 2.624
+  },
+  {
+    "mot": "tard,",
+    "debut": 2.659,
+    "fin": 2.961
+  },
+  {
+    "mot": "personne",
+    "debut": 3.019,
+    "fin": 3.39
+  },
+  {
+    "mot": "ne",
+    "debut": 3.413,
+    "fin": 3.471
+  },
+  {
+    "mot": "s'en",
+    "debut": 3.529,
+    "fin": 3.646
+  },
+  {
+    "mot": "souvient.",
+    "debut": 3.68,
+    "fin": 4.063
+  },
+  {
+    "mot": "Une",
+    "debut": 4.191,
+    "fin": 4.377
+  },
+  {
+    "mot": "case",
+    "debut": 4.4,
+    "fin": 4.644
+  },
+  {
+    "mot": "cochée",
+    "debut": 4.679,
+    "fin": 5.097
+  },
+  {
+    "mot": "sur",
+    "debut": 5.213,
+    "fin": 5.41
+  },
+  {
+    "mot": "le",
+    "debut": 5.445,
+    "fin": 5.515
+  },
+  {
+    "mot": "devis,",
+    "debut": 5.561,
+    "fin": 5.921
+  },
+  {
+    "mot": "et",
+    "debut": 5.968,
+    "fin": 6.084
+  },
+  {
+    "mot": "c'est",
+    "debut": 6.118,
+    "fin": 6.258
+  },
+  {
+    "mot": "écrit.",
+    "debut": 6.327,
+    "fin": 6.687
+  }
+]

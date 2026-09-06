@@ -1,0 +1,111 @@
+{
+  "fonctionnalite": "Créer un devis depuis la fiche d'une entreprise",
+  "a_quoi_ca_sert": "Établir un devis sans quitter la fiche du client : on choisit un produit du catalogue et le logiciel remplit les montants. Le devis rejoint ensuite l'activité de l'entreprise, daté et horodaté.",
+  "pour_qui": "Gérant ou commercial qui chiffre une prestation pour un client existant",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert la fiche d'une entreprise cliente",
+    "Avoir au moins un produit au catalogue"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Choisir une charte graphique",
+      "obligatoire": true,
+      "explication": "La rangée de pastilles de couleur du bloc Design, au-dessus des informations. Elle habille le devis."
+    },
+    {
+      "nom": "Choisir un produit",
+      "obligatoire": true,
+      "explication": "Les cartes produits, avec leur nom et leur prix hors taxes. C'est le produit coché qui remplit les montants."
+    },
+    {
+      "nom": "Date de début et Date de fin",
+      "obligatoire": true,
+      "explication": "Les deux dates de validité de la prestation, sous les cartes produits."
+    },
+    {
+      "nom": "Prix HT, TVA, TTC, Remise, Prix avec remise",
+      "obligatoire": false,
+      "explication": "Le bloc de montants. Ils se calculent depuis le produit choisi ; seule la remise se saisit."
+    },
+    {
+      "nom": "Autre délai",
+      "obligatoire": true,
+      "explication": "Le délai de paiement, choisi dans une liste — 14 jours par exemple."
+    },
+    {
+      "nom": "Statut",
+      "obligatoire": true,
+      "explication": "Accepté, En attente ou Refusé, sous les mentions légales."
+    },
+    {
+      "nom": "Mode de paiement",
+      "obligatoire": true,
+      "explication": "Espèce, Carte bleu, Virement ou Chèque. Une seule case à la fois."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_devis",
+      "role": "Liste les devis avec filtres : statut, entreprise, recherche par destinataire, période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["statut", "entreprise_id", "q", "periode", "limit"],
+      "exemple_appel": { "statut": "en_attente", "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Choisir le produit avant de regarder les montants : c'est lui qui les remplit, pas l'inverse.",
+    "Relire le total TTC en bas de la fenêtre avant d'enregistrer : c'est le chiffre que le client verra."
+  ],
+  "erreurs_frequentes": [
+    "Taper le prix à la main : les montants viennent du produit du catalogue et se recalculent tout seuls.",
+    "Cocher un statut et fermer la fenêtre : c'est le bouton Enregistrer, tout en bas, qui crée le devis."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Chiffrer une prestation au catalogue",
+      "contexte": "Le client demande un devis pour une identité visuelle.",
+      "action": "Ouvrez Créer un devis depuis le panneau Finance, cochez le produit, fixez les dates, choisissez le délai de paiement et le mode de règlement, puis enregistrez.",
+      "resultat_attendu": "Le devis apparaît dans les activités récentes de la fiche, avec sa date et son heure."
+    },
+    {
+      "titre": "Accorder une remise",
+      "contexte": "Le client obtient un geste commercial.",
+      "action": "Saisissez le pourcentage dans le champ Remise et lisez le prix avec remise juste en dessous.",
+      "resultat_attendu": "Le prix avec remise se met à jour sans toucher au prix HT."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le devis part de la fiche client",
+      "contenu": "Le panneau Finance de la fiche propose Créer un devis, Créer une facture et Créer un contrat : le client est déjà rattaché.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le logo se reprend du client",
+      "contenu": "Le bloc Design ouvre le devis avec le logo de l'entreprise et une charte graphique à choisir.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "L'envoi se décide dans la même fenêtre",
+      "contenu": "La question « Envoyer votre devis directement depuis rapido CRM? » se pose entre le statut et le mode de paiement.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver les devis en attente",
+    "texte": "Liste-moi mes [nombre] devis en attente avec leur destinataire et leur montant.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_devis"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 à 00:06 — panneau Finance puis bloc Design de la fenêtre Créer un devis",
+    "a_quoi_ca_sert": "frames 00:11 et 00:36 — montants remplis par le produit, puis ligne d'activité sur la fiche",
+    "champs_cles": "frames 00:06, 00:11, 00:16, 00:21, 00:26 et 00:31",
+    "outils_mcp": "schéma list_devis",
+    "erreurs_frequentes": "frames 00:11 (montants calculés) et 00:31 (bouton Enregistrer en bas)",
+    "cas_usage": "frames 00:11 à 00:36 — produit « identité visuelle » à 2800 €, TVA 560, TTC 3360",
+    "astuces": "frames 00:02, 00:06 et 00:26"
+  },
+  "a_verifier": []
+}

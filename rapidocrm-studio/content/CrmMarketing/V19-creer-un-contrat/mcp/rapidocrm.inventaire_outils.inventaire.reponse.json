@@ -1,0 +1,76 @@
+{
+  "outils": [
+    {
+      "nom": "list_contrat_templates",
+      "description": "Lister les templates de contrat disponibles.",
+      "parametres": [
+        {
+          "nom": "search",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche par titre"
+        },
+        {
+          "nom": "limit",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre max de résultats"
+        }
+      ]
+    },
+    {
+      "nom": "list_contrats",
+      "description": "Lister les contrats clients, filtrables par statut et expiration.",
+      "parametres": [
+        {
+          "nom": "statut",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "brouillon",
+            "en_attente",
+            "signe"
+          ],
+          "description": ""
+        },
+        {
+          "nom": "entreprise_id",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtrer par entreprise"
+        },
+        {
+          "nom": "date_debut",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtrer à partir de cette date YYYY-MM-DD"
+        },
+        {
+          "nom": "date_fin",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtrer jusqu'à cette date YYYY-MM-DD"
+        },
+        {
+          "nom": "q",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche texte dans destinataire ou contenu"
+        },
+        {
+          "nom": "limit",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre max de résultats"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "duree": 58.63333333333333,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V27-historique-de-l-entreprise/out/master-16x9.mp4",
+      "octets": 9077380
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V27-historique-de-l-entreprise/out/master-9x16.mp4",
+      "octets": 6929712
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 10.566666666666666
+    },
+    {
+      "nom": "titre",
+      "debut": 10.566666666666666,
+      "fin": 24.2
+    },
+    {
+      "nom": "demo",
+      "debut": 24.2,
+      "fin": 39.3
+    },
+    {
+      "nom": "claude",
+      "debut": 39.3,
+      "fin": 52.233333333333334
+    },
+    {
+      "nom": "punchline",
+      "debut": 52.233333333333334,
+      "fin": 58.63333333333333
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Un client rappelle après six semaines. Qui lui a écrit ? Quand ? À propos de quoi ?"
+    },
+    {
+      "timecode": "00:10",
+      "titre": "Historique de l'entreprise"
+    },
+    {
+      "timecode": "00:24",
+      "titre": "Ouvrir le panneau Entreprise de la fiche"
+    },
+    {
+      "timecode": "00:29",
+      "titre": "Ouvrir l'historique de l'entreprise"
+    },
+    {
+      "timecode": "00:32",
+      "titre": "Parcourir les neuf journaux"
+    },
+    {
+      "timecode": "00:36",
+      "titre": "Choisir le journal à consulter"
+    },
+    {
+      "timecode": "00:39",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:52",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

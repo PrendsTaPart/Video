@@ -1,0 +1,102 @@
+{
+  "duree": 17.79,
+  "resolution": [1920, 1020],
+  "fps": 60,
+  "ecrans": [
+    { "t": 0.0, "nom": "Fiche entreprise — La baguetterie" },
+    { "t": 4.0, "nom": "Panneau Entreprise déployé" },
+    { "t": 7.0, "nom": "Page Historique — les neuf journaux" },
+    { "t": 10.5, "nom": "Historique — bas de page" }
+  ],
+  "actions": [
+    {
+      "t": 2.0,
+      "type": "ouverture",
+      "cible": "Fiche entreprise et son panneau d'actions",
+      "zone": { "x": 0.72, "y": 0.18, "w": 0.27, "h": 0.75 },
+      "texte_visible": "Entreprise · Communication · Finance · Marketing"
+    },
+    {
+      "t": 5.0,
+      "type": "clic",
+      "cible": "Accordéon Entreprise, entrée « historique de l'entreprise »",
+      "zone": { "x": 0.73, "y": 0.36, "w": 0.24, "h": 0.4 },
+      "texte_visible": "A propos de l'entreprise · avis utilisateurs · historique de l'entreprise · Supprimer l'entreprise"
+    },
+    {
+      "t": 8.0,
+      "type": "ouverture",
+      "cible": "Page Historique, première rangée de journaux",
+      "zone": { "x": 0.23, "y": 0.33, "w": 0.75, "h": 0.62 },
+      "texte_visible": "Historique · Historique des emails · Historique des SMS · Historique des RDV · Consulter"
+    },
+    {
+      "t": 11.5,
+      "type": "defilement",
+      "cible": "Les six autres journaux",
+      "zone": { "x": 0.23, "y": 0.25, "w": 0.75, "h": 0.7 },
+      "texte_visible": "Historique des contrats · Historique des documents · Historique des factures · Historique des devis · Historique des dépenses · Historique des notes · Consulter"
+    },
+    {
+      "t": 15.0,
+      "type": "defilement",
+      "cible": "Retour en haut de la page Historique",
+      "zone": { "x": 0.23, "y": 0.33, "w": 0.75, "h": 0.62 },
+      "texte_visible": "Historique des emails · Historique des SMS · Historique des RDV"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir le panneau Entreprise de la fiche",
+      "debut": 1.0,
+      "fin": 6.5,
+      "actions": [0, 1],
+      "zone_focus": { "x": 0.71, "y": 0.15, "w": 0.28, "h": 0.75 }
+    },
+    {
+      "numero": 2,
+      "titre": "Ouvrir l'historique de l'entreprise",
+      "debut": 6.5,
+      "fin": 10.5,
+      "actions": [2],
+      "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.65 }
+    },
+    {
+      "numero": 3,
+      "titre": "Parcourir les neuf journaux",
+      "debut": 10.5,
+      "fin": 14.5,
+      "actions": [3],
+      "zone_focus": { "x": 0.23, "y": 0.22, "w": 0.75, "h": 0.73 }
+    },
+    {
+      "numero": 4,
+      "titre": "Choisir le journal à consulter",
+      "debut": 14.5,
+      "fin": 17.79,
+      "actions": [4],
+      "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.65 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 17.79,
+      "zone": { "x": 0.0, "y": 0.0, "w": 1.0, "h": 0.15 },
+      "raison": "Fenêtre du navigateur : onglets, adresse locale 127.0.0.1:8000, extensions et bouton « Demander à Gemini »."
+    },
+    {
+      "t": 0.0,
+      "fin": 17.79,
+      "zone": { "x": 0.79, "y": 0.14, "w": 0.21, "h": 0.13 },
+      "raison": "Photo et nom du titulaire du compte (Dupont lina)."
+    },
+    {
+      "t": 0.0,
+      "fin": 7.0,
+      "zone": { "x": 0.24, "y": 0.7, "w": 0.5, "h": 0.3 },
+      "raison": "Activités récentes : photo et nom de l'utilisatrice sur chaque ligne."
+    }
+  ]
+}

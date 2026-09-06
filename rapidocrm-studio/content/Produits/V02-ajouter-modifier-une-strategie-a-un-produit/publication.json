@@ -1,0 +1,27 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-produits-V02-03-ajouter-modifier-une-strategie-a-un-produit.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-produits-V02-03-ajouter-modifier-une-strategie-a-un-produit-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-produits-V02-03-ajouter-modifier-une-strategie-a-un-produit-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-produits-V02-03-ajouter-modifier-une-strategie-a-un-produit-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "08d1535f653ba30a",
+      "video_vertical_url": "7f77a0f68974f2d9",
+      "thumbnail_url": "18145f7a68e1a20d",
+      "thumbnail_vertical_url": "9c280a89e1ccb470"
+    },
+    "publie_le": "2026-08-28T01:46:27.997Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=HJ-kOZO36Zg",
+    "video_id": "HJ-kOZO36Zg",
+    "publie_le": "2026-08-28T11:33:21.463453+00:00",
+    "short_url": "https://www.youtube.com/watch?v=4bT2n15z_RY",
+    "short_id": "4bT2n15z_RY"
+  },
+  "site": {
+    "url": "https://tutoriel.rapidocrm.com/tutoriel/03-ajouter-modifier-une-strategie-a-un-produit",
+    "tutoriel_id": "d24e5da2-9860-4c7c-a84c-44d8c1d70528",
+    "publie_le": "2026-08-28T11:57:58.944+00:00"
+  }
+}

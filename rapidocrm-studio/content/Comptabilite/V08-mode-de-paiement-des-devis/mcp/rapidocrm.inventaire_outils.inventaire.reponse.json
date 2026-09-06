@@ -1,0 +1,31 @@
+{
+  "outils": [
+    {
+      "nom": "list_devis",
+      "role": "Liste les devis avec filtres : statut, entreprise, recherche par destinataire, période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [
+        "statut",
+        "entreprise_id",
+        "q",
+        "periode",
+        "limit"
+      ],
+      "exemple_appel": {
+        "statut": "en_attente",
+        "limit": 10
+      }
+    },
+    {
+      "nom": "get_revenue_summary",
+      "role": "Résumé du chiffre d'affaires calculé à partir des factures et des devis, par période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [
+        "periode"
+      ],
+      "exemple_appel": {
+        "periode": "month"
+      }
+    }
+  ]
+}

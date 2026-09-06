@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "module": "Contrats",
+    "module_slug": "04-contrat",
+    "numero": 3,
+    "titre": "Historique des templates de contrat",
+    "titre_court": "Historique des contrats",
+    "slug": "04-historique-des-templates-de-contrat"
+  },
+  "hook": {
+    "texte": "Un client vous demande où en est son contrat. Vous cherchez dans vos mails.",
+    "promesse": "Trois chiffres, et vous savez qui relancer.",
+    "duree": 5,
+    "alternatives": [
+      "Combien de contrats attendent encore une signature ? Personne ne sait.",
+      "Vos contrats sont partis. Depuis, plus de nouvelles.",
+      "Signé, pas signé : la réponse est dans votre boîte mail. Quelque part."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page Contrat, et on ressort en sachant exactement où en est chaque document. Trois compteurs en haut, un tableau en dessous, et le contrat lui-même qu'on rouvre tel qu'il est parti chez le client.",
+    "duree": 16
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Lire les trois compteurs",
+        "voix": "Trois compteurs : créés, signés, en attente.",
+        "debut_source": 0.5,
+        "fin_source": 4.0,
+        "zone_focus": { "x": 0.22, "y": 0.10, "w": 0.76, "h": 0.30 },
+        "annotation": "Total de contrats en attente",
+        "point": { "x": 0.83, "y": 0.22 }
+      },
+      {
+        "numero": 2,
+        "titre": "Retrouver un contrat dans l'historique",
+        "voix": "En dessous, le tableau.",
+        "debut_source": 4.0,
+        "fin_source": 6.5,
+        "zone_focus": { "x": 0.22, "y": 0.40, "w": 0.76, "h": 0.56 },
+        "annotation": "Nom, entreprise, date, statut",
+        "point": { "x": 0.36, "y": 0.82 }
+      },
+      {
+        "numero": 3,
+        "titre": "Ouvrir le contrat généré",
+        "voix": "On ouvre le contrat. Quatre pages, jusqu'aux deux cases de signature.",
+        "debut_source": 9.5,
+        "fin_source": 17.5,
+        "zone_focus": { "x": 0.02, "y": 0.02, "w": 0.96, "h": 0.96 },
+        "annotation": "Le contrat, tel qu'il est parti",
+        "point": { "x": 0.50, "y": 0.50 }
+      },
+      {
+        "numero": 4,
+        "titre": "Revenir à la liste",
+        "voix": "Retour à la liste.",
+        "debut_source": 20.2,
+        "fin_source": 22.4,
+        "zone_focus": { "x": 0.23, "y": 0.68, "w": 0.75, "h": 0.28 },
+        "annotation": "L'historique",
+        "point": { "x": 0.40, "y": 0.82 }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Faites-le avec Claude",
+    "voix": "Vous savez où en est chaque contrat. Pour faire le tri sans ouvrir la page, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le statut voulu.",
+    "prompt": {
+      "texte": "Liste-moi mes contrats au statut [statut] avec leur entreprise et leur date de création.",
+      "variables": ["statut"],
+      "outil_mcp": "list_contrats"
+    },
+    "resultat_affiche": {
+      "titre": "Vos contrats en attente",
+      "lignes": [
+        "brouillon — pas encore envoyé",
+        "en_attente — parti, pas signé",
+        "signe — revenu signé"
+      ]
+    },
+    "duree": 19
+  },
+  "punchline": {
+    "texte": "Trois chiffres en haut, et vous savez qui relancer. Sans chercher dans vos mails.",
+    "duree": 6,
+    "alternatives": [
+      "Vos contrats ne se perdent plus entre deux boîtes mail.",
+      "Un tableau, un statut, et la relance devient évidente.",
+      "Le contrat que le client a reçu, vous le rouvrez en un clic."
+    ]
+  },
+  "seo": {
+    "titre": "Historique des contrats — RapidoCRM",
+    "description": "Suivez vos contrats dans RapidoCRM : les compteurs créés, signés et en attente, le tableau filtrable par statut, et le contrat généré qu'on rouvre.",
+    "mots_cles": [
+      "historique des contrats",
+      "RapidoCRM",
+      "contrat en attente",
+      "contrat signé",
+      "suivi commercial",
+      "relance"
+    ],
+    "youtube_titre": "Historique des templates de contrat — RapidoCRM Académie",
+    "youtube_description": "Un client demande où en est son contrat, et la réponse est quelque part dans une boîte mail. Dans RapidoCRM, la page Contrat porte trois compteurs — créés, signés, en attente — puis un tableau filtrable par statut, entreprise et période. Chaque ligne rouvre le contrat généré, tel qu'il est parti chez le client, jusqu'à ses blocs de signature.\n\nAu programme :\n00:00 Le problème\n00:05 Ce qu'on va faire\n00:21 Lire les trois compteurs\n00:24 Retrouver un contrat dans l'historique\n00:26 Ouvrir le contrat généré\n00:31 Revenir à la liste\n00:33 Faites-le avec Claude\n00:52 À retenir\n\nRapidoCRM Académie — un tutoriel par fonctionnalité.\nUne démo sur votre activité ? WhatsApp 06.14.18.92.25",
+    "youtube_tags": [
+      "RapidoCRM",
+      "contrat",
+      "historique",
+      "CRM",
+      "tutoriel",
+      "PME"
+    ]
+  }
+}

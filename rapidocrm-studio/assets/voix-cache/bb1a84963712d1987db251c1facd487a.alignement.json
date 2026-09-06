@@ -1,0 +1,37 @@
+[
+  {
+    "mot": "Puis",
+    "debut": 0,
+    "fin": 0.221
+  },
+  {
+    "mot": "le",
+    "debut": 0.244,
+    "fin": 0.302
+  },
+  {
+    "mot": "modèle.",
+    "debut": 0.348,
+    "fin": 0.778
+  },
+  {
+    "mot": "Un",
+    "debut": 0.952,
+    "fin": 1.068
+  },
+  {
+    "mot": "aperçu",
+    "debut": 1.138,
+    "fin": 1.44
+  },
+  {
+    "mot": "sous",
+    "debut": 1.486,
+    "fin": 1.614
+  },
+  {
+    "mot": "chacun.",
+    "debut": 1.637,
+    "fin": 2.009
+  }
+]

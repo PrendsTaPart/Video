@@ -1,0 +1,87 @@
+[
+  {
+    "mot": "Une",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "facture",
+    "debut": 0.209,
+    "fin": 0.615
+  },
+  {
+    "mot": "faite",
+    "debut": 0.65,
+    "fin": 0.824
+  },
+  {
+    "mot": "depuis",
+    "debut": 0.848,
+    "fin": 1.08
+  },
+  {
+    "mot": "la",
+    "debut": 1.103,
+    "fin": 1.196
+  },
+  {
+    "mot": "fiche",
+    "debut": 1.312,
+    "fin": 1.521
+  },
+  {
+    "mot": "du",
+    "debut": 1.544,
+    "fin": 1.625
+  },
+  {
+    "mot": "client,",
+    "debut": 1.66,
+    "fin": 2.101
+  },
+  {
+    "mot": "c'est",
+    "debut": 2.148,
+    "fin": 2.334
+  },
+  {
+    "mot": "une",
+    "debut": 2.403,
+    "fin": 2.485
+  },
+  {
+    "mot": "facture",
+    "debut": 2.508,
+    "fin": 2.81
+  },
+  {
+    "mot": "qu'on",
+    "debut": 2.833,
+    "fin": 2.972
+  },
+  {
+    "mot": "ne",
+    "debut": 2.995,
+    "fin": 3.053
+  },
+  {
+    "mot": "relit",
+    "debut": 3.17,
+    "fin": 3.425
+  },
+  {
+    "mot": "pas",
+    "debut": 3.448,
+    "fin": 3.576
+  },
+  {
+    "mot": "deux",
+    "debut": 3.599,
+    "fin": 3.704
+  },
+  {
+    "mot": "fois.",
+    "debut": 3.727,
+    "fin": 3.982
+  }
+]

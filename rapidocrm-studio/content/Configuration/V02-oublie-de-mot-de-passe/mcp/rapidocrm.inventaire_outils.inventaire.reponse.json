@@ -1,0 +1,45 @@
+{
+  "outils": [
+    {
+      "nom": "list_users",
+      "description": "Utilisateurs : liste les utilisateurs de l'entreprise. Lecture seule. Ne gère ni la connexion ni le mot de passe.",
+      "parametres": [
+        { "nom": "id", "type": "integer|null", "obligatoire": false, "description": "ID principal" },
+        { "nom": "q", "type": "string|null", "obligatoire": false, "description": "Recherche libre" },
+        { "nom": "limit", "type": "integer|null", "obligatoire": false, "description": "Nombre maximum de résultats" },
+        { "nom": "statut", "type": "string|null", "obligatoire": false, "description": "Filtre de statut" },
+        { "nom": "periode", "type": "string|null", "obligatoire": false, "valeurs_autorisees": ["today", "week", "month", "quarter", "year"], "description": "Période" }
+      ]
+    },
+    {
+      "nom": "get_user",
+      "description": "Utilisateurs : fiche d'un utilisateur par son identifiant. Lecture seule. N'expose aucun mot de passe.",
+      "parametres": [
+        { "nom": "id", "type": "integer", "obligatoire": true, "description": "ID principal" },
+        { "nom": "q", "type": "string|null", "obligatoire": false, "description": "Recherche libre" }
+      ]
+    },
+    {
+      "nom": "create_user",
+      "description": "Utilisateurs : crée un utilisateur dans une entreprise déjà ouverte. Écriture — non utilisé par ce pipeline. Ne couvre ni l'inscription initiale ni la réinitialisation de mot de passe.",
+      "parametres": [
+        { "nom": "payload", "type": "object|null", "obligatoire": false, "description": "Données de création/mise à jour" }
+      ]
+    },
+    {
+      "nom": "get_dashboard_general_stats",
+      "description": "KPIs complets du tableau de bord général (CRM, marketing, commercial, facturation).",
+      "parametres": [
+        { "nom": "periode", "type": "string|null", "obligatoire": false, "valeurs_autorisees": ["today", "week", "month", "quarter", "year"], "description": "Filtre les métriques d'activité ; tout l'historique sinon" }
+      ]
+    },
+    {
+      "nom": "get_dashboard_kpis",
+      "description": "Indicateurs clés du tableau de bord.",
+      "parametres": [
+        { "nom": "periode", "type": "string|null", "obligatoire": false, "valeurs_autorisees": ["today", "week", "month", "quarter", "year"], "description": "Période" }
+      ]
+    }
+  ],
+  "note": "Inventaire restreint aux outils touchant aux utilisateurs, à l'accès et au tableau de bord. Aucun outil du serveur MCP RapidoCRM ne couvre la connexion, la réinitialisation ou la définition d'un mot de passe : ces opérations se font uniquement depuis l'interface web."
+}

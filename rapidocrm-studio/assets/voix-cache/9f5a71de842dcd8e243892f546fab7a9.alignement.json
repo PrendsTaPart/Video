@@ -1,0 +1,27 @@
+[
+  {
+    "mot": "Virement.",
+    "debut": 0,
+    "fin": 0.488
+  },
+  {
+    "mot": "Puis",
+    "debut": 0.662,
+    "fin": 0.848
+  },
+  {
+    "mot": "modifier,",
+    "debut": 0.871,
+    "fin": 1.44
+  },
+  {
+    "mot": "en",
+    "debut": 1.567,
+    "fin": 1.707
+  },
+  {
+    "mot": "bas.",
+    "debut": 1.753,
+    "fin": 1.974
+  }
+]

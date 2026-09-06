@@ -1,0 +1,20 @@
+{
+  "outils": [
+    {
+      "nom": "get_entreprise",
+      "description": "Détail complet d'une entreprise (tous les champs, pas seulement nom/statut).",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer",
+          "obligatoire": true,
+          "valeurs_autorisees": [],
+          "description": "ID de l'entreprise"
+        }
+      ]
+    }
+  ],
+  "divergences": [
+    "Divergence : « Champ Nom du fichier » (10.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

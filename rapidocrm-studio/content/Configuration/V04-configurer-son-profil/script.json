@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "module": "Configuration",
+    "numero": 4,
+    "titre": "Configurer son profil",
+    "titre_court": "Configurer son profil",
+    "slug": "01-configurer-son-profil"
+  },
+  "hook": {
+    "texte": "Votre première facture part demain. Elle portera quel nom, quelle adresse, quel logo ?",
+    "promesse": "Une page, et vos documents sortent à votre image.",
+    "duree": 8,
+    "alternatives": [
+      "Une facture sans logo, c'est une facture qu'on oublie.",
+      "Vos clients verront cette page avant de vous voir.",
+      "Deux minutes ici, et tous vos documents sont réglés."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page Profil, et on ressort avec deux fiches complètes : la vôtre, et celle de la société émettrice. C'est la seconde qui compte le plus : son logo, son adresse et sa couleur seront repris en tête de chaque devis et de chaque facture.",
+    "duree": 14
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir sa fiche profil",
+        "voix": "La page Profil s'ouvre sur votre photo. Glissez un fichier dans le cadre, ou passez par parcourir : elle remplacera l'initiale affichée en haut à droite.",
+        "debut_source": 0,
+        "fin_source": 10,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.1,
+          "w": 0.96,
+          "h": 0.85
+        },
+        "annotation": "photo de profil",
+        "point": {
+          "x": 0.5,
+          "y": 0.6
+        }
+      },
+      {
+        "numero": 2,
+        "titre": "Renseigner son identité",
+        "voix": "En dessous, votre nom, votre prénom et votre adresse e-mail. C'est vous, pas votre société : les deux ne se mélangent pas.",
+        "debut_source": 10,
+        "fin_source": 17,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.1,
+          "w": 0.96,
+          "h": 0.55
+        },
+        "annotation": "votre identité",
+        "point": {
+          "x": 0.3,
+          "y": 0.36
+        }
+      },
+      {
+        "numero": 3,
+        "titre": "Ajouter numéro et adresse",
+        "voix": "Puis vos coordonnées : un numéro, une adresse, un code postal. Elles restent les vôtres et ne partent pas sur vos documents.",
+        "debut_source": 17,
+        "fin_source": 24,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.35,
+          "w": 0.96,
+          "h": 0.55
+        },
+        "annotation": "vos coordonnées",
+        "point": {
+          "x": 0.3,
+          "y": 0.66
+        }
+      },
+      {
+        "numero": 4,
+        "titre": "Sauvegarder",
+        "voix": "Un clic sur sauvegarder, et votre photo apparaît en haut à droite.",
+        "debut_source": 24,
+        "fin_source": 28,
+        "zone_focus": {
+          "x": 0.25,
+          "y": 0.6,
+          "w": 0.5,
+          "h": 0.35
+        },
+        "annotation": "sauvegarder",
+        "point": {
+          "x": 0.5,
+          "y": 0.845
+        }
+      },
+      {
+        "numero": 5,
+        "titre": "Compléter la fiche entreprise",
+        "voix": "Deuxième bloc : votre société. Déposez son logo, il sera imprimé en tête de vos factures. Puis son nom et son SIRET.",
+        "debut_source": 28,
+        "fin_source": 44,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.1,
+          "w": 0.96,
+          "h": 0.85
+        },
+        "annotation": "logo de l'entreprise",
+        "point": {
+          "x": 0.5,
+          "y": 0.58
+        }
+      },
+      {
+        "numero": 6,
+        "titre": "Adresse et couleur des factures",
+        "voix": "Enfin l'adresse complète, et cette couleur, qui teinte tous vos documents commerciaux. Prenez celle de votre marque : elle sera reprise partout.",
+        "debut_source": 44,
+        "fin_source": 63.04,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.1,
+          "w": 0.96,
+          "h": 0.8
+        },
+        "annotation": "couleur des factures",
+        "point": {
+          "x": 0.11,
+          "y": 0.66
+        }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Votre fiche est complète. Pour la relire sans rouvrir la page, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et lancez-le.",
+    "prompt": {
+      "texte": "Montre-moi les informations de ma société émettrice : nom, SIRET, adresse et coordonnées.",
+      "variables": [],
+      "outil_mcp": "get_company"
+    },
+    "resultat_affiche": {
+      "titre": "Société émettrice",
+      "lignes": [
+        "Le Petit Paris — SIRET 12345678912345",
+        "24 avenue des Champs-Élysées, 75008 Paris"
+      ]
+    },
+    "duree": 17
+  },
+  "punchline": {
+    "texte": "Une fiche remplie une fois, et chaque facture part complète.",
+    "duree": 5,
+    "alternatives": [
+      "Votre logo sur chaque document, sans y repenser.",
+      "Deux minutes ici, zéro correction après.",
+      "Vos papiers sont en règle. Place au travail."
+    ]
+  },
+  "seo": {
+    "titre": "Configurer son profil RapidoCRM — tutoriel",
+    "description": "Renseignez votre profil et la fiche de votre société sur RapidoCRM : logo, SIRET, adresse et couleur des factures. Le tutoriel pas à pas de l'Académie.",
+    "mots_cles": [
+      "configurer son profil",
+      "RapidoCRM",
+      "logo",
+      "société émettrice",
+      "factures",
+      "SIRET"
+    ],
+    "youtube_titre": "Configurer son profil et sa fiche entreprise sur RapidoCRM",
+    "youtube_description": "Le tutoriel de configuration du profil de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "profil",
+      "fiche entreprise",
+      "facture",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}

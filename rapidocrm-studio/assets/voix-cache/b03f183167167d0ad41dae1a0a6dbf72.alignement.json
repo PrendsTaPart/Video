@@ -1,0 +1,107 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "client",
+    "debut": 0.197,
+    "fin": 0.464
+  },
+  {
+    "mot": "dit",
+    "debut": 0.488,
+    "fin": 0.627
+  },
+  {
+    "mot": "oui.",
+    "debut": 0.662,
+    "fin": 0.894
+  },
+  {
+    "mot": "Vous,",
+    "debut": 1.01,
+    "fin": 1.289
+  },
+  {
+    "mot": "vous",
+    "debut": 1.312,
+    "fin": 1.44
+  },
+  {
+    "mot": "imprimez,",
+    "debut": 1.498,
+    "fin": 1.939
+  },
+  {
+    "mot": "vous",
+    "debut": 1.985,
+    "fin": 2.09
+  },
+  {
+    "mot": "faites",
+    "debut": 2.113,
+    "fin": 2.322
+  },
+  {
+    "mot": "signer,",
+    "debut": 2.345,
+    "fin": 2.844
+  },
+  {
+    "mot": "vous",
+    "debut": 2.995,
+    "fin": 3.158
+  },
+  {
+    "mot": "scannez.",
+    "debut": 3.181,
+    "fin": 3.587
+  },
+  {
+    "mot": "Le",
+    "debut": 3.762,
+    "fin": 3.889
+  },
+  {
+    "mot": "devis",
+    "debut": 3.936,
+    "fin": 4.168
+  },
+  {
+    "mot": "se",
+    "debut": 4.203,
+    "fin": 4.296
+  },
+  {
+    "mot": "signe",
+    "debut": 4.342,
+    "fin": 4.516
+  },
+  {
+    "mot": "à",
+    "debut": 4.54,
+    "fin": 4.563
+  },
+  {
+    "mot": "l'écran,",
+    "debut": 4.598,
+    "fin": 5.027
+  },
+  {
+    "mot": "en",
+    "debut": 5.074,
+    "fin": 5.19
+  },
+  {
+    "mot": "trois",
+    "debut": 5.236,
+    "fin": 5.422
+  },
+  {
+    "mot": "gestes.",
+    "debut": 5.445,
+    "fin": 5.863
+  }
+]

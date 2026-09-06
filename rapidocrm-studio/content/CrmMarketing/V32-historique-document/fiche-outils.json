@@ -1,0 +1,18 @@
+{
+  "outils": [
+    {
+      "nom": "get_entreprise",
+      "description": "Détail complet d'une entreprise (tous les champs, pas seulement nom/statut).",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer",
+          "obligatoire": true,
+          "valeurs_autorisees": [],
+          "description": "ID de l'entreprise"
+        }
+      ]
+    }
+  ],
+  "divergences": []
+}

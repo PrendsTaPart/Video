@@ -1,0 +1,62 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "modèle",
+    "debut": 0.174,
+    "fin": 0.488
+  },
+  {
+    "mot": "écrit",
+    "debut": 0.511,
+    "fin": 0.731
+  },
+  {
+    "mot": "une",
+    "debut": 0.778,
+    "fin": 0.906
+  },
+  {
+    "mot": "fois,",
+    "debut": 0.94,
+    "fin": 1.242
+  },
+  {
+    "mot": "c'est",
+    "debut": 1.3,
+    "fin": 1.521
+  },
+  {
+    "mot": "dix",
+    "debut": 1.567,
+    "fin": 1.718
+  },
+  {
+    "mot": "messages",
+    "debut": 1.741,
+    "fin": 2.101
+  },
+  {
+    "mot": "qui",
+    "debut": 2.125,
+    "fin": 2.218
+  },
+  {
+    "mot": "partent",
+    "debut": 2.276,
+    "fin": 2.543
+  },
+  {
+    "mot": "sans",
+    "debut": 2.659,
+    "fin": 2.879
+  },
+  {
+    "mot": "effort.",
+    "debut": 2.926,
+    "fin": 3.297
+  }
+]

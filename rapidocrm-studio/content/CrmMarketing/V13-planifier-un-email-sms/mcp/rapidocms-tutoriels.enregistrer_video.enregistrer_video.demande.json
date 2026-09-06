@@ -1,0 +1,12 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_video",
+  "parametres": {
+    "cle_api": "rapido_ac_8d2a14623245e47f0da39b8606e3a055952d5773bf699f27",
+    "slug": "06-planifier-un-email-sms",
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V13-06-planifier-un-email-sms.mp4",
+    "duree_secondes": 64
+  },
+  "demande_le": "2026-09-06T08:34:47.662Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

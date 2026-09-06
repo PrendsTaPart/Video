@@ -1,0 +1,55 @@
+{
+  "fonctionnalite": "Créer et révoquer un token d'API",
+  "a_quoi_ca_sert": "Un token est une clé d'accès que vous donnez à une application extérieure pour qu'elle lise ou écrive dans votre CRM. Vous choisissez ce qu'elle a le droit de faire, ressource par ressource, et jusqu'à quelle date.",
+  "pour_qui": "Gérant ou développeur qui branche une application sur RapidoCRM",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Savoir quelles ressources l'application extérieure doit atteindre"
+  ],
+  "champs_cles": [
+    { "nom": "Nom du token", "obligatoire": true, "explication": "Le libellé qui identifiera la clé dans le tableau. Nommez-le d'après l'application à qui vous la donnez." },
+    { "nom": "Date d'expiration", "obligatoire": true, "explication": "La date au-delà de laquelle la clé cesse de fonctionner, au format jj/mm/aaaa." },
+    { "nom": "Permissions", "obligatoire": true, "explication": "Un tableau à cocher : en ligne les ressources — entreprises, contacts, employés, templates sms, templates email, factures, devis, dépenses, contrats — et en colonne Lire, Créer, Modifier, Supprimer, ou Tout." }
+  ],
+  "outils_mcp": [
+    { "nom": "list_entreprises", "role": "Liste les entreprises de la base. Lecture seule. C'est la ressource appelée par l'exemple d'utilisation affiché sous le tableau des tokens.",
+      "parametres_obligatoires": [], "parametres_optionnels": ["limit", "q", "statut", "periode"],
+      "exemple_appel": { "limit": 5 } },
+    { "nom": "list_contacts", "role": "Liste les contacts de l'entreprise. Lecture seule.",
+      "parametres_obligatoires": [], "parametres_optionnels": ["limit", "q", "statut", "periode"],
+      "exemple_appel": { "limit": 5 } }
+  ],
+  "bonnes_pratiques": [
+    "Ne cochez que la colonne Lire tant que l'application n'a pas besoin d'écrire : un token en lecture seule ne peut rien casser.",
+    "Un token par application. Le jour où l'une d'elles part, vous révoquez la sienne sans couper les autres."
+  ],
+  "erreurs_frequentes": [
+    "Cocher la colonne Tout par confort, et donner à une application le droit de supprimer vos factures.",
+    "Révoquer un token encore utilisé : les applications qui s'en servent perdent l'accès immédiatement."
+  ],
+  "cas_usage": [
+    { "titre": "Brancher une application de catalogue", "contexte": "Une application extérieure doit lire vos entreprises et vos contacts, sans rien modifier.",
+      "resultat_attendu": "Un token nommé, daté, coché en lecture seule sur les deux ressources, et l'application lit sans pouvoir écrire." },
+    { "titre": "Couper un accès", "contexte": "Le prestataire à qui vous aviez donné une clé a terminé sa mission.",
+      "resultat_attendu": "Le token révoqué depuis la colonne Action, l'application perd l'accès et les autres continuent." }
+  ],
+  "astuces": [
+    { "titre": "Le tableau dit tout", "contenu": "Nom, scopes, dernière utilisation, date d'expiration, statut : une clé jamais utilisée se repère à son tiret dans la colonne « Dernière utilisation ».", "niveau": "debutant" },
+    { "titre": "Relire les droits d'un coup d'œil", "contenu": "Cliquer sur les pastilles de scopes ouvre la liste complète des permissions du token.", "niveau": "debutant" },
+    { "titre": "L'exemple d'appel est fourni", "contenu": "Sous le tableau, un exemple curl montre où passer la clé : un en-tête « authorization: bearer <votre_token> ».", "niveau": "pro" }
+  ],
+  "prompt_claude": {
+    "titre": "Vérifier ce que le token va lire",
+    "texte": "Liste-moi mes [nombre] dernières entreprises avec leur nom.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_entreprises"
+  },
+  "sources": {
+    "champs_cles": "frames 00:06 à 00:28 de l'enregistrement : modale « Créer un token api », champs « Nom du token », « Date d'expiration » et tableau « Permissions »",
+    "a_quoi_ca_sert": "frame 00:00 : « Tokens api — Générez des clés d'accès pour vos applications externes »",
+    "astuces": "frames 00:00 et 00:35 : colonnes du tableau, popover « Permissions — app produits », et bloc « Utilisation : » avec l'exemple curl et l'en-tête authorization bearer",
+    "erreurs_frequentes": "frame 00:40 : confirmation « Révoquer ce token ? Les applications qui l'utilisent perdront l'accès. »",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne gère les tokens : ils se créent et se révoquent uniquement depuis cet onglet. Les prompts proposés portent sur les ressources que le token atteindra."
+  },
+  "a_verifier": []
+}

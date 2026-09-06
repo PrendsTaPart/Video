@@ -1,0 +1,101 @@
+{
+  "fonctionnalite": "Lancer un jeu concours sur la fiche d'une entreprise",
+  "a_quoi_ca_sert": "Animer son fichier client avec une roue, une carte à gratter ou un quiz, sans rien coder : on part d'un modèle, on change l'image et le texte, on décrit les lots.",
+  "pour_qui": "Gérant ou responsable marketing qui anime ses clients",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert la fiche d'une entreprise cliente",
+    "Savoir quels lots on met en jeu"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Modèles disponibles",
+      "obligatoire": true,
+      "explication": "La bibliothèque de jeux. Chaque carte annonce son type — Roue, À gratter, Quiz —, son nombre de lots, ses dates, et porte un bouton Lancer."
+    },
+    {
+      "nom": "Images et texte",
+      "obligatoire": true,
+      "explication": "Le bloc de l'étape Apparence : on importe une image et on écrit le texte. L'aperçu, à droite, montre le résultat en direct."
+    },
+    {
+      "nom": "Nom de la récompense",
+      "obligatoire": true,
+      "explication": "Le libellé du lot, dans le bloc Cadeaux."
+    },
+    {
+      "nom": "Prix",
+      "obligatoire": false,
+      "explication": "La valeur du lot, en euros."
+    },
+    {
+      "nom": "Chance de gagner",
+      "obligatoire": true,
+      "explication": "La probabilité attachée au lot. C'est elle qui règle la générosité du jeu."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_jeux_concours",
+      "role": "Liste les jeux concours, filtrables par statut et par période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["id", "statut", "periode", "q", "limit"],
+      "exemple_appel": { "periode": "month", "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Regarder l'aperçu à droite après chaque changement : c'est ce que le client verra.",
+    "Répartir les chances de gagner entre les lots avant de publier : la somme décide du coût du jeu."
+  ],
+  "erreurs_frequentes": [
+    "Chercher à créer un jeu de zéro : on part toujours d'un modèle de la bibliothèque.",
+    "Décrire les lots sans leur donner de chance de gagner : un lot sans probabilité ne sort jamais."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Lancer une roue sur une opération",
+      "contexte": "L'enseigne veut animer sa clientèle pendant deux mois.",
+      "action": "Ouvrez les modèles depuis la fiche, lancez le modèle Roue, réglez l'image et le texte, puis décrivez les lots.",
+      "resultat_attendu": "L'aperçu montre la roue avec son visuel et son titre."
+    },
+    {
+      "titre": "Ajouter un lot de faible valeur",
+      "contexte": "Il faut un lot fréquent, peu coûteux.",
+      "action": "Dans le bloc Cadeaux, nommez la récompense, mettez son prix et une chance de gagner élevée.",
+      "resultat_attendu": "Le lot s'ajoute à ceux du jeu avec sa probabilité."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Trois types de jeux",
+      "contenu": "La bibliothèque distingue Roue, À gratter et Quiz, et affiche le nombre de lots de chaque modèle.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Configuration à gauche, aperçu à droite",
+      "contenu": "L'étape Apparence est coupée en deux : ce qu'on règle et ce que ça donne, côte à côte.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le bouton « Mes jeux »",
+      "contenu": "En haut de la bibliothèque, il ramène aux jeux déjà lancés.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver ses jeux concours",
+    "texte": "Liste-moi mes [nombre] jeux concours du mois avec leur statut.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_jeux_concours"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:05 à 00:11 — bibliothèque des modèles puis assistant de personnalisation",
+    "a_quoi_ca_sert": "frames 00:17 et 00:26 — étape Apparence avec aperçu, puis bloc Cadeaux",
+    "champs_cles": "frames 00:06, 00:17 et 00:26",
+    "outils_mcp": "schéma list_jeux_concours",
+    "erreurs_frequentes": "frames 00:06 (on part d'un modèle) et 00:26 (champ Chance de gagner)",
+    "cas_usage": "frames 00:06 à 00:26 — modèle Roue, récompense « Dessert du jour », prix 8.00, chance 15",
+    "astuces": "frames 00:06 et 00:17"
+  },
+  "a_verifier": []
+}

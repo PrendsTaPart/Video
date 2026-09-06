@@ -1,0 +1,82 @@
+{
+  "duree": 52.766666666666666,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V09-signature-electronique-d-un-devis/out/master-16x9.mp4",
+      "octets": 7143215
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V09-signature-electronique-d-un-devis/out/master-9x16.mp4",
+      "octets": 6210523
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 8.333333333333334
+    },
+    {
+      "nom": "titre",
+      "debut": 8.333333333333334,
+      "fin": 21.133333333333333
+    },
+    {
+      "nom": "demo",
+      "debut": 21.133333333333333,
+      "fin": 36.233333333333334
+    },
+    {
+      "nom": "claude",
+      "debut": 36.233333333333334,
+      "fin": 49.46666666666667
+    },
+    {
+      "nom": "punchline",
+      "debut": 49.46666666666667,
+      "fin": 52.766666666666666
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Le client dit oui. Vous, vous imprimez, vous faites signer, vous scannez."
+    },
+    {
+      "timecode": "00:08",
+      "titre": "Signer un devis à l'écran"
+    },
+    {
+      "timecode": "00:21",
+      "titre": "Ouvrir le menu du devis"
+    },
+    {
+      "timecode": "00:26",
+      "titre": "Ouvrir le devis à signer"
+    },
+    {
+      "timecode": "00:28",
+      "titre": "Signer dans le cadre"
+    },
+    {
+      "timecode": "00:32",
+      "titre": "Remonter et enregistrer"
+    },
+    {
+      "timecode": "00:36",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:49",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 53s, hors de la fenêtre 80–170s."
+  ]
+}

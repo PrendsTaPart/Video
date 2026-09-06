@@ -1,0 +1,26 @@
+{
+  "outils": [
+    {
+      "nom": "list_products",
+      "description": "Liste les produits et offres de l'entreprise. Lecture seule.",
+      "parametres": [
+        { "nom": "q", "type": "string|null", "obligatoire": false, "description": "Recherche libre" },
+        { "nom": "statut", "type": "string|null", "obligatoire": false, "description": "Filtre de statut" },
+        { "nom": "limit", "type": "integer|null", "obligatoire": false, "description": "Nombre maximum de résultats" },
+        { "nom": "periode", "type": "string|null", "obligatoire": false, "valeurs_autorisees": ["today", "week", "month", "quarter", "year"], "description": "Période" }
+      ]
+    },
+    {
+      "nom": "get_product",
+      "description": "Détail complet d'un produit ou d'une offre : prix, TVA, description. Lecture seule.",
+      "parametres": [
+        { "nom": "id", "type": "integer", "obligatoire": true, "description": "ID du produit" }
+      ]
+    },
+    {
+      "nom": "list_programmes_fidelite",
+      "description": "Liste les programmes de fidélité de l'espace, avec l'entreprise associée et ses statistiques : nombre de clients, points offerts, gains offerts. Lecture seule.",
+      "parametres": []
+    }
+  ]
+}

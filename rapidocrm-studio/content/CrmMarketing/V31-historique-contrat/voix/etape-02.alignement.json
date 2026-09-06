@@ -1,0 +1,37 @@
+[
+  {
+    "mot": "Destinataire,",
+    "debut": 0,
+    "fin": 0.836
+  },
+  {
+    "mot": "dates,",
+    "debut": 0.906,
+    "fin": 1.231
+  },
+  {
+    "mot": "statut",
+    "debut": 1.347,
+    "fin": 1.823
+  },
+  {
+    "mot": ":",
+    "debut": 1.846,
+    "fin": 1.892
+  },
+  {
+    "mot": "tout",
+    "debut": 2.101,
+    "fin": 2.299
+  },
+  {
+    "mot": "est",
+    "debut": 2.334,
+    "fin": 2.403
+  },
+  {
+    "mot": "là.",
+    "debut": 2.426,
+    "fin": 2.624
+  }
+]

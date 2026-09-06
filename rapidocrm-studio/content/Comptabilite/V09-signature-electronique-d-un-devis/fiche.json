@@ -1,0 +1,106 @@
+{
+  "fonctionnalite": "Signer un devis à l'écran",
+  "a_quoi_ca_sert": "Faire signer un devis sans l'imprimer ni le scanner : on l'ouvre en pleine page, on trace la signature à la souris dans le cadre prévu, et on enregistre. Le devis signé reste attaché au dossier.",
+  "pour_qui": "Gérant ou commercial qui fait valider un devis devant le client",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir un devis déjà créé"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Signer",
+      "obligatoire": true,
+      "explication": "La troisième entrée du menu Actions d'un devis, entre Modifier et Télécharger. Elle ouvre le devis en pleine page."
+    },
+    {
+      "nom": "cachet et signature",
+      "obligatoire": true,
+      "explication": "Le cadre en bas du devis, à droite des totaux. On y trace la signature à la souris."
+    },
+    {
+      "nom": "enregistrer",
+      "obligatoire": true,
+      "explication": "Le bouton vert en haut à droite du devis. C'est lui qui garde la signature."
+    },
+    {
+      "nom": "télécharger",
+      "obligatoire": false,
+      "explication": "À côté d'enregistrer : récupère le devis en fichier."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_devis",
+      "role": "Liste les devis avec filtres : statut, entreprise, recherche par destinataire, période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [
+        "statut",
+        "entreprise_id",
+        "q",
+        "periode",
+        "limit"
+      ],
+      "exemple_appel": {
+        "statut": "en_attente",
+        "limit": 10
+      }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Signer devant le client, sur le poste ou la tablette, plutôt que d'envoyer un aller-retour par mail.",
+    "Remonter en haut du devis avant d'enregistrer : le bouton n'est pas à côté du cadre de signature."
+  ],
+  "erreurs_frequentes": [
+    "Tracer la signature et fermer la page : sans le bouton enregistrer, rien n'est gardé.",
+    "Chercher « Signer » sur une facture : l'entrée n'existe que dans le menu d'un devis."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Faire signer devant le client",
+      "contexte": "Le client accepte le devis en rendez-vous.",
+      "action": "Ouvrez le devis par Signer, tracez la signature dans le cadre, remontez et enregistrez.",
+      "resultat_attendu": "Le devis porte la signature et reste attaché au dossier."
+    },
+    {
+      "titre": "Récupérer le devis signé",
+      "contexte": "Le client veut son exemplaire.",
+      "action": "Depuis le devis ouvert, utilisez le bouton télécharger, à côté d'enregistrer.",
+      "resultat_attendu": "Le devis part en fichier, signature comprise."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le cadre est en bas à droite",
+      "contenu": "Sous les totaux, après les informations bancaires. Le devis s'ouvre déjà à cette hauteur.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Deux boutons en haut",
+      "contenu": "enregistrer garde la signature, télécharger sort le fichier. Ils sont côte à côte.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Signer n'apparaît que sur un devis",
+      "contenu": "Le menu Actions d'un devis porte cinq entrées ; celui d'une facture n'en porte pas Signer.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver les devis à faire signer",
+    "texte": "Liste-moi mes [nombre] devis en attente avec leur destinataire et leur montant.",
+    "variables": [
+      "nombre"
+    ],
+    "outil_mcp": "list_devis"
+  },
+  "sources": {
+    "fonctionnalite": "frame 00:05 — entrée « Signer » du menu Actions",
+    "a_quoi_ca_sert": "frames 00:07 à 00:16",
+    "champs_cles": "frames 00:05, 00:07, 00:10 et 00:16",
+    "outils_mcp": "schéma list_devis",
+    "erreurs_frequentes": "frames 00:05 et 00:16 — bouton enregistrer en haut de page",
+    "cas_usage": "frames 00:07 à 00:16",
+    "astuces": "frames 00:05 et 00:07"
+  },
+  "a_verifier": []
+}

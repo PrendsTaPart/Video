@@ -1,0 +1,27 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.186
+  },
+  {
+    "mot": "règlement,",
+    "debut": 0.221,
+    "fin": 0.731
+  },
+  {
+    "mot": "les",
+    "debut": 0.755,
+    "fin": 0.848
+  },
+  {
+    "mot": "totaux,",
+    "debut": 0.882,
+    "fin": 1.324
+  },
+  {
+    "mot": "enregistrer.",
+    "debut": 1.358,
+    "fin": 1.985
+  }
+]

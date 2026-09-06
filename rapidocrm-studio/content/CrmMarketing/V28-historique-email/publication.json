@@ -1,0 +1,15 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V28-06-historique-email.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V28-06-historique-email-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V28-06-historique-email-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V28-06-historique-email-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "ae84054ab93bd5cf",
+      "video_vertical_url": "696f0e548579a19f",
+      "thumbnail_url": "26d8da83c44cfbf5",
+      "thumbnail_vertical_url": "c16b42d619791681"
+    },
+    "publie_le": "2026-09-05T23:28:48.082Z"
+  }
+}

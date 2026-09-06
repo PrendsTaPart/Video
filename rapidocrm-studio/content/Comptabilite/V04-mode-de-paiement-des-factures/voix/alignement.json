@@ -1,0 +1,882 @@
+{
+  "duree_totale": 58.92,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 10.272,
+      "texte": "Un virement tombe sur le compte. Trois semaines plus tard, vous cherchez encore à quelle facture il correspond. Un champ coché le jour même, et le rapprochement se fait tout seul.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "virement",
+          "debut": 0.209,
+          "fin": 0.639
+        },
+        {
+          "mot": "tombe",
+          "debut": 0.708,
+          "fin": 0.952
+        },
+        {
+          "mot": "sur",
+          "debut": 0.987,
+          "fin": 1.103
+        },
+        {
+          "mot": "le",
+          "debut": 1.126,
+          "fin": 1.196
+        },
+        {
+          "mot": "compte.",
+          "debut": 1.242,
+          "fin": 1.614
+        },
+        {
+          "mot": "Trois",
+          "debut": 1.73,
+          "fin": 1.95
+        },
+        {
+          "mot": "semaines",
+          "debut": 1.974,
+          "fin": 2.287
+        },
+        {
+          "mot": "plus",
+          "debut": 2.31,
+          "fin": 2.426
+        },
+        {
+          "mot": "tard,",
+          "debut": 2.45,
+          "fin": 2.81
+        },
+        {
+          "mot": "vous",
+          "debut": 3.135,
+          "fin": 3.274
+        },
+        {
+          "mot": "cherchez",
+          "debut": 3.297,
+          "fin": 3.553
+        },
+        {
+          "mot": "encore",
+          "debut": 3.576,
+          "fin": 3.831
+        },
+        {
+          "mot": "à",
+          "debut": 3.855,
+          "fin": 3.878
+        },
+        {
+          "mot": "quelle",
+          "debut": 3.947,
+          "fin": 4.133
+        },
+        {
+          "mot": "facture",
+          "debut": 4.156,
+          "fin": 4.563
+        },
+        {
+          "mot": "il",
+          "debut": 4.621,
+          "fin": 4.714
+        },
+        {
+          "mot": "correspond.",
+          "debut": 4.76,
+          "fin": 5.317
+        },
+        {
+          "mot": "Un",
+          "debut": 5.759,
+          "fin": 5.886
+        },
+        {
+          "mot": "champ",
+          "debut": 5.944,
+          "fin": 6.142
+        },
+        {
+          "mot": "coché",
+          "debut": 6.177,
+          "fin": 6.583
+        },
+        {
+          "mot": "le",
+          "debut": 6.734,
+          "fin": 6.827
+        },
+        {
+          "mot": "jour",
+          "debut": 6.873,
+          "fin": 7.012
+        },
+        {
+          "mot": "même,",
+          "debut": 7.059,
+          "fin": 7.454
+        },
+        {
+          "mot": "et",
+          "debut": 7.663,
+          "fin": 7.779
+        },
+        {
+          "mot": "le",
+          "debut": 7.814,
+          "fin": 7.86
+        },
+        {
+          "mot": "rapprochement",
+          "debut": 7.895,
+          "fin": 8.475
+        },
+        {
+          "mot": "se",
+          "debut": 8.545,
+          "fin": 8.638
+        },
+        {
+          "mot": "fait",
+          "debut": 8.696,
+          "fin": 8.824
+        },
+        {
+          "mot": "tout",
+          "debut": 8.847,
+          "fin": 8.975
+        },
+        {
+          "mot": "seul.",
+          "debut": 8.998,
+          "fin": 9.311
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 10.272,
+      "duree": 15.816,
+      "texte": "On part de la liste des factures, et on ressort avec un règlement noté. Le moyen de paiement se choisit dans la facture, sous le statut : espèces, carte, virement ou chèque. Un seul à la fois. Juste en dessous, le total à retrouver sur votre relevé de banque.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.128
+        },
+        {
+          "mot": "part",
+          "debut": 0.174,
+          "fin": 0.337
+        },
+        {
+          "mot": "de",
+          "debut": 0.36,
+          "fin": 0.418
+        },
+        {
+          "mot": "la",
+          "debut": 0.464,
+          "fin": 0.522
+        },
+        {
+          "mot": "liste",
+          "debut": 0.557,
+          "fin": 0.778
+        },
+        {
+          "mot": "des",
+          "debut": 0.824,
+          "fin": 0.929
+        },
+        {
+          "mot": "factures,",
+          "debut": 0.952,
+          "fin": 1.474
+        },
+        {
+          "mot": "et",
+          "debut": 1.591,
+          "fin": 1.718
+        },
+        {
+          "mot": "on",
+          "debut": 1.753,
+          "fin": 1.811
+        },
+        {
+          "mot": "ressort",
+          "debut": 1.858,
+          "fin": 2.194
+        },
+        {
+          "mot": "avec",
+          "debut": 2.218,
+          "fin": 2.415
+        },
+        {
+          "mot": "un",
+          "debut": 2.45,
+          "fin": 2.496
+        },
+        {
+          "mot": "règlement",
+          "debut": 2.519,
+          "fin": 2.891
+        },
+        {
+          "mot": "noté.",
+          "debut": 2.926,
+          "fin": 3.367
+        },
+        {
+          "mot": "Le",
+          "debut": 3.692,
+          "fin": 3.773
+        },
+        {
+          "mot": "moyen",
+          "debut": 3.82,
+          "fin": 4.052
+        },
+        {
+          "mot": "de",
+          "debut": 4.098,
+          "fin": 4.156
+        },
+        {
+          "mot": "paiement",
+          "debut": 4.214,
+          "fin": 4.516
+        },
+        {
+          "mot": "se",
+          "debut": 4.551,
+          "fin": 4.632
+        },
+        {
+          "mot": "choisit",
+          "debut": 4.667,
+          "fin": 4.957
+        },
+        {
+          "mot": "dans",
+          "debut": 4.981,
+          "fin": 5.097
+        },
+        {
+          "mot": "la",
+          "debut": 5.12,
+          "fin": 5.178
+        },
+        {
+          "mot": "facture,",
+          "debut": 5.236,
+          "fin": 5.7
+        },
+        {
+          "mot": "sous",
+          "debut": 5.747,
+          "fin": 5.921
+        },
+        {
+          "mot": "le",
+          "debut": 5.944,
+          "fin": 6.014
+        },
+        {
+          "mot": "statut",
+          "debut": 6.037,
+          "fin": 6.536
+        },
+        {
+          "mot": ":",
+          "debut": 6.583,
+          "fin": 6.629
+        },
+        {
+          "mot": "espèces,",
+          "debut": 6.908,
+          "fin": 7.628
+        },
+        {
+          "mot": "carte,",
+          "debut": 7.802,
+          "fin": 8.324
+        },
+        {
+          "mot": "virement",
+          "debut": 8.568,
+          "fin": 9.009
+        },
+        {
+          "mot": "ou",
+          "debut": 9.253,
+          "fin": 9.404
+        },
+        {
+          "mot": "chèque.",
+          "debut": 9.451,
+          "fin": 9.88
+        },
+        {
+          "mot": "Un",
+          "debut": 10.263,
+          "fin": 10.391
+        },
+        {
+          "mot": "seul",
+          "debut": 10.449,
+          "fin": 10.588
+        },
+        {
+          "mot": "à",
+          "debut": 10.635,
+          "fin": 10.658
+        },
+        {
+          "mot": "la",
+          "debut": 10.693,
+          "fin": 10.751
+        },
+        {
+          "mot": "fois.",
+          "debut": 10.82,
+          "fin": 11.157
+        },
+        {
+          "mot": "Juste",
+          "debut": 11.54,
+          "fin": 11.831
+        },
+        {
+          "mot": "en",
+          "debut": 11.854,
+          "fin": 11.9
+        },
+        {
+          "mot": "dessous,",
+          "debut": 11.947,
+          "fin": 12.399
+        },
+        {
+          "mot": "le",
+          "debut": 12.481,
+          "fin": 12.585
+        },
+        {
+          "mot": "total",
+          "debut": 12.632,
+          "fin": 12.922
+        },
+        {
+          "mot": "à",
+          "debut": 12.968,
+          "fin": 12.992
+        },
+        {
+          "mot": "retrouver",
+          "debut": 13.026,
+          "fin": 13.41
+        },
+        {
+          "mot": "sur",
+          "debut": 13.456,
+          "fin": 13.56
+        },
+        {
+          "mot": "votre",
+          "debut": 13.584,
+          "fin": 13.827
+        },
+        {
+          "mot": "relevé",
+          "debut": 13.874,
+          "fin": 14.106
+        },
+        {
+          "mot": "de",
+          "debut": 14.153,
+          "fin": 14.222
+        },
+        {
+          "mot": "banque.",
+          "debut": 14.269,
+          "fin": 14.675
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 26.088,
+      "duree": 4.296,
+      "texte": "Depuis la liste, les trois points en fin de ligne ouvrent la facture.",
+      "mots": [
+        {
+          "mot": "Depuis",
+          "debut": 0,
+          "fin": 0.313
+        },
+        {
+          "mot": "la",
+          "debut": 0.337,
+          "fin": 0.406
+        },
+        {
+          "mot": "liste,",
+          "debut": 0.464,
+          "fin": 0.755
+        },
+        {
+          "mot": "les",
+          "debut": 0.848,
+          "fin": 0.94
+        },
+        {
+          "mot": "trois",
+          "debut": 0.975,
+          "fin": 1.161
+        },
+        {
+          "mot": "points",
+          "debut": 1.196,
+          "fin": 1.416
+        },
+        {
+          "mot": "en",
+          "debut": 1.451,
+          "fin": 1.509
+        },
+        {
+          "mot": "fin",
+          "debut": 1.579,
+          "fin": 1.707
+        },
+        {
+          "mot": "de",
+          "debut": 1.741,
+          "fin": 1.811
+        },
+        {
+          "mot": "ligne",
+          "debut": 1.858,
+          "fin": 2.09
+        },
+        {
+          "mot": "ouvrent",
+          "debut": 2.148,
+          "fin": 2.45
+        },
+        {
+          "mot": "la",
+          "debut": 2.496,
+          "fin": 2.566
+        },
+        {
+          "mot": "facture.",
+          "debut": 2.612,
+          "fin": 3.088
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 30.384,
+      "duree": 3.312,
+      "texte": "Quatre moyens, un seul coché. Ici, virement.",
+      "mots": [
+        {
+          "mot": "Quatre",
+          "debut": 0,
+          "fin": 0.267
+        },
+        {
+          "mot": "moyens,",
+          "debut": 0.302,
+          "fin": 0.673
+        },
+        {
+          "mot": "un",
+          "debut": 0.755,
+          "fin": 0.836
+        },
+        {
+          "mot": "seul",
+          "debut": 0.882,
+          "fin": 1.022
+        },
+        {
+          "mot": "coché.",
+          "debut": 1.068,
+          "fin": 1.498
+        },
+        {
+          "mot": "Ici,",
+          "debut": 1.625,
+          "fin": 2.009
+        },
+        {
+          "mot": "virement.",
+          "debut": 2.043,
+          "fin": 2.415
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 33.696,
+      "duree": 3.816,
+      "texte": "En dessous, le total à retrouver sur le relevé.",
+      "mots": [
+        {
+          "mot": "En",
+          "debut": 0,
+          "fin": 0.128
+        },
+        {
+          "mot": "dessous,",
+          "debut": 0.174,
+          "fin": 0.534
+        },
+        {
+          "mot": "le",
+          "debut": 0.592,
+          "fin": 0.673
+        },
+        {
+          "mot": "total",
+          "debut": 0.731,
+          "fin": 1.01
+        },
+        {
+          "mot": "à",
+          "debut": 1.045,
+          "fin": 1.068
+        },
+        {
+          "mot": "retrouver",
+          "debut": 1.091,
+          "fin": 1.416
+        },
+        {
+          "mot": "sur",
+          "debut": 1.451,
+          "fin": 1.602
+        },
+        {
+          "mot": "le",
+          "debut": 1.637,
+          "fin": 1.695
+        },
+        {
+          "mot": "relevé.",
+          "debut": 1.741,
+          "fin": 2.148
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 37.512,
+      "duree": 2.376,
+      "texte": "On enregistre, et c'est écrit.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "enregistre,",
+          "debut": 0.197,
+          "fin": 0.685
+        },
+        {
+          "mot": "et",
+          "debut": 0.801,
+          "fin": 0.894
+        },
+        {
+          "mot": "c'est",
+          "debut": 0.917,
+          "fin": 1.068
+        },
+        {
+          "mot": "écrit.",
+          "debut": 1.138,
+          "fin": 1.44
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 39.888,
+      "duree": 15.288,
+      "texte": "Le règlement est noté. Pour rouvrir une facture précise sans la chercher, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez le numéro entre crochets.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "règlement",
+          "debut": 0.186,
+          "fin": 0.615
+        },
+        {
+          "mot": "est",
+          "debut": 0.685,
+          "fin": 0.778
+        },
+        {
+          "mot": "noté.",
+          "debut": 0.813,
+          "fin": 1.219
+        },
+        {
+          "mot": "Pour",
+          "debut": 1.463,
+          "fin": 1.637
+        },
+        {
+          "mot": "rouvrir",
+          "debut": 1.672,
+          "fin": 1.974
+        },
+        {
+          "mot": "une",
+          "debut": 2.043,
+          "fin": 2.125
+        },
+        {
+          "mot": "facture",
+          "debut": 2.148,
+          "fin": 2.496
+        },
+        {
+          "mot": "précise",
+          "debut": 2.519,
+          "fin": 2.995
+        },
+        {
+          "mot": "sans",
+          "debut": 3.088,
+          "fin": 3.297
+        },
+        {
+          "mot": "la",
+          "debut": 3.32,
+          "fin": 3.39
+        },
+        {
+          "mot": "chercher,",
+          "debut": 3.437,
+          "fin": 3.947
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 4.226,
+          "fin": 5.074
+        },
+        {
+          "mot": "parle",
+          "debut": 5.19,
+          "fin": 5.433
+        },
+        {
+          "mot": "à",
+          "debut": 5.457,
+          "fin": 5.48
+        },
+        {
+          "mot": "Claude",
+          "debut": 5.526,
+          "fin": 5.875
+        },
+        {
+          "mot": ":",
+          "debut": 5.909,
+          "fin": 5.933
+        },
+        {
+          "mot": "vous",
+          "debut": 6.258,
+          "fin": 6.397
+        },
+        {
+          "mot": "demandez",
+          "debut": 6.432,
+          "fin": 6.792
+        },
+        {
+          "mot": "en",
+          "debut": 6.827,
+          "fin": 6.885
+        },
+        {
+          "mot": "français,",
+          "debut": 6.943,
+          "fin": 7.5
+        },
+        {
+          "mot": "il",
+          "debut": 7.779,
+          "fin": 7.918
+        },
+        {
+          "mot": "lit",
+          "debut": 7.999,
+          "fin": 8.15
+        },
+        {
+          "mot": "vos",
+          "debut": 8.185,
+          "fin": 8.313
+        },
+        {
+          "mot": "données",
+          "debut": 8.348,
+          "fin": 8.707
+        },
+        {
+          "mot": "et",
+          "debut": 8.916,
+          "fin": 9.067
+        },
+        {
+          "mot": "répond.",
+          "debut": 9.114,
+          "fin": 9.543
+        },
+        {
+          "mot": "Copiez",
+          "debut": 9.985,
+          "fin": 10.356
+        },
+        {
+          "mot": "ce",
+          "debut": 10.379,
+          "fin": 10.495
+        },
+        {
+          "mot": "prompt,",
+          "debut": 10.553,
+          "fin": 11.053
+        },
+        {
+          "mot": "remplacez",
+          "debut": 11.262,
+          "fin": 11.796
+        },
+        {
+          "mot": "le",
+          "debut": 11.842,
+          "fin": 11.912
+        },
+        {
+          "mot": "numéro",
+          "debut": 11.947,
+          "fin": 12.423
+        },
+        {
+          "mot": "entre",
+          "debut": 12.597,
+          "fin": 12.945
+        },
+        {
+          "mot": "crochets.",
+          "debut": 12.992,
+          "fin": 13.491
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 55.176,
+      "duree": 3.744,
+      "texte": "Un moyen de paiement noté, c'est un rapprochement en moins à faire.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.128
+        },
+        {
+          "mot": "moyen",
+          "debut": 0.151,
+          "fin": 0.372
+        },
+        {
+          "mot": "de",
+          "debut": 0.395,
+          "fin": 0.441
+        },
+        {
+          "mot": "paiement",
+          "debut": 0.488,
+          "fin": 0.743
+        },
+        {
+          "mot": "noté,",
+          "debut": 0.766,
+          "fin": 1.138
+        },
+        {
+          "mot": "c'est",
+          "debut": 1.161,
+          "fin": 1.347
+        },
+        {
+          "mot": "un",
+          "debut": 1.393,
+          "fin": 1.44
+        },
+        {
+          "mot": "rapprochement",
+          "debut": 1.474,
+          "fin": 1.962
+        },
+        {
+          "mot": "en",
+          "debut": 2.009,
+          "fin": 2.078
+        },
+        {
+          "mot": "moins",
+          "debut": 2.113,
+          "fin": 2.299
+        },
+        {
+          "mot": "à",
+          "debut": 2.368,
+          "fin": 2.392
+        },
+        {
+          "mot": "faire.",
+          "debut": 2.45,
+          "fin": 2.728
+        }
+      ]
+    }
+  ]
+}

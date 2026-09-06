@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "module": "Configuration",
+    "numero": 5,
+    "titre": "Configurer sa TVA",
+    "titre_court": "Configurer sa TVA",
+    "slug": "01-configurer-sa-tva"
+  },
+  "hook": {
+    "texte": "Vous établissez votre premier devis, et aucun taux de TVA ne vous est proposé.",
+    "promesse": "Deux champs, et vos taux sont là pour toutes vos factures.",
+    "duree": 8,
+    "alternatives": [
+      "Une facture sans TVA, c'est une facture à refaire.",
+      "Le taux a changé ? Un clic, pas une refonte.",
+      "Vos taux se déclarent une fois, et servent partout."
+    ]
+  },
+  "intro": {
+    "texte": "On part de l'onglet TVA de votre page Profil, encore vide, et on ressort avec un taux déclaré puis corrigé. C'est cette liste que le logiciel vous proposera au moment d'établir un devis ou une facture. Tant qu'elle est vide, aucun taux n'est disponible, et le document part incomplet.",
+    "duree": 12
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'onglet TVA",
+        "voix": "Dans votre page Profil, l'onglet TVA. La liste est vide.",
+        "debut_source": 0,
+        "fin_source": 4,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.15,
+          "w": 0.96,
+          "h": 0.75
+        },
+        "annotation": "onglet TVA",
+        "point": {
+          "x": 0.355,
+          "y": 0.27
+        }
+      },
+      {
+        "numero": 2,
+        "titre": "Ajouter un taux",
+        "voix": "Bouton ajouter une tva. Deux champs seulement : un nom, et un pourcentage. Nommez-le clairement, par pays ou par type de prestation, c'est ce libellé que vous verrez au moment de facturer.",
+        "debut_source": 4,
+        "fin_source": 14.5,
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.1,
+          "w": 0.34,
+          "h": 0.8
+        },
+        "annotation": "nom et pourcentage",
+        "point": {
+          "x": 0.5,
+          "y": 0.44
+        }
+      },
+      {
+        "numero": 3,
+        "titre": "Confirmer l'ajout",
+        "voix": "Un bandeau vert confirme, et la ligne apparaît dans le tableau avec son taux.",
+        "debut_source": 14.5,
+        "fin_source": 18.5,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.02,
+          "w": 0.96,
+          "h": 0.7
+        },
+        "annotation": "tva ajoutée",
+        "point": {
+          "x": 0.86,
+          "y": 0.1
+        }
+      },
+      {
+        "numero": 4,
+        "titre": "Modifier un taux",
+        "voix": "La colonne Action porte deux icônes. Le crayon modifie la ligne, la corbeille la supprime. Si le taux change, corrigez celui-ci plutôt que d'en créer un second.",
+        "debut_source": 18.5,
+        "fin_source": 27.5,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.15,
+          "w": 0.96,
+          "h": 0.65
+        },
+        "annotation": "modifier la ligne",
+        "point": {
+          "x": 0.79,
+          "y": 0.58
+        }
+      },
+      {
+        "numero": 5,
+        "titre": "Vérifier le nouveau taux",
+        "voix": "Le tableau affiche immédiatement la nouvelle valeur. Vos prochains devis et vos prochaines factures l'appliqueront, sans que vous ayez à y revenir.",
+        "debut_source": 27.5,
+        "fin_source": 32.32,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.35,
+          "w": 0.96,
+          "h": 0.45
+        },
+        "annotation": "taux mis à jour",
+        "point": {
+          "x": 0.4,
+          "y": 0.56
+        }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Vos taux sont en place. Pour contrôler ce qu'ils donnent sur vos documents, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] dernières factures avec leur montant total.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_factures"
+    },
+    "resultat_affiche": {
+      "titre": "5 factures trouvées",
+      "lignes": [
+        "FA-2026-041 — 1 240,00 €",
+        "FA-2026-040 — 860,00 €"
+      ]
+    },
+    "duree": 19
+  },
+  "punchline": {
+    "texte": "Deux champs aujourd'hui, et plus jamais de facture à refaire.",
+    "duree": 5,
+    "alternatives": [
+      "Un taux déclaré, c'est un taux qu'on n'oublie plus.",
+      "La TVA se règle ici, une bonne fois.",
+      "Vos documents savent maintenant quoi appliquer."
+    ]
+  },
+  "seo": {
+    "titre": "Configurer sa TVA sur RapidoCRM — tutoriel",
+    "description": "Déclarez vos taux de TVA sur RapidoCRM : un nom, un pourcentage, et la correction en un clic. Le tutoriel pas à pas de l'Académie, en une minute.",
+    "mots_cles": [
+      "configurer sa TVA",
+      "RapidoCRM",
+      "taux de TVA",
+      "facturation",
+      "devis",
+      "configuration"
+    ],
+    "youtube_titre": "Configurer ses taux de TVA sur RapidoCRM",
+    "youtube_description": "Le tutoriel de configuration de la TVA de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "TVA",
+      "facturation",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}

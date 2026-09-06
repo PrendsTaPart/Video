@@ -1,0 +1,69 @@
+{
+  "outils": [
+    {
+      "nom": "list_products",
+      "description": "Liste les produits et offres de l'entreprise. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "q",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche libre"
+        },
+        {
+          "nom": "statut",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtre de statut"
+        },
+        {
+          "nom": "limit",
+          "type": "integer|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre maximum de résultats"
+        },
+        {
+          "nom": "periode",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": "Période"
+        }
+      ]
+    },
+    {
+      "nom": "get_product",
+      "description": "Détail complet d'un produit ou d'une offre : prix, TVA, description. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer",
+          "obligatoire": true,
+          "valeurs_autorisees": [],
+          "description": "ID du produit"
+        }
+      ]
+    },
+    {
+      "nom": "list_programmes_fidelite",
+      "description": "Liste les programmes de fidélité de l'espace, avec l'entreprise associée et ses statistiques : nombre de clients, points offerts, gains offerts. Lecture seule.",
+      "parametres": []
+    }
+  ],
+  "divergences": [
+    "Divergence : « champ Nom du produit » (8.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « zone Image du produit, bouton parcourir » (13.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « champs Date de début et Date de fin » (20.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « champ Nature » (26.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « champs Prix ht, Pourcentage tva et Prix ttc » (32.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

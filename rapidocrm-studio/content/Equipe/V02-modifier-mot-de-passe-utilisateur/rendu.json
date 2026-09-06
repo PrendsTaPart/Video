@@ -1,0 +1,92 @@
+{
+  "duree": 95.66666666666667,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Equipe/V02-modifier-mot-de-passe-utilisateur/out/master-16x9.mp4",
+      "octets": 13461657
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Equipe/V02-modifier-mot-de-passe-utilisateur/out/master-9x16.mp4",
+      "octets": 11079480
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.666666666666666
+    },
+    {
+      "nom": "titre",
+      "debut": 9.666666666666666,
+      "fin": 34
+    },
+    {
+      "nom": "demo",
+      "debut": 34,
+      "fin": 74.13333333333334
+    },
+    {
+      "nom": "claude",
+      "debut": 74.13333333333334,
+      "fin": 92.13333333333334
+    },
+    {
+      "nom": "punchline",
+      "debut": 92.13333333333334,
+      "fin": 95.66666666666667
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Le compte est créé. Le mail d'activation, lui, n'est jamais arrivé."
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Modifier son mot de passe"
+    },
+    {
+      "timecode": "00:34",
+      "titre": "Partir de la fiche du commercial"
+    },
+    {
+      "timecode": "00:38",
+      "titre": "Ouvrir « Mot de passe oublié »"
+    },
+    {
+      "timecode": "00:42",
+      "titre": "Demander le lien"
+    },
+    {
+      "timecode": "00:46",
+      "titre": "Ouvrir le mail reçu"
+    },
+    {
+      "timecode": "00:50",
+      "titre": "Choisir le nouveau mot de passe"
+    },
+    {
+      "timecode": "00:59",
+      "titre": "Se connecter"
+    },
+    {
+      "timecode": "01:10",
+      "titre": "Arriver sur son tableau de bord"
+    },
+    {
+      "timecode": "01:14",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:32",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Chaque devis, vous retapez les mêmes lignes. Et le prix TTC, vous le calculez de tête. Une fiche produit, et tout se reprend tout seul."
+  },
+  {
+    "timestamp_secondes": 9,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la page Produits, vide, et on ressort avec une fiche complète. Un seul formulaire : le nom, une image, la période de validité, la nature, le prix, la TVA et la description. Et une dernière question, sur laquelle on reviendra : est-ce que ce produit fait gagner des points de fidélité. Un point à retenir dès maintenant — le prix TTC ne se saisit pas. Vous donnez le prix hors taxes et le taux, le logiciel fait le calcul."
+  },
+  {
+    "timestamp_secondes": 39,
+    "titre": "Ouvrir la page Produits",
+    "texte": "Page Produits, encore vide. Une barre de recherche, un filtre par nature, et le bouton ajouter un produit."
+  },
+  {
+    "timestamp_secondes": 45,
+    "titre": "Nommer le produit et lui donner une image",
+    "texte": "Le nom d'abord : c'est lui qui apparaîtra sur vos documents commerciaux. Puis l'image, par le bouton parcourir — elle illustre la fiche dans la liste."
+  },
+  {
+    "timestamp_secondes": 54,
+    "titre": "Fixer sa période et sa nature",
+    "texte": "Les dates de début et de fin bornent l'offre — utile pour une promotion. Puis la nature : service, par exemple. C'est elle qui alimente le filtre de la liste."
+  },
+  {
+    "timestamp_secondes": 63,
+    "titre": "Renseigner le prix et la TVA",
+    "texte": "Le prix hors taxes, puis le taux dans la liste. Et le prix TTC se remplit tout seul. N'y touchez pas."
+  },
+  {
+    "timestamp_secondes": 70,
+    "titre": "Décrire le produit",
+    "texte": "La description, en clair : c'est ce texte que le client lira. Et la fidélité ferme le formulaire."
+  },
+  {
+    "timestamp_secondes": 76,
+    "titre": "Retrouver la fiche dans la liste",
+    "texte": "Et voilà le produit au catalogue. Au survol, trois boutons : voir, modifier, supprimer. Le premier ouvre la fiche, où se rangeront ensuite les stratégies de vente."
+  },
+  {
+    "timestamp_secondes": 86,
+    "titre": "Faites-le avec Claude",
+    "texte": "Votre catalogue se remplit. Pour le relire sans ouvrir chaque fiche, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond, prix et TVA compris. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu."
+  },
+  {
+    "timestamp_secondes": 106,
+    "titre": "À retenir",
+    "texte": "Un produit saisi une fois, et vos devis se remplissent sans vous."
+  }
+]

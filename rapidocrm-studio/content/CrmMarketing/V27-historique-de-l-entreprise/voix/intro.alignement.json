@@ -1,0 +1,137 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "part",
+    "debut": 0.186,
+    "fin": 0.348
+  },
+  {
+    "mot": "de",
+    "debut": 0.372,
+    "fin": 0.43
+  },
+  {
+    "mot": "la",
+    "debut": 0.464,
+    "fin": 0.522
+  },
+  {
+    "mot": "fiche",
+    "debut": 0.604,
+    "fin": 0.824
+  },
+  {
+    "mot": "d'une",
+    "debut": 0.848,
+    "fin": 0.998
+  },
+  {
+    "mot": "entreprise,",
+    "debut": 1.022,
+    "fin": 1.741
+  },
+  {
+    "mot": "et",
+    "debut": 1.916,
+    "fin": 2.02
+  },
+  {
+    "mot": "on",
+    "debut": 2.055,
+    "fin": 2.101
+  },
+  {
+    "mot": "ressort",
+    "debut": 2.159,
+    "fin": 2.508
+  },
+  {
+    "mot": "avec",
+    "debut": 2.531,
+    "fin": 2.682
+  },
+  {
+    "mot": "sa",
+    "debut": 2.717,
+    "fin": 2.821
+  },
+  {
+    "mot": "page",
+    "debut": 2.879,
+    "fin": 3.077
+  },
+  {
+    "mot": "d'historique.",
+    "debut": 3.1,
+    "fin": 3.738
+  },
+  {
+    "mot": "Neuf",
+    "debut": 4.063,
+    "fin": 4.284
+  },
+  {
+    "mot": "journaux",
+    "debut": 4.342,
+    "fin": 4.725
+  },
+  {
+    "mot": ":",
+    "debut": 4.772,
+    "fin": 4.795
+  },
+  {
+    "mot": "e-mails,",
+    "debut": 5.004,
+    "fin": 5.619
+  },
+  {
+    "mot": "S.M.S.,",
+    "debut": 5.863,
+    "fin": 6.641
+  },
+  {
+    "mot": "rendez-vous,",
+    "debut": 6.92,
+    "fin": 7.558
+  },
+  {
+    "mot": "contrats,",
+    "debut": 7.883,
+    "fin": 8.499
+  },
+  {
+    "mot": "documents,",
+    "debut": 8.742,
+    "fin": 9.416
+  },
+  {
+    "mot": "factures,",
+    "debut": 9.625,
+    "fin": 10.368
+  },
+  {
+    "mot": "devis,",
+    "debut": 10.646,
+    "fin": 11.169
+  },
+  {
+    "mot": "dépenses",
+    "debut": 11.447,
+    "fin": 12.005
+  },
+  {
+    "mot": "et",
+    "debut": 12.121,
+    "fin": 12.26
+  },
+  {
+    "mot": "notes.",
+    "debut": 12.318,
+    "fin": 12.725
+  }
+]

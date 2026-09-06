@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 33,
+    "titre": "Consulter l'historique des factures d'une entreprise",
+    "titre_court": "Consulter l'historique des f",
+    "slug": "consulter-l-historique-des-factures-d-une-entreprise"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'historique des factures",
+        "voix": "",
+        "debut_source": 1,
+        "fin_source": 8,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.6
+        },
+        "annotation": "Ouvrir l'historique des factures"
+      },
+      {
+        "numero": 2,
+        "titre": "Lire les colonnes du tableau",
+        "voix": "",
+        "debut_source": 8,
+        "fin_source": 11.85,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.35,
+          "w": 0.75,
+          "h": 0.3
+        },
+        "annotation": "Lire les colonnes du tableau"
+      },
+      {
+        "numero": 3,
+        "titre": "Ouvrir une facture",
+        "voix": "",
+        "debut_source": 11.85,
+        "fin_source": 15.5,
+        "zone_focus": {
+          "x": 0,
+          "y": 0.14,
+          "w": 1,
+          "h": 0.5
+        },
+        "annotation": "Ouvrir une facture"
+      },
+      {
+        "numero": 4,
+        "titre": "Lire la facture et la télécharger",
+        "voix": "",
+        "debut_source": 15.5,
+        "fin_source": 18.23,
+        "zone_focus": {
+          "x": 0,
+          "y": 0.14,
+          "w": 1,
+          "h": 0.5
+        },
+        "annotation": "Lire la facture et la télécharger"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] factures en attente avec leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_factures"
+    }
+  }
+}

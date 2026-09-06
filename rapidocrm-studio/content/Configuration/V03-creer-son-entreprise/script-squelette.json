@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "module": "Configuration",
+    "numero": 3,
+    "titre": "Créer son entreprise à l'inscription",
+    "titre_court": "Créer son entreprise à l'ins",
+    "slug": "creer-son-entreprise-a-l-inscription"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Nommer l'entreprise",
+        "voix": "",
+        "debut_source": 0,
+        "fin_source": 9,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.12,
+          "w": 0.44,
+          "h": 0.78
+        },
+        "annotation": "Nommer l'entreprise"
+      },
+      {
+        "numero": 2,
+        "titre": "Renseigner l'e-mail de l'entreprise",
+        "voix": "",
+        "debut_source": 9,
+        "fin_source": 18,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.12,
+          "w": 0.44,
+          "h": 0.78
+        },
+        "annotation": "Renseigner l'e-mail de l'entreprise"
+      },
+      {
+        "numero": 3,
+        "titre": "Saisir le SIRET",
+        "voix": "",
+        "debut_source": 18,
+        "fin_source": 26,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.12,
+          "w": 0.44,
+          "h": 0.78
+        },
+        "annotation": "Saisir le SIRET"
+      },
+      {
+        "numero": 4,
+        "titre": "Valider la création",
+        "voix": "",
+        "debut_source": 26,
+        "fin_source": 28.5,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.12,
+          "w": 0.44,
+          "h": 0.78
+        },
+        "annotation": "Valider la création"
+      },
+      {
+        "numero": 5,
+        "titre": "Définir son mot de passe",
+        "voix": "",
+        "debut_source": 28.5,
+        "fin_source": 35,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.15,
+          "w": 0.44,
+          "h": 0.7
+        },
+        "annotation": "Définir son mot de passe"
+      },
+      {
+        "numero": 6,
+        "titre": "Entrer dans son espace",
+        "voix": "",
+        "debut_source": 35,
+        "fin_source": 51.09,
+        "zone_focus": {
+          "x": 0.1,
+          "y": 0.05,
+          "w": 0.8,
+          "h": 0.85
+        },
+        "annotation": "Entrer dans son espace"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi les [nombre] dernières entreprises enregistrées, avec leur SIRET et leur dirigeant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_entreprises"
+    }
+  }
+}

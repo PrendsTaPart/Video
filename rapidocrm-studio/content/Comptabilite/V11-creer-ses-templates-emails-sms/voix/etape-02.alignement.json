@@ -1,0 +1,92 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "nom",
+    "debut": 0.221,
+    "fin": 0.348
+  },
+  {
+    "mot": "d'abord.",
+    "debut": 0.406,
+    "fin": 0.824
+  },
+  {
+    "mot": "C'est",
+    "debut": 1.149,
+    "fin": 1.393
+  },
+  {
+    "mot": "lui",
+    "debut": 1.416,
+    "fin": 1.509
+  },
+  {
+    "mot": "qu'on",
+    "debut": 1.567,
+    "fin": 1.695
+  },
+  {
+    "mot": "lira",
+    "debut": 1.718,
+    "fin": 1.939
+  },
+  {
+    "mot": "dans",
+    "debut": 1.985,
+    "fin": 2.101
+  },
+  {
+    "mot": "la",
+    "debut": 2.125,
+    "fin": 2.183
+  },
+  {
+    "mot": "liste,",
+    "debut": 2.241,
+    "fin": 2.496
+  },
+  {
+    "mot": "alors",
+    "debut": 2.531,
+    "fin": 2.786
+  },
+  {
+    "mot": "on",
+    "debut": 2.868,
+    "fin": 3.053
+  },
+  {
+    "mot": "décrit",
+    "debut": 3.111,
+    "fin": 3.448
+  },
+  {
+    "mot": "ce",
+    "debut": 3.483,
+    "fin": 3.587
+  },
+  {
+    "mot": "que",
+    "debut": 3.634,
+    "fin": 3.738
+  },
+  {
+    "mot": "le",
+    "debut": 3.762,
+    "fin": 3.82
+  },
+  {
+    "mot": "message",
+    "debut": 3.878,
+    "fin": 4.191
+  },
+  {
+    "mot": "dit.",
+    "debut": 4.214,
+    "fin": 4.447
+  }
+]
