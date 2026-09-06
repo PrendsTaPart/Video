@@ -2,7 +2,7 @@
   "serveur": "RapidoCMS tutoriels",
   "outil": "enregistrer_seo",
   "parametres": {
-    "cle_api": "rapido_ac_8d2a14623245e47f0da39b8606e3a055952d5773bf699f27",
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
     "slug": "05-mode-de-paiement-des-devis",
     "seo_titre": "Mode de paiement d'un devis — RapidoCRM",
     "seo_description": "Renseignez le mode de paiement d'un devis RapidoCRM : espèce, carte, virement ou chèque, dans le formulaire du devis. Le tutoriel de l'Académie.",

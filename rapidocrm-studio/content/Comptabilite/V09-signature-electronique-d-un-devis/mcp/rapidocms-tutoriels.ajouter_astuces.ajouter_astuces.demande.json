@@ -2,7 +2,7 @@
   "serveur": "RapidoCMS tutoriels",
   "outil": "ajouter_astuces",
   "parametres": {
-    "cle_api": "rapido_ac_8d2a14623245e47f0da39b8606e3a055952d5773bf699f27",
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
     "slug": "05-signature-electronique-d-un-devis",
     "astuces": [
       {

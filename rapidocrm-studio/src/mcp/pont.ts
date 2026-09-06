@@ -41,6 +41,17 @@ export class DemandeEnAttente extends Error {
 
 const nettoyer = (s: string): string => s.replace(/[^a-zA-Z0-9_-]+/g, '-').toLowerCase();
 
+/** Placeholder écrit à la place d'un secret dans une demande. */
+const MASQUE = '<RAPIDO_ACADEMIE_API_KEY>';
+
+/**
+ * Une demande est un fichier du dépôt : la clé d'API de l'Académie n'y a pas sa
+ * place. Elle est masquée à l'écriture — Claude Code la relit de son
+ * environnement au moment d'exécuter l'appel, comme le pipeline lui-même.
+ */
+const sansSecrets = (parametres: Record<string, unknown>): Record<string, unknown> =>
+  'cle_api' in parametres ? { ...parametres, cle_api: MASQUE } : parametres;
+
 export const dossierMcp = (dossierTuto: string): string =>
   assurerDossier(join(dossierTuto, 'mcp'));
 
@@ -79,11 +90,12 @@ export const appelMcp = <T>(
   ecrireJson(demande, {
     serveur,
     outil,
-    parametres,
+    parametres: sansSecrets(parametres),
     demande_le: new Date().toISOString(),
     consigne:
       'Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier ' +
-      '.reponse.json portant le même nom.',
+      '.reponse.json portant le même nom. Remplace chaque valeur ' +
+      `« ${MASQUE} » par la variable d'environnement du même nom.`,
   });
   // Mode collecte : une passe `MCP_PONT_COLLECTE=1` dépose TOUTES les demandes
   // d'une étape d'un coup, au lieu de s'arrêter à la première. Claude Code

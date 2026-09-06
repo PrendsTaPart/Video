@@ -11,5 +11,15 @@
       "thumbnail_vertical_url": "deb9132e46a85113"
     },
     "publie_le": "2026-09-05T23:28:12.506Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=Pxq4RqZUUVw",
+    "video_id": "Pxq4RqZUUVw",
+    "publie_le": "2026-09-06T12:34:50.551Z"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/06-planifier-un-rdv",
+    "tutoriel_id": "540067de-f816-4682-93ea-9e33a3dc5b9a",
+    "publie_le": "2026-09-06T12:38:06.054Z"
   }
 }

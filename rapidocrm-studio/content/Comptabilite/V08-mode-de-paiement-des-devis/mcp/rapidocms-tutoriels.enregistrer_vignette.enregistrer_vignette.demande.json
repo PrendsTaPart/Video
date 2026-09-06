@@ -2,7 +2,7 @@
   "serveur": "RapidoCMS tutoriels",
   "outil": "enregistrer_vignette",
   "parametres": {
-    "cle_api": "rapido_ac_8d2a14623245e47f0da39b8606e3a055952d5773bf699f27",
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
     "slug": "05-mode-de-paiement-des-devis",
     "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V08-05-mode-de-paiement-des-devis-thumb.jpg"
   },

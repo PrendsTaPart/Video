@@ -1,0 +1,21 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_seo",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-conversion-d-un-devis-en-facture",
+    "seo_titre": "Convertir un devis en facture — RapidoCRM",
+    "seo_description": "Transformez un devis accepté en facture sur RapidoCRM : signer le devis crée la facture, avec le même client et le même montant. Le tutoriel de l'Académie.",
+    "seo_mots_cles": [
+      "devis en facture",
+      "RapidoCRM",
+      "conversion",
+      "facturation",
+      "signature",
+      "CRM"
+    ],
+    "seo_og_image": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V10-05-conversion-d-un-devis-en-facture-thumb.jpg"
+  },
+  "demande_le": "2026-09-06T12:38:14.467Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

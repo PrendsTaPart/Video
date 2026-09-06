@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-planifier-un-rdv",
+    "astuces": [
+      {
+        "titre": "Le champ propose, vous choisissez",
+        "texte": "Dès les premières lettres, le champ des invités déroule les utilisateurs du compte : on clique plutôt que de taper l'adresse en entier.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Trois types, trois usages",
+        "texte": "Visioconférence, Présentiel et Téléphonique ne changent pas le formulaire, mais ils se retrouvent dans l'agenda.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "La note voyage avec le rendez-vous",
+        "texte": "Informations complémentaires est le bon endroit pour ce qu'il faut apporter : elle reste attachée au créneau.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-06T12:35:06.650Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

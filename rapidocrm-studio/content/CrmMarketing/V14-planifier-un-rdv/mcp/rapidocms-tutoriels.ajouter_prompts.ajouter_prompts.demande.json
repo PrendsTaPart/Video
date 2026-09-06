@@ -1,0 +1,20 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_prompts",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-planifier-un-rdv",
+    "prompts": [
+      {
+        "titre": "Voir les rendez-vous de la semaine",
+        "texte": "Liste-moi mes [nombre] rendez-vous de la semaine avec leur date et leur statut.",
+        "variables": [
+          "nombre"
+        ],
+        "outil_mcp": "list_rdvs"
+      }
+    ]
+  },
+  "demande_le": "2026-09-06T12:35:06.650Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

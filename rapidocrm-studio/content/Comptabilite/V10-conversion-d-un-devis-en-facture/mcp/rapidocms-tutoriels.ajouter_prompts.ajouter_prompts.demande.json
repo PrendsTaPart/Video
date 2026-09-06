@@ -1,0 +1,20 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_prompts",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-conversion-d-un-devis-en-facture",
+    "prompts": [
+      {
+        "titre": "Voir ce qui vient d'être facturé",
+        "texte": "Liste-moi mes [nombre] dernières factures avec leur statut et leur montant.",
+        "variables": [
+          "nombre"
+        ],
+        "outil_mcp": "list_factures"
+      }
+    ]
+  },
+  "demande_le": "2026-09-06T12:38:14.466Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}
