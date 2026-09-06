@@ -82,6 +82,21 @@ RapidoCRM (`UCXyptH13bJF7AVr2TZJWA-Q`).
 | 09/09 | V28 | V29 | V31 | V32 | V33 |
 | 10/09 | V34 | | | | |
 
+Ce qui est en ligne, au fil des envois — page vérifiée en HTTP 200 :
+
+| Envoi (UTC) | Tutoriel | YouTube | Page Académie |
+|---|---|---|---|
+| 06/09 06:00 | V13 Planifier un email/SMS | `E4bCEWBcVa4` | `/tutoriel/06-planifier-un-email-sms` |
+| 06/09 08:00 | *V09 compta* Signer un devis | `LBpOI2ARMvs` | `/tutoriel/05-signature-electronique-d-un-devis` |
+| 06/09 10:00 | V14 Planifier un rendez-vous | `Pxq4RqZUUVw` | `/tutoriel/06-planifier-un-rdv` |
+| 06/09 12:00 | *V10 compta* Devis en facture | `QOfn1ZMpzo0` | `/tutoriel/05-conversion-d-un-devis-en-facture` |
+
+Le connecteur YouTube MCP s'est déconnecté de la session le 6 au matin.
+Les identifiants se relèvent alors sur le flux RSS public de la chaîne,
+`https://www.youtube.com/feeds/videos.xml?channel_id=UCXyptH13bJF7AVr2TZJWA-Q`,
+et chaque lien est vérifié en HTTP avant d'être écrit. Le reste de la
+procédure ne change pas.
+
 Les vingt-quatre médias sont déposés dans la bibliothèque RapidoCMS et
 `publier:cms` est passé pour les seize. Il ne manque à chaque page que
 l'URL YouTube.
@@ -116,3 +131,16 @@ Et surtout : **la QA ne voit pas ces fuites.** Elle vérifie que les zones
 *déclarées* sont floutées, pas qu'il ne reste rien de lisible ailleurs. Seule
 la relecture des frames rendues les trouve. Les seize ont été relues aux
 moments les plus risqués.
+
+## La clé d'API de l'Académie ne va pas dans le dépôt
+
+Le pont MCP recopiait `parametres` tel quel dans chaque `*.demande.json`, et
+ces fichiers sont versionnés : la clé de l'Académie s'est retrouvée en clair
+dans trente-sept fichiers suivis, sur plusieurs commits. `pont.ts` la masque
+désormais à l'écriture — `<RAPIDO_ACADEMIE_API_KEY>` — et la consigne de la
+demande dit de relire la vraie valeur dans l'environnement. Les fichiers de
+l'arbre de travail sont nettoyés.
+
+L'historique déjà poussé la contient encore. Révoquer la clé et en générer
+une autre dans `/admin/parametres` est une décision de Michael, pas une
+opération à mener depuis ici.
