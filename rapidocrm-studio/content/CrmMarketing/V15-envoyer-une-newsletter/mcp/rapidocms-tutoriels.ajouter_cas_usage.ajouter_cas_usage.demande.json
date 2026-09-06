@@ -1,0 +1,24 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_cas_usage",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-envoyer-une-newsletter",
+    "cas_usage": [
+      {
+        "titre": "Annoncer la carte de saison",
+        "contexte": "La nouvelle carte sort lundi et vous voulez prévenir tout le fichier.",
+        "action": "Ouvrez Envoyer une newsletter, choisissez la cible « entreprises », datez l'envoi au lundi 10:30 et prenez le modèle d'annonce.",
+        "resultat": "Le bandeau « Campagne ajoutée avec succès! » confirme l'enregistrement."
+      },
+      {
+        "titre": "Reprogrammer un envoi trop tardif",
+        "contexte": "L'envoi avait été calé à 17:30, personne ne le lira le soir.",
+        "action": "Rouvrez la fenêtre et corrigez la date et l'heure d'envoi.",
+        "resultat": "La nouvelle heure remplace l'ancienne dans le champ."
+      }
+    ]
+  },
+  "demande_le": "2026-09-06T14:12:58.769Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

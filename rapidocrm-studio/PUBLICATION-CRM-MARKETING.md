@@ -90,6 +90,7 @@ Ce qui est en ligne, au fil des envois — page vérifiée en HTTP 200 :
 | 06/09 08:00 | *V09 compta* Signer un devis | `LBpOI2ARMvs` | `/tutoriel/05-signature-electronique-d-un-devis` |
 | 06/09 10:00 | V14 Planifier un rendez-vous | `Pxq4RqZUUVw` | `/tutoriel/06-planifier-un-rdv` |
 | 06/09 12:00 | *V10 compta* Devis en facture | `QOfn1ZMpzo0` | `/tutoriel/05-conversion-d-un-devis-en-facture` |
+| 06/09 14:00 | V15 Envoyer une newsletter | `_VW4v9Ldha0` | `/tutoriel/06-envoyer-une-newsletter` |
 
 Le connecteur YouTube MCP s'est déconnecté de la session le 6 au matin.
 Les identifiants se relèvent alors sur le flux RSS public de la chaîne,
