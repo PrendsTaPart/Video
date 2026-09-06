@@ -1,0 +1,45 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "rapido_ac_8d2a14623245e47f0da39b8606e3a055952d5773bf699f27",
+    "slug": "05-signature-electronique-d-un-devis",
+    "transcription": "Le client dit oui. Vous, vous imprimez, vous faites signer, vous scannez. Le devis se signe à l'écran, en trois gestes.\n\nOn part de la liste des devis, et on ressort avec un devis signé. Tout se passe dans le logiciel : on ouvre le devis en pleine page, on trace la signature dans le cadre prévu, on enregistre.\n\nLes trois points de la ligne. Le menu d'un devis porte une entrée de plus : Signer.\n\nLe devis s'ouvre en pleine page.\n\nLe cadre est en bas, sous les totaux. On signe à la souris.\n\nOn remonte, et on enregistre. Le bouton est en haut.\n\nLe devis est signé. Pour voir ceux qui attendent encore une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nUn devis signé à l'écran, c'est un aller-retour de moins.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 7,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 20,
+        "titre": "Ouvrir le menu du devis"
+      },
+      {
+        "debut": 25,
+        "titre": "Ouvrir le devis à signer"
+      },
+      {
+        "debut": 28,
+        "titre": "Signer dans le cadre"
+      },
+      {
+        "debut": 31,
+        "titre": "Remonter et enregistrer"
+      },
+      {
+        "debut": 35,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 48,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-06T08:34:43.537Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

@@ -11,5 +11,15 @@
       "thumbnail_vertical_url": "8d8f7fd9e15e6066"
     },
     "publie_le": "2026-09-05T23:28:08.531Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=E4bCEWBcVa4",
+    "video_id": "E4bCEWBcVa4",
+    "publie_le": "2026-09-06T08:34:28.254Z"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/06-planifier-un-email-sms",
+    "tutoriel_id": "412cbce8-a3a5-4176-b59e-fde27eef8246",
+    "publie_le": "2026-09-06T08:37:53.263Z"
   }
 }

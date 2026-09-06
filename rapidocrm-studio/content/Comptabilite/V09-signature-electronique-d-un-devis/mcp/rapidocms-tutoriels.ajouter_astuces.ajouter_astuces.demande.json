@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "rapido_ac_8d2a14623245e47f0da39b8606e3a055952d5773bf699f27",
+    "slug": "05-signature-electronique-d-un-devis",
+    "astuces": [
+      {
+        "titre": "Le cadre est en bas à droite",
+        "texte": "Sous les totaux, après les informations bancaires. Le devis s'ouvre déjà à cette hauteur.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Deux boutons en haut",
+        "texte": "enregistrer garde la signature, télécharger sort le fichier. Ils sont côte à côte.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Signer n'apparaît que sur un devis",
+        "texte": "Le menu Actions d'un devis porte cinq entrées ; celui d'une facture n'en porte pas Signer.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-06T08:34:43.538Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

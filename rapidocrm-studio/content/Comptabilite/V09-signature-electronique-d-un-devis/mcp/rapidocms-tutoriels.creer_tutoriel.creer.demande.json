@@ -1,0 +1,39 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "rapido_ac_8d2a14623245e47f0da39b8606e3a055952d5773bf699f27",
+    "slug": "05-signature-electronique-d-un-devis",
+    "module": "05-comptabilite",
+    "numero": 9,
+    "titre": "Signer un devis à l'écran",
+    "titre_court": "Signer un devis",
+    "accroche": "Le devis se signe à l'écran, en trois gestes.",
+    "explication": "On part de la liste des devis, et on ressort avec un devis signé. Tout se passe dans le logiciel : on ouvre le devis en pleine page, on trace la signature dans le cadre prévu, on enregistre.\n\n1. Ouvrir le menu du devis — Les trois points de la ligne. Le menu d'un devis porte une entrée de plus : Signer.\n2. Ouvrir le devis à signer — Le devis s'ouvre en pleine page.\n3. Signer dans le cadre — Le cadre est en bas, sous les totaux. On signe à la souris.\n4. Remonter et enregistrer — On remonte, et on enregistre. Le bouton est en haut.\n\nLe devis est signé. Pour voir ceux qui attendent encore une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir le menu du devis",
+        "texte": "Les trois points de la ligne. Le menu d'un devis porte une entrée de plus : Signer."
+      },
+      {
+        "titre": "Ouvrir le devis à signer",
+        "texte": "Le devis s'ouvre en pleine page."
+      },
+      {
+        "titre": "Signer dans le cadre",
+        "texte": "Le cadre est en bas, sous les totaux. On signe à la souris."
+      },
+      {
+        "titre": "Remonter et enregistrer",
+        "texte": "On remonte, et on enregistre. Le bouton est en haut."
+      }
+    ],
+    "a_quoi_ca_sert": "Faire signer un devis sans l'imprimer ni le scanner : on l'ouvre en pleine page, on trace la signature à la souris dans le cadre prévu, et on enregistre. Le devis signé reste attaché au dossier.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir un devis déjà créé"
+    ]
+  },
+  "demande_le": "2026-09-06T08:34:43.535Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}
