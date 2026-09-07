@@ -1,10 +1,20 @@
 # Vidéo de démo — review TikTok for Developers
 
-Livrable : `renders/braindcast-tiktok-demo.mp4`
-— 1 min 52 (112,4 s) · 1080 × 2316 · H.264 · 30 fps · **sans piste audio** · 7,9 Mo · `+faststart`.
+**Livrable à uploader : `renders/braindcast-tiktok-demo.mp4`**
+— 1 min 52 (112,4 s) · 1080 × 2316 · H.264 30 fps · narration anglaise AAC 128 kb/s mono · 9,1 Mo · `+faststart`.
 
 Rush d'origine : `source/Screen_Recording_20260907_144503_Chrome.mp4` (125,8 s, 1080 × 2316).
-Reconstruction : `./build.sh` (un seul passage ffmpeg, pas de ré-encodage intermédiaire).
+
+Reconstruction, dans cet ordre :
+
+```
+./build.sh        # image seule → renders/braindcast-tiktok-demo-muet.mp4  (7,9 Mo)
+./build-voice.sh  # + narration → renders/braindcast-tiktok-demo.mp4       (9,1 Mo)
+```
+
+`build.sh` fait tout le montage en un seul passage ffmpeg, sans ré-encodage
+intermédiaire. `build-voice.sh` ne touche pas à l'image (`-c:v copy`) : le
+master muet et le livrable final ont exactement les mêmes 3 371 images.
 
 ---
 
@@ -58,6 +68,34 @@ montage final, puis vérifié sur 25 images extraites du rendu.
 
 Un seul décalage vertical ponctuel : le sous-titre 24,0 → 27,3 s porte
 `MarginV=580`, sinon il masquait la ligne « Poids · 22,4 Mo » qu'il cite.
+
+## Narration
+
+Voix de synthèse ElevenLabs — voix « Joe – Warm, Conversational & Reassuring »
+(`v3t7FVNkay5Z0e3BHse1`), modèle `eleven_multilingual_v2`. Anglais, comme les
+sous-titres : l'interface filmée est en français, le reviewer ne l'est pas.
+
+18 répliques dans `voice/b01.mp3` … `voice/b18.mp3`. `voice/script.tsv` porte,
+pour chacune, son point d'ancrage sur le montage final et le texte dit :
+
+```
+b05	27.70	First we ask TikTok for the account's real settings.
+```
+
+Les points d'ancrage sont calés sur le plan que la réplique décrit, pas sur les
+sous-titres — une réplique est plus courte que sa fenêtre de sous-titre. Exemple :
+`b05` tombe exactement sur « Vérification des réglages de votre compte de
+destination… ».
+
+`build-voice.sh` refuse de rendre si deux répliques se chevauchent ou si l'une
+déborde de la fin. Contrôle du rendu : les 18 ancrages sont respectés à l'image
+près, le plus petit silence entre deux répliques est de 0,70 s, la parole occupe
+65 s sur 112 — le reviewer a le temps de regarder l'écran entre deux phrases.
+
+Niveaux : −17,3 LUFS intégré, crête −1,3 dBFS, pas d'écrêtage.
+
+Pour changer une phrase : regénérer le `bNN.mp3` correspondant, ajuster son
+ancrage dans `script.tsv` si la durée change, relancer `./build-voice.sh`.
 
 ---
 

@@ -5,12 +5,13 @@
 #
 #   ./build.sh
 #
-# Sortie : renders/braindcast-tiktok-demo.mp4
+# Sortie : renders/braindcast-tiktok-demo-muet.mp4 (image seule, sans voix)
+#          Enchaîner ./build-voice.sh pour le livrable final.
 set -euo pipefail
 cd "$(dirname "$0")"
 
 SRC=source/Screen_Recording_20260907_144503_Chrome.mp4
-OUT=renders/braindcast-tiktok-demo.mp4
+OUT=renders/braindcast-tiktok-demo-muet.mp4
 FB=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
 FR=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
 

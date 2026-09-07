@@ -1,0 +1,18 @@
+b01	0.15	Braindcast by RapidoCMS — Login Kit and Content Posting API.
+b02	5.20	The creator connects their own TikTok account. Two scopes are requested: profile info, and video publish.
+b03	13.20	The account is connected. The creator can disconnect it at any time.
+b04	21.30	They pick a video they made themselves. It is sent as is.
+b05	27.70	First we ask TikTok for the account's real settings.
+b06	33.20	The creator writes their own caption, and chooses who can see it.
+b07	39.30	Comment, Duet and Stitch stay off, as TikTok's settings require.
+b08	45.10	Your brand labels the post promotional content. Branded content, paid partnership.
+b09	50.70	Turn disclosure on without choosing, and publishing is blocked.
+b10	56.30	Every rule is checked before any call to TikTok.
+b11	61.90	The Music Usage Confirmation sits above the button.
+b12	66.50	Nothing is sent to TikTok before this tap.
+b13	71.90	TikTok accepts the post. We poll the status endpoint and show the real state.
+b14	80.30	Publication history: one status per post. Green, published. Grey, still uploading.
+b15	88.00	Red is not a bug. It's the API's reason: an unaudited client posts to private only.
+b16	96.20	The creator's TikTok profile. Every post is there, private.
+b17	101.30	Live on TikTok: same account, same caption, private for now.
+b18	107.60	Approved by the creator before anything is sent.
