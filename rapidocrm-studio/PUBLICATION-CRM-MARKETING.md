@@ -93,6 +93,8 @@ Ce qui est en ligne, au fil des envois — page vérifiée en HTTP 200 :
 | 06/09 14:00 | V15 Envoyer une newsletter | `_VW4v9Ldha0` | `/tutoriel/06-envoyer-une-newsletter` |
 | 07/09 06:00 | V17 Créer un devis | `K3yiDpOHW7g` | `/tutoriel/06-creer-un-devis` |
 | 07/09 08:00 | *V11 compta* Créer un template SMS | `-ayFuImidp4` | `/tutoriel/05-creer-ses-templates-emails-sms` |
+| 07/09 10:00 | V18 Créer une facture | `edjve6F2HAQ` | `/tutoriel/06-creer-une-facture` |
+| 07/09 12:00 | *V12 compta* Retrouver un devis | `5FJO1-iGE-I` | `/tutoriel/05-historique-des-devis` |
 
 Le connecteur YouTube MCP s'est déconnecté de la session le 6 au matin.
 Les identifiants se relèvent alors sur le flux RSS public de la chaîne,
@@ -147,3 +149,24 @@ l'arbre de travail sont nettoyés.
 L'historique déjà poussé la contient encore. Révoquer la clé et en générer
 une autre dans `/admin/parametres` est une décision de Michael, pas une
 opération à mener depuis ici.
+
+## Rapprocher un envoi YouTube à son tutoriel
+
+Le connecteur YouTube MCP est tombé le 6 septembre au matin et n'est pas
+revenu : les identifiants se relèvent sur le flux RSS public de la chaîne.
+Deux pièges s'y cachent.
+
+Le titre du flux se rapproche de `seo.youtube_titre`, jamais de `seo.titre`
+ni de l'heure d'envoi. C'est bien `youtube_titre` que `publier-youtube`
+envoie à YouTube, et les deux champs divergent : V12 est titrée « Retrouver
+un devis » côté SEO et « Retrouver un devis dans l'historique » sur YouTube.
+Se fier au créneau horaire ne marche pas non plus — le 7 au matin, le
+tutoriel de 06:00 s'appelait « Créer un devis » et celui de 08:00 « Créer un
+template SMS », ce qui laisse croire à une inversion des modules alors que
+le calendrier était juste.
+
+Un `curl` sur `/watch` peut rendre 302 puis 429 : c'est une limitation de
+débit de Google, pas une vidéo absente. Le contrôle qui tranche est oEmbed,
+`https://www.youtube.com/oembed?url=<url encodée>&format=json` — 200 avec le
+bon titre et la bonne chaîne, 404 pour un identifiant inventé. Encoder l'URL
+n'est pas facultatif : l'identifiant de V11 commence par un tiret.

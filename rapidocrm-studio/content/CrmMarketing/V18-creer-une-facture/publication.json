@@ -11,5 +11,15 @@
       "thumbnail_vertical_url": "683a7d75052c1028"
     },
     "publie_le": "2026-09-05T23:28:24.272Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=edjve6F2HAQ",
+    "video_id": "edjve6F2HAQ",
+    "publie_le": "2026-09-07T12:21:44.845Z"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/06-creer-une-facture",
+    "tutoriel_id": "96acd10f-341f-4666-a3d3-048f7638a66a",
+    "publie_le": "2026-09-07T12:23:39.716Z"
   }
 }

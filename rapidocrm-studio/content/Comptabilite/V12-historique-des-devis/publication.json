@@ -11,5 +11,15 @@
       "thumbnail_vertical_url": "d3e0e8d2b97a5e3a"
     },
     "publie_le": "2026-09-05T17:09:56.628Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=5FJO1-iGE-I",
+    "video_id": "5FJO1-iGE-I",
+    "publie_le": "2026-09-07T12:21:47.089Z"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/05-historique-des-devis",
+    "tutoriel_id": "92b18a03-f8a0-4dc6-9875-1b225d9e27c4",
+    "publie_le": "2026-09-07T12:25:12.686Z"
   }
 }
