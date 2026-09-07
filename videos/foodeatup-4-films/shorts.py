@@ -9,7 +9,7 @@ Structure commune, calée sur la durée réelle des voix off :
 import subprocess
 import sys
 
-from build import BLUE, INK, ORANGE, WHITE, build_film, card, end_card, hf, logo_corner, to_16x9, vo
+from build import BLUE, INK, ORANGE, WHITE, anim, build_film, card, end_card, hf, logo_corner, to_16x9, vo
 
 MUSIC = "assets/music/musique-underscore-99bpm-alt.mp3"
 TAGLINE = ["Une infinité de solutions", "pour gérer votre restaurant"]
@@ -73,7 +73,8 @@ def short(name):
     audio = dict(music=MUSIC, music_start=12.0, music_gain=-12.0, music_fade_out=1.8, src_gain=-17.0, duck=0.32,
                  vo=[(vo(f"{code}a"), 0.3), (vo(f"{code}b"), t[2] + 0.25), (vo("C3"), t[4] + 0.25),
                      (vo("C4"), acc + 0.5)])
-    out = build_film(f"foodeatup-short-{name}", W, H, segs, overlays, audio)
+    out = build_film(f"foodeatup-short-{name}", W, H, segs, overlays, audio,
+                     hook=anim("hook-logo"), sting=anim("sting-logo"))
     to_16x9(out, f"foodeatup-short-{name}")
 
 

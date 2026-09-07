@@ -1,11 +1,16 @@
 """Les quatre montages FoodEatUp. Chaque fonction = un film (voir scripts/VOIX-OFF.md)."""
-from build import (BLUE, CREAM, INK, ORANGE, WHITE, OUT, REPO, build_film, card, end_card, hf, logo_corner,
-                   mix_audio, to_16x9, vo)
+from build import (BLUE, CREAM, INK, ORANGE, WHITE, OUT, REPO, anim, build_film, card, end_card, hf,
+                   logo_corner, mix_audio, to_16x9, vo)
 
 MUSIC_CLIP = "assets/music/musique-clip-123bpm.mp3"
 MUSIC_UNDER = "assets/music/musique-underscore-99bpm.mp3"
 MUSIC_UNDER_ALT = "assets/music/musique-underscore-99bpm-alt.mp3"
 TAGLINE = ["Une infinité de solutions", "pour gérer votre restaurant"]
+
+# Animations du dépôt, jouées avant et après chaque film (voir assets/anim/).
+HOOK = lambda: anim("hook-logo")            # 1,5 s : le 8 se forme, la marque apparaît
+STING = lambda: anim("sting-infini-3d")     # 6 s : le symbole infini en 3D
+STING_COURT = lambda: anim("sting-logo")    # 2 s : « Vous connaissez ce signe »
 # Règle de la session : uniquement des plans de la bibliothèque Higgsfield.
 # Aucun screencast, aucun plan hero-video, aucun avatar HeyGen.
 
@@ -74,7 +79,7 @@ def clip():
         t.append(t[-1] + s["dur"])
     audio = dict(music=MUSIC_CLIP, music_gain=-6.0, music_fade_out=1.2, src_gain=-24.0, duck=0.35,
                  vo=[(vo("C1"), 0.35), (vo("C2"), t[16] + 0.4), (vo("C3"), t[20] + 0.3), (vo("C4"), t[-1] + 0.4)])
-    out = build_film("foodeatup-clip", W, H, segs, overlays, audio)
+    out = build_film("foodeatup-clip", W, H, segs, overlays, audio, hook=HOOK(), sting=STING())
     to_16x9(out, "foodeatup-clip")
 
 
@@ -124,7 +129,7 @@ def presentation():
         t.append(t[-1] + s["dur"])
     audio = dict(music=MUSIC_UNDER, music_gain=-13.0, music_fade_out=2.5, src_gain=-20.0, duck=0.3,
                  vo=[(vo(code), t[i] + 0.35) for i, code in blocks])
-    out = build_film("foodeatup-presentation", W, H, segs, overlays, audio)
+    out = build_film("foodeatup-presentation", W, H, segs, overlays, audio, hook=HOOK(), sting=STING())
     to_16x9(out, "foodeatup-presentation")
 
 
@@ -161,7 +166,7 @@ def commercial():
         t.append(t[-1] + s["dur"])
     audio = dict(music=MUSIC_UNDER_ALT, music_start=8.0, music_gain=-12.0, music_fade_out=2.0, src_gain=-16.0, duck=0.3,
                  vo=[(vo("A1"), 0.3), (vo("A2"), t[2] + 0.2), (vo("C3"), t[7] + 0.2), (vo("A4"), t[9] + 0.5)])
-    out = build_film("foodeatup-commercial", W, H, segs, overlays, audio)
+    out = build_film("foodeatup-commercial", W, H, segs, overlays, audio, hook=HOOK(), sting=STING())
     to_16x9(out, "foodeatup-commercial")
 
 
@@ -216,7 +221,7 @@ def demo():
         t.append(t[-1] + s["dur"])
     audio = dict(music=MUSIC_UNDER, music_gain=-16.0, music_fade_out=3.0, src_gain=-26.0, duck=0.3,
                  vo=[(vo(code), t[i] + 0.3) for i, code in blocks])
-    out = build_film("foodeatup-demo", W, H, segs, overlays, audio)
+    out = build_film("foodeatup-demo", W, H, segs, overlays, audio, hook=HOOK(), sting=STING())
     to_16x9(out, "foodeatup-demo")
 
 
@@ -269,7 +274,7 @@ def avant_apres():
         t.append(t[-1] + s["dur"])
     audio = dict(music=MUSIC_UNDER, music_gain=-13.0, music_fade_out=2.2, src_gain=-19.0, duck=0.3,
                  vo=[(vo("P1"), 0.3), (vo("A2"), t[4] + 0.2), (vo("P6"), t[8] + 0.2), (vo("C4"), t[-1] + 0.6)])
-    out = build_film("foodeatup-avant-apres", W, H, segs, overlays, audio)
+    out = build_film("foodeatup-avant-apres", W, H, segs, overlays, audio, hook=HOOK(), sting=STING())
     to_16x9(out, "foodeatup-avant-apres")
 
 
@@ -311,5 +316,5 @@ def teaser():
         t.append(t[-1] + s["dur"])
     audio = dict(music=MUSIC_CLIP, music_start=14.0, music_gain=-7.0, music_fade_out=1.5, src_gain=-22.0, duck=0.35,
                  vo=[(vo("C3"), t[9] + 0.1), (vo("C4"), t[-1] + 0.5)])
-    out = build_film("foodeatup-teaser", W, H, segs, overlays, audio)
+    out = build_film("foodeatup-teaser", W, H, segs, overlays, audio, hook=HOOK(), sting=STING())
     to_16x9(out, "foodeatup-teaser")

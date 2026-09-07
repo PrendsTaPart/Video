@@ -23,7 +23,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent
 REPO = ROOT.parent.parent
-WORK = ROOT / "work"
+WORK = ROOT / (os.environ.get("WORKDIR") or "work")   # WORKDIR permet de paralléliser plusieurs rendus
 OUT = ROOT / "out"
 HF = ROOT / "assets" / "higgsfield"
 FONTS = REPO / "videos" / "stories-foodeatup-30j" / "assets" / "fonts"
@@ -49,10 +49,13 @@ def run(cmd, quiet=True):
 
 
 def duration(path):
-    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "json", str(path)],
-                       capture_output=True, text=True)
-    if r.returncode == 0:
-        return float(json.loads(r.stdout)["format"]["duration"])
+    try:
+        r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "json", str(path)],
+                           capture_output=True, text=True)
+        if r.returncode == 0:
+            return float(json.loads(r.stdout)["format"]["duration"])
+    except FileNotFoundError:
+        pass                                   # ffprobe absent : on lit la durée dans la sortie de ffmpeg
     r = subprocess.run(["ffmpeg", "-i", str(path)], capture_output=True, text=True).stderr
     import re
     m = re.search(r"Duration: (\d+):(\d+):([\d.]+)", r)
@@ -348,25 +351,47 @@ def vo(code):
     return ROOT / "assets" / "vo" / f"{code}.mp3"
 
 
-def build_film(name, W, H, segments, overlays_fn, audio_kwargs):
+ANIM = ROOT / "assets" / "anim"
+
+
+def anim(name, start=0.0, dur=None):
+    """Une animation réutilisable du dépôt (accroche ou signature), voir assets/anim/."""
+    p = ANIM / f"{name}.mp4"
+    d = dur if dur is not None else duration(p) - start
+    return dict(src=p, start=start, dur=round(d, 3), fit="cover")
+
+
+def build_film(name, W, H, segments, overlays_fn, audio_kwargs, hook=None, sting=None):
+    """hook : animation jouée avant le film. sting : animation jouée après le carton final.
+    Les repères passés à overlays_fn et les voix off sont décalés automatiquement du hook."""
     WORK.mkdir(exist_ok=True)
     OUT.mkdir(exist_ok=True)
-    t = 0.0
+    hook_d = hook["dur"] if hook else 0.0
+    t = hook_d
     times = []
     for s in segments:
         times.append(t)
         t += s["dur"]
-    total = round(t, 3)
+    total = round(t, 3)                       # fin du contenu (le carton final s'y accroche)
+    full = list(segments)
+    if hook:
+        full = [hook] + full
+    if sting:
+        full = full + [sting]
+    grand_total = round(total + (sting["dur"] if sting else 0.0), 3)
     video = WORK / f"{name}-video.mp4"
     if os.environ.get("REMIX") and video.exists():
         print(f"{name}: remix audio seul sur {video.name}")
     else:
-        segs = [render_segment(i, s, W, H) for i, s in enumerate(segments)]
+        segs = [render_segment(i, s, W, H) for i, s in enumerate(full)]
         base = concat(segs, name)
         ovs = overlays_fn(W, H, times, total)
         video = apply_overlays(base, ovs, name, W, H)
-    final = mix_audio(video, name, total, **audio_kwargs)
-    print(f"{name}: {total:.1f}s -> {final}")
+    kw = dict(audio_kwargs)
+    if hook_d:
+        kw["vo"] = [(f, tt + hook_d) for f, tt in kw.get("vo", ())]
+    final = mix_audio(video, name, grand_total, **kw)
+    print(f"{name}: {grand_total:.1f}s -> {final}")
     return final
 
 
