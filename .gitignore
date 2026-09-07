@@ -17,3 +17,7 @@ videos/**/work/
 
 # Le journal des appels MCP est une trace d'exécution, pas du code.
 .claude/journal-mcp.jsonl
+
+# Rendu intermédiaire du montage TikTok (image seule) : regénéré par build.sh
+videos/braindcast-tiktok-demo/renders/*-muet.mp4
+videos/braindcast-tiktok-demo/voice/voiceover.wav
