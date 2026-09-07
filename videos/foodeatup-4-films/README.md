@@ -1,9 +1,10 @@
-# FoodEatUp — 10 films montés à partir de la bibliothèque Higgsfield
+# FoodEatUp — 12 films montés à partir de la bibliothèque Higgsfield
 
 Session du 2026-09-07. **Règle posée par Michael : uniquement des plans de la bibliothèque
 Higgsfield.** Aucun screencast du logiciel, aucun plan du film héros, aucun avatar HeyGen
 dans les livrables. La bibliothèque complète a été relevée (532 plans), téléchargée et
-analysée ; s'y ajoutent deux musiques originales et 34 voix off ElevenLabs.
+analysée et taguée plan par plan ; s'y ajoutent deux musiques originales et 34 voix off
+ElevenLabs.
 
 ## Livrables (`out/`)
 
@@ -18,7 +19,9 @@ analysée ; s'y ajoutent deux musiques originales et 34 voix off ElevenLabs.
 | Short « Le planning » (équipe) | `foodeatup-short-equipe.mp4` (+ `-16x9`) | ~26 s | 1080×1920 | Paul K |
 | Short « L'addition » (compta) | `foodeatup-short-compta.mp4` (+ `-16x9`) | ~25 s | 1080×1920 | Paul K |
 | Short « La double réservation » | `foodeatup-short-reservations.mp4` (+ `-16x9`) | ~25 s | 1080×1920 | Paul K |
-| Short « L'avis du soir » | `foodeatup-short-avis.mp4` (+ `-16x9`) | ~26 s | 1080×1920 | Paul K |
+| Short « L'avis du soir » | `foodeatup-short-avis.mp4` (+ `-16x9`) | ~24 s | 1080×1920 | Paul K |
+| Avant/après « Le même restaurant, deux fois » | `foodeatup-avant-apres.mp4` (+ `-16x9`) | ~40 s | 1080×1920 | Anaïs |
+| Bande-annonce | `foodeatup-teaser.mp4` (+ `-16x9`) | ~22 s | 1080×1920 | Paul K (signature seule) |
 
 Les versions `-16x9` posent le 9:16 sur son propre fond flouté (LinkedIn, site, YouTube).
 
@@ -27,7 +30,11 @@ Les versions `-16x9` posent le 9:16 sur son propre fond flouté (LinkedIn, site,
 - **Higgsfield** : **532 plans** relevés via l'API (6 pages d'historique, jusqu'à `next_cursor`
   nul), tous téléchargés dans `assets/higgsfield/` (lien symbolique vers le cache de session,
   non versionné) ; catalogue + prompts + analyse dans `assets/higgsfield-catalogue.json` et
-  `HIGGSFIELD-BIBLIOTHEQUE.md`. Aucun plan n'a été régénéré.
+  `HIGGSFIELD-BIBLIOTHEQUE.md`, tags complets dans `assets/higgsfield-tags.json`.
+  Aucun plan n'a été régénéré. Le relevé a fait apparaître une matière que le premier
+  passage sur 150 plans ne montrait pas : une série de **diptyques avant/après** tournés au
+  même endroit, à la même heure, avec la même personne (index 434-481), et une série de
+  plans de clôture et de logo. C'est de là que viennent les deux derniers films.
 - **Musique** (ElevenLabs Music v2, instrumentales originales, `assets/music/`) :
   `musique-clip-123bpm.mp3` (62 s, electro-pop french touch, break au milieu) et
   `musique-underscore-99bpm.mp3` (2 min, piano/guitare/cordes sous voix), plus une variante `-alt` de chaque.
@@ -45,12 +52,13 @@ Les versions `-16x9` posent le 9:16 sur son propre fond flouté (LinkedIn, site,
 ```bash
 cd videos/foodeatup-4-films
 python3 build.py clip            # ou presentation | commercial | demo | all
+python3 build.py avant_apres teaser
 python3 shorts.py                # les six shorts ; ou shorts.py haccp stock ...
 REMIX=1 python3 build.py clip    # ne refait que le mixage audio
 ```
 
 `build.py` = moteur (découpe, mise à l'échelle, enchaînement, cartons Pillow, mixage avec
-ducking sous la voix, loudnorm −14 LUFS). `films.py` = les quatre films longs et `shorts.py` les six
+ducking sous la voix, loudnorm −14 LUFS). `films.py` = les six films longs et `shorts.py` les six
 shorts, plan par plan, avec les timecodes d'entrée dans chaque source. Le ffmpeg utilisé est le binaire statique
 d'`imageio-ffmpeg` (pas de `drawtext`, d'où les cartons PNG).
 

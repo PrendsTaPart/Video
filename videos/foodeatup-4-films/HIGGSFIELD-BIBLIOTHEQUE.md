@@ -6,8 +6,10 @@ téléchargés dans `assets/higgsfield/vNNN.mp4` (numérotés du plus récent au
 **Aucun plan n'a été régénéré** : règle du dépôt, la bibliothèque se réutilise.
 
 Catalogue complet avec les prompts : `assets/higgsfield-catalogue.json`.
-Les 150 plans les plus récents (index 0-149) sont tagués un par un ci-dessous ; le tagging
-des 382 suivants a été lancé dans la même session et se poursuit.
+**Les 532 plans sont tagués** (série, lieu, action, problème de restaurant, ressort comique,
+dialogue, nombre de plans internes, note de montage) : `assets/higgsfield-tags.json`, et les
+tags sont fusionnés dans le catalogue. Le tableau en fin de document détaille les 150 plans
+les plus récents ; les autres se lisent dans le JSON.
 
 ## Ce que dit le relevé
 
@@ -22,6 +24,10 @@ des 382 suivants a été lancé dans la même session et se poursuit.
 sont en 720×1280**. C'est pourquoi les quatre films et les six shorts ont un master vertical,
 la version 16:9 étant dérivée au montage (fond flouté).
 
+Répartition des 532 plans : saison restaurant 253 · film héros FoodEatUp 121 ·
+cuisine « objet net / chef flou » 81 · Plan'It corporate 52 · époques 19 · divers 6.
+**459 plans sur 532 sont exploitables pour un film FoodEatUp.**
+
 ## Familles de prompts
 
 - **Saison restaurant « Michael fait son cinéma »** — Michael en veste ou tablier FoodEatUp,
@@ -30,6 +36,17 @@ la version 16:9 étant dérivée au montage (fond flouté).
 - **Plans « objet net, chef flou »** (index 25, 141-145) — un objet du restaurant change d'état
   à la cinquième seconde, le chef reste flou derrière. Écrits pour recevoir une voix off :
   ils servent de plans « solution » dans la présentation, la pub et les shorts.
+- **Diptyques avant/après** (index 434-481) — le même lieu, la même heure et la même personne,
+  filmés une fois sans le logiciel et une fois avec : classeur papier contre thermomètre lu au
+  téléphone, carnet et trois appareils contre une seule tablette, ticket froissé contre écran
+  mural, pile de bons de livraison contre prévision qui défile. C'est la matière du film
+  « avant/après ».
+- **Plans de clôture et de logo** (272, 406, 484, 510, 516) — salut de troupe, symbole infini
+  en 3D, trace lumineuse qui dessine la boucle. Ils ferment le film avant/après et la
+  bande-annonce.
+- **Plans spectaculaires** (279, 282, 285, 315, 319, 331, 443, 468) — le coup de feu filmé
+  comme une bataille, l'intérieur du lave-verres, l'assiette qui tombe dans une piscine. Ce
+  sont les plans de la bande-annonce.
 - **Plan'It corporate**, **Michael remonte le temps** (époques), **Rapido** — hors sujet
   FoodEatUp, non utilisés.
 
@@ -77,6 +94,8 @@ la version 16:9 étant dérivée au montage (fond flouté).
 | Short compta | 47, 46, 25, 141, 28, 19 |
 | Short réservations | 89, 38, 144, 28, 19 |
 | Short avis | 86, 87, 63, 19, 28 |
+| Avant/après | 456, 451, 434, 473 (sans) · 478, 457, 453, 474, 476 (avec) · 484, 406 |
+| Bande-annonce | 489, 279, 319, 282, 285, 443, 468, 331, 315, 272, 406 |
 
 ## Catalogue des 150 plans tagués
 
