@@ -1,10 +1,10 @@
-# FoodEatUp — 12 films montés à partir de la bibliothèque Higgsfield
+# FoodEatUp — 48 vidéos montées à partir de la bibliothèque Higgsfield
 
 Session du 2026-09-07. **Règle posée par Michael : uniquement des plans de la bibliothèque
 Higgsfield.** Aucun screencast du logiciel, aucun plan du film héros, aucun avatar HeyGen
 dans les livrables. La bibliothèque complète a été relevée (532 plans), téléchargée et
-analysée et taguée plan par plan ; s'y ajoutent deux musiques originales et 34 voix off
-ElevenLabs.
+analysée et taguée plan par plan ; s'y ajoutent huit musiques originales et 64 voix off
+ElevenLabs, et six animations reprises des projets déjà présents dans le dépôt.
 
 ## Livrables (`out/`)
 
@@ -24,6 +24,37 @@ ElevenLabs.
 | Bande-annonce | `foodeatup-teaser.mp4` (+ `-16x9`) | ~22 s | 1080×1920 | Paul K (signature seule) |
 
 Les versions `-16x9` posent le 9:16 sur son propre fond flouté (LinkedIn, site, YouTube).
+
+## Série « 30 problèmes, 30 solutions » (`serie30.py`)
+
+Trente vidéos verticales de ~23 s, une par problème de restaurant, plus six clips
+musicaux sans voix de ~32 s. Fichiers `out/foodeatup-s01-reservations.mp4` …
+`out/foodeatup-s30-pilotage.mp4` et `out/foodeatup-clip-rush.mp4` … `-comedie.mp4`,
+chacun avec sa version `-16x9`. Scripts dans `scripts/SERIE-30.md`, titres et
+descriptions de diffusion dans `scripts/DIFFUSION.md`.
+
+Chaque vidéo : animation d'accroche → deux plans « problème » → deux plans
+« solution » → plan signature → carton final → sting animé. Les plans sont choisis
+dans `assets/higgsfield-tags.json` par problème de restaurant, sans recoupement
+entre thèmes.
+
+## Animations du dépôt (`assets/anim/`)
+
+Six animations réutilisables, remontées à partir des projets déjà présents dans le
+dépôt (`videos/lancement-foodeatup-v1`, `videos/deux-boucles`,
+`videos/foodeatup-8-boucles`) et d'un plan Higgsfield d'infini 3D :
+
+| Fichier | Durée | Emploi |
+|---|---|---|
+| `hook-logo.mp4` | 1,5 s | accroche de tous les films |
+| `sting-logo.mp4` | 2 s | signature de fin des formats courts |
+| `sting-infini-3d.mp4` | 6 s | signature de fin des films longs et des clips |
+| `hook-boucle.mp4` | 4 s | la boucle infinie et les 8 modules |
+| `anim-8-logiciels.mp4` | 9,4 s | l'animation des 8 logiciels et leurs compteurs |
+| `sting-cta-boucles.mp4` | 8,1 s | appel à l'action long |
+
+`build_film(..., hook=..., sting=...)` les place automatiquement et décale les
+repères d'incrustation et les voix off de la durée de l'accroche.
 
 ## Matière
 
@@ -54,6 +85,8 @@ cd videos/foodeatup-4-films
 python3 build.py clip            # ou presentation | commercial | demo | all
 python3 build.py avant_apres teaser
 python3 shorts.py                # les six shorts ; ou shorts.py haccp stock ...
+python3 serie30.py               # les 30 vidéos + les 6 clips ; ou serie30.py 01 07 rush
+WORKDIR=work-a python3 serie30.py 01 05   # rendus parallèles, un répertoire de travail par lot
 REMIX=1 python3 build.py clip    # ne refait que le mixage audio
 ```
 
