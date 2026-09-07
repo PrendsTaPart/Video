@@ -5,6 +5,12 @@
 
 Rush d'origine : `source/Screen_Recording_20260907_144503_Chrome.mp4` (125,8 s, 1080 × 2316).
 
+En ligne, servi par la bibliothèque RapidoCMS (lien public, `video/mp4`) :
+
+```
+https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/braindcast-tiktok-demo
+```
+
 Reconstruction, dans cet ordre :
 
 ```
