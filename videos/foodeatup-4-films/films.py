@@ -229,18 +229,18 @@ def avant_apres():
     W, H = 1080, 1920
     segs = [
         # AVANT — ce qui se perd (12,4 s)
-        S(hf(456), 0.5, 3.2),   # 7 h : le classeur papier corné
-        S(hf(451), 1.0, 3.0),   # 13 h : carnet, téléphone, terminal
-        S(hf(434), 1.0, 3.0),   # 12 h 30 : le ticket froissé au pass
-        S(hf(473), 1.0, 3.4),   # 8 h : la pile de bons de livraison
+        S(hf(456), 0.5, 3.2, fit="blur", zoom=1.35),   # 7 h : le classeur papier corné
+        S(hf(451), 1.0, 3.0, fit="blur", zoom=1.35),   # 13 h : carnet, téléphone, terminal
+        S(hf(434), 1.0, 3.0, fit="blur", zoom=1.35),   # 12 h 30 : le ticket froissé au pass
+        S(hf(473), 1.0, 3.4, fit="blur", zoom=1.35),   # 8 h : la pile de bons de livraison
         # APRÈS — tout est déjà là (13,9 s)
-        S(hf(478), 0.8, 3.4),   # même réserve : le thermomètre lu au téléphone
-        S(hf(457), 0.8, 3.4),   # même comptoir : une seule tablette
-        S(hf(453), 0.8, 3.4),   # même pass : l'écran mural dans l'ordre
-        S(hf(474), 0.8, 3.9),   # même bureau : la prévision qui défile
+        S(hf(478), 0.8, 3.4, fit="blur", zoom=1.35),   # même réserve : le thermomètre lu au téléphone
+        S(hf(457), 0.8, 3.4, fit="blur", zoom=1.35),   # même comptoir : une seule tablette
+        S(hf(453), 0.8, 3.4, fit="blur", zoom=1.35),   # même pass : l'écran mural dans l'ordre
+        S(hf(474), 0.8, 3.9, fit="blur", zoom=1.35),   # même bureau : la prévision qui défile
         # clôture (5,9 s)
-        S(hf(476), 1.0, 2.9),   # le plan de salle à jour
-        S(hf(484), 2.0, 3.2),   # la boucle infinie tracée en lumière
+        S(hf(476), 1.0, 2.9, fit="blur", zoom=1.35),   # le plan de salle à jour
+        S(hf(484), 2.0, 3.2, fit="blur", zoom=1.35),   # la boucle infinie tracée en lumière
     ]
     end_d = 5.6
 
