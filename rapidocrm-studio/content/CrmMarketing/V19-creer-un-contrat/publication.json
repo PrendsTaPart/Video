@@ -11,5 +11,15 @@
       "thumbnail_vertical_url": "57a4de91cabf5591"
     },
     "publie_le": "2026-09-05T23:28:28.119Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=Sm2AbZ-uBJY",
+    "video_id": "Sm2AbZ-uBJY",
+    "publie_le": "2026-09-07T14:18:48.508Z"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/06-creer-un-contrat",
+    "tutoriel_id": "d1fd02c6-8424-44e4-bed1-6b93781c4401",
+    "publie_le": "2026-09-07T14:20:37.434Z"
   }
 }
