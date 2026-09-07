@@ -91,6 +91,8 @@ Ce qui est en ligne, au fil des envois — page vérifiée en HTTP 200 :
 | 06/09 10:00 | V14 Planifier un rendez-vous | `Pxq4RqZUUVw` | `/tutoriel/06-planifier-un-rdv` |
 | 06/09 12:00 | *V10 compta* Devis en facture | `QOfn1ZMpzo0` | `/tutoriel/05-conversion-d-un-devis-en-facture` |
 | 06/09 14:00 | V15 Envoyer une newsletter | `_VW4v9Ldha0` | `/tutoriel/06-envoyer-une-newsletter` |
+| 07/09 06:00 | V17 Créer un devis | `K3yiDpOHW7g` | `/tutoriel/06-creer-un-devis` |
+| 07/09 08:00 | *V11 compta* Créer un template SMS | `-ayFuImidp4` | `/tutoriel/05-creer-ses-templates-emails-sms` |
 
 Le connecteur YouTube MCP s'est déconnecté de la session le 6 au matin.
 Les identifiants se relèvent alors sur le flux RSS public de la chaîne,

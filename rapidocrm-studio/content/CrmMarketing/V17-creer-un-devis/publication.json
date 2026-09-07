@@ -11,5 +11,15 @@
       "thumbnail_vertical_url": "b00be12b8992c9c1"
     },
     "publie_le": "2026-09-05T23:28:20.351Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=K3yiDpOHW7g",
+    "video_id": "K3yiDpOHW7g",
+    "publie_le": "2026-09-07T08:18:07.604Z"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/06-creer-un-devis",
+    "tutoriel_id": "5ddb3874-a181-4556-9c41-332b3c4d764f",
+    "publie_le": "2026-09-07T08:20:00.310Z"
   }
 }

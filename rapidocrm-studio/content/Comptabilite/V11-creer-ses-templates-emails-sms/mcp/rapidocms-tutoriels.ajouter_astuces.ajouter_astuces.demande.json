@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-creer-ses-templates-emails-sms",
+    "astuces": [
+      {
+        "titre": "Le bot peut écrire le message",
+        "texte": "Le bouton « aide du bot », sous la zone de texte, propose une rédaction à relire.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Le CTA se choisit dans une liste",
+        "texte": "« Voir facture » par exemple. Il s'ajoute au message comme bouton.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "La liste se filtre par catégorie",
+        "texte": "Le sélecteur en haut de page trie les templates. D'où l'intérêt de renseigner la catégorie.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-07T08:20:09.670Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}
