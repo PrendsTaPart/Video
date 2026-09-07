@@ -75,8 +75,13 @@ def card(name, W, H, lines, size=96, color=WHITE, bg=None, pill=None, y=None, we
         d.rectangle([0, 0, W, H], fill=bg)
     if box_alpha:
         d.rectangle([0, 0, W, H], fill=(15, 26, 35, box_alpha))
-    f = font(weight, size)
     lines = [lines] if isinstance(lines, str) else lines
+    f = font(weight, size)
+    # le carton ne doit jamais déborder : on réduit la taille jusqu'à tenir dans la largeur utile
+    usable = W - 2 * pad - 40
+    while size > 24 and max(d.textbbox((0, 0), l, font=f)[2] - d.textbbox((0, 0), l, font=f)[0] for l in lines) > usable:
+        size -= 4
+        f = font(weight, size)
     heights = [d.textbbox((0, 0), l, font=f)[3] - d.textbbox((0, 0), l, font=f)[1] for l in lines]
     gap = int(size * 0.28)
     total = sum(heights) + gap * (len(lines) - 1)

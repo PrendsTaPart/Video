@@ -50,7 +50,7 @@ def short(name):
     end_d = dc4 + 1.6
     segs = ([dict(src=hf(i), start=s, dur=a) for i, s in probs]
             + [dict(src=hf(i), start=s, dur=b) for i, s in sols]
-            + [dict(src=hf(21), start=7.0, dur=sig)])
+            + [dict(src=hf(28), start=3.6, dur=sig)])
 
     def overlays(W, H, times, total):
         ov = []

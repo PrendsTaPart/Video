@@ -1,63 +1,86 @@
-# Bibliothèque Higgsfield — 150 plans analysés (relevé du 2026-09-07)
+# Bibliothèque Higgsfield — 532 plans (relevé du 2026-09-07)
 
-Source : historique de générations Higgsfield du compte (Seedance 2.5, 10 s chacun, 720×1280). Aucun plan n'a été régénéré : tout est réutilisé tel quel (règle du dépôt). Fichiers locaux : `assets/higgsfield/vNNN.mp4` (téléchargés depuis les `rawUrl`, non versionnés) ; catalogue complet avec prompts : `assets/higgsfield-catalogue.json`.
+Historique complet des générations vidéo du compte Higgsfield, parcouru jusqu'à `next_cursor`
+nul : **532 plans**, tous en Seedance 720p, 10 s pour la quasi-totalité. Tous ont été
+téléchargés dans `assets/higgsfield/vNNN.mp4` (numérotés du plus récent au plus ancien).
+**Aucun plan n'a été régénéré** : règle du dépôt, la bibliothèque se réutilise.
 
-## Répartition par série
+Catalogue complet avec les prompts : `assets/higgsfield-catalogue.json`.
+Les 150 plans les plus récents (index 0-149) sont tagués un par un ci-dessous ; le tagging
+des 382 suivants a été lancé dans la même session et se poursuit.
 
-- **70** · Michael fait son cinéma — saison restaurant (comédie, veste FoodEatUp)
-- **51** · Plan'It corporate (bureau, documentaire) — hors sujet FoodEatUp
-- **19** · Michael remonte le temps (RapidoCMS, époques) — hors sujet FoodEatUp
-- **10** · Cuisine Seedance sans texte (objet net / chef flou, lèvres mimées)
+## Ce que dit le relevé
 
-## Ce que disent les prompts
+| | |
+|---|---|
+| Plans | 532 |
+| Résolution | 720p sur la totalité (fichiers 720×1280) |
+| Générations directes | 464 · extensions de plan (`video_extension`) 41 · Seedance 2.0 25 |
+| Période | juillet à septembre 2026, gros de la production les 19-31 août |
 
-- Structure récurrente de la saison restaurant : `REF: Michael = image_1 + tenue de saison, Location = @Image 3/4, FORMAT: 9:16, 10 s, 4 shots, realistic comedy` puis un gag en quatre plans de 2-3 s ; les répliques sont écrites (lip-sync), les shots 2 et 3 (2-8 s) portent le gag visuel.
-- 39 générations sont des `video_extension` (prolongement d'un plan précédent), les autres des générations image→vidéo avec référence personnage.
-- Les 10 plans « cuisine sans texte » (25, 141-149) sont pensés pour recevoir une voix off : objet net qui change d'état à 5 s, chef flou derrière. Ne pas poser un autre texte sur les lèvres qui bougent.
-- Les séries Plan'It (51 plans) et « remonte le temps » (19) ne concernent pas FoodEatUp et ne sont pas utilisées ici.
+⚠️ Le champ `aspect_ratio` de l'API annonce 16:9 sur 68 plans, mais **tous les fichiers rendus
+sont en 720×1280**. C'est pourquoi les quatre films et les six shorts ont un master vertical,
+la version 16:9 étant dérivée au montage (fond flouté).
 
-## Index par problème de restaurant (saison restaurant)
+## Familles de prompts
 
-- HACCP températures : 84, 85, 143
-- allergènes : 74, 75, 76
-- avis client : 86, 87
-- avis client / influenceur : 72, 73
-- caisse/compta : 27, 30, 46, 47, 58, 59, 78, 80
-- campagne marketing : 62, 63
-- commande fournisseur : 77, 79
-- commandes en cuisine (KDS) : 23, 70, 71
-- devis groupe : 148
-- dépendance plateformes : 141
-- facture : 56, 57
-- fichier client : 41, 42, 43
-- file d'attente : 81, 82, 83
-- food cost / fiche technique : 44, 45, 145
-- happy hour / marketing : 48, 49
-- inventaire stock : 68, 69
-- livraison : 50, 51
-- nettoyage : 35, 36
-- pilotage global (agents IA) : 25
-- planning production : 54, 55
-- planning équipe : 33, 34, 66, 67, 144
-- prise de commande : 39, 40, 146, 147
-- prise de commande papier : 24
-- recrutement : 26, 64, 65
-- rupture de stock : 31, 32, 142
-- réservations : 37, 38, 52, 53, 88, 89
-- terrasse météo / placement : 60, 61
+- **Saison restaurant « Michael fait son cinéma »** — Michael en veste ou tablier FoodEatUp,
+  comédie réaliste en 4 plans de 2-3 s, un problème de gestion par épisode. C'est la matière
+  de tous les films livrés.
+- **Plans « objet net, chef flou »** (index 25, 141-145) — un objet du restaurant change d'état
+  à la cinquième seconde, le chef reste flou derrière. Écrits pour recevoir une voix off :
+  ils servent de plans « solution » dans la présentation, la pub et les shorts.
+- **Plan'It corporate**, **Michael remonte le temps** (époques), **Rapido** — hors sujet
+  FoodEatUp, non utilisés.
 
-## Plans utilisés dans les 4 films
+## Index par problème de restaurant (sur les 150 plans tagués)
+
+- **HACCP températures** : 84, 85, 143
+- **allergènes** : 74, 75, 76
+- **avis client** : 86, 87
+- **avis client / influenceur** : 72, 73
+- **caisse/compta** : 27, 30, 46, 47, 58, 59, 78, 80
+- **campagne marketing** : 62, 63
+- **commande fournisseur** : 77, 79
+- **commandes en cuisine (KDS)** : 23, 70, 71
+- **devis groupe** : 148
+- **dépendance plateformes** : 141
+- **facture** : 56, 57
+- **fichier client** : 41, 42, 43
+- **file d'attente** : 81, 82, 83
+- **food cost / fiche technique** : 44, 45, 145
+- **happy hour / marketing** : 48, 49
+- **inventaire stock** : 68, 69
+- **livraison** : 50, 51
+- **nettoyage** : 35, 36
+- **pilotage global (agents IA)** : 25
+- **planning production** : 54, 55
+- **planning équipe** : 33, 34, 66, 67, 144
+- **prise de commande** : 39, 40, 146, 147
+- **prise de commande papier** : 24
+- **recrutement** : 26, 64, 65
+- **rupture de stock** : 31, 32, 142
+- **réservations** : 37, 38, 52, 53, 88, 89
+- **terrasse météo / placement** : 60, 61
+
+## Plans utilisés dans les dix films
 
 | Film | Plans Higgsfield |
 |---|---|
 | Clip | 149, 23, 24, 71, 38, 37, 69, 79, 84, 85, 33, 34, 47, 78, 86, 77, 143, 144, 145, 22, 20, 28, 66, 19, 21 |
-| Présentation | 23, 69, 84, 38, 141, 142, 25, 53, 63, 85, 143, 29, 28, 19 (+ hero-video, screencasts) |
-| Commercial | 85, 84, 143, 142, 144, 25, 28, 19 (+ screencast export HACCP) |
-| Démo | aucun (screencasts réels + avatar HeyGen existant) |
+| Présentation | 23, 69, 84, 38, 141, 142, 144, 145, 25, 71, 37, 68, 63, 85, 143, 36, 29, 22, 28, 19 |
+| Commercial | 85, 84, 143, 145, 142, 144, 25, 28, 19 |
+| Démo | 19, 28, 25, 44, 22, 145, 68, 31, 142, 35, 143, 84, 66, 33, 56, 46, 62, 50, 70, 141, 72, 20, 21 |
+| Short HACCP | 85, 84, 143, 141, 28, 19 |
+| Short stock | 69, 79, 142, 145, 28, 19 |
+| Short équipe | 34, 33, 144, 66, 28, 19 |
+| Short compta | 47, 46, 25, 141, 28, 19 |
+| Short réservations | 89, 38, 144, 28, 19 |
+| Short avis | 86, 87, 63, 19, 28 |
 
-## Catalogue
+## Catalogue des 150 plans tagués
 
-| # | date | série | lieu | problème | gag | note montage |
+| # | date | série | lieu | problème | gag | note de montage |
 |---|---|---|---|---|---|---|
 | 0 | 2026-09-06 | michael-remonte-le-temps | entrée de grotte, aube d'hiver |  | conteur solennel, « il était une fois » | Garder le début (0-5 s) : flamme dans le vent et regard sur la vallée, beau plan d'ambiance sans parole ; version 9:16. |
 | 1 | 2026-09-06 | michael-remonte-le-temps | entrée de grotte, aube d'hiver |  | conteur solennel, « il était une fois » | Doublon 16:9 de l'index 0 ; garder la descente de perche jusqu'au visage (3-6 s) si besoin d'un plan horizontal. |
