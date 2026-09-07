@@ -1,13 +1,13 @@
 """Les quatre montages FoodEatUp. Chaque fonction = un film (voir scripts/VOIX-OFF.md)."""
 from build import (BLUE, CREAM, INK, ORANGE, WHITE, OUT, REPO, build_film, card, end_card, hf, logo_corner,
-                   mix_audio, to_16x9, tuto, vo)
+                   mix_audio, to_16x9, vo)
 
 MUSIC_CLIP = "assets/music/musique-clip-123bpm.mp3"
 MUSIC_UNDER = "assets/music/musique-underscore-99bpm.mp3"
 MUSIC_UNDER_ALT = "assets/music/musique-underscore-99bpm-alt.mp3"
 TAGLINE = ["Une infinité de solutions", "pour gérer votre restaurant"]
-HERO = REPO / "hero-video" / "assets" / "video"
-AVATAR = REPO / "videos" / "foodeatup-qrcode-tuto" / "assets" / "avatar.mp4"
+# Règle de la session : uniquement des plans de la bibliothèque Higgsfield.
+# Aucun screencast, aucun plan hero-video, aucun avatar HeyGen.
 
 
 def S(src, start, dur, **kw):
@@ -81,19 +81,20 @@ def clip():
 # ------------------------------------------------------------------ 2. PRÉSENTATION
 
 def presentation():
-    """« Le même restaurant » — ~90 s, 9:16 (+16:9), narratrice Anaïs, underscore original."""
+    """« Le même restaurant » — ~85 s, 9:16 (+16:9), narratrice Anaïs, underscore original.
+    100 % plans Higgsfield (aucun screencast, aucun avatar)."""
     W, H = 1080, 1920
     segs = [
         # P1 — ce qui se perd (12,4 s)
         S(hf(23), 2.0, 3.4), S(hf(69), 5.5, 3.3), S(hf(84), 7.5, 3.2), S(hf(38), 5.5, 3.6),
-        # P2 — une seule plateforme (12,4 s)
-        S(hf(141), 2.5, 3.4), S(hf(142), 2.5, 3.4), S(tuto("mouvements-stock"), 0.0, 3.6, fit="blur"), S(tuto("reception-livraison"), 33.0, 3.2, fit="blur"),
+        # P2 — une seule plateforme (12,4 s) : les objets qui changent d'état
+        S(hf(141), 2.5, 3.4), S(hf(142), 2.5, 3.4), S(hf(144), 2.5, 3.2), S(hf(145), 2.5, 3.2),
         # P3 — les quatre agents (19,8 s)
-        S(hf(25), 2.0, 4.0), S(tuto("jarvis"), 9.0, 4.2, fit="blur"), S(hf(53), 0.0, 4.2), S(HERO / "hero-directeur-bureau-matin.mp4", 0.0, 4.4, fit="blur"), S(hf(63), 5.0, 4.4),
+        S(hf(25), 2.0, 4.0), S(hf(71), 5.0, 4.2), S(hf(37), 5.0, 4.2), S(hf(68), 2.0, 4.4), S(hf(63), 5.0, 4.4),
         # P4 — HACCP (11,7 s)
-        S(hf(85), 2.5, 3.2), S(hf(143), 2.5, 3.2), S(tuto("temperatures"), 6.0, 3.0, fit="blur"), S(tuto("haccp-export"), 39.5, 3.2, fit="blur"),
+        S(hf(85), 2.5, 3.2), S(hf(84), 6.6, 3.2), S(hf(143), 2.5, 3.0), S(hf(36), 5.0, 3.2),
         # P5 — MCP (10,5 s)
-        S(tuto("mcp"), 12.0, 5.6, fit="blur", speed=1.2), S(hf(29), 4.5, 5.4),
+        S(hf(29), 4.5, 5.4), S(hf(22), 0.0, 5.6),
         # P6 — clôture (5,9 s)
         S(hf(28), 0.5, 4.2), S(hf(19), 8.0, 2.4),
     ]
@@ -102,7 +103,6 @@ def presentation():
 
     def overlays(W, H, times, total):
         ov = [dict(png=logo_corner("pres-logo", W, H, scale=0.26, margin=44), t0=0.0, t1=total - end_d, fin=0.5, fout=0.3)]
-        # cartons discrets (le visuel ajoute, il ne redit pas) : noms des agents et modules
         agents = [(9, "Jarvis", "commis vocal en cuisine"), (10, "Caroline", "répond à vos clients"),
                   (11, "PrediBot", "prépare la nuit"), (12, "Iris", "publie sur les réseaux")]
         for i, name, sub in agents:
@@ -128,16 +128,17 @@ def presentation():
     to_16x9(out, "foodeatup-presentation")
 
 
+
 # ------------------------------------------------------------------ 3. COMMERCIAL
 
 def commercial():
-    """« Le contrôleur » — ~36 s, 9:16 (+16:9), voix pub Paul K."""
+    """« Le contrôleur » — ~36 s, 9:16 (+16:9), voix pub Paul K. 100 % plans Higgsfield."""
     W, H = 1080, 1920
     segs = [
         # A1 — le contrôleur (7,7 s)
-        S(hf(85), 0.0, 4.4), S(hf(84), 6.4, 3.7),
+        S(hf(85), 0.0, 4.4), S(hf(84), 7.6, 3.7),
         # A2 — tout est déjà là (13,9 s)
-        S(hf(143), 2.5, 3.3), S(tuto("haccp-export"), 24.0, 3.6, fit="blur", speed=1.3), S(hf(142), 2.5, 3.2), S(hf(144), 2.5, 3.2), S(hf(25), 2.0, 2.7),
+        S(hf(143), 2.5, 3.3), S(hf(145), 2.5, 3.6), S(hf(142), 2.5, 3.2), S(hf(144), 2.5, 3.2), S(hf(25), 2.0, 2.7),
         # A3 — signature (5,2 s)
         S(hf(28), 0.5, 3.3), S(hf(19), 8.0, 2.4),
     ]
@@ -147,7 +148,7 @@ def commercial():
         ov = []
         p = card("pub-mardi", W, 300, "Mardi, 11 h.", size=100, color=WHITE, pill=(*INK, 200), y=40)
         ov.append(dict(png=p, t0=0.3, t1=4.2, fin=0.2, fout=0.2, y=H - 700, slide="up"))
-        for i, txt in [(2, "TEMPÉRATURES ✓"), (3, "EXPORT PDF ✓"), (4, "STOCK ✓"), (5, "PLANNING ✓")]:
+        for i, txt in [(2, "TEMPÉRATURES"), (3, "FICHES TECHNIQUES"), (4, "STOCK"), (5, "PLANNING")]:
             p = card(f"pub-{i}", W, 260, txt, size=80, color=WHITE, pill=(*BLUE, 235), y=50)
             ov.append(dict(png=p, t0=times[i] + 0.15, t1=times[i] + segs[i]["dur"] - 0.05, fin=0.12, fout=0.15, y=H - 660, slide="up"))
         ov.append(dict(png=logo_corner("pub-logo", W, H, scale=0.30, margin=48), t0=times[7], t1=times[8] + 2.4, fin=0.3, fout=0.2))
@@ -164,50 +165,56 @@ def commercial():
     to_16x9(out, "foodeatup-commercial")
 
 
+
 # ------------------------------------------------------------------ 4. DÉMO
 
 def demo():
-    """« Un tour du logiciel » — ~1 min 45, 16:9, screencasts réels + avatar HeyGen existant."""
-    W, H = 1920, 1080
+    """« Un tour du restaurant » — ~1 min 40, 9:16 (+16:9), voix tutoriel Enrick.
+    100 % plans Higgsfield. Toute la bibliothèque est tournée en 720×1280 : le master est
+    donc vertical, la version 16:9 est dérivée comme pour les autres films."""
+    W, H = 1080, 1920
     segs = [
-        # D1 — bienvenue (12,3 s)
-        S(AVATAR, 0.0, 6.4, fit="cover"), S(tuto("mcp"), 0.0, 6.6, fit="screen"),
-        # D2 — carte et fiche plat (11,7 s)
-        S(tuto("fiche-plat"), 20.0, 7.0, fit="screen"), S(tuto("fiche-plat"), 78.0, 5.4, fit="screen"),
+        # D1 — bienvenue / pilotage (12,3 s)
+        S(hf(19), 0.0, 3.4), S(hf(28), 0.5, 4.4), S(hf(25), 2.0, 4.7),
+        # D2 — carte, coût matière, fiche technique (11,7 s)
+        S(hf(44), 2.0, 4.2), S(hf(22), 0.0, 3.8), S(hf(145), 2.5, 4.0),
         # D3 — réception et stock (10,1 s)
-        S(tuto("reception-livraison"), 30.0, 6.0, fit="screen"), S(tuto("mouvements-stock"), 0.0, 5.0, fit="screen"),
-        # D4 — HACCP (13,0 s)
-        S(tuto("temperatures"), 6.0, 5.0, fit="screen"), S(tuto("tracabilite"), 0.0, 4.2, fit="screen"), S(tuto("haccp-export"), 38.0, 4.6, fit="screen"),
-        # D5 — équipe (8,8 s)
-        S(tuto("planning-poste"), 55.0, 5.6, fit="screen"), S(tuto("qrcode-pointage"), 0.0, 4.0, fit="screen"),
-        # D6 — facture OCR (7,0 s)
-        S(tuto("facture-ocr"), 12.0, 7.6, fit="screen"),
+        S(hf(68), 2.0, 3.6), S(hf(31), 5.0, 3.4), S(hf(142), 2.5, 3.3),
+        # D4 — hygiène et HACCP (13,0 s)
+        S(hf(35), 5.0, 4.0), S(hf(143), 2.5, 4.4), S(hf(84), 6.6, 4.8),
+        # D5 — équipe et planning (8,8 s)
+        S(hf(66), 7.5, 4.4), S(hf(33), 2.5, 4.6),
+        # D6 — factures (7,0 s)
+        S(hf(56), 5.0, 3.6), S(hf(46), 7.5, 3.6),
         # D7 — boutique en ligne (6,2 s)
-        S(tuto("boutique"), 8.0, 7.0, fit="screen"),
-        # D8 — Jarvis / PrediBot (8,9 s)
-        S(tuto("jarvis"), 8.0, 5.0, fit="screen"), S(tuto("predibot"), 3.0, 4.6, fit="screen"),
-        # D9 — MCP + CTA (11,1 s)
-        S(tuto("mcp"), 12.0, 6.2, fit="screen", speed=1.2),
+        S(hf(62), 0.0, 3.2), S(hf(50), 2.0, 3.2),
+        # D8 — Jarvis et PrediBot (8,9 s)
+        S(hf(70), 5.0, 4.4), S(hf(141), 2.5, 4.7),
+        # D9 — MCP et invitation (11,1 s)
+        S(hf(72), 2.0, 3.6), S(hf(20), 2.0, 3.8), S(hf(21), 7.0, 3.9),
     ]
     end_d = 6.5
-    blocks = [(0, "D1"), (2, "D2"), (4, "D3"), (6, "D4"), (9, "D5"), (11, "D6"), (12, "D7"), (13, "D8"), (15, "D9")]
-    chapters = [(1, "Tableau de bord"), (2, "Carte & fiches plats"), (4, "StockVision · réception"), (6, "Hygiène & HACCP"),
-                (9, "Équipe & planning"), (11, "Factures · OCR"), (12, "Boutique en ligne"), (13, "Jarvis & PrediBot"), (15, "MCP · Claude")]
+    blocks = [(0, "D1"), (3, "D2"), (6, "D3"), (9, "D4"), (12, "D5"), (14, "D6"), (16, "D7"), (18, "D8"), (20, "D9")]
+    chapters = [(0, "Piloter le restaurant"), (3, "Carte & coût matière"), (6, "StockVision · réception"),
+                (9, "Hygiène & HACCP"), (12, "Équipe & planning"), (14, "Factures · OCR"),
+                (16, "Boutique en ligne"), (18, "Jarvis & PrediBot"), (20, "MCP · Claude")]
 
     def overlays(W, H, times, total):
-        ov = [dict(png=logo_corner("demo-logo", W, H, scale=0.13, margin=36), t0=segs[0]["dur"], t1=total - end_d, fin=0.4, fout=0.3)]
-        ends = {i: (times[j] if j < len(times) else total - end_d) for i, j in
-                [(1, 2), (2, 4), (4, 6), (6, 9), (9, 11), (11, 12), (12, 13), (13, 15), (15, 16)]}
+        ov = [dict(png=logo_corner("demo-logo", W, H, scale=0.26, margin=44), t0=1.0, t1=total - end_d, fin=0.4, fout=0.3)]
+        starts = [i for i, _ in chapters] + [len(segs) - 1]
+        ends = {chapters[k][0]: times[starts[k + 1]] if starts[k + 1] < len(times) else total - end_d
+                for k in range(len(chapters))}
         for i, txt in chapters:
-            p = card(f"demo-ch{i}", 900, 130, txt, size=44, color=WHITE, pill=(*BLUE, 235), y=30, align="left", pad=28)
-            ov.append(dict(png=p, t0=times[i] + 0.1, t1=ends[i] - 0.1, fin=0.2, fout=0.2, x=48, y=H - 150, slide="up"))
+            p = card(f"demo-ch{i}", W, 200, txt, size=64, color=WHITE, pill=(*BLUE, 235), y=30)
+            ov.append(dict(png=p, t0=times[i] + 0.1, t1=ends[i] - 0.1, fin=0.2, fout=0.2, y=H - 620, slide="up"))
         ov.append(dict(png=end_card("demo-end", W, H, TAGLINE), t0=total - end_d, t1=total + 1, fin=0.6, fout=0.0))
         return ov
 
-    segs.append(S(tuto("mcp"), 18.0, end_d, fit="screen"))
+    segs.append(S(hf(19), 8.0, end_d))
     t = [0.0]
     for s in segs[:-1]:
         t.append(t[-1] + s["dur"])
-    audio = dict(music=MUSIC_UNDER, music_gain=-19.0, music_fade_out=3.0, src_gain=-60.0, duck=0.3,
+    audio = dict(music=MUSIC_UNDER, music_gain=-16.0, music_fade_out=3.0, src_gain=-26.0, duck=0.3,
                  vo=[(vo(code), t[i] + 0.3) for i, code in blocks])
-    build_film("foodeatup-demo", W, H, segs, overlays, audio)
+    out = build_film("foodeatup-demo", W, H, segs, overlays, audio)
+    to_16x9(out, "foodeatup-demo")

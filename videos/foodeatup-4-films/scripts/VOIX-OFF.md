@@ -72,3 +72,23 @@ Ouverture avec l'avatar HeyGen existant du chef FoodEatUp (`foodeatup-qrcode-tut
 | D7 | boutique / vitrine | Votre site de commande en ligne est généré à partir de votre carte, à vos couleurs, sans commission de plateforme. |
 | D8 | Jarvis + PrediBot | En cuisine, Jarvis exécute vos ordres à la voix et trace chaque sortie. La nuit, PrediBot prépare la production du lendemain et la commande fournisseur. |
 | D9 | MCP + abonnement | Enfin, FoodEatUp se connecte à Claude, ChatGPT ou WhatsApp par MCP. Essayez gratuitement, sans carte bancaire : FoodEatUp, une infinité de solutions pour gérer votre restaurant. |
+
+---
+
+## 5. SIX SHORTS THÉMATIQUES — ~25 s chacun · 9:16 (+16:9) · voix Paul K
+
+Même structure partout : problème (2 plans) → solution (2 plans) → signature (C3) → carton
+final (C4). Les durées de plan sont calculées à partir de la durée réelle de chaque voix off,
+donc un short se re-rend sans retoucher les timecodes.
+
+| Short | Code | Ligne « problème » | Ligne « solution » |
+|---|---|---|---|
+| HACCP — « Le contrôle » | SH1 | Vos températures ? Elles sont sur un post-it. Quelque part. | Avec FoodEatUp, elles sont relevées, horodatées, et votre classeur HACCP s'exporte en un clic. |
+| Stock — « L'inventaire » | SH2 | Douze bouteilles. Onze. Quinze. L'inventaire, chaque semaine, à la main. | Avec FoodEatUp, chaque vente déstocke toute seule, et PrediBot vous prévient avant la rupture. |
+| Équipe — « Le planning » | SH3 | Trois demandes de congé pour le même samedi. Et un planning refait à la main. | Avec FoodEatUp, planning par poste, congés et pointage par QR code. Chacun voit ce qui le concerne. |
+| Compta — « L'addition » | SH4 | Une table de douze qui paie séparément. Et vous, la calculette à la main. | Avec FoodEatUp, la caisse partage l'addition, l'OCR lit vos factures et le ticket Z part tout seul. |
+| Réservations — « La double réservation » | SH5 | Deux clients. Une table. La même heure. Vous avez réservé deux fois. | Avec FoodEatUp, le plan de salle est à jour, et Caroline répond même quand vous ne décrochez pas. |
+| Avis — « L'avis du soir » | SH6 | Service parfait. Et le soir, une étoile. Pour une livraison en retard. | Avec FoodEatUp, chaque avis remonte, la réponse se prépare toute seule, et Iris publie à votre place. |
+
+Signature commune : C3 « FoodEatUp. Une infinité de solutions pour gérer votre restaurant. »
+puis C4 « Essayez gratuitement. Sans carte bancaire. » sur le carton final.

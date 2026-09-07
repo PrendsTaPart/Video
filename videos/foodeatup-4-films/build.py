@@ -162,7 +162,7 @@ def end_card(name, W, H, tagline_lines, url="foodeatup.fr", cta="Essai gratuit �
 
 # ---------------------------------------------------------------- segments
 
-def seg_filter(W, H, fit, speed):
+def seg_filter(W, H, fit, speed, zoom=1.0):
     vf = []
     if speed != 1.0:
         vf.append(f"setpts=PTS/{speed}")
@@ -174,7 +174,7 @@ def seg_filter(W, H, fit, speed):
         vf.append(f"scale={int(W*0.92)}:-2,pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:color=0xFCF9E6")
     elif fit == "blur":  # 9:16 dans un 16:9 (ou inverse) avec fond flouté
         vf = [f"split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},gblur=sigma=40,eq=brightness=-0.08[bg];"
-              f"[b]{'setpts=PTS/%s,' % speed if speed != 1.0 else ''}scale={W}:{H}:force_original_aspect_ratio=decrease[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2"]
+              f"[b]{'setpts=PTS/%s,' % speed if speed != 1.0 else ''}scale={int(W*zoom)}:-2,crop='min(iw,{W})':'min(ih,{H})'[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2"]
         return ",".join(vf) + f",fps={FPS},format=yuv420p"
     vf.append(f"fps={FPS}")
     vf.append("format=yuv420p")
@@ -190,6 +190,22 @@ def has_audio(path):
         err = subprocess.run(["ffmpeg", "-i", path], capture_output=True, text=True).stderr
         _AUDIO_CACHE[path] = "Audio:" in err
     return _AUDIO_CACHE[path]
+
+
+_DIMS_CACHE = {}
+
+
+def dims(path):
+    path = str(path)
+    if path not in _DIMS_CACHE:
+        err = subprocess.run(["ffmpeg", "-i", path], capture_output=True, text=True).stderr
+        import re as _re
+        m = _re.search(r"Video:.*?, (\d{2,5})x(\d{2,5})", err)
+        _DIMS_CACHE[path] = (int(m[1]), int(m[2])) if m else (W_DEFAULT, H_DEFAULT)
+    return _DIMS_CACHE[path]
+
+
+W_DEFAULT, H_DEFAULT = 1080, 1920
 
 
 def render_segment(i, s, W, H):
@@ -212,7 +228,11 @@ def render_segment(i, s, W, H):
                 "-filter_complex", f"[0:v]{vf}[v]", "-map", "[v]", "-map", "1:a", "-shortest"]
     else:
         cmd += ["-ss", str(s.get("start", 0)), "-t", str(dur * speed + 0.2), "-i", src]
-        vf = seg_filter(W, H, fit, speed)
+        if fit == "cover":
+            sw, sh = dims(src)
+            if abs((sw / sh) / (W / H) - 1) > 0.25:
+                fit = "blur"          # source et cadre de rapports trop différents : pas de recadrage sauvage
+        vf = seg_filter(W, H, fit, speed, s.get("zoom", 1.0))
         if has_audio(src):
             af = f"atempo={speed}," if speed != 1.0 else ""
             af += "aresample=48000,aformat=channel_layouts=stereo,apad"
