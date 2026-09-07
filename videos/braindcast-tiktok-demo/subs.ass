@@ -1,0 +1,41 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 2316
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.601
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,DejaVu Sans,46,&H00FFFFFF,&H00FFFFFF,&H00000000,&H14000000,0,0,0,0,100,100,0,0,4,14,0,2,30,30,170,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:04.20,0:00:06.40,Sub,,0,0,0,,The creator connects their own\NTikTok account — Login Kit, sandbox.
+Dialogue: 0,0:00:06.60,0:00:12.30,Sub,,0,0,0,,Two scopes requested: read the profile,\Nand publish video. Nothing else.
+Dialogue: 0,0:00:14.20,0:00:20.50,Sub,,0,0,0,,Account connected. The creator can\Ndisconnect it from our app at any time.
+Dialogue: 0,0:00:21.20,0:00:23.80,Sub,,0,0,0,,The creator picks a video they made\Nthemselves, from their own library.
+Dialogue: 0,0:00:24.00,0:00:27.30,Sub,,0,0,580,,The exact file to be sent: 1:00,\N1080×1920, 22.4 MB. No re-encoding.
+Dialogue: 0,0:00:27.50,0:00:29.80,Sub,,0,0,0,,We call creator_info/query first, to read\Nthe account's real settings.
+Dialogue: 0,0:00:30.00,0:00:32.80,Sub,,0,0,0,,The destination account is named on the\Npost. No privacy default is preselected.
+Dialogue: 0,0:00:33.00,0:00:35.80,Sub,,0,0,0,,The creator types their own caption.\NNo preset text is added by us.
+Dialogue: 0,0:00:36.00,0:00:38.80,Sub,,0,0,0,,Privacy options come from the API:\NFollowers, Friends, Only me.
+Dialogue: 0,0:00:39.00,0:00:42.30,Sub,,0,0,0,,Comment / Duet / Stitch: unchecked, and\Ngreyed out when the API disables them.
+Dialogue: 0,0:00:42.50,0:00:44.80,Sub,,0,0,0,,Commercial disclosure is off by default.\NSwitched on, nothing picked: blocked.
+Dialogue: 0,0:00:45.00,0:00:47.80,Sub,,0,0,0,,"Your brand" → the post is labeled\N"Promotional content".
+Dialogue: 0,0:00:48.00,0:00:50.30,Sub,,0,0,0,,"Branded content" → "Paid partnership".\NAI-generated content can be declared too.
+Dialogue: 0,0:00:50.50,0:00:53.30,Sub,,0,0,0,,Uncheck both and the error returns.\NAn undeclared ad cannot be published.
+Dialogue: 0,0:00:53.50,0:00:55.80,Sub,,0,0,0,,Visibility and interaction settings stay\Neditable until the last moment.
+Dialogue: 0,0:00:56.00,0:00:59.80,Sub,,0,0,0,,Here the creator switches to "Only me".\NEvery rule is checked before any API call.
+Dialogue: 0,0:01:00.00,0:01:01.40,Sub,,0,0,0,,Disclosure off again. The creator\Nreviews the final preview.
+Dialogue: 0,0:01:01.60,0:01:06.00,Sub,,0,0,0,,The Music Usage Confirmation notice sits\Nright above the publish button.
+Dialogue: 0,0:01:06.20,0:01:11.30,Sub,,0,0,0,,Nothing is sent to TikTok before this tap.\NOnly then does the upload start.
+Dialogue: 0,0:01:11.60,0:01:15.30,Sub,,0,0,0,,TikTok has accepted the post\Nand is processing it.
+Dialogue: 0,0:01:15.60,0:01:19.80,Sub,,0,0,0,,We poll publish/status/fetch and show\Nthe real status of every post.
+Dialogue: 0,0:01:20.00,0:01:23.00,Sub,,0,0,0,,Publication history: one status per post.
+Dialogue: 0,0:01:23.30,0:01:27.50,Sub,,0,0,0,,Green: published to TikTok.\NGrey: media still uploading.
+Dialogue: 0,0:01:27.80,0:01:35.50,Sub,,0,0,0,,Red is not a bug — it is the API reason:\Nan unaudited client posts to private only.
+Dialogue: 0,0:01:35.90,0:01:40.70,Sub,,0,0,0,,The creator's TikTok profile. Every post\Nis there, private, with a lock icon.
+Dialogue: 0,0:01:40.90,0:01:44.10,Sub,,0,0,0,,Live on TikTok: same account, same\Ncaption typed in our app, original sound.
+Dialogue: 0,0:01:44.40,0:01:47.00,Sub,,0,0,0,,Private because our client is not audited\Nyet. Once approved, the creator chooses.
