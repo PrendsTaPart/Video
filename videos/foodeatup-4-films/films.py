@@ -218,3 +218,98 @@ def demo():
                  vo=[(vo(code), t[i] + 0.3) for i, code in blocks])
     out = build_film("foodeatup-demo", W, H, segs, overlays, audio)
     to_16x9(out, "foodeatup-demo")
+
+
+# ------------------------------------------------------------------ 5. AVANT / APRÈS
+
+def avant_apres():
+    """« Le même restaurant, deux fois » — ~40 s, 9:16 (+16:9), narratrice Anaïs.
+    Bâti sur les diptyques de la bibliothèque : même lieu, même heure, même personne,
+    tournés une fois sans le logiciel et une fois avec (index 434-481)."""
+    W, H = 1080, 1920
+    segs = [
+        # AVANT — ce qui se perd (12,4 s)
+        S(hf(456), 0.5, 3.2),   # 7 h : le classeur papier corné
+        S(hf(451), 1.0, 3.0),   # 13 h : carnet, téléphone, terminal
+        S(hf(434), 1.0, 3.0),   # 12 h 30 : le ticket froissé au pass
+        S(hf(473), 1.0, 3.4),   # 8 h : la pile de bons de livraison
+        # APRÈS — tout est déjà là (13,9 s)
+        S(hf(478), 0.8, 3.4),   # même réserve : le thermomètre lu au téléphone
+        S(hf(457), 0.8, 3.4),   # même comptoir : une seule tablette
+        S(hf(453), 0.8, 3.4),   # même pass : l'écran mural dans l'ordre
+        S(hf(474), 0.8, 3.9),   # même bureau : la prévision qui défile
+        # clôture (5,9 s)
+        S(hf(476), 1.0, 2.9),   # le plan de salle à jour
+        S(hf(484), 2.0, 3.2),   # la boucle infinie tracée en lumière
+    ]
+    end_d = 5.6
+
+    def overlays(W, H, times, total):
+        ov = []
+        p = card("aa-avant", W, 260, "SANS", size=104, color=WHITE, pill=(*INK, 210), y=50)
+        ov.append(dict(png=p, t0=0.4, t1=times[4] - 0.15, fin=0.25, fout=0.25, y=110))
+        p = card("aa-apres", W, 260, "AVEC", size=104, color=WHITE, pill=(*BLUE, 235), y=50)
+        ov.append(dict(png=p, t0=times[4] + 0.1, t1=times[8] - 0.15, fin=0.25, fout=0.25, y=110))
+        heures = [(0, "7 h"), (1, "13 h"), (2, "12 h 30"), (3, "8 h"),
+                  (4, "7 h"), (5, "13 h"), (6, "12 h 30"), (7, "8 h")]
+        for i, h in heures:
+            p = card(f"aa-h{i}", W, 200, h, size=64, color=WHITE, pill=(*INK, 170), y=30)
+            ov.append(dict(png=p, t0=times[i] + 0.15, t1=times[i] + segs[i]["dur"] - 0.15, fin=0.2, fout=0.2,
+                           y=H - 560, slide="up"))
+        ov.append(dict(png=logo_corner("aa-logo", W, H, scale=0.26, margin=44), t0=times[8], t1=total - end_d,
+                       fin=0.3, fout=0.2))
+        ov.append(dict(png=end_card("aa-end", W, H, ["C'est le même restaurant.", "Une infinité de solutions",
+                                                     "pour gérer le vôtre."]),
+                       t0=total - end_d, t1=total + 1, fin=0.5, fout=0.0))
+        return ov
+
+    segs.append(S(hf(406), 2.0, end_d))
+    t = [0.0]
+    for s in segs[:-1]:
+        t.append(t[-1] + s["dur"])
+    audio = dict(music=MUSIC_UNDER, music_gain=-13.0, music_fade_out=2.2, src_gain=-19.0, duck=0.3,
+                 vo=[(vo("P1"), 0.3), (vo("A2"), t[4] + 0.2), (vo("P6"), t[8] + 0.2), (vo("C4"), t[-1] + 0.6)])
+    out = build_film("foodeatup-avant-apres", W, H, segs, overlays, audio)
+    to_16x9(out, "foodeatup-avant-apres")
+
+
+# ------------------------------------------------------------------ 6. BANDE-ANNONCE
+
+def teaser():
+    """« FoodEatUp, la bande-annonce » — ~22 s, 9:16 (+16:9), musique du clip, pas de voix
+    avant la signature. Les plans les plus spectaculaires de la bibliothèque."""
+    W, H = 1080, 1920
+    B4 = 1.951
+    segs = [
+        S(hf(489), 0.4, B4),    # le réveil à 5 h 47
+        S(hf(279), 4.0, B4),    # le coup de feu filmé comme une bataille
+        S(hf(319), 4.5, B4),    # le ruban de tickets sans fin
+        S(hf(282), 2.0, B4),    # l'intérieur du lave-verres
+        S(hf(285), 4.0, B4),    # le but qui soulève le serveur
+        S(hf(443), 2.0, B4),    # le burger au ralenti
+        S(hf(468), 1.0, 2.6),   # l'assiette qui tombe dans la piscine
+        S(hf(331), 6.0, 2.6),   # le clin d'œil du soleil
+        S(hf(315), 3.0, 2.6),   # les confettis du réveillon
+        S(hf(272), 3.0, 3.6),   # le salut de troupe
+    ]
+    end_d = 5.6
+
+    def overlays(W, H, times, total):
+        ov = []
+        p = card("tz-1", W, 300, "UN RESTAURANT,", size=104, color=WHITE, pill=(*INK, 200), y=40)
+        ov.append(dict(png=p, t0=0.3, t1=times[3] - 0.1, fin=0.2, fout=0.2, y=H - 700, slide="up"))
+        p = card("tz-2", W, 300, "C'EST TOUS LES JOURS ÇA.", size=88, color=INK, pill=(*ORANGE, 235), y=40)
+        ov.append(dict(png=p, t0=times[3] + 0.1, t1=times[6] - 0.1, fin=0.2, fout=0.2, y=H - 700, slide="up"))
+        ov.append(dict(png=logo_corner("tz-logo", W, H, scale=0.30, margin=48), t0=times[6], t1=total - end_d,
+                       fin=0.3, fout=0.2))
+        ov.append(dict(png=end_card("tz-end", W, H, TAGLINE), t0=total - end_d, t1=total + 1, fin=0.5, fout=0.0))
+        return ov
+
+    segs.append(S(hf(406), 2.0, end_d))
+    t = [0.0]
+    for s in segs[:-1]:
+        t.append(t[-1] + s["dur"])
+    audio = dict(music=MUSIC_CLIP, music_start=14.0, music_gain=-7.0, music_fade_out=1.5, src_gain=-22.0, duck=0.35,
+                 vo=[(vo("C3"), t[9] + 0.1), (vo("C4"), t[-1] + 0.5)])
+    out = build_film("foodeatup-teaser", W, H, segs, overlays, audio)
+    to_16x9(out, "foodeatup-teaser")
