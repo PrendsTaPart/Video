@@ -55,7 +55,7 @@ def short(name):
     def overlays(W, H, times, total):
         ov = []
         p = card(f"{name}-t", W, 300, titre, size=104, color=WHITE, pill=(*INK, 205), y=40)
-        ov.append(dict(png=p, t0=0.35, t1=times[2] - 0.15, fin=0.2, fout=0.25, y=H - 700, slide="up"))
+        ov.append(dict(png=p, t0=times[0] + 0.35, t1=times[2] - 0.15, fin=0.2, fout=0.25, y=H - 700, slide="up"))
         for k, txt in enumerate(puces):
             p = card(f"{name}-p{k}", W, 260, txt, size=74, color=WHITE, pill=(*BLUE, 235), y=50)
             ov.append(dict(png=p, t0=times[2 + k] + 0.15, t1=times[2 + k] + b - 0.1, fin=0.15, fout=0.2,

@@ -107,7 +107,7 @@ def presentation():
     blocks = [(0, "P1"), (4, "P2"), (8, "P3"), (13, "P4"), (17, "P5"), (19, "P6")]
 
     def overlays(W, H, times, total):
-        ov = [dict(png=logo_corner("pres-logo", W, H, scale=0.26, margin=44), t0=0.0, t1=total - end_d, fin=0.5, fout=0.3)]
+        ov = [dict(png=logo_corner("pres-logo", W, H, scale=0.26, margin=44), t0=times[0], t1=total - end_d, fin=0.5, fout=0.3)]
         agents = [(9, "Jarvis", "commis vocal en cuisine"), (10, "Caroline", "répond à vos clients"),
                   (11, "PrediBot", "prépare la nuit"), (12, "Iris", "publie sur les réseaux")]
         for i, name, sub in agents:
@@ -152,7 +152,7 @@ def commercial():
     def overlays(W, H, times, total):
         ov = []
         p = card("pub-mardi", W, 300, "Mardi, 11 h.", size=100, color=WHITE, pill=(*INK, 200), y=40)
-        ov.append(dict(png=p, t0=0.3, t1=4.2, fin=0.2, fout=0.2, y=H - 700, slide="up"))
+        ov.append(dict(png=p, t0=times[0] + 0.3, t1=times[0] + 4.2, fin=0.2, fout=0.2, y=H - 700, slide="up"))
         for i, txt in [(2, "TEMPÉRATURES"), (3, "FICHES TECHNIQUES"), (4, "STOCK"), (5, "PLANNING")]:
             p = card(f"pub-{i}", W, 260, txt, size=80, color=WHITE, pill=(*BLUE, 235), y=50)
             ov.append(dict(png=p, t0=times[i] + 0.15, t1=times[i] + segs[i]["dur"] - 0.05, fin=0.12, fout=0.15, y=H - 660, slide="up"))
@@ -252,7 +252,7 @@ def avant_apres():
     def overlays(W, H, times, total):
         ov = []
         p = card("aa-avant", W, 260, "SANS", size=104, color=WHITE, pill=(*INK, 210), y=50)
-        ov.append(dict(png=p, t0=0.4, t1=times[4] - 0.15, fin=0.25, fout=0.25, y=110))
+        ov.append(dict(png=p, t0=times[0] + 0.4, t1=times[4] - 0.15, fin=0.25, fout=0.25, y=110))
         p = card("aa-apres", W, 260, "AVEC", size=104, color=WHITE, pill=(*BLUE, 235), y=50)
         ov.append(dict(png=p, t0=times[4] + 0.1, t1=times[8] - 0.15, fin=0.25, fout=0.25, y=110))
         heures = [(0, "7 h"), (1, "13 h"), (2, "12 h 30"), (3, "8 h"),
@@ -302,7 +302,7 @@ def teaser():
     def overlays(W, H, times, total):
         ov = []
         p = card("tz-1", W, 300, "UN RESTAURANT,", size=104, color=WHITE, pill=(*INK, 200), y=40)
-        ov.append(dict(png=p, t0=0.3, t1=times[3] - 0.1, fin=0.2, fout=0.2, y=H - 700, slide="up"))
+        ov.append(dict(png=p, t0=times[0] + 0.3, t1=times[3] - 0.1, fin=0.2, fout=0.2, y=H - 700, slide="up"))
         p = card("tz-2", W, 300, "C'EST TOUS LES JOURS ÇA.", size=88, color=INK, pill=(*ORANGE, 235), y=40)
         ov.append(dict(png=p, t0=times[3] + 0.1, t1=times[6] - 0.1, fin=0.2, fout=0.2, y=H - 700, slide="up"))
         ov.append(dict(png=logo_corner("tz-logo", W, H, scale=0.30, margin=48), t0=times[6], t1=total - end_d,

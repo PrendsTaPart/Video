@@ -99,7 +99,7 @@ def video(num):
 
     def overlays(W, H, times, total):
         ov = [dict(png=card(f"{slug}-t", W, 300, titre, size=98, color=WHITE, pill=(*INK, 205), y=40),
-                   t0=0.35, t1=times[2] - 0.15, fin=0.2, fout=0.25, y=H - 700, slide="up")]
+                   t0=times[0] + 0.35, t1=times[2] - 0.15, fin=0.2, fout=0.25, y=H - 700, slide="up")]
         for k, txt in enumerate(puces):
             ov.append(dict(png=card(f"{slug}-p{k}", W, 260, txt, size=70, color=WHITE, pill=(*BLUE, 235), y=50),
                            t0=times[2 + k] + 0.15, t1=times[2 + k] + segs[2 + k]["dur"] - 0.1,
@@ -134,7 +134,7 @@ def clip(name):
     def overlays(W, H, times, total):
         ov = [dict(png=card(f"{slug}-t", W, 420, titre, size=118, color=WHITE, pill=(*INK, 205), y=40,
                             sub=sous, sub_size=54),
-                   t0=0.4, t1=times[1] + 1.2, fin=0.3, fout=0.4, y=H - 780, slide="up")]
+                   t0=times[0] + 0.4, t1=times[1] + 1.2, fin=0.3, fout=0.4, y=H - 780, slide="up")]
         ov.append(dict(png=card(f"{slug}-s", W, 260, "FOODEATUP", size=88, color=WHITE,
                                 pill=(*BLUE, 235), y=50),
                        t0=times[6], t1=total - end_d, fin=0.3, fout=0.3, y=H - 660, slide="up"))
