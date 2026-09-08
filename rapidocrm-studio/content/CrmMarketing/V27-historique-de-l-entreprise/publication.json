@@ -11,5 +11,15 @@
       "thumbnail_vertical_url": "192e496fa6c9b26d"
     },
     "publie_le": "2026-09-05T23:28:44.205Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=ybwki7uwrH8",
+    "video_id": "ybwki7uwrH8",
+    "publie_le": "2026-09-08T14:18:51.421Z"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/06-historique-de-l-entreprise",
+    "tutoriel_id": "d5f8f34a-417f-4b2a-a9c9-0652ef09077d",
+    "publie_le": "2026-09-08T14:20:46.930Z"
   }
 }

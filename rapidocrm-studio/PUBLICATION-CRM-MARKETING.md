@@ -100,6 +100,7 @@ Ce qui est en ligne, au fil des envois — page vérifiée en HTTP 200 :
 | 08/09 08:00 | *V14 compta* Suivre ses dépenses | `P1IfNCthgqs` | `/tutoriel/05-historique-des-depenses` |
 | 08/09 10:00 | V23 Créer un jeu concours | `fb8jo6mSz6w` | `/tutoriel/06-creer-un-jeu-concours` |
 | 08/09 12:00 | V25 Ajouter un PDF | `YDalgNep6uc` | `/tutoriel/06-ajouter-un-pdf` |
+| 08/09 14:00 | V27 Historique de l'entreprise | `ybwki7uwrH8` | `/tutoriel/06-historique-de-l-entreprise` |
 
 Le connecteur YouTube MCP s'est déconnecté de la session le 6 au matin.
 Les identifiants se relèvent alors sur le flux RSS public de la chaîne,

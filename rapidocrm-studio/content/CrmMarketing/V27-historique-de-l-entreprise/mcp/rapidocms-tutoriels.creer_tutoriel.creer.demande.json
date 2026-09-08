@@ -1,0 +1,39 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-de-l-entreprise",
+    "module": "06-crm-marketing",
+    "numero": 27,
+    "titre": "Historique de l'entreprise",
+    "titre_court": "Historique client",
+    "accroche": "Neuf journaux répondent, sur une seule page.",
+    "explication": "On part de la fiche d'une entreprise, et on ressort avec sa page d'historique. Neuf journaux : e-mails, SMS, rendez-vous, contrats, documents, factures, devis, dépenses et notes.\n\n1. Ouvrir le panneau Entreprise de la fiche — Le panneau de droite, premier bloc : Entreprise. Il tient quatre entrées.\n2. Ouvrir l'historique de l'entreprise — La troisième : historique de l'entreprise.\n3. Parcourir les neuf journaux — Neuf cartes, trois par rangée. Chacune couvre un type d'échange.\n4. Choisir le journal à consulter — Et le même bouton partout : Consulter.\n\nNeuf journaux, c'est beaucoup à ouvrir. Pour avoir le total d'un coup, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir le panneau Entreprise de la fiche",
+        "texte": "Le panneau de droite, premier bloc : Entreprise. Il tient quatre entrées."
+      },
+      {
+        "titre": "Ouvrir l'historique de l'entreprise",
+        "texte": "La troisième : historique de l'entreprise."
+      },
+      {
+        "titre": "Parcourir les neuf journaux",
+        "texte": "Neuf cartes, trois par rangée. Chacune couvre un type d'échange."
+      },
+      {
+        "titre": "Choisir le journal à consulter",
+        "texte": "Et le même bouton partout : Consulter."
+      }
+    ],
+    "a_quoi_ca_sert": "Rassembler en une page tout ce qui s'est passé avec un client : e-mails, SMS, rendez-vous, contrats, documents, factures, devis, dépenses et notes. Chaque journal s'ouvre d'un clic.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir ouvert la fiche d'une entreprise cliente"
+    ]
+  },
+  "demande_le": "2026-09-08T14:18:56.603Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}
