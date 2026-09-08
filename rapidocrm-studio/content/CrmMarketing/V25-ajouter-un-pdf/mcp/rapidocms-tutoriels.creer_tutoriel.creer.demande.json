@@ -1,0 +1,40 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-ajouter-un-pdf",
+    "module": "06-crm-marketing",
+    "numero": 25,
+    "titre": "Ajouter un PDF",
+    "titre_court": "Ajouter un PDF",
+    "accroche": "Il peut être sur sa fiche.",
+    "explication": "On part de la fiche d'une entreprise, et on ressort avec un document attaché. Deux champs seulement : un nom, un fichier. Le nom qu'on donne remplace celui du fichier.\n\n1. Ouvrir « Ajouter un PDF » depuis la fiche — Panneau Documentation : ajouter un PDF.\n2. Nommer le document — Le nom d'abord. C'est lui qu'on relira dans la fiche, alors autant qu'il dise ce que le fichier contient.\n3. Choisir le fichier et l'ajouter — Parcourir, puis Ajouter. C'est ce bouton-là qui attache le document.\n4. Retrouver la fiche et ses documents — Retour à la fiche : le document y est rangé, avec le reste du dossier client.\n\nUne fiche client contient plus que ses documents. Pour la relire d'un coup, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir « Ajouter un PDF » depuis la fiche",
+        "texte": "Panneau Documentation : ajouter un PDF."
+      },
+      {
+        "titre": "Nommer le document",
+        "texte": "Le nom d'abord. C'est lui qu'on relira dans la fiche, alors autant qu'il dise ce que le fichier contient."
+      },
+      {
+        "titre": "Choisir le fichier et l'ajouter",
+        "texte": "Parcourir, puis Ajouter. C'est ce bouton-là qui attache le document."
+      },
+      {
+        "titre": "Retrouver la fiche et ses documents",
+        "texte": "Retour à la fiche : le document y est rangé, avec le reste du dossier client."
+      }
+    ],
+    "a_quoi_ca_sert": "Attacher un document au client — une carte, un tarif, une fiche technique — pour le retrouver dans sa fiche plutôt que dans une boîte mail.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir ouvert la fiche d'une entreprise cliente",
+      "Avoir le fichier PDF sur son poste"
+    ]
+  },
+  "demande_le": "2026-09-08T12:23:21.206Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

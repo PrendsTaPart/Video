@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-un-jeu-concours",
+    "astuces": [
+      {
+        "titre": "Trois types de jeux",
+        "texte": "La bibliothèque distingue Roue, À gratter et Quiz, et affiche le nombre de lots de chaque modèle.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Configuration à gauche, aperçu à droite",
+        "texte": "L'étape Apparence est coupée en deux : ce qu'on règle et ce que ça donne, côte à côte.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Le bouton « Mes jeux »",
+        "texte": "En haut de la bibliothèque, il ramène aux jeux déjà lancés.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T12:21:25.555Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}
