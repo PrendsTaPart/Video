@@ -1,0 +1,20 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_prompts",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-historique-des-depenses",
+    "prompts": [
+      {
+        "titre": "Voir ce qui reste à payer",
+        "texte": "Liste-moi mes [nombre] dépenses en attente avec leur montant.",
+        "variables": [
+          "nombre"
+        ],
+        "outil_mcp": "list_depenses"
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T08:19:40.619Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

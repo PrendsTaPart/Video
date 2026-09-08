@@ -11,5 +11,15 @@
       "thumbnail_vertical_url": "76ee5a9c56b749c3"
     },
     "publie_le": "2026-09-05T23:28:32.320Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=E6YDvqFNt2g",
+    "video_id": "E6YDvqFNt2g",
+    "publie_le": "2026-09-08T08:17:46.116Z"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/06-creer-une-carte-fidelite",
+    "tutoriel_id": "978b037c-b483-456a-889e-beb96b613462",
+    "publie_le": "2026-09-08T08:19:35.669Z"
   }
 }

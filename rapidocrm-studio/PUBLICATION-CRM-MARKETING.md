@@ -96,6 +96,8 @@ Ce qui est en ligne, au fil des envois — page vérifiée en HTTP 200 :
 | 07/09 10:00 | V18 Créer une facture | `edjve6F2HAQ` | `/tutoriel/06-creer-une-facture` |
 | 07/09 12:00 | *V12 compta* Retrouver un devis | `5FJO1-iGE-I` | `/tutoriel/05-historique-des-devis` |
 | 07/09 14:00 | V19 Créer un contrat | `Sm2AbZ-uBJY` | `/tutoriel/06-creer-un-contrat` |
+| 08/09 06:00 | V21 Créer une carte de fidélité | `E6YDvqFNt2g` | `/tutoriel/06-creer-une-carte-fidelite` |
+| 08/09 08:00 | *V14 compta* Suivre ses dépenses | `P1IfNCthgqs` | `/tutoriel/05-historique-des-depenses` |
 
 Le connecteur YouTube MCP s'est déconnecté de la session le 6 au matin.
 Les identifiants se relèvent alors sur le flux RSS public de la chaîne,

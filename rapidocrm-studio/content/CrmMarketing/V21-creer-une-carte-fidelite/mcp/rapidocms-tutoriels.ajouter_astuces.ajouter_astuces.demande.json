@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-une-carte-fidelite",
+    "astuces": [
+      {
+        "titre": "Trois étapes, affichées en haut",
+        "texte": "Taille du template, Design et paramétrage, Validation : la barre du haut dit toujours où on en est.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Les dimensions sont écrites sur chaque carte",
+        "texte": "Chaque format annonce ses millimètres et son épaisseur : rien à mesurer.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "La page d'arrivée chiffre le programme",
+        "texte": "Nombre de programmes, nombre de clients, nombre de points offerts s'affichent au-dessus du tableau.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T08:17:54.267Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}
