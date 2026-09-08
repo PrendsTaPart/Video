@@ -1,9 +1,9 @@
-# FoodEatUp — 48 vidéos montées à partir de la bibliothèque Higgsfield
+# FoodEatUp — 158 vidéos montées à partir de la bibliothèque Higgsfield
 
 Session du 2026-09-07. **Règle posée par Michael : uniquement des plans de la bibliothèque
 Higgsfield.** Aucun screencast du logiciel, aucun plan du film héros, aucun avatar HeyGen
 dans les livrables. La bibliothèque complète a été relevée (532 plans), téléchargée et
-analysée et taguée plan par plan ; s'y ajoutent huit musiques originales et 64 voix off
+analysée et taguée plan par plan ; s'y ajoutent huit musiques originales et 174 voix off
 ElevenLabs, et six animations reprises des projets déjà présents dans le dépôt.
 
 ## Livrables (`out/`)
@@ -55,6 +55,19 @@ dépôt (`videos/lancement-foodeatup-v1`, `videos/deux-boucles`,
 
 `build_film(..., hook=..., sting=...)` les place automatiquement et décale les
 repères d'incrustation et les voix off de la durée de l'accroche.
+
+## Les trois vagues
+
+| Ensemble | Nombre | Fichiers | Scripts |
+|---|---|---|---|
+| Films et shorts | 12 | `foodeatup-clip.mp4`, `foodeatup-short-*.mp4` … | `scripts/VOIX-OFF.md` |
+| Série « 30 problèmes, 30 solutions » | 30 | `foodeatup-s01-*.mp4` … | `scripts/SERIE-30.md` |
+| Clips musicaux sans voix | 6 | `foodeatup-clip-rush.mp4` … | `scripts/SERIE-30.md` |
+| Seconde vague | 50 | `foodeatup-t01-*.mp4` … | `scripts/SERIE-50.md` |
+| Troisième vague | 60 | `foodeatup-u01-*.mp4` … | `scripts/serie60_data.py` |
+
+`CATALOGUE.md` liste les 158 vidéos avec leur sujet, leur durée et leur adresse
+dans la bibliothèque RapidoCMS.
 
 ## Matière
 
