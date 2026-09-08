@@ -17,3 +17,6 @@ videos/**/work/
 
 # Le journal des appels MCP est une trace d'exécution, pas du code.
 .claude/journal-mcp.jsonl
+
+# Répertoires de rendu parallèle (WORKDIR=work-a ...)
+videos/**/work-*/
