@@ -104,6 +104,7 @@ Ce qui est en ligne, au fil des envois — page vérifiée en HTTP 200 :
 | 09/09 06:00 | V28 Historique des e-mails | `TXnUEPKvBi4` | `/tutoriel/06-historique-email` |
 | 09/09 08:00 | V29 Historique des SMS | `R4-eCmKbIoc` | `/tutoriel/06-historique-sms` |
 | 09/09 10:00 | V31 Historique des contrats | `4_J_v122_QM` | `/tutoriel/06-historique-contrat` |
+| 09/09 12:00 | V32 Historique des documents | `TRhsfo7o84w` | `/tutoriel/06-historique-document` |
 
 Le connecteur YouTube MCP s'est déconnecté de la session le 6 au matin.
 Les identifiants se relèvent alors sur le flux RSS public de la chaîne,

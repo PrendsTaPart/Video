@@ -1,0 +1,20 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_prompts",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-document",
+    "prompts": [
+      {
+        "titre": "Relire la fiche complète d'une entreprise",
+        "texte": "Donne-moi la fiche complète de l'entreprise numéro [identifiant].",
+        "variables": [
+          "identifiant"
+        ],
+        "outil_mcp": "get_entreprise"
+      }
+    ]
+  },
+  "demande_le": "2026-09-09T12:22:40.653Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}
