@@ -101,6 +101,8 @@ Ce qui est en ligne, au fil des envois — page vérifiée en HTTP 200 :
 | 08/09 10:00 | V23 Créer un jeu concours | `fb8jo6mSz6w` | `/tutoriel/06-creer-un-jeu-concours` |
 | 08/09 12:00 | V25 Ajouter un PDF | `YDalgNep6uc` | `/tutoriel/06-ajouter-un-pdf` |
 | 08/09 14:00 | V27 Historique de l'entreprise | `ybwki7uwrH8` | `/tutoriel/06-historique-de-l-entreprise` |
+| 09/09 06:00 | V28 Historique des e-mails | `TXnUEPKvBi4` | `/tutoriel/06-historique-email` |
+| 09/09 08:00 | V29 Historique des SMS | `R4-eCmKbIoc` | `/tutoriel/06-historique-sms` |
 
 Le connecteur YouTube MCP s'est déconnecté de la session le 6 au matin.
 Les identifiants se relèvent alors sur le flux RSS public de la chaîne,

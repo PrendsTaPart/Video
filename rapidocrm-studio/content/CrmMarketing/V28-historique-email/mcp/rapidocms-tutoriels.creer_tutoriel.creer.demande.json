@@ -1,0 +1,35 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-email",
+    "module": "06-crm-marketing",
+    "numero": 28,
+    "titre": "Historique email",
+    "titre_court": "Historique des e-mails",
+    "accroche": "Le journal des e-mails le retrouve, avec son contenu.",
+    "explication": "On part de la page Historique, et on ressort avec l'e-mail sous les yeux. Le tableau liste les envois ; l'icône en bout de ligne rouvre le message tel qu'il est parti, avec son objet, son destinataire et son contenu. Rien n'est reconstitué : c'est l'envoi lui-même.\n\n1. Ouvrir l'historique des e-mails — Première carte de la page Historique : les e-mails. On consulte.\n2. Lire le tableau des envois — Une ligne par envoi, avec sa date.\n3. Rouvrir un e-mail envoyé — L'icône en bout de ligne rouvre le message : objet, destinataire, contenu. Puis on referme.\n\nLe journal montre le détail. Pour le total du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir l'historique des e-mails",
+        "texte": "Première carte de la page Historique : les e-mails. On consulte."
+      },
+      {
+        "titre": "Lire le tableau des envois",
+        "texte": "Une ligne par envoi, avec sa date."
+      },
+      {
+        "titre": "Rouvrir un e-mail envoyé",
+        "texte": "L'icône en bout de ligne rouvre le message : objet, destinataire, contenu. Puis on referme."
+      }
+    ],
+    "a_quoi_ca_sert": "Savoir ce qui a été écrit à un client, et quand. Le journal liste les envois, et chaque ligne se rouvre pour relire l'e-mail tel qu'il est parti.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir ouvert l'historique de l'entreprise"
+    ]
+  },
+  "demande_le": "2026-09-09T08:18:18.981Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

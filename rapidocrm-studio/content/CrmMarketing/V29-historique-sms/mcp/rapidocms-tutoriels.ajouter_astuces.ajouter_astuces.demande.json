@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-sms",
+    "astuces": [
+      {
+        "titre": "Le numéro est une colonne",
+        "texte": "Contrairement au journal des e-mails, celui des SMS montre le numéro du destinataire dès le tableau.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Fermer, pas supprimer",
+        "texte": "La fenêtre d'un SMS se referme par le bouton Fermer : elle ne propose pas de suppression.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Un champ de recherche au-dessus",
+        "texte": "Le champ Chercher filtre le journal quand les envois s'accumulent.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-09T08:19:59.153Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}
