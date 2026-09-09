@@ -1,0 +1,39 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-facture",
+    "module": "06-crm-marketing",
+    "numero": 33,
+    "titre": "Historique facture",
+    "titre_court": "Historique des factures",
+    "accroche": "Un tableau répond : statut et total, ligne par ligne.",
+    "explication": "On part de la page Historique, et on ressort avec la facture ouverte. Le tableau donne le statut et le total ; l'icône en bout de ligne ouvre le document, prêt à télécharger. Rien à recalculer, rien à reconstituer : la facture est déjà écrite.\n\n1. Ouvrir l'historique des factures — Deuxième rangée de la page Historique : les factures. On consulte, et le tableau se charge.\n2. Lire les colonnes du tableau — Statut et total TTC : l'essentiel se lit ici.\n3. Ouvrir une facture — L'icône ouvre la facture dans un onglet.\n4. Lire la facture et la télécharger — Et le bouton Télécharger l'enregistre.\n\nLe journal montre un client. Pour voir toutes les factures qui attendent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir l'historique des factures",
+        "texte": "Deuxième rangée de la page Historique : les factures. On consulte, et le tableau se charge."
+      },
+      {
+        "titre": "Lire les colonnes du tableau",
+        "texte": "Statut et total TTC : l'essentiel se lit ici."
+      },
+      {
+        "titre": "Ouvrir une facture",
+        "texte": "L'icône ouvre la facture dans un onglet."
+      },
+      {
+        "titre": "Lire la facture et la télécharger",
+        "texte": "Et le bouton Télécharger l'enregistre."
+      }
+    ],
+    "a_quoi_ca_sert": "Voir les factures émises pour un client, avec leur statut et leur total, puis ouvrir la facture elle-même pour la relire ou la télécharger.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir ouvert l'historique de l'entreprise"
+    ]
+  },
+  "demande_le": "2026-09-09T14:24:09.596Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}
