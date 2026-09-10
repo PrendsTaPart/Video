@@ -106,12 +106,23 @@ Ce qui est en ligne, au fil des envois — page vérifiée en HTTP 200 :
 | 09/09 10:00 | V31 Historique des contrats | `4_J_v122_QM` | `/tutoriel/06-historique-contrat` |
 | 09/09 12:00 | V32 Historique des documents | `TRhsfo7o84w` | `/tutoriel/06-historique-document` |
 | 09/09 14:00 | V33 Historique des factures | `N_uDiEN13fM` | `/tutoriel/06-historique-facture` |
+| 10/09 06:00 | V34 Historique des devis | `_5OAA2SGUlI` | `/tutoriel/06-historique-devis` |
 
 Le connecteur YouTube MCP s'est déconnecté de la session le 6 au matin.
 Les identifiants se relèvent alors sur le flux RSS public de la chaîne,
 `https://www.youtube.com/feeds/videos.xml?channel_id=UCXyptH13bJF7AVr2TZJWA-Q`,
 et chaque lien est vérifié en HTTP avant d'être écrit. Le reste de la
 procédure ne change pas.
+
+Le 10 septembre au matin, le flux RSS lui-même a rendu 404 — sur
+`channel_id` comme sur `playlist_id` de la liste des envois — alors que
+la page de la chaîne répondait en 200 et qu'oEmbed marchait sur une
+vidéo connue. Ce n'était donc ni une panne de réseau ni une limitation
+de débit. Le relevé s'est fait sur la page `/@RapidoSoftwareCRM/videos`,
+en lisant `ytInitialData` et ses `lockupViewModel` : le `contentId` en
+tête de liste est le dernier envoi. Le titre se confirme ensuite par
+oEmbed, et le rattachement au tutoriel reste le même — l'égalité exacte
+sur `seo.youtube_titre`.
 
 Les vingt-quatre médias sont déposés dans la bibliothèque RapidoCMS et
 `publier:cms` est passé pour les seize. Il ne manque à chaque page que

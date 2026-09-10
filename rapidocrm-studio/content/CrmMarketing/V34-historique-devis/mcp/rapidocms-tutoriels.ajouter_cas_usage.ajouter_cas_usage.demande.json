@@ -1,0 +1,24 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_cas_usage",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-devis",
+    "cas_usage": [
+      {
+        "titre": "Faire le point sur ses propositions",
+        "contexte": "Il faut savoir ce qui reste à décrocher.",
+        "action": "Ouvrez l'historique des devis et lisez les colonnes Statut et Prix.",
+        "resultat": "Chaque devis affiche son état et son montant."
+      },
+      {
+        "titre": "Comprendre pourquoi un devis n'est plus signable",
+        "contexte": "Le client veut accepter un devis de juillet.",
+        "action": "Ouvrez le devis depuis l'œil et lisez le bandeau en haut de page.",
+        "resultat": "L'alerte donne les dates entre lesquelles la signature était possible."
+      }
+    ]
+  },
+  "demande_le": "2026-09-10T06:21:13.481Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

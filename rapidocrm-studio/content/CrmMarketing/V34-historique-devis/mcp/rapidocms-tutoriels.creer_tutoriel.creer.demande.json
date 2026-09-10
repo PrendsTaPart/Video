@@ -1,0 +1,39 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-devis",
+    "module": "06-crm-marketing",
+    "numero": 34,
+    "titre": "Historique devis",
+    "titre_court": "Historique des devis",
+    "accroche": "Le devis vous le dit lui-même, dès l'ouverture.",
+    "explication": "On part de la page Historique, et on ressort avec le devis ouvert. Le tableau donne les dates, le statut et le prix ; le devis, lui, prévient quand la période de signature est passée.\n\n1. Ouvrir l'historique des devis — Troisième rangée de la page Historique : les devis. On consulte. La page reste vide quelques secondes, le temps que le tableau arrive : ce n'est pas une liste vide.\n2. Lire le tableau des devis — Dates, statut, prix. Vert pour accepté, orange pour en attente.\n3. Ouvrir un devis — L'icône ouvre le devis.\n4. Lire l'alerte de période de signature — Et le bandeau dit qu'il n'est plus signable.\n\nLe journal montre un client. Pour voir tous les devis qui attendent une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir l'historique des devis",
+        "texte": "Troisième rangée de la page Historique : les devis. On consulte. La page reste vide quelques secondes, le temps que le tableau arrive : ce n'est pas une liste vide."
+      },
+      {
+        "titre": "Lire le tableau des devis",
+        "texte": "Dates, statut, prix. Vert pour accepté, orange pour en attente."
+      },
+      {
+        "titre": "Ouvrir un devis",
+        "texte": "L'icône ouvre le devis."
+      },
+      {
+        "titre": "Lire l'alerte de période de signature",
+        "texte": "Et le bandeau dit qu'il n'est plus signable."
+      }
+    ],
+    "a_quoi_ca_sert": "Voir les devis établis pour un client, leur période de validité, leur statut et leur prix, puis ouvrir celui qu'on cherche. Le logiciel prévient quand la période de signature est passée.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir ouvert l'historique de l'entreprise"
+    ]
+  },
+  "demande_le": "2026-09-10T06:21:13.361Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}
