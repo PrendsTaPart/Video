@@ -1,0 +1,19 @@
+Votre commercial dépasse ses objectifs depuis deux mois. Ses objectifs, eux, n'ont pas bougé. Quatre compteurs, et son mois redevient lisible.
+
+On part de la fiche d'un commercial, et on ressort avec ses objectifs du mois remis à jour. Sur sa fiche, un bloc affiche le pourcentage des objectifs atteints, ligne par ligne. Ce pourcentage se calcule sur quatre compteurs, et ces quatre compteurs se règlent à un seul endroit : la roue crantée de la fiche, puis modifier les objectifs. Ce sont les mêmes quatre compteurs que ceux saisis à la création du commercial : sms envoyés, emails envoyés, rendez-vous organisés, contrats signés.
+
+Depuis la liste des commerciaux, voir profil.
+
+La fiche affiche ses compteurs et le pourcentage des objectifs atteints.
+
+La roue crantée ouvre quatre entrées : profil, objectifs, portefeuille, suppression.
+
+Deuxième entrée : modifier les objectifs.
+
+Sms, emails, rendez-vous, contrats. On relève les cibles. Attention, vous changez la cible, pas ce qui a déjà été réalisé : le pourcentage se recalcule sur la nouvelle valeur.
+
+Un clic sur modifier, et on revient à la liste.
+
+Les cibles sont posées. Pour voir où en est l'équipe sans ouvrir chaque fiche, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond, objectifs et taux d'atteinte compris. Copiez ce prompt et collez-le.
+
+Une cible juste, et le pourcentage veut enfin dire quelque chose.

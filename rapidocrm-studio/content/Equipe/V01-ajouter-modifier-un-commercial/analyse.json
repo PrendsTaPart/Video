@@ -1,0 +1,173 @@
+{
+  "duree": 65.45,
+  "resolution": [1920, 882],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Commerciaux — liste vide" },
+    { "t": 1.7, "nom": "Modale « Ajouter un utilisateur »" },
+    { "t": 54.84, "nom": "Commerciaux — fiche créée et avertissement d'activation" }
+  ],
+  "actions": [
+    {
+      "t": 1.2,
+      "type": "clic",
+      "cible": "bouton « ajouter un utilisateur »",
+      "zone": { "x": 0.84, "y": 0.22, "w": 0.15, "h": 0.11 },
+      "texte_visible": "ajouter un utilisateur"
+    },
+    {
+      "t": 6.0,
+      "type": "ouverture",
+      "cible": "modale « Ajouter un utilisateur », section Informations personnelles",
+      "zone": { "x": 0.26, "y": 0.03, "w": 0.44, "h": 0.94 },
+      "texte_visible": "Ajouter un utilisateur — Informations personnelles"
+    },
+    {
+      "t": 13.0,
+      "type": "saisie",
+      "cible": "champs Nom et Prénom",
+      "zone": { "x": 0.27, "y": 0.3, "w": 0.42, "h": 0.16 },
+      "texte_visible": "Nom · Prénom"
+    },
+    {
+      "t": 20.0,
+      "type": "saisie",
+      "cible": "champ Fonction",
+      "zone": { "x": 0.27, "y": 0.48, "w": 0.2, "h": 0.13 },
+      "texte_visible": "Fonction — commercial terrain"
+    },
+    {
+      "t": 25.0,
+      "type": "saisie",
+      "cible": "champ Email",
+      "zone": { "x": 0.47, "y": 0.48, "w": 0.22, "h": 0.13 },
+      "texte_visible": "Email"
+    },
+    {
+      "t": 30.0,
+      "type": "saisie",
+      "cible": "champs Numéro et Adresse",
+      "zone": { "x": 0.26, "y": 0.63, "w": 0.44, "h": 0.15 },
+      "texte_visible": "Numéro · Adresse"
+    },
+    {
+      "t": 40.0,
+      "type": "saisie",
+      "cible": "champ Code postal",
+      "zone": { "x": 0.27, "y": 0.6, "w": 0.2, "h": 0.13 },
+      "texte_visible": "Code postal — 69002"
+    },
+    {
+      "t": 47.0,
+      "type": "selection",
+      "cible": "champ Image, bouton parcourir",
+      "zone": { "x": 0.47, "y": 0.28, "w": 0.22, "h": 0.22 },
+      "texte_visible": "Image — parcourir"
+    },
+    {
+      "t": 51.0,
+      "type": "saisie",
+      "cible": "section « Objectifs mensuels de l'utilisateur »",
+      "zone": { "x": 0.26, "y": 0.5, "w": 0.44, "h": 0.45 },
+      "texte_visible": "Nombre de sms envoyés · Nombre d'emails envoyés · Nombre de rendez-vous organisés · Nombre de contrats signés"
+    },
+    {
+      "t": 54.0,
+      "type": "validation",
+      "cible": "bouton enregistrer",
+      "zone": { "x": 0.4, "y": 0.9, "w": 0.16, "h": 0.09 },
+      "texte_visible": "enregistrer"
+    },
+    {
+      "t": 57.0,
+      "type": "ouverture",
+      "cible": "fiche du commercial et bandeau d'avertissement d'activation",
+      "zone": { "x": 0.22, "y": 0.05, "w": 0.78, "h": 0.9 },
+      "texte_visible": "Commercial terrain — Disponible — voir profil · « Le commercial a été créé, mais l'email d'activation n'a pas pu être envoyé… il peut définir son mot de passe via « mot de passe oublié » »"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir la page Commerciaux",
+      "debut": 0,
+      "fin": 5.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.0, "y": 0.02, "w": 1.0, "h": 0.96 }
+    },
+    {
+      "numero": 2,
+      "titre": "Ouvrir le formulaire",
+      "debut": 5.0,
+      "fin": 12.0,
+      "actions": [1],
+      "zone_focus": { "x": 0.24, "y": 0.03, "w": 0.48, "h": 0.94 }
+    },
+    {
+      "numero": 3,
+      "titre": "Nommer le commercial et sa fonction",
+      "debut": 12.0,
+      "fin": 24.0,
+      "actions": [2, 3],
+      "zone_focus": { "x": 0.25, "y": 0.25, "w": 0.46, "h": 0.4 }
+    },
+    {
+      "numero": 4,
+      "titre": "Renseigner ses coordonnées",
+      "debut": 24.0,
+      "fin": 38.0,
+      "actions": [4, 5],
+      "zone_focus": { "x": 0.25, "y": 0.42, "w": 0.46, "h": 0.42 }
+    },
+    {
+      "numero": 5,
+      "titre": "Ajouter sa photo",
+      "debut": 38.0,
+      "fin": 47.0,
+      "actions": [6, 7],
+      "zone_focus": { "x": 0.25, "y": 0.2, "w": 0.46, "h": 0.5 }
+    },
+    {
+      "numero": 6,
+      "titre": "Fixer ses objectifs mensuels",
+      "debut": 47.0,
+      "fin": 54.84,
+      "actions": [8, 9],
+      "zone_focus": { "x": 0.25, "y": 0.45, "w": 0.46, "h": 0.53 }
+    },
+    {
+      "numero": 7,
+      "titre": "Lire l'avertissement d'activation",
+      "debut": 54.84,
+      "fin": 65.45,
+      "actions": [10],
+      "zone_focus": { "x": 0.2, "y": 0.02, "w": 0.8, "h": 0.96 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 65.45,
+      "zone": { "x": 0.7, "y": 0.02, "w": 0.3, "h": 0.14 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    },
+    {
+      "t": 12.0,
+      "fin": 38.0,
+      "zone": { "x": 0.26, "y": 0.47, "w": 0.44, "h": 0.32 },
+      "raison": "Adresse e-mail, numéro de téléphone et adresse postale saisis dans le formulaire"
+    },
+    {
+      "t": 38.0,
+      "fin": 47.0,
+      "zone": { "x": 0.26, "y": 0.31, "w": 0.44, "h": 0.32 },
+      "raison": "Adresse e-mail, numéro de téléphone et adresse postale, formulaire défilé d'un cran"
+    },
+    {
+      "t": 47.0,
+      "fin": 54.84,
+      "zone": { "x": 0.26, "y": 0.0, "w": 0.44, "h": 0.3 },
+      "raison": "Adresse e-mail, numéro de téléphone et adresse postale, formulaire défilé en bas"
+    }
+  ]
+}

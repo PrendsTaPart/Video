@@ -1,0 +1,21 @@
+Le client demande un devis. Vous ouvrez un tableur, vous recopiez son nom, son adresse, votre prix. Ou bien vous partez de sa fiche, et le prix vient tout seul.
+
+On part de la fiche d'une entreprise, et on ressort avec un devis. Le panneau Finance l'ouvre, le catalogue remplit les montants, et le devis se retrouve dans l'activité du client.
+
+Panneau Finance : créer un devis.
+
+Le logo du client est déjà là. On choisit une couleur.
+
+Le produit, avec son prix. C'est lui qui remplit le reste.
+
+Les dates de la prestation, début et fin.
+
+On descend : le délai de paiement, les mentions légales, le statut. Et la question de l'envoi, à laquelle on répond ici.
+
+Le mode de règlement, les totaux, et enregistrer.
+
+Le devis prend sa place dans l'activité du client.
+
+Un devis part, un autre attend. Pour savoir lesquels, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Un devis qui part de la fiche du client, c'est un devis qui ne se retape pas.

@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Le devis est accepté. Reste à sortir un contrat, à le relire, à trouver la bonne adresse. Un modèle, deux dates, et il part."
+  },
+  {
+    "timestamp_secondes": 8,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec un contrat envoyé. La bibliothèque propose des modèles, le formulaire tient en quatre champs, et le logiciel confirme l'envoi."
+  },
+  {
+    "timestamp_secondes": 19,
+    "titre": "Ouvrir « Créer un contrat » depuis la fiche",
+    "texte": "Panneau Finance : créer un contrat."
+  },
+  {
+    "timestamp_secondes": 22,
+    "titre": "Choisir un modèle dans la bibliothèque",
+    "texte": "La bibliothèque annonce ses modèles. Chacun dit ce qu'il couvre."
+  },
+  {
+    "timestamp_secondes": 26,
+    "titre": "Vérifier le destinataire du contrat",
+    "texte": "Le destinataire est déjà rempli : c'est le client de la fiche."
+  },
+  {
+    "timestamp_secondes": 30,
+    "titre": "Fixer les dates de début et de fin",
+    "texte": "Puis les deux bornes. La date de début ouvre l'engagement, la date de fin le referme. C'est elle qui dira, plus tard, qu'il faut renouveler."
+  },
+  {
+    "timestamp_secondes": 39,
+    "titre": "Choisir le modèle d'e-mail et envoyer",
+    "texte": "Le message qui portera le contrat, puis envoyer."
+  },
+  {
+    "timestamp_secondes": 42,
+    "titre": "Lire la confirmation",
+    "texte": "Le bandeau confirme : le contrat est envoyé. Il rejoint l'historique du client, où on ira lire son statut."
+  },
+  {
+    "timestamp_secondes": 49,
+    "titre": "Faites-le avec Claude",
+    "texte": "Un contrat envoyé n'est pas un contrat signé. Pour voir ceux qui attendent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 63,
+    "titre": "À retenir",
+    "texte": "Un modèle, deux dates, un message : le contrat part le jour où le devis est accepté."
+  }
+]

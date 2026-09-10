@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 33,
+    "titre": "Historique facture",
+    "titre_court": "Historique des factures",
+    "slug": "06-historique-facture"
+  },
+  "hook": {
+    "texte": "« Où en est mon compte ? » Le client demande, et vous ouvrez trois onglets.",
+    "promesse": "Un tableau répond : statut et total, ligne par ligne.",
+    "duree": 8,
+    "alternatives": [
+      "Le total TTC est souvent la seule information cherchée.",
+      "Ce qui est facturé se lit ; ce qui est encaissé aussi.",
+      "Un duplicata se retrouve plus vite qu'il ne se refait."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page Historique, et on ressort avec la facture ouverte. Le tableau donne le statut et le total ; l'icône en bout de ligne ouvre le document, prêt à télécharger. Rien à recalculer, rien à reconstituer : la facture est déjà écrite.",
+    "duree": 21
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'historique des factures",
+        "voix": "Deuxième rangée de la page Historique : les factures. On consulte, et le tableau se charge.",
+        "debut_source": 1,
+        "fin_source": 8,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.6
+        },
+        "annotation": "Historique des factures"
+      },
+      {
+        "numero": 2,
+        "titre": "Lire les colonnes du tableau",
+        "voix": "Statut et total TTC : l'essentiel se lit ici.",
+        "debut_source": 8,
+        "fin_source": 11.85,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.35,
+          "w": 0.75,
+          "h": 0.3
+        },
+        "annotation": "Statut et Total TTC"
+      },
+      {
+        "numero": 3,
+        "titre": "Ouvrir une facture",
+        "voix": "L'icône ouvre la facture dans un onglet.",
+        "debut_source": 11.85,
+        "fin_source": 15.5,
+        "zone_focus": {
+          "x": 0,
+          "y": 0.14,
+          "w": 1,
+          "h": 0.5
+        },
+        "annotation": "Ouvrir la facture"
+      },
+      {
+        "numero": 4,
+        "titre": "Lire la facture et la télécharger",
+        "voix": "Et le bouton Télécharger l'enregistre.",
+        "debut_source": 15.5,
+        "fin_source": 18.23,
+        "zone_focus": {
+          "x": 0,
+          "y": 0.14,
+          "w": 1,
+          "h": 0.5
+        },
+        "annotation": "Télécharger"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Et pour ce qui reste à encaisser ?",
+    "voix": "Le journal montre un client. Pour voir toutes les factures qui attendent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] factures en attente avec leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_factures"
+    },
+    "resultat_affiche": {
+      "titre": "3 factures en attente",
+      "lignes": [
+        "N° 17 — 1 258,95 €",
+        "N° 18 — 1 440,00 €",
+        "N° 19 — 4 320,00 €"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Le statut au tableau, le détail dans la facture : la question du client trouve sa réponse.",
+    "duree": 8,
+    "alternatives": [
+      "Un duplicata se télécharge, il ne se recompose pas.",
+      "Le total TTC est écrit ; inutile de le recalculer.",
+      "La facture s'ouvre dans un onglet : le journal reste derrière."
+    ]
+  },
+  "seo": {
+    "titre": "Historique des factures — RapidoCRM",
+    "description": "Consultez le journal des factures d'un client dans RapidoCRM : statut, total TTC, ouverture de la facture et téléchargement du document. Le tutoriel.",
+    "mots_cles": [
+      "historique facture",
+      "RapidoCRM",
+      "CRM",
+      "facturation",
+      "encaissement",
+      "suivi client"
+    ],
+    "youtube_titre": "Historique des factures — RapidoCRM",
+    "youtube_description": "Le tutoriel du journal des factures sur RapidoCRM : les colonnes du tableau dont le statut et le total TTC, l'ouverture de la facture dans un onglet, et son téléchargement. RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "historique",
+      "facture",
+      "CRM",
+      "facturation"
+    ]
+  }
+}

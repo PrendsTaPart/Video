@@ -1,0 +1,57 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-un-devis",
+    "transcription": "Le client demande un devis. Vous ouvrez un tableur, vous recopiez son nom, son adresse, votre prix. Ou bien vous partez de sa fiche, et le prix vient tout seul.\n\nOn part de la fiche d'une entreprise, et on ressort avec un devis. Le panneau Finance l'ouvre, le catalogue remplit les montants, et le devis se retrouve dans l'activité du client.\n\nPanneau Finance : créer un devis.\n\nLe logo du client est déjà là. On choisit une couleur.\n\nLe produit, avec son prix. C'est lui qui remplit le reste.\n\nLes dates de la prestation, début et fin.\n\nOn descend : le délai de paiement, les mentions légales, le statut. Et la question de l'envoi, à laquelle on répond ici.\n\nLe mode de règlement, les totaux, et enregistrer.\n\nLe devis prend sa place dans l'activité du client.\n\nUn devis part, un autre attend. Pour savoir lesquels, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nUn devis qui part de la fiche du client, c'est un devis qui ne se retape pas.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 11,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 21,
+        "titre": "Ouvrir « Créer un devis » depuis la fiche"
+      },
+      {
+        "debut": 24,
+        "titre": "Logo et charte graphique du devis"
+      },
+      {
+        "debut": 28,
+        "titre": "Choisir le produit, les montants suivent"
+      },
+      {
+        "debut": 32,
+        "titre": "Fixer les dates du devis"
+      },
+      {
+        "debut": 34,
+        "titre": "Délai de paiement, mentions légales, statut"
+      },
+      {
+        "debut": 43,
+        "titre": "Mode de paiement, totaux et enregistrement"
+      },
+      {
+        "debut": 46,
+        "titre": "Retrouver le devis dans l'activité de la fiche"
+      },
+      {
+        "debut": 50,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 63,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-07T08:18:21.295Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

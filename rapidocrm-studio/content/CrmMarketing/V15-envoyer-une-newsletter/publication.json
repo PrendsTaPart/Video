@@ -1,0 +1,25 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V15-06-envoyer-une-newsletter.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V15-06-envoyer-une-newsletter-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V15-06-envoyer-une-newsletter-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V15-06-envoyer-une-newsletter-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "10b867f4a71d5970",
+      "video_vertical_url": "8ed36db69d2d0f76",
+      "thumbnail_url": "c5dec1b38d169184",
+      "thumbnail_vertical_url": "cfb3480eeecfde35"
+    },
+    "publie_le": "2026-09-05T23:28:16.454Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=_VW4v9Ldha0",
+    "video_id": "_VW4v9Ldha0",
+    "publie_le": "2026-09-06T14:12:34.433Z"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/06-envoyer-une-newsletter",
+    "tutoriel_id": "5da9ddc6-145d-4c6b-9bf1-efdb04f0f30a",
+    "publie_le": "2026-09-06T14:14:52.939Z"
+  }
+}

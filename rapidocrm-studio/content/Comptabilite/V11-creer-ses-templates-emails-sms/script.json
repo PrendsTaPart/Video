@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "module": "Comptabilite",
+    "numero": 11,
+    "titre": "Créer un template de SMS",
+    "titre_court": "Créer un template SMS",
+    "slug": "05-creer-ses-templates-emails-sms",
+    "module_slug": "05-comptabilite"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir la page des templates SMS",
+        "voix": "Trois modèles déjà là. Le bouton en haut à droite en ajoute un.",
+        "debut_source": 0,
+        "fin_source": 5.8,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.28,
+          "w": 0.75,
+          "h": 0.65
+        },
+        "annotation": "Ouvrir la page des templates SMS"
+      },
+      {
+        "numero": 2,
+        "titre": "Nommer le template",
+        "voix": "Le nom d'abord. C'est lui qu'on lira dans la liste, alors on décrit ce que le message dit.",
+        "debut_source": 5.8,
+        "fin_source": 11.5,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.32,
+          "w": 0.42,
+          "h": 0.35
+        },
+        "annotation": "Nommer le template"
+      },
+      {
+        "numero": 3,
+        "titre": "Écrire le message",
+        "voix": "Puis le texte. Si la rédaction vous arrête, le bouton d'aide du bot propose un premier jet.",
+        "debut_source": 11.5,
+        "fin_source": 18,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.2,
+          "w": 0.42,
+          "h": 0.42
+        },
+        "annotation": "Écrire le message"
+      },
+      {
+        "numero": 4,
+        "titre": "Ajouter le bouton et valider",
+        "voix": "On joint un bouton d'action — voir facture — et on valide en bas.",
+        "debut_source": 18,
+        "fin_source": 24,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.35,
+          "w": 0.42,
+          "h": 0.55
+        },
+        "annotation": "Ajouter le bouton et valider"
+      },
+      {
+        "numero": 5,
+        "titre": "Retrouver le template dans la liste",
+        "voix": "Et le quatrième modèle prend sa place, prêt à être repris.",
+        "debut_source": 24,
+        "fin_source": 30,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.5,
+          "w": 0.75,
+          "h": 0.47
+        },
+        "annotation": "Retrouver le template dans la liste"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Vos modèles s'accumulent. Pour savoir lesquels vous avez déjà, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] templates SMS.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_templates_sms"
+    },
+    "resultat_affiche": {
+      "titre": "4 templates SMS",
+      "lignes": [
+        "Création de devis",
+        "Rappel RDV",
+        "Devis prêt",
+        "Facture envoyée"
+      ]
+    },
+    "duree": 18
+  },
+  "hook": {
+    "texte": "Vous écrivez le même SMS dix fois par semaine. À chaque fois, vous le retapez.",
+    "promesse": "Écrit une fois, repris d'un clic.",
+    "duree": 8,
+    "alternatives": [
+      "Un message qu'on retape est un message qu'on abrège mal.",
+      "Ce qui revient chaque semaine mérite un modèle.",
+      "Le bon message, c'est celui qu'on n'a pas à réécrire."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page Template SMS, et on ressort avec un modèle de plus. Un nom, une catégorie, le texte du message, et un bouton d'action à joindre. Tout tient dans une seule fenêtre.",
+    "duree": 16
+  },
+  "punchline": {
+    "texte": "Un modèle écrit une fois, c'est dix messages qui partent sans effort.",
+    "duree": 8,
+    "alternatives": [
+      "Le message qu'on ne retape pas est celui qu'on envoie vraiment.",
+      "Un modèle nommé clairement se retrouve tout seul.",
+      "Écrire une fois, envoyer souvent."
+    ]
+  },
+  "seo": {
+    "titre": "Créer un template SMS — RapidoCRM",
+    "description": "Créez un modèle de SMS dans RapidoCRM : le nom, la catégorie, le texte du message et le bouton d'action à y joindre. Le tutoriel pas à pas de l'Académie.",
+    "mots_cles": [
+      "template SMS",
+      "RapidoCRM",
+      "modèle de message",
+      "relance",
+      "facturation",
+      "CRM"
+    ],
+    "youtube_titre": "Créer un template SMS — RapidoCRM",
+    "youtube_description": "Le tutoriel des modèles de SMS sur RapidoCRM : nommer, écrire, joindre un bouton d'action, et retrouver le modèle dans la liste. RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "SMS",
+      "template",
+      "CRM",
+      "relance"
+    ]
+  }
+}

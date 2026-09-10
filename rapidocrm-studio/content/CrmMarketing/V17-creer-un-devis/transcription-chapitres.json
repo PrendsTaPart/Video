@@ -1,0 +1,57 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Le client demande un devis. Vous ouvrez un tableur, vous recopiez son nom, son adresse, votre prix. Ou bien vous partez de sa fiche, et le prix vient tout seul."
+  },
+  {
+    "timestamp_secondes": 11,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec un devis. Le panneau Finance l'ouvre, le catalogue remplit les montants, et le devis se retrouve dans l'activité du client."
+  },
+  {
+    "timestamp_secondes": 21,
+    "titre": "Ouvrir « Créer un devis » depuis la fiche",
+    "texte": "Panneau Finance : créer un devis."
+  },
+  {
+    "timestamp_secondes": 24,
+    "titre": "Logo et charte graphique du devis",
+    "texte": "Le logo du client est déjà là. On choisit une couleur."
+  },
+  {
+    "timestamp_secondes": 28,
+    "titre": "Choisir le produit, les montants suivent",
+    "texte": "Le produit, avec son prix. C'est lui qui remplit le reste."
+  },
+  {
+    "timestamp_secondes": 32,
+    "titre": "Fixer les dates du devis",
+    "texte": "Les dates de la prestation, début et fin."
+  },
+  {
+    "timestamp_secondes": 34,
+    "titre": "Délai de paiement, mentions légales, statut",
+    "texte": "On descend : le délai de paiement, les mentions légales, le statut. Et la question de l'envoi, à laquelle on répond ici."
+  },
+  {
+    "timestamp_secondes": 43,
+    "titre": "Mode de paiement, totaux et enregistrement",
+    "texte": "Le mode de règlement, les totaux, et enregistrer."
+  },
+  {
+    "timestamp_secondes": 46,
+    "titre": "Retrouver le devis dans l'activité de la fiche",
+    "texte": "Le devis prend sa place dans l'activité du client."
+  },
+  {
+    "timestamp_secondes": 50,
+    "titre": "Faites-le avec Claude",
+    "texte": "Un devis part, un autre attend. Pour savoir lesquels, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 63,
+    "titre": "À retenir",
+    "texte": "Un devis qui part de la fiche du client, c'est un devis qui ne se retape pas."
+  }
+]

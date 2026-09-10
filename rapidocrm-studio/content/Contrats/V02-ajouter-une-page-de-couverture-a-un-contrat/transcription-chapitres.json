@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Votre contrat s'ouvre sur l'article 1. Le client, lui, voit un mur de texte. Une vraie première page, choisie en trois clics."
+  },
+  {
+    "timestamp_secondes": 7,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la liste de vos contrats types, et on ressort avec une vraie page de garde. Vous la choisissez dans une galerie d'images, comme un fond d'écran. Aucun éditeur à ouvrir."
+  },
+  {
+    "timestamp_secondes": 17,
+    "titre": "Ouvrir la liste des contrats types",
+    "texte": "Vos contrats types. Le bouton plus."
+  },
+  {
+    "timestamp_secondes": 20,
+    "titre": "Ouvrir le choix de la couverture",
+    "texte": "La galerie s'ouvre. Chaque image, une couverture."
+  },
+  {
+    "timestamp_secondes": 23,
+    "titre": "Choisir la couverture et confirmer",
+    "texte": "On prend la première, on confirme. C'est enregistré."
+  },
+  {
+    "timestamp_secondes": 26,
+    "titre": "Voir la couverture en tête du contrat",
+    "texte": "Et le contrat s'ouvre dessus. Prestataire, client, tout y est."
+  },
+  {
+    "timestamp_secondes": 30,
+    "titre": "Faites-le avec Claude",
+    "texte": "Vos couvertures sont posées. Pour savoir quels contrats types vous avez sous la main, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu."
+  },
+  {
+    "timestamp_secondes": 47,
+    "titre": "À retenir",
+    "texte": "Une page de garde choisie une fois, et tous vos contrats en profitent. Sans éditeur."
+  }
+]

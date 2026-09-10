@@ -1,0 +1,97 @@
+[
+  {
+    "mot": "Une",
+    "debut": 0,
+    "fin": 0.186
+  },
+  {
+    "mot": "carte",
+    "debut": 0.209,
+    "fin": 0.418
+  },
+  {
+    "mot": "de",
+    "debut": 0.441,
+    "fin": 0.511
+  },
+  {
+    "mot": "fidélité,",
+    "debut": 0.557,
+    "fin": 1.01
+  },
+  {
+    "mot": "d'habitude,",
+    "debut": 1.033,
+    "fin": 1.498
+  },
+  {
+    "mot": "ça",
+    "debut": 1.521,
+    "fin": 1.614
+  },
+  {
+    "mot": "passe",
+    "debut": 1.672,
+    "fin": 1.858
+  },
+  {
+    "mot": "par",
+    "debut": 1.881,
+    "fin": 2.02
+  },
+  {
+    "mot": "un",
+    "debut": 2.078,
+    "fin": 2.159
+  },
+  {
+    "mot": "imprimeur,",
+    "debut": 2.218,
+    "fin": 2.728
+  },
+  {
+    "mot": "un",
+    "debut": 2.763,
+    "fin": 2.868
+  },
+  {
+    "mot": "graphiste,",
+    "debut": 2.902,
+    "fin": 3.495
+  },
+  {
+    "mot": "et",
+    "debut": 3.704,
+    "fin": 3.82
+  },
+  {
+    "mot": "trois",
+    "debut": 3.878,
+    "fin": 4.122
+  },
+  {
+    "mot": "allers-retours.",
+    "debut": 4.18,
+    "fin": 4.818
+  },
+  {
+    "mot": "Ici,",
+    "debut": 5.062,
+    "fin": 5.433
+  },
+  {
+    "mot": "trois",
+    "debut": 5.48,
+    "fin": 5.724
+  },
+  {
+    "mot": "écrans",
+    "debut": 5.793,
+    "fin": 6.049
+  },
+  {
+    "mot": "suffisent.",
+    "debut": 6.072,
+    "fin": 6.548
+  }
+]

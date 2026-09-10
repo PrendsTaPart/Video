@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "module": "Comptabilite",
+    "numero": 9,
+    "titre": "Signer un devis à l'écran",
+    "titre_court": "Signer un devis à l'écran",
+    "slug": "signer-un-devis-a-l-ecran"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir le menu du devis",
+        "voix": "",
+        "debut_source": 0,
+        "fin_source": 5.5,
+        "zone_focus": {
+          "x": 0.68,
+          "y": 0.35,
+          "w": 0.2,
+          "h": 0.4
+        },
+        "annotation": "Ouvrir le menu du devis"
+      },
+      {
+        "numero": 2,
+        "titre": "Ouvrir le devis à signer",
+        "voix": "",
+        "debut_source": 5.5,
+        "fin_source": 8,
+        "zone_focus": {
+          "x": 0.48,
+          "y": 0.3,
+          "w": 0.3,
+          "h": 0.5
+        },
+        "annotation": "Ouvrir le devis à signer"
+      },
+      {
+        "numero": 3,
+        "titre": "Signer dans le cadre",
+        "voix": "",
+        "debut_source": 8,
+        "fin_source": 12,
+        "zone_focus": {
+          "x": 0.49,
+          "y": 0.12,
+          "w": 0.29,
+          "h": 0.45
+        },
+        "annotation": "Signer dans le cadre"
+      },
+      {
+        "numero": 4,
+        "titre": "Remonter et enregistrer",
+        "voix": "",
+        "debut_source": 12,
+        "fin_source": 16.2,
+        "zone_focus": {
+          "x": 0.75,
+          "y": 0.03,
+          "w": 0.24,
+          "h": 0.2
+        },
+        "annotation": "Remonter et enregistrer"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] devis en attente avec leur destinataire et leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_devis"
+    }
+  }
+}

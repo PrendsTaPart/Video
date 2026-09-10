@@ -1,0 +1,11 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_youtube",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-signature-electronique-d-un-devis",
+    "youtube_url": "https://www.youtube.com/watch?v=LBpOI2ARMvs"
+  },
+  "demande_le": "2026-09-06T08:34:43.537Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

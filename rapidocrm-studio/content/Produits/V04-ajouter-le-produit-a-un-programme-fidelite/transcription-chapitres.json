@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Votre programme de fidélité tourne. Mais aucun produit ne dit combien il rapporte. Deux champs, en bas de la fiche produit, et l'affaire est réglée."
+  },
+  {
+    "timestamp_secondes": 9,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la fiche d'un produit déjà créé, et on ressort avec ce produit rattaché à un programme de fidélité. Le réglage n'est pas dans le menu de la fidélité : il ferme le formulaire du produit, juste après la description. Une question, oui ou non. Si vous répondez oui, deux champs s'ouvrent : le programme concerné, et le nombre de points que l'achat fait gagner. Rien n'est définitif — la question se rouvre à chaque modification de la fiche. Un conseil avant de commencer : calez le nombre de points sur le prix du produit. Un barème cohérent se comprend sans avoir à l'expliquer."
+  },
+  {
+    "timestamp_secondes": 43,
+    "titre": "Descendre au bas de la fiche produit",
+    "texte": "Bas de la fiche du produit, après la description. La dernière question du formulaire : ajouter au programme de fidélité ?"
+  },
+  {
+    "timestamp_secondes": 51,
+    "titre": "Répondre oui à la question",
+    "texte": "On répond oui. Deux champs apparaissent."
+  },
+  {
+    "timestamp_secondes": 53,
+    "titre": "Choisir le programme et les points",
+    "texte": "Le programme, dans la liste — avec son nombre de clients. Puis les points que l'achat fait gagner."
+  },
+  {
+    "timestamp_secondes": 59,
+    "titre": "Voir la confirmation",
+    "texte": "Et le bandeau confirme : produit modifié. Le rattachement est enregistré."
+  },
+  {
+    "timestamp_secondes": 63,
+    "titre": "Faites-le avec Claude",
+    "texte": "Reste à savoir si le programme choisi est vivant. RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et vous obtenez vos programmes avec leur nombre de clients et les points déjà offerts. De quoi vérifier, avant de rattacher, que vous visez le bon."
+  },
+  {
+    "timestamp_secondes": 84,
+    "titre": "À retenir",
+    "texte": "Un produit, un programme, un nombre de points. La fidélité devient concrète."
+  }
+]

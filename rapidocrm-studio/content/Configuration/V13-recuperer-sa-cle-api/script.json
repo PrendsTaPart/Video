@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "module": "Configuration",
+    "numero": 13,
+    "titre": "Récupérer sa clé API",
+    "titre_court": "Récupérer sa clé API",
+    "slug": "01-recuperer-sa-cle-api"
+  },
+  "hook": {
+    "texte": "Une application extérieure veut vos données. Vous lui donnez tout, ou rien.",
+    "promesse": "Un token, et vous choisissez exactement ce qu'elle peut faire.",
+    "duree": 8,
+    "alternatives": [
+      "Donner un accès ne devrait pas vouloir dire donner les clés de la maison.",
+      "Lire vos contacts, oui. Supprimer vos factures, non.",
+      "Un token par application, et vous coupez celui que vous voulez."
+    ]
+  },
+  "intro": {
+    "texte": "On part de l'onglet Tokens api de votre page Profil, et on ressort avec une clé d'accès taillée sur mesure. Un token, c'est ce que vous remettez à une application extérieure pour qu'elle atteigne votre CRM. Vous décidez de deux choses : jusqu'à quelle date elle y a droit, et ce qu'elle peut faire, ressource par ressource. Lire seulement, ou aussi créer, modifier, supprimer.",
+    "duree": 20
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'onglet Tokens api",
+        "voix": "Onglet Tokens api : les clés d'accès de vos applications externes.",
+        "debut_source": 0,
+        "fin_source": 4.0,
+        "zone_focus": { "x": 0.02, "y": 0.05, "w": 0.96, "h": 0.6 },
+        "annotation": "onglet Tokens api",
+        "point": { "x": 0.11, "y": 0.12 }
+      },
+      {
+        "numero": 2,
+        "titre": "Créer un nouveau token",
+        "voix": "Bouton nouveau token. Nommez-le d'après l'application à qui vous le donnez : le jour où elle part, vous saurez lequel couper.",
+        "debut_source": 4.0,
+        "fin_source": 14.0,
+        "zone_focus": { "x": 0.13, "y": 0.4, "w": 0.75, "h": 0.55 },
+        "annotation": "nommer le token",
+        "point": { "x": 0.3, "y": 0.65 }
+      },
+      {
+        "numero": 3,
+        "titre": "Fixer une date d'expiration",
+        "voix": "Puis une date d'expiration. Passée cette date, la clé cesse de fonctionner d'elle-même.",
+        "debut_source": 14.0,
+        "fin_source": 19.0,
+        "zone_focus": { "x": 0.4, "y": 0.45, "w": 0.5, "h": 0.35 },
+        "annotation": "date d'expiration",
+        "point": { "x": 0.64, "y": 0.65 }
+      },
+      {
+        "numero": 4,
+        "titre": "Cocher les permissions",
+        "voix": "Le tableau croise vos ressources et quatre droits : lire, créer, modifier, supprimer. Ici, on ne coche que lire. Un token en lecture seule ne peut rien casser.",
+        "debut_source": 19.0,
+        "fin_source": 28.0,
+        "zone_focus": { "x": 0.13, "y": 0.5, "w": 0.75, "h": 0.48 },
+        "annotation": "lire, et rien d'autre",
+        "point": { "x": 0.45, "y": 0.72 }
+      },
+      {
+        "numero": 5,
+        "titre": "Générer le token",
+        "voix": "On génère. La ligne apparaît : nom, portée, dernière utilisation, expiration, statut.",
+        "debut_source": 28.0,
+        "fin_source": 34.0,
+        "zone_focus": { "x": 0.02, "y": 0.15, "w": 0.96, "h": 0.6 },
+        "annotation": "le token créé",
+        "point": { "x": 0.4, "y": 0.31 }
+      },
+      {
+        "numero": 6,
+        "titre": "Relire ses permissions",
+        "voix": "Un clic sur les pastilles rouvre la liste complète de ses droits.",
+        "debut_source": 34.0,
+        "fin_source": 39.0,
+        "zone_focus": { "x": 0.05, "y": 0.55, "w": 0.45, "h": 0.42 },
+        "annotation": "relire les droits",
+        "point": { "x": 0.24, "y": 0.75 }
+      },
+      {
+        "numero": 7,
+        "titre": "Révoquer un token",
+        "voix": "Et la corbeille le révoque, après confirmation. Les applications qui s'en servaient perdent l'accès.",
+        "debut_source": 39.0,
+        "fin_source": 43.2,
+        "zone_focus": { "x": 0.35, "y": 0.4, "w": 0.6, "h": 0.4 },
+        "annotation": "révoquer",
+        "point": { "x": 0.6, "y": 0.56 }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Votre token est prêt. Pour voir ce qu'il pourra lire avant de le remettre, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] dernières entreprises avec leur nom.",
+      "variables": ["nombre"],
+      "outil_mcp": "list_entreprises"
+    },
+    "resultat_affiche": {
+      "titre": "5 entreprises trouvées",
+      "lignes": [
+        "Atelier Leroy — Nantes",
+        "Studio Nord — Lille"
+      ]
+    },
+    "duree": 20
+  },
+  "punchline": {
+    "texte": "Un token par application, et vous reprenez la clé quand vous voulez.",
+    "duree": 6,
+    "alternatives": [
+      "Lecture seule aujourd'hui, révocation demain.",
+      "Donner un accès, ce n'est pas donner la maison.",
+      "Une clé datée, c'est une clé qui s'oublie sans danger."
+    ]
+  },
+  "seo": {
+    "titre": "Récupérer sa clé API RapidoCRM — tutoriel",
+    "description": "Créez un token d'API sur RapidoCRM : nom, date d'expiration et permissions ressource par ressource, puis révocation. Le tutoriel de l'Académie.",
+    "mots_cles": [
+      "clé API",
+      "RapidoCRM",
+      "token",
+      "permissions",
+      "développeur",
+      "configuration"
+    ],
+    "youtube_titre": "Récupérer sa clé API — RapidoCRM",
+    "youtube_description": "Le tutoriel des tokens d'API de RapidoCRM Académie.",
+    "youtube_tags": ["RapidoCRM", "API", "token", "CRM français", "tutoriel"]
+  }
+}

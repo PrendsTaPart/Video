@@ -1,0 +1,58 @@
+{
+  "outils": [
+    {
+      "nom": "list_devis",
+      "description": "Lister les devis avec filtres (statut, entreprise, recherche, période).",
+      "parametres": [
+        {
+          "nom": "statut",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "brouillon",
+            "en_attente",
+            "accepte",
+            "refuse",
+            "expire"
+          ],
+          "description": ""
+        },
+        {
+          "nom": "entreprise_id",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtrer par entreprise"
+        },
+        {
+          "nom": "q",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche par destinataire"
+        },
+        {
+          "nom": "periode",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": ""
+        },
+        {
+          "nom": "limit",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre max de lignes"
+        }
+      ]
+    }
+  ],
+  "divergences": []
+}

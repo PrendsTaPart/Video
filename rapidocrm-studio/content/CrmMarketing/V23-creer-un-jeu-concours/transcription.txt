@@ -1,0 +1,19 @@
+Une roue à faire tourner, une carte à gratter : ça attire, mais ça se code, et c'est là que le projet meurt. Ici, on part d'un modèle déjà fait.
+
+On part de la fiche d'une entreprise, et on ressort avec un jeu personnalisé. La bibliothèque propose une roue, une carte à gratter ou un quiz. Ensuite, on règle l'apparence et les lots.
+
+Panneau Marketing de la fiche client.
+
+Roue, carte à gratter ou quiz. Chacun annonce ses lots.
+
+Trois étapes : informations, apparence, validation.
+
+L'écran se coupe en deux : ce qu'on règle à gauche, ce que le client verra à droite. Image, texte, et l'aperçu suit.
+
+Chaque lot a un nom, un prix, et une chance de gagner. C'est elle qui règle la générosité.
+
+Puis on revient à la fiche du client.
+
+Les animations se succèdent. Pour retrouver celles du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Un modèle, une image, trois lots : l'animation est en ligne avant la fin de la pause.

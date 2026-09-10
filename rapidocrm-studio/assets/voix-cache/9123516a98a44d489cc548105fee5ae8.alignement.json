@@ -1,0 +1,107 @@
+[
+  {
+    "mot": "Vous",
+    "debut": 0,
+    "fin": 0.221
+  },
+  {
+    "mot": "écrivez",
+    "debut": 0.29,
+    "fin": 0.673
+  },
+  {
+    "mot": "le",
+    "debut": 0.708,
+    "fin": 0.766
+  },
+  {
+    "mot": "même",
+    "debut": 0.813,
+    "fin": 1.033
+  },
+  {
+    "mot": "S.M.S.",
+    "debut": 1.103,
+    "fin": 1.927
+  },
+  {
+    "mot": "dix",
+    "debut": 2.101,
+    "fin": 2.299
+  },
+  {
+    "mot": "fois",
+    "debut": 2.322,
+    "fin": 2.473
+  },
+  {
+    "mot": "par",
+    "debut": 2.496,
+    "fin": 2.612
+  },
+  {
+    "mot": "semaine.",
+    "debut": 2.659,
+    "fin": 3.088
+  },
+  {
+    "mot": "À",
+    "debut": 3.297,
+    "fin": 3.367
+  },
+  {
+    "mot": "chaque",
+    "debut": 3.448,
+    "fin": 3.692
+  },
+  {
+    "mot": "fois,",
+    "debut": 3.727,
+    "fin": 3.947
+  },
+  {
+    "mot": "vous",
+    "debut": 3.994,
+    "fin": 4.122
+  },
+  {
+    "mot": "le",
+    "debut": 4.145,
+    "fin": 4.191
+  },
+  {
+    "mot": "retapez.",
+    "debut": 4.238,
+    "fin": 4.76
+  },
+  {
+    "mot": "Écrit",
+    "debut": 5.039,
+    "fin": 5.41
+  },
+  {
+    "mot": "une",
+    "debut": 5.457,
+    "fin": 5.584
+  },
+  {
+    "mot": "fois,",
+    "debut": 5.619,
+    "fin": 5.921
+  },
+  {
+    "mot": "repris",
+    "debut": 6.13,
+    "fin": 6.432
+  },
+  {
+    "mot": "d'un",
+    "debut": 6.455,
+    "fin": 6.548
+  },
+  {
+    "mot": "clic.",
+    "debut": 6.583,
+    "fin": 7.012
+  }
+]

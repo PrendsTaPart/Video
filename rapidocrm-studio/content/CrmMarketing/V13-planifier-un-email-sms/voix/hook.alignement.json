@@ -1,0 +1,142 @@
+[
+  {
+    "mot": "Il",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "est",
+    "debut": 0.209,
+    "fin": 0.279
+  },
+  {
+    "mot": "vingt-deux",
+    "debut": 0.325,
+    "fin": 0.662
+  },
+  {
+    "mot": "heures.",
+    "debut": 0.731,
+    "fin": 1.01
+  },
+  {
+    "mot": "Vous",
+    "debut": 1.289,
+    "fin": 1.405
+  },
+  {
+    "mot": "écrivez",
+    "debut": 1.463,
+    "fin": 1.788
+  },
+  {
+    "mot": "le",
+    "debut": 1.823,
+    "fin": 1.916
+  },
+  {
+    "mot": "S.M.S.",
+    "debut": 1.939,
+    "fin": 2.485
+  },
+  {
+    "mot": "de",
+    "debut": 2.508,
+    "fin": 2.577
+  },
+  {
+    "mot": "demain",
+    "debut": 2.635,
+    "fin": 2.856
+  },
+  {
+    "mot": "matin,",
+    "debut": 2.879,
+    "fin": 3.437
+  },
+  {
+    "mot": "et",
+    "debut": 3.715,
+    "fin": 3.831
+  },
+  {
+    "mot": "vous",
+    "debut": 3.866,
+    "fin": 3.994
+  },
+  {
+    "mot": "vous",
+    "debut": 4.017,
+    "fin": 4.145
+  },
+  {
+    "mot": "notez",
+    "debut": 4.168,
+    "fin": 4.423
+  },
+  {
+    "mot": "de",
+    "debut": 4.458,
+    "fin": 4.516
+  },
+  {
+    "mot": "l'envoyer",
+    "debut": 4.563,
+    "fin": 5.05
+  },
+  {
+    "mot": "à",
+    "debut": 5.166,
+    "fin": 5.259
+  },
+  {
+    "mot": "huit",
+    "debut": 5.352,
+    "fin": 5.561
+  },
+  {
+    "mot": "heures.",
+    "debut": 5.596,
+    "fin": 5.875
+  },
+  {
+    "mot": "Écrivez-le",
+    "debut": 6.2,
+    "fin": 6.722
+  },
+  {
+    "mot": "maintenant,",
+    "debut": 6.78,
+    "fin": 7.314
+  },
+  {
+    "mot": "le",
+    "debut": 7.43,
+    "fin": 7.5
+  },
+  {
+    "mot": "logiciel",
+    "debut": 7.546,
+    "fin": 8.034
+  },
+  {
+    "mot": "l'enverra",
+    "debut": 8.081,
+    "fin": 8.406
+  },
+  {
+    "mot": "à",
+    "debut": 8.44,
+    "fin": 8.464
+  },
+  {
+    "mot": "l'heure",
+    "debut": 8.499,
+    "fin": 8.684
+  },
+  {
+    "mot": "dite.",
+    "debut": 8.707,
+    "fin": 9.079
+  }
+]

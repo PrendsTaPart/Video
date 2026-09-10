@@ -1,0 +1,222 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "part",
+    "debut": 0.209,
+    "fin": 0.383
+  },
+  {
+    "mot": "de",
+    "debut": 0.406,
+    "fin": 0.464
+  },
+  {
+    "mot": "la",
+    "debut": 0.499,
+    "fin": 0.557
+  },
+  {
+    "mot": "page",
+    "debut": 0.639,
+    "fin": 0.917
+  },
+  {
+    "mot": "Historique,",
+    "debut": 0.94,
+    "fin": 1.579
+  },
+  {
+    "mot": "et",
+    "debut": 1.695,
+    "fin": 1.823
+  },
+  {
+    "mot": "on",
+    "debut": 1.858,
+    "fin": 1.904
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.95,
+    "fin": 2.264
+  },
+  {
+    "mot": "avec",
+    "debut": 2.287,
+    "fin": 2.438
+  },
+  {
+    "mot": "le",
+    "debut": 2.485,
+    "fin": 2.531
+  },
+  {
+    "mot": "contrat",
+    "debut": 2.577,
+    "fin": 2.868
+  },
+  {
+    "mot": "ouvert.",
+    "debut": 2.891,
+    "fin": 3.32
+  },
+  {
+    "mot": "Le",
+    "debut": 3.704,
+    "fin": 3.808
+  },
+  {
+    "mot": "tableau",
+    "debut": 3.855,
+    "fin": 4.133
+  },
+  {
+    "mot": "donne",
+    "debut": 4.168,
+    "fin": 4.365
+  },
+  {
+    "mot": "le",
+    "debut": 4.389,
+    "fin": 4.458
+  },
+  {
+    "mot": "destinataire,",
+    "debut": 4.516,
+    "fin": 5.341
+  },
+  {
+    "mot": "les",
+    "debut": 5.492,
+    "fin": 5.631
+  },
+  {
+    "mot": "dates",
+    "debut": 5.677,
+    "fin": 5.991
+  },
+  {
+    "mot": "et",
+    "debut": 6.084,
+    "fin": 6.223
+  },
+  {
+    "mot": "le",
+    "debut": 6.258,
+    "fin": 6.316
+  },
+  {
+    "mot": "statut",
+    "debut": 6.351,
+    "fin": 6.757
+  },
+  {
+    "mot": ";",
+    "debut": 6.803,
+    "fin": 6.827
+  },
+  {
+    "mot": "le",
+    "debut": 7.152,
+    "fin": 7.221
+  },
+  {
+    "mot": "menu",
+    "debut": 7.279,
+    "fin": 7.477
+  },
+  {
+    "mot": "de",
+    "debut": 7.512,
+    "fin": 7.57
+  },
+  {
+    "mot": "la",
+    "debut": 7.605,
+    "fin": 7.674
+  },
+  {
+    "mot": "ligne",
+    "debut": 7.732,
+    "fin": 8.022
+  },
+  {
+    "mot": "ouvre",
+    "debut": 8.139,
+    "fin": 8.417
+  },
+  {
+    "mot": "le",
+    "debut": 8.44,
+    "fin": 8.51
+  },
+  {
+    "mot": "document.",
+    "debut": 8.545,
+    "fin": 9.044
+  },
+  {
+    "mot": "Le",
+    "debut": 9.253,
+    "fin": 9.334
+  },
+  {
+    "mot": "statut",
+    "debut": 9.369,
+    "fin": 9.694
+  },
+  {
+    "mot": "dit",
+    "debut": 9.718,
+    "fin": 9.857
+  },
+  {
+    "mot": "s'il",
+    "debut": 9.892,
+    "fin": 10.043
+  },
+  {
+    "mot": "est",
+    "debut": 10.101,
+    "fin": 10.17
+  },
+  {
+    "mot": "signé,",
+    "debut": 10.194,
+    "fin": 10.704
+  },
+  {
+    "mot": "le",
+    "debut": 10.879,
+    "fin": 10.96
+  },
+  {
+    "mot": "document",
+    "debut": 11.006,
+    "fin": 11.564
+  },
+  {
+    "mot": "dit",
+    "debut": 11.714,
+    "fin": 11.9
+  },
+  {
+    "mot": "ce",
+    "debut": 11.923,
+    "fin": 12.005
+  },
+  {
+    "mot": "qu'il",
+    "debut": 12.051,
+    "fin": 12.167
+  },
+  {
+    "mot": "engage.",
+    "debut": 12.214,
+    "fin": 12.678
+  }
+]

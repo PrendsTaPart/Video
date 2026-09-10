@@ -1,0 +1,95 @@
+{
+  "fonctionnalite": "Consulter l'historique des devis d'une entreprise",
+  "a_quoi_ca_sert": "Voir les devis établis pour un client, leur période de validité, leur statut et leur prix, puis ouvrir celui qu'on cherche. Le logiciel prévient quand la période de signature est passée.",
+  "pour_qui": "Gérant ou commercial qui suit ses propositions commerciales",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert l'historique de l'entreprise"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Colonnes du tableau",
+      "obligatoire": false,
+      "explication": "Entreprise, Date de début, Date de fin, Statut, Prix et Action. Une ligne par devis."
+    },
+    {
+      "nom": "Statut",
+      "obligatoire": false,
+      "explication": "Pastille verte pour Accepté, orange pour En attente."
+    },
+    {
+      "nom": "Icône œil",
+      "obligatoire": false,
+      "explication": "Le bouton de la colonne Action. Il ouvre le devis."
+    },
+    {
+      "nom": "Bandeau de période de signature",
+      "obligatoire": false,
+      "explication": "L'alerte rouge en haut du devis ouvert : elle rappelle les dates entre lesquelles il pouvait être signé."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_devis",
+      "role": "Liste les devis avec filtres : statut, entreprise, recherche par destinataire, période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["statut", "entreprise_id", "q", "periode", "limit"],
+      "exemple_appel": { "statut": "en_attente", "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Regarder la date de fin avant de relancer : un devis expiré se refait, il ne se signe plus.",
+    "Trier son suivi par statut : les devis en attente sont ceux qui demandent un appel."
+  ],
+  "erreurs_frequentes": [
+    "Relancer un devis dont la période de signature est passée : le bandeau rouge le dit dès l'ouverture.",
+    "Confondre le prix affiché au tableau et le total après remise, qui figure dans le devis."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Faire le point sur ses propositions",
+      "contexte": "Il faut savoir ce qui reste à décrocher.",
+      "action": "Ouvrez l'historique des devis et lisez les colonnes Statut et Prix.",
+      "resultat_attendu": "Chaque devis affiche son état et son montant."
+    },
+    {
+      "titre": "Comprendre pourquoi un devis n'est plus signable",
+      "contexte": "Le client veut accepter un devis de juillet.",
+      "action": "Ouvrez le devis depuis l'œil et lisez le bandeau en haut de page.",
+      "resultat_attendu": "L'alerte donne les dates entre lesquelles la signature était possible."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Deux couleurs de statut",
+      "contenu": "Accepté en vert, En attente en orange : le tableau se lit d'un coup d'œil.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le devis dit lui-même qu'il est périmé",
+      "contenu": "L'alerte apparaît à l'ouverture, sans rien avoir à calculer.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le chargement peut prendre quelques secondes",
+      "contenu": "La page reste vide un instant avant que le tableau n'apparaisse : ce n'est pas une liste vide.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver les devis en attente",
+    "texte": "Liste-moi mes [nombre] devis en attente avec leur destinataire et leur montant.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_devis"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 à 00:14 — bouton Consulter puis tableau des devis",
+    "a_quoi_ca_sert": "frames 00:14 et 00:22 — tableau puis devis ouvert avec son bandeau",
+    "champs_cles": "frames 00:14, 00:18 et 00:22",
+    "outils_mcp": "schéma list_devis",
+    "erreurs_frequentes": "frame 00:22 — bandeau « La période pour signer ce devis est terminée »",
+    "cas_usage": "frames 00:14 à 00:25",
+    "astuces": "frames 00:14, 00:22 et 00:06"
+  },
+  "a_verifier": []
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Une roue à faire tourner, une carte à gratter : ça attire, mais ça se code, et c'est là que le projet meurt. Ici, on part d'un modèle déjà fait."
+  },
+  {
+    "timestamp_secondes": 8,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec un jeu personnalisé. La bibliothèque propose une roue, une carte à gratter ou un quiz. Ensuite, on règle l'apparence et les lots."
+  },
+  {
+    "timestamp_secondes": 20,
+    "titre": "Ouvrir les jeux depuis la fiche entreprise",
+    "texte": "Panneau Marketing de la fiche client."
+  },
+  {
+    "timestamp_secondes": 22,
+    "titre": "Choisir un modèle de jeu",
+    "texte": "Roue, carte à gratter ou quiz. Chacun annonce ses lots."
+  },
+  {
+    "timestamp_secondes": 26,
+    "titre": "Les trois étapes de personnalisation",
+    "texte": "Trois étapes : informations, apparence, validation."
+  },
+  {
+    "timestamp_secondes": 30,
+    "titre": "Régler l'apparence et voir l'aperçu",
+    "texte": "L'écran se coupe en deux : ce qu'on règle à gauche, ce que le client verra à droite. Image, texte, et l'aperçu suit."
+  },
+  {
+    "timestamp_secondes": 37,
+    "titre": "Décrire les lots à gagner",
+    "texte": "Chaque lot a un nom, un prix, et une chance de gagner. C'est elle qui règle la générosité."
+  },
+  {
+    "timestamp_secondes": 43,
+    "titre": "Revenir à la fiche",
+    "texte": "Puis on revient à la fiche du client."
+  },
+  {
+    "timestamp_secondes": 45,
+    "titre": "Faites-le avec Claude",
+    "texte": "Les animations se succèdent. Pour retrouver celles du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 58,
+    "titre": "À retenir",
+    "texte": "Un modèle, une image, trois lots : l'animation est en ligne avant la fin de la pause."
+  }
+]

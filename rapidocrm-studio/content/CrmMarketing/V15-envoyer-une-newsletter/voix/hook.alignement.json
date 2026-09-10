@@ -1,0 +1,137 @@
+[
+  {
+    "mot": "Vous",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "avez",
+    "debut": 0.197,
+    "fin": 0.36
+  },
+  {
+    "mot": "une",
+    "debut": 0.383,
+    "fin": 0.453
+  },
+  {
+    "mot": "nouvelle",
+    "debut": 0.499,
+    "fin": 0.848
+  },
+  {
+    "mot": "à",
+    "debut": 0.871,
+    "fin": 0.894
+  },
+  {
+    "mot": "annoncer,",
+    "debut": 0.929,
+    "fin": 1.509
+  },
+  {
+    "mot": "et",
+    "debut": 1.533,
+    "fin": 1.649
+  },
+  {
+    "mot": "un",
+    "debut": 1.695,
+    "fin": 1.765
+  },
+  {
+    "mot": "fichier",
+    "debut": 1.823,
+    "fin": 2.113
+  },
+  {
+    "mot": "client.",
+    "debut": 2.148,
+    "fin": 2.543
+  },
+  {
+    "mot": "Entre",
+    "debut": 2.694,
+    "fin": 2.984
+  },
+  {
+    "mot": "les",
+    "debut": 3.007,
+    "fin": 3.111
+  },
+  {
+    "mot": "deux,",
+    "debut": 3.146,
+    "fin": 3.309
+  },
+  {
+    "mot": "d'habitude,",
+    "debut": 3.332,
+    "fin": 4.017
+  },
+  {
+    "mot": "il",
+    "debut": 4.226,
+    "fin": 4.296
+  },
+  {
+    "mot": "y",
+    "debut": 4.342,
+    "fin": 4.365
+  },
+  {
+    "mot": "a",
+    "debut": 4.412,
+    "fin": 4.435
+  },
+  {
+    "mot": "un",
+    "debut": 4.481,
+    "fin": 4.528
+  },
+  {
+    "mot": "outil",
+    "debut": 4.609,
+    "fin": 4.83
+  },
+  {
+    "mot": "d'e-mailing.",
+    "debut": 4.876,
+    "fin": 5.433
+  },
+  {
+    "mot": "Cette",
+    "debut": 5.503,
+    "fin": 5.747
+  },
+  {
+    "mot": "fois,",
+    "debut": 5.77,
+    "fin": 6.084
+  },
+  {
+    "mot": "la",
+    "debut": 6.211,
+    "fin": 6.281
+  },
+  {
+    "mot": "newsletter",
+    "debut": 6.351,
+    "fin": 6.838
+  },
+  {
+    "mot": "part",
+    "debut": 6.931,
+    "fin": 7.152
+  },
+  {
+    "mot": "du",
+    "debut": 7.175,
+    "fin": 7.279
+  },
+  {
+    "mot": "C.R.M.",
+    "debut": 7.326,
+    "fin": 7.802
+  }
+]

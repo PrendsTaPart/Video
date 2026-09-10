@@ -1,0 +1,23 @@
+Votre facture part sur un tableur, recopiée à la main. Et le total, vous le vérifiez deux fois. Le produit choisi, les montants suivent.
+
+On part de la page Facturation, et on ressort avec une facture faite, puis corrigée. Un seul formulaire : le client, le produit, la date. Les montants se calculent seuls. Retenez une chose : le prix toutes taxes comprises ne se tape jamais à la main.
+
+Page Facturation. Trois onglets, deux filtres, et le bouton créer une facture.
+
+L'entreprise d'abord, prise dans vos clients. Puis le produit, avec son prix. C'est lui qui remplit la facture.
+
+La date, puis les montants : hors taxes, TVA, total. Vous n'écrivez rien.
+
+Le délai de paiement, les mentions légales, le statut. Le logiciel peut aussi envoyer la facture.
+
+Dernière ligne : total TTC final. C'est ce que le client paiera.
+
+Facture créée. Elle prend sa place dans la liste, avec son client et son statut.
+
+Une erreur de produit ? La fiche se rouvre telle quelle, on corrige.
+
+Et le bandeau confirme la modification.
+
+Vos factures s'empilent. Pour savoir ce qui reste à encaisser, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Le produit choisi, la facture s'écrit. Et elle reste corrigeable.

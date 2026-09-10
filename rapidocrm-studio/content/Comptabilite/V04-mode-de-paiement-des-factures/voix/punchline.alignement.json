@@ -1,0 +1,62 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "moyen",
+    "debut": 0.151,
+    "fin": 0.372
+  },
+  {
+    "mot": "de",
+    "debut": 0.395,
+    "fin": 0.441
+  },
+  {
+    "mot": "paiement",
+    "debut": 0.488,
+    "fin": 0.743
+  },
+  {
+    "mot": "noté,",
+    "debut": 0.766,
+    "fin": 1.138
+  },
+  {
+    "mot": "c'est",
+    "debut": 1.161,
+    "fin": 1.347
+  },
+  {
+    "mot": "un",
+    "debut": 1.393,
+    "fin": 1.44
+  },
+  {
+    "mot": "rapprochement",
+    "debut": 1.474,
+    "fin": 1.962
+  },
+  {
+    "mot": "en",
+    "debut": 2.009,
+    "fin": 2.078
+  },
+  {
+    "mot": "moins",
+    "debut": 2.113,
+    "fin": 2.299
+  },
+  {
+    "mot": "à",
+    "debut": 2.368,
+    "fin": 2.392
+  },
+  {
+    "mot": "faire.",
+    "debut": 2.45,
+    "fin": 2.728
+  }
+]

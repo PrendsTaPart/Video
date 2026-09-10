@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-contrat",
+    "astuces": [
+      {
+        "titre": "Le contrat s'ouvre dans un onglet",
+        "texte": "Le document part dans un nouvel onglet : le journal reste ouvert derrière.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Les vignettes servent de sommaire",
+        "texte": "La colonne de gauche de la visionneuse montre les pages : on saute directement à la bonne.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Un champ de recherche au-dessus du tableau",
+        "texte": "« Chercher une page » filtre le journal quand les contrats s'accumulent.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-09T10:25:08.762Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

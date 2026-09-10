@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V13-06-planifier-un-email-sms.mp4",
+    "titre": "Planifier un SMS — RapidoCRM",
+    "description": "Écrivez-le maintenant, le logiciel l'enverra à l'heure dite.\n\nOn part de la fiche d'une entreprise, et on ressort avec un SMS programmé. Trois choses à dire : qui le reçoit, quel message, et à quelle date. Tout tient dans une seule fenêtre.\n\nChapitres\n00:00 Il est vingt-deux heures. Vous écrivez le SMS de demain matin, et vous vous notez de l'envoyer à huit heures.\n00:12 Planifier un email/SMS\n00:24 Ouvrir le panneau Communication de la fiche\n00:27 Choisir « Planifier un SMS »\n00:30 Dire à qui le SMS part\n00:33 Choisir le modèle de SMS\n00:36 Fixer la date et l'heure d'envoi\n00:42 Valider la planification\n00:46 Faites-le avec Claude\n00:58 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] modèles de SMS.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/06-planifier-un-email-sms\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "SMS",
+      "planification",
+      "CRM",
+      "marketing",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "CrmMarketing"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V13-06-planifier-un-email-sms-thumb.jpg",
+    "playlist": "RapidoCRM — CrmMarketing",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T23:29:21.628Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

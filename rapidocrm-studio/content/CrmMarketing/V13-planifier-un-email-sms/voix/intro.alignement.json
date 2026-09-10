@@ -1,0 +1,172 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "part",
+    "debut": 0.186,
+    "fin": 0.348
+  },
+  {
+    "mot": "de",
+    "debut": 0.372,
+    "fin": 0.43
+  },
+  {
+    "mot": "la",
+    "debut": 0.464,
+    "fin": 0.534
+  },
+  {
+    "mot": "fiche",
+    "debut": 0.604,
+    "fin": 0.859
+  },
+  {
+    "mot": "d'une",
+    "debut": 0.894,
+    "fin": 1.045
+  },
+  {
+    "mot": "entreprise,",
+    "debut": 1.068,
+    "fin": 1.66
+  },
+  {
+    "mot": "et",
+    "debut": 1.741,
+    "fin": 1.858
+  },
+  {
+    "mot": "on",
+    "debut": 1.892,
+    "fin": 1.962
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.997,
+    "fin": 2.345
+  },
+  {
+    "mot": "avec",
+    "debut": 2.368,
+    "fin": 2.577
+  },
+  {
+    "mot": "un",
+    "debut": 2.67,
+    "fin": 2.74
+  },
+  {
+    "mot": "S.M.S.",
+    "debut": 2.775,
+    "fin": 3.228
+  },
+  {
+    "mot": "programmé.",
+    "debut": 3.262,
+    "fin": 3.82
+  },
+  {
+    "mot": "Trois",
+    "debut": 4.063,
+    "fin": 4.296
+  },
+  {
+    "mot": "choses",
+    "debut": 4.319,
+    "fin": 4.551
+  },
+  {
+    "mot": "à",
+    "debut": 4.621,
+    "fin": 4.644
+  },
+  {
+    "mot": "dire",
+    "debut": 4.69,
+    "fin": 5.027
+  },
+  {
+    "mot": ":",
+    "debut": 5.05,
+    "fin": 5.108
+  },
+  {
+    "mot": "qui",
+    "debut": 5.352,
+    "fin": 5.457
+  },
+  {
+    "mot": "le",
+    "debut": 5.515,
+    "fin": 5.561
+  },
+  {
+    "mot": "reçoit,",
+    "debut": 5.608,
+    "fin": 6.118
+  },
+  {
+    "mot": "quel",
+    "debut": 6.269,
+    "fin": 6.432
+  },
+  {
+    "mot": "message,",
+    "debut": 6.49,
+    "fin": 7.07
+  },
+  {
+    "mot": "et",
+    "debut": 7.245,
+    "fin": 7.361
+  },
+  {
+    "mot": "à",
+    "debut": 7.407,
+    "fin": 7.43
+  },
+  {
+    "mot": "quelle",
+    "debut": 7.488,
+    "fin": 7.663
+  },
+  {
+    "mot": "date.",
+    "debut": 7.686,
+    "fin": 8.046
+  },
+  {
+    "mot": "Tout",
+    "debut": 8.487,
+    "fin": 8.731
+  },
+  {
+    "mot": "tient",
+    "debut": 8.754,
+    "fin": 8.986
+  },
+  {
+    "mot": "dans",
+    "debut": 9.009,
+    "fin": 9.125
+  },
+  {
+    "mot": "une",
+    "debut": 9.195,
+    "fin": 9.276
+  },
+  {
+    "mot": "seule",
+    "debut": 9.3,
+    "fin": 9.462
+  },
+  {
+    "mot": "fenêtre.",
+    "debut": 9.485,
+    "fin": 9.915
+  }
+]

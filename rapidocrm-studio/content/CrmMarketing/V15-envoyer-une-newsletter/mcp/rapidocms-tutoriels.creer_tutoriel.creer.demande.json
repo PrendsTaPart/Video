@@ -1,0 +1,44 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-envoyer-une-newsletter",
+    "module": "06-crm-marketing",
+    "numero": 15,
+    "titre": "Envoyer une newsletter",
+    "titre_court": "Envoyer une newsletter",
+    "accroche": "Cette fois, la newsletter part du CRM.",
+    "explication": "On part de la fiche d'une entreprise, et on ressort avec une newsletter programmée. Qui la reçoit, quand elle part, à quoi elle ressemble : la fenêtre suit cet ordre.\n\n1. Ouvrir « Envoyer une newsletter » — Panneau Communication, envoyer une newsletter.\n2. Dire à qui la newsletter part — La cible d'abord : entreprises. C'est le premier champ.\n3. Fixer la date et l'heure d'envoi — Puis la date et l'heure. Dix heures trente se lit ; dix-sept heures trente attend le lendemain.\n4. Choisir le modèle de newsletter — Le modèle, avec son aperçu.\n5. Lire la confirmation — Campagne ajoutée avec succès.\n\nUne newsletter devient une campagne. Pour retrouver les dernières, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir « Envoyer une newsletter »",
+        "texte": "Panneau Communication, envoyer une newsletter."
+      },
+      {
+        "titre": "Dire à qui la newsletter part",
+        "texte": "La cible d'abord : entreprises. C'est le premier champ."
+      },
+      {
+        "titre": "Fixer la date et l'heure d'envoi",
+        "texte": "Puis la date et l'heure. Dix heures trente se lit ; dix-sept heures trente attend le lendemain."
+      },
+      {
+        "titre": "Choisir le modèle de newsletter",
+        "texte": "Le modèle, avec son aperçu."
+      },
+      {
+        "titre": "Lire la confirmation",
+        "texte": "Campagne ajoutée avec succès."
+      }
+    ],
+    "a_quoi_ca_sert": "Adresser la même lettre d'information à toutes ses entreprises clientes, à la date choisie, sans repasser par un outil d'e-mailing. Le logiciel en fait une campagne et confirme qu'elle est enregistrée.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir ouvert la fiche d'une entreprise cliente",
+      "Avoir au moins un modèle de newsletter enregistré"
+    ]
+  },
+  "demande_le": "2026-09-06T14:12:58.669Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

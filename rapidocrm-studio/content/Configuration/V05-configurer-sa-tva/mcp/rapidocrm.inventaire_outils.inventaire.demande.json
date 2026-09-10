@@ -1,0 +1,9 @@
+{
+  "serveur": "RapidoCRM",
+  "outil": "inventaire_outils",
+  "parametres": {
+    "consigne": "Liste les outils du serveur MCP RapidoCRM avec, pour chacun, son nom, sa description et le schéma de ses paramètres (nom, type, obligatoire, valeurs autorisées). Aucune écriture dans le CRM."
+  },
+  "demande_le": "2026-08-27T03:24:45.680Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

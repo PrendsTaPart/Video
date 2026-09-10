@@ -1,0 +1,105 @@
+{
+  "duree": 31.5,
+  "resolution": [1920, 1020],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Facturation — cartes de dépenses et onglet dépenses" },
+    { "t": 7.0, "nom": "Tableau des dépenses" },
+    { "t": 14.0, "nom": "Filtres Statut et Entreprise" },
+    { "t": 22.0, "nom": "Menu Actions d'une dépense" },
+    { "t": 28.0, "nom": "Entrée Voir l'entreprise" }
+  ],
+  "actions": [
+    {
+      "t": 2.0,
+      "type": "ouverture",
+      "cible": "cartes de dépenses et onglet dépenses",
+      "zone": { "x": 0.23, "y": 0.2, "w": 0.75, "h": 0.45 },
+      "texte_visible": "Total dépenses 331.19 € — Total dépenses en attente de paiement 272.39 € — Total dépenses payées 58.8 € — Total bénéfices 27 327,76 € — facture · devis · dépenses"
+    },
+    {
+      "t": 8.0,
+      "type": "ouverture",
+      "cible": "en-tête et premières lignes du tableau",
+      "zone": { "x": 0.24, "y": 0.66, "w": 0.72, "h": 0.32 },
+      "texte_visible": "ID · Entreprise · Date de création · Statut · Total TTC · Actions — 4 cabinet lefèvre 26/08/2026 14:26:20 En attente 143.99"
+    },
+    {
+      "t": 15.0,
+      "type": "selection",
+      "cible": "listes déroulantes Statut et Entreprise",
+      "zone": { "x": 0.24, "y": 0.42, "w": 0.48, "h": 0.14 },
+      "texte_visible": "Statut · Entreprise · créer une dépense"
+    },
+    {
+      "t": 23.0,
+      "type": "clic",
+      "cible": "menu Actions de la ligne 4",
+      "zone": { "x": 0.69, "y": 0.55, "w": 0.16, "h": 0.2 },
+      "texte_visible": "Modifier · Télécharger · Voir l'entreprise"
+    },
+    {
+      "t": 29.0,
+      "type": "clic",
+      "cible": "entrée Voir l'entreprise",
+      "zone": { "x": 0.7, "y": 0.66, "w": 0.15, "h": 0.08 },
+      "texte_visible": "Voir l'entreprise — Affichage de 1 à 4 sur 4 entrées"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir l'onglet dépenses",
+      "debut": 0,
+      "fin": 6.5,
+      "actions": [0],
+      "zone_focus": { "x": 0.23, "y": 0.2, "w": 0.75, "h": 0.45 }
+    },
+    {
+      "numero": 2,
+      "titre": "Lire le tableau des dépenses",
+      "debut": 6.5,
+      "fin": 13.5,
+      "actions": [1],
+      "zone_focus": { "x": 0.24, "y": 0.62, "w": 0.72, "h": 0.36 }
+    },
+    {
+      "numero": 3,
+      "titre": "Filtrer et trier la liste",
+      "debut": 13.5,
+      "fin": 21.5,
+      "actions": [2],
+      "zone_focus": { "x": 0.24, "y": 0.4, "w": 0.5, "h": 0.2 }
+    },
+    {
+      "numero": 4,
+      "titre": "Ouvrir le menu d'une dépense",
+      "debut": 21.5,
+      "fin": 27.5,
+      "actions": [3],
+      "zone_focus": { "x": 0.67, "y": 0.52, "w": 0.2, "h": 0.24 }
+    },
+    {
+      "numero": 5,
+      "titre": "Remonter à la fiche de l'entreprise",
+      "debut": 27.5,
+      "fin": 31.5,
+      "actions": [4],
+      "zone_focus": { "x": 0.68, "y": 0.6, "w": 0.19, "h": 0.16 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 31.5,
+      "zone": { "x": 0.0, "y": 0.0, "w": 1.0, "h": 0.145 },
+      "raison": "Barre du navigateur : onglets, extensions et adresse locale du poste d'enregistrement (127.0.0.1:8000)"
+    },
+    {
+      "t": 0,
+      "fin": 31.5,
+      "zone": { "x": 0.685, "y": 0.15, "w": 0.315, "h": 0.095 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    }
+  ]
+}

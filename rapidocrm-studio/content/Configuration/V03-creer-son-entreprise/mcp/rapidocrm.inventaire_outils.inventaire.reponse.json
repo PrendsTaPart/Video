@@ -1,0 +1,44 @@
+{
+  "outils": [
+    {
+      "nom": "create_entreprise",
+      "description": "Créer une entreprise cliente (nom requis, coordonnées validées). Écriture — non utilisé par ce pipeline, mais son schéma fait foi sur les champs et leur caractère obligatoire.",
+      "parametres": [
+        { "nom": "nom", "type": "string", "obligatoire": true, "description": "Nom de l'entreprise" },
+        { "nom": "email", "type": "string|null", "obligatoire": false, "description": "Email de contact" },
+        { "nom": "siret", "type": "string|null", "obligatoire": false, "description": "SIRET (14 chiffres)" },
+        { "nom": "dirigeant", "type": "string|null", "obligatoire": false, "description": "Nom du dirigeant" },
+        { "nom": "naf", "type": "string|null", "obligatoire": false, "description": "Code NAF" },
+        { "nom": "adresse", "type": "string|null", "obligatoire": false, "description": "Adresse" },
+        { "nom": "code_postal", "type": "string|null", "obligatoire": false, "description": "Code postal" },
+        { "nom": "ville", "type": "string|null", "obligatoire": false, "description": "Ville" },
+        { "nom": "telephone", "type": "string|null", "obligatoire": false, "description": "Téléphone" },
+        { "nom": "site_web", "type": "string|null", "obligatoire": false, "description": "Site web (URL complète avec https://)" },
+        { "nom": "domaine", "type": "string|null", "obligatoire": false, "description": "Domaine d'activité" }
+      ]
+    },
+    {
+      "nom": "list_entreprises",
+      "description": "Liste les entreprises enregistrées dans le C.R.M., avec nom, e-mail, SIRET, dirigeant et domaine. Lecture seule.",
+      "parametres": [
+        { "nom": "limit", "type": "integer|null", "obligatoire": false, "description": "Nombre maximum de résultats" },
+        { "nom": "q", "type": "string|null", "obligatoire": false, "description": "Recherche libre" }
+      ]
+    },
+    {
+      "nom": "rechercher_entreprise_siret",
+      "description": "Recherche une entreprise à partir de son numéro de SIRET. Lecture seule.",
+      "parametres": [
+        { "nom": "siret", "type": "string", "obligatoire": true, "description": "SIRET (14 chiffres)" }
+      ]
+    },
+    {
+      "nom": "get_entreprise",
+      "description": "Fiche d'une entreprise par son identifiant. Lecture seule.",
+      "parametres": [
+        { "nom": "id", "type": "integer", "obligatoire": true, "description": "ID principal" }
+      ]
+    }
+  ],
+  "note": "Inventaire restreint aux outils touchant aux entreprises. create_entreprise crée une entreprise *cliente* dans un espace déjà ouvert : il ne couvre pas l'écran d'inscription qui rattache votre propre société à votre compte. Ce dernier est exclusivement web."
+}

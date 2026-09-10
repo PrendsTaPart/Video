@@ -1,0 +1,24 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_cas_usage",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-conversion-d-un-devis-en-facture",
+    "cas_usage": [
+      {
+        "titre": "Facturer un devis accepté",
+        "contexte": "Le client vient d'accepter votre devis.",
+        "action": "Ouvrez le devis par Signer, puis enregistrez.",
+        "resultat": "Le bandeau annonce « Devis signé et facture créée », et la facture apparaît dans l'onglet facture."
+      },
+      {
+        "titre": "Vérifier ce qui a été facturé",
+        "contexte": "Vous voulez confirmer le montant passé en facturation.",
+        "action": "Ouvrez l'onglet facture et lisez la nouvelle ligne, ou relisez les cartes du haut de page.",
+        "resultat": "La facture porte le même client et le même total que le devis ; le total facturé a augmenté d'autant."
+      }
+    ]
+  },
+  "demande_le": "2026-09-06T12:38:14.466Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

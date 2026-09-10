@@ -1,0 +1,15 @@
+Un client rappelle après six semaines. Qui lui a écrit ? Quand ? À propos de quoi ? Neuf journaux répondent, sur une seule page.
+
+On part de la fiche d'une entreprise, et on ressort avec sa page d'historique. Neuf journaux : e-mails, SMS, rendez-vous, contrats, documents, factures, devis, dépenses et notes.
+
+Le panneau de droite, premier bloc : Entreprise. Il tient quatre entrées.
+
+La troisième : historique de l'entreprise.
+
+Neuf cartes, trois par rangée. Chacune couvre un type d'échange.
+
+Et le même bouton partout : Consulter.
+
+Neuf journaux, c'est beaucoup à ouvrir. Pour avoir le total d'un coup, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Neuf journaux sur une page : reprendre un dossier prend moins de temps que de s'en souvenir.

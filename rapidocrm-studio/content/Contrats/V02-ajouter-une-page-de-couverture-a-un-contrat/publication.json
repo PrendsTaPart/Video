@@ -1,0 +1,27 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-contrats-V02-04-ajouter-une-page-de-couverture-a-un-contrat.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-contrats-V02-04-ajouter-une-page-de-couverture-a-un-contrat-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-contrats-V02-04-ajouter-une-page-de-couverture-a-un-contrat-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-contrats-V02-04-ajouter-une-page-de-couverture-a-un-contrat-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "b843d43ef4b03d2f",
+      "video_vertical_url": "7a4dd58ee5673ff3",
+      "thumbnail_url": "97e6f68d424104b4",
+      "thumbnail_vertical_url": "21f54d95b525c02e"
+    },
+    "publie_le": "2026-09-04T08:06:26.798Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=RZc1MmMjklE",
+    "video_id": "RZc1MmMjklE",
+    "publie_le": "2026-09-04T08:20:00+00:00",
+    "short_url": "https://www.youtube.com/watch?v=FqNjQV0r_JM",
+    "short_id": "FqNjQV0r_JM"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/04-ajouter-une-page-de-couverture-a-un-contrat",
+    "tutoriel_id": "c39da336-ce22-4b15-b6b9-d92822e61596",
+    "publie_le": "2026-09-04T08:10:00.339+00:00"
+  }
+}

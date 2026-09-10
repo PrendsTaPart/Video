@@ -1,0 +1,257 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "part",
+    "debut": 0.174,
+    "fin": 0.313
+  },
+  {
+    "mot": "de",
+    "debut": 0.337,
+    "fin": 0.383
+  },
+  {
+    "mot": "la",
+    "debut": 0.418,
+    "fin": 0.476
+  },
+  {
+    "mot": "page",
+    "debut": 0.534,
+    "fin": 0.778
+  },
+  {
+    "mot": "Historique,",
+    "debut": 0.801,
+    "fin": 1.486
+  },
+  {
+    "mot": "et",
+    "debut": 1.73,
+    "fin": 1.823
+  },
+  {
+    "mot": "on",
+    "debut": 1.869,
+    "fin": 1.927
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.962,
+    "fin": 2.264
+  },
+  {
+    "mot": "avec",
+    "debut": 2.287,
+    "fin": 2.496
+  },
+  {
+    "mot": "le",
+    "debut": 2.566,
+    "fin": 2.624
+  },
+  {
+    "mot": "S.M.S.",
+    "debut": 2.659,
+    "fin": 3.077
+  },
+  {
+    "mot": "sous",
+    "debut": 3.146,
+    "fin": 3.332
+  },
+  {
+    "mot": "les",
+    "debut": 3.355,
+    "fin": 3.46
+  },
+  {
+    "mot": "yeux.",
+    "debut": 3.506,
+    "fin": 3.738
+  },
+  {
+    "mot": "Le",
+    "debut": 4.18,
+    "fin": 4.272
+  },
+  {
+    "mot": "tableau",
+    "debut": 4.331,
+    "fin": 4.632
+  },
+  {
+    "mot": "montre",
+    "debut": 4.679,
+    "fin": 4.946
+  },
+  {
+    "mot": "le",
+    "debut": 4.969,
+    "fin": 5.016
+  },
+  {
+    "mot": "numéro",
+    "debut": 5.062,
+    "fin": 5.503
+  },
+  {
+    "mot": "du",
+    "debut": 5.619,
+    "fin": 5.724
+  },
+  {
+    "mot": "destinataire",
+    "debut": 5.782,
+    "fin": 6.455
+  },
+  {
+    "mot": "et",
+    "debut": 6.502,
+    "fin": 6.641
+  },
+  {
+    "mot": "la",
+    "debut": 6.676,
+    "fin": 6.757
+  },
+  {
+    "mot": "date",
+    "debut": 6.815,
+    "fin": 7.082
+  },
+  {
+    "mot": "de",
+    "debut": 7.129,
+    "fin": 7.233
+  },
+  {
+    "mot": "chaque",
+    "debut": 7.279,
+    "fin": 7.523
+  },
+  {
+    "mot": "envoi",
+    "debut": 7.546,
+    "fin": 7.825
+  },
+  {
+    "mot": ";",
+    "debut": 7.872,
+    "fin": 7.988
+  },
+  {
+    "mot": "l'icône",
+    "debut": 8.371,
+    "fin": 8.696
+  },
+  {
+    "mot": "en",
+    "debut": 8.719,
+    "fin": 8.766
+  },
+  {
+    "mot": "bout",
+    "debut": 8.835,
+    "fin": 9.009
+  },
+  {
+    "mot": "de",
+    "debut": 9.033,
+    "fin": 9.114
+  },
+  {
+    "mot": "ligne",
+    "debut": 9.16,
+    "fin": 9.451
+  },
+  {
+    "mot": "rouvre",
+    "debut": 9.509,
+    "fin": 9.799
+  },
+  {
+    "mot": "le",
+    "debut": 9.822,
+    "fin": 9.88
+  },
+  {
+    "mot": "message",
+    "debut": 9.927,
+    "fin": 10.414
+  },
+  {
+    "mot": "mot",
+    "debut": 10.495,
+    "fin": 10.693
+  },
+  {
+    "mot": "pour",
+    "debut": 10.716,
+    "fin": 10.855
+  },
+  {
+    "mot": "mot.",
+    "debut": 10.902,
+    "fin": 11.157
+  },
+  {
+    "mot": "C'est",
+    "debut": 11.436,
+    "fin": 11.622
+  },
+  {
+    "mot": "la",
+    "debut": 11.645,
+    "fin": 11.714
+  },
+  {
+    "mot": "trace",
+    "debut": 11.761,
+    "fin": 12.098
+  },
+  {
+    "mot": "de",
+    "debut": 12.156,
+    "fin": 12.225
+  },
+  {
+    "mot": "ce",
+    "debut": 12.26,
+    "fin": 12.307
+  },
+  {
+    "mot": "qui",
+    "debut": 12.33,
+    "fin": 12.411
+  },
+  {
+    "mot": "est",
+    "debut": 12.434,
+    "fin": 12.504
+  },
+  {
+    "mot": "parti,",
+    "debut": 12.562,
+    "fin": 13.189
+  },
+  {
+    "mot": "pas",
+    "debut": 13.305,
+    "fin": 13.491
+  },
+  {
+    "mot": "un",
+    "debut": 13.537,
+    "fin": 13.584
+  },
+  {
+    "mot": "brouillon.",
+    "debut": 13.618,
+    "fin": 14.071
+  }
+]

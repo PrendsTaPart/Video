@@ -1,0 +1,24 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_cas_usage",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-email",
+    "cas_usage": [
+      {
+        "titre": "Vérifier ce qui a été envoyé",
+        "contexte": "Le client dit ne pas avoir reçu le devis.",
+        "action": "Ouvrez l'historique des e-mails, repérez la ligne à la bonne date et cliquez sur l'œil.",
+        "resultat": "L'e-mail se rouvre avec son objet, son destinataire et son contenu."
+      },
+      {
+        "titre": "Repartir sur un nouvel envoi",
+        "contexte": "Il faut relancer le même client.",
+        "action": "Depuis le journal, cliquez sur « Envoyer un email » en haut à droite.",
+        "resultat": "Le formulaire d'envoi s'ouvre depuis le journal."
+      }
+    ]
+  },
+  "demande_le": "2026-09-09T08:18:19.242Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

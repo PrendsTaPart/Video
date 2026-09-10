@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "module": "Comptabilite",
+    "numero": 12,
+    "titre": "Retrouver un devis et le rouvrir",
+    "titre_court": "Retrouver un devis et le rou",
+    "slug": "retrouver-un-devis-et-le-rouvrir"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'historique des devis",
+        "voix": "",
+        "debut_source": 0,
+        "fin_source": 6,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.35,
+          "w": 0.75,
+          "h": 0.6
+        },
+        "annotation": "Ouvrir l'historique des devis"
+      },
+      {
+        "numero": 2,
+        "titre": "Ouvrir le menu d'une ligne",
+        "voix": "",
+        "debut_source": 6,
+        "fin_source": 12,
+        "zone_focus": {
+          "x": 0.68,
+          "y": 0.35,
+          "w": 0.2,
+          "h": 0.25
+        },
+        "annotation": "Ouvrir le menu d'une ligne"
+      },
+      {
+        "numero": 3,
+        "titre": "Visualiser le devis",
+        "voix": "",
+        "debut_source": 12,
+        "fin_source": 18,
+        "zone_focus": {
+          "x": 0.1,
+          "y": 0,
+          "w": 0.35,
+          "h": 0.08
+        },
+        "annotation": "Visualiser le devis"
+      },
+      {
+        "numero": 4,
+        "titre": "Télécharger le devis",
+        "voix": "",
+        "debut_source": 18,
+        "fin_source": 24,
+        "zone_focus": {
+          "x": 0.6,
+          "y": 0.7,
+          "w": 0.4,
+          "h": 0.3
+        },
+        "annotation": "Télécharger le devis"
+      },
+      {
+        "numero": 5,
+        "titre": "Les autres actions de la ligne",
+        "voix": "",
+        "debut_source": 24,
+        "fin_source": 28.1,
+        "zone_focus": {
+          "x": 0.68,
+          "y": 0.35,
+          "w": 0.2,
+          "h": 0.25
+        },
+        "annotation": "Les autres actions de la ligne"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] derniers devis avec leur destinataire, leur statut et leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_devis"
+    }
+  }
+}

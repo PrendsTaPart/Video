@@ -1,0 +1,52 @@
+[
+  {
+    "mot": "Télécharger",
+    "debut": 0,
+    "fin": 0.58
+  },
+  {
+    "mot": "sort",
+    "debut": 0.639,
+    "fin": 0.789
+  },
+  {
+    "mot": "le",
+    "debut": 0.813,
+    "fin": 0.871
+  },
+  {
+    "mot": "fichier.",
+    "debut": 0.917,
+    "fin": 1.347
+  },
+  {
+    "mot": "Le",
+    "debut": 1.463,
+    "fin": 1.544
+  },
+  {
+    "mot": "navigateur",
+    "debut": 1.591,
+    "fin": 2.043
+  },
+  {
+    "mot": "le",
+    "debut": 2.078,
+    "fin": 2.136
+  },
+  {
+    "mot": "prend",
+    "debut": 2.183,
+    "fin": 2.357
+  },
+  {
+    "mot": "en",
+    "debut": 2.438,
+    "fin": 2.485
+  },
+  {
+    "mot": "charge.",
+    "debut": 2.531,
+    "fin": 2.914
+  }
+]

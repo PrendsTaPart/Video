@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 17,
+    "titre": "Créer un devis",
+    "titre_court": "Créer un devis",
+    "slug": "06-creer-un-devis"
+  },
+  "hook": {
+    "texte": "Le client demande un devis. Vous ouvrez un tableur, vous recopiez son nom, son adresse, votre prix.",
+    "promesse": "Ou bien vous partez de sa fiche, et le prix vient tout seul.",
+    "duree": 8,
+    "alternatives": [
+      "Un devis retapé, c'est une occasion de se tromper de plus.",
+      "Le client est déjà dans le CRM ; le devis peut y naître.",
+      "Ce qui est au catalogue n'a pas à être ressaisi."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec un devis. Le panneau Finance l'ouvre, le catalogue remplit les montants, et le devis se retrouve dans l'activité du client.",
+    "duree": 17
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir « Créer un devis » depuis la fiche",
+        "voix": "Panneau Finance : créer un devis.",
+        "debut_source": 1,
+        "fin_source": 4.5,
+        "zone_focus": { "x": 0.72, "y": 0.4, "w": 0.27, "h": 0.45 },
+        "annotation": "Créer un devis"
+      },
+      {
+        "numero": 2,
+        "titre": "Logo et charte graphique du devis",
+        "voix": "Le logo du client est déjà là. On choisit une couleur.",
+        "debut_source": 4.5,
+        "fin_source": 8.5,
+        "zone_focus": { "x": 0.26, "y": 0, "w": 0.42, "h": 0.85 },
+        "annotation": "Design"
+      },
+      {
+        "numero": 3,
+        "titre": "Choisir le produit, les montants suivent",
+        "voix": "Le produit, avec son prix. C'est lui qui remplit le reste.",
+        "debut_source": 8.5,
+        "fin_source": 14,
+        "zone_focus": { "x": 0.26, "y": 0.05, "w": 0.42, "h": 0.9 },
+        "annotation": "Choisir un produit"
+      },
+      {
+        "numero": 4,
+        "titre": "Fixer les dates du devis",
+        "voix": "Les dates de la prestation, début et fin.",
+        "debut_source": 14,
+        "fin_source": 19,
+        "zone_focus": { "x": 0.26, "y": 0.5, "w": 0.42, "h": 0.28 },
+        "annotation": "Dates"
+      },
+      {
+        "numero": 5,
+        "titre": "Délai de paiement, mentions légales, statut",
+        "voix": "On descend : le délai de paiement, les mentions légales, le statut. Et la question de l'envoi, à laquelle on répond ici.",
+        "debut_source": 19,
+        "fin_source": 28,
+        "zone_focus": { "x": 0.26, "y": 0.02, "w": 0.42, "h": 0.95 },
+        "annotation": "Délai et statut"
+      },
+      {
+        "numero": 6,
+        "titre": "Mode de paiement, totaux et enregistrement",
+        "voix": "Le mode de règlement, les totaux, et enregistrer.",
+        "debut_source": 28,
+        "fin_source": 32.84,
+        "zone_focus": { "x": 0.26, "y": 0.1, "w": 0.42, "h": 0.85 },
+        "annotation": "Enregistrer"
+      },
+      {
+        "numero": 7,
+        "titre": "Retrouver le devis dans l'activité de la fiche",
+        "voix": "Le devis prend sa place dans l'activité du client.",
+        "debut_source": 32.84,
+        "fin_source": 38,
+        "zone_focus": { "x": 0.24, "y": 0.4, "w": 0.5, "h": 0.5 },
+        "annotation": "Activités récentes"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, il faut suivre.",
+    "voix": "Un devis part, un autre attend. Pour savoir lesquels, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] devis en attente avec leur destinataire et leur montant.",
+      "variables": ["nombre"],
+      "outil_mcp": "list_devis"
+    },
+    "resultat_affiche": {
+      "titre": "3 devis en attente",
+      "lignes": [
+        "N° 12 — identité visuelle — 3 360,00 €",
+        "N° 13 — site vitrine — 5 760,00 €",
+        "N° 14 — maintenance annuelle — 4 320,00 €"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Un devis qui part de la fiche du client, c'est un devis qui ne se retape pas.",
+    "duree": 8,
+    "alternatives": [
+      "Le catalogue calcule mieux que la mémoire.",
+      "Ce qui est saisi une fois ne se retrouve pas faux ailleurs.",
+      "Un devis, c'est un produit, deux dates, et un clic."
+    ]
+  },
+  "seo": {
+    "titre": "Créer un devis — RapidoCRM",
+    "description": "Établissez un devis depuis la fiche d'une entreprise RapidoCRM : produit du catalogue, montants calculés, délai, statut et mode de paiement. Le tutoriel.",
+    "mots_cles": ["devis", "RapidoCRM", "CRM", "catalogue", "montants", "commercial"],
+    "youtube_titre": "Créer un devis — RapidoCRM",
+    "youtube_description": "Le tutoriel du devis sur RapidoCRM : le panneau Finance de la fiche entreprise, le choix du produit au catalogue, les montants calculés seuls, le délai de paiement et le mode de règlement. RapidoCRM Académie.",
+    "youtube_tags": ["RapidoCRM", "devis", "CRM", "catalogue", "commercial"]
+  }
+}

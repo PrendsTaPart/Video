@@ -1,0 +1,67 @@
+[
+  {
+    "mot": "La",
+    "debut": 0,
+    "fin": 0.186
+  },
+  {
+    "mot": "date,",
+    "debut": 0.267,
+    "fin": 0.534
+  },
+  {
+    "mot": "puis",
+    "debut": 0.65,
+    "fin": 0.801
+  },
+  {
+    "mot": "les",
+    "debut": 0.824,
+    "fin": 0.906
+  },
+  {
+    "mot": "montants",
+    "debut": 0.929,
+    "fin": 1.358
+  },
+  {
+    "mot": ":",
+    "debut": 1.382,
+    "fin": 1.428
+  },
+  {
+    "mot": "hors",
+    "debut": 1.474,
+    "fin": 1.695
+  },
+  {
+    "mot": "taxes,",
+    "debut": 1.73,
+    "fin": 2.241
+  },
+  {
+    "mot": "T.V.A.,",
+    "debut": 2.368,
+    "fin": 3.042
+  },
+  {
+    "mot": "total.",
+    "debut": 3.193,
+    "fin": 3.704
+  },
+  {
+    "mot": "Vous",
+    "debut": 3.982,
+    "fin": 4.145
+  },
+  {
+    "mot": "n'écrivez",
+    "debut": 4.168,
+    "fin": 4.586
+  },
+  {
+    "mot": "rien.",
+    "debut": 4.632,
+    "fin": 4.923
+  }
+]

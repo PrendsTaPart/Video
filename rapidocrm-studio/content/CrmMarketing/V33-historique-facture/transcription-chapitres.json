@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "« Où en est mon compte ? » Le client demande, et vous ouvrez trois onglets. Un tableau répond : statut et total, ligne par ligne."
+  },
+  {
+    "timestamp_secondes": 8,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la page Historique, et on ressort avec la facture ouverte. Le tableau donne le statut et le total ; l'icône en bout de ligne ouvre le document, prêt à télécharger. Rien à recalculer, rien à reconstituer : la facture est déjà écrite."
+  },
+  {
+    "timestamp_secondes": 25,
+    "titre": "Ouvrir l'historique des factures",
+    "texte": "Deuxième rangée de la page Historique : les factures. On consulte, et le tableau se charge."
+  },
+  {
+    "timestamp_secondes": 31,
+    "titre": "Lire les colonnes du tableau",
+    "texte": "Statut et total TTC : l'essentiel se lit ici."
+  },
+  {
+    "timestamp_secondes": 35,
+    "titre": "Ouvrir une facture",
+    "texte": "L'icône ouvre la facture dans un onglet."
+  },
+  {
+    "timestamp_secondes": 38,
+    "titre": "Lire la facture et la télécharger",
+    "texte": "Et le bouton Télécharger l'enregistre."
+  },
+  {
+    "timestamp_secondes": 41,
+    "titre": "Faites-le avec Claude",
+    "texte": "Le journal montre un client. Pour voir toutes les factures qui attendent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 53,
+    "titre": "À retenir",
+    "texte": "Le statut au tableau, le détail dans la facture : la question du client trouve sa réponse."
+  }
+]

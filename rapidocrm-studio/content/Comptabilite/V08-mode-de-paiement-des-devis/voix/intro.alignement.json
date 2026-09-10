@@ -1,0 +1,202 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.116
+  },
+  {
+    "mot": "part",
+    "debut": 0.151,
+    "fin": 0.302
+  },
+  {
+    "mot": "de",
+    "debut": 0.325,
+    "fin": 0.372
+  },
+  {
+    "mot": "la",
+    "debut": 0.418,
+    "fin": 0.476
+  },
+  {
+    "mot": "liste",
+    "debut": 0.522,
+    "fin": 0.755
+  },
+  {
+    "mot": "des",
+    "debut": 0.813,
+    "fin": 0.917
+  },
+  {
+    "mot": "devis,",
+    "debut": 0.952,
+    "fin": 1.3
+  },
+  {
+    "mot": "et",
+    "debut": 1.335,
+    "fin": 1.405
+  },
+  {
+    "mot": "on",
+    "debut": 1.44,
+    "fin": 1.498
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.544,
+    "fin": 1.846
+  },
+  {
+    "mot": "avec",
+    "debut": 1.869,
+    "fin": 2.078
+  },
+  {
+    "mot": "un",
+    "debut": 2.159,
+    "fin": 2.206
+  },
+  {
+    "mot": "moyen",
+    "debut": 2.264,
+    "fin": 2.566
+  },
+  {
+    "mot": "de",
+    "debut": 2.612,
+    "fin": 2.682
+  },
+  {
+    "mot": "paiement",
+    "debut": 2.74,
+    "fin": 3.065
+  },
+  {
+    "mot": "noté",
+    "debut": 3.158,
+    "fin": 3.39
+  },
+  {
+    "mot": "sur",
+    "debut": 3.437,
+    "fin": 3.553
+  },
+  {
+    "mot": "l'un",
+    "debut": 3.576,
+    "fin": 3.692
+  },
+  {
+    "mot": "d'eux.",
+    "debut": 3.738,
+    "fin": 3.947
+  },
+  {
+    "mot": "Le",
+    "debut": 4.191,
+    "fin": 4.296
+  },
+  {
+    "mot": "réglage",
+    "debut": 4.331,
+    "fin": 4.69
+  },
+  {
+    "mot": "est",
+    "debut": 4.714,
+    "fin": 4.783
+  },
+  {
+    "mot": "dans",
+    "debut": 4.807,
+    "fin": 4.934
+  },
+  {
+    "mot": "le",
+    "debut": 4.957,
+    "fin": 5.027
+  },
+  {
+    "mot": "devis,",
+    "debut": 5.062,
+    "fin": 5.375
+  },
+  {
+    "mot": "sous",
+    "debut": 5.422,
+    "fin": 5.584
+  },
+  {
+    "mot": "le",
+    "debut": 5.608,
+    "fin": 5.666
+  },
+  {
+    "mot": "statut",
+    "debut": 5.7,
+    "fin": 6.13
+  },
+  {
+    "mot": ":",
+    "debut": 6.165,
+    "fin": 6.2
+  },
+  {
+    "mot": "espèce,",
+    "debut": 6.351,
+    "fin": 6.931
+  },
+  {
+    "mot": "carte,",
+    "debut": 7.047,
+    "fin": 7.512
+  },
+  {
+    "mot": "virement",
+    "debut": 7.628,
+    "fin": 7.999
+  },
+  {
+    "mot": "ou",
+    "debut": 8.046,
+    "fin": 8.127
+  },
+  {
+    "mot": "chèque.",
+    "debut": 8.173,
+    "fin": 8.591
+  },
+  {
+    "mot": "Une",
+    "debut": 8.661,
+    "fin": 8.847
+  },
+  {
+    "mot": "seule",
+    "debut": 8.882,
+    "fin": 9.102
+  },
+  {
+    "mot": "case",
+    "debut": 9.125,
+    "fin": 9.334
+  },
+  {
+    "mot": "à",
+    "debut": 9.358,
+    "fin": 9.381
+  },
+  {
+    "mot": "la",
+    "debut": 9.416,
+    "fin": 9.474
+  },
+  {
+    "mot": "fois.",
+    "debut": 9.532,
+    "fin": 9.834
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "mot": "Vous",
+    "debut": 0,
+    "fin": 0.209
+  },
+  {
+    "mot": "savez",
+    "debut": 0.232,
+    "fin": 0.499
+  },
+  {
+    "mot": "ce",
+    "debut": 0.522,
+    "fin": 0.604
+  },
+  {
+    "mot": "que",
+    "debut": 0.65,
+    "fin": 0.731
+  },
+  {
+    "mot": "vous",
+    "debut": 0.755,
+    "fin": 0.871
+  },
+  {
+    "mot": "facturez.",
+    "debut": 0.894,
+    "fin": 1.428
+  },
+  {
+    "mot": "Ce",
+    "debut": 1.869,
+    "fin": 2.032
+  },
+  {
+    "mot": "que",
+    "debut": 2.09,
+    "fin": 2.171
+  },
+  {
+    "mot": "vous",
+    "debut": 2.218,
+    "fin": 2.334
+  },
+  {
+    "mot": "dépensez,",
+    "debut": 2.357,
+    "fin": 3.1
+  },
+  {
+    "mot": "beaucoup",
+    "debut": 3.483,
+    "fin": 3.762
+  },
+  {
+    "mot": "moins.",
+    "debut": 3.796,
+    "fin": 4.063
+  },
+  {
+    "mot": "Quatre",
+    "debut": 4.574,
+    "fin": 4.795
+  },
+  {
+    "mot": "cartes,",
+    "debut": 4.818,
+    "fin": 5.271
+  },
+  {
+    "mot": "un",
+    "debut": 5.422,
+    "fin": 5.526
+  },
+  {
+    "mot": "tableau,",
+    "debut": 5.573,
+    "fin": 6.037
+  },
+  {
+    "mot": "et",
+    "debut": 6.246,
+    "fin": 6.362
+  },
+  {
+    "mot": "le",
+    "debut": 6.397,
+    "fin": 6.455
+  },
+  {
+    "mot": "compte",
+    "debut": 6.502,
+    "fin": 6.711
+  },
+  {
+    "mot": "est",
+    "debut": 6.734,
+    "fin": 6.815
+  },
+  {
+    "mot": "clair.",
+    "debut": 6.838,
+    "fin": 7.221
+  }
+]

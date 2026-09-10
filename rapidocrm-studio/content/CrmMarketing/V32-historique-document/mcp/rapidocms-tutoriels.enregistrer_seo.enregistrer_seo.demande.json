@@ -1,0 +1,21 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_seo",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-document",
+    "seo_titre": "Historique des documents — RapidoCRM",
+    "seo_description": "Consultez le journal des documents d'un client dans RapidoCRM : nom, type, taille, date d'ajout, puis téléchargement ou suppression. Le tutoriel.",
+    "seo_mots_cles": [
+      "historique document",
+      "RapidoCRM",
+      "CRM",
+      "PDF",
+      "suivi client",
+      "pièce jointe"
+    ],
+    "seo_og_image": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V32-06-historique-document-thumb.jpg"
+  },
+  "demande_le": "2026-09-09T12:22:40.654Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

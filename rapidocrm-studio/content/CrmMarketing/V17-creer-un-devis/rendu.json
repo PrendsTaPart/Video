@@ -1,0 +1,92 @@
+{
+  "duree": 69.4,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V17-creer-un-devis/out/master-16x9.mp4",
+      "octets": 12196045
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V17-creer-un-devis/out/master-9x16.mp4",
+      "octets": 9143963
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 12.3
+    },
+    {
+      "nom": "titre",
+      "debut": 12.3,
+      "fin": 22.866666666666667
+    },
+    {
+      "nom": "demo",
+      "debut": 22.866666666666667,
+      "fin": 50.9
+    },
+    {
+      "nom": "claude",
+      "debut": 50.9,
+      "fin": 64.1
+    },
+    {
+      "nom": "punchline",
+      "debut": 64.1,
+      "fin": 69.4
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Le client demande un devis. Vous ouvrez un tableur, vous recopiez son nom, son adresse, votre prix."
+    },
+    {
+      "timecode": "00:12",
+      "titre": "Créer un devis"
+    },
+    {
+      "timecode": "00:22",
+      "titre": "Ouvrir « Créer un devis » depuis la fiche"
+    },
+    {
+      "timecode": "00:25",
+      "titre": "Logo et charte graphique du devis"
+    },
+    {
+      "timecode": "00:29",
+      "titre": "Choisir le produit, les montants suivent"
+    },
+    {
+      "timecode": "00:33",
+      "titre": "Fixer les dates du devis"
+    },
+    {
+      "timecode": "00:35",
+      "titre": "Délai de paiement, mentions légales, statut"
+    },
+    {
+      "timecode": "00:44",
+      "titre": "Mode de paiement, totaux et enregistrement"
+    },
+    {
+      "timecode": "00:47",
+      "titre": "Retrouver le devis dans l'activité de la fiche"
+    },
+    {
+      "timecode": "00:50",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:04",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

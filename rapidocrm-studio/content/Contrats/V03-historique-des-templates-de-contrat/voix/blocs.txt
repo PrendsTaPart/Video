@@ -1,0 +1,8 @@
+file '/home/user/Video/rapidocrm-studio/content/Contrats/V03-historique-des-templates-de-contrat/voix/hook.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Contrats/V03-historique-des-templates-de-contrat/voix/intro.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Contrats/V03-historique-des-templates-de-contrat/voix/etape-01.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Contrats/V03-historique-des-templates-de-contrat/voix/etape-02.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Contrats/V03-historique-des-templates-de-contrat/voix/etape-03.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Contrats/V03-historique-des-templates-de-contrat/voix/etape-04.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Contrats/V03-historique-des-templates-de-contrat/voix/claude.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Contrats/V03-historique-des-templates-de-contrat/voix/punchline.mp3'

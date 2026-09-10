@@ -1,0 +1,22 @@
+[
+  {
+    "mot": "L'icône",
+    "debut": 0,
+    "fin": 0.441
+  },
+  {
+    "mot": "ouvre",
+    "debut": 0.488,
+    "fin": 0.755
+  },
+  {
+    "mot": "le",
+    "debut": 0.778,
+    "fin": 0.848
+  },
+  {
+    "mot": "devis.",
+    "debut": 0.894,
+    "fin": 1.219
+  }
+]

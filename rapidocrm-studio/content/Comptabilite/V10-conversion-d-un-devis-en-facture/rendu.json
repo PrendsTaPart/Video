@@ -1,0 +1,86 @@
+{
+  "duree": 70.26666666666667,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V10-conversion-d-un-devis-en-facture/out/master-16x9.mp4",
+      "octets": 13122371
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V10-conversion-d-un-devis-en-facture/out/master-9x16.mp4",
+      "octets": 10344256
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.766666666666667
+    },
+    {
+      "nom": "titre",
+      "debut": 9.766666666666667,
+      "fin": 21.433333333333334
+    },
+    {
+      "nom": "demo",
+      "debut": 21.433333333333334,
+      "fin": 53.4
+    },
+    {
+      "nom": "claude",
+      "debut": 53.4,
+      "fin": 66.3
+    },
+    {
+      "nom": "punchline",
+      "debut": 66.3,
+      "fin": 70.26666666666667
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Le devis est accepté. Et vous vous apprêtez à retaper les mêmes lignes dans une facture."
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Transformer un devis accepté en facture"
+    },
+    {
+      "timecode": "00:21",
+      "titre": "Ouvrir le devis à convertir"
+    },
+    {
+      "timecode": "00:25",
+      "titre": "Signer le devis et enregistrer"
+    },
+    {
+      "timecode": "00:34",
+      "titre": "Lire ce que le logiciel annonce"
+    },
+    {
+      "timecode": "00:39",
+      "titre": "Passer à l'onglet facture"
+    },
+    {
+      "timecode": "00:47",
+      "titre": "Retrouver la facture créée"
+    },
+    {
+      "timecode": "00:53",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:06",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 70s, hors de la fenêtre 80–170s."
+  ]
+}

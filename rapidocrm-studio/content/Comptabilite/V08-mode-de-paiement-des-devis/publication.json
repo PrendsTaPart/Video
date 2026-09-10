@@ -1,0 +1,25 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V08-05-mode-de-paiement-des-devis.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V08-05-mode-de-paiement-des-devis-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V08-05-mode-de-paiement-des-devis-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V08-05-mode-de-paiement-des-devis-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "b840aa24f1eb668e",
+      "video_vertical_url": "8f0c246106691d7f",
+      "thumbnail_url": "9d026dfaf7159af7",
+      "thumbnail_vertical_url": "52577bcc7873cd89"
+    },
+    "publie_le": "2026-09-05T17:09:34.818Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=TRHFe2fP7sI",
+    "video_id": "TRHFe2fP7sI",
+    "publie_le": "2026-09-05T17:12:50.934Z"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/05-mode-de-paiement-des-devis",
+    "tutoriel_id": "9431a2cc-c79b-40e7-9eb5-a7c29d7e9985",
+    "publie_le": "2026-09-05T17:20:25.769Z"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-historique-des-depenses",
+    "transcription": "Vous savez ce que vous facturez. Ce que vous dépensez, beaucoup moins. Quatre cartes, un tableau, et le compte est clair.\n\nOn part de la page Facturation, et on ressort avec une vue claire des sorties. Les dépenses sont le troisième onglet, à côté des factures et des devis. Quatre cartes donnent la photo, le tableau donne le détail.\n\nTroisième onglet : dépenses. En haut, ce qui est dépensé, ce qui reste dû, ce qui est payé.\n\nEt la quatrième carte : les bénéfices, une fois les dépenses retirées. Puis le tableau, ligne par ligne, avec son entreprise et son montant.\n\nDeux filtres au-dessus, statut et entreprise. Et les colonnes se trient d'un clic sur leur titre.\n\nLes trois points ouvrent le menu. Trois entrées ici, pas quatre : une dépense ne se visualise pas.\n\nLa dernière remonte à la fiche du fournisseur.\n\nVos sorties sont sous les yeux. Pour savoir ce qui reste à régler sans filtrer, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nCe qui sort se lit aussi vite que ce qui rentre.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 8,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 21,
+        "titre": "Ouvrir l'onglet dépenses"
+      },
+      {
+        "debut": 27,
+        "titre": "Lire le tableau des dépenses"
+      },
+      {
+        "debut": 36,
+        "titre": "Filtrer et trier la liste"
+      },
+      {
+        "debut": 42,
+        "titre": "Ouvrir le menu d'une dépense"
+      },
+      {
+        "debut": 48,
+        "titre": "Remonter à la fiche de l'entreprise"
+      },
+      {
+        "debut": 52,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 66,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T08:19:40.618Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

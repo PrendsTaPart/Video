@@ -1,0 +1,92 @@
+[
+  {
+    "mot": "Et",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "la",
+    "debut": 0.163,
+    "fin": 0.221
+  },
+  {
+    "mot": "voilà,",
+    "debut": 0.279,
+    "fin": 0.604
+  },
+  {
+    "mot": "en",
+    "debut": 0.627,
+    "fin": 0.72
+  },
+  {
+    "mot": "tête",
+    "debut": 0.766,
+    "fin": 0.929
+  },
+  {
+    "mot": "de",
+    "debut": 0.952,
+    "fin": 1.022
+  },
+  {
+    "mot": "liste.",
+    "debut": 1.068,
+    "fin": 1.451
+  },
+  {
+    "mot": "Même",
+    "debut": 1.776,
+    "fin": 2.02
+  },
+  {
+    "mot": "client,",
+    "debut": 2.043,
+    "fin": 2.519
+  },
+  {
+    "mot": "même",
+    "debut": 2.601,
+    "fin": 2.798
+  },
+  {
+    "mot": "montant",
+    "debut": 2.821,
+    "fin": 3.181
+  },
+  {
+    "mot": "que",
+    "debut": 3.216,
+    "fin": 3.297
+  },
+  {
+    "mot": "le",
+    "debut": 3.332,
+    "fin": 3.402
+  },
+  {
+    "mot": "devis,",
+    "debut": 3.448,
+    "fin": 3.831
+  },
+  {
+    "mot": "avec",
+    "debut": 3.913,
+    "fin": 4.156
+  },
+  {
+    "mot": "son",
+    "debut": 4.203,
+    "fin": 4.307
+  },
+  {
+    "mot": "propre",
+    "debut": 4.377,
+    "fin": 4.644
+  },
+  {
+    "mot": "numéro.",
+    "debut": 4.679,
+    "fin": 5.132
+  }
+]

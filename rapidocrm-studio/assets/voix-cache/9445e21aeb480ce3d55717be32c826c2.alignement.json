@@ -1,0 +1,57 @@
+[
+  {
+    "mot": "L'assistant",
+    "debut": 0,
+    "fin": 0.534
+  },
+  {
+    "mot": "s'ouvre",
+    "debut": 0.569,
+    "fin": 0.824
+  },
+  {
+    "mot": "sur",
+    "debut": 0.848,
+    "fin": 0.964
+  },
+  {
+    "mot": "sa",
+    "debut": 0.998,
+    "fin": 1.08
+  },
+  {
+    "mot": "première",
+    "debut": 1.126,
+    "fin": 1.451
+  },
+  {
+    "mot": "étape",
+    "debut": 1.474,
+    "fin": 1.8
+  },
+  {
+    "mot": ":",
+    "debut": 1.823,
+    "fin": 1.869
+  },
+  {
+    "mot": "la",
+    "debut": 2.078,
+    "fin": 2.171
+  },
+  {
+    "mot": "taille",
+    "debut": 2.229,
+    "fin": 2.45
+  },
+  {
+    "mot": "du",
+    "debut": 2.473,
+    "fin": 2.554
+  },
+  {
+    "mot": "template.",
+    "debut": 2.601,
+    "fin": 3.181
+  }
+]

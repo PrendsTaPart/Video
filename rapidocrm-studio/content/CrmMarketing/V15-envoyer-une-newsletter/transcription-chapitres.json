@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Vous avez une nouvelle à annoncer, et un fichier client. Entre les deux, d'habitude, il y a un outil d'e-mailing. Cette fois, la newsletter part du CRM."
+  },
+  {
+    "timestamp_secondes": 9,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec une newsletter programmée. Qui la reçoit, quand elle part, à quoi elle ressemble : la fenêtre suit cet ordre."
+  },
+  {
+    "timestamp_secondes": 19,
+    "titre": "Ouvrir « Envoyer une newsletter »",
+    "texte": "Panneau Communication, envoyer une newsletter."
+  },
+  {
+    "timestamp_secondes": 23,
+    "titre": "Dire à qui la newsletter part",
+    "texte": "La cible d'abord : entreprises. C'est le premier champ."
+  },
+  {
+    "timestamp_secondes": 26,
+    "titre": "Fixer la date et l'heure d'envoi",
+    "texte": "Puis la date et l'heure. Dix heures trente se lit ; dix-sept heures trente attend le lendemain."
+  },
+  {
+    "timestamp_secondes": 33,
+    "titre": "Choisir le modèle de newsletter",
+    "texte": "Le modèle, avec son aperçu."
+  },
+  {
+    "timestamp_secondes": 35,
+    "titre": "Lire la confirmation",
+    "texte": "Campagne ajoutée avec succès."
+  },
+  {
+    "timestamp_secondes": 38,
+    "titre": "Faites-le avec Claude",
+    "texte": "Une newsletter devient une campagne. Pour retrouver les dernières, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 50,
+    "titre": "À retenir",
+    "texte": "Le fichier est déjà là, la newsletter part de là : un outil de moins à ouvrir."
+  }
+]

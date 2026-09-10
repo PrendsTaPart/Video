@@ -1,0 +1,15 @@
+Deux versions de la même carte, deux mois d'écart. Laquelle renvoyer au client ? La date d'ajout tranche, et le fichier se télécharge d'ici.
+
+On part de la page Historique, et on ressort avec le document en main. Le tableau donne le nom, le type, le poids et la date. Le menu de la ligne télécharge ou supprime.
+
+Deuxième rangée de la page Historique : les documents. Le message de liste vide s'affiche le temps du chargement.
+
+Nom du fichier, type, taille, date d'ajout : une ligne par pièce.
+
+Le menu de la ligne propose les deux.
+
+On annule : rien n'a bougé.
+
+Les documents ne sont qu'une partie de la fiche. Pour la relire d'un coup, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Un document daté, pesé, téléchargeable : la bonne version part du premier coup.

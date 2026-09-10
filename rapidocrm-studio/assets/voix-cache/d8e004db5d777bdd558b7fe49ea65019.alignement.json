@@ -1,0 +1,157 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "part",
+    "debut": 0.186,
+    "fin": 0.337
+  },
+  {
+    "mot": "de",
+    "debut": 0.36,
+    "fin": 0.418
+  },
+  {
+    "mot": "la",
+    "debut": 0.464,
+    "fin": 0.522
+  },
+  {
+    "mot": "fiche",
+    "debut": 0.604,
+    "fin": 0.836
+  },
+  {
+    "mot": "d'une",
+    "debut": 0.859,
+    "fin": 1.01
+  },
+  {
+    "mot": "entreprise,",
+    "debut": 1.033,
+    "fin": 1.718
+  },
+  {
+    "mot": "et",
+    "debut": 1.927,
+    "fin": 2.032
+  },
+  {
+    "mot": "on",
+    "debut": 2.067,
+    "fin": 2.125
+  },
+  {
+    "mot": "ressort",
+    "debut": 2.171,
+    "fin": 2.496
+  },
+  {
+    "mot": "avec",
+    "debut": 2.519,
+    "fin": 2.694
+  },
+  {
+    "mot": "un",
+    "debut": 2.763,
+    "fin": 2.821
+  },
+  {
+    "mot": "rendez-vous",
+    "debut": 2.879,
+    "fin": 3.274
+  },
+  {
+    "mot": "posé.",
+    "debut": 3.297,
+    "fin": 3.704
+  },
+  {
+    "mot": "Un",
+    "debut": 4.087,
+    "fin": 4.214
+  },
+  {
+    "mot": "titre,",
+    "debut": 4.261,
+    "fin": 4.632
+  },
+  {
+    "mot": "un",
+    "debut": 4.748,
+    "fin": 4.865
+  },
+  {
+    "mot": "créneau,",
+    "debut": 4.899,
+    "fin": 5.468
+  },
+  {
+    "mot": "les",
+    "debut": 5.677,
+    "fin": 5.817
+  },
+  {
+    "mot": "invités,",
+    "debut": 5.886,
+    "fin": 6.409
+  },
+  {
+    "mot": "le",
+    "debut": 6.525,
+    "fin": 6.629
+  },
+  {
+    "mot": "type,",
+    "debut": 6.687,
+    "fin": 7.14
+  },
+  {
+    "mot": "le",
+    "debut": 7.349,
+    "fin": 7.442
+  },
+  {
+    "mot": "rappel",
+    "debut": 7.488,
+    "fin": 7.825
+  },
+  {
+    "mot": ":",
+    "debut": 7.941,
+    "fin": 8.011
+  },
+  {
+    "mot": "le",
+    "debut": 8.394,
+    "fin": 8.487
+  },
+  {
+    "mot": "formulaire",
+    "debut": 8.568,
+    "fin": 9.079
+  },
+  {
+    "mot": "descend",
+    "debut": 9.114,
+    "fin": 9.369
+  },
+  {
+    "mot": "dans",
+    "debut": 9.392,
+    "fin": 9.497
+  },
+  {
+    "mot": "cet",
+    "debut": 9.52,
+    "fin": 9.694
+  },
+  {
+    "mot": "ordre.",
+    "debut": 9.776,
+    "fin": 10.031
+  }
+]

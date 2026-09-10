@@ -1,0 +1,95 @@
+{
+  "duree": 26.837,
+  "resolution": [1920, 882],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Liste des descriptions — vide" },
+    { "t": 10.0, "nom": "Modale « Ajouter un fichier »" },
+    { "t": 20.0, "nom": "Liste des descriptions — fichier et description en place" }
+  ],
+  "actions": [
+    {
+      "t": 4.0,
+      "type": "ouverture",
+      "cible": "page « Liste des descriptions » de la stratégie",
+      "zone": { "x": 0.22, "y": 0.05, "w": 0.76, "h": 0.4 },
+      "texte_visible": "Stratégie « relance prospects site vitrine » pour le produit pack site vitrine — ajouter une description · ajouter un fichier"
+    },
+    {
+      "t": 13.0,
+      "type": "saisie",
+      "cible": "champ Nom du fichier de la modale",
+      "zone": { "x": 0.36, "y": 0.25, "w": 0.28, "h": 0.14 },
+      "texte_visible": "Ajouter un fichier — Nom du fichier"
+    },
+    {
+      "t": 16.0,
+      "type": "selection",
+      "cible": "zone Importer un fichier, bouton parcourir",
+      "zone": { "x": 0.36, "y": 0.42, "w": 0.28, "h": 0.35 },
+      "texte_visible": "Importer un fichier — parcourir"
+    },
+    {
+      "t": 19.0,
+      "type": "validation",
+      "cible": "bouton valider de la modale",
+      "zone": { "x": 0.5, "y": 0.78, "w": 0.12, "h": 0.1 },
+      "texte_visible": "annuler · valider"
+    },
+    {
+      "t": 24.0,
+      "type": "ouverture",
+      "cible": "vignette du fichier et bloc de description",
+      "zone": { "x": 0.23, "y": 0.4, "w": 0.74, "h": 0.55 },
+      "texte_visible": "PDF — Brief commer… · bloc de description avec ses boutons modifier et supprimer"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir les descriptions de la stratégie",
+      "debut": 0,
+      "fin": 10.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.2, "y": 0.02, "w": 0.8, "h": 0.6 }
+    },
+    {
+      "numero": 2,
+      "titre": "Nommer le fichier",
+      "debut": 10.0,
+      "fin": 15.0,
+      "actions": [1],
+      "zone_focus": { "x": 0.33, "y": 0.1, "w": 0.34, "h": 0.5 }
+    },
+    {
+      "numero": 3,
+      "titre": "Importer le fichier",
+      "debut": 15.0,
+      "fin": 20.0,
+      "actions": [2, 3],
+      "zone_focus": { "x": 0.33, "y": 0.35, "w": 0.34, "h": 0.6 }
+    },
+    {
+      "numero": 4,
+      "titre": "Relire ce qui est attaché",
+      "debut": 20.0,
+      "fin": 26.837,
+      "actions": [4],
+      "zone_focus": { "x": 0.21, "y": 0.3, "w": 0.78, "h": 0.68 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 26.837,
+      "zone": { "x": 0.7, "y": 0.02, "w": 0.3, "h": 0.14 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    },
+    {
+      "t": 20.0,
+      "fin": 26.837,
+      "zone": { "x": 0.29, "y": 0.4, "w": 0.06, "h": 0.12 },
+      "raison": "Avatar de l'utilisatrice réelle posé sur la vignette du fichier"
+    }
+  ]
+}

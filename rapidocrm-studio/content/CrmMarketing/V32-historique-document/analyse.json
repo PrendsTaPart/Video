@@ -1,0 +1,118 @@
+{
+  "duree": 19.17,
+  "resolution": [1920, 1020],
+  "fps": 60,
+  "ecrans": [
+    { "t": 0.0, "nom": "Page Historique — les journaux" },
+    { "t": 4.5, "nom": "Historique des documents — chargement" },
+    { "t": 8.5, "nom": "Liste vide, le temps du chargement" },
+    { "t": 12.0, "nom": "Historique des documents — le tableau" },
+    { "t": 15.17, "nom": "Confirmation de suppression" },
+    { "t": 17.5, "nom": "Retour au tableau" }
+  ],
+  "actions": [
+    {
+      "t": 2.5,
+      "type": "clic",
+      "cible": "Bouton Consulter de la carte « Historique des documents »",
+      "zone": { "x": 0.55, "y": 0.73, "w": 0.11, "h": 0.1 },
+      "texte_visible": "Historique des documents · Consulter"
+    },
+    {
+      "t": 5.5,
+      "type": "ouverture",
+      "cible": "Page Historique des documents",
+      "zone": { "x": 0.23, "y": 0.15, "w": 0.75, "h": 0.3 },
+      "texte_visible": "Historique des d…"
+    },
+    {
+      "t": 10.0,
+      "type": "ouverture",
+      "cible": "Message de liste vide",
+      "zone": { "x": 0.23, "y": 0.55, "w": 0.75, "h": 0.25 },
+      "texte_visible": "Il n'y a actuellement aucune donnée à afficher · Votre liste de documents ne contient encore aucun document, veuillez ajouter des documents pour pouvoir commencer."
+    },
+    {
+      "t": 13.0,
+      "type": "ouverture",
+      "cible": "Tableau des documents",
+      "zone": { "x": 0.23, "y": 0.4, "w": 0.75, "h": 0.35 },
+      "texte_visible": "Entreprise · Nom du fichier · Type · Taille · Date d'ajout · Action · fiche allergènes.PDF · application/PDF · 240 b · 22/08/2026 · carte des pains.PDF · 08/08/2026"
+    },
+    {
+      "t": 14.5,
+      "type": "clic",
+      "cible": "Menu à trois points d'une ligne",
+      "zone": { "x": 0.74, "y": 0.55, "w": 0.14, "h": 0.15 },
+      "texte_visible": "Télécharger · Supprimer"
+    },
+    {
+      "t": 16.4,
+      "type": "ouverture",
+      "cible": "Boîte de dialogue de confirmation du navigateur",
+      "zone": { "x": 0.31, "y": 0.11, "w": 0.37, "h": 0.22 },
+      "texte_visible": "127.0.0.1:8000 indique · Are you sure you want to delete this file? · OK · Annuler"
+    },
+    {
+      "t": 18.5,
+      "type": "ouverture",
+      "cible": "Retour au tableau, les deux documents sont toujours là",
+      "zone": { "x": 0.23, "y": 0.4, "w": 0.75, "h": 0.35 },
+      "texte_visible": "fiche allergènes.PDF · carte des pains.PDF"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir l'historique des documents",
+      "debut": 1.0,
+      "fin": 8.5,
+      "actions": [0, 1],
+      "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.6 }
+    },
+    {
+      "numero": 2,
+      "titre": "Lire le tableau des documents",
+      "debut": 8.5,
+      "fin": 14.0,
+      "actions": [2, 3],
+      "zone_focus": { "x": 0.23, "y": 0.35, "w": 0.75, "h": 0.45 }
+    },
+    {
+      "numero": 3,
+      "titre": "Télécharger ou supprimer un document",
+      "debut": 14.0,
+      "fin": 17.5,
+      "actions": [4, 5],
+      "zone_focus": { "x": 0.28, "y": 0.1, "w": 0.65, "h": 0.65 }
+    },
+    {
+      "numero": 4,
+      "titre": "Annuler et revenir à la liste",
+      "debut": 17.5,
+      "fin": 19.17,
+      "actions": [6],
+      "zone_focus": { "x": 0.23, "y": 0.35, "w": 0.75, "h": 0.45 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 19.17,
+      "zone": { "x": 0.0, "y": 0.0, "w": 1.0, "h": 0.15 },
+      "raison": "Fenêtre du navigateur : onglets, adresse locale 127.0.0.1:8000, extensions et bouton « Demander à Gemini »."
+    },
+    {
+      "t": 0.0,
+      "fin": 19.17,
+      "zone": { "x": 0.79, "y": 0.14, "w": 0.21, "h": 0.13 },
+      "raison": "Photo et nom du titulaire du compte (Dupont lina)."
+    },
+    {
+      "t": 15.0,
+      "fin": 17.6,
+      "zone": { "x": 0.31, "y": 0.11, "w": 0.37, "h": 0.1 },
+      "raison": "En-tête de la boîte de dialogue du navigateur : l'adresse locale 127.0.0.1:8000 y est répétée."
+    }
+  ]
+}

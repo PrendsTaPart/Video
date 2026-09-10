@@ -1,0 +1,57 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Le compte est créé. Le mail d'activation, lui, n'est jamais arrivé. Votre commercial se donne un mot de passe en une minute."
+  },
+  {
+    "timestamp_secondes": 8,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la page de connexion, et on ressort dans le tableau de bord du commercial. La procédure est la même dans deux cas : le mot de passe oublié, et le compte tout neuf dont le mail d'activation n'a pas pu partir. Le principe ne change pas : l'utilisateur demande un lien, le reçoit sur sa boîte, choisit son mot de passe. L'administrateur crée le compte, l'utilisateur choisit son mot de passe — les deux rôles restent séparés."
+  },
+  {
+    "timestamp_secondes": 33,
+    "titre": "Partir de la fiche du commercial",
+    "texte": "Le commercial existe dans la liste. Il lui manque juste son mot de passe."
+  },
+  {
+    "timestamp_secondes": 37,
+    "titre": "Ouvrir « Mot de passe oublié »",
+    "texte": "Sur la page de connexion, le lien mot de passe oublié, sous le champ."
+  },
+  {
+    "timestamp_secondes": 41,
+    "titre": "Demander le lien",
+    "texte": "On saisit l'adresse du compte, et on envoie le lien de réinitialisation."
+  },
+  {
+    "timestamp_secondes": 45,
+    "titre": "Ouvrir le mail reçu",
+    "texte": "Le mail arrive dans la boîte : réinitialisation de votre mot de passe."
+  },
+  {
+    "timestamp_secondes": 49,
+    "titre": "Choisir le nouveau mot de passe",
+    "texte": "Le lien ouvre la page de réinitialisation. Deux champs identiques, et on définit le nouveau mot de passe. Ce lien ne vaut que pour cette demande."
+  },
+  {
+    "timestamp_secondes": 58,
+    "titre": "Se connecter",
+    "texte": "Retour à la connexion, avec le bandeau qui confirme : votre mot de passe a été modifié. S'il n'apparaît pas, le changement n'est pas passé. On saisit l'adresse et le nouveau mot de passe."
+  },
+  {
+    "timestamp_secondes": 70,
+    "titre": "Arriver sur son tableau de bord",
+    "texte": "Et il est chez lui, sur son propre tableau de bord."
+  },
+  {
+    "timestamp_secondes": 73,
+    "titre": "Faites-le avec Claude",
+    "texte": "L'accès est ouvert. Pour vérifier qui a bien un compte actif sans ouvrir chaque fiche, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 91,
+    "titre": "À retenir",
+    "texte": "Un lien, un mot de passe, et votre commercial travaille."
+  }
+]

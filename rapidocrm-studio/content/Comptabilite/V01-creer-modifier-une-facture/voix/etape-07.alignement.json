@@ -1,0 +1,67 @@
+[
+  {
+    "mot": "Une",
+    "debut": 0,
+    "fin": 0.232
+  },
+  {
+    "mot": "erreur",
+    "debut": 0.255,
+    "fin": 0.453
+  },
+  {
+    "mot": "de",
+    "debut": 0.511,
+    "fin": 0.569
+  },
+  {
+    "mot": "produit",
+    "debut": 0.615,
+    "fin": 1.022
+  },
+  {
+    "mot": "?",
+    "debut": 1.045,
+    "fin": 1.103
+  },
+  {
+    "mot": "La",
+    "debut": 1.614,
+    "fin": 1.73
+  },
+  {
+    "mot": "fiche",
+    "debut": 1.788,
+    "fin": 2.032
+  },
+  {
+    "mot": "se",
+    "debut": 2.067,
+    "fin": 2.148
+  },
+  {
+    "mot": "rouvre",
+    "debut": 2.183,
+    "fin": 2.496
+  },
+  {
+    "mot": "telle",
+    "debut": 2.543,
+    "fin": 2.752
+  },
+  {
+    "mot": "quelle,",
+    "debut": 2.775,
+    "fin": 3.007
+  },
+  {
+    "mot": "on",
+    "debut": 3.03,
+    "fin": 3.111
+  },
+  {
+    "mot": "corrige.",
+    "debut": 3.17,
+    "fin": 3.611
+  }
+]

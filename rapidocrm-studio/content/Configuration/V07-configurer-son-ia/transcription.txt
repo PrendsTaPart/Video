@@ -1,0 +1,17 @@
+Votre agent tourne sur la clé de tout le monde. La vôtre dort dans un coin. Un champ, et l'agent travaille sur votre compte.
+
+On part de la section Agent ia de votre page Profil, et on ressort avec votre propre clé d'API branchée. Par défaut, l'agent de RapidoCRM tourne sur la clé du serveur, celle que tout le monde partage. En collant la vôtre, il consomme votre compte chez votre fournisseur — anthropic, openai, gemini ou openrouter — et vous voyez exactement ce qu'il dépense. Le champ laissé vide ne coupe rien : l'agent repart simplement sur la clé du serveur, qui fonctionne.
+
+Page Profil, section Agent ia. Une clé personnelle pour votre agent.
+
+La page empile vos connexions : l'IBAN, la boîte mail, Stripe et Twilio.
+
+Le champ attend une clé anthropic, openai, gemini ou openrouter. On colle la sienne.
+
+Un clic sur enregistrer.
+
+Videz-le, et l'agent ne s'arrête pas : il repart sur la clé globale du serveur. C'est écrit sous le champ.
+
+Votre clé est en place. Pour vérifier l'état de votre agent sans rouvrir la page, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et lancez-le tel quel — il n'y a rien à remplacer.
+
+Votre clé, votre compte, votre agent. Et le filet du serveur si vous la retirez.

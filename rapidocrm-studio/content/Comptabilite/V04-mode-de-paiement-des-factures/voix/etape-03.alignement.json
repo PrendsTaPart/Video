@@ -1,0 +1,47 @@
+[
+  {
+    "mot": "En",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "dessous,",
+    "debut": 0.174,
+    "fin": 0.534
+  },
+  {
+    "mot": "le",
+    "debut": 0.592,
+    "fin": 0.673
+  },
+  {
+    "mot": "total",
+    "debut": 0.731,
+    "fin": 1.01
+  },
+  {
+    "mot": "à",
+    "debut": 1.045,
+    "fin": 1.068
+  },
+  {
+    "mot": "retrouver",
+    "debut": 1.091,
+    "fin": 1.416
+  },
+  {
+    "mot": "sur",
+    "debut": 1.451,
+    "fin": 1.602
+  },
+  {
+    "mot": "le",
+    "debut": 1.637,
+    "fin": 1.695
+  },
+  {
+    "mot": "relevé.",
+    "debut": 1.741,
+    "fin": 2.148
+  }
+]

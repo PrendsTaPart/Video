@@ -1,0 +1,152 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "part",
+    "debut": 0.209,
+    "fin": 0.383
+  },
+  {
+    "mot": "de",
+    "debut": 0.406,
+    "fin": 0.476
+  },
+  {
+    "mot": "la",
+    "debut": 0.522,
+    "fin": 0.592
+  },
+  {
+    "mot": "fiche",
+    "debut": 0.662,
+    "fin": 0.906
+  },
+  {
+    "mot": "d'une",
+    "debut": 0.94,
+    "fin": 1.115
+  },
+  {
+    "mot": "entreprise,",
+    "debut": 1.138,
+    "fin": 1.823
+  },
+  {
+    "mot": "et",
+    "debut": 1.858,
+    "fin": 1.939
+  },
+  {
+    "mot": "on",
+    "debut": 1.974,
+    "fin": 2.032
+  },
+  {
+    "mot": "ressort",
+    "debut": 2.101,
+    "fin": 2.682
+  },
+  {
+    "mot": "avec",
+    "debut": 2.856,
+    "fin": 3.135
+  },
+  {
+    "mot": "une",
+    "debut": 3.193,
+    "fin": 3.32
+  },
+  {
+    "mot": "newsletter",
+    "debut": 3.367,
+    "fin": 3.843
+  },
+  {
+    "mot": "programmée.",
+    "debut": 3.901,
+    "fin": 4.458
+  },
+  {
+    "mot": "Qui",
+    "debut": 4.702,
+    "fin": 4.853
+  },
+  {
+    "mot": "la",
+    "debut": 4.911,
+    "fin": 4.969
+  },
+  {
+    "mot": "reçoit,",
+    "debut": 5.016,
+    "fin": 5.48
+  },
+  {
+    "mot": "quand",
+    "debut": 5.55,
+    "fin": 5.735
+  },
+  {
+    "mot": "elle",
+    "debut": 5.805,
+    "fin": 5.909
+  },
+  {
+    "mot": "part,",
+    "debut": 5.956,
+    "fin": 6.316
+  },
+  {
+    "mot": "à",
+    "debut": 6.467,
+    "fin": 6.525
+  },
+  {
+    "mot": "quoi",
+    "debut": 6.641,
+    "fin": 6.792
+  },
+  {
+    "mot": "elle",
+    "debut": 6.815,
+    "fin": 6.908
+  },
+  {
+    "mot": "ressemble",
+    "debut": 6.954,
+    "fin": 7.419
+  },
+  {
+    "mot": ":",
+    "debut": 7.5,
+    "fin": 7.581
+  },
+  {
+    "mot": "la",
+    "debut": 7.86,
+    "fin": 7.953
+  },
+  {
+    "mot": "fenêtre",
+    "debut": 8.034,
+    "fin": 8.475
+  },
+  {
+    "mot": "suit",
+    "debut": 8.533,
+    "fin": 8.754
+  },
+  {
+    "mot": "cet",
+    "debut": 8.777,
+    "fin": 8.951
+  },
+  {
+    "mot": "ordre.",
+    "debut": 9.079,
+    "fin": 9.358
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "mot": "La",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "colonne",
+    "debut": 0.209,
+    "fin": 0.522
+  },
+  {
+    "mot": "Statut.",
+    "debut": 0.546,
+    "fin": 1.045
+  },
+  {
+    "mot": "Rouge",
+    "debut": 1.138,
+    "fin": 1.416
+  },
+  {
+    "mot": "pour",
+    "debut": 1.451,
+    "fin": 1.591
+  },
+  {
+    "mot": "en",
+    "debut": 1.614,
+    "fin": 1.672
+  },
+  {
+    "mot": "attente,",
+    "debut": 1.741,
+    "fin": 2.125
+  },
+  {
+    "mot": "vert",
+    "debut": 2.241,
+    "fin": 2.45
+  },
+  {
+    "mot": "pour",
+    "debut": 2.473,
+    "fin": 2.589
+  },
+  {
+    "mot": "payée.",
+    "debut": 2.635,
+    "fin": 3.053
+  },
+  {
+    "mot": "Ici,",
+    "debut": 3.228,
+    "fin": 3.785
+  },
+  {
+    "mot": "la",
+    "debut": 4.029,
+    "fin": 4.122
+  },
+  {
+    "mot": "première",
+    "debut": 4.18,
+    "fin": 4.458
+  },
+  {
+    "mot": "facture",
+    "debut": 4.481,
+    "fin": 4.818
+  },
+  {
+    "mot": "n'est",
+    "debut": 4.841,
+    "fin": 4.957
+  },
+  {
+    "mot": "pas",
+    "debut": 5.004,
+    "fin": 5.143
+  },
+  {
+    "mot": "réglée.",
+    "debut": 5.178,
+    "fin": 5.561
+  }
+]

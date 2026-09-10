@@ -1,0 +1,50 @@
+{
+  "outils": [
+    {
+      "nom": "list_templates_sms",
+      "description": "Lister les templates SMS disponibles.",
+      "parametres": [
+        {
+          "nom": "search",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche par nom du template SMS"
+        },
+        {
+          "nom": "limit",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre max de résultats"
+        }
+      ]
+    },
+    {
+      "nom": "list_templates_email",
+      "description": "Lister les templates email disponibles pour campagnes et workflows.",
+      "parametres": [
+        {
+          "nom": "search",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche par nom du template"
+        },
+        {
+          "nom": "limit",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre max de résultats"
+        }
+      ]
+    }
+  ],
+  "divergences": [
+    "Divergence : « Liste déroulante « Envoyé à » » (9.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Modèle de template SMS « Création de devis » » (12.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Champ Date et heure d'envoi » (15.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Correction de l'heure d'envoi » (19.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

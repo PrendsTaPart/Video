@@ -1,0 +1,114 @@
+{
+  "duree": 22.4,
+  "resolution": [1920, 882],
+  "fps": 25,
+  "ecrans": [
+    { "t": 0.0, "nom": "Contrat — statistiques et historique des contrats" },
+    { "t": 9.24, "nom": "Lecteur PDF — le contrat généré, 4 pages" },
+    { "t": 20.56, "nom": "Contrat — retour à l'historique" }
+  ],
+  "actions": [
+    {
+      "t": 1.5,
+      "type": "ouverture",
+      "cible": "Bandeau Statistiques de la page Contrat",
+      "zone": { "x": 0.22, "y": 0.10, "w": 0.76, "h": 0.30 },
+      "texte_visible": "Statistiques · Total de contrats créés 1 · Total de contrats signés 0 · Total de contrats en attente 1"
+    },
+    {
+      "t": 3.0,
+      "type": "ouverture",
+      "cible": "Barre de recherche et filtres de l'historique",
+      "zone": { "x": 0.22, "y": 0.40, "w": 0.76, "h": 0.25 },
+      "texte_visible": "Chercher un fichier · voir la liste des templates de contrats · Statut · Entreprise · jj/mm/aaaa · appliquer · annuler"
+    },
+    {
+      "t": 5.0,
+      "type": "ouverture",
+      "cible": "Tableau de l'historique des contrats",
+      "zone": { "x": 0.23, "y": 0.68, "w": 0.75, "h": 0.28 },
+      "texte_visible": "Nom · Entreprise · Date de création · Statut · Action · contrat de prestation de services · En attente"
+    },
+    {
+      "t": 9.24,
+      "type": "ouverture",
+      "cible": "Le contrat généré s'ouvre dans le lecteur PDF",
+      "zone": { "x": 0.02, "y": 0.02, "w": 0.96, "h": 0.96 },
+      "texte_visible": "Contrat · 2 / 4 · 100 %"
+    },
+    {
+      "t": 16.0,
+      "type": "defilement",
+      "cible": "Dernière page du contrat, blocs de signature",
+      "zone": { "x": 0.30, "y": 0.08, "w": 0.60, "h": 0.85 },
+      "texte_visible": "Article 6 — Confidentialité · Article 7 — Résiliation · Loi applicable et juridiction compétente · Le Prestataire Signature : · Le Client Signature :"
+    },
+    {
+      "t": 21.5,
+      "type": "ouverture",
+      "cible": "Retour à l'historique des contrats",
+      "zone": { "x": 0.23, "y": 0.68, "w": 0.75, "h": 0.28 },
+      "texte_visible": "Nom · Entreprise · Date de création · Statut · Action · En attente"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Lire les trois compteurs de contrats",
+      "debut": 0.5,
+      "fin": 4.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.22, "y": 0.10, "w": 0.76, "h": 0.30 }
+    },
+    {
+      "numero": 2,
+      "titre": "Retrouver un contrat dans l'historique",
+      "debut": 4.0,
+      "fin": 6.5,
+      "actions": [1, 2],
+      "zone_focus": { "x": 0.22, "y": 0.40, "w": 0.76, "h": 0.56 }
+    },
+    {
+      "numero": 3,
+      "titre": "Ouvrir le contrat généré",
+      "debut": 9.5,
+      "fin": 17.5,
+      "actions": [3, 4],
+      "zone_focus": { "x": 0.02, "y": 0.02, "w": 0.96, "h": 0.96 }
+    },
+    {
+      "numero": 4,
+      "titre": "Revenir à la liste",
+      "debut": 20.2,
+      "fin": 22.4,
+      "actions": [5],
+      "zone_focus": { "x": 0.23, "y": 0.68, "w": 0.75, "h": 0.28 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 6.5,
+      "zone": { "x": 0.685, "y": 0.02, "w": 0.31, "h": 0.115 },
+      "raison": "Nom et photo du titulaire du compte (Dupont lina) et solde de crédits affiché dans la barre du haut"
+    },
+    {
+      "t": 20.2,
+      "fin": 22.4,
+      "zone": { "x": 0.685, "y": 0.02, "w": 0.31, "h": 0.115 },
+      "raison": "Nom et photo du titulaire du compte et solde de crédits, au retour sur l'historique"
+    },
+    {
+      "t": 0.0,
+      "fin": 6.5,
+      "zone": { "x": 0.43, "y": 0.75, "w": 0.19, "h": 0.13 },
+      "raison": "Raison sociale du client rattaché au contrat, dans la colonne Entreprise de l'historique"
+    },
+    {
+      "t": 20.2,
+      "fin": 22.4,
+      "zone": { "x": 0.43, "y": 0.75, "w": 0.19, "h": 0.13 },
+      "raison": "Raison sociale du client rattaché au contrat, au retour sur l'historique"
+    }
+  ]
+}

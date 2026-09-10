@@ -1,0 +1,11 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_youtube",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-mode-de-paiement-des-devis",
+    "youtube_url": "https://www.youtube.com/watch?v=TRHFe2fP7sI"
+  },
+  "demande_le": "2026-09-05T17:16:50.208Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

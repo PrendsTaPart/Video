@@ -1,0 +1,137 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "tarif",
+    "debut": 0.221,
+    "fin": 0.464
+  },
+  {
+    "mot": "du",
+    "debut": 0.511,
+    "fin": 0.604
+  },
+  {
+    "mot": "client",
+    "debut": 0.639,
+    "fin": 0.952
+  },
+  {
+    "mot": "est",
+    "debut": 1.01,
+    "fin": 1.091
+  },
+  {
+    "mot": "dans",
+    "debut": 1.115,
+    "fin": 1.265
+  },
+  {
+    "mot": "un",
+    "debut": 1.335,
+    "fin": 1.382
+  },
+  {
+    "mot": "mail",
+    "debut": 1.416,
+    "fin": 1.579
+  },
+  {
+    "mot": "de",
+    "debut": 1.649,
+    "fin": 1.718
+  },
+  {
+    "mot": "mars.",
+    "debut": 1.776,
+    "fin": 2.276
+  },
+  {
+    "mot": "Ou",
+    "debut": 2.554,
+    "fin": 2.694
+  },
+  {
+    "mot": "dans",
+    "debut": 2.74,
+    "fin": 2.879
+  },
+  {
+    "mot": "un",
+    "debut": 2.937,
+    "fin": 2.984
+  },
+  {
+    "mot": "dossier",
+    "debut": 3.019,
+    "fin": 3.297
+  },
+  {
+    "mot": "partagé.",
+    "debut": 3.332,
+    "fin": 3.982
+  },
+  {
+    "mot": "Ou",
+    "debut": 4.191,
+    "fin": 4.307
+  },
+  {
+    "mot": "sur",
+    "debut": 4.365,
+    "fin": 4.481
+  },
+  {
+    "mot": "le",
+    "debut": 4.505,
+    "fin": 4.551
+  },
+  {
+    "mot": "bureau",
+    "debut": 4.598,
+    "fin": 4.795
+  },
+  {
+    "mot": "de",
+    "debut": 4.83,
+    "fin": 4.876
+  },
+  {
+    "mot": "quelqu'un.",
+    "debut": 4.899,
+    "fin": 5.352
+  },
+  {
+    "mot": "Il",
+    "debut": 5.596,
+    "fin": 5.712
+  },
+  {
+    "mot": "peut",
+    "debut": 5.77,
+    "fin": 5.886
+  },
+  {
+    "mot": "être",
+    "debut": 5.968,
+    "fin": 6.06
+  },
+  {
+    "mot": "sur",
+    "debut": 6.095,
+    "fin": 6.211
+  },
+  {
+    "mot": "sa",
+    "debut": 6.258,
+    "fin": 6.351
+  },
+  {
+    "mot": "fiche.",
+    "debut": 6.42,
+    "fin": 6.838
+  }
+]

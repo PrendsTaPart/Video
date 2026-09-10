@@ -1,0 +1,27 @@
+[
+  {
+    "mot": "Panneau",
+    "debut": 0,
+    "fin": 0.337
+  },
+  {
+    "mot": "Communication,",
+    "debut": 0.383,
+    "fin": 1.057
+  },
+  {
+    "mot": "prendre",
+    "debut": 1.115,
+    "fin": 1.451
+  },
+  {
+    "mot": "un",
+    "debut": 1.474,
+    "fin": 1.521
+  },
+  {
+    "mot": "rendez-vous.",
+    "debut": 1.544,
+    "fin": 2.009
+  }
+]

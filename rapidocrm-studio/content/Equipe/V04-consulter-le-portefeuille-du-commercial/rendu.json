@@ -1,0 +1,80 @@
+{
+  "duree": 93.36666666666666,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Equipe/V04-consulter-le-portefeuille-du-commercial/out/master-16x9.mp4",
+      "octets": 9035949
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Equipe/V04-consulter-le-portefeuille-du-commercial/out/master-9x16.mp4",
+      "octets": 8358687
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 8.1
+    },
+    {
+      "nom": "titre",
+      "debut": 8.1,
+      "fin": 56.166666666666664
+    },
+    {
+      "nom": "demo",
+      "debut": 56.166666666666664,
+      "fin": 72.73333333333333
+    },
+    {
+      "nom": "claude",
+      "debut": 72.73333333333333,
+      "fin": 90.3
+    },
+    {
+      "nom": "punchline",
+      "debut": 90.3,
+      "fin": 93.36666666666666
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Combien de clients suit vraiment votre commercial ? Vous ne le savez pas."
+    },
+    {
+      "timecode": "00:08",
+      "titre": "Consulter le portefeuille d'un commercial"
+    },
+    {
+      "timecode": "00:56",
+      "titre": "Ouvrir la fiche du commercial"
+    },
+    {
+      "timecode": "00:58",
+      "titre": "Ouvrir ses paramètres"
+    },
+    {
+      "timecode": "01:02",
+      "titre": "Laisser la liste se charger"
+    },
+    {
+      "timecode": "01:05",
+      "titre": "Lire la liste filtrée"
+    },
+    {
+      "timecode": "01:12",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:30",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

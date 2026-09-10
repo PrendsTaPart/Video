@@ -1,0 +1,15 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "configurer_agent_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-envoyer-une-newsletter",
+    "agent_instructions": "Tu accompagnes un utilisateur sur « Envoyer une newsletter » (module 06-crm-marketing).\nÀ quoi ça sert : Adresser la même lettre d'information à toutes ses entreprises clientes, à la date choisie, sans repasser par un outil d'e-mailing. Le logiciel en fait une campagne et confirme qu'elle est enregistrée.\nPour qui : Gérant ou responsable marketing qui anime son fichier clients\n\nÉtapes du tutoriel :\n- 1. Ouvrir « Envoyer une newsletter »\n- 2. Dire à qui la newsletter part\n- 3. Fixer la date et l'heure d'envoi\n- 4. Choisir le modèle de newsletter\n- 5. Lire la confirmation\n\nErreurs fréquentes à rappeler :\n- Choisir le modèle sans avoir renseigné la cible : la fenêtre commence par « Envoyé à », pas par la galerie.\n- Croire que l'envoi est parti : le bandeau dit « Campagne ajoutée avec succès », c'est-à-dire programmée.\n\nVouvoie, phrases courtes, zéro jargon non expliqué. N'affirme rien sur RapidoCRM qui ne figure pas dans ce tutoriel ou dans les outils autorisés.",
+    "agent_outils_mcp": [
+      "list_newsletters",
+      "list_campagnes"
+    ]
+  },
+  "demande_le": "2026-09-06T14:12:58.770Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

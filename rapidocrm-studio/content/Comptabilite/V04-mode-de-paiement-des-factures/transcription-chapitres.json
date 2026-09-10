@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Un virement tombe sur le compte. Trois semaines plus tard, vous cherchez encore à quelle facture il correspond. Un champ coché le jour même, et le rapprochement se fait tout seul."
+  },
+  {
+    "timestamp_secondes": 10,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la liste des factures, et on ressort avec un règlement noté. Le moyen de paiement se choisit dans la facture, sous le statut : espèces, carte, virement ou chèque. Un seul à la fois. Juste en dessous, le total à retrouver sur votre relevé de banque."
+  },
+  {
+    "timestamp_secondes": 26,
+    "titre": "Ouvrir la facture réglée",
+    "texte": "Depuis la liste, les trois points en fin de ligne ouvrent la facture."
+  },
+  {
+    "timestamp_secondes": 30,
+    "titre": "Choisir le moyen",
+    "texte": "Quatre moyens, un seul coché. Ici, virement."
+  },
+  {
+    "timestamp_secondes": 34,
+    "titre": "Contrôler le montant",
+    "texte": "En dessous, le total à retrouver sur le relevé."
+  },
+  {
+    "timestamp_secondes": 38,
+    "titre": "Enregistrer",
+    "texte": "On enregistre, et c'est écrit."
+  },
+  {
+    "timestamp_secondes": 40,
+    "titre": "Faites-le avec Claude",
+    "texte": "Le règlement est noté. Pour rouvrir une facture précise sans la chercher, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez le numéro entre crochets."
+  },
+  {
+    "timestamp_secondes": 55,
+    "titre": "À retenir",
+    "texte": "Un moyen de paiement noté, c'est un rapprochement en moins à faire."
+  }
+]

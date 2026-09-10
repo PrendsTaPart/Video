@@ -1,0 +1,122 @@
+{
+  "duree": 15.83,
+  "resolution": [1920, 1020],
+  "fps": 60,
+  "ecrans": [
+    { "t": 0.0, "nom": "Page Historique — les journaux" },
+    { "t": 4.0, "nom": "Historique des emails — chargement" },
+    { "t": 7.0, "nom": "Historique des emails — le tableau" },
+    { "t": 10.0, "nom": "Modale « Mail » — un e-mail envoyé" },
+    { "t": 15.0, "nom": "Retour au tableau" }
+  ],
+  "actions": [
+    {
+      "t": 2.0,
+      "type": "clic",
+      "cible": "Bouton Consulter de la carte « Historique des emails »",
+      "zone": { "x": 0.29, "y": 0.62, "w": 0.11, "h": 0.1 },
+      "texte_visible": "Historique des emails · Consulter"
+    },
+    {
+      "t": 5.0,
+      "type": "ouverture",
+      "cible": "Page Historique des emails",
+      "zone": { "x": 0.23, "y": 0.15, "w": 0.75, "h": 0.3 },
+      "texte_visible": "Historique des e…"
+    },
+    {
+      "t": 8.0,
+      "type": "ouverture",
+      "cible": "Tableau des e-mails envoyés",
+      "zone": { "x": 0.23, "y": 0.32, "w": 0.75, "h": 0.5 },
+      "texte_visible": "Chercher… · Envoyer un email · Entreprise · Nom · Fonction · Date · Action · La baguetterie · commercial · 16/08/2026 · 10/08/2026"
+    },
+    {
+      "t": 10.0,
+      "type": "clic",
+      "cible": "Icône œil de la colonne Action",
+      "zone": { "x": 0.83, "y": 0.51, "w": 0.05, "h": 0.09 },
+      "texte_visible": ""
+    },
+    {
+      "t": 13.0,
+      "type": "ouverture",
+      "cible": "Modale Mail",
+      "zone": { "x": 0.35, "y": 0.14, "w": 0.29, "h": 0.85 },
+      "texte_visible": "Mail · Objet : Devis carte digitale et allergènes · De : · A : · Contenu : · Veuillez trouver ci-joint le devis pour la carte digitale (pains, viennoiseries, allergènes). · Cordialement, agence horizon · Supprimer"
+    },
+    {
+      "t": 15.3,
+      "type": "ouverture",
+      "cible": "Retour au tableau",
+      "zone": { "x": 0.23, "y": 0.32, "w": 0.75, "h": 0.5 },
+      "texte_visible": "Entreprise · Nom · Fonction · Date · Action"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir l'historique des e-mails",
+      "debut": 0.5,
+      "fin": 7.0,
+      "actions": [0, 1],
+      "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.5 }
+    },
+    {
+      "numero": 2,
+      "titre": "Lire le tableau des envois",
+      "debut": 7.0,
+      "fin": 10.0,
+      "actions": [2],
+      "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.55 }
+    },
+    {
+      "numero": 3,
+      "titre": "Rouvrir un e-mail envoyé",
+      "debut": 10.0,
+      "fin": 15.0,
+      "actions": [3, 4],
+      "zone_focus": { "x": 0.34, "y": 0.14, "w": 0.31, "h": 0.85 }
+    },
+    {
+      "numero": 4,
+      "titre": "Revenir à la liste",
+      "debut": 15.0,
+      "fin": 15.83,
+      "actions": [5],
+      "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.5 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 15.83,
+      "zone": { "x": 0.0, "y": 0.0, "w": 1.0, "h": 0.15 },
+      "raison": "Fenêtre du navigateur : onglets, adresse locale 127.0.0.1:8000, extensions et bouton « Demander à Gemini »."
+    },
+    {
+      "t": 0.0,
+      "fin": 15.83,
+      "zone": { "x": 0.79, "y": 0.14, "w": 0.21, "h": 0.13 },
+      "raison": "Photo et nom du titulaire du compte (Dupont lina)."
+    },
+    {
+      "t": 6.5,
+      "fin": 15.83,
+      "zone": { "x": 0.41, "y": 0.46, "w": 0.17, "h": 0.3 },
+      "raison": "Colonne Nom du tableau : nom réel de l'expéditrice sur chaque ligne."
+    },
+    {
+      "t": 10.0,
+      "fin": 15.5,
+      "zone": { "x": 0.35, "y": 0.33, "w": 0.3, "h": 0.2 },
+      "raison": "En-tête de l'e-mail : expéditrice avec sa photo, et adresse du destinataire."
+    },
+    {
+      "t": 10.0,
+      "fin": 15.5,
+      "zone": { "x": 0.35, "y": 0.55, "w": 0.3, "h": 0.07 },
+      "raison": "Première ligne du corps : prénom du destinataire."
+    }
+  ]
+}

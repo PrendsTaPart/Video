@@ -1,0 +1,177 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.197
+  },
+  {
+    "mot": "part",
+    "debut": 0.232,
+    "fin": 0.395
+  },
+  {
+    "mot": "de",
+    "debut": 0.418,
+    "fin": 0.476
+  },
+  {
+    "mot": "la",
+    "debut": 0.511,
+    "fin": 0.569
+  },
+  {
+    "mot": "page",
+    "debut": 0.627,
+    "fin": 0.882
+  },
+  {
+    "mot": "Historique,",
+    "debut": 0.906,
+    "fin": 1.591
+  },
+  {
+    "mot": "et",
+    "debut": 1.765,
+    "fin": 1.869
+  },
+  {
+    "mot": "on",
+    "debut": 1.916,
+    "fin": 1.962
+  },
+  {
+    "mot": "ressort",
+    "debut": 2.009,
+    "fin": 2.438
+  },
+  {
+    "mot": "avec",
+    "debut": 2.485,
+    "fin": 2.763
+  },
+  {
+    "mot": "le",
+    "debut": 2.81,
+    "fin": 2.856
+  },
+  {
+    "mot": "devis",
+    "debut": 2.902,
+    "fin": 3.111
+  },
+  {
+    "mot": "ouvert.",
+    "debut": 3.135,
+    "fin": 3.587
+  },
+  {
+    "mot": "Le",
+    "debut": 3.796,
+    "fin": 3.901
+  },
+  {
+    "mot": "tableau",
+    "debut": 3.947,
+    "fin": 4.226
+  },
+  {
+    "mot": "donne",
+    "debut": 4.272,
+    "fin": 4.435
+  },
+  {
+    "mot": "les",
+    "debut": 4.47,
+    "fin": 4.563
+  },
+  {
+    "mot": "dates,",
+    "debut": 4.598,
+    "fin": 4.957
+  },
+  {
+    "mot": "le",
+    "debut": 5.132,
+    "fin": 5.213
+  },
+  {
+    "mot": "statut",
+    "debut": 5.248,
+    "fin": 5.7
+  },
+  {
+    "mot": "et",
+    "debut": 5.851,
+    "fin": 5.991
+  },
+  {
+    "mot": "le",
+    "debut": 6.026,
+    "fin": 6.084
+  },
+  {
+    "mot": "prix",
+    "debut": 6.13,
+    "fin": 6.385
+  },
+  {
+    "mot": ";",
+    "debut": 6.409,
+    "fin": 6.455
+  },
+  {
+    "mot": "le",
+    "debut": 6.734,
+    "fin": 6.815
+  },
+  {
+    "mot": "devis,",
+    "debut": 6.861,
+    "fin": 7.314
+  },
+  {
+    "mot": "lui,",
+    "debut": 7.488,
+    "fin": 7.802
+  },
+  {
+    "mot": "prévient",
+    "debut": 7.848,
+    "fin": 8.255
+  },
+  {
+    "mot": "quand",
+    "debut": 8.278,
+    "fin": 8.406
+  },
+  {
+    "mot": "la",
+    "debut": 8.429,
+    "fin": 8.475
+  },
+  {
+    "mot": "période",
+    "debut": 8.545,
+    "fin": 8.882
+  },
+  {
+    "mot": "de",
+    "debut": 8.916,
+    "fin": 8.986
+  },
+  {
+    "mot": "signature",
+    "debut": 9.033,
+    "fin": 9.555
+  },
+  {
+    "mot": "est",
+    "debut": 9.601,
+    "fin": 9.729
+  },
+  {
+    "mot": "passée.",
+    "debut": 9.752,
+    "fin": 10.124
+  }
+]

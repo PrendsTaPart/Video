@@ -1,0 +1,99 @@
+{
+  "fonctionnalite": "Attacher des fichiers et des descriptions à une stratégie",
+  "a_quoi_ca_sert": "Ranger, au même endroit que la consigne de vente, les documents qui vont avec : le brief commercial, la plaquette, le modèle de devis. La stratégie cesse d'être une phrase isolée et devient un dossier consultable.",
+  "pour_qui": "Gérant ou responsable commercial qui outille son équipe",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir une stratégie créée sur un produit",
+    "Avoir le fichier à joindre sur son poste"
+  ],
+  "champs_cles": [
+    {
+      "nom": "ajouter une description",
+      "obligatoire": false,
+      "explication": "Le bouton qui ajoute un bloc de texte à la stratégie — une consigne, un rappel de méthode."
+    },
+    {
+      "nom": "ajouter un fichier",
+      "obligatoire": false,
+      "explication": "Le bouton qui ouvre la modale d'import d'un document."
+    },
+    {
+      "nom": "Nom du fichier",
+      "obligatoire": true,
+      "explication": "Le libellé affiché sous la vignette. C'est lui qu'on lit dans la liste, pas le nom du fichier d'origine."
+    },
+    {
+      "nom": "Importer un fichier",
+      "obligatoire": true,
+      "explication": "La zone de dépôt et son bouton parcourir. Le document est ensuite affiché en vignette."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_products",
+      "role": "Liste les produits et offres de l'entreprise — les fiches qui portent les stratégies. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["q", "statut", "limit", "periode"],
+      "exemple_appel": { "limit": 10 }
+    },
+    {
+      "nom": "get_product",
+      "role": "Détail complet d'un produit : prix, TVA, description. Lecture seule.",
+      "parametres_obligatoires": ["id"],
+      "parametres_optionnels": [],
+      "exemple_appel": { "id": 1 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Nommez le fichier par ce qu'il contient — « Brief commercial site vitrine » — plutôt que de laisser un nom technique.",
+    "Une description en actions chiffrées vaut mieux qu'un paragraphe d'intentions : un nombre de prospects, un délai, une relance."
+  ],
+  "erreurs_frequentes": [
+    "Croire que le nom du fichier importé s'affiche tel quel : c'est le champ Nom du fichier qui fait foi.",
+    "Ajouter un fichier sans description, et laisser l'équipe deviner quoi en faire."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Outiller une relance",
+      "contexte": "Votre stratégie de relance existe, mais chacun rédige son propre mail.",
+      "resultat_attendu": "Le brief commercial est joint à la stratégie, et la consigne est écrite juste en dessous."
+    },
+    {
+      "titre": "Faire monter un nouveau vendeur",
+      "contexte": "Une recrue doit vendre une offre qu'elle ne connaît pas.",
+      "resultat_attendu": "Elle ouvre la stratégie du produit et y trouve la consigne et les documents."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Deux boutons, deux natures",
+      "contenu": "« ajouter une description » écrit du texte, « ajouter un fichier » attache un document. Les deux cohabitent sur la même page.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le titre de la page rappelle le contexte",
+      "contenu": "« Stratégie X pour le produit Y » : on sait toujours à quoi se rattache ce qu'on est en train de ranger.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Tout reste modifiable",
+      "contenu": "Chaque bloc de description porte ses boutons modifier et supprimer. Une consigne se corrige sans repartir de zéro.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver le produit à documenter",
+    "texte": "Liste-moi mes [nombre] produits avec leur description.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_products"
+  },
+  "sources": {
+    "champs_cles": "frames 00:16 à 00:24 de l'enregistrement : modale « Ajouter un fichier » et ses champs « Nom du fichier » et « Importer un fichier » avec son bouton parcourir, puis les boutons « + ajouter une description » et « ajouter un fichier » de la page",
+    "a_quoi_ca_sert": "frame 00:24 : la page « Stratégie \"relance prospects site vitrine\" pour le produit pack site vitrine » affiche la vignette PDF et le bloc de description",
+    "astuces": "mêmes frames : le titre de la page rappelle stratégie et produit, et le bloc de description porte ses boutons modifier et supprimer",
+    "erreurs_frequentes": "frame 00:16 : le champ « Nom du fichier » est distinct du fichier importé ; frame 00:24 : la vignette affiche ce libellé",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne dépose ni ne lit ces documents : ils s'attachent uniquement depuis cette page. Les prompts proposés listent les produits, en amont."
+  },
+  "a_verifier": []
+}

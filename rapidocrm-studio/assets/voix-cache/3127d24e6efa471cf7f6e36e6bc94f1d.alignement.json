@@ -1,0 +1,87 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "statut",
+    "debut": 0.174,
+    "fin": 0.499
+  },
+  {
+    "mot": "au",
+    "debut": 0.522,
+    "fin": 0.58
+  },
+  {
+    "mot": "tableau,",
+    "debut": 0.639,
+    "fin": 1.08
+  },
+  {
+    "mot": "le",
+    "debut": 1.115,
+    "fin": 1.184
+  },
+  {
+    "mot": "détail",
+    "debut": 1.231,
+    "fin": 1.521
+  },
+  {
+    "mot": "dans",
+    "debut": 1.556,
+    "fin": 1.683
+  },
+  {
+    "mot": "la",
+    "debut": 1.707,
+    "fin": 1.765
+  },
+  {
+    "mot": "facture",
+    "debut": 1.823,
+    "fin": 2.334
+  },
+  {
+    "mot": ":",
+    "debut": 2.38,
+    "fin": 2.415
+  },
+  {
+    "mot": "la",
+    "debut": 2.624,
+    "fin": 2.705
+  },
+  {
+    "mot": "question",
+    "debut": 2.763,
+    "fin": 3.053
+  },
+  {
+    "mot": "du",
+    "debut": 3.088,
+    "fin": 3.17
+  },
+  {
+    "mot": "client",
+    "debut": 3.204,
+    "fin": 3.495
+  },
+  {
+    "mot": "trouve",
+    "debut": 3.529,
+    "fin": 3.762
+  },
+  {
+    "mot": "sa",
+    "debut": 3.785,
+    "fin": 3.878
+  },
+  {
+    "mot": "réponse.",
+    "debut": 3.924,
+    "fin": 4.447
+  }
+]

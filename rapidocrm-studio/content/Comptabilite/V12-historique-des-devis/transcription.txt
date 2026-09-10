@@ -1,0 +1,17 @@
+Le client vous rappelle au sujet d'un devis de mars. Vous, vous faites défiler la liste. Deux filtres, et quatre gestes par ligne.
+
+On part de l'historique des devis, et on ressort avec le bon devis sous les yeux. Deux listes en haut de page filtrent, et chaque ligne porte un menu qui dit ce qu'on peut en faire.
+
+L'onglet devis. Deux filtres, une recherche, et le tableau.
+
+Les trois points en fin de ligne ouvrent le menu. Quatre entrées.
+
+Visualiser ouvre le devis dans un nouvel onglet. La liste reste où elle est.
+
+Télécharger sort le fichier. Le navigateur le prend en charge.
+
+Et les deux dernières : modifier, ou basculer sur la fiche du client.
+
+Les filtres trient à l'écran. Pour le même point sans toucher aux listes, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Deux filtres posés, et le bon devis est devant vous.

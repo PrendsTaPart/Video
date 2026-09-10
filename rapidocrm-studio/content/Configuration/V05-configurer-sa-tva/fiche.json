@@ -1,0 +1,48 @@
+{
+  "fonctionnalite": "Créer et modifier ses taux de TVA",
+  "a_quoi_ca_sert": "Vos devis et vos factures appliquent les taux que vous déclarez ici. Tant que la liste est vide, aucun taux n'est disponible au moment de facturer. Un taux se crée en deux champs, et se corrige d'un clic si la loi ou votre activité change.",
+  "pour_qui": "Gérant, comptable, ou toute personne chargée de la facturation",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Connaître les taux applicables à son activité"
+  ],
+  "champs_cles": [
+    { "nom": "Nom de la tva", "obligatoire": true, "explication": "Le libellé que vous verrez au moment de facturer. Nommez-le clairement, par exemple par pays ou par type de prestation." },
+    { "nom": "Pourcentage de la tva", "obligatoire": true, "explication": "Le taux, en pourcentage. Il s'affichera avec deux décimales dans la liste." }
+  ],
+  "outils_mcp": [
+    { "nom": "list_factures", "role": "Liste les factures de l'entreprise avec leur montant. Lecture seule.",
+      "parametres_obligatoires": [], "parametres_optionnels": ["limit", "statut", "periode"],
+      "exemple_appel": { "limit": 5 } }
+  ],
+  "bonnes_pratiques": [
+    "Créez vos taux avant d'établir votre premier devis : c'est là qu'ils seront proposés.",
+    "Donnez un nom explicite plutôt qu'un simple pourcentage : la liste reste lisible quand les taux se multiplient."
+  ],
+  "erreurs_frequentes": [
+    "Créer un second taux au lieu de corriger le premier : l'icône crayon de la colonne Action modifie la ligne existante.",
+    "Laisser la liste vide et découvrir au moment de facturer qu'aucun taux n'est disponible."
+  ],
+  "cas_usage": [
+    { "titre": "Corriger un taux après un changement de règle", "contexte": "Le taux appliqué à votre activité passe de dix à cinq pour cent.",
+      "resultat_attendu": "La ligne existante est modifiée, un bandeau confirme, et la liste affiche immédiatement le nouveau taux." }
+  ],
+  "astuces": [
+    { "titre": "Modifier plutôt que recréer", "contenu": "La colonne Action porte deux icônes : le crayon modifie la ligne, la corbeille la supprime. Corriger un taux ne demande pas d'en créer un nouveau.", "niveau": "debutant" },
+    { "titre": "La traçabilité est à côté", "contenu": "Le bouton traçabilité de la tva, en haut à droite, garde l'historique de vos taux.", "niveau": "pro" }
+  ],
+  "prompt_claude": {
+    "titre": "Contrôler ses dernières factures",
+    "texte": "Liste-moi mes [nombre] dernières factures avec leur montant total.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_factures"
+  },
+  "sources": {
+    "champs_cles": "frames 00:08 à 00:13 de l'enregistrement (libellés de la modale « Ajouter une tva »)",
+    "a_quoi_ca_sert": "frame 00:02 : « Votre liste de tva est vide, veuillez ajouter des tva »",
+    "erreurs_frequentes": "frames 00:17 et 00:25 : la colonne Action et ses deux icônes, puis le bandeau « Tva modifiée avec succès ! »",
+    "astuces": "frame 00:02 : bouton « traçabilité de la tva » en haut à droite de l'onglet",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne gère les taux de TVA : ils se créent et se modifient uniquement depuis cet onglet. Le prompt proposé porte donc sur la facturation, en aval."
+  },
+  "a_verifier": []
+}

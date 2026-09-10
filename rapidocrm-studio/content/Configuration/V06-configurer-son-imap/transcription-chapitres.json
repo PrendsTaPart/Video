@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Vos factures partent de votre webmail, et le CRM n'en sait rien. Cinq champs, et votre messagerie entre dans RapidoCRM."
+  },
+  {
+    "timestamp_secondes": 8,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la section Boîte mail de votre page Profil, et on ressort avec la messagerie de la société branchée. C'est ce réglage qui ouvre la page Boîte mail du CRM : vous écrivez à vos clients et vous leur envoyez devis et factures sans repasser par votre webmail. Deux préalables, côté Google : la validation en deux étapes doit être active sur le compte de la société, et c'est un mot de passe d'application qu'on colle ici, jamais celui de votre compte."
+  },
+  {
+    "timestamp_secondes": 34,
+    "titre": "Ouvrir la section Boîte mail",
+    "texte": "Dans votre page Profil, la section Boîte mail. Cinq champs, et le CRM lit votre messagerie."
+  },
+  {
+    "timestamp_secondes": 39,
+    "titre": "Coller le mot de passe d'application",
+    "texte": "Le mot de passe d'application, généré chez Google. Pas celui de votre compte : Google le refuserait."
+  },
+  {
+    "timestamp_secondes": 45,
+    "titre": "Renseigner les quatre paramètres",
+    "texte": "Hôte imap point gmail point com, port 993, chiffrement ssl, certificat true."
+  },
+  {
+    "timestamp_secondes": 52,
+    "titre": "Enregistrer",
+    "texte": "Un clic sur enregistrer, et c'est branché."
+  },
+  {
+    "timestamp_secondes": 54,
+    "titre": "Vérifier la fiche complétée",
+    "texte": "Ces quatre-là ne changent jamais."
+  },
+  {
+    "timestamp_secondes": 56,
+    "titre": "Faites-le avec Claude",
+    "texte": "Votre messagerie est branchée : la page Boîte mail du CRM s'ouvre désormais. Pour retrouver à qui vous écrivez sans quitter la conversation, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 75,
+    "titre": "À retenir",
+    "texte": "Cinq champs une fois, et vos mails partent d'ici."
+  }
+]

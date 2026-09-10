@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "module": "Comptabilite",
+    "module_slug": "05-comptabilite",
+    "numero": 1,
+    "titre": "Créer et modifier une facture",
+    "titre_court": "Créer une facture",
+    "slug": "05-creer-modifier-une-facture"
+  },
+  "hook": {
+    "texte": "Votre facture part sur un tableur, recopiée à la main. Et le total, vous le vérifiez deux fois.",
+    "promesse": "Le produit choisi, les montants suivent.",
+    "duree": 9,
+    "alternatives": [
+      "Une facture retapée est une facture qui finit par se tromper.",
+      "Ce que vous vendez est déjà dans le logiciel. Vos factures aussi, alors.",
+      "Le calcul de TVA n'a pas à se faire de tête."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page Facturation, et on ressort avec une facture faite, puis corrigée. Un seul formulaire : le client, le produit, la date. Les montants se calculent seuls. Retenez une chose : le prix toutes taxes comprises ne se tape jamais à la main.",
+    "duree": 28
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir la page Facturation",
+        "voix": "Page Facturation. Trois onglets, deux filtres, et le bouton créer une facture.",
+        "debut_source": 0,
+        "fin_source": 4.5,
+        "zone_focus": {
+          "x": 0.2,
+          "y": 0.08,
+          "w": 0.79,
+          "h": 0.65
+        },
+        "annotation": "créer une facture",
+        "point": {
+          "x": 0.88,
+          "y": 0.28
+        }
+      },
+      {
+        "numero": 2,
+        "titre": "Choisir le client et le produit",
+        "voix": "L'entreprise d'abord, prise dans vos clients. Puis le produit, avec son prix. C'est lui qui remplit la facture.",
+        "debut_source": 4.5,
+        "fin_source": 12,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.02,
+          "w": 0.42,
+          "h": 0.95
+        },
+        "annotation": "le produit",
+        "point": {
+          "x": 0.53,
+          "y": 0.6
+        }
+      },
+      {
+        "numero": 3,
+        "titre": "Laisser les montants se calculer",
+        "voix": "La date, puis les montants : hors taxes, TVA, total. Vous n'écrivez rien.",
+        "debut_source": 12,
+        "fin_source": 19,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.1,
+          "w": 0.42,
+          "h": 0.85
+        },
+        "annotation": "calculé",
+        "point": {
+          "x": 0.53,
+          "y": 0.55
+        }
+      },
+      {
+        "numero": 4,
+        "titre": "Fixer le délai et le statut",
+        "voix": "Le délai de paiement, les mentions légales, le statut. Le logiciel peut aussi envoyer la facture.",
+        "debut_source": 19,
+        "fin_source": 25,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.02,
+          "w": 0.42,
+          "h": 0.95
+        },
+        "annotation": "délai et statut",
+        "point": {
+          "x": 0.53,
+          "y": 0.4
+        }
+      },
+      {
+        "numero": 5,
+        "titre": "Relire les totaux",
+        "voix": "Dernière ligne : total TTC final. C'est ce que le client paiera.",
+        "debut_source": 25,
+        "fin_source": 29,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.02,
+          "w": 0.42,
+          "h": 0.95
+        },
+        "annotation": "Total TTC final",
+        "point": {
+          "x": 0.53,
+          "y": 0.68
+        }
+      },
+      {
+        "numero": 6,
+        "titre": "Retrouver la facture au tableau",
+        "voix": "Facture créée. Elle prend sa place dans la liste, avec son client et son statut.",
+        "debut_source": 29,
+        "fin_source": 36,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.02,
+          "w": 0.77,
+          "h": 0.85
+        },
+        "annotation": "Facture créée avec succès",
+        "point": {
+          "x": 0.8,
+          "y": 0.1
+        }
+      },
+      {
+        "numero": 7,
+        "titre": "Corriger une facture",
+        "voix": "Une erreur de produit ? La fiche se rouvre telle quelle, on corrige.",
+        "debut_source": 36,
+        "fin_source": 48.5,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.02,
+          "w": 0.42,
+          "h": 0.95
+        },
+        "annotation": "on corrige",
+        "point": {
+          "x": 0.53,
+          "y": 0.5
+        }
+      },
+      {
+        "numero": 8,
+        "titre": "Voir la correction confirmée",
+        "voix": "Et le bandeau confirme la modification.",
+        "debut_source": 48.5,
+        "fin_source": 55.211,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.02,
+          "w": 0.77,
+          "h": 0.85
+        },
+        "annotation": "Facture modifiée",
+        "point": {
+          "x": 0.8,
+          "y": 0.1
+        }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Vos factures s'empilent. Pour savoir ce qui reste à encaisser, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] dernières factures avec leur statut et leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_factures"
+    },
+    "resultat_affiche": {
+      "titre": "3 factures trouvées",
+      "lignes": [
+        "N° 3 — brasserie du quai — 5 760,00 € — En attente",
+        "N° 1 — brasserie du quai — 5 760,00 € — Payée"
+      ]
+    },
+    "duree": 22
+  },
+  "punchline": {
+    "texte": "Le produit choisi, la facture s'écrit. Et elle reste corrigeable.",
+    "duree": 7,
+    "alternatives": [
+      "Une facture juste du premier coup, et modifiable au second.",
+      "Vos prix vivent au catalogue, plus dans votre tête.",
+      "Facturer redevient une formalité de trente secondes."
+    ]
+  },
+  "seo": {
+    "titre": "Créer une facture sur RapidoCRM — tutoriel",
+    "description": "Établissez une facture dans RapidoCRM : entreprise, produit, montants calculés, délai de paiement et statut. Le tutoriel pas à pas de l'Académie.",
+    "mots_cles": [
+      "créer une facture",
+      "RapidoCRM",
+      "facturation",
+      "TVA",
+      "comptabilité",
+      "délai de paiement"
+    ],
+    "youtube_titre": "Créer et modifier une facture — RapidoCRM",
+    "youtube_description": "Le tutoriel de facturation de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "facture",
+      "facturation",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}

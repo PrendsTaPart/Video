@@ -1,0 +1,27 @@
+{
+  "outils": [
+    {
+      "nom": "list_commerciaux",
+      "description": "Lister les commerciaux avec statut actif/inactif et objectifs. Lecture seule.",
+      "parametres": [
+        { "nom": "q", "type": "string|null", "obligatoire": false, "description": "Recherche par nom, prénom, email, fonction" },
+        { "nom": "statut", "type": "string|null", "obligatoire": false, "valeurs_autorisees": ["actif", "inactif"], "description": "Filtre de statut" },
+        { "nom": "limit", "type": "integer|null", "obligatoire": false, "description": "Nombre max de résultats" }
+      ]
+    },
+    {
+      "nom": "get_commercial",
+      "description": "Afficher le détail d'un commercial avec objectifs et performance. Lecture seule.",
+      "parametres": [
+        { "nom": "id", "type": "integer", "obligatoire": true, "description": "ID du commercial" }
+      ]
+    },
+    {
+      "nom": "get_user_performance",
+      "description": "Performance d'un commercial (id fourni) ou de tous les commerciaux : objectifs, envois, taux. Lecture seule.",
+      "parametres": [
+        { "nom": "id", "type": "integer|null", "obligatoire": false, "description": "ID du commercial ; sans id, tous les commerciaux" }
+      ]
+    }
+  ]
+}

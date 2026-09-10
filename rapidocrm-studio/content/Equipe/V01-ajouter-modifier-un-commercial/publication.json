@@ -1,0 +1,27 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-equipe-V01-02-ajouter-modifier-un-commercial.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-equipe-V01-02-ajouter-modifier-un-commercial-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-equipe-V01-02-ajouter-modifier-un-commercial-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-equipe-V01-02-ajouter-modifier-un-commercial-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "06b56041c65ee1a1",
+      "video_vertical_url": "7ce9cd13016f3a2b",
+      "thumbnail_url": "953ee11ae10156cb",
+      "thumbnail_vertical_url": "59e52d824452b8fa"
+    },
+    "publie_le": "2026-08-28T01:43:31.771Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=xiUlRID_ejY",
+    "video_id": "xiUlRID_ejY",
+    "publie_le": "2026-08-28T11:33:21.463453+00:00",
+    "short_url": "https://www.youtube.com/watch?v=gY2Sx73KnZY",
+    "short_id": "gY2Sx73KnZY"
+  },
+  "site": {
+    "url": "https://tutoriel.rapidocrm.com/tutoriel/02-ajouter-modifier-un-commercial",
+    "tutoriel_id": "d9d032ec-811b-4a33-8073-bd4fd2f78501",
+    "publie_le": "2026-08-28T11:40:09.362+00:00"
+  }
+}

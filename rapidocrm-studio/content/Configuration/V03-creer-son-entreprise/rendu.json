@@ -1,0 +1,88 @@
+{
+  "duree": 88.3,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V03-creer-son-entreprise/out/master-16x9.mp4",
+      "octets": 11350362
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V03-creer-son-entreprise/out/master-9x16.mp4",
+      "octets": 11126010
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 10.366666666666667
+    },
+    {
+      "nom": "titre",
+      "debut": 10.366666666666667,
+      "fin": 22.5
+    },
+    {
+      "nom": "demo",
+      "debut": 22.5,
+      "fin": 66.33333333333333
+    },
+    {
+      "nom": "claude",
+      "debut": 66.33333333333333,
+      "fin": 84.73333333333333
+    },
+    {
+      "nom": "punchline",
+      "debut": 84.73333333333333,
+      "fin": 88.3
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Votre accès est créé. Il manque encore l'essentiel : votre société."
+    },
+    {
+      "timecode": "00:10",
+      "titre": "Créer son entreprise"
+    },
+    {
+      "timecode": "00:22",
+      "titre": "Nommer l'entreprise"
+    },
+    {
+      "timecode": "00:31",
+      "titre": "Renseigner l'e-mail de l'entreprise"
+    },
+    {
+      "timecode": "00:40",
+      "titre": "Saisir le SIRET"
+    },
+    {
+      "timecode": "00:49",
+      "titre": "Valider la création"
+    },
+    {
+      "timecode": "00:53",
+      "titre": "Définir son mot de passe"
+    },
+    {
+      "timecode": "00:55",
+      "titre": "Entrer dans son espace"
+    },
+    {
+      "timecode": "01:06",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:24",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

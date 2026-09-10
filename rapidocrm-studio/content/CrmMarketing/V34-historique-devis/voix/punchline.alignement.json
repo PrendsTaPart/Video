@@ -1,0 +1,92 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "devis",
+    "debut": 0.197,
+    "fin": 0.464
+  },
+  {
+    "mot": "dit",
+    "debut": 0.499,
+    "fin": 0.639
+  },
+  {
+    "mot": "lui-même",
+    "debut": 0.662,
+    "fin": 0.964
+  },
+  {
+    "mot": "qu'il",
+    "debut": 0.987,
+    "fin": 1.126
+  },
+  {
+    "mot": "a",
+    "debut": 1.161,
+    "fin": 1.184
+  },
+  {
+    "mot": "expiré",
+    "debut": 1.254,
+    "fin": 1.707
+  },
+  {
+    "mot": ":",
+    "debut": 1.823,
+    "fin": 1.869
+  },
+  {
+    "mot": "la",
+    "debut": 2.252,
+    "fin": 2.357
+  },
+  {
+    "mot": "relance",
+    "debut": 2.415,
+    "fin": 2.74
+  },
+  {
+    "mot": "part",
+    "debut": 2.775,
+    "fin": 3.042
+  },
+  {
+    "mot": "sur",
+    "debut": 3.088,
+    "fin": 3.216
+  },
+  {
+    "mot": "ce",
+    "debut": 3.251,
+    "fin": 3.344
+  },
+  {
+    "mot": "qui",
+    "debut": 3.402,
+    "fin": 3.506
+  },
+  {
+    "mot": "peut",
+    "debut": 3.576,
+    "fin": 3.715
+  },
+  {
+    "mot": "encore",
+    "debut": 3.762,
+    "fin": 4.052
+  },
+  {
+    "mot": "se",
+    "debut": 4.075,
+    "fin": 4.168
+  },
+  {
+    "mot": "signer.",
+    "debut": 4.214,
+    "fin": 4.586
+  }
+]

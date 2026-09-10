@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Votre agent tourne sur la clé de tout le monde. La vôtre dort dans un coin. Un champ, et l'agent travaille sur votre compte."
+  },
+  {
+    "timestamp_secondes": 7,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la section Agent ia de votre page Profil, et on ressort avec votre propre clé d'API branchée. Par défaut, l'agent de RapidoCRM tourne sur la clé du serveur, celle que tout le monde partage. En collant la vôtre, il consomme votre compte chez votre fournisseur — anthropic, openai, gemini ou openrouter — et vous voyez exactement ce qu'il dépense. Le champ laissé vide ne coupe rien : l'agent repart simplement sur la clé du serveur, qui fonctionne."
+  },
+  {
+    "timestamp_secondes": 37,
+    "titre": "Trouver la section Agent ia",
+    "texte": "Page Profil, section Agent ia. Une clé personnelle pour votre agent."
+  },
+  {
+    "timestamp_secondes": 42,
+    "titre": "Repérer les autres réglages",
+    "texte": "La page empile vos connexions : l'IBAN, la boîte mail, Stripe et Twilio."
+  },
+  {
+    "timestamp_secondes": 47,
+    "titre": "Coller sa propre clé",
+    "texte": "Le champ attend une clé anthropic, openai, gemini ou openrouter. On colle la sienne."
+  },
+  {
+    "timestamp_secondes": 53,
+    "titre": "Enregistrer",
+    "texte": "Un clic sur enregistrer."
+  },
+  {
+    "timestamp_secondes": 54,
+    "titre": "Laisser vide pour la clé du serveur",
+    "texte": "Videz-le, et l'agent ne s'arrête pas : il repart sur la clé globale du serveur. C'est écrit sous le champ."
+  },
+  {
+    "timestamp_secondes": 60,
+    "titre": "Faites-le avec Claude",
+    "texte": "Votre clé est en place. Pour vérifier l'état de votre agent sans rouvrir la page, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et lancez-le tel quel — il n'y a rien à remplacer."
+  },
+  {
+    "timestamp_secondes": 76,
+    "titre": "À retenir",
+    "texte": "Votre clé, votre compte, votre agent. Et le filet du serveur si vous la retirez."
+  }
+]

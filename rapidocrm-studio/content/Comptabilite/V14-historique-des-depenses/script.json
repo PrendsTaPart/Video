@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "module": "Comptabilite",
+    "numero": 14,
+    "titre": "Suivre ses dépenses",
+    "titre_court": "Historique des dépenses",
+    "slug": "05-historique-des-depenses",
+    "module_slug": "05-comptabilite"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'onglet dépenses",
+        "voix": "Troisième onglet : dépenses. En haut, ce qui est dépensé, ce qui reste dû, ce qui est payé.",
+        "debut_source": 0,
+        "fin_source": 6.5,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.2,
+          "w": 0.75,
+          "h": 0.45
+        },
+        "annotation": "Ouvrir l'onglet dépenses"
+      },
+      {
+        "numero": 2,
+        "titre": "Lire le tableau des dépenses",
+        "voix": "Et la quatrième carte : les bénéfices, une fois les dépenses retirées. Puis le tableau, ligne par ligne, avec son entreprise et son montant.",
+        "debut_source": 6.5,
+        "fin_source": 13.5,
+        "zone_focus": {
+          "x": 0.24,
+          "y": 0.62,
+          "w": 0.72,
+          "h": 0.36
+        },
+        "annotation": "Lire le tableau des dépenses"
+      },
+      {
+        "numero": 3,
+        "titre": "Filtrer et trier la liste",
+        "voix": "Deux filtres au-dessus, statut et entreprise. Et les colonnes se trient d'un clic sur leur titre.",
+        "debut_source": 13.5,
+        "fin_source": 21.5,
+        "zone_focus": {
+          "x": 0.24,
+          "y": 0.4,
+          "w": 0.5,
+          "h": 0.2
+        },
+        "annotation": "Filtrer et trier la liste"
+      },
+      {
+        "numero": 4,
+        "titre": "Ouvrir le menu d'une dépense",
+        "voix": "Les trois points ouvrent le menu. Trois entrées ici, pas quatre : une dépense ne se visualise pas.",
+        "debut_source": 21.5,
+        "fin_source": 27.5,
+        "zone_focus": {
+          "x": 0.67,
+          "y": 0.52,
+          "w": 0.2,
+          "h": 0.24
+        },
+        "annotation": "Ouvrir le menu d'une dépense"
+      },
+      {
+        "numero": 5,
+        "titre": "Remonter à la fiche de l'entreprise",
+        "voix": "La dernière remonte à la fiche du fournisseur.",
+        "debut_source": 27.5,
+        "fin_source": 31.5,
+        "zone_focus": {
+          "x": 0.68,
+          "y": 0.6,
+          "w": 0.19,
+          "h": 0.16
+        },
+        "annotation": "Remonter à la fiche de l'entreprise"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Vos sorties sont sous les yeux. Pour savoir ce qui reste à régler sans filtrer, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] dépenses en attente avec leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_depenses"
+    },
+    "resultat_affiche": {
+      "titre": "3 dépenses en attente",
+      "lignes": [
+        "N° 4 — cabinet lefèvre — 143,99 €",
+        "N° 3 — alexa — 69,60 €",
+        "N° 2 — la baguetterie — 58,80 €"
+      ]
+    },
+    "duree": 18
+  },
+  "hook": {
+    "texte": "Vous savez ce que vous facturez. Ce que vous dépensez, beaucoup moins.",
+    "promesse": "Quatre cartes, un tableau, et le compte est clair.",
+    "duree": 8,
+    "alternatives": [
+      "Un bénéfice se calcule sur deux colonnes, pas une.",
+      "Ce qui sort compte autant que ce qui rentre.",
+      "Les dépenses ne sont pas ailleurs : elles sont sur la même page."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page Facturation, et on ressort avec une vue claire des sorties. Les dépenses sont le troisième onglet, à côté des factures et des devis. Quatre cartes donnent la photo, le tableau donne le détail.",
+    "duree": 16
+  },
+  "punchline": {
+    "texte": "Ce qui sort se lit aussi vite que ce qui rentre.",
+    "duree": 8,
+    "alternatives": [
+      "Le bénéfice n'a de sens qu'avec les deux colonnes.",
+      "Une dépense suivie est une dépense qu'on discute.",
+      "Trois cartes, et le mois est lisible."
+    ]
+  },
+  "seo": {
+    "titre": "Suivre ses dépenses — RapidoCRM",
+    "description": "Suivez vos dépenses dans RapidoCRM : les cartes du haut de page, le tableau détaillé, les filtres par statut et par entreprise. Le tutoriel de l'Académie.",
+    "mots_cles": [
+      "dépenses",
+      "RapidoCRM",
+      "bénéfices",
+      "comptabilité",
+      "suivi",
+      "CRM"
+    ],
+    "youtube_titre": "Suivre ses dépenses — RapidoCRM",
+    "youtube_description": "Le tutoriel des dépenses sur RapidoCRM : où elles se trouvent, ce que disent les quatre cartes, et comment filtrer le tableau. RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "dépenses",
+      "comptabilité",
+      "CRM",
+      "bénéfices"
+    ]
+  }
+}

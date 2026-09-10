@@ -1,0 +1,35 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-sms",
+    "module": "06-crm-marketing",
+    "numero": 29,
+    "titre": "Historique SMS",
+    "titre_court": "Historique des SMS",
+    "accroche": "Le journal tranche : le message, le numéro, la date.",
+    "explication": "On part de la page Historique, et on ressort avec le SMS sous les yeux. Le tableau montre le numéro du destinataire et la date de chaque envoi ; l'icône en bout de ligne rouvre le message mot pour mot. C'est la trace de ce qui est parti, pas un brouillon.\n\n1. Ouvrir l'historique des SMS — Deuxième carte de la page Historique : les SMS. On consulte.\n2. Lire le tableau des envois — Ici, le numéro du destinataire est une colonne.\n3. Rouvrir un SMS envoyé — L'icône rouvre le message, mot pour mot. Puis on ferme.\n\nLe journal montre le détail. Pour le total du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir l'historique des SMS",
+        "texte": "Deuxième carte de la page Historique : les SMS. On consulte."
+      },
+      {
+        "titre": "Lire le tableau des envois",
+        "texte": "Ici, le numéro du destinataire est une colonne."
+      },
+      {
+        "titre": "Rouvrir un SMS envoyé",
+        "texte": "L'icône rouvre le message, mot pour mot. Puis on ferme."
+      }
+    ],
+    "a_quoi_ca_sert": "Retrouver les messages courts envoyés à un client, avec leur date et leur contenu exact. Ce qui a été dit par SMS reste écrit quelque part.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir ouvert l'historique de l'entreprise"
+    ]
+  },
+  "demande_le": "2026-09-09T08:19:59.150Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

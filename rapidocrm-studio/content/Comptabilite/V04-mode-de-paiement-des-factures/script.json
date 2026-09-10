@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "module": "Comptabilite",
+    "module_slug": "05-comptabilite",
+    "numero": 4,
+    "titre": "Renseigner le mode de paiement d'une facture",
+    "titre_court": "Mode de paiement",
+    "slug": "05-mode-de-paiement-des-factures"
+  },
+  "hook": {
+    "texte": "Un virement tombe sur le compte. Trois semaines plus tard, vous cherchez encore à quelle facture il correspond.",
+    "promesse": "Un champ coché le jour même, et le rapprochement se fait tout seul.",
+    "duree": 10,
+    "alternatives": [
+      "Un règlement sans moyen noté, c'est une recherche pour plus tard.",
+      "La banque dit combien. Elle ne dit jamais pourquoi.",
+      "Ce qui se retrouve en dix secondes se note en une."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la liste des factures, et on ressort avec un règlement noté. Le moyen de paiement se choisit dans la facture, sous le statut : espèces, carte, virement ou chèque. Un seul à la fois. Juste en dessous, le total à retrouver sur votre relevé de banque.",
+    "duree": 31
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir la facture réglée",
+        "voix": "Depuis la liste, les trois points en fin de ligne ouvrent la facture.",
+        "debut_source": 0,
+        "fin_source": 6,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.1,
+          "w": 0.77,
+          "h": 0.85
+        },
+        "annotation": "Actions",
+        "point": {
+          "x": 0.82,
+          "y": 0.45
+        }
+      },
+      {
+        "numero": 2,
+        "titre": "Choisir le moyen",
+        "voix": "Quatre moyens, un seul coché. Ici, virement.",
+        "debut_source": 6,
+        "fin_source": 11.5,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.1,
+          "w": 0.42,
+          "h": 0.5
+        },
+        "annotation": "Mode de paiement",
+        "point": {
+          "x": 0.53,
+          "y": 0.3
+        }
+      },
+      {
+        "numero": 3,
+        "titre": "Contrôler le montant",
+        "voix": "En dessous, le total à retrouver sur le relevé.",
+        "debut_source": 11.5,
+        "fin_source": 14.5,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.48,
+          "w": 0.42,
+          "h": 0.5
+        },
+        "annotation": "Total TTC final",
+        "point": {
+          "x": 0.53,
+          "y": 0.85
+        }
+      },
+      {
+        "numero": 4,
+        "titre": "Enregistrer",
+        "voix": "On enregistre, et c'est écrit.",
+        "debut_source": 14.5,
+        "fin_source": 18.88,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.02,
+          "w": 0.77,
+          "h": 0.8
+        },
+        "annotation": "Facture modifiée",
+        "point": {
+          "x": 0.8,
+          "y": 0.1
+        }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Le règlement est noté. Pour rouvrir une facture précise sans la chercher, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez le numéro entre crochets.",
+    "prompt": {
+      "texte": "Donne-moi le détail de la facture numéro [id].",
+      "variables": [
+        "id"
+      ],
+      "outil_mcp": "get_facture"
+    },
+    "resultat_affiche": {
+      "titre": "Facture n° 3",
+      "lignes": [
+        "brasserie du quai — 5 760,00 € TTC — Payée",
+        "Mode de paiement : virement"
+      ]
+    },
+    "duree": 22
+  },
+  "punchline": {
+    "texte": "Un moyen de paiement noté, c'est un rapprochement en moins à faire.",
+    "duree": 7,
+    "alternatives": [
+      "Dix secondes aujourd'hui, une demi-heure économisée en fin de mois.",
+      "Votre relevé et vos factures parlent enfin la même langue.",
+      "Ce qui est écrit ne se cherche pas."
+    ]
+  },
+  "seo": {
+    "titre": "Mode de paiement d'une facture — RapidoCRM",
+    "description": "Notez par quel moyen une facture RapidoCRM a été réglée — espèces, carte, virement ou chèque — et retrouvez vos encaissements. Le tutoriel de l'Académie.",
+    "mots_cles": [
+      "mode de paiement",
+      "RapidoCRM",
+      "facture",
+      "virement",
+      "rapprochement bancaire",
+      "comptabilité"
+    ],
+    "youtube_titre": "Renseigner le mode de paiement d'une facture — RapidoCRM",
+    "youtube_description": "Le tutoriel des modes de paiement de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "paiement",
+      "facture",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}

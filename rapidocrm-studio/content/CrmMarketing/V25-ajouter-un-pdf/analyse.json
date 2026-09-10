@@ -1,0 +1,129 @@
+{
+  "duree": 24.33,
+  "resolution": [1920, 1020],
+  "fps": 60,
+  "ecrans": [
+    { "t": 0.0, "nom": "Fiche entreprise — panneau Documentation" },
+    { "t": 5.0, "nom": "Modale « Ajouter un fichier »" },
+    { "t": 17.0, "nom": "Retour à la fiche" },
+    { "t": 21.0, "nom": "Bas de la fiche — contacts et employés" }
+  ],
+  "actions": [
+    {
+      "t": 2.0,
+      "type": "ouverture",
+      "cible": "Panneau Documentation de la fiche entreprise",
+      "zone": { "x": 0.72, "y": 0.25, "w": 0.27, "h": 0.45 },
+      "texte_visible": "Finance · Marketing · Documentation"
+    },
+    {
+      "t": 4.0,
+      "type": "clic",
+      "cible": "Ajouter un PDF",
+      "zone": { "x": 0.73, "y": 0.66, "w": 0.24, "h": 0.09 },
+      "texte_visible": "Ajouter un PDF"
+    },
+    {
+      "t": 6.0,
+      "type": "ouverture",
+      "cible": "Modale Ajouter un fichier",
+      "zone": { "x": 0.35, "y": 0.14, "w": 0.3, "h": 0.82 },
+      "texte_visible": "Ajouter un fichier · Nom du fichier · Entrer le nom de fichier · Importer un fichier · Sélectionner un fichier · Parcourir · Annuler · Ajouter"
+    },
+    {
+      "t": 10.0,
+      "type": "saisie",
+      "cible": "Champ Nom du fichier",
+      "zone": { "x": 0.36, "y": 0.39, "w": 0.28, "h": 0.09 },
+      "texte_visible": "Carte pains et viennoiseries — printemps"
+    },
+    {
+      "t": 12.0,
+      "type": "clic",
+      "cible": "Bouton Parcourir de la zone d'import",
+      "zone": { "x": 0.46, "y": 0.67, "w": 0.09, "h": 0.09 },
+      "texte_visible": "Parcourir"
+    },
+    {
+      "t": 16.0,
+      "type": "validation",
+      "cible": "Bouton Ajouter",
+      "zone": { "x": 0.5, "y": 0.83, "w": 0.09, "h": 0.09 },
+      "texte_visible": "Ajouter"
+    },
+    {
+      "t": 18.5,
+      "type": "ouverture",
+      "cible": "Retour à la fiche, panneau Documentation",
+      "zone": { "x": 0.72, "y": 0.55, "w": 0.27, "h": 0.25 },
+      "texte_visible": "Documentation · Ajouter un PDF"
+    },
+    {
+      "t": 23.0,
+      "type": "defilement",
+      "cible": "Bas de la fiche entreprise",
+      "zone": { "x": 0.24, "y": 0.35, "w": 0.5, "h": 0.6 },
+      "texte_visible": "Employés · Ajouter un employé · Voir profil"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir « Ajouter un PDF » depuis la fiche",
+      "debut": 1.0,
+      "fin": 5.0,
+      "actions": [0, 1],
+      "zone_focus": { "x": 0.7, "y": 0.2, "w": 0.29, "h": 0.55 }
+    },
+    {
+      "numero": 2,
+      "titre": "Nommer le document",
+      "debut": 5.0,
+      "fin": 11.5,
+      "actions": [2, 3],
+      "zone_focus": { "x": 0.35, "y": 0.14, "w": 0.3, "h": 0.45 }
+    },
+    {
+      "numero": 3,
+      "titre": "Choisir le fichier et l'ajouter",
+      "debut": 11.5,
+      "fin": 17.0,
+      "actions": [4, 5],
+      "zone_focus": { "x": 0.35, "y": 0.45, "w": 0.3, "h": 0.5 }
+    },
+    {
+      "numero": 4,
+      "titre": "Retrouver la fiche et ses documents",
+      "debut": 17.0,
+      "fin": 24.33,
+      "actions": [6, 7],
+      "zone_focus": { "x": 0.22, "y": 0.2, "w": 0.77, "h": 0.7 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 24.33,
+      "zone": { "x": 0.0, "y": 0.0, "w": 1.0, "h": 0.15 },
+      "raison": "Fenêtre du navigateur : onglets, adresse locale 127.0.0.1:8000, extensions et bouton « Demander à Gemini »."
+    },
+    {
+      "t": 0.0,
+      "fin": 24.33,
+      "zone": { "x": 0.79, "y": 0.14, "w": 0.21, "h": 0.13 },
+      "raison": "Photo et nom du titulaire du compte (Dupont lina)."
+    },
+    {
+      "t": 0.0,
+      "fin": 21.0,
+      "zone": { "x": 0.24, "y": 0.25, "w": 0.5, "h": 0.55 },
+      "raison": "Activités récentes : photo et nom de l'utilisatrice sur chaque ligne, lisibles aussi de part et d'autre de la modale."
+    },
+    {
+      "t": 20.0,
+      "fin": 24.33,
+      "zone": { "x": 0.24, "y": 0.2, "w": 0.5, "h": 0.78 },
+      "raison": "Bas de la fiche : tableau Contacts (noms, e-mails, téléphones) et bloc Employés (photo, nom et poste de Thomas bernard)."
+    }
+  ]
+}

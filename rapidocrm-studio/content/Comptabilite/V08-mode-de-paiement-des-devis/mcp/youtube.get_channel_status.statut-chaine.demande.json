@@ -1,0 +1,9 @@
+{
+  "serveur": "YouTube",
+  "outil": "get_channel_status",
+  "parametres": {
+    "consigne": "Retourne {\"connectee\": bool, \"chaines\": [{id, nom, active}]}."
+  },
+  "demande_le": "2026-09-05T17:10:23.786Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

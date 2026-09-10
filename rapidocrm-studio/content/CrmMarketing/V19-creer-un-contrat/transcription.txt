@@ -1,0 +1,19 @@
+Le devis est accepté. Reste à sortir un contrat, à le relire, à trouver la bonne adresse. Un modèle, deux dates, et il part.
+
+On part de la fiche d'une entreprise, et on ressort avec un contrat envoyé. La bibliothèque propose des modèles, le formulaire tient en quatre champs, et le logiciel confirme l'envoi.
+
+Panneau Finance : créer un contrat.
+
+La bibliothèque annonce ses modèles. Chacun dit ce qu'il couvre.
+
+Le destinataire est déjà rempli : c'est le client de la fiche.
+
+Puis les deux bornes. La date de début ouvre l'engagement, la date de fin le referme. C'est elle qui dira, plus tard, qu'il faut renouveler.
+
+Le message qui portera le contrat, puis envoyer.
+
+Le bandeau confirme : le contrat est envoyé. Il rejoint l'historique du client, où on ira lire son statut.
+
+Un contrat envoyé n'est pas un contrat signé. Pour voir ceux qui attendent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Un modèle, deux dates, un message : le contrat part le jour où le devis est accepté.

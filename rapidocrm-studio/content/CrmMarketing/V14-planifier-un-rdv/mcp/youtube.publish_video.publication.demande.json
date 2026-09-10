@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V14-06-planifier-un-rdv.mp4",
+    "titre": "Planifier un rendez-vous — RapidoCRM",
+    "description": "Un seul formulaire, et tout le monde est prévenu.\n\nOn part de la fiche d'une entreprise, et on ressort avec un rendez-vous posé. Un titre, un créneau, les invités, le type, le rappel : le formulaire descend dans cet ordre.\n\nChapitres\n00:00 Le rendez-vous est calé. Reste à prévenir le client, l'équipe, et à penser au rappel la veille.\n00:10 Planifier un RDV\n00:19 Ouvrir « Prendre un rendez-vous »\n00:21 Donner un titre au rendez-vous\n00:27 Fixer le créneau, début et fin\n00:47 Choisir les invités et les organisateurs\n00:59 Type de rendez-vous, rappel et mode d'envoi\n01:04 Ajouter une note et enregistrer\n01:08 Faites-le avec Claude\n01:19 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] rendez-vous de la semaine avec leur date et leur statut.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/06-planifier-un-rdv\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "rendez-vous",
+      "agenda",
+      "CRM",
+      "rappel",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "CrmMarketing"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V14-06-planifier-un-rdv-thumb.jpg",
+    "playlist": "RapidoCRM — CrmMarketing",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T23:29:24.878Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

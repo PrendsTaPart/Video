@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Vous savez ce que vous facturez. Ce que vous dépensez, beaucoup moins. Quatre cartes, un tableau, et le compte est clair."
+  },
+  {
+    "timestamp_secondes": 8,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la page Facturation, et on ressort avec une vue claire des sorties. Les dépenses sont le troisième onglet, à côté des factures et des devis. Quatre cartes donnent la photo, le tableau donne le détail."
+  },
+  {
+    "timestamp_secondes": 21,
+    "titre": "Ouvrir l'onglet dépenses",
+    "texte": "Troisième onglet : dépenses. En haut, ce qui est dépensé, ce qui reste dû, ce qui est payé."
+  },
+  {
+    "timestamp_secondes": 27,
+    "titre": "Lire le tableau des dépenses",
+    "texte": "Et la quatrième carte : les bénéfices, une fois les dépenses retirées. Puis le tableau, ligne par ligne, avec son entreprise et son montant."
+  },
+  {
+    "timestamp_secondes": 36,
+    "titre": "Filtrer et trier la liste",
+    "texte": "Deux filtres au-dessus, statut et entreprise. Et les colonnes se trient d'un clic sur leur titre."
+  },
+  {
+    "timestamp_secondes": 42,
+    "titre": "Ouvrir le menu d'une dépense",
+    "texte": "Les trois points ouvrent le menu. Trois entrées ici, pas quatre : une dépense ne se visualise pas."
+  },
+  {
+    "timestamp_secondes": 48,
+    "titre": "Remonter à la fiche de l'entreprise",
+    "texte": "La dernière remonte à la fiche du fournisseur."
+  },
+  {
+    "timestamp_secondes": 52,
+    "titre": "Faites-le avec Claude",
+    "texte": "Vos sorties sont sous les yeux. Pour savoir ce qui reste à régler sans filtrer, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 66,
+    "titre": "À retenir",
+    "texte": "Ce qui sort se lit aussi vite que ce qui rentre."
+  }
+]

@@ -1,0 +1,124 @@
+{
+  "fonctionnalite": "Créer puis modifier une facture",
+  "a_quoi_ca_sert": "Établir une facture depuis le CRM sans repasser par un tableur : on choisit l'entreprise et le produit, le logiciel calcule les montants, et la facture rejoint la liste où elle reste modifiable.",
+  "pour_qui": "Gérant, comptable ou assistant qui facture ses clients",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir au moins une entreprise cliente enregistrée",
+    "Avoir au moins un produit au catalogue"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Entreprise",
+      "obligatoire": true,
+      "explication": "Le client facturé. La liste reprend les entreprises déjà enregistrées dans le CRM."
+    },
+    {
+      "nom": "Choisir un produit",
+      "obligatoire": true,
+      "explication": "Les produits s'affichent en cartes, avec leur nom et leur prix hors taxes. C'est ce choix qui remplit les montants."
+    },
+    {
+      "nom": "Date de la facture",
+      "obligatoire": true,
+      "explication": "Au format jour, mois, année. Elle apparaît dans la colonne Date de création de la liste."
+    },
+    {
+      "nom": "Prix HT, TVA, TTC",
+      "obligatoire": true,
+      "explication": "Repris du produit choisi. Le TTC découle du HT et du taux, il ne se saisit pas à la main."
+    },
+    {
+      "nom": "Remise",
+      "obligatoire": false,
+      "explication": "Exprimée en pourcentage. Elle donne le prix avec remise, puis le Total TTC final."
+    },
+    {
+      "nom": "Délai pour le paiement",
+      "obligatoire": true,
+      "explication": "Choisi dans une liste — quatorze jours par exemple. C'est l'échéance annoncée au client."
+    },
+    {
+      "nom": "Mentions légales supplémentaires",
+      "obligatoire": false,
+      "explication": "Un texte libre repris sur le document, du type « Paiement à 14 jours. Pénalités de retard selon les mentions légales en vigueur »."
+    },
+    {
+      "nom": "Statut",
+      "obligatoire": true,
+      "explication": "Payée ou En attente. C'est lui qui colore la ligne dans la liste des factures."
+    },
+    {
+      "nom": "Email",
+      "obligatoire": true,
+      "explication": "Oui ou Non : envoyer la facture au client directement depuis RapidoCRM, ou seulement l'enregistrer."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_factures",
+      "role": "Liste les factures du CRM, filtrables par statut et par période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["statut", "periode", "limit"],
+      "exemple_appel": { "statut": "en_attente", "limit": 10 }
+    },
+    {
+      "nom": "get_facture",
+      "role": "Détail complet d'une facture à partir de son identifiant. Lecture seule.",
+      "parametres_obligatoires": ["facture_id"],
+      "parametres_optionnels": [],
+      "exemple_appel": { "facture_id": 3 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Renseignez le délai de paiement et les mentions légales dès la création : une facture muette sur l'échéance se relance plus mal.",
+    "Laissez le TTC se calculer. Le corriger à la main revient à créer un écart entre le document et le catalogue."
+  ],
+  "erreurs_frequentes": [
+    "Chercher à saisir le TTC : il découle du prix hors taxes et de la TVA du produit.",
+    "Laisser le statut sur En attente une fois le règlement reçu — la liste continue alors d'afficher la facture comme impayée."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Facturer une prestation vendue au catalogue",
+      "contexte": "Le produit existe déjà, le client aussi.",
+      "resultat_attendu": "La facture est établie en quelques champs, montants compris, et part au client si vous le demandez."
+    },
+    {
+      "titre": "Corriger une facture émise trop vite",
+      "contexte": "Le produit facturé n'était pas le bon.",
+      "resultat_attendu": "La fiche se rouvre, le produit se change, et un bandeau confirme la modification."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le TTC se calcule tout seul",
+      "contenu": "Prix HT et TVA viennent du produit ; le TTC en découle. Sur l'enregistrement : 4 800 € hors taxes, 960 € de TVA, 5 760 € toutes taxes comprises.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "La remise se lit en bas du formulaire",
+      "contenu": "Le récapitulatif rappelle Total HT, TVA, Total TTC, Remise puis Total TTC final. C'est cette dernière ligne que le client paiera.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Tout reste modifiable",
+      "contenu": "Une facture enregistrée se rouvre depuis la liste : le formulaire revient tel quel, et la confirmation « Facture modifiée avec succès » clôt l'opération.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Faire le point sur ses factures en attente",
+    "texte": "Liste-moi mes [nombre] dernières factures avec leur statut et leur montant.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_factures"
+  },
+  "sources": {
+    "champs_cles": "frames 00:03 à 00:26 de l'enregistrement : formulaire de création — charte graphique, Informations/Entreprise, Choisir un produit, Date de la facture, Prix HT/TVA/TTC, Remise, Délai pour le paiement, Mentions légales, Statut, Email",
+    "a_quoi_ca_sert": "frames 00:00 et 00:30 : page Facturation avec ses onglets facture/devis/dépenses et le bouton « créer une facture » ; bandeau « Facture créée avec succès » et nouvelle ligne au tableau",
+    "astuces": "frame 00:12 : Prix HT 4800, TVA 960, TTC 5760 remplis à la sélection du produit ; frame 00:25 : récapitulatif Total HT / TVA / Total TTC / Remise / Total TTC final ; frame 00:50 : bandeau « Facture modifiée avec succès »",
+    "erreurs_frequentes": "frame 00:12 : le champ TTC est alimenté par le produit ; frame 00:20 : le bloc Statut propose Payée ou En attente",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Un outil de création de facture existe côté CRM mais n'est pas utilisé ici : ce pipeline n'écrit jamais dans le CRM, et le tutoriel montre la création depuis l'interface. Le prompt proposé lit les factures."
+  },
+  "a_verifier": []
+}

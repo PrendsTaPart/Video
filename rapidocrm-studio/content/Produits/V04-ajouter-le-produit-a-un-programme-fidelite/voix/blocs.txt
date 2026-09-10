@@ -1,0 +1,8 @@
+file '/home/user/Video/rapidocrm-studio/content/Produits/V04-ajouter-le-produit-a-un-programme-fidelite/voix/hook.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Produits/V04-ajouter-le-produit-a-un-programme-fidelite/voix/intro.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Produits/V04-ajouter-le-produit-a-un-programme-fidelite/voix/etape-01.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Produits/V04-ajouter-le-produit-a-un-programme-fidelite/voix/etape-02.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Produits/V04-ajouter-le-produit-a-un-programme-fidelite/voix/etape-03.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Produits/V04-ajouter-le-produit-a-un-programme-fidelite/voix/etape-04.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Produits/V04-ajouter-le-produit-a-un-programme-fidelite/voix/claude.mp3'
+file '/home/user/Video/rapidocrm-studio/content/Produits/V04-ajouter-le-produit-a-un-programme-fidelite/voix/punchline.mp3'

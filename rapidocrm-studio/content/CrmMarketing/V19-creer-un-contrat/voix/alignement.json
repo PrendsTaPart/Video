@@ -1,0 +1,1035 @@
+{
+  "duree_totale": 69.55199999999999,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 7.968,
+      "texte": "Le devis est accepté. Reste à sortir un contrat, à le relire, à trouver la bonne adresse. Un modèle, deux dates, et il part.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.186
+        },
+        {
+          "mot": "devis",
+          "debut": 0.209,
+          "fin": 0.453
+        },
+        {
+          "mot": "est",
+          "debut": 0.476,
+          "fin": 0.546
+        },
+        {
+          "mot": "accepté.",
+          "debut": 0.615,
+          "fin": 1.242
+        },
+        {
+          "mot": "Reste",
+          "debut": 1.521,
+          "fin": 1.788
+        },
+        {
+          "mot": "à",
+          "debut": 1.811,
+          "fin": 1.834
+        },
+        {
+          "mot": "sortir",
+          "debut": 1.892,
+          "fin": 2.194
+        },
+        {
+          "mot": "un",
+          "debut": 2.241,
+          "fin": 2.287
+        },
+        {
+          "mot": "contrat,",
+          "debut": 2.345,
+          "fin": 2.775
+        },
+        {
+          "mot": "à",
+          "debut": 2.833,
+          "fin": 2.879
+        },
+        {
+          "mot": "le",
+          "debut": 2.949,
+          "fin": 3.007
+        },
+        {
+          "mot": "relire,",
+          "debut": 3.077,
+          "fin": 3.529
+        },
+        {
+          "mot": "à",
+          "debut": 3.599,
+          "fin": 3.646
+        },
+        {
+          "mot": "trouver",
+          "debut": 3.715,
+          "fin": 3.947
+        },
+        {
+          "mot": "la",
+          "debut": 3.971,
+          "fin": 4.029
+        },
+        {
+          "mot": "bonne",
+          "debut": 4.075,
+          "fin": 4.249
+        },
+        {
+          "mot": "adresse.",
+          "debut": 4.272,
+          "fin": 4.69
+        },
+        {
+          "mot": "Un",
+          "debut": 4.818,
+          "fin": 4.934
+        },
+        {
+          "mot": "modèle,",
+          "debut": 4.969,
+          "fin": 5.503
+        },
+        {
+          "mot": "deux",
+          "debut": 5.654,
+          "fin": 5.805
+        },
+        {
+          "mot": "dates,",
+          "debut": 5.84,
+          "fin": 6.246
+        },
+        {
+          "mot": "et",
+          "debut": 6.397,
+          "fin": 6.478
+        },
+        {
+          "mot": "il",
+          "debut": 6.513,
+          "fin": 6.618
+        },
+        {
+          "mot": "part.",
+          "debut": 6.699,
+          "fin": 7.024
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 7.968,
+      "duree": 10.848,
+      "texte": "On part de la fiche d'une entreprise, et on ressort avec un contrat envoyé. La bibliothèque propose des modèles, le formulaire tient en quatre champs, et le logiciel confirme l'envoi.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.128
+        },
+        {
+          "mot": "part",
+          "debut": 0.163,
+          "fin": 0.302
+        },
+        {
+          "mot": "de",
+          "debut": 0.325,
+          "fin": 0.383
+        },
+        {
+          "mot": "la",
+          "debut": 0.418,
+          "fin": 0.476
+        },
+        {
+          "mot": "fiche",
+          "debut": 0.534,
+          "fin": 0.72
+        },
+        {
+          "mot": "d'une",
+          "debut": 0.743,
+          "fin": 0.906
+        },
+        {
+          "mot": "entreprise,",
+          "debut": 0.929,
+          "fin": 1.567
+        },
+        {
+          "mot": "et",
+          "debut": 1.602,
+          "fin": 1.707
+        },
+        {
+          "mot": "on",
+          "debut": 1.753,
+          "fin": 1.811
+        },
+        {
+          "mot": "ressort",
+          "debut": 1.846,
+          "fin": 2.159
+        },
+        {
+          "mot": "avec",
+          "debut": 2.183,
+          "fin": 2.38
+        },
+        {
+          "mot": "un",
+          "debut": 2.438,
+          "fin": 2.485
+        },
+        {
+          "mot": "contrat",
+          "debut": 2.531,
+          "fin": 2.833
+        },
+        {
+          "mot": "envoyé.",
+          "debut": 2.868,
+          "fin": 3.355
+        },
+        {
+          "mot": "La",
+          "debut": 3.634,
+          "fin": 3.727
+        },
+        {
+          "mot": "bibliothèque",
+          "debut": 3.762,
+          "fin": 4.226
+        },
+        {
+          "mot": "propose",
+          "debut": 4.249,
+          "fin": 4.772
+        },
+        {
+          "mot": "des",
+          "debut": 4.865,
+          "fin": 5.004
+        },
+        {
+          "mot": "modèles,",
+          "debut": 5.027,
+          "fin": 5.503
+        },
+        {
+          "mot": "le",
+          "debut": 5.712,
+          "fin": 5.782
+        },
+        {
+          "mot": "formulaire",
+          "debut": 5.84,
+          "fin": 6.235
+        },
+        {
+          "mot": "tient",
+          "debut": 6.269,
+          "fin": 6.478
+        },
+        {
+          "mot": "en",
+          "debut": 6.536,
+          "fin": 6.583
+        },
+        {
+          "mot": "quatre",
+          "debut": 6.629,
+          "fin": 6.896
+        },
+        {
+          "mot": "champs,",
+          "debut": 6.943,
+          "fin": 7.245
+        },
+        {
+          "mot": "et",
+          "debut": 7.396,
+          "fin": 7.5
+        },
+        {
+          "mot": "le",
+          "debut": 7.535,
+          "fin": 7.593
+        },
+        {
+          "mot": "logiciel",
+          "debut": 7.639,
+          "fin": 8.139
+        },
+        {
+          "mot": "confirme",
+          "debut": 8.313,
+          "fin": 8.742
+        },
+        {
+          "mot": "l'envoi.",
+          "debut": 8.766,
+          "fin": 9.137
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 18.816000000000003,
+      "duree": 3,
+      "texte": "Panneau Finance : créer un contrat.",
+      "mots": [
+        {
+          "mot": "Panneau",
+          "debut": 0,
+          "fin": 0.313
+        },
+        {
+          "mot": "Finance",
+          "debut": 0.36,
+          "fin": 0.813
+        },
+        {
+          "mot": ":",
+          "debut": 0.848,
+          "fin": 0.882
+        },
+        {
+          "mot": "créer",
+          "debut": 1.126,
+          "fin": 1.416
+        },
+        {
+          "mot": "un",
+          "debut": 1.451,
+          "fin": 1.498
+        },
+        {
+          "mot": "contrat.",
+          "debut": 1.544,
+          "fin": 1.962
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 21.816000000000003,
+      "duree": 3.744,
+      "texte": "La bibliothèque annonce ses modèles. Chacun dit ce qu'il couvre.",
+      "mots": [
+        {
+          "mot": "La",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "bibliothèque",
+          "debut": 0.186,
+          "fin": 0.697
+        },
+        {
+          "mot": "annonce",
+          "debut": 0.72,
+          "fin": 0.964
+        },
+        {
+          "mot": "ses",
+          "debut": 0.987,
+          "fin": 1.103
+        },
+        {
+          "mot": "modèles.",
+          "debut": 1.138,
+          "fin": 1.556
+        },
+        {
+          "mot": "Chacun",
+          "debut": 1.637,
+          "fin": 1.95
+        },
+        {
+          "mot": "dit",
+          "debut": 1.997,
+          "fin": 2.101
+        },
+        {
+          "mot": "ce",
+          "debut": 2.125,
+          "fin": 2.218
+        },
+        {
+          "mot": "qu'il",
+          "debut": 2.264,
+          "fin": 2.392
+        },
+        {
+          "mot": "couvre.",
+          "debut": 2.438,
+          "fin": 2.798
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 25.560000000000002,
+      "duree": 4.008,
+      "texte": "Le destinataire est déjà rempli : c'est le client de la fiche.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "destinataire",
+          "debut": 0.197,
+          "fin": 0.755
+        },
+        {
+          "mot": "est",
+          "debut": 0.778,
+          "fin": 0.848
+        },
+        {
+          "mot": "déjà",
+          "debut": 0.917,
+          "fin": 1.173
+        },
+        {
+          "mot": "rempli",
+          "debut": 1.207,
+          "fin": 1.544
+        },
+        {
+          "mot": ":",
+          "debut": 1.567,
+          "fin": 1.614
+        },
+        {
+          "mot": "c'est",
+          "debut": 1.788,
+          "fin": 1.985
+        },
+        {
+          "mot": "le",
+          "debut": 2.009,
+          "fin": 2.078
+        },
+        {
+          "mot": "client",
+          "debut": 2.113,
+          "fin": 2.38
+        },
+        {
+          "mot": "de",
+          "debut": 2.403,
+          "fin": 2.45
+        },
+        {
+          "mot": "la",
+          "debut": 2.485,
+          "fin": 2.543
+        },
+        {
+          "mot": "fiche.",
+          "debut": 2.612,
+          "fin": 3.019
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 29.568,
+      "duree": 9.264,
+      "texte": "Puis les deux bornes. La date de début ouvre l'engagement, la date de fin le referme. C'est elle qui dira, plus tard, qu'il faut renouveler.",
+      "mots": [
+        {
+          "mot": "Puis",
+          "debut": 0,
+          "fin": 0.279
+        },
+        {
+          "mot": "les",
+          "debut": 0.302,
+          "fin": 0.395
+        },
+        {
+          "mot": "deux",
+          "debut": 0.43,
+          "fin": 0.546
+        },
+        {
+          "mot": "bornes.",
+          "debut": 0.58,
+          "fin": 0.998
+        },
+        {
+          "mot": "La",
+          "debut": 1.509,
+          "fin": 1.602
+        },
+        {
+          "mot": "date",
+          "debut": 1.649,
+          "fin": 1.823
+        },
+        {
+          "mot": "de",
+          "debut": 1.846,
+          "fin": 1.927
+        },
+        {
+          "mot": "début",
+          "debut": 1.974,
+          "fin": 2.299
+        },
+        {
+          "mot": "ouvre",
+          "debut": 2.334,
+          "fin": 2.566
+        },
+        {
+          "mot": "l'engagement,",
+          "debut": 2.589,
+          "fin": 3.297
+        },
+        {
+          "mot": "la",
+          "debut": 3.471,
+          "fin": 3.553
+        },
+        {
+          "mot": "date",
+          "debut": 3.611,
+          "fin": 3.82
+        },
+        {
+          "mot": "de",
+          "debut": 3.843,
+          "fin": 3.947
+        },
+        {
+          "mot": "fin",
+          "debut": 4.029,
+          "fin": 4.238
+        },
+        {
+          "mot": "le",
+          "debut": 4.272,
+          "fin": 4.319
+        },
+        {
+          "mot": "referme.",
+          "debut": 4.389,
+          "fin": 5.039
+        },
+        {
+          "mot": "C'est",
+          "debut": 5.642,
+          "fin": 5.851
+        },
+        {
+          "mot": "elle",
+          "debut": 5.921,
+          "fin": 6.026
+        },
+        {
+          "mot": "qui",
+          "debut": 6.06,
+          "fin": 6.153
+        },
+        {
+          "mot": "dira,",
+          "debut": 6.2,
+          "fin": 6.653
+        },
+        {
+          "mot": "plus",
+          "debut": 6.711,
+          "fin": 6.873
+        },
+        {
+          "mot": "tard,",
+          "debut": 6.896,
+          "fin": 7.303
+        },
+        {
+          "mot": "qu'il",
+          "debut": 7.419,
+          "fin": 7.581
+        },
+        {
+          "mot": "faut",
+          "debut": 7.628,
+          "fin": 7.767
+        },
+        {
+          "mot": "renouveler.",
+          "debut": 7.79,
+          "fin": 8.348
+        }
+      ]
+    },
+    {
+      "id": "etape-05",
+      "fichier": "voix/etape-05.mp3",
+      "debut": 38.832,
+      "duree": 3.168,
+      "texte": "Le message qui portera le contrat, puis envoyer.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "message",
+          "debut": 0.209,
+          "fin": 0.534
+        },
+        {
+          "mot": "qui",
+          "debut": 0.557,
+          "fin": 0.639
+        },
+        {
+          "mot": "portera",
+          "debut": 0.685,
+          "fin": 0.94
+        },
+        {
+          "mot": "le",
+          "debut": 0.975,
+          "fin": 1.022
+        },
+        {
+          "mot": "contrat,",
+          "debut": 1.045,
+          "fin": 1.486
+        },
+        {
+          "mot": "puis",
+          "debut": 1.509,
+          "fin": 1.695
+        },
+        {
+          "mot": "envoyer.",
+          "debut": 1.73,
+          "fin": 2.194
+        }
+      ]
+    },
+    {
+      "id": "etape-06",
+      "fichier": "voix/etape-06.mp3",
+      "debut": 42,
+      "duree": 7.08,
+      "texte": "Le bandeau confirme : le contrat est envoyé. Il rejoint l'historique du client, où on ira lire son statut.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "bandeau",
+          "debut": 0.197,
+          "fin": 0.464
+        },
+        {
+          "mot": "confirme",
+          "debut": 0.499,
+          "fin": 1.08
+        },
+        {
+          "mot": ":",
+          "debut": 1.103,
+          "fin": 1.138
+        },
+        {
+          "mot": "le",
+          "debut": 1.312,
+          "fin": 1.416
+        },
+        {
+          "mot": "contrat",
+          "debut": 1.474,
+          "fin": 1.846
+        },
+        {
+          "mot": "est",
+          "debut": 1.881,
+          "fin": 1.974
+        },
+        {
+          "mot": "envoyé.",
+          "debut": 2.043,
+          "fin": 2.519
+        },
+        {
+          "mot": "Il",
+          "debut": 2.694,
+          "fin": 2.856
+        },
+        {
+          "mot": "rejoint",
+          "debut": 2.949,
+          "fin": 3.32
+        },
+        {
+          "mot": "l'historique",
+          "debut": 3.413,
+          "fin": 4.005
+        },
+        {
+          "mot": "du",
+          "debut": 4.029,
+          "fin": 4.122
+        },
+        {
+          "mot": "client,",
+          "debut": 4.168,
+          "fin": 4.632
+        },
+        {
+          "mot": "où",
+          "debut": 4.714,
+          "fin": 4.876
+        },
+        {
+          "mot": "on",
+          "debut": 4.923,
+          "fin": 4.992
+        },
+        {
+          "mot": "ira",
+          "debut": 5.062,
+          "fin": 5.236
+        },
+        {
+          "mot": "lire",
+          "debut": 5.294,
+          "fin": 5.48
+        },
+        {
+          "mot": "son",
+          "debut": 5.503,
+          "fin": 5.631
+        },
+        {
+          "mot": "statut.",
+          "debut": 5.654,
+          "fin": 6.153
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 49.08,
+      "duree": 14.376,
+      "texte": "Un contrat envoyé n'est pas un contrat signé. Pour voir ceux qui attendent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "contrat",
+          "debut": 0.209,
+          "fin": 0.592
+        },
+        {
+          "mot": "envoyé",
+          "debut": 0.627,
+          "fin": 1.115
+        },
+        {
+          "mot": "n'est",
+          "debut": 1.44,
+          "fin": 1.602
+        },
+        {
+          "mot": "pas",
+          "debut": 1.637,
+          "fin": 1.811
+        },
+        {
+          "mot": "un",
+          "debut": 1.858,
+          "fin": 1.904
+        },
+        {
+          "mot": "contrat",
+          "debut": 1.939,
+          "fin": 2.229
+        },
+        {
+          "mot": "signé.",
+          "debut": 2.252,
+          "fin": 2.67
+        },
+        {
+          "mot": "Pour",
+          "debut": 2.844,
+          "fin": 3.03
+        },
+        {
+          "mot": "voir",
+          "debut": 3.1,
+          "fin": 3.286
+        },
+        {
+          "mot": "ceux",
+          "debut": 3.355,
+          "fin": 3.495
+        },
+        {
+          "mot": "qui",
+          "debut": 3.529,
+          "fin": 3.611
+        },
+        {
+          "mot": "attendent,",
+          "debut": 3.646,
+          "fin": 4.168
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 4.412,
+          "fin": 5.399
+        },
+        {
+          "mot": "parle",
+          "debut": 5.526,
+          "fin": 5.805
+        },
+        {
+          "mot": "à",
+          "debut": 5.828,
+          "fin": 5.851
+        },
+        {
+          "mot": "Claude",
+          "debut": 5.898,
+          "fin": 6.258
+        },
+        {
+          "mot": ":",
+          "debut": 6.293,
+          "fin": 6.362
+        },
+        {
+          "mot": "vous",
+          "debut": 6.687,
+          "fin": 6.827
+        },
+        {
+          "mot": "demandez",
+          "debut": 6.861,
+          "fin": 7.198
+        },
+        {
+          "mot": "en",
+          "debut": 7.233,
+          "fin": 7.279
+        },
+        {
+          "mot": "français,",
+          "debut": 7.338,
+          "fin": 7.964
+        },
+        {
+          "mot": "il",
+          "debut": 8.173,
+          "fin": 8.29
+        },
+        {
+          "mot": "lit",
+          "debut": 8.359,
+          "fin": 8.475
+        },
+        {
+          "mot": "vos",
+          "debut": 8.51,
+          "fin": 8.638
+        },
+        {
+          "mot": "données",
+          "debut": 8.661,
+          "fin": 9.056
+        },
+        {
+          "mot": "et",
+          "debut": 9.125,
+          "fin": 9.288
+        },
+        {
+          "mot": "répond.",
+          "debut": 9.334,
+          "fin": 9.752
+        },
+        {
+          "mot": "Copiez",
+          "debut": 10.031,
+          "fin": 10.356
+        },
+        {
+          "mot": "ce",
+          "debut": 10.391,
+          "fin": 10.484
+        },
+        {
+          "mot": "prompt,",
+          "debut": 10.542,
+          "fin": 11.006
+        },
+        {
+          "mot": "remplacez",
+          "debut": 11.18,
+          "fin": 11.668
+        },
+        {
+          "mot": "ce",
+          "debut": 11.703,
+          "fin": 11.796
+        },
+        {
+          "mot": "qui",
+          "debut": 11.854,
+          "fin": 11.97
+        },
+        {
+          "mot": "est",
+          "debut": 12.04,
+          "fin": 12.156
+        },
+        {
+          "mot": "entre",
+          "debut": 12.307,
+          "fin": 12.655
+        },
+        {
+          "mot": "crochets.",
+          "debut": 12.701,
+          "fin": 13.189
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 63.455999999999996,
+      "duree": 6.096,
+      "texte": "Un modèle, deux dates, un message : le contrat part le jour où le devis est accepté.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.186
+        },
+        {
+          "mot": "modèle,",
+          "debut": 0.209,
+          "fin": 0.708
+        },
+        {
+          "mot": "deux",
+          "debut": 0.987,
+          "fin": 1.126
+        },
+        {
+          "mot": "dates,",
+          "debut": 1.161,
+          "fin": 1.509
+        },
+        {
+          "mot": "un",
+          "debut": 1.683,
+          "fin": 1.776
+        },
+        {
+          "mot": "message",
+          "debut": 1.811,
+          "fin": 2.241
+        },
+        {
+          "mot": ":",
+          "debut": 2.299,
+          "fin": 2.334
+        },
+        {
+          "mot": "le",
+          "debut": 2.577,
+          "fin": 2.659
+        },
+        {
+          "mot": "contrat",
+          "debut": 2.717,
+          "fin": 3.077
+        },
+        {
+          "mot": "part",
+          "debut": 3.111,
+          "fin": 3.297
+        },
+        {
+          "mot": "le",
+          "debut": 3.32,
+          "fin": 3.39
+        },
+        {
+          "mot": "jour",
+          "debut": 3.46,
+          "fin": 3.796
+        },
+        {
+          "mot": "où",
+          "debut": 3.866,
+          "fin": 4.029
+        },
+        {
+          "mot": "le",
+          "debut": 4.075,
+          "fin": 4.133
+        },
+        {
+          "mot": "devis",
+          "debut": 4.18,
+          "fin": 4.447
+        },
+        {
+          "mot": "est",
+          "debut": 4.481,
+          "fin": 4.563
+        },
+        {
+          "mot": "accepté.",
+          "debut": 4.632,
+          "fin": 5.132
+        }
+      ]
+    }
+  ]
+}

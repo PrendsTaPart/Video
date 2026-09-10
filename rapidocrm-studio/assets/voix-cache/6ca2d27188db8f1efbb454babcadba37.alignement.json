@@ -1,0 +1,82 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "délai",
+    "debut": 0.209,
+    "fin": 0.395
+  },
+  {
+    "mot": "de",
+    "debut": 0.418,
+    "fin": 0.464
+  },
+  {
+    "mot": "paiement,",
+    "debut": 0.488,
+    "fin": 0.917
+  },
+  {
+    "mot": "les",
+    "debut": 0.94,
+    "fin": 1.033
+  },
+  {
+    "mot": "mentions",
+    "debut": 1.068,
+    "fin": 1.416
+  },
+  {
+    "mot": "légales,",
+    "debut": 1.44,
+    "fin": 1.962
+  },
+  {
+    "mot": "le",
+    "debut": 2.09,
+    "fin": 2.183
+  },
+  {
+    "mot": "statut.",
+    "debut": 2.218,
+    "fin": 2.81
+  },
+  {
+    "mot": "Le",
+    "debut": 3.088,
+    "fin": 3.204
+  },
+  {
+    "mot": "logiciel",
+    "debut": 3.228,
+    "fin": 3.622
+  },
+  {
+    "mot": "peut",
+    "debut": 3.692,
+    "fin": 3.878
+  },
+  {
+    "mot": "aussi",
+    "debut": 3.901,
+    "fin": 4.261
+  },
+  {
+    "mot": "envoyer",
+    "debut": 4.331,
+    "fin": 4.644
+  },
+  {
+    "mot": "la",
+    "debut": 4.667,
+    "fin": 4.714
+  },
+  {
+    "mot": "facture.",
+    "debut": 4.76,
+    "fin": 5.248
+  }
+]

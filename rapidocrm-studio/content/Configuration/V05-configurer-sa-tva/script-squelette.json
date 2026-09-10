@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "module": "Configuration",
+    "numero": 5,
+    "titre": "Créer et modifier ses taux de TVA",
+    "titre_court": "Créer et modifier ses taux d",
+    "slug": "creer-et-modifier-ses-taux-de-tva"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'onglet TVA",
+        "voix": "",
+        "debut_source": 0,
+        "fin_source": 4,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.15,
+          "w": 0.96,
+          "h": 0.75
+        },
+        "annotation": "Ouvrir l'onglet TVA"
+      },
+      {
+        "numero": 2,
+        "titre": "Ajouter un taux",
+        "voix": "",
+        "debut_source": 4,
+        "fin_source": 14.5,
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.1,
+          "w": 0.34,
+          "h": 0.8
+        },
+        "annotation": "Ajouter un taux"
+      },
+      {
+        "numero": 3,
+        "titre": "Confirmer l'ajout",
+        "voix": "",
+        "debut_source": 14.5,
+        "fin_source": 18.5,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.02,
+          "w": 0.96,
+          "h": 0.7
+        },
+        "annotation": "Confirmer l'ajout"
+      },
+      {
+        "numero": 4,
+        "titre": "Modifier un taux",
+        "voix": "",
+        "debut_source": 18.5,
+        "fin_source": 27.5,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.15,
+          "w": 0.96,
+          "h": 0.65
+        },
+        "annotation": "Modifier un taux"
+      },
+      {
+        "numero": 5,
+        "titre": "Vérifier le nouveau taux",
+        "voix": "",
+        "debut_source": 27.5,
+        "fin_source": 32.32,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.35,
+          "w": 0.96,
+          "h": 0.45
+        },
+        "annotation": "Vérifier le nouveau taux"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] dernières factures avec leur montant total.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_factures"
+    }
+  }
+}

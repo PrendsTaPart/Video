@@ -1,0 +1,42 @@
+[
+  {
+    "mot": "Ici,",
+    "debut": 0,
+    "fin": 0.325
+  },
+  {
+    "mot": "le",
+    "debut": 0.348,
+    "fin": 0.418
+  },
+  {
+    "mot": "numéro",
+    "debut": 0.453,
+    "fin": 0.743
+  },
+  {
+    "mot": "du",
+    "debut": 0.778,
+    "fin": 0.859
+  },
+  {
+    "mot": "destinataire",
+    "debut": 0.906,
+    "fin": 1.556
+  },
+  {
+    "mot": "est",
+    "debut": 1.579,
+    "fin": 1.672
+  },
+  {
+    "mot": "une",
+    "debut": 1.753,
+    "fin": 1.846
+  },
+  {
+    "mot": "colonne.",
+    "debut": 1.881,
+    "fin": 2.31
+  }
+]

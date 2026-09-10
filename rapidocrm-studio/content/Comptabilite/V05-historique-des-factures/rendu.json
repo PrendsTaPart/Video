@@ -1,0 +1,82 @@
+{
+  "duree": 72.56666666666666,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V05-historique-des-factures/out/master-16x9.mp4",
+      "octets": 13084788
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V05-historique-des-factures/out/master-9x16.mp4",
+      "octets": 10556837
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.6
+    },
+    {
+      "nom": "titre",
+      "debut": 9.6,
+      "fin": 24.933333333333334
+    },
+    {
+      "nom": "demo",
+      "debut": 24.933333333333334,
+      "fin": 55.266666666666666
+    },
+    {
+      "nom": "claude",
+      "debut": 55.266666666666666,
+      "fin": 69.1
+    },
+    {
+      "nom": "punchline",
+      "debut": 69.1,
+      "fin": 72.56666666666666
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Un client conteste une facture d'il y a six mois. Vous, vous faites défiler la liste."
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Retrouver une facture dans l'historique"
+    },
+    {
+      "timecode": "00:24",
+      "titre": "Ouvrir l'historique"
+    },
+    {
+      "timecode": "00:31",
+      "titre": "Croiser les deux filtres"
+    },
+    {
+      "timecode": "00:40",
+      "titre": "Lire ce qui a été retenu"
+    },
+    {
+      "timecode": "00:49",
+      "titre": "Visualiser ou télécharger"
+    },
+    {
+      "timecode": "00:55",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:09",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 73s, hors de la fenêtre 80–170s."
+  ]
+}

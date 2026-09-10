@@ -1,0 +1,152 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "part",
+    "debut": 0.174,
+    "fin": 0.313
+  },
+  {
+    "mot": "de",
+    "debut": 0.337,
+    "fin": 0.383
+  },
+  {
+    "mot": "la",
+    "debut": 0.43,
+    "fin": 0.499
+  },
+  {
+    "mot": "fiche",
+    "debut": 0.557,
+    "fin": 0.743
+  },
+  {
+    "mot": "d'une",
+    "debut": 0.766,
+    "fin": 0.906
+  },
+  {
+    "mot": "entreprise,",
+    "debut": 0.929,
+    "fin": 1.463
+  },
+  {
+    "mot": "et",
+    "debut": 1.498,
+    "fin": 1.567
+  },
+  {
+    "mot": "on",
+    "debut": 1.625,
+    "fin": 1.672
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.707,
+    "fin": 2.009
+  },
+  {
+    "mot": "avec",
+    "debut": 2.032,
+    "fin": 2.229
+  },
+  {
+    "mot": "un",
+    "debut": 2.287,
+    "fin": 2.334
+  },
+  {
+    "mot": "document",
+    "debut": 2.403,
+    "fin": 2.798
+  },
+  {
+    "mot": "attaché.",
+    "debut": 2.833,
+    "fin": 3.332
+  },
+  {
+    "mot": "Deux",
+    "debut": 3.413,
+    "fin": 3.587
+  },
+  {
+    "mot": "champs",
+    "debut": 3.611,
+    "fin": 3.808
+  },
+  {
+    "mot": "seulement",
+    "debut": 3.831,
+    "fin": 4.168
+  },
+  {
+    "mot": ":",
+    "debut": 4.214,
+    "fin": 4.238
+  },
+  {
+    "mot": "un",
+    "debut": 4.331,
+    "fin": 4.447
+  },
+  {
+    "mot": "nom,",
+    "debut": 4.493,
+    "fin": 4.737
+  },
+  {
+    "mot": "un",
+    "debut": 4.795,
+    "fin": 4.911
+  },
+  {
+    "mot": "fichier.",
+    "debut": 4.957,
+    "fin": 5.41
+  },
+  {
+    "mot": "Le",
+    "debut": 5.584,
+    "fin": 5.677
+  },
+  {
+    "mot": "nom",
+    "debut": 5.724,
+    "fin": 5.84
+  },
+  {
+    "mot": "qu'on",
+    "debut": 5.875,
+    "fin": 5.991
+  },
+  {
+    "mot": "donne",
+    "debut": 6.037,
+    "fin": 6.223
+  },
+  {
+    "mot": "remplace",
+    "debut": 6.258,
+    "fin": 6.687
+  },
+  {
+    "mot": "celui",
+    "debut": 6.722,
+    "fin": 6.978
+  },
+  {
+    "mot": "du",
+    "debut": 7.012,
+    "fin": 7.082
+  },
+  {
+    "mot": "fichier.",
+    "debut": 7.14,
+    "fin": 7.558
+  }
+]

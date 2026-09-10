@@ -1,0 +1,57 @@
+[
+  {
+    "mot": "Et",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "le",
+    "debut": 0.151,
+    "fin": 0.209
+  },
+  {
+    "mot": "quatrième",
+    "debut": 0.267,
+    "fin": 0.662
+  },
+  {
+    "mot": "modèle",
+    "debut": 0.685,
+    "fin": 1.022
+  },
+  {
+    "mot": "prend",
+    "debut": 1.057,
+    "fin": 1.196
+  },
+  {
+    "mot": "sa",
+    "debut": 1.231,
+    "fin": 1.335
+  },
+  {
+    "mot": "place,",
+    "debut": 1.382,
+    "fin": 1.73
+  },
+  {
+    "mot": "prêt",
+    "debut": 1.811,
+    "fin": 2.032
+  },
+  {
+    "mot": "à",
+    "debut": 2.067,
+    "fin": 2.101
+  },
+  {
+    "mot": "être",
+    "debut": 2.148,
+    "fin": 2.357
+  },
+  {
+    "mot": "repris.",
+    "debut": 2.403,
+    "fin": 2.752
+  }
+]

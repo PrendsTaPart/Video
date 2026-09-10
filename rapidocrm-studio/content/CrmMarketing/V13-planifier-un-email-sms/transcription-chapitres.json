@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Il est vingt-deux heures. Vous écrivez le SMS de demain matin, et vous vous notez de l'envoyer à huit heures. Écrivez-le maintenant, le logiciel l'enverra à l'heure dite."
+  },
+  {
+    "timestamp_secondes": 11,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec un SMS programmé. Trois choses à dire : qui le reçoit, quel message, et à quelle date. Tout tient dans une seule fenêtre."
+  },
+  {
+    "timestamp_secondes": 23,
+    "titre": "Ouvrir le panneau Communication de la fiche",
+    "texte": "Le panneau de droite, bloc Communication."
+  },
+  {
+    "timestamp_secondes": 26,
+    "titre": "Choisir « Planifier un SMS »",
+    "texte": "Tout en bas : planifier un SMS."
+  },
+  {
+    "timestamp_secondes": 29,
+    "titre": "Dire à qui le SMS part",
+    "texte": "D'abord la cible. Ici, toutes mes entreprises."
+  },
+  {
+    "timestamp_secondes": 32,
+    "titre": "Choisir le modèle de SMS",
+    "texte": "Puis le modèle. Un aperçu sous chacun."
+  },
+  {
+    "timestamp_secondes": 35,
+    "titre": "Fixer la date et l'heure d'envoi",
+    "texte": "Reste la date et l'heure. C'est ce moment-là qui déclenche l'envoi, pas le clic."
+  },
+  {
+    "timestamp_secondes": 41,
+    "titre": "Valider la planification",
+    "texte": "Envoyer. Le message attendra huit heures du matin."
+  },
+  {
+    "timestamp_secondes": 45,
+    "titre": "Faites-le avec Claude",
+    "texte": "Vos modèles s'accumulent. Pour savoir lesquels vous avez sous la main, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 57,
+    "titre": "À retenir",
+    "texte": "Un message écrit le soir, envoyé le matin : la relance ne dépend plus de votre réveil."
+  }
+]

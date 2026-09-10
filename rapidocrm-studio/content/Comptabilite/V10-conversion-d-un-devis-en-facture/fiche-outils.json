@@ -1,0 +1,17 @@
+{
+  "outils": [
+    {
+      "nom": "list_devis",
+      "description": "",
+      "parametres": []
+    },
+    {
+      "nom": "list_factures",
+      "description": "",
+      "parametres": []
+    }
+  ],
+  "divergences": [
+    "Divergence : « onglet facture » (36.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.186
+  },
+  {
+    "mot": "part",
+    "debut": 0.232,
+    "fin": 0.383
+  },
+  {
+    "mot": "de",
+    "debut": 0.406,
+    "fin": 0.464
+  },
+  {
+    "mot": "la",
+    "debut": 0.499,
+    "fin": 0.557
+  },
+  {
+    "mot": "page",
+    "debut": 0.615,
+    "fin": 0.836
+  },
+  {
+    "mot": "Historique,",
+    "debut": 0.871,
+    "fin": 1.463
+  },
+  {
+    "mot": "et",
+    "debut": 1.498,
+    "fin": 1.591
+  },
+  {
+    "mot": "on",
+    "debut": 1.637,
+    "fin": 1.683
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.73,
+    "fin": 2.02
+  },
+  {
+    "mot": "avec",
+    "debut": 2.043,
+    "fin": 2.218
+  },
+  {
+    "mot": "le",
+    "debut": 2.276,
+    "fin": 2.38
+  },
+  {
+    "mot": "S.M.S.",
+    "debut": 2.415,
+    "fin": 3.007
+  },
+  {
+    "mot": "sous",
+    "debut": 3.065,
+    "fin": 3.239
+  },
+  {
+    "mot": "les",
+    "debut": 3.262,
+    "fin": 3.355
+  },
+  {
+    "mot": "yeux.",
+    "debut": 3.413,
+    "fin": 3.634
+  },
+  {
+    "mot": "Le",
+    "debut": 3.843,
+    "fin": 3.947
+  },
+  {
+    "mot": "tableau",
+    "debut": 4.005,
+    "fin": 4.354
+  },
+  {
+    "mot": "montre",
+    "debut": 4.447,
+    "fin": 4.725
+  },
+  {
+    "mot": "le",
+    "debut": 4.748,
+    "fin": 4.807
+  },
+  {
+    "mot": "numéro",
+    "debut": 4.841,
+    "fin": 5.178
+  },
+  {
+    "mot": "et",
+    "debut": 5.248,
+    "fin": 5.317
+  },
+  {
+    "mot": "la",
+    "debut": 5.352,
+    "fin": 5.422
+  },
+  {
+    "mot": "date",
+    "debut": 5.48,
+    "fin": 5.793
+  },
+  {
+    "mot": ";",
+    "debut": 5.817,
+    "fin": 5.851
+  },
+  {
+    "mot": "l'icône",
+    "debut": 6.06,
+    "fin": 6.49
+  },
+  {
+    "mot": "en",
+    "debut": 6.513,
+    "fin": 6.56
+  },
+  {
+    "mot": "bout",
+    "debut": 6.594,
+    "fin": 6.722
+  },
+  {
+    "mot": "de",
+    "debut": 6.757,
+    "fin": 6.815
+  },
+  {
+    "mot": "ligne",
+    "debut": 6.861,
+    "fin": 7.14
+  },
+  {
+    "mot": "rouvre",
+    "debut": 7.256,
+    "fin": 7.558
+  },
+  {
+    "mot": "le",
+    "debut": 7.581,
+    "fin": 7.628
+  },
+  {
+    "mot": "message.",
+    "debut": 7.663,
+    "fin": 8.15
+  }
+]

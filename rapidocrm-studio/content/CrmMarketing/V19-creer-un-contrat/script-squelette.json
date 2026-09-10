@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 19,
+    "titre": "Créer un contrat depuis un modèle, sur la fiche d'une entreprise",
+    "titre_court": "Créer un contrat depuis un m",
+    "slug": "creer-un-contrat-depuis-un-modele-sur-la-fiche-d-une-entreprise"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir « Créer un contrat » depuis la fiche",
+        "voix": "",
+        "debut_source": 1,
+        "fin_source": 4.5,
+        "zone_focus": {
+          "x": 0.72,
+          "y": 0.3,
+          "w": 0.27,
+          "h": 0.5
+        },
+        "annotation": "Ouvrir « Créer un contrat » depuis la fiche"
+      },
+      {
+        "numero": 2,
+        "titre": "Choisir un modèle dans la bibliothèque",
+        "voix": "",
+        "debut_source": 4.5,
+        "fin_source": 9.5,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.02,
+          "w": 0.44,
+          "h": 0.9
+        },
+        "annotation": "Choisir un modèle dans la bibliothèque"
+      },
+      {
+        "numero": 3,
+        "titre": "Vérifier le destinataire du contrat",
+        "voix": "",
+        "debut_source": 9.5,
+        "fin_source": 15,
+        "zone_focus": {
+          "x": 0.34,
+          "y": 0.05,
+          "w": 0.31,
+          "h": 0.4
+        },
+        "annotation": "Vérifier le destinataire du contrat"
+      },
+      {
+        "numero": 4,
+        "titre": "Fixer les dates de début et de fin",
+        "voix": "",
+        "debut_source": 15,
+        "fin_source": 26,
+        "zone_focus": {
+          "x": 0.34,
+          "y": 0.35,
+          "w": 0.31,
+          "h": 0.35
+        },
+        "annotation": "Fixer les dates de début et de fin"
+      },
+      {
+        "numero": 5,
+        "titre": "Choisir le modèle d'e-mail et envoyer",
+        "voix": "",
+        "debut_source": 26,
+        "fin_source": 31,
+        "zone_focus": {
+          "x": 0.34,
+          "y": 0.55,
+          "w": 0.31,
+          "h": 0.4
+        },
+        "annotation": "Choisir le modèle d'e-mail et envoyer"
+      },
+      {
+        "numero": 6,
+        "titre": "Lire la confirmation",
+        "voix": "",
+        "debut_source": 31,
+        "fin_source": 39,
+        "zone_focus": {
+          "x": 0.68,
+          "y": 0.02,
+          "w": 0.32,
+          "h": 0.25
+        },
+        "annotation": "Lire la confirmation"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] contrats en attente avec leur destinataire et leurs dates.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_contrats"
+    }
+  }
+}

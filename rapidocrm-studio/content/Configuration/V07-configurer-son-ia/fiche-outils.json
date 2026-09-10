@@ -1,0 +1,12 @@
+{
+  "outils": [
+    {
+      "nom": "get_agent_vocal_config",
+      "description": "Affiche la configuration de l'agent vocal IA : pitch, secteur, objectif d'appel, ton de voix, catalogue produits, minutes de crédit restantes et statut Twilio. Lecture seule.",
+      "parametres": []
+    }
+  ],
+  "divergences": [
+    "Divergence : « Clé api agent ia » (10.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

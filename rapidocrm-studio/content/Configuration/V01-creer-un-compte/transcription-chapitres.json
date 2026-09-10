@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Vous avez souscrit, et vous ne savez pas par où commencer ? En trente secondes, votre compte est ouvert et votre entreprise rattachée."
+  },
+  {
+    "timestamp_secondes": 7,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la page de connexion, et on ressort avec un accès personnel et votre société enregistrée dans le CRM."
+  },
+  {
+    "timestamp_secondes": 13,
+    "titre": "Ouvrir le formulaire de création",
+    "texte": "Sur la page Accéder à mon espace, cliquez sur créer un compte."
+  },
+  {
+    "timestamp_secondes": 16,
+    "titre": "Renseigner l'identité du gérant",
+    "texte": "Le premier écran parle de vous, pas de votre société. Votre nom, puis votre prénom : c'est l'identité qui apparaîtra dans le CRM."
+  },
+  {
+    "timestamp_secondes": 24,
+    "titre": "Saisir l'adresse e-mail",
+    "texte": "Votre adresse e-mail devient votre identifiant de connexion."
+  },
+  {
+    "timestamp_secondes": 27,
+    "titre": "Choisir un mot de passe et le confirmer",
+    "texte": "Un mot de passe, puis le même une seconde fois. Tant que les deux diffèrent, le bouton reste gris : ce n'est pas une panne."
+  },
+  {
+    "timestamp_secondes": 33,
+    "titre": "Passer à l'étape entreprise",
+    "texte": "Le bouton passe au vert. Cliquez sur suivant : votre accès personnel est créé."
+  },
+  {
+    "timestamp_secondes": 37,
+    "titre": "Renseigner l'entreprise",
+    "texte": "Le nom de votre entreprise, son e-mail, son SIRET. Validez."
+  },
+  {
+    "timestamp_secondes": 40,
+    "titre": "Faites-le avec Claude",
+    "texte": "Votre compte est ouvert. À partir de là, vous n'êtes plus obligé de cliquer. RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit votre CRM et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 56,
+    "titre": "À retenir",
+    "texte": "Un compte ouvert, une entreprise en place, et le CRM commence à travailler."
+  }
+]

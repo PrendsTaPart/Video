@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 21,
+    "titre": "Créer une carte fidélité",
+    "titre_court": "Carte de fidélité",
+    "slug": "06-creer-une-carte-fidelite"
+  },
+  "hook": {
+    "texte": "Une carte de fidélité, d'habitude, ça passe par un imprimeur, un graphiste, et trois allers-retours.",
+    "promesse": "Ici, trois écrans suffisent.",
+    "duree": 8,
+    "alternatives": [
+      "Le client revient plus souvent quand il a une raison de revenir.",
+      "Une carte au fond d'un portefeuille travaille toute l'année.",
+      "Fidéliser ne devrait pas commencer par un devis d'imprimeur."
+    ]
+  },
+  "intro": {
+    "texte": "On part de l'assistant de carte de fidélité, et on ressort avec une carte enregistrée. Trois étapes : la taille, le modèle, la relecture. La barre du haut dit toujours où on en est.",
+    "duree": 17
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'assistant de carte de fidélité",
+        "voix": "L'assistant s'ouvre sur sa première étape : la taille du template.",
+        "debut_source": 1,
+        "fin_source": 7,
+        "zone_focus": { "x": 0.22, "y": 0.15, "w": 0.77, "h": 0.6 },
+        "annotation": "Carte de fidélité"
+      },
+      {
+        "numero": 2,
+        "titre": "Choisir la taille de la carte",
+        "voix": "Trois formats, avec leurs millimètres. Le standard est celui d'une carte bancaire.",
+        "debut_source": 7,
+        "fin_source": 12,
+        "zone_focus": { "x": 0.22, "y": 0.2, "w": 0.77, "h": 0.55 },
+        "annotation": "Taille du template"
+      },
+      {
+        "numero": 3,
+        "titre": "Choisir le modèle de carte",
+        "voix": "Puis le modèle. Voir l'agrandit, Choisir le retient.",
+        "debut_source": 12,
+        "fin_source": 16,
+        "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.74, "h": 0.55 },
+        "annotation": "Design"
+      },
+      {
+        "numero": 4,
+        "titre": "Relire le récapitulatif et enregistrer",
+        "voix": "Le récapitulatif reprend tout. Chaque ligne reste modifiable.",
+        "debut_source": 16,
+        "fin_source": 20.68,
+        "zone_focus": { "x": 0.23, "y": 0.25, "w": 0.74, "h": 0.62 },
+        "annotation": "Validation"
+      },
+      {
+        "numero": 5,
+        "titre": "Retrouver la carte dans les programmes de fidélité",
+        "voix": "Et la page des programmes compte clients et points.",
+        "debut_source": 20.68,
+        "fin_source": 25.73,
+        "zone_focus": { "x": 0.22, "y": 0.28, "w": 0.77, "h": 0.68 },
+        "annotation": "Programmes de fidélité"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Et pour suivre le programme ?",
+    "voix": "Une carte, ce sont des clients et des points. Pour en avoir le compte, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes programmes de fidélité avec leur nombre de clients et de points offerts.",
+      "variables": [],
+      "outil_mcp": "list_programmes_fidelite"
+    },
+    "resultat_affiche": {
+      "titre": "2 programmes de fidélité",
+      "lignes": [
+        "Programme boulangerie — 1 client — 7 points",
+        "Programme restaurant — 0 client — 0 point"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Trois écrans, une carte : la fidélité n'attend plus l'imprimeur.",
+    "duree": 8,
+    "alternatives": [
+      "Un format, un modèle, une relecture : c'est tout.",
+      "Ce qui se relit avant d'enregistrer ne se réimprime pas après.",
+      "La carte existe le jour où vous la décidez."
+    ]
+  },
+  "seo": {
+    "titre": "Créer une carte de fidélité — RapidoCRM",
+    "description": "Créez une carte de fidélité dans RapidoCRM en trois étapes : taille du template, modèle graphique, récapitulatif avant enregistrement. Le tutoriel.",
+    "mots_cles": ["carte de fidélité", "RapidoCRM", "fidélisation", "CRM", "programme de fidélité", "marketing"],
+    "youtube_titre": "Créer une carte de fidélité — RapidoCRM",
+    "youtube_description": "Le tutoriel de la carte de fidélité sur RapidoCRM : les trois formats disponibles avec leurs dimensions, la galerie de modèles, le récapitulatif modifiable et la page des programmes de fidélité. RapidoCRM Académie.",
+    "youtube_tags": ["RapidoCRM", "fidélité", "carte", "CRM", "marketing"]
+  }
+}

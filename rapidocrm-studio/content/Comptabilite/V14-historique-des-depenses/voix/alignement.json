@@ -1,0 +1,1051 @@
+{
+  "duree_totale": 69.096,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 8.136,
+      "texte": "Vous savez ce que vous facturez. Ce que vous dépensez, beaucoup moins. Quatre cartes, un tableau, et le compte est clair.",
+      "mots": [
+        {
+          "mot": "Vous",
+          "debut": 0,
+          "fin": 0.209
+        },
+        {
+          "mot": "savez",
+          "debut": 0.232,
+          "fin": 0.499
+        },
+        {
+          "mot": "ce",
+          "debut": 0.522,
+          "fin": 0.604
+        },
+        {
+          "mot": "que",
+          "debut": 0.65,
+          "fin": 0.731
+        },
+        {
+          "mot": "vous",
+          "debut": 0.755,
+          "fin": 0.871
+        },
+        {
+          "mot": "facturez.",
+          "debut": 0.894,
+          "fin": 1.428
+        },
+        {
+          "mot": "Ce",
+          "debut": 1.869,
+          "fin": 2.032
+        },
+        {
+          "mot": "que",
+          "debut": 2.09,
+          "fin": 2.171
+        },
+        {
+          "mot": "vous",
+          "debut": 2.218,
+          "fin": 2.334
+        },
+        {
+          "mot": "dépensez,",
+          "debut": 2.357,
+          "fin": 3.1
+        },
+        {
+          "mot": "beaucoup",
+          "debut": 3.483,
+          "fin": 3.762
+        },
+        {
+          "mot": "moins.",
+          "debut": 3.796,
+          "fin": 4.063
+        },
+        {
+          "mot": "Quatre",
+          "debut": 4.574,
+          "fin": 4.795
+        },
+        {
+          "mot": "cartes,",
+          "debut": 4.818,
+          "fin": 5.271
+        },
+        {
+          "mot": "un",
+          "debut": 5.422,
+          "fin": 5.526
+        },
+        {
+          "mot": "tableau,",
+          "debut": 5.573,
+          "fin": 6.037
+        },
+        {
+          "mot": "et",
+          "debut": 6.246,
+          "fin": 6.362
+        },
+        {
+          "mot": "le",
+          "debut": 6.397,
+          "fin": 6.455
+        },
+        {
+          "mot": "compte",
+          "debut": 6.502,
+          "fin": 6.711
+        },
+        {
+          "mot": "est",
+          "debut": 6.734,
+          "fin": 6.815
+        },
+        {
+          "mot": "clair.",
+          "debut": 6.838,
+          "fin": 7.221
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 8.136,
+      "duree": 13.056,
+      "texte": "On part de la page Facturation, et on ressort avec une vue claire des sorties. Les dépenses sont le troisième onglet, à côté des factures et des devis. Quatre cartes donnent la photo, le tableau donne le détail.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.128
+        },
+        {
+          "mot": "part",
+          "debut": 0.186,
+          "fin": 0.337
+        },
+        {
+          "mot": "de",
+          "debut": 0.36,
+          "fin": 0.418
+        },
+        {
+          "mot": "la",
+          "debut": 0.453,
+          "fin": 0.522
+        },
+        {
+          "mot": "page",
+          "debut": 0.592,
+          "fin": 0.882
+        },
+        {
+          "mot": "Facturation,",
+          "debut": 0.998,
+          "fin": 1.765
+        },
+        {
+          "mot": "et",
+          "debut": 2.009,
+          "fin": 2.113
+        },
+        {
+          "mot": "on",
+          "debut": 2.148,
+          "fin": 2.206
+        },
+        {
+          "mot": "ressort",
+          "debut": 2.252,
+          "fin": 2.635
+        },
+        {
+          "mot": "avec",
+          "debut": 2.659,
+          "fin": 2.868
+        },
+        {
+          "mot": "une",
+          "debut": 2.949,
+          "fin": 3.03
+        },
+        {
+          "mot": "vue",
+          "debut": 3.065,
+          "fin": 3.251
+        },
+        {
+          "mot": "claire",
+          "debut": 3.274,
+          "fin": 3.611
+        },
+        {
+          "mot": "des",
+          "debut": 3.669,
+          "fin": 3.831
+        },
+        {
+          "mot": "sorties.",
+          "debut": 3.855,
+          "fin": 4.365
+        },
+        {
+          "mot": "Les",
+          "debut": 4.807,
+          "fin": 4.911
+        },
+        {
+          "mot": "dépenses",
+          "debut": 4.934,
+          "fin": 5.399
+        },
+        {
+          "mot": "sont",
+          "debut": 5.433,
+          "fin": 5.573
+        },
+        {
+          "mot": "le",
+          "debut": 5.596,
+          "fin": 5.642
+        },
+        {
+          "mot": "troisième",
+          "debut": 5.677,
+          "fin": 6.072
+        },
+        {
+          "mot": "onglet,",
+          "debut": 6.095,
+          "fin": 6.455
+        },
+        {
+          "mot": "à",
+          "debut": 6.513,
+          "fin": 6.56
+        },
+        {
+          "mot": "côté",
+          "debut": 6.629,
+          "fin": 6.873
+        },
+        {
+          "mot": "des",
+          "debut": 6.92,
+          "fin": 7.012
+        },
+        {
+          "mot": "factures",
+          "debut": 7.047,
+          "fin": 7.535
+        },
+        {
+          "mot": "et",
+          "debut": 7.709,
+          "fin": 7.837
+        },
+        {
+          "mot": "des",
+          "debut": 7.883,
+          "fin": 7.988
+        },
+        {
+          "mot": "devis.",
+          "debut": 8.022,
+          "fin": 8.429
+        },
+        {
+          "mot": "Quatre",
+          "debut": 8.812,
+          "fin": 9.114
+        },
+        {
+          "mot": "cartes",
+          "debut": 9.172,
+          "fin": 9.52
+        },
+        {
+          "mot": "donnent",
+          "debut": 9.543,
+          "fin": 9.776
+        },
+        {
+          "mot": "la",
+          "debut": 9.868,
+          "fin": 9.938
+        },
+        {
+          "mot": "photo,",
+          "debut": 9.985,
+          "fin": 10.495
+        },
+        {
+          "mot": "le",
+          "debut": 10.646,
+          "fin": 10.751
+        },
+        {
+          "mot": "tableau",
+          "debut": 10.797,
+          "fin": 11.146
+        },
+        {
+          "mot": "donne",
+          "debut": 11.262,
+          "fin": 11.447
+        },
+        {
+          "mot": "le",
+          "debut": 11.471,
+          "fin": 11.54
+        },
+        {
+          "mot": "détail.",
+          "debut": 11.587,
+          "fin": 12.028
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 21.192,
+      "duree": 6.192,
+      "texte": "Troisième onglet : dépenses. En haut, ce qui est dépensé, ce qui reste dû, ce qui est payé.",
+      "mots": [
+        {
+          "mot": "Troisième",
+          "debut": 0,
+          "fin": 0.476
+        },
+        {
+          "mot": "onglet",
+          "debut": 0.499,
+          "fin": 0.894
+        },
+        {
+          "mot": ":",
+          "debut": 0.929,
+          "fin": 0.952
+        },
+        {
+          "mot": "dépenses.",
+          "debut": 1.08,
+          "fin": 1.753
+        },
+        {
+          "mot": "En",
+          "debut": 1.811,
+          "fin": 1.869
+        },
+        {
+          "mot": "haut,",
+          "debut": 1.939,
+          "fin": 2.276
+        },
+        {
+          "mot": "ce",
+          "debut": 2.45,
+          "fin": 2.531
+        },
+        {
+          "mot": "qui",
+          "debut": 2.566,
+          "fin": 2.647
+        },
+        {
+          "mot": "est",
+          "debut": 2.682,
+          "fin": 2.752
+        },
+        {
+          "mot": "dépensé,",
+          "debut": 2.786,
+          "fin": 3.402
+        },
+        {
+          "mot": "ce",
+          "debut": 3.495,
+          "fin": 3.553
+        },
+        {
+          "mot": "qui",
+          "debut": 3.587,
+          "fin": 3.669
+        },
+        {
+          "mot": "reste",
+          "debut": 3.727,
+          "fin": 3.982
+        },
+        {
+          "mot": "dû,",
+          "debut": 4.04,
+          "fin": 4.331
+        },
+        {
+          "mot": "ce",
+          "debut": 4.447,
+          "fin": 4.563
+        },
+        {
+          "mot": "qui",
+          "debut": 4.621,
+          "fin": 4.714
+        },
+        {
+          "mot": "est",
+          "debut": 4.748,
+          "fin": 4.818
+        },
+        {
+          "mot": "payé.",
+          "debut": 4.865,
+          "fin": 5.213
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 27.384,
+      "duree": 8.712,
+      "texte": "Et la quatrième carte : les bénéfices, une fois les dépenses retirées. Puis le tableau, ligne par ligne, avec son entreprise et son montant.",
+      "mots": [
+        {
+          "mot": "Et",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "la",
+          "debut": 0.174,
+          "fin": 0.232
+        },
+        {
+          "mot": "quatrième",
+          "debut": 0.29,
+          "fin": 0.697
+        },
+        {
+          "mot": "carte",
+          "debut": 0.72,
+          "fin": 1.126
+        },
+        {
+          "mot": ":",
+          "debut": 1.149,
+          "fin": 1.207
+        },
+        {
+          "mot": "les",
+          "debut": 1.533,
+          "fin": 1.637
+        },
+        {
+          "mot": "bénéfices,",
+          "debut": 1.66,
+          "fin": 2.287
+        },
+        {
+          "mot": "une",
+          "debut": 2.334,
+          "fin": 2.485
+        },
+        {
+          "mot": "fois",
+          "debut": 2.519,
+          "fin": 2.67
+        },
+        {
+          "mot": "les",
+          "debut": 2.694,
+          "fin": 2.786
+        },
+        {
+          "mot": "dépenses",
+          "debut": 2.81,
+          "fin": 3.146
+        },
+        {
+          "mot": "retirées.",
+          "debut": 3.17,
+          "fin": 3.646
+        },
+        {
+          "mot": "Puis",
+          "debut": 4.156,
+          "fin": 4.331
+        },
+        {
+          "mot": "le",
+          "debut": 4.354,
+          "fin": 4.423
+        },
+        {
+          "mot": "tableau,",
+          "debut": 4.481,
+          "fin": 4.946
+        },
+        {
+          "mot": "ligne",
+          "debut": 5.155,
+          "fin": 5.433
+        },
+        {
+          "mot": "par",
+          "debut": 5.468,
+          "fin": 5.654
+        },
+        {
+          "mot": "ligne,",
+          "debut": 5.689,
+          "fin": 6.026
+        },
+        {
+          "mot": "avec",
+          "debut": 6.142,
+          "fin": 6.385
+        },
+        {
+          "mot": "son",
+          "debut": 6.42,
+          "fin": 6.536
+        },
+        {
+          "mot": "entreprise",
+          "debut": 6.583,
+          "fin": 7.07
+        },
+        {
+          "mot": "et",
+          "debut": 7.117,
+          "fin": 7.187
+        },
+        {
+          "mot": "son",
+          "debut": 7.221,
+          "fin": 7.361
+        },
+        {
+          "mot": "montant.",
+          "debut": 7.384,
+          "fin": 7.755
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 36.096000000000004,
+      "duree": 5.784,
+      "texte": "Deux filtres au-dessus, statut et entreprise. Et les colonnes se trient d'un clic sur leur titre.",
+      "mots": [
+        {
+          "mot": "Deux",
+          "debut": 0,
+          "fin": 0.221
+        },
+        {
+          "mot": "filtres",
+          "debut": 0.255,
+          "fin": 0.557
+        },
+        {
+          "mot": "au-dessus,",
+          "debut": 0.58,
+          "fin": 1.08
+        },
+        {
+          "mot": "statut",
+          "debut": 1.231,
+          "fin": 1.591
+        },
+        {
+          "mot": "et",
+          "debut": 1.625,
+          "fin": 1.707
+        },
+        {
+          "mot": "entreprise.",
+          "debut": 1.753,
+          "fin": 2.334
+        },
+        {
+          "mot": "Et",
+          "debut": 2.717,
+          "fin": 2.844
+        },
+        {
+          "mot": "les",
+          "debut": 2.879,
+          "fin": 2.972
+        },
+        {
+          "mot": "colonnes",
+          "debut": 2.995,
+          "fin": 3.355
+        },
+        {
+          "mot": "se",
+          "debut": 3.379,
+          "fin": 3.471
+        },
+        {
+          "mot": "trient",
+          "debut": 3.518,
+          "fin": 3.715
+        },
+        {
+          "mot": "d'un",
+          "debut": 3.75,
+          "fin": 3.866
+        },
+        {
+          "mot": "clic",
+          "debut": 3.913,
+          "fin": 4.087
+        },
+        {
+          "mot": "sur",
+          "debut": 4.133,
+          "fin": 4.238
+        },
+        {
+          "mot": "leur",
+          "debut": 4.272,
+          "fin": 4.365
+        },
+        {
+          "mot": "titre.",
+          "debut": 4.4,
+          "fin": 4.714
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 41.88,
+      "duree": 6.48,
+      "texte": "Les trois points ouvrent le menu. Trois entrées ici, pas quatre : une dépense ne se visualise pas.",
+      "mots": [
+        {
+          "mot": "Les",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "trois",
+          "debut": 0.197,
+          "fin": 0.383
+        },
+        {
+          "mot": "points",
+          "debut": 0.406,
+          "fin": 0.639
+        },
+        {
+          "mot": "ouvrent",
+          "debut": 0.685,
+          "fin": 0.975
+        },
+        {
+          "mot": "le",
+          "debut": 0.998,
+          "fin": 1.045
+        },
+        {
+          "mot": "menu.",
+          "debut": 1.103,
+          "fin": 1.509
+        },
+        {
+          "mot": "Trois",
+          "debut": 1.788,
+          "fin": 2.055
+        },
+        {
+          "mot": "entrées",
+          "debut": 2.113,
+          "fin": 2.426
+        },
+        {
+          "mot": "ici,",
+          "debut": 2.473,
+          "fin": 2.856
+        },
+        {
+          "mot": "pas",
+          "debut": 2.891,
+          "fin": 3.019
+        },
+        {
+          "mot": "quatre",
+          "debut": 3.042,
+          "fin": 3.367
+        },
+        {
+          "mot": ":",
+          "debut": 3.437,
+          "fin": 3.471
+        },
+        {
+          "mot": "une",
+          "debut": 3.855,
+          "fin": 4.017
+        },
+        {
+          "mot": "dépense",
+          "debut": 4.04,
+          "fin": 4.447
+        },
+        {
+          "mot": "ne",
+          "debut": 4.481,
+          "fin": 4.551
+        },
+        {
+          "mot": "se",
+          "debut": 4.598,
+          "fin": 4.69
+        },
+        {
+          "mot": "visualise",
+          "debut": 4.76,
+          "fin": 5.213
+        },
+        {
+          "mot": "pas.",
+          "debut": 5.248,
+          "fin": 5.503
+        }
+      ]
+    },
+    {
+      "id": "etape-05",
+      "fichier": "voix/etape-05.mp3",
+      "debut": 48.36,
+      "duree": 3.312,
+      "texte": "La dernière remonte à la fiche du fournisseur.",
+      "mots": [
+        {
+          "mot": "La",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "dernière",
+          "debut": 0.209,
+          "fin": 0.546
+        },
+        {
+          "mot": "remonte",
+          "debut": 0.569,
+          "fin": 0.917
+        },
+        {
+          "mot": "à",
+          "debut": 0.94,
+          "fin": 0.964
+        },
+        {
+          "mot": "la",
+          "debut": 0.998,
+          "fin": 1.057
+        },
+        {
+          "mot": "fiche",
+          "debut": 1.126,
+          "fin": 1.358
+        },
+        {
+          "mot": "du",
+          "debut": 1.382,
+          "fin": 1.463
+        },
+        {
+          "mot": "fournisseur.",
+          "debut": 1.521,
+          "fin": 2.136
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 51.672,
+      "duree": 14.376,
+      "texte": "Vos sorties sont sous les yeux. Pour savoir ce qui reste à régler sans filtrer, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Vos",
+          "debut": 0,
+          "fin": 0.221
+        },
+        {
+          "mot": "sorties",
+          "debut": 0.255,
+          "fin": 0.743
+        },
+        {
+          "mot": "sont",
+          "debut": 0.871,
+          "fin": 1.08
+        },
+        {
+          "mot": "sous",
+          "debut": 1.115,
+          "fin": 1.265
+        },
+        {
+          "mot": "les",
+          "debut": 1.289,
+          "fin": 1.416
+        },
+        {
+          "mot": "yeux.",
+          "debut": 1.498,
+          "fin": 1.811
+        },
+        {
+          "mot": "Pour",
+          "debut": 2.252,
+          "fin": 2.403
+        },
+        {
+          "mot": "savoir",
+          "debut": 2.438,
+          "fin": 2.682
+        },
+        {
+          "mot": "ce",
+          "debut": 2.717,
+          "fin": 2.763
+        },
+        {
+          "mot": "qui",
+          "debut": 2.798,
+          "fin": 2.891
+        },
+        {
+          "mot": "reste",
+          "debut": 2.949,
+          "fin": 3.181
+        },
+        {
+          "mot": "à",
+          "debut": 3.204,
+          "fin": 3.228
+        },
+        {
+          "mot": "régler",
+          "debut": 3.262,
+          "fin": 3.564
+        },
+        {
+          "mot": "sans",
+          "debut": 3.611,
+          "fin": 3.762
+        },
+        {
+          "mot": "filtrer,",
+          "debut": 3.785,
+          "fin": 4.4
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 4.679,
+          "fin": 5.596
+        },
+        {
+          "mot": "parle",
+          "debut": 5.689,
+          "fin": 5.933
+        },
+        {
+          "mot": "à",
+          "debut": 5.956,
+          "fin": 5.979
+        },
+        {
+          "mot": "Claude",
+          "debut": 6.037,
+          "fin": 6.397
+        },
+        {
+          "mot": ":",
+          "debut": 6.432,
+          "fin": 6.502
+        },
+        {
+          "mot": "vous",
+          "debut": 6.676,
+          "fin": 6.815
+        },
+        {
+          "mot": "demandez",
+          "debut": 6.838,
+          "fin": 7.163
+        },
+        {
+          "mot": "en",
+          "debut": 7.198,
+          "fin": 7.245
+        },
+        {
+          "mot": "français,",
+          "debut": 7.291,
+          "fin": 7.848
+        },
+        {
+          "mot": "il",
+          "debut": 8.022,
+          "fin": 8.173
+        },
+        {
+          "mot": "lit",
+          "debut": 8.243,
+          "fin": 8.348
+        },
+        {
+          "mot": "vos",
+          "debut": 8.382,
+          "fin": 8.499
+        },
+        {
+          "mot": "données",
+          "debut": 8.533,
+          "fin": 8.905
+        },
+        {
+          "mot": "et",
+          "debut": 9.056,
+          "fin": 9.207
+        },
+        {
+          "mot": "répond.",
+          "debut": 9.253,
+          "fin": 9.706
+        },
+        {
+          "mot": "Copiez",
+          "debut": 10.089,
+          "fin": 10.495
+        },
+        {
+          "mot": "ce",
+          "debut": 10.519,
+          "fin": 10.623
+        },
+        {
+          "mot": "prompt,",
+          "debut": 10.681,
+          "fin": 11.238
+        },
+        {
+          "mot": "remplacez",
+          "debut": 11.517,
+          "fin": 12.098
+        },
+        {
+          "mot": "ce",
+          "debut": 12.167,
+          "fin": 12.26
+        },
+        {
+          "mot": "qui",
+          "debut": 12.318,
+          "fin": 12.434
+        },
+        {
+          "mot": "est",
+          "debut": 12.481,
+          "fin": 12.562
+        },
+        {
+          "mot": "entre",
+          "debut": 12.632,
+          "fin": 12.852
+        },
+        {
+          "mot": "crochets.",
+          "debut": 12.899,
+          "fin": 13.421
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 66.048,
+      "duree": 3.048,
+      "texte": "Ce qui sort se lit aussi vite que ce qui rentre.",
+      "mots": [
+        {
+          "mot": "Ce",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "qui",
+          "debut": 0.221,
+          "fin": 0.325
+        },
+        {
+          "mot": "sort",
+          "debut": 0.383,
+          "fin": 0.627
+        },
+        {
+          "mot": "se",
+          "debut": 0.65,
+          "fin": 0.743
+        },
+        {
+          "mot": "lit",
+          "debut": 0.801,
+          "fin": 0.94
+        },
+        {
+          "mot": "aussi",
+          "debut": 0.975,
+          "fin": 1.219
+        },
+        {
+          "mot": "vite",
+          "debut": 1.277,
+          "fin": 1.44
+        },
+        {
+          "mot": "que",
+          "debut": 1.463,
+          "fin": 1.544
+        },
+        {
+          "mot": "ce",
+          "debut": 1.579,
+          "fin": 1.625
+        },
+        {
+          "mot": "qui",
+          "debut": 1.649,
+          "fin": 1.741
+        },
+        {
+          "mot": "rentre.",
+          "debut": 1.776,
+          "fin": 2.078
+        }
+      ]
+    }
+  ]
+}

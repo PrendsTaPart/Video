@@ -1,0 +1,53 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-planifier-un-rdv",
+    "transcription": "Le rendez-vous est calé. Reste à prévenir le client, l'équipe, et à penser au rappel la veille. Un seul formulaire, et tout le monde est prévenu.\n\nOn part de la fiche d'une entreprise, et on ressort avec un rendez-vous posé. Un titre, un créneau, les invités, le type, le rappel : le formulaire descend dans cet ordre.\n\nPanneau Communication, prendre un rendez-vous.\n\nUn titre, d'abord. C'est lui qu'on relira dans l'agenda, alors autant qu'il dise de quoi on parle.\n\nPuis le créneau. Deux champs : l'heure de début, l'heure de fin. Le formulaire accepte le matin comme le soir, alors on relit. Dix heures, dix heures quarante-cinq : le rendez-vous est borné, et il tiendra la place qu'on lui a donnée dans l'agenda, ni plus ni moins.\n\nLes invités, ensuite. Le champ propose les utilisateurs du compte dès les premières lettres. Chaque nom retenu devient une étiquette. En dessous, les organisateurs : ceux qui tiennent le rendez-vous.\n\nVisio, présentiel ou téléphone. Puis le rappel, et le canal d'envoi.\n\nUne note pour ce qu'il faut préparer, puis enregistrer.\n\nLes rendez-vous s'empilent. Pour savoir ce qui vous attend, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nUn rendez-vous posé, des invités prévenus, un rappel programmé : trois oublis en moins.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 9,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 18,
+        "titre": "Ouvrir « Prendre un rendez-vous »"
+      },
+      {
+        "debut": 20,
+        "titre": "Donner un titre au rendez-vous"
+      },
+      {
+        "debut": 26,
+        "titre": "Fixer le créneau, début et fin"
+      },
+      {
+        "debut": 46,
+        "titre": "Choisir les invités et les organisateurs"
+      },
+      {
+        "debut": 58,
+        "titre": "Type de rendez-vous, rappel et mode d'envoi"
+      },
+      {
+        "debut": 63,
+        "titre": "Ajouter une note et enregistrer"
+      },
+      {
+        "debut": 67,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 78,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-06T12:35:06.650Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "mot": "L'icône",
+    "debut": 0,
+    "fin": 0.464
+  },
+  {
+    "mot": "en",
+    "debut": 0.499,
+    "fin": 0.58
+  },
+  {
+    "mot": "bout",
+    "debut": 0.627,
+    "fin": 0.743
+  },
+  {
+    "mot": "de",
+    "debut": 0.766,
+    "fin": 0.848
+  },
+  {
+    "mot": "ligne",
+    "debut": 0.894,
+    "fin": 1.091
+  },
+  {
+    "mot": "rouvre",
+    "debut": 1.149,
+    "fin": 1.44
+  },
+  {
+    "mot": "le",
+    "debut": 1.463,
+    "fin": 1.509
+  },
+  {
+    "mot": "message",
+    "debut": 1.556,
+    "fin": 1.974
+  },
+  {
+    "mot": ":",
+    "debut": 2.009,
+    "fin": 2.032
+  },
+  {
+    "mot": "objet,",
+    "debut": 2.241,
+    "fin": 2.728
+  },
+  {
+    "mot": "destinataire,",
+    "debut": 3.007,
+    "fin": 3.785
+  },
+  {
+    "mot": "contenu.",
+    "debut": 4.029,
+    "fin": 4.563
+  },
+  {
+    "mot": "Puis",
+    "debut": 5.004,
+    "fin": 5.236
+  },
+  {
+    "mot": "on",
+    "debut": 5.259,
+    "fin": 5.317
+  },
+  {
+    "mot": "referme.",
+    "debut": 5.364,
+    "fin": 5.851
+  }
+]

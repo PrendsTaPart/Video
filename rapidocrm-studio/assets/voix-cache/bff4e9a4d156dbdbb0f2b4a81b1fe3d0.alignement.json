@@ -1,0 +1,37 @@
+[
+  {
+    "mot": "Une",
+    "debut": 0,
+    "fin": 0.255
+  },
+  {
+    "mot": "ligne",
+    "debut": 0.279,
+    "fin": 0.464
+  },
+  {
+    "mot": "par",
+    "debut": 0.488,
+    "fin": 0.639
+  },
+  {
+    "mot": "envoi,",
+    "debut": 0.673,
+    "fin": 1.08
+  },
+  {
+    "mot": "avec",
+    "debut": 1.161,
+    "fin": 1.405
+  },
+  {
+    "mot": "sa",
+    "debut": 1.463,
+    "fin": 1.556
+  },
+  {
+    "mot": "date.",
+    "debut": 1.614,
+    "fin": 1.974
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Le client rappelle pour accepter un devis de juillet. Vous, vous ne savez plus s'il est encore valable. Le devis vous le dit lui-même, dès l'ouverture."
+  },
+  {
+    "timestamp_secondes": 8,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la page Historique, et on ressort avec le devis ouvert. Le tableau donne les dates, le statut et le prix ; le devis, lui, prévient quand la période de signature est passée."
+  },
+  {
+    "timestamp_secondes": 20,
+    "titre": "Ouvrir l'historique des devis",
+    "texte": "Troisième rangée de la page Historique : les devis. On consulte. La page reste vide quelques secondes, le temps que le tableau arrive : ce n'est pas une liste vide."
+  },
+  {
+    "timestamp_secondes": 31,
+    "titre": "Lire le tableau des devis",
+    "texte": "Dates, statut, prix. Vert pour accepté, orange pour en attente."
+  },
+  {
+    "timestamp_secondes": 36,
+    "titre": "Ouvrir un devis",
+    "texte": "L'icône ouvre le devis."
+  },
+  {
+    "timestamp_secondes": 38,
+    "titre": "Lire l'alerte de période de signature",
+    "texte": "Et le bandeau dit qu'il n'est plus signable."
+  },
+  {
+    "timestamp_secondes": 41,
+    "titre": "Faites-le avec Claude",
+    "texte": "Le journal montre un client. Pour voir tous les devis qui attendent une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 54,
+    "titre": "À retenir",
+    "texte": "Un devis dit lui-même qu'il a expiré : la relance part sur ce qui peut encore se signer."
+  }
+]

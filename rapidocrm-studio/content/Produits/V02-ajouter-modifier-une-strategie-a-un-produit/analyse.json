@@ -1,0 +1,124 @@
+{
+  "duree": 50.688,
+  "resolution": [1920, 882],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Produits — la fiche du produit" },
+    { "t": 8.0, "nom": "Fiche produit — liste des stratégies / ajouter une stratégie" },
+    { "t": 14.0, "nom": "Modale « Ajouter une stratégie »" },
+    { "t": 34.0, "nom": "Liste des stratégies" }
+  ],
+  "actions": [
+    {
+      "t": 4.0,
+      "type": "clic",
+      "cible": "bouton voir de la fiche produit",
+      "zone": { "x": 0.4, "y": 0.35, "w": 0.06, "h": 0.12 },
+      "texte_visible": "Pack site vitrine — voir · modifier · supprimer"
+    },
+    {
+      "t": 10.0,
+      "type": "ouverture",
+      "cible": "fiche du produit, avec ses deux boutons de stratégie",
+      "zone": { "x": 0.68, "y": 0.25, "w": 0.3, "h": 0.12 },
+      "texte_visible": "liste des stratégies · ajouter une stratégie"
+    },
+    {
+      "t": 16.0,
+      "type": "selection",
+      "cible": "champ de type de la modale",
+      "zone": { "x": 0.36, "y": 0.25, "w": 0.28, "h": 0.12 },
+      "texte_visible": "Ajouter une stratégie — Stratégie commerciale"
+    },
+    {
+      "t": 20.0,
+      "type": "saisie",
+      "cible": "champ Nom de la stratégie",
+      "zone": { "x": 0.36, "y": 0.38, "w": 0.28, "h": 0.12 },
+      "texte_visible": "Nom de la stratégie"
+    },
+    {
+      "t": 26.0,
+      "type": "saisie",
+      "cible": "champ Description et bouton d'aide du bot",
+      "zone": { "x": 0.36, "y": 0.5, "w": 0.28, "h": 0.3 },
+      "texte_visible": "Description — aide du bot"
+    },
+    {
+      "t": 32.0,
+      "type": "validation",
+      "cible": "bouton ajouter",
+      "zone": { "x": 0.45, "y": 0.83, "w": 0.1, "h": 0.09 },
+      "texte_visible": "ajouter"
+    },
+    {
+      "t": 40.0,
+      "type": "ouverture",
+      "cible": "tableau de la liste des stratégies",
+      "zone": { "x": 0.24, "y": 0.3, "w": 0.74, "h": 0.35 },
+      "texte_visible": "Liste des utilisateurs · Type · Nom · Date de création · Action"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir la fiche du produit",
+      "debut": 0,
+      "fin": 8.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.2, "y": 0.15, "w": 0.5, "h": 0.75 }
+    },
+    {
+      "numero": 2,
+      "titre": "Repérer les deux boutons de stratégie",
+      "debut": 8.0,
+      "fin": 14.0,
+      "actions": [1],
+      "zone_focus": { "x": 0.6, "y": 0.15, "w": 0.4, "h": 0.4 }
+    },
+    {
+      "numero": 3,
+      "titre": "Choisir le type et nommer la stratégie",
+      "debut": 14.0,
+      "fin": 24.0,
+      "actions": [2, 3],
+      "zone_focus": { "x": 0.33, "y": 0.1, "w": 0.34, "h": 0.6 }
+    },
+    {
+      "numero": 4,
+      "titre": "Décrire la stratégie",
+      "debut": 24.0,
+      "fin": 34.0,
+      "actions": [4, 5],
+      "zone_focus": { "x": 0.33, "y": 0.4, "w": 0.34, "h": 0.58 }
+    },
+    {
+      "numero": 5,
+      "titre": "Relire la liste des stratégies",
+      "debut": 34.0,
+      "fin": 50.688,
+      "actions": [6],
+      "zone_focus": { "x": 0.22, "y": 0.2, "w": 0.76, "h": 0.55 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 50.688,
+      "zone": { "x": 0.7, "y": 0.02, "w": 0.3, "h": 0.14 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    },
+    {
+      "t": 8.0,
+      "fin": 14.0,
+      "zone": { "x": 0.3, "y": 0.4, "w": 0.4, "h": 0.15 },
+      "raison": "Ligne d'activité nommant l'utilisatrice réelle qui a créé le produit"
+    },
+    {
+      "t": 34.0,
+      "fin": 50.688,
+      "zone": { "x": 0.24, "y": 0.42, "w": 0.1, "h": 0.2 },
+      "raison": "Avatar de l'utilisatrice réelle dans la colonne « Liste des utilisateurs »"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "duree": 111.16666666666667,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Produits/V01-ajouter-modifier-un-produit/out/master-16x9.mp4",
+      "octets": 14990620
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Produits/V01-ajouter-modifier-un-produit/out/master-9x16.mp4",
+      "octets": 13050804
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 10.833333333333334
+    },
+    {
+      "nom": "titre",
+      "debut": 10.833333333333334,
+      "fin": 39.93333333333333
+    },
+    {
+      "nom": "demo",
+      "debut": 39.93333333333333,
+      "fin": 87.1
+    },
+    {
+      "nom": "claude",
+      "debut": 87.1,
+      "fin": 107.7
+    },
+    {
+      "nom": "punchline",
+      "debut": 107.7,
+      "fin": 111.16666666666667
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Chaque devis, vous retapez les mêmes lignes. Et le prix TTC, vous le calculez de tête."
+    },
+    {
+      "timecode": "00:10",
+      "titre": "Ajouter un produit"
+    },
+    {
+      "timecode": "00:39",
+      "titre": "Ouvrir la page Produits"
+    },
+    {
+      "timecode": "00:46",
+      "titre": "Nommer le produit et lui donner une image"
+    },
+    {
+      "timecode": "00:55",
+      "titre": "Fixer sa période et sa nature"
+    },
+    {
+      "timecode": "01:03",
+      "titre": "Renseigner le prix et la TVA"
+    },
+    {
+      "timecode": "01:10",
+      "titre": "Décrire le produit"
+    },
+    {
+      "timecode": "01:17",
+      "titre": "Retrouver la fiche dans la liste"
+    },
+    {
+      "timecode": "01:27",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:47",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

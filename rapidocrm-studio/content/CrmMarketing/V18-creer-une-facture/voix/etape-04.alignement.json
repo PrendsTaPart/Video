@@ -1,0 +1,67 @@
+[
+  {
+    "mot": "Prix",
+    "debut": 0,
+    "fin": 0.337
+  },
+  {
+    "mot": "hors",
+    "debut": 0.372,
+    "fin": 0.534
+  },
+  {
+    "mot": "taxes,",
+    "debut": 0.569,
+    "fin": 1.057
+  },
+  {
+    "mot": "T.V.A.,",
+    "debut": 1.207,
+    "fin": 1.741
+  },
+  {
+    "mot": "total,",
+    "debut": 1.834,
+    "fin": 2.392
+  },
+  {
+    "mot": "remise",
+    "debut": 2.543,
+    "fin": 2.949
+  },
+  {
+    "mot": ":",
+    "debut": 3.042,
+    "fin": 3.1
+  },
+  {
+    "mot": "vous",
+    "debut": 3.425,
+    "fin": 3.599
+  },
+  {
+    "mot": "n'écrivez",
+    "debut": 3.622,
+    "fin": 4.005
+  },
+  {
+    "mot": "rien,",
+    "debut": 4.04,
+    "fin": 4.284
+  },
+  {
+    "mot": "sauf",
+    "debut": 4.458,
+    "fin": 4.667
+  },
+  {
+    "mot": "la",
+    "debut": 4.725,
+    "fin": 4.772
+  },
+  {
+    "mot": "remise.",
+    "debut": 4.818,
+    "fin": 5.19
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "délai",
+    "debut": 0.209,
+    "fin": 0.395
+  },
+  {
+    "mot": "de",
+    "debut": 0.418,
+    "fin": 0.464
+  },
+  {
+    "mot": "paiement,",
+    "debut": 0.499,
+    "fin": 0.929
+  },
+  {
+    "mot": "les",
+    "debut": 0.975,
+    "fin": 1.068
+  },
+  {
+    "mot": "mentions,",
+    "debut": 1.103,
+    "fin": 1.579
+  },
+  {
+    "mot": "le",
+    "debut": 1.602,
+    "fin": 1.683
+  },
+  {
+    "mot": "statut",
+    "debut": 1.707,
+    "fin": 2.218
+  },
+  {
+    "mot": ":",
+    "debut": 2.241,
+    "fin": 2.264
+  },
+  {
+    "mot": "payée",
+    "debut": 2.438,
+    "fin": 2.752
+  },
+  {
+    "mot": "ou",
+    "debut": 2.775,
+    "fin": 2.844
+  },
+  {
+    "mot": "en",
+    "debut": 2.879,
+    "fin": 2.937
+  },
+  {
+    "mot": "attente.",
+    "debut": 3.019,
+    "fin": 3.437
+  }
+]

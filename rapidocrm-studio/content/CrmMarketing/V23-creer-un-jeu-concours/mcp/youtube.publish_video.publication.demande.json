@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V23-06-creer-un-jeu-concours.mp4",
+    "titre": "Créer un jeu concours — RapidoCRM",
+    "description": "Ici, on part d'un modèle déjà fait.\n\nOn part de la fiche d'une entreprise, et on ressort avec un jeu personnalisé. La bibliothèque propose une roue, une carte à gratter ou un quiz. Ensuite, on règle l'apparence et les lots.\n\nChapitres\n00:00 Une roue à faire tourner, une carte à gratter : ça attire, mais ça se code, et c'est là que le projet meurt.\n00:09 Créer un jeu concours\n00:21 Ouvrir les jeux depuis la fiche entreprise\n00:23 Choisir un modèle de jeu\n00:27 Les trois étapes de personnalisation\n00:31 Régler l'apparence et voir l'aperçu\n00:38 Décrire les lots à gagner\n00:44 Revenir à la fiche\n00:46 Faites-le avec Claude\n00:59 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] jeux concours du mois avec leur statut.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/06-creer-un-jeu-concours\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "jeu concours",
+      "marketing",
+      "CRM",
+      "animation",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "CrmMarketing"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V23-06-creer-un-jeu-concours-thumb.jpg",
+    "playlist": "RapidoCRM — CrmMarketing",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T23:29:44.380Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

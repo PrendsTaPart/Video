@@ -1,0 +1,42 @@
+{
+  "outils": [
+    {
+      "nom": "get_dashboard_kpis",
+      "description": "KPIs synthétiques : clients, CA facturé/encaissé, devis en attente, prospects pipeline, tâches ouvertes. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "periode",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": "Période (métriques d'activité)"
+        }
+      ]
+    },
+    {
+      "nom": "get_revenue_summary",
+      "description": "Résumé du chiffre d'affaires à partir des factures et devis. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "periode",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": "Période"
+        }
+      ]
+    }
+  ]
+}

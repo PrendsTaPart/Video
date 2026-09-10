@@ -1,0 +1,67 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "statut",
+    "debut": 0.163,
+    "fin": 0.476
+  },
+  {
+    "mot": "à",
+    "debut": 0.511,
+    "fin": 0.534
+  },
+  {
+    "mot": "jour,",
+    "debut": 0.58,
+    "fin": 0.766
+  },
+  {
+    "mot": "et",
+    "debut": 0.789,
+    "fin": 0.859
+  },
+  {
+    "mot": "vous",
+    "debut": 0.894,
+    "fin": 1.01
+  },
+  {
+    "mot": "ne",
+    "debut": 1.033,
+    "fin": 1.08
+  },
+  {
+    "mot": "relancez",
+    "debut": 1.138,
+    "fin": 1.463
+  },
+  {
+    "mot": "plus",
+    "debut": 1.498,
+    "fin": 1.672
+  },
+  {
+    "mot": "ceux",
+    "debut": 1.695,
+    "fin": 1.823
+  },
+  {
+    "mot": "qui",
+    "debut": 1.858,
+    "fin": 1.962
+  },
+  {
+    "mot": "ont",
+    "debut": 1.997,
+    "fin": 2.078
+  },
+  {
+    "mot": "payé.",
+    "debut": 2.113,
+    "fin": 2.485
+  }
+]

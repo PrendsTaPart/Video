@@ -1,0 +1,52 @@
+[
+  {
+    "mot": "Roue,",
+    "debut": 0,
+    "fin": 0.325
+  },
+  {
+    "mot": "carte",
+    "debut": 0.534,
+    "fin": 0.789
+  },
+  {
+    "mot": "à",
+    "debut": 0.813,
+    "fin": 0.836
+  },
+  {
+    "mot": "gratter",
+    "debut": 0.871,
+    "fin": 1.161
+  },
+  {
+    "mot": "ou",
+    "debut": 1.196,
+    "fin": 1.289
+  },
+  {
+    "mot": "quiz.",
+    "debut": 1.347,
+    "fin": 1.683
+  },
+  {
+    "mot": "Chacun",
+    "debut": 1.765,
+    "fin": 2.136
+  },
+  {
+    "mot": "annonce",
+    "debut": 2.171,
+    "fin": 2.45
+  },
+  {
+    "mot": "ses",
+    "debut": 2.473,
+    "fin": 2.601
+  },
+  {
+    "mot": "lots.",
+    "debut": 2.635,
+    "fin": 2.844
+  }
+]

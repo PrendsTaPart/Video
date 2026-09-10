@@ -1,0 +1,82 @@
+[
+  {
+    "mot": "Retour",
+    "debut": 0,
+    "fin": 0.337
+  },
+  {
+    "mot": "à",
+    "debut": 0.36,
+    "fin": 0.383
+  },
+  {
+    "mot": "la",
+    "debut": 0.43,
+    "fin": 0.499
+  },
+  {
+    "mot": "fiche",
+    "debut": 0.569,
+    "fin": 0.894
+  },
+  {
+    "mot": ":",
+    "debut": 0.94,
+    "fin": 0.964
+  },
+  {
+    "mot": "le",
+    "debut": 1.057,
+    "fin": 1.126
+  },
+  {
+    "mot": "document",
+    "debut": 1.161,
+    "fin": 1.533
+  },
+  {
+    "mot": "y",
+    "debut": 1.567,
+    "fin": 1.591
+  },
+  {
+    "mot": "est",
+    "debut": 1.637,
+    "fin": 1.741
+  },
+  {
+    "mot": "rangé,",
+    "debut": 1.811,
+    "fin": 2.159
+  },
+  {
+    "mot": "avec",
+    "debut": 2.194,
+    "fin": 2.415
+  },
+  {
+    "mot": "le",
+    "debut": 2.473,
+    "fin": 2.531
+  },
+  {
+    "mot": "reste",
+    "debut": 2.589,
+    "fin": 2.833
+  },
+  {
+    "mot": "du",
+    "debut": 2.879,
+    "fin": 2.961
+  },
+  {
+    "mot": "dossier",
+    "debut": 3.007,
+    "fin": 3.286
+  },
+  {
+    "mot": "client.",
+    "debut": 3.32,
+    "fin": 3.669
+  }
+]

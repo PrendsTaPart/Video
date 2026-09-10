@@ -1,0 +1,82 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "moyen",
+    "debut": 0.174,
+    "fin": 0.406
+  },
+  {
+    "mot": "de",
+    "debut": 0.453,
+    "fin": 0.511
+  },
+  {
+    "mot": "paiement",
+    "debut": 0.557,
+    "fin": 0.882
+  },
+  {
+    "mot": "noté",
+    "debut": 0.94,
+    "fin": 1.196
+  },
+  {
+    "mot": "sur",
+    "debut": 1.254,
+    "fin": 1.382
+  },
+  {
+    "mot": "le",
+    "debut": 1.416,
+    "fin": 1.474
+  },
+  {
+    "mot": "devis,",
+    "debut": 1.521,
+    "fin": 1.869
+  },
+  {
+    "mot": "c'est",
+    "debut": 1.997,
+    "fin": 2.206
+  },
+  {
+    "mot": "une",
+    "debut": 2.276,
+    "fin": 2.357
+  },
+  {
+    "mot": "question",
+    "debut": 2.38,
+    "fin": 2.682
+  },
+  {
+    "mot": "de",
+    "debut": 2.728,
+    "fin": 2.786
+  },
+  {
+    "mot": "moins",
+    "debut": 2.833,
+    "fin": 3.088
+  },
+  {
+    "mot": "à",
+    "debut": 3.216,
+    "fin": 3.274
+  },
+  {
+    "mot": "la",
+    "debut": 3.355,
+    "fin": 3.413
+  },
+  {
+    "mot": "facture.",
+    "debut": 3.471,
+    "fin": 3.901
+  }
+]

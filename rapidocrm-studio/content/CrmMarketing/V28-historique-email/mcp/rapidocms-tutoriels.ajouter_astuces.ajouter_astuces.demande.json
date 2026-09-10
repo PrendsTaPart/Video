@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-email",
+    "astuces": [
+      {
+        "titre": "Une ligne par envoi",
+        "texte": "Le tableau garde la date de chaque e-mail : c'est la trace, pas un brouillon.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "L'objet en premier",
+        "texte": "La fenêtre affiche l'objet en haut : on sait de quoi il s'agit avant de lire le corps.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Le journal sert aussi de point de départ",
+        "texte": "Le bouton « Envoyer un email » évite de revenir à la fiche.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-09T08:18:19.241Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

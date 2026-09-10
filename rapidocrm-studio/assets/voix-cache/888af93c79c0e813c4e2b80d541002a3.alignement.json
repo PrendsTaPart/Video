@@ -1,0 +1,67 @@
+[
+  {
+    "mot": "Depuis",
+    "debut": 0,
+    "fin": 0.313
+  },
+  {
+    "mot": "la",
+    "debut": 0.337,
+    "fin": 0.406
+  },
+  {
+    "mot": "liste,",
+    "debut": 0.464,
+    "fin": 0.755
+  },
+  {
+    "mot": "les",
+    "debut": 0.848,
+    "fin": 0.94
+  },
+  {
+    "mot": "trois",
+    "debut": 0.975,
+    "fin": 1.161
+  },
+  {
+    "mot": "points",
+    "debut": 1.196,
+    "fin": 1.416
+  },
+  {
+    "mot": "en",
+    "debut": 1.451,
+    "fin": 1.509
+  },
+  {
+    "mot": "fin",
+    "debut": 1.579,
+    "fin": 1.707
+  },
+  {
+    "mot": "de",
+    "debut": 1.741,
+    "fin": 1.811
+  },
+  {
+    "mot": "ligne",
+    "debut": 1.858,
+    "fin": 2.09
+  },
+  {
+    "mot": "ouvrent",
+    "debut": 2.148,
+    "fin": 2.45
+  },
+  {
+    "mot": "la",
+    "debut": 2.496,
+    "fin": 2.566
+  },
+  {
+    "mot": "facture.",
+    "debut": 2.612,
+    "fin": 3.088
+  }
+]

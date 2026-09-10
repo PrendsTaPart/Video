@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Votre commercial dépasse ses objectifs depuis deux mois. Ses objectifs, eux, n'ont pas bougé. Quatre compteurs, et son mois redevient lisible."
+  },
+  {
+    "timestamp_secondes": 8,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la fiche d'un commercial, et on ressort avec ses objectifs du mois remis à jour. Sur sa fiche, un bloc affiche le pourcentage des objectifs atteints, ligne par ligne. Ce pourcentage se calcule sur quatre compteurs, et ces quatre compteurs se règlent à un seul endroit : la roue crantée de la fiche, puis modifier les objectifs. Ce sont les mêmes quatre compteurs que ceux saisis à la création du commercial : sms envoyés, emails envoyés, rendez-vous organisés, contrats signés."
+  },
+  {
+    "timestamp_secondes": 40,
+    "titre": "Ouvrir la fiche du commercial",
+    "texte": "Depuis la liste des commerciaux, voir profil."
+  },
+  {
+    "timestamp_secondes": 43,
+    "titre": "Lire sa progression",
+    "texte": "La fiche affiche ses compteurs et le pourcentage des objectifs atteints."
+  },
+  {
+    "timestamp_secondes": 47,
+    "titre": "Ouvrir les paramètres",
+    "texte": "La roue crantée ouvre quatre entrées : profil, objectifs, portefeuille, suppression."
+  },
+  {
+    "timestamp_secondes": 53,
+    "titre": "Choisir « modifier les objectifs »",
+    "texte": "Deuxième entrée : modifier les objectifs."
+  },
+  {
+    "timestamp_secondes": 56,
+    "titre": "Corriger les quatre compteurs",
+    "texte": "Sms, emails, rendez-vous, contrats. On relève les cibles. Attention, vous changez la cible, pas ce qui a déjà été réalisé : le pourcentage se recalcule sur la nouvelle valeur."
+  },
+  {
+    "timestamp_secondes": 67,
+    "titre": "Enregistrer",
+    "texte": "Un clic sur modifier, et on revient à la liste."
+  },
+  {
+    "timestamp_secondes": 70,
+    "titre": "Faites-le avec Claude",
+    "texte": "Les cibles sont posées. Pour voir où en est l'équipe sans ouvrir chaque fiche, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond, objectifs et taux d'atteinte compris. Copiez ce prompt et collez-le."
+  },
+  {
+    "timestamp_secondes": 89,
+    "titre": "À retenir",
+    "texte": "Une cible juste, et le pourcentage veut enfin dire quelque chose."
+  }
+]

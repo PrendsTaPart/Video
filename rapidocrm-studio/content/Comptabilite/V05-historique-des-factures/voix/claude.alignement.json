@@ -1,0 +1,172 @@
+[
+  {
+    "mot": "Les",
+    "debut": 0,
+    "fin": 0.209
+  },
+  {
+    "mot": "filtres",
+    "debut": 0.255,
+    "fin": 0.685
+  },
+  {
+    "mot": "trient",
+    "debut": 0.859,
+    "fin": 1.207
+  },
+  {
+    "mot": "à",
+    "debut": 1.289,
+    "fin": 1.312
+  },
+  {
+    "mot": "l'écran.",
+    "debut": 1.347,
+    "fin": 1.834
+  },
+  {
+    "mot": "Pour",
+    "debut": 2.159,
+    "fin": 2.334
+  },
+  {
+    "mot": "le",
+    "debut": 2.368,
+    "fin": 2.426
+  },
+  {
+    "mot": "même",
+    "debut": 2.473,
+    "fin": 2.647
+  },
+  {
+    "mot": "point",
+    "debut": 2.67,
+    "fin": 2.995
+  },
+  {
+    "mot": "sans",
+    "debut": 3.17,
+    "fin": 3.379
+  },
+  {
+    "mot": "toucher",
+    "debut": 3.402,
+    "fin": 3.68
+  },
+  {
+    "mot": "aux",
+    "debut": 3.704,
+    "fin": 3.796
+  },
+  {
+    "mot": "listes,",
+    "debut": 3.831,
+    "fin": 4.319
+  },
+  {
+    "mot": "RapidoCRM",
+    "debut": 4.702,
+    "fin": 5.642
+  },
+  {
+    "mot": "parle",
+    "debut": 5.735,
+    "fin": 5.991
+  },
+  {
+    "mot": "à",
+    "debut": 6.014,
+    "fin": 6.037
+  },
+  {
+    "mot": "Claude",
+    "debut": 6.084,
+    "fin": 6.444
+  },
+  {
+    "mot": ":",
+    "debut": 6.478,
+    "fin": 6.536
+  },
+  {
+    "mot": "vous",
+    "debut": 6.745,
+    "fin": 6.896
+  },
+  {
+    "mot": "demandez",
+    "debut": 6.92,
+    "fin": 7.279
+  },
+  {
+    "mot": "en",
+    "debut": 7.314,
+    "fin": 7.361
+  },
+  {
+    "mot": "français,",
+    "debut": 7.407,
+    "fin": 7.918
+  },
+  {
+    "mot": "il",
+    "debut": 8.011,
+    "fin": 8.173
+  },
+  {
+    "mot": "lit",
+    "debut": 8.266,
+    "fin": 8.382
+  },
+  {
+    "mot": "vos",
+    "debut": 8.406,
+    "fin": 8.545
+  },
+  {
+    "mot": "données",
+    "debut": 8.568,
+    "fin": 8.951
+  },
+  {
+    "mot": "et",
+    "debut": 8.998,
+    "fin": 9.16
+  },
+  {
+    "mot": "répond.",
+    "debut": 9.218,
+    "fin": 9.636
+  },
+  {
+    "mot": "Copiez",
+    "debut": 9.752,
+    "fin": 10.205
+  },
+  {
+    "mot": "ce",
+    "debut": 10.228,
+    "fin": 10.344
+  },
+  {
+    "mot": "prompt,",
+    "debut": 10.403,
+    "fin": 10.925
+  },
+  {
+    "mot": "lancez-le",
+    "debut": 11.099,
+    "fin": 11.598
+  },
+  {
+    "mot": "tel",
+    "debut": 11.714,
+    "fin": 11.912
+  },
+  {
+    "mot": "quel.",
+    "debut": 11.97,
+    "fin": 12.295
+  }
+]

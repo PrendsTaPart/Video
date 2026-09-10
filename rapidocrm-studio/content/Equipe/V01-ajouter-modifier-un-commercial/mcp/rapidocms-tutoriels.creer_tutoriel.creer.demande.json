@@ -1,0 +1,52 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "rapido_ac_25311ffe08e18dd850f2a38f54e13637a019170c0700fb8b",
+    "slug": "02-ajouter-modifier-un-commercial",
+    "module": "02-utilisateur",
+    "numero": 1,
+    "titre": "Ajouter un commercial",
+    "titre_court": "Ajouter un commercial",
+    "accroche": "Une fiche, et il a son compte et ses objectifs.",
+    "explication": "On part de la page Commerciaux, vide, et on ressort avec une fiche complète et un compte ouvert. Un seul formulaire, deux sections. Les informations personnelles d'abord : identité, fonction, coordonnées, photo. Puis les objectifs mensuels — sms, emails, rendez-vous, contrats. Ce sont eux qui feront ensuite le suivi de sa performance. Et à l'enregistrement, un message vous attend, qui mérite qu'on s'y arrête.\n\n1. Ouvrir la page Commerciaux — Page Commerciaux. Aucune fiche pour l'instant. Bouton ajouter un utilisateur.\n2. Ouvrir le formulaire — Le formulaire s'ouvre sur les informations personnelles : nom, prénom, fonction, email, coordonnées, photo.\n3. Nommer le commercial et sa fonction — Nom, prénom, puis la fonction : c'est elle qui s'affichera sous son nom dans la liste. Commercial terrain, par exemple.\n4. Renseigner ses coordonnées — L'email compte plus que les autres : c'est son identifiant de connexion, et c'est là qu'arrive son mail d'activation. Mettez celui qu'il relève. Numéro, adresse et code postal suivent.\n5. Ajouter sa photo — La photo, par le bouton parcourir. Sur une équipe de dix, elle fait gagner du temps dans la liste.\n6. Fixer ses objectifs mensuels — Puis les objectifs du mois : sms, emails, rendez-vous, contrats. Quatre compteurs, et on enregistre.\n7. Lire l'avertissement d'activation — La fiche est créée. Et le logiciel prévient : si votre boîte mail n'est pas branchée, le mail d'activation ne part pas. Le commercial définira son mot de passe lui-même, par mot de passe oublié.\n\nVotre équipe se remplit. Pour la relire sans ouvrir chaque fiche, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.",
+    "etapes": [
+      {
+        "titre": "Ouvrir la page Commerciaux",
+        "description": "Page Commerciaux. Aucune fiche pour l'instant. Bouton ajouter un utilisateur."
+      },
+      {
+        "titre": "Ouvrir le formulaire",
+        "description": "Le formulaire s'ouvre sur les informations personnelles : nom, prénom, fonction, email, coordonnées, photo."
+      },
+      {
+        "titre": "Nommer le commercial et sa fonction",
+        "description": "Nom, prénom, puis la fonction : c'est elle qui s'affichera sous son nom dans la liste. Commercial terrain, par exemple."
+      },
+      {
+        "titre": "Renseigner ses coordonnées",
+        "description": "L'email compte plus que les autres : c'est son identifiant de connexion, et c'est là qu'arrive son mail d'activation. Mettez celui qu'il relève. Numéro, adresse et code postal suivent."
+      },
+      {
+        "titre": "Ajouter sa photo",
+        "description": "La photo, par le bouton parcourir. Sur une équipe de dix, elle fait gagner du temps dans la liste."
+      },
+      {
+        "titre": "Fixer ses objectifs mensuels",
+        "description": "Puis les objectifs du mois : sms, emails, rendez-vous, contrats. Quatre compteurs, et on enregistre."
+      },
+      {
+        "titre": "Lire l'avertissement d'activation",
+        "description": "La fiche est créée. Et le logiciel prévient : si votre boîte mail n'est pas branchée, le mail d'activation ne part pas. Le commercial définira son mot de passe lui-même, par mot de passe oublié."
+      }
+    ],
+    "a_quoi_ca_sert": "Créer la fiche d'un membre de l'équipe commerciale : son identité, ses coordonnées, sa photo, et les objectifs mensuels sur lesquels il sera suivi. C'est cette fiche qui lui ouvre un accès au logiciel et qui alimente ensuite son suivi de performance.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Disposer de l'adresse e-mail professionnelle du commercial",
+      "Avoir en tête les objectifs mensuels à lui fixer"
+    ]
+  },
+  "demande_le": "2026-08-28T11:36:13.483Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

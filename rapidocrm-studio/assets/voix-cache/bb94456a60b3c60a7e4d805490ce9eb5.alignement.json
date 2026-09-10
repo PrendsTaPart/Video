@@ -1,0 +1,87 @@
+[
+  {
+    "mot": "Les",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "trois",
+    "debut": 0.197,
+    "fin": 0.395
+  },
+  {
+    "mot": "points",
+    "debut": 0.418,
+    "fin": 0.615
+  },
+  {
+    "mot": "de",
+    "debut": 0.639,
+    "fin": 0.697
+  },
+  {
+    "mot": "la",
+    "debut": 0.72,
+    "fin": 0.801
+  },
+  {
+    "mot": "ligne.",
+    "debut": 0.848,
+    "fin": 1.126
+  },
+  {
+    "mot": "Le",
+    "debut": 1.196,
+    "fin": 1.265
+  },
+  {
+    "mot": "menu",
+    "debut": 1.312,
+    "fin": 1.509
+  },
+  {
+    "mot": "d'un",
+    "debut": 1.556,
+    "fin": 1.683
+  },
+  {
+    "mot": "devis",
+    "debut": 1.741,
+    "fin": 2.125
+  },
+  {
+    "mot": "porte",
+    "debut": 2.194,
+    "fin": 2.473
+  },
+  {
+    "mot": "une",
+    "debut": 2.496,
+    "fin": 2.601
+  },
+  {
+    "mot": "entrée",
+    "debut": 2.624,
+    "fin": 2.949
+  },
+  {
+    "mot": "de",
+    "debut": 2.972,
+    "fin": 3.053
+  },
+  {
+    "mot": "plus",
+    "debut": 3.1,
+    "fin": 3.379
+  },
+  {
+    "mot": ":",
+    "debut": 3.506,
+    "fin": 3.553
+  },
+  {
+    "mot": "Signer.",
+    "debut": 3.878,
+    "fin": 4.354
+  }
+]

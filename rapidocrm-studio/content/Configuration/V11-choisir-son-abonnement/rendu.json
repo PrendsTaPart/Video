@@ -1,0 +1,92 @@
+{
+  "duree": 106.23333333333333,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V11-choisir-son-abonnement/out/master-16x9.mp4",
+      "octets": 14807116
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V11-choisir-son-abonnement/out/master-9x16.mp4",
+      "octets": 13412040
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 8.5
+    },
+    {
+      "nom": "titre",
+      "debut": 8.5,
+      "fin": 35.56666666666667
+    },
+    {
+      "nom": "demo",
+      "debut": 35.56666666666667,
+      "fin": 86.13333333333334
+    },
+    {
+      "nom": "claude",
+      "debut": 86.13333333333334,
+      "fin": 102.93333333333334
+    },
+    {
+      "nom": "punchline",
+      "debut": 102.93333333333334,
+      "fin": 106.23333333333333
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Votre espace est ouvert, et la moitié des boutons ne répond pas."
+    },
+    {
+      "timecode": "00:08",
+      "titre": "Choisir son abonnement"
+    },
+    {
+      "timecode": "00:35",
+      "titre": "Partir du tableau de bord"
+    },
+    {
+      "timecode": "00:46",
+      "titre": "Lire ce que l'on paie"
+    },
+    {
+      "timecode": "00:55",
+      "titre": "Renseigner son adresse e-mail"
+    },
+    {
+      "timecode": "01:01",
+      "titre": "Saisir sa carte"
+    },
+    {
+      "timecode": "01:11",
+      "titre": "Compléter titulaire et pays"
+    },
+    {
+      "timecode": "01:16",
+      "titre": "Payer"
+    },
+    {
+      "timecode": "01:22",
+      "titre": "Suivre la liste de configuration"
+    },
+    {
+      "timecode": "01:26",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:42",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

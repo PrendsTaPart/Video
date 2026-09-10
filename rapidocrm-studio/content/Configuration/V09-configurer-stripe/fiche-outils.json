@@ -1,0 +1,6 @@
+{
+  "outils": [],
+  "divergences": [
+    "Divergence : « champ Clé secrète stripe » (16.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

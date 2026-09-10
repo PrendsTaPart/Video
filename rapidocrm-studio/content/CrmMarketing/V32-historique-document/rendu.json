@@ -1,0 +1,80 @@
+{
+  "duree": 55.5,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V32-historique-document/out/master-16x9.mp4",
+      "octets": 9067928
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V32-historique-document/out/master-9x16.mp4",
+      "octets": 6984333
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.933333333333334
+    },
+    {
+      "nom": "titre",
+      "debut": 9.933333333333334,
+      "fin": 20.7
+    },
+    {
+      "nom": "demo",
+      "debut": 20.7,
+      "fin": 37.56666666666667
+    },
+    {
+      "nom": "claude",
+      "debut": 37.56666666666667,
+      "fin": 50.3
+    },
+    {
+      "nom": "punchline",
+      "debut": 50.3,
+      "fin": 55.5
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Deux versions de la même carte, deux mois d'écart. Laquelle renvoyer au client ?"
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Historique document"
+    },
+    {
+      "timecode": "00:20",
+      "titre": "Ouvrir l'historique des documents"
+    },
+    {
+      "timecode": "00:28",
+      "titre": "Lire le tableau des documents"
+    },
+    {
+      "timecode": "00:32",
+      "titre": "Télécharger ou supprimer un document"
+    },
+    {
+      "timecode": "00:35",
+      "titre": "Annuler et revenir à la liste"
+    },
+    {
+      "timecode": "00:37",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:50",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

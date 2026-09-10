@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V14-05-historique-des-depenses.mp4",
+    "titre": "Suivre ses dépenses — RapidoCRM",
+    "description": "Quatre cartes, un tableau, et le compte est clair.\n\nOn part de la page Facturation, et on ressort avec une vue claire des sorties. Les dépenses sont le troisième onglet, à côté des factures et des devis. Quatre cartes donnent la photo, le tableau donne le détail.\n\nChapitres\n00:00 Vous savez ce que vous facturez. Ce que vous dépensez, beaucoup moins.\n00:09 Suivre ses dépenses\n00:22 Ouvrir l'onglet dépenses\n00:28 Lire le tableau des dépenses\n00:37 Filtrer et trier la liste\n00:43 Ouvrir le menu d'une dépense\n00:49 Remonter à la fiche de l'entreprise\n00:53 Faites-le avec Claude\n01:07 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] dépenses en attente avec leur montant.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/05-historique-des-depenses\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "dépenses",
+      "comptabilité",
+      "CRM",
+      "bénéfices",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "Comptabilite"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V14-05-historique-des-depenses-thumb.jpg",
+    "playlist": "RapidoCRM — Comptabilite",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T17:22:23.081Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

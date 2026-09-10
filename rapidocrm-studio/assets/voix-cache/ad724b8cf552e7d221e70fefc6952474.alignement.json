@@ -1,0 +1,52 @@
+[
+  {
+    "mot": "La",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "bibliothèque",
+    "debut": 0.186,
+    "fin": 0.697
+  },
+  {
+    "mot": "annonce",
+    "debut": 0.72,
+    "fin": 0.964
+  },
+  {
+    "mot": "ses",
+    "debut": 0.987,
+    "fin": 1.103
+  },
+  {
+    "mot": "modèles.",
+    "debut": 1.138,
+    "fin": 1.556
+  },
+  {
+    "mot": "Chacun",
+    "debut": 1.637,
+    "fin": 1.95
+  },
+  {
+    "mot": "dit",
+    "debut": 1.997,
+    "fin": 2.101
+  },
+  {
+    "mot": "ce",
+    "debut": 2.125,
+    "fin": 2.218
+  },
+  {
+    "mot": "qu'il",
+    "debut": 2.264,
+    "fin": 2.392
+  },
+  {
+    "mot": "couvre.",
+    "debut": 2.438,
+    "fin": 2.798
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 34,
+    "titre": "Historique devis",
+    "titre_court": "Historique des devis",
+    "slug": "06-historique-devis"
+  },
+  "hook": {
+    "texte": "Le client rappelle pour accepter un devis de juillet. Vous, vous ne savez plus s'il est encore valable.",
+    "promesse": "Le devis vous le dit lui-même, dès l'ouverture.",
+    "duree": 8,
+    "alternatives": [
+      "Un devis a une date de fin, et elle compte autant que son prix.",
+      "Relancer sur un devis périmé, c'est relancer dans le vide.",
+      "Vert accepté, orange en attente : le tableau se lit d'un coup d'œil."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page Historique, et on ressort avec le devis ouvert. Le tableau donne les dates, le statut et le prix ; le devis, lui, prévient quand la période de signature est passée.",
+    "duree": 17
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'historique des devis",
+        "voix": "Troisième rangée de la page Historique : les devis. On consulte. La page reste vide quelques secondes, le temps que le tableau arrive : ce n'est pas une liste vide.",
+        "debut_source": 1,
+        "fin_source": 12.5,
+        "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.6 },
+        "annotation": "Historique des devis"
+      },
+      {
+        "numero": 2,
+        "titre": "Lire le tableau des devis",
+        "voix": "Dates, statut, prix. Vert pour accepté, orange pour en attente.",
+        "debut_source": 12.5,
+        "fin_source": 18,
+        "zone_focus": { "x": 0.23, "y": 0.4, "w": 0.75, "h": 0.58 },
+        "annotation": "Statut et prix"
+      },
+      {
+        "numero": 3,
+        "titre": "Ouvrir un devis",
+        "voix": "L'icône ouvre le devis.",
+        "debut_source": 18,
+        "fin_source": 21.5,
+        "zone_focus": { "x": 0.6, "y": 0.4, "w": 0.38, "h": 0.35 },
+        "annotation": "Ouvrir le devis"
+      },
+      {
+        "numero": 4,
+        "titre": "Lire l'alerte de période de signature",
+        "voix": "Et le bandeau dit qu'il n'est plus signable.",
+        "debut_source": 21.5,
+        "fin_source": 24.69,
+        "zone_focus": { "x": 0.58, "y": 0.13, "w": 0.42, "h": 0.25 },
+        "annotation": "Période terminée"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Et pour ce qui reste à décrocher ?",
+    "voix": "Le journal montre un client. Pour voir tous les devis qui attendent une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] devis en attente avec leur destinataire et leur montant.",
+      "variables": ["nombre"],
+      "outil_mcp": "list_devis"
+    },
+    "resultat_affiche": {
+      "titre": "3 devis en attente",
+      "lignes": [
+        "N° 14 — 18 480,00 €",
+        "N° 15 — 50 880,00 €",
+        "N° 16 — 18 480,00 €"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Un devis dit lui-même qu'il a expiré : la relance part sur ce qui peut encore se signer.",
+    "duree": 8,
+    "alternatives": [
+      "Ce qui est périmé se refait, il ne se relance pas.",
+      "Deux couleurs, et le suivi commercial tient dans un regard.",
+      "La date de fin vaut autant que le prix."
+    ]
+  },
+  "seo": {
+    "titre": "Historique des devis — RapidoCRM",
+    "description": "Consultez le journal des devis d'un client dans RapidoCRM : dates de validité, statut, prix, et l'alerte affichée quand la période de signature est passée.",
+    "mots_cles": ["historique devis", "RapidoCRM", "CRM", "devis", "signature", "suivi commercial"],
+    "youtube_titre": "Historique des devis — RapidoCRM",
+    "youtube_description": "Le tutoriel du journal des devis sur RapidoCRM : les colonnes du tableau, les pastilles de statut, l'ouverture d'un devis et le bandeau qui prévient quand la période de signature est terminée. RapidoCRM Académie.",
+    "youtube_tags": ["RapidoCRM", "historique", "devis", "CRM", "commercial"]
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.186
+  },
+  {
+    "mot": "devis",
+    "debut": 0.221,
+    "fin": 0.441
+  },
+  {
+    "mot": "s'ouvre",
+    "debut": 0.464,
+    "fin": 0.697
+  },
+  {
+    "mot": "en",
+    "debut": 0.743,
+    "fin": 0.836
+  },
+  {
+    "mot": "pleine",
+    "debut": 0.871,
+    "fin": 1.091
+  },
+  {
+    "mot": "page.",
+    "debut": 1.115,
+    "fin": 1.474
+  }
+]

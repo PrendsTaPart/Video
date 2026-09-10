@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V12-05-historique-des-devis.mp4",
+    "titre": "Retrouver un devis dans l'historique — RapidoCRM",
+    "description": "Deux filtres, et quatre gestes par ligne.\n\nOn part de l'historique des devis, et on ressort avec le bon devis sous les yeux. Deux listes en haut de page filtrent, et chaque ligne porte un menu qui dit ce qu'on peut en faire.\n\nChapitres\n00:00 Le client vous rappelle au sujet d'un devis de mars. Vous, vous faites défiler la liste.\n00:09 Retrouver un devis et le rouvrir\n00:20 Ouvrir l'historique des devis\n00:25 Ouvrir le menu d'une ligne\n00:30 Visualiser le devis\n00:34 Télécharger le devis\n00:38 Les autres actions de la ligne\n00:43 Faites-le avec Claude\n00:56 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] derniers devis avec leur destinataire, leur statut et leur montant.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/05-historique-des-devis\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "devis",
+      "historique",
+      "CRM",
+      "commercial",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "Comptabilite"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V12-05-historique-des-devis-thumb.jpg",
+    "playlist": "RapidoCRM — Comptabilite",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T17:22:19.489Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

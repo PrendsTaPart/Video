@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Le client vous rappelle au sujet d'un devis de mars. Vous, vous faites défiler la liste. Deux filtres, et quatre gestes par ligne."
+  },
+  {
+    "timestamp_secondes": 8,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de l'historique des devis, et on ressort avec le bon devis sous les yeux. Deux listes en haut de page filtrent, et chaque ligne porte un menu qui dit ce qu'on peut en faire."
+  },
+  {
+    "timestamp_secondes": 20,
+    "titre": "Ouvrir l'historique des devis",
+    "texte": "L'onglet devis. Deux filtres, une recherche, et le tableau."
+  },
+  {
+    "timestamp_secondes": 24,
+    "titre": "Ouvrir le menu d'une ligne",
+    "texte": "Les trois points en fin de ligne ouvrent le menu. Quatre entrées."
+  },
+  {
+    "timestamp_secondes": 29,
+    "titre": "Visualiser le devis",
+    "texte": "Visualiser ouvre le devis dans un nouvel onglet. La liste reste où elle est."
+  },
+  {
+    "timestamp_secondes": 33,
+    "titre": "Télécharger le devis",
+    "texte": "Télécharger sort le fichier. Le navigateur le prend en charge."
+  },
+  {
+    "timestamp_secondes": 37,
+    "titre": "Les autres actions de la ligne",
+    "texte": "Et les deux dernières : modifier, ou basculer sur la fiche du client."
+  },
+  {
+    "timestamp_secondes": 42,
+    "titre": "Faites-le avec Claude",
+    "texte": "Les filtres trient à l'écran. Pour le même point sans toucher aux listes, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 55,
+    "titre": "À retenir",
+    "texte": "Deux filtres posés, et le bon devis est devant vous."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "panneau",
+    "debut": 0.221,
+    "fin": 0.464
+  },
+  {
+    "mot": "de",
+    "debut": 0.499,
+    "fin": 0.569
+  },
+  {
+    "mot": "droite,",
+    "debut": 0.604,
+    "fin": 1.08
+  },
+  {
+    "mot": "premier",
+    "debut": 1.173,
+    "fin": 1.498
+  },
+  {
+    "mot": "bloc",
+    "debut": 1.533,
+    "fin": 1.776
+  },
+  {
+    "mot": ":",
+    "debut": 1.904,
+    "fin": 1.927
+  },
+  {
+    "mot": "Entreprise.",
+    "debut": 1.974,
+    "fin": 2.752
+  },
+  {
+    "mot": "Il",
+    "debut": 2.961,
+    "fin": 3.111
+  },
+  {
+    "mot": "tient",
+    "debut": 3.146,
+    "fin": 3.344
+  },
+  {
+    "mot": "quatre",
+    "debut": 3.379,
+    "fin": 3.634
+  },
+  {
+    "mot": "entrées.",
+    "debut": 3.657,
+    "fin": 4.063
+  }
+]

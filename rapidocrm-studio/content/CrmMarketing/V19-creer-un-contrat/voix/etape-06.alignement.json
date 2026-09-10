@@ -1,0 +1,97 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "bandeau",
+    "debut": 0.197,
+    "fin": 0.464
+  },
+  {
+    "mot": "confirme",
+    "debut": 0.499,
+    "fin": 1.08
+  },
+  {
+    "mot": ":",
+    "debut": 1.103,
+    "fin": 1.138
+  },
+  {
+    "mot": "le",
+    "debut": 1.312,
+    "fin": 1.416
+  },
+  {
+    "mot": "contrat",
+    "debut": 1.474,
+    "fin": 1.846
+  },
+  {
+    "mot": "est",
+    "debut": 1.881,
+    "fin": 1.974
+  },
+  {
+    "mot": "envoyé.",
+    "debut": 2.043,
+    "fin": 2.519
+  },
+  {
+    "mot": "Il",
+    "debut": 2.694,
+    "fin": 2.856
+  },
+  {
+    "mot": "rejoint",
+    "debut": 2.949,
+    "fin": 3.32
+  },
+  {
+    "mot": "l'historique",
+    "debut": 3.413,
+    "fin": 4.005
+  },
+  {
+    "mot": "du",
+    "debut": 4.029,
+    "fin": 4.122
+  },
+  {
+    "mot": "client,",
+    "debut": 4.168,
+    "fin": 4.632
+  },
+  {
+    "mot": "où",
+    "debut": 4.714,
+    "fin": 4.876
+  },
+  {
+    "mot": "on",
+    "debut": 4.923,
+    "fin": 4.992
+  },
+  {
+    "mot": "ira",
+    "debut": 5.062,
+    "fin": 5.236
+  },
+  {
+    "mot": "lire",
+    "debut": 5.294,
+    "fin": 5.48
+  },
+  {
+    "mot": "son",
+    "debut": 5.503,
+    "fin": 5.631
+  },
+  {
+    "mot": "statut.",
+    "debut": 5.654,
+    "fin": 6.153
+  }
+]

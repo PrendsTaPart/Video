@@ -1,0 +1,19 @@
+Vous avez souscrit, et vous ne savez pas par où commencer ? En trente secondes, votre compte est ouvert et votre entreprise rattachée.
+
+On part de la page de connexion, et on ressort avec un accès personnel et votre société enregistrée dans le CRM.
+
+Sur la page Accéder à mon espace, cliquez sur créer un compte.
+
+Le premier écran parle de vous, pas de votre société. Votre nom, puis votre prénom : c'est l'identité qui apparaîtra dans le CRM.
+
+Votre adresse e-mail devient votre identifiant de connexion.
+
+Un mot de passe, puis le même une seconde fois. Tant que les deux diffèrent, le bouton reste gris : ce n'est pas une panne.
+
+Le bouton passe au vert. Cliquez sur suivant : votre accès personnel est créé.
+
+Le nom de votre entreprise, son e-mail, son SIRET. Validez.
+
+Votre compte est ouvert. À partir de là, vous n'êtes plus obligé de cliquer. RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit votre CRM et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.
+
+Un compte ouvert, une entreprise en place, et le CRM commence à travailler.

@@ -1,0 +1,45 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-de-l-entreprise",
+    "transcription": "Un client rappelle après six semaines. Qui lui a écrit ? Quand ? À propos de quoi ? Neuf journaux répondent, sur une seule page.\n\nOn part de la fiche d'une entreprise, et on ressort avec sa page d'historique. Neuf journaux : e-mails, SMS, rendez-vous, contrats, documents, factures, devis, dépenses et notes.\n\nLe panneau de droite, premier bloc : Entreprise. Il tient quatre entrées.\n\nLa troisième : historique de l'entreprise.\n\nNeuf cartes, trois par rangée. Chacune couvre un type d'échange.\n\nEt le même bouton partout : Consulter.\n\nNeuf journaux, c'est beaucoup à ouvrir. Pour avoir le total d'un coup, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nNeuf journaux sur une page : reprendre un dossier prend moins de temps que de s'en souvenir.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 9,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 23,
+        "titre": "Ouvrir le panneau Entreprise de la fiche"
+      },
+      {
+        "debut": 28,
+        "titre": "Ouvrir l'historique de l'entreprise"
+      },
+      {
+        "debut": 31,
+        "titre": "Parcourir les neuf journaux"
+      },
+      {
+        "debut": 35,
+        "titre": "Choisir le journal à consulter"
+      },
+      {
+        "debut": 38,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 51,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T14:18:56.702Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

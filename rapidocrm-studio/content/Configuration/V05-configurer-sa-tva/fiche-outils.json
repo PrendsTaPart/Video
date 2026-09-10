@@ -1,0 +1,7 @@
+{
+  "outils": [],
+  "divergences": [
+    "Divergence : « Champ nom de la tva » (8.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Champ pourcentage de la tva » (11.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

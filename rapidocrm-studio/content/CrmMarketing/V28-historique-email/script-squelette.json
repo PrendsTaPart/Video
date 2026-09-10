@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 28,
+    "titre": "Consulter l'historique des e-mails d'une entreprise",
+    "titre_court": "Consulter l'historique des e",
+    "slug": "consulter-l-historique-des-e-mails-d-une-entreprise"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'historique des e-mails",
+        "voix": "",
+        "debut_source": 0.5,
+        "fin_source": 7,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.5
+        },
+        "annotation": "Ouvrir l'historique des e-mails"
+      },
+      {
+        "numero": 2,
+        "titre": "Lire le tableau des envois",
+        "voix": "",
+        "debut_source": 7,
+        "fin_source": 10,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.55
+        },
+        "annotation": "Lire le tableau des envois"
+      },
+      {
+        "numero": 3,
+        "titre": "Rouvrir un e-mail envoyé",
+        "voix": "",
+        "debut_source": 10,
+        "fin_source": 15,
+        "zone_focus": {
+          "x": 0.34,
+          "y": 0.14,
+          "w": 0.31,
+          "h": 0.85
+        },
+        "annotation": "Rouvrir un e-mail envoyé"
+      },
+      {
+        "numero": 4,
+        "titre": "Revenir à la liste",
+        "voix": "",
+        "debut_source": 15,
+        "fin_source": 15.83,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.5
+        },
+        "annotation": "Revenir à la liste"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Donne-moi les statistiques d'interactions du mois pour l'entreprise numéro [identifiant].",
+      "variables": [
+        "identifiant"
+      ],
+      "outil_mcp": "get_interaction_stats"
+    }
+  }
+}

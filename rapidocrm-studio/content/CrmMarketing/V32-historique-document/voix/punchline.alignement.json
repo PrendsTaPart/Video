@@ -1,0 +1,67 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "document",
+    "debut": 0.186,
+    "fin": 0.569
+  },
+  {
+    "mot": "daté,",
+    "debut": 0.604,
+    "fin": 1.045
+  },
+  {
+    "mot": "pesé,",
+    "debut": 1.091,
+    "fin": 1.521
+  },
+  {
+    "mot": "téléchargeable",
+    "debut": 1.579,
+    "fin": 2.299
+  },
+  {
+    "mot": ":",
+    "debut": 2.334,
+    "fin": 2.357
+  },
+  {
+    "mot": "la",
+    "debut": 2.601,
+    "fin": 2.682
+  },
+  {
+    "mot": "bonne",
+    "debut": 2.74,
+    "fin": 2.914
+  },
+  {
+    "mot": "version",
+    "debut": 2.937,
+    "fin": 3.274
+  },
+  {
+    "mot": "part",
+    "debut": 3.355,
+    "fin": 3.518
+  },
+  {
+    "mot": "du",
+    "debut": 3.541,
+    "fin": 3.622
+  },
+  {
+    "mot": "premier",
+    "debut": 3.657,
+    "fin": 3.924
+  },
+  {
+    "mot": "coup.",
+    "debut": 3.959,
+    "fin": 4.203
+  }
+]

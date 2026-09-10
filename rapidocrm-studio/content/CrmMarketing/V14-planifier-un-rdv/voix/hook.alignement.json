@@ -1,0 +1,132 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "rendez-vous",
+    "debut": 0.197,
+    "fin": 0.592
+  },
+  {
+    "mot": "est",
+    "debut": 0.615,
+    "fin": 0.685
+  },
+  {
+    "mot": "calé.",
+    "debut": 0.708,
+    "fin": 1.161
+  },
+  {
+    "mot": "Reste",
+    "debut": 1.335,
+    "fin": 1.602
+  },
+  {
+    "mot": "à",
+    "debut": 1.625,
+    "fin": 1.649
+  },
+  {
+    "mot": "prévenir",
+    "debut": 1.707,
+    "fin": 2.067
+  },
+  {
+    "mot": "le",
+    "debut": 2.101,
+    "fin": 2.171
+  },
+  {
+    "mot": "client,",
+    "debut": 2.218,
+    "fin": 2.589
+  },
+  {
+    "mot": "l'équipe,",
+    "debut": 2.67,
+    "fin": 3.204
+  },
+  {
+    "mot": "et",
+    "debut": 3.251,
+    "fin": 3.379
+  },
+  {
+    "mot": "à",
+    "debut": 3.413,
+    "fin": 3.437
+  },
+  {
+    "mot": "penser",
+    "debut": 3.495,
+    "fin": 3.808
+  },
+  {
+    "mot": "au",
+    "debut": 3.831,
+    "fin": 3.889
+  },
+  {
+    "mot": "rappel",
+    "debut": 3.936,
+    "fin": 4.214
+  },
+  {
+    "mot": "la",
+    "debut": 4.272,
+    "fin": 4.342
+  },
+  {
+    "mot": "veille.",
+    "debut": 4.4,
+    "fin": 4.76
+  },
+  {
+    "mot": "Un",
+    "debut": 5.004,
+    "fin": 5.12
+  },
+  {
+    "mot": "seul",
+    "debut": 5.213,
+    "fin": 5.375
+  },
+  {
+    "mot": "formulaire,",
+    "debut": 5.433,
+    "fin": 6.072
+  },
+  {
+    "mot": "et",
+    "debut": 6.281,
+    "fin": 6.42
+  },
+  {
+    "mot": "tout",
+    "debut": 6.49,
+    "fin": 6.606
+  },
+  {
+    "mot": "le",
+    "debut": 6.629,
+    "fin": 6.676
+  },
+  {
+    "mot": "monde",
+    "debut": 6.711,
+    "fin": 6.908
+  },
+  {
+    "mot": "est",
+    "debut": 6.931,
+    "fin": 7.012
+  },
+  {
+    "mot": "prévenu.",
+    "debut": 7.059,
+    "fin": 7.523
+  }
+]

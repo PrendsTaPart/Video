@@ -1,0 +1,25 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V13-06-planifier-un-email-sms.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V13-06-planifier-un-email-sms-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V13-06-planifier-un-email-sms-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V13-06-planifier-un-email-sms-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "94e6c93beea1d0f2",
+      "video_vertical_url": "4592b8c1e4fa6272",
+      "thumbnail_url": "99fb9286e6f30532",
+      "thumbnail_vertical_url": "8d8f7fd9e15e6066"
+    },
+    "publie_le": "2026-09-05T23:28:08.531Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=E4bCEWBcVa4",
+    "video_id": "E4bCEWBcVa4",
+    "publie_le": "2026-09-06T08:34:28.254Z"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/06-planifier-un-email-sms",
+    "tutoriel_id": "412cbce8-a3a5-4176-b59e-fde27eef8246",
+    "publie_le": "2026-09-06T08:37:53.263Z"
+  }
+}

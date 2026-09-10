@@ -1,0 +1,45 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-facture",
+    "transcription": "« Où en est mon compte ? » Le client demande, et vous ouvrez trois onglets. Un tableau répond : statut et total, ligne par ligne.\n\nOn part de la page Historique, et on ressort avec la facture ouverte. Le tableau donne le statut et le total ; l'icône en bout de ligne ouvre le document, prêt à télécharger. Rien à recalculer, rien à reconstituer : la facture est déjà écrite.\n\nDeuxième rangée de la page Historique : les factures. On consulte, et le tableau se charge.\n\nStatut et total TTC : l'essentiel se lit ici.\n\nL'icône ouvre la facture dans un onglet.\n\nEt le bouton Télécharger l'enregistre.\n\nLe journal montre un client. Pour voir toutes les factures qui attendent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nLe statut au tableau, le détail dans la facture : la question du client trouve sa réponse.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 8,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 25,
+        "titre": "Ouvrir l'historique des factures"
+      },
+      {
+        "debut": 31,
+        "titre": "Lire les colonnes du tableau"
+      },
+      {
+        "debut": 35,
+        "titre": "Ouvrir une facture"
+      },
+      {
+        "debut": 38,
+        "titre": "Lire la facture et la télécharger"
+      },
+      {
+        "debut": 41,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 53,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-09T14:24:09.599Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

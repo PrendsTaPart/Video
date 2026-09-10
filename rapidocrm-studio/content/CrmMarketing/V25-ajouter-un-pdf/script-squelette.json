@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 25,
+    "titre": "Ajouter un PDF à la fiche d'une entreprise",
+    "titre_court": "Ajouter un PDF à la fiche d'",
+    "slug": "ajouter-un-pdf-a-la-fiche-d-une-entreprise"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir « Ajouter un PDF » depuis la fiche",
+        "voix": "",
+        "debut_source": 1,
+        "fin_source": 5,
+        "zone_focus": {
+          "x": 0.7,
+          "y": 0.2,
+          "w": 0.29,
+          "h": 0.55
+        },
+        "annotation": "Ouvrir « Ajouter un PDF » depuis la fiche"
+      },
+      {
+        "numero": 2,
+        "titre": "Nommer le document",
+        "voix": "",
+        "debut_source": 5,
+        "fin_source": 11.5,
+        "zone_focus": {
+          "x": 0.35,
+          "y": 0.14,
+          "w": 0.3,
+          "h": 0.45
+        },
+        "annotation": "Nommer le document"
+      },
+      {
+        "numero": 3,
+        "titre": "Choisir le fichier et l'ajouter",
+        "voix": "",
+        "debut_source": 11.5,
+        "fin_source": 17,
+        "zone_focus": {
+          "x": 0.35,
+          "y": 0.45,
+          "w": 0.3,
+          "h": 0.5
+        },
+        "annotation": "Choisir le fichier et l'ajouter"
+      },
+      {
+        "numero": 4,
+        "titre": "Retrouver la fiche et ses documents",
+        "voix": "",
+        "debut_source": 17,
+        "fin_source": 24.33,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.2,
+          "w": 0.77,
+          "h": 0.7
+        },
+        "annotation": "Retrouver la fiche et ses documents"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Donne-moi la fiche complète de l'entreprise numéro [identifiant].",
+      "variables": [
+        "identifiant"
+      ],
+      "outil_mcp": "get_entreprise"
+    }
+  }
+}

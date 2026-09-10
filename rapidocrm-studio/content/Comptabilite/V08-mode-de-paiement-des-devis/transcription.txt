@@ -1,0 +1,17 @@
+Le client vous dit qu'il paiera par virement. Trois semaines plus tard, personne ne s'en souvient. Une case cochée sur le devis, et c'est écrit.
+
+On part de la liste des devis, et on ressort avec un moyen de paiement noté sur l'un d'eux. Le réglage est dans le devis, sous le statut : espèce, carte, virement ou chèque. Une seule case à la fois.
+
+L'onglet devis, et la liste. Les trois points ouvrent le menu.
+
+Modifier. Le formulaire se rouvre tel qu'il a été rempli.
+
+On descend au bloc Mode de paiement. Quatre moyens, et une étoile.
+
+Virement. Puis modifier, en bas.
+
+Et c'est enregistré.
+
+Le moyen est noté. Pour retrouver les devis qui attendent encore une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Un moyen de paiement noté sur le devis, c'est une question de moins à la facture.

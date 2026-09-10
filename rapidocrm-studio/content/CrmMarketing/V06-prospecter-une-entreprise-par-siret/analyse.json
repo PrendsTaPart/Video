@@ -1,0 +1,97 @@
+{
+  "duree": 36.7,
+  "resolution": [1920, 1020],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0.0, "nom": "Clients — barre d'outils" },
+    { "t": 4.0, "nom": "Modale « Prospecter par entreprise »" },
+    { "t": 11.0, "nom": "Clients — 1 résultat trouvé" },
+    { "t": 30.0, "nom": "Clients — l'entreprise enregistrée" }
+  ],
+  "actions": [
+    {
+      "t": 2.0,
+      "type": "clic",
+      "cible": "Bouton Prospecter de la barre d'outils",
+      "zone": { "x": 0.76, "y": 0.32, "w": 0.11, "h": 0.09 },
+      "texte_visible": "Prospecter"
+    },
+    {
+      "t": 6.0,
+      "type": "saisie",
+      "cible": "Champs Nom de l'entreprise et SIRET",
+      "zone": { "x": 0.27, "y": 0.22, "w": 0.42, "h": 0.68 },
+      "texte_visible": "Prospecter par entreprise · Nom de l'entreprise · Entrer un nom · SIRET · Entrer SIRET · Valider"
+    },
+    {
+      "t": 9.0,
+      "type": "validation",
+      "cible": "Bouton Valider",
+      "zone": { "x": 0.44, "y": 0.73, "w": 0.10, "h": 0.10 },
+      "texte_visible": "Valider"
+    },
+    {
+      "t": 15.0,
+      "type": "ouverture",
+      "cible": "Fiche renvoyée par la recherche",
+      "zone": { "x": 0.24, "y": 0.40, "w": 0.24, "h": 0.50 },
+      "texte_visible": "1 résultat trouvé · Adresse · Code postal · Site web · Email · Domaine d'activité · Téléphone"
+    },
+    {
+      "t": 22.0,
+      "type": "clic",
+      "cible": "Boutons Sélectionner et Enregistrer tous",
+      "zone": { "x": 0.74, "y": 0.28, "w": 0.23, "h": 0.09 },
+      "texte_visible": "Sélectionner · Enregistrer tous"
+    },
+    {
+      "t": 34.0,
+      "type": "ouverture",
+      "cible": "L'entreprise rangée dans la liste des clients",
+      "zone": { "x": 0.23, "y": 0.50, "w": 0.74, "h": 0.48 },
+      "texte_visible": "Ville · Code postal · Domaine d'activité"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir la recherche d'entreprise",
+      "debut": 0.5,
+      "fin": 4.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.60, "y": 0.28, "w": 0.37, "h": 0.16 }
+    },
+    {
+      "numero": 2,
+      "titre": "Saisir le nom ou le SIRET",
+      "debut": 4.0,
+      "fin": 10.5,
+      "actions": [1, 2],
+      "zone_focus": { "x": 0.27, "y": 0.22, "w": 0.42, "h": 0.68 }
+    },
+    {
+      "numero": 3,
+      "titre": "Lire la fiche trouvée",
+      "debut": 11.0,
+      "fin": 23.0,
+      "actions": [3, 4],
+      "zone_focus": { "x": 0.22, "y": 0.28, "w": 0.76, "h": 0.62 }
+    },
+    {
+      "numero": 4,
+      "titre": "Retrouver l'entreprise dans vos clients",
+      "debut": 30.0,
+      "fin": 36.7,
+      "actions": [5],
+      "zone_focus": { "x": 0.23, "y": 0.50, "w": 0.74, "h": 0.48 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 36.7,
+      "zone": { "x": 0.69, "y": 0.14, "w": 0.30, "h": 0.12 },
+      "raison": "Nom et photo du titulaire du compte (Dupont lina) et solde de crédits affiché dans la barre du haut"
+    }
+  ]
+}

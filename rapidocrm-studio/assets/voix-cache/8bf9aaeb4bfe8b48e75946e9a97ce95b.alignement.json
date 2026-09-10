@@ -1,0 +1,37 @@
+[
+  {
+    "mot": "D'abord",
+    "debut": 0,
+    "fin": 0.383
+  },
+  {
+    "mot": "la",
+    "debut": 0.406,
+    "fin": 0.488
+  },
+  {
+    "mot": "cible.",
+    "debut": 0.546,
+    "fin": 0.929
+  },
+  {
+    "mot": "Ici,",
+    "debut": 1.173,
+    "fin": 1.463
+  },
+  {
+    "mot": "toutes",
+    "debut": 1.486,
+    "fin": 1.683
+  },
+  {
+    "mot": "mes",
+    "debut": 1.718,
+    "fin": 1.823
+  },
+  {
+    "mot": "entreprises.",
+    "debut": 1.881,
+    "fin": 2.426
+  }
+]

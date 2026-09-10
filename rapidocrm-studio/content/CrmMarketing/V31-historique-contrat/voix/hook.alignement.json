@@ -1,0 +1,132 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "contrat",
+    "debut": 0.174,
+    "fin": 0.557
+  },
+  {
+    "mot": "envoyé",
+    "debut": 0.58,
+    "fin": 0.917
+  },
+  {
+    "mot": "en",
+    "debut": 0.952,
+    "fin": 1.01
+  },
+  {
+    "mot": "mai,",
+    "debut": 1.068,
+    "fin": 1.196
+  },
+  {
+    "mot": "une",
+    "debut": 1.219,
+    "fin": 1.324
+  },
+  {
+    "mot": "question",
+    "debut": 1.358,
+    "fin": 1.695
+  },
+  {
+    "mot": "sur",
+    "debut": 1.741,
+    "fin": 1.834
+  },
+  {
+    "mot": "sa",
+    "debut": 1.869,
+    "fin": 1.962
+  },
+  {
+    "mot": "durée",
+    "debut": 2.009,
+    "fin": 2.241
+  },
+  {
+    "mot": "en",
+    "debut": 2.287,
+    "fin": 2.345
+  },
+  {
+    "mot": "septembre.",
+    "debut": 2.403,
+    "fin": 2.914
+  },
+  {
+    "mot": "Où",
+    "debut": 2.995,
+    "fin": 3.123
+  },
+  {
+    "mot": "est",
+    "debut": 3.17,
+    "fin": 3.251
+  },
+  {
+    "mot": "le",
+    "debut": 3.274,
+    "fin": 3.344
+  },
+  {
+    "mot": "document",
+    "debut": 3.39,
+    "fin": 3.75
+  },
+  {
+    "mot": "?",
+    "debut": 3.796,
+    "fin": 3.82
+  },
+  {
+    "mot": "Dans",
+    "debut": 3.913,
+    "fin": 4.075
+  },
+  {
+    "mot": "l'historique",
+    "debut": 4.098,
+    "fin": 4.528
+  },
+  {
+    "mot": "du",
+    "debut": 4.551,
+    "fin": 4.621
+  },
+  {
+    "mot": "client,",
+    "debut": 4.667,
+    "fin": 5.004
+  },
+  {
+    "mot": "à",
+    "debut": 5.062,
+    "fin": 5.108
+  },
+  {
+    "mot": "une",
+    "debut": 5.224,
+    "fin": 5.329
+  },
+  {
+    "mot": "ligne",
+    "debut": 5.352,
+    "fin": 5.596
+  },
+  {
+    "mot": "de",
+    "debut": 5.642,
+    "fin": 5.712
+  },
+  {
+    "mot": "là.",
+    "debut": 5.759,
+    "fin": 5.991
+  }
+]

@@ -1,0 +1,93 @@
+{
+  "fonctionnalite": "Attacher une stratégie commerciale à un produit",
+  "a_quoi_ca_sert": "Écrire, sur la fiche du produit lui-même, comment on le vend : le type de stratégie, son nom, et ce qu'elle demande concrètement. La consigne cesse d'être dans la tête du gérant et devient consultable par toute l'équipe.",
+  "pour_qui": "Gérant ou responsable commercial qui cadre la façon de vendre une offre",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir au moins un produit créé"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Type de stratégie",
+      "obligatoire": true,
+      "explication": "Le premier champ de la modale — « Stratégie commerciale », par exemple. Il classe la stratégie dans la liste."
+    },
+    {
+      "nom": "Nom de la stratégie",
+      "obligatoire": true,
+      "explication": "Son intitulé, celui qui apparaîtra dans le tableau des stratégies."
+    },
+    {
+      "nom": "Description",
+      "obligatoire": false,
+      "explication": "Ce que la stratégie demande de faire. Un bouton « aide du bot » propose de la rédiger."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_products",
+      "role": "Liste les produits et offres de l'entreprise — ceux auxquels une stratégie peut être attachée. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["q", "statut", "limit", "periode"],
+      "exemple_appel": { "limit": 10 }
+    },
+    {
+      "nom": "get_product",
+      "role": "Détail complet d'un produit : prix, TVA, description. Lecture seule.",
+      "parametres_obligatoires": ["id"],
+      "parametres_optionnels": [],
+      "exemple_appel": { "id": 1 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Nommez la stratégie par ce qu'elle fait — « relance prospects site vitrine » se retrouve mieux qu'« essai 2 ».",
+    "Écrivez la description en actions vérifiables plutôt qu'en intentions : un nombre, un délai, une relance."
+  ],
+  "erreurs_frequentes": [
+    "Chercher les stratégies dans le menu de gauche : elles vivent sur la fiche du produit, derrière le bouton voir.",
+    "Confondre les deux boutons de la fiche : « liste des stratégies » consulte, « ajouter une stratégie » crée."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Cadrer la vente d'une offre",
+      "contexte": "Chaque commercial vend le même produit à sa façon.",
+      "resultat_attendu": "La stratégie est écrite sur la fiche du produit, et tout le monde lit la même consigne."
+    },
+    {
+      "titre": "Retrouver qui a décidé quoi",
+      "contexte": "Vous voulez savoir d'où sort une consigne de vente.",
+      "resultat_attendu": "Le tableau des stratégies affiche l'utilisateur, le type, le nom et la date de création."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le bot peut écrire la description",
+      "contenu": "Le bouton « aide du bot », sous le champ Description, propose une rédaction. À relire avant de valider : c'est vous qui décidez de la consigne.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Deux boutons, deux gestes",
+      "contenu": "Sur la fiche du produit, « liste des stratégies » ouvre le tableau, « ajouter une stratégie » ouvre la modale de création.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le tableau garde la trace",
+      "contenu": "Liste des utilisateurs, type, nom, date de création : la stratégie est datée et attribuée. Utile quand plusieurs personnes écrivent.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Repérer les produits à cadrer",
+    "texte": "Liste-moi mes [nombre] produits avec leur nature et leur prix.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_products"
+  },
+  "sources": {
+    "champs_cles": "frames 00:16 à 00:30 de l'enregistrement : modale « Ajouter une stratégie » et ses champs — type « Stratégie commerciale », « Nom de la stratégie », « Description » avec le bouton « aide du bot »",
+    "a_quoi_ca_sert": "frames 00:30 et 00:46 : la fiche du produit porte les boutons « liste des stratégies » et « ajouter une stratégie », et le tableau final récapitule utilisateur, type, nom et date de création",
+    "astuces": "mêmes frames : les deux boutons de la fiche, le bouton d'aide du bot, et les colonnes du tableau",
+    "erreurs_frequentes": "frames 00:04 à 00:30 : le chemin passe par la liste des produits puis le bouton voir de la fiche, pas par le menu de gauche",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne crée ni ne lit une stratégie : elle se saisit uniquement sur la fiche du produit. Les prompts proposés listent les produits, en amont."
+  },
+  "a_verifier": []
+}

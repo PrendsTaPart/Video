@@ -1,0 +1,49 @@
+{
+  "outils": [
+    {
+      "nom": "list_entreprises",
+      "description": "CRM : liste les entreprises de la base. Lecture seule. C'est la ressource appelée par l'exemple curl affiché sous le tableau des tokens.",
+      "parametres": [
+        {
+          "nom": "limit",
+          "type": "integer|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre maximum de résultats"
+        },
+        {
+          "nom": "q",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche libre"
+        },
+        {
+          "nom": "statut",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtre de statut"
+        },
+        {
+          "nom": "periode",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": "Période"
+        }
+      ]
+    }
+  ],
+  "divergences": [
+    "Divergence : « champ Nom du token » (8.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « champ Date d'expiration » (15.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « colonne Lire du tableau des permissions » (20.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

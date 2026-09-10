@@ -1,0 +1,892 @@
+{
+  "duree_totale": 58.296,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 8.472,
+      "texte": "« Où en est mon compte ? » Le client demande, et vous ouvrez trois onglets. Un tableau répond : statut et total, ligne par ligne.",
+      "mots": [
+        {
+          "mot": "«",
+          "debut": 0,
+          "fin": 0.07
+        },
+        {
+          "mot": "Où",
+          "debut": 0.186,
+          "fin": 0.255
+        },
+        {
+          "mot": "en",
+          "debut": 0.29,
+          "fin": 0.348
+        },
+        {
+          "mot": "est",
+          "debut": 0.418,
+          "fin": 0.499
+        },
+        {
+          "mot": "mon",
+          "debut": 0.592,
+          "fin": 0.697
+        },
+        {
+          "mot": "compte",
+          "debut": 0.731,
+          "fin": 1.091
+        },
+        {
+          "mot": "?",
+          "debut": 1.115,
+          "fin": 1.149
+        },
+        {
+          "mot": "»",
+          "debut": 1.173,
+          "fin": 1.196
+        },
+        {
+          "mot": "Le",
+          "debut": 1.324,
+          "fin": 1.463
+        },
+        {
+          "mot": "client",
+          "debut": 1.486,
+          "fin": 1.73
+        },
+        {
+          "mot": "demande,",
+          "debut": 1.765,
+          "fin": 2.229
+        },
+        {
+          "mot": "et",
+          "debut": 2.403,
+          "fin": 2.531
+        },
+        {
+          "mot": "vous",
+          "debut": 2.566,
+          "fin": 2.682
+        },
+        {
+          "mot": "ouvrez",
+          "debut": 2.728,
+          "fin": 2.972
+        },
+        {
+          "mot": "trois",
+          "debut": 3.019,
+          "fin": 3.286
+        },
+        {
+          "mot": "onglets.",
+          "debut": 3.344,
+          "fin": 3.762
+        },
+        {
+          "mot": "Un",
+          "debut": 4.145,
+          "fin": 4.272
+        },
+        {
+          "mot": "tableau",
+          "debut": 4.319,
+          "fin": 4.621
+        },
+        {
+          "mot": "répond",
+          "debut": 4.656,
+          "fin": 5.039
+        },
+        {
+          "mot": ":",
+          "debut": 5.062,
+          "fin": 5.085
+        },
+        {
+          "mot": "statut",
+          "debut": 5.259,
+          "fin": 5.747
+        },
+        {
+          "mot": "et",
+          "debut": 5.805,
+          "fin": 5.909
+        },
+        {
+          "mot": "total,",
+          "debut": 5.956,
+          "fin": 6.513
+        },
+        {
+          "mot": "ligne",
+          "debut": 6.722,
+          "fin": 7.024
+        },
+        {
+          "mot": "par",
+          "debut": 7.047,
+          "fin": 7.21
+        },
+        {
+          "mot": "ligne.",
+          "debut": 7.233,
+          "fin": 7.523
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 8.472,
+      "duree": 16.224,
+      "texte": "On part de la page Historique, et on ressort avec la facture ouverte. Le tableau donne le statut et le total ; l'icône en bout de ligne ouvre le document, prêt à télécharger. Rien à recalculer, rien à reconstituer : la facture est déjà écrite.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.128
+        },
+        {
+          "mot": "part",
+          "debut": 0.174,
+          "fin": 0.325
+        },
+        {
+          "mot": "de",
+          "debut": 0.348,
+          "fin": 0.406
+        },
+        {
+          "mot": "la",
+          "debut": 0.453,
+          "fin": 0.511
+        },
+        {
+          "mot": "page",
+          "debut": 0.569,
+          "fin": 0.801
+        },
+        {
+          "mot": "Historique,",
+          "debut": 0.824,
+          "fin": 1.451
+        },
+        {
+          "mot": "et",
+          "debut": 1.521,
+          "fin": 1.66
+        },
+        {
+          "mot": "on",
+          "debut": 1.695,
+          "fin": 1.753
+        },
+        {
+          "mot": "ressort",
+          "debut": 1.823,
+          "fin": 2.276
+        },
+        {
+          "mot": "avec",
+          "debut": 2.31,
+          "fin": 2.577
+        },
+        {
+          "mot": "la",
+          "debut": 2.624,
+          "fin": 2.67
+        },
+        {
+          "mot": "facture",
+          "debut": 2.728,
+          "fin": 3.077
+        },
+        {
+          "mot": "ouverte.",
+          "debut": 3.123,
+          "fin": 3.646
+        },
+        {
+          "mot": "Le",
+          "debut": 3.971,
+          "fin": 4.087
+        },
+        {
+          "mot": "tableau",
+          "debut": 4.133,
+          "fin": 4.447
+        },
+        {
+          "mot": "donne",
+          "debut": 4.516,
+          "fin": 4.725
+        },
+        {
+          "mot": "le",
+          "debut": 4.76,
+          "fin": 4.818
+        },
+        {
+          "mot": "statut",
+          "debut": 4.865,
+          "fin": 5.341
+        },
+        {
+          "mot": "et",
+          "debut": 5.375,
+          "fin": 5.492
+        },
+        {
+          "mot": "le",
+          "debut": 5.526,
+          "fin": 5.584
+        },
+        {
+          "mot": "total",
+          "debut": 5.631,
+          "fin": 6.026
+        },
+        {
+          "mot": ";",
+          "debut": 6.06,
+          "fin": 6.107
+        },
+        {
+          "mot": "l'icône",
+          "debut": 6.281,
+          "fin": 6.769
+        },
+        {
+          "mot": "en",
+          "debut": 6.803,
+          "fin": 6.908
+        },
+        {
+          "mot": "bout",
+          "debut": 6.954,
+          "fin": 7.094
+        },
+        {
+          "mot": "de",
+          "debut": 7.117,
+          "fin": 7.187
+        },
+        {
+          "mot": "ligne",
+          "debut": 7.233,
+          "fin": 7.5
+        },
+        {
+          "mot": "ouvre",
+          "debut": 7.581,
+          "fin": 7.895
+        },
+        {
+          "mot": "le",
+          "debut": 7.918,
+          "fin": 7.976
+        },
+        {
+          "mot": "document,",
+          "debut": 8.011,
+          "fin": 8.603
+        },
+        {
+          "mot": "prêt",
+          "debut": 8.847,
+          "fin": 9.114
+        },
+        {
+          "mot": "à",
+          "debut": 9.137,
+          "fin": 9.172
+        },
+        {
+          "mot": "télécharger.",
+          "debut": 9.242,
+          "fin": 9.903
+        },
+        {
+          "mot": "Rien",
+          "debut": 10.228,
+          "fin": 10.519
+        },
+        {
+          "mot": "à",
+          "debut": 10.577,
+          "fin": 10.6
+        },
+        {
+          "mot": "recalculer,",
+          "debut": 10.646,
+          "fin": 11.378
+        },
+        {
+          "mot": "rien",
+          "debut": 11.656,
+          "fin": 11.947
+        },
+        {
+          "mot": "à",
+          "debut": 12.005,
+          "fin": 12.028
+        },
+        {
+          "mot": "reconstituer",
+          "debut": 12.074,
+          "fin": 12.841
+        },
+        {
+          "mot": ":",
+          "debut": 12.899,
+          "fin": 12.945
+        },
+        {
+          "mot": "la",
+          "debut": 13.189,
+          "fin": 13.27
+        },
+        {
+          "mot": "facture",
+          "debut": 13.328,
+          "fin": 13.746
+        },
+        {
+          "mot": "est",
+          "debut": 13.793,
+          "fin": 13.897
+        },
+        {
+          "mot": "déjà",
+          "debut": 13.92,
+          "fin": 14.141
+        },
+        {
+          "mot": "écrite.",
+          "debut": 14.164,
+          "fin": 14.629
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 24.695999999999998,
+      "duree": 5.904,
+      "texte": "Deuxième rangée de la page Historique : les factures. On consulte, et le tableau se charge.",
+      "mots": [
+        {
+          "mot": "Deuxième",
+          "debut": 0,
+          "fin": 0.453
+        },
+        {
+          "mot": "rangée",
+          "debut": 0.488,
+          "fin": 0.708
+        },
+        {
+          "mot": "de",
+          "debut": 0.731,
+          "fin": 0.789
+        },
+        {
+          "mot": "la",
+          "debut": 0.836,
+          "fin": 0.906
+        },
+        {
+          "mot": "page",
+          "debut": 0.964,
+          "fin": 1.358
+        },
+        {
+          "mot": "Historique",
+          "debut": 1.416,
+          "fin": 2.032
+        },
+        {
+          "mot": ":",
+          "debut": 2.09,
+          "fin": 2.136
+        },
+        {
+          "mot": "les",
+          "debut": 2.345,
+          "fin": 2.438
+        },
+        {
+          "mot": "factures.",
+          "debut": 2.473,
+          "fin": 2.984
+        },
+        {
+          "mot": "On",
+          "debut": 3.135,
+          "fin": 3.228
+        },
+        {
+          "mot": "consulte,",
+          "debut": 3.274,
+          "fin": 3.82
+        },
+        {
+          "mot": "et",
+          "debut": 3.936,
+          "fin": 4.04
+        },
+        {
+          "mot": "le",
+          "debut": 4.075,
+          "fin": 4.133
+        },
+        {
+          "mot": "tableau",
+          "debut": 4.18,
+          "fin": 4.447
+        },
+        {
+          "mot": "se",
+          "debut": 4.493,
+          "fin": 4.586
+        },
+        {
+          "mot": "charge.",
+          "debut": 4.632,
+          "fin": 4.992
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 30.599999999999998,
+      "duree": 4.488,
+      "texte": "Statut et total TTC : l'essentiel se lit ici.",
+      "mots": [
+        {
+          "mot": "Statut",
+          "debut": 0,
+          "fin": 0.43
+        },
+        {
+          "mot": "et",
+          "debut": 0.464,
+          "fin": 0.534
+        },
+        {
+          "mot": "total",
+          "debut": 0.58,
+          "fin": 0.859
+        },
+        {
+          "mot": "toutes",
+          "debut": 0.929,
+          "fin": 1.115
+        },
+        {
+          "mot": "taxes",
+          "debut": 1.138,
+          "fin": 1.37
+        },
+        {
+          "mot": "comprises",
+          "debut": 1.393,
+          "fin": 1.869
+        },
+        {
+          "mot": ":",
+          "debut": 1.916,
+          "fin": 1.95
+        },
+        {
+          "mot": "l'essentiel",
+          "debut": 2.276,
+          "fin": 2.821
+        },
+        {
+          "mot": "se",
+          "debut": 2.891,
+          "fin": 2.984
+        },
+        {
+          "mot": "lit",
+          "debut": 3.03,
+          "fin": 3.135
+        },
+        {
+          "mot": "ici.",
+          "debut": 3.17,
+          "fin": 3.576
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 35.088,
+      "duree": 2.952,
+      "texte": "L'icône ouvre la facture dans un onglet.",
+      "mots": [
+        {
+          "mot": "L'icône",
+          "debut": 0,
+          "fin": 0.499
+        },
+        {
+          "mot": "ouvre",
+          "debut": 0.557,
+          "fin": 0.813
+        },
+        {
+          "mot": "la",
+          "debut": 0.836,
+          "fin": 0.906
+        },
+        {
+          "mot": "facture",
+          "debut": 0.952,
+          "fin": 1.335
+        },
+        {
+          "mot": "dans",
+          "debut": 1.358,
+          "fin": 1.509
+        },
+        {
+          "mot": "un",
+          "debut": 1.579,
+          "fin": 1.625
+        },
+        {
+          "mot": "onglet.",
+          "debut": 1.695,
+          "fin": 1.997
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 38.04,
+      "duree": 2.712,
+      "texte": "Et le bouton Télécharger l'enregistre.",
+      "mots": [
+        {
+          "mot": "Et",
+          "debut": 0,
+          "fin": 0.128
+        },
+        {
+          "mot": "le",
+          "debut": 0.163,
+          "fin": 0.221
+        },
+        {
+          "mot": "bouton",
+          "debut": 0.279,
+          "fin": 0.569
+        },
+        {
+          "mot": "Télécharger",
+          "debut": 0.615,
+          "fin": 1.149
+        },
+        {
+          "mot": "l'enregistre.",
+          "debut": 1.184,
+          "fin": 1.8
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 40.752,
+      "duree": 12.096,
+      "texte": "Le journal montre un client. Pour voir toutes les factures qui attendent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "journal",
+          "debut": 0.186,
+          "fin": 0.511
+        },
+        {
+          "mot": "montre",
+          "debut": 0.592,
+          "fin": 0.882
+        },
+        {
+          "mot": "un",
+          "debut": 0.906,
+          "fin": 0.952
+        },
+        {
+          "mot": "client.",
+          "debut": 0.998,
+          "fin": 1.416
+        },
+        {
+          "mot": "Pour",
+          "debut": 1.567,
+          "fin": 1.73
+        },
+        {
+          "mot": "voir",
+          "debut": 1.776,
+          "fin": 1.892
+        },
+        {
+          "mot": "toutes",
+          "debut": 1.939,
+          "fin": 2.136
+        },
+        {
+          "mot": "les",
+          "debut": 2.159,
+          "fin": 2.241
+        },
+        {
+          "mot": "factures",
+          "debut": 2.264,
+          "fin": 2.659
+        },
+        {
+          "mot": "qui",
+          "debut": 2.682,
+          "fin": 2.775
+        },
+        {
+          "mot": "attendent,",
+          "debut": 2.821,
+          "fin": 3.32
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 3.495,
+          "fin": 4.365
+        },
+        {
+          "mot": "parle",
+          "debut": 4.423,
+          "fin": 4.632
+        },
+        {
+          "mot": "à",
+          "debut": 4.656,
+          "fin": 4.679
+        },
+        {
+          "mot": "Claude",
+          "debut": 4.714,
+          "fin": 5.027
+        },
+        {
+          "mot": ":",
+          "debut": 5.062,
+          "fin": 5.097
+        },
+        {
+          "mot": "vous",
+          "debut": 5.271,
+          "fin": 5.399
+        },
+        {
+          "mot": "demandez",
+          "debut": 5.433,
+          "fin": 5.77
+        },
+        {
+          "mot": "en",
+          "debut": 5.805,
+          "fin": 5.851
+        },
+        {
+          "mot": "français,",
+          "debut": 5.898,
+          "fin": 6.385
+        },
+        {
+          "mot": "il",
+          "debut": 6.536,
+          "fin": 6.664
+        },
+        {
+          "mot": "lit",
+          "debut": 6.711,
+          "fin": 6.838
+        },
+        {
+          "mot": "vos",
+          "debut": 6.873,
+          "fin": 6.989
+        },
+        {
+          "mot": "données",
+          "debut": 7.012,
+          "fin": 7.338
+        },
+        {
+          "mot": "et",
+          "debut": 7.372,
+          "fin": 7.477
+        },
+        {
+          "mot": "répond.",
+          "debut": 7.523,
+          "fin": 7.953
+        },
+        {
+          "mot": "Copiez",
+          "debut": 8.336,
+          "fin": 8.696
+        },
+        {
+          "mot": "ce",
+          "debut": 8.719,
+          "fin": 8.812
+        },
+        {
+          "mot": "prompt,",
+          "debut": 8.858,
+          "fin": 9.276
+        },
+        {
+          "mot": "remplacez",
+          "debut": 9.485,
+          "fin": 10.019
+        },
+        {
+          "mot": "ce",
+          "debut": 10.054,
+          "fin": 10.159
+        },
+        {
+          "mot": "qui",
+          "debut": 10.205,
+          "fin": 10.298
+        },
+        {
+          "mot": "est",
+          "debut": 10.333,
+          "fin": 10.403
+        },
+        {
+          "mot": "entre",
+          "debut": 10.461,
+          "fin": 10.67
+        },
+        {
+          "mot": "crochets.",
+          "debut": 10.728,
+          "fin": 11.192
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 52.848,
+      "duree": 5.448,
+      "texte": "Le statut au tableau, le détail dans la facture : la question du client trouve sa réponse.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "statut",
+          "debut": 0.197,
+          "fin": 0.557
+        },
+        {
+          "mot": "au",
+          "debut": 0.58,
+          "fin": 0.639
+        },
+        {
+          "mot": "tableau,",
+          "debut": 0.697,
+          "fin": 1.103
+        },
+        {
+          "mot": "le",
+          "debut": 1.149,
+          "fin": 1.231
+        },
+        {
+          "mot": "détail",
+          "debut": 1.277,
+          "fin": 1.579
+        },
+        {
+          "mot": "dans",
+          "debut": 1.602,
+          "fin": 1.718
+        },
+        {
+          "mot": "la",
+          "debut": 1.741,
+          "fin": 1.8
+        },
+        {
+          "mot": "facture",
+          "debut": 1.869,
+          "fin": 2.38
+        },
+        {
+          "mot": ":",
+          "debut": 2.415,
+          "fin": 2.45
+        },
+        {
+          "mot": "la",
+          "debut": 2.601,
+          "fin": 2.682
+        },
+        {
+          "mot": "question",
+          "debut": 2.74,
+          "fin": 3.053
+        },
+        {
+          "mot": "du",
+          "debut": 3.088,
+          "fin": 3.158
+        },
+        {
+          "mot": "client",
+          "debut": 3.193,
+          "fin": 3.495
+        },
+        {
+          "mot": "trouve",
+          "debut": 3.541,
+          "fin": 3.773
+        },
+        {
+          "mot": "sa",
+          "debut": 3.796,
+          "fin": 3.889
+        },
+        {
+          "mot": "réponse.",
+          "debut": 3.936,
+          "fin": 4.493
+        }
+      ]
+    }
+  ]
+}

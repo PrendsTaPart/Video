@@ -1,0 +1,27 @@
+[
+  {
+    "mot": "Et",
+    "debut": 0,
+    "fin": 0.116
+  },
+  {
+    "mot": "le",
+    "debut": 0.139,
+    "fin": 0.197
+  },
+  {
+    "mot": "bouton",
+    "debut": 0.244,
+    "fin": 0.488
+  },
+  {
+    "mot": "Télécharger",
+    "debut": 0.534,
+    "fin": 0.998
+  },
+  {
+    "mot": "l'enregistre.",
+    "debut": 1.022,
+    "fin": 1.579
+  }
+]

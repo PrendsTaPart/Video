@@ -1,0 +1,49 @@
+{
+  "fonctionnalite": "Réinitialiser un mot de passe oublié",
+  "a_quoi_ca_sert": "Vous ne vous souvenez plus de votre mot de passe et vous êtes bloqué devant la page de connexion. RapidoCRM vous envoie un lien par e-mail, vous en choisissez un nouveau, et vous retrouvez votre tableau de bord sans appeler personne.",
+  "pour_qui": "Toute personne qui a déjà un compte RapidoCRM et n'arrive plus à se connecter",
+  "prerequis": [
+    "Avoir déjà un compte RapidoCRM",
+    "Accéder à la boîte e-mail associée au compte"
+  ],
+  "champs_cles": [
+    { "nom": "Adresse e-mail", "obligatoire": true, "explication": "Celle de votre compte : c'est là que part le lien de réinitialisation." },
+    { "nom": "Nouveau mot de passe", "obligatoire": true, "explication": "Le mot de passe que vous voulez désormais utiliser." },
+    { "nom": "Confirmation du mot de passe", "obligatoire": true, "explication": "Le même, une seconde fois, pour éviter la faute de frappe." }
+  ],
+  "outils_mcp": [
+    { "nom": "list_users", "role": "Liste les utilisateurs de l'entreprise dans le C.R.M. Lecture seule.",
+      "parametres_obligatoires": [], "parametres_optionnels": ["q", "limit", "statut", "periode"],
+      "exemple_appel": { "limit": 10 } }
+  ],
+  "bonnes_pratiques": [
+    "Demandez le lien depuis l'adresse e-mail exacte de votre compte : c'est elle qui sert d'identifiant.",
+    "Regardez vos indésirables si le message tarde : il part immédiatement après la demande."
+  ],
+  "erreurs_frequentes": [
+    "Saisir une autre adresse que celle du compte : aucun message n'arrivera, sans que rien ne le signale.",
+    "Deux mots de passe différents dans les deux champs : le nouveau mot de passe n'est pas enregistré."
+  ],
+  "cas_usage": [
+    { "titre": "Revenir de congés sans son mot de passe", "contexte": "Vous n'avez pas ouvert le C.R.M. depuis trois semaines et le mot de passe ne revient pas.",
+      "resultat_attendu": "En une minute, un nouveau mot de passe est défini et vous êtes de retour sur votre tableau de bord." }
+  ],
+  "astuces": [
+    { "titre": "Le lien part tout de suite", "contenu": "Un bandeau vert confirme l'envoi en haut à droite. Si vous ne voyez rien arriver, vérifiez l'adresse saisie avant de redemander un lien.", "niveau": "debutant" },
+    { "titre": "Vous n'avez pas besoin de l'ancien mot de passe", "contenu": "La page de réinitialisation ne demande que le nouveau, deux fois. L'ancien n'est jamais redemandé.", "niveau": "debutant" }
+  ],
+  "prompt_claude": {
+    "titre": "Voir qui a un accès au C.R.M.",
+    "texte": "Liste-moi les [nombre] utilisateurs de mon CRM, avec leur nom et leur adresse e-mail.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_users"
+  },
+  "sources": {
+    "champs_cles": "frames 00:06 à 00:33 de l'enregistrement (libellés lus à l'écran)",
+    "a_quoi_ca_sert": "enchaînement observé : connexion → demande de lien → nouveau mot de passe → tableau de bord",
+    "erreurs_frequentes": "frames 00:23 à 00:33 : les deux champs de mot de passe de la page de réinitialisation",
+    "astuces": "frame 00:14 : bandeau vert « Nous avons envoyé par e-mail le lien de réinitialisation de votre mot de passe ! »",
+    "outils_mcp": "schémas du MCP RapidoCRM (lecture seule). Aucun outil ne couvre la connexion ni le mot de passe : ces opérations sont exclusivement web, ce que le tutoriel dit explicitement."
+  },
+  "a_verifier": []
+}

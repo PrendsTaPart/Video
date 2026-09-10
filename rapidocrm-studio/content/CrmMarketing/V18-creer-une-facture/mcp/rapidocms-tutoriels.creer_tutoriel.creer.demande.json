@@ -1,0 +1,52 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-une-facture",
+    "module": "06-crm-marketing",
+    "numero": 18,
+    "titre": "Créer une facture",
+    "titre_court": "Créer une facture",
+    "accroche": "Tout est déjà dans sa fiche.",
+    "explication": "On part de la fiche d'une entreprise, et on ressort avec une facture. Le panneau Finance l'ouvre, le produit choisi remplit les montants, et la facture rejoint l'activité du client.\n\n1. Ouvrir « Créer une facture » depuis la fiche — Panneau Finance : créer une facture.\n2. Logo et charte graphique de la facture — Le logo est repris du client. On choisit la couleur.\n3. Choisir le produit à facturer — Le catalogue défile deux par deux. Les flèches font venir les suivants.\n4. Laisser les montants se calculer — Prix hors taxes, TVA, total, remise : vous n'écrivez rien, sauf la remise.\n5. Délai, mentions légales et statut — Le délai de paiement, les mentions, le statut : payée ou en attente.\n6. Mode de paiement, totaux et enregistrement — Le règlement, les totaux, enregistrer.\n7. Retrouver la facture dans l'activité de la fiche — Et la voilà en tête de l'activité.\n\nLes factures s'accumulent. Pour voir celles qui attendent encore un règlement, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir « Créer une facture » depuis la fiche",
+        "texte": "Panneau Finance : créer une facture."
+      },
+      {
+        "titre": "Logo et charte graphique de la facture",
+        "texte": "Le logo est repris du client. On choisit la couleur."
+      },
+      {
+        "titre": "Choisir le produit à facturer",
+        "texte": "Le catalogue défile deux par deux. Les flèches font venir les suivants."
+      },
+      {
+        "titre": "Laisser les montants se calculer",
+        "texte": "Prix hors taxes, TVA, total, remise : vous n'écrivez rien, sauf la remise."
+      },
+      {
+        "titre": "Délai, mentions légales et statut",
+        "texte": "Le délai de paiement, les mentions, le statut : payée ou en attente."
+      },
+      {
+        "titre": "Mode de paiement, totaux et enregistrement",
+        "texte": "Le règlement, les totaux, enregistrer."
+      },
+      {
+        "titre": "Retrouver la facture dans l'activité de la fiche",
+        "texte": "Et la voilà en tête de l'activité."
+      }
+    ],
+    "a_quoi_ca_sert": "Facturer un client sans ressaisir ses coordonnées : on choisit un produit du catalogue, le logiciel calcule les montants, et la facture rejoint l'activité de la fiche.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir ouvert la fiche d'une entreprise cliente",
+      "Avoir au moins un produit au catalogue"
+    ]
+  },
+  "demande_le": "2026-09-07T12:21:50.595Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "mot": "Et",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "le",
+    "debut": 0.174,
+    "fin": 0.232
+  },
+  {
+    "mot": "même",
+    "debut": 0.267,
+    "fin": 0.43
+  },
+  {
+    "mot": "bouton",
+    "debut": 0.453,
+    "fin": 0.708
+  },
+  {
+    "mot": "partout",
+    "debut": 0.766,
+    "fin": 1.126
+  },
+  {
+    "mot": ":",
+    "debut": 1.161,
+    "fin": 1.184
+  },
+  {
+    "mot": "Consulter.",
+    "debut": 1.358,
+    "fin": 1.997
+  }
+]

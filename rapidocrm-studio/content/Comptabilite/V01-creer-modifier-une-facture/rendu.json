@@ -1,0 +1,96 @@
+{
+  "duree": 83.23333333333333,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V01-creer-modifier-une-facture/out/master-16x9.mp4",
+      "octets": 18101279
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V01-creer-modifier-une-facture/out/master-9x16.mp4",
+      "octets": 12545725
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.633333333333333
+    },
+    {
+      "nom": "titre",
+      "debut": 9.633333333333333,
+      "fin": 24.266666666666666
+    },
+    {
+      "nom": "demo",
+      "debut": 24.266666666666666,
+      "fin": 66.1
+    },
+    {
+      "nom": "claude",
+      "debut": 66.1,
+      "fin": 79.03333333333333
+    },
+    {
+      "nom": "punchline",
+      "debut": 79.03333333333333,
+      "fin": 83.23333333333333
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Votre facture part sur un tableur, recopiée à la main. Et le total, vous le vérifiez deux fois."
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Créer et modifier une facture"
+    },
+    {
+      "timecode": "00:24",
+      "titre": "Ouvrir la page Facturation"
+    },
+    {
+      "timecode": "00:29",
+      "titre": "Choisir le client et le produit"
+    },
+    {
+      "timecode": "00:35",
+      "titre": "Laisser les montants se calculer"
+    },
+    {
+      "timecode": "00:41",
+      "titre": "Fixer le délai et le statut"
+    },
+    {
+      "timecode": "00:47",
+      "titre": "Relire les totaux"
+    },
+    {
+      "timecode": "00:52",
+      "titre": "Retrouver la facture au tableau"
+    },
+    {
+      "timecode": "00:58",
+      "titre": "Corriger une facture"
+    },
+    {
+      "timecode": "01:03",
+      "titre": "Voir la correction confirmée"
+    },
+    {
+      "timecode": "01:06",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:19",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

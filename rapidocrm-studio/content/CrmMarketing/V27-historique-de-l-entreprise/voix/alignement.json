@@ -1,0 +1,777 @@
+{
+  "duree_totale": 57.19199999999999,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 9.168,
+      "texte": "Un client rappelle après six semaines. Qui lui a écrit ? Quand ? À propos de quoi ? Neuf journaux répondent, sur une seule page.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "client",
+          "debut": 0.186,
+          "fin": 0.43
+        },
+        {
+          "mot": "rappelle",
+          "debut": 0.488,
+          "fin": 0.813
+        },
+        {
+          "mot": "après",
+          "debut": 0.836,
+          "fin": 1.091
+        },
+        {
+          "mot": "six",
+          "debut": 1.115,
+          "fin": 1.3
+        },
+        {
+          "mot": "semaines.",
+          "debut": 1.324,
+          "fin": 1.8
+        },
+        {
+          "mot": "Qui",
+          "debut": 2.078,
+          "fin": 2.264
+        },
+        {
+          "mot": "lui",
+          "debut": 2.322,
+          "fin": 2.485
+        },
+        {
+          "mot": "a",
+          "debut": 2.508,
+          "fin": 2.543
+        },
+        {
+          "mot": "écrit",
+          "debut": 2.589,
+          "fin": 2.995
+        },
+        {
+          "mot": "?",
+          "debut": 3.03,
+          "fin": 3.146
+        },
+        {
+          "mot": "Quand",
+          "debut": 3.471,
+          "fin": 3.704
+        },
+        {
+          "mot": "?",
+          "debut": 3.82,
+          "fin": 3.866
+        },
+        {
+          "mot": "À",
+          "debut": 4.075,
+          "fin": 4.133
+        },
+        {
+          "mot": "propos",
+          "debut": 4.214,
+          "fin": 4.493
+        },
+        {
+          "mot": "de",
+          "debut": 4.516,
+          "fin": 4.586
+        },
+        {
+          "mot": "quoi",
+          "debut": 4.632,
+          "fin": 4.807
+        },
+        {
+          "mot": "?",
+          "debut": 4.923,
+          "fin": 5.004
+        },
+        {
+          "mot": "Neuf",
+          "debut": 5.515,
+          "fin": 5.84
+        },
+        {
+          "mot": "journaux",
+          "debut": 5.968,
+          "fin": 6.42
+        },
+        {
+          "mot": "répondent,",
+          "debut": 6.571,
+          "fin": 7.129
+        },
+        {
+          "mot": "sur",
+          "debut": 7.338,
+          "fin": 7.477
+        },
+        {
+          "mot": "une",
+          "debut": 7.512,
+          "fin": 7.616
+        },
+        {
+          "mot": "seule",
+          "debut": 7.639,
+          "fin": 7.814
+        },
+        {
+          "mot": "page.",
+          "debut": 7.837,
+          "fin": 8.208
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 9.168,
+      "duree": 13.632,
+      "texte": "On part de la fiche d'une entreprise, et on ressort avec sa page d'historique. Neuf journaux : e-mails, SMS, rendez-vous, contrats, documents, factures, devis, dépenses et notes.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "part",
+          "debut": 0.186,
+          "fin": 0.348
+        },
+        {
+          "mot": "de",
+          "debut": 0.372,
+          "fin": 0.43
+        },
+        {
+          "mot": "la",
+          "debut": 0.464,
+          "fin": 0.522
+        },
+        {
+          "mot": "fiche",
+          "debut": 0.604,
+          "fin": 0.824
+        },
+        {
+          "mot": "d'une",
+          "debut": 0.848,
+          "fin": 0.998
+        },
+        {
+          "mot": "entreprise,",
+          "debut": 1.022,
+          "fin": 1.741
+        },
+        {
+          "mot": "et",
+          "debut": 1.916,
+          "fin": 2.02
+        },
+        {
+          "mot": "on",
+          "debut": 2.055,
+          "fin": 2.101
+        },
+        {
+          "mot": "ressort",
+          "debut": 2.159,
+          "fin": 2.508
+        },
+        {
+          "mot": "avec",
+          "debut": 2.531,
+          "fin": 2.682
+        },
+        {
+          "mot": "sa",
+          "debut": 2.717,
+          "fin": 2.821
+        },
+        {
+          "mot": "page",
+          "debut": 2.879,
+          "fin": 3.077
+        },
+        {
+          "mot": "d'historique.",
+          "debut": 3.1,
+          "fin": 3.738
+        },
+        {
+          "mot": "Neuf",
+          "debut": 4.063,
+          "fin": 4.284
+        },
+        {
+          "mot": "journaux",
+          "debut": 4.342,
+          "fin": 4.725
+        },
+        {
+          "mot": ":",
+          "debut": 4.772,
+          "fin": 4.795
+        },
+        {
+          "mot": "e-mails,",
+          "debut": 5.004,
+          "fin": 5.619
+        },
+        {
+          "mot": "S.M.S.,",
+          "debut": 5.863,
+          "fin": 6.641
+        },
+        {
+          "mot": "rendez-vous,",
+          "debut": 6.92,
+          "fin": 7.558
+        },
+        {
+          "mot": "contrats,",
+          "debut": 7.883,
+          "fin": 8.499
+        },
+        {
+          "mot": "documents,",
+          "debut": 8.742,
+          "fin": 9.416
+        },
+        {
+          "mot": "factures,",
+          "debut": 9.625,
+          "fin": 10.368
+        },
+        {
+          "mot": "devis,",
+          "debut": 10.646,
+          "fin": 11.169
+        },
+        {
+          "mot": "dépenses",
+          "debut": 11.447,
+          "fin": 12.005
+        },
+        {
+          "mot": "et",
+          "debut": 12.121,
+          "fin": 12.26
+        },
+        {
+          "mot": "notes.",
+          "debut": 12.318,
+          "fin": 12.725
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 22.799999999999997,
+      "duree": 5.208,
+      "texte": "Le panneau de droite, premier bloc : Entreprise. Il tient quatre entrées.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "panneau",
+          "debut": 0.221,
+          "fin": 0.464
+        },
+        {
+          "mot": "de",
+          "debut": 0.499,
+          "fin": 0.569
+        },
+        {
+          "mot": "droite,",
+          "debut": 0.604,
+          "fin": 1.08
+        },
+        {
+          "mot": "premier",
+          "debut": 1.173,
+          "fin": 1.498
+        },
+        {
+          "mot": "bloc",
+          "debut": 1.533,
+          "fin": 1.776
+        },
+        {
+          "mot": ":",
+          "debut": 1.904,
+          "fin": 1.927
+        },
+        {
+          "mot": "Entreprise.",
+          "debut": 1.974,
+          "fin": 2.752
+        },
+        {
+          "mot": "Il",
+          "debut": 2.961,
+          "fin": 3.111
+        },
+        {
+          "mot": "tient",
+          "debut": 3.146,
+          "fin": 3.344
+        },
+        {
+          "mot": "quatre",
+          "debut": 3.379,
+          "fin": 3.634
+        },
+        {
+          "mot": "entrées.",
+          "debut": 3.657,
+          "fin": 4.063
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 28.007999999999996,
+      "duree": 2.952,
+      "texte": "La troisième : historique de l'entreprise.",
+      "mots": [
+        {
+          "mot": "La",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "troisième",
+          "debut": 0.209,
+          "fin": 0.65
+        },
+        {
+          "mot": ":",
+          "debut": 0.673,
+          "fin": 0.708
+        },
+        {
+          "mot": "historique",
+          "debut": 0.778,
+          "fin": 1.289
+        },
+        {
+          "mot": "de",
+          "debut": 1.312,
+          "fin": 1.382
+        },
+        {
+          "mot": "l'entreprise.",
+          "debut": 1.416,
+          "fin": 2.055
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 30.959999999999994,
+      "duree": 3.96,
+      "texte": "Neuf cartes, trois par rangée. Chacune couvre un type d'échange.",
+      "mots": [
+        {
+          "mot": "Neuf",
+          "debut": 0,
+          "fin": 0.244
+        },
+        {
+          "mot": "cartes,",
+          "debut": 0.313,
+          "fin": 0.662
+        },
+        {
+          "mot": "trois",
+          "debut": 0.778,
+          "fin": 1.022
+        },
+        {
+          "mot": "par",
+          "debut": 1.057,
+          "fin": 1.173
+        },
+        {
+          "mot": "rangée.",
+          "debut": 1.196,
+          "fin": 1.567
+        },
+        {
+          "mot": "Chacune",
+          "debut": 1.602,
+          "fin": 1.974
+        },
+        {
+          "mot": "couvre",
+          "debut": 1.997,
+          "fin": 2.194
+        },
+        {
+          "mot": "un",
+          "debut": 2.218,
+          "fin": 2.276
+        },
+        {
+          "mot": "type",
+          "debut": 2.322,
+          "fin": 2.496
+        },
+        {
+          "mot": "d'échange.",
+          "debut": 2.519,
+          "fin": 2.995
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 34.919999999999995,
+      "duree": 2.952,
+      "texte": "Et le même bouton partout : Consulter.",
+      "mots": [
+        {
+          "mot": "Et",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "le",
+          "debut": 0.174,
+          "fin": 0.232
+        },
+        {
+          "mot": "même",
+          "debut": 0.267,
+          "fin": 0.43
+        },
+        {
+          "mot": "bouton",
+          "debut": 0.453,
+          "fin": 0.708
+        },
+        {
+          "mot": "partout",
+          "debut": 0.766,
+          "fin": 1.126
+        },
+        {
+          "mot": ":",
+          "debut": 1.161,
+          "fin": 1.184
+        },
+        {
+          "mot": "Consulter.",
+          "debut": 1.358,
+          "fin": 1.997
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 37.87199999999999,
+      "duree": 12.936,
+      "texte": "Neuf journaux, c'est beaucoup à ouvrir. Pour avoir le total d'un coup, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Neuf",
+          "debut": 0,
+          "fin": 0.209
+        },
+        {
+          "mot": "journaux,",
+          "debut": 0.255,
+          "fin": 0.72
+        },
+        {
+          "mot": "c'est",
+          "debut": 0.789,
+          "fin": 0.975
+        },
+        {
+          "mot": "beaucoup",
+          "debut": 1.01,
+          "fin": 1.324
+        },
+        {
+          "mot": "à",
+          "debut": 1.37,
+          "fin": 1.393
+        },
+        {
+          "mot": "ouvrir.",
+          "debut": 1.428,
+          "fin": 1.834
+        },
+        {
+          "mot": "Pour",
+          "debut": 1.881,
+          "fin": 2.09
+        },
+        {
+          "mot": "avoir",
+          "debut": 2.125,
+          "fin": 2.38
+        },
+        {
+          "mot": "le",
+          "debut": 2.415,
+          "fin": 2.473
+        },
+        {
+          "mot": "total",
+          "debut": 2.519,
+          "fin": 2.786
+        },
+        {
+          "mot": "d'un",
+          "debut": 2.81,
+          "fin": 2.937
+        },
+        {
+          "mot": "coup,",
+          "debut": 2.972,
+          "fin": 3.204
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 3.262,
+          "fin": 4.017
+        },
+        {
+          "mot": "parle",
+          "debut": 4.063,
+          "fin": 4.307
+        },
+        {
+          "mot": "à",
+          "debut": 4.331,
+          "fin": 4.354
+        },
+        {
+          "mot": "Claude",
+          "debut": 4.412,
+          "fin": 4.76
+        },
+        {
+          "mot": ":",
+          "debut": 4.783,
+          "fin": 4.807
+        },
+        {
+          "mot": "vous",
+          "debut": 4.923,
+          "fin": 5.039
+        },
+        {
+          "mot": "demandez",
+          "debut": 5.062,
+          "fin": 5.399
+        },
+        {
+          "mot": "en",
+          "debut": 5.433,
+          "fin": 5.48
+        },
+        {
+          "mot": "français,",
+          "debut": 5.526,
+          "fin": 6.107
+        },
+        {
+          "mot": "il",
+          "debut": 6.258,
+          "fin": 6.409
+        },
+        {
+          "mot": "lit",
+          "debut": 6.455,
+          "fin": 6.583
+        },
+        {
+          "mot": "vos",
+          "debut": 6.618,
+          "fin": 6.745
+        },
+        {
+          "mot": "données",
+          "debut": 6.769,
+          "fin": 7.094
+        },
+        {
+          "mot": "et",
+          "debut": 7.129,
+          "fin": 7.233
+        },
+        {
+          "mot": "répond.",
+          "debut": 7.279,
+          "fin": 7.721
+        },
+        {
+          "mot": "Copiez",
+          "debut": 7.895,
+          "fin": 8.301
+        },
+        {
+          "mot": "ce",
+          "debut": 8.324,
+          "fin": 8.44
+        },
+        {
+          "mot": "prompt,",
+          "debut": 8.487,
+          "fin": 8.963
+        },
+        {
+          "mot": "remplacez",
+          "debut": 9.079,
+          "fin": 9.648
+        },
+        {
+          "mot": "ce",
+          "debut": 9.706,
+          "fin": 9.81
+        },
+        {
+          "mot": "qui",
+          "debut": 9.857,
+          "fin": 9.938
+        },
+        {
+          "mot": "est",
+          "debut": 9.961,
+          "fin": 10.031
+        },
+        {
+          "mot": "entre",
+          "debut": 10.101,
+          "fin": 10.298
+        },
+        {
+          "mot": "crochets.",
+          "debut": 10.344,
+          "fin": 10.762
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 50.80799999999999,
+      "duree": 6.384,
+      "texte": "Neuf journaux sur une page : reprendre un dossier prend moins de temps que de s'en souvenir.",
+      "mots": [
+        {
+          "mot": "Neuf",
+          "debut": 0,
+          "fin": 0.209
+        },
+        {
+          "mot": "journaux",
+          "debut": 0.267,
+          "fin": 0.569
+        },
+        {
+          "mot": "sur",
+          "debut": 0.592,
+          "fin": 0.731
+        },
+        {
+          "mot": "une",
+          "debut": 0.766,
+          "fin": 0.871
+        },
+        {
+          "mot": "page",
+          "debut": 0.906,
+          "fin": 1.219
+        },
+        {
+          "mot": ":",
+          "debut": 1.242,
+          "fin": 1.265
+        },
+        {
+          "mot": "reprendre",
+          "debut": 1.416,
+          "fin": 1.881
+        },
+        {
+          "mot": "un",
+          "debut": 1.904,
+          "fin": 1.95
+        },
+        {
+          "mot": "dossier",
+          "debut": 1.997,
+          "fin": 2.368
+        },
+        {
+          "mot": "prend",
+          "debut": 2.415,
+          "fin": 2.624
+        },
+        {
+          "mot": "moins",
+          "debut": 2.659,
+          "fin": 2.879
+        },
+        {
+          "mot": "de",
+          "debut": 2.902,
+          "fin": 2.995
+        },
+        {
+          "mot": "temps",
+          "debut": 3.077,
+          "fin": 3.286
+        },
+        {
+          "mot": "que",
+          "debut": 3.309,
+          "fin": 3.402
+        },
+        {
+          "mot": "de",
+          "debut": 3.437,
+          "fin": 3.495
+        },
+        {
+          "mot": "s'en",
+          "debut": 3.518,
+          "fin": 3.657
+        },
+        {
+          "mot": "souvenir.",
+          "debut": 3.704,
+          "fin": 4.226
+        }
+      ]
+    }
+  ]
+}

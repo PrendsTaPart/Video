@@ -1,0 +1,90 @@
+{
+  "outils": [
+    {
+      "nom": "list_contrats",
+      "description": "Lister les contrats clients, filtrables par statut et expiration. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "q",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche texte dans destinataire ou contenu"
+        },
+        {
+          "nom": "statut",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "brouillon",
+            "en_attente",
+            "signe"
+          ],
+          "description": "Statut du contrat"
+        },
+        {
+          "nom": "entreprise_id",
+          "type": "integer|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtrer par entreprise"
+        },
+        {
+          "nom": "date_debut",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtrer à partir de cette date YYYY-MM-DD"
+        },
+        {
+          "nom": "date_fin",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtrer jusqu'à cette date YYYY-MM-DD"
+        },
+        {
+          "nom": "limit",
+          "type": "integer|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre max de résultats"
+        }
+      ]
+    },
+    {
+      "nom": "list_contrat_templates",
+      "description": "Lister les templates de contrat disponibles. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "search",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche par titre"
+        },
+        {
+          "nom": "limit",
+          "type": "integer|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre max de résultats"
+        }
+      ]
+    },
+    {
+      "nom": "get_contrat",
+      "description": "Détail complet d'un contrat client. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer",
+          "obligatoire": true,
+          "valeurs_autorisees": [],
+          "description": "ID du contrat"
+        }
+      ]
+    }
+  ],
+  "divergences": []
+}

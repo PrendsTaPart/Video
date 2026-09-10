@@ -1,0 +1,52 @@
+[
+  {
+    "mot": "Trois",
+    "debut": 0,
+    "fin": 0.279
+  },
+  {
+    "mot": "écrans,",
+    "debut": 0.348,
+    "fin": 0.755
+  },
+  {
+    "mot": "une",
+    "debut": 0.813,
+    "fin": 0.975
+  },
+  {
+    "mot": "carte",
+    "debut": 0.998,
+    "fin": 1.324
+  },
+  {
+    "mot": ":",
+    "debut": 1.358,
+    "fin": 1.382
+  },
+  {
+    "mot": "la",
+    "debut": 1.509,
+    "fin": 1.591
+  },
+  {
+    "mot": "fidélité",
+    "debut": 1.637,
+    "fin": 2.055
+  },
+  {
+    "mot": "n'attend",
+    "debut": 2.101,
+    "fin": 2.334
+  },
+  {
+    "mot": "plus",
+    "debut": 2.357,
+    "fin": 2.473
+  },
+  {
+    "mot": "l'imprimeur.",
+    "debut": 2.496,
+    "fin": 3.03
+  }
+]

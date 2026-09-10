@@ -1,0 +1,24 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_cas_usage",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-mode-de-paiement-des-devis",
+    "cas_usage": [
+      {
+        "titre": "Noter le moyen annoncé par le client",
+        "contexte": "Le client dit au téléphone qu'il réglera par virement.",
+        "action": "Ouvrez le devis en modification, cochez Virement dans le bloc Mode de paiement, puis enregistrez.",
+        "resultat": "Le devis porte le mode de paiement, et le bandeau confirme « Devis modifié avec succès »."
+      },
+      {
+        "titre": "Corriger un mode déjà choisi",
+        "contexte": "Le client change d'avis et passera par carte plutôt que par virement.",
+        "action": "Rouvrez le même devis en modification et cochez l'autre case.",
+        "resultat": "Le nouveau mode remplace l'ancien : une seule case reste cochée."
+      }
+    ]
+  },
+  "demande_le": "2026-09-05T17:16:50.209Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

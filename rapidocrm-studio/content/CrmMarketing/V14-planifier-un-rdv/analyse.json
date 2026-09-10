@@ -1,0 +1,329 @@
+{
+  "duree": 73.0,
+  "resolution": [
+    1920,
+    882
+  ],
+  "fps": 25,
+  "ecrans": [
+    {
+      "t": 0.0,
+      "nom": "Fiche entreprise — La baguetterie"
+    },
+    {
+      "t": 5.0,
+      "nom": "Modale « Prendre un rendez-vous »"
+    },
+    {
+      "t": 44.0,
+      "nom": "Choix des invités"
+    },
+    {
+      "t": 56.0,
+      "nom": "Type, rappel et mode d'envoi"
+    },
+    {
+      "t": 66.0,
+      "nom": "Informations complémentaires et enregistrement"
+    }
+  ],
+  "actions": [
+    {
+      "t": 2.0,
+      "type": "ouverture",
+      "cible": "Fiche entreprise et son panneau d'actions",
+      "zone": {
+        "x": 0.24,
+        "y": 0.05,
+        "w": 0.74,
+        "h": 0.9
+      },
+      "texte_visible": "Entreprise · La baguetterie · Entreprise · Communication · Finance · Marketing"
+    },
+    {
+      "t": 3.8,
+      "type": "clic",
+      "cible": "Prendre un rendez-vous, dans le panneau Communication",
+      "zone": {
+        "x": 0.74,
+        "y": 0.5,
+        "w": 0.24,
+        "h": 0.1
+      },
+      "texte_visible": "Prendre un rendez-vous"
+    },
+    {
+      "t": 6.0,
+      "type": "ouverture",
+      "cible": "Modale Prendre un rendez-vous",
+      "zone": {
+        "x": 0.26,
+        "y": 0.02,
+        "w": 0.42,
+        "h": 0.96
+      },
+      "texte_visible": "Prendre un rendez-vous · Titre · Créneau · De · A · E-mails des invités · Organisateurs · Type de rendez-vous · Rappel"
+    },
+    {
+      "t": 13.0,
+      "type": "saisie",
+      "cible": "Champ Titre",
+      "zone": {
+        "x": 0.28,
+        "y": 0.28,
+        "w": 0.38,
+        "h": 0.1
+      },
+      "texte_visible": "Point suivi carte menu"
+    },
+    {
+      "t": 22.0,
+      "type": "saisie",
+      "cible": "Champ De du créneau",
+      "zone": {
+        "x": 0.28,
+        "y": 0.5,
+        "w": 0.18,
+        "h": 0.1
+      },
+      "texte_visible": "28/08/2026 10:00 AM"
+    },
+    {
+      "t": 40.0,
+      "type": "saisie",
+      "cible": "Champ A du créneau",
+      "zone": {
+        "x": 0.48,
+        "y": 0.5,
+        "w": 0.18,
+        "h": 0.1
+      },
+      "texte_visible": "28/08/2026 10:45 AM"
+    },
+    {
+      "t": 48.0,
+      "type": "selection",
+      "cible": "Liste des invités proposés",
+      "zone": {
+        "x": 0.28,
+        "y": 0.56,
+        "w": 0.38,
+        "h": 0.33
+      },
+      "texte_visible": "liste d'utilisateurs du compte, avec leur adresse e-mail"
+    },
+    {
+      "t": 58.0,
+      "type": "selection",
+      "cible": "Type de rendez-vous, rappel et mode d'envoi",
+      "zone": {
+        "x": 0.27,
+        "y": 0.42,
+        "w": 0.4,
+        "h": 0.55
+      },
+      "texte_visible": "Visioconférence · Présentiel · Téléphonique · 30 min avant · Dans 24h · Dans 48h · Par SMS · Par e-mail · Par SMS et e-mail"
+    },
+    {
+      "t": 67.0,
+      "type": "saisie",
+      "cible": "Informations complémentaires",
+      "zone": {
+        "x": 0.27,
+        "y": 0.45,
+        "w": 0.4,
+        "h": 0.28
+      },
+      "texte_visible": "Préparer les 3 options de carte d'automne."
+    },
+    {
+      "t": 69.0,
+      "type": "validation",
+      "cible": "Bouton Enregistrer",
+      "zone": {
+        "x": 0.4,
+        "y": 0.79,
+        "w": 0.14,
+        "h": 0.1
+      },
+      "texte_visible": "Enregistrer"
+    },
+    {
+      "t": 72.0,
+      "type": "defilement",
+      "cible": "Retour en haut de la modale",
+      "zone": {
+        "x": 0.26,
+        "y": 0.02,
+        "w": 0.42,
+        "h": 0.96
+      },
+      "texte_visible": "Prendre un rendez-vous · Point suivi carte menu · 28/08/2026 10:00 AM · 28/08/2026 10:45 AM"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir « Prendre un rendez-vous »",
+      "debut": 1.0,
+      "fin": 6.0,
+      "actions": [
+        0,
+        1
+      ],
+      "zone_focus": {
+        "x": 0.72,
+        "y": 0.05,
+        "w": 0.27,
+        "h": 0.85
+      }
+    },
+    {
+      "numero": 2,
+      "titre": "Donner un titre au rendez-vous",
+      "debut": 6.0,
+      "fin": 16.0,
+      "actions": [
+        2,
+        3
+      ],
+      "zone_focus": {
+        "x": 0.26,
+        "y": 0.05,
+        "w": 0.42,
+        "h": 0.42
+      }
+    },
+    {
+      "numero": 3,
+      "titre": "Fixer le créneau, début et fin",
+      "debut": 16.0,
+      "fin": 44.0,
+      "actions": [
+        4,
+        5
+      ],
+      "zone_focus": {
+        "x": 0.26,
+        "y": 0.38,
+        "w": 0.42,
+        "h": 0.26
+      }
+    },
+    {
+      "numero": 4,
+      "titre": "Choisir les invités et les organisateurs",
+      "debut": 44.0,
+      "fin": 56.0,
+      "actions": [
+        6
+      ],
+      "zone_focus": {
+        "x": 0.26,
+        "y": 0.5,
+        "w": 0.42,
+        "h": 0.45
+      }
+    },
+    {
+      "numero": 5,
+      "titre": "Type de rendez-vous, rappel et mode d'envoi",
+      "debut": 56.0,
+      "fin": 66.0,
+      "actions": [
+        7
+      ],
+      "zone_focus": {
+        "x": 0.26,
+        "y": 0.38,
+        "w": 0.42,
+        "h": 0.6
+      }
+    },
+    {
+      "numero": 6,
+      "titre": "Ajouter une note et enregistrer",
+      "debut": 66.0,
+      "fin": 73.0,
+      "actions": [
+        8,
+        9,
+        10
+      ],
+      "zone_focus": {
+        "x": 0.26,
+        "y": 0.4,
+        "w": 0.42,
+        "h": 0.55
+      }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 73.0,
+      "zone": {
+        "x": 0.8,
+        "y": 0.01,
+        "w": 0.2,
+        "h": 0.14
+      },
+      "raison": "Photo et nom du titulaire du compte (Dupont lina), affichés en haut à droite pendant tout l'enregistrement."
+    },
+    {
+      "t": 0.0,
+      "fin": 6.5,
+      "zone": {
+        "x": 0.23,
+        "y": 0.78,
+        "w": 0.52,
+        "h": 0.22
+      },
+      "raison": "Bas de la fiche entreprise : tableau Contacts, avec noms, e-mails et téléphones réels."
+    },
+    {
+      "t": 6.5,
+      "fin": 73.0,
+      "zone": {
+        "x": 0.23,
+        "y": 0.92,
+        "w": 0.52,
+        "h": 0.08
+      },
+      "raison": "Ligne du tableau Contacts qui dépasse sous la modale (Nicola charbit, son e-mail et son téléphone)."
+    },
+    {
+      "t": 43.0,
+      "fin": 56.0,
+      "zone": {
+        "x": 0.24,
+        "y": 0.28,
+        "w": 0.46,
+        "h": 0.7
+      },
+      "raison": "Corps de la modale pendant le choix des invités : étiquettes d'adresses e-mail, noms et photos des organisateurs, et liste déroulante des utilisateurs du compte, qui remonte au-dessus du champ."
+    },
+    {
+      "t": 59.0,
+      "fin": 67.0,
+      "zone": {
+        "x": 0.24,
+        "y": 0.05,
+        "w": 0.46,
+        "h": 0.42
+      },
+      "raison": "Mêmes étiquettes, position haute après défilement."
+    },
+    {
+      "t": 66.0,
+      "fin": 73.0,
+      "zone": {
+        "x": 0.24,
+        "y": 0.56,
+        "w": 0.46,
+        "h": 0.42
+      },
+      "raison": "Retour en haut de la modale : les étiquettes redeviennent lisibles."
+    }
+  ]
+}

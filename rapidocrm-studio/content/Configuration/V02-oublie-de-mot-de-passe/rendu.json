@@ -1,0 +1,88 @@
+{
+  "duree": 90.16666666666667,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V02-oublie-de-mot-de-passe/out/master-16x9.mp4",
+      "octets": 13043505
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V02-oublie-de-mot-de-passe/out/master-9x16.mp4",
+      "octets": 12287254
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 10.2
+    },
+    {
+      "nom": "titre",
+      "debut": 10.2,
+      "fin": 22.4
+    },
+    {
+      "nom": "demo",
+      "debut": 22.4,
+      "fin": 71.1
+    },
+    {
+      "nom": "claude",
+      "debut": 71.1,
+      "fin": 87.06666666666666
+    },
+    {
+      "nom": "punchline",
+      "debut": 87.06666666666666,
+      "fin": 90.16666666666667
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Vous êtes devant la page de connexion, et le mot de passe ne revient pas."
+    },
+    {
+      "timecode": "00:10",
+      "titre": "Réinitialiser un mot de passe oublié"
+    },
+    {
+      "timecode": "00:22",
+      "titre": "Ouvrir « mot de passe oublié »"
+    },
+    {
+      "timecode": "00:28",
+      "titre": "Saisir son adresse e-mail"
+    },
+    {
+      "timecode": "00:37",
+      "titre": "Recevoir le lien de réinitialisation"
+    },
+    {
+      "timecode": "00:46",
+      "titre": "Choisir un nouveau mot de passe"
+    },
+    {
+      "timecode": "00:55",
+      "titre": "Se reconnecter"
+    },
+    {
+      "timecode": "01:03",
+      "titre": "Retrouver son tableau de bord"
+    },
+    {
+      "timecode": "01:11",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:27",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

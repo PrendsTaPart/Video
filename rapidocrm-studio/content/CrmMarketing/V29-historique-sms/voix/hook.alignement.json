@@ -1,0 +1,132 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.197
+  },
+  {
+    "mot": "client",
+    "debut": 0.232,
+    "fin": 0.488
+  },
+  {
+    "mot": "dit",
+    "debut": 0.522,
+    "fin": 0.639
+  },
+  {
+    "mot": "qu'il",
+    "debut": 0.662,
+    "fin": 0.778
+  },
+  {
+    "mot": "n'a",
+    "debut": 0.801,
+    "fin": 0.882
+  },
+  {
+    "mot": "pas",
+    "debut": 0.952,
+    "fin": 1.08
+  },
+  {
+    "mot": "été",
+    "debut": 1.115,
+    "fin": 1.265
+  },
+  {
+    "mot": "prévenu.",
+    "debut": 1.312,
+    "fin": 1.73
+  },
+  {
+    "mot": "Vous,",
+    "debut": 1.846,
+    "fin": 2.02
+  },
+  {
+    "mot": "vous",
+    "debut": 2.055,
+    "fin": 2.183
+  },
+  {
+    "mot": "croyez",
+    "debut": 2.206,
+    "fin": 2.485
+  },
+  {
+    "mot": "lui",
+    "debut": 2.531,
+    "fin": 2.647
+  },
+  {
+    "mot": "avoir",
+    "debut": 2.682,
+    "fin": 2.868
+  },
+  {
+    "mot": "envoyé",
+    "debut": 2.891,
+    "fin": 3.262
+  },
+  {
+    "mot": "un",
+    "debut": 3.297,
+    "fin": 3.367
+  },
+  {
+    "mot": "S.M.S.",
+    "debut": 3.402,
+    "fin": 3.947
+  },
+  {
+    "mot": "Le",
+    "debut": 4.191,
+    "fin": 4.261
+  },
+  {
+    "mot": "journal",
+    "debut": 4.296,
+    "fin": 4.563
+  },
+  {
+    "mot": "tranche",
+    "debut": 4.598,
+    "fin": 4.969
+  },
+  {
+    "mot": ":",
+    "debut": 5.027,
+    "fin": 5.062
+  },
+  {
+    "mot": "le",
+    "debut": 5.236,
+    "fin": 5.317
+  },
+  {
+    "mot": "message,",
+    "debut": 5.364,
+    "fin": 5.886
+  },
+  {
+    "mot": "le",
+    "debut": 6.037,
+    "fin": 6.107
+  },
+  {
+    "mot": "numéro,",
+    "debut": 6.153,
+    "fin": 6.711
+  },
+  {
+    "mot": "la",
+    "debut": 6.92,
+    "fin": 7.024
+  },
+  {
+    "mot": "date.",
+    "debut": 7.082,
+    "fin": 7.442
+  }
+]

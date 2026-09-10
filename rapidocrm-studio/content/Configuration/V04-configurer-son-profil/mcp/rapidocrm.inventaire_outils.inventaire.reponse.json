@@ -1,0 +1,22 @@
+{
+  "outils": [
+    { "nom": "get_profile", "description": "Profil : renvoie les informations de profil de l'utilisateur connecté. Lecture seule.", "parametres": [] },
+    { "nom": "get_company", "description": "Entreprise : renvoie les informations de la société émettrice (nom, SIRET, adresse, coordonnées). Lecture seule.", "parametres": [] },
+    { "nom": "update_commercial_profil", "description": "Met à jour le profil d'un commercial. Écriture — non utilisé par ce pipeline.",
+      "parametres": [ { "nom": "id", "type": "integer", "obligatoire": true, "description": "ID du commercial" }, { "nom": "payload", "type": "object|null", "obligatoire": false, "description": "Données de mise à jour" } ] },
+    { "nom": "get_user", "description": "Utilisateurs : fiche d'un utilisateur par son identifiant. Lecture seule. N'expose aucun mot de passe.",
+      "parametres": [ { "nom": "id", "type": "integer", "obligatoire": true, "description": "ID principal" } ] },
+    { "nom": "update_entreprise", "description": "Met à jour une entreprise cliente. Écriture — non utilisé par ce pipeline. Son schéma renseigne les champs d'une fiche entreprise.",
+      "parametres": [
+        { "nom": "nom", "type": "string|null", "obligatoire": false, "description": "Nom de l'entreprise" },
+        { "nom": "email", "type": "string|null", "obligatoire": false, "description": "Email de contact" },
+        { "nom": "siret", "type": "string|null", "obligatoire": false, "description": "SIRET (14 chiffres)" },
+        { "nom": "adresse", "type": "string|null", "obligatoire": false, "description": "Adresse" },
+        { "nom": "code_postal", "type": "string|null", "obligatoire": false, "description": "Code postal" },
+        { "nom": "ville", "type": "string|null", "obligatoire": false, "description": "Ville" },
+        { "nom": "telephone", "type": "string|null", "obligatoire": false, "description": "Téléphone" },
+        { "nom": "site_web", "type": "string|null", "obligatoire": false, "description": "Site web (URL complète avec https://)" }
+      ] }
+  ],
+  "note": "Inventaire restreint aux outils touchant au profil et à la fiche entreprise. get_profile et get_company sont en lecture seule et servent à vérifier ce qui a été enregistré. Aucun outil ne dépose de photo de profil ni de logo : ces envois de fichier se font uniquement depuis l'interface web."
+}

@@ -1,0 +1,15 @@
+La consigne est écrite. Le brief commercial, lui, dort dans une pièce jointe d'octobre. Fichiers et consignes au même endroit que le produit.
+
+On part d'une stratégie déjà créée sur un produit, et on ressort avec un dossier complet : les documents qui vont avec, et les consignes en clair. Deux boutons suffisent, côte à côte — ajouter une description pour du texte, ajouter un fichier pour un document. Le titre de la page rappelle en permanence de quelle stratégie et de quel produit on parle. Et tout reste modifiable : chaque bloc porte ses boutons pour corriger ou supprimer.
+
+La page des descriptions de la stratégie, encore vide. Son titre rappelle le contexte : quelle stratégie, pour quel produit. Et deux boutons à droite.
+
+Le nom du fichier d'abord. C'est ce libellé qui s'affichera, pas le nom sur votre poste.
+
+Puis le document, par le bouton parcourir. Et on valide.
+
+Le fichier apparaît en vignette, la description en dessous. Un nouveau vendeur ouvre la page et sait quoi faire, chiffres à l'appui.
+
+Le dossier est constitué. Pour retrouver les produits dont la description reste à écrire, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.
+
+Une stratégie, ses documents, ses consignes. Sur une seule page.

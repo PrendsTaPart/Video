@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "module": "Configuration",
+    "numero": 7,
+    "titre": "Configurer son IA",
+    "titre_court": "Configurer son IA",
+    "slug": "01-configurer-son-ia"
+  },
+  "hook": {
+    "texte": "Votre agent tourne sur la clé de tout le monde. La vôtre dort dans un coin.",
+    "promesse": "Un champ, et l'agent travaille sur votre compte.",
+    "duree": 8,
+    "alternatives": [
+      "Vous payez déjà un fournisseur d'IA. Autant que l'agent s'en serve.",
+      "Une clé collée, et la consommation passe chez vous.",
+      "Le champ vide n'éteint rien — encore faut-il le savoir."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la section Agent ia de votre page Profil, et on ressort avec votre propre clé d'API branchée. Par défaut, l'agent de RapidoCRM tourne sur la clé du serveur, celle que tout le monde partage. En collant la vôtre, il consomme votre compte chez votre fournisseur — anthropic, openai, gemini ou openrouter — et vous voyez exactement ce qu'il dépense. Le champ laissé vide ne coupe rien : l'agent repart simplement sur la clé du serveur, qui fonctionne.",
+    "duree": 23
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Trouver la section Agent ia",
+        "voix": "Page Profil, section Agent ia. Une clé personnelle pour votre agent.",
+        "debut_source": 0,
+        "fin_source": 4.0,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.08,
+          "w": 0.96,
+          "h": 0.6
+        },
+        "annotation": "section Agent ia",
+        "point": {
+          "x": 0.11,
+          "y": 0.15
+        }
+      },
+      {
+        "numero": 2,
+        "titre": "Repérer les autres réglages",
+        "voix": "La page empile vos connexions : l'IBAN, la boîte mail, Stripe et Twilio.",
+        "debut_source": 4.0,
+        "fin_source": 8.0,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.05,
+          "w": 0.96,
+          "h": 0.9
+        },
+        "annotation": "les réglages de la page",
+        "point": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      {
+        "numero": 3,
+        "titre": "Coller sa propre clé",
+        "voix": "Le champ attend une clé anthropic, openai, gemini ou openrouter. On colle la sienne.",
+        "debut_source": 8.0,
+        "fin_source": 12.0,
+        "zone_focus": {
+          "x": 0.03,
+          "y": 0.35,
+          "w": 0.94,
+          "h": 0.4
+        },
+        "annotation": "coller sa clé",
+        "point": {
+          "x": 0.5,
+          "y": 0.52
+        }
+      },
+      {
+        "numero": 4,
+        "titre": "Enregistrer",
+        "voix": "Un clic sur enregistrer.",
+        "debut_source": 12.0,
+        "fin_source": 14.5,
+        "zone_focus": {
+          "x": 0.25,
+          "y": 0.4,
+          "w": 0.5,
+          "h": 0.4
+        },
+        "annotation": "enregistrer",
+        "point": {
+          "x": 0.49,
+          "y": 0.6
+        }
+      },
+      {
+        "numero": 5,
+        "titre": "Laisser vide pour la clé du serveur",
+        "voix": "Videz-le, et l'agent ne s'arrête pas : il repart sur la clé globale du serveur. C'est écrit sous le champ.",
+        "debut_source": 14.5,
+        "fin_source": 21.99,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.3,
+          "w": 0.96,
+          "h": 0.65
+        },
+        "annotation": "vide, la clé du serveur reprend",
+        "point": {
+          "x": 0.5,
+          "y": 0.56
+        }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Votre clé est en place. Pour vérifier l'état de votre agent sans rouvrir la page, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et lancez-le tel quel — il n'y a rien à remplacer.",
+    "prompt": {
+      "texte": "Montre-moi la configuration de mon agent vocal : objectif d'appel, ton de voix et minutes restantes.",
+      "variables": [],
+      "outil_mcp": "get_agent_vocal_config"
+    },
+    "resultat_affiche": {
+      "titre": "Agent vocal — configuration",
+      "lignes": [
+        "Objectif : prise de rendez-vous",
+        "Minutes restantes : 128"
+      ]
+    },
+    "duree": 21
+  },
+  "punchline": {
+    "texte": "Votre clé, votre compte, votre agent. Et le filet du serveur si vous la retirez.",
+    "duree": 7,
+    "alternatives": [
+      "Un champ rempli, et l'agent travaille chez vous.",
+      "Vide ou remplie, l'agent répond toujours.",
+      "La clé du serveur reste là, en filet."
+    ]
+  },
+  "seo": {
+    "titre": "Configurer son IA sur RapidoCRM — tutoriel",
+    "description": "Branchez votre propre clé d'API sur l'agent IA de RapidoCRM : anthropic, openai, gemini ou openrouter. Le tutoriel pas à pas de l'Académie, en une minute.",
+    "mots_cles": [
+      "configurer son IA",
+      "RapidoCRM",
+      "clé api",
+      "agent IA",
+      "openai",
+      "configuration"
+    ],
+    "youtube_titre": "Configurer son IA — RapidoCRM",
+    "youtube_description": "Le tutoriel de configuration de l'agent IA de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "IA",
+      "clé api",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}

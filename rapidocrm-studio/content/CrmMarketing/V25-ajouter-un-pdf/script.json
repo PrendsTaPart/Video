@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 25,
+    "titre": "Ajouter un PDF",
+    "titre_court": "Ajouter un PDF",
+    "slug": "06-ajouter-un-pdf"
+  },
+  "hook": {
+    "texte": "Le tarif du client est dans un mail de mars. Ou dans un dossier partagé. Ou sur le bureau de quelqu'un.",
+    "promesse": "Il peut être sur sa fiche.",
+    "duree": 8,
+    "alternatives": [
+      "Un document qu'on cherche est un document qu'on a mal rangé.",
+      "La bonne place d'un PDF client, c'est la fiche du client.",
+      "Ce qui est attaché au dossier se retrouve ; ce qui est en pièce jointe, non."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec un document attaché. Deux champs seulement : un nom, un fichier. Le nom qu'on donne remplace celui du fichier.",
+    "duree": 16
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir « Ajouter un PDF » depuis la fiche",
+        "voix": "Panneau Documentation : ajouter un PDF.",
+        "debut_source": 1,
+        "fin_source": 5,
+        "zone_focus": { "x": 0.7, "y": 0.2, "w": 0.29, "h": 0.55 },
+        "annotation": "Ajouter un PDF"
+      },
+      {
+        "numero": 2,
+        "titre": "Nommer le document",
+        "voix": "Le nom d'abord. C'est lui qu'on relira dans la fiche, alors autant qu'il dise ce que le fichier contient.",
+        "debut_source": 5,
+        "fin_source": 11.5,
+        "zone_focus": { "x": 0.35, "y": 0.14, "w": 0.3, "h": 0.45 },
+        "annotation": "Nom du fichier"
+      },
+      {
+        "numero": 3,
+        "titre": "Choisir le fichier et l'ajouter",
+        "voix": "Parcourir, puis Ajouter. C'est ce bouton-là qui attache le document.",
+        "debut_source": 11.5,
+        "fin_source": 17,
+        "zone_focus": { "x": 0.35, "y": 0.45, "w": 0.3, "h": 0.5 },
+        "annotation": "Parcourir et Ajouter"
+      },
+      {
+        "numero": 4,
+        "titre": "Retrouver la fiche et ses documents",
+        "voix": "Retour à la fiche : le document y est rangé, avec le reste du dossier client.",
+        "debut_source": 17,
+        "fin_source": 24.33,
+        "zone_focus": { "x": 0.22, "y": 0.2, "w": 0.77, "h": 0.7 },
+        "annotation": "Retour à la fiche"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Et pour relire tout le dossier ?",
+    "voix": "Une fiche client contient plus que ses documents. Pour la relire d'un coup, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Donne-moi la fiche complète de l'entreprise numéro [identifiant].",
+      "variables": ["identifiant"],
+      "outil_mcp": "get_entreprise"
+    },
+    "resultat_affiche": {
+      "titre": "Fiche entreprise",
+      "lignes": [
+        "Contacts : 4",
+        "Employés : 1",
+        "Documents : 2"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Un document nommé et rangé sur la fiche, c'est un mail qu'on ne rouvrira jamais.",
+    "duree": 8,
+    "alternatives": [
+      "Le nom qu'on donne vaut mieux que celui du scanner.",
+      "Deux champs, et le document cesse d'être introuvable.",
+      "Ranger prend dix secondes ; chercher prend dix minutes."
+    ]
+  },
+  "seo": {
+    "titre": "Ajouter un PDF à une fiche — RapidoCRM",
+    "description": "Attachez un document PDF à la fiche d'une entreprise RapidoCRM : un nom, un fichier, et il rejoint le dossier du client. Le tutoriel de l'Académie.",
+    "mots_cles": ["PDF", "document", "RapidoCRM", "fiche entreprise", "CRM", "pièce jointe"],
+    "youtube_titre": "Ajouter un PDF à une fiche — RapidoCRM",
+    "youtube_description": "Le tutoriel de l'ajout de document sur RapidoCRM : où se trouve « Ajouter un PDF » dans la fiche entreprise, pourquoi le nom qu'on saisit compte plus que celui du fichier, et où le document se retrouve. RapidoCRM Académie.",
+    "youtube_tags": ["RapidoCRM", "PDF", "document", "CRM", "fiche client"]
+  }
+}

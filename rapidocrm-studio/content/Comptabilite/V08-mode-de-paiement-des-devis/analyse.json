@@ -1,0 +1,120 @@
+{
+  "duree": 17.08,
+  "resolution": [1920, 882],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Facturation — statistiques et onglet devis" },
+    { "t": 3.0, "nom": "Liste des devis, cinq lignes" },
+    { "t": 5.0, "nom": "Menu Actions d'une ligne" },
+    { "t": 6.5, "nom": "Modale d'édition du devis — Informations" },
+    { "t": 9.0, "nom": "Bloc Statut, Email et Mode de paiement" },
+    { "t": 13.0, "nom": "Bas de modale — totaux et bouton modifier" },
+    { "t": 15.0, "nom": "Retour à la liste — Devis modifié avec succès" }
+  ],
+  "actions": [
+    {
+      "t": 3.0,
+      "type": "ouverture",
+      "cible": "onglet devis et tableau des devis",
+      "zone": { "x": 0.24, "y": 0.28, "w": 0.74, "h": 0.7 },
+      "texte_visible": "facture · devis · dépenses — ID · Entreprise · Destinataire · Date de création · Statut · Total TTC final · Actions"
+    },
+    {
+      "t": 5.0,
+      "type": "clic",
+      "cible": "entrée Modifier du menu Actions",
+      "zone": { "x": 0.7, "y": 0.4, "w": 0.15, "h": 0.25 },
+      "texte_visible": "Visualiser · Modifier · Télécharger · Voir l'entreprise"
+    },
+    {
+      "t": 7.0,
+      "type": "ouverture",
+      "cible": "modale d'édition du devis",
+      "zone": { "x": 0.27, "y": 0.0, "w": 0.41, "h": 1.0 },
+      "texte_visible": "Informations — Entreprise* Brasserie du Quai — Choisir un produit — Date de début*"
+    },
+    {
+      "t": 10.0,
+      "type": "defilement",
+      "cible": "bloc Mode de paiement de la modale",
+      "zone": { "x": 0.27, "y": 0.3, "w": 0.41, "h": 0.35 },
+      "texte_visible": "Mode de paiement* — Espèce · Carte bleu · Virement · Chèque"
+    },
+    {
+      "t": 13.0,
+      "type": "selection",
+      "cible": "case Virement, puis bouton modifier",
+      "zone": { "x": 0.27, "y": 0.0, "w": 0.41, "h": 0.9 },
+      "texte_visible": "Virement — Total HT 5999 € · Total TVA 1019.95 € · Total TTC 7018.95 € · Remise 0 % · Total TTC final 7018.95 €"
+    },
+    {
+      "t": 15.5,
+      "type": "validation",
+      "cible": "bandeau de confirmation",
+      "zone": { "x": 0.7, "y": 0.02, "w": 0.3, "h": 0.16 },
+      "texte_visible": "Devis modifié avec succès"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir la liste des devis",
+      "debut": 0,
+      "fin": 4.5,
+      "actions": [0],
+      "zone_focus": { "x": 0.24, "y": 0.25, "w": 0.74, "h": 0.72 }
+    },
+    {
+      "numero": 2,
+      "titre": "Ouvrir le devis en modification",
+      "debut": 4.5,
+      "fin": 8.5,
+      "actions": [1, 2],
+      "zone_focus": { "x": 0.62, "y": 0.35, "w": 0.28, "h": 0.35 }
+    },
+    {
+      "numero": 3,
+      "titre": "Descendre au mode de paiement",
+      "debut": 8.5,
+      "fin": 12.5,
+      "actions": [3],
+      "zone_focus": { "x": 0.27, "y": 0.28, "w": 0.41, "h": 0.38 }
+    },
+    {
+      "numero": 4,
+      "titre": "Choisir le mode et enregistrer",
+      "debut": 12.5,
+      "fin": 15.0,
+      "actions": [4],
+      "zone_focus": { "x": 0.27, "y": 0.0, "w": 0.41, "h": 0.9 }
+    },
+    {
+      "numero": 5,
+      "titre": "Lire la confirmation",
+      "debut": 15.0,
+      "fin": 17.08,
+      "actions": [5],
+      "zone_focus": { "x": 0.68, "y": 0.0, "w": 0.32, "h": 0.2 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 17.08,
+      "zone": { "x": 0.855, "y": 0.02, "w": 0.145, "h": 0.115 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    },
+    {
+      "t": 2.0,
+      "fin": 7.0,
+      "zone": { "x": 0.385, "y": 0.42, "w": 0.125, "h": 0.58 },
+      "raison": "Adresses e-mail des destinataires dans le tableau des devis"
+    },
+    {
+      "t": 14.5,
+      "fin": 17.08,
+      "zone": { "x": 0.385, "y": 0.42, "w": 0.125, "h": 0.58 },
+      "raison": "Adresses e-mail des destinataires dans le tableau des devis"
+    }
+  ]
+}

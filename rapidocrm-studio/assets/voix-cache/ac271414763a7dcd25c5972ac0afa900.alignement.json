@@ -1,0 +1,67 @@
+[
+  {
+    "mot": "Et",
+    "debut": 0,
+    "fin": 0.116
+  },
+  {
+    "mot": "les",
+    "debut": 0.151,
+    "fin": 0.255
+  },
+  {
+    "mot": "deux",
+    "debut": 0.29,
+    "fin": 0.406
+  },
+  {
+    "mot": "dernières",
+    "debut": 0.43,
+    "fin": 0.975
+  },
+  {
+    "mot": ":",
+    "debut": 1.01,
+    "fin": 1.103
+  },
+  {
+    "mot": "modifier,",
+    "debut": 1.428,
+    "fin": 2.206
+  },
+  {
+    "mot": "ou",
+    "debut": 2.38,
+    "fin": 2.461
+  },
+  {
+    "mot": "basculer",
+    "debut": 2.508,
+    "fin": 2.879
+  },
+  {
+    "mot": "sur",
+    "debut": 2.914,
+    "fin": 3.007
+  },
+  {
+    "mot": "la",
+    "debut": 3.03,
+    "fin": 3.088
+  },
+  {
+    "mot": "fiche",
+    "debut": 3.135,
+    "fin": 3.32
+  },
+  {
+    "mot": "du",
+    "debut": 3.344,
+    "fin": 3.425
+  },
+  {
+    "mot": "client.",
+    "debut": 3.46,
+    "fin": 3.878
+  }
+]

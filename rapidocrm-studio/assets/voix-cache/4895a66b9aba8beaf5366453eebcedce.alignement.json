@@ -1,0 +1,117 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "change",
+    "debut": 0.163,
+    "fin": 0.372
+  },
+  {
+    "mot": "d'entreprise,",
+    "debut": 0.395,
+    "fin": 1.022
+  },
+  {
+    "mot": "et",
+    "debut": 1.045,
+    "fin": 1.126
+  },
+  {
+    "mot": "deux",
+    "debut": 1.184,
+    "fin": 1.312
+  },
+  {
+    "mot": "factures",
+    "debut": 1.335,
+    "fin": 1.672
+  },
+  {
+    "mot": "apparaissent.",
+    "debut": 1.741,
+    "fin": 2.299
+  },
+  {
+    "mot": "Le",
+    "debut": 2.45,
+    "fin": 2.577
+  },
+  {
+    "mot": "compteur",
+    "debut": 2.612,
+    "fin": 2.891
+  },
+  {
+    "mot": "précise",
+    "debut": 2.926,
+    "fin": 3.506
+  },
+  {
+    "mot": ":",
+    "debut": 3.553,
+    "fin": 3.587
+  },
+  {
+    "mot": "deux",
+    "debut": 3.738,
+    "fin": 3.913
+  },
+  {
+    "mot": "entrées",
+    "debut": 3.971,
+    "fin": 4.238
+  },
+  {
+    "mot": "sur",
+    "debut": 4.261,
+    "fin": 4.389
+  },
+  {
+    "mot": "cinq.",
+    "debut": 4.447,
+    "fin": 4.865
+  },
+  {
+    "mot": "Vous",
+    "debut": 5.248,
+    "fin": 5.41
+  },
+  {
+    "mot": "savez",
+    "debut": 5.433,
+    "fin": 5.689
+  },
+  {
+    "mot": "ce",
+    "debut": 5.712,
+    "fin": 5.782
+  },
+  {
+    "mot": "que",
+    "debut": 5.828,
+    "fin": 5.898
+  },
+  {
+    "mot": "le",
+    "debut": 5.933,
+    "fin": 6.014
+  },
+  {
+    "mot": "filtre",
+    "debut": 6.06,
+    "fin": 6.432
+  },
+  {
+    "mot": "a",
+    "debut": 6.548,
+    "fin": 6.629
+  },
+  {
+    "mot": "écarté.",
+    "debut": 6.676,
+    "fin": 7.233
+  }
+]

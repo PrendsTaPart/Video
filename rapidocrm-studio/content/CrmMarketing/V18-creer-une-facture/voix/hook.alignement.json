@@ -1,0 +1,132 @@
+[
+  {
+    "mot": "La",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "prestation",
+    "debut": 0.209,
+    "fin": 0.743
+  },
+  {
+    "mot": "est",
+    "debut": 0.789,
+    "fin": 0.871
+  },
+  {
+    "mot": "livrée.",
+    "debut": 0.906,
+    "fin": 1.335
+  },
+  {
+    "mot": "Il",
+    "debut": 1.66,
+    "fin": 1.765
+  },
+  {
+    "mot": "ne",
+    "debut": 1.8,
+    "fin": 1.858
+  },
+  {
+    "mot": "reste",
+    "debut": 1.916,
+    "fin": 2.136
+  },
+  {
+    "mot": "qu'à",
+    "debut": 2.194,
+    "fin": 2.31
+  },
+  {
+    "mot": "facturer",
+    "debut": 2.357,
+    "fin": 2.844
+  },
+  {
+    "mot": "—",
+    "debut": 2.961,
+    "fin": 3.042
+  },
+  {
+    "mot": "et",
+    "debut": 3.088,
+    "fin": 3.228
+  },
+  {
+    "mot": "à",
+    "debut": 3.251,
+    "fin": 3.274
+  },
+  {
+    "mot": "retrouver",
+    "debut": 3.32,
+    "fin": 3.692
+  },
+  {
+    "mot": "le",
+    "debut": 3.715,
+    "fin": 3.785
+  },
+  {
+    "mot": "prix,",
+    "debut": 3.831,
+    "fin": 4.191
+  },
+  {
+    "mot": "la",
+    "debut": 4.435,
+    "fin": 4.54
+  },
+  {
+    "mot": "T.V.A.,",
+    "debut": 4.609,
+    "fin": 5.224
+  },
+  {
+    "mot": "l'adresse",
+    "debut": 5.468,
+    "fin": 5.909
+  },
+  {
+    "mot": "du",
+    "debut": 5.944,
+    "fin": 6.037
+  },
+  {
+    "mot": "client.",
+    "debut": 6.06,
+    "fin": 6.49
+  },
+  {
+    "mot": "Tout",
+    "debut": 6.815,
+    "fin": 7.059
+  },
+  {
+    "mot": "est",
+    "debut": 7.105,
+    "fin": 7.175
+  },
+  {
+    "mot": "déjà",
+    "debut": 7.198,
+    "fin": 7.407
+  },
+  {
+    "mot": "dans",
+    "debut": 7.454,
+    "fin": 7.581
+  },
+  {
+    "mot": "sa",
+    "debut": 7.605,
+    "fin": 7.697
+  },
+  {
+    "mot": "fiche.",
+    "debut": 7.755,
+    "fin": 8.139
+  }
+]

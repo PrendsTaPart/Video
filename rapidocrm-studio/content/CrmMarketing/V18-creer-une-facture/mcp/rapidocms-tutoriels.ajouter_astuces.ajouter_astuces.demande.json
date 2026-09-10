@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-une-facture",
+    "astuces": [
+      {
+        "titre": "Trois documents, un seul panneau",
+        "texte": "Créer un devis, Créer une facture et Créer un contrat vivent ensemble dans le bloc Finance de la fiche.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Le carrousel cache le reste du catalogue",
+        "texte": "Deux produits s'affichent à la fois ; les flèches latérales font venir les suivants.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Le total se lit deux fois",
+        "texte": "Une fois dans le bloc des montants, une fois en bas de fenêtre à côté de Total HT et Total TTC.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-07T12:21:50.598Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

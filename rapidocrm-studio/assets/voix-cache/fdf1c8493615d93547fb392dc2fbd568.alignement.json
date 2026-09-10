@@ -1,0 +1,152 @@
+[
+  {
+    "mot": "Troisième",
+    "debut": 0,
+    "fin": 0.464
+  },
+  {
+    "mot": "rangée",
+    "debut": 0.488,
+    "fin": 0.906
+  },
+  {
+    "mot": "de",
+    "debut": 0.975,
+    "fin": 1.057
+  },
+  {
+    "mot": "la",
+    "debut": 1.103,
+    "fin": 1.184
+  },
+  {
+    "mot": "page",
+    "debut": 1.242,
+    "fin": 1.637
+  },
+  {
+    "mot": "Historique",
+    "debut": 1.765,
+    "fin": 2.589
+  },
+  {
+    "mot": ":",
+    "debut": 2.635,
+    "fin": 2.659
+  },
+  {
+    "mot": "les",
+    "debut": 2.937,
+    "fin": 3.111
+  },
+  {
+    "mot": "devis.",
+    "debut": 3.146,
+    "fin": 3.587
+  },
+  {
+    "mot": "On",
+    "debut": 3.762,
+    "fin": 3.866
+  },
+  {
+    "mot": "consulte.",
+    "debut": 3.901,
+    "fin": 4.574
+  },
+  {
+    "mot": "La",
+    "debut": 4.853,
+    "fin": 5.004
+  },
+  {
+    "mot": "page",
+    "debut": 5.074,
+    "fin": 5.399
+  },
+  {
+    "mot": "reste",
+    "debut": 5.433,
+    "fin": 5.712
+  },
+  {
+    "mot": "vide",
+    "debut": 5.782,
+    "fin": 6.118
+  },
+  {
+    "mot": "quelques",
+    "debut": 6.165,
+    "fin": 6.502
+  },
+  {
+    "mot": "secondes,",
+    "debut": 6.525,
+    "fin": 7.198
+  },
+  {
+    "mot": "le",
+    "debut": 7.407,
+    "fin": 7.5
+  },
+  {
+    "mot": "temps",
+    "debut": 7.558,
+    "fin": 7.721
+  },
+  {
+    "mot": "que",
+    "debut": 7.744,
+    "fin": 7.825
+  },
+  {
+    "mot": "le",
+    "debut": 7.86,
+    "fin": 7.918
+  },
+  {
+    "mot": "tableau",
+    "debut": 7.964,
+    "fin": 8.266
+  },
+  {
+    "mot": "arrive",
+    "debut": 8.29,
+    "fin": 8.696
+  },
+  {
+    "mot": ":",
+    "debut": 8.754,
+    "fin": 8.777
+  },
+  {
+    "mot": "ce",
+    "debut": 8.986,
+    "fin": 9.044
+  },
+  {
+    "mot": "n'est",
+    "debut": 9.091,
+    "fin": 9.218
+  },
+  {
+    "mot": "pas",
+    "debut": 9.265,
+    "fin": 9.462
+  },
+  {
+    "mot": "une",
+    "debut": 9.543,
+    "fin": 9.648
+  },
+  {
+    "mot": "liste",
+    "debut": 9.671,
+    "fin": 9.973
+  },
+  {
+    "mot": "vide.",
+    "debut": 10.043,
+    "fin": 10.449
+  }
+]

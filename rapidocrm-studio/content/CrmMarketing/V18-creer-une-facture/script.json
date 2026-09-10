@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 18,
+    "titre": "Créer une facture",
+    "titre_court": "Créer une facture",
+    "slug": "06-creer-une-facture"
+  },
+  "hook": {
+    "texte": "La prestation est livrée. Il ne reste qu'à facturer — et à retrouver le prix, la TVA, l'adresse du client.",
+    "promesse": "Tout est déjà dans sa fiche.",
+    "duree": 8,
+    "alternatives": [
+      "Facturer, c'est souvent recopier ce qu'on a déjà écrit une fois.",
+      "Une facture juste vaut mieux qu'une facture rapide, et on peut avoir les deux.",
+      "Le catalogue connaît vos prix mieux que votre mémoire."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec une facture. Le panneau Finance l'ouvre, le produit choisi remplit les montants, et la facture rejoint l'activité du client.",
+    "duree": 17
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir « Créer une facture » depuis la fiche",
+        "voix": "Panneau Finance : créer une facture.",
+        "debut_source": 0.8,
+        "fin_source": 3.5,
+        "zone_focus": { "x": 0.72, "y": 0.55, "w": 0.27, "h": 0.42 },
+        "annotation": "Créer une facture"
+      },
+      {
+        "numero": 2,
+        "titre": "Logo et charte graphique de la facture",
+        "voix": "Le logo est repris du client. On choisit la couleur.",
+        "debut_source": 3.5,
+        "fin_source": 8,
+        "zone_focus": { "x": 0.26, "y": 0, "w": 0.42, "h": 0.85 },
+        "annotation": "Design"
+      },
+      {
+        "numero": 3,
+        "titre": "Choisir le produit à facturer",
+        "voix": "Le catalogue défile deux par deux. Les flèches font venir les suivants.",
+        "debut_source": 8,
+        "fin_source": 15,
+        "zone_focus": { "x": 0.26, "y": 0, "w": 0.42, "h": 0.7 },
+        "annotation": "Choisir un produit"
+      },
+      {
+        "numero": 4,
+        "titre": "Laisser les montants se calculer",
+        "voix": "Prix hors taxes, TVA, total, remise : vous n'écrivez rien, sauf la remise.",
+        "debut_source": 15,
+        "fin_source": 22,
+        "zone_focus": { "x": 0.26, "y": 0, "w": 0.42, "h": 0.95 },
+        "annotation": "Montants"
+      },
+      {
+        "numero": 5,
+        "titre": "Délai, mentions légales et statut",
+        "voix": "Le délai de paiement, les mentions, le statut : payée ou en attente.",
+        "debut_source": 22,
+        "fin_source": 27.5,
+        "zone_focus": { "x": 0.26, "y": 0, "w": 0.42, "h": 0.9 },
+        "annotation": "Délai et statut"
+      },
+      {
+        "numero": 6,
+        "titre": "Mode de paiement, totaux et enregistrement",
+        "voix": "Le règlement, les totaux, enregistrer.",
+        "debut_source": 27.5,
+        "fin_source": 31,
+        "zone_focus": { "x": 0.26, "y": 0.05, "w": 0.42, "h": 0.9 },
+        "annotation": "Enregistrer"
+      },
+      {
+        "numero": 7,
+        "titre": "Retrouver la facture dans l'activité de la fiche",
+        "voix": "Et la voilà en tête de l'activité.",
+        "debut_source": 31,
+        "fin_source": 34,
+        "zone_focus": { "x": 0.24, "y": 0.25, "w": 0.5, "h": 0.65 },
+        "annotation": "Activités récentes"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Et pour savoir ce qui reste dû ?",
+    "voix": "Les factures s'accumulent. Pour voir celles qui attendent encore un règlement, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] factures en attente avec leur montant.",
+      "variables": ["nombre"],
+      "outil_mcp": "list_factures"
+    },
+    "resultat_affiche": {
+      "titre": "3 factures en attente",
+      "lignes": [
+        "N° 17 — pack site vitrine — 1 258,95 €",
+        "N° 18 — campagne acquisition — 1 440,00 €",
+        "N° 19 — maintenance annuelle — 4 320,00 €"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Une facture faite depuis la fiche du client, c'est une facture qu'on ne relit pas deux fois.",
+    "duree": 8,
+    "alternatives": [
+      "Le produit connaît son prix ; laissez-le le dire.",
+      "Ce qui se calcule tout seul ne se trompe pas.",
+      "Facturer devrait prendre moins de temps que livrer."
+    ]
+  },
+  "seo": {
+    "titre": "Créer une facture — RapidoCRM",
+    "description": "Facturez depuis la fiche d'une entreprise RapidoCRM : produit du catalogue, montants calculés, délai de paiement, statut et mode de règlement. Le tutoriel.",
+    "mots_cles": ["facture", "RapidoCRM", "facturation", "CRM", "catalogue", "TVA"],
+    "youtube_titre": "Créer une facture — RapidoCRM",
+    "youtube_description": "Le tutoriel de la facture sur RapidoCRM : le panneau Finance de la fiche entreprise, le carrousel des produits, les montants calculés seuls, le délai de paiement et le mode de règlement. RapidoCRM Académie.",
+    "youtube_tags": ["RapidoCRM", "facture", "facturation", "CRM", "TVA"]
+  }
+}

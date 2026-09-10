@@ -1,0 +1,910 @@
+{
+  "duree_totale": 62.184,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 10.92,
+      "texte": "Il est vingt-deux heures. Vous écrivez le SMS de demain matin, et vous vous notez de l'envoyer à huit heures. Écrivez-le maintenant, le logiciel l'enverra à l'heure dite.",
+      "mots": [
+        {
+          "mot": "Il",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "est",
+          "debut": 0.209,
+          "fin": 0.279
+        },
+        {
+          "mot": "vingt-deux",
+          "debut": 0.325,
+          "fin": 0.662
+        },
+        {
+          "mot": "heures.",
+          "debut": 0.731,
+          "fin": 1.01
+        },
+        {
+          "mot": "Vous",
+          "debut": 1.289,
+          "fin": 1.405
+        },
+        {
+          "mot": "écrivez",
+          "debut": 1.463,
+          "fin": 1.788
+        },
+        {
+          "mot": "le",
+          "debut": 1.823,
+          "fin": 1.916
+        },
+        {
+          "mot": "S.M.S.",
+          "debut": 1.939,
+          "fin": 2.485
+        },
+        {
+          "mot": "de",
+          "debut": 2.508,
+          "fin": 2.577
+        },
+        {
+          "mot": "demain",
+          "debut": 2.635,
+          "fin": 2.856
+        },
+        {
+          "mot": "matin,",
+          "debut": 2.879,
+          "fin": 3.437
+        },
+        {
+          "mot": "et",
+          "debut": 3.715,
+          "fin": 3.831
+        },
+        {
+          "mot": "vous",
+          "debut": 3.866,
+          "fin": 3.994
+        },
+        {
+          "mot": "vous",
+          "debut": 4.017,
+          "fin": 4.145
+        },
+        {
+          "mot": "notez",
+          "debut": 4.168,
+          "fin": 4.423
+        },
+        {
+          "mot": "de",
+          "debut": 4.458,
+          "fin": 4.516
+        },
+        {
+          "mot": "l'envoyer",
+          "debut": 4.563,
+          "fin": 5.05
+        },
+        {
+          "mot": "à",
+          "debut": 5.166,
+          "fin": 5.259
+        },
+        {
+          "mot": "huit",
+          "debut": 5.352,
+          "fin": 5.561
+        },
+        {
+          "mot": "heures.",
+          "debut": 5.596,
+          "fin": 5.875
+        },
+        {
+          "mot": "Écrivez-le",
+          "debut": 6.2,
+          "fin": 6.722
+        },
+        {
+          "mot": "maintenant,",
+          "debut": 6.78,
+          "fin": 7.314
+        },
+        {
+          "mot": "le",
+          "debut": 7.43,
+          "fin": 7.5
+        },
+        {
+          "mot": "logiciel",
+          "debut": 7.546,
+          "fin": 8.034
+        },
+        {
+          "mot": "l'enverra",
+          "debut": 8.081,
+          "fin": 8.406
+        },
+        {
+          "mot": "à",
+          "debut": 8.44,
+          "fin": 8.464
+        },
+        {
+          "mot": "l'heure",
+          "debut": 8.499,
+          "fin": 8.684
+        },
+        {
+          "mot": "dite.",
+          "debut": 8.707,
+          "fin": 9.079
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 10.92,
+      "duree": 11.904,
+      "texte": "On part de la fiche d'une entreprise, et on ressort avec un SMS programmé. Trois choses à dire : qui le reçoit, quel message, et à quelle date. Tout tient dans une seule fenêtre.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "part",
+          "debut": 0.186,
+          "fin": 0.348
+        },
+        {
+          "mot": "de",
+          "debut": 0.372,
+          "fin": 0.43
+        },
+        {
+          "mot": "la",
+          "debut": 0.464,
+          "fin": 0.534
+        },
+        {
+          "mot": "fiche",
+          "debut": 0.604,
+          "fin": 0.859
+        },
+        {
+          "mot": "d'une",
+          "debut": 0.894,
+          "fin": 1.045
+        },
+        {
+          "mot": "entreprise,",
+          "debut": 1.068,
+          "fin": 1.66
+        },
+        {
+          "mot": "et",
+          "debut": 1.741,
+          "fin": 1.858
+        },
+        {
+          "mot": "on",
+          "debut": 1.892,
+          "fin": 1.962
+        },
+        {
+          "mot": "ressort",
+          "debut": 1.997,
+          "fin": 2.345
+        },
+        {
+          "mot": "avec",
+          "debut": 2.368,
+          "fin": 2.577
+        },
+        {
+          "mot": "un",
+          "debut": 2.67,
+          "fin": 2.74
+        },
+        {
+          "mot": "S.M.S.",
+          "debut": 2.775,
+          "fin": 3.228
+        },
+        {
+          "mot": "programmé.",
+          "debut": 3.262,
+          "fin": 3.82
+        },
+        {
+          "mot": "Trois",
+          "debut": 4.063,
+          "fin": 4.296
+        },
+        {
+          "mot": "choses",
+          "debut": 4.319,
+          "fin": 4.551
+        },
+        {
+          "mot": "à",
+          "debut": 4.621,
+          "fin": 4.644
+        },
+        {
+          "mot": "dire",
+          "debut": 4.69,
+          "fin": 5.027
+        },
+        {
+          "mot": ":",
+          "debut": 5.05,
+          "fin": 5.108
+        },
+        {
+          "mot": "qui",
+          "debut": 5.352,
+          "fin": 5.457
+        },
+        {
+          "mot": "le",
+          "debut": 5.515,
+          "fin": 5.561
+        },
+        {
+          "mot": "reçoit,",
+          "debut": 5.608,
+          "fin": 6.118
+        },
+        {
+          "mot": "quel",
+          "debut": 6.269,
+          "fin": 6.432
+        },
+        {
+          "mot": "message,",
+          "debut": 6.49,
+          "fin": 7.07
+        },
+        {
+          "mot": "et",
+          "debut": 7.245,
+          "fin": 7.361
+        },
+        {
+          "mot": "à",
+          "debut": 7.407,
+          "fin": 7.43
+        },
+        {
+          "mot": "quelle",
+          "debut": 7.488,
+          "fin": 7.663
+        },
+        {
+          "mot": "date.",
+          "debut": 7.686,
+          "fin": 8.046
+        },
+        {
+          "mot": "Tout",
+          "debut": 8.487,
+          "fin": 8.731
+        },
+        {
+          "mot": "tient",
+          "debut": 8.754,
+          "fin": 8.986
+        },
+        {
+          "mot": "dans",
+          "debut": 9.009,
+          "fin": 9.125
+        },
+        {
+          "mot": "une",
+          "debut": 9.195,
+          "fin": 9.276
+        },
+        {
+          "mot": "seule",
+          "debut": 9.3,
+          "fin": 9.462
+        },
+        {
+          "mot": "fenêtre.",
+          "debut": 9.485,
+          "fin": 9.915
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 22.823999999999998,
+      "duree": 2.808,
+      "texte": "Le panneau de droite, bloc Communication.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "panneau",
+          "debut": 0.186,
+          "fin": 0.406
+        },
+        {
+          "mot": "de",
+          "debut": 0.43,
+          "fin": 0.476
+        },
+        {
+          "mot": "droite,",
+          "debut": 0.499,
+          "fin": 0.859
+        },
+        {
+          "mot": "bloc",
+          "debut": 0.975,
+          "fin": 1.173
+        },
+        {
+          "mot": "Communication.",
+          "debut": 1.207,
+          "fin": 1.858
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 25.631999999999998,
+      "duree": 2.952,
+      "texte": "Tout en bas : planifier un SMS.",
+      "mots": [
+        {
+          "mot": "Tout",
+          "debut": 0,
+          "fin": 0.244
+        },
+        {
+          "mot": "en",
+          "debut": 0.313,
+          "fin": 0.36
+        },
+        {
+          "mot": "bas",
+          "debut": 0.406,
+          "fin": 0.569
+        },
+        {
+          "mot": ":",
+          "debut": 0.604,
+          "fin": 0.65
+        },
+        {
+          "mot": "planifier",
+          "debut": 0.778,
+          "fin": 1.289
+        },
+        {
+          "mot": "un",
+          "debut": 1.37,
+          "fin": 1.44
+        },
+        {
+          "mot": "S.M.S.",
+          "debut": 1.498,
+          "fin": 1.95
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 28.583999999999996,
+      "duree": 3.312,
+      "texte": "D'abord la cible. Ici, toutes mes entreprises.",
+      "mots": [
+        {
+          "mot": "D'abord",
+          "debut": 0,
+          "fin": 0.383
+        },
+        {
+          "mot": "la",
+          "debut": 0.406,
+          "fin": 0.488
+        },
+        {
+          "mot": "cible.",
+          "debut": 0.546,
+          "fin": 0.929
+        },
+        {
+          "mot": "Ici,",
+          "debut": 1.173,
+          "fin": 1.463
+        },
+        {
+          "mot": "toutes",
+          "debut": 1.486,
+          "fin": 1.683
+        },
+        {
+          "mot": "mes",
+          "debut": 1.718,
+          "fin": 1.823
+        },
+        {
+          "mot": "entreprises.",
+          "debut": 1.881,
+          "fin": 2.426
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 31.895999999999997,
+      "duree": 2.952,
+      "texte": "Puis le modèle. Un aperçu sous chacun.",
+      "mots": [
+        {
+          "mot": "Puis",
+          "debut": 0,
+          "fin": 0.221
+        },
+        {
+          "mot": "le",
+          "debut": 0.244,
+          "fin": 0.302
+        },
+        {
+          "mot": "modèle.",
+          "debut": 0.348,
+          "fin": 0.778
+        },
+        {
+          "mot": "Un",
+          "debut": 0.952,
+          "fin": 1.068
+        },
+        {
+          "mot": "aperçu",
+          "debut": 1.138,
+          "fin": 1.44
+        },
+        {
+          "mot": "sous",
+          "debut": 1.486,
+          "fin": 1.614
+        },
+        {
+          "mot": "chacun.",
+          "debut": 1.637,
+          "fin": 2.009
+        }
+      ]
+    },
+    {
+      "id": "etape-05",
+      "fichier": "voix/etape-05.mp3",
+      "debut": 34.848,
+      "duree": 6.288,
+      "texte": "Reste la date et l'heure. C'est ce moment-là qui déclenche l'envoi, pas le clic.",
+      "mots": [
+        {
+          "mot": "Reste",
+          "debut": 0,
+          "fin": 0.313
+        },
+        {
+          "mot": "la",
+          "debut": 0.36,
+          "fin": 0.441
+        },
+        {
+          "mot": "date",
+          "debut": 0.499,
+          "fin": 0.766
+        },
+        {
+          "mot": "et",
+          "debut": 0.824,
+          "fin": 0.952
+        },
+        {
+          "mot": "l'heure.",
+          "debut": 0.987,
+          "fin": 1.324
+        },
+        {
+          "mot": "C'est",
+          "debut": 1.567,
+          "fin": 1.788
+        },
+        {
+          "mot": "ce",
+          "debut": 1.834,
+          "fin": 1.95
+        },
+        {
+          "mot": "moment-là",
+          "debut": 2.009,
+          "fin": 2.473
+        },
+        {
+          "mot": "qui",
+          "debut": 2.647,
+          "fin": 2.775
+        },
+        {
+          "mot": "déclenche",
+          "debut": 2.833,
+          "fin": 3.216
+        },
+        {
+          "mot": "l'envoi,",
+          "debut": 3.239,
+          "fin": 3.669
+        },
+        {
+          "mot": "pas",
+          "debut": 3.843,
+          "fin": 3.994
+        },
+        {
+          "mot": "le",
+          "debut": 4.017,
+          "fin": 4.087
+        },
+        {
+          "mot": "clic.",
+          "debut": 4.122,
+          "fin": 4.563
+        }
+      ]
+    },
+    {
+      "id": "etape-06",
+      "fichier": "voix/etape-06.mp3",
+      "debut": 41.135999999999996,
+      "duree": 3.504,
+      "texte": "Envoyer. Le message attendra huit heures du matin.",
+      "mots": [
+        {
+          "mot": "Envoyer.",
+          "debut": 0,
+          "fin": 0.464
+        },
+        {
+          "mot": "Le",
+          "debut": 0.673,
+          "fin": 0.766
+        },
+        {
+          "mot": "message",
+          "debut": 0.813,
+          "fin": 1.115
+        },
+        {
+          "mot": "attendra",
+          "debut": 1.138,
+          "fin": 1.428
+        },
+        {
+          "mot": "huit",
+          "debut": 1.474,
+          "fin": 1.649
+        },
+        {
+          "mot": "heures",
+          "debut": 1.683,
+          "fin": 1.823
+        },
+        {
+          "mot": "du",
+          "debut": 1.846,
+          "fin": 1.904
+        },
+        {
+          "mot": "matin.",
+          "debut": 1.939,
+          "fin": 2.299
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 44.63999999999999,
+      "duree": 12.408,
+      "texte": "Vos modèles s'accumulent. Pour savoir lesquels vous avez sous la main, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Vos",
+          "debut": 0,
+          "fin": 0.186
+        },
+        {
+          "mot": "modèles",
+          "debut": 0.209,
+          "fin": 0.511
+        },
+        {
+          "mot": "s'accumulent.",
+          "debut": 0.534,
+          "fin": 1.149
+        },
+        {
+          "mot": "Pour",
+          "debut": 1.428,
+          "fin": 1.591
+        },
+        {
+          "mot": "savoir",
+          "debut": 1.637,
+          "fin": 1.916
+        },
+        {
+          "mot": "lesquels",
+          "debut": 1.95,
+          "fin": 2.287
+        },
+        {
+          "mot": "vous",
+          "debut": 2.31,
+          "fin": 2.438
+        },
+        {
+          "mot": "avez",
+          "debut": 2.496,
+          "fin": 2.67
+        },
+        {
+          "mot": "sous",
+          "debut": 2.717,
+          "fin": 2.868
+        },
+        {
+          "mot": "la",
+          "debut": 2.891,
+          "fin": 2.961
+        },
+        {
+          "mot": "main,",
+          "debut": 3.019,
+          "fin": 3.239
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 3.332,
+          "fin": 4.168
+        },
+        {
+          "mot": "parle",
+          "debut": 4.226,
+          "fin": 4.435
+        },
+        {
+          "mot": "à",
+          "debut": 4.458,
+          "fin": 4.481
+        },
+        {
+          "mot": "Claude",
+          "debut": 4.528,
+          "fin": 4.876
+        },
+        {
+          "mot": ":",
+          "debut": 4.923,
+          "fin": 4.969
+        },
+        {
+          "mot": "vous",
+          "debut": 5.213,
+          "fin": 5.364
+        },
+        {
+          "mot": "demandez",
+          "debut": 5.387,
+          "fin": 5.7
+        },
+        {
+          "mot": "en",
+          "debut": 5.724,
+          "fin": 5.77
+        },
+        {
+          "mot": "français,",
+          "debut": 5.805,
+          "fin": 6.316
+        },
+        {
+          "mot": "il",
+          "debut": 6.362,
+          "fin": 6.478
+        },
+        {
+          "mot": "lit",
+          "debut": 6.536,
+          "fin": 6.653
+        },
+        {
+          "mot": "vos",
+          "debut": 6.676,
+          "fin": 6.803
+        },
+        {
+          "mot": "données",
+          "debut": 6.827,
+          "fin": 7.187
+        },
+        {
+          "mot": "et",
+          "debut": 7.279,
+          "fin": 7.442
+        },
+        {
+          "mot": "répond.",
+          "debut": 7.488,
+          "fin": 7.895
+        },
+        {
+          "mot": "Copiez",
+          "debut": 8.278,
+          "fin": 8.684
+        },
+        {
+          "mot": "ce",
+          "debut": 8.707,
+          "fin": 8.812
+        },
+        {
+          "mot": "prompt,",
+          "debut": 8.87,
+          "fin": 9.288
+        },
+        {
+          "mot": "remplacez",
+          "debut": 9.439,
+          "fin": 10.077
+        },
+        {
+          "mot": "ce",
+          "debut": 10.147,
+          "fin": 10.252
+        },
+        {
+          "mot": "qui",
+          "debut": 10.31,
+          "fin": 10.426
+        },
+        {
+          "mot": "est",
+          "debut": 10.472,
+          "fin": 10.577
+        },
+        {
+          "mot": "entre",
+          "debut": 10.658,
+          "fin": 10.913
+        },
+        {
+          "mot": "crochets.",
+          "debut": 10.96,
+          "fin": 11.505
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 57.047999999999995,
+      "duree": 5.136,
+      "texte": "Un message écrit le soir, envoyé le matin : la relance ne dépend plus de votre réveil.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "message",
+          "debut": 0.174,
+          "fin": 0.534
+        },
+        {
+          "mot": "écrit",
+          "debut": 0.569,
+          "fin": 0.813
+        },
+        {
+          "mot": "le",
+          "debut": 0.836,
+          "fin": 0.906
+        },
+        {
+          "mot": "soir,",
+          "debut": 0.952,
+          "fin": 1.37
+        },
+        {
+          "mot": "envoyé",
+          "debut": 1.428,
+          "fin": 1.8
+        },
+        {
+          "mot": "le",
+          "debut": 1.834,
+          "fin": 1.892
+        },
+        {
+          "mot": "matin",
+          "debut": 1.939,
+          "fin": 2.229
+        },
+        {
+          "mot": ":",
+          "debut": 2.299,
+          "fin": 2.322
+        },
+        {
+          "mot": "la",
+          "debut": 2.438,
+          "fin": 2.543
+        },
+        {
+          "mot": "relance",
+          "debut": 2.601,
+          "fin": 2.902
+        },
+        {
+          "mot": "ne",
+          "debut": 2.926,
+          "fin": 2.995
+        },
+        {
+          "mot": "dépend",
+          "debut": 3.03,
+          "fin": 3.286
+        },
+        {
+          "mot": "plus",
+          "debut": 3.309,
+          "fin": 3.448
+        },
+        {
+          "mot": "de",
+          "debut": 3.471,
+          "fin": 3.518
+        },
+        {
+          "mot": "votre",
+          "debut": 3.553,
+          "fin": 3.785
+        },
+        {
+          "mot": "réveil.",
+          "debut": 3.831,
+          "fin": 4.191
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "duree": 98.83333333333333,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V13-recuperer-sa-cle-api/out/master-16x9.mp4",
+      "octets": 14837447
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V13-recuperer-sa-cle-api/out/master-9x16.mp4",
+      "octets": 11765916
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.366666666666667
+    },
+    {
+      "nom": "titre",
+      "debut": 9.366666666666667,
+      "fin": 37.2
+    },
+    {
+      "nom": "demo",
+      "debut": 37.2,
+      "fin": 80.46666666666667
+    },
+    {
+      "nom": "claude",
+      "debut": 80.46666666666667,
+      "fin": 95.13333333333334
+    },
+    {
+      "nom": "punchline",
+      "debut": 95.13333333333334,
+      "fin": 98.83333333333333
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Une application extérieure veut vos données. Vous lui donnez tout, ou rien."
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Récupérer sa clé API"
+    },
+    {
+      "timecode": "00:37",
+      "titre": "Ouvrir l'onglet Tokens api"
+    },
+    {
+      "timecode": "00:41",
+      "titre": "Créer un nouveau token"
+    },
+    {
+      "timecode": "00:48",
+      "titre": "Fixer une date d'expiration"
+    },
+    {
+      "timecode": "00:54",
+      "titre": "Cocher les permissions"
+    },
+    {
+      "timecode": "01:05",
+      "titre": "Générer le token"
+    },
+    {
+      "timecode": "01:10",
+      "titre": "Relire ses permissions"
+    },
+    {
+      "timecode": "01:14",
+      "titre": "Révoquer un token"
+    },
+    {
+      "timecode": "01:20",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:35",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

@@ -1,0 +1,21 @@
+La prestation est livrée. Il ne reste qu'à facturer — et à retrouver le prix, la TVA, l'adresse du client. Tout est déjà dans sa fiche.
+
+On part de la fiche d'une entreprise, et on ressort avec une facture. Le panneau Finance l'ouvre, le produit choisi remplit les montants, et la facture rejoint l'activité du client.
+
+Panneau Finance : créer une facture.
+
+Le logo est repris du client. On choisit la couleur.
+
+Le catalogue défile deux par deux. Les flèches font venir les suivants.
+
+Prix hors taxes, TVA, total, remise : vous n'écrivez rien, sauf la remise.
+
+Le délai de paiement, les mentions, le statut : payée ou en attente.
+
+Le règlement, les totaux, enregistrer.
+
+Et la voilà en tête de l'activité.
+
+Les factures s'accumulent. Pour voir celles qui attendent encore un règlement, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Une facture faite depuis la fiche du client, c'est une facture qu'on ne relit pas deux fois.

@@ -1,0 +1,1015 @@
+{
+  "duree_totale": 63.432,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 8.472,
+      "texte": "Une roue à faire tourner, une carte à gratter : ça attire, mais ça se code, et c'est là que le projet meurt. Ici, on part d'un modèle déjà fait.",
+      "mots": [
+        {
+          "mot": "Une",
+          "debut": 0,
+          "fin": 0.197
+        },
+        {
+          "mot": "roue",
+          "debut": 0.232,
+          "fin": 0.395
+        },
+        {
+          "mot": "à",
+          "debut": 0.418,
+          "fin": 0.441
+        },
+        {
+          "mot": "faire",
+          "debut": 0.499,
+          "fin": 0.697
+        },
+        {
+          "mot": "tourner,",
+          "debut": 0.72,
+          "fin": 1.138
+        },
+        {
+          "mot": "une",
+          "debut": 1.173,
+          "fin": 1.3
+        },
+        {
+          "mot": "carte",
+          "debut": 1.324,
+          "fin": 1.567
+        },
+        {
+          "mot": "à",
+          "debut": 1.591,
+          "fin": 1.614
+        },
+        {
+          "mot": "gratter",
+          "debut": 1.637,
+          "fin": 2.101
+        },
+        {
+          "mot": ":",
+          "debut": 2.148,
+          "fin": 2.206
+        },
+        {
+          "mot": "ça",
+          "debut": 2.357,
+          "fin": 2.496
+        },
+        {
+          "mot": "attire,",
+          "debut": 2.543,
+          "fin": 3.019
+        },
+        {
+          "mot": "mais",
+          "debut": 3.262,
+          "fin": 3.379
+        },
+        {
+          "mot": "ça",
+          "debut": 3.402,
+          "fin": 3.483
+        },
+        {
+          "mot": "se",
+          "debut": 3.529,
+          "fin": 3.576
+        },
+        {
+          "mot": "code,",
+          "debut": 3.611,
+          "fin": 4.029
+        },
+        {
+          "mot": "et",
+          "debut": 4.18,
+          "fin": 4.319
+        },
+        {
+          "mot": "c'est",
+          "debut": 4.365,
+          "fin": 4.505
+        },
+        {
+          "mot": "là",
+          "debut": 4.528,
+          "fin": 4.609
+        },
+        {
+          "mot": "que",
+          "debut": 4.644,
+          "fin": 4.725
+        },
+        {
+          "mot": "le",
+          "debut": 4.76,
+          "fin": 4.83
+        },
+        {
+          "mot": "projet",
+          "debut": 4.865,
+          "fin": 5.12
+        },
+        {
+          "mot": "meurt.",
+          "debut": 5.155,
+          "fin": 5.503
+        },
+        {
+          "mot": "Ici,",
+          "debut": 5.886,
+          "fin": 6.177
+        },
+        {
+          "mot": "on",
+          "debut": 6.2,
+          "fin": 6.258
+        },
+        {
+          "mot": "part",
+          "debut": 6.304,
+          "fin": 6.444
+        },
+        {
+          "mot": "d'un",
+          "debut": 6.467,
+          "fin": 6.571
+        },
+        {
+          "mot": "modèle",
+          "debut": 6.594,
+          "fin": 6.908
+        },
+        {
+          "mot": "déjà",
+          "debut": 6.943,
+          "fin": 7.163
+        },
+        {
+          "mot": "fait.",
+          "debut": 7.245,
+          "fin": 7.57
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 8.472,
+      "duree": 11.304,
+      "texte": "On part de la fiche d'une entreprise, et on ressort avec un jeu personnalisé. La bibliothèque propose une roue, une carte à gratter ou un quiz. Ensuite, on règle l'apparence et les lots.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "part",
+          "debut": 0.174,
+          "fin": 0.313
+        },
+        {
+          "mot": "de",
+          "debut": 0.337,
+          "fin": 0.383
+        },
+        {
+          "mot": "la",
+          "debut": 0.43,
+          "fin": 0.488
+        },
+        {
+          "mot": "fiche",
+          "debut": 0.534,
+          "fin": 0.708
+        },
+        {
+          "mot": "d'une",
+          "debut": 0.731,
+          "fin": 0.882
+        },
+        {
+          "mot": "entreprise,",
+          "debut": 0.906,
+          "fin": 1.556
+        },
+        {
+          "mot": "et",
+          "debut": 1.707,
+          "fin": 1.834
+        },
+        {
+          "mot": "on",
+          "debut": 1.869,
+          "fin": 1.927
+        },
+        {
+          "mot": "ressort",
+          "debut": 1.974,
+          "fin": 2.299
+        },
+        {
+          "mot": "avec",
+          "debut": 2.322,
+          "fin": 2.612
+        },
+        {
+          "mot": "un",
+          "debut": 2.786,
+          "fin": 2.833
+        },
+        {
+          "mot": "jeu",
+          "debut": 2.891,
+          "fin": 3.007
+        },
+        {
+          "mot": "personnalisé.",
+          "debut": 3.053,
+          "fin": 3.738
+        },
+        {
+          "mot": "La",
+          "debut": 3.982,
+          "fin": 4.063
+        },
+        {
+          "mot": "bibliothèque",
+          "debut": 4.11,
+          "fin": 4.69
+        },
+        {
+          "mot": "propose",
+          "debut": 4.725,
+          "fin": 5.166
+        },
+        {
+          "mot": "une",
+          "debut": 5.236,
+          "fin": 5.375
+        },
+        {
+          "mot": "roue,",
+          "debut": 5.422,
+          "fin": 5.712
+        },
+        {
+          "mot": "une",
+          "debut": 5.863,
+          "fin": 6.014
+        },
+        {
+          "mot": "carte",
+          "debut": 6.037,
+          "fin": 6.269
+        },
+        {
+          "mot": "à",
+          "debut": 6.293,
+          "fin": 6.316
+        },
+        {
+          "mot": "gratter",
+          "debut": 6.339,
+          "fin": 6.757
+        },
+        {
+          "mot": "ou",
+          "debut": 6.966,
+          "fin": 7.082
+        },
+        {
+          "mot": "un",
+          "debut": 7.14,
+          "fin": 7.187
+        },
+        {
+          "mot": "quiz.",
+          "debut": 7.245,
+          "fin": 7.628
+        },
+        {
+          "mot": "Ensuite,",
+          "debut": 7.953,
+          "fin": 8.487
+        },
+        {
+          "mot": "on",
+          "debut": 8.731,
+          "fin": 8.8
+        },
+        {
+          "mot": "règle",
+          "debut": 8.847,
+          "fin": 9.067
+        },
+        {
+          "mot": "l'apparence",
+          "debut": 9.114,
+          "fin": 9.741
+        },
+        {
+          "mot": "et",
+          "debut": 9.857,
+          "fin": 10.019
+        },
+        {
+          "mot": "les",
+          "debut": 10.066,
+          "fin": 10.159
+        },
+        {
+          "mot": "lots.",
+          "debut": 10.182,
+          "fin": 10.403
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 19.776,
+      "duree": 2.52,
+      "texte": "Panneau Marketing de la fiche client.",
+      "mots": [
+        {
+          "mot": "Panneau",
+          "debut": 0,
+          "fin": 0.325
+        },
+        {
+          "mot": "Marketing",
+          "debut": 0.372,
+          "fin": 0.778
+        },
+        {
+          "mot": "de",
+          "debut": 0.813,
+          "fin": 0.871
+        },
+        {
+          "mot": "la",
+          "debut": 0.906,
+          "fin": 0.964
+        },
+        {
+          "mot": "fiche",
+          "debut": 1.022,
+          "fin": 1.207
+        },
+        {
+          "mot": "client.",
+          "debut": 1.231,
+          "fin": 1.567
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 22.296,
+      "duree": 3.816,
+      "texte": "Roue, carte à gratter ou quiz. Chacun annonce ses lots.",
+      "mots": [
+        {
+          "mot": "Roue,",
+          "debut": 0,
+          "fin": 0.325
+        },
+        {
+          "mot": "carte",
+          "debut": 0.534,
+          "fin": 0.789
+        },
+        {
+          "mot": "à",
+          "debut": 0.813,
+          "fin": 0.836
+        },
+        {
+          "mot": "gratter",
+          "debut": 0.871,
+          "fin": 1.161
+        },
+        {
+          "mot": "ou",
+          "debut": 1.196,
+          "fin": 1.289
+        },
+        {
+          "mot": "quiz.",
+          "debut": 1.347,
+          "fin": 1.683
+        },
+        {
+          "mot": "Chacun",
+          "debut": 1.765,
+          "fin": 2.136
+        },
+        {
+          "mot": "annonce",
+          "debut": 2.171,
+          "fin": 2.45
+        },
+        {
+          "mot": "ses",
+          "debut": 2.473,
+          "fin": 2.601
+        },
+        {
+          "mot": "lots.",
+          "debut": 2.635,
+          "fin": 2.844
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 26.112,
+      "duree": 3.864,
+      "texte": "Trois étapes : informations, apparence, validation.",
+      "mots": [
+        {
+          "mot": "Trois",
+          "debut": 0,
+          "fin": 0.279
+        },
+        {
+          "mot": "étapes",
+          "debut": 0.36,
+          "fin": 0.743
+        },
+        {
+          "mot": ":",
+          "debut": 0.766,
+          "fin": 0.789
+        },
+        {
+          "mot": "informations,",
+          "debut": 0.882,
+          "fin": 1.614
+        },
+        {
+          "mot": "apparence,",
+          "debut": 1.683,
+          "fin": 2.252
+        },
+        {
+          "mot": "validation.",
+          "debut": 2.322,
+          "fin": 2.949
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 29.976,
+      "duree": 6.648,
+      "texte": "L'écran se coupe en deux : ce qu'on règle à gauche, ce que le client verra à droite. Image, texte, et l'aperçu suit.",
+      "mots": [
+        {
+          "mot": "L'écran",
+          "debut": 0,
+          "fin": 0.337
+        },
+        {
+          "mot": "se",
+          "debut": 0.395,
+          "fin": 0.488
+        },
+        {
+          "mot": "coupe",
+          "debut": 0.546,
+          "fin": 0.755
+        },
+        {
+          "mot": "en",
+          "debut": 0.778,
+          "fin": 0.824
+        },
+        {
+          "mot": "deux",
+          "debut": 0.871,
+          "fin": 1.01
+        },
+        {
+          "mot": ":",
+          "debut": 1.057,
+          "fin": 1.103
+        },
+        {
+          "mot": "ce",
+          "debut": 1.277,
+          "fin": 1.347
+        },
+        {
+          "mot": "qu'on",
+          "debut": 1.382,
+          "fin": 1.498
+        },
+        {
+          "mot": "règle",
+          "debut": 1.556,
+          "fin": 1.788
+        },
+        {
+          "mot": "à",
+          "debut": 1.846,
+          "fin": 1.904
+        },
+        {
+          "mot": "gauche,",
+          "debut": 1.997,
+          "fin": 2.276
+        },
+        {
+          "mot": "ce",
+          "debut": 2.299,
+          "fin": 2.368
+        },
+        {
+          "mot": "que",
+          "debut": 2.403,
+          "fin": 2.473
+        },
+        {
+          "mot": "le",
+          "debut": 2.508,
+          "fin": 2.577
+        },
+        {
+          "mot": "client",
+          "debut": 2.612,
+          "fin": 2.856
+        },
+        {
+          "mot": "verra",
+          "debut": 2.879,
+          "fin": 3.065
+        },
+        {
+          "mot": "à",
+          "debut": 3.1,
+          "fin": 3.135
+        },
+        {
+          "mot": "droite.",
+          "debut": 3.181,
+          "fin": 3.506
+        },
+        {
+          "mot": "Image,",
+          "debut": 3.576,
+          "fin": 4.11
+        },
+        {
+          "mot": "texte,",
+          "debut": 4.238,
+          "fin": 4.609
+        },
+        {
+          "mot": "et",
+          "debut": 4.667,
+          "fin": 4.772
+        },
+        {
+          "mot": "l'aperçu",
+          "debut": 4.818,
+          "fin": 5.236
+        },
+        {
+          "mot": "suit.",
+          "debut": 5.283,
+          "fin": 5.596
+        }
+      ]
+    },
+    {
+      "id": "etape-05",
+      "fichier": "voix/etape-05.mp3",
+      "debut": 36.623999999999995,
+      "duree": 6.048,
+      "texte": "Chaque lot a un nom, un prix, et une chance de gagner. C'est elle qui règle la générosité.",
+      "mots": [
+        {
+          "mot": "Chaque",
+          "debut": 0,
+          "fin": 0.372
+        },
+        {
+          "mot": "lot",
+          "debut": 0.406,
+          "fin": 0.604
+        },
+        {
+          "mot": "a",
+          "debut": 0.65,
+          "fin": 0.824
+        },
+        {
+          "mot": "un",
+          "debut": 0.859,
+          "fin": 0.952
+        },
+        {
+          "mot": "nom,",
+          "debut": 0.987,
+          "fin": 1.242
+        },
+        {
+          "mot": "un",
+          "debut": 1.312,
+          "fin": 1.428
+        },
+        {
+          "mot": "prix,",
+          "debut": 1.486,
+          "fin": 1.823
+        },
+        {
+          "mot": "et",
+          "debut": 1.892,
+          "fin": 2.009
+        },
+        {
+          "mot": "une",
+          "debut": 2.032,
+          "fin": 2.136
+        },
+        {
+          "mot": "chance",
+          "debut": 2.171,
+          "fin": 2.438
+        },
+        {
+          "mot": "de",
+          "debut": 2.461,
+          "fin": 2.543
+        },
+        {
+          "mot": "gagner.",
+          "debut": 2.589,
+          "fin": 3.007
+        },
+        {
+          "mot": "C'est",
+          "debut": 3.216,
+          "fin": 3.46
+        },
+        {
+          "mot": "elle",
+          "debut": 3.541,
+          "fin": 3.646
+        },
+        {
+          "mot": "qui",
+          "debut": 3.68,
+          "fin": 3.785
+        },
+        {
+          "mot": "règle",
+          "debut": 3.855,
+          "fin": 4.11
+        },
+        {
+          "mot": "la",
+          "debut": 4.156,
+          "fin": 4.226
+        },
+        {
+          "mot": "générosité.",
+          "debut": 4.284,
+          "fin": 5.074
+        }
+      ]
+    },
+    {
+      "id": "etape-06",
+      "fichier": "voix/etape-06.mp3",
+      "debut": 42.672,
+      "duree": 2.712,
+      "texte": "Puis on revient à la fiche du client.",
+      "mots": [
+        {
+          "mot": "Puis",
+          "debut": 0,
+          "fin": 0.325
+        },
+        {
+          "mot": "on",
+          "debut": 0.383,
+          "fin": 0.464
+        },
+        {
+          "mot": "revient",
+          "debut": 0.534,
+          "fin": 0.824
+        },
+        {
+          "mot": "à",
+          "debut": 0.871,
+          "fin": 0.894
+        },
+        {
+          "mot": "la",
+          "debut": 0.94,
+          "fin": 0.998
+        },
+        {
+          "mot": "fiche",
+          "debut": 1.057,
+          "fin": 1.277
+        },
+        {
+          "mot": "du",
+          "debut": 1.312,
+          "fin": 1.393
+        },
+        {
+          "mot": "client.",
+          "debut": 1.428,
+          "fin": 1.788
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 45.384,
+      "duree": 12.744,
+      "texte": "Les animations se succèdent. Pour retrouver celles du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Les",
+          "debut": 0,
+          "fin": 0.244
+        },
+        {
+          "mot": "animations",
+          "debut": 0.302,
+          "fin": 0.813
+        },
+        {
+          "mot": "se",
+          "debut": 0.836,
+          "fin": 0.917
+        },
+        {
+          "mot": "succèdent.",
+          "debut": 0.964,
+          "fin": 1.521
+        },
+        {
+          "mot": "Pour",
+          "debut": 1.591,
+          "fin": 1.765
+        },
+        {
+          "mot": "retrouver",
+          "debut": 1.8,
+          "fin": 2.229
+        },
+        {
+          "mot": "celles",
+          "debut": 2.276,
+          "fin": 2.496
+        },
+        {
+          "mot": "du",
+          "debut": 2.519,
+          "fin": 2.601
+        },
+        {
+          "mot": "mois,",
+          "debut": 2.647,
+          "fin": 2.914
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 3.03,
+          "fin": 3.901
+        },
+        {
+          "mot": "parle",
+          "debut": 4.017,
+          "fin": 4.261
+        },
+        {
+          "mot": "à",
+          "debut": 4.284,
+          "fin": 4.307
+        },
+        {
+          "mot": "Claude",
+          "debut": 4.365,
+          "fin": 4.69
+        },
+        {
+          "mot": ":",
+          "debut": 4.737,
+          "fin": 4.795
+        },
+        {
+          "mot": "vous",
+          "debut": 5.12,
+          "fin": 5.248
+        },
+        {
+          "mot": "demandez",
+          "debut": 5.271,
+          "fin": 5.608
+        },
+        {
+          "mot": "en",
+          "debut": 5.631,
+          "fin": 5.689
+        },
+        {
+          "mot": "français,",
+          "debut": 5.724,
+          "fin": 6.269
+        },
+        {
+          "mot": "il",
+          "debut": 6.385,
+          "fin": 6.536
+        },
+        {
+          "mot": "lit",
+          "debut": 6.594,
+          "fin": 6.757
+        },
+        {
+          "mot": "vos",
+          "debut": 6.792,
+          "fin": 6.92
+        },
+        {
+          "mot": "données",
+          "debut": 6.943,
+          "fin": 7.338
+        },
+        {
+          "mot": "et",
+          "debut": 7.488,
+          "fin": 7.651
+        },
+        {
+          "mot": "répond.",
+          "debut": 7.697,
+          "fin": 8.069
+        },
+        {
+          "mot": "Copiez",
+          "debut": 8.313,
+          "fin": 8.719
+        },
+        {
+          "mot": "ce",
+          "debut": 8.742,
+          "fin": 8.847
+        },
+        {
+          "mot": "prompt,",
+          "debut": 8.905,
+          "fin": 9.369
+        },
+        {
+          "mot": "remplacez",
+          "debut": 9.543,
+          "fin": 10.159
+        },
+        {
+          "mot": "ce",
+          "debut": 10.252,
+          "fin": 10.391
+        },
+        {
+          "mot": "qui",
+          "debut": 10.461,
+          "fin": 10.588
+        },
+        {
+          "mot": "est",
+          "debut": 10.646,
+          "fin": 10.762
+        },
+        {
+          "mot": "entre",
+          "debut": 10.832,
+          "fin": 11.029
+        },
+        {
+          "mot": "crochets.",
+          "debut": 11.076,
+          "fin": 11.494
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 58.128,
+      "duree": 5.304,
+      "texte": "Un modèle, une image, trois lots : l'animation est en ligne avant la fin de la pause.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "modèle,",
+          "debut": 0.186,
+          "fin": 0.697
+        },
+        {
+          "mot": "une",
+          "debut": 0.731,
+          "fin": 0.917
+        },
+        {
+          "mot": "image,",
+          "debut": 0.94,
+          "fin": 1.312
+        },
+        {
+          "mot": "trois",
+          "debut": 1.37,
+          "fin": 1.614
+        },
+        {
+          "mot": "lots",
+          "debut": 1.637,
+          "fin": 1.834
+        },
+        {
+          "mot": ":",
+          "debut": 1.858,
+          "fin": 1.892
+        },
+        {
+          "mot": "l'animation",
+          "debut": 2.067,
+          "fin": 2.705
+        },
+        {
+          "mot": "est",
+          "debut": 2.775,
+          "fin": 2.856
+        },
+        {
+          "mot": "en",
+          "debut": 2.926,
+          "fin": 2.984
+        },
+        {
+          "mot": "ligne",
+          "debut": 3.007,
+          "fin": 3.204
+        },
+        {
+          "mot": "avant",
+          "debut": 3.251,
+          "fin": 3.471
+        },
+        {
+          "mot": "la",
+          "debut": 3.495,
+          "fin": 3.553
+        },
+        {
+          "mot": "fin",
+          "debut": 3.622,
+          "fin": 3.762
+        },
+        {
+          "mot": "de",
+          "debut": 3.785,
+          "fin": 3.831
+        },
+        {
+          "mot": "la",
+          "debut": 3.866,
+          "fin": 3.936
+        },
+        {
+          "mot": "pause.",
+          "debut": 4.005,
+          "fin": 4.377
+        }
+      ]
+    }
+  ]
+}

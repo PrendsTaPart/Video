@@ -1,0 +1,5 @@
+{
+  "ok": true,
+  "slug": "03-ajouter-modifier-une-strategie-a-un-produit",
+  "note": "configurer_agent_tutoriel passé le 2026-09-04 avec agent_instructions et agent_outils_mcp. La page porte désormais ses instructions, updated_at a bougé. Charge utile complète dans le fichier .demande.json ; réponse du serveur non recopiée ici, elle contient la fiche entière."
+}

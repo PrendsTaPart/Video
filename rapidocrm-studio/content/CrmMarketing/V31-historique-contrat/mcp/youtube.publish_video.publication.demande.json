@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V31-06-historique-contrat.mp4",
+    "titre": "Historique des contrats — RapidoCRM",
+    "description": "Dans l'historique du client, à une ligne de là.\n\nOn part de la page Historique, et on ressort avec le contrat ouvert. Le tableau donne le destinataire, les dates et le statut ; le menu de la ligne ouvre le document. Le statut dit s'il est signé, le document dit ce qu'il engage.\n\nChapitres\n00:00 Un contrat envoyé en mai, une question sur sa durée en septembre. Où est le document ?\n00:08 Historique contrat\n00:22 Ouvrir l'historique des contrats\n00:26 Lire le tableau des contrats\n00:30 Ouvrir le contrat\n00:32 Parcourir le contrat, page par page\n00:37 Faites-le avec Claude\n00:49 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] contrats en attente avec leur destinataire et leurs dates.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/06-historique-contrat\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "historique",
+      "contrat",
+      "CRM",
+      "suivi client",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "CrmMarketing"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V31-06-historique-contrat-thumb.jpg",
+    "playlist": "RapidoCRM — CrmMarketing",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T23:30:00.678Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

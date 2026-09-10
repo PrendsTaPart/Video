@@ -1,0 +1,87 @@
+[
+  {
+    "mot": "Neuf",
+    "debut": 0,
+    "fin": 0.209
+  },
+  {
+    "mot": "journaux",
+    "debut": 0.267,
+    "fin": 0.569
+  },
+  {
+    "mot": "sur",
+    "debut": 0.592,
+    "fin": 0.731
+  },
+  {
+    "mot": "une",
+    "debut": 0.766,
+    "fin": 0.871
+  },
+  {
+    "mot": "page",
+    "debut": 0.906,
+    "fin": 1.219
+  },
+  {
+    "mot": ":",
+    "debut": 1.242,
+    "fin": 1.265
+  },
+  {
+    "mot": "reprendre",
+    "debut": 1.416,
+    "fin": 1.881
+  },
+  {
+    "mot": "un",
+    "debut": 1.904,
+    "fin": 1.95
+  },
+  {
+    "mot": "dossier",
+    "debut": 1.997,
+    "fin": 2.368
+  },
+  {
+    "mot": "prend",
+    "debut": 2.415,
+    "fin": 2.624
+  },
+  {
+    "mot": "moins",
+    "debut": 2.659,
+    "fin": 2.879
+  },
+  {
+    "mot": "de",
+    "debut": 2.902,
+    "fin": 2.995
+  },
+  {
+    "mot": "temps",
+    "debut": 3.077,
+    "fin": 3.286
+  },
+  {
+    "mot": "que",
+    "debut": 3.309,
+    "fin": 3.402
+  },
+  {
+    "mot": "de",
+    "debut": 3.437,
+    "fin": 3.495
+  },
+  {
+    "mot": "s'en",
+    "debut": 3.518,
+    "fin": 3.657
+  },
+  {
+    "mot": "souvenir.",
+    "debut": 3.704,
+    "fin": 4.226
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.186
+  },
+  {
+    "mot": "devis",
+    "debut": 0.209,
+    "fin": 0.453
+  },
+  {
+    "mot": "est",
+    "debut": 0.476,
+    "fin": 0.546
+  },
+  {
+    "mot": "accepté.",
+    "debut": 0.615,
+    "fin": 1.242
+  },
+  {
+    "mot": "Reste",
+    "debut": 1.521,
+    "fin": 1.788
+  },
+  {
+    "mot": "à",
+    "debut": 1.811,
+    "fin": 1.834
+  },
+  {
+    "mot": "sortir",
+    "debut": 1.892,
+    "fin": 2.194
+  },
+  {
+    "mot": "un",
+    "debut": 2.241,
+    "fin": 2.287
+  },
+  {
+    "mot": "contrat,",
+    "debut": 2.345,
+    "fin": 2.775
+  },
+  {
+    "mot": "à",
+    "debut": 2.833,
+    "fin": 2.879
+  },
+  {
+    "mot": "le",
+    "debut": 2.949,
+    "fin": 3.007
+  },
+  {
+    "mot": "relire,",
+    "debut": 3.077,
+    "fin": 3.529
+  },
+  {
+    "mot": "à",
+    "debut": 3.599,
+    "fin": 3.646
+  },
+  {
+    "mot": "trouver",
+    "debut": 3.715,
+    "fin": 3.947
+  },
+  {
+    "mot": "la",
+    "debut": 3.971,
+    "fin": 4.029
+  },
+  {
+    "mot": "bonne",
+    "debut": 4.075,
+    "fin": 4.249
+  },
+  {
+    "mot": "adresse.",
+    "debut": 4.272,
+    "fin": 4.69
+  },
+  {
+    "mot": "Un",
+    "debut": 4.818,
+    "fin": 4.934
+  },
+  {
+    "mot": "modèle,",
+    "debut": 4.969,
+    "fin": 5.503
+  },
+  {
+    "mot": "deux",
+    "debut": 5.654,
+    "fin": 5.805
+  },
+  {
+    "mot": "dates,",
+    "debut": 5.84,
+    "fin": 6.246
+  },
+  {
+    "mot": "et",
+    "debut": 6.397,
+    "fin": 6.478
+  },
+  {
+    "mot": "il",
+    "debut": 6.513,
+    "fin": 6.618
+  },
+  {
+    "mot": "part.",
+    "debut": 6.699,
+    "fin": 7.024
+  }
+]

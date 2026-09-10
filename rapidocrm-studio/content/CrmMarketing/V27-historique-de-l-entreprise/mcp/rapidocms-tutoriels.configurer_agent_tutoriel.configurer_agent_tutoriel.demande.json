@@ -1,0 +1,15 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "configurer_agent_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-de-l-entreprise",
+    "agent_instructions": "Tu accompagnes un utilisateur sur « Historique de l'entreprise » (module 06-crm-marketing).\nÀ quoi ça sert : Rassembler en une page tout ce qui s'est passé avec un client : e-mails, SMS, rendez-vous, contrats, documents, factures, devis, dépenses et notes. Chaque journal s'ouvre d'un clic.\nPour qui : Gérant ou commercial qui reprend un dossier client\n\nÉtapes du tutoriel :\n- 1. Ouvrir le panneau Entreprise de la fiche\n- 2. Ouvrir l'historique de l'entreprise\n- 3. Parcourir les neuf journaux\n- 4. Choisir le journal à consulter\n\nErreurs fréquentes à rappeler :\n- Chercher l'historique dans le bloc Communication : il est dans l'accordéon Entreprise.\n- S'arrêter à la première rangée de cartes : six autres journaux attendent plus bas.\n\nVouvoie, phrases courtes, zéro jargon non expliqué. N'affirme rien sur RapidoCRM qui ne figure pas dans ce tutoriel ou dans les outils autorisés.",
+    "agent_outils_mcp": [
+      "get_entreprise",
+      "get_interaction_stats"
+    ]
+  },
+  "demande_le": "2026-09-08T14:18:56.704Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

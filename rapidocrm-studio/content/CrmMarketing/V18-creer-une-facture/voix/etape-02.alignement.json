@@ -1,0 +1,52 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "logo",
+    "debut": 0.221,
+    "fin": 0.453
+  },
+  {
+    "mot": "est",
+    "debut": 0.488,
+    "fin": 0.569
+  },
+  {
+    "mot": "repris",
+    "debut": 0.592,
+    "fin": 0.848
+  },
+  {
+    "mot": "du",
+    "debut": 0.871,
+    "fin": 0.952
+  },
+  {
+    "mot": "client.",
+    "debut": 0.975,
+    "fin": 1.393
+  },
+  {
+    "mot": "On",
+    "debut": 1.567,
+    "fin": 1.672
+  },
+  {
+    "mot": "choisit",
+    "debut": 1.707,
+    "fin": 2.009
+  },
+  {
+    "mot": "la",
+    "debut": 2.032,
+    "fin": 2.101
+  },
+  {
+    "mot": "couleur.",
+    "debut": 2.171,
+    "fin": 2.647
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "fonctionnalite": "Définir ou changer le mot de passe d'un utilisateur",
+  "a_quoi_ca_sert": "Permettre à un utilisateur de se donner un mot de passe sans passer par personne : il demande un lien depuis la page de connexion, le reçoit par mail, choisit son mot de passe et entre dans son espace. C'est aussi la sortie de secours quand le mail d'activation n'a pas pu partir à la création de son compte.",
+  "pour_qui": "Tout utilisateur du logiciel — commercial fraîchement créé, ou n'importe qui ayant oublié son mot de passe",
+  "prerequis": [
+    "Avoir un compte créé dans le logiciel",
+    "Accéder à la boîte mail associée à ce compte"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Mot de passe oublié ?",
+      "obligatoire": true,
+      "explication": "Le lien de la page de connexion qui ouvre la procédure. Il est sous le champ mot de passe."
+    },
+    {
+      "nom": "Adresse e-mail",
+      "obligatoire": true,
+      "explication": "L'adresse du compte. C'est là qu'arrive le lien de réinitialisation."
+    },
+    {
+      "nom": "Nouveau mot de passe et confirmation",
+      "obligatoire": true,
+      "explication": "Les deux champs de la page de réinitialisation. Ils doivent être identiques."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_commerciaux",
+      "role": "Liste les commerciaux avec leur statut actif ou inactif — de quoi vérifier qu'un compte existe bien avant de chercher pourquoi la connexion échoue. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["q", "statut", "limit"],
+      "exemple_appel": { "statut": "actif" }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Lancez la procédure depuis la page de connexion, pas depuis le profil : c'est l'utilisateur lui-même qui choisit son mot de passe, personne d'autre ne le connaît.",
+    "Vérifiez le dossier indésirables si le mail tarde : il part de la boîte mail configurée pour la société."
+  ],
+  "erreurs_frequentes": [
+    "Saisir une autre adresse que celle du compte : aucun mail n'arrive, et rien ne le signale.",
+    "Réutiliser un ancien lien de réinitialisation : chaque lien porte un jeton propre à la demande."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Activer un compte quand le mail d'activation n'est pas parti",
+      "contexte": "Un commercial vient d'être créé, mais le logiciel signale que son mail d'activation a été refusé.",
+      "resultat_attendu": "Il définit son mot de passe lui-même depuis « mot de passe oublié » et se connecte."
+    },
+    {
+      "titre": "Reprendre la main sur un compte",
+      "contexte": "Un utilisateur ne se souvient plus de son mot de passe.",
+      "resultat_attendu": "Il reçoit un lien, choisit un nouveau mot de passe, et retrouve son espace."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le lien vaut pour une seule demande",
+      "contenu": "L'adresse reçue par mail porte un jeton unique. Une nouvelle demande en génère un autre : c'est toujours le dernier mail qui compte.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Personne n'a besoin de connaître le mot de passe",
+      "contenu": "L'administrateur crée le compte, l'utilisateur choisit son mot de passe. Les deux rôles restent séparés.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "La confirmation arrive à l'écran",
+      "contenu": "Après validation, la page de connexion affiche « Votre mot de passe a été modifié ! ». Si ce bandeau n'apparaît pas, le changement n'est pas passé.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Vérifier qui a bien un accès",
+    "texte": "Liste-moi mes commerciaux [statut] avec leur adresse e-mail.",
+    "variables": ["statut"],
+    "outil_mcp": "list_commerciaux"
+  },
+  "sources": {
+    "champs_cles": "frames 00:06 à 00:38 de l'enregistrement : page « Accéder à mon espace » et son lien « Mot de passe oublié ? », page « Veuillez saisir votre adresse e-mail, nous vous enverrons des instructions pour réinitialiser votre mot de passe » avec le bouton « envoyer le lien de réinitialisation », puis page « Réinitialiser le mot de passe » et ses deux champs",
+    "a_quoi_ca_sert": "frames 00:00 à 00:47 : le parcours complet, de la fiche du commercial jusqu'à son tableau de bord",
+    "erreurs_frequentes": "frame 00:24 : l'adresse de la page de réinitialisation porte un jeton propre à la demande",
+    "astuces": "frame 00:32 : bandeau « Votre mot de passe a été modifié ! » sur la page de connexion",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne change un mot de passe : la procédure passe uniquement par la page de connexion et le mail reçu."
+  },
+  "a_verifier": []
+}

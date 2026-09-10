@@ -1,0 +1,15 @@
+Un virement tombe sur le compte. Trois semaines plus tard, vous cherchez encore à quelle facture il correspond. Un champ coché le jour même, et le rapprochement se fait tout seul.
+
+On part de la liste des factures, et on ressort avec un règlement noté. Le moyen de paiement se choisit dans la facture, sous le statut : espèces, carte, virement ou chèque. Un seul à la fois. Juste en dessous, le total à retrouver sur votre relevé de banque.
+
+Depuis la liste, les trois points en fin de ligne ouvrent la facture.
+
+Quatre moyens, un seul coché. Ici, virement.
+
+En dessous, le total à retrouver sur le relevé.
+
+On enregistre, et c'est écrit.
+
+Le règlement est noté. Pour rouvrir une facture précise sans la chercher, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez le numéro entre crochets.
+
+Un moyen de paiement noté, c'est un rapprochement en moins à faire.

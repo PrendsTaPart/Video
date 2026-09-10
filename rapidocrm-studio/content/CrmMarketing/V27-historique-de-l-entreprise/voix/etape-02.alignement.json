@@ -1,0 +1,32 @@
+[
+  {
+    "mot": "La",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "troisième",
+    "debut": 0.209,
+    "fin": 0.65
+  },
+  {
+    "mot": ":",
+    "debut": 0.673,
+    "fin": 0.708
+  },
+  {
+    "mot": "historique",
+    "debut": 0.778,
+    "fin": 1.289
+  },
+  {
+    "mot": "de",
+    "debut": 1.312,
+    "fin": 1.382
+  },
+  {
+    "mot": "l'entreprise.",
+    "debut": 1.416,
+    "fin": 2.055
+  }
+]

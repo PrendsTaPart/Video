@@ -1,0 +1,17 @@
+Trois commerciaux vendent le même produit. Chacun le vend à sa façon. Une stratégie écrite sur la fiche, et tout le monde lit la même chose.
+
+On part de la liste des produits, et on ressort avec une consigne de vente attachée à l'un d'eux. La stratégie ne vit pas dans un document à part : elle se range sur la fiche du produit, avec son type, son nom et sa description. Le logiciel garde qui l'a écrite et quand. Et si la rédaction vous arrête, un bouton d'aide du bot vous propose un premier jet.
+
+Depuis la liste des produits, le premier des trois boutons : voir.
+
+Deux boutons en haut à droite : liste des stratégies pour consulter, ajouter une stratégie pour créer.
+
+Le type d'abord : stratégie commerciale. Puis le nom — décrivez ce qu'elle fait, pas un numéro d'essai.
+
+La description dit ce qu'il faut faire. Écrivez-la en actions vérifiables : un nombre, un délai, une relance. Et si vous séchez, le bouton d'aide du bot propose un premier jet, à relire avant de valider.
+
+Et la stratégie apparaît dans le tableau : qui l'a écrite, son type, son nom, sa date de création. Quand plusieurs personnes en ajoutent, on sait d'où sort chaque consigne.
+
+Vos consignes sont écrites. Pour repérer les produits qui n'en ont pas encore, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.
+
+La stratégie vit sur le produit, plus dans une réunion oubliée.

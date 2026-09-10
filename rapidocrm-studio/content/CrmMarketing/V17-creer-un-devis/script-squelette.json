@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 17,
+    "titre": "Créer un devis depuis la fiche d'une entreprise",
+    "titre_court": "Créer un devis depuis la fic",
+    "slug": "creer-un-devis-depuis-la-fiche-d-une-entreprise"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir « Créer un devis » depuis la fiche",
+        "voix": "",
+        "debut_source": 1,
+        "fin_source": 4.5,
+        "zone_focus": {
+          "x": 0.72,
+          "y": 0.4,
+          "w": 0.27,
+          "h": 0.45
+        },
+        "annotation": "Ouvrir « Créer un devis » depuis la fiche"
+      },
+      {
+        "numero": 2,
+        "titre": "Logo et charte graphique du devis",
+        "voix": "",
+        "debut_source": 4.5,
+        "fin_source": 8.5,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0,
+          "w": 0.42,
+          "h": 0.85
+        },
+        "annotation": "Logo et charte graphique du devis"
+      },
+      {
+        "numero": 3,
+        "titre": "Choisir le produit, les montants suivent",
+        "voix": "",
+        "debut_source": 8.5,
+        "fin_source": 14,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.05,
+          "w": 0.42,
+          "h": 0.9
+        },
+        "annotation": "Choisir le produit, les montants suivent"
+      },
+      {
+        "numero": 4,
+        "titre": "Fixer les dates du devis",
+        "voix": "",
+        "debut_source": 14,
+        "fin_source": 19,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.5,
+          "w": 0.42,
+          "h": 0.28
+        },
+        "annotation": "Fixer les dates du devis"
+      },
+      {
+        "numero": 5,
+        "titre": "Délai de paiement, mentions légales, statut",
+        "voix": "",
+        "debut_source": 19,
+        "fin_source": 28,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.02,
+          "w": 0.42,
+          "h": 0.95
+        },
+        "annotation": "Délai de paiement, mentions légales, statut"
+      },
+      {
+        "numero": 6,
+        "titre": "Mode de paiement, totaux et enregistrement",
+        "voix": "",
+        "debut_source": 28,
+        "fin_source": 32.84,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.1,
+          "w": 0.42,
+          "h": 0.85
+        },
+        "annotation": "Mode de paiement, totaux et enregistrement"
+      },
+      {
+        "numero": 7,
+        "titre": "Retrouver le devis dans l'activité de la fiche",
+        "voix": "",
+        "debut_source": 32.84,
+        "fin_source": 38,
+        "zone_focus": {
+          "x": 0.24,
+          "y": 0.4,
+          "w": 0.5,
+          "h": 0.5
+        },
+        "annotation": "Retrouver le devis dans l'activité de la fiche"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] devis en attente avec leur destinataire et leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_devis"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "part",
+    "debut": 0.163,
+    "fin": 0.302
+  },
+  {
+    "mot": "de",
+    "debut": 0.325,
+    "fin": 0.383
+  },
+  {
+    "mot": "la",
+    "debut": 0.418,
+    "fin": 0.476
+  },
+  {
+    "mot": "fiche",
+    "debut": 0.534,
+    "fin": 0.72
+  },
+  {
+    "mot": "d'une",
+    "debut": 0.743,
+    "fin": 0.906
+  },
+  {
+    "mot": "entreprise,",
+    "debut": 0.929,
+    "fin": 1.567
+  },
+  {
+    "mot": "et",
+    "debut": 1.602,
+    "fin": 1.707
+  },
+  {
+    "mot": "on",
+    "debut": 1.753,
+    "fin": 1.811
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.846,
+    "fin": 2.159
+  },
+  {
+    "mot": "avec",
+    "debut": 2.183,
+    "fin": 2.38
+  },
+  {
+    "mot": "un",
+    "debut": 2.438,
+    "fin": 2.485
+  },
+  {
+    "mot": "contrat",
+    "debut": 2.531,
+    "fin": 2.833
+  },
+  {
+    "mot": "envoyé.",
+    "debut": 2.868,
+    "fin": 3.355
+  },
+  {
+    "mot": "La",
+    "debut": 3.634,
+    "fin": 3.727
+  },
+  {
+    "mot": "bibliothèque",
+    "debut": 3.762,
+    "fin": 4.226
+  },
+  {
+    "mot": "propose",
+    "debut": 4.249,
+    "fin": 4.772
+  },
+  {
+    "mot": "des",
+    "debut": 4.865,
+    "fin": 5.004
+  },
+  {
+    "mot": "modèles,",
+    "debut": 5.027,
+    "fin": 5.503
+  },
+  {
+    "mot": "le",
+    "debut": 5.712,
+    "fin": 5.782
+  },
+  {
+    "mot": "formulaire",
+    "debut": 5.84,
+    "fin": 6.235
+  },
+  {
+    "mot": "tient",
+    "debut": 6.269,
+    "fin": 6.478
+  },
+  {
+    "mot": "en",
+    "debut": 6.536,
+    "fin": 6.583
+  },
+  {
+    "mot": "quatre",
+    "debut": 6.629,
+    "fin": 6.896
+  },
+  {
+    "mot": "champs,",
+    "debut": 6.943,
+    "fin": 7.245
+  },
+  {
+    "mot": "et",
+    "debut": 7.396,
+    "fin": 7.5
+  },
+  {
+    "mot": "le",
+    "debut": 7.535,
+    "fin": 7.593
+  },
+  {
+    "mot": "logiciel",
+    "debut": 7.639,
+    "fin": 8.139
+  },
+  {
+    "mot": "confirme",
+    "debut": 8.313,
+    "fin": 8.742
+  },
+  {
+    "mot": "l'envoi.",
+    "debut": 8.766,
+    "fin": 9.137
+  }
+]

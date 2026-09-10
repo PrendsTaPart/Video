@@ -1,0 +1,37 @@
+[
+  {
+    "mot": "L'icône",
+    "debut": 0,
+    "fin": 0.418
+  },
+  {
+    "mot": "rouvre",
+    "debut": 0.441,
+    "fin": 0.639
+  },
+  {
+    "mot": "le",
+    "debut": 0.673,
+    "fin": 0.731
+  },
+  {
+    "mot": "message,",
+    "debut": 0.778,
+    "fin": 1.196
+  },
+  {
+    "mot": "mot",
+    "debut": 1.231,
+    "fin": 1.358
+  },
+  {
+    "mot": "pour",
+    "debut": 1.382,
+    "fin": 1.509
+  },
+  {
+    "mot": "mot.",
+    "debut": 1.544,
+    "fin": 1.753
+  }
+]

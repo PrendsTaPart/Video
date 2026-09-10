@@ -1,0 +1,49 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-envoyer-une-newsletter",
+    "transcription": "Vous avez une nouvelle à annoncer, et un fichier client. Entre les deux, d'habitude, il y a un outil d'e-mailing. Cette fois, la newsletter part du CRM.\n\nOn part de la fiche d'une entreprise, et on ressort avec une newsletter programmée. Qui la reçoit, quand elle part, à quoi elle ressemble : la fenêtre suit cet ordre.\n\nPanneau Communication, envoyer une newsletter.\n\nLa cible d'abord : entreprises. C'est le premier champ.\n\nPuis la date et l'heure. Dix heures trente se lit ; dix-sept heures trente attend le lendemain.\n\nLe modèle, avec son aperçu.\n\nCampagne ajoutée avec succès.\n\nUne newsletter devient une campagne. Pour retrouver les dernières, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nLe fichier est déjà là, la newsletter part de là : un outil de moins à ouvrir.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 9,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 19,
+        "titre": "Ouvrir « Envoyer une newsletter »"
+      },
+      {
+        "debut": 23,
+        "titre": "Dire à qui la newsletter part"
+      },
+      {
+        "debut": 26,
+        "titre": "Fixer la date et l'heure d'envoi"
+      },
+      {
+        "debut": 33,
+        "titre": "Choisir le modèle de newsletter"
+      },
+      {
+        "debut": 35,
+        "titre": "Lire la confirmation"
+      },
+      {
+        "debut": 38,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 50,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-06T14:12:58.768Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

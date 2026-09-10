@@ -1,0 +1,114 @@
+{
+  "outils": [
+    {
+      "nom": "get_profile",
+      "description": "Profil : renvoie les informations de profil de l'utilisateur connecté. Lecture seule.",
+      "parametres": []
+    },
+    {
+      "nom": "get_company",
+      "description": "Entreprise : renvoie les informations de la société émettrice (nom, SIRET, adresse, coordonnées). Lecture seule.",
+      "parametres": []
+    },
+    {
+      "nom": "update_commercial_profil",
+      "description": "Met à jour le profil d'un commercial. Écriture — non utilisé par ce pipeline.",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer",
+          "obligatoire": true,
+          "valeurs_autorisees": [],
+          "description": "ID du commercial"
+        },
+        {
+          "nom": "payload",
+          "type": "object|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Données de mise à jour"
+        }
+      ]
+    },
+    {
+      "nom": "get_user",
+      "description": "Utilisateurs : fiche d'un utilisateur par son identifiant. Lecture seule. N'expose aucun mot de passe.",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer",
+          "obligatoire": true,
+          "valeurs_autorisees": [],
+          "description": "ID principal"
+        }
+      ]
+    },
+    {
+      "nom": "update_entreprise",
+      "description": "Met à jour une entreprise cliente. Écriture — non utilisé par ce pipeline. Son schéma renseigne les champs d'une fiche entreprise.",
+      "parametres": [
+        {
+          "nom": "nom",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nom de l'entreprise"
+        },
+        {
+          "nom": "email",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Email de contact"
+        },
+        {
+          "nom": "siret",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "SIRET (14 chiffres)"
+        },
+        {
+          "nom": "adresse",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Adresse"
+        },
+        {
+          "nom": "code_postal",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Code postal"
+        },
+        {
+          "nom": "ville",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Ville"
+        },
+        {
+          "nom": "telephone",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Téléphone"
+        },
+        {
+          "nom": "site_web",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Site web (URL complète avec https://)"
+        }
+      ]
+    }
+  ],
+  "divergences": [
+    "Divergence : « Champ e-mail » (14.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Champ numéro » (17.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Sélecteur de couleur de la charte des factures » (58.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

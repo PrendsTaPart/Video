@@ -1,0 +1,82 @@
+[
+  {
+    "mot": "Ce",
+    "debut": 0,
+    "fin": 0.186
+  },
+  {
+    "mot": "qui",
+    "debut": 0.232,
+    "fin": 0.36
+  },
+  {
+    "mot": "est",
+    "debut": 0.418,
+    "fin": 0.488
+  },
+  {
+    "mot": "parti",
+    "debut": 0.511,
+    "fin": 0.789
+  },
+  {
+    "mot": "reste",
+    "debut": 0.836,
+    "fin": 1.045
+  },
+  {
+    "mot": "lisible",
+    "debut": 1.091,
+    "fin": 1.521
+  },
+  {
+    "mot": ":",
+    "debut": 1.567,
+    "fin": 1.614
+  },
+  {
+    "mot": "la",
+    "debut": 1.73,
+    "fin": 1.823
+  },
+  {
+    "mot": "discussion",
+    "debut": 1.869,
+    "fin": 2.473
+  },
+  {
+    "mot": "ne",
+    "debut": 2.531,
+    "fin": 2.601
+  },
+  {
+    "mot": "dépend",
+    "debut": 2.647,
+    "fin": 2.926
+  },
+  {
+    "mot": "plus",
+    "debut": 2.961,
+    "fin": 3.1
+  },
+  {
+    "mot": "de",
+    "debut": 3.123,
+    "fin": 3.17
+  },
+  {
+    "mot": "votre",
+    "debut": 3.204,
+    "fin": 3.367
+  },
+  {
+    "mot": "boîte",
+    "debut": 3.413,
+    "fin": 3.611
+  },
+  {
+    "mot": "mail.",
+    "debut": 3.646,
+    "fin": 3.936
+  }
+]
