@@ -1,0 +1,144 @@
+{
+ "mickael": {
+  "role": "Mickael (narrateur)",
+  "voice_id": "APbYQosMxYlAnCCBzydW",
+  "voice_name": "Remy – Warm French Narrator",
+  "note": "chaud, grave, léger accent du Sud : un chef qui raconte",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/2c8edd3f08c1440c8c3445c4f4c3895d/voices/APbYQosMxYlAnCCBzydW/I69rFI2y1jKQdRkVdJOx.mp3",
+  "synthetic_filter": false
+ },
+ "bernard": {
+  "role": "Bernard",
+  "voice_id": "GFj5Qf6cNQ3Lgp8VKBwc",
+  "voice_name": "Olivier D – Old man for cartoon & animation",
+  "note": "voix âgée, bourrue, dessin animé",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/8c6176bbc2f44115a207793db7b74bc6/voices/GFj5Qf6cNQ3Lgp8VKBwc/NrTlsCPkDgukftt0UFoH.mp3",
+  "synthetic_filter": false
+ },
+ "lea": {
+  "role": "Léa",
+  "voice_id": "Cy2zXKmu2kQeAuze0rzV",
+  "voice_name": "Chloé – French",
+  "note": "nette, énergique, précise",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/7244784043964d9f87fd5c522a06d1ea/voices/Cy2zXKmu2kQeAuze0rzV/1YjM8FjImipT8xTx5Ejq.mp3",
+  "synthetic_filter": false
+ },
+ "karim": {
+  "role": "Karim",
+  "voice_id": "7pDdnNI6PhXmAp0pXFZm",
+  "voice_name": "Noé – Content Creator",
+  "note": "jeune, spontané",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/b91a8bb1f701403a82385b792a802e71/voices/7pDdnNI6PhXmAp0pXFZm/FdWEpiSMIrpAniEZvmIJ.mp3",
+  "synthetic_filter": false
+ },
+ "sofiane": {
+  "role": "Sofiane",
+  "voice_id": "NBjtCdChq5Ph56VnCM8Z",
+  "voice_name": "Théo – UGC Creator",
+  "note": "souriant, commercial, naturel",
+  "preview_url": "https://api.us.elevenlabs.io/v1/voices/NBjtCdChq5Ph56VnCM8Z/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiJlYzBkNmI0MzQwODA0MGFmYTkxYjg1YzdjYWU1MTdkNyIsImZpbGVuYW1lIjoiRGEyemo2cVRSNUZ2T2pvc3FoTE4ubXAzIiwidGltZXN0YW1wIjoxNzkwOTU2ODAwMDAwMDAwfQ%3D%3D",
+  "synthetic_filter": false
+ },
+ "nadia": {
+  "role": "Nadia",
+  "voice_id": "UaGvaD7NWzU5mJNoUqoY",
+  "voice_name": "Perle – Premium French Corporate",
+  "note": "posée, rassurante",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/9b575dced44a494191dd4a86259dca58/voices/UaGvaD7NWzU5mJNoUqoY/vDA7gLJMATfRgzejin2y.mp3",
+  "synthetic_filter": false
+ },
+ "ines": {
+  "role": "Inès",
+  "voice_id": "O31r762Gb3WFygrEOGh0",
+  "voice_name": "Victoria – Content Creator",
+  "note": "jeune, vive, réseaux sociaux",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/8883bfc00193440ba374c3ecd71610b5/voices/O31r762Gb3WFygrEOGh0/x79aDNW4Q3qgJKq1svTL.mp3",
+  "synthetic_filter": false
+ },
+ "thomas": {
+  "role": "Thomas",
+  "voice_id": "c365oriviHmAhyLhpuN6",
+  "voice_name": "Adrien Clairon – French Modern",
+  "note": "assuré, directeur",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/34e3b1de9d1847c991f7159a05bb5e81/voices/c365oriviHmAhyLhpuN6/wW2tVxsVnR24BGWGN4eR.mp3",
+  "synthetic_filter": false
+ },
+ "predibot": {
+  "role": "PrédiBot (IA)",
+  "voice_id": "odOFTFZU3DvAZ3EV3KHi",
+  "voice_name": "Lucas – Premium French Corporate",
+  "note": "neutre, précis + filtre synthétique",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/27ed767f766c44b0af61d239d867281d/voices/odOFTFZU3DvAZ3EV3KHi/t1nwOMycInvdG6yuJZHr.mp3",
+  "synthetic_filter": true
+ },
+ "iris": {
+  "role": "Iris (IA)",
+  "voice_id": "yatuMX0k4Dh41R64sbGj",
+  "voice_name": "Cécile – Interactive Customer Support",
+  "note": "aimable, réactive + filtre synthétique",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/ed9b05e6324c457685490352e9a1ec90/voices/yatuMX0k4Dh41R64sbGj/bW2x4IuA89YQmVwGwPPV.mp3",
+  "synthetic_filter": true
+ },
+ "caroline": {
+  "role": "Caroline (IA vocale)",
+  "voice_id": "uOw88F5bjqRiVuZLhXEA",
+  "voice_name": "Victoria Agent",
+  "note": "agent téléphonique + filtre téléphone",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/18b8771d279e4e979b042a209618a697/voices/uOw88F5bjqRiVuZLhXEA/l2Jl5QB3CZJLkwhOBPr1.mp3",
+  "synthetic_filter": true
+ },
+ "jarvis": {
+  "role": "Jarvis (IA drive)",
+  "voice_id": "N84W2MAq7DASQyJC2ug4",
+  "voice_name": "Jean Charles",
+  "note": "voix d'annonce + filtre haut-parleur",
+  "preview_url": "https://api.us.elevenlabs.io/v1/voices/N84W2MAq7DASQyJC2ug4/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiJlYjBlMDUxYWJjODY0NjE4YmMwNzMzMjY0MDYxOWMyZCIsImZpbGVuYW1lIjoiNDY3MDc5OTUtZDQxYS00ZmY1LWE0NWYtZmQyYjYyNTFiMDRiLm1wMyIsInRpbWVzdGFtcCI6MTc5MDk1NjgwMDAwMDAwMH0%3D",
+  "synthetic_filter": true
+ },
+ "assistant-ia": {
+  "role": "L'assistant IA",
+  "voice_id": "5OnMHwgTFgvPVwE8jP6B",
+  "voice_name": "Anaïs – News, podcasting",
+  "note": "claire, neutre + filtre synthétique léger",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/ba696ba376dc4922a911da94eff98f2a/voices/5OnMHwgTFgvPVwE8jP6B/hyOFlAxqmCLW3fVQQMAG.mp3",
+  "synthetic_filter": true
+ },
+ "client-f": {
+  "role": "Clientes (voix générique 1)",
+  "voice_id": "mNu8EQcIlFZdOJs7yfhe",
+  "voice_name": "Julia – Warm French Narrator",
+  "note": "jeune femme, chaleureuse",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/9ba829528b3242f79e18a8ca367e00d9/voices/mNu8EQcIlFZdOJs7yfhe/UuwaczHRXyEGgUT8wxSm.mp3",
+  "synthetic_filter": false
+ },
+ "client-f2": {
+  "role": "Clientes (voix générique 2)",
+  "voice_id": "gAx9hUOvSB0WdmtuJSBl",
+  "voice_name": "Merisa – smooth and captivating",
+  "note": "femme, dynamique",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/6dec3214a63b421fa5083f1747b31eb2/voices/gAx9hUOvSB0WdmtuJSBl/3ef8a5f0-5f76-4d25-8a88-c0d85e78c68d.mp3",
+  "synthetic_filter": false
+ },
+ "client-h": {
+  "role": "Clients (voix générique 3)",
+  "voice_id": "kKgyAHjGAbeWHCNd7qoC",
+  "voice_name": "Augustin – Conversational French",
+  "note": "homme, conversationnel",
+  "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/f453e6ece3844b538d2987595f62f0ce/voices/kKgyAHjGAbeWHCNd7qoC/JKUrofGQfxVO8svGxbtc.mp3",
+  "synthetic_filter": false
+ },
+ "_roles": {
+  "la-cliente": "client-f",
+  "une-passante": "client-f2",
+  "la-franchisee": "client-f2",
+  "la-nouvelle": "client-f",
+  "la-pizzaiolo": "client-f2",
+  "la-comptable": "client-f",
+  "la-boulangere": "client-f2",
+  "le-client": "client-h",
+  "le-traiteur": "client-h",
+  "le-food-truck": "client-h",
+  "le-petit": "client-f"
+ },
+ "_model": "eleven_v3"
+}
