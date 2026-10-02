@@ -32,9 +32,15 @@ rien de publié ni de programmé.
 
 ## Où sont les vidéos
 
-Les MP4 sont trop lourds pour Git (≈ 1,5 Go au total) : `renders/` et `previews/` sont ignorés. Ils se régénèrent
-entièrement en local (commandes ci-dessous) à partir de ce qui est versionné (images, voix, musiques en Git LFS).
-Lien de stockage externe : _à compléter une fois l'hébergement choisi_.
+Les 79 vidéos finales sont dans le dépôt, en **Git LFS** (`bd-video/renders/`). Le dépôt est public : chaque fichier a un
+lien de téléchargement direct, utilisable aussi par RapidoCMS (`upload_file_tool`).
+
+- Dossier sur GitHub : https://github.com/PrendsTaPart/Video/tree/feat/bd-video/bd-video/renders
+- Film complet : https://media.githubusercontent.com/media/PrendsTaPart/Video/feat/bd-video/bd-video/renders/film/film.mp4
+- Épisodes : https://media.githubusercontent.com/media/PrendsTaPart/Video/feat/bd-video/bd-video/renders/episodes/ep01.mp4 … `ep06.mp4`
+- Déclinaisons : même préfixe `https://media.githubusercontent.com/media/PrendsTaPart/Video/feat/bd-video/bd-video/renders/` + le chemin indiqué dans [`declinaisons.md`](declinaisons.md)
+
+Les rendus muets intermédiaires (`*-video.mp4`) et les aperçus (`previews/`) restent hors Git.
 
 ## Relancer
 
