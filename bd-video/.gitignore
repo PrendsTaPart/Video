@@ -1,5 +1,9 @@
 figma/cache/
-renders/
+# Vidéos finales versionnées en LFS ; on écarte seulement les rendus muets intermédiaires et l'ancienne animatique
+renders/**/*-video.mp4
+renders/episodes/*animatique*
 montage/*/snapshots/
-montage/*/renders/
+montage/*/# Vidéos finales versionnées en LFS ; on écarte seulement les rendus muets intermédiaires et l'ancienne animatique
+renders/**/*-video.mp4
+renders/episodes/*animatique*
 previews/
