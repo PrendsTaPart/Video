@@ -232,7 +232,7 @@ def build(name):
         g = max(cast, key=lambda g: (g["hero"], g["end"] - g["start"]))
         who = next(s["speaker"] for s in g["shots"] if s["speaker"] and s["speaker"] != "MICKAEL")
         png = os.path.join(tmp, "perso.png")
-        card(png, [("Personnage du jour", BANGERS, 84, ORANGE), (who.title(), BANGERS, 130, YELLOW),
+        card(png, [("Personnage du jour", BANGERS, 84, ORANGE), ({"L'ASSISTANT IA": "L'assistant IA", "PLANI'T": "Plani't", "PRÉDIBOT": "PrédiBot"}.get(who, who.title()), BANGERS, 130, YELLOW),
                    (f"La Brigade augmentée · épisode {n}", COMIC, 46, WHITE)], logo=False)
         clip = b.clip(*ep.seg(g, 11.0))
         d = duration(clip)
@@ -332,7 +332,7 @@ def bonus():
         e, s = hit
         b = Builder(e, tmp)
         png = os.path.join(tmp, f"{slug(name)}.png")
-        card(png, [(name.title() if name != "L'ASSISTANT IA" else "L'assistant IA", BANGERS, 130, YELLOW), (role, BANGERS, 70, ORANGE),
+        card(png, [({"L'ASSISTANT IA": "L'assistant IA", "PLANI'T": "Plani't", "PRÉDIBOT": "PrédiBot"}.get(name, name.title()), BANGERS, 130, YELLOW), (role, BANGERS, 70, ORANGE),
                    ("La Brigade augmentée", COMIC, 46, WHITE)], logo=False)
         line = min(s["dur"] - TRIM_END, 9.0)  # la réplique entière, carton raccourci si elle est longue
         made.append(b.finish([b.still(png, max(1.5, 10.0 - line)), b.clip(s["start"], s["start"] + line)],

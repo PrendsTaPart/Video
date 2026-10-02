@@ -8,10 +8,11 @@ Coûts estimés puis réels, étape par étape. Aucune génération payante n'es
 | 0 · Audit du dépôt | ffprobe, webrtcvad (local) | 0 $ | 0 $ | ✅ fait |
 | 1 · Extraction Figma | Figma MCP (lecture seule, compris dans l'abonnement) | 0 $ | 0 $ | ✅ fait |
 | 2 · Voix + musique + bruitages | ElevenLabs | **≈ 5,00 $** (détail ci-dessous) | **4,20 $** | ✅ fait (validé le 2026-10-02) · 1 musique bloquée, voir plus bas |
-| 3A · Motion design | HyperFrames local | 0 $ | — | — |
-| 3B · Plans hero (≈ 21) | image-to-video ElevenLabs | à chiffrer | — | ⏸ un plan test d'abord |
-| 4 · Montage + rendu | HyperFrames local | 0 $ | 0 $ | 🔄 animatique ep01 en cours |
-| 6 · Brouillons | RapidoCMS | 0 $ | — | — |
+| 3A · Motion design | HyperFrames local | 0 $ | 0 $ | ✅ fait |
+| 3B · Plans hero (≈ 21) | image-to-video ElevenLabs | test : 0,84 $ (Kling 3 Pro, 5 s) · 1,20 $ (Veo 3.1 Fast, 8 s) · 1,21 $ (Seedance v2 Fast, 5 s) ; les 21 : 17,6 à 25,4 $ | 0 $ | ⏸ plan test en attente de validation |
+| 4 · Montage + rendu | HyperFrames local | 0 $ | 0 $ | ✅ film + 6 épisodes |
+| 5 · Déclinaisons | ffmpeg local | 0 $ | 0 $ | ✅ 79 fichiers |
+| 6 · Brouillons | RapidoCMS | 0 $ | 0 $ | ⏸ campagne créée, brouillons en attente |
 
 ## Volumes connus après l'étape 1 (pour chiffrer l'étape 2)
 

@@ -1,32 +1,40 @@
 # La Brigade augmentée — de la BD au film vertical
 
 La bande dessinée « La Brigade augmentée » (88 pages, Figma) transformée en film vertical TikTok,
-en épisodes et en déclinaisons réseaux. Travail par étapes, sur la branche `feat/bd-video`.
+en 6 épisodes et en déclinaisons réseaux. Travail par étapes, sur la branche `feat/bd-video`.
 
 | Étape | État | Livrables |
 |---|---|---|
 | 0 · Audit du dépôt | ✅ | [`AUDIT.md`](AUDIT.md), [`assets/catalog.json`](assets/catalog.json) |
 | 1 · Extraction Figma | ✅ | [`storyboard.json`](storyboard.json), `panels/`, `pages/`, `cast/`, `assets/logos/`, [`figma/extraction.json`](figma/extraction.json) |
-| 2 · Script et voix | ⏳ | `script.md`, `voices.json`, `audio/` |
-| 3 · Animation | — | `veo3_prompts.md` |
-| 4 · Montage | — | `renders/` |
-| 5 · Déclinaisons | — | `declinaisons.md` |
-| 6 · Brouillons RapidoCMS | — | `calendrier.csv` |
+| 2 · Script, voix, musique | ✅ (musique partie 3 manquante, voir BUDGET) | [`script.md`](script.md), [`voices.json`](voices.json), `audio/vo/` (236 répliques), `audio/music/`, `audio/sfx/` |
+| 3A · Motion design | ✅ | Ken Burns, bulles animées, cartouches, transitions de BD : `montage/*/index.html` |
+| 3B · Plans hero IA | ⏸ plan test en attente de validation | [`veo3_prompts.md`](veo3_prompts.md) (21 prompts) |
+| 4 · Montage et rendu | ✅ | `montage/<film\|epNN>/`, `renders/film/`, `renders/episodes/` |
+| 5 · Déclinaisons | ✅ | [`declinaisons.md`](declinaisons.md), `renders/tiktok/`, `instagram/`, `facebook/`, `linkedin/`, `bonus/` |
+| 6 · RapidoCMS | ⏸ campagne créée, brouillons en attente (comptes et hébergement à confirmer) | [`calendrier.csv`](calendrier.csv) |
 
-Coûts : [`BUDGET.md`](BUDGET.md).
+Coûts réels, poste par poste : [`BUDGET.md`](BUDGET.md) (étape 2 : 4,20 $ ; tout le reste a tourné en local, 0 $).
 
-## Ce que contient le dossier
+## Ce qui a été produit
 
-| Chemin | Contenu |
-|---|---|
-| `storyboard.json` | 290 plans dans l'ordre de lecture : page, case, partie, épisode, image, type (`recit` / `bulle` / `titre`), personnage, voix, texte, pastille, `hero`, durée estimée |
-| `panels/pXX-cN.{jpg,png}` | Dessins d'origine sans texte (152), tels qu'importés dans Figma : 880×1320 (portrait) pour les parties 1–2, 1376×768 (paysage) pour les parties 3–6. `panels/index.json` relie chaque fichier à son nœud Figma |
-| `pages/pXX.png` | Les 88 pages entières (794×1123), pour les plans « feuilletage » |
-| `cast/<id>.png` | Portraits ronds des 12 personnages à visage (416 px), plus les pastilles à initiale des rôles secondaires ; `cast/source/` garde les portraits d'origine non recadrés |
-| `assets/logos/` | Logos réels repris de la BD (FoodEatUp, Claude, OpenAI, Mistral, Plani't) : à utiliser tels quels |
-| `figma/extraction.json` | Texte brut extrait de Figma (récitatifs, bulles, pastilles, titres, cartes) avec les nœuds et les imageHash |
+- **Film complet** 9:16, 1080×1920, 30 fps, ~23 min : les 88 pages dans l'ordre, carton « À suivre… » entre les parties.
+- **6 épisodes** (Prologue + Partie 1, Partie 2 … Partie 6 + Épilogue), 3 à 4 min chacun : accroche de 2 s, carton,
+  plans du storyboard avec voix, bulles, musique et bruitages, fin « Une seule saisie, pas dix · Testez FoodEatUp ».
+- **Déclinaisons** coupées dans les épisodes : stories 15 s, reels 60–90 s, stories « personnage du jour » et « citation »,
+  LinkedIn 60–120 s en 9:16 et 4:5, séries bonus « personnages » (10 s × 14) et « une case, une fonction » (15 s × 16).
+  Liste complète : [`declinaisons.md`](declinaisons.md).
+- **Son** : 16 voix ElevenLabs existantes (aucune voix clonée), une prise par réplique ; musique baissée sous la voix
+  (sidechain) ; niveau final −14 LUFS.
 
-Images et audio sont suivis par **Git LFS** (`.gitattributes` à la racine).
+Règles tenues : aucun logo inventé (logos réels de Figma uniquement), aucun chiffre hors BD, aucune clé dans le dépôt,
+rien de publié ni de programmé.
+
+## Où sont les vidéos
+
+Les MP4 sont trop lourds pour Git (≈ 1,5 Go au total) : `renders/` et `previews/` sont ignorés. Ils se régénèrent
+entièrement en local (commandes ci-dessous) à partir de ce qui est versionné (images, voix, musiques en Git LFS).
+Lien de stockage externe : _à compléter une fois l'hébergement choisi_.
 
 ## Relancer
 
@@ -34,15 +42,44 @@ Images et audio sont suivis par **Git LFS** (`.gitattributes` à la racine).
 # Étape 0 — inventaire des médias du dépôt
 pip install webrtcvad-wheels && python3 bd-video/scripts/audit_media.py
 
-# Étape 1 — après avoir récupéré les URLs temporaires des outils Figma (download_assets) :
-#   lignes « page NN <url> » et « raw <url> » sur l'entrée standard
+# Étape 1 — Figma (URLs temporaires de download_assets sur l'entrée standard : « page NN <url> » / « raw <url> »)
 bd-video/scripts/fetch_figma_assets.sh < urls.txt
-python3 bd-video/scripts/build_panels.py      # range figma/cache → panels/
-python3 bd-video/scripts/build_storyboard.py  # extraction.json → storyboard.json
+python3 bd-video/scripts/build_panels.py
+python3 bd-video/scripts/build_storyboard.py
+
+# Étape 2 — script et voix
+python3 bd-video/scripts/build_script.py        # script.md, voices.json, audio/vo_manifest.json
+python3 bd-video/scripts/vo_batches.py plan      # 59 lots ElevenLabs (partie × voix)
+#   … génération ElevenLabs (vo_sessions.json garde les sessions), lots bruts dans audio/vo_raw/
+pip install faster-whisper
+python3 bd-video/scripts/vo_batches.py split     # une réplique par fichier, alignement Whisper
+
+# Étape 4 — montage et rendu (HyperFrames local, Chrome headless)
+python3 bd-video/scripts/build_montage.py all    # montage/<nom>/index.html + timeline.json
+export HYPERFRAMES_BROWSER_PATH=$(ls -d /opt/pw-browsers/chromium_headless_shell-*/*/headless_shell | head -1)
+bash bd-video/scripts/render_all.sh ep01 ep02 ep03 ep04 ep05 ep06 film   # rendu + mixage −14 LUFS + aperçu 720p
+
+# Étape 5 — déclinaisons
+python3 bd-video/scripts/declinaisons.py all
+python3 bd-video/scripts/declinaisons.py bonus
+python3 bd-video/scripts/declinaisons.py inventaire   # réécrit declinaisons.md
+
+# Étape 6 — calendrier proposé (rien n'est programmé)
+python3 bd-video/scripts/calendrier.py
 ```
 
-Le texte vient de `use_figma` en lecture seule, avec [`scripts/figma_extract.js`](scripts/figma_extract.js) ; le résultat est
-`figma/extraction.json`. L'imageHash Figma est le SHA-1 du fichier d'origine : c'est ce qui relie
-chaque image téléchargée à sa case.
+`mix_audio.py` peut se relancer seul sur un rendu muet : `python3 bd-video/scripts/mix_audio.py ep03 renders/episodes/ep03-video.mp4 renders/episodes/ep03.mp4`
+(par exemple après avoir ajouté `audio/music/partie3-energie.mp3`).
+
+## Contenu du dossier
+
+| Chemin | Contenu |
+|---|---|
+| `storyboard.json` | 290 plans dans l'ordre de lecture : page, case, partie, image, type (`recit` / `bulle` / `titre`), personnage, voix, texte, pastille, `hero` |
+| `panels/`, `pages/`, `cast/` | Dessins d'origine sans texte (152), pages entières (88), portraits et pastilles |
+| `assets/logos/`, `assets/fonts/` | Logos réels repris de la BD ; Bangers et Comic Neue en local |
+| `audio/vo/`, `audio/vo_raw/` | Répliques découpées (236) et lots bruts ElevenLabs avec leur transcription Whisper |
+| `montage/<nom>/` | Compositions HyperFrames (`index.html`) et `timeline.json` (départ de chaque plan) |
+| `scripts/` | Tous les outils ci-dessus |
 
 Fichier source : https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm (page « Guide A4 — Formation caisse »).
