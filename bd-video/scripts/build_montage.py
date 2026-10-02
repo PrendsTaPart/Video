@@ -38,7 +38,7 @@ EPISODES = {
              "hook": "L'IA propose, l'humain décide."},
     "ep06": {"parts": ["Partie 6 · Une infinité de solutions", "Épilogue", "Fermeture"], "hero": "panels/p82-c1.png",
              "hook": "Les solutions sont infinies."},
-    "film": {"parts": None, "hero": "panels/p01-c1.jpg", "hook": "D'une cuisine épuisée à une famille de restaurants."},
+    "film": {"parts": None, "a_suivre": True, "hero": "panels/p01-c1.jpg", "hook": "D'une cuisine épuisée à une famille de restaurants."},
 }
 # Pages dont l'image de page entière porte déjà le texte : on la montre telle quelle (pas de calque texte).
 PAGE_AS_IMAGE = {2, 3, 4, 54, 63, 74, 82, 88}
@@ -118,6 +118,14 @@ def build(name):
     prev_part = None
     for gi, g in enumerate(groups):
         gid = f"g{gi:03d}"
+        # Film complet : carton « À suivre… » entre deux parties (la page qui tourne se fait dessous).
+        if cfg.get("a_suivre") and prev_part not in (None, "Ouverture") and g["part"] != prev_part:
+            d = 1.4
+            body.append(f'''<div id="{gid}-next" class="clip scene" data-start="{t:.3f}" data-duration="{d}" data-track-index="8">
+  <div class="fill navy"></div><div class="partcard next"><div class="ptitle">À suivre…</div></div></div>''')
+            script.append(f'tl.fromTo("#{gid}-next .partcard",{{scale:0.7,opacity:0}},{{scale:1,opacity:1,duration:0.35,ease:"back.out(2)"}},{t:.3f});')
+            script.append(f'tl.to("#{gid}-next",{{opacity:0,duration:{TRANS}}},{t + d - TRANS:.3f});')
+            t += d
         g_start = max(0.0, t - (TRANS if gi else 0))
         g_dur = sum(s["dur"] for s in g["shots"]) + (TRANS if gi else 0)
         page_turn = prev_part is not None and g["part"] != prev_part
@@ -230,6 +238,8 @@ body{{margin:0;background:var(--navy);}}
 .kicker{{font-family:"Bangers";font-size:64px;color:var(--orange);letter-spacing:2px;}}
 .ptitle{{font-family:"Bangers";font-size:104px;line-height:1.0;color:var(--white);letter-spacing:1px;}}
 .titlecard{{left:{MARGIN}px;right:{SAFE_RIGHT}px;bottom:{SAFE_BOTTOM+60}px;background:var(--navy);border:6px solid var(--yellow);border-radius:28px;padding:28px 34px;}}
+.partcard.next{{text-align:center;}}
+.partcard.next .ptitle{{color:var(--yellow);}}
 .titlecard .ptitle{{font-size:76px;color:var(--yellow);}}
 .cartouche{{left:{MARGIN}px;right:{SAFE_RIGHT}px;top:{SAFE_TOP+20}px;background:var(--cream);border:5px solid var(--navy);border-radius:14px;padding:26px 30px;
   font-family:"Comic Neue";font-weight:700;font-size:44px;line-height:1.22;color:var(--navy);box-shadow:0 10px 0 rgba(0,0,0,.25);}}

@@ -32,6 +32,8 @@ MUSIC = {  # partie → fichier d'ambiance (étape 2)
     "Partie 6 · Une infinité de solutions": "partie6-lumineuse",
     "Épilogue": "epilogue-emotion", "Fermeture": "epilogue-emotion",
 }
+# Piste de remplacement tant qu'une ambiance manque (partie 3 non générée : voir BUDGET.md).
+MUSIC_FALLBACK = {"partie3-energie": "partie6-lumineuse"}
 SFX = {  # plan → (bruitage, décalage en s, volume)
     "p16-c1-01": ("sfx/telephone.mp3", 0.0, 0.7),
     "p15-c1-01": ("sfx/friture.mp3", 0.0, 0.5),
@@ -72,7 +74,10 @@ def main(name, video_in, video_out):
         a = parts.setdefault(s["part"], [s["start"], s["start"] + s["dur"]])
         a[1] = s["start"] + s["dur"]
     for part, (a, b) in parts.items():
-        f = os.path.join(ROOT, "audio", "music", f"{MUSIC.get(part, '')}.mp3")
+        key = MUSIC.get(part, "")
+        f = os.path.join(ROOT, "audio", "music", f"{key}.mp3")
+        if not os.path.exists(f) and key in MUSIC_FALLBACK:
+            f = os.path.join(ROOT, "audio", "music", f"{MUSIC_FALLBACK[key]}.mp3")
         if not os.path.exists(f):
             continue
         i = add_input(f)
