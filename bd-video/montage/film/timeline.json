@@ -1,0 +1,2916 @@
+{
+ "name": "film",
+ "duration": 1527.9,
+ "fps": 30,
+ "voice": false,
+ "hook": [
+  0,
+  2.2
+ ],
+ "end": [
+  1523.9,
+  4.0
+ ],
+ "shots": [
+  {
+   "id": "p01-c1-01",
+   "start": 2.2,
+   "dur": 8.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 1
+  },
+  {
+   "id": "p01-c1-02",
+   "start": 10.9,
+   "dur": 4.1,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 1
+  },
+  {
+   "id": "p02-c1-01",
+   "start": 15.0,
+   "dur": 8.8,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 2
+  },
+  {
+   "id": "p02-c1-02",
+   "start": 23.8,
+   "dur": 8.6,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 2
+  },
+  {
+   "id": "p02-c1-03",
+   "start": 32.4,
+   "dur": 8.9,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 2
+  },
+  {
+   "id": "p02-c1-04",
+   "start": 41.3,
+   "dur": 6.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 2
+  },
+  {
+   "id": "p03-c1-01",
+   "start": 48.0,
+   "dur": 4.0,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 3
+  },
+  {
+   "id": "p03-c1-02",
+   "start": 52.0,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 3
+  },
+  {
+   "id": "p03-c1-03",
+   "start": 55.2,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 3
+  },
+  {
+   "id": "p03-c1-04",
+   "start": 58.4,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": "lea",
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 3
+  },
+  {
+   "id": "p03-c1-05",
+   "start": 61.6,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 3
+  },
+  {
+   "id": "p03-c1-06",
+   "start": 64.8,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 3
+  },
+  {
+   "id": "p03-c1-07",
+   "start": 68.0,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": "nadia",
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 3
+  },
+  {
+   "id": "p03-c1-08",
+   "start": 71.2,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 3
+  },
+  {
+   "id": "p03-c1-09",
+   "start": 74.4,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 3
+  },
+  {
+   "id": "p04-c1-01",
+   "start": 77.6,
+   "dur": 5.8,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 4
+  },
+  {
+   "id": "p04-c1-02",
+   "start": 83.4,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": "predibot",
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 4
+  },
+  {
+   "id": "p04-c1-03",
+   "start": 86.6,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": "iris",
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 4
+  },
+  {
+   "id": "p04-c1-04",
+   "start": 89.8,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": "caroline",
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 4
+  },
+  {
+   "id": "p04-c1-05",
+   "start": 93.0,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": "jarvis",
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 4
+  },
+  {
+   "id": "p04-c1-06",
+   "start": 96.2,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 4
+  },
+  {
+   "id": "p04-c1-07",
+   "start": 99.4,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 4
+  },
+  {
+   "id": "p04-c1-08",
+   "start": 102.6,
+   "dur": 5.8,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Ouverture",
+   "page": 4
+  },
+  {
+   "id": "p05-c1-01",
+   "start": 108.4,
+   "dur": 12.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Prologue",
+   "page": 5
+  },
+  {
+   "id": "p06-c1-01",
+   "start": 120.6,
+   "dur": 6.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Prologue",
+   "page": 6
+  },
+  {
+   "id": "p06-c2-01",
+   "start": 126.6,
+   "dur": 7.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Prologue",
+   "page": 6
+  },
+  {
+   "id": "p07-c1-01",
+   "start": 134.3,
+   "dur": 7.6,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Prologue",
+   "page": 7
+  },
+  {
+   "id": "p07-c2-01",
+   "start": 141.9,
+   "dur": 3.0,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Prologue",
+   "page": 7
+  },
+  {
+   "id": "p07-c2-02",
+   "start": 144.9,
+   "dur": 2.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Prologue",
+   "page": 7
+  },
+  {
+   "id": "p08-c1-01",
+   "start": 146.9,
+   "dur": 3.4,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 8
+  },
+  {
+   "id": "p09-c1-01",
+   "start": 150.3,
+   "dur": 2.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 9
+  },
+  {
+   "id": "p09-c1-02",
+   "start": 152.7,
+   "dur": 2.8,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 9
+  },
+  {
+   "id": "p09-c2-01",
+   "start": 155.5,
+   "dur": 7.0,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 9
+  },
+  {
+   "id": "p10-c1-01",
+   "start": 162.5,
+   "dur": 5.1,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 10
+  },
+  {
+   "id": "p10-c2-01",
+   "start": 167.6,
+   "dur": 4.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 10
+  },
+  {
+   "id": "p11-c1-01",
+   "start": 172.4,
+   "dur": 5.9,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 11
+  },
+  {
+   "id": "p11-c2-01",
+   "start": 178.3,
+   "dur": 5.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 11
+  },
+  {
+   "id": "p12-c1-01",
+   "start": 183.4,
+   "dur": 6.0,
+   "type": "bulle",
+   "voice": "nadia",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 12
+  },
+  {
+   "id": "p12-c2-01",
+   "start": 189.4,
+   "dur": 7.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 12
+  },
+  {
+   "id": "p13-c1-01",
+   "start": 196.6,
+   "dur": 6.3,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 13
+  },
+  {
+   "id": "p13-c2-01",
+   "start": 202.9,
+   "dur": 4.7,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 13
+  },
+  {
+   "id": "p14-c1-01",
+   "start": 207.6,
+   "dur": 4.2,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 14
+  },
+  {
+   "id": "p14-c2-01",
+   "start": 211.8,
+   "dur": 2.0,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 14
+  },
+  {
+   "id": "p14-c2-02",
+   "start": 213.8,
+   "dur": 4.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 14
+  },
+  {
+   "id": "p15-c1-01",
+   "start": 217.8,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 15
+  },
+  {
+   "id": "p16-c1-01",
+   "start": 221.0,
+   "dur": 3.3,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 16
+  },
+  {
+   "id": "p16-c1-02",
+   "start": 224.3,
+   "dur": 5.1,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 16
+  },
+  {
+   "id": "p16-c2-01",
+   "start": 229.4,
+   "dur": 3.6,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 16
+  },
+  {
+   "id": "p17-c1-01",
+   "start": 233.0,
+   "dur": 3.5,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 17
+  },
+  {
+   "id": "p17-c2-01",
+   "start": 236.5,
+   "dur": 4.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 17
+  },
+  {
+   "id": "p18-c1-01",
+   "start": 240.9,
+   "dur": 4.8,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 18
+  },
+  {
+   "id": "p18-c2-01",
+   "start": 245.7,
+   "dur": 5.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 18
+  },
+  {
+   "id": "p19-c1-01",
+   "start": 251.1,
+   "dur": 5.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 19
+  },
+  {
+   "id": "p19-c1-02",
+   "start": 256.2,
+   "dur": 3.3,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 19
+  },
+  {
+   "id": "p19-c2-01",
+   "start": 259.5,
+   "dur": 2.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 19
+  },
+  {
+   "id": "p20-c1-01",
+   "start": 262.0,
+   "dur": 3.0,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 20
+  },
+  {
+   "id": "p20-c2-01",
+   "start": 265.0,
+   "dur": 3.4,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 20
+  },
+  {
+   "id": "p21-c1-01",
+   "start": 268.4,
+   "dur": 2.2,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 21
+  },
+  {
+   "id": "p21-c2-01",
+   "start": 270.6,
+   "dur": 5.3,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 21
+  },
+  {
+   "id": "p22-c1-01",
+   "start": 275.9,
+   "dur": 3.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 22
+  },
+  {
+   "id": "p23-c1-01",
+   "start": 279.6,
+   "dur": 2.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 23
+  },
+  {
+   "id": "p23-c1-02",
+   "start": 281.8,
+   "dur": 3.0,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 23
+  },
+  {
+   "id": "p23-c2-01",
+   "start": 284.8,
+   "dur": 5.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 23
+  },
+  {
+   "id": "p24-c1-01",
+   "start": 289.9,
+   "dur": 3.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 24
+  },
+  {
+   "id": "p24-c1-02",
+   "start": 292.9,
+   "dur": 3.8,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 24
+  },
+  {
+   "id": "p24-c2-01",
+   "start": 296.7,
+   "dur": 3.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 24
+  },
+  {
+   "id": "p25-c1-01",
+   "start": 299.9,
+   "dur": 4.7,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 25
+  },
+  {
+   "id": "p25-c2-01",
+   "start": 304.6,
+   "dur": 5.8,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 25
+  },
+  {
+   "id": "p26-c1-01",
+   "start": 310.4,
+   "dur": 3.9,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 26
+  },
+  {
+   "id": "p26-c2-01",
+   "start": 314.3,
+   "dur": 3.6,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 26
+  },
+  {
+   "id": "p27-c1-01",
+   "start": 317.9,
+   "dur": 7.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 27
+  },
+  {
+   "id": "p28-c1-01",
+   "start": 325.3,
+   "dur": 10.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 28
+  },
+  {
+   "id": "p28-c2-01",
+   "start": 336.0,
+   "dur": 2.1,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 28
+  },
+  {
+   "id": "p28-c2-02",
+   "start": 338.1,
+   "dur": 3.2,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 28
+  },
+  {
+   "id": "p29-c1-01",
+   "start": 341.3,
+   "dur": 6.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 29
+  },
+  {
+   "id": "p29-c2-01",
+   "start": 348.0,
+   "dur": 5.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 29
+  },
+  {
+   "id": "p30-c1-01",
+   "start": 353.5,
+   "dur": 6.8,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 30
+  },
+  {
+   "id": "p31-c1-01",
+   "start": 360.3,
+   "dur": 2.7,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 31
+  },
+  {
+   "id": "p31-c1-02",
+   "start": 363.0,
+   "dur": 2.7,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 31
+  },
+  {
+   "id": "p31-c2-01",
+   "start": 365.7,
+   "dur": 3.4,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 31
+  },
+  {
+   "id": "p32-c1-01",
+   "start": 369.1,
+   "dur": 3.6,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 32
+  },
+  {
+   "id": "p33-c1-01",
+   "start": 372.7,
+   "dur": 2.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 33
+  },
+  {
+   "id": "p33-c1-02",
+   "start": 375.1,
+   "dur": 3.7,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 33
+  },
+  {
+   "id": "p33-c2-01",
+   "start": 378.8,
+   "dur": 9.1,
+   "type": "bulle",
+   "voice": "predibot",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 33
+  },
+  {
+   "id": "p34-c1-01",
+   "start": 387.9,
+   "dur": 4.4,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 34
+  },
+  {
+   "id": "p34-c2-01",
+   "start": 392.3,
+   "dur": 6.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 34
+  },
+  {
+   "id": "p35-c1-01",
+   "start": 398.3,
+   "dur": 5.0,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 35
+  },
+  {
+   "id": "p35-c2-01",
+   "start": 403.3,
+   "dur": 4.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 35
+  },
+  {
+   "id": "p36-c1-01",
+   "start": 407.3,
+   "dur": 5.7,
+   "type": "bulle",
+   "voice": "nadia",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 36
+  },
+  {
+   "id": "p36-c2-01",
+   "start": 413.0,
+   "dur": 4.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 36
+  },
+  {
+   "id": "p37-c1-01",
+   "start": 417.7,
+   "dur": 7.3,
+   "type": "bulle",
+   "voice": "iris",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 37
+  },
+  {
+   "id": "p37-c1-02",
+   "start": 425.0,
+   "dur": 2.0,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 37
+  },
+  {
+   "id": "p37-c2-01",
+   "start": 427.0,
+   "dur": 5.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 37
+  },
+  {
+   "id": "p38-c1-01",
+   "start": 432.1,
+   "dur": 4.7,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 38
+  },
+  {
+   "id": "p38-c2-01",
+   "start": 436.8,
+   "dur": 3.6,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 38
+  },
+  {
+   "id": "p39-c1-01",
+   "start": 440.4,
+   "dur": 3.9,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 39
+  },
+  {
+   "id": "p40-c1-01",
+   "start": 444.3,
+   "dur": 6.5,
+   "type": "bulle",
+   "voice": "caroline",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 40
+  },
+  {
+   "id": "p40-c2-01",
+   "start": 450.8,
+   "dur": 4.3,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 40
+  },
+  {
+   "id": "p41-c1-01",
+   "start": 455.1,
+   "dur": 2.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 41
+  },
+  {
+   "id": "p41-c2-01",
+   "start": 457.8,
+   "dur": 4.6,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 41
+  },
+  {
+   "id": "p41-c2-02",
+   "start": 462.4,
+   "dur": 3.0,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 41
+  },
+  {
+   "id": "p42-c1-01",
+   "start": 465.4,
+   "dur": 3.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 42
+  },
+  {
+   "id": "p42-c2-01",
+   "start": 469.2,
+   "dur": 3.6,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 42
+  },
+  {
+   "id": "p43-c1-01",
+   "start": 472.8,
+   "dur": 5.0,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 43
+  },
+  {
+   "id": "p43-c2-01",
+   "start": 477.8,
+   "dur": 2.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 43
+  },
+  {
+   "id": "p44-c1-01",
+   "start": 480.2,
+   "dur": 6.7,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 44
+  },
+  {
+   "id": "p44-c2-01",
+   "start": 486.9,
+   "dur": 4.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 44
+  },
+  {
+   "id": "p45-c1-01",
+   "start": 491.7,
+   "dur": 4.2,
+   "type": "bulle",
+   "voice": "jarvis",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 45
+  },
+  {
+   "id": "p45-c2-01",
+   "start": 495.9,
+   "dur": 5.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 45
+  },
+  {
+   "id": "p46-c1-01",
+   "start": 501.3,
+   "dur": 5.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 46
+  },
+  {
+   "id": "p47-c1-01",
+   "start": 507.0,
+   "dur": 2.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 47
+  },
+  {
+   "id": "p47-c1-02",
+   "start": 509.5,
+   "dur": 3.7,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 47
+  },
+  {
+   "id": "p47-c2-01",
+   "start": 513.2,
+   "dur": 6.3,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 47
+  },
+  {
+   "id": "p48-c1-01",
+   "start": 519.5,
+   "dur": 4.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 48
+  },
+  {
+   "id": "p48-c1-02",
+   "start": 523.5,
+   "dur": 4.2,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 48
+  },
+  {
+   "id": "p48-c2-01",
+   "start": 527.7,
+   "dur": 5.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 48
+  },
+  {
+   "id": "p49-c1-01",
+   "start": 532.9,
+   "dur": 3.2,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 49
+  },
+  {
+   "id": "p49-c1-02",
+   "start": 536.1,
+   "dur": 5.7,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 49
+  },
+  {
+   "id": "p49-c2-01",
+   "start": 541.8,
+   "dur": 4.0,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 49
+  },
+  {
+   "id": "p50-c1-01",
+   "start": 545.8,
+   "dur": 4.6,
+   "type": "bulle",
+   "voice": "nadia",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 50
+  },
+  {
+   "id": "p50-c2-01",
+   "start": 550.4,
+   "dur": 5.2,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 50
+  },
+  {
+   "id": "p51-c1-01",
+   "start": 555.6,
+   "dur": 6.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 51
+  },
+  {
+   "id": "p52-c1-01",
+   "start": 561.6,
+   "dur": 2.5,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 52
+  },
+  {
+   "id": "p52-c2-01",
+   "start": 564.1,
+   "dur": 2.5,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 52
+  },
+  {
+   "id": "p53-c1-01",
+   "start": 566.6,
+   "dur": 11.5,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 53
+  },
+  {
+   "id": "p54-c1-01",
+   "start": 578.1,
+   "dur": 4.5,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 54
+  },
+  {
+   "id": "p54-c1-02",
+   "start": 582.6,
+   "dur": 11.0,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 54
+  },
+  {
+   "id": "p54-c1-03",
+   "start": 593.6,
+   "dur": 2.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 54
+  },
+  {
+   "id": "p55-c1-01",
+   "start": 596.3,
+   "dur": 6.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 55
+  },
+  {
+   "id": "p55-c1-02",
+   "start": 602.8,
+   "dur": 5.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 55
+  },
+  {
+   "id": "p55-c1-03",
+   "start": 607.8,
+   "dur": 4.5,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 55
+  },
+  {
+   "id": "p55-c2-01",
+   "start": 612.3,
+   "dur": 5.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 55
+  },
+  {
+   "id": "p55-c2-02",
+   "start": 617.8,
+   "dur": 7.6,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 55
+  },
+  {
+   "id": "p55-c2-03",
+   "start": 625.4,
+   "dur": 6.0,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 55
+  },
+  {
+   "id": "p56-c1-01",
+   "start": 631.4,
+   "dur": 5.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 56
+  },
+  {
+   "id": "p56-c1-02",
+   "start": 637.1,
+   "dur": 7.1,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 56
+  },
+  {
+   "id": "p56-c2-01",
+   "start": 644.2,
+   "dur": 3.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 56
+  },
+  {
+   "id": "p56-c2-02",
+   "start": 647.2,
+   "dur": 5.7,
+   "type": "bulle",
+   "voice": "la-cliente",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 56
+  },
+  {
+   "id": "p57-c1-01",
+   "start": 652.9,
+   "dur": 4.9,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 57
+  },
+  {
+   "id": "p57-c1-02",
+   "start": 657.8,
+   "dur": 6.2,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 57
+  },
+  {
+   "id": "p57-c1-03",
+   "start": 664.0,
+   "dur": 5.5,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 57
+  },
+  {
+   "id": "p57-c2-01",
+   "start": 669.5,
+   "dur": 5.9,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 57
+  },
+  {
+   "id": "p57-c2-02",
+   "start": 675.4,
+   "dur": 5.5,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 57
+  },
+  {
+   "id": "p58-c1-01",
+   "start": 680.9,
+   "dur": 5.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 58
+  },
+  {
+   "id": "p58-c1-02",
+   "start": 686.3,
+   "dur": 2.8,
+   "type": "bulle",
+   "voice": "une-passante",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 58
+  },
+  {
+   "id": "p58-c2-01",
+   "start": 689.1,
+   "dur": 5.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 58
+  },
+  {
+   "id": "p58-c2-02",
+   "start": 694.8,
+   "dur": 5.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 58
+  },
+  {
+   "id": "p59-c1-01",
+   "start": 699.8,
+   "dur": 5.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 59
+  },
+  {
+   "id": "p59-c1-02",
+   "start": 705.3,
+   "dur": 3.7,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 59
+  },
+  {
+   "id": "p59-c1-03",
+   "start": 709.0,
+   "dur": 4.2,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 59
+  },
+  {
+   "id": "p59-c2-01",
+   "start": 713.2,
+   "dur": 5.9,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 59
+  },
+  {
+   "id": "p59-c2-02",
+   "start": 719.1,
+   "dur": 3.8,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 59
+  },
+  {
+   "id": "p60-c1-01",
+   "start": 722.9,
+   "dur": 6.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 60
+  },
+  {
+   "id": "p60-c1-02",
+   "start": 728.9,
+   "dur": 4.7,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 60
+  },
+  {
+   "id": "p60-c1-03",
+   "start": 733.6,
+   "dur": 3.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 60
+  },
+  {
+   "id": "p60-c2-01",
+   "start": 736.6,
+   "dur": 4.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 60
+  },
+  {
+   "id": "p60-c2-02",
+   "start": 741.3,
+   "dur": 5.5,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 60
+  },
+  {
+   "id": "p61-c1-01",
+   "start": 746.8,
+   "dur": 5.9,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 61
+  },
+  {
+   "id": "p61-c1-02",
+   "start": 752.7,
+   "dur": 2.6,
+   "type": "bulle",
+   "voice": "le-petit",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 61
+  },
+  {
+   "id": "p61-c1-03",
+   "start": 755.3,
+   "dur": 2.8,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 61
+  },
+  {
+   "id": "p61-c2-01",
+   "start": 758.1,
+   "dur": 6.3,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 61
+  },
+  {
+   "id": "p61-c2-02",
+   "start": 764.4,
+   "dur": 4.0,
+   "type": "bulle",
+   "voice": "la-cliente",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 61
+  },
+  {
+   "id": "p61-c2-03",
+   "start": 768.4,
+   "dur": 2.5,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 61
+  },
+  {
+   "id": "p62-c1-01",
+   "start": 770.9,
+   "dur": 5.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 62
+  },
+  {
+   "id": "p62-c1-02",
+   "start": 776.3,
+   "dur": 4.8,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 62
+  },
+  {
+   "id": "p62-c1-03",
+   "start": 781.1,
+   "dur": 6.5,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 62
+  },
+  {
+   "id": "p62-c2-01",
+   "start": 787.6,
+   "dur": 6.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 62
+  },
+  {
+   "id": "p62-c2-02",
+   "start": 793.8,
+   "dur": 2.9,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 62
+  },
+  {
+   "id": "p63-c1-01",
+   "start": 796.7,
+   "dur": 4.2,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 63
+  },
+  {
+   "id": "p63-c1-02",
+   "start": 800.9,
+   "dur": 12.4,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 63
+  },
+  {
+   "id": "p63-c1-03",
+   "start": 813.3,
+   "dur": 2.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 63
+  },
+  {
+   "id": "p64-c1-01",
+   "start": 816.0,
+   "dur": 7.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 64
+  },
+  {
+   "id": "p64-c1-02",
+   "start": 823.0,
+   "dur": 5.9,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 64
+  },
+  {
+   "id": "p64-c1-03",
+   "start": 828.9,
+   "dur": 5.7,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 64
+  },
+  {
+   "id": "p64-c2-01",
+   "start": 834.6,
+   "dur": 4.6,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 64
+  },
+  {
+   "id": "p64-c2-02",
+   "start": 839.2,
+   "dur": 8.3,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 64
+  },
+  {
+   "id": "p64-c2-03",
+   "start": 847.5,
+   "dur": 3.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 64
+  },
+  {
+   "id": "p65-c1-01",
+   "start": 850.5,
+   "dur": 9.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 65
+  },
+  {
+   "id": "p65-c1-02",
+   "start": 860.2,
+   "dur": 7.7,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 65
+  },
+  {
+   "id": "p65-c1-03",
+   "start": 867.9,
+   "dur": 6.0,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 65
+  },
+  {
+   "id": "p65-c2-01",
+   "start": 873.9,
+   "dur": 5.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 65
+  },
+  {
+   "id": "p65-c2-02",
+   "start": 879.0,
+   "dur": 3.1,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 65
+  },
+  {
+   "id": "p65-c2-03",
+   "start": 882.1,
+   "dur": 5.6,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 65
+  },
+  {
+   "id": "p66-c1-01",
+   "start": 887.7,
+   "dur": 7.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 66
+  },
+  {
+   "id": "p66-c1-02",
+   "start": 894.8,
+   "dur": 7.3,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 66
+  },
+  {
+   "id": "p66-c2-01",
+   "start": 902.1,
+   "dur": 2.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 66
+  },
+  {
+   "id": "p66-c2-02",
+   "start": 904.5,
+   "dur": 5.1,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 66
+  },
+  {
+   "id": "p66-c2-03",
+   "start": 909.6,
+   "dur": 4.2,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 66
+  },
+  {
+   "id": "p67-c1-01",
+   "start": 913.8,
+   "dur": 7.3,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 67
+  },
+  {
+   "id": "p67-c1-02",
+   "start": 921.1,
+   "dur": 7.8,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 67
+  },
+  {
+   "id": "p67-c2-01",
+   "start": 928.9,
+   "dur": 4.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 67
+  },
+  {
+   "id": "p67-c2-02",
+   "start": 933.6,
+   "dur": 5.1,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 67
+  },
+  {
+   "id": "p67-c2-03",
+   "start": 938.7,
+   "dur": 3.9,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 67
+  },
+  {
+   "id": "p68-c1-01",
+   "start": 942.6,
+   "dur": 4.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 68
+  },
+  {
+   "id": "p68-c1-02",
+   "start": 947.4,
+   "dur": 5.5,
+   "type": "bulle",
+   "voice": "la-cliente",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 68
+  },
+  {
+   "id": "p68-c2-01",
+   "start": 952.9,
+   "dur": 4.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 68
+  },
+  {
+   "id": "p68-c2-02",
+   "start": 957.4,
+   "dur": 3.4,
+   "type": "bulle",
+   "voice": "le-client",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 68
+  },
+  {
+   "id": "p68-c2-03",
+   "start": 960.8,
+   "dur": 4.0,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 68
+  },
+  {
+   "id": "p69-c1-01",
+   "start": 964.8,
+   "dur": 6.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 69
+  },
+  {
+   "id": "p69-c1-02",
+   "start": 971.6,
+   "dur": 6.5,
+   "type": "bulle",
+   "voice": "caroline",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 69
+  },
+  {
+   "id": "p69-c1-03",
+   "start": 978.1,
+   "dur": 3.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 69
+  },
+  {
+   "id": "p69-c2-01",
+   "start": 981.1,
+   "dur": 3.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 69
+  },
+  {
+   "id": "p69-c2-02",
+   "start": 984.9,
+   "dur": 4.5,
+   "type": "bulle",
+   "voice": "le-client",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 69
+  },
+  {
+   "id": "p70-c1-01",
+   "start": 989.4,
+   "dur": 6.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 70
+  },
+  {
+   "id": "p70-c1-02",
+   "start": 995.5,
+   "dur": 5.5,
+   "type": "bulle",
+   "voice": "la-cliente",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 70
+  },
+  {
+   "id": "p70-c2-01",
+   "start": 1001.0,
+   "dur": 6.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 70
+  },
+  {
+   "id": "p70-c2-02",
+   "start": 1007.4,
+   "dur": 6.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 70
+  },
+  {
+   "id": "p71-c1-01",
+   "start": 1013.4,
+   "dur": 4.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 71
+  },
+  {
+   "id": "p71-c1-02",
+   "start": 1018.2,
+   "dur": 8.7,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 71
+  },
+  {
+   "id": "p71-c2-01",
+   "start": 1026.9,
+   "dur": 4.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 71
+  },
+  {
+   "id": "p71-c2-02",
+   "start": 1031.0,
+   "dur": 3.1,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 71
+  },
+  {
+   "id": "p72-c1-01",
+   "start": 1034.1,
+   "dur": 5.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 72
+  },
+  {
+   "id": "p72-c1-02",
+   "start": 1039.8,
+   "dur": 7.0,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 72
+  },
+  {
+   "id": "p72-c1-03",
+   "start": 1046.8,
+   "dur": 3.5,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 72
+  },
+  {
+   "id": "p72-c2-01",
+   "start": 1050.3,
+   "dur": 3.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 72
+  },
+  {
+   "id": "p72-c2-02",
+   "start": 1053.8,
+   "dur": 5.0,
+   "type": "bulle",
+   "voice": "le-client",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 72
+  },
+  {
+   "id": "p73-c1-01",
+   "start": 1058.8,
+   "dur": 6.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 73
+  },
+  {
+   "id": "p73-c1-02",
+   "start": 1065.3,
+   "dur": 7.3,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 73
+  },
+  {
+   "id": "p73-c1-03",
+   "start": 1072.6,
+   "dur": 2.0,
+   "type": "bulle",
+   "voice": "la-franchisee",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 73
+  },
+  {
+   "id": "p73-c2-01",
+   "start": 1074.6,
+   "dur": 4.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 73
+  },
+  {
+   "id": "p73-c2-02",
+   "start": 1079.3,
+   "dur": 6.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 73
+  },
+  {
+   "id": "p74-c1-01",
+   "start": 1085.3,
+   "dur": 4.6,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 74
+  },
+  {
+   "id": "p74-c1-02",
+   "start": 1089.9,
+   "dur": 8.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 74
+  },
+  {
+   "id": "p74-c1-03",
+   "start": 1098.6,
+   "dur": 2.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 74
+  },
+  {
+   "id": "p75-c1-01",
+   "start": 1101.3,
+   "dur": 7.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 75
+  },
+  {
+   "id": "p75-c1-02",
+   "start": 1109.0,
+   "dur": 5.7,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 75
+  },
+  {
+   "id": "p75-c1-03",
+   "start": 1114.7,
+   "dur": 4.5,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 75
+  },
+  {
+   "id": "p75-c2-01",
+   "start": 1119.2,
+   "dur": 7.3,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 75
+  },
+  {
+   "id": "p75-c2-02",
+   "start": 1126.5,
+   "dur": 5.3,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 75
+  },
+  {
+   "id": "p76-c1-01",
+   "start": 1131.8,
+   "dur": 6.6,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 76
+  },
+  {
+   "id": "p76-c1-02",
+   "start": 1138.4,
+   "dur": 7.2,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 76
+  },
+  {
+   "id": "p76-c2-01",
+   "start": 1145.6,
+   "dur": 6.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 76
+  },
+  {
+   "id": "p76-c2-02",
+   "start": 1152.4,
+   "dur": 8.9,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 76
+  },
+  {
+   "id": "p77-c1-01",
+   "start": 1161.3,
+   "dur": 5.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 77
+  },
+  {
+   "id": "p77-c1-02",
+   "start": 1167.1,
+   "dur": 6.7,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 77
+  },
+  {
+   "id": "p77-c2-01",
+   "start": 1173.8,
+   "dur": 5.6,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 77
+  },
+  {
+   "id": "p77-c2-02",
+   "start": 1179.4,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 77
+  },
+  {
+   "id": "p77-c2-03",
+   "start": 1182.6,
+   "dur": 6.0,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 77
+  },
+  {
+   "id": "p77-c2-04",
+   "start": 1188.6,
+   "dur": 2.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 77
+  },
+  {
+   "id": "p78-c1-01",
+   "start": 1190.6,
+   "dur": 5.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 78
+  },
+  {
+   "id": "p78-c1-02",
+   "start": 1195.8,
+   "dur": 4.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 78
+  },
+  {
+   "id": "p78-c1-03",
+   "start": 1199.8,
+   "dur": 7.2,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 78
+  },
+  {
+   "id": "p78-c2-01",
+   "start": 1207.0,
+   "dur": 6.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 78
+  },
+  {
+   "id": "p78-c2-02",
+   "start": 1213.5,
+   "dur": 5.5,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 78
+  },
+  {
+   "id": "p79-c1-01",
+   "start": 1219.0,
+   "dur": 5.6,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 79
+  },
+  {
+   "id": "p79-c1-02",
+   "start": 1224.6,
+   "dur": 8.0,
+   "type": "bulle",
+   "voice": "nadia",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 79
+  },
+  {
+   "id": "p79-c2-01",
+   "start": 1232.6,
+   "dur": 6.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 79
+  },
+  {
+   "id": "p79-c2-02",
+   "start": 1239.3,
+   "dur": 7.2,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 79
+  },
+  {
+   "id": "p80-c1-01",
+   "start": 1246.5,
+   "dur": 7.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 80
+  },
+  {
+   "id": "p80-c1-02",
+   "start": 1253.6,
+   "dur": 7.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 80
+  },
+  {
+   "id": "p80-c2-01",
+   "start": 1260.6,
+   "dur": 5.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 80
+  },
+  {
+   "id": "p80-c2-02",
+   "start": 1266.3,
+   "dur": 4.2,
+   "type": "bulle",
+   "voice": "la-nouvelle",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 80
+  },
+  {
+   "id": "p81-c1-01",
+   "start": 1270.5,
+   "dur": 4.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 81
+  },
+  {
+   "id": "p81-c1-02",
+   "start": 1274.7,
+   "dur": 7.5,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 81
+  },
+  {
+   "id": "p81-c2-01",
+   "start": 1282.2,
+   "dur": 4.9,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 81
+  },
+  {
+   "id": "p81-c2-02",
+   "start": 1287.1,
+   "dur": 3.8,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 81
+  },
+  {
+   "id": "p81-c2-03",
+   "start": 1290.9,
+   "dur": 2.9,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 81
+  },
+  {
+   "id": "p82-c1-01",
+   "start": 1293.8,
+   "dur": 4.5,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 82
+  },
+  {
+   "id": "p82-c1-02",
+   "start": 1298.3,
+   "dur": 12.6,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 82
+  },
+  {
+   "id": "p82-c1-03",
+   "start": 1310.9,
+   "dur": 2.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 82
+  },
+  {
+   "id": "p83-c1-01",
+   "start": 1313.6,
+   "dur": 6.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 83
+  },
+  {
+   "id": "p83-c1-02",
+   "start": 1320.1,
+   "dur": 7.1,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 83
+  },
+  {
+   "id": "p83-c2-01",
+   "start": 1327.2,
+   "dur": 8.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 83
+  },
+  {
+   "id": "p83-c2-02",
+   "start": 1336.0,
+   "dur": 4.0,
+   "type": "bulle",
+   "voice": "la-pizzaiolo",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 83
+  },
+  {
+   "id": "p84-c1-01",
+   "start": 1340.0,
+   "dur": 6.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 84
+  },
+  {
+   "id": "p84-c1-02",
+   "start": 1346.2,
+   "dur": 7.2,
+   "type": "bulle",
+   "voice": "le-traiteur",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 84
+  },
+  {
+   "id": "p84-c2-01",
+   "start": 1353.4,
+   "dur": 7.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 84
+  },
+  {
+   "id": "p84-c2-02",
+   "start": 1360.4,
+   "dur": 5.5,
+   "type": "bulle",
+   "voice": "la-comptable",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 84
+  },
+  {
+   "id": "p85-c1-01",
+   "start": 1365.9,
+   "dur": 7.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 85
+  },
+  {
+   "id": "p85-c1-02",
+   "start": 1372.9,
+   "dur": 5.2,
+   "type": "bulle",
+   "voice": "la-boulangere",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 85
+  },
+  {
+   "id": "p85-c2-01",
+   "start": 1378.1,
+   "dur": 6.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 85
+  },
+  {
+   "id": "p85-c2-02",
+   "start": 1384.5,
+   "dur": 6.2,
+   "type": "bulle",
+   "voice": "le-food-truck",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 85
+  },
+  {
+   "id": "p86-c1-01",
+   "start": 1390.7,
+   "dur": 6.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 86
+  },
+  {
+   "id": "p86-c1-02",
+   "start": 1397.5,
+   "dur": 2.3,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 86
+  },
+  {
+   "id": "p86-c1-03",
+   "start": 1399.8,
+   "dur": 3.5,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 86
+  },
+  {
+   "id": "p86-c2-01",
+   "start": 1403.3,
+   "dur": 8.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 86
+  },
+  {
+   "id": "p86-c2-02",
+   "start": 1411.7,
+   "dur": 4.2,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 86
+  },
+  {
+   "id": "p87-c1-01",
+   "start": 1415.9,
+   "dur": 4.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Épilogue",
+   "page": 87
+  },
+  {
+   "id": "p87-c1-02",
+   "start": 1420.6,
+   "dur": 6.5,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Épilogue",
+   "page": 87
+  },
+  {
+   "id": "p87-c2-01",
+   "start": 1427.1,
+   "dur": 6.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Épilogue",
+   "page": 87
+  },
+  {
+   "id": "p87-c2-02",
+   "start": 1433.9,
+   "dur": 4.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Épilogue",
+   "page": 87
+  },
+  {
+   "id": "p88-c1-01",
+   "start": 1437.9,
+   "dur": 2.5,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-02",
+   "start": 1440.4,
+   "dur": 27.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-03",
+   "start": 1468.1,
+   "dur": 7.6,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-04",
+   "start": 1475.7,
+   "dur": 9.6,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-05",
+   "start": 1485.3,
+   "dur": 8.1,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-06",
+   "start": 1493.4,
+   "dur": 8.1,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-07",
+   "start": 1501.5,
+   "dur": 9.3,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-08",
+   "start": 1510.8,
+   "dur": 7.8,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-09",
+   "start": 1518.6,
+   "dur": 5.3,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  }
+ ]
+}

@@ -1,0 +1,446 @@
+{
+ "name": "ep03",
+ "duration": 224.8,
+ "fps": 30,
+ "voice": false,
+ "hook": [
+  0,
+  2.2
+ ],
+ "end": [
+  220.8,
+  4.0
+ ],
+ "shots": [
+  {
+   "id": "p54-c1-01",
+   "start": 2.2,
+   "dur": 4.5,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 54
+  },
+  {
+   "id": "p54-c1-02",
+   "start": 6.7,
+   "dur": 11.0,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 54
+  },
+  {
+   "id": "p54-c1-03",
+   "start": 17.7,
+   "dur": 2.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 54
+  },
+  {
+   "id": "p55-c1-01",
+   "start": 20.4,
+   "dur": 6.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 55
+  },
+  {
+   "id": "p55-c1-02",
+   "start": 26.9,
+   "dur": 5.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 55
+  },
+  {
+   "id": "p55-c1-03",
+   "start": 31.9,
+   "dur": 4.5,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 55
+  },
+  {
+   "id": "p55-c2-01",
+   "start": 36.4,
+   "dur": 5.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 55
+  },
+  {
+   "id": "p55-c2-02",
+   "start": 41.9,
+   "dur": 7.6,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 55
+  },
+  {
+   "id": "p55-c2-03",
+   "start": 49.5,
+   "dur": 6.0,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 55
+  },
+  {
+   "id": "p56-c1-01",
+   "start": 55.5,
+   "dur": 5.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 56
+  },
+  {
+   "id": "p56-c1-02",
+   "start": 61.2,
+   "dur": 7.1,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 56
+  },
+  {
+   "id": "p56-c2-01",
+   "start": 68.3,
+   "dur": 3.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 56
+  },
+  {
+   "id": "p56-c2-02",
+   "start": 71.3,
+   "dur": 5.7,
+   "type": "bulle",
+   "voice": "la-cliente",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 56
+  },
+  {
+   "id": "p57-c1-01",
+   "start": 77.0,
+   "dur": 4.9,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 57
+  },
+  {
+   "id": "p57-c1-02",
+   "start": 81.9,
+   "dur": 6.2,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 57
+  },
+  {
+   "id": "p57-c1-03",
+   "start": 88.1,
+   "dur": 5.5,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 57
+  },
+  {
+   "id": "p57-c2-01",
+   "start": 93.6,
+   "dur": 5.9,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 57
+  },
+  {
+   "id": "p57-c2-02",
+   "start": 99.5,
+   "dur": 5.5,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 57
+  },
+  {
+   "id": "p58-c1-01",
+   "start": 105.0,
+   "dur": 5.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 58
+  },
+  {
+   "id": "p58-c1-02",
+   "start": 110.4,
+   "dur": 2.8,
+   "type": "bulle",
+   "voice": "une-passante",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 58
+  },
+  {
+   "id": "p58-c2-01",
+   "start": 113.2,
+   "dur": 5.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 58
+  },
+  {
+   "id": "p58-c2-02",
+   "start": 118.9,
+   "dur": 5.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 58
+  },
+  {
+   "id": "p59-c1-01",
+   "start": 123.9,
+   "dur": 5.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 59
+  },
+  {
+   "id": "p59-c1-02",
+   "start": 129.4,
+   "dur": 3.7,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 59
+  },
+  {
+   "id": "p59-c1-03",
+   "start": 133.1,
+   "dur": 4.2,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 59
+  },
+  {
+   "id": "p59-c2-01",
+   "start": 137.3,
+   "dur": 5.9,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 59
+  },
+  {
+   "id": "p59-c2-02",
+   "start": 143.2,
+   "dur": 3.8,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 59
+  },
+  {
+   "id": "p60-c1-01",
+   "start": 147.0,
+   "dur": 6.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 60
+  },
+  {
+   "id": "p60-c1-02",
+   "start": 153.0,
+   "dur": 4.7,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 60
+  },
+  {
+   "id": "p60-c1-03",
+   "start": 157.7,
+   "dur": 3.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 60
+  },
+  {
+   "id": "p60-c2-01",
+   "start": 160.7,
+   "dur": 4.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 60
+  },
+  {
+   "id": "p60-c2-02",
+   "start": 165.4,
+   "dur": 5.5,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 60
+  },
+  {
+   "id": "p61-c1-01",
+   "start": 170.9,
+   "dur": 5.9,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 61
+  },
+  {
+   "id": "p61-c1-02",
+   "start": 176.8,
+   "dur": 2.6,
+   "type": "bulle",
+   "voice": "le-petit",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 61
+  },
+  {
+   "id": "p61-c1-03",
+   "start": 179.4,
+   "dur": 2.8,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 61
+  },
+  {
+   "id": "p61-c2-01",
+   "start": 182.2,
+   "dur": 6.3,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 61
+  },
+  {
+   "id": "p61-c2-02",
+   "start": 188.5,
+   "dur": 4.0,
+   "type": "bulle",
+   "voice": "la-cliente",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 61
+  },
+  {
+   "id": "p61-c2-03",
+   "start": 192.5,
+   "dur": 2.5,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 61
+  },
+  {
+   "id": "p62-c1-01",
+   "start": 195.0,
+   "dur": 5.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 62
+  },
+  {
+   "id": "p62-c1-02",
+   "start": 200.4,
+   "dur": 4.8,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 62
+  },
+  {
+   "id": "p62-c1-03",
+   "start": 205.2,
+   "dur": 6.5,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 62
+  },
+  {
+   "id": "p62-c2-01",
+   "start": 211.7,
+   "dur": 6.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 62
+  },
+  {
+   "id": "p62-c2-02",
+   "start": 217.9,
+   "dur": 2.9,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 3 · La brigade passe à l'écran",
+   "page": 62
+  }
+ ]
+}

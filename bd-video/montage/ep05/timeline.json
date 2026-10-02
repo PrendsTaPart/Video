@@ -1,0 +1,376 @@
+{
+ "name": "ep05",
+ "duration": 214.7,
+ "fps": 30,
+ "voice": false,
+ "hook": [
+  0,
+  2.2
+ ],
+ "end": [
+  210.7,
+  4.0
+ ],
+ "shots": [
+  {
+   "id": "p74-c1-01",
+   "start": 2.2,
+   "dur": 4.6,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 74
+  },
+  {
+   "id": "p74-c1-02",
+   "start": 6.8,
+   "dur": 8.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 74
+  },
+  {
+   "id": "p74-c1-03",
+   "start": 15.5,
+   "dur": 2.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 74
+  },
+  {
+   "id": "p75-c1-01",
+   "start": 18.2,
+   "dur": 7.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 75
+  },
+  {
+   "id": "p75-c1-02",
+   "start": 25.9,
+   "dur": 5.7,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 75
+  },
+  {
+   "id": "p75-c1-03",
+   "start": 31.6,
+   "dur": 4.5,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 75
+  },
+  {
+   "id": "p75-c2-01",
+   "start": 36.1,
+   "dur": 7.3,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 75
+  },
+  {
+   "id": "p75-c2-02",
+   "start": 43.4,
+   "dur": 5.3,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 75
+  },
+  {
+   "id": "p76-c1-01",
+   "start": 48.7,
+   "dur": 6.6,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 76
+  },
+  {
+   "id": "p76-c1-02",
+   "start": 55.3,
+   "dur": 7.2,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 76
+  },
+  {
+   "id": "p76-c2-01",
+   "start": 62.5,
+   "dur": 6.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 76
+  },
+  {
+   "id": "p76-c2-02",
+   "start": 69.3,
+   "dur": 8.9,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 76
+  },
+  {
+   "id": "p77-c1-01",
+   "start": 78.2,
+   "dur": 5.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 77
+  },
+  {
+   "id": "p77-c1-02",
+   "start": 84.0,
+   "dur": 6.7,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 77
+  },
+  {
+   "id": "p77-c2-01",
+   "start": 90.7,
+   "dur": 5.6,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 77
+  },
+  {
+   "id": "p77-c2-02",
+   "start": 96.3,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 77
+  },
+  {
+   "id": "p77-c2-03",
+   "start": 99.5,
+   "dur": 6.0,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 77
+  },
+  {
+   "id": "p77-c2-04",
+   "start": 105.5,
+   "dur": 2.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 77
+  },
+  {
+   "id": "p78-c1-01",
+   "start": 107.5,
+   "dur": 5.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 78
+  },
+  {
+   "id": "p78-c1-02",
+   "start": 112.7,
+   "dur": 4.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 78
+  },
+  {
+   "id": "p78-c1-03",
+   "start": 116.7,
+   "dur": 7.2,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 78
+  },
+  {
+   "id": "p78-c2-01",
+   "start": 123.9,
+   "dur": 6.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 78
+  },
+  {
+   "id": "p78-c2-02",
+   "start": 130.4,
+   "dur": 5.5,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 78
+  },
+  {
+   "id": "p79-c1-01",
+   "start": 135.9,
+   "dur": 5.6,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 79
+  },
+  {
+   "id": "p79-c1-02",
+   "start": 141.5,
+   "dur": 8.0,
+   "type": "bulle",
+   "voice": "nadia",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 79
+  },
+  {
+   "id": "p79-c2-01",
+   "start": 149.5,
+   "dur": 6.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 79
+  },
+  {
+   "id": "p79-c2-02",
+   "start": 156.2,
+   "dur": 7.2,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 79
+  },
+  {
+   "id": "p80-c1-01",
+   "start": 163.4,
+   "dur": 7.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 80
+  },
+  {
+   "id": "p80-c1-02",
+   "start": 170.5,
+   "dur": 7.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 80
+  },
+  {
+   "id": "p80-c2-01",
+   "start": 177.5,
+   "dur": 5.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 80
+  },
+  {
+   "id": "p80-c2-02",
+   "start": 183.2,
+   "dur": 4.2,
+   "type": "bulle",
+   "voice": "la-nouvelle",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 80
+  },
+  {
+   "id": "p81-c1-01",
+   "start": 187.4,
+   "dur": 4.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 81
+  },
+  {
+   "id": "p81-c1-02",
+   "start": 191.6,
+   "dur": 7.5,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 81
+  },
+  {
+   "id": "p81-c2-01",
+   "start": 199.1,
+   "dur": 4.9,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 81
+  },
+  {
+   "id": "p81-c2-02",
+   "start": 204.0,
+   "dur": 3.8,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 81
+  },
+  {
+   "id": "p81-c2-03",
+   "start": 207.8,
+   "dur": 2.9,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 5 · Le laboratoire et les agents",
+   "page": 81
+  }
+ ]
+}

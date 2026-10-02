@@ -1,0 +1,586 @@
+{
+ "name": "ep01",
+ "duration": 269.3,
+ "fps": 30,
+ "voice": false,
+ "hook": [
+  0,
+  2.2
+ ],
+ "end": [
+  265.3,
+  4.0
+ ],
+ "shots": [
+  {
+   "id": "p05-c1-01",
+   "start": 4.6,
+   "dur": 12.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Prologue",
+   "page": 5
+  },
+  {
+   "id": "p06-c1-01",
+   "start": 16.8,
+   "dur": 6.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Prologue",
+   "page": 6
+  },
+  {
+   "id": "p06-c2-01",
+   "start": 22.8,
+   "dur": 7.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Prologue",
+   "page": 6
+  },
+  {
+   "id": "p07-c1-01",
+   "start": 30.5,
+   "dur": 7.6,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Prologue",
+   "page": 7
+  },
+  {
+   "id": "p07-c2-01",
+   "start": 38.1,
+   "dur": 3.0,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Prologue",
+   "page": 7
+  },
+  {
+   "id": "p07-c2-02",
+   "start": 41.1,
+   "dur": 2.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Prologue",
+   "page": 7
+  },
+  {
+   "id": "p08-c1-01",
+   "start": 43.1,
+   "dur": 3.4,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 8
+  },
+  {
+   "id": "p09-c1-01",
+   "start": 46.5,
+   "dur": 2.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 9
+  },
+  {
+   "id": "p09-c1-02",
+   "start": 48.9,
+   "dur": 2.8,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 9
+  },
+  {
+   "id": "p09-c2-01",
+   "start": 51.7,
+   "dur": 7.0,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 9
+  },
+  {
+   "id": "p10-c1-01",
+   "start": 58.7,
+   "dur": 5.1,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 10
+  },
+  {
+   "id": "p10-c2-01",
+   "start": 63.8,
+   "dur": 4.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 10
+  },
+  {
+   "id": "p11-c1-01",
+   "start": 68.6,
+   "dur": 5.9,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 11
+  },
+  {
+   "id": "p11-c2-01",
+   "start": 74.5,
+   "dur": 5.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 11
+  },
+  {
+   "id": "p12-c1-01",
+   "start": 79.6,
+   "dur": 6.0,
+   "type": "bulle",
+   "voice": "nadia",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 12
+  },
+  {
+   "id": "p12-c2-01",
+   "start": 85.6,
+   "dur": 7.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 12
+  },
+  {
+   "id": "p13-c1-01",
+   "start": 92.8,
+   "dur": 6.3,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 13
+  },
+  {
+   "id": "p13-c2-01",
+   "start": 99.1,
+   "dur": 4.7,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 13
+  },
+  {
+   "id": "p14-c1-01",
+   "start": 103.8,
+   "dur": 4.2,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 14
+  },
+  {
+   "id": "p14-c2-01",
+   "start": 108.0,
+   "dur": 2.0,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 14
+  },
+  {
+   "id": "p14-c2-02",
+   "start": 110.0,
+   "dur": 4.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 14
+  },
+  {
+   "id": "p15-c1-01",
+   "start": 114.0,
+   "dur": 3.2,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 15
+  },
+  {
+   "id": "p16-c1-01",
+   "start": 117.2,
+   "dur": 3.3,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 16
+  },
+  {
+   "id": "p16-c1-02",
+   "start": 120.5,
+   "dur": 5.1,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 16
+  },
+  {
+   "id": "p16-c2-01",
+   "start": 125.6,
+   "dur": 3.6,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 16
+  },
+  {
+   "id": "p17-c1-01",
+   "start": 129.2,
+   "dur": 3.5,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 17
+  },
+  {
+   "id": "p17-c2-01",
+   "start": 132.7,
+   "dur": 4.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 17
+  },
+  {
+   "id": "p18-c1-01",
+   "start": 137.1,
+   "dur": 4.8,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 18
+  },
+  {
+   "id": "p18-c2-01",
+   "start": 141.9,
+   "dur": 5.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 18
+  },
+  {
+   "id": "p19-c1-01",
+   "start": 147.3,
+   "dur": 5.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 19
+  },
+  {
+   "id": "p19-c1-02",
+   "start": 152.4,
+   "dur": 3.3,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 19
+  },
+  {
+   "id": "p19-c2-01",
+   "start": 155.7,
+   "dur": 2.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 19
+  },
+  {
+   "id": "p20-c1-01",
+   "start": 158.2,
+   "dur": 3.0,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 20
+  },
+  {
+   "id": "p20-c2-01",
+   "start": 161.2,
+   "dur": 3.4,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 20
+  },
+  {
+   "id": "p21-c1-01",
+   "start": 164.6,
+   "dur": 2.2,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 21
+  },
+  {
+   "id": "p21-c2-01",
+   "start": 166.8,
+   "dur": 5.3,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 21
+  },
+  {
+   "id": "p22-c1-01",
+   "start": 172.1,
+   "dur": 3.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 22
+  },
+  {
+   "id": "p23-c1-01",
+   "start": 175.8,
+   "dur": 2.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 23
+  },
+  {
+   "id": "p23-c1-02",
+   "start": 178.0,
+   "dur": 3.0,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 23
+  },
+  {
+   "id": "p23-c2-01",
+   "start": 181.0,
+   "dur": 5.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 23
+  },
+  {
+   "id": "p24-c1-01",
+   "start": 186.1,
+   "dur": 3.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 24
+  },
+  {
+   "id": "p24-c1-02",
+   "start": 189.1,
+   "dur": 3.8,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 24
+  },
+  {
+   "id": "p24-c2-01",
+   "start": 192.9,
+   "dur": 3.2,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 24
+  },
+  {
+   "id": "p25-c1-01",
+   "start": 196.1,
+   "dur": 4.7,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 25
+  },
+  {
+   "id": "p25-c2-01",
+   "start": 200.8,
+   "dur": 5.8,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 25
+  },
+  {
+   "id": "p26-c1-01",
+   "start": 206.6,
+   "dur": 3.9,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 26
+  },
+  {
+   "id": "p26-c2-01",
+   "start": 210.5,
+   "dur": 3.6,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 26
+  },
+  {
+   "id": "p27-c1-01",
+   "start": 214.1,
+   "dur": 7.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 27
+  },
+  {
+   "id": "p28-c1-01",
+   "start": 221.5,
+   "dur": 10.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 28
+  },
+  {
+   "id": "p28-c2-01",
+   "start": 232.2,
+   "dur": 2.1,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 28
+  },
+  {
+   "id": "p28-c2-02",
+   "start": 234.3,
+   "dur": 3.2,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 28
+  },
+  {
+   "id": "p29-c1-01",
+   "start": 237.5,
+   "dur": 6.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 29
+  },
+  {
+   "id": "p29-c2-01",
+   "start": 244.2,
+   "dur": 5.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 29
+  },
+  {
+   "id": "p30-c1-01",
+   "start": 249.7,
+   "dur": 6.8,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 30
+  },
+  {
+   "id": "p31-c1-01",
+   "start": 256.5,
+   "dur": 2.7,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 31
+  },
+  {
+   "id": "p31-c1-02",
+   "start": 259.2,
+   "dur": 2.7,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 31
+  },
+  {
+   "id": "p31-c2-01",
+   "start": 261.9,
+   "dur": 3.4,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 1 · Une journée sans FoodEatUp",
+   "page": 31
+  }
+ ]
+}

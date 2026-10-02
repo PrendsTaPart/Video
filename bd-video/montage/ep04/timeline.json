@@ -1,0 +1,546 @@
+{
+ "name": "ep04",
+ "duration": 294.8,
+ "fps": 30,
+ "voice": false,
+ "hook": [
+  0,
+  2.2
+ ],
+ "end": [
+  290.8,
+  4.0
+ ],
+ "shots": [
+  {
+   "id": "p63-c1-01",
+   "start": 2.2,
+   "dur": 4.2,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 63
+  },
+  {
+   "id": "p63-c1-02",
+   "start": 6.4,
+   "dur": 12.4,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 63
+  },
+  {
+   "id": "p63-c1-03",
+   "start": 18.8,
+   "dur": 2.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 63
+  },
+  {
+   "id": "p64-c1-01",
+   "start": 21.5,
+   "dur": 7.0,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 64
+  },
+  {
+   "id": "p64-c1-02",
+   "start": 28.5,
+   "dur": 5.9,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 64
+  },
+  {
+   "id": "p64-c1-03",
+   "start": 34.4,
+   "dur": 5.7,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 64
+  },
+  {
+   "id": "p64-c2-01",
+   "start": 40.1,
+   "dur": 4.6,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 64
+  },
+  {
+   "id": "p64-c2-02",
+   "start": 44.7,
+   "dur": 8.3,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 64
+  },
+  {
+   "id": "p64-c2-03",
+   "start": 53.0,
+   "dur": 3.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 64
+  },
+  {
+   "id": "p65-c1-01",
+   "start": 56.0,
+   "dur": 9.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 65
+  },
+  {
+   "id": "p65-c1-02",
+   "start": 65.7,
+   "dur": 7.7,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 65
+  },
+  {
+   "id": "p65-c1-03",
+   "start": 73.4,
+   "dur": 6.0,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 65
+  },
+  {
+   "id": "p65-c2-01",
+   "start": 79.4,
+   "dur": 5.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 65
+  },
+  {
+   "id": "p65-c2-02",
+   "start": 84.5,
+   "dur": 3.1,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 65
+  },
+  {
+   "id": "p65-c2-03",
+   "start": 87.6,
+   "dur": 5.6,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 65
+  },
+  {
+   "id": "p66-c1-01",
+   "start": 93.2,
+   "dur": 7.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 66
+  },
+  {
+   "id": "p66-c1-02",
+   "start": 100.3,
+   "dur": 7.3,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 66
+  },
+  {
+   "id": "p66-c2-01",
+   "start": 107.6,
+   "dur": 2.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 66
+  },
+  {
+   "id": "p66-c2-02",
+   "start": 110.0,
+   "dur": 5.1,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 66
+  },
+  {
+   "id": "p66-c2-03",
+   "start": 115.1,
+   "dur": 4.2,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 66
+  },
+  {
+   "id": "p67-c1-01",
+   "start": 119.3,
+   "dur": 7.3,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 67
+  },
+  {
+   "id": "p67-c1-02",
+   "start": 126.6,
+   "dur": 7.8,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 67
+  },
+  {
+   "id": "p67-c2-01",
+   "start": 134.4,
+   "dur": 4.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 67
+  },
+  {
+   "id": "p67-c2-02",
+   "start": 139.1,
+   "dur": 5.1,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 67
+  },
+  {
+   "id": "p67-c2-03",
+   "start": 144.2,
+   "dur": 3.9,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 67
+  },
+  {
+   "id": "p68-c1-01",
+   "start": 148.1,
+   "dur": 4.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 68
+  },
+  {
+   "id": "p68-c1-02",
+   "start": 152.9,
+   "dur": 5.5,
+   "type": "bulle",
+   "voice": "la-cliente",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 68
+  },
+  {
+   "id": "p68-c2-01",
+   "start": 158.4,
+   "dur": 4.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 68
+  },
+  {
+   "id": "p68-c2-02",
+   "start": 162.9,
+   "dur": 3.4,
+   "type": "bulle",
+   "voice": "le-client",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 68
+  },
+  {
+   "id": "p68-c2-03",
+   "start": 166.3,
+   "dur": 4.0,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 68
+  },
+  {
+   "id": "p69-c1-01",
+   "start": 170.3,
+   "dur": 6.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 69
+  },
+  {
+   "id": "p69-c1-02",
+   "start": 177.1,
+   "dur": 6.5,
+   "type": "bulle",
+   "voice": "caroline",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 69
+  },
+  {
+   "id": "p69-c1-03",
+   "start": 183.6,
+   "dur": 3.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 69
+  },
+  {
+   "id": "p69-c2-01",
+   "start": 186.6,
+   "dur": 3.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 69
+  },
+  {
+   "id": "p69-c2-02",
+   "start": 190.4,
+   "dur": 4.5,
+   "type": "bulle",
+   "voice": "le-client",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 69
+  },
+  {
+   "id": "p70-c1-01",
+   "start": 194.9,
+   "dur": 6.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 70
+  },
+  {
+   "id": "p70-c1-02",
+   "start": 201.0,
+   "dur": 5.5,
+   "type": "bulle",
+   "voice": "la-cliente",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 70
+  },
+  {
+   "id": "p70-c2-01",
+   "start": 206.5,
+   "dur": 6.4,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 70
+  },
+  {
+   "id": "p70-c2-02",
+   "start": 212.9,
+   "dur": 6.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 70
+  },
+  {
+   "id": "p71-c1-01",
+   "start": 218.9,
+   "dur": 4.8,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 71
+  },
+  {
+   "id": "p71-c1-02",
+   "start": 223.7,
+   "dur": 8.7,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 71
+  },
+  {
+   "id": "p71-c2-01",
+   "start": 232.4,
+   "dur": 4.1,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 71
+  },
+  {
+   "id": "p71-c2-02",
+   "start": 236.5,
+   "dur": 3.1,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 71
+  },
+  {
+   "id": "p72-c1-01",
+   "start": 239.6,
+   "dur": 5.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 72
+  },
+  {
+   "id": "p72-c1-02",
+   "start": 245.3,
+   "dur": 7.0,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 72
+  },
+  {
+   "id": "p72-c1-03",
+   "start": 252.3,
+   "dur": 3.5,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 72
+  },
+  {
+   "id": "p72-c2-01",
+   "start": 255.8,
+   "dur": 3.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 72
+  },
+  {
+   "id": "p72-c2-02",
+   "start": 259.3,
+   "dur": 5.0,
+   "type": "bulle",
+   "voice": "le-client",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 72
+  },
+  {
+   "id": "p73-c1-01",
+   "start": 264.3,
+   "dur": 6.5,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 73
+  },
+  {
+   "id": "p73-c1-02",
+   "start": 270.8,
+   "dur": 7.3,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 73
+  },
+  {
+   "id": "p73-c1-03",
+   "start": 278.1,
+   "dur": 2.0,
+   "type": "bulle",
+   "voice": "la-franchisee",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 73
+  },
+  {
+   "id": "p73-c2-01",
+   "start": 280.1,
+   "dur": 4.7,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 73
+  },
+  {
+   "id": "p73-c2-02",
+   "start": 284.8,
+   "dur": 6.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": false,
+   "part": "Partie 4 · Expansion & franchise",
+   "page": 73
+  }
+ ]
+}
