@@ -11,6 +11,8 @@ Fichiers produits (renders/<réseau>/) :
   instagram/reel-epNN.mp4               60–90 s best-of de la partie
   instagram/story-epNN-{1,2,3}-*.mp4    3 × 15 s  teaser, personnage du jour, citation
   linkedin/linkedin-epNN-{9x16,4x5}.mp4 60–120 s angle métier, texte à l'écran (lecture sans le son)
+  bonus/personnages/<nom>.mp4           10 s  carton nom + rôle, puis une réplique du personnage
+  bonus/une-case-une-fonction/NN-*.mp4  15 s  une fonctionnalité FoodEatUp par case    (argument : bonus)
   facebook/…                            liens vers les fichiers Instagram (mêmes vidéos, légendes adaptées)
 """
 import json
@@ -148,12 +150,14 @@ class Builder:
         cmd = ["ffmpeg", "-v", "error", "-y", "-loop", "1", "-t", f"{d:.3f}", "-i", png]
         if audio_from is not None:
             cmd += ["-ss", f"{audio_from:.3f}", "-t", f"{d:.3f}", "-i", self.ep.video]
-            amap = ["-map", "1:a", "-af", f"aformat=sample_rates=48000:channel_layouts=stereo,afade=t=in:d=0.2,afade=t=out:st={max(0, d-0.5):.3f}:d=0.5"]
+            # la fin d'épisode ne dure que 4 s : on prolonge par du silence, puis fondu
+            amap = ["-map", "1:a", "-af", f"aformat=sample_rates=48000:channel_layouts=stereo,apad,atrim=0:{d:.3f},"
+                    f"afade=t=in:d=0.2,afade=t=out:st={max(0, min(d, 3.8)-0.6):.3f}:d=0.6"]
         else:
             cmd += ["-f", "lavfi", "-t", f"{d:.3f}", "-i", "anullsrc=r=48000:cl=stereo"]
             amap = ["-map", "1:a"]
         run(cmd + ["-map", "0:v", *amap, "-vf", f"fps={FPS},format=yuv420p,fade=t=in:d=0.25",
-                   "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-c:a", "aac", "-b:a", "192k", "-shortest", out])
+                   "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-c:a", "aac", "-b:a", "192k", "-t", f"{d:.3f}", out])
         return out
 
     def finish(self, pieces, dest, fmt="9x16"):
@@ -272,8 +276,114 @@ def build(name):
     return made
 
 
+# Bonus : une case, une fonction (15 s). Libellés repris du texte de la BD.
+FONCTIONS = [
+    ((33, 2), "Prévisions et commandes"), ((34, 2), "Réception contrôlée"), ((35, 1), "Températures et étiquettes"),
+    ((36, 1), "Planning"), ((36, 2), "Pointage au QR code"), ((41, 2), "La commande au bon poste"),
+    ((42, 2), "Commander et payer à table"), ((44, 1), "Allergènes depuis la recette"),
+    ((47, 2), "Stock mis à jour avec les ventes"), ((48, 2), "Dossier sanitaire prêt chaque jour"),
+    ((57, 2), "Diffuser sur les écrans"), ((58, 2), "La carte du soir, toute seule"),
+    ((65, 1), "Fiches techniques"), ((68, 2), "Une carte de fidélité partout"),
+    ((69, 1), "Agent vocal"), ((72, 1), "Relance des clients (avec accord)"),
+]
+# Bonus : personnages (10 s). Rôle et réplique tirés des cartes des pages 3 et 4.
+PERSONNAGES = [
+    ("MICKAEL", "Chef et fondateur", "p60-c1-03"), ("BERNARD", "Gérant · finances", "p38-c2-01"),
+    ("LÉA", "Cheffe de partie", "p35-c1-01"), ("KARIM", "Commis", "p34-c1-01"),
+    ("SOFIANE", "Responsable de salle", "p40-c2-01"), ("NADIA", "RH et plannings", "p36-c1-01"),
+    ("INÈS", "Marketing", "p57-c2-02"), ("THOMAS", "Directeur multi-sites", "p50-c2-01"),
+    ("PRÉDIBOT", "Prévisions et brief du jour", "p33-c2-01"), ("IRIS", "Communication", "p37-c1-01"),
+    ("CAROLINE", "Agent vocal", "p40-c1-01"), ("JARVIS", "Borne drive vocale", "p45-c1-01"),
+    ("L'ASSISTANT IA", "Claude, ChatGPT ou Le Chat", "p62-c1-03"), ("PLANI'T", "Le chef d'orchestre", "p77-c1-01"),
+]
+
+
+def slug(t):
+    t = t.lower()
+    for a, b in (("àâä", "a"), ("éèêë", "e"), ("îï", "i"), ("ôö", "o"), ("ùûü", "u"), ("ç", "c")):
+        for c in a:
+            t = t.replace(c, b)
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+
+
+def bonus():
+    eps = {n: Ep(n) for n in EP_NUM if os.path.exists(os.path.join(ROOT, "renders", "episodes", f"{n}.mp4"))}
+    tmp = tempfile.mkdtemp(prefix="decl-bonus-")
+    sig = os.path.join(tmp, "sig.png")
+    card(sig, [("Une seule saisie, pas dix.", BANGERS, 76, YELLOW), ("Testez FoodEatUp · Lien en bio", COMIC, 50, WHITE)])
+    rd = lambda *p: os.path.join(ROOT, "renders", "bonus", *p)
+    made = []
+    for i, (key, label) in enumerate(FONCTIONS, 1):
+        hit = next(((e, g) for e in eps.values() for g in e.groups if g["key"] == key), None)
+        if not hit:
+            continue
+        e, g = hit
+        b = Builder(e, tmp)
+        png = os.path.join(tmp, f"f{i}.png")
+        card(png, [("Une case, une fonction", BANGERS, 76, ORANGE)] + [(l, BANGERS, 96, YELLOW) for l in wrap(label, 18)], logo=False)
+        clip = b.clip(*e.seg(g, 10.5))
+        d = duration(clip)
+        made.append(b.finish([b.still(png, 2.0), clip, b.still(sig, max(2.0, 15.0 - 2.0 - d), audio_from=e.end0)],
+                             rd("une-case-une-fonction", f"{i:02d}-{slug(label)}.mp4")))
+    for name, role, sid in PERSONNAGES:
+        hit = next(((e, s) for e in eps.values() for g in e.groups for s in g["shots"] if s["id"] == sid), None)
+        if not hit:
+            continue
+        e, s = hit
+        b = Builder(e, tmp)
+        png = os.path.join(tmp, f"{slug(name)}.png")
+        card(png, [(name.title() if name != "L'ASSISTANT IA" else "L'assistant IA", BANGERS, 130, YELLOW), (role, BANGERS, 70, ORANGE),
+                   ("La Brigade augmentée", COMIC, 46, WHITE)], logo=False)
+        line = min(s["dur"] - TRIM_END, 9.0)  # la réplique entière, carton raccourci si elle est longue
+        made.append(b.finish([b.still(png, max(1.5, 10.0 - line)), b.clip(s["start"], s["start"] + line)],
+                             rd("personnages", f"{slug(name)}.mp4")))
+    shutil.rmtree(tmp)
+    for m in made:
+        print(f"  {os.path.relpath(m, ROOT)}  {duration(m):5.1f} s")
+
+
+
+def inventaire():
+    """Écrit declinaisons.md à partir des fichiers réellement présents dans renders/."""
+    nets = [("film", "Film complet (TikTok)"), ("episodes", "Épisodes (TikTok, version intégrale)"), ("tiktok", "TikTok Stories"),
+            ("instagram", "Instagram Reels et Stories"), ("facebook", "Facebook Reels et Stories (mêmes fichiers qu'Instagram)"),
+            ("linkedin", "LinkedIn"), ("bonus/personnages", "Bonus · série « personnages »"),
+            ("bonus/une-case-une-fonction", "Bonus · série « une case, une fonction »")]
+    out = ["# Déclinaisons par réseau", "",
+           "Généré par `python3 bd-video/scripts/declinaisons.py inventaire` à partir des fichiers de `renders/`.",
+           "Les vidéos ne sont pas dans Git (trop lourdes) : voir le README pour les relancer ou les récupérer.", ""]
+    total = 0
+    for d, title in nets:
+        path = os.path.join(ROOT, "renders", d)
+        if not os.path.isdir(path):
+            continue
+        files = sorted(f for f in os.listdir(path) if f.endswith(".mp4") and not f.endswith("-video.mp4") and "animatique" not in f)
+        if not files:
+            continue
+        out += [f"## {title}", "", "| Fichier | Format | Durée |", "|---|---|---:|"]
+        for f in files:
+            fp = os.path.join(path, f)
+            wh = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
+                                 "-of", "csv=p=0:s=x", fp], capture_output=True, text=True).stdout.strip()
+            d_s = duration(fp)
+            m, sec = divmod(round(d_s), 60)
+            note = " (lien)" if os.path.islink(fp) else ""
+            out.append(f"| `renders/{d}/{f}`{note} | {wh} | {m} min {sec:02d} s |" if m else f"| `renders/{d}/{f}`{note} | {wh} | {sec} s |")
+            total += 0 if os.path.islink(fp) else 1
+        out.append("")
+    out.insert(4, f"{total} fichiers vidéo distincts (les liens Facebook pointent vers les fichiers Instagram).\n")
+    open(os.path.join(ROOT, "declinaisons.md"), "w").write("\n".join(out))
+    print(f"declinaisons.md : {total} fichiers")
+
+
 if __name__ == "__main__":
     names = sys.argv[1:] or ["ep01"]
+    if names == ["inventaire"]:
+        inventaire()
+        names = []
+    if names == ["bonus"]:
+        bonus()
+        names = []
     if names == ["all"]:
         names = list(EP_NUM)
     for nm in names:
