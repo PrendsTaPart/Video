@@ -23,7 +23,7 @@ FILTERS = {  # traitement par voix IA
     "_ia": "aecho=0.7:0.5:12:0.18,highpass=f=120,treble=g=3",                          # léger timbre synthétique
 }
 MUSIC = {  # partie → fichier d'ambiance (étape 2)
-    "Ouverture": "ouverture", "Prologue": "prologue",
+    "Ouverture": "epilogue-emotion", "Prologue": "epilogue-emotion",  # le prologue répond à l'épilogue
     "Partie 1 · Une journée sans FoodEatUp": "partie1-tension",
     "Partie 2 · La même journée, avec FoodEatUp": "partie2-soulagement",
     "Partie 3 · La brigade passe à l'écran": "partie3-energie",

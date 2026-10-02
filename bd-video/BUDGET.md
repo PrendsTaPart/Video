@@ -7,7 +7,7 @@ Coûts estimés puis réels, étape par étape. Aucune génération payante n'es
 |---|---|---:|---:|---|
 | 0 · Audit du dépôt | ffprobe, webrtcvad (local) | 0 $ | 0 $ | ✅ fait |
 | 1 · Extraction Figma | Figma MCP (lecture seule, compris dans l'abonnement) | 0 $ | 0 $ | ✅ fait |
-| 2 · Voix + musique + bruitages | ElevenLabs | **≈ 5,00 $** (détail ci-dessous) | — | ⏸ en attente de validation |
+| 2 · Voix + musique + bruitages | ElevenLabs | **≈ 5,00 $** (détail ci-dessous) | **4,20 $** | ✅ fait (validé le 2026-10-02) · 1 musique bloquée, voir plus bas |
 | 3A · Motion design | HyperFrames local | 0 $ | — | — |
 | 3B · Plans hero (≈ 21) | image-to-video ElevenLabs | à chiffrer | — | ⏸ un plan test d'abord |
 | 4 · Montage + rendu | HyperFrames local | 0 $ | 0 $ | 🔄 animatique ep01 en cours |
@@ -41,3 +41,33 @@ Prix constaté : **0,165 $ pour 1 000 caractères** (162 caractères = 162 créd
 
 Les échantillons de casting (`audio/casting/`) sont les extraits gratuits fournis par ElevenLabs : 0 $.
 Aucune reprise n'est relancée sans accord ; une reprise d'une réplique coûte environ 0,001 à 0,004 $.
+
+## Coûts réels de l'étape 2 (relevés dans ElevenLabs, le 2026-10-02)
+
+Une seule prise par lot, aucune reprise relancée.
+
+| Poste | Détail | Réel |
+|---|---|---:|
+| Test de voix (p05) | 1 réplique | 0,028 $ |
+| Voix · Prologue | 2 lots | 0,098 $ |
+| Voix · Partie 1 | 8 lots | 0,589 $ |
+| Voix · Partie 2 | 13 lots | 0,495 $ |
+| Voix · Partie 3 | 8 lots | 0,556 $ |
+| Voix · Partie 4 | 13 lots | 0,710 $ |
+| Voix · Partie 5 | 9 lots | 0,498 $ |
+| Voix · Partie 6 + Épilogue | 6 lots | 0,325 $ |
+| **Sous-total voix** | 59 lots, 236 répliques | **3,30 $** |
+| Musique (eleven_music_v2_5, 90 s) | 6 pistes à 0,1485 $ (l'estimation annonçait 0,30 $) | 0,89 $ |
+| Bruitages (eleven_text_to_sound_v2) | 3 × 0,00275 $ | 0,01 $ |
+| **Total étape 2** | | **4,20 $** |
+
+Écart avec le devis voix (2,86 $) : +0,44 $. Il vient des balises `[long pause]` qui séparent les répliques d'un
+même lot (19 809 caractères facturés au lieu de 17 331). Ces balises rendent le téléchargement praticable :
+59 fichiers au lieu de 236.
+
+**Musique de la partie 3 (énergie) : pas générée.** L'appel a été refusé par le contrôle de permissions de la
+session, et je ne l'ai pas relancé. Prompt prêt à l'emploi (0,15 $ environ) :
+`Instrumental only, no vocals. 90 seconds. Energetic, upbeat funk-pop underscore for an animated comic about a
+restaurant going digital: slap bass, punchy drums, brass hits, playful synth plucks, 118 BPM, loopable, leaves
+room for voice-over.` → à enregistrer sous `audio/music/partie3-energie.mp3`.
+Le prologue et l'ouverture réutilisent la piste `epilogue-emotion` (effet de miroir avec la fin) : aucune piste en plus.
