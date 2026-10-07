@@ -1,0 +1,4686 @@
+[
+ {
+  "id": "58:364",
+  "n": "Page 01 · BD · Couverture",
+  "imgs": [
+   [
+    0,
+    "58:365",
+    "img:p01_1",
+    "2f9ee460af8032be28292404b430f11980c31f54",
+    794,
+    1123
+   ],
+   [
+    0,
+    "58:368",
+    "Rectangle",
+    "305e751649ab228f99f30bd6797aecb0fb952789",
+    230,
+    62
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "LA BRIGADE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "AUGMENTÉE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "D'une cuisine épuisée à une famille de restaurants : l'histoire d'une brigade augmentée"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "UNE BANDE DESSINÉE FOODEATUP"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Inspirée de l’histoire de Mickael, chef et fondateur"
+   ]
+  ]
+ },
+ {
+  "id": "98:348",
+  "n": "Page 02 · BD · Sommaire",
+  "imgs": [],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "AU MENU"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "La Brigade augmentée, en six parties"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "LES PERSONNAGES"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Une brigade, des humains, des agents IA"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "★"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "p. 3"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "PROLOGUE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Vingt ans de coups de feu"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "p. 5"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "UNE JOURNÉE SANS FOODEATUP"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "7 h 05 : le saumon a disparu"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "p. 8"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "LA MÊME JOURNÉE, AVEC FOODEATUP"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Une saisie, pas dix"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "p. 32"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "LA BRIGADE PASSE À L'ÉCRAN"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Tout le restaurant communique"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "p. 54"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "EXPANSION & FRANCHISE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "De trois maisons à une famille"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "p. 63"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "LE LABORATOIRE ET LES AGENTS"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Une donnée qui voyage partout"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "p. 74"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "UNE INFINITÉ DE SOLUTIONS"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "FoodEatUp connecté à tous vos outils"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "p. 82"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "ÉPILOGUE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Enfin, du temps pour vous"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "✓"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "p. 87"
+   ]
+  ]
+ },
+ {
+  "id": "98:415",
+  "n": "Page 03 · BD · Les personnages",
+  "imgs": [],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "LES PERSONNAGES"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "La brigade du Bistrot du Marché"
+   ],
+   [
+    0,
+    "C",
+    "MICKAEL",
+    "MICKAEL | CHEF ET FONDATEUR | Vingt ans de coups de feu. Il a créé FoodEatUp pour qu'aucun chef ne rate plus le dîner en famille.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "98:419"
+   ],
+   [
+    0,
+    "C",
+    "BERNARD",
+    "BERNARD | GÉRANT · FINANCES | Sa marge, il la veut plat par plat. Fâché avec la technique… au début.",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "98:424"
+   ],
+   [
+    0,
+    "C",
+    "LÉA",
+    "LÉA | CHEFFE DE PARTIE | Précise et intraitable sur l'hygiène. C'est elle qui forme les nouvelles équipes.",
+    "3a5f90d2cbf160421010da0ad58c8de927b357ed",
+    "98:429"
+   ],
+   [
+    0,
+    "C",
+    "KARIM",
+    "KARIM | COMMIS | Le plus jeune de la brigade. Commandes, réceptions, inventaires : il apprend vite.",
+    "4b83189fb3c9f2070f01af867ffc765ddd9beb5d",
+    "98:434"
+   ],
+   [
+    0,
+    "C",
+    "SOFIANE",
+    "SOFIANE | RESPONSABLE DE SALLE | Le sourire de la maison. Réservations, allergènes, fidélité : il a réponse à tout.",
+    "1dae5f164d2f5c98bcf123e5d87aebd90728e2fa",
+    "98:439"
+   ],
+   [
+    0,
+    "C",
+    "NADIA",
+    "NADIA | RH ET PLANNINGS | Elle connaît chaque équipier, ses heures et ses congés. Et maintenant, elle rentre à l'heure.",
+    "ae21252d33dcfc3f9e493d8681ae800387ae7f97",
+    "98:444"
+   ],
+   [
+    0,
+    "C",
+    "INÈS",
+    "INÈS | MARKETING | Posts, affiches, écrans, vidéos : c'est elle qui fait parler du Bistrot.",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "98:449"
+   ],
+   [
+    0,
+    "C",
+    "THOMAS",
+    "THOMAS | DIRECTEUR MULTI-SITES | Il pilote toutes les maisons. Les chiffres de la veille, il les veut à 8 h.",
+    "0165574af3e2027fce8e931ee8ff802889c39b6a",
+    "98:454"
+   ]
+  ]
+ },
+ {
+  "id": "98:458",
+  "n": "Page 04 · BD · L'équipe IA",
+  "imgs": [
+   [
+    0,
+    "98:486",
+    "Logo Claude",
+    "66953b22e4eea854b72dac4ffd5384f089421a67",
+    100,
+    28
+   ],
+   [
+    0,
+    "98:487",
+    "img:logo_openai",
+    "2c252e7a9e9e8425c9900a2571db93691774745b",
+    100,
+    26
+   ],
+   [
+    0,
+    "98:488",
+    "img:logo_mistral",
+    "69c974961877424cb5192c4b6472c912803c29ca",
+    72,
+    26
+   ],
+   [
+    0,
+    "98:493",
+    "img:logo_planit",
+    "d65d60b8c50842f81c2c2869ff0c02e317babc5c",
+    110,
+    110
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "L'ÉQUIPE IA"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Des agents qui ne dorment jamais… et qui demandent toujours avant d'agir"
+   ],
+   [
+    0,
+    "C",
+    "PRÉDIBOT",
+    "PRÉDIBOT | PRÉVISIONS ET BRIEF DU JOUR | Couverts, météo, ruptures : chaque matin, il prépare la journée et propose les commandes.",
+    "3d5a2cd6cbab0146c942acd95533590670319f0c",
+    "98:462"
+   ],
+   [
+    0,
+    "C",
+    "IRIS",
+    "IRIS | COMMUNICATION | Elle repère l'occasion (un stock à écouler, un jour creux) et propose le bon post au bon moment.",
+    "3b369a2997d43ccfd7b0ef80d6004ac17cfdad18",
+    "98:467"
+   ],
+   [
+    0,
+    "C",
+    "CAROLINE",
+    "CAROLINE | AGENT VOCAL | Elle décroche le téléphone pendant le coup de feu : réservations, commandes, questions.",
+    "ba6562cc247c86bf879389f202cbc81db4d9aa44",
+    "98:472"
+   ],
+   [
+    0,
+    "C",
+    "JARVIS",
+    "JARVIS | BORNE DRIVE VOCALE | Il prend les commandes à la voix au drive et les envoie en cuisine, confirmées par le client.",
+    "e454c1c8580d4f835fbb671eccc2999e41830d8c",
+    "98:477"
+   ],
+   [
+    0,
+    "C",
+    "L'ASSISTANT IA",
+    "L'ASSISTANT IA | CLAUDE, CHATGPT OU LE CHAT | Branché sur FoodEatUp par MCP, il répond à tout, prépare les rapports et lance les actions après validation.",
+    null,
+    null
+   ],
+   [
+    0,
+    "C",
+    "PLANI'T",
+    "PLANI'T | LE CHEF D'ORCHESTRE | Il enchaîne les agents en routines (brief du matin, commandes, campagnes) et garde l'humain aux commandes.",
+    null,
+    null
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Les agents proposent, l'humain décide. Toute action importante attend votre validation."
+   ]
+  ]
+ },
+ {
+  "id": "58:374",
+  "n": "Page 05 · BD · Je m'appelle Mickael. Vingt an",
+  "imgs": [
+   [
+    0,
+    "58:375",
+    "img:p02_1",
+    "95860d15bdbfff7d7c9bf461413c0faff156bfe3",
+    794,
+    1123
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "R",
+    null,
+    "Je m'appelle Mickael. Vingt ans en cuisine. Des milliers de services. Et une question qui ne m'a jamais quitté : pourquoi tenir un restaurant est-il si épuisant ?"
+   ]
+  ]
+ },
+ {
+  "id": "58:380",
+  "n": "Page 06 · BD · Tout a commencé au fond d'une ",
+  "imgs": [
+   [
+    1,
+    "58:382",
+    "img:p03_1",
+    "54bcadb76796d36dd613c1216f465473ab248c8f",
+    758,
+    536
+   ],
+   [
+    2,
+    "58:386",
+    "img:p03_2",
+    "c7c90de6a2f34c75dce1ad77f6cf2feac4f64d04",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Tout a commencé au fond d'une grande brigade, un couteau d'office à la main."
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Des années plus tard, chef à mon tour… le jour je cuisinais, la nuit je faisais de l'administratif."
+   ]
+  ]
+ },
+ {
+  "id": "58:390",
+  "n": "Page 07 · BD · Factures, commandes, plannings",
+  "imgs": [
+   [
+    1,
+    "58:392",
+    "img:p04_1",
+    "22b797cebd0f9b08c327078508f87747d4a656e4",
+    758,
+    536
+   ],
+   [
+    2,
+    "58:396",
+    "img:p04_2",
+    "4ba22a584e91d01a992f4a7b25bdc261daf5930c",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Factures, commandes, plannings, relevés d'hygiène… tout à la main, tout en double, tout en triple."
+   ],
+   [
+    2,
+    "B",
+    "BERNARD",
+    "Mickael, tu dors quand, au juste ?",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "99:349",
+    "Bulle · bernard"
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Après la compta…",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:351",
+    "Bulle · chef"
+   ]
+  ]
+ },
+ {
+  "id": "58:406",
+  "n": "Page 08 · BD · PARTIE 1 · UNE JOURNÉE SANS FO",
+  "imgs": [
+   [
+    0,
+    "58:407",
+    "img:p05_1",
+    "09fc4488d0c59c2149f6b9cb798e5db5c58d2797",
+    794,
+    1123
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "PARTIE 1"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "UNE JOURNÉE SANS FOODEATUP"
+   ]
+  ]
+ },
+ {
+  "id": "58:413",
+  "n": "Page 09 · BD · AVANT LE SERVICE · 7 h 05",
+  "imgs": [
+   [
+    1,
+    "58:415",
+    "img:p06_1",
+    "d35407ed05616e51a427a0dd7159675c97912ce2",
+    758,
+    536
+   ],
+   [
+    2,
+    "58:423",
+    "img:p06_2",
+    "6c10aca0b9a840b88149fb19f63b11e0d1aa82db",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "AVANT LE SERVICE · 7 h 05"
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Mais… où est passé le saumon ?!",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:353",
+    "Bulle · chef"
+   ],
+   [
+    2,
+    "B",
+    "LÉA",
+    "Plus de crème, plus de saumon, plus de citrons. Et le plat du jour, on le fait avec quoi ?",
+    "3a5f90d2cbf160421010da0ad58c8de927b357ed",
+    "99:355",
+    "Bulle · lea"
+   ]
+  ]
+ },
+ {
+  "id": "61:364",
+  "n": "Page 10 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "61:366",
+    "img:p07_1",
+    "14c427c0e7843dc46043c3585c54fa385ed7f2a8",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:372",
+    "img:p07_2",
+    "806c56033140883bb2093d7b41ede03e7f66f348",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "KARIM",
+    "Allô ? Oui, il nous faudrait 5 kilos… non, 10 ! Enfin je crois…",
+    "4b83189fb3c9f2070f01af867ffc765ddd9beb5d",
+    "99:357",
+    "Bulle · karim"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Personne ne contrôle ni les quantités, ni les températures."
+   ]
+  ]
+ },
+ {
+  "id": "61:376",
+  "n": "Page 11 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "61:378",
+    "img:p08_1",
+    "2c112315e2fe7f20e1db9aed9680ee01b96cc406",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:384",
+    "img:p08_2",
+    "911c33698dabb3849665fda07f43afd558a51c89",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Trois jours sans relevé… Si l'inspecteur passe aujourd'hui, on est fichus.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:359",
+    "Bulle · chef"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "L'hygiène, c'est le premier truc qu'on oublie quand tout brûle."
+   ]
+  ]
+ },
+ {
+  "id": "61:388",
+  "n": "Page 12 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "61:390",
+    "img:p09_1",
+    "7f0f694a77e3a7bddb6e44b9779f6e054345b7fe",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:396",
+    "img:p09_2",
+    "2701c7d7fe1aba52c250ec4eb8191f5f6fc0e421",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "NADIA",
+    "Karim est malade, Sofiane a échangé son créneau… et personne ne me l'a dit.",
+    "ae21252d33dcfc3f9e493d8681ae800387ae7f97",
+    "99:361",
+    "Bulle · nadia"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Les plannings vivent dans des groupes de messages. Et les heures, dans la mémoire de chacun."
+   ]
+  ]
+ },
+ {
+  "id": "61:400",
+  "n": "Page 13 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "61:402",
+    "img:p10_1",
+    "b641dd84bb23e1a44da5b08f16fd8c2fba06adea",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:408",
+    "img:p10_2",
+    "85b36ba1e7f9165eead8bd746cbbe7e01c028b07",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "INÈS",
+    "On n'a rien publié depuis deux semaines… pas étonnant que la terrasse soit vide.",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "99:363",
+    "Bulle · ines"
+   ],
+   [
+    2,
+    "B",
+    "BERNARD",
+    "On travaille comme des fous… mais elle est où, ma marge ?",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "99:365",
+    "Bulle · bernard"
+   ]
+  ]
+ },
+ {
+  "id": "61:414",
+  "n": "Page 14 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "61:416",
+    "img:p11_1",
+    "1d3ccbec2d022218e52cc3f75d1b21cddc4aef78",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:422",
+    "img:p11_2",
+    "ef1d6b2a6937adf2442b182ca3a6a4adf2e64a1b",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "THOMAS",
+    "Bernard, j'ai besoin des chiffres d'hier pour 10 h.",
+    "0165574af3e2027fce8e931ee8ff802889c39b6a",
+    "99:367",
+    "Bulle · thomas"
+   ],
+   [
+    2,
+    "B",
+    "BERNARD",
+    "Euh… je te rappelle.",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "99:369",
+    "Bulle · bernard"
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "11 h… et la mise en place n'a même pas commencé.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:371",
+    "Bulle · chef"
+   ]
+  ]
+ },
+ {
+  "id": "61:432",
+  "n": "Page 15 · BD · PENDANT LE SERVICE · LE COUP D",
+  "imgs": [
+   [
+    0,
+    "61:433",
+    "img:p12_1",
+    "c45aa0d07eed1103dd75215db9b2090a8057f3dd",
+    794,
+    1123
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "PENDANT LE SERVICE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "LE COUP DE FEU"
+   ]
+  ]
+ },
+ {
+  "id": "61:439",
+  "n": "Page 16 · BD · Le téléphone sonne. Encore. Et",
+  "imgs": [
+   [
+    1,
+    "61:441",
+    "img:p13_1",
+    "8efe21282fdad6f8c857ccdef48c6ee5b1616a24",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:449",
+    "img:p13_2",
+    "93b69f929c70aa654dbee979c40826197e0442de",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Le téléphone sonne. Encore. Et encore."
+   ],
+   [
+    1,
+    "B",
+    "SOFIANE",
+    "Je ne peux pas répondre, j'ai quatre assiettes dans les mains !",
+    "1dae5f164d2f5c98bcf123e5d87aebd90728e2fa",
+    "99:373",
+    "Bulle · sofiane"
+   ],
+   [
+    2,
+    "B",
+    "SOFIANE",
+    "Euh… je ne vous trouve pas dans le cahier…",
+    "1dae5f164d2f5c98bcf123e5d87aebd90728e2fa",
+    "99:375",
+    "Bulle · sofiane"
+   ]
+  ]
+ },
+ {
+  "id": "61:455",
+  "n": "Page 17 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "61:457",
+    "img:p14_1",
+    "8f79b3b7533474836430cd105434311b6e81a9ab",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:463",
+    "img:p14_2",
+    "4aa53e482234fe425e0bda0a33bfff2edc3d9245",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "LÉA",
+    "C'est écrit « magret » ou « merlu », là ?",
+    "3a5f90d2cbf160421010da0ad58c8de927b357ed",
+    "99:377",
+    "Bulle · lea"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Une erreur en cuisine, c'est un client déçu en salle."
+   ]
+  ]
+ },
+ {
+  "id": "61:467",
+  "n": "Page 18 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "61:469",
+    "img:p15_1",
+    "d2e3d092697d75e3118506dec4cd0374307dcf8b",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:475",
+    "img:p15_2",
+    "85319de1e9731298542139591cd2fc9b8dc4105a",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Stop ! Plus de plat du jour ! On en a vendu douze de trop !",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:379",
+    "Bulle · chef"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Promettre ce qu'on n'a plus en stock : le pire moment d'un service."
+   ]
+  ]
+ },
+ {
+  "id": "61:479",
+  "n": "Page 19 · BD · Trois plateformes, trois table",
+  "imgs": [
+   [
+    1,
+    "61:481",
+    "img:p16_1",
+    "0949c8cd92b164f4723f317bbe518dcc182bbb1e",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:489",
+    "img:p16_2",
+    "916189bf672ebd0294cd8ca31fd0c0233d8ef312",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Trois plateformes, trois tablettes, trois façons de tout rater."
+   ],
+   [
+    1,
+    "B",
+    "KARIM",
+    "Elle était pour qui, cette commande ?!",
+    "4b83189fb3c9f2070f01af867ffc765ddd9beb5d",
+    "99:381",
+    "Bulle · karim"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Et les livreurs attendent…"
+   ]
+  ]
+ },
+ {
+  "id": "61:493",
+  "n": "Page 20 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "61:495",
+    "img:p17_1",
+    "8e49259400fc0872da6ce17a009d876790eaba1c",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:501",
+    "img:p17_2",
+    "9b93d9152d6a43b89a8dcce971d65ac5477c3037",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "SOFIANE",
+    "Euh… je vais demander en cuisine !",
+    "1dae5f164d2f5c98bcf123e5d87aebd90728e2fa",
+    "99:383",
+    "Bulle · sofiane"
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Les allergènes… c'était noté où, déjà ?",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:385",
+    "Bulle · chef"
+   ]
+  ]
+ },
+ {
+  "id": "61:507",
+  "n": "Page 21 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "61:509",
+    "img:p18_1",
+    "800ad842f03bf27d87049c4a65f865e237cfdd2a",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:515",
+    "img:p18_2",
+    "7b199cb8a9baf711006cd53dd58bb02b5d87b367",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "BERNARD",
+    "Refusé… encore refusé !",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "99:387",
+    "Bulle · bernard"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Chaque minute perdue en caisse, c'est une table qui ne tourne pas."
+   ]
+  ]
+ },
+ {
+  "id": "61:519",
+  "n": "Page 22 · BD · On tient. Comme toujours. Mais",
+  "imgs": [
+   [
+    0,
+    "61:520",
+    "img:p19_1",
+    "a0254db1b78353738a2777d9776cf041893d8075",
+    794,
+    1123
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "R",
+    null,
+    "On tient. Comme toujours. Mais à quel prix ?"
+   ]
+  ]
+ },
+ {
+  "id": "61:525",
+  "n": "Page 23 · BD · APRÈS LE SERVICE · 23 h",
+  "imgs": [
+   [
+    1,
+    "61:527",
+    "img:p20_1",
+    "31f2f1478d3585316fccf900cdbf3aad4bc724ca",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:535",
+    "img:p20_2",
+    "3f91d085573f3d2567791e2e8765eb94a40e0451",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "APRÈS LE SERVICE · 23 h"
+   ],
+   [
+    1,
+    "B",
+    "BERNARD",
+    "Il manque quarante euros. Encore.",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "99:389",
+    "Bulle · bernard"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Une heure à recompter. Pour un écart qu'on n'expliquera jamais."
+   ]
+  ]
+ },
+ {
+  "id": "61:539",
+  "n": "Page 24 · BD · L'inventaire, à minuit, à la m",
+  "imgs": [
+   [
+    1,
+    "61:541",
+    "img:p21_1",
+    "9b35e415dd429f537d5000483b2e7d48a7cdea11",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:549",
+    "img:p21_2",
+    "8e50845d4651a26707a1ab7e7dba89af1c1c1443",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "L'inventaire, à minuit, à la main."
+   ],
+   [
+    1,
+    "B",
+    "KARIM",
+    "Ça fait combien de bouteilles de lait, déjà ?",
+    "4b83189fb3c9f2070f01af867ffc765ddd9beb5d",
+    "99:391",
+    "Bulle · karim"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Demain, il faudra recommencer. À 7 h."
+   ]
+  ]
+ },
+ {
+  "id": "61:553",
+  "n": "Page 25 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "61:555",
+    "img:p22_1",
+    "9c5430951476c23aa8ced3283a14752eb9ef352d",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:561",
+    "img:p22_2",
+    "e04431a7c745c8854db34a8286f68f66da8c4ada",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "INÈS",
+    "« Service lent, plat du jour indisponible »… Deux étoiles.",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "99:393",
+    "Bulle · ines"
+   ],
+   [
+    2,
+    "B",
+    "THOMAS",
+    "Toujours pas de chiffres. Comment piloter trois restaurants à l'aveugle ?",
+    "0165574af3e2027fce8e931ee8ff802889c39b6a",
+    "99:395",
+    "Bulle · thomas"
+   ]
+  ]
+ },
+ {
+  "id": "61:567",
+  "n": "Page 26 · BD · Les heures de la semaine, reco",
+  "imgs": [
+   [
+    1,
+    "61:569",
+    "img:p23_1",
+    "c0a2467181e74e74e73e1dd6750cc788105237f6",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:573",
+    "img:p23_2",
+    "0fb8e70e59bba26033ac011a66cd73be653fed04",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Les heures de la semaine, recopiées une à une."
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Et la comptabilité… ce sera pour dimanche.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:397",
+    "Bulle · chef"
+   ]
+  ]
+ },
+ {
+  "id": "61:579",
+  "n": "Page 27 · BD · Ce soir-là, j'ai encore manqué",
+  "imgs": [
+   [
+    0,
+    "61:580",
+    "img:p24_1",
+    "ec3e491b4f2cd1f45bbdefdb3cca8629d344d4ef",
+    794,
+    1123
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "R",
+    null,
+    "Ce soir-là, j'ai encore manqué le dîner en famille. Je me suis fait une promesse : plus jamais."
+   ]
+  ]
+ },
+ {
+  "id": "61:585",
+  "n": "Page 28 · BD · Et si chaque information n'éta",
+  "imgs": [
+   [
+    1,
+    "61:587",
+    "img:p25_1",
+    "09e8282bbe1a9874f2c0e6ea9018a54439a91adf",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:591",
+    "img:p25_2",
+    "4d66af69d516808ee40124748671ab41eeb3a846",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Et si chaque information n'était saisie qu'une seule fois ? Une vente qui met à jour le stock, qui prépare la commande, qui remplit l'hygiène…"
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Une saisie, pas dix !",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:399",
+    "Bulle · chef"
+   ],
+   [
+    2,
+    "B",
+    "BERNARD",
+    "Si ça marche… je signe tout de suite.",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "99:401",
+    "Bulle · bernard"
+   ]
+  ]
+ },
+ {
+  "id": "61:601",
+  "n": "Page 29 · BD · J'ai réuni une petite équipe d",
+  "imgs": [
+   [
+    1,
+    "61:603",
+    "img:p26_1",
+    "135b1260bec85c0a392ec06643563f0d6b7cc687",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:607",
+    "img:p26_2",
+    "d042bb43751f8cbc89b0879e61e0af987b558e3e",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "J'ai réuni une petite équipe de passionnés : la cuisine d'un côté, le code de l'autre."
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Chaque écran a été testé en vrai, en plein service, dans ma cuisine."
+   ]
+  ]
+ },
+ {
+  "id": "61:611",
+  "n": "Page 30 · BD · FOODEATUP EST NÉ · Le logiciel",
+  "imgs": [
+   [
+    0,
+    "61:612",
+    "img:p27_1",
+    "7c30b61a96ddecd6926df2e7ee3b3fc10a686ce5",
+    794,
+    1123
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "FOODEATUP EST NÉ"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Le logiciel qui pilote le restaurant… et une équipe d'assistants IA qui ne dort jamais."
+   ]
+  ]
+ },
+ {
+  "id": "61:618",
+  "n": "Page 31 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "61:620",
+    "img:p28_1",
+    "b1de7c47786853a8653bae2cb1c49801bba52115",
+    758,
+    536
+   ],
+   [
+    2,
+    "61:630",
+    "img:p28_2",
+    "35af50310c4a91bca91f4ceb150ecff04376f910",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "KARIM",
+    "Encore un logiciel compliqué ?",
+    "4b83189fb3c9f2070f01af867ffc765ddd9beb5d",
+    "99:403",
+    "Bulle · karim"
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Non. Celui-là, tu lui parles.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:405",
+    "Bulle · chef"
+   ],
+   [
+    2,
+    "B",
+    "INÈS",
+    "Attends… il écrit mes posts tout seul ?",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "99:407",
+    "Bulle · ines"
+   ]
+  ]
+ },
+ {
+  "id": "62:364",
+  "n": "Page 32 · BD · PARTIE 2 · LA MÊME JOURNÉE, AV",
+  "imgs": [
+   [
+    0,
+    "62:365",
+    "img:p29_1",
+    "0cb9c1fc721c3a5d41bf85a723f5a510a9f71ccf",
+    794,
+    1123
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "PARTIE 2"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "LA MÊME JOURNÉE, AVEC FOODEATUP"
+   ]
+  ]
+ },
+ {
+  "id": "62:371",
+  "n": "Page 33 · BD · AVANT LE SERVICE · 7 h 05",
+  "imgs": [
+   [
+    1,
+    "62:373",
+    "img:p30_1",
+    "9832059b5b8a469c1491d0d148fe193d98af22cd",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:381",
+    "img:p30_2",
+    "878be325fb795e5528699099f88216fce503e18d",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "AVANT LE SERVICE · 7 h 05"
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Voyons ce que PrédiBot me raconte ce matin…",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:409",
+    "Bulle · chef"
+   ],
+   [
+    2,
+    "B",
+    "PRÉDIBOT · IA",
+    "Bonjour Mickael ! Ce soir, 84 couverts prévus. Il manque du saumon et des citrons : la commande est prête, tu valides ?",
+    "3d5a2cd6cbab0146c942acd95533590670319f0c",
+    "99:411",
+    "Bulle · predibot"
+   ]
+  ]
+ },
+ {
+  "id": "62:387",
+  "n": "Page 34 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "62:389",
+    "img:p31_1",
+    "ce21af8c4b698aff5c5c6e948e14ea06bf132ed3",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:395",
+    "img:p31_2",
+    "58cfd3d2b162ee3a36a760e36c795b64f736fe61",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "KARIM",
+    "Commande envoyée aux trois fournisseurs. En un clic !",
+    "4b83189fb3c9f2070f01af867ffc765ddd9beb5d",
+    "99:413",
+    "Bulle · karim"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Réception contrôlée : quantités, prix et températures, tout est enregistré."
+   ]
+  ]
+ },
+ {
+  "id": "62:399",
+  "n": "Page 35 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "62:401",
+    "img:p32_1",
+    "285ab68e7a0ea7ba2e0c80577fea94fef01f8695",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:407",
+    "img:p32_2",
+    "1a7a37d6b58b3b82c24c684d984e136c72deba92",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "LÉA",
+    "Températures relevées, étiquettes imprimées. Trente secondes.",
+    "3a5f90d2cbf160421010da0ad58c8de927b357ed",
+    "99:415",
+    "Bulle · lea"
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Si l'inspecteur passe aujourd'hui… qu'il passe !",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:417",
+    "Bulle · chef"
+   ]
+  ]
+ },
+ {
+  "id": "62:413",
+  "n": "Page 36 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "62:415",
+    "img:p33_1",
+    "691d47806f4e16e5726c780288008e6423514df9",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:421",
+    "img:p33_2",
+    "4d8b64e23d475fa443c27b3393841f15fae420b1",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "NADIA",
+    "Karim est absent ? Le planning me propose déjà un remplaçant disponible.",
+    "ae21252d33dcfc3f9e493d8681ae800387ae7f97",
+    "99:419",
+    "Bulle · nadia"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Pointage au QR code : les heures sont justes, sans papier."
+   ]
+  ]
+ },
+ {
+  "id": "62:425",
+  "n": "Page 37 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "62:427",
+    "img:p34_1",
+    "ca7d523d637e00d37899f957d195af99e4b1ef06",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:437",
+    "img:p34_2",
+    "e3a5252e092d5230b05851fb8d0af3b40f8744a7",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "IRIS · IA",
+    "Il reste beaucoup de tomates : je te propose un post « tarte du jour » pour midi. Tu valides ?",
+    "3b369a2997d43ccfd7b0ef80d6004ac17cfdad18",
+    "99:421",
+    "Bulle · iris"
+   ],
+   [
+    1,
+    "B",
+    "INÈS",
+    "Validé !",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "99:423",
+    "Bulle · ines"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Les écrans de la salle diffusent la bonne offre, au bon moment."
+   ]
+  ]
+ },
+ {
+  "id": "62:441",
+  "n": "Page 38 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "62:443",
+    "img:p35_1",
+    "b63e8863a654a0672bec0b3da4bac83333f10d7f",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:449",
+    "img:p35_2",
+    "56256b6aee298dc019bc3c6d455b8d4c4bf4d540",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "THOMAS",
+    "Les chiffres d'hier, des trois restaurants, à 8 h. Enfin !",
+    "0165574af3e2027fce8e931ee8ff802889c39b6a",
+    "99:425",
+    "Bulle · thomas"
+   ],
+   [
+    2,
+    "B",
+    "BERNARD",
+    "Ma marge, plat par plat… je la vois enfin.",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "99:427",
+    "Bulle · bernard"
+   ]
+  ]
+ },
+ {
+  "id": "62:455",
+  "n": "Page 39 · BD · PENDANT LE SERVICE · LE COUP D",
+  "imgs": [
+   [
+    0,
+    "62:456",
+    "img:p36_1",
+    "7c177083a1e85e6ae9ec9cfb3de2ca23acba8c9c",
+    794,
+    1123
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "PENDANT LE SERVICE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "LE COUP DE FEU… EN DOUCEUR"
+   ]
+  ]
+ },
+ {
+  "id": "62:462",
+  "n": "Page 40 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "62:464",
+    "img:p37_1",
+    "3d46268beba16fc61e16215f84536c7a1015300f",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:470",
+    "img:p37_2",
+    "e096c585c3645c3158a5f0f0f4f15133c6b98b3f",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "CAROLINE · IA",
+    "Le Bistrot du Marché, bonjour ! Une table pour quatre ce soir à 20 h ? C'est noté.",
+    "ba6562cc247c86bf879389f202cbc81db4d9aa44",
+    "99:429",
+    "Bulle · caroline"
+   ],
+   [
+    2,
+    "B",
+    "SOFIANE",
+    "Monsieur et Madame Martin ? Votre table vous attend.",
+    "1dae5f164d2f5c98bcf123e5d87aebd90728e2fa",
+    "99:431",
+    "Bulle · sofiane"
+   ]
+  ]
+ },
+ {
+  "id": "62:476",
+  "n": "Page 41 · BD · Une commande saisie une fois…",
+  "imgs": [
+   [
+    1,
+    "62:478",
+    "img:p38_1",
+    "f910da404aec09c58e8ef16a61a7bdd5fe679973",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:482",
+    "img:p38_2",
+    "aa38ac859e034234dd2d965b40fe1a03505998f8",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Une commande saisie une fois…"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "… arrive en cuisine à la seconde, lisible, au bon poste."
+   ],
+   [
+    2,
+    "B",
+    "LÉA",
+    "Table 12, deux magrets, ça part !",
+    "3a5f90d2cbf160421010da0ad58c8de927b357ed",
+    "99:433",
+    "Bulle · lea"
+   ]
+  ]
+ },
+ {
+  "id": "62:490",
+  "n": "Page 42 · BD · Un QR code sur la table, et la",
+  "imgs": [
+   [
+    1,
+    "62:492",
+    "img:p39_1",
+    "41af67a934b1679c482e1258f9c947581e2bd090",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:496",
+    "img:p39_2",
+    "ad5547ae801268f8384d7f4890c06e0f08f28c79",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Un QR code sur la table, et la carte s'ouvre."
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Commander et payer à table, sans attendre."
+   ]
+  ]
+ },
+ {
+  "id": "62:500",
+  "n": "Page 43 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "62:502",
+    "img:p40_1",
+    "1e8befcbb12ef10e6413f2024db773758181186a",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:508",
+    "img:p40_2",
+    "39a86e6a4cea1611acb2fb5d47644b07320b18b1",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "KARIM",
+    "Toutes les livraisons sur un seul écran. Plus aucune oubliée.",
+    "4b83189fb3c9f2070f01af867ffc765ddd9beb5d",
+    "99:435",
+    "Bulle · karim"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "À l'heure. À chaque fois."
+   ]
+  ]
+ },
+ {
+  "id": "62:512",
+  "n": "Page 44 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "62:514",
+    "img:p41_1",
+    "d34ab5be0415b92ef54b19dfd9a3e0954a1610f0",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:520",
+    "img:p41_2",
+    "48a704972ae539098c63cb95afe865a51aaca751",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "SOFIANE",
+    "Pas de fruits à coque dans ce plat, c'est indiqué ici, directement depuis la recette.",
+    "1dae5f164d2f5c98bcf123e5d87aebd90728e2fa",
+    "99:437",
+    "Bulle · sofiane"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "L'information est juste, parce qu'elle vient de la recette."
+   ]
+  ]
+ },
+ {
+  "id": "62:524",
+  "n": "Page 45 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "62:526",
+    "img:p42_1",
+    "e85b59f0a3993023b3999b52106a927d0beca228",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:532",
+    "img:p42_2",
+    "6ba44b0f8dcd5ed3109cb355fadce6a70e5239b6",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "JARVIS · IA",
+    "Bonsoir ! Un menu burger avec frites ou potatoes ?",
+    "e454c1c8580d4f835fbb671eccc2999e41830d8c",
+    "99:439",
+    "Bulle · jarvis"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "La commande est confirmée par le client, puis transmise en cuisine."
+   ]
+  ]
+ },
+ {
+  "id": "62:536",
+  "n": "Page 46 · BD · Même rush. Même équipe. Mais p",
+  "imgs": [
+   [
+    0,
+    "62:537",
+    "img:p43_1",
+    "3f9c0938448c4330768946231b8069e734116c97",
+    794,
+    1123
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "R",
+    null,
+    "Même rush. Même équipe. Mais plus personne ne court après l'information."
+   ]
+  ]
+ },
+ {
+  "id": "62:542",
+  "n": "Page 47 · BD · APRÈS LE SERVICE · 22 h 30",
+  "imgs": [
+   [
+    1,
+    "62:544",
+    "img:p44_1",
+    "bfaa096a06179f996f66cf0307dd9bf1640450f3",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:552",
+    "img:p44_2",
+    "e7f12bc4d41b6f5c1a6e05719a77f1ff1b92fc3d",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "APRÈS LE SERVICE · 22 h 30"
+   ],
+   [
+    1,
+    "B",
+    "SOFIANE",
+    "Clôture faite. L'écart est noté et expliqué.",
+    "1dae5f164d2f5c98bcf123e5d87aebd90728e2fa",
+    "99:441",
+    "Bulle · sofiane"
+   ],
+   [
+    2,
+    "B",
+    "LÉA",
+    "Le stock s'est mis à jour tout seul avec les ventes. Pas d'inventaire à minuit !",
+    "3a5f90d2cbf160421010da0ad58c8de927b357ed",
+    "99:443",
+    "Bulle · lea"
+   ]
+  ]
+ },
+ {
+  "id": "62:558",
+  "n": "Page 48 · BD · Le lendemain, 9 h : contrôle s",
+  "imgs": [
+   [
+    1,
+    "62:560",
+    "img:p45_1",
+    "2caa024bf6fc28bb058e8987072c46b9077da451",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:568",
+    "img:p45_2",
+    "233ed650026fa58b7436d4dac558d906c7be9a91",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Le lendemain, 9 h : contrôle sanitaire surprise."
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Tout est là : températures, traçabilité, nettoyage.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:445",
+    "Bulle · chef"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Un dossier complet, prêt chaque jour, pas la veille du contrôle."
+   ]
+  ]
+ },
+ {
+  "id": "62:572",
+  "n": "Page 49 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "62:574",
+    "img:p46_1",
+    "a635e1dee581434065dd6c0d378b36739c2334bf",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:584",
+    "img:p46_2",
+    "06c1ea9fc8c774335709655aea3fdd8e476e0a10",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Fais-moi le point de fin de journée.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:447",
+    "Bulle · chef"
+   ],
+   [
+    1,
+    "B",
+    "L’ASSISTANT IA",
+    "84 couverts, ticket moyen en hausse, marge à 71 %. Bonne soirée, chef !",
+    null,
+    "99:449",
+    "Bulle · ia"
+   ],
+   [
+    2,
+    "B",
+    "INÈS",
+    "Douze nouveaux avis cinq étoiles cette semaine !",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "99:452",
+    "Bulle · ines"
+   ]
+  ]
+ },
+ {
+  "id": "62:590",
+  "n": "Page 50 · BD · planche",
+  "imgs": [
+   [
+    1,
+    "62:592",
+    "img:p47_1",
+    "7123fcb1d23500d2d2f73828b9329db2c1afc922",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:598",
+    "img:p47_2",
+    "884713ba601aeb5cc9bbed1d9d54c918121c994d",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "B",
+    "NADIA",
+    "Heures, congés, documents : tout est à jour. Je rentre !",
+    "ae21252d33dcfc3f9e493d8681ae800387ae7f97",
+    "99:454",
+    "Bulle · nadia"
+   ],
+   [
+    2,
+    "B",
+    "THOMAS",
+    "Trois restaurants, une seule vision. Je pilote, je ne subis plus.",
+    "0165574af3e2027fce8e931ee8ff802889c39b6a",
+    "99:456",
+    "Bulle · thomas"
+   ]
+  ]
+ },
+ {
+  "id": "62:604",
+  "n": "Page 51 · BD · Ce soir, je dîne avec ma famil",
+  "imgs": [
+   [
+    0,
+    "62:605",
+    "img:p48_1",
+    "e0d4e185524a7f688f626698e0523ccda9694e02",
+    794,
+    1123
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "R",
+    null,
+    "Ce soir, je dîne avec ma famille. Et demain, on recommence… avec le sourire."
+   ]
+  ]
+ },
+ {
+  "id": "62:610",
+  "n": "Page 52 · BD · SANS FOODEATUP",
+  "imgs": [
+   [
+    1,
+    "62:612",
+    "img:p49_1",
+    "7fd4772519485af48b5389fb0403d43c7420cdb4",
+    758,
+    536
+   ],
+   [
+    2,
+    "62:616",
+    "img:p49_2",
+    "5651ff0782d927d05c127e1217f474bbc4f78d68",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "T",
+    null,
+    "SANS FOODEATUP"
+   ],
+   [
+    2,
+    "T",
+    null,
+    "AVEC FOODEATUP"
+   ]
+  ]
+ },
+ {
+  "id": "62:620",
+  "n": "Page 53 · BD · BIENVENUE DANS LA BRIGADE FOOD",
+  "imgs": [
+   [
+    0,
+    "62:621",
+    "img:p50_1",
+    "b58b33c0846cdfae5b3860bbc96d449eeb2f45a0",
+    794,
+    1123
+   ],
+   [
+    0,
+    "62:626",
+    "Rectangle",
+    "305e751649ab228f99f30bd6797aecb0fb952789",
+    200,
+    54
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "FIN DE LA JOURNÉE… ET CE N'EST QUE LE DÉBUT"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "BIENVENUE DANS LA BRIGADE FOODEATUP"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "La cuisine tourne enfin. Mais Mickael n'a pas fini de vous surprendre : tournez la page, la brigade passe à l'écran."
+   ]
+  ]
+ },
+ {
+  "id": "81:348",
+  "n": "Page 54 · BD · Partie 3 · LA BRIGADE PASSE À L'ÉCRAN",
+  "imgs": [
+   [
+    0,
+    "81:351",
+    "img:p00-titre",
+    "28ba37617aa18c779b91505d00c109b8a6e4bb77",
+    746,
+    416
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "LA BRIGADE AUGMENTÉE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "PARTIE 3 · LA BRIGADE PASSE À L'ÉCRAN"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Écrans de salle, QR codes, affiches, vidéos, site cinématique… Aujourd'hui, Mickael et sa brigade découvrent qu'une seule saisie dans FoodEatUp suffit pour que tout le restaurant communique."
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Studio Print · FoodEatUp"
+   ]
+  ]
+ },
+ {
+  "id": "81:354",
+  "n": "Page 55 · BD · Partie 3 · planche",
+  "imgs": [
+   [
+    1,
+    "92:349",
+    "img:p01-a",
+    "b6e383447246077314a48fdf95ed517579eae643",
+    758,
+    536
+   ],
+   [
+    2,
+    "92:361",
+    "img:p01-b",
+    "a40b1defe7610f820bba439cebaa363610a3426a",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Six mois plus tard. En cuisine, tout tourne. Mais notre vitrine, elle, dort encore."
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Notre flyer a trois ans… et les prix ne sont même plus bons !",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:458",
+    "Bulle · mickael"
+   ],
+   [
+    1,
+    "B",
+    "INÈS",
+    "Et l'affiche de la vitrine annonce l'été… en novembre.",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "99:460",
+    "Bulle · inès"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Alors j'ai fait comme en cuisine : une seule demande, bien formulée."
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Crée-moi le pack complet avec notre charte : carte, sets de table, dessous de verre, chevalets QR.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:462",
+    "Bulle · mickael"
+   ],
+   [
+    2,
+    "B",
+    "L'ASSISTANT IA",
+    "C'est prêt, chef. Tout est à ta charte, avec les prix de ta carte FoodEatUp.",
+    null,
+    "99:464",
+    "Bulle · l'assistant ia"
+   ]
+  ]
+ },
+ {
+  "id": "81:382",
+  "n": "Page 56 · BD · Partie 3 · planche",
+  "imgs": [
+   [
+    1,
+    "92:374",
+    "img:p02-a",
+    "c57fc83a714b26ec6a4b61128df617897d145e51",
+    758,
+    536
+   ],
+   [
+    2,
+    "92:382",
+    "img:p02-b",
+    "38f81c726e0a409c7a5219c4d6e833de2d2978d1",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "11 h. Karim pose les chevalets. Chaque table devient une porte d'entrée."
+   ],
+   [
+    1,
+    "B",
+    "KARIM",
+    "Carte, commande, fidélité : tout part de ce QR. Et si on réimprime, le lien ne change pas !",
+    "4b83189fb3c9f2070f01af867ffc765ddd9beb5d",
+    "99:467",
+    "Bulle · karim"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Pour nos clients, un geste suffit."
+   ],
+   [
+    2,
+    "B",
+    "LA CLIENTE",
+    "On voit tous les plats en photo… et je cumule mes points en même temps !",
+    null,
+    "99:469",
+    "Bulle · la cliente"
+   ]
+  ]
+ },
+ {
+  "id": "81:400",
+  "n": "Page 57 · BD · Partie 3 · planche",
+  "imgs": [
+   [
+    1,
+    "92:391",
+    "img:p03-a",
+    "b3b357d80374cdc55605a612e0d1a6311b1f7f97",
+    758,
+    536
+   ],
+   [
+    2,
+    "92:403",
+    "img:p03-b",
+    "6e6c0dd344126a0e7a997d604d7f50b50ae5f677",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "14 h. Bernard, qui fuyait la technique, installe nos écrans."
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Pas de clé USB, pas de technicien. Bienvenue dans le futur, Bernard.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:474",
+    "Bulle · mickael"
+   ],
+   [
+    1,
+    "B",
+    "BERNARD",
+    "Un code s'affiche, je le tape… Mickael, c'est relié ! C'est moi qui l'ai fait !",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "99:472",
+    "Bulle · bernard"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Et quand Inès appuie sur « Diffuser maintenant », toute la salle s'allume."
+   ],
+   [
+    2,
+    "B",
+    "INÈS",
+    "Diffuse l'affiche happy hour sur les écrans de la salle, maintenant.",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "99:476",
+    "Bulle · inès"
+   ]
+  ]
+ },
+ {
+  "id": "81:423",
+  "n": "Page 58 · BD · Partie 3 · planche",
+  "imgs": [
+   [
+    1,
+    "92:412",
+    "img:p04-a",
+    "63ee38c79c8a681a2246cc492807612fe93405f0",
+    758,
+    536
+   ],
+   [
+    2,
+    "92:420",
+    "img:p04-b",
+    "22499ec9cba3f0d510ae6b6020dd908ba7ff06c2",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "18 h. Même quand on est en cuisine, la vitrine travaille pour nous."
+   ],
+   [
+    1,
+    "B",
+    "UNE PASSANTE",
+    "Regarde cette tarte… on entre ?",
+    null,
+    "99:478",
+    "Bulle · une passante"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "À 18 h pile, la carte du midi laisse place à celle du soir. Toute seule."
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Avant, je changeais l'ardoise à la craie entre deux services…",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:481",
+    "Bulle · mickael"
+   ]
+  ]
+ },
+ {
+  "id": "81:441",
+  "n": "Page 59 · BD · Partie 3 · planche",
+  "imgs": [
+   [
+    1,
+    "92:429",
+    "img:p05-a",
+    "7a3f02126ae71ff972c0ebc9c37c25d208ab8514",
+    758,
+    536
+   ],
+   [
+    2,
+    "92:441",
+    "img:p05-b",
+    "73e84a32a36e58697630965d0d2b4f92f170186a",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Le lendemain, Sofiane rêve d'une vidéo. Il suffit de trois questions."
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Le burger du chef, 8 secondes, ambiance énergique !",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:486",
+    "Bulle · mickael"
+   ],
+   [
+    1,
+    "B",
+    "L'ASSISTANT IA",
+    "Quel plat ? Quelle durée ? Quelle ambiance ?",
+    null,
+    "99:483",
+    "Bulle · l'assistant ia"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Publiée via RapidoCMS, la vidéo fait le tour du quartier avant le service."
+   ],
+   [
+    2,
+    "B",
+    "SOFIANE",
+    "Chef, notre burger fait le tour de la ville !",
+    "1dae5f164d2f5c98bcf123e5d87aebd90728e2fa",
+    "99:488",
+    "Bulle · sofiane"
+   ]
+  ]
+ },
+ {
+  "id": "81:464",
+  "n": "Page 60 · BD · Partie 3 · planche",
+  "imgs": [
+   [
+    1,
+    "92:450",
+    "img:p06-a",
+    "f607e90c2db53b2ef5f1708003e5e0b76a118c1f",
+    758,
+    536
+   ],
+   [
+    2,
+    "92:462",
+    "img:p06-b",
+    "dd2d22f0b62699a15feab8ee9fb6c80112355adf",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Notre site est devenu une vitrine de cinéma. Et il suit la carte, tout seul."
+   ],
+   [
+    1,
+    "B",
+    "INÈS",
+    "Le plat sort de l'écran ! Et les prix sont déjà les bons.",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "99:490",
+    "Bulle · inès"
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Une seule saisie… et le site suit.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:492",
+    "Bulle · mickael"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "20 h. Les réservations tombent les unes après les autres."
+   ],
+   [
+    2,
+    "B",
+    "SOFIANE",
+    "Trois réservations en ligne en dix minutes. Salle complète ce soir !",
+    "1dae5f164d2f5c98bcf123e5d87aebd90728e2fa",
+    "99:494",
+    "Bulle · sofiane"
+   ]
+  ]
+ },
+ {
+  "id": "81:487",
+  "n": "Page 61 · BD · Partie 3 · planche",
+  "imgs": [
+   [
+    1,
+    "92:471",
+    "img:p07-a",
+    "6675f03641c22a6c160e882174e5554cd4af9f70",
+    758,
+    536
+   ],
+   [
+    2,
+    "92:483",
+    "img:p07-b",
+    "05f904157aed516b6090200d6529ed31d6357d40",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Les familles reviennent. Pour les enfants : le kit Végéfruités à colorier."
+   ],
+   [
+    1,
+    "B",
+    "LE PETIT",
+    "Papa, la fraise a une cape !",
+    null,
+    "99:496",
+    "Bulle · le petit"
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Et voici l'assiette des héros !",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:499",
+    "Bulle · mickael"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "En fin de repas : un jeu, un avis, des points. Toujours avec l'accord du client."
+   ],
+   [
+    2,
+    "B",
+    "LA CLIENTE",
+    "J'ai gagné un dessert pour ma prochaine visite !",
+    null,
+    "99:501",
+    "Bulle · la cliente"
+   ],
+   [
+    2,
+    "B",
+    "SOFIANE",
+    "Et merci pour votre avis !",
+    "1dae5f164d2f5c98bcf123e5d87aebd90728e2fa",
+    "99:504",
+    "Bulle · sofiane"
+   ]
+  ]
+ },
+ {
+  "id": "81:515",
+  "n": "Page 62 · BD · Partie 3 · planche",
+  "imgs": [
+   [
+    1,
+    "92:496",
+    "img:p08-a",
+    "345786edc413ba3c2e08caeaa1b02a4338f6f492",
+    758,
+    536
+   ],
+   [
+    2,
+    "92:508",
+    "img:p08-b",
+    "a6d29a23e0dfdf4c6de436f2f2b695045381f394",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "23 h. Rien affiché à la main, rien imprimé en urgence. Et pourtant…"
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Claude, fais-moi le rapport de communication de la journée.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:506",
+    "Bulle · mickael"
+   ],
+   [
+    1,
+    "B",
+    "L'ASSISTANT IA",
+    "Scans QR, diffusions écrans, vues vidéo, réservations : tout est dans ton rapport.",
+    null,
+    "99:508",
+    "Bulle · l'assistant ia"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Ce soir-là, j'ai compris : une seule saisie, et tout le restaurant communique."
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Ça, c'est la brigade augmentée !",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:511",
+    "Bulle · mickael"
+   ]
+  ]
+ },
+ {
+  "id": "85:348",
+  "n": "Page 63 · BD · Partie 4 · EXPANSION & FRANCHISE",
+  "imgs": [
+   [
+    0,
+    "85:351",
+    "img:p00-titre",
+    "7efe997d9ecea73b14794795b55d8e5f299f4b88",
+    746,
+    416
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "LA BRIGADE AUGMENTÉE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "PARTIE 4 · EXPANSION & FRANCHISE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Le restaurant tourne à plein. Mickael rêve plus grand : ouvrir dans d'autres villes, sans perdre ce qui fait sa cuisine. Voici comment il a bâti sa franchise, module après module, avec FoodEatUp et ses outils connectés."
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Studio Print · FoodEatUp"
+   ]
+  ]
+ },
+ {
+  "id": "85:354",
+  "n": "Page 64 · BD · Partie 4 · planche",
+  "imgs": [
+   [
+    1,
+    "93:349",
+    "img:p01-a",
+    "ebc4eb53f25d3ba1d1140fbc2b1a5314d4870585",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:361",
+    "img:p01-b",
+    "3cd864b66d52640e167b1867e0f84c4c6e8a8609",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Un an plus tard. Nos trois maisons affichent complet. Et une idée me trotte dans la tête."
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Bernard… et si d'autres ouvraient notre Bistrot à Lyon, Lille, Marseille ?",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:513",
+    "Bulle · mickael"
+   ],
+   [
+    1,
+    "B",
+    "BERNARD",
+    "Une franchise ? Alors chaque resto doit travailler exactement comme ici.",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "99:515",
+    "Bulle · bernard"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Thomas, qui pilote déjà nos trois maisons, a la réponse."
+   ],
+   [
+    2,
+    "B",
+    "THOMAS",
+    "Un seul compte FoodEatUp, un établissement par restaurant, et le Z consolidé de toute la maison chaque soir.",
+    "0165574af3e2027fce8e931ee8ff802889c39b6a",
+    "99:517",
+    "Bulle · thomas"
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Je vois tout, partout, en direct.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:519",
+    "Bulle · mickael"
+   ]
+  ]
+ },
+ {
+  "id": "85:382",
+  "n": "Page 65 · BD · Partie 4 · planche",
+  "imgs": [
+   [
+    1,
+    "93:374",
+    "img:p02-a",
+    "7583452b265930e6b4497562aabc26ab4184a13a",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:386",
+    "img:p02-b",
+    "f9c0d10f8857467e1c7462100c35aa2ed916721f",
+    758,
+    536
+   ],
+   [
+    2,
+    "85:404",
+    "img:fiche-luks-recto",
+    "92fd206c525e2e4b5f2a4aafe35186bc32e89f09",
+    96,
+    136
+   ],
+   [
+    2,
+    "85:405",
+    "img:fiche-luks-verso",
+    "2d13a24dfee635b958b7a68ff2bf5e50cf2f61ad",
+    96,
+    136
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Première règle d'une franchise : le même goût partout. On a commencé par les recettes, avec Figma et FoodEatUp reliés à Claude."
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Claude, prends mes recettes FoodEatUp et mets-les en page dans Figma : recto montage, verso achats.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:521",
+    "Bulle · mickael"
+   ],
+   [
+    1,
+    "B",
+    "L'ASSISTANT IA",
+    "Fiches générées ! Une nouvelle facture fournisseur ? Le verso se met à jour.",
+    null,
+    "99:523",
+    "Bulle · l'assistant ia"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Trois semaines plus tard, à Lyon, Léa forme la première équipe."
+   ],
+   [
+    2,
+    "T",
+    null,
+    "Exemple réel : fiches Lüks Coffee"
+   ],
+   [
+    2,
+    "B",
+    "LÉA",
+    "Sirop 20 ml, lait 180 ml, glaçons 180 g. Je suis la fiche, c'est tout.",
+    "3a5f90d2cbf160421010da0ad58c8de927b357ed",
+    "99:526",
+    "Bulle · léa"
+   ]
+  ]
+ },
+ {
+  "id": "85:409",
+  "n": "Page 66 · BD · Partie 4 · planche",
+  "imgs": [
+   [
+    1,
+    "93:395",
+    "img:p03-a",
+    "0eab950b2aebd834d333113964f1c01993fbe7ff",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:403",
+    "img:p03-b",
+    "e0af63459666df67484841330fca5e0afcabf351",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Deuxième règle : ne jamais manquer de rien. Nos stocks parlent maintenant aux fournisseurs."
+   ],
+   [
+    1,
+    "B",
+    "KARIM",
+    "La commande est partie depuis la liste de courses. Je contrôle la livraison et la température.",
+    "4b83189fb3c9f2070f01af867ffc765ddd9beb5d",
+    "99:528",
+    "Bulle · karim"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Et chaque centime compte."
+   ],
+   [
+    2,
+    "B",
+    "BERNARD",
+    "Iced Coffee latte : 0,72 € HT de matière, consommables compris.",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "99:530",
+    "Bulle · bernard"
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Et si le lait augmente, toutes les fiches suivent.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:532",
+    "Bulle · mickael"
+   ]
+  ]
+ },
+ {
+  "id": "85:432",
+  "n": "Page 67 · BD · Partie 4 · planche",
+  "imgs": [
+   [
+    1,
+    "93:416",
+    "img:p04-a",
+    "f614dd7464d572dfcd3a98bb8be975f8586c86f7",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:424",
+    "img:p04-b",
+    "cf8ced7af5aaacd32791f964c671da03a489a172",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Troisième règle : parler d'une seule voix. Canva, FoodEatUp et RapidoCMS travaillent ensemble."
+   ],
+   [
+    1,
+    "B",
+    "INÈS",
+    "Un kit pour toutes les villes : affiches, posts, flyers. Les plats et les prix viennent de FoodEatUp.",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "99:534",
+    "Bulle · inès"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Inès programme un mois de publications avant le déjeuner."
+   ],
+   [
+    2,
+    "B",
+    "INÈS",
+    "Un mois de posts pour les cinq villes, planifié en une matinée.",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "99:536",
+    "Bulle · inès"
+   ],
+   [
+    2,
+    "B",
+    "THOMAS",
+    "Et chaque franchisé garde ses propres comptes.",
+    "0165574af3e2027fce8e931ee8ff802889c39b6a",
+    "99:538",
+    "Bulle · thomas"
+   ]
+  ]
+ },
+ {
+  "id": "85:455",
+  "n": "Page 68 · BD · Partie 4 · planche",
+  "imgs": [
+   [
+    1,
+    "93:437",
+    "img:p05-a",
+    "a3857508bba6c02dad6b90acaafdd3140f5148f8",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:445",
+    "img:p05-b",
+    "f8c8e6c7ce1aa4b55a20912fa2fc9fe31f61b7f0",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Quatrième règle : donner aux clients une raison de revenir."
+   ],
+   [
+    1,
+    "B",
+    "LA CLIENTE",
+    "J'ai gagné un cookie à la roue ! J'ai juste scanné le QR de la table.",
+    null,
+    "99:540",
+    "Bulle · la cliente"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Et la même carte de fidélité dans tous nos restaurants."
+   ],
+   [
+    2,
+    "B",
+    "SOFIANE",
+    "Dixième café offert. Et merci pour votre avis !",
+    "1dae5f164d2f5c98bcf123e5d87aebd90728e2fa",
+    "99:546",
+    "Bulle · sofiane"
+   ],
+   [
+    2,
+    "B",
+    "LE CLIENT",
+    "Ma carte marche à Lille comme à Paris !",
+    null,
+    "99:543",
+    "Bulle · le client"
+   ]
+  ]
+ },
+ {
+  "id": "85:478",
+  "n": "Page 69 · BD · Partie 4 · planche",
+  "imgs": [
+   [
+    1,
+    "93:458",
+    "img:p06-a",
+    "ec1a658196572fb484a4559065b2e948f74e11fa",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:470",
+    "img:p06-b",
+    "61a11ba6425005fe836ae1315b7109323d236b1b",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Le samedi soir, le téléphone sonnait dans le vide. Plus maintenant : Caroline décroche."
+   ],
+   [
+    1,
+    "B",
+    "CAROLINE",
+    "Restaurant FoodEatUp, bonsoir ! Deux menus burger à emporter pour 20 h, c'est noté.",
+    "ba6562cc247c86bf879389f202cbc81db4d9aa44",
+    "99:548",
+    "Bulle · caroline"
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Et moi, je reste à mes fourneaux.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:550",
+    "Bulle · mickael"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Au drive, Jarvis prend la commande à la voix."
+   ],
+   [
+    2,
+    "B",
+    "LE CLIENT",
+    "Un menu poulet, une citronnade yuzu… et ce sera tout !",
+    null,
+    "99:552",
+    "Bulle · le client"
+   ]
+  ]
+ },
+ {
+  "id": "85:501",
+  "n": "Page 70 · BD · Partie 4 · planche",
+  "imgs": [
+   [
+    1,
+    "93:479",
+    "img:p07-a",
+    "b30cb96e3a1b4c69eed5bbee674343f69757164d",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:487",
+    "img:p07-b",
+    "ca922b192f28bb6f378a081ff164629ccc301da8",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Chaque client mérite qu'on se souvienne de lui. À condition qu'il le veuille."
+   ],
+   [
+    1,
+    "B",
+    "LA CLIENTE",
+    "Mon numéro pour cumuler des points ? Avec plaisir, je coche la case.",
+    null,
+    "99:555",
+    "Bulle · la cliente"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Borne, QR code, site, agent vocal : tout se retrouve dans une seule fiche client."
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Chaque contact devient un client qu'on connaît… et qu'on peut faire revenir.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:558",
+    "Bulle · mickael"
+   ]
+  ]
+ },
+ {
+  "id": "85:519",
+  "n": "Page 71 · BD · Partie 4 · planche",
+  "imgs": [
+   [
+    1,
+    "93:496",
+    "img:p08-a",
+    "d079a35f95076ad1643ea66944c87bde099ce725",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:504",
+    "img:p08-b",
+    "a1c08263f3b33d228192c94c54e32470ae07b0bf",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Nos clients commandent comme ils veulent. À nous de suivre."
+   ],
+   [
+    1,
+    "B",
+    "THOMAS",
+    "WhatsApp, site web, appli à notre nom, QR sur les affiches et les chevalets : tout arrive sur la même imprimante.",
+    "0165574af3e2027fce8e931ee8ff802889c39b6a",
+    "99:560",
+    "Bulle · thomas"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Commandé en ligne, prêt à l'heure, sans attendre."
+   ],
+   [
+    2,
+    "B",
+    "SOFIANE",
+    "Commande 214, prête ! Bon appétit !",
+    "1dae5f164d2f5c98bcf123e5d87aebd90728e2fa",
+    "99:562",
+    "Bulle · sofiane"
+   ]
+  ]
+ },
+ {
+  "id": "85:537",
+  "n": "Page 72 · BD · Partie 4 · planche",
+  "imgs": [
+   [
+    1,
+    "93:513",
+    "img:p09-a",
+    "d3860bc7249134cfb02b7e49e52e951600550753",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:525",
+    "img:p09-b",
+    "d0cd98e226c3011f61043946e6cb4361cd59d42f",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Un mois sans visite, c'est un client qui s'éloigne. Alors on lui écrit."
+   ],
+   [
+    1,
+    "B",
+    "INÈS",
+    "Segment « pas venus depuis 30 jours », seulement ceux qui ont accepté les SMS. J'envoie ?",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "99:564",
+    "Bulle · inès"
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Envoie. Dessert offert pour leur retour.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:566",
+    "Bulle · mickael"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Le message arrive. Et le client revient."
+   ],
+   [
+    2,
+    "B",
+    "LE CLIENT",
+    "« Tu nous manques ! Dessert offert ce soir. » Bon… j'y vais !",
+    null,
+    "99:568",
+    "Bulle · le client"
+   ]
+  ]
+ },
+ {
+  "id": "85:560",
+  "n": "Page 73 · BD · Partie 4 · planche",
+  "imgs": [
+   [
+    1,
+    "93:534",
+    "img:p10-a",
+    "ea9e434bfb4c6ae043d831230f25d33f97d99f6a",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:546",
+    "img:p10-b",
+    "e2ba67617cc555b65aa305a11b0be59f30d69909",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Le grand jour : nos premiers franchisés signent. Contrats et suivi dans RapidoCRM."
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Vos clés, vos tablettes, votre compte FoodEatUp : recettes, prix et campagnes sont déjà prêts.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:571",
+    "Bulle · mickael"
+   ],
+   [
+    1,
+    "B",
+    "LA FRANCHISÉE",
+    "On ouvre lundi !",
+    null,
+    "99:573",
+    "Bulle · la franchisée"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Ce soir-là, la brigade augmentée est devenue une famille."
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Bienvenue dans la famille. Ici, une seule saisie fait avancer tout le monde.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:576",
+    "Bulle · mickael"
+   ]
+  ]
+ },
+ {
+  "id": "89:348",
+  "n": "Page 74 · BD · Partie 5 · Titre · LE LABORATOIRE",
+  "imgs": [
+   [
+    0,
+    "89:351",
+    "img:p00-titre",
+    "a928cd9e9f88d5e713b2311ee7c5404fda0f72b2",
+    746,
+    416
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "LA BRIGADE AUGMENTÉE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "PARTIE 5 · LE LABORATOIRE ET LES AGENTS"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Cinq restaurants, un laboratoire central, une équipe d'agents IA. Comment Mickael pilote tout, depuis son téléphone, sans jamais perdre la main."
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Studio Print · FoodEatUp"
+   ]
+  ]
+ },
+ {
+  "id": "89:354",
+  "n": "Page 75 · BD · Partie 5 · planche",
+  "imgs": [
+   [
+    1,
+    "93:555",
+    "img:p01-a",
+    "4c987b0e9aab48352d37b245083215b0972d36dc",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:567",
+    "img:p01-b",
+    "a3fba7acc15ff52262f92e3b65a4f379b5428948",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Trois ans plus tard. Cinq restaurants à faire tourner… alors on a construit un laboratoire central."
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Ici, on prépare les bases pour toutes les boutiques. Même goût, partout.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:578",
+    "Bulle · mickael"
+   ],
+   [
+    1,
+    "B",
+    "BERNARD",
+    "Et chaque lot est tracé, du fournisseur jusqu'au verre.",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "99:580",
+    "Bulle · bernard"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Ici, Léa prépare les bases du matin. Et le dossier HACCP se remplit pendant qu'elle travaille."
+   ],
+   [
+    2,
+    "B",
+    "LÉA",
+    "Base ube, lot du jour, date limite imprimée. Le camion part à 7 h.",
+    "3a5f90d2cbf160421010da0ad58c8de927b357ed",
+    "99:582",
+    "Bulle · léa"
+   ]
+  ]
+ },
+ {
+  "id": "89:377",
+  "n": "Page 76 · BD · Partie 5 · planche",
+  "imgs": [
+   [
+    1,
+    "93:576",
+    "img:p02-a",
+    "5da583a4ca1df688ccf53032410266a057b7af41",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:584",
+    "img:p02-b",
+    "22857cbde45eb7cab120606da7e86bf0478525f9",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Laissez-moi vous montrer le vrai secret. Suivons une seule donnée : le prix du lait."
+   ],
+   [
+    1,
+    "B",
+    "BERNARD",
+    "Nouvelle facture : le lait passe de 1,21 € à 1,29 € le litre. Je la photographie, c'est tout.",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "99:584",
+    "Bulle · bernard"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Une saisie, pas dix : la donnée traverse tout le système, jusqu'à nos cinq restaurants."
+   ],
+   [
+    2,
+    "B",
+    "L'ASSISTANT IA",
+    "Stock, fiches techniques, food cost, marges, carte, borne, appli, site et compta : les cinq restaurants sont à jour.",
+    null,
+    "99:586",
+    "Bulle · l'assistant ia"
+   ]
+  ]
+ },
+ {
+  "id": "89:395",
+  "n": "Page 77 · BD · Partie 5 · planche",
+  "imgs": [
+   [
+    1,
+    "93:593",
+    "img:p03-a",
+    "6cb3e5c873f629e2350072ded195540b9ac586d5",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:601",
+    "img:p03-b",
+    "0c04264b80596113a484518c2a48064e84519732",
+    758,
+    536
+   ],
+   [
+    2,
+    "89:419",
+    "img:a_predibot",
+    "3d5a2cd6cbab0146c942acd95533590670319f0c",
+    54,
+    54
+   ],
+   [
+    2,
+    "89:422",
+    "img:a_iris",
+    "3b369a2997d43ccfd7b0ef80d6004ac17cfdad18",
+    54,
+    54
+   ],
+   [
+    2,
+    "89:425",
+    "img:a_caroline",
+    "ba6562cc247c86bf879389f202cbc81db4d9aa44",
+    54,
+    54
+   ],
+   [
+    2,
+    "89:428",
+    "img:a_jarvis",
+    "e454c1c8580d4f835fbb671eccc2999e41830d8c",
+    54,
+    54
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "6 h. Je dors encore. Sur Plani't, mes agents lancent la routine du matin."
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "À mon réveil, le brief du jour, les stocks et les plannings m'attendent avec le café.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:589",
+    "Bulle · mickael"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Chacun son métier. Plani't les orchestre, le MCP leur ouvre FoodEatUp."
+   ],
+   [
+    2,
+    "T",
+    null,
+    "PRÉDIBOT"
+   ],
+   [
+    2,
+    "T",
+    null,
+    "IRIS"
+   ],
+   [
+    2,
+    "T",
+    null,
+    "CAROLINE"
+   ],
+   [
+    2,
+    "T",
+    null,
+    "JARVIS"
+   ],
+   [
+    2,
+    "B",
+    "THOMAS",
+    "PrédiBot prévoit, Iris communique, Caroline décroche, Jarvis sert le drive.",
+    "0165574af3e2027fce8e931ee8ff802889c39b6a",
+    "99:591",
+    "Bulle · thomas"
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Et nous, on décide.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:593",
+    "Bulle · mickael"
+   ]
+  ]
+ },
+ {
+  "id": "89:431",
+  "n": "Page 78 · BD · Partie 5 · planche",
+  "imgs": [
+   [
+    1,
+    "93:614",
+    "img:p04-a",
+    "a4997fd257d0c927c9df220551dbad2fb88dc879",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:626",
+    "img:p04-b",
+    "724de0ea20dedb5d30f01b33550000d1548bed08",
+    758,
+    536
+   ],
+   [
+    2,
+    "89:455",
+    "img:logo_planit",
+    "d65d60b8c50842f81c2c2869ff0c02e317babc5c",
+    40,
+    40
+   ],
+   [
+    2,
+    "89:454",
+    "img:c_logo",
+    "1a3db87ab46795c5261e6b0cea62878264dd59b8",
+    108,
+    29
+   ],
+   [
+    2,
+    "89:456",
+    "Logo Claude",
+    "66953b22e4eea854b72dac4ffd5384f089421a67",
+    92,
+    26
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Le samedi matin, je fais le marché. Et je pilote depuis WhatsApp."
+   ],
+   [
+    1,
+    "B",
+    "L'ASSISTANT IA",
+    "Les cinq caisses sont clôturées. Deux ruptures à Lille : la commande est prête, tu valides ?",
+    null,
+    "99:597",
+    "Bulle · l'assistant ia"
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Le Z consolidé d'hier et les ruptures du jour ?",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:595",
+    "Bulle · mickael"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Le soir, je prépare la stratégie avec Claude. Une conversation, toutes nos données."
+   ],
+   [
+    2,
+    "T",
+    null,
+    "WhatsApp"
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Claude, compare mes cinq restaurants et propose-moi le plan du mois.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:600",
+    "Bulle · mickael"
+   ]
+  ]
+ },
+ {
+  "id": "89:460",
+  "n": "Page 79 · BD · Partie 5 · planche",
+  "imgs": [
+   [
+    1,
+    "93:635",
+    "img:p05-a",
+    "c0ac201870a2602e38c15196a8a6a0f719f1b996",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:643",
+    "img:p05-b",
+    "e56fd1812d43ebdbe3e9de9aa7ede3cf4514e868",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Une maison, c'est d'abord des gens. Nadia veille sur les cinq équipes."
+   ],
+   [
+    1,
+    "B",
+    "NADIA",
+    "Les plannings suivent l'activité prévue. Et l'offre d'emploi de Marseille a déjà ses premiers candidats.",
+    "ae21252d33dcfc3f9e493d8681ae800387ae7f97",
+    "99:602",
+    "Bulle · nadia"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Et tout le reste remonte au même endroit : avis, cartes cadeaux, livraisons, factures."
+   ],
+   [
+    2,
+    "B",
+    "BERNARD",
+    "Chaque avis a sa réponse, les plateformes passent par HubRise, les factures sont rapprochées.",
+    "c18496e8fb6836f5b32486c3cd0a9bccfb2e10c8",
+    "99:604",
+    "Bulle · bernard"
+   ]
+  ]
+ },
+ {
+  "id": "89:478",
+  "n": "Page 80 · BD · Partie 5 · planche",
+  "imgs": [
+   [
+    1,
+    "93:652",
+    "img:p06-a",
+    "758e06ee47f29c567d1d730d88e20c33515955de",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:660",
+    "img:p06-b",
+    "629df006cadeb651f7ae2ebe3019e90c50074883",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Grandir, c'est aussi transmettre. Chaque nouvel équipier se forme sur l'Académie FoodEatUp."
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Huit boucles, une vidéo par geste, un quiz à chaque fois. En une semaine, vous êtes prêts.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:606",
+    "Bulle · mickael"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "C'est grâce à ce savoir partagé qu'on est passés d'un restaurant à cinq."
+   ],
+   [
+    2,
+    "B",
+    "LA NOUVELLE",
+    "Mon attestation ! Je peux prendre la caisse demain.",
+    null,
+    "99:608",
+    "Bulle · la nouvelle"
+   ]
+  ]
+ },
+ {
+  "id": "89:496",
+  "n": "Page 81 · BD · Partie 5 · planche",
+  "imgs": [
+   [
+    1,
+    "93:669",
+    "img:p07-a",
+    "bba33083c005818a28850039a40e56f93781b159",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:677",
+    "img:p07-b",
+    "ecb5a7a048d200688960523ff6ba5c2fe064538e",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "La vraie force de l'IA ? Prévoir au lieu de subir."
+   ],
+   [
+    1,
+    "B",
+    "KARIM",
+    "PrédiBot a croisé la météo et les ventes : on prépare juste ce qu'il faut. Presque rien à jeter.",
+    "4b83189fb3c9f2070f01af867ffc765ddd9beb5d",
+    "99:611",
+    "Bulle · karim"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Mais la règle ne change pas : l'IA propose, l'humain décide."
+   ],
+   [
+    2,
+    "B",
+    "INÈS",
+    "Trois campagnes chiffrées… je garde celle-ci.",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "99:613",
+    "Bulle · inès"
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "C'est toi qui choisis. Toujours.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:615",
+    "Bulle · mickael"
+   ]
+  ]
+ },
+ {
+  "id": "98:495",
+  "n": "Page 82 · BD · Partie 6 · Titre · UNE INFINITÉ DE SOLUTIONS",
+  "imgs": [
+   [
+    0,
+    "98:498",
+    "img:p6-00-titre",
+    "017e87e2a338be2c31b6c6e63942cc400c62a0a2",
+    746,
+    416
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "LA BRIGADE AUGMENTÉE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "PARTIE 6 · UNE INFINITÉ DE SOLUTIONS"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Connecté par MCP à vos outils (Gmail, Google Sheets, Drive, Slack, WhatsApp, Canva, Figma, Notion, Shopify, Stripe, HubRise…) et partagé sur une marketplace de prompts, FoodEatUp devient la recette de chaque restaurateur."
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Studio Print · FoodEatUp"
+   ]
+  ]
+ },
+ {
+  "id": "98:501",
+  "n": "Page 83 · BD · Partie 6 · planche",
+  "imgs": [
+   [
+    1,
+    "98:503",
+    "img:p6-01-a",
+    "c4765d04514936d3b817a7a34bfddef0709f4032",
+    758,
+    536
+   ],
+   [
+    2,
+    "98:511",
+    "img:p6-01-b",
+    "45563cb8d3f46173543846dd91139ae622de02d0",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Un jour, d'autres restaurateurs sont venus me voir : « Mickael, comment tu fais ? »"
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Je ne fais pas tout. Je connecte FoodEatUp à vos outils grâce au MCP, et l'IA fait le lien.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:621",
+    "Bulle · mickael"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Puis je leur ai ouvert la marketplace : des prompts et des routines prêts à l'emploi, partagés entre restaurateurs."
+   ],
+   [
+    2,
+    "B",
+    "LA PIZZAIOLO",
+    "« Prévoir ma pâte selon la météo »… j'installe !",
+    null,
+    "99:623",
+    "Bulle · la pizzaiolo"
+   ]
+  ]
+ },
+ {
+  "id": "98:519",
+  "n": "Page 84 · BD · Partie 6 · planche",
+  "imgs": [
+   [
+    1,
+    "98:521",
+    "img:p6-02-a",
+    "a0a27dc64a7f4803b001915e60fba50e668cb8ba",
+    758,
+    536
+   ],
+   [
+    2,
+    "98:529",
+    "img:p6-02-b",
+    "0218a70a0ccb9a56d8889a2c1a2e0aff039d140c",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Un traiteur relie Gmail et FoodEatUp : chaque demande devient un devis chiffré."
+   ],
+   [
+    1,
+    "B",
+    "LE TRAITEUR",
+    "Mariage de 120 couverts : le devis est prêt, avec mes vrais coûts. Je n'ai plus qu'à relire.",
+    null,
+    "99:626",
+    "Bulle · le traiteur"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Sa comptable reçoit chaque mois les factures et le chiffre d'affaires dans Google Sheets."
+   ],
+   [
+    2,
+    "B",
+    "LA COMPTABLE",
+    "Plus besoin de relancer pour les pièces. Tout est là le 1er du mois.",
+    null,
+    "99:629",
+    "Bulle · la comptable"
+   ]
+  ]
+ },
+ {
+  "id": "98:537",
+  "n": "Page 85 · BD · Partie 6 · planche",
+  "imgs": [
+   [
+    1,
+    "98:539",
+    "img:p6-03-a",
+    "a5fc7666d1ddaf4f5696c895e6887589bc025047",
+    758,
+    536
+   ],
+   [
+    2,
+    "98:547",
+    "img:p6-03-b",
+    "80d9b73991acbbcd2e818aa3f81022d0f44df67f",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Une boulangère vend ses confitures en ligne : le stock du site suit celui de la boutique."
+   ],
+   [
+    1,
+    "B",
+    "LA BOULANGÈRE",
+    "Une commande en ligne, et mon stock se met à jour. Même la nuit.",
+    null,
+    "99:632",
+    "Bulle · la boulangère"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Un food-truck prévient ses habitués de son emplacement du jour, avec leur accord."
+   ],
+   [
+    2,
+    "B",
+    "LE FOOD-TRUCK",
+    "Place de la mairie, midi. Le message part à mes habitués… et la file se forme !",
+    null,
+    "99:635",
+    "Bulle · le food-truck"
+   ]
+  ]
+ },
+ {
+  "id": "98:555",
+  "n": "Page 86 · BD · Partie 6 · planche",
+  "imgs": [
+   [
+    1,
+    "98:557",
+    "img:p6-04-a",
+    "48c851b763620aced9ef6d00dcfb53df172597f1",
+    758,
+    536
+   ],
+   [
+    2,
+    "98:569",
+    "img:p6-04-b",
+    "2f90fe0c56d6e1047a9ae31f3761d7ae82429d95",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Et notre histoire ? Elle est devenue un dessin animé, fabriqué avec nos propres outils."
+   ],
+   [
+    1,
+    "B",
+    "INÈS",
+    "Chef… tu sors de la BD !",
+    "54c6818caad4f61317f28cbf5d3b72f2f2795c6f",
+    "99:638",
+    "Bulle · inès"
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Je savais bien qu'on finirait à l'écran.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:640",
+    "Bulle · mickael"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Pizzeria, boulangerie, sushi, food-truck, café, brasserie : à chacun sa recette. Les solutions sont infinies."
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Votre restaurant est unique. Votre FoodEatUp aussi.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:642",
+    "Bulle · mickael"
+   ]
+  ]
+ },
+ {
+  "id": "89:519",
+  "n": "Page 87 · BD · Épilogue",
+  "imgs": [
+   [
+    1,
+    "93:690",
+    "img:p08-a",
+    "3e3c1a9978646e62a33c14771bde0d4e7fcc4a27",
+    758,
+    536
+   ],
+   [
+    2,
+    "93:698",
+    "img:p08-b",
+    "64080ff966569f1a7b15cb0f78ed4bd274ba4b68",
+    758,
+    536
+   ]
+  ],
+  "items": [
+   [
+    1,
+    "R",
+    null,
+    "Un soir, je suis retourné dans ma toute première cuisine."
+   ],
+   [
+    1,
+    "B",
+    "MICKAEL",
+    "Vingt ans de coups de feu… Je ne pensais pas qu'on pourrait grandir sans s'épuiser.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:617",
+    "Bulle · mickael"
+   ],
+   [
+    2,
+    "R",
+    null,
+    "Puis je suis rentré dîner avec ma famille. Les restaurants tournent. La brigade veille."
+   ],
+   [
+    2,
+    "B",
+    "MICKAEL",
+    "Une seule saisie… et enfin, du temps pour vous.",
+    "8beeb3621fa40915c21dfae029a8d10e1318d38e",
+    "99:619",
+    "Bulle · mickael"
+   ]
+  ]
+ },
+ {
+  "id": "89:537",
+  "n": "Page 88 · BD · Fermeture · FIN",
+  "imgs": [
+   [
+    0,
+    "89:538",
+    "img:c_logow",
+    "305e751649ab228f99f30bd6797aecb0fb952789",
+    380,
+    52
+   ],
+   [
+    0,
+    "89:595",
+    "img:logo_planit",
+    "d65d60b8c50842f81c2c2869ff0c02e317babc5c",
+    40,
+    40
+   ],
+   [
+    0,
+    "89:594",
+    "img:c_logo",
+    "1a3db87ab46795c5261e6b0cea62878264dd59b8",
+    108,
+    29
+   ],
+   [
+    0,
+    "89:596",
+    "Logo Claude",
+    "66953b22e4eea854b72dac4ffd5384f089421a67",
+    92,
+    26
+   ]
+  ],
+  "items": [
+   [
+    0,
+    "T",
+    null,
+    "LA BRIGADE AUGMENTÉE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Mickael est chef depuis vingt ans. Factures, plannings, appels manqués : il croulait sous la double saisie. Avec FoodEatUp, une information saisie une fois circule partout. Sa brigade, humaine et augmentée par l'IA, a repris le contrôle du service, appris à communiquer sur tous les écrans, puis a grandi en franchise autour d'un laboratoire central. Aujourd'hui, ses agents orchestrés par Plani't et Claude veillent sur cinq restaurants, et il ouvre la porte à tous les restaurateurs. Et Mickael dîne enfin avec sa famille."
+   ],
+   [
+    0,
+    "T",
+    null,
+    "PARTIE 1"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Une journée sans FoodEatUp"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "PARTIE 2"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "La même journée, avec FoodEatUp"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "PARTIE 3"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "La brigade passe à l'écran"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "PARTIE 4"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Expansion & franchise"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "PARTIE 5"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Le laboratoire et les agents"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "PARTIE 6"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Une infinité de solutions"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "LES 8 BOUCLES QUI ONT FAIT GRANDIR LA BRIGADE"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "01 · Carte & recettes"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Un prix change, marges et fiches suivent."
+   ],
+   [
+    0,
+    "T",
+    null,
+    "02 · Équipe & planning"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Des shifts collés à l'activité réelle."
+   ],
+   [
+    0,
+    "T",
+    null,
+    "03 · Stock & achats"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Les ventes deviennent achats et production."
+   ],
+   [
+    0,
+    "T",
+    null,
+    "04 · HACCP"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Un dossier prêt chaque jour."
+   ],
+   [
+    0,
+    "T",
+    null,
+    "05 · Vente en ligne"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Sans commission, dans le même système."
+   ],
+   [
+    0,
+    "T",
+    null,
+    "06 · Communication"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Iris prévient vos clients le matin même."
+   ],
+   [
+    0,
+    "T",
+    null,
+    "07 · Fidélité"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Chaque client devient une relation."
+   ],
+   [
+    0,
+    "T",
+    null,
+    "08 · Chiffres & compta"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Le chiffre du jour avant d'éteindre."
+   ],
+   [
+    0,
+    "T",
+    null,
+    "187 outils MCP · 11 domaines · tutoriels vidéo sur l'Académie"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "WhatsApp"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "FIN"
+   ],
+   [
+    0,
+    "T",
+    null,
+    "Une seule saisie, pas dix.  ·  foodeatup.com  ·  tutoriel.foodeatup.com"
+   ]
+  ]
+ }
+]

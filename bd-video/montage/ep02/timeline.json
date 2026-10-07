@@ -1,0 +1,466 @@
+{
+ "name": "ep02",
+ "duration": 197.71,
+ "fps": 30,
+ "voice": true,
+ "hook": [
+  0,
+  2.2
+ ],
+ "end": [
+  193.71,
+  4.0
+ ],
+ "shots": [
+  {
+   "id": "p32-c1-01",
+   "start": 2.2,
+   "dur": 3.6,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 32
+  },
+  {
+   "id": "p33-c1-01",
+   "start": 5.8,
+   "dur": 2.54,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 33
+  },
+  {
+   "id": "p33-c1-02",
+   "start": 8.34,
+   "dur": 3.09,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 33
+  },
+  {
+   "id": "p33-c2-01",
+   "start": 11.43,
+   "dur": 9.28,
+   "type": "bulle",
+   "voice": "predibot",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 33
+  },
+  {
+   "id": "p34-c1-01",
+   "start": 20.71,
+   "dur": 2.86,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 34
+  },
+  {
+   "id": "p34-c2-01",
+   "start": 23.57,
+   "dur": 5.39,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 34
+  },
+  {
+   "id": "p35-c1-01",
+   "start": 28.96,
+   "dur": 3.77,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 35
+  },
+  {
+   "id": "p35-c2-01",
+   "start": 32.73,
+   "dur": 3.28,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 35
+  },
+  {
+   "id": "p36-c1-01",
+   "start": 36.01,
+   "dur": 4.66,
+   "type": "bulle",
+   "voice": "nadia",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 36
+  },
+  {
+   "id": "p36-c2-01",
+   "start": 40.67,
+   "dur": 4.06,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 36
+  },
+  {
+   "id": "p37-c1-01",
+   "start": 44.73,
+   "dur": 6.41,
+   "type": "bulle",
+   "voice": "iris",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 37
+  },
+  {
+   "id": "p37-c1-02",
+   "start": 51.14,
+   "dur": 1.03,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 37
+  },
+  {
+   "id": "p37-c2-01",
+   "start": 52.17,
+   "dur": 3.69,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 37
+  },
+  {
+   "id": "p38-c1-01",
+   "start": 55.86,
+   "dur": 5.13,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 38
+  },
+  {
+   "id": "p38-c2-01",
+   "start": 60.99,
+   "dur": 4.48,
+   "type": "bulle",
+   "voice": "bernard",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 38
+  },
+  {
+   "id": "p39-c1-01",
+   "start": 65.47,
+   "dur": 3.9,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 39
+  },
+  {
+   "id": "p40-c1-01",
+   "start": 69.37,
+   "dur": 5.73,
+   "type": "bulle",
+   "voice": "caroline",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 40
+  },
+  {
+   "id": "p40-c2-01",
+   "start": 75.1,
+   "dur": 5.08,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 40
+  },
+  {
+   "id": "p41-c1-01",
+   "start": 80.18,
+   "dur": 2.15,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 41
+  },
+  {
+   "id": "p41-c2-01",
+   "start": 82.33,
+   "dur": 4.37,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 41
+  },
+  {
+   "id": "p41-c2-02",
+   "start": 86.7,
+   "dur": 3.25,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 41
+  },
+  {
+   "id": "p42-c1-01",
+   "start": 89.95,
+   "dur": 3.59,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 42
+  },
+  {
+   "id": "p42-c2-01",
+   "start": 93.54,
+   "dur": 2.96,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 42
+  },
+  {
+   "id": "p43-c1-01",
+   "start": 96.5,
+   "dur": 3.12,
+   "type": "bulle",
+   "voice": "karim",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 43
+  },
+  {
+   "id": "p43-c2-01",
+   "start": 99.62,
+   "dur": 2.36,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 43
+  },
+  {
+   "id": "p44-c1-01",
+   "start": 101.98,
+   "dur": 9.07,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 44
+  },
+  {
+   "id": "p44-c2-01",
+   "start": 111.05,
+   "dur": 3.46,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 44
+  },
+  {
+   "id": "p45-c1-01",
+   "start": 114.51,
+   "dur": 4.32,
+   "type": "bulle",
+   "voice": "jarvis",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 45
+  },
+  {
+   "id": "p45-c2-01",
+   "start": 118.83,
+   "dur": 3.93,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 45
+  },
+  {
+   "id": "p46-c1-01",
+   "start": 122.76,
+   "dur": 5.23,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 46
+  },
+  {
+   "id": "p47-c1-01",
+   "start": 127.99,
+   "dur": 2.44,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 47
+  },
+  {
+   "id": "p47-c1-02",
+   "start": 130.43,
+   "dur": 3.51,
+   "type": "bulle",
+   "voice": "sofiane",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 47
+  },
+  {
+   "id": "p47-c2-01",
+   "start": 133.94,
+   "dur": 4.16,
+   "type": "bulle",
+   "voice": "lea",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 47
+  },
+  {
+   "id": "p48-c1-01",
+   "start": 138.1,
+   "dur": 3.77,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 48
+  },
+  {
+   "id": "p48-c1-02",
+   "start": 141.87,
+   "dur": 4.22,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 48
+  },
+  {
+   "id": "p48-c2-01",
+   "start": 146.09,
+   "dur": 4.43,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 48
+  },
+  {
+   "id": "p49-c1-01",
+   "start": 150.52,
+   "dur": 2.0,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 49
+  },
+  {
+   "id": "p49-c1-02",
+   "start": 152.52,
+   "dur": 6.15,
+   "type": "bulle",
+   "voice": "assistant-ia",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 49
+  },
+  {
+   "id": "p49-c2-01",
+   "start": 158.67,
+   "dur": 3.54,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 49
+  },
+  {
+   "id": "p50-c1-01",
+   "start": 162.21,
+   "dur": 3.85,
+   "type": "bulle",
+   "voice": "nadia",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 50
+  },
+  {
+   "id": "p50-c2-01",
+   "start": 166.06,
+   "dur": 4.82,
+   "type": "bulle",
+   "voice": "thomas",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 50
+  },
+  {
+   "id": "p51-c1-01",
+   "start": 170.88,
+   "dur": 6.33,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 51
+  },
+  {
+   "id": "p52-c1-01",
+   "start": 177.21,
+   "dur": 2.5,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 52
+  },
+  {
+   "id": "p52-c2-01",
+   "start": 179.71,
+   "dur": 2.5,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 52
+  },
+  {
+   "id": "p53-c1-01",
+   "start": 182.21,
+   "dur": 11.5,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 2 · La même journée, avec FoodEatUp",
+   "page": 53
+  }
+ ]
+}

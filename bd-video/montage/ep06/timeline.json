@@ -1,0 +1,346 @@
+{
+ "name": "ep06",
+ "duration": 219.19,
+ "fps": 30,
+ "voice": true,
+ "hook": [
+  0,
+  2.2
+ ],
+ "end": [
+  215.19,
+  4.0
+ ],
+ "shots": [
+  {
+   "id": "p82-c1-01",
+   "start": 2.2,
+   "dur": 4.5,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 82
+  },
+  {
+   "id": "p82-c1-02",
+   "start": 6.7,
+   "dur": 12.6,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 82
+  },
+  {
+   "id": "p82-c1-03",
+   "start": 19.3,
+   "dur": 2.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 82
+  },
+  {
+   "id": "p83-c1-01",
+   "start": 22.0,
+   "dur": 4.37,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 83
+  },
+  {
+   "id": "p83-c1-02",
+   "start": 26.37,
+   "dur": 6.36,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 83
+  },
+  {
+   "id": "p83-c2-01",
+   "start": 32.73,
+   "dur": 6.25,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 83
+  },
+  {
+   "id": "p83-c2-02",
+   "start": 38.98,
+   "dur": 4.06,
+   "type": "bulle",
+   "voice": "la-pizzaiolo",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 83
+  },
+  {
+   "id": "p84-c1-01",
+   "start": 43.04,
+   "dur": 5.03,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 84
+  },
+  {
+   "id": "p84-c1-02",
+   "start": 48.07,
+   "dur": 6.38,
+   "type": "bulle",
+   "voice": "le-traiteur",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 84
+  },
+  {
+   "id": "p84-c2-01",
+   "start": 54.45,
+   "dur": 4.97,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 84
+  },
+  {
+   "id": "p84-c2-02",
+   "start": 59.42,
+   "dur": 3.88,
+   "type": "bulle",
+   "voice": "la-comptable",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 84
+  },
+  {
+   "id": "p85-c1-01",
+   "start": 63.3,
+   "dur": 5.29,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 85
+  },
+  {
+   "id": "p85-c1-02",
+   "start": 68.59,
+   "dur": 4.32,
+   "type": "bulle",
+   "voice": "la-boulangere",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 85
+  },
+  {
+   "id": "p85-c2-01",
+   "start": 72.91,
+   "dur": 4.53,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 85
+  },
+  {
+   "id": "p85-c2-02",
+   "start": 77.44,
+   "dur": 7.82,
+   "type": "bulle",
+   "voice": "le-food-truck",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 85
+  },
+  {
+   "id": "p86-c1-01",
+   "start": 85.26,
+   "dur": 5.08,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 86
+  },
+  {
+   "id": "p86-c1-02",
+   "start": 90.34,
+   "dur": 4.03,
+   "type": "bulle",
+   "voice": "ines",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 86
+  },
+  {
+   "id": "p86-c1-03",
+   "start": 94.37,
+   "dur": 2.1,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 86
+  },
+  {
+   "id": "p86-c2-01",
+   "start": 96.47,
+   "dur": 8.16,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 86
+  },
+  {
+   "id": "p86-c2-02",
+   "start": 104.63,
+   "dur": 3.98,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Partie 6 · Une infinité de solutions",
+   "page": 86
+  },
+  {
+   "id": "p87-c1-01",
+   "start": 108.61,
+   "dur": 4.01,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Épilogue",
+   "page": 87
+  },
+  {
+   "id": "p87-c1-02",
+   "start": 112.62,
+   "dur": 5.29,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Épilogue",
+   "page": 87
+  },
+  {
+   "id": "p87-c2-01",
+   "start": 117.91,
+   "dur": 6.38,
+   "type": "recit",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Épilogue",
+   "page": 87
+  },
+  {
+   "id": "p87-c2-02",
+   "start": 124.29,
+   "dur": 4.9,
+   "type": "bulle",
+   "voice": "mickael",
+   "has_vo": true,
+   "part": "Épilogue",
+   "page": 87
+  },
+  {
+   "id": "p88-c1-01",
+   "start": 129.19,
+   "dur": 2.5,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-02",
+   "start": 131.69,
+   "dur": 27.7,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-03",
+   "start": 159.39,
+   "dur": 7.6,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-04",
+   "start": 166.99,
+   "dur": 9.6,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-05",
+   "start": 176.59,
+   "dur": 8.1,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-06",
+   "start": 184.69,
+   "dur": 8.1,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-07",
+   "start": 192.79,
+   "dur": 9.3,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-08",
+   "start": 202.09,
+   "dur": 7.8,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  },
+  {
+   "id": "p88-c1-09",
+   "start": 209.89,
+   "dur": 5.3,
+   "type": "titre",
+   "voice": null,
+   "has_vo": false,
+   "part": "Fermeture",
+   "page": 88
+  }
+ ]
+}
