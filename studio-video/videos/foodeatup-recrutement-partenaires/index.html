@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1080, height=1920" />
     <!--
-      Recrutement du réseau de partenaires FoodEatUp — vertical 1080×1920, 32 s.
+      Recrutement du réseau de partenaires FoodEatUp — vertical 1080×1920, 47 s (v2 : voix Adam + musique).
       Tout le texte vient de src/data/partenaires.ts (dépôt Académie) : angle,
       promesse, accroches, rémunérations, ce que FoodEatUp fournit, délai de
       réponse. Seule la rémunération du formateur est chiffrée sur le site ;
       les trois autres profils restent « commission sur les ventes », barème au
       rendez-vous. Ne pas ajouter de montant qui n'y figure pas.
+      Voix : Adam - Instructor (ElevenLabs, eleven_multilingual_v2) ; musique :
+      ElevenLabs Music v2.5, instrumentale. Scènes et sous-titres calés sur la
+      transcription mot à mot (ElevenLabs Scribe).
     -->
     <script src="assets/vendor/gsap.min.js"></script>
     <style>
@@ -63,13 +66,14 @@
         display: inline-block; }
 
       /* 3 · Quatre façons */
-      #s3 { justify-content: flex-start; padding-top: 300px; }
+      #s3 { justify-content: flex-start; padding-top: 220px; }
       #s3 h2 { font-size: 84px; font-weight: 700; line-height: 1.05; }
       #s3 h2 b { color: var(--blue); }
-      .cards { display: flex; flex-direction: column; gap: 30px; margin-top: 64px; width: 100%; }
+      .cards { display: flex; flex-direction: column; gap: 26px; margin-top: 50px; width: 100%; }
       .card { position: relative; display: flex; align-items: center; gap: 34px; text-align: left;
         background: #fff; border: 3px solid var(--ink); border-radius: 40px; padding: 34px 40px;
         box-shadow: 0 12px 0 var(--ink); }
+      #s3 .card { padding: 28px 40px; }
       .card .num { flex: none; width: 104px; height: 104px; border-radius: 30px; display: flex;
         align-items: center; justify-content: center; font-size: 60px; font-weight: 700; color: #fff; }
       .card h3 { font-size: 56px; font-weight: 700; line-height: 1; }
@@ -99,17 +103,26 @@
         border-radius: 999px; padding: 16px 30px; display: inline-block; }
       .cta .small { margin-top: 26px; font-size: 34px; font-weight: 500; opacity: .92; }
       #s5 .chef-end { width: 210px; height: auto; margin-top: 56px; }
+
+      /* Sous-titres : une ligne, blanc, contour noir, bas d'écran */
+      #subs { position: absolute; left: 0; right: 0; bottom: 120px; height: 100px; }
+      .sub { position: absolute; left: 40px; right: 40px; text-align: center; font-size: 62px; font-weight: 700;
+        color: #fff; -webkit-text-stroke: 8px #0f1a23; paint-order: stroke fill; letter-spacing: 1px;
+        opacity: 0; white-space: nowrap; }
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="32" data-width="1080" data-height="1920">
-      <div id="halo-blue" class="halo clip" data-start="0" data-duration="32" data-track-index="0"></div>
-      <div id="halo-orange" class="halo clip" data-start="0" data-duration="32" data-track-index="0"></div>
-      <img id="logo-top" class="clip" data-start="0" data-duration="26.5" data-track-index="1"
+    <div id="root" data-composition-id="main" data-start="0" data-duration="47" data-width="1080" data-height="1920">
+      <audio id="voix" class="clip" src="assets/audio/voix-adam.mp3" data-start="0" data-duration="45.14" data-track-index="10" data-volume="1"></audio>
+      <audio id="musique" class="clip" src="assets/audio/musique.mp3" data-start="0" data-duration="47" data-track-index="11"
+        data-volume="0.15" data-fade-in="0.6" data-fade-out="2.5"></audio>
+      <div id="halo-blue" class="halo clip" data-start="0" data-duration="47" data-track-index="0"></div>
+      <div id="halo-orange" class="halo clip" data-start="0" data-duration="47" data-track-index="0"></div>
+      <img id="logo-top" class="clip" data-start="0" data-duration="35.85" data-track-index="1"
         src="assets/brand/foodeatup-logo-horizontal-mascot.png" alt="FoodEatUp" />
 
-      <!-- 1 · Accroche (0 → 4,5 s) -->
-      <section id="s1" class="scene clip" data-start="0" data-duration="4.5" data-track-index="2">
+      <!-- 1 · Accroche (0 → 4,2 s) -->
+      <section id="s1" class="scene clip" data-start="0" data-duration="4.2" data-track-index="2">
         <img class="chef" src="assets/brand/chef-icon.svg" alt="" />
         <h1>Vous êtes<br /><em>indépendant</em> ?</h1>
         <div class="chips">
@@ -119,15 +132,15 @@
         </div>
       </section>
 
-      <!-- 2 · L'angle du réseau (4,5 → 9 s) -->
-      <section id="s2" class="scene clip" data-start="4.5" data-duration="4.5" data-track-index="2">
+      <!-- 2 · L'angle du réseau (4,2 → 9,75 s) -->
+      <section id="s2" class="scene clip" data-start="4.2" data-duration="5.55" data-track-index="2">
         <div class="quote-mark">“</div>
         <p class="l1">On ne vend pas<br /><s>une caisse de plus.</s></p>
         <p class="l2">On accompagne un restaurant qui passe à <span class="ia">l'IA</span>.</p>
       </section>
 
-      <!-- 3 · Les quatre façons (9 → 21 s) -->
-      <section id="s3" class="scene clip" data-start="9" data-duration="12" data-track-index="2">
+      <!-- 3 · Les quatre façons (9,75 → 27,5 s) -->
+      <section id="s3" class="scene clip" data-start="9.75" data-duration="17.75" data-track-index="2">
         <h2><b>4 façons</b> de travailler<br />avec FoodEatUp</h2>
         <div class="cards">
           <div class="card" id="c1">
@@ -153,8 +166,8 @@
         </div>
       </section>
 
-      <!-- 4 · Ce que vous recevez (21 → 26,5 s) -->
-      <section id="s4" class="scene clip" data-start="21" data-duration="5.5" data-track-index="2">
+      <!-- 4 · Ce que vous recevez (27,5 → 35,85 s) -->
+      <section id="s4" class="scene clip" data-start="27.5" data-duration="8.35" data-track-index="2">
         <h2>Vous n'êtes<br /><em>jamais seul</em></h2>
         <ul class="gives">
           <li><span class="tick">✓</span>Une formation au logiciel et au protocole MCP</li>
@@ -164,8 +177,8 @@
         </ul>
       </section>
 
-      <!-- 5 · Appel à candidater (26,5 → 32 s) -->
-      <section id="s5" class="scene clip" data-start="26.5" data-duration="5.5" data-track-index="2">
+      <!-- 5 · Appel à candidater (35,85 → 47 s) -->
+      <section id="s5" class="scene clip" data-start="35.85" data-duration="11.15" data-track-index="2">
         <div class="trio"><span>Votre rôle.</span><span>Votre zone.</span><span>Votre rythme.</span></div>
         <div class="cta">
           <div class="big">Candidatez en 10 minutes</div>
@@ -174,55 +187,91 @@
         </div>
         <img class="chef-end" src="assets/brand/chef-icon.svg" alt="" />
       </section>
+
+      <div id="subs" class="clip" data-start="0" data-duration="47" data-track-index="5"></div>
     </div>
 
     <script>
       window.__timelines = window.__timelines || {};
       const tl = gsap.timeline({ paused: true });
 
+      // Sous-titres : début de chaque bloc = premier mot dans la transcription Scribe.
+      const SUBS = [
+        [0.0, "Vous êtes indépendant ?"], [1.6, "Formateur, commercial, technicien ?"],
+        [4.23, "Chez FoodEatUp, on ne vend pas"], [5.94, "une caisse de plus"],
+        [7.09, "On accompagne un restaurant"], [8.45, "qui passe à l'IA"],
+        [9.79, "Il y a quatre façons"], [10.77, "de travailler avec nous"],
+        [12.0, "Former les équipes"], [13.11, "payé 50 %"], [14.73, "par formation sur place"],
+        [16.17, "soit 250 € l'après-midi"],
+        [18.69, "Revendre la suite complète"], [20.15, "installer le matériel de caisse"],
+        [21.76, "ou simplement présenter un restaurateur"],
+        [24.37, "Avec, à chaque fois"], [25.7, "une commission sur les ventes"],
+        [27.57, "Vous n'êtes jamais seul"], [28.98, "une formation au logiciel"],
+        [30.53, "plus de 170 vidéos"], [32.45, "un compte de démo"],
+        [33.6, "et un chef cuisinier"], [34.8, "au bout du fil"],
+        [35.9, "Votre rôle, votre zone"], [37.76, "votre rythme"],
+        [39.0, "Candidatez en dix minutes"],
+      ];
+      const subsBox = document.getElementById("subs");
+      SUBS.forEach(([t, text], i) => {
+        const el = document.createElement("div");
+        el.className = "sub";
+        el.textContent = text;
+        subsBox.appendChild(el);
+        const end = i + 1 < SUBS.length ? SUBS[i + 1][0] : 40.4;
+        tl.set(el, { opacity: 1 }, t);
+        tl.set(el, { opacity: 0 }, end);
+      });
+
       // Décor : dérive lente des halos, sur toute la durée.
-      tl.to("#halo-blue", { x: 140, y: 120, duration: 32, ease: "sine.inOut" }, 0);
-      tl.to("#halo-orange", { x: -120, y: -160, duration: 32, ease: "sine.inOut" }, 0);
+      tl.to("#halo-blue", { x: 140, y: 120, duration: 47, ease: "sine.inOut" }, 0);
+      tl.to("#halo-orange", { x: -120, y: -160, duration: 47, ease: "sine.inOut" }, 0);
       // La première image sert de vignette sur les réseaux : logo, chef et titre y sont déjà.
 
-      // 1 · Accroche
+      // 1 · Accroche : les trois métiers sur la voix
       tl.fromTo("#s1 .chef", { rotation: -6 }, { rotation: 6, duration: 0.5, yoyo: true, repeat: 5, ease: "sine.inOut" }, 0.2);
-      tl.fromTo("#s1 h1 em", { scale: 1 }, { scale: 1.12, duration: 0.3, yoyo: true, repeat: 1, ease: "back.out(3)" }, 0.6);
-      tl.from("#s1 .chip", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, stagger: 0.22, ease: "back.out(2.5)" }, 1.4);
-      tl.to("#s1", { opacity: 0, y: -60, duration: 0.35, ease: "power2.in" }, 4.15);
+      tl.fromTo("#s1 h1 em", { scale: 1 }, { scale: 1.12, duration: 0.3, yoyo: true, repeat: 1, ease: "back.out(3)" }, 0.45);
+      [1.6, 2.38, 3.2].forEach((t, i) => {
+        tl.from(`#s1 .chip:nth-child(${i + 1})`, { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, t);
+      });
+      tl.to("#s1", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 3.95);
 
       // 2 · Angle : la caisse se barre, l'IA s'allume
-      tl.from("#s2 .quote-mark", { scale: 0, duration: 0.5, ease: "back.out(2)" }, 4.55);
-      tl.from("#s2 .l1", { y: 50, opacity: 0, duration: 0.5, ease: "power3.out" }, 4.7);
-      tl.from("#s2 .l1 s", { textDecorationColor: "rgba(255,165,0,0)", duration: 0.4 }, 5.6);
-      tl.from("#s2 .l2", { y: 60, opacity: 0, duration: 0.6, ease: "back.out(1.6)" }, 6.2);
-      tl.from("#s2 .ia", { scale: 0.4, rotation: -8, duration: 0.6, ease: "elastic.out(1, 0.5)" }, 6.9);
-      tl.to("#s2", { opacity: 0, scale: 0.96, duration: 0.35, ease: "power2.in" }, 8.65);
+      tl.from("#s2 .quote-mark", { scale: 0, duration: 0.5, ease: "back.out(2)" }, 4.25);
+      tl.from("#s2 .l1", { y: 50, opacity: 0, duration: 0.5, ease: "power3.out" }, 4.4);
+      tl.from("#s2 .l1 s", { textDecorationColor: "rgba(255,165,0,0)", duration: 0.4 }, 6.3);
+      tl.from("#s2 .l2", { y: 60, opacity: 0, duration: 0.6, ease: "back.out(1.6)" }, 7.05);
+      tl.to("#s2 .ia", { scale: 1.18, rotation: -4, duration: 0.18, yoyo: true, repeat: 1, ease: "back.out(3)" }, 9.05);
+      tl.to("#s2", { opacity: 0, scale: 0.96, duration: 0.3, ease: "power2.in" }, 9.45);
 
-      // 3 · Les quatre cartes, une par une
-      tl.from("#s3 h2", { y: 50, opacity: 0, duration: 0.5, ease: "back.out(1.8)" }, 9.05);
-      ["#c1", "#c2", "#c3", "#c4"].forEach((id, i) => {
-        const t = 9.9 + i * 2.4;
-        tl.from(id, { x: i % 2 ? 700 : -700, rotation: i % 2 ? 4 : -4, opacity: 0, duration: 0.6, ease: "back.out(1.4)" }, t);
-        tl.from(`${id} .num`, { scale: 0, duration: 0.45, ease: "back.out(3)" }, t + 0.3);
-        tl.from(`${id} .tag`, { scale: 0.5, opacity: 0, duration: 0.4, ease: "back.out(2.5)" }, t + 0.7);
+      // 3 · Les quatre cartes, chacune sur son verbe
+      tl.from("#s3 h2", { y: 50, opacity: 0, duration: 0.5, ease: "back.out(1.8)" }, 9.8);
+      [["#c1", 12.0, 13.1], ["#c2", 18.69, 25.7], ["#c3", 20.15, 25.85], ["#c4", 21.76, 26.0]].forEach(([id, t, tag], i) => {
+        tl.from(id, { x: i % 2 ? 700 : -700, rotation: i % 2 ? 4 : -4, opacity: 0, duration: 0.6, ease: "back.out(1.4)" }, t - 0.1);
+        tl.from(`${id} .num`, { scale: 0, duration: 0.45, ease: "back.out(3)" }, t + 0.2);
+        tl.from(`${id} .tag`, { scale: 0.5, opacity: 0, duration: 0.4, ease: "back.out(2.5)" }, tag);
       });
-      tl.to("#s3 .card", { scale: 1.02, duration: 0.25, yoyo: true, repeat: 1, stagger: 0.12 }, 19.6);
-      tl.to("#s3", { opacity: 0, y: -80, duration: 0.4, ease: "power2.in" }, 20.6);
+      tl.to("#c1 .tag", { scale: 1.08, duration: 0.25, yoyo: true, repeat: 1 }, 16.6);
+      tl.to("#s3 .card", { scale: 1.02, duration: 0.25, yoyo: true, repeat: 1, stagger: 0.12 }, 26.4);
+      tl.to("#s3", { opacity: 0, y: -80, duration: 0.35, ease: "power2.in" }, 27.15);
 
-      // 4 · Ce que vous recevez
-      tl.from("#s4 h2", { y: 50, opacity: 0, duration: 0.5, ease: "back.out(1.8)" }, 21.05);
-      tl.from("#s4 li", { x: -80, opacity: 0, duration: 0.45, stagger: 0.45, ease: "power3.out" }, 21.6);
-      tl.from("#s4 .tick", { scale: 0, rotation: -90, duration: 0.4, stagger: 0.45, ease: "back.out(3)" }, 21.75);
-      tl.to("#s4", { opacity: 0, duration: 0.35, ease: "power2.in" }, 26.15);
-      tl.to("#logo-top", { opacity: 0, duration: 0.3 }, 26.15);
+      // 4 · Ce que vous recevez, une ligne par élément cité
+      tl.from("#s4 h2", { y: 50, opacity: 0, duration: 0.5, ease: "back.out(1.8)" }, 27.55);
+      [28.98, 30.53, 32.45, 33.6].forEach((t, i) => {
+        tl.from(`#s4 li:nth-child(${i + 1})`, { x: -80, opacity: 0, duration: 0.45, ease: "power3.out" }, t - 0.05);
+        tl.from(`#s4 li:nth-child(${i + 1}) .tick`, { scale: 0, rotation: -90, duration: 0.4, ease: "back.out(3)" }, t + 0.1);
+      });
+      tl.to("#s4", { opacity: 0, duration: 0.3, ease: "power2.in" }, 35.55);
+      tl.to("#logo-top", { opacity: 0, duration: 0.3 }, 35.55);
 
       // 5 · Appel à candidater
-      tl.from("#s5 .trio span", { y: 70, opacity: 0, duration: 0.5, stagger: 0.35, ease: "back.out(2)" }, 26.6);
-      tl.from("#s5 .cta", { y: 160, opacity: 0, scale: 0.9, duration: 0.6, ease: "back.out(1.6)" }, 27.9);
-      tl.from("#s5 .url", { scale: 0.8, duration: 0.5, ease: "elastic.out(1, 0.5)" }, 28.4);
-      tl.from("#s5 .chef-end", { y: 120, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 28.9);
-      tl.to("#s5 .url", { scale: 1.05, duration: 0.45, yoyo: true, repeat: 3, ease: "sine.inOut" }, 29.6);
+      [35.9, 36.83, 37.76].forEach((t, i) => {
+        tl.from(`#s5 .trio span:nth-child(${i + 1})`, { y: 70, opacity: 0, duration: 0.5, ease: "back.out(2)" }, t);
+      });
+      tl.from("#s5 .cta", { y: 160, opacity: 0, scale: 0.9, duration: 0.6, ease: "back.out(1.6)" }, 38.95);
+      tl.from("#s5 .url", { scale: 0.8, duration: 0.5, ease: "elastic.out(1, 0.5)" }, 40.4);
+      tl.from("#s5 .chef-end", { y: 120, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 41.2);
+      tl.to("#s5 .url", { scale: 1.05, duration: 0.45, yoyo: true, repeat: 5, ease: "sine.inOut" }, 41.8);
 
       window.__timelines["main"] = tl;
     </script>
