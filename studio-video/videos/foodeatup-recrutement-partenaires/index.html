@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <!--
+      Recrutement du réseau de partenaires FoodEatUp — vertical 1080×1920, 32 s.
+      Tout le texte vient de src/data/partenaires.ts (dépôt Académie) : angle,
+      promesse, accroches, rémunérations, ce que FoodEatUp fournit, délai de
+      réponse. Seule la rémunération du formateur est chiffrée sur le site ;
+      les trois autres profils restent « commission sur les ventes », barème au
+      rendez-vous. Ne pas ajouter de montant qui n'y figure pas.
+    -->
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Goodly";
+        /* Fredoka en remplacement de Goodly, comme dans le studio. */
+        src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight: 300 700;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #fcf9e6; }
+      body {
+        font-family: "Goodly", sans-serif;
+        color: #0f1a23;
+        --bg: #fcf9e6;
+        --bg-deep: #f5efcf;
+        --ink: #0f1a23;
+        --ink-soft: #55616b;
+        --blue: #007bff;
+        --orange: #ffa500;
+        --orange-text: #c88100; /* orange foncé : contraste ≥ 3:1 sur le crème */
+      }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+
+      /* Décor commun : deux halos de marque qui dérivent lentement. */
+      .halo { position: absolute; border-radius: 50%; filter: blur(10px); }
+      #halo-blue { width: 900px; height: 900px; left: -320px; top: -260px;
+        background: radial-gradient(circle, rgba(0,123,255,.16), transparent 65%); }
+      #halo-orange { width: 820px; height: 820px; right: -300px; bottom: -220px;
+        background: radial-gradient(circle, rgba(255,165,0,.22), transparent 65%); }
+      #logo-top { position: absolute; top: 96px; left: 50%; transform: translateX(-50%);
+        width: 400px; height: auto; }
+
+      .scene { position: absolute; inset: 0; display: flex; flex-direction: column;
+        align-items: center; justify-content: center; padding: 0 90px; text-align: center; }
+
+      /* 1 · Accroche */
+      #s1 .chef { width: 360px; height: auto; margin-bottom: 40px; }
+      #s1 h1 { font-size: 108px; line-height: 1.02; font-weight: 700; letter-spacing: -1px; }
+      #s1 h1 em { font-style: normal; color: var(--blue); }
+      .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin-top: 56px; }
+      .chip { font-size: 38px; font-weight: 600; padding: 14px 30px; border-radius: 999px;
+        background: #fff; border: 3px solid var(--ink); box-shadow: 0 8px 0 var(--ink); }
+
+      /* 2 · Angle */
+      #s2 .quote-mark { font-size: 240px; line-height: .6; color: var(--orange-text); font-weight: 700; }
+      #s2 .l1 { font-size: 74px; font-weight: 600; line-height: 1.12; color: var(--ink-soft); }
+      #s2 .l1 s { text-decoration-thickness: 8px; text-decoration-color: var(--orange); }
+      #s2 .l2 { font-size: 96px; font-weight: 700; line-height: 1.06; margin-top: 46px; }
+      #s2 .l2 .ia { color: #fff; background: var(--blue); padding: 0 22px; border-radius: 22px;
+        display: inline-block; }
+
+      /* 3 · Quatre façons */
+      #s3 { justify-content: flex-start; padding-top: 300px; }
+      #s3 h2 { font-size: 84px; font-weight: 700; line-height: 1.05; }
+      #s3 h2 b { color: var(--blue); }
+      .cards { display: flex; flex-direction: column; gap: 30px; margin-top: 64px; width: 100%; }
+      .card { position: relative; display: flex; align-items: center; gap: 34px; text-align: left;
+        background: #fff; border: 3px solid var(--ink); border-radius: 40px; padding: 34px 40px;
+        box-shadow: 0 12px 0 var(--ink); }
+      .card .num { flex: none; width: 104px; height: 104px; border-radius: 30px; display: flex;
+        align-items: center; justify-content: center; font-size: 60px; font-weight: 700; color: #fff; }
+      .card h3 { font-size: 56px; font-weight: 700; line-height: 1; }
+      .card p { font-size: 33px; line-height: 1.28; color: var(--ink-soft); margin-top: 10px; font-weight: 500; }
+      .card .tag { display: inline-block; margin-top: 14px; font-size: 29px; font-weight: 600;
+        padding: 6px 18px; border-radius: 999px; background: var(--bg-deep); color: var(--ink); }
+
+      /* 4 · Ce que vous recevez */
+      #s4 h2 { font-size: 90px; font-weight: 700; line-height: 1.05; }
+      #s4 h2 em { font-style: normal; color: var(--orange-text); }
+      .gives { list-style: none; margin-top: 70px; width: 100%; text-align: left; }
+      .gives li { display: flex; align-items: flex-start; gap: 30px; font-size: 48px; font-weight: 600;
+        line-height: 1.2; padding: 26px 0; border-bottom: 3px dashed rgba(15,26,35,.18); }
+      .gives li:last-child { border-bottom: 0; }
+      .tick { flex: none; width: 70px; height: 70px; border-radius: 50%; background: var(--blue);
+        color: #fff; display: flex; align-items: center; justify-content: center; font-size: 44px; margin-top: -4px; }
+
+      /* 5 · Appel à candidater */
+      #s5 .trio { display: flex; flex-direction: column; gap: 6px; }
+      #s5 .trio span { font-size: 112px; font-weight: 700; line-height: 1.04; }
+      #s5 .trio span:nth-child(2) { color: var(--blue); }
+      #s5 .trio span:nth-child(3) { color: var(--orange-text); }
+      .cta { margin-top: 80px; width: 100%; background: var(--blue); color: #fff; border-radius: 48px;
+        padding: 56px 50px; box-shadow: 0 16px 0 #0057b8; }
+      .cta .big { font-size: 64px; font-weight: 700; line-height: 1.1; }
+      .cta .url { margin-top: 26px; font-size: 44px; font-weight: 600; background: #fff; color: var(--blue);
+        border-radius: 999px; padding: 16px 30px; display: inline-block; }
+      .cta .small { margin-top: 26px; font-size: 34px; font-weight: 500; opacity: .92; }
+      #s5 .chef-end { width: 210px; height: auto; margin-top: 56px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="32" data-width="1080" data-height="1920">
+      <div id="halo-blue" class="halo clip" data-start="0" data-duration="32" data-track-index="0"></div>
+      <div id="halo-orange" class="halo clip" data-start="0" data-duration="32" data-track-index="0"></div>
+      <img id="logo-top" class="clip" data-start="0" data-duration="26.5" data-track-index="1"
+        src="assets/brand/foodeatup-logo-horizontal-mascot.png" alt="FoodEatUp" />
+
+      <!-- 1 · Accroche (0 → 4,5 s) -->
+      <section id="s1" class="scene clip" data-start="0" data-duration="4.5" data-track-index="2">
+        <img class="chef" src="assets/brand/chef-icon.svg" alt="" />
+        <h1>Vous êtes<br /><em>indépendant</em> ?</h1>
+        <div class="chips">
+          <span class="chip">Formateur</span>
+          <span class="chip">Commercial</span>
+          <span class="chip">Technicien</span>
+        </div>
+      </section>
+
+      <!-- 2 · L'angle du réseau (4,5 → 9 s) -->
+      <section id="s2" class="scene clip" data-start="4.5" data-duration="4.5" data-track-index="2">
+        <div class="quote-mark">“</div>
+        <p class="l1">On ne vend pas<br /><s>une caisse de plus.</s></p>
+        <p class="l2">On accompagne un restaurant qui passe à <span class="ia">l'IA</span>.</p>
+      </section>
+
+      <!-- 3 · Les quatre façons (9 → 21 s) -->
+      <section id="s3" class="scene clip" data-start="9" data-duration="12" data-track-index="2">
+        <h2><b>4 façons</b> de travailler<br />avec FoodEatUp</h2>
+        <div class="cards">
+          <div class="card" id="c1">
+            <div class="num" style="background:#7c3aed">1</div>
+            <div><h3>Former</h3><p>Vous formez les équipes, avec un contenu déjà prêt.</p>
+              <span class="tag">50 % par formation sur place · 250 € l'après-midi</span></div>
+          </div>
+          <div class="card" id="c2">
+            <div class="num" style="background:#0f766e">2</div>
+            <div><h3>Revendre</h3><p>Vous vendez la suite complète à vos restaurateurs.</p>
+              <span class="tag">Commission sur les ventes</span></div>
+          </div>
+          <div class="card" id="c3">
+            <div class="num" style="background:#ea580c">3</div>
+            <div><h3>Installer</h3><p>Vous posez le matériel et mettez l'équipe en route.</p>
+              <span class="tag">Commission sur les ventes</span></div>
+          </div>
+          <div class="card" id="c4">
+            <div class="num" style="background:#007bff">4</div>
+            <div><h3>Présenter</h3><p>Vous présentez un restaurateur, nous faisons le reste.</p>
+              <span class="tag">Commission · zéro charge de travail</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 · Ce que vous recevez (21 → 26,5 s) -->
+      <section id="s4" class="scene clip" data-start="21" data-duration="5.5" data-track-index="2">
+        <h2>Vous n'êtes<br /><em>jamais seul</em></h2>
+        <ul class="gives">
+          <li><span class="tick">✓</span>Une formation au logiciel et au protocole MCP</li>
+          <li><span class="tick">✓</span>Plus de 170 vidéos et des parcours prêts</li>
+          <li><span class="tick">✓</span>Un compte de démonstration déjà rempli</li>
+          <li><span class="tick">✓</span>Un chef cuisinier au bout du fil</li>
+        </ul>
+      </section>
+
+      <!-- 5 · Appel à candidater (26,5 → 32 s) -->
+      <section id="s5" class="scene clip" data-start="26.5" data-duration="5.5" data-track-index="2">
+        <div class="trio"><span>Votre rôle.</span><span>Votre zone.</span><span>Votre rythme.</span></div>
+        <div class="cta">
+          <div class="big">Candidatez en 10 minutes</div>
+          <div class="url">tutoriel.foodeatup.com/partenaires</div>
+          <div class="small">Pas de CV obligatoire · réponse sous 5 jours ouvrés</div>
+        </div>
+        <img class="chef-end" src="assets/brand/chef-icon.svg" alt="" />
+      </section>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Décor : dérive lente des halos, sur toute la durée.
+      tl.to("#halo-blue", { x: 140, y: 120, duration: 32, ease: "sine.inOut" }, 0);
+      tl.to("#halo-orange", { x: -120, y: -160, duration: 32, ease: "sine.inOut" }, 0);
+      // La première image sert de vignette sur les réseaux : logo, chef et titre y sont déjà.
+
+      // 1 · Accroche
+      tl.fromTo("#s1 .chef", { rotation: -6 }, { rotation: 6, duration: 0.5, yoyo: true, repeat: 5, ease: "sine.inOut" }, 0.2);
+      tl.fromTo("#s1 h1 em", { scale: 1 }, { scale: 1.12, duration: 0.3, yoyo: true, repeat: 1, ease: "back.out(3)" }, 0.6);
+      tl.from("#s1 .chip", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, stagger: 0.22, ease: "back.out(2.5)" }, 1.4);
+      tl.to("#s1", { opacity: 0, y: -60, duration: 0.35, ease: "power2.in" }, 4.15);
+
+      // 2 · Angle : la caisse se barre, l'IA s'allume
+      tl.from("#s2 .quote-mark", { scale: 0, duration: 0.5, ease: "back.out(2)" }, 4.55);
+      tl.from("#s2 .l1", { y: 50, opacity: 0, duration: 0.5, ease: "power3.out" }, 4.7);
+      tl.from("#s2 .l1 s", { textDecorationColor: "rgba(255,165,0,0)", duration: 0.4 }, 5.6);
+      tl.from("#s2 .l2", { y: 60, opacity: 0, duration: 0.6, ease: "back.out(1.6)" }, 6.2);
+      tl.from("#s2 .ia", { scale: 0.4, rotation: -8, duration: 0.6, ease: "elastic.out(1, 0.5)" }, 6.9);
+      tl.to("#s2", { opacity: 0, scale: 0.96, duration: 0.35, ease: "power2.in" }, 8.65);
+
+      // 3 · Les quatre cartes, une par une
+      tl.from("#s3 h2", { y: 50, opacity: 0, duration: 0.5, ease: "back.out(1.8)" }, 9.05);
+      ["#c1", "#c2", "#c3", "#c4"].forEach((id, i) => {
+        const t = 9.9 + i * 2.4;
+        tl.from(id, { x: i % 2 ? 700 : -700, rotation: i % 2 ? 4 : -4, opacity: 0, duration: 0.6, ease: "back.out(1.4)" }, t);
+        tl.from(`${id} .num`, { scale: 0, duration: 0.45, ease: "back.out(3)" }, t + 0.3);
+        tl.from(`${id} .tag`, { scale: 0.5, opacity: 0, duration: 0.4, ease: "back.out(2.5)" }, t + 0.7);
+      });
+      tl.to("#s3 .card", { scale: 1.02, duration: 0.25, yoyo: true, repeat: 1, stagger: 0.12 }, 19.6);
+      tl.to("#s3", { opacity: 0, y: -80, duration: 0.4, ease: "power2.in" }, 20.6);
+
+      // 4 · Ce que vous recevez
+      tl.from("#s4 h2", { y: 50, opacity: 0, duration: 0.5, ease: "back.out(1.8)" }, 21.05);
+      tl.from("#s4 li", { x: -80, opacity: 0, duration: 0.45, stagger: 0.45, ease: "power3.out" }, 21.6);
+      tl.from("#s4 .tick", { scale: 0, rotation: -90, duration: 0.4, stagger: 0.45, ease: "back.out(3)" }, 21.75);
+      tl.to("#s4", { opacity: 0, duration: 0.35, ease: "power2.in" }, 26.15);
+      tl.to("#logo-top", { opacity: 0, duration: 0.3 }, 26.15);
+
+      // 5 · Appel à candidater
+      tl.from("#s5 .trio span", { y: 70, opacity: 0, duration: 0.5, stagger: 0.35, ease: "back.out(2)" }, 26.6);
+      tl.from("#s5 .cta", { y: 160, opacity: 0, scale: 0.9, duration: 0.6, ease: "back.out(1.6)" }, 27.9);
+      tl.from("#s5 .url", { scale: 0.8, duration: 0.5, ease: "elastic.out(1, 0.5)" }, 28.4);
+      tl.from("#s5 .chef-end", { y: 120, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 28.9);
+      tl.to("#s5 .url", { scale: 1.05, duration: 0.45, yoyo: true, repeat: 3, ease: "sine.inOut" }, 29.6);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
