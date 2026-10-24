@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "historyId": "1b62f71a-a239-4a55-ac87-e94fb900f5cb",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "SCRIPT.md": {
+      "hash": "11fde3c8f5d76fbebd9b3111efc10760d9f1cc7c99c6f4787f52df28fe65cfc9",
+      "content": "/root/.cache/hyperframes/history/1b62f71a-a239-4a55-ac87-e94fb900f5cb/blobs/11/11fde3c8f5d76fbebd9b3111efc10760d9f1cc7c99c6f4787f52df28fe65cfc9"
+    },
+    "assets/audio/voix-adam.mp3": {
+      "hash": "797aed65297365d92f263ac337d2c8a677c6a0e629872dd910059d0a150b9a5f",
+      "content": "/root/.cache/hyperframes/history/1b62f71a-a239-4a55-ac87-e94fb900f5cb/blobs/79/797aed65297365d92f263ac337d2c8a677c6a0e629872dd910059d0a150b9a5f"
+    },
+    "assets/audio/voix-adam.words.json": {
+      "hash": "18eaca1e102d3eb84c12ac1d7349d01008ab4fb91d9ea29a705ade19d129cd90",
+      "content": "/root/.cache/hyperframes/history/1b62f71a-a239-4a55-ac87-e94fb900f5cb/blobs/18/18eaca1e102d3eb84c12ac1d7349d01008ab4fb91d9ea29a705ade19d129cd90"
+    },
+    "assets/brand/chef-icon.svg": {
+      "hash": "75458e9a5505a27feb9b60a8ff695f127ec0b97732241e4624fd8145d148efb3",
+      "content": "/root/.cache/hyperframes/history/1b62f71a-a239-4a55-ac87-e94fb900f5cb/blobs/75/75458e9a5505a27feb9b60a8ff695f127ec0b97732241e4624fd8145d148efb3"
+    },
+    "assets/brand/foodeatup-logo-horizontal-mascot.png": {
+      "hash": "4b84671ab5963d0bd83aa40f3b0a5addaaa2bc18124480768a60a7e57e735207",
+      "content": "/root/.cache/hyperframes/history/1b62f71a-a239-4a55-ac87-e94fb900f5cb/blobs/4b/4b84671ab5963d0bd83aa40f3b0a5addaaa2bc18124480768a60a7e57e735207"
+    },
+    "assets/vendor/fonts/Fredoka-Variable.woff2": {
+      "hash": "99d6c78e043710d4f83ed90716779798b7b04eb690f73e0ad0e8f32d1f0e98c2",
+      "content": "/root/.cache/hyperframes/history/1b62f71a-a239-4a55-ac87-e94fb900f5cb/blobs/99/99d6c78e043710d4f83ed90716779798b7b04eb690f73e0ad0e8f32d1f0e98c2"
+    },
+    "assets/vendor/gsap.min.js": {
+      "hash": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+      "content": "/root/.cache/hyperframes/history/1b62f71a-a239-4a55-ac87-e94fb900f5cb/blobs/92/92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    },
+    "hyperframes.json": {
+      "hash": "9313260261b6e431830877ee35083331270bc6b9a32d50650abe2bd58bdf558d",
+      "content": "/root/.cache/hyperframes/history/1b62f71a-a239-4a55-ac87-e94fb900f5cb/blobs/93/9313260261b6e431830877ee35083331270bc6b9a32d50650abe2bd58bdf558d"
+    },
+    "index.html": {
+      "hash": "494ec800f660a1db746b9ca6380d1691e1a70d79d567667806cec5acc05b34b3",
+      "content": "/root/.cache/hyperframes/history/1b62f71a-a239-4a55-ac87-e94fb900f5cb/blobs/49/494ec800f660a1db746b9ca6380d1691e1a70d79d567667806cec5acc05b34b3"
+    },
+    "meta.json": {
+      "hash": "1d2d1fd159bdb64b541ea0a183a72b6aa47e34bfdb2dad4ac9313779a993bd3e",
+      "content": "/root/.cache/hyperframes/history/1b62f71a-a239-4a55-ac87-e94fb900f5cb/blobs/1d/1d2d1fd159bdb64b541ea0a183a72b6aa47e34bfdb2dad4ac9313779a993bd3e"
+    },
+    "assets/audio/musique.mp3": {
+      "hash": "6611741f13d06059d23adc45dbd6806b7134497c867c8443d95bd611a0712bf2",
+      "content": "/root/.cache/hyperframes/history/1b62f71a-a239-4a55-ac87-e94fb900f5cb/blobs/66/6611741f13d06059d23adc45dbd6806b7134497c867c8443d95bd611a0712bf2"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "28cf48f7-8b93-431f-8ec1-75399bc85928"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "28cf48f7-8b93-431f-8ec1-75399bc85928",
+        "scope": "project",
+        "report": "/home/user/Video/studio-video/videos/foodeatup-formation-ia/.hyperframes/artifacts/checks/28cf48f7-8b93-431f-8ec1-75399bc85928.json",
+        "metadata": {
+          "ok": false,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792754549657,
+        "contentHash": "8af7a1cdf1a37e1fdfbe98af409e37ab0099006f889170e401bd5b891532476d",
+        "revision": null,
+        "inputFingerprint": "2d26e0b09c341b32f3010ef60682c70b5f9a06533c3bf8dd3528a2199592803c",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  }
+}

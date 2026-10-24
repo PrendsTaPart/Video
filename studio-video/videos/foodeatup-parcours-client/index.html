@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <!--
+      Le parcours du client au restaurant — vertical 1080×1920, 37.15 s.
+      Parcours côté convive — source : src/data/client-restaurant.ts (10 fiches client).
+      Généré par studio-video/tools/gen_page_video.py : chaque scène et chaque
+      élément démarrent sur un mot de la voix off (transcription ElevenLabs Scribe).
+    -->
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Goodly";
+        src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight: 300 700;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #fcf9e6; }
+      body { font-family: "Goodly", sans-serif; color: #0f1a23;
+        --ink: #0f1a23; --ink-soft: #55616b; --blue: #007bff; --blue-deep: #0057b8;
+        --orange: #ffa500; --orange-text: #c88100; --bg-deep: #f5efcf; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #fcf9e6; }
+      .halo { position: absolute; border-radius: 50%; }
+      #halo-blue { width: 900px; height: 900px; left: -320px; top: -260px;
+        background: radial-gradient(circle, rgba(0,123,255,.15), transparent 65%); }
+      #halo-orange { width: 820px; height: 820px; right: -300px; bottom: -220px;
+        background: radial-gradient(circle, rgba(255,165,0,.2), transparent 65%); }
+      #logo-top { position: absolute; top: 90px; left: 50%; transform: translateX(-50%); width: 380px; height: auto; }
+
+      .scene { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
+        justify-content: flex-start; padding: 290px 80px 0; text-align: center; }
+      .kicker { font-size: 78px; font-weight: 700; line-height: 1.06; letter-spacing: -0.5px; margin-bottom: 56px; }
+      .kicker b { color: var(--blue); font-weight: 700; }
+      .kicker em { font-style: normal; color: #a86a00; }
+      .body { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 28px; }
+      .body.center { flex: 1; justify-content: center; margin-top: -260px; gap: 44px; }
+      .body.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+      .body.wrap { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 22px; }
+      .card { background: #fff; border: 4px solid var(--ink); border-radius: 36px; box-shadow: 0 11px 0 var(--ink); }
+
+      .big { display: flex; flex-direction: column; align-items: center; gap: 30px; }
+      .big .ico { width: 220px; height: 220px; }
+      .big-t { font-size: 104px; font-weight: 700; line-height: 1.02; letter-spacing: -1px; }
+      .big .sub-t { font-size: 54px; color: var(--ink-soft); font-weight: 600; }
+      .stat-n { font-size: 230px; font-weight: 700; line-height: 1; color: var(--blue); }
+      .stat .sub-t { font-size: 50px; font-weight: 600; color: var(--ink-soft); display: block; margin-top: 8px; }
+      .pill { display: inline-flex; align-items: center; gap: 16px; font-size: 46px; font-weight: 600;
+        padding: 18px 36px; border-radius: 999px; background: #fff; border: 4px solid var(--ink); box-shadow: 0 8px 0 var(--ink); }
+      .pill .ico { width: 52px; height: 52px; }
+      .row { width: 100%; display: flex; align-items: center; gap: 30px; text-align: left; padding: 26px 34px; border-radius: 32px; }
+      .row .ico { width: 70px; height: 70px; flex: none; }
+      .row .num { flex: none; width: 88px; height: 88px; border-radius: 26px; color: #fff; font-size: 52px; font-weight: 700;
+        display: flex; align-items: center; justify-content: center; }
+      .row-t { font-size: 48px; font-weight: 700; line-height: 1.1; }
+      .row .sub-t, .tile .sub-t, .price .sub-t { display: block; font-size: 32px; font-weight: 500; color: var(--ink-soft); margin-top: 6px; line-height: 1.25; }
+      .tile { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 30px 22px; min-height: 230px; }
+      .tile .ico { width: 76px; height: 76px; }
+      .tnum { font-size: 64px; font-weight: 700; line-height: 1; }
+      .tile-t { font-size: 42px; font-weight: 700; line-height: 1.1; }
+      .price { width: 100%; padding: 32px 40px; text-align: left; }
+      .price.hl { border-color: var(--blue); box-shadow: 0 11px 0 var(--blue-deep); }
+      .p-name { font-size: 44px; font-weight: 700; }
+      .p-amt { font-size: 76px; font-weight: 700; color: var(--blue); line-height: 1.1; margin-top: 4px; }
+      .bubble { max-width: 860px; font-size: 44px; font-weight: 600; line-height: 1.25; padding: 28px 36px; border-radius: 40px; text-align: left; }
+      .bubble.me { align-self: flex-end; background: var(--blue); color: #fff; border-bottom-right-radius: 10px; }
+      .bubble.bot { align-self: flex-start; background: #fff; border: 4px solid var(--ink); border-bottom-left-radius: 10px; }
+      .bubble.wa { align-self: flex-start; background: #e7f6ee; border: 4px solid #0e7a4f; border-bottom-left-radius: 10px; }
+      .url { display: inline-flex; align-items: center; gap: 16px; font-size: 50px; font-weight: 700; color: #fff; background: var(--blue);
+        padding: 26px 46px; border-radius: 999px; box-shadow: 0 12px 0 var(--blue-deep); }
+      .url .ico { width: 56px; height: 56px; }
+      .badge { display: inline-flex; align-items: center; gap: 16px; font-size: 42px; font-weight: 700; color: #fff;
+        padding: 18px 34px; border-radius: 999px; }
+      .badge .ico { width: 48px; height: 48px; }
+      .note { font-size: 34px; font-weight: 500; color: var(--ink-soft); }
+      .final .body { flex: 1; justify-content: center; margin-top: -200px; gap: 50px; }
+      .final .logo-end { width: 620px; height: auto; }
+      .final .chef-end { width: 220px; height: auto; }
+
+      #subs { position: absolute; left: 0; right: 0; bottom: 120px; height: 100px; }
+      .sub { position: absolute; left: 30px; right: 30px; text-align: center; font-size: 60px; font-weight: 700;
+        color: #fff; -webkit-text-stroke: 8px #0f1a23; paint-order: stroke fill; letter-spacing: 1px; opacity: 0; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="37.15" data-width="1080" data-height="1920">
+      <audio id="voix" class="clip" src="assets/audio/voix-adam.mp3" data-start="0" data-duration="34.95" data-track-index="10" data-volume="1"></audio>
+      <audio id="musique" class="clip" src="assets/audio/musique.mp3" data-start="0" data-duration="37.15" data-track-index="11"
+        data-volume="0.14" data-fade-in="0.6" data-fade-out="2.2"></audio>
+      <div id="halo-blue" class="halo clip" data-start="0" data-duration="37.15" data-track-index="0"></div>
+      <div id="halo-orange" class="halo clip" data-start="0" data-duration="37.15" data-track-index="0"></div>
+      <img id="logo-top" class="clip" data-start="0" data-duration="33.67" data-track-index="1"
+        src="assets/brand/foodeatup-logo-horizontal-mascot.png" alt="FoodEatUp" />
+
+      <section id="s1" class="scene clip" data-start="0.0" data-duration="2.114" data-track-index="2">
+        
+        <div class="body center">
+          <div class="big" id="i1"><svg class="ico" width="220" height="220" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><div class="big-t">Côté client</div></div>
+        </div>
+      </section>
+
+      <section id="s2" class="scene clip" data-start="2.114" data-duration="22.222" data-track-index="2">
+        
+        <div class="body grid2">
+          <div class="tile card" id="i2"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg><div class="tile-t">Voir la carte</div></div>
+          <div class="tile card" id="i3"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h3l2 11h11l2-8H7"/><circle cx="10" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg><div class="tile-t">Commander en ligne</div></div>
+          <div class="tile card" id="i4"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3M21 14v7h-4M14 18v3"/></svg><div class="tile-t">QR code à table</div></div>
+          <div class="tile card" id="i5"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg><div class="tile-t">Payer, reçu</div></div>
+          <div class="tile card" id="i6"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><div class="tile-t">Réserver</div></div>
+          <div class="tile card" id="i7"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c88100" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg><div class="tile-t">Fidélité</div></div>
+          <div class="tile card" id="i8"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c88100" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><div class="tile-t">Cumuler des points</div></div>
+          <div class="tile card" id="i9"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c88100" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="12" rx="1"/><path d="M3 13h18M12 9v12M12 9c-2-4-6-4-6-1s6 1 6 1 6 2 6-1-4-3-6 1"/></svg><div class="tile-t">Récompenses</div></div>
+          <div class="tile card" id="i10"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c88100" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4l13 5V5zM16 9a4 4 0 0 1 0 6M6 14l1 5h3l-1-4"/></svg><div class="tile-t">Offres</div></div>
+          <div class="tile card" id="i11"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c88100" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><div class="tile-t">Laisser un avis</div></div>
+        </div>
+      </section>
+
+      <section id="s3" class="scene clip" data-start="24.336" data-duration="5.166" data-track-index="2">
+        <h2 class="kicker">Un geste, <b>un module</b></h2>
+        <div class="body wrap">
+          <div class="pill" id="i12"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l2-5h14l2 5M4 9v11h16V9M3 9h18"/><path d="M10 20v-5h4v5"/></svg><span>Site vitrine</span></div>
+          <div class="pill" id="i13"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3M21 14v7h-4M14 18v3"/></svg><span>Service et commande</span></div>
+          <div class="pill" id="i14"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2z"/><path d="M9 7h6M9 11h6M9 15h4"/></svg><span>Caisse</span></div>
+          <div class="pill" id="i15"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Réservation</span></div>
+          <div class="pill" id="i16"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg><span>Marketing et fidélité</span></div>
+        </div>
+      </section>
+
+      <section id="s4" class="scene clip" data-start="29.502" data-duration="4.168" data-track-index="2">
+        <h2 class="kicker">La carte = <b>la caisse</b></h2>
+        <div class="body center">
+          <div class="bubble bot" id="i17">Plat épuisé : il disparaît de l&#x27;écran du client</div>
+        </div>
+      </section>
+
+      <section id="s5" class="scene clip final" data-start="33.67" data-duration="3.48" data-track-index="2">
+        
+        <div class="body center">
+          <img class="logo-end" id="i18" src="assets/brand/foodeatup-logo-horizontal-mascot.png" alt="" />
+          <div class="url" id="i19"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1 1"/><path d="M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1-1"/></svg><span>tutoriel.foodeatup.com</span></div>
+          <div class="pill" id="i20"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c88100" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><span>Chaque geste, un module</span></div>
+          <img class="chef-end" id="i21" src="assets/brand/chef-icon.svg" alt="" />
+        </div>
+      </section>
+
+      <div id="subs" class="clip" data-start="0" data-duration="37.15" data-track-index="5"></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Sous-titres : [début, fin, texte] tirés de la transcription mot à mot.
+      const SUBS = [[0.0, 1.022, "Et côté client", 60], [1.022, 2.212, "comment ça se passe ?", 60], [2.264, 3.715, "Il trouve le restaurant et", 60], [3.715, 4.609, "lit la carte à jour", 60], [4.609, 5.712, "sur son téléphone", 60], [5.712, 6.943, "Il commande sur le site", 60], [6.943, 7.802, "du restaurant", 60], [7.802, 8.661, "ou à table", 60], [8.661, 10.043, "avec le QR code", 60], [10.043, 10.704, "Il paie", 60], [10.704, 12.04, "et reçoit son reçu", 60], [12.04, 13.526, "Il réserve une table", 60], [13.526, 14.931, "Il rejoint le programme de", 60], [14.931, 16.823, "fidélité, cumule ses points à", 60], [16.823, 17.787, "chaque passage", 60], [17.787, 19.54, "et utilise ses récompenses", 60], [19.54, 20.828, "Il reçoit les offres", 60], [20.828, 22.303, "sans être submergé", 60], [22.303, 23.313, "Et il laisse un avis", 60], [23.313, 24.486, "après son passage", 60], [24.486, 25.658, "Chaque geste du client", 60], [25.658, 27.214, "s'appuie sur un module que", 60], [27.214, 29.624, "le restaurateur active dans FoodEatUp", 48], [29.652, 30.755, "Et la carte qu'il lit", 60], [30.755, 31.946, "c'est celle de la caisse", 60], [32.067, 33.611, "un plat épuisé disparaît de", 60], [33.611, 34.802, "son écran", 60]];
+      const subsBox = document.getElementById("subs");
+      SUBS.forEach(([t0, t1, text, size]) => {
+        const el = document.createElement("div");
+        el.className = "sub";
+        el.style.fontSize = size + "px";
+        el.textContent = text;
+        subsBox.appendChild(el);
+        tl.set(el, { opacity: 1 }, t0);
+        tl.set(el, { opacity: 0 }, Math.min(t1, 34.95));
+      });
+
+      tl.to("#halo-blue", { x: 140, y: 120, duration: 37.15, ease: "sine.inOut" }, 0);
+      tl.to("#halo-orange", { x: -120, y: -160, duration: 37.15, ease: "sine.inOut" }, 0);
+      tl.to("#logo-top", { opacity: 0, duration: 0.3 }, Math.max(0, 33.67 - 0.3));
+
+      // s1 · Accroche
+      tl.from("#i1", { scale: 0.5, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 0.0);
+      tl.from("#i1 .ico", { rotation: -15, y: 40, duration: 0.7, ease: "elastic.out(1, 0.5)" }, 0.0);
+      tl.to("#s1", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 1.814);
+      // s2 · Les gestes du client
+      tl.from("#i2", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 2.338);
+      tl.from("#i3", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 5.809);
+      tl.from("#i4", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 7.981);
+      tl.from("#i5", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 10.175);
+      tl.from("#i6", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 12.137);
+      tl.from("#i7", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 13.635);
+      tl.from("#i8", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 15.713);
+      tl.from("#i9", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 17.872);
+      tl.from("#i10", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 19.637);
+      tl.from("#i11", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 22.54);
+      tl.to("#s2", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 24.036);
+      // s3 · Un geste, <b>un module</b>
+      tl.from("#s3 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 24.386);
+      tl.from("#i12", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 26.255);
+      tl.from("#i13", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 26.136);
+      tl.from("#i14", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 26.436);
+      tl.from("#i15", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 26.736);
+      tl.from("#i16", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 27.036);
+      tl.to("#s3", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 29.202);
+      // s4 · La carte = <b>la caisse</b>
+      tl.from("#s4 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 29.552);
+      tl.from("#i17", { scale: 0.5, opacity: 0, transformOrigin: "0% 100%", duration: 0.45, ease: "back.out(2.2)" }, 32.373);
+      tl.to("#s4", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 33.37);
+      // s5 · Fin
+      tl.from("#i18", { y: 80, scale: 0.8, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 33.82);
+      tl.from("#i19", { scale: 0.6, opacity: 0, duration: 0.6, ease: "elastic.out(1, 0.6)" }, 34.27);
+      tl.from("#i20", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 34.87);
+      tl.from("#i21", { y: 80, scale: 0.8, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 35.27);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

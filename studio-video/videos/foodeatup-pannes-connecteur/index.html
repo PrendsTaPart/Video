@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <!--
+      Connecteur FoodEatUp : les 5 pannes fréquentes — vertical 1080×1920, 46.95 s.
+      Page /connecter-son-assistant-ia (section pannes) — source : src/data/connecteur-mcp.ts (ERREURS_FREQUENTES).
+      Généré par studio-video/tools/gen_page_video.py : chaque scène et chaque
+      élément démarrent sur un mot de la voix off (transcription ElevenLabs Scribe).
+    -->
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Goodly";
+        src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight: 300 700;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #fcf9e6; }
+      body { font-family: "Goodly", sans-serif; color: #0f1a23;
+        --ink: #0f1a23; --ink-soft: #55616b; --blue: #007bff; --blue-deep: #0057b8;
+        --orange: #ffa500; --orange-text: #c88100; --bg-deep: #f5efcf; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #fcf9e6; }
+      .halo { position: absolute; border-radius: 50%; }
+      #halo-blue { width: 900px; height: 900px; left: -320px; top: -260px;
+        background: radial-gradient(circle, rgba(0,123,255,.15), transparent 65%); }
+      #halo-orange { width: 820px; height: 820px; right: -300px; bottom: -220px;
+        background: radial-gradient(circle, rgba(255,165,0,.2), transparent 65%); }
+      #logo-top { position: absolute; top: 90px; left: 50%; transform: translateX(-50%); width: 380px; height: auto; }
+
+      .scene { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
+        justify-content: flex-start; padding: 290px 80px 0; text-align: center; }
+      .kicker { font-size: 78px; font-weight: 700; line-height: 1.06; letter-spacing: -0.5px; margin-bottom: 56px; }
+      .kicker b { color: var(--blue); font-weight: 700; }
+      .kicker em { font-style: normal; color: #a86a00; }
+      .body { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 28px; }
+      .body.center { flex: 1; justify-content: center; margin-top: -260px; gap: 44px; }
+      .body.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+      .body.wrap { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 22px; }
+      .card { background: #fff; border: 4px solid var(--ink); border-radius: 36px; box-shadow: 0 11px 0 var(--ink); }
+
+      .big { display: flex; flex-direction: column; align-items: center; gap: 30px; }
+      .big .ico { width: 220px; height: 220px; }
+      .big-t { font-size: 104px; font-weight: 700; line-height: 1.02; letter-spacing: -1px; }
+      .big .sub-t { font-size: 54px; color: var(--ink-soft); font-weight: 600; }
+      .stat-n { font-size: 230px; font-weight: 700; line-height: 1; color: var(--blue); }
+      .stat .sub-t { font-size: 50px; font-weight: 600; color: var(--ink-soft); display: block; margin-top: 8px; }
+      .pill { display: inline-flex; align-items: center; gap: 16px; font-size: 46px; font-weight: 600;
+        padding: 18px 36px; border-radius: 999px; background: #fff; border: 4px solid var(--ink); box-shadow: 0 8px 0 var(--ink); }
+      .pill .ico { width: 52px; height: 52px; }
+      .row { width: 100%; display: flex; align-items: center; gap: 30px; text-align: left; padding: 26px 34px; border-radius: 32px; }
+      .row .ico { width: 70px; height: 70px; flex: none; }
+      .row .num { flex: none; width: 88px; height: 88px; border-radius: 26px; color: #fff; font-size: 52px; font-weight: 700;
+        display: flex; align-items: center; justify-content: center; }
+      .row-t { font-size: 48px; font-weight: 700; line-height: 1.1; }
+      .row .sub-t, .tile .sub-t, .price .sub-t { display: block; font-size: 32px; font-weight: 500; color: var(--ink-soft); margin-top: 6px; line-height: 1.25; }
+      .tile { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 30px 22px; min-height: 230px; }
+      .tile .ico { width: 76px; height: 76px; }
+      .tnum { font-size: 64px; font-weight: 700; line-height: 1; }
+      .tile-t { font-size: 42px; font-weight: 700; line-height: 1.1; }
+      .price { width: 100%; padding: 32px 40px; text-align: left; }
+      .price.hl { border-color: var(--blue); box-shadow: 0 11px 0 var(--blue-deep); }
+      .p-name { font-size: 44px; font-weight: 700; }
+      .p-amt { font-size: 76px; font-weight: 700; color: var(--blue); line-height: 1.1; margin-top: 4px; }
+      .bubble { max-width: 860px; font-size: 44px; font-weight: 600; line-height: 1.25; padding: 28px 36px; border-radius: 40px; text-align: left; }
+      .bubble.me { align-self: flex-end; background: var(--blue); color: #fff; border-bottom-right-radius: 10px; }
+      .bubble.bot { align-self: flex-start; background: #fff; border: 4px solid var(--ink); border-bottom-left-radius: 10px; }
+      .bubble.wa { align-self: flex-start; background: #e7f6ee; border: 4px solid #0e7a4f; border-bottom-left-radius: 10px; }
+      .url { display: inline-flex; align-items: center; gap: 16px; font-size: 50px; font-weight: 700; color: #fff; background: var(--blue);
+        padding: 26px 46px; border-radius: 999px; box-shadow: 0 12px 0 var(--blue-deep); }
+      .url .ico { width: 56px; height: 56px; }
+      .badge { display: inline-flex; align-items: center; gap: 16px; font-size: 42px; font-weight: 700; color: #fff;
+        padding: 18px 34px; border-radius: 999px; }
+      .badge .ico { width: 48px; height: 48px; }
+      .note { font-size: 34px; font-weight: 500; color: var(--ink-soft); }
+      .final .body { flex: 1; justify-content: center; margin-top: -200px; gap: 50px; }
+      .final .logo-end { width: 620px; height: auto; }
+      .final .chef-end { width: 220px; height: auto; }
+
+      #subs { position: absolute; left: 0; right: 0; bottom: 120px; height: 100px; }
+      .sub { position: absolute; left: 30px; right: 30px; text-align: center; font-size: 60px; font-weight: 700;
+        color: #fff; -webkit-text-stroke: 8px #0f1a23; paint-order: stroke fill; letter-spacing: 1px; opacity: 0; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="46.95" data-width="1080" data-height="1920">
+      <audio id="voix" class="clip" src="assets/audio/voix-adam.mp3" data-start="0" data-duration="44.75" data-track-index="10" data-volume="1"></audio>
+      <audio id="musique" class="clip" src="assets/audio/musique.mp3" data-start="0" data-duration="46.95" data-track-index="11"
+        data-volume="0.14" data-fade-in="0.6" data-fade-out="2.2"></audio>
+      <div id="halo-blue" class="halo clip" data-start="0" data-duration="46.95" data-track-index="0"></div>
+      <div id="halo-orange" class="halo clip" data-start="0" data-duration="46.95" data-track-index="0"></div>
+      <img id="logo-top" class="clip" data-start="0" data-duration="39.696" data-track-index="1"
+        src="assets/brand/foodeatup-logo-horizontal-mascot.png" alt="FoodEatUp" />
+
+      <section id="s1" class="scene clip" data-start="0.0" data-duration="4.749" data-track-index="2">
+        
+        <div class="body center">
+          <div class="big" id="i1"><svg class="ico" width="220" height="220" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="13" rx="5"/><path d="M12 7V4M9 4l1 3M15 4l-1 3M3 11h4M17 11h4M3 17h4M17 17h4"/></svg><div class="big-t">5 pannes</div><span class="sub-t">et leur solution</span></div>
+        </div>
+      </section>
+
+      <section id="s2" class="scene clip" data-start="4.749" data-duration="8.476" data-track-index="2">
+        <h2 class="kicker"><b>1</b> · Aucun outil</h2>
+        <div class="body stack">
+          <div class="row card" id="i2"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1 1"/><path d="M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1-1"/></svg><div><div class="row-t">L&#x27;adresse finit par /mcp</div></div></div>
+          <div class="row card" id="i3"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 14-5l2-2v6h-6l2-2a5 5 0 0 0-9 3"/><path d="M20 12a8 8 0 0 1-14 5l-2 2v-6h6l-2 2a5 5 0 0 0 9-3"/></svg><div><div class="row-t">Retirer, puis rajouter</div></div></div>
+        </div>
+      </section>
+
+      <section id="s3" class="scene clip" data-start="13.225" data-duration="6.734" data-track-index="2">
+        <h2 class="kicker"><b>2</b> · Il réclame une clé</h2>
+        <div class="body stack">
+          <div class="badge" id="i4" style="background:#059669"><svg class="ico" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Authentification : aucune</span></div>
+          <div class="row card" id="i5"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h7"/></svg><div><div class="row-t">Le connecteur de l&#x27;Académie est public</div></div></div>
+        </div>
+      </section>
+
+      <section id="s4" class="scene clip" data-start="19.959" data-duration="9.241" data-track-index="2">
+        <h2 class="kicker"><b>3</b> · Erreur 406</h2>
+        <div class="body stack">
+          <div class="bubble bot" id="i6">Accept: application/json, text/event-stream</div>
+          <div class="row card" id="i7"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><div><div class="row-t">Les clients officiels le font seuls</div></div></div>
+        </div>
+      </section>
+
+      <section id="s5" class="scene clip" data-start="29.2" data-duration="6.096" data-track-index="2">
+        <h2 class="kicker"><b>4</b> · Réponse de mémoire</h2>
+        <div class="body stack">
+          <div class="bubble me" id="i8">Avec le connecteur de l&#x27;Académie FoodEatUp, donne-moi le parcours d&#x27;un chef de rang</div>
+        </div>
+      </section>
+
+      <section id="s6" class="scene clip" data-start="35.296" data-duration="4.4" data-track-index="2">
+        <h2 class="kicker"><b>5</b> · Réponses en anglais</h2>
+        <div class="body center">
+          <div class="big" id="i9"><svg class="ico" width="220" height="220" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><div class="big-t">En français</div><span class="sub-t">écrivez votre question en français</span></div>
+        </div>
+      </section>
+
+      <section id="s7" class="scene clip final" data-start="39.696" data-duration="7.254" data-track-index="2">
+        
+        <div class="body center">
+          <img class="logo-end" id="i10" src="assets/brand/foodeatup-logo-horizontal-mascot.png" alt="" />
+          <div class="url" id="i11"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1 1"/><path d="M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1-1"/></svg><span>tutoriel.foodeatup.com/mcp/sante</span></div>
+          <div class="pill" id="i12"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c88100" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><span>Le nombre d&#x27;outils servis</span></div>
+          <img class="chef-end" id="i13" src="assets/brand/chef-icon.svg" alt="" />
+        </div>
+      </section>
+
+      <div id="subs" class="clip" data-start="0" data-duration="46.95" data-track-index="5"></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Sous-titres : [début, fin, texte] tirés de la transcription mot à mot.
+      const SUBS = [[0.0, 1.672, "Votre connecteur FoodEatUp ne", 60], [1.672, 2.386, "répond pas ?", 60], [2.705, 3.855, "Voici les cinq pannes les", 60], [3.855, 4.824, "plus fréquentes", 60], [4.899, 6.409, "Un : connecté", 60], [6.409, 7.541, "mais aucun outil", 60], [7.674, 9.067, "Vérifiez que l'adresse finit", 60], [9.067, 10.786, "bien par /mcp", 60], [10.786, 13.114, "puis retirez et rajoutez le connecteur", 47], [13.375, 15.692, "Deux : le client réclame une clé", 56], [15.767, 16.8, "Choisissez aucune", 60], [16.8, 18.123, "authentification : le", 60], [18.123, 20.109, "connecteur de l'Académie est public", 51], [20.109, 22.46, "Trois : erreur 406", 60], [22.593, 24.822, "L'en-tête Accept doit annoncer", 60], [24.822, 26.988, "JSON et event stream", 60], [27.237, 29.322, "les clients officiels le font seuls", 51], [29.35, 31.998, "Quatre : l'assistant répond de mémoire", 47], [31.998, 32.996, "Nommez la source", 60], [32.996, 33.937, "avec le connecteur de", 60], [33.937, 35.417, "l'Académie FoodEatUp", 60], [35.446, 37.176, "Cinq : les réponses arrivent", 60], [37.176, 37.861, "en anglais", 60], [37.861, 39.846, "Écrivez votre question en français", 53], [39.846, 40.903, "Et la page santé du", 60], [40.903, 42.249, "connecteur affiche le nombre", 60], [42.249, 44.601, "d'outils réellement servis", 60]];
+      const subsBox = document.getElementById("subs");
+      SUBS.forEach(([t0, t1, text, size]) => {
+        const el = document.createElement("div");
+        el.className = "sub";
+        el.style.fontSize = size + "px";
+        el.textContent = text;
+        subsBox.appendChild(el);
+        tl.set(el, { opacity: 1 }, t0);
+        tl.set(el, { opacity: 0 }, Math.min(t1, 44.75));
+      });
+
+      tl.to("#halo-blue", { x: 140, y: 120, duration: 46.95, ease: "sine.inOut" }, 0);
+      tl.to("#halo-orange", { x: -120, y: -160, duration: 46.95, ease: "sine.inOut" }, 0);
+      tl.to("#logo-top", { opacity: 0, duration: 0.3 }, Math.max(0, 39.696 - 0.3));
+
+      // s1 · Accroche
+      tl.from("#i1", { scale: 0.5, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 0.0);
+      tl.from("#i1 .ico", { rotation: -15, y: 40, duration: 0.7, ease: "elastic.out(1, 0.5)" }, 0.0);
+      tl.to("#s1", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 4.449);
+      // s2 · <b>1</b> · Aucun outil
+      tl.from("#s2 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 4.799);
+      tl.from("#i2", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 7.574);
+      tl.from("#i3", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 10.918);
+      tl.to("#s2", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 12.925);
+      // s3 · <b>2</b> · Il réclame une clé
+      tl.from("#s3 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 13.275);
+      tl.from("#i4", { scale: 0, rotation: -6, duration: 0.55, ease: "elastic.out(1, 0.5)" }, 15.667);
+      tl.from("#i5", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 19.277);
+      tl.to("#s3", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 19.659);
+      // s4 · <b>3</b> · Erreur 406
+      tl.from("#s4 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 20.009);
+      tl.from("#i6", { scale: 0.5, opacity: 0, transformOrigin: "0% 100%", duration: 0.45, ease: "back.out(2.2)" }, 22.493);
+      tl.from("#i7", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 27.137);
+      tl.to("#s4", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 28.9);
+      // s5 · <b>4</b> · Réponse de mémoire
+      tl.from("#s5 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 29.25);
+      tl.from("#i8", { scale: 0.5, opacity: 0, transformOrigin: "100% 100%", duration: 0.45, ease: "back.out(2.2)" }, 31.898);
+      tl.to("#s5", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 34.996);
+      // s6 · <b>5</b> · Réponses en anglais
+      tl.from("#s6 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 35.346);
+      tl.from("#i9", { scale: 0.5, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 37.761);
+      tl.from("#i9 .ico", { rotation: -15, y: 40, duration: 0.7, ease: "elastic.out(1, 0.5)" }, 37.761);
+      tl.to("#s6", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 39.396);
+      // s7 · Fin
+      tl.from("#i10", { y: 80, scale: 0.8, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 39.846);
+      tl.from("#i11", { scale: 0.6, opacity: 0, duration: 0.6, ease: "elastic.out(1, 0.6)" }, 40.296);
+      tl.from("#i12", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 40.896);
+      tl.from("#i13", { y: 80, scale: 0.8, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 41.296);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

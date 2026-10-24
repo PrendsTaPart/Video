@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <!--
+      PrediBot, votre restaurant sur WhatsApp — vertical 1080×1920, 39.47 s.
+      Module PrediBot — source : src/data/predibot-guide.ts (intro, 6 agents, alertes, cas d'usage).
+      Généré par studio-video/tools/gen_page_video.py : chaque scène et chaque
+      élément démarrent sur un mot de la voix off (transcription ElevenLabs Scribe).
+    -->
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Goodly";
+        src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight: 300 700;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #fcf9e6; }
+      body { font-family: "Goodly", sans-serif; color: #0f1a23;
+        --ink: #0f1a23; --ink-soft: #55616b; --blue: #007bff; --blue-deep: #0057b8;
+        --orange: #ffa500; --orange-text: #c88100; --bg-deep: #f5efcf; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #fcf9e6; }
+      .halo { position: absolute; border-radius: 50%; }
+      #halo-blue { width: 900px; height: 900px; left: -320px; top: -260px;
+        background: radial-gradient(circle, rgba(0,123,255,.15), transparent 65%); }
+      #halo-orange { width: 820px; height: 820px; right: -300px; bottom: -220px;
+        background: radial-gradient(circle, rgba(255,165,0,.2), transparent 65%); }
+      #logo-top { position: absolute; top: 90px; left: 50%; transform: translateX(-50%); width: 380px; height: auto; }
+
+      .scene { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
+        justify-content: flex-start; padding: 290px 80px 0; text-align: center; }
+      .kicker { font-size: 78px; font-weight: 700; line-height: 1.06; letter-spacing: -0.5px; margin-bottom: 56px; }
+      .kicker b { color: var(--blue); font-weight: 700; }
+      .kicker em { font-style: normal; color: #a86a00; }
+      .body { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 28px; }
+      .body.center { flex: 1; justify-content: center; margin-top: -260px; gap: 44px; }
+      .body.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+      .body.wrap { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 22px; }
+      .card { background: #fff; border: 4px solid var(--ink); border-radius: 36px; box-shadow: 0 11px 0 var(--ink); }
+
+      .big { display: flex; flex-direction: column; align-items: center; gap: 30px; }
+      .big .ico { width: 220px; height: 220px; }
+      .big-t { font-size: 104px; font-weight: 700; line-height: 1.02; letter-spacing: -1px; }
+      .big .sub-t { font-size: 54px; color: var(--ink-soft); font-weight: 600; }
+      .stat-n { font-size: 230px; font-weight: 700; line-height: 1; color: var(--blue); }
+      .stat .sub-t { font-size: 50px; font-weight: 600; color: var(--ink-soft); display: block; margin-top: 8px; }
+      .pill { display: inline-flex; align-items: center; gap: 16px; font-size: 46px; font-weight: 600;
+        padding: 18px 36px; border-radius: 999px; background: #fff; border: 4px solid var(--ink); box-shadow: 0 8px 0 var(--ink); }
+      .pill .ico { width: 52px; height: 52px; }
+      .row { width: 100%; display: flex; align-items: center; gap: 30px; text-align: left; padding: 26px 34px; border-radius: 32px; }
+      .row .ico { width: 70px; height: 70px; flex: none; }
+      .row .num { flex: none; width: 88px; height: 88px; border-radius: 26px; color: #fff; font-size: 52px; font-weight: 700;
+        display: flex; align-items: center; justify-content: center; }
+      .row-t { font-size: 48px; font-weight: 700; line-height: 1.1; }
+      .row .sub-t, .tile .sub-t, .price .sub-t { display: block; font-size: 32px; font-weight: 500; color: var(--ink-soft); margin-top: 6px; line-height: 1.25; }
+      .tile { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 30px 22px; min-height: 230px; }
+      .tile .ico { width: 76px; height: 76px; }
+      .tnum { font-size: 64px; font-weight: 700; line-height: 1; }
+      .tile-t { font-size: 42px; font-weight: 700; line-height: 1.1; }
+      .price { width: 100%; padding: 32px 40px; text-align: left; }
+      .price.hl { border-color: var(--blue); box-shadow: 0 11px 0 var(--blue-deep); }
+      .p-name { font-size: 44px; font-weight: 700; }
+      .p-amt { font-size: 76px; font-weight: 700; color: var(--blue); line-height: 1.1; margin-top: 4px; }
+      .bubble { max-width: 860px; font-size: 44px; font-weight: 600; line-height: 1.25; padding: 28px 36px; border-radius: 40px; text-align: left; }
+      .bubble.me { align-self: flex-end; background: var(--blue); color: #fff; border-bottom-right-radius: 10px; }
+      .bubble.bot { align-self: flex-start; background: #fff; border: 4px solid var(--ink); border-bottom-left-radius: 10px; }
+      .bubble.wa { align-self: flex-start; background: #e7f6ee; border: 4px solid #0e7a4f; border-bottom-left-radius: 10px; }
+      .url { display: inline-flex; align-items: center; gap: 16px; font-size: 50px; font-weight: 700; color: #fff; background: var(--blue);
+        padding: 26px 46px; border-radius: 999px; box-shadow: 0 12px 0 var(--blue-deep); }
+      .url .ico { width: 56px; height: 56px; }
+      .badge { display: inline-flex; align-items: center; gap: 16px; font-size: 42px; font-weight: 700; color: #fff;
+        padding: 18px 34px; border-radius: 999px; }
+      .badge .ico { width: 48px; height: 48px; }
+      .note { font-size: 34px; font-weight: 500; color: var(--ink-soft); }
+      .final .body { flex: 1; justify-content: center; margin-top: -200px; gap: 50px; }
+      .final .logo-end { width: 620px; height: auto; }
+      .final .chef-end { width: 220px; height: auto; }
+
+      #subs { position: absolute; left: 0; right: 0; bottom: 120px; height: 100px; }
+      .sub { position: absolute; left: 30px; right: 30px; text-align: center; font-size: 60px; font-weight: 700;
+        color: #fff; -webkit-text-stroke: 8px #0f1a23; paint-order: stroke fill; letter-spacing: 1px; opacity: 0; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="39.47" data-width="1080" data-height="1920">
+      <audio id="voix" class="clip" src="assets/audio/voix-adam.mp3" data-start="0" data-duration="37.27" data-track-index="10" data-volume="1"></audio>
+      <audio id="musique" class="clip" src="assets/audio/musique.mp3" data-start="0" data-duration="39.47" data-track-index="11"
+        data-volume="0.14" data-fade-in="0.6" data-fade-out="2.2"></audio>
+      <div id="halo-blue" class="halo clip" data-start="0" data-duration="39.47" data-track-index="0"></div>
+      <div id="halo-orange" class="halo clip" data-start="0" data-duration="39.47" data-track-index="0"></div>
+      <img id="logo-top" class="clip" data-start="0" data-duration="33.833" data-track-index="1"
+        src="assets/brand/foodeatup-logo-horizontal-mascot.png" alt="FoodEatUp" />
+
+      <section id="s1" class="scene clip" data-start="0.0" data-duration="2.625" data-track-index="2">
+        
+        <div class="body center">
+          <div class="big" id="i1"><svg class="ico" width="220" height="220" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><div class="big-t">PrediBot</div><span class="sub-t">votre restaurant dans votre poche</span></div>
+        </div>
+      </section>
+
+      <section id="s2" class="scene clip" data-start="2.625" data-duration="7.767" data-track-index="2">
+        <h2 class="kicker">Tout sur <b>WhatsApp</b></h2>
+        <div class="body wrap">
+          <div class="pill" id="i2"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg><span>Stocks</span></div>
+          <div class="pill" id="i3"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Congés</span></div>
+          <div class="pill" id="i4"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h11v10H2zM13 10h5l3 3v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><span>Fournisseurs</span></div>
+          <div class="pill" id="i5"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13V5a2 2 0 0 1 4 0v8a4 4 0 1 1-4 0z"/></svg><span>HACCP</span></div>
+          <div class="pill" id="i6"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 16v-4M12 16V8M17 16v-6"/></svg><span>Prévisions</span></div>
+        </div>
+      </section>
+
+      <section id="s3" class="scene clip" data-start="10.392" data-duration="4.447" data-track-index="2">
+        <h2 class="kicker">Vous écrivez, il exécute</h2>
+        <div class="body stack">
+          <div class="bubble me" id="i7">Quels stocks sont bas ?</div>
+          <div class="bubble wa" id="i8">3 produits sous le seuil. Je prépare la commande fournisseur ?</div>
+        </div>
+      </section>
+
+      <section id="s4" class="scene clip" data-start="14.839" data-duration="7.825" data-track-index="2">
+        <h2 class="kicker"><b>6 agents</b></h2>
+        <div class="body grid2">
+          <div class="tile card" id="i9"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg><div class="tile-t">Stocks</div></div>
+          <div class="tile card" id="i10"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13V5a2 2 0 0 1 4 0v8a4 4 0 1 1-4 0z"/></svg><div class="tile-t">HACCP</div></div>
+          <div class="tile card" id="i11"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#9333EA" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h11v10H2zM13 10h5l3 3v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><div class="tile-t">Achats et fournisseurs</div></div>
+          <div class="tile card" id="i12"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c88100" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-4 3-6 6-6s6 2 6 6M15 14c3 0 6 2 6 6"/></svg><div class="tile-t">RH et équipe</div></div>
+          <div class="tile card" id="i13"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M7 14a4 4 0 1 1 2-7 4 4 0 0 1 6 0 4 4 0 1 1 2 7v5H7z"/><path d="M7 17h10"/></svg><div class="tile-t">Production</div></div>
+          <div class="tile card" id="i14"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg><div class="tile-t">Configuration</div></div>
+        </div>
+      </section>
+
+      <section id="s5" class="scene clip" data-start="22.664" data-duration="11.169" data-track-index="2">
+        <h2 class="kicker">Il vous <em>alerte</em></h2>
+        <div class="body stack">
+          <div class="bubble wa" id="i15">⚠️ Frigo 2 : 9 °C relevé à 14h32 — seuil dépassé</div>
+          <div class="bubble wa" id="i16">Réception Metro non contrôlée depuis 11h</div>
+          <div class="bubble wa" id="i17">Stock saumon critique avant le service de samedi</div>
+        </div>
+      </section>
+
+      <section id="s6" class="scene clip final" data-start="33.833" data-duration="5.637" data-track-index="2">
+        
+        <div class="body center">
+          <img class="logo-end" id="i18" src="assets/brand/foodeatup-logo-horizontal-mascot.png" alt="" />
+          <div class="url" id="i19"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1 1"/><path d="M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1-1"/></svg><span>tutoriel.foodeatup.com/module/predibot</span></div>
+          <div class="pill" id="i20"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c88100" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><span>Agent IA directeur</span></div>
+          <img class="chef-end" id="i21" src="assets/brand/chef-icon.svg" alt="" />
+        </div>
+      </section>
+
+      <div id="subs" class="clip" data-start="0" data-duration="39.47" data-track-index="5"></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Sous-titres : [début, fin, texte] tirés de la transcription mot à mot.
+      const SUBS = [[0.0, 1.219, "PrediBot, c'est votre", 60], [1.219, 2.775, "restaurant dans votre poche", 60], [2.775, 4.11, "Stocks, congés", 60], [4.11, 6.966, "fournisseurs, HACCP", 60], [6.966, 8.522, "prévisions : tout se pilote", 60], [8.522, 10.542, "depuis une conversation WhatsApp", 56], [10.542, 11.749, "Vous demandez en langage", 60], [11.749, 14.989, "naturel, PrediBot exécute dans FoodEatUp", 45], [14.989, 15.755, "Derrière lui", 60], [15.755, 16.545, "six agents", 60], [16.545, 18.913, "stocks, HACCP", 60], [18.913, 20.364, "achats et fournisseurs", 60], [20.364, 21.572, "équipe, production", 60], [21.572, 22.739, "et configuration", 60], [22.814, 23.569, "Et surtout", 60], [23.569, 24.753, "il vous alerte avant que", 60], [24.753, 25.566, "ça déraille", 60], [25.566, 28.782, "Frigo 2 à 9 °C: seuil dépassé", 60], [28.782, 30.291, "Une réception fournisseur pas", 60], [30.291, 31.417, "encore contrôlée", 60], [31.417, 32.752, "Un stock critique avant le", 60], [32.752, 33.983, "service de samedi", 60], [33.983, 35.399, "Découvrez PrediBot sur", 60], [35.399, 37.124, "l'Académie FoodEatUp", 60]];
+      const subsBox = document.getElementById("subs");
+      SUBS.forEach(([t0, t1, text, size]) => {
+        const el = document.createElement("div");
+        el.className = "sub";
+        el.style.fontSize = size + "px";
+        el.textContent = text;
+        subsBox.appendChild(el);
+        tl.set(el, { opacity: 1 }, t0);
+        tl.set(el, { opacity: 0 }, Math.min(t1, 37.27));
+      });
+
+      tl.to("#halo-blue", { x: 140, y: 120, duration: 39.47, ease: "sine.inOut" }, 0);
+      tl.to("#halo-orange", { x: -120, y: -160, duration: 39.47, ease: "sine.inOut" }, 0);
+      tl.to("#logo-top", { opacity: 0, duration: 0.3 }, Math.max(0, 33.833 - 0.3));
+
+      // s1 · Accroche
+      tl.from("#i1", { scale: 0.5, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 0.0);
+      tl.from("#i1 .ico", { rotation: -15, y: 40, duration: 0.7, ease: "elastic.out(1, 0.5)" }, 0.0);
+      tl.to("#s1", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 2.325);
+      // s2 · Tout sur <b>WhatsApp</b>
+      tl.from("#s2 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 2.675);
+      tl.from("#i2", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 2.725);
+      tl.from("#i3", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 3.313);
+      tl.from("#i4", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 4.01);
+      tl.from("#i5", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 4.869);
+      tl.from("#i6", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 6.866);
+      tl.to("#s2", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 10.092);
+      // s3 · Vous écrivez, il exécute
+      tl.from("#s3 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 10.442);
+      tl.from("#i7", { scale: 0.5, opacity: 0, transformOrigin: "100% 100%", duration: 0.45, ease: "back.out(2.2)" }, 10.651);
+      tl.from("#i8", { scale: 0.5, opacity: 0, transformOrigin: "0% 100%", duration: 0.45, ease: "back.out(2.2)" }, 12.996);
+      tl.to("#s3", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 14.539);
+      // s4 · <b>6 agents</b>
+      tl.from("#s4 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 14.889);
+      tl.from("#i9", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 16.445);
+      tl.from("#i10", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 17.223);
+      tl.from("#i11", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 18.813);
+      tl.from("#i12", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 20.264);
+      tl.from("#i13", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 20.798);
+      tl.from("#i14", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 21.623);
+      tl.to("#s4", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 22.364);
+      // s5 · Il vous <em>alerte</em>
+      tl.from("#s5 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 22.714);
+      tl.from("#i15", { scale: 0.5, opacity: 0, transformOrigin: "0% 100%", duration: 0.45, ease: "back.out(2.2)" }, 25.466);
+      tl.from("#i16", { scale: 0.5, opacity: 0, transformOrigin: "0% 100%", duration: 0.45, ease: "back.out(2.2)" }, 28.914);
+      tl.from("#i17", { scale: 0.5, opacity: 0, transformOrigin: "0% 100%", duration: 0.45, ease: "back.out(2.2)" }, 31.805);
+      tl.to("#s5", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 33.533);
+      // s6 · Fin
+      tl.from("#i18", { y: 80, scale: 0.8, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 33.983);
+      tl.from("#i19", { scale: 0.6, opacity: 0, duration: 0.6, ease: "elastic.out(1, 0.6)" }, 34.433);
+      tl.from("#i20", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 35.033);
+      tl.from("#i21", { y: 80, scale: 0.8, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 35.433);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

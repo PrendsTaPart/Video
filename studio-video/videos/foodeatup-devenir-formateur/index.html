@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <!--
+      Devenir formateur FoodEatUp — vertical 1080×1920, 38.82 s.
+      Page /devenir-formateur — source : src/data/partenaires.ts (profil formateur). Seul montant publié : 50 % par formation sur place, 250 € l'après-midi.
+      Généré par studio-video/tools/gen_page_video.py : chaque scène et chaque
+      élément démarrent sur un mot de la voix off (transcription ElevenLabs Scribe).
+    -->
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Goodly";
+        src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight: 300 700;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #fcf9e6; }
+      body { font-family: "Goodly", sans-serif; color: #0f1a23;
+        --ink: #0f1a23; --ink-soft: #55616b; --blue: #007bff; --blue-deep: #0057b8;
+        --orange: #ffa500; --orange-text: #c88100; --bg-deep: #f5efcf; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #fcf9e6; }
+      .halo { position: absolute; border-radius: 50%; }
+      #halo-blue { width: 900px; height: 900px; left: -320px; top: -260px;
+        background: radial-gradient(circle, rgba(0,123,255,.15), transparent 65%); }
+      #halo-orange { width: 820px; height: 820px; right: -300px; bottom: -220px;
+        background: radial-gradient(circle, rgba(255,165,0,.2), transparent 65%); }
+      #logo-top { position: absolute; top: 90px; left: 50%; transform: translateX(-50%); width: 380px; height: auto; }
+
+      .scene { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
+        justify-content: flex-start; padding: 290px 80px 0; text-align: center; }
+      .kicker { font-size: 78px; font-weight: 700; line-height: 1.06; letter-spacing: -0.5px; margin-bottom: 56px; }
+      .kicker b { color: var(--blue); font-weight: 700; }
+      .kicker em { font-style: normal; color: #a86a00; }
+      .body { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 28px; }
+      .body.center { flex: 1; justify-content: center; margin-top: -260px; gap: 44px; }
+      .body.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+      .body.wrap { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 22px; }
+      .card { background: #fff; border: 4px solid var(--ink); border-radius: 36px; box-shadow: 0 11px 0 var(--ink); }
+
+      .big { display: flex; flex-direction: column; align-items: center; gap: 30px; }
+      .big .ico { width: 220px; height: 220px; }
+      .big-t { font-size: 104px; font-weight: 700; line-height: 1.02; letter-spacing: -1px; }
+      .big .sub-t { font-size: 54px; color: var(--ink-soft); font-weight: 600; }
+      .stat-n { font-size: 230px; font-weight: 700; line-height: 1; color: var(--blue); }
+      .stat .sub-t { font-size: 50px; font-weight: 600; color: var(--ink-soft); display: block; margin-top: 8px; }
+      .pill { display: inline-flex; align-items: center; gap: 16px; font-size: 46px; font-weight: 600;
+        padding: 18px 36px; border-radius: 999px; background: #fff; border: 4px solid var(--ink); box-shadow: 0 8px 0 var(--ink); }
+      .pill .ico { width: 52px; height: 52px; }
+      .row { width: 100%; display: flex; align-items: center; gap: 30px; text-align: left; padding: 26px 34px; border-radius: 32px; }
+      .row .ico { width: 70px; height: 70px; flex: none; }
+      .row .num { flex: none; width: 88px; height: 88px; border-radius: 26px; color: #fff; font-size: 52px; font-weight: 700;
+        display: flex; align-items: center; justify-content: center; }
+      .row-t { font-size: 48px; font-weight: 700; line-height: 1.1; }
+      .row .sub-t, .tile .sub-t, .price .sub-t { display: block; font-size: 32px; font-weight: 500; color: var(--ink-soft); margin-top: 6px; line-height: 1.25; }
+      .tile { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 30px 22px; min-height: 230px; }
+      .tile .ico { width: 76px; height: 76px; }
+      .tnum { font-size: 64px; font-weight: 700; line-height: 1; }
+      .tile-t { font-size: 42px; font-weight: 700; line-height: 1.1; }
+      .price { width: 100%; padding: 32px 40px; text-align: left; }
+      .price.hl { border-color: var(--blue); box-shadow: 0 11px 0 var(--blue-deep); }
+      .p-name { font-size: 44px; font-weight: 700; }
+      .p-amt { font-size: 76px; font-weight: 700; color: var(--blue); line-height: 1.1; margin-top: 4px; }
+      .bubble { max-width: 860px; font-size: 44px; font-weight: 600; line-height: 1.25; padding: 28px 36px; border-radius: 40px; text-align: left; }
+      .bubble.me { align-self: flex-end; background: var(--blue); color: #fff; border-bottom-right-radius: 10px; }
+      .bubble.bot { align-self: flex-start; background: #fff; border: 4px solid var(--ink); border-bottom-left-radius: 10px; }
+      .bubble.wa { align-self: flex-start; background: #e7f6ee; border: 4px solid #0e7a4f; border-bottom-left-radius: 10px; }
+      .url { display: inline-flex; align-items: center; gap: 16px; font-size: 50px; font-weight: 700; color: #fff; background: var(--blue);
+        padding: 26px 46px; border-radius: 999px; box-shadow: 0 12px 0 var(--blue-deep); }
+      .url .ico { width: 56px; height: 56px; }
+      .badge { display: inline-flex; align-items: center; gap: 16px; font-size: 42px; font-weight: 700; color: #fff;
+        padding: 18px 34px; border-radius: 999px; }
+      .badge .ico { width: 48px; height: 48px; }
+      .note { font-size: 34px; font-weight: 500; color: var(--ink-soft); }
+      .final .body { flex: 1; justify-content: center; margin-top: -200px; gap: 50px; }
+      .final .logo-end { width: 620px; height: auto; }
+      .final .chef-end { width: 220px; height: auto; }
+
+      #subs { position: absolute; left: 0; right: 0; bottom: 120px; height: 100px; }
+      .sub { position: absolute; left: 30px; right: 30px; text-align: center; font-size: 60px; font-weight: 700;
+        color: #fff; -webkit-text-stroke: 8px #0f1a23; paint-order: stroke fill; letter-spacing: 1px; opacity: 0; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="38.82" data-width="1080" data-height="1920">
+      <audio id="voix" class="clip" src="assets/audio/voix-adam.mp3" data-start="0" data-duration="36.62" data-track-index="10" data-volume="1"></audio>
+      <audio id="musique" class="clip" src="assets/audio/musique.mp3" data-start="0" data-duration="38.82" data-track-index="11"
+        data-volume="0.14" data-fade-in="0.6" data-fade-out="2.2"></audio>
+      <div id="halo-blue" class="halo clip" data-start="0" data-duration="38.82" data-track-index="0"></div>
+      <div id="halo-orange" class="halo clip" data-start="0" data-duration="38.82" data-track-index="0"></div>
+      <img id="logo-top" class="clip" data-start="0" data-duration="31.174" data-track-index="1"
+        src="assets/brand/foodeatup-logo-horizontal-mascot.png" alt="FoodEatUp" />
+
+      <section id="s1" class="scene clip" data-start="0.0" data-duration="3.658" data-track-index="2">
+        
+        <div class="body center">
+          <div class="big" id="i1"><svg class="ico" width="220" height="220" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 3 9 3 12 0v-5M22 9v6"/></svg><div class="big-t">Formateur</div><span class="sub-t">FoodEatUp</span></div>
+        </div>
+      </section>
+
+      <section id="s2" class="scene clip" data-start="3.658" data-duration="4.156" data-track-index="2">
+        <h2 class="kicker">Vous formez les équipes</h2>
+        <div class="body wrap">
+          <div class="pill" id="i2"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Dans votre région</span></div>
+          <div class="pill" id="i3"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l2-5h14l2 5M4 9v11h16V9M3 9h18"/><path d="M10 20v-5h4v5"/></svg><span>Sur place</span></div>
+          <div class="pill" id="i4"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></svg><span>À distance</span></div>
+        </div>
+      </section>
+
+      <section id="s3" class="scene clip" data-start="7.814" data-duration="8.151" data-track-index="2">
+        
+        <div class="body center">
+          <div class="stat" id="i5"><div class="stat-n">50 %</div><span class="sub-t">de chaque formation sur place</span></div>
+          <div class="badge" id="i6" style="background:#c88100"><svg class="ico" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M17 6a7 7 0 1 0 0 12M4 10h9M4 14h9"/></svg><span>250 € l&#x27;après-midi</span></div>
+          <div class="pill" id="i7"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span>Pas de plafond</span></div>
+          <div class="pill" id="i8"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span>Pas d&#x27;exclusivité</span></div>
+        </div>
+      </section>
+
+      <section id="s4" class="scene clip" data-start="15.965" data-duration="10.983" data-track-index="2">
+        <h2 class="kicker">Formé avant <b>votre 1re mission</b></h2>
+        <div class="body stack">
+          <div class="row card" id="i9"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 3 9 3 12 0v-5M22 9v6"/></svg><div><div class="row-t">FoodEatUp et protocole MCP</div></div></div>
+          <div class="row card" id="i10"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></svg><div><div class="row-t">Plus de 170 vidéos</div></div></div>
+          <div class="row card" id="i11"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><div><div class="row-t">Prompts prêts à l&#x27;emploi</div></div></div>
+          <div class="row card" id="i12"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l2-5h14l2 5M4 9v11h16V9M3 9h18"/><path d="M10 20v-5h4v5"/></svg><div><div class="row-t">Compte de démonstration</div></div></div>
+        </div>
+      </section>
+
+      <section id="s5" class="scene clip" data-start="26.948" data-duration="4.226" data-track-index="2">
+        
+        <div class="body center">
+          <div class="big" id="i13"><svg class="ico" width="220" height="220" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg><div class="big-t">Indépendant</div><span class="sub-t">ou prêt à le devenir</span></div>
+        </div>
+      </section>
+
+      <section id="s6" class="scene clip final" data-start="31.174" data-duration="7.646" data-track-index="2">
+        
+        <div class="body center">
+          <img class="logo-end" id="i14" src="assets/brand/foodeatup-logo-horizontal-mascot.png" alt="" />
+          <div class="url" id="i15"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1 1"/><path d="M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1-1"/></svg><span>tutoriel.foodeatup.com/devenir-formateur</span></div>
+          <div class="pill" id="i16"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c88100" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><span>Candidatez en 10 minutes</span></div>
+          <img class="chef-end" id="i17" src="assets/brand/chef-icon.svg" alt="" />
+        </div>
+      </section>
+
+      <div id="subs" class="clip" data-start="0" data-duration="38.82" data-track-index="5"></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Sous-titres : [début, fin, texte] tirés de la transcription mot à mot.
+      const SUBS = [[0.0, 1.26, "Vous aimez transmettre ?", 60], [1.602, 3.547, "Devenez formateur FoodEatUp", 60], [3.808, 4.899, "Vous formez les équipes des", 60], [4.899, 6.235, "restaurants de votre région", 60], [6.235, 7.889, "sur place ou à distance", 60], [7.964, 9.973, "Vous touchez 50 % de chaque", 60], [9.973, 11.279, "formation sur place", 60], [11.401, 13.729, "250 € par après-midi", 60], [13.804, 14.745, "Pas de plafond", 60], [14.745, 16.115, "pas d'exclusivité", 60], [16.115, 17.241, "Pas besoin de connaître le", 60], [17.241, 18.924, "logiciel : vous êtes formé à", 60], [18.924, 21.444, "FoodEatUp et au protocole MCP", 60], [21.444, 23.777, "avec plus de 170 vidéos", 60], [23.777, 25.229, "des prompts prêts à l'emploi", 60], [25.229, 27.023, "et un compte de démonstration", 60], [27.098, 28.247, "Il vous faut un statut", 60], [28.247, 30.337, "d'indépendant, ou l'envie de", 60], [30.337, 31.249, "le devenir", 60], [31.324, 32.09, "Candidatez sur", 60], [32.09, 36.473, "tutoriel.foodeatup.com/devenir-formateur", 45]];
+      const subsBox = document.getElementById("subs");
+      SUBS.forEach(([t0, t1, text, size]) => {
+        const el = document.createElement("div");
+        el.className = "sub";
+        el.style.fontSize = size + "px";
+        el.textContent = text;
+        subsBox.appendChild(el);
+        tl.set(el, { opacity: 1 }, t0);
+        tl.set(el, { opacity: 0 }, Math.min(t1, 36.62));
+      });
+
+      tl.to("#halo-blue", { x: 140, y: 120, duration: 38.82, ease: "sine.inOut" }, 0);
+      tl.to("#halo-orange", { x: -120, y: -160, duration: 38.82, ease: "sine.inOut" }, 0);
+      tl.to("#logo-top", { opacity: 0, duration: 0.3 }, Math.max(0, 31.174 - 0.3));
+
+      // s1 · Accroche
+      tl.from("#i1", { scale: 0.5, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 0.0);
+      tl.from("#i1 .ico", { rotation: -15, y: 40, duration: 0.7, ease: "elastic.out(1, 0.5)" }, 0.0);
+      tl.to("#s1", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 3.358);
+      // s2 · Vous formez les équipes
+      tl.from("#s2 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 3.708);
+      tl.from("#i2", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 5.624);
+      tl.from("#i3", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 6.135);
+      tl.from("#i4", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 6.959);
+      tl.to("#s2", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 7.514);
+      // s3 · 
+      tl.from("#i5", { scale: 0.3, opacity: 0, duration: 0.6, ease: "elastic.out(1, 0.55)" }, 8.503);
+      tl.from("#i6", { scale: 0, rotation: -6, duration: 0.55, ease: "elastic.out(1, 0.5)" }, 11.301);
+      tl.from("#i7", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 14.006);
+      tl.from("#i8", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 14.819);
+      tl.to("#s3", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 15.665);
+      // s4 · Formé avant <b>votre 1re mission</b>
+      tl.from("#s4 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 16.015);
+      tl.from("#i9", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 18.325);
+      tl.from("#i10", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 21.669);
+      tl.from("#i11", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 23.828);
+      tl.from("#i12", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 25.535);
+      tl.to("#s4", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 26.648);
+      // s5 · 
+      tl.from("#i13", { scale: 0.5, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 27.787);
+      tl.from("#i13 .ico", { rotation: -15, y: 40, duration: 0.7, ease: "elastic.out(1, 0.5)" }, 27.787);
+      tl.to("#s5", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 30.874);
+      // s6 · Fin
+      tl.from("#i14", { y: 80, scale: 0.8, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 31.324);
+      tl.from("#i15", { scale: 0.6, opacity: 0, duration: 0.6, ease: "elastic.out(1, 0.6)" }, 31.774);
+      tl.from("#i16", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 32.374);
+      tl.from("#i17", { y: 80, scale: 0.8, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 32.774);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

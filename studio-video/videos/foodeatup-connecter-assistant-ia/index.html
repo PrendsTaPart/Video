@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <!--
+      Connecter son assistant IA à l&#x27;Académie FoodEatUp — vertical 1080×1920, 42.77 s.
+      Page /connecter-son-assistant-ia — source : src/data/connecteur-mcp.ts.
+      Généré par studio-video/tools/gen_page_video.py : chaque scène et chaque
+      élément démarrent sur un mot de la voix off (transcription ElevenLabs Scribe).
+    -->
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Goodly";
+        src: url("assets/vendor/fonts/Fredoka-Variable.woff2") format("woff2-variations");
+        font-weight: 300 700;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #fcf9e6; }
+      body { font-family: "Goodly", sans-serif; color: #0f1a23;
+        --ink: #0f1a23; --ink-soft: #55616b; --blue: #007bff; --blue-deep: #0057b8;
+        --orange: #ffa500; --orange-text: #c88100; --bg-deep: #f5efcf; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #fcf9e6; }
+      .halo { position: absolute; border-radius: 50%; }
+      #halo-blue { width: 900px; height: 900px; left: -320px; top: -260px;
+        background: radial-gradient(circle, rgba(0,123,255,.15), transparent 65%); }
+      #halo-orange { width: 820px; height: 820px; right: -300px; bottom: -220px;
+        background: radial-gradient(circle, rgba(255,165,0,.2), transparent 65%); }
+      #logo-top { position: absolute; top: 90px; left: 50%; transform: translateX(-50%); width: 380px; height: auto; }
+
+      .scene { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center;
+        justify-content: flex-start; padding: 290px 80px 0; text-align: center; }
+      .kicker { font-size: 78px; font-weight: 700; line-height: 1.06; letter-spacing: -0.5px; margin-bottom: 56px; }
+      .kicker b { color: var(--blue); font-weight: 700; }
+      .kicker em { font-style: normal; color: #a86a00; }
+      .body { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 28px; }
+      .body.center { flex: 1; justify-content: center; margin-top: -260px; gap: 44px; }
+      .body.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+      .body.wrap { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 22px; }
+      .card { background: #fff; border: 4px solid var(--ink); border-radius: 36px; box-shadow: 0 11px 0 var(--ink); }
+
+      .big { display: flex; flex-direction: column; align-items: center; gap: 30px; }
+      .big .ico { width: 220px; height: 220px; }
+      .big-t { font-size: 104px; font-weight: 700; line-height: 1.02; letter-spacing: -1px; }
+      .big .sub-t { font-size: 54px; color: var(--ink-soft); font-weight: 600; }
+      .stat-n { font-size: 230px; font-weight: 700; line-height: 1; color: var(--blue); }
+      .stat .sub-t { font-size: 50px; font-weight: 600; color: var(--ink-soft); display: block; margin-top: 8px; }
+      .pill { display: inline-flex; align-items: center; gap: 16px; font-size: 46px; font-weight: 600;
+        padding: 18px 36px; border-radius: 999px; background: #fff; border: 4px solid var(--ink); box-shadow: 0 8px 0 var(--ink); }
+      .pill .ico { width: 52px; height: 52px; }
+      .row { width: 100%; display: flex; align-items: center; gap: 30px; text-align: left; padding: 26px 34px; border-radius: 32px; }
+      .row .ico { width: 70px; height: 70px; flex: none; }
+      .row .num { flex: none; width: 88px; height: 88px; border-radius: 26px; color: #fff; font-size: 52px; font-weight: 700;
+        display: flex; align-items: center; justify-content: center; }
+      .row-t { font-size: 48px; font-weight: 700; line-height: 1.1; }
+      .row .sub-t, .tile .sub-t, .price .sub-t { display: block; font-size: 32px; font-weight: 500; color: var(--ink-soft); margin-top: 6px; line-height: 1.25; }
+      .tile { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 30px 22px; min-height: 230px; }
+      .tile .ico { width: 76px; height: 76px; }
+      .tnum { font-size: 64px; font-weight: 700; line-height: 1; }
+      .tile-t { font-size: 42px; font-weight: 700; line-height: 1.1; }
+      .price { width: 100%; padding: 32px 40px; text-align: left; }
+      .price.hl { border-color: var(--blue); box-shadow: 0 11px 0 var(--blue-deep); }
+      .p-name { font-size: 44px; font-weight: 700; }
+      .p-amt { font-size: 76px; font-weight: 700; color: var(--blue); line-height: 1.1; margin-top: 4px; }
+      .bubble { max-width: 860px; font-size: 44px; font-weight: 600; line-height: 1.25; padding: 28px 36px; border-radius: 40px; text-align: left; }
+      .bubble.me { align-self: flex-end; background: var(--blue); color: #fff; border-bottom-right-radius: 10px; }
+      .bubble.bot { align-self: flex-start; background: #fff; border: 4px solid var(--ink); border-bottom-left-radius: 10px; }
+      .bubble.wa { align-self: flex-start; background: #e7f6ee; border: 4px solid #0e7a4f; border-bottom-left-radius: 10px; }
+      .url { display: inline-flex; align-items: center; gap: 16px; font-size: 50px; font-weight: 700; color: #fff; background: var(--blue);
+        padding: 26px 46px; border-radius: 999px; box-shadow: 0 12px 0 var(--blue-deep); }
+      .url .ico { width: 56px; height: 56px; }
+      .badge { display: inline-flex; align-items: center; gap: 16px; font-size: 42px; font-weight: 700; color: #fff;
+        padding: 18px 34px; border-radius: 999px; }
+      .badge .ico { width: 48px; height: 48px; }
+      .note { font-size: 34px; font-weight: 500; color: var(--ink-soft); }
+      .final .body { flex: 1; justify-content: center; margin-top: -200px; gap: 50px; }
+      .final .logo-end { width: 620px; height: auto; }
+      .final .chef-end { width: 220px; height: auto; }
+
+      #subs { position: absolute; left: 0; right: 0; bottom: 120px; height: 100px; }
+      .sub { position: absolute; left: 30px; right: 30px; text-align: center; font-size: 60px; font-weight: 700;
+        color: #fff; -webkit-text-stroke: 8px #0f1a23; paint-order: stroke fill; letter-spacing: 1px; opacity: 0; white-space: nowrap; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="42.77" data-width="1080" data-height="1920">
+      <audio id="voix" class="clip" src="assets/audio/voix-adam.mp3" data-start="0" data-duration="40.57" data-track-index="10" data-volume="1"></audio>
+      <audio id="musique" class="clip" src="assets/audio/musique.mp3" data-start="0" data-duration="42.77" data-track-index="11"
+        data-volume="0.14" data-fade-in="0.6" data-fade-out="2.2"></audio>
+      <div id="halo-blue" class="halo clip" data-start="0" data-duration="42.77" data-track-index="0"></div>
+      <div id="halo-orange" class="halo clip" data-start="0" data-duration="42.77" data-track-index="0"></div>
+      <img id="logo-top" class="clip" data-start="0" data-duration="39.091" data-track-index="1"
+        src="assets/brand/foodeatup-logo-horizontal-mascot.png" alt="FoodEatUp" />
+
+      <section id="s1" class="scene clip" data-start="0.0" data-duration="3.6" data-track-index="2">
+        
+        <div class="body center">
+          <div class="big" id="i1"><svg class="ico" width="220" height="220" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9 16h6"/></svg><div class="big-t">Votre IA</div><span class="sub-t">formateur FoodEatUp</span></div>
+        </div>
+      </section>
+
+      <section id="s2" class="scene clip" data-start="3.6" data-duration="5.619" data-track-index="2">
+        <h2 class="kicker">Le connecteur <b>MCP</b><br>de l'Académie</h2>
+        <div class="body wrap">
+          <div class="pill" id="i2"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span>Public</span></div>
+          <div class="pill" id="i3"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span>Gratuit</span></div>
+          <div class="pill" id="i4"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span>Sans compte</span></div>
+          <div class="pill" id="i5"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><span>Sans clé d&#x27;API</span></div>
+        </div>
+      </section>
+
+      <section id="s3" class="scene clip" data-start="9.219" data-duration="5.503" data-track-index="2">
+        <h2 class="kicker">Dans <b>Claude</b></h2>
+        <div class="body stack">
+          <div class="row card" id="i6"><span class="num" style="background:#007bff">1</span><div><div class="row-t">Réglages</div></div></div>
+          <div class="row card" id="i7"><span class="num" style="background:#007bff">2</span><div><div class="row-t">Connecteurs</div></div></div>
+          <div class="row card" id="i8"><span class="num" style="background:#c88100">3</span><div><div class="row-t">Ajouter un connecteur personnalisé</div></div></div>
+        </div>
+      </section>
+
+      <section id="s4" class="scene clip" data-start="14.722" data-duration="7.709" data-track-index="2">
+        <h2 class="kicker">L'adresse à coller</h2>
+        <div class="body center">
+          <div class="url" id="i9"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1 1"/><path d="M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1-1"/></svg><span>tutoriel.foodeatup.com/mcp</span></div>
+          <div class="badge" id="i10" style="background:#c88100"><svg class="ico" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Authentification : aucune</span></div>
+        </div>
+      </section>
+
+      <section id="s5" class="scene clip" data-start="22.431" data-duration="5.329" data-track-index="2">
+        <h2 class="kicker">Aussi avec</h2>
+        <div class="body grid2">
+          <div class="tile card" id="i11"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><div class="tile-t">ChatGPT</div></div>
+          <div class="tile card" id="i12"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c88100" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><div class="tile-t">Le Chat (Mistral)</div></div>
+          <div class="tile card" id="i13"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg><div class="tile-t">Cursor</div></div>
+          <div class="tile card" id="i14"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c88100" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg><div class="tile-t">VS Code</div></div>
+        </div>
+      </section>
+
+      <section id="s6" class="scene clip" data-start="27.76" data-duration="7.674" data-track-index="2">
+        <h2 class="kicker">Il vous forme</h2>
+        <div class="body stack">
+          <div class="bubble me" id="i15">Forme-moi à FoodEatUp</div>
+          <div class="row card" id="i16"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><div class="row-t">Parcours par métier</div></div></div>
+          <div class="row card" id="i17"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></svg><div><div class="row-t">Vidéos</div></div></div>
+          <div class="row card" id="i18"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><div><div class="row-t">Quiz et exercices</div></div></div>
+        </div>
+      </section>
+
+      <section id="s7" class="scene clip" data-start="35.434" data-duration="3.657" data-track-index="2">
+        
+        <div class="body center">
+          <div class="big" id="i19"><svg class="ico" width="220" height="220" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><div class="big-t">0 donnée</div><span class="sub-t">de votre restaurant</span></div>
+          <div class="pill" id="i20"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#007bff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h7"/></svg><span>Seulement le catalogue</span></div>
+        </div>
+      </section>
+
+      <section id="s8" class="scene clip final" data-start="39.091" data-duration="3.679" data-track-index="2">
+        
+        <div class="body center">
+          <img class="logo-end" id="i21" src="assets/brand/foodeatup-logo-horizontal-mascot.png" alt="" />
+          <div class="url" id="i22"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1 1"/><path d="M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1-1"/></svg><span>tutoriel.foodeatup.com/mcp</span></div>
+          <div class="pill" id="i23"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c88100" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><span>Gratuit, sans compte</span></div>
+          <img class="chef-end" id="i24" src="assets/brand/chef-icon.svg" alt="" />
+        </div>
+      </section>
+
+      <div id="subs" class="clip" data-start="0" data-duration="42.77" data-track-index="5"></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Sous-titres : [début, fin, texte] tirés de la transcription mot à mot.
+      const SUBS = [[0.0, 1.509, "Et si votre assistant IA", 60], [1.509, 3.431, "devenait votre formateur FoodEatUp ?", 50], [3.75, 5.654, "L'Académie a un connecteur MCP", 60], [5.654, 6.694, "public et gratuit", 60], [6.769, 7.454, "sans compte", 60], [7.454, 9.016, "et sans clé d'API", 60], [9.369, 9.996, "Dans Claude", 60], [9.996, 10.983, "ouvrez Réglages", 60], [10.983, 13.026, "Connecteurs, puis Ajouter un", 60], [13.026, 14.519, "connecteur personnalisé", 60], [14.872, 15.854, "Collez l'adresse", 60], [15.882, 20.219, "tutoriel.foodeatup.com/mcp", 60], [20.352, 22.506, "Laissez l'authentification sur aucune", 48], [22.581, 24.659, "Ça marche aussi avec ChatGPT", 60], [24.659, 25.797, "Le Chat de Mistral", 60], [25.797, 27.882, "Cursor et VS Code", 60], [27.91, 29.762, "Ensuite, demandez simplement", 60], [29.814, 31.422, "forme-moi à FoodEatUp", 60], [31.451, 32.6, "Parcours par métier", 60], [32.6, 34.609, "vidéos, quiz et exercices", 60], [34.609, 35.555, "en français", 60], [35.584, 36.745, "Et aucune donnée de votre", 60], [36.745, 38.005, "restaurant n'est lue", 60], [38.069, 40.42, "seulement le catalogue de l'Académie", 50]];
+      const subsBox = document.getElementById("subs");
+      SUBS.forEach(([t0, t1, text, size]) => {
+        const el = document.createElement("div");
+        el.className = "sub";
+        el.style.fontSize = size + "px";
+        el.textContent = text;
+        subsBox.appendChild(el);
+        tl.set(el, { opacity: 1 }, t0);
+        tl.set(el, { opacity: 0 }, Math.min(t1, 40.57));
+      });
+
+      tl.to("#halo-blue", { x: 140, y: 120, duration: 42.77, ease: "sine.inOut" }, 0);
+      tl.to("#halo-orange", { x: -120, y: -160, duration: 42.77, ease: "sine.inOut" }, 0);
+      tl.to("#logo-top", { opacity: 0, duration: 0.3 }, Math.max(0, 39.091 - 0.3));
+
+      // s1 · Accroche
+      tl.from("#i1", { scale: 0.5, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 0.0);
+      tl.from("#i1 .ico", { rotation: -15, y: 40, duration: 0.7, ease: "elastic.out(1, 0.5)" }, 0.0);
+      tl.to("#s1", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 3.3);
+      // s2 · Le connecteur <b>MCP</b><br>de l'Académie
+      tl.from("#s2 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 3.65);
+      tl.from("#i2", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 5.554);
+      tl.from("#i3", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 5.984);
+      tl.from("#i4", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 6.669);
+      tl.from("#i5", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 7.505);
+      tl.to("#s2", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 8.919);
+      // s3 · Dans <b>Claude</b>
+      tl.from("#s3 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 9.269);
+      tl.from("#i6", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 10.233);
+      tl.from("#i7", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 10.883);
+      tl.from("#i8", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 12.357);
+      tl.to("#s3", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 14.422);
+      // s4 · L'adresse à coller
+      tl.from("#s4 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 14.772);
+      tl.from("#i9", { scale: 0.6, opacity: 0, duration: 0.6, ease: "elastic.out(1, 0.6)" }, 15.782);
+      tl.to("#i9", { scale: 1.06, duration: 0.22, yoyo: true, repeat: 1, ease: "sine.inOut" }, 17.382);
+      tl.from("#i10", { scale: 0, rotation: -6, duration: 0.55, ease: "elastic.out(1, 0.5)" }, 20.252);
+      tl.to("#s4", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 22.131);
+      // s5 · Aussi avec
+      tl.from("#s5 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 22.481);
+      tl.from("#i11", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 23.584);
+      tl.from("#i12", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 24.559);
+      tl.from("#i13", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 25.697);
+      tl.from("#i14", { scale: 0.4, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 26.707);
+      tl.to("#s5", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 27.46);
+      // s6 · Il vous forme
+      tl.from("#s6 .kicker", { y: -50, opacity: 0, duration: 0.45, ease: "back.out(2)" }, 27.81);
+      tl.from("#i15", { scale: 0.5, opacity: 0, transformOrigin: "100% 100%", duration: 0.45, ease: "back.out(2.2)" }, 29.714);
+      tl.from("#i16", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 31.351);
+      tl.from("#i17", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 32.5);
+      tl.from("#i18", { x: -500, opacity: 0, duration: 0.5, ease: "back.out(1.5)" }, 33.255);
+      tl.to("#s6", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 35.134);
+      // s7 · 
+      tl.from("#i19", { scale: 0.5, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 35.705);
+      tl.from("#i19 .ico", { rotation: -15, y: 40, duration: 0.7, ease: "elastic.out(1, 0.5)" }, 35.705);
+      tl.from("#i20", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 37.969);
+      tl.to("#s7", { opacity: 0, y: -60, duration: 0.3, ease: "power2.in" }, 38.791);
+      // s8 · Fin
+      tl.from("#i21", { y: 80, scale: 0.8, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 39.241);
+      tl.from("#i22", { scale: 0.6, opacity: 0, duration: 0.6, ease: "elastic.out(1, 0.6)" }, 39.691);
+      tl.from("#i23", { y: 40, scale: 0.6, opacity: 0, duration: 0.45, ease: "back.out(2.5)" }, 40.291);
+      tl.from("#i24", { y: 80, scale: 0.8, opacity: 0, duration: 0.6, ease: "back.out(2)" }, 40.691);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
