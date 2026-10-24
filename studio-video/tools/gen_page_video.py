@@ -220,7 +220,8 @@ def render_item(it, idx):
         who = it.get("who", "me")
         return f'<div class="bubble {who}" id="{iid}">{text}</div>'
     if kind == "url":
-        return f'<div class="url" id="{iid}">{ic}<span>{text}</span></div>'
+        fs = min(50, int(820 / (0.56 * len(it["text"]))))
+        return f'<div class="url" id="{iid}" style="font-size:{fs}px">{ic}<span>{text}</span></div>'
     if kind == "badge":
         return f'<div class="badge" id="{iid}" style="background:{it.get("bg", "#c88100")}">{icon(it.get("icon"), "#fff", 48)}<span>{text}</span></div>'
     if kind == "img":
@@ -429,7 +430,7 @@ TEMPLATE = """<!doctype html>
       .bubble.me {{ align-self: flex-end; background: var(--blue); color: #fff; border-bottom-right-radius: 10px; }}
       .bubble.bot {{ align-self: flex-start; background: #fff; border: 4px solid var(--ink); border-bottom-left-radius: 10px; }}
       .bubble.wa {{ align-self: flex-start; background: #e7f6ee; border: 4px solid #0e7a4f; border-bottom-left-radius: 10px; }}
-      .url {{ display: inline-flex; align-items: center; gap: 16px; font-size: 50px; font-weight: 700; color: #fff; background: var(--blue);
+      .url {{ white-space: nowrap; display: inline-flex; align-items: center; gap: 16px; font-size: 50px; font-weight: 700; color: #fff; background: var(--blue);
         padding: 26px 46px; border-radius: 999px; box-shadow: 0 12px 0 var(--blue-deep); }}
       .url .ico {{ width: 56px; height: 56px; }}
       .badge {{ display: inline-flex; align-items: center; gap: 16px; font-size: 42px; font-weight: 700; color: #fff;
