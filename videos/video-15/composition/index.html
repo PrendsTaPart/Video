@@ -1,0 +1,89 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Vidéo 15 : RapidoCRM et Claude</title>
+<link rel="stylesheet" href="base.css">
+<style>
+#stage{background:radial-gradient(1100px 900px at 50% 30%,#0e3d5e 0%,#0F1A23 62%)}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.fly{position:absolute;background:var(--surf);border:3px solid #2f475c;border-radius:22px;padding:16px 26px;font-weight:700;font-size:34px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.bub{position:absolute;left:80px;right:80px;background:#fff;color:#0F1A23;border-radius:30px 30px 30px 6px;padding:22px 30px;font-weight:700;font-size:40px;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.mail{position:absolute;left:60px;width:960px;background:#fff;color:#0F1A23;border-radius:22px;padding:26px 30px;font-size:25px;line-height:1.4;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.mail b{font-size:21px;color:#5a6470;display:block;margin-bottom:6px}
+.demo{position:absolute;background:#4a3410;color:var(--orange);border-radius:999px;padding:8px 20px;font-weight:700;font-size:22px}
+</style></head><body>
+<div id="stage">
+  <div class="scene" id="s0">
+    <div class="fly" id="c0" style="left:60px;top:300px;transform:rotate(-4deg)">📇 Prospects</div>
+    <div class="fly" id="c1" style="left:600px;top:360px;transform:rotate(3deg)">📅 Rendez-vous</div>
+    <div class="fly" id="c2" style="left:120px;top:520px;transform:rotate(2deg)">📄 Devis</div>
+    <div class="fly" id="c3" style="left:640px;top:580px;transform:rotate(-3deg)">🧾 Factures</div>
+    <div class="fly" id="c4" style="left:330px;top:720px;transform:rotate(-1deg)">📞 Relances</div>
+    <img class="pose" id="s0m" src="a/po/surprise.webp" style="left:300px;top:880px;width:480px">
+    <div class="big" id="s0b" style="top:1400px;font-size:58px">Besoin d'un <span style="color:var(--orange)">deuxième cerveau</span> 🧠</div>
+  </div>
+  <div class="scene" id="s1">
+    <div class="chip">La révélation</div>
+    <div class="title" style="font-size:62px">J'ai développé<br><b>RapidoCRM</b></div>
+    <div class="logo-pill" id="s1l" style="left:680px;top:130px;height:110px"><img src="a/logos/rapidocrm-logo-officiel.png" style="height:70px"></div>
+    <div class="tab" id="s1tab" style="left:60px;top:390px;width:960px;height:690px"><div class="scr"><img src="a/img/rapidocrm-ecran-tableau-de-bord.webp"></div></div>
+    <div class="abs" id="s1c" style="left:0;right:0;top:1120px;display:flex;justify-content:center;align-items:center;gap:22px">
+      <div class="logo-pill" style="position:static;height:100px"><img src="a/logos/rapidocrm-logo-officiel.png" style="height:60px"></div>
+      <div style="font-size:60px;font-weight:700;color:var(--orange)">+ MCP +</div>
+      <div class="logo-pill" style="position:static;height:100px"><img src="a/logos/claude.webp" style="height:52px"></div></div>
+    <div class="real" style="left:70px;top:1260px">Écran réel RapidoCRM (bibliothèque de marque)</div>
+  </div>
+  <div class="scene" id="s2">
+    <div class="chip">Je lui demande</div>
+    <div class="bub" id="q0" style="top:420px">Quels clients je dois rappeler ?</div>
+    <div class="bub" id="q1" style="top:600px">Quels devis attendent une réponse ?</div>
+    <div class="bub" id="q2" style="top:780px">Quelles factures dois-je suivre ?</div>
+    <img class="pose" id="s2m" src="a/po/telephone.webp" style="left:560px;top:1000px;width:440px">
+  </div>
+  <div class="scene" id="s3">
+    <div class="chip">Le point du matin</div>
+    <div class="title" style="font-size:56px">Claude lit<br><b>mon CRM</b></div>
+    <div class="term" id="s3t" style="left:40px;top:390px;width:1000px"><div class="bar">MCP RapidoCRM · lecture seule<span>● réponses réelles · 26/10</span></div><pre id="s3pre" style="font-size:22px"></pre></div>
+    <div class="real" style="left:70px;top:1260px">Noms des clients anonymisés · entrées « [TEST-QA] » et « ZZ » exclues des chiffres</div>
+  </div>
+  <div class="scene" id="s4">
+    <div class="chip">Les relances</div>
+    <div class="title" style="font-size:56px">Claude prépare,<br><b>je valide</b></div>
+    <div class="mail" id="s4m" style="top:400px"><b>BROUILLON · relance devis · Client A</b>Bonjour,<br>je reviens vers vous au sujet de notre proposition du 21 juillet, d'un montant de 1 200 €. Avez-vous pu la regarder ? Je peux vous la présenter en 15 minutes cette semaine.<br>Bonne journée,<br>Michael</div>
+    <div class="mail" id="s4f" style="top:850px"><b>BROUILLON · suivi facture · Client B</b>Bonjour, petit rappel pour la facture du 9 octobre (1 428 €), toujours en attente de règlement. Dites-moi si vous avez besoin d'un duplicata.</div>
+    <div class="badge" id="s4b" style="left:160px;top:1180px;font-size:36px">Rien n'est envoyé sans mon accord</div>
+  </div>
+  <div class="scene" id="s5">
+    <div class="chip">Prospecter et organiser</div>
+    <div class="title" style="font-size:56px">Pipeline,<br><b>segments, prospection</b></div>
+    <div class="tab" style="left:60px;top:390px;width:960px;height:600px"><div class="scr" id="s5scr"></div></div>
+    <div class="bar" id="s5bar" style="position:absolute;left:60px;top:1020px;width:960px;height:64px;border-radius:32px;overflow:hidden;display:flex;background:var(--surf)"><div style="width:98.6%;background:var(--blue);display:flex;align-items:center;padding-left:24px;font-weight:700;font-size:24px">69 nouveaux prospects</div><div style="width:1.4%;background:var(--orange)"></div></div>
+    <div class="real" style="left:70px;top:1100px">Pipeline réel : 70 prospects · 69 « Nouveau prospect » · 1 en « Qualification »</div>
+    <div id="s5seg"></div>
+    <div class="demo" style="left:60px;top:1330px">Aucune prospection lancée pour le tournage</div>
+  </div>
+  <div class="scene" id="s6">
+    <div class="tab" style="left:60px;top:300px;width:960px;height:690px;opacity:.22"><div class="scr"><img src="a/img/rapidocrm-ecran-tableau-de-bord.webp"></div></div>
+    <div class="big" id="s6a" style="top:520px;font-size:58px;color:var(--grey)">Avant, je travaillais<br>pour mon CRM.</div>
+    <div class="big" id="s6b" style="top:760px;font-size:76px;line-height:1.1">Maintenant, mon CRM<br><span style="color:var(--orange)">travaille avec mon IA.</span></div>
+  </div>
+  <div class="scene" id="s7">
+    <div class="ring" id="s7p" style="left:390px;top:300px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="big" id="s7a" style="top:680px;font-size:68px;line-height:1.1">Et toi, tu gères<br>encore tes clients<br><span style="color:var(--orange)">à la main ?</span></div>
+    <div class="badge" id="s7b" style="left:250px;top:1030px;font-size:40px">Dis-le en commentaire 👇</div>
+    <div class="abs" id="s7l" style="left:0;right:0;top:1180px;display:flex;justify-content:center;gap:24px">
+      <div class="logo-pill" style="position:static;height:100px"><img src="a/logos/rapidocrm-logo-officiel.png" style="height:60px"></div>
+      <div class="logo-pill" style="position:static;height:100px"><img src="a/logos/claude.webp" style="height:52px"></div>
+      <div class="logo-pill" style="position:static;height:100px"><img src="a/logos/braindcode.png" style="height:60px"></div></div>
+  </div>
+  <div class="scene" id="thumb">
+    <div class="tab" style="left:40px;top:560px;width:1000px;height:760px;transform:rotate(-2deg)"><div class="scr"><img src="a/img/rapidocrm-ecran-tableau-de-bord.webp"></div></div>
+    <div class="big" style="top:130px;font-size:44px;letter-spacing:6px;color:var(--orange)">VIDÉO 15</div>
+    <div class="big" style="top:210px;font-size:110px;line-height:1">MON IA GÈRE<br><span style="color:var(--orange)">MES CLIENTS ?</span></div>
+    <div class="ring" style="left:290px;top:1180px;width:500px;height:500px;border-width:12px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="logo-pill" style="left:60px;top:1700px;height:110px"><img src="a/logos/rapidocrm-logo-officiel.png" style="height:70px"></div>
+    <div class="logo-pill" style="left:760px;top:1700px;height:110px"><img src="a/logos/claude.webp" style="height:56px"></div>
+  </div>
+  <div id="logos"><div class="lp"><img src="a/logos/braindcode.png" style="height:30px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>
