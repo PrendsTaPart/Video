@@ -1,0 +1,87 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Vidéo 14 : QA Hub</title>
+<link rel="stylesheet" href="base.css">
+<style>
+#stage{background:radial-gradient(1100px 900px at 50% 30%,#2a1d5e 0%,#0F1A23 62%)}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.kw{position:absolute;left:60px;width:960px;background:var(--surf);border:2px solid #2f475c;border-radius:20px;padding:14px 22px;font-size:26px;font-weight:600}
+.kw code{font-family:'DejaVu Sans Mono',monospace;color:#86efac;font-size:24px;margin-right:14px}
+.st{position:absolute;width:250px;height:96px;border-radius:22px;background:var(--surf);border:3px solid #2f475c;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:700;font-size:25px;text-align:center;line-height:1.1}
+.st small{font-weight:500;font-size:16px;margin-top:4px}
+.st.on{border-color:var(--orange)}
+.fx{color:#86efac}.fq{color:var(--orange)}.fh{color:#7dd3fc}
+.err{color:#fca5a5}
+</style></head><body>
+<div id="stage">
+  <div class="scene" id="s0">
+    <div class="term" id="s0t" style="left:60px;top:300px;width:960px"><div class="bar">Tests MCP<span style="color:#fca5a5">● démonstration simulée</span></div><pre id="s0pre" style="font-size:26px"></pre></div>
+    <img class="pose" id="s0m" src="a/po/surprise.webp" style="left:300px;top:900px;width:480px">
+    <div class="big" id="s0a" style="top:820px;font-size:54px">J'ai développé mon propre<br><span style="color:var(--orange)">outil de contrôle qualité</span></div>
+  </div>
+  <div class="scene" id="s1">
+    <div class="big" id="s1a" style="top:560px;font-size:56px;color:var(--grey)">Créer un logiciel avec l'IA,<br>c'est bien…</div>
+    <div class="big" id="s1b" style="top:780px;font-size:78px;line-height:1.05">Mais qui vérifie<br><span style="color:var(--orange)">que tout fonctionne ?</span></div>
+  </div>
+  <div class="scene" id="s2">
+    <div class="chip">FoodEatUp QA Hub</div>
+    <div class="title" style="font-size:58px">Un scénario appelle,<br><b>puis compare</b></div>
+    <div class="tab" id="s2tab" style="left:200px;top:390px;width:680px;height:480px"><div class="scr"><img src="a/img/login.png" style="object-position:center"></div></div>
+    <div class="real" style="left:70px;top:885px">Application réelle (Lovable) · l'intérieur demande un compte : non filmé</div>
+    <div class="kw" id="k0" style="top:940px"><code>callMcpTool</code>appeler un outil MCP</div>
+    <div class="kw" id="k1" style="top:1020px"><code>sendHttpRequest</code>appeler une API</div>
+    <div class="kw" id="k2" style="top:1100px"><code>verifyStatusCode</code>le code</div>
+    <div class="kw" id="k3" style="top:1180px"><code>verifyJsonPath</code>la valeur</div>
+    <div class="kw" id="k4" style="top:1260px"><code>verifyContains</code>le texte</div>
+    <div class="badge" id="s2b" style="left:60px;top:1350px;font-size:30px">Chaque exécution garde la requête et la réponse</div>
+  </div>
+  <div class="scene" id="s3">
+    <div class="chip">La boucle</div>
+    <div class="title" style="font-size:58px">Un test échoue…<br><b>et la boucle démarre</b></div>
+    <svg class="abs" style="left:0;top:0" width="1080" height="1920"><circle id="cir" cx="540" cy="900" r="360" fill="none" stroke="#FFA500" stroke-width="6" stroke-dasharray="2262" stroke-dashoffset="2262"/></svg>
+    <div id="s3n"></div>
+    <div class="abs" id="s3c" style="left:340px;top:820px;width:400px;text-align:center;font-weight:700;font-size:30px;line-height:1.3"></div>
+    <div class="real" style="left:70px;top:1330px"><span class="fx">vert</span> : dans le code · <span class="fq">orange</span> : objectif, pas encore automatisé · <span class="fh">bleu</span> : humain</div>
+    <div class="real" style="left:70px;top:1370px;color:#fca5a5">Cas d'exemple : démonstration simulée</div>
+  </div>
+  <div class="scene" id="s4">
+    <div class="chip">Mon objectif</div>
+    <div class="title" style="font-size:58px">Une boucle qui tourne seule,<br><b>avec des garde-fous</b></div>
+    <div class="row" id="r0" style="top:420px"><div class="n">1</div><div class="t">Validation humaine avant la production<small>aucun déploiement automatique</small></div></div>
+    <div class="row" id="r1" style="top:550px"><div class="n">2</div><div class="t">Jamais de résultat attendu modifié<small>pour faire passer un test</small></div></div>
+    <div class="row" id="r2" style="top:680px"><div class="n">3</div><div class="t">Arrêt si la boucle se répète<small>ou si le budget est dépassé</small></div></div>
+    <div class="row" id="r3" style="top:810px"><div class="n">4</div><div class="t">Correction sur une branche<small>jamais directement en production</small></div></div>
+    <div class="big" id="s4a" style="top:1000px;font-size:60px">Tant que ça ne passe pas…</div>
+    <div class="big" id="s4b" style="top:1090px;font-size:84px;color:var(--orange)">la boucle continue !</div>
+  </div>
+  <div class="scene" id="s5">
+    <div class="quote" id="s5a" style="top:560px;font-size:40px;text-align:center"><b>AVANT</b>je cherchais les bugs.</div>
+    <div class="quote" id="s5b" style="top:760px;font-size:36px;text-align:center;background:var(--orange)"><b style="color:#0F1A23">MAINTENANT</b>mes agents m'aident à les traquer, préparer les corrections et vérifier le résultat.</div>
+    <img class="pose" id="s5m" src="a/po/ordinateur.webp" style="left:300px;top:1050px;width:480px">
+  </div>
+  <div class="scene" id="s6">
+    <div class="ring" id="s6p" style="left:390px;top:400px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="big" id="s6a" style="top:780px;font-size:60px">Et demain, jusqu'où<br><span style="color:var(--orange)">cette boucle peut aller</span></div>
+  </div>
+  <div class="scene" id="s7">
+    <div class="big" id="f0" style="top:500px;font-size:84px">L'IA DÉVELOPPE.</div>
+    <div class="big" id="f1" style="top:620px;font-size:84px">L'IA TESTE.</div>
+    <div class="big" id="f2" style="top:740px;font-size:84px">L'IA CORRIGE.</div>
+    <div class="big" id="f3" style="top:880px;font-size:72px;color:var(--orange)">ET LA BOUCLE CONTINUE.</div>
+    <div class="real" id="f4" style="left:0;right:0;text-align:center;top:1020px">Le concept. Aujourd'hui : tests et tickets dans le QA Hub, correction et validation encore pilotées par l'humain.</div>
+    <div class="abs" id="s7l" style="left:0;right:0;top:1100px;display:flex;justify-content:center;gap:24px">
+      <div class="logo-pill" style="position:static;height:100px"><img src="a/logos/foodeatup.png" style="height:56px"></div>
+      <div class="logo-pill" style="position:static;height:100px"><img src="a/logos/claude.webp" style="height:50px"></div></div>
+  </div>
+  <div class="scene" id="thumb">
+    <div class="big" style="top:150px;font-size:44px;letter-spacing:6px;color:var(--orange)">VIDÉO 14</div>
+    <div class="big" style="top:230px;font-size:110px;line-height:1">MES AGENTS<br><span style="color:var(--orange)">TRAQUENT</span><br>LES BUGS</div>
+    <div class="term" style="left:60px;top:650px;width:960px"><div class="bar">Tests MCP<span style="color:#fca5a5">● démonstration simulée</span></div><pre style="font-size:30px"><span class="err">✗ attendu 200 · obtenu 500</span>
+<span class="o">→ ticket · prompt · correction</span>
+<span class="g">✓ test relancé : réussi</span></pre></div>
+    <div class="ring" style="left:340px;top:1060px;width:400px;height:400px"><img src="a/img/braindcode-profil.jpg"></div>
+  </div>
+  <div id="logos"><div class="lp"><img src="a/logos/braindcode.png" style="height:30px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>
