@@ -1,0 +1,40 @@
+{
+  "formation": {
+    "mcp": "Formation FoodEatUp",
+    "sources": [
+      "get_formation(marketing) mission G3 « La machine inbound, étape par étape »",
+      "G2 TOFU/MOFU/BOFU",
+      "G7 Mesurer et améliorer",
+      "get_editorial_brief (étapes, gabarit « Les cinq erreurs », 20 règles)",
+      "get_editorial_gaps (répartition cible 55/30/10/5)",
+      "list_tunnels (blocs du tunnel, état des workflows : null)"
+    ]
+  },
+  "ecrans": {
+    "rapidocms": [
+      "ecran-calendrier",
+      "ecran-calendrier-generer-ia",
+      "ecran-reseaux-sociaux"
+    ],
+    "rapidocrm": [
+      "ecran-fil-accueil-entreprise"
+    ],
+    "source": "list_brand_assets (bibliothèque formation.foodeatup.fr)"
+  },
+  "rapidocms_lecture": {
+    "list_campagnes": "campagnes réelles (lancement FoodEatUp, vidéos produit, stories…) ; nombreuses entrées « Routine CONTENU-QUOTIDIEN » vides",
+    "list_scheduled_posts(26/10–09/11)": "85 posts : 26 LinkedIn, 22 Facebook, 22 Instagram, 15 TikTok"
+  },
+  "rapidocrm_lecture": {
+    "list_formulaires": "11 formulaires dont « FoodEatUp — Demande de démo / Premiers Pas », aimants food cost et HACCP ; 0 vue, 0 clic",
+    "list_workflows": "17 : 3 actifs (onboarding, relance facture J+7, relance devis J+3) avec 0 exécution ; « Bienvenue lead aimant » et « Relance devis après démo » en brouillon"
+  },
+  "ecritures": "aucune (ni brouillon, ni campagne, ni envoi)",
+  "logos": [
+    "claude.webp",
+    "rapidocms-logo-officiel.png",
+    "rapidocrm-logo-officiel.png",
+    "braindcode.png"
+  ],
+  "voix": "ElevenLabs Noé, 976 crédits"
+}

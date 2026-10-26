@@ -1,0 +1,92 @@
+1
+00:00:00,600 --> 00:00:02,560
+Aujourd'hui, je vais te montrer comment j'ai construit
+
+2
+00:00:02,560 --> 00:00:04,740
+ma stratégie pour attirer de nouveaux clients.
+
+3
+00:00:04,740 --> 00:00:07,200
+Parce que publier sur les réseaux sociaux, c'est bien…
+
+4
+00:00:07,200 --> 00:00:09,820
+Mais si personne ne devient client, à quoi ça sert ?
+
+5
+00:00:09,820 --> 00:00:12,640
+Alors, j'ai connecté RapidoCMS et RapidoCRM
+
+6
+00:00:12,640 --> 00:00:14,500
+à Claude grâce à mes MCP.
+
+7
+00:00:14,500 --> 00:00:17,240
+RapidoCMS m'aide à créer les contenus, les visuels
+
+8
+00:00:17,240 --> 00:00:18,980
+et à organiser les publications.
+
+9
+00:00:18,980 --> 00:00:21,440
+Attention : un like ne devient pas un client.
+
+10
+00:00:21,440 --> 00:00:23,500
+C'est le formulaire de démo, avec le consentement,
+
+11
+00:00:23,500 --> 00:00:25,680
+qui crée le contact dans RapidoCRM.
+
+12
+00:00:25,680 --> 00:00:27,740
+Ensuite, je suis ses demandes, ses rendez-vous
+
+13
+00:00:27,740 --> 00:00:28,720
+et ses opportunités.
+
+14
+00:00:28,720 --> 00:00:30,980
+Mais le plus intéressant, c'est la boucle !
+
+15
+00:00:30,980 --> 00:00:32,760
+Claude peut analyser les performances,
+
+16
+00:00:32,760 --> 00:00:33,800
+identifier ce qui fonctionne
+
+17
+00:00:33,800 --> 00:00:35,680
+et préparer la prochaine campagne.
+
+18
+00:00:35,680 --> 00:00:37,800
+Avant, je publiais pour être visible.
+
+19
+00:00:37,800 --> 00:00:39,280
+Maintenant, je construis un système
+
+20
+00:00:39,280 --> 00:00:41,240
+pour transformer mon contenu en clients.
+
+21
+00:00:41,240 --> 00:00:44,200
+Et tout ça, avec mes propres logiciels et mes agents IA !
+
+22
+00:00:44,200 --> 00:00:45,580
+Si tu veux mon tunnel complet,
+
+23
+00:00:45,580 --> 00:00:47,190
+écris TUNNEL en commentaire !
+
