@@ -1,0 +1,90 @@
+{
+  "video": 18,
+  "duree_s": 59,
+  "format": "1080x1920",
+  "voix": "ElevenLabs Noé, eleven_v4",
+  "sequences": [
+    {
+      "t": [
+        0,
+        3.7
+      ],
+      "sequence": "1 · Accroche",
+      "visuel": "Michael débordé, quatre agents du catalogue qui le sollicitent (illustration)"
+    },
+    {
+      "t": [
+        3.7,
+        9.86
+      ],
+      "sequence": "2 · Problème",
+      "visuel": "Conversations, tâches, prompts, connecteurs qui s'empilent"
+    },
+    {
+      "t": [
+        9.86,
+        16.04
+      ],
+      "sequence": "3 · Révélation",
+      "visuel": "Icône officielle Plan'It, trois promesses"
+    },
+    {
+      "t": [
+        16.04,
+        25.3
+      ],
+      "sequence": "4 · Objectif",
+      "visuel": "« Organise ma campagne commerciale FoodEatUp de la semaine » puis sortie réelle de route_orchestrator, logos RapidoCRM / FoodEatUp / BraindCode"
+    },
+    {
+      "t": [
+        25.3,
+        29.28
+      ],
+      "sequence": "5 · Organisation",
+      "visuel": "Liste des tâches (capture réelle, compte de démo) + coût réel estimate_routine_cost"
+    },
+    {
+      "t": [
+        29.28,
+        33.42
+      ],
+      "sequence": "6 · Connexions",
+      "visuel": "Plan'It au centre, 6 connecteurs avec leur nombre d'outils (list_mcp_servers)"
+    },
+    {
+      "t": [
+        33.42,
+        38.88
+      ],
+      "sequence": "7 · Contrôle",
+      "visuel": "Outils à confirmation obligatoire (list_destructive_tools), envois / publications / suppressions"
+    },
+    {
+      "t": [
+        38.88,
+        42.86
+      ],
+      "sequence": "8 · Suivi",
+      "visuel": "Tableau de bord et liste des tâches (captures réelles, compte de démo)"
+    },
+    {
+      "t": [
+        42.86,
+        49.62
+      ],
+      "sequence": "9 · Vérité + punchline",
+      "visuel": "Mon compte aujourd'hui : 8 connecteurs, 0 routine active, 5 routines proposées ; avant / maintenant"
+    },
+    {
+      "t": [
+        49.62,
+        59
+      ],
+      "sequence": "10 · Vision",
+      "visuel": "Michael au centre, cinq rôles du scénario (agents du catalogue, pas en service)"
+    }
+  ],
+  "sfx": "whoosh aux révélations, pop sur les logos et la punchline",
+  "sous_titres": "Poppins SemiBold 50 incrustés"
+}

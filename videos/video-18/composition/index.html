@@ -1,0 +1,113 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Vidéo 18 : je dirige mes agents IA</title>
+<link rel="stylesheet" href="base.css">
+<style>
+:root{--pl:#7B4DFF;--pk:#E85BC6}
+#stage{background:radial-gradient(1100px 900px at 50% 30%,#2a2160 0%,#0F1A23 64%)}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.av{position:absolute;width:170px;height:170px;border-radius:50%;overflow:hidden;border:5px solid #fff;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.av img{width:100%;height:100%;object-fit:cover}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.qb{position:absolute;background:#fff;color:#0F1A23;border-radius:26px 26px 26px 6px;padding:12px 20px;font-weight:700;font-size:25px;box-shadow:0 16px 40px rgba(0,0,0,.45);white-space:nowrap}
+.phone{position:absolute;width:470px;height:1010px;border-radius:60px;background:#0b0b14;padding:16px;box-shadow:0 40px 90px rgba(0,0,0,.6),0 0 0 3px #3b3470 inset}
+.phone .scr{width:100%;height:100%;border-radius:46px;overflow:hidden;background:#f3efff;position:relative}
+.phone .scr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.gl{position:absolute;padding:10px 22px;border-radius:999px;font-weight:700;font-size:30px;background:linear-gradient(90deg,var(--pl),var(--pk));color:#fff;white-space:nowrap}
+.user{position:absolute;right:60px;max-width:860px;background:var(--pl);color:#fff;border-radius:28px 28px 6px 28px;padding:20px 28px;font-weight:600;font-size:36px;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.lg{position:absolute;width:240px;height:118px;text-align:center;line-height:1.15;background:#fff;border-radius:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 18px 40px rgba(0,0,0,.45);color:#0F1A23;font-weight:700;font-size:20px}
+.lg img{max-height:52px;max-width:170px;margin-bottom:4px}
+.lock{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:18px;background:var(--surf);border:2px solid #4b3f8c;border-radius:20px;padding:14px 22px}
+.lock code{font-family:'DejaVu Sans Mono',monospace;font-size:25px;color:#c9b8ff}
+.lock span{margin-left:auto;font-size:19px;font-weight:700;color:#0F1A23;background:var(--orange);border-radius:999px;padding:6px 14px}
+.stat{position:absolute;width:300px;height:190px;background:var(--surf);border:2px solid #4b3f8c;border-radius:24px;text-align:center;padding-top:22px}
+.stat b{display:block;font-size:76px;line-height:1;color:#fff}.stat span{font-size:22px;color:var(--grey)}
+.illu{position:absolute;background:#3a2a5c;color:#d7c6ff;border-radius:999px;padding:8px 20px;font-weight:700;font-size:21px}
+.role{position:absolute;width:200px;text-align:center}
+.role .av{position:relative;width:150px;height:150px;margin:0 auto}
+.role b{display:block;font-size:24px;margin-top:8px}.role span{display:block;font-size:19px;color:var(--grey)}
+</style></head><body>
+<div id="stage">
+  <div class="scene" id="s0">
+    <div id="s0a"></div>
+    <img class="pose" id="s0m" src="a/po/surprise.webp" style="left:290px;top:880px;width:500px">
+    <div class="illu" id="s0i" style="left:70px;top:1500px">Illustration · agents du catalogue Plan'It</div>
+  </div>
+  <div class="scene" id="s1">
+    <div class="big" id="s1a" style="top:480px;font-size:58px;color:var(--grey)">Créer un agent IA,<br>c'est bien…</div>
+    <div id="s1c"></div>
+    <div class="big" id="s1b" style="top:1120px;font-size:72px;line-height:1.1">Mais à plusieurs,<br>il faut <span style="color:var(--orange)">organiser<br>leur travail !</span></div>
+  </div>
+  <div class="scene" id="s2">
+    <img id="s2l" src="a/img/planit-icon.png" style="position:absolute;left:390px;top:330px;width:300px">
+    <div class="big" id="s2t" style="top:680px;font-size:110px">Plan'It</div>
+    <div class="gl" id="s2p0" style="left:150px;top:900px">Planifier des tâches</div>
+    <div class="gl" id="s2p1" style="left:230px;top:1010px">Connecter mes MCP</div>
+    <div class="gl" id="s2p2" style="left:170px;top:1120px">Suivre mes routines</div>
+    <div class="real" style="left:70px;top:1290px">Application Flutter · iOS et Android · plani-t.fr</div>
+  </div>
+  <div class="scene" id="s3">
+    <div class="chip">L'objectif</div>
+    <div class="user" id="u0" style="top:200px">Organise ma campagne commerciale FoodEatUp de la semaine.</div>
+    <div class="term" id="s3t" style="left:60px;top:480px;width:960px"><div class="bar">MCP Plan'It · route_orchestrator · appel réel<span>● 26/10</span></div><pre id="s3pre" style="font-size:24px"></pre></div>
+    <div class="lg" id="s3a" style="left:150px;top:1110px"><img src="a/logos/rapidocrm-logo-officiel.png">les campagnes</div>
+    <div class="lg" id="s3b" style="left:430px;top:1110px"><img src="a/logos/foodeatup.png" style="max-height:40px">l'agenda marketing</div>
+    <div class="lg" id="s3c" style="left:710px;top:1110px"><img src="a/logos/braindcode.png" style="max-height:44px">ma semaine</div>
+    <div class="real" id="s3r" style="left:70px;top:1270px">Outils retenus, rien n'est exécuté · agent délégué : aucun pour l'instant</div>
+  </div>
+  <div class="scene" id="s4">
+    <div class="chip">Tâches et routines</div>
+    <div class="phone" id="s4ph" style="left:60px;top:220px"><div class="scr"><img id="s4i" src="a/taches/0001.jpg"></div></div>
+    <div class="quote" id="s4q" style="left:560px;top:420px;width:460px;font-size:26px"><b>ESTIMATE_ROUTINE_COST · RÉEL</b>Routine hebdomadaire :<br><span style="font-size:52px;font-weight:700">1 crédit</span><br>par exécution<br>4 crédits / mois<br><small style="font-size:19px">tarif plat, pas une mesure</small></div>
+    <div class="pill" id="s4p" style="left:560px;top:880px;font-size:26px">Coût affiché avant</div>
+    <div class="real" style="left:70px;top:1260px">Capture réelle de l'app · compte de démonstration (Académie Plan'It, tuto 11)</div>
+  </div>
+  <div class="scene" id="s5">
+    <div class="chip">Les connexions MCP</div>
+    <svg class="abs" style="left:0;top:0" width="1080" height="1920"><g id="s5l" stroke="#7B4DFF" stroke-width="5" fill="none"></g></svg>
+    <div class="ring" id="s5c" style="left:420px;top:850px;width:240px;height:240px;background:#fff;border-color:#7B4DFF"><img src="a/img/planit-icon.png" style="object-fit:contain;padding:30px"></div>
+    <div id="s5n"></div>
+    <div class="real" style="left:70px;top:1520px">list_mcp_servers · connecteurs branchés et outils indexés, au 26/10</div>
+  </div>
+  <div class="scene" id="s6">
+    <div class="chip">Le contrôle humain</div>
+    <div class="title" style="font-size:58px">Rien de sensible<br><b>sans mon accord</b></div>
+    <div class="gl" id="s6g0" style="left:70px;top:400px;font-size:28px">Envois</div>
+    <div class="gl" id="s6g1" style="left:250px;top:400px;font-size:28px">Publications</div>
+    <div class="gl" id="s6g2" style="left:520px;top:400px;font-size:28px">Suppressions</div>
+    <div id="s6r"></div>
+    <div class="real" style="left:70px;top:1180px">list_destructive_tools · 10 outils Plan'It à confirmation obligatoire</div>
+    <div class="real" style="left:70px;top:1220px">Dans l'app : événement « confirmation_required » avant chaque action</div>
+  </div>
+  <div class="scene" id="s7">
+    <div class="chip">Le suivi</div>
+    <div class="phone" id="s7ph" style="left:60px;top:220px"><div class="scr"><img id="s7i" src="a/dash/0001.jpg"></div></div>
+    <div class="phone" id="s7ph2" style="left:550px;top:300px;width:470px;height:1010px;transform:scale(.86);transform-origin:top left"><div class="scr"><img id="s7j" src="a/taches/0060.jpg"></div></div>
+    <div class="real" style="left:70px;top:1260px">Captures réelles de l'app · compte de démonstration (Académie Plan'It)</div>
+  </div>
+  <div class="scene" id="s8">
+    <div class="chip">Mon compte, aujourd'hui</div>
+    <div class="stat" id="k0" style="left:60px;top:220px"><b>8</b><span>connecteurs branchés</span></div>
+    <div class="stat" id="k1" style="left:390px;top:220px"><b>0</b><span>routine active</span></div>
+    <div class="stat" id="k2" style="left:720px;top:220px"><b>5</b><span>routines proposées</span></div>
+    <div class="real" id="k3" style="left:70px;top:440px">get_kpi_home · list_routines · recommend_routines (rien n'est créé)</div>
+    <div class="big" id="s8a" style="top:620px;font-size:52px;color:var(--grey)">Avant, j'organisais moi-même<br>le travail de mes IA.</div>
+    <div class="big" id="s8b" style="top:860px;font-size:72px;line-height:1.1">Maintenant,<br>c'est <span style="color:#a98bff">Plan'It</span><br>qui l'organise.</div>
+  </div>
+  <div class="scene" id="s9">
+    <div class="ring" id="s9p" style="left:390px;top:520px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div id="s9r"></div>
+    <div class="big" id="s9a" style="top:1150px;font-size:60px;line-height:1.12">Construire une véritable<br><span style="color:var(--orange)">équipe d'employés IA</span><br>qui travaille avec mes logiciels !</div>
+    <div class="illu" id="s9i" style="left:70px;top:1420px">Rôles du scénario · agents du catalogue Plan'It, pas encore en service dans mon compte</div>
+  </div>
+  <div class="scene" id="thumb">
+    <div class="big" style="top:110px;font-size:44px;letter-spacing:6px;color:var(--orange)">VIDÉO 18</div>
+    <div class="big" style="top:180px;font-size:118px;line-height:1">JE DIRIGE<br><span style="color:#b79bff">MES AGENTS IA !</span></div>
+    <div id="thr"></div>
+    <div class="ring" style="left:340px;top:820px;width:400px;height:400px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="phone" style="left:350px;top:1250px;width:380px;height:560px;padding:12px;border-radius:44px"><div class="scr" style="border-radius:34px"><img src="a/dash/0090.jpg"></div></div>
+    <img src="a/img/planit-icon.png" style="position:absolute;left:460px;top:540px;width:160px;border-radius:36px;box-shadow:0 20px 50px rgba(0,0,0,.5)">
+  </div>
+  <div id="logos"><div class="lp"><img src="a/logos/braindcode.png" style="height:30px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>
