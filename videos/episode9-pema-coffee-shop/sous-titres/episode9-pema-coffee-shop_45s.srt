@@ -1,0 +1,60 @@
+1
+00:00:01,000 --> 00:00:02,540
+Aujourd'hui, je vous présente une application
+
+2
+00:00:02,540 --> 00:00:05,220
+que j'ai développée pour un client, pour 2 000 euros.
+
+3
+00:00:05,220 --> 00:00:07,300
+Et ce n'est pas simplement un catalogue de recettes :
+
+4
+00:00:10,200 --> 00:00:12,028
+J'ai donc créé une application tactile :
+
+5
+00:00:12,028 --> 00:00:14,128
+les catégories, la recherche instantanée,
+
+6
+00:00:14,128 --> 00:00:16,408
+les ingrédients, les quantités, les allergènes,
+
+7
+00:00:16,408 --> 00:00:18,788
+et un mode pas à pas qui guide chaque préparation.
+
+8
+00:00:18,788 --> 00:00:20,918
+Il y a même une Academy pour former les nouveaux équipiers.
+
+9
+00:00:21,380 --> 00:00:24,200
+Mais le plus intéressant, c'est la connexion à FoodEatUp.
+
+10
+00:00:24,200 --> 00:00:25,860
+Les recettes et leurs compositions sont lues
+
+11
+00:00:25,860 --> 00:00:28,400
+dans mon logiciel central, puis recopiées dans l'application
+
+12
+00:00:28,400 --> 00:00:30,480
+par une synchronisation programmée chaque nuit,
+
+13
+00:00:30,480 --> 00:00:32,900
+pour continuer à fonctionner même sans connexion.
+
+14
+00:00:32,900 --> 00:00:34,920
+Et quand un responsable corrige une recette,
+
+15
+00:00:34,920 --> 00:00:37,358
+rien ne part vers FoodEatUp sans sa confirmation.
+
