@@ -1,0 +1,119 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 8 : RapidoRH</title>
+<link rel="stylesheet" href="base.css">
+<style>
+#stage{background:radial-gradient(1100px 900px at 50% 30%,#2b1f5c 0%,#0F1A23 62%)}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.fc{position:absolute;background:var(--surf);border:2px solid #2f475c;border-radius:20px;padding:16px 22px;font-weight:600;font-size:26px;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.demo{position:absolute;background:#4a3410;color:var(--orange);border-radius:999px;padding:8px 20px;font-weight:700;font-size:22px}
+.tb{position:absolute;left:40px;width:1000px;border-collapse:separate;border-spacing:0 8px;font-size:21px}
+.tb th{font-size:17px;color:var(--grey);font-weight:600;text-align:left;padding:0 10px}
+.tb td{background:var(--surf);padding:14px 10px;font-weight:600}
+.tb td:first-child{border-radius:14px 0 0 14px}.tb td:last-child{border-radius:0 14px 14px 0}
+.ag{color:#c4b5fd}
+</style></head><body>
+<div id="stage">
+  <div class="scene" id="s0">
+    <div class="fc" id="f0" style="left:60px;top:300px">FoodEatUp · Daily Brief</div>
+    <div class="fc" id="f1" style="left:560px;top:380px">RapidoCMS · Bibliothèque v2</div>
+    <div class="fc" id="f2" style="left:120px;top:470px">Série vidéo IA</div>
+    <div class="fc" id="f3" style="left:600px;top:560px">4 collaborateurs</div>
+    <div class="term" id="f4" style="left:60px;top:650px;width:600px"><div class="bar">Claude Code</div><pre style="font-size:22px">&gt; 3 projets, 15 tâches…</pre></div>
+    <div class="fc" id="f5" style="left:700px;top:700px;color:#c4b5fd">🤖 Agent IA</div>
+    <div class="fc" id="f6" style="left:760px;top:800px;color:#c4b5fd">🤖 Agent IA</div>
+    <img class="pose" id="s0m" src="a/po/reflechit.webp" style="left:300px;top:880px;width:480px">
+    <div class="big" id="s0q" style="top:1380px;font-size:64px">Qui fait <span style="color:var(--orange)">quoi ?</span></div>
+  </div>
+  <div class="scene" id="s1">
+    <div class="chip">Ma solution</div>
+    <div class="title" style="font-size:60px">J'ai développé<br><b>RapidoRH</b></div>
+    <div class="logo-pill" id="s1l" style="left:700px;top:130px;height:110px;padding:12px 22px"><img src="a/logos/rapidorh.png" style="height:80px"></div>
+    <div class="tab" id="s1tab" style="left:60px;top:390px;width:960px;height:690px"><div class="scr"><img src="a/img/hd-dashboard.png"></div></div>
+    <div class="demo" style="left:60px;top:1100px">Démo locale · entreprise et personnes fictives</div>
+    <div id="s1p"></div>
+  </div>
+  <div class="scene" id="s2">
+    <div class="chip">Mes projets</div>
+    <div class="title" style="font-size:58px">Responsable, équipe,<br><b>dates et priorités</b></div>
+    <div class="tab" id="s2tab" style="left:60px;top:390px;width:960px;height:690px"><div class="scr"><img src="a/img/hd-projets.png"></div></div>
+    <div id="s2p"></div>
+  </div>
+  <div class="scene" id="s3">
+    <div class="chip">Le Kanban, en vrai</div>
+    <div class="title" style="font-size:58px">À faire, en cours,<br><b>terminé</b></div>
+    <div class="tab" style="left:60px;top:390px;width:960px;height:690px"><div class="scr" id="s3scr"></div></div>
+    <div class="lbl" id="s3l" style="position:absolute;left:60px;top:1110px;background:#fff;color:#0F1A23;border-radius:999px;padding:10px 26px;font-weight:700;font-size:30px"></div>
+    <div class="real" style="left:70px;top:1190px">RapidoRH lancé en local depuis le dépôt · projet de démonstration</div>
+  </div>
+  <div class="scene" id="s4">
+    <div class="chip">Mes équipes</div>
+    <div class="title" style="font-size:58px">Rôles, départements,<br><b>accès</b></div>
+    <div class="tab" style="left:60px;top:390px;width:960px;height:690px"><div class="scr" id="s4scr"></div></div>
+    <div class="lbl" id="s4l" style="position:absolute;left:60px;top:1110px;background:#fff;color:#0F1A23;border-radius:999px;padding:10px 26px;font-weight:700;font-size:30px"></div>
+    <div class="real" style="left:70px;top:1190px">Colonne salaire et adresses floutées · aucune donnée RH réelle</div>
+  </div>
+  <div class="scene" id="s5">
+    <div class="chip">Claude est connecté</div>
+    <div class="title" style="font-size:58px">RapidoRH × Claude<br><b>grâce au MCP</b></div>
+    <div class="quote" id="s5q" style="top:400px"><b>MON PROMPT</b>« Claude, consulte mes projets RapidoRH, identifie les tâches prioritaires et prépare le plan de travail de la journée. Ne modifie aucune donnée. »</div>
+    <div class="term" id="s5t" style="left:60px;top:640px;width:960px"><div class="bar">POST /mcp/rapidorh · 127.0.0.1<span>● réponse réelle (démo)</span></div><pre id="s5pre" style="font-size:22px"></pre></div>
+  </div>
+  <div class="scene" id="s6">
+    <div class="chip">Le plan du jour</div>
+    <div class="title" style="font-size:58px">Ce que Claude<br><b>me propose</b></div>
+    <div class="row" id="r0" style="top:390px;border-color:#ef4444"><div class="n" style="background:#ef4444">!</div><div class="t">En retard : Brancher le MCP FoodEatUp<small>échéance 25/10 · Sarah · en cours · Urgent</small></div></div>
+    <div class="row" id="r1" style="top:520px"><div class="n">1</div><div class="t">Aujourd'hui : Correction du tri par date<small>RapidoCMS · Urgent · à faire</small></div></div>
+    <div class="row" id="r2" style="top:650px"><div class="n">2</div><div class="t">Aujourd'hui : Épisode 8 · RapidoRH<small>Série vidéo · Urgent · en cours</small></div></div>
+    <div class="row" id="r3" style="top:780px"><div class="n">3</div><div class="t">Demain : Écran « priorités du jour »<small>Daily Brief · Urgent · à faire</small></div></div>
+    <div class="term" id="s6t" style="left:60px;top:930px;width:960px"><div class="bar">create-task-tool · APERÇU<span style="color:var(--orange)">● non exécuté</span></div><pre style="font-size:21px">{ "project_id": 1, "tasklist_id": 1,
+  "title": "Débloquer la connexion MCP FoodEatUp",
+  "due_date": "2026-10-27" }</pre></div>
+    <div class="badge" id="s6b" style="left:200px;top:1200px;font-size:34px">En attente de ma validation</div>
+    <div class="real" style="left:70px;top:1300px">Plan tiré des réponses réelles de get-project-tasks-tool sur la démo</div>
+  </div>
+  <div class="scene" id="s7">
+    <div class="chip">Les routines IA</div>
+    <div class="title" style="font-size:52px">Brief quotidien<br><b>des projets BraindCode</b></div>
+    <div id="s7r"></div>
+    <div id="s7o"></div>
+    <div class="demo" id="s7d" style="left:60px;top:1330px">Proposée, pas activée · 8 h 30 après validation</div>
+  </div>
+  <div class="scene" id="s8">
+    <div class="chip">Humains et agents IA</div>
+    <div class="title" style="font-size:52px">Les humains décident,<br><b>les agents exécutent</b></div>
+    <table class="tb" id="s8t" style="top:380px"></table>
+    <div class="quote" id="s8q" style="top:1000px;font-size:22px"><b>À SAVOIR</b>RapidoRH n'a pas de champ « agent IA » : une tâche est assignée à une personne. Le lien avec les agents passe par Claude et l'orchestrateur (Claude Code, Plan'It, n8n). Tableau d'illustration.</div>
+  </div>
+  <div class="scene" id="s9">
+    <div class="ring" id="s9p" style="left:370px;top:240px;width:340px;height:340px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="big" id="s9a" style="top:660px;font-size:50px;color:var(--grey)">Le vrai enjeu de l'IA :</div>
+    <div class="big" id="w0" style="top:760px;font-size:64px">organiser leur travail</div>
+    <div class="big" id="w1" style="top:860px;font-size:64px">mesurer leurs résultats</div>
+    <div class="big" id="w2" style="top:960px;font-size:64px;color:var(--orange)">collaborer avec les humains</div>
+  </div>
+  <div class="scene" id="s10">
+    <div class="ring" id="s10p" style="left:390px;top:240px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="big" id="s10a" style="top:620px;font-size:62px">RAPIDORH <span style="color:var(--orange)">×</span> CLAUDE<br><span style="color:var(--orange)">×</span> BRAINDCODE</div>
+    <div class="big" id="s10b" style="top:820px;font-size:40px;line-height:1.35;color:var(--cream)">DES PROJETS. DES ÉQUIPES.<br>DES AGENTS IA. <span style="color:var(--orange)">UNE ORGANISATION.</span></div>
+    <div class="abs" id="s10l" style="left:0;right:0;top:1000px;display:flex;justify-content:center;gap:24px">
+      <div class="logo-pill" style="position:static;height:110px"><img src="a/logos/rapidorh.png" style="height:80px"></div>
+      <div class="logo-pill" style="position:static;height:110px"><img src="a/logos/claude.webp" style="height:56px"></div>
+      <div class="logo-pill" style="position:static;height:110px"><img src="a/logos/braindcode.png" style="height:66px"></div></div>
+  </div>
+  <div class="scene" id="schema">
+    <div class="chip">Architecture</div>
+    <div class="title" style="font-size:52px">Routines IA<br><b>et RapidoRH</b></div>
+    <div id="sch"></div>
+  </div>
+  <div class="scene" id="thumb">
+    <div class="tab" style="left:60px;top:860px;width:960px;height:690px;transform:rotate(-2deg)"><div class="scr"><img src="a/img/hd-k1.png"></div></div>
+    <div class="big" style="top:130px;font-size:44px;letter-spacing:6px;color:var(--orange)">ÉPISODE 8</div>
+    <div class="big" style="top:210px;font-size:100px;line-height:1">JE PILOTE<br>MES ÉQUIPES<br><span style="color:var(--orange)">ET MES AGENTS IA</span></div>
+    <div class="ring" style="left:720px;top:620px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="logo-pill" style="left:60px;top:650px;height:110px"><img src="a/logos/rapidorh.png" style="height:80px"></div>
+  </div>
+  <div id="logos"><div class="lp"><img src="a/logos/braindcode.png" style="height:30px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>
