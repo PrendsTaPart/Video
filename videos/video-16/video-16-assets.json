@@ -1,0 +1,42 @@
+{
+  "mcp": {
+    "serveur": "Tuto FoodEatUp (tutoriel_foodeatup), public, lecture seule",
+    "appels": [
+      "capacites_foodeatup",
+      "rechercher_tutoriels",
+      "carte_tutoriel",
+      "lecteur_video_tutoriel",
+      "quiz_tutoriel",
+      "exercice_pratique",
+      "parcours_apprentissage"
+    ],
+    "ecritures": "aucune"
+  },
+  "lovable": {
+    "projet": "55ff35b7 FoodEatUp Academy",
+    "usage": "vérification du chiffre « 173 vidéos en ligne sur 230 »"
+  },
+  "captures_web": [
+    "tutoriel.foodeatup.com accueil",
+    "module Hygiène & HACCP",
+    "fiche relever-une-temperature-equipement"
+  ],
+  "video_tutoriel": {
+    "slug": "relever-une-temperature-equipement",
+    "duree": "0:38",
+    "usage": "images de la vraie vidéo dans la carte, sans les premières images noires"
+  },
+  "vignette_tutoriel": "vignette officielle du tutoriel (obtenir_vignette_tutoriel)",
+  "logos": [
+    "foodeatup.png",
+    "claude.webp",
+    "openai.webp",
+    "braindcode.png"
+  ],
+  "photo": "braindcode-profil.jpg (photo réelle de Michael)",
+  "voix": "ElevenLabs Noé 7pDdnNI6PhXmAp0pXFZm, eleven_v4",
+  "non_verifie": [
+    "rendu de la carte HTML dans Claude.ai et ChatGPT"
+  ],
+  "higgsfield": "aucun plan généré"
+}
