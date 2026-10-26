@@ -1,0 +1,65 @@
+{
+  "video": 12,
+  "duree_s": 35.5,
+  "format": "1080x1920, H.264, 30 i/s",
+  "voix": "ElevenLabs Noé (7pDdnNI6PhXmAp0pXFZm), eleven_v4",
+  "effets_sonores": "pops façon BD (MA BD !, 88 pages, MAIS ATTENDS, « BD ») et souffles aux transitions",
+  "sequences": [
+    {
+      "t": [
+        0,
+        4.0
+      ],
+      "visuel": "Zoom arrière cinématique sur la couverture « La Brigade augmentée » (export Figma ×2) ; pastilles Figma, RapidoCMS, Claude",
+      "voix": "Aujourd'hui, j'ai connecté Figma et RapidoCMS à Claude."
+    },
+    {
+      "t": [
+        4.0,
+        6.0
+      ],
+      "visuel": "Parallaxe : planche 5 (Mickaël) et couverture ; bulle « MA BD ! »",
+      "voix": "Et je lui ai demandé de créer ma bande dessinée !"
+    },
+    {
+      "t": [
+        6.0,
+        11.6
+      ],
+      "visuel": "Caméra case par case sur les planches 10 et 40 ; badge « 88 pages de BD »",
+      "voix": "Il récupère mes images, organise les planches et construit l'histoire directement dans Figma. 88 pages."
+    },
+    {
+      "t": [
+        11.6,
+        15.2
+      ],
+      "visuel": "« MAIS ATTENDS… », photo officielle de la caisse Sunmi (RapidoCMS), couverture du Guide FoodEatUp (Figma)",
+      "voix": "Mais attends… je lui ai aussi demandé de documenter mon logiciel de caisse !"
+    },
+    {
+      "t": [
+        15.2,
+        22.0
+      ],
+      "visuel": "Pages réelles du guide, défilement et zoom : ch. 7 Prendre une commande, ch. 8 Encaisser, vignette tutoriel Clôturer (RapidoCMS), Atlas des écrans, ch. 37 Connecter FoodEatUp à Claude, planche de la brigade",
+      "voix": "Prendre une commande, encaisser, clôturer… Les écrans, les explications, les illustrations : tout prend forme, dans le même fichier."
+    },
+    {
+      "t": [
+        22.0,
+        27.8
+      ],
+      "visuel": "Développeur, illustrateur, rédacteur → mosaïque BD + documentation",
+      "voix": "Avant, il m'aurait fallu plusieurs métiers… Maintenant, je connecte les bons outils et je donne les bonnes instructions."
+    },
+    {
+      "t": [
+        27.8,
+        35.5
+      ],
+      "visuel": "Dernière page de la BD en fond ; « TU VEUX LA MÉTHODE ? » puis « COMMENTE « BD » », tenu 7 s",
+      "voix": "Si tu veux la méthode, écris BD en commentaire !"
+    }
+  ]
+}
