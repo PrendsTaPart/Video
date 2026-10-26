@@ -1,0 +1,55 @@
+1
+00:00:00,600 --> 00:00:02,560
+Pendant longtemps, on développait des logiciels
+
+2
+00:00:02,560 --> 00:00:04,340
+pour que les humains travaillent dessus.
+
+3
+00:00:04,340 --> 00:00:06,840
+Maintenant, je construis des compétences et des agents IA
+
+4
+00:00:06,840 --> 00:00:09,510
+pour que les logiciels puissent aussi travailler avec nous.
+
+5
+00:00:10,200 --> 00:00:11,630
+Par exemple, un agent peut repérer
+
+6
+00:00:11,630 --> 00:00:12,750
+les stocks bas d'un restaurant
+
+7
+00:00:12,750 --> 00:00:14,570
+et préparer une commande fournisseur.
+
+8
+00:00:14,570 --> 00:00:16,190
+Mais rien ne part sans validation :
+
+9
+00:00:16,190 --> 00:00:17,970
+une commande, un paiement ou une publication
+
+10
+00:00:17,970 --> 00:00:19,750
+attend toujours votre accord.
+
+11
+00:00:20,400 --> 00:00:21,290
+Le plus intéressant ?
+
+12
+00:00:21,290 --> 00:00:24,050
+Cette équipe IA ne va pas seulement utiliser nos logiciels.
+
+13
+00:00:24,050 --> 00:00:26,630
+Elle va aussi nous aider à en construire de nouveaux.
+
+14
+00:00:26,630 --> 00:00:28,620
+Et dimanche, je suis passé à la pratique.
