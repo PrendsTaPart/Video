@@ -5,9 +5,9 @@
 Tu publies du contenu chaque jour… mais tes visiteurs ne savent pas où cliquer ?
 
 J'ai réglé ça avec un seul site, construit avec Lovable et Claude :
-→ un seul lien : profil, vidéos, projets, et un bouton pour prendre rendez-vous
-→ une formation gratuite par vidéo, avec les prompts que j'ai vraiment utilisés, et le PDF
-→ un MCP : mes agents IA préparent vidéos, formations et offres en brouillon, je valide
+- un seul lien : profil, vidéos, projets, et un bouton pour prendre rendez-vous
+- une formation gratuite par vidéo, avec les prompts que j'ai vraiment utilisés, et le PDF
+- un MCP : mes agents IA préparent vidéos, formations et offres en brouillon, je valide
 
 Comment j'ai fait : Lovable pour la base, Claude Code depuis GitHub pour faire évoluer et tester, Lovable pour la mise en ligne.
 

@@ -7,9 +7,9 @@ J'ai offert des agents IA à ma sœur.
 Elle fait vivre La Chaîne Fratern'Elles, une association d'Aulnay-sous-Bois qui accompagne des familles depuis 2018 : distributions, collectes, sorties, aide aux devoirs.
 
 Ce que je lui ai construit :
-→ un site avec Lovable (événements, collectes, actions, inscription des bénévoles), à ses couleurs Canva
-→ un MCP branché sur son site : ses agents IA préparent un événement, une collecte ou un article… en brouillon uniquement. Rien n'est publié sans elle.
-→ une formation à ChatGPT, Canva et Gmail
+- un site avec Lovable (événements, collectes, actions, inscription des bénévoles), à ses couleurs Canva
+- un MCP branché sur son site : ses agents IA préparent un événement, une collecte ou un article… en brouillon uniquement. Rien n'est publié sans elle.
+- une formation à ChatGPT, Canva et Gmail
 
 L'objectif n'est pas de remplacer les bénévoles. C'est de leur rendre du temps, pour être sur le terrain.
 

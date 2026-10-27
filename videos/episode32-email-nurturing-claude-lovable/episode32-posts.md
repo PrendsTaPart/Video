@@ -6,10 +6,10 @@ Des personnes laissent leur email sur mon site pour débloquer une formation… 
 
 Épisode 32/365 : j'ai mis en place l'email nurturing avec Claude, Lovable et le MCP de mon site.
 
-→ Deux consentements séparés : débloquer une formation ≠ s'abonner à mon actualité (case à part, jamais cochée d'office)
-→ 46 visuels d'email dessinés par Lovable en HTML/CSS, exportés en images
-→ Un email = un objectif = un bouton
-→ Claude prépare les campagnes et les publications par MCP… mais aucun outil n'envoie ni ne publie. Je valide.
+- Deux consentements séparés : débloquer une formation ≠ s'abonner à mon actualité (case à part, jamais cochée d'office)
+- 46 visuels d'email dessinés par Lovable en HTML/CSS, exportés en images
+- Un email = un objectif = un bouton
+- Claude prépare les campagnes et les publications par MCP… mais aucun outil n'envoie ni ne publie. Je valide.
 
 Où j'en suis, sans enjoliver : 8 modèles en brouillon, l'envoi n'est pas encore branché.
 
