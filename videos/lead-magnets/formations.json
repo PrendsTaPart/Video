@@ -1804,5 +1804,79 @@
   "prompts": [
    "Trouve-moi des restaurants susceptibles d'être intéressés par FoodEatUp, qualifie les prospects et prépare les prochaines actions commerciales. Présente-moi les actions qui demandent mon accord avant de les exécuter."
   ]
+ },
+ {
+  "episode": 31,
+  "slug": "site-lien-en-bio-avec-lovable-et-claude",
+  "titre": "Construire son site lien-en-bio avec Lovable et Claude",
+  "promesse": "Un seul lien pour vos vidéos, vos projets, vos rendez-vous et des formations à débloquer, que Claude peut tenir à jour grâce au MCP du site.",
+  "pour_qui": "Créateurs, consultants et dirigeants qui publient chaque jour et veulent transformer leur audience en contacts.",
+  "offre": "build",
+  "outils": [
+   {
+    "nom": "Lovable",
+    "url": "https://lovable.dev"
+   },
+   {
+    "nom": "Claude Code",
+    "url": "https://claude.ai/code"
+   },
+   {
+    "nom": "Claude",
+    "url": "https://claude.ai"
+   },
+   {
+    "nom": "Supabase",
+    "url": "https://supabase.com"
+   },
+   {
+    "nom": "GitHub",
+    "url": "https://github.com"
+   }
+  ],
+  "etapes": [
+   {
+    "titre": "Cadrer la page",
+    "explication": "Une seule action principale (le rendez-vous), puis les vidéos, les projets par catégorie et les ressources. On décide avant de générer quoi que ce soit.",
+    "prompt": "Je publie [fréquence] des vidéos sur [thème]. Propose la structure d'un site lien-en-bio : profil, boutons d'action, vidéos, projets par catégorie, ressources gratuites, prise de rendez-vous. Une seule action principale par écran."
+   },
+   {
+    "titre": "Générer la base avec Lovable",
+    "explication": "Lovable construit le site, la base de données et le panneau d'administration protégé à partir d'une description. On vérifie l'aperçu avant d'aller plus loin.",
+    "prompt": "Crée un site lien-en-bio en français pour [prénom nom], [métier]. Accueil : portrait, bio courte, réseaux, bouton « Prendre rendez-vous », vidéos, projets, ressources gratuites. Un panneau d'administration protégé pour publier vidéos et projets. Couleurs : [charte]."
+   },
+   {
+    "titre": "Reprendre le projet dans Claude Code",
+    "explication": "Le projet Lovable est relié à GitHub dans les deux sens. Claude Code le clone, lit ses règles (AGENTS.md), modifie le code, lance les tests et pousse sur la branche principale ; Lovable récupère le commit.",
+    "prompt": "Clone [dépôt GitHub], lis AGENTS.md, puis fais l'état des lieux : routes, tables, outils MCP, tests. Ne modifie rien avant mon accord."
+   },
+   {
+    "titre": "Ajouter les formations à débloquer",
+    "explication": "Le contenu complet n'est jamais lisible directement : un aperçu public, puis un déblocage avec prénom, email et consentement, qui renvoie un jeton n'ouvrant que cette formation. Chaque formation a son PDF.",
+    "prompt": "Ajoute des formations à débloquer : aperçu public sans le contenu, déblocage avec prénom, email et consentement, un jeton qui n'ouvre que sa formation, et un PDF par formation. Teste qu'un visiteur ne peut pas lire la table directement."
+   },
+   {
+    "titre": "Donner un MCP au site",
+    "explication": "Un outil par fichier, une connexion OAuth, la vérification des droits d'administrateur à chaque appel et un journal des écritures. Toute création commence en brouillon ; rien n'est supprimé, on archive.",
+    "prompt": "Ajoute un serveur MCP d'administration : un fichier par outil, OAuth, vérification admin à chaque appel, journal des écritures. Toute création commence en brouillon ; on archive au lieu de supprimer."
+   },
+   {
+    "titre": "Habiller avec la vraie charte",
+    "explication": "Logos, chartes et écrans officiels viennent de la bibliothèque de marque ; tout écran qui montre un prix ou une remise est écarté. Les prompts s'affichent comme une conversation, avec un bouton pour les ouvrir dans Claude. Une version blanche complète la version nuit.",
+    "prompt": "Récupère les logos et les écrans officiels de [marque] depuis la bibliothèque de marque. Écarte tout écran qui affiche un prix ou une remise. Ajoute une version blanche avec des contrastes AA."
+   },
+   {
+    "titre": "Vérifier, puis mettre en production",
+    "explication": "Tests et build avant chaque envoi. Les migrations de base se jouent à part : la synchronisation Lovable ne les applique pas. Après le déploiement, on vérifie chaque page en ligne et le refus du MCP sans jeton.",
+    "prompt": "Après déploiement, vérifie en ligne chaque page, chaque PDF, et que /mcp répond 401 sans jeton. Compare le dernier commit de main avec le mien et signale tout fichier écrasé."
+   }
+  ],
+  "garde_fous": [
+   "Aucune clé ni secret dans le code ou à l'écran.",
+   "Aucun déblocage sans consentement explicite.",
+   "Toute création passe par un brouillon ; la publication attend une validation humaine.",
+   "Après chaque synchronisation Lovable, vérifier que le travail n'a pas été écrasé."
+  ],
+  "etat_reel": "Site en ligne le 27/10 sur michael.foodeatup.fr : 31 vidéos, 30 formations (153 étapes, 60 PDF nuit et blanc), 16 projets, 6 offres, 37 outils MCP qui refusent l'accès sans jeton (401). Les migrations ont été appliquées à la main ; une fusion Lovable a écrasé les formations, rétablies cinq minutes plus tard. Aucun contact n'était encore inscrit au moment de l'épisode."
  }
 ]

@@ -1,0 +1,141 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 31 : mon site Lovable × Claude</title>
+<link rel="stylesheet" href="base.css">
+<style>
+:root{--lov:#ff5a7a;--cl:#d97757;--ac:#7dd3fc;--clay:#AE5630;--ivory:#FAF9F5}
+#stage{background:radial-gradient(1000px 900px at 50% 30%,#1a2c44 0%,#0b131b 68%)}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.grad{background:linear-gradient(90deg,var(--cl),var(--lov) 55%,#7c5cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.lg{position:absolute;background:#fff;border-radius:22px;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.lg img{max-width:80%;max-height:70%}
+.link{position:absolute;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--lov),var(--cl));box-shadow:0 0 24px var(--cl);transform-origin:left center}
+.ph{position:absolute;background:#05090d;border-radius:54px;padding:16px;box-shadow:0 40px 90px rgba(0,0,0,.6),0 0 0 3px #2a3a48 inset}
+.ph .scr{position:relative;width:100%;height:100%;border-radius:40px;overflow:hidden;background:#0F1A23}
+.ph .scr img{position:absolute;left:0;top:0;width:100%}
+.ph .tag{position:absolute;left:50%;transform:translateX(-50%);bottom:-62px;white-space:nowrap;font-weight:600;font-size:24px;color:var(--grey)}
+.stat3{position:absolute;left:60px;right:60px;display:flex;justify-content:space-between}
+.stat3 div{width:300px;text-align:center;background:var(--surf);border:2px solid #2f475c;border-radius:22px;padding:18px 0}
+.stat3 b{display:block;font-size:80px;line-height:1;color:var(--orange)}.stat3 span{font-size:22px;color:var(--grey);font-weight:600}
+.flow{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:22px;padding:18px 24px;border-radius:22px;background:var(--surf);border:2px solid #2f475c}
+.flow .ic{flex:none;width:120px;height:72px;border-radius:16px;background:#fff;display:flex;align-items:center;justify-content:center}
+.flow .ic img{max-width:100px;max-height:52px}.flow .ic.t{background:#0a1118;color:#fff;font-weight:700;font-size:26px}
+.flow b{font-size:31px;display:block}.flow small{font-size:22px;color:var(--grey);font-weight:500}
+.arr{position:absolute;left:520px;width:40px;text-align:center;font-size:36px;color:var(--orange)}
+.term pre{font-size:22px !important}
+.tool{position:absolute;font-family:'DejaVu Sans Mono',monospace;font-size:21px;color:#9fe8d8;background:#0a1118;border:2px solid #22364a;border-radius:12px;padding:7px 12px;white-space:nowrap}
+.tl{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:18px;padding:16px 20px;border-radius:18px;background:var(--surf);border:2px solid #2f475c}
+.tl b{flex:none;width:96px;font-size:30px;color:var(--orange)}.tl span{font-size:26px;font-weight:600;line-height:1.2}.tl em{display:block;font-style:normal;font-size:19px;color:var(--grey);font-family:'DejaVu Sans Mono',monospace;margin-top:4px}
+.tl.bad{border-color:#f87171;background:#2a1215}.tl.bad b{color:#f87171}
+.tl.good{border-color:#22c55e;background:#0f2417}.tl.good b{color:#86efac}
+.x{position:absolute;width:230px;border-radius:16px;overflow:hidden;border:3px solid #f87171;box-shadow:0 20px 40px rgba(0,0,0,.5)}
+.x img{display:block;width:100%;height:150px;object-fit:cover;object-position:top}
+.x span{display:block;background:#2a1215;color:#fca5a5;font-weight:700;font-size:18px;padding:6px 10px;text-align:center}
+.cover{position:absolute;border-radius:26px;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.6);border:3px solid #2f475c}
+.cover img{display:block;width:100%}
+.end{position:absolute;left:80px;right:80px;text-align:center;font-weight:700;border-radius:22px;padding:16px}
+.lab{position:absolute;font-weight:700;font-size:30px;padding:10px 24px;border-radius:999px}
+</style></head><body>
+<div id="stage">
+  <!-- S0 hook -->
+  <div class="scene" id="s0">
+    <div class="ring" id="h0" style="left:400px;top:150px;width:280px;height:280px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="lg" id="h1" style="left:80px;top:520px;width:360px;height:130px"><img src="a/lg/lovable.webp"></div>
+    <div class="lg" id="h2" style="left:640px;top:520px;width:360px;height:130px"><img src="a/lg/claude.webp"></div>
+    <div class="link" id="h3" style="left:440px;top:581px;width:200px"></div>
+    <div class="big" id="h4" style="top:720px;font-size:92px;line-height:1.02">MON SITE<br><span class="grad">LOVABLE × CLAUDE</span></div>
+    <div class="stat3" id="h5" style="top:1000px"><div id="h5a"><b>31</b><span>vidéos</span></div><div id="h5b"><b>30</b><span>formations</span></div><div id="h5c"><b>37</b><span>outils MCP admin</span></div></div>
+    <div class="real" id="h6" style="left:70px;top:1210px">michael.foodeatup.fr · en ligne le 27/10</div>
+  </div>
+  <!-- S1 besoin -->
+  <div class="scene" id="s1"><div class="chip">Le besoin</div>
+    <div class="title" id="b0">Un seul lien pour <b>tout réunir</b></div>
+    <div class="ph" id="b1" style="left:290px;top:400px;width:500px;height:1000px"><div class="scr"><img id="b1i" src="a/img/home-nuit.png"></div></div>
+    <div class="pill" id="b2" style="left:60px;top:470px">👤 Mon profil</div>
+    <div class="pill" id="b3" style="left:760px;top:640px">🎬 Mes vidéos</div>
+    <div class="pill" id="b4" style="left:40px;top:860px">🗂️ Mes projets</div>
+    <div class="pill b" id="b5" style="left:700px;top:1060px">📅 Rendez-vous</div>
+    <div class="big" id="b6" style="top:1500px;font-size:44px;color:var(--orange)">comme un Linktree… mais à moi</div>
+  </div>
+  <!-- S2 méthode -->
+  <div class="scene" id="s2"><div class="chip">Ma méthode</div>
+    <div class="flow" id="m0" style="top:230px"><div class="ic"><img src="a/lg/lovable.webp"></div><div><b>Lovable</b><small>la base du site, en conversation</small></div></div>
+    <div class="arr" id="m0a" style="top:350px">↓</div>
+    <div class="flow" id="m1" style="top:400px"><div class="ic t">GitHub</div><div><b>Le dépôt du projet</b><small>synchronisé avec Lovable, dans les deux sens</small></div></div>
+    <div class="arr" id="m1a" style="top:520px">↓</div>
+    <div class="flow" id="m2" style="top:570px"><div class="ic"><img src="a/lg/claude.webp"></div><div><b>Claude Code</b><small>modifie le code · lance les tests · pousse sur main</small></div></div>
+    <div class="arr" id="m2a" style="top:690px">↓</div>
+    <div class="flow" id="m3" style="top:740px"><div class="ic"><img src="a/lg/lovable.webp"></div><div><b>Mise en production</b><small>déploiement Lovable</small></div></div>
+    <div class="term" id="m4" style="left:60px;top:920px;width:960px"><div class="bar">git log · michael-au-quotidien<span>● vrais commits</span></div><pre><span class="o">8c06763</span> Ajoute la charte des marques, les prompts
+        en conversation et la version blanche
+<span class="o">72ac046</span> Rétablit les formations écrasées
+<span class="o">b1ac9ad</span> Ajoute 30 formations à débloquer
+<span class="m">────────────────────────────────────────</span>
+<span class="g">✓ tests 11/11</span>   <span class="g">✓ build</span>   <span class="g">✓ déployé</span></pre></div>
+  </div>
+  <!-- S3 formations -->
+  <div class="scene" id="s3"><div class="chip">Une formation par épisode</div>
+    <div class="ph" id="f0" style="left:60px;top:240px;width:470px;height:940px"><div class="scr"><img id="f0i" src="a/img/formations.png"></div><div class="tag">30 formations</div></div>
+    <div class="ph" id="f1" style="left:550px;top:240px;width:470px;height:940px"><div class="scr"><img src="a/img/verrou.png"></div><div class="tag">prénom + email + accord</div></div>
+    <div class="stat3" id="f2" style="top:1300px"><div id="f2a"><b>153</b><span>étapes</span></div><div id="f2b"><b>30</b><span>PDF à télécharger</span></div><div id="f2c"><b>✓</b><span>consentement</span></div></div>
+  </div>
+  <!-- S4a prompts + charte -->
+  <div class="scene" id="s4"><div class="chip">Les prompts, façon Claude</div>
+    <div class="ph" id="p0" style="left:60px;top:240px;width:470px;height:940px"><div class="scr"><img src="a/img/etapes.png"></div><div class="tag">un clic → ouvert dans Claude</div></div>
+    <div class="ph" id="p1" style="left:550px;top:240px;width:470px;height:940px"><div class="scr"><img id="p1i" src="a/img/charte.png"></div><div class="tag">logos · charte · écrans</div></div>
+    <div class="real" id="p2" style="left:70px;top:1300px">logos, chartes et écrans : bibliothèque du MCP Formation FoodEatUp</div>
+  </div>
+  <!-- S4b écrans écartés + nuit / blanc -->
+  <div class="scene" id="s5"><div class="chip">Vérifié avant d'afficher</div>
+    <div class="title" id="q0"><b>6 écrans écartés</b> : ils affichaient des prix</div>
+    <div class="x" id="q1" style="left:60px;top:440px"><img src="a/img/x1.jpg"><span>prix visibles</span></div>
+    <div class="x" id="q2" style="left:300px;top:440px"><img src="a/img/x2.jpg"><span>remise visible</span></div>
+    <div class="x" id="q3" style="left:540px;top:440px"><img src="a/img/x3.jpg"><span>prix visibles</span></div>
+    <div class="x" id="q4" style="left:780px;top:440px"><img src="a/img/x4.jpg"><span>montants visibles</span></div>
+    <div class="ph" id="q5" style="left:110px;top:720px;width:410px;height:800px"><div class="scr"><img src="a/img/home-nuit.png"></div></div>
+    <div class="ph" id="q6" style="left:560px;top:720px;width:410px;height:800px"><div class="scr"><img src="a/img/home-blanc.png"></div></div>
+    <div class="lab" id="q7" style="left:220px;top:1560px;background:var(--surf);border:2px solid #2f475c">Version nuit</div>
+    <div class="lab" id="q8" style="left:660px;top:1560px;background:var(--ivory);color:#141413">Version blanche</div>
+  </div>
+  <!-- S5 MCP -->
+  <div class="scene" id="s6"><div class="chip">Le MCP du site</div>
+    <div class="big" id="c0" style="top:200px;font-size:150px;color:var(--orange);line-height:1">37</div>
+    <div class="big" id="c1" style="top:360px;font-size:40px">outils pour piloter le site depuis Claude</div>
+    <div id="tools"></div>
+    <div class="pill c" id="c3" style="left:60px;top:1130px">✎ toute création commence en brouillon</div>
+    <div class="term" id="c4" style="left:60px;top:1240px;width:960px"><div class="bar">POST michael.foodeatup.fr/mcp · sans jeton<span>● test réel</span></div><pre>HTTP/2 <span style="color:#f87171">401</span>  accès refusé</pre></div>
+  </div>
+  <!-- S6 leçon -->
+  <div class="scene" id="s7"><div class="chip">La leçon du jour</div>
+    <div class="tl" id="l0" style="top:240px"><b>11:42</b><div><span>Claude pousse les 30 formations</span><em>b1ac9ad · main</em></div></div>
+    <div class="tl bad" id="l1" style="top:400px"><b>11:47</b><div><span>La synchro Lovable garde l'ancienne version</span><em>ffc4e49 · /formations → 404</em></div></div>
+    <div class="tl good" id="l2" style="top:560px"><b>11:52</b><div><span>Repéré en ligne, tout est remis en place</span><em>72ac046 · tests ✓ build ✓</em></div></div>
+    <div class="tl good" id="l3" style="top:720px"><b>✓</b><div><span>Chaque page revérifiée en ligne</span><em>/ · /formations · PDF · /mcp 401</em></div></div>
+    <div class="big" id="l4" style="top:1000px;font-size:60px;line-height:1.15">L'IA va vite.<br><span style="color:var(--orange)">La vérification<br>ne se délègue pas.</span></div>
+  </div>
+  <!-- S7 CTA -->
+  <div class="scene" id="s8"><div class="chip">Faites pareil</div>
+    <div class="title" id="z0">La formation de <b>cet épisode</b></div>
+    <div class="cover" id="z1" style="left:60px;top:420px;width:960px"><img src="a/img/cover31.jpg"></div>
+    <div class="pill b" id="z2" style="left:60px;top:1020px">étape par étape · avec les prompts</div>
+    <div class="big" id="z3" style="top:1160px;font-size:52px">michael.foodeatup.fr</div>
+    <div class="big" id="z4" style="top:1240px;font-size:34px;color:var(--orange)">→ le lien est dans ma bio</div>
+  </div>
+  <!-- S8 fin -->
+  <div class="scene" id="s9">
+    <div class="ring" id="e0" style="left:390px;top:220px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="big" id="e1" style="top:620px;font-size:54px;line-height:1.2;padding:0 70px">Je construis aussi la vitrine<br>que mes <span style="color:var(--orange)">agents IA</span><br>tiennent à jour avec moi.</div>
+    <div class="end" id="e2" style="top:960px;font-size:40px;background:var(--orange);color:var(--night)">ÉPISODE 31/365</div>
+    <div class="end" id="e3" style="top:1060px;font-size:34px;background:var(--surf);border:2px solid #2f475c">LOVABLE × CLAUDE × MON SITE</div>
+  </div>
+  <div id="logos"><div class="lp"><img src="a/lg/lovable.webp" style="height:30px"></div><div class="lp"><img src="a/lg/claude.webp" style="height:26px"></div></div>
+  <div id="thumb" style="display:none;position:absolute;inset:0">
+    <div class="ph" style="left:290px;top:560px;width:500px;height:1000px"><div class="scr"><img src="a/img/home-nuit.png"></div></div>
+    <div class="big" style="top:150px;font-size:96px;line-height:1.02">J'AI CRÉÉ<br>MON SITE<br><span class="grad">AVEC L'IA</span></div>
+    <div class="lg" style="left:60px;top:1620px;width:300px;height:110px"><img src="a/lg/lovable.webp"></div>
+    <div class="lg" style="left:720px;top:1620px;width:300px;height:110px"><img src="a/lg/claude.webp"></div>
+    <div class="badge" style="left:330px;top:1760px;font-size:34px">ÉPISODE 31</div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body></html>

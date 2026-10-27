@@ -1,0 +1,17 @@
+Aujourd'hui, j'ai construit mon site avec Lovable et Claude. Trente et une vidéos, trente formations… et un panneau d'administration que mes agents IA peuvent piloter.
+
+Je publie une vidéo par jour. Il me fallait un seul lien pour tout réunir : mon profil, mes vidéos, mes projets, et un bouton pour prendre rendez-vous. Un peu comme un Linktree… mais construit pour moi.
+
+J'ai demandé la base du site à Lovable. Puis j'ai importé le projet dans Claude Code, depuis GitHub. Claude modifie le code, lance les tests, pousse sur la branche principale… et Lovable met en production.
+
+Ensuite, chaque épisode a reçu sa formation : les étapes, les outils, et les prompts que j'ai vraiment utilisés. Pour la débloquer, on laisse son prénom et son email, avec son accord. Et on repart avec le PDF.
+
+Les prompts s'affichent comme une conversation : un clic, et ils s'ouvrent dans Claude. Les logos, les chartes et les écrans de mes logiciels viennent du MCP de ma formation. Six écrans ont été écartés : ils affichaient des prix. Et il y a une version blanche, en plus de la version nuit.
+
+Le site a aussi son propre MCP : trente-sept outils pour publier une vidéo, une formation ou une offre. Toute création commence en brouillon. Et sans jeton… le serveur refuse l'accès.
+
+La leçon du jour ? En synchronisant, Lovable a écrasé toutes mes formations. Claude l'a repéré en vérifiant le site en ligne, les a remises en place, puis a revérifié chaque page. L'IA va vite. La vérification, elle, ne se délègue pas.
+
+La formation de cet épisode est en ligne : comment construire ce site, étape par étape, avec les prompts. Le lien est dans ma bio.
+
+Je ne construis plus seulement des logiciels. Je construis aussi la vitrine que mes agents IA peuvent tenir à jour avec moi.
