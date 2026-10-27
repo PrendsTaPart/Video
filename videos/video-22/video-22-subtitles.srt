@@ -1,0 +1,116 @@
+1
+00:00:00,600 --> 00:00:02,480
+Aujourd'hui, je vais te montrer combien me coûte
+
+2
+00:00:02,480 --> 00:00:03,680
+mon équipe d'agents IA.
+
+3
+00:00:03,680 --> 00:00:06,580
+Parce que depuis 21 vidéos, je te montre mes logiciels,
+
+4
+00:00:06,580 --> 00:00:08,480
+mes MCP et mes automatisations.
+
+5
+00:00:08,480 --> 00:00:10,400
+Mais combien ça coûte, tout ça ?
+
+6
+00:00:10,400 --> 00:00:12,980
+20 € pour Claude. 20 € pour ChatGPT.
+
+7
+00:00:12,980 --> 00:00:15,020
+49 € pour RapidoCRM,
+
+8
+00:00:15,020 --> 00:00:18,900
+29 € pour RapidoCMS, et 19 € pour RapidoRH.
+
+9
+00:00:18,900 --> 00:00:21,500
+20 € pour Figma, 25 € pour Lovable,
+
+10
+00:00:21,500 --> 00:00:22,760
+20 € pour ElevenLabs,
+
+11
+00:00:22,760 --> 00:00:25,040
+et environ 20 € d'API pour Plan'It.
+
+12
+00:00:25,040 --> 00:00:27,250
+Total : 222 € par mois !
+
+13
+00:00:29,720 --> 00:00:32,040
+Avec cet écosystème, je peux préparer du contenu,
+
+14
+00:00:32,040 --> 00:00:34,920
+prospecter, suivre mes clients et préparer des devis.
+
+15
+00:00:34,920 --> 00:00:37,400
+Mais aussi concevoir de nouvelles extensions FoodEatUp :
+
+16
+00:00:37,400 --> 00:00:39,840
+le cahier des charges, le développement, les tests.
+
+17
+00:00:39,840 --> 00:00:41,860
+Le secret, ce n'est pas seulement les abonnements.
+
+18
+00:00:41,860 --> 00:00:44,060
+C'est d'avoir connecté mes outils avec mes MCP,
+
+19
+00:00:44,060 --> 00:00:45,950
+et organisé le travail de mes agents.
+
+20
+00:00:47,580 --> 00:00:50,160
+Évidemment, il faut aussi compter le temps de configuration,
+
+21
+00:00:50,160 --> 00:00:52,320
+les serveurs, et les coûts d'API en plus.
+
+22
+00:00:52,320 --> 00:00:53,800
+Tu veux toi aussi une équipe d'agents IA
+
+23
+00:00:53,800 --> 00:00:55,280
+qui travaille avec tes logiciels ?
+
+24
+00:00:55,280 --> 00:00:56,880
+Écris AGENTS en commentaire.
+
+25
+00:00:56,880 --> 00:00:59,180
+Je t'aide à configurer Claude, connecter tes MCP
+
+26
+00:00:59,180 --> 00:01:02,320
+et lancer tes premières missions avec RapidoSoftware.
+
+27
+00:01:02,320 --> 00:01:03,420
+222 € par mois d'outils…
+
+28
+00:01:03,420 --> 00:01:05,160
+et des possibilités qui dépendent surtout
+
+29
+00:01:05,160 --> 00:01:06,850
+de la façon dont tu les connectes !
+

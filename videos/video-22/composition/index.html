@@ -1,0 +1,87 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Vidéo 22 : combien coûte mon équipe IA</title>
+<link rel="stylesheet" href="base.css">
+<style>
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.lw{position:absolute;background:#fff;border-radius:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(0,0,0,.4)}
+.lw img{max-width:84%;max-height:76%}
+.lw.t{color:#0F1A23;font-weight:700;font-size:26px}
+.th{position:absolute;width:200px;height:300px;border-radius:14px;overflow:hidden;border:3px solid #fff;box-shadow:0 16px 40px rgba(0,0,0,.6)}
+.th img{width:100%;height:100%;object-fit:cover;object-position:top}
+.rc{position:absolute;left:110px;width:860px;top:170px;background:#FCF9E6;color:#0F1A23;border-radius:20px;padding:30px 40px 34px;box-shadow:0 40px 90px rgba(0,0,0,.6);font-family:'DejaVu Sans Mono',monospace}
+.rc h4{font-family:P;font-size:30px;letter-spacing:4px;text-align:center;margin:0 0 4px}
+.rc .sub{text-align:center;font-size:19px;color:#5b6570;margin-bottom:16px}
+.ln{display:flex;align-items:center;gap:18px;height:88px;border-bottom:2px dashed #c9c2a8;font-size:30px}
+.ln .lw{position:relative;width:150px;height:62px;flex:none;box-shadow:none;border:1px solid #e3dcc2}
+.ln .lw.t{font-size:22px}
+.ln b{margin-left:auto;font-size:34px}
+.tot{display:flex;align-items:center;margin-top:18px;font-family:P;font-weight:700;font-size:44px}
+.tot b{margin-left:auto;font-size:76px;color:#d97706}
+.fn{font-family:P;font-size:18px;color:#5b6570;margin-top:10px;text-align:center}
+.ms{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:18px;background:var(--surf);border:2px solid #2f475c;border-radius:20px;padding:14px 20px}
+.ms .lw{position:relative;width:210px;height:86px;flex:none}
+.ms .lw.t{font-size:24px}
+.ms b{font-size:30px;display:block}.ms span{font-size:21px;color:var(--grey)}
+.sat{position:absolute;width:230px;text-align:center}
+.sat .lw{position:relative;width:230px;height:92px;margin:0 auto}
+.sat .lw.t{font-size:24px}
+.sat span{display:block;margin-top:8px;font-size:20px;font-weight:600;color:#d6e2ec;line-height:1.2}
+.cv{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:18px;background:var(--surf);border:2px solid #2f475c;border-radius:20px;padding:20px 24px;font-size:32px;font-weight:700}
+.cv i{font-style:normal;flex:none;width:56px;height:56px;border-radius:28px;background:var(--orange);color:#0F1A23;display:flex;align-items:center;justify-content:center;font-size:34px}
+.of{position:absolute;left:60px;width:960px;display:flex;gap:16px;align-items:center;font-size:32px;font-weight:600}
+.of i{font-style:normal;color:#22c55e;font-size:36px}
+</style></head><body>
+<div id="stage">
+  <div class="scene" id="s0"><img class="pose" id="s0m" src="a/po/reflechit.webp" style="left:280px;top:820px;width:520px">
+    <div class="big" id="s0a" style="top:240px;font-size:76px;line-height:1.05">Combien me coûte<br><span style="color:var(--orange)">mon équipe IA ?</span></div></div>
+  <div class="scene" id="s1"><div id="s1g"></div><div class="big" id="s1a" style="top:1300px;font-size:74px;line-height:1.05;text-shadow:0 10px 40px #000">Mais combien<br><span style="color:var(--orange)">ça coûte ?</span></div></div>
+  <div class="scene" id="s2"><div class="rc" id="rc"><h4>MES OUTILS · PAR MOIS</h4><div class="sub">selon mes abonnements déclarés</div><div id="rl"></div>
+    <div class="tot" id="tt">TOTAL<b id="tv">0 €</b></div><div class="fn" id="tf">soit 2 664 € par an · hors taxes, dépassements, serveurs et temps passé</div></div></div>
+  <div class="scene" id="s3"><div class="chip">Mission A · vendre FoodEatUp</div>
+    <div class="ms" id="a0" style="top:260px"><div class="lw"><img src="a/lg/rapidocms.png"></div><div><b>Préparer le contenu</b><span>campagnes et calendrier</span></div></div>
+    <div class="ms" id="a1" style="top:400px"><div class="lw"><img src="a/lg/rapidocrm.png"></div><div><b>Prospecter et suivre</b><span>demandes consenties, pipeline</span></div></div>
+    <div class="ms" id="a2" style="top:540px"><div class="lw"><img src="a/lg/rapidocrm.png"></div><div><b>Préparer les devis</b><span>et les relances</span></div></div>
+    <div class="ms" id="a3" style="top:680px"><div class="lw"><img src="a/lg/foodeatup.png"></div><div><b>Démontrer FoodEatUp</b><span>outils métier du restaurant</span></div></div>
+    <div class="ms" id="a4" style="top:840px;border-color:#8236F8"><div class="lw"><img src="a/lg/planit.png"></div><div><b>Plan'It coordonne</b><span>tâches et validations</span></div></div></div>
+  <div class="scene" id="s4"><div class="chip">Mission B · développer une extension</div>
+    <div class="ms" id="b0" style="top:260px"><div class="lw"><img src="a/lg/startupforge.webp"></div><div><b>Cadrer l'opportunité</b><span>exercices, business plan</span></div></div>
+    <div class="ms" id="b1" style="top:400px"><div class="lw"><img src="a/lg/braindcode.png"></div><div><b>Cahier des charges</b><span>BraindCode Build</span></div></div>
+    <div class="ms" id="b2" style="top:540px"><div class="lw"><img src="a/lg/rapidorh.png"></div><div><b>Développement</b><span>tâches suivies dans RapidoRH</span></div></div>
+    <div class="ms" id="b3" style="top:680px"><div class="lw"><img src="a/lg/foodeatup.png"></div><div><b>Tests</b><span>MCP FoodEatUp, environnement de test</span></div></div></div>
+  <div class="scene" id="s5"><div class="chip">Le secret : tout connecter</div>
+    <svg class="abs" style="left:0;top:0" width="1080" height="1920"><g id="s5l" stroke="#007BFF" stroke-width="4" fill="none"></g></svg>
+    <div class="ring" id="s5c" style="left:410px;top:770px;width:260px;height:260px;border-color:#8236F8;background:#fff"><img src="a/lg/planit.webp" style="object-fit:contain"></div>
+    <div id="s5s"></div>
+    <div class="real" style="left:70px;top:1560px">8 familles de MCP · StartupForge : pas de connecteur dans cette session</div></div>
+  <div class="scene" id="s6"><div class="chip">À compter aussi</div>
+    <div class="title" style="font-size:58px">222 €, c'est<br><b>le prix des outils</b></div>
+    <div class="cv" id="c0" style="top:420px"><i>+</i>Le temps de configuration</div>
+    <div class="cv" id="c1" style="top:560px"><i>+</i>Les serveurs et l'hébergement</div>
+    <div class="cv" id="c2" style="top:700px"><i>+</i>Les crédits d'API en plus</div>
+    <div class="real" id="c3" style="left:70px;top:850px">Les abonnements Claude et ChatGPT n'incluent pas les crédits d'API des automatisations</div></div>
+  <div class="scene" id="s7"><div class="big" id="s7a" style="top:200px;font-size:52px;line-height:1.15">Ta propre équipe d'agents IA ?</div>
+    <div class="big" id="s7b" style="top:330px;font-size:64px">Écris</div>
+    <div class="big" id="s7c" style="top:420px;font-size:170px;color:var(--orange);letter-spacing:6px">AGENTS</div>
+    <div class="big" id="s7d" style="top:620px;font-size:46px">en commentaire</div>
+    <div class="of" id="o0" style="top:800px"><i>✓</i>Configurer Claude</div>
+    <div class="of" id="o1" style="top:880px"><i>✓</i>Connecter tes MCP</div>
+    <div class="of" id="o2" style="top:960px"><i>✓</i>Lancer tes premières missions</div>
+    <div class="lw" id="o3" style="left:330px;top:1080px;width:420px;height:150px"><img src="a/lg/rapidosoftware.png"></div></div>
+  <div class="scene" id="s8"><div id="s8s"></div>
+    <div class="ring" id="s8p" style="left:390px;top:620px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="big" id="s8a" style="top:280px;font-size:150px;color:var(--orange);line-height:1">222 €</div>
+    <div class="big" id="s8b" style="top:450px;font-size:42px">par mois d'outils</div>
+    <div class="big" id="s8c" style="top:1000px;font-size:50px;line-height:1.2">Le reste dépend<br>de <span style="color:var(--orange)">comment tu les connectes</span></div></div>
+  <div class="scene" id="thumb">
+    <div class="big" style="top:90px;font-size:40px;letter-spacing:6px;color:var(--orange)">VIDÉO 22</div>
+    <div class="big" style="top:160px;font-size:96px;line-height:1">MON ÉQUIPE IA<br>ME COÛTE</div>
+    <div class="big" style="top:370px;font-size:200px;line-height:1;color:var(--orange)">222 €</div>
+    <div class="big" style="top:580px;font-size:70px">PAR MOIS !</div>
+    <div class="ring" style="left:340px;top:760px;width:400px;height:400px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div id="thl"></div>
+  </div>
+  <div id="logos"><div class="lp"><img src="a/lg/braindcode.png" style="height:30px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>
