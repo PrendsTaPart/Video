@@ -1,0 +1,49 @@
+{
+  "video": "video-28",
+  "titre": "J'ai créé mon département de prospection avec des agents IA",
+  "duree_s": 73,
+  "format": "1080x1920",
+  "scenes": [
+    {
+      "temps_s": "0–8,7",
+      "scene": "Avant",
+      "visuel": "Post-it : prospecter, rechercher, récupérer les infos, préparer les e-mails, gérer les relances · Michael « stop »"
+    },
+    {
+      "temps_s": "8,7–21,4",
+      "scene": "Mes scénarios n8n",
+      "visuel": "Recherche, enrichissement, campagnes, suivi · connectés à RapidoCRM et Prospection"
+    },
+    {
+      "temps_s": "21,4–30,9",
+      "scene": "Workflows spécialisés",
+      "visuel": "5 cartes : orchestrer, enrichir, détecter les réponses, relances, reporting (d'après la fiche)"
+    },
+    {
+      "temps_s": "30,9–35,4",
+      "scene": "MCP",
+      "visuel": "Outils réels de prospection · « Seulement les outils autorisés »"
+    },
+    {
+      "temps_s": "35,4–47,6",
+      "scene": "Le département",
+      "visuel": "Automatisations / Agents IA / RapidoCRM"
+    },
+    {
+      "temps_s": "47,6–59,8",
+      "scene": "Réalité",
+      "visuel": "Prospects ≠ clients · 70 prospects, 0 vente · réponses, rendez-vous, ventes à mesurer"
+    },
+    {
+      "temps_s": "59,8–67,5",
+      "scene": "Prochaine étape",
+      "visuel": "Objectif → suivi → amélioration, avec validations"
+    },
+    {
+      "temps_s": "67,5–73",
+      "scene": "Question",
+      "visuel": "Photo, question finale, logos"
+    }
+  ],
+  "miniature": "MON DÉPARTEMENT DE PROSPECTION IA ! · Michael bras ouverts · cartes workflows · logo RapidoCRM"
+}
