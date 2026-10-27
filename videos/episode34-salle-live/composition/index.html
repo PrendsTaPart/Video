@@ -1,0 +1,121 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 34 : Salle Live</title>
+<link rel="stylesheet" href="base.css">
+<style>
+:root{--g:#22c55e;--r:#ef4444;--o:#f97316;--sl:#f0a24a}
+#stage{background:radial-gradient(1000px 900px at 50% 30%,#163626 0%,#0b1712 70%)}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.shot{position:absolute;border-radius:24px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6);border:3px solid #2c4a3a;background:#111}
+.shot img{position:absolute;left:0;top:0;width:100%}
+.lay{position:absolute;inset:0}.lay img{width:100%;display:block}
+.note{position:absolute;font-weight:600;font-size:22px;color:#fde68a;background:rgba(60,40,5,.88);border:2px solid #b7791f;border-radius:14px;padding:8px 16px}
+.ok{background:#14532d;color:#86efac}
+.leg{position:absolute;left:60px;width:960px;display:flex;flex-wrap:wrap;gap:14px}
+.leg div{display:flex;align-items:center;gap:12px;background:var(--surf);border:2px solid #2c4a3a;border-radius:999px;padding:10px 22px;font-size:28px;font-weight:600}
+.leg i{width:26px;height:26px;border-radius:13px;display:inline-block}
+.q{position:absolute;left:70px;right:70px;background:#fff;color:#111;border-radius:30px 30px 30px 6px;padding:28px 34px;font-weight:600;font-size:40px;line-height:1.25;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.q small{display:block;font-size:22px;color:#666;font-weight:500;margin-bottom:8px}
+.clock{position:absolute;width:200px;height:200px;border-radius:50%;border:10px solid #fff;background:#0b1712}
+.clock i{position:absolute;left:50%;top:50%;width:8px;margin-left:-4px;background:#fff;border-radius:4px;transform-origin:50% 0}
+.src{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:22px;padding:18px 24px;border-radius:22px;background:var(--surf);border:2px solid #2c4a3a}
+.src .ic{flex:none;width:96px;height:96px;border-radius:20px;background:#0b1712;display:flex;align-items:center;justify-content:center;font-size:48px}
+.src .ic img{max-width:80px;max-height:60px}.src .ic.w{background:#fff}
+.src b{display:block;font-size:32px}.src span{font-size:23px;color:var(--grey);font-weight:500}
+.src em{margin-left:auto;flex:none;font-style:normal;font-size:18px;font-weight:700;border-radius:999px;padding:6px 14px}
+.wip{background:#4a3410;color:var(--orange)}.man{background:#123b5c;color:#7dd3fc}
+.arrow{position:absolute;left:0;right:0;text-align:center;font-size:44px;color:var(--sl)}
+.hub{position:absolute;left:240px;width:600px;text-align:center;padding:22px;border-radius:24px;background:var(--sl);color:#0b1712;font-weight:700;font-size:40px}
+.al{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:18px;padding:14px 22px;border-radius:18px;background:var(--surf);border:2px solid #2c4a3a;font-size:28px;font-weight:600}
+.al code{margin-left:auto;font-family:'DejaVu Sans Mono',monospace;font-size:18px;color:#9fe8d8}
+.al i{font-style:normal;font-size:30px}
+.lg{position:absolute;background:#fff;border-radius:22px;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.lg img{max-width:80%;max-height:70%}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:6px solid #fff;box-shadow:0 20px 50px rgba(0,0,0,.6)}.ring img{width:100%;height:100%;object-fit:cover}
+.end{position:absolute;left:80px;right:80px;text-align:center;font-weight:700;border-radius:22px;padding:16px}
+.chk{position:absolute;left:60px;width:960px;font-size:26px;font-weight:600;padding:10px 20px;border-radius:14px;background:var(--surf);border:2px solid #2c4a3a}
+.chk b{color:var(--g)}.chk s{color:var(--grey);text-decoration:none}
+</style></head><body>
+<div id="stage">
+ <div class="scene" id="s1">
+  <div class="shot" id="h0" style="left:0;top:0;width:1080px;height:1920px;border:0;border-radius:0;opacity:.25"><img src="a/s3d7.jpg" style="height:100%;width:auto;left:-540px;filter:blur(3px)"></div>
+  <div class="clock" id="h1" style="left:440px;top:230px"><i id="hh" style="height:60px"></i><i id="hm" style="height:85px;width:5px;margin-left:-2.5px"></i></div>
+  <div class="q" id="h2" style="top:520px"><small>La question d'un restaurateur</small>« Comment savoir combien de temps mes clients restent à table, et améliorer la rotation de ma salle ? »</div>
+  <div class="big" id="h3" style="top:1000px;font-size:78px;line-height:1.05;padding:0 50px">COMMENT OPTIMISER<br><span style="color:var(--sl)">LE ROULEMENT<br>DES TABLES ?</span></div>
+ </div>
+ <div class="scene" id="s2"><div class="chip">Mon idée</div>
+  <div class="title" id="i0" style="font-size:60px">Un plan de salle <b>qui vit en direct</b></div>
+  <div class="shot" id="i1" style="left:40px;top:380px;width:1000px;height:741px">
+   <div class="lay" id="i1a"><img src="a/s3d1.jpg"></div><div class="lay" id="i1b"><img src="a/s3d2.jpg"></div><div class="lay" id="i1c"><img src="a/s3d4.jpg"></div><div class="lay" id="i1d"><img src="a/s3d7.jpg"></div></div>
+  <div class="leg" id="i2" style="top:1170px"><div id="lg1"><i style="background:var(--g)"></i>libre</div><div id="lg2"><i style="background:var(--r)"></i>occupée</div><div id="lg3"><i style="background:var(--o)"></i>à débarrasser</div><div id="lg4"><i style="background:#6b7280"></i>donnée indisponible</div></div>
+  <div class="note" id="i3" style="left:60px;top:1330px">Vraie démo publique Salle Live · scénario de démonstration, pas un vrai service</div>
+ </div>
+ <div class="scene" id="s3"><div class="chip">Le temps passé à table</div>
+  <div class="title" id="t0" style="font-size:58px">Chaque table a <b>sa durée</b></div>
+  <div class="shot" id="t1" style="left:90px;top:360px;width:900px;height:864px"><div class="lay" id="t1a"><img src="a/plan1.jpg"></div><div class="lay" id="t1b"><img src="a/plan4.jpg"></div><div class="lay" id="t1c"><img src="a/plan7.jpg"></div></div>
+  <div class="shot" id="t2" style="left:90px;top:1260px;width:900px;height:360px"><img id="t2i" src="a/events.jpg"></div>
+  <div class="note" id="t3" style="left:90px;top:1650px">Chiffres de la démo (4p · 34′ = 4 personnes depuis 34 min) · pas des mesures d'un restaurant</div>
+ </div>
+ <div class="scene" id="s4"><div class="chip">Comment ça fonctionne</div>
+  <div class="src" id="c0" style="top:240px"><div class="ic">📷</div><div><b>Caméra</b><span>analyse locale → événements anonymes</span></div><em class="wip">imaginé</em></div>
+  <div class="src" id="c1" style="top:400px"><div class="ic">▦</div><div><b>QR codes</b><span>interactions à la table, commande</span></div><em class="man">codé</em></div>
+  <div class="src" id="c2" style="top:560px"><div class="ic w"><img src="a/foodeatup.webp"></div><div><b>Caisse FoodEatUp</b><span>commandes, paiements, réservations</span></div><em class="wip">connexion codée · synchro à faire</em></div>
+  <div class="arrow" id="c3" style="top:710px">↓ ↓ ↓</div>
+  <div class="hub" id="c4" style="top:780px">Salle Live</div>
+  <div class="shot" id="c5" style="left:60px;top:940px;width:960px;height:183px"><img src="a/comment.jpg"></div>
+  <div class="note ok" id="c6" style="left:60px;top:1160px;border-color:#22c55e">« 0 image enregistrée – 0 image transmise » (démo)</div>
+  <div class="note" id="c7" style="left:60px;top:1230px">Aucune caméra installée à ce jour · aucune image de personne</div>
+ </div>
+ <div class="scene" id="s5"><div class="chip">Alertes et pilotage</div>
+  <div class="title" id="a0" style="font-size:58px">Aider l'équipe <b>à agir</b></div>
+  <div class="shot" id="a1" style="left:140px;top:350px;width:800px;height:593px"><img src="a/s3d6.jpg"></div>
+  <div id="a2"></div>
+  <div class="note" id="a3" style="left:60px;top:1590px">Règles réelles du code (src/lib/alerts.ts) · pas encore de données réelles</div>
+ </div>
+ <div class="scene" id="s6"><div class="chip">Planning IA</div>
+  <div class="title" id="p0" style="font-size:58px">Anticiper <b>le service</b></div>
+  <div class="term" id="p1" style="left:60px;top:360px;width:960px"><div class="bar">src/lib/forecast.ts<span>● vrai code</span></div><pre><span class="m">// prévisions et besoins en personnel</span>
+<span class="k">export const</span> SLOT_MIN = <span class="o">30</span>;   <span class="m">// créneaux de 30 min</span>
+<span class="k">export type</span> Slot = {
+  slot_start, expected_covers,
+  confidence_low, confidence_high };</pre></div>
+  <div class="quote" id="p2" style="top:740px"><b>PAGE PLANNING IA · TEXTE AFFICHÉ SANS HISTORIQUE</b>« Aucune prévision pour l'instant. […] Elle s'appuie sur l'historique réel des 8 dernières semaines (hors simulations). »</div>
+  <div class="chk" id="p3" style="top:1010px">📈 Affluence prévue par créneau</div>
+  <div class="chk" id="p4" style="top:1090px">👥 Besoin en personnel recommandé</div>
+  <div class="chk" id="p5" style="top:1170px">🔔 Alerte « affluence supérieure à la prévision »</div>
+  <div class="note" id="p6" style="left:60px;top:1290px">Prévisionnel · aucun historique réel encore · aucun gain chiffré promis</div>
+ </div>
+ <div class="scene" id="s7"><div class="chip">Le développement</div>
+  <div class="lg" id="d0" style="left:60px;top:240px;width:300px;height:110px"><img src="a/lovable.webp"></div>
+  <div class="lg" id="d1" style="left:390px;top:240px;width:300px;height:110px;font-weight:700;font-size:40px;color:#111">GitHub</div>
+  <div class="lg" id="d2" style="left:720px;top:240px;width:300px;height:110px"><img src="a/foodeatup.webp"></div>
+  <div class="term" id="d3" style="left:60px;top:400px;width:960px"><div class="bar">PrendsTaPart/layout-manager-ai<span>● vrai dépôt</span></div><pre><span class="o">79eff12</span> 27/10 · Add project README
+<span class="k">src/routes/_authenticated/_console/</span>
+  live · plan · alerts · analytics · planning
+  devices · qr · orders · menu · simulator
+<span class="k">src/routes/</span> demo · t.$token (QR client)
+<span class="m">───────────────────────────────────────</span>
+<span class="g">14 246</span> lignes TypeScript · <span class="g">14</span> migrations</pre></div>
+  <div class="chk" id="d4" style="top:900px"><b>✓</b> Démo 3D publique · plan · alertes · QR</div>
+  <div class="chk" id="d5" style="top:980px"><b>✓</b> Connexion OAuth FoodEatUp (codée)</div>
+  <div class="chk" id="d6" style="top:1060px"><s>☐</s> Synchro du plan, caisse en direct, réservations</div>
+  <div class="chk" id="d7" style="top:1140px"><s>☐</s> Premier boîtier caméra installé</div>
+  <div class="note" id="d8" style="left:60px;top:1250px">Prototype en cours de validation client</div>
+ </div>
+ <div class="scene" id="s8">
+  <div class="ring" id="e0" style="left:415px;top:220px;width:250px;height:250px"><img src="a/michael.jpg"></div>
+  <div class="big" id="e1" style="top:540px;font-size:56px;line-height:1.2;padding:0 70px">Demain, je présente<br>la démo <span style="color:var(--sl)">au restaurateur.</span></div>
+  <div class="big" id="e2" style="top:740px;font-size:36px;line-height:1.3;padding:0 90px;font-weight:500;color:var(--cream)">Est-ce que ça répond à son besoin ?<br>Je vous montrerai la suite.</div>
+  <div class="end" id="e3" style="top:960px;font-size:46px;background:var(--sl);color:#0b1712">ÉPISODE 34/365</div>
+  <div class="end" id="e4" style="top:1070px;font-size:34px;background:var(--surf);border:2px solid #2c4a3a">SALLE LIVE × FOODEATUP</div>
+  <div class="end" id="e5" style="top:1160px;font-size:34px;background:#14532d;color:#86efac">DÉMO CLIENT DEMAIN</div>
+ </div>
+ <div id="logos"><div class="lp"><img src="a/foodeatup.webp" style="height:30px"></div></div>
+ <div id="thumb" style="display:none;position:absolute;inset:0">
+  <div class="big" style="top:110px;font-size:90px;line-height:1.04">J'AI CRÉÉ UNE<br><span style="color:var(--sl)">SALLE INTELLIGENTE</span><br>AVEC L'IA !</div>
+  <div class="big" style="top:470px;font-size:44px;color:var(--cream);font-weight:600">Optimiser les tables d'un restaurant</div>
+  <div class="shot" style="left:40px;top:600px;width:1000px;height:741px"><img src="a/s3d7.jpg"></div>
+  <div class="ring" style="left:60px;top:1420px;width:260px;height:260px"><img src="a/michael.jpg"></div>
+  <div class="lg" style="left:700px;top:1490px;width:320px;height:120px"><img src="a/foodeatup.webp"></div>
+  <div class="badge" style="left:390px;top:1510px;font-size:38px">ÉPISODE 34</div>
+ </div>
+</div>
+<script src="script.js"></script></body></html>
