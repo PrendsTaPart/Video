@@ -1,0 +1,104 @@
+1
+00:00:00,600 --> 00:00:02,400
+Aujourd'hui, je vais te montrer comment j'ai créé
+
+2
+00:00:02,400 --> 00:00:05,080
+le site Internet d'un de mes clients avec Lovable.
+
+3
+00:00:05,080 --> 00:00:07,560
+Voici Villa Beach : un restaurant festif,
+
+4
+00:00:07,560 --> 00:00:09,180
+lounge et club, à Lisses.
+
+5
+00:00:09,180 --> 00:00:11,320
+Mais je ne voulais pas simplement lui créer un beau site.
+
+6
+00:00:11,320 --> 00:00:13,520
+Je voulais un site connecté à ses outils métier.
+
+7
+00:00:13,520 --> 00:00:15,300
+Alors, sa carte est reliée à FoodEatUp,
+
+8
+00:00:15,300 --> 00:00:17,680
+et ses demandes peuvent partir dans RapidoCRM.
+
+9
+00:00:17,680 --> 00:00:20,200
+Pour Caroline, mon agent vocal, la place est prête…
+
+10
+00:00:20,200 --> 00:00:22,000
+mais l'intégration reste à finaliser.
+
+11
+00:00:22,000 --> 00:00:23,900
+Mais surtout, j'ai développé un MCP
+
+12
+00:00:23,900 --> 00:00:25,400
+spécialement pour Villa Beach.
+
+13
+00:00:26,650 --> 00:00:28,120
+Et là, ça change tout !
+
+14
+00:00:28,120 --> 00:00:30,120
+Mon client peut demander à Claude ou ChatGPT
+
+15
+00:00:30,120 --> 00:00:32,460
+de modifier ses pages, préparer ses événements,
+
+16
+00:00:32,460 --> 00:00:34,700
+gérer ses formulaires ou consulter ses demandes.
+
+17
+00:00:43,780 --> 00:00:45,160
+L'IA utilise les outils du site
+
+18
+00:00:45,160 --> 00:00:46,640
+avec un compte administrateur :
+
+19
+00:00:46,640 --> 00:00:47,780
+chaque appel est journalisé,
+
+20
+00:00:47,780 --> 00:00:50,040
+et chaque suppression demande une confirmation.
+
+21
+00:00:50,040 --> 00:00:51,380
+Et ses formulaires peuvent alimenter
+
+22
+00:00:51,380 --> 00:00:52,350
+son tunnel commercial.
+
+23
+00:00:56,480 --> 00:00:59,160
+Avant, mon client devait me demander de modifier son site.
+
+24
+00:00:59,160 --> 00:01:01,420
+Maintenant, il peut simplement demander à son IA !
+
+25
+00:01:01,420 --> 00:01:02,620
+Et pour moi, c'est ça,
+
+26
+00:01:02,620 --> 00:01:04,430
+la nouvelle génération de sites Internet.
+
