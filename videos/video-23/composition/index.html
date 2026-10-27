@@ -1,0 +1,90 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Vidéo 23 : mon IA gère mes réunions</title>
+<link rel="stylesheet" href="base.css">
+<style>
+:root{--fu:#E91E8C;--vi:#7C3AED}
+#stage{background:radial-gradient(1000px 900px at 50% 32%,#3a1752 0%,#120a1c 66%)}
+.chip{color:var(--fu)}.title b{color:var(--fu)}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.pi{position:absolute;width:300px;padding:20px;background:#FFF3A6;color:#1b1b1b;font-weight:700;font-size:28px;box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.card{position:absolute;background:#1c1129;border:2px solid #4b2a6b;border-radius:24px;box-shadow:0 30px 70px rgba(0,0,0,.6);overflow:hidden}
+.card img{width:100%;height:100%;object-fit:cover;object-position:top left}
+.tl{position:absolute;left:60px;width:960px;display:flex;gap:16px;font-size:27px;line-height:1.35}
+.tl b{flex:none;width:170px;color:var(--fu)}
+.ex{position:absolute;left:60px;width:960px;background:#1c1129;border:2px solid #4b2a6b;border-radius:22px;padding:18px 24px}
+.ex .k{font-size:19px;font-weight:700;letter-spacing:3px;color:var(--fu);margin-bottom:6px}
+.ex .t{font-size:27px;font-weight:600}
+.ex small{display:block;font-size:20px;color:#c4b5d9;margin-top:4px;font-style:italic}
+.fl{position:absolute;left:180px;width:720px;height:96px;border-radius:22px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:34px;letter-spacing:1px;background:#1c1129;border:2px solid #4b2a6b}
+.dc{position:absolute;left:60px;width:960px;display:flex;gap:20px;align-items:center;background:#fff;color:#1b1b1b;border-radius:22px;padding:20px 26px;font-size:32px;font-weight:700}
+.dc i{font-style:normal;flex:none;width:60px;height:60px;border-radius:30px;background:linear-gradient(135deg,var(--vi),var(--fu));color:#fff;display:flex;align-items:center;justify-content:center}
+.ds{position:absolute;left:60px;width:960px;display:flex;gap:18px;align-items:center;background:#1c1129;border:2px solid #4b2a6b;border-radius:20px;padding:14px 20px}
+.ds .lw{flex:none;width:200px;height:84px;background:#fff;border-radius:16px;display:flex;align-items:center;justify-content:center}
+.ds .lw img{max-width:84%;max-height:76%}
+.ds b{font-size:28px;display:block}.ds code{font-family:'DejaVu Sans Mono',monospace;font-size:20px;color:#e9d5ff}
+.ds em{margin-left:auto;flex:none;font-style:normal;font-weight:700;font-size:19px;border-radius:999px;padding:6px 14px}
+.kp{position:absolute;width:465px;height:170px;border-radius:22px;background:#1c1129;border:2px solid #4b2a6b;text-align:center;padding-top:20px}
+.kp b{display:block;font-size:60px;line-height:1}.kp span{font-size:22px;color:#c4b5d9}
+.demo{position:absolute;background:#4a3410;color:var(--orange);border-radius:999px;padding:8px 20px;font-weight:700;font-size:21px}
+.lg{position:absolute;background:#fff;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.lg img{max-width:84%;max-height:78%}
+#logos .lp{background:#fff}
+</style></head><body>
+<div id="stage">
+  <div class="scene" id="s0"><img class="pose" id="s0m" src="a/po/reflechit.webp" style="left:290px;top:820px;width:500px">
+    <div class="big" id="s0a" style="top:220px;font-size:72px;line-height:1.08">Mes réunions<br><span style="color:var(--fu)">deviennent des tâches</span></div></div>
+  <div class="scene" id="s1"><div id="s1p"></div>
+    <div class="big" id="s1a" style="top:1300px;font-size:70px;line-height:1.1">Qui fait <span style="color:var(--fu)">quoi ?</span></div></div>
+  <div class="scene" id="s2"><img id="s2i" src="a/lg/rapidomeet-icon.png" style="position:absolute;left:390px;top:560px;width:300px;border-radius:64px">
+    <div class="big" id="s2t" style="top:920px;font-size:110px">Rapido<span style="color:var(--fu)">Meet</span></div></div>
+  <div class="scene" id="s3"><div class="chip">1 · Transcrire</div>
+    <div class="card" id="s3c" style="left:60px;top:200px;width:960px;height:540px"><img src="a/img/transcription.png"></div>
+    <div class="real" style="left:70px;top:760px;color:#c4b5d9">Visuel de l'écran de transcription (site RapidoMeet)</div>
+    <div id="s3t"></div>
+    <div class="demo" id="s3d" style="left:60px;top:1420px">Réunion fictive · participants fictifs</div></div>
+  <div class="scene" id="s4"><div class="chip">2 · Comprendre</div>
+    <div class="ex" id="e0" style="top:200px"><div class="k">RÉSUMÉ</div><div class="t">Lancement de l'extension FoodEatUp : démo, campagne, prospects.</div></div>
+    <div class="ex" id="e1" style="top:390px"><div class="k">DÉCISIONS</div><div class="t">3 décisions stratégiques</div></div>
+    <div class="ex" id="e2" style="top:540px"><div class="k">TÂCHE</div><div class="t">Préparer la démo · Participant A · vendredi</div><small>source : « Je m'occupe de la démo pour vendredi. »</small></div>
+    <div class="real" id="e3" style="left:70px;top:760px;color:#c4b5d9">Gemini 2.0 Flash · sortie validée par schéma (résumé, décisions, tâches avec citation source)</div></div>
+  <div class="scene" id="s5"><div class="chip">La chaîne RapidoMeet</div><div id="s5f"></div></div>
+  <div class="scene" id="s6"><div class="chip">Réunion fictive : lancer l'extension FoodEatUp</div>
+    <div class="lg" id="s6l" style="left:330px;top:240px;width:420px;height:130px"><img src="a/lg/foodeatup.png"></div>
+    <div class="dc" id="d0" style="top:470px"><i>1</i>Préparer une démonstration</div>
+    <div class="dc" id="d1" style="top:610px"><i>2</i>Créer une campagne</div>
+    <div class="dc" id="d2" style="top:750px"><i>3</i>Contacter les clients intéressés</div></div>
+  <div class="scene" id="s7"><div class="chip">3 · Distribuer · 4 · Contrôler</div>
+    <div class="card" id="s7k" style="left:60px;top:200px;width:960px;height:540px"><img src="a/img/kanban.png"></div>
+    <div class="ds" id="t0" style="top:780px"><div class="lw" style="font-weight:700;color:#7C3AED;font-size:26px">RapidoMeet</div><div><b>Tableau des tâches</b><code>db_save_task</code></div><em style="background:#14532d;color:#86efac">auto</em></div>
+    <div class="ds" id="t1" style="top:910px"><div class="lw"><img src="a/lg/rapidocrm.png"></div><div><b>Fiches prospects</b><code>crm_create_contact</code></div><em style="background:#4a3410;color:var(--orange)">validation</em></div>
+    <div class="ds" id="t2" style="top:1040px"><div class="lw"><img src="a/lg/rapidocms.png"></div><div><b>Contenus de campagne</b><code>cms_create_*</code></div><em style="background:#4a3410;color:var(--orange)">validation</em></div>
+    <div class="badge" id="t3" style="left:60px;right:60px;top:1190px;text-align:center;font-size:36px">Chaque écriture attend ma validation</div></div>
+  <div class="scene" id="s8"><div class="chip">RapidoRH</div>
+    <div class="ds" id="r0" style="top:300px"><div class="lw"><img src="a/lg/rapidorh.png"></div><div><b>Lire les projets</b><code>rh_list_* · rh_get_*</code></div><em style="background:#14532d;color:#86efac">déjà</em></div>
+    <div class="ds" id="r1" style="top:440px;border-color:var(--orange)"><div class="lw"><img src="a/lg/rapidorh.png"></div><div><b>Créer les tâches</b><code>pas encore d'outil d'écriture</code></div><em style="background:#4a3410;color:var(--orange)">prochaine étape</em></div></div>
+  <div class="scene" id="s9"><div class="chip">Je reste honnête</div>
+    <div class="kp" id="k0" style="left:60px;top:220px"><b>83 %</b><span>du backlog livré</span></div><div class="kp" id="k1" style="left:555px;top:220px"><b>85</b><span>tests (Supabase simulé)</span></div>
+    <div class="ds" id="k2" style="top:450px"><div><b>PR #4 sécurité MCP</b><code>isolation par utilisateur · en brouillon</code></div><em style="background:#4a3410;color:var(--orange)">non fusionnée</em></div>
+    <div class="ds" id="k3" style="top:580px"><div><b>Boucle MCP de bout en bout</b><code>jamais exécutée sur un vrai Supabase</code></div><em style="background:#4c1515;color:#fca5a5">à valider</em></div>
+    <div class="real" id="k4" style="left:70px;top:720px;color:#c4b5d9">docs du dépôt · PR #1, #3, #4 ouvertes en brouillon au 27/10</div></div>
+  <div class="scene" id="s10"><div class="big" id="s10a" style="top:540px;font-size:50px;color:#c4b5d9">Avant, une liste<br>de choses à faire.</div>
+    <div class="big" id="s10b" style="top:760px;font-size:72px;line-height:1.1">Maintenant,<br>un <span style="color:var(--fu)">plan d'action</span>.</div></div>
+  <div class="scene" id="s11"><div class="ring" id="s11p" style="left:390px;top:440px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="quote" id="s11q" style="top:880px;font-size:38px;text-align:center"><b>ET TOI ?</b>Combien de temps tu perds à faire tes comptes rendus de réunion ?</div>
+    <div class="abs" id="s11l" style="left:0;right:0;top:1150px;display:flex;justify-content:center;gap:18px"><div class="lg" style="position:static;width:140px;height:140px"><img src="a/lg/rapidomeet-icon.png" style="max-width:100%;max-height:100%;border-radius:30px"></div><div class="lg" style="position:static;width:200px;height:140px"><img src="a/lg/rapidocrm.png"></div><div class="lg" style="position:static;width:200px;height:140px"><img src="a/lg/rapidorh.png"></div><div class="lg" style="position:static;width:200px;height:140px"><img src="a/lg/rapidocms.png"></div></div></div>
+  <div class="scene" id="thumb">
+    <div class="big" style="top:90px;font-size:40px;letter-spacing:6px;color:var(--fu)">VIDÉO 23</div>
+    <div class="big" style="top:160px;font-size:112px;line-height:1">MON IA<br>GÈRE MES<br><span style="color:var(--fu)">RÉUNIONS !</span></div>
+    <img class="pose" src="a/po/presente.webp" style="left:-40px;top:780px;width:520px">
+    <img src="a/lg/rapidomeet-icon.png" style="position:absolute;left:470px;top:650px;width:200px;border-radius:44px;box-shadow:0 20px 50px rgba(0,0,0,.5)">
+    <div class="ex" style="left:470px;width:560px;top:900px;padding:14px 18px"><div class="k">TRANSCRIPTION</div><div class="t" style="font-size:22px">« Je m'occupe de la démo pour vendredi. »</div></div>
+    <div class="dc" style="left:470px;width:560px;top:1090px;font-size:26px;padding:14px 18px"><i>✓</i>Tâche : préparer la démo</div>
+    <div class="lg" style="left:120px;top:1560px;width:260px;height:120px"><img src="a/lg/rapidocrm.png"></div>
+    <div class="lg" style="left:410px;top:1560px;width:260px;height:120px"><img src="a/lg/rapidorh.png"></div>
+    <div class="lg" style="left:700px;top:1560px;width:260px;height:120px"><img src="a/lg/rapidocms.png"></div>
+  </div>
+  <div id="logos"><div class="lp"><img src="a/lg/braindcode.png" style="height:30px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>
