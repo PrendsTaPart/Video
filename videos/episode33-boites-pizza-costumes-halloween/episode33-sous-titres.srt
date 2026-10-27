@@ -1,0 +1,212 @@
+1
+00:00:00,400 --> 00:00:02,060
+Aujourd'hui, j'ai demandé à Zied,
+
+2
+00:00:02,060 --> 00:00:02,820
+mon graphiste,
+
+3
+00:00:02,820 --> 00:00:04,140
+de travailler sur un projet
+
+4
+00:00:04,140 --> 00:00:06,040
+un peu particulier pour l'un de mes clients :
+
+5
+00:00:06,040 --> 00:00:07,580
+transformer des boîtes à pizza
+
+6
+00:00:07,580 --> 00:00:08,890
+en costumes d'Halloween.
+
+7
+00:00:12,200 --> 00:00:13,060
+L'idée est simple.
+
+8
+00:00:13,060 --> 00:00:14,040
+Au lieu de jeter la boîte
+
+9
+00:00:14,040 --> 00:00:15,460
+après avoir mangé sa pizza,
+
+10
+00:00:15,460 --> 00:00:17,000
+le client peut utiliser son couvercle
+
+11
+00:00:17,000 --> 00:00:18,040
+pour se déguiser,
+
+12
+00:00:18,040 --> 00:00:19,000
+prendre une photo
+
+13
+00:00:19,000 --> 00:00:20,310
+et s'amuser avec ses amis.
+
+14
+00:00:24,200 --> 00:00:25,300
+J'ai donc demandé à Zied
+
+15
+00:00:25,300 --> 00:00:27,280
+de développer toute une collection sur Figma,
+
+16
+00:00:27,280 --> 00:00:28,780
+avec des personnages assortis,
+
+17
+00:00:28,780 --> 00:00:30,420
+des univers graphiques différents
+
+18
+00:00:30,420 --> 00:00:32,700
+et un concept spécialement pensé pour Halloween.
+
+19
+00:00:32,700 --> 00:00:33,840
+L'IA l'a aidé à produire
+
+20
+00:00:33,840 --> 00:00:35,200
+les décors et les costumes.
+
+21
+00:00:35,200 --> 00:00:36,640
+Lui a fait la direction,
+
+22
+00:00:36,640 --> 00:00:38,430
+la mise en page et la cohérence.
+
+23
+00:00:40,200 --> 00:00:41,480
+Et voilà le résultat.
+
+24
+00:00:41,480 --> 00:00:42,300
+20 designs,
+
+25
+00:00:42,300 --> 00:00:43,780
+soit 10 duos Halloween.
+
+26
+00:00:43,780 --> 00:00:45,400
+Des vampires, des sorciers,
+
+27
+00:00:45,400 --> 00:00:47,000
+des squelettes, des citrouilles,
+
+28
+00:00:47,000 --> 00:00:47,900
+des zombies…
+
+29
+00:00:47,900 --> 00:00:49,590
+et même un laboratoire hanté.
+
+30
+00:01:05,200 --> 00:01:07,100
+Chaque boîte reprend l'univers de Chez Jello,
+
+31
+00:01:07,100 --> 00:01:08,560
+avec une découpe pour la tête,
+
+32
+00:01:08,560 --> 00:01:09,540
+le nom du duo
+
+33
+00:01:09,540 --> 00:01:10,560
+et un message pensé
+
+34
+00:01:10,560 --> 00:01:11,930
+pour donner envie de jouer à deux.
+
+35
+00:01:20,200 --> 00:01:21,240
+Ce que j'aime dans ce projet,
+
+36
+00:01:21,240 --> 00:01:22,220
+c'est qu'on ne travaille pas
+
+37
+00:01:22,220 --> 00:01:23,260
+seulement sur un emballage.
+
+38
+00:01:23,260 --> 00:01:25,040
+On essaie de créer une expérience.
+
+39
+00:01:25,040 --> 00:01:26,580
+Les clients peuvent se prendre en photo,
+
+40
+00:01:26,580 --> 00:01:28,580
+partager leurs duos sur les réseaux
+
+41
+00:01:28,580 --> 00:01:30,510
+et retrouver la pizzeria grâce au QR code.
+
+42
+00:01:38,200 --> 00:01:40,060
+C'est aussi ça, mon quotidien d'entrepreneur :
+
+43
+00:01:40,060 --> 00:01:41,260
+imaginer des concepts,
+
+44
+00:01:41,260 --> 00:01:42,000
+confier les missions aux bonnes personnes
+
+45
+00:01:42,000 --> 00:01:44,800
+et utiliser les outils IA pour aller plus vite
+
+46
+00:01:44,800 --> 00:01:47,130
+sans perdre la créativité de l'équipe.
+
+47
+00:01:49,600 --> 00:01:50,060
+Maintenant,
+
+48
+00:01:50,060 --> 00:01:51,400
+il reste à valider les découpes
+
+49
+00:01:51,400 --> 00:01:52,760
+et l'impression avec le client.
+
+50
+00:01:52,760 --> 00:01:54,380
+Mais j'ai déjà hâte de voir ces boîtes
+
+51
+00:01:54,380 --> 00:01:56,000
+entre les mains des clients de Chez Jello.
+
+52
+00:01:56,000 --> 00:01:57,380
+Une simple boîte à pizza peut devenir
+
+53
+00:01:57,380 --> 00:01:59,250
+bien plus qu'un emballage.
+

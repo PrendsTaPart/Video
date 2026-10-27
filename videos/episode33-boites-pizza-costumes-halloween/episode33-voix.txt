@@ -1,0 +1,2 @@
+Voix : Noé (ElevenLabs 7pDdnNI6PhXmAp0pXFZm), eleven_multilingual_v2. Durée : 76,24 s. Transcription mot à mot (faster-whisper) dans composition/config.json (sections).
+Texte : voir episode33-script.md, section « Voix off ».
