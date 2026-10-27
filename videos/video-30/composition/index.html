@@ -1,0 +1,96 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Vidéo 30 : mon commercial IA</title>
+<link rel="stylesheet" href="base.css">
+<style>
+:root{--gr:#4CAF50;--bl:#03A9F5;--vi:#7E57C2}
+#stage{background:radial-gradient(1000px 900px at 50% 32%,#123d24 0%,#08140d 66%)}
+.chip{color:var(--gr)}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.box{position:absolute;background:#0f2418;border:2px solid #24563a;border-radius:24px;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.chat{position:absolute;left:60px;width:960px;border-radius:26px;background:#fff;color:#1f2937;padding:26px 30px;font-size:31px;line-height:1.4;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.chat .k{font-size:20px;letter-spacing:3px;font-weight:700;color:#6b7280;margin-bottom:10px}
+.lg{position:absolute;background:#fff;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.lg img{max-width:84%;max-height:78%}
+.tl{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:14px;font-family:'DejaVu Sans Mono',monospace;font-size:27px;background:#0f2418;border:2px solid #24563a;border-radius:14px;padding:12px 20px}
+.tl em{margin-left:auto;font-style:normal;font-family:Poppins,sans-serif;font-weight:700;font-size:19px;border-radius:999px;padding:4px 12px}
+.ok{background:#14532d;color:#86efac}.wt{background:#4a3410;color:var(--orange)}.no{background:#4c1515;color:#fca5a5}
+.sg{position:absolute;padding:18px 28px;border-radius:999px;background:var(--gr);color:#0b1a10;font-weight:700;font-size:34px;box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.sg.o{background:#0f2418;color:#cfe9d8;border:2px solid #24563a;font-size:28px}
+.kp{position:absolute;width:300px;height:180px;border-radius:22px;background:#0f2418;border:2px solid #24563a;text-align:center;padding-top:22px}
+.kp b{display:block;font-size:64px;line-height:1}.kp span{font-size:22px;color:#a7c9b4}
+.ds{position:absolute;left:60px;width:960px;display:flex;gap:18px;align-items:center;background:#0f2418;border:2px solid #24563a;border-radius:20px;padding:16px 22px}
+.ds b{font-size:30px;display:block}.ds code{font-family:'DejaVu Sans Mono',monospace;font-size:21px;color:#a7f3c0}.ds span{font-size:22px;color:#cfe9d8}
+.ds em{margin-left:auto;flex:none;font-style:normal;font-weight:700;font-size:20px;border-radius:999px;padding:6px 14px}
+.card{position:absolute;border-radius:22px;overflow:hidden;border:2px solid #24563a;box-shadow:0 30px 70px rgba(0,0,0,.6);background:#fff}
+.card img{width:100%;height:100%;object-fit:cover;object-position:top left}
+.fl{position:absolute;left:170px;width:740px;height:100px;border-radius:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:700;font-size:34px;background:#0f2418;border:2px solid #24563a}
+.fl span{font-size:20px;font-weight:500;color:#a7c9b4}
+.ar{position:absolute;left:520px;width:40px;text-align:center;font-size:34px;color:var(--gr)}
+.demo{position:absolute;background:#4a3410;color:var(--orange);border-radius:999px;padding:8px 20px;font-weight:700;font-size:21px}
+#logos .lp{background:#fff}
+</style></head><body>
+<div id="stage">
+  <div class="scene" id="s0"><img class="pose" id="s0m" src="a/po/index-leve.webp" style="left:290px;top:760px;width:520px">
+    <div class="big" id="s0a" style="top:200px;font-size:96px;line-height:1.05">UN PROMPT<br>= MON<br><span style="color:var(--gr)">COMMERCIAL IA ?</span></div></div>
+  <div class="scene" id="s1"><div class="big" id="s1a" style="top:220px;font-size:62px">Un agent IA +<br><span style="color:var(--gr)">mes outils de prospection</span></div>
+    <div class="lg" id="s1b" style="left:150px;top:520px;width:360px;height:150px"><img src="a/lg/claude.webp"></div>
+    <div class="lg" id="s1c" style="left:570px;top:520px;width:360px;height:150px"><img src="a/lg/openai.webp"></div>
+    <div class="lg" id="s1d" style="left:290px;top:760px;width:500px;height:150px"><img src="a/lg/rapidocrm.png"></div>
+    <div class="badge" id="s1e" style="left:200px;right:200px;top:1000px;text-align:center;font-size:44px">1 seul prompt</div>
+    <img class="pose" id="s1m" src="a/po/ordinateur.webp" style="left:560px;top:1120px;width:440px"></div>
+  <div class="scene" id="s2"><div class="chip">Le prompt</div>
+    <div class="chat" id="s2c" style="top:220px"><div class="k">MOI → CLAUDE</div><span id="s2t"></span></div>
+    <div class="demo" id="s2d" style="left:60px;top:880px">Exemple de démonstration · prospects fictifs</div></div>
+  <div class="scene" id="s3"><div class="chip">MCP RapidoCRM · outils de prospection</div><div id="s3t"></div>
+    <div class="chat" id="s3p" style="top:820px;font-size:27px"><div class="k">PROSPECT FICTIF</div><b>Restaurant « Le Comptoir » (fictif)</b><br>Restauration traditionnelle · Lyon · tél. et e-mail masqués</div>
+    <div class="demo" id="s3d" style="left:60px;top:1080px">Aucune prospection réelle lancée pour la vidéo</div></div>
+  <div class="scene" id="s4"><div class="chip">Segments réels de RapidoCRM</div>
+    <div class="sg" id="g0" style="left:80px;top:260px">Restauration rapide</div><div class="sg" id="g1" style="left:560px;top:380px">Bar / brasserie</div>
+    <div class="sg" id="g2" style="left:120px;top:500px">Traiteur</div><div class="sg" id="g3" style="left:430px;top:620px">Chaînes et franchises</div>
+    <div class="sg o" id="g4" style="left:90px;top:760px">Restauration traditionnelle</div><div class="sg o" id="g5" style="left:590px;top:860px">Boulangerie-pâtisserie</div>
+    <div class="big" id="g6" style="top:1050px;font-size:56px">→ pipeline commercial</div></div>
+  <div class="scene" id="s5"><div class="chip">Pipeline au 27/10/2026</div>
+    <div class="big" id="p0" style="top:300px;font-size:200px;color:var(--gr);line-height:1">70</div><div class="big" id="p1" style="top:520px;font-size:44px">prospects</div>
+    <div class="kp" id="p2" style="left:60px;top:680px"><b>69</b><span>Nouveau prospect</span></div><div class="kp" id="p3" style="left:390px;top:680px"><b>1</b><span>Qualification</span></div><div class="kp" id="p4" style="left:720px;top:680px"><b>0</b><span>gagné</span></div>
+    <div class="real" id="p5" style="left:70px;top:900px;color:#a7c9b4">get_stats_pipeline_global · lecture seule</div></div>
+  <div class="scene" id="s6"><div class="chip">Agent vocal · configuration réelle</div>
+    <div class="ds" id="v0" style="top:200px"><div><b>Objectif d'appel : démo</b><span>ton chaleureux · catalogue FoodEatUp</span></div><em class="ok">prêt</em></div>
+    <div class="chat" id="v1" style="top:340px;font-size:25px"><div class="k">PITCH CONFIGURÉ (extrait)</div>« Bonjour, je vous appelle de la part de FoodEatUp, le logiciel de gestion pensé pour les restaurants indépendants. Notre principe : une saisie, pas dix… »</div>
+    <div id="v2"></div>
+    <div class="ds" id="v3" style="top:1030px;border-color:#7f1d1d"><div><b>Téléphonie Twilio</b><code>non connectée · pret_a_appeler = false</code></div><em class="no">aucun appel</em></div></div>
+  <div class="scene" id="s7"><div class="chip">Rendez-vous et devis</div>
+    <div class="card" id="r0" style="left:60px;top:200px;width:600px;height:430px"><img src="a/img/agenda.jpg"></div>
+    <div class="card" id="r1" style="left:690px;top:200px;width:330px;height:630px"><img src="a/img/devis.jpg"></div>
+    <div class="real" id="r2" style="left:70px;top:650px;width:600px;color:#a7c9b4">Captures réelles de RapidoCRM (Agenda, Créer un devis)</div>
+    <div class="tl" id="r3" style="top:870px">create_rdv<em class="wt">avec validation</em></div>
+    <div class="tl" id="r4" style="top:960px">create_devis<em class="wt">brouillon ≠ envoi</em></div>
+    <div class="tl" id="r5" style="top:1050px">schedule_email · schedule_sms<em class="no">jamais sans accord</em></div></div>
+  <div class="scene" id="s8"><div class="chip">Orchestration</div>
+    <div class="fl" id="o0" style="top:200px">PROMPT<span>Claude ou ChatGPT</span></div><div class="ar" id="q0" style="top:305px">↓</div>
+    <div class="fl" id="o1" style="top:350px">AGENT IA<span>choisit les outils autorisés</span></div><div class="ar" id="q1" style="top:455px">↓</div>
+    <div class="fl" id="o2" style="top:500px;border-color:var(--gr)">MCP RAPIDOCRM<span>prospects · segments · pipeline · RDV · devis</span></div><div class="ar" id="q2" style="top:605px">↓</div>
+    <div class="fl" id="o3" style="top:650px">WORKFLOWS<span>17 dans RapidoCRM · n8n non vérifié</span></div><div class="ar" id="q3" style="top:755px">↓</div>
+    <div class="fl" id="o4" style="top:800px;background:linear-gradient(90deg,#1b5e20,#0b4f7a);border:0">SUIVI COMMERCIAL<span style="color:#d1fae5">traçable · validé par moi</span></div>
+    <div class="badge" id="o5" style="left:60px;right:60px;top:960px;text-align:center;font-size:36px">Actions sensibles = ma validation</div></div>
+  <div class="scene" id="s9"><div class="big" id="w0" style="top:400px;font-size:64px;color:#a7c9b4"><s>10 logiciels</s></div>
+    <div class="big" id="w1" style="top:560px;font-size:58px">Je ne pilote plus<br>chaque clic.</div>
+    <div class="big" id="w2" style="top:780px;font-size:80px;line-height:1.05">Je pilote<br><span style="color:var(--gr)">les objectifs.</span></div>
+    <img class="pose" id="w3" src="a/po/deux-pouces.webp" style="left:300px;top:1060px;width:480px"></div>
+  <div class="scene" id="s10"><div class="ring" id="s10p" style="left:390px;top:440px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="quote" id="s10q" style="top:880px;font-size:38px;text-align:center"><b>ET TOI ?</b>Tu confierais une partie de ta prospection à un commercial IA ?</div>
+    <div class="abs" id="s10l" style="left:0;right:0;top:1150px;display:flex;justify-content:center;gap:18px"><div class="lg" style="position:static;width:260px;height:130px"><img src="a/lg/rapidocrm.png"></div><div class="lg" style="position:static;width:260px;height:130px"><img src="a/lg/foodeatup.png"></div><div class="lg" style="position:static;width:260px;height:130px"><img src="a/lg/braindcode.png"></div></div></div>
+  <div class="scene" id="thumb">
+    <div class="lg" style="left:290px;top:70px;width:500px;height:140px"><img src="a/lg/rapidocrm.png"></div>
+    <div class="big" style="top:240px;font-size:100px;line-height:1">J'AI CRÉÉ<br>MON <span style="color:var(--gr)">COMMERCIAL<br>IA !</span></div>
+    <div class="big" style="top:660px;font-size:44px;color:#cfe9d8">Un prompt. Des MCP. Tout un CRM.</div>
+    <img class="pose" src="a/po/telephone.webp" style="left:200px;top:780px;width:700px">
+    <div style="position:absolute;left:0;right:0;top:1340px;height:140px;background:linear-gradient(transparent,#08140d)"></div>
+    <div class="chat" style="left:30px;width:400px;top:1000px;font-size:24px;padding:16px 20px"><div class="k" style="font-size:16px">PROMPT</div>Trouve des restaurants, qualifie-les, prépare les actions.</div>
+    <div class="box" style="left:760px;top:1060px;width:290px;padding:16px;font-size:22px"><b style="color:var(--gr)">Pipeline</b><br>70 prospects<br>Nouveau prospect<br>Qualification</div>
+    <div class="badge" style="left:120px;right:120px;top:1560px;text-align:center;font-size:42px">Prompt → MCP → CRM → moi</div>
+  </div>
+  <div id="logos"><div class="lp"><img src="a/lg/braindcode.png" style="height:30px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>
