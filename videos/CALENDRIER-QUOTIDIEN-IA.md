@@ -35,5 +35,6 @@ Programmé le 27/10/2026 à 5 h 30 (Paris) par RapidoCMS. Compte : profil Linked
 | 22/11 | 27 · Des routes n8n aux autoroutes MCP | 1854 | 1763 |
 | 23/11 | 28 · Mon département de prospection IA | 1855 | 1764 |
 | 24/11 | 29 · Mes agents IA font du SEO | 1856 | 1765 |
+| 25/11 | 26 · PRONOCLIP, mon IA de pronostics foot | 1857 | 1766 |
 
-Épisodes 27, 28 et 29 ajoutés le 27/10. Restent absents : **7 et 26** (créneaux libres à partir du 25/11).
+Épisodes 27, 28 et 29 ajoutés le 27/10. Épisode 26 ajouté ensuite. Reste absent : **7** (créneau libre à partir du 26/11).
