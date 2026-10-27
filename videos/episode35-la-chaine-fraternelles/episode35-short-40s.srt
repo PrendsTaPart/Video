@@ -1,0 +1,103 @@
+1
+00:00:00,350 --> 00:00:00,850
+Aujourd'hui
+
+2
+00:00:00,850 --> 00:00:01,650
+j'ai voulu faire un cadeau
+
+3
+00:00:01,650 --> 00:00:02,210
+à ma sœur.
+
+4
+00:00:02,210 --> 00:00:03,070
+Elle fait vivre La Chaîne
+
+5
+00:00:03,070 --> 00:00:03,730
+Fratern'Elles
+
+6
+00:00:03,730 --> 00:00:05,610
+une association d'Aulnay-sous-Bois qui accompagne
+
+7
+00:00:05,610 --> 00:00:07,240
+des familles depuis 2018.
+
+8
+00:00:10,040 --> 00:00:11,300
+Puis j'ai branché un MCP
+
+9
+00:00:11,300 --> 00:00:11,840
+sur son site.
+
+10
+00:00:11,840 --> 00:00:13,400
+Ses agents IA peuvent préparer
+
+11
+00:00:13,400 --> 00:00:14,040
+un événement
+
+12
+00:00:14,040 --> 00:00:15,420
+une collecte ou un article…
+
+13
+00:00:15,420 --> 00:00:16,500
+mais seulement en brouillon.
+
+14
+00:00:16,500 --> 00:00:18,030
+Rien n'est publié sans elle.
+
+15
+00:00:20,830 --> 00:00:21,310
+Ensuite
+
+16
+00:00:21,310 --> 00:00:22,670
+je l'ai formée à ChatGPT
+
+17
+00:00:22,670 --> 00:00:23,590
+Canva et Gmail.
+
+18
+00:00:23,590 --> 00:00:23,910
+Demain
+
+19
+00:00:23,910 --> 00:00:24,950
+elle pourra simplement parler à
+
+20
+00:00:24,950 --> 00:00:26,110
+ses agents pour préparer la
+
+21
+00:00:26,110 --> 00:00:27,840
+prochaine sortie de l'association.
+
+22
+00:00:30,640 --> 00:00:31,020
+Parfois
+
+23
+00:00:31,020 --> 00:00:31,860
+le plus beau cadeau…
+
+24
+00:00:31,860 --> 00:00:32,380
+c'est du temps.
+
+25
+00:00:32,380 --> 00:00:33,520
+Et l'IA peut aussi nous
+
+26
+00:00:33,520 --> 00:00:34,530
+redonner du temps.

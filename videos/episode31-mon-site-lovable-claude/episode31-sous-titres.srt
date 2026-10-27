@@ -1,240 +1,227 @@
 1
-00:00:00,500 --> 00:00:01,900
-Aujourd'hui, j'ai construit mon site
+00:00:00,350 --> 00:00:01,370
+Tu publies du contenu chaque
 
 2
-00:00:01,900 --> 00:00:03,460
-avec Lovable et Claude.
+00:00:01,370 --> 00:00:01,650
+jour
 
 3
-00:00:03,460 --> 00:00:05,260
-31 vidéos, 30 formations…
+00:00:01,650 --> 00:00:02,610
+mais tes visiteurs ne savent
 
 4
-00:00:05,260 --> 00:00:06,940
-et un panneau d'administration
+00:00:02,610 --> 00:00:03,450
+pas où cliquer Moi
 
 5
-00:00:06,940 --> 00:00:08,600
-que mes agents IA peuvent piloter.
+00:00:03,450 --> 00:00:04,350
+j'ai réglé ça avec un
 
 6
-00:00:10,220 --> 00:00:12,040
-Je publie une vidéo par jour.
+00:00:04,350 --> 00:00:04,790
+seul site
 
 7
-00:00:12,040 --> 00:00:13,180
-Il me fallait un seul lien
+00:00:04,790 --> 00:00:06,580
+construit avec Lovable et Claude.
 
 8
-00:00:13,180 --> 00:00:14,320
-pour tout réunir :
+00:00:09,180 --> 00:00:09,980
+Un seul lien pour tout
 
 9
-00:00:14,320 --> 00:00:16,180
-mon profil, mes vidéos, mes projets,
+00:00:09,980 --> 00:00:11,200
+réunir mon profil
 
 10
-00:00:16,180 --> 00:00:18,060
-et un bouton pour prendre rendez-vous.
+00:00:11,200 --> 00:00:11,720
+mes vidéos
 
 11
-00:00:18,060 --> 00:00:19,280
-Un peu comme un Linktree…
+00:00:11,720 --> 00:00:12,060
+mes projets
 
 12
-00:00:19,280 --> 00:00:20,500
-mais construit pour moi.
+00:00:12,060 --> 00:00:13,260
+et un bouton pour prendre
 
 13
-00:00:21,620 --> 00:00:23,700
-J'ai demandé la base du site à Lovable.
+00:00:13,260 --> 00:00:13,800
+rendez-vous.
 
 14
-00:00:23,700 --> 00:00:24,980
-Puis j'ai importé le projet
+00:00:13,800 --> 00:00:14,740
+Un peu comme un Linktree…
 
 15
-00:00:24,980 --> 00:00:26,740
-dans Claude Code, depuis GitHub.
+00:00:14,740 --> 00:00:15,830
+mais construit pour moi.
 
 16
-00:00:26,740 --> 00:00:29,060
-Claude modifie le code, lance les tests,
+00:00:18,430 --> 00:00:19,310
+Comment j'ai fait J'ai demandé
 
 17
-00:00:29,060 --> 00:00:30,240
-pousse sur la branche principale…
+00:00:19,310 --> 00:00:20,230
+la base du site à
 
 18
-00:00:30,240 --> 00:00:31,500
-et Lovable met en production.
+00:00:20,230 --> 00:00:20,690
+Lovable.
 
 19
-00:00:33,100 --> 00:00:34,560
-Ensuite, chaque épisode
+00:00:20,690 --> 00:00:21,510
+Puis j'ai repris le projet
 
 20
-00:00:34,560 --> 00:00:35,820
-a reçu sa formation :
+00:00:21,510 --> 00:00:22,150
+dans Claude Code
 
 21
-00:00:35,820 --> 00:00:36,980
-les étapes, les outils,
+00:00:22,150 --> 00:00:23,730
+depuis GitHub Claude modifie
 
 22
-00:00:36,980 --> 00:00:39,040
-et les prompts que j'ai vraiment utilisés.
+00:00:23,730 --> 00:00:24,070
+teste
 
 23
-00:00:39,040 --> 00:00:40,120
-Pour la débloquer, on laisse
+00:00:24,070 --> 00:00:25,660
+et Lovable met en ligne.
 
 24
-00:00:40,120 --> 00:00:41,240
-son prénom et son email,
+00:00:28,260 --> 00:00:29,260
+Chaque vidéo a sa formation
 
 25
-00:00:41,240 --> 00:00:42,380
-avec son accord.
+00:00:29,260 --> 00:00:30,700
+gratuite les étapes
 
 26
-00:00:42,380 --> 00:00:43,850
-Et on repart avec le PDF.
+00:00:30,700 --> 00:00:31,140
+les outils
 
 27
-00:00:45,460 --> 00:00:46,300
-Les prompts s'affichent
+00:00:31,140 --> 00:00:32,060
+et les prompts que j'ai
 
 28
-00:00:46,300 --> 00:00:47,420
-comme une conversation :
+00:00:32,060 --> 00:00:32,940
+vraiment utilisés.
 
 29
-00:00:47,420 --> 00:00:49,300
-un clic, et ils s'ouvrent dans Claude.
+00:00:32,940 --> 00:00:33,760
+On laisse son prénom et
 
 30
-00:00:49,300 --> 00:00:50,780
-Les logos, les chartes et les écrans
+00:00:33,760 --> 00:00:34,140
+son email
 
 31
-00:00:50,780 --> 00:00:51,460
-de mes logiciels
+00:00:34,140 --> 00:00:35,300
+et on repart avec le
 
 32
-00:00:51,460 --> 00:00:53,500
-viennent du MCP de ma formation.
+00:00:35,300 --> 00:00:35,930
+PDF.
 
 33
-00:00:53,500 --> 00:00:55,060
-Six écrans ont été écartés :
+00:00:38,530 --> 00:00:39,530
+Les prompts s'ouvrent en un
 
 34
-00:00:55,060 --> 00:00:56,080
-ils affichaient des prix.
+00:00:39,530 --> 00:00:40,270
+clic dans Claude.
 
 35
-00:00:56,080 --> 00:00:57,280
-Et il y a une version blanche,
+00:00:40,270 --> 00:00:41,010
+Et la charte
 
 36
-00:00:57,280 --> 00:00:58,350
-en plus de la version nuit.
+00:00:41,010 --> 00:00:41,970
+les logos et les écrans
 
 37
-00:00:59,980 --> 00:01:01,780
-Le site a aussi son propre MCP :
+00:00:41,970 --> 00:00:43,430
+de mes logiciels viennent directement
 
 38
-00:01:01,780 --> 00:01:03,940
-37 outils pour publier une vidéo,
+00:00:43,430 --> 00:00:44,940
+de ma bibliothèque de marque.
 
 39
-00:01:03,940 --> 00:01:05,300
-une formation ou une offre.
+00:00:47,540 --> 00:00:48,140
+Et le site a son
 
 40
-00:01:05,300 --> 00:01:07,180
-Toute création commence en brouillon.
+00:00:48,140 --> 00:00:49,900
+propre MCP mes agents IA
 
 41
-00:01:07,180 --> 00:01:08,160
-Et sans jeton…
+00:00:49,900 --> 00:00:51,300
+peuvent préparer une vidéo
 
 42
-00:01:08,160 --> 00:01:09,450
-le serveur refuse l'accès.
+00:00:51,300 --> 00:00:52,680
+une formation ou une offre…
 
 43
-00:01:11,580 --> 00:01:12,520
-La leçon du jour ?
+00:00:52,680 --> 00:00:53,540
+toujours en brouillon.
 
 44
-00:01:12,520 --> 00:01:13,800
-En synchronisant, Lovable
+00:00:53,540 --> 00:00:54,040
+Je valide
 
 45
-00:01:13,800 --> 00:01:15,480
-a écrasé toutes mes formations.
+00:00:54,040 --> 00:00:55,150
+et ça part en ligne.
 
 46
-00:01:15,480 --> 00:01:16,220
-Claude l'a repéré
+00:00:57,750 --> 00:00:59,210
+Résultat trente et une vidéos
 
 47
-00:01:16,220 --> 00:01:17,660
-en vérifiant le site en ligne,
+00:00:59,210 --> 00:00:59,710
+trente formations
 
 48
-00:01:17,660 --> 00:01:18,860
-les a remises en place,
+00:00:59,710 --> 00:01:00,790
+et une vitrine qui se
 
 49
-00:01:18,860 --> 00:01:20,480
-puis a revérifié chaque page.
+00:01:00,790 --> 00:01:02,040
+tient à jour avec moi.
 
 50
-00:01:20,480 --> 00:01:21,400
-L'IA va vite.
+00:01:04,640 --> 00:01:05,260
+Tu veux la même pour
 
 51
-00:01:21,400 --> 00:01:23,550
-La vérification, elle, ne se délègue pas.
+00:01:05,260 --> 00:01:06,640
+ton activité La formation est
 
 52
-00:01:25,140 --> 00:01:27,160
-La formation de cet épisode est en ligne :
+00:01:06,640 --> 00:01:07,180
+sur mon site.
 
 53
-00:01:27,160 --> 00:01:28,420
-comment construire ce site,
+00:01:07,180 --> 00:01:07,860
+Et si tu veux qu'on
 
 54
-00:01:28,420 --> 00:01:30,240
-étape par étape, avec les prompts.
+00:01:07,860 --> 00:01:08,940
+la construise ensemble
 
 55
-00:01:30,240 --> 00:01:31,300
-Le lien est dans ma bio.
+00:01:08,940 --> 00:01:09,660
+prends rendez-vous.
 
 56
-00:01:32,400 --> 00:01:33,080
-Je ne construis plus
+00:01:09,660 --> 00:01:10,360
+Le lien est dans ma
 
 57
-00:01:33,080 --> 00:01:34,340
-seulement des logiciels.
-
-58
-00:01:34,340 --> 00:01:35,640
-Je construis aussi la vitrine
-
-59
-00:01:35,640 --> 00:01:36,460
-que mes agents IA
-
-60
-00:01:36,460 --> 00:01:37,000
-peuvent tenir à jour avec moi.
-
+00:01:10,360 --> 00:01:10,870
+bio.

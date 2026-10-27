@@ -1,17 +1,15 @@
-Aujourd'hui, j'ai construit mon site avec Lovable et Claude. Trente et une vidéos, trente formations… et un panneau d'administration que mes agents IA peuvent piloter.
+Tu publies du contenu chaque jour, mais tes visiteurs ne savent pas où cliquer ? Moi, j'ai réglé ça avec un seul site, construit avec Lovable et Claude.
 
-Je publie une vidéo par jour. Il me fallait un seul lien pour tout réunir : mon profil, mes vidéos, mes projets, et un bouton pour prendre rendez-vous. Un peu comme un Linktree… mais construit pour moi.
+Un seul lien pour tout réunir : mon profil, mes vidéos, mes projets, et un bouton pour prendre rendez-vous. Un peu comme un Linktree… mais construit pour moi.
 
-J'ai demandé la base du site à Lovable. Puis j'ai importé le projet dans Claude Code, depuis GitHub. Claude modifie le code, lance les tests, pousse sur la branche principale… et Lovable met en production.
+Comment j'ai fait ? J'ai demandé la base du site à Lovable. Puis j'ai repris le projet dans Claude Code, depuis GitHub : Claude modifie, teste, et Lovable met en ligne.
 
-Ensuite, chaque épisode a reçu sa formation : les étapes, les outils, et les prompts que j'ai vraiment utilisés. Pour la débloquer, on laisse son prénom et son email, avec son accord. Et on repart avec le PDF.
+Chaque vidéo a sa formation gratuite : les étapes, les outils, et les prompts que j'ai vraiment utilisés. On laisse son prénom et son email, et on repart avec le PDF.
 
-Les prompts s'affichent comme une conversation : un clic, et ils s'ouvrent dans Claude. Les logos, les chartes et les écrans de mes logiciels viennent du MCP de ma formation. Six écrans ont été écartés : ils affichaient des prix. Et il y a une version blanche, en plus de la version nuit.
+Les prompts s'ouvrent en un clic dans Claude. Et la charte, les logos et les écrans de mes logiciels viennent directement de ma bibliothèque de marque.
 
-Le site a aussi son propre MCP : trente-sept outils pour publier une vidéo, une formation ou une offre. Toute création commence en brouillon. Et sans jeton… le serveur refuse l'accès.
+Et le site a son propre MCP : mes agents IA peuvent préparer une vidéo, une formation ou une offre… toujours en brouillon. Je valide, et ça part en ligne.
 
-La leçon du jour ? En synchronisant, Lovable a écrasé toutes mes formations. Claude l'a repéré en vérifiant le site en ligne, les a remises en place, puis a revérifié chaque page. L'IA va vite. La vérification, elle, ne se délègue pas.
+Résultat : trente et une vidéos, trente formations, et une vitrine qui se tient à jour avec moi.
 
-La formation de cet épisode est en ligne : comment construire ce site, étape par étape, avec les prompts. Le lien est dans ma bio.
-
-Je ne construis plus seulement des logiciels. Je construis aussi la vitrine que mes agents IA peuvent tenir à jour avec moi.
+Tu veux la même pour ton activité ? La formation est sur mon site. Et si tu veux qu'on la construise ensemble, prends rendez-vous. Le lien est dans ma bio.

@@ -1,0 +1,119 @@
+1
+00:00:00,350 --> 00:00:01,370
+Tu publies du contenu chaque
+
+2
+00:00:01,370 --> 00:00:01,650
+jour
+
+3
+00:00:01,650 --> 00:00:02,610
+mais tes visiteurs ne savent
+
+4
+00:00:02,610 --> 00:00:03,450
+pas où cliquer Moi
+
+5
+00:00:03,450 --> 00:00:04,350
+j'ai réglé ça avec un
+
+6
+00:00:04,350 --> 00:00:04,790
+seul site
+
+7
+00:00:04,790 --> 00:00:06,580
+construit avec Lovable et Claude.
+
+8
+00:00:09,180 --> 00:00:10,060
+Comment j'ai fait J'ai demandé
+
+9
+00:00:10,060 --> 00:00:10,980
+la base du site à
+
+10
+00:00:10,980 --> 00:00:11,440
+Lovable.
+
+11
+00:00:11,440 --> 00:00:12,260
+Puis j'ai repris le projet
+
+12
+00:00:12,260 --> 00:00:12,900
+dans Claude Code
+
+13
+00:00:12,900 --> 00:00:14,480
+depuis GitHub Claude modifie
+
+14
+00:00:14,480 --> 00:00:14,820
+teste
+
+15
+00:00:14,820 --> 00:00:16,410
+et Lovable met en ligne.
+
+16
+00:00:19,010 --> 00:00:19,610
+Et le site a son
+
+17
+00:00:19,610 --> 00:00:21,370
+propre MCP mes agents IA
+
+18
+00:00:21,370 --> 00:00:22,770
+peuvent préparer une vidéo
+
+19
+00:00:22,770 --> 00:00:24,150
+une formation ou une offre…
+
+20
+00:00:24,150 --> 00:00:25,010
+toujours en brouillon.
+
+21
+00:00:25,010 --> 00:00:25,510
+Je valide
+
+22
+00:00:25,510 --> 00:00:26,620
+et ça part en ligne.
+
+23
+00:00:29,220 --> 00:00:29,840
+Tu veux la même pour
+
+24
+00:00:29,840 --> 00:00:31,220
+ton activité La formation est
+
+25
+00:00:31,220 --> 00:00:31,760
+sur mon site.
+
+26
+00:00:31,760 --> 00:00:32,440
+Et si tu veux qu'on
+
+27
+00:00:32,440 --> 00:00:33,520
+la construise ensemble
+
+28
+00:00:33,520 --> 00:00:34,240
+prends rendez-vous.
+
+29
+00:00:34,240 --> 00:00:34,940
+Le lien est dans ma
+
+30
+00:00:34,940 --> 00:00:35,450
+bio.
