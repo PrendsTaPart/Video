@@ -1,0 +1,74 @@
+{
+  "video": "video-26",
+  "titre": "J'aime le foot… alors j'ai créé une équipe d'agents IA pour mes pronostics !",
+  "duree_s": 77,
+  "format": "1080x1920",
+  "scenes": [
+    {
+      "temps_s": "0–2,2",
+      "scene": "Accroche",
+      "visuel": "Michael deux pouces · « AUJOURD'HUI, JE ME SUIS AMUSÉ ! ⚽ »"
+    },
+    {
+      "temps_s": "2,2–10,9",
+      "scene": "L'idée",
+      "visuel": "Terrain à la télé, ballon, apparition d'un robot IA puis de deux autres"
+    },
+    {
+      "temps_s": "10,9–12,9",
+      "scene": "PRONOCLIP",
+      "visuel": "Titre néon (charte du dépôt, accent #00ffd0)"
+    },
+    {
+      "temps_s": "12,9–19,2",
+      "scene": "Les matchs",
+      "visuel": "Nœuds de PRONO_0_Fixtures_Today + API-Football (d'après la fiche, sans clé ni URL)"
+    },
+    {
+      "temps_s": "19,2–24",
+      "scene": "Le pronostic",
+      "visuel": "WC2026_1 : H2H, stats, effectifs → agent Gemini → « 2 – 1 ? » incertain"
+    },
+    {
+      "temps_s": "24–28,2",
+      "scene": "Les visuels",
+      "visuel": "WC2026_2_Frame_Generator : prompts, image de début, image de fin → WC2026_3 (non montré)"
+    },
+    {
+      "temps_s": "28,2–40,4",
+      "scene": "Les agents",
+      "visuel": "4 agents du plugin pronoclip-video 0.4.0 avec leurs fichiers ; le vérificateur peut bloquer"
+    },
+    {
+      "temps_s": "40,4–49,9",
+      "scene": "Extrait cartoon",
+      "visuel": "Mascottes originales FC Néon vs Pixel United (fictifs), score animé 2–1, « Pronostic — contenu généré par IA »"
+    },
+    {
+      "temps_s": "49,9–56,2",
+      "scene": "Mes logiciels",
+      "visuel": "RapidoCMS et RapidoRH (prévu, à valider) · W6/W7/W8 inactifs · aucune publication sans validation"
+    },
+    {
+      "temps_s": "56,2–61,8",
+      "scene": "Honnêteté",
+      "visuel": "« Mon IA ne connaît pas les résultats à l'avance » · aucun pari"
+    },
+    {
+      "temps_s": "61,8–67",
+      "scene": "Architecture",
+      "visuel": "Deux modules : chaîne n8n | plugin Claude Code · liaison à construire"
+    },
+    {
+      "temps_s": "67–71,7",
+      "scene": "Conclusion",
+      "visuel": "« mon propre studio IA de football ! »"
+    },
+    {
+      "temps_s": "71,7–77",
+      "scene": "Question",
+      "visuel": "Photo, « Tu créerais quel agent IA pour ta passion ? », logos"
+    }
+  ],
+  "miniature": "J'AI CRÉÉ MON IA DE PRONOSTICS FOOT ! · Michael sur un terrain · ballon · robot IA · prono fictif 2–1 ?"
+}
