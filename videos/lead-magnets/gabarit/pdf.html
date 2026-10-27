@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="common.css"><style>
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="common.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap"><style>
 @page{size:A4;margin:16mm 15mm 18mm;background:#0F1A23}
 @page cover{margin:0}
 html{background:var(--nuit)}
@@ -38,18 +38,73 @@ ul.chk{list-style:none}ul.chk li{padding-left:6mm;position:relative;margin:1.5mm
 .cta{display:inline-block;margin-top:3mm;background:var(--orange);color:var(--nuit);font-weight:700;font-size:10.5pt;padding:2.5mm 5mm;border-radius:3mm;text-decoration:none}
 .cta.b{background:var(--bleu);color:#fff}
 .small{font-size:8.5pt;color:var(--gris)}
+
+/* outils avec logo */
+.lg{display:inline-flex;align-items:center;justify-content:center;background:#fff;border-radius:1.5mm;height:6mm;padding:0 1.5mm;margin-right:2mm;vertical-align:middle}
+.lg img{max-height:4.2mm;max-width:22mm}
+/* prompt en conversation, façon Claude */
+.chat{margin-top:3.5mm;background:#FAF9F5;color:#141413;border:.3mm solid #E8E6DC;border-radius:3.5mm;overflow:hidden;break-inside:avoid}
+.chat-h{display:flex;align-items:center;justify-content:space-between;padding:2mm 3.5mm;border-bottom:.3mm solid #E8E6DC;font-family:Inter,sans-serif;font-size:7.5pt;color:#5E5D59}
+.chat-h img{height:4mm;vertical-align:middle;margin-right:1.5mm}
+.bulle{margin:3mm 3.5mm 0 12mm;background:#F0EEE6;border-radius:3.5mm 3.5mm 1mm 3.5mm;padding:3mm 3.5mm;font-family:Inter,sans-serif;font-size:9.5pt;line-height:1.5;white-space:pre-wrap;color:#141413}
+.bulle mark{background:#F5E3D9;color:#8A3A1E;border-radius:1mm;padding:0 .8mm}
+.astuce{margin:2mm 3.5mm 0 12mm;font-family:'Source Serif 4',serif;font-style:italic;font-size:8.5pt;color:#5E5D59}
+.compo{margin:3mm;display:flex;align-items:center;gap:2mm;background:#fff;border:.3mm solid #E8E6DC;border-radius:3mm;padding:1.8mm 2mm 1.8mm 3.5mm;font-family:Inter,sans-serif}
+.compo span{flex:1;font-size:8.5pt;color:#6B6A65}
+.compo a{background:#AE5630;color:#fff;text-decoration:none;font-weight:600;font-size:8pt;padding:1.5mm 3mm;border-radius:2.2mm}
+.compo a.gpt{background:none;color:#5E5D59;font-weight:500}
+/* charte */
+.sw{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin:3mm 0}
+.sw div{border:.3mm solid #2f475c;border-radius:2.5mm;overflow:hidden}
+.sw i{display:block;height:13mm}.sw b{display:block;font-size:8.5pt;padding:1.5mm 2.5mm 0}.sw code{display:block;font-size:8pt;padding:0 2.5mm 1.5mm;color:var(--gris)}
+.ecr{display:flex;gap:3mm;margin-top:3mm}
+.ecr figure{flex:1;margin:0;border:.3mm solid #2f475c;border-radius:2.5mm;overflow:hidden;background:#fff}
+.ecr figure.v{flex:.45}
+.ecr img{display:block;width:100%;height:52mm;object-fit:cover;object-position:top}
+.ecr figcaption{font-size:8pt;padding:1.5mm 2.5mm;color:#5E5D59;background:#fff}
+.ecr figcaption b{color:#141413;display:block}
+/* ===== version blanche, design inspiré de Claude ===== */
+html.blanc,html.blanc body{background:#FAF9F5;color:#141413;font-family:Inter,sans-serif}
+html.blanc h1,html.blanc h2,html.blanc h3{font-family:'Source Serif 4',serif;font-weight:500;letter-spacing:-.01em;color:#141413}
+html.blanc h2 small{font-family:Inter,sans-serif;color:#AE5630}
+html.blanc p,html.blanc li{color:#3D3D3A}
+html.blanc .bloc,html.blanc .step{background:#fff;border-color:#E8E6DC}
+html.blanc .lbl{color:#73726C}
+html.blanc td{border-color:#E8E6DC}html.blanc td a,html.blanc a[style]{color:#9C4A28!important}
+html.blanc .num{background:#AE5630;color:#fff}
+html.blanc ul.chk li:before{color:#AE5630}
+html.blanc .reel{border-color:#E3B9A3}
+html.blanc .offre{border-color:#AE5630}
+html.blanc .badge{background:#F5E3D9!important;color:#8A3A1E!important}
+html.blanc .cta{background:#AE5630;color:#fff}html.blanc .cta.b{background:#141413}
+html.blanc .small{color:#73726C}
+html.blanc .logo{border:.3mm solid #E8E6DC}
+html.blanc .sw div,html.blanc .ecr figure{border-color:#E8E6DC}
+html.blanc .chat{border-color:#E8E6DC}
+html.blanc .cover .fade{background:linear-gradient(transparent,#FAF9F5)}
+html.blanc .cover .pr{color:#3D3D3A}html.blanc .cover .kick{color:#73726C}
+html.blanc .cover h1{color:#141413}
+html.blanc .ep{background:#AE5630;color:#fff}
+html.blanc .cover .me span{color:#73726C}html.blanc .cover .me img{border-color:#E8E6DC}
+html.blanc .cover .gr{background:#141413;color:#fff}
 </style></head><body><div id="doc"></div>
 <script>
-const SITE='https://michael-au-quotidien.lovable.app';
+const SITE='https://michael.foodeatup.fr';
+const Q=new URLSearchParams(location.search); const BLANC=Q.get('t')==='blanc';
+if(BLANC){document.documentElement.classList.add('blanc');const st=document.createElement('style');st.textContent='@page{background:#FAF9F5}';document.head.append(st);}
 const OFFRES={foodeatup:['FoodEatUp','https://site.foodeatup.com','foodeatup'],rapidocrm:['RapidoCRM','https://rapido-crm.com','rapidocrm'],rapidocms:['RapidoCMS','https://rapidocms.com','rapidocms'],rapidorh:['RapidoRH','https://rh.rapidosoftware.com','rapidorh'],planit:["Plan'It",'https://plani-t.fr','planit'],rapidosoftware:['RapidoSoftware','https://rapidosoftware.com/','rapidosoftware']};
 const M={plugins:'planit',build:'rapidosoftware',braindcode:'rapidosoftware',coaching:'planit',foodeatup:'foodeatup',crm:'rapidocrm',cms:'rapidocms',rh:'rapidorh',planit:'planit',rapido:'rapidosoftware'};
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 const n=+new URLSearchParams(location.search).get('n');
-fetch('formations.json').then(r=>r.json()).then(F=>{
+Promise.all([fetch('formations.json').then(r=>r.json()),fetch('charte.json').then(r=>r.json())]).then(([F,C])=>{
 const f=F.find(x=>x.episode===n); const nn=String(n).padStart(2,'0');
 const [lg,url,logo]=OFFRES[M[f.offre]];
 const prompts=f.etapes.filter(e=>e.prompt);
 const enc=encodeURIComponent;
+const ch=C.CHARTES[logo]; const ecrans=(C.ECRANS[logo]||[]).slice(0,3);
+const lgo=n=>C.LOGOS[n]?`<span class="lg"><img src="a${C.LOGOS[n]}"></span>`:'';
+const marque=t=>esc(t).replace(/\[[^\]]+\]/g,m=>`<mark>${m}</mark>`);
+const chat=t=>`<div class="chat"><div class="chat-h"><span><img src="a/brand/logos/claude.webp">prompt prêt à envoyer</span><span>Copiez-le ou cliquez sur « Ouvrir dans Claude »</span></div><div class="bulle">${marque(t)}</div>${/\[[^\]]+\]/.test(t)?'<div class="astuce">Remplacez les passages surlignés par vos informations avant d\'envoyer.</div>':''}<div class="compo"><span>Répondre à Claude…</span><a class="gpt" href="https://chatgpt.com/?q=${enc(t)}">ChatGPT</a><a href="https://claude.ai/new?q=${enc(t)}">Ouvrir dans Claude ↑</a></div></div>`;
 document.getElementById('doc').innerHTML=`
 <section class="cover"><img class="ill" src="a/ill/formation-${nn}.jpg"><div class="fade"></div>
 <div class="tx"><span class="ep">ÉPISODE ${n}</span><div class="kick">Comment j'ai fait, étape par étape</div><h1>${esc(f.titre)}</h1><p class="pr">${esc(f.promesse)}</p></div>
@@ -63,14 +118,25 @@ document.getElementById('doc').innerHTML=`
  <div class="bloc"><div class="lbl">Au programme</div><p>${f.etapes.length} étapes · ${prompts.length} prompt${prompts.length>1?'s':''} à copier · environ ${Math.max(10,3*f.etapes.length+5)} min</p></div>
 </div>
 <div class="bloc"><div class="lbl">L'épisode vidéo</div><p>Épisode ${n} de la série « Mon quotidien d'entrepreneur avec l'IA » : <a style="color:#7cc0ff" href="${SITE}/formations/${f.slug}">${SITE.replace('https://','')}/formations/${f.slug}</a></p></div>
-<div class="bloc"><div class="lbl">Les outils</div><table>${f.outils.map(o=>`<tr><td>${esc(o.nom)}</td><td><a href="${o.url}">${o.url.replace('https://','')}</a></td></tr>`).join('')}</table></div>
+<div class="bloc"><div class="lbl">Les outils</div><table>${f.outils.map(o=>`<tr><td>${lgo(o.nom)}${esc(o.nom)}</td><td><a href="${o.url}">${o.url.replace('https://','')}</a></td></tr>`).join('')}</table></div>
 <div class="bloc"><div class="lbl">Sommaire</div><ul class="chk">${f.etapes.map((e,i)=>`<li>${i+1}. ${esc(e.titre)}</li>`).join('')}</ul></div>
 
 <h2 class="page"><small>La méthode</small>Étape par étape</h2>
-${f.etapes.map((e,i)=>`<div class="step"><div class="num">${i+1}</div><div style="flex:1"><h3>${esc(e.titre)}</h3><p>${esc(e.explication)}</p>${e.prompt?`<div class="prompt"><div class="lbl">Prompt à copier</div><pre>${esc(e.prompt)}</pre></div>`:''}</div></div>`).join('')}
+${f.etapes.map((e,i)=>`<div class="step"><div class="num">${i+1}</div><div style="flex:1"><h3>${esc(e.titre)}</h3><p>${esc(e.explication)}</p>${e.prompt?chat(e.prompt):''}</div></div>`).join('')}
 
 <div class="bloc" style="margin-top:6mm"><div class="lbl">Les garde-fous</div><ul class="chk">${f.garde_fous.map(g=>`<li>${esc(g)}</li>`).join('')}</ul></div>
 <div class="bloc reel"><div class="lbl" style="color:var(--orange)">Ce qui est réellement en place</div><p>${esc(f.etat_reel)}</p></div>
+
+
+<h2 class="page"><small>La marque</small>La charte graphique de ${esc(ch.nom)}</h2>
+<div class="bloc"><p>À donner à Claude, Lovable ou Figma pour que vos visuels et vos pages respectent la marque.</p>
+<div style="display:flex;align-items:center;gap:5mm"><span class="logo"><img src="a${ch.logo}"></span><p><b>Typographie :</b> ${esc(ch.typographie)}</p></div>
+<div class="sw">${ch.couleurs.map(c=>`<div><i style="background:${c.hex}"></i><b>${esc(c.nom)}</b><code>${c.hex}</code></div>`).join('')}</div>
+<ul class="chk">${ch.regles.map(r=>`<li>${esc(r)}</li>`).join('')}<li>Le logo s'utilise en fichier officiel, jamais redessiné ni généré par une IA.</li></ul>
+${ch.pdf?`<p class="small" style="margin-top:2mm">Charte complète : <a style="color:#7cc0ff" href="${SITE}${ch.pdf}">${SITE.replace('https://','')}${ch.pdf}</a></p>`:''}</div>
+<div class="bloc"><div class="lbl">Les écrans de ${esc(ch.nom)}</div>
+<div class="ecr">${ecrans.map(e=>`<figure class="${e.vertical?'v':''}"><img src="a${e.src}"><figcaption><b>${esc(e.titre)}</b>${esc(e.legende)}</figcaption></figure>`).join('')}</div>
+<p class="small" style="margin-top:2mm">Écrans issus de la bibliothèque officielle de la marque (maquettes Figma et captures), données de démonstration.</p></div>
 
 <h2 class="page"><small>Pour aller plus loin</small>Passez à la pratique</h2>
 <div class="bloc offre"><span class="badge">Offre réservée aux lecteurs</span>
