@@ -1,23 +1,28 @@
-# Vidéo 27 — Audit n8n
+# Vidéo 27 — Audit n8n (vérifié le 27/10/2026)
 
-## Statut : non réalisé dans cette session
+Lecture seule via le connecteur N8n. Aucun workflow exécuté ni modifié.
 
-Le connecteur **N8n** est connecté à votre compte claude.ai, mais **pas activé dans cette conversation** (`ListConnectors` : `connected: true`, `enabledInChat: false`). Je n'ai donc pu lire aucun workflow. Rien n'a été modifié, publié ni déclenché.
+## Instance
 
-## Workflows cités, d'après le brief (non revérifiés)
+**789 workflows** au total, dont environ 200 brouillons techniques nommés `_tmp_extract` créés le 25/10 et inactifs. Ils sont à archiver pour assainir l'instance.
 
-| Workflow | ID | Statut annoncé | Nœuds annoncés | Usage dans la vidéo |
-|---|---|---|---|---|
-| RapidoRH — WF1 Dispatcher Agents IA (OpenAI) | `OSaoko9YezKMCEUy` | actif | 22 | Schéma en 7 étapes, signalé « d'après la fiche » |
-| FoodEatUp — MCP V2 | `w6dURv9azjK5rC0b` | actif | 36 | non montré (les outils FoodEatUp affichés viennent du serveur MCP FoodEatUp réel) |
-| RapidoATS — Traitement des CV | `1FyhxtH8DibCi058` | actif | — | non montré |
-| Méga Employé IA — Tâches quotidiennes | `8rjqaG2aNFugM5Ly` | actif | — | non montré |
-| BraindCode Super Agent — OpenClaw MCP | `C59E3fwcRDxFzOqE` | actif | — | non montré |
+## Workflows de la vidéo
 
-**Le nombre total de workflows n'est pas affiché** : il n'a pas été compté.
+| Workflow | ID | Statut | Constat |
+|---|---|---|---|
+| 🤖 RapidoRH — WF1 Dispatcher Agents IA (OpenAI) | OSaoko9YezKMCEUy | actif · 22 nœuds · CRON 9 h + webhook | Conforme au schéma de la vidéo : lecture des tâches Todo par MCP RapidoRH (`get-project-tasks-tool`), agent GPT-4o avec outils MCP, passage en Done. **Mais les 8 dernières exécutions sont en erreur** (22/10 → 26/10, chaque jour à 9 h New York) : « Could not connect to your MCP server. Authentication failed » sur `rh.rapidosoftware.com/mcp/rapidorh`. **Le jeton Bearer RapidoRH a expiré** ; aucune exécution réussie conservée. |
+| MCP FoodEatUp V2 | w6dURv9azjK5rC0b | actif · 6 déclencheurs | n8n exposé comme serveur MCP (groupes d'outils) ; aucune exécution conservée |
+| RapidoATS- CV Process (parse + scoring) | 1FyhxtH8DibCi058 | actif | description : « clés en dur ($env bloqué sur cette instance) » |
+| Méga Employé IA — Tâches quotidiennes | 8rjqaG2aNFugM5Ly | non retrouvé par recherche de nom | non vérifié |
+| BraindCode Super Agent — OpenClaw MCP | C59E3fwcRDxFzOqE | actif · déclencheur MCP | 8 outils annoncés ; comportement autonome non vérifié |
 
-## À faire pour compléter
+## Mise à jour de la vidéo
 
-1. Activer N8n dans les réglages des connecteurs claude.ai pour cette conversation.
-2. Lire en lecture seule les workflows ci-dessus (nœuds, connexions, déclencheurs, dernières exécutions) et compter le total.
-3. Remplacer les schémas reconstitués par des captures réelles, en masquant les URL de webhook et les identifiants.
+La mention « non revérifié » est remplacée par « Vérifié dans n8n · 22 nœuds · en erreur depuis le 22/10 : jeton RapidoRH expiré ». La voix dit « j'ai un workflow qui récupère les tâches… » : c'est vrai sur le plan de la conception, mais il ne tourne pas en ce moment.
+
+## À corriger
+
+1. Renouveler le jeton Bearer RapidoRH (credential « Bearer Auth account ») du dispatcher.
+2. Webhook `rh-dispatcher` sans authentification : en ajouter une.
+3. **`$env` est bloqué sur l'instance**. Plusieurs workflows contournent ce blocage avec des **clés en dur** (RapidoATS, WC2026_1), à migrer vers des credentials.
+4. Archiver les ~200 `_tmp_extract`.

@@ -2,7 +2,7 @@
 
 Durée : 73 s · 1080×1920 · voix ElevenLabs Noé (eleven_v4) · sous-titres incrustés · musique + effets sonores de la série.
 
-Ton script est repris avec un seul ajout, vérifié dans RapidoCRM le 27/10/2026 : « Aujourd'hui, mon pipeline compte soixante-dix prospects… et aucune vente signée par ce système. » Les workflows n8n sont présentés sans résultat d'exécution, avec la mention « n8n non revérifié ici ».
+Ton script est repris avec un seul ajout, vérifié dans RapidoCRM le 27/10/2026 : « Aujourd'hui, mon pipeline compte soixante-dix prospects… et aucune vente signée par ce système. » Les workflows n8n ont été vérifiés le 27/10 : la mention à l'écran est « Vérifiés dans n8n : 5 workflows ProspectAI actifs ».
 
 ## Voix off
 
@@ -24,5 +24,12 @@ Et toi, tu laisserais une équipe d'agents IA préparer ta prospection ?
 
 - Vérifié : RapidoCRM `get_stats_pipeline_global` donne 70 prospects (69 « Nouveau Prospect », 1 « Qualification »), 0 gagné, 0 perdu.
 - Vérifié : les outils MCP montrés existent (`rechercher_prospects`, `prospecter_entreprise`, `ajouter_prospect_pipeline` dans RapidoCRM ; `prospection_history` dans Prospection).
-- Non vérifié : les cinq workflows n8n spécialisés. Le connecteur N8n n'est pas activé dans cette conversation.
+- **Vérifié dans n8n (27/10)** : les cinq workflows spécialisés existent et sont **actifs** :
+  - ProspectAI – Main Orchestrator (I8GtBKUrdnMhKAmp) : aucune exécution conservée ;
+  - ProspectAI – Batch Enrichment (oYwHahchXkA9j9Pb) : aucune exécution conservée ;
+  - ProspectAI – Reply Detector (XRgZp74UgyEzi2qs) : **42 exécutions, succès** (toutes les 2 h) ;
+  - ProspectAI – Follow-up Sequencer (Cig6vkgyuUWtq5Ap) : **6 exécutions, succès** ;
+  - ProspectAI – Daily Report (BHdwTEW1mDZkTkOp) : **6 exécutions, succès** (22 h UTC).
+- **Également actifs** : « RapidoCRM — Prospection Leades / Envoi mail », « RapidoCRM prospecter prospect », « RapidoCRM prospecter entreprise », « MCP Prospection », « Prospection LinkedIn », « MCP Relais — Communication et CRM ».
+- Le taux de réussite des workflows ne dit rien des réponses ni des ventes : le pipeline RapidoCRM compte 0 vente gagnée.
 - Aucune prospection, aucun envoi, aucun appel n'a été lancé.

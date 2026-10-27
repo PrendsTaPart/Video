@@ -50,3 +50,9 @@ Aucune PR n'a été fusionnée ni modifiée par cet audit.
 - Le nom de l'étudiante citée dans le CLAUDE.md du dépôt (PFE) n'apparaît pas.
 - Aucune clé ni variable secrète à l'écran.
 - Logo RapidoATS : aucun fichier officiel trouvé, donc nom écrit en typographie neutre. **À fournir** pour les prochains épisodes.
+
+## Complément n8n (vérifié le 27/10/2026)
+
+Neuf workflows RapidoATS sont actifs dans n8n : CV Process (parse + scoring), Recieve CV email, RAG Ingest, RAG Query, Request / Confirm / Cancel Interview, Telegram agent (relais WhatsApp vers le Brain).
+
+**Les descriptions de « CV Process » et « Recieve CV email » indiquent « clés en dur ($env bloqué sur cette instance) »** : clés à faire tourner et à déplacer dans des credentials n8n. Le dossier `n8n/workflows/` reste absent du dépôt : les workflows vivent seulement dans l'instance.
