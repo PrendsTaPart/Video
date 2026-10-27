@@ -1,0 +1,14 @@
+{
+  "mcp": "FoodEatUp Formation : describe_server, learn_task, get_mission(F3), get_quiz(F3), check_quiz_answer ×3, check_routine_prompt ×2 (lecture seule)",
+  "captures": [
+    "episode6-academie/captures/accueil-0.png",
+    "formations-0.png"
+  ],
+  "logos": "video-20/assets/logos (FoodEatUp, BraindCode)",
+  "photo": "braindcode-profil.jpg",
+  "poses": [
+    "presente.webp"
+  ],
+  "voix": "ElevenLabs Noé 7pDdnNI6PhXmAp0pXFZm",
+  "higgsfield": "aucun plan généré"
+}
