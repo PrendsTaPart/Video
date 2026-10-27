@@ -134,7 +134,7 @@
    },
    {
     "titre": "Tester avant de montrer",
-    "explication": "Tests de widgets et rendus « golden » : les captures de la vidéo viennent de ces tests et des fiches de store, pas de maquettes. Les captures du store viennent des tests : ce que vous montrez existe vraiment.",
+    "explication": "Tests de widgets et rendus « golden » : les captures de la vidéo viennent de ces tests et des fiches de store, pas de maquettes. Lancez les tests à chaque modification : une régression se voit tout de suite, pas devant le client.",
     "prompt": "Ajoute un test de widget par écran et un rendu golden, puis lance flutter analyze et flutter test jusqu'au vert.",
     "resultat": "flutter analyze et flutter test au vert, un rendu golden par écran.",
     "piege": "Montrer une maquette comme si l'écran était terminé."
@@ -148,7 +148,7 @@
    },
    {
     "titre": "Préparer la publication",
-    "explication": "Fiches Google Play et App Store, captures, politique de confidentialité. La publication reste une étape humaine. Fiche, captures, politique de confidentialité : préparez tout, l'envoi reste votre décision.",
+    "explication": "Fiches Google Play et App Store, captures, politique de confidentialité. La publication reste une étape humaine. Vérifiez que chaque donnée collectée par l'application figure bien dans la politique de confidentialité.",
     "prompt": "Prépare la fiche Google Play de [application] : titre, description courte et longue, 4 captures à produire depuis les tests, et la liste des données collectées pour la politique de confidentialité. Ne publie rien.",
     "resultat": "Un dossier de publication complet, prêt à relire.",
     "piege": "Annoncer une fonction « bientôt » comme si elle était disponible."
@@ -318,7 +318,7 @@
    },
    {
     "titre": "Garder l'humain aux bons endroits",
-    "explication": "Valider le scénario, les chiffres, l'accord des personnes citées et le feu vert de publication. Notez qui a validé quoi : scénario, chiffres, accords, publication.",
+    "explication": "Valider le scénario, les chiffres, l'accord des personnes citées et le feu vert de publication. Gardez une trace écrite des accords : un message suffit, pourvu qu'il soit daté.",
     "prompt": "Prépare la check-list de validation de cette vidéo : chiffres et leurs sources, personnes et marques citées avec leur accord, mentions obligatoires. Indique ce qui reste à valider par un humain.",
     "resultat": "Une check-list signée avant la publication.",
     "piege": "Confondre « prêt » (le fichier existe) et « validé » (quelqu'un l'a regardé en entier)."
@@ -368,7 +368,7 @@
   "etapes": [
    {
     "titre": "Écrire l'objectif et la règle",
-    "explication": "Un objectif précis et une règle explicite : ne contacter personne sans validation. La règle « ne contacter personne sans validation » s'écrit dans chaque demande, pas une fois au début.",
+    "explication": "Un objectif précis et une règle explicite : ne contacter personne sans validation. Répétez la règle dans chaque demande : un agent n'a pas de mémoire fiable d'une conversation à l'autre.",
     "prompt": "Analyse mes dernières prospections, identifie les nouveaux établissements et prépare une campagne adaptée à [offre]. Ne contacte personne sans ma validation.",
     "resultat": "Un objectif daté, mesurable, avec sa règle de validation.",
     "piege": "Donner un objectif vague (« trouve des clients ») sans limite."
@@ -453,7 +453,7 @@
   "etapes": [
    {
     "titre": "Écrire les missions métier",
-    "explication": "Une mission décrit une procédure réelle. Exemple : F3 « Stocks et commandes fournisseurs » avec la règle « préparer, montrer, attendre l'accord ». Une mission = une procédure réelle + une règle d'accord humain + un quiz.",
+    "explication": "Une mission décrit une procédure réelle. Exemple : F3 « Stocks et commandes fournisseurs » avec la règle « préparer, montrer, attendre l'accord ». Ajoutez trois questions de quiz à chaque mission : elles vérifient que l'agent a compris avant d'agir.",
     "prompt": "Transforme cette procédure [procédure] en mission de formation : objectif, étapes, outils autorisés, règle d'accord humain, 3 questions de quiz.",
     "resultat": "Une mission avec son objectif, ses outils autorisés et 3 questions de quiz.",
     "piege": "Écrire une mission théorique que personne n'applique."
@@ -467,7 +467,7 @@
    },
    {
     "titre": "Ajouter une mémoire validée",
-    "explication": "Préférences, objectifs, corrections : ces notes sont réinjectées dans le contexte, le modèle n'est pas réentraîné. Le savoir d'équipe est validé par un responsable. Seul un responsable valide le savoir d'équipe ; le reste reste personnel.",
+    "explication": "Préférences, objectifs, corrections : ces notes sont réinjectées dans le contexte, le modèle n'est pas réentraîné. Le savoir d'équipe est validé par un responsable. Relisez la note avant qu'elle soit enregistrée : une erreur retenue se répète ensuite à chaque conversation.",
     "prompt": "Voici une correction que je t'ai faite [correction]. Propose de la retenir comme préférence personnelle ou comme savoir d'équipe, et montre-moi le texte exact avant de l'enregistrer.",
     "resultat": "Une note de mémoire relue avant enregistrement.",
     "piege": "Croire que le modèle « apprend » : il relit des notes, rien de plus."
@@ -541,7 +541,7 @@
    },
    {
     "titre": "Partir du besoin métier",
-    "explication": "Ce que l'agent doit pouvoir faire, puis les données nécessaires, puis les outils. Partez de ce que l'agent doit faire, pas des tables de la base.",
+    "explication": "Ce que l'agent doit pouvoir faire, puis les données nécessaires, puis les outils. Pour chaque outil, notez une demande réelle d'utilisateur qui le justifie ; sans demande, pas d'outil.",
     "prompt": "Analyse ce projet Lovable. Propose les outils MCP nécessaires pour permettre à Claude de consulter les données métier, avec les bons droits d'accès et des réponses structurées.",
     "resultat": "Une liste d'outils justifiée par des tâches réelles.",
     "piege": "Exposer toute la base de données « au cas où »."
@@ -555,7 +555,7 @@
    },
    {
     "titre": "Verrouiller les permissions",
-    "explication": "OAuth, jeton de l'utilisateur transmis à la base pour que les règles RLS s'appliquent ; vérification d'authentification sur chaque outil d'écriture. Le jeton de l'utilisateur est transmis à la base : ce sont ses droits qui s'appliquent.",
+    "explication": "OAuth, jeton de l'utilisateur transmis à la base pour que les règles RLS s'appliquent ; vérification d'authentification sur chaque outil d'écriture. Testez avec deux comptes de droits différents : chacun ne doit voir que ce qui le concerne.",
     "prompt": "Vérifie que chaque outil d'écriture de ce serveur MCP contrôle l'authentification et transmet le jeton de l'utilisateur à la base, pour que les règles RLS s'appliquent. Liste les outils qui ne le font pas.",
     "resultat": "Des écritures qui respectent les droits de chaque utilisateur.",
     "piege": "Utiliser une clé administrateur côté serveur pour tous les appels."
@@ -621,7 +621,7 @@
    },
    {
     "titre": "Organiser rôles et départements",
-    "explication": "Des rôles et des permissions pour que chacun accède seulement à ce dont il a besoin. Commencez par les rôles minimum, élargissez seulement si besoin.",
+    "explication": "Des rôles et des permissions pour que chacun accède seulement à ce dont il a besoin. Commencez avec le moins de droits possible et ouvrez seulement quand un vrai besoin apparaît.",
     "prompt": "Propose les rôles et les permissions de mon équipe [équipe] : qui voit quoi, qui modifie quoi. Applique le principe du moindre accès.",
     "resultat": "Une matrice rôles × permissions validée.",
     "piege": "Donner les droits d'administrateur à tout le monde."
@@ -784,7 +784,7 @@
    },
    {
     "titre": "Programmer intelligemment",
-    "explication": "L'autopilote propose des créneaux à partir de l'historique de la chaîne. Les créneaux viennent de l'historique de la chaîne, pas d'une règle générale.",
+    "explication": "L'autopilote propose des créneaux à partir de l'historique de la chaîne. Une chaîne récente n'a pas assez d'historique : publiez régulièrement quelques semaines avant de vous fier aux créneaux proposés.",
     "prompt": "À partir de l'historique de [chaîne], propose les 5 meilleurs créneaux de la semaine prochaine et explique sur quelles données tu t'appuies. Ne programme rien.",
     "resultat": "Des créneaux justifiés par vos propres chiffres.",
     "piege": "Appliquer un horaire « idéal » trouvé sur Internet."
@@ -798,7 +798,7 @@
    },
    {
     "titre": "Vérifier les quotas avant d'agir",
-    "explication": "Un envoi consomme une part importante du quota quotidien de l'API YouTube. Vérifiez le quota avant une série d'envois : un envoi en consomme une grosse part.",
+    "explication": "Un envoi consomme une part importante du quota quotidien de l'API YouTube. Gardez une marge de quota pour corriger une vidéo publiée par erreur.",
     "prompt": "Vérifie le quota restant de l'API YouTube aujourd'hui et dis-moi combien d'envois je peux faire avant d'atteindre la limite.",
     "resultat": "Des envois planifiés sans blocage en cours de journée.",
     "piege": "Lancer une série d'envois et tomber à court de quota au milieu."
@@ -864,7 +864,7 @@
    },
    {
     "titre": "Organiser les étapes de production",
-    "explication": "Scénario, images, voix, montage : chaque étape a un statut (à produire, monté, bloqué). Chaque étape de production a un statut et un responsable.",
+    "explication": "Scénario, images, voix, montage : chaque étape a un statut (à produire, monté, bloqué). Nommez un responsable par étape : un statut sans responsable reste « à produire » indéfiniment.",
     "prompt": "Transforme ce catalogue [catalogue] en tableau de production : épisode, étape (scénario, images, voix, montage), statut (à produire, monté, bloqué), responsable, date prévue.",
     "resultat": "Un tableau de production où chaque épisode a un statut.",
     "piege": "Suivre la production de mémoire."
@@ -1012,7 +1012,7 @@
    },
    {
     "titre": "Récupérer le contexte du projet",
-    "explication": "Cahier des charges, charte, connexions MCP, prompts Lovable, Figma et Claude Code. Le contexte contient déjà la charte, le cahier des charges et les prompts : lisez-le avant de coder.",
+    "explication": "Cahier des charges, charte, connexions MCP, prompts Lovable, Figma et Claude Code. Gardez ce contexte ouvert pendant tout le projet : il sert de référence quand une décision hésite.",
     "prompt": "Récupère le contexte complet du projet [idée] : cahier des charges, charte, connexions MCP, prompts Lovable, Figma et Claude Code. Résume-le en une page.",
     "resultat": "Une page de synthèse qui sert de référence pendant tout le projet.",
     "piege": "Commencer à coder sans lire le cahier des charges."
@@ -1082,7 +1082,7 @@
    },
    {
     "titre": "Garder les preuves",
-    "explication": "Chaque exécution conserve la requête et la réponse. Une preuve = la requête exacte et la réponse exacte, horodatées.",
+    "explication": "Chaque exécution conserve la requête et la réponse. Masquez jetons et données personnelles dans les preuves : elles seront relues par d'autres personnes.",
     "prompt": "Pour chaque scénario exécuté, enregistre la requête, la réponse, la durée et le verdict. Masque les jetons et les données personnelles dans les preuves.",
     "resultat": "Un historique de preuves exploitable par un développeur.",
     "piege": "Garder des preuves qui contiennent des secrets."
@@ -1103,7 +1103,7 @@
    },
    {
     "titre": "Valider avant la production",
-    "explication": "La mise en production reste une décision humaine. La décision de mise en production reste humaine, preuves à l'appui.",
+    "explication": "La mise en production reste une décision humaine. Joignez à la décision la liste des tests passés et des risques restants.",
     "prompt": "Prépare la note de mise en production : tests passés, tickets fermés, risques restants. Ne déploie rien.",
     "resultat": "Une décision de mise en production documentée.",
     "piege": "Déployer automatiquement dès que les tests passent."
@@ -1147,7 +1147,7 @@
   "etapes": [
    {
     "titre": "Connecter RapidoCRM par MCP",
-    "explication": "Claude lit le pipeline, les rendez-vous, les devis et les factures. Vérifiez d'abord ce que le MCP sait lire : pipeline, rendez-vous, devis, factures.",
+    "explication": "Claude lit le pipeline, les rendez-vous, les devis et les factures. Utilisez un compte en lecture pour le point du matin : il n'a pas besoin de droits d'écriture.",
     "prompt": "Liste les outils RapidoCRM disponibles, en distinguant lecture et écriture, et lis le nombre de prospects par étape du pipeline.",
     "resultat": "Claude lit votre CRM et vous montre ses droits.",
     "piege": "Utiliser un compte avec tous les droits pour un simple point du matin."
@@ -1161,7 +1161,7 @@
    },
    {
     "titre": "Distinguer le réel des tests",
-    "explication": "Exclure les entrées de test avant de lire les chiffres. Les entrées de test faussent les chiffres : excluez-les avant toute lecture.",
+    "explication": "Exclure les entrées de test avant de lire les chiffres. Marquez les fiches de test d'une étiquette commune : elles se filtrent alors en un clic.",
     "prompt": "Repère dans le CRM les entrées qui ressemblent à des tests (noms « test », emails factices, montants à zéro) et recalcule les indicateurs sans elles. Ne supprime rien.",
     "resultat": "Des indicateurs calculés sur les seules données réelles.",
     "piege": "Annoncer un chiffre qui compte des fiches de test."
@@ -1455,7 +1455,7 @@
   "etapes": [
    {
     "titre": "Construire le site avec Lovable",
-    "explication": "Pages, événements, formulaires, charte du client. Partez de la charte du client et des pages qu'il modifie le plus souvent.",
+    "explication": "Pages, événements, formulaires, charte du client. Listez avec le client les modifications qu'il fait le plus souvent : ce sont elles que le MCP devra couvrir.",
     "prompt": "Crée le site de [client] avec Lovable : pages, événements, formulaires, aux couleurs de sa charte [charte]. Prévois un espace d'administration protégé.",
     "resultat": "Un site conforme à la charte, avec son administration.",
     "piege": "Commencer par les effets visuels avant les contenus."
@@ -1476,7 +1476,7 @@
    },
    {
     "titre": "Sécuriser",
-    "explication": "Journal des appels, confirmation obligatoire pour toute suppression. Toute suppression demande une confirmation explicite et laisse une trace.",
+    "explication": "Journal des appels, confirmation obligatoire pour toute suppression. Faites lire le journal au client une fois par mois : il voit ce que son assistant a modifié.",
     "prompt": "Ajoute à chaque outil d'écriture un journal (qui, quoi, quand) et une confirmation obligatoire pour toute suppression. Écris le test qui le prouve.",
     "resultat": "Un journal complet et des suppressions toujours confirmées.",
     "piege": "Permettre une suppression en un seul appel."
@@ -1642,7 +1642,7 @@
    },
    {
     "titre": "Noter et compléter la consigne",
-    "explication": "Une consigne brute obtient 0/6 ; complétée (objectif, sources, limite, rendu, critère d'arrêt, accord humain), elle obtient 6/6. Les 6 critères : objectif, sources, limite, rendu, critère d'arrêt, accord humain.",
+    "explication": "Une consigne brute obtient 0/6 ; complétée (objectif, sources, limite, rendu, critère d'arrêt, accord humain), elle obtient 6/6. Relisez chaque consigne avec cette grille avant de lancer la routine.",
     "prompt": "Objectif : éviter les ruptures. Sources : stocks et liste d'achats. Limite : préparer sans envoyer. Rendu : une commande par fournisseur. Arrêt : plus aucun produit sous le seuil. Accord : j'envoie moi-même.",
     "resultat": "Une consigne complète qui obtient 6/6.",
     "piege": "Lancer une consigne brute de deux lignes."
@@ -1962,7 +1962,7 @@
    },
    {
     "titre": "Ouvrir le mode questions",
-    "explication": "Le client interrompt, pose sa question, l'assistant répond depuis le script et l'emmène au bon passage. L'assistant répond seulement à partir du script et renvoie au bon passage.",
+    "explication": "Le client interrompt, pose sa question, l'assistant répond depuis le script et l'emmène au bon passage. Quand la réponse n'est pas dans le script, l'assistant le dit clairement et propose un rendez-vous.",
     "prompt": "Voici la question d'un prospect [question]. Réponds uniquement à partir du script de la démo, cite la scène concernée, et dis-le clairement si la réponse n'est pas dans le script.",
     "resultat": "Des réponses fiables, reliées au bon passage.",
     "piege": "Laisser l'assistant inventer une fonction absente du logiciel."
@@ -2037,14 +2037,14 @@
    },
    {
     "titre": "Organiser l'équipe d'agents",
-    "explication": "Scénariste, directeur artistique, compositeur vidéo, vérificateur légal qui peut bloquer. Le vérificateur légal peut bloquer : c'est sa raison d'être.",
+    "explication": "Scénariste, directeur artistique, compositeur vidéo, vérificateur légal qui peut bloquer. Donnez-lui une liste écrite de ce qui est interdit : promesse de gain, contenu protégé, personne identifiable sans accord.",
     "prompt": "Crée 4 agents Claude Code pour produire une capsule vidéo : scénariste, directeur artistique, compositeur, vérificateur légal. Le vérificateur peut bloquer la publication.",
     "resultat": "Une équipe d'agents où chaque contenu est vérifié avant publication.",
     "piege": "Donner au vérificateur un simple rôle consultatif."
    },
    {
     "titre": "Publier après validation",
-    "explication": "Brouillons vers le CMS, jamais de publication automatique. Le CMS reçoit des brouillons ; la publication reste manuelle.",
+    "explication": "Brouillons vers le CMS, jamais de publication automatique. Relisez la légende autant que la vidéo : c'est elle qui engage votre responsabilité.",
     "prompt": "Envoie la capsule validée dans le CMS en brouillon, avec sa légende et ses mentions. Ne programme rien.",
     "resultat": "Des brouillons prêts, publiés seulement par vous.",
     "piege": "Publier automatiquement dès que la capsule est prête."
@@ -2100,14 +2100,14 @@
   "etapes": [
    {
     "titre": "Cartographier ses workflows",
-    "explication": "Prospection, marketing, RH, stocks, recrutement : combien de connexions point à point ? Comptez les connexions point à point : chacune est une maintenance.",
+    "explication": "Prospection, marketing, RH, stocks, recrutement : combien de connexions point à point ? Notez pour chaque workflow le logiciel source, le logiciel cible et ce qui se passe s'il échoue.",
     "prompt": "Voici la liste de mes workflows [liste]. Regroupe-les par logiciel et repère ceux qu'un serveur MCP rendrait inutiles.",
     "resultat": "Une carte de vos workflows et de leurs connexions.",
     "piege": "Ajouter un workflow sans regarder ceux qui existent déjà."
    },
    {
     "titre": "Exposer chaque logiciel en MCP",
-    "explication": "CRM, CMS, logiciel métier, RH : chaque logiciel expose ses fonctions une fois pour tous les agents. Un serveur MCP par logiciel, partagé par tous les agents.",
+    "explication": "CRM, CMS, logiciel métier, RH : chaque logiciel expose ses fonctions une fois pour tous les agents. Un logiciel exposé une seule fois sert tous vos agents : une modification profite à tous.",
     "prompt": "Pour chaque logiciel de cette liste [liste], indique s'il expose déjà un serveur MCP et quels workflows il pourrait remplacer.",
     "resultat": "Une liste de logiciels exposés en MCP et des workflows simplifiés.",
     "piege": "Créer un connecteur différent par agent."
@@ -2357,7 +2357,7 @@
    },
    {
     "titre": "Garder la voix pour plus tard",
-    "explication": "L'agent vocal a son pitch et son catalogue, mais n'appelle personne tant que le numéro n'est pas connecté. Un agent vocal n'appelle personne tant que son numéro et son cadre ne sont pas validés.",
+    "explication": "L'agent vocal a son pitch et son catalogue, mais n'appelle personne tant que le numéro n'est pas connecté. Avant tout appel, faites valider le script, les horaires et le cadre légal.",
     "prompt": "Liste ce qu'il faut valider avant qu'un agent vocal appelle des prospects : numéro, script, consentement, horaires, cadre légal. Ne lance aucun appel.",
     "resultat": "Une liste de validations à faire avant tout appel.",
     "piege": "Lancer des appels automatiques sans validation juridique."
@@ -2427,7 +2427,7 @@
    },
    {
     "titre": "Reprendre le projet dans Claude Code",
-    "explication": "Le projet Lovable est relié à GitHub dans les deux sens. Claude Code le clone, lit ses règles (AGENTS.md), modifie le code, lance les tests et pousse sur la branche principale ; Lovable récupère le commit. Lisez AGENTS.md : il donne les règles du projet à respecter.",
+    "explication": "Le projet Lovable est relié à GitHub dans les deux sens. Claude Code le clone, lit ses règles (AGENTS.md), modifie le code, lance les tests et pousse sur la branche principale ; Lovable récupère le commit. Lisez AGENTS.md avant tout : il donne les règles du projet, comme ne jamais réécrire l'historique Git.",
     "prompt": "Clone [dépôt GitHub], lis AGENTS.md, puis fais l'état des lieux : routes, tables, outils MCP, tests. Ne modifie rien avant mon accord.",
     "resultat": "Un état des lieux du projet, sans modification.",
     "piege": "Réécrire l'historique Git : Lovable perd sa synchronisation."
@@ -2455,7 +2455,7 @@
    },
    {
     "titre": "Vérifier, puis mettre en production",
-    "explication": "Tests et build avant chaque envoi. Les migrations de base se jouent à part : la synchronisation Lovable ne les applique pas. Après le déploiement, on vérifie chaque page en ligne et le refus du MCP sans jeton. Après chaque synchronisation Lovable, vérifiez que vos fichiers sont toujours là.",
+    "explication": "Tests et build avant chaque envoi. Les migrations de base se jouent à part : la synchronisation Lovable ne les applique pas. Après le déploiement, on vérifie chaque page en ligne et le refus du MCP sans jeton. Après chaque synchronisation Lovable, comparez le dernier commit au vôtre : une fusion peut écraser un travail.",
     "prompt": "Après déploiement, vérifie en ligne chaque page, chaque PDF, et que /mcp répond 401 sans jeton. Compare le dernier commit de main avec le mien et signale tout fichier écrasé.",
     "resultat": "Un site vérifié en ligne, page par page.",
     "piege": "Croire qu'un déploiement réussi veut dire que tout est en ligne."
