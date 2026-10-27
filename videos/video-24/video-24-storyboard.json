@@ -1,0 +1,69 @@
+{
+  "video": "video-24",
+  "titre": "J'ai créé mon propre logiciel de recrutement avec des agents IA !",
+  "duree_s": 85,
+  "format": "1080x1920",
+  "scenes": [
+    {
+      "temps_s": "0–5,7",
+      "scene": "Accroche",
+      "visuel": "Michael surpris, CV qui volent autour, titre « Mon propre logiciel de recrutement »"
+    },
+    {
+      "temps_s": "5,7–14,5",
+      "scene": "Problème",
+      "visuel": "Étiquettes Entreprise 1/2, Offres, CV, Entretiens, Relances ; « Tout est dispersé »"
+    },
+    {
+      "temps_s": "14,5–17",
+      "scene": "Révélation",
+      "visuel": "Nom RapidoATS en typographie neutre (pas de logo officiel), « Recrutement assisté par IA »"
+    },
+    {
+      "temps_s": "17–25,3",
+      "scene": "Scénario",
+      "visuel": "Cartes BraindCode (développeur) et FoodEatUp (commercial), séparateur, badge « Données séparées par entreprise »"
+    },
+    {
+      "temps_s": "25,3–31,6",
+      "scene": "Offres",
+      "visuel": "Formulaire reconstitué (entreprise, poste, compétences, missions) + brouillon IA (RAG), Michael à l'ordinateur"
+    },
+    {
+      "temps_s": "31,6–40,7",
+      "scene": "CV",
+      "visuel": "CV fictif, compétences extraites, score 72 (ML × 0,4 + LLM × 0,6), chaîne CV→Parsing→Scoring→Triage, avertissement sur le score"
+    },
+    {
+      "temps_s": "40,7–48,9",
+      "scene": "Candidatures",
+      "visuel": "Kanban des six statuts réels, candidats fictifs, « Un humain décide · aucun rejet automatique »"
+    },
+    {
+      "temps_s": "48,9–57,5",
+      "scene": "Entretiens",
+      "visuel": "Planification, transcription, rapport PDF, avatar LiveKit : « codé · en test » ; WhatsApp : non démontré (PR #8)"
+    },
+    {
+      "temps_s": "57,5–66,3",
+      "scene": "Architecture",
+      "visuel": "CANDIDATURE → BRAIN → HANDS → CLOUD → RECRUTEUR"
+    },
+    {
+      "temps_s": "66,3–74",
+      "scene": "MCP",
+      "visuel": "10 outils classés lecture / écriture / externe, « Écriture = confirmation obligatoire », publish_job et trigger_onboarding surlignés"
+    },
+    {
+      "temps_s": "74–80,2",
+      "scene": "Conclusion",
+      "visuel": "Avant, plusieurs outils / Maintenant, mon recrutement assisté par IA"
+    },
+    {
+      "temps_s": "80,2–85",
+      "scene": "Question",
+      "visuel": "Photo de Michael, question finale, logos BraindCode, FoodEatUp, RapidoRH, RapidoSoftware"
+    }
+  ],
+  "miniature": "J'AI CRÉÉ MON RECRUTEUR IA ! · nom RapidoATS en haut · Michael au centre · pile de CV scannée par un agent IA à gauche · Kanban fictif à droite"
+}

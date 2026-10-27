@@ -1,0 +1,104 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Vidéo 24 : mon recruteur IA</title>
+<link rel="stylesheet" href="base.css">
+<style>
+:root{--bl:#03A9F5;--gr:#4CAF50;--vi:#7E57C2}
+#stage{background:radial-gradient(1000px 900px at 50% 32%,#0d3550 0%,#07131d 66%)}
+.chip{color:var(--bl)}.title b{color:var(--bl)}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.cv{position:absolute;width:210px;height:280px;background:#fff;border-radius:14px;box-shadow:0 14px 30px rgba(0,0,0,.5);padding:18px;color:#383838}
+.cv b{display:block;font-size:24px;margin-bottom:10px}.cv i{display:block;height:12px;border-radius:6px;background:#dfe5ea;margin:10px 0}
+.pi{position:absolute;padding:18px 26px;border-radius:18px;background:#10263a;border:2px solid #1f4b6e;font-weight:700;font-size:34px;box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.box{position:absolute;background:#0f2233;border:2px solid #1f4b6e;border-radius:24px;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.co{position:absolute;top:300px;width:440px;height:560px;text-align:center;padding-top:30px}
+.co .lw{width:360px;height:120px;margin:0 auto 30px;background:#fff;border-radius:18px;display:flex;align-items:center;justify-content:center}
+.co .lw img{max-width:84%;max-height:76%}.co b{font-size:40px;display:block}.co span{font-size:26px;color:#9fc3dc}
+.fr{position:absolute;left:60px;width:960px;display:flex;gap:16px;align-items:center;font-size:28px;background:#0f2233;border:2px solid #1f4b6e;border-radius:18px;padding:16px 22px}
+.fr b{flex:none;width:230px;color:var(--bl);font-size:22px;letter-spacing:2px}
+.ai{position:absolute;left:60px;width:960px;border-radius:20px;padding:20px 24px;background:linear-gradient(90deg,#0b4f7a,#3b2a6b);font-size:28px;font-weight:600}
+.ai small{display:block;font-size:20px;color:#cfe3f1;font-weight:400;margin-top:4px}
+.st{position:absolute;left:150px;width:780px;height:92px;border-radius:22px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:34px;background:#0f2233;border:2px solid #1f4b6e}
+.sk{display:inline-block;margin:6px 8px 0 0;padding:8px 16px;border-radius:999px;background:#0b4f7a;color:#d8f0ff;font-size:24px;font-weight:600}
+.col{position:absolute;top:220px;width:310px;height:540px;background:#0f2233;border:2px solid #1f4b6e;border-radius:20px;padding:14px}
+.col h4{margin:0 0 12px;font-size:24px;color:var(--bl)}
+.kc{background:#fff;color:#383838;border-radius:12px;padding:10px 12px;font-size:20px;font-weight:600;margin-bottom:10px}
+.kc span{display:block;font-size:16px;font-weight:400;color:#6b7785}
+.ds{position:absolute;left:60px;width:960px;display:flex;gap:18px;align-items:center;background:#0f2233;border:2px solid #1f4b6e;border-radius:20px;padding:16px 22px}
+.ds b{font-size:30px;display:block}.ds code{font-family:'DejaVu Sans Mono',monospace;font-size:21px;color:#9fd8ff}
+.ds em{margin-left:auto;flex:none;font-style:normal;font-weight:700;font-size:20px;border-radius:999px;padding:6px 14px}
+.ok{background:#14532d;color:#86efac}.wt{background:#4a3410;color:var(--orange)}.no{background:#4c1515;color:#fca5a5}
+.lay{position:absolute;left:140px;width:800px;height:120px;border-radius:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#0f2233;border:2px solid #1f4b6e}
+.lay b{font-size:38px;letter-spacing:2px}.lay span{font-size:23px;color:#9fc3dc}
+.ar{position:absolute;left:520px;width:40px;text-align:center;font-size:38px;color:var(--bl)}
+.tl{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:14px;font-family:'DejaVu Sans Mono',monospace;font-size:24px;background:#0f2233;border:2px solid #1f4b6e;border-radius:14px;padding:10px 18px}
+.tl em{margin-left:auto;font-style:normal;font-family:Poppins,sans-serif;font-weight:700;font-size:18px;border-radius:999px;padding:4px 12px}
+.lg{position:absolute;background:#fff;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.lg img{max-width:84%;max-height:78%}
+.nm{font-weight:700;color:#383838}.nm span{color:var(--bl)}
+.demo{position:absolute;background:#4a3410;color:var(--orange);border-radius:999px;padding:8px 20px;font-weight:700;font-size:21px}
+#logos .lp{background:#fff}
+</style></head><body>
+<div id="stage">
+  <div class="scene" id="s0"><div id="s0c"></div><img class="pose" id="s0m" src="a/po/surprise.webp" style="left:290px;top:800px;width:500px">
+    <div class="big" id="s0a" style="top:200px;font-size:74px;line-height:1.08">Mon propre<br><span style="color:var(--bl)">logiciel de recrutement</span></div></div>
+  <div class="scene" id="s1"><div class="big" id="s1a" style="top:200px;font-size:60px">Plusieurs entreprises,<br><span style="color:var(--bl)">plusieurs recrutements</span></div><div id="s1p"></div>
+    <div class="big" id="s1b" style="top:1380px;font-size:76px;color:var(--orange)">Tout est dispersé.</div></div>
+  <div class="scene" id="s2"><div class="lg" id="s2i" style="left:190px;top:620px;width:700px;height:220px;font-size:110px"><div class="nm">Rapido<span>ATS</span></div></div>
+    <div class="big" id="s2t" style="top:900px;font-size:40px;color:#9fc3dc">Recrutement assisté par IA</div>
+    <div class="real" id="s2r" style="left:70px;top:1000px;right:70px;text-align:center;color:#9fc3dc">Logo RapidoATS officiel introuvable : nom écrit en typographie neutre</div></div>
+  <div class="scene" id="s3"><div class="chip">Le scénario · données fictives</div>
+    <div class="box co" id="c0" style="left:60px"><div class="lw"><img src="a/lg/braindcode.png"></div><b>Développeur</b><span>full-stack</span></div>
+    <div class="box co" id="c1" style="left:580px"><div class="lw"><img src="a/lg/foodeatup.png"></div><b>Commercial</b><span>terrain</span></div>
+    <div id="c2" style="position:absolute;left:532px;top:280px;width:16px;height:600px;border-radius:8px;background:linear-gradient(var(--bl),var(--vi))"></div>
+    <div class="badge" id="c3" style="left:60px;right:60px;top:940px;text-align:center;font-size:34px">Données séparées par entreprise</div>
+    <img class="pose" id="pz3" src="a/po/bras-ouverts.webp" style="left:300px;top:1110px;width:480px"><div class="real" id="c4" style="left:70px;top:1050px;color:#9fc3dc">tenant déduit de l'identité · RLS Supabase · RAG par entreprise</div></div>
+  <div class="scene" id="s4"><div class="chip">1 · Créer l'offre</div>
+    <div class="fr" id="f0" style="top:200px"><b>ENTREPRISE</b>BraindCode</div>
+    <div class="fr" id="f1" style="top:300px"><b>POSTE</b>Développeur full-stack</div>
+    <div class="fr" id="f2" style="top:400px"><b>COMPÉTENCES</b>React · TypeScript · FastAPI</div>
+    <div class="fr" id="f3" style="top:500px"><b>MISSIONS</b>Faire évoluer les logiciels du groupe</div>
+    <div class="ai" id="f4" style="top:640px">✦ Brouillon d'offre rédigé par l'IA<small>à partir de la base de connaissances de l'entreprise (RAG) · relu avant publication</small></div>
+    <img class="pose" id="pz4" src="a/po/ordinateur.webp" style="left:560px;top:930px;width:480px"><div class="demo" id="f5" style="left:60px;top:820px">Reconstitution d'après le code · offre fictive</div></div>
+  <div class="scene" id="s5"><div class="chip">2 · Analyser les CV</div>
+    <div class="cv" id="v0" style="left:60px;top:200px;width:330px;height:420px"><b>Candidat A</b><span style="font-size:18px;color:#6b7785">CV fictif</span><i></i><i style="width:70%"></i><i></i><i style="width:55%"></i><i></i><i style="width:80%"></i></div>
+    <div id="v1" style="position:absolute;left:430px;top:200px;width:590px"><div style="font-size:22px;letter-spacing:3px;color:var(--bl);font-weight:700">COMPÉTENCES EXTRAITES</div>
+      <span class="sk">React</span><span class="sk">TypeScript</span><span class="sk">Python</span><span class="sk">SQL</span><span class="sk">4 ans d'expérience</span></div>
+    <div class="box" id="v2" style="left:430px;top:450px;width:590px;height:170px;text-align:center;padding-top:16px"><b style="font-size:70px;line-height:1">72</b><div style="font-size:22px;color:#9fc3dc">score d'aide à la présélection</div><code style="font-size:18px;color:#9fd8ff">ML × 0,4 + LLM × 0,6</code></div>
+    <div id="v3"></div>
+    <div class="badge" id="v4" style="left:60px;right:60px;top:1060px;text-align:center;font-size:32px;line-height:1.3">Le score aide à trier.<br>Il ne mesure pas la valeur d'une personne.</div></div>
+  <div class="scene" id="s6"><div class="chip">3 · Suivre les candidatures</div><div id="s6k"></div>
+    <img class="pose" id="pz6" src="a/po/tablette.webp" style="left:40px;top:1290px;width:400px"><div class="badge" id="k9" style="left:60px;right:60px;top:1110px;text-align:center;font-size:36px">Un humain décide · aucun rejet automatique</div>
+    <div class="real" id="k8" style="left:70px;top:1220px;color:#9fc3dc">statuts exacts de src/pages/Candidatures.tsx · candidats fictifs</div></div>
+  <div class="scene" id="s7"><div class="chip">4 · Préparer les entretiens</div>
+    <div class="ds" id="i0" style="top:200px"><div><b>Planification</b><code>schedule_interview</code></div><em class="wt">codé · en test</em></div>
+    <div class="ds" id="i1" style="top:330px"><div><b>Transcription</b><code>Whisper</code></div><em class="wt">codé · en test</em></div>
+    <div class="ds" id="i2" style="top:460px"><div><b>Rapport PDF</b><code>get_report</code></div><em class="wt">codé · en test</em></div>
+    <div class="ds" id="i3" style="top:590px"><div><b>Entretien avec avatar</b><code>LiveKit · start_avatar_interview</code></div><em class="wt">codé · en test</em></div>
+    <img class="pose" id="pz7" src="a/po/reflechit.webp" style="left:300px;top:900px;width:480px"><div class="ds" id="i4" style="top:740px;border-color:#7f1d1d"><div><b>Canal WhatsApp</b><code>correctif sécurité PR #8 non fusionné</code></div><em class="no">non démontré</em></div></div>
+  <div class="scene" id="s8"><div class="chip">L'architecture</div>
+    <div class="lay" id="a0" style="top:200px"><b>CANDIDATURE</b><span>CV fictif reçu</span></div><div class="ar" id="b0" style="top:330px">↓</div>
+    <div class="lay" id="a1" style="top:390px;border-color:var(--bl)"><b style="color:var(--bl)">BRAIN</b><span>FastAPI + FastMCP · règles métier</span></div><div class="ar" id="b1" style="top:520px">↓</div>
+    <div class="lay" id="a2" style="top:580px;border-color:var(--gr)"><b style="color:var(--gr)">HANDS</b><span>workflows n8n · parsing, scoring, alertes</span></div><div class="ar" id="b2" style="top:710px">↓</div>
+    <div class="lay" id="a3" style="top:770px;border-color:var(--vi)"><b style="color:#b39ddb">CLOUD</b><span>Supabase · PostgreSQL · pgvector · RLS</span></div><div class="ar" id="b3" style="top:900px">↓</div>
+    <div class="lay" id="a4" style="top:960px;background:linear-gradient(90deg,#0b4f7a,#3b2a6b);border:0"><b>RECRUTEUR</b><span>interface React · décision humaine</span></div></div>
+  <div class="scene" id="s9"><div class="chip">Outils MCP · garde fail-closed</div><div id="s9t"></div>
+    <div class="badge" id="m9" style="left:60px;right:60px;top:1230px;text-align:center;font-size:36px">Écriture = confirmation obligatoire</div></div>
+  <div class="scene" id="s10"><div class="big" id="s10a" style="top:540px;font-size:50px;color:#9fc3dc">Avant, plusieurs outils.</div>
+    <div class="big" id="s10b" style="top:720px;font-size:70px;line-height:1.1">Maintenant, mon<br><span style="color:var(--bl)">recrutement assisté par IA</span>.</div></div>
+  <div class="scene" id="s11"><div class="ring" id="s11p" style="left:390px;top:440px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="quote" id="s11q" style="top:880px;font-size:38px;text-align:center"><b>ET TOI ?</b>Tu laisserais une IA t'aider à organiser tes recrutements ?</div>
+    <div class="abs" id="s11l" style="left:0;right:0;top:1150px;display:flex;justify-content:center;gap:18px"><div class="lg" style="position:static;width:220px;height:130px"><img src="a/lg/braindcode.png"></div><div class="lg" style="position:static;width:220px;height:130px"><img src="a/lg/foodeatup.png"></div><div class="lg" style="position:static;width:220px;height:130px"><img src="a/lg/rapidorh.png"></div><div class="lg" style="position:static;width:220px;height:130px"><img src="a/lg/rapidosoftware.png"></div></div></div>
+  <div class="scene" id="thumb">
+    <div class="lg" style="left:290px;top:70px;width:500px;height:130px"><div class="nm" style="font-size:72px">Rapido<span>ATS</span></div></div>
+    <div class="big" style="top:240px;font-size:118px;line-height:1">J'AI CRÉÉ<br>MON <span style="color:var(--bl)">RECRUTEUR<br>IA !</span></div>
+    <div class="cv" style="left:30px;top:1100px;transform:rotate(-8deg)"><b>CV</b><i></i><i></i><i style="width:60%"></i></div>
+    <div class="cv" style="left:60px;top:1160px;transform:rotate(4deg)"><b>CV</b><i></i><i style="width:70%"></i><i></i></div>
+    <div class="cv" style="left:40px;top:1230px;transform:rotate(-2deg)"><b>CV</b><i></i><i></i><i style="width:50%"></i><div style="position:absolute;left:-10px;right:-10px;top:120px;height:8px;background:var(--bl);box-shadow:0 0 30px var(--bl)"></div><div style="position:absolute;right:-30px;bottom:-30px;width:90px;height:90px;border-radius:45px;background:linear-gradient(135deg,var(--bl),var(--vi));color:#fff;font-size:44px;display:flex;align-items:center;justify-content:center">✦</div></div>
+    <img class="pose" src="a/po/presente.webp" style="left:200px;top:720px;width:700px">
+    <div style="position:absolute;left:0;right:0;top:1300px;height:140px;background:linear-gradient(transparent,#07131d)"></div><div class="badge" style="left:90px;right:90px;top:1560px;text-align:center;font-size:44px">CV → IA → présélection → humain</div><div class="box" style="left:755px;top:1120px;width:300px;padding:14px"><div style="font-size:22px;font-weight:700;color:var(--bl);margin-bottom:8px">Entretien</div><div class="kc">Candidat A<span>BraindCode · dév.</span></div><div class="kc">Candidate B<span>FoodEatUp · commercial</span></div><div style="font-size:22px;font-weight:700;color:var(--gr);margin:8px 0">Retenu</div><div class="kc">Candidat C<span>BraindCode · dév.</span></div></div>
+  </div>
+  <div id="logos"><div class="lp"><img src="a/lg/braindcode.png" style="height:30px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>
