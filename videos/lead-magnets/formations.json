@@ -23,33 +23,45 @@
   "etapes": [
    {
     "titre": "Connecter les outils métier avec les MCP",
-    "explication": "Un serveur MCP expose les fonctions d'un logiciel (restaurant, CRM, marketing, RH) à Claude, selon des autorisations. Commencez par un seul logiciel, en lecture seule.",
-    "prompt": "Liste les outils MCP disponibles dans cette session, classe-les en lecture et en écriture, et dis-moi lesquels peuvent modifier des données."
+    "explication": "Un serveur MCP expose les fonctions d'un logiciel (restaurant, CRM, marketing, RH) à Claude, selon des autorisations. Commencez par un seul logiciel, en lecture seule. Le MCP ne donne que les droits du compte connecté : commencez par un compte qui ne peut que lire.",
+    "prompt": "Liste les outils MCP disponibles dans cette session, classe-les en lecture et en écriture, et dis-moi lesquels peuvent modifier des données.",
+    "resultat": "La liste des outils disponibles, triés entre lecture et écriture.",
+    "piege": "Brancher tous vos logiciels d'un coup : on ne sait plus quel outil a fait quoi."
    },
    {
     "titre": "Écrire les Skills : la méthode",
-    "explication": "Une Skill est un fichier SKILL.md qui décrit une procédure : étapes, règles métier, garde-fous. Exemple réel : la Skill « reappro-fournisseurs » de FoodEatUp et sa règle « Jamais de commande fournisseur sans validation explicite ».",
-    "prompt": "Rédige une Skill SKILL.md pour la procédure suivante : [procédure]. Inclus : quand l'utiliser, les étapes, les outils MCP autorisés, les garde-fous et ce qui exige mon accord."
+    "explication": "Une Skill est un fichier SKILL.md qui décrit une procédure : étapes, règles métier, garde-fous. Exemple réel : la Skill « reappro-fournisseurs » de FoodEatUp et sa règle « Jamais de commande fournisseur sans validation explicite ». Une bonne Skill tient en une page et se teste sur un cas réel avant d'être généralisée.",
+    "prompt": "Rédige une Skill SKILL.md pour la procédure suivante : [procédure]. Inclus : quand l'utiliser, les étapes, les outils MCP autorisés, les garde-fous et ce qui exige mon accord.",
+    "resultat": "Un fichier SKILL.md prêt à relire, avec ses règles et ce qui exige votre accord.",
+    "piege": "Écrire une Skill trop générale (« gérer le marketing ») qu'aucun agent ne peut appliquer."
    },
    {
     "titre": "Définir les agents par métier",
-    "explication": "Un agent = un rôle, un objectif, des compétences et des outils. Organisez-les comme un organigramme : direction, commercial, marketing, finance, restaurant.",
-    "prompt": "Propose l'organigramme de 5 agents pour mon entreprise [activité], avec pour chacun : rôle, objectif mesurable, Skills et outils MCP autorisés."
+    "explication": "Un agent = un rôle, un objectif, des compétences et des outils. Organisez-les comme un organigramme : direction, commercial, marketing, finance, restaurant. Chaque agent reçoit seulement les outils de son métier : le commercial n'a pas accès à la comptabilité.",
+    "prompt": "Propose l'organigramme de 5 agents pour mon entreprise [activité], avec pour chacun : rôle, objectif mesurable, Skills et outils MCP autorisés.",
+    "resultat": "Un organigramme d'agents avec un objectif mesurable par agent.",
+    "piege": "Créer un « super agent » qui a tous les outils : impossible à contrôler."
    },
    {
     "titre": "Enchaîner avec des workflows validés",
-    "explication": "Un workflow enchaîne des étapes avec des points de validation. Exemple : stocks bas → commande préparée → validation humaine → commande envoyée après accord.",
-    "prompt": null
+    "explication": "Un workflow enchaîne des étapes avec des points de validation. Exemple : stocks bas → commande préparée → validation humaine → commande envoyée après accord. Placez la validation humaine juste avant l'action irréversible, pas à chaque étape.",
+    "prompt": "Transforme cette procédure [procédure] en workflow : liste les étapes, indique les outils MCP utilisés à chacune et place un point de validation humaine avant toute action irréversible (envoi, paiement, publication).",
+    "resultat": "Un schéma d'enchaînement avec ses points de validation clairement placés.",
+    "piege": "Demander une validation à chaque clic : vous finirez par valider sans lire."
    },
    {
     "titre": "Ajouter la base de connaissance",
-    "explication": "La base de connaissance apporte le contexte propre à l'entreprise : offres, ton, règles. Les plugins BraindCode s'installent dans Claude Code depuis la marketplace.",
-    "prompt": "/plugin marketplace add PrendsTaPart/Plugin-Claude-MCP-BraindCode-"
+    "explication": "La base de connaissance apporte le contexte propre à l'entreprise : offres, ton, règles. Les plugins BraindCode s'installent dans Claude Code depuis la marketplace. La base de connaissance se met à jour : prévoyez qui la relit et à quelle fréquence.",
+    "prompt": "/plugin marketplace add PrendsTaPart/Plugin-Claude-MCP-BraindCode-",
+    "resultat": "Un contexte d'entreprise (offres, ton, règles) que Claude consulte avant de répondre.",
+    "piege": "Y mettre des données clients ou des secrets : la base est lue à chaque conversation."
    },
    {
     "titre": "Poser les garde-fous",
-    "explication": "Paiements, publications et suppressions restent bloqués sans votre clic (hook « garde-destructif » du plugin FoodEatUp).",
-    "prompt": null
+    "explication": "Paiements, publications et suppressions restent bloqués sans votre clic (hook « garde-destructif » du plugin FoodEatUp). Listez les actions sensibles une fois pour toutes : paiement, envoi, publication, suppression.",
+    "prompt": "Liste les outils MCP de cette session qui peuvent payer, envoyer, publier ou supprimer. Pour chacun, propose la règle de validation à appliquer et dis-moi comment la bloquer tant que je n'ai pas accepté.",
+    "resultat": "La liste des actions bloquées tant que vous n'avez pas cliqué.",
+    "piege": "Compter sur la prudence du modèle au lieu d'un blocage technique."
    }
   ],
   "garde_fous": [
@@ -62,6 +74,15 @@
    "Rédige une Skill SKILL.md pour la procédure suivante : [procédure]. Inclus : quand l'utiliser, les étapes, les outils MCP autorisés, les garde-fous et ce qui exige mon accord.",
    "Propose l'organigramme de 5 agents pour mon entreprise [activité], avec pour chacun : rôle, objectif mesurable, Skills et outils MCP autorisés.",
    "/plugin marketplace add PrendsTaPart/Plugin-Claude-MCP-BraindCode-"
+  ],
+  "objectifs": [
+   "Identifier les 5 briques d'une équipe d'agents IA et leur rôle",
+   "Rédiger une première Skill et un premier agent pour votre métier",
+   "Poser les garde-fous qui empêchent toute action sensible sans votre accord"
+  ],
+  "prerequis": [
+   "Un compte Claude (Claude Code pour installer des plugins)",
+   "Au moins un logiciel métier qui propose un serveur MCP, ou un logiciel que vous voulez connecter"
   ]
  },
  {
@@ -92,33 +113,45 @@
   "etapes": [
    {
     "titre": "Choisir des applications satellites utiles",
-    "explication": "Partir des usages terrain : borne de fidélité au comptoir, assistant HACCP vocal, caisse mobile serveur, tablette client avec menu digital.",
-    "prompt": "Liste 5 applications satellites pour [mon logiciel], avec pour chacune : utilisateur, problème résolu, 3 écrans clés et les outils MCP nécessaires."
+    "explication": "Partir des usages terrain : borne de fidélité au comptoir, assistant HACCP vocal, caisse mobile serveur, tablette client avec menu digital. Une application satellite fait une seule chose très bien, pour une seule personne.",
+    "prompt": "Liste 5 applications satellites pour [mon logiciel], avec pour chacune : utilisateur, problème résolu, 3 écrans clés et les outils MCP nécessaires.",
+    "resultat": "5 idées classées, avec leurs écrans clés et les outils MCP nécessaires.",
+    "piege": "Vouloir refaire tout le logiciel dans une application mobile."
    },
    {
     "titre": "Écrire le cahier des charges par écran",
-    "explication": "Un écran = une intention, une action principale, des états (vide, chargement, erreur). Le cahier des charges sert de contrat à Claude Code.",
-    "prompt": "Écris le cahier des charges Flutter de l'application [nom] : écrans, navigation, données lues par MCP, règles d'accès et tests attendus."
+    "explication": "Un écran = une intention, une action principale, des états (vide, chargement, erreur). Le cahier des charges sert de contrat à Claude Code. Décrivez aussi ce qui se passe sans réseau et en cas d'erreur.",
+    "prompt": "Écris le cahier des charges Flutter de l'application [nom] : écrans, navigation, données lues par MCP, règles d'accès et tests attendus.",
+    "resultat": "Un cahier des charges par écran, utilisable comme contrat par Claude Code.",
+    "piege": "Oublier les états vide, chargement et erreur : l'application semble cassée au premier souci."
    },
    {
     "titre": "Brancher les données par MCP",
-    "explication": "Les applications lisent et écrivent via les outils MCP du logiciel (ici FoodEatUp) : jamais de clé dans le code, authentification OAuth.",
-    "prompt": null
+    "explication": "Les applications lisent et écrivent via les outils MCP du logiciel (ici FoodEatUp) : jamais de clé dans le code, authentification OAuth. Le jeton d'accès se stocke dans le coffre sécurisé du téléphone, jamais dans le code.",
+    "prompt": "Branche l'application [nom] sur le MCP de [logiciel] : authentification OAuth, aucun jeton dans le code, lecture d'abord. Liste les outils appelés par écran et ce qui se passe hors connexion.",
+    "resultat": "Des écrans qui affichent les vraies données du logiciel, sans clé dans le dépôt.",
+    "piege": "Copier une clé d'API dans le code pour aller plus vite."
    },
    {
     "titre": "Tester avant de montrer",
-    "explication": "Tests de widgets et rendus « golden » : les captures de la vidéo viennent de ces tests et des fiches de store, pas de maquettes.",
-    "prompt": "Ajoute un test de widget par écran et un rendu golden, puis lance flutter analyze et flutter test jusqu'au vert."
+    "explication": "Tests de widgets et rendus « golden » : les captures de la vidéo viennent de ces tests et des fiches de store, pas de maquettes. Les captures du store viennent des tests : ce que vous montrez existe vraiment.",
+    "prompt": "Ajoute un test de widget par écran et un rendu golden, puis lance flutter analyze et flutter test jusqu'au vert.",
+    "resultat": "flutter analyze et flutter test au vert, un rendu golden par écran.",
+    "piege": "Montrer une maquette comme si l'écran était terminé."
    },
    {
     "titre": "Personnaliser par client",
-    "explication": "Chaque restaurant choisit un thème et sa charte : six styles réels sur la caisse.",
-    "prompt": null
+    "explication": "Chaque restaurant choisit un thème et sa charte : six styles réels sur la caisse. La personnalisation passe par des thèmes, pas par une copie de l'application par client.",
+    "prompt": "Ajoute un système de thèmes à l'application : couleurs, police et logo chargés depuis la configuration du client, avec un contraste AA vérifié par un test.",
+    "resultat": "Un thème par client, sans dupliquer le code.",
+    "piege": "Créer une branche du code par client : impossible à maintenir."
    },
    {
     "titre": "Préparer la publication",
-    "explication": "Fiches Google Play et App Store, captures, politique de confidentialité. La publication reste une étape humaine.",
-    "prompt": null
+    "explication": "Fiches Google Play et App Store, captures, politique de confidentialité. La publication reste une étape humaine. Fiche, captures, politique de confidentialité : préparez tout, l'envoi reste votre décision.",
+    "prompt": "Prépare la fiche Google Play de [application] : titre, description courte et longue, 4 captures à produire depuis les tests, et la liste des données collectées pour la politique de confidentialité. Ne publie rien.",
+    "resultat": "Un dossier de publication complet, prêt à relire.",
+    "piege": "Annoncer une fonction « bientôt » comme si elle était disponible."
    }
   ],
   "garde_fous": [
@@ -130,6 +163,15 @@
    "Liste 5 applications satellites pour [mon logiciel], avec pour chacune : utilisateur, problème résolu, 3 écrans clés et les outils MCP nécessaires.",
    "Écris le cahier des charges Flutter de l'application [nom] : écrans, navigation, données lues par MCP, règles d'accès et tests attendus.",
    "Ajoute un test de widget par écran et un rendu golden, puis lance flutter analyze et flutter test jusqu'au vert."
+  ],
+  "objectifs": [
+   "Choisir des applications satellites utiles autour de votre logiciel",
+   "Écrire un cahier des charges par écran exploitable par Claude Code",
+   "Tester et préparer la publication sans annoncer ce qui n'est pas fini"
+  ],
+  "prerequis": [
+   "Claude Code et l'environnement Flutter installés",
+   "Un logiciel métier qui expose ses données par MCP"
   ]
  },
  {
@@ -156,28 +198,38 @@
   "etapes": [
    {
     "titre": "Imaginer le parcours utilisateur",
-    "explication": "Découvrir → fiche → activer → ouvrir. Chaque étape a un écran et une décision.",
-    "prompt": "Dessine le parcours d'un restaurateur dans un store d'extensions : écrans, informations affichées, décision à chaque étape."
+    "explication": "Découvrir → fiche → activer → ouvrir. Chaque étape a un écran et une décision. À chaque étape, notez la question que se pose le client et la réponse que l'écran doit lui donner.",
+    "prompt": "Dessine le parcours d'un restaurateur dans un store d'extensions : écrans, informations affichées, décision à chaque étape.",
+    "resultat": "Un parcours en 4 écrans avec la décision attendue à chacun.",
+    "piege": "Commencer par l'écran technique d'activation au lieu de la découverte."
    },
    {
     "titre": "Organiser les extensions par métier",
-    "explication": "Salle, cuisine, clients, formation, IA : un classement qui parle au métier plutôt qu'à la technique.",
-    "prompt": null
+    "explication": "Salle, cuisine, clients, formation, IA : un classement qui parle au métier plutôt qu'à la technique. Classez par moment de la journée du client : c'est ainsi qu'il cherche.",
+    "prompt": "Classe ces extensions [liste] par métier du client (salle, cuisine, clients, formation, IA). Pour chaque catégorie, propose un titre et une phrase qui parle au client, sans jargon technique.",
+    "resultat": "Des catégories que le client comprend sans explication.",
+    "piege": "Classer par technologie (« API », « webhook ») : le client ne s'y retrouve pas."
    },
    {
     "titre": "Rédiger la fiche d'une extension",
-    "explication": "Captures réelles, fonctions vérifiées, personnalisation, bouton d'activation. Une fonction non livrée est marquée « bientôt ».",
-    "prompt": "Rédige la fiche store de l'extension [nom] : promesse, 5 fonctions vérifiées, prérequis, ce qui est prévu mais pas encore disponible."
+    "explication": "Captures réelles, fonctions vérifiées, personnalisation, bouton d'activation. Une fonction non livrée est marquée « bientôt ». Une fonction prévue est écrite « bientôt », jamais au présent.",
+    "prompt": "Rédige la fiche store de l'extension [nom] : promesse, 5 fonctions vérifiées, prérequis, ce qui est prévu mais pas encore disponible.",
+    "resultat": "Une fiche avec 5 fonctions vérifiées et la liste de ce qui reste prévu.",
+    "piege": "Promettre une fonction non livrée pour faire plus complet."
    },
    {
     "titre": "Penser l'écosystème MCP",
-    "explication": "Chaque extension partage le même socle : fonctions métier et connexions MCP communes.",
-    "prompt": null
+    "explication": "Chaque extension partage le même socle : fonctions métier et connexions MCP communes. Les extensions partagent les mêmes outils MCP : un agent les pilote toutes de la même façon.",
+    "prompt": "Pour chaque extension de cette liste [liste], indique les outils MCP du socle commun qu'elle utilise et ceux qu'il faudrait ajouter. Signale les doublons.",
+    "resultat": "Une carte des outils MCP partagés et des manques.",
+    "piege": "Créer un connecteur différent par extension."
    },
    {
     "titre": "Maquetter avant de coder",
-    "explication": "Le store de l'épisode est une maquette conceptuelle signalée à l'écran : on valide le parcours avant d'écrire le code.",
-    "prompt": null
+    "explication": "Le store de l'épisode est une maquette conceptuelle signalée à l'écran : on valide le parcours avant d'écrire le code. Signalez la maquette comme telle à l'écran et dans la communication.",
+    "prompt": "Crée une maquette cliquable du store dans Figma à partir de ce parcours [parcours]. Ajoute un bandeau « maquette » sur chaque écran.",
+    "resultat": "Une maquette testable par 3 clients avant tout développement.",
+    "piege": "Présenter la maquette comme un produit disponible."
    }
   ],
   "garde_fous": [
@@ -188,6 +240,15 @@
   "prompts": [
    "Dessine le parcours d'un restaurateur dans un store d'extensions : écrans, informations affichées, décision à chaque étape.",
    "Rédige la fiche store de l'extension [nom] : promesse, 5 fonctions vérifiées, prérequis, ce qui est prévu mais pas encore disponible."
+  ],
+  "objectifs": [
+   "Dessiner le parcours d'un client dans un store d'extensions",
+   "Rédiger une fiche d'extension honnête et vérifiable",
+   "Valider le concept par une maquette avant d'écrire le code"
+  ],
+  "prerequis": [
+   "Un logiciel avec plusieurs modules ou applications satellites",
+   "Figma ou un outil de maquette"
   ]
  },
  {
@@ -222,33 +283,45 @@
   "etapes": [
    {
     "titre": "Partir d'une idée et de sources réelles",
-    "explication": "Captures, démonstrations, dépôts : Claude vérifie ce qui existe vraiment avant d'écrire.",
-    "prompt": "Lis ces sources [liens], liste ce qui est vérifiable et ce qui ne l'est pas, puis propose un scénario de 90 s en 7 scènes."
+    "explication": "Captures, démonstrations, dépôts : Claude vérifie ce qui existe vraiment avant d'écrire. Séparez dans le scénario ce qui est montré de ce qui est seulement raconté.",
+    "prompt": "Lis ces sources [liens], liste ce qui est vérifiable et ce qui ne l'est pas, puis propose un scénario de 90 s en 7 scènes.",
+    "resultat": "Un scénario de 90 s en 7 scènes, chaque fait relié à sa source.",
+    "piege": "Écrire d'abord, vérifier ensuite : les chiffres faux s'installent."
    },
    {
     "titre": "Générer la voix off",
-    "explication": "Voix ElevenLabs (jamais un clone sans accord). Une seule prise, puis transcription pour caler les mots.",
-    "prompt": null
+    "explication": "Voix ElevenLabs (jamais un clone sans accord). Une seule prise, puis transcription pour caler les mots. Choisissez une voix de la bibliothèque, ou un clone uniquement avec l'accord écrit de la personne.",
+    "prompt": "Génère la voix off de ce texte [texte] avec une voix française de la bibliothèque, en une seule prise. Écris les nombres en toutes lettres pour une prononciation correcte.",
+    "resultat": "Un fichier audio propre, sans coupure ni mauvaise prononciation.",
+    "piege": "Cloner la voix de quelqu'un sans son accord écrit."
    },
    {
     "titre": "Caler les mots à la seconde",
-    "explication": "faster-whisper donne l'horodatage de chaque mot : les animations et sous-titres se calent dessus.",
-    "prompt": null
+    "explication": "faster-whisper donne l'horodatage de chaque mot : les animations et sous-titres se calent dessus. L'horodatage mot à mot sert aussi à vérifier que la voix dit bien le texte prévu.",
+    "prompt": "Transcris cette voix off avec horodatage mot à mot, puis compare-la au texte prévu [texte] et liste les mots mal prononcés ou manquants.",
+    "resultat": "Un minutage mot à mot pour caler sous-titres et animations.",
+    "piege": "Caler les sous-titres à l'oreille : ils décrochent au bout de 20 secondes."
    },
    {
     "titre": "Monter avec des recettes",
-    "explication": "Couper, enchaîner, mixer voix et musique avec ducking, incruster les sous-titres, exporter en 9:16 (recettes FFmpeg du plugin rapido-video).",
-    "prompt": "Monte la vidéo : voix à -14 LUFS, musique qui baisse sous la voix, sous-titres incrustés, export 1080×1920, plus une version de 30 s."
+    "explication": "Couper, enchaîner, mixer voix et musique avec ducking, incruster les sous-titres, exporter en 9:16 (recettes FFmpeg du plugin rapido-video). Normalisez le volume à la fin : -14 LUFS est la référence des réseaux.",
+    "prompt": "Monte la vidéo : voix à -14 LUFS, musique qui baisse sous la voix, sous-titres incrustés, export 1080×1920, plus une version de 30 s.",
+    "resultat": "Une vidéo 9:16 et sa version courte, sous-titrées et mixées.",
+    "piege": "Laisser la musique couvrir la voix."
    },
    {
     "titre": "Préparer la publication dans RapidoCMS",
-    "explication": "Bibliothèque → brouillon pour le réseau choisi → programmation dans le calendrier.",
-    "prompt": "Dépose la vidéo dans la bibliothèque RapidoCMS et crée un brouillon LinkedIn, sans programmer."
+    "explication": "Bibliothèque → brouillon pour le réseau choisi → programmation dans le calendrier. Une pièce n'est livrable que si son fichier répond depuis la bibliothèque.",
+    "prompt": "Dépose la vidéo dans la bibliothèque RapidoCMS et crée un brouillon LinkedIn, sans programmer.",
+    "resultat": "Un brouillon par réseau dans RapidoCMS, rien de programmé.",
+    "piege": "Programmer directement sans relecture humaine."
    },
    {
     "titre": "Garder l'humain aux bons endroits",
-    "explication": "Valider le scénario, les chiffres, l'accord des personnes citées et le feu vert de publication.",
-    "prompt": null
+    "explication": "Valider le scénario, les chiffres, l'accord des personnes citées et le feu vert de publication. Notez qui a validé quoi : scénario, chiffres, accords, publication.",
+    "prompt": "Prépare la check-list de validation de cette vidéo : chiffres et leurs sources, personnes et marques citées avec leur accord, mentions obligatoires. Indique ce qui reste à valider par un humain.",
+    "resultat": "Une check-list signée avant la publication.",
+    "piege": "Confondre « prêt » (le fichier existe) et « validé » (quelqu'un l'a regardé en entier)."
    }
   ],
   "garde_fous": [
@@ -260,6 +333,15 @@
    "Lis ces sources [liens], liste ce qui est vérifiable et ce qui ne l'est pas, puis propose un scénario de 90 s en 7 scènes.",
    "Monte la vidéo : voix à -14 LUFS, musique qui baisse sous la voix, sous-titres incrustés, export 1080×1920, plus une version de 30 s.",
    "Dépose la vidéo dans la bibliothèque RapidoCMS et crée un brouillon LinkedIn, sans programmer."
+  ],
+  "objectifs": [
+   "Construire une chaîne de production vidéo réutilisable",
+   "Caler voix, sous-titres et animations à la seconde",
+   "Préparer la publication sans jamais publier sans feu vert"
+  ],
+  "prerequis": [
+   "Un compte ElevenLabs et FFmpeg installé",
+   "Des sources réelles : captures, démonstrations, dépôts"
   ]
  },
  {
@@ -286,33 +368,45 @@
   "etapes": [
    {
     "titre": "Écrire l'objectif et la règle",
-    "explication": "Un objectif précis et une règle explicite : ne contacter personne sans validation.",
-    "prompt": "Analyse mes dernières prospections, identifie les nouveaux établissements et prépare une campagne adaptée à [offre]. Ne contacte personne sans ma validation."
+    "explication": "Un objectif précis et une règle explicite : ne contacter personne sans validation. La règle « ne contacter personne sans validation » s'écrit dans chaque demande, pas une fois au début.",
+    "prompt": "Analyse mes dernières prospections, identifie les nouveaux établissements et prépare une campagne adaptée à [offre]. Ne contacte personne sans ma validation.",
+    "resultat": "Un objectif daté, mesurable, avec sa règle de validation.",
+    "piege": "Donner un objectif vague (« trouve des clients ») sans limite."
    },
    {
     "titre": "Explorer régions et spécialités",
-    "explication": "Le MCP de prospection expose les régions, les spécialités et l'historique des recherches.",
-    "prompt": null
+    "explication": "Le MCP de prospection expose les régions, les spécialités et l'historique des recherches. Commencez par une région et une spécialité : on mesure mieux une petite cible.",
+    "prompt": "Liste les régions et spécialités disponibles dans l'outil de prospection, puis l'historique de mes recherches. Propose 3 cibles que je n'ai pas encore explorées, sans lancer de recherche.",
+    "resultat": "3 cibles nouvelles, avec ce qui a déjà été cherché.",
+    "piege": "Relancer une recherche déjà faite et compter deux fois les mêmes établissements."
    },
    {
     "titre": "Lire les résultats sans les confondre",
-    "explication": "200 résultats de recherche ne sont pas 200 clients. Suivez l'entonnoir : résultats → enregistrés → qualifiés → contactés → réponses → ventes.",
-    "prompt": "Construis l'entonnoir de mes prospects : résultats, enregistrés, qualifiés, contactés, réponses, ventes. Ne remplis une étape que si la donnée existe."
+    "explication": "200 résultats de recherche ne sont pas 200 clients. Suivez l'entonnoir : résultats → enregistrés → qualifiés → contactés → réponses → ventes. Chaque étape de l'entonnoir a sa propre définition : notez-la.",
+    "prompt": "Construis l'entonnoir de mes prospects : résultats, enregistrés, qualifiés, contactés, réponses, ventes. Ne remplis une étape que si la donnée existe.",
+    "resultat": "Un entonnoir où chaque étape est un vrai chiffre ou « donnée absente ».",
+    "piege": "Annoncer les résultats de recherche comme des clients."
    },
    {
     "titre": "Qualifier et dédoublonner",
-    "explication": "Vérifier les informations, comprendre l'activité, éviter les doublons avant toute approche.",
-    "prompt": null
+    "explication": "Vérifier les informations, comprendre l'activité, éviter les doublons avant toute approche. Dédoublonnez par email, puis par téléphone, puis par établissement et ville.",
+    "prompt": "Qualifie ces prospects [liste] : activité réelle, taille, pertinence pour [offre], doublons éventuels. Classe-les en « à contacter », « à vérifier », « hors cible ». Ne contacte personne.",
+    "resultat": "Une liste qualifiée et dédoublonnée.",
+    "piege": "Contacter deux fois la même personne depuis deux fiches."
    },
    {
     "titre": "Rédiger une campagne conforme",
-    "explication": "Identité de l'expéditeur, lien de désinscription, politique de confidentialité. Un SMS doit porter la mention STOP.",
-    "prompt": "Rédige un e-mail de prospection pour [cible] avec identité de l'expéditeur, lien de désinscription et lien vers la politique de confidentialité. Ne l'envoie pas."
+    "explication": "Identité de l'expéditeur, lien de désinscription, politique de confidentialité. Un SMS doit porter la mention STOP. Faites relire la campagne par quelqu'un qui n'a pas écrit le texte.",
+    "prompt": "Rédige un e-mail de prospection pour [cible] avec identité de l'expéditeur, lien de désinscription et lien vers la politique de confidentialité. Ne l'envoie pas.",
+    "resultat": "Un email et un SMS conformes, en brouillon.",
+    "piege": "Oublier le lien de désinscription ou la mention STOP."
    },
    {
     "titre": "Tester petit, mesurer, relancer",
-    "explication": "Tester sur 10 établissements, relance à J+3 validée, mesurer les réponses avant d'élargir.",
-    "prompt": null
+    "explication": "Tester sur 10 établissements, relance à J+3 validée, mesurer les réponses avant d'élargir. Mesurez les réponses, pas les envois.",
+    "prompt": "Sur ce test de 10 établissements [résultats], calcule le taux de réponse, liste les objections reçues et propose la relance à J+3 à me soumettre avant envoi.",
+    "resultat": "Une décision chiffrée : élargir, ajuster ou arrêter.",
+    "piege": "Élargir avant d'avoir mesuré le premier test."
    }
   ],
   "garde_fous": [
@@ -324,6 +418,15 @@
    "Analyse mes dernières prospections, identifie les nouveaux établissements et prépare une campagne adaptée à [offre]. Ne contacte personne sans ma validation.",
    "Construis l'entonnoir de mes prospects : résultats, enregistrés, qualifiés, contactés, réponses, ventes. Ne remplis une étape que si la donnée existe.",
    "Rédige un e-mail de prospection pour [cible] avec identité de l'expéditeur, lien de désinscription et lien vers la politique de confidentialité. Ne l'envoie pas."
+  ],
+  "objectifs": [
+   "Formuler un objectif de prospection avec une règle de validation",
+   "Lire un entonnoir de prospection sans confondre résultats et clients",
+   "Préparer une campagne conforme, testée à petite échelle"
+  ],
+  "prerequis": [
+   "Un CRM ou un outil de prospection connecté à Claude par MCP",
+   "Une offre claire et une cible définie"
   ]
  },
  {
@@ -350,28 +453,38 @@
   "etapes": [
    {
     "titre": "Écrire les missions métier",
-    "explication": "Une mission décrit une procédure réelle. Exemple : F3 « Stocks et commandes fournisseurs » avec la règle « préparer, montrer, attendre l'accord ».",
-    "prompt": "Transforme cette procédure [procédure] en mission de formation : objectif, étapes, outils autorisés, règle d'accord humain, 3 questions de quiz."
+    "explication": "Une mission décrit une procédure réelle. Exemple : F3 « Stocks et commandes fournisseurs » avec la règle « préparer, montrer, attendre l'accord ». Une mission = une procédure réelle + une règle d'accord humain + un quiz.",
+    "prompt": "Transforme cette procédure [procédure] en mission de formation : objectif, étapes, outils autorisés, règle d'accord humain, 3 questions de quiz.",
+    "resultat": "Une mission avec son objectif, ses outils autorisés et 3 questions de quiz.",
+    "piege": "Écrire une mission théorique que personne n'applique."
    },
    {
     "titre": "Connecter l'Académie à Claude par MCP",
-    "explication": "Claude consulte les formations, récupère les procédures et les applique à ses missions.",
-    "prompt": null
+    "explication": "Claude consulte les formations, récupère les procédures et les applique à ses missions. Claude lit la mission au moment de l'appliquer : pas besoin de tout lui répéter.",
+    "prompt": "Connecte-toi à l'espace de formation, liste les missions disponibles et résume la procédure de [mission] en 5 étapes, avec la règle d'accord humain.",
+    "resultat": "Claude retrouve et applique la bonne procédure.",
+    "piege": "Copier les procédures dans chaque conversation : elles divergent vite."
    },
    {
     "titre": "Ajouter une mémoire validée",
-    "explication": "Préférences, objectifs, corrections : ces notes sont réinjectées dans le contexte, le modèle n'est pas réentraîné. Le savoir d'équipe est validé par un responsable.",
-    "prompt": null
+    "explication": "Préférences, objectifs, corrections : ces notes sont réinjectées dans le contexte, le modèle n'est pas réentraîné. Le savoir d'équipe est validé par un responsable. Seul un responsable valide le savoir d'équipe ; le reste reste personnel.",
+    "prompt": "Voici une correction que je t'ai faite [correction]. Propose de la retenir comme préférence personnelle ou comme savoir d'équipe, et montre-moi le texte exact avant de l'enregistrer.",
+    "resultat": "Une note de mémoire relue avant enregistrement.",
+    "piege": "Croire que le modèle « apprend » : il relit des notes, rien de plus."
    },
    {
     "titre": "Préparer des agents spécialisés",
-    "explication": "Commercial, marketing, gestion, formation, pilotage : chaque agent a un rôle, des outils autorisés et des objectifs.",
-    "prompt": null
+    "explication": "Commercial, marketing, gestion, formation, pilotage : chaque agent a un rôle, des outils autorisés et des objectifs. Un agent spécialisé a un objectif chiffré : sans chiffre, impossible de dire s'il travaille bien.",
+    "prompt": "Pour chaque agent [liste], écris son rôle, ses outils autorisés, son objectif mesurable et ce qu'il ne doit jamais faire.",
+    "resultat": "Une fiche par agent, avec ses limites.",
+    "piege": "Donner les mêmes outils à tous les agents."
    },
    {
     "titre": "Mesurer les routines",
-    "explication": "Objectif, indicateur, critère d'arrêt. V0 → V1 après 3 exécutions ; V1 → V2 avec un KPI et 14 jours de mesures. Verdict : gardée, ajustée ou arrêtée.",
-    "prompt": "Vérifie ma routine : a-t-elle un objectif, des sources, une limite, un rendu, un critère d'arrêt et un accord humain ? Note-la sur 6 et corrige-la."
+    "explication": "Objectif, indicateur, critère d'arrêt. V0 → V1 après 3 exécutions ; V1 → V2 avec un KPI et 14 jours de mesures. Verdict : gardée, ajustée ou arrêtée. Une routine non mesurée ne passe jamais en production.",
+    "prompt": "Vérifie ma routine : a-t-elle un objectif, des sources, une limite, un rendu, un critère d'arrêt et un accord humain ? Note-la sur 6 et corrige-la.",
+    "resultat": "Une routine notée sur 6 et un verdict après 14 jours.",
+    "piege": "Juger une routine sur une seule exécution réussie."
    }
   ],
   "garde_fous": [
@@ -382,6 +495,15 @@
   "prompts": [
    "Transforme cette procédure [procédure] en mission de formation : objectif, étapes, outils autorisés, règle d'accord humain, 3 questions de quiz.",
    "Vérifie ma routine : a-t-elle un objectif, des sources, une limite, un rendu, un critère d'arrêt et un accord humain ? Note-la sur 6 et corrige-la."
+  ],
+  "objectifs": [
+   "Transformer vos procédures en missions de formation pour vos agents",
+   "Donner à Claude une mémoire validée au lieu d'une mémoire subie",
+   "Mesurer une routine avant de lui faire confiance"
+  ],
+  "prerequis": [
+   "Au moins une procédure métier écrite",
+   "Un espace de formation connecté à Claude par MCP"
   ]
  },
  {
@@ -412,33 +534,45 @@
   "etapes": [
    {
     "titre": "Connecter Lovable à Claude",
-    "explication": "Le connecteur Lovable permet de lister ses projets, lire les fichiers, parcourir l'historique, comparer des versions et envoyer des instructions à l'agent Lovable.",
-    "prompt": "Liste mes projets Lovable et retrouve [projet]. Consulte son architecture et explique comment son MCP est organisé. Ne modifie rien."
+    "explication": "Le connecteur Lovable permet de lister ses projets, lire les fichiers, parcourir l'historique, comparer des versions et envoyer des instructions à l'agent Lovable. Demandez toujours une exploration en lecture seule avant toute modification.",
+    "prompt": "Liste mes projets Lovable et retrouve [projet]. Consulte son architecture et explique comment son MCP est organisé. Ne modifie rien.",
+    "resultat": "Une description de l'architecture du projet et de son MCP.",
+    "piege": "Laisser l'agent modifier le projet dès la première demande."
    },
    {
     "titre": "Partir du besoin métier",
-    "explication": "Ce que l'agent doit pouvoir faire, puis les données nécessaires, puis les outils.",
-    "prompt": "Analyse ce projet Lovable. Propose les outils MCP nécessaires pour permettre à Claude de consulter les données métier, avec les bons droits d'accès et des réponses structurées."
+    "explication": "Ce que l'agent doit pouvoir faire, puis les données nécessaires, puis les outils. Partez de ce que l'agent doit faire, pas des tables de la base.",
+    "prompt": "Analyse ce projet Lovable. Propose les outils MCP nécessaires pour permettre à Claude de consulter les données métier, avec les bons droits d'accès et des réponses structurées.",
+    "resultat": "Une liste d'outils justifiée par des tâches réelles.",
+    "piege": "Exposer toute la base de données « au cas où »."
    },
    {
     "titre": "Un fichier par outil",
-    "explication": "Chaque outil a un nom, une description, des paramètres typés (Zod) et des annotations (lecture seule, idempotent).",
-    "prompt": null
+    "explication": "Chaque outil a un nom, une description, des paramètres typés (Zod) et des annotations (lecture seule, idempotent). La description de l'outil est écrite pour le modèle : elle dit quand l'utiliser et quand ne pas l'utiliser.",
+    "prompt": "Écris l'outil MCP [nom] dans son propre fichier : description pour le modèle, paramètres typés avec Zod, annotations lecture seule et idempotent, réponse structurée.",
+    "resultat": "Un outil autonome, lisible et testable.",
+    "piege": "Mettre plusieurs actions dans un seul outil fourre-tout."
    },
    {
     "titre": "Verrouiller les permissions",
-    "explication": "OAuth, jeton de l'utilisateur transmis à la base pour que les règles RLS s'appliquent ; vérification d'authentification sur chaque outil d'écriture.",
-    "prompt": null
+    "explication": "OAuth, jeton de l'utilisateur transmis à la base pour que les règles RLS s'appliquent ; vérification d'authentification sur chaque outil d'écriture. Le jeton de l'utilisateur est transmis à la base : ce sont ses droits qui s'appliquent.",
+    "prompt": "Vérifie que chaque outil d'écriture de ce serveur MCP contrôle l'authentification et transmet le jeton de l'utilisateur à la base, pour que les règles RLS s'appliquent. Liste les outils qui ne le font pas.",
+    "resultat": "Des écritures qui respectent les droits de chaque utilisateur.",
+    "piege": "Utiliser une clé administrateur côté serveur pour tous les appels."
    },
    {
     "titre": "Tester en lecture et en refus",
-    "explication": "Un appel en lecture doit renvoyer les vraies données ; le même serveur appelé sans jeton doit refuser (HTTP 401).",
-    "prompt": null
+    "explication": "Un appel en lecture doit renvoyer les vraies données ; le même serveur appelé sans jeton doit refuser (HTTP 401). Le test de refus est aussi important que le test de lecture.",
+    "prompt": "Appelle l'outil [outil] en lecture et montre la réponse, puis appelle le même serveur sans jeton et confirme qu'il répond 401.",
+    "resultat": "Deux preuves : lecture réussie et refus sans jeton.",
+    "piege": "Ne tester que le cas qui marche."
    },
    {
     "titre": "Distinguer deux connexions",
-    "explication": "A : développer (moi → Claude Code → connecteur Lovable → projet). B : travailler (Claude → MCP métier → application → données autorisées).",
-    "prompt": null
+    "explication": "A : développer (moi → Claude Code → connecteur Lovable → projet). B : travailler (Claude → MCP métier → application → données autorisées). Gardez deux connexions séparées : l'une pour développer, l'autre pour travailler.",
+    "prompt": "Dessine les deux connexions de mon projet : celle qui sert à développer (Claude Code et connecteur Lovable) et celle qui sert à travailler (Claude et MCP métier). Indique les droits de chacune.",
+    "resultat": "Un schéma clair des deux usages et de leurs droits.",
+    "piege": "Donner à l'agent de travail les droits du développeur."
    }
   ],
   "garde_fous": [
@@ -449,6 +583,15 @@
   "prompts": [
    "Liste mes projets Lovable et retrouve [projet]. Consulte son architecture et explique comment son MCP est organisé. Ne modifie rien.",
    "Analyse ce projet Lovable. Propose les outils MCP nécessaires pour permettre à Claude de consulter les données métier, avec les bons droits d'accès et des réponses structurées."
+  ],
+  "objectifs": [
+   "Explorer un projet Lovable depuis Claude sans rien modifier",
+   "Concevoir les outils MCP à partir du besoin métier",
+   "Tester un serveur MCP en lecture et en refus"
+  ],
+  "prerequis": [
+   "Un compte Lovable avec au moins un projet",
+   "Claude avec le connecteur Lovable activé"
   ]
  },
  {
@@ -471,28 +614,38 @@
   "etapes": [
    {
     "titre": "Structurer les projets",
-    "explication": "Chaque projet a un responsable, une équipe, des dates, un statut et des tâches priorisées (Urgent, Moyenne, Faible) en Kanban.",
-    "prompt": null
+    "explication": "Chaque projet a un responsable, une équipe, des dates, un statut et des tâches priorisées (Urgent, Moyenne, Faible) en Kanban. Une tâche sans responsable ni date n'avance pas : complétez-les avant de demander un plan à Claude.",
+    "prompt": "Liste les tâches de mes projets qui n'ont pas de responsable, pas de date ou pas de priorité, sans rien modifier.",
+    "resultat": "Des projets propres : responsable, dates, priorités.",
+    "piege": "Demander un plan du jour sur des tâches incomplètes."
    },
    {
     "titre": "Organiser rôles et départements",
-    "explication": "Des rôles et des permissions pour que chacun accède seulement à ce dont il a besoin.",
-    "prompt": null
+    "explication": "Des rôles et des permissions pour que chacun accède seulement à ce dont il a besoin. Commencez par les rôles minimum, élargissez seulement si besoin.",
+    "prompt": "Propose les rôles et les permissions de mon équipe [équipe] : qui voit quoi, qui modifie quoi. Applique le principe du moindre accès.",
+    "resultat": "Une matrice rôles × permissions validée.",
+    "piege": "Donner les droits d'administrateur à tout le monde."
    },
    {
     "titre": "Connecter RapidoRH à Claude",
-    "explication": "Le MCP RapidoRH expose la lecture des projets et des tâches.",
-    "prompt": "Analyse mes projets en cours, liste les tâches urgentes et celles en retard, et prépare le plan de la journée par personne."
+    "explication": "Le MCP RapidoRH expose la lecture des projets et des tâches. Claude lit les tâches réelles : son plan est daté et nominatif.",
+    "prompt": "Analyse mes projets en cours, liste les tâches urgentes et celles en retard, et prépare le plan de la journée par personne.",
+    "resultat": "Le plan du jour par personne, avec les urgences en tête.",
+    "piege": "Laisser Claude réattribuer les tâches sans vous le montrer."
    },
    {
     "titre": "Prévisualiser avant d'écrire",
-    "explication": "La création de tâche est montrée en aperçu, puis exécutée seulement après accord.",
-    "prompt": null
+    "explication": "La création de tâche est montrée en aperçu, puis exécutée seulement après accord. L'aperçu montre exactement ce qui sera créé : relisez-le.",
+    "prompt": "Prépare la création de ces tâches [tâches] dans le projet [projet] : montre-moi l'aperçu complet (titre, responsable, échéance, priorité) et attends mon accord.",
+    "resultat": "Des tâches créées seulement après votre accord.",
+    "piege": "Accepter un aperçu sans le lire."
    },
    {
     "titre": "Ajouter un orchestrateur pour les routines",
-    "explication": "RapidoRH n'a pas de planificateur : une routine quotidienne passe par Claude Code, Plan'It ou n8n.",
-    "prompt": null
+    "explication": "RapidoRH n'a pas de planificateur : une routine quotidienne passe par Claude Code, Plan'It ou n8n. RapidoRH ne se déclenche pas seul : c'est l'orchestrateur qui lance la routine.",
+    "prompt": "Écris la routine quotidienne de 8 h : lire les tâches urgentes et en retard dans RapidoRH, préparer le plan du jour, me l'envoyer pour validation. Indique l'orchestrateur utilisé et le critère d'arrêt.",
+    "resultat": "Une routine planifiée avec son objectif et sa limite.",
+    "piege": "Croire que l'outil métier exécute la routine tout seul."
    }
   ],
   "garde_fous": [
@@ -502,6 +655,15 @@
   "etat_reel": "Démonstration sur le code réel lancé en local avec un jeu de démo fictif ; 24 outils MCP exposés. RapidoRH n'est pas un orchestrateur autonome.",
   "prompts": [
    "Analyse mes projets en cours, liste les tâches urgentes et celles en retard, et prépare le plan de la journée par personne."
+  ],
+  "objectifs": [
+   "Structurer projets, tâches et équipes dans un seul outil",
+   "Faire préparer le plan du jour par Claude à partir des vraies tâches",
+   "Ajouter une routine quotidienne avec un orchestrateur"
+  ],
+  "prerequis": [
+   "Un compte RapidoRH avec des projets",
+   "Claude connecté au MCP RapidoRH"
   ]
  },
  {
@@ -532,28 +694,38 @@
   "etapes": [
    {
     "titre": "Cadrer à partir du support existant",
-    "explication": "Recettes, formation, allergènes : inventorier le contenu réel avant de dessiner.",
-    "prompt": null
+    "explication": "Recettes, formation, allergènes : inventorier le contenu réel avant de dessiner. Comptez les contenus réels (fiches, catégories, allergènes) : ils fixent la structure de l'application.",
+    "prompt": "Voici le sommaire du support actuel [sommaire]. Fais l'inventaire : nombre de fiches par catégorie, champs présents sur chaque fiche, informations manquantes. Propose la structure de données de l'application.",
+    "resultat": "Un inventaire chiffré et une structure de données validée par le client.",
+    "piege": "Dessiner les écrans avant de connaître le contenu."
    },
    {
     "titre": "Construire l'application avec Lovable",
-    "explication": "Catégories, recherche instantanée, fiches, allergènes, mode pas à pas, mode rush lisible à 1 m.",
-    "prompt": "Crée une application tablette de fiches recettes : catégories, recherche tolérante, fiche (ingrédients, quantités, allergènes), mode pas à pas, mode rush."
+    "explication": "Catégories, recherche instantanée, fiches, allergènes, mode pas à pas, mode rush lisible à 1 m. Pensez à l'usage réel : mains occupées, lecture à distance, rush du service.",
+    "prompt": "Crée une application tablette de fiches recettes : catégories, recherche tolérante, fiche (ingrédients, quantités, allergènes), mode pas à pas, mode rush.",
+    "resultat": "Une application tactile utilisable au comptoir.",
+    "piege": "Concevoir pour un bureau alors qu'on l'utilise debout, en plein service."
    },
    {
     "titre": "Connecter les données métier",
-    "explication": "Les recettes viennent du logiciel métier par MCP (lecture), sans exposer prix ni coûts.",
-    "prompt": null
+    "explication": "Les recettes viennent du logiciel métier par MCP (lecture), sans exposer prix ni coûts. L'application lit les données ; elle n'affiche ni prix ni coûts si ce n'est pas son rôle.",
+    "prompt": "Connecte l'application aux recettes du logiciel métier par MCP, en lecture seule. Affiche ingrédients, quantités et allergènes ; n'affiche ni prix ni coûts.",
+    "resultat": "Des fiches toujours à jour, sans double saisie.",
+    "piege": "Recopier les données à la main : elles divergent dès la première modification."
    },
    {
     "titre": "Générer les documents depuis un modèle Figma",
-    "explication": "Fiches PDF équipe produites dans le navigateur, au design de la maquette Figma.",
-    "prompt": null
+    "explication": "Fiches PDF équipe produites dans le navigateur, au design de la maquette Figma. Le modèle Figma est la référence : les PDF générés doivent lui ressembler au pixel près.",
+    "prompt": "Génère dans le navigateur la fiche PDF de [recette] au design de la maquette Figma [lien] : mêmes marges, mêmes polices, mêmes couleurs.",
+    "resultat": "Des fiches PDF fidèles à la maquette, générées à la demande.",
+    "piege": "Refaire la mise en page à la main pour chaque fiche."
    },
    {
     "titre": "Tester avec un banc de test",
-    "explication": "Données simulées, tests de bout en bout : aucune donnée de production touchée.",
-    "prompt": null
+    "explication": "Données simulées, tests de bout en bout : aucune donnée de production touchée. Le banc de test reproduit la production avec des données fictives.",
+    "prompt": "Crée un banc de test avec des données simulées et des tests de bout en bout pour les parcours principaux. Vérifie qu'aucun test n'appelle la production.",
+    "resultat": "Des tests verts sans aucune donnée de production touchée.",
+    "piege": "Tester directement sur les données du client."
    }
   ],
   "garde_fous": [
@@ -563,6 +735,15 @@
   "etat_reel": "Projet client facturé 2 000 € ; le client n'est pas nommé (nom de démonstration « PEMA Coffee Shop »). Démo sur l'application réelle lancée en local avec son banc de test.",
   "prompts": [
    "Crée une application tablette de fiches recettes : catégories, recherche tolérante, fiche (ingrédients, quantités, allergènes), mode pas à pas, mode rush."
+  ],
+  "objectifs": [
+   "Cadrer une application client à partir de son support existant",
+   "Construire et connecter l'application aux données métier",
+   "Livrer des documents au design de la maquette et tester sans toucher la production"
+  ],
+  "prerequis": [
+   "Le support actuel du client (classeur, fichiers, procédures)",
+   "Un compte Lovable et l'accès en lecture aux données métier"
   ]
  },
  {
@@ -589,28 +770,38 @@
   "etapes": [
    {
     "titre": "Centraliser les chaînes",
-    "explication": "Une seule interface pour les vidéos, titres, descriptions, historique et calendrier.",
-    "prompt": null
+    "explication": "Une seule interface pour les vidéos, titres, descriptions, historique et calendrier. Une interface unique évite de publier deux fois la même vidéo sur deux chaînes.",
+    "prompt": "Liste mes chaînes YouTube, leur nombre de vidéos et les 5 dernières publications de chacune, sans rien modifier.",
+    "resultat": "Une vue d'ensemble de toutes vos chaînes.",
+    "piege": "Gérer chaque chaîne dans un onglet différent."
    },
    {
     "titre": "Connecter le MCP YouTube",
-    "explication": "Les agents consultent les chaînes, récupèrent les vidéos et préparent les actions depuis Claude.",
-    "prompt": "Liste mes chaînes YouTube et mes 10 dernières vidéos, puis propose 3 titres plus clairs pour la moins vue, sans rien modifier."
+    "explication": "Les agents consultent les chaînes, récupèrent les vidéos et préparent les actions depuis Claude. Commencez par la lecture : titres, descriptions, statistiques.",
+    "prompt": "Liste mes chaînes YouTube et mes 10 dernières vidéos, puis propose 3 titres plus clairs pour la moins vue, sans rien modifier.",
+    "resultat": "Des propositions de titres basées sur vos vidéos réelles.",
+    "piege": "Laisser l'agent modifier les métadonnées sans relecture."
    },
    {
     "titre": "Programmer intelligemment",
-    "explication": "L'autopilote propose des créneaux à partir de l'historique de la chaîne.",
-    "prompt": null
+    "explication": "L'autopilote propose des créneaux à partir de l'historique de la chaîne. Les créneaux viennent de l'historique de la chaîne, pas d'une règle générale.",
+    "prompt": "À partir de l'historique de [chaîne], propose les 5 meilleurs créneaux de la semaine prochaine et explique sur quelles données tu t'appuies. Ne programme rien.",
+    "resultat": "Des créneaux justifiés par vos propres chiffres.",
+    "piege": "Appliquer un horaire « idéal » trouvé sur Internet."
    },
    {
     "titre": "Exploiter les statistiques",
-    "explication": "Vues, interactions, performances : en tirer les prochaines décisions.",
-    "prompt": null
+    "explication": "Vues, interactions, performances : en tirer les prochaines décisions. Comparez des vidéos comparables : même format, même durée.",
+    "prompt": "Compare mes 10 derniers Shorts : vues, rétention, interactions. Dégage 3 enseignements et une action pour la prochaine vidéo.",
+    "resultat": "3 décisions concrètes pour les prochaines vidéos.",
+    "piege": "Tirer des conclusions sur une seule vidéo."
    },
    {
     "titre": "Vérifier les quotas avant d'agir",
-    "explication": "Un envoi consomme une part importante du quota quotidien de l'API YouTube.",
-    "prompt": null
+    "explication": "Un envoi consomme une part importante du quota quotidien de l'API YouTube. Vérifiez le quota avant une série d'envois : un envoi en consomme une grosse part.",
+    "prompt": "Vérifie le quota restant de l'API YouTube aujourd'hui et dis-moi combien d'envois je peux faire avant d'atteindre la limite.",
+    "resultat": "Des envois planifiés sans blocage en cours de journée.",
+    "piege": "Lancer une série d'envois et tomber à court de quota au milieu."
    }
   ],
   "garde_fous": [
@@ -620,6 +811,15 @@
   "etat_reel": "Le MCP public comptait 86 outils. Aucun outil d'écriture n'a été appelé pendant l'audit.",
   "prompts": [
    "Liste mes chaînes YouTube et mes 10 dernières vidéos, puis propose 3 titres plus clairs pour la moins vue, sans rien modifier."
+  ],
+  "objectifs": [
+   "Centraliser plusieurs chaînes YouTube dans une seule interface",
+   "Faire préparer titres, créneaux et analyses par vos agents",
+   "Respecter les quotas et garder la main sur la publication"
+  ],
+  "prerequis": [
+   "Au moins une chaîne YouTube connectée",
+   "Claude connecté au MCP YouTube"
   ]
  },
  {
@@ -650,28 +850,38 @@
   "etapes": [
    {
     "titre": "Définir les séries",
-    "explication": "Quelques séries avec chacune une promesse et un public.",
-    "prompt": null
+    "explication": "Quelques séries avec chacune une promesse et un public. Une série = une promesse que chaque épisode tient.",
+    "prompt": "Propose 5 séries pour [entreprise] : nom, promesse en une phrase, public, format et fréquence. Une série doit pouvoir tenir 30 épisodes.",
+    "resultat": "Quelques séries claires, chacune avec sa promesse.",
+    "piege": "Une seule série fourre-tout qui parle de tout."
    },
    {
     "titre": "Écrire le catalogue",
-    "explication": "Pour chaque épisode : titre, accroche, punchline.",
-    "prompt": "Écris 30 épisodes pour la série [nom] : titre, accroche de 8 mots, punchline, et le message à retenir."
+    "explication": "Pour chaque épisode : titre, accroche, punchline. L'accroche se lit en une seconde : 8 mots maximum.",
+    "prompt": "Écris 30 épisodes pour la série [nom] : titre, accroche de 8 mots, punchline, et le message à retenir.",
+    "resultat": "Un catalogue d'épisodes prêt à être produit.",
+    "piege": "Écrire des titres sans accroche ni message à retenir."
    },
    {
     "titre": "Organiser les étapes de production",
-    "explication": "Scénario, images, voix, montage : chaque étape a un statut (à produire, monté, bloqué).",
-    "prompt": null
+    "explication": "Scénario, images, voix, montage : chaque étape a un statut (à produire, monté, bloqué). Chaque étape de production a un statut et un responsable.",
+    "prompt": "Transforme ce catalogue [catalogue] en tableau de production : épisode, étape (scénario, images, voix, montage), statut (à produire, monté, bloqué), responsable, date prévue.",
+    "resultat": "Un tableau de production où chaque épisode a un statut.",
+    "piege": "Suivre la production de mémoire."
    },
    {
     "titre": "Suivre l'avancement honnêtement",
-    "explication": "« Posé au catalogue » n'est pas « produit ». Comptez les épisodes montés.",
-    "prompt": null
+    "explication": "« Posé au catalogue » n'est pas « produit ». Comptez les épisodes montés. Comptez ce qui est monté, pas ce qui est écrit.",
+    "prompt": "À partir de ce tableau [tableau], compte les épisodes au catalogue, montés, à produire et bloqués, et liste les raisons des blocages.",
+    "resultat": "Un état d'avancement honnête.",
+    "piege": "Annoncer « 365 vidéos » quand elles ne sont qu'écrites."
    },
    {
     "titre": "Garder le temps pour décider",
-    "explication": "Le plus long n'est plus de produire : c'est de choisir quoi raconter.",
-    "prompt": null
+    "explication": "Le plus long n'est plus de produire : c'est de choisir quoi raconter. Gardez du temps chaque semaine pour choisir les sujets : c'est là que se fait la qualité.",
+    "prompt": "Parmi ces épisodes [liste], classe les 10 plus utiles pour ma cible ce mois-ci et explique pourquoi.",
+    "resultat": "Un ordre de production qui sert vos objectifs.",
+    "piege": "Produire dans l'ordre d'écriture au lieu de l'ordre d'importance."
    }
   ],
   "garde_fous": [
@@ -680,6 +890,15 @@
   "etat_reel": "Relevé du projet : 367 épisodes au catalogue (5 séries), 156 montés, 184 à produire, 27 bloqués. La durée « deux jours » vient du récit de Michael.",
   "prompts": [
    "Écris 30 épisodes pour la série [nom] : titre, accroche de 8 mots, punchline, et le message à retenir."
+  ],
+  "objectifs": [
+   "Définir des séries avec une promesse et un public",
+   "Écrire un catalogue d'épisodes exploitable par une équipe de production",
+   "Suivre l'avancement réel sans confondre écrit et produit"
+  ],
+  "prerequis": [
+   "Une ligne éditoriale (thèmes, cible)",
+   "Un outil de suivi : tableur ou application"
   ]
  },
  {
@@ -706,28 +925,38 @@
   "etapes": [
    {
     "titre": "Connecter Figma et la bibliothèque d'images",
-    "explication": "Claude récupère les images autorisées et travaille directement dans le fichier.",
-    "prompt": null
+    "explication": "Claude récupère les images autorisées et travaille directement dans le fichier. N'utilisez que des images autorisées : vos captures, vos illustrations, votre bibliothèque.",
+    "prompt": "Liste les images disponibles dans la bibliothèque autorisée et dans le fichier Figma [fichier], avec leur source. Signale celles dont l'origine est inconnue.",
+    "resultat": "Une bibliothèque d'images dont chaque source est connue.",
+    "piege": "Récupérer des images sur Internet sans en connaître les droits."
    },
    {
     "titre": "Scénariser la BD",
-    "explication": "Personnages, planches, cases : l'histoire au service du message.",
-    "prompt": "Écris le scénario d'une BD de 12 planches qui explique [logiciel] à un nouvel employé : personnages, planche par planche, texte des bulles."
+    "explication": "Personnages, planches, cases : l'histoire au service du message. Une planche = une idée ; le personnage vit la situation de votre client.",
+    "prompt": "Écris le scénario d'une BD de 12 planches qui explique [logiciel] à un nouvel employé : personnages, planche par planche, texte des bulles.",
+    "resultat": "Un scénario découpé en planches et en bulles.",
+    "piege": "Faire une BD publicitaire au lieu de raconter une vraie situation."
    },
    {
     "titre": "Documenter les écrans du logiciel",
-    "explication": "Prendre une commande, encaisser, clôturer : écran, explication, illustration.",
-    "prompt": "Rédige la page de documentation de l'écran [écran] : but, étapes numérotées, erreurs fréquentes, astuce."
+    "explication": "Prendre une commande, encaisser, clôturer : écran, explication, illustration. La documentation suit le geste de l'utilisateur, écran par écran.",
+    "prompt": "Rédige la page de documentation de l'écran [écran] : but, étapes numérotées, erreurs fréquentes, astuce.",
+    "resultat": "Une page de documentation par écran, avec ses erreurs fréquentes.",
+    "piege": "Documenter les menus au lieu des tâches."
    },
    {
     "titre": "Assembler dans Figma",
-    "explication": "Pages A4, gabarits, atlas des écrans, catalogue de prompts.",
-    "prompt": null
+    "explication": "Pages A4, gabarits, atlas des écrans, catalogue de prompts. Un gabarit par type de page garantit la cohérence sur des dizaines de pages.",
+    "prompt": "Crée dans Figma les gabarits A4 du document : couverture, planche de BD, page de documentation, atlas des écrans, catalogue de prompts. Utilise les couleurs et la police de la charte.",
+    "resultat": "Un document assemblé à partir de gabarits communs.",
+    "piege": "Mettre en page chaque page différemment."
    },
    {
     "titre": "Écarter ce qui n'est pas autorisé",
-    "explication": "Images d'un client sans accord : retirées.",
-    "prompt": null
+    "explication": "Images d'un client sans accord : retirées. En cas de doute sur un droit d'image, on retire.",
+    "prompt": "Passe en revue toutes les images du document et liste celles qui montrent un client, une marque tierce ou une personne identifiable. Propose de les remplacer ou de les retirer.",
+    "resultat": "Un document sans image non autorisée.",
+    "piege": "Garder une image d'un client parce qu'elle est belle."
    }
   ],
   "garde_fous": [
@@ -737,6 +966,15 @@
   "prompts": [
    "Écris le scénario d'une BD de 12 planches qui explique [logiciel] à un nouvel employé : personnages, planche par planche, texte des bulles.",
    "Rédige la page de documentation de l'écran [écran] : but, étapes numérotées, erreurs fréquentes, astuce."
+  ],
+  "objectifs": [
+   "Faire travailler Claude directement dans un fichier Figma",
+   "Écrire une BD et une documentation qui expliquent le logiciel",
+   "Assembler un document cohérent en respectant les droits d'image"
+  ],
+  "prerequis": [
+   "Un compte Figma et le connecteur Figma dans Claude",
+   "Les captures d'écran du logiciel à documenter"
   ]
  },
  {
@@ -767,28 +1005,38 @@
   "etapes": [
    {
     "titre": "Choisir une idée dans le catalogue",
-    "explication": "100 idées d'extensions autour des logiciels Rapido et FoodEatUp.",
-    "prompt": null
+    "explication": "100 idées d'extensions autour des logiciels Rapido et FoodEatUp. Choisissez une idée liée à un logiciel que vous connaissez : vous testerez mieux.",
+    "prompt": "Liste les idées disponibles dans le catalogue BraindCode Build autour de [logiciel], avec leur statut. Propose les 3 plus adaptées à mon profil [profil].",
+    "resultat": "Une idée choisie, avec son logiciel de référence.",
+    "piege": "Choisir l'idée la plus ambitieuse pour un premier projet."
    },
    {
     "titre": "Récupérer le contexte du projet",
-    "explication": "Cahier des charges, charte, connexions MCP, prompts Lovable, Figma et Claude Code.",
-    "prompt": null
+    "explication": "Cahier des charges, charte, connexions MCP, prompts Lovable, Figma et Claude Code. Le contexte contient déjà la charte, le cahier des charges et les prompts : lisez-le avant de coder.",
+    "prompt": "Récupère le contexte complet du projet [idée] : cahier des charges, charte, connexions MCP, prompts Lovable, Figma et Claude Code. Résume-le en une page.",
+    "resultat": "Une page de synthèse qui sert de référence pendant tout le projet.",
+    "piege": "Commencer à coder sans lire le cahier des charges."
    },
    {
     "titre": "Suivre le plan d'exécution",
-    "explication": "Étape par étape : démarrer une étape, exécuter le prompt dans Lovable, valider l'étape.",
-    "prompt": null
+    "explication": "Étape par étape : démarrer une étape, exécuter le prompt dans Lovable, valider l'étape. Une étape à la fois : on démarre, on exécute, on valide, puis on passe à la suivante.",
+    "prompt": "Montre-moi le plan d'exécution du projet, démarre la première étape et exécute son prompt dans Lovable. Arrête-toi avant de la valider.",
+    "resultat": "Des étapes terminées et validées une par une.",
+    "piege": "Enchaîner toutes les étapes sans vérifier le résultat."
    },
    {
     "titre": "Demander une validation humaine",
-    "explication": "Connexion OAuth, clés de paiement, mise en ligne : un humain fait la manipulation.",
-    "prompt": null
+    "explication": "Connexion OAuth, clés de paiement, mise en ligne : un humain fait la manipulation. Tout ce qui touche à un secret ou à l'argent passe par un humain.",
+    "prompt": "Liste les étapes du projet qui demandent une connexion OAuth, une clé, un paiement ou une mise en ligne, et prépare la demande de validation humaine pour chacune.",
+    "resultat": "Des demandes de validation claires, sans aucun secret qui transite.",
+    "piege": "Coller une clé d'API dans la conversation."
    },
    {
     "titre": "Publier et présenter",
-    "explication": "Vérifier que le projet est prêt avant de le rendre public, puis le présenter au demoday.",
-    "prompt": null
+    "explication": "Vérifier que le projet est prêt avant de le rendre public, puis le présenter au demoday. Avant de publier, vérifiez la liste de contrôle de publication.",
+    "prompt": "Vérifie si le projet est prêt à être publié et liste ce qui manque. Prépare ensuite un pitch de 2 minutes pour le demoday.",
+    "resultat": "Un projet publié et un pitch prêt.",
+    "piege": "Publier une idée « à construire » comme une application terminée."
    }
   ],
   "garde_fous": [
@@ -796,7 +1044,16 @@
    "Une idée « à construire » n'est pas une application terminée."
   ],
   "etat_reel": "Catalogue de 100 idées ; les 5 idées vedettes étaient au statut « à construire » au moment de l'épisode.",
-  "prompts": []
+  "prompts": [],
+  "objectifs": [
+   "Choisir une idée d'application et récupérer tout son contexte",
+   "Avancer étape par étape avec Claude Code et Lovable",
+   "Savoir quand passer la main à un humain"
+  ],
+  "prerequis": [
+   "Un compte BraindCode Build",
+   "Claude Code et un compte Lovable"
+  ]
  },
  {
   "episode": 14,
@@ -818,28 +1075,38 @@
   "etapes": [
    {
     "titre": "Écrire des scénarios",
-    "explication": "Un scénario appelle un outil MCP ou une API et compare la réponse au résultat attendu : code, valeur JSON, texte.",
-    "prompt": "Écris 10 scénarios de test pour l'outil MCP [outil] : entrée, résultat attendu, cas d'erreur."
+    "explication": "Un scénario appelle un outil MCP ou une API et compare la réponse au résultat attendu : code, valeur JSON, texte. Testez aussi les cas d'erreur : paramètre manquant, droit insuffisant, valeur hors limite.",
+    "prompt": "Écris 10 scénarios de test pour l'outil MCP [outil] : entrée, résultat attendu, cas d'erreur.",
+    "resultat": "Une série de scénarios couvrant cas normaux et cas d'erreur.",
+    "piege": "Ne tester que les cas où tout fonctionne."
    },
    {
     "titre": "Garder les preuves",
-    "explication": "Chaque exécution conserve la requête et la réponse.",
-    "prompt": null
+    "explication": "Chaque exécution conserve la requête et la réponse. Une preuve = la requête exacte et la réponse exacte, horodatées.",
+    "prompt": "Pour chaque scénario exécuté, enregistre la requête, la réponse, la durée et le verdict. Masque les jetons et les données personnelles dans les preuves.",
+    "resultat": "Un historique de preuves exploitable par un développeur.",
+    "piege": "Garder des preuves qui contiennent des secrets."
    },
    {
     "titre": "Ouvrir un ticket avec un prompt de débogage",
-    "explication": "Un test en échec devient un ticket avec ses preuves et un prompt pour Claude Code.",
-    "prompt": "Voici un test en échec et ses preuves : [preuves]. Trouve la cause, corrige sur une branche, ajoute un test qui reproduit le bug."
+    "explication": "Un test en échec devient un ticket avec ses preuves et un prompt pour Claude Code. Le ticket doit permettre de reproduire le bug sans vous.",
+    "prompt": "Voici un test en échec et ses preuves : [preuves]. Trouve la cause, corrige sur une branche, ajoute un test qui reproduit le bug.",
+    "resultat": "Un ticket complet, prêt pour Claude Code.",
+    "piege": "Écrire « ça ne marche pas » sans les preuves."
    },
    {
     "titre": "Rejouer jusqu'au vert",
-    "explication": "Les tests repartent après correction : tant que ça ne passe pas, la boucle continue.",
-    "prompt": null
+    "explication": "Les tests repartent après correction : tant que ça ne passe pas, la boucle continue. Après chaque correction, relancez toute la série : une correction peut casser autre chose.",
+    "prompt": "Relance tous les scénarios après la correction de [ticket] et compare avec la dernière exécution : ce qui est réparé, ce qui reste en échec, ce qui a régressé.",
+    "resultat": "Une série entièrement verte, régressions comprises.",
+    "piege": "Relancer seulement le test corrigé."
    },
    {
     "titre": "Valider avant la production",
-    "explication": "La mise en production reste une décision humaine.",
-    "prompt": null
+    "explication": "La mise en production reste une décision humaine. La décision de mise en production reste humaine, preuves à l'appui.",
+    "prompt": "Prépare la note de mise en production : tests passés, tickets fermés, risques restants. Ne déploie rien.",
+    "resultat": "Une décision de mise en production documentée.",
+    "piege": "Déployer automatiquement dès que les tests passent."
    }
   ],
   "garde_fous": [
@@ -849,6 +1116,15 @@
   "prompts": [
    "Écris 10 scénarios de test pour l'outil MCP [outil] : entrée, résultat attendu, cas d'erreur.",
    "Voici un test en échec et ses preuves : [preuves]. Trouve la cause, corrige sur une branche, ajoute un test qui reproduit le bug."
+  ],
+  "objectifs": [
+   "Écrire des scénarios de test pour vos outils MCP",
+   "Transformer chaque échec en ticket avec preuves et prompt de débogage",
+   "Rejouer jusqu'au vert avant toute mise en production"
+  ],
+  "prerequis": [
+   "Un serveur MCP ou une API à tester",
+   "Claude Code pour corriger"
   ]
  },
  {
@@ -871,28 +1147,38 @@
   "etapes": [
    {
     "titre": "Connecter RapidoCRM par MCP",
-    "explication": "Claude lit le pipeline, les rendez-vous, les devis et les factures.",
-    "prompt": null
+    "explication": "Claude lit le pipeline, les rendez-vous, les devis et les factures. Vérifiez d'abord ce que le MCP sait lire : pipeline, rendez-vous, devis, factures.",
+    "prompt": "Liste les outils RapidoCRM disponibles, en distinguant lecture et écriture, et lis le nombre de prospects par étape du pipeline.",
+    "resultat": "Claude lit votre CRM et vous montre ses droits.",
+    "piege": "Utiliser un compte avec tous les droits pour un simple point du matin."
    },
    {
     "titre": "Faire le point du matin",
-    "explication": "Indicateurs, pipeline, agenda du jour.",
-    "prompt": "Fais mon point du matin dans RapidoCRM : prospects par étape, rendez-vous de la semaine, devis en attente, factures à suivre."
+    "explication": "Indicateurs, pipeline, agenda du jour. Le même point chaque matin permet de voir les tendances.",
+    "prompt": "Fais mon point du matin dans RapidoCRM : prospects par étape, rendez-vous de la semaine, devis en attente, factures à suivre.",
+    "resultat": "Un point du matin en 5 lignes, à la même heure chaque jour.",
+    "piege": "Demander un point différent chaque jour : impossible de comparer."
    },
    {
     "titre": "Distinguer le réel des tests",
-    "explication": "Exclure les entrées de test avant de lire les chiffres.",
-    "prompt": null
+    "explication": "Exclure les entrées de test avant de lire les chiffres. Les entrées de test faussent les chiffres : excluez-les avant toute lecture.",
+    "prompt": "Repère dans le CRM les entrées qui ressemblent à des tests (noms « test », emails factices, montants à zéro) et recalcule les indicateurs sans elles. Ne supprime rien.",
+    "resultat": "Des indicateurs calculés sur les seules données réelles.",
+    "piege": "Annoncer un chiffre qui compte des fiches de test."
    },
    {
     "titre": "Préparer les relances en brouillon",
-    "explication": "Montants et dates vérifiés, rien n'est envoyé sans accord.",
-    "prompt": "Prépare en brouillon la relance du devis [n°] avec montant et date vérifiés. Ne l'envoie pas."
+    "explication": "Montants et dates vérifiés, rien n'est envoyé sans accord. Montant et date viennent du CRM, jamais de la mémoire du modèle.",
+    "prompt": "Prépare en brouillon la relance du devis [n°] avec montant et date vérifiés. Ne l'envoie pas.",
+    "resultat": "Des relances prêtes en brouillon, montants vérifiés.",
+    "piege": "Envoyer une relance avec un mauvais montant."
    },
    {
     "titre": "Prospecter par segment",
-    "explication": "Segments métiers, recherche d'entreprises, ajout au pipeline après validation.",
-    "prompt": null
+    "explication": "Segments métiers, recherche d'entreprises, ajout au pipeline après validation. Un segment = une offre adaptée ; on prospecte un segment à la fois.",
+    "prompt": "Propose 3 segments à prospecter cette semaine à partir de mes clients actuels. Pour chacun, cherche 10 entreprises et prépare leur ajout au pipeline, sans les ajouter.",
+    "resultat": "Des prospects ajoutés au pipeline après votre accord.",
+    "piege": "Ajouter des centaines de fiches non qualifiées."
    }
   ],
   "garde_fous": [
@@ -903,6 +1189,15 @@
   "prompts": [
    "Fais mon point du matin dans RapidoCRM : prospects par étape, rendez-vous de la semaine, devis en attente, factures à suivre.",
    "Prépare en brouillon la relance du devis [n°] avec montant et date vérifiés. Ne l'envoie pas."
+  ],
+  "objectifs": [
+   "Faire votre point commercial du matin avec Claude",
+   "Préparer relances et prospection en brouillon",
+   "Lire des chiffres justes en excluant les données de test"
+  ],
+  "prerequis": [
+   "Un compte RapidoCRM avec des données",
+   "Claude connecté au MCP RapidoCRM"
   ]
  },
  {
@@ -929,28 +1224,38 @@
   "etapes": [
    {
     "titre": "Structurer le catalogue de tutoriels",
-    "explication": "Une fiche par geste : titre, durée, étapes, écran concerné.",
-    "prompt": null
+    "explication": "Une fiche par geste : titre, durée, étapes, écran concerné. Une fiche par geste, pas par menu : le client cherche « comment faire ».",
+    "prompt": "Transforme cette liste de tutoriels [liste] en fiches : titre orienté action, durée, étapes, écran concerné, niveau. Signale les doublons.",
+    "resultat": "Un catalogue de fiches homogènes.",
+    "piege": "Faire des tutoriels de 20 minutes qui couvrent tout un module."
    },
    {
     "titre": "Exposer le catalogue par MCP, en lecture seule",
-    "explication": "Le serveur enseigne, il ne touche jamais aux données du client.",
-    "prompt": null
+    "explication": "Le serveur enseigne, il ne touche jamais aux données du client. Un serveur pédagogique n'a aucun outil d'écriture : il enseigne, il n'agit pas.",
+    "prompt": "Conçois les outils d'un serveur MCP en lecture seule pour ce catalogue : rechercher, obtenir une fiche, proposer un parcours, quiz. Aucun outil ne doit modifier un compte client.",
+    "resultat": "Un serveur qui répond sans jamais toucher aux données des clients.",
+    "piege": "Mélanger formation et actions sur le compte dans le même serveur."
    },
    {
     "titre": "Répondre à une question réelle",
-    "explication": "L'IA cherche le bon tutoriel, donne la vidéo (en carte ou en lien selon l'application) et explique les étapes.",
-    "prompt": "Comment je fais un relevé de température ? Donne-moi le tutoriel, les étapes et un quiz de 3 questions."
+    "explication": "L'IA cherche le bon tutoriel, donne la vidéo (en carte ou en lien selon l'application) et explique les étapes. La réponse cite toujours le tutoriel source, avec son lien.",
+    "prompt": "Comment je fais un relevé de température ? Donne-moi le tutoriel, les étapes et un quiz de 3 questions.",
+    "resultat": "Une réponse qui renvoie vers le bon tutoriel.",
+    "piege": "Laisser l'IA inventer une marche à suivre absente du catalogue."
    },
    {
     "titre": "Construire un parcours par métier",
-    "explication": "Niveau, thème, temps disponible : une suite de leçons courtes.",
-    "prompt": "Crée-moi un parcours débutant HACCP de 15 minutes."
+    "explication": "Niveau, thème, temps disponible : une suite de leçons courtes. Un parcours tient dans le temps disponible du client.",
+    "prompt": "Crée-moi un parcours débutant HACCP de 15 minutes.",
+    "resultat": "Des parcours courts, adaptés au métier et au niveau.",
+    "piege": "Proposer tout le catalogue d'un coup."
    },
    {
     "titre": "Mesurer les questions sans réponse",
-    "explication": "Ce sont les prochains tutoriels à tourner.",
-    "prompt": null
+    "explication": "Ce sont les prochains tutoriels à tourner. Chaque question sans réponse est un tutoriel à produire.",
+    "prompt": "Liste les questions de la semaine auxquelles aucun tutoriel ne répondait, regroupe-les par thème et propose les 5 prochains tutoriels à tourner.",
+    "resultat": "Une liste priorisée des prochains tutoriels.",
+    "piege": "Ignorer les questions sans réponse."
    }
   ],
   "garde_fous": [
@@ -961,6 +1266,15 @@
   "prompts": [
    "Comment je fais un relevé de température ? Donne-moi le tutoriel, les étapes et un quiz de 3 questions.",
    "Crée-moi un parcours débutant HACCP de 15 minutes."
+  ],
+  "objectifs": [
+   "Structurer un catalogue de tutoriels exploitable par une IA",
+   "Exposer ce catalogue à Claude et ChatGPT en lecture seule",
+   "Repérer les tutoriels à tourner grâce aux questions sans réponse"
+  ],
+  "prerequis": [
+   "Des tutoriels vidéo ou écrits sur votre logiciel",
+   "Un projet capable d'exposer un serveur MCP"
   ]
  },
  {
@@ -987,23 +1301,31 @@
   "etapes": [
    {
     "titre": "Créer et planifier les contenus",
-    "explication": "Visuels, textes et calendrier dans RapidoCMS.",
-    "prompt": "Prépare 5 publications LinkedIn pour [offre] avec un appel à l'action vers ma démo. Brouillons seulement."
+    "explication": "Visuels, textes et calendrier dans RapidoCMS. Chaque publication a un seul appel à l'action et un lien suivi par source.",
+    "prompt": "Prépare 5 publications LinkedIn pour [offre] avec un appel à l'action vers ma démo. Brouillons seulement.",
+    "resultat": "Des brouillons de publications, chacun avec son lien suivi.",
+    "piege": "Publier sans appel à l'action : on obtient des likes, pas des contacts."
    },
    {
     "titre": "Capter avec un formulaire",
-    "explication": "Un like ne devient pas un client : c'est le formulaire de démo, avec consentement, qui crée le contact.",
-    "prompt": null
+    "explication": "Un like ne devient pas un client : c'est le formulaire de démo, avec consentement, qui crée le contact. Le formulaire demande le minimum et recueille un consentement explicite.",
+    "prompt": "Écris le formulaire de demande de démo : 5 champs maximum, case de consentement non cochée par défaut, lien vers la politique de confidentialité, et la source de la visite enregistrée.",
+    "resultat": "Un formulaire qui crée un contact consentant, avec sa source.",
+    "piege": "Ajouter le contact à une liste d'emailing sans son accord."
    },
    {
     "titre": "Suivre dans le CRM",
-    "explication": "Demandes, rendez-vous, opportunités dans RapidoCRM.",
-    "prompt": null
+    "explication": "Demandes, rendez-vous, opportunités dans RapidoCRM. Chaque demande devient une fiche, puis une opportunité si elle est qualifiée.",
+    "prompt": "Liste les demandes reçues cette semaine dans RapidoCRM avec leur source et leur étape. Propose la prochaine action pour chacune, sans rien envoyer.",
+    "resultat": "Un pipeline où chaque demande a sa prochaine action.",
+    "piege": "Laisser une demande sans réponse plus de 48 h."
    },
    {
     "titre": "Analyser et boucler",
-    "explication": "Claude compare les performances et prépare la prochaine campagne.",
-    "prompt": "Compare mes 10 dernières publications : lesquelles ont généré des demandes de démo ? Propose la prochaine campagne."
+    "explication": "Claude compare les performances et prépare la prochaine campagne. Comparez les publications par demandes générées, pas par vues.",
+    "prompt": "Compare mes 10 dernières publications : lesquelles ont généré des demandes de démo ? Propose la prochaine campagne.",
+    "resultat": "La prochaine campagne fondée sur ce qui a vraiment converti.",
+    "piege": "Refaire la campagne la plus vue au lieu de celle qui a rapporté des demandes."
    }
   ],
   "garde_fous": [
@@ -1014,6 +1336,15 @@
   "prompts": [
    "Prépare 5 publications LinkedIn pour [offre] avec un appel à l'action vers ma démo. Brouillons seulement.",
    "Compare mes 10 dernières publications : lesquelles ont généré des demandes de démo ? Propose la prochaine campagne."
+  ],
+  "objectifs": [
+   "Relier vos publications à un formulaire qui crée de vrais contacts",
+   "Suivre chaque demande jusqu'à l'opportunité dans le CRM",
+   "Boucler sur les résultats pour préparer la campagne suivante"
+  ],
+  "prerequis": [
+   "Un compte RapidoCMS et un compte RapidoCRM",
+   "Une offre avec un appel à l'action clair (démo, rendez-vous)"
   ]
  },
  {
@@ -1044,28 +1375,38 @@
   "etapes": [
    {
     "titre": "Formuler un objectif",
-    "explication": "Un objectif concret, daté, mesurable.",
-    "prompt": "Organise ma campagne commerciale FoodEatUp de la semaine."
+    "explication": "Un objectif concret, daté, mesurable. Un bon objectif contient un verbe, un résultat chiffré et une échéance.",
+    "prompt": "Organise ma campagne commerciale FoodEatUp de la semaine.",
+    "resultat": "Un objectif daté et mesurable, compris par l'orchestrateur.",
+    "piege": "Donner un thème (« le marketing ») au lieu d'un objectif."
    },
    {
     "titre": "Laisser l'orchestrateur choisir les outils",
-    "explication": "Il propose les bons MCP : CRM pour les campagnes, logiciel métier pour l'agenda marketing.",
-    "prompt": null
+    "explication": "Il propose les bons MCP : CRM pour les campagnes, logiciel métier pour l'agenda marketing. Vérifiez la liste des outils proposés avant d'accepter le plan.",
+    "prompt": "Pour cet objectif [objectif], propose les serveurs MCP et les outils à utiliser, en expliquant pourquoi chacun. N'exécute rien.",
+    "resultat": "Un plan d'outils justifié, relu avant exécution.",
+    "piege": "Accepter un plan qui utilise un logiciel sans rapport avec l'objectif."
    },
    {
     "titre": "Transformer en tâches ou routines",
-    "explication": "Avec le coût estimé affiché avant chaque exécution.",
-    "prompt": null
+    "explication": "Avec le coût estimé affiché avant chaque exécution. Une tâche ponctuelle reste une tâche ; seule une action répétée devient une routine.",
+    "prompt": "Transforme ce plan en tâches ponctuelles et en routines. Pour chacune, affiche le coût estimé, la fréquence et le critère d'arrêt.",
+    "resultat": "Des tâches et des routines avec leur coût connu à l'avance.",
+    "piege": "Créer une routine pour une action qui n'a lieu qu'une fois."
    },
    {
     "titre": "Lister les actions sensibles",
-    "explication": "Envois, publications et suppressions attendent la validation.",
-    "prompt": null
+    "explication": "Envois, publications et suppressions attendent la validation. La liste des actions sensibles est la même pour tous les agents.",
+    "prompt": "Liste les actions de ce plan qui envoient, publient, suppriment ou paient. Pour chacune, indique qui valide et comment.",
+    "resultat": "Une liste d'actions bloquées jusqu'à votre accord.",
+    "piege": "Découvrir après coup qu'un message est parti."
    },
    {
     "titre": "Suivre l'avancement",
-    "explication": "Tâches, résultats et historique dans une seule application.",
-    "prompt": null
+    "explication": "Tâches, résultats et historique dans une seule application. Consultez l'historique chaque semaine : c'est là qu'on voit ce qui sert vraiment.",
+    "prompt": "Résume l'avancement de la semaine : tâches terminées, routines exécutées, résultats, coûts réels, et ce qui doit être ajusté.",
+    "resultat": "Un point hebdomadaire sur les résultats et les coûts.",
+    "piege": "Laisser tourner des routines que personne ne regarde."
    }
   ],
   "garde_fous": [
@@ -1075,6 +1416,15 @@
   "etat_reel": "Le compte n'avait aucune routine active au moment de l'épisode : les premières routines étaient en test.",
   "prompts": [
    "Organise ma campagne commerciale FoodEatUp de la semaine."
+  ],
+  "objectifs": [
+   "Formuler un objectif qu'un orchestrateur peut découper",
+   "Transformer cet objectif en tâches et routines avec leur coût affiché",
+   "Garder la validation sur toutes les actions sensibles"
+  ],
+  "prerequis": [
+   "Un compte Plan'It",
+   "Les logiciels à piloter connectés par MCP"
   ]
  },
  {
@@ -1105,28 +1455,38 @@
   "etapes": [
    {
     "titre": "Construire le site avec Lovable",
-    "explication": "Pages, événements, formulaires, charte du client.",
-    "prompt": null
+    "explication": "Pages, événements, formulaires, charte du client. Partez de la charte du client et des pages qu'il modifie le plus souvent.",
+    "prompt": "Crée le site de [client] avec Lovable : pages, événements, formulaires, aux couleurs de sa charte [charte]. Prévois un espace d'administration protégé.",
+    "resultat": "Un site conforme à la charte, avec son administration.",
+    "piege": "Commencer par les effets visuels avant les contenus."
    },
    {
     "titre": "Relier aux outils métier",
-    "explication": "Carte reliée au logiciel de restauration, demandes envoyées au CRM.",
-    "prompt": null
+    "explication": "Carte reliée au logiciel de restauration, demandes envoyées au CRM. Les données viennent des outils métier : pas de double saisie.",
+    "prompt": "Relie la carte du site au logiciel de restauration en lecture, et envoie chaque demande du formulaire au CRM avec sa source. Montre-moi le parcours d'une demande.",
+    "resultat": "Un site toujours à jour et des demandes qui arrivent dans le CRM.",
+    "piege": "Recopier la carte à la main dans le site."
    },
    {
     "titre": "Développer un MCP dédié",
-    "explication": "Outils de pages, événements, formulaires, demandes, avec un compte administrateur.",
-    "prompt": "Crée un serveur MCP pour ce site : outils pour modifier une page, créer un événement en brouillon, consulter les demandes. Journalise chaque appel ; toute suppression exige confirmer=true."
+    "explication": "Outils de pages, événements, formulaires, demandes, avec un compte administrateur. Un outil par action courante du client : modifier une page, créer un événement, lire les demandes.",
+    "prompt": "Crée un serveur MCP pour ce site : outils pour modifier une page, créer un événement en brouillon, consulter les demandes. Journalise chaque appel ; toute suppression exige confirmer=true.",
+    "resultat": "Un serveur MCP que le client utilise depuis son assistant.",
+    "piege": "Exposer des outils techniques que le client ne comprend pas."
    },
    {
     "titre": "Sécuriser",
-    "explication": "Journal des appels, confirmation obligatoire pour toute suppression.",
-    "prompt": null
+    "explication": "Journal des appels, confirmation obligatoire pour toute suppression. Toute suppression demande une confirmation explicite et laisse une trace.",
+    "prompt": "Ajoute à chaque outil d'écriture un journal (qui, quoi, quand) et une confirmation obligatoire pour toute suppression. Écris le test qui le prouve.",
+    "resultat": "Un journal complet et des suppressions toujours confirmées.",
+    "piege": "Permettre une suppression en un seul appel."
    },
    {
     "titre": "Former le client",
-    "explication": "Il demande à son IA au lieu de demander à l'agence.",
-    "prompt": null
+    "explication": "Il demande à son IA au lieu de demander à l'agence. Montrez au client trois demandes types qu'il fera chaque semaine.",
+    "prompt": "Écris pour [client] un guide d'une page : comment connecter son assistant au MCP du site et 5 demandes types, avec ce qui exige sa confirmation.",
+    "resultat": "Un client autonome sur les modifications courantes.",
+    "piege": "Livrer le MCP sans expliquer ce qu'on peut lui demander."
    }
   ],
   "garde_fous": [
@@ -1136,6 +1496,15 @@
   "etat_reel": "Démonstration préparée d'après les schémas réels, sans appel envoyé à la production. L'intégration de l'agent vocal restait à finaliser.",
   "prompts": [
    "Crée un serveur MCP pour ce site : outils pour modifier une page, créer un événement en brouillon, consulter les demandes. Journalise chaque appel ; toute suppression exige confirmer=true."
+  ],
+  "objectifs": [
+   "Livrer un site client relié à ses outils métier",
+   "Développer un MCP dédié pour que le client pilote son site avec l'IA",
+   "Sécuriser et former le client à cet usage"
+  ],
+  "prerequis": [
+   "Un compte Lovable",
+   "La charte et les contenus du client, ses outils métier"
   ]
  },
  {
@@ -1170,28 +1539,38 @@
   "etapes": [
    {
     "titre": "Fixer un objectif d'équipe",
-    "explication": "Exemple de démonstration : « Trouve vingt nouveaux clients pour FoodEatUp ce mois-ci » (objectif fictif).",
-    "prompt": null
+    "explication": "Exemple de démonstration : « Trouve vingt nouveaux clients pour FoodEatUp ce mois-ci » (objectif fictif). L'objectif d'équipe est unique ; chaque agent en porte une partie mesurable.",
+    "prompt": "Reformule cet objectif [objectif] pour qu'il soit daté et mesurable, puis découpe-le en sous-objectifs, un par fonction.",
+    "resultat": "Un objectif d'équipe et ses sous-objectifs mesurables.",
+    "piege": "Donner à chaque agent un objectif sans lien avec les autres."
    },
    {
     "titre": "Répartir les rôles",
-    "explication": "Pilotage, contenus, prescripteurs, relance et devis, accueil des demandes, veille.",
-    "prompt": "Répartis cet objectif [objectif] entre 6 agents : rôle, outils MCP autorisés, livrable, indicateur."
+    "explication": "Pilotage, contenus, prescripteurs, relance et devis, accueil des demandes, veille. Chaque rôle produit un livrable que le rôle suivant utilise.",
+    "prompt": "Répartis cet objectif [objectif] entre 6 agents : rôle, outils MCP autorisés, livrable, indicateur.",
+    "resultat": "Une répartition des rôles où chaque livrable a un destinataire.",
+    "piege": "Créer des agents qui font tous la même chose."
    },
    {
     "titre": "Brancher les logiciels par MCP",
-    "explication": "Chaque agent utilise seulement ses outils.",
-    "prompt": null
+    "explication": "Chaque agent utilise seulement ses outils. Moins d'outils = moins de risques et de meilleures décisions de l'agent.",
+    "prompt": "Pour chaque agent [liste], liste les outils MCP strictement nécessaires et ceux à lui retirer. Justifie chaque outil gardé.",
+    "resultat": "Des agents limités à leurs outils.",
+    "piege": "Brancher tous les outils sur tous les agents."
    },
    {
     "titre": "Écrire les routines",
-    "explication": "Objectif, indicateur, critère d'arrêt.",
-    "prompt": null
+    "explication": "Objectif, indicateur, critère d'arrêt. Une routine sans critère d'arrêt tourne indéfiniment, même quand elle ne sert plus.",
+    "prompt": "Écris la routine de [agent] : objectif chiffré, sources, limite de ce qu'il peut faire, format du rendu, critère d'arrêt et accord humain requis.",
+    "resultat": "Des routines complètes, notées sur 6.",
+    "piege": "Lancer une routine sans critère d'arrêt."
    },
    {
     "titre": "Décider après mesure",
-    "explication": "Après 3 exécutions et 14 jours : garder, ajuster ou arrêter.",
-    "prompt": null
+    "explication": "Après 3 exécutions et 14 jours : garder, ajuster ou arrêter. Le verdict se prend sur les mesures, pas sur l'impression.",
+    "prompt": "Après 3 exécutions et 14 jours, compare les résultats de cette routine à son objectif et propose un verdict : garder, ajuster ou arrêter, avec la raison.",
+    "resultat": "Un verdict par routine, appuyé sur des chiffres.",
+    "piege": "Garder une routine parce qu'elle « a l'air utile »."
    }
   ],
   "garde_fous": [
@@ -1200,6 +1579,15 @@
   "etat_reel": "Six agents et vingt routines écrites, tous en préparation (autonomie Aperçu) au moment de l'épisode.",
   "prompts": [
    "Répartis cet objectif [objectif] entre 6 agents : rôle, outils MCP autorisés, livrable, indicateur."
+  ],
+  "objectifs": [
+   "Fixer un objectif d'équipe et le répartir entre plusieurs agents",
+   "Brancher chaque agent sur ses seuls outils",
+   "Décider de garder, ajuster ou arrêter une routine après mesure"
+  ],
+  "prerequis": [
+   "Un orchestrateur (Plan'It) et vos logiciels connectés par MCP",
+   "Un objectif commercial ou opérationnel réel"
   ]
  },
  {
@@ -1226,28 +1614,38 @@
   "etapes": [
    {
     "titre": "Choisir la mission",
-    "explication": "Exemple : éviter les ruptures de stock.",
-    "prompt": null
+    "explication": "Exemple : éviter les ruptures de stock. Une mission précise se décrit en une phrase et se mesure.",
+    "prompt": "Propose 3 missions précises que je peux confier à un agent dans mon activité [activité]. Pour chacune : objectif, indicateur, risque principal.",
+    "resultat": "Une mission choisie, avec son indicateur.",
+    "piege": "Confier « la gestion des stocks » au lieu d'« éviter les ruptures »."
    },
    {
     "titre": "Apprendre la procédure",
-    "explication": "Produits sous le seuil → liste d'achats → commandes préparées par fournisseur → l'humain envoie.",
-    "prompt": null
+    "explication": "Produits sous le seuil → liste d'achats → commandes préparées par fournisseur → l'humain envoie. La procédure s'arrête là où commence la décision humaine.",
+    "prompt": "Écris la procédure de la mission [mission] étape par étape, en marquant clairement l'étape où l'humain reprend la main.",
+    "resultat": "Une procédure en étapes, avec le point de reprise humain.",
+    "piege": "Laisser l'agent aller jusqu'à l'envoi."
    },
    {
     "titre": "Donner seulement les bons outils",
-    "explication": "Stocks bas, liste d'achats, fournisseurs, préparation des commandes (sans envoi).",
-    "prompt": null
+    "explication": "Stocks bas, liste d'achats, fournisseurs, préparation des commandes (sans envoi). Retirez l'outil d'envoi : l'agent prépare, l'humain envoie.",
+    "prompt": "Liste les outils MCP dont cet agent a besoin pour [mission] et retire tous ceux qui envoient, publient ou paient.",
+    "resultat": "Un agent qui ne peut physiquement pas envoyer.",
+    "piege": "Faire confiance à une consigne au lieu de retirer l'outil."
    },
    {
     "titre": "Faire passer le quiz",
-    "explication": "Le serveur corrige les réponses de l'agent.",
-    "prompt": null
+    "explication": "Le serveur corrige les réponses de l'agent. Le quiz vérifie que l'agent a compris la procédure, pas qu'il la récite.",
+    "prompt": "Fais passer le quiz de la mission [mission] à l'agent et montre-moi ses réponses et la correction du serveur.",
+    "resultat": "Un quiz réussi avant la première exécution réelle.",
+    "piege": "Passer directement à l'exécution réelle sans vérifier."
    },
    {
     "titre": "Noter et compléter la consigne",
-    "explication": "Une consigne brute obtient 0/6 ; complétée (objectif, sources, limite, rendu, critère d'arrêt, accord humain), elle obtient 6/6.",
-    "prompt": "Objectif : éviter les ruptures. Sources : stocks et liste d'achats. Limite : préparer sans envoyer. Rendu : une commande par fournisseur. Arrêt : plus aucun produit sous le seuil. Accord : j'envoie moi-même."
+    "explication": "Une consigne brute obtient 0/6 ; complétée (objectif, sources, limite, rendu, critère d'arrêt, accord humain), elle obtient 6/6. Les 6 critères : objectif, sources, limite, rendu, critère d'arrêt, accord humain.",
+    "prompt": "Objectif : éviter les ruptures. Sources : stocks et liste d'achats. Limite : préparer sans envoyer. Rendu : une commande par fournisseur. Arrêt : plus aucun produit sous le seuil. Accord : j'envoie moi-même.",
+    "resultat": "Une consigne complète qui obtient 6/6.",
+    "piege": "Lancer une consigne brute de deux lignes."
    }
   ],
   "garde_fous": [
@@ -1256,6 +1654,15 @@
   "etat_reel": "Appels réels en lecture seule : 3 réponses de quiz justes ; consigne brute 0/6, consigne complétée 6/6.",
   "prompts": [
    "Objectif : éviter les ruptures. Sources : stocks et liste d'achats. Limite : préparer sans envoyer. Rendu : une commande par fournisseur. Arrêt : plus aucun produit sous le seuil. Accord : j'envoie moi-même."
+  ],
+  "objectifs": [
+   "Choisir une mission précise et lui apprendre la bonne procédure",
+   "Restreindre les outils de l'agent à cette mission",
+   "Vérifier sa compréhension par un quiz et une consigne notée sur 6"
+  ],
+  "prerequis": [
+   "Une procédure métier écrite",
+   "Un espace de formation et vos logiciels connectés par MCP"
   ]
  },
  {
@@ -1306,23 +1713,31 @@
   "etapes": [
    {
     "titre": "Lister les abonnements",
-    "explication": "Claude 20 €, ChatGPT 20 €, RapidoCRM 49 €, RapidoCMS 29 €, RapidoRH 19 €, Figma 20 €, Lovable 25 €, ElevenLabs 20 €, environ 20 € d'API pour Plan'It : 222 € par mois (chiffres de l'épisode).",
-    "prompt": null
+    "explication": "Claude 20 €, ChatGPT 20 €, RapidoCRM 49 €, RapidoCMS 29 €, RapidoRH 19 €, Figma 20 €, Lovable 25 €, ElevenLabs 20 €, environ 20 € d'API pour Plan'It : 222 € par mois (chiffres de l'épisode). Vérifiez chaque tarif sur le site de l'éditeur : ils changent souvent.",
+    "prompt": "Voici mes abonnements [liste avec montants]. Fais le total mensuel et annuel et signale ceux que je n'ai pas utilisés depuis un mois. Ne cite aucun tarif que je ne t'ai pas donné.",
+    "resultat": "Le total réel de vos abonnements, outil par outil.",
+    "piege": "Reprendre des tarifs de mémoire ou d'une vidéo."
    },
    {
     "titre": "Ajouter les coûts cachés",
-    "explication": "Temps de configuration, serveurs et API supplémentaires.",
-    "prompt": null
+    "explication": "Temps de configuration, serveurs et API supplémentaires. Le temps passé à configurer est un coût : estimez-le en heures.",
+    "prompt": "Liste les coûts cachés de mon équipe IA : temps de configuration, serveurs, appels d'API, maintenance. Pour chacun, dis-moi comment le mesurer.",
+    "resultat": "Une estimation complète, abonnements et coûts cachés.",
+    "piege": "Ne compter que les abonnements."
    },
    {
     "titre": "Connecter avant d'empiler",
-    "explication": "La valeur vient des connexions MCP et de l'organisation du travail des agents, pas du nombre d'abonnements.",
-    "prompt": "Voici mes outils actuels [liste]. Indique lesquels ont un MCP, ce que je peux connecter à Claude, et ce qui est redondant."
+    "explication": "La valeur vient des connexions MCP et de l'organisation du travail des agents, pas du nombre d'abonnements. Un outil non connecté coûte sans travailler pour vos agents.",
+    "prompt": "Voici mes outils actuels [liste]. Indique lesquels ont un MCP, ce que je peux connecter à Claude, et ce qui est redondant.",
+    "resultat": "La liste des outils à connecter, garder ou résilier.",
+    "piege": "Ajouter un abonnement pour chaque nouveau besoin."
    },
    {
     "titre": "Lancer une première mission",
-    "explication": "Une mission utile, mesurée, avant d'élargir.",
-    "prompt": null
+    "explication": "Une mission utile, mesurée, avant d'élargir. La première mission doit rapporter plus que ce qu'elle coûte.",
+    "prompt": "Propose une première mission utile pour mon activité [activité], avec son coût estimé, le gain attendu et l'indicateur qui dira si elle vaut le coup.",
+    "resultat": "Une mission lancée avec son coût et son gain attendus.",
+    "piege": "Élargir avant d'avoir mesuré la première mission."
    }
   ],
   "garde_fous": [
@@ -1331,6 +1746,15 @@
   "etat_reel": "Montants donnés par Michael dans l'épisode ; ils ne comprennent pas la configuration, les serveurs ni les API supplémentaires.",
   "prompts": [
    "Voici mes outils actuels [liste]. Indique lesquels ont un MCP, ce que je peux connecter à Claude, et ce qui est redondant."
+  ],
+  "objectifs": [
+   "Lister le coût réel de vos outils IA, abonnements et coûts cachés",
+   "Repérer les outils redondants ou non connectés",
+   "Lancer une première mission mesurée avant d'ajouter des abonnements"
+  ],
+  "prerequis": [
+   "La liste de vos abonnements actuels",
+   "Vos factures des trois derniers mois"
   ]
  },
  {
@@ -1365,28 +1789,38 @@
   "etapes": [
    {
     "titre": "Enregistrer ou importer l'audio",
-    "explication": "Une réunion, un fichier.",
-    "prompt": null
+    "explication": "Une réunion, un fichier. Annoncez l'enregistrement au début de la réunion et notez l'accord des participants.",
+    "prompt": "Prépare le message à lire en début de réunion pour annoncer l'enregistrement, son usage (transcription et tâches) et sa durée de conservation.",
+    "resultat": "Un fichier audio par réunion, enregistré avec l'accord de tous.",
+    "piege": "Enregistrer sans prévenir les participants."
    },
    {
     "titre": "Transcrire avec Whisper",
-    "explication": "La transcription sert de source à tout le reste.",
-    "prompt": null
+    "explication": "La transcription sert de source à tout le reste. Relisez la transcription sur les noms propres et les chiffres avant d'extraire quoi que ce soit.",
+    "prompt": "Transcris cet audio [fichier] en français, puis liste les noms propres, chiffres et dates entendus pour que je les vérifie.",
+    "resultat": "Une transcription relue sur les points sensibles.",
+    "piege": "Extraire des tâches d'une transcription non relue."
    },
    {
     "titre": "Extraire décisions et tâches",
-    "explication": "Résumé, décisions, tâches avec responsable, échéance et phrase exacte qui les a fait naître.",
-    "prompt": "À partir de cette transcription, liste les décisions et les tâches : responsable, échéance, priorité et citation exacte de la phrase source."
+    "explication": "Résumé, décisions, tâches avec responsable, échéance et phrase exacte qui les a fait naître. La phrase source permet de vérifier chaque tâche en quelques secondes.",
+    "prompt": "À partir de cette transcription, liste les décisions et les tâches : responsable, échéance, priorité et citation exacte de la phrase source.",
+    "resultat": "Un plan d'action où chaque tâche cite sa phrase source.",
+    "piege": "Accepter une tâche que personne n'a réellement demandée."
    },
    {
     "titre": "Ranger les tâches",
-    "explication": "Dans le tableau de suivi ; les écritures vers CRM et CMS attendent une validation.",
-    "prompt": null
+    "explication": "Dans le tableau de suivi ; les écritures vers CRM et CMS attendent une validation. Rien n'est écrit dans un outil externe sans votre validation.",
+    "prompt": "Prépare l'enregistrement de ces tâches [tâches] dans le tableau de suivi. Montre l'aperçu et attends mon accord avant toute écriture vers le CRM ou le CMS.",
+    "resultat": "Des tâches rangées après validation.",
+    "piege": "Créer automatiquement les tâches dans tous les outils."
    },
    {
     "titre": "Boucler avec le suivi de projet",
-    "explication": "Lire les projets existants, puis y créer les tâches (prochaine étape).",
-    "prompt": null
+    "explication": "Lire les projets existants, puis y créer les tâches (prochaine étape). Rattachez chaque tâche au bon projet existant plutôt que d'en créer un nouveau.",
+    "prompt": "Lis les projets existants dans RapidoRH et propose pour chaque tâche le projet de rattachement. Ne crée rien sans mon accord.",
+    "resultat": "Des tâches rattachées aux bons projets.",
+    "piege": "Créer un nouveau projet par réunion."
    }
   ],
   "garde_fous": [
@@ -1396,6 +1830,15 @@
   "etat_reel": "RapidoMeet était livré à 83 % ; la sécurité était en cours de finalisation. La création directe de tâches dans RapidoRH était la prochaine étape.",
   "prompts": [
    "À partir de cette transcription, liste les décisions et les tâches : responsable, échéance, priorité et citation exacte de la phrase source."
+  ],
+  "objectifs": [
+   "Transcrire une réunion et en extraire décisions et tâches",
+   "Relier chaque tâche à son responsable, son échéance et sa phrase source",
+   "Ranger les tâches dans le suivi de projet après validation"
+  ],
+  "prerequis": [
+   "L'accord des participants pour l'enregistrement",
+   "Un outil de suivi de projet (RapidoRH ou équivalent)"
   ]
  },
  {
@@ -1422,28 +1865,38 @@
   "etapes": [
    {
     "titre": "Séparer les entreprises",
-    "explication": "Plusieurs recrutements au même endroit, données séparées par entreprise.",
-    "prompt": null
+    "explication": "Plusieurs recrutements au même endroit, données séparées par entreprise. Chaque entreprise a son espace : un recruteur ne voit que ses candidats.",
+    "prompt": "Vérifie que les données de chaque entreprise sont séparées : liste qui peut voir les candidats de [entreprise] et signale tout accès partagé.",
+    "resultat": "Des données séparées et des accès vérifiés.",
+    "piege": "Mélanger les candidats de plusieurs entreprises dans une même liste."
    },
    {
     "titre": "Rédiger l'offre",
-    "explication": "Poste, compétences, missions, à partir de la base de connaissance de l'entreprise.",
-    "prompt": "Rédige l'offre d'emploi pour [poste] à partir de ces informations [contexte] : missions, compétences, conditions, process."
+    "explication": "Poste, compétences, missions, à partir de la base de connaissance de l'entreprise. L'offre décrit des missions concrètes et des critères objectifs.",
+    "prompt": "Rédige l'offre d'emploi pour [poste] à partir de ces informations [contexte] : missions, compétences, conditions, process.",
+    "resultat": "Une offre claire, fondée sur la base de connaissance de l'entreprise.",
+    "piege": "Copier une offre générique qui ne décrit pas le vrai poste."
    },
    {
     "titre": "Analyser les CV",
-    "explication": "Extraction des compétences et score d'aide à la présélection : un score aide à trier, il ne dit rien de la valeur d'une personne.",
-    "prompt": null
+    "explication": "Extraction des compétences et score d'aide à la présélection : un score aide à trier, il ne dit rien de la valeur d'une personne. Le score sert à trier une pile, jamais à écarter quelqu'un seul.",
+    "prompt": "Extrais les compétences de ces CV [CV] et compare-les aux critères de l'offre. Présente un tableau d'aide au tri, sans classement définitif et sans critère discriminatoire.",
+    "resultat": "Un tableau d'aide au tri, relu par un humain.",
+    "piege": "Présenter le score comme une décision."
    },
    {
     "titre": "Suivre les candidats",
-    "explication": "Nouveau, en analyse, entretien, en attente, retenu, refusé.",
-    "prompt": null
+    "explication": "Nouveau, en analyse, entretien, en attente, retenu, refusé. Chaque changement de statut est daté et justifié.",
+    "prompt": "Liste les candidats par statut et signale ceux qui attendent une réponse depuis plus de 7 jours. Prépare les messages en brouillon.",
+    "resultat": "Un suivi à jour, sans candidat oublié.",
+    "piege": "Laisser un candidat sans réponse."
    },
    {
     "titre": "Architecturer proprement",
-    "explication": "Le cerveau : FastAPI et FastMCP. Les mains : workflows n8n. Le cloud : Supabase. Chaque écriture attend une confirmation.",
-    "prompt": null
+    "explication": "Le cerveau : FastAPI et FastMCP. Les mains : workflows n8n. Le cloud : Supabase. Chaque écriture attend une confirmation. Séparez le raisonnement, l'automatisation et le stockage : chacun se teste à part.",
+    "prompt": "Décris l'architecture de l'outil de recrutement : où se fait l'analyse, où tournent les workflows, où sont stockées les données, et où chaque écriture attend une confirmation.",
+    "resultat": "Une architecture claire, avec ses points de confirmation.",
+    "piege": "Tout mettre dans un seul script impossible à tester."
    }
   ],
   "garde_fous": [
@@ -1453,6 +1906,15 @@
   "etat_reel": "Les modules d'entretien (planification, transcription, rapport, avatar) existent dans le code mais étaient encore en test.",
   "prompts": [
    "Rédige l'offre d'emploi pour [poste] à partir de ces informations [contexte] : missions, compétences, conditions, process."
+  ],
+  "objectifs": [
+   "Organiser plusieurs recrutements en séparant les données de chaque entreprise",
+   "Rédiger des offres et analyser des CV avec l'aide de l'IA",
+   "Garder la décision d'embauche entièrement humaine"
+  ],
+  "prerequis": [
+   "Une base de connaissance par entreprise (missions, valeurs, conditions)",
+   "Un outil de suivi des candidatures"
   ]
  },
  {
@@ -1479,28 +1941,38 @@
   "etapes": [
    {
     "titre": "Faire proposer le storyboard",
-    "explication": "Scènes, texte de l'avatar, action à filmer.",
-    "prompt": "Propose le storyboard d'une démo de [logiciel] en 8 scènes : texte de l'avatar, action à l'écran, durée."
+    "explication": "Scènes, texte de l'avatar, action à filmer. Chaque scène montre une action réelle du logiciel, dans l'ordre d'usage du client.",
+    "prompt": "Propose le storyboard d'une démo de [logiciel] en 8 scènes : texte de l'avatar, action à l'écran, durée.",
+    "resultat": "Un storyboard scène par scène, prêt à filmer.",
+    "piege": "Montrer toutes les fonctions au lieu du parcours du client."
    },
    {
     "titre": "Filmer une seule fois",
-    "explication": "L'enregistrement se découpe automatiquement par scène.",
-    "prompt": null
+    "explication": "L'enregistrement se découpe automatiquement par scène. Suivez le storyboard à la lettre pendant l'enregistrement : le découpage s'appuie dessus.",
+    "prompt": "Découpe cet enregistrement [fichier] selon le storyboard : début et fin de chaque scène, et signale les scènes manquantes ou trop longues.",
+    "resultat": "Un enregistrement découpé, une séquence par scène.",
+    "piege": "Improviser pendant l'enregistrement : le découpage ne correspond plus."
    },
    {
     "titre": "Faire présenter l'avatar",
-    "explication": "Voix générée en français, anglais ou arabe.",
-    "prompt": null
+    "explication": "Voix générée en français, anglais ou arabe. Une langue par version : on ne mélange pas dans la même démo.",
+    "prompt": "Génère le texte de l'avatar pour chaque scène en [langue], au même rythme que la séquence filmée, en 2 phrases maximum par scène.",
+    "resultat": "Une démonstration présentée par l'avatar, dans la langue choisie.",
+    "piege": "Traduire mot à mot sans adapter au rythme des images."
    },
    {
     "titre": "Ouvrir le mode questions",
-    "explication": "Le client interrompt, pose sa question, l'assistant répond depuis le script et l'emmène au bon passage.",
-    "prompt": null
+    "explication": "Le client interrompt, pose sa question, l'assistant répond depuis le script et l'emmène au bon passage. L'assistant répond seulement à partir du script et renvoie au bon passage.",
+    "prompt": "Voici la question d'un prospect [question]. Réponds uniquement à partir du script de la démo, cite la scène concernée, et dis-le clairement si la réponse n'est pas dans le script.",
+    "resultat": "Des réponses fiables, reliées au bon passage.",
+    "piege": "Laisser l'assistant inventer une fonction absente du logiciel."
    },
    {
     "titre": "Récolter les questions sans réponse",
-    "explication": "Ce sont vos prochains tutoriels.",
-    "prompt": null
+    "explication": "Ce sont vos prochains tutoriels. Une question sans réponse = un tutoriel ou une scène à ajouter.",
+    "prompt": "Regroupe les questions sans réponse de la semaine par thème et propose les scènes ou tutoriels à ajouter.",
+    "resultat": "La liste priorisée des prochains contenus.",
+    "piege": "Ignorer les questions qui n'ont pas trouvé de réponse."
    }
   ],
   "garde_fous": [
@@ -1509,6 +1981,15 @@
   "etat_reel": "RapidoTuto était prêt mais pas encore partagé aux clients ; le mode en direct est codé, sans lien public au moment de l'épisode.",
   "prompts": [
    "Propose le storyboard d'une démo de [logiciel] en 8 scènes : texte de l'avatar, action à l'écran, durée."
+  ],
+  "objectifs": [
+   "Construire une démonstration de logiciel présentée par un avatar",
+   "Filmer une seule fois et découper automatiquement par scène",
+   "Répondre aux questions des prospects à partir du script"
+  ],
+  "prerequis": [
+   "Un logiciel à présenter et un enregistreur d'écran",
+   "Une voix de synthèse autorisée"
   ]
  },
  {
@@ -1535,28 +2016,38 @@
   "etapes": [
    {
     "titre": "Récupérer les données",
-    "explication": "Une API sportive branchée à n8n : matchs, statistiques, équipes.",
-    "prompt": null
+    "explication": "Une API sportive branchée à n8n : matchs, statistiques, équipes. La clé de l'API reste dans les identifiants de n8n, jamais dans le workflow.",
+    "prompt": "Crée un workflow n8n qui récupère [données] depuis l'API, avec la clé stockée dans les identifiants de n8n. Vérifie qu'aucune clé n'apparaît en clair dans le workflow.",
+    "resultat": "Des données à jour, sans clé en clair.",
+    "piege": "Coller la clé d'API dans un nœud du workflow."
    },
    {
     "titre": "Analyser avec un modèle",
-    "explication": "Un workflow Gemini propose un pronostic, présenté comme incertain.",
-    "prompt": null
+    "explication": "Un workflow Gemini propose un pronostic, présenté comme incertain. Une analyse est une estimation : présentez-la comme incertaine.",
+    "prompt": "À partir de ces données [données], propose une analyse avec un niveau de confiance et ses limites. Pas de promesse de résultat.",
+    "resultat": "Une analyse présentée avec son incertitude.",
+    "piege": "Présenter un pronostic comme une certitude."
    },
    {
     "titre": "Préparer les visuels",
-    "explication": "Un workflow dédié produit les images de début et de fin.",
-    "prompt": null
+    "explication": "Un workflow dédié produit les images de début et de fin. Les visuels suivent un gabarit fixe : seuls les contenus changent.",
+    "prompt": "Crée le gabarit des visuels de début et de fin : zones de texte, logo en fichier, couleurs. Le workflow ne remplit que les zones prévues.",
+    "resultat": "Des visuels cohérents d'un épisode à l'autre.",
+    "piege": "Générer un visuel différent à chaque fois."
    },
    {
     "titre": "Organiser l'équipe d'agents",
-    "explication": "Scénariste, directeur artistique, compositeur vidéo, vérificateur légal qui peut bloquer.",
-    "prompt": "Crée 4 agents Claude Code pour produire une capsule vidéo : scénariste, directeur artistique, compositeur, vérificateur légal. Le vérificateur peut bloquer la publication."
+    "explication": "Scénariste, directeur artistique, compositeur vidéo, vérificateur légal qui peut bloquer. Le vérificateur légal peut bloquer : c'est sa raison d'être.",
+    "prompt": "Crée 4 agents Claude Code pour produire une capsule vidéo : scénariste, directeur artistique, compositeur, vérificateur légal. Le vérificateur peut bloquer la publication.",
+    "resultat": "Une équipe d'agents où chaque contenu est vérifié avant publication.",
+    "piege": "Donner au vérificateur un simple rôle consultatif."
    },
    {
     "titre": "Publier après validation",
-    "explication": "Brouillons vers le CMS, jamais de publication automatique.",
-    "prompt": null
+    "explication": "Brouillons vers le CMS, jamais de publication automatique. Le CMS reçoit des brouillons ; la publication reste manuelle.",
+    "prompt": "Envoie la capsule validée dans le CMS en brouillon, avec sa légende et ses mentions. Ne programme rien.",
+    "resultat": "Des brouillons prêts, publiés seulement par vous.",
+    "piege": "Publier automatiquement dès que la capsule est prête."
    }
   ],
   "garde_fous": [
@@ -1566,6 +2057,15 @@
   "etat_reel": "Workflows n8n vérifiés en lecture seule ; l'audit a relevé une clé d'API en clair dans un workflow, à remplacer (rotation recommandée). La liaison automatique entre n8n et le plugin restait à construire.",
   "prompts": [
    "Crée 4 agents Claude Code pour produire une capsule vidéo : scénariste, directeur artistique, compositeur, vérificateur légal. Le vérificateur peut bloquer la publication."
+  ],
+  "objectifs": [
+   "Brancher une source de données à un workflow d'analyse",
+   "Organiser une équipe d'agents qui produit des contenus vérifiés",
+   "Ne publier qu'après validation, sans promesse de résultat"
+  ],
+  "prerequis": [
+   "Un compte n8n et une source de données (API)",
+   "Claude Code pour créer les agents"
   ]
  },
  {
@@ -1600,28 +2100,38 @@
   "etapes": [
    {
     "titre": "Cartographier ses workflows",
-    "explication": "Prospection, marketing, RH, stocks, recrutement : combien de connexions point à point ?",
-    "prompt": "Voici la liste de mes workflows [liste]. Regroupe-les par logiciel et repère ceux qu'un serveur MCP rendrait inutiles."
+    "explication": "Prospection, marketing, RH, stocks, recrutement : combien de connexions point à point ? Comptez les connexions point à point : chacune est une maintenance.",
+    "prompt": "Voici la liste de mes workflows [liste]. Regroupe-les par logiciel et repère ceux qu'un serveur MCP rendrait inutiles.",
+    "resultat": "Une carte de vos workflows et de leurs connexions.",
+    "piege": "Ajouter un workflow sans regarder ceux qui existent déjà."
    },
    {
     "titre": "Exposer chaque logiciel en MCP",
-    "explication": "CRM, CMS, logiciel métier, RH : chaque logiciel expose ses fonctions une fois pour tous les agents.",
-    "prompt": null
+    "explication": "CRM, CMS, logiciel métier, RH : chaque logiciel expose ses fonctions une fois pour tous les agents. Un serveur MCP par logiciel, partagé par tous les agents.",
+    "prompt": "Pour chaque logiciel de cette liste [liste], indique s'il expose déjà un serveur MCP et quels workflows il pourrait remplacer.",
+    "resultat": "Une liste de logiciels exposés en MCP et des workflows simplifiés.",
+    "piege": "Créer un connecteur différent par agent."
    },
    {
     "titre": "Garder n8n pour orchestrer",
-    "explication": "n8n déclenche les routines et coordonne les opérations.",
-    "prompt": null
+    "explication": "n8n déclenche les routines et coordonne les opérations. n8n déclenche et enchaîne ; les agents raisonnent ; les MCP donnent accès.",
+    "prompt": "Pour ce workflow [workflow], sépare ce qui relève de l'orchestration (déclencheur, enchaînement) et ce qui peut passer par un agent et un MCP.",
+    "resultat": "Des rôles clairs entre n8n, agents et MCP.",
+    "piege": "Mettre toute la logique métier dans les nœuds n8n."
    },
    {
     "titre": "Exemple de routine",
-    "explication": "Récupérer les tâches RapidoRH par MCP, les confier à un agent IA, enregistrer le résultat.",
-    "prompt": null
+    "explication": "Récupérer les tâches RapidoRH par MCP, les confier à un agent IA, enregistrer le résultat. La routine enregistre son résultat : sinon on ne sait pas si elle a tourné.",
+    "prompt": "Écris la routine : n8n lit les tâches RapidoRH par MCP chaque matin, un agent les traite, le résultat est enregistré avec la date et le statut.",
+    "resultat": "Une routine tracée, avec son résultat enregistré.",
+    "piege": "Une routine qui tourne sans laisser de trace."
    },
    {
     "titre": "Sécuriser les webhooks",
-    "explication": "Authentifier chaque webhook, ne jamais mettre de jeton en clair, surveiller les échecs.",
-    "prompt": null
+    "explication": "Authentifier chaque webhook, ne jamais mettre de jeton en clair, surveiller les échecs. Surveillez les échecs : un jeton expiré casse un workflow en silence.",
+    "prompt": "Liste mes webhooks n8n, indique ceux qui n'ont pas d'authentification et propose la protection à ajouter. Signale les workflows en erreur ces 7 derniers jours.",
+    "resultat": "Des webhooks authentifiés et les erreurs repérées.",
+    "piege": "Laisser un webhook ouvert à n'importe qui."
    }
   ],
   "garde_fous": [
@@ -1630,6 +2140,15 @@
   "etat_reel": "L'audit n8n a relevé un workflow en erreur quotidienne (jeton d'authentification expiré) et des webhooks sans authentification : points à corriger.",
   "prompts": [
    "Voici la liste de mes workflows [liste]. Regroupe-les par logiciel et repère ceux qu'un serveur MCP rendrait inutiles."
+  ],
+  "objectifs": [
+   "Cartographier vos workflows et repérer les connexions en double",
+   "Exposer chaque logiciel une seule fois en MCP",
+   "Garder n8n pour orchestrer, avec des webhooks sécurisés"
+  ],
+  "prerequis": [
+   "Un compte n8n avec des workflows existants",
+   "Des logiciels qui exposent (ou peuvent exposer) un serveur MCP"
   ]
  },
  {
@@ -1656,28 +2175,38 @@
   "etapes": [
    {
     "titre": "Découper le processus",
-    "explication": "Recherche, enrichissement, campagnes, suivi.",
-    "prompt": null
+    "explication": "Recherche, enrichissement, campagnes, suivi. Chaque étape a une entrée, une sortie et un responsable.",
+    "prompt": "Découpe mon processus de prospection [processus] en étapes : recherche, enrichissement, campagnes, suivi. Pour chacune : entrée, sortie, responsable humain ou agent.",
+    "resultat": "Un processus découpé en étapes claires.",
+    "piege": "Automatiser un processus qui n'est pas encore défini."
    },
    {
     "titre": "Un workflow par fonction",
-    "explication": "Orchestrateur, enrichissement, détection des réponses, relances, rapport quotidien.",
-    "prompt": null
+    "explication": "Orchestrateur, enrichissement, détection des réponses, relances, rapport quotidien. Un workflow par fonction : en cas de panne, on sait laquelle.",
+    "prompt": "Propose un workflow n8n par fonction (orchestrateur, enrichissement, détection des réponses, relances, rapport quotidien) avec son déclencheur et sa sortie.",
+    "resultat": "Des workflows séparés, faciles à surveiller.",
+    "piege": "Un seul workflow géant que personne ne peut déboguer."
    },
    {
     "titre": "Donner aux agents les outils autorisés",
-    "explication": "Recherche de prospects, fiche entreprise, ajout au pipeline.",
-    "prompt": "Recherche 20 [type d'établissement] à [ville], qualifie-les et ajoute-les au pipeline en « Nouveau prospect ». Liste ce qui demande mon accord."
+    "explication": "Recherche de prospects, fiche entreprise, ajout au pipeline. L'agent prépare l'ajout au pipeline ; vous validez les envois.",
+    "prompt": "Recherche 20 [type d'établissement] à [ville], qualifie-les et ajoute-les au pipeline en « Nouveau prospect ». Liste ce qui demande mon accord.",
+    "resultat": "Des agents qui ajoutent des prospects qualifiés, sans rien envoyer seuls.",
+    "piege": "Laisser l'agent contacter les prospects qu'il vient de trouver."
    },
    {
     "titre": "Centraliser dans le CRM",
-    "explication": "Un seul pipeline pour tout suivre.",
-    "prompt": null
+    "explication": "Un seul pipeline pour tout suivre. Un seul pipeline : toutes les sources y arrivent avec leur origine.",
+    "prompt": "Vérifie que chaque prospect du pipeline a sa source, son étape et sa prochaine action. Liste les fiches incomplètes.",
+    "resultat": "Un pipeline unique et complet.",
+    "piege": "Garder des listes de prospects dans des fichiers à côté du CRM."
    },
    {
     "titre": "Mesurer ce qui compte",
-    "explication": "Réponses, rendez-vous, ventes : pas le taux de réussite des workflows.",
-    "prompt": null
+    "explication": "Réponses, rendez-vous, ventes : pas le taux de réussite des workflows. Un workflow qui réussit ne prouve pas qu'il rapporte.",
+    "prompt": "Fais le rapport de la semaine : réponses, rendez-vous, ventes, par source. Ne compte pas les exécutions de workflows comme des résultats.",
+    "resultat": "Un rapport centré sur les résultats commerciaux.",
+    "piege": "Se féliciter du taux de réussite des workflows."
    }
   ],
   "garde_fous": [
@@ -1686,6 +2215,15 @@
   "etat_reel": "Cinq workflows actifs vérifiés ; le pipeline comptait 70 prospects et aucune vente signée par ce système au moment de l'épisode.",
   "prompts": [
    "Recherche 20 [type d'établissement] à [ville], qualifie-les et ajoute-les au pipeline en « Nouveau prospect ». Liste ce qui demande mon accord."
+  ],
+  "objectifs": [
+   "Découper la prospection en fonctions automatisables",
+   "Confier à chaque agent ses seuls outils, tout centralisé dans le CRM",
+   "Mesurer ce qui compte : réponses, rendez-vous, ventes"
+  ],
+  "prerequis": [
+   "Un CRM avec un pipeline de prospection",
+   "Un compte n8n"
   ]
  },
  {
@@ -1716,28 +2254,38 @@
   "etapes": [
    {
     "titre": "Surveiller les tendances",
-    "explication": "Google Trends, Google News et Reddit.",
-    "prompt": null
+    "explication": "Google Trends, Google News et Reddit. Gardez seulement les tendances liées à votre métier.",
+    "prompt": "Surveille les tendances de la semaine sur [thème] et garde seulement celles qui concernent mes clients [cible]. Pour chacune, indique la question qu'elles posent.",
+    "resultat": "Une liste de questions d'actualité pour vos clients.",
+    "piege": "Courir après chaque tendance, même hors sujet."
    },
    {
     "titre": "Analyser les mots-clés",
-    "explication": "Search Console et outils SEO.",
-    "prompt": null
+    "explication": "Search Console et outils SEO. Partez des requêtes qui vous apportent déjà des visites.",
+    "prompt": "À partir de la Search Console, liste les requêtes pour lesquelles mon site apparaît sans être cliqué, et propose l'article ou la mise à jour qui y répondrait.",
+    "resultat": "Une liste de mots-clés à travailler en priorité.",
+    "piege": "Viser des mots-clés trop génériques."
    },
    {
     "titre": "Préparer des articles utiles",
-    "explication": "À partir de sa propre documentation, sur de vraies questions de clients.",
-    "prompt": "Propose 10 sujets d'articles qui répondent à de vraies questions de [cible] sur [thème], avec mot-clé principal et intention de recherche."
+    "explication": "À partir de sa propre documentation, sur de vraies questions de clients. Un article répond à une seule question, avec vos captures et vos exemples réels.",
+    "prompt": "Propose 10 sujets d'articles qui répondent à de vraies questions de [cible] sur [thème], avec mot-clé principal et intention de recherche.",
+    "resultat": "Des articles utiles, fondés sur votre documentation.",
+    "piege": "Produire des articles en masse sans réponse précise."
    },
    {
     "titre": "Piloter le site par MCP",
-    "explication": "Idées, piliers éditoriaux, calendrier, contrôles avant publication.",
-    "prompt": null
+    "explication": "Idées, piliers éditoriaux, calendrier, contrôles avant publication. Les contrôles avant publication sont les mêmes pour chaque article.",
+    "prompt": "Vérifie cet article [article] avant publication : mot-clé principal, titre, description, liens internes, images avec texte alternatif, sources citées. Liste ce qui manque.",
+    "resultat": "Des articles qui passent tous les mêmes contrôles.",
+    "piege": "Publier sans relecture humaine."
    },
    {
     "titre": "Relire, publier, mesurer, recommencer",
-    "explication": "Rien ne part sans relecture humaine.",
-    "prompt": null
+    "explication": "Rien ne part sans relecture humaine. Mesurez 4 semaines après la publication, puis ajustez.",
+    "prompt": "Compare les positions et les clics des articles publiés il y a 4 semaines et propose les mises à jour à faire.",
+    "resultat": "Un cycle publier, mesurer, améliorer.",
+    "piege": "Ne jamais revenir sur un article publié."
    }
   ],
   "garde_fous": [
@@ -1746,6 +2294,15 @@
   "etat_reel": "Une centaine d'idées, quatre-vingts articles en relecture et trois articles publiés au moment de l'épisode.",
   "prompts": [
    "Propose 10 sujets d'articles qui répondent à de vraies questions de [cible] sur [thème], avec mot-clé principal et intention de recherche."
+  ],
+  "objectifs": [
+   "Repérer les vraies questions de vos clients et les mots-clés associés",
+   "Produire des articles utiles à partir de votre propre documentation",
+   "Piloter le site et ne publier qu'après relecture"
+  ],
+  "prerequis": [
+   "Un site et un accès à la Search Console",
+   "Votre documentation ou vos tutoriels"
   ]
  },
  {
@@ -1772,28 +2329,38 @@
   "etapes": [
    {
     "titre": "Donner l'objectif en un prompt",
-    "explication": "Depuis Claude ou ChatGPT.",
-    "prompt": "Trouve-moi des restaurants susceptibles d'être intéressés par FoodEatUp, qualifie les prospects et prépare les prochaines actions commerciales. Présente-moi les actions qui demandent mon accord avant de les exécuter."
+    "explication": "Depuis Claude ou ChatGPT. Le prompt contient l'objectif, la cible, la règle d'accord et le format du rendu.",
+    "prompt": "Trouve-moi des restaurants susceptibles d'être intéressés par FoodEatUp, qualifie les prospects et prépare les prochaines actions commerciales. Présente-moi les actions qui demandent mon accord avant de les exécuter.",
+    "resultat": "Un objectif commercial compris et découpé par l'assistant.",
+    "piege": "Oublier la règle « présente-moi les actions avant de les exécuter »."
    },
    {
     "titre": "Rechercher et enregistrer",
-    "explication": "Les outils du CRM recherchent les entreprises, retrouvent leurs informations et les enregistrent.",
-    "prompt": null
+    "explication": "Les outils du CRM recherchent les entreprises, retrouvent leurs informations et les enregistrent. Vérifiez quelques fiches à la main : les informations publiques changent.",
+    "prompt": "Recherche 20 [type d'établissement] à [ville], retrouve leurs informations publiques et prépare leur enregistrement dans le CRM. Montre-moi la liste avant d'enregistrer.",
+    "resultat": "Des fiches enregistrées après votre accord.",
+    "piege": "Enregistrer sans vérifier les doublons."
    },
    {
     "titre": "Segmenter",
-    "explication": "Restauration rapide, bar et brasserie, traiteur, chaînes et franchises.",
-    "prompt": null
+    "explication": "Restauration rapide, bar et brasserie, traiteur, chaînes et franchises. Un segment = un message adapté.",
+    "prompt": "Classe ces prospects [liste] par segment (restauration rapide, bar et brasserie, traiteur, chaînes et franchises) et propose l'argument principal pour chaque segment.",
+    "resultat": "Des segments avec leur argument propre.",
+    "piege": "Envoyer le même message à tous les segments."
    },
    {
     "titre": "Préparer la suite",
-    "explication": "Rendez-vous, devis et relances, avec traçabilité.",
-    "prompt": null
+    "explication": "Rendez-vous, devis et relances, avec traçabilité. Chaque action préparée est tracée dans le CRM avec sa date.",
+    "prompt": "Pour les prospects qualifiés, prépare en brouillon les prochaines actions : demande de rendez-vous, devis ou relance, avec leur date. N'envoie rien.",
+    "resultat": "Des actions prêtes, tracées, en attente de validation.",
+    "piege": "Envoyer un devis sans validation."
    },
    {
     "titre": "Garder la voix pour plus tard",
-    "explication": "L'agent vocal a son pitch et son catalogue, mais n'appelle personne tant que le numéro n'est pas connecté.",
-    "prompt": null
+    "explication": "L'agent vocal a son pitch et son catalogue, mais n'appelle personne tant que le numéro n'est pas connecté. Un agent vocal n'appelle personne tant que son numéro et son cadre ne sont pas validés.",
+    "prompt": "Liste ce qu'il faut valider avant qu'un agent vocal appelle des prospects : numéro, script, consentement, horaires, cadre légal. Ne lance aucun appel.",
+    "resultat": "Une liste de validations à faire avant tout appel.",
+    "piege": "Lancer des appels automatiques sans validation juridique."
    }
   ],
   "garde_fous": [
@@ -1803,6 +2370,15 @@
   "etat_reel": "70 prospects dans le pipeline ; agent vocal non connecté à un numéro au moment de l'épisode, donc aucun appel passé.",
   "prompts": [
    "Trouve-moi des restaurants susceptibles d'être intéressés par FoodEatUp, qualifie les prospects et prépare les prochaines actions commerciales. Présente-moi les actions qui demandent mon accord avant de les exécuter."
+  ],
+  "objectifs": [
+   "Écrire un prompt d'objectif commercial complet",
+   "Laisser Claude rechercher, qualifier et segmenter dans le CRM",
+   "Préparer rendez-vous, devis et relances avec traçabilité"
+  ],
+  "prerequis": [
+   "Un compte RapidoCRM connecté à Claude ou ChatGPT",
+   "Une offre et une cible définies"
   ]
  },
  {
@@ -1837,38 +2413,52 @@
   "etapes": [
    {
     "titre": "Cadrer la page",
-    "explication": "Une seule action principale (le rendez-vous), puis les vidéos, les projets par catégorie et les ressources. On décide avant de générer quoi que ce soit.",
-    "prompt": "Je publie [fréquence] des vidéos sur [thème]. Propose la structure d'un site lien-en-bio : profil, boutons d'action, vidéos, projets par catégorie, ressources gratuites, prise de rendez-vous. Une seule action principale par écran."
+    "explication": "Une seule action principale (le rendez-vous), puis les vidéos, les projets par catégorie et les ressources. On décide avant de générer quoi que ce soit. Notez en une phrase ce que le visiteur doit faire en arrivant.",
+    "prompt": "Je publie [fréquence] des vidéos sur [thème]. Propose la structure d'un site lien-en-bio : profil, boutons d'action, vidéos, projets par catégorie, ressources gratuites, prise de rendez-vous. Une seule action principale par écran.",
+    "resultat": "Une structure de page validée avant toute génération.",
+    "piege": "Mettre dix boutons de même importance."
    },
    {
     "titre": "Générer la base avec Lovable",
-    "explication": "Lovable construit le site, la base de données et le panneau d'administration protégé à partir d'une description. On vérifie l'aperçu avant d'aller plus loin.",
-    "prompt": "Crée un site lien-en-bio en français pour [prénom nom], [métier]. Accueil : portrait, bio courte, réseaux, bouton « Prendre rendez-vous », vidéos, projets, ressources gratuites. Un panneau d'administration protégé pour publier vidéos et projets. Couleurs : [charte]."
+    "explication": "Lovable construit le site, la base de données et le panneau d'administration protégé à partir d'une description. On vérifie l'aperçu avant d'aller plus loin. Relisez l'aperçu Lovable sur mobile : c'est là que viendront vos visiteurs.",
+    "prompt": "Crée un site lien-en-bio en français pour [prénom nom], [métier]. Accueil : portrait, bio courte, réseaux, bouton « Prendre rendez-vous », vidéos, projets, ressources gratuites. Un panneau d'administration protégé pour publier vidéos et projets. Couleurs : [charte].",
+    "resultat": "Un site de base en ligne, avec son administration.",
+    "piege": "Valider sur ordinateur seulement."
    },
    {
     "titre": "Reprendre le projet dans Claude Code",
-    "explication": "Le projet Lovable est relié à GitHub dans les deux sens. Claude Code le clone, lit ses règles (AGENTS.md), modifie le code, lance les tests et pousse sur la branche principale ; Lovable récupère le commit.",
-    "prompt": "Clone [dépôt GitHub], lis AGENTS.md, puis fais l'état des lieux : routes, tables, outils MCP, tests. Ne modifie rien avant mon accord."
+    "explication": "Le projet Lovable est relié à GitHub dans les deux sens. Claude Code le clone, lit ses règles (AGENTS.md), modifie le code, lance les tests et pousse sur la branche principale ; Lovable récupère le commit. Lisez AGENTS.md : il donne les règles du projet à respecter.",
+    "prompt": "Clone [dépôt GitHub], lis AGENTS.md, puis fais l'état des lieux : routes, tables, outils MCP, tests. Ne modifie rien avant mon accord.",
+    "resultat": "Un état des lieux du projet, sans modification.",
+    "piege": "Réécrire l'historique Git : Lovable perd sa synchronisation."
    },
    {
     "titre": "Ajouter les formations à débloquer",
-    "explication": "Le contenu complet n'est jamais lisible directement : un aperçu public, puis un déblocage avec prénom, email et consentement, qui renvoie un jeton n'ouvrant que cette formation. Chaque formation a son PDF.",
-    "prompt": "Ajoute des formations à débloquer : aperçu public sans le contenu, déblocage avec prénom, email et consentement, un jeton qui n'ouvre que sa formation, et un PDF par formation. Teste qu'un visiteur ne peut pas lire la table directement."
+    "explication": "Le contenu complet n'est jamais lisible directement : un aperçu public, puis un déblocage avec prénom, email et consentement, qui renvoie un jeton n'ouvrant que cette formation. Chaque formation a son PDF. Le contenu complet passe par des fonctions sécurisées, jamais par une lecture directe de la table.",
+    "prompt": "Ajoute des formations à débloquer : aperçu public sans le contenu, déblocage avec prénom, email et consentement, un jeton qui n'ouvre que sa formation, et un PDF par formation. Teste qu'un visiteur ne peut pas lire la table directement.",
+    "resultat": "Des formations à débloquer, testées contre la lecture directe.",
+    "piege": "Rendre la table des formations lisible par tous."
    },
    {
     "titre": "Donner un MCP au site",
-    "explication": "Un outil par fichier, une connexion OAuth, la vérification des droits d'administrateur à chaque appel et un journal des écritures. Toute création commence en brouillon ; rien n'est supprimé, on archive.",
-    "prompt": "Ajoute un serveur MCP d'administration : un fichier par outil, OAuth, vérification admin à chaque appel, journal des écritures. Toute création commence en brouillon ; on archive au lieu de supprimer."
+    "explication": "Un outil par fichier, une connexion OAuth, la vérification des droits d'administrateur à chaque appel et un journal des écritures. Toute création commence en brouillon ; rien n'est supprimé, on archive. Toute création passe par un brouillon : l'agent ne publie jamais seul.",
+    "prompt": "Ajoute un serveur MCP d'administration : un fichier par outil, OAuth, vérification admin à chaque appel, journal des écritures. Toute création commence en brouillon ; on archive au lieu de supprimer.",
+    "resultat": "Un serveur MCP protégé par OAuth et journalisé.",
+    "piege": "Donner à l'agent un outil de suppression définitive."
    },
    {
     "titre": "Habiller avec la vraie charte",
-    "explication": "Logos, chartes et écrans officiels viennent de la bibliothèque de marque ; tout écran qui montre un prix ou une remise est écarté. Les prompts s'affichent comme une conversation, avec un bouton pour les ouvrir dans Claude. Une version blanche complète la version nuit.",
-    "prompt": "Récupère les logos et les écrans officiels de [marque] depuis la bibliothèque de marque. Écarte tout écran qui affiche un prix ou une remise. Ajoute une version blanche avec des contrastes AA."
+    "explication": "Logos et écrans officiels viennent de la bibliothèque de marque ; chaque formation porte la charte graphique de son logiciel. Tout écran qui montre un prix ou une remise est écarté. Les prompts s'affichent comme une conversation, avec un bouton pour les ouvrir dans Claude.",
+    "prompt": "Récupère les logos et les écrans officiels de [marque] depuis la bibliothèque de marque. Écarte tout écran qui affiche un prix ou une remise. Ajoute une version blanche avec des contrastes AA.",
+    "resultat": "Un site aux vraies couleurs de vos marques, sans logo redessiné.",
+    "piege": "Redessiner un logo ou générer un faux écran."
    },
    {
     "titre": "Vérifier, puis mettre en production",
-    "explication": "Tests et build avant chaque envoi. Les migrations de base se jouent à part : la synchronisation Lovable ne les applique pas. Après le déploiement, on vérifie chaque page en ligne et le refus du MCP sans jeton.",
-    "prompt": "Après déploiement, vérifie en ligne chaque page, chaque PDF, et que /mcp répond 401 sans jeton. Compare le dernier commit de main avec le mien et signale tout fichier écrasé."
+    "explication": "Tests et build avant chaque envoi. Les migrations de base se jouent à part : la synchronisation Lovable ne les applique pas. Après le déploiement, on vérifie chaque page en ligne et le refus du MCP sans jeton. Après chaque synchronisation Lovable, vérifiez que vos fichiers sont toujours là.",
+    "prompt": "Après déploiement, vérifie en ligne chaque page, chaque PDF, et que /mcp répond 401 sans jeton. Compare le dernier commit de main avec le mien et signale tout fichier écrasé.",
+    "resultat": "Un site vérifié en ligne, page par page.",
+    "piege": "Croire qu'un déploiement réussi veut dire que tout est en ligne."
    }
   ],
   "garde_fous": [
@@ -1877,6 +2467,16 @@
    "Toute création passe par un brouillon ; la publication attend une validation humaine.",
    "Après chaque synchronisation Lovable, vérifier que le travail n'a pas été écrasé."
   ],
-  "etat_reel": "Site en ligne le 27/10 sur michael.foodeatup.fr : 31 vidéos, 30 formations (153 étapes, 60 PDF nuit et blanc), 16 projets, 6 offres, 37 outils MCP qui refusent l'accès sans jeton (401). Les migrations ont été appliquées à la main ; une fusion Lovable a écrasé les formations, rétablies cinq minutes plus tard. Aucun contact n'était encore inscrit au moment de l'épisode."
+  "etat_reel": "Site en ligne le 27/10 sur michael.foodeatup.fr : 31 vidéos, 30 formations (153 étapes, 60 PDF nuit et blanc), 16 projets, 6 offres, 37 outils MCP qui refusent l'accès sans jeton (401). Les migrations ont été appliquées à la main ; une fusion Lovable a écrasé les formations, rétablies cinq minutes plus tard. Aucun contact n'était encore inscrit au moment de l'épisode.",
+  "objectifs": [
+   "Construire un site lien-en-bio avec vidéos, projets, rendez-vous et formations à débloquer",
+   "Reprendre le projet Lovable dans Claude Code et le mettre en production",
+   "Donner au site un MCP pour que Claude le tienne à jour avec vous"
+  ],
+  "prerequis": [
+   "Un compte Lovable relié à GitHub",
+   "Claude Code",
+   "Vos contenus : vidéos, projets, liens"
+  ]
  }
 ]
