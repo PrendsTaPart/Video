@@ -1,0 +1,107 @@
+{
+  "video": 20,
+  "duree_s": 76,
+  "format": "1080x1920",
+  "voix": "ElevenLabs Noé, eleven_v4",
+  "sequences": [
+    {
+      "t": [
+        0,
+        5.12
+      ],
+      "sequence": "Récapitulatif",
+      "visuel": "Mosaïque des 16 miniatures des épisodes montés, compteur 19"
+    },
+    {
+      "t": [
+        5.12,
+        11.3
+      ],
+      "sequence": "Révélation",
+      "visuel": "Michael (pose bras ouverts), logos officiels FoodEatUp, RapidoCRM, RapidoCMS, RapidoRH, Plan'It, BraindCode, StartupForge"
+    },
+    {
+      "t": [
+        11.3,
+        16.1
+      ],
+      "sequence": "Vision",
+      "visuel": "« Une véritable équipe d'employés IA »"
+    },
+    {
+      "t": [
+        16.1,
+        21.1
+      ],
+      "sequence": "Objectif",
+      "visuel": "« Trouve 20 nouveaux clients… » + Objectif fictif"
+    },
+    {
+      "t": [
+        21.1,
+        34.35
+      ],
+      "sequence": "Orchestration (séquence centrale)",
+      "visuel": "Plan'It au centre + agent Pilotage ; RapidoCMS/Contenus, RapidoCRM/Prescripteurs + Relance et devis, FoodEatUp/Accueil des demandes, Formation (pas d'agent) ; connexions colorées aux couleurs des chartes, tâches qui circulent (illustration)"
+    },
+    {
+      "t": [
+        34.35,
+        38.68
+      ],
+      "sequence": "MCP",
+      "visuel": "Cinq adresses MCP réelles"
+    },
+    {
+      "t": [
+        38.68,
+        45.26
+      ],
+      "sequence": "Mon équipe aujourd'hui",
+      "visuel": "6 agents réels « à configurer », routines V0, échelle Aperçu / Brouillon / Confirmé"
+    },
+    {
+      "t": [
+        45.26,
+        48.78
+      ],
+      "sequence": "Boucle",
+      "visuel": "Objectif, indicateur, critère d'arrêt, accord humain ; boucle Objectif → Planification → Attribution → Exécution → Contrôle → Résultats → Amélioration"
+    },
+    {
+      "t": [
+        48.78,
+        53.8
+      ],
+      "sequence": "Verdict",
+      "visuel": "V0 → V1 → V2, gardée / ajustée / arrêtée"
+    },
+    {
+      "t": [
+        53.8,
+        55.96
+      ],
+      "sequence": "Tableau de pilotage",
+      "visuel": "6 compteurs réels à 0 · « Tout est prêt. Rien n'a encore tourné. »"
+    },
+    {
+      "t": [
+        55.96,
+        62.02
+      ],
+      "sequence": "Punchline",
+      "visuel": "Avant / aujourd'hui"
+    },
+    {
+      "t": [
+        62.02,
+        76
+      ],
+      "sequence": "Vision et question",
+      "visuel": "Grille de 100 agents (illustration) autour de Michael, question finale, « Réponds en commentaire »"
+    }
+  ],
+  "musique": "musique-184, ducking",
+  "sfx": "whoosh aux révélations, tick à chaque connexion MCP, pop sur les verdicts",
+  "sous_titres": "Poppins SemiBold 50 incrustés"
+}

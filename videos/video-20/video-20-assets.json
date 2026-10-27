@@ -1,0 +1,23 @@
+{
+  "logos": "assets/logos/ (manifeste.json : 21 fichiers officiels + icône Plan'It du site)",
+  "miniatures_episodes": [
+    "episode0",
+    "episode1",
+    "episode4",
+    "episode5",
+    "episode6",
+    "episode8",
+    "episode9",
+    "episode10",
+    "video-11 à video-18"
+  ],
+  "photo": "braindcode-profil.jpg",
+  "poses": [
+    "bras-ouverts.webp",
+    "presente.webp"
+  ],
+  "donnees": "video-20-mcp-audit.md",
+  "voix": "ElevenLabs Noé 7pDdnNI6PhXmAp0pXFZm",
+  "higgsfield": "aucun plan généré",
+  "portraits_agents": "aucun : les agents Formation n'ont pas de portrait (portrait_chemin vide), on n'en invente pas"
+}
