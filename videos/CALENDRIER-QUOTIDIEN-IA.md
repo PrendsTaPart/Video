@@ -37,4 +37,4 @@ Programmé le 27/10/2026 à 5 h 30 (Paris) par RapidoCMS. Compte : profil Linked
 | 24/11 | 29 · Mes agents IA font du SEO | 1856 | 1765 |
 | 25/11 | 26 · PRONOCLIP, mon IA de pronostics foot | 1857 | 1766 |
 
-Épisodes 27, 28 et 29 ajoutés le 27/10. Épisode 26 ajouté ensuite. Reste absent : **7** (créneau libre à partir du 26/11).
+Épisodes 27, 28 et 29 ajoutés le 27/10. Épisode 26 ajouté ensuite. Épisode **7** produit le 27/10 (`episode7-lovable-claude-mcp/`) : **non programmé**, en attente de validation (créneau proposé : 26/11, 18:00, LinkedIn).
