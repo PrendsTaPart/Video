@@ -32,5 +32,8 @@ Programmé le 27/10/2026 à 5 h 30 (Paris) par RapidoCMS. Compte : profil Linked
 | 19/11 | 24 · Mon recruteur IA | 1851 | 1760 |
 | 20/11 | 25 · Mon IA présente mes logiciels | 1852 | 1761 |
 | 21/11 | 30 · Mon commercial IA | 1853 | 1762 |
+| 22/11 | 27 · Des routes n8n aux autoroutes MCP | 1854 | 1763 |
+| 23/11 | 28 · Mon département de prospection IA | 1855 | 1764 |
+| 24/11 | 29 · Mes agents IA font du SEO | 1856 | 1765 |
 
-Épisodes absents du dépôt, donc non programmés : **7, 26, 27, 28, 29**. Ils pourront prendre les créneaux suivants (à partir du 22/11).
+Épisodes 27, 28 et 29 ajoutés le 27/10. Restent absents : **7 et 26** (créneaux libres à partir du 25/11).
