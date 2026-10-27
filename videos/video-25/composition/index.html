@@ -1,0 +1,97 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Vidéo 25 : mon IA présente mes logiciels</title>
+<link rel="stylesheet" href="base.css">
+<style>
+:root{--rb:#03A9F5;--rg:#4CAF50;--rv:#7E57C2;--ink:#383838;--bg:#F0F2F5}
+#stage{background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,P,sans-serif}
+.cut{position:absolute;left:-200px;width:1500px;height:60px;transform:rotate(-8deg)}
+.chip{color:var(--rb)}.title{color:var(--ink)}.title b{color:var(--rb)}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700;color:var(--ink)}
+.card{position:absolute;background:#fff;border-radius:24px;box-shadow:0 12px 32px rgba(56,56,56,.14);overflow:hidden}
+.card img{width:100%;height:100%;object-fit:cover;object-position:top left}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 20px 50px rgba(56,56,56,.25)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.pp{position:absolute;padding:12px 24px;border-radius:999px;font-weight:700;font-size:30px;background:#fff;box-shadow:0 8px 20px rgba(56,56,56,.12);white-space:nowrap}
+.pp.b{background:var(--rb);color:#fff}
+.st{position:absolute;left:140px;width:800px;height:100px;border-radius:20px;background:#fff;box-shadow:0 8px 22px rgba(56,56,56,.12);display:flex;align-items:center;gap:22px;padding:0 26px;font-size:36px;font-weight:700}
+.st i{font-style:normal;flex:none;width:58px;height:58px;border-radius:29px;background:var(--rb);color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px}
+.rt{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:18px;background:#fff;border-radius:18px;padding:16px 22px;box-shadow:0 8px 22px rgba(56,56,56,.1)}
+.rt code{font-family:'DejaVu Sans Mono',monospace;font-size:30px;color:var(--rb);font-weight:700}
+.rt span{font-size:24px}
+.rt em{margin-left:auto;font-style:normal;font-weight:700;font-size:19px;border-radius:999px;padding:6px 14px}
+.real{color:#6b7280}
+.bubble{position:absolute;background:#fff;border-radius:28px 28px 6px 28px;padding:20px 26px;font-weight:700;font-size:34px;box-shadow:0 14px 36px rgba(56,56,56,.18)}
+.lg{position:absolute;background:#fff;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(56,56,56,.14)}
+.lg img{max-width:84%;max-height:78%}
+.kp{position:absolute;width:300px;height:180px;border-radius:22px;background:#fff;box-shadow:0 8px 22px rgba(56,56,56,.1);text-align:center;padding-top:22px}
+.kp b{display:block;font-size:72px;line-height:1;color:var(--ink)}.kp span{font-size:22px;color:#6b7280}
+.sb{position:absolute;left:60px;width:960px;display:flex;gap:18px;align-items:center;background:#fff;border-radius:18px;padding:14px 20px;box-shadow:0 8px 22px rgba(56,56,56,.1);font-size:26px}
+.sb i{font-style:normal;flex:none;width:52px;height:52px;border-radius:12px;background:#007BFF;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+.sb small{display:block;color:#6b7280;font-size:20px}
+.demo{position:absolute;background:#FFF1D6;color:#9a5b00;border-radius:999px;padding:8px 20px;font-weight:700;font-size:21px}
+#logos .lp{background:#fff}
+</style></head><body>
+<div id="stage">
+  <div class="scene" id="s0"><img class="pose" id="s0m" src="a/po/telephone.webp" style="left:300px;top:780px;width:520px"><div id="s0d"></div>
+    <div class="big" id="s0a" style="top:220px;font-size:76px;line-height:1.05">Un agent IA qui<br><span style="color:var(--rb)">présente mes logiciels</span></div></div>
+  <div class="scene" id="s1"><div class="card" id="s1c" style="left:40px;top:500px;width:1000px;height:563px"><img id="s1i" src="a/pres/0001.jpg"></div>
+    <div class="big" id="s1a" style="top:220px;font-size:62px;line-height:1.1">Les mêmes démos,<br><span style="color:var(--rb)">encore et encore</span></div>
+    <div class="real" style="left:70px;top:1110px">Film de présentation officiel de RapidoTuto (dépôt)</div></div>
+  <div class="scene" id="s2"><div class="cut" style="top:300px;background:var(--rg)"></div><div class="cut" style="top:360px;background:var(--rb)"></div><div class="cut" style="top:420px;background:var(--rv)"></div>
+    <img id="s2i" src="a/lg/rapidotuto-icon.png" style="position:absolute;left:390px;top:640px;width:300px;border-radius:60px;box-shadow:0 20px 50px rgba(56,56,56,.25)">
+    <div class="big" id="s2t" style="top:1000px;font-size:110px"><span style="color:#383838">Rapido</span><span style="color:var(--rb)">Tuto</span></div></div>
+  <div class="scene" id="s3"><div class="chip">Storyboard et enregistrement</div>
+    <div class="title" style="font-size:56px">L'IA écrit le storyboard,<br><b>je filme une seule fois</b></div>
+    <div class="card" id="s3a" style="left:60px;top:400px;width:960px;height:600px"><img src="a/img/storyboard.webp"></div>
+    <div class="card" id="s3b" style="left:60px;top:1040px;width:960px;height:540px"><img src="a/img/recording.webp"></div>
+    <div class="real" style="left:70px;top:1610px">Captures de l'application RapidoTuto</div></div>
+  <div class="scene" id="s4"><div class="chip">L'avatar</div>
+    <img id="s4a" src="a/img/avatar.png" style="position:absolute;left:190px;top:260px;width:700px">
+    <div class="pp b" id="l0" style="left:110px;top:1260px">Français</div><div class="pp b" id="l1" style="left:420px;top:1260px">English</div><div class="pp b" id="l2" style="left:730px;top:1260px">العربية</div>
+    <div class="real" style="left:70px;top:1380px">Rendu réel de l'avatar 3D du Studio · voix générée</div></div>
+  <div class="scene" id="s5"><div class="chip">La chaîne</div><div id="s5s"></div></div>
+  <div class="scene" id="s6"><div class="chip">Présentation en direct · /live/:token</div>
+    <div class="card" id="s6c" style="left:40px;top:220px;width:1000px;height:563px"><img id="s6i" src="a/pres/0300.jpg"></div>
+    <div class="st" id="lv0" style="top:860px"><i>1</i>Le client interrompt l'avatar</div>
+    <div class="st" id="lv1" style="top:980px"><i>2</i>Pause, l'assistant répond</div>
+    <div class="st" id="lv2" style="top:1100px"><i>3</i>Il ouvre le bon passage</div>
+    <div class="demo" id="lvd" style="left:60px;top:1240px">Code vérifié · aucun lien partagé pour le tester en direct</div></div>
+  <div class="scene" id="s7"><div class="chip">Partager et apprendre</div>
+    <div class="rt" id="r0" style="top:240px"><code>/watch/:token</code><span>vidéo + assistant</span></div>
+    <div class="rt" id="r1" style="top:350px"><code>/live/:token</code><span>présentation en direct</span></div>
+    <div class="rt" id="r2" style="top:460px"><code>/centre/:token</code><span>centre d'aide public</span></div>
+    <div class="rt" id="r3" style="top:570px"><code>/embed/:token</code><span>widget pour ton site</span></div>
+    <div class="card" id="r4" style="left:60px;top:700px;width:960px;height:462px"><img src="a/img/stats.webp"></div>
+    <div class="real" style="left:70px;top:1190px">Questions sans réponse = prochains tutos · capture de l'application</div></div>
+  <div class="scene" id="s8"><div class="chip">Le MCP RapidoTuto</div>
+    <div class="title" style="font-size:54px">Mes agents IA<br><b>améliorent mes présentations</b></div>
+    <div id="s8r"></div>
+    <div class="real" style="left:70px;top:1480px">rapidotuto-mcp 0.1.0 · OAuth : chaque compte ne voit que ses données</div></div>
+  <div class="scene" id="s9"><div class="chip">Où j'en suis</div>
+    <div class="kp" id="k0" style="left:60px;top:220px"><b>9</b><span>projets</span></div><div class="kp" id="k1" style="left:390px;top:220px"><b>0</b><span>lien partagé</span></div><div class="kp" id="k2" style="left:720px;top:220px"><b>0</b><span>question reçue</span></div>
+    <div class="real" id="k3" style="left:70px;top:430px">Base RapidoTuto, lecture seule, 27/10</div>
+    <div class="big" id="k4" style="top:540px;font-size:56px">Prochaine présentation :</div>
+    <div class="lg" id="k5" style="left:330px;top:630px;width:420px;height:130px"><img src="a/lg/foodeatup.png"></div>
+    <div id="s9s"></div>
+    <div class="demo" id="k6" style="left:60px;top:1500px">Scènes préparées d'après la mission F3 · pas encore créées dans RapidoTuto</div></div>
+  <div class="scene" id="s10"><div class="big" id="s10a" style="top:540px;font-size:52px;color:#6b7280">Avant, je répétais<br>les mêmes démonstrations.</div>
+    <div class="big" id="s10b" style="top:780px;font-size:72px;line-height:1.1">Aujourd'hui,<br>un <span style="color:var(--rb)">présentateur IA</span><br>répond aux questions.</div></div>
+  <div class="scene" id="s11"><div class="cut" style="top:1650px;background:var(--rg)"></div><div class="cut" style="top:1710px;background:var(--rb)"></div><div class="cut" style="top:1770px;background:var(--rv)"></div>
+    <div class="ring" id="s11p" style="left:60px;top:300px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <img id="s11v" src="a/img/avatar.png" style="position:absolute;left:560px;top:180px;width:460px">
+    <div class="bubble" id="s11b" style="left:420px;top:240px">Vous avez une question ?</div>
+    <div class="quote" id="s11q" style="top:900px;font-size:36px;text-align:center;background:#fff;box-shadow:0 10px 26px rgba(56,56,56,.12)"><b style="color:var(--rb)">ET TOI ?</b>Un agent IA qui présente tes produits à ta place, ça te dirait ?</div>
+    <div class="abs" id="s11l" style="left:0;right:0;top:1180px;display:flex;justify-content:center;gap:20px"><div class="lg" style="position:static;width:150px;height:150px"><img src="a/lg/rapidotuto-icon.png" style="max-width:100%;max-height:100%;border-radius:30px"></div><div class="lg" style="position:static;width:300px;height:150px"><img src="a/lg/rapidosoftware.png"></div><div class="lg" style="position:static;width:300px;height:150px"><img src="a/lg/foodeatup.png"></div></div></div>
+  <div class="scene" id="thumb"><div class="cut" style="top:1720px;background:var(--rg)"></div><div class="cut" style="top:1780px;background:var(--rb)"></div><div class="cut" style="top:1840px;background:var(--rv)"></div>
+    <div class="big" style="top:90px;font-size:40px;letter-spacing:6px;color:var(--rb)">VIDÉO 25</div>
+    <div class="big" style="top:160px;font-size:104px;line-height:1">MON IA<br>PRÉSENTE<br><span style="color:var(--rb)">MES LOGICIELS !</span></div>
+    <img class="pose" src="a/po/presente.webp" style="left:-60px;top:820px;width:480px">
+    <div class="card" style="left:300px;top:760px;width:500px;height:500px;border:6px solid #fff"><img src="a/img/foodeatup-ecran.jpg" style="object-position:center"></div>
+    <img src="a/img/avatar.png" style="position:absolute;left:700px;top:860px;width:420px">
+    <div class="bubble" style="left:560px;top:690px;font-size:30px">Vous avez une question ?</div>
+    <div class="lg" style="left:120px;top:1450px;width:180px;height:180px"><img src="a/lg/rapidotuto-icon.png" style="max-width:100%;max-height:100%;border-radius:36px"></div>
+    <div class="lg" style="left:340px;top:1490px;width:360px;height:110px"><img src="a/lg/foodeatup.png"></div>
+  </div>
+  <div id="logos"><div class="lp"><img src="a/lg/rapidosoftware.png" style="height:36px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>

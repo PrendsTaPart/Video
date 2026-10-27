@@ -1,0 +1,124 @@
+1
+00:00:00,600 --> 00:00:02,360
+Aujourd'hui, je vais te montrer comment j'ai créé
+
+2
+00:00:02,360 --> 00:00:05,120
+un agent IA qui présente mes logiciels à ma place.
+
+3
+00:00:05,120 --> 00:00:07,120
+Parce que quand tu développes plusieurs logiciels,
+
+4
+00:00:07,120 --> 00:00:09,120
+il faut aussi expliquer comment ils fonctionnent.
+
+5
+00:00:09,120 --> 00:00:11,680
+Et refaire les mêmes démonstrations à chaque nouveau client,
+
+6
+00:00:11,680 --> 00:00:13,520
+ça prend énormément de temps !
+
+7
+00:00:13,520 --> 00:00:15,700
+Alors, j'ai développé RapidoTuto.
+
+8
+00:00:15,700 --> 00:00:17,920
+L'IA propose le storyboard : les scènes,
+
+9
+00:00:17,920 --> 00:00:20,020
+le texte de l'avatar et l'action à filmer.
+
+10
+00:00:20,020 --> 00:00:21,660
+Je filme mon écran une seule fois,
+
+11
+00:00:21,660 --> 00:00:23,300
+et chaque scène se découpe toute seule.
+
+12
+00:00:23,300 --> 00:00:25,900
+Ensuite, un avatar 3D présente les fonctionnalités,
+
+13
+00:00:25,900 --> 00:00:28,750
+avec une voix générée, en français, en anglais ou en arabe.
+
+14
+00:00:30,800 --> 00:00:33,080
+Mais je ne voulais pas simplement créer une vidéo.
+
+15
+00:00:33,080 --> 00:00:35,560
+J'ai aussi codé un mode de présentation en direct :
+
+16
+00:00:35,560 --> 00:00:38,260
+le client peut interrompre l'avatar, poser sa question,
+
+17
+00:00:38,260 --> 00:00:40,140
+et l'assistant lui répond à partir du script,
+
+18
+00:00:40,140 --> 00:00:41,460
+puis l'emmène au bon passage.
+
+19
+00:00:41,460 --> 00:00:44,220
+Je peux partager les tutoriels, les intégrer dans un centre d'aide,
+
+20
+00:00:44,220 --> 00:00:47,280
+et retrouver les questions sans réponse : ce sont mes prochains tutos.
+
+21
+00:00:47,280 --> 00:00:49,720
+Et grâce au MCP de RapidoTuto, mes agents IA
+
+22
+00:00:49,720 --> 00:00:52,200
+peuvent consulter les demandes d'assistance et les statistiques,
+
+23
+00:00:52,200 --> 00:00:53,720
+pour améliorer mes présentations.
+
+24
+00:00:53,720 --> 00:00:54,920
+Pour l'instant, c'est prêt,
+
+25
+00:00:54,920 --> 00:00:56,680
+mais pas encore partagé à mes clients.
+
+26
+00:00:56,680 --> 00:00:58,400
+Ma prochaine présentation : FoodEatUp.
+
+27
+00:01:02,480 --> 00:01:05,020
+Avant, je devais répéter les mêmes démonstrations.
+
+28
+00:01:05,020 --> 00:01:07,040
+Aujourd'hui, je construis un présentateur IA
+
+29
+00:01:07,040 --> 00:01:10,000
+capable d'expliquer mes logiciels et de répondre aux questions.
+
+30
+00:01:10,000 --> 00:01:11,380
+Et toi, tu aimerais avoir un agent IA
+
+31
+00:01:11,380 --> 00:01:13,430
+qui présente tes produits à ta place ?
+
