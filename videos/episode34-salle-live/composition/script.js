@@ -5,7 +5,7 @@ const A=[0,7.04,15.34,24.78,36.42,45.62,54.46,65.72,72.63],P=[0.4,12.2,27.2,45.2
 const V=(i,w)=>P[i]+(w-A[i]);const DUR=120;
 const SC=[['s1',0,12],['s2',12,27],['s3',27,45],['s4',45,63],['s5',63,80],['s6',80,96],['s7',96,110],['s8',110,DUR]];
 const RULES=[['🍽️','Pas encore de commande','no_order'],['🧾',"Attente de l'addition",'bill_wait'],['🧹','Table à débarrasser','to_clear'],['⏳',"Liste d'attente",'waitlist'],['🔥','Rush','rush'],['📡','Boîtier hors ligne','device_offline'],['📈','Affluence supérieure à la prévision','forecast_over']];
-$('a2').innerHTML=RULES.map((r,i)=>`<div class="al" id="ar${i}" style="top:${980+i*84}px"><i>${r[0]}</i>${r[1]}<code>${r[2]}</code></div>`).join('');
+$('a2').innerHTML=RULES.map((r,i)=>`<div class="al" id="ar${i}" style="top:${980+i*84}px"><i>${r[0]}</i>${r[1]}</div>`).join('');
 function pop(el,t,a,d=.4,dy=40,sc=0){const p=eout(cl((t-a)/d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px) scale(${1-sc*(1-p)})`;return p;}
 function slam(el,t,a){const x=cl((t-a)/.3);el.style.opacity=x>0?1:0;el.style.transform=`scale(${x<1?1.5-.5*eout(x):1})`;}
 function xf(ids,t,ts){ids.forEach((id,k)=>{const a=ts[k],b=ts[k+1]??1e9;$(id).style.opacity=k===0?1:cl((t-a)/.5);$(id).style.display=t>=a-.01||k===0?'block':'none';});}

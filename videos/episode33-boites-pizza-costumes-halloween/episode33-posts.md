@@ -8,7 +8,7 @@ Enfin… pas encore imprimées. Voici où on en est.
 
 Pour Chez Jello, un camion pizza du Pays Basque, j'ai confié une mission à Zied, mon graphiste : faire du couvercle de la boîte un costume. On mange sa pizza, on relève le couvercle, on passe la tête dans la découpe… et on fait la photo à deux.
 
-Le résultat dans Figma : 20 designs, soit 10 duos.
+Le résultat dans Figma : toute une collection de duos.
 Vampires gothiques, sorcière & sorcier, squelettes royaux, royauté citrouille, mariés fantômes, momies royales, laboratoire hanté, loup & lune, zombies chez Jello, araignées royales.
 
 Qui a fait quoi :
@@ -34,7 +34,7 @@ Quel duo vous choisiriez ? 👇
 
 🎃 Une boîte à pizza qui devient un costume !
 
-20 designs. 10 duos Halloween. Un couvercle, une découpe pour la tête, et une photo à deux 📸
+Toute une collection de duos Halloween. Un couvercle, une découpe pour la tête, et une photo à deux 📸
 
 Projet pour Chez Jello 🍕, imaginé avec Zied, mon graphiste, dans Figma. Décors et costumes générés avec l'IA, direction artistique de Zied.
 
@@ -53,18 +53,12 @@ Vous prenez quel duo ? 🧛‍♂️🧙‍♀️💀🎃👻🧟
 **Description** :
 Pour Chez Jello, un camion pizza du Pays Basque, j'ai demandé à Zied, mon graphiste, de faire du couvercle de la boîte à pizza un costume d'Halloween.
 
-Résultat dans Figma : 20 designs, soit 10 duos (vampires gothiques, sorcière & sorcier, squelettes royaux, royauté citrouille, mariés fantômes, momies royales, laboratoire hanté, loup & lune, zombies chez Jello, araignées royales).
+Résultat dans Figma : toute une collection de duos (vampires gothiques, sorcière & sorcier, squelettes royaux, royauté citrouille, mariés fantômes, momies royales, laboratoire hanté, loup & lune, zombies chez Jello, araignées royales).
 
 Les décors et costumes ont été générés avec l'IA ; Zied a fait la direction artistique, la mise en page et la cohérence. Les boîtes ne sont pas encore imprimées : découpe, impression et QR code restent à valider avec le client.
 
 Épisode 33/365 de « Mon quotidien d'entrepreneur avec l'IA ».
 Toutes les vidéos et formations : https://michael.foodeatup.fr
 
-00:00 L'idée
-00:24 La collection dans Figma
-00:40 Les 10 duos
-01:05 Les détails et ce qu'il reste à vérifier
-01:20 L'expérience envisagée
-01:38 Mon quotidien d'entrepreneur
 
 **Tags** : halloween, boîte à pizza, packaging, costume halloween, figma, ia, design, restauration, entrepreneur, chez jello

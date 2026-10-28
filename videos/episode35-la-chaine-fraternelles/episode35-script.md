@@ -1,6 +1,6 @@
 # Épisode 35/365 : « J'ai offert des agents IA à ma sœur ! »
 
-81 s (+ short 43 s) · 9:16 · 1080 × 1920 · 30 i/s · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, eleven_multilingual_v2, une prise de 49,4 s, ralentie à 0,9 → 54,9 s) · narration à la première personne · musique `hero-video/assets/music/musique-avec.mp3` à 30 % avec ducking.
+81 s (+ short 43 s) · 9:16 · 1080 × 1920 · 30 i/s · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, eleven_v4, une prise de 49,4 s, ralentie à 0,9 → 54,9 s) · narration à la première personne · musique `hero-video/assets/music/musique-avec.mp3` à 30 % avec ducking.
 
 Direction artistique : planche de style validée par Michael le 27/10 (`../episode35-la-chaine-fraternelles-preview/episode35-planche-style.png`) — Deep Rose `#BC4792`, Soft Pink `#E080B4`, Light Gray `#ECF0F3`, Dancing Script + Inter, logo officiel du site non modifié.
 
@@ -8,21 +8,23 @@ Le texte d'origine était dans une session qui n'est plus lisible : le script a 
 
 ## Narration
 
-Aujourd'hui, j'ai voulu faire un cadeau à ma sœur. Elle fait vivre La Chaîne Fratern'Elles, une association d'Aulnay-sous-Bois qui accompagne des familles depuis 2018.
+> **Refait le 28/10** à la demande de Michael : même voix et même modèle que les épisodes 1 à 30 (Noé, `eleven_v4`, débit naturel), langage simple sans terme technique ni chiffre, textes techniques retirés de l'écran. Nouvelle durée : 70s. Les temps du storyboard ci-dessous sont ceux de la version précédente ; l'ordre des scènes est inchangé.
 
-Distributions, collectes, sorties, aide aux devoirs : elle donne énormément de temps aux autres. Et il lui en reste très peu pour l'administratif et la communication.
+Aujourd'hui, j'ai voulu faire un cadeau à ma sœur. Elle fait vivre La Chaîne Fratern'Elles, une association d'Aulnay-sous-Bois qui aide des familles.
 
-Alors je lui ai construit un site avec Lovable : les événements, les collectes, les actions, et l'inscription des bénévoles.
+Distributions, collectes, sorties, aide aux devoirs : elle donne énormément de temps aux autres. Et il lui en reste très peu pour la paperasse et la communication.
 
-J'ai repris sa charte graphique, créée sur Canva : le rose profond, les écritures manuscrites, et sa devise : ensemble, chaque maillon compte.
+Alors je lui ai créé un site avec Lovable : les événements, les collectes, les actions, et l'inscription des bénévoles.
 
-Puis j'ai branché un MCP sur son site. Ses agents IA peuvent préparer un événement, une collecte ou un article… mais seulement en brouillon. Rien n'est publié sans elle.
+J'ai repris ses couleurs, créées sur Canva : le rose profond, les écritures à la main, et sa devise : ensemble, chaque maillon compte.
 
-Ensuite, je l'ai formée à ChatGPT, Canva et Gmail. Demain, elle pourra simplement parler à ses agents pour préparer la prochaine sortie de l'association.
+Puis j'ai donné à ses assistants IA un accès à son site. Ils peuvent préparer un événement, une collecte ou un article… mais seulement en brouillon. Rien n'est publié sans elle.
+
+Ensuite, je l'ai formée à ChatGPT, Canva et Gmail. Demain, elle pourra simplement demander à ses assistants de préparer la prochaine sortie de l'association.
 
 Mon objectif, ce n'est pas de remplacer les bénévoles. C'est de leur rendre du temps, pour être sur le terrain, avec les familles.
 
-Parfois, le plus beau cadeau… c'est du temps. Et l'IA peut aussi nous redonner du temps.
+Parfois, le plus beau cadeau… c'est du temps. Et l'IA peut aussi nous en redonner.
 
 ## Storyboard
 

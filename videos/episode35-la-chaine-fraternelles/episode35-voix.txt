@@ -1,0 +1,17 @@
+Voix : Noé (ElevenLabs 7pDdnNI6PhXmAp0pXFZm), eleven_v4, débit naturel (flow UA2lKZeFQTV79AsyPo89, prise cF6nsmR7yoRWzPXhaE3y).
+
+Aujourd'hui, j'ai voulu faire un cadeau à ma sœur. Elle fait vivre La Chaîne Fratern'Elles, une association d'Aulnay-sous-Bois qui aide des familles.
+
+Distributions, collectes, sorties, aide aux devoirs : elle donne énormément de temps aux autres. Et il lui en reste très peu pour la paperasse et la communication.
+
+Alors je lui ai créé un site avec Lovable : les événements, les collectes, les actions, et l'inscription des bénévoles.
+
+J'ai repris ses couleurs, créées sur Canva : le rose profond, les écritures à la main, et sa devise : ensemble, chaque maillon compte.
+
+Puis j'ai donné à ses assistants IA un accès à son site. Ils peuvent préparer un événement, une collecte ou un article… mais seulement en brouillon. Rien n'est publié sans elle.
+
+Ensuite, je l'ai formée à ChatGPT, Canva et Gmail. Demain, elle pourra simplement demander à ses assistants de préparer la prochaine sortie de l'association.
+
+Mon objectif, ce n'est pas de remplacer les bénévoles. C'est de leur rendre du temps, pour être sur le terrain, avec les familles.
+
+Parfois, le plus beau cadeau… c'est du temps. Et l'IA peut aussi nous en redonner.

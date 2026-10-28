@@ -1,212 +1,251 @@
 1
-00:00:00,400 --> 00:00:02,060
-Aujourd'hui, j'ai demandé à Zied,
+00:00:00,400 --> 00:00:01,060
+Aujourd'hui
 
 2
-00:00:02,060 --> 00:00:02,820
-mon graphiste,
+00:00:01,060 --> 00:00:02,040
+j'ai confié à Zied
 
 3
-00:00:02,820 --> 00:00:04,140
-de travailler sur un projet
+00:00:02,040 --> 00:00:02,760
+mon graphiste
 
 4
-00:00:04,140 --> 00:00:06,040
-un peu particulier pour l'un de mes clients :
+00:00:02,760 --> 00:00:03,800
+un projet un peu fou
 
 5
-00:00:06,040 --> 00:00:07,580
-transformer des boîtes à pizza
+00:00:03,800 --> 00:00:04,980
+pour l'un de mes clients
 
 6
-00:00:07,580 --> 00:00:08,890
-en costumes d'Halloween.
+00:00:04,980 --> 00:00:06,120
+transformer des boîtes à pizza
 
 7
-00:00:12,200 --> 00:00:13,060
-L'idée est simple.
+00:00:06,120 --> 00:00:07,590
+en costumes d'Halloween.
 
 8
-00:00:13,060 --> 00:00:14,040
-Au lieu de jeter la boîte
+00:00:09,220 --> 00:00:10,340
+L'idée est simple.
 
 9
-00:00:14,040 --> 00:00:15,460
-après avoir mangé sa pizza,
+00:00:10,340 --> 00:00:11,080
+Au lieu de jeter la
 
 10
-00:00:15,460 --> 00:00:17,000
-le client peut utiliser son couvercle
+00:00:11,080 --> 00:00:12,180
+boîte après la pizza
 
 11
-00:00:17,000 --> 00:00:18,040
-pour se déguiser,
+00:00:12,180 --> 00:00:13,400
+on utilise le couvercle pour
 
 12
-00:00:18,040 --> 00:00:19,000
-prendre une photo
+00:00:13,400 --> 00:00:14,200
+se déguiser
 
 13
-00:00:19,000 --> 00:00:20,310
-et s'amuser avec ses amis.
+00:00:14,200 --> 00:00:15,500
+prendre une photo et s'amuser
 
 14
-00:00:24,200 --> 00:00:25,300
-J'ai donc demandé à Zied
+00:00:15,500 --> 00:00:16,270
+entre amis.
 
 15
-00:00:25,300 --> 00:00:27,280
-de développer toute une collection sur Figma,
+00:00:18,190 --> 00:00:19,530
+Zied a imaginé toute une
 
 16
-00:00:27,280 --> 00:00:28,780
-avec des personnages assortis,
+00:00:19,530 --> 00:00:20,150
+collection
 
 17
-00:00:28,780 --> 00:00:30,420
-des univers graphiques différents
+00:00:20,150 --> 00:00:21,230
+avec des personnages qui vont
 
 18
-00:00:30,420 --> 00:00:32,700
-et un concept spécialement pensé pour Halloween.
+00:00:21,230 --> 00:00:21,910
+par deux.
 
 19
-00:00:32,700 --> 00:00:33,840
-L'IA l'a aidé à produire
+00:00:21,910 --> 00:00:22,990
+L'IA l'a aidé à dessiner
 
 20
-00:00:33,840 --> 00:00:35,200
+00:00:22,990 --> 00:00:24,510
 les décors et les costumes.
 
 21
-00:00:35,200 --> 00:00:36,640
-Lui a fait la direction,
+00:00:24,510 --> 00:00:25,470
+Lui a fait la direction
 
 22
-00:00:36,640 --> 00:00:38,430
-la mise en page et la cohérence.
+00:00:25,470 --> 00:00:26,590
+artistique et la mise en
 
 23
-00:00:40,200 --> 00:00:41,480
-Et voilà le résultat.
+00:00:26,590 --> 00:00:27,200
+page.
 
 24
-00:00:41,480 --> 00:00:42,300
-20 designs,
+00:00:28,400 --> 00:00:29,740
+Et voilà le résultat toute
 
 25
-00:00:42,300 --> 00:00:43,780
-soit 10 duos Halloween.
+00:00:29,740 --> 00:00:31,020
+une collection de duos.
 
 26
-00:00:43,780 --> 00:00:45,400
-Des vampires, des sorciers,
+00:00:31,020 --> 00:00:31,860
+Des vampires
 
 27
-00:00:45,400 --> 00:00:47,000
-des squelettes, des citrouilles,
+00:00:31,860 --> 00:00:32,640
+des sorciers
 
 28
-00:00:47,000 --> 00:00:47,900
-des zombies…
+00:00:32,640 --> 00:00:33,420
+des squelettes
 
 29
-00:00:47,900 --> 00:00:49,590
-et même un laboratoire hanté.
+00:00:33,420 --> 00:00:34,220
+des citrouilles
 
 30
-00:01:05,200 --> 00:01:07,100
-Chaque boîte reprend l'univers de Chez Jello,
+00:00:34,220 --> 00:00:34,620
+des zombies…
 
 31
-00:01:07,100 --> 00:01:08,560
-avec une découpe pour la tête,
+00:00:34,620 --> 00:00:36,970
+et même un laboratoire hanté.
 
 32
-00:01:08,560 --> 00:01:09,540
-le nom du duo
+00:00:41,970 --> 00:00:43,350
+Chaque boîte garde l'univers de
 
 33
-00:01:09,540 --> 00:01:10,560
-et un message pensé
+00:00:43,350 --> 00:00:43,930
+Chez Jello
 
 34
-00:01:10,560 --> 00:01:11,930
-pour donner envie de jouer à deux.
+00:00:43,930 --> 00:00:44,990
+avec une découpe pour la
 
 35
-00:01:20,200 --> 00:01:21,240
-Ce que j'aime dans ce projet,
+00:00:44,990 --> 00:00:45,470
+tête
 
 36
-00:01:21,240 --> 00:01:22,220
-c'est qu'on ne travaille pas
+00:00:45,470 --> 00:00:46,390
+le nom du duo et
 
 37
-00:01:22,220 --> 00:01:23,260
-seulement sur un emballage.
+00:00:46,390 --> 00:00:47,530
+un petit message pour jouer
 
 38
-00:01:23,260 --> 00:01:25,040
-On essaie de créer une expérience.
+00:00:47,530 --> 00:00:48,200
+à deux.
 
 39
-00:01:25,040 --> 00:01:26,580
-Les clients peuvent se prendre en photo,
+00:00:52,310 --> 00:00:52,910
+Ce que j'aime dans ce
 
 40
-00:01:26,580 --> 00:01:28,580
-partager leurs duos sur les réseaux
+00:00:52,910 --> 00:00:53,410
+projet
 
 41
-00:01:28,580 --> 00:01:30,510
-et retrouver la pizzeria grâce au QR code.
+00:00:53,410 --> 00:00:53,990
+c'est qu'on ne fait pas
 
 42
-00:01:38,200 --> 00:01:40,060
-C'est aussi ça, mon quotidien d'entrepreneur :
+00:00:53,990 --> 00:00:54,930
+qu'un emballage.
 
 43
-00:01:40,060 --> 00:01:41,260
-imaginer des concepts,
+00:00:54,930 --> 00:00:56,090
+On crée un moment.
 
 44
-00:01:41,260 --> 00:01:42,000
-confier les missions aux bonnes personnes
+00:00:56,090 --> 00:00:56,930
+Les clients se prennent en
 
 45
-00:01:42,000 --> 00:01:44,800
-et utiliser les outils IA pour aller plus vite
+00:00:56,930 --> 00:00:57,410
+photo
 
 46
-00:01:44,800 --> 00:01:47,130
-sans perdre la créativité de l'équipe.
+00:00:57,410 --> 00:00:58,130
+partagent leur duo
 
 47
-00:01:49,600 --> 00:01:50,060
-Maintenant,
+00:00:58,130 --> 00:00:59,820
+et retrouvent la pizzeria.
 
 48
-00:01:50,060 --> 00:01:51,400
-il reste à valider les découpes
+00:01:03,640 --> 00:01:04,020
+C'est ça
 
 49
-00:01:51,400 --> 00:01:52,760
-et l'impression avec le client.
+00:01:04,020 --> 00:01:05,960
+mon quotidien d'entrepreneur imaginer des
 
 50
-00:01:52,760 --> 00:01:54,380
-Mais j'ai déjà hâte de voir ces boîtes
+00:01:05,960 --> 00:01:06,520
+idées
 
 51
-00:01:54,380 --> 00:01:56,000
-entre les mains des clients de Chez Jello.
+00:01:06,520 --> 00:01:07,580
+les confier aux bonnes personnes
 
 52
-00:01:56,000 --> 00:01:57,380
-Une simple boîte à pizza peut devenir
+00:01:07,580 --> 00:01:09,020
+et utiliser l'IA pour aller
 
 53
-00:01:57,380 --> 00:01:59,250
-bien plus qu'un emballage.
+00:01:09,020 --> 00:01:09,520
+plus vite
 
+54
+00:01:09,520 --> 00:01:10,920
+sans perdre la créativité de
+
+55
+00:01:10,920 --> 00:01:11,650
+l'équipe.
+
+56
+00:01:12,860 --> 00:01:13,420
+Maintenant
+
+57
+00:01:13,420 --> 00:01:14,240
+il reste à valider les
+
+58
+00:01:14,240 --> 00:01:15,560
+découpes et l'impression avec le
+
+59
+00:01:15,560 --> 00:01:15,800
+client.
+
+60
+00:01:15,800 --> 00:01:17,080
+Mais j'ai déjà hâte de
+
+61
+00:01:17,080 --> 00:01:18,040
+voir ces boîtes entre les
+
+62
+00:01:18,040 --> 00:01:18,860
+mains des clients de Chez
+
+63
+00:01:18,860 --> 00:01:19,510
+Jello.

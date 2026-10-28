@@ -1,228 +1,215 @@
 1
-00:00:00,400 --> 00:00:01,400
-Aujourd'hui, un restaurateur
+00:00:00,400 --> 00:00:01,100
+Aujourd'hui
 
 2
-00:00:01,400 --> 00:00:02,960
-m'a posé une question intéressante :
+00:00:01,100 --> 00:00:02,180
+un restaurateur m'a posé une
 
 3
-00:00:02,960 --> 00:00:04,080
-comment savoir combien de temps
+00:00:02,180 --> 00:00:03,920
+question comment savoir combien de
 
 4
-00:00:04,080 --> 00:00:05,180
-ses clients restent à table,
+00:00:03,920 --> 00:00:04,920
+temps ses clients restent à
 
 5
-00:00:05,180 --> 00:00:06,240
-et comment améliorer
+00:00:04,920 --> 00:00:05,160
+table
 
 6
-00:00:06,240 --> 00:00:07,390
-la rotation de sa salle ?
+00:00:05,160 --> 00:00:06,750
+pour mieux remplir sa salle
 
 7
-00:00:12,200 --> 00:00:13,460
-Et là, j'ai eu une idée :
+00:00:09,130 --> 00:00:10,170
+Et j'ai eu une idée
 
 8
-00:00:13,460 --> 00:00:13,960
-pourquoi ne pas créer
+00:00:10,170 --> 00:00:11,490
+un plan de salle intelligent
 
 9
-00:00:13,960 --> 00:00:15,040
-un plan de salle intelligent,
+00:00:11,490 --> 00:00:12,910
+qui montre en direct les
 
 10
-00:00:15,040 --> 00:00:16,460
-capable de montrer en direct
+00:00:12,910 --> 00:00:13,670
+tables libres
 
 11
-00:00:16,460 --> 00:00:17,820
-quelles tables sont libres,
+00:00:13,670 --> 00:00:14,470
+les tables occupées
 
 12
-00:00:17,820 --> 00:00:18,780
-lesquelles sont occupées,
+00:00:14,470 --> 00:00:15,920
+et celles à débarrasser.
 
 13
-00:00:18,780 --> 00:00:20,450
-et lesquelles doivent être débarrassées ?
+00:00:19,270 --> 00:00:20,230
+Le plus intéressant
 
 14
-00:00:27,200 --> 00:00:28,040
-Le plus intéressant,
+00:00:20,230 --> 00:00:21,370
+c'est de savoir depuis combien
 
 15
-00:00:28,040 --> 00:00:29,020
-c'est de pouvoir suivre
+00:00:21,370 --> 00:00:22,450
+de temps chaque table est
 
 16
-00:00:29,020 --> 00:00:30,400
-la durée d'occupation des tables.
+00:00:22,450 --> 00:00:23,050
+occupée.
 
 17
-00:00:30,400 --> 00:00:31,520
-Avec ces informations,
+00:00:23,050 --> 00:00:24,370
+Le restaurateur comprend mieux son
 
 18
-00:00:31,520 --> 00:00:33,720
-le restaurateur peut mieux comprendre son service,
+00:00:24,370 --> 00:00:24,730
+service
 
 19
-00:00:33,720 --> 00:00:34,680
-repérer les temps d'attente
+00:00:24,730 --> 00:00:25,910
+et voit où les clients
 
 20
-00:00:34,680 --> 00:00:36,590
-et analyser la rotation de ses places.
+00:00:25,910 --> 00:00:26,700
+attendent.
 
 21
-00:00:45,200 --> 00:00:46,720
-J'ai imaginé un système qui combine
+00:00:30,980 --> 00:00:32,260
+J'ai imaginé des caméras qui
 
 22
-00:00:46,720 --> 00:00:47,700
-des caméras capables
+00:00:32,260 --> 00:00:33,860
+analysent la salle sur place
 
 23
-00:00:47,700 --> 00:00:49,080
-d'analyser la salle localement,
+00:00:33,860 --> 00:00:34,720
+des QR codes sur les
 
 24
-00:00:49,080 --> 00:00:50,600
-des QR codes sur les tables,
+00:00:34,720 --> 00:00:35,000
+tables
 
 25
-00:00:50,600 --> 00:00:51,200
-et les informations
+00:00:35,000 --> 00:00:36,180
+et la caisse FoodEatUp.
 
 26
-00:00:51,200 --> 00:00:52,820
-de la caisse FoodEatUp.
+00:00:36,180 --> 00:00:37,560
+Le but savoir ce qui
 
 27
-00:00:52,820 --> 00:00:53,580
-L'objectif :
+00:00:37,560 --> 00:00:38,680
+se passe à chaque table
 
 28
-00:00:53,580 --> 00:00:54,940
-réunir les événements utiles,
+00:00:38,680 --> 00:00:40,140
+sans jamais suivre les clients
 
 29
-00:00:54,940 --> 00:00:56,790
-sans suivre individuellement les clients.
+00:00:40,140 --> 00:00:41,090
+un par un.
 
 30
-00:01:03,200 --> 00:01:04,320
-L'idée, ce n'est pas seulement
+00:00:44,270 --> 00:00:44,950
+Et il ne s'agit pas
 
 31
-00:01:04,320 --> 00:01:05,240
-de regarder des couleurs.
+00:00:44,950 --> 00:00:45,990
+seulement de couleurs.
 
 32
-00:01:05,240 --> 00:01:07,200
-C'est aussi d'aider les équipes à agir :
+00:00:45,990 --> 00:00:47,210
+Il s'agit d'aider l'équipe à
 
 33
-00:01:07,200 --> 00:01:08,940
-identifier une table à débarrasser,
+00:00:47,210 --> 00:00:49,110
+agir une table à débarrasser
 
 34
-00:01:08,940 --> 00:01:09,880
-suivre les alertes,
+00:00:49,110 --> 00:00:50,470
+un client qui attend l'addition
 
 35
-00:01:09,880 --> 00:01:11,400
-et avoir une meilleure visibilité
+00:00:50,470 --> 00:00:51,360
+un coup de rush.
 
 36
-00:01:11,400 --> 00:01:12,350
-pendant le service.
+00:00:55,260 --> 00:00:56,380
+Je suis allé plus loin
 
 37
-00:01:20,200 --> 00:01:21,320
-Et j'ai voulu aller plus loin :
+00:00:56,380 --> 00:00:58,200
+avec l'historique et les réservations
 
 38
-00:01:21,320 --> 00:01:22,580
-utiliser les historiques,
+00:00:58,200 --> 00:00:59,540
+l'application aide à prévoir le
 
 39
-00:01:22,580 --> 00:01:23,260
-les réservations
+00:00:59,540 --> 00:01:00,600
+monde qui va venir
 
 40
-00:01:23,260 --> 00:01:24,560
-et les prévisions d'affluence,
+00:01:00,600 --> 00:01:01,740
+et donc le personnel dont
 
 41
-00:01:24,560 --> 00:01:25,740
-pour aider le restaurateur
+00:01:01,740 --> 00:01:02,670
+on aura besoin.
 
 42
-00:01:25,740 --> 00:01:27,500
-à anticiper ses besoins en personnel
+00:01:06,250 --> 00:01:07,350
+Pour passer de l'idée à
 
 43
-00:01:27,500 --> 00:01:28,990
-et mieux organiser son service.
+00:01:07,350 --> 00:01:08,110
+l'application
 
 44
-00:01:36,200 --> 00:01:38,160
-Pour transformer cette idée en application,
+00:01:08,110 --> 00:01:09,470
+j'ai utilisé Lovable et les
 
 45
-00:01:38,160 --> 00:01:39,720
-j'ai utilisé Lovable, GitHub
+00:01:09,470 --> 00:01:10,510
+outils FoodEatUp.
 
 46
-00:01:39,720 --> 00:01:41,540
-et l'écosystème FoodEatUp.
+00:01:10,510 --> 00:01:11,470
+En quelques essais
 
 47
-00:01:41,540 --> 00:01:42,640
-En quelques itérations,
+00:01:11,470 --> 00:01:12,270
+j'avais un plan de salle
 
 48
-00:01:42,640 --> 00:01:43,900
-j'ai construit une interface,
+00:01:12,270 --> 00:01:14,180
+interactif et une démonstration.
 
 49
-00:01:43,900 --> 00:01:45,180
-un plan de salle interactif,
+00:01:15,550 --> 00:01:16,090
+Et demain
 
 50
-00:01:45,180 --> 00:01:46,020
-et une démonstration
+00:01:16,090 --> 00:01:16,990
+je présente tout ça au
 
 51
-00:01:46,020 --> 00:01:47,410
-du fonctionnement imaginé.
+00:01:16,990 --> 00:01:17,450
+restaurateur.
 
 52
-00:01:50,200 --> 00:01:50,560
-Et demain,
+00:01:17,450 --> 00:01:19,050
+La vraie question est-ce que
 
 53
-00:01:50,560 --> 00:01:52,180
-je présente tout ça au restaurateur.
+00:01:19,050 --> 00:01:20,290
+ça répond à son besoin
 
 54
-00:01:52,180 --> 00:01:53,700
-Maintenant, la vraie question, c'est :
-
-55
-00:01:53,700 --> 00:01:54,460
-est-ce que cette solution
-
-56
-00:01:54,460 --> 00:01:55,800
-va répondre à son besoin ?
-
-57
-00:01:55,800 --> 00:01:57,060
+00:01:20,290 --> 00:01:21,520
 Je vous montrerai la suite.
-
