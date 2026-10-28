@@ -66,3 +66,41 @@ Enchaînement sur trois produits :
 À vérifier avant tournage : que le format d'affichage des prix soit bien réglable dans le logiciel.
 
 CTA : « Commente MENU, je t'envoie le tuto. »
+
+## Ép. 46 : « Lui n'a pas l'IA, l'autre l'a installée » (thème iso-duel-nuit)
+Référence : deux cafés en écran partagé, vue isométrique de nuit (guerre des prix).
+Écran du haut : resto A, sans IA. Écran du bas : resto B, avec FoodEatUp. Même rue, même soir.
+- « Deux restos, même rue, même carte, même prix. »
+- 19 h 30, le téléphone sonne chez les deux. Haut : personne ne décroche. Bas : Caroline décroche, table réservée.
+- Rush : en haut, une commande est ressaisie à la main et le ticket se perd ; en bas, la commande part directement en cuisine.
+- Le steak augmente : en haut, personne ne le voit ; en bas, la fiche technique recalcule la marge.
+- Lendemain : en haut, les clients ne reviennent pas ; en bas, une campagne fidélité part toute seule.
+- Le prix se copie en une nuit. L'organisation, non.
+- CTA : « Commente IA, je te montre ce que j'ai installé chez lui. »
+
+## Ép. 47 : « Ne fais jamais partir ton client de zéro » (thème editorial-mentaliste, réutilisé)
+Référence : la série Mentaliste, style éditorial (étude de la carte de lavage).
+Étude réelle : Nunes et Drèze, 2006, « effet de progression dotée ». 300 cartes de lavage sont distribuées. La carte A demande 8 tampons. La carte B en demande 10, mais 2 sont déjà offerts. Neuf mois plus tard, 19 % des cartes A sont complétées, contre 34 % des cartes B.
+Fonctions FoodEatUp vérifiées dans les tutoriels :
+- points par euro, par passage ou hybride ;
+- multiplicateurs sur les créneaux creux ;
+- catalogue de récompenses (produit, bon €, avantage) ;
+- espace client avec le solde de points et une barre de progression vers la prochaine récompense ;
+- conseil officiel : une première récompense à très bas coût, par exemple un café à 2 points, pour une victoire rapide.
+
+Script :
+- « Une station de lavage a distribué 300 cartes de fidélité. Même offre, deux designs. »
+- « Carte A : 8 tampons, puis un lavage gratuit. Carte B : 10 tampons, mais les deux premiers sont déjà remplis. »
+- « Neuf mois plus tard : 19 % des cartes A complétées. Carte B : 34 %. Presque le double. »
+- « Mais pourquoi ? Les deux demandaient exactement 8 lavages. Mais la carte B ne part pas de zéro. »
+- « Plus on se sent proche du but, plus on s'active. Tu ne commences pas une tâche : tu en termines une. »
+- « Dans FoodEatUp, c'est exactement ce que tu règles. Ton client voit sa barre de progression vers la prochaine récompense dès sa première commande. »
+- « Ta première récompense ne coûte presque rien : un café à 2 points. Victoire rapide, il revient. »
+- « Et tes points doublés le mardi midi remplissent tes heures creuses. »
+- « Alors ne fais jamais partir ton client de zéro. »
+- CTA : « Commente FIDÉLITÉ, je t'envoie le tuto pour configurer ton programme. »
+
+Visuels :
+- Kit editorial-mentaliste : fonds papier, noir et rouge, histogramme, point d'interrogation, carte bancaire mascotte, barre de progression, carte de fin.
+- Cartes à tampons A et B dessinées en HTML.
+- Vrais écrans des tutoriels « Booster la fidélité — le programme » et « Vue publique fidélité — côté client ».
