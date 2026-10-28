@@ -12,6 +12,7 @@ body{font-family:'Inter'}
 .cnt{position:relative;background:#fff;border-radius:70px;box-shadow:0 8px 0 #1c2a52}.cnt img{width:100%;display:block}.cnt span{position:absolute;left:33%;right:6%;top:50%;transform:translateY(-50%);font-family:'Anton';font-size:58px;color:#1c2a52;text-align:left;white-space:nowrap}
 .ag{position:relative;background:#fff;border-radius:34px;box-shadow:0 8px 0 #1c2a52}.ag img{width:100%;display:block}.ag ul{position:absolute;left:21%;right:8%;top:30%;list-style:none;font-weight:800;font-size:31px;color:#1c2a52;line-height:2.05}
 .ag li{white-space:nowrap;overflow:hidden}
+.ag2{width:860px;background:#fff;border-radius:28px;box-shadow:0 8px 0 #1c2a52;padding:16px 28px;font-family:'Inter',sans-serif;color:#1c2a52}.ag2 .h{font-family:'Anton';font-size:36px;letter-spacing:1px;color:#2D7FF9;margin-bottom:4px}.ag2 .r{display:flex;align-items:center;gap:14px;font-weight:800;font-size:34px;height:50px;white-space:nowrap}.ag2 .r i{width:30px;height:30px;border-radius:50%;border:4px solid #c9d3e6;display:block;flex:none}.ag2 .r.on i{background:#1fb35a;border-color:#1fb35a}
 .rew{font-family:'Anton';font-size:120px;color:#fff;text-shadow:0 0 30px #2D7FF9}
 .cta{font-family:'Anton';font-size:104px;color:#111;background:#FF8A1F;border:8px solid #111;box-shadow:0 14px 0 #111;padding:8px 40px;border-radius:24px;text-align:center;line-height:1}
 .scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.08) 0 3px,transparent 3px 8px);mix-blend-mode:screen}
@@ -67,13 +68,13 @@ CAP.show=t=>t<t0(14)+1.0;
 // surcouches globales : compteur + agenda (après le rembobinage)
 const ov=scene(t0(3)+.4,t0(14),{z:50,tr:'cut'});
 ov.node.style.background='transparent';
-const cnt=ov.el('<div class="cnt"><img src="../kit/atelier-artisans-compteur-clients.png"><span id="cn">0 CLIENT</span></div>',{x:540,y:150,w:620,fx:'drop',at:t0(3)+.6});
-const ag=ov.el('<div class="ag"><img src="../kit/atelier-artisans-carte-agenda.png"><ul><li id="a1"></li><li id="a2"></li><li id="a3"></li></ul></div>',{x:540,y:480,w:640,fx:'pop',at:t0(6)+.6});
+const cnt=ov.el('<div class="cnt"><img src="../kit/atelier-artisans-compteur-clients.png"><span id="cn">0 CLIENT</span></div>',{x:540,y:118,w:430,fx:'drop',at:t0(3)+.6});
+const ag=ov.el('<div class="ag2"><div class="h">📅 AGENDA DE LA SEMAINE</div><div class="r" id="r1"><i></i><span id="a1"></span></div><div class="r" id="r2"><i></i><span id="a2"></span></div><div class="r" id="r3"><i></i><span id="a3"></span></div></div>',{x:540,y:345,fx:'pop',at:t0(6)+.6});
 const A=[[t0(6)+.6,'Demain 8 h · chaudière'],[t0(9)+.4,'Samedi 10 h · gâteau ×12'],[t0(11)+.4,'Jeudi 14 h · machine à café']];
 ov.fn(t=>{let n=A.filter(a=>t>=a[0]).length;document.getElementById('cn').textContent=n+(n>1?' CLIENTS':' CLIENT');
-  A.forEach((a,i)=>{const e=document.getElementById('a'+(i+1));e.textContent=t>=a[0]?a[1]:'';});
+  A.forEach((a,i)=>{const e=document.getElementById('a'+(i+1));e.textContent=t>=a[0]?a[1]:'';document.getElementById('r'+(i+1)).classList.toggle('on',t>=a[0]);});
   const hide=t>=t0(12)&&t<t0(13);ag.d.style.visibility=hide?'hidden':'visible';
-  cnt.d.style.transform+=t>=t0(12)&&t<t0(13)?' translateY(500px) scale(1.4)':'';});
+  cnt.d.style.transform+=t>=t0(12)&&t<t0(13)?' translateY(230px) scale(1.35)':'';});
 thumbAt(t0(12)+.8,'<i class="k">3 clients</i> <i>la tête</i><br><i>dans la chaudière</i>');
 render(0);
 </script></body></html>
