@@ -1,0 +1,141 @@
+{
+"mode": "dial",
+"tail": 3.0,
+"lines": [
+[
+"kar",
+"kar",
+0.0,
+4.3,
+"Claude. Fais la réunion à ma place. Pose-leur les questions, je réponds.",
+0.4
+],
+[
+"cla",
+"cla",
+0.0,
+0.5,
+"D'accord.",
+0.3
+],
+[
+"cla",
+"cla",
+0.82,
+3.6,
+"Inès, la commande de saumon pour samedi, on en est où ?",
+0.3
+],
+[
+"ine",
+"ine",
+0.0,
+3.85,
+"Claude. Mon patron veut la commande de saumon. Réponds à ma place.",
+0.3
+],
+[
+"cla",
+"cla",
+3.64,
+5.8,
+"Huit kilos commandés. Quatre de plus que prévu.",
+0.3
+],
+[
+"kar",
+"kar",
+4.68,
+6.6,
+"Quatre de plus ? Pourquoi ?",
+0.3
+],
+[
+"ine",
+"ine",
+4.68,
+5.7,
+"Euh… demande à Tom.",
+0.3
+],
+[
+"tom",
+"tom",
+0.0,
+2.75,
+"Claude. C'est quoi l'histoire du saumon ?",
+0.3
+],
+[
+"cla",
+"cla",
+5.94,
+7.0,
+"Je demande au Claude de Léa.",
+0.4
+],
+[
+"cla",
+"cla",
+7.22,
+9.75,
+"C'est pas le saumon. C'est la commande. Passée deux fois.",
+0.3
+],
+[
+"tom",
+"tom",
+2.8,
+4.3,
+"Pourquoi tout le monde me regarde ?",
+0.3
+],
+[
+"cla",
+"cla",
+9.84,
+11.45,
+"Tom l'a commandée. Et Léa aussi.",
+0.3
+],
+[
+"lea",
+"lea",
+0.0,
+1.85,
+"Oups. J'annule la deuxième.",
+0.4
+],
+[
+"kar",
+"kar",
+6.68,
+9.3,
+"Bon. Qui ici demande tout à Claude ?",
+0.6
+],
+[
+"cla",
+"cla",
+11.74,
+17.1,
+"Quatre assistants qui ne se parlent pas, ça fait deux commandes. Branchés sur le même logiciel, ils lisent la même commande.",
+0.5
+],
+[
+"cla",
+"cla",
+17.14,
+19.45,
+"Ton équipe aussi parle à Claude ? Commente LOGICIEL.",
+0.3
+]
+],
+"marks": [
+"Passée deux",
+"J'annule",
+"Qui ici",
+"Branchés sur",
+"Commente LOGICIEL."
+]
+}

@@ -1,0 +1,70 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 56 : la fidélité sans appli</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Fredoka'}#stage{background:#F6EBDD}
+#cap{font-family:'Fredoka';font-weight:700;font-size:64px;color:#3a2414}
+#cap i{background:#fffaf2;padding:2px 16px;border-radius:18px;margin:4px 0;box-shadow:0 6px 0 rgba(58,36,20,.25)}
+#cap i.k{background:#1F5A3D;color:#fff}
+#who span{font-family:'Fredoka';font-weight:700;font-size:30px;color:#fff;border-radius:999px}
+.phone{position:relative;width:520px;height:1000px;border-radius:70px;background:#1F5A3D;padding:26px;box-shadow:0 30px 60px rgba(58,36,20,.35)}
+.scr{width:100%;height:100%;border-radius:48px;background:#fffaf2;overflow:hidden;font-family:'Inter';color:#3a2414;padding:50px 34px;box-sizing:border-box}
+.scr h3{font-family:'Fredoka';font-size:62px;margin:0 0 6px}.scr p{font-size:34px;color:#7a6250;margin:0 0 28px}
+.inp{border:4px solid #D9A066;border-radius:22px;padding:22px;font-size:52px;font-weight:800;letter-spacing:2px;height:70px}
+.btn{margin-top:26px;background:#1F5A3D;color:#fff;border-radius:22px;text-align:center;font-size:46px;font-weight:800;padding:26px}
+.card{margin-top:10px;background:#1F5A3D;color:#fff;border-radius:30px;padding:30px;font-family:'Fredoka'}
+.card b{display:block;font-size:54px}.card small{font-size:32px;opacity:.85}
+.prog{height:30px;background:rgba(255,255,255,.2);border-radius:15px;margin:24px 0 10px;overflow:hidden}.prog i{display:block;height:100%;background:#D9A066;border-radius:15px}
+.big{font-family:'Fredoka';font-weight:700;font-size:92px;color:#3a2414;text-align:center;line-height:1.05}.big em{font-style:normal;color:#1F5A3D}
+.pill{font-family:'Fredoka';font-weight:700;font-size:40px;color:#fff;background:#B3412E;border-radius:999px;padding:12px 30px;white-space:nowrap}
+.cta{font-family:'Fredoka';font-weight:700;font-size:100px;color:#fff;background:#1F5A3D;border-radius:36px;padding:16px 48px;text-align:center;line-height:1;box-shadow:0 14px 0 #0f3524}
+.cta small{display:block;font-size:36px;opacity:.85;margin-bottom:6px}
+</style></head><body><div id="stage"><div id="scenes"></div><div id="who"><span></span></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+const L=C.lines,t0=i=>L[i].t0,t1=i=>L[i].t1;
+CAP.top=1460;CAP.group=4;CAP.kw=new Set(['fidélité','applications','appli.','ça.','numéro','tout.','téléphone.','points','récompense','Simone.','FIDÉLITÉ.']);
+CAP.names={ser:['LA SERVEUSE','#1F5A3D'],jos:['MADAME JOSETTE','#B3412E'],cla:['MICHAEL','#D9A066']};
+document.getElementById('who').style.top='1385px';
+const F='comptoir-fidelite-';
+let s=scene(0,t0(1),{bg:F+'comptoir-face.jpg',kb:[1.05,1.12]});
+s.img(F+'josette-dos.png',{x:330,y:1200,w:640,fx:'up',at:.1});
+s.img(F+'serveuse-souriante.png',{x:790,y:1100,w:600,fx:'pop',at:.3,anim:'talk'});
+s.img(F+'cadre-fidelite.png',{x:540,y:420,w:520,fx:'drop',at:.6});
+s.txt('<div class="big" style="font-size:40px;color:#1F5A3D;white-space:nowrap">Carte de fidélité ?</div>',{x:540,y:420,fx:'pop',at:.8});
+s=scene(t0(1),t0(2),{bg:F+'comptoir-dialogue.jpg',kb:[1.1,1.18],tr:'cut'});
+s.img(F+'josette-sceptique.png',{x:540,y:1020,w:1000,fx:'none',anim:'talk'});
+s.el('<div class="pill">« LES APPLIS, JE SAIS PAS FAIRE »</div>',{x:540,y:330,fx:'slam',at:M('Moi, les')});
+s=scene(t0(2),t0(3),{bg:F+'comptoir-dialogue.jpg',kb:[1.1,1.16],tr:'cut'});
+s.img(F+'serveuse-presentoir.png',{x:320,y:1020,w:860,fx:'none',anim:'talk'});
+s.img(F+'presentoir-qr.png',{x:800,y:880,w:460,fx:'pop',at:M('Vous scannez'),anim:'pulse'});
+s.el('<div class="pill" style="background:#1F5A3D">PAS D\'APPLI</div>',{x:540,y:330,fx:'slam',at:t0(2)+.2});
+s=scene(t0(3),t0(4),{bg:F+'comptoir-dialogue.jpg',kb:[1.12,1.16],tr:'cut'});
+s.img(F+'josette-telephone.png',{x:540,y:1020,w:980,fx:'none'});
+// téléphone
+s=scene(t0(4),t0(10),{bg:F+'fond-creme.jpg',kb:[1,1.04],tr:'cut'});
+s.el(`<div class="phone"><div class="scr" id="scr"></div></div>`,{x:540,y:780,fx:'up',at:t0(4)});
+s.img(F+'coche-validation.png',{x:860,y:400,w:200,fx:'slam',at:M('Et votre carte'),z:5});
+s.img(F+'confettis-recompense.png',{x:200,y:300,w:380,fx:'pop',at:M('Et votre récompense'),z:6});
+s.img(F+'croissant-cafe.png',{x:830,y:1130,w:300,fx:'pop',at:M('Et votre récompense')+.2,z:6,anim:'bob'});
+const NUM='06 •• •• •• ••';
+s.fn(t=>{const e=document.getElementById('scr');if(!e)return;
+ if(t<M('Et votre carte')){const n=Math.floor(cl((t-M('Votre numéro'))/1.6)*NUM.length);
+  e.innerHTML=`<h3>Le Café de la place</h3><p>Rejoindre la fidélité</p><div class="inp">${NUM.slice(0,n)}</div><div class="btn">Valider</div><p style="margin-top:24px">Ni application, ni mot de passe.</p>`;}
+ else{const p=cl((t-M('Vos points'))/1.2);
+  e.innerHTML=`<h3>Ma carte</h3><p>Le Café de la place</p><div class="card"><b>Madame Josette</b><small>membre fidélité</small><div class="prog"><i style="width:${15+70*p}%"></i></div><small>${t>=M('Vos points')?'Prochaine récompense : un croissant':'Bienvenue !'}</small></div><p style="margin-top:24px;font-size:22px">Exemple d\'affichage</p>`;}});
+// chute
+s=scene(t0(10),t0(11),{bg:F+'comptoir-dialogue.jpg',kb:[1.1,1.16],tr:'cut'});
+s.img(F+'josette-rit.png',{x:380,y:1020,w:940,fx:'none',anim:'talk'});
+s.img(F+'simone-face.png',{x:860,y:1060,w:560,fx:'right',at:M('Simone.')-.3});
+s.img(F+'bulle-dialogue.png',{x:830,y:640,w:300,fx:'pop',at:M('Simone.')});
+// fin
+s=scene(t0(11),C.dur+1,{bg:F+'fond-creme.jpg',kb:[1,1.05],tr:'cut'});
+s.img(F+'carte-plastique-barree.png',{x:540,y:420,w:420,fx:'drop',at:t0(11)});
+s.txt('<div class="big" style="font-size:80px;white-space:nowrap">Fidélise tes clients.<br><em>Sans application.</em></div>',{x:540,y:780,fx:'pop',at:t0(11)+.3});
+s.el('<div class="cta"><small>Écris en commentaire</small>FIDÉLITÉ</div>',{x:540,y:1120,fx:'slam',at:M('Commente FIDÉLITÉ.'),anim:'pulse'});
+s.el('<div class="pill" style="background:#D9A066;font-size:30px">ÉPISODE 56/365</div>',{x:540,y:1330,fx:'fade',at:M('Commente FIDÉLITÉ.')+1});
+CAP.show=t=>t<t0(11);
+thumbAt(t0(2)+1.6,'<i>« Y\'a pas</i> <i class="k">d\'appli. »</i>');
+render(0);
+</script></body></html>

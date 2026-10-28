@@ -1,0 +1,74 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 59 : toi, tu fais les pizzas, Caroline décroche</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter'}
+#cap{font-family:'Anton';font-size:76px;text-transform:uppercase}
+#cap i{background:#fbf1e0;color:#3b2414;padding:2px 14px;margin:4px 0;border:4px solid #3b2414;box-shadow:0 6px 0 #3b2414}
+#cap i.k{background:#FF8A1F;color:#111}
+#who span{font-family:'Anton';font-size:30px;letter-spacing:2px;border:3px solid #3b2414}
+.top{font-family:'Anton';font-size:52px;color:#fff;text-transform:uppercase;text-align:center;line-height:1.05;text-shadow:0 5px 0 #3b2414}
+.top b{display:inline-block;background:#C8283A;padding:0 14px;transform:rotate(-2deg)}
+.cnt{position:relative;background:#fff;border-radius:70px;box-shadow:0 8px 0 #3b2414}.cnt img{width:100%;display:block}.cnt span{position:absolute;left:33%;right:6%;top:50%;transform:translateY(-50%);font-family:'Anton';font-size:58px;color:#3b2414;text-align:left;white-space:nowrap}
+.ag{position:relative;background:#fff;border-radius:34px;box-shadow:0 8px 0 #3b2414}.ag img{width:100%;display:block}.ag ul{position:absolute;left:21%;right:8%;top:30%;list-style:none;font-weight:800;font-size:31px;color:#3b2414;line-height:2.05}
+.ag li{white-space:nowrap;overflow:hidden}
+.ag2{width:860px;background:#fff;border-radius:28px;box-shadow:0 8px 0 #3b2414;padding:16px 28px;font-family:'Inter',sans-serif;color:#3b2414}.ag2 .h{font-family:'Anton';font-size:36px;letter-spacing:1px;color:#2D7FF9;margin-bottom:4px}.ag2 .r{display:flex;align-items:center;gap:14px;font-weight:800;font-size:34px;height:50px;white-space:nowrap}.ag2 .r i{width:30px;height:30px;border-radius:50%;border:4px solid #c9d3e6;display:block;flex:none}.ag2 .r.on i{background:#1fb35a;border-color:#1fb35a}
+.rew{font-family:'Anton';font-size:120px;color:#fff;text-shadow:0 0 30px #2D7FF9}
+.cta{font-family:'Anton';font-size:104px;color:#111;background:#FF8A1F;border:8px solid #111;box-shadow:0 14px 0 #111;padding:8px 40px;border-radius:24px;text-align:center;line-height:1}
+.scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.08) 0 3px,transparent 3px 8px);mix-blend-mode:screen}
+</style></head><body><div id="stage"><div id="scenes"></div><div id="who"><span></span></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+const L=C.lines,t0=i=>L[i].t0,t1=i=>L[i].t1;
+CAP.top=1400;CAP.group=3;CAP.kw=new Set(['vide…','ailleurs.','pâte','décroche.','Caroline','six,','quinze.','margheritas','cuisine.','points','cent.','Trois','clients','pizzas.','APPEL.']);
+CAP.names={cli:['LA CLIENTE','#C8283A'],piz:['LE PIZZAIOLO','#7a4a24'],caro:['CAROLINE · IA','#2D7FF9'],cl2:['CLIENT AU TÉLÉPHONE','#1fb35a']};
+document.getElementById('who').style.top='1320px';
+const P='caisse-pizzeria-';
+let s=scene(0,t0(1),{bg:P+'facade-nuit.jpg',kb:[1.05,1.15]});
+s.img('atelier-artisans-cliente-frigorifiee.png',{x:540,y:1050,w:600,fx:'up',at:.1,anim:'shiver'});
+s.img('atelier-artisans-telephone-sonne.png',{x:830,y:760,w:240,fx:'pop',at:.3,anim:'shake'});
+s.txt('<div class="top">ÇA SONNE DANS LE VIDE…<br><b>PERSONNE NE DÉCROCHE</b></div>',{x:540,y:260,fx:'drop',at:.2});
+s=scene(t0(1),t0(2),{bg:P+'cuisine.jpg',kb:[1.15,1.22],tr:'cut'});
+s.img(P+'pizzaiolo-surpris.png',{x:540,y:1000,w:600,fx:'none',anim:'shake'});
+s.img(P+'pizza-margherita.png',{x:300,y:1350,w:320,fx:'pop',at:t0(1)});
+s.img('atelier-artisans-telephone-sonne.png',{x:830,y:760,w:260,fx:'pop',at:t0(1),anim:'shake'});
+s=scene(t0(2),t0(3)-.9,{bg:P+'facade-fermee.jpg',kb:[1.15,1.2],tr:'cut'});
+s.img('atelier-artisans-cliente-frigorifiee.png',{x:540,y:1050,w:600,fx:'none',anim:'shiver'});
+s.img('atelier-artisans-bandeau-client-perdu.png',{x:540,y:420,w:860,fx:'slam',at:t1(2)-.3,rot:-6});
+s=scene(t0(3)-.9,t0(3)+.4,{bgColor:'#2a160a',tr:'cut'});
+s.el('<div class="rew">⏪ ON REMBOBINE</div>',{x:540,y:860,fx:'pop',at:t0(3)-.85,anim:'shake'});
+s.el('<div class="scan"></div>',{x:540,y:960,w:1080,h:1920,fx:'none'});
+s=scene(t0(3)+.4,t0(5),{bg:P+'cuisine.jpg',kb:[1.05,1.12],tr:'cut'});
+s.img(P+'pizzaiolo-pointe.png',{x:260,y:900,w:420,fx:'none'});
+s.img('commun-caroline-parle.png',{x:720,y:960,w:560,fx:'pop',at:t0(3)+.5,anim:'talk'});
+s.txt('<div class="top"><b>CETTE FOIS, CAROLINE DÉCROCHE</b></div>',{x:540,y:420,fx:'drop',at:t0(3)+.8});
+function call(a,b,obj,label){const s=scene(a,b,{bg:P+'fond-brun.jpg',kb:[1.05,1.1],tr:'cut'});
+ s.img('commun-carte-appel-entrant.png',{x:540,y:800,w:700,fx:'drop',at:a});
+ s.txt(`<div class="top" style="font-size:44px">${label}</div>`,{x:540,y:800,fx:'pop',at:a+.2,z:5});
+ s.img(obj,{x:300,y:1110,w:340,fx:'pop',at:a+.5,anim:'bob'});
+ s.img('commun-caroline-parle.png',{x:770,y:1110,w:440,fx:'pop',at:a+.3,anim:'talk'});return s;}
+call(t0(5),t0(8),'caisse-pizzeria-bulle-coeur.png','APPEL · RÉSERVATION');
+call(t0(8),t0(10),P+'pizza-margherita.png','APPEL · À EMPORTER');
+call(t0(10),t0(12),'caisse-pizzeria-part-pizza.png','APPEL · FIDÉLITÉ');
+s=scene(t0(12),t0(13),{bg:P+'cuisine.jpg',kb:[1.15,1.25],tr:'cut'});
+s.img(P+'pizzaiolo-surpris.png',{x:540,y:1000,w:640,fx:'none',anim:'shake'});
+s=scene(t0(13),t0(14),{bg:P+'cuisine.jpg',kb:[1.1,1.15],tr:'cut'});
+s.img(P+'pizzaiolo-loupe.png',{x:300,y:1000,w:460,fx:'none'});
+s.img('commun-caroline-clin-oeil.png',{x:760,y:1000,w:560,fx:'pop',at:t0(13),anim:'talk'});
+s=scene(t0(14),C.dur+1,{bg:P+'facade-nuit.jpg',kb:[1.1,1.2],tr:'cut'});
+s.img('commun-caroline-clin-oeil.png',{x:540,y:720,w:720,fx:'pop',at:t0(14),anim:'talk'});
+s.el('<div class="cta">COMMENTE<br>« APPEL »</div>',{x:540,y:1180,fx:'slam',at:M('Commente APPEL.'),anim:'pulse'});
+s.txt('<div class="top" style="font-size:38px">Réservation · commande · fidélité<br>tout finit dans FoodEatUp</div>',{x:540,y:1460,fx:'up',at:M('Commente APPEL.')+.6});
+s.txt('<div class="top" style="font-size:30px">ÉPISODE 59/365</div>',{x:540,y:1640,fx:'fade',at:M('Commente APPEL.')+1.2});
+CAP.show=t=>t<M('Commente APPEL.');
+const ov=scene(t0(3)+.4,t0(14),{z:50,tr:'cut'});ov.node.style.background='transparent';
+const cnt=ov.el('<div class="cnt"><img src="../kit/atelier-artisans-compteur-clients.png"><span id="cn">0 CLIENT</span></div>',{x:540,y:118,w:430,fx:'drop',at:t0(3)+.6});
+const ag=ov.el('<div class="ag2"><div class="h">DANS FOODEATUP</div><div class="r" id="r1"><i></i><span id="a1"></span></div><div class="r" id="r2"><i></i><span id="a2"></span></div><div class="r" id="r3"><i></i><span id="a3"></span></div></div>',{x:540,y:345,fx:'pop',at:t0(6)+.6});
+const A=[[t0(7),'Table 6 pers. · 20 h 15 · plan de salle'],[t0(9)+.6,'2 margheritas · 19 h 30 · en cuisine'],[t0(11)+.6,'Fidélité · 80 points']];
+ov.fn(t=>{let n=A.filter(a=>t>=a[0]).length;document.getElementById('cn').textContent=n+(n>1?' CLIENTS':' CLIENT');
+  A.forEach((a,i)=>{document.getElementById('a'+(i+1)).textContent=t>=a[0]?a[1]:'';document.getElementById('r'+(i+1)).classList.toggle('on',t>=a[0]);});
+  const hide=t>=t0(12)&&t<t0(13);ag.d.style.visibility=hide?'hidden':'visible';
+  cnt.d.style.transform+=hide?' translateY(230px) scale(1.35)':'';});
+thumbAt(t0(12)+.8,'<i class="k">3 clients</i> <i>les mains</i><br><i>dans la pâte</i>');
+render(0);
+</script></body></html>
