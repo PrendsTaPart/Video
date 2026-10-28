@@ -2,7 +2,7 @@
 
 Refait le 27/10 à la demande de Michael : ton commercial, « comment j'ai fait », plus aucun passage sur les incidents de synchronisation Lovable ni sur les écrans écartés.
 
-76 s (+ short 40 s) · 9:16 · 1080 × 1920 · 30 i/s · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, eleven_multilingual_v2, une prise de 51,2 s) · musique `videos/planit-academy/assets/audio/musique-produit.mp3` à 30 % avec ducking.
+82 s (+ short 44 s) · 9:16 · 1080 × 1920 · 30 i/s · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, eleven_multilingual_v2, une prise de 51,2 s, ralentie à 0,9 → 56,9 s) · musique `videos/planit-academy/assets/audio/musique-produit.mp3` à 30 % avec ducking.
 Site : https://michael.foodeatup.fr · formation liée : `site-lien-en-bio-avec-lovable-et-claude`.
 
 ## Narration
@@ -36,10 +36,14 @@ Tu veux la même pour ton activité ? La formation est sur mon site. Et si tu ve
 | 57,4–64,3 s | « LE RÉSULTAT » · 31 vidéos, 30 formations, page Projets |
 | 64,3–75,5 s | « À TOI DE JOUER » · la formation sur mon site, Prendre rendez-vous (page réelle), ÉPISODE 31/365 · LOVABLE × CLAUDE CODE × MCP |
 
-Short 40 s : accroche (0–8,8) · comment j'ai fait (18,1–27,9) · MCP (47,2–57,4) · appel à l'action (64,3–75,4).
+Short 44 s : accroche (0–8,8) · comment j'ai fait (18,1–27,9) · MCP (47,2–57,4) · appel à l'action (64,3–75,4).
 
 ## Points de vérité
 
 - Captures réelles du site (`captures/`, relevées le 27/10). Chiffres relevés en base le 27/10 : 31 vidéos publiées, 30 formations publiées.
 - Noms d'outils réels de `src/lib/mcp/tools/` ; toute création commence en brouillon.
 - **À faire avant diffusion :** la page de la formation 31 répondait « Cette formation n'existe pas » le 27/10 au soir (formation en brouillon). La publier, sinon « la formation est sur mon site » sera faux.
+
+## Réglage du son (28/10)
+
+Voix ralentie à 0,9 (atempo, timbre conservé) et coupée au milieu des silences entre paragraphes : plus aucun mot tronqué. Musique à 20 %. Les minutages du storyboard ci-dessus datent de la version précédente ; les minutages exacts sont dans `composition/config.json`.

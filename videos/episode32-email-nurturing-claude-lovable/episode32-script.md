@@ -1,6 +1,6 @@
 # Épisode 32/365 : « J'ai appris à mon site à écrire à mes contacts »
 
-83 s (+ short 43 s) · 9:16 · 1080 × 1920 · 30 i/s · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, eleven_multilingual_v2, une prise de 56,7 s) · narration à la première personne · musique `videos/planit-academy/assets/audio/musique-produit.mp3` à 30 % avec ducking, -14 LUFS visé.
+89 s (+ short 46 s) · 9:16 · 1080 × 1920 · 30 i/s · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, eleven_multilingual_v2, une prise de 56,7 s, ralentie à 0,9 → 63 s) · narration à la première personne · musique `videos/planit-academy/assets/audio/musique-produit.mp3` à 30 % avec ducking, -14 LUFS visé.
 
 La voix fait 56,7 s : la vidéo a été montée en 83 s (2,8 s de respiration par scène) plutôt qu'en 120 s, pour éviter de longs passages sans voix.
 
@@ -37,7 +37,7 @@ Pour l'instant, rien n'est encore parti : il me reste à brancher l'envoi. Mais 
 | 61,2–71,8 s | « LA CHAÎNE D'UN ÉPISODE » · vidéo → formation → PDF → lead magnet → campagne → publications, outil `etat_episode` | — |
 | 71,8–82,8 s | « OÙ J'EN SUIS » · 8 modèles, 46 visuels, 53 outils MCP dont 16 emails, 112 images ; ÉPISODE 32/365 · CLAUDE × LOVABLE × MCP | « Envoi pas encore branché · 0 email de nurturing envoyé » |
 
-Short 43 s : accroche (0–9,5) · règle n°1 (17,4–27,1) · outils de Claude (48,7–61,2) · où j'en suis (71,8–82,7).
+Short 46 s : accroche (0–9,5) · règle n°1 (17,4–27,1) · outils de Claude (48,7–61,2) · où j'en suis (71,8–82,7).
 
 ## Points de vérité
 
@@ -48,4 +48,8 @@ Short 43 s : accroche (0–9,5) · règle n°1 (17,4–27,1) · outils de Claude
 
 ## Fichiers
 
-`episode32-final-83s.mp4`, `episode32-short-43s.mp4`, `episode32-miniature.png`, `episode32-sous-titres.srt`, `episode32-short-43s.srt`, `episode32-voix.mp3` (voix seule), `episode32-voix-mix.mp3` (mix), `composition/` (page HTML rendue image par image, `engine.js` commun, scripts `align.py`, `build_cfg.py`, `render.js`, `finish.py`).
+`episode32-final-89s.mp4`, `episode32-short-46s.mp4`, `episode32-miniature.png`, `episode32-sous-titres.srt`, `episode32-short-46s.srt`, `episode32-voix.mp3` (voix seule), `episode32-voix-mix.mp3` (mix), `composition/` (page HTML rendue image par image, `engine.js` commun, scripts `align.py`, `build_cfg.py`, `render.js`, `finish.py`).
+
+## Réglage du son (28/10)
+
+Voix ralentie à 0,9 (atempo, timbre conservé) et coupée au milieu des silences entre paragraphes : plus aucun mot tronqué. Musique à 20 %. Les minutages du storyboard ci-dessus datent de la version précédente ; les minutages exacts sont dans `composition/config.json`.

@@ -7,14 +7,18 @@ P, A, E, lead, dur = c["P"], c["A"], c["E"], c["lead"], c["dur"]
 run = lambda *a: (print("ffmpeg", a[-1], flush=True), subprocess.run(["ffmpeg", "-y", "-v", "error", *a], check=True, timeout=240))
 
 # 1. Voix : chaque section placée au début de sa scène.
-inputs, flt = ["-i", f"{d}/vo.mp3"], []
+VO = f"{d}/vo_slow.mp3" if __import__("os").path.exists(f"{d}/vo_slow.mp3") else f"{d}/vo.mp3"
+vlen = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", VO], capture_output=True, text=True).stdout)
+# Coupes au milieu des silences entre sections : aucun mot n'est tronqué.
+cut = [0.0] + [(E[i] + A[i + 1]) / 2 for i in range(len(P) - 1)] + [vlen]
+inputs, flt = ["-i", VO], []
 for i in range(len(P)):
-    a0, a1 = max(0, A[i] - .06), E[i] + .25
+    a0, a1 = cut[i], cut[i + 1]
     ms = int((P[i] + lead - (A[i] - a0)) * 1000)
     flt.append(f"[0:a]atrim={a0}:{a1},asetpts=PTS-STARTPTS,adelay={ms}|{ms}[v{i}]")
 flt.append("".join(f"[v{i}]" for i in range(len(P))) + f"amix=inputs={len(P)}:normalize=0,apad=whole_dur={dur}[vo]")
 flt.append("[vo]asplit[vo1][vo2]")
-flt.append(f"[1:a]volume=0.30,afade=t=in:d=1,afade=t=out:st={dur-2.5}:d=2.5[mu]")
+flt.append(f"[1:a]volume=0.20,afade=t=in:d=1,afade=t=out:st={dur-2.5}:d=2.5[mu]")
 flt.append("[mu][vo1]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400[duck]")
 flt.append("[vo2][duck]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[out]")
 run("-stream_loop", "4", "-i", music, "-t", str(dur), "-ar", "48000", "-ac", "2", f"{d}/bed.wav")

@@ -1,6 +1,6 @@
 # Épisode 35/365 : « J'ai offert des agents IA à ma sœur ! »
 
-76 s (+ short 40 s) · 9:16 · 1080 × 1920 · 30 i/s · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, eleven_multilingual_v2, une prise de 49,4 s) · narration à la première personne · musique `hero-video/assets/music/musique-avec.mp3` à 30 % avec ducking.
+81 s (+ short 43 s) · 9:16 · 1080 × 1920 · 30 i/s · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, eleven_multilingual_v2, une prise de 49,4 s, ralentie à 0,9 → 54,9 s) · narration à la première personne · musique `hero-video/assets/music/musique-avec.mp3` à 30 % avec ducking.
 
 Direction artistique : planche de style validée par Michael le 27/10 (`../episode35-la-chaine-fraternelles-preview/episode35-planche-style.png`) — Deep Rose `#BC4792`, Soft Pink `#E080B4`, Light Gray `#ECF0F3`, Dancing Script + Inter, logo officiel du site non modifié.
 
@@ -37,7 +37,7 @@ Parfois, le plus beau cadeau… c'est du temps. Et l'IA peut aussi nous redonner
 | 57,6–65,8 s | « MON OBJECTIF » · page Canva « Nos valeurs fondamentales », « Leur rendre du temps » | — |
 | 65,8–75,7 s | « Parfois, le plus beau cadeau… C'EST DU TEMPS. », logo, ÉPISODE 35/365 · LA CHAÎNE FRATERN'ELLES × CHATGPT × CANVA × MCP | — |
 
-Short 40 s : accroche (0–9,7) · agents IA (37,0–47,8) · formation (47,8–57,6) · fin (65,8–75,6).
+Short 43 s : accroche (0–9,7) · agents IA (37,0–47,8) · formation (47,8–57,6) · fin (65,8–75,6).
 
 ## Points de vérité et choix validés
 
@@ -50,4 +50,8 @@ Short 40 s : accroche (0–9,7) · agents IA (37,0–47,8) · formation (47,8–
 
 ## Fichiers
 
-`episode35-final-76s.mp4`, `episode35-short-40s.mp4`, `episode35-miniature.png`, `episode35-sous-titres.srt`, `episode35-short-40s.srt`, `episode35-voix.mp3`, `episode35-voix-mix.mp3`, `composition/` (même moteur que l'épisode 32).
+`episode35-final-81s.mp4`, `episode35-short-43s.mp4`, `episode35-miniature.png`, `episode35-sous-titres.srt`, `episode35-short-43s.srt`, `episode35-voix.mp3`, `episode35-voix-mix.mp3`, `composition/` (même moteur que l'épisode 32).
+
+## Réglage du son (28/10)
+
+Voix ralentie à 0,9 (atempo, timbre conservé) et coupée au milieu des silences entre paragraphes : plus aucun mot tronqué. Musique à 20 %. Les minutages du storyboard ci-dessus datent de la version précédente ; les minutages exacts sont dans `composition/config.json`.
