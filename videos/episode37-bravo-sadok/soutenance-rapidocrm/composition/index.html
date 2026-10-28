@@ -1,0 +1,135 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>RapidoCRM · démonstration</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7f6;--ink:#17202b;--mut:#5b6672;--g:#3FA34D;--p:#6B46C1;--b:#1E88E5;--line:#dfe5e2}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1920px;height:1080px;overflow:hidden;background:var(--bg);font-family:Inter,sans-serif;color:var(--ink)}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden;background:radial-gradient(90% 80% at 100% 0%,#e7f3e9 0%,#f5f7f6 55%)}
+.scene{position:absolute;inset:0;display:none}
+.top{position:absolute;left:110px;top:80px;right:110px;display:flex;align-items:baseline;gap:26px}
+.num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:28px;color:var(--g)}
+.ttl{font-size:64px;font-weight:800;letter-spacing:-1.5px}
+.ttl em{font-style:normal;color:var(--g)}
+.foot{position:absolute;left:110px;right:110px;bottom:46px;display:flex;justify-content:space-between;align-items:center;font-size:20px;color:var(--mut);z-index:5}
+.foot img{height:30px}
+.bar{position:absolute;left:0;bottom:0;height:8px;background:linear-gradient(90deg,var(--g),var(--b),var(--p));z-index:5}
+.shot{position:absolute;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 24px 70px rgba(20,40,30,.18);border:1px solid var(--line)}
+.shot img{display:block;width:100%}
+.cap{position:absolute;font-family:'JetBrains Mono',monospace;font-size:19px;color:var(--mut)}
+.bl{position:absolute;font-size:34px;line-height:1.35;font-weight:500}
+.bl li{list-style:none;padding-left:46px;position:relative;margin-bottom:22px}
+.bl li:before{content:"";position:absolute;left:0;top:14px;width:20px;height:20px;border-radius:6px;background:var(--g)}
+.bl b{font-weight:800}
+.stat{position:absolute;width:360px;padding:30px 34px;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 18px 50px rgba(20,40,30,.10)}
+.stat b{display:block;font-size:76px;font-weight:900;letter-spacing:-2px;color:var(--g);line-height:1}
+.stat span{display:block;font-size:26px;font-weight:600;margin-top:10px;color:var(--ink)}
+.chip{position:absolute;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:22px;padding:10px 18px;border-radius:12px;background:#fff;border:2px solid var(--line);white-space:nowrap}
+.chip.g{background:var(--g);border-color:var(--g);color:#fff}
+.rel{position:absolute;height:150px;border-radius:20px;padding:22px 26px;color:#fff}
+.rel b{display:block;font-size:30px;font-weight:800}.rel span{display:block;font-size:21px;opacity:.92;margin-top:8px;line-height:1.3}
+.sp{position:absolute;top:0;font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:700}
+.win{position:absolute;border-radius:16px;background:#0e1116;box-shadow:0 24px 70px rgba(20,40,30,.25)}
+.two{position:absolute;width:780px;height:470px;border-radius:24px;padding:40px;background:#fff;border:1px solid var(--line)}
+.two h3{font-size:36px;margin-bottom:20px}.two p{font-size:28px;line-height:1.45;color:#2b3540}
+#thumb,#sub{display:none}
+.vw{position:absolute;left:110px;top:220px;width:1300px;height:690px;border-radius:18px;background:#0e1116;box-shadow:0 24px 70px rgba(20,40,30,.25)}
+.side{position:absolute;left:1460px;top:240px;width:360px}
+.side .k{font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:var(--g);letter-spacing:1px}
+.side h2{font-size:46px;font-weight:900;letter-spacing:-1px;line-height:1.08;margin:14px 0 26px}
+.side li{list-style:none;font-size:26px;line-height:1.35;margin-bottom:18px;padding-left:34px;position:relative;color:#2b3540}
+.side li:before{content:"";position:absolute;left:0;top:10px;width:16px;height:16px;border-radius:5px;background:var(--g)}
+</style></head><body><div id="stage">
+
+<div class="scene">
+  <div style="position:absolute;left:0;right:0;top:260px;display:flex;justify-content:center" data-at="+0.1"><img src="a/rapidocrm.png" style="height:170px"></div>
+  <div style="position:absolute;left:0;right:0;top:470px;text-align:center;font-size:96px;font-weight:900;letter-spacing:-3px" data-at="+0.4">RapidoCRM <span style="color:var(--g)">en démonstration</span></div>
+  <div style="position:absolute;left:0;right:0;top:620px;text-align:center;font-size:34px;color:var(--mut)" data-at="+1">Le CRM SaaS multi-tenant augmenté par l'intelligence artificielle</div>
+  <div style="position:absolute;left:0;right:0;top:720px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:24px;color:var(--mut)" data-at="+1.6">Mohamed Sadok Dridi · PFE ESPRIT · BraindCode</div>
+</div>
+<div class="scene">
+  <div class="top" data-at="+0.05"><span class="num">01</span><span class="ttl">Tout en un coup d'œil</span></div>
+  <div class="vw" data-at="+0.2"></div>
+  <div class="side"><div class="k" data-at="+0.4">TABLEAU DE BORD</div><ul><li data-at="+1.2">interactions SMS, e-mails, newsletters</li><li data-at="+2.4">chiffre d'affaires et factures</li><li data-at="+3.6">pipeline et campagnes</li></ul></div>
+</div>
+<div class="scene">
+  <div class="top" data-at="+0.05"><span class="num">02</span><span class="ttl">Segments dynamiques</span></div>
+  <div class="vw" data-at="+0.2"></div>
+  <div class="side"><div class="k" data-at="+0.4">CLIENTS</div><ul><li data-at="+1.2">regrouper ses clients</li><li data-at="+2.4">les relier aux campagnes, formulaires, prospection</li><li data-at="+3.6">statistiques par segment</li></ul></div>
+</div>
+<div class="scene">
+  <div class="top" data-at="+0.05"><span class="num">03</span><span class="ttl">Campagnes e-mail, SMS, newsletters</span></div>
+  <div class="vw" data-at="+0.2"></div>
+  <div class="side"><div class="k" data-at="+0.4">MARKETING</div><ul><li data-at="+1.2">cibler un segment</li><li data-at="+2.4">choisir un modèle</li><li data-at="+3.6">planifier l'envoi</li></ul></div>
+</div>
+<div class="scene">
+  <div class="top" data-at="+0.05"><span class="num">04</span><span class="ttl">La messagerie intégrée</span></div>
+  <div class="vw" data-at="+0.2"></div>
+  <div class="side"><div class="k" data-at="+0.4">BOÎTE MAIL</div><ul><li data-at="+1.2">envoyer depuis le CRM</li><li data-at="+2.4">modèles d'e-mails</li><li data-at="+3.6">historique par client</li></ul></div>
+</div>
+<div class="scene">
+  <div class="top" data-at="+0.05"><span class="num">05</span><span class="ttl">Rendez-vous</span></div>
+  <div class="vw" data-at="+0.2"></div>
+  <div class="side"><div class="k" data-at="+0.4">AGENDA</div><ul><li data-at="+1.2">visio, présentiel, téléphone</li><li data-at="+2.4">invitations automatiques</li><li data-at="+3.6">rappels par SMS ou e-mail</li></ul></div>
+</div>
+<div class="scene">
+  <div class="top" data-at="+0.05"><span class="num">06</span><span class="ttl">Devis et factures</span></div>
+  <div class="vw" data-at="+0.2"></div>
+  <div class="side"><div class="k" data-at="+0.4">FACTURATION</div><ul><li data-at="+1.2">du devis à la facture</li><li data-at="+2.4">statuts et modes de paiement</li><li data-at="+3.6">envoi au client</li></ul></div>
+</div>
+<div class="scene">
+  <div class="top" data-at="+0.05"><span class="num">07</span><span class="ttl">Capter des prospects</span></div>
+  <div class="vw" data-at="+0.2"></div>
+  <div class="side"><div class="k" data-at="+0.4">FORMULAIRES</div><ul><li data-at="+1.2">formulaire en quelques clics</li><li data-at="+2.4">champs au choix</li><li data-at="+3.6">reliés aux segments et workflows</li></ul></div>
+</div>
+<div class="scene">
+  <div class="top" data-at="+0.05"><span class="num">08</span><span class="ttl">Programme de fidélité</span></div>
+  <div class="vw" data-at="+0.2"></div>
+  <div class="side"><div class="k" data-at="+0.4">FIDÉLITÉ</div><ul><li data-at="+1.2">carte personnalisée</li><li data-at="+2.4">points et récompenses</li><li data-at="+3.6">participation par téléphone ou e-mail</li></ul></div>
+</div>
+<div class="scene">
+  <div class="top" data-at="+0.05"><span class="num">09</span><span class="ttl">Éditeur de workflows</span></div>
+  <div class="vw" data-at="+0.2"></div>
+  <div class="side"><div class="k" data-at="+0.4">AUTOMATISATION</div><ul><li data-at="+1.2">déclencheur, actions, délais</li><li data-at="+2.4">e-mail, SMS, tâche, appel par l'IA</li><li data-at="+3.6">modèles prêts à l'emploi</li></ul></div>
+</div>
+<div class="scene">
+  <div class="top" data-at="+0.05"><span class="num">10</span><span class="ttl">L'IA <em>intégrée</em></span></div>
+  <div class="shot" style="left:110px;top:220px;width:860px" data-at="+0.4"><img src="a/aide-bot.png"></div>
+  <div class="cap" style="left:110px;top:810px" data-at="+0.4">Assistant intégré au tableau de bord</div>
+  <div class="shot" style="left:1020px;top:220px;width:790px" data-at="+3"><img src="a/prompts.png"></div>
+  <div class="chip g" style="left:1020px;top:590px" data-at="+3">169 prompts · 23 catégories</div>
+  <div class="cap" style="left:1020px;top:660px;width:790px;font-size:22px;color:var(--ink)" data-at="+5">Chaque entreprise renseigne sa propre clé d'IA, stockée chiffrée.</div>
+</div>
+<div class="scene">
+  <div class="top" data-at="+0.05"><span class="num">11</span><span class="ttl">Claude pilote RapidoCRM <em>via le MCP</em></span></div>
+  <div class="shot" style="left:110px;top:220px;width:900px" data-at="+0.4"><img src="a/claude-mcp.png"></div>
+  <div class="cap" style="left:110px;top:780px" data-at="+0.4">« Ouvre la fiche complète de l'entreprise » · fiche de test, e-mail masqué</div>
+  <div class="shot" style="left:1060px;top:220px;width:750px;padding:10px" data-at="+5"><img src="a/arch.png"></div>
+  <div class="chip g" style="left:1060px;top:660px" data-at="+7">hub + 9 serveurs · 135 outils · OAuth 2</div>
+</div>
+<div class="scene">
+  <div class="top" data-at="+0.05"><span class="num">12</span><span class="ttl">L'<em>agent vocal</em></span></div>
+  <div class="shot" style="left:110px;top:220px;width:1060px" data-at="+0.4"><img src="a/appels-histo.png"></div>
+  <div class="cap" style="left:110px;top:720px" data-at="+0.4">Historique des appels · données de test masquées</div>
+  <div class="shot" style="left:1220px;top:220px;width:590px;height:470px" data-at="+3"><img src="a/appels-transcript.png"></div>
+  <div class="chip" style="left:1220px;top:720px" data-at="+3">Twilio + ElevenLabs</div>
+  <div class="cap" style="left:1220px;top:790px;width:590px;font-size:22px;color:var(--ink)" data-at="+5">Appels sortants, rendez-vous, appels entrants au nom de chaque entreprise.</div>
+</div>
+<div class="scene">
+  <div style="position:absolute;left:0;right:0;top:300px;text-align:center;font-size:120px;font-weight:900;letter-spacing:-3px" data-at="+0.1">Merci <span style="color:var(--g)">!</span></div>
+  <div style="position:absolute;left:0;right:0;top:470px;text-align:center;font-size:34px;color:var(--mut)" data-at="+0.4">Mohamed Sadok Dridi · ESPRIT · BraindCode</div>
+  <div style="position:absolute;left:0;right:0;top:600px;display:flex;justify-content:center;gap:60px;align-items:center" data-at="+0.8"><img src="a/rapidocrm.png" style="height:110px"><img src="a/braindcode.png" style="height:56px"><img src="a/claude.webp" style="height:46px"></div>
+</div>
+<div class="foot"><span>RapidoCRM · démonstration</span><span>Mohamed Sadok Dridi · PFE ESPRIT 2025/2026</span></div>
+<div class="bar" id="bar"></div>
+<div id="sub"><span></span></div>
+<div id="thumb"></div>
+</div>
+<script src="cfg.js"></script>
+<script src="engine.js"></script>
+<script>
+(function () {
+  const C = window.CFG, bar = document.getElementById('bar'), base = window.render;
+  window.render = t => { base(t); bar.style.width = (100 * Math.min(1, t / C.dur)) + '%'; };
+})();
+</script>
+</body></html>
