@@ -1,54 +1,59 @@
-# Épisode 36/365 : mon app HACCP sur Google Play, publiée par un agent IA
+# Épisode 36/365 : mon app HACCP est sur Google Play (suite du dimanche)
 
-Tourné le 28/10. Style repris de la vidéo de référence fournie par Michael : fond noir, accent orange, mascotte étoile, gros chiffres qui claquent, sous-titres mot à mot avec les mots clés en orange, pseudo en haut à gauche et compte à rebours en haut à droite.
+Refait le 28/10 à la demande de Michael :
+- la voix reprend l'intonation des épisodes 1 à 30 : même voix Noé, même modèle `eleven_v4`, débit naturel (pas de ralenti) ;
+- aucun chiffre ni terme technique : compréhensible par n'importe qui ;
+- l'épisode est la suite de l'épisode 2, « Mon dimanche à la maison : 4 applications et un jeu », qui finissait sur « prochaine étape : Google Play et l'App Store ». Des extraits de cette vidéo sont repris au début et à la fin.
 
-63 s (+ short 32 s) · 9:16 · 1080 × 1920 · 30 i/s · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, eleven_multilingual_v2, une prise, ralentie à 0,9) · musique `videos/planit-academy/assets/audio/musique-produit.mp3` à 20 % avec ducking.
-Projets : site de l'app HACCP (Lovable `56f5e836-87ed-49d9-a58e-3c5d3a2777c1`) et ReleaseSync, MCP Google Play (Lovable `40be640d-20b0-4cf3-86fe-3af95d03765c`, https://play-track-release-control.lovable.app/mcp).
+Le style visuel de la vidéo de référence est gardé : fond noir, accent orange, mascotte étoile, mots qui claquent, sous-titres mot à mot avec les mots clés en orange, compte à rebours en haut à droite.
+
+61 s (+ short 32 s) · 9:16 · 1080 × 1920 · 30 i/s · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, `eleven_v4`, prise A du flow `5p2txVz4RCPtcxFNdsmD`) · musique `videos/planit-academy/assets/audio/musique-produit.mp3` à 20 % avec ducking.
 
 ## Narration
 
-Aujourd'hui, mon application HACCP est arrivée sur Google Play. Et ce n'est pas moi qui ai cliqué sur « publier ».
+Dimanche, je vous montrais mes applications pour les restaurants. Et je vous disais : prochaine étape, Google Play.
 
-C'est un agent IA. Je lui ai construit un MCP avec Lovable : ReleaseSync. Seize outils, branchés sur l'API officielle de Google Play.
+Eh bien, c'est fait ! Mon application HACCP est sur Google Play.
 
-Je lui écris une seule phrase : « Publie FoodEatUp HACCP en test fermé. »
+Et ce n'est pas moi qui l'ai mise en ligne. C'est mon assistant IA.
 
-L'agent récupère le fichier de l'appli, choisit la piste, écrit les nouveautés… et fait d'abord une simulation. Google valide tout, rien n'est publié.
+Avec Lovable, je lui ai fabriqué un outil qui lui permet de parler directement à Google Play.
 
-Je relis. Je dis oui. Version 1.6.2 : publiée.
+Je lui demande simplement : mets mon application HACCP en ligne pour mes testeurs.
 
-Il a aussi rempli la fiche du store : le texte, l'icône, la bannière, et huit captures d'écran.
+Il prépare tout : l'application, la description, les images. Puis il fait un essai, pour vérifier que tout est bon… sans rien publier.
 
-Et chaque action est écrite dans un journal : qui, quand, sur quelle appli.
+Il me montre le résultat. Je dis oui. Et l'application part.
 
-L'appli, elle, fait vos relevés HACCP à la voix : températures, DLC, réceptions, nettoyage. En dix secondes.
+Tout est noté : ce qu'il a fait, et quand. Et rien ne se passe sans mon accord.
 
-Ma caisse et ma carte de fidélité sont déjà enregistrées dans ReleaseSync. Ce sont les prochaines.
+Pour l'instant, l'appli est réservée à un petit groupe de testeurs. C'est la règle de Google, avant de l'ouvrir à tout le monde.
 
-Tu veux le même agent pour publier tes applis ? Écris « STORE » en commentaire. Épisode 36.
+Les prochaines sur la liste : ma caisse et ma borne de fidélité.
+
+Tu veux un assistant comme ça pour tes applis ? Écris « STORE » en commentaire.
 
 ## Storyboard
 
 | Temps | Image |
 |---|---|
-| 0–6,6 s | Fiche « FoodEatUp HACCP », version 1.6.2 · test fermé, puis « 0 clic de ma part » |
-| 6,6–15,1 s | Mascotte « un agent IA », carte ReleaseSync (MCP construit avec Lovable), « 16 outils MCP » entouré des 16 noms réels, puce Android Publisher API |
-| 15,1–20,7 s | Boîte de discussion : « Publie FoodEatUp HACCP en test fermé », appel `google_play_publish_release`, `dryRun: true`, `track: "alpha"` |
-| 20,7–28,4 s | Les 4 étapes de l'agent, puis « Google Play : versionCode 12 validé · rien n'est publié » |
-| 28,4–32,3 s | « OUI » puis « 1.6.2 », « PUBLIÉE · test fermé · 100 % », 28/10 · 13:59 |
-| 32,3–37,8 s | Fiche du store fr-FR : texte, icône, bannière, 8 captures, « 8 » |
-| 37,8–41,8 s | Journal `audit_logs` : 5 vraies lignes (13:59, 13:56, 11:17, 11:16, 09:55) |
-| 41,8–50 s | Écran réel de l'app (site HACCP), températures, DLC, réceptions, nettoyage, « 10 s » |
-| 50–55,2 s | Apps ReleaseSync : HACCP publiée, Caisse et Fidélité enregistrées, « les prochaines » |
-| 55,2–63,3 s | Commentaire « STORE », ÉPISODE 36/365 · LOVABLE × CLAUDE × GOOGLE PLAY |
+| 0–6,3 s | « ÉPISODE 2 · MON DIMANCHE » : la vidéo du dimanche dans un cadre (titre et liste des applis, puis la carte « Prochaine étape : Google Play & App Store ») |
+| 6,3–11,5 s | « C'est fait ! », fiche FoodEatUp HACCP, « Sur Google Play » |
+| 11,5–15,6 s | « Pas moi. » puis la mascotte, « mon assistant IA » |
+| 15,6–21,2 s | Mon assistant → l'outil (fait avec Lovable) → Google Play, « il parle directement à Google Play » |
+| 21,2–26,6 s | La demande tapée mot à mot : « Mets mon application HACCP en ligne pour mes testeurs » |
+| 26,6–34,3 s | L'application, la description, les images (cochées), « Un essai d'abord · tout est bon · rien n'est publié » |
+| 34,3–38,8 s | « OUI », « L'application part » |
+| 38,8–43,6 s | Le journal en mots simples (description, images, essai, mise en ligne), « rien sans mon accord » |
+| 43,6–49,8 s | Silhouettes : « un petit groupe de testeurs », « ensuite : tout le monde » |
+| 49,8–53,8 s | « Les prochaines · vues dimanche » : extraits de l'épisode 2 sur la caisse et la borne de fidélité |
+| 53,8–60,6 s | Commentaire « STORE », ÉPISODE 36/365 |
 
-Short 32 s : accroche (0–6,6) · la phrase et la simulation (15,1–28,4) · oui, publiée (28,4–32,3) · appel à l'action (55,2–63,2).
+Short 32 s : rappel du dimanche · c'est fait · mon assistant IA · la demande · oui · appel à l'action.
 
 ## Points de vérité
 
-- Relevé dans la base ReleaseSync le 28/10 : `google_play_publish_release` réussi à 12:59 UTC (13:59 à Paris) pour `com.foodeatup.haccp`, versionCode 12, nom « 1.6.2 (12) », piste `alpha` (test fermé), 100 %, déclenché par « Claude AI Agent », précédé d'une simulation réussie à 12:56 UTC.
-- Fiche du store : `google_play_update_listing` fr-FR (08:55 UTC), icône, bannière et 8 captures d'écran envoyées (10:16–10:17 UTC).
-- 16 outils déclarés dans `src/lib/mcp/index.ts` ; chaque écriture fait d'abord une simulation, puis attend l'accord.
-- Caisse (`com.foodeatup.caisse`) et Fidélité (`com.foodeatup.fidelite`) sont enregistrées dans ReleaseSync, pas encore publiées.
-- L'app est en **test fermé**, pas encore en production : Google impose 12 testeurs pendant 14 jours aux comptes développeurs personnels récents. La vidéo dit « test fermé » à l'écran et à la voix.
-- La fiche Google Play de la première scène est une reconstitution (même nom, même package, même version), pas une capture de la Play Console. L'écran de l'app vient du site HACCP publié.
+- Relevé dans la base de l'outil (ReleaseSync) le 28/10 : mise en ligne réussie de FoodEatUp HACCP par l'assistant à 13:59 (heure de Paris), précédée d'un essai réussi à 13:56, sur la piste « test fermé ». La description, l'icône, la bannière et les captures d'écran avaient été envoyées le matin.
+- « Petit groupe de testeurs » = test fermé : Google demande ce test avant d'ouvrir l'appli à tout le monde sur les comptes développeurs récents.
+- La caisse et la fidélité sont enregistrées dans l'outil, pas encore publiées.
+- La fiche Google Play de la scène 2 est une reconstitution (même nom, même éditeur), pas une capture de la Play Console. Les extraits du début et de la fin viennent de la vidéo de l'épisode 2 (`videos/dimanche-4-apps-1-jeu/renders/dimanche-4-apps-1-jeu_1080x1920.mp4`), sans son.

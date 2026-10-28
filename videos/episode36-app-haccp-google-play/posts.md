@@ -2,32 +2,30 @@
 
 ## LinkedIn
 
-Aujourd'hui, mon application HACCP est arrivée sur Google Play. Je n'ai pas cliqué sur « publier ».
+Dimanche, je vous montrais mes applications pour les restaurants, et je vous disais : prochaine étape, Google Play.
 
-C'est un agent IA qui l'a fait, avec un MCP que j'ai construit sur Lovable : ReleaseSync.
+C'est fait. Mon application HACCP est sur Google Play.
 
-Ce que fait l'agent quand je lui écris « publie FoodEatUp HACCP en test fermé » :
-1. il récupère le fichier de l'appli dans la release GitHub
-2. il choisit la piste et écrit les nouveautés
-3. il lance une simulation : Google valide tout, rien n'est publié
-4. il attend mon oui, puis publie
+Et ce n'est pas moi qui l'ai mise en ligne : c'est mon assistant IA. Avec Lovable, je lui ai fabriqué un outil qui lui permet de parler directement à Google Play.
 
-La version 1.6.2 est partie comme ça, en test fermé. Il a aussi rempli la fiche du store : texte, icône, bannière et 8 captures d'écran. Chaque action est inscrite dans un journal.
+Je lui demande simplement de mettre l'appli en ligne. Il prépare l'application, la description et les images, il fait un essai pour vérifier que tout est bon, puis il attend mon oui. Tout est noté, et rien ne se passe sans mon accord.
 
-Prochaines sur la liste : ma caisse et ma carte de fidélité.
+Pour l'instant, l'appli est réservée à un petit groupe de testeurs : c'est la règle de Google avant de l'ouvrir à tout le monde.
 
-Tu veux le même agent pour publier tes applis ? Écris STORE en commentaire.
+Les prochaines sur la liste : ma caisse et ma borne de fidélité.
+
+Tu veux un assistant comme ça pour tes applis ? Écris STORE en commentaire.
 
 Épisode 36/365
 
-#IA #MCP #Lovable #GooglePlay #HACCP
+#IA #Lovable #GooglePlay #Restauration #Entrepreneur
 
 ## Instagram / TikTok
 
-Mon app HACCP est sur Google Play, et c'est un agent IA qui a appuyé sur publier. Écris STORE en commentaire. Épisode 36/365.
-#ia #mcp #lovable #googleplay #restaurant
+Dimanche je vous disais « prochaine étape : Google Play »… c'est fait ✅ Et c'est mon assistant IA qui l'a mise en ligne. Écris STORE en commentaire. Épisode 36/365.
+#ia #lovable #googleplay #restaurant #entrepreneur
 
 ## YouTube (Shorts)
 
-Titre : Un agent IA a publié mon app sur Google Play #Shorts
-Description : Épisode 36/365. ReleaseSync, un MCP construit avec Lovable et branché sur l'API Google Play : simulation d'abord, publication après mon accord. L'app FoodEatUp HACCP 1.6.2 est en test fermé.
+Titre : Mon assistant IA a mis mon app sur Google Play #Shorts
+Description : Épisode 36/365, la suite de mon dimanche. Mon application HACCP pour les restaurants est sur Google Play, réservée pour l'instant à un petit groupe de testeurs. Mon assistant IA prépare tout, fait un essai, et attend mon accord avant de publier.

@@ -1,4 +1,4 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 36 : mon app HACCP sur Google Play</title>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 36 : mon app HACCP sur Google Play (suite du dimanche)</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>:root{--bg:#0b0b0d;--ink:#fff;--accent:#FF8A1F;--hi:#FF8A1F;--subink:#fff;--subbg:transparent;--font:'Inter',sans-serif}</style>
 <link rel="stylesheet" href="base.css">
@@ -33,143 +33,124 @@
 .app .ic{width:110px;height:110px;border-radius:26px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:30px;color:#000}
 .app h3{font-size:36px;margin-top:26px;line-height:1.1}.app p{font-family:'JetBrains Mono',monospace;font-size:19px;color:#9a9aa5;margin-top:10px}
 .app .st{position:absolute;left:30px;bottom:30px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:20px;border-radius:999px;padding:8px 16px}
+.win{position:absolute;border-radius:34px;border:4px solid #2a2a31;background:#000;box-shadow:0 30px 90px rgba(0,0,0,.6)}
+.person{position:absolute;width:96px;height:96px;border-radius:50%;background:#26262d;border:3px solid #3a3a44}
+.person:after{content:"";position:absolute;left:27px;top:14px;width:36px;height:36px;border-radius:50%;background:#9a9aa5}
+.person:before{content:"";position:absolute;left:17px;top:54px;width:56px;height:30px;border-radius:30px 30px 6px 6px;background:#9a9aa5}
+.person.o{border-color:var(--accent)}.person.o:after,.person.o:before{background:var(--accent)}
+.ck{position:absolute;left:70px;right:70px;height:130px;display:flex;align-items:center;gap:28px;padding:0 34px;background:#17171b;border:2px solid #2a2a31;border-radius:26px;font-size:46px;font-weight:800}
+.ck .v{margin-left:auto;width:64px;height:64px;border-radius:50%;background:#3ddc84;color:#000;display:flex;align-items:center;justify-content:center;font-size:38px}
 </style></head><body><div id="stage">
 <div class="dots"></div><div class="floor"></div>
 <div id="hud"><span>michael.kebail</span><span id="tm">1:03</span></div>
 
-<!-- 0 · accroche : la fiche Google Play -->
+<!-- 0 · rappel du dimanche (la vidéo de l'épisode 2 est incrustée dans .win par ffmpeg) -->
 <div class="scene">
-  <div class="lab" style="position:absolute;left:70px;top:190px" data-at="+0.1">28/10 · google play</div>
-  <div class="panel" style="left:70px;right:70px;top:250px;height:560px;padding:44px" data-at="+0.15">
+  <div class="lab" style="position:absolute;left:0;right:0;text-align:center;top:170px" data-at="+0.05">épisode 2 · mon dimanche</div>
+  <div class="win" style="left:236px;top:222px;width:608px;height:1080px" data-at="+0.05" data-fx="fade"></div>
+  <svg class="m" style="--s:170px;left:840px;top:1150px" data-at="0:13" viewBox="0 0 100 100"><use href="#star"/></svg>
+</div>
+
+<!-- 1 · c'est fait -->
+<div class="scene">
+  <div class="hn" style="top:230px;font-size:150px;letter-spacing:-4px" data-at="1:2" data-fx="slam">C'est <span class="or">fait !</span></div>
+  <div class="panel" style="left:70px;right:70px;top:500px;height:520px;padding:44px" data-at="1:4">
     <div style="display:flex;gap:34px;align-items:center">
       <div style="width:190px;height:190px;border-radius:44px;background:#fff;display:flex;align-items:center;justify-content:center;flex:none"><img src="a/logo.png" style="width:160px"></div>
       <div><div style="font-size:58px;font-weight:800;line-height:1.05">FoodEatUp HACCP</div>
-      <div style="font-size:30px;color:#3ddc84;font-weight:700;margin-top:12px">FoodEatUp</div>
-      <div class="mono" style="font-size:24px;color:#9a9aa5;margin-top:8px">com.foodeatup.haccp</div></div>
+      <div style="font-size:32px;color:#3ddc84;font-weight:700;margin-top:12px">FoodEatUp</div></div>
     </div>
-    <div style="margin-top:50px;height:96px;border-radius:999px;background:#3ddc84;color:#000;font-size:38px;font-weight:800;display:flex;align-items:center;justify-content:center" data-at="0:7">Version 1.6.2 · test fermé</div>
-    <div class="mono" style="margin-top:28px;font-size:24px;color:#9a9aa5;text-align:center" data-at="0:8">Android · voix · 4 langues · relevés HACCP</div>
+    <div style="margin-top:56px;height:110px;border-radius:999px;background:#3ddc84;color:#000;font-size:44px;font-weight:800;display:flex;align-items:center;justify-content:center" data-at="1:9">Sur Google Play</div>
   </div>
-  <div class="hn" style="top:880px;font-size:300px" data-at="0:16" data-fx="slam">0<span class="or" style="font-size:120px;letter-spacing:-2px"> clic</span></div>
-  <div style="position:absolute;left:0;right:0;top:1200px;text-align:center;font-size:44px;font-weight:700;color:#cfcfd6" data-at="0:16">de ma part</div>
-  <svg class="m" style="--s:190px;left:800px;top:150px" data-at="0:13" viewBox="0 0 100 100"><use href="#star"/></svg>
+  <svg class="m" style="--s:180px;left:820px;top:1060px" data-at="1:9" viewBox="0 0 100 100"><use href="#star"/></svg>
 </div>
 
-<!-- 1 · l'agent, le MCP, 16 outils -->
+<!-- 2 · pas moi : mon assistant IA -->
 <div class="scene">
-  <svg class="m" style="--s:250px;left:415px;top:230px" data-at="1:2" viewBox="0 0 100 100"><use href="#star"/></svg>
-  <div class="hn" style="top:510px;font-size:76px;letter-spacing:-1px" data-at="1:2">un <span class="or">agent IA</span></div>
-  <div class="panel" style="left:240px;right:240px;top:640px;height:150px;display:flex;align-items:center;gap:26px;padding:0 34px" data-at="1:9">
-    <div style="width:92px;height:92px;border-radius:24px;background:#1565e6;display:flex;align-items:center;justify-content:center;flex:none">
-      <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M21 12a9 9 0 0 1-15.5 6.2M3 12A9 9 0 0 1 18.5 5.8"/><path d="M18 2v4h-4M6 22v-4h4"/></svg></div>
-    <div><div style="font-size:46px;font-weight:800">ReleaseSync</div><div class="mono" style="font-size:22px;color:#9a9aa5">MCP · construit avec Lovable</div></div>
-  </div>
-  <div id="tools" data-at="1:13" data-fx="fade" style="position:absolute;inset:0">
-    <div class="hn" style="top:840px;font-size:260px">16</div>
-    <div style="position:absolute;left:0;right:0;top:1100px;text-align:center;font-size:42px;font-weight:800" class="or">outils MCP</div>
-  </div>
-  <div class="chipx o" style="left:50%;transform:translateX(-50%);top:1230px" data-at="1:17" data-fx="fade">→ Google Play Android Publisher API</div>
+  <div class="hn" style="top:300px;font-size:120px;letter-spacing:-3px;color:#5a5a64" data-at="2:4" data-fx="slam">Pas moi.</div>
+  <svg class="m" style="--s:330px;left:375px;top:560px" data-at="2:10" viewBox="0 0 100 100"><use href="#star"/></svg>
+  <div class="hn" style="top:960px;font-size:100px;letter-spacing:-3px" data-at="2:12">mon <span class="or">assistant IA</span></div>
 </div>
 
-<!-- 2 · une phrase -->
+<!-- 3 · l'outil qui parle à Google Play -->
+<div class="scene">
+  <svg class="m" style="--s:230px;left:90px;top:420px" data-at="+0.1" viewBox="0 0 100 100"><use href="#star"/></svg>
+  <div class="mono" style="position:absolute;left:60px;width:290px;top:670px;text-align:center;font-size:28px;font-weight:700" data-at="+0.1">mon assistant</div>
+  <div style="position:absolute;left:330px;width:440px;top:522px;height:6px;background:repeating-linear-gradient(90deg,var(--accent) 0 22px,transparent 22px 40px)" data-at="3:7" data-fx="fade"></div>
+  <div class="panel" style="left:400px;width:280px;top:440px;height:170px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;border-color:var(--accent)" data-at="3:7">
+    <div style="font-size:40px;font-weight:800">l'outil</div><div class="mono" style="font-size:22px;color:#9a9aa5">fait avec Lovable</div></div>
+  <div class="panel" style="left:760px;width:240px;top:410px;height:230px;display:flex;align-items:center;justify-content:center" data-at="3:15">
+    <svg width="130" height="140" viewBox="0 0 26 28"><path d="M2 1.5v25L15 14z" fill="#00d3ff"/><path d="M2 1.5 15 14l4-4L4.2.6C3.4.1 2.6.4 2 1.5z" fill="#3ddc84"/><path d="M2 26.5 15 14l4 4-14.8 9.4c-.8.5-1.6.2-2.2-.9z" fill="#ff3a44"/><path d="M19 10l5 2.8c1.3.8 1.3 1.6 0 2.4L19 18l-4-4z" fill="#ffd400"/></svg></div>
+  <div class="mono" style="position:absolute;left:740px;width:280px;top:670px;text-align:center;font-size:28px;font-weight:700" data-at="3:15">Google Play</div>
+  <div class="hn" style="top:860px;font-size:84px;letter-spacing:-2px;line-height:1.1" data-at="3:12">il <span class="or">parle directement</span><br>à Google Play</div>
+</div>
+
+<!-- 4 · la demande -->
 <div class="scene">
   <svg class="m" style="--s:170px;left:820px;top:250px" data-at="+0.2" viewBox="0 0 100 100"><use href="#star"/></svg>
-  <div class="lab" style="position:absolute;left:70px;top:260px" data-at="+0.1">une seule phrase</div>
-  <div class="panel" style="left:70px;right:70px;top:420px;height:430px;padding:36px" data-at="+0.15">
-    <div class="chipx" style="position:static;display:inline-block;font-size:22px">▣ releasesync · MCP <span class="or">CONNECTÉ</span></div>
-    <div style="margin-top:40px;font-size:56px;font-weight:700;line-height:1.2">
-      <span data-at="2:6" data-fx="fade" data-d=".12">Publie </span><span data-at="2:7" data-fx="fade" data-d=".12">FoodEatUp </span><span data-at="2:8" data-fx="fade" data-d=".12">HACCP </span><span data-at="2:9" data-fx="fade" data-d=".12">en </span><span data-at="2:10" data-fx="fade" data-d=".12" class="or">test </span><span data-at="2:11" data-fx="fade" data-d=".12" class="or">fermé</span></div>
-    <div style="position:absolute;right:36px;bottom:36px;width:84px;height:84px;border-radius:22px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:48px;font-weight:900;color:#000" data-at="2:11">↑</div>
-  </div>
-  <div class="tool o" style="left:70px;top:900px" data-at="2:11" data-fx="left">google_play_publish_release</div>
-  <div class="tool" style="left:70px;top:970px" data-at="+3.6" data-fx="left">dryRun: true</div>
-  <div class="tool" style="left:290px;top:970px" data-at="+3.75" data-fx="left">track: "alpha"</div>
-</div>
-
-<!-- 3 · la simulation -->
-<div class="scene">
-  <div class="lab" style="position:absolute;left:70px;top:200px" data-at="+0.1">ce que fait l'agent</div>
-  <div class="row" style="top:260px" data-at="3:3"><span class="n">1</span><div>Récupère le fichier<small>foodeatup-haccp.aab · release GitHub</small></div><span class="ok">OK</span></div>
-  <div class="row" style="top:400px" data-at="3:8"><span class="n">2</span><div>Choisit la piste<small>alpha = test fermé</small></div><span class="ok">OK</span></div>
-  <div class="row" style="top:540px" data-at="3:11"><span class="n">3</span><div>Écrit les nouveautés<small>fr-FR · 500 caractères max</small></div><span class="ok">OK</span></div>
-  <div class="row" style="top:680px;border-color:var(--accent)" data-at="3:16"><span class="n">4</span><div>Simulation<small>dryRun = true</small></div></div>
-  <div class="panel" style="left:70px;right:70px;top:860px;padding:40px;text-align:center;border-color:#3ddc84" data-at="3:17" data-fx="slam">
-    <div class="mono" style="font-size:26px;color:#3ddc84;font-weight:700">GOOGLE PLAY</div>
-    <div style="font-size:58px;font-weight:800;margin-top:10px">versionCode 12 <span style="color:#3ddc84">validé</span></div>
-    <div style="font-size:38px;font-weight:700;margin-top:14px;color:#cfcfd6" data-at="3:20">rien n'est publié</div>
+  <div class="lab" style="position:absolute;left:70px;top:260px" data-at="+0.1">je lui demande</div>
+  <div class="panel" style="left:70px;right:70px;top:420px;height:500px;padding:40px" data-at="+0.15">
+    <div style="font-size:62px;font-weight:700;line-height:1.2">
+      <span data-at="4:4" data-fx="fade" data-d=".15">Mets </span><span data-at="4:5" data-fx="fade" data-d=".15">mon </span><span data-at="4:6" data-fx="fade" data-d=".15">application </span><span data-at="4:7" data-fx="fade" data-d=".15">HACCP </span><span data-at="4:8" data-fx="fade" data-d=".15">en </span><span data-at="4:9" data-fx="fade" data-d=".15">ligne </span><span data-at="4:10" data-fx="fade" data-d=".15">pour </span><span data-at="4:11" data-fx="fade" data-d=".15">mes </span><span data-at="4:12" data-fx="fade" data-d=".15" class="or">testeurs</span></div>
+    <div style="position:absolute;right:40px;bottom:40px;width:90px;height:90px;border-radius:24px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:52px;font-weight:900;color:#000" data-at="4:12">↑</div>
   </div>
 </div>
 
-<!-- 4 · oui -->
+<!-- 5 · il prépare tout, puis un essai -->
 <div class="scene">
-  <div class="hn" style="top:300px;font-size:330px;letter-spacing:-10px" data-at="4:4" data-fx="slam">OUI</div>
-  <svg class="m" style="--s:200px;left:800px;top:230px" data-at="4:4" viewBox="0 0 100 100"><use href="#star"/></svg>
-  <div class="hn or" style="top:700px;font-size:250px;letter-spacing:-8px" data-at="4:5" data-fx="slam">1.6.2</div>
-  <div class="chipx o" style="left:0;right:0;margin:auto;width:fit-content;top:1010px;font-size:34px;padding:16px 34px" data-at="4:11">PUBLIÉE · test fermé · 100 %</div>
-  <div class="mono" style="position:absolute;left:0;right:0;top:1130px;text-align:center;font-size:26px;color:#9a9aa5" data-at="4:11">28/10 · 13:59 · déclenché par l'agent IA</div>
-</div>
-
-<!-- 5 · la fiche du store -->
-<div class="scene">
-  <div class="lab" style="position:absolute;left:70px;top:200px" data-at="+0.1">fiche du store · fr-FR</div>
-  <div class="panel" style="left:70px;right:70px;top:260px;height:250px;padding:34px" data-at="5:9">
-    <div style="font-size:40px;font-weight:800">Votre HACCP fait à la voix</div>
-    <div style="margin-top:22px;height:16px;border-radius:8px;background:#2c2c33;width:92%"></div>
-    <div style="margin-top:16px;height:16px;border-radius:8px;background:#2c2c33;width:78%"></div>
-    <div style="margin-top:16px;height:16px;border-radius:8px;background:#2c2c33;width:64%"></div>
+  <div class="lab" style="position:absolute;left:70px;top:200px" data-at="+0.1">il prépare tout</div>
+  <div class="ck" style="top:260px" data-at="5:3">L'application<span class="v">✓</span></div>
+  <div class="ck" style="top:410px" data-at="5:5">La description<span class="v">✓</span></div>
+  <div class="ck" style="top:560px" data-at="5:7">Les images<span class="v">✓</span></div>
+  <div class="panel" style="left:70px;right:70px;top:760px;padding:44px;text-align:center;border-color:var(--accent)" data-at="5:12" data-fx="slam">
+    <div style="font-size:64px;font-weight:900">Un <span class="or">essai</span> d'abord</div>
+    <div style="font-size:42px;font-weight:700;margin-top:18px;color:#3ddc84" data-at="5:16">tout est bon</div>
+    <div style="font-size:42px;font-weight:700;margin-top:8px;color:#cfcfd6" data-at="5:19">rien n'est publié</div>
   </div>
-  <div class="tile" style="left:70px;top:550px;width:230px;height:230px;background:#fff;display:flex;align-items:center;justify-content:center" data-at="5:10"><img src="a/logo.png" style="width:190px"></div>
-  <div class="tile" style="left:330px;top:550px;width:680px;height:230px" data-at="5:12"><img src="a/hero.png" style="width:100%;height:100%;object-fit:cover;object-position:0 20%"></div>
-  <div id="shots" style="position:absolute;left:70px;top:820px;width:940px;height:560px"></div>
-  <div class="hn" style="top:930px;font-size:300px;text-shadow:0 20px 60px #000" data-at="5:14" data-fx="slam">8</div>
 </div>
 
-<!-- 6 · le journal -->
+<!-- 6 · oui -->
 <div class="scene">
-  <div class="lab" style="position:absolute;left:70px;top:200px" data-at="+0.1">journal · audit_logs</div>
-  <div class="panel" style="left:30px;right:30px;top:260px;height:1080px"></div>
-  <div class="log" style="top:290px;color:#9a9aa5;font-size:20px" data-at="+0.2"><span>QUAND</span><span>ACTION · APPLI</span><span style="justify-self:end">RÉSULTAT</span></div>
-  <div class="log" style="top:380px" data-at="6:2"><span>13:59</span><span><b>publish_release</b><br>haccp · alpha</span><em>success</em></div>
-  <div class="log" style="top:520px" data-at="+1.0"><span>13:56</span><span><b>publish_release</b> (dry run)<br>haccp · alpha</span><em>success</em></div>
-  <div class="log" style="top:660px" data-at="+1.3"><span>11:17</span><span><b>upload_images</b><br>8 captures d'écran</span><em>success</em></div>
-  <div class="log" style="top:800px" data-at="+1.6"><span>11:16</span><span><b>upload_images</b><br>icône · bannière</span><em>success</em></div>
-  <div class="log" style="top:940px" data-at="+1.9"><span>09:55</span><span><b>update_listing</b><br>fiche fr-FR</span><em>success</em></div>
-  <div class="chipx o" style="left:70px;top:1110px" data-at="6:8">qui : Claude AI Agent</div>
-  <div class="chipx" style="left:70px;top:1190px" data-at="6:9">quand : horodaté</div>
-  <div class="chipx" style="left:420px;top:1190px" data-at="6:12">appli : com.foodeatup.haccp</div>
+  <div class="hn" style="top:330px;font-size:340px;letter-spacing:-10px" data-at="6:7" data-fx="slam">OUI</div>
+  <svg class="m" style="--s:210px;left:800px;top:260px" data-at="6:7" viewBox="0 0 100 100"><use href="#star"/></svg>
+  <div class="chipx o" style="left:0;right:0;margin:auto;width:fit-content;top:800px;font-size:52px;padding:22px 46px;font-family:Inter" data-at="6:9" data-fx="slam">L'application part ✓</div>
 </div>
 
-<!-- 7 · l'appli -->
+<!-- 7 · tout est noté, rien sans mon accord -->
 <div class="scene">
-  <div class="tile" style="left:90px;top:220px;width:456px;height:978px;border-radius:60px;box-shadow:0 40px 100px rgba(0,0,0,.6)" data-at="+0.1"><img src="a/phone.png" style="width:100%;height:100%"></div>
-  <div class="chipx" style="left:600px;top:420px" data-at="7:9" data-fx="left">températures</div>
-  <div class="chipx" style="left:600px;top:510px" data-at="7:10" data-fx="left">DLC</div>
-  <div class="chipx" style="left:600px;top:600px" data-at="7:11" data-fx="left">réceptions</div>
-  <div class="chipx" style="left:600px;top:690px" data-at="7:12" data-fx="left">nettoyage</div>
-  <div class="chipx o" style="left:600px;top:290px" data-at="7:8" data-fx="left">à la voix</div>
-  <div style="position:absolute;left:590px;top:800px;font-weight:900;font-size:230px;letter-spacing:-10px;line-height:1" data-at="7:14" data-fx="slam">10<span class="or" style="font-size:110px">s</span></div>
-  <div class="mono" style="position:absolute;left:600px;top:1060px;font-size:24px;color:#9a9aa5" data-at="7:15">app gratuite · Android</div>
+  <div class="lab" style="position:absolute;left:70px;top:200px" data-at="+0.1">tout est noté</div>
+  <div class="ck" style="top:260px;font-size:40px" data-at="7:2">Description mise à jour<span class="v">✓</span></div>
+  <div class="ck" style="top:410px;font-size:40px" data-at="7:4">Images envoyées<span class="v">✓</span></div>
+  <div class="ck" style="top:560px;font-size:40px" data-at="7:6">Essai réussi<span class="v">✓</span></div>
+  <div class="ck" style="top:710px;font-size:40px;border-color:var(--accent)" data-at="7:8">Mise en ligne<span class="v">✓</span></div>
+  <div class="hn" style="top:930px;font-size:78px;letter-spacing:-2px;line-height:1.1" data-at="7:10">rien sans<br><span class="or">mon accord</span></div>
 </div>
 
-<!-- 8 · les prochaines -->
+<!-- 8 · petit groupe de testeurs -->
 <div class="scene">
-  <div class="lab" style="position:absolute;left:70px;top:200px" data-at="+0.1">releasesync · apps</div>
-  <div class="app" style="left:40px;top:300px;border-color:var(--accent)" data-at="+0.15"><div class="ic" style="background:var(--accent)">HACCP</div><h3>HACCP</h3><p>com.foodeatup.haccp</p><span class="st" style="background:var(--accent);color:#000">PUBLIÉE</span></div>
-  <div class="app" style="left:390px;top:300px" data-at="8:1"><div class="ic" style="background:#2c2c33;color:#fff">€</div><h3>Caisse</h3><p>com.foodeatup.caisse</p><span class="st" style="background:#2c2c33;color:#fff">ENREGISTRÉE</span></div>
-  <div class="app" style="left:740px;top:300px" data-at="8:6"><div class="ic" style="background:#2c2c33;color:#fff">★</div><h3>Fidélité</h3><p>com.foodeatup.fidelite</p><span class="st" style="background:#2c2c33;color:#fff">ENREGISTRÉE</span></div>
-  <svg class="m" style="--s:220px;left:430px;top:820px" data-at="8:12" viewBox="0 0 100 100"><use href="#star"/></svg>
-  <div class="hn" style="top:1080px;font-size:80px;letter-spacing:-2px" data-at="8:15">les <span class="or">prochaines</span></div>
+  <div class="lab" style="position:absolute;left:0;right:0;text-align:center;top:220px" data-at="+0.1">pour l'instant</div>
+  <div id="ppl" style="position:absolute;inset:0"></div>
+  <div class="hn" style="top:640px;font-size:80px;letter-spacing:-2px;line-height:1.1" data-at="8:7">un <span class="or">petit groupe</span><br>de testeurs</div>
+  <div class="hn" style="top:900px;font-size:50px;letter-spacing:-1px;color:#cfcfd6" data-at="8:20">ensuite : <span class="or">tout le monde</span></div>
 </div>
 
-<!-- 9 · appel à l'action -->
+<!-- 9 · les prochaines (extraits de l'épisode 2 incrustés par ffmpeg) -->
+<div class="scene">
+  <div class="lab" style="position:absolute;left:0;right:0;text-align:center;top:170px" data-at="+0.05">les prochaines · vues dimanche</div>
+  <div class="win" style="left:50px;top:240px;width:470px;height:836px" data-at="+0.1" data-fx="fade"></div>
+  <div class="win" style="left:560px;top:240px;width:470px;height:836px" data-at="+0.1" data-fx="fade"></div>
+  <div class="mono" style="position:absolute;left:50px;width:470px;top:1110px;text-align:center;font-size:32px;font-weight:700" data-at="9:6">ma <span class="or">caisse</span></div>
+  <div class="mono" style="position:absolute;left:560px;width:470px;top:1110px;text-align:center;font-size:32px;font-weight:700" data-at="9:9">ma <span class="or">borne de fidélité</span></div>
+</div>
+
+<!-- 10 · appel à l'action -->
 <div class="scene">
   <svg class="m" style="--s:230px;left:425px;top:220px" data-at="+0.1" viewBox="0 0 100 100"><use href="#star"/></svg>
-  <div class="panel" style="left:110px;right:110px;top:560px;padding:40px;border-radius:40px 40px 40px 10px" data-at="9:9">
+  <div class="panel" style="left:110px;right:110px;top:560px;padding:40px;border-radius:40px 40px 40px 10px" data-at="10:9">
     <div class="mono" style="font-size:24px;color:#9a9aa5">ton commentaire</div>
-    <div style="font-size:150px;font-weight:900;letter-spacing:-4px;line-height:1.1" class="or" data-at="9:10" data-fx="slam">STORE</div>
+    <div style="font-size:150px;font-weight:900;letter-spacing:-4px;line-height:1.1" class="or" data-at="10:10" data-fx="slam">STORE</div>
   </div>
-  <div class="mono" style="position:absolute;left:0;right:0;top:1030px;text-align:center;font-size:30px;font-weight:700" data-at="9:13">ÉPISODE <span class="or">36</span>/365</div>
-  <div class="mono" style="position:absolute;left:0;right:0;top:1090px;text-align:center;font-size:24px;color:#9a9aa5" data-at="9:13">LOVABLE × CLAUDE × GOOGLE PLAY</div>
+  <div class="mono" style="position:absolute;left:0;right:0;top:1030px;text-align:center;font-size:30px;font-weight:700" data-at="10:10">ÉPISODE <span class="or">36</span>/365</div>
 </div>
 
 <div id="sub"><span></span></div>
@@ -177,8 +158,8 @@
 
 <div id="thumb" style="background:radial-gradient(120% 60% at 50% 105%,#3a1a05 0%,#140b06 35%,#0b0b0d 70%)">
   <svg style="position:absolute;width:300px;height:300px;left:390px;top:260px" viewBox="0 0 100 100"><use href="#star"/></svg>
-  <div class="hn" style="top:640px;font-size:120px;letter-spacing:-3px;line-height:1.05">Mon app<br>sur <span class="or">Google Play</span></div>
-  <div class="hn" style="top:960px;font-size:60px;letter-spacing:-1px;color:#cfcfd6">publiée par un agent IA</div>
+  <div class="hn" style="top:640px;font-size:120px;letter-spacing:-3px;line-height:1.05">Mon app est<br>sur <span class="or">Google Play</span></div>
+  <div class="hn" style="top:960px;font-size:60px;letter-spacing:-1px;color:#cfcfd6">c'est mon assistant IA qui l'a publiée</div>
   <div class="mono" style="position:absolute;left:0;right:0;top:1600px;text-align:center;font-size:34px;font-weight:700">ÉPISODE <span class="or">36</span>/365</div>
 </div>
 </div>
@@ -190,35 +171,16 @@
 
 <script src="cfg.js"></script>
 <script>
-// Captures d'écran de la fiche (8 tuiles), apparition décalée.
+// Petit groupe de testeurs : 12 silhouettes, apparition décalée.
 (function () {
-  const box = document.getElementById('shots');
-  for (let k = 0; k < 8; k++) {
-    const d = document.createElement('div');
-    d.className = 'tile'; d.dataset.at = '5:' + (12 + Math.floor(k / 3)); d.dataset.fx = 'pop';
-    const x = (k % 4) * 240, y = Math.floor(k / 4) * 290;
-    d.style.cssText = `left:${x}px;top:${y}px;width:220px;height:270px;background:${k % 3 === 0 ? '#FF8A1F' : '#f2f2f4'};padding:18px`;
-    d.innerHTML = k === 0 ? '<img src="a/phone.png" style="width:100%;height:100%;object-fit:cover;border-radius:10px">' :
-      `<div style="height:22px;width:60%;border-radius:6px;background:${k % 3 === 0 ? '#000' : '#FF8A1F'}"></div>` +
-      '<div style="margin-top:18px;height:90px;border-radius:10px;background:rgba(0,0,0,.12)"></div>' +
-      '<div style="margin-top:14px;height:12px;width:90%;border-radius:6px;background:rgba(0,0,0,.18)"></div>' +
-      '<div style="margin-top:10px;height:12px;width:70%;border-radius:6px;background:rgba(0,0,0,.18)"></div>';
-    box.appendChild(d);
-  }
-  // Nuage des 16 outils autour du chiffre.
-  const T = ['list_apps', 'register_app', 'list_releases', 'list_audit_logs', 'get_app_status', 'publish_release', 'promote_release', 'update_rollout',
-    'get_listing', 'update_listing', 'upload_images', 'list_reviews', 'reply_review', 'upload_aab', 'assign_track', 'commit_edit'];
-  const host = document.getElementById('tools');
-  T.forEach((n, k) => {
+  const host = document.getElementById('ppl');
+  for (let k = 0; k < 12; k++) {
     const e = document.createElement('div');
-    e.className = 'tool' + (n === 'publish_release' ? ' o' : '');
-    e.textContent = n; e.dataset.at = '1:' + (13 + (k % 3)); e.dataset.fx = 'pop'; e.dataset.d = '.3';
-    const col = k % 2, r = Math.floor(k / 2);
-    e.style.left = (col ? 700 : 40) + (r % 2 ? 30 : 0) + 'px';
-    e.style.top = (850 + r * 44 - (r > 3 ? 0 : 0)) + 'px';
-    e.style.fontSize = '19px'; e.style.opacity = 0;
+    e.className = 'person' + (k % 4 === 1 ? ' o' : '');
+    e.dataset.at = '8:' + (4 + Math.floor(k / 4)); e.dataset.d = '.3';
+    e.style.left = (190 + (k % 6) * 120) + 'px'; e.style.top = (330 + Math.floor(k / 6) * 130) + 'px';
     host.parentNode.insertBefore(e, host);
-  });
+  }
 })();
 </script>
 <script src="engine.js"></script>
@@ -227,9 +189,9 @@
 (function () {
   const C = window.CFG, cap = document.getElementById('cap'), tm = document.getElementById('tm');
   const HI = new Set(['google', 'play', 'agent', 'ia', 'mcp', 'releasesync', 'seize', 'phrase', 'simulation', 'oui', '1.6.2', 'publiee', 'publier',
-    'huit', 'journal', 'voix', 'dix', 'prochaines', 'store', 'lovable', 'ferme', 'test', '36']);
+    'fait', 'assistant', 'outil', 'directement', 'testeurs', 'essai', 'accord', 'caisse', 'fidelite', 'dimanche', 'store', 'lovable', 'part']);
   const norm = w => w.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9.]/g, '').replace(/\.$/, '');
-  const show = { '4:6': '1.6.2', '4:7': '', '4:8': '', '4:9': '', '4:10': '', '9:14': '36.', '1:13': 'Seize', '7:14': 'dix' };
+  const show = {};
   const groups = [];
   C.words.forEach((s, i) => {
     let cur = [];
