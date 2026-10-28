@@ -1,0 +1,63 @@
+1
+00:00:00,400 --> 00:00:01,440
+Hier, dimanche,
+
+2
+00:00:01,440 --> 00:00:03,080
+je vous montrais les quatre applications Flutter
+
+3
+00:00:03,080 --> 00:00:05,480
+et le jeu vidéo qu'on a développés pour FoodEatUp.
+
+4
+00:00:05,480 --> 00:00:07,220
+Mais ce matin, une nouvelle idée :
+
+5
+00:00:07,220 --> 00:00:08,320
+et si toutes ces applications
+
+6
+00:00:08,320 --> 00:00:11,040
+étaient accessibles directement depuis FoodEatUp ?
+
+7
+00:00:11,500 --> 00:00:12,830
+L'objectif, c'est simple :
+
+8
+00:00:12,830 --> 00:00:14,630
+transformer FoodEatUp en une plateforme
+
+9
+00:00:14,630 --> 00:00:16,130
+où chaque restaurateur peut choisir
+
+10
+00:00:16,130 --> 00:00:18,270
+les applications dont il a réellement besoin.
+
+11
+00:00:18,710 --> 00:00:20,770
+Dimanche, on construisait les applications.
+
+12
+00:00:20,770 --> 00:00:22,030
+Lundi, avec Soulayma,
+
+13
+00:00:22,030 --> 00:00:23,090
+on construit la plateforme
+
+14
+00:00:23,090 --> 00:00:25,010
+qui permettra de les retrouver au même endroit.
+
+15
+00:00:25,010 --> 00:00:27,070
+Le FoodEatUp Store arrive bientôt.
+
+16
+00:00:27,070 --> 00:00:28,060
+Et ce n'est que le début.

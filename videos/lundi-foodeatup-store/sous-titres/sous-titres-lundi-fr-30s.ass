@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter ExtraBold,54,&H00FFFFFF,&H00FFFFFF,&H00231A0F,&H96231A0F,0,0,0,0,100,100,0,0,3,16,0,8,90,90,1600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:01.44,Sub,,0,0,0,,{\fad(80,60)}Hier, dimanche,
+Dialogue: 0,0:00:01.44,0:00:03.08,Sub,,0,0,0,,{\fad(80,60)}je vous montrais les quatre applications Flutter
+Dialogue: 0,0:00:03.08,0:00:05.48,Sub,,0,0,0,,{\fad(80,60)}et le jeu vidéo qu'on a développés pour FoodEatUp.
+Dialogue: 0,0:00:05.48,0:00:07.22,Sub,,0,0,0,,{\fad(80,60)}Mais ce matin, une nouvelle idée :
+Dialogue: 0,0:00:07.22,0:00:08.32,Sub,,0,0,0,,{\fad(80,60)}et si toutes ces applications
+Dialogue: 0,0:00:08.32,0:00:11.04,Sub,,0,0,0,,{\fad(80,60)}étaient accessibles directement depuis FoodEatUp ?
+Dialogue: 0,0:00:11.50,0:00:12.83,Sub,,0,0,0,,{\fad(80,60)}L'objectif, c'est simple :
+Dialogue: 0,0:00:12.83,0:00:14.63,Sub,,0,0,0,,{\fad(80,60)}transformer FoodEatUp en une plateforme
+Dialogue: 0,0:00:14.63,0:00:16.13,Sub,,0,0,0,,{\fad(80,60)}où chaque restaurateur peut choisir
+Dialogue: 0,0:00:16.13,0:00:18.27,Sub,,0,0,0,,{\fad(80,60)}les applications dont il a réellement besoin.
+Dialogue: 0,0:00:18.71,0:00:20.77,Sub,,0,0,0,,{\fad(80,60)}Dimanche, on construisait les applications.
+Dialogue: 0,0:00:20.77,0:00:22.03,Sub,,0,0,0,,{\fad(80,60)}Lundi, avec Soulayma,
+Dialogue: 0,0:00:22.03,0:00:23.09,Sub,,0,0,0,,{\fad(80,60)}on construit la plateforme
+Dialogue: 0,0:00:23.09,0:00:25.01,Sub,,0,0,0,,{\fad(80,60)}qui permettra de les retrouver au même endroit.
+Dialogue: 0,0:00:25.01,0:00:27.07,Sub,,0,0,0,,{\fad(80,60)}Le FoodEatUp Store arrive bientôt.
+Dialogue: 0,0:00:27.07,0:00:28.06,Sub,,0,0,0,,{\fad(80,60)}Et ce n'est que le début.

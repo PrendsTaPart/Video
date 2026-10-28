@@ -1,0 +1,24 @@
+# Épisode 7/365 — J'ai connecté Lovable à Claude pour développer mes MCP
+
+Série « Mon quotidien d'entrepreneur avec l'IA » · 1080×1920 · 120 s · voix ElevenLabs Noé (`eleven_v4`), jamais la voix de Michael.
+Fil : ép. 6 Academy (former les agents) → **ép. 7 Lovable + Claude (leur donner des outils)** → ép. 8 RapidoRH (organiser leur travail).
+
+| # | Scène | Temps vidéo | Voix off (texte enregistré) | À l'écran |
+|---|---|---|---|---|
+| 1 | Hook | 0–8,7 s | Aujourd'hui, j'ai connecté Lovable à Claude. Et ça change complètement ma façon de développer mes logiciels… et mes MCP. | Portrait réel, logos officiels Claude ↔ Lovable reliés, « LOVABLE + CLAUDE + MCP », captures réelles BraindCode Plugins et Extensions Hub |
+| 2 | Avant | 8,7–18,1 s | Avant, je travaillais dans Lovable pour développer mes applications, puis je devais passer d'un outil à l'autre pour retrouver le code, préparer les intégrations et connecter mes agents IA. | 4 étapes (Lovable → code → intégrations → agents). Mention : « déjà en partie automatisé : projets Lovable synchronisés avec GitHub » |
+| 3 | Nouvelle méthode | 18,1–38,2 s | Maintenant, grâce au connecteur Lovable, Claude peut retrouver mes projets, consulter leur code, analyser les modifications et communiquer avec l'agent Lovable. Je lui demande : « Retrouve BraindCode Plugins, et explique son MCP, sans rien modifier. » Sa réponse : cinquante-huit outils. Quarante et un en lecture, dix-sept en écriture, protégés par OAuth. | Outils réels du connecteur (`list_projects`, `read_file`, `list_edits`, `get_diff`, `send_message` — ce dernier non utilisé), demande exacte, appels réels et résultats, compteurs 58 / 41 / 17, « 0 fichier modifié » |
+| 4 | Développer un MCP | 38,2–57 s | Quand je veux créer un nouveau MCP, je commence par expliquer à Claude ce que mon agent IA doit pouvoir faire. Il peut ensuite examiner le logiciel, identifier les données nécessaires et préparer les outils à développer. Un fichier par outil, des paramètres typés, et des droits vérifiés à chaque appel. | Besoin → architecture → outils → paramètres → permissions → tests ; code réel `lister_plugins.ts` et garde d'authentification de `ajouter_favori.ts` ; historique réel Lovable du 18/07 au 25/10 |
+| 5 | Écosystème | 57–73,5 s | Aujourd'hui, je construis tout un écosystème : FoodEatUp pour la restauration, RapidoCRM pour les clients, RapidoCMS pour les contenus, RapidoRH pour les équipes, et d'autres outils spécialisés. Et tous ne viennent pas de Lovable : RapidoRH, par exemple, expose son MCP depuis Laravel. | Logos officiels ; tableau des technologies vérifiées (Lovable / Laravel / Python) ; FoodEatUp, CRM, CMS : technologie non affichée car non vérifiée |
+| 6 | Tester | 73,5–88,2 s | Mais développer un MCP ne suffit pas. Je dois aussi vérifier que Claude comprend les outils, qu'il transmet les bons paramètres et qu'il respecte les permissions. En lecture, le serveur répond avec le vrai catalogue. Sans jeton… il refuse l'accès. | 5 étapes avec l'appel réel `lister_plugins {"q":"foodeatup"}` et sa réponse ; contrôle HTTP 401 sans jeton |
+| 7 | Pourquoi | 88,2–102,4 s | Pour moi, c'est là que l'IA devient vraiment intéressante. Je ne développe plus simplement des applications : je construis des logiciels que mes agents IA peuvent aussi utiliser. Une connexion pour développer, une autre pour travailler. | Architecture A (développer) et B (travailler), séparées |
+| 8 | Conclusion | 102,4–120 s | Hier, je vous montrais comment je forme mes agents IA. Aujourd'hui, je leur donne des outils. Et demain, je vous montrerai comment j'organise leur travail avec RapidoRH. Je ne construis pas seulement des logiciels pour les humains. Je construis aussi les outils qui permettront à mes agents IA de travailler avec eux. | Ép. 6 → 7 → 8 ; « ÉPISODE 7/365 », « LOVABLE × CLAUDE × MCP », « DEMAIN : MON ÉQUIPE IA AVEC RAPIDORH » |
+
+## Écarts par rapport au brief (volontaires)
+- Durées de scènes : la voix réelle dure 102 s ; les 18 s restantes sont des respirations musicales placées entre les scènes (titre, historique, contrôle 401, schémas).
+- Phrases ajoutées pour coller aux faits vérifiés : « 58 outils, 41 en lecture, 17 en écriture, protégés par OAuth », « un fichier par outil… », « RapidoRH… depuis Laravel », « En lecture… sans jeton… », « une connexion pour développer, une autre pour travailler ».
+- Scène 3 : les appels sont ceux réellement passés le 27/10 depuis cette session ; ils sont recomposés à l'écran (pas une capture d'écran de terminal), résultats recopiés sans invention.
+- Scène 4 : la demande-exemple du brief (« Propose les outils MCP nécessaires… ») n'a **pas** été envoyée à Lovable (aucune modification autorisée) ; on montre à la place l'historique réel du MCP déjà développé.
+
+## Version courte 45 s
+Hook (0–7,3) + nouvelle méthode et démo (18,1–36,9) + tests et refus 401 (73,4–86,1) + phrase finale (111,5–118,6) = 45,9 s.

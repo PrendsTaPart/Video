@@ -1,0 +1,38 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter ExtraBold,52,&H00FFFFFF,&H00FFFFFF,&H00221608,&H96221608,0,0,0,0,100,100,0,0,3,14,0,8,80,80,1230,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.62,Sub,,0,0,0,,{\fad(80,60)}Un agent IA performant, ce n'est pas seulement un bon prompt.
+Dialogue: 0,0:00:02.62,0:00:04.92,Sub,,0,0,0,,{\fad(80,60)}C'est un rôle, des compétences, des outils,
+Dialogue: 0,0:00:04.92,0:00:06.50,Sub,,0,0,0,,{\fad(80,60)}des règles et des automatismes.
+Dialogue: 0,0:00:06.50,0:00:08.33,Sub,,0,0,0,,{\fad(80,60)}Six briques. Voyons-les une par une.
+Dialogue: 0,0:00:08.38,0:00:09.46,Sub,,0,0,0,,{\fad(80,60)}Ce sont les mains de l'IA :
+Dialogue: 0,0:00:09.46,0:00:12.48,Sub,,0,0,0,,{\fad(80,60)}un protocole qui lui permet de se brancher sur les outils de l'entreprise.
+Dialogue: 0,0:00:12.48,0:00:14.60,Sub,,0,0,0,,{\fad(80,60)}Dans le plugin FoodEatUp, une seule ligne de configuration
+Dialogue: 0,0:00:14.60,0:00:16.84,Sub,,0,0,0,,{\fad(80,60)}pointe vers le serveur MCP du logiciel.
+Dialogue: 0,0:00:16.84,0:00:19.64,Sub,,0,0,0,,{\fad(80,60)}L'agent peut alors, par exemple, consulter les stocks d'un restaurant.
+Dialogue: 0,0:00:19.65,0:00:23.39,Sub,,0,0,0,,{\fad(80,60)}Un Skill est un fichier, SKILL.md, qui décrit une méthode :
+Dialogue: 0,0:00:23.39,0:00:25.45,Sub,,0,0,0,,{\fad(80,60)}quand l'utiliser, les étapes, les règles.
+Dialogue: 0,0:00:25.47,0:00:28.19,Sub,,0,0,0,,{\fad(80,60)}Un agent, c'est un rôle, un objectif et des instructions.
+Dialogue: 0,0:00:28.19,0:00:29.87,Sub,,0,0,0,,{\fad(80,60)}Le chef-restaurateur raisonne en ratios :
+Dialogue: 0,0:00:29.87,0:00:31.89,Sub,,0,0,0,,{\fad(80,60)}food cost, masse salariale, marge.
+Dialogue: 0,0:00:31.91,0:00:33.63,Sub,,0,0,0,,{\fad(80,60)}Dans Claude Code, deux commandes suffisent :
+Dialogue: 0,0:00:33.63,0:00:36.00,Sub,,0,0,0,,{\fad(80,60)}ajouter la marketplace, puis installer le plugin.
+Dialogue: 0,0:00:36.02,0:00:38.22,Sub,,0,0,0,,{\fad(80,60)}Contrairement au modèle, un Hook est déterministe :
+Dialogue: 0,0:00:38.22,0:00:39.96,Sub,,0,0,0,,{\fad(80,60)}il réagit toujours de la même façon.
+Dialogue: 0,0:00:39.96,0:00:42.36,Sub,,0,0,0,,{\fad(80,60)}Dans FoodEatUp, un Hook refuse un relevé de température
+Dialogue: 0,0:00:42.36,0:00:43.58,Sub,,0,0,0,,{\fad(80,60)}sans équipement identifié,
+Dialogue: 0,0:00:43.58,0:00:46.46,Sub,,0,0,0,,{\fad(80,60)}et un autre impose une confirmation avant toute action destructrice.
+Dialogue: 0,0:00:46.50,0:00:49.40,Sub,,0,0,0,,{\fad(80,60)}La base de connaissance, un dossier rapido-kb créé chez vous,
+Dialogue: 0,0:00:49.40,0:00:52.52,Sub,,0,0,0,,{\fad(80,60)}contient vos seuils, vos processus, votre charte et votre ton.
+Dialogue: 0,0:00:52.57,0:00:54.59,Sub,,0,0,0,,{\fad(80,60)}C'est en assemblant ces briques qu'on passe d'un chatbot
+Dialogue: 0,0:00:54.59,0:00:56.43,Sub,,0,0,0,,{\fad(80,60)}à une équipe d'agents IA spécialisés,
+Dialogue: 0,0:00:56.43,0:00:59.27,Sub,,0,0,0,,{\fad(80,60)}capables de réaliser des missions dans les outils de l'entreprise.

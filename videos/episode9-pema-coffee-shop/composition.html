@@ -1,0 +1,164 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 9 : PEMA Coffee Shop</title>
+<style>
+@font-face{font-family:P;src:url(a/fonts/Poppins-Medium.ttf);font-weight:500}
+@font-face{font-family:P;src:url(a/fonts/Poppins-SemiBold.ttf);font-weight:600}
+@font-face{font-family:P;src:url(a/fonts/Poppins-Bold.ttf);font-weight:700}
+:root{--night:#0F1A23;--surf:#16242F;--blue:#007BFF;--orange:#FFA500;--cream:#FCF9E6;--grey:#AEB8C2;--ube:#9b6cc4}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;background:var(--night);overflow:hidden}
+body{font-family:P,sans-serif;color:#fff}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:radial-gradient(1100px 900px at 50% 34%,#1a3047 0%,#0F1A23 64%)}
+.abs{position:absolute}
+.scene{position:absolute;inset:0;display:none}
+.chip{position:absolute;left:70px;top:120px;font-weight:700;font-size:28px;letter-spacing:3px;color:var(--orange);text-transform:uppercase}
+.title{position:absolute;left:70px;right:70px;top:170px;font-weight:700;font-size:66px;line-height:1.08;letter-spacing:-1px}
+.title b{color:var(--orange)}
+.tab{position:absolute;background:#05090d;border-radius:44px;padding:22px;box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 3px #2a3a48 inset}
+.tab .scr{position:relative;width:100%;height:100%;border-radius:18px;overflow:hidden;background:var(--cream)}
+.tab .scr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top left}
+.pose{position:absolute;filter:drop-shadow(0 20px 40px rgba(0,0,0,.5))}
+.badge{position:absolute;background:var(--orange);color:#0F1A23;font-weight:700;border-radius:20px;padding:14px 30px;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.pill{position:absolute;display:inline-flex;align-items:center;gap:12px;background:var(--surf);border:2px solid #2f475c;border-radius:999px;padding:12px 26px;font-weight:600;font-size:30px;white-space:nowrap}
+.pill.b{background:var(--blue);border-color:var(--blue)}
+.pill.c{background:var(--cream);color:var(--night);border-color:var(--cream)}
+.logo-pill{position:absolute;background:#fff;border-radius:22px;display:flex;align-items:center;justify-content:center;padding:14px 26px}
+.real{position:absolute;font-weight:500;font-size:21px;color:var(--grey)}
+.real:before{content:"";display:inline-block;width:11px;height:11px;border-radius:6px;background:#22c55e;margin-right:10px;vertical-align:1px}
+.term{position:absolute;background:#0a1118;border:2px solid #22364a;border-radius:22px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.term .bar{display:flex;gap:12px;align-items:center;padding:12px 20px;background:#131d27;font-weight:600;font-size:21px;color:#8fa3b5}
+.term .bar span{margin-left:auto;color:#86efac;font-size:18px}
+.term pre{margin:0;padding:16px 20px;font-family:'DejaVu Sans Mono',monospace;font-size:21px;line-height:1.5;color:#d6e2ec;white-space:pre-wrap}
+.k{color:#7dd3fc}.g{color:#86efac}.o{color:var(--orange)}.m{color:#7d90a2}
+.row{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:20px;background:var(--surf);border:2px solid #2f475c;border-radius:22px;padding:16px 22px}
+.row .n{flex:none;width:54px;height:54px;border-radius:27px;background:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:26px}
+.row .t{font-weight:700;font-size:29px;line-height:1.15}.row .t small{display:block;font-weight:500;font-size:21px;color:#AEB8C2;margin-top:4px}
+.row .s{margin-left:auto;flex:none;font-weight:700;font-size:18px;border-radius:999px;padding:6px 14px}
+.ok{background:#14532d;color:#86efac}.wip{background:#4a3410;color:var(--orange)}.man{background:#123b5c;color:#7dd3fc}
+.card{position:absolute;background:#fff;color:var(--night);border-radius:24px;box-shadow:0 30px 70px rgba(0,0,0,.5);overflow:hidden}
+.quote{position:absolute;left:60px;width:960px;background:var(--cream);color:var(--night);border-radius:22px;padding:18px 26px;font-weight:500;font-size:24px;line-height:1.35}
+.quote b{display:block;font-size:19px;color:#00346B;font-weight:700;letter-spacing:1px;margin-bottom:6px}
+.stat{position:absolute;text-align:center}.stat b{display:block;font-weight:700;font-size:72px;color:var(--orange);line-height:1}.stat span{font-weight:500;font-size:22px;color:var(--grey)}
+.step{position:absolute;left:60px;top:1150px;background:var(--blue);border-radius:999px;padding:12px 28px;font-weight:700;font-size:30px}
+.redact{display:inline-block;width:110px;height:20px;background:#c9ced4;border-radius:5px;vertical-align:middle}
+#logos{position:absolute;right:46px;bottom:56px;display:flex;gap:12px}
+#logos .lp{background:#fff;border-radius:14px;padding:8px 14px;display:flex;align-items:center}
+.paper{position:absolute;width:420px;height:560px;background:#fffdf5;border-radius:6px;box-shadow:0 4px 0 #ddd6c4,0 20px 40px rgba(0,0,0,.4)}
+.paper:before{content:"";position:absolute;left:40px;right:40px;top:60px;height:300px;background:repeating-linear-gradient(#fffdf5 0 22px,#d9d2bf 22px 25px)}
+</style></head><body>
+<div id="stage">
+  <!-- 0 accroche -->
+  <div class="scene" id="s0">
+    <div class="chip" id="s0c">Épisode 9 · Projet client</div>
+    <div class="title" id="s0t" style="font-size:62px">Une application métier<br><b>sur mesure</b></div>
+    <div class="tab" id="s0tab" style="left:60px;top:400px;width:960px;height:690px"><div class="scr"><img src="a/app/01-accueil-categories.png"></div></div>
+    <div class="real" id="s0r" style="left:70px;top:1105px">Application réelle · nom du client remplacé par « PEMA Coffee Shop »</div>
+    <div class="badge" id="s0b" style="left:70px;top:1180px;font-size:52px">PROJET CLIENT — 2 000 €</div>
+    <img class="pose" id="s0m" src="a/po/presente.webp" style="left:640px;top:1060px;width:470px">
+    <div class="logo-pill" id="s0l1" style="left:70px;top:1340px;height:84px"><img src="a/logos/braindcode.png" style="height:52px"></div>
+    <div class="logo-pill" id="s0l2" style="left:70px;top:1440px;height:84px"><img src="a/logos/foodeatup.webp" style="height:46px"></div>
+  </div>
+
+  <!-- 1 problème -->
+  <div class="scene" id="s1">
+    <div class="chip">Le problème</div>
+    <div class="title">Un classeur papier<br>de <b>161 pages</b></div>
+    <div class="card" id="s1p" style="left:60px;top:400px;width:560px;height:620px"><div style="width:100%;height:100%;background:#FCF9E6;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#0F1A23"><div style="font-weight:700;font-size:64px;line-height:1">PEMA</div><div style="font-weight:700;font-size:38px">Coffee Shop</div><div style="font-weight:500;font-size:22px;color:#5a6470;margin-top:18px">Nom de démonstration<br>le vrai client n'est pas nommé</div></div></div>
+    <div class="real" id="s1pr" style="left:70px;top:1035px">Client anonymisé · aucune photo du lieu</div>
+    <div id="pages"></div>
+    <div class="abs" id="s1n" style="left:650px;top:930px;width:380px;text-align:center;font-weight:700;font-size:96px;color:var(--orange);line-height:1">161<small style="display:block;font-size:28px;color:var(--cream)">pages de recettes</small></div>
+    <div class="pill c" id="s1k" style="left:70px;top:1110px;font-size:34px">UN BESOIN MÉTIER CONCRET</div>
+    <div class="tab" id="s1tab" style="left:260px;top:1200px;width:760px;height:550px;transform-origin:center"><div class="scr"><img src="a/app/01-accueil-categories.png"></div></div>
+  </div>
+
+  <!-- 2 application -->
+  <div class="scene" id="s2">
+    <div class="chip">La solution</div>
+    <div class="title">Une application<br><b>tactile</b></div>
+    <div class="tab" style="left:60px;top:400px;width:960px;height:690px"><div class="scr" id="s2scr"></div></div>
+    <div id="s2pills"></div>
+    <img class="pose" id="s2m" src="a/po/tablette.webp" style="left:810px;top:1190px;width:290px;opacity:0">
+    <div class="real" style="left:70px;top:1460px">Application réelle lancée en local · données de démonstration du dépôt, sans coûts</div>
+  </div>
+
+  <!-- 3 démo -->
+  <div class="scene" id="s3">
+    <div class="chip">Démo réelle</div>
+    <div class="title" style="font-size:56px">Une recette, de l'accueil<br><b>à la dernière étape</b></div>
+    <div class="tab" id="s3tab" style="left:60px;top:400px;width:960px;height:690px"><div class="scr" id="s3scr"></div></div>
+    <div class="step" id="s3step"></div>
+    <div class="real" style="left:70px;top:1460px">Iced Ube latte vanille · parcours filmé en 1180 × 820 (tablette paysage)</div>
+  </div>
+
+  <!-- 4 FoodEatUp -->
+  <div class="scene" id="s4">
+    <div class="chip">La connexion FoodEatUp</div>
+    <div class="title" style="font-size:58px">Une seule source<br><b>pour les recettes</b></div>
+    <div class="term" id="s4t" style="left:60px;top:380px;width:960px"><div class="bar">MCP FoodEatUp · établissement du client<span>● lecture seule · réponse réelle</span></div><pre id="s4pre"></pre></div>
+    <div class="row" id="r0" style="top:640px"><div class="n">1</div><div class="t">Lire les recettes FoodEatUp<small>list_recipes · compositions, sans coûts côté équipe</small></div><span class="s ok">opérationnel</span></div>
+    <div class="row" id="r1" style="top:775px"><div class="n">2</div><div class="t">Synchroniser la copie locale<small>chaque nuit à 4 h · ou bouton « Mettre à jour depuis FoodEatUp »</small></div><span class="s ok">programmé</span></div>
+    <div class="row" id="r2" style="top:910px"><div class="n">3</div><div class="t">Corriger une recette<small>espace Responsable · aperçu puis confirmation écrite</small></div><span class="s man">validation humaine</span></div>
+    <div class="row" id="r3" style="top:1045px"><div class="n">4</div><div class="t">Tablette à jour, même hors ligne<small>copie locale relue à la synchro suivante</small></div><span class="s ok">opérationnel</span></div>
+    <div class="pill" id="s4w" style="left:60px;top:1200px;font-size:24px;border-color:var(--orange)"><span style="color:var(--orange)">●</span> Serveur MCP de l'app pour les agents : ajouté le 26/10, pas encore publié</div>
+    <div class="abs" id="s4n" style="left:70px;top:1290px;right:70px;font-weight:500;font-size:24px;color:var(--grey);line-height:1.4">Ni instantané, ni automatique dans l'autre sens : rien ne part vers FoodEatUp sans confirmation.</div>
+  </div>
+
+  <!-- 5 Figma -->
+  <div class="scene" id="s5">
+    <div class="chip">Les fiches techniques</div>
+    <div class="title" style="font-size:58px">Deux fiches,<br><b>deux publics</b></div>
+    <div class="card" id="s5a" style="left:60px;top:380px;width:560px;height:792px;transform:rotate(-2deg)"><img src="a/img/fiche-equipe.png" style="width:100%;height:100%;object-fit:cover"></div>
+    <div class="pill b" id="s5al" style="left:80px;top:1190px;font-size:26px">Fiche équipe · PDF réel, sans prix</div>
+    <div class="card" id="s5b" style="left:600px;top:470px;width:420px;height:640px;transform:rotate(2.5deg);padding:26px">
+      <div style="font-weight:700;font-size:20px;letter-spacing:2px;color:#00346B">FICHE RESPONSABLE</div>
+      <div style="font-weight:700;font-size:34px;line-height:1.1;margin:8px 0 18px">Achats &amp;<br>food cost</div>
+      <div style="font-size:19px;line-height:2.1;font-weight:500">Ingrédients et quantités<br>Prix d'achat unitaires <span class="redact"></span><br>Coût matière <span class="redact"></span><br>Coût par portion <span class="redact"></span><br>Prix de vente <span class="redact"></span><br>Food cost <span class="redact" style="width:70px"></span><br>Date de mise à jour</div>
+      <div style="margin-top:14px;font-weight:700;font-size:18px;color:#b45f00">🔒 Masqué : espace Responsable (PIN)</div>
+    </div>
+    <div class="row" id="s5s" style="top:1270px;padding:12px 20px"><div class="t" style="font-size:24px">Classeur Figma<small>fiches à jour du 06/10 · mise à jour du 11/10 et export automatique des PDF : à terminer</small></div><span class="s wip">en cours</span></div>
+  </div>
+
+  <!-- 6 méthode -->
+  <div class="scene" id="s6">
+    <div class="chip">Comment je l'ai construit</div>
+    <div class="title" style="font-size:56px">Lovable, Claude,<br><b>FoodEatUp, Figma</b></div>
+    <div id="s6q"></div>
+    <div class="stat" id="st0" style="left:40px;top:1000px;width:330px"><b>87</b><span>prompts Lovable<br>du 03/10 au 26/10</span></div>
+    <div class="stat" id="st1" style="left:375px;top:1000px;width:330px"><b>409</b><span>commits · 36 PR<br>(284 Lovable · 89 Claude · 34 BraindCode)</span></div>
+    <div class="stat" id="st2" style="left:710px;top:1000px;width:330px"><b>82</b><span>fichiers de tests<br>(68 unitaires · 14 de bout en bout)</span></div>
+    <div class="abs" id="s6a" style="left:60px;top:1210px;width:470px;background:#123b5c;border-radius:22px;padding:18px 24px;font-weight:700;font-size:28px">L'IA accélère<small style="display:block;font-weight:500;font-size:20px;color:#bcd7ee">code, tests, captures, traductions</small></div>
+    <div class="abs" id="s6b" style="left:550px;top:1210px;width:470px;background:#4a3410;border-radius:22px;padding:18px 24px;font-weight:700;font-size:28px;color:var(--orange)">L'humain décide<small style="display:block;font-weight:500;font-size:20px;color:#f3d9a8">besoin métier, contrôles, validation</small></div>
+    <div id="s6m" class="abs" style="left:60px;top:1350px;display:flex;gap:14px;opacity:0"><div class="logo-pill" style="position:static;height:70px"><span style="font-weight:700;font-size:30px;color:#0F1A23">Lovable</span></div><div class="logo-pill" style="position:static;height:70px"><img src="a/logos/claude.webp" style="height:34px"></div><div class="logo-pill" style="position:static;height:70px"><img src="a/logos/foodeatup.webp" style="height:34px"></div><div class="logo-pill" style="position:static;height:70px;font-weight:700;font-size:30px;color:#0F1A23">Figma</div></div>
+  </div>
+
+  <!-- 7 conclusion -->
+  <div class="scene" id="s7">
+    <div class="chip">Avant / après</div>
+    <div class="title" style="font-size:58px">Du classeur<br><b>à l'application</b></div>
+    <div class="card" id="s7a" style="left:60px;top:400px;width:440px;height:560px"><div style="width:100%;height:100%;background:#FCF9E6;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#0F1A23"><div style="font-weight:700;font-size:64px;line-height:1">PEMA</div><div style="font-weight:700;font-size:38px">Coffee Shop</div><div style="font-weight:500;font-size:22px;color:#5a6470;margin-top:18px">Nom de démonstration<br>le vrai client n'est pas nommé</div></div><div class="abs" style="left:0;right:0;bottom:0;padding:16px;background:rgba(15,26,35,.85);color:#fff;font-weight:700;font-size:28px;text-align:center">161 pages papier</div></div>
+    <div class="tab" id="s7b" style="left:530px;top:440px;width:500px;height:480px;padding:14px"><div class="scr"><img src="a/app/09-etape-2.png"></div></div>
+    <div id="s7pills"></div>
+    <img class="pose" id="s7m" src="a/po/deux-pouces.webp" style="left:600px;top:1080px;width:460px;opacity:0">
+  </div>
+
+  <!-- 8 carton -->
+  <div class="scene" id="s8">
+    <div class="abs" id="s8a" style="left:0;right:0;top:500px;text-align:center;font-weight:700;font-size:54px;letter-spacing:1px;line-height:1.35">PEMA COFFEE SHOP <span style="color:var(--orange)">×</span> FOODEATUP<br><span style="color:var(--orange)">×</span> FIGMA <span style="color:var(--orange)">×</span> BRAINDCODE</div>
+    <div class="badge" id="s8b" style="left:230px;top:760px;font-size:50px">PROJET CLIENT — 2 000 €</div>
+    <div class="abs" id="s8c" style="left:60px;right:60px;top:930px;text-align:center;font-weight:600;font-size:40px;line-height:1.35;color:var(--cream)">Un problème métier.<br>Une solution sur mesure.</div>
+    <div class="logo-pill" id="s8l" style="left:290px;top:1130px;width:500px;height:130px"><img src="a/logos/braindcode.png" style="height:80px"></div>
+  </div>
+
+  <!-- miniature -->
+  <div class="scene" id="thumb">
+    <div class="abs" style="left:66px;top:140px;font-weight:700;font-size:40px;letter-spacing:5px;color:var(--orange)">ÉPISODE 9 · PROJET CLIENT</div>
+    <div class="abs" style="left:62px;right:50px;top:210px;font-weight:700;font-size:116px;line-height:.98;letter-spacing:-3px">UNE<br>APPLICATION<br>CLIENT<br>À <span style="color:var(--orange)">2 000 €</span></div>
+    <div class="tab" style="left:60px;top:880px;width:760px;height:550px;transform:rotate(-4deg)"><div class="scr"><img src="a/app/05-fiche-haut.png"></div></div>
+    <img class="pose" src="a/po/presente.webp" style="left:560px;top:960px;width:560px">
+    <div class="logo-pill" style="left:70px;top:1520px;height:84px"><img src="a/logos/braindcode.png" style="height:52px"></div>
+    <div class="logo-pill" style="left:420px;top:1520px;height:84px"><img src="a/logos/foodeatup.webp" style="height:46px"></div>
+  </div>
+
+  <div id="logos"><div class="lp"><img src="a/logos/braindcode.png" style="height:30px"></div><div class="lp"><img src="a/logos/foodeatup.webp" style="height:28px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>

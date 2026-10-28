@@ -1,0 +1,80 @@
+{
+  "video": 13,
+  "duree_s": 41.5,
+  "format": "1080x1920",
+  "voix": "ElevenLabs Noé, eleven_v4",
+  "sequences": [
+    {
+      "n": 1,
+      "t": [
+        0,
+        3.1
+      ],
+      "visuel": "Photo officielle de Michael, « partager ma méthode »",
+      "intention": "Accroche"
+    },
+    {
+      "n": 2,
+      "t": [
+        3.1,
+        11.0
+      ],
+      "visuel": "Miniatures des épisodes 0, 1, 4, 5, 6, 9, 10 et de la vidéo 11 ; applications, agents IA, vidéos, BD",
+      "intention": "Rappeler le parcours"
+    },
+    {
+      "n": 3,
+      "t": [
+        11.0,
+        13.9
+      ],
+      "visuel": "« Pourquoi garder tout ça pour moi ? »",
+      "intention": "Le déclic"
+    },
+    {
+      "n": 4,
+      "t": [
+        13.9,
+        17.9
+      ],
+      "visuel": "Accueil réel de build.braindcode.com, compteur 100 idées",
+      "intention": "Révéler la plateforme"
+    },
+    {
+      "n": 5,
+      "t": [
+        17.9,
+        22.9
+      ],
+      "visuel": "Cartes d'idées, fiche Daily Brief, brief Lovable, prompts de routine ; mention « idée à construire »",
+      "intention": "Montrer la méthode"
+    },
+    {
+      "n": 6,
+      "t": [
+        22.9,
+        26.8
+      ],
+      "visuel": "Appels MCP réels en lecture seule, 6 agents avec leurs photos officielles",
+      "intention": "La suite du parcours"
+    },
+    {
+      "n": 7,
+      "t": [
+        26.8,
+        34.9
+      ],
+      "visuel": "Punchline sur fond d'interface réelle ; AVANT / MAINTENANT",
+      "intention": "Marquer les esprits"
+    },
+    {
+      "n": 8,
+      "t": [
+        34.9,
+        41.5
+      ],
+      "visuel": "« JE PARTAGE MA MÉTHODE » puis « COMMENTE BUILD »",
+      "intention": "Appel à l'action"
+    }
+  ]
+}

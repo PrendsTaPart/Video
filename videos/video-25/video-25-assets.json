@@ -1,0 +1,23 @@
+{
+  "depot": "rapidotuto-base 6c869f7",
+  "captures_app": [
+    "storyboard.webp",
+    "recording.webp",
+    "studio.webp",
+    "assistant.webp",
+    "stats.webp"
+  ],
+  "film": "rapidotuto-presentation.mp4 (34 s)",
+  "avatar": "video/assets/avatar.png",
+  "site": "assets/captures/",
+  "foodeatup_ecran": "image de la vidéo tutoriel FoodEatUp (vidéo 16)",
+  "logos": "assets/logos/manifeste.json",
+  "photo": "braindcode-profil.jpg",
+  "poses": [
+    "telephone.webp",
+    "presente.webp"
+  ],
+  "voix": "ElevenLabs Noé 7pDdnNI6PhXmAp0pXFZm",
+  "audit": "video-25-technical-audit.md",
+  "higgsfield": "aucun plan généré"
+}

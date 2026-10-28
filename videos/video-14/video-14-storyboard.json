@@ -1,0 +1,73 @@
+{
+  "video": 14,
+  "duree_s": 49,
+  "format": "1080x1920",
+  "voix": "ElevenLabs Noé, eleven_v4",
+  "effets_sonores": "buzz d'échec (accroche, détection), double note de réussite (validation)",
+  "sequences": [
+    {
+      "t": [
+        0,
+        5.2
+      ],
+      "sequence": "Accroche",
+      "visuel": "Terminal d'erreurs (démonstration simulée, signalée)"
+    },
+    {
+      "t": [
+        5.2,
+        9.6
+      ],
+      "sequence": "La question",
+      "visuel": "« Mais qui vérifie que tout fonctionne ? »"
+    },
+    {
+      "t": [
+        9.6,
+        19.2
+      ],
+      "sequence": "QA Hub et tests MCP",
+      "visuel": "Écran de connexion réel ; mots-clés réels du code : callMcpTool, sendHttpRequest, verifyStatusCode, verifyJsonPath, verifyContains ; preuves requête et réponse"
+    },
+    {
+      "t": [
+        19.2,
+        28.3
+      ],
+      "sequence": "Détection, ticket, correction, nouvelle exécution",
+      "visuel": "Boucle animée TESTER → DÉTECTER → TICKET → PROMPT → CORRIGER → RETESTER → VALIDER ; vert = dans le code, orange = objectif, bleu = humain"
+    },
+    {
+      "t": [
+        28.3,
+        35.9
+      ],
+      "sequence": "Objectif et garde-fous",
+      "visuel": "Validation humaine, résultats attendus intouchables, arrêt sur boucle ou budget, branche ; « la boucle continue ! »"
+    },
+    {
+      "t": [
+        35.9,
+        41.9
+      ],
+      "sequence": "Avant / maintenant",
+      "visuel": "Citations, pose à l'ordinateur"
+    },
+    {
+      "t": [
+        41.9,
+        44.8
+      ],
+      "sequence": "Transition vers la vidéo 15",
+      "visuel": "Photo, « jusqu'où cette boucle peut aller »"
+    },
+    {
+      "t": [
+        44.8,
+        49
+      ],
+      "sequence": "Punchline",
+      "visuel": "L'IA DÉVELOPPE. L'IA TESTE. L'IA CORRIGE. ET LA BOUCLE CONTINUE. + mention de ce qui est réellement automatisé"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Poppins SemiBold,50,&H00E6F9FC,&H00E6F9FC,&H00231A0F,&H00231A0F,0,0,0,0,100,100,0,0,3,16,0,2,90,90,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:02.14,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, je vais vous montrer
+Dialogue: 0,0:00:02.14,0:00:04.72,Sub,,0,0,0,,{\fad(80,60)}comment j'ai automatisé mes 4 chaînes YouTube.
+Dialogue: 0,0:00:04.72,0:00:07.14,Sub,,0,0,0,,{\fad(80,60)}Et pour ça, j'ai développé mon propre logiciel,
+Dialogue: 0,0:00:07.14,0:00:09.14,Sub,,0,0,0,,{\fad(80,60)}connecté directement à mes agents IA.
+Dialogue: 0,0:00:10.48,0:00:11.98,Sub,,0,0,0,,{\fad(80,60)}Mais la vraie différence,
+Dialogue: 0,0:00:11.98,0:00:14.80,Sub,,0,0,0,,{\fad(80,60)}c'est que j'ai connecté ce logiciel à un MCP YouTube.
+Dialogue: 0,0:00:14.80,0:00:16.70,Sub,,0,0,0,,{\fad(80,60)}Mes agents IA peuvent consulter mes chaînes,
+Dialogue: 0,0:00:16.70,0:00:18.64,Sub,,0,0,0,,{\fad(80,60)}récupérer les vidéos, analyser les données
+Dialogue: 0,0:00:18.64,0:00:21.23,Sub,,0,0,0,,{\fad(80,60)}et préparer des actions directement depuis Claude.
+Dialogue: 0,0:00:22.40,0:00:24.51,Sub,,0,0,0,,{\fad(80,60)}Sur FoodEatUp, j'avais déjà des Shorts programmés
+Dialogue: 0,0:00:24.51,0:00:26.47,Sub,,0,0,0,,{\fad(80,60)}sur plusieurs jours lors de mon dernier relevé.
+Dialogue: 0,0:00:26.47,0:00:28.47,Sub,,0,0,0,,{\fad(80,60)}Et mon système dispose aussi d'un autopilote,
+Dialogue: 0,0:00:28.47,0:00:30.57,Sub,,0,0,0,,{\fad(80,60)}capable de proposer des créneaux de publication
+Dialogue: 0,0:00:30.57,0:00:32.11,Sub,,0,0,0,,{\fad(80,60)}à partir de l'historique de la chaîne.
+Dialogue: 0,0:00:32.60,0:00:35.26,Sub,,0,0,0,,{\fad(80,60)}Mon objectif n'est pas seulement d'automatiser YouTube,
+Dialogue: 0,0:00:35.26,0:00:36.76,Sub,,0,0,0,,{\fad(80,60)}c'est de construire une équipe d'agents IA
+Dialogue: 0,0:00:36.76,0:00:39.02,Sub,,0,0,0,,{\fad(80,60)}capables de travailler avec mes propres logiciels
+Dialogue: 0,0:00:39.02,0:00:41.54,Sub,,0,0,0,,{\fad(80,60)}pendant que je me concentre sur les produits et les clients.
+Dialogue: 0,0:00:41.54,0:00:42.74,Sub,,0,0,0,,{\fad(80,60)}Et demain, je vous présenterai
+Dialogue: 0,0:00:42.74,0:00:44.65,Sub,,0,0,0,,{\fad(80,60)}un nouveau projet et mon travail du jour.

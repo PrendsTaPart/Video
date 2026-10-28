@@ -1,0 +1,76 @@
+1
+00:00:01,000 --> 00:00:03,420
+Après avoir construit mes applications, mes agents IA
+
+2
+00:00:03,420 --> 00:00:04,920
+et mes outils de communication,
+
+3
+00:00:04,920 --> 00:00:06,920
+il me reste une question essentielle :
+
+4
+00:00:06,920 --> 00:00:08,225
+comment trouver des clients ?
+
+5
+00:00:09,385 --> 00:00:11,465
+Aujourd'hui, je peux simplement demander à Claude
+
+6
+00:00:11,465 --> 00:00:13,145
+de rechercher des restaurants ou des brasseries
+
+7
+00:00:13,145 --> 00:00:14,425
+dans les régions qui m'intéressent.
+
+8
+00:00:14,425 --> 00:00:16,445
+Je lui donne un objectif… et une règle :
+
+9
+00:00:16,445 --> 00:00:18,684
+ne contacter personne sans ma validation.
+
+10
+00:00:19,600 --> 00:00:21,320
+Par exemple, mes cinq dernières recherches,
+
+11
+00:00:21,320 --> 00:00:22,360
+sur les bars et brasseries,
+
+12
+00:00:22,360 --> 00:00:24,720
+ont retourné 200 résultats sur cinq régions.
+
+13
+00:00:24,720 --> 00:00:26,760
+Et le logiciel garde l'historique des recherches
+
+14
+00:00:26,760 --> 00:00:28,440
+et des établissements enregistrés.
+
+15
+00:00:28,440 --> 00:00:31,136
+200 résultats de recherche : pas 200 clients.
+
+16
+00:00:32,665 --> 00:00:34,285
+Mon objectif, ce n'est pas d'envoyer
+
+17
+00:00:34,285 --> 00:00:35,825
+des milliers de messages au hasard.
+
+18
+00:00:35,825 --> 00:00:38,085
+C'est de construire une prospection intelligente,
+
+19
+00:00:38,085 --> 00:00:40,715
+ciblée et mesurable, pilotée depuis Claude.
+

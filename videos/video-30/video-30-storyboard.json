@@ -1,0 +1,75 @@
+{
+  "video": "video-30",
+  "titre": "J'ai créé un agent IA qui prospecte, appelle mes clients et prépare mes ventes !",
+  "duree_s": 76,
+  "format": "1080x1920",
+  "scenes": [
+    {
+      "temps_s": "0–5,2",
+      "scene": "Hook",
+      "visuel": "Michael index levé · « UN PROMPT = MON COMMERCIAL IA ? »"
+    },
+    {
+      "temps_s": "5,2–14,6",
+      "scene": "Interface",
+      "visuel": "Logos RapidoCRM, Claude, OpenAI (ChatGPT) · « 1 seul prompt »"
+    },
+    {
+      "temps_s": "14,6–21,6",
+      "scene": "Prompt",
+      "visuel": "Bulle de chat : prompt de démonstration tapé à l'écran · « prospects fictifs »"
+    },
+    {
+      "temps_s": "21,6–30,6",
+      "scene": "Recherche",
+      "visuel": "Outils MCP réels (rechercher_prospects, prospecter_entreprise, prospecter_maps, enregistrer_prospect, list_segments, ajouter_prospect_pipeline) · prospect fictif, coordonnées masquées"
+    },
+    {
+      "temps_s": "30,6–37,2",
+      "scene": "Segments",
+      "visuel": "Six segments réels de RapidoCRM · « → pipeline commercial »"
+    },
+    {
+      "temps_s": "37,2–39,1",
+      "scene": "Pipeline",
+      "visuel": "70 prospects : 69 Nouveau prospect, 1 Qualification, 0 gagné (lecture du 27/10)"
+    },
+    {
+      "temps_s": "39,1–52",
+      "scene": "Agent vocal",
+      "visuel": "Configuration réelle (objectif démo, ton chaleureux, extrait du pitch) · quatre objectifs d'appel · Twilio non connecté, aucun appel"
+    },
+    {
+      "temps_s": "52–57,6",
+      "scene": "RDV et devis",
+      "visuel": "Captures réelles Agenda / Créer un devis · create_rdv, create_devis (brouillon ≠ envoi), schedule_email / schedule_sms jamais sans accord"
+    },
+    {
+      "temps_s": "57,6–62,5",
+      "scene": "Orchestration",
+      "visuel": "Prompt → Agent → MCP RapidoCRM → Workflows → Suivi · « Actions sensibles = ma validation »"
+    },
+    {
+      "temps_s": "62,5–70,3",
+      "scene": "Conclusion",
+      "visuel": "« 10 logiciels » barré · « Je pilote les objectifs » · Michael deux pouces"
+    },
+    {
+      "temps_s": "70,3–76",
+      "scene": "Question",
+      "visuel": "Photo, question finale, logos RapidoCRM, FoodEatUp, BraindCode"
+    }
+  ],
+  "miniature": "J'AI CRÉÉ MON COMMERCIAL IA ! · Un prompt. Des MCP. Tout un CRM. · Michael au téléphone, bulle de prompt, carte pipeline, logo RapidoCRM",
+  "assets": {
+    "voix": "ElevenLabs Noé (7pDdnNI6PhXmAp0pXFZm), eleven_v4, 73,5 s",
+    "logos": "assets/logos (officiels, video-20/assets/logos)",
+    "captures": "assets/captures/agenda.jpg et devis.jpg (captures réelles RapidoCRM, dépôt rapidocrm-presentation-4min)",
+    "musique": "musique-184.wav",
+    "effets": [
+      "whoosh",
+      "pop",
+      "tick"
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "video": 23,
+  "duree_s": 70,
+  "format": "1080x1920",
+  "voix": "ElevenLabs Noé, eleven_v4",
+  "sequences": [
+    {
+      "t": [
+        0,
+        4.96
+      ],
+      "sequence": "Accroche",
+      "visuel": "Michael (réfléchit)"
+    },
+    {
+      "t": [
+        4.96,
+        12.52
+      ],
+      "sequence": "Problème",
+      "visuel": "Post-it dispersés · « Qui fait quoi ? »"
+    },
+    {
+      "t": [
+        12.52,
+        14.66
+      ],
+      "sequence": "Révélation",
+      "visuel": "Icône et nom RapidoMeet"
+    },
+    {
+      "t": [
+        14.66,
+        19.04
+      ],
+      "sequence": "Transcription",
+      "visuel": "Visuel de transcription du site + 4 répliques d'une réunion fictive"
+    },
+    {
+      "t": [
+        19.04,
+        26.15
+      ],
+      "sequence": "Analyse IA",
+      "visuel": "Résumé, décisions, tâche avec citation source (format réel)"
+    },
+    {
+      "t": [
+        26.15,
+        33.0
+      ],
+      "sequence": "Animation centrale",
+      "visuel": "Réunion → transcription → analyse IA → décisions → tâches → logiciels métier"
+    },
+    {
+      "t": [
+        33.0,
+        36.98
+      ],
+      "sequence": "Scénario",
+      "visuel": "3 décisions pour l'extension FoodEatUp"
+    },
+    {
+      "t": [
+        36.98,
+        45.44
+      ],
+      "sequence": "Distribuer et contrôler",
+      "visuel": "Kanban, db_save_task (auto), RapidoCRM et RapidoCMS (validation)"
+    },
+    {
+      "t": [
+        45.44,
+        50.28
+      ],
+      "sequence": "RapidoRH",
+      "visuel": "Lecture déjà · création de tâches : prochaine étape"
+    },
+    {
+      "t": [
+        50.28,
+        57.0
+      ],
+      "sequence": "Honnêteté",
+      "visuel": "83 %, 85 tests, PR #4 en brouillon, boucle MCP à valider"
+    },
+    {
+      "t": [
+        57.0,
+        62.42
+      ],
+      "sequence": "Punchline",
+      "visuel": "Avant / maintenant"
+    },
+    {
+      "t": [
+        62.42,
+        70
+      ],
+      "sequence": "Question",
+      "visuel": "Michael, logos RapidoMeet, RapidoCRM, RapidoRH, RapidoCMS"
+    }
+  ]
+}

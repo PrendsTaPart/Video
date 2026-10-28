@@ -1,0 +1,120 @@
+1
+00:00:00,500 --> 00:00:02,120
+Aujourd'hui, je me suis amusé !
+
+2
+00:00:02,120 --> 00:00:04,220
+Parce que j'aime le football, et je me suis dit :
+
+3
+00:00:04,220 --> 00:00:06,140
+pourquoi ne pas développer un agent IA
+
+4
+00:00:06,140 --> 00:00:07,440
+qui réalise mes pronostics ?
+
+5
+00:00:07,440 --> 00:00:08,740
+Et comme d'habitude…
+
+6
+00:00:08,740 --> 00:00:10,860
+je ne me suis pas arrêté à un seul agent !
+
+7
+00:00:10,860 --> 00:00:12,780
+Alors, j'ai créé PRONOCLIP.
+
+8
+00:00:12,780 --> 00:00:15,760
+J'ai commencé par connecter API-Football à n8n
+
+9
+00:00:15,760 --> 00:00:17,740
+pour récupérer les matchs, les statistiques
+
+10
+00:00:17,740 --> 00:00:19,120
+et les informations des équipes.
+
+11
+00:00:19,120 --> 00:00:21,380
+Ensuite, j'ai créé un workflow avec Gemini
+
+12
+00:00:21,380 --> 00:00:23,920
+qui analyse les données et me propose des pronostics.
+
+13
+00:00:23,920 --> 00:00:25,460
+Mais je ne me suis pas arrêté là !
+
+14
+00:00:25,460 --> 00:00:28,100
+J'ai ajouté un autre workflow qui prépare les visuels.
+
+15
+00:00:28,100 --> 00:00:30,960
+Et avec Claude Code, j'ai organisé une équipe d'agents IA.
+
+16
+00:00:30,960 --> 00:00:33,060
+Un scénariste imagine le dessin animé.
+
+17
+00:00:33,060 --> 00:00:35,140
+Un directeur artistique prépare les images.
+
+18
+00:00:35,140 --> 00:00:36,880
+Un autre agent assemble la vidéo
+
+19
+00:00:36,880 --> 00:00:38,360
+avec les animations et la voix.
+
+20
+00:00:38,360 --> 00:00:40,350
+Et un dernier vérifie le résultat !
+
+21
+00:00:49,900 --> 00:00:51,940
+J'ai également prévu de connecter cette production
+
+22
+00:00:51,940 --> 00:00:53,720
+à RapidoCMS pour mes publications
+
+23
+00:00:53,720 --> 00:00:56,140
+et à RapidoRH pour organiser le travail.
+
+24
+00:00:56,140 --> 00:00:58,700
+Tout ça pour une simple passion : le football !
+
+25
+00:00:58,700 --> 00:01:01,700
+Évidemment, mon IA ne connaît pas les résultats à l'avance.
+
+26
+00:01:01,700 --> 00:01:03,720
+Mais ce qui me passionne, c'est de pouvoir transformer
+
+27
+00:01:03,720 --> 00:01:06,880
+une idée en véritable chaîne de production avec des agents IA.
+
+28
+00:01:06,880 --> 00:01:08,740
+Je voulais simplement faire mes pronostics…
+
+29
+00:01:08,740 --> 00:01:11,660
+et finalement, j'ai créé mon propre studio IA de football !
+
+30
+00:01:11,660 --> 00:01:14,510
+Et toi, tu créerais quel agent IA pour ta passion ?
+

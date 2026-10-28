@@ -1,0 +1,140 @@
+1
+00:00:01,000 --> 00:00:03,160
+Aujourd'hui, je développe plusieurs logiciels,
+
+2
+00:00:03,160 --> 00:00:04,700
+je travaille avec des collaborateurs
+
+3
+00:00:04,700 --> 00:00:06,380
+et je construis des agents IA.
+
+4
+00:00:06,380 --> 00:00:07,960
+Mais comment organiser tout ce monde,
+
+5
+00:00:07,960 --> 00:00:09,870
+pour que chacun sache ce qu'il doit faire ?
+
+6
+00:00:12,000 --> 00:00:14,100
+Pour ça, j'ai développé RapidoRH.
+
+7
+00:00:14,100 --> 00:00:17,120
+Un outil qui me permet de centraliser mes projets, mes équipes,
+
+8
+00:00:17,120 --> 00:00:19,440
+les responsabilités et le travail à réaliser.
+
+9
+00:00:22,000 --> 00:00:24,610
+Chaque projet a son responsable, ses collaborateurs,
+
+10
+00:00:24,610 --> 00:00:26,730
+ses dates et ses tâches, avec leur priorité.
+
+11
+00:00:26,730 --> 00:00:28,010
+Je peux savoir où en est le travail,
+
+12
+00:00:28,010 --> 00:00:29,310
+et ce qu'il reste à faire.
+
+13
+00:00:41,010 --> 00:00:43,590
+J'organise mes collaborateurs par rôles et par départements,
+
+14
+00:00:43,590 --> 00:00:45,830
+et je leur donne accès aux informations dont ils ont besoin.
+
+15
+00:00:45,830 --> 00:00:47,210
+Mais le plus intéressant,
+
+16
+00:00:47,210 --> 00:00:50,350
+c'est que j'ai connecté RapidoRH à Claude grâce à son MCP.
+
+17
+00:00:50,350 --> 00:00:52,170
+Je peux lui demander d'analyser mes projets,
+
+18
+00:00:52,170 --> 00:00:53,570
+de retrouver les tâches prioritaires
+
+19
+00:00:53,570 --> 00:00:55,390
+et de préparer le travail de la journée.
+
+20
+00:01:12,000 --> 00:01:13,870
+Et avec mes routines, je peux aller plus loin :
+
+21
+00:01:13,870 --> 00:01:16,310
+préparer les tâches du matin, détecter les blocages,
+
+22
+00:01:16,310 --> 00:01:18,890
+suivre les échéances et proposer les prochaines actions.
+
+23
+00:01:18,890 --> 00:01:21,410
+Une routine, il faut un orchestrateur pour la lancer :
+
+24
+00:01:21,410 --> 00:01:23,370
+Claude Code, Plan'It ou n8n.
+
+25
+00:01:23,370 --> 00:01:26,410
+Mon objectif, c'est de faire travailler les humains et les agents IA
+
+26
+00:01:26,410 --> 00:01:27,890
+dans une organisation cohérente.
+
+27
+00:01:27,890 --> 00:01:29,990
+Les humains prennent les décisions importantes,
+
+28
+00:01:29,990 --> 00:01:31,910
+les agents exécutent les missions autorisées,
+
+29
+00:01:31,910 --> 00:01:34,270
+et RapidoRH permet de suivre le travail.
+
+30
+00:01:36,000 --> 00:01:37,850
+Pour moi, le véritable enjeu de l'IA,
+
+31
+00:01:37,850 --> 00:01:39,950
+ce n'est pas seulement d'avoir des agents intelligents.
+
+32
+00:01:39,950 --> 00:01:42,990
+C'est de savoir organiser leur travail, mesurer leurs résultats,
+
+33
+00:01:42,990 --> 00:01:44,740
+et les faire collaborer avec les humains.
+
+34
+00:01:46,000 --> 00:01:47,440
+Et demain, je vous montrerai une nouvelle étape
+
+35
+00:01:47,440 --> 00:01:50,070
+de mon quotidien d'entrepreneur avec l'IA.
+

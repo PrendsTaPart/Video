@@ -1,0 +1,12 @@
+{"dir":"/tmp/claude-0/-home-user/21787f21-b634-59d5-9b5d-681235ff17db/scratchpad/ep10","vo":"audio/take1.mp3","name":"episode10-youtube-publisher",
+"A":[0,8.19,18.497,27.72,38.595,48.354,58.143,70.24],"P":[1.0,10.4,21.8,42.0,54.0,79.0,96.0],"dur":120,"music_start":0,
+"short":[[0,10.0],[41.6,53.4],[53.4,64.0],[95.8,108.4]],
+"sections":[
+ [["Aujourd'hui, je vais vous montrer",0.0],["comment j'ai automatisé mes 4 chaînes YouTube.",1.22],["Et pour ça, j'ai développé mon propre logiciel,",3.8],["connecté directement à mes agents IA.",6.22]],
+ [["Avec plusieurs logiciels et projets à présenter,",8.32],["je devais gérer différentes chaînes,",10.56],["préparer les vidéos, écrire les titres,",12.14],["programmer les publications et suivre les résultats.",14.16],["J'ai donc décidé de centraliser tout ça.",16.62]],
+ [["J'ai construit YouTube Publisher Bot avec Lovable.",18.56],["Depuis une seule interface,",21.18],["je peux organiser mes vidéos, gérer leurs informations,",22.56],["retrouver l'historique",25.22],["et visualiser mon calendrier de publication.",26.1]],
+ [["Mais la vraie différence,",27.88],["c'est que j'ai connecté ce logiciel à un MCP YouTube.",29.38],["Mes agents IA peuvent consulter mes chaînes,",32.2],["récupérer les vidéos, analyser les données",34.1],["et préparer des actions directement depuis Claude.",36.04]],
+ [["Sur FoodEatUp, j'avais déjà des Shorts programmés",38.64],["sur plusieurs jours lors de mon dernier relevé.",40.78],["Et mon système dispose aussi d'un autopilote,",42.74],["capable de proposer des créneaux de publication",44.74],["à partir de l'historique de la chaîne.",46.84]],
+ [["Et une fois les vidéos publiées,",48.38],["je peux exploiter les données",49.86],["pour comprendre ce qui fonctionne.",50.9],["Les vues, les interactions et les performances.",52.4],["L'objectif, c'est que mes agents m'aident",54.32],["à améliorer les prochaines publications.",56.28]],
+ [["Mon objectif n'est pas seulement d'automatiser YouTube,",58.18],["c'est de construire une équipe d'agents IA",60.88],["capables de travailler avec mes propres logiciels",62.38],["pendant que je me concentre sur les produits et les clients.",64.64],["Et demain, je vous présenterai",67.16],["un nouveau projet et mon travail du jour.",68.36]]
+]}

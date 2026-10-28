@@ -1,0 +1,144 @@
+1
+00:00:00,400 --> 00:00:01,440
+Hier, dimanche,
+
+2
+00:00:01,440 --> 00:00:03,080
+je vous montrais les quatre applications Flutter
+
+3
+00:00:03,080 --> 00:00:05,480
+et le jeu vidéo qu'on a développés pour FoodEatUp.
+
+4
+00:00:05,480 --> 00:00:07,220
+Mais ce matin, une nouvelle idée :
+
+5
+00:00:07,220 --> 00:00:08,320
+et si toutes ces applications
+
+6
+00:00:08,320 --> 00:00:11,036
+étaient accessibles directement depuis FoodEatUp ?
+
+7
+00:00:12,200 --> 00:00:13,534
+L'objectif, c'est simple :
+
+8
+00:00:13,534 --> 00:00:15,334
+transformer FoodEatUp en une plateforme
+
+9
+00:00:15,334 --> 00:00:16,834
+où chaque restaurateur peut choisir
+
+10
+00:00:16,834 --> 00:00:18,966
+les applications dont il a réellement besoin.
+
+11
+00:00:23,600 --> 00:00:24,898
+Aujourd'hui, avec Soulayma,
+
+12
+00:00:24,898 --> 00:00:26,898
+on s'est attaqués à cette nouvelle fonctionnalité :
+
+13
+00:00:26,898 --> 00:00:28,698
+imaginer le parcours utilisateur,
+
+14
+00:00:28,698 --> 00:00:30,118
+organiser les extensions,
+
+15
+00:00:30,118 --> 00:00:32,834
+et préparer leur intégration directement dans FoodEatUp.
+
+16
+00:00:36,600 --> 00:00:37,754
+Demain, un restaurant pourra
+
+17
+00:00:37,754 --> 00:00:39,354
+retrouver ses outils au même endroit :
+
+18
+00:00:39,354 --> 00:00:41,514
+la fidélité, le HACCP,
+
+19
+00:00:41,514 --> 00:00:43,334
+la caisse mobile, le menu digital…
+
+20
+00:00:43,334 --> 00:00:44,674
+mais aussi de nouvelles applications
+
+21
+00:00:44,674 --> 00:00:46,399
+et des extensions intelligentes.
+
+22
+00:00:51,400 --> 00:00:52,445
+Et le plus intéressant,
+
+23
+00:00:52,445 --> 00:00:54,105
+c'est que ces applications ne sont pas pensées
+
+24
+00:00:54,105 --> 00:00:55,325
+comme des outils isolés.
+
+25
+00:00:55,325 --> 00:00:57,425
+Elles s'inscrivent dans le même écosystème FoodEatUp,
+
+26
+00:00:57,425 --> 00:01:00,405
+avec des fonctionnalités métier et des connexions MCP.
+
+27
+00:01:00,405 --> 00:01:01,305
+L'IA ne sert pas seulement
+
+28
+00:01:01,305 --> 00:01:03,185
+à développer des applications plus vite :
+
+29
+00:01:03,185 --> 00:01:04,905
+elle permet aussi de repenser la manière
+
+30
+00:01:04,905 --> 00:01:07,381
+dont on construit tout un écosystème logiciel.
+
+31
+00:01:11,214 --> 00:01:13,274
+Dimanche, on construisait les applications.
+
+32
+00:01:13,274 --> 00:01:14,534
+Lundi, avec Soulayma,
+
+33
+00:01:14,534 --> 00:01:15,594
+on construit la plateforme
+
+34
+00:01:15,594 --> 00:01:17,514
+qui permettra de les retrouver au même endroit.
+
+35
+00:01:17,514 --> 00:01:19,574
+Le FoodEatUp Store arrive bientôt.
+
+36
+00:01:19,574 --> 00:01:20,564
+Et ce n'est que le début.
+

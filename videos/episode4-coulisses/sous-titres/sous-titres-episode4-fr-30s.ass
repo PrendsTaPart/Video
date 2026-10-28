@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter ExtraBold,54,&H00FFFFFF,&H00FFFFFF,&H00231A0F,&H96231A0F,0,0,0,0,100,100,0,0,3,16,0,8,90,90,1600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.60,0:00:02.20,Sub,,0,0,0,,{\fad(80,60)}Vous avez vu mes trois dernières vidéos ?
+Dialogue: 0,0:00:02.20,0:00:04.64,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, je vous montre comment elles ont été réalisées,
+Dialogue: 0,0:00:04.64,0:00:05.91,Sub,,0,0,0,,{\fad(80,60)}avec mes outils IA.
+Dialogue: 0,0:00:06.40,0:00:08.27,Sub,,0,0,0,,{\fad(80,60)}Mon plugin Vidéo, rapido-video,
+Dialogue: 0,0:00:08.27,0:00:09.87,Sub,,0,0,0,,{\fad(80,60)}apporte les recettes de montage :
+Dialogue: 0,0:00:09.87,0:00:12.49,Sub,,0,0,0,,{\fad(80,60)}couper, assembler, mixer la voix et la musique,
+Dialogue: 0,0:00:12.49,0:00:15.13,Sub,,0,0,0,,{\fad(80,60)}sous-titrer avec Whisper, exporter au bon format.
+Dialogue: 0,0:00:15.13,0:00:16.91,Sub,,0,0,0,,{\fad(80,60)}Pour ces épisodes, Claude a aussi écrit
+Dialogue: 0,0:00:16.91,0:00:19.94,Sub,,0,0,0,,{\fad(80,60)}des scènes animées en HTML, rendues image par image.
+Dialogue: 0,0:00:20.50,0:00:22.43,Sub,,0,0,0,,{\fad(80,60)}Ensuite, RapidoCMS prend le relais :
+Dialogue: 0,0:00:22.43,0:00:24.05,Sub,,0,0,0,,{\fad(80,60)}la vidéo part dans la bibliothèque,
+Dialogue: 0,0:00:24.05,0:00:25.79,Sub,,0,0,0,,{\fad(80,60)}un brouillon est créé pour le réseau choisi,
+Dialogue: 0,0:00:25.79,0:00:28.06,Sub,,0,0,0,,{\fad(80,60)}et la publication est programmée dans le calendrier.

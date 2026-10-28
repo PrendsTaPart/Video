@@ -1,0 +1,14 @@
+{
+  "depot": "braindcode1/Rapidomeet 494aa22",
+  "visuels": "src/assets/screenshots (transcription, kanban) — visuels du site, données fictives",
+  "icone": "public/pwa/icons/icon-512.png",
+  "logos": "video-20/assets/logos (chartes Formation)",
+  "reunion": "fictive (participants A et B)",
+  "photo": "braindcode-profil.jpg",
+  "poses": [
+    "reflechit.webp",
+    "presente.webp"
+  ],
+  "voix": "ElevenLabs Noé 7pDdnNI6PhXmAp0pXFZm",
+  "higgsfield": "aucun plan généré"
+}

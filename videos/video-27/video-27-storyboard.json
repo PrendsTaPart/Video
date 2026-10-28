@@ -1,0 +1,64 @@
+{
+  "video": "video-27",
+  "titre": "Pourquoi j'ai pivoté vers les MCP pour connecter tous mes logiciels",
+  "duree_s": 76,
+  "format": "1080x1920",
+  "scenes": [
+    {
+      "temps_s": "0–4,1",
+      "scene": "Accroche",
+      "visuel": "Michael bras ouverts · « DES ROUTES AUX AUTOROUTES »"
+    },
+    {
+      "temps_s": "4,1–12,9",
+      "scene": "Premiers workflows",
+      "visuel": "Ville de 6 bâtiments (FoodEatUp, RapidoCRM, RapidoCMS, RapidoRH, RapidoATS, StartupForge), routes n8n qui se tracent"
+    },
+    {
+      "temps_s": "12,9–19,9",
+      "scene": "Le problème",
+      "visuel": "Le réseau se densifie (45 routes) · « + mes agents IA → changer d'approche »"
+    },
+    {
+      "temps_s": "19,9–24,8",
+      "scene": "Le pivot",
+      "visuel": "Autoroute MCP centrale, bretelles « entrée MCP » vers chaque bâtiment, « SERVEURS MCP »"
+    },
+    {
+      "temps_s": "24,8–35,7",
+      "scene": "Mes logiciels",
+      "visuel": "RapidoCRM, RapidoCMS, FoodEatUp, RapidoRH avec des outils MCP réels"
+    },
+    {
+      "temps_s": "35,7–43,1",
+      "scene": "n8n reste",
+      "visuel": "Déclencher, coordonner, faire travailler les agents"
+    },
+    {
+      "temps_s": "43,1–50,1",
+      "scene": "Démonstration",
+      "visuel": "Dispatcher RapidoRH : 9 h → MCP Todo → filtre → Doing → agent + MCP → résultat → Done (d'après la fiche)"
+    },
+    {
+      "temps_s": "50,1–60,6",
+      "scene": "Le déclic",
+      "visuel": "« seulement automatiser » barré → « rendre mes logiciels utilisables par mes agents IA »"
+    },
+    {
+      "temps_s": "60,6–66,1",
+      "scene": "Architecture",
+      "visuel": "Logiciels → serveurs MCP → agents et orchestrateurs (Claude, ChatGPT, n8n)"
+    },
+    {
+      "temps_s": "66,1–71,6",
+      "scene": "Punchline",
+      "visuel": "n8n organise le trafic · les MCP ouvrent les autoroutes · mes agents IA prennent le volant (avec mes validations)"
+    },
+    {
+      "temps_s": "71,6–76",
+      "scene": "Question",
+      "visuel": "Photo, « Tu utilises déjà les MCP avec n8n ? », logos"
+    }
+  ],
+  "miniature": "POURQUOI J'AI PIVOTÉ VERS LES MCP ! · AVANT : labyrinthe de routes · MAINTENANT : autoroute avec sorties vers RapidoCRM, FoodEatUp, RapidoRH, RapidoCMS · Michael au centre"
+}

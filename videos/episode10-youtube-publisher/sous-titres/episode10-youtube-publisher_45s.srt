@@ -1,0 +1,80 @@
+1
+00:00:01,000 --> 00:00:02,140
+Aujourd'hui, je vais vous montrer
+
+2
+00:00:02,140 --> 00:00:04,720
+comment j'ai automatisé mes 4 chaînes YouTube.
+
+3
+00:00:04,720 --> 00:00:07,140
+Et pour ça, j'ai développé mon propre logiciel,
+
+4
+00:00:07,140 --> 00:00:09,140
+connecté directement à mes agents IA.
+
+5
+00:00:10,480 --> 00:00:11,980
+Mais la vraie différence,
+
+6
+00:00:11,980 --> 00:00:14,800
+c'est que j'ai connecté ce logiciel à un MCP YouTube.
+
+7
+00:00:14,800 --> 00:00:16,700
+Mes agents IA peuvent consulter mes chaînes,
+
+8
+00:00:16,700 --> 00:00:18,640
+récupérer les vidéos, analyser les données
+
+9
+00:00:18,640 --> 00:00:21,225
+et préparer des actions directement depuis Claude.
+
+10
+00:00:22,400 --> 00:00:24,505
+Sur FoodEatUp, j'avais déjà des Shorts programmés
+
+11
+00:00:24,505 --> 00:00:26,465
+sur plusieurs jours lors de mon dernier relevé.
+
+12
+00:00:26,465 --> 00:00:28,465
+Et mon système dispose aussi d'un autopilote,
+
+13
+00:00:28,465 --> 00:00:30,565
+capable de proposer des créneaux de publication
+
+14
+00:00:30,565 --> 00:00:32,109
+à partir de l'historique de la chaîne.
+
+15
+00:00:32,600 --> 00:00:35,257
+Mon objectif n'est pas seulement d'automatiser YouTube,
+
+16
+00:00:35,257 --> 00:00:36,757
+c'est de construire une équipe d'agents IA
+
+17
+00:00:36,757 --> 00:00:39,017
+capables de travailler avec mes propres logiciels
+
+18
+00:00:39,017 --> 00:00:41,537
+pendant que je me concentre sur les produits et les clients.
+
+19
+00:00:41,537 --> 00:00:42,737
+Et demain, je vous présenterai
+
+20
+00:00:42,737 --> 00:00:44,647
+un nouveau projet et mon travail du jour.
+

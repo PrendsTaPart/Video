@@ -1,0 +1,80 @@
+{
+  "video": 15,
+  "duree_s": 47,
+  "format": "1080x1920",
+  "voix": "ElevenLabs Noé, eleven_v4",
+  "sequences": [
+    {
+      "n": 1,
+      "t": [
+        0,
+        9.8
+      ],
+      "sequence": "Accroche",
+      "visuel": "Michael submergé : prospects, rendez-vous, devis, factures, relances ; « deuxième cerveau »"
+    },
+    {
+      "n": 2,
+      "t": [
+        9.8,
+        13.9
+      ],
+      "sequence": "Révélation",
+      "visuel": "Logo et tableau de bord RapidoCRM ; RapidoCRM + MCP + Claude"
+    },
+    {
+      "n": 3,
+      "t": [
+        13.9,
+        20.1
+      ],
+      "sequence": "Connexion IA",
+      "visuel": "Les trois questions à Claude"
+    },
+    {
+      "n": 4,
+      "t": [
+        20.1,
+        28.05
+      ],
+      "sequence": "Analyse (scènes A et B)",
+      "visuel": "Appels MCP réels en lecture seule : pipeline, devis, factures, agenda ; priorité calculée"
+    },
+    {
+      "n": 5,
+      "t": [
+        28.05,
+        32.65
+      ],
+      "sequence": "Relances (scène C)",
+      "visuel": "Deux brouillons (devis Client A, facture Client B) ; « Rien n'est envoyé sans mon accord »"
+    },
+    {
+      "n": 6,
+      "t": [
+        32.65,
+        36.7
+      ],
+      "sequence": "Prospection (scène D)",
+      "visuel": "Écrans Prospecter et Résultat de la prospection, pipeline réel 69/1, 7 segments ; « Aucune prospection lancée »"
+    },
+    {
+      "n": 7,
+      "t": [
+        36.7,
+        41.25
+      ],
+      "sequence": "Punchline",
+      "visuel": "« Avant, je travaillais pour mon CRM. Maintenant, mon CRM travaille avec mon IA. »"
+    },
+    {
+      "n": 8,
+      "t": [
+        41.25,
+        47
+      ],
+      "sequence": "Conclusion",
+      "visuel": "« Et toi, tu gères encore tes clients à la main ? » + appel aux commentaires, logos"
+    }
+  ]
+}

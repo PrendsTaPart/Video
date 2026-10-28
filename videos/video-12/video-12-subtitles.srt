@@ -1,0 +1,64 @@
+1
+00:00:00,600 --> 00:00:03,920
+Aujourd'hui, j'ai connecté Figma et RapidoCMS à Claude.
+
+2
+00:00:03,920 --> 00:00:06,040
+Et je lui ai demandé de créer ma bande dessinée !
+
+3
+00:00:06,040 --> 00:00:08,160
+Il récupère mes images, organise les planches
+
+4
+00:00:08,160 --> 00:00:10,500
+et construit l'histoire directement dans Figma.
+
+5
+00:00:10,500 --> 00:00:11,660
+88 pages.
+
+6
+00:00:11,660 --> 00:00:13,200
+Mais attends… je lui ai aussi demandé
+
+7
+00:00:13,200 --> 00:00:15,260
+de documenter mon logiciel de caisse !
+
+8
+00:00:15,260 --> 00:00:17,800
+Prendre une commande, encaisser, clôturer…
+
+9
+00:00:17,800 --> 00:00:20,340
+Les écrans, les explications, les illustrations :
+
+10
+00:00:20,340 --> 00:00:22,140
+tout prend forme, dans le même fichier.
+
+11
+00:00:22,140 --> 00:00:23,880
+Avant, il m'aurait fallu plusieurs métiers
+
+12
+00:00:23,880 --> 00:00:24,720
+pour faire tout ça.
+
+13
+00:00:24,720 --> 00:00:26,360
+Maintenant, je connecte les bons outils
+
+14
+00:00:26,360 --> 00:00:27,940
+et je donne les bonnes instructions.
+
+15
+00:00:27,940 --> 00:00:28,880
+Si tu veux la méthode,
+
+16
+00:00:28,880 --> 00:00:30,390
+écris BD en commentaire !
+

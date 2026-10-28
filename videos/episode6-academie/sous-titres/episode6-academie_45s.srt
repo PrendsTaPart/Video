@@ -1,0 +1,76 @@
+1
+00:00:02,500 --> 00:00:05,140
+Aujourd'hui, tout le monde parle d'employés IA.
+
+2
+00:00:05,140 --> 00:00:07,740
+Mais il y a une question que presque personne ne pose :
+
+3
+00:00:07,740 --> 00:00:09,405
+comment est-ce qu'on les forme à leur métier ?
+
+4
+00:00:10,100 --> 00:00:12,105
+J'ai donc développé FoodEatUp Academy.
+
+5
+00:00:12,105 --> 00:00:14,405
+Une plateforme de formation avec des parcours,
+
+6
+00:00:14,405 --> 00:00:16,445
+des missions, des quiz, des exercices
+
+7
+00:00:16,445 --> 00:00:17,992
+et un suivi des compétences.
+
+8
+00:00:18,600 --> 00:00:20,940
+Ensuite, je peux préparer des agents spécialisés :
+
+9
+00:00:20,940 --> 00:00:22,980
+commercial, marketing, gestion,
+
+10
+00:00:22,980 --> 00:00:24,420
+formation ou pilotage.
+
+11
+00:00:24,420 --> 00:00:25,820
+Chaque agent possède un rôle,
+
+12
+00:00:25,820 --> 00:00:27,834
+des outils autorisés et des objectifs à atteindre.
+
+13
+00:00:28,796 --> 00:00:30,596
+Et c'est là que ça devient intéressant.
+
+14
+00:00:30,596 --> 00:00:33,176
+Je peux définir des routines, leur donner un objectif,
+
+15
+00:00:33,176 --> 00:00:34,256
+mesurer les résultats,
+
+16
+00:00:34,256 --> 00:00:36,576
+et décider si la méthode doit être conservée,
+
+17
+00:00:36,576 --> 00:00:37,936
+améliorée ou arrêtée.
+
+18
+00:00:37,936 --> 00:00:38,936
+Pour qu'elles tournent seules,
+
+19
+00:00:38,936 --> 00:00:41,321
+il faut un orchestrateur réellement configuré.
+

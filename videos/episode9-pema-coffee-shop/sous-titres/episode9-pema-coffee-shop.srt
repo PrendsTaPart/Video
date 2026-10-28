@@ -1,0 +1,168 @@
+1
+00:00:01,000 --> 00:00:02,540
+Aujourd'hui, je vous présente une application
+
+2
+00:00:02,540 --> 00:00:05,220
+que j'ai développée pour un client, pour 2 000 euros.
+
+3
+00:00:05,220 --> 00:00:07,300
+Et ce n'est pas simplement un catalogue de recettes :
+
+4
+00:00:07,300 --> 00:00:10,720
+elle est connectée à mon écosystème FoodEatUp.
+
+5
+00:00:11,866 --> 00:00:12,686
+Les recettes et la formation
+
+6
+00:00:12,686 --> 00:00:15,586
+tenaient dans un classeur papier de 161 pages.
+
+7
+00:00:15,586 --> 00:00:16,766
+L'objectif était simple :
+
+8
+00:00:16,766 --> 00:00:18,606
+rendre toutes ces informations accessibles
+
+9
+00:00:18,606 --> 00:00:20,688
+directement sur tablette, au comptoir.
+
+10
+00:00:21,800 --> 00:00:23,628
+J'ai donc créé une application tactile :
+
+11
+00:00:23,628 --> 00:00:25,728
+les catégories, la recherche instantanée,
+
+12
+00:00:25,728 --> 00:00:28,008
+les ingrédients, les quantités, les allergènes,
+
+13
+00:00:28,008 --> 00:00:30,388
+et un mode pas à pas qui guide chaque préparation.
+
+14
+00:00:30,388 --> 00:00:32,518
+Il y a même une Academy pour former les nouveaux équipiers.
+
+15
+00:00:46,780 --> 00:00:49,600
+Mais le plus intéressant, c'est la connexion à FoodEatUp.
+
+16
+00:00:49,600 --> 00:00:51,260
+Les recettes et leurs compositions sont lues
+
+17
+00:00:51,260 --> 00:00:53,800
+dans mon logiciel central, puis recopiées dans l'application
+
+18
+00:00:53,800 --> 00:00:55,880
+par une synchronisation programmée chaque nuit,
+
+19
+00:00:55,880 --> 00:00:58,300
+pour continuer à fonctionner même sans connexion.
+
+20
+00:00:58,300 --> 00:01:00,320
+Et quand un responsable corrige une recette,
+
+21
+00:01:00,320 --> 00:01:02,758
+rien ne part vers FoodEatUp sans sa confirmation.
+
+22
+00:01:04,000 --> 00:01:05,952
+Pour les fiches techniques, j'utilise Figma.
+
+23
+00:01:05,952 --> 00:01:07,672
+Une fiche équipe, avec la photo,
+
+24
+00:01:07,672 --> 00:01:09,132
+les ingrédients et les étapes.
+
+25
+00:01:09,132 --> 00:01:11,152
+Et une fiche responsable, avec les prix d'achat
+
+26
+00:01:11,152 --> 00:01:13,812
+et le coût de revient, réservée à l'espace Responsable.
+
+27
+00:01:13,812 --> 00:01:14,992
+Les fiches existent déjà ;
+
+28
+00:01:14,992 --> 00:01:17,502
+la mise à jour automatique des PDF reste à terminer.
+
+29
+00:01:18,800 --> 00:01:20,480
+Pour réaliser ce projet, j'ai utilisé
+
+30
+00:01:20,480 --> 00:01:23,180
+Lovable, Claude, FoodEatUp et Figma.
+
+31
+00:01:23,180 --> 00:01:25,500
+Mon travail, c'est de comprendre le besoin métier,
+
+32
+00:01:25,500 --> 00:01:27,560
+construire les bons outils, connecter les données,
+
+33
+00:01:27,560 --> 00:01:30,260
+et vérifier que tout fonctionne vraiment sur le terrain.
+
+34
+00:01:30,260 --> 00:01:31,860
+L'IA accélère le développement ;
+
+35
+00:01:31,860 --> 00:01:34,106
+les décisions et la validation restent humaines.
+
+36
+00:01:35,400 --> 00:01:38,204
+Au final, on passe d'un classeur papier de 161 pages
+
+37
+00:01:38,204 --> 00:01:40,644
+à une application de recettes, de formation
+
+38
+00:01:40,644 --> 00:01:42,624
+et de fiches techniques, reliée à FoodEatUp.
+
+39
+00:01:42,624 --> 00:01:44,524
+C'est exactement le type de solution métier
+
+40
+00:01:44,524 --> 00:01:46,464
+que je veux rendre accessible avec BraindCode.
+
+41
+00:01:46,464 --> 00:01:48,324
+Et demain, je vous présenterai un nouveau projet,
+
+42
+00:01:48,324 --> 00:01:49,774
+et mon travail du jour.
+

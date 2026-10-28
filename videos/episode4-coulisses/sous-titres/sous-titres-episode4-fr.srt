@@ -1,0 +1,136 @@
+1
+00:00:00,600 --> 00:00:02,200
+Vous avez vu mes trois dernières vidéos ?
+
+2
+00:00:02,200 --> 00:00:04,640
+Aujourd'hui, je vous montre comment elles ont été réalisées,
+
+3
+00:00:04,640 --> 00:00:05,905
+avec mes outils IA.
+
+4
+00:00:12,665 --> 00:00:14,945
+Tout commence par une idée, des captures d'écran,
+
+5
+00:00:14,945 --> 00:00:16,805
+des démonstrations, et un prompt.
+
+6
+00:00:16,805 --> 00:00:19,325
+Claude lit mes dépôts, mes sites et mes fichiers,
+
+7
+00:00:19,325 --> 00:00:20,885
+vérifie ce qui existe vraiment,
+
+8
+00:00:20,885 --> 00:00:22,189
+puis propose le scénario.
+
+9
+00:00:25,600 --> 00:00:27,466
+Mon plugin Vidéo, rapido-video,
+
+10
+00:00:27,466 --> 00:00:29,066
+apporte les recettes de montage :
+
+11
+00:00:29,066 --> 00:00:31,686
+couper, assembler, mixer la voix et la musique,
+
+12
+00:00:31,686 --> 00:00:34,326
+sous-titrer avec Whisper, exporter au bon format.
+
+13
+00:00:34,326 --> 00:00:36,106
+Pour ces épisodes, Claude a aussi écrit
+
+14
+00:00:36,106 --> 00:00:39,139
+des scènes animées en HTML, rendues image par image.
+
+15
+00:00:42,400 --> 00:00:44,777
+Au lieu d'assembler à la main, je décris le résultat.
+
+16
+00:00:44,777 --> 00:00:47,517
+Claude enchaîne : la voix off générée avec ElevenLabs,
+
+17
+00:00:47,517 --> 00:00:49,097
+les mots calés à la seconde près,
+
+18
+00:00:49,097 --> 00:00:50,657
+la musique qui baisse sous la voix,
+
+19
+00:00:50,657 --> 00:00:51,957
+les sous-titres incrustés,
+
+20
+00:00:51,957 --> 00:00:53,597
+puis les versions longues et courtes.
+
+21
+00:00:56,800 --> 00:00:58,730
+Ensuite, RapidoCMS prend le relais :
+
+22
+00:00:58,730 --> 00:01:00,350
+la vidéo part dans la bibliothèque,
+
+23
+00:01:00,350 --> 00:01:02,090
+un brouillon est créé pour le réseau choisi,
+
+24
+00:01:02,090 --> 00:01:04,360
+et la publication est programmée dans le calendrier.
+
+25
+00:01:07,660 --> 00:01:08,600
+Ce qui reste humain :
+
+26
+00:01:08,600 --> 00:01:10,340
+valider le scénario, les chiffres,
+
+27
+00:01:10,340 --> 00:01:11,440
+l'accord des personnes citées,
+
+28
+00:01:11,440 --> 00:01:12,943
+et le feu vert de publication.
+
+29
+00:01:15,607 --> 00:01:17,947
+Une idée devient un scénario, puis une vidéo,
+
+30
+00:01:17,947 --> 00:01:19,627
+puis un contenu prêt à être diffusé.
+
+31
+00:01:19,627 --> 00:01:21,387
+Mon objectif, ce n'est pas seulement
+
+32
+00:01:21,387 --> 00:01:22,967
+de créer des vidéos plus vite.
+
+33
+00:01:22,967 --> 00:01:25,527
+C'est de construire une chaîne de production réutilisable,
+
+34
+00:01:25,527 --> 00:01:27,437
+de l'idée jusqu'à la publication.
+

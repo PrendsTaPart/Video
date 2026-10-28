@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Poppins SemiBold,50,&H00E6F9FC,&H00E6F9FC,&H00231A0F,&H00231A0F,0,0,0,0,100,100,0,0,3,16,0,2,90,90,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:03.16,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, je développe plusieurs logiciels,
+Dialogue: 0,0:00:03.16,0:00:04.70,Sub,,0,0,0,,{\fad(80,60)}je travaille avec des collaborateurs
+Dialogue: 0,0:00:04.70,0:00:06.38,Sub,,0,0,0,,{\fad(80,60)}et je construis des agents IA.
+Dialogue: 0,0:00:06.38,0:00:07.96,Sub,,0,0,0,,{\fad(80,60)}Mais comment organiser tout ce monde,
+Dialogue: 0,0:00:07.96,0:00:09.87,Sub,,0,0,0,,{\fad(80,60)}pour que chacun sache ce qu'il doit faire ?
+Dialogue: 0,0:00:11.33,0:00:12.71,Sub,,0,0,0,,{\fad(80,60)}Mais le plus intéressant,
+Dialogue: 0,0:00:12.71,0:00:15.85,Sub,,0,0,0,,{\fad(80,60)}c'est que j'ai connecté RapidoRH à Claude grâce à son MCP.
+Dialogue: 0,0:00:15.85,0:00:17.67,Sub,,0,0,0,,{\fad(80,60)}Je peux lui demander d'analyser mes projets,
+Dialogue: 0,0:00:17.67,0:00:19.07,Sub,,0,0,0,,{\fad(80,60)}de retrouver les tâches prioritaires
+Dialogue: 0,0:00:19.07,0:00:20.89,Sub,,0,0,0,,{\fad(80,60)}et de préparer le travail de la journée.
+Dialogue: 0,0:00:33.90,0:00:35.75,Sub,,0,0,0,,{\fad(80,60)}Pour moi, le véritable enjeu de l'IA,
+Dialogue: 0,0:00:35.75,0:00:37.85,Sub,,0,0,0,,{\fad(80,60)}ce n'est pas seulement d'avoir des agents intelligents.
+Dialogue: 0,0:00:37.85,0:00:40.89,Sub,,0,0,0,,{\fad(80,60)}C'est de savoir organiser leur travail, mesurer leurs résultats,
+Dialogue: 0,0:00:40.89,0:00:42.64,Sub,,0,0,0,,{\fad(80,60)}et les faire collaborer avec les humains.

@@ -1,0 +1,160 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 33 : boîtes à pizza Halloween</title>
+<link rel="stylesheet" href="base.css">
+<style>
+:root{--pu:#8b4fc4;--pk:#c9a24b}
+#stage{background:radial-gradient(1000px 900px at 50% 30%,#2a1c3c 0%,#0d0b14 70%)}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.grad{background:linear-gradient(90deg,#FFA500,#ff7a1a 50%,#b06cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:6px solid #fff;box-shadow:0 20px 50px rgba(0,0,0,.6)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.lg{position:absolute;background:#fff;border-radius:22px;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.lg img{max-width:84%;max-height:78%}
+.dz{position:absolute;border-radius:18px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.6);border:3px solid rgba(255,255,255,.15);background:#000}
+.dz img{display:block;width:100%;height:100%;object-fit:cover}
+.cap{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.note{position:absolute;font-weight:600;font-size:22px;color:#fde68a;background:rgba(60,40,5,.85);border:2px solid #b7791f;border-radius:14px;padding:8px 16px}
+.box{position:absolute;left:240px;top:760px;width:600px;height:600px;perspective:1600px}
+.box .base{position:absolute;inset:0;background:#c79a5a;border-radius:10px;box-shadow:inset 0 0 0 14px #b0844a,0 40px 80px rgba(0,0,0,.6)}
+.box .base:after{content:"";position:absolute;left:60px;top:60px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,#f3c46b 0 55%,#d9692b 56% 60%,#c79a5a 61%)}
+.box .lid{position:absolute;inset:0;transform-origin:50% 0;border-radius:10px;overflow:hidden;backface-visibility:visible}
+.box .lid img{width:100%;height:100%;object-fit:cover}
+.box .lid .kraft{position:absolute;inset:0;background:#c79a5a;box-shadow:inset 0 0 0 14px #b0844a;display:flex;align-items:center;justify-content:center}
+.box .lid .kraft img{width:300px;height:auto;background:#fff;border-radius:16px;padding:10px}
+.stepx{position:absolute;left:70px;width:940px;display:flex;align-items:center;gap:20px;font-weight:600;font-size:32px}
+.stepx b{flex:none;width:58px;height:58px;border-radius:29px;background:var(--orange);color:#111;display:flex;align-items:center;justify-content:center;font-size:28px}
+.fig{position:absolute;left:60px;top:300px;width:560px;height:1100px;border-radius:22px;overflow:hidden;background:#1e1e1e;border:3px solid #3a3a3a;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.fig .bar{height:52px;background:#2c2c2c;display:flex;align-items:center;gap:10px;padding:0 18px;font-weight:600;font-size:20px;color:#ddd}
+.fig .bar i{width:14px;height:14px;border-radius:7px;display:inline-block}
+.fig .cv{position:relative;height:1048px;overflow:hidden}
+.fig .cv img{position:absolute;left:0;top:0;width:100%}
+.lay{position:absolute;left:650px;width:380px;font-family:'DejaVu Sans Mono',monospace;font-size:19px;color:#ddd;background:#1e1e1e;border:2px solid #3a3a3a;border-radius:10px;padding:6px 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lay:before{content:"# ";color:#b06cff}
+.role{position:absolute;left:60px;width:960px;display:flex;gap:22px;align-items:center;padding:20px 24px;border-radius:22px;background:var(--surf);border:2px solid #3b2f52}
+.role .ic{flex:none;width:96px;height:96px;border-radius:48px;display:flex;align-items:center;justify-content:center;font-size:46px;background:#2a1f3a;overflow:hidden}
+.role .ic img{width:100%;height:100%;object-fit:cover}
+.role b{display:block;font-size:34px}.role span{font-size:24px;color:var(--grey);font-weight:500}
+.g20{position:absolute;left:60px;top:560px;width:960px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.g20 div{aspect-ratio:1;border-radius:12px;overflow:hidden}.g20 img{width:100%;height:100%;object-fit:cover}
+.duo{position:absolute;left:0;right:0;top:420px}
+.duo .dz{width:480px;height:480px;top:120px}
+.duo .t{position:absolute;left:0;right:0;top:0;text-align:center;font-weight:700;font-size:58px;color:var(--orange)}
+.duo .n{position:absolute;top:630px;width:480px;text-align:center;font-weight:600;font-size:32px;line-height:1.15}
+.dots{position:absolute;left:0;right:0;top:1290px;display:flex;justify-content:center;gap:12px}
+.dots i{width:18px;height:18px;border-radius:9px;background:#3b2f52}.dots i.on{background:var(--orange)}
+.zoom{position:absolute;left:90px;top:240px;width:900px;height:900px;border-radius:24px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.zoom img{position:absolute;left:0;top:0;width:900px;height:900px;transform-origin:0 0}
+.hl{position:absolute;border:6px solid var(--orange);border-radius:16px;box-shadow:0 0 0 2000px rgba(0,0,0,.45)}
+.spec{position:absolute;left:60px;width:960px;display:flex;gap:18px;align-items:center;padding:14px 22px;border-radius:18px;background:var(--surf);border:2px solid #3b2f52;font-size:27px;font-weight:600}
+.spec small{display:block;font-size:20px;color:var(--grey);font-weight:500}
+.spec .s{margin-left:auto;flex:none;font-size:18px;border-radius:999px;padding:6px 14px;font-weight:700}
+.flowv{position:absolute;left:150px;width:780px;display:flex;align-items:center;gap:22px;padding:16px 24px;border-radius:20px;background:var(--surf);border:2px solid #3b2f52;font-size:31px;font-weight:600}
+.flowv b{flex:none;font-size:44px;width:60px;text-align:center}
+.end{position:absolute;left:80px;right:80px;text-align:center;font-weight:700;border-radius:22px;padding:16px}
+#logos{gap:12px}
+</style></head><body>
+<div id="stage">
+ <!-- S1 hook -->
+ <div class="scene" id="s1">
+  <div class="ring" id="h0" style="left:70px;top:110px;width:150px;height:150px"><img src="a/michael.jpg"></div>
+  <div class="lg" id="h1" style="left:250px;top:130px;width:200px;height:110px"><img src="a/chezjello-logo.png"></div>
+  <div class="lg" id="h2" style="left:470px;top:130px;width:110px;height:110px"><img src="a/braindcode.webp"></div>
+  <div class="big" id="h3" style="top:330px;font-size:82px;line-height:1.04;padding:0 50px">UNE BOÎTE À PIZZA<br><span class="grad">QUI DEVIENT<br>UN COSTUME !</span></div>
+  <div class="dz" id="h4" style="left:70px;top:820px;width:460px;height:460px"><img src="a/d01.png"></div>
+  <div class="dz" id="h5" style="left:550px;top:820px;width:460px;height:460px"><img src="a/d02.png"></div>
+  <div class="pill" id="h6" style="left:280px;top:1340px">🎃 Chez Jello · 10 duos Halloween</div>
+ </div>
+ <!-- S2 concept -->
+ <div class="scene" id="s2"><div class="chip">L'idée</div>
+  <div class="title" id="c0">Le couvercle devient <b>un costume</b></div>
+  <div class="stepx" id="c1" style="top:400px"><b>1</b>On mange sa pizza</div>
+  <div class="stepx" id="c2" style="top:480px"><b>2</b>On relève le couvercle</div>
+  <div class="stepx" id="c3" style="top:560px"><b>3</b>On passe la tête dans la découpe</div>
+  <div class="stepx" id="c4" style="top:640px"><b>4</b>Photo à deux, entre amis</div>
+  <div class="box" id="c5"><div class="base"></div><div class="lid" id="c5l"><div class="kraft" id="c5k"><img src="a/chezjello-logo.png"></div><img id="c5d" src="a/d17.png" style="display:none"></div></div>
+  <div class="note" id="c6" style="left:220px;top:1420px">animation de démonstration · pas une boîte imprimée</div>
+ </div>
+ <!-- S3 Figma -->
+ <div class="scene" id="s3"><div class="chip">Dans Figma</div>
+  <div class="title" id="f0" style="font-size:58px">Une collection <b>pensée par Zied</b></div>
+  <div class="fig" id="f1"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>&nbsp;Figma · page Halloween</div><div class="cv"><img id="f1i" src="a/page.png"></div></div>
+  <div id="f2"></div>
+  <div class="note" id="f3" style="left:60px;top:1440px;font-size:24px">Décors et costumes : images générées par IA (calques « Generated Image »)</div>
+  <div class="note" id="f4" style="left:60px;top:1510px;font-size:24px;color:#bbf7d0;background:rgba(10,50,25,.85);border-color:#22c55e">Direction, mise en page, cohérence : Zied</div>
+ </div>
+ <!-- S4 résultat -->
+ <div class="scene" id="s4"><div class="chip">Le résultat</div>
+  <div class="big" id="r0" style="top:200px;font-size:110px;line-height:1">20 DESIGNS</div>
+  <div class="big" id="r1" style="top:330px;font-size:64px;color:var(--orange)">= 10 DUOS HALLOWEEN</div>
+  <div class="g20" id="r2"></div>
+  <div id="r3"></div>
+  <div class="dots" id="r4"></div>
+ </div>
+ <!-- S5 détails -->
+ <div class="scene" id="s5"><div class="chip">Dans le détail</div>
+  <div class="zoom" id="z0"><img id="z0i" src="a/d17.png"><div class="hl" id="z1"></div></div>
+  <div class="pill" id="z2" style="left:60px;top:1180px">⭕ Découpe pour la tête · col Ø 140 mm</div>
+  <div class="pill" id="z3" style="left:60px;top:1270px">🏷️ « À DEUX, ON FAIT PEUR ! » + nom du duo</div>
+  <div class="pill" id="z4" style="left:60px;top:1360px">📱 QR fidélité Chez Jello</div>
+  <div class="note" id="z5" style="left:60px;top:1450px">QR hérité d'un ancien gabarit — à tester avant impression</div>
+ </div>
+ <!-- S5b specs -->
+ <div class="scene" id="s5b"><div class="chip">Avant l'imprimeur</div>
+  <div class="title" id="k0" style="font-size:58px">Pas encore <b>« prête à imprimer »</b></div>
+  <div class="spec" id="k1" style="top:420px"><div>Format de travail 330 × 330 mm<small>fiche imprimeur : « à ajuster au gabarit réel »</small></div><span class="s wip">à caler</span></div>
+  <div class="spec" id="k2" style="top:560px"><div>Exports Figma : 990 × 990 px<small>≈ 76 dpi à 330 mm : à reprendre en haute définition</small></div><span class="s wip">à refaire</span></div>
+  <div class="spec" id="k3" style="top:700px"><div>Fond perdu 3 mm<small>prévu sur la fiche</small></div><span class="s ok">noté</span></div>
+  <div class="spec" id="k4" style="top:840px"><div>Col Ø 140 mm microperforé<small>découpe physique à tester</small></div><span class="s wip">à tester</span></div>
+  <div class="spec" id="k5" style="top:980px"><div>QR code<small>à scanner sur une boîte réelle</small></div><span class="s wip">à tester</span></div>
+  <div class="spec" id="k6" style="top:1120px"><div>Validation du client<small>Chez Jello</small></div><span class="s man">en attente</span></div>
+ </div>
+ <!-- S6 expérience -->
+ <div class="scene" id="s6"><div class="chip">Usage envisagé</div>
+  <div class="title" id="x0" style="font-size:60px">Plus qu'un emballage : <b>une expérience</b></div>
+  <div class="flowv" id="x1" style="top:430px"><b>🍕</b>La pizza arrive</div>
+  <div class="flowv" id="x2" style="top:560px"><b>🎭</b>Le couvercle devient costume</div>
+  <div class="flowv" id="x3" style="top:690px"><b>📸</b>Photo en duo</div>
+  <div class="flowv" id="x4" style="top:820px"><b>📲</b>Partage sur les réseaux</div>
+  <div class="flowv" id="x5" style="top:950px"><b>🔁</b>QR → retour à la pizzeria</div>
+  <div class="dz" id="x6" style="left:180px;top:1110px;width:340px;height:340px;transform:rotate(-4deg)"><img src="a/d09.png"></div>
+  <div class="dz" id="x7" style="left:560px;top:1110px;width:340px;height:340px"><img src="a/d10.png"></div>
+  <div class="note" id="x8" style="left:240px;top:1490px">parcours imaginé · rien n'est encore distribué</div>
+ </div>
+ <!-- S7 équipe -->
+ <div class="scene" id="s7"><div class="chip">Mon quotidien</div>
+  <div class="title" id="t0" style="font-size:58px">Les bonnes missions aux <b>bonnes personnes</b></div>
+  <div class="role" id="t1" style="top:430px"><div class="ic"><img src="a/michael.jpg"></div><div><b>Moi</b><span>le concept, le client, la mission</span></div></div>
+  <div class="role" id="t2" style="top:600px"><div class="ic">✏️</div><div><b>Zied, graphiste</b><span>direction artistique · mise en page · cohérence</span></div></div>
+  <div class="role" id="t3" style="top:770px"><div class="ic">✨</div><div><b>Les outils IA</b><span>décors et costumes, plus vite</span></div></div>
+  <div class="big" id="t4" style="top:1010px;font-size:52px;line-height:1.2">Aller plus vite,<br><span style="color:var(--orange)">sans perdre la créativité<br>de l'équipe.</span></div>
+ </div>
+ <!-- S8 fin -->
+ <div class="scene" id="s8">
+  <div id="e0g">
+  <div class="title" id="e0" style="font-size:58px">Prochaine étape : <b>valider avec le client</b></div>
+  <div class="spec" id="e1" style="top:420px">✂️ Les découpes<span class="s wip">à valider</span></div>
+  <div class="spec" id="e2" style="top:520px">🖨️ L'impression<span class="s wip">à valider</span></div>
+  <div class="dz" id="e3" style="left:290px;top:680px;width:500px;height:500px"><img src="a/d19.png"></div>
+  </div>
+  <div id="e4g">
+  <div class="big" id="e4" style="top:240px;font-size:46px;line-height:1.25;padding:0 80px">Une simple boîte à pizza peut devenir <span style="color:var(--orange)">bien plus qu'un emballage.</span></div>
+  <div class="big" id="e5" style="top:520px;font-size:32px;line-height:1.35;padding:0 90px;font-weight:500;color:var(--cream)">Avec une bonne idée et une équipe créative, elle peut devenir une expérience que les clients auront envie de partager.</div>
+  <div class="end" id="e6" style="top:900px;font-size:46px;background:var(--orange);color:var(--night)">ÉPISODE 33/365</div>
+  <div class="end" id="e7" style="top:1010px;font-size:32px;background:var(--surf);border:2px solid #3b2f52">CHEZ JELLO × BRAINDCODE × FIGMA</div>
+  <div class="end" id="e8" style="top:1100px;font-size:32px;background:#2a1f3a;border:2px solid #3b2f52">20 COSTUMES HALLOWEEN — 10 DUOS</div>
+  </div>
+ </div>
+ <div id="logos"><div class="lp"><img src="a/chezjello-logo.png" style="height:44px"></div><div class="lp"><img src="a/braindcode.webp" style="height:44px"></div></div>
+ <div id="thumb" style="display:none;position:absolute;inset:0">
+  <div class="big" style="top:110px;font-size:100px;line-height:1.02">20 COSTUMES<br><span class="grad">HALLOWEEN</span></div>
+  <div class="big" style="top:350px;font-size:64px;line-height:1.1">SUR DES BOÎTES<br>À PIZZA !</div>
+  <div class="dz" style="left:60px;top:600px;width:470px;height:470px"><img src="a/d01.png"></div>
+  <div class="dz" style="left:550px;top:600px;width:470px;height:470px"><img src="a/d07.png"></div>
+  <div class="dz" style="left:60px;top:1090px;width:470px;height:470px"><img src="a/d17.png"></div>
+  <div class="dz" style="left:550px;top:1090px;width:470px;height:470px"><img src="a/d18.png"></div>
+  <div class="lg" style="left:60px;top:1620px;width:260px;height:150px"><img src="a/chezjello-logo.png"></div>
+  <div class="lg" style="left:860px;top:1620px;width:150px;height:150px"><img src="a/braindcode.webp"></div>
+  <div class="badge" style="left:395px;top:1660px;font-size:38px">ÉPISODE 33</div>
+ </div>
+</div>
+<script src="script.js"></script>
+</body></html>

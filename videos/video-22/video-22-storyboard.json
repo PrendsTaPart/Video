@@ -1,0 +1,80 @@
+{
+  "video": 22,
+  "duree_s": 72,
+  "format": "1080x1920",
+  "voix": "ElevenLabs Noé, eleven_v4",
+  "sequences": [
+    {
+      "t": [
+        0,
+        3.76
+      ],
+      "sequence": "Accroche",
+      "visuel": "Michael (réfléchit) · « Combien me coûte mon équipe IA ? »"
+    },
+    {
+      "t": [
+        3.76,
+        10.48
+      ],
+      "sequence": "21 vidéos",
+      "visuel": "Mosaïque des 19 miniatures montées"
+    },
+    {
+      "t": [
+        10.48,
+        29.7
+      ],
+      "sequence": "Le ticket",
+      "visuel": "Ticket ligne par ligne avec logos officiels (Figma, ElevenLabs en texte), total animé 222 €, 2 664 €/an"
+    },
+    {
+      "t": [
+        29.7,
+        35.0
+      ],
+      "sequence": "Mission A · vendre",
+      "visuel": "RapidoCMS, RapidoCRM, FoodEatUp, Plan'It coordonne"
+    },
+    {
+      "t": [
+        35.0,
+        39.92
+      ],
+      "sequence": "Mission B · développer",
+      "visuel": "StartupForge, BraindCode Build, RapidoRH, MCP FoodEatUp en test"
+    },
+    {
+      "t": [
+        39.92,
+        47.5
+      ],
+      "sequence": "Tout connecter",
+      "visuel": "8 familles de MCP autour de Plan'It, connexions qui s'allument"
+    },
+    {
+      "t": [
+        47.5,
+        52.4
+      ],
+      "sequence": "À compter aussi",
+      "visuel": "Configuration, serveurs, crédits d'API"
+    },
+    {
+      "t": [
+        52.4,
+        62.4
+      ],
+      "sequence": "CTA",
+      "visuel": "Écris AGENTS · configurer Claude, connecter tes MCP, premières missions · RapidoSoftware"
+    },
+    {
+      "t": [
+        62.4,
+        72
+      ],
+      "sequence": "Punchline",
+      "visuel": "222 € par mois d'outils · « le reste dépend de comment tu les connectes »"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "video": 25,
+  "duree_s": 78,
+  "format": "1080x1920",
+  "voix": "ElevenLabs Noé, eleven_v4",
+  "sequences": [
+    {
+      "t": [
+        0,
+        5.2
+      ],
+      "sequence": "Accroche",
+      "visuel": "Michael au téléphone, « Démo client #1… #5 »"
+    },
+    {
+      "t": [
+        5.2,
+        13.6
+      ],
+      "sequence": "Problème",
+      "visuel": "Film officiel : boîte support, la même question ×7"
+    },
+    {
+      "t": [
+        13.6,
+        15.78
+      ],
+      "sequence": "Révélation",
+      "visuel": "Coupe tricolore, icône et mot RapidoTuto"
+    },
+    {
+      "t": [
+        15.78,
+        23.38
+      ],
+      "sequence": "Création",
+      "visuel": "Captures storyboard et enregistrement"
+    },
+    {
+      "t": [
+        23.38,
+        28.8
+      ],
+      "sequence": "Avatar",
+      "visuel": "Avatar 3D réel, FR / EN / AR"
+    },
+    {
+      "t": [
+        28.8,
+        33.16
+      ],
+      "sequence": "La chaîne",
+      "visuel": "Logiciel → capture → storyboard → script IA → avatar → présentation interactive"
+    },
+    {
+      "t": [
+        33.16,
+        41.54
+      ],
+      "sequence": "Interaction",
+      "visuel": "Film officiel : question, réponse, ▶ passage ; 3 étapes du mode /live ; « code vérifié, aucun lien partagé »"
+    },
+    {
+      "t": [
+        41.54,
+        47.36
+      ],
+      "sequence": "Partage et centre d'aide",
+      "visuel": "/watch, /live, /centre, /embed ; capture statistiques et questions sans réponse"
+    },
+    {
+      "t": [
+        47.36,
+        53.8
+      ],
+      "sequence": "MCP",
+      "visuel": "8 outils, lecture / écriture"
+    },
+    {
+      "t": [
+        53.8,
+        62.45
+      ],
+      "sequence": "Où j'en suis",
+      "visuel": "9 projets, 0 lien partagé, 0 question ; prochaine présentation FoodEatUp en 4 scènes (préparées, pas encore créées)"
+    },
+    {
+      "t": [
+        62.45,
+        70.08
+      ],
+      "sequence": "Punchline",
+      "visuel": "Avant / aujourd'hui"
+    },
+    {
+      "t": [
+        70.08,
+        78
+      ],
+      "sequence": "Question",
+      "visuel": "Michael, avatar « Vous avez une question ? », logos RapidoTuto, RapidoSoftware, FoodEatUp"
+    }
+  ]
+}

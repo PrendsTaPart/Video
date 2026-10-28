@@ -1,0 +1,35 @@
+{
+  "voix": {
+    "outil": "ElevenLabs",
+    "voix": "Noé - Content Creator (7pDdnNI6PhXmAp0pXFZm)",
+    "modele": "eleven_v4",
+    "duree_s": 82.05
+  },
+  "personnage": {
+    "photo": "braindcode-profil.jpg",
+    "poses": [
+      "surprise",
+      "bras-ouverts",
+      "ordinateur",
+      "tablette",
+      "reflechit",
+      "presente"
+    ]
+  },
+  "logos": {
+    "braindcode.png": "officiel (Formation FoodEatUp, déjà dans video-20/assets/logos/chartes)",
+    "foodeatup.png": "officiel",
+    "rapidorh.png": "officiel",
+    "rapidosoftware.png": "officiel",
+    "RapidoATS": "AUCUN logo officiel trouvé (Formation FoodEatUp : pas de projet rapidoats ; dépôt : aucun fichier logo). Nom écrit en typographie neutre — à fournir."
+  },
+  "captures": "aucune capture réelle : ats.rapidosoftware.com injoignable depuis la session ; écrans reconstitués d'après le code et signalés à l'écran",
+  "donnees": "offre, CV, candidats A–F et score 72 fictifs",
+  "musique": "musique-184.wav (bibliothèque de la série), ducking + loudnorm -14 LUFS",
+  "effets": [
+    "whoosh",
+    "pop",
+    "tick"
+  ],
+  "rendu": "composition HTML (composition/) rendue par Playwright, 30 i/s"
+}

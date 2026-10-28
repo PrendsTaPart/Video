@@ -1,0 +1,5 @@
+# 27/10/2026 — contrôle de refus, sans jeton, lecture seule
+POST https://plugin.braindcode.com/mcp  initialize              -> HTTP 401 {"error":"unauthorized"}
+POST https://plugin.braindcode.com/mcp  tools/call mes_favoris  -> HTTP 401 {"error":"unauthorized"}
+POST https://plugin.braindcode.com/mcp  tools/call lister_plugins -> HTTP 401 {"error":"unauthorized"}
+WWW-Authenticate: Bearer realm="mcp", resource_metadata="https://plugin.braindcode.com/.well-known/oauth-protected-resource"

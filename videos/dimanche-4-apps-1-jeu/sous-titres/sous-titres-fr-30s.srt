@@ -1,0 +1,55 @@
+1
+00:00:00,400 --> 00:00:01,580
+Mon dimanche à la maison ?
+
+2
+00:00:01,580 --> 00:00:02,720
+J'ai décidé de développer
+
+3
+00:00:02,720 --> 00:00:03,960
+quatre applications mobiles…
+
+4
+00:00:03,960 --> 00:00:06,060
+et un jeu vidéo, pour FoodEatUp.
+
+5
+00:00:13,700 --> 00:00:14,630
+Et pour terminer,
+
+6
+00:00:14,630 --> 00:00:15,510
+FoodEatUp Rush :
+
+7
+00:00:15,510 --> 00:00:16,490
+un jeu vidéo 3D
+
+8
+00:00:16,490 --> 00:00:18,270
+qui transforme l'univers de la restauration
+
+9
+00:00:18,270 --> 00:00:19,850
+en expérience interactive.
+
+10
+00:00:20,200 --> 00:00:21,270
+Tout ça, depuis la maison,
+
+11
+00:00:21,270 --> 00:00:22,650
+avec Flutter, l'IA
+
+12
+00:00:22,650 --> 00:00:24,210
+et les outils MCP FoodEatUp.
+
+13
+00:00:24,210 --> 00:00:25,710
+Maintenant, prochaine étape :
+
+14
+00:00:25,710 --> 00:00:27,180
+Google Play et l'App Store.

@@ -1,0 +1,72 @@
+1
+00:00:00,600 --> 00:00:03,120
+Aujourd'hui, je vais te montrer comment je gère mes clients.
+
+2
+00:00:03,120 --> 00:00:05,180
+Parce qu'entre les prospects, les rendez-vous,
+
+3
+00:00:05,180 --> 00:00:07,480
+les devis, les factures et les relances…
+
+4
+00:00:07,480 --> 00:00:09,720
+j'avais presque besoin d'un deuxième cerveau !
+
+5
+00:00:09,720 --> 00:00:11,840
+Alors j'ai développé RapidoCRM.
+
+6
+00:00:11,840 --> 00:00:14,120
+Et je l'ai connecté à Claude grâce à mon MCP.
+
+7
+00:00:14,120 --> 00:00:15,680
+Maintenant, je peux simplement lui demander :
+
+8
+00:00:15,680 --> 00:00:17,280
+quels clients je dois rappeler ?
+
+9
+00:00:17,280 --> 00:00:18,800
+Quels devis attendent une réponse ?
+
+10
+00:00:18,800 --> 00:00:20,000
+Quelles factures dois-je suivre ?
+
+11
+00:00:28,180 --> 00:00:29,720
+Claude consulte mon CRM,
+
+12
+00:00:29,720 --> 00:00:31,020
+analyse les informations
+
+13
+00:00:31,020 --> 00:00:32,520
+et me prépare les prochaines actions.
+
+14
+00:00:32,520 --> 00:00:34,720
+Et si je veux prospecter, organiser mes rendez-vous
+
+15
+00:00:34,720 --> 00:00:36,600
+ou préparer mes relances, il peut aussi m'aider.
+
+16
+00:00:36,600 --> 00:00:38,840
+Avant, je travaillais pour mon CRM.
+
+17
+00:00:38,840 --> 00:00:41,180
+Maintenant, mon CRM travaille avec mon IA.
+
+18
+00:00:41,180 --> 00:00:43,190
+Et toi, tu gères encore tes clients à la main ?
+

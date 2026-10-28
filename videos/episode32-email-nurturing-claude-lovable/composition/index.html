@@ -1,0 +1,144 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 32 : email nurturing</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>:root{--bg:#0F1A23;--surf:#16242F;--ink:#FCF9E6;--accent:#FFA500;--hi:#007BFF;--grey:#AEB8C2;--subink:#FCF9E6;--subbg:rgba(15,26,35,.92);--font:'Poppins',sans-serif}</style>
+<link rel="stylesheet" href="base.css">
+<style>
+#stage{background:radial-gradient(1100px 900px at 50% 25%,#183247 0%,#0F1A23 70%)}
+.title b{color:#5aa9ff}
+.lg{position:absolute;width:150px;height:150px;border-radius:30px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.lg img{max-width:72%;max-height:72%}.lg.t{font-weight:700;font-size:40px;color:#0F1A23}
+.box{position:absolute;left:60px;width:960px;border-radius:24px;background:var(--surf);border:2px solid #24384a;padding:26px 30px;font-size:32px;font-weight:600}
+.cb{display:inline-block;width:46px;height:46px;border-radius:10px;border:4px solid var(--grey);vertical-align:middle;margin-right:18px}
+.cb.on{background:#22c55e;border-color:#22c55e}
+.small{font-size:24px;color:var(--grey);font-weight:500;margin-top:8px}
+code,.code{font-family:'DejaVu Sans Mono',monospace}
+.code{position:absolute;left:60px;width:960px;border-radius:20px;background:#0a121a;border:2px solid #24384a;padding:22px 26px;font-size:24px;line-height:1.5;color:#9fe8d8;white-space:pre}
+.tool{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:20px;padding:18px 24px;border-radius:18px;background:var(--surf);border:2px solid #24384a;font-size:28px;font-weight:600}
+.tool code{font-size:27px;color:#9fe8d8}.tool em{margin-left:auto;font-style:normal;font-size:20px;font-weight:700;border-radius:999px;padding:6px 14px;background:#123b5c;color:#7dd3fc}
+.tool.no{border-color:#7f1d1d;background:#2a1215}.tool.no em{background:#7f1d1d;color:#fecaca}
+.step{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:22px;padding:16px 24px;border-radius:18px;background:var(--surf);border:2px solid #24384a;font-size:30px;font-weight:600}
+.step i{font-style:normal;flex:none;width:52px;height:52px;border-radius:50%;background:var(--accent);color:#0F1A23;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700}
+.step span{margin-left:auto;font-size:20px;color:var(--grey)}
+.btn{position:absolute;left:150px;width:780px}
+.btn img{width:100%;display:block;border-radius:12px}
+.btn b{position:absolute;left:-110px;top:16px;font-size:30px;color:var(--accent)}
+.stat{position:absolute;width:465px;border-radius:22px;background:var(--surf);border:2px solid #24384a;padding:22px;text-align:center}
+.stat b{display:block;font-size:64px;color:var(--accent);line-height:1}.stat span{font-size:24px;color:var(--grey);font-weight:500}
+.endc{position:absolute;left:80px;right:80px;text-align:center;font-weight:700;border-radius:22px;padding:16px}
+</style></head><body><div id="stage">
+
+<div class="scene">
+ <div class="card kb" style="left:0;top:0;width:1080px;height:1920px;border-radius:0;opacity:.07;filter:blur(10px)"><img src="a/m-home.png" style="width:1080px"></div>
+ <div class="pill" data-at="+0.1" style="left:60px;top:120px;border:3px solid var(--accent);color:var(--accent);font-size:30px">ÉPISODE 32/365</div>
+ <div class="ring" data-at="+0.2" style="left:60px;top:230px;width:220px;height:220px"><img src="a/michael.jpg"></div>
+ <div class="lg" data-at="+0.6" style="left:330px;top:265px"><img src="a/claude.webp"></div>
+ <div class="lg" data-at="+0.8" style="left:510px;top:265px"><img src="a/lovable.webp"></div>
+ <div class="lg t" data-at="+1.0" style="left:690px;top:265px">MCP</div>
+ <div class="big" data-at="0:8" style="top:560px;font-size:46px;color:var(--grey);font-weight:600">Des contacts laissent leur email…</div>
+ <div class="big" data-at="0:20" data-fx="slam" style="top:660px;font-size:96px;line-height:1.04">ET JE NE LEUR<br><span style="color:var(--accent)">ÉCRIS JAMAIS.</span></div>
+ <div class="card" data-at="0:15" style="left:240px;top:1000px;width:600px;height:520px;border:3px solid #24384a"><img src="a/m-formations.png" style="width:600px;margin-top:-80px"></div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">L'idée</div>
+ <div class="title" data-at="1:7" style="font-size:76px">L'email<br><b>nurturing</b></div>
+ <div class="small" data-at="1:8" style="position:absolute;left:60px;top:400px;font-size:30px;width:960px">Chaque formulaire devient une relation : des emails utiles, au bon moment.</div>
+ <div class="lg" data-at="1:10" style="left:120px;top:560px;width:240px;height:240px"><img src="a/claude.webp"></div>
+ <div class="lg" data-at="1:11" style="left:420px;top:560px;width:240px;height:240px"><img src="a/lovable.webp"></div>
+ <div class="lg t" data-at="1:14" style="left:720px;top:560px;width:240px;height:240px;font-size:64px">MCP</div>
+ <div class="big" data-at="1:10" style="top:830px;font-size:28px;color:var(--grey);font-weight:500;display:flex;justify-content:space-around;left:60px;right:60px"><span>Claude</span><span>Lovable</span><span>le MCP du site</span></div>
+ <div class="card kb" data-at="1:15" style="left:190px;top:930px;width:700px;height:620px"><img src="a/pdf-01.png"></div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">Règle n°1</div>
+ <div class="title" data-at="2:2">Séparer les<br><b>consentements</b></div>
+ <div class="box" data-at="2:5" style="top:460px"><span class="cb on"></span>Débloquer la formation<div class="small" style="margin-left:64px">Emails liés à cette demande uniquement</div></div>
+ <div class="box" data-at="2:15" style="top:650px;border-color:var(--accent)"><span class="cb"></span>Suivre l'actualité<div class="small" style="margin-left:64px">Une case à part · jamais cochée d'office · horodatée</div></div>
+ <div class="note" data-at="2:5" style="left:60px;top:850px">Illustration du principe</div>
+ <div class="code" data-at="2:19" style="top:950px">-- drizzle/migrations/0011_episode32_nurturing.sql
+-- Épisode 32 : abonnés « actualité »
+--   (consentement séparé), campagnes,
+--   médiathèque, publications préparées.
+INSERT INTO public.leads (prenom, email,
+  consentement, source, formation_id,
+  <span style="color:#FFA500">actualites, actualites_le</span>)</div>
+ <div class="note" data-at="2:22" style="left:60px;top:1290px;background:#14532d;color:#86efac">Extrait réel du code du site</div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">Le design</div>
+ <div class="title" data-at="3:4">Des emails dessinés<br>en <b>HTML et CSS</b></div>
+ <div class="card" data-at="3:6" data-scroll="460" style="left:60px;top:430px;width:520px;height:1100px"><div><img src="a/intro-formation.png"><img src="a/hero-formation.png"><img src="a/titre-3-etapes.png"><img src="a/formation-etape-1.png"><img src="a/formation-etape-2.png"><img src="a/formation-etape-3.png"><img src="a/bouton-ouvrir-formation.png"></div></div>
+ <div class="big" data-at="3:20" data-fx="slam" style="left:610px;right:40px;top:440px;font-size:150px;color:var(--accent);line-height:1">46</div>
+ <div class="big" data-at="3:21" style="left:610px;right:40px;top:600px;font-size:38px">visuels exportés<br>en PNG</div>
+ <div class="card" data-at="3:23" style="left:620px;top:780px;width:200px"><img src="a/hero-offre-foodeatup.png"></div>
+ <div class="card" data-at="3:24" style="left:840px;top:780px;width:200px"><img src="a/hero-offre-rapidocrm.png"></div>
+ <div class="card" data-at="3:25" style="left:620px;top:960px;width:200px"><img src="a/hero-offre-rapidocms.png"></div>
+ <div class="card" data-at="3:26" style="left:840px;top:960px;width:200px"><img src="a/hero-offre-rapidorh.png"></div>
+ <div class="card" data-at="3:27" style="left:620px;top:1140px;width:200px"><img src="a/hero-offre-planit.png"></div>
+ <div class="card" data-at="3:28" style="left:840px;top:1140px;width:200px"><img src="a/hero-offre-rapidosoftware.png"></div>
+ <div class="big" data-at="3:28" style="left:610px;right:40px;top:1320px;font-size:24px;color:var(--grey);font-weight:500">6 héros aux couleurs<br>de chaque logiciel</div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">La séquence</div>
+ <div class="title" data-at="4:0">Un email =<br><b>un seul bouton</b></div>
+ <div class="btn" data-at="4:10" style="top:520px"><b>J+1</b><img src="a/bouton-ouvrir-formation.png"></div>
+ <div class="btn" data-at="4:13" style="top:700px"><b>J+2</b><img src="a/bouton-decouvrir-formation.png"></div>
+ <div class="btn" data-at="4:16" style="top:880px"><b>J+3</b><img src="a/bouton-mois-offert.png"></div>
+ <div class="btn" data-at="4:20" style="top:1060px"><b>RDV</b><div style="height:150px;overflow:hidden;border-radius:16px"><img src="a/hero-rdv.png" style="margin-top:-10px"></div></div>
+ <div class="note" data-at="4:20" style="left:60px;top:1250px">Séquence en brouillon · rien n'est encore envoyé</div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">Les outils de Claude</div>
+ <div class="title" data-at="5:6">Claude <b>prépare</b>,<br>je valide</div>
+ <div class="tool" data-at="5:9" style="top:450px"><code>creer_campagne_email</code><em>brouillon</em></div>
+ <div class="tool" data-at="5:15" style="top:560px"><code>lister_medias</code><em>lecture</em></div>
+ <div class="tool" data-at="5:18" style="top:670px"><code>preparer_publication</code><em>brouillon</em></div>
+ <div class="tool" data-at="5:18" style="top:780px"><code>tester_campagne_email</code><em>test à moi</em></div>
+ <div class="tool no" data-at="5:22" style="top:930px"><code>envoyer à toute la base</code><em>n'existe pas</em></div>
+ <div class="tool no" data-at="5:26" style="top:1040px"><code>publier sur un réseau</code><em>n'existe pas</em></div>
+ <div class="note" data-at="5:28" style="left:60px;top:1190px;background:#14532d;color:#86efac">Noms réels des outils du MCP du site</div>
+ <div class="big" data-at="5:30" data-fx="slam" style="top:1290px;font-size:62px;color:var(--accent)">L'ENVOI RESTE HUMAIN</div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">La chaîne d'un épisode</div>
+ <div class="title" data-at="6:2">Chaque vidéo<br>déclenche <b>une chaîne</b></div>
+ <div class="step" data-at="6:2" style="top:440px"><i>1</i>Vidéo<span>épisode</span></div>
+ <div class="step" data-at="6:7" style="top:540px"><i>2</i>Formation<span>étapes + prompts</span></div>
+ <div class="step" data-at="6:9" style="top:640px"><i>3</i>PDF<span>nuit et blanc</span></div>
+ <div class="step" data-at="6:11" style="top:740px"><i>4</i>Lead magnet<span>ressource</span></div>
+ <div class="step" data-at="6:14" style="top:840px"><i>5</i>Campagne email<span>brouillon</span></div>
+ <div class="step" data-at="6:16" style="top:940px"><i>6</i>Publications<span>une par réseau</span></div>
+ <div class="tool" data-at="6:19" style="top:1070px;border-color:var(--accent)"><code>etat_episode</code><em>ce qui manque, dans l'ordre</em></div>
+ <div class="card" data-at="6:21" style="left:240px;top:1190px;width:600px;height:338px"><img src="a/formation-32.jpg"></div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">Où j'en suis</div>
+ <div class="title" data-at="7:0">Ce qui est<br><b>réellement en place</b></div>
+ <div class="stat" data-at="7:0" style="left:60px;top:440px"><b>8</b><span>modèles d'email<br>en brouillon</span></div>
+ <div class="stat" data-at="7:1" style="left:555px;top:440px"><b>46</b><span>visuels dessinés<br>par Lovable</span></div>
+ <div class="stat" data-at="7:2" style="left:60px;top:650px"><b>53</b><span>outils MCP<br>dont 16 pour les emails</span></div>
+ <div class="stat" data-at="7:3" style="left:555px;top:650px"><b>112</b><span>images dans<br>la médiathèque</span></div>
+ <div class="note" data-at="7:10" style="left:60px;top:880px;font-size:28px">Envoi pas encore branché · 0 email de nurturing envoyé</div>
+ <div class="big" data-at="7:13" style="top:1000px;font-size:54px;line-height:1.15">Chaque formulaire<br>peut devenir<br><span style="color:var(--accent)">une vraie relation.</span></div>
+ <div class="endc" data-at="+9.6" data-fx="slam" style="top:1290px;background:var(--accent);color:#0F1A23;font-size:56px">ÉPISODE 32/365</div>
+ <div class="endc" data-at="+10.0" style="top:1420px;font-size:32px;color:var(--grey)">CLAUDE × LOVABLE × MCP</div>
+</div>
+
+<div id="sub"><span></span></div>
+<div id="thumb">
+ <div class="card" style="left:0;top:0;width:1080px;height:1920px;border-radius:0;opacity:.22;filter:blur(3px)"><img src="a/m-home.png" style="width:1080px"></div>
+ <div class="ring" style="left:390px;top:170px;width:300px;height:300px"><img src="a/michael.jpg"></div>
+ <div class="big" style="top:560px;font-size:104px;line-height:1.02">J'AI APPRIS<br>À MON SITE<br><span style="color:var(--accent)">À ÉCRIRE<br>À MES CONTACTS</span></div>
+ <div class="card" style="left:170px;top:1150px;width:740px;height:416px"><img src="a/formation-32.jpg"></div>
+ <div class="lg" style="left:250px;top:1620px"><img src="a/claude.webp"></div>
+ <div class="lg" style="left:465px;top:1620px"><img src="a/lovable.webp"></div>
+ <div class="lg t" style="left:680px;top:1620px">MCP</div>
+</div>
+</div>
+<script src="cfg.js"></script><script src="engine.js"></script></body></html>

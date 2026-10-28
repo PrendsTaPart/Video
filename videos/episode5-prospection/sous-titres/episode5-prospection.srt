@@ -1,0 +1,168 @@
+1
+00:00:01,000 --> 00:00:03,420
+Après avoir construit mes applications, mes agents IA
+
+2
+00:00:03,420 --> 00:00:04,920
+et mes outils de communication,
+
+3
+00:00:04,920 --> 00:00:06,920
+il me reste une question essentielle :
+
+4
+00:00:06,920 --> 00:00:08,225
+comment trouver des clients ?
+
+5
+00:00:09,385 --> 00:00:11,465
+Aujourd'hui, je peux simplement demander à Claude
+
+6
+00:00:11,465 --> 00:00:13,145
+de rechercher des restaurants ou des brasseries
+
+7
+00:00:13,145 --> 00:00:14,425
+dans les régions qui m'intéressent.
+
+8
+00:00:14,425 --> 00:00:16,445
+Je lui donne un objectif… et une règle :
+
+9
+00:00:16,445 --> 00:00:18,684
+ne contacter personne sans ma validation.
+
+10
+00:00:19,611 --> 00:00:22,371
+Grâce au MCP que j'ai développé pour Prospector Hub,
+
+11
+00:00:22,371 --> 00:00:24,691
+Claude peut consulter les régions et les spécialités,
+
+12
+00:00:24,691 --> 00:00:26,011
+lancer des recherches autorisées,
+
+13
+00:00:26,011 --> 00:00:28,811
+et retrouver les résultats directement dans mon logiciel.
+
+14
+00:00:28,811 --> 00:00:30,691
+Derrière, ce sont des workflows n8n
+
+15
+00:00:30,691 --> 00:00:31,741
+qui font les recherches.
+
+16
+00:00:32,600 --> 00:00:34,320
+Par exemple, mes cinq dernières recherches,
+
+17
+00:00:34,320 --> 00:00:35,360
+sur les bars et brasseries,
+
+18
+00:00:35,360 --> 00:00:37,720
+ont retourné 200 résultats sur cinq régions.
+
+19
+00:00:37,720 --> 00:00:39,760
+Et le logiciel garde l'historique des recherches
+
+20
+00:00:39,760 --> 00:00:41,440
+et des établissements enregistrés.
+
+21
+00:00:41,440 --> 00:00:44,136
+200 résultats de recherche : pas 200 clients.
+
+22
+00:00:45,634 --> 00:00:47,414
+Mais trouver une entreprise ne suffit pas.
+
+23
+00:00:47,414 --> 00:00:50,434
+Il faut vérifier les informations, comprendre son activité,
+
+24
+00:00:50,434 --> 00:00:51,154
+éviter les doublons,
+
+25
+00:00:51,154 --> 00:00:53,174
+et préparer une approche pertinente.
+
+26
+00:00:53,174 --> 00:00:55,954
+Aujourd'hui, 90 bars et brasseries ont été enregistrés :
+
+27
+00:00:55,954 --> 00:00:57,721
+ils sont encore au statut « nouveau ».
+
+28
+00:01:16,200 --> 00:01:17,943
+Ensuite, les routines prennent le relais :
+
+29
+00:01:17,943 --> 00:01:20,003
+préparer les messages, suivre les campagnes,
+
+30
+00:01:20,003 --> 00:01:22,003
+proposer les relances, analyser les résultats.
+
+31
+00:01:22,003 --> 00:01:24,803
+Claude orchestre les étapes avec les outils autorisés.
+
+32
+00:01:24,803 --> 00:01:26,303
+Mais pour qu'une routine tourne seule,
+
+33
+00:01:26,303 --> 00:01:28,363
+elle doit être configurée dans un orchestrateur,
+
+34
+00:01:28,363 --> 00:01:30,080
+comme n8n ou Plan'It.
+
+35
+00:01:31,000 --> 00:01:32,813
+Mon système gère aussi plusieurs canaux :
+
+36
+00:01:32,813 --> 00:01:35,533
+e-mails, SMS, LinkedIn et appels automatisés,
+
+37
+00:01:35,533 --> 00:01:37,933
+avec des règles : l'identité de l'expéditeur,
+
+38
+00:01:37,933 --> 00:01:40,438
+la désinscription, et mon accord avant chaque envoi.
+
+39
+00:01:41,665 --> 00:01:43,285
+Mon objectif, ce n'est pas d'envoyer
+
+40
+00:01:43,285 --> 00:01:44,825
+des milliers de messages au hasard.
+
+41
+00:01:44,825 --> 00:01:47,085
+C'est de construire une prospection intelligente,
+
+42
+00:01:47,085 --> 00:01:49,715
+ciblée et mesurable, pilotée depuis Claude.
+

@@ -1,0 +1,211 @@
+1
+00:00:00,350 --> 00:00:00,910
+Aujourd'hui
+
+2
+00:00:00,910 --> 00:00:01,790
+j'ai voulu faire un cadeau
+
+3
+00:00:01,790 --> 00:00:02,420
+à ma sœur.
+
+4
+00:00:02,420 --> 00:00:03,370
+Elle fait vivre La Chaîne
+
+5
+00:00:03,370 --> 00:00:04,110
+Fratern'Elles
+
+6
+00:00:04,110 --> 00:00:06,190
+une association d'Aulnay-sous-Bois qui accompagne
+
+7
+00:00:06,190 --> 00:00:07,970
+des familles depuis 2018.
+
+8
+00:00:10,770 --> 00:00:11,170
+Distributions
+
+9
+00:00:11,170 --> 00:00:11,700
+collectes
+
+10
+00:00:11,700 --> 00:00:12,410
+sorties
+
+11
+00:00:12,410 --> 00:00:13,660
+aide aux devoirs elle donne
+
+12
+00:00:13,660 --> 00:00:15,280
+énormément de temps aux autres.
+
+13
+00:00:15,280 --> 00:00:15,950
+Et il lui en reste
+
+14
+00:00:15,950 --> 00:00:17,610
+très peu pour l'administratif et
+
+15
+00:00:17,610 --> 00:00:18,470
+la communication.
+
+16
+00:00:21,270 --> 00:00:22,360
+Alors je lui ai construit
+
+17
+00:00:22,360 --> 00:00:23,650
+un site avec Lovable les
+
+18
+00:00:23,650 --> 00:00:24,310
+événements
+
+19
+00:00:24,310 --> 00:00:24,940
+les collectes
+
+20
+00:00:24,940 --> 00:00:25,340
+les actions
+
+21
+00:00:25,340 --> 00:00:27,130
+et l'inscription des bénévoles.
+
+22
+00:00:29,930 --> 00:00:31,420
+J'ai repris sa charte graphique
+
+23
+00:00:31,420 --> 00:00:32,770
+créée sur Canva le rose
+
+24
+00:00:32,770 --> 00:00:33,420
+profond
+
+25
+00:00:33,420 --> 00:00:34,480
+les écritures manuscrites
+
+26
+00:00:34,480 --> 00:00:36,170
+et sa devise ensemble
+
+27
+00:00:36,170 --> 00:00:37,280
+chaque maillon compte.
+
+28
+00:00:40,080 --> 00:00:41,480
+Puis j'ai branché un MCP
+
+29
+00:00:41,480 --> 00:00:42,080
+sur son site.
+
+30
+00:00:42,080 --> 00:00:43,810
+Ses agents IA peuvent préparer
+
+31
+00:00:43,810 --> 00:00:44,530
+un événement
+
+32
+00:00:44,530 --> 00:00:46,060
+une collecte ou un article…
+
+33
+00:00:46,060 --> 00:00:47,260
+mais seulement en brouillon.
+
+34
+00:00:47,260 --> 00:00:48,920
+Rien n'est publié sans elle.
+
+35
+00:00:51,720 --> 00:00:52,250
+Ensuite
+
+36
+00:00:52,250 --> 00:00:53,770
+je l'ai formée à ChatGPT
+
+37
+00:00:53,770 --> 00:00:54,790
+Canva et Gmail.
+
+38
+00:00:54,790 --> 00:00:55,140
+Demain
+
+39
+00:00:55,140 --> 00:00:56,300
+elle pourra simplement parler à
+
+40
+00:00:56,300 --> 00:00:57,590
+ses agents pour préparer la
+
+41
+00:00:57,590 --> 00:00:59,470
+prochaine sortie de l'association.
+
+42
+00:01:02,270 --> 00:01:03,030
+Mon objectif
+
+43
+00:01:03,030 --> 00:01:04,030
+ce n'est pas de remplacer
+
+44
+00:01:04,030 --> 00:01:04,800
+les bénévoles.
+
+45
+00:01:04,800 --> 00:01:05,670
+C'est de leur rendre du
+
+46
+00:01:05,670 --> 00:01:06,030
+temps
+
+47
+00:01:06,030 --> 00:01:06,960
+pour être sur le terrain
+
+48
+00:01:06,960 --> 00:01:08,220
+avec les familles.
+
+49
+00:01:11,020 --> 00:01:11,440
+Parfois
+
+50
+00:01:11,440 --> 00:01:12,380
+le plus beau cadeau…
+
+51
+00:01:12,380 --> 00:01:12,950
+c'est du temps.
+
+52
+00:01:12,950 --> 00:01:14,220
+Et l'IA peut aussi nous
+
+53
+00:01:14,220 --> 00:01:15,300
+redonner du temps.

@@ -1,0 +1,119 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 31 : mon site avec Lovable et Claude</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>:root{--bg:#0F1A23;--surf:#16242F;--ink:#FCF9E6;--accent:#FFA500;--hi:#5aa9ff;--grey:#AEB8C2;--subink:#FCF9E6;--subbg:rgba(15,26,35,.92);--font:'Poppins',sans-serif}</style>
+<link rel="stylesheet" href="base.css">
+<style>
+#stage{background:radial-gradient(1100px 900px at 50% 25%,#183247 0%,#0F1A23 70%)}
+.card{border:3px solid #24384a;background:#0F1A23}
+.lg{position:absolute;width:150px;height:150px;border-radius:30px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.lg img{max-width:72%;max-height:72%}.lg.t{font-weight:700;font-size:34px;color:#0F1A23}
+.tag{position:absolute;font-weight:600;font-size:32px;border-radius:999px;padding:12px 30px;background:var(--surf);border:2px solid #24384a}
+.tag.o{background:var(--accent);color:#0F1A23;border-color:var(--accent)}
+.step{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:24px;padding:20px 26px;border-radius:22px;background:var(--surf);border:2px solid #24384a;font-size:34px;font-weight:600}
+.step i{font-style:normal;flex:none;width:60px;height:60px;border-radius:50%;background:var(--accent);color:#0F1A23;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:700}
+.step span{margin-left:auto;font-size:22px;color:var(--grey);font-weight:500}
+.arrow{position:absolute;left:0;right:0;text-align:center;font-size:40px;color:var(--accent)}
+.tool{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:20px;padding:18px 24px;border-radius:18px;background:var(--surf);border:2px solid #24384a;font-size:28px;font-weight:600}
+.tool code{font-family:'DejaVu Sans Mono',monospace;font-size:28px;color:#9fe8d8}.tool em{margin-left:auto;font-style:normal;font-size:20px;font-weight:700;border-radius:999px;padding:6px 14px;background:#123b5c;color:#7dd3fc}
+.tool.ok em{background:#14532d;color:#86efac}
+.stat{position:absolute;width:465px;border-radius:24px;background:var(--surf);border:2px solid #24384a;padding:26px;text-align:center}
+.stat b{display:block;font-size:110px;color:var(--accent);line-height:1}.stat span{font-size:30px;color:var(--ink);font-weight:600}
+.cta{position:absolute;left:120px;right:120px;text-align:center;font-weight:700;font-size:38px;border-radius:999px;padding:22px}
+.endc{position:absolute;left:80px;right:80px;text-align:center;font-weight:700}
+</style></head><body><div id="stage">
+
+<div class="scene">
+ <div class="pill" data-at="+0.1" style="left:60px;top:120px;border:3px solid var(--accent);color:var(--accent);font-size:30px">ÉPISODE 31/365</div>
+ <div class="big" data-at="0:0" style="top:230px;font-size:50px;color:var(--grey);font-weight:600">Tu publies chaque jour…</div>
+ <div class="big" data-at="0:6" data-fx="slam" style="top:320px;font-size:84px;line-height:1.05">MAIS TES VISITEURS<br><span style="color:var(--accent)">NE SAVENT PAS<br>OÙ CLIQUER ?</span></div>
+ <div class="card" data-at="0:14" style="left:250px;top:700px;width:580px;height:760px"><img src="../captures/home-nuit.png"></div>
+ <div class="lg" data-at="0:24" style="left:60px;top:1100px"><img src="a/lovable.webp"></div>
+ <div class="lg" data-at="0:26" style="left:870px;top:1100px"><img src="a/claude.webp"></div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">Le besoin</div>
+ <div class="title" data-at="1:0">Un seul lien<br><b>pour tout réunir</b></div>
+ <div class="card" data-at="1:2" data-scroll="900" style="left:60px;top:440px;width:560px;height:1100px"><div><img src="../captures/home-nuit.png"></div></div>
+ <div class="tag" data-at="1:7" style="left:660px;top:520px">👤 Profil</div>
+ <div class="tag" data-at="1:9" style="left:660px;top:640px">🎬 Vidéos</div>
+ <div class="tag" data-at="1:11" style="left:660px;top:760px">🧩 Projets</div>
+ <div class="tag o" data-at="1:14" style="left:660px;top:880px">📅 Rendez-vous</div>
+ <div class="big" data-at="1:18" style="left:640px;right:30px;top:1060px;font-size:40px;line-height:1.2">Comme un Linktree…<br><span style="color:var(--accent)">construit pour moi</span></div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">Comment j'ai fait</div>
+ <div class="title" data-at="2:0">De l'idée<br><b>à la mise en ligne</b></div>
+ <div class="step" data-at="2:4" style="top:450px"><i>1</i>Lovable génère la base<span>site, base, admin</span></div>
+ <div class="arrow" data-at="2:11" style="top:575px">↓</div>
+ <div class="step" data-at="2:13" style="top:640px"><i>2</i>Repris dans Claude Code<span>depuis GitHub</span></div>
+ <div class="arrow" data-at="2:21" style="top:765px">↓</div>
+ <div class="step" data-at="2:22" style="top:830px"><i>3</i>Claude modifie et teste<span>tests + build</span></div>
+ <div class="arrow" data-at="2:24" style="top:955px">↓</div>
+ <div class="step" data-at="2:25" style="top:1020px;border-color:var(--accent)"><i>4</i>Lovable met en ligne<span>michael.foodeatup.fr</span></div>
+ <div class="lg" data-at="2:10" style="left:250px;top:1220px"><img src="a/lovable.webp"></div>
+ <div class="lg t" data-at="2:20" style="left:465px;top:1220px">GitHub</div>
+ <div class="lg" data-at="2:17" style="left:680px;top:1220px"><img src="a/claude.webp"></div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">Les formations</div>
+ <div class="title" data-at="3:0">Une formation gratuite<br><b>par vidéo</b></div>
+ <div class="card" data-at="3:4" data-scroll="500" style="left:60px;top:440px;width:470px;height:1000px"><div><img src="../captures/formations.png"></div></div>
+ <div class="card" data-at="3:17" style="left:550px;top:440px;width:470px;height:700px"><img src="../captures/verrou.png" style="margin-top:-640px"></div>
+ <div class="card" data-at="3:26" style="left:640px;top:1000px;width:330px;height:467px;background:#fff"><img src="../captures/pdfn-3.png"></div>
+ <div class="tag o" data-at="3:28" style="left:580px;top:1440px;font-size:26px">Le PDF, avec son accord</div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">Prompts et charte</div>
+ <div class="title" data-at="4:0">Les prompts s'ouvrent<br><b>dans Claude</b></div>
+ <div class="card" data-at="4:1" style="left:60px;top:440px;width:520px;height:900px"><img src="../captures/etapes.png"></div>
+ <div class="card" data-at="4:10" style="left:600px;top:520px;width:420px;height:900px"><img src="../captures/charte.png"></div>
+ <div class="tag" data-at="4:23" style="left:600px;top:1440px;font-size:26px">Bibliothèque de marque</div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">Le MCP du site</div>
+ <div class="title" data-at="5:6">Mes agents IA<br><b>préparent</b>, je valide</div>
+ <div class="tool" data-at="5:13" style="top:450px"><code>creer_video</code><em>brouillon</em></div>
+ <div class="tool" data-at="5:15" style="top:560px"><code>creer_formation</code><em>brouillon</em></div>
+ <div class="tool" data-at="5:18" style="top:670px"><code>creer_offre</code><em>brouillon</em></div>
+ <div class="arrow" data-at="5:22" style="top:790px">↓ je valide</div>
+ <div class="tool ok" data-at="5:26" style="top:870px"><code>publier_video</code><em>en ligne</em></div>
+ <div class="note" data-at="5:13" style="left:60px;top:1010px;background:#14532d;color:#86efac">Noms réels des outils du MCP du site</div>
+ <div class="big" data-at="5:22" data-fx="slam" style="top:1120px;font-size:60px;color:var(--accent)">TOUJOURS EN BROUILLON<br><span style="color:var(--ink);font-size:44px">avant ma validation</span></div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">Le résultat</div>
+ <div class="title" data-at="6:0">Une vitrine<br><b>qui se tient à jour</b></div>
+ <div class="stat" data-at="6:1" style="left:60px;top:450px"><b>31</b><span>vidéos</span></div>
+ <div class="stat" data-at="6:5" style="left:555px;top:450px"><b>30</b><span>formations</span></div>
+ <div class="card" data-at="6:8" style="left:240px;top:760px;width:600px;height:740px"><img src="../captures/home-projets.png"></div>
+</div>
+
+<div class="scene">
+ <div class="chip" data-at="+0.1">À toi de jouer</div>
+ <div class="title" data-at="7:0">Tu veux la même<br><b>pour ton activité ?</b></div>
+ <div class="cta" data-at="7:7" style="top:460px;background:var(--surf);border:3px solid var(--hi)">📘 La formation sur mon site</div>
+ <div class="cta" data-at="7:21" data-fx="slam" style="top:600px;background:var(--accent);color:#0F1A23">📅 Prendre rendez-vous</div>
+ <div class="card" data-at="7:17" style="left:290px;top:750px;width:500px;height:520px"><img src="../captures/rdv.png" style="margin-top:-60px"></div>
+ <div class="big" data-at="7:23" style="top:1300px;font-size:36px;color:var(--grey)">michael.foodeatup.fr · lien en bio</div>
+ <div class="endc" data-at="+7.2" data-fx="slam" style="top:1390px;left:250px;right:250px;background:var(--accent);color:#0F1A23;font-size:52px;border-radius:22px;padding:12px">ÉPISODE 31/365</div>
+ <div class="endc" data-at="+7.6" style="top:1500px;font-size:30px;color:var(--grey)">LOVABLE × CLAUDE CODE × MCP</div>
+</div>
+
+<div id="sub"><span></span></div>
+<div id="thumb">
+ <div class="pill" style="left:60px;top:110px;border:3px solid var(--accent);color:var(--accent);font-size:32px">ÉPISODE 31/365</div>
+ <div class="ring" style="left:390px;top:200px;width:300px;height:300px"><img src="a/michael.jpg"></div>
+ <div class="big" style="top:560px;font-size:110px;line-height:1.02">MON SITE<br><span style="color:var(--accent)">EN UN SEUL LIEN</span></div>
+ <div class="big" style="top:820px;font-size:48px;color:var(--grey);font-weight:600">avec Lovable et Claude</div>
+ <div class="card" style="left:240px;top:930px;width:600px;height:760px"><img src="../captures/home-nuit.png"></div>
+ <div class="lg" style="left:60px;top:1500px"><img src="a/lovable.webp"></div>
+ <div class="lg" style="left:870px;top:1500px"><img src="a/claude.webp"></div>
+</div>
+</div>
+<script src="cfg.js"></script><script src="engine.js"></script></body></html>

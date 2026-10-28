@@ -1,0 +1,7 @@
+@font-face{font-family:P;src:url(a/fonts/Poppins-Regular.ttf);font-weight:400}
+@font-face{font-family:P;src:url(a/fonts/Poppins-Medium.ttf);font-weight:500}
+@font-face{font-family:P;src:url(a/fonts/Poppins-SemiBold.ttf);font-weight:600}
+@font-face{font-family:P;src:url(a/fonts/Poppins-Bold.ttf);font-weight:700}
+:root{--nuit:#0F1A23;--surf:#16242F;--bleu:#007BFF;--orange:#FFA500;--creme:#FCF9E6;--gris:#AEB8C2}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:P,sans-serif;color:#fff;background:var(--nuit);-webkit-print-color-adjust:exact;print-color-adjust:exact}
