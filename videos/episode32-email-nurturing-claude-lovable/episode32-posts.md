@@ -2,27 +2,28 @@
 
 ## LinkedIn
 
-Des personnes laissent leur email sur mon site pour débloquer une formation… et ensuite, je ne leur écrivais jamais.
+Des gens laissent leur email sur mon site pour recevoir une formation… et ensuite, je ne leur écrivais jamais.
 
-Épisode 32/365 : j'ai mis en place l'email nurturing avec Claude, Lovable et le MCP de mon site.
+Alors j'ai décidé de garder le lien avec eux, par email, avec Claude et Lovable.
 
-- Deux consentements séparés : débloquer une formation ≠ s'abonner à mon actualité (case à part, jamais cochée d'office)
-- 46 visuels d'email dessinés par Lovable en HTML/CSS, exportés en images
-- Un email = un objectif = un bouton
-- Claude prépare les campagnes et les publications par MCP… mais aucun outil n'envoie ni ne publie. Je valide.
+Première règle : demander la permission. Recevoir une formation, ce n'est pas accepter de recevoir mes nouvelles : il y a une case à part, que la personne coche elle-même.
 
-Où j'en suis, sans enjoliver : 8 modèles en brouillon, l'envoi n'est pas encore branché.
+Lovable a dessiné mes emails aux couleurs de chacun de mes logiciels. Chaque email a un seul but et un seul bouton.
 
-La formation pas à pas, avec les 7 prompts : lien en commentaire.
+Claude prépare les emails et les publications à ma place, mais il n'envoie rien et ne publie rien. Il prépare, je valide.
 
-#IA #Claude #Lovable #MCP #EmailMarketing
+Où j'en suis, sans enjoliver : aucun email n'est encore parti, il me reste à brancher l'envoi.
+
+Épisode 32/365
+
+#IA #Claude #Lovable #Email #Entrepreneur
 
 ## Instagram / TikTok
 
 Mon site sait enfin écrire à mes contacts ✉️ Claude prépare, je valide. Épisode 32/365.
-#ia #claude #lovable #emailmarketing #entrepreneur
+#ia #claude #lovable #email #entrepreneur
 
 ## YouTube (Shorts)
 
-Titre : J'ai appris à mon site à écrire à mes contacts (Claude + Lovable + MCP) #Shorts
-Description : Épisode 32/365 de « Mon quotidien d'entrepreneur avec l'IA ». Consentements séparés, emails dessinés en HTML/CSS par Lovable, et un MCP pour que Claude prépare tout en brouillon. Formation gratuite : michael.foodeatup.fr/formations/email-nurturing-avec-claude-et-lovable (à publier avant diffusion).
+Titre : J'ai appris à mon site à garder le lien avec mes contacts #Shorts
+Description : Épisode 32/365. Demander la permission, un email = un bouton, et Claude qui prépare tout sans rien envoyer seul. Formation gratuite : michael.foodeatup.fr

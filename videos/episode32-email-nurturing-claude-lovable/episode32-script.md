@@ -1,6 +1,6 @@
 # Épisode 32/365 : « J'ai appris à mon site à écrire à mes contacts »
 
-89 s (+ short 46 s) · 9:16 · 1080 × 1920 · 30 i/s · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, eleven_multilingual_v2, une prise de 56,7 s, ralentie à 0,9 → 63 s) · narration à la première personne · musique `videos/planit-academy/assets/audio/musique-produit.mp3` à 30 % avec ducking, -14 LUFS visé.
+89 s (+ short 46 s) · 9:16 · 1080 × 1920 · 30 i/s · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, eleven_v4, une prise de 56,7 s, ralentie à 0,9 → 63 s) · narration à la première personne · musique `videos/planit-academy/assets/audio/musique-produit.mp3` à 30 % avec ducking, -14 LUFS visé.
 
 La voix fait 56,7 s : la vidéo a été montée en 83 s (2,8 s de respiration par scène) plutôt qu'en 120 s, pour éviter de longs passages sans voix.
 
@@ -8,21 +8,23 @@ Le texte d'origine était dans une session qui n'est plus lisible : le script a 
 
 ## Narration
 
-Aujourd'hui, je me suis rendu compte d'un problème : des personnes laissent leur email sur mon site pour débloquer une formation… et ensuite, je ne leur écris jamais.
+> **Refait le 28/10** à la demande de Michael : même voix et même modèle que les épisodes 1 à 30 (Noé, `eleven_v4`, débit naturel), langage simple sans terme technique ni chiffre, textes techniques retirés de l'écran. Nouvelle durée : 69s. Les temps du storyboard ci-dessous sont ceux de la version précédente ; l'ordre des scènes est inchangé.
 
-Alors j'ai décidé de mettre en place l'email nurturing, avec Claude, Lovable et le MCP de mon site.
+Aujourd'hui, je me suis rendu compte d'un problème : des gens laissent leur email sur mon site pour recevoir une formation… et ensuite, je ne leur écris jamais.
 
-Première règle : séparer les consentements. Débloquer une formation, ce n'est pas s'abonner à mon actualité. Il y a une case à part, jamais cochée d'office.
+Alors j'ai décidé de garder le lien avec eux, par email, avec l'aide de Claude et de Lovable.
 
-Ensuite, j'ai demandé à Lovable de dessiner mes emails en HTML et en CSS, puis de les exporter en images. Quarante-six visuels, aux couleurs de chacun de mes logiciels.
+Première règle : demander la permission. Recevoir une formation, ce n'est pas accepter de recevoir mes nouvelles. Il y a une case à part, que la personne coche elle-même.
 
-Chaque email a un seul objectif et un seul bouton : commencer l'étape un, découvrir une ressource, tester un logiciel, ou prendre rendez-vous.
+Ensuite, Lovable a dessiné mes emails, aux couleurs de chacun de mes logiciels.
 
-Et j'ai donné des outils à Claude, par MCP : préparer la campagne d'un nouvel épisode, choisir les images, préparer les publications. Mais aucun outil n'envoie, ni ne publie. Claude prépare, je valide.
+Chaque email a un seul but et un seul bouton : commencer la formation, découvrir une ressource, tester un logiciel, ou prendre rendez-vous.
 
-Désormais, chaque vidéo déclenche une chaîne : sa formation, son PDF, son lead magnet, sa campagne et ses publications. Et un outil me dit ce qui manque, dans l'ordre.
+Et Claude peut préparer mes emails et mes publications à ma place. Mais il n'envoie rien, et il ne publie rien. Il prépare, je valide.
 
-Pour l'instant, rien n'est encore parti : il me reste à brancher l'envoi. Mais chaque formulaire de mon site peut maintenant devenir une vraie relation.
+Désormais, chaque vidéo a sa suite : sa formation, son guide à télécharger, son email et ses publications. Et je vois tout de suite ce qu'il manque.
+
+Pour l'instant, aucun email n'est encore parti : il me reste à brancher l'envoi. Mais chaque personne qui laisse son email peut maintenant devenir une vraie relation.
 
 ## Storyboard
 

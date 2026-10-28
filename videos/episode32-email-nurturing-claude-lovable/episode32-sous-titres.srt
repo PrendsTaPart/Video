@@ -1,235 +1,199 @@
 1
-00:00:00,350 --> 00:00:00,880
+00:00:00,350 --> 00:00:01,070
 Aujourd'hui
 
 2
-00:00:00,880 --> 00:00:01,640
+00:00:01,070 --> 00:00:01,830
 je me suis rendu compte
 
 3
-00:00:01,640 --> 00:00:03,220
-d'un problème des personnes laissent
+00:00:01,830 --> 00:00:03,470
+d'un problème des gens laissent
 
 4
-00:00:03,220 --> 00:00:04,350
+00:00:03,470 --> 00:00:04,470
 leur email sur mon site
 
 5
-00:00:04,350 --> 00:00:05,880
-pour débloquer une formation…
+00:00:04,470 --> 00:00:06,190
+pour recevoir une formation…
 
 6
-00:00:05,880 --> 00:00:06,510
+00:00:06,190 --> 00:00:06,550
 et ensuite
 
 7
-00:00:06,510 --> 00:00:07,720
+00:00:06,550 --> 00:00:08,120
 je ne leur écris jamais.
 
 8
-00:00:10,520 --> 00:00:11,540
-Alors j'ai décidé de mettre
+00:00:09,720 --> 00:00:10,820
+Alors j'ai décidé de garder
 
 9
-00:00:11,540 --> 00:00:12,850
-en place l'email nurturing
+00:00:10,820 --> 00:00:11,840
+le lien avec eux
 
 10
-00:00:12,850 --> 00:00:13,810
-avec Claude
+00:00:11,840 --> 00:00:12,240
+par email
 
 11
-00:00:13,810 --> 00:00:15,470
-Lovable et le MCP de
+00:00:12,240 --> 00:00:13,640
+avec l'aide de Claude et
 
 12
-00:00:15,470 --> 00:00:16,200
-mon site.
+00:00:13,640 --> 00:00:14,410
+de Lovable.
 
 13
-00:00:19,010 --> 00:00:21,120
-Première règle séparer les consentements.
+00:00:16,010 --> 00:00:18,430
+Première règle demander la permission.
 
 14
-00:00:21,120 --> 00:00:22,280
-Débloquer une formation
+00:00:18,430 --> 00:00:19,230
+Recevoir une formation
 
 15
-00:00:22,280 --> 00:00:23,250
-ce n'est pas s'abonner à
+00:00:19,230 --> 00:00:20,410
+ce n'est pas accepter de
 
 16
-00:00:23,250 --> 00:00:24,010
-mon actualité.
+00:00:20,410 --> 00:00:21,490
+recevoir mes nouvelles.
 
 17
-00:00:24,010 --> 00:00:24,560
+00:00:21,490 --> 00:00:22,010
 Il y a une case
 
 18
-00:00:24,560 --> 00:00:25,250
+00:00:22,010 --> 00:00:22,330
 à part
 
 19
-00:00:25,250 --> 00:00:26,670
-jamais cochée d'office.
+00:00:22,330 --> 00:00:24,140
+que la personne coche elle-même.
 
 20
-00:00:29,470 --> 00:00:30,000
+00:00:25,740 --> 00:00:26,000
 Ensuite
 
 21
-00:00:30,000 --> 00:00:31,160
-j'ai demandé à Lovable de
+00:00:26,000 --> 00:00:27,820
+Lovable a dessiné mes emails
 
 22
-00:00:31,160 --> 00:00:33,140
-dessiner mes emails en HTML
-
-23
-00:00:33,140 --> 00:00:35,140
-et en CSS
-
-24
-00:00:35,140 --> 00:00:36,160
-puis de les exporter en
-
-25
-00:00:36,160 --> 00:00:36,450
-images.
-
-26
-00:00:36,450 --> 00:00:37,630
-Quarante-six visuels
-
-27
-00:00:37,630 --> 00:00:38,740
+00:00:27,820 --> 00:00:28,980
 aux couleurs de chacun de
 
-28
-00:00:38,740 --> 00:00:39,660
+23
+00:00:28,980 --> 00:00:29,890
 mes logiciels.
 
-29
-00:00:42,460 --> 00:00:43,550
+24
+00:00:31,490 --> 00:00:32,710
 Chaque email a un seul
 
-30
-00:00:43,550 --> 00:00:44,950
-objectif et un seul bouton
+25
+00:00:32,710 --> 00:00:33,950
+but et un seul bouton
 
-31
-00:00:44,950 --> 00:00:46,150
-commencer l'étape un
+26
+00:00:33,950 --> 00:00:35,410
+commencer la formation
 
-32
-00:00:46,150 --> 00:00:47,390
+27
+00:00:35,410 --> 00:00:36,650
 découvrir une ressource
 
-33
-00:00:47,390 --> 00:00:48,460
+28
+00:00:36,650 --> 00:00:37,590
 tester un logiciel
 
-34
-00:00:48,460 --> 00:00:49,900
+29
+00:00:37,590 --> 00:00:39,080
 ou prendre rendez-vous.
 
+30
+00:00:40,680 --> 00:00:41,780
+Et Claude peut préparer mes
+
+31
+00:00:41,780 --> 00:00:43,220
+emails et mes publications à
+
+32
+00:00:43,220 --> 00:00:43,840
+ma place.
+
+33
+00:00:43,840 --> 00:00:44,720
+Mais il n'envoie rien
+
+34
+00:00:44,720 --> 00:00:46,020
+et il ne publie rien.
+
 35
-00:00:52,700 --> 00:00:53,590
-Et j'ai donné des outils
+00:00:46,020 --> 00:00:46,860
+Il prépare
 
 36
-00:00:53,590 --> 00:00:54,030
-à Claude
-
-37
-00:00:54,030 --> 00:00:56,010
-par MCP préparer la campagne
-
-38
-00:00:56,010 --> 00:00:57,080
-d'un nouvel épisode
-
-39
-00:00:57,080 --> 00:00:58,190
-choisir les images
-
-40
-00:00:58,190 --> 00:00:59,460
-préparer les publications.
-
-41
-00:00:59,460 --> 00:01:00,660
-Mais aucun outil n'envoie
-
-42
-00:01:00,660 --> 00:01:01,570
-ni ne publie.
-
-43
-00:01:01,570 --> 00:01:02,520
-Claude prépare
-
-44
-00:01:02,520 --> 00:01:03,430
+00:00:46,860 --> 00:00:47,790
 je valide.
 
-45
-00:01:06,230 --> 00:01:06,740
+37
+00:00:49,390 --> 00:00:49,950
 Désormais
 
-46
-00:01:06,740 --> 00:01:08,340
-chaque vidéo déclenche une chaîne
+38
+00:00:49,950 --> 00:00:51,390
+chaque vidéo a sa suite
 
-47
-00:01:08,340 --> 00:01:09,160
+39
+00:00:51,390 --> 00:00:52,290
 sa formation
 
-48
-00:01:09,160 --> 00:01:10,140
-son PDF
+40
+00:00:52,290 --> 00:00:53,470
+son guide à télécharger
 
-49
-00:01:10,140 --> 00:01:11,030
-son lead magnet
+41
+00:00:53,470 --> 00:00:55,130
+son email et ses publications.
 
-50
-00:01:11,030 --> 00:01:12,670
-sa campagne et ses publications.
+42
+00:00:55,130 --> 00:00:55,790
+Et je vois tout de
 
-51
-00:01:12,670 --> 00:01:13,430
-Et un outil me dit
+43
+00:00:55,790 --> 00:00:56,860
+suite ce qu'il manque.
 
-52
-00:01:13,430 --> 00:01:14,120
-ce qui manque
-
-53
-00:01:14,120 --> 00:01:14,910
-dans l'ordre.
-
-54
-00:01:17,710 --> 00:01:18,400
+44
+00:00:58,460 --> 00:00:59,140
 Pour l'instant
 
-55
-00:01:18,400 --> 00:01:19,640
-rien n'est encore parti il
+45
+00:00:59,140 --> 00:01:00,740
+aucun email n'est encore parti
 
-56
-00:01:19,640 --> 00:01:20,890
-me reste à brancher l'envoi.
+46
+00:01:00,740 --> 00:01:01,620
+il me reste à brancher
 
-57
-00:01:20,890 --> 00:01:21,980
-Mais chaque formulaire de mon
+47
+00:01:01,620 --> 00:01:02,120
+l'envoi.
 
-58
-00:01:21,980 --> 00:01:23,400
-site peut maintenant devenir une
+48
+00:01:02,120 --> 00:01:03,240
+Mais chaque personne qui laisse
 
-59
-00:01:23,400 --> 00:01:24,280
-vraie relation.
+49
+00:01:03,240 --> 00:01:04,600
+son email peut maintenant devenir
+
+50
+00:01:04,600 --> 00:01:05,830
+une vraie relation.

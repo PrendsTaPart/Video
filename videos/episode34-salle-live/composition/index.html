@@ -33,6 +33,7 @@
 .end{position:absolute;left:80px;right:80px;text-align:center;font-weight:700;border-radius:22px;padding:16px}
 .chk{position:absolute;left:60px;width:960px;font-size:26px;font-weight:600;padding:10px 20px;border-radius:14px;background:var(--surf);border:2px solid #2c4a3a}
 .chk b{color:var(--g)}.chk s{color:var(--grey);text-decoration:none}
+#p1,#d1,#d3{display:none!important}
 </style></head><body>
 <div id="stage">
  <div class="scene" id="s1">
@@ -52,23 +53,23 @@
   <div class="title" id="t0" style="font-size:58px">Chaque table a <b>sa durée</b></div>
   <div class="shot" id="t1" style="left:90px;top:360px;width:900px;height:864px"><div class="lay" id="t1a"><img src="a/plan1.jpg"></div><div class="lay" id="t1b"><img src="a/plan4.jpg"></div><div class="lay" id="t1c"><img src="a/plan7.jpg"></div></div>
   <div class="shot" id="t2" style="left:90px;top:1260px;width:900px;height:360px"><img id="t2i" src="a/events.jpg"></div>
-  <div class="note" id="t3" style="left:90px;top:1650px">Chiffres de la démo (4p · 34′ = 4 personnes depuis 34 min) · pas des mesures d'un restaurant</div>
+  <div class="note" id="t3" style="left:90px;top:1650px">Chiffres de démonstration · pas ceux d'un vrai restaurant</div>
  </div>
  <div class="scene" id="s4"><div class="chip">Comment ça fonctionne</div>
-  <div class="src" id="c0" style="top:240px"><div class="ic">📷</div><div><b>Caméra</b><span>analyse locale → événements anonymes</span></div><em class="wip">imaginé</em></div>
-  <div class="src" id="c1" style="top:400px"><div class="ic">▦</div><div><b>QR codes</b><span>interactions à la table, commande</span></div><em class="man">codé</em></div>
-  <div class="src" id="c2" style="top:560px"><div class="ic w"><img src="a/foodeatup.webp"></div><div><b>Caisse FoodEatUp</b><span>commandes, paiements, réservations</span></div><em class="wip">connexion codée · synchro à faire</em></div>
+  <div class="src" id="c0" style="top:240px"><div class="ic">📷</div><div><b>Caméra</b><span>analyse sur place, sans garder d'image</span></div><em class="wip">imaginé</em></div>
+  <div class="src" id="c1" style="top:400px"><div class="ic">▦</div><div><b>QR codes</b><span>interactions à la table, commande</span></div><em class="man">prêt</em></div>
+  <div class="src" id="c2" style="top:560px"><div class="ic w"><img src="a/foodeatup.webp"></div><div><b>Caisse FoodEatUp</b><span>commandes, paiements, réservations</span></div><em class="wip">à brancher</em></div>
   <div class="arrow" id="c3" style="top:710px">↓ ↓ ↓</div>
   <div class="hub" id="c4" style="top:780px">Salle Live</div>
   <div class="shot" id="c5" style="left:60px;top:940px;width:960px;height:183px"><img src="a/comment.jpg"></div>
-  <div class="note ok" id="c6" style="left:60px;top:1160px;border-color:#22c55e">« 0 image enregistrée – 0 image transmise » (démo)</div>
+  <div class="note ok" id="c6" style="left:60px;top:1160px;border-color:#22c55e">« Aucune image enregistrée ni envoyée » (démo)</div>
   <div class="note" id="c7" style="left:60px;top:1230px">Aucune caméra installée à ce jour · aucune image de personne</div>
  </div>
  <div class="scene" id="s5"><div class="chip">Alertes et pilotage</div>
   <div class="title" id="a0" style="font-size:58px">Aider l'équipe <b>à agir</b></div>
   <div class="shot" id="a1" style="left:140px;top:350px;width:800px;height:593px"><img src="a/s3d6.jpg"></div>
   <div id="a2"></div>
-  <div class="note" id="a3" style="left:60px;top:1590px">Règles réelles du code (src/lib/alerts.ts) · pas encore de données réelles</div>
+  <div class="note" id="a3" style="left:60px;top:1590px">Alertes prévues · pas encore de vraies données</div>
  </div>
  <div class="scene" id="s6"><div class="chip">Planning IA</div>
   <div class="title" id="p0" style="font-size:58px">Anticiper <b>le service</b></div>
@@ -77,7 +78,7 @@
 <span class="k">export type</span> Slot = {
   slot_start, expected_covers,
   confidence_low, confidence_high };</pre></div>
-  <div class="quote" id="p2" style="top:740px"><b>PAGE PLANNING IA · TEXTE AFFICHÉ SANS HISTORIQUE</b>« Aucune prévision pour l'instant. […] Elle s'appuie sur l'historique réel des 8 dernières semaines (hors simulations). »</div>
+  <div class="quote" id="p2" style="top:740px"><b>PLANNING IA · CE QUI S'AFFICHE AUJOURD'HUI</b>« Aucune prévision pour l'instant : elle viendra avec l'historique réel du restaurant. »</div>
   <div class="chk" id="p3" style="top:1010px">📈 Affluence prévue par créneau</div>
   <div class="chk" id="p4" style="top:1090px">👥 Besoin en personnel recommandé</div>
   <div class="chk" id="p5" style="top:1170px">🔔 Alerte « affluence supérieure à la prévision »</div>
@@ -95,7 +96,7 @@
 <span class="m">───────────────────────────────────────</span>
 <span class="g">14 246</span> lignes TypeScript · <span class="g">14</span> migrations</pre></div>
   <div class="chk" id="d4" style="top:900px"><b>✓</b> Démo 3D publique · plan · alertes · QR</div>
-  <div class="chk" id="d5" style="top:980px"><b>✓</b> Connexion OAuth FoodEatUp (codée)</div>
+  <div class="chk" id="d5" style="top:980px"><b>✓</b> Connexion à FoodEatUp (prête)</div>
   <div class="chk" id="d6" style="top:1060px"><s>☐</s> Synchro du plan, caisse en direct, réservations</div>
   <div class="chk" id="d7" style="top:1140px"><s>☐</s> Premier boîtier caméra installé</div>
   <div class="note" id="d8" style="left:60px;top:1250px">Prototype en cours de validation client</div>
@@ -118,4 +119,21 @@
   <div class="badge" style="left:390px;top:1510px;font-size:38px">ÉPISODE 34</div>
  </div>
 </div>
-<script src="script.js"></script></body></html>
+<script src="script.js"></script>
+<script src="cfg.js"></script>
+<div id="sub2" style="position:absolute;left:60px;right:60px;top:1600px;text-align:center;z-index:90;display:none"><span style="display:inline;font-family:Poppins,sans-serif;font-weight:600;font-size:46px;line-height:1.45;padding:8px 20px;border-radius:12px;color:#FCF9E6;background:#0F1A23;-webkit-box-decoration-break:clone;box-decoration-break:clone"></span></div>
+<script>
+// Temps recalé sur la nouvelle voix : la scène d'origine est rejouée au temps « ancien » correspondant.
+(function () {
+  const C = window.CFG, N = C.warp.new, O = C.warp.old, base = window.render, sub = document.getElementById('sub2');
+  const old = t => { for (let k = 1; k < N.length; k++) if (t <= N[k]) return O[k - 1] + (O[k] - O[k - 1]) * ((t - N[k - 1]) / Math.max(1e-6, N[k] - N[k - 1])); return O[O.length - 1]; };
+  window.render = t => {
+    base(Math.min(old(t), O[O.length - 1] - 0.001));
+    const c = C.cues.find(c => t >= c[0] && t < c[1]);
+    sub.style.display = c ? 'block' : 'none';
+    if (c) sub.firstElementChild.textContent = c[2];
+  };
+  const th = window.thumb; window.thumb = () => { th(); sub.style.display = 'none'; };
+})();
+</script>
+</body></html>

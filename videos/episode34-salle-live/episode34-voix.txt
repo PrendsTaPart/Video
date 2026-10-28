@@ -1,0 +1,17 @@
+Voix : Noé (ElevenLabs 7pDdnNI6PhXmAp0pXFZm), eleven_v4, débit naturel (flow 8KJftR7aIfSY0TXuyRcV, prise nteN82WGhw4zY8Zyj6Pz).
+
+Aujourd'hui, un restaurateur m'a posé une question : comment savoir combien de temps ses clients restent à table, pour mieux remplir sa salle ?
+
+Et j'ai eu une idée : un plan de salle intelligent, qui montre en direct les tables libres, les tables occupées, et celles à débarrasser.
+
+Le plus intéressant, c'est de savoir depuis combien de temps chaque table est occupée. Le restaurateur comprend mieux son service, et voit où les clients attendent.
+
+J'ai imaginé des caméras qui analysent la salle sur place, des QR codes sur les tables, et la caisse FoodEatUp. Le but : savoir ce qui se passe à chaque table, sans jamais suivre les clients un par un.
+
+Et il ne s'agit pas seulement de couleurs. Il s'agit d'aider l'équipe à agir : une table à débarrasser, un client qui attend l'addition, un coup de rush.
+
+Je suis allé plus loin : avec l'historique et les réservations, l'application aide à prévoir le monde qui va venir, et donc le personnel dont on aura besoin.
+
+Pour passer de l'idée à l'application, j'ai utilisé Lovable et les outils FoodEatUp. En quelques essais, j'avais un plan de salle interactif et une démonstration.
+
+Et demain, je présente tout ça au restaurateur. La vraie question : est-ce que ça répond à son besoin ? Je vous montrerai la suite.

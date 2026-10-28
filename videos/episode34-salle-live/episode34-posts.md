@@ -8,7 +8,7 @@ Un restaurateur m'a posé une question simple :
 Plutôt qu'un tableau Excel, j'ai eu une idée : un plan de salle qui vit en direct.
 🟢 libre · 🔴 occupée · 🟠 à débarrasser
 
-J'ai construit un premier prototype avec Lovable et GitHub, pensé pour se brancher sur FoodEatUp :
+J'ai construit un premier prototype avec Lovable, pensé pour se brancher sur FoodEatUp :
 → une démo 3D publique où l'on voit chaque table changer d'état ;
 → la durée passée à chaque table ;
 → des alertes (table à débarrasser, attente de l'addition, rush…) ;
@@ -29,7 +29,7 @@ Une question de restaurateur → une idée de produit 💡
 
 « Combien de temps mes clients restent à table ? »
 
-J'ai construit un plan de salle intelligent 🟢🔴🟠 avec l'IA (Lovable + GitHub), pensé pour FoodEatUp.
+J'ai construit un plan de salle intelligent 🟢🔴🟠 avec l'IA (Lovable), pensé pour FoodEatUp.
 
 ⚠️ Prototype : démo simulée, pas encore installé en restaurant.
 
@@ -45,7 +45,7 @@ Demain : démo devant le client. La suite bientôt 👀
 **Description** :
 Un restaurateur m'a demandé comment mesurer le temps passé à table et améliorer le roulement de sa salle. J'en ai fait une idée de produit : Salle Live, un plan de salle en direct (libre, occupée, à débarrasser), avec durées, alertes et prévisions.
 
-Prototype construit avec Lovable et GitHub, pensé pour FoodEatUp. La démo est simulée : aucune caméra installée, synchronisation caisse à venir. Présentation au client le 28 octobre 2026.
+Prototype construit avec Lovable, pensé pour FoodEatUp. La démo est simulée : aucune caméra installée, synchronisation caisse à venir. Présentation au client le 28 octobre 2026.
 
 Démo publique : https://camera.foodeatup.fr/demo
 Épisode 34/365 · https://michael.foodeatup.fr

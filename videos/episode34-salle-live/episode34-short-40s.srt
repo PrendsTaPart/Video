@@ -1,0 +1,95 @@
+1
+00:00:00,400 --> 00:00:01,100
+Aujourd'hui
+
+2
+00:00:01,100 --> 00:00:02,180
+un restaurateur m'a posé une
+
+3
+00:00:02,180 --> 00:00:03,920
+question comment savoir combien de
+
+4
+00:00:03,920 --> 00:00:04,920
+temps ses clients restent à
+
+5
+00:00:04,920 --> 00:00:05,160
+table
+
+6
+00:00:05,160 --> 00:00:06,750
+pour mieux remplir sa salle
+
+7
+00:00:09,130 --> 00:00:10,170
+Et j'ai eu une idée
+
+8
+00:00:10,170 --> 00:00:11,490
+un plan de salle intelligent
+
+9
+00:00:11,490 --> 00:00:12,910
+qui montre en direct les
+
+10
+00:00:12,910 --> 00:00:13,670
+tables libres
+
+11
+00:00:13,670 --> 00:00:14,470
+les tables occupées
+
+12
+00:00:14,470 --> 00:00:15,920
+et celles à débarrasser.
+
+13
+00:00:19,270 --> 00:00:19,950
+Et il ne s'agit pas
+
+14
+00:00:19,950 --> 00:00:20,990
+seulement de couleurs.
+
+15
+00:00:20,990 --> 00:00:22,210
+Il s'agit d'aider l'équipe à
+
+16
+00:00:22,210 --> 00:00:24,110
+agir une table à débarrasser
+
+17
+00:00:24,110 --> 00:00:25,470
+un client qui attend l'addition
+
+18
+00:00:25,470 --> 00:00:26,360
+un coup de rush.
+
+19
+00:00:30,260 --> 00:00:30,800
+Et demain
+
+20
+00:00:30,800 --> 00:00:31,700
+je présente tout ça au
+
+21
+00:00:31,700 --> 00:00:32,160
+restaurateur.
+
+22
+00:00:32,160 --> 00:00:33,760
+La vraie question est-ce que
+
+23
+00:00:33,760 --> 00:00:35,000
+ça répond à son besoin
+
+24
+00:00:35,000 --> 00:00:36,230
+Je vous montrerai la suite.

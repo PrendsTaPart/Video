@@ -1,0 +1,183 @@
+1
+00:00:00,350 --> 00:00:00,810
+Dimanche
+
+2
+00:00:00,810 --> 00:00:02,050
+je vous montrais mes applications
+
+3
+00:00:02,050 --> 00:00:02,850
+pour les restaurants.
+
+4
+00:00:02,850 --> 00:00:04,170
+Et je vous disais prochaine
+
+5
+00:00:04,170 --> 00:00:04,710
+étape
+
+6
+00:00:04,710 --> 00:00:05,780
+Google Play.
+
+7
+00:00:06,680 --> 00:00:07,220
+Eh bien
+
+8
+00:00:07,220 --> 00:00:09,480
+c'est fait Mon application HACCP
+
+9
+00:00:09,480 --> 00:00:10,930
+est sur Google Play.
+
+10
+00:00:11,830 --> 00:00:12,530
+Et ce n'est pas moi
+
+11
+00:00:12,530 --> 00:00:13,390
+qui l'ai mise en ligne.
+
+12
+00:00:13,390 --> 00:00:15,060
+C'est mon assistant IA.
+
+13
+00:00:15,960 --> 00:00:16,620
+Avec Lovable
+
+14
+00:00:16,620 --> 00:00:17,660
+je lui ai fabriqué un
+
+15
+00:00:17,660 --> 00:00:18,660
+outil qui lui permet de
+
+16
+00:00:18,660 --> 00:00:20,630
+parler directement à Google Play.
+
+17
+00:00:21,530 --> 00:00:23,010
+Je lui demande simplement mets
+
+18
+00:00:23,010 --> 00:00:24,810
+mon application HACCP en ligne
+
+19
+00:00:24,810 --> 00:00:26,000
+pour mes testeurs.
+
+20
+00:00:26,900 --> 00:00:28,560
+Il prépare tout l'application
+
+21
+00:00:28,560 --> 00:00:29,400
+la description
+
+22
+00:00:29,400 --> 00:00:30,120
+les images.
+
+23
+00:00:30,120 --> 00:00:31,060
+Puis il fait un essai
+
+24
+00:00:31,060 --> 00:00:32,160
+pour vérifier que tout est
+
+25
+00:00:32,160 --> 00:00:32,540
+bon…
+
+26
+00:00:32,540 --> 00:00:33,770
+sans rien publier.
+
+27
+00:00:34,670 --> 00:00:36,190
+Il me montre le résultat.
+
+28
+00:00:36,190 --> 00:00:37,030
+Je dis oui.
+
+29
+00:00:37,030 --> 00:00:38,220
+Et l'application part.
+
+30
+00:00:39,120 --> 00:00:40,240
+Tout est noté ce qu'il
+
+31
+00:00:40,240 --> 00:00:40,560
+a fait
+
+32
+00:00:40,560 --> 00:00:41,320
+et quand.
+
+33
+00:00:41,320 --> 00:00:42,140
+Et rien ne se passe
+
+34
+00:00:42,140 --> 00:00:43,030
+sans mon accord.
+
+35
+00:00:43,930 --> 00:00:44,370
+Pour l'instant
+
+36
+00:00:44,370 --> 00:00:45,570
+l'appli est réservée à un
+
+37
+00:00:45,570 --> 00:00:46,830
+petit groupe de testeurs.
+
+38
+00:00:46,830 --> 00:00:47,650
+C'est la règle de Google
+
+39
+00:00:47,650 --> 00:00:48,630
+avant de l'ouvrir à tout
+
+40
+00:00:48,630 --> 00:00:49,200
+le monde.
+
+41
+00:00:50,100 --> 00:00:51,280
+Les prochaines sur la liste
+
+42
+00:00:51,280 --> 00:00:52,360
+ma caisse et ma borne
+
+43
+00:00:52,360 --> 00:00:53,270
+de fidélité.
+
+44
+00:00:54,170 --> 00:00:55,030
+Tu veux un assistant comme
+
+45
+00:00:55,030 --> 00:00:56,310
+ça pour tes applis Écris
+
+46
+00:00:56,310 --> 00:00:57,780
+STORE en commentaire.

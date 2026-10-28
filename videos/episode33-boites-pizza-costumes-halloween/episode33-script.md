@@ -3,25 +3,25 @@
 Format : 120 s, 9:16, 1080 × 1920. Voix : Noé (ElevenLabs, voix de synthèse). Narration à la première personne (Michael).
 Client : Chez Jello (camion pizza, Pays Basque). Graphiste : Zied. Source des visuels : fichier Figma `KnyPByE4plfFpgrDyiKseK`, page Halloween.
 
-## Voix off (texte enregistré, 76 s)
+## Narration
 
-Aujourd'hui, j'ai demandé à Zied, mon graphiste, de travailler sur un projet un peu particulier pour l'un de mes clients : transformer des boîtes à pizza en costumes d'Halloween.
+> **Refait le 28/10** à la demande de Michael : même voix et même modèle que les épisodes 1 à 30 (Noé, `eleven_v4`, débit naturel), langage simple sans terme technique ni chiffre, textes techniques retirés de l'écran. Nouvelle durée : 83s. Les temps du storyboard ci-dessous sont ceux de la version précédente ; l'ordre des scènes est inchangé.
 
-L'idée est simple. Au lieu de jeter la boîte après avoir mangé sa pizza, le client peut utiliser son couvercle pour se déguiser, prendre une photo et s'amuser avec ses amis.
+Aujourd'hui, j'ai confié à Zied, mon graphiste, un projet un peu fou pour l'un de mes clients : transformer des boîtes à pizza en costumes d'Halloween.
 
-J'ai donc demandé à Zied de développer toute une collection sur Figma, avec des personnages assortis, des univers graphiques différents et un concept spécialement pensé pour Halloween. L'IA l'a aidé à produire les décors et les costumes. Lui a fait la direction, la mise en page et la cohérence.
+L'idée est simple. Au lieu de jeter la boîte après la pizza, on utilise le couvercle pour se déguiser, prendre une photo et s'amuser entre amis.
 
-Et voilà le résultat. 20 designs, soit 10 duos Halloween. Des vampires, des sorciers, des squelettes, des citrouilles, des zombies… et même un laboratoire hanté.
+Zied a imaginé toute une collection, avec des personnages qui vont par deux. L'IA l'a aidé à dessiner les décors et les costumes. Lui a fait la direction artistique et la mise en page.
 
-Chaque boîte reprend l'univers de Chez Jello, avec une découpe pour la tête, le nom du duo et un message pensé pour donner envie de jouer à deux.
+Et voilà le résultat : toute une collection de duos. Des vampires, des sorciers, des squelettes, des citrouilles, des zombies… et même un laboratoire hanté.
 
-Ce que j'aime dans ce projet, c'est qu'on ne travaille pas seulement sur un emballage. On essaie de créer une expérience. Les clients peuvent se prendre en photo, partager leurs duos sur les réseaux et retrouver la pizzeria grâce au QR code.
+Chaque boîte garde l'univers de Chez Jello, avec une découpe pour la tête, le nom du duo et un petit message pour jouer à deux.
 
-C'est aussi ça, mon quotidien d'entrepreneur : imaginer des concepts, confier les missions aux bonnes personnes et utiliser les outils IA pour aller plus vite sans perdre la créativité de l'équipe.
+Ce que j'aime dans ce projet, c'est qu'on ne fait pas qu'un emballage. On crée un moment. Les clients se prennent en photo, partagent leur duo, et retrouvent la pizzeria.
 
-Maintenant, il reste à valider les découpes et l'impression avec le client. Mais j'ai déjà hâte de voir ces boîtes entre les mains des clients de Chez Jello. Une simple boîte à pizza peut devenir bien plus qu'un emballage.
+C'est ça, mon quotidien d'entrepreneur : imaginer des idées, les confier aux bonnes personnes, et utiliser l'IA pour aller plus vite, sans perdre la créativité de l'équipe.
 
-**À l'écran (non lu)** : « Avec une bonne idée et une équipe créative, elle peut devenir une expérience que les clients auront envie de partager. »
+Maintenant, il reste à valider les découpes et l'impression avec le client. Mais j'ai déjà hâte de voir ces boîtes entre les mains des clients de Chez Jello.
 
 ## Storyboard (voir `episode33-storyboard.jpg`)
 

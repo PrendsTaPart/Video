@@ -1,2 +1,17 @@
-Voix : Noé (ElevenLabs 7pDdnNI6PhXmAp0pXFZm), eleven_multilingual_v2. Durée : 76,24 s. Transcription mot à mot (faster-whisper) dans composition/config.json (sections).
-Texte : voir episode33-script.md, section « Voix off ».
+Voix : Noé (ElevenLabs 7pDdnNI6PhXmAp0pXFZm), eleven_v4, débit naturel (flow QyZcebXh6S5KURuhRuaf, prise nHH05g8VTMHWpo7o7jNp).
+
+Aujourd'hui, j'ai confié à Zied, mon graphiste, un projet un peu fou pour l'un de mes clients : transformer des boîtes à pizza en costumes d'Halloween.
+
+L'idée est simple. Au lieu de jeter la boîte après la pizza, on utilise le couvercle pour se déguiser, prendre une photo et s'amuser entre amis.
+
+Zied a imaginé toute une collection, avec des personnages qui vont par deux. L'IA l'a aidé à dessiner les décors et les costumes. Lui a fait la direction artistique et la mise en page.
+
+Et voilà le résultat : toute une collection de duos. Des vampires, des sorciers, des squelettes, des citrouilles, des zombies… et même un laboratoire hanté.
+
+Chaque boîte garde l'univers de Chez Jello, avec une découpe pour la tête, le nom du duo et un petit message pour jouer à deux.
+
+Ce que j'aime dans ce projet, c'est qu'on ne fait pas qu'un emballage. On crée un moment. Les clients se prennent en photo, partagent leur duo, et retrouvent la pizzeria.
+
+C'est ça, mon quotidien d'entrepreneur : imaginer des idées, les confier aux bonnes personnes, et utiliser l'IA pour aller plus vite, sans perdre la créativité de l'équipe.
+
+Maintenant, il reste à valider les découpes et l'impression avec le client. Mais j'ai déjà hâte de voir ces boîtes entre les mains des clients de Chez Jello.

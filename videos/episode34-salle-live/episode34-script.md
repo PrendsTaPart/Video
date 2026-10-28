@@ -1,24 +1,26 @@
 # Épisode 34/365 : « J'ai imaginé une salle de restaurant intelligente avec l'IA »
 
-120 s · 9:16 · 1080 × 1920 · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, eleven_multilingual_v2, 72,6 s) · narration à la première personne.
+120 s · 9:16 · 1080 × 1920 · voix Noé (ElevenLabs `7pDdnNI6PhXmAp0pXFZm`, eleven_v4, 72,6 s) · narration à la première personne.
 
 ## Narration
 
-Aujourd'hui, un restaurateur m'a posé une question intéressante : comment savoir combien de temps ses clients restent à table, et comment améliorer la rotation de sa salle ?
+> **Refait le 28/10** à la demande de Michael : même voix et même modèle que les épisodes 1 à 30 (Noé, `eleven_v4`, débit naturel), langage simple sans terme technique ni chiffre, textes techniques retirés de l'écran. Nouvelle durée : 85s. Les temps du storyboard ci-dessous sont ceux de la version précédente ; l'ordre des scènes est inchangé.
 
-Et là, j'ai eu une idée : pourquoi ne pas créer un plan de salle intelligent, capable de montrer en direct quelles tables sont libres, lesquelles sont occupées, et lesquelles doivent être débarrassées ?
+Aujourd'hui, un restaurateur m'a posé une question : comment savoir combien de temps ses clients restent à table, pour mieux remplir sa salle ?
 
-Le plus intéressant, c'est de pouvoir suivre la durée d'occupation des tables. Avec ces informations, le restaurateur peut mieux comprendre son service, repérer les temps d'attente et analyser la rotation de ses places.
+Et j'ai eu une idée : un plan de salle intelligent, qui montre en direct les tables libres, les tables occupées, et celles à débarrasser.
 
-J'ai imaginé un système qui combine des caméras capables d'analyser la salle localement, des QR codes sur les tables, et les informations de la caisse FoodEatUp. L'objectif : réunir les événements utiles, sans suivre individuellement les clients.
+Le plus intéressant, c'est de savoir depuis combien de temps chaque table est occupée. Le restaurateur comprend mieux son service, et voit où les clients attendent.
 
-L'idée, ce n'est pas seulement de regarder des couleurs. C'est aussi d'aider les équipes à agir : identifier une table à débarrasser, suivre les alertes, et avoir une meilleure visibilité pendant le service.
+J'ai imaginé des caméras qui analysent la salle sur place, des QR codes sur les tables, et la caisse FoodEatUp. Le but : savoir ce qui se passe à chaque table, sans jamais suivre les clients un par un.
 
-Et j'ai voulu aller plus loin : utiliser les historiques, les réservations et les prévisions d'affluence, pour aider le restaurateur à anticiper ses besoins en personnel et mieux organiser son service.
+Et il ne s'agit pas seulement de couleurs. Il s'agit d'aider l'équipe à agir : une table à débarrasser, un client qui attend l'addition, un coup de rush.
 
-Pour transformer cette idée en application, j'ai utilisé Lovable, GitHub et l'écosystème FoodEatUp. En quelques itérations, j'ai construit une interface, un plan de salle interactif, et une démonstration du fonctionnement imaginé.
+Je suis allé plus loin : avec l'historique et les réservations, l'application aide à prévoir le monde qui va venir, et donc le personnel dont on aura besoin.
 
-Et demain, je présente tout ça au restaurateur. Maintenant, la vraie question, c'est : est-ce que cette solution va répondre à son besoin ? Je vous montrerai la suite.
+Pour passer de l'idée à l'application, j'ai utilisé Lovable et les outils FoodEatUp. En quelques essais, j'avais un plan de salle interactif et une démonstration.
+
+Et demain, je présente tout ça au restaurateur. La vraie question : est-ce que ça répond à son besoin ? Je vous montrerai la suite.
 
 ## Storyboard (`episode34-storyboard.jpg`)
 

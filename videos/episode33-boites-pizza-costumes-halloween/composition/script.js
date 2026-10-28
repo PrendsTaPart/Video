@@ -8,7 +8,7 @@ const DUR=120;
 const SC=[['s1',0,12],['s2',12,24],['s3',24,40],['s4',40,65],['s5',65,73],['s5b',73,80],['s6',80,98],['s7',98,109.6],['s8',109.6,DUR]];
 // duos : noms exacts des calques Figma (page Halloween), dans l'ordre des exports d01…d20
 const DUOS=[['Vampires gothiques','Comte Carmine','Comtesse Nocturna'],['Sorcière & sorcier','Sorcière des Potions','Sorcier des Ombres'],['Squelettes royaux','Roi Squelette','Reine Squelette'],['Royauté citrouille','Roi Citrouille','Reine Citrouille'],['Mariés fantômes','Marié Fantôme','Mariée Fantôme'],['Momies royales','Pharaon Momie','Reine Momie'],['Laboratoire hanté','Savant Fou','Créature Électrique'],['Loup & lune','Loup-Garou','Enchanteresse Lunaire'],['Zombies chez Jello','Chef Zombie','Serveuse Zombie'],['Araignées royales','Roi Araignée','Reine Araignée']];
-const im=k=>`a/d${String(k).padStart(2,'0')}.png`;
+const im=k=>`../figma-selection/d${String(k).padStart(2,'0')}.jpg`;
 $('r2').innerHTML=Array.from({length:20},(_,k)=>`<div id="g${k}"><img src="${im(k+1)}"></div>`).join('');
 $('r3').innerHTML=DUOS.map((d,i)=>`<div class="duo" id="du${i}"><div class="t">${i+1}. ${d[0]}</div><div class="dz" style="left:50px"><img src="${im(2*i+1)}"></div><div class="dz" style="left:550px"><img src="${im(2*i+2)}"></div><div class="n" style="left:50px">${d[1]}</div><div class="n" style="left:550px">${d[2]}</div></div>`).join('');
 $('r4').innerHTML=DUOS.map((_,i)=>`<i id="dt${i}"></i>`).join('');
