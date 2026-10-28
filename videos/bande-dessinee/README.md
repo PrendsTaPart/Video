@@ -11,4 +11,4 @@ Planches : 1 couverture · 2 pour qui · 3 trois promesses · 4 dix missions · 
 ## Illustrations BD FoodEatUp (bibliothèque RapidoCMS)
 Une centaine d'illustrations au style BD (fiches personnages, chef au tablier FoodEatUp, scènes de restaurant), générées le 2 octobre 2026 dans RapidoCMS (identifiants 4457 à 4556). Elles restent hébergées dans la bibliothèque RapidoCMS ; la médiathèque du site pointe vers elles.
 
-Écartées : les images du 30 septembre (BD d'un client sans accord) et la série du 3 octobre (identifiants 4557 à 4575), dont l'origine reste à confirmer.
+Ajoutées ensuite avec l'accord de Michael : la série café du 3 octobre (identifiants 4557 à 4575) et la BD Luks du 30 septembre (identifiants 4376 à 4409, dont 5 photos produits de référence), accord du client confirmé par Michael le 28 octobre 2026.
