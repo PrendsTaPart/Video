@@ -1,0 +1,102 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 53 : chaque logiciel devient un agent</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter',sans-serif}#stage{background:#0c0c0e}
+.sc{background:radial-gradient(ellipse at 50% 35%,#2a2a30 0%,#0c0c0e 65%)}
+.sc.gris{background:#e9eaee}.sc.sable{background:#efe6d4}.sc.menthe{background:#cfe9dc}.sc.terre{background:radial-gradient(ellipse at 50% 40%,#c97a52 0%,#6b3a22 75%)}
+#hdr{position:absolute;left:0;right:0;top:0;height:160px;z-index:60}#hdr span{position:absolute;left:60px;top:90px;font-family:'JetBrains Mono';font-weight:700;font-size:24px;color:#8a8a92}
+#cap{font-family:'Inter';font-weight:800;font-size:60px;color:#fff;letter-spacing:-1px}#cap i.k{color:#FF5A1F;font-style:normal}
+.lt #cap{color:#111}.lt #hdr span{color:#555}
+.card{background:#fff;border-radius:28px;box-shadow:0 30px 60px rgba(0,0,0,.2);padding:30px 36px;color:#111}
+.pill{display:inline-block;font-family:'JetBrains Mono';font-weight:700;font-size:30px;border-radius:999px;padding:10px 24px;white-space:nowrap;background:#111;color:#fff}.pill.o{background:#FF5A1F}.pill.g{background:#1f9d55}.pill.w{background:#fff;color:#111}.pill.b{background:#3b5bdb}
+.big{font-weight:900;font-size:130px;line-height:.95;color:#fff;letter-spacing:-5px;text-align:center}
+.bld{width:520px;height:640px;border-radius:20px 20px 0 0;background:linear-gradient(#efe9df,#cfc6b8);position:relative;box-shadow:0 40px 80px rgba(0,0,0,.6)}
+.bld .sign{position:absolute;left:50%;top:60px;transform:translateX(-50%);background:#2b4a3a;color:#fff;font-weight:900;font-size:40px;padding:8px 26px;border-radius:8px;letter-spacing:3px}
+.bld .door{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:200px;height:300px;background:#1f2a2a;border-radius:10px 10px 0 0}
+.bld .win{position:absolute;width:110px;height:120px;background:#3d4b55;border-radius:6px;top:170px}
+.chat{width:820px}.chat .b{height:30px;border-radius:15px;background:#e7e9f2;margin:14px 0}.chat .q{font-size:32px;font-weight:700}
+.graph{height:180px;margin-top:20px;border-top:2px solid #eee}
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;width:960px}.tools .card{padding:22px;font-size:28px;font-weight:800;text-align:center}.tools small{display:block;font-size:20px;color:#888;font-weight:600}
+.tools .card.hi{outline:5px solid #3b5bdb}
+.emp{display:grid;grid-template-columns:repeat(10,1fr);gap:10px;width:820px}.emp i{display:block;height:46px;border-radius:12px 12px 6px 6px;background:#5b8cff}
+.pair{display:flex;gap:26px;align-items:center}.pair .card{width:420px;text-align:center;font-size:34px;font-weight:800}
+.coins{display:flex;gap:60px;align-items:flex-end}.stack{display:flex;flex-direction:column-reverse;align-items:center}.stack i{display:block;width:150px;height:30px;border-radius:50%;margin-top:-14px;box-shadow:0 4px 0 rgba(0,0,0,.35)}
+.stack.s i{background:linear-gradient(#cfd8e6,#8d9bb3)}.stack.g i{background:linear-gradient(#ffe08a,#d4a017)}
+.stack b{color:#fff;font-family:'JetBrains Mono';font-size:26px;margin-top:20px}
+.ag{width:470px;background:#fff;border-radius:26px;padding:22px;box-shadow:0 20px 40px rgba(0,0,0,.3);display:flex;align-items:center;gap:18px;color:#111}
+.ag img{width:90px;height:90px;object-fit:contain;border-radius:18px;background:#f4f4f6}.ag b{display:block;font-size:30px;font-weight:900}.ag span{font-size:24px;color:#555;font-weight:600}
+.ag em{font-style:normal;font-family:'JetBrains Mono';font-size:18px;color:#fff;background:#FF5A1F;border-radius:999px;padding:3px 12px}
+.mas{width:170px}
+.stamp{font-weight:900;font-size:80px;color:#1f9d55;border:9px solid #1f9d55;border-radius:16px;padding:4px 24px;transform:rotate(-12deg)}
+</style></head><body><div id="stage"><div id="hdr"><span>michael · le quotidien avec l'ia</span></div><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=300;CAP.group=3;CAP.kw=new Set(['géante','agence.','mauvaise','Sequoia,','logiciel.','embaucher.','copilotes,','d\'outils.','travail','fait.','candidats.','envoyé.','dollar','six','services.','agent,','Caroline','RapidoCRM','RapidoCMS','Plan\'It','reste.','AGENT.']);
+const MAS='../kit/tuto-ecran-sombre-etincelle-orange.png';
+const mas=(s,at)=>s.el(`<img class="mas" src="${MAS}">`,{x:930,y:1640,fx:'pop',at,anim:'float',z:8});
+// 1 accroche : le logiciel déguisé en agence
+let s=scene(0,M('Ce n\'est pas'),{tr:'cut'});
+s.img('holo-nuit-agents-agent-robot-serveur.png',{x:540,y:900,w:520,fx:'up',at:.2,out:M('comme une')});
+s.el('<div class="bld"><div class="sign">AGENCE</div><div class="win" style="left:60px"></div><div class="win" style="right:60px"></div><div class="door"></div></div>',{x:540,y:980,fx:'pop',at:M('comme une'),out:M('Et si tu')});
+s.el('<div class="pill o">UN LOGICIEL DÉGUISÉ EN AGENCE ?</div>',{x:540,y:560,fx:'slam',at:M('comme une')+.4,out:M('Et si tu')});
+s.el('<div class="card chat"><div class="q">Bonjour 👋 Que veux-tu générer ?</div><div class="b" style="width:90%"></div><div class="b" style="width:70%"></div><svg class="graph" width="760" height="180"><path id="gp" d="M10 40 C 200 30, 320 60, 420 90 S 640 150, 750 170" stroke="#e03131" stroke-width="7" fill="none"/></svg></div>',{x:540,y:900,fx:'pop',at:M('Et si tu')});
+s.el('<div class="pill" style="background:#e03131">LA VERSION QUI PERD</div>',{x:540,y:1300,fx:'slam',at:M('la mauvaise')});
+mas(s,.4);
+// 2 Sequoia
+s=scene(M('Ce n\'est pas'),M('Pendant des'),{cls:'terre',tr:'cut'});
+s.el('<div class="card" style="width:820px;transform:rotate(-2deg)"><div style="font-family:JetBrains Mono;font-size:22px;color:#888">SEQUOIA · « SERVICES: THE NEW SOFTWARE »</div><div style="font-size:52px;font-weight:900;line-height:1.1;margin-top:14px">« La prochaine entreprise géante sera un logiciel déguisé en entreprise de services. »</div><div style="font-size:28px;font-weight:700;color:#555;margin-top:18px">— Julien Bek, associé chez Sequoia</div></div>',{x:540,y:860,fx:'drop',at:M('C\'est Julien')});
+s.el('<div class="pill w">UN DES PLUS GROS FONDS DU MONDE</div>',{x:540,y:1250,fx:'slam',at:M('associé chez')+1});
+mas(s,0);
+// 3 logiciel vs agence
+s=scene(M('Pendant des'),M('Regarde ce'),{tr:'cut'});
+s.el('<div class="big" style="font-size:110px">TOUT LE MONDE<br>VOULAIT FAIRE<br><span style="color:#FF5A1F">DU LOGICIEL</span></div>',{x:540,y:820,fx:'slam',at:M('Pendant des'),out:M('Parce qu\'un')});
+s.el('<div class="card" style="width:880px;text-align:center"><div style="font-size:36px;font-weight:900">Logiciel</div><div style="font-size:26px;color:#666">plus de clients, même équipe</div><div class="emp" style="margin:20px auto">'+'<i></i>'.repeat(3)+'</div><div style="font-size:36px;font-weight:900;margin-top:20px">Agence</div><div style="font-size:26px;color:#666">plus de clients, plus de monde</div><div class="emp" id="emp" style="margin:20px auto">'+'<i style="background:#e8590c"></i>'.repeat(30)+'</div></div>',{x:540,y:980,fx:'pop',at:M('Parce qu\'un')});
+s.fn(t=>document.querySelectorAll('#emp i').forEach((e,i)=>e.style.opacity=t>=M('embaucher. Une agence,')+i*.05?1:0));
+mas(s,0);
+// 4 les outils IA
+s=scene(M('Regarde ce'),M('Sauf que les'),{cls:'gris',tr:'cut'});
+const T=[['Vendo','outil IA pour vendre'],['Scribo','outil IA pour écrire'],['Comptax','outil IA pour la compta'],['Leado','prospection'],['Mailo','emails'],['Docto','documents']];
+s.el('<div class="tools" id="tl">'+T.map(([n,d])=>`<div class="card">${n}<small>${d}</small></div>`).join('')+'</div>',{x:540,y:880,fx:'pop',at:M('Regarde ce')+.2});
+s.el('<div class="pill w" style="font-size:20px">NOMS INVENTÉS · EXEMPLES</div>',{x:540,y:1180,fx:'fade',at:M('Regarde ce')+.4});
+s.fn(t=>{const c=document.querySelectorAll('#tl .card');[[0,'un outil pour vendre,'],[1,'un outil pour écrire,'],[2,'un outil pour la compta.']].forEach(([i,m])=>c[i]&&c[i].classList.toggle('hi',t>=M(m)));});
+s.el('<div class="pill b">COPILOTES : ILS AIDENT UN PRO À ALLER PLUS VITE</div>',{x:540,y:1300,fx:'slam',at:M('Des copilotes,')});
+mas(s,0);
+// 5 le travail fait
+s=scene(M('Sauf que les'),M('Et selon'),{cls:'sable',tr:'cut'});
+s.el('<div class="pill" style="background:#e03131">LES ENTREPRISES NE VEULENT PAS D\'OUTILS</div>',{x:540,y:440,fx:'slam',at:M('Sauf que les'),out:M('Pas un logiciel')});
+s.el('<div class="stamp">TRAVAIL FAIT</div>',{x:540,y:860,fx:'slam',at:M('Elles veulent le'),out:M('Pas un logiciel')});
+s.el('<div class="pair"><div class="card" id="pa1">Trier des candidats<br><small style="color:#888;font-size:24px">un logiciel</small></div><div class="card" style="outline:5px solid #1f9d55">✓ Les bons candidats</div></div>',{x:540,y:760,fx:'pop',at:M('Pas un logiciel')});
+s.el('<div class="pair"><div class="card" id="pa2">Faire des devis<br><small style="color:#888;font-size:24px">un outil</small></div><div class="card" style="outline:5px solid #1f9d55">✓ Le devis envoyé</div></div>',{x:540,y:1080,fx:'pop',at:M('Pas un outil pour faire')});
+s.fn(t=>{[['pa1','les bons'],['pa2','le devis']].forEach(([i,m])=>{const e=document.getElementById(i);if(e)e.style.cssText+=t>=M(m)?';text-decoration:line-through;opacity:.45':'';});});
+mas(s,0);
+// 6 ×6
+s=scene(M('Et selon'),M('Alors voilà'),{tr:'cut'});
+s.el('<div class="coins"><div class="stack s" id="st1">'+'<i></i>'.repeat(4)+'<b>LOGICIEL</b></div><div class="stack g" id="st6">'+'<i></i>'.repeat(24)+'<b>SERVICES</b></div></div>',{x:540,y:1080,fx:'fade',at:M('Et selon')+.3});
+s.fn(t=>{document.querySelectorAll('#st6 i').forEach((e,i)=>e.style.opacity=t>=M('les entreprises en')+i*.05?1:0);});
+s.el('<div class="big" style="color:#ffd43b">× SIX</div>',{x:640,y:520,fx:'slam',at:M('six en')});
+s.el('<div class="pill w" style="font-size:20px">SOURCE : SEQUOIA, ESTIMATION DE JULIEN BEK</div>',{x:540,y:1420,fx:'fade',at:M('six en')+.5});
+mas(s,0);
+// 7 mes logiciels deviennent des agents
+s=scene(M('Alors voilà'),M('Le logiciel reste.'),{cls:'menthe',tr:'cut'});
+s.el('<div class="pill">CHAQUE LOGICIEL → UN AGENT QUI L\'UTILISE</div>',{x:540,y:430,fx:'slam',at:M('chacun de mes')});
+[['foodeatup.png','FoodEatUp','Caroline prend les réservations','Dans FoodEatUp,'],['rapidocrm-logo.png','RapidoCRM','L\'agent vocal rappelle tes prospects','RapidoCRM rappelle'],['rapidocms-logo.png','RapidoCMS','Publie sur tes réseaux à ta place','RapidoCMS publie'],['planit.webp','Plan\'It','Fait tourner tout ça chaque matin','Et Plan\'It']].forEach(([l,n,d,m],k)=>
+ s.el(`<div class="ag"><img src="img/${l}"><div><b>${n} <em>AGENT</em></b><span>${d}</span></div></div>`,{x:290+(k%2)*500,y:760+Math.floor(k/2)*250,fx:'pop',at:M(m)-.2}));
+s.img('../v53/img/commun-caroline-parle.png',{x:540,y:1430,w:330,fx:'up',at:M('Dans FoodEatUp,')+.3,anim:'talk',out:M('RapidoCRM rappelle')});
+mas(s,0);
+// 8 le logiciel reste
+s=scene(M('Le logiciel reste.'),M('Tu veux savoir'),{tr:'cut'});
+s.el('<div class="big" style="font-size:96px;white-space:nowrap">LE LOGICIEL<br>RESTE.</div>',{x:540,y:600,fx:'slam',at:M('Le logiciel reste.')});
+s.el('<div class="big" style="font-size:96px;color:#FF5A1F;white-space:nowrap">L\'AGENT FAIT<br>LE TRAVAIL.</div>',{x:540,y:1000,fx:'slam',at:M('Mais c\'est')+.3});
+mas(s,0);
+// 9 CTA
+s=scene(M('Tu veux savoir'),C.dur+1,{bgColor:'#FF5A1F',tr:'cut'});
+s.el('<div class="big" style="color:#111;font-size:92px;white-space:nowrap">QUEL AGENT<br>POUR TON MÉTIER ?</div>',{x:540,y:560,fx:'drop',at:M('Tu veux savoir')});
+s.el('<div class="card" style="width:720px;text-align:center"><div style="font-size:32px;font-weight:700;color:#666">Commente</div><div style="font-size:120px;font-weight:900;letter-spacing:-4px">AGENT</div></div>',{x:540,y:1000,fx:'slam',at:M('Commente AGENT.')});
+s.el('<div class="pill w">ÉPISODE 53/365</div>',{x:540,y:1300,fx:'fade',at:M('Commente AGENT.')+.8});
+CAP.show=t=>t<M('Tu veux savoir');
+const LT=[[M('Regarde ce'),M('Et selon')],[M('Alors voilà'),M('Le logiciel reste.')]];
+onFrame(t=>document.body.classList.toggle('lt',LT.some(([a,b])=>t>=a&&t<b)));
+thumbAt(M('Mais c\'est')+1.2,'<i>Ton logiciel</i> <i class="k">devient un agent</i>');
+render(0);
+</script></body></html>
