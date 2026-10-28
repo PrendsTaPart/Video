@@ -79,28 +79,38 @@ Référence : deux cafés en écran partagé, vue isométrique de nuit (guerre d
 - CTA : « Commente IA, je te montre ce que j'ai installé chez lui. »
 
 ## Ép. 47 : « Ne fais jamais partir ton client de zéro » (thème editorial-mentaliste, réutilisé)
-Référence : la série Mentaliste, style éditorial (étude de la carte de lavage).
 Étude réelle : Nunes et Drèze, 2006, « effet de progression dotée ». 300 cartes de lavage sont distribuées. La carte A demande 8 tampons. La carte B en demande 10, mais 2 sont déjà offerts. Neuf mois plus tard, 19 % des cartes A sont complétées, contre 34 % des cartes B.
-Fonctions FoodEatUp vérifiées dans les tutoriels :
-- points par euro, par passage ou hybride ;
-- multiplicateurs sur les créneaux creux ;
-- catalogue de récompenses (produit, bon €, avantage) ;
-- espace client avec le solde de points et une barre de progression vers la prochaine récompense ;
-- conseil officiel : une première récompense à très bas coût, par exemple un café à 2 points, pour une victoire rapide.
+
+Produit : l'app FoodEatUp Fidélité, une tablette au comptoir (projet Lovable 378d0a3e, spécification `docs/SPECIFICATION-tablette.md`).
+
+Fonctions vérifiées dans la spécification :
+- inscription en 10 secondes par numéro de téléphone ;
+- écran de bienvenue avec bonus de points crédités par FoodEatUp ;
+- jauge des paliers avec un repère par récompense, et le message « Plus que N pts pour … » ;
+- pastille « points doublés » sur les créneaux multiplicateurs ;
+- bonus anniversaire et parrainage ;
+- roue cadeaux et sondage express ;
+- écran « Au revoir » qui rappelle la prochaine récompense.
+
+MCP FoodEatUp (lecture seule, établissement 53) :
+- le programme fonctionne en mode par euro, par passage ou hybride, avec multiplicateurs et validité des points ;
+- récompenses réelles : « 5 € offerts » pour 100 points et « 12 € offerts » pour 200 points ;
+- le programme de cet établissement est désactivé : il ne sert pas de preuve chiffrée à l'écran.
 
 Script :
 - « Une station de lavage a distribué 300 cartes de fidélité. Même offre, deux designs. »
-- « Carte A : 8 tampons, puis un lavage gratuit. Carte B : 10 tampons, mais les deux premiers sont déjà remplis. »
-- « Neuf mois plus tard : 19 % des cartes A complétées. Carte B : 34 %. Presque le double. »
-- « Mais pourquoi ? Les deux demandaient exactement 8 lavages. Mais la carte B ne part pas de zéro. »
-- « Plus on se sent proche du but, plus on s'active. Tu ne commences pas une tâche : tu en termines une. »
-- « Dans FoodEatUp, c'est exactement ce que tu règles. Ton client voit sa barre de progression vers la prochaine récompense dès sa première commande. »
-- « Ta première récompense ne coûte presque rien : un café à 2 points. Victoire rapide, il revient. »
-- « Et tes points doublés le mardi midi remplissent tes heures creuses. »
-- « Alors ne fais jamais partir ton client de zéro. »
-- CTA : « Commente FIDÉLITÉ, je t'envoie le tuto pour configurer ton programme. »
+- « Carte A : 8 tampons. Carte B : 10 tampons, mais les deux premiers déjà remplis. »
+- « Neuf mois plus tard : 19 % contre 34 %. Presque le double. »
+- « Mais pourquoi ? Même effort. Mais la carte B ne part pas de zéro. Plus on se sent proche du but, plus on s'active. »
+- « Sur la tablette FoodEatUp Fidélité, ton client tape son numéro : 10 secondes. »
+- « Et il ne part jamais de zéro : bonus de bienvenue, confettis, sa jauge est déjà entamée. »
+- « Il voit "Plus que 30 points pour ton dessert". Et en partant, la tablette le lui rappelle. »
+- « Points doublés le mardi midi, bonus d'anniversaire, parrainage : tout est crédité par FoodEatUp. »
+- « Alors offre-lui les deux premiers tampons. »
+- CTA : « Commente FIDÉLITÉ, je t'envoie la démo de la tablette. »
 
 Visuels :
-- Kit editorial-mentaliste : fonds papier, noir et rouge, histogramme, point d'interrogation, carte bancaire mascotte, barre de progression, carte de fin.
-- Cartes à tampons A et B dessinées en HTML.
-- Vrais écrans des tutoriels « Booster la fidélité — le programme » et « Vue publique fidélité — côté client ».
+- kit editorial-mentaliste ;
+- cartes à tampons A et B animées ;
+- captures de la démo interactive de l'app (écrans bienvenue, espace client et jauge, récompenses, au revoir) ;
+- montants à l'écran signalés comme exemples.
