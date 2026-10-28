@@ -1,0 +1,199 @@
+1
+00:00:00,350 --> 00:00:00,850
+Aujourd'hui
+
+2
+00:00:00,850 --> 00:00:03,390
+mon application HACCP est arrivée
+
+3
+00:00:03,390 --> 00:00:04,230
+sur Google Play.
+
+4
+00:00:04,230 --> 00:00:04,850
+Et ce n'est pas moi
+
+5
+00:00:04,850 --> 00:00:06,460
+qui ai cliqué sur publier
+
+6
+00:00:06,910 --> 00:00:08,130
+C'est un agent IA.
+
+7
+00:00:08,130 --> 00:00:08,970
+Je lui ai construit un
+
+8
+00:00:08,970 --> 00:00:11,030
+MCP avec Lovable ReleaseSync.
+
+9
+00:00:11,030 --> 00:00:12,370
+Seize outils
+
+10
+00:00:12,370 --> 00:00:14,150
+branchés sur l'API officielle de
+
+11
+00:00:14,150 --> 00:00:15,040
+Google Play.
+
+12
+00:00:15,490 --> 00:00:16,330
+Je lui écris une seule
+
+13
+00:00:16,330 --> 00:00:19,570
+phrase Publie FoodEatUp HACCP en
+
+14
+00:00:19,570 --> 00:00:20,560
+test fermé.
+
+15
+00:00:21,010 --> 00:00:22,210
+L'agent récupère le fichier de
+
+16
+00:00:22,210 --> 00:00:22,650
+l'appli
+
+17
+00:00:22,650 --> 00:00:23,630
+choisit la piste
+
+18
+00:00:23,630 --> 00:00:24,410
+écrit les nouveautés…
+
+19
+00:00:24,410 --> 00:00:26,050
+et fait d'abord une simulation.
+
+20
+00:00:26,050 --> 00:00:27,110
+Google valide tout
+
+21
+00:00:27,110 --> 00:00:28,260
+rien n'est publié.
+
+22
+00:00:28,710 --> 00:00:29,250
+Je relis.
+
+23
+00:00:29,250 --> 00:00:29,890
+Je dis oui.
+
+24
+00:00:29,890 --> 00:00:31,330
+Version un point six point
+
+25
+00:00:31,330 --> 00:00:32,160
+deux publiée.
+
+26
+00:00:32,610 --> 00:00:33,530
+Il a aussi rempli la
+
+27
+00:00:33,530 --> 00:00:35,070
+fiche du store le texte
+
+28
+00:00:35,070 --> 00:00:35,590
+l'icône
+
+29
+00:00:35,590 --> 00:00:36,330
+la bannière
+
+30
+00:00:36,330 --> 00:00:37,660
+et huit captures d'écran.
+
+31
+00:00:38,110 --> 00:00:39,170
+Et chaque action est écrite
+
+32
+00:00:39,170 --> 00:00:40,370
+dans un journal qui
+
+33
+00:00:40,370 --> 00:00:40,690
+quand
+
+34
+00:00:40,690 --> 00:00:41,700
+sur quelle appli.
+
+35
+00:00:42,150 --> 00:00:42,610
+L'appli
+
+36
+00:00:42,610 --> 00:00:42,770
+elle
+
+37
+00:00:42,770 --> 00:00:45,070
+fait vos relevés HACCP à
+
+38
+00:00:45,070 --> 00:00:46,290
+la voix températures
+
+39
+00:00:46,290 --> 00:00:47,830
+DLC
+
+40
+00:00:47,830 --> 00:00:48,230
+réceptions
+
+41
+00:00:48,230 --> 00:00:48,630
+nettoyage.
+
+42
+00:00:48,630 --> 00:00:49,860
+En dix secondes.
+
+43
+00:00:50,310 --> 00:00:51,150
+Ma caisse et ma carte
+
+44
+00:00:51,150 --> 00:00:52,830
+de fidélité sont déjà enregistrées
+
+45
+00:00:52,830 --> 00:00:53,770
+dans ReleaseSync.
+
+46
+00:00:53,770 --> 00:00:55,080
+Ce sont les prochaines.
+
+47
+00:00:55,530 --> 00:00:56,330
+Tu veux le même agent
+
+48
+00:00:56,330 --> 00:00:57,930
+pour publier tes applis Écris
+
+49
+00:00:57,930 --> 00:00:59,410
+STORE en commentaire.
+
+50
+00:00:59,410 --> 00:01:00,440
+Épisode trente-six.

@@ -1,0 +1,19 @@
+Aujourd'hui, mon application HACCP est arrivée sur Google Play. Et ce n'est pas moi qui ai cliqué sur « publier ».
+
+C'est un agent IA. Je lui ai construit un MCP avec Lovable : ReleaseSync. Seize outils, branchés sur l'API officielle de Google Play.
+
+Je lui écris une seule phrase : « Publie FoodEatUp HACCP en test fermé. »
+
+L'agent récupère le fichier de l'appli, choisit la piste, écrit les nouveautés… et fait d'abord une simulation. Google valide tout, rien n'est publié.
+
+Je relis. Je dis oui. Version un point six point deux : publiée.
+
+Il a aussi rempli la fiche du store : le texte, l'icône, la bannière, et huit captures d'écran.
+
+Et chaque action est écrite dans un journal : qui, quand, sur quelle appli.
+
+L'appli, elle, fait vos relevés HACCP à la voix : températures, DLC, réceptions, nettoyage. En dix secondes.
+
+Ma caisse et ma carte de fidélité sont déjà enregistrées dans ReleaseSync. Ce sont les prochaines.
+
+Tu veux le même agent pour publier tes applis ? Écris « STORE » en commentaire. Épisode trente-six.
