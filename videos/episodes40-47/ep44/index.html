@@ -1,0 +1,79 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 44 : toi, tu répares, Caroline décroche</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter'}
+#cap{font-family:'Anton';font-size:76px;text-transform:uppercase}
+#cap i{background:#dfe8f7;color:#1c2a52;padding:2px 14px;margin:4px 0;border:4px solid #1c2a52;box-shadow:0 6px 0 #1c2a52}
+#cap i.k{background:#FF8A1F;color:#111}
+#who span{font-family:'Anton';font-size:30px;letter-spacing:2px;border:3px solid #1c2a52}
+.top{font-family:'Anton';font-size:52px;color:#fff;text-transform:uppercase;text-align:center;line-height:1.05;text-shadow:0 5px 0 #1c2a52}
+.top b{display:inline-block;background:#C8283A;padding:0 14px;transform:rotate(-2deg)}
+.cnt{position:relative;background:#fff;border-radius:70px;box-shadow:0 8px 0 #1c2a52}.cnt img{width:100%;display:block}.cnt span{position:absolute;left:33%;right:6%;top:50%;transform:translateY(-50%);font-family:'Anton';font-size:58px;color:#1c2a52;text-align:left;white-space:nowrap}
+.ag{position:relative;background:#fff;border-radius:34px;box-shadow:0 8px 0 #1c2a52}.ag img{width:100%;display:block}.ag ul{position:absolute;left:21%;right:8%;top:30%;list-style:none;font-weight:800;font-size:31px;color:#1c2a52;line-height:2.05}
+.ag li{white-space:nowrap;overflow:hidden}
+.rew{font-family:'Anton';font-size:120px;color:#fff;text-shadow:0 0 30px #2D7FF9}
+.cta{font-family:'Anton';font-size:104px;color:#111;background:#FF8A1F;border:8px solid #111;box-shadow:0 14px 0 #111;padding:8px 40px;border-radius:24px;text-align:center;line-height:1}
+.scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.08) 0 3px,transparent 3px 8px);mix-blend-mode:screen}
+</style></head><body><div id="stage"><div id="scenes"></div><div id="who"><span></span></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+const L=C.lines,t0=i=>L[i].t0,t1=i=>L[i].t1;
+CAP.top=1400;CAP.group=3;CAP.kw=new Set(['trois','chaudière','autre','décroche','Caroline','gèle','8','gâteau','10','14','noté','Trois','clients','répares','CAROLINE']);
+CAP.names={cli:['LA CLIENTE','#C8283A'],art:['L\'ARTISAN','#5a6b8c'],caro:['CAROLINE · IA','#2D7FF9'],cl2:['CLIENT AU TÉLÉPHONE','#1fb35a']};
+document.getElementById('who').style.top='1320px';
+let s=scene(0,t0(1),{bg:'atelier-artisans-salon-froid.jpg',kb:[1.05,1.15]});
+s.img('atelier-artisans-cliente-frigorifiee.png',{x:540,y:1000,w:620,fx:'up',at:.1,anim:'shiver'});
+s.txt('<div class="top">ELLE A APPELÉ 3 FOIS…<br><b>PERSONNE N\'A DÉCROCHÉ</b></div>',{x:540,y:260,fx:'drop',at:.2});
+s=scene(t0(1),t0(2),{bg:'atelier-artisans-chaufferie.jpg',kb:[1.15,1.2],tr:'cut'});
+s.img('atelier-artisans-chauffagiste-chaudiere.png',{x:540,y:860,w:640,fx:'none',anim:'shake'});
+s.img('atelier-artisans-telephone-sonne.png',{x:820,y:1150,w:280,fx:'pop',at:t0(1),anim:'shake'});
+s=scene(t0(2),t0(3)-.9,{bg:'atelier-artisans-salon-froid.jpg',kb:[1.15,1.2],tr:'cut'});
+s.img('atelier-artisans-cliente-frigorifiee.png',{x:540,y:1000,w:620,fx:'none',anim:'shiver'});
+s.img('atelier-artisans-bandeau-client-perdu.png',{x:540,y:420,w:860,fx:'slam',at:t1(2)-.3,rot:-6});
+// rembobinage
+s=scene(t0(3)-.9,t0(3)+.4,{bgColor:'#0b1430',tr:'cut'});
+s.el('<div class="rew">⏪ ON REMBOBINE</div>',{x:540,y:860,fx:'pop',at:t0(3)-.85,anim:'shake'});
+s.el('<div class="scan"></div>',{x:540,y:960,w:1080,h:1920,fx:'none'});
+// Caroline décroche
+s=scene(t0(3)+.4,t0(5),{bg:'atelier-artisans-chaufferie.jpg',kb:[1.05,1.12],tr:'cut'});
+s.img('atelier-artisans-chauffagiste-chaudiere.png',{x:260,y:820,w:420,fx:'none'});
+s.img('atelier-artisans-caroline-bureau.png',{x:700,y:900,w:620,fx:'pop',at:t0(3)+.5,anim:'talk'});
+s.txt('<div class="top"><b>CETTE FOIS, CAROLINE DÉCROCHE</b></div>',{x:540,y:380,fx:'drop',at:t0(3)+.8});
+// appel 1 : chaudière
+s=scene(t0(5),t0(8),{bg:'atelier-artisans-salon-froid.jpg',kb:[1.05,1.1],tr:'cut'});
+s.img('atelier-artisans-cliente-frigorifiee.png',{x:300,y:900,w:500,fx:'none',anim:'shiver'});
+s.img('atelier-artisans-caroline-parle.png',{x:790,y:1020,w:520,fx:'pop',at:t0(5),anim:'talk'});
+// appel 2 : gâteau
+s=scene(t0(8),t0(10),{bg:'atelier-artisans-fournil.jpg',kb:[1.05,1.1],tr:'cut'});
+s.img('atelier-artisans-boulangere.png',{x:290,y:960,w:470,fx:'up',at:t0(8)});
+s.img('atelier-artisans-gateau-anniversaire.png',{x:790,y:1050,w:420,fx:'pop',at:t0(8)+.6,anim:'bob'});
+// appel 3 : réparation
+s=scene(t0(10),t0(12),{bg:'atelier-artisans-atelier-reparation.jpg',kb:[1.05,1.1],tr:'cut'});
+s.img('atelier-artisans-reparateur.png',{x:300,y:960,w:470,fx:'up',at:t0(10)});
+s.img('atelier-artisans-caroline-parle.png',{x:780,y:1030,w:500,fx:'pop',at:t0(11),anim:'talk'});
+// révélation
+s=scene(t0(12),t0(13),{bg:'atelier-artisans-chaufferie.jpg',kb:[1.15,1.25],tr:'cut'});
+s.img('atelier-artisans-chauffagiste-stupefait.png',{x:540,y:980,w:640,fx:'none',anim:'shake'});
+s=scene(t0(13),t0(14),{bg:'atelier-artisans-chaufferie.jpg',kb:[1.1,1.15],tr:'cut'});
+s.img('atelier-artisans-chauffagiste-stupefait.png',{x:300,y:1000,w:480,fx:'none'});
+s.img('atelier-artisans-caroline-clin-oeil.png',{x:760,y:1000,w:560,fx:'pop',at:t0(13),anim:'talk'});
+// CTA
+s=scene(t0(14),C.dur+1,{bg:'atelier-artisans-chaufferie.jpg',kb:[1.1,1.2],tr:'cut'});
+s.img('atelier-artisans-caroline-clin-oeil.png',{x:540,y:720,w:720,fx:'pop',at:t0(14),anim:'talk'});
+s.el('<div class="cta">COMMENTE<br>« CAROLINE »</div>',{x:540,y:1180,fx:'slam',at:M('Tu veux')+1.0,anim:'pulse'});
+s.txt('<div class="top" style="font-size:40px">Plombier · boulanger · pizzeria · dépannage</div>',{x:540,y:1450,fx:'up',at:M('Tu veux')+1.6});
+CAP.show=t=>t<t0(14)+1.0;
+// surcouches globales : compteur + agenda (après le rembobinage)
+const ov=scene(t0(3)+.4,t0(14),{z:50,tr:'cut'});
+ov.node.style.background='transparent';
+const cnt=ov.el('<div class="cnt"><img src="../kit/atelier-artisans-compteur-clients.png"><span id="cn">0 CLIENT</span></div>',{x:540,y:150,w:620,fx:'drop',at:t0(3)+.6});
+const ag=ov.el('<div class="ag"><img src="../kit/atelier-artisans-carte-agenda.png"><ul><li id="a1"></li><li id="a2"></li><li id="a3"></li></ul></div>',{x:540,y:480,w:640,fx:'pop',at:t0(6)+.6});
+const A=[[t0(6)+.6,'Demain 8 h · chaudière'],[t0(9)+.4,'Samedi 10 h · gâteau ×12'],[t0(11)+.4,'Jeudi 14 h · machine à café']];
+ov.fn(t=>{let n=A.filter(a=>t>=a[0]).length;document.getElementById('cn').textContent=n+(n>1?' CLIENTS':' CLIENT');
+  A.forEach((a,i)=>{const e=document.getElementById('a'+(i+1));e.textContent=t>=a[0]?a[1]:'';});
+  const hide=t>=t0(12)&&t<t0(13);ag.d.style.visibility=hide?'hidden':'visible';
+  cnt.d.style.transform+=t>=t0(12)&&t<t0(13)?' translateY(500px) scale(1.4)':'';});
+thumbAt(t0(12)+.8,'<i class="k">3 clients</i> <i>la tête</i><br><i>dans la chaudière</i>');
+render(0);
+</script></body></html>

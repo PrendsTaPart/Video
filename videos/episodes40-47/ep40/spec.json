@@ -1,0 +1,14 @@
+{"mode":"dial","tail":3.2,
+"lines":[
+["pat","patron",0.0,1.95,"Mon concurrent me pique tous mes clients.",0.5],
+["caro","caroline",0.0,2.0,"Je sais. C'est moi qui l'aide.",0.5],
+["pat","patron",2.2,3.5,"Tu bosses pour lui ?",0.3],
+["caro","caroline",2.1,4.75,"Ses clients appellent à 22 h. Je décroche.",0.3],
+["pat","patron",3.7,4.95,"Et ses réservations ?",0.3],
+["caro","caroline",4.8,7.95,"Je les pose sur son plan de salle. Que des vraies tables libres.",0.3],
+["pat","patron",5.1,6.2,"Et quand c'est complet ?",0.3],
+["caro","caroline",8.0,10.6,"Liste d'attente. Et je rappelle pour confirmer.",0.3],
+["pat","patron",6.4,7.76,"Et moi, je fais comment ?",0.5],
+["caro","caroline",10.7,14.45,"Ce soir, je bosse pour toi. Et demain, c'est toi qu'on appelle en premier.",0.4],
+["caro","caroline",14.5,18.0,"Commente ÉQUIPE, et je te présente toute l'équipe IA de FoodEatUp.",0.6]],
+"marks":["Mon concurrent","Je sais.","Tu bosses","Ses clients","22","Et ses","Je les pose","Que des","Et quand","Liste","je rappelle","Et moi,","Ce soir,","Et demain,","Commente"]}

@@ -1,0 +1,18 @@
+{"mode":"dial","tail":3.2,
+"lines":[
+["cli","cliente",0.0,1.95,"Ça fait trois fois que j'appelle…",0.5],
+["art","artisan",0.0,2.05,"Non ! J'ai la tête dans la chaudière !",0.3],
+["cli","cliente",2.1,4.75,"Tant pis, j'appelle quelqu'un d'autre.",0.3],
+["caro","caroline",0.0,2.9,"On rembobine. Cette fois, je décroche.",1.4],
+["caro","caroline",3.0,5.62,"Chauffage Martin, Caroline à l'appareil, bonjour !",0.6],
+["cli","cliente",4.9,7.75,"Ma chaudière est en panne, je gèle !",0.3],
+["caro","caroline",5.7,7.6,"Un technicien passe demain à 8 h.",0.3],
+["cli","cliente",8.0,9.44,"Oh, merci !",0.6],
+["cl2","clients",0.0,2.5,"Un gâteau d'anniversaire pour 12, samedi ?",0.3],
+["caro","caroline",7.65,9.75,"Noté, prêt samedi à 10 h !",0.6],
+["cl2","clients",2.6,5.12,"Ma machine à café fait un bruit bizarre…",0.3],
+["caro","caroline",9.82,11.98,"Jeudi, 14 h, c'est noté.",0.7],
+["art","artisan",2.12,4.96,"Trois clients pendant que j'avais la tête dans la chaudière ?!",0.4],
+["caro","caroline",12.05,14.65,"Toi, tu répares. Moi, je décroche.",0.6],
+["caro","caroline",14.72,16.96,"Tu veux la même ? Commente CAROLINE.",0.4]],
+"marks":["Ça fait","Non !","Tant pis,","On rembobine.","Chauffage Martin,","Ma chaudière","Un technicien","Oh, merci","Un gâteau","Noté,","Ma machine","Jeudi,","Trois clients","Toi,","Tu veux"]}

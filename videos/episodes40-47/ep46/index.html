@@ -1,0 +1,79 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 46 : lui n'a pas l'IA, l'autre oui</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter'}#stage{background:#0e0b1f}
+#cap{font-weight:900;font-size:66px;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.8);letter-spacing:-1px}
+#cap i.k{background:#E8452C;padding:0 12px;border-radius:8px;text-shadow:none}
+#cap i.g{background:#1fb35a}
+.half{width:1080px;height:950px;background-size:cover;background-position:center;border-radius:0}
+.half.dim{filter:brightness(.45) saturate(.7)}
+.lab{font-weight:900;font-size:34px;color:#fff;padding:10px 22px;border-radius:999px;white-space:nowrap;box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.bub{position:relative;width:560px}.bub img{width:100%;display:block}.bub span{position:absolute;left:0;right:0;top:44%;transform:translateY(-50%);text-align:center;font-weight:900;font-size:40px;color:#fff;white-space:nowrap}
+.big{font-weight:900;font-size:96px;color:#fff;text-align:center;line-height:1.02;text-shadow:0 8px 30px rgba(0,0,0,.8)}
+.big b{background:#1fb35a;padding:0 14px;border-radius:10px}
+.cta{font-weight:900;font-size:110px;color:#111;background:#FFB648;border-radius:28px;padding:10px 44px;box-shadow:0 14px 0 #7a4a00;text-align:center;line-height:1}
+.prix{position:relative;width:330px}.prix img{width:100%;display:block}.prix span{position:absolute;left:12%;right:4%;top:50%;transform:translateY(-50%);font-weight:900;font-size:38px;color:#3a2600;text-align:center}
+</style></head><body><div id="stage"><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=90;CAP.group=4;CAP.kw=new Set(['IA','personne','perd','oublient','haut','non.']);
+const GOOD=new Set(['Caroline','cuisine.','recalcule','marge.','points,','reviennent.','bas,']);
+onFrame(t=>{document.querySelectorAll('#cap i').forEach(e=>{if(GOOD.has(e.textContent))e.classList.add('k','g')})});
+const half=(s,f,top,dim)=>s.el(`<div class="half ${dim?'dim':''}" style="background-image:url(../kit/${f})"></div>`,{x:540,y:top?485:1445,fx:'none'});
+function split(a,b,fTop,fBot){const s=scene(a,b,{bgColor:'#0e0b1f',tr:'cut'});half(s,fTop,true,true);half(s,fBot,false,false);
+  s.img('iso-duel-nuit-separateur-ecran.png',{x:540,y:965,w:1180,fx:'none',z:5});
+  s.el('<div class="lab" style="background:#c8283a">SANS IA</div>',{x:150,y:900,fx:'none',z:6});
+  s.el('<div class="lab" style="background:#1fb35a">AVEC FOODEATUP</div>',{x:220,y:1030,fx:'none',z:6});return s;}
+const bub=(txt,col)=>`<div class="bub"><img src="../kit/iso-duel-nuit-bulle-etat.png"><span style="color:${col||'#fff'}">${txt}</span></div>`;
+// intro
+let s=scene(M('Deux restos,'),M('19 h'),{bg:'iso-duel-nuit-rue-deux-restos.jpg',kb:[1.05,1.15]});
+s.img('iso-duel-nuit-facade-sans-ia.png',{x:290,y:1150,w:520,fx:'up',at:.6});
+s.img('iso-duel-nuit-facade-avec-ia.png',{x:790,y:1150,w:540,fx:'up',at:.9});
+s.el('<div class="lab" style="background:#c8283a">SANS IA</div>',{x:290,y:860,fx:'pop',at:M('Un seul')});
+s.el('<div class="lab" style="background:#1fb35a">AVEC IA</div>',{x:790,y:860,fx:'pop',at:M('Un seul')+.3});
+s.img('iso-duel-nuit-pastille-toi.png',{x:900,y:1450,w:170,fx:'pop',at:M('Un seul')+.6,anim:'bob'});
+// 1. téléphone
+s=split(M('19 h'),M('Coup de'),'iso-duel-nuit-interieur-resto.jpg','iso-duel-nuit-interieur-resto.jpg');
+s.img('iso-duel-nuit-telephone-sonne.png',{x:540,y:430,w:300,fx:'pop',at:M('le téléphone'),anim:'shake'});
+s.img('iso-duel-nuit-telephone-sonne.png',{x:300,y:1420,w:260,fx:'pop',at:M('le téléphone'),anim:'shake',out:M('En bas, Caroline')});
+s.el(bub('📵 Personne'),{x:540,y:700,fx:'pop',at:M('En haut, personne ne décroche.')});
+s.img('commun-caroline-parle.png',{x:300,y:1420,w:330,fx:'pop',at:M('En bas, Caroline'),anim:'talk'});
+s.el(bub('✅ Table · 21 h'),{x:720,y:1620,fx:'pop',at:M('En bas, Caroline')+.4});
+// 2. coup de feu
+s=split(M('Coup de'),M('Le prix du'),'iso-duel-nuit-salle-plongee.jpg','iso-duel-nuit-salle-plongee.jpg');
+s.img('iso-duel-nuit-ticket-cuisine.png',{x:540,y:480,w:300,fx:'pop',at:M('En haut, une'),anim:'sway'});
+s.fn(t=>{const it=s.items.find(i=>i.d.innerHTML.includes('ticket-cuisine'));});
+s.el(bub('🧾 Ticket perdu'),{x:540,y:740,fx:'pop',at:M('et le ticket')});
+s.img('iso-duel-nuit-serveur.png',{x:330,y:1470,w:300,fx:'up',at:M('En bas, elle')});
+s.img('iso-duel-nuit-ticket-cuisine.png',{x:760,y:1400,w:260,fx:'right',at:M('En bas, elle')+.2});
+s.el(bub('→ Cuisine ✓'),{x:720,y:1650,fx:'pop',at:M('En bas, elle')+.6});
+const ticketTop=s.items[3];
+s.fn(t=>{const a=M('et le ticket');if(t>a){const p=cl((t-a)/1.2);ticketTop.d.style.transform=`translate(-50%,-50%) translate(${p*500}px,${-p*300}px) rotate(${p*220}deg)`;ticketTop.d.style.opacity=1-p;}});
+// 3. prix du steak
+s=split(M('Le prix du'),M('Le lendemain.'),'iso-duel-nuit-interieur-resto.jpg','iso-duel-nuit-interieur-resto.jpg');
+s.el('<div class="lab" style="background:#FFB648;color:#3a2600;font-size:52px;padding:14px 34px">🥩 Steak +0,30 €</div>',{x:540,y:420,fx:'drop',at:M('Le prix du')+.2});
+s.el('<div class="lab" style="background:#FFB648;color:#3a2600;font-size:52px;padding:14px 34px">🥩 Steak +0,30 €</div>',{x:540,y:1340,fx:'drop',at:M('Le prix du')+.2});
+s.el(bub('🙈 Personne ne voit'),{x:540,y:700,fx:'pop',at:M('En haut, personne ne le')});
+s.el(bub('📊 Marge recalculée'),{x:540,y:1640,fx:'pop',at:M('En bas, la fiche')});
+s.img('iso-duel-nuit-patron.png',{x:930,y:1450,w:220,fx:'up',at:M('En bas, la fiche')+.3});
+// 4. lendemain
+s=split(M('Le lendemain.'),M('Le prix, n\'importe'),'iso-duel-nuit-carrefour-vide.jpg','iso-duel-nuit-carrefour-vide.jpg');
+s.img('iso-duel-nuit-client-marche.png',{x:540,y:520,w:220,fx:'none',at:M('En haut, les')});
+s.el(bub('💤 Ils oublient'),{x:540,y:760,fx:'pop',at:M('En haut, les')});
+s.img('iso-duel-nuit-clients-file.png',{x:540,y:1430,w:620,fx:'up',at:M('En bas, ils')});
+s.el(bub('⭐ +points · ils reviennent'),{x:540,y:1660,fx:'pop',at:M('En bas, ils')+.4,sc:1.1});
+const walker=s.items[5];
+s.fn(t=>{const a=M('En haut, les');const p=cl((t-a)/2.2);walker.d.style.transform=`translate(-50%,-50%) translate(${p*520}px,${-p*160}px) scale(${1-.4*p})`;walker.d.style.opacity=t<a?0:1-p*.8;});
+// morale
+s=scene(M('Le prix, n\'importe'),M('Commente IA,'),{bg:'iso-duel-nuit-rue-deux-restos.jpg',kb:[1.15,1.25]});
+s.el('<div class="big">Le prix se copie<br>en une nuit.</div>',{x:540,y:700,fx:'pop',at:M('Le prix, n\'importe')+.2});
+s.el('<div class="big"><b>L\'organisation, non.</b></div>',{x:540,y:1050,fx:'slam',at:M('L\'organisation,')});
+CAP.show=t=>t<M('Le prix, n\'importe');
+// CTA
+s=scene(M('Commente IA,'),C.dur+1,{bg:'iso-duel-nuit-rue-deux-restos.jpg',kb:[1.2,1.3]});
+s.img('iso-duel-nuit-facade-avec-ia.png',{x:540,y:1180,w:760,fx:'up',at:M('Commente IA,')});
+s.el('<div class="cta">COMMENTE<br>« IA »</div>',{x:540,y:560,fx:'slam',at:M('Commente IA,')+.2,anim:'pulse'});
+thumbAt(M('En bas, Caroline')+.8,'<i>Même rue.</i> <i class="k">Un seul</i> <i>a l\'IA.</i>');
+render(0);
+</script></body></html>

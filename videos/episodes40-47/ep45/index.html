@@ -1,0 +1,58 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 45 : le symbole € qui fait dépenser</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css"><link rel="stylesheet" href="../ed.css">
+<style>
+.menu{width:720px;font-family:'Inter';font-size:46px;font-weight:700}
+.menu h4{font-family:'JetBrains Mono';font-size:28px;letter-spacing:4px;margin-bottom:10px;color:#555}
+.menu p{display:flex;justify-content:space-between;border-bottom:2px dashed #ccc;padding:8px 0}
+.bar{position:absolute;bottom:0;width:150px;background:#111;border-radius:10px 10px 0 0}
+.feat{width:900px;display:flex;align-items:center;gap:30px;font-weight:900;font-size:60px}
+.feat img{width:230px}
+</style></head><body><div id="stage"><div id="hdr"><span>MENU · #45 · CAS · PRIX</span></div><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=1500;CAP.group=3;CAP.kw=new Set(['disparu','12','Cornell','symbole','seuls','lettres','dépensé','plus','argent','mal','détail','FoodEatUp','digitale','QR','écran','suit','MENU','tuto']);
+const menu=(h,p)=>`<div class="card menu"><h4>${h}</h4><p><span>Pizza</span><b>${p[0]}</b></p><p><span>Burger</span><b>${p[1]}</b></p><p style="border:0"><span>Tiramisu</span><b>${p[2]}</b></p></div>`;
+let s=scene(M('Sur certains'),M('Des chercheurs'),{tr:'cut'});
+const m0=s.el(menu('NOS PLATS',['12 €','14 €','7 €']),{x:540,y:620,fx:'pop',at:.3});
+s.fn(t=>{const b=m0.d.querySelectorAll('b');if(t>=M('le symbole')+.6){b[0].textContent='12';b[1].textContent='14';b[2].textContent='7';}});
+s.el('<div class="num" style="font-size:220px;color:#E8452C">12</div>',{x:540,y:1080,fx:'slam',at:M('Juste 12.')});
+s.el('<div class="tag r">PAS « 12 € »</div>',{x:540,y:1240,fx:'pop',at:M('Pas 12')});
+s=scene(M('Des chercheurs'),M('Résultat :'),{tr:'cut'});
+s.el('<div class="tag r">ÉTUDE · CORNELL</div>',{x:540,y:300,fx:'drop',at:M('Des chercheurs')});
+s.el(menu('MENU A',['12 €','14 €','7 €']),{x:540,y:620,fx:'left',at:M('les prix avec'),sc:.78});
+s.el(menu('MENU B',['12','14','7']),{x:540,y:950,fx:'right',at:M('les prix en'),sc:.78});
+s.el(menu('MENU C',['douze euros','quatorze euros','sept euros']),{x:540,y:1280,fx:'left',at:M('et les prix'),sc:.78});
+s=scene(M('Résultat :'),M('Mais pourquoi'),{tr:'cut'});
+s.el('<div class="mono">RÉSULTAT</div>',{x:540,y:330,fx:'fade',at:M('Résultat :')});
+s.fn(t=>{});
+const H=[['€',260,'#bbb'],['12',380,'#1f9d55'],['douze',180,'#bbb']];
+H.forEach(([n,h,c],i)=>{s.el(`<div style="width:170px;height:${h}px;background:${c};border-radius:12px 12px 0 0"></div>`,{x:300+i*240,y:1150-h/2,fx:'up',at:M('Résultat :')+.3+i*.2});
+  s.el(`<div class="mono" style="font-size:30px">${n}</div>`,{x:300+i*240,y:1200,fx:'fade',at:M('Résultat :')+.3});});
+s.el('<div class="tag g">LE PLUS ↑</div>',{x:540,y:720,fx:'slam',at:M('ont dépensé')});
+s=scene(M('Mais pourquoi'),M('Alors sur'),{cls:'dark',tr:'cut'});
+s.img('editorial-mentaliste-point-interrogation.png',{x:540,y:700,w:360,fx:'pop',at:M('Mais pourquoi'),out:M('Le symbole rappelle')-.1});
+s.el('<div class="tag" style="background:#fff;color:#111">12 €</div>',{x:540,y:520,fx:'pop',at:M('Le symbole rappelle')});
+s.img('editorial-mentaliste-carte-bancaire-douleur.png',{x:540,y:850,w:420,fx:'pop',at:M('Le symbole rappelle')+.3,anim:'shake'});
+s.el('<div class="ser" style="font-size:90px">payer fait mal</div>',{x:540,y:1180,fx:'up',at:M('Et payer,')});
+CAP.top=t=>1450;
+s=scene(M('Alors sur'),M('Tu changes'),{tr:'cut'});
+s.el('<div class="mono">TA CARTE · FOODEATUP</div>',{x:540,y:300,fx:'fade',at:M('Alors sur')});
+s.el('<div class="feat"><img src="../kit/editorial-mentaliste-carte-visite-digitale.png"><div>Carte digitale</div></div>',{x:540,y:530,fx:'left',at:M('ta carte digitale,')});
+s.el('<div class="feat"><img src="../kit/editorial-mentaliste-qr-chevalet.png"><div>Menu QR code</div></div>',{x:540,y:800,fx:'left',at:M('ton menu')});
+s.el('<div class="feat"><img src="../kit/editorial-mentaliste-display-vertical.png" style="width:150px;margin:0 20px"><div>Affiches sur écran</div></div>',{x:540,y:1110,fx:'left',at:M('et tes affiches')});
+s=scene(M('Tu changes'),M('Commente MENU,'),{tr:'cut'});
+s.img('editorial-mentaliste-smartphone-menu.png',{x:300,y:720,w:380,fx:'up',at:M('Tu changes')});
+s.img('editorial-mentaliste-display-comptoir.png',{x:720,y:620,w:560,fx:'up',at:M('Tu changes')+.3});
+s.img('editorial-mentaliste-qr-chevalet.png',{x:760,y:1010,w:300,fx:'up',at:M('Tu changes')+.6});
+s.el('<div class="tag r">1 MODIF → TOUT SUIT</div>',{x:540,y:1250,fx:'slam',at:M('tout suit,')});
+s.img('editorial-mentaliste-carte-bancaire-joyeuse.png',{x:200,y:1100,w:240,fx:'pop',at:M('tout suit,')+.4,anim:'bob'});
+s=scene(M('Commente MENU,'),C.dur+1,{cls:'red',tr:'cut'});
+s.el('<div class="end">COMMENTE<br>MENU</div>',{x:540,y:620,fx:'slam',at:M('Commente MENU,')});
+s.img('editorial-mentaliste-restaurateur-pensif.png',{x:540,y:1090,w:440,fx:'up',at:M('Commente MENU,')+.4});
+s.el('<div class="ctab">Je t\'envoie le tuto</div>',{x:540,y:1480,fx:'pop',at:M('Commente MENU,')+1});
+CAP.show=t=>t<M('Commente MENU,');
+onFrame(t=>document.body.classList.toggle('dk',t>=M('Mais pourquoi')&&t<M('Alors sur')));
+thumbAt(M('Juste 12.')+.6,'<i>Pourquoi</i> <i class="k">12</i> <i>vend plus</i><br><i>que 12 € ?</i>');
+render(0);
+</script></body></html>

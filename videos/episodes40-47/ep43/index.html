@@ -1,0 +1,66 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 43 : patron d'une agence IA</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Press+Start+2P&family=Inter:wght@800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+html,body{background:#ECE8E0}
+#stage{background:#ECE8E0}
+.sc{left:40px;top:300px;width:1000px;height:960px;border-radius:26px;box-shadow:0 18px 40px rgba(0,0,0,.25)}
+.sc .bg{inset:-3%}
+#cap{font-family:'DM Serif Display',serif;font-size:76px;color:#C8283A;line-height:1.05}
+#cap i{color:#C8283A}#cap i.k{color:#7a0f1c;text-decoration:underline;text-decoration-thickness:5px;text-underline-offset:8px}
+#hdr{position:absolute;left:40px;right:40px;top:120px;height:150px;background:#f6f1e7;border-radius:18px;box-shadow:0 6px 18px rgba(0,0,0,.12);display:flex;align-items:center;gap:22px;padding:0 30px;z-index:60}
+#hdr .st{font-size:54px;color:#E8572A}
+#hdr b{display:block;font-family:'Inter';font-weight:900;font-size:40px;color:#1b1b1b;text-transform:uppercase}
+#hdr small{display:block;font-family:'Inter';font-weight:900;font-size:26px;color:#E8572A;text-transform:uppercase;margin-top:4px}
+#prog{position:absolute;left:60px;right:60px;top:58px;height:20px;z-index:60;display:flex;justify-content:space-between;align-items:center}
+#prog:before{content:"";position:absolute;left:0;right:0;top:9px;height:3px;background:#2b6b4a}
+#prog i{position:relative;width:20px;height:20px;border-radius:50%;background:#ECE8E0;border:3px solid #2b6b4a;display:block}
+#prog i.on{background:#2b6b4a}
+.px{font-family:'Press Start 2P';color:#F2C14E;text-shadow:4px 4px 0 #000;text-align:center;line-height:1.4}
+.lab{font-family:'Press Start 2P';font-size:24px;color:#fff;background:#1B2A4A;border:4px solid #F2C14E;padding:10px 14px;white-space:nowrap}
+.scr{position:relative}.scr img{width:100%;display:block}.scr span{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;font-family:'Press Start 2P';color:#F2C14E;font-size:44px}
+.app{position:relative}.app img{width:100%;display:block}.app ul{position:absolute;left:23%;top:28.5%;list-style:none;font-family:'Press Start 2P';font-size:25px;color:#1B2A4A;line-height:2.45;font-weight:bold}
+.cta{font-family:'Press Start 2P';font-size:54px;color:#F2C14E;background:#1B2A4A;border:8px solid #F2C14E;padding:30px;text-align:center;line-height:1.5;box-shadow:0 10px 0 #000}
+</style></head><body><div id="stage"><div id="prog"></div><div id="hdr"><div class="st">✳︎</div><div><b id="hb"></b><small id="hs"></small></div></div><div id="scenes"></div><div id="cap"></div><div style="position:absolute;left:0;right:0;top:1790px;text-align:center;font-family:Inter;font-weight:900;font-size:34px;color:#1B2A4A;z-index:60">PLAN'IT <span style="color:#E8572A">×</span> BRAINDCODE</div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=1320; CAP.group=4; CAP.kw=new Set(['ville','Plan\'It','MCP','routines','matin','BraindCode','boutiques','patron','IA','AGENCE']);
+const HDR=[[0,'Il a tout construit','une ville d\'agents IA'],[M('Ça s\'appelle'),'Plan\'It','l\'orchestrateur des patrons'],[M('Chaque boutique'),'Une boutique = un MCP','CRM · resto · site · réseaux'],[M('les branche'),'Tout au même endroit','routines chaque matin'],[M('Et avec'),'Plugin BraindCode','Claude Code construit'],[M('Tu viens'),'Tu es le patron','ton agence IA'],[M('Commente AGENCE,'),'Commente AGENCE','je t\'envoie le lien']];
+const prog=document.getElementById('prog'); for(let i=0;i<8;i++){const e=document.createElement('i');prog.appendChild(e)}
+onFrame(t=>{let k=0;HDR.forEach((h,i)=>{if(t>=h[0])k=i});const h=HDR[k];document.getElementById('hb').textContent=h[1];document.getElementById('hs').textContent=h[2];
+  const hd=document.getElementById('hdr');const p=cl((t-h[0])/.3);hd.style.transform=`translateY(${(1-ebk(p))*-30}px)`;
+  [...prog.children].forEach((e,i)=>e.classList.toggle('on',i<=Math.floor(t/C.dur*8)));});
+// les coordonnées des items sont relatives à la fenêtre (1000 × 960)
+let s=scene(M("Quelqu'un vient"),M("Ça s'appelle"),{bg:'ville-pixel-skyline-nuit.jpg',kb:[1.1,1.2],tr:'cut'});
+s.img('ville-pixel-foule-robots.png',{x:500,y:700,w:860,fx:'up',at:M('une ville'),anim:'bob'});
+s.el('<div class="px" style="font-size:40px">UNE VILLE<br>D\'AGENTS IA</div>',{x:500,y:300,fx:'pop',at:M('une ville')+.3});
+s=scene(M("Ça s'appelle"),M('Chaque boutique'),{bg:'ville-pixel-facade-enseigne.jpg',kb:[1.15,1.25],tr:'cut'});
+s.el('<div class="scr"><img src="../kit/ville-pixel-compteur.png"><span>PLAN\'IT</span></div>',{x:500,y:470,w:760,fx:'slam',at:M("Ça s'appelle")+.4,anim:'pulse'});
+s=scene(M('Chaque boutique'),M('les branche'),{bg:'ville-pixel-rue-boutiques.jpg',kb:[1.05,1.12],tr:'cut'});
+const shops=[['CRM','ton CRM,','ville-pixel-robot-neutre.png'],['RESTO','ton restaurant,','ville-pixel-robot-casque.png'],['SITE','ton site,','ville-pixel-robot-developpeur.png'],['RÉSEAUX','tes réseaux.','ville-pixel-robot-sorcier.png']];
+shops.forEach(([n,m,r],i)=>{const x=[255,745,255,745][i],y=[300,300,690,690][i];
+  s.img('ville-pixel-boutique-vitrine.png',{x,y,w:380,fx:'pop',at:M(m)-.15});
+  s.img(r,{x,y:y+40,w:150,fx:'pop',at:M(m)+.05,anim:'bob'});
+  s.el(`<div class="lab">${n}</div>`,{x,y:y-150,fx:'drop',at:M(m)});});
+s.el('<div class="lab" style="font-size:30px;background:#E8572A">= SERVEURS MCP</div>',{x:500,y:900,fx:'up',at:M('Chaque boutique')+.8});
+s=scene(M('les branche'),M('Et avec'),{bg:'ville-pixel-interieur-tableau.jpg',kb:[1.1,1.18],tr:'cut'});
+s.img('ville-pixel-cable-prise.png',{x:500,y:170,w:700,fx:'left',at:M('les branche')+.1});
+s.el('<div class="app"><img src="../kit/ville-pixel-fenetre-app.png"><ul><li id="r1">POINT DU JOUR</li><li id="r2">KPI</li><li id="r3">ALERTES</li><li id="r4">ROUTINES</li></ul></div>',{x:500,y:560,w:620,fx:'up',at:M('et les fait')});
+s.el('<div class="lab" style="font-size:34px;background:#E8572A">07:30 · CHAQUE MATIN</div>',{x:500,y:900,fx:'pop',at:M('chaque matin,')});
+s.fn(t=>{[['r1',M('chaque matin,')+.5],['r2',M('tes KPI,')],['r3',M('tes alertes.')],['r4',M('et les fait')+.4]].forEach(([id,a])=>{const e=document.getElementById(id);e.style.color=t>=a?'#2b6b4a':'#1B2A4A';e.textContent=e.textContent.replace(/^✓ /,'');if(t>=a)e.textContent='✓ '+e.textContent;});});
+s=scene(M('Et avec'),M('Tu viens'),{bg:'ville-pixel-skyline-nuit.jpg',kb:[1.2,1.1],tr:'cut'});
+s.img('ville-pixel-ordinateur-retro.png',{x:300,y:430,w:440,fx:'pop',at:M('Et avec')});
+s.el('<div class="lab">CLAUDE CODE</div>',{x:300,y:180,fx:'drop',at:M('Claude Code')});
+s.img('ville-pixel-robot-developpeur.png',{x:330,y:780,w:200,fx:'pop',at:M('Claude Code')+.3,anim:'bob'});
+s.img('ville-pixel-porte-sas.png',{x:740,y:430,w:340,fx:'pop',at:M('Claude Code')+.6});
+s.img('ville-pixel-boutique-vitrine.png',{x:740,y:760,w:360,fx:'drop',at:M('et les déclare')});
+s.el('<div class="lab" style="background:#E8572A">+ DÉCLARÉE DANS PLAN\'IT</div>',{x:620,y:930,fx:'pop',at:M('et les déclare')+.6});
+s=scene(M('Tu viens'),M('Commente AGENCE,'),{bg:'ville-pixel-coucher-soleil.jpg',kb:[1.05,1.15],tr:'cut'});
+s.el('<div class="scr"><img src="../kit/ville-pixel-compteur.png"><span style="font-size:30px">PROPRIÉTAIRE<br>AGENCE IA</span></div>',{x:500,y:430,w:720,fx:'slam',at:M('Tu viens')+.3});
+s.img('ville-pixel-robot-neutre.png',{x:500,y:760,w:260,fx:'up',at:M('Tu viens'),anim:'bob'});
+s=scene(M('Commente AGENCE,'),C.dur+1,{bg:'ville-pixel-facade-enseigne.jpg',kb:[1.1,1.2],tr:'cut'});
+s.el('<div class="cta">COMMENTE<br>« AGENCE »</div>',{x:500,y:400,fx:'slam',at:M('Commente AGENCE,')+.2,anim:'pulse'});
+s.img('ville-pixel-robot-court.png',{x:240,y:780,w:220,fx:'left',at:M('Commente AGENCE,')+.4,anim:'bob'});
+thumbAt(M('Chaque boutique')+4.6,'<i>Tu viens de devenir</i><br><i class="k">patron d\'une agence IA</i>');
+render(0);
+</script></body></html>
