@@ -1,0 +1,230 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 37 : bravo Sadok</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>:root{--bg:#0b0b0d;--ink:#fff;--accent:#FF8A1F;--hi:#FF8A1F;--subink:#fff;--subbg:transparent;--font:'Inter',sans-serif}</style>
+<link rel="stylesheet" href="base.css">
+<style>
+#stage{background:radial-gradient(120% 60% at 50% 105%,#3a1a05 0%,#140b06 35%,#0b0b0d 70%)}
+.floor{position:absolute;left:-600px;right:-600px;top:1120px;height:1400px;transform:perspective(700px) rotateX(72deg);transform-origin:50% 0;
+ background-image:linear-gradient(rgba(255,138,31,.16) 2px,transparent 2px),linear-gradient(90deg,rgba(255,138,31,.16) 2px,transparent 2px);background-size:140px 140px;
+ -webkit-mask-image:linear-gradient(to bottom,transparent,#000 30%,#000 70%,transparent)}
+.dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 2px,transparent 2px);background-size:90px 90px}
+#hud{position:absolute;left:56px;right:56px;top:52px;display:flex;justify-content:space-between;font-weight:700;font-size:34px;z-index:40}
+#cap{position:absolute;left:70px;right:70px;top:1500px;z-index:50;font-weight:800;font-size:66px;line-height:1.12;letter-spacing:-1px}
+#cap i{font-style:normal;transition:none}#cap i.h{color:var(--accent)}
+#sub{display:none!important}
+.mono{font-family:'JetBrains Mono',monospace}
+.m{position:absolute;width:var(--s);height:var(--s);z-index:30;filter:drop-shadow(0 12px 30px rgba(255,120,20,.45))}
+.panel{position:absolute;background:#17171b;border:2px solid #2a2a31;border-radius:30px;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.lab{font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:700;letter-spacing:2px;color:var(--accent);text-transform:uppercase}
+.hn{position:absolute;left:0;right:0;text-align:center;font-weight:900;letter-spacing:-12px;line-height:1}
+.or{color:var(--accent)}
+.chipx{position:absolute;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:25px;padding:12px 22px;border-radius:14px;background:#1d1d22;border:2px solid #34343c;color:#e9e9ee;white-space:nowrap}
+.chipx.o{background:var(--accent);border-color:var(--accent);color:#000}
+.row{position:absolute;left:70px;right:70px;height:120px;display:flex;align-items:center;gap:26px;padding:0 30px;background:#17171b;border:2px solid #2a2a31;border-radius:24px;font-size:34px;font-weight:700}
+.row .n{width:62px;height:62px;border-radius:50%;background:#26262d;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--accent);flex:none}
+.row small{display:block;font-family:'JetBrains Mono',monospace;font-size:22px;color:#9a9aa5;font-weight:500;margin-top:4px}
+.row .ok{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:24px;color:#000;background:#3ddc84;border-radius:999px;padding:8px 18px}
+.tile{position:absolute;border-radius:18px;overflow:hidden}
+.tool{position:absolute;font-family:'JetBrains Mono',monospace;font-size:21px;font-weight:700;color:#d6d6de;background:#18181d;border:2px solid #2c2c33;border-radius:12px;padding:10px 14px;white-space:nowrap}
+.tool.o{color:#000;background:var(--accent);border-color:var(--accent)}
+.log{position:absolute;left:50px;right:50px;display:grid;grid-template-columns:120px 1fr 170px;gap:16px;align-items:center;padding:20px 24px;border-bottom:2px solid #26262d;font-family:'JetBrains Mono',monospace;font-size:23px;color:#d6d6de}
+.log b{color:#fff}.log em{font-style:normal;justify-self:end;font-size:21px;color:#000;background:#3ddc84;border-radius:999px;padding:6px 14px}
+.app{position:absolute;width:300px;height:430px;background:#17171b;border:2px solid #2a2a31;border-radius:30px;padding:30px;text-align:left}
+.app .ic{width:110px;height:110px;border-radius:26px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:30px;color:#000}
+.app h3{font-size:36px;margin-top:26px;line-height:1.1}.app p{font-family:'JetBrains Mono',monospace;font-size:19px;color:#9a9aa5;margin-top:10px}
+.app .st{position:absolute;left:30px;bottom:30px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:20px;border-radius:999px;padding:8px 16px}
+.win{position:absolute;border-radius:34px;border:4px solid #2a2a31;background:#000;box-shadow:0 30px 90px rgba(0,0,0,.6)}
+.person{position:absolute;width:96px;height:96px;border-radius:50%;background:#26262d;border:3px solid #3a3a44}
+.person:after{content:"";position:absolute;left:27px;top:14px;width:36px;height:36px;border-radius:50%;background:#9a9aa5}
+.person:before{content:"";position:absolute;left:17px;top:54px;width:56px;height:30px;border-radius:30px 30px 6px 6px;background:#9a9aa5}
+.person.o{border-color:var(--accent)}.person.o:after,.person.o:before{background:var(--accent)}
+.ck{position:absolute;left:70px;right:70px;height:130px;display:flex;align-items:center;gap:28px;padding:0 34px;background:#17171b;border:2px solid #2a2a31;border-radius:26px;font-size:46px;font-weight:800}
+.ck .v{margin-left:auto;width:64px;height:64px;border-radius:50%;background:#3ddc84;color:#000;display:flex;align-items:center;justify-content:center;font-size:38px}
+.ph{position:absolute;width:var(--p);height:var(--p);border-radius:50%;overflow:hidden;border:8px solid var(--accent);box-shadow:0 0 90px rgba(255,138,31,.45)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.doc{position:absolute;border-radius:20px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.6)}.doc img{display:block;width:100%}
+.card{position:absolute;width:460px;background:#17171b;border:2px solid #2a2a31;border-radius:24px;padding:14px;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.card img{display:block;width:100%;height:280px;object-fit:cover;object-position:top left;border-radius:14px;background:#fff}
+.card b{display:block;font-size:30px;margin:14px 6px 4px}
+.node{position:absolute;width:200px;height:170px;background:#17171b;border:2px solid #2a2a31;border-radius:26px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;font-size:24px;font-weight:700}
+.node .ic{font-size:56px}
+.dash{position:absolute;height:6px;background:repeating-linear-gradient(90deg,var(--accent) 0 22px,transparent 22px 40px)}
+.co{position:absolute;width:400px;height:200px;background:#17171b;border:2px solid #2a2a31;border-radius:26px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.co b{font-size:40px}.co span{font-family:'JetBrains Mono',monospace;font-size:24px;color:#9a9aa5}
+.wall{position:absolute;width:60px;height:240px;border-radius:14px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:40px}
+s{text-decoration-color:var(--accent);text-decoration-thickness:8px}
+</style></head><body><div id="stage">
+<div class="dots"></div><div class="floor"></div>
+<div id="hud"><span>michael.kebail</span><span id="tm">2:00</span></div>
+
+<!-- 0 · aujourd'hui je veux féliciter quelqu'un -->
+<div class="scene">
+  <div class="lab" style="position:absolute;left:0;right:0;text-align:center;top:180px" data-at="+0.05">épisode 37 · mon équipe</div>
+  <div class="hn" style="top:300px;font-size:84px;letter-spacing:-2px;color:#5a5a64;line-height:1.1" data-at="0:6">pas un logiciel…</div>
+  <div class="ph" style="--p:330px;left:375px;top:470px" data-at="0:17"><img src="a/sadok.jpg"></div>
+  <div class="hn" style="top:880px;font-size:128px;letter-spacing:-4px;white-space:nowrap" data-at="0:21" data-fx="slam">BRAVO <span class="or">SADOK !</span></div>
+  <div class="chipx" style="left:250px;top:1110px" data-at="0:26"><img src="a/braindcode.png" style="height:34px;vertical-align:middle;filter:invert(1)"></div>
+  <div class="chipx" style="left:600px;top:1104px;padding:8px 18px" data-at="0:26"><img src="a/rapidocrm.png" style="height:46px;vertical-align:middle"> <span style="vertical-align:middle">RapidoCRM</span></div>
+  <svg class="m" style="--s:170px;left:780px;top:430px" data-at="0:24" viewBox="0 0 100 100"><use href="#star"/></svg>
+</div>
+
+<!-- 1 · son arrivée chez BraindCode -->
+<div class="scene">
+  <div class="lab" style="position:absolute;left:70px;top:190px" data-at="+0.05">son stage de fin d'études</div>
+  <div class="doc" style="left:70px;top:260px;width:430px;transform:rotate(-4deg)" data-at="1:5"><img src="a/cover.png"></div>
+  <div class="chipx" style="left:560px;top:300px" data-at="1:13">ESPRIT</div>
+  <div class="chipx o" style="left:560px;top:380px" data-at="1:5">BraindCode</div>
+  <div class="chipx" style="left:560px;top:460px" data-at="1:17">à distance</div>
+  <div class="panel" style="left:560px;right:70px;top:560px;padding:30px" data-at="1:25">
+    <div style="display:flex;align-items:center;gap:20px"><img src="a/rapidocrm.png" style="width:84px;background:#fff;border-radius:18px;padding:8px"><div style="font-size:44px;font-weight:800">RapidoCRM</div></div>
+    <div class="mono" style="font-size:22px;color:#9a9aa5;margin-top:14px">le logiciel de gestion<br>des clients</div>
+  </div>
+  <div class="hn" style="top:930px;font-size:78px;letter-spacing:-2px;line-height:1.1" data-at="1:34">+ de l'<span class="or">intelligence<br>artificielle</span></div>
+  <svg class="m" style="--s:150px;left:860px;top:1120px" data-at="1:36" viewBox="0 0 100 100"><use href="#star"/></svg>
+</div>
+
+<!-- 2 · le défi -->
+<div class="scene">
+  <div class="hn" style="top:200px;font-size:70px;letter-spacing:-2px;color:#5a5a64" data-at="2:5"><s>un simple chatbot</s></div>
+  <div class="node" style="left:70px;top:420px" data-at="2:9"><div class="ic">💬</div>votre demande</div>
+  <div class="dash" style="left:270px;width:120px;top:500px" data-at="2:13" data-fx="fade"></div>
+  <svg class="m" style="--s:170px;left:400px;top:410px" data-at="2:12" viewBox="0 0 100 100"><use href="#star"/></svg>
+  <div class="mono" style="position:absolute;left:380px;width:210px;top:590px;text-align:center;font-size:24px;font-weight:700" data-at="2:12">l'IA comprend</div>
+  <div class="dash" style="left:590px;width:120px;top:500px" data-at="2:20" data-fx="fade"></div>
+  <div class="node" style="left:720px;top:420px;border-color:var(--accent)" data-at="2:20"><img src="a/rapidocrm.png" style="width:70px;background:#fff;border-radius:14px;padding:6px">agit dans<br>le logiciel</div>
+  <div class="co" style="left:70px;top:800px" data-at="2:28"><b>Entreprise A</b><span>ses clients</span></div>
+  <div class="wall" style="left:520px;top:780px" data-at="2:24" data-fx="slam"><svg width="40" height="52" viewBox="0 0 20 26"><rect x="1" y="11" width="18" height="14" rx="3" fill="#000"/><path d="M5 11V7a5 5 0 0 1 10 0v4" stroke="#000" stroke-width="3" fill="none"/></svg></div>
+  <div class="co" style="left:610px;top:800px" data-at="2:30"><b>Entreprise B</b><span>ses clients</span></div>
+  <div class="hn" style="top:1100px;font-size:60px;letter-spacing:-1px;line-height:1.15" data-at="2:24">chacun ne voit<br><span class="or">que ses données</span></div>
+</div>
+
+<!-- 3 · le MCP RapidoCRM -->
+<div class="scene">
+  <div class="lab" style="position:absolute;left:0;right:0;text-align:center;top:180px" data-at="+0.05">la porte d'entrée · MCP</div>
+  <div class="doc" style="left:60px;right:60px;top:240px;background:#fff;padding:14px" data-at="3:5"><img src="a/arch.png" style="width:100%"></div>
+  <div class="mono" style="position:absolute;left:60px;top:850px;font-size:20px;color:#9a9aa5" data-at="3:5">schéma de son rapport</div>
+  <div class="chipx o" style="right:60px;top:842px" data-at="3:10">135 outils · selon son rapport</div>
+  <div class="doc" style="left:60px;right:60px;top:920px;height:520px;background:#fff" data-at="3:14"><img src="a/claude-mcp.png" style="width:100%;margin-top:-6px"></div>
+  <div class="chipx" style="left:80px;top:944px;background:#fff;border-color:#e5e0d8" data-at="3:14"><img src="a/claude.webp" style="height:30px;vertical-align:middle"></div>
+  <div class="mono" style="position:absolute;right:70px;top:1452px;font-size:20px;color:#9a9aa5" data-at="3:14">test réel du rapport · e-mail masqué</div>
+</div>
+
+<!-- 4 · bien plus qu'un MCP -->
+<div class="scene">
+  <div class="hn" style="top:180px;font-size:76px;letter-spacing:-2px" data-at="4:0">il ne s'est pas <span class="or">arrêté là</span></div>
+  <div class="card" style="left:60px;top:330px;transform:rotate(-2deg)" data-at="4:8"><img src="a/aide-bot.png"><b>L'assistant intégré</b></div>
+  <div class="card" style="left:560px;top:330px;transform:rotate(2deg)" data-at="4:14"><img src="a/prompts.png"><b>169 prompts prêts à l'emploi</b></div>
+  <div class="card" style="left:60px;top:760px;transform:rotate(1.5deg)" data-at="4:21"><img src="a/workflow.png"><b>Les automatisations</b></div>
+  <div class="card" style="left:560px;top:760px;transform:rotate(-1.5deg)" data-at="4:25"><img src="a/appels-histo.png"><b>L'agent vocal</b></div>
+  <div class="mono" style="position:absolute;left:0;right:0;top:1190px;text-align:center;font-size:22px;color:#9a9aa5" data-at="4:8">captures de son rapport</div>
+  <svg class="m" style="--s:150px;left:465px;top:1250px" data-at="4:28" viewBox="0 0 100 100"><use href="#star"/></svg>
+</div>
+
+<!-- 5 · sa progression -->
+<div class="scene">
+  <div class="lab" style="position:absolute;left:70px;top:190px" data-at="+0.05">son parcours · selon son rapport</div>
+  <div class="row" style="top:260px" data-at="5:4"><span class="n">I</span><div>Les fondations<small>prise en main · tutoriels</small></div></div>
+  <div class="row" style="top:400px" data-at="5:12"><span class="n">II</span><div>La chaîne commerciale<small>prospection · pipeline · le MCP</small></div></div>
+  <div class="row" style="top:540px" data-at="5:17"><span class="n">III</span><div>L'agent vocal<small>appels · automatisations</small></div></div>
+  <div class="row" style="top:680px;border-color:var(--accent)" data-at="5:25"><span class="n">✓</span><div>Mise en production<small>recette avec l'équipe de test</small></div></div>
+  <div class="chipx o" style="left:70px;top:840px" data-at="5:20">il a appris à travailler avec Claude</div>
+  <div class="hn" style="top:980px;font-size:96px;letter-spacing:-3px;line-height:1.05" data-at="5:27">il a pris<br><span class="or">confiance</span></div>
+</div>
+
+<!-- 6 · le travail d'équipe -->
+<div class="scene">
+  <div class="hn" style="top:240px;font-size:110px;letter-spacing:-3px" data-at="6:7">toute <span class="or">l'équipe</span></div>
+  <div id="ppl" style="display:none"></div>
+  <div class="chipx" style="left:110px;top:840px" data-at="6:11">qui teste</div>
+  <div class="chipx" style="left:400px;top:840px" data-at="6:13">qui corrige</div>
+  <div class="chipx o" style="left:700px;top:840px" data-at="6:16">qui s'entraide</div>
+</div>
+
+<!-- 7 · le message à Sadok -->
+<div class="scene">
+  <div class="ph" style="--p:380px;left:350px;top:240px" data-at="+0.1"><img src="a/sadok.jpg"></div>
+  <svg class="m" style="--s:190px;left:700px;top:200px" data-at="7:2" viewBox="0 0 100 100"><use href="#star"/></svg>
+  <div class="hn" style="top:690px;font-size:128px;letter-spacing:-4px;white-space:nowrap" data-at="7:2" data-fx="slam">BRAVO <span class="or">SADOK !</span></div>
+  <div class="hn" style="top:900px;font-size:52px;letter-spacing:-1px;color:#cfcfd6;line-height:1.2" data-at="7:10">continue à apprendre,<br>à <span class="or">repousser tes limites</span></div>
+  <div class="hn" style="top:1100px;font-size:48px;letter-spacing:-1px" data-at="7:20">toute l'équipe est fière de toi</div>
+</div>
+
+<!-- 8 · message final + écran de fin -->
+<div class="scene">
+  <div class="hn" style="top:300px;font-size:64px;letter-spacing:-1px;line-height:1.15;color:#cfcfd6" data-at="8:0">une entreprise grandit grâce<br>aux <span class="or">personnes</span> qui construisent<br>ses logiciels</div>
+  <svg class="m" style="--s:230px;left:425px;top:620px" data-at="8:14" viewBox="0 0 100 100"><use href="#star"/></svg>
+  <div class="mono" style="position:absolute;left:0;right:0;top:920px;text-align:center;font-size:34px;font-weight:700" data-at="8:19">ÉPISODE <span class="or">37</span>/365</div>
+  <div class="hn" style="top:990px;font-size:110px;letter-spacing:-4px" data-at="8:19">BRAVO <span class="or">SADOK !</span></div>
+  <div class="mono" style="position:absolute;left:0;right:0;top:1150px;text-align:center;font-size:24px;color:#9a9aa5" data-at="8:19">BRAINDCODE × RAPIDOCRM × IA × MCP</div>
+</div>
+<div id="sub"><span></span></div>
+<div id="cap"></div>
+
+<div id="thumb" style="background:radial-gradient(120% 60% at 50% 105%,#3a1a05 0%,#140b06 35%,#0b0b0d 70%)">
+  <div class="dots"></div><div class="floor"></div>
+  <img src="a/arch.png" style="position:absolute;left:40px;right:40px;top:120px;width:1000px;opacity:.10;filter:invert(1)">
+  <div class="ph" style="--p:470px;left:305px;top:250px"><img src="a/sadok.jpg"></div>
+  <svg style="position:absolute;width:210px;height:210px;left:700px;top:200px" viewBox="0 0 100 100"><use href="#star"/></svg>
+  <div class="hn" style="top:800px;font-size:128px;letter-spacing:-4px;white-space:nowrap">BRAVO <span class="or">SADOK !</span></div>
+  <div class="hn" style="top:990px;font-size:56px;letter-spacing:-1px;color:#cfcfd6">IL A CONNECTÉ RAPIDOCRM À L'IA</div>
+  <div style="position:absolute;left:0;right:0;top:1110px;display:flex;justify-content:center;gap:40px;align-items:center">
+    <img src="a/rapidocrm.png" style="height:120px;background:#fff;border-radius:24px;padding:10px">
+    <img src="a/braindcode.png" style="height:60px;filter:invert(1)">
+  </div>
+  <div class="mono" style="position:absolute;left:0;right:0;top:1600px;text-align:center;font-size:34px;font-weight:700">ÉPISODE <span class="or">37</span>/365</div>
+</div>
+</div>
+</div>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+<g id="star"><path fill="#FF8A1F" d="M50 2 57 22 74 8 70 30 92 26 78 43 98 52 76 58 88 78 66 72 64 95 50 78 36 95 34 72 12 78 24 58 2 52 22 43 8 26 30 30 26 8 43 22Z"/>
+<ellipse cx="41" cy="48" rx="4" ry="6" fill="#1a0d02"/><ellipse cx="59" cy="48" rx="4" ry="6" fill="#1a0d02"/><path d="M42 60q8 7 16 0" stroke="#1a0d02" stroke-width="3.5" fill="none" stroke-linecap="round"/></g>
+</defs></svg>
+
+<script src="cfg.js"></script>
+<script>
+// Petit groupe de testeurs : 12 silhouettes, apparition décalée.
+(function () {
+  const host = document.getElementById('ppl');
+  for (let k = 0; k < 12; k++) {
+    const e = document.createElement('div');
+    e.className = 'person' + (k % 4 === 1 ? ' o' : '');
+    e.dataset.at = '6:' + (2 + Math.floor(k / 4)); e.dataset.d = '.3';
+    e.style.left = (190 + (k % 6) * 120) + 'px'; e.style.top = (500 + Math.floor(k / 6) * 130) + 'px';
+    host.parentNode.insertBefore(e, host);
+  }
+})();
+</script>
+<script src="engine.js"></script>
+<script>
+// Sous-titres mot à mot (style référence) : blanc, mots clés en orange, compte à rebours en haut à droite.
+(function () {
+  const C = window.CFG, cap = document.getElementById('cap'), tm = document.getElementById('tm');
+  const HI = new Set(['sadok', 'sadok.', 'bravo', 'fier', 'fiere', 'equipe', 'braindcode', 'esprit', 'rapidocrm', 'intelligence', 'artificielle', 'chatbot', 'ia', 'mcp', 'claude', 'assistant', 'prompts', 'automatisations', 'vocal', 'progresser', 'confiance', 'limites', 'personnes', 'entreprise', 'donnees', 'porte', 'telephone']);
+  const norm = w => w.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9.]/g, '').replace(/\.$/, '');
+  const show = {};
+  const groups = [];
+  C.words.forEach((s, i) => {
+    let cur = [];
+    s.forEach((w, k) => {
+      let txt = show[i + ':' + k] ?? w[0];
+      if (txt === '') return;
+      cur.push([txt, w[1]]);
+      if (cur.length >= 4 || /[.,:;…?!]$/.test(txt)) { groups.push(cur); cur = []; }
+    });
+    if (cur.length) groups.push(cur);
+  });
+  groups.forEach((g, j) => g.end = j + 1 < groups.length ? Math.min(groups[j + 1][0][1], g[g.length - 1][1] + 1.2) : g[g.length - 1][1] + 1.2);
+  const base = window.render;
+  window.render = t => {
+    base(t); document.getElementById('hud').style.display = 'flex';
+    const g = groups.find(g => t >= g[0][1] && t < g.end);
+    cap.innerHTML = g ? g.filter(w => t >= w[1]).map(w => `<i class="${HI.has(norm(w[0])) ? 'h' : ''}">${w[0]}</i>`).join(' ') : '';
+    const r = Math.max(0, Math.ceil(C.dur - t));
+    tm.textContent = `${Math.floor(r / 60)}:${String(r % 60).padStart(2, '0')}`;
+  };
+  const th = window.thumb;
+  window.thumb = () => { th(); cap.innerHTML = ''; document.getElementById('hud').style.display = 'none'; };
+})();
+</script>
+</body></html>
