@@ -1,0 +1,87 @@
+1
+00:00:00,300 --> 00:00:02,040
+Quelqu'un vient de construire une ville entière
+
+2
+00:00:02,040 --> 00:00:03,660
+d'agents IA pour les patrons.
+
+3
+00:00:03,660 --> 00:00:04,960
+Ça s'appelle Plan'It.
+
+4
+00:00:04,960 --> 00:00:06,010
+Chaque boutique de la ville,
+
+5
+00:00:06,010 --> 00:00:07,400
+c'est un serveur MCP :
+
+6
+00:00:07,400 --> 00:00:08,280
+ton CRM,
+
+7
+00:00:08,280 --> 00:00:09,100
+ton restaurant,
+
+8
+00:00:09,100 --> 00:00:09,760
+ton site,
+
+9
+00:00:09,760 --> 00:00:10,210
+tes réseaux.
+
+10
+00:00:10,210 --> 00:00:11,800
+Plan'It les branche tous au même endroit,
+
+11
+00:00:11,800 --> 00:00:13,260
+et les fait tourner en routines :
+
+12
+00:00:13,260 --> 00:00:14,040
+chaque matin,
+
+13
+00:00:14,040 --> 00:00:14,980
+ton point du jour,
+
+14
+00:00:14,980 --> 00:00:15,740
+tes KPI,
+
+15
+00:00:15,740 --> 00:00:16,560
+tes alertes.
+
+16
+00:00:16,560 --> 00:00:18,100
+Et avec le plugin BraindCode,
+
+17
+00:00:18,100 --> 00:00:20,020
+Claude Code construit même de nouvelles boutiques,
+
+18
+00:00:20,020 --> 00:00:21,960
+et les déclare directement dans Plan'It.
+
+19
+00:00:21,960 --> 00:00:23,720
+Tu viens de devenir patron d'une agence
+
+20
+00:00:23,720 --> 00:00:24,240
+IA.
+
+21
+00:00:24,240 --> 00:00:25,060
+Commente AGENCE,
+
+22
+00:00:25,060 --> 00:00:26,460
+et je t'envoie le lien.

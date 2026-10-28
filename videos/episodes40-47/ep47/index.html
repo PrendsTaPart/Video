@@ -1,0 +1,70 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 47 : ne fais jamais partir ton client de zéro</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css"><link rel="stylesheet" href="../ed.css">
+<style>
+.stc{width:760px}.stc .h{display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono';font-weight:700;font-size:28px;letter-spacing:2px;margin-bottom:16px}
+.stc .h b{background:#111;color:#fff;border-radius:8px;padding:2px 12px}
+.dots{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.dots i{display:block;aspect-ratio:1;border-radius:50%;border:5px solid #bbb;font-style:normal}
+.dots i.f{background:#E8452C;border-color:#E8452C}
+.pb{width:760px}.pb .r{display:flex;align-items:center;gap:20px;font-weight:900;font-size:64px}
+.pb .tr{height:26px;background:#ddd;border-radius:13px;overflow:hidden;margin-top:12px}.pb .tr div{height:100%;background:#111}
+.shot{border-radius:26px;overflow:hidden;border:10px solid #111;box-shadow:0 30px 60px rgba(0,0,0,.25)}.shot img{display:block;width:100%}
+.mock{width:900px;background:#0F1A23;border-radius:34px;padding:44px;color:#fff;font-family:'Inter';border:10px solid #111}
+.mock small{font-size:30px;color:#9fb0c0}.mock .n{font-weight:900;font-size:130px;line-height:1}.mock .n span{font-size:46px;color:#FFA500}
+.mock .g{height:30px;background:#2a3a48;border-radius:15px;margin:26px 0 14px;overflow:hidden}.mock .g div{height:100%;background:#FFA500;border-radius:15px}
+.mock p{font-size:38px;font-weight:700}.mock p b{color:#FFA500}
+</style></head><body><div id="stage"><div id="hdr"><span>FIDÉLITÉ · #47 · CAS · COUP DE POUCE</span></div><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=1500;CAP.group=3;CAP.kw=new Set(['300','designs','8','10','remplis','19','34','double','zéro','but','active','FoodEatUp','Fidélité','10','bienvenue','entamée','30','dessert','rappelle','tampons','FIDÉLITÉ','démo']);
+const card=(lab,n,f,id)=>`<div class="card stc"><div class="h"><span>💧 LAVAGE CLUB</span><b>${lab}</b></div><div class="dots" id="${id}">${Array.from({length:n},(_,i)=>`<i class="${i<f?'f':''}"></i>`).join('')}</div><div class="mono" style="margin-top:14px;color:#777;font-size:22px">${n} TAMPONS · LAVAGE GRATUIT</div></div>`;
+let s=scene(M('Une station'),M('Même offre,'),{tr:'cut'});
+s.el('<div class="mono">💧 STATION DE LAVAGE</div>',{x:540,y:320,fx:'fade',at:.3});
+for(let k=0;k<5;k++) s.el(card('',8,0,'z'+k),{x:540+(k-2)*30,y:720+(k-2)*20,fx:'drop',at:.5+k*.12,rot:(k-2)*5,sc:.7});
+s.el('<div class="num" style="font-size:260px">300</div>',{x:540,y:1120,fx:'slam',at:M('300 cartes')});
+s=scene(M('Même offre,'),M('Neuf mois'),{tr:'cut'});
+s.el('<div class="tag">MÊME OFFRE · 2 DESIGNS</div>',{x:540,y:320,fx:'drop',at:M('Même offre,')});
+s.el(card('A',8,0,'ca'),{x:540,y:640,fx:'left',at:M('Carte A :')});
+const cb=s.el(card('B',10,0,'cb'),{x:540,y:1100,fx:'right',at:M('Carte B :')});
+s.fn(t=>{const d=document.querySelectorAll('#cb i');d.forEach((e,i)=>e.classList.toggle('f',i<2&&t>=M('mais les deux')+.3+i*.25));});
+s=scene(M('Neuf mois'),M('Mais pourquoi'),{tr:'cut'});
+s.el('<div class="tag">9 MOIS PLUS TARD</div>',{x:540,y:320,fx:'drop',at:M('Neuf mois')});
+s.el('<div class="card pb"><div class="r"><span class="mono" style="font-size:34px">A</span><span id="pa">0 %</span></div><div class="tr"><div id="ba" style="width:0"></div></div></div>',{x:540,y:640,fx:'pop',at:M('19 %')-.3});
+s.el('<div class="card pb" style="border-color:#E8452C"><div class="r" style="color:#E8452C"><span class="mono" style="font-size:34px">B</span><span id="pbv">0 %</span></div><div class="tr"><div id="bb" style="width:0;background:#E8452C"></div></div></div>',{x:540,y:960,fx:'pop',at:M('Carte B : 34')-.2});
+s.el('<div class="ser" style="font-size:110px">presque le double</div>',{x:540,y:1240,fx:'up',at:M('Presque le')});
+s.fn(t=>{const a=19*eo((t-M('19 %')+.2)/.8),b=34*eo((t-M('Carte B : 34'))/.9);document.getElementById('pa').textContent=Math.round(a)+' %';document.getElementById('ba').style.width=a+'%';document.getElementById('pbv').textContent=Math.round(Math.max(0,b))+' %';document.getElementById('bb').style.width=Math.max(0,b)+'%';});
+s=scene(M('Mais pourquoi'),M('Sur la tablette'),{cls:'dark',tr:'cut'});
+s.img('editorial-mentaliste-point-interrogation.png',{x:540,y:760,w:360,fx:'pop',at:M('Mais pourquoi'),out:M('Même effort.')-.1});
+s.el('<div class="tag" style="background:#fff;color:#111">= 8 LAVAGES DANS LES 2 CAS</div>',{x:540,y:420,fx:'drop',at:M('Même effort.')});
+s.el(card('B',10,2,'cb2'),{x:540,y:760,fx:'pop',at:M('Mais la carte'),sc:.9});
+s.el('<div class="tag r">DÉPART : 20 %</div>',{x:540,y:1040,fx:'slam',at:M('Mais la carte')+.8});
+s.img('editorial-mentaliste-histogramme.png',{x:540,y:1290,w:400,fx:'up',at:M('Plus on'),out:C.dur});
+const shot=(f)=>`<div class="shot"><img src="img/${f}"></div>`;
+s=scene(M('Sur la tablette'),M('Il voit'),{tr:'cut'});
+s.el('<div class="tag">FOODEATUP FIDÉLITÉ · TABLETTE</div>',{x:540,y:300,fx:'drop',at:M('Sur la tablette')});
+s.el(shot('t01.jpg'),{x:540,y:760,w:960,fx:'pop',at:M('Sur la tablette')+.1,out:M('ton client')});
+s.el(shot('t02.jpg'),{x:540,y:760,w:960,fx:'pop',at:M('ton client'),out:M('Et il ne')});
+s.el('<div class="tag r">10 SECONDES</div>',{x:540,y:1150,fx:'slam',at:M('10 secondes.'),out:M('Et il ne')});
+s.el(shot('t03.jpg'),{x:540,y:760,w:960,fx:'pop',at:M('Et il ne'),out:M('et sa jauge')});
+s.el('<div class="tag g">POINTS DE BIENVENUE</div>',{x:540,y:1150,fx:'slam',at:M('des points'),out:M('et sa jauge')});
+s.el(shot('t04.jpg'),{x:540,y:760,w:960,fx:'pop',at:M('et sa jauge')});
+s.el('<div class="tag r">JAUGE DÉJÀ ENTAMÉE</div>',{x:540,y:1150,fx:'slam',at:M('et sa jauge')+.3});
+s=scene(M('Il voit'),M('Alors offre-lui'),{tr:'cut'});
+s.el('<div class="mock"><small>Bonjour Sarah 👋 · votre solde</small><div class="n">170 <span>pts</span></div><div class="g"><div id="mg" style="width:0"></div></div><p>Plus que <b>30 pts</b> pour « Dessert offert »</p></div>',{x:540,y:720,fx:'pop',at:M('Il voit'),out:M('Et en partant,')});
+s.el('<div class="mono" style="color:#999">EXEMPLE</div>',{x:540,y:1060,fx:'fade',at:M('Il voit'),out:M('Et en partant,')});
+s.el(shot('t12.jpg'),{x:540,y:760,w:960,fx:'pop',at:M('Et en partant,')});
+s.el('<div class="tag r">« À BIENTÔT ! »</div>',{x:540,y:1150,fx:'slam',at:M('Et en partant,')+.4});
+s.fn(t=>{document.getElementById('mg').style.width=(85*eo((t-M('Il voit')-.2)/.9))+'%';});
+s=scene(M('Alors offre-lui'),M('Commente FIDÉLITÉ,'),{tr:'cut'});
+s.el(card('B',10,2,'cb3'),{x:540,y:700,fx:'pop',at:M('Alors offre-lui')});
+s.el('<div class="tag g">+2 TAMPONS OFFERTS ✓</div>',{x:540,y:1000,fx:'slam',at:M('Alors offre-lui')+.8});
+s=scene(M('Commente FIDÉLITÉ,'),C.dur+1,{cls:'red',tr:'cut'});
+s.el('<div class="end">COMMENTE<br>FIDÉLITÉ</div>',{x:540,y:560,fx:'slam',at:M('Commente FIDÉLITÉ,')});
+s.el(shot('t01.jpg'),{x:540,y:1030,w:760,fx:'up',at:M('Commente FIDÉLITÉ,')+.4});
+s.el('<div class="ctab">Je t\'envoie la démo</div>',{x:540,y:1400,fx:'pop',at:M('Commente FIDÉLITÉ,')+1});
+CAP.show=t=>t<M('Commente FIDÉLITÉ,');
+onFrame(t=>document.body.classList.toggle('dk',t>=M('Mais pourquoi')&&t<M('Sur la tablette')));
+thumbAt(M('Carte B : 34')+1.2,'<i>Pourquoi la carte B</i><br><i class="k">marche 2× mieux ?</i>');
+render(0);
+</script></body></html>

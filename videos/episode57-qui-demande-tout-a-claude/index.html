@@ -1,0 +1,67 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 57 : qui ici demande tout à Claude ?</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter'}#stage{background:#141B33}
+#cap{font-weight:600;font-size:52px;color:#fff;text-shadow:0 3px 14px rgba(0,0,0,.9)}#cap i.k{color:#ff6b5e;font-style:normal}
+#who span{font-family:'JetBrains Mono';font-weight:700;font-size:26px;color:#fff;border-radius:999px}
+.pan{width:860px;background:rgba(14,22,48,.92);border:5px solid #4f7dff;border-radius:34px;padding:30px 36px;box-shadow:0 0 50px rgba(79,125,255,.55);color:#fff;font-weight:800}.pan>div{display:flex;flex-direction:column;gap:14px}
+.pan h4{margin:0;font-size:30px;color:#8fb3ff;font-family:'JetBrains Mono'}.pan b{font-size:50px}.pan s{color:#ff6b5e}
+.row{display:flex;justify-content:space-between;font-size:38px;background:rgba(255,255,255,.07);border-radius:14px;padding:10px 18px}
+.row.ko{color:#ff6b5e}.row.ok{color:#5df08a}
+.big{white-space:nowrap;font-weight:900;font-size:84px;color:#fff;text-align:center;line-height:1.05;text-shadow:0 6px 30px rgba(0,0,0,.8)}.big em{font-style:normal;color:#ff6b5e}
+.pill{font-family:'JetBrains Mono';font-weight:700;font-size:34px;color:#fff;background:#E2483D;border-radius:999px;padding:12px 28px;white-space:nowrap}
+.cta{font-weight:900;font-size:100px;color:#fff;background:#E2483D;border-radius:30px;padding:14px 46px;text-align:center;line-height:1;box-shadow:0 0 50px rgba(226,72,61,.6)}.cta small{display:block;font-size:34px;font-weight:700;opacity:.85;margin-bottom:6px}
+</style></head><body><div id="stage"><div id="scenes"></div><div id="who"><span></span></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+const L=C.lines,t0=i=>L[i].t0,t1=i=>L[i].t1;
+CAP.top=1480;CAP.group=5;CAP.kw=new Set(['place.','saumon','Huit','Quatre','Tom.','Léa.','fois.','deuxième.','tout','commandes.','logiciel,','LOGICIEL.']);
+CAP.names={kar:['KARIM · LE PATRON','#2D5BD8'],ine:['INÈS · LA SALLE','#C9A21F'],tom:['TOM · LA CUISINE','#7a8496'],lea:['LÉA · SECONDE','#2f8f5b'],cla:['L\'ASSISTANT','#E2483D']};
+document.getElementById('who').style.top='1400px';
+const R='reunion-nuit-';
+const pan=(h)=>`<div class="pan"><div>${h}</div></div>`;
+function who(a,b,img,o={}){const s=scene(a,b,{bg:R+'place-vide.jpg',kb:[1.08,1.16],tr:'cut'});s.img(R+img,{x:540,y:1050,w:o.w||900,fx:'none',anim:o.anim||'talk'});return s;}
+// ouverture : salle large
+let s=scene(0,t0(1),{bg:R+'salle-large.jpg',kb:[1.05,1.2]});
+s.img(R+'homme-bleu-chuchote.png',{x:540,y:1120,w:820,fx:'up',at:.1});
+s.el('<div class="pill">RÉUNION · 23 H</div>',{x:540,y:300,fx:'drop',at:.3});
+s=scene(t0(1),t0(3),{bg:R+'ville-floue.jpg',kb:[1.05,1.12],tr:'cut'});
+s.img(R+'assistant-halo.png',{x:540,y:720,w:520,fx:'pop',at:t0(1),anim:'float'});
+s.el(pan('<h4>QUESTION À INÈS</h4><b>Commande de saumon</b><span style="font-size:34px">pour samedi</span>'),{x:540,y:1150,fx:'up',at:t0(2)+.3});
+who(t0(3),t0(4),'femme-jaune-chuchote.png');
+s=scene(t0(4),t0(5),{bg:R+'ville-floue.jpg',kb:[1.05,1.1],tr:'cut'});
+s.img(R+'assistant-cube.png',{x:540,y:520,w:260,fx:'pop',at:t0(4),anim:'float'});
+s.el(pan('<h4>COMMANDE SAUMON · SAMEDI</h4><div class="row"><span>Commandé</span><span>8 kg</span></div><div class="row"><span>Prévu</span><span>4 kg</span></div><div class="row ko"><span>Écart</span><span>+ 4 kg</span></div>'),{x:540,y:1000,fx:'up',at:t0(4)+.2});
+who(t0(5),t0(6),'homme-bleu-surpris.png',{anim:'shake'});
+who(t0(6),t0(7),'femme-jaune-surprise.png');
+who(t0(7),t0(8),'homme-blanc-chuchote.png');
+s=scene(t0(8),t0(10),{bg:R+'table-dessus.jpg',kb:[1.05,1.2],tr:'cut'});
+s.img(R+'assistant-cube.png',{x:300,y:900,w:200,fx:'pop',at:t0(8),anim:'float'});
+s.img(R+'assistant-cube.png',{x:780,y:900,w:200,fx:'pop',at:t0(8)+.3,anim:'float'});
+s.el('<div class="pill" style="background:#2D5BD8">ASSISTANT DE TOM → ASSISTANT DE LÉA</div>',{x:540,y:700,fx:'slam',at:t0(8)+.2});
+s.img(R+'cartons-doublon.png',{x:540,y:1180,w:560,fx:'drop',at:M('Passée deux')});
+s.img(R+'pastille-rouge.png',{x:800,y:1060,w:180,fx:'slam',at:M('Passée deux')+.4,anim:'pulse'});
+s.el('<div class="big" style="font-size:64px"><em>PASSÉE DEUX FOIS</em></div>',{x:540,y:420,fx:'slam',at:M('Passée deux')+.2});
+who(t0(10),t0(11),'homme-blanc-surpris.png',{anim:'shake'});
+s=scene(t0(11),t0(13),{bg:R+'ville-floue.jpg',kb:[1.05,1.1],tr:'cut'});
+s.img(R+'camion-livraison.png',{x:540,y:430,w:520,fx:'left',at:t0(11)});
+s.el(pan('<h4>COMMANDES FOURNISSEUR · SAUMON</h4><div class="row"><span>n°1 · Tom</span><span>4 kg</span></div><div class="row" id="r2"><span>n°2 · Léa</span><span>4 kg</span></div>'),{x:540,y:1000,fx:'up',at:t0(11)+.2});
+s.img(R+'coche-verte.png',{x:880,y:820,w:200,fx:'slam',at:M('J\'annule'),z:6});
+s.fn(t=>{const e=document.getElementById('r2');if(e){const k=t>=M('J\'annule')+.3;e.className='row '+(k?'ko':'');e.style.textDecoration=k?'line-through':'none';}});
+s.img(R+'femme-blonde-chuchote.png',{x:300,y:1260,w:560,fx:'up',at:t0(12)-.1});
+s=scene(t0(13),t0(14),{bg:R+'salle-large.jpg',kb:[1.1,1.2],tr:'cut'});
+['homme-bleu-surpris','femme-jaune-surprise','homme-blanc-surpris','femme-blonde-surprise'].forEach((f,i)=>s.img(R+f+'.png',{x:150+i*260,y:1200,w:470,fx:'pop',at:M('Qui ici')+.3+i*.2}));
+s.el('<div class="big">Qui ici demande<br><em>tout à Claude ?</em></div>',{x:540,y:520,fx:'slam',at:M('Qui ici')});
+s.el('<div class="pill" style="background:#2D5BD8">TOUT LE MONDE</div>',{x:540,y:1500,fx:'slam',at:t1(13)+.2});
+// morale
+s=scene(t0(14),C.dur+1,{bg:R+'ville-floue.jpg',kb:[1.05,1.14],tr:'cut'});
+[0,1,2,3].forEach(i=>s.img(R+'assistant-cube.png',{x:180+i*240,y:400,w:150,fx:'pop',at:t0(14)+i*.2,anim:'float'}));
+s.el('<div class="big" style="font-size:66px">4 assistants séparés<br>= <em>2 commandes</em></div>',{x:540,y:660,fx:'pop',at:t0(14)+.3,out:M('Branchés sur')});
+s.el(pan('<h4>LE MÊME LOGICIEL</h4><b>Une seule commande</b><span style="font-size:34px">tout le monde lit la même</span>'),{x:540,y:740,fx:'pop',at:M('Branchés sur'),out:M('Commente LOGICIEL.')});
+s.el('<div class="cta"><small>Écris en commentaire</small>LOGICIEL</div>',{x:540,y:800,fx:'slam',at:M('Commente LOGICIEL.'),z:8});
+s.el('<div class="pill" style="background:#2D5BD8">ÉPISODE 57/365</div>',{x:540,y:1040,fx:'fade',at:M('Commente LOGICIEL.')+1,z:8});
+CAP.show=t=>t<M('Commente LOGICIEL.');
+thumbAt(M('Qui ici')+1.6,'<i>Qui ici demande</i> <i class="k">tout à Claude ?</i>');
+render(0);
+</script></body></html>

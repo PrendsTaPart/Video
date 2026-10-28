@@ -1,0 +1,67 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 41 : six agents construisent ton extension</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Slab:wght@700;800&family=JetBrains+Mono:wght@500;700&family=Inter:wght@800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+#cap{font-family:'Roboto Slab',serif;font-size:74px}
+#cap i{background:#C8283A;color:#fff4e2;padding:2px 16px 6px;margin:4px 3px;box-shadow:0 5px 0 rgba(0,0,0,.35);clip-path:polygon(0 4%,100% 0,98% 96%,2% 100%)}
+#cap i:nth-child(odd){rotate:-2deg}#cap i:nth-child(even){rotate:1.5deg}
+#cap i.k{background:#fff4e2;color:#C8283A}
+.lbl{position:relative;width:960px}.lbl img{width:100%;display:block}
+.lbl span{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;font-family:'Archivo Black';font-size:44px;color:#2a1a10;letter-spacing:1px;text-transform:uppercase}
+.role{font-family:'Archivo Black';font-size:58px;color:#fff;text-transform:uppercase;text-shadow:0 6px 0 #000;letter-spacing:1px}
+.chip{font-family:'Archivo Black';font-size:38px;padding:12px 26px;border-radius:14px;border:5px solid #111;box-shadow:0 8px 0 #111;white-space:nowrap}
+.term{background:#0d1117;border:6px solid #2b2f36;border-radius:22px;padding:26px 30px;font-family:'JetBrains Mono';font-size:30px;color:#c9d1d9;box-shadow:0 20px 50px rgba(0,0,0,.6);text-align:left;white-space:pre}
+.term b{color:#7ee787}.term em{color:#ffa657;font-style:normal}
+.big{font-family:'Archivo Black';font-size:150px;color:#fff;text-shadow:0 10px 0 #C8283A,0 18px 30px rgba(0,0,0,.5);line-height:.9;text-align:center}
+.big small{display:block;font-size:56px;text-shadow:0 5px 0 #000}
+.sw{display:flex;gap:14px}.sw i{width:90px;height:90px;border-radius:18px;border:5px solid #111;display:block}
+.cta{font-family:'Archivo Black';font-size:96px;color:#111;background:#7ee787;border:8px solid #111;box-shadow:0 14px 0 #111;padding:10px 40px;border-radius:24px;text-align:center;line-height:1}
+</style></head><body><div id="stage"><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=1480; CAP.group=3; CAP.kw=new Set(['6','agents','Claude','chantier','charte','Lovable','crédit','MCP','secret','casse','accord','22','17','plugin','BraindCode','Build','BUILD']);
+const lbl=t=>`<div class="lbl"><img src="../kit/theatre-voxel-etiquette-titre.png"><span>${t}</span></div>`;
+function title(s,t,at){s.el(lbl(t),{x:540,y:200,fx:'drop',at:at??s.t0});}
+// 0. accroche
+let s=scene(M("Quelqu'un a"),M('Le chef'),{bg:'theatre-voxel-scene-rideau-ferme.jpg',kb:[1.05,1.15],tr:'cut'});
+title(s,'6 agents construisent ton extension',.3);
+s.img('theatre-voxel-groupe-agents.png',{x:540,y:1000,w:1040,fx:'up',at:.6,anim:'bob'});
+s.el('<div class="chip" style="background:#fff">×6 AGENTS</div>',{x:820,y:620,fx:'slam',at:M('6 agents'),rot:6});
+s.img('theatre-voxel-terminal-vierge.png',{x:300,y:620,w:340,fx:'pop',at:M('6 agents')+.6,rot:-6});
+// rôles
+function role(a,b,agent,name,extra){const s=scene(a,b,{bg:'theatre-voxel-pupitre-gros-plan.jpg',kb:[1.12,1.2],tr:'cut'});
+  title(s,name,a+.05); s.img(agent,{x:540,y:780,w:760,fx:'up',at:a+.05,anim:'bob'}); return s;}
+s=role(M('Le chef'),M('Le designer'),'theatre-voxel-agent-chef-projet.png','Le chef de projet');
+s.img('theatre-voxel-cahier-des-charges.png',{x:860,y:1080,w:330,fx:'drop',at:M('Le chef')+.6,rot:10});
+s.el('<div class="chip" style="background:#ffd23f">12 ÉTAPES</div>',{x:250,y:520,fx:'pop',at:M('Le chef')+1.1,rot:-5});
+s=role(M('Le designer'),M('Le bâtisseur'),'theatre-voxel-agent-designer.png','Le designer');
+s.el('<div class="sw"><i style="background:#2D7FF9"></i><i style="background:#FF8A1F"></i><i style="background:#0F1A23"></i><i style="background:#FCF9E6"></i></div>',{x:540,y:1250,fx:'up',at:M('Le designer')+.8});
+s.el('<div class="chip" style="background:#fff">CHARTE + FIGMA</div>',{x:780,y:470,fx:'pop',at:M('Le designer')+1.2,rot:4});
+s=role(M('Le bâtisseur'),M("L'intégrateur"),'theatre-voxel-agent-batisseur.png','Le bâtisseur');
+s.el('<div class="term"><b>lovable</b> › étape 4/12\n  ✓ écran d\'accueil\n  ✓ connexion\n  … tableau de bord</div>',{x:540,y:1170,fx:'up',at:M('Le bâtisseur')+.9});
+s.el('<div class="chip" style="background:#ffa657">⚠ 1 crédit : on y va ?</div>',{x:540,y:470,fx:'slam',at:M('annonce chaque'),rot:-3});
+s=role(M("L'intégrateur"),M('Le testeur'),'theatre-voxel-agent-securite.png','L\'intégrateur MCP');
+s.el('<div class="chip" style="background:#fff">MCP → SERVEUR</div>',{x:540,y:470,fx:'pop',at:M("L'intégrateur")+.9});
+s.el('<div class="chip" style="background:#7ee787">0 SECRET AU NAVIGATEUR</div>',{x:540,y:1220,fx:'slam',at:M('et vérifie')+.5,rot:-3});
+s=role(M('Le testeur'),M('Et le publicateur'),'theatre-voxel-agent-testeur.png','Le testeur');
+[['jeton expiré',M('jeton expiré,')],['outil absent',M('jeton expiré,')+.7],['entrée invalide',M('jeton expiré,')+1.4]].forEach(([t,a],i)=>s.el(`<div class="chip" style="background:#ff6b6b">✗ ${t}</div>`,{x:[300,760,520][i],y:[460,560,1240][i],fx:'slam',at:a,rot:[-6,5,-2][i]}));
+s=role(M('Et le publicateur'),M('22 skills,'),'theatre-voxel-agent-publicateur.png','Le publicateur');
+s.img('theatre-voxel-panneau-neon-vert.png',{x:540,y:1230,w:620,fx:'pop',at:M('Et le publicateur')+1});
+s.el('<div class="role" style="color:#0d1117;text-shadow:none;font-size:40px">TON ACCORD ?</div>',{x:540,y:1230,fx:'pop',at:M('Et le publicateur')+1.1,anim:'pulse'});
+s.img('theatre-voxel-tampon-bois.png',{x:840,y:520,w:330,fx:'drop',at:M('Et le publicateur')+1.6});
+// chiffres
+s=scene(M('22 skills,'),M('Commente BUILD,'),{bg:'theatre-voxel-scene-rideau-ouvert.jpg',kb:[1.05,1.12],tr:'cut'});
+s.el('<div class="big">22<small>SKILLS</small></div>',{x:290,y:520,fx:'slam',at:M('22 skills,'),z:5});
+s.el('<div class="big">17<small>COMMANDES</small></div>',{x:790,y:520,fx:'slam',at:M('17 commandes,'),z:5});
+s.el('<div class="big" style="font-size:110px">1 PLUGIN</div>',{x:540,y:840,fx:'slam',at:M('un seul'),z:5});
+s.el('<div class="chip" style="background:#fff;font-size:46px">BraindCode Build</div>',{x:540,y:1000,fx:'pop',at:M('un seul')+.8,rot:-2});
+s.img('theatre-voxel-groupe-agents.png',{x:540,y:1240,w:900,fx:'up',at:M('22 skills,')+.2,anim:'bob'});
+s.img('theatre-voxel-confettis.png',{x:540,y:300,w:1000,fx:'fade',at:M('un seul')+.3,anim:'float',z:1,style:'opacity:.7'});
+// CTA
+s=scene(M('Commente BUILD,'),C.dur+1,{bg:'theatre-voxel-scene-rideau-ferme.jpg',kb:[1.1,1.18],tr:'cut'});
+s.el('<div class="cta">COMMENTE<br>« BUILD »</div>',{x:540,y:420,fx:'slam',at:M('Commente BUILD,'),anim:'pulse'});
+s.el('<div class="term" style="font-size:29px"><em>›</em> /plugin marketplace add\n    PrendsTaPart/Plugin-Claude-MCP-BraindCode-\n<em>›</em> /plugin install braindcode-build@rapido</div>',{x:540,y:840,fx:'up',at:M('les deux')});
+s.img('theatre-voxel-agent-juge.png',{x:540,y:1170,w:420,fx:'up',at:M('Commente BUILD,')+.3,anim:'bob'});
+thumbAt(M('6 agents')+1.2,'<i>6 agents Claude</i> <i class="k">construisent</i> <i>ton extension</i>');
+render(0);
+</script></body></html>

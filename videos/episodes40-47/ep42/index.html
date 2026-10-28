@@ -1,0 +1,58 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 42 : la caisse du mois d'une pizzeria</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800;9..144,900&family=Inter:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter'}#stage{background:#3D2414}
+#cap{font-weight:900;font-size:72px;color:#fff;text-shadow:0 5px 18px rgba(0,0,0,.7);letter-spacing:-1px}
+#cap i.k{color:#F2C14E}
+.gold{white-space:nowrap;font-family:'Fraunces';font-weight:900;color:#F2C14E;text-shadow:0 8px 0 #7a4a12,0 14px 30px rgba(0,0,0,.6);text-align:center;line-height:.95}
+.cart{position:relative;width:760px}.cart img{width:100%;display:block}.cart span{position:absolute;left:24%;right:6%;top:50%;transform:translateY(-50%);font-family:'Fraunces';font-weight:900;font-size:72px;color:#F2C14E}
+.cart small{position:absolute;left:24%;top:9%;font-weight:800;font-size:20px;letter-spacing:3px;color:#e7c79a}
+.delta{white-space:nowrap;font-family:'Fraunces';font-weight:900;font-size:64px;color:#ff6b5a;text-shadow:0 4px 0 #3a0d07}
+.chip{font-weight:900;font-size:42px;color:#2a170b;background:#FFF1D6;border:5px solid #2a170b;border-radius:18px;padding:12px 24px;box-shadow:0 8px 0 rgba(0,0,0,.35);white-space:nowrap}
+.chip.r{background:#ffdfd8}.chip.b{background:#2D7FF9;color:#fff}
+.lab{font-weight:900;font-size:34px;color:#FFF1D6;letter-spacing:2px;text-transform:uppercase;text-shadow:0 3px 0 #000}
+.cta{font-family:'Fraunces';font-weight:900;font-size:110px;color:#2a170b;background:#F2C14E;border:8px solid #2a170b;box-shadow:0 14px 0 #2a170b;border-radius:28px;padding:14px 44px;text-align:center;line-height:.95}
+.ex{position:absolute;right:40px;top:1850px;z-index:70;font-weight:800;font-size:22px;color:#e7c79a;letter-spacing:2px;background:rgba(0,0,0,.35);padding:6px 14px;border-radius:999px}
+</style></head><body><div id="stage"><div id="scenes"></div><div class="ex">CHIFFRES D'EXEMPLE</div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=1450;CAP.group=4;CAP.kw=new Set(['20','000','reste','commentaire','TVA','1','800','5','500','7','900','2','100','200','60','fuite','FoodEatUp','Caroline','CAISSE','huit','boucles.']);
+const STEP=[[0,'20 000 €',''],[M("D'abord la")+1.4,'18 200 €','− 1 800 €'],[M('Ensuite les')+1.4,'12 700 €','− 5 500 €'],[M("Puis l'équipe")+1.2,'4 800 €','− 7 900 €'],[M('Le loyer')+.9,'3 300 €','− 1 500 €'],[M("L'énergie,")+1.8,'1 200 €','− 2 100 €']];
+const pz=(s,f,at)=>s.img(f,{x:150,y:1180,w:260,fx:'up',at:at??s.t0,anim:'bob',z:4});
+// accroche
+let s=scene(M('Ta pizzeria'),M('Écris ton'),{bg:'caisse-pizzeria-facade-nuit.jpg',kb:[1.05,1.15]});
+s.el('<div class="gold" style="font-size:170px">20 000 €<br><span style="font-size:90px">par mois</span></div>',{x:540,y:560,fx:'slam',at:.4,z:3});
+s.img('caisse-pizzeria-pluie-billets.png',{x:540,y:700,w:1100,fx:'down',at:.6,anim:'float',z:1,style:'opacity:.75'});
+s.el('<div class="gold" style="font-size:110px">Ce qui reste ?</div>',{x:540,y:1000,fx:'pop',at:M('Ce qui')+.3});
+pz(s,'caisse-pizzeria-pizzaiolo-pointe.png');
+s=scene(M('Écris ton'),M("D'abord la"),{bg:'caisse-pizzeria-fond-brun.jpg',tr:'cut'});
+s.img('caisse-pizzeria-enveloppe-fermee.png',{x:540,y:620,w:560,fx:'pop',at:M('Écris ton')});
+s.el('<div class="gold" style="font-size:150px;color:#c8283a;text-shadow:none">? €</div>',{x:540,y:640,fx:'slam',at:M('Écris ton')+.3});
+s.el('<div style="position:relative;width:620px"><img src="../kit/caisse-pizzeria-bulle-coeur.png" style="width:100%"><span style="position:absolute;left:12%;top:38%;font-weight:900;font-size:56px;color:#2a170b">… €</span></div>',{x:540,y:980,fx:'up',at:M('Écris ton')+.6});
+pz(s,'caisse-pizzeria-pizzaiolo-pointe.png');
+function post(a,b,bg,items,pose){const s=scene(a,b,{bg,kb:[1.05,1.12],tr:'cut'});items(s);pz(s,pose||'caisse-pizzeria-pizzaiolo-pointe.png');return s;}
+post(M("D'abord la"),M('Ensuite les'),'caisse-pizzeria-fond-brun.jpg',s=>{s.img('caisse-pizzeria-tresor-public.png',{x:560,y:760,w:780,fx:'up',at:M("D'abord la")});s.el('<div class="chip">TVA</div>',{x:540,y:420,fx:'drop',at:M("D'abord la")+.3});});
+post(M('Ensuite les'),M("Puis l'équipe"),'caisse-pizzeria-cuisine.jpg',s=>{s.img('caisse-pizzeria-mozzarella-balance.png',{x:360,y:720,w:440,fx:'up',at:M('Ensuite les')});s.img('caisse-pizzeria-ingredients.png',{x:740,y:760,w:520,fx:'up',at:M('Ensuite les')+.3});s.el('<div class="chip">INGRÉDIENTS</div>',{x:540,y:420,fx:'drop',at:M('Ensuite les')+.2});s.el('<div class="chip r">+ grammages au jugé</div>',{x:620,y:1080,fx:'slam',at:M('Et chaque'),rot:-3});},'caisse-pizzeria-pizzaiolo-loupe.png');
+post(M("Puis l'équipe"),M('Le loyer'),'caisse-pizzeria-fond-brun.jpg',s=>{s.img('caisse-pizzeria-enveloppe-billets.png',{x:340,y:720,w:420,fx:'up',at:M("Puis l'équipe"),rot:-6});s.img('caisse-pizzeria-enveloppe-billets.png',{x:740,y:740,w:420,fx:'up',at:M("Puis l'équipe")+.3,rot:5});s.el('<div class="chip">ÉQUIPE · CHARGES COMPRISES</div>',{x:540,y:420,fx:'drop',at:M("Puis l'équipe")+.2});});
+post(M('Le loyer'),M("L'énergie,"),'caisse-pizzeria-fond-brun.jpg',s=>{s.img('caisse-pizzeria-porte-local.png',{x:560,y:760,w:520,fx:'up',at:M('Le loyer')});s.el('<div class="chip">LOYER</div>',{x:540,y:420,fx:'drop',at:M('Le loyer')+.2});});
+post(M("L'énergie,"),M('Il te reste'),'caisse-pizzeria-fond-brun.jpg',s=>{s.img('caisse-pizzeria-four-briques.png',{x:330,y:780,w:460,fx:'up',at:M("L'énergie,")});s.img('caisse-pizzeria-trois-factures.png',{x:760,y:760,w:520,fx:'up',at:M("L'énergie,")+.4});s.el('<div class="chip">ÉNERGIE · ASSURANCE · COMPTABLE</div>',{x:540,y:420,fx:'drop',at:M("L'énergie,")+.2});});
+post(M('Il te reste'),M('Chaque ligne'),'caisse-pizzeria-facade-fermee.jpg',s=>{s.el('<div class="gold" style="font-size:180px">≈ 1 200 €</div>',{x:540,y:640,fx:'slam',at:M('Il te reste')+.6});s.el('<div class="chip r">pour 60 h / semaine</div>',{x:540,y:900,fx:'pop',at:M('Pour 60')});},'caisse-pizzeria-pizzaiolo-surpris.png');
+const LEAK=[['⚖️ grammages','les grammages,'],['🗑️ pertes','les pertes,'],['⏱️ heures en trop','les heures'],['📞 appels ratés','les appels'],['👋 clients perdus','les clients']];
+post(M('Chaque ligne'),M('FoodEatUp suit'),'caisse-pizzeria-fond-brun.jpg',s=>{s.el('<div class="gold" style="font-size:96px">Chaque ligne<br>a sa fuite</div>',{x:540,y:430,fx:'pop',at:M('Chaque ligne')});LEAK.forEach(([t,m],i)=>s.el(`<div class="chip r">${t}</div>`,{x:[320,760,320,760,540][i],y:[680,680,830,830,980][i],fx:'pop',at:M(m)}));});
+const MOD=[['Fiches techniques','fiches techniques,'],['Stocks','stocks,'],['Planning','planning,'],['Caroline · téléphone','Caroline au'],['Fidélité','fidélité,'],['Compta','compta.']];
+post(M('FoodEatUp suit'),M('Commente CAISSE,'),'caisse-pizzeria-fond-brun.jpg',s=>{s.el('<div class="gold" style="font-size:90px;color:#fff;text-shadow:0 6px 0 #2D7FF9">FOOD<span style="color:#FF8A1F">EAT</span>UP</div>',{x:540,y:420,fx:'slam',at:M('FoodEatUp suit')});MOD.forEach(([t,m],i)=>s.el(`<div class="chip b">${t}</div>`,{x:[310,770,310,770,310,770][i],y:[650,650,800,800,950,950][i],fx:'pop',at:M(m)-.1}));});
+let c=scene(M('Commente CAISSE,'),C.dur+1,{bg:'caisse-pizzeria-facade-nuit.jpg',kb:[1.1,1.2],tr:'cut'});
+c.el('<div class="cta">COMMENTE<br>« CAISSE »</div>',{x:540,y:620,fx:'slam',at:M('Commente CAISSE,')+.2,anim:'pulse'});
+c.el('<div class="chip">Diagnostic des 8 boucles</div>',{x:540,y:930,fx:'up',at:M('Commente CAISSE,')+1});
+pz(c,'caisse-pizzeria-pizzaiolo-pointe.png');
+CAP.show=t=>t<M('Commente CAISSE,');
+// cartouche « caisse du mois » (au-dessus de tout)
+const ov=scene(0,M('Commente CAISSE,'),{z:50,tr:'cut'});ov.node.style.background='transparent';
+const cart=ov.el('<div class="cart"><img src="../kit/caisse-pizzeria-cartouche-caisse.png"><small>TA CAISSE DU MOIS</small><span id="cv">20 000 €</span></div>',{x:540,y:150,fx:'drop',at:M('Ce qui')});
+const dl=ov.el('<div class="delta" id="dv"></div>',{x:800,y:280,fx:'none'});
+ov.fn(t=>{let k=0;STEP.forEach((st,i)=>{if(t>=st[0])k=i});document.getElementById('cv').textContent=STEP[k][1];const dt=t-STEP[k][0];const d=document.getElementById('dv');d.textContent=STEP[k][2];d.style.opacity=k&&dt<1.6?1-cl((dt-1.1)/.5):0;dl.d.style.transform=`translate(-50%,-50%) translateY(${-cl(dt/.4)*20}px)`;
+  cart.d.style.transform+=k&&dt<.3?` scale(${1.08-.08*dt/.3})`:'';});
+thumbAt(M('Il te reste')+1.2,'<i>20 000 € par mois…</i><br><i class="k">il te reste combien ?</i>');
+render(0);
+</script></body></html>

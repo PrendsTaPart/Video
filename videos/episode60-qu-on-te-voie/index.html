@@ -1,0 +1,78 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 60 : il faut qu'on te voie</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter'}#stage{background:#0e0b1f}
+#cap{font-weight:900;font-size:66px;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.8);letter-spacing:-1px}
+#cap i.k{background:#E8452C;padding:0 12px;border-radius:8px;text-shadow:none}
+#cap i.g{background:#1fb35a}
+.half{width:1080px;height:950px;background-size:cover;background-position:center;border-radius:0}
+.half.dim{filter:brightness(.45) saturate(.7)}
+.lab{font-weight:900;font-size:34px;color:#fff;padding:10px 22px;border-radius:999px;white-space:nowrap;box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.bub{position:relative;width:560px}.bub img{width:100%;display:block}.bub span{position:absolute;left:0;right:0;top:44%;transform:translateY(-50%);text-align:center;font-weight:900;font-size:40px;color:#fff;white-space:nowrap}
+.big{font-weight:900;font-size:96px;color:#fff;text-align:center;line-height:1.02;text-shadow:0 8px 30px rgba(0,0,0,.8)}
+.big b{background:#1fb35a;padding:0 14px;border-radius:10px}
+.cta{font-weight:900;font-size:110px;color:#111;background:#FFB648;border-radius:28px;padding:10px 44px;box-shadow:0 14px 0 #7a4a00;text-align:center;line-height:1}
+.prix{position:relative;width:330px}.prix img{width:100%;display:block}.prix span{position:absolute;left:12%;right:4%;top:50%;transform:translateY(-50%);font-weight:900;font-size:38px;color:#3a2600;text-align:center}
+.card{width:820px;background:rgba(20,16,44,.88);border:4px solid #FFB648;border-radius:28px;padding:22px 30px;color:#fff;font-weight:900;font-size:44px;text-align:center;box-shadow:0 0 40px rgba(255,182,72,.4)}.card small{display:block;font-size:26px;font-weight:700;color:#c9bfe8}
+.bars{display:flex;gap:60px;align-items:flex-end;height:420px}.bars div{width:200px;border-radius:16px 16px 0 0;text-align:center}.bars span{display:block;font-weight:900;font-size:34px;color:#fff;margin-top:12px}
+</style></head><body><div id="stage"><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=150;CAP.group=4;CAP.kw=new Set(['seul','chaîne','queue','calme.','meilleure.','rien.','remarquent.','prix.','perte.','voie.','tous.','récompense','VITRINE.']);
+const I='iso-duel-nuit-';
+const card=(t,sub)=>`<div class="card">${t}${sub?`<small>${sub}</small>`:''}</div>`;
+// 1. le seul resto
+let s=scene(0,M('Et puis'),{bg:I+'interieur-resto.jpg',kb:[1.05,1.18]});
+s.img(I+'patron.png',{x:540,y:1250,w:420,fx:'up',at:.4});
+s.img(I+'client-assis.png',{x:250,y:1400,w:320,fx:'pop',at:M('Tu connais')});
+s.el('<div class="lab" style="background:#1fb35a">« Bonjour Martine ! »</div>',{x:300,y:1180,fx:'pop',at:M('Tu connais')+.6});
+s.el('<div class="big">DIX ANS</div>',{x:540,y:560,fx:'slam',at:M('Dix ans.')});
+// 2. la chaîne ouvre en face
+s=scene(M('Et puis'),M('Le week-end,'),{bg:I+'rue-deux-restos.jpg',kb:[1.05,1.15],tr:'cut'});
+s.img(I+'facade-sans-ia.png',{x:290,y:1200,w:500,fx:'none'});
+s.img(I+'facade-avec-ia.png',{x:800,y:1180,w:560,fx:'drop',at:M('une grande')});
+s.img(I+'enseigne-vierge.png',{x:800,y:820,w:460,fx:'pop',at:M('Grande enseigne.')});
+s.el('<div class="lab" style="background:#E8452C">GRANDE CHAÎNE</div>',{x:800,y:820,fx:'pop',at:M('Grande enseigne.')+.2,z:6});
+s.el('<div class="prix"><img src="../kit/iso-duel-nuit-etiquette-prix.png"><span>MENU OFFERT</span></div>',{x:780,y:1560,fx:'slam',at:M('Menu offert'),z:8});
+s.img(I+'pastille-toi.png',{x:200,y:1500,w:160,fx:'pop',at:M('Et puis')+.4,anim:'bob'});
+// 3. la queue
+s=scene(M('Le week-end,'),M('Et voilà'),{bg:I+'carrefour-vide.jpg',kb:[1.05,1.12],tr:'cut'});
+s.img(I+'facade-avec-ia.png',{x:780,y:900,w:560,fx:'none'});
+s.img(I+'clients-file.png',{x:700,y:1300,w:640,fx:'left',at:M('il y a la queue')});
+s.img(I+'facade-sans-ia.png',{x:260,y:1550,w:420,fx:'none',style:'filter:brightness(.5)'});
+s.el('<div class="lab" style="background:#3b3360">CHEZ TOI : CALME</div>',{x:260,y:1320,fx:'pop',at:M('Et chez toi,')});
+// 4. meilleure, ça ne change rien
+s=scene(M('Et voilà'),M('Alors ne'),{bg:I+'salle-plongee.jpg',kb:[1.05,1.15],tr:'cut'});
+s.el(card('Ta cuisine est meilleure.'),{x:540,y:560,fx:'pop',at:M('Ta cuisine')});
+s.el('<div class="big"><b style="background:#E8452C">ÇA NE CHANGE RIEN</b></div>',{x:540,y:800,fx:'slam',at:M('Ça ne change')});
+s.el(card('Ils entrent dans le premier','qu\'ils remarquent'),{x:540,y:1250,fx:'up',at:M('Ils entrent')});
+s.img(I+'client-marche.png',{x:540,y:1530,w:260,fx:'right',at:M('Ils entrent')+.3});
+// 5. pas les prix
+s=scene(M('Alors ne'),M('Bats-toi'),{bgColor:'#0e0b1f',tr:'cut'});
+s.el('<div class="big" style="font-size:72px">PAS SUR LES PRIX</div>',{x:540,y:420,fx:'slam',at:M('Alors ne')});
+s.el('<div class="bars"><div id="b1" style="background:#E8452C"><span>EUX</span></div><div id="b2" style="background:#1fb35a"><span>TOI</span></div></div>',{x:540,y:1000,fx:'pop',at:M('Une chaîne')});
+s.el(card('Ils tiennent des mois à perte.','toi, non'),{x:540,y:1420,fx:'up',at:M('Une chaîne')+.5});
+s.fn(t=>{const p=cl((t-M('Une chaîne'))/2.5);const a=document.getElementById('b1'),b=document.getElementById('b2');if(a){a.style.height=(380*(1-.15*p))+'px';b.style.height=(380*(1-.9*p))+'px';}});
+// 6. qu'on te voie : 4 leviers
+s=scene(M('Bats-toi'),M('Être meilleur,'),{bg:I+'rue-deux-restos.jpg',kb:[1.1,1.2],tr:'cut'});
+s.img(I+'facade-sans-ia.png',{x:540,y:1300,w:640,fx:'none',id:'f'});
+s.el('<div class="big" style="font-size:80px"><b>QU\'ON TE VOIE</b></div>',{x:540,y:330,fx:'slam',at:M('Bats-toi')});
+const LV=[['Tes vrais plats en affiche','sur l\'écran de ta vitrine','Tes vrais'],['Un QR code sur le trottoir','pour réserver','Un QR'],['Tous tes avis Google','avec une réponse','Des avis'],['Ton habitué reconnu','et sa récompense qui l\'attend','Et une chose']];
+LV.forEach(([a,b,m],i)=>s.el(card(a,b),{x:540,y:560+i*170,fx:'left',at:M(m),z:6,style:'font-size:38px;padding:14px 24px'}));
+s.fn(t=>{const p=cl((t-M('Bats-toi'))/8);const f=s.items[0].d;f.style.filter=`brightness(${.45+.9*p}) saturate(${.7+.6*p})`;});
+// 7. morale
+s=scene(M('Être meilleur,'),M('Tu veux le'),{bg:I+'carrefour-vide.jpg',kb:[1.05,1.12],tr:'cut'});
+s.img(I+'facade-sans-ia.png',{x:300,y:1350,w:480,fx:'none',style:'filter:brightness(1.35) saturate(1.2)'});
+s.img(I+'clients-file.png',{x:640,y:1500,w:520,fx:'left',at:M('Il faut qu\'on')});
+s.el('<div class="big" style="font-size:74px;white-space:nowrap">Être meilleur,<br>ça ne suffit pas.</div>',{x:540,y:430,fx:'pop',at:M('Être meilleur,')});
+s.el('<div class="big" style="font-size:76px"><b>IL FAUT QU\'ON TE VOIE</b></div>',{x:540,y:700,fx:'slam',at:M('Il faut qu\'on')});
+// CTA
+s=scene(M('Tu veux le'),C.dur+1,{bg:I+'rue-deux-restos.jpg',kb:[1.1,1.2],tr:'cut'});
+s.img(I+'pastille-toi.png',{x:540,y:560,w:240,fx:'pop',at:M('Tu veux le'),anim:'bob'});
+s.el('<div class="cta">COMMENTE<br>« VITRINE »</div>',{x:540,y:900,fx:'slam',at:M('Commente VITRINE.'),anim:'pulse'});
+s.el('<div class="lab" style="background:#3b3360">ÉPISODE 60/365</div>',{x:540,y:1120,fx:'fade',at:M('Commente VITRINE.')+1});
+CAP.show=t=>t<M('Commente VITRINE.');
+thumbAt(M('Ça ne change')+.8,'<i>Ta cuisine est meilleure.</i><br><i class="k">Ça ne change rien.</i>');
+render(0);
+</script></body></html>

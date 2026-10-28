@@ -1,0 +1,155 @@
+1
+00:00:00,300 --> 00:00:00,900
+Cette semaine,
+
+2
+00:00:00,900 --> 00:00:02,660
+j'ai sorti dix vidéos.
+
+3
+00:00:02,660 --> 00:00:04,400
+Et je n'en ai monté aucune.
+
+4
+00:00:04,400 --> 00:00:05,170
+Voici la méthode.
+
+5
+00:00:05,170 --> 00:00:06,000
+Un :
+
+6
+00:00:06,000 --> 00:00:07,180
+je trouve une vidéo qui marche,
+
+7
+00:00:07,180 --> 00:00:08,320
+et je l'envoie à Claude.
+
+8
+00:00:08,320 --> 00:00:09,840
+Il la regarde comme un monteur :
+
+9
+00:00:09,840 --> 00:00:10,540
+le style,
+
+10
+00:00:10,540 --> 00:00:11,160
+le rythme,
+
+11
+00:00:11,160 --> 00:00:11,640
+l'histoire.
+
+12
+00:00:11,640 --> 00:00:12,600
+Deux :
+
+13
+00:00:12,600 --> 00:00:14,280
+il demande à Lovable de dessiner tous
+
+14
+00:00:14,280 --> 00:00:16,000
+les décors et tous les personnages.
+
+15
+00:00:16,000 --> 00:00:17,200
+Une vingtaine d'images par style,
+
+16
+00:00:17,200 --> 00:00:18,410
+rangées dans ma bibliothèque.
+
+17
+00:00:18,410 --> 00:00:19,360
+Trois :
+
+18
+00:00:19,360 --> 00:00:20,900
+il écrit l'histoire pour mon produit.
+
+19
+00:00:20,900 --> 00:00:22,280
+Et il vérifie chaque phrase dans mes
+
+20
+00:00:22,280 --> 00:00:23,000
+logiciels.
+
+21
+00:00:23,000 --> 00:00:24,060
+Aucun chiffre inventé.
+
+22
+00:00:24,060 --> 00:00:24,900
+Quatre :
+
+23
+00:00:24,900 --> 00:00:27,080
+il fait parler les personnages avec ElevenLabs.
+
+24
+00:00:27,080 --> 00:00:28,080
+Cinq :
+
+25
+00:00:28,080 --> 00:00:28,880
+il monte la vidéo,
+
+26
+00:00:28,880 --> 00:00:29,920
+image par image,
+
+27
+00:00:29,920 --> 00:00:31,800
+avec les sous-titres et la musique.
+
+28
+00:00:31,800 --> 00:00:32,320
+Et moi ?
+
+29
+00:00:32,320 --> 00:00:33,160
+Je regarde.
+
+30
+00:00:33,160 --> 00:00:33,980
+Je valide.
+
+31
+00:00:33,980 --> 00:00:34,720
+Je publie.
+
+32
+00:00:34,720 --> 00:00:35,880
+Et chaque style est gardé :
+
+33
+00:00:35,880 --> 00:00:37,440
+la prochaine vidéo repart de la même
+
+34
+00:00:37,440 --> 00:00:38,180
+structure.
+
+35
+00:00:38,180 --> 00:00:39,240
+Tu veux la méthode complète,
+
+36
+00:00:39,240 --> 00:00:40,820
+avec les étapes et les consignes à
+
+37
+00:00:40,820 --> 00:00:41,600
+donner à Claude ?
+
+38
+00:00:41,600 --> 00:00:42,380
+Commente MÉTHODE,
+
+39
+00:00:42,380 --> 00:00:43,680
+et je te l'envoie.
