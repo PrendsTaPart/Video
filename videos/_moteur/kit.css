@@ -1,0 +1,13 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#stage{position:absolute;inset:0;overflow:hidden}
+#scenes{position:absolute;inset:0}
+.sc{position:absolute;inset:0;display:none;overflow:hidden}
+.sc .bg{position:absolute;inset:-2%;background-size:cover;background-position:center;transform-origin:50% 50%}
+.it{position:absolute;transform:translate(-50%,-50%);transform-origin:50% 50%}
+.it.im img{display:block;width:100%;height:auto}
+#cap{position:absolute;left:44px;right:44px;z-index:90;text-align:center;line-height:1.08}
+#cap i{font-style:normal;display:inline-block}
+#who{position:absolute;left:0;right:0;z-index:91;text-align:center;display:none}
+#who span{display:inline-block;padding:8px 24px;border-radius:999px;color:#fff;font-weight:800;font-size:32px}
+#thumb{display:none}
