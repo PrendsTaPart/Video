@@ -51,7 +51,7 @@ function scene(a,b,src,crop0,crop1,filt){
   const vid=src.endsWith('.webm');const im=document.createElement(vid?'video':'img');im.src=src;
   if(vid){const [vw,vh]=src.includes("/kit/")?[1080,1920]:[540,960];im.style.width=vw+"px";im.style.height=vh+"px";im.style.maxWidth="none";im.muted=true;im.preload='auto';im.playsInline=true;}
   ph.appendChild(im);d.appendChild(ph);S.appendChild(d);
-  const o={a,b,d,im,vid,src:src.split('.')[0],crop0,crop1:crop1||crop0,filt:filt||(()=>''),fx:[]};scenes.push(o);return o;}
+  const o={a,b,d,im,vid,off:0,fin:0,src:src.split('.')[0],crop0,crop1:crop1||crop0,filt:filt||(()=>''),fx:[]};scenes.push(o);return o;}
 function txt(s,html,at,y,size,anim){const e=document.createElement('div');e.className='t';e.innerHTML=html;e.style.top=y+'px';e.style.fontSize=size+'px';s.d.appendChild(e);s.fx.push({e,at,anim:anim||'fade'});return e;}
 function frameCrop(s,t){
   const p=ease(clamp((t-s.a)/(s.b-s.a)));
@@ -62,6 +62,7 @@ function frameCrop(s,t){
   return `translate(${ox}px,${oy}px) scale(${k})`;}
 
 /* ---------- découpage selon la voix (assets Lovable « chateau-hante ») ---------- */
+window.BRUME=`url(../kit/chateau-hante-brume.png) 50% 88%/1500px auto no-repeat, url(../kit/chateau-hante-brume.png) 20% 97%/1800px auto no-repeat`;
 const L=C.lines, t0=i=>L[i].t0, t1=i=>L[i].t1, END=C.dur, K='../kit/chateau-hante-';
 const FULL=[0,0,1080,1920];
 const z=(k)=>[540-540/k,960-960/k,1080/k,1920/k]; // zoom centré
@@ -69,20 +70,20 @@ const z=(k)=>[540-540/k,960-960/k,1080/k,1920/k]; // zoom centré
 function spr(s,file,o){const e=document.createElement('img');e.src=K+file;e.className='sp';
   Object.assign(e.style,{left:(o.x-o.w/2)+'px',top:(o.y)+'px',width:o.w+'px',zIndex:o.z||2,filter:o.f||''});
   s.d.appendChild(e);s.fx.push({e,at:o.at??s.a,anim:o.anim||'fade',base:`translateY(-100%)${o.flip?' scaleX(-1)':''}`,o});return e;}
-function el(s,html,o){const d=document.createElement('div');d.innerHTML=html;const e=d.firstChild;Object.assign(e.style,{left:o.x!=null?(o.x-(o.w||0)/2)+'px':'',top:o.y+'px',zIndex:o.z||3});if(o.w)e.style.width=o.w+'px';s.d.appendChild(e);s.fx.push({e,at:o.at??s.a,anim:o.anim||'fade',base:'',o});return e;}
+function el(s,html,o){const d=document.createElement('div');d.innerHTML=html;const e=d.firstChild;Object.assign(e.style,{left:o.x!=null?(o.x-(o.w||0)/2)+'px':'',top:o.y+'px',zIndex:o.z||3});if(o.w)e.style.width=o.w+'px';e.o=o;s.d.appendChild(e);s.fx.push({e,at:o.at??s.a,anim:o.anim||'fade',base:'',o});return e;}
 const mid=i=>(t0(i)+t1(i))/2;
 
 // 1. L'heure dorée (vidéo du site) qui bascule dans la pergola hantée
-let s=scene(0,t0(1)+.2,'../img/clip-pergola.webm',[0,0,540,960],[60,100,420,747],(t,s)=>`saturate(${1.15-.4*clamp((t-2)/4)}) brightness(${1.05-.3*clamp((t-2)/4)})`);
+let s=scene(0,3.5,'../img/clip-pergola.webm',[0,0,540,960],[40,70,460,818],(t,s)=>`saturate(${1.15-.4*clamp((t-2)/4)}) brightness(${1.05-.3*clamp((t-2)/4)})`);
 txt(s,'<span class="gold">VILLA BEACH</span>',0.4,330,120,'fade');
 txt(s,'« L\'HEURE DORÉE »',1.0,470,74,'fade');
-let n=el(s,`<img src="${K}pergola-hantee.jpg" style="position:absolute;width:1080px;height:1920px">`,{x:540,w:1080,y:0,at:3.6,z:1});n.o.slow=2.5;
+s=scene(2.7,t0(1)+.2,K+'boucle-pergola.webm',z(1.0),z(1.12));s.fin=.8;s.off=.6;
 // 2. Le soleil ne se relèvera pas : la grille et l'allée de citrouilles
 s=scene(t0(1)+.2,t0(2),K+'grille-allee.jpg',z(1.05),z(1.25),()=>'brightness(.85) contrast(1.15)');
 txt(s,'<span class="creep" style="color:#ff3b30">31 OCTOBRE</span>',t0(1)+.8,330,150,'shake');
 spr(s,'fantome.png',{x:820,y:1250,w:420,at:t0(1)+1.4,anim:'float',f:'opacity(.75)'});
 // 3. Le château hanté sous l'orage
-s=scene(t0(2),t0(3),K+'chateau-orage.jpg',z(1.0),z(1.22),()=>'contrast(1.1)');
+s=scene(t0(2),t0(3),K+'boucle-chateau.webm',z(1.0),z(1.08),()=>'contrast(1.15) brightness(1.05)');
 el(s,`<img src="${K}eclair.png" style="position:absolute;width:520px">`,{x:280,w:520,y:0,at:t0(2),anim:'bolt',z:4}).o.bolt=[t0(2)+.05,t0(2)+1.9];
 el(s,`<img src="${K}eclair.png" style="position:absolute;width:420px;transform:scaleX(-1)">`,{x:860,w:420,y:80,at:t0(2),anim:'bolt',z:4}).o.bolt=[t0(2)+1.9];
 txt(s,'LE PLUS GRAND<br><span class="creep gold" style="font-size:150px">CHÂTEAU HANTÉ</span>',t0(2)+1.2,1080,100,'drop');
@@ -110,18 +111,18 @@ txt(s,'TOUT EST PRÊT…',t0(6)+.1,260,120,'fade');
 txt(s,'<span class="gold">IL NE MANQUAIT QUE VOUS</span>',mid(6)+.2,400,104,'shake');
 // 8. Date et adresse dans le cadre doré
 s=scene(t0(7),t0(8),K+'fond-nuit.jpg',z(1.1),z(1.0));
-el(s,`<img src="${K}cadre-or.png" style="position:absolute;width:900px">`,{x:540,w:900,y:260,at:t0(7),anim:'pop'});
-txt(s,'RENDEZ-VOUS LE<br><span style="font-size:190px;color:#ff3b30" class="creep">SAMEDI<br>31 OCTOBRE</span>',t0(7)+.2,520,90,'drop');
-txt(s,'<span class="badge">23 RUE DES PYRÉNÉES · 91090 LISSES</span>',t0(7)+1.6,1120,64,'drop');
-spr(s,'citrouille.png',{x:220,y:1430,w:330,at:t0(7)+.3,anim:'pop'});
-spr(s,'citrouille.png',{x:860,y:1430,w:280,at:t0(7)+.6,anim:'pop',flip:1});
+el(s,`<img src="${K}cadre-or.png" style="position:absolute;width:900px">`,{x:540,w:900,y:180,at:t0(7),anim:'pop'});
+txt(s,'RENDEZ-VOUS LE<br><span style="font-size:140px;color:#ff3b30;line-height:1.1" class="creep">SAMEDI<br>31 OCTOBRE</span>',t0(7)+.2,470,84,'drop');
+txt(s,'<span style="font-size:60px">23 RUE DES PYRÉNÉES</span><br><span class="gold" style="font-size:60px">91090 LISSES</span>',t0(7)+1.4,930,60,'drop');
+spr(s,'citrouille.png',{x:330,y:1420,w:300,at:t0(7)+.3,anim:'pop'});
+spr(s,'citrouille.png',{x:750,y:1420,w:260,at:t0(7)+.6,anim:'pop',flip:1});
 // 9. La peur, sinon rien : l'œil de la citrouille s'enflamme, puis la signature
 const JUMP=t1(8)+.15;
 s=scene(t0(8),JUMP,K+'chateau-orage.jpg',z(1.3),z(1.6),()=>'brightness(.4) blur(2px)');
 const mono=document.createElement('img');mono.src='../img/monogram.png';Object.assign(mono.style,{position:'absolute',left:'340px',top:'420px',width:'400px',filter:'drop-shadow(0 0 40px rgba(202,169,104,.7))'});s.d.appendChild(mono);s.fx.push({e:mono,at:t0(8)+.1,anim:'fade',base:'',o:{}});
 txt(s,'VILLA BEACH',t0(8)+.6,870,150,'fade');
 txt(s,'<span class="creep" style="color:#ff3b30">LA PEUR, SINON RIEN</span>',t0(8)+1.6,1040,110,'shake');
-s=scene(JUMP,JUMP+.9,K+'citrouille-oeil.png',[0,0,1080,1920],z(2.2),()=>'brightness(1.2) saturate(1.3)');
+s=scene(JUMP,JUMP+.9,K+'citrouille-oeil.png',[224,0,576,1024],[380,230,330,587],()=>'brightness(1.2) saturate(1.3)');
 s.d.style.background='#000';
 s=scene(JUMP+.9,END,K+'fond-nuit.jpg',z(1.0),z(1.08));
 const m2=mono.cloneNode();m2.style.top='330px';s.d.appendChild(m2);s.fx.push({e:m2,at:JUMP+.9,anim:'fade',base:'',o:{}});
@@ -150,7 +151,8 @@ function flashAt(t){let v=0;for(const b of BOLTS){const d=t-b;if(d>=0&&d<.5)v=Ma
 async function render(t){
   const waits=[];
   for(const s of scenes){const on=t>=s.a&&t<s.b;s.d.style.visibility=on?'visible':'hidden';if(!on)continue;
-    if(s.vid){const ct=Math.min(t-s.a,s.im.duration?s.im.duration-.05:7.9);if(Math.abs(s.im.currentTime-ct)>.001){waits.push(new Promise(r=>{s.im.addEventListener('seeked',r,{once:true});setTimeout(r,3000);}));s.im.currentTime=ct;}}
+    s.d.style.opacity=s.fin?clamp((t-s.a)/s.fin):1;
+    if(s.vid){const ct=Math.min(t-s.a+s.off,s.im.duration?s.im.duration-.05:7.9);if(Math.abs(s.im.currentTime-ct)>.001){waits.push(new Promise(r=>{s.im.addEventListener('seeked',r,{once:true});setTimeout(r,3000);}));s.im.currentTime=ct;}}
     let sh=''; const fl=flashAt(t); if(fl>.5) sh=` translate(${(rnd(t*99)-.5)*30}px,${(rnd(t*77)-.5)*30}px)`;
     s.im.style.transform=frameCrop(s,t)+sh; s.im.style.filter=s.filt(t,s);
     for(const f of s.fx){const o=f.o||{},B=f.base||'',p=clamp((t-f.at)/(o.slow||.5));let op=p,tr='';
@@ -172,7 +174,7 @@ async function render(t){
   // noir : coupure "le soleil ne se relèvera pas" + fondu final
   let bk=0; const cut=C.cut; if(t>=cut&&t<cut+.35)bk=1; if(t>END-.6)bk=clamp((t-(END-.6))/.6);
   $('#black').style.opacity=bk;
-  $('#fog').style.transform=`translateX(${Math.sin(t*.25)*120}px)`; $('#fog').style.opacity=t<t0(1)?0:.9; if(window.BRUME)$('#fog').style.backgroundImage=BRUME;
+  $('#fog').style.transform=`translateX(${Math.sin(t*.25)*120}px)`; $('#fog').style.opacity=t<t0(1)?0:.9; if(window.BRUME)$("#fog").style.background=BRUME;
   bats.forEach((e,i)=>{const st=C.batsAt+i*.25, p=(t-st)/3.2; e.style.display=p>0&&p<1?'block':'none';
     e.style.left=(-120+p*1300)+'px'; e.style.top=(250+i*90+Math.sin(p*14+i)*40)+'px'; e.style.transform=`scale(${.6+rnd(i)*.8}) scaleY(${.6+.4*Math.abs(Math.sin(t*20+i))})`;});
   grain(t); caps(t);
