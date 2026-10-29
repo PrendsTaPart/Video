@@ -16,7 +16,8 @@ Source : https://villabeach.foodeatup.fr/ et la charte du connecteur VillaBeach 
 | « Villa Beach, la fête sinon rien. » | Détournée en signature : « Villa Beach… la peur, sinon rien. » |
 | Or `#caa968`, brique `#a95134`, fond `#171713`, texte `#f2eddf`, titres Bebas | Titres, mots-clés des sous-titres, badge adresse |
 | Monogramme VB doré | Carton final |
-| Photo `villa-beach-pergola.jpg` | Plans 1 et 2 |
+| Photo `villa-beach-pergola.jpg` | Plan 2 |
+| Vidéos du diaporama d'accueil du site (`site/slider-1.mp4` pergola à l'heure dorée, `site/slider-2.mp4` jardin dressé la nuit) | Plan 1 (la pergola qui bascule dans la nuit) et plan « Tout est prêt… » ; recadrées en 9:16 dans `img/clip-*.webm` |
 
 Faits vérifiés : adresse 23 rue des Pyrénées, 91090 Lisses ; téléphone de réservation 01 84 60 20 46 (CTA des événements du site). Date, slogan « le plus grand château hanté », les deux ambiances et la liste des styles musicaux viennent de l'affiche fournie.
 **La soirée Halloween n'est pas encore dans l'agenda du site** (`voir_evenements` ne renvoie que Konpa'n Kiz et Good Vibes Only). Aucun horaire ni prix d'entrée n'apparaît dans la vidéo, faute de source.
@@ -45,7 +46,7 @@ Flow ElevenLabs : https://elevenlabs.io/app/flows/izymwZ3dhP9Kie8la0Uq
 | 6,9–11 | Pergola dans le noir, « 31 OCTOBRE » rouge qui tremble | Éclair + tonnerre, noir total 0,35 s + sifflement aigu |
 | 11–15,5 | Château de l'affiche | Zoom lent, deux éclairs, vol de chauves-souris |
 | 15,5–22,3 | Affiche : les deux ambiances, puis généraliste et caribéenne | Travellings lents, grain, vignette |
-| 26,7–29,4 | Dîner puis piste de danse (photos fournies) | Étalonnage sang/glace, lumière qui grésille, battement de cœur + pulsations rouges |
+| 26,7–30,5 | Jardin dressé du site, la nuit (vidéo du site) | Étalonnage sang/glace, lumière qui grésille, battement de cœur + pulsations rouges |
 | 30,5–34,1 | Affiche entière vers la date | Éclair, badge adresse |
 | 34,5–40,5 | Monogramme VB doré, « LA PEUR, SINON RIEN » | Éclair + sifflement, fondu au noir |
 

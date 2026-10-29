@@ -7,7 +7,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
 #stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:#000}
 .sc{position:absolute;inset:0;overflow:hidden;visibility:hidden}
 .ph{position:absolute;inset:0;overflow:hidden}
-.ph img{position:absolute;transform-origin:0 0;will-change:transform}
+.ph img,.ph video{position:absolute;transform-origin:0 0;will-change:transform}
 .t{position:absolute;left:0;right:0;text-align:center;font-family:'Bebas Neue';color:var(--texte);letter-spacing:4px;text-shadow:0 0 30px #000,0 4px 0 #000}
 .gold{color:var(--or)}
 .creep{font-family:'Creepster';letter-spacing:2px}
@@ -43,9 +43,10 @@ const scenes=[];
 function scene(a,b,src,crop0,crop1,filt){
   const d=document.createElement('div');d.className='sc';
   const ph=document.createElement('div');ph.className='ph';
-  const im=document.createElement('img');im.src='img/'+src+(src.includes('.')?'':'.jpg');
+  const vid=src.endsWith('.webm');const im=document.createElement(vid?'video':'img');im.src='img/'+src+(src.includes('.')?'':'.jpg');
+  if(vid){im.style.width="540px";im.style.height="960px";im.style.maxWidth="none";im.muted=true;im.preload='auto';im.playsInline=true;}
   ph.appendChild(im);d.appendChild(ph);S.appendChild(d);
-  const o={a,b,d,im,src:src.split('.')[0],crop0,crop1:crop1||crop0,filt:filt||(()=>''),fx:[]};scenes.push(o);return o;}
+  const o={a,b,d,im,vid,src:src.split('.')[0],crop0,crop1:crop1||crop0,filt:filt||(()=>''),fx:[]};scenes.push(o);return o;}
 function txt(s,html,at,y,size,anim){const e=document.createElement('div');e.className='t';e.innerHTML=html;e.style.top=y+'px';e.style.fontSize=size+'px';s.d.appendChild(e);s.fx.push({e,at,anim:anim||'fade'});return e;}
 function frameCrop(s,t){
   const p=ease(clamp((t-s.a)/(s.b-s.a)));
@@ -58,28 +59,27 @@ function frameCrop(s,t){
 /* ---------- découpage selon la voix ---------- */
 const L=C.lines, t0=i=>L[i].t0, t1=i=>L[i].t1, END=C.dur;
 // 1. L'heure dorée : la pergola au coucher du soleil, puis la nuit tombe
-let s=scene(0,t0(1)+.2,'pergola',[60,0,405,720],[180,120,330,590],(t,s)=>{const p=clamp((t-1.5)/(s.b-1.5));return `saturate(${1.2-1.1*p}) brightness(${1.05-.75*p}) hue-rotate(${p*-160}deg) contrast(${1+.3*p})`;});
+let s=scene(0,t0(1)+.2,'clip-pergola.webm',[0,0,540,960],[60,100,420,747],(t,s)=>{const p=clamp((t-1.5)/(s.b-1.5));if(!s.tint){s.tint=document.createElement('div');Object.assign(s.tint.style,{position:'absolute',inset:'0',background:'#1d3557',mixBlendMode:'multiply'});s.d.insertBefore(s.tint,s.d.children[1]);}s.tint.style.opacity=p*.85;return `saturate(${1.2-1.1*p}) brightness(${1.05-.55*p}) contrast(${1+.3*p})`;});
 txt(s,'<span class="gold">VILLA BEACH</span>',0.4,330,120,'fade');
 txt(s,'« L\'HEURE DORÉE »',1.0,470,74,'fade');
 // 2. Le soleil ne se relèvera pas : le décor du site bascule dans la nuit
 s=scene(t0(1)+.2,t0(2),'pergola',[330,150,300,533],[420,240,220,391],()=>'grayscale(.7) brightness(.45) contrast(1.6) hue-rotate(190deg)');
 txt(s,'<span class="creep" style="color:#ff3b30">31 OCTOBRE</span>',t0(1)+.8,380,150,'shake');
 // 3. Le château hanté
-s=scene(t0(2),t0(3),'affiche.png',[150,0,520,924],[260,60,380,675],()=>'brightness(.95) contrast(1.15)');
+s=scene(t0(2),t0(3),'affiche.png',[0,0,941,1672],[60,0,820,1458],()=>'brightness(.95) contrast(1.15)');
 // 4. Deux ambiances
-s=scene(t0(3),t0(4),'affiche.png',[0,0,941,1672],[140,414,659,1172],()=>'brightness(.9)');
+s=scene(t0(3),t0(4),'affiche.png',[0,0,941,1672],[35,125,870,1547],()=>'brightness(.9)');
 // 5. Généraliste
-s=scene(t0(4),t0(5),'affiche.png',[0,880,420,747],[20,930,380,676]);
+s=scene(t0(4),t0(5),'affiche.png',[10,860,470,812],[25,872,450,800]);
 // 6. Caribéenne
-s=scene(t0(5),t0(6),'affiche.png',[500,880,420,747],[530,930,380,676]);
+s=scene(t0(5),t0(6),'affiche.png',[461,860,470,812],[466,872,450,800]);
 // 7. Tout est prêt… il ne manquait que vous (le dîner, puis la piste, en version hantée)
 const mid6=(t0(6)+t1(6))/2;
-s=scene(t0(6),mid6+.3,'diner',[150,0,600,1067],[300,120,420,746],(t)=>`sepia(.6) hue-rotate(-30deg) saturate(1.6) brightness(${.45+.25*(rnd(Math.floor(t*14))>.85)}) contrast(1.4)`);
+s=scene(t0(6),t0(7),'clip-jardin.webm',[0,0,540,960],[90,160,360,640],(t)=>`sepia(.5) hue-rotate(-25deg) saturate(1.5) brightness(${.42+.3*(rnd(Math.floor(t*12))>.8)}) contrast(1.35)`);
 txt(s,'TOUT EST PRÊT…',t0(6)+.1,330,120,'fade');
-s=scene(mid6+.3,t0(7),'danse',[100,0,600,1067],[300,60,420,746],(t)=>`grayscale(.4) hue-rotate(180deg) brightness(${.4+.5*(rnd(Math.floor(t*10))>.6)}) contrast(1.5)`);
-txt(s,'<span class="gold">IL NE MANQUAIT QUE VOUS</span>',mid6+.4,330,104,'shake');
+txt(s,'<span class="gold">IL NE MANQUAIT QUE VOUS</span>',mid6+.4,470,104,'shake');
 // 8. Date + adresse
-s=scene(t0(7),t0(8),'affiche.png',[0,0,941,1672],[100,600,600,1067],()=>'brightness(.9) contrast(1.1)');
+s=scene(t0(7),t0(8),'affiche.png',[0,0,941,1672],[60,214,820,1458],()=>'brightness(.9) contrast(1.1)');
 txt(s,'<span class="badge">23 RUE DES PYRÉNÉES · LISSES</span>',t0(7)+1.6,300,64,'drop');
 // 9. La peur, sinon rien : le monogramme du site, puis le château
 s=scene(t0(8),END,'affiche.png',[0,0,941,1672],[60,40,820,1458],()=>'brightness(.35) contrast(1.2) blur(2px)');
@@ -107,8 +107,10 @@ function caps(t){
 const BOLTS=C.bolts; // instants de foudre (tonnerre calé dessus)
 function flashAt(t){let v=0;for(const b of BOLTS){const d=t-b;if(d>=0&&d<.5)v=Math.max(v,(d<.06?1:d<.12?.2:d<.2?.85:Math.max(0,.5-(d-.2)*2)));}return v;}
 
-function render(t){
+async function render(t){
+  const waits=[];
   for(const s of scenes){const on=t>=s.a&&t<s.b;s.d.style.visibility=on?'visible':'hidden';if(!on)continue;
+    if(s.vid){const ct=Math.min(t-s.a,s.im.duration?s.im.duration-.05:7.9);if(Math.abs(s.im.currentTime-ct)>.001){waits.push(new Promise(r=>{s.im.addEventListener('seeked',r,{once:true});setTimeout(r,3000);}));s.im.currentTime=ct;}}
     let sh=''; const fl=flashAt(t); if(fl>.5) sh=` translate(${(rnd(t*99)-.5)*30}px,${(rnd(t*77)-.5)*30}px)`;
     s.im.style.transform=frameCrop(s,t)+sh; s.im.style.filter=s.filt(t,s);
     for(const f of s.fx){const p=clamp((t-f.at)/.5);f.e.style.opacity=p;
@@ -125,7 +127,8 @@ function render(t){
   bats.forEach((e,i)=>{const st=C.batsAt+i*.25, p=(t-st)/3.2; e.style.display=p>0&&p<1?'block':'none';
     e.style.left=(-120+p*1300)+'px'; e.style.top=(250+i*90+Math.sin(p*14+i)*40)+'px'; e.style.transform=`scale(${.6+rnd(i)*.8}) scaleY(${.6+.4*Math.abs(Math.sin(t*20+i))})`;});
   grain(t); caps(t);
+  await Promise.all(waits);
 }
-function thumb(){render(t0(2)+1.6)}
+function thumb(){return render(t0(2)+1.6)}
 render(0);
 </script></body></html>
