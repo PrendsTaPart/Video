@@ -1,0 +1,58 @@
+Nouvelle série d'épisodes (55 à 61). J'ai besoin de 4 nouveaux thèmes d'assets, exactement comme tu l'as fait pour « holo-nuit-agents » : 20 images par thème, déposées dans public/img/kit/<theme>-<nom>.png|jpg, une ligne active par image dans « mediatheque » (theme = la clé du thème, categorie adaptée : decor / personnage / accessoire / overlay), et une ligne par thème dans « formats_video ». Personnages et accessoires détourés sur fond transparent (PNG), décors en JPG vertical 1080x1920. AUCUN texte, chiffre, logo ou marque dans les images (je pose les textes moi-même). Pas de republication.
+
+1) Thème « comptoir-fidelite » (épisode 56 « Madame Josette et la fidélité sans appli »). Style : 3D douce façon pâte à modeler / jouet arrondi, boulangerie-café de quartier chaleureuse, carrelage damier crème et ocre, bois clair, lumière de matin. Palette crème #F6EBDD, ocre #D9A066, vert sapin #1F5A3D, rouge brique #B3412E.
+ 1 decor comptoir vu de face avec vitrine à viennoiseries · 2 decor salle du café vue de côté · 3 decor gros plan comptoir (plan serré, pour les dialogues) · 4 decor fond flou crème uni
+ 5-8 personnage « Josette », dame âgée cheveux gris bouclés, lunettes rondes, gilet rouge : de face sceptique, de face qui rit, de dos au comptoir, qui tient un téléphone et regarde l'écran
+ 9-11 personnage jeune serveur/serveuse tablier vert : souriant de face, qui tend un présentoir, qui fait un clin d'œil
+ 12 accessoire présentoir de comptoir avec un QR code générique (motif carré abstrait, aucun lien lisible)
+ 13 accessoire smartphone vu de face, écran vierge clair (je poserai l'écran)
+ 14 accessoire carte en plastique barrée (symbole « fini la carte plastique »)
+ 15 accessoire croissant et café sur soucoupe
+ 16 accessoire tampon/coche verte de validation
+ 17 personnage amie de Josette « Simone » (dame âgée chapeau) de face
+ 18 overlay bulle de dialogue crème vierge
+ 19 overlay étoile/confettis de récompense
+ 20 overlay cadre de carte de fidélité vierge vert sapin (arrondi)
+
+2) Thème « reunion-nuit » (épisode 57 « Tout le monde demande à Claude en réunion »). Style : 3D low-poly / voxel doux, grande table de réunion la nuit devant des baies vitrées avec ville illuminée, bleu nuit #141B33, lumière froide des écrans, petit assistant cube rouge #E2483D lumineux posé devant chaque personnage.
+ 1 decor salle de réunion large avec la ville de nuit · 2 decor table vue de haut · 3 decor fond ville nuit flou · 4 decor gros plan place vide à la table
+ 5-12 personnage 4 collègues (homme pull bleu, femme pull jaune, femme blonde, homme chemise blanche), chacun en 2 poses : penché qui chuchote à son ordinateur / qui lève la tête surpris
+ 13 accessoire petit assistant cube rouge lumineux (face) · 14 le même qui projette un halo
+ 15 accessoire ordinateur portable ouvert vu de dos avec lueur
+ 16 overlay panneau d'interface sombre vierge (carte arrondie bleu nuit, bord lumineux) pour y poser un budget ou une commande
+ 17 accessoire camion de livraison fournisseur (low-poly)
+ 18 accessoire deux cartons de livraison identiques (doublon)
+ 19 overlay pastille rouge « doublon » vierge (sans texte)
+ 20 overlay coche verte lumineuse
+
+3) Thème « bar-ardoise » (épisode 58 « Ton cocktail coûte deux minutes de quelqu'un »). Style : illustration flat cartoon chaleureuse de bar, bois brun #6B3E1F, laiton, lumières ambrées, ardoise noire à la craie, contours nets.
+ 1 decor comptoir de bar vu de face avec étagères de bouteilles · 2 decor ardoise noire vierge en gros plan (cadre bois) · 3 decor arrière-salle / bureau avec tableau de planning en liège · 4 decor bar bondé le samedi soir
+ 5-8 personnage barman expérimenté : souriant, qui pile la menthe, qui tire une bière, qui regarde sa montre
+ 9-10 personnage jeune serveur débutant : qui écrase la menthe maladroitement, stressé
+ 11 personnage patron qui tire une bière lui-même
+ 12 accessoire verre de cocktail menthe-citron vert avec glace pilée (sans paille de marque)
+ 13 accessoire pinte de bière pleine · 14 accessoire tireuse à bière laiton
+ 15 accessoire tas d'ingrédients du cocktail (menthe, citron vert, sucre, glace)
+ 16 accessoire chronomètre · 17 overlay étiquette de prix vierge kraft · 18 overlay barre de progression vierge
+ 19 personnage petits clients au comptoir (groupe) · 20 overlay trait de craie qui barre
+
+4) Thème « coup-de-feu » (épisode 61 « Le jeu du service du samedi »). Style : 3D jeu vidéo coopératif coloré (vue 3/4 caméra jeu), restaurant animé, lumières chaudes, effets comiques type bande dessinée.
+ 1 decor salle de restaurant pleine vue 3/4 · 2 decor cuisine passe-plat vue 3/4 · 3 decor salle en ruine (chaises renversées, assiettes cassées, nuit) · 4 decor salle élégante parfaite, lumière dorée
+ 5-6 personnage cuisinier : qui court avec une poêle / qui crie « ça vient »
+ 7-8 personnage serveur : plateau chargé qui slalome / qui note une commande
+ 9-10 personnage clients énervés qui tapent sur la table / qui partent
+ 11 personnage client content qui lève son verre
+ 12 personnage patron au téléphone débordé
+ 13 accessoire écran cuisine (tablette murale) avec tickets génériques sans texte
+ 14 accessoire téléphone qui sonne avec ondes
+ 15 accessoire chevalet de table avec QR code générique
+ 16 accessoire plat fumant sur assiette
+ 17 overlay explosion comique vierge style BD (sans texte) · 18 overlay jauge de colère vierge (rouge) · 19 overlay étoiles de score dorées · 20 overlay manette de jeu
+
+formats_video (statut actif, format vertical 1080x1920) :
+• comptoir-fidelite — « La fidélité sans appli » (ép. 56). Voix : cliente âgée (femme âgée chaleureuse), serveur (jeune). Structure : 1 proposition de la carte de fidélité (3 s) · 2 refus « les applis je sais pas faire » (5 s) · 3 « y'a pas d'appli, vous scannez ça » (4 s) · 4 gros plan téléphone : numéro saisi, carte apparue (8 s) · 5 « c'est tout ? — c'est tout » (4 s) · 6 chute « faudra que je le dise à Simone » (3 s) · 7 carte de fin + CTA (5 s). Règles : seulement ce que fait réellement le programme de fidélité FoodEatUp (sans application, sans carte plastique, un numéro ou un courriel).
+• reunion-nuit — « Qui ici demande tout à Claude ? » (ép. 57). Voix : 4 collègues + l'assistant. Structure : chacun chuchote à son assistant (8 s) · la question passe d'assistant en assistant (12 s) · révélation du doublon (6 s) · correction (5 s) · « qui ici demande tout à Claude ? » toutes les mains (5 s) · morale + CTA (6 s).
+• bar-ardoise — « Le vrai coût, c'est le temps » (ép. 58). Voix : 1 narrateur. Structure : prix vs coût matière (5 s) · comparaison de temps de service (8 s) · ardoise calcul (6 s) · le risque quand le pro manque (8 s) · le produit simple que tout le monde sert (5 s) · morale (5 s) · CTA (4 s). Règles : chiffres d'exemple affichés comme tels.
+• coup-de-feu — « Le jeu du service » (ép. 61). Voix : 1 narrateur rapide façon bande-annonce de jeu. Structure : « imagine un jeu coop… » (4 s) · rôles des joueurs (8 s) · la colère qui monte (6 s) · deux types de joueurs (8 s) · deux fins possibles (6 s) · révélation « le jeu existe déjà » + CTA (5 s).
+
+Réponds avec la liste exacte des 80 fichiers créés (chemins) et confirme les 4 lignes formats_video.
