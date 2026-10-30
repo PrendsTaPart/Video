@@ -1,0 +1,59 @@
+1
+00:00:00,350 --> 00:00:02,470
+Claude a tué le business des agences web.
+
+2
+00:00:02,850 --> 00:00:09,450
+Avant, un site pour un resto, c'était une agence, des semaines, et beaucoup d'argent. Aujourd'hui, voilà les outils que j'utilise vraiment.
+
+3
+00:00:09,730 --> 00:00:10,720
+Un : Lovable.
+
+4
+00:00:10,910 --> 00:00:14,710
+Je décris le site, il le construit. Mes pages, mes formulaires, mes réservations.
+
+5
+00:00:15,030 --> 00:00:15,910
+Deux : Claude.
+
+6
+00:00:16,210 --> 00:00:20,110
+C'est mon chef de chantier. Il écrit les textes, vérifie tout, et pilote les autres outils.
+
+7
+00:00:20,330 --> 00:00:21,190
+Trois : Canva.
+
+8
+00:00:21,450 --> 00:00:23,090
+Pour les affiches et les menus à imprimer.
+
+9
+00:00:23,270 --> 00:00:24,330
+Quatre : ElevenLabs.
+
+10
+00:00:24,590 --> 00:00:26,710
+Pour la voix de mes vidéos. Celle que tu entends en ce moment.
+
+11
+00:00:26,930 --> 00:00:27,940
+Cinq : RapidoCMS.
+
+12
+00:00:28,150 --> 00:00:31,130
+Pour programmer les posts sur tous les réseaux en une seule fois.
+
+13
+00:00:31,390 --> 00:00:35,210
+Le plus fou ? Ils se parlent tous. Je décris, Claude orchestre, et ça sort.
+
+14
+00:00:35,430 --> 00:00:36,750
+L'agence, maintenant, c'est toi.
+
+15
+00:00:37,050 --> 00:00:39,610
+La liste avec les liens : écris OUTILS en commentaire.
