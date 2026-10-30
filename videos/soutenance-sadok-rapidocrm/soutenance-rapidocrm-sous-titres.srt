@@ -1,0 +1,95 @@
+1
+00:00:01,000 --> 00:00:05,100
+Voici RapidoCRM, la plateforme développée pendant mon stage chez BraindCode.
+
+2
+00:00:05,220 --> 00:00:10,040
+Je vais suivre le parcours complet d'un prospect, de sa découverte jusqu'à l'automatisation de sa prospection.
+
+3
+00:00:12,600 --> 00:00:20,520
+La prospection propose trois modes : par spécialité et ville avec Google Places, par raison sociale et code NAF, ou par numéro SIRET grâce à l'API de l'État.
+
+4
+00:00:20,800 --> 00:00:23,090
+Les recherches passent par des workflows n8n.
+
+5
+00:00:23,180 --> 00:00:26,300
+J'enregistre un prospect en un clic, ou tous les résultats d'un coup.
+
+6
+00:00:26,520 --> 00:00:28,700
+Les doublons sont détectés avant toute insertion.
+
+7
+00:00:28,900 --> 00:00:33,440
+Chaque prospect enregistré rejoint automatiquement le pipeline et les segments dont il remplit les critères.
+
+8
+00:00:35,900 --> 00:00:42,150
+Le prospect apparaît dans la première étape du pipeline, qui en compte huit, de « Nouveau prospect » à « Fermé gagné » ou « perdu ».
+
+9
+00:00:42,100 --> 00:00:43,640
+Je le déplace par glisser-déposer.
+
+10
+00:00:43,860 --> 00:00:49,320
+Chaque déplacement est enregistré dans l'historique, et la probabilité de l'étape est reportée sur l'opportunité pour les prévisions.
+
+11
+00:00:51,700 --> 00:00:57,340
+Grâce au protocole MCP, un assistant d'IA comme Claude peut lire et piloter le CRM en langage naturel.
+
+12
+00:00:57,520 --> 00:01:03,180
+Le serveur hub expose 135 outils, regroupés en neuf serveurs métier, toujours dans la limite des droits de l'utilisateur.
+
+13
+00:01:03,460 --> 00:01:07,160
+Je demande la fiche du prospect, puis je crée une tâche, sans passer par l'interface.
+
+14
+00:01:07,160 --> 00:01:12,900
+Pour aider les utilisateurs, une bibliothèque de 169 prompts, en 23 catégories, montre ce qu'on peut demander.
+
+15
+00:01:15,380 --> 00:01:18,840
+L'agent vocal appelle les prospects au nom de l'entreprise, avec son propre numéro.
+
+16
+00:01:19,160 --> 00:01:23,300
+Je configure l'argumentaire, l'objectif des appels, le ton et les produits à présenter.
+
+17
+00:01:23,560 --> 00:01:27,980
+L'agent annonce qu'il s'agit d'un appel automatisé, qualifie le besoin et peut proposer un rendez-vous.
+
+18
+00:01:28,160 --> 00:01:30,680
+Ce rendez-vous est inscrit directement dans l'agenda du commercial.
+
+19
+00:01:31,060 --> 00:01:35,560
+Chaque appel est ensuite restitué dans le CRM avec son résultat, son résumé et sa transcription.
+
+20
+00:01:38,140 --> 00:01:40,320
+Enfin, tout ce parcours peut être automatisé.
+
+21
+00:01:40,320 --> 00:01:45,900
+Dans l'éditeur visuel, j'assemble des déclencheurs, des actions, des délais et des branches, sans écrire de code.
+
+22
+00:01:46,160 --> 00:01:51,340
+Ce modèle cherche des entreprises, les fait appeler par l'agent vocal, les place dans le pipeline et alimente un segment.
+
+23
+00:01:51,540 --> 00:01:57,820
+Un workflow naît en brouillon, il faut l'activer, et chaque exécution est journalisée.
+
+24
+00:01:57,900 --> 00:02:05,880
+De la recherche d'un prospect jusqu'au rendez-vous dans l'agenda, RapidoCRM réunit la prospection, le pipeline, l'IA et l'automatisation dans une seule plateforme.
