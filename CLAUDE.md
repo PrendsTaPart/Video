@@ -14,6 +14,13 @@ vidéo est nécessaire :
 
 Cette règle s'applique à toutes les sessions futures sur ce dépôt.
 
+## Une seule prise : ElevenLabs et vidéos
+
+Toute génération (voix ElevenLabs, vidéo, image) se fait en **une seule prise** :
+`generations_count=1`, jamais la valeur par défaut (2 prises pour la voix).
+Ne jamais relancer une génération déjà faite ni « pour comparer » : réutiliser
+la prise existante (flow ElevenLabs, fichier du dépôt). Pas de doublon.
+
 ## Bibliothèque : toute nouvelle image ou thème y est ajouté
 
 Objectif : ne jamais payer deux fois pour la même image.
