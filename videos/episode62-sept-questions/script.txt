@@ -1,0 +1,21 @@
+On me demande souvent : j'ai une idée de restaurant, par où je commence ?
+Ma réponse : sept questions à poser à Claude. Rien d'autre.
+Question un : trouver l'idée.
+Donne-moi cinq idées de restaurant pour mon quartier, avec peu de concurrence, et dis-moi qui viendra manger.
+Question deux : vérifier avant de dépenser.
+Est-ce que des gens vont vraiment payer pour ça ? Et pourquoi ça pourrait rater ?
+La plupart sautent cette étape. C'est pour ça qu'ils ferment.
+Question trois : l'offre.
+Quelle carte courte, quel prix, et quelle phrase donne envie de réserver ?
+Question quatre : commencer petit.
+Quelle est la version la plus simple que je peux ouvrir ce mois-ci ?
+Question cinq : la page qui donne faim.
+Écris la page qui fait réserver une table.
+Question six : faire venir du monde.
+Donne-moi dix idées de vidéos pour trouver mes premiers clients.
+Question sept : ouvrir.
+Fais-moi le plan de la première semaine, jour par jour.
+Claude ne répond pas mieux parce que tu es plus malin.
+Il répond mieux parce que tu poses les bonnes questions, dans le bon ordre.
+Et le jour de l'ouverture ? Réservations, carte, fidélité : FoodEatUp prend le relais.
+Les sept questions complètes sont dans mon guide. Écris OUVRIR en commentaire.
