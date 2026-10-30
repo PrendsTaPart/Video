@@ -1,0 +1,9 @@
+Plus ta conversation avec Claude est longue, plus il se fatigue.
+À chaque message, il relit toute la conversation depuis le début.
+C'est pour ça que ta limite arrive si vite.
+Et plus c'est long, moins les réponses sont bonnes.
+La solution : un petit compteur, affiché en bas de Claude Code.
+Vert : tu continues.
+Rouge : tu demandes un résumé, et tu repars dans une nouvelle conversation.
+Tu gardes l'essentiel, tu laisses le superflu.
+Écris COMPTEUR en commentaire, je t'envoie comment l'installer.
