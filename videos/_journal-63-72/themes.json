@@ -1,880 +1,960 @@
 {
-  "episode63-claude-consultant": {
-    "classe": "clair",
-    "couleurs": {
-      "bg": "#EFECE4",
-      "bg2": "#E3DED2",
-      "surf": "#FFFFFF",
-      "line": "#E2DBCC",
-      "text": "#1E1C19",
-      "mute": "#8B8579",
-      "accent": "#C9603F",
-      "accent2": "#1E1C19",
-      "hlbg": "#1E1C19",
-      "hlfg": "#FFFFFF"
-    },
-    "inspiration": "Épisode 63 — Claude a tué le business des consultants en restauration (inspiré « 5 skills de Claude »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode63-miniature.png"
+ "episode63-claude-consultant": {
+  "classe": "clair",
+  "couleurs": {
+   "bg": "#EFECE4",
+   "bg2": "#E3DED2",
+   "surf": "#FFFFFF",
+   "line": "#E2DBCC",
+   "text": "#1E1C19",
+   "mute": "#8B8579",
+   "accent": "#C9603F",
+   "accent2": "#1E1C19",
+   "hlbg": "#1E1C19",
+   "hlfg": "#FFFFFF"
   },
-  "episode64-cinq-phrases": {
-    "classe": "clair",
-    "couleurs": {
-      "bg": "#FFFFFF",
-      "bg2": "#F3F1EE",
-      "bgc": "#FFFFFF",
-      "surf": "#1B1B1B",
-      "line": "#2c2c2c",
-      "text": "#141414",
-      "mute": "#7c7c7c",
-      "accent": "#E07A4F",
-      "accent2": "#141414",
-      "hlbg": "#141414",
-      "hlfg": "#FFFFFF"
-    },
-    "inspiration": "Épisode 64 — Je t'apprends à réfléchir comme un pro, en cinq phrases (inspiré « Une idée de projet ? 5 phrases à Claude »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode64-miniature.png"
+  "inspiration": "Épisode 63 — Claude a tué le business des consultants en restauration (inspiré « 5 skills de Claude »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode63-miniature.png"
+ },
+ "episode64-cinq-phrases": {
+  "classe": "clair",
+  "couleurs": {
+   "bg": "#FFFFFF",
+   "bg2": "#F3F1EE",
+   "bgc": "#FFFFFF",
+   "surf": "#1B1B1B",
+   "line": "#2c2c2c",
+   "text": "#141414",
+   "mute": "#7c7c7c",
+   "accent": "#E07A4F",
+   "accent2": "#141414",
+   "hlbg": "#141414",
+   "hlfg": "#FFFFFF"
   },
-  "episode65-claude-boutique": {
-    "classe": "clair",
-    "couleurs": {
-      "bg": "#E9E6E0",
-      "bg2": "#DCD8D0",
-      "bgc": "#F2F0EC",
-      "surf": "#FFFFFF",
-      "line": "#D6D1C6",
-      "text": "#141414",
-      "mute": "#7a756c",
-      "accent": "#F06A1D",
-      "accent2": "#141414",
-      "hlbg": "#141414",
-      "hlfg": "#fff"
-    },
-    "inspiration": "Épisode 65 — Truc de ouf : Anthropic a confié une vraie boutique à Claude (inspiré « L'information IA »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode65-miniature.png"
+  "inspiration": "Épisode 64 — Je t'apprends à réfléchir comme un pro, en cinq phrases (inspiré « Une idée de projet ? 5 phrases à Claude »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode64-miniature.png"
+ },
+ "episode65-claude-boutique": {
+  "classe": "clair",
+  "couleurs": {
+   "bg": "#E9E6E0",
+   "bg2": "#DCD8D0",
+   "bgc": "#F2F0EC",
+   "surf": "#FFFFFF",
+   "line": "#D6D1C6",
+   "text": "#141414",
+   "mute": "#7a756c",
+   "accent": "#F06A1D",
+   "accent2": "#141414",
+   "hlbg": "#141414",
+   "hlfg": "#fff"
   },
-  "episode66-la-phrase-expert": {
-    "classe": null,
-    "couleurs": {
-      "bg": "#14254A",
-      "bg2": "#0c1833",
-      "bgc": "#1d3566",
-      "surf": "#1d3566",
-      "line": "#2c4a86",
-      "text": "#FFFFFF",
-      "mute": "#a9b8d8",
-      "accent": "#FFC52E",
-      "accent2": "#3FD0A0",
-      "hlbg": "#FFC52E",
-      "hlfg": "#14254A"
-    },
-    "inspiration": "Épisode 66 — Arrête de parler à Claude comme ça : la phrase EXPERT (inspiré « la phrase d'un ingénieur »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode66-miniature.png"
+  "inspiration": "Épisode 65 — Truc de ouf : Anthropic a confié une vraie boutique à Claude (inspiré « L'information IA »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode65-miniature.png"
+ },
+ "episode66-la-phrase-expert": {
+  "classe": null,
+  "couleurs": {
+   "bg": "#14254A",
+   "bg2": "#0c1833",
+   "bgc": "#1d3566",
+   "surf": "#1d3566",
+   "line": "#2c4a86",
+   "text": "#FFFFFF",
+   "mute": "#a9b8d8",
+   "accent": "#FFC52E",
+   "accent2": "#3FD0A0",
+   "hlbg": "#FFC52E",
+   "hlfg": "#14254A"
   },
-  "episode67-cinq-projets-weekend": {
-    "classe": "mono",
-    "couleurs": {
-      "bg": "#120c08",
-      "bg2": "#080504",
-      "bgc": "#2a160a",
-      "surf": "#1d130d",
-      "line": "#4a2a16",
-      "text": "#FFF4EA",
-      "mute": "#c2a48e",
-      "accent": "#FF6B1A",
-      "accent2": "#FFB36B",
-      "hlbg": "#FF6B1A",
-      "hlfg": "#120c08"
-    },
-    "inspiration": "Épisode 67 — Je t'apprends à construire ça en un week-end : 5 projets (inspiré « Cinq projets utiles avec Claude »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode67-miniature.png"
+  "inspiration": "Épisode 66 — Arrête de parler à Claude comme ça : la phrase EXPERT (inspiré « la phrase d'un ingénieur »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode66-miniature.png"
+ },
+ "episode67-cinq-projets-weekend": {
+  "classe": "mono",
+  "couleurs": {
+   "bg": "#120c08",
+   "bg2": "#080504",
+   "bgc": "#2a160a",
+   "surf": "#1d130d",
+   "line": "#4a2a16",
+   "text": "#FFF4EA",
+   "mute": "#c2a48e",
+   "accent": "#FF6B1A",
+   "accent2": "#FFB36B",
+   "hlbg": "#FF6B1A",
+   "hlfg": "#120c08"
   },
-  "episode68-cinq-reglages": {
-    "classe": "typo",
-    "couleurs": {
-      "bg": "#0e0f12",
-      "bg2": "#08090b",
-      "bgc": "#1a1c22",
-      "surf": "#17191e",
-      "line": "#2a2d35",
-      "text": "#F4F4F4",
-      "mute": "#9aa0ab",
-      "accent": "#FFB020",
-      "accent2": "#3FD07A",
-      "hlbg": "#FFB020",
-      "hlfg": "#111"
-    },
-    "inspiration": "Épisode 68 — Tu utilises Claude à moitié : les cinq réglages (inspiré « 5 réglages de Claude »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode68-miniature.png"
+  "inspiration": "Épisode 67 — Je t'apprends à construire ça en un week-end : 5 projets (inspiré « Cinq projets utiles avec Claude »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode67-miniature.png"
+ },
+ "episode68-cinq-reglages": {
+  "classe": "typo",
+  "couleurs": {
+   "bg": "#0e0f12",
+   "bg2": "#08090b",
+   "bgc": "#1a1c22",
+   "surf": "#17191e",
+   "line": "#2a2d35",
+   "text": "#F4F4F4",
+   "mute": "#9aa0ab",
+   "accent": "#FFB020",
+   "accent2": "#3FD07A",
+   "hlbg": "#FFB020",
+   "hlfg": "#111"
   },
-  "episode69-outils-agence": {
-    "classe": null,
-    "couleurs": {
-      "bg": "#111114",
-      "bg2": "#09090b",
-      "bgc": "#1b1b22",
-      "surf": "#1b1b22",
-      "line": "#30303a",
-      "text": "#FFFFFF",
-      "mute": "#a3a3b0",
-      "accent": "#7C5CFF",
-      "accent2": "#FF5C8A",
-      "hlbg": "#FFFFFF",
-      "hlfg": "#111114"
-    },
-    "inspiration": "Épisode 69 — Claude a tué le business des agences web (inspiré « les outils gratuits de Google », face caméra + écrans)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode69-miniature.png"
+  "inspiration": "Épisode 68 — Tu utilises Claude à moitié : les cinq réglages (inspiré « 5 réglages de Claude »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode68-miniature.png"
+ },
+ "episode69-outils-agence": {
+  "classe": null,
+  "couleurs": {
+   "bg": "#111114",
+   "bg2": "#09090b",
+   "bgc": "#1b1b22",
+   "surf": "#1b1b22",
+   "line": "#30303a",
+   "text": "#FFFFFF",
+   "mute": "#a3a3b0",
+   "accent": "#7C5CFF",
+   "accent2": "#FF5C8A",
+   "hlbg": "#FFFFFF",
+   "hlfg": "#111114"
   },
-  "episode70-carte-ou-especes": {
-    "classe": null,
-    "couleurs": {
-      "bg": "#0b1446",
-      "bg2": "#060b2a",
-      "bgc": "#1a2a7a",
-      "surf": "#16236a",
-      "line": "#2b3d96",
-      "text": "#FFFFFF",
-      "mute": "#aab4e8",
-      "accent": "#FF3B5C",
-      "accent2": "#2EE59D",
-      "hlbg": "#FFFFFF",
-      "hlfg": "#0b1446"
-    },
-    "inspiration": "Épisode 70 — Espèces ou carte : devine qui perd de l'argent (inspiré « Thomas : espèces ou carte »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode70-miniature.png"
+  "inspiration": "Épisode 69 — Claude a tué le business des agences web (inspiré « les outils gratuits de Google », face caméra + écrans)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode69-miniature.png"
+ },
+ "episode70-carte-ou-especes": {
+  "classe": null,
+  "couleurs": {
+   "bg": "#0b1446",
+   "bg2": "#060b2a",
+   "bgc": "#1a2a7a",
+   "surf": "#16236a",
+   "line": "#2b3d96",
+   "text": "#FFFFFF",
+   "mute": "#aab4e8",
+   "accent": "#FF3B5C",
+   "accent2": "#2EE59D",
+   "hlbg": "#FFFFFF",
+   "hlfg": "#0b1446"
   },
-  "episode71-salaire-horaire-patron": {
-    "classe": null,
-    "couleurs": {
-      "bg": "#1d1452",
-      "bg2": "#0c3b44",
-      "bgc": "#3a2a8a",
-      "surf": "#251a63",
-      "line": "#3f3196",
-      "text": "#FFFFFF",
-      "mute": "#b7b0e8",
-      "accent": "#2EE59D",
-      "accent2": "#FF4D8D",
-      "hlbg": "#FFFFFF",
-      "hlfg": "#1d1452"
-    },
-    "inspiration": "Épisode 71 — Patron ou salarié : qui gagne le plus à l'heure ? (inspiré « Thomas SMIC vs Lucas RSA »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode71-miniature.png"
+  "inspiration": "Épisode 70 — Espèces ou carte : devine qui perd de l'argent (inspiré « Thomas : espèces ou carte »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode70-miniature.png"
+ },
+ "episode71-salaire-horaire-patron": {
+  "classe": null,
+  "couleurs": {
+   "bg": "#1d1452",
+   "bg2": "#0c3b44",
+   "bgc": "#3a2a8a",
+   "surf": "#251a63",
+   "line": "#3f3196",
+   "text": "#FFFFFF",
+   "mute": "#b7b0e8",
+   "accent": "#2EE59D",
+   "accent2": "#FF4D8D",
+   "hlbg": "#FFFFFF",
+   "hlfg": "#1d1452"
   },
-  "episode72-ia-chinoises": {
-    "classe": null,
-    "couleurs": {
-      "bg": "#0d0d0f",
-      "bg2": "#050506",
-      "bgc": "#1f1f24",
-      "surf": "#18181c",
-      "line": "#2d2d33",
-      "text": "#F5F5F5",
-      "mute": "#9a9aa3",
-      "accent": "#E53935",
-      "accent2": "#FFC107",
-      "hlbg": "#F5F5F5",
-      "hlfg": "#0d0d0f"
-    },
-    "inspiration": "Épisode 72 — La Chine rattrape les géants américains de l'IA (inspiré « La Chine est en train d'écraser… »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode72-miniature.png"
+  "inspiration": "Épisode 71 — Patron ou salarié : qui gagne le plus à l'heure ? (inspiré « Thomas SMIC vs Lucas RSA »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode71-miniature.png"
+ },
+ "episode72-ia-chinoises": {
+  "classe": null,
+  "couleurs": {
+   "bg": "#0d0d0f",
+   "bg2": "#050506",
+   "bgc": "#1f1f24",
+   "surf": "#18181c",
+   "line": "#2d2d33",
+   "text": "#F5F5F5",
+   "mute": "#9a9aa3",
+   "accent": "#E53935",
+   "accent2": "#FFC107",
+   "hlbg": "#F5F5F5",
+   "hlfg": "#0d0d0f"
   },
-  "episode73-terrain-sadok": {
-    "classe": null,
-    "format_journal": "escalier-logiciel",
-    "couleurs": {
-      "bg": "#0c0c0e",
-      "bg2": "#060607",
-      "bgc": "#1a1412",
-      "surf": "#17171a",
-      "line": "#2b2b30",
-      "text": "#FFFFFF",
-      "mute": "#a3a3ab",
-      "accent": "#FF5A1F",
-      "accent2": "#3FB66B",
-      "hlbg": "#FF5A1F",
-      "hlfg": "#0c0c0e"
-    },
-    "inspiration": "Épisode 73 — escalier sombre 8 marches + fonds pastel avec les vrais écrans de RapidoCRM Terrain",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode73-miniature.png"
+  "inspiration": "Épisode 72 — La Chine rattrape les géants américains de l'IA (inspiré « La Chine est en train d'écraser… »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode72-miniature.png"
+ },
+ "episode73-terrain-sadok": {
+  "classe": null,
+  "format_journal": "escalier-logiciel",
+  "couleurs": {
+   "bg": "#0c0c0e",
+   "bg2": "#060607",
+   "bgc": "#1a1412",
+   "surf": "#17171a",
+   "line": "#2b2b30",
+   "text": "#FFFFFF",
+   "mute": "#a3a3ab",
+   "accent": "#FF5A1F",
+   "accent2": "#3FB66B",
+   "hlbg": "#FF5A1F",
+   "hlfg": "#0c0c0e"
   },
-  "mes-projets-ep01-caisse": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0F1A23",
-      "bg2": "#081018",
-      "bgc": "#16324d",
-      "surf": "#18283a",
-      "line": "#24384d",
-      "text": "#FFFFFF",
-      "mute": "#9fb0c2",
-      "accent": "#007BFF",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0F1A23"
-    },
-    "inspiration": "Mes projets ép. 1 — FoodEatUp Caisse Mobile : charte du site caisse.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep01-caisse-miniature.png"
+  "inspiration": "Épisode 73 — escalier sombre 8 marches + fonds pastel avec les vrais écrans de RapidoCRM Terrain",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/episode73-miniature.png"
+ },
+ "mes-projets-ep01-caisse": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0F1A23",
+   "bg2": "#081018",
+   "bgc": "#16324d",
+   "surf": "#18283a",
+   "line": "#24384d",
+   "text": "#FFFFFF",
+   "mute": "#9fb0c2",
+   "accent": "#007BFF",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0F1A23"
   },
-  "mes-projets-ep02-menu-digital": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#10223a",
-      "bg2": "#0a1626",
-      "bgc": "#1d3a63",
-      "surf": "#18304f",
-      "line": "#284a75",
-      "text": "#FFFFFF",
-      "mute": "#b3c3d9",
-      "accent": "#2F80ED",
-      "accent2": "#F5B83D",
-      "hlbg": "#FCF9E6",
-      "hlfg": "#10223a"
-    },
-    "inspiration": "Mes projets ép. 2 — FoodEatUp Menu digital : charte du site tablette.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep02-menu-digital-miniature.png"
+  "inspiration": "Mes projets ép. 1 — FoodEatUp Caisse Mobile : charte du site caisse.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep01-caisse-miniature.png"
+ },
+ "mes-projets-ep02-menu-digital": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#10223a",
+   "bg2": "#0a1626",
+   "bgc": "#1d3a63",
+   "surf": "#18304f",
+   "line": "#284a75",
+   "text": "#FFFFFF",
+   "mute": "#b3c3d9",
+   "accent": "#2F80ED",
+   "accent2": "#F5B83D",
+   "hlbg": "#FCF9E6",
+   "hlfg": "#10223a"
   },
-  "mes-projets-ep03-haccp": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0E1A26",
-      "bg2": "#08111a",
-      "bgc": "#1a2f45",
-      "surf": "#16283a",
-      "line": "#24394f",
-      "text": "#FFFFFF",
-      "mute": "#a5b4c4",
-      "accent": "#F2A33A",
-      "accent2": "#2F80ED",
-      "hlbg": "#F2A33A",
-      "hlfg": "#0E1A26"
-    },
-    "inspiration": "Mes projets ép. 3 — FoodEatUp HACCP : charte du site haccp.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep03-haccp-miniature.png"
+  "inspiration": "Mes projets ép. 2 — FoodEatUp Menu digital : charte du site tablette.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep02-menu-digital-miniature.png"
+ },
+ "mes-projets-ep03-haccp": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0E1A26",
+   "bg2": "#08111a",
+   "bgc": "#1a2f45",
+   "surf": "#16283a",
+   "line": "#24394f",
+   "text": "#FFFFFF",
+   "mute": "#a5b4c4",
+   "accent": "#F2A33A",
+   "accent2": "#2F80ED",
+   "hlbg": "#F2A33A",
+   "hlfg": "#0E1A26"
   },
-  "mes-projets-ep04-recettes": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0F1A23",
-      "bg2": "#081018",
-      "bgc": "#16324d",
-      "surf": "#18283a",
-      "line": "#24384d",
-      "text": "#FFFFFF",
-      "mute": "#9fb0c2",
-      "accent": "#0069D9",
-      "accent2": "#F5A524",
-      "hlbg": "#F5A524",
-      "hlfg": "#0F1A23"
-    },
-    "inspiration": "Mes projets ép. 4 — FoodEatUp Recettes : charte du site recette.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep04-recettes-miniature.png"
+  "inspiration": "Mes projets ép. 3 — FoodEatUp HACCP : charte du site haccp.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep03-haccp-miniature.png"
+ },
+ "mes-projets-ep04-recettes": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0F1A23",
+   "bg2": "#081018",
+   "bgc": "#16324d",
+   "surf": "#18283a",
+   "line": "#24384d",
+   "text": "#FFFFFF",
+   "mute": "#9fb0c2",
+   "accent": "#0069D9",
+   "accent2": "#F5A524",
+   "hlbg": "#F5A524",
+   "hlfg": "#0F1A23"
   },
-  "mes-projets-ep05-kds": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0F1A23",
-      "bg2": "#081018",
-      "bgc": "#16324d",
-      "surf": "#18283a",
-      "line": "#24384d",
-      "text": "#FFFFFF",
-      "mute": "#9fb0c2",
-      "accent": "#007BFF",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0F1A23"
-    },
-    "inspiration": "Mes projets ép. 5 — FoodEatUp KDS : charte du site kds.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep05-kds-miniature.png"
+  "inspiration": "Mes projets ép. 4 — FoodEatUp Recettes : charte du site recette.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep04-recettes-miniature.png"
+ },
+ "mes-projets-ep05-kds": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0F1A23",
+   "bg2": "#081018",
+   "bgc": "#16324d",
+   "surf": "#18283a",
+   "line": "#24384d",
+   "text": "#FFFFFF",
+   "mute": "#9fb0c2",
+   "accent": "#007BFF",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0F1A23"
   },
-  "mes-projets-ep06-fidelite": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0E1B2C",
-      "bg2": "#081220",
-      "bgc": "#173257",
-      "surf": "#172a40",
-      "line": "#25405e",
-      "text": "#FFFFFF",
-      "mute": "#9fb0c2",
-      "accent": "#2F6FE0",
-      "accent2": "#F5A524",
-      "hlbg": "#F5A524",
-      "hlfg": "#0E1B2C"
-    },
-    "inspiration": "Mes projets ép. 6 — FoodEatUp Fidélité : charte du site fidelite.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep06-fidelite-miniature.png"
+  "inspiration": "Mes projets ép. 5 — FoodEatUp KDS : charte du site kds.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep05-kds-miniature.png"
+ },
+ "mes-projets-ep06-fidelite": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0E1B2C",
+   "bg2": "#081220",
+   "bgc": "#173257",
+   "surf": "#172a40",
+   "line": "#25405e",
+   "text": "#FFFFFF",
+   "mute": "#9fb0c2",
+   "accent": "#2F6FE0",
+   "accent2": "#F5A524",
+   "hlbg": "#F5A524",
+   "hlfg": "#0E1B2C"
   },
-  "mes-projets-ep07-laboratoire": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0B1626",
-      "bg2": "#060e1a",
-      "bgc": "#14305a",
-      "surf": "#13243a",
-      "line": "#203a5a",
-      "text": "#FFFFFF",
-      "mute": "#9fb0c2",
-      "accent": "#007BFF",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0B1626"
-    },
-    "inspiration": "Mes projets ép. 7 — FoodEatUp Laboratoire : charte du site lab.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep07-laboratoire-miniature.png"
+  "inspiration": "Mes projets ép. 6 — FoodEatUp Fidélité : charte du site fidelite.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep06-fidelite-miniature.png"
+ },
+ "mes-projets-ep07-laboratoire": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0B1626",
+   "bg2": "#060e1a",
+   "bgc": "#14305a",
+   "surf": "#13243a",
+   "line": "#203a5a",
+   "text": "#FFFFFF",
+   "mute": "#9fb0c2",
+   "accent": "#007BFF",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0B1626"
   },
-  "mes-projets-ep08-qa-hub": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0F172A",
-      "bg2": "#0a0f1f",
-      "bgc": "#1e1b4b",
-      "surf": "#1a2238",
-      "line": "#2a3352",
-      "text": "#FFFFFF",
-      "mute": "#9fb0c2",
-      "accent": "#4F46E5",
-      "accent2": "#F59E0B",
-      "hlbg": "#F59E0B",
-      "hlfg": "#0F172A"
-    },
-    "inspiration": "Mes projets ép. 8 — QA Hub : charte du site qa.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep08-qa-hub-miniature.png"
+  "inspiration": "Mes projets ép. 7 — FoodEatUp Laboratoire : charte du site lab.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep07-laboratoire-miniature.png"
+ },
+ "mes-projets-ep08-qa-hub": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0F172A",
+   "bg2": "#0a0f1f",
+   "bgc": "#1e1b4b",
+   "surf": "#1a2238",
+   "line": "#2a3352",
+   "text": "#FFFFFF",
+   "mute": "#9fb0c2",
+   "accent": "#4F46E5",
+   "accent2": "#F59E0B",
+   "hlbg": "#F59E0B",
+   "hlfg": "#0F172A"
   },
-  "mes-projets-ep09-chaine-fraternelles": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#210C16",
-      "bg2": "#12070C",
-      "bgc": "#4C1933",
-      "surf": "#2C1521",
-      "line": "#482738",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#CC3C84",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#210C16"
-    },
-    "inspiration": "Mes projets ép. 9 — La Chaîne Fratern'Elles : couleurs du site lachainefraternelles.fr, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep09-chaine-fraternelles-miniature.png"
+  "inspiration": "Mes projets ép. 8 — QA Hub : charte du site qa.foodeatup.fr (couleurs FoodEatUp, vidéo du site incrustée, CTA « Voir le projet »)",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep08-qa-hub-miniature.png"
+ },
+ "mes-projets-ep09-chaine-fraternelles": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#210C16",
+   "bg2": "#12070C",
+   "bgc": "#4C1933",
+   "surf": "#2C1521",
+   "line": "#482738",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#CC3C84",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#210C16"
   },
-  "mes-projets-ep10-citycar": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#14210C",
-      "bg2": "#0B1207",
-      "bgc": "#2D4C19",
-      "surf": "#1E2C15",
-      "line": "#344827",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#549C24",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#14210C"
-    },
-    "inspiration": "Mes projets ép. 10 — CityCar : couleurs du site citycarvtc.fr, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep10-citycar-miniature.png"
+  "inspiration": "Mes projets ép. 9 — La Chaîne Fratern'Elles : couleurs du site lachainefraternelles.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep09-chaine-fraternelles-miniature.png"
+ },
+ "mes-projets-ep10-citycar": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#14210C",
+   "bg2": "#0B1207",
+   "bgc": "#2D4C19",
+   "surf": "#1E2C15",
+   "line": "#344827",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#549C24",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#14210C"
   },
-  "mes-projets-ep11-mena-coffee": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#21140C",
-      "bg2": "#120B07",
-      "bgc": "#4C2D19",
-      "surf": "#2C1E15",
-      "line": "#483427",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#E49C6C",
-      "accent2": "#2F80ED",
-      "hlbg": "#2F80ED",
-      "hlfg": "#21140C"
-    },
-    "inspiration": "Mes projets ép. 11 — Lüks Recettes : couleurs du site luks.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep11-mena-coffee-miniature.png"
+  "inspiration": "Mes projets ép. 10 — CityCar : couleurs du site citycarvtc.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep10-citycar-miniature.png"
+ },
+ "mes-projets-ep11-mena-coffee": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#21140C",
+   "bg2": "#120B07",
+   "bgc": "#4C2D19",
+   "surf": "#2C1E15",
+   "line": "#483427",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#E49C6C",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#21140C"
   },
-  "mes-projets-ep12-studio-cms": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0C1621",
-      "bg2": "#070C12",
-      "bgc": "#19324C",
-      "surf": "#15212C",
-      "line": "#273848",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#0C84FC",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0C1621"
-    },
-    "inspiration": "Mes projets ép. 12 — FoodEatUp Social : couleurs du site cms.foodeatup.com, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep12-studio-cms-miniature.png"
+  "inspiration": "Mes projets ép. 11 — Lüks Recettes : couleurs du site luks.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep11-mena-coffee-miniature.png"
+ },
+ "mes-projets-ep12-studio-cms": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C1621",
+   "bg2": "#070C12",
+   "bgc": "#19324C",
+   "surf": "#15212C",
+   "line": "#273848",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0C84FC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1621"
   },
-  "mes-projets-ep13-borne-drive": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0C1621",
-      "bg2": "#070C12",
-      "bgc": "#19324C",
-      "surf": "#15212C",
-      "line": "#273848",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#0C84FC",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0C1621"
-    },
-    "inspiration": "Mes projets ép. 13 — Borne drive vocale FoodEatUp : couleurs du site drive.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep13-borne-drive-miniature.png"
+  "inspiration": "Mes projets ép. 12 — FoodEatUp Social : couleurs du site cms.foodeatup.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep12-studio-cms-miniature.png"
+ },
+ "mes-projets-ep13-borne-drive": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C1621",
+   "bg2": "#070C12",
+   "bgc": "#19324C",
+   "surf": "#15212C",
+   "line": "#273848",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0C84FC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1621"
   },
-  "mes-projets-ep14-restaurant-360": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0C1C21",
-      "bg2": "#070F12",
-      "bgc": "#193F4C",
-      "surf": "#15262C",
-      "line": "#274048",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#246C84",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0C1C21"
-    },
-    "inspiration": "Mes projets ép. 14 — Restaurant 360 FoodEatUp : couleurs du site restaurant-explorer-app.lovable.app, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep14-restaurant-360-miniature.png"
+  "inspiration": "Mes projets ép. 13 — Borne drive vocale FoodEatUp : couleurs du site drive.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep13-borne-drive-miniature.png"
+ },
+ "mes-projets-ep14-restaurant-360": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C1C21",
+   "bg2": "#070F12",
+   "bgc": "#193F4C",
+   "surf": "#15262C",
+   "line": "#274048",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#246C84",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1C21"
   },
-  "mes-projets-ep15-coach-cuisine": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#21140C",
-      "bg2": "#120B07",
-      "bgc": "#4C2D19",
-      "surf": "#2C1E15",
-      "line": "#483427",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#CC8454",
-      "accent2": "#2F80ED",
-      "hlbg": "#2F80ED",
-      "hlfg": "#21140C"
-    },
-    "inspiration": "Mes projets ép. 15 — Coach Cuisine : couleurs du site caoch.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep15-coach-cuisine-miniature.png"
+  "inspiration": "Mes projets ép. 14 — Restaurant 360 FoodEatUp : couleurs du site restaurant-explorer-app.lovable.app, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep14-restaurant-360-miniature.png"
+ },
+ "mes-projets-ep15-coach-cuisine": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#21140C",
+   "bg2": "#120B07",
+   "bgc": "#4C2D19",
+   "surf": "#2C1E15",
+   "line": "#483427",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#CC8454",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#21140C"
   },
-  "mes-projets-ep16-alto": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0C1921",
-      "bg2": "#070D12",
-      "bgc": "#19384C",
-      "surf": "#15232C",
-      "line": "#273B48",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#246C9C",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0C1921"
-    },
-    "inspiration": "Mes projets ép. 16 — Alto : couleurs du site altovtc.fr, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep16-alto-miniature.png"
+  "inspiration": "Mes projets ép. 15 — Coach Cuisine : couleurs du site caoch.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep15-coach-cuisine-miniature.png"
+ },
+ "mes-projets-ep16-alto": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C1921",
+   "bg2": "#070D12",
+   "bgc": "#19384C",
+   "surf": "#15232C",
+   "line": "#273B48",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#246C9C",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1921"
   },
-  "mes-projets-ep17-braindcode-plugins": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0C1921",
-      "bg2": "#070D12",
-      "bgc": "#19384C",
-      "surf": "#15232C",
-      "line": "#273B48",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#0C9CFC",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0C1921"
-    },
-    "inspiration": "Mes projets ép. 17 — BraindCode Plugins : couleurs du site plugin.braindcode.com, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep17-braindcode-plugins-miniature.png"
+  "inspiration": "Mes projets ép. 16 — Alto : couleurs du site altovtc.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep16-alto-miniature.png"
+ },
+ "mes-projets-ep17-braindcode-plugins": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C1921",
+   "bg2": "#070D12",
+   "bgc": "#19384C",
+   "surf": "#15232C",
+   "line": "#273B48",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0C9CFC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1921"
   },
-  "mes-projets-ep18-braindcode-build": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0C1921",
-      "bg2": "#070D12",
-      "bgc": "#19384C",
-      "surf": "#15232C",
-      "line": "#273B48",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#0C9CFC",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0C1921"
-    },
-    "inspiration": "Mes projets ép. 18 — BraindCode Build : couleurs du site build.braindcode.com, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep18-braindcode-build-miniature.png"
+  "inspiration": "Mes projets ép. 17 — BraindCode Plugins : couleurs du site plugin.braindcode.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep17-braindcode-plugins-miniature.png"
+ },
+ "mes-projets-ep18-braindcode-build": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C1921",
+   "bg2": "#070D12",
+   "bgc": "#19384C",
+   "surf": "#15232C",
+   "line": "#273B48",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0C9CFC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1921"
   },
-  "mes-projets-ep19-youtube-publisher": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#210C0C",
-      "bg2": "#120707",
-      "bgc": "#4C1919",
-      "surf": "#2C1515",
-      "line": "#482727",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#FC0C0C",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#210C0C"
-    },
-    "inspiration": "Mes projets ép. 19 — Publisher Bot : couleurs du site youtube.rapidocms.com, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep19-youtube-publisher-miniature.png"
+  "inspiration": "Mes projets ép. 18 — BraindCode Build : couleurs du site build.braindcode.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep18-braindcode-build-miniature.png"
+ },
+ "mes-projets-ep19-youtube-publisher": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#210C0C",
+   "bg2": "#120707",
+   "bgc": "#4C1919",
+   "surf": "#2C1515",
+   "line": "#482727",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#FC0C0C",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#210C0C"
   },
-  "mes-projets-ep20-planit": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#110C21",
-      "bg2": "#090712",
-      "bgc": "#24194C",
-      "surf": "#1A152C",
-      "line": "#2E2748",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#5424FC",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#110C21"
-    },
-    "inspiration": "Mes projets ép. 20 — Plan'It : couleurs du site plani-t.fr, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep20-planit-miniature.png"
+  "inspiration": "Mes projets ép. 19 — Publisher Bot : couleurs du site youtube.rapidocms.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep19-youtube-publisher-miniature.png"
+ },
+ "mes-projets-ep20-planit": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#110C21",
+   "bg2": "#090712",
+   "bgc": "#24194C",
+   "surf": "#1A152C",
+   "line": "#2E2748",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#5424FC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#110C21"
   },
-  "mes-projets-ep21-tutoriels-foodeatup": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#21190C",
-      "bg2": "#120D07",
-      "bgc": "#4C3819",
-      "surf": "#2C2315",
-      "line": "#483B27",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#FC9C0C",
-      "accent2": "#2F80ED",
-      "hlbg": "#2F80ED",
-      "hlfg": "#21190C"
-    },
-    "inspiration": "Mes projets ép. 21 — Académie FoodEatUp : couleurs du site tutoriel.foodeatup.com, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep21-tutoriels-foodeatup-miniature.png"
+  "inspiration": "Mes projets ép. 20 — Plan'It : couleurs du site plani-t.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep20-planit-miniature.png"
+ },
+ "mes-projets-ep21-tutoriels-foodeatup": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#21190C",
+   "bg2": "#120D07",
+   "bgc": "#4C3819",
+   "surf": "#2C2315",
+   "line": "#483B27",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#FC9C0C",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#21190C"
   },
-  "mes-projets-ep22-camera": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#21160C",
-      "bg2": "#120C07",
-      "bgc": "#4C3319",
-      "surf": "#2C2115",
-      "line": "#483827",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#FC9C3C",
-      "accent2": "#2F80ED",
-      "hlbg": "#2F80ED",
-      "hlfg": "#21160C"
-    },
-    "inspiration": "Mes projets ép. 22 — Salle Live : couleurs du site camera.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep22-camera-miniature.png"
+  "inspiration": "Mes projets ép. 21 — Académie FoodEatUp : couleurs du site tutoriel.foodeatup.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep21-tutoriels-foodeatup-miniature.png"
+ },
+ "mes-projets-ep22-camera": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#21160C",
+   "bg2": "#120C07",
+   "bgc": "#4C3319",
+   "surf": "#2C2115",
+   "line": "#483827",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#FC9C3C",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#21160C"
   },
-  "mes-projets-ep23-voyagego": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#210F0C",
-      "bg2": "#120807",
-      "bgc": "#4C2019",
-      "surf": "#2C1815",
-      "line": "#482C27",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#FC6C54",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#210F0C"
-    },
-    "inspiration": "Mes projets ép. 23 — VoyageGo : couleurs du site voyage.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep23-voyagego-miniature.png"
+  "inspiration": "Mes projets ép. 22 — Salle Live : couleurs du site camera.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep22-camera-miniature.png"
+ },
+ "mes-projets-ep23-voyagego": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#210F0C",
+   "bg2": "#120807",
+   "bgc": "#4C2019",
+   "surf": "#2C1815",
+   "line": "#482C27",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#FC6C54",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#210F0C"
   },
-  "mes-projets-ep24-fiche-seo": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0C1621",
-      "bg2": "#070C12",
-      "bgc": "#19324C",
-      "surf": "#15212C",
-      "line": "#273848",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#0C84FC",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0C1621"
-    },
-    "inspiration": "Mes projets ép. 24 — Fiche technique FoodEatUp : couleurs du site fiche.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep24-fiche-seo-miniature.png"
+  "inspiration": "Mes projets ép. 23 — VoyageGo : couleurs du site voyage.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep23-voyagego-miniature.png"
+ },
+ "mes-projets-ep24-fiche-seo": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C1621",
+   "bg2": "#070C12",
+   "bgc": "#19324C",
+   "surf": "#15212C",
+   "line": "#273848",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0C84FC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1621"
   },
-  "mes-projets-ep25-rapidocms": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0C1A21",
-      "bg2": "#070E12",
-      "bgc": "#193B4C",
-      "surf": "#15252C",
-      "line": "#273D48",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#1AA7EC",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0C1A21"
-    },
-    "inspiration": "Mes projets ép. 25 — RapidoCMS : couleurs du site rapidocms.com, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep25-rapidocms-miniature.png"
+  "inspiration": "Mes projets ép. 24 — Fiche technique FoodEatUp : couleurs du site fiche.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep24-fiche-seo-miniature.png"
+ },
+ "mes-projets-ep25-rapidocms": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C1A21",
+   "bg2": "#070E12",
+   "bgc": "#193B4C",
+   "surf": "#15252C",
+   "line": "#273D48",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#1AA7EC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1A21"
   },
-  "mes-projets-ep26-tiktok-publisher": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#210C11",
-      "bg2": "#120709",
-      "bgc": "#4C1924",
-      "surf": "#2C151A",
-      "line": "#48272E",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#FC2454",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#210C11"
-    },
-    "inspiration": "Mes projets ép. 26 — Braincast : couleurs du site braincast.rapidocms.com, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep26-tiktok-publisher-miniature.png"
+  "inspiration": "Mes projets ép. 25 — RapidoCMS : couleurs du site rapidocms.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep25-rapidocms-miniature.png"
+ },
+ "mes-projets-ep26-tiktok-publisher": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#210C11",
+   "bg2": "#120709",
+   "bgc": "#4C1924",
+   "surf": "#2C151A",
+   "line": "#48272E",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#FC2454",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#210C11"
   },
-  "mes-projets-ep27-pwa": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0C1421",
-      "bg2": "#070B12",
-      "bgc": "#192D4C",
-      "surf": "#151E2C",
-      "line": "#273448",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#0C6CFC",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0C1421"
-    },
-    "inspiration": "Mes projets ép. 27 — FoodEatUp App : couleurs du site yookii-food-pwa.lovable.app, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep27-pwa-miniature.png"
+  "inspiration": "Mes projets ép. 26 — Braincast : couleurs du site braincast.rapidocms.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep26-tiktok-publisher-miniature.png"
+ },
+ "mes-projets-ep27-pwa": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C1421",
+   "bg2": "#070B12",
+   "bgc": "#192D4C",
+   "surf": "#151E2C",
+   "line": "#273448",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0C6CFC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1421"
   },
-  "mes-projets-ep28-carte-visite": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0C1521",
-      "bg2": "#070B12",
-      "bgc": "#192E4C",
-      "surf": "#151F2C",
-      "line": "#273548",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#0B6EF6",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0C1521"
-    },
-    "inspiration": "Mes projets ép. 28 — Carte de visite FoodEatUp : couleurs du site carte.foodeatup.com, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep28-carte-visite-miniature.png"
+  "inspiration": "Mes projets ép. 27 — FoodEatUp App : couleurs du site yookii-food-pwa.lovable.app, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep27-pwa-miniature.png"
+ },
+ "mes-projets-ep28-carte-visite": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C1521",
+   "bg2": "#070B12",
+   "bgc": "#192E4C",
+   "surf": "#151F2C",
+   "line": "#273548",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0B6EF6",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1521"
   },
-  "mes-projets-ep29-studio-print": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0C1521",
-      "bg2": "#070B12",
-      "bgc": "#192E4C",
-      "surf": "#151F2C",
-      "line": "#273548",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#0B6EF6",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0C1521"
-    },
-    "inspiration": "Mes projets ép. 29 — Studio Print FoodEatUp : couleurs du site design.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep29-studio-print-miniature.png"
+  "inspiration": "Mes projets ép. 28 — Carte de visite FoodEatUp : couleurs du site carte.foodeatup.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep28-carte-visite-miniature.png"
+ },
+ "mes-projets-ep29-studio-print": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C1521",
+   "bg2": "#070B12",
+   "bgc": "#192E4C",
+   "surf": "#151F2C",
+   "line": "#273548",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0B6EF6",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1521"
   },
-  "mes-projets-ep30-site-foodeatup": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0C1521",
-      "bg2": "#070C12",
-      "bgc": "#19304C",
-      "surf": "#151F2C",
-      "line": "#273648",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#1D7BF2",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#0C1521"
-    },
-    "inspiration": "Mes projets ép. 30 — FoodEatUp : couleurs du site site.foodeatup.com, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep30-site-foodeatup-miniature.png"
+  "inspiration": "Mes projets ép. 29 — Studio Print FoodEatUp : couleurs du site design.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep29-studio-print-miniature.png"
+ },
+ "mes-projets-ep30-site-foodeatup": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C1521",
+   "bg2": "#070C12",
+   "bgc": "#19304C",
+   "surf": "#151F2C",
+   "line": "#273648",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#1D7BF2",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1521"
   },
-  "mes-projets-ep31-villabeach": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#211C0C",
-      "bg2": "#120F07",
-      "bgc": "#4C3F19",
-      "surf": "#2C2615",
-      "line": "#484027",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#CCB46C",
-      "accent2": "#2F80ED",
-      "hlbg": "#2F80ED",
-      "hlfg": "#211C0C"
-    },
-    "inspiration": "Mes projets ép. 31 — Villa Beach : couleurs du site villabeach.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep31-villabeach-miniature.png"
+  "inspiration": "Mes projets ép. 30 — FoodEatUp : couleurs du site site.foodeatup.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep30-site-foodeatup-miniature.png"
+ },
+ "mes-projets-ep31-villabeach": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#211C0C",
+   "bg2": "#120F07",
+   "bgc": "#4C3F19",
+   "surf": "#2C2615",
+   "line": "#484027",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#CCB46C",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#211C0C"
   },
-  "mes-projets-ep32-planit-tutoriels": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#110C21",
-      "bg2": "#090712",
-      "bgc": "#26194C",
-      "surf": "#1B152C",
-      "line": "#2F2748",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#6C3CFC",
-      "accent2": "#FFA500",
-      "hlbg": "#FFA500",
-      "hlfg": "#110C21"
-    },
-    "inspiration": "Mes projets ép. 32 — Académie Plan'It : couleurs du site tutoriel.plani-t.fr, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep32-planit-tutoriels-miniature.png"
+  "inspiration": "Mes projets ép. 31 — Villa Beach : couleurs du site villabeach.foodeatup.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep31-villabeach-miniature.png"
+ },
+ "mes-projets-ep32-planit-tutoriels": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#110C21",
+   "bg2": "#090712",
+   "bgc": "#26194C",
+   "surf": "#1B152C",
+   "line": "#2F2748",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#6C3CFC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#110C21"
   },
-  "mes-projets-ep33-devis-batiment": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#21140C",
-      "bg2": "#120B07",
-      "bgc": "#4C2D19",
-      "surf": "#2C1E15",
-      "line": "#483427",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#FC6C0C",
-      "accent2": "#2F80ED",
-      "hlbg": "#2F80ED",
-      "hlfg": "#21140C"
-    },
-    "inspiration": "Mes projets ép. 33 — DevisBâti : couleurs du site site-quote-builder.lovable.app, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep33-devis-batiment-miniature.png"
+  "inspiration": "Mes projets ép. 32 — Académie Plan'It : couleurs du site tutoriel.plani-t.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep32-planit-tutoriels-miniature.png"
+ },
+ "mes-projets-ep33-devis-batiment": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#21140C",
+   "bg2": "#120B07",
+   "bgc": "#4C2D19",
+   "surf": "#2C1E15",
+   "line": "#483427",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#FC6C0C",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#21140C"
   },
-  "mes-projets-ep34-rapidocrm": {
-    "classe": null,
-    "format_journal": "mes-projets",
-    "serie": "mes-projets",
-    "couleurs": {
-      "bg": "#0C210D",
-      "bg2": "#071207",
-      "bgc": "#194C1B",
-      "surf": "#152C16",
-      "line": "#274828",
-      "text": "#FFFFFF",
-      "mute": "#a9b6c6",
-      "accent": "#4CAF50",
-      "accent2": "#2F80ED",
-      "hlbg": "#2F80ED",
-      "hlfg": "#0C210D"
-    },
-    "inspiration": "Mes projets ép. 34 — RapidoCRM : couleurs du site rapido-crm.com, vidéo du site incrustée, CTA « Voir le projet »",
-    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep34-rapidocrm-miniature.png"
-  }
+  "inspiration": "Mes projets ép. 33 — DevisBâti : couleurs du site site-quote-builder.lovable.app, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep33-devis-batiment-miniature.png"
+ },
+ "mes-projets-ep34-rapidocrm": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C210D",
+   "bg2": "#071207",
+   "bgc": "#194C1B",
+   "surf": "#152C16",
+   "line": "#274828",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#4CAF50",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#0C210D"
+  },
+  "inspiration": "Mes projets ép. 34 — RapidoCRM : couleurs du site rapido-crm.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep34-rapidocrm-miniature.png"
+ },
+ "mes-projets-ep35-rapidocrm-terrain": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0C210D",
+   "bg2": "#071207",
+   "bgc": "#194C1B",
+   "surf": "#152C16",
+   "line": "#274828",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#3E8E41",
+   "accent2": "#2F80ED",
+   "hlbg": "#3E8E41",
+   "hlfg": "#FFFFFF"
+  },
+  "inspiration": "Mes projets ép. 35 — RapidoCRM Terrain : couleurs du site terrain.rapido-crm.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep35-rapidocrm-terrain-miniature.png"
+ },
+ "mes-projets-ep36-rapidosoftware": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0E1426",
+   "bg2": "#080C18",
+   "bgc": "#1C2650",
+   "surf": "#151D38",
+   "line": "#26315A",
+   "text": "#FFFFFF",
+   "mute": "#a9b3cf",
+   "accent": "#5B6CFF",
+   "accent2": "#2FB37A",
+   "hlbg": "#5B6CFF",
+   "hlfg": "#FFFFFF"
+  },
+  "inspiration": "Mes projets ép. 36 — RapidoSoftware : couleurs du site rapidosoftware.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep36-rapidosoftware-miniature.png"
+ },
+ "mes-projets-ep37-braindcode": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#071A2B",
+   "bg2": "#040F19",
+   "bgc": "#0B3556",
+   "surf": "#0E2438",
+   "line": "#16395A",
+   "text": "#FFFFFF",
+   "mute": "#a6bdd1",
+   "accent": "#0098F3",
+   "accent2": "#FFA500",
+   "hlbg": "#0098F3",
+   "hlfg": "#FFFFFF"
+  },
+  "inspiration": "Mes projets ép. 37 — BraindCode : couleurs du site braindcode.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep37-braindcode-miniature.png"
+ },
+ "mes-projets-ep38-rapidorh": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#150E24",
+   "bg2": "#0C0816",
+   "bgc": "#2C1E52",
+   "surf": "#1F1636",
+   "line": "#33255A",
+   "text": "#FFFFFF",
+   "mute": "#b9afd1",
+   "accent": "#7E57C2",
+   "accent2": "#2FB37A",
+   "hlbg": "#7E57C2",
+   "hlfg": "#FFFFFF"
+  },
+  "inspiration": "Mes projets ép. 38 — RapidoRH : couleurs du site rapidosoftware.com/solutions/rh, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep38-rapidorh-miniature.png"
+ }
 }
