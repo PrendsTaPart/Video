@@ -69,3 +69,12 @@ Mon développeur reçoit la correction déjà expliquée.
 Toute l'équipe voit la même liste, au même endroit.
 C'est gratuit.
 Le lien est sous la vidéo : clique sur « Voir le projet ».
+
+## État au 30/10/2026
+
+- 8 épisodes publiés sur le Journal (série `mes-projets`, slugs `mes-projets-N-<projet>`), chacun relié à son `projet_slug`, avec short et miniature (RapidoCMS).
+- 8 campagnes email en brouillon (modèle `nouvel-episode-projet`, codes `nouvel-episode-projet-1` à `-8`) : l'envoi reste à faire par Michael dans /admin/emails.
+- Bibliothèque : miniatures `mes-projets-epNN-*-miniature`, visuels `projet-*-visuel` (HACCP : `projet-foodeatup-haccp-capture`), planche `theme-serie-mes-projets` ; thèmes dans `_journal-63-72/themes.json`.
+- Chartes et assets des projets : demandés à Lovable (le client MCP de la session ne transmettait pas l'objet `charte`).
+- Épisode 73 relié au projet `rapidocrm-terrain`.
+- Voix : une seule prise par voix (règle du CLAUDE.md).
