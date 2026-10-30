@@ -1,0 +1,35 @@
+1
+00:00:00,350 --> 00:00:02,750
+Espèces ou carte : devine qui perd de l'argent.
+
+2
+00:00:03,130 --> 00:00:07,720
+Pour le client, c'est pareil. Pour le resto, pas du tout. Exemple avec Marco, pizzaïolo.
+
+3
+00:00:08,030 --> 00:00:09,530
+Un client paie vingt euros par carte.
+
+4
+00:00:09,790 --> 00:00:16,000
+Sur ces vingt euros, la banque prend une petite commission. Dans notre exemple, un pour cent. Marco touche dix-neuf euros quatre-vingts.
+
+5
+00:00:15,830 --> 00:00:18,250
+Un autre paie en espèces. Marco touche vingt euros.
+
+6
+00:00:18,410 --> 00:00:24,150
+Sauf que le soir, il faut compter la caisse, aller à la banque, risquer l'erreur ou le vol. Ça aussi, ça coûte. En temps.
+
+7
+00:00:24,410 --> 00:00:27,910
+Le vrai piège, ce n'est pas la commission. C'est de ne pas savoir ce qu'on paie vraiment.
+
+8
+00:00:27,910 --> 00:00:34,050
+Dans FoodEatUp, les paiements par carte sont rapprochés automatiquement. Tu vois ce qui est entré, ce qui a été prélevé, et ce qui reste.
+
+9
+00:00:34,230 --> 00:00:36,410
+Écris CAISSE en commentaire, je t'envoie le calcul.
