@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,450
+Et si tes clients revenaient en dix secondes chrono ?
+
+2
+00:00:02,670 --> 00:00:04,930
+Voici FoodEatUp Fidélité, un de mes projets.
+
+3
+00:00:05,170 --> 00:00:08,030
+Au comptoir, une tablette : le client tape juste son numéro.
+
+4
+00:00:08,250 --> 00:00:09,830
+Il cumule des points à chaque passage.
+
+5
+00:00:10,130 --> 00:00:12,270
+Il tourne la roue des cadeaux, et il a envie de revenir.
+
+6
+00:00:12,590 --> 00:00:14,610
+Tout est à tes couleurs, et respecte les règles.
+
+7
+00:00:14,790 --> 00:00:15,950
+L'appli est gratuite.
+
+8
+00:00:15,970 --> 00:00:18,720
+Le lien est sous la vidéo : clique sur « Voir le projet ».

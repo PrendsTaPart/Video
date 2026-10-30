@@ -1,0 +1,35 @@
+1
+00:00:00,350 --> 00:00:03,610
+Ton classeur HACCP rempli à vingt-trois heures, c'est fini.
+
+2
+00:00:04,010 --> 00:00:06,650
+Voici FoodEatUp HACCP, un de mes projets.
+
+3
+00:00:06,990 --> 00:00:10,070
+Tu parles : « Frigo deux, trois degrés. » C'est enregistré.
+
+4
+00:00:10,150 --> 00:00:15,230
+Températures, dates limites, réceptions, nettoyage : chaque relevé tient en un geste.
+
+5
+00:00:15,130 --> 00:00:18,210
+Jarvis, le chef de l'appli, te parle, t'écoute et t'alerte.
+
+6
+00:00:18,450 --> 00:00:20,670
+Chacun parle sa langue, et le dossier sort en français.
+
+7
+00:00:20,910 --> 00:00:23,590
+Le jour du contrôle, ton dossier est prêt en deux touchers.
+
+8
+00:00:23,570 --> 00:00:24,590
+L'appli est gratuite.
+
+9
+00:00:24,530 --> 00:00:27,220
+Le lien est sous la vidéo : clique sur « Voir le projet ».

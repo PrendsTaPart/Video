@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,710
+En plein coup de feu, ta cuisine voit tout, en même temps ?
+
+2
+00:00:03,070 --> 00:00:05,450
+Voici l'écran de cuisine FoodEatUp, un de mes projets.
+
+3
+00:00:05,810 --> 00:00:08,790
+Chaque poste reçoit ses tickets, avec un minuteur qui change de couleur.
+
+4
+00:00:09,110 --> 00:00:11,230
+Le pass envoie la table entière en même temps.
+
+5
+00:00:11,490 --> 00:00:13,250
+Le bon sort sur l'imprimante du poste.
+
+6
+00:00:13,350 --> 00:00:16,070
+Chaque poste a son propre son, et un mode école pour les nouveaux.
+
+7
+00:00:16,350 --> 00:00:18,650
+Il marche sur un écran, une tablette ou un téléphone.
+
+8
+00:00:19,010 --> 00:00:21,280
+Le lien est sous la vidéo : clique sur « Voir le projet ».

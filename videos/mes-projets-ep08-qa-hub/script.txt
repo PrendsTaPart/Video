@@ -1,0 +1,8 @@
+Mes développeurs ne cherchent plus les bugs. Claude les trouve.
+Voici QA Hub, un de mes projets.
+Claude teste chaque outil de mes logiciels, un par un.
+Quand quelque chose casse, il écrit un ticket complet.
+Mon développeur reçoit la correction déjà expliquée.
+Toute l'équipe voit la même liste, au même endroit.
+C'est gratuit.
+Le lien est sous la vidéo : clique sur « Voir le projet ».
