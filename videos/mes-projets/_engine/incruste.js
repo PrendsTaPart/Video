@@ -12,7 +12,7 @@ const {chromium} = require('playwright'); const {execFileSync} = require('child_
   flt.push(`[${M}:v]format=gray,split=${clips.length}${clips.map((_, k) => `[m${k}]`).join('')}`);
   clips.forEach(([f, t0, t1, ss, sp], k) => {
     const ln = t1 - t0;
-    flt.push(`[${k + 1}:v]trim=${ss}:${ss + ln * sp},setpts=(PTS-STARTPTS)/${sp},scale=${E.w}:${E.h}:force_original_aspect_ratio=increase,crop=${E.w}:${E.h},fps=30[v${k}];[m${k}]fps=30,trim=duration=${ln},setpts=PTS-STARTPTS[mm${k}];` +
+    flt.push(`[${k + 1}:v]trim=${ss}:${ss + ln * sp},setpts=(PTS-STARTPTS)/${sp},format=rgba,scale=${E.w}:${E.h}:force_original_aspect_ratio=increase,crop=${E.w}:${E.h},fps=30[v${k}];[m${k}]fps=30,trim=duration=${ln},setpts=PTS-STARTPTS[mm${k}];` +
       `[v${k}][mm${k}]alphamerge,setpts=PTS+${t0}/TB,fade=t=in:st=${t0}:d=0.25:alpha=1,fade=t=out:st=${t1 - 0.2}:d=0.2:alpha=1[c${k}]`);
     flt.push(`[${last}][c${k}]overlay=${E.x}:${E.y}:eof_action=pass[x${k}]`); last = `x${k}`;
   });
