@@ -15,8 +15,8 @@ s.add(`<div class="sticker" style="background:#7C5CFF;color:#fff">AUJOURD'HUI : 
 // Les cinq outils
 const T=[[2,3,'1',h.logo('lovable',170),A+'capture-site-michael.png','Mon site, fait avec Lovable'],
  [4,5,'2',h.logo('claude',80),null,'Mon chef de chantier'],
- [6,7,'3',name('Canva'),null,'Affiches et menus à imprimer'],
- [8,9,'4',name('ElevenLabs'),null,'La voix de mes vidéos'],
+ [6,7,'3',h.logo('canva',120),null,'Affiches et menus à imprimer'],
+ [8,9,'4',h.logo('elevenlabs',56),null,'La voix de mes vidéos'],
  [10,11,'5',h.logo('rapidocms',120),null,'Tous les réseaux en une fois']];
 const ends=[t0(4),t0(6),t0(8),t0(10),t0(12)];
 T.forEach(([a,b,n,logo,img,sub],k)=>{const s=J.scene(t0(a),ends[k]);
@@ -33,7 +33,7 @@ T.forEach(([a,b,n,logo,img,sub],k)=>{const s=J.scene(t0(a),ends[k]);
 // Ils se parlent tous : Claude au centre, les autres autour
 s=J.scene(t0(12),t0(13));
 s.add(h.logo('claude',90),{x:540,w:0,y:520,at:w(12,'claude')-.2,an:'pop',css:{transform:'translate(-50%,-50%)'}});
-const around=[[h.logo('lovable',130),250,260],[name('Canva'),830,260],[name('ElevenLabs'),230,820],[h.logo('rapidocms',100),850,820]];
+const around=[[h.logo('lovable',130),250,260],[h.logo('canva',100),830,260],[h.logo('elevenlabs',44),230,820],[h.logo('rapidocms',100),850,820]];
 around.forEach(([html,x,y],i)=>s.add(`<div style="transform:scale(.8)">${html}</div>`,{x,w:0,y,at:w(12,'parlent')+i*.15,an:'pop',css:{transform:'translate(-50%,-50%)'}}));
 s.add(`<svg width="1080" height="1100" style="position:absolute;left:0;top:0"><g stroke="#7C5CFF" stroke-width="6" stroke-dasharray="14 12" fill="none"><line x1="540" y1="520" x2="250" y2="260"/><line x1="540" y1="520" x2="830" y2="260"/><line x1="540" y1="520" x2="230" y2="820"/><line x1="540" y1="520" x2="850" y2="820"/></g></svg>`,{at:w(12,'parlent'),an:'fade',css:{left:'0',top:'0'}});
 s.text('Je décris · Claude orchestre · <span class="hl">ça sort</span>',{y:1060,at:w(12,'décris'),css:{fontSize:'44px'}});

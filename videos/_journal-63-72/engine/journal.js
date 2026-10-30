@@ -7,7 +7,7 @@ const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)), ease=x=>1-Math.pow(1-clamp(x
 const rnd=s=>{const x=Math.sin(s*12.9898)*43758.5453;return x-Math.floor(x);};
 const C=window.CFG, L=C.lines, W=C.words;
 const C0='../_journal-63-72/commun/';
-const LOGOS={claude:'logo-claude.webp',openai:'logo-openai.webp',mistral:'logo-mistral.webp',lovable:'logo-lovable.webp',rapidocms:'logo-rapidocms.webp',rapidocrm:'logo-rapidocrm.webp',rapidorh:'logo-rapidorh.webp',planit:'logo-planit.webp',braindcode:'logo-braindcode.webp',foodeatup:'logo-foodeatup.webp',rapidosoftware:'logo-rapidosoftware.png'};
+const LOGOS={claude:'logo-claude.webp',openai:'logo-openai.webp',mistral:'logo-mistral.webp',lovable:'logo-lovable.webp',rapidocms:'logo-rapidocms.webp',rapidocrm:'logo-rapidocrm.webp',rapidorh:'logo-rapidorh.webp',planit:'logo-planit.webp',braindcode:'logo-braindcode.webp',foodeatup:'logo-foodeatup.webp',rapidosoftware:'logo-rapidosoftware.png',canva:'logo-canva.png',elevenlabs:'logo-elevenlabs.png',deepseek:'logo-deepseek.png',qwen:'logo-qwen.png',wan:'logo-wan.png',zai:'logo-zai.png',zhipu:'logo-zhipu.png',kimi:'logo-kimi.png'};
 const J={clamp,ease,back,rnd,scenes:[],fx:[],kw:new Set(),red:new Set(),steps:[],cfg:{}};
 J.t0=i=>L[i].t0; J.t1=i=>L[i].t1;
 // temps du premier mot de la ligne qui commence par « mot » (insensible à la casse et à la ponctuation)

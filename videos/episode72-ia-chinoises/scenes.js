@@ -6,21 +6,23 @@ J.init({episode:72,keyword:'CHINE',duoLogo:'claude',stepLabel:'NUMÉRO',
 J.progress(5);
 const nm=(t,sz=56,bg='#E53935')=>`<span style="display:inline-block;background:${bg};color:#fff;font-weight:900;font-size:${sz}px;padding:12px 26px;border-radius:16px;white-space:nowrap">${t}</span>`;
 const NAMES=['DeepSeek','Qwen','Wan','GLM','Kimi'];
+const LG={DeepSeek:'deepseek',Qwen:'qwen',Wan:'wan',GLM:'zhipu',Kimi:'kimi'};
+const lg=(n,hh)=>h.logo(LG[n],hh);
 document.head.insertAdjacentHTML('beforeend','<style>.hook .hookt{font-size:86px}</style>');
 // Accroche : les géants américains contre les outils chinois
 let s=J.hook(0,t0(1),{line:0,hl:['Chine'],y:260,w:980});
 s.add('<div style="display:flex;gap:20px;justify-content:center">'+h.logo('openai',50)+h.logo('claude',50)+'</div>',{center:true,y:1010,at:w(0,'géants'),an:'left'});
-s.add('<div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">'+NAMES.map(n=>nm(n,34)).join('')+'</div>',{center:true,y:1120,at:w(0,'rattraper'),an:'right'});
+s.add('<div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">'+NAMES.map(n=>lg(n,38)).join('')+'</div>',{center:true,y:1120,at:w(0,'rattraper'),an:'right'});
 s.add('<div class="sticker" style="font-size:70px;background:#FFC107">GRATUIT</div>',{x:700,w:0,y:860,at:w(0,'gratuits'),an:'stamp'});
 // Les cinq à connaître
 s=J.scene(t0(1),t0(2));
 s.text('Les <span class="acc">5</span> à connaître',{y:300,at:t0(1),css:{fontSize:'84px'}});
-NAMES.forEach((n,i)=>s.add(`<div>${nm(n,48)}</div>`,{x:540,w:0,y:470+i*110,at:t0(1)+.15*i,an:'pop',css:{transform:'translateX(-50%)'}}));
+NAMES.forEach((n,i)=>s.add(`<div>${lg(n,62)}</div>`,{x:540,w:0,y:450+i*120,at:t0(1)+.15*i,an:'pop',css:{transform:'translateX(-50%)'}}));
 // Les cinq outils
 const S=[[2,3,'DeepSeek',''],[4,5,'Qwen','d\'Alibaba'],[6,7,'Wan','chez Alibaba'],[8,9,'GLM','de Zhipu'],[10,11,'Kimi','']];
 const ends=[t0(4),t0(6),t0(8),t0(10),t0(12)];
 S.forEach(([a,b,ti,hl],k)=>{const s=J.step(J.scene(t0(a),ends[k]),k+1,ti,hl);
-  const win=s.add(`<div class="win" style="min-height:640px"><div class="wtop"><s style="background:#ff5f57"></s><s style="background:#febc2e"></s><s style="background:#28c840"></s><span class="wlab">${ti.toUpperCase()}</span></div><div class="wz" style="position:relative;height:560px"></div></div>`,{x:540,w:900,y:310,at:t0(a)+.1,an:'up'});
+  const win=s.add(`<div class="win" style="min-height:640px"><div class="wtop"><s style="background:#ff5f57"></s><s style="background:#febc2e"></s><s style="background:#28c840"></s><span class="wlab">${ti.toUpperCase()}</span><span style="margin-left:auto">${lg(ti,40)}</span></div><div class="wz" style="position:relative;height:560px"></div></div>`,{x:540,w:900,y:310,at:t0(a)+.1,an:'up'});
   const add=(html,o)=>s.add(html,Object.assign({an:'pop'},o));
   if(k===0){add(h.chip('GRATUIT','a'),{x:330,w:0,y:450,at:w(b,'gratuit'),css:{transform:'translateX(-50%)'}});add(h.chip('OUVERT À TOUS','b'),{x:740,w:0,y:450,at:w(b,'ouvert'),css:{transform:'translateX(-50%)'}});
     add(`<div class="tx" style="font-size:48px;text-align:center">a fait trembler<br><span class="hl">la Silicon Valley</span></div>`,{center:true,y:620,at:w(b,'trembler'),an:'up'});}
@@ -46,7 +48,7 @@ s.add(`<div class="card" style="border:4px solid #FFC107;text-align:center"><div
 s=J.scene(t0(14),t0(15));
 s.add(h.logo('claude',100),{x:540,w:0,y:300,at:w(14,'claude'),an:'pop',css:{transform:'translateX(-50%)'}});
 s.text('pour ce qui compte',{y:470,at:w(14,'compte'),css:{fontSize:'54px'}});
-s.add('<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">'+NAMES.map(n=>nm(n,32,'#2d2d33')).join('')+'</div>',{center:true,y:700,at:w(14,'teste'),an:'up'});
+s.add('<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">'+NAMES.map(n=>lg(n,34)).join('')+'</div>',{center:true,y:700,at:w(14,'teste'),an:'up'});
 s.text('<span class="mute" style="font-size:40px">je les teste tous</span>',{y:880,at:w(14,'teste'),an:'up'});
 // Fin
 J.cta(t0(15),{guideTitle:'La liste complète',items:['DeepSeek','Qwen (Alibaba)','Wan (Alibaba)','GLM (Zhipu)','Kimi','+ Mistral, en France']});
