@@ -52,5 +52,5 @@ I.make = function (o) {
     if (c.note) sc.text(`<span class="itag">${c.note}</span>`, {y: 1160, at: a + .3, an: 'fade'});
   });
   J.cta(t0(last), o.cta);
-  J.cfg.thumbAt = o.thumbAt ?? t0(1) + .8;
+  J.cfg.thumbAt = o.thumbAt ?? Math.max(t0(1) + .8, t0(2) - .3); // fin de la première scène : tout est apparu
 };
