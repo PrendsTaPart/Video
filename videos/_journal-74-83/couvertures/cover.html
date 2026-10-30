@@ -27,6 +27,6 @@ ${d.site?`<div class="site"><i></i><img src="${d.site}"></div>`:`<div class="doc
 <div class="phone"><img src="${d.phone}"></div>
 <div class="t"><span class="ep">ÉPISODE ${d.n}</span><div class="k">${d.k}</div><h1>${d.titre}</h1><div class="kw">Écris en commentaire <b>${d.kw}</b></div></div>
 <div class="me"><img src="${d.me}"><div><b>Michael Kebail-Ali</b><span>Mon quotidien d'entrepreneur avec l'IA</span></div><div class="logo"><img src="${d.logo}"></div></div>
-<div class="g">Guide gratuit + PDF</div>`;
+<div class="g">${d.g||"Guide gratuit + PDF"}</div>`;
 document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>i.onload=i.onerror=r)))).then(()=>document.body.dataset.ok=1);
 </script></body></html>
