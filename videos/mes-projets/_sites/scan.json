@@ -1,0 +1,489 @@
+{
+ "recette": {
+  "title": "FoodEatUp Recettes · formation et pas à pas en cuisine",
+  "desc": "Une étape à la fois, en photo et à voix haute. Vos recettes, vos coûts et votre équipe arrivent tout seuls de FoodEatUp.",
+  "og": "https://recettes.foodeatup.fr/__l5e/assets-v1/71caa18d-53fe-4d58-a5fc-e620352c96bb/og-recettes.jpg",
+  "icon": "https://recette.foodeatup.fr/favicon.png",
+  "h1": [
+   "Chaque recette réussie, dès le premier jour."
+  ],
+  "h2": [
+   "La recette existe. Elle n'est juste jamais suivie.",
+   "Prête en trois étapes",
+   "Tout pour suivre une recette sans se tromper",
+   "L'application, écran par écran",
+   "Conçue pour un enfant de cinq ans",
+   "Trinh forme votre équipe à votre place",
+   "Une seule façon de faire, partout",
+   "L'application à vos couleurs",
+   "Rien à ressaisir",
+   "Née chez Lüks Coffee",
+   "La 5e application de la famille FoodEatUp",
+   "Gratuit la première année avec Premiers Pas"
+  ],
+  "font": "Poppins, ui-sans-serif, system-ui, sans-serif",
+  "bodyfont": "Poppins, ui-sans-serif, system-ui, sans-serif",
+  "bg": "oklch(0.982 0.026 101.5)",
+  "vars": {
+   "--primary": "oklch(53.6% .19 254.5)",
+   "--secondary": "oklch(95% .035 95)",
+   "--accent": "oklch(79.5% .171 70.7)",
+   "--background": "oklch(98.2% .026 101.5)",
+   "--foreground": "oklch(21% .025 245)",
+   "--muted": "oklch(95% .025 98)"
+  },
+  "btn": [
+   [
+    "oklch(0.536 0.19 254.5)",
+    7
+   ],
+   [
+    "oklch(1 0 0)",
+    6
+   ],
+   [
+    "rgb(0, 105, 217)",
+    1
+   ],
+   [
+    "rgb(15, 26, 35)",
+    1
+   ]
+  ],
+  "videos": [],
+  "imgs": [
+   "https://recette.foodeatup.fr/__l5e/assets-v1/9e108b33-2b99-45a2-928b-28fefe6b9fdb/logo-foodeatup.webp",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/8f6574a5-2d3b-4f99-bd05-471aa4c9f9f1/ecran-etape-tablette.png",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/c7ea0beb-93bb-4377-82c9-38fc638bb2bf/ecran-preparer-smartphone.png",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/e52afa15-a229-4e88-ae49-5e8f5d72bf90/ecran-accueil-tablette.png",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/5a65496e-b897-40c2-b88d-777d9aa24323/ecran-foodcost-tablette.png",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/8f6574a5-2d3b-4f99-bd05-471aa4c9f9f1/ecran-etape-tablette.png",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/e52afa15-a229-4e88-ae49-5e8f5d72bf90/ecran-accueil-tablette.png",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/88ee736c-aa75-4e65-9762-83b6e3800137/ecran-formation-tablette.png",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/5a65496e-b897-40c2-b88d-777d9aa24323/ecran-foodcost-tablette.png",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/37912cef-870b-4cab-bef9-a7ee99d8cf57/ecran-theme-tablette.png",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/b18e7fdd-bb4f-4f9e-8647-7449f06f4f92/trinh-portrait.png",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/88ee736c-aa75-4e65-9762-83b6e3800137/ecran-formation-tablette.png",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/08a391fe-5e65-42a1-941b-a49e0d1af89a/ecran-quiz-smartphone.png",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/37912cef-870b-4cab-bef9-a7ee99d8cf57/ecran-theme-tablette.png",
+   "https://luks.foodeatup.fr/recettes/9238.webp",
+   "https://luks.foodeatup.fr/recettes/9238.webp",
+   "https://luks.foodeatup.fr/recettes/9238.webp",
+   "https://luks.foodeatup.fr/recettes/generated/9246.webp",
+   "https://luks.foodeatup.fr/recettes/generated/9253.webp",
+   "https://luks.foodeatup.fr/recettes/generated/9294.webp",
+   "https://luks.foodeatup.fr/recettes/generated/9276.webp",
+   "https://luks.foodeatup.fr/recettes/generated/9264.webp",
+   "https://recette.foodeatup.fr/__l5e/assets-v1/9e108b33-2b99-45a2-928b-28fefe6b9fdb/logo-foodeatup.webp"
+  ]
+ },
+ "lab": {
+  "title": "FoodEatUp Laboratoire — votre labo, un seul écran",
+  "desc": "Commandes des boutiques, planning, HACCP, étiquettes, livraison et KPI du siège : le laboratoire central sur un seul écran. Essai gratuit 7 jours.",
+  "og": "/marketing/og-vitrine.jpg",
+  "icon": "https://lab.foodeatup.fr/favicon.png",
+  "h1": [
+   "Votre labo.\nUn seul écran."
+  ],
+  "h2": [
+   "Une journée. Zéro papier.",
+   "Demain, 9 h ?\nUn clic. Le dossier.",
+   "Pilotez le réseau comme un seul site.",
+   "Simple. Par établissement.",
+   "Demain, 4 h 58.\nVotre labo est prêt."
+  ],
+  "font": "Goodly, Inter, ui-sans-serif, system-ui, sans-serif",
+  "bodyfont": "Inter, ui-sans-serif, system-ui, sans-serif",
+  "bg": "rgb(255, 254, 253)",
+  "vars": {
+   "--primary": "#007bff",
+   "--secondary": "#fcf9e6",
+   "--accent": "orange",
+   "--background": "#fffefd",
+   "--foreground": "#0f1a23",
+   "--muted": "#f6f6f4"
+  },
+  "btn": [
+   [
+    "rgb(0, 123, 255)",
+    5
+   ],
+   [
+    "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+    2
+   ]
+  ],
+  "videos": [],
+  "imgs": [
+   "https://lab.foodeatup.fr/marketing/hero-labo.webp",
+   "https://lab.foodeatup.fr/marketing/hero-labo.webp",
+   "https://lab.foodeatup.fr/marketing/journee-commandes.webp",
+   "https://lab.foodeatup.fr/marketing/journee-production.webp",
+   "https://lab.foodeatup.fr/marketing/journee-haccp.webp",
+   "https://lab.foodeatup.fr/marketing/journee-livraison.webp",
+   "https://lab.foodeatup.fr/marketing/journee-haccp.webp",
+   "https://lab.foodeatup.fr/marketing/siege-reseau.webp",
+   "https://lab.foodeatup.fr/marketing/cta-aube.webp"
+  ]
+ },
+ "qa": {
+  "title": "QA Hub — Testez vos serveurs MCP avec Claude",
+  "desc": "Auditez chaque outil MCP avec Claude, exécutez vos scénarios et créez des tickets complets avec le prompt Claude Code. Gratuit.",
+  "og": "https://claude-server-scribe.lovable.app/brand/og-qa-hub.png",
+  "icon": "https://qa.foodeatup.fr/favicon.svg",
+  "h1": [
+   "Claude teste votre MCP. Vos développeurs reçoivent des tickets prêts à corriger."
+  ],
+  "h2": [
+   "Tester un MCP à la main ne tient pas la distance",
+   "De l'ajout du projet au ticket corrigé, en 4 étapes",
+   "Tout ce qu'il faut pour tester un MCP sérieusement",
+   "Une seule source de vérité pour toute l'équipe",
+   "Un projet, dix projets, la même rigueur",
+   "Conçu pour tester sans prendre de risque",
+   "Gratuit. Toutes les fonctionnalités incluses.",
+   "Questions fréquentes",
+   "Votre premier audit MCP peut commencer aujourd'hui."
+  ],
+  "font": "Inter, ui-sans-serif, system-ui, sans-serif",
+  "bodyfont": "Inter, ui-sans-serif, system-ui, sans-serif",
+  "bg": "oklch(1 0 0)",
+  "vars": {
+   "--primary": "oklch(51.1% .23 277.4)",
+   "--secondary": "oklch(96.8% .007 247.896)",
+   "--accent": "oklch(96.8% .007 247.896)",
+   "--background": "oklch(100% 0 0)",
+   "--foreground": "oklch(20.8% .042 265.755)",
+   "--muted": "oklch(96.8% .007 247.896)"
+  },
+  "btn": [
+   [
+    "oklch(0.511 0.23 277.4)",
+    5
+   ],
+   [
+    "oklch(1 0 0)",
+    3
+   ]
+  ],
+  "videos": [],
+  "imgs": [
+   "https://qa.foodeatup.fr/assets/hero-illustration-ckOJfgXB.webp",
+   "https://qa.foodeatup.fr/screens/dashboard.png",
+   "https://qa.foodeatup.fr/assets/probleme-outils-CmpOA0iB.webp",
+   "https://qa.foodeatup.fr/assets/probleme-tickets-DxaGHt4s.webp",
+   "https://qa.foodeatup.fr/assets/probleme-direction-BBX3wnbe.webp",
+   "https://qa.foodeatup.fr/assets/etape-projet-DztqKSVq.webp",
+   "https://qa.foodeatup.fr/assets/etape-connexion-TsmQzkuB.webp",
+   "https://qa.foodeatup.fr/assets/etape-audit-CFvRe5c_.webp",
+   "https://qa.foodeatup.fr/assets/etape-ticket-G-FklZJr.webp",
+   "https://qa.foodeatup.fr/assets/equipe-DTpEh1pl.webp",
+   "https://qa.foodeatup.fr/assets/confiance-C3O26sGR.webp"
+  ]
+ },
+ "tablette": {
+  "title": "Menu digital FoodEatUp — la carte vivante sur chaque table",
+  "desc": "Menu digital sur tablette pour restaurants : carte en photos, commande, suivi en cuisine, recette du plat, jeux d'attente et ticket par e-mail, branchés sur FoodEatUp.",
+  "og": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_6zyngg9tej8fer64mg3q3vg94e/529904df6eeaaf95ab312176b97921cf_1793288505894.png",
+  "icon": "https://tablette.foodeatup.fr/__l5e/assets-v1/84b572b4-38ad-40d9-8f07-fb5b12476d5e/favicon.png",
+  "h1": [
+   "La carte de votre restaurant, vivante sur chaque table"
+  ],
+  "h2": [
+   "Ce que vit votre client",
+   "Pendant l'attente",
+   "Comment ça marche pour le restaurant",
+   "Le menu digital en action",
+   "Essayez-la comme un client",
+   "Tarifs : le menu digital est inclus",
+   "Questions fréquentes"
+  ],
+  "font": "Goodly, Manrope, Poppins, ui-sans-serif, system-ui, sans-serif",
+  "bodyfont": "Manrope, Poppins, ui-sans-serif, system-ui, sans-serif",
+  "bg": "oklch(0.979 0.025 99.5)",
+  "vars": {
+   "--primary": "oklch(60.5% .217 257.2)",
+   "--secondary": "oklch(95% .03 99)",
+   "--accent": "oklch(79.3% .171 70.7)",
+   "--background": "oklch(97.9% .025 99.5)",
+   "--foreground": "oklch(21.2% .024 243.9)",
+   "--muted": "oklch(95% .025 99)"
+  },
+  "btn": [
+   [
+    "oklch(0.605 0.217 257.2)",
+    5
+   ],
+   [
+    "oklch(1 0 0)",
+    1
+   ]
+  ],
+  "videos": [
+   "https://tablette.foodeatup.fr/__l5e/assets-v1/db763326-ae19-4d9f-b9a2-1ef349a35f77/menu-digital-foodeatup.mp4"
+  ],
+  "imgs": [
+   "https://tablette.foodeatup.fr/__l5e/assets-v1/cf05bb73-5c74-4ed3-962a-2456489a7c3a/logo-foodeatup.webp",
+   "https://tablette.foodeatup.fr/assets/matcha-DzMEUSs0.jpg",
+   "https://tablette.foodeatup.fr/assets/matcha-fraise-FFJ2CxAQ.jpg",
+   "https://tablette.foodeatup.fr/assets/rolls-DZy_tneJ.jpg",
+   "https://tablette.foodeatup.fr/assets/bubble-CB9Tz9G0.jpg",
+   "https://tablette.foodeatup.fr/assets/ambiance-table-BBRmVZQl.jpg",
+   "https://tablette.foodeatup.fr/assets/ambiance-cuisine-BQM-o3ze.jpg",
+   "https://tablette.foodeatup.fr/assets/ambiance-paiement-BwqAOJyO.jpg",
+   "https://tablette.foodeatup.fr/__l5e/assets-v1/cf05bb73-5c74-4ed3-962a-2456489a7c3a/logo-foodeatup.webp"
+  ]
+ },
+ "kds": {
+  "title": "FoodEatUp KDS — l'écran de cuisine où chaque poste voit tout",
+  "desc": "Écran de cuisine FoodEatUp : tickets par poste, minuteur coloré, état des autres postes, bon imprimé au poste. Sur écran 15″, tablettes 10″ et 7″, smartphone.",
+  "og": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_1hjgfrbd9591frc6nw4617kv1t/ed3cc75e85580b47e56cc7ab56732b60_1793321696393.png",
+  "icon": "https://kds.foodeatup.fr/favicon.png",
+  "h1": [
+   "Votre cuisine voit tout, en même temps"
+  ],
+  "h2": [
+   "Ce que vit le cuisinier",
+   "Le pass envoie la table en même temps",
+   "Le bon de cuisine sort sur l'imprimante du poste",
+   "Chaque poste a son son",
+   "Le mode école",
+   "Prêt en 4 étapes",
+   "Formats et matériel",
+   "Comment ça marche pour le restaurant",
+   "Démonstrateur de thème",
+   "Tarifs",
+   "Questions fréquentes"
+  ],
+  "font": "Goodly, Manrope, Poppins, ui-sans-serif, system-ui, sans-serif",
+  "bodyfont": "Manrope, Poppins, ui-sans-serif, system-ui, sans-serif",
+  "bg": "rgb(255, 255, 255)",
+  "vars": {
+   "--primary": "#007bff",
+   "--secondary": "#fcf9e6",
+   "--accent": "orange",
+   "--background": "#fff",
+   "--foreground": "#0f1a23",
+   "--muted": "#f3f0de"
+  },
+  "btn": [
+   [
+    "rgb(34, 197, 94)",
+    6
+   ],
+   [
+    "rgb(0, 123, 255)",
+    5
+   ],
+   [
+    "rgb(255, 165, 0)",
+    1
+   ],
+   [
+    "rgb(42, 59, 73)",
+    1
+   ]
+  ],
+  "videos": [],
+  "imgs": [
+   "https://kds.foodeatup.fr/__l5e/assets-v1/970e619e-6b88-4ca3-8ebc-a42718980702/foodeatup-logo.png",
+   "https://kds.foodeatup.fr/__l5e/assets-v1/970e619e-6b88-4ca3-8ebc-a42718980702/foodeatup-logo.png"
+  ]
+ },
+ "haccp": {
+  "title": "FoodEatUp HACCP — l'app HACCP gratuite à la voix | 49 €/mois",
+  "desc": "App HACCP gratuite : températures, DLC, réceptions, nettoyage à la voix avec Jarvis, en français, anglais, tamoul et arabe. Abonnement HACCP FoodEatUp 49 € HT/mois, essai 7 jours sans engagement.",
+  "og": "https://haccp.foodeatup.fr/img/jarvis-chef.webp",
+  "icon": "https://haccp.foodeatup.fr/favicon.png",
+  "h1": [
+   "Votre HACCP fait à la voix, en 10 secondes."
+  ],
+  "h2": [
+   "FoodEatUp HACCP en 75 secondes",
+   "Le HACCP papier, vous connaissez.",
+   "Trois secondes de voix. C'est enregistré.",
+   "Tous vos relevés, un geste chacun",
+   "Un chef qui vous parle, vous écoute et attend votre « oui ».",
+   "Chacun dans sa langue. Le dossier, en français.",
+   "Pensé pour le Paquet Hygiène et votre PMS",
+   "Un seul prix, tout compris",
+   "Questions fréquentes",
+   "Le prochain contrôle peut être demain. Soyez prêt aujourd'hui."
+  ],
+  "font": "Goodly, Manrope, system-ui, sans-serif",
+  "bodyfont": "Goodly, Manrope, system-ui, sans-serif",
+  "bg": "oklch(0.2 0.025 240)",
+  "vars": {
+   "--primary": "oklch(57.8% .21 255)",
+   "--secondary": "oklch(29% .032 238)",
+   "--accent": "oklch(29% .032 238)",
+   "--background": "oklch(20% .025 240)",
+   "--foreground": "oklch(100% 0 0)",
+   "--muted": "oklch(29% .032 238)"
+  },
+  "btn": [
+   [
+    "oklch(0.79 0.17 70.7)",
+    4
+   ],
+   [
+    "oklch(1 0 0)",
+    2
+   ],
+   [
+    "oklch(0.578 0.21 255)",
+    2
+   ]
+  ],
+  "videos": [
+   "https://haccp.foodeatup.fr/__l5e/assets-v1/caf85ce6-e9d7-4ec2-9519-4796313eabe4/foodeatup-haccp-presentation.mp4"
+  ],
+  "imgs": [
+   "https://haccp.foodeatup.fr/brand/logo-foodeatup.png",
+   "https://haccp.foodeatup.fr/img/jarvis-chef.webp",
+   "https://haccp.foodeatup.fr/img/ecole-missions.webp",
+   "https://haccp.foodeatup.fr/brand/logo-foodeatup.png"
+  ]
+ },
+ "caisse": {
+  "title": "FoodEatUp Caisse Mobile — l'app de caisse gratuite pour vos serveurs",
+  "desc": "Commande à la table, envoi en cuisine et encaissement sur le téléphone de vos serveurs, même sans réseau. App gratuite avec l'abonnement Caisse FoodEatUp à 49 € HT par mois.",
+  "og": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_6xat31v4858qn864bz4bc95ra5/da549d482b21b5c36a8995d3d48e66db_1793272051254.png",
+  "icon": "https://caisse.foodeatup.fr/brand/logo-foodeatup-petit.png",
+  "h1": [
+   "Prenez la commande, encaissez à la table, servez plus vite"
+  ],
+  "h2": [
+   "FoodEatUp Caisse Mobile en action",
+   "Plus de temps en salle, moins de temps à courir",
+   "Tout le service, dans une seule app",
+   "Un nouveau serveur est prêt dès sa première soirée",
+   "Le parcours d'un serveur, écran par écran",
+   "Prêt pour ce soir, en trois étapes",
+   "L'app est gratuite. Votre caisse, 49 € par mois.",
+   "Sécurité et confiance",
+   "Installez FoodEatUp Caisse",
+   "Fonctionne avec votre matériel",
+   "10 restaurants bêta, 50 % de remise",
+   "Questions fréquentes"
+  ],
+  "font": "Goodly, \"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+  "bodyfont": "Goodly, \"Plus Jakarta Sans\", ui-sans-serif, system-ui, sans-serif",
+  "bg": "rgb(15, 26, 35)",
+  "vars": {
+   "--primary": "#007bff",
+   "--secondary": "oklch(29% .028 240)",
+   "--accent": "orange",
+   "--background": "#0f1a23",
+   "--foreground": "#fff",
+   "--muted": "oklch(29% .028 240)"
+  },
+  "btn": [
+   [
+    "rgb(0, 123, 255)",
+    7
+   ],
+   [
+    "rgb(255, 165, 0)",
+    2
+   ],
+   [
+    "oklch(0.29 0.028 240)",
+    1
+   ]
+  ],
+  "videos": [
+   "https://caisse.foodeatup.fr/__l5e/assets-v1/308d7591-102f-4691-b43a-6d57fe9c1f31/foodeatup-caisse-mobile-voix-francaise.mp4",
+   "https://caisse.foodeatup.fr/__l5e/assets-v1/308d7591-102f-4691-b43a-6d57fe9c1f31/foodeatup-caisse-mobile-voix-francaise.mp4"
+  ],
+  "imgs": [
+   "https://caisse.foodeatup.fr/brand/logo-foodeatup.png",
+   "https://caisse.foodeatup.fr/screens/04-plan-de-salle.png",
+   "https://caisse.foodeatup.fr/screens/06-commande.png",
+   "https://caisse.foodeatup.fr/screens/07-paiement.png",
+   "https://caisse.foodeatup.fr/screens/21-formation.png",
+   "https://caisse.foodeatup.fr/jarvis-chef.webp",
+   "https://caisse.foodeatup.fr/screens/01-connexion.png",
+   "https://caisse.foodeatup.fr/screens/02-etablissement.png",
+   "https://caisse.foodeatup.fr/screens/03-accueil.png",
+   "https://caisse.foodeatup.fr/screens/04-plan-de-salle.png",
+   "https://caisse.foodeatup.fr/screens/05-table.png",
+   "https://caisse.foodeatup.fr/screens/06-commande.png",
+   "https://caisse.foodeatup.fr/screens/07-paiement.png",
+   "https://caisse.foodeatup.fr/screens/08-kds.png",
+   "https://caisse.foodeatup.fr/screens/10-reservations.png",
+   "https://caisse.foodeatup.fr/screens/11-session-caisse.png",
+   "https://caisse.foodeatup.fr/screens/12-operateur.png",
+   "https://caisse.foodeatup.fr/screens/13-style-de-caisse.png",
+   "https://caisse.foodeatup.fr/screens/14-verrouillage.png",
+   "https://caisse.foodeatup.fr/screens/15-commandes-en-cours.png",
+   "https://caisse.foodeatup.fr/screens/16-statistiques.png",
+   "https://caisse.foodeatup.fr/screens/17-tickets-du-jour.png",
+   "https://caisse.foodeatup.fr/screens/18-bienvenue.png",
+   "https://caisse.foodeatup.fr/screens/19-commande-entrante.png",
+   "https://caisse.foodeatup.fr/screens/20-aide.png"
+  ]
+ },
+ "fidelite": {
+  "title": "FoodEatUp Fidélité — la fidélité client en 10 secondes au comptoir",
+  "desc": "Tablette de fidélité connectée à FoodEatUp : vos clients s'inscrivent avec leur seul numéro, cumulent des points, jouent à la roue cadeaux et commandent.",
+  "og": "https://fidelite.foodeatup.fr/og-image.jpg",
+  "icon": "https://fidelite.foodeatup.fr/__l5e/assets-v1/334746fc-9bdc-4632-845a-b1f2fab04af0/foodeatup-favicon.png",
+  "h1": [
+   "La fidélité client en 10 secondes, au comptoir",
+   "Bubble tea offert"
+  ],
+  "h2": [
+   "Prêt en trois étapes",
+   "Tout ce qu'il faut pour faire revenir vos clients",
+   "La tablette à vos couleurs",
+   "Branchée sur les 8 boucles FoodEatUp",
+   "L'application fidélité est gratuite",
+   "Votre programme de fidélité en un clic",
+   "Une tablette, un support, c'est tout",
+   "RGPD et règles Google respectées",
+   "Vos questions",
+   "Téléchargez l'application Android",
+   "Prêt à fidéliser dès demain ?"
+  ],
+  "font": "Goodly, Manrope, ui-sans-serif, system-ui, sans-serif",
+  "bodyfont": "Goodly, Manrope, ui-sans-serif, system-ui, sans-serif",
+  "bg": "oklch(1 0 0)",
+  "vars": {
+   "--primary": "oklch(60% .2 255)",
+   "--secondary": "oklch(98% .025 100)",
+   "--accent": "oklch(79% .17 70)",
+   "--background": "oklch(100% 0 0)",
+   "--foreground": "oklch(21% .022 240)",
+   "--brand": "oklch(60% .2 255)",
+   "--muted": "oklch(96.5% .008 240)"
+  },
+  "btn": [
+   [
+    "oklch(1 0 0)",
+    7
+   ],
+   [
+    "oklch(0.79 0.17 70)",
+    6
+   ],
+   [
+    "oklch(0.6 0.2 255)",
+    3
+   ],
+   [
+    "oklch(0.21 0.022 240)",
+    1
+   ]
+  ],
+  "videos": [],
+  "imgs": [
+   "https://fidelite.foodeatup.fr/__l5e/assets-v1/f9ef85c1-241f-42a4-b3d6-4e7f2c0c1445/logo-foodeatup-horizontal.webp",
+   "https://fidelite.foodeatup.fr/__l5e/assets-v1/f9ef85c1-241f-42a4-b3d6-4e7f2c0c1445/logo-foodeatup-horizontal.webp",
+   "https://fidelite.foodeatup.fr/assets/foodeatup-ChHwjUBd.jpg",
+   "https://fidelite.foodeatup.fr/assets/hardware-counter-HOusUPAn.jpg",
+   "https://fidelite.foodeatup.fr/assets/google-play-badge-fr-CR-81i8t.png",
+   "https://fidelite.foodeatup.fr/__l5e/assets-v1/f9ef85c1-241f-42a4-b3d6-4e7f2c0c1445/logo-foodeatup-horizontal.webp"
+  ]
+ }
+}
