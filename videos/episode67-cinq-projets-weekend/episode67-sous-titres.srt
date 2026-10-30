@@ -1,0 +1,51 @@
+1
+00:00:00,350 --> 00:00:02,330
+Je t'apprends à construire ça en un week-end.
+
+2
+00:00:02,690 --> 00:00:07,790
+Cinq projets utiles à faire avec Claude en un week-end. Et une fois faits, ils travaillent pour toi tous les jours.
+
+3
+00:00:08,210 --> 00:00:09,490
+Un : ton tableau du matin.
+
+4
+00:00:09,780 --> 00:00:13,210
+Réservations, stocks bas, avis du jour. Tout sur une seule page.
+
+5
+00:00:13,670 --> 00:00:15,030
+Deux : ton deuxième cerveau.
+
+6
+00:00:15,210 --> 00:00:21,170
+Tu ranges tes factures et tes contrats dans un dossier, et tu poses tes questions. Quand finit mon bail ? Combien j'ai payé la mozzarella le mois dernier ?
+
+7
+00:00:21,470 --> 00:00:22,790
+Trois : le bilan du soir.
+
+8
+00:00:23,130 --> 00:00:26,910
+Chaque soir, tu lui dis ce qui a marché et ce qui a coincé. Il te dit quoi changer demain.
+
+9
+00:00:27,190 --> 00:00:28,610
+Quatre : ton agent de contenu.
+
+10
+00:00:28,610 --> 00:00:32,230
+Tes photos, ton logo, tes couleurs. Il te prépare les posts de la semaine.
+
+11
+00:00:32,570 --> 00:00:33,870
+Cinq : une équipe d'IA.
+
+12
+00:00:34,050 --> 00:00:38,230
+Une qui répond au téléphone, une qui suit les chiffres. Chez moi, c'est Caroline et PrediBot.
+
+13
+00:00:38,510 --> 00:00:41,350
+Le guide des cinq projets : écris WEEKEND en commentaire.

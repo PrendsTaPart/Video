@@ -1,0 +1,55 @@
+1
+00:00:00,350 --> 00:00:01,770
+Tu utilises Claude à moitié.
+
+2
+00:00:02,030 --> 00:00:05,130
+Il y a cinq réglages, et la plupart des gens en sautent au moins un.
+
+3
+00:00:05,470 --> 00:00:06,350
+Un : les projets.
+
+4
+00:00:06,750 --> 00:00:12,530
+Tu expliques ton resto une seule fois. Ta carte, tes horaires, ta façon de parler. Ensuite, il s'en souvient à chaque conversation.
+
+5
+00:00:13,050 --> 00:00:14,310
+Deux : les compétences.
+
+6
+00:00:14,510 --> 00:00:18,310
+Tu lui apprends une tâche, comme tes fiches recettes, et il la refait pareil à chaque fois.
+
+7
+00:00:18,510 --> 00:00:19,790
+Trois : les artefacts.
+
+8
+00:00:20,030 --> 00:00:24,630
+Au lieu d'un texte, il te fabrique un vrai outil. Un calculateur de prix, un planning, une affiche.
+
+9
+00:00:24,910 --> 00:00:26,170
+Quatre : les connecteurs.
+
+10
+00:00:26,430 --> 00:00:31,610
+Tu branches ta messagerie, ton agenda, et même FoodEatUp. Il lit tes réservations sans que tu lui réexpliques.
+
+11
+00:00:31,870 --> 00:00:33,790
+Cinq : Claude dans ton navigateur.
+
+12
+00:00:33,930 --> 00:00:35,930
+Il clique et remplit les formulaires à ta place.
+
+13
+00:00:36,230 --> 00:00:40,950
+Avec ces cinq réglages, Claude n'est plus une simple discussion. C'est un employé qui connaît ta maison.
+
+14
+00:00:41,210 --> 00:00:43,510
+Écris CONFIG en commentaire, je t'envoie le pas à pas.
