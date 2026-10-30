@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,410
+Imagine commander au restaurant en scannant le QR code de ta table.
+
+2
+00:00:03,710 --> 00:00:07,230
+Pas d'appli, pas d'attente. Chaque table a son propre espace de commande.
+
+3
+00:00:07,330 --> 00:00:09,930
+Tes amis tapent le code de la table, et la commande part en cuisine.
+
+4
+00:00:10,370 --> 00:00:14,410
+Un inconnu sur son canapé demande une commande pour la table cinq ? Refusé : pas de code.
+
+5
+00:00:14,750 --> 00:00:17,450
+Un code photographié ne sert plus, dès que l'addition est payée.
+
+6
+00:00:17,630 --> 00:00:20,090
+Le paiement passe par un prestataire, et tout est chiffré.
+
+7
+00:00:20,290 --> 00:00:22,690
+C'est la question que tout le monde pose : peut-on le pirater ?
+
+8
+00:00:22,990 --> 00:00:25,150
+Écris TABLE en commentaire, je t'envoie la suite.

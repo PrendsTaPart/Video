@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,830
+Tout le monde fait des reels animés avec l'IA, mais personne ne montre comment.
+
+2
+00:00:04,230 --> 00:00:07,690
+Étape un : Claude, en application de bureau, pas dans le navigateur.
+
+3
+00:00:07,970 --> 00:00:11,490
+Étape deux : un dossier « AI vidéo-éditeur » sur ton ordinateur.
+
+4
+00:00:11,750 --> 00:00:14,670
+Étape trois : une conversation, en local, sur ce dossier.
+
+5
+00:00:14,950 --> 00:00:17,490
+Étape quatre : tu tapes le sujet du reel, en une ligne.
+
+6
+00:00:17,810 --> 00:00:22,130
+Claude écrit le script, enregistre la voix, anime chaque scène et cale les sous-titres.
+
+7
+00:00:22,290 --> 00:00:24,650
+Il vérifie son animation avant que tu la voies.
+
+8
+00:00:24,530 --> 00:00:27,250
+Écris ÉDITEUR en commentaire, je t'envoie mon guide complet.

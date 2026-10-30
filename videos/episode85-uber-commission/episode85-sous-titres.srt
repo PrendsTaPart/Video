@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:04,170
+Chaque jour, des commandes passent par Uber Eats. Et Uber en garde une part.
+
+2
+00:00:04,530 --> 00:00:08,390
+Trois personnes travaillent sur une commande : le restaurant, le livreur, et Uber.
+
+3
+00:00:08,730 --> 00:00:11,990
+Uber ne cuisine rien et ne livre rien. Il se place au milieu.
+
+4
+00:00:12,310 --> 00:00:14,570
+Le restaurant paie une commission sur chaque commande.
+
+5
+00:00:14,630 --> 00:00:18,190
+Tout a commencé par un test minuscule : un seul menu, un seul midi.
+
+6
+00:00:18,330 --> 00:00:20,570
+Puis le service s'est élargi, ville après ville.
+
+7
+00:00:20,850 --> 00:00:24,070
+Ton application, ta caisse : aucune commission sur tes commandes.
+
+8
+00:00:24,150 --> 00:00:26,630
+Écris COMMISSION en commentaire, je t'envoie comment faire.

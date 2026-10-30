@@ -1,0 +1,8 @@
+Cinq façons pour une application de gagner de l'argent.
+Numéro un : l'application payante. Peu de gens paient pour une appli qu'ils n'ont pas testée.
+Numéro deux : la publicité. Un jeu gratuit peut rapporter, s'il a beaucoup d'utilisateurs.
+Numéro trois : les achats dans l'appli. Gratuite, mais on paie une vie, un bonus.
+Numéro quatre : la commission, quand l'appli relie des gens et prend sa part.
+Numéro cinq : l'abonnement. On paie chaque mois pour tout débloquer.
+Pour ta première appli, c'est celui que je conseille : pas besoin de millions d'utilisateurs.
+Écris MODÈLE en commentaire, je t'envoie mon exemple.

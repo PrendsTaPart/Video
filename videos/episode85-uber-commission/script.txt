@@ -1,0 +1,8 @@
+Chaque jour, des commandes passent par Uber Eats. Et Uber en garde une part.
+Trois personnes travaillent sur une commande : le restaurant, le livreur, et Uber.
+Uber ne cuisine rien et ne livre rien. Il se place au milieu.
+Le restaurant paie une commission sur chaque commande.
+Tout a commencé par un test minuscule : un seul menu, un seul midi.
+Puis le service s'est élargi, ville après ville.
+Ton application, ta caisse : aucune commission sur tes commandes.
+Écris COMMISSION en commentaire, je t'envoie comment faire.

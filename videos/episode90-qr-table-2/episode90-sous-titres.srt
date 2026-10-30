@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,910
+Peut-on pirater une commande à table ? On a essayé.
+
+2
+00:00:03,090 --> 00:00:05,370
+On fait le test pas à pas, comme un client malin.
+
+3
+00:00:05,670 --> 00:00:07,850
+Étape un : on regarde comment la commande fonctionne.
+
+4
+00:00:08,350 --> 00:00:11,930
+Étape deux : le serveur accepte, et la table reçoit son code à usage unique.
+
+5
+00:00:12,330 --> 00:00:15,770
+Étape trois : on devine le code. Trois mauvais essais, et on est bloqué.
+
+6
+00:00:16,070 --> 00:00:20,230
+Étape quatre : on photographie le QR code. Le code meurt dès que la note est payée.
+
+7
+00:00:20,450 --> 00:00:23,450
+Étape cinq : le Wi-Fi public ne voit rien, tout est chiffré.
+
+8
+00:00:23,710 --> 00:00:26,510
+Écris SÉCURITÉ en commentaire, je t'envoie le détail du test.
