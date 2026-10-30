@@ -1,0 +1,8 @@
+Mes logiciels sont ouverts. Construis l'extension qui manque.
+Voici BraindCode Build, mon hackathon.
+Tu choisis un logiciel et tu construis son extension.
+Tu pars d'une base concrète, pas de zéro.
+Ton extension se branche sur Claude et sur Plan'It.
+Tu peux même faire travailler une équipe d'agents IA.
+Humains contre IA : chacun a sa chance.
+Le lien est sous la vidéo : clique sur « Voir le projet ».

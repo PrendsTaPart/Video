@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,030
+Ma carte de visite tient dans un lien.
+
+2
+00:00:02,370 --> 00:00:04,810
+Voici la carte de visite FoodEatUp, un de mes projets.
+
+3
+00:00:05,150 --> 00:00:07,550
+Mon parcours et ma promesse, sur une seule page.
+
+4
+00:00:07,810 --> 00:00:09,590
+On découvre l'équipe et les agents IA.
+
+5
+00:00:09,810 --> 00:00:11,890
+Tout le système FoodEatUp, en un coup d'œil.
+
+6
+00:00:12,070 --> 00:00:14,080
+Un devis se demande en un geste.
+
+7
+00:00:14,010 --> 00:00:15,770
+On peut même appeler Caroline, l'agent vocal.
+
+8
+00:00:16,110 --> 00:00:18,980
+Le lien est sous la vidéo : clique sur « Voir le projet ».

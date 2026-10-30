@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,150
+Une association de quartier mérite un vrai site, elle aussi.
+
+2
+00:00:03,450 --> 00:00:07,550
+Voici La Chaîne Fratern'Elles, un site que j'ai réalisé pour une association d'Aulnay-sous-Bois.
+
+3
+00:00:07,890 --> 00:00:10,330
+On découvre qui elles sont et ce qu'elles font au quotidien.
+
+4
+00:00:10,550 --> 00:00:12,850
+Leurs dernières actions et leurs nouvelles sont mises en avant.
+
+5
+00:00:13,030 --> 00:00:15,190
+Chacun peut participer aux collectes solidaires.
+
+6
+00:00:15,190 --> 00:00:16,970
+Et faire un don en quelques gestes.
+
+7
+00:00:17,130 --> 00:00:19,270
+Leurs partenaires sont tous réunis au même endroit.
+
+8
+00:00:19,470 --> 00:00:22,340
+Le lien est sous la vidéo : clique sur « Voir le projet ».

@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,660
+Et si ton drive prenait les commandes à la voix ?
+
+2
+00:00:02,590 --> 00:00:05,430
+Voici la borne drive vocale FoodEatUp, un de mes projets.
+
+3
+00:00:05,670 --> 00:00:08,430
+Jarvis prend la commande au poteau, en français ou en anglais.
+
+4
+00:00:08,590 --> 00:00:11,080
+Il pose les bonnes questions et relit tout au client.
+
+5
+00:00:10,970 --> 00:00:13,110
+Les prix viennent de ta caisse : rien n'est deviné.
+
+6
+00:00:13,270 --> 00:00:15,290
+Un produit épuisé ? Il propose un remplacement.
+
+7
+00:00:15,470 --> 00:00:17,050
+D'un mot, l'équipier reprend la main.
+
+8
+00:00:17,290 --> 00:00:20,000
+Le lien est sous la vidéo : clique sur « Voir le projet ».

@@ -1,0 +1,37 @@
+{
+ "url": "https://camera.foodeatup.fr/",
+ "title": "Salle Live — Chaque table, à chaque instant, sans aucune image",
+ "desc": "Une caméra analyse la salle en local et votre caisse FoodEatUp suit les commandes : l'état de chaque table en direct, des alertes et des analyses, sans qu'aucune image ne soit enregistrée.",
+ "og": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_0paafa35bm86qs3gn3brqf6jt1/4dfdd7824d7286c29770c2d5d1bfebb5_1792618379277.png",
+ "h1": [
+  "Chaque table, à chaque instant."
+ ],
+ "h2": [
+  "Comment ça marche",
+  "Ce qui sort de la caméra",
+  "Les trois couleurs",
+  "Ce que ça change en service",
+  "Connecté à votre caisse FoodEatUp",
+  "Respect de la vie privée",
+  "Questions fréquentes",
+  "Voyez votre salle en direct",
+  "Demander une démo",
+  "Formation Salle Live × FoodEatUp"
+ ],
+ "bg": "oklch(0.975 0.012 85)",
+ "font": "Manrope, system-ui, sans-serif",
+ "btn": [
+  [
+   "oklch(0.78 0.14 70)",
+   2
+  ],
+  [
+   "oklch(0.93 0.02 85)",
+   1
+  ]
+ ],
+ "text": "Salle Live\nComment ça marche\nVie privée\nFAQ\nFormation\nDémo interactive\nConnexion\nPILOTAGE DE SALLE\nChaque table, à chaque instant.\nUne caméra analyse la salle en local, votre caisse FoodEatUp suit les commandes : vous voyez chaque table passer du vert au rouge puis à l'orange, sans qu'aucune image ne soit enregistrée.\nDemander une démo\nVoir la démo interactive\nT1\nT2\nT3\nT4\nT5\nT6\n0 image enregistrée\nLa salle est vide : toutes les tables sont vertes.\nComment ça marche\nÉtape 1\nLe boîtier analyse la salle en local\nL'image est traitée sur place, dans le boîtier, puis immédiatement oubliée.\nÉtape 2\nIl n'envoie que des événements anonymes\nUne table, un nombre de personnes, des objets ou non, une heure. Rien d'autre.\nÉtape 3\nTout se met à jour en direct\nVotre plan de salle, vos alertes et vos analyses suivent le service en temps réel.\nCe qui sort de la caméra\nPas de vidéo, pas de photo : uniquement de courts messages qui décrivent l'état des tables. C'est tout ce que le boîtier transmet, et tout ce dont votre équipe a besoin.\n0 image enregistrée – 0 image transmise\nÉvénements envoyés\n23:23:25\n{\"table\":2,\"state\":\"free\",\"people\":0,\"at\":\"23:21:25\"}\n{\"table\":1,\"state\":\"occupied\",\"people\":2,\"at\":\"23:21:25\"}\n{\"table\":3,\"state\":\"to_clear\",\"people\":0,\"at\":\"23:20:25\"}\n{\"table\":1,\"state\":\"free\",\"people\":0,\"at\":\"23:15:25\"}\n{\"table\":2,\"state\":\"to_clear\",\"people\":0,\"at\":\"23:14:25\"}\n{\"table\":1,\"state\":\"to_clear\",\"people\":0,\"at\":\"23:09:25\"}\n{\"table\":6,\"state\":\"occupied\",\"people\":5,\"at\":\"23:07:25\"}\n{\"table\":5,\"state\":\"occupied\",\"people\":6,\"at\":\"23:03:25\"}\n{\"table\":4,\"state\":\"occupied\",\"people\":3,\"at\":\"23:00:25\"}\nLes trois couleurs\nLibre\nTable propre et disponible : on peut installer un groupe.\nOccupée\nDes clients sont installés ; un compteur indique depuis combien de temps.\nÀ débarrasser\nLes clients sont partis, la vaisselle est encore là : priorité au débarrassage.\nCe que ça change en service\nAlertes en temps réel\nTable sans commande, addition attendue, table à débarrasser : l'équipe est prévenue au bon moment.\nAnalytics de rotation\nDurée des repas, délais de service, remplissage par quart d'heure, temps perdu au débarrassage.\nPlanning IA\nL'affluence prévue sur 7 jours et le personnel nécessaire, avec des recommandations concrètes.\nCommande par QR à table\nLe client consulte la carte, commande et demande l'addition depuis son téléphone.\nConnecté à votre caisse FoodEatUp\nConnexion en un clic\nVous autorisez Salle Live depuis votre compte FoodEatUp, sans mot de passe à recopier.\nTickets et encaissements synchronisés\nLes commandes et paiements de la caisse font avancer chaque table automatiquement.\nVotre historique dès le premier jour\nL'historique de ventes nourrit les prévisions de l'IA sans attendre des semaines de données.\nRespect de la vie privée\nTraitement local\nL'analyse se fait dans le boîtier, dans votre salle.\nAucune image stockée ni transmise\nNi photo, ni vidéo, ni reconnaissance faciale.\nPas de suivi individuel\nLes alertes visent des tables et des zones, jamais un serveur ou un client.\nInformation client fournie\nAffiche d'entrée, page de confidentialité de votre restaurant et note pour le personnel, prêtes à imprimer.\nChaque restaurant équipé dispose de sa propre page de confidentialité publique, accessible par le QR code de l'affiche.\nQuestions fréquentes\nFaut-il une caméra par salle ?\nQue se passe-t-il sans caméra ?\nLes clients sont-ils filmés ?\nFaut-il FoodEatUp ?\nCombien de temps pour installer ?\nVoyez votre salle en direct\nLaissez vos coordonnées : ",
+ "height": 4793,
+ "ok": true,
+ "rec_s": 31.124
+}

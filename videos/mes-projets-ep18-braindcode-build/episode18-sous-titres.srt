@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,970
+Mes logiciels sont ouverts. Construis l'extension qui manque.
+
+2
+00:00:03,350 --> 00:00:05,350
+Voici BraindCode Build, mon hackathon.
+
+3
+00:00:05,610 --> 00:00:07,890
+Tu choisis un logiciel et tu construis son extension.
+
+4
+00:00:08,210 --> 00:00:10,010
+Tu pars d'une base concrète, pas de zéro.
+
+5
+00:00:10,190 --> 00:00:12,530
+Ton extension se branche sur Claude et sur Plan'It.
+
+6
+00:00:12,730 --> 00:00:14,750
+Tu peux même faire travailler une équipe d'agents IA.
+
+7
+00:00:14,880 --> 00:00:16,950
+Humains contre IA : chacun a sa chance.
+
+8
+00:00:17,290 --> 00:00:20,080
+Le lien est sous la vidéo : clique sur « Voir le projet ».

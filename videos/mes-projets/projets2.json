@@ -1,0 +1,1508 @@
+[
+ {
+  "ep": 9,
+  "key": "chaine-fraternelles",
+  "slug": "la-chaine-fraternelles",
+  "nom": "La Chaîne Fratern'Elles",
+  "url": "lachainefraternelles.fr",
+  "logo": null,
+  "cat": "realisations",
+  "lines": [
+   "Une association de quartier mérite un vrai site, elle aussi.",
+   "Voici La Chaîne Fratern'Elles, un site que j'ai réalisé pour une association d'Aulnay-sous-Bois.",
+   "On découvre qui elles sont et ce qu'elles font au quotidien.",
+   "Leurs dernières actions et leurs nouvelles sont mises en avant.",
+   "Chacun peut participer aux collectes solidaires.",
+   "Et faire un don en quelques gestes.",
+   "Leurs partenaires sont tous réunis au même endroit.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Qui sont-elles",
+   "Les actions",
+   "Les collectes",
+   "Faire un don",
+   "Les partenaires",
+   ""
+  ],
+  "kw": [
+   "association",
+   "collectes",
+   "don"
+  ],
+  "hookHl": [
+   "vrai",
+   "site,"
+  ],
+  "theme": {
+   "bg": "#210C16",
+   "bg2": "#12070C",
+   "bgc": "#4C1933",
+   "surf": "#2C1521",
+   "line": "#482738",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#CC3C84",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#210C16"
+  },
+  "dir": "mes-projets-ep09-chaine-fraternelles",
+  "visuel": "og.jpg",
+  "logo_src": false,
+  "duo": "claude",
+  "s0": 6.8,
+  "dur": 65.0
+ },
+ {
+  "ep": 10,
+  "key": "citycar",
+  "slug": "citycar",
+  "nom": "CityCar",
+  "url": "citycarvtc.fr",
+  "logo": null,
+  "cat": "realisations",
+  "lines": [
+   "Chauffeur VTC sans voiture ? Tu roules dès demain.",
+   "Voici CityCar, un site que j'ai réalisé pour un loueur de véhicules VTC.",
+   "Chaque profil de chauffeur trouve sa solution.",
+   "Des véhicules fiables, prêts à rouler.",
+   "Un vrai accompagnement, pas juste une location.",
+   "L'équipe gère tout le dossier.",
+   "Et les chauffeurs racontent leur expérience.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Chaque profil",
+   "Prêts à rouler",
+   "Accompagnement",
+   "Dossier géré",
+   "Avis chauffeurs",
+   ""
+  ],
+  "kw": [
+   "profil",
+   "fiables,",
+   "accompagnement,",
+   "dossier."
+  ],
+  "hookHl": [
+   "demain."
+  ],
+  "theme": {
+   "bg": "#14210C",
+   "bg2": "#0B1207",
+   "bgc": "#2D4C19",
+   "surf": "#1E2C15",
+   "line": "#344827",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#549C24",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#14210C"
+  },
+  "dir": "mes-projets-ep10-citycar",
+  "visuel": "og.jpg",
+  "logo_src": false,
+  "duo": "claude",
+  "s0": 6.3,
+  "dur": 67.0
+ },
+ {
+  "ep": 11,
+  "key": "mena-coffee",
+  "slug": "luks-recettes",
+  "nom": "Lüks Recettes",
+  "url": "luks.foodeatup.fr",
+  "logo": "foodeatup",
+  "cat": "realisations",
+  "lines": [
+   "Fini le classeur de recettes derrière le comptoir.",
+   "Voici Lüks Recettes, l'appli de formation que j'ai réalisée pour Lüks Coffee.",
+   "Une boisson se retrouve en quelques touches.",
+   "La recette s'affiche une étape à la fois, en très grand.",
+   "La formation est intégrée, avec un quiz sur les vraies recettes.",
+   "Le responsable valide chaque équipier.",
+   "Au bar, en préparation, sur tablette ou sur téléphone.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "En quelques touches",
+   "Pas à pas",
+   "Formation + quiz",
+   "Validation",
+   "Partout",
+   ""
+  ],
+  "kw": [
+   "touches.",
+   "étape",
+   "quiz",
+   "valide"
+  ],
+  "hookHl": [
+   "Fini"
+  ],
+  "theme": {
+   "bg": "#21140C",
+   "bg2": "#120B07",
+   "bgc": "#4C2D19",
+   "surf": "#2C1E15",
+   "line": "#483427",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#E49C6C",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#21140C"
+  },
+  "dir": "mes-projets-ep11-mena-coffee",
+  "visuel": "og.png",
+  "logo_src": null,
+  "duo": "foodeatup",
+  "s0": 4.3,
+  "dur": 38.0
+ },
+ {
+  "ep": 12,
+  "key": "studio-cms",
+  "slug": "foodeatup-social",
+  "nom": "FoodEatUp Social",
+  "url": "cms.foodeatup.com",
+  "logo": "foodeatup",
+  "cat": "moi",
+  "lines": [
+   "Un épisode par jour sur un restaurant. Sans tournage.",
+   "Voici FoodEatUp Social, un de mes projets.",
+   "Une série vidéo qui raconte la vie d'un restaurant.",
+   "Une scène part en vrille, puis la fonction qui l'aurait évitée.",
+   "Chaque épisode est monté, planifié et publié avec RapidoCMS.",
+   "Il y a aussi des clips musicaux et le calendrier de diffusion.",
+   "C'est la démonstration de ma méthode, en public.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "La série",
+   "Le problème, la solution",
+   "Publié avec RapidoCMS",
+   "Les clips",
+   "Ma méthode",
+   ""
+  ],
+  "kw": [
+   "série",
+   "vrille,",
+   "RapidoCMS.",
+   "clips",
+   "méthode,"
+  ],
+  "hookHl": [
+   "tournage."
+  ],
+  "theme": {
+   "bg": "#0C1621",
+   "bg2": "#070C12",
+   "bgc": "#19324C",
+   "surf": "#15212C",
+   "line": "#273848",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0C84FC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1621"
+  },
+  "dir": "mes-projets-ep12-studio-cms",
+  "visuel": "og.jpg",
+  "logo_src": null,
+  "duo": "foodeatup",
+  "s0": 6.3,
+  "dur": 81.0
+ },
+ {
+  "ep": 13,
+  "key": "borne-drive",
+  "slug": "foodeatup-borne-drive",
+  "nom": "Borne drive vocale FoodEatUp",
+  "url": "drive.foodeatup.fr",
+  "logo": "foodeatup",
+  "cat": "clients",
+  "lines": [
+   "Et si ton drive prenait les commandes à la voix ?",
+   "Voici la borne drive vocale FoodEatUp, un de mes projets.",
+   "Jarvis prend la commande au poteau, en français ou en anglais.",
+   "Il pose les bonnes questions et relit tout au client.",
+   "Les prix viennent de ta caisse : rien n'est deviné.",
+   "Un produit épuisé ? Il propose un remplacement.",
+   "D'un mot, l'équipier reprend la main.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Commande à la voix",
+   "Il relit tout",
+   "Les prix de ta caisse",
+   "Remplacement",
+   "L'équipier reprend",
+   ""
+  ],
+  "kw": [
+   "Jarvis",
+   "questions",
+   "caisse",
+   "remplacement.",
+   "équipier"
+  ],
+  "hookHl": [
+   "voix"
+  ],
+  "theme": {
+   "bg": "#0C1621",
+   "bg2": "#070C12",
+   "bgc": "#19324C",
+   "surf": "#15212C",
+   "line": "#273848",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0C84FC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1621"
+  },
+  "dir": "mes-projets-ep13-borne-drive",
+  "visuel": "og.png",
+  "logo_src": null,
+  "duo": "foodeatup",
+  "s0": 4.8,
+  "dur": 22.0
+ },
+ {
+  "ep": 14,
+  "key": "restaurant-360",
+  "slug": "restaurant-360",
+  "nom": "Restaurant 360 FoodEatUp",
+  "url": "restaurant-explorer-app.lovable.app",
+  "logo": "foodeatup",
+  "cat": "clients",
+  "lines": [
+   "Visite un restaurant où tout est connecté.",
+   "Voici Restaurant 360, un de mes projets.",
+   "Tu entres dans un restaurant virtuel et tu suis le service.",
+   "Tout part de la caisse, et tout y revient.",
+   "Chaque métier choisit par où il entre.",
+   "Les boucles du restaurant se passent l'information, sans ressaisie.",
+   "De la terrasse au bureau, tout se visite.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "La visite",
+   "La caisse au centre",
+   "Par métier",
+   "Sans ressaisie",
+   "De la terrasse au bureau",
+   ""
+  ],
+  "kw": [
+   "virtuel",
+   "caisse,",
+   "métier",
+   "ressaisie.",
+   "visite."
+  ],
+  "hookHl": [
+   "connecté."
+  ],
+  "theme": {
+   "bg": "#0C1C21",
+   "bg2": "#070F12",
+   "bgc": "#193F4C",
+   "surf": "#15262C",
+   "line": "#274048",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#246C84",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1C21"
+  },
+  "dir": "mes-projets-ep14-restaurant-360",
+  "visuel": "og.jpg",
+  "logo_src": null,
+  "duo": "foodeatup",
+  "s0": 4.8,
+  "dur": 139.0
+ },
+ {
+  "ep": 15,
+  "key": "coach-cuisine",
+  "slug": "coach-cuisine",
+  "nom": "Coach Cuisine",
+  "url": "caoch.foodeatup.fr",
+  "logo": null,
+  "cat": "realisations",
+  "lines": [
+   "Des repas frais toute la semaine, sans cuisiner.",
+   "Voici Coach Cuisine, un site que j'ai réalisé pour un service de repas livrés.",
+   "Tu choisis ta formule et ton rythme.",
+   "Les cuisiniers préparent des plats frais pour ta semaine.",
+   "Livraison le dimanche soir et le mardi soir.",
+   "Les plats s'adaptent à tes allergies.",
+   "Pause ou changement de formule, quand tu veux.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Ta formule",
+   "Des plats frais",
+   "Livrés deux soirs",
+   "Selon tes allergies",
+   "Sans engagement",
+   ""
+  ],
+  "kw": [
+   "formule",
+   "frais",
+   "dimanche",
+   "allergies.",
+   "Pause"
+  ],
+  "hookHl": [
+   "frais"
+  ],
+  "theme": {
+   "bg": "#21140C",
+   "bg2": "#120B07",
+   "bgc": "#4C2D19",
+   "surf": "#2C1E15",
+   "line": "#483427",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#CC8454",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#21140C"
+  },
+  "dir": "mes-projets-ep15-coach-cuisine",
+  "visuel": "og.jpg",
+  "logo_src": false,
+  "duo": "claude",
+  "s0": 3.8,
+  "dur": 22.5
+ },
+ {
+  "ep": 16,
+  "key": "alto",
+  "slug": "alto",
+  "nom": "Alto",
+  "url": "altovtc.fr",
+  "logo": null,
+  "cat": "realisations",
+  "lines": [
+   "Chauffeur VTC : et si tu ne roulais plus jamais seul ?",
+   "Voici Alto, un site que j'ai réalisé pour une coopérative de chauffeurs VTC.",
+   "Les chauffeurs deviennent salariés, avec fiche de paie et mutuelle.",
+   "Ils accèdent à des partenariats et à des bons plans.",
+   "Alto Hub devient leur tableau de bord au quotidien.",
+   "Coaching et accompagnement juridique en plus.",
+   "Le club privé des chauffeurs qui veulent mieux vivre de leur métier.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Salarié",
+   "Bons plans",
+   "Alto Hub",
+   "Coaching",
+   "Le club privé",
+   ""
+  ],
+  "kw": [
+   "salariés,",
+   "partenariats",
+   "Hub",
+   "Coaching",
+   "club"
+  ],
+  "hookHl": [
+   "seul"
+  ],
+  "theme": {
+   "bg": "#0C1921",
+   "bg2": "#070D12",
+   "bgc": "#19384C",
+   "surf": "#15232C",
+   "line": "#273B48",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#246C9C",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1921"
+  },
+  "dir": "mes-projets-ep16-alto",
+  "visuel": "og.jpg",
+  "logo_src": false,
+  "duo": "claude",
+  "s0": 5.8,
+  "dur": 82.0
+ },
+ {
+  "ep": 17,
+  "key": "braindcode-plugins",
+  "slug": "braindcode-plugins",
+  "nom": "BraindCode Plugins",
+  "url": "plugin.braindcode.com",
+  "logo": "braindcode",
+  "cat": "moi",
+  "lines": [
+   "Claude peut piloter ton entreprise de A à Z.",
+   "Voici BraindCode Plugins, un de mes projets.",
+   "Une bibliothèque de prompts en français, prêts à l'emploi.",
+   "Tu branches tes logiciels sur Claude, en quelques étapes.",
+   "Tes logiciels métier partagent un seul cerveau.",
+   "Ton espace te suit jusque dans Claude.",
+   "Et une académie pour apprendre à déléguer.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Prompts prêts",
+   "Tes logiciels branchés",
+   "Un seul cerveau",
+   "Ton espace dans Claude",
+   "L'académie",
+   ""
+  ],
+  "kw": [
+   "prompts",
+   "branches",
+   "cerveau.",
+   "espace",
+   "académie"
+  ],
+  "hookHl": [
+   "Claude"
+  ],
+  "theme": {
+   "bg": "#0C1921",
+   "bg2": "#070D12",
+   "bgc": "#19384C",
+   "surf": "#15232C",
+   "line": "#273B48",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0C9CFC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1921"
+  },
+  "dir": "mes-projets-ep17-braindcode-plugins",
+  "visuel": "og.jpg",
+  "logo_src": false,
+  "duo": "claude",
+  "s0": 17.3,
+  "dur": 99.5
+ },
+ {
+  "ep": 18,
+  "key": "braindcode-build",
+  "slug": "braindcode-build",
+  "nom": "BraindCode Build",
+  "url": "build.braindcode.com",
+  "logo": "braindcode",
+  "cat": "moi",
+  "lines": [
+   "Mes logiciels sont ouverts. Construis l'extension qui manque.",
+   "Voici BraindCode Build, mon hackathon.",
+   "Tu choisis un logiciel et tu construis son extension.",
+   "Tu pars d'une base concrète, pas de zéro.",
+   "Ton extension se branche sur Claude et sur Plan'It.",
+   "Tu peux même faire travailler une équipe d'agents IA.",
+   "Humains contre IA : chacun a sa chance.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Choisis un logiciel",
+   "Une base concrète",
+   "Branchée partout",
+   "Des agents IA",
+   "Humains contre IA",
+   ""
+  ],
+  "kw": [
+   "extension",
+   "concrète,",
+   "branche",
+   "agents",
+   "chance."
+  ],
+  "hookHl": [
+   "ouverts."
+  ],
+  "theme": {
+   "bg": "#0C1921",
+   "bg2": "#070D12",
+   "bgc": "#19384C",
+   "surf": "#15232C",
+   "line": "#273B48",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0C9CFC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1921"
+  },
+  "dir": "mes-projets-ep18-braindcode-build",
+  "visuel": "og.png",
+  "logo_src": false,
+  "duo": "claude",
+  "s0": 5.8,
+  "dur": 72.0
+ },
+ {
+  "ep": 19,
+  "key": "youtube-publisher",
+  "slug": "publisher-bot",
+  "nom": "Publisher Bot",
+  "url": "youtube.rapidocms.com",
+  "logo": "rapidocms",
+  "cat": "annexes",
+  "lines": [
+   "Gère ta chaîne YouTube comme un pro.",
+   "Voici Publisher Bot, un de mes projets.",
+   "Les miniatures et les titres sont préparés pour toi.",
+   "Il surveille les tendances de ton sujet.",
+   "Il découpe tes vidéos en Shorts.",
+   "Il publie partout, puis il lit les vrais résultats.",
+   "Tu lui parles depuis ton assistant, il fait le reste.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Miniatures et titres",
+   "Les tendances",
+   "Les Shorts",
+   "Publié partout",
+   "Tu lui parles",
+   ""
+  ],
+  "kw": [
+   "miniatures",
+   "tendances",
+   "Shorts.",
+   "partout,",
+   "assistant,"
+  ],
+  "hookHl": [
+   "pro."
+  ],
+  "theme": {
+   "bg": "#210C0C",
+   "bg2": "#120707",
+   "bgc": "#4C1919",
+   "surf": "#2C1515",
+   "line": "#482727",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#FC0C0C",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#210C0C"
+  },
+  "dir": "mes-projets-ep19-youtube-publisher",
+  "visuel": "og.png",
+  "logo_src": "../_journal-63-72/commun/logo-rapidocms.webp",
+  "duo": "rapidocms",
+  "s0": 5.3,
+  "dur": 69.0
+ },
+ {
+  "ep": 20,
+  "key": "planit",
+  "slug": "plan-it",
+  "nom": "Plan'It",
+  "url": "plani-t.fr",
+  "logo": "planit",
+  "cat": "clients",
+  "lines": [
+   "Tes tâches avancent, même quand tu es occupé.",
+   "Voici Plan'It, un de mes projets.",
+   "Une phrase suffit : le bon agent s'en charge.",
+   "Tes devis ne dorment plus, ils sont relancés.",
+   "Ton plat du jour est publié partout.",
+   "Ton registre d'hygiène se tient tout seul.",
+   "Le prix est annoncé avant, et tu gardes la main.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Une phrase",
+   "Devis relancés",
+   "Plat du jour publié",
+   "Hygiène à jour",
+   "Tu gardes la main",
+   ""
+  ],
+  "kw": [
+   "agent",
+   "devis",
+   "plat",
+   "registre",
+   "main."
+  ],
+  "hookHl": [
+   "avancent,"
+  ],
+  "theme": {
+   "bg": "#110C21",
+   "bg2": "#090712",
+   "bgc": "#24194C",
+   "surf": "#1A152C",
+   "line": "#2E2748",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#5424FC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#110C21"
+  },
+  "dir": "mes-projets-ep20-planit",
+  "visuel": "og.png",
+  "logo_src": "../_journal-63-72/commun/logo-planit.webp",
+  "duo": "planit",
+  "s0": 0.8,
+  "dur": 78.0
+ },
+ {
+  "ep": 21,
+  "key": "tutoriels-foodeatup",
+  "slug": "tutoriels-foodeatup",
+  "nom": "Académie FoodEatUp",
+  "url": "tutoriel.foodeatup.com",
+  "logo": "foodeatup",
+  "cat": "annexes",
+  "lines": [
+   "Apprends à gérer ton restaurant sans double saisie.",
+   "Voici l'Académie FoodEatUp, un de mes projets.",
+   "Tu choisis ton métier, le parcours s'adapte.",
+   "Des tutoriels vidéo courts, module par module.",
+   "Une journée de service suivie de bout en bout.",
+   "Stock, hygiène, plannings, ventes en ligne et agents IA.",
+   "Des premiers pas jusqu'aux boucles du restaurant.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Par métier",
+   "Tutoriels courts",
+   "Une journée de service",
+   "Tous les modules",
+   "Pas à pas",
+   ""
+  ],
+  "kw": [
+   "métier,",
+   "tutoriels",
+   "journée",
+   "Stock,",
+   "boucles"
+  ],
+  "hookHl": [
+   "double"
+  ],
+  "theme": {
+   "bg": "#21190C",
+   "bg2": "#120D07",
+   "bgc": "#4C3819",
+   "surf": "#2C2315",
+   "line": "#483B27",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#FC9C0C",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#21190C"
+  },
+  "dir": "mes-projets-ep21-tutoriels-foodeatup",
+  "visuel": "og.jpg",
+  "logo_src": null,
+  "duo": "foodeatup",
+  "s0": 0.8,
+  "dur": 85.0
+ },
+ {
+  "ep": 22,
+  "key": "camera",
+  "slug": "salle-live",
+  "nom": "Salle Live",
+  "url": "camera.foodeatup.fr",
+  "logo": "foodeatup",
+  "cat": "realisations",
+  "lines": [
+   "Chaque table, à chaque instant. Sans aucune image.",
+   "Voici Salle Live, un de mes projets.",
+   "Un boîtier analyse la salle sur place, puis oublie l'image.",
+   "Il n'envoie que l'état des tables, rien d'autre.",
+   "Chaque table passe du vert au rouge, puis à l'orange.",
+   "Ta caisse FoodEatUp suit les commandes en direct.",
+   "Alertes et analyses suivent ton service.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Analysé sur place",
+   "Rien d'autre",
+   "Vert, rouge, orange",
+   "Relié à ta caisse",
+   "Alertes en direct",
+   ""
+  ],
+  "kw": [
+   "boîtier",
+   "tables,",
+   "vert",
+   "caisse",
+   "Alertes"
+  ],
+  "hookHl": [
+   "aucune"
+  ],
+  "theme": {
+   "bg": "#21160C",
+   "bg2": "#120C07",
+   "bgc": "#4C3319",
+   "surf": "#2C2115",
+   "line": "#483827",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#FC9C3C",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#21160C"
+  },
+  "dir": "mes-projets-ep22-camera",
+  "visuel": "og.png",
+  "logo_src": null,
+  "duo": "foodeatup",
+  "s0": 3.3,
+  "dur": 45.0
+ },
+ {
+  "ep": 23,
+  "key": "voyagego",
+  "slug": "voyagego",
+  "nom": "VoyageGo",
+  "url": "voyage.foodeatup.fr",
+  "logo": null,
+  "cat": "moi",
+  "lines": [
+   "Dis où tu rêves d'aller. On compose tout le reste.",
+   "Voici VoyageGo, un de mes projets.",
+   "Une phrase suffit : l'agent compose ton voyage.",
+   "Vols, hôtels, repas et activités, à ton budget.",
+   "Ton voyage est mis en page comme un beau carnet.",
+   "Sur place, l'agent devient ton guide.",
+   "Et une communauté part avec toi.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Une phrase",
+   "À ton budget",
+   "Ton carnet",
+   "Ton guide sur place",
+   "La communauté",
+   ""
+  ],
+  "kw": [
+   "agent",
+   "budget.",
+   "carnet.",
+   "guide.",
+   "communauté"
+  ],
+  "hookHl": [
+   "rêves"
+  ],
+  "theme": {
+   "bg": "#210F0C",
+   "bg2": "#120807",
+   "bgc": "#4C2019",
+   "surf": "#2C1815",
+   "line": "#482C27",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#FC6C54",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#210F0C"
+  },
+  "dir": "mes-projets-ep23-voyagego",
+  "visuel": "og.jpg",
+  "logo_src": false,
+  "duo": "claude",
+  "s0": 6.3,
+  "dur": 108.5
+ },
+ {
+  "ep": 24,
+  "key": "fiche-seo",
+  "slug": "fiche-technique-foodeatup",
+  "nom": "Fiche technique FoodEatUp",
+  "url": "fiche.foodeatup.fr",
+  "logo": "foodeatup",
+  "cat": "annexes",
+  "lines": [
+   "Ta recette. Son vrai coût.",
+   "Voici la fiche technique FoodEatUp, un de mes projets.",
+   "Tu choisis ton plat et tu réponds à quelques questions.",
+   "Tu ajoutes tes prix, ou la photo d'une facture.",
+   "Tu découvres ton coût matière et ta marge.",
+   "Tu reçois ta fiche technique, avec tes visuels.",
+   "C'est gratuit, sans carte bancaire.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Ton plat",
+   "Tes prix",
+   "Coût et marge",
+   "Ta fiche + visuels",
+   "Gratuit",
+   ""
+  ],
+  "kw": [
+   "plat",
+   "facture.",
+   "marge.",
+   "fiche",
+   "gratuit,"
+  ],
+  "hookHl": [
+   "vrai"
+  ],
+  "theme": {
+   "bg": "#0C1621",
+   "bg2": "#070C12",
+   "bgc": "#19324C",
+   "surf": "#15212C",
+   "line": "#273848",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0C84FC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1621"
+  },
+  "dir": "mes-projets-ep24-fiche-seo",
+  "visuel": "og.jpg",
+  "logo_src": null,
+  "duo": "foodeatup",
+  "s0": 4.8,
+  "dur": 49.0
+ },
+ {
+  "ep": 25,
+  "key": "rapidocms",
+  "slug": "rapidocms",
+  "nom": "RapidoCMS",
+  "url": "rapidocms.com",
+  "logo": "rapidocms",
+  "cat": "clients",
+  "lines": [
+   "Un prompt, et tes posts sont prêts.",
+   "Voici RapidoCMS, un de mes projets.",
+   "Ton IA devient une équipe de communication complète.",
+   "Community manager, graphiste, stratège et analyste.",
+   "Tu parles, Rapido publie.",
+   "Instagram, Facebook, LinkedIn et TikTok, en une fois.",
+   "Et il marche avec Claude et tes autres assistants.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Ton équipe com",
+   "Tous les rôles",
+   "Tu parles",
+   "Tous tes réseaux",
+   "Avec Claude",
+   ""
+  ],
+  "kw": [
+   "équipe",
+   "graphiste,",
+   "publie.",
+   "TikTok,",
+   "Claude"
+  ],
+  "hookHl": [
+   "prompt,"
+  ],
+  "theme": {
+   "bg": "#0C1A21",
+   "bg2": "#070E12",
+   "bgc": "#193B4C",
+   "surf": "#15252C",
+   "line": "#273D48",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#1AA7EC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1A21"
+  },
+  "dir": "mes-projets-ep25-rapidocms",
+  "visuel": "site.png",
+  "logo_src": "../_journal-63-72/commun/logo-rapidocms.webp",
+  "duo": "rapidocms",
+  "s0": 0.8,
+  "dur": 40.0
+ },
+ {
+  "ep": 26,
+  "key": "tiktok-publisher",
+  "slug": "braincast",
+  "nom": "Braincast",
+  "url": "braincast.rapidocms.com",
+  "logo": "rapidocms",
+  "cat": "annexes",
+  "lines": [
+   "De l'idée à la vidéo publiée, dans un seul endroit.",
+   "Voici Braincast, un de mes projets.",
+   "Tu trouves tes idées de vidéos.",
+   "Tu découpes tes plans et tu écris tes prompts.",
+   "Tu montes ta vidéo.",
+   "Tu publies ou tu planifies sur tes comptes TikTok.",
+   "Rien ne part sans ton accord.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Tes idées",
+   "Tes plans",
+   "Le montage",
+   "Publié sur TikTok",
+   "Ton accord",
+   ""
+  ],
+  "kw": [
+   "idées",
+   "plans",
+   "montes",
+   "TikTok.",
+   "accord."
+  ],
+  "hookHl": [
+   "publiée,"
+  ],
+  "theme": {
+   "bg": "#210C11",
+   "bg2": "#120709",
+   "bgc": "#4C1924",
+   "surf": "#2C151A",
+   "line": "#48272E",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#FC2454",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#210C11"
+  },
+  "dir": "mes-projets-ep26-tiktok-publisher",
+  "visuel": "og.jpg",
+  "logo_src": "../_journal-63-72/commun/logo-rapidocms.webp",
+  "duo": "rapidocms",
+  "s0": 7.8,
+  "dur": 53.5
+ },
+ {
+  "ep": 27,
+  "key": "pwa",
+  "slug": "foodeatup-app",
+  "nom": "FoodEatUp App",
+  "url": "yookii-food-pwa.lovable.app",
+  "logo": "foodeatup",
+  "cat": "clients",
+  "lines": [
+   "L'appli de ton restaurant, créée depuis ta caisse.",
+   "Voici FoodEatUp App, un de mes projets.",
+   "Commande, fidélité et notifications, à ton image.",
+   "Tes clients l'installent avec un lien ou un QR code, sans store.",
+   "Ta carte et tes prix restent toujours à jour.",
+   "Aucune commission sur tes commandes.",
+   "Et tu peux la piloter avec Claude.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "À ton image",
+   "Sans store",
+   "Toujours à jour",
+   "Zéro commission",
+   "Pilotée par Claude",
+   ""
+  ],
+  "kw": [
+   "fidélité",
+   "QR",
+   "jour.",
+   "commission",
+   "Claude."
+  ],
+  "hookHl": [
+   "caisse."
+  ],
+  "theme": {
+   "bg": "#0C1421",
+   "bg2": "#070B12",
+   "bgc": "#192D4C",
+   "surf": "#151E2C",
+   "line": "#273448",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0C6CFC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1421"
+  },
+  "dir": "mes-projets-ep27-pwa",
+  "visuel": "og.jpg",
+  "logo_src": null,
+  "duo": "foodeatup",
+  "s0": 5.3,
+  "dur": 76.5
+ },
+ {
+  "ep": 28,
+  "key": "carte-visite",
+  "slug": "foodeatup-carte-digitale",
+  "nom": "Carte de visite FoodEatUp",
+  "url": "carte.foodeatup.com",
+  "logo": "foodeatup",
+  "cat": "annexes",
+  "lines": [
+   "Ma carte de visite tient dans un lien.",
+   "Voici la carte de visite FoodEatUp, un de mes projets.",
+   "Mon parcours et ma promesse, sur une seule page.",
+   "On découvre l'équipe et les agents IA.",
+   "Tout le système FoodEatUp, en un coup d'œil.",
+   "Un devis se demande en un geste.",
+   "On peut même appeler Caroline, l'agent vocal.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Mon parcours",
+   "L'équipe",
+   "Le système",
+   "Un devis",
+   "Caroline",
+   ""
+  ],
+  "kw": [
+   "parcours",
+   "équipe",
+   "système",
+   "devis",
+   "Caroline,"
+  ],
+  "hookHl": [
+   "lien."
+  ],
+  "theme": {
+   "bg": "#0C1521",
+   "bg2": "#070B12",
+   "bgc": "#192E4C",
+   "surf": "#151F2C",
+   "line": "#273548",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0B6EF6",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1521"
+  },
+  "dir": "mes-projets-ep28-carte-visite",
+  "visuel": "site.png",
+  "logo_src": null,
+  "duo": "foodeatup",
+  "s0": 3.8,
+  "dur": 40.0
+ },
+ {
+  "ep": 29,
+  "key": "studio-print",
+  "slug": "studio-print-foodeatup",
+  "nom": "Studio Print FoodEatUp",
+  "url": "design.foodeatup.fr",
+  "logo": "foodeatup",
+  "cat": "clients",
+  "lines": [
+   "Tes affiches deviennent un film.",
+   "Voici Studio Print FoodEatUp, un de mes projets.",
+   "Tes flyers, menus et emballages, à ton image.",
+   "Ton logo, tes couleurs et ton slogan sont appliqués partout.",
+   "Tes affiches s'animent et deviennent des vidéos.",
+   "Newsletters, réseaux et QR codes au même endroit.",
+   "Et même des jeux pour les enfants à table.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "À ton image",
+   "Ta marque partout",
+   "Affiches animées",
+   "Tout au même endroit",
+   "Jeux pour enfants",
+   ""
+  ],
+  "kw": [
+   "flyers,",
+   "logo,",
+   "animent",
+   "Newsletters,",
+   "enfants"
+  ],
+  "hookHl": [
+   "film."
+  ],
+  "theme": {
+   "bg": "#0C1521",
+   "bg2": "#070B12",
+   "bgc": "#192E4C",
+   "surf": "#151F2C",
+   "line": "#273548",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#0B6EF6",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1521"
+  },
+  "dir": "mes-projets-ep29-studio-print",
+  "visuel": "site.png",
+  "logo_src": null,
+  "duo": "foodeatup",
+  "s0": 0.8,
+  "dur": 40.0
+ },
+ {
+  "ep": 30,
+  "key": "site-foodeatup",
+  "slug": "foodeatup",
+  "nom": "FoodEatUp",
+  "url": "site.foodeatup.com",
+  "logo": "foodeatup",
+  "cat": "clients",
+  "lines": [
+   "Une caisse qui gère tout le restaurant.",
+   "Voici le site FoodEatUp, un de mes projets.",
+   "Chaque ticket encaissé met à jour le stock.",
+   "Ta marge et ton hygiène suivent toutes seules.",
+   "Tu saisis une fois, le reste suit.",
+   "Écrans cuisine, compta et fidélité sont reliés.",
+   "Et tu peux l'essayer gratuitement.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Stock à jour",
+   "Marge et hygiène",
+   "Une seule saisie",
+   "Tout est relié",
+   "Essai gratuit",
+   ""
+  ],
+  "kw": [
+   "stock.",
+   "marge",
+   "fois,",
+   "reliés.",
+   "gratuitement."
+  ],
+  "hookHl": [
+   "tout"
+  ],
+  "theme": {
+   "bg": "#0C1521",
+   "bg2": "#070C12",
+   "bgc": "#19304C",
+   "surf": "#151F2C",
+   "line": "#273648",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#1D7BF2",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#0C1521"
+  },
+  "dir": "mes-projets-ep30-site-foodeatup",
+  "visuel": "site.png",
+  "logo_src": null,
+  "duo": "foodeatup",
+  "s0": 0.8,
+  "dur": 40.0
+ },
+ {
+  "ep": 31,
+  "key": "villabeach",
+  "slug": "villa-beach",
+  "nom": "Villa Beach",
+  "url": "villabeach.foodeatup.fr",
+  "logo": null,
+  "cat": "realisations",
+  "lines": [
+   "Restaurant, lounge et club en plein air. Tout sur un site.",
+   "Voici Villa Beach, un site que j'ai réalisé pour un lieu festif de l'Essonne.",
+   "La semaine à la Villa, soirée par soirée.",
+   "Chacun choisit son moment : dîner, lounge ou club.",
+   "Les prochaines soirées sont annoncées.",
+   "Les avis des clients sont mis en avant.",
+   "Et on réserve sa soirée directement.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "La semaine",
+   "Ton moment",
+   "Les soirées",
+   "Les avis",
+   "Réserver",
+   ""
+  ],
+  "kw": [
+   "semaine",
+   "moment",
+   "soirées",
+   "avis",
+   "réserve"
+  ],
+  "hookHl": [
+   "plein",
+   "air."
+  ],
+  "theme": {
+   "bg": "#211C0C",
+   "bg2": "#120F07",
+   "bgc": "#4C3F19",
+   "surf": "#2C2615",
+   "line": "#484027",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#CCB46C",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#211C0C"
+  },
+  "dir": "mes-projets-ep31-villabeach",
+  "visuel": "og.png",
+  "logo_src": false,
+  "duo": "claude",
+  "s0": 18.8,
+  "dur": 86.0
+ },
+ {
+  "ep": 32,
+  "key": "planit-tutoriels",
+  "slug": "planit-academie",
+  "nom": "Académie Plan'It",
+  "url": "tutoriel.plani-t.fr",
+  "logo": "planit",
+  "cat": "annexes",
+  "lines": [
+   "Apprends à faire travailler l'IA dans tes logiciels.",
+   "Voici l'Académie Plan'It, un de mes projets.",
+   "Tu choisis ton métier, le parcours s'adapte.",
+   "Des tutoriels vidéo très courts.",
+   "Tu branches tes logiciels, puis tu parles à tes agents.",
+   "Un parcours, étape par étape.",
+   "Et tout le catalogue, module par module.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Par métier",
+   "Tutoriels courts",
+   "Branche et parle",
+   "Étape par étape",
+   "Le catalogue",
+   ""
+  ],
+  "kw": [
+   "métier,",
+   "tutoriels",
+   "agents.",
+   "étape",
+   "catalogue,"
+  ],
+  "hookHl": [
+   "travailler"
+  ],
+  "theme": {
+   "bg": "#110C21",
+   "bg2": "#090712",
+   "bgc": "#26194C",
+   "surf": "#1B152C",
+   "line": "#2F2748",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#6C3CFC",
+   "accent2": "#FFA500",
+   "hlbg": "#FFA500",
+   "hlfg": "#110C21"
+  },
+  "dir": "mes-projets-ep32-planit-tutoriels",
+  "visuel": "og.png",
+  "logo_src": "../_journal-63-72/commun/logo-planit.webp",
+  "duo": "planit",
+  "s0": 0.8,
+  "dur": 36.5
+ },
+ {
+  "ep": 33,
+  "key": "devis-batiment",
+  "slug": "devisbati",
+  "nom": "DevisBâti",
+  "url": "site-quote-builder.lovable.app",
+  "logo": null,
+  "cat": "moi",
+  "lines": [
+   "Tes devis, depuis le chantier.",
+   "Voici DevisBâti, un de mes projets pour le bâtiment.",
+   "L'artisan crée son devis directement sur son téléphone.",
+   "Les prix des matériaux sont rangés au même endroit.",
+   "Fournisseurs et frais de livraison sont pris en compte.",
+   "La marge se calcule toute seule.",
+   "Et un prix trop ancien est signalé.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Sur le téléphone",
+   "Prix des matériaux",
+   "Fournisseurs",
+   "Marge calculée",
+   "Prix à revoir",
+   ""
+  ],
+  "kw": [
+   "téléphone.",
+   "matériaux",
+   "livraison",
+   "marge",
+   "signalé."
+  ],
+  "hookHl": [
+   "chantier."
+  ],
+  "theme": {
+   "bg": "#21140C",
+   "bg2": "#120B07",
+   "bgc": "#4C2D19",
+   "surf": "#2C1E15",
+   "line": "#483427",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#FC6C0C",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#21140C"
+  },
+  "dir": "mes-projets-ep33-devis-batiment",
+  "visuel": "og.png",
+  "logo_src": false,
+  "duo": "claude",
+  "s0": 0.8,
+  "dur": 40.0
+ },
+ {
+  "ep": 34,
+  "key": "rapidocrm",
+  "slug": "rapidocrm",
+  "nom": "RapidoCRM",
+  "url": "rapido-crm.com",
+  "logo": "rapidocrm",
+  "cat": "clients",
+  "lines": [
+   "Ton CRM ne prend plus de notes. Il passe les appels.",
+   "Voici RapidoCRM, un de mes projets.",
+   "Tes prospects sont trouvés dans les annuaires officiels et sur Google Maps.",
+   "L'agent vocal les appelle pour toi.",
+   "Il pose le rendez-vous dans ton agenda.",
+   "Rendez-vous, factures et échéances au même endroit.",
+   "Tu écris une phrase, le CRM fait le travail.",
+   "Le lien est sous la vidéo : clique sur « Voir le projet »."
+  ],
+  "labels": [
+   "",
+   "MON PROJET",
+   "Prospects trouvés",
+   "L'agent vocal appelle",
+   "Rendez-vous posé",
+   "Tout au même endroit",
+   "Une phrase",
+   ""
+  ],
+  "kw": [
+   "prospects",
+   "vocal",
+   "agenda.",
+   "factures",
+   "phrase,"
+  ],
+  "hookHl": [
+   "appels."
+  ],
+  "theme": {
+   "bg": "#0C210D",
+   "bg2": "#071207",
+   "bgc": "#194C1B",
+   "surf": "#152C16",
+   "line": "#274828",
+   "text": "#FFFFFF",
+   "mute": "#a9b6c6",
+   "accent": "#4CAF50",
+   "accent2": "#2F80ED",
+   "hlbg": "#2F80ED",
+   "hlfg": "#0C210D"
+  },
+  "dir": "mes-projets-ep34-rapidocrm",
+  "visuel": "og.png",
+  "logo_src": "../_journal-63-72/commun/logo-rapidocrm.webp",
+  "duo": "rapidocrm",
+  "s0": 4.3,
+  "dur": 76.0
+ }
+]

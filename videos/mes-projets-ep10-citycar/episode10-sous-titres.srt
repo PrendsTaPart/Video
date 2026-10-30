@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,850
+Chauffeur VTC sans voiture ? Tu roules dès demain.
+
+2
+00:00:03,190 --> 00:00:06,830
+Voici CityCar, un site que j'ai réalisé pour un loueur de véhicules VTC.
+
+3
+00:00:07,050 --> 00:00:08,990
+Chaque profil de chauffeur trouve sa solution.
+
+4
+00:00:09,310 --> 00:00:10,970
+Des véhicules fiables, prêts à rouler.
+
+5
+00:00:11,150 --> 00:00:13,110
+Un vrai accompagnement, pas juste une location.
+
+6
+00:00:13,510 --> 00:00:14,890
+L'équipe gère tout le dossier.
+
+7
+00:00:15,070 --> 00:00:16,990
+Et les chauffeurs racontent leur expérience.
+
+8
+00:00:17,050 --> 00:00:19,640
+Le lien est sous la vidéo : clique sur « Voir le projet ».

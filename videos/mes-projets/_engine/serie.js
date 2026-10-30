@@ -24,7 +24,7 @@ P.make = function (o) {
   J.fx.push(() => {});
   const head = (s, a) => {
     s.add(`<div class="serie"><i>MES PROJETS</i>ÉPISODE ${o.ep}</div>`, {x: 540, w: 0, y: 60, at: a, an: 'none', css: {transform: 'translateX(-50%)', whiteSpace: 'nowrap'}});
-    s.add(`<div style="background:#fff;border-radius:18px;padding:12px 22px;display:inline-flex"><img src="${o.logo || '../mes-projets/_engine/logo-foodeatup.webp'}" style="height:46px"></div>`, {x: 540, w: 0, y: 150, at: a, an: 'none', css: {transform: 'translateX(-50%)'}});
+    s.add(o.logo === false ? `<div style="background:#fff;color:var(--bg);border-radius:18px;padding:10px 26px;font-weight:900;font-size:40px;white-space:nowrap">${o.nom}</div>` : `<div style="background:#fff;border-radius:18px;padding:12px 22px;display:inline-flex"><img src="${o.logo || '../mes-projets/_engine/logo-foodeatup.webp'}" style="height:46px"></div>`, {x: 540, w: 0, y: 150, at: a, an: 'none', css: {transform: 'translateX(-50%)'}});
   };
   const ecran = (s, a) => s.add(`<div class="ecran" style="width:${E.w + 8}px;height:${E.h + 8}px"></div>`, {x: E.x - 4 + (E.w + 8) / 2, w: E.w + 8, y: E.y - 4, at: a, an: 'none'});
   const clips = [];

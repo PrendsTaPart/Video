@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,430
+Restaurant, lounge et club en plein air. Tout sur un site.
+
+2
+00:00:03,810 --> 00:00:07,520
+Voici Villa Beach, un site que j'ai réalisé pour un lieu festif de l'Essonne.
+
+3
+00:00:07,470 --> 00:00:09,470
+La semaine à la Villa, soirée par soirée.
+
+4
+00:00:09,650 --> 00:00:12,650
+Chacun choisit son moment : dîner, lounge ou club.
+
+5
+00:00:12,570 --> 00:00:13,950
+Les prochaines soirées sont annoncées.
+
+6
+00:00:14,110 --> 00:00:15,690
+Les avis des clients sont mis en avant.
+
+7
+00:00:15,910 --> 00:00:17,250
+Et on réserve sa soirée directement.
+
+8
+00:00:17,610 --> 00:00:20,060
+Le lien est sous la vidéo : clique sur « Voir le projet ».

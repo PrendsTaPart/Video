@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,650
+Des repas frais toute la semaine, sans cuisiner.
+
+2
+00:00:02,950 --> 00:00:06,780
+Voici Coach Cuisine, un site que j'ai réalisé pour un service de repas livrés.
+
+3
+00:00:06,790 --> 00:00:08,430
+Tu choisis ta formule et ton rythme.
+
+4
+00:00:08,590 --> 00:00:10,570
+Les cuisiniers préparent des plats frais pour ta semaine.
+
+5
+00:00:10,790 --> 00:00:12,830
+Livraison le dimanche soir et le mardi soir.
+
+6
+00:00:13,150 --> 00:00:14,450
+Les plats s'adaptent à tes allergies.
+
+7
+00:00:14,530 --> 00:00:16,690
+Pause ou changement de formule, quand tu veux.
+
+8
+00:00:16,890 --> 00:00:19,580
+Le lien est sous la vidéo : clique sur « Voir le projet ».

@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,410
+Fini le classeur de recettes derrière le comptoir.
+
+2
+00:00:02,590 --> 00:00:06,410
+Voici Lüks Recettes, l'appli de formation que j'ai réalisée pour Lüks Coffee.
+
+3
+00:00:06,650 --> 00:00:08,410
+Une boisson se retrouve en quelques touches.
+
+4
+00:00:08,710 --> 00:00:11,210
+La recette s'affiche une étape à la fois, en très grand.
+
+5
+00:00:11,390 --> 00:00:14,310
+La formation est intégrée, avec un quiz sur les vraies recettes.
+
+6
+00:00:14,510 --> 00:00:16,310
+Le responsable valide chaque équipier.
+
+7
+00:00:16,470 --> 00:00:19,230
+Au bar, en préparation, sur tablette ou sur téléphone.
+
+8
+00:00:19,550 --> 00:00:22,260
+Le lien est sous la vidéo : clique sur « Voir le projet ».

@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:01,970
+Une caisse qui gère tout le restaurant.
+
+2
+00:00:02,270 --> 00:00:04,190
+Voici le site FoodEatUp, un de mes projets.
+
+3
+00:00:04,490 --> 00:00:06,310
+Chaque ticket encaissé met à jour le stock.
+
+4
+00:00:06,570 --> 00:00:08,770
+Ta marge et ton hygiène suivent toutes seules.
+
+5
+00:00:08,670 --> 00:00:10,350
+Tu saisis une fois, le reste suit.
+
+6
+00:00:10,430 --> 00:00:13,190
+Écrans cuisine, compta et fidélité sont reliés.
+
+7
+00:00:13,330 --> 00:00:14,590
+Et tu peux l'essayer gratuitement.
+
+8
+00:00:14,810 --> 00:00:17,500
+Le lien est sous la vidéo : clique sur « Voir le projet ».
