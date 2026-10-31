@@ -1,6 +1,6 @@
 {
  "ep": 93,
- "badge": "MES 30 PROJETS · INTRO",
+ "badge": "MES PROJETS EN PUB · INTRO",
  "theme": {
   "bg": "#0F1A23",
   "bg2": "#05080d",
@@ -8,21 +8,20 @@
   "accent2": "#FFA500"
  },
  "kw": [
-  "Trente",
-  "publicités",
+  "pub",
+  "sienne.",
   "IA",
   "restaurants",
   "entreprises",
   "clients",
-  "pub",
   "problème",
   "solution",
   "essayer",
   "Demain",
   "caisse",
   "poche",
-  "Abonne-toi",
-  "trente."
+  "abonne-toi",
+  "nouveaux"
  ],
  "avatar": {
   "5": "04-presentation",
@@ -31,7 +30,7 @@
  "scenes": [
   {
    "t": "wall",
-   "text": "30 projets. 30 *pubs*.",
+   "text": "Mes projets en *pub*",
    "imgs": [
     "m-foodeatup-caisse-mobile.jpg",
     "m-rapidocrm.jpg",
@@ -102,7 +101,7 @@
   {
    "t": "cta",
    "logo": "michael-rond.png",
-   "word": "Ne rate aucun des *30*",
+   "word": "Ne rate aucun *projet*",
    "btn": "Abonne-toi",
    "url": "michael.foodeatup.fr"
   }

@@ -30,7 +30,7 @@ def build(f):
     caps = [
         ("c1", 0.7, 3.4, "Un soir. Un <mark>téléphone</mark>.", ""),
         ("c2", 4.4, 4.2, "Je décris. <mark>Claude</mark> construit.", "Une caisse, un CRM, une appli d'hygiène…"),
-        ("c3", 9.2, 4.2, "46 projets. 130+ <mark>vidéos</mark>.", "Construits avec l'IA, sans bureau."),
+        ("c3", 9.2, 4.2, "Des projets qui <mark>grandissent</mark>.", "Construits avec l'IA, sans bureau."),
         ("c4", 14.3, 2.6, "Tout ce que vous voyez ici est né sur mon <mark>téléphone</mark>.", ""),
     ]
     caps_html = "\n".join(
@@ -115,11 +115,11 @@ def build(f):
       </div>
 {caps_html}
       <div id="home" class="clip" data-start="16.6" data-duration="3.4" data-track-index="9"><img id="homeImg" src="{f["home"]}" alt="Accueil de michael.foodeatup.fr" /></div>
-      <audio id="voix1" src="assets/voix/v1.wav" data-start="0.7" data-duration="2.05" data-track-index="21" data-volume="1"></audio>
-      <audio id="voix2" src="assets/voix/v2.wav" data-start="4.3" data-duration="2.23" data-track-index="22" data-volume="1"></audio>
-      <audio id="voix3" src="assets/voix/v3.wav" data-start="6.6" data-duration="2.89" data-track-index="23" data-volume="1"></audio>
-      <audio id="voix4" src="assets/voix/v4.wav" data-start="9.5" data-duration="3.38" data-track-index="24" data-volume="1"></audio>
-      <audio id="voix5" src="assets/voix/v5.wav" data-start="14.3" data-duration="2.45" data-track-index="25" data-volume="1"></audio>
+      <audio id="voix1" src="assets/voix/v1.wav" data-start="0.7" data-duration="2.0" data-track-index="21" data-volume="1"></audio>
+      <audio id="voix2" src="assets/voix/v2.wav" data-start="4.3" data-duration="2.2" data-track-index="22" data-volume="1"></audio>
+      <audio id="voix3" src="assets/voix/v3.wav" data-start="6.6" data-duration="2.9" data-track-index="23" data-volume="1"></audio>
+      <audio id="voix4" src="assets/voix/v4.wav" data-start="9.5" data-duration="3.14" data-track-index="24" data-volume="1"></audio>
+      <audio id="voix5" src="assets/voix/v5.wav" data-start="14.3" data-duration="2.4" data-track-index="25" data-volume="1"></audio>
       <audio id="voix6" src="assets/voix/v6.wav" data-start="17.3" data-duration="1.08" data-track-index="26" data-volume="1"></audio>
       <div id="avatar" class="clip" data-start="0" data-duration="19.4" data-track-index="10" data-layout-allow-overflow><div id="av"><img id="p1" src="assets/avatar-02-salut.png" alt="Avatar 3D de Michael" /><img id="p2" src="assets/avatar-08-idee.png" alt="Avatar 3D de Michael" /><img id="p3" src="assets/avatar-06-ordinateur.png" alt="Avatar 3D de Michael" /><img id="p4" src="assets/avatar-10-celebration.png" alt="Avatar 3D de Michael" /><img id="p5" src="assets/avatar-04-presentation.png" alt="Avatar 3D de Michael" /><img id="p6" src="assets/avatar-01-bienvenue.png" alt="Avatar 3D de Michael" /></div></div>
     </div>
