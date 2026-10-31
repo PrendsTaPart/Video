@@ -22,9 +22,24 @@
       #phoneWrap { position: absolute; left: 795.0px; top: 120px; width: 330px; height: 690px; transform-style: preserve-3d; }
       #phone { position: absolute; inset: 0; border-radius: 43px; background: linear-gradient(145deg, #39404c, #07090c 55%, #1b2029); padding: 7px; box-shadow: 0 60px 140px rgba(0,0,0,.75), inset 0 0 0 2px rgba(255,255,255,.10); }
       #screen { position: relative; width: 100%; height: 100%; border-radius: 37px; overflow: hidden; background: #000; }
-      #screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+      #screen > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
       #glass { position: absolute; inset: 0; background: linear-gradient(120deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 35%); }
       #punch { position: absolute; left: 50%; top: 15px; width: 15px; height: 15px; margin-left: -7px; border-radius: 50%; background: #05070a; box-shadow: 0 0 0 3px #11151b; z-index: 5; }
+      #chat { position: absolute; inset: 0; background: #f5f4ee; color: #1f1e1d; font-family: Inter, sans-serif; padding: 56px 16px 0; font-size: 13.9px; line-height: 1.38; }
+      #chat .hd { display: flex; align-items: center; justify-content: center; gap: 8px; padding-bottom: 10px; border-bottom: 1px solid #e3e0d6; }
+      #chat .hd img { height: 18px; }
+      #chat .rec { position: absolute; right: 16px; top: 31px; font-size: 8.6px; color: #8a8576; border: 1px solid #d6d1c4; border-radius: 99px; padding: 1px 8px; }
+      #ubub { margin: 16px 0 0 auto; width: 82%; background: #e8e4d8; border-radius: 15px; padding: 10px 13px; }
+      #rep { margin-top: 15px; }
+      #rep .w { display: inline-block; margin-right: .28em; font-style: normal; }
+      #art { margin-top: 13px; border: 1px solid #ddd8cb; border-radius: 13px; overflow: hidden; background: #fff; box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+      #art .ah { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; font-weight: 700; font-size: 11.9px; }
+      #art .ah span { font-weight: 600; font-size: 9.9px; color: #c96442; background: #fbe9e2; border-radius: 99px; padding: 1px 8px; }
+      #art .shot { height: 165px; overflow: hidden; }
+      #art .shot img { position: static; width: 100%; height: auto; display: block; }
+      #inp { position: absolute; left: 16px; right: 16px; bottom: 23px; display: flex; align-items: center; justify-content: space-between; background: #fff; border: 1px solid #ddd8cb; border-radius: 20px; padding: 10px 13px; color: #9a958a; }
+      #inp b { width: 25px; height: 25px; border-radius: 50%; background: #d97757; display: inline-block; }
+      #c2 .capin { left: 140px; top: 380px; width: 760px; text-align: left; }
       #home { background: #0f1a23; }
       #home img { width: 100%; height: 100%; object-fit: cover; }
       .cap { display: flex; justify-content: center; }
@@ -57,7 +72,13 @@
           </div>
           <div id="phoneWrap">
             <div id="phone"><div id="screen"><div id="punch"></div>
-              <img id="scrApp" src="assets/m-caisse.jpg" alt="FoodEatUp Caisse Mobile" />
+              <div id="chat">
+                <div class="hd"><img src="assets/logo-claude.webp" alt="Claude" /></div><span class="rec">reconstitution</span>
+                <div id="ubub">Construis-moi une caisse pour mon restaurant, sur le téléphone de mes équipiers.</div>
+                <div id="rep"><i class="w" id="w0">Je</i><i class="w" id="w1">m'en</i><i class="w" id="w2">occupe.</i><i class="w" id="w3">Commande</i><i class="w" id="w4">à</i><i class="w" id="w5">table,</i><i class="w" id="w6">envoi</i><i class="w" id="w7">en</i><i class="w" id="w8">cuisine,</i><i class="w" id="w9">addition</i><i class="w" id="w10">même</i><i class="w" id="w11">sans</i><i class="w" id="w12">réseau.</i><i class="w" id="w13">Voici</i><i class="w" id="w14">ta</i><i class="w" id="w15">caisse</i><i class="w" id="w16">:</i></div>
+                <div id="art"><div class="ah">FoodEatUp Caisse Mobile<span>Aperçu</span></div><div class="shot"><img src="assets/d-foodeatup-caisse-mobile.jpg" alt="Écran réel de FoodEatUp Caisse Mobile" /></div></div>
+                <div id="inp">Répondre à Claude…<b></b></div>
+              </div>
               <img id="scrHome" src="assets/accueil-mobile.jpg" alt="Accueil du site" />
               <div id="glass"></div>
             </div></div>
@@ -65,8 +86,8 @@
         </div>
       </div>
       <div id="c1" class="clip cap" data-start="0.7" data-duration="3.4" data-track-index="5"><div class="capin"><h1>Un soir. Un <mark>téléphone</mark>.</h1></div></div>
-      <div id="c2" class="clip cap" data-start="4.4" data-duration="4.0" data-track-index="6"><div class="capin"><h1>Une idée. Puis une <mark>autre</mark>.</h1><p>Une caisse, un CRM, une appli d'hygiène…</p></div></div>
-      <div id="c3" class="clip cap" data-start="9.0" data-duration="4.5" data-track-index="7"><div class="capin"><h1>46 projets. 130+ <mark>vidéos</mark>.</h1><p>Construits avec l'IA, sans bureau.</p></div></div>
+      <div id="c2" class="clip cap" data-start="4.4" data-duration="4.2" data-track-index="6"><div class="capin"><h1>Je décris. <mark>Claude</mark> construit.</h1><p>Une caisse, un CRM, une appli d'hygiène…</p></div></div>
+      <div id="c3" class="clip cap" data-start="9.2" data-duration="4.2" data-track-index="7"><div class="capin"><h1>46 projets. 130+ <mark>vidéos</mark>.</h1><p>Construits avec l'IA, sans bureau.</p></div></div>
       <div id="c4" class="clip cap" data-start="14.3" data-duration="2.6" data-track-index="8"><div class="capin"><h1>Tout ce que vous voyez ici est né sur mon <mark>téléphone</mark>.</h1></div></div>
       <div id="home" class="clip" data-start="16.6" data-duration="3.4" data-track-index="9"><img id="homeImg" src="assets/accueil-desktop.jpg" alt="Accueil de michael.foodeatup.fr" /></div>
     </div>
@@ -82,17 +103,22 @@
 
       // Acte 1 : le téléphone sort de l'ombre en tournant, écran éteint
       tl.fromTo("#phoneWrap", { rotationY: -68, rotationX: 14, z: -900, opacity: 0.35 }, { rotationY: -18, rotationX: 6, z: 0, opacity: 1, duration: 3.6, ease: E }, 0);
-      tl.fromTo("#scrApp", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 3.9);
+      tl.fromTo("#chat", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 3.7);
+      tl.fromTo("#ubub", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: E }, 4.2);
+      document.querySelectorAll("#rep .w").forEach((w, j) => tl.fromTo(w, { opacity: 0 }, { opacity: 1, duration: 0.12 }, 4.9 + j * 0.07));
+      tl.fromTo("#art", { y: 30, opacity: 0, scale: 0.94 }, { y: 0, opacity: 1, scale: 1, duration: 0.55, ease: E }, 6.15);
+      tl.fromTo("#art .shot img", { clipPath: "inset(0% 0% 100% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.8, ease: "power2.out" }, 6.4);
       tl.fromTo("#scrHome", { opacity: 0 }, { opacity: 0, duration: 0.01 }, 0);
-      tl.to("#phoneWrap", { rotationY: 14, rotationX: 4, duration: 5, ease: "sine.inOut" }, 3.6);
+      tl.to("#phoneWrap", { rotationY: -6, rotationX: 0, scale: 1.22, x: 330, y: 40, duration: 0.9, ease: IO }, 3.6);
+      tl.to("#phoneWrap", { rotationY: 12, rotationX: 4, scale: 1, x: 0, y: 0, duration: 1.2, ease: IO }, 7.0);
 
       // Acte 2 et 3 : les projets s'envolent du téléphone et forment un anneau autour de lui
       for (let i = 0; i < N; i++) {
         const a = document.getElementById("a" + i);
         gsap.set(a, { rotationY: +a.dataset.ang, y: +a.dataset.y });
-        tl.fromTo("#k" + i, { z: 0, scale: 0.12, opacity: 0 }, { z: R, scale: 1, opacity: 1, duration: 1.1, ease: E }, 4.6 + i * 0.32);
+        tl.fromTo("#k" + i, { z: 0, scale: 0.12, opacity: 0 }, { z: R, scale: 1, opacity: 1, duration: 1.1, ease: E }, 7.1 + i * 0.26);
       }
-      tl.fromTo("#ring", { rotationY: 0 }, { rotationY: -150, duration: 10, ease: "none" }, 4.6);
+      tl.fromTo("#ring", { rotationY: 0 }, { rotationY: -130, duration: 9, ease: "none" }, 7.1);
       tl.to("#phoneWrap", { rotationY: -10, rotationX: 2, duration: 4.4, ease: "sine.inOut" }, 8.6);
 
       // Acte 4 : l'anneau s'ouvre, l'écran passe sur l'accueil du site, la caméra plonge dans le téléphone
@@ -108,7 +134,7 @@
       tl.fromTo("#homeImg", { scale: 1.12 }, { scale: 1, duration: 2.4, ease: "power2.out" }, 16.6);
 
       // Légendes : entrée et sortie
-      [["#c1", 0.7, 3.4], ["#c2", 4.4, 4.0], ["#c3", 9.0, 4.5], ["#c4", 14.3, 2.6]].forEach(([c, s, d]) => {
+      [["#c1", 0.7, 3.4], ["#c2", 4.4, 4.2], ["#c3", 9.2, 4.2], ["#c4", 14.3, 2.6]].forEach(([c, s, d]) => {
         tl.fromTo(c + " .capin", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: E }, s + 0.05);
         tl.to(c + " .capin", { y: -20, opacity: 0, duration: 0.35, ease: "power2.in" }, s + d - 0.4);
       });

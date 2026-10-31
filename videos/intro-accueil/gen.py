@@ -7,10 +7,10 @@ CARDS = ["foodeatup-caisse-mobile", "rapidocrm", "application-haccp", "plan-it",
 
 FMT = {
     "landscape": dict(W=1920, H=1080, out="index.html", phone=(330, 690), phoneY=120, cap_y=880, cap_size=58, R=760,
-                      cardW=470, cardH=294, ys=(-230, 0, 230), home="assets/accueil-desktop.jpg", dive=3.5, clip=34,
+                      cardW=470, cardH=294, ys=(-230, 0, 230), home="assets/accueil-desktop.jpg", dive=3.5, clip=34, chatzoom=1.22, chatx=330, chaty=40, c2css="left: 140px; top: 380px; width: 760px; text-align: left;",
                       persp=1700),
     "portrait": dict(W=1080, H=1920, out="mobile/index.html", phone=(410, 860), phoneY=470, cap_y=130, cap_size=66, R=560,
-                     cardW=420, cardH=262, ys=(-260, 40, 330), home="assets/accueil-mobile.jpg", dive=2.75, clip=6,
+                     cardW=420, cardH=262, ys=(-260, 40, 330), home="assets/accueil-mobile.jpg", dive=2.75, clip=6, chatzoom=1.0, chatx=0, chaty=0, c2css="",
                      persp=1500),
 }
 
@@ -29,8 +29,8 @@ def build(f):
     arms = "\n".join(arms)
     caps = [
         ("c1", 0.7, 3.4, "Un soir. Un <mark>téléphone</mark>.", ""),
-        ("c2", 4.4, 4.0, "Une idée. Puis une <mark>autre</mark>.", "Une caisse, un CRM, une appli d'hygiène…"),
-        ("c3", 9.0, 4.5, "46 projets. 130+ <mark>vidéos</mark>.", "Construits avec l'IA, sans bureau."),
+        ("c2", 4.4, 4.2, "Je décris. <mark>Claude</mark> construit.", "Une caisse, un CRM, une appli d'hygiène…"),
+        ("c3", 9.2, 4.2, "46 projets. 130+ <mark>vidéos</mark>.", "Construits avec l'IA, sans bureau."),
         ("c4", 14.3, 2.6, "Tout ce que vous voyez ici est né sur mon <mark>téléphone</mark>.", ""),
     ]
     caps_html = "\n".join(
@@ -60,9 +60,24 @@ def build(f):
       #phoneWrap {{ position: absolute; left: {px}px; top: {py}px; width: {pw}px; height: {ph}px; transform-style: preserve-3d; }}
       #phone {{ position: absolute; inset: 0; border-radius: {pw * .13:.0f}px; background: linear-gradient(145deg, #39404c, #07090c 55%, #1b2029); padding: {pw * .022:.0f}px; box-shadow: 0 60px 140px rgba(0,0,0,.75), inset 0 0 0 2px rgba(255,255,255,.10); }}
       #screen {{ position: relative; width: 100%; height: 100%; border-radius: {pw * .112:.0f}px; overflow: hidden; background: #000; }}
-      #screen img {{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }}
+      #screen > img {{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }}
       #glass {{ position: absolute; inset: 0; background: linear-gradient(120deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 35%); }}
       #punch {{ position: absolute; left: 50%; top: {pw * .045:.0f}px; width: {pw * .045:.0f}px; height: {pw * .045:.0f}px; margin-left: {-pw * .0225:.0f}px; border-radius: 50%; background: #05070a; box-shadow: 0 0 0 3px #11151b; z-index: 5; }}
+      #chat {{ position: absolute; inset: 0; background: #f5f4ee; color: #1f1e1d; font-family: Inter, sans-serif; padding: {pw * .17:.0f}px {pw * .05:.0f}px 0; font-size: {pw * .042:.1f}px; line-height: 1.38; }}
+      #chat .hd {{ display: flex; align-items: center; justify-content: center; gap: 8px; padding-bottom: {pw * .03:.0f}px; border-bottom: 1px solid #e3e0d6; }}
+      #chat .hd img {{ height: {pw * .055:.0f}px; }}
+      #chat .rec {{ position: absolute; right: {pw * .05:.0f}px; top: {pw * .095:.0f}px; font-size: {pw * .026:.1f}px; color: #8a8576; border: 1px solid #d6d1c4; border-radius: 99px; padding: 1px 8px; }}
+      #ubub {{ margin: {pw * .05:.0f}px 0 0 auto; width: 82%; background: #e8e4d8; border-radius: {pw * .045:.0f}px; padding: {pw * .03:.0f}px {pw * .04:.0f}px; }}
+      #rep {{ margin-top: {pw * .045:.0f}px; }}
+      #rep .w {{ display: inline-block; margin-right: .28em; font-style: normal; }}
+      #art {{ margin-top: {pw * .04:.0f}px; border: 1px solid #ddd8cb; border-radius: {pw * .04:.0f}px; overflow: hidden; background: #fff; box-shadow: 0 6px 18px rgba(0,0,0,.08); }}
+      #art .ah {{ display: flex; justify-content: space-between; align-items: center; padding: {pw * .025:.0f}px {pw * .035:.0f}px; font-weight: 700; font-size: {pw * .036:.1f}px; }}
+      #art .ah span {{ font-weight: 600; font-size: {pw * .03:.1f}px; color: #c96442; background: #fbe9e2; border-radius: 99px; padding: 1px 8px; }}
+      #art .shot {{ height: {pw * .5:.0f}px; overflow: hidden; }}
+      #art .shot img {{ position: static; width: 100%; height: auto; display: block; }}
+      #inp {{ position: absolute; left: {pw * .05:.0f}px; right: {pw * .05:.0f}px; bottom: {pw * .07:.0f}px; display: flex; align-items: center; justify-content: space-between; background: #fff; border: 1px solid #ddd8cb; border-radius: {pw * .06:.0f}px; padding: {pw * .03:.0f}px {pw * .04:.0f}px; color: #9a958a; }}
+      #inp b {{ width: {pw * .075:.0f}px; height: {pw * .075:.0f}px; border-radius: 50%; background: #d97757; display: inline-block; }}
+      #c2 .capin {{ {f["c2css"]} }}
       #home {{ background: #0f1a23; }}
       #home img {{ width: 100%; height: 100%; object-fit: cover; }}
       .cap {{ display: flex; justify-content: center; }}
@@ -82,7 +97,13 @@ def build(f):
           </div>
           <div id="phoneWrap">
             <div id="phone"><div id="screen"><div id="punch"></div>
-              <img id="scrApp" src="assets/m-caisse.jpg" alt="FoodEatUp Caisse Mobile" />
+              <div id="chat">
+                <div class="hd"><img src="assets/logo-claude.webp" alt="Claude" /></div><span class="rec">reconstitution</span>
+                <div id="ubub">Construis-moi une caisse pour mon restaurant, sur le téléphone de mes équipiers.</div>
+                <div id="rep"><i class="w" id="w0">Je</i><i class="w" id="w1">m'en</i><i class="w" id="w2">occupe.</i><i class="w" id="w3">Commande</i><i class="w" id="w4">à</i><i class="w" id="w5">table,</i><i class="w" id="w6">envoi</i><i class="w" id="w7">en</i><i class="w" id="w8">cuisine,</i><i class="w" id="w9">addition</i><i class="w" id="w10">même</i><i class="w" id="w11">sans</i><i class="w" id="w12">réseau.</i><i class="w" id="w13">Voici</i><i class="w" id="w14">ta</i><i class="w" id="w15">caisse</i><i class="w" id="w16">:</i></div>
+                <div id="art"><div class="ah">FoodEatUp Caisse Mobile<span>Aperçu</span></div><div class="shot"><img src="assets/d-foodeatup-caisse-mobile.jpg" alt="Écran réel de FoodEatUp Caisse Mobile" /></div></div>
+                <div id="inp">Répondre à Claude…<b></b></div>
+              </div>
               <img id="scrHome" src="assets/accueil-mobile.jpg" alt="Accueil du site" />
               <div id="glass"></div>
             </div></div>
@@ -104,17 +125,22 @@ def build(f):
 
       // Acte 1 : le téléphone sort de l'ombre en tournant, écran éteint
       tl.fromTo("#phoneWrap", {{ rotationY: -68, rotationX: 14, z: -900, opacity: 0.35 }}, {{ rotationY: -18, rotationX: 6, z: 0, opacity: 1, duration: 3.6, ease: E }}, 0);
-      tl.fromTo("#scrApp", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.5 }}, 3.9);
+      tl.fromTo("#chat", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.5 }}, 3.7);
+      tl.fromTo("#ubub", {{ y: 24, opacity: 0 }}, {{ y: 0, opacity: 1, duration: 0.45, ease: E }}, 4.2);
+      document.querySelectorAll("#rep .w").forEach((w, j) => tl.fromTo(w, {{ opacity: 0 }}, {{ opacity: 1, duration: 0.12 }}, 4.9 + j * 0.07));
+      tl.fromTo("#art", {{ y: 30, opacity: 0, scale: 0.94 }}, {{ y: 0, opacity: 1, scale: 1, duration: 0.55, ease: E }}, 6.15);
+      tl.fromTo("#art .shot img", {{ clipPath: "inset(0% 0% 100% 0%)" }}, {{ clipPath: "inset(0% 0% 0% 0%)", duration: 0.8, ease: "power2.out" }}, 6.4);
       tl.fromTo("#scrHome", {{ opacity: 0 }}, {{ opacity: 0, duration: 0.01 }}, 0);
-      tl.to("#phoneWrap", {{ rotationY: 14, rotationX: 4, duration: 5, ease: "sine.inOut" }}, 3.6);
+      tl.to("#phoneWrap", {{ rotationY: -6, rotationX: 0, scale: {f["chatzoom"]}, x: {f["chatx"]}, y: {f["chaty"]}, duration: 0.9, ease: IO }}, 3.6);
+      tl.to("#phoneWrap", {{ rotationY: 12, rotationX: 4, scale: 1, x: 0, y: 0, duration: 1.2, ease: IO }}, 7.0);
 
       // Acte 2 et 3 : les projets s'envolent du téléphone et forment un anneau autour de lui
       for (let i = 0; i < N; i++) {{
         const a = document.getElementById("a" + i);
         gsap.set(a, {{ rotationY: +a.dataset.ang, y: +a.dataset.y }});
-        tl.fromTo("#k" + i, {{ z: 0, scale: 0.12, opacity: 0 }}, {{ z: R, scale: 1, opacity: 1, duration: 1.1, ease: E }}, 4.6 + i * 0.32);
+        tl.fromTo("#k" + i, {{ z: 0, scale: 0.12, opacity: 0 }}, {{ z: R, scale: 1, opacity: 1, duration: 1.1, ease: E }}, 7.1 + i * 0.26);
       }}
-      tl.fromTo("#ring", {{ rotationY: 0 }}, {{ rotationY: -150, duration: 10, ease: "none" }}, 4.6);
+      tl.fromTo("#ring", {{ rotationY: 0 }}, {{ rotationY: -130, duration: 9, ease: "none" }}, 7.1);
       tl.to("#phoneWrap", {{ rotationY: -10, rotationX: 2, duration: 4.4, ease: "sine.inOut" }}, 8.6);
 
       // Acte 4 : l'anneau s'ouvre, l'écran passe sur l'accueil du site, la caméra plonge dans le téléphone
@@ -130,7 +156,7 @@ def build(f):
       tl.fromTo("#homeImg", {{ scale: 1.12 }}, {{ scale: 1, duration: 2.4, ease: "power2.out" }}, 16.6);
 
       // Légendes : entrée et sortie
-      [["#c1", 0.7, 3.4], ["#c2", 4.4, 4.0], ["#c3", 9.0, 4.5], ["#c4", 14.3, 2.6]].forEach(([c, s, d]) => {{
+      [["#c1", 0.7, 3.4], ["#c2", 4.4, 4.2], ["#c3", 9.2, 4.2], ["#c4", 14.3, 2.6]].forEach(([c, s, d]) => {{
         tl.fromTo(c + " .capin", {{ y: 30, opacity: 0 }}, {{ y: 0, opacity: 1, duration: 0.55, ease: E }}, s + 0.05);
         tl.to(c + " .capin", {{ y: -20, opacity: 0, duration: 0.35, ease: "power2.in" }}, s + d - 0.4);
       }});
