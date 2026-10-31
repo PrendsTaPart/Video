@@ -1,0 +1,47 @@
+1
+00:00:00,350 --> 00:00:02,870
+J'ai choqué mon développeur en lui présentant ma méthode.
+
+2
+00:00:03,120 --> 00:00:06,540
+Sadok, tu te souviens ? Celui qui a branché RapidoCRM à l'IA.
+
+3
+00:00:06,550 --> 00:00:10,470
+Ce matin, on avait une idée : une appli pour les commerciaux qui prospectent sur le terrain.
+
+4
+00:00:10,770 --> 00:00:15,350
+Lui voyait des semaines de travail. Moi, je lui ai montré ma méthode, marche par marche.
+
+5
+00:00:15,590 --> 00:00:19,230
+Claude écrit le plan. Lovable construit l'appli, son site et sa démo.
+
+6
+00:00:19,470 --> 00:00:25,230
+Sur le terrain, le commercial ajoute un prospect en quelques secondes : par son nom, autour de lui, ou avec une carte de visite.
+
+7
+00:00:25,390 --> 00:00:28,750
+Puis il tend son téléphone au client : un petit sondage, une roue des cadeaux.
+
+8
+00:00:28,750 --> 00:00:32,630
+Le client laisse son email seulement s'il est d'accord, et il repart avec son cadeau.
+
+9
+00:00:32,690 --> 00:00:38,150
+Et tout arrive tout seul dans RapidoCRM : le contact, l'étape, la relance. Zéro ressaisie le soir.
+
+10
+00:00:38,490 --> 00:00:41,470
+Le soir même, c'était en ligne. Sadok n'en revenait pas.
+
+11
+00:00:41,730 --> 00:00:43,870
+Ce n'est pas l'outil qui a changé. C'est la méthode.
+
+12
+00:00:44,070 --> 00:00:47,130
+Écris TERRAIN en commentaire, je t'envoie la méthode et le lien de la démo.

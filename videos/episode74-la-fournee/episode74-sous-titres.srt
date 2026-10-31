@@ -1,0 +1,43 @@
+1
+00:00:00,350 --> 00:00:02,150
+Il jetait des baguettes tous les dimanches.
+
+2
+00:00:02,490 --> 00:00:05,170
+Ce boulanger faisait la même fournée que son père, tous les jours.
+
+3
+00:00:05,450 --> 00:00:07,250
+Alors on a relu sa caisse de toute l'année.
+
+4
+00:00:07,650 --> 00:00:10,250
+Quand il pleut, il vend moins : ses clients restent chez eux.
+
+5
+00:00:10,530 --> 00:00:13,750
+Et le jour où la boulangerie d'en face est fermée, il n'a plus de pain avant midi.
+
+6
+00:00:14,050 --> 00:00:16,510
+D'un côté il jette, de l'autre il rate des ventes.
+
+7
+00:00:16,730 --> 00:00:20,470
+Maintenant, chaque soir, sa caisse et la météo calculent la fournée du lendemain.
+
+8
+00:00:20,650 --> 00:00:22,270
+Le matin, la bonne quantité l'attend.
+
+9
+00:00:22,570 --> 00:00:25,310
+Lui sait faire le pain. Sa caisse sait combien en faire.
+
+10
+00:00:25,630 --> 00:00:28,050
+C'est exactement l'idée de la prévision dans FoodEatUp.
+
+11
+00:00:28,010 --> 00:00:31,590
+Écris FOURNÉE en commentaire, je t'envoie la méthode pour le faire avec Claude.

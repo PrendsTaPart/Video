@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+:root { --bg: #0F1A23; --bg2: #05080d; --acc: #007BFF; --acc2: #FFA500; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--bg2); }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: Poppins, sans-serif; color: #fff; perspective: 1600px; }
+.clip { position: absolute; inset: 0; }
+#bg { background: radial-gradient(ellipse at 50% 35%, color-mix(in srgb, var(--acc) 35%, var(--bg)) 0%, var(--bg) 45%, var(--bg2) 100%); }
+.scene { transform-style: preserve-3d; }
+mark { background: var(--acc2); color: #0b1520; border-radius: 16px; padding: 0 16px; }
+.hookt { position: absolute; left: 70px; right: 70px; top: 230px; font-size: 92px; font-weight: 800; line-height: 1.08; letter-spacing: -2px; text-align: center; text-shadow: 0 8px 30px rgba(0,0,0,.6); }
+.mock { position: absolute; left: 240px; top: 640px; width: 600px; height: 1067px; object-fit: contain; object-position: top; filter: drop-shadow(0 40px 60px rgba(0,0,0,.6)); }
+.mock.small { left: 290px; top: 760px; width: 500px; height: 889px; }
+.mock.feat { left: 290px; top: 760px; width: 500px; height: 889px; }
+.photo { position: absolute; inset: 0; overflow: hidden; }
+.photo img { position: absolute; top: 0; left: 50%; height: 100%; width: auto; transform-origin: 50% 50%; }
+.shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.05) 35%, rgba(0,0,0,.25) 60%, rgba(0,0,0,.85) 100%); }
+.slam { position: absolute; left: 0; right: 0; top: 300px; text-align: center; font-size: 104px; font-weight: 900; letter-spacing: -2px; color: #fff; text-shadow: 0 10px 40px rgba(0,0,0,.8); }
+.kos { position: absolute; left: 90px; right: 90px; top: 1050px; display: flex; flex-direction: column; gap: 26px; }
+.ko { background: rgba(229,57,53,.92); border-radius: 26px; padding: 26px 34px; font-size: 50px; font-weight: 800; box-shadow: 0 20px 40px rgba(0,0,0,.45); }
+.ia { position: absolute; right: 30px; top: 160px; font-size: 24px; font-weight: 600; color: rgba(255,255,255,.75); background: rgba(0,0,0,.45); border-radius: 99px; padding: 6px 16px; }
+.reveal { background: radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--acc) 55%, var(--bg)) 0%, var(--bg) 60%); }
+.flash { position: absolute; inset: 0; background: #fff; }
+.rlogo { position: absolute; left: 50%; top: 250px; width: 300px; height: 300px; margin-left: -150px; border-radius: 60px; overflow: hidden; background: #fff; box-shadow: 0 30px 70px rgba(0,0,0,.5); }
+.rlogo img { width: 100%; height: 100%; object-fit: contain; padding: 36px; }
+.rname { position: absolute; left: 0; right: 0; top: 600px; text-align: center; font-size: 82px; font-weight: 800; letter-spacing: -1.5px; }
+.icon { position: absolute; left: 50%; top: 240px; width: 240px; height: 240px; margin-left: -120px; }
+.word { position: absolute; left: 60px; right: 60px; top: 520px; text-align: center; font-size: 84px; font-weight: 800; line-height: 1.1; letter-spacing: -1.5px; }
+.word.low { top: 1230px; }
+.shot { position: absolute; left: 60px; right: 60px; top: 820px; border-radius: 30px; overflow: hidden; box-shadow: 0 40px 80px rgba(0,0,0,.6); border: 3px solid rgba(255,255,255,.12); transform-origin: 50% 0%; }
+.shot img { width: 100%; display: block; }
+.card { position: absolute; left: 140px; right: 140px; top: 240px; border-radius: 36px; overflow: hidden; box-shadow: 0 40px 80px rgba(0,0,0,.6); }
+.card img { width: 100%; display: block; }
+.ctal { position: absolute; left: 50%; top: 220px; width: 260px; height: 260px; margin-left: -130px; border-radius: 54px; overflow: hidden; background: #fff; }
+.ctal img { width: 100%; height: 100%; object-fit: contain; padding: 30px; }
+.ctat { position: absolute; left: 60px; right: 60px; top: 560px; text-align: center; font-size: 92px; font-weight: 800; line-height: 1.08; letter-spacing: -2px; }
+.btn { position: absolute; left: 50%; top: 900px; transform: translateX(-50%); white-space: nowrap; background: var(--acc2); color: #0b1520; font-size: 54px; font-weight: 800; border-radius: 999px; padding: 26px 60px; box-shadow: 0 20px 50px rgba(0,0,0,.45); }
+.url { position: absolute; left: 0; right: 0; top: 1060px; text-align: center; font-size: 40px; font-weight: 600; color: rgba(255,255,255,.85); }
+.wallt { position: absolute; left: 60px; right: 60px; top: 200px; text-align: center; font-size: 80px; font-weight: 800; line-height: 1.08; letter-spacing: -1.5px; }
+.wall { position: absolute; left: 50px; right: 50px; top: 520px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.tile { aspect-ratio: 1 / 1; border-radius: 28px; overflow: hidden; background: #fff; box-shadow: 0 18px 40px rgba(0,0,0,.45); }
+.tile img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.chips { position: absolute; left: 80px; right: 80px; top: 560px; display: flex; flex-direction: column; gap: 30px; }
+.chip { display: flex; align-items: center; gap: 26px; background: rgba(255,255,255,.08); border: 2px solid rgba(255,255,255,.14); border-radius: 30px; padding: 28px 34px; font-size: 52px; font-weight: 700; }
+.chip b { display: inline-flex; width: 76px; height: 76px; border-radius: 22px; background: var(--acc2); color: #0b1520; align-items: center; justify-content: center; font-size: 44px; }
+.sub { z-index: 50; }
+.sub::before { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 520px; background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.78) 55%); }
+.subin { position: absolute; left: 60px; right: 60px; bottom: 150px; text-align: center; font-size: 50px; font-weight: 800; line-height: 1.25; text-shadow: 0 4px 18px rgba(0,0,0,.95), 0 0 2px #000; }
+.kw.hot { color: var(--acc2); }
+#top { z-index: 60; }
+#badge { position: absolute; left: 50%; top: 60px; transform: translateX(-50%); white-space: nowrap; display: flex; gap: 14px; align-items: center; font-size: 28px; font-weight: 800; letter-spacing: 2px; }
+#badge span { background: var(--acc); border-radius: 99px; padding: 8px 22px; }
+#badge i { font-style: normal; color: rgba(255,255,255,.85); }
+#prog { position: absolute; left: 0; top: 0; height: 8px; width: 1080px; background: var(--acc2); transform-origin: 0 50%; }
+#av { position: absolute; left: -40px; top: 1060px; width: 520px; height: 520px; z-index: 40; }
+#av img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 20px 40px rgba(0,0,0,.6)); }
+#avatar { z-index: 40; }
+</style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="30.59" data-width="1080" data-height="1920">
+      <div id="bg" class="clip" data-start="0" data-duration="30.59" data-track-index="0"></div>
+      <div id="s0" class="clip scene" data-start="0.35" data-duration="2.72" data-track-index="11"><div class="wallt" id="s0h">Mes projets en <mark>pub</mark></div><div class="wall"><div class="tile" id="s0t0"><img src="assets/m-foodeatup-caisse-mobile.jpg" /></div><div class="tile" id="s0t1"><img src="assets/m-rapidocrm.jpg" /></div><div class="tile" id="s0t2"><img src="assets/m-foodeatup-laboratoire.jpg" /></div><div class="tile" id="s0t3"><img src="assets/m-plan-it.jpg" /></div><div class="tile" id="s0t4"><img src="assets/m-application-haccp.jpg" /></div><div class="tile" id="s0t5"><img src="assets/m-citycar.jpg" /></div><div class="tile" id="s0t6"><img src="assets/m-rapidomeet.jpg" /></div><div class="tile" id="s0t7"><img src="assets/m-foodeatup-menu-digital.jpg" /></div><div class="tile" id="s0t8"><img src="assets/m-braindcode.jpg" /></div></div></div>
+      <div id="s1" class="clip scene" data-start="3.07" data-duration="2.44" data-track-index="12"><div class="card" id="s1c"><img src="assets/claude-construit.jpg" /></div><div class="word low" id="s1w">Construits avec <mark>l'IA</mark></div></div>
+      <div id="s2" class="clip scene" data-start="5.51" data-duration="3.84" data-track-index="13"><div class="wallt" id="s2h">Pour les <mark>restaurants</mark></div><div class="wall"><div class="tile" id="s2t0"><img src="assets/m-foodeatup-caisse-mobile.jpg" /></div><div class="tile" id="s2t1"><img src="assets/m-foodeatup-kds.jpg" /></div><div class="tile" id="s2t2"><img src="assets/m-application-haccp.jpg" /></div><div class="tile" id="s2t3"><img src="assets/m-foodeatup-fidelite.jpg" /></div><div class="tile" id="s2t4"><img src="assets/m-foodeatup-menu-digital.jpg" /></div><div class="tile" id="s2t5"><img src="assets/m-foodeatup-recettes.jpg" /></div></div></div>
+      <div id="s3" class="clip scene" data-start="9.35" data-duration="4.22" data-track-index="14"><div class="wallt" id="s3h">Pour les <mark>entreprises</mark></div><div class="wall"><div class="tile" id="s3t0"><img src="assets/m-rapidocrm.jpg" /></div><div class="tile" id="s3t1"><img src="assets/m-rapidomeet.jpg" /></div><div class="tile" id="s3t2"><img src="assets/m-rapidoin.jpg" /></div><div class="tile" id="s3t3"><img src="assets/m-webinaire-rapidocms.jpg" /></div><div class="tile" id="s3t4"><img src="assets/m-publisher-bot.jpg" /></div><div class="tile" id="s3t5"><img src="assets/m-plan-it.jpg" /></div></div></div>
+      <div id="s4" class="clip scene" data-start="13.57" data-duration="3.74" data-track-index="15"><div class="wallt" id="s4h">Et pour mes <mark>clients</mark></div><div class="wall"><div class="tile" id="s4t0"><img src="assets/m-citycar.jpg" /></div><div class="tile" id="s4t1"><img src="assets/m-salle-live.jpg" /></div><div class="tile" id="s4t2"><img src="assets/m-la-chaine-fraternelles.jpg" /></div><div class="tile" id="s4t3"><img src="assets/m-alto.jpg" /></div><div class="tile" id="s4t4"><img src="assets/m-coach-cuisine.jpg" /></div><div class="tile" id="s4t5"><img src="assets/m-plateforme-assurance.jpg" /></div></div></div>
+      <div id="s5" class="clip scene" data-start="17.31" data-duration="3.46" data-track-index="16"><div class="wallt" id="s5h">Chaque <mark>pub</mark></div><div class="chips"><div class="chip" id="s5c0"><b>1</b>Le problème</div><div class="chip" id="s5c1"><b>2</b>La solution</div><div class="chip" id="s5c2"><b>3</b>Comment l'essayer</div></div></div>
+      <div id="s6" class="clip scene" data-start="20.77" data-duration="3.08" data-track-index="17"><div class="hookt">Demain : la caisse dans la <mark>poche</mark></div><img class="mock" id="s6m" src="assets/mockup-mobile.png" /></div>
+      <div id="s7" class="clip scene reveal" data-start="23.85" data-duration="6.74" data-track-index="18"><div class="ctal" id="s7l"><img src="assets/michael-rond.png" /></div><div class="ctat" id="s7t">Ne rate aucun <mark>projet</mark></div>
+        <div class="btn" id="s7b">Abonne-toi</div><div class="url" id="s7u">michael.foodeatup.fr</div></div>
+      <div id="sub0" class="clip sub" data-start="0.35" data-duration="2.72" data-track-index="19"><div class="subin"><span class="kw" id="w0_0">Mes </span><span class="kw" id="w0_1">projets </span><span class="kw" id="w0_2">passent </span><span class="kw" id="w0_3">en </span><span class="kw hot" id="w0_4">pub. </span><span class="kw" id="w0_5">Chacun </span><span class="kw" id="w0_6">aura </span><span class="kw" id="w0_7">la </span><span class="kw" id="w0_8">sienne. </span></div></div>
+      <div id="sub1" class="clip sub" data-start="3.07" data-duration="2.44" data-track-index="20"><div class="subin"><span class="kw" id="w1_0">Depuis </span><span class="kw" id="w1_1">des </span><span class="kw" id="w1_2">mois, </span><span class="kw" id="w1_3">je </span><span class="kw" id="w1_4">construis </span><span class="kw" id="w1_5">des </span><span class="kw" id="w1_6">outils </span><span class="kw" id="w1_7">avec </span><span class="kw" id="w1_8">l'IA. </span></div></div>
+      <div id="sub2" class="clip sub" data-start="5.51" data-duration="3.84" data-track-index="21"><div class="subin"><span class="kw" id="w2_0">Pour </span><span class="kw" id="w2_1">les </span><span class="kw hot" id="w2_2">restaurants </span><span class="kw" id="w2_3">la </span><span class="kw hot" id="w2_4">caisse, </span><span class="kw" id="w2_5">la </span><span class="kw" id="w2_6">cuisine, </span><span class="kw" id="w2_7">l'hygiène </span><span class="kw" id="w2_8">et </span><span class="kw" id="w2_9">la </span><span class="kw" id="w2_10">fidélité. </span></div></div>
+      <div id="sub3" class="clip sub" data-start="9.35" data-duration="4.22" data-track-index="22"><div class="subin"><span class="kw" id="w3_0">Pour </span><span class="kw" id="w3_1">les </span><span class="kw hot" id="w3_2">entreprises </span><span class="kw" id="w3_3">les </span><span class="kw hot" id="w3_4">clients, </span><span class="kw" id="w3_5">les </span><span class="kw" id="w3_6">réseaux </span><span class="kw" id="w3_7">sociaux, </span><span class="kw" id="w3_8">les </span><span class="kw" id="w3_9">réunions </span><span class="kw" id="w3_10">et </span><span class="kw" id="w3_11">les </span><span class="kw" id="w3_12">webinaires. </span></div></div>
+      <div id="sub4" class="clip sub" data-start="13.57" data-duration="3.74" data-track-index="23"><div class="subin"><span class="kw" id="w4_0">Et </span><span class="kw" id="w4_1">des </span><span class="kw" id="w4_2">sites </span><span class="kw" id="w4_3">pour </span><span class="kw" id="w4_4">mes </span><span class="kw hot" id="w4_5">clients </span><span class="kw" id="w4_6">des </span><span class="kw" id="w4_7">chauffeurs, </span><span class="kw" id="w4_8">un </span><span class="kw" id="w4_9">club </span><span class="kw" id="w4_10">de </span><span class="kw" id="w4_11">plage, </span><span class="kw" id="w4_12">une </span><span class="kw" id="w4_13">association. </span></div></div>
+      <div id="sub5" class="clip sub" data-start="17.31" data-duration="3.46" data-track-index="24"><div class="subin"><span class="kw" id="w5_0">Chaque </span><span class="kw hot" id="w5_1">pub </span><span class="kw" id="w5_2">montre </span><span class="kw" id="w5_3">le </span><span class="kw hot" id="w5_4">problème, </span><span class="kw" id="w5_5">la </span><span class="kw hot" id="w5_6">solution, </span><span class="kw" id="w5_7">et </span><span class="kw" id="w5_8">comment </span><span class="kw" id="w5_9">l'essayer. </span></div></div>
+      <div id="sub6" class="clip sub" data-start="20.77" data-duration="3.08" data-track-index="25"><div class="subin"><span class="kw hot" id="w6_0">Demain, </span><span class="kw" id="w6_1">on </span><span class="kw" id="w6_2">commence </span><span class="kw" id="w6_3">par </span><span class="kw" id="w6_4">la </span><span class="kw hot" id="w6_5">caisse </span><span class="kw" id="w6_6">qui </span><span class="kw" id="w6_7">tient </span><span class="kw" id="w6_8">dans </span><span class="kw" id="w6_9">la </span><span class="kw hot" id="w6_10">poche </span><span class="kw" id="w6_11">des </span><span class="kw" id="w6_12">équipiers. </span></div></div>
+      <div id="sub7" class="clip sub" data-start="23.85" data-duration="6.74" data-track-index="26"><div class="subin"><span class="kw" id="w7_0">De </span><span class="kw hot" id="w7_1">nouveaux </span><span class="kw" id="w7_2">projets </span><span class="kw" id="w7_3">arrivent </span><span class="kw hot" id="w7_4">abonne-toi </span><span class="kw" id="w7_5">pour </span><span class="kw" id="w7_6">n'en </span><span class="kw" id="w7_7">rater </span><span class="kw" id="w7_8">aucun. </span></div></div>
+      <div id="avatar" class="clip" data-start="0" data-duration="30.59" data-track-index="90" data-layout-allow-overflow><div id="av"><img id="av5" src="assets/avatar-04-presentation.png" /><img id="av7" src="assets/avatar-10-celebration.png" /></div></div>
+      <div id="top" class="clip" data-start="0" data-duration="30.59" data-track-index="80"><div id="prog"></div><div id="badge"><span>MES PROJETS EN PUB · INTRO</span><i>ÉPISODE 93</i></div></div>
+      <audio id="voix" src="voix/voix.mp3" data-start="0.35" data-duration="29.04" data-track-index="95" data-volume="1"></audio>
+      <audio id="musique" src="assets/musique.mp3" data-start="0" data-duration="30.59" data-track-index="96" data-volume="0.12"></audio>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const E = "power3.out";
+      tl.fromTo("#prog", {scaleX: 0}, {scaleX: 1, duration: 30.59, ease: "none"}, 0);
+      tl.fromTo("#s0h", {y: 50, opacity: 0}, {y: 0, opacity: 1, duration: .45, ease: E}, 0.40);
+      tl.fromTo("#s0t0", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 0.55);
+      tl.fromTo("#s0t1", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 0.63);
+      tl.fromTo("#s0t2", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 0.71);
+      tl.fromTo("#s0t3", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 0.79);
+      tl.fromTo("#s0t4", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 0.87);
+      tl.fromTo("#s0t5", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 0.95);
+      tl.fromTo("#s0t6", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 1.03);
+      tl.fromTo("#s0t7", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 1.11);
+      tl.fromTo("#s0t8", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 1.19);
+      tl.fromTo("#s1c", {rotationY: 70, opacity: 0, scale: .8}, {rotationY: 0, opacity: 1, scale: 1, duration: .8, ease: E}, 3.12);
+      tl.fromTo("#s1w", {y: 40, opacity: 0}, {y: 0, opacity: 1, duration: .4, ease: E}, 3.57);
+      tl.fromTo("#s2h", {y: 50, opacity: 0}, {y: 0, opacity: 1, duration: .45, ease: E}, 5.56);
+      tl.fromTo("#s2t0", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 5.71);
+      tl.fromTo("#s2t1", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 5.79);
+      tl.fromTo("#s2t2", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 5.87);
+      tl.fromTo("#s2t3", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 5.95);
+      tl.fromTo("#s2t4", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 6.03);
+      tl.fromTo("#s2t5", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 6.11);
+      tl.fromTo("#s3h", {y: 50, opacity: 0}, {y: 0, opacity: 1, duration: .45, ease: E}, 9.40);
+      tl.fromTo("#s3t0", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 9.55);
+      tl.fromTo("#s3t1", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 9.63);
+      tl.fromTo("#s3t2", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 9.71);
+      tl.fromTo("#s3t3", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 9.79);
+      tl.fromTo("#s3t4", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 9.87);
+      tl.fromTo("#s3t5", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 9.95);
+      tl.fromTo("#s4h", {y: 50, opacity: 0}, {y: 0, opacity: 1, duration: .45, ease: E}, 13.62);
+      tl.fromTo("#s4t0", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 13.77);
+      tl.fromTo("#s4t1", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 13.85);
+      tl.fromTo("#s4t2", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 13.93);
+      tl.fromTo("#s4t3", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 14.01);
+      tl.fromTo("#s4t4", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 14.09);
+      tl.fromTo("#s4t5", {scale: 0, opacity: 0, rotationY: 90}, {scale: 1, opacity: 1, rotationY: 0, duration: .45, ease: "back.out(1.6)"}, 14.17);
+      tl.fromTo("#s5h", {y: 50, opacity: 0}, {y: 0, opacity: 1, duration: .45, ease: E}, 17.36);
+      tl.fromTo("#s5c0", {x: -500, opacity: 0}, {x: 0, opacity: 1, duration: .4, ease: E}, 17.66);
+      tl.fromTo("#s5c1", {x: -500, opacity: 0}, {x: 0, opacity: 1, duration: .4, ease: E}, 18.11);
+      tl.fromTo("#s5c2", {x: -500, opacity: 0}, {x: 0, opacity: 1, duration: .4, ease: E}, 18.56);
+      tl.fromTo("#s6 .hookt", {y: 60, opacity: 0}, {y: 0, opacity: 1, duration: .5, ease: E}, 20.82);
+      tl.fromTo("#s6m", {y: 700, rotationX: 35, rotationY: -20, opacity: 0}, {y: 0, rotationX: 0, rotationY: 0, opacity: 1, duration: 1.0, ease: E}, 21.02);
+      tl.to("#s6m", {rotationY: 8, y: -20, duration: 3.08, ease: "sine.inOut"}, 22.02);
+      tl.fromTo("#s7l", {y: -60, opacity: 0}, {y: 0, opacity: 1, duration: .5, ease: E}, 23.90);
+      tl.fromTo("#s7t", {scale: .7, opacity: 0}, {scale: 1, opacity: 1, duration: .5, ease: "back.out(1.8)"}, 24.10);
+      tl.fromTo("#s7b", {y: 60, opacity: 0}, {y: 0, opacity: 1, duration: .45, ease: E}, 24.45);
+      tl.to("#s7b", {scale: 1.06, duration: .45, ease: "sine.inOut", yoyo: true, repeat: 13}, 24.95);
+      tl.fromTo("#s7u", {opacity: 0}, {opacity: 1, duration: .4}, 24.75);
+      tl.fromTo("#w0_0", {opacity: .35}, {opacity: 1, duration: .08}, 0.35);
+      tl.fromTo("#w0_1", {opacity: .35}, {opacity: 1, duration: .08}, 0.49);
+      tl.fromTo("#w0_2", {opacity: .35}, {opacity: 1, duration: .08}, 0.79);
+      tl.fromTo("#w0_3", {opacity: .35}, {opacity: 1, duration: .08}, 1.17);
+      tl.fromTo("#w0_4", {opacity: .35}, {opacity: 1, duration: .08}, 1.25);
+      tl.fromTo("#w0_5", {opacity: .35}, {opacity: 1, duration: .08}, 1.81);
+      tl.fromTo("#w0_6", {opacity: .35}, {opacity: 1, duration: .08}, 2.11);
+      tl.fromTo("#w0_7", {opacity: .35}, {opacity: 1, duration: .08}, 2.31);
+      tl.fromTo("#w0_8", {opacity: .35}, {opacity: 1, duration: .08}, 2.45);
+      tl.fromTo("#w1_0", {opacity: .35}, {opacity: 1, duration: .08}, 3.07);
+      tl.fromTo("#w1_1", {opacity: .35}, {opacity: 1, duration: .08}, 3.33);
+      tl.fromTo("#w1_2", {opacity: .35}, {opacity: 1, duration: .08}, 3.49);
+      tl.fromTo("#w1_3", {opacity: .35}, {opacity: 1, duration: .08}, 3.89);
+      tl.fromTo("#w1_4", {opacity: .35}, {opacity: 1, duration: .08}, 3.99);
+      tl.fromTo("#w1_5", {opacity: .35}, {opacity: 1, duration: .08}, 4.41);
+      tl.fromTo("#w1_6", {opacity: .35}, {opacity: 1, duration: .08}, 4.49);
+      tl.fromTo("#w1_7", {opacity: .35}, {opacity: 1, duration: .08}, 4.83);
+      tl.fromTo("#w1_8", {opacity: .35}, {opacity: 1, duration: .08}, 5.01);
+      tl.fromTo("#w2_0", {opacity: .35}, {opacity: 1, duration: .08}, 5.51);
+      tl.fromTo("#w2_1", {opacity: .35}, {opacity: 1, duration: .08}, 5.65);
+      tl.fromTo("#w2_2", {opacity: .35}, {opacity: 1, duration: .08}, 5.77);
+      tl.fromTo("#w2_3", {opacity: .35}, {opacity: 1, duration: .08}, 6.51);
+      tl.fromTo("#w2_4", {opacity: .35}, {opacity: 1, duration: .08}, 6.61);
+      tl.fromTo("#w2_5", {opacity: .35}, {opacity: 1, duration: .08}, 7.15);
+      tl.fromTo("#w2_6", {opacity: .35}, {opacity: 1, duration: .08}, 7.23);
+      tl.fromTo("#w2_7", {opacity: .35}, {opacity: 1, duration: .08}, 7.95);
+      tl.fromTo("#w2_8", {opacity: .35}, {opacity: 1, duration: .08}, 8.39);
+      tl.fromTo("#w2_9", {opacity: .35}, {opacity: 1, duration: .08}, 8.55);
+      tl.fromTo("#w2_10", {opacity: .35}, {opacity: 1, duration: .08}, 8.67);
+      tl.fromTo("#w3_0", {opacity: .35}, {opacity: 1, duration: .08}, 9.35);
+      tl.fromTo("#w3_1", {opacity: .35}, {opacity: 1, duration: .08}, 9.47);
+      tl.fromTo("#w3_2", {opacity: .35}, {opacity: 1, duration: .08}, 9.61);
+      tl.fromTo("#w3_3", {opacity: .35}, {opacity: 1, duration: .08}, 10.43);
+      tl.fromTo("#w3_4", {opacity: .35}, {opacity: 1, duration: .08}, 10.51);
+      tl.fromTo("#w3_5", {opacity: .35}, {opacity: 1, duration: .08}, 11.11);
+      tl.fromTo("#w3_6", {opacity: .35}, {opacity: 1, duration: .08}, 11.19);
+      tl.fromTo("#w3_7", {opacity: .35}, {opacity: 1, duration: .08}, 11.45);
+      tl.fromTo("#w3_8", {opacity: .35}, {opacity: 1, duration: .08}, 12.05);
+      tl.fromTo("#w3_9", {opacity: .35}, {opacity: 1, duration: .08}, 12.13);
+      tl.fromTo("#w3_10", {opacity: .35}, {opacity: 1, duration: .08}, 12.61);
+      tl.fromTo("#w3_11", {opacity: .35}, {opacity: 1, duration: .08}, 12.77);
+      tl.fromTo("#w3_12", {opacity: .35}, {opacity: 1, duration: .08}, 12.87);
+      tl.fromTo("#w4_0", {opacity: .35}, {opacity: 1, duration: .08}, 13.57);
+      tl.fromTo("#w4_1", {opacity: .35}, {opacity: 1, duration: .08}, 13.65);
+      tl.fromTo("#w4_2", {opacity: .35}, {opacity: 1, duration: .08}, 13.81);
+      tl.fromTo("#w4_3", {opacity: .35}, {opacity: 1, duration: .08}, 13.95);
+      tl.fromTo("#w4_4", {opacity: .35}, {opacity: 1, duration: .08}, 14.13);
+      tl.fromTo("#w4_5", {opacity: .35}, {opacity: 1, duration: .08}, 14.25);
+      tl.fromTo("#w4_6", {opacity: .35}, {opacity: 1, duration: .08}, 14.77);
+      tl.fromTo("#w4_7", {opacity: .35}, {opacity: 1, duration: .08}, 14.87);
+      tl.fromTo("#w4_8", {opacity: .35}, {opacity: 1, duration: .08}, 15.53);
+      tl.fromTo("#w4_9", {opacity: .35}, {opacity: 1, duration: .08}, 15.61);
+      tl.fromTo("#w4_10", {opacity: .35}, {opacity: 1, duration: .08}, 15.79);
+      tl.fromTo("#w4_11", {opacity: .35}, {opacity: 1, duration: .08}, 16.13);
+      tl.fromTo("#w4_12", {opacity: .35}, {opacity: 1, duration: .08}, 16.47);
+      tl.fromTo("#w4_13", {opacity: .35}, {opacity: 1, duration: .08}, 16.57);
+      tl.fromTo("#w5_0", {opacity: .35}, {opacity: 1, duration: .08}, 17.31);
+      tl.fromTo("#w5_1", {opacity: .35}, {opacity: 1, duration: .08}, 17.63);
+      tl.fromTo("#w5_2", {opacity: .35}, {opacity: 1, duration: .08}, 17.85);
+      tl.fromTo("#w5_3", {opacity: .35}, {opacity: 1, duration: .08}, 18.13);
+      tl.fromTo("#w5_4", {opacity: .35}, {opacity: 1, duration: .08}, 18.35);
+      tl.fromTo("#w5_5", {opacity: .35}, {opacity: 1, duration: .08}, 19.01);
+      tl.fromTo("#w5_6", {opacity: .35}, {opacity: 1, duration: .08}, 19.11);
+      tl.fromTo("#w5_7", {opacity: .35}, {opacity: 1, duration: .08}, 19.49);
+      tl.fromTo("#w5_8", {opacity: .35}, {opacity: 1, duration: .08}, 19.89);
+      tl.fromTo("#w5_9", {opacity: .35}, {opacity: 1, duration: .08}, 20.13);
+      tl.fromTo("#w6_0", {opacity: .35}, {opacity: 1, duration: .08}, 20.77);
+      tl.fromTo("#w6_1", {opacity: .35}, {opacity: 1, duration: .08}, 21.27);
+      tl.fromTo("#w6_2", {opacity: .35}, {opacity: 1, duration: .08}, 21.35);
+      tl.fromTo("#w6_3", {opacity: .35}, {opacity: 1, duration: .08}, 21.65);
+      tl.fromTo("#w6_4", {opacity: .35}, {opacity: 1, duration: .08}, 21.79);
+      tl.fromTo("#w6_5", {opacity: .35}, {opacity: 1, duration: .08}, 21.95);
+      tl.fromTo("#w6_6", {opacity: .35}, {opacity: 1, duration: .08}, 22.25);
+      tl.fromTo("#w6_7", {opacity: .35}, {opacity: 1, duration: .08}, 22.37);
+      tl.fromTo("#w6_8", {opacity: .35}, {opacity: 1, duration: .08}, 22.59);
+      tl.fromTo("#w6_9", {opacity: .35}, {opacity: 1, duration: .08}, 22.71);
+      tl.fromTo("#w6_10", {opacity: .35}, {opacity: 1, duration: .08}, 22.81);
+      tl.fromTo("#w6_11", {opacity: .35}, {opacity: 1, duration: .08}, 23.05);
+      tl.fromTo("#w6_12", {opacity: .35}, {opacity: 1, duration: .08}, 23.15);
+      tl.fromTo("#w7_0", {opacity: .35}, {opacity: 1, duration: .08}, 23.85);
+      tl.fromTo("#w7_1", {opacity: .35}, {opacity: 1, duration: .08}, 23.93);
+      tl.fromTo("#w7_2", {opacity: .35}, {opacity: 1, duration: .08}, 24.15);
+      tl.fromTo("#w7_3", {opacity: .35}, {opacity: 1, duration: .08}, 24.45);
+      tl.fromTo("#w7_4", {opacity: .35}, {opacity: 1, duration: .08}, 25.05);
+      tl.fromTo("#w7_5", {opacity: .35}, {opacity: 1, duration: .08}, 25.55);
+      tl.fromTo("#w7_6", {opacity: .35}, {opacity: 1, duration: .08}, 25.73);
+      tl.fromTo("#w7_7", {opacity: .35}, {opacity: 1, duration: .08}, 25.89);
+      tl.fromTo("#w7_8", {opacity: .35}, {opacity: 1, duration: .08}, 26.13);
+      gsap.set("#av5", {opacity: 0});
+      tl.fromTo("#av5", {opacity: 0, y: 260}, {opacity: 1, y: 0, duration: .5, ease: "back.out(1.5)"}, 17.46);
+      tl.to("#av5", {opacity: 0, y: 260, duration: .35, ease: "power2.in"}, 20.42);
+      gsap.set("#av7", {opacity: 0});
+      tl.fromTo("#av7", {opacity: 0, y: 260}, {opacity: 1, y: 0, duration: .5, ease: "back.out(1.5)"}, 24.00);
+      tl.to("#av7", {opacity: 0, y: 260, duration: .35, ease: "power2.in"}, 30.24);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

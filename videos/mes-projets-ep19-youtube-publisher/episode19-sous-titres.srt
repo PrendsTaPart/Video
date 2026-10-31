@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:01,990
+Gère ta chaîne YouTube comme un pro.
+
+2
+00:00:02,310 --> 00:00:04,210
+Voici Publisher Bot, un de mes projets.
+
+3
+00:00:04,530 --> 00:00:06,530
+Les miniatures et les titres sont préparés pour toi.
+
+4
+00:00:06,710 --> 00:00:08,290
+Il surveille les tendances de ton sujet.
+
+5
+00:00:08,510 --> 00:00:09,850
+Il découpe tes vidéos en Shorts.
+
+6
+00:00:10,170 --> 00:00:12,770
+Il publie partout, puis il lit les vrais résultats.
+
+7
+00:00:12,910 --> 00:00:14,910
+Tu lui parles depuis ton assistant, il fait le reste.
+
+8
+00:00:15,210 --> 00:00:17,940
+Le lien est sous la vidéo : clique sur « Voir le projet ».

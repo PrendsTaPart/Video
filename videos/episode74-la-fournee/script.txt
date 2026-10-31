@@ -1,0 +1,11 @@
+Il jetait des baguettes tous les dimanches.
+Ce boulanger faisait la même fournée que son père, tous les jours.
+Alors on a relu sa caisse de toute l'année.
+Quand il pleut, il vend moins : ses clients restent chez eux.
+Et le jour où la boulangerie d'en face est fermée, il n'a plus de pain avant midi.
+D'un côté il jette, de l'autre il rate des ventes.
+Maintenant, chaque soir, sa caisse et la météo calculent la fournée du lendemain.
+Le matin, la bonne quantité l'attend.
+Lui sait faire le pain. Sa caisse sait combien en faire.
+C'est exactement l'idée de la prévision dans FoodEatUp.
+Écris FOURNÉE en commentaire, je t'envoie la méthode pour le faire avec Claude.

@@ -1,0 +1,8 @@
+Mon assistant IA publie mes applications sur Google Play.
+Voici ReleaseSync, un de mes projets.
+Un tableau de bord montre chaque application et sa version.
+Les notes de version et les étapes de publication sont au même endroit.
+L'assistant prépare la mise en ligne, et fait d'abord un essai.
+Rien ne part sans mon accord.
+Et chaque action est notée : quoi, quand, et par qui.
+Le lien est sous la vidéo : clique sur « Voir le projet ».

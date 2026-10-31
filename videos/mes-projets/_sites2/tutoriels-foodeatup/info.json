@@ -1,0 +1,45 @@
+{
+ "url": "https://tutoriel.foodeatup.com/",
+ "title": "Gérer son restaurant avec l’IA | Académie FoodEatUp",
+ "desc": "Apprenez à gérer votre restaurant avec FoodEatUp : tutoriels vidéo sur le stock, l'HACCP, les plannings, les ventes en ligne et les agents IA.",
+ "og": "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/d8d7725d-2fdb-4ac8-970e-8c3a5f19412a",
+ "h1": [
+  "Apprenez à gérer votre restaurant sans double saisie, avec l'IA"
+ ],
+ "h2": [
+  "Vous travaillez en… ?",
+  "Une journée avec FoodEatUp",
+  "Votre restaurant ne devrait pas fonctionner avec dix fichiers différents",
+  "Une journée de service, de bout en bout",
+  "Ce que FoodEatUp change au quotidien",
+  "Premiers pas",
+  "Les huit boucles de votre restaurant",
+  "Tout le catalogue, module par module",
+  "Derniers tutoriels ajoutés",
+  "Votre équipe peut parler à FoodEatUp",
+  "Pilotez FoodEatUp depuis Claude, ChatGPT ou Mistral",
+  "Formez-vous avec Claude, Le Chat ou ChatGPT",
+  "Ce que ça change en salle et en cuisine",
+  "Une documentation conçue pour le terrain"
+ ],
+ "bg": "oklch(0.979 0.025 99.5)",
+ "font": "Inter, ui-sans-serif, system-ui, sans-serif",
+ "btn": [
+  [
+   "oklch(1 0 0)",
+   9
+  ],
+  [
+   "oklch(0.793 0.171 70.7)",
+   2
+  ],
+  [
+   "oklch(0.605 0.217 257.2)",
+   2
+  ]
+ ],
+ "text": "CENTRE DE DOCUMENTATION VIDÉO FOODEATUP\nBESOIN D'AIDE ?\nSITE OFFICIEL\nModules\nPremiers pas\nParcours\nFormation IA\nAPI\nContact\nSe connecter\nInscription\nPOPULAIRES\nConfiguration Boutique\nStockVision AI\nHygiène & HACCP\nÉquipe, Planning & RH\nPrediBot (Agent IA Directeur)\nLe mode d'emploi du restaurant qui se gère tout seul\nApprenez à gérer votre restaurant sans double saisie, avec l'IA\nUne saisie, pas dix : les données circulent dans tout le restaurant. 173 tutoriels vidéo en ligne, courts pour brancher chaque boucle — carte, équipe, stock, HACCP, ventes en ligne, fidélité, comptabilité.\nVous êtes sur le centre de formation FoodEatUp. Le logiciel, ses tarifs et l'essai gratuit sont sur le site officiel.\nDécouvrir les 8 boucles\nVoir la démonstration\nEssayer 7 jours gratuitement\nSe connecter\n173 vidéos en ligne sur 230\n75 %\nLe catalogue s'enrichit chaque semaine, module par module.\nVous travaillez en… ?\nOn réorganise la page pour vous.\nVoir tout le catalogue\nChef de cuisine\n07h00 → 23h00\nSecond de cuisine\n07h00 → 22h00\nCommis\n08h00 → 16h00\nPlongeur / polyvalent\n10h00 → 23h00\nResponsable de salle\n09h30 → 23h00\nChef de rang\n11h00 → 23h00\nBarman\n16h00 → 01h00\nDirecteur / gérant\n08h00 → 18h00\nFranchisé\n08h30 → 19h00\nChef de restaurant\n09h00 → 23h00\nBoulanger\n04h00 → 13h00\nPâtissier / tourier\n04h00 → 11h00\nVendeur en boutique\n07h30 → 19h00\nResponsable de boulangerie\n04h00 → 19h00\nAnimateur de réseau\n07h30 → 17h00\nResponsable multi-sites\n07h30 → 19h00\nDéveloppeur / intégrateur\n09h00 → 18h00\nFormateur FoodEatUp\n08h00 → 20h00\nRevendeur FoodEatUp\n08h00 → 20h00\nInstallateur de caisse\n14h00 → 20h00\nApporteur d'affaires\n08h00 → 20h00\nClient du restaurant\n11h30 → 22h15\nPARCOURS MÉTIER\nUne journée avec FoodEatUp\nLes mêmes vidéos, rangées dans l'ordre où votre journée les réclame — de la première température au dernier ticket.\nVoir tous les parcours\nEN CUISINE\nLa journée du chef\nAvant le service · Pendant le service · Après le service\n07h00 → 23h00 · 46 étapes\nEN SALLE\nLa journée du responsable de salle\nAvant le service · Pendant le service · Après le service\n09h30 → 23h00 · 32 étapes\nAU BUREAU\nLa journée du directeur\nAvant le service · Pendant le service · Après le service\n08h00 → 18h00 · 29 étapes\nAU FOURNIL\nLa journée du boulanger\nAvant le service · Pendant le service · Après le service\n04h00 → 19h00 · 44 étapes\nAU SIÈGE\nLa journée du pilotage multi-sites\nAvant le service · Pendant le service · Après le service\n07h30 → 19h00 · 39 étapes\nAU POSTE DE TRAVAIL\nLa journée du développeur\nAvant le service · Pendant le service · Après le service\n09h00 → 18h00 · 10 étapes\nSUR LE TERRAIN\nLa journée du partenaire FoodEatUp\nAvant le service · Pendant le service · Après le service\n08h00 → 20h00 · 26 étapes\nAU RESTAURANT\nLa journée du client\nAvant le service · Pendant le service · Après le service\n11h30 → 22h15 · 10 étapes\nVotre restaurant ne devrait pas fonctionner avec dix fichiers différents\nLa caisse ne parle pas au stock.\nVous vendez toute la journée, mais vos quantités réelles ne bougent nulle part.\nLes achats, les recettes et la production sont recopiés plusieurs fois.\nLe même produit est saisi dans un tableur, dans un carnet, puis dans un logiciel.\nLes contrôles HACCP et les chiffres du jour sont préparés dans l'urgence.\nLa conformité et la clôture se règlent le soir, ou la veille d'un contrôle.\nFoodEatUp referme ces boucles et transforme vos données opérationnelles en actions concrètes.\nUne journée de service, de bout en bout\nCinq minutes pour voir la commande",
+ "height": 22801,
+ "ok": true,
+ "rec_s": 69.15
+}

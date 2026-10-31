@@ -1,0 +1,35 @@
+1
+00:00:00,350 --> 00:00:03,090
+Plus ta conversation avec Claude est longue, plus il se fatigue.
+
+2
+00:00:03,410 --> 00:00:06,290
+À chaque message, il relit toute la conversation depuis le début.
+
+3
+00:00:06,510 --> 00:00:08,050
+C'est pour ça que ta limite arrive si vite.
+
+4
+00:00:08,330 --> 00:00:10,450
+Et plus c'est long, moins les réponses sont bonnes.
+
+5
+00:00:10,530 --> 00:00:13,690
+La solution : un petit compteur, affiché en bas de Claude Code.
+
+6
+00:00:14,030 --> 00:00:15,050
+Vert : tu continues.
+
+7
+00:00:15,250 --> 00:00:18,510
+Rouge : tu demandes un résumé, et tu repars dans une nouvelle conversation.
+
+8
+00:00:18,830 --> 00:00:20,890
+Tu gardes l'essentiel, tu laisses le superflu.
+
+9
+00:00:21,110 --> 00:00:23,790
+Écris COMPTEUR en commentaire, je t'envoie comment l'installer.

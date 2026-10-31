@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --ground: #0f1a23;
+        --ground2: #0b2f57;
+        --ink: #ffffff;
+        --mute: #aeb8c2;
+        --accent: #ffa500;
+        --blue: #0a7bff;
+        --font-display: Poppins, sans-serif;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--ground); }
+      #root { position: relative; width: 1080px; height: 1920px; font-family: var(--font-display); color: var(--ink); overflow: hidden; }
+      .clip { position: absolute; inset: 0; }
+      #bg { background: radial-gradient(circle at 50% 62%, #13406f 0%, var(--ground2) 30%, var(--ground) 72%); }
+      #glow { position: absolute; left: 240px; top: 720px; width: 600px; height: 840px; border-radius: 50%; background: radial-gradient(closest-side, rgba(10,123,255,.35), rgba(10,123,255,0)); }
+      /* Téléphone au format Note 10 : écran bord à bord, caméra poinçonnée centrée */
+      #phoneWrap { position: absolute; left: 335px; top: 830px; width: 410px; height: 860px; }
+      #phone { position: absolute; inset: 0; border-radius: 54px; background: linear-gradient(145deg, #2a2f3a, #07090c 60%); padding: 9px; box-shadow: 0 50px 120px rgba(0,0,0,.6), inset 0 0 0 2px rgba(255,255,255,.08); }
+      #screen { position: relative; width: 100%; height: 100%; border-radius: 46px; overflow: hidden; background: #000; }
+      #screen > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+      #s0 { position: absolute; inset: 0; background: #f5f4ee; color: #1f1e1d; font-family: Inter, sans-serif; padding: 70px 20px 0; font-size: 17.2px; line-height: 1.38; }
+      #s0 .hd { display: flex; justify-content: center; padding-bottom: 12px; border-bottom: 1px solid #e3e0d6; }
+      #s0 .hd img { height: 23px; }
+      #s0 .rec { position: absolute; right: 20px; top: 39px; font-size: 10.7px; color: #8a8576; border: 1px solid #d6d1c4; border-radius: 99px; padding: 1px 8px; }
+      #s0 .ub { margin: 20px 0 0 auto; width: 82%; background: #e8e4d8; border-radius: 18px; padding: 12px 16px; }
+      #s0 .rp { margin-top: 18px; }
+      #s0 .art { margin-top: 16px; border: 1px solid #ddd8cb; border-radius: 16px; overflow: hidden; background: #fff; }
+      #s0 .ah { display: flex; justify-content: space-between; padding: 10px 14px; font-weight: 700; font-size: 14.8px; }
+      #s0 .ah span { font-weight: 600; font-size: 12.3px; color: #c96442; background: #fbe9e2; border-radius: 99px; padding: 1px 8px; }
+      #s0 .art img { width: 100%; display: block; }
+      #s0 .inp { position: absolute; left: 20px; right: 20px; bottom: 29px; display: flex; justify-content: space-between; align-items: center; background: #fff; border: 1px solid #ddd8cb; border-radius: 25px; padding: 12px 16px; color: #9a958a; }
+      #s0 .inp b { width: 31px; height: 31px; border-radius: 50%; background: #d97757; display: inline-block; }
+      #punch { position: absolute; left: 50%; top: 18px; width: 18px; height: 18px; margin-left: -9px; border-radius: 50%; background: #05070a; box-shadow: 0 0 0 3px #11151b; z-index: 5; }
+      .logo { position: absolute; width: 132px; height: 132px; border-radius: 30px; background: #fff; display: flex; align-items: center; justify-content: center; padding: 16px; box-shadow: 0 20px 50px rgba(0,0,0,.45); }
+      .logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+      #stack { position: absolute; left: 90px; top: 170px; width: 900px; }
+      .line { font-weight: 800; letter-spacing: -2px; line-height: 1.12; }
+      #l1 { font-size: 64px; }
+      #l2 { font-size: 96px; margin-top: 6px; }
+      mark { background: var(--accent); color: #0b1520; border-radius: 18px; padding: 0 18px; }
+      #sub { margin-top: 36px; width: 820px; font-size: 34px; font-weight: 500; color: var(--mute); }
+      .count { position: absolute; left: 90px; font-weight: 800; }
+      .count b { font-size: 150px; letter-spacing: -4px; color: var(--ink); }
+      .count span { font-size: 54px; color: var(--accent); margin-left: 22px; }
+      #c1 { top: 150px; }
+      #c2 { top: 350px; }
+      #note { position: absolute; left: 90px; top: 590px; width: 900px; font-size: 44px; font-weight: 700; }
+      #me { position: absolute; left: 90px; top: 150px; display: flex; flex-direction: column; align-items: flex-start; gap: 30px; }
+      #me .ph { width: 260px; height: 260px; border-radius: 50%; border: 12px solid var(--blue); overflow: hidden; background: #eee; }
+      #me .ph img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+      #me h2 { font-size: 64px; font-weight: 800; letter-spacing: -1px; }
+      #me p { display: inline-block; margin-top: 18px; background: var(--blue); color: #fff; font-size: 28px; font-weight: 700; letter-spacing: 2px; padding: 10px 22px; border-radius: 999px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="16" data-width="1080" data-height="1920">
+      <div id="bg" class="clip" data-start="0" data-duration="16" data-track-index="0"><div id="glow"></div></div>
+
+      <div id="phoneLayer" class="clip" data-start="0" data-duration="16" data-track-index="1" data-layout-allow-overlap>
+        <div id="phoneWrap">
+          <div id="phone">
+            <div id="screen">
+              <div id="punch"></div>
+              <div id="s0"><div class="hd"><img src="assets/logo-claude.webp" alt="Claude" /></div><span class="rec">reconstitution</span>
+                <div class="ub">Construis-moi une caisse pour mon restaurant, sur le téléphone de mes équipiers.</div>
+                <div class="rp">Je m'en occupe. Commande à table, envoi en cuisine, addition même sans réseau. Voici ta caisse :</div>
+                <div class="art"><div class="ah">FoodEatUp Caisse Mobile<span>Aperçu</span></div><img src="assets/d-caisse.jpg" alt="Écran réel de FoodEatUp Caisse Mobile" /></div>
+                <div class="inp">Répondre à Claude…<b></b></div></div>
+              <img id="s1" src="assets/ecran-rapidocrm.jpg" alt="RapidoCRM" />
+              <img id="s2" src="assets/ecran-application-haccp.jpg" alt="FoodEatUp HACCP" />
+              <img id="s3" src="assets/ecran-plan-it.jpg" alt="Plan'It" />
+              <img id="s4" src="assets/ecran-rapidomeet.jpg" alt="RapidoMeet" />
+              <img id="s5" src="assets/ecran-foodeatup-menu-digital.jpg" alt="Menu digital" />
+              <img id="s6" src="assets/ecran-citycar.jpg" alt="CityCar" />
+              <img id="s7" src="assets/ecran-foodeatup-kds.jpg" alt="FoodEatUp KDS" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="logos" class="clip" data-start="3" data-duration="12.6" data-track-index="2" data-layout-allow-overlap>
+        <div class="logo" id="g0" style="left:110px;top:900px"><img src="assets/logo-foodeatup.webp" alt="FoodEatUp" /></div>
+        <div class="logo" id="g1" style="left:838px;top:900px"><img src="assets/logo-rapidocrm.webp" alt="RapidoCRM" /></div>
+        <div class="logo" id="g2" style="left:80px;top:1240px"><img src="assets/logo-planit.webp" alt="Plan'It" /></div>
+        <div class="logo" id="g3" style="left:868px;top:1240px"><img src="assets/logo-rapidocms.webp" alt="RapidoCMS" /></div>
+        <div class="logo" id="g4" style="left:110px;top:1560px"><img src="assets/logo-braindcode.webp" alt="BraindCode" /></div>
+        <div class="logo" id="g5" style="left:838px;top:1560px"><img src="assets/logo-rapidosoftware.png" alt="RapidoSoftware" /></div>
+      </div>
+
+      <div id="hookText" class="clip" data-start="0" data-duration="9" data-track-index="3">
+        <div id="stack">
+          <div class="line" id="l1">Tout ce que vous voyez ici</div>
+          <div class="line" id="l2">est né sur mon <mark>téléphone.</mark></div>
+          <div id="sub">Mes logiciels, mes sites et mes vidéos : construits avec l'IA, depuis un smartphone.</div>
+        </div>
+      </div>
+
+      <div id="proof" class="clip" data-start="9" data-duration="4.2" data-track-index="4">
+        <div class="count" id="c1"><b id="n1">46</b><span>projets</span></div>
+        <div class="count" id="c2"><b id="n2">130+</b><span>vidéos</span></div>
+        <div id="note">Un Samsung Galaxy Note 10. L'IA. Pas de bureau.</div>
+      </div>
+
+      <div id="sign" class="clip" data-start="13" data-duration="3" data-track-index="5">
+        <div id="me">
+          <div class="ph"><img src="assets/michael.jpg" alt="Michael Kebail-Ali" /></div>
+          <div><h2>Michael Kebail-Ali</h2><p>MON QUOTIDIEN D'ENTREPRENEUR AVEC L'IA</p></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const E = "power3.out", I = "power2.in";
+
+      // Téléphone : légère respiration, au repos au début et à la fin (boucle)
+      tl.fromTo("#phoneWrap", { y: 0, scale: 1 }, { y: -14, scale: 1.02, duration: 8, ease: "sine.inOut" }, 0);
+      tl.to("#phoneWrap", { y: 0, scale: 1, duration: 8, ease: "sine.inOut" }, 8);
+
+      // Écrans réels qui défilent dans le téléphone, retour au premier pour la boucle
+      gsap.set(["#s1", "#s2", "#s3", "#s4", "#s5", "#s6", "#s7"], { xPercent: 100 });
+      const starts = [3.2, 3.9, 4.6, 5.3, 6.0, 6.7, 7.4];
+      starts.forEach((t, i) => {
+        tl.fromTo(`#s${i + 1}`, { xPercent: 100 }, { xPercent: 0, duration: 0.45, ease: "power3.inOut" }, t);
+      });
+      tl.fromTo("#s0", { xPercent: 0 }, { xPercent: 0, duration: 0.01 }, 0);
+      // Pendant la preuve et la signature, on revient sur la caisse : la dernière image rejoint la première
+      tl.to(["#s1", "#s2", "#s3", "#s4", "#s5", "#s6", "#s7"], { xPercent: -100, duration: 0.5, ease: "power3.inOut", stagger: 0 }, 14.9);
+
+      // Logos officiels autour du téléphone
+      ["#g0", "#g1", "#g2", "#g3", "#g4", "#g5"].forEach((g, i) => {
+        tl.fromTo(g, { scale: 0, opacity: 0, rotate: -12 }, { scale: 1, opacity: 1, rotate: 0, duration: 0.5, ease: "back.out(1.8)" }, 3.15 + i * 0.32);
+        tl.to(g, { y: i % 2 ? 12 : -12, duration: 3, ease: "sine.inOut" }, 5.2);
+        tl.to(g, { scale: 0.6, opacity: 0, duration: 0.35, ease: I }, 15.1 + i * 0.05);
+      });
+
+      // Accroche
+      tl.fromTo("#l1", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: E }, 0.25);
+      tl.fromTo("#l2", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: E }, 0.9);
+      tl.fromTo("#sub", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, 1.9);
+      tl.to(["#l1", "#l2", "#sub"], { opacity: 0, y: -30, duration: 0.4, ease: I, stagger: 0.06 }, 8.45);
+
+      // Preuve : deux compteurs puis la phrase
+      tl.fromTo("#c1", { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: E }, 9.1);
+      const n1 = { v: 0 };
+      tl.fromTo(n1, { v: 0 }, { v: 46, duration: 1.1, ease: "power2.out", onUpdate: () => { document.getElementById("n1").textContent = Math.round(n1.v); } }, 9.15);
+      tl.fromTo("#c2", { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: E }, 9.6);
+      const n2 = { v: 0 };
+      tl.fromTo(n2, { v: 0 }, { v: 130, duration: 1.1, ease: "power2.out", onUpdate: () => { document.getElementById("n2").textContent = Math.round(n2.v) + (n2.v >= 129.5 ? "+" : ""); } }, 9.65);
+      tl.fromTo("#note", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, 10.6);
+      tl.to(["#c1", "#c2", "#note"], { opacity: 0, y: -24, duration: 0.35, ease: I, stagger: 0.05 }, 12.7);
+
+      // Signature
+      tl.fromTo("#me .ph", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.55, ease: "back.out(1.6)" }, 13.1);
+      tl.fromTo("#me h2", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: E }, 13.35);
+      tl.fromTo("#me p", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: E }, 13.55);
+      tl.to("#me", { opacity: 0, duration: 0.4, ease: I }, 15.45);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

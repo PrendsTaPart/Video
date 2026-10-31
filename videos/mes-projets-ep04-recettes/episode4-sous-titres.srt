@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,130
+La recette existe. Elle n'est juste jamais suivie.
+
+2
+00:00:03,310 --> 00:00:05,470
+Voici FoodEatUp Recettes, un de mes projets.
+
+3
+00:00:05,770 --> 00:00:08,870
+Sur la tablette, une étape à la fois, en photo et à voix haute.
+
+4
+00:00:09,030 --> 00:00:11,190
+Un minuteur se lance tout seul quand il faut attendre.
+
+5
+00:00:11,310 --> 00:00:13,110
+Les allergènes s'affichent avant de commencer.
+
+6
+00:00:13,330 --> 00:00:15,910
+Un nouveau apprend en jouant, et le responsable valide.
+
+7
+00:00:16,090 --> 00:00:18,080
+Et les coûts arrivent tout seuls de FoodEatUp.
+
+8
+00:00:18,090 --> 00:00:20,820
+Le lien est sous la vidéo : clique sur « Voir le projet ».

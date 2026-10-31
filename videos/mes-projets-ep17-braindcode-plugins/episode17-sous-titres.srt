@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,770
+Claude peut piloter ton entreprise de A à Z.
+
+2
+00:00:03,130 --> 00:00:05,190
+Voici BraindCode Plugins, un de mes projets.
+
+3
+00:00:05,490 --> 00:00:08,030
+Une bibliothèque de prompts en français, prêts à l'emploi.
+
+4
+00:00:08,230 --> 00:00:10,810
+Tu branches tes logiciels sur Claude, en quelques étapes.
+
+5
+00:00:10,810 --> 00:00:13,010
+Tes logiciels métier partagent un seul cerveau.
+
+6
+00:00:13,150 --> 00:00:14,970
+Ton espace te suit jusque dans Claude.
+
+7
+00:00:15,110 --> 00:00:17,010
+Et une académie pour apprendre à déléguer.
+
+8
+00:00:17,190 --> 00:00:19,940
+Le lien est sous la vidéo : clique sur « Voir le projet ».

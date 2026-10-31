@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,710
+Cinq façons pour une application de gagner de l'argent.
+
+2
+00:00:02,970 --> 00:00:07,660
+Numéro un : l'application payante. Peu de gens paient pour une appli qu'ils n'ont pas testée.
+
+3
+00:00:07,690 --> 00:00:12,170
+Numéro deux : la publicité. Un jeu gratuit peut rapporter, s'il a beaucoup d'utilisateurs.
+
+4
+00:00:12,570 --> 00:00:16,630
+Numéro trois : les achats dans l'appli. Gratuite, mais on paie une vie, un bonus.
+
+5
+00:00:17,090 --> 00:00:20,550
+Numéro quatre : la commission, quand l'appli relie des gens et prend sa part.
+
+6
+00:00:20,870 --> 00:00:24,110
+Numéro cinq : l'abonnement. On paie chaque mois pour tout débloquer.
+
+7
+00:00:24,410 --> 00:00:28,030
+Pour ta première appli, c'est celui que je conseille : pas besoin de millions d'utilisateurs.
+
+8
+00:00:28,030 --> 00:00:30,470
+Écris MODÈLE en commentaire, je t'envoie mon exemple.

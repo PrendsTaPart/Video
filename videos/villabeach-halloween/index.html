@@ -1,0 +1,134 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Villa Beach Halloween</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Inter:wght@600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+:root{--or:#caa968;--rouille:#a95134;--fond:#171713;--texte:#f2eddf;--sang:#b3141b}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:#000}
+.sc{position:absolute;inset:0;overflow:hidden;visibility:hidden}
+.ph{position:absolute;inset:0;overflow:hidden}
+.ph img,.ph video{position:absolute;transform-origin:0 0;will-change:transform}
+.t{position:absolute;left:0;right:0;text-align:center;font-family:'Bebas Neue';color:var(--texte);letter-spacing:4px;text-shadow:0 0 30px #000,0 4px 0 #000}
+.gold{color:var(--or)}
+.creep{font-family:'Creepster';letter-spacing:2px}
+#fog{position:absolute;inset:-200px;pointer-events:none;background:
+ radial-gradient(ellipse 60% 18% at 30% 85%,rgba(170,190,220,.35),transparent 70%),
+ radial-gradient(ellipse 70% 16% at 75% 92%,rgba(170,190,220,.3),transparent 70%),
+ radial-gradient(ellipse 50% 14% at 50% 75%,rgba(150,170,210,.22),transparent 70%);mix-blend-mode:screen}
+#vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.85) 100%)}
+#grain{position:absolute;inset:0;pointer-events:none;opacity:.13;mix-blend-mode:overlay}
+#flash{position:absolute;inset:0;pointer-events:none;background:#dfe9ff;opacity:0}
+#red{position:absolute;inset:0;pointer-events:none;background:var(--sang);opacity:0;mix-blend-mode:multiply}
+#black{position:absolute;inset:0;pointer-events:none;background:#000;opacity:0}
+#band{position:absolute;left:0;right:0;bottom:0;height:560px;pointer-events:none;background:linear-gradient(transparent,rgba(0,0,0,.92) 55%)}
+#cap{position:absolute;left:60px;right:60px;top:1560px;text-align:center;font-family:'Bebas Neue';font-size:92px;line-height:1.05;color:var(--texte);text-shadow:0 0 18px #000,0 5px 0 #000;letter-spacing:3px}
+#cap span{opacity:.35}#cap span.on{opacity:1}#cap span.k{color:var(--or)}#cap span.r{color:#ff3b30}
+#bats{position:absolute;inset:0;pointer-events:none}
+.bat{position:absolute;font-size:70px;filter:brightness(0)}
+.badge{display:inline-block;border:4px solid var(--or);padding:10px 34px;border-radius:14px;background:rgba(23,23,19,.75)}
+</style></head><body><div id="stage">
+<div id="scenes"></div>
+<div id="bats"></div><div id="fog"></div><div id="red"></div><div id="vig"></div><canvas id="grain" width="540" height="960"></canvas>
+<div id="band"></div><div id="cap"></div><div id="flash"></div><div id="black"></div>
+</div>
+<script src="cfg.js"></script>
+<script>
+const C=window.CFG, $=s=>document.querySelector(s), S=$('#scenes');
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)), ease=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+const rnd=s=>{const x=Math.sin(s*12.9898)*43758.5453;return x-Math.floor(x)};
+const IMG={affiche:[941,1672],pergola:[960,720],danse:[1080,1080],diner:[1080,1080],monogram:[500,500]};
+const M=k=>C.marks[k];
+const scenes=[];
+// crop = [x,y,w,h] région de l'image source à cadrer ; z0→z1 zoom supplémentaire ; filtre CSS
+function scene(a,b,src,crop0,crop1,filt){
+  const d=document.createElement('div');d.className='sc';
+  const ph=document.createElement('div');ph.className='ph';
+  const vid=src.endsWith('.webm');const im=document.createElement(vid?'video':'img');im.src='img/'+src+(src.includes('.')?'':'.jpg');
+  if(vid){im.style.width="540px";im.style.height="960px";im.style.maxWidth="none";im.muted=true;im.preload='auto';im.playsInline=true;}
+  ph.appendChild(im);d.appendChild(ph);S.appendChild(d);
+  const o={a,b,d,im,vid,src:src.split('.')[0],crop0,crop1:crop1||crop0,filt:filt||(()=>''),fx:[]};scenes.push(o);return o;}
+function txt(s,html,at,y,size,anim){const e=document.createElement('div');e.className='t';e.innerHTML=html;e.style.top=y+'px';e.style.fontSize=size+'px';s.d.appendChild(e);s.fx.push({e,at,anim:anim||'fade'});return e;}
+function frameCrop(s,t){
+  const p=ease(clamp((t-s.a)/(s.b-s.a)));
+  const c=s.crop0.map((v,i)=>v+(s.crop1[i]-v)*p);
+  // cadre la région c dans 1080x1920 (cover)
+  const k=Math.max(1080/c[2],1920/c[3]);
+  const ox=-(c[0]+c[2]/2)*k+540, oy=-(c[1]+c[3]/2)*k+960;
+  return `translate(${ox}px,${oy}px) scale(${k})`;}
+
+/* ---------- découpage selon la voix ---------- */
+const L=C.lines, t0=i=>L[i].t0, t1=i=>L[i].t1, END=C.dur;
+// 1. L'heure dorée : la pergola au coucher du soleil, puis la nuit tombe
+let s=scene(0,t0(1)+.2,'clip-pergola.webm',[0,0,540,960],[60,100,420,747],(t,s)=>{const p=clamp((t-1.5)/(s.b-1.5));if(!s.tint){s.tint=document.createElement('div');Object.assign(s.tint.style,{position:'absolute',inset:'0',background:'#1d3557',mixBlendMode:'multiply'});s.d.insertBefore(s.tint,s.d.children[1]);}s.tint.style.opacity=p*.85;return `saturate(${1.2-1.1*p}) brightness(${1.05-.55*p}) contrast(${1+.3*p})`;});
+txt(s,'<span class="gold">VILLA BEACH</span>',0.4,330,120,'fade');
+txt(s,'« L\'HEURE DORÉE »',1.0,470,74,'fade');
+// 2. Le soleil ne se relèvera pas : le décor du site bascule dans la nuit
+s=scene(t0(1)+.2,t0(2),'pergola',[330,150,300,533],[420,240,220,391],()=>'grayscale(.7) brightness(.45) contrast(1.6) hue-rotate(190deg)');
+txt(s,'<span class="creep" style="color:#ff3b30">31 OCTOBRE</span>',t0(1)+.8,380,150,'shake');
+// 3. Le château hanté
+s=scene(t0(2),t0(3),'affiche.png',[0,0,941,1672],[60,0,820,1458],()=>'brightness(.95) contrast(1.15)');
+// 4. Deux ambiances
+s=scene(t0(3),t0(4),'affiche.png',[0,0,941,1672],[35,125,870,1547],()=>'brightness(.9)');
+// 5. Généraliste
+s=scene(t0(4),t0(5),'affiche.png',[10,860,470,812],[25,872,450,800]);
+// 6. Caribéenne
+s=scene(t0(5),t0(6),'affiche.png',[461,860,470,812],[466,872,450,800]);
+// 7. Tout est prêt… il ne manquait que vous (le dîner, puis la piste, en version hantée)
+const mid6=(t0(6)+t1(6))/2;
+s=scene(t0(6),t0(7),'clip-jardin.webm',[0,0,540,960],[90,160,360,640],(t)=>`sepia(.5) hue-rotate(-25deg) saturate(1.5) brightness(${.42+.3*(rnd(Math.floor(t*12))>.8)}) contrast(1.35)`);
+txt(s,'TOUT EST PRÊT…',t0(6)+.1,330,120,'fade');
+txt(s,'<span class="gold">IL NE MANQUAIT QUE VOUS</span>',mid6+.4,470,104,'shake');
+// 8. Date + adresse
+s=scene(t0(7),t0(8),'affiche.png',[0,0,941,1672],[60,214,820,1458],()=>'brightness(.9) contrast(1.1)');
+txt(s,'<span class="badge">23 RUE DES PYRÉNÉES · LISSES</span>',t0(7)+1.6,300,64,'drop');
+// 9. La peur, sinon rien : le monogramme du site, puis le château
+s=scene(t0(8),END,'affiche.png',[0,0,941,1672],[60,40,820,1458],()=>'brightness(.35) contrast(1.2) blur(2px)');
+const mono=document.createElement('img');mono.src='img/monogram.png';Object.assign(mono.style,{position:'absolute',left:'340px',top:'420px',width:'400px',filter:'drop-shadow(0 0 40px rgba(202,169,104,.7))'});s.d.appendChild(mono);s.fx.push({e:mono,at:t0(8)+.1,anim:'fade'});
+txt(s,'VILLA BEACH',t0(8)+.6,870,150,'fade');
+txt(s,'<span class="creep" style="color:#ff3b30">LA PEUR, SINON RIEN</span>',t0(8)+1.6,1040,110,'shake');
+txt(s,'<span style="font-size:58px">SAMEDI 31 OCTOBRE · RÉSERVATIONS 01 84 60 20 46</span>',t1(8)-.2,1240,58,'fade');
+
+/* ---------- chauves-souris ---------- */
+const bats=[...Array(7)].map((_,i)=>{const e=document.createElement('div');e.className='bat';e.textContent='🦇';$('#bats').appendChild(e);return e;});
+/* ---------- grain ---------- */
+const g=$('#grain').getContext('2d'),gi=g.createImageData(540,960);
+function grain(t){const f=Math.floor(t*24);let sd=f*9301+49297;for(let i=0;i<gi.data.length;i+=4){sd=(sd*9301+49297)%233280;const v=sd/233280*255;gi.data[i]=gi.data[i+1]=gi.data[i+2]=v;gi.data[i+3]=255;}g.putImageData(gi,0,0);}
+
+/* ---------- sous-titres mot à mot ---------- */
+const KW=new Set(C.kw||[]), RED=new Set(C.red||[]);
+function caps(t){
+  const W=C.words; let li=-1; for(const l of L) if(t>=l.t0-.1&&t<=l.t1+.4) li=L.indexOf(l);
+  if(li<0||!C.showCap(t)){$('#cap').innerHTML='';return;}
+  const ws=W.filter(w=>w[2]===li); // groupe de 4 mots autour du mot courant
+  let cur=0; ws.forEach((w,i)=>{if(t>=w[1])cur=i;}); const g0=Math.floor(cur/4)*4;
+  $('#cap').innerHTML=ws.slice(g0,g0+4).map(w=>`<span class="${t>=w[1]?'on':''} ${KW.has(w[0])?'k':''} ${RED.has(w[0])?'r':''}">${w[0]}</span>`).join(' ');}
+
+/* ---------- éclairs ---------- */
+const BOLTS=C.bolts; // instants de foudre (tonnerre calé dessus)
+function flashAt(t){let v=0;for(const b of BOLTS){const d=t-b;if(d>=0&&d<.5)v=Math.max(v,(d<.06?1:d<.12?.2:d<.2?.85:Math.max(0,.5-(d-.2)*2)));}return v;}
+
+async function render(t){
+  const waits=[];
+  for(const s of scenes){const on=t>=s.a&&t<s.b;s.d.style.visibility=on?'visible':'hidden';if(!on)continue;
+    if(s.vid){const ct=Math.min(t-s.a,s.im.duration?s.im.duration-.05:7.9);if(Math.abs(s.im.currentTime-ct)>.001){waits.push(new Promise(r=>{s.im.addEventListener('seeked',r,{once:true});setTimeout(r,3000);}));s.im.currentTime=ct;}}
+    let sh=''; const fl=flashAt(t); if(fl>.5) sh=` translate(${(rnd(t*99)-.5)*30}px,${(rnd(t*77)-.5)*30}px)`;
+    s.im.style.transform=frameCrop(s,t)+sh; s.im.style.filter=s.filt(t,s);
+    for(const f of s.fx){const p=clamp((t-f.at)/.5);f.e.style.opacity=p;
+      if(f.anim==='drop')f.e.style.transform=`translateY(${(1-ease(p))*-80}px)`;
+      if(f.anim==='shake')f.e.style.transform=`translate(${(rnd(Math.floor(t*20))-.5)*14}px,${(rnd(Math.floor(t*20)+3)-.5)*10}px)`;}}
+  $('#flash').style.opacity=flashAt(t)*.9;
+  // rouge sang qui pulse avec le battement de cœur
+  let hb=0; for(const h of C.heart){const d=(t-h)%0.9; if(t>=h&&t<h+5.4){hb=Math.max(hb,d<.12?.5:d>.26&&d<.38?.35:0);}}
+  $('#red').style.opacity=hb;
+  // noir : coupure "le soleil ne se relèvera pas" + fondu final
+  let bk=0; const cut=C.cut; if(t>=cut&&t<cut+.35)bk=1; if(t>END-.6)bk=clamp((t-(END-.6))/.6);
+  $('#black').style.opacity=bk;
+  $('#fog').style.transform=`translateX(${Math.sin(t*.25)*120}px)`; $('#fog').style.opacity=t<t0(1)?0:.9;
+  bats.forEach((e,i)=>{const st=C.batsAt+i*.25, p=(t-st)/3.2; e.style.display=p>0&&p<1?'block':'none';
+    e.style.left=(-120+p*1300)+'px'; e.style.top=(250+i*90+Math.sin(p*14+i)*40)+'px'; e.style.transform=`scale(${.6+rnd(i)*.8}) scaleY(${.6+.4*Math.abs(Math.sin(t*20+i))})`;});
+  grain(t); caps(t);
+  await Promise.all(waits);
+}
+function thumb(){return render(t0(2)+1.6)}
+render(0);
+</script></body></html>

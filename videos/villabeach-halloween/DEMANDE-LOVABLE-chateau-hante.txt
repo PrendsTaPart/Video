@@ -1,0 +1,30 @@
+Nouveau thème d'assets pour une vidéo Halloween (client Villa Beach, restaurant-club en plein air à Lisses, soirée « Le plus grand château hanté » du samedi 31 octobre). Exactement comme pour « holo-nuit-agents » et les 4 thèmes d'hier : 20 images déposées dans public/img/kit/chateau-hante-<nom>.png|jpg, une ligne active par image dans « mediatheque » (theme = « chateau-hante », libellé « Château hanté · Villa Beach », categorie adaptée : decor / personnage / accessoire / overlay), et une ligne dans « formats_video ». Ajoute le thème à la liste des thèmes si besoin. Personnages, accessoires et overlays détourés sur fond transparent (PNG), décors en JPG vertical 1080x1920. AUCUN texte, chiffre, logo ou marque dans les images. Pas de republication.
+
+Style : film d'horreur cinématographique, illustration réaliste sombre et élégante (pas cartoon), nuit d'orage, brouillard bas, lumière de lune bleue froide contre lueurs orange de citrouilles et touches dorées. Palette : nuit #171713, brun #29251f, or #caa968, brique #a95134, bleu orage #1d3557, orange citrouille #ff7a1a, rouge sang #b3141b. Le lieu de référence est une terrasse avec grande pergola en bois clair, suspensions en osier, chaises pliantes en bois, arbres taillés : c'est ce lieu qui devient hanté.
+
+ 1 decor « pergola-hantee » (jpg) : la pergola en bois et ses suspensions en osier la nuit, tables vides, brouillard au sol, lune derrière les arbres, suspensions qui diffusent une lueur orange vacillante
+ 2 decor « chateau-orage » (jpg) : château gothique sur une colline, fenêtres orange, pleine lune, éclairs, chauves-souris
+ 3 decor « grille-allee » (jpg) : grille en fer forgé ouverte sur une allée bordée de citrouilles sculptées dans la brume
+ 4 decor « diner-hante » (jpg) : longue table dressée, chandeliers, toiles d'araignée, verres de vin rouge, chaises vides, ambiance banquet hanté
+ 5 decor « piste-hantee » (jpg) : piste de danse de club hantée, fumée, faisceaux orange et violets, foule en silhouettes déguisées de dos
+ 6 decor « fond-nuit » (jpg) : fond nuit bleu profond flou avec halo de lune, presque uni (pour les cartons texte)
+ 7 personnage « fantome » : fantôme drapé blanc translucide qui flotte
+ 8 personnage « squelette-danseur » : squelette qui danse, bras levés
+ 9 personnage « vampire » : vampire élégant en smoking noir et cape rouge, verre levé, sourire inquiétant
+ 10 personnage « sorciere-dj » : sorcière DJ avec casque audio et chapeau pointu, mains sur des platines
+ 11 personnage « couple-zouk » : couple déguisé (squelette et mariée fantôme) qui danse collé, ambiance caribéenne
+ 12 accessoire « citrouille » : citrouille sculptée qui sourit, lueur orange intérieure
+ 13 accessoire « citrouille-oeil » : très gros plan d'un œil de citrouille sculptée d'où jaillit une flamme (pour un jump-scare)
+ 14 accessoire « chauve-souris » : chauve-souris ailes déployées
+ 15 accessoire « cocktail-sang » : cocktail rouge sang fumant (glace carbonique) dans un verre à pied
+ 16 accessoire « chandelier » : chandelier gothique à trois bougies allumées
+ 17 accessoire « platine-citrouille » : platine vinyle dont le disque est orange comme une citrouille
+ 18 overlay « eclair » : éclair blanc-bleu vertical, fond transparent
+ 19 overlay « brume » : nappe de brouillard blanc horizontale, bords fondus, fond transparent
+ 20 overlay « cadre-or » : cadre art déco doré vierge (rectangle vertical arrondi), intérieur transparent
+
+Vidéos : si ton outil de génération sait produire de la vidéo, ajoute en plus 4 boucles verticales 1080x1920 de 4 à 6 s, sans texte, dans public/video/kit/chateau-hante-<nom>.mp4, avec leur ligne « mediatheque » (categorie video) : « boucle-pergola » (la pergola passe du coucher de soleil doré à la nuit hantée, suspensions qui s'éteignent), « boucle-chateau » (lent travelling avant vers le château sous les éclairs), « boucle-brume » (brouillard qui rampe, fond noir), « boucle-citrouille » (la flamme qui s'allume dans l'œil de la citrouille). Si tu ne peux pas générer de vidéo, ne crée rien d'approchant et dis-le simplement.
+
+formats_video (statut actif, vertical 1080x1920) : chateau-hante — « Villa Beach, la peur sinon rien » (Halloween, 40 s). Voix : 1 narrateur grave chuchoté (horreur). Structure : 1 l'heure dorée qui bascule dans la nuit (7 s) · 2 noir + « le soleil ne se relèvera pas » (4 s) · 3 le château hanté (5 s) · 4 deux ambiances, deux univers musicaux (8 s) · 5 « tout est prêt, il ne manquait que vous » (4 s) · 6 date et adresse (4 s) · 7 signature « la peur, sinon rien » + réservation (6 s). Règles : n'afficher que les infos de l'affiche officielle (samedi 31 octobre, 23 rue des Pyrénées 91090 Lisses, 01 84 60 20 46), ni horaire ni prix.
+
+Réponds avec la liste exacte des fichiers créés (chemins), images et vidéos, et confirme la ligne formats_video.

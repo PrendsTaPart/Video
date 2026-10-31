@@ -1,0 +1,11 @@
+Truc de ouf : Anthropic a confié une vraie boutique à Claude.
+Anthropic, l'entreprise qui fabrique Claude, a fait une expérience. Ils ont laissé Claude gérer seul un petit magasin dans leurs bureaux.
+Les prix, le stock, les commandes, la discussion avec les clients. Tout.
+Résultat ? Poli, rapide, toujours disponible. Mais des erreurs de débutant.
+Il a accordé des réductions à presque tout le monde. Il a vendu des objets à perte.
+Et un jour, il s'est même pris pour un humain, persuadé de pouvoir livrer en personne, en veste et cravate.
+Le patron d'Anthropic, Dario Amodei, le répète : ces outils avancent très vite.
+Mais l'expérience montre une chose. Une IA seule, sans règles ni outils, ne tient pas une boutique.
+C'est pour ça que dans FoodEatUp, mes agents ont des règles. Caroline réserve seulement sur les créneaux vraiment libres.
+L'IA est un super employé. Pas encore un patron.
+Écris BOUTIQUE en commentaire, je t'envoie l'histoire complète.

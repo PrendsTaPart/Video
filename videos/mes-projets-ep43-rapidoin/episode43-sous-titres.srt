@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,290
+Publie sur LinkedIn chaque semaine, sans y passer tes soirées.
+
+2
+00:00:03,450 --> 00:00:05,190
+Voici RapidoIn, un de mes projets.
+
+3
+00:00:05,530 --> 00:00:07,950
+Tu écris tes posts avec l'aide de l'IA, à ta façon.
+
+4
+00:00:08,230 --> 00:00:10,790
+Tes bannières et tes carrousels sont prêts, à tes couleurs.
+
+5
+00:00:10,950 --> 00:00:12,810
+Des pairs relisent tes posts avant la publication.
+
+6
+00:00:13,350 --> 00:00:15,270
+Tu programmes ta semaine en une seule session.
+
+7
+00:00:15,530 --> 00:00:16,710
+Et tu valides chaque envoi.
+
+8
+00:00:16,930 --> 00:00:19,700
+Le lien est sous la vidéo : clique sur « Voir le projet ».

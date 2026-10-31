@@ -1,0 +1,163 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 62 : sept questions à Claude</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0F1A23}
+:root{--fond:#0F1A23;--surf:#16242F;--bleu:#007BFF;--orange:#FFA500;--creme:#FCF9E6;--gris:#AEB8C2}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:'Poppins';color:var(--creme);
+ background:radial-gradient(ellipse at 50% 30%,#1a2b38 0%,#0F1A23 60%,#0a1219 100%)}
+.abs{position:absolute}
+#bar{position:absolute;left:60px;right:60px;top:70px;display:flex;gap:12px}
+#bar i{flex:1;height:8px;border-radius:4px;background:#2a3a47;overflow:hidden;position:relative}
+#bar i b{position:absolute;inset:0;background:var(--creme);transform-origin:0 50%}
+#head{position:absolute;left:60px;right:60px;top:120px;height:130px}
+#head .lab{font-size:24px;font-weight:600;letter-spacing:6px;color:var(--gris)}
+#head .ttl{display:flex;align-items:center;gap:22px;margin-top:6px}
+#head .num{width:86px;height:86px;border-radius:20px;background:var(--creme);color:var(--fond);font-weight:800;font-size:56px;display:flex;align-items:center;justify-content:center}
+#head .txt{font-size:64px;font-weight:700;line-height:1}
+.hl{background:var(--creme);color:var(--fond);padding:0 12px;border-radius:10px}
+/* fenêtre de conversation */
+#win{position:absolute;left:60px;right:60px;top:290px;height:900px;background:var(--surf);border-radius:36px;border:2px solid #24384a;box-shadow:0 30px 80px rgba(0,0,0,.5);overflow:hidden}
+#win .top{height:74px;display:flex;align-items:center;gap:12px;padding:0 30px;border-bottom:2px solid #22344a}
+#win .top s{width:18px;height:18px;border-radius:50%;display:block}
+#win .logo{margin-left:auto;background:#fff;border-radius:12px;padding:6px 14px;display:flex}
+#win .logo img{height:30px}
+#win .demo{font-size:20px;font-weight:600;color:var(--gris);letter-spacing:3px;margin-left:16px}
+#ask{position:absolute;left:30px;right:30px;top:110px;min-height:250px;background:#0F1A23;border:2px solid #2b4257;border-radius:26px;padding:26px 30px 70px;font-size:40px;font-weight:500;line-height:1.35}
+#ask .cur{display:inline-block;width:4px;height:44px;background:var(--orange);vertical-align:-8px;margin-left:4px}
+#ask .send{position:absolute;right:20px;bottom:16px;width:56px;height:56px;border-radius:16px;background:var(--orange);display:flex;align-items:center;justify-content:center;color:#111;font-weight:800;font-size:32px}
+#zone{position:absolute;left:30px;right:30px;top:400px;bottom:30px}
+.chip{position:absolute;padding:12px 26px;border-radius:999px;border:3px solid var(--creme);font-weight:700;font-size:30px;letter-spacing:1px;background:#0F1A23;white-space:nowrap}
+.chip.o{border-color:var(--orange);color:var(--orange)}
+.chip.b{border-color:var(--bleu);color:#5aa8ff}
+.tile{position:absolute;background:#0F1A23;border:2px solid #2b4257;border-radius:22px;display:flex;align-items:center;justify-content:center;flex-direction:column;font-weight:700}
+#cap{position:absolute;left:70px;right:70px;top:1235px;text-align:center;font-size:62px;font-weight:700;line-height:1.25}
+#cap span{opacity:.35;padding:0 6px;border-radius:10px}#cap span.on{opacity:1}#cap span.now{background:var(--creme);color:var(--fond);opacity:1}
+#cap span.k{color:var(--orange)}#cap span.now.k{color:var(--fond);background:var(--orange)}
+#duo{position:absolute;left:0;right:0;top:1520px;height:260px}
+#mic{position:absolute;left:290px;top:0;width:220px;height:220px;border-radius:50%;border:6px solid var(--creme);box-shadow:0 0 40px rgba(0,123,255,.35)}
+#cla{position:absolute;left:570px;top:70px;background:#fff;border-radius:20px;padding:14px 20px}
+#cla img{height:46px;display:block}
+#duo .nm{position:absolute;left:290px;width:220px;top:228px;text-align:center;font-size:24px;font-weight:600;color:var(--gris);letter-spacing:3px}
+.scene{position:absolute;inset:0;visibility:hidden}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:800}
+.btn{display:inline-block;background:var(--orange);color:#111;font-weight:800;border-radius:28px;padding:22px 46px}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+</style></head><body><div id="stage">
+<div id="bar"></div>
+<div id="head"><div class="lab"></div><div class="ttl"><div class="num"></div><div class="txt"></div></div></div>
+<div id="win"><div class="top"><s style="background:#ff5f57"></s><s style="background:#febc2e"></s><s style="background:#28c840"></s><span class="demo">EXEMPLE DE QUESTION</span><span class="logo"><img src="img/claude.webp"></span></div>
+ <div id="ask"><span id="askt"></span><span class="cur" id="cur"></span><div class="send">↑</div></div><div id="zone"></div></div>
+<div id="scenes"></div>
+<div id="cap"></div>
+<div id="duo"><img id="mic" src="img/michael-rond.png"><div class="nm">MICHAEL</div><div id="cla"><img src="img/claude.webp"></div></div>
+<div id="flash"></div>
+</div>
+<script src="cfg.js"></script>
+<script>
+const C=window.CFG,L=C.lines,W=C.words,$=s=>document.querySelector(s),clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),ease=x=>1-Math.pow(1-clamp(x),3);
+const t0=i=>L[i].t0,t1=i=>L[i].t1,END=C.dur;
+// les 7 questions : [ligne du titre, ligne de la question, titre, mot surligné]
+const Q=[[2,3,'Trouver','l\'idée'],[4,5,'Vérifier','avant'],[7,8,'Construire','l\'offre'],[9,10,'Commencer','petit'],[11,12,'La page qui donne','faim'],[13,14,'Faire venir','du monde'],[15,16,'Ouvrir','!']];
+const qStart=k=>t0(Q[k][0]), qEnd=k=>k<6?t0(Q[k+1][0]):t0(17);
+$('#bar').innerHTML=Q.map(()=>'<i><b></b></i>').join('');
+const bars=[...document.querySelectorAll('#bar b')];
+// éléments propres à chaque question, dans la fenêtre
+const Z=$('#zone'),items=[];
+function add(k,html,o){const d=document.createElement('div');d.innerHTML=html;const e=d.firstElementChild;Object.assign(e.style,o.css||{});Z.appendChild(e);items.push({k,e,at:o.at,an:o.an||'pop'});return e;}
+const wt=(line,word)=>{const ws=W.filter(w=>w[2]===line);return (ws.find(w=>w[0].toLowerCase().startsWith(word))||ws[0])[1];};
+// Q1 : cinq idées
+[0,1,2,3,4].forEach(i=>add(0,`<div class="tile" style="font-size:30px;color:var(--gris)"><div style="font-size:64px;color:var(--orange)">${i+1}</div>IDÉE</div>`,{at:wt(3,'cinq')+i*.12,css:{left:i*186+'px',top:'0',width:'166px',height:'190px'}}));
+add(0,'<div class="chip">MON QUARTIER</div>',{at:wt(3,'quartier'),css:{left:'0',top:'240px'}});
+add(0,'<div class="chip b">PEU DE CONCURRENCE</div>',{at:wt(3,'concurrence'),css:{left:'330px',top:'240px'}});
+add(0,'<div class="chip o">QUI VIENT MANGER ?</div>',{at:wt(3,'manger'),css:{left:'150px',top:'340px'}});
+// Q2 : vérifier
+add(1,'<div class="tile" style="left:0;top:0;width:930px;height:120px;flex-direction:row;gap:20px;font-size:36px;justify-content:flex-start;padding-left:30px"><span style="color:#28c840;font-size:50px">✓</span>Vont-ils vraiment payer ?</div>',{at:wt(5,'payer')});
+add(1,'<div class="tile" style="left:0;top:140px;width:930px;height:120px;flex-direction:row;gap:20px;font-size:36px;justify-content:flex-start;padding-left:30px"><span style="color:#ff5f57;font-size:50px">✗</span>Pourquoi ça pourrait rater ?</div>',{at:wt(5,'rater')});
+add(1,'<div class="chip o" style="font-size:44px;padding:16px 36px;transform:rotate(-6deg)">ILS SAUTENT L\'ÉTAPE…</div>',{at:t0(6),css:{left:'150px',top:'300px'},an:'slam'});
+// Q3 : l'offre
+add(2,'<div class="tile" style="left:0;top:0;width:440px;height:330px;font-size:34px;gap:10px"><div style="font-size:26px;color:var(--gris);letter-spacing:4px">LA CARTE</div>Courte<div style="width:240px;height:8px;background:#2b4257;border-radius:4px"></div><div style="width:200px;height:8px;background:#2b4257;border-radius:4px"></div><div style="width:220px;height:8px;background:#2b4257;border-radius:4px"></div></div>',{at:wt(8,'carte')});
+add(2,'<div class="chip b">LE PRIX</div>',{at:wt(8,'prix'),css:{left:'500px',top:'30px'}});
+add(2,'<div class="chip o">LA PHRASE QUI DONNE ENVIE</div>',{at:wt(8,'phrase'),css:{left:'480px',top:'140px',whiteSpace:'normal',width:'440px',textAlign:'center'}});
+// Q4 : commencer petit
+add(3,'<div class="tile" style="left:0;top:0;width:930px;height:200px;font-size:52px">La version la plus <span style="color:var(--orange)">simple</span></div>',{at:wt(10,'simple')});
+add(3,'<div class="chip">CE MOIS-CI</div>',{at:wt(10,'mois'),css:{left:'330px',top:'240px'}});
+// Q5 : la page qui fait réserver (une seule action orange)
+add(4,'<div class="tile" style="left:265px;top:-20px;width:400px;height:420px;border-radius:40px;justify-content:flex-start;padding-top:40px;gap:16px;font-size:30px"><div style="width:300px;height:120px;border-radius:18px;background:#2b4257"></div><div style="width:260px;height:10px;background:#2b4257;border-radius:5px"></div><div style="width:220px;height:10px;background:#2b4257;border-radius:5px"></div><div class="btn" style="font-size:28px;padding:16px 26px;margin-top:20px">RÉSERVER UNE TABLE</div></div>',{at:wt(12,'page')});
+// Q6 : dix idées de vidéos
+[...Array(10)].forEach((_,i)=>add(5,`<div class="tile" style="font-size:40px;color:var(--orange)">▶</div>`,{at:wt(14,'dix')+i*.08,css:{left:(i%5)*186+'px',top:(i<5?0:200)+'px',width:'166px',height:'180px'}}));
+add(5,'<div class="chip o">MES PREMIERS CLIENTS</div>',{at:wt(14,'clients'),css:{left:'230px',top:'400px'}});
+// Q7 : la première semaine
+const J=['LUN','MAR','MER','JEU','VEN','SAM','DIM'];
+J.forEach((j,i)=>add(6,`<div class="tile" style="font-size:26px;color:var(--gris)">${j}<div class="ck" style="font-size:52px;color:#28c840;opacity:0">✓</div></div>`,{at:wt(16,'plan')+i*.08,css:{left:(i*133)+'px',top:'0',width:'120px',height:'180px'}}));
+add(6,'<div class="chip">JOUR PAR JOUR</div>',{at:wt(16,'jour'),css:{left:'300px',top:'240px'}});
+
+/* ---------- scènes plein écran (intro, méthode, FoodEatUp, fin) ---------- */
+const S=$('#scenes'),scenes=[];
+function scene(a,b,html){const d=document.createElement('div');d.className='scene';d.innerHTML=html;S.appendChild(d);const o={a,b,d};scenes.push(o);return o;}
+const intro=scene(0,t0(2),`
+ <div class="big" style="top:360px;font-size:58px;font-weight:600;color:var(--gris)" id="i1">Une idée de restaurant,</div>
+ <div class="big" style="top:440px;font-size:150px" id="i2">7 questions</div>
+ <div class="big" style="top:230px" id="i3"><span class="chip o" style="position:static;font-size:40px">PAR OÙ JE COMMENCE ?</span></div>
+ <div class="big" style="top:700px;font-size:44px;font-weight:600" id="i4">À poser à <span style="background:#fff;border-radius:14px;padding:6px 16px;display:inline-block;vertical-align:middle"><img src="img/claude.webp" style="height:46px;display:block"></span></div>
+ <div style="position:absolute;left:0;right:0;top:860px;display:flex;justify-content:center;gap:22px" id="i5">${[1,2,3,4,5,6,7].map(n=>`<div style="width:90px;height:90px;border-radius:50%;border:4px solid var(--creme);display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:800">${n}</div>`).join('')}</div>`);
+const methode=scene(t0(17),t0(19),`
+ <div class="big" style="top:200px;font-size:30px;font-weight:600;letter-spacing:8px;color:var(--gris)">CE QUE PERSONNE NE DIT</div>
+ <div class="big" style="top:270px;font-size:84px;line-height:1.1">Les bonnes<br><span class="hl">questions</span></div>
+ <div style="position:absolute;left:0;right:0;top:560px;display:flex;justify-content:center;gap:22px" id="m7">${[1,2,3,4,5,6,7].map(n=>`<div style="width:100px;height:100px;border-radius:50%;border:4px solid #2b4257;display:flex;align-items:center;justify-content:center;font-size:48px;font-weight:800;color:#2b4257">${n}</div>`).join('')}</div>
+ <div class="big" style="top:720px;font-size:44px;font-weight:700;letter-spacing:4px" id="m8">DANS LE BON ORDRE</div>
+ <div class="big" style="top:840px;font-size:40px;font-weight:500;color:var(--gris)" id="m9">pas plus malin : mieux guidé</div>`);
+const fe=scene(t0(19),t0(20),`
+ <div class="big" style="top:220px;font-size:34px;font-weight:600;letter-spacing:6px;color:var(--gris)">LE JOUR DE L'OUVERTURE</div>
+ <div class="big" style="top:300px"><span style="background:#fff;border-radius:22px;padding:22px 40px;display:inline-block"><img src="img/foodeatup.webp" style="height:80px;display:block"></span></div>
+ <div style="position:absolute;left:90px;right:90px;top:520px;display:flex;flex-direction:column;gap:30px" id="f3">${['Réservations','Carte','Fidélité'].map(x=>`<div class="tile" style="position:relative;height:130px;flex-direction:row;justify-content:space-between;padding:0 40px;font-size:48px">${x}<span style="color:#28c840;font-size:60px">✓</span></div>`).join('')}</div>
+ <div class="big" style="top:1060px;font-size:46px;font-weight:700" id="f4">prend le <span class="hl">relais</span></div>`);
+const fin=scene(t0(20),END+1,`
+ <div class="big" style="top:170px;font-size:30px;font-weight:600;letter-spacing:8px;color:var(--gris)">LE GUIDE</div>
+ <div style="position:absolute;left:250px;top:240px;width:580px;height:620px;background:var(--creme);color:var(--fond);border-radius:30px;padding:40px;transform:rotate(-3deg)" id="g1">
+  <div style="font-size:52px;font-weight:800">7 questions</div><div style="font-size:30px;font-weight:600;margin-bottom:24px">de l'idée à l'ouverture</div>
+  ${Q.map((q,i)=>`<div style="font-size:30px;font-weight:600;padding:6px 0;border-bottom:2px solid #e3dcc0">${i+1}. ${q[2]} ${q[3]==='!'?'':q[3]}</div>`).join('')}</div>
+ <div class="big" style="top:930px" id="g2"><span class="btn" style="font-size:54px">Écris OUVRIR en commentaire</span></div>
+ <div class="big" style="top:1090px;font-size:38px;font-weight:700;letter-spacing:6px;color:var(--gris)" id="g3">ÉPISODE 62/365</div>`);
+
+function render(t){
+  // scène plein écran ou fenêtre
+  let full=null;for(const s of scenes){const on=t>=s.a&&t<s.b;s.d.style.visibility=on?'visible':'hidden';if(on)full=s;}
+  const inQ=!full;['#bar','#head','#win'].forEach(x=>$(x).style.visibility=inQ?'visible':'hidden');
+  let k=-1;for(let i=0;i<7;i++)if(t>=qStart(i))k=i;
+  bars.forEach((b,i)=>b.style.transform=`scaleX(${i<k?1:i>k?0:clamp((t-qStart(i))/(qEnd(i)-qStart(i)))})`);
+  if(inQ&&k>=0){const q=Q[k];$('#head .lab').textContent='QUESTION '+(k+1);$('#head .num').textContent=k+1;
+    $('#head .txt').innerHTML=q[3]==='!'?q[2]+' <span class="hl">!</span>':`${q[2]} <span class="hl">${q[3]}</span>`;
+    const p=ease((t-qStart(k))/.4);$('#head').style.transform=`translateX(${(1-p)*-60}px)`;$('#head').style.opacity=p;
+    // la question se tape mot à mot
+    const ws=W.filter(w=>w[2]===q[1]&&w[1]<=t+.05);$('#askt').textContent=ws.map(w=>w[0]).join(' ');
+    $('#cur').style.opacity=(Math.floor(t*2.5)%2)?1:0;
+    $('#win').style.transform=`translateY(${(1-ease((t-qStart(k))/.45))*80}px) scale(${.97+.03*ease((t-qStart(k))/.45)})`;}
+  for(const it of items){const on=it.k===k&&inQ&&t>=it.at;const p=clamp((t-it.at)/.3);it.e.style.opacity=on?p:0;
+    it.e.style.transform=(it.e.style.transform.includes('rotate')?'rotate(-6deg) ':'')+(it.an==='slam'?`scale(${2-ease(p)})`:`scale(${.6+.4*ease(p)})`);
+    const ck=it.e.querySelector('.ck');if(ck)ck.style.opacity=t>=it.at+1.2?1:0;}
+  // intro
+  if(full===intro){const sh=(id,a)=>{const e=$(id),p=clamp((t-a)/.35);e.style.opacity=p;e.style.transform=`translateY(${(1-ease(p))*30}px)`;};
+    sh('#i1',.3);sh('#i2',W.find(w=>w[0]==='sept')[1]);sh('#i3',t0(0)+1.6);sh('#i4',wt(1,'claude'));sh('#i5',wt(1,'rien'));
+    $('#i2').style.transform+=` scale(${1+.06*Math.max(0,1-(t-W.find(w=>w[0]==='sept')[1])/.3)})`;}
+  if(full===methode){[...$('#m7').children].forEach((c,i)=>{const on=t>=t0(18)+.25*i;c.style.borderColor=on?'var(--orange)':'#2b4257';c.style.color=on?'var(--orange)':'#2b4257';});
+    $('#m8').style.opacity=t>=wt(18,'ordre')?1:0;$('#m9').style.opacity=t>=t0(17)+.8?1:0;}
+  if(full===fe){[...$('#f3').children].forEach((c,i)=>{const a=wt(19,['réservations','carte','fidélité'][i]),p=clamp((t-a)/.3);c.style.opacity=p;c.style.transform=`translateX(${(1-ease(p))*-80}px)`;});
+    $('#f4').style.opacity=t>=wt(19,'relais')-.3?1:0;}
+  if(full===fin){const g=clamp((t-t0(20))/.5);$('#g1').style.opacity=g;$('#g1').style.transform=`rotate(-3deg) translateY(${(1-ease(g))*80}px)`;
+    $('#g2').style.opacity=t>=wt(20,'écris')?1:0;$('#g2').style.transform=`scale(${1+.04*Math.sin(t*6)})`;$('#g3').style.opacity=t>=t1(20)?1:0;}
+  // sous-titres : groupe de 4 mots, mot courant surligné
+  let li=-1;for(let i=0;i<L.length;i++)if(t>=L[i].t0-.05&&t<=L[i].t1+.3)li=i;
+  const KW=new Set(['restaurant,','sept','Claude.','idée.','vérifier','ferment.',"l'offre.",'petit.','faim.','monde.','ouvrir.','questions,','ordre.','FoodEatUp','OUVRIR']);
+  if(li>=0){const ws=W.filter(w=>w[2]===li);let cur=0;ws.forEach((w,i)=>{if(t>=w[1])cur=i;});const g0=Math.floor(cur/4)*4;
+    $('#cap').innerHTML=ws.slice(g0,g0+4).map((w,i)=>`<span class="${t>=w[1]?'on':''} ${g0+i===cur?'now':''} ${KW.has(w[0])?'k':''}">${w[0]}</span>`).join(' ');}
+  else $('#cap').innerHTML='';
+  // duo Michael + Claude
+  $('#mic').style.transform=`translateY(${Math.sin(t*2)*6}px)`;$('#cla').style.transform=`translateY(${Math.sin(t*2+1.5)*6}px)`;
+  // flash léger aux changements de question
+  let f=0;for(let i=0;i<7;i++){const d=t-qStart(i);if(d>=0&&d<.2)f=Math.max(f,.25*(1-d/.2));}
+  $('#flash').style.opacity=f+(t>END-.5?clamp((t-(END-.5))/.5):0)*0;
+}
+function thumb(){render(wt(5,'payer')+.6)}
+render(0);
+</script></body></html>

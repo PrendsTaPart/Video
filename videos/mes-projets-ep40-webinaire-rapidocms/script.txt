@@ -1,0 +1,8 @@
+Tes webinaires, de l'inscription jusqu'au rappel, au même endroit.
+Voici Webinaire RapidoCMS, un de mes projets.
+L'IA t'écrit le titre et la description en quelques secondes.
+Chaque webinaire a sa page d'inscription, avec un compte à rebours.
+Les participants sont rappelés par SMS ou par WhatsApp.
+La visio se passe directement sur ta page.
+Et tu suis tes inscriptions en temps réel.
+Le lien est sous la vidéo : clique sur « Voir le projet ».

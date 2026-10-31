@@ -1,0 +1,32 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;width:1600px;height:900px;overflow:hidden;font-family:Poppins,Arial,sans-serif;color:#fff}
+.c{position:relative;width:1600px;height:900px;background:radial-gradient(circle at 78% 40%,#1f3445 0%,#0F1A23 62%)}
+.t{position:absolute;left:80px;top:80px;width:640px}
+.ep{display:inline-block;background:#FFA500;color:#0F1A23;font-weight:800;font-size:26px;letter-spacing:2px;padding:8px 22px;border-radius:999px}
+.k{margin-top:26px;color:#AEB8C2;font-weight:600;font-size:23px;letter-spacing:3px;text-transform:uppercase}
+h1{margin:12px 0 0;font-size:56px;line-height:1.08;font-weight:800;letter-spacing:-1px}
+.kw{margin-top:26px;font-size:26px;color:#AEB8C2;font-weight:600}.kw b{background:#fff;color:#0F1A23;border-radius:10px;padding:4px 14px;margin-left:6px}
+.me{position:absolute;left:80px;bottom:64px;display:flex;align-items:center;gap:22px}
+.me>img{width:112px;height:112px;border-radius:50%;object-fit:cover;border:5px solid #fff}
+.me b{display:block;font-size:30px}.me span{font-size:21px;color:#AEB8C2}
+.logo{flex:0 0 auto;margin-left:18px;background:#fff;border-radius:18px;padding:12px 20px;display:block}.logo img{height:46px;width:auto;display:block}
+.doc{position:absolute;right:330px;top:150px;width:400px;transform:rotate(-4deg);border-radius:14px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.55);background:#fff}
+.doc img{width:100%;display:block}
+.site{position:absolute;right:330px;top:200px;width:520px;border-radius:16px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.55);border:3px solid rgba(255,255,255,.18);background:#0b141c}
+.site i{display:block;height:30px;background:#1c2b38}.site img{width:100%;display:block}
+.phone{position:absolute;right:70px;top:90px;width:344px;height:612px;border-radius:44px;background:#05080b;padding:14px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.phone img{width:100%;height:100%;object-fit:cover;border-radius:32px;display:block}
+.g{position:absolute;right:70px;bottom:52px;background:#007BFF;font-weight:700;font-size:24px;padding:12px 24px;border-radius:16px}
+</style></head><body><div class="c" id="c"></div>
+<script>
+const q=new URLSearchParams(location.search),d=JSON.parse(decodeURIComponent(q.get('d')));
+document.getElementById('c').innerHTML=`
+${d.site?`<div class="site"><i></i><img src="${d.site}"></div>`:`<div class="doc"><img src="${d.doc}"></div>`}
+<div class="phone"><img src="${d.phone}"></div>
+<div class="t"><span class="ep">ÉPISODE ${d.n}</span><div class="k">${d.k}</div><h1>${d.titre}</h1><div class="kw">Écris en commentaire <b>${d.kw}</b></div></div>
+<div class="me"><img src="${d.me}"><div><b>Michael Kebail-Ali</b><span>Mon quotidien d'entrepreneur avec l'IA</span></div><div class="logo"><img src="${d.logo}"></div></div>
+<div class="g">${d.g||"Guide gratuit + PDF"}</div>`;
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>i.onload=i.onerror=r)))).then(()=>document.body.dataset.ok=1);
+</script></body></html>

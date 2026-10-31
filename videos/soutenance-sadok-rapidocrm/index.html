@@ -1,0 +1,99 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>RapidoCRM · soutenance</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1920px;height:1080px;overflow:hidden;background:#0b1020;font-family:Poppins,sans-serif;color:#eef2ff}
+#bg{position:absolute;inset:0;background:radial-gradient(1200px 700px at 20% 10%,#1b2550 0%,transparent 60%),radial-gradient(900px 600px at 95% 90%,#13324a 0%,transparent 60%),#0b1020}
+#grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:48px 48px}
+.ab{position:absolute}
+#top{position:absolute;left:72px;top:40px;right:72px;height:80px;display:flex;align-items:center;gap:22px}
+#chip{font-family:'JetBrains Mono';font-weight:700;font-size:26px;background:#22c3a6;color:#0b1020;padding:8px 16px;border-radius:12px}
+#ttl{font-size:46px;font-weight:800;letter-spacing:-.5px}
+#ttl em{font-style:normal;color:#22c3a6}
+#brand{margin-left:auto;display:flex;align-items:center;gap:16px;font-size:20px;color:#9aa6c8;text-align:right;line-height:1.3}
+#brand img{height:58px}
+#screen{position:absolute;left:72px;top:146px;width:1380px;height:816px;border-radius:22px;overflow:hidden;background:#0f1424;border:2px solid #24304f;box-shadow:0 40px 90px rgba(0,0,0,.55)}
+#bar{height:38px;background:#151c33;display:flex;align-items:center;gap:9px;padding:0 16px;border-bottom:1px solid #24304f}
+#bar s{width:13px;height:13px;border-radius:50%;display:block}
+#url{margin-left:18px;font-family:'JetBrains Mono';font-size:16px;color:#7f8bb0;background:#0f1424;padding:4px 14px;border-radius:8px}
+#stage{position:absolute;left:0;top:38px;width:1376px;height:774px;overflow:hidden}
+#side{position:absolute;left:1488px;top:146px;width:360px;height:812px}
+.call{position:absolute;left:0;width:360px;background:rgba(21,28,51,.92);border:2px solid #24304f;border-radius:18px;padding:14px 18px;font-size:21px;font-weight:600;line-height:1.3}
+.call b{display:block;font-family:'JetBrains Mono';font-size:15px;color:#22c3a6;letter-spacing:1px;margin-bottom:4px;font-weight:700}
+.call.hot{border-color:#22c3a6;box-shadow:0 0 0 4px rgba(34,195,166,.15)}
+.big{font-size:64px;font-weight:900;line-height:1;color:#fff}
+.big small{font-size:22px;color:#9aa6c8;font-weight:600;display:block;margin-top:6px}
+#sub{position:absolute;left:72px;right:72px;top:976px;text-align:center;font-size:31px;font-weight:600;line-height:1.35;color:#c8d0ea;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+#sub i{font-style:normal;color:#55607f}
+#sub u{text-decoration:none;color:#fff}
+#prog{position:absolute;left:72px;right:72px;bottom:18px;height:6px;display:flex;gap:8px}
+#prog div{flex:1;background:#24304f;border-radius:3px;overflow:hidden}#prog div i{display:block;height:100%;background:#22c3a6;width:0}
+.lay{position:absolute;inset:0;display:none}
+.img{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#fff}
+.img img{max-width:94%;max-height:92%}
+.tag{position:absolute;font-family:'JetBrains Mono';font-weight:700;font-size:18px;background:#22c3a6;color:#0b1020;padding:6px 12px;border-radius:8px}
+.toast{position:absolute;right:28px;top:24px;background:#fff;color:#0b1020;border-left:8px solid #22c3a6;border-radius:12px;padding:14px 20px;font-size:22px;font-weight:700;box-shadow:0 20px 40px rgba(0,0,0,.35)}
+.toast.warn{border-color:#f5a524}
+/* pipeline */
+.kan{position:absolute;inset:0;background:#f4f6fb;padding:70px 26px 26px;display:flex;gap:12px}
+.kan h4{position:absolute;left:30px;top:18px;color:#1b2340;font-size:26px}
+.col{flex:1;background:#e7ebf5;border-radius:14px;padding:12px 10px;position:relative}
+.col p{font-size:16px;font-weight:700;color:#3b4566;height:44px;line-height:1.25}
+.col p span{display:block;font-family:'JetBrains Mono';font-size:13px;color:#8a93b2}
+.card{position:absolute;width:150px;background:#fff;border-radius:12px;padding:12px;color:#1b2340;font-size:16px;font-weight:700;box-shadow:0 10px 24px rgba(27,35,64,.18);border-left:6px solid #6c5ce7}
+.card span{display:block;font-size:13px;color:#7c86a6;font-weight:600}
+.hist{position:absolute;right:30px;bottom:30px;width:520px;background:#fff;border-radius:16px;padding:18px 22px;color:#1b2340;box-shadow:0 20px 40px rgba(27,35,64,.2)}
+.hist h5{font-size:20px;margin-bottom:8px}
+.hist div{font-size:17px;padding:8px 0;border-top:1px solid #eef0f6;display:flex;gap:10px}
+.hist div b{color:#6c5ce7}
+/* chat */
+.chat{position:absolute;inset:0;background:#f7f5ef;color:#2b2a26;padding:40px 120px}
+.chat .head{display:flex;align-items:center;gap:14px;font-size:20px;color:#6b6760;margin-bottom:26px}
+.chat .head img{height:34px}
+.msg{max-width:860px;margin-left:auto;background:#e9e4d8;border-radius:20px;padding:18px 24px;font-size:25px;line-height:1.4;margin-bottom:18px}
+.tool{display:inline-flex;align-items:center;gap:10px;font-family:'JetBrains Mono';font-size:17px;background:#fff;border:1px solid #ddd6c6;border-radius:10px;padding:8px 14px;margin:0 10px 12px 0}
+.tool::before{content:'';width:10px;height:10px;border-radius:50%;background:#22c3a6}
+.ans{background:#fff;border:1px solid #e6e0d2;border-radius:16px;padding:18px 24px;font-size:22px;line-height:1.5;max-width:980px}
+.ans b{color:#c96442}
+.cur{display:inline-block;width:3px;height:28px;background:#2b2a26;vertical-align:middle;margin-left:3px}
+/* call */
+.phone{position:absolute;inset:0;background:linear-gradient(160deg,#141b33,#0f2a3a);display:flex;align-items:center;justify-content:center;gap:80px}
+.ph{width:300px;height:560px;border-radius:44px;background:#0b1020;border:3px solid #2c3a63;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px}
+.ph .av{width:120px;height:120px;border-radius:50%;background:#22c3a6;display:flex;align-items:center;justify-content:center;font-size:56px}
+.ph .wave{display:flex;gap:6px;align-items:center;height:80px}.ph .wave i{display:block;width:8px;border-radius:4px;background:#22c3a6}
+.steps{display:flex;flex-direction:column;gap:18px}
+.st{width:520px;background:rgba(255,255,255,.06);border:2px solid #2c3a63;border-radius:16px;padding:18px 22px;font-size:26px;font-weight:700}
+.st.on{border-color:#22c3a6;background:rgba(34,195,166,.12)}
+/* workflow chain */
+.chain{position:absolute;left:0;right:0;bottom:30px;display:flex;justify-content:center;gap:14px}
+.node{background:#1b2340;color:#fff;border-radius:14px;padding:14px 18px;font-size:19px;font-weight:700;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.node.d{background:#f5a524;color:#1b2340}
+.arrow{color:#22c3a6;font-size:28px;font-weight:900;align-self:center}
+.switch{position:absolute;right:30px;top:24px;display:flex;align-items:center;gap:14px;background:#fff;color:#1b2340;border-radius:14px;padding:12px 18px;font-size:22px;font-weight:800;box-shadow:0 20px 40px rgba(0,0,0,.3)}
+.sw{width:70px;height:38px;border-radius:19px;background:#c7cbe0;position:relative}.sw i{position:absolute;top:4px;left:4px;width:30px;height:30px;border-radius:50%;background:#fff}
+/* intro / outro */
+#intro,#outro{position:absolute;inset:0;display:none;align-items:center;justify-content:center;flex-direction:column;text-align:center;background:radial-gradient(900px 600px at 50% 40%,#1b2550,#0b1020)}
+#intro img.lg,#outro img.lg{height:150px;margin-bottom:26px}
+#intro h1,#outro h1{font-size:96px;font-weight:900;letter-spacing:-2px}
+#intro h1 em,#outro h1 em{font-style:normal;color:#22c3a6}
+#intro p,#outro p{font-size:30px;color:#9aa6c8;margin-top:14px}
+.pills{display:flex;gap:18px;margin-top:40px}
+.pill{font-size:28px;font-weight:800;background:#151c33;border:2px solid #22c3a6;border-radius:999px;padding:12px 28px}
+.logos{display:flex;gap:46px;align-items:center;margin-top:46px}
+.logos .lp{background:#fff;border-radius:16px;padding:14px 22px;display:flex;align-items:center}
+.logos img{height:46px}
+</style></head><body>
+<div id="bg"></div><div id="grid"></div>
+<div id="main">
+<div id="top"><div id="chip">00</div><div id="ttl"></div><div id="brand"><div>Soutenance de stage · RapidoCRM<br>Mohamed Sadok Dridi · ESPRIT × BraindCode</div><img src="a/rapidocrm.png"></div></div>
+<div id="screen"><div id="bar"><s style="background:#ff5f57"></s><s style="background:#febc2e"></s><s style="background:#28c840"></s><span id="url">app.rapidocrm</span></div>
+<div id="stage"></div></div>
+<div id="side"></div>
+<div id="sub"></div>
+</div>
+<div id="intro"><img class="lg" src="a/rapidocrm.png"><h1>Rapido<em>CRM</em></h1><p>Le parcours complet d'un prospect, de sa découverte à l'automatisation</p><p style="font-size:24px;margin-top:30px">Mohamed Sadok Dridi · Stage de fin d'études · ESPRIT × BraindCode</p></div>
+<div id="outro"><img class="lg" src="a/rapidocrm.png"><h1>Une seule <em>plateforme</em></h1><div class="pills"><div class="pill">Prospection</div><div class="pill">Pipeline</div><div class="pill">IA</div><div class="pill">Automatisation</div></div><div class="logos"><span class="lp"><img src="a/braindcode.png"></span><span class="lp"><img src="a/claude.webp"></span></div><p style="margin-top:36px">Merci · Mohamed Sadok Dridi</p></div>
+<div id="prog"><div><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div></div>
+<script src="cfg.js"></script>
+<script src="scenes.js"></script>
+</body></html>

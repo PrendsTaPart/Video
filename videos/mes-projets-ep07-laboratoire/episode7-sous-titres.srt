@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,870
+Quatre heures cinquante-huit du matin. Ton labo est déjà prêt.
+
+2
+00:00:03,130 --> 00:00:05,350
+Voici FoodEatUp Laboratoire, un de mes projets.
+
+3
+00:00:05,670 --> 00:00:07,570
+Les commandes des boutiques arrivent toutes au même endroit.
+
+4
+00:00:07,810 --> 00:00:10,570
+La production se planifie, les étiquettes sortent toutes seules.
+
+5
+00:00:10,710 --> 00:00:13,830
+Le contrôle qualité se fait sur l'écran, le dossier est prêt en un clic.
+
+6
+00:00:14,170 --> 00:00:16,650
+Les livraisons partent, et le siège suit tout le réseau.
+
+7
+00:00:16,810 --> 00:00:18,310
+Ton labo, sur un seul écran.
+
+8
+00:00:18,490 --> 00:00:21,100
+Le lien est sous la vidéo : clique sur « Voir le projet ».

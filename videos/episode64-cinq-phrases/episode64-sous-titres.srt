@@ -1,0 +1,55 @@
+1
+00:00:00,350 --> 00:00:02,970
+Je t'apprends à réfléchir comme un pro, en cinq phrases.
+
+2
+00:00:03,410 --> 00:00:08,730
+Un nouveau plat, la livraison, un deuxième resto ? Avant de dépenser un euro, dis ces cinq phrases à Claude.
+
+3
+00:00:09,130 --> 00:00:11,430
+Un : explique-moi ce sujet avec des mots très simples.
+
+4
+00:00:11,690 --> 00:00:13,530
+Tu sais enfin où tu mets les pieds.
+
+5
+00:00:13,590 --> 00:00:15,390
+Deux : donne-moi dix versions différentes.
+
+6
+00:00:15,770 --> 00:00:18,350
+Dix noms, dix recettes, dix prix. C'est toi qui choisis.
+
+7
+00:00:18,590 --> 00:00:20,810
+Trois : quels risques cachés vois-tu dans mon plan ?
+
+8
+00:00:21,070 --> 00:00:22,810
+Il relit tout et te montre les pièges.
+
+9
+00:00:23,030 --> 00:00:25,170
+Quatre : défends le point de vue opposé au mien.
+
+10
+00:00:25,430 --> 00:00:28,990
+Il te donne toutes les raisons d'avoir tort. Avant que ce soit tes clients qui le fassent.
+
+11
+00:00:28,790 --> 00:00:32,710
+Cinq : si ça rate quand même, analyse ce qui n'a pas marché, et pourquoi.
+
+12
+00:00:32,970 --> 00:00:34,350
+Tu sais quoi changer la prochaine fois.
+
+13
+00:00:34,670 --> 00:00:37,130
+Ce ne sont pas des formules magiques. Juste les bonnes questions.
+
+14
+00:00:37,430 --> 00:00:39,330
+Écris PHRASES en commentaire, je t'envoie les cinq.

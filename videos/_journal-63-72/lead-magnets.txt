@@ -1,0 +1,12 @@
+63 30333950-209f-47e6-9e9f-f7b3a2e6f465
+64 92671831-063a-4e4f-a9b7-10ab02521c6f
+65 5f7ac648-d4d4-4e2e-9bbd-cb98152e8c78
+66 cd9351cc-f0ef-4972-a53b-475ac33d4574
+formations: 63 cinq-demandes-qui-remplacent-un-consultant | 64 cinq-phrases-avant-de-te-lancer | 65 claude-gere-une-boutique | 66 la-phrase-expert
+67 125965d1-875d-4aa9-ba74-cf0758499a8f
+68 2bde7ce9-ce05-41f5-b63c-0fd54ddd353e
+69 5b758965-0237-4188-96b3-7123f83697de
+70 4929df52-1894-4575-8490-e137d11927ae
+71 b5e54f76-3ec4-41d5-ac9b-8b7d3b73d3cf
+72 1759d101-7dec-4166-8a73-41341498ce91
+formations: 67 cinq-projets-claude-week-end | 68 cinq-reglages-de-claude | 69 mes-outils-a-la-place-de-l-agence | 70 especes-ou-carte-le-calcul | 71 ton-vrai-salaire-a-l-heure | 72 les-ia-chinoises-a-connaitre

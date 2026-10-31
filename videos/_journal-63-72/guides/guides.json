@@ -1,0 +1,317 @@
+{
+ "63": {
+  "slug": "episode63-claude-consultant",
+  "kw": "CONSULTANT",
+  "titre": "Les 5 demandes qui remplacent un consultant",
+  "sous": "Ce que je demande à Claude pour mon restaurant, et que presque personne ne lui demande.",
+  "items": [
+   [
+    "Mon bras droit",
+    "Tu es mon bras droit dans mon restaurant [type, ville]. Mon seul objectif cette semaine : [ex. remplir le mardi soir]. Donne-moi le plan de la semaine, jour par jour, tâche par tâche, avec qui fait quoi et comment je saurai que ça a marché.",
+    "Un objectif à la fois. Il découpe, tu exécutes."
+   ],
+   [
+    "Le prof particulier",
+    "Tu es formateur en restauration. Mon nouvel employé de salle doit apprendre [ex. les allergènes]. Prépare trois leçons courtes, une fiche à garder sur soi et cinq questions de contrôle. Note où il en est, et à la prochaine séance reprends là où il s'est arrêté.",
+    "Garde la même conversation : il se souvient de la progression."
+   ],
+   [
+    "Le psychologue du menu",
+    "Voici ma carte : [colle ta carte avec les prix]. Relis-la comme un spécialiste de la psychologie du menu : quel plat mettre en haut, comment écrire les prix pour qu'on ne les compare pas, et quels plats regrouper. Explique chaque conseil en une phrase.",
+    "Teste un changement à la fois et regarde ce qui se vend."
+   ],
+   [
+    "L'oreille des clients",
+    "Voici mes derniers avis clients : [colle-les]. Dis-moi ce qui revient le plus souvent, en bien et en mal, classé par fréquence, avec une action simple pour chaque point négatif.",
+    "Retire les noms des clients avant de coller les avis."
+   ],
+   [
+    "Le tableau qui parle",
+    "Explique-moi le coût de mon plat [nom] avec ces ingrédients et ces quantités : [liste]. Construis-moi un petit tableau interactif où je peux bouger les quantités et voir le coût changer.",
+    "Vérifie les prix d'achat avec tes vraies factures."
+   ]
+  ]
+ },
+ "64": {
+  "slug": "episode64-cinq-phrases",
+  "kw": "PHRASES",
+  "titre": "Les 5 phrases à dire à Claude avant de te lancer",
+  "sous": "Un nouveau plat, la livraison, un deuxième resto : avant de dépenser un euro.",
+  "items": [
+   [
+    "Comprendre",
+    "Explique-moi ce sujet avec des mots très simples : [sujet]. Comme si je n'y connaissais rien.",
+    "Tu sais enfin où tu mets les pieds."
+   ],
+   [
+    "Explorer",
+    "Donne-moi dix versions différentes de [mon idée] : dix noms, dix recettes, dix prix. Classe-les de la plus simple à la plus ambitieuse.",
+    "C'est toi qui choisis, pas le premier jet."
+   ],
+   [
+    "Anticiper",
+    "Voici mon plan : [plan]. Quels risques cachés vois-tu ? Classe-les du plus probable au moins probable, avec un moyen de les éviter.",
+    "Il relit tout et te montre les pièges."
+   ],
+   [
+    "Se faire contredire",
+    "Défends le point de vue opposé au mien sur [mon idée]. Donne-moi toutes les raisons pour lesquelles je pourrais avoir tort.",
+    "Mieux vaut l'entendre de Claude que de tes clients."
+   ],
+   [
+    "Apprendre d'un échec",
+    "Ça n'a pas marché : [ce qui s'est passé]. Analyse ce qui n'a pas marché, et pourquoi. Puis dis-moi ce que je dois changer la prochaine fois.",
+    "Tu repars avec une leçon, pas juste une déception."
+   ]
+  ]
+ },
+ "65": {
+  "slug": "episode65-claude-boutique",
+  "kw": "BOUTIQUE",
+  "titre": "Anthropic a confié une boutique à Claude : l'histoire complète",
+  "sous": "L'expérience « Project Vend » racontée simplement, et ce qu'elle change pour ton restaurant.",
+  "items": [
+   [
+    "L'expérience",
+    "En 2025, Anthropic (l'entreprise qui fabrique Claude) et la société Andon Labs ont laissé une version de Claude gérer seule un petit magasin installé dans les bureaux d'Anthropic : choisir les produits, fixer les prix, gérer le stock et discuter avec les clients (les salariés).",
+    ""
+   ],
+   [
+    "Ce qui a marché",
+    "Claude était poli, rapide, disponible à toute heure, et savait trouver des fournisseurs pour des demandes inhabituelles.",
+    ""
+   ],
+   [
+    "Les erreurs",
+    "Il s'est laissé convaincre d'accorder des réductions à beaucoup de monde, a vendu certains objets à perte, et a même affirmé un jour qu'il pourrait livrer en personne, en veste et cravate, alors qu'il n'a pas de corps.",
+    ""
+   ],
+   [
+    "La leçon",
+    "Une IA seule, sans règles ni bons outils, ne tient pas une boutique. Elle a besoin de garde-fous : des prix minimums, des règles de remise, des outils fiables, et un humain qui vérifie.",
+    ""
+   ],
+   [
+    "Pour ton resto",
+    "C'est pour ça que dans FoodEatUp, chaque agent a des règles. Caroline, par exemple, ne réserve que sur les créneaux vraiment libres. L'IA est un super employé, pas encore un patron.",
+    "Source : Anthropic, « Project Vend », anthropic.com/research"
+   ]
+  ]
+ },
+ "66": {
+  "slug": "episode66-la-phrase-expert",
+  "kw": "EXPERT",
+  "titre": "La phrase EXPERT",
+  "sous": "À coller à la fin de tes demandes importantes à Claude.",
+  "items": [
+   [
+    "La phrase à copier",
+    "Avant de répondre, dis-moi : 1) ce qu'un professionnel de ce domaine ferait de plus que ce que je demande ; 2) les informations dont tu as besoin au départ ; 3) les outils ou méthodes que tu utiliserais ; 4) comment on vérifie que le résultat est juste. Puis réécris ma demande avec tout ça, et réponds à la version réécrite.",
+    "Colle-la après ta demande, dans le même message."
+   ],
+   [
+    "Exemple : le planning",
+    "Je demande un planning pour mon équipe de salle. Sans la phrase : un tableau avec des noms et des horaires. Avec la phrase : il tient compte des heures de pointe, des jours de repos, des congés déjà posés et du budget d'heures, puis il réécrit ma demande.",
+    ""
+   ],
+   [
+    "Quand l'utiliser",
+    "Pour tout ce qu'un pro ferait mieux que toi : planning, prix, contrat, recrutement, plan d'ouverture, budget.",
+    "Pas besoin pour un simple mail."
+   ]
+  ]
+ },
+ "67": {
+  "slug": "episode67-cinq-projets-weekend",
+  "kw": "WEEKEND",
+  "titre": "5 projets à construire avec Claude en un week-end",
+  "sous": "Une fois faits, ils travaillent pour toi tous les jours.",
+  "items": [
+   [
+    "Ton tableau du matin",
+    "Demande à Claude un petit outil (un artefact) qui affiche sur une seule page : les réservations du jour, les stocks bas et les avis du jour. Si tu utilises FoodEatUp, branche-le pour que Claude lise les vraies données.",
+    "Commence avec des données copiées-collées, branche ensuite."
+   ],
+   [
+    "Ton deuxième cerveau",
+    "Crée un projet dans Claude, ajoute tes factures, ton bail et tes contrats. Pose ensuite tes questions : « Quand finit mon bail ? », « Combien j'ai payé la mozzarella le mois dernier ? ».",
+    "Vérifie toujours la réponse dans le document cité."
+   ],
+   [
+    "Le bilan du soir",
+    "Chaque soir, dans la même conversation : « Voici ce qui a marché et ce qui a coincé aujourd'hui : […]. Que dois-je changer demain ? »",
+    "Deux minutes par soir suffisent."
+   ],
+   [
+    "Ton agent de contenu",
+    "Donne à Claude ta fiche de style (couleurs, logo, ton, photos). Demande : « Prépare les posts de la semaine pour [réseaux], avec texte et idée de photo. »",
+    "Relis avant de publier."
+   ],
+   [
+    "Ton équipe d'IA",
+    "Un agent qui répond au téléphone, un qui suit les chiffres. Chez moi : Caroline (l'agent vocal de FoodEatUp) et PrediBot.",
+    "Donne des règles claires à chaque agent."
+   ]
+  ]
+ },
+ "68": {
+  "slug": "episode68-cinq-reglages",
+  "kw": "CONFIG",
+  "titre": "Les 5 réglages de Claude, pas à pas",
+  "sous": "Pour que Claude devienne un employé qui connaît ta maison.",
+  "items": [
+   [
+    "Les projets",
+    "Crée un projet « Mon resto ». Dans ses instructions, explique une fois pour toutes : ta carte, tes horaires, ton équipe, ta façon de parler. Ajoute tes documents utiles.",
+    "Il s'en souvient à chaque conversation du projet."
+   ],
+   [
+    "Les compétences",
+    "Apprends-lui une tâche que tu répètes, par exemple tes fiches recettes : un modèle, un exemple réussi, les règles. Il la refait pareil à chaque fois.",
+    ""
+   ],
+   [
+    "Les artefacts",
+    "Demande un outil plutôt qu'un texte : « Fais-moi un calculateur de prix de vente », « un planning », « une affiche ». Tu peux le réutiliser et le partager.",
+    ""
+   ],
+   [
+    "Les connecteurs",
+    "Dans les réglages de Claude, branche ta messagerie, ton agenda et les outils que tu utilises (FoodEatUp propose son connecteur). Claude lit alors tes réservations sans que tu les réexpliques.",
+    "Ne branche que ce dont tu as besoin."
+   ],
+   [
+    "Claude dans ton navigateur",
+    "Avec l'extension Claude pour Chrome, Claude peut cliquer et remplir des formulaires à ta place. Garde la main sur les validations et les paiements.",
+    "Tu valides toujours les actions importantes."
+   ]
+  ]
+ },
+ "69": {
+  "slug": "episode69-outils-agence",
+  "kw": "OUTILS",
+  "titre": "Mes outils (ceux qui remplacent l'agence web)",
+  "sous": "Ce que j'utilise vraiment, avec les liens.",
+  "items": [
+   [
+    "Lovable · le site",
+    "Tu décris ton site, il le construit : pages, formulaires, réservations. lovable.dev",
+    ""
+   ],
+   [
+    "Claude · le chef de chantier",
+    "Il écrit les textes, vérifie tout et pilote les autres outils. claude.ai",
+    ""
+   ],
+   [
+    "Canva · affiches et menus",
+    "Pour les affiches, menus et supports à imprimer. canva.com",
+    ""
+   ],
+   [
+    "ElevenLabs · la voix",
+    "La voix de mes vidéos (celle de l'épisode). elevenlabs.io",
+    ""
+   ],
+   [
+    "RapidoCMS · les réseaux",
+    "Pour programmer les posts sur tous les réseaux en une seule fois. Lien d'accès : michael.foodeatup.fr",
+    ""
+   ]
+  ]
+ },
+ "70": {
+  "slug": "episode70-carte-ou-especes",
+  "kw": "CAISSE",
+  "titre": "Espèces ou carte : le calcul complet",
+  "sous": "Remplis avec tes chiffres réels (ceux de ton contrat bancaire).",
+  "items": [
+   [
+    "Ce que coûte la carte",
+    "Montant du paiement × ta commission (en %) + éventuels frais fixes par paiement = coût. Exemple de la vidéo : 20 € × 1 % = 0,20 €, il reste 19,80 €.",
+    "Ta commission réelle est dans ton contrat d'encaissement."
+   ],
+   [
+    "Ce que coûtent les espèces",
+    "Temps de comptage le soir + trajets à la banque + frais de dépôt éventuels + risque d'erreur ou de vol. Mets un prix sur ton temps (ton salaire à l'heure).",
+    ""
+   ],
+   [
+    "Le temps du soir",
+    "Chronomètre une semaine : combien de minutes par soir pour compter, ranger, aller à la banque ? Multiplie par ton coût horaire.",
+    ""
+   ],
+   [
+    "Comment tout suivre",
+    "Rapproche chaque soir ce qui est entré, ce qui a été prélevé et ce qui reste. Dans FoodEatUp, les paiements par carte sont rapprochés automatiquement.",
+    ""
+   ]
+  ]
+ },
+ "71": {
+  "slug": "episode71-salaire-horaire-patron",
+  "kw": "HEURE",
+  "titre": "Calcule ton vrai salaire à l'heure",
+  "sous": "Le calcul de l'épisode, à refaire avec tes chiffres.",
+  "items": [
+   [
+    "Ce que tu te verses",
+    "Ce qui arrive vraiment sur ton compte perso chaque mois (net). Exemple de la vidéo : 2 500 €.",
+    ""
+   ],
+   [
+    "Tes vraies heures",
+    "Toutes tes heures, y compris le planning du dimanche soir, les commandes et les appels. Heures par mois = heures par semaine × 52 ÷ 12. Exemple : 70 h × 52 ÷ 12 ≈ 303 h.",
+    ""
+   ],
+   [
+    "Le calcul",
+    "Salaire à l'heure = ce que tu te verses ÷ heures par mois. Exemple : 2 500 ÷ 303 ≈ 8,25 € de l'heure. Compare avec le SMIC horaire net (plus de 9 €).",
+    ""
+   ],
+   [
+    "Les heures à reprendre",
+    "Liste les tâches qui te prennent des heures (appels, planning, commandes) et confie-les : agent qui décroche, planning préparé avec l'IA, alertes de stock bas. Chaque heure reprise fait monter ton salaire horaire.",
+    ""
+   ]
+  ]
+ },
+ "72": {
+  "slug": "episode72-ia-chinoises",
+  "kw": "CHINE",
+  "titre": "Les IA chinoises à connaître (et Mistral)",
+  "sous": "La liste complète, avec les liens. Vérifie toujours où partent tes données.",
+  "items": [
+   [
+    "DeepSeek",
+    "Gratuit et ouvert à tous ; il a fait trembler la Silicon Valley début 2025. chat.deepseek.com",
+    ""
+   ],
+   [
+    "Qwen (Alibaba)",
+    "Discute, crée des images et fabrique même des sites. chat.qwen.ai",
+    ""
+   ],
+   [
+    "Wan (Alibaba)",
+    "Tu écris une phrase, il te sort une vidéo. wan.video",
+    ""
+   ],
+   [
+    "GLM (Zhipu)",
+    "Dans les tests publics, il se mesure aux meilleurs modèles. chat.z.ai",
+    ""
+   ],
+   [
+    "Kimi (Moonshot AI)",
+    "Il lit de très gros documents d'un seul coup. kimi.com",
+    ""
+   ],
+   [
+    "En Europe : Mistral",
+    "L'IA française, Le Chat. chat.mistral.ai",
+    "Pour les données de tes clients : vérifie où elles sont stockées avant de les confier à un outil."
+   ]
+  ]
+ }
+}

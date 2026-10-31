@@ -1,0 +1,109 @@
+{
+ "ep": 93,
+ "badge": "MES PROJETS EN PUB · INTRO",
+ "theme": {
+  "bg": "#0F1A23",
+  "bg2": "#05080d",
+  "accent": "#007BFF",
+  "accent2": "#FFA500"
+ },
+ "kw": [
+  "pub",
+  "sienne.",
+  "IA",
+  "restaurants",
+  "entreprises",
+  "clients",
+  "problème",
+  "solution",
+  "essayer",
+  "Demain",
+  "caisse",
+  "poche",
+  "abonne-toi",
+  "nouveaux"
+ ],
+ "avatar": {
+  "5": "04-presentation",
+  "7": "10-celebration"
+ },
+ "scenes": [
+  {
+   "t": "wall",
+   "text": "Mes projets en *pub*",
+   "imgs": [
+    "m-foodeatup-caisse-mobile.jpg",
+    "m-rapidocrm.jpg",
+    "m-foodeatup-laboratoire.jpg",
+    "m-plan-it.jpg",
+    "m-application-haccp.jpg",
+    "m-citycar.jpg",
+    "m-rapidomeet.jpg",
+    "m-foodeatup-menu-digital.jpg",
+    "m-braindcode.jpg"
+   ]
+  },
+  {
+   "t": "card",
+   "img": "claude-construit.jpg",
+   "word": "Construits avec *l'IA*"
+  },
+  {
+   "t": "wall",
+   "text": "Pour les *restaurants*",
+   "imgs": [
+    "m-foodeatup-caisse-mobile.jpg",
+    "m-foodeatup-kds.jpg",
+    "m-application-haccp.jpg",
+    "m-foodeatup-fidelite.jpg",
+    "m-foodeatup-menu-digital.jpg",
+    "m-foodeatup-recettes.jpg"
+   ]
+  },
+  {
+   "t": "wall",
+   "text": "Pour les *entreprises*",
+   "imgs": [
+    "m-rapidocrm.jpg",
+    "m-rapidomeet.jpg",
+    "m-rapidoin.jpg",
+    "m-webinaire-rapidocms.jpg",
+    "m-publisher-bot.jpg",
+    "m-plan-it.jpg"
+   ]
+  },
+  {
+   "t": "wall",
+   "text": "Et pour mes *clients*",
+   "imgs": [
+    "m-citycar.jpg",
+    "m-salle-live.jpg",
+    "m-la-chaine-fraternelles.jpg",
+    "m-alto.jpg",
+    "m-coach-cuisine.jpg",
+    "m-plateforme-assurance.jpg"
+   ]
+  },
+  {
+   "t": "chips",
+   "text": "Chaque *pub*",
+   "items": [
+    "Le problème",
+    "La solution",
+    "Comment l'essayer"
+   ]
+  },
+  {
+   "t": "hook",
+   "text": "Demain : la caisse dans la *poche*",
+   "img": "mockup-mobile.png"
+  },
+  {
+   "t": "cta",
+   "logo": "michael-rond.png",
+   "word": "Ne rate aucun *projet*",
+   "btn": "Abonne-toi",
+   "url": "michael.foodeatup.fr"
+  }
+ ]
+}

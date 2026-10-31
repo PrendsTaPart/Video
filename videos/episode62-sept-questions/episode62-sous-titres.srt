@@ -1,0 +1,83 @@
+1
+00:00:00,400 --> 00:00:03,920
+On me demande souvent : j'ai une idée de restaurant, par où je commence ?
+
+2
+00:00:03,920 --> 00:00:06,880
+Ma réponse : sept questions à poser à Claude. Rien d'autre.
+
+3
+00:00:07,400 --> 00:00:08,660
+Question un : trouver l'idée.
+
+4
+00:00:09,000 --> 00:00:13,440
+Donne-moi cinq idées de restaurant pour mon quartier, avec peu de concurrence, et dis-moi qui viendra manger.
+
+5
+00:00:13,900 --> 00:00:16,060
+Question deux : vérifier avant de dépenser.
+
+6
+00:00:16,440 --> 00:00:19,960
+Est-ce que des gens vont vraiment payer pour ça ? Et pourquoi ça pourrait rater ?
+
+7
+00:00:19,960 --> 00:00:22,380
+La plupart sautent cette étape. C'est pour ça qu'ils ferment.
+
+8
+00:00:22,820 --> 00:00:24,080
+Question trois : l'offre.
+
+9
+00:00:24,040 --> 00:00:27,580
+Quelle carte courte, quel prix, et quelle phrase donne envie de réserver ?
+
+10
+00:00:27,580 --> 00:00:29,240
+Question quatre : commencer petit.
+
+11
+00:00:29,240 --> 00:00:32,520
+Quelle est la version la plus simple que je peux ouvrir ce mois-ci ?
+
+12
+00:00:32,520 --> 00:00:34,660
+Question cinq : la page qui donne faim.
+
+13
+00:00:34,600 --> 00:00:36,380
+Écris la page qui fait réserver une table.
+
+14
+00:00:36,800 --> 00:00:38,540
+Question six : faire venir du monde.
+
+15
+00:00:38,880 --> 00:00:41,300
+Donne-moi dix idées de vidéos pour trouver mes premiers clients.
+
+16
+00:00:41,620 --> 00:00:42,880
+Question sept : ouvrir.
+
+17
+00:00:43,280 --> 00:00:45,580
+Fais-moi le plan de la première semaine, jour par jour.
+
+18
+00:00:46,000 --> 00:00:47,880
+Claude ne répond pas mieux parce que tu es plus malin.
+
+19
+00:00:48,060 --> 00:00:51,060
+Il répond mieux parce que tu poses les bonnes questions, dans le bon ordre.
+
+20
+00:00:51,280 --> 00:00:55,740
+Et le jour de l'ouverture ? Réservations, carte, fidélité : FoodEatUp prend le relais.
+
+21
+00:00:55,920 --> 00:00:59,420
+Les sept questions complètes sont dans mon guide. Écris OUVRIR en commentaire.

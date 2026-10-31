@@ -1,0 +1,85 @@
+{
+ "ep": 94,
+ "slug": "foodeatup-caisse-mobile",
+ "badge": "MES PROJETS EN PUB",
+ "theme": {
+  "bg": "#0F1A23",
+  "bg2": "#05080d",
+  "accent": "#007BFF",
+  "accent2": "#FFA500"
+ },
+ "kw": [
+  "poche",
+  "allers-retours",
+  "attendent",
+  "retard",
+  "Caisse",
+  "Mobile",
+  "téléphone",
+  "cuisine",
+  "réseau",
+  "école",
+  "gratuite",
+  "ce",
+  "soir"
+ ],
+ "avatar": {
+  "0": "02-salut",
+  "3": "04-presentation",
+  "7": "01-bienvenue"
+ },
+ "scenes": [
+  {
+   "t": "hook",
+   "text": "La commande à table, l'encaissement dans la *poche*.",
+   "img": "mockup-mobile.png"
+  },
+  {
+   "t": "photo",
+   "span": 2,
+   "img": "ambiance-service.jpg",
+   "word": "Samedi soir…",
+   "ko": [
+    "Les clients attendent",
+    "La cuisine prend du retard"
+   ],
+   "tag": "Image d'illustration générée par IA",
+   "pan": -50,
+   "pan2": -62
+  },
+  {
+   "t": "skip",
+   "span": 0
+  },
+  {
+   "t": "reveal",
+   "logo": "logo-foodeatup.webp",
+   "nom": "FoodEatUp Caisse Mobile",
+   "img": "mockup-mobile.png"
+  },
+  {
+   "t": "feature",
+   "icon": "icone-a-table.png",
+   "word": "À table → *en cuisine*",
+   "screen": "ecran-desktop.jpg"
+  },
+  {
+   "t": "feature",
+   "icon": "icone-sans-reseau.png",
+   "word": "Même *sans réseau*",
+   "mock": "mockup-mobile.png"
+  },
+  {
+   "t": "card",
+   "img": "etape-3.png",
+   "word": "Prêt dès sa *1re soirée*"
+  },
+  {
+   "t": "cta",
+   "logo": "logo-foodeatup.webp",
+   "word": "Gratuite avec ta caisse *FoodEatUp*",
+   "btn": "Essaie-la ce soir",
+   "url": "caisse.foodeatup.fr"
+  }
+ ]
+}

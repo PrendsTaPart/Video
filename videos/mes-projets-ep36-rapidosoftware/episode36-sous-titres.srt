@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,470
+Ton CRM, tes réseaux et ton équipe, dans une seule suite.
+
+2
+00:00:03,810 --> 00:00:05,770
+Voici RapidoSoftware, un de mes projets.
+
+3
+00:00:06,200 --> 00:00:08,710
+RapidoCRM trouve tes prospects et suit tes ventes.
+
+4
+00:00:08,940 --> 00:00:11,850
+RapidoCMS prépare et publie tes posts sur tes réseaux.
+
+5
+00:00:12,070 --> 00:00:15,390
+RapidoRH gère les plannings, les congés et les projets de l'équipe.
+
+6
+00:00:15,550 --> 00:00:18,030
+Tu y accèdes où que tu sois, sur tous tes appareils.
+
+7
+00:00:17,890 --> 00:00:20,590
+Et l'IA fait avancer le travail dans les trois logiciels.
+
+8
+00:00:20,790 --> 00:00:23,540
+Le lien est sous la vidéo : clique sur « Voir le projet ».

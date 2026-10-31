@@ -1,0 +1,14 @@
+Tu utilises Claude à moitié.
+Il y a cinq réglages, et la plupart des gens en sautent au moins un.
+Un : les projets.
+Tu expliques ton resto une seule fois. Ta carte, tes horaires, ta façon de parler. Ensuite, il s'en souvient à chaque conversation.
+Deux : les compétences.
+Tu lui apprends une tâche, comme tes fiches recettes, et il la refait pareil à chaque fois.
+Trois : les artefacts.
+Au lieu d'un texte, il te fabrique un vrai outil. Un calculateur de prix, un planning, une affiche.
+Quatre : les connecteurs.
+Tu branches ta messagerie, ton agenda, et même FoodEatUp. Il lit tes réservations sans que tu lui réexpliques.
+Cinq : Claude dans ton navigateur.
+Il clique et remplit les formulaires à ta place.
+Avec ces cinq réglages, Claude n'est plus une simple discussion. C'est un employé qui connaît ta maison.
+Écris CONFIG en commentaire, je t'envoie le pas à pas.

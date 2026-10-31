@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,990
+Ton CRM ne prend plus de notes. Il passe les appels.
+
+2
+00:00:03,230 --> 00:00:05,330
+Voici RapidoCRM, un de mes projets.
+
+3
+00:00:05,690 --> 00:00:08,690
+Tes prospects sont trouvés dans les annuaires officiels et sur Google Maps.
+
+4
+00:00:08,950 --> 00:00:10,410
+L'agent vocal les appelle pour toi.
+
+5
+00:00:10,670 --> 00:00:12,230
+Il pose le rendez-vous dans ton agenda.
+
+6
+00:00:12,550 --> 00:00:15,130
+Rendez-vous, factures et échéances au même endroit.
+
+7
+00:00:15,410 --> 00:00:17,530
+Tu écris une phrase, le CRM fait le travail.
+
+8
+00:00:17,810 --> 00:00:20,600
+Le lien est sous la vidéo : clique sur « Voir le projet ».

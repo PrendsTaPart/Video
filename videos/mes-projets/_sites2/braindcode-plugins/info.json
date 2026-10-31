@@ -1,0 +1,49 @@
+{
+ "url": "https://plugin.braindcode.com/",
+ "title": "Prompts Claude et serveur MCP pour piloter votre entreprise — BraindCode",
+ "desc": "Marketplace de prompts en français, serveur MCP à brancher sur Claude et Académie : construisez votre base de connaissance, connectez vos logiciels, gardez la validation humaine.",
+ "og": "https://plugin.braindcode.com/og-image.jpg",
+ "h1": [
+  "Claude pilote votre entreprise de A à Z."
+ ],
+ "h2": [
+  "Voyez-le travailler.",
+  "Le même dirigeant. Deux réalités.",
+  "Ils délèguent déjà à Claude.",
+  "Trois étapes, en langage humain.",
+  "4 logiciels métier, un seul cerveau.",
+  "Votre espace vous suit jusque dans Claude.",
+  "BraindCode Build : construisez l'extension qui manque",
+  "Tout l'univers BraindCode, en trois familles.",
+  "Les plugins BraindCode.",
+  "Nouveautés de la marketplace",
+  "L'équipe qui travaille pour vous.",
+  "Tapez une phrase. Regardez faire.",
+  "La bibliothèque de prompts",
+  "Une journée. Un dirigeant. Tout roule."
+ ],
+ "bg": "rgb(247, 249, 252)",
+ "font": "Inter, ui-sans-serif, system-ui, sans-serif",
+ "btn": [
+  [
+   "rgb(255, 255, 255)",
+   19
+  ],
+  [
+   "oklch(1 0 0)",
+   18
+  ],
+  [
+   "rgb(0, 152, 243)",
+   7
+  ],
+  [
+   "rgb(191, 227, 252)",
+   2
+  ]
+ ],
+ "text": "Hackathon BraindCode Build — construisez l'extension qui manque\nParticiper\nBraindCode\nAccueil\nProduit\nMéthode\nRessources\nEntreprise\nConnexion\nCréer un compte\nLa marketplace Claude Code des logiciels Rapido\nClaude pilote votre entreprise de A à Z.\n33 plugins, 544 compétences et 77 agents IA qui connectent Claude à vos outils Rapido, Google, Canva, Meta Ads, n8n et plus — pour gérer restaurant, ventes, marketing, RH et automatisations en langage naturel.\nInstaller le plugin\nVoir sur GitHub\nDernier push il y a 5 j\nOpen source\n100% Claude Code natif\nValidation humaine\nClaude · Rapido Plugins\n⌘K\nPrépare ma journée : emails, agenda, alertes business▍\nVoici tes 3 priorités du jour :\n12 emails clients à valider (3 urgents)\nStock restaurant : réappro saumon avant 15h\nCampagne Meta Ads : CPA en hausse de 18%\nJe te demande validation avant tout envoi.\nFONCTIONNE AVEC\nFoodEatUp\nRapidoCRM\nRapidoCMS\nRapidoRH\nClaude\nLovable\nLovable Market\nGmail\nGoogle Calendar\nGoogle Drive\nGoogle Meet\nCanva\nFigma\nMeta\nInstagram\nFacebook\nLinkedIn\nTikTok\nYouTube\nWhatsApp\nX\nn8n\nHeyGen\nStripe\nNotion\nSlack\n32\nplugins\n524\ncompétences\n71\nagents IA\n★ 0\nstars sur GitHub\nAperçu réel\nVoyez-le travailler.\nUn extrait de la formation : Claude qui exécute — pas une démo scriptée, votre entreprise pilotée en langage naturel.\nFormation BraindCode — aperçu\nAvant / après\nLe même dirigeant. Deux réalités.\nSANS RAPIDO PLUGINS\nJongler entre 8 onglets\nRelances oubliées\nHACCP sur papier\nPosts improvisés\nReporting le dimanche soir\nAVEC RAPIDO PLUGINS\nUne seule conversation\nRelances automatiques J+7\nConformité tracée\nCalendrier éditorial exécuté\nRécap hebdo chaque vendredi 17h\nTémoignages\nIls délèguent déjà à Claude.\nSophie\nAgence événementielle\n« Mes devis sont relancés sans que j'y pense. J'ai signé 2 clients de plus le premier mois. »\nProgramme pilote 2026\nÉtude de cas\nCocuisinage Paris × Rapido Plugins\nComment un lieu événementiel parisien a compressé son admin, systématisé ses relances commerciales et bouclé toute sa boucle marketing avec Claude.\nLire le cas d'usage\n−6 h\nd'administratif / semaine\n100 %\ndes relances envoyées\n1\nboucle marketing complète\nComment ça marche\nTrois étapes, en langage humain.\n01\nInstallez le plugin dans Claude Code\nDeux commandes dans votre terminal, et Claude connaît tous vos outils. Aucune configuration complexe.\n02\nConnectez vos comptes\nRapido, Google, n8n, Canva… chacun le sien via OAuth ou clé API. Vos identifiants restent chez vous.\n03\nParlez à Claude comme à un directeur des opérations\nIl analyse, crée, exécute — et vous demande validation avant tout acte sensible (envoi, paiement, publication).\nVos systèmes\nMCP\nClaude\nCerveau\nActions\n24/7\nÉcosystème\n4 logiciels métier, un seul cerveau.\nFoodEatUp, RapidoCRM, RapidoCMS et RapidoRH — pilotés en langage naturel par Claude, connectés entre eux via MCP.\nDécouvrir les logiciels\nVoir l'écosystème\nFoodEatUp\nVotre restaurant tourne. Même quand vous dormez.\nExplorer\nRapidoCRM\nLe CRM qui se remplit tout seul.\nExplorer\nRapidoCMS\nPubliez chaque jour. Sans y passer vos soirées.\nExplorer\nRapidoRH\nVoyez qui fait quoi. Et qui déborde — avant qu'il craque.\nExplorer\nPlan'It\nVos tâches, exécutées par des agents — le prix avant, pas après.\nExplorer\nLe parcours\nVotre espace vous suit jusque dans Claude.\nQuatre temps qui existent aujourd'hui — de la première interview à la progression continue.\n1\nL'Architecte vous interviewe\n15 à 25 minutes de questions à cliquer, et votre base de connaissance est construite : votre entreprise, ",
+ "height": 26418,
+ "ok": true,
+ "rec_s": 74.102
+}

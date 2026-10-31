@@ -1,0 +1,35 @@
+1
+00:00:00,350 --> 00:00:02,830
+Et si le téléphone de tes équipiers devenait ta caisse ?
+
+2
+00:00:03,110 --> 00:00:05,490
+Voici FoodEatUp Caisse Mobile, un de mes projets.
+
+3
+00:00:05,770 --> 00:00:08,530
+Un bouton, et le téléphone est relié à ta caisse FoodEatUp.
+
+4
+00:00:08,610 --> 00:00:10,870
+Ton équipier prend la commande à table, sur son téléphone.
+
+5
+00:00:11,190 --> 00:00:13,710
+Elle part directement en cuisine, qui la suit en direct.
+
+6
+00:00:14,070 --> 00:00:17,090
+Et le client paie par carte, sur le même téléphone, sans terminal.
+
+7
+00:00:17,370 --> 00:00:19,190
+Même sans réseau, tout est enregistré.
+
+8
+00:00:19,350 --> 00:00:21,370
+L'appli est gratuite avec ta caisse FoodEatUp.
+
+9
+00:00:21,370 --> 00:00:24,120
+Le lien est sous la vidéo : clique sur « Voir le projet ».
