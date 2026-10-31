@@ -20,6 +20,10 @@ Tu reprends un travail en cours pour Michael (Journal de Michael, michael.foodea
 - **Données projets** : `videos/_journal-63-72/commun/ecrans-projets/` (`<slug>-desktop.jpg`, `<slug>-mobile.jpg`, `content.json`, `struct.json`, `faq.json`, `pages.json` = contenus réels relevés sur les sites) ; logos officiels dans `videos/_journal-63-72/commun/logos-projets/`.
 - **Site** : toutes les pages projet et les 7 projets qui étaient indisponibles sont publiés. Intro cinématographique avec voix (sans chiffres) en ouverture du site, son activé par défaut (repli « Activer le son » si le navigateur bloque) ; MP4 sur RapidoCMS : `intro-accueil-1920x1080.mp4`, `intro-accueil-1080x1920.mp4`. Un message a été envoyé à Lovable (projet `255f6f6f-ae7c-4ba7-8c89-c6e431c71eef`) : nouveaux sous-titres WebVTT, retirer les nombres écrits en dur, vérifier l'affichage des sections. Lovable ne déploie pas : Michael republie lui-même.
 
+- **Publié le 31/10** : épisodes 93 (`episode-93-mes-projets-passent-en-pub`) et 94 (`episode-94-la-commande-a-table-l-encaissement-dans-la-poche`) sur le Journal ; MP4 et vignettes dans RapidoCMS ; tous les projets et toutes les pages projet publiés ; site redéployé.
+- **Réseaux** : comptes actifs dans RapidoCMS = LinkedIn page RapidoCMS (`146076025`) et Instagram RapidoCMS (`17841429685571827`). Instagram Rapido Software, Facebook RapidoSofware, LinkedIn RapidoSoftware et profil LinkedIn de Michael sont expirés ; **aucun compte TikTok ni YouTube** n'est connecté : ces deux réseaux sont mis à l'agenda du Journal (`planifier_publication`) pour une publication à la main. Programmation : une pub par jour à 18 h (93 le 31/10, 94 le 01/11, puis 95 le 02/11, etc.). Format d'heure de `schedule_draft_tool` : `H:i:s` ; `planifier_publication` veut une date ISO en UTC (`…Z`).
+- Michael a donné son accord le 31/10 pour publier les épisodes de la série et les programmer sur les réseaux dans cette cadence, une fois chaque lot validé par lui en vidéo.
+
 ## Travail à réaliser, dans l'ordre
 
 ### 1. FAQ manquantes des pages projet
