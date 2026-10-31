@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root { --ground: #05080d; --navy: #0b2f57; --ink: #fff; --mute: #aeb8c2; --accent: #ffa500; --blue: #0a7bff; --font-display: Poppins, sans-serif; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--ground); }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; font-family: var(--font-display); color: var(--ink); }
+      .clip { position: absolute; inset: 0; }
+      #bg { background: radial-gradient(ellipse at 50% 55%, #0c1d33 0%, var(--ground) 70%); }
+      #sweep { position: absolute; left: -40%; top: -20%; width: 60%; height: 140%; background: linear-gradient(100deg, rgba(10,123,255,0) 0%, rgba(10,123,255,.22) 45%, rgba(255,255,255,.10) 50%, rgba(10,123,255,.22) 55%, rgba(10,123,255,0) 100%); }
+      #floor { position: absolute; left: 0; right: 0; bottom: 0; height: 35%; background: radial-gradient(ellipse at 50% 0%, rgba(10,123,255,.18), rgba(0,0,0,0) 60%); }
+      #stage { perspective: 1700px; perspective-origin: 50% 45%; }
+      #world { position: absolute; inset: 0; transform-style: preserve-3d; }
+      #ring { position: absolute; left: 960.0px; top: 465.0px; width: 0; height: 0; transform-style: preserve-3d; }
+      .arm { position: absolute; left: 0; top: 0; transform-style: preserve-3d; }
+      .card { position: absolute; left: -235.0px; top: -147.0px; width: 470px; height: 294px; border-radius: 18px; overflow: hidden; background: #111; box-shadow: 0 30px 70px rgba(0,0,0,.6), 0 0 0 2px rgba(255,255,255,.08); backface-visibility: hidden; }
+      .card img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+      #phoneWrap { position: absolute; left: 795.0px; top: 120px; width: 330px; height: 690px; transform-style: preserve-3d; }
+      #phone { position: absolute; inset: 0; border-radius: 43px; background: linear-gradient(145deg, #39404c, #07090c 55%, #1b2029); padding: 7px; box-shadow: 0 60px 140px rgba(0,0,0,.75), inset 0 0 0 2px rgba(255,255,255,.10); }
+      #screen { position: relative; width: 100%; height: 100%; border-radius: 37px; overflow: hidden; background: #000; }
+      #screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+      #glass { position: absolute; inset: 0; background: linear-gradient(120deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 35%); }
+      #punch { position: absolute; left: 50%; top: 15px; width: 15px; height: 15px; margin-left: -7px; border-radius: 50%; background: #05070a; box-shadow: 0 0 0 3px #11151b; z-index: 5; }
+      #home { background: #0f1a23; }
+      #home img { width: 100%; height: 100%; object-fit: cover; }
+      .cap { display: flex; justify-content: center; }
+      .capin { position: absolute; top: 880px; width: 1651px; text-align: center; }
+      .cap h1 { font-size: 58px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.12; text-shadow: 0 6px 30px rgba(0,0,0,.8); }
+      .cap p { margin-top: 14px; font-size: 30px; font-weight: 600; color: var(--mute); text-shadow: 0 4px 20px rgba(0,0,0,.9); }
+      mark { background: var(--accent); color: #0b1520; border-radius: 14px; padding: 0 14px; text-shadow: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="20" data-width="1920" data-height="1080">
+      <div id="bg" class="clip" data-start="0" data-duration="20" data-track-index="0"><div id="sweep"></div><div id="floor"></div></div>
+      <div id="stage" class="clip" data-start="0" data-duration="19" data-track-index="1" data-layout-allow-overlap data-layout-allow-overflow>
+        <div id="world">
+          <div id="ring">
+          <div class="arm" id="a0" data-ang="0.0" data-y="-230"><div class="card" id="k0"><img src="assets/d-foodeatup-caisse-mobile.jpg" alt="foodeatup-caisse-mobile" /></div></div>
+          <div class="arm" id="a1" data-ang="25.7" data-y="0"><div class="card" id="k1"><img src="assets/d-rapidocrm.jpg" alt="rapidocrm" /></div></div>
+          <div class="arm" id="a2" data-ang="51.4" data-y="230"><div class="card" id="k2"><img src="assets/d-application-haccp.jpg" alt="application-haccp" /></div></div>
+          <div class="arm" id="a3" data-ang="77.1" data-y="-230"><div class="card" id="k3"><img src="assets/d-plan-it.jpg" alt="plan-it" /></div></div>
+          <div class="arm" id="a4" data-ang="102.9" data-y="0"><div class="card" id="k4"><img src="assets/d-rapidomeet.jpg" alt="rapidomeet" /></div></div>
+          <div class="arm" id="a5" data-ang="128.6" data-y="230"><div class="card" id="k5"><img src="assets/d-foodeatup-menu-digital.jpg" alt="foodeatup-menu-digital" /></div></div>
+          <div class="arm" id="a6" data-ang="154.3" data-y="-230"><div class="card" id="k6"><img src="assets/d-citycar.jpg" alt="citycar" /></div></div>
+          <div class="arm" id="a7" data-ang="180.0" data-y="0"><div class="card" id="k7"><img src="assets/d-foodeatup-kds.jpg" alt="foodeatup-kds" /></div></div>
+          <div class="arm" id="a8" data-ang="205.7" data-y="230"><div class="card" id="k8"><img src="assets/d-braindcode.jpg" alt="braindcode" /></div></div>
+          <div class="arm" id="a9" data-ang="231.4" data-y="-230"><div class="card" id="k9"><img src="assets/d-publisher-bot.jpg" alt="publisher-bot" /></div></div>
+          <div class="arm" id="a10" data-ang="257.1" data-y="0"><div class="card" id="k10"><img src="assets/d-rapidoin.jpg" alt="rapidoin" /></div></div>
+          <div class="arm" id="a11" data-ang="282.9" data-y="230"><div class="card" id="k11"><img src="assets/d-salle-live.jpg" alt="salle-live" /></div></div>
+          <div class="arm" id="a12" data-ang="308.6" data-y="-230"><div class="card" id="k12"><img src="assets/d-alto.jpg" alt="alto" /></div></div>
+          <div class="arm" id="a13" data-ang="334.3" data-y="0"><div class="card" id="k13"><img src="assets/d-foodeatup-fidelite.jpg" alt="foodeatup-fidelite" /></div></div>
+          </div>
+          <div id="phoneWrap">
+            <div id="phone"><div id="screen"><div id="punch"></div>
+              <img id="scrApp" src="assets/m-caisse.jpg" alt="FoodEatUp Caisse Mobile" />
+              <img id="scrHome" src="assets/accueil-mobile.jpg" alt="Accueil du site" />
+              <div id="glass"></div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+      <div id="c1" class="clip cap" data-start="0.7" data-duration="3.4" data-track-index="5"><div class="capin"><h1>Un soir. Un <mark>téléphone</mark>.</h1></div></div>
+      <div id="c2" class="clip cap" data-start="4.4" data-duration="4.0" data-track-index="6"><div class="capin"><h1>Une idée. Puis une <mark>autre</mark>.</h1><p>Une caisse, un CRM, une appli d'hygiène…</p></div></div>
+      <div id="c3" class="clip cap" data-start="9.0" data-duration="4.5" data-track-index="7"><div class="capin"><h1>46 projets. 130+ <mark>vidéos</mark>.</h1><p>Construits avec l'IA, sans bureau.</p></div></div>
+      <div id="c4" class="clip cap" data-start="14.3" data-duration="2.6" data-track-index="8"><div class="capin"><h1>Tout ce que vous voyez ici est né sur mon <mark>téléphone</mark>.</h1></div></div>
+      <div id="home" class="clip" data-start="16.6" data-duration="3.4" data-track-index="9"><img id="homeImg" src="assets/accueil-desktop.jpg" alt="Accueil de michael.foodeatup.fr" /></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const E = "power3.out", IO = "power3.inOut";
+      const N = 14, R = 760;
+
+      // Lumière qui balaie la scène
+      tl.fromTo("#sweep", { xPercent: 0 }, { xPercent: 330, duration: 9, ease: "sine.inOut" }, 0);
+      tl.to("#sweep", { xPercent: 0, duration: 9, ease: "sine.inOut" }, 9);
+
+      // Acte 1 : le téléphone sort de l'ombre en tournant, écran éteint
+      tl.fromTo("#phoneWrap", { rotationY: -68, rotationX: 14, z: -900, opacity: 0.35 }, { rotationY: -18, rotationX: 6, z: 0, opacity: 1, duration: 3.6, ease: E }, 0);
+      tl.fromTo("#scrApp", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 3.9);
+      tl.fromTo("#scrHome", { opacity: 0 }, { opacity: 0, duration: 0.01 }, 0);
+      tl.to("#phoneWrap", { rotationY: 14, rotationX: 4, duration: 5, ease: "sine.inOut" }, 3.6);
+
+      // Acte 2 et 3 : les projets s'envolent du téléphone et forment un anneau autour de lui
+      for (let i = 0; i < N; i++) {
+        const a = document.getElementById("a" + i);
+        gsap.set(a, { rotationY: +a.dataset.ang, y: +a.dataset.y });
+        tl.fromTo("#k" + i, { z: 0, scale: 0.12, opacity: 0 }, { z: R, scale: 1, opacity: 1, duration: 1.1, ease: E }, 4.6 + i * 0.32);
+      }
+      tl.fromTo("#ring", { rotationY: 0 }, { rotationY: -150, duration: 10, ease: "none" }, 4.6);
+      tl.to("#phoneWrap", { rotationY: -10, rotationX: 2, duration: 4.4, ease: "sine.inOut" }, 8.6);
+
+      // Acte 4 : l'anneau s'ouvre, l'écran passe sur l'accueil du site, la caméra plonge dans le téléphone
+      tl.to(".card", { z: R * 2.4, opacity: 0, duration: 1.0, ease: "power2.in", stagger: 0.02 }, 13.3);
+      tl.to("#scrHome", { opacity: 1, duration: 0.6 }, 14.3);
+      tl.to("#phoneWrap", { rotationY: 0, rotationX: 0, duration: 1.2, ease: IO }, 14.2);
+      tl.to("#phoneWrap", { scale: 3.5 * 0.6, duration: 1.6, ease: "power2.in" }, 15.0);
+      tl.to("#phoneWrap", { opacity: 0, duration: 0.35 }, 16.75);
+      tl.to("#bg", { opacity: 0.4, duration: 2 }, 15.2);
+
+      // Acte 5 : l'accueil réel prend tout l'écran, puis le site s'affiche
+      tl.fromTo("#home", { clipPath: "inset(2% 34% 2% 34% round 70px)" }, { clipPath: "inset(0% 0% 0% 0% round 0px)", duration: 1.1, ease: "power3.inOut" }, 16.6);
+      tl.fromTo("#homeImg", { scale: 1.12 }, { scale: 1, duration: 2.4, ease: "power2.out" }, 16.6);
+
+      // Légendes : entrée et sortie
+      [["#c1", 0.7, 3.4], ["#c2", 4.4, 4.0], ["#c3", 9.0, 4.5], ["#c4", 14.3, 2.6]].forEach(([c, s, d]) => {
+        tl.fromTo(c + " .capin", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: E }, s + 0.05);
+        tl.to(c + " .capin", { y: -20, opacity: 0, duration: 0.35, ease: "power2.in" }, s + d - 0.4);
+      });
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
