@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,200
+Le restaurant qui se gère en parlant à une IA.
+
+2
+00:00:03,230 --> 00:00:05,730
+Voici Mon Académie FoodEatUp, un de mes projets.
+
+3
+00:00:05,950 --> 00:00:09,630
+Stocks, hygiène, équipe et factures : tout se pilote dans une conversation.
+
+4
+00:00:10,070 --> 00:00:12,130
+Tu poses ta question à l'IA, même depuis WhatsApp.
+
+5
+00:00:12,470 --> 00:00:14,370
+Des parcours t'apprennent à maîtriser chaque module.
+
+6
+00:00:14,650 --> 00:00:16,590
+Les demandes qui marchent le mieux sont prêtes à copier.
+
+7
+00:00:16,790 --> 00:00:18,710
+Et tu configures tes outils en quelques minutes.
+
+8
+00:00:19,030 --> 00:00:21,780
+Le lien est sous la vidéo : clique sur « Voir le projet ».

@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,630
+Enregistre ton tuto une fois. L'avatar répond à tes clients.
+
+2
+00:00:04,010 --> 00:00:05,990
+Voici RapidoTuto, un de mes projets.
+
+3
+00:00:06,310 --> 00:00:08,170
+Tu enregistres ton écran, une seule fois.
+
+4
+00:00:08,560 --> 00:00:12,010
+RapidoTuto en fait un tutoriel vidéo, avec un avatar et une voix.
+
+5
+00:00:12,230 --> 00:00:14,230
+Un assistant répond aux questions de tes clients.
+
+6
+00:00:14,470 --> 00:00:16,490
+Et il leur montre le bon passage de la vidéo.
+
+7
+00:00:16,690 --> 00:00:18,850
+Fini de répéter la même réponse toute la journée.
+
+8
+00:00:19,130 --> 00:00:21,940
+Le lien est sous la vidéo : clique sur « Voir le projet ».
