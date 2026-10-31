@@ -62,3 +62,12 @@ image extraite de la vidéo :
    sinon avec `videos/mes-projets/vignettes/` (`data.json` + `node make.js`) :
    la 1080x1920 sert de miniature d'épisode, la 1280x720 de couverture projet
    (`source_url`). Ajouter chaque vignette à la bibliothèque (`ajouter_media`).
+
+## Assets de projet : tout ce qui est créé y est rattaché
+
+Chaque nouvelle image, icône, capture d'écran, miniature, couverture ou vidéo
+liée à un projet est ajoutée aux assets de ce projet (`ajouter_asset_projet`,
+ou `ajouter_media` avec le tag du slug) pour être réutilisée dans d'autres
+vidéos. Avant un épisode, récupérer le kit du projet via le MCP
+(`obtenir_projet`, `obtenir_page_projet`, `lister_assets(projet_slug)`) et
+réutiliser ses écrans, icônes et cartes plutôt que d'en recréer.
