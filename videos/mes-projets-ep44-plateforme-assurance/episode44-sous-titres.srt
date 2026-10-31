@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,730
+Les métiers de l'actuariat ont enfin leur plateforme.
+
+2
+00:00:02,990 --> 00:00:05,570
+Voici Plateforme Assurance, un site que j'ai réalisé.
+
+3
+00:00:05,750 --> 00:00:08,510
+Elle met en relation les étudiants et les professionnels de l'assurance.
+
+4
+00:00:08,830 --> 00:00:10,210
+Les étudiants y déposent leur CV.
+
+5
+00:00:10,450 --> 00:00:13,250
+Les cabinets trouvent un stagiaire, un salarié ou un consultant.
+
+6
+00:00:13,490 --> 00:00:15,610
+Les consultants proposent leurs services aux actuaires.
+
+7
+00:00:15,750 --> 00:00:17,730
+Un forum et des partenaires complètent le tout.
+
+8
+00:00:17,910 --> 00:00:20,680
+Le lien est sous la vidéo : clique sur « Voir le projet ».
