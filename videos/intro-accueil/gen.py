@@ -7,10 +7,10 @@ CARDS = ["foodeatup-caisse-mobile", "rapidocrm", "application-haccp", "plan-it",
 
 FMT = {
     "landscape": dict(W=1920, H=1080, out="index.html", phone=(330, 690), phoneY=120, cap_y=880, cap_size=58, R=760,
-                      cardW=470, cardH=294, ys=(-230, 0, 230), home="assets/accueil-desktop.jpg", dive=3.5, clip=34, chatzoom=1.22, chatx=330, chaty=40, c2css="left: 140px; top: 380px; width: 760px; text-align: left;",
+                      cardW=470, cardH=294, ys=(-230, 0, 230), home="assets/accueil-desktop.jpg", dive=3.5, clip=34, chatzoom=1.22, chatx=330, chaty=40, c2css="left: 140px; top: 330px; width: 760px; text-align: left;", av=(20, 640, 440), capcss="left: 480px; width: 1360px;",
                       persp=1700),
     "portrait": dict(W=1080, H=1920, out="mobile/index.html", phone=(410, 860), phoneY=470, cap_y=130, cap_size=66, R=560,
-                     cardW=420, cardH=262, ys=(-260, 40, 330), home="assets/accueil-mobile.jpg", dive=2.75, clip=6, chatzoom=1.0, chatx=0, chaty=0, c2css="",
+                     cardW=420, cardH=262, ys=(-260, 40, 330), home="assets/accueil-mobile.jpg", dive=2.75, clip=6, chatzoom=1.0, chatx=0, chaty=0, c2css="", av=(-30, 1460, 470), capcss="",
                      persp=1500),
 }
 
@@ -66,18 +66,21 @@ def build(f):
       #chat {{ position: absolute; inset: 0; background: #f5f4ee; color: #1f1e1d; font-family: Inter, sans-serif; padding: {pw * .17:.0f}px {pw * .05:.0f}px 0; font-size: {pw * .042:.1f}px; line-height: 1.38; }}
       #chat .hd {{ display: flex; align-items: center; justify-content: center; gap: 8px; padding-bottom: {pw * .03:.0f}px; border-bottom: 1px solid #e3e0d6; }}
       #chat .hd img {{ height: {pw * .055:.0f}px; }}
-      #chat .rec {{ position: absolute; right: {pw * .05:.0f}px; top: {pw * .095:.0f}px; font-size: {pw * .026:.1f}px; color: #8a8576; border: 1px solid #d6d1c4; border-radius: 99px; padding: 1px 8px; }}
+      #chat .rec {{ position: absolute; right: {pw * .05:.0f}px; top: {pw * .095:.0f}px; font-size: {pw * .026:.1f}px; color: #5f5b52; border: 1px solid #b9b3a5; border-radius: 99px; padding: 1px 8px; }}
       #ubub {{ margin: {pw * .05:.0f}px 0 0 auto; width: 82%; background: #e8e4d8; border-radius: {pw * .045:.0f}px; padding: {pw * .03:.0f}px {pw * .04:.0f}px; }}
       #rep {{ margin-top: {pw * .045:.0f}px; }}
       #rep .w {{ display: inline-block; margin-right: .28em; font-style: normal; }}
       #art {{ margin-top: {pw * .04:.0f}px; border: 1px solid #ddd8cb; border-radius: {pw * .04:.0f}px; overflow: hidden; background: #fff; box-shadow: 0 6px 18px rgba(0,0,0,.08); }}
       #art .ah {{ display: flex; justify-content: space-between; align-items: center; padding: {pw * .025:.0f}px {pw * .035:.0f}px; font-weight: 700; font-size: {pw * .036:.1f}px; }}
-      #art .ah span {{ font-weight: 600; font-size: {pw * .03:.1f}px; color: #c96442; background: #fbe9e2; border-radius: 99px; padding: 1px 8px; }}
+      #art .ah span {{ font-weight: 600; font-size: {pw * .03:.1f}px; color: #9a3d22; background: #fbe9e2; border-radius: 99px; padding: 1px 8px; }}
       #art .shot {{ height: {pw * .5:.0f}px; overflow: hidden; }}
       #art .shot img {{ position: static; width: 100%; height: auto; display: block; }}
-      #inp {{ position: absolute; left: {pw * .05:.0f}px; right: {pw * .05:.0f}px; bottom: {pw * .07:.0f}px; display: flex; align-items: center; justify-content: space-between; background: #fff; border: 1px solid #ddd8cb; border-radius: {pw * .06:.0f}px; padding: {pw * .03:.0f}px {pw * .04:.0f}px; color: #9a958a; }}
+      #inp {{ position: absolute; left: {pw * .05:.0f}px; right: {pw * .05:.0f}px; bottom: {pw * .07:.0f}px; display: flex; align-items: center; justify-content: space-between; background: #fff; border: 1px solid #ddd8cb; border-radius: {pw * .06:.0f}px; padding: {pw * .03:.0f}px {pw * .04:.0f}px; color: #6b665c; }}
       #inp b {{ width: {pw * .075:.0f}px; height: {pw * .075:.0f}px; border-radius: 50%; background: #d97757; display: inline-block; }}
-      #c2 .capin {{ {f["c2css"]} }}
+      .cap .capin {{ {f["capcss"]} }}
+      .cap#c2 .capin {{ {f["c2css"]} }}
+      #av {{ position: absolute; left: {f["av"][0]}px; top: {f["av"][1]}px; width: {f["av"][2]}px; height: {f["av"][2]}px; }}
+      #av img {{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 20px 40px rgba(0,0,0,.55)); }}
       #home {{ background: #0f1a23; }}
       #home img {{ width: 100%; height: 100%; object-fit: cover; }}
       .cap {{ display: flex; justify-content: center; }}
@@ -112,6 +115,13 @@ def build(f):
       </div>
 {caps_html}
       <div id="home" class="clip" data-start="16.6" data-duration="3.4" data-track-index="9"><img id="homeImg" src="{f["home"]}" alt="Accueil de michael.foodeatup.fr" /></div>
+      <audio id="voix1" src="assets/voix/v1.wav" data-start="0.7" data-duration="2.05" data-track-index="21" data-volume="1"></audio>
+      <audio id="voix2" src="assets/voix/v2.wav" data-start="4.3" data-duration="2.23" data-track-index="22" data-volume="1"></audio>
+      <audio id="voix3" src="assets/voix/v3.wav" data-start="6.6" data-duration="2.89" data-track-index="23" data-volume="1"></audio>
+      <audio id="voix4" src="assets/voix/v4.wav" data-start="9.5" data-duration="3.38" data-track-index="24" data-volume="1"></audio>
+      <audio id="voix5" src="assets/voix/v5.wav" data-start="14.3" data-duration="2.45" data-track-index="25" data-volume="1"></audio>
+      <audio id="voix6" src="assets/voix/v6.wav" data-start="17.3" data-duration="1.08" data-track-index="26" data-volume="1"></audio>
+      <div id="avatar" class="clip" data-start="0" data-duration="19.4" data-track-index="10" data-layout-allow-overflow><div id="av"><img id="p1" src="assets/avatar-02-salut.png" alt="Avatar 3D de Michael" /><img id="p2" src="assets/avatar-08-idee.png" alt="Avatar 3D de Michael" /><img id="p3" src="assets/avatar-06-ordinateur.png" alt="Avatar 3D de Michael" /><img id="p4" src="assets/avatar-10-celebration.png" alt="Avatar 3D de Michael" /><img id="p5" src="assets/avatar-04-presentation.png" alt="Avatar 3D de Michael" /><img id="p6" src="assets/avatar-01-bienvenue.png" alt="Avatar 3D de Michael" /></div></div>
     </div>
     <script>
       window.__timelines = window.__timelines || {{}};
@@ -161,6 +171,17 @@ def build(f):
         tl.to(c + " .capin", {{ y: -20, opacity: 0, duration: 0.35, ease: "power2.in" }}, s + d - 0.4);
       }});
 
+
+      // Avatar 3D de Michael : il présente l'histoire, une pose par acte
+      const P = [["#p1", 0.3], ["#p2", 3.9], ["#p3", 7.0], ["#p4", 9.2], ["#p5", 14.2], ["#p6", 16.7]];
+      gsap.set(["#p2", "#p3", "#p4", "#p5", "#p6"], {{ opacity: 0 }});
+      tl.fromTo("#av", {{ y: 260, opacity: 0 }}, {{ y: 0, opacity: 1, duration: 0.7, ease: "back.out(1.4)" }}, 0.3);
+      P.slice(1).forEach(([id, t], k) => {{
+        tl.to(P[k][0], {{ opacity: 0, duration: 0.25 }}, t);
+        tl.fromTo(id, {{ opacity: 0, scale: 0.92, y: 18 }}, {{ opacity: 1, scale: 1, y: 0, duration: 0.35, ease: "back.out(2)" }}, t);
+      }});
+      tl.fromTo("#av", {{ rotation: 0 }}, {{ rotation: 2, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 9 }}, 1.0);
+      tl.to("#av", {{ y: 320, opacity: 0, duration: 0.6, ease: "power2.in" }}, 18.7);
       window.__timelines["main"] = tl;
       tl.seek(0);
     </script>

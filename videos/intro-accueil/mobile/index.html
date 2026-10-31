@@ -28,18 +28,21 @@
       #chat { position: absolute; inset: 0; background: #f5f4ee; color: #1f1e1d; font-family: Inter, sans-serif; padding: 70px 20px 0; font-size: 17.2px; line-height: 1.38; }
       #chat .hd { display: flex; align-items: center; justify-content: center; gap: 8px; padding-bottom: 12px; border-bottom: 1px solid #e3e0d6; }
       #chat .hd img { height: 23px; }
-      #chat .rec { position: absolute; right: 20px; top: 39px; font-size: 10.7px; color: #8a8576; border: 1px solid #d6d1c4; border-radius: 99px; padding: 1px 8px; }
+      #chat .rec { position: absolute; right: 20px; top: 39px; font-size: 10.7px; color: #5f5b52; border: 1px solid #b9b3a5; border-radius: 99px; padding: 1px 8px; }
       #ubub { margin: 20px 0 0 auto; width: 82%; background: #e8e4d8; border-radius: 18px; padding: 12px 16px; }
       #rep { margin-top: 18px; }
       #rep .w { display: inline-block; margin-right: .28em; font-style: normal; }
       #art { margin-top: 16px; border: 1px solid #ddd8cb; border-radius: 16px; overflow: hidden; background: #fff; box-shadow: 0 6px 18px rgba(0,0,0,.08); }
       #art .ah { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; font-weight: 700; font-size: 14.8px; }
-      #art .ah span { font-weight: 600; font-size: 12.3px; color: #c96442; background: #fbe9e2; border-radius: 99px; padding: 1px 8px; }
+      #art .ah span { font-weight: 600; font-size: 12.3px; color: #9a3d22; background: #fbe9e2; border-radius: 99px; padding: 1px 8px; }
       #art .shot { height: 205px; overflow: hidden; }
       #art .shot img { position: static; width: 100%; height: auto; display: block; }
-      #inp { position: absolute; left: 20px; right: 20px; bottom: 29px; display: flex; align-items: center; justify-content: space-between; background: #fff; border: 1px solid #ddd8cb; border-radius: 25px; padding: 12px 16px; color: #9a958a; }
+      #inp { position: absolute; left: 20px; right: 20px; bottom: 29px; display: flex; align-items: center; justify-content: space-between; background: #fff; border: 1px solid #ddd8cb; border-radius: 25px; padding: 12px 16px; color: #6b665c; }
       #inp b { width: 31px; height: 31px; border-radius: 50%; background: #d97757; display: inline-block; }
-      #c2 .capin {  }
+      .cap .capin {  }
+      .cap#c2 .capin {  }
+      #av { position: absolute; left: -30px; top: 1460px; width: 470px; height: 470px; }
+      #av img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 20px 40px rgba(0,0,0,.55)); }
       #home { background: #0f1a23; }
       #home img { width: 100%; height: 100%; object-fit: cover; }
       .cap { display: flex; justify-content: center; }
@@ -90,6 +93,13 @@
       <div id="c3" class="clip cap" data-start="9.2" data-duration="4.2" data-track-index="7"><div class="capin"><h1>46 projets. 130+ <mark>vidéos</mark>.</h1><p>Construits avec l'IA, sans bureau.</p></div></div>
       <div id="c4" class="clip cap" data-start="14.3" data-duration="2.6" data-track-index="8"><div class="capin"><h1>Tout ce que vous voyez ici est né sur mon <mark>téléphone</mark>.</h1></div></div>
       <div id="home" class="clip" data-start="16.6" data-duration="3.4" data-track-index="9"><img id="homeImg" src="assets/accueil-mobile.jpg" alt="Accueil de michael.foodeatup.fr" /></div>
+      <audio id="voix1" src="assets/voix/v1.wav" data-start="0.7" data-duration="2.05" data-track-index="21" data-volume="1"></audio>
+      <audio id="voix2" src="assets/voix/v2.wav" data-start="4.3" data-duration="2.23" data-track-index="22" data-volume="1"></audio>
+      <audio id="voix3" src="assets/voix/v3.wav" data-start="6.6" data-duration="2.89" data-track-index="23" data-volume="1"></audio>
+      <audio id="voix4" src="assets/voix/v4.wav" data-start="9.5" data-duration="3.38" data-track-index="24" data-volume="1"></audio>
+      <audio id="voix5" src="assets/voix/v5.wav" data-start="14.3" data-duration="2.45" data-track-index="25" data-volume="1"></audio>
+      <audio id="voix6" src="assets/voix/v6.wav" data-start="17.3" data-duration="1.08" data-track-index="26" data-volume="1"></audio>
+      <div id="avatar" class="clip" data-start="0" data-duration="19.4" data-track-index="10" data-layout-allow-overflow><div id="av"><img id="p1" src="assets/avatar-02-salut.png" alt="Avatar 3D de Michael" /><img id="p2" src="assets/avatar-08-idee.png" alt="Avatar 3D de Michael" /><img id="p3" src="assets/avatar-06-ordinateur.png" alt="Avatar 3D de Michael" /><img id="p4" src="assets/avatar-10-celebration.png" alt="Avatar 3D de Michael" /><img id="p5" src="assets/avatar-04-presentation.png" alt="Avatar 3D de Michael" /><img id="p6" src="assets/avatar-01-bienvenue.png" alt="Avatar 3D de Michael" /></div></div>
     </div>
     <script>
       window.__timelines = window.__timelines || {};
@@ -139,6 +149,17 @@
         tl.to(c + " .capin", { y: -20, opacity: 0, duration: 0.35, ease: "power2.in" }, s + d - 0.4);
       });
 
+
+      // Avatar 3D de Michael : il présente l'histoire, une pose par acte
+      const P = [["#p1", 0.3], ["#p2", 3.9], ["#p3", 7.0], ["#p4", 9.2], ["#p5", 14.2], ["#p6", 16.7]];
+      gsap.set(["#p2", "#p3", "#p4", "#p5", "#p6"], { opacity: 0 });
+      tl.fromTo("#av", { y: 260, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "back.out(1.4)" }, 0.3);
+      P.slice(1).forEach(([id, t], k) => {
+        tl.to(P[k][0], { opacity: 0, duration: 0.25 }, t);
+        tl.fromTo(id, { opacity: 0, scale: 0.92, y: 18 }, { opacity: 1, scale: 1, y: 0, duration: 0.35, ease: "back.out(2)" }, t);
+      });
+      tl.fromTo("#av", { rotation: 0 }, { rotation: 2, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 9 }, 1.0);
+      tl.to("#av", { y: 320, opacity: 0, duration: 0.6, ease: "power2.in" }, 18.7);
       window.__timelines["main"] = tl;
       tl.seek(0);
     </script>
