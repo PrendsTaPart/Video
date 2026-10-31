@@ -956,5 +956,165 @@
   },
   "inspiration": "Mes projets ép. 38 — RapidoRH : couleurs du site rapidosoftware.com/solutions/rh, vidéo du site incrustée, CTA « Voir le projet »",
   "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep38-rapidorh-miniature.png"
+ },
+ "mes-projets-ep39-rapidomeet": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#1F0A16",
+   "bg2": "#12060D",
+   "bgc": "#4A1233",
+   "surf": "#2A0F1F",
+   "line": "#4A1F38",
+   "text": "#FFFFFF",
+   "mute": "#c9aebd",
+   "accent": "#E0177A",
+   "accent2": "#7C3AED",
+   "hlbg": "#E0177A",
+   "hlfg": "#FFFFFF"
+  },
+  "inspiration": "Mes projets ép. 39 — RapidoMeet : couleurs du site rapidomeet.lovable.app, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep39-rapidomeet-miniature.png"
+ },
+ "mes-projets-ep40-webinaire-rapidocms": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0F1029",
+   "bg2": "#080918",
+   "bgc": "#25236B",
+   "surf": "#17183A",
+   "line": "#2A2B5E",
+   "text": "#FFFFFF",
+   "mute": "#b0b2d8",
+   "accent": "#5B5BF0",
+   "accent2": "#22C55E",
+   "hlbg": "#5B5BF0",
+   "hlfg": "#FFFFFF"
+  },
+  "inspiration": "Mes projets ép. 40 — Webinaire RapidoCMS : couleurs du site webinaire.rapidocms.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep40-webinaire-rapidocms-miniature.png"
+ },
+ "mes-projets-ep41-formation-youtube": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#1A0A0A",
+   "bg2": "#0F0505",
+   "bgc": "#4A1010",
+   "surf": "#261010",
+   "line": "#462020",
+   "text": "#FFFFFF",
+   "mute": "#d0b0b0",
+   "accent": "#FF0033",
+   "accent2": "#FFA500",
+   "hlbg": "#FF0033",
+   "hlfg": "#FFFFFF"
+  },
+  "inspiration": "Mes projets ép. 41 — Formation BraindCode : couleurs du site youtube.com/@formationbraindcode, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep41-formation-youtube-miniature.png"
+ },
+ "mes-projets-ep42-releasesync": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0B1426",
+   "bg2": "#060C18",
+   "bgc": "#173062",
+   "surf": "#111D36",
+   "line": "#22335A",
+   "text": "#FFFFFF",
+   "mute": "#aab8d6",
+   "accent": "#2F6FED",
+   "accent2": "#34A853",
+   "hlbg": "#2F6FED",
+   "hlfg": "#FFFFFF"
+  },
+  "inspiration": "Mes projets ép. 42 — ReleaseSync : couleurs du site play-track-release-control.lovable.app, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep42-releasesync-miniature.png"
+ },
+ "mes-projets-ep43-rapidoin": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#08172A",
+   "bg2": "#040D18",
+   "bgc": "#0E3361",
+   "surf": "#0E2138",
+   "line": "#1B3558",
+   "text": "#FFFFFF",
+   "mute": "#a8bcd4",
+   "accent": "#0A66C2",
+   "accent2": "#FFA500",
+   "hlbg": "#0A66C2",
+   "hlfg": "#FFFFFF"
+  },
+  "inspiration": "Mes projets ép. 43 — RapidoIn : couleurs du site linkedin.rapidocms.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep43-rapidoin-miniature.png"
+ },
+ "mes-projets-ep44-plateforme-assurance": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0D1430",
+   "bg2": "#070B1C",
+   "bgc": "#1E2C6E",
+   "surf": "#141D42",
+   "line": "#26326A",
+   "text": "#FFFFFF",
+   "mute": "#aeb6db",
+   "accent": "#3355E0",
+   "accent2": "#FFA500",
+   "hlbg": "#3355E0",
+   "hlfg": "#FFFFFF"
+  },
+  "inspiration": "Mes projets ép. 44 — Plateforme Assurance : couleurs du site plateformeassurance.fr, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep44-plateforme-assurance-miniature.png"
+ },
+ "mes-projets-ep45-mon-academie": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0F1A23",
+   "bg2": "#081016",
+   "bgc": "#1D3A52",
+   "surf": "#16242F",
+   "line": "#25384A",
+   "text": "#FFFFFF",
+   "mute": "#AEB8C2",
+   "accent": "#F5A623",
+   "accent2": "#007BFF",
+   "hlbg": "#F5A623",
+   "hlfg": "#0F1A23"
+  },
+  "inspiration": "Mes projets ép. 45 — Mon Académie FoodEatUp : couleurs du site academie.foodeatup.com, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep45-mon-academie-miniature.png"
+ },
+ "mes-projets-ep46-rapidotuto": {
+  "classe": null,
+  "format_journal": "mes-projets",
+  "serie": "mes-projets",
+  "couleurs": {
+   "bg": "#0A1A2A",
+   "bg2": "#050F19",
+   "bgc": "#123A5E",
+   "surf": "#102539",
+   "line": "#1D3A57",
+   "text": "#FFFFFF",
+   "mute": "#a9bfd3",
+   "accent": "#1E88E5",
+   "accent2": "#8E44AD",
+   "hlbg": "#1E88E5",
+   "hlfg": "#FFFFFF"
+  },
+  "inspiration": "Mes projets ép. 46 — RapidoTuto : couleurs du site rapidotuto-base.lovable.app, vidéo du site incrustée, CTA « Voir le projet »",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep46-rapidotuto-miniature.png"
  }
 }
