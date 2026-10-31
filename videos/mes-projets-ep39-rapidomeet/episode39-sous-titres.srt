@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,730
+La réunion se termine. Les actions commencent.
+
+2
+00:00:02,970 --> 00:00:04,830
+Voici RapidoMeet, un de mes projets.
+
+3
+00:00:05,110 --> 00:00:07,970
+Il écoute tes réunions, en visio ou à partir d'un fichier audio.
+
+4
+00:00:08,210 --> 00:00:10,810
+Il repère les décisions, les tâches et les nouveaux prospects.
+
+5
+00:00:11,090 --> 00:00:13,310
+Les prospects arrivent tout seuls dans RapidoCRM.
+
+6
+00:00:13,470 --> 00:00:15,310
+Le prochain rendez-vous se crée dans ton agenda.
+
+7
+00:00:15,610 --> 00:00:17,210
+Et le compte rendu arrive sur ton WhatsApp.
+
+8
+00:00:17,590 --> 00:00:20,260
+Le lien est sous la vidéo : clique sur « Voir le projet ».

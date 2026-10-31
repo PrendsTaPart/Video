@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,510
+Tes webinaires, de l'inscription jusqu'au rappel, au même endroit.
+
+2
+00:00:03,730 --> 00:00:06,330
+Voici Webinaire RapidoCMS, un de mes projets.
+
+3
+00:00:06,430 --> 00:00:09,270
+L'IA t'écrit le titre et la description en quelques secondes.
+
+4
+00:00:09,350 --> 00:00:12,480
+Chaque webinaire a sa page d'inscription, avec un compte à rebours.
+
+5
+00:00:12,330 --> 00:00:14,910
+Les participants sont rappelés par SMS ou par WhatsApp.
+
+6
+00:00:15,270 --> 00:00:17,270
+La visio se passe directement sur ta page.
+
+7
+00:00:17,270 --> 00:00:19,310
+Et tu suis tes inscriptions en temps réel.
+
+8
+00:00:19,490 --> 00:00:22,040
+Le lien est sous la vidéo : clique sur « Voir le projet ».
