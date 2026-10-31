@@ -45,3 +45,20 @@ Objectif : ne jamais payer deux fois pour la même image.
 Utiliser la photo d'entrepreneur (veste) : `videos/_journal-63-72/commun/michael-rond.png`
 ou `michael-portrait.jpg`. Ne pas utiliser la photo en tenue de chef
 (`michael-chef-mascot.jpg`) sauf demande explicite.
+
+## Vignettes « Mes projets » : design des couvertures projet
+
+Chaque vignette d'épisode Mes projets et chaque couverture de projet suit le
+design des couvertures projet (référence : couverture RapidoCRM) — jamais une
+image extraite de la vidéo :
+
+1. Hook en gros (Poppins 800) avec le dernier mot surligné en orange, écran
+   réel du projet dans un cadre tablette, photo d'entrepreneur de Michael dans
+   un cercle à bordure bleue, punchline, logo officiel (tuile blanche, sinon le
+   nom en texte) et badge bleu « MES PROJETS », fond bleu nuit.
+2. Avant tout nouveau projet ou épisode : renseigner `hook` et `punchline` du
+   projet (`modifier_projet`) et disposer d'un écran réel.
+3. Composer avec `generer_couvertures_projet` quand le projet a un écran actif ;
+   sinon avec `videos/mes-projets/vignettes/` (`data.json` + `node make.js`) :
+   la 1080x1920 sert de miniature d'épisode, la 1280x720 de couverture projet
+   (`source_url`). Ajouter chaque vignette à la bibliothèque (`ajouter_media`).
