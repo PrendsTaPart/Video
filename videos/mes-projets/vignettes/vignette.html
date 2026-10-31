@@ -1,0 +1,43 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html,body{margin:0;overflow:hidden;font-family:Poppins,Arial,sans-serif;color:#fff}
+.c{position:relative;background:linear-gradient(160deg,#111a26 0%,#0f2236 45%,#0b2f57 100%)}
+h1{position:absolute;margin:0;font-weight:800;letter-spacing:-1.5px}
+h1 mark{background:#FFA500;color:#0b1520;border-radius:.16em;padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.tab{position:absolute;background:#0a0d12;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.tab img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.me{position:absolute;border-radius:50%;border:solid #0A7BFF;overflow:hidden;background:#eee}
+.me img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;display:block}
+.p{position:absolute;margin:0;font-weight:400}
+.lg{position:absolute;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.lg img{max-width:100%;max-height:100%;object-fit:contain}
+.lg b{color:#0b1520;font-weight:800;text-align:center;line-height:1.05}
+.bd{position:absolute;background:#0A6CFF;color:#0b1520;font-weight:800;display:flex;align-items:center;justify-content:center;border-radius:999px;letter-spacing:.5px}
+/* vertical 1080x1920 */
+.v{width:1080px;height:1920px}
+.v h1{left:70px;top:70px;width:950px;font-size:84px;line-height:1.16}
+.v .tab{left:70px;top:390px;width:940px;height:680px;border-radius:64px;padding:30px}.v .tab img{border-radius:40px}
+.v .me{left:435px;top:920px;width:590px;height:590px;border-width:18px}
+.v .p{left:70px;top:1620px;width:950px;font-size:64px;line-height:1.15}
+.v .lg{left:50px;top:1740px;width:122px;height:110px;border-radius:18px;padding:10px}.v .lg b{font-size:19px}
+.v .bd{left:677px;top:1757px;width:333px;height:78px;font-size:40px}
+/* horizontal 1280x720 */
+.h{width:1280px;height:720px}
+.h h1{left:48px;top:44px;width:1160px;font-size:76px;line-height:1.16}
+.h .tab{left:48px;top:278px;width:338px;height:244px;border-radius:22px;padding:10px}.h .tab img{border-radius:12px}
+.h .me{left:974px;top:264px;width:266px;height:266px;border-width:8px}
+.h .p{left:48px;top:538px;width:900px;font-size:31px}
+.h .lg{left:35px;top:607px;width:73px;height:66px;border-radius:12px;padding:6px}.h .lg b{font-size:12px}
+.h .bd{left:1032px;top:617px;width:200px;height:46px;font-size:21px}
+</style></head><body><div id="c" class="c"></div>
+<script>
+function fit(sel,maxL){const e=document.querySelector(sel);let fs=parseFloat(getComputedStyle(e).fontSize);const lh=()=>parseFloat(getComputedStyle(e).lineHeight)||fs*1.2;while(e.offsetHeight>lh()*maxL+4&&fs>20){fs-=2;e.style.fontSize=fs+'px';}}
+const d=JSON.parse(decodeURIComponent(new URLSearchParams(location.search).get('d')));
+const w=d.hook.trim().split(' '),last=w.pop();
+const hook=(w.length?w.join(' ')+' ':'')+'<mark>'+last+'</mark>';
+const c=document.getElementById('c');c.className='c '+d.f;
+c.innerHTML=`<h1>${hook}</h1><div class="tab"><img src="${d.ecran}"></div><div class="me"><img src="${d.me}"></div>
+<p class="p">${d.punchline}</p><div class="lg">${d.logo?`<img src="${d.logo}">`:`<b>${d.nom}</b>`}</div><div class="bd">MES PROJETS</div>`;
+document.fonts.ready.then(()=>{fit('h1',d.f=='v'?3:2);fit('.p',d.f=='v'?1:1);}).then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>i.onload=i.onerror=r)))).then(()=>document.body.dataset.ok=1);
+</script></body></html>
