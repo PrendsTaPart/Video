@@ -1,0 +1,155 @@
+{
+ "serie": "30 routines pour faire tourner ta boite",
+ "version": 1,
+ "pause": false,
+ "_pause_note": "Kill-switch. Reste true tant que : (1) les 30 scripts ne sont pas valides, (2) le pilote E1 n'est pas approuve, (3) la pre-autorisation budgetaire n'est pas ecrite ci-dessous. Passer a false = feu vert pour la routine quotidienne.",
+ "episode_courant": 10,
+ "total_episodes": 30,
+ "date_debut": "2026-07-11",
+ "heure_publication": "08:00:00",
+ "timezone": "Europe/Paris",
+ "comptes": {
+  "linkedin_account_id": "101119080",
+  "linkedin_nom": "BraindCode",
+  "tiktok_account_id": "5",
+  "_tiktok_note": "TikTok listé (account_id 5) mais REJETÉ à la publication (create_draft: account invalide). À ré-autoriser avec permission publication, ou fournir l'open_id de publication."
+ },
+ "budget": {
+  "rendu_autorise": true,
+  "_rendu_note": "Rendus HyperFrames LOCAUX (gratuits). Coût = génération clips Mika HeyGen. Go donné par Michael 2026-07-10 pour les 30 épisodes.",
+  "plafond_par_jour": null,
+  "plafond_total": null,
+  "credits_consommes": 0
+ },
+ "design": {
+  "format": "1080x1920",
+  "design_source": "blockframe",
+  "bgm_db": -18,
+  "sous_titres": "incrustes_100pct",
+  "overlay_episode": true,
+  "logo": "braindcode_haut"
+ },
+ "historique": [
+  {
+   "episode": 1,
+   "titre": "C'est quoi une routine ?",
+   "projet": "videos/serie-30-e01",
+   "duree_s": 43.4,
+   "cms": "Serie 30 routines - E1 Cest quoi une routine",
+   "linkedin_draft": 429,
+   "scheduled_post": 337,
+   "date": "2026-07-11",
+   "heure": "08:00:00",
+   "mika": "HeyGen bd566... vertical"
+  },
+  {
+   "episode": 2,
+   "titre": "C'est quoi un MCP ?",
+   "projet": "videos/serie-30-e02",
+   "duree_s": 35.2,
+   "cms": "Serie 30 routines - E2 Cest quoi un MCP",
+   "linkedin_draft": 430,
+   "scheduled_post": 338,
+   "date": "2026-07-12",
+   "heure": "08:00:00",
+   "outro_reuse": "cta-B-generique",
+   "tiktok": "echec account_id 5 invalide pour publication"
+  },
+  {
+   "episode": 3,
+   "titre": "Le plugin qui sait tout faire",
+   "projet": "videos/serie-30-e03",
+   "duree_s": 32.0,
+   "cms": "Serie 30 routines - E3 Le plugin qui sait tout faire",
+   "linkedin_draft": 431,
+   "scheduled_post": 339,
+   "date": "2026-07-13",
+   "heure": "08:00:00",
+   "outro_reuse": "cta-C-generique"
+  },
+  {
+   "episode": 4,
+   "titre": "Skills, agents, garde-fous",
+   "projet": "videos/serie-30-e04",
+   "duree_s": 31.1,
+   "cms": "Serie 30 routines - E4 Skills agents garde-fous",
+   "linkedin_draft": 432,
+   "scheduled_post": 340,
+   "date": "2026-07-14",
+   "heure": "08:00:00",
+   "outro_reuse": "cta-A-generique"
+  },
+  {
+   "episode": 5,
+   "titre": "Ton business plan en discutant",
+   "projet": "videos/serie-30-e05",
+   "duree_s": 31.6,
+   "cms": "Serie 30 routines - E5 Ton business plan en discutant",
+   "linkedin_draft": 433,
+   "scheduled_post": 341,
+   "date": "2026-07-15",
+   "heure": "08:00:00",
+   "outro_reuse": "cta-B-generique",
+   "tiktok": "skip - publication refusee"
+  },
+  {
+   "episode": 6,
+   "titre": "La mémoire de ta boîte",
+   "projet": "videos/serie-30-e06",
+   "duree_s": 28.0,
+   "cms": "Serie 30 routines - E6 La memoire de ta boite",
+   "linkedin_draft": 434,
+   "scheduled_post": 342,
+   "date": "2026-07-16",
+   "heure": "08:00:00",
+   "outro_reuse": "cta-C-generique",
+   "tiktok": "skip"
+  },
+  {
+   "episode": 7,
+   "titre": "Le prévisionnel qui tient la route",
+   "projet": "videos/serie-30-e07",
+   "duree_s": 31.1,
+   "cms": "Serie 30 routines - E7 Le previsionnel qui tient la route",
+   "linkedin_draft": 435,
+   "scheduled_post": 343,
+   "date": "2026-07-17",
+   "heure": "08:00:00",
+   "outro_reuse": "cta-A-generique",
+   "tiktok": "skip"
+  },
+  {
+   "episode": 8,
+   "titre": "Du plan aux tâches",
+   "projet": "videos/serie-30-e08",
+   "duree_s": 29.9,
+   "cms": "Serie 30 routines - E8 Du plan aux taches",
+   "linkedin_draft": 436,
+   "scheduled_post": 344,
+   "date": "2026-07-18",
+   "heure": "08:00:00",
+   "outro_reuse": "cta-B-generique",
+   "tiktok": "skip"
+  },
+  {
+   "episode": 9,
+   "titre": "Prépare ma journée",
+   "projet": "videos/serie-30-e09",
+   "duree_s": 34.6,
+   "cms": "Serie 30 routines - E9 Prepare ma journee",
+   "linkedin_draft": 437,
+   "scheduled_post": null,
+   "date": "NON PLANIFIÉ",
+   "heure": null,
+   "outro_reuse": "cta-C-generique",
+   "blocage": "BUG RapidoCMS (PAS l'abonnement — expiration réelle 2027-06-28 confirmée par Michael). L'endpoint schedule_draft_tool compare post_date à une date interne figée au 2026-07-18 : accepte 18/07, refuse 19/07 ET 2027-06-01. Brouillon 437 prêt à planifier (19/07 08:00) dès correction du champ backend."
+  }
+ ],
+ "_retest_tiktok_2026_07_11": "create_draft_tool tiktok account_id 5 re-testé : toujours refusé (« account_id invalide : ce compte n'existe pas pour ce réseau ou n'appartient pas au propriétaire du token »+ statut expired dans list_connected_accounts). TikTok inutilisable tant que Michael ne ré-autorise pas le compte TikTok BraindCode dans RapidoCMS avec permission de publication.",
+ "_go": "Michael 2026-07-10 : générer Mika via HeyGen + produire+planifier les 30 (LinkedIn BraindCode ; TikTok en attente de connexion CMS).",
+ "auto_loop": {
+  "actif": false,
+  "stop_raison": "Compte RapidoCMS expiré au 18/07/2026 — impossible de planifier E9→E30. Boucle stoppée à E9 pour ne pas gaspiller de crédits HeyGen.",
+  "reprise": "Renouveler le compte RapidoCMS, puis relancer : planifier le brouillon 437 (E9) + produire/planifier E10→E30."
+ }
+}

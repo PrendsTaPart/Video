@@ -1,0 +1,120 @@
+1
+00:00:00,500 --> 00:00:02,260
+Aujourd'hui, je vais te montrer comment j'ai commencé
+
+2
+00:00:02,260 --> 00:00:03,780
+à créer une équipe d'agents IA
+
+3
+00:00:03,780 --> 00:00:05,620
+pour le référencement de FoodEatUp.
+
+4
+00:00:05,620 --> 00:00:07,940
+Parce que développer un logiciel, c'est une chose.
+
+5
+00:00:07,940 --> 00:00:10,480
+Mais encore faut-il que les clients le trouvent sur Google.
+
+6
+00:00:10,480 --> 00:00:13,320
+Alors j'ai conçu plusieurs workflows avec n8n.
+
+7
+00:00:13,320 --> 00:00:15,060
+Le premier surveille les tendances :
+
+8
+00:00:15,060 --> 00:00:17,280
+Google Trends, Google News et Reddit.
+
+9
+00:00:17,280 --> 00:00:18,860
+Le deuxième analyse les mots-clés,
+
+10
+00:00:18,860 --> 00:00:21,060
+avec la Search Console et des outils SEO.
+
+11
+00:00:21,060 --> 00:00:23,540
+Un troisième prépare des articles de blog avec l'IA,
+
+12
+00:00:23,540 --> 00:00:24,980
+à partir de ma documentation.
+
+13
+00:00:24,980 --> 00:00:27,000
+Et un quatrième audite les pages existantes
+
+14
+00:00:27,000 --> 00:00:28,360
+pour proposer des améliorations.
+
+15
+00:00:28,360 --> 00:00:31,740
+Mais le plus intéressant, c'est le MCP du site FoodEatUp.
+
+16
+00:00:31,740 --> 00:00:34,380
+Depuis un agent IA, je gère mes idées d'articles,
+
+17
+00:00:34,380 --> 00:00:36,340
+mes sept piliers éditoriaux, mon calendrier
+
+18
+00:00:36,340 --> 00:00:38,160
+et les contrôles avant publication.
+
+19
+00:00:38,160 --> 00:00:40,020
+Aujourd'hui, il y a une centaine d'idées,
+
+20
+00:00:40,020 --> 00:00:41,400
+80 articles en relecture
+
+21
+00:00:41,400 --> 00:00:44,340
+et 3 articles publiés, dont 2 sur le food cost.
+
+22
+00:00:44,340 --> 00:00:46,200
+Rien ne part sans relecture humaine.
+
+23
+00:00:46,200 --> 00:00:47,800
+L'objectif, c'est une boucle :
+
+24
+00:00:47,800 --> 00:00:50,200
+détecter les sujets, créer du contenu utile,
+
+25
+00:00:50,200 --> 00:00:53,680
+le publier après vérification, mesurer et recommencer.
+
+26
+00:00:53,680 --> 00:00:55,900
+Le glossaire métier, ce sera la prochaine étape.
+
+27
+00:00:55,900 --> 00:00:58,180
+Je ne veux pas produire des centaines d'articles avec l'IA.
+
+28
+00:00:58,180 --> 00:01:00,900
+Je veux répondre aux vraies questions des restaurateurs.
+
+29
+00:01:00,900 --> 00:01:02,660
+Et toi, tu laisserais des agents IA travailler
+
+30
+00:01:02,660 --> 00:01:04,530
+sur le référencement de ton entreprise ?
+

@@ -1,0 +1,19 @@
+{
+  "personnages": {
+    "chef-foodeatup": {
+      "nom": "Chef FoodEatUp",
+      "statut": "portrait_valide",
+      "portrait_reference_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ia_6a5f4833423751.04132666.jpg",
+      "version_active": "canon-v1",
+      "variantes_candidates": [
+        {"id": "canon-v1", "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ia_6a5f4833423751.04132666.jpg", "note": "VALIDÉE — sourire chaleureux ouvert, 3/4"},
+        {"id": "canon-v2", "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ia_6a5f485c055d14.28397930.jpg", "note": "sourire confiant bouche fermée, frontal"},
+        {"id": "canon-v3", "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/ia_6a5f487cc4fdc2.42040498.jpg", "note": "sourire enjoué/étonné"}
+      ],
+      "canon_ref": "traits-personnages.md",
+      "axes_variables": ["pose", "expression", "objet", "accent lumineux"],
+      "clin_oeil_reserve": ["V00", "V13"],
+      "moteur_14_scenes": "images_to_image (depuis portrait_reference_url)"
+    }
+  }
+}

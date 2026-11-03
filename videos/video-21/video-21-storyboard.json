@@ -1,0 +1,88 @@
+{
+  "video": 21,
+  "duree_s": 70,
+  "format": "1080x1920",
+  "voix": "ElevenLabs Noé, eleven_v4",
+  "sequences": [
+    {
+      "t": [
+        0,
+        4.76
+      ],
+      "sequence": "Accroche",
+      "visuel": "Des agents partout · « Mais qui leur apprend leur travail ? »"
+    },
+    {
+      "t": [
+        4.76,
+        10.02
+      ],
+      "sequence": "Annonce",
+      "visuel": "Michael (pose présente) · « Je forme mes employés IA »"
+    },
+    {
+      "t": [
+        10.02,
+        15.0
+      ],
+      "sequence": "Problème",
+      "visuel": "Erreurs typiques d'un agent non formé (illustration)"
+    },
+    {
+      "t": [
+        15.0,
+        24.0
+      ],
+      "sequence": "FoodEatUp Academy",
+      "visuel": "Captures publiques de l'Academy + 4 piliers"
+    },
+    {
+      "t": [
+        24.0,
+        31.38
+      ],
+      "sequence": "1 · Apprendre",
+      "visuel": "Agent Ruptures de stock (démo), sortie réelle de learn_task, chaîne en 4 pas de la mission F3"
+    },
+    {
+      "t": [
+        31.38,
+        34.85
+      ],
+      "sequence": "2 · S'équiper",
+      "visuel": "4 outils FoodEatUp autorisés, envoi réservé à l'humain"
+    },
+    {
+      "t": [
+        34.85,
+        44.58
+      ],
+      "sequence": "3 · S'entraîner / 4 · Être évalué",
+      "visuel": "Quiz F3 3/3 (check_quiz_answer), prompt 0/6 → 6/6 (check_routine_prompt)"
+    },
+    {
+      "t": [
+        44.58,
+        55.0
+      ],
+      "sequence": "Prêt pour une mission encadrée",
+      "visuel": "Quoi, comment, avec quels outils, vérifier ; validation finale humaine"
+    },
+    {
+      "t": [
+        55.0,
+        61.38
+      ],
+      "sequence": "Punchline",
+      "visuel": "Avant / maintenant"
+    },
+    {
+      "t": [
+        61.38,
+        70
+      ],
+      "sequence": "Question",
+      "visuel": "Michael, question au spectateur, logos FoodEatUp et BraindCode"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+1
+00:00:00,350 --> 00:00:01,480
+Tu publies du contenu chaque
+
+2
+00:00:01,480 --> 00:00:01,790
+jour
+
+3
+00:00:01,790 --> 00:00:02,860
+mais tes visiteurs ne savent
+
+4
+00:00:02,860 --> 00:00:03,790
+pas où cliquer Moi
+
+5
+00:00:03,790 --> 00:00:04,790
+j'ai réglé ça avec un
+
+6
+00:00:04,790 --> 00:00:05,280
+seul site
+
+7
+00:00:05,280 --> 00:00:07,230
+construit avec Lovable et Claude.
+
+8
+00:00:10,030 --> 00:00:10,920
+Un seul lien pour tout
+
+9
+00:00:10,920 --> 00:00:12,270
+réunir mon profil
+
+10
+00:00:12,270 --> 00:00:12,850
+mes vidéos
+
+11
+00:00:12,850 --> 00:00:13,230
+mes projets
+
+12
+00:00:13,230 --> 00:00:14,560
+et un bouton pour prendre
+
+13
+00:00:14,560 --> 00:00:15,160
+rendez-vous.
+
+14
+00:00:15,160 --> 00:00:16,210
+Un peu comme un Linktree…
+
+15
+00:00:16,210 --> 00:00:17,380
+mais construit pour moi.
+
+16
+00:00:20,180 --> 00:00:21,160
+Comment j'ai fait J'ai demandé
+
+17
+00:00:21,160 --> 00:00:22,180
+la base du site à
+
+18
+00:00:22,180 --> 00:00:22,690
+Lovable.
+
+19
+00:00:22,690 --> 00:00:23,600
+Puis j'ai repris le projet
+
+20
+00:00:23,600 --> 00:00:24,310
+dans Claude Code
+
+21
+00:00:24,310 --> 00:00:26,070
+depuis GitHub Claude modifie
+
+22
+00:00:26,070 --> 00:00:26,450
+teste
+
+23
+00:00:26,450 --> 00:00:28,170
+et Lovable met en ligne.
+
+24
+00:00:30,980 --> 00:00:32,090
+Chaque vidéo a sa formation
+
+25
+00:00:32,090 --> 00:00:33,690
+gratuite les étapes
+
+26
+00:00:33,690 --> 00:00:34,180
+les outils
+
+27
+00:00:34,180 --> 00:00:35,200
+et les prompts que j'ai
+
+28
+00:00:35,200 --> 00:00:36,180
+vraiment utilisés.
+
+29
+00:00:36,180 --> 00:00:37,090
+On laisse son prénom et
+
+30
+00:00:37,090 --> 00:00:37,510
+son email
+
+31
+00:00:37,510 --> 00:00:38,800
+et on repart avec le
+
+32
+00:00:38,800 --> 00:00:39,460
+PDF.
+
+33
+00:00:42,260 --> 00:00:43,370
+Les prompts s'ouvrent en un
+
+34
+00:00:43,370 --> 00:00:44,190
+clic dans Claude.
+
+35
+00:00:44,190 --> 00:00:45,020
+Et la charte
+
+36
+00:00:45,020 --> 00:00:46,080
+les logos et les écrans
+
+37
+00:00:46,080 --> 00:00:47,700
+de mes logiciels viennent directement
+
+38
+00:00:47,700 --> 00:00:49,340
+de ma bibliothèque de marque.
+
+39
+00:00:52,140 --> 00:00:52,810
+Et le site a son
+
+40
+00:00:52,810 --> 00:00:54,760
+propre MCP mes agents IA
+
+41
+00:00:54,760 --> 00:00:56,320
+peuvent préparer une vidéo
+
+42
+00:00:56,320 --> 00:00:57,850
+une formation ou une offre…
+
+43
+00:00:57,850 --> 00:00:58,810
+toujours en brouillon.
+
+44
+00:00:58,810 --> 00:00:59,360
+Je valide
+
+45
+00:00:59,360 --> 00:01:00,560
+et ça part en ligne.
+
+46
+00:01:03,360 --> 00:01:04,980
+Résultat trente et une vidéos
+
+47
+00:01:04,980 --> 00:01:05,540
+trente formations
+
+48
+00:01:05,540 --> 00:01:06,740
+et une vitrine qui se
+
+49
+00:01:06,740 --> 00:01:08,090
+tient à jour avec moi.
+
+50
+00:01:10,890 --> 00:01:11,580
+Tu veux la même pour
+
+51
+00:01:11,580 --> 00:01:13,110
+ton activité La formation est
+
+52
+00:01:13,110 --> 00:01:13,710
+sur mon site.
+
+53
+00:01:13,710 --> 00:01:14,470
+Et si tu veux qu'on
+
+54
+00:01:14,470 --> 00:01:15,670
+la construise ensemble
+
+55
+00:01:15,670 --> 00:01:16,470
+prends rendez-vous.
+
+56
+00:01:16,470 --> 00:01:17,250
+Le lien est dans ma
+
+57
+00:01:17,250 --> 00:01:17,770
+bio.

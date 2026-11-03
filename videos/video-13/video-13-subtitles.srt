@@ -1,0 +1,76 @@
+1
+00:00:00,600 --> 00:00:03,200
+Aujourd'hui, j'ai décidé de partager ma méthode.
+
+2
+00:00:03,200 --> 00:00:05,180
+Depuis plusieurs jours, je te montre tout ce que
+
+3
+00:00:05,180 --> 00:00:07,400
+j'arrive à créer avec l'intelligence artificielle.
+
+4
+00:00:07,400 --> 00:00:09,280
+Des applications, des agents IA,
+
+5
+00:00:09,280 --> 00:00:11,060
+des vidéos, des bandes dessinées…
+
+6
+00:00:11,060 --> 00:00:11,940
+Mais je me suis dit :
+
+7
+00:00:11,940 --> 00:00:13,500
+pourquoi garder tout ça pour moi ?
+
+8
+00:00:13,500 --> 00:00:15,440
+Alors, j'ai créé BraindCode Build.
+
+9
+00:00:15,440 --> 00:00:17,920
+Cent idées d'applications, autour de mes logiciels.
+
+10
+00:00:17,920 --> 00:00:20,400
+Tu choisis une idée, tu récupères le cahier des charges,
+
+11
+00:00:20,400 --> 00:00:23,140
+les prompts et les outils MCP pour commencer à construire.
+
+12
+00:00:23,140 --> 00:00:25,660
+Et avec Claude Code, tu peux avancer étape par étape,
+
+13
+00:00:25,660 --> 00:00:26,940
+jusqu'à ton application.
+
+14
+00:00:26,940 --> 00:00:28,960
+Le but, ce n'est plus seulement d'utiliser l'IA.
+
+15
+00:00:28,960 --> 00:00:31,200
+C'est d'apprendre à construire avec elle.
+
+16
+00:00:31,200 --> 00:00:32,860
+Avant, je construisais mes outils.
+
+17
+00:00:32,860 --> 00:00:35,140
+Maintenant, je te donne les moyens de construire les tiens.
+
+18
+00:00:35,140 --> 00:00:36,600
+Si tu veux découvrir ma méthode,
+
+19
+00:00:36,600 --> 00:00:38,270
+écris BUILD en commentaire !
+

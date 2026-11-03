@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Poppins SemiBold,50,&H00E6F9FC,&H00E6F9FC,&H00231A0F,&H00231A0F,0,0,0,0,100,100,0,0,3,16,0,2,90,90,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:02.50,0:00:05.14,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, tout le monde parle d'employés IA.
+Dialogue: 0,0:00:05.14,0:00:07.74,Sub,,0,0,0,,{\fad(80,60)}Mais il y a une question que presque personne ne pose :
+Dialogue: 0,0:00:07.74,0:00:09.40,Sub,,0,0,0,,{\fad(80,60)}comment est-ce qu'on les forme à leur métier ?
+Dialogue: 0,0:00:10.10,0:00:12.10,Sub,,0,0,0,,{\fad(80,60)}J'ai donc développé FoodEatUp Academy.
+Dialogue: 0,0:00:12.10,0:00:14.40,Sub,,0,0,0,,{\fad(80,60)}Une plateforme de formation avec des parcours,
+Dialogue: 0,0:00:14.40,0:00:16.45,Sub,,0,0,0,,{\fad(80,60)}des missions, des quiz, des exercices
+Dialogue: 0,0:00:16.45,0:00:17.99,Sub,,0,0,0,,{\fad(80,60)}et un suivi des compétences.
+Dialogue: 0,0:00:18.60,0:00:20.94,Sub,,0,0,0,,{\fad(80,60)}Ensuite, je peux préparer des agents spécialisés :
+Dialogue: 0,0:00:20.94,0:00:22.98,Sub,,0,0,0,,{\fad(80,60)}commercial, marketing, gestion,
+Dialogue: 0,0:00:22.98,0:00:24.42,Sub,,0,0,0,,{\fad(80,60)}formation ou pilotage.
+Dialogue: 0,0:00:24.42,0:00:25.82,Sub,,0,0,0,,{\fad(80,60)}Chaque agent possède un rôle,
+Dialogue: 0,0:00:25.82,0:00:27.83,Sub,,0,0,0,,{\fad(80,60)}des outils autorisés et des objectifs à atteindre.
+Dialogue: 0,0:00:28.80,0:00:30.60,Sub,,0,0,0,,{\fad(80,60)}Et c'est là que ça devient intéressant.
+Dialogue: 0,0:00:30.60,0:00:33.18,Sub,,0,0,0,,{\fad(80,60)}Je peux définir des routines, leur donner un objectif,
+Dialogue: 0,0:00:33.18,0:00:34.26,Sub,,0,0,0,,{\fad(80,60)}mesurer les résultats,
+Dialogue: 0,0:00:34.26,0:00:36.58,Sub,,0,0,0,,{\fad(80,60)}et décider si la méthode doit être conservée,
+Dialogue: 0,0:00:36.58,0:00:37.94,Sub,,0,0,0,,{\fad(80,60)}améliorée ou arrêtée.
+Dialogue: 0,0:00:37.94,0:00:38.94,Sub,,0,0,0,,{\fad(80,60)}Pour qu'elles tournent seules,
+Dialogue: 0,0:00:38.94,0:00:41.32,Sub,,0,0,0,,{\fad(80,60)}il faut un orchestrateur réellement configuré.

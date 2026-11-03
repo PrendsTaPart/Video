@@ -1,0 +1,222 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 4 : les coulisses</title>
+<style>
+@font-face{font-family:M;src:url(a/fonts/Manrope-Medium.ttf);font-weight:500}
+@font-face{font-family:M;src:url(a/fonts/Manrope-Bold.ttf);font-weight:700}
+@font-face{font-family:M;src:url(a/fonts/Manrope-ExtraBold.ttf);font-weight:800}
+:root{--night:#0F1A23;--surf:#16242F;--blue:#007BFF;--orange:#FFA500;--cream:#FCF9E6;--grey:#AEB8C2}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;background:var(--night);overflow:hidden}
+body{font-family:M,sans-serif;color:#fff}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:radial-gradient(1200px 900px at 50% 38%,#173049 0%,#0F1A23 62%)}
+.abs{position:absolute}
+.scene{position:absolute;inset:0;display:none}
+#wm{position:absolute;width:1300px;left:-110px;top:420px;opacity:.035;filter:grayscale(1) brightness(3)}
+.chip{position:absolute;left:80px;top:150px;font-weight:800;font-size:30px;letter-spacing:4px;color:var(--orange);text-transform:uppercase}
+.title{position:absolute;left:80px;right:80px;top:200px;font-weight:800;font-size:76px;line-height:1.05;letter-spacing:-1px}
+.title b{color:var(--orange);font-weight:800}
+.phone{position:absolute;background:#05090d;border-radius:64px;padding:16px;box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 2px #2a3a48 inset}
+.phone .scr{position:relative;width:100%;height:100%;border-radius:50px;overflow:hidden;background:#000}
+.tab{position:absolute;background:#05090d;border-radius:42px;padding:22px;box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 2px #2a3a48 inset}
+.tab .scr{position:relative;width:100%;height:100%;border-radius:20px;overflow:hidden;background:#000}
+.scr > img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.src{position:absolute;font-weight:500;font-size:22px;color:var(--grey);letter-spacing:.5px}
+.src:before{content:"";display:inline-block;width:10px;height:10px;border-radius:5px;background:#22c55e;margin-right:10px;vertical-align:2px}
+.pill{position:absolute;display:flex;align-items:center;gap:14px;background:var(--surf);border:2px solid #2a3a48;border-radius:999px;padding:16px 28px;font-weight:700;font-size:34px;white-space:nowrap}
+.pill svg{width:38px;height:38px;flex:none}
+.pill.o{background:var(--orange);color:#111;border-color:var(--orange)}
+.pill.b{background:var(--blue);color:#fff;border-color:var(--blue)}
+.pill.warn{border-color:var(--orange);color:var(--orange);background:#16242F;box-shadow:0 20px 50px rgba(0,0,0,.6)}
+.card{position:absolute;background:var(--surf);border-radius:36px;border:2px solid #24384a;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.row{display:flex;align-items:center;gap:22px;padding:22px 34px;border-top:2px solid #22364a;font-size:32px;font-weight:700}
+.row .ic{width:62px;height:62px;border-radius:16px;background:#0b2a4d;display:flex;align-items:center;justify-content:center;flex:none}
+.row .sz{margin-left:auto;color:var(--grey);font-weight:500;font-size:28px}
+.bubble{position:absolute;border-radius:30px;padding:22px 30px;font-size:33px;font-weight:700;line-height:1.25}
+.logo-pill{position:absolute;background:#fff;border-radius:999px;display:flex;align-items:center;justify-content:center}
+</style>
+</head><body>
+<style>
+#stage{background:radial-gradient(1100px 900px at 50% 36%,#10304d 0%,#0B1622 62%)}
+.chip{color:#2EA8FF}.title b{color:#2EA8FF}
+.term{position:absolute;background:#0a0f14;border:2px solid #22364a;border-radius:22px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.term .bar{padding:12px 18px;background:#131d27;font-weight:700;font-size:20px;color:#8fa3b5}
+.term pre{margin:0;padding:14px 18px;font-family:'DejaVu Sans Mono',monospace;font-size:18px;line-height:1.45;color:#d6e2ec;white-space:pre-wrap;word-break:break-all}
+.g{color:#86efac}.k{color:#7dd3fc}.o{color:#FFA500}.m{color:#7d90a2}.r{color:#ff7b72}
+.real{position:absolute;font-weight:500;font-size:21px;color:#8fa3b5}
+.real:before{content:"";display:inline-block;width:10px;height:10px;border-radius:5px;background:#22c55e;margin-right:10px;vertical-align:2px}
+.ck{position:absolute;left:70px;right:70px;display:flex;gap:18px;align-items:flex-start;background:#16242F;border:2px solid #2f475c;border-radius:22px;padding:18px 22px}
+.ck .i{flex:none;width:48px;height:48px;border-radius:24px;background:#22c55e;color:#06121d;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:28px}
+.ck .t{font-weight:800;font-size:30px}.ck .t small{display:block;font-weight:500;font-size:22px;color:#AEB8C2;margin-top:4px}
+.ck.h .i{background:#FFA500}
+.img{position:absolute;border-radius:18px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.45);border:2px solid #2f475c;background:#000}
+.img img{width:100%;height:100%;object-fit:cover;object-position:top left;display:block}
+.trk{position:absolute;left:70px;right:70px;height:56px}
+.trk .lab{position:absolute;left:0;top:14px;width:150px;font-weight:800;font-size:22px;color:#8fa3b5}
+.trk .bar{position:absolute;top:8px;height:40px;border-radius:10px}
+.wfn{position:absolute;left:90px;width:900px;display:flex;align-items:center;gap:18px;border-radius:18px;padding:12px 18px;background:#16242F;border:2px solid #2f475c}
+.wfn .t{font-weight:800;font-size:27px}.wfn .t small{font-weight:500;font-size:19px;color:#AEB8C2;display:block}
+.wfn .tag{margin-left:auto;flex:none;border-radius:999px;padding:6px 14px;font-weight:800;font-size:18px}
+.auto{background:#123b5c;color:#7dd3fc}.man{background:#4a3410;color:#FFA500}
+</style>
+<div id="stage">
+  <!-- 0 intro -->
+  <div class="scene" id="s0">
+    <div class="chip" id="s0c" style="top:110px">Épisode 4 · Les coulisses</div>
+    <div class="title" id="s0t" style="top:160px;font-size:58px">Je ne monte plus mes vidéos<br><b>comme avant</b></div>
+    <div class="img" id="s0v" style="left:270px;top:340px;width:540px;height:960px"><img id="s0seq" class="seq" data-dir="a/intro" data-n="336"></div>
+    <div class="real" id="s0r" style="left:120px;top:1325px;width:840px;text-align:center">Extraits des 3 épisodes assemblés par rapido-video :<br>cut → xfade → preset reels</div>
+  </div>
+
+  <!-- 1 point de départ -->
+  <div class="scene" id="s1">
+    <div class="chip">1 · Le point de départ</div>
+    <div class="title" style="font-size:60px">Une idée, des captures,<br><b>un prompt</b></div>
+    <div class="img" id="i1" style="left:60px;top:410px;width:960px;height:222px"><img src="a/img/src-haccp.png"></div>
+    <div class="img" id="i2" style="left:60px;top:650px;width:470px;height:232px"><img src="a/img/src-caisse.png"></div>
+    <div class="img" id="i3" style="left:550px;top:650px;width:470px;height:232px"><img src="a/img/src-web.png"></div>
+    <div class="term" id="i4" style="left:60px;top:910px;width:960px"><div class="bar">Vérifications de Claude avant d'écrire</div><pre id="s1pre"></pre></div>
+    <div class="real" style="left:70px;top:1360px">Planches réelles des captures utilisées · constats réels</div>
+  </div>
+
+  <!-- 2 plugin -->
+  <div class="scene" id="s2">
+    <div class="chip">2 · Mon plugin Vidéo</div>
+    <div class="title" style="font-size:60px">rapido-video :<br><b>les recettes de montage</b></div>
+    <div class="term" id="t2a" style="left:60px;top:400px;width:960px"><div class="bar">rapido-video/skills/montage-express · monter.py</div><pre style="font-size:20px">probe · normalize · <span class="k">concat</span> · <span class="k">cut</span> · <span class="k">xfade</span>
+overlay-logo · reframe · speed · extract-audio
+<span class="k">mix</span> (sidechain) · remove-silence
+<span class="k">burn-srt</span> · title-card · <span class="k">preset</span>
+sous_titres.py : Whisper local → SRT → incrustation</pre></div>
+    <div class="term" id="t2b" style="left:60px;top:680px;width:960px"><div class="bar">exécuté aujourd'hui sur les 3 épisodes</div><pre id="s2pre" style="font-size:17px"></pre></div>
+    <div id="s2f" class="abs" style="left:60px;top:1120px;width:960px;height:300px"></div>
+    <div class="real" id="s2r" style="left:70px;top:1440px">+ scènes HTML rendues image par image (Playwright)</div>
+  </div>
+
+  <!-- 3 montage -->
+  <div class="scene" id="s3">
+    <div class="chip">3 · Le montage</div>
+    <div class="title" style="font-size:60px">Je décris le résultat,<br><b>Claude assemble</b></div>
+    <div class="abs" id="tl" style="left:0;right:0;top:400px;height:420px">
+      <div class="trk" style="top:0"><div class="lab">Images</div><div id="tv"></div></div>
+      <div class="trk" style="top:70px"><div class="lab">Voix</div><div id="ta"></div></div>
+      <div class="trk" style="top:140px"><div class="lab">Musique</div><div class="bar" id="tm" style="left:150px;width:790px;background:linear-gradient(90deg,#3b2a5c,#4b3570)"></div></div>
+      <div class="trk" style="top:210px"><div class="lab">Sous-titres</div><div id="ts"></div></div>
+      <div id="tph" class="abs" style="left:150px;top:-10px;width:4px;height:290px;background:#FFA500"></div>
+    </div>
+    <div class="real" id="t3r" style="left:70px;top:700px">Chronologie réelle de l'épisode « lundi » (89 s)</div>
+    <div class="term" id="t3w" style="left:60px;top:760px;width:960px"><div class="bar">Whisper : chaque mot horodaté</div><pre style="font-size:19px">Hier,@0.0 dimanche,@0.54 je@1.12 vous@1.2 montrais@1.28 les@1.58 4@1.74 applications@1.92 Flutter@2.34 …</pre></div>
+    <div class="img" id="t3a" style="left:60px;top:950px;width:460px;height:500px"><img src="a/img/avant.png"></div>
+    <div class="img" id="t3b" style="left:560px;top:950px;width:460px;height:500px"><img src="a/img/apres.jpg"></div>
+    <div class="real" style="left:70px;top:1462px">Avant : capture du site · Après : image finale</div>
+  </div>
+
+  <!-- 4 RapidoCMS -->
+  <div class="scene" id="s4">
+    <div class="chip">4 · RapidoCMS</div>
+    <div class="title" style="font-size:60px">Bibliothèque, brouillon,<br><b>calendrier</b></div>
+    <div class="term" id="t4" style="left:60px;top:400px;width:960px"><div class="bar">MCP RapidoCMS · réponses réelles (vidéo du lundi)</div><pre id="s4pre" style="font-size:18px"></pre></div>
+    <div class="img" id="t4c" style="left:300px;top:1000px;width:480px;height:470px"><img src="a/img/cms-0.png"></div>
+    <div class="real" style="left:70px;top:1480px">rapidocms.com · réponses de l'outil MCP pendant cette production</div>
+  </div>
+
+  <!-- 5 humain -->
+  <div class="scene" id="s5">
+    <div class="chip">5 · Ce qui reste humain</div>
+    <div class="title" style="font-size:60px">Mes validations,<br><b>pendant ces productions</b></div>
+    <div class="ck h" id="h1" style="top:430px"><div class="i">✓</div><div class="t">Le scénario<small>Épisode 1 présenté sans date : aucun commit le 24/10</small></div></div>
+    <div class="ck h" id="h2" style="top:590px"><div class="i">✓</div><div class="t">Les chiffres<small>33 plugins · 544 skills · 77 agents, comptés dans le dépôt</small></div></div>
+    <div class="ck h" id="h3" style="top:750px"><div class="i">✓</div><div class="t">L'accord des personnes citées<small>Soulayma nommée seulement après mon accord</small></div></div>
+    <div class="ck h" id="h4" style="top:910px"><div class="i">✓</div><div class="t">Le feu vert de publication<small>Compte, vidéo et horaire choisis par moi</small></div></div>
+  </div>
+
+  <!-- 6 workflow -->
+  <div class="scene" id="s6">
+    <div class="chip">Le workflow réellement utilisé</div>
+    <div class="title" id="s6t" style="font-size:52px;top:205px">De l'idée<br><b>à la publication</b></div>
+    <div id="wf"></div>
+  </div>
+
+  <!-- 7 carton -->
+  <div class="scene" id="s7">
+    <div class="abs" id="s7a" style="left:0;right:0;top:620px;text-align:center;font-weight:800;font-size:58px;letter-spacing:2px;line-height:1.3">PLUGIN VIDÉO<br><span style="color:#FFA500">×</span> CLAUDE <span style="color:#FFA500">×</span><br>RAPIDOCMS</div>
+    <div class="abs" id="s7b" style="left:60px;right:60px;top:1000px;text-align:center;font-weight:700;font-size:42px;line-height:1.35;color:#cfe3f3">De l'idée à la vidéo.<br>De la vidéo à la communication.</div>
+    <div class="logo-pill" id="s7l" style="left:240px;top:1200px;width:600px;height:150px"><img src="a/logos/braindcode.png" style="width:500px"></div>
+  </div>
+
+  <!-- miniature -->
+  <div class="scene" id="thumb">
+    <div class="abs" style="left:70px;top:150px;font-weight:800;font-size:44px;letter-spacing:6px;color:#2EA8FF">ÉPISODE 4 · COULISSES</div>
+    <div class="abs" style="left:66px;right:60px;top:220px;font-weight:800;font-size:118px;line-height:.98;letter-spacing:-3px">Je monte<br>mes vidéos<br>avec mes<br><span style="color:#2EA8FF">agents IA</span></div>
+    <div class="img" style="left:90px;top:900px;width:430px;height:764px;transform:rotate(-4deg)"><img src="a/img/f01200.jpg"></div>
+    <div class="term" style="left:520px;top:1000px;width:500px;transform:rotate(3deg)"><div class="bar">monter.py</div><pre style="font-size:20px"><span class="g">$</span> cut · xfade
+<span class="g">$</span> mix --sidechain
+<span class="g">$</span> burn-srt
+<span class="g">$</span> preset reels</pre></div>
+  </div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const eout=x=>1-Math.pow(1-x,3);
+const A=[0,5.355,14.994,28.583,39.83,47.44,52.833,64.72], P=[0.6,12.6,25.6,42.4,56.8,67.6,75.6];
+const V=(i,w)=>P[i]+(w-A[i]);
+const SC=[['s0',0,12.0],['s1',12.0,25.0],['s2',25.0,41.8],['s3',41.8,56.2],['s4',56.2,67.0],['s5',67.0,75.0],['s6',75.0,88.6],['s7',88.6,96.0]];
+const DUR=96.0, FPS=30;
+function pop(el,t,a,d=.45,dy=40,sc=0){const p=eout(cl((t-a)/d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px) scale(${1-sc*(1-p)})`;return p;}
+function lines(el,arr,t,a,lps){const n=Math.max(0,Math.floor((t-a)*lps)+(t>=a?1:0));el.innerHTML=arr.slice(0,n).join('\n');}
+const pend=[];
+function seq(el,t,a){const n=+el.dataset.n;const f=Math.max(1,Math.min(n,Math.floor((t-a)*FPS)+1));const src=`${el.dataset.dir}/${String(f).padStart(4,'0')}.jpg`;if(el.getAttribute('src')!==src){el.setAttribute('src',src);pend.push(el.decode().catch(()=>{}));}}
+
+const CHECKS=['<span class="o">Caisse</span> : Tap to Pay « Bientôt » dans le code → NFC retiré du texte',
+ '<span class="o">Menu digital</span> : pas de sondages → attribués à l\'app Fidélité',
+ '<span class="o">Store</span> : aucune trace du module → maquette signalée',
+ '<span class="o">Git</span> : aucun commit le 24/10 → épisode 1 sans date',
+ '<span class="o">Catalogue</span> : 33 plugins · 544 skills · 77 agents (dépôt)'];
+const JOURNAL=['<span class="g">$</span> monter.py probe episode1…mp4  <span class="m">→ durée=91.0s</span>',
+ '<span class="g">$</span> monter.py cut --start 31 --end 35 -o ep2.mp4 …',
+ '<span class="g">$</span> monter.py xfade --duration 0.4 --offset 3.6 ep1.mp4 ep2.mp4',
+ '<span class="g">$</span> monter.py xfade --duration 0.4 --offset 7.2 ep12.mp4 ep3.mp4',
+ '<span class="g">$</span> monter.py preset --platform reels -o intro-reels.mp4',
+ '<span class="m">  intro-reels.mp4 (preset reels 1080x1920@30)</span>'];
+const CMS=['<span class="k">upload_file_tool</span>(lundi-foodeatup-store_1080x1920.mp4)',
+ '<span class="m">→ "Fichier est enregistré avec succès"</span>',
+ '<span class="k">create_draft_tool</span>(linkedin, profil Michael_Kebail, mediatext)',
+ '<span class="m">→ draft id 1821</span>',
+ '<span class="k">schedule_draft_tool</span>(1821, 2026-10-26, 15:45)',
+ '<span class="m">→ post 1731 · job 2019 · "errors": null</span>',
+ '<span class="k">list_connected_accounts</span>',
+ '<span class="m">→ LinkedIn : actif · TikTok : </span><span class="r">expired</span>'];
+// chronologie réelle de l'épisode du lundi (voix placées, 89 s)
+const LP=[0.4,12.2,23.6,36.6,51.4,71.2], LD=[10.686,6.816,9.284,9.849,16.031,9.414], SCL=[0,11.6,23.0,36.0,50.8,70.6,81.5,89];
+const px=s=>150+s/89*790;
+$('ta').innerHTML=LP.map((p,i)=>`<div class="bar" style="left:${px(p)}px;width:${LD[i]/89*790}px;background:#2EA8FF"></div>`).join('');
+$('tv').innerHTML=SCL.slice(0,-1).map((p,i)=>`<div class="bar" style="left:${px(p)+2}px;width:${(SCL[i+1]-p)/89*790-4}px;background:#1d3a55;border:2px solid #2f6f9f"></div>`).join('');
+const CUES=[[0.4, 1.44], [1.44, 3.08], [3.08, 5.48], [5.48, 7.22], [7.22, 8.32], [8.32, 11.04], [12.2, 13.53], [13.53, 15.33], [15.33, 16.83], [16.83, 18.97], [23.6, 24.9], [24.9, 26.9], [26.9, 28.7], [28.7, 30.12], [30.12, 32.83], [36.6, 37.75], [37.75, 39.35], [39.35, 41.51], [41.51, 43.33], [43.33, 44.67], [44.67, 46.4], [51.4, 52.45], [52.45, 54.1], [54.1, 55.33], [55.33, 57.42], [57.42, 60.41], [60.41, 61.3], [61.3, 63.19], [63.19, 64.91], [64.91, 67.38], [71.21, 73.27], [73.27, 74.53], [74.53, 75.59], [75.59, 77.51], [77.51, 79.57], [79.57, 80.56]];
+$('ts').innerHTML=CUES.map(([a,b])=>`<div class="bar" style="left:${px(a)}px;width:${Math.max(2,(b-a)/89*790-2)}px;background:#cfe3f3;height:24px;top:16px"></div>`).join('');
+// planche d'images rendues
+$('s2f').innerHTML=['f00400','f00800','f01200','f01600','f02000','f02400'].map((f,i)=>`<div class="img" style="left:${i*162}px;top:0;width:150px;height:267px"><img src="a/img/${f}.jpg"></div>`).join('');
+const frs=[...$('s2f').children];
+// workflow
+const WF=[['Idée et brief','le prompt',0],['Audit des sources','dépôts, sites, Drive, captures',1],['Script et storyboard','validés par moi',0],['Voix off et musique','ElevenLabs (MCP)',1],['Mots horodatés','faster-whisper',1],['Scènes animées','HTML + Playwright, image par image',1],['Montage, mixage, sous-titres','FFmpeg · recettes rapido-video',1],['Bibliothèque et brouillon','RapidoCMS (MCP)',1],['Feu vert de publication','moi',0]];
+$('wf').innerHTML=WF.map(([t,s,a],i)=>`<div class="wfn" style="top:${380+i*118}px"><div class="t">${t}<small>${s}</small></div><span class="tag ${a?'auto':'man'}">${a?'Claude':'Humain'}</span></div>`).join('');
+const wf=[...$('wf').children];
+
+function render(t){
+  pend.length=0;$('thumb').style.display='none';
+  for(const [id,a,b] of SC){const el=$(id);const on=t>=a&&t<b;el.style.display=on?'block':'none';
+    if(on){const fi=id==='s0'?1:cl((t-a)/.35),fo=id==='s7'?1:1-cl((t-(b-.3))/.3);el.style.opacity=Math.min(fi,fo);}}
+  if(t<12){pop($('s0c'),t,.1);pop($('s0t'),t,.3,.5,40);pop($('s0v'),t,.4,.6,60,.05);seq($('s0seq'),t,.4);pop($('s0r'),t,1.2,.4,10);}
+  else if(t<25){[['i1',6.32],['i2',6.9],['i3',7.86]].forEach(([id,w])=>pop($(id),t,V(1,w)-.1,.45,40,.05));pop($('i4'),t,V(1,12.16)-.3,.45,40);lines($('s1pre'),CHECKS,t,V(1,12.16),1.1);}
+  else if(t<41.8){pop($('t2a'),t,V(2,17.42)-.2,.45,40);pop($('t2b'),t,V(2,19.12),.45,40);lines($('s2pre'),JOURNAL,t,V(2,19.4),1.2);
+    frs.forEach((e,i)=>pop(e,t,V(2,25.72)+i*.18,.35,30,.1));pop($('s2r'),t,V(2,25.72),.4,10);}
+  else if(t<56.2){pop($('tl'),t,41.9,.5,30);const pl=cl((t-V(3,29.84))/10);$('tph').style.left=(150+pl*790)+'px';
+    pop($('t3r'),t,42.4,.4,10);pop($('t3w'),t,V(3,33.78)-.2,.45,30);pop($('t3a'),t,V(3,36.92),.45,40);pop($('t3b'),t,V(3,38.22),.45,40);
+    $('tm').style.opacity=1;$('tm').style.clipPath='none';}
+  else if(t<67){pop($('t4'),t,V(4,40.4)-.2,.45,40);lines($('s4pre'),CMS,t,V(4,42.7)-.3,2.0);pop($('t4c'),t,V(4,45.84)-.3,.5,40);}
+  else if(t<75){[['h1',48.52],['h2',49.62],['h3',50.26],['h4',51.62]].forEach(([id,w])=>pop($(id),t,V(5,w)-.15,.4,30,.05));}
+  else if(t<88.6){pop($('s6t'),t,75.1,.5,30);wf.forEach((e,i)=>pop(e,t,75.4+i*.55,.4,30,.05));}
+  else {pop($('s7a'),t,88.7,.6,30);pop($('s7b'),t,89.5,.5,20);pop($('s7l'),t,90.3,.5,20,.1);}
+  return Promise.all(pend);
+}
+function thumb(){for(const [id] of SC)$(id).style.display='none';$('thumb').style.display='block';}
+window.render=render;window.thumb=thumb;window.DUR=DUR;
+</script></body></html>

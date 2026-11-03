@@ -1,0 +1,28 @@
+{
+  "provider": "elevenlabs",
+  "voice": "TGAegA0zNRi8I6nUdq3i",
+  "lang": "fr",
+  "speed": 1.0,
+  "lines": [
+    {
+      "id": "01",
+      "text": "Une rupture en plein service, des commandes au doigt mouillé, des produits qui périment au fond du frigo, une liste de courses refaite dix fois... Gérer son stock en restauration, c'est jongler en permanence."
+    },
+    {
+      "id": "02",
+      "text": "Voici StockVisionAI, le module FoodEatUp qui pilote toute votre chaîne, de la recette à la prédiction des ventes."
+    },
+    {
+      "id": "03",
+      "text": "De la recette à la carte, la liste de courses se génère toute seule. Les livraisons remplissent votre stock, la production se planifie, et l'intelligence artificielle prédit vos ventes. Toute votre chaîne, connectée."
+    },
+    {
+      "id": "04",
+      "text": "Et comme toujours, tout se pilote aussi avec Claude. Ajoute la recette du risotto, fais ma liste de courses pour la semaine, combien vais-je vendre samedi — et c'est fait, dans FoodEatUp."
+    },
+    {
+      "id": "05",
+      "text": "Moins de gaspillage, plus jamais de rupture, des marges maîtrisées. StockVisionAI — votre stock, enfin piloté par l'IA."
+    }
+  ]
+}

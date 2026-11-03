@@ -1,0 +1,157 @@
+{
+  "regle": "Logos officiels en fichier, jamais redessinés ni recolorés ni générés. Aucun logo introuvable : toutes les marques demandées figurent dans le MCP Formation (StartupForge compris).",
+  "logos": [
+    {
+      "fichier": "logiciels/braindcode.webp",
+      "source": "https://formation.foodeatup.fr/brand/logiciels/braindcode.webp",
+      "type": "RIFF (little-endian) data",
+      "details": "RIFF (little-endian) data, Web/P image, VP8 encoding, 800x800, Scaling: [none]x[none], YUV color, decoders should clamp",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "logiciels/claude.webp",
+      "source": "https://formation.foodeatup.fr/brand/logiciels/claude.webp",
+      "type": "RIFF (little-endian) data",
+      "details": "RIFF (little-endian) data, Web/P image, VP8 encoding, 482x104, Scaling: [none]x[none], YUV color, decoders should clamp",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "logiciels/foodeatup-banniere.webp",
+      "source": "https://formation.foodeatup.fr/brand/logiciels/foodeatup-banniere.webp",
+      "type": "RIFF (little-endian) data",
+      "details": "RIFF (little-endian) data, Web/P image",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "logiciels/foodeatup-infini.webp",
+      "source": "https://formation.foodeatup.fr/brand/logiciels/foodeatup-infini.webp",
+      "type": "RIFF (little-endian) data",
+      "details": "RIFF (little-endian) data, Web/P image",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "logiciels/foodeatup.webp",
+      "source": "https://formation.foodeatup.fr/brand/logiciels/foodeatup.webp",
+      "type": "RIFF (little-endian) data",
+      "details": "RIFF (little-endian) data, Web/P image",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "logiciels/lovable.webp",
+      "source": "https://formation.foodeatup.fr/brand/logiciels/lovable.webp",
+      "type": "RIFF (little-endian) data",
+      "details": "RIFF (little-endian) data, Web/P image, VP8 encoding, 1600x568, Scaling: [none]x[none], YUV color, decoders should clamp",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "logiciels/mistral.webp",
+      "source": "https://formation.foodeatup.fr/brand/logiciels/mistral.webp",
+      "type": "RIFF (little-endian) data",
+      "details": "RIFF (little-endian) data, Web/P image, VP8 encoding, 800x420, Scaling: [none]x[none], YUV color, decoders should clamp",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "logiciels/openai.webp",
+      "source": "https://formation.foodeatup.fr/brand/logiciels/openai.webp",
+      "type": "RIFF (little-endian) data",
+      "details": "RIFF (little-endian) data, Web/P image",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "logiciels/planit.webp",
+      "source": "https://formation.foodeatup.fr/brand/logiciels/planit.webp",
+      "type": "RIFF (little-endian) data",
+      "details": "RIFF (little-endian) data, Web/P image, VP8 encoding, 680x680, Scaling: [none]x[none], YUV color, decoders should clamp",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "logiciels/rapidocms.webp",
+      "source": "https://formation.foodeatup.fr/brand/logiciels/rapidocms.webp",
+      "type": "RIFF (little-endian) data",
+      "details": "RIFF (little-endian) data, Web/P image",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "logiciels/rapidocrm.webp",
+      "source": "https://formation.foodeatup.fr/brand/logiciels/rapidocrm.webp",
+      "type": "RIFF (little-endian) data",
+      "details": "RIFF (little-endian) data, Web/P image",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "logiciels/rapidorh.webp",
+      "source": "https://formation.foodeatup.fr/brand/logiciels/rapidorh.webp",
+      "type": "RIFF (little-endian) data",
+      "details": "RIFF (little-endian) data, Web/P image, VP8 encoding, 200x180, Scaling: [none]x[none], YUV color, decoders should clamp",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "logiciels/startupforge.webp",
+      "source": "https://formation.foodeatup.fr/brand/logiciels/startupforge.webp",
+      "type": "RIFF (little-endian) data",
+      "details": "RIFF (little-endian) data, Web/P image",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "chartes/braindcode.png",
+      "source": "https://formation.foodeatup.fr/brand/chartes/braindcode.png",
+      "type": "PNG image data",
+      "details": "PNG image data, 669 x 160, 8-bit/color RGBA, non-interlaced",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "chartes/foodeatup.png",
+      "source": "https://formation.foodeatup.fr/brand/chartes/foodeatup.png",
+      "type": "PNG image data",
+      "details": "PNG image data, 267 x 71, 8-bit/color RGBA, non-interlaced",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "chartes/lovable.png",
+      "source": "https://formation.foodeatup.fr/brand/chartes/lovable.png",
+      "type": "PNG image data",
+      "details": "PNG image data, 902 x 160, 8-bit/color RGBA, non-interlaced",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "chartes/planit.png",
+      "source": "https://formation.foodeatup.fr/brand/chartes/planit.png",
+      "type": "PNG image data",
+      "details": "PNG image data, 538 x 160, 8-bit/color RGBA, non-interlaced",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "chartes/rapidocms.png",
+      "source": "https://formation.foodeatup.fr/brand/chartes/rapidocms.png",
+      "type": "PNG image data",
+      "details": "PNG image data, 231 x 240, 8-bit/color RGBA, non-interlaced",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "chartes/rapidocrm.png",
+      "source": "https://formation.foodeatup.fr/brand/chartes/rapidocrm.png",
+      "type": "PNG image data",
+      "details": "PNG image data, 234 x 240, 8-bit/color RGBA, non-interlaced",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "chartes/rapidorh.png",
+      "source": "https://formation.foodeatup.fr/brand/chartes/rapidorh.png",
+      "type": "PNG image data",
+      "details": "PNG image data, 197 x 240, 8-bit/color RGBA, non-interlaced",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "chartes/rapidosoftware.png",
+      "source": "https://formation.foodeatup.fr/brand/chartes/rapidosoftware.png",
+      "type": "PNG image data",
+      "details": "PNG image data, 322 x 240, 8-bit/color RGBA, non-interlaced",
+      "obtenu_par": "get_brand_guidelines (MCP FoodEatUp Formation), téléchargé tel quel le 26/10/2026"
+    },
+    {
+      "fichier": "(site) planit-icon.png",
+      "source": "https://plani-t.fr/__l5e/assets-v1/4f93faea-5947-4853-8618-417fb99361b9/planit-icon.png",
+      "obtenu_par": "site Plan'It (projet Lovable f0a60f70), utilisé en vidéo 18"
+    }
+  ]
+}

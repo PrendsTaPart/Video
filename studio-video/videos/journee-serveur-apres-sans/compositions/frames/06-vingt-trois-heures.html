@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f6b-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f6b-clock {
+          position: absolute; left: 0; right: 0; top: 130px; text-align: center;
+          font-size: 140px; font-weight: 800; color: #3A3F45; font-variant-numeric: tabular-nums;
+          letter-spacing: -0.01em; opacity: 0;
+        }
+
+        .f6b-seats { position: absolute; left: 0; right: 0; top: 370px; text-align: center; }
+        .f6b-seats span {
+          display: inline-block; width: 34px; height: 34px; margin: 0 22px;
+          border: 1px solid #8A9099; border-radius: 50%; opacity: 0;
+        }
+
+        .f6b-line1 {
+          position: absolute; left: 0; right: 0; top: 500px; text-align: center;
+          font-size: 50px; font-weight: 600; color: rgba(58,63,69,0.85); opacity: 0;
+        }
+        .f6b-line2 {
+          position: absolute; left: 0; right: 0; top: 590px; text-align: center;
+          font-size: 50px; font-weight: 700; color: #3A3F45; opacity: 0;
+        }
+
+        .f6b-screen {
+          position: absolute; left: 50%; top: 700px; width: 100px; height: 72px; margin-left: -50px;
+          border: 2px solid #3A3F45; border-radius: 3px; opacity: 0;
+        }
+        .f6b-screen::before { content: ""; position: absolute; left: 14px; right: 14px; top: 30px; height: 3px; background: #3A3F45; }
+        .f6b-screen::after { content: ""; position: absolute; left: 14px; right: 30px; top: 42px; height: 3px; background: #3A3F45; }
+        .f6b-glow {
+          position: absolute; left: 50%; top: 660px; width: 260px; height: 260px; margin-left: -130px; margin-top: -74px;
+          border-radius: 50%; background: radial-gradient(circle, rgba(58,63,69,0.10) 0%, rgba(237,238,240,0) 65%);
+          opacity: 0;
+        }
+
+        .f6b-brokenline { position: absolute; left: 140px; right: 140px; top: 940px; height: 2px; }
+        .f6b-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.5; transform-origin: 0% 50%; }
+      </style>
+
+      <div id="root" data-composition-id="06-vingt-trois-heures" data-width="1920" data-height="1080" data-duration="12.0">
+        <div class="f6b-bg clip" id="f6b-bgclip" data-start="0" data-duration="12.0" data-track-index="0"></div>
+
+        <div class="f6b-clock" id="f6b-clock">23h00</div>
+
+        <div class="f6b-seats" id="f6b-seats">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="f6b-line1" id="f6b-line1">La salle est vide.</div>
+        <div class="f6b-line2" id="f6b-line2">Le tableur, lui, ne l'est pas.</div>
+
+        <div class="f6b-glow" id="f6b-glow"></div>
+        <div class="f6b-screen" id="f6b-screen"></div>
+
+        <div class="f6b-brokenline" id="f6b-brokenline">
+          <span style="left:3%; width:16%;"></span>
+          <span style="left:24%; width:20%; top:-3px;"></span>
+          <span style="left:50%; width:14%; top:2px;"></span>
+          <span style="left:70%; width:22%;"></span>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f6b-clock", { opacity: 0, y: 10 });
+        gsap.set("#f6b-seats span", { opacity: 0, scale: 0.6 });
+        gsap.set("#f6b-line1", { opacity: 0, y: 10 });
+        gsap.set("#f6b-line2", { opacity: 0, y: 10 });
+        gsap.set("#f6b-screen", { opacity: 0 });
+        gsap.set("#f6b-glow", { opacity: 0 });
+        gsap.set("#f6b-brokenline span", { opacity: 0, scaleX: 0 });
+
+        // Scene 1 (0.0-0.6s, cue "Vingt-trois heures."): the clock lands — the last checkpoint
+        // of the day, stated flatly.
+        tl.to("#f6b-clock", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.15);
+
+        // Scene 2 (0.6-1.3s): six faint, empty seat-rings settle in — already dim, the room was
+        // emptying before the line even names it.
+        tl.to("#f6b-seats span", { opacity: 0.35, scale: 1, duration: 0.35, ease: "power2.out", stagger: 0.06 }, 0.7);
+
+        // Scene 3 (1.7-2.4s, cue "La salle est vide."): the first line confirms it
+        tl.to("#f6b-line1", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 1.75);
+
+        // Scene 4 (3.3-4.9s, cue "Le tableur, lui, ne l'est pas."): the second line lands, and the
+        // one still-lit shape in the whole frame appears — a plain screen glyph, softly glowing.
+        // This is the film's closing image: everyone gone, one window still open.
+        tl.to("#f6b-line2", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 3.35);
+        tl.fromTo("#f6b-glow", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power2.out" }, 3.75);
+        tl.fromTo("#f6b-screen", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 3.9);
+
+        // Scene 5 (0.2-11.6s, background): broken line draws quietly under everything, floor-level
+        tl.to("#f6b-brokenline span", { opacity: 0.5, duration: 0.01 }, 0.9);
+        tl.to("#f6b-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.08 }, 0.9);
+
+        // Scene 6 (4.9-12.0s): the long hold — the screen glow breathes slowly, the only motion
+        // left in an otherwise still, empty room. This stillness is the point of the whole film.
+        const f6bphase = { p: 0 };
+        tl.to(f6bphase, {
+          p: Math.PI * 2 * 1.7, duration: 6.9, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f6bphase.p);
+            gsap.set("#f6b-glow", { opacity: 0.75 + s * 0.2 });
+            gsap.set("#f6b-screen", { scale: 1 + s * 0.01 });
+          }
+        }, 5.0);
+
+        window.__timelines["06-vingt-trois-heures"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

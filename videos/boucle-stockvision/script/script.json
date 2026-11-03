@@ -1,0 +1,12 @@
+{
+  "project":"boucle-stockvision","resolution":"1920x1080","fps":30,
+  "voice":{"provider":"elevenlabs","voice_id":"TGAegA0zNRi8I6nUdq3i","name":"Adam-Instructor","model":"eleven_multilingual_v2"},
+  "blocks":[
+    {"id":"b1","win":[0,8],"text":"Dans un restaurant, tout est lié : la carte, les courses, les livraisons, la production, le stock. Alors pourquoi les gérer dans cinq outils différents ?"},
+    {"id":"b2","win":[8,20],"text":"Sur votre carte, chaque plat affiche son coût et sa marge. Un ingrédient manque ? Un clic : il part dans la liste de courses."},
+    {"id":"b3","win":[20,30],"text":"La liste devient commandes fournisseurs. À la livraison, vous contrôlez ligne par ligne, et vous notez le fournisseur."},
+    {"id":"b4","win":[30,42],"text":"Vous produisez : les ingrédients sont vérifiés, la production validée déstocke automatiquement, la traçabilité HACCP suit."},
+    {"id":"b5","win":[42,52],"text":"Et votre stock vous parle : rotation, pertes, questions à l'IA. La boucle est bouclée."},
+    {"id":"b6","win":[52,60],"text":"StockVisionAI, dans FoodEatUp. Une boucle, zéro ressaisie. Essai gratuit sur foodeatup point fr."}
+  ]
+}

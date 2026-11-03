@@ -1,0 +1,51 @@
+1
+00:00:00,600 --> 00:00:02,200
+Vous avez vu mes trois dernières vidéos ?
+
+2
+00:00:02,200 --> 00:00:04,640
+Aujourd'hui, je vous montre comment elles ont été réalisées,
+
+3
+00:00:04,640 --> 00:00:05,910
+avec mes outils IA.
+
+4
+00:00:06,400 --> 00:00:08,270
+Mon plugin Vidéo, rapido-video,
+
+5
+00:00:08,270 --> 00:00:09,870
+apporte les recettes de montage :
+
+6
+00:00:09,870 --> 00:00:12,490
+couper, assembler, mixer la voix et la musique,
+
+7
+00:00:12,490 --> 00:00:15,130
+sous-titrer avec Whisper, exporter au bon format.
+
+8
+00:00:15,130 --> 00:00:16,910
+Pour ces épisodes, Claude a aussi écrit
+
+9
+00:00:16,910 --> 00:00:19,940
+des scènes animées en HTML, rendues image par image.
+
+10
+00:00:20,500 --> 00:00:22,430
+Ensuite, RapidoCMS prend le relais :
+
+11
+00:00:22,430 --> 00:00:24,050
+la vidéo part dans la bibliothèque,
+
+12
+00:00:24,050 --> 00:00:25,790
+un brouillon est créé pour le réseau choisi,
+
+13
+00:00:25,790 --> 00:00:28,060
+et la publication est programmée dans le calendrier.

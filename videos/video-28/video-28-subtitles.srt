@@ -1,0 +1,132 @@
+1
+00:00:00,500 --> 00:00:03,360
+Avant, pour trouver des clients, il fallait prospecter,
+
+2
+00:00:03,360 --> 00:00:06,260
+rechercher des entreprises, récupérer leurs informations,
+
+3
+00:00:06,260 --> 00:00:08,600
+préparer les e-mails et gérer toutes les relances.
+
+4
+00:00:08,600 --> 00:00:11,860
+Alors j'ai commencé à créer mes propres scénarios avec n8n.
+
+5
+00:00:11,860 --> 00:00:14,660
+J'ai développé plusieurs workflows pour la recherche de prospects,
+
+6
+00:00:14,660 --> 00:00:17,740
+l'enrichissement des données, les campagnes et le suivi commercial.
+
+7
+00:00:17,740 --> 00:00:19,540
+Puis je les ai connectés à mon écosystème
+
+8
+00:00:19,540 --> 00:00:21,340
+RapidoCRM et Prospection.
+
+9
+00:00:21,340 --> 00:00:23,720
+Aujourd'hui, j'ai même des workflows spécialisés :
+
+10
+00:00:23,720 --> 00:00:25,280
+un pour orchestrer les campagnes,
+
+11
+00:00:25,280 --> 00:00:26,780
+un pour enrichir les prospects,
+
+12
+00:00:26,780 --> 00:00:28,280
+un pour détecter les réponses,
+
+13
+00:00:28,280 --> 00:00:30,860
+un pour les relances et un pour le reporting quotidien.
+
+14
+00:00:30,860 --> 00:00:33,200
+Et grâce aux MCP, mes agents IA peuvent accéder
+
+15
+00:00:33,200 --> 00:00:35,360
+aux outils de prospection qui leur sont autorisés.
+
+16
+00:00:35,360 --> 00:00:37,100
+L'objectif, ce n'est plus de faire travailler
+
+17
+00:00:37,100 --> 00:00:38,740
+une personne sur chaque étape.
+
+18
+00:00:38,740 --> 00:00:40,440
+C'est de construire un département commercial
+
+19
+00:00:40,440 --> 00:00:43,160
+où les automatisations exécutent les processus,
+
+20
+00:00:43,160 --> 00:00:45,280
+les agents IA prennent en charge les tâches adaptées,
+
+21
+00:00:45,280 --> 00:00:47,540
+et RapidoCRM centralise le suivi.
+
+22
+00:00:47,540 --> 00:00:49,140
+Mais attention : trouver des prospects,
+
+23
+00:00:49,140 --> 00:00:50,760
+ce n'est pas encore signer des clients.
+
+24
+00:00:50,760 --> 00:00:53,040
+Aujourd'hui, mon pipeline compte 70 prospects…
+
+25
+00:00:53,040 --> 00:00:55,540
+et aucune vente signée par ce système.
+
+26
+00:00:55,540 --> 00:00:57,260
+C'est exactement ce que je dois mesurer :
+
+27
+00:00:57,260 --> 00:00:59,760
+les réponses, les rendez-vous et les ventes.
+
+28
+00:00:59,760 --> 00:01:01,260
+Dans la prochaine étape, je veux pouvoir donner
+
+29
+00:01:01,260 --> 00:01:03,520
+un objectif commercial à mon équipe IA,
+
+30
+00:01:03,520 --> 00:01:05,980
+suivre ses résultats et améliorer les scénarios,
+
+31
+00:01:05,980 --> 00:01:07,440
+avec les bonnes validations.
+
+32
+00:01:07,440 --> 00:01:09,180
+Et toi, tu laisserais une équipe d'agents IA
+
+33
+00:01:09,180 --> 00:01:10,450
+préparer ta prospection ?
+

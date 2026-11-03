@@ -1,0 +1,114 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 0 : Michael et BraindCode</title>
+<link rel="stylesheet" href="base.css">
+<style>
+#stage{background:radial-gradient(1100px 900px at 50% 30%,#123a5e 0%,#0F1A23 66%)}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.name{position:absolute;left:0;right:0;text-align:center;font-weight:700;letter-spacing:12px}
+.eco{position:absolute;left:60px;width:960px;height:200px;background:var(--surf);border:2px solid #2f475c;border-radius:26px;display:flex;align-items:center;gap:24px;padding:18px;overflow:hidden}
+.eco .th{flex:none;width:250px;height:164px;border-radius:14px;overflow:hidden;background:#fff}
+.eco .th img{width:100%;height:100%;object-fit:cover;object-position:top}
+.eco .tx b{display:block;font-size:38px}.eco .tx span{font-size:22px;color:#AEB8C2;line-height:1.35;display:block;margin-top:6px}
+.eco .lg{position:absolute;right:20px;top:18px;background:#fff;border-radius:12px;padding:6px 12px}
+.lbl{position:absolute;left:60px;top:1110px;background:#fff;color:#0F1A23;border-radius:999px;padding:10px 26px;font-weight:700;font-size:32px}
+.node{position:absolute;width:250px;height:110px;border-radius:22px;background:var(--surf);border:2px solid #2f475c;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:26px;line-height:1.15}
+.word{position:absolute;left:0;right:0;text-align:center;font-weight:700;font-size:58px;letter-spacing:2px}
+.thumbc{position:absolute;width:300px;height:533px;border-radius:20px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.55);border:3px solid #2f475c}
+.thumbc img{width:100%;height:100%;object-fit:cover}
+</style></head><body>
+<div id="stage">
+  <div class="scene" id="s0">
+    <div class="ring" id="s0p" style="left:290px;top:300px;width:500px;height:500px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="name" id="s0n" style="top:880px;font-size:110px">MICHAEL</div>
+    <div class="name" id="s0s" style="top:1030px;font-size:30px;letter-spacing:5px;color:var(--orange)">ENTREPRENEUR &amp; FONDATEUR DE BRAINDCODE</div>
+    <div class="logo-pill" id="s0l" style="left:290px;top:1130px;width:500px;height:120px"><img src="a/logos/braindcode.png" style="height:76px"></div>
+    <div class="real" id="s0r" style="left:0;right:0;text-align:center;top:1290px">Photo de profil officielle BraindCode</div>
+  </div>
+
+  <div class="scene" id="s1">
+    <div class="chip">Mon parcours</div>
+    <div class="title" style="font-size:62px">20 ans<br><b>chef de cuisine</b></div>
+    <div class="card" id="s1a" style="left:60px;top:400px;width:960px;height:640px"><img id="s1img" src="a/img/1.webp" style="width:100%;height:100%;object-fit:cover"></div>
+    <div class="real" style="left:70px;top:1055px">Illustration · la BD de FoodEatUp Academy</div>
+    <div id="s1chips"></div>
+  </div>
+
+  <div class="scene" id="s2">
+    <div class="chip">La naissance</div>
+    <div class="abs" id="s2l" style="left:60px;top:180px"><div class="logo-pill" style="position:static;height:110px;padding:14px 30px"><img src="a/logos/braindcode.png" style="height:76px"></div></div>
+    <div class="tab" id="s2tab" style="left:60px;top:360px;width:960px;height:690px"><div class="scr"><img src="a/web/braindcode.png"></div></div>
+    <div class="real" style="left:70px;top:1065px">braindcode.com</div>
+    <div class="abs" id="s2w" style="left:0;right:0;top:1130px;text-align:center;font-weight:700;font-size:46px;letter-spacing:3px"><span id="w0">LOGICIELS</span> <span style="color:var(--orange)" id="d0">•</span> <span id="w1">APPLICATIONS</span><br><span style="color:var(--orange)" id="d1">•</span> <span id="w2">AGENTS IA</span></div>
+  </div>
+
+  <div class="scene" id="s3">
+    <div class="chip">Mon écosystème</div>
+    <div class="title" style="font-size:58px">Des solutions<br><b>connectées</b></div>
+    <div class="eco" id="e0" style="top:390px"><div class="th"><img src="a/web/foodeatup.png"></div><div class="tx"><b>FoodEatUp</b><span>Caisse, stocks, HACCP, fidélité<br>et applications métier</span></div></div>
+    <div class="eco" id="e1" style="top:610px"><div class="th"><img src="a/web/rapidosoftware.png"></div><div class="tx"><b>RapidoSoftware</b><span>RapidoCRM, RapidoCMS, RapidoRH</span></div></div>
+    <div class="eco" id="e2" style="top:830px"><div class="th"><img src="a/web/startupforge.png"></div><div class="tx"><b>StartupForge</b><span>Accompagner les entrepreneurs :<br>bootcamp de 5 jours</span></div></div>
+    <div class="eco" id="e3" style="top:1050px"><div class="th"><img src="a/web/plugin.png"></div><div class="tx"><b>Plugins &amp; Plan'It</b><span>Compétences, agents, connexions MCP<br>et orchestration des routines</span></div></div>
+  </div>
+
+  <div class="scene" id="s4">
+    <div class="chip">Les vraies interfaces</div>
+    <div class="tab" style="left:60px;top:330px;width:960px;height:690px"><div class="scr" id="s4scr"></div></div>
+    <div class="lbl" id="s4l"></div>
+    <div class="real" style="left:70px;top:1200px">Captures réelles des sites et logiciels</div>
+  </div>
+
+  <div class="scene" id="s5">
+    <div class="chip">Ma vision</div>
+    <div class="title" style="font-size:56px">Des agents IA qui utilisent<br><b>nos logiciels</b></div>
+    <div id="s5net"></div>
+    <div id="s5w"></div>
+    <div class="real" id="s5r" style="left:70px;top:1440px">Mission réelle (épisode 9) : list_recipes sur FoodEatUp → 101 recettes lues</div>
+  </div>
+
+  <div class="scene" id="s6">
+    <div class="chip">Pourquoi cette série</div>
+    <div class="title" style="font-size:58px">Tout partager,<br><b>même les difficultés</b></div>
+    <div id="s6th"></div>
+    <div id="s6tags"></div>
+  </div>
+
+  <div class="scene" id="s7">
+    <div class="chip">Les coulisses</div>
+    <div class="title" style="font-size:58px">Ce qu'on construit<br><b>chaque jour</b></div>
+    <div class="term" id="s7t" style="left:60px;top:400px;width:960px"><div class="bar">Claude Code · mes dépôts<span>● relevé du 26/10</span></div><pre id="s7pre" style="font-size:22px"></pre></div>
+    <img class="pose" id="s7m" src="a/po/ordinateur.webp" style="left:560px;top:880px;width:520px">
+  </div>
+
+  <div class="scene" id="s8">
+    <div class="ring" id="s8p" style="left:340px;top:280px;width:400px;height:400px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="abs" id="s8a" style="left:60px;right:60px;top:760px;text-align:center;font-weight:700;font-size:56px;line-height:1.2">Chaque jour :<br><span style="color:var(--orange)">mon histoire et mon travail du jour</span></div>
+    <div class="abs" id="s8b" style="left:60px;right:60px;top:1000px;text-align:center;font-weight:600;font-size:42px;color:var(--cream)">Bienvenue dans mon quotidien.</div>
+    <div class="abs" id="s8c" style="left:60px;right:60px;top:1080px;text-align:center;font-weight:600;font-size:42px;color:var(--cream)">Bienvenue dans l'univers BraindCode.</div>
+  </div>
+
+  <div class="scene" id="s9">
+    <div class="chip">Au programme</div>
+    <div class="title" style="font-size:58px">Les prochains<br><b>épisodes</b></div>
+    <div id="s9th"></div>
+  </div>
+
+  <div class="scene" id="s10">
+    <div class="ring" id="s10p" style="left:390px;top:260px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="abs" id="s10a" style="left:0;right:0;top:640px;text-align:center;font-weight:700;font-size:66px">MICHAEL <span style="color:var(--orange)">×</span> BRAINDCODE</div>
+    <div class="abs" id="s10b" style="left:60px;right:60px;top:760px;text-align:center;font-weight:700;font-size:44px;line-height:1.25;color:var(--cream)">MON QUOTIDIEN D'ENTREPRENEUR<br>AVEC L'IA</div>
+    <div class="badge" id="s10c" style="left:160px;top:920px;font-size:42px">UN NOUVEL ÉPISODE CHAQUE JOUR</div>
+    <div class="logo-pill" id="s10l" style="left:290px;top:1080px;width:500px;height:130px"><img src="a/logos/braindcode.png" style="height:80px"></div>
+  </div>
+
+  <div class="scene" id="thumb">
+    <div class="ring" style="left:180px;top:620px;width:720px;height:720px;border-width:12px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="abs" style="left:0;right:0;top:150px;text-align:center;font-weight:700;font-size:44px;letter-spacing:6px;color:var(--orange)">ÉPISODE 0</div>
+    <div class="abs" style="left:40px;right:40px;top:220px;text-align:center;font-weight:700;font-size:96px;line-height:1.0;letter-spacing:-2px">MICHAEL<br><span style="color:var(--orange)">×</span> BRAINDCODE</div>
+    <div class="abs" style="left:40px;right:40px;top:470px;text-align:center;font-weight:600;font-size:40px;color:var(--cream)">Mon quotidien d'entrepreneur avec l'IA</div>
+    <div class="logo-pill" style="left:290px;top:1420px;width:500px;height:130px"><img src="a/logos/braindcode.png" style="height:80px"></div>
+  </div>
+
+  <div id="logos"><div class="lp"><img src="a/logos/braindcode.png" style="height:30px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>

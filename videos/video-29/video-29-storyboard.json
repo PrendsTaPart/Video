@@ -1,0 +1,49 @@
+{
+  "video": "video-29",
+  "titre": "Comment j'ai créé une équipe IA pour le SEO de FoodEatUp",
+  "duree_s": 67,
+  "format": "1080x1920",
+  "scenes": [
+    {
+      "temps_s": "0–5,7",
+      "scene": "Accroche",
+      "visuel": "Michael poing levé · « MES AGENTS IA FONT DU SEO »"
+    },
+    {
+      "temps_s": "5,7–10,6",
+      "scene": "Problème",
+      "visuel": "Barre de recherche « logiciel restaurant » · « Encore faut-il qu'on te trouve »"
+    },
+    {
+      "temps_s": "10,6–28,4",
+      "scene": "Workflows n8n",
+      "visuel": "Cartes WF08 Veille Trends, WF01 Mots-clés, WF05 Blog Content, WF02 SEO OnPage avec leurs nœuds · mention « n8n non revérifié ici »"
+    },
+    {
+      "temps_s": "28,4–38,2",
+      "scene": "MCP Site",
+      "visuel": "Logo FoodEatUp, outils create_article_idea, list_piliers, get_editorial_calendar, check_article_ready, 7 piliers réels"
+    },
+    {
+      "temps_s": "38,2–46,3",
+      "scene": "Pipeline",
+      "visuel": "~100 idées, 80 en relecture, 3 publiés · deux articles food cost réels · « Rien ne part sans relecture humaine »"
+    },
+    {
+      "temps_s": "46,3–53,8",
+      "scene": "Boucle",
+      "visuel": "Tendances → Mots-clés → Contenu → Vérification → Publication → Mesure (objectif d'architecture)"
+    },
+    {
+      "temps_s": "53,8–61",
+      "scene": "Vision",
+      "visuel": "Glossaire : prochaine étape · « Les vraies questions des restaurateurs »"
+    },
+    {
+      "temps_s": "61–67",
+      "scene": "Question",
+      "visuel": "Photo, question finale, logos FoodEatUp et BraindCode"
+    }
+  ],
+  "miniature": "J'AI CRÉÉ MES AGENTS IA SEO ! · logo FoodEatUp · recherche « food cost restaurant » · Michael · carte d'article publié"
+}

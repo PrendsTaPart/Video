@@ -1,0 +1,168 @@
+1
+00:00:00,400 --> 00:00:01,580
+Mon dimanche à la maison ?
+
+2
+00:00:01,580 --> 00:00:02,720
+J'ai décidé de développer
+
+3
+00:00:02,720 --> 00:00:03,960
+quatre applications mobiles…
+
+4
+00:00:03,960 --> 00:00:06,060
+et un jeu vidéo, pour FoodEatUp.
+
+5
+00:00:07,000 --> 00:00:08,050
+Première application :
+
+6
+00:00:08,050 --> 00:00:09,030
+une borne de fidélité
+
+7
+00:00:09,030 --> 00:00:10,610
+à installer directement au comptoir,
+
+8
+00:00:10,610 --> 00:00:12,030
+pour récompenser les clients.
+
+9
+00:00:12,030 --> 00:00:13,050
+Ils cumulent des points,
+
+10
+00:00:13,050 --> 00:00:13,590
+tournent la roue
+
+11
+00:00:13,590 --> 00:00:14,950
+et répondent à des sondages.
+
+12
+00:00:17,000 --> 00:00:18,050
+Deuxième application :
+
+13
+00:00:18,050 --> 00:00:19,590
+un assistant HACCP vocal,
+
+14
+00:00:19,590 --> 00:00:21,190
+avec un avatar 3D.
+
+15
+00:00:21,190 --> 00:00:22,190
+Avec des oreillettes,
+
+16
+00:00:22,190 --> 00:00:24,530
+les équipes accèdent aux fonctionnalités HACCP,
+
+17
+00:00:24,530 --> 00:00:25,910
+impriment sur une imprimante compatible,
+
+18
+00:00:25,910 --> 00:00:27,720
+et apprennent grâce au mode école.
+
+19
+00:00:28,200 --> 00:00:29,800
+Jarvis : « C'est enregistré, merci ! »
+
+20
+00:00:31,000 --> 00:00:32,140
+Troisième application :
+
+21
+00:00:32,140 --> 00:00:33,580
+une caisse mobile pour les serveurs,
+
+22
+00:00:33,580 --> 00:00:34,880
+avec scanner de QR code,
+
+23
+00:00:34,880 --> 00:00:35,640
+et un mode école
+
+24
+00:00:35,640 --> 00:00:37,400
+accompagné par un avatar 3D.
+
+25
+00:00:37,400 --> 00:00:38,440
+Le paiement sans contact,
+
+26
+00:00:38,440 --> 00:00:39,660
+c'est la prochaine étape.
+
+27
+00:00:42,000 --> 00:00:43,030
+Quatrième application :
+
+28
+00:00:43,030 --> 00:00:44,610
+une tablette interactive pour les clients,
+
+29
+00:00:44,610 --> 00:00:46,570
+avec menu digital, commandes,
+
+30
+00:00:46,570 --> 00:00:48,020
+jeux-concours et fidélité.
+
+31
+00:00:50,600 --> 00:00:52,020
+Et chaque restaurant peut personnaliser
+
+32
+00:00:52,020 --> 00:00:54,300
+le thème et la charte graphique de ses applications.
+
+33
+00:00:57,200 --> 00:00:58,130
+Et pour terminer,
+
+34
+00:00:58,130 --> 00:00:59,010
+FoodEatUp Rush :
+
+35
+00:00:59,010 --> 00:00:59,990
+un jeu vidéo 3D
+
+36
+00:00:59,990 --> 00:01:01,770
+qui transforme l'univers de la restauration
+
+37
+00:01:01,770 --> 00:01:03,350
+en expérience interactive.
+
+38
+00:01:09,000 --> 00:01:10,070
+Tout ça, depuis la maison,
+
+39
+00:01:10,070 --> 00:01:11,450
+avec Flutter, l'IA
+
+40
+00:01:11,450 --> 00:01:13,010
+et les outils MCP FoodEatUp.
+
+41
+00:01:13,010 --> 00:01:14,510
+Maintenant, prochaine étape :
+
+42
+00:01:14,510 --> 00:01:15,980
+Google Play et l'App Store.
+

@@ -1,0 +1,186 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 6 : l'école des employés IA</title>
+<style>
+@font-face{font-family:P;src:url(a/fonts/Poppins-Medium.ttf);font-weight:500}
+@font-face{font-family:P;src:url(a/fonts/Poppins-SemiBold.ttf);font-weight:600}
+@font-face{font-family:P;src:url(a/fonts/Poppins-Bold.ttf);font-weight:700}
+:root{--night:#0F1A23;--blue:#007BFF;--dblue:#0B4FA8;--orange:#FFA500;--cream:#FCF9E6;--ink:#0b0b0b;--grey:#AEB8C2}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;background:var(--night);overflow:hidden}
+body{font-family:P,sans-serif;color:#fff}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:
+  radial-gradient(circle,rgba(0,123,255,.16) 2.2px,transparent 2.8px) 0 0/24px 24px,
+  radial-gradient(1100px 900px at 50% 34%,#16304a 0%,#0F1A23 64%)}
+.abs{position:absolute}
+.scene{position:absolute;inset:0;display:none}
+/* bande BD */
+.chip{position:absolute;left:70px;top:120px;display:inline-block;background:var(--blue);color:#fff;font-weight:700;font-size:28px;letter-spacing:2px;text-transform:uppercase;padding:8px 22px;border:5px solid var(--ink);box-shadow:7px 7px 0 var(--ink);transform:rotate(-2deg)}
+.title{position:absolute;left:70px;right:70px;top:210px;font-weight:700;font-size:68px;line-height:1.08;letter-spacing:-1px;color:var(--cream);text-shadow:5px 5px 0 var(--ink),-2px -2px 0 var(--ink),2px -2px 0 var(--ink),-2px 2px 0 var(--ink)}
+.title b{color:var(--orange)}
+.panel{position:absolute;border:6px solid var(--ink);background:var(--cream);box-shadow:12px 12px 0 var(--ink);overflow:hidden}
+.panel>img{width:100%;height:100%;object-fit:cover;display:block}
+.cap{position:absolute;background:var(--cream);color:var(--ink);border:5px solid var(--ink);box-shadow:8px 8px 0 var(--blue);padding:14px 22px;font-weight:600;font-size:32px;line-height:1.25}
+.cap b{color:var(--dblue)}
+.bub{position:absolute;background:#fff;color:var(--ink);border:5px solid var(--ink);border-radius:46px;padding:22px 32px;font-weight:700;font-size:40px;line-height:1.2;box-shadow:8px 8px 0 rgba(0,0,0,.45)}
+.bub:after{content:"";position:absolute;width:40px;height:40px;background:#fff;border-right:5px solid var(--ink);border-bottom:5px solid var(--ink);bottom:-25px;left:90px;transform:rotate(45deg) skew(12deg,12deg)}
+.bub.r:after{left:auto;right:90px}
+.bub.up:after{bottom:auto;top:-25px;transform:rotate(225deg) skew(12deg,12deg)}
+.pose{position:absolute;filter:drop-shadow(5px 0 0 #fff) drop-shadow(-5px 0 0 #fff) drop-shadow(0 5px 0 #fff) drop-shadow(0 -5px 0 #fff) drop-shadow(12px 12px 0 rgba(0,0,0,.7))}
+.stamp{position:absolute;font-weight:700;text-transform:uppercase;border:6px solid currentColor;border-radius:12px;padding:4px 16px;letter-spacing:2px;transform:rotate(-8deg);background:rgba(15,26,35,.85)}
+.st-o{color:var(--orange)}.st-b{color:#5aa9ff}.st-c{color:var(--cream)}
+.term{position:absolute;background:#0a1118;border:6px solid var(--ink);box-shadow:12px 12px 0 var(--ink);overflow:hidden}
+.term .bar{display:flex;align-items:center;gap:12px;padding:10px 18px;background:var(--cream);color:var(--ink);font-weight:700;font-size:22px;border-bottom:5px solid var(--ink)}
+.term .bar i{width:14px;height:14px;border-radius:7px;background:#22c55e;border:3px solid var(--ink);flex:none}
+.term .bar span{margin-left:auto;font-weight:600;font-size:18px;color:#1b5e20}
+.term pre{margin:0;padding:16px 20px;font-family:'DejaVu Sans Mono',monospace;font-size:21px;line-height:1.5;color:#e6eef5;white-space:pre-wrap}
+.k{color:#7dd3fc}.g{color:#86efac}.o{color:var(--orange)}.m{color:#8ea3b6}.c{color:var(--cream)}
+.boom{position:absolute;background:var(--orange);color:var(--ink);font-weight:700;display:flex;align-items:center;justify-content:center;text-align:center;clip-path:polygon(50% 0,61% 22%,85% 8%,78% 34%,100% 42%,80% 58%,94% 82%,66% 76%,56% 100%,44% 78%,18% 94%,24% 66%,0 56%,20% 42%,6% 18%,34% 24%)}
+.tag{position:absolute;display:inline-flex;align-items:center;gap:12px;background:#fff;color:var(--ink);border:5px solid var(--ink);border-radius:999px;padding:10px 26px;font-weight:700;font-size:34px;box-shadow:6px 6px 0 var(--ink);white-space:nowrap}
+.tag.b{background:var(--blue);color:#fff}
+.real{position:absolute;font-weight:500;font-size:21px;color:var(--grey)}
+.real:before{content:"";display:inline-block;width:11px;height:11px;border-radius:6px;background:#22c55e;margin-right:10px;vertical-align:1px}
+.agent{position:absolute;left:70px;width:940px;height:118px;background:var(--cream);color:var(--ink);border:5px solid var(--ink);box-shadow:8px 8px 0 var(--ink);display:flex;align-items:center;gap:20px;padding:0 22px}
+.agent .n{flex:none;width:58px;height:58px;border-radius:29px;background:var(--blue);color:#fff;border:4px solid var(--ink);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
+.agent .t{font-weight:700;font-size:32px;line-height:1.1}.agent .t small{display:block;font-weight:500;font-size:20px;color:#3b4b59;margin-top:4px}
+.agent .s{margin-left:auto;flex:none;font-weight:700;font-size:20px;text-transform:uppercase;color:#b45f00;border:4px solid #b45f00;border-radius:10px;padding:4px 10px;transform:rotate(-6deg)}
+.node{position:absolute;left:250px;width:580px;height:96px;background:var(--cream);color:var(--ink);border:5px solid var(--ink);box-shadow:8px 8px 0 var(--ink);display:flex;align-items:center;gap:18px;padding:0 24px;font-weight:700;font-size:36px}
+.node small{font-weight:500;font-size:20px;color:#3b4b59;margin-left:auto;text-align:right;line-height:1.2}
+.node.hl{background:var(--blue);color:#fff}.node.hl small{color:#dbeafe}
+.arrow{position:absolute;left:532px;width:16px;height:34px;background:var(--cream);border:4px solid var(--ink)}
+.strip{position:absolute;left:60px;width:960px;background:var(--cream);color:var(--ink);border:6px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:16px 22px}
+.strip h4{font-weight:700;font-size:30px;margin-bottom:6px}.strip h4 em{font-style:normal;color:var(--dblue)}
+.strip code{font-family:'DejaVu Sans Mono',monospace;font-size:21px;color:#0b4fa8;font-weight:700}
+.strip p{font-weight:500;font-size:24px;line-height:1.35;color:#1d2a35}
+.strip .ok{position:absolute;right:22px;top:16px;font-weight:700;font-size:28px;color:#fff;background:#16a34a;border:4px solid var(--ink);border-radius:999px;padding:2px 18px}
+.lockup{position:absolute;background:#fff;border-radius:22px;display:flex;align-items:center;gap:12px;padding:10px 20px;border:4px solid var(--ink)}
+.lockup img{height:44px}
+.lockup span{color:var(--ink);font-weight:700;font-size:22px;line-height:1.05}.lockup span em{display:block;font-style:normal;font-weight:500;font-size:19px;color:var(--blue)}
+#logo{position:absolute;right:46px;bottom:56px;transform:scale(.9);transform-origin:right bottom}
+.lines{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 40%,rgba(252,249,230,.07) 0 3deg,transparent 3deg 12deg)}
+</style></head><body>
+<div id="stage">
+  <!-- 0 ouverture + accroche -->
+  <div class="scene" id="s0">
+    <div class="lines"></div>
+    <div class="panel" id="s0p" style="left:60px;top:300px;width:960px;height:640px;transform:rotate(-1.5deg)"><img src="a/bd/1.webp"></div>
+    <div class="chip" id="s0c" style="top:150px">Épisode 6 · FoodEatUp Academy</div>
+    <div class="title" id="s0t" style="top:1000px;font-size:80px">J'ai créé une école<br>pour mes <b>employés IA</b></div>
+    <div class="bub" id="s0b1" style="left:70px;top:1000px;width:620px;font-size:42px">Tout le monde parle<br>d'employés IA…</div>
+    <img class="pose" id="s0m" src="a/po/reflechit.webp" style="left:560px;top:930px;width:560px">
+    <div class="bub r" id="s0b2" style="left:50px;top:1220px;width:700px;font-size:44px;background:var(--orange)">… mais comment on les <u>forme</u> à leur métier ?</div>
+  </div>
+
+  <!-- 1 les outils ne suffisent pas -->
+  <div class="scene" id="s1">
+    <div class="chip">Le problème</div>
+    <div class="title">Des outils,<br>ça ne <b>suffit pas</b></div>
+    <div class="term" id="s1t" style="left:60px;top:420px;width:640px"><div class="bar"><i></i>Mes connexions MCP<span>réelles</span></div><pre id="s1pre"></pre></div>
+    <img class="pose" id="s1m" src="a/po/index-leve.webp" style="left:640px;top:420px;width:480px">
+    <div class="tag" id="s1a" style="left:80px;top:860px;transform:rotate(-3deg)">nos méthodes</div>
+    <div class="tag" id="s1b" style="left:390px;top:970px;transform:rotate(2deg)">nos règles</div>
+    <div class="tag b" id="s1c" style="left:600px;top:860px;transform:rotate(-1deg)">nos objectifs</div>
+    <div class="cap" id="s1k" style="left:80px;top:1130px;width:920px;font-size:30px">Une IA branchée sur nos logiciels sait <b>appuyer sur les boutons</b>. Elle ne sait pas encore <b>comment on travaille</b>.</div>
+  </div>
+
+  <!-- 2 l'Academy -->
+  <div class="scene" id="s2">
+    <div class="lockup" id="s2l" style="left:70px;top:130px"><img src="a/logos/foodeatup.webp"><span>FoodEatUp<em>Academy</em></span></div>
+    <div class="title" style="top:240px;font-size:62px">Une plateforme<br>de <b>formation</b></div>
+    <div class="panel" id="s2a" style="left:60px;top:420px;width:470px;height:980px;transform:rotate(-2deg)"><img src="a/web/formations-0.png" style="object-position:top"></div>
+    <div class="panel" id="s2b" style="left:560px;top:440px;width:460px;height:980px;transform:rotate(2deg)"><img src="a/web/formations-1.png" style="object-position:0 18%"></div>
+    <div id="s2tags"></div>
+    <div class="real" style="left:70px;top:1450px">formation.foodeatup.fr · catalogue public en bande dessinée</div>
+  </div>
+
+  <!-- 3 MCP -->
+  <div class="scene" id="s3">
+    <div class="chip">Branchée sur Claude</div>
+    <div class="title" style="font-size:62px">L'Academy a<br><b>son propre MCP</b></div>
+    <div class="lockup" id="s3l1" style="left:80px;top:430px"><img src="a/logos/foodeatup.webp"><span>FoodEatUp<em>Academy</em></span></div>
+    <div class="abs" id="s3w" style="left:420px;top:462px;width:270px;height:14px;background:repeating-linear-gradient(90deg,var(--orange) 0 26px,transparent 26px 40px)"></div>
+    <div class="abs" id="s3wl" style="left:470px;top:400px;font-weight:700;font-size:28px;color:var(--orange)">MCP</div>
+    <div class="lockup" id="s3l2" style="left:700px;top:430px;padding:14px 22px"><img src="a/logos/claude.webp" style="height:40px"></div>
+    <div class="term" id="s3t" style="left:60px;top:590px;width:960px"><div class="bar"><i></i>Claude Code · MCP Formation FoodEatUp<span>réponses réelles</span></div><pre id="s3pre"></pre></div>
+  </div>
+
+  <!-- 4 mémoire -->
+  <div class="scene" id="s4">
+    <div class="chip">La mémoire</div>
+    <div class="title" style="font-size:62px">Claude se souvient,<br><b>sans être réentraîné</b></div>
+    <div id="s4tags"></div>
+    <div class="panel" id="s4d" style="left:60px;top:640px;width:960px;height:430px;background:#0a1118;transform:rotate(-.6deg)">
+      <div class="abs" style="left:30px;top:30px;width:250px;height:360px;background:var(--cream);border:5px solid var(--ink);color:var(--ink);padding:16px;font-weight:700;font-size:26px">Notes<br><span style="font-weight:500;font-size:20px;line-height:1.5">remember ✍️<br>préférence<br>objectif<br>correction<br>méthode</span></div>
+      <div class="abs" id="s4ar" style="left:300px;top:180px;width:0;height:12px;background:var(--orange)"></div>
+      <div class="abs" id="s4ctx" style="left:400px;top:30px;width:270px;height:360px;background:#16242f;border:5px solid var(--cream);padding:16px;font-weight:700;font-size:26px;color:var(--cream)">Contexte de la conversation<br><span style="font-weight:500;font-size:20px;color:var(--grey);line-height:1.5">get_claude_brief<br>recall<br>réinjectés au début</span></div>
+      <div class="abs" style="left:700px;top:30px;width:230px;height:360px;background:#fff;border:5px solid var(--cream);padding:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px"><img src="a/logos/claude-symbole.webp" style="width:90px"><span style="color:var(--ink);font-weight:700;font-size:24px;text-align:center">Modèle<br>inchangé</span></div>
+    </div>
+    <div class="stamp st-o" id="s4s" style="left:600px;top:1040px;font-size:30px">pas réentraîné</div>
+    <div class="term" id="s4t" style="left:60px;top:1130px;width:960px"><div class="bar"><i></i>Mon compte aujourd'hui<span>réponses réelles</span></div><pre id="s4pre" style="font-size:20px"></pre></div>
+  </div>
+
+  <!-- 5 agents -->
+  <div class="scene" id="s5">
+    <div class="chip">Des agents spécialisés</div>
+    <div class="title" style="font-size:58px;top:200px">Un rôle, des outils,<br><b>des objectifs</b></div>
+    <div id="s5fam"></div>
+    <div class="real" id="s5r" style="left:70px;top:560px">list_agents · mes 6 agents préparés dans l'Academy</div>
+    <div id="s5list"></div>
+  </div>
+
+  <!-- 6 routines -->
+  <div class="scene" id="s6">
+    <div class="chip">Les routines</div>
+    <div class="title" style="font-size:60px">Mesurer, puis<br><b>garder, ajuster, arrêter</b></div>
+    <div id="s6loop"></div>
+    <div class="stamp st-b" id="s6v1" style="left:80px;top:1010px;font-size:34px;transform:rotate(-6deg)">gardée</div>
+    <div class="stamp st-c" id="s6v2" style="left:400px;top:1010px;font-size:34px;transform:rotate(3deg)">ajustée</div>
+    <div class="stamp st-o" id="s6v3" style="left:720px;top:1010px;font-size:34px;transform:rotate(-4deg)">arrêtée</div>
+    <div class="term" id="s6t" style="left:60px;top:1130px;width:960px"><div class="bar"><i></i>list_routines · mon registre<span>réponse réelle</span></div><pre style="font-size:21px">20 routines · <span class="o">toutes en V0</span> · verdict : <span class="o">aucun</span>
+autonomie : Aperçu (propose, n'écrit rien)</pre></div>
+    <div class="cap" id="s6k" style="left:60px;top:1330px;width:960px;font-size:28px;box-shadow:8px 8px 0 var(--orange)">Exécution automatique : seulement avec un <b>orchestrateur réellement configuré</b>. Ce n'est pas encore le cas.</div>
+  </div>
+
+  <!-- 7 démo -->
+  <div class="scene" id="s7">
+    <div class="chip" style="background:var(--orange);color:var(--ink)">Démo réelle · aperçu</div>
+    <div class="title" style="font-size:54px;top:200px">Former un futur<br><b>agent Stock</b></div>
+    <div class="stamp st-c" style="left:700px;top:118px;font-size:22px;transform:rotate(4deg)">lecture seule</div>
+    <div class="strip" id="d1" style="top:380px;height:240px"><h4>① La mission <em>F3</em></h4><code>get_mission("F3")</code><p>« Stocks et commandes fournisseurs » : du stock bas à la commande préparée, jamais envoyée seule. Règle : <b>préparer, montrer, attendre l'accord.</b></p></div>
+    <div class="strip" id="d2" style="top:650px;height:200px"><h4>② Le quiz</h4><code>check_quiz_answer("f3q1", 0)</code><p>Qui envoie la commande fournisseur ? → <b>Un humain.</b></p><span class="ok">✓ correct</span></div>
+    <div class="strip" id="d3" style="top:880px;height:300px"><h4>③ Sa première routine</h4><code>check_routine_prompt(…)</code><p id="d3p">Objectif · Sources (list_low_stocks, list_suppliers) · Limite : lecture seule, 10 produits · Tu rends · Critère d'arrêt · Accord humain : « prépare, puis attends mon accord »</p><span class="ok" style="background:var(--blue)">6 / 6</span></div>
+    <div class="strip" id="d4" style="top:1210px;height:250px;background:#fff1d6"><h4>④ Et ensuite ?</h4><code>configure_routine</code> <span style="font-weight:700;font-size:22px;color:#b45f00">→ non appelé</span><p>Agent Stock non créé, routine non activée : <b>en attente de ma validation.</b></p></div>
+    <div class="stamp st-o" id="d4s" style="left:690px;top:1350px;font-size:36px">aperçu</div>
+  </div>
+
+  <!-- 8 conclusion -->
+  <div class="scene" id="s8">
+    <div class="chip">La boucle</div>
+    <div class="title" style="font-size:54px;top:200px">Une équipe qui<br><b>s'améliore</b></div>
+    <div id="chain"></div>
+    <img class="pose" id="s8m" src="a/po/bras-ouverts.webp" style="left:-40px;top:1150px;width:330px;opacity:0">
+    <div class="real" id="s8r" style="left:70px;top:1490px">Aujourd'hui : 6 agents à configurer · 20 routines en V0 · 0 KPI suivi</div>
+  </div>
+
+  <!-- 9 carton -->
+  <div class="scene" id="s9">
+    <div class="lines"></div>
+    <div class="panel" id="s9p" style="left:90px;top:200px;width:900px;height:600px;transform:rotate(1.5deg)"><img src="a/bd/5.webp"></div>
+    <div class="title" id="s9t" style="top:870px;text-align:center;font-size:76px">J'AI CRÉÉ UNE ÉCOLE<br>POUR MES <b>EMPLOYÉS IA</b></div>
+    <div class="bub up" id="s9b" style="left:250px;top:1170px;width:580px;text-align:center;font-size:38px">Demain : une nouvelle étape.</div>
+    <div class="abs" id="s9u" style="left:0;right:0;top:1380px;text-align:center;font-weight:700;font-size:40px;color:var(--cream)">formation.foodeatup.fr</div>
+  </div>
+
+  <!-- miniature -->
+  <div class="scene" id="thumb">
+    <div class="lines"></div>
+    <div class="panel" style="left:60px;top:960px;width:700px;height:470px;transform:rotate(-3deg)"><img src="a/bd/3.webp"></div>
+    <div class="chip" style="top:130px;font-size:34px">Épisode 6</div>
+    <div class="abs" style="left:60px;right:40px;top:230px;font-weight:700;font-size:118px;line-height:.98;letter-spacing:-3px;color:var(--cream);text-shadow:8px 8px 0 var(--ink),-3px -3px 0 var(--ink),3px -3px 0 var(--ink),-3px 3px 0 var(--ink)">J'AI CRÉÉ<br>UNE ÉCOLE<br>POUR MES<br><span style="color:var(--orange)">EMPLOYÉS IA</span></div>
+    <img class="pose" src="a/po/presente.webp" style="left:540px;top:820px;width:600px">
+    <div class="boom" style="left:90px;top:740px;width:340px;height:220px;font-size:34px;transform:rotate(8deg)">MCP +<br>MÉMOIRE</div>
+    <div class="lockup" style="left:70px;top:1500px;transform:scale(1.3);transform-origin:left top"><img src="a/logos/foodeatup.webp"><span>FoodEatUp<em>Academy</em></span></div>
+  </div>
+
+  <div class="lockup" id="logo"><img src="a/logos/foodeatup.webp"><span>FoodEatUp<em>Academy</em></span></div>
+</div>
+<script src="script.js"></script>
+</body></html>

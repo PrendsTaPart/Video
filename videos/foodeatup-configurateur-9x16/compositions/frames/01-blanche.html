@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 1 — La page blanche (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background-color: #f7f9fc; background-image: radial-gradient(circle at 50% 26%, rgba(30,155,240,0.05), transparent 55%), radial-gradient(circle, rgba(27,42,65,0.09) 1.6px, transparent 1.6px); background-size: 100% 100%, 46px 46px; }
+        .shake { position: absolute; inset: 0; }
+
+        .figure { position: absolute; z-index: 2; top: 60px; left: 230px; width: 620px; height: 640px; mix-blend-mode: multiply; opacity: 0; will-change: transform, opacity; }
+        .figure img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+        .fiches { position: absolute; left: 110px; top: 740px; width: 860px; z-index: 3; display: flex; flex-direction: column; gap: 22px; }
+        .fiche { position: relative; box-sizing: border-box; background: #ffffff; border: 1.5px dashed rgba(27,42,65,0.22); border-radius: 16px; padding: 24px 30px; display: flex; align-items: center; gap: 22px; transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+        .fiche-ic { flex: 0 0 60px; width: 60px; height: 60px; display: grid; place-items: center; background: rgba(27,42,65,0.05); border-radius: 50%; }
+        .fiche-ic svg { width: 34px; height: 34px; fill: none; stroke: #8a98a8; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .fiche-label { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 38px; letter-spacing: -0.01em; color: #1b2a41; line-height: 1.12; }
+        .fiche-sub { display: block; font-family: "Inter", sans-serif; font-weight: 500; font-size: 24px; color: #8a98a8; margin-top: 3px; }
+        .fiche-q { margin-left: auto; flex: none; width: 50px; height: 50px; border-radius: 50%; background: rgba(27,42,65,0.05); display: grid; place-items: center; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 32px; color: #8a98a8; }
+
+        .stamp { position: absolute; z-index: 5; left: 50%; top: 560px; transform: translateX(-50%) rotate(-6deg); padding: 20px 46px; border: 6px solid #1b2a41; border-radius: 16px; background: rgba(247,249,252,0.85); font-family: "Poppins", sans-serif; font-weight: 800; font-size: 56px; letter-spacing: 0.02em; color: #1b2a41; transform-origin: 50% 50%; opacity: 0; white-space: nowrap; will-change: transform, opacity; }
+      </style>
+
+      <div id="root" data-composition-id="01-blanche" data-width="1080" data-height="1920" data-duration="11.262">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="10.762" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="10.762" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="shake">
+            <div class="figure" id="figure"><img src="public/setup-blank.png" alt="Gérant devant un compte FoodEatUp vide à configurer" /></div>
+            <div class="fiches">
+              <div class="fiche" id="f1"><span class="fiche-ic"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2" /><path d="M8 8h8M8 12h8M8 16h5" /></svg></span><span class="fiche-label">La carte &amp; les catégories<span class="fiche-sub">à créer de zéro</span></span><span class="fiche-q">?</span></div>
+              <div class="fiche" id="f2"><span class="fiche-ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18M9 21V9M15 9v12" /></svg></span><span class="fiche-label">Les zones &amp; les tables<span class="fiche-sub">plan de salle à dessiner</span></span><span class="fiche-q">?</span></div>
+              <div class="fiche" id="f3"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.9" /></svg></span><span class="fiche-label">L'équipe &amp; les contrats<span class="fiche-sub">à saisir un par un</span></span><span class="fiche-q">?</span></div>
+              <div class="fiche" id="f4"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M3 5h18M5 5v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5" /><path d="M9 10h6M9 14h4" /></svg></span><span class="fiche-label">La TVA &amp; les fournisseurs<span class="fiche-sub">à paramétrer</span></span><span class="fiche-q">?</span></div>
+            </div>
+            <div class="stamp" id="stamp">Des heures de setup</div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        (function () {
+          var root = document.querySelector('[data-composition-id="01-blanche"][id="root"]') || document.querySelector('[data-composition-id="01-blanche"]');
+          var tl = gsap.timeline({ paused: true });
+          var shakeEl = root.querySelector(".shake");
+          tl.fromTo(root.querySelector("#figure"), { y: -34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 0.0);
+          var cues = [0.6, 2.4, 4.0, 5.6];
+          ["#f1", "#f2", "#f3", "#f4"].forEach(function (id, i) {
+            tl.fromTo(root.querySelector(id), { scale: 0.85, y: 30, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, cues[i]);
+          });
+          tl.fromTo(root.querySelector("#stamp"), { scale: 1.6, opacity: 0, rotation: -6 }, { scale: 1, opacity: 1, rotation: -6, duration: 0.4, ease: "power4.out" }, 8.4);
+          tl.to(root.querySelector(".fiches"), { scale: 0.96, duration: 0.8, ease: "power2.inOut" }, 8.6);
+          var shk = { t: 0 };
+          tl.to(shk, { t: 1, duration: 1.1, ease: "none", onUpdate: function () {
+            var tt = shk.t; var env = Math.max(0, Math.min(1, tt / 0.16, (1 - tt) / 0.18));
+            var ph = tt * 1.1 * Math.PI * 2;
+            shakeEl.style.transform = "translate(" + (Math.sin(ph * 3.5) * 3.0 * env) + "px," + (Math.sin(ph * 2.7 + 1.1) * 2.2 * env) + "px)";
+          } }, 8.6);
+          window.__timelines["01-blanche"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

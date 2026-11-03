@@ -1,0 +1,217 @@
+{
+ "48": {
+  "slug": "faire-produire-ses-videos-par-claude",
+  "titre": "Faire produire ses vidéos par Claude : la méthode en cinq étapes",
+  "video_slug": "episode-48-la-methode",
+  "offre": "b316c92f-55df-4ada-b10d-542a885e77bc",
+  "duree": 30,
+  "promesse": "Partir d'une vidéo qui marche et obtenir une vidéo à votre image, vérifiée sur vos vraies données, sans la monter à la main : analyse, images, histoire, voix, montage.",
+  "pour_qui": "Entrepreneurs, commerçants et indépendants qui veulent publier des vidéos régulièrement sans passer leurs soirées à monter.",
+  "objectifs": [
+   "Faire analyser une vidéo de référence et en tirer une structure réutilisable",
+   "Constituer une bibliothèque d'images par thème",
+   "Obtenir un script vérifié sur vos vraies données",
+   "Produire la voix, les sous-titres et le montage sans monter à la main"
+  ],
+  "prerequis": [
+   "Claude avec les connecteurs activés",
+   "Un compte Lovable et un compte ElevenLabs",
+   "Une vidéo de référence qui marche dans votre domaine"
+  ],
+  "outils": [
+   {
+    "nom": "Claude",
+    "url": "https://claude.ai"
+   },
+   {
+    "nom": "Lovable",
+    "url": "https://lovable.dev"
+   },
+   {
+    "nom": "ElevenLabs",
+    "url": "https://elevenlabs.io"
+   }
+  ],
+  "etapes": [
+   {
+    "titre": "Faire analyser une vidéo de référence",
+    "explication": "Claude ne copie pas une vidéo : il en relève la structure (ordre des scènes, durée de chaque temps fort), le style visuel, le ton de la voix et l'appel à l'action.",
+    "prompt": "Analyse cette vidéo comme un monteur. Donne-moi : 1. la structure, scène par scène, avec la durée de chaque temps fort ; 2. le style visuel (couleurs, typo, mouvements, sous-titres) ; 3. le type de voix et le ton ; 4. l'appel à l'action de la fin. Puis propose comment raconter la même structure pour [mon produit], sans rien inventer : dis-moi ce que tu dois vérifier dans mes outils.",
+    "resultat": "Une fiche de structure réutilisable et une proposition d'histoire pour votre produit.",
+    "piege": "Recopier les images ou le texte de la vidéo d'origine au lieu d'en garder la structure."
+   },
+   {
+    "titre": "Fabriquer les images du thème",
+    "explication": "Les décors, personnages et accessoires sont dessinés une fois, rangés par thème dans une bibliothèque, puis réutilisés d'une vidéo à l'autre.",
+    "prompt": "Crée une vingtaine d'images pour le thème « [nom du thème] » : décors, personnages, accessoires, dans le style analysé. Fond transparent pour les objets. Range-les dans la bibliothèque avec le thème, la catégorie et une phrase d'usage. Enregistre aussi la structure de l'histoire comme format réutilisable.",
+    "resultat": "Une bibliothèque d'images rangée par thème et un format réutilisable.",
+    "piege": "Faire générer des images à chaque vidéo : on perd la cohérence et on paie plusieurs fois."
+   },
+   {
+    "titre": "Écrire l'histoire et la vérifier",
+    "explication": "Le script suit la structure du format. Chaque affirmation est vérifiée dans vos vrais logiciels ; une donnée absente se dit absente.",
+    "prompt": "Écris le script (environ quarante-cinq secondes de voix) avec la structure du format « [thème] ». Phrases courtes, une idée par phrase, aucun mot technique. Avant de me le proposer, vérifie chaque affirmation dans mes logiciels et liste ce qui est réel, simulé ou prévu.",
+    "resultat": "Un script court, compréhensible par tous, avec une liste de vérification.",
+    "piege": "Laisser passer un chiffre « pour l'exemple » qui ne vient pas de vos données."
+   },
+   {
+    "titre": "Faire parler les personnages",
+    "explication": "Toujours la même voix pour le narrateur, une voix par personnage. La voix est ensuite transcrite mot à mot pour caler sous-titres et animations.",
+    "prompt": "Génère la voix avec ElevenLabs : toujours la même voix pour le narrateur, une voix par personnage. Puis transcris-la mot à mot pour caler les sous-titres et les animations.",
+    "resultat": "Une piste voix et sa transcription mot à mot.",
+    "piege": "Changer de voix d'un épisode à l'autre : la série perd son identité."
+   },
+   {
+    "titre": "Monter, contrôler, valider",
+    "explication": "Claude compose la vidéo image par image, envoie des images de contrôle, puis rend la vidéo finale avec sous-titres et musique. La publication reste votre geste.",
+    "prompt": "Monte la vidéo en vertical avec les images du thème et mes vraies captures d'écran. Une scène par phrase, un ou deux mots qui claquent à l'écran, sous-titres mot à mot, musique qui baisse quand la voix parle. Termine par le mot-clé à commenter. Envoie-moi des images de contrôle avant le rendu final.",
+    "resultat": "Une vidéo prête, en brouillon, à regarder en entier avant de publier.",
+    "piege": "Publier sans avoir regardé la vidéo jusqu'au bout."
+   }
+  ],
+  "garde_fous": [
+   "Aucun chiffre, client, capture ou résultat inventé : une donnée absente se dit absente.",
+   "Aucune clé, aucun mot de passe ni lien de connexion en clair à l'écran.",
+   "Aucune personne montrée sans son accord.",
+   "Logos officiels uniquement, jamais redessinés ni déformés.",
+   "Rien n'est publié ni envoyé sans votre validation."
+  ],
+  "etat_reel": "Méthode réellement utilisée pour les épisodes 38 à 50 de la série : onze thèmes d'images rangés dans la bibliothèque du site (plus de cent soixante images dessinées par Lovable), dix structures d'histoire enregistrées et réutilisables par Claude, voix ElevenLabs, montage image par image. Chaque vidéo a été regardée et validée avant publication.",
+  "lm": {
+   "nom": "Kit : la méthode pour faire produire tes vidéos par Claude",
+   "type": "kit",
+   "description": "Les cinq étapes à cocher, de la vidéo de référence à la publication, et les garde-fous. Le kit promis dans l'épisode 48 (mot-clé MÉTHODE).",
+   "fichier": "kit-methode-videos-claude.pdf",
+   "items": [
+    [
+     "Avant de commencer",
+     [
+      "Une vidéo de référence qui marche dans votre domaine.",
+      "Claude, avec vos logiciels branchés en connecteurs.",
+      "Un compte Lovable pour les images, un compte ElevenLabs pour les voix."
+     ]
+    ],
+    [
+     "Les cinq étapes",
+     [
+      "Claude analyse la référence : structure, style, voix, appel à l'action.",
+      "Lovable dessine une vingtaine d'images du thème, rangées dans la bibliothèque.",
+      "Claude écrit l'histoire et vérifie chaque phrase dans vos logiciels.",
+      "ElevenLabs fait parler les personnages ; la voix est transcrite mot à mot.",
+      "Claude monte la vidéo, envoie des images de contrôle, puis le rendu final."
+     ]
+    ],
+    [
+     "Avant de publier",
+     [
+      "J'ai regardé la vidéo en entier.",
+      "Aucun chiffre ni résultat inventé.",
+      "Aucune clé, aucun lien de connexion à l'écran.",
+      "Le mot-clé à commenter renvoie à une ressource qui existe.",
+      "Le style et sa structure sont gardés pour la vidéo suivante."
+     ]
+    ]
+   ]
+  }
+ },
+ "49": {
+  "slug": "faire-gerer-ses-reseaux-par-claude-avec-rapidocms",
+  "titre": "Faire gérer ses réseaux sociaux par Claude avec RapidoCMS",
+  "video_slug": "episode-49-claude-gere-mes-reseaux",
+  "offre": "de0d39a2-f1bc-4d06-8a3a-1baff18ed2f6",
+  "duree": 20,
+  "promesse": "Brancher RapidoCMS à Claude en quelques gestes, puis lui confier la préparation de vos publications : la vidéo rangée dans la bibliothèque, un brouillon par réseau, votre relecture, et la semaine programmée.",
+  "pour_qui": "Commerçants, restaurateurs et indépendants qui publient sur plusieurs réseaux et veulent arrêter de tout faire à la main.",
+  "objectifs": [
+   "Ajouter RapidoCMS comme connecteur dans Claude",
+   "Faire préparer un brouillon adapté à chaque réseau",
+   "Relire puis faire programmer toute une semaine de publications"
+  ],
+  "prerequis": [
+   "Un compte RapidoCMS avec vos réseaux connectés",
+   "Claude avec les connecteurs activés",
+   "Une vidéo ou une image à publier"
+  ],
+  "outils": [
+   {
+    "nom": "Claude",
+    "url": "https://claude.ai"
+   },
+   {
+    "nom": "RapidoCMS",
+    "url": "https://rapidocms.com"
+   }
+  ],
+  "etapes": [
+   {
+    "titre": "Ajouter le connecteur RapidoCMS",
+    "explication": "Dans Claude : Paramètres, puis Connecteurs, puis Ajouter un connecteur personnalisé. Nommez-le RapidoCMS, collez le lien de connexion fourni par RapidoCMS, cliquez sur Connecter, connectez-vous et autorisez l'accès.",
+    "prompt": "Liste mes comptes de réseaux sociaux connectés dans RapidoCMS et dis-moi lesquels sont actifs et lesquels sont à reconnecter.",
+    "resultat": "La liste de vos comptes, avec ceux qui demandent une reconnexion.",
+    "piege": "Partager le lien de connexion ou une capture où il apparaît en clair."
+   },
+   {
+    "titre": "Ranger la vidéo dans la bibliothèque",
+    "explication": "Claude ajoute le fichier à votre bibliothèque RapidoCMS et utilise ensuite l'adresse de la bibliothèque, que les réseaux savent récupérer.",
+    "prompt": "Ajoute cette vidéo à ma bibliothèque RapidoCMS : [lien de la vidéo]. Donne-lui le nom « [nom] » et utilise ensuite l'adresse de la bibliothèque pour les publications.",
+    "resultat": "La vidéo est dans votre bibliothèque, avec une adresse stable.",
+    "piege": "Publier depuis un lien temporaire ou privé que les réseaux ne peuvent pas lire."
+   },
+   {
+    "titre": "Faire écrire un brouillon par réseau",
+    "explication": "Chaque réseau a son ton : court sur Instagram, conversationnel sur Facebook, à la première personne sur LinkedIn, une phrase et un mot-clé sur TikTok.",
+    "prompt": "Écris un texte adapté à chaque réseau pour cette vidéo : Instagram (court, trois à cinq mots-dièse), Facebook (une question à la fin), LinkedIn (à la première personne, une leçon tirée de mon quotidien), TikTok (une phrase, un mot-clé à commenter). N'invente aucun chiffre. Crée un brouillon par réseau et montre-moi les textes.",
+    "resultat": "Un brouillon par réseau, prêt à relire.",
+    "piege": "Copier le même texte partout : chaque réseau a ses codes."
+   },
+   {
+    "titre": "Relire, puis programmer la semaine",
+    "explication": "Vous relisez et corrigez. Claude programme ensuite les brouillons sur la semaine en évitant les créneaux déjà pris.",
+    "prompt": "Les brouillons sont validés. Regarde d'abord mes publications déjà programmées, puis programme ces brouillons sur la semaine sans doublon de créneau, et donne-moi le récapitulatif : réseau, date, heure, nom.",
+    "resultat": "Une semaine de publications programmées, avec le récapitulatif.",
+    "piege": "Laisser Claude programmer avant votre relecture."
+   }
+  ],
+  "garde_fous": [
+   "Rien n'est programmé ni publié sans votre accord.",
+   "Aucun identifiant ni lien de connexion partagé ou affiché.",
+   "Un compte « à reconnecter » se signale, il ne se contourne pas.",
+   "Aucun chiffre ni résultat inventé dans les textes."
+  ],
+  "etat_reel": "Chez Michael, RapidoCMS est connecté à Instagram, Facebook, LinkedIn et TikTok ; plus de deux cents publications y étaient programmées sur quatre semaines au moment de l'épisode. Le compte TikTok était alors à reconnecter.",
+  "lm": {
+   "nom": "Fiche : la consigne RÉSEAUX pour faire gérer tes réseaux par Claude",
+   "type": "checklist",
+   "description": "Comment ajouter RapidoCMS comme connecteur dans Claude, et la consigne à coller pour obtenir un brouillon par réseau, relu par toi, puis programmé sur la semaine. Promise dans l'épisode 49 (mot-clé RÉSEAUX).",
+   "fichier": "checklist-consigne-reseaux.pdf",
+   "items": [
+    [
+     "Brancher RapidoCMS",
+     [
+      "Claude : Paramètres → Connecteurs → Ajouter un connecteur personnalisé.",
+      "Nom : RapidoCMS. Coller le lien de connexion fourni par RapidoCMS.",
+      "Connecter, se connecter à son compte, autoriser."
+     ]
+    ],
+    [
+     "La consigne à coller",
+     [
+      "Liste mes comptes connectés et dis-moi lesquels sont à reconnecter.",
+      "Ajoute la vidéo à ma bibliothèque RapidoCMS et utilise son adresse.",
+      "Écris un texte adapté à chaque réseau, sans rien inventer.",
+      "Crée un brouillon par réseau et montre-moi les textes.",
+      "Après mon accord, programme la semaine sans doublon de créneau et donne-moi le récapitulatif."
+     ]
+    ],
+    [
+     "Garde-fous",
+     [
+      "Rien ne part sans validation.",
+      "Aucun lien de connexion ni identifiant partagé.",
+      "Un compte à reconnecter se signale."
+     ]
+    ]
+   ]
+  }
+ }
+}

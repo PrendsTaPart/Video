@@ -1,0 +1,31 @@
+{
+  "voix": {
+    "outil": "ElevenLabs",
+    "voix": "Noé (7pDdnNI6PhXmAp0pXFZm)",
+    "modele": "eleven_v4",
+    "duree_s": 64.56
+  },
+  "personnage": {
+    "photo": "braindcode-profil.jpg",
+    "poses": [
+      "deux-pouces",
+      "stop",
+      "poing-leve",
+      "presente"
+    ]
+  },
+  "logos": {
+    "officiels": "BraindCode, RapidoCMS, RapidoRH, Claude (video-20/assets/logos)",
+    "n8n, Gemini, API-Football": "aucun fichier officiel dans le dépôt : noms écrits en texte, non redessinés. À fournir pour la miniature."
+  },
+  "charte": "PRONOCLIP reference/charte-pronoclip.md : fond #0a0a14, accent néon #00ffd0, couleurs d'équipes en variables",
+  "extrait_cartoon": "composé ici avec la charte et les règles du template PRONOCLIP (mascottes originales, aucun logo, mention IA visible) ; ce n'est pas une sortie du pipeline n8n ni du plugin exécuté",
+  "captures": "aucune capture n8n (connecteur non activé) ; nœuds reconstitués d'après le brief",
+  "services_payants": "aucun (ni HeyGen, ni render_video, ni Gemini)",
+  "musique": "musique-184.wav",
+  "effets": [
+    "whoosh",
+    "pop",
+    "tick"
+  ]
+}

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #EDEEF0;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="96.282"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- opening title card: "Une journée SANS FoodEatUp" — reused verbatim from the series
+           pilot (journee-directeur-avant-sans), same marine charter break -->
+      <div
+        id="el-00-titre"
+        class="scene"
+        data-composition-id="00-titre"
+        data-composition-src="compositions/frames/00-titre.html"
+        data-start="0"
+        data-duration="3.5"
+        data-track-index="0"
+      ></div>
+
+      <!-- context frame: reused verbatim from the pilot — explains the premise before the
+           montage begins ("Pour recevoir une livraison, un logiciel...") -->
+      <div
+        id="el-00b-contexte"
+        class="scene"
+        data-composition-id="00b-contexte"
+        data-composition-src="compositions/frames/00b-contexte.html"
+        data-start="3.5"
+        data-duration="22.782"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-00b-contexte-voice"
+        src="assets/audio/vo-00b.mp3"
+        data-start="3.5"
+        data-duration="22.282"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- ═══ body: "C2s — Cuisine, pendant le service" (60.0s, 26.282 → 86.282) ═══ -->
+
+      <div
+        id="el-01-pass-bons"
+        class="scene"
+        data-composition-id="01-pass-bons"
+        data-composition-src="compositions/frames/01-pass-bons.html"
+        data-start="26.282"
+        data-duration="12.0"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-01-pass-bons-voice"
+        src="assets/audio/vo-b1.mp3"
+        data-start="26.282"
+        data-duration="11.546"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- refrain of this episode, lands ~12s into the body as specified -->
+      <div
+        id="el-02-refrain-formation"
+        class="scene"
+        data-composition-id="02-refrain-formation"
+        data-composition-src="compositions/frames/02-refrain-formation.html"
+        data-start="38.282"
+        data-duration="8.0"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-02-refrain-formation-voice"
+        src="assets/audio/vo-b2.mp3"
+        data-start="38.282"
+        data-duration="7.549"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-03-bon-froisse"
+        class="scene"
+        data-composition-id="03-bon-froisse"
+        data-composition-src="compositions/frames/03-bon-froisse.html"
+        data-start="46.282"
+        data-duration="10.0"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-03-bon-froisse-voice"
+        src="assets/audio/vo-b3.mp3"
+        data-start="46.282"
+        data-duration="9.535"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-04-tartare-site"
+        class="scene"
+        data-composition-id="04-tartare-site"
+        data-composition-src="compositions/frames/04-tartare-site.html"
+        data-start="56.282"
+        data-duration="10.0"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-04-tartare-site-voice"
+        src="assets/audio/vo-b4.mp3"
+        data-start="56.282"
+        data-duration="9.535"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-05-client-attend"
+        class="scene"
+        data-composition-id="05-client-attend"
+        data-composition-src="compositions/frames/05-client-attend.html"
+        data-start="66.282"
+        data-duration="8.0"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-05-client-attend-voice"
+        src="assets/audio/vo-b5.mp3"
+        data-start="66.282"
+        data-duration="7.549"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-06-compteur-service"
+        class="scene"
+        data-composition-id="06-compteur-service"
+        data-composition-src="compositions/frames/06-compteur-service.html"
+        data-start="74.282"
+        data-duration="12.0"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-06-compteur-service-voice"
+        src="assets/audio/vo-b6.mp3"
+        data-start="74.282"
+        data-duration="11.546"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- ═══ end body (86.282) ═══ -->
+
+      <!-- brand punchline card: reused verbatim from the pilot — "Ça, c'était avant.
+           Aujourd'hui, c'est FoodEatUp qui gère mon établissement." — same voice, same text,
+           the conclusion of every film in the series -->
+      <div
+        id="el-08-carte-marque"
+        class="scene"
+        data-composition-id="08-carte-marque"
+        data-composition-src="compositions/frames/08-carte-marque.html"
+        data-start="86.282"
+        data-duration="5.6"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-08-carte-marque-voice"
+        src="assets/audio/vo-08.mp3"
+        data-start="86.582"
+        data-duration="4.18"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- CTA end card: reused verbatim from the pilot -->
+      <div
+        id="el-09-cta-decouvrir"
+        class="scene"
+        data-composition-id="09-cta-decouvrir"
+        data-composition-src="compositions/frames/09-cta-decouvrir.html"
+        data-start="91.882"
+        data-duration="4.4"
+        data-track-index="1"
+      ></div>
+
+      <!-- permanent discreet FoodEatUp watermark, body only (26.282 → 86.282, 60.0s —
+           local fade-out re-tuned in watermark.html for this shorter body) -->
+      <div
+        id="el-watermark"
+        class="scene"
+        data-composition-id="watermark"
+        data-composition-src="compositions/watermark.html"
+        data-start="26.282"
+        data-duration="60.0"
+        data-track-index="3"
+      ></div>
+
+      <!-- No captions track: every body frame already carries its key words and numbers as
+           large on-screen typography (ticket counts, the 3H/6-semaines refrain swap, the
+           tickets-perdus/plats-renvoyés counters), so a karaoke caption band would mostly
+           duplicate text already on screen. Documented simplification — see BRIEF.md. -->
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+      (function () { var tl = window.__timelines["main"];
+        tl.to("#el-00-titre", { opacity: 0, duration: 0.6, ease: "power2.inOut" }, 3.5);
+        tl.fromTo("#el-00b-contexte", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.inOut" }, 3.5);
+        tl.to("#el-00b-contexte", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 26.282);
+        tl.fromTo("#el-01-pass-bons", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 26.282);
+        tl.to("#el-01-pass-bons", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 38.282);
+        tl.fromTo("#el-02-refrain-formation", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 38.282);
+        tl.to("#el-02-refrain-formation", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 46.282);
+        tl.fromTo("#el-03-bon-froisse", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 46.282);
+        tl.to("#el-03-bon-froisse", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 56.282);
+        tl.fromTo("#el-04-tartare-site", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 56.282);
+        tl.to("#el-04-tartare-site", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 66.282);
+        tl.fromTo("#el-05-client-attend", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 66.282);
+        tl.to("#el-05-client-attend", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 74.282);
+        tl.fromTo("#el-06-compteur-service", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 74.282);
+        tl.to("#el-06-compteur-service", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 86.282);
+        tl.fromTo("#el-08-carte-marque", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 86.282);
+        tl.to({}, { duration: 96.282 }, 0); // full-span anchor — main.duration() == composition total
+      })();
+    </script>
+  </body>
+</html>

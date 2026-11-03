@@ -1,0 +1,91 @@
+{
+  "video": 16,
+  "duree_s": 56,
+  "format": "1080x1920",
+  "voix": "ElevenLabs Noé, eleven_v4",
+  "sequences": [
+    {
+      "t": [
+        0,
+        5.4
+      ],
+      "sequence": "Accroche",
+      "visuel": "Bulles de questions clients (caisse, HACCP, étiquette, frigo, planning) autour de Michael"
+    },
+    {
+      "t": [
+        5.4,
+        11.4
+      ],
+      "sequence": "Le problème",
+      "visuel": "« Développer un logiciel, c'est une chose… L'expliquer à chaque client, c'en est une autre ! »"
+    },
+    {
+      "t": [
+        11.4,
+        17.2
+      ],
+      "sequence": "FoodEatUp Academy",
+      "visuel": "Captures réelles de tutoriel.foodeatup.com, compteur 173, « sur 230 prévus »"
+    },
+    {
+      "t": [
+        17.2,
+        21.9
+      ],
+      "sequence": "Le MCP pédagogique",
+      "visuel": "Academy (230 fiches) → MCP Tuto FoodEatUp → Claude / OpenAI"
+    },
+    {
+      "t": [
+        21.9,
+        28.55
+      ],
+      "sequence": "La question",
+      "visuel": "Bulle « Claude, comment je fais un relevé de température ? » puis appel rechercher_tutoriels (sortie réelle)"
+    },
+    {
+      "t": [
+        28.55,
+        33.5
+      ],
+      "sequence": "Le tutoriel arrive",
+      "visuel": "HTML réellement renvoyé par carte_tutoriel, affiché dans un navigateur, avec la vraie vidéo du tutoriel"
+    },
+    {
+      "t": [
+        33.5,
+        36.2
+      ],
+      "sequence": "Étapes et quiz",
+      "visuel": "Étapes de lecteur_video_tutoriel, question réelle de quiz_tutoriel"
+    },
+    {
+      "t": [
+        36.2,
+        42.6
+      ],
+      "sequence": "Parcours sur mesure",
+      "visuel": "parcours_apprentissage HACCP débutant (5 leçons) + bandeau « Il enseigne. Il ne touche pas aux données du restaurant. »"
+    },
+    {
+      "t": [
+        42.6,
+        49.4
+      ],
+      "sequence": "Avant / maintenant",
+      "visuel": "Fiche tutoriel assombrie, « Maintenant, c'est l'IA qui trouve le bon tutoriel »"
+    },
+    {
+      "t": [
+        49.4,
+        56
+      ],
+      "sequence": "Conclusion",
+      "visuel": "Photo de Michael, « service client automatisé », prochaine étape : agents de support ; logos FoodEatUp, Claude, BraindCode"
+    }
+  ],
+  "sous_titres": "Poppins SemiBold 50, incrustés",
+  "musique": "musique-184 (bibliothèque du projet), ducking sous la voix",
+  "sfx": "whoosh aux transitions, pop sur le compteur, le résultat et la conclusion"
+}

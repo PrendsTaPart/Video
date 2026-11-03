@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f0b-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f0b-brokenline { position: absolute; left: 200px; right: 200px; top: 130px; height: 2px; }
+        .f0b-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.5; transform-origin: 0% 50%; }
+
+        .f0b-lead {
+          position: absolute; left: 200px; right: 200px; top: 170px; text-align: center;
+          font-size: 54px; font-weight: 600; line-height: 1.35; opacity: 0;
+        }
+
+        .f0b-rows { position: absolute; left: 340px; right: 340px; top: 400px; }
+        .f0b-row {
+          display: flex; align-items: center; gap: 30px;
+          padding: 24px 0; border-bottom: 1px dashed #8A9099; opacity: 0;
+        }
+        .f0b-row .icon {
+          width: 64px; height: 64px; object-fit: contain; flex-shrink: 0;
+          filter: grayscale(1) contrast(1.1);
+        }
+        .f0b-row .task { flex: 1; font-size: 40px; font-weight: 500; color: rgba(58,63,69,0.85); }
+        .f0b-row .tool { font-size: 40px; font-weight: 700; color: #3A3F45; white-space: nowrap; }
+
+        .f0b-close1 {
+          position: absolute; left: 0; right: 0; top: 860px; text-align: center;
+          font-size: 52px; font-weight: 700; opacity: 0;
+        }
+        .f0b-close1 .em { color: #D64545; }
+        .f0b-close2 {
+          position: absolute; left: 0; right: 0; top: 946px; text-align: center;
+          font-size: 34px; font-weight: 500; color: rgba(58,63,69,0.85); opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="00b-contexte" data-width="1920" data-height="1080" data-duration="22.782">
+        <div class="f0b-bg clip" id="f0b-bgclip" data-start="0" data-duration="22.782" data-track-index="0"></div>
+
+        <div class="f0b-brokenline" id="f0b-brokenline">
+          <span style="left:4%; width:16%;"></span>
+          <span style="left:26%; width:20%; top:-3px;"></span>
+          <span style="left:52%; width:14%; top:2px;"></span>
+          <span style="left:72%; width:22%;"></span>
+        </div>
+
+        <div class="f0b-lead" id="f0b-lead">Voici comment beaucoup de restaurateurs gèrent leur établissement, aujourd'hui.</div>
+
+        <div class="f0b-rows">
+          <div class="f0b-row" id="f0b-row1">
+            <img class="icon" id="f0b-icon1" src="public/generated/icon-livraison-crop.jpg" alt="" />
+            <span class="task">Pour recevoir une livraison</span><span class="tool">un logiciel</span>
+          </div>
+          <div class="f0b-row" id="f0b-row2">
+            <img class="icon" id="f0b-icon2" src="public/generated/icon-stock-crop.jpg" alt="" />
+            <span class="task">Pour suivre son stock</span><span class="tool">un autre</span>
+          </div>
+          <div class="f0b-row" id="f0b-row3">
+            <img class="icon" id="f0b-icon3" src="public/generated/icon-encaisser-crop.jpg" alt="" />
+            <span class="task">Pour encaisser un client</span><span class="tool">un troisième</span>
+          </div>
+        </div>
+
+        <div class="f0b-close1" id="f0b-close1">Chaque tâche, son outil. <span class="em">Sans lien entre eux.</span></div>
+        <div class="f0b-close2" id="f0b-close2">Suivez cette matinée, geste par geste.</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f0b-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set("#f0b-lead", { opacity: 0, y: 14 });
+        gsap.set(["#f0b-row1", "#f0b-row2", "#f0b-row3"], { opacity: 0, y: 12 });
+        gsap.set(["#f0b-icon1", "#f0b-icon2", "#f0b-icon3"], { opacity: 0, scale: 0.5 });
+        gsap.set("#f0b-close1", { opacity: 0, y: 12 });
+        gsap.set("#f0b-close2", { opacity: 0, y: 10 });
+
+        // Scene 0 (0.0-0.9s): the crossfade from the marine title card lands here — broken
+        // line draws itself on, segment by segment, as the film settles into the "sans" world.
+        tl.to("#f0b-brokenline span", { opacity: 0.5, duration: 0.01 }, 0.15);
+        tl.to("#f0b-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.08 }, 0.15);
+
+        // Scene 1 (0.3-4.9s, cue "Voici comment beaucoup de restaurateurs gèrent leur
+        // établissement, aujourd'hui."): the opening clause settles in.
+        tl.to("#f0b-lead", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 0.3);
+
+        // Scene 2 (4.9-8.0s, cue "Pour recevoir une livraison, un logiciel."): row 1 — the icon
+        // pops in a beat ahead of the text, so the eye lands on the picture before the words.
+        tl.to("#f0b-icon1", { opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" }, 4.9);
+        tl.to("#f0b-row1", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 5.02);
+
+        // Scene 3 (8.0-11.0s, cue "Pour suivre son stock, un autre."): row 2, same icon-then-row beat
+        tl.to("#f0b-icon2", { opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" }, 8.0);
+        tl.to("#f0b-row2", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 8.12);
+
+        // Scene 4 (11.0-14.1s, cue "Pour encaisser un client, un troisième."): row 3
+        tl.to("#f0b-icon3", { opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" }, 11.05);
+        tl.to("#f0b-row3", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 11.17);
+
+        // Scene 5 (14.1-18.2s, cue "Chaque tâche, son outil. Sans lien entre eux."): the rows
+        // compress slightly to make room, the punch line lands.
+        tl.to("#f0b-rows", { y: -18, duration: 0.5, ease: "power3.out" }, 14.1);
+        tl.to("#f0b-close1", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 14.3);
+
+        // Scene 6 (18.2-21.5s, cue "Suivez cette matinée, geste par geste."): the transition line
+        tl.to("#f0b-close2", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 18.2);
+
+        // Scene 7 (21.5-22.782s): hold — subtle jitter on the broken line only
+        const f0bphase = { p: 0 };
+        tl.to(f0bphase, {
+          p: Math.PI * 2 * 0.5, duration: 1.0, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f0bphase.p);
+            gsap.set("#f0b-brokenline", { y: s * 1.5 });
+          }
+        }, 21.6);
+
+        window.__timelines["00b-contexte"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

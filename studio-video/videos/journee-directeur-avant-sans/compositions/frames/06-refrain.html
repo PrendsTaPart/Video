@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f6-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f6-lead {
+          position: absolute; left: 0; right: 0; top: 170px; text-align: center;
+          font-size: 38px; font-weight: 600; color: rgba(58,63,69,0.85);
+        }
+        .f6-numeral {
+          position: absolute; left: 0; right: 0; top: 370px; text-align: center;
+          font-size: 380px; font-weight: 800; color: #D64545; line-height: 1;
+          font-variant-numeric: tabular-nums;
+        }
+        .f6-sub {
+          position: absolute; left: 0; right: 0; top: 825px; text-align: center;
+          font-size: 38px; font-weight: 600; color: rgba(58,63,69,0.85);
+        }
+        .f6-icons { position: absolute; left: 0; right: 0; top: 918px; text-align: center; }
+        .f6-icons img { width: 460px; height: auto; opacity: 0; }
+      </style>
+
+      <div id="root" data-composition-id="06-refrain" data-width="1920" data-height="1080" data-duration="8.076">
+        <div class="f6-bg clip" id="f6-bgclip" data-start="0" data-duration="8.076" data-track-index="1"></div>
+
+        <div class="f6-lead" id="f6-lead">le pire ?</div>
+        <div class="f6-numeral" id="f6-numeral">7</div>
+        <div class="f6-sub" id="f6-sub">abonnements payés</div>
+        <div class="f6-icons"><img id="f6-icons-img" src="public/generated/07-sept-icones.jpg" alt="" /></div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f6-lead", { opacity: 0 });
+        gsap.set("#f6-numeral", { opacity: 0, scale: 0 });
+        gsap.set("#f6-sub", { opacity: 0 });
+        gsap.set("#f6-icons-img", { opacity: 0, y: 8 });
+
+        // Scene 1 (0.0-0.68s): "Le pire ?" — quiet lead-in label
+        tl.to("#f6-lead", { opacity: 1, duration: 0.35, ease: "power3.out" }, 0.12);
+
+        // Scene 2 (0.68-2.32s): "Je paie sept abonnements." — giant "7" spring-pops, sub-label settles
+        tl.fromTo("#f6-numeral", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.75);
+        tl.to("#f6-sub", { opacity: 1, duration: 0.35, ease: "power3.out" }, 1.35);
+        tl.to("#f6-icons-img", { opacity: 0.85, y: 0, duration: 0.4, ease: "power3.out" }, 1.5);
+
+        // Scene 3 (2.32-4.08s): "Mon équipe en utilise deux." — hard-cut 7 -> 2 (instant, the signature move)
+        tl.call(() => {
+          document.getElementById("f6-numeral").textContent = "2";
+          document.getElementById("f6-sub").textContent = "réellement utilisés";
+        }, [], 2.37);
+
+        // Scene 4 (4.08-7.576s): hold — dead still, ~3.5s, the longest hold of the film.
+        // Only a barely-perceptible subtle jitter (well below the default range).
+        const f6phase = { p: 0 };
+        tl.to(f6phase, {
+          p: Math.PI * 2 * 1.1, duration: 3.3, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f6phase.p);
+            gsap.set("#f6-numeral", { scale: 1 + s * 0.004 });
+          }
+        }, 4.15);
+
+        window.__timelines["06-refrain"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+{
+  "video": 11,
+  "duree_s": 36,
+  "format": "1080x1920",
+  "voix": "ElevenLabs Noé (7pDdnNI6PhXmAp0pXFZm), eleven_v4",
+  "sequences": [
+    {
+      "t": [
+        0,
+        3.9
+      ],
+      "intention": "Accroche",
+      "visuel": "« 1 AN » plein écran, « une vidéo par jour = 365 vidéos »"
+    },
+    {
+      "t": [
+        3.9,
+        7.2
+      ],
+      "intention": "Le défi",
+      "visuel": "Photo officielle de Michael, « EN 2 JOURS »"
+    },
+    {
+      "t": [
+        7.2,
+        11.9
+      ],
+      "intention": "Le résultat",
+      "visuel": "Page /series du Social Hub sur tablette, compteur 0 → 367, « 5 séries »"
+    },
+    {
+      "t": [
+        11.9,
+        14.5
+      ],
+      "intention": "Humour",
+      "visuel": "« 50 monteurs » barré, pose surprise"
+    },
+    {
+      "t": [
+        14.5,
+        23.6
+      ],
+      "intention": "Coulisses",
+      "visuel": "Grilles réelles de saisons (Le Coup de Feu S1 et S8, Une journée, UpEatFood), clips ; pastilles Scénarios, Images, Voix, Montage"
+    },
+    {
+      "t": [
+        23.6,
+        27.5
+      ],
+      "intention": "Montée en puissance, honnête",
+      "visuel": "Barre 156 montés / 184 à produire / 27 bloqués, calendrier réel"
+    },
+    {
+      "t": [
+        27.5,
+        31.7
+      ],
+      "intention": "Punchline",
+      "visuel": "« C'est de décider ce qu'on veut raconter. »"
+    },
+    {
+      "t": [
+        31.7,
+        36
+      ],
+      "intention": "Vers la vidéo 12",
+      "visuel": "Photo, « Et ça, ce n'est que le début », badge VIDÉO 12 · DEMAIN, logos"
+    }
+  ]
+}

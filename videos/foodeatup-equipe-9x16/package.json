@@ -1,0 +1,11 @@
+{
+  "name": "foodeatup-equipe",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.7.44 preview",
+    "check": "npx hyperframes lint && npx hyperframes validate && npx hyperframes inspect",
+    "render": "npx --yes hyperframes@0.7.44 render",
+    "publish": "npx --yes hyperframes@0.7.44 publish"
+  }
+}

@@ -1,0 +1,54 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Poppins SemiBold,50,&H00E6F9FC,&H00E6F9FC,&H00231A0F,&H00231A0F,0,0,0,0,100,100,0,0,3,16,0,2,90,90,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:02.54,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, je vous présente une application
+Dialogue: 0,0:00:02.54,0:00:05.22,Sub,,0,0,0,,{\fad(80,60)}que j'ai développée pour un client, pour 2 000 euros.
+Dialogue: 0,0:00:05.22,0:00:07.30,Sub,,0,0,0,,{\fad(80,60)}Et ce n'est pas simplement un catalogue de recettes :
+Dialogue: 0,0:00:07.30,0:00:10.72,Sub,,0,0,0,,{\fad(80,60)}elle est connectée à mon écosystème FoodEatUp.
+Dialogue: 0,0:00:11.87,0:00:12.69,Sub,,0,0,0,,{\fad(80,60)}Les recettes et la formation
+Dialogue: 0,0:00:12.69,0:00:15.59,Sub,,0,0,0,,{\fad(80,60)}tenaient dans un classeur papier de 161 pages.
+Dialogue: 0,0:00:15.59,0:00:16.77,Sub,,0,0,0,,{\fad(80,60)}L'objectif était simple :
+Dialogue: 0,0:00:16.77,0:00:18.61,Sub,,0,0,0,,{\fad(80,60)}rendre toutes ces informations accessibles
+Dialogue: 0,0:00:18.61,0:00:20.69,Sub,,0,0,0,,{\fad(80,60)}directement sur tablette, au comptoir.
+Dialogue: 0,0:00:21.80,0:00:23.63,Sub,,0,0,0,,{\fad(80,60)}J'ai donc créé une application tactile :
+Dialogue: 0,0:00:23.63,0:00:25.73,Sub,,0,0,0,,{\fad(80,60)}les catégories, la recherche instantanée,
+Dialogue: 0,0:00:25.73,0:00:28.01,Sub,,0,0,0,,{\fad(80,60)}les ingrédients, les quantités, les allergènes,
+Dialogue: 0,0:00:28.01,0:00:30.39,Sub,,0,0,0,,{\fad(80,60)}et un mode pas à pas qui guide chaque préparation.
+Dialogue: 0,0:00:30.39,0:00:32.52,Sub,,0,0,0,,{\fad(80,60)}Il y a même une Academy pour former les nouveaux équipiers.
+Dialogue: 0,0:00:46.78,0:00:49.60,Sub,,0,0,0,,{\fad(80,60)}Mais le plus intéressant, c'est la connexion à FoodEatUp.
+Dialogue: 0,0:00:49.60,0:00:51.26,Sub,,0,0,0,,{\fad(80,60)}Les recettes et leurs compositions sont lues
+Dialogue: 0,0:00:51.26,0:00:53.80,Sub,,0,0,0,,{\fad(80,60)}dans mon logiciel central, puis recopiées dans l'application
+Dialogue: 0,0:00:53.80,0:00:55.88,Sub,,0,0,0,,{\fad(80,60)}par une synchronisation programmée chaque nuit,
+Dialogue: 0,0:00:55.88,0:00:58.30,Sub,,0,0,0,,{\fad(80,60)}pour continuer à fonctionner même sans connexion.
+Dialogue: 0,0:00:58.30,0:01:00.32,Sub,,0,0,0,,{\fad(80,60)}Et quand un responsable corrige une recette,
+Dialogue: 0,0:01:00.32,0:01:02.76,Sub,,0,0,0,,{\fad(80,60)}rien ne part vers FoodEatUp sans sa confirmation.
+Dialogue: 0,0:01:04.00,0:01:05.95,Sub,,0,0,0,,{\fad(80,60)}Pour les fiches techniques, j'utilise Figma.
+Dialogue: 0,0:01:05.95,0:01:07.67,Sub,,0,0,0,,{\fad(80,60)}Une fiche équipe, avec la photo,
+Dialogue: 0,0:01:07.67,0:01:09.13,Sub,,0,0,0,,{\fad(80,60)}les ingrédients et les étapes.
+Dialogue: 0,0:01:09.13,0:01:11.15,Sub,,0,0,0,,{\fad(80,60)}Et une fiche responsable, avec les prix d'achat
+Dialogue: 0,0:01:11.15,0:01:13.81,Sub,,0,0,0,,{\fad(80,60)}et le coût de revient, réservée à l'espace Responsable.
+Dialogue: 0,0:01:13.81,0:01:14.99,Sub,,0,0,0,,{\fad(80,60)}Les fiches existent déjà ;
+Dialogue: 0,0:01:14.99,0:01:17.50,Sub,,0,0,0,,{\fad(80,60)}la mise à jour automatique des PDF reste à terminer.
+Dialogue: 0,0:01:18.80,0:01:20.48,Sub,,0,0,0,,{\fad(80,60)}Pour réaliser ce projet, j'ai utilisé
+Dialogue: 0,0:01:20.48,0:01:23.18,Sub,,0,0,0,,{\fad(80,60)}Lovable, Claude, FoodEatUp et Figma.
+Dialogue: 0,0:01:23.18,0:01:25.50,Sub,,0,0,0,,{\fad(80,60)}Mon travail, c'est de comprendre le besoin métier,
+Dialogue: 0,0:01:25.50,0:01:27.56,Sub,,0,0,0,,{\fad(80,60)}construire les bons outils, connecter les données,
+Dialogue: 0,0:01:27.56,0:01:30.26,Sub,,0,0,0,,{\fad(80,60)}et vérifier que tout fonctionne vraiment sur le terrain.
+Dialogue: 0,0:01:30.26,0:01:31.86,Sub,,0,0,0,,{\fad(80,60)}L'IA accélère le développement ;
+Dialogue: 0,0:01:31.86,0:01:34.11,Sub,,0,0,0,,{\fad(80,60)}les décisions et la validation restent humaines.
+Dialogue: 0,0:01:35.40,0:01:38.20,Sub,,0,0,0,,{\fad(80,60)}Au final, on passe d'un classeur papier de 161 pages
+Dialogue: 0,0:01:38.20,0:01:40.64,Sub,,0,0,0,,{\fad(80,60)}à une application de recettes, de formation
+Dialogue: 0,0:01:40.64,0:01:42.62,Sub,,0,0,0,,{\fad(80,60)}et de fiches techniques, reliée à FoodEatUp.
+Dialogue: 0,0:01:42.62,0:01:44.52,Sub,,0,0,0,,{\fad(80,60)}C'est exactement le type de solution métier
+Dialogue: 0,0:01:44.52,0:01:46.46,Sub,,0,0,0,,{\fad(80,60)}que je veux rendre accessible avec BraindCode.
+Dialogue: 0,0:01:46.46,0:01:48.32,Sub,,0,0,0,,{\fad(80,60)}Et demain, je vous présenterai un nouveau projet,
+Dialogue: 0,0:01:48.32,0:01:49.77,Sub,,0,0,0,,{\fad(80,60)}et mon travail du jour.

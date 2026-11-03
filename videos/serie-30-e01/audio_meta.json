@@ -1,0 +1,579 @@
+{
+ "voices": [
+  {
+   "frame": 1,
+   "path": "assets/voice/routine.wav",
+   "duration_s": 13.096,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Une",
+     "start": 0.0,
+     "end": 0.385
+    },
+    {
+     "id": "w1",
+     "text": "routine,",
+     "start": 0.385,
+     "end": 0.77
+    },
+    {
+     "id": "w2",
+     "text": "c'est",
+     "start": 0.77,
+     "end": 1.156
+    },
+    {
+     "id": "w3",
+     "text": "une",
+     "start": 1.156,
+     "end": 1.541
+    },
+    {
+     "id": "w4",
+     "text": "suite",
+     "start": 1.541,
+     "end": 1.926
+    },
+    {
+     "id": "w5",
+     "text": "d'actions",
+     "start": 1.926,
+     "end": 2.311
+    },
+    {
+     "id": "w6",
+     "text": "que",
+     "start": 2.311,
+     "end": 2.696
+    },
+    {
+     "id": "w7",
+     "text": "ton",
+     "start": 2.696,
+     "end": 3.081
+    },
+    {
+     "id": "w8",
+     "text": "I.A.",
+     "start": 3.081,
+     "end": 3.467
+    },
+    {
+     "id": "w9",
+     "text": "exécute",
+     "start": 3.467,
+     "end": 3.852
+    },
+    {
+     "id": "w10",
+     "text": "toute",
+     "start": 3.852,
+     "end": 4.237
+    },
+    {
+     "id": "w11",
+     "text": "seule,",
+     "start": 4.237,
+     "end": 4.622
+    },
+    {
+     "id": "w12",
+     "text": "à",
+     "start": 4.622,
+     "end": 5.007
+    },
+    {
+     "id": "w13",
+     "text": "heure",
+     "start": 5.007,
+     "end": 5.392
+    },
+    {
+     "id": "w14",
+     "text": "fixe.",
+     "start": 5.392,
+     "end": 5.778
+    },
+    {
+     "id": "w15",
+     "text": "Elle",
+     "start": 5.778,
+     "end": 6.163
+    },
+    {
+     "id": "w16",
+     "text": "observe,",
+     "start": 6.163,
+     "end": 6.548
+    },
+    {
+     "id": "w17",
+     "text": "elle",
+     "start": 6.548,
+     "end": 6.933
+    },
+    {
+     "id": "w18",
+     "text": "planifie,",
+     "start": 6.933,
+     "end": 7.318
+    },
+    {
+     "id": "w19",
+     "text": "elle",
+     "start": 7.318,
+     "end": 7.704
+    },
+    {
+     "id": "w20",
+     "text": "agit,",
+     "start": 7.704,
+     "end": 8.089
+    },
+    {
+     "id": "w21",
+     "text": "elle",
+     "start": 8.089,
+     "end": 8.474
+    },
+    {
+     "id": "w22",
+     "text": "apprend,",
+     "start": 8.474,
+     "end": 8.859
+    },
+    {
+     "id": "w23",
+     "text": "elle",
+     "start": 8.859,
+     "end": 9.244
+    },
+    {
+     "id": "w24",
+     "text": "te",
+     "start": 9.244,
+     "end": 9.629
+    },
+    {
+     "id": "w25",
+     "text": "rend",
+     "start": 9.629,
+     "end": 10.015
+    },
+    {
+     "id": "w26",
+     "text": "compte.",
+     "start": 10.015,
+     "end": 10.4
+    },
+    {
+     "id": "w27",
+     "text": "Cinq",
+     "start": 10.4,
+     "end": 10.785
+    },
+    {
+     "id": "w28",
+     "text": "étapes.",
+     "start": 10.785,
+     "end": 11.17
+    },
+    {
+     "id": "w29",
+     "text": "Zéro",
+     "start": 11.17,
+     "end": 11.555
+    },
+    {
+     "id": "w30",
+     "text": "clic",
+     "start": 11.555,
+     "end": 11.941
+    },
+    {
+     "id": "w31",
+     "text": "de",
+     "start": 11.941,
+     "end": 12.326
+    },
+    {
+     "id": "w32",
+     "text": "ta",
+     "start": 12.326,
+     "end": 12.711
+    },
+    {
+     "id": "w33",
+     "text": "part.",
+     "start": 12.711,
+     "end": 13.096
+    }
+   ]
+  },
+  {
+   "frame": 2,
+   "path": "assets/voice/prompt.wav",
+   "duration_s": 5.619,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Une",
+     "start": 0.0,
+     "end": 0.281
+    },
+    {
+     "id": "w1",
+     "text": "seule",
+     "start": 0.281,
+     "end": 0.562
+    },
+    {
+     "id": "w2",
+     "text": "phrase",
+     "start": 0.562,
+     "end": 0.843
+    },
+    {
+     "id": "w3",
+     "text": "la",
+     "start": 0.843,
+     "end": 1.124
+    },
+    {
+     "id": "w4",
+     "text": "déclenche",
+     "start": 1.124,
+     "end": 1.405
+    },
+    {
+     "id": "w5",
+     "text": ":",
+     "start": 1.405,
+     "end": 1.686
+    },
+    {
+     "id": "w6",
+     "text": "Lance",
+     "start": 1.686,
+     "end": 1.967
+    },
+    {
+     "id": "w7",
+     "text": "ma",
+     "start": 1.967,
+     "end": 2.248
+    },
+    {
+     "id": "w8",
+     "text": "routine",
+     "start": 2.248,
+     "end": 2.529
+    },
+    {
+     "id": "w9",
+     "text": "du",
+     "start": 2.529,
+     "end": 2.81
+    },
+    {
+     "id": "w10",
+     "text": "lundi.",
+     "start": 2.81,
+     "end": 3.091
+    },
+    {
+     "id": "w11",
+     "text": "Et",
+     "start": 3.091,
+     "end": 3.372
+    },
+    {
+     "id": "w12",
+     "text": "pendant",
+     "start": 3.372,
+     "end": 3.652
+    },
+    {
+     "id": "w13",
+     "text": "que",
+     "start": 3.652,
+     "end": 3.933
+    },
+    {
+     "id": "w14",
+     "text": "tu",
+     "start": 3.933,
+     "end": 4.214
+    },
+    {
+     "id": "w15",
+     "text": "dors,",
+     "start": 4.214,
+     "end": 4.495
+    },
+    {
+     "id": "w16",
+     "text": "le",
+     "start": 4.495,
+     "end": 4.776
+    },
+    {
+     "id": "w17",
+     "text": "travail",
+     "start": 4.776,
+     "end": 5.057
+    },
+    {
+     "id": "w18",
+     "text": "se",
+     "start": 5.057,
+     "end": 5.338
+    },
+    {
+     "id": "w19",
+     "text": "fait.",
+     "start": 5.338,
+     "end": 5.619
+    }
+   ]
+  },
+  {
+   "frame": 3,
+   "path": "assets/voice/cas.wav",
+   "duration_s": 13.932,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Avant",
+     "start": 0.0,
+     "end": 0.367
+    },
+    {
+     "id": "w1",
+     "text": ":",
+     "start": 0.367,
+     "end": 0.733
+    },
+    {
+     "id": "w2",
+     "text": "tu",
+     "start": 0.733,
+     "end": 1.1
+    },
+    {
+     "id": "w3",
+     "text": "ouvres",
+     "start": 1.1,
+     "end": 1.467
+    },
+    {
+     "id": "w4",
+     "text": "six",
+     "start": 1.467,
+     "end": 1.833
+    },
+    {
+     "id": "w5",
+     "text": "outils,",
+     "start": 1.833,
+     "end": 2.2
+    },
+    {
+     "id": "w6",
+     "text": "tu",
+     "start": 2.2,
+     "end": 2.566
+    },
+    {
+     "id": "w7",
+     "text": "recopies,",
+     "start": 2.566,
+     "end": 2.933
+    },
+    {
+     "id": "w8",
+     "text": "tu",
+     "start": 2.933,
+     "end": 3.3
+    },
+    {
+     "id": "w9",
+     "text": "oublies.",
+     "start": 3.3,
+     "end": 3.666
+    },
+    {
+     "id": "w10",
+     "text": "Après",
+     "start": 3.666,
+     "end": 4.033
+    },
+    {
+     "id": "w11",
+     "text": ":",
+     "start": 4.033,
+     "end": 4.4
+    },
+    {
+     "id": "w12",
+     "text": "une",
+     "start": 4.4,
+     "end": 4.766
+    },
+    {
+     "id": "w13",
+     "text": "page",
+     "start": 4.766,
+     "end": 5.133
+    },
+    {
+     "id": "w14",
+     "text": "t'attend",
+     "start": 5.133,
+     "end": 5.499
+    },
+    {
+     "id": "w15",
+     "text": "au",
+     "start": 5.499,
+     "end": 5.866
+    },
+    {
+     "id": "w16",
+     "text": "réveil,",
+     "start": 5.866,
+     "end": 6.233
+    },
+    {
+     "id": "w17",
+     "text": "avec",
+     "start": 6.233,
+     "end": 6.599
+    },
+    {
+     "id": "w18",
+     "text": "ce",
+     "start": 6.599,
+     "end": 6.966
+    },
+    {
+     "id": "w19",
+     "text": "qui",
+     "start": 6.966,
+     "end": 7.333
+    },
+    {
+     "id": "w20",
+     "text": "compte",
+     "start": 7.333,
+     "end": 7.699
+    },
+    {
+     "id": "w21",
+     "text": "vraiment.",
+     "start": 7.699,
+     "end": 8.066
+    },
+    {
+     "id": "w22",
+     "text": "Léa",
+     "start": 8.066,
+     "end": 8.433
+    },
+    {
+     "id": "w23",
+     "text": "vient",
+     "start": 8.433,
+     "end": 8.799
+    },
+    {
+     "id": "w24",
+     "text": "d'ouvrir",
+     "start": 8.799,
+     "end": 9.166
+    },
+    {
+     "id": "w25",
+     "text": "son",
+     "start": 9.166,
+     "end": 9.532
+    },
+    {
+     "id": "w26",
+     "text": "restaurant.",
+     "start": 9.532,
+     "end": 9.899
+    },
+    {
+     "id": "w27",
+     "text": "Sa",
+     "start": 9.899,
+     "end": 10.266
+    },
+    {
+     "id": "w28",
+     "text": "première",
+     "start": 10.266,
+     "end": 10.632
+    },
+    {
+     "id": "w29",
+     "text": "routine",
+     "start": 10.632,
+     "end": 10.999
+    },
+    {
+     "id": "w30",
+     "text": "lui",
+     "start": 10.999,
+     "end": 11.366
+    },
+    {
+     "id": "w31",
+     "text": "fait",
+     "start": 11.366,
+     "end": 11.732
+    },
+    {
+     "id": "w32",
+     "text": "déjà",
+     "start": 11.732,
+     "end": 12.099
+    },
+    {
+     "id": "w33",
+     "text": "gagner",
+     "start": 12.099,
+     "end": 12.465
+    },
+    {
+     "id": "w34",
+     "text": "une",
+     "start": 12.465,
+     "end": 12.832
+    },
+    {
+     "id": "w35",
+     "text": "heure",
+     "start": 12.832,
+     "end": 13.199
+    },
+    {
+     "id": "w36",
+     "text": "par",
+     "start": 13.199,
+     "end": 13.565
+    },
+    {
+     "id": "w37",
+     "text": "jour.",
+     "start": 13.565,
+     "end": 13.932
+    }
+   ]
+  }
+ ],
+ "bgm": null,
+ "sfx": []
+}

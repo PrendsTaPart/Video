@@ -1,0 +1,108 @@
+1
+00:00:00,600 --> 00:00:02,260
+Tout le monde crée des agents IA.
+
+2
+00:00:02,260 --> 00:00:04,680
+Mais qui leur apprend à faire correctement leur travail ?
+
+3
+00:00:04,680 --> 00:00:07,700
+Aujourd'hui, je vais te montrer comment je forme mes employés IA.
+
+4
+00:00:07,700 --> 00:00:09,940
+Parce qu'avoir une équipe d'agents IA, c'est bien…
+
+5
+00:00:09,940 --> 00:00:11,960
+Mais si tes agents ne connaissent pas ton entreprise,
+
+6
+00:00:11,960 --> 00:00:13,360
+tes méthodes et tes logiciels,
+
+7
+00:00:13,360 --> 00:00:14,920
+ils vont faire n'importe quoi !
+
+8
+00:00:14,920 --> 00:00:16,920
+Alors, j'ai développé une Academy.
+
+9
+00:00:16,920 --> 00:00:19,420
+J'y organise mes formations, mes connaissances métier,
+
+10
+00:00:19,420 --> 00:00:21,950
+mes prompts et les compétences nécessaires à chaque mission.
+
+11
+00:00:24,180 --> 00:00:26,600
+Prenons un agent chargé d'éviter les ruptures de stock.
+
+12
+00:00:26,600 --> 00:00:28,620
+Il apprend d'abord la procédure FoodEatUp :
+
+13
+00:00:28,620 --> 00:00:30,460
+du stock bas à la commande préparée,
+
+14
+00:00:30,460 --> 00:00:31,300
+jamais envoyée seule.
+
+15
+00:00:31,300 --> 00:00:33,840
+Grâce aux MCP, il accède aux bons outils,
+
+16
+00:00:33,840 --> 00:00:34,800
+et seulement à ceux-là.
+
+17
+00:00:38,420 --> 00:00:39,880
+Ensuite, il passe le quiz.
+
+18
+00:00:39,880 --> 00:00:42,500
+Sa consigne de départ est notée zéro sur six…
+
+19
+00:00:42,500 --> 00:00:44,500
+Il la complète : six sur six !
+
+20
+00:00:44,500 --> 00:00:47,160
+L'objectif, ce n'est pas seulement qu'une IA sache répondre.
+
+21
+00:00:47,160 --> 00:00:49,260
+C'est qu'elle sache quoi faire, comment le faire,
+
+22
+00:00:49,260 --> 00:00:51,700
+avec quels outils, et comment vérifier le résultat.
+
+23
+00:00:51,700 --> 00:00:53,450
+Et la validation finale reste humaine.
+
+24
+00:00:55,160 --> 00:00:58,060
+Avant, je formais des employés pour utiliser mes logiciels.
+
+25
+00:00:58,060 --> 00:00:59,980
+Maintenant, je construis aussi les formations
+
+26
+00:00:59,980 --> 00:01:01,300
+de mes employés IA !
+
+27
+00:01:01,300 --> 00:01:04,350
+Et toi, tu formerais ton premier agent IA à quel métier ?
+

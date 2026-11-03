@@ -1,0 +1,67 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 54 : FoodEatUp en BD</title>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter',sans-serif}#stage{background:#fbf6e6}
+.sc{background:#fbf6e6;background-image:radial-gradient(#e6dcc0 1.6px,transparent 1.6px);background-size:22px 22px}
+#hdr{position:absolute;left:0;right:0;top:0;height:170px;z-index:60}#hdr span{position:absolute;left:50px;top:84px;font-family:'Inter';font-weight:800;font-size:24px;color:#fff;background:#1c6ef2;border-radius:999px;padding:6px 18px;border:3px solid #111}
+#cap{font-family:'Inter';font-weight:900;font-size:58px;color:#111;letter-spacing:-1px}#cap i.k{color:#1c6ef2;font-style:normal}
+.case{border:8px solid #111;border-radius:14px;overflow:hidden;box-shadow:12px 12px 0 #111;background:#fff}.case img{display:block;width:100%}
+.lab{display:inline-block;background:#1c6ef2;color:#fff;font-weight:800;font-size:30px;border:4px solid #111;border-radius:10px;padding:6px 16px;white-space:nowrap}
+.box{background:#ffd23f;border:5px solid #111;border-radius:10px;padding:16px 22px;font-weight:800;font-size:38px;color:#111;box-shadow:8px 8px 0 #111;line-height:1.25}
+.pow{font-family:'Bangers',cursive;font-size:150px;color:#fff;letter-spacing:4px;-webkit-text-stroke:8px #111;paint-order:stroke fill;text-shadow:10px 10px 0 #e8452c;white-space:nowrap}
+.burst{width:420px;height:420px;display:flex;align-items:center;justify-content:center;background:#ffd23f;clip-path:polygon(50% 0,61% 22%,85% 10%,78% 36%,100% 45%,80% 60%,92% 85%,66% 78%,55% 100%,44% 79%,18% 92%,24% 66%,0 55%,22% 40%,10% 14%,36% 22%);}
+.burst b{font-family:'Bangers';font-size:96px;color:#111;transform:rotate(-8deg);text-align:center;line-height:.9}
+.ico{display:flex;flex-direction:column;align-items:center;gap:8px;font-weight:900;font-size:30px}.ico i{font-style:normal;font-size:84px;background:#fff;border:5px solid #111;border-radius:50%;width:140px;height:140px;display:flex;align-items:center;justify-content:center;box-shadow:6px 6px 0 #111}
+.mini{width:220px;border:6px solid #111;border-radius:10px;overflow:hidden;box-shadow:6px 6px 0 #111}.mini img{display:block;width:100%}
+</style></head><body><div id="stage"><div id="hdr"><span>BD · Découvrir FoodEatUp</span></div><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=1600;CAP.group=3;CAP.kw=new Set(['bande','dessinée.','vendre,','parler.','commerciaux,','partenaires,','nouveaux','promesses.','une','fois.','flux.','seuls.','missions.','PrediBot,','Iris','gratuit.','BD.']);
+const cas=(n,o={})=>`<div class="case" style="width:${o.w||900}px;transform:rotate(${o.r||0}deg)"><img src="img/case-${n}.jpg"></div>`;
+let s;
+// 1 couverture
+s=scene(M('J\'ai transformé'),M('Elle est faite'),{tr:'cut'});
+s.el(cas('01',{r:-2}),{x:540,y:800,fx:'drop',at:.2});
+s.el('<div class="burst"><b>MA<br>BD !</b></div>',{x:820,y:420,fx:'slam',at:1.2,rot:10,z:6});
+s.el('<div class="box">Chaque module : comment le vendre et en parler</div>',{x:540,y:1350,fx:'up',at:M('Pour expliquer'),w:860});
+// 2 pour qui
+s=scene(M('Elle est faite'),M('Trois promesses.'),{tr:'cut'});
+s.el(cas('02',{w:760,r:2}),{x:540,y:760,fx:'pop',at:M('Elle est faite')});
+s.el('<div class="lab">POUR QUI ?</div>',{x:540,y:330,fx:'drop',at:M('Elle est faite')});
+['COMMERCIAUX','PARTENAIRES','NOUVEAUX DE L\'ÉQUIPE'].forEach((t,k)=>s.el(`<div class="box" style="font-size:34px">${t}</div>`,{x:[250,600,540][k],y:[1300,1300,1420][k],fx:'slam',at:M('Elle est faite')+.9+k*.7}));
+// 3 trois promesses
+s=scene(M('Trois promesses.'),M('Dix missions.'),{tr:'cut'});
+s.el(cas('03',{w:620,r:-2}),{x:540,y:620,fx:'pop',at:M('Trois promesses.')});
+s.el('<div class="lab">TROIS PROMESSES</div>',{x:540,y:300,fx:'drop',at:M('Trois promesses.')});
+[['Ta carte : saisie une fois','Ta carte,'],['Commande → cuisine → caisse : un seul flux','Prendre la'],['Avis, campagnes, fidélité : tout seuls','Et tes avis,']].forEach(([t,m],k)=>s.el(`<div class="box" style="width:900px">✓ ${t}</div>`,{x:540,y:1080+k*150,fx:'left',at:M(m)}));
+// 4 dix missions
+s=scene(M('Dix missions.'),M('La configuration'),{tr:'cut'});
+s.el(cas('04',{w:860,r:1}),{x:540,y:860,fx:'pop',at:M('Dix missions.')});
+s.el('<div class="pow">DIX MISSIONS !</div>',{x:540,y:420,fx:'slam',at:M('Dix missions.')+.1});
+s.el('<div class="box">Une par jour, à ton rythme</div>',{x:540,y:1370,fx:'up',at:M('Dix missions.')+1});
+// 5 les dix missions
+const MI=[['05','Configuration boutique','La base de tout','La configuration'],['06','StockVisionAI','Stocks, achats, production : une boucle','Les stocks,'],['07','PrediBot','Anticiper la semaine','PrediBot, qui'],['08','HACCP','Signé et horodaté','L\'hygiène,'],['09','Équipe','Planning, badges, congés','L\'équipe :'],['10','Service','Commande, caisse, écran cuisine','Le service :'],['11','Agent IA','Le téléphone qui répond','L\'agent IA'],['12','Comptabilité','Prête pour ton comptable','La compta,'],['13','Marketing','Avis, campagnes, Iris en community manager','Le marketing,'],['14','Mon site','La vitrine qui suit ta carte','Et ton site,']];
+MI.forEach(([n,t,d,m],k)=>{const t0=M(m),t1=k<9?M(MI[k+1][3]):M('Dans chaque');const sc=scene(t0,t1,{tr:'cut'});
+ sc.el(cas(n,{w:880,r:k%2?1.5:-1.5}),{x:540,y:820,fx:k%2?'right':'left',at:t0});
+ sc.el(`<div class="lab">MISSION · ${t.toUpperCase()}</div>`,{x:540,y:310,fx:'drop',at:t0});
+ sc.el(`<div class="box" style="width:880px">${d}</div>`,{x:540,y:1390,fx:'up',at:t0+.3});
+ sc.el(`<div style="display:flex;gap:10px">${MI.map((x,j)=>`<i style="display:block;width:56px;height:14px;border-radius:7px;border:2px solid #111;background:${j<=k?'#1c6ef2':'#fff'}"></i>`).join('')}</div>`,{x:540,y:1520,fx:'none'});});
+// 6 dans chaque mission
+s=scene(M('Dans chaque'),M('Et c\'est'),{tr:'cut'});
+s.el(cas('15',{w:560,r:-2}),{x:540,y:640,fx:'pop',at:M('Dans chaque')});
+s.el('<div class="lab">DANS CHAQUE MISSION</div>',{x:540,y:300,fx:'drop',at:M('Dans chaque')});
+[['🎮','MINI-JEU','un mini-jeu,'],['❓','QUIZ','un quiz,'],['⚡','CONSIGNE','une consigne'],['🔁','ROUTINE','et une routine']].forEach(([i,t,m],k)=>s.el(`<div class="ico"><i>${i}</i>${t}</div>`,{x:180+k*240,y:1240,fx:'slam',at:M(m)}));
+// 7 gratuit
+s=scene(M('Et c\'est'),M('Tu veux'),{tr:'cut'});
+s.el(cas('16',{w:620,r:2}),{x:540,y:760,fx:'pop',at:M('Et c\'est')});
+s.el('<div class="pow" style="text-shadow:10px 10px 0 #1f9d55">GRATUIT !</div>',{x:540,y:1300,fx:'slam',at:M('Et c\'est')+.3});
+// 8 CTA
+s=scene(M('Tu veux'),C.dur+1,{tr:'cut'});
+['bd4465.jpg','bd4467.jpg','bd4512.jpg','bd4523.jpg','bd4538.jpg','bd4556.jpg'].forEach((f,k)=>s.el(`<div class="mini"><img src="img/${f}"></div>`,{x:200+(k%3)*340,y:1250+Math.floor(k/3)*330,fx:'pop',at:M('Tu veux')+k*.12,rot:(k%2?3:-3)}));
+s.el('<div class="burst" style="width:760px;height:760px"><b style="font-size:92px">COMMENTE<br>« BD »</b></div>',{x:540,y:620,fx:'slam',at:M('Commente BD.')});
+s.el('<div class="lab">ÉPISODE 54/365</div>',{x:540,y:1000,fx:'fade',at:M('Commente BD.')+.8,z:6});
+CAP.show=t=>t<M('Tu veux');
+thumbAt(M('Dix missions.')+1,'<i>J\'ai raconté FoodEatUp</i><br><i class="k">en bande dessinée</i>');
+render(0);
+</script></body></html>

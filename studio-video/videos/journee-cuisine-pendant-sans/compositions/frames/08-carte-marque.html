@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #fff;
+        }
+        .f8-bg { position: absolute; inset: 0; background: #1B2A41; }
+        .f8-glow {
+          position: absolute; left: 50%; top: 36%; width: 1100px; height: 1100px;
+          margin-left: -550px; margin-top: -550px; border-radius: 50%;
+          background: radial-gradient(circle, rgba(0,123,255,0.16) 0%, rgba(27,42,65,0) 62%);
+        }
+
+        .f8-l1 { position: absolute; left: 0; right: 0; top: 82px; text-align: center; font-size: 54px; font-weight: 700; color: #fff; }
+
+        .f8-shot {
+          position: absolute; left: 660px; top: 190px; width: 600px; height: 450px;
+          border-radius: 14px; overflow: hidden;
+          box-shadow: 0 30px 70px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.12);
+          transform-origin: 50% 50%;
+        }
+        .f8-shot img { position: absolute; left: 0; top: 0; width: 600px; height: auto; display: block; }
+
+        .f8-l2 { position: absolute; left: 0; right: 0; top: 668px; text-align: center; font-size: 32px; font-weight: 500; color: rgba(255,255,255,0.82); }
+
+        .f8-logo { position: absolute; left: 0; right: 0; top: 748px; text-align: center; }
+        .f8-logo img { height: 76px; width: auto; }
+      </style>
+
+      <div id="root" data-composition-id="08-carte-marque" data-width="1920" data-height="1080">
+        <div class="f8-bg clip" id="f8-bgclip" data-start="0" data-duration="5.6" data-track-index="1"></div>
+        <div class="f8-glow" id="f8-glow"></div>
+
+        <div class="f8-l1" id="f8-l1">Ça, c'était avant.</div>
+
+        <div class="f8-shot" id="f8-shot">
+          <img src="public/foodeatup-product-dashboard.png" alt="Tableau de bord FoodEatUp" />
+        </div>
+
+        <div class="f8-l2" id="f8-l2">Aujourd'hui, c'est FoodEatUp qui gère mon établissement.</div>
+
+        <div class="f8-logo" id="f8-logo">
+          <img src="public/foodeatup-logo.png" alt="FoodEatUp" />
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f8-glow", { opacity: 0, scale: 0.85 });
+        gsap.set("#f8-l1", { opacity: 0, y: 16 });
+        gsap.set("#f8-shot", { opacity: 0, scale: 0.92, y: 14 });
+        gsap.set("#f8-l2", { opacity: 0, y: 16 });
+        gsap.set("#f8-logo", { opacity: 0, scale: 0.9 });
+
+        // Scene 1 (0.0-0.3s): hard cut into full-bleed marine — the palette break IS the impact.
+        // A soft ambient glow blooms in behind everything (finite, bounded — ambient-glow-bloom).
+        tl.to("#f8-glow", { opacity: 1, scale: 1, duration: 0.9, ease: "power2.out" }, 0.15);
+
+        // Scene 2 (0.3-1.0s, cue "Ça, c'était avant." — the callback to everything just shown):
+        // line 1 slides/fades up, centered.
+        tl.to("#f8-l1", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.3);
+
+        // Scene 3 (1.35-2.2s): the real product — one concrete, in-color proof beat (the payoff
+        // made literal) — pops in right as the punchline turns ("Aujourd'hui..."), then settles.
+        tl.fromTo("#f8-shot", { opacity: 0, scale: 0.92, y: 14 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "power3.out" }, 1.35);
+
+        // Scene 4 (1.5-2.2s, cue "Aujourd'hui, c'est FoodEatUp qui gère mon établissement."):
+        // line 2 reveals beneath the product shot, on the beat with the VO turn.
+        tl.to("#f8-l2", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 1.5);
+
+        // Scene 5 (4.5-5.6s): logo settles once the VO has landed — the film's one real exit is
+        // simply holding still to the last frame. A barely-perceptible ambient breathe on the glow.
+        tl.fromTo("#f8-logo", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 4.5);
+        const f8phase = { p: 0 };
+        tl.to(f8phase, {
+          p: Math.PI * 2 * 0.5, duration: 1.0, ease: "none",
+          onUpdate: () => { gsap.set("#f8-glow", { scale: 1 + Math.sin(f8phase.p) * 0.01 }); }
+        }, 4.6);
+
+        window.__timelines["08-carte-marque"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

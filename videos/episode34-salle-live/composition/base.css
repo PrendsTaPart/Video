@@ -1,0 +1,25 @@
+/* Feuille commune des épisodes 33 et 34 (reconstituée d'après les rendus d'origine). */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DejaVu+Sans+Mono&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0F1A23}
+body{font-family:'Poppins',sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+#stage{position:absolute;inset:0;overflow:hidden}
+.scene{position:absolute;inset:0;display:none}
+.chip{position:absolute;left:70px;top:120px;font-weight:700;font-size:30px;letter-spacing:4px;color:#FFA500;text-transform:uppercase}
+.title{position:absolute;left:70px;right:60px;top:170px;font-weight:700;font-size:62px;line-height:1.1}
+.title b,.title span{color:#FFA500}
+.note{position:absolute;font-weight:600;font-size:22px;color:#ffd479;background:#3a2a10;border:2px solid #b58a2a;border-radius:12px;padding:8px 16px}
+.note.ok{color:#86efac;background:#14532d;border-color:#22c55e}
+.pill{position:absolute;font-weight:600;font-size:28px;padding:12px 26px;border-radius:999px;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.18);color:#fff}
+.badge{position:absolute;font-weight:700;padding:12px 30px;border-radius:999px;background:#FFA500;color:#000}
+.wip,.man,.ok{font-style:normal;font-weight:700;font-size:18px;border-radius:999px;padding:6px 14px;white-space:nowrap}
+.wip{background:#4a3410;color:#ffb84d}.man{background:#12305a;color:#7cb8ff}em.ok,span.ok{background:#14532d;color:#86efac}
+#logos{position:absolute;right:46px;bottom:56px;display:flex;gap:14px;z-index:80}
+.lp{background:#fff;border-radius:16px;height:62px;padding:0 12px;display:flex;align-items:center;justify-content:center}
+.quote{position:absolute;left:60px;right:60px;background:#fff7e0;color:#111;border-radius:16px;padding:18px 24px;font-size:26px;font-weight:500}
+.quote b{display:block;font-size:18px;color:#7a5a00;margin-bottom:6px}
+.term{position:absolute;background:#0b1220;border:2px solid #22324a;border-radius:16px;overflow:hidden}
+.term .bar{padding:10px 18px;font-size:18px;color:#9fb3c8;background:#111b2c;display:flex;justify-content:space-between}
+.term pre{padding:16px 18px;font-family:'DejaVu Sans Mono',monospace;font-size:18px;color:#d6e2f0}
+.g{color:#86efac}.k{color:#7cb8ff}.m{color:#7d8ea3}.o{color:#FFA500}
+#t2{display:none!important}

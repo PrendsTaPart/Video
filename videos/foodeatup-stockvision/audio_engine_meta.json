@@ -1,0 +1,295 @@
+{
+  "tts_provider": "elevenlabs",
+  "voice_id": "TGAegA0zNRi8I6nUdq3i",
+  "bgm": null,
+  "bgm_pending": false,
+  "bgm_provider": null,
+  "bgm_pid": null,
+  "bgm_log": null,
+  "bgm_mode": null,
+  "bgm_target_duration_s": null,
+  "bgm_seed_duration_s": null,
+  "bgm_loop_count": null,
+  "voices": [
+    {
+      "id": "01",
+      "path": "assets/voice/01.wav",
+      "duration_s": 11.833,
+      "words": []
+    },
+    {
+      "id": "02",
+      "path": "assets/voice/02.wav",
+      "duration_s": 6.452,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Voici",
+          "start": 0.1,
+          "end": 0.34
+        },
+        {
+          "id": "w1",
+          "text": "Stock",
+          "start": 0.34,
+          "end": 0.64
+        },
+        {
+          "id": "w2",
+          "text": "Vision",
+          "start": 0.68,
+          "end": 1.1
+        },
+        {
+          "id": "w3",
+          "text": "AI,",
+          "start": 1.1,
+          "end": 1.38
+        },
+        {
+          "id": "w4",
+          "text": "le",
+          "start": 1.47,
+          "end": 1.55
+        },
+        {
+          "id": "w5",
+          "text": "module",
+          "start": 1.55,
+          "end": 1.96
+        },
+        {
+          "id": "w6",
+          "text": "Food",
+          "start": 2.02,
+          "end": 2.31
+        },
+        {
+          "id": "w7",
+          "text": "It",
+          "start": 2.31,
+          "end": 2.46
+        },
+        {
+          "id": "w8",
+          "text": "Up",
+          "start": 2.46,
+          "end": 2.64
+        },
+        {
+          "id": "w9",
+          "text": "qui",
+          "start": 2.64,
+          "end": 2.78
+        },
+        {
+          "id": "w10",
+          "text": "pilote",
+          "start": 2.84,
+          "end": 3.06
+        },
+        {
+          "id": "w11",
+          "text": "toute",
+          "start": 3.13,
+          "end": 3.36
+        },
+        {
+          "id": "w12",
+          "text": "votre",
+          "start": 3.39,
+          "end": 3.66
+        },
+        {
+          "id": "w13",
+          "text": "chaîne.",
+          "start": 3.66,
+          "end": 4.15
+        },
+        {
+          "id": "w14",
+          "text": "De",
+          "start": 4.3,
+          "end": 4.32
+        },
+        {
+          "id": "w15",
+          "text": "la",
+          "start": 4.32,
+          "end": 4.44
+        },
+        {
+          "id": "w16",
+          "text": "recette",
+          "start": 4.44,
+          "end": 4.84
+        },
+        {
+          "id": "w17",
+          "text": "à",
+          "start": 4.88,
+          "end": 4.92
+        },
+        {
+          "id": "w18",
+          "text": "la",
+          "start": 4.92,
+          "end": 5.04
+        },
+        {
+          "id": "w19",
+          "text": "prédiction",
+          "start": 5.04,
+          "end": 5.58
+        },
+        {
+          "id": "w20",
+          "text": "des",
+          "start": 5.67,
+          "end": 5.82
+        },
+        {
+          "id": "w21",
+          "text": "ventes.",
+          "start": 5.82,
+          "end": 6.2
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "path": "assets/voice/03.wav",
+      "duration_s": 12.069,
+      "words": []
+    },
+    {
+      "id": "04",
+      "path": "assets/voice/04.wav",
+      "duration_s": 9.691,
+      "words": []
+    },
+    {
+      "id": "05",
+      "path": "assets/voice/05.wav",
+      "duration_s": 7.34,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Moins",
+          "start": 0.06,
+          "end": 0.25
+        },
+        {
+          "id": "w1",
+          "text": "de",
+          "start": 0.25,
+          "end": 0.32
+        },
+        {
+          "id": "w2",
+          "text": "gaspillage,",
+          "start": 0.35,
+          "end": 0.93
+        },
+        {
+          "id": "w3",
+          "text": "plus",
+          "start": 1.1,
+          "end": 1.16
+        },
+        {
+          "id": "w4",
+          "text": "jamais",
+          "start": 1.16,
+          "end": 1.45
+        },
+        {
+          "id": "w5",
+          "text": "de",
+          "start": 1.47,
+          "end": 1.57
+        },
+        {
+          "id": "w6",
+          "text": "rupture,",
+          "start": 1.57,
+          "end": 2
+        },
+        {
+          "id": "w7",
+          "text": "des",
+          "start": 2.21,
+          "end": 2.23
+        },
+        {
+          "id": "w8",
+          "text": "marges",
+          "start": 2.23,
+          "end": 2.61
+        },
+        {
+          "id": "w9",
+          "text": "maîtrisées,",
+          "start": 2.61,
+          "end": 3.4
+        },
+        {
+          "id": "w10",
+          "text": "stock",
+          "start": 3.53,
+          "end": 3.82
+        },
+        {
+          "id": "w11",
+          "text": "vision",
+          "start": 3.82,
+          "end": 4.32
+        },
+        {
+          "id": "w12",
+          "text": "AI,",
+          "start": 4.32,
+          "end": 4.56
+        },
+        {
+          "id": "w13",
+          "text": "votre",
+          "start": 4.57,
+          "end": 4.72
+        },
+        {
+          "id": "w14",
+          "text": "stock,",
+          "start": 4.72,
+          "end": 5.41
+        },
+        {
+          "id": "w15",
+          "text": "enfin",
+          "start": 5.44,
+          "end": 5.73
+        },
+        {
+          "id": "w16",
+          "text": "piloté",
+          "start": 5.94,
+          "end": 6.55
+        },
+        {
+          "id": "w17",
+          "text": "par",
+          "start": 6.55,
+          "end": 6.86
+        },
+        {
+          "id": "w18",
+          "text": "LIA.",
+          "start": 6.86,
+          "end": 7.2
+        }
+      ]
+    }
+  ],
+  "sfx": [],
+  "total_duration_s": 47.385
+}

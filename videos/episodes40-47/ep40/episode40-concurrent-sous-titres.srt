@@ -1,0 +1,87 @@
+1
+00:00:00,500 --> 00:00:02,950
+Mon concurrent me pique tous mes clients.
+
+2
+00:00:02,950 --> 00:00:03,650
+Je sais.
+
+3
+00:00:03,650 --> 00:00:05,350
+C'est moi qui l'aide.
+
+4
+00:00:05,350 --> 00:00:06,930
+Tu bosses pour lui ?
+
+5
+00:00:06,930 --> 00:00:08,670
+Ses clients appellent à 22 h.
+
+6
+00:00:08,670 --> 00:00:09,880
+Je décroche.
+
+7
+00:00:09,880 --> 00:00:11,390
+Et ses réservations ?
+
+8
+00:00:11,390 --> 00:00:12,510
+Je les pose sur son plan de
+
+9
+00:00:12,510 --> 00:00:13,070
+salle.
+
+10
+00:00:13,070 --> 00:00:14,880
+Que des vraies tables libres.
+
+11
+00:00:14,880 --> 00:00:16,260
+Et quand c'est complet ?
+
+12
+00:00:16,260 --> 00:00:17,440
+Liste d'attente.
+
+13
+00:00:17,440 --> 00:00:19,400
+Et je rappelle pour confirmer.
+
+14
+00:00:19,400 --> 00:00:19,880
+Et moi,
+
+15
+00:00:19,880 --> 00:00:21,120
+je fais comment ?
+
+16
+00:00:21,120 --> 00:00:21,800
+Ce soir,
+
+17
+00:00:21,800 --> 00:00:22,880
+je bosse pour toi.
+
+18
+00:00:22,880 --> 00:00:23,290
+Et demain,
+
+19
+00:00:23,290 --> 00:00:25,510
+c'est toi qu'on appelle en premier.
+
+20
+00:00:25,510 --> 00:00:26,190
+Commente ÉQUIPE,
+
+21
+00:00:26,190 --> 00:00:28,050
+et je te présente toute l'équipe IA
+
+22
+00:00:28,050 --> 00:00:29,510
+de FoodEatUp.

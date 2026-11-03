@@ -1,0 +1,91 @@
+BRIEF SOURCE — Pilote "D1s", série "Une journée SANS FoodEatUp"
+(brief marketing FoodEatUp, verbatim tel que reçu)
+
+Contexte produit: FoodEatUp vend une promesse : "une journée avec FoodEatUp" —
+un logiciel unique qui couvre toute la journée d'un restaurant (cuisine, salle,
+direction). La série "SANS FoodEatUp" est le miroir : elle montre la réalité
+d'un restaurant équipé de 7 logiciels différents qui ne se parlent pas entre
+eux. Le sujet du film n'est PAS "tel logiciel est mauvais" — c'est "vous en
+avez sept, et ils ne se parlent pas".
+
+Format: 16:9 paysage, 1920x1080. Durée cible: 75 secondes pour le contenu
+narratif, + une carte finale de marque d'environ 5 secondes ajoutée à la
+suite (donc ~80s au total). Il n'existe pas encore de film "avec FoodEatUp"
+jumeau déjà produit pour cette phase — seule la durée cible de 75s (celle du
+futur jumeau "avec", déjà fixée dans le code du site pour "Directeur, avant le
+service") compte pour l'instant.
+
+Voix: directeur/gérant de restaurant, première personne, tôt le matin avant le
+service. Ton: sec, résigné, ironique-de-constat (jamais moqueur envers un
+concurrent nommé — le sujet est le nombre d'outils, pas leur qualité). Phrases
+courtes. Quelques pauses pour respirer.
+
+Registre de référence (à ne pas copier mot pour mot, juste le ton) — extrait
+d'un film-sœur de la même série:
+"Sept heures. La cuisine est vide. [pause] Le classeur, lui, est plein. [...]
+La facture, je la mets dans la pile. [pause] Le comptable la verra dans six
+semaines. D'ici là, je ne sais pas ce que me coûte mon kilo de beurre."
+
+Contenu à couvrir, dans cet ordre, adapté en texte fluide et parlé:
+1. Ouverture — sept onglets ouverts, sept identifiants de connexion, sept
+   factures d'abonnement à payer chaque mois.
+2. Mon logiciel de stock ne sait pas ce que ma caisse a vendu. Alors je fais
+   le pont à la main, tous les lundis (illustré par le plan TabChaos : recopier
+   un chiffre d'un onglet à l'autre).
+3. La commande fournisseur, je la passe au flair, par SMS, à 7h du matin — pas
+   de prévision, pas de données croisées.
+4. Le refrain de la série, à placer autour de 0:56, quasiment mot pour mot :
+   "Je paie sept abonnements. Mon équipe en utilise deux."
+5. Clôture avant la carte de marque : une phrase qui referme le film sur
+   l'absurdité du système — dans l'esprit de "je ne saurai le vrai chiffre de
+   mon mois que des semaines plus tard, faute de données reliées".
+
+Contrainte juridique absolue (droit français — dénigrement / publicité
+comparative illégale si un concurrent est reconnaissable même sans être
+nommé) : aucun concurrent identifiable, explicitement ou implicitement.
+Interdit sans exception : tout logo/marque/nom de produit tiers (écran ou
+oral), toute capture ou reconstitution ressemblant à un vrai logiciel du
+marché, toute palette ou typographie reconnaissable d'un éditeur existant,
+tout chiffre de prix attribué à un acteur identifiable. Les écrans "sans" sont
+des maquettes neutres inventées : gris #8A9099, typographie
+système/générique, aucune identité visuelle réelle — ressemblant à "un
+logiciel quelconque", jamais à un logiciel précis. Outils désignés
+génériquement à l'oral : "mon logiciel de stock", "ma caisse", "un tableur",
+"un carnet" — jamais une marque.
+
+Palette "sans" (tout le film SAUF la carte finale) : gris #8A9099 (trait/texte
+secondaire — pas pour du texte de lecture courante, contraste AA insuffisant
+sur fond clair : réservé aux traits/décorations), anthracite #3A3F45 (texte
+principal, lisible), blanc froid #EDEEF0 (fond), rouge d'alerte #D64545 (accent
+unique — croix, alertes, compteur de pertes). Aucune couleur FoodEatUp (bleu
+#007BFF, orange #FFA500, crème #FCF9E6) nulle part sauf sur la carte finale.
+
+Grammaire visuelle imposée:
+1. Ligne/colonne brisée — progression fragmentée, segments décalés,
+   discontinus, qui ne se rejoignent jamais. Signature visuelle de toute la
+   série "sans" (l'inverse d'une timeline fluide).
+2. TabChaos — LE plan clé de ce film. Sept onglets de navigateur ouverts
+   (génériques, non identifiables), un curseur qui passe de l'un à l'autre en
+   recopiant un chiffre à la main d'un onglet vers un tableur. Rythme: ~1,2s
+   par aller-retour, au moins 3 allers-retours.
+3. Croix rouges / cases vides / points d'interrogation (au lieu de coches
+   vertes) pour marquer les frictions.
+4. Un compteur de pertes (jamais de gains) qui monte en cours de film: nombre
+   d'abonnements/outils (7), nombre de saisies en double, minutes perdues. Un
+   coût en euros, si affiché, toujours en fourchette ("350 à 900 € / mois"),
+   jamais un chiffre unique.
+
+Carte finale (~5 dernières secondes, seul moment où la charte FoodEatUp
+réapparaît): fond marine #1B2A41, texte blanc: "Avec FoodEatUp, une seule
+application." puis, un instant après: "Et si c'est encore trop, vous parlez à
+Jarvis." Pas de logo réel disponible sauf via assets/brand/ (vérifier
+d'abord) — sinon reconstitution textuelle sobre du nom "FoodEatUp" en
+typographie propre plutôt qu'un logo image.
+
+Voix off: générée hors du moteur TTS intégré du skill, via l'outil MCP
+ElevenLabs (text_to_speech), français, eleven_multilingual_v2, voix
+masculine neutre adulte ("gérant fatigué", pas pub énergique).
+
+BGM/SFX: optionnel pour ce pilote si HeyGen n'est pas authentifié — un fond
+de "notifications qui se chevauchent, désynchronisées" serait idéal mais pas
+bloquant.

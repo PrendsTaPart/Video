@@ -1,0 +1,46 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter ExtraBold,54,&H00FFFFFF,&H00FFFFFF,&H00231A0F,&H96231A0F,0,0,0,0,100,100,0,0,3,16,0,8,90,90,1600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.60,0:00:02.20,Sub,,0,0,0,,{\fad(80,60)}Vous avez vu mes trois dernières vidéos ?
+Dialogue: 0,0:00:02.20,0:00:04.64,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, je vous montre comment elles ont été réalisées,
+Dialogue: 0,0:00:04.64,0:00:05.91,Sub,,0,0,0,,{\fad(80,60)}avec mes outils IA.
+Dialogue: 0,0:00:12.67,0:00:14.94,Sub,,0,0,0,,{\fad(80,60)}Tout commence par une idée, des captures d'écran,
+Dialogue: 0,0:00:14.94,0:00:16.81,Sub,,0,0,0,,{\fad(80,60)}des démonstrations, et un prompt.
+Dialogue: 0,0:00:16.81,0:00:19.32,Sub,,0,0,0,,{\fad(80,60)}Claude lit mes dépôts, mes sites et mes fichiers,
+Dialogue: 0,0:00:19.32,0:00:20.89,Sub,,0,0,0,,{\fad(80,60)}vérifie ce qui existe vraiment,
+Dialogue: 0,0:00:20.89,0:00:22.19,Sub,,0,0,0,,{\fad(80,60)}puis propose le scénario.
+Dialogue: 0,0:00:25.60,0:00:27.47,Sub,,0,0,0,,{\fad(80,60)}Mon plugin Vidéo, rapido-video,
+Dialogue: 0,0:00:27.47,0:00:29.07,Sub,,0,0,0,,{\fad(80,60)}apporte les recettes de montage :
+Dialogue: 0,0:00:29.07,0:00:31.69,Sub,,0,0,0,,{\fad(80,60)}couper, assembler, mixer la voix et la musique,
+Dialogue: 0,0:00:31.69,0:00:34.33,Sub,,0,0,0,,{\fad(80,60)}sous-titrer avec Whisper, exporter au bon format.
+Dialogue: 0,0:00:34.33,0:00:36.11,Sub,,0,0,0,,{\fad(80,60)}Pour ces épisodes, Claude a aussi écrit
+Dialogue: 0,0:00:36.11,0:00:39.14,Sub,,0,0,0,,{\fad(80,60)}des scènes animées en HTML, rendues image par image.
+Dialogue: 0,0:00:42.40,0:00:44.78,Sub,,0,0,0,,{\fad(80,60)}Au lieu d'assembler à la main, je décris le résultat.
+Dialogue: 0,0:00:44.78,0:00:47.52,Sub,,0,0,0,,{\fad(80,60)}Claude enchaîne : la voix off générée avec ElevenLabs,
+Dialogue: 0,0:00:47.52,0:00:49.10,Sub,,0,0,0,,{\fad(80,60)}les mots calés à la seconde près,
+Dialogue: 0,0:00:49.10,0:00:50.66,Sub,,0,0,0,,{\fad(80,60)}la musique qui baisse sous la voix,
+Dialogue: 0,0:00:50.66,0:00:51.96,Sub,,0,0,0,,{\fad(80,60)}les sous-titres incrustés,
+Dialogue: 0,0:00:51.96,0:00:53.60,Sub,,0,0,0,,{\fad(80,60)}puis les versions longues et courtes.
+Dialogue: 0,0:00:56.80,0:00:58.73,Sub,,0,0,0,,{\fad(80,60)}Ensuite, RapidoCMS prend le relais :
+Dialogue: 0,0:00:58.73,0:01:00.35,Sub,,0,0,0,,{\fad(80,60)}la vidéo part dans la bibliothèque,
+Dialogue: 0,0:01:00.35,0:01:02.09,Sub,,0,0,0,,{\fad(80,60)}un brouillon est créé pour le réseau choisi,
+Dialogue: 0,0:01:02.09,0:01:04.36,Sub,,0,0,0,,{\fad(80,60)}et la publication est programmée dans le calendrier.
+Dialogue: 0,0:01:07.66,0:01:08.60,Sub,,0,0,0,,{\fad(80,60)}Ce qui reste humain :
+Dialogue: 0,0:01:08.60,0:01:10.34,Sub,,0,0,0,,{\fad(80,60)}valider le scénario, les chiffres,
+Dialogue: 0,0:01:10.34,0:01:11.44,Sub,,0,0,0,,{\fad(80,60)}l'accord des personnes citées,
+Dialogue: 0,0:01:11.44,0:01:12.94,Sub,,0,0,0,,{\fad(80,60)}et le feu vert de publication.
+Dialogue: 0,0:01:15.61,0:01:17.95,Sub,,0,0,0,,{\fad(80,60)}Une idée devient un scénario, puis une vidéo,
+Dialogue: 0,0:01:17.95,0:01:19.63,Sub,,0,0,0,,{\fad(80,60)}puis un contenu prêt à être diffusé.
+Dialogue: 0,0:01:19.63,0:01:21.39,Sub,,0,0,0,,{\fad(80,60)}Mon objectif, ce n'est pas seulement
+Dialogue: 0,0:01:21.39,0:01:22.97,Sub,,0,0,0,,{\fad(80,60)}de créer des vidéos plus vite.
+Dialogue: 0,0:01:22.97,0:01:25.53,Sub,,0,0,0,,{\fad(80,60)}C'est de construire une chaîne de production réutilisable,
+Dialogue: 0,0:01:25.53,0:01:27.44,Sub,,0,0,0,,{\fad(80,60)}de l'idée jusqu'à la publication.

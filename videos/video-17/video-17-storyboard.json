@@ -1,0 +1,80 @@
+{
+  "video": 17,
+  "duree_s": 51,
+  "format": "1080x1920",
+  "voix": "ElevenLabs Noé, eleven_v4",
+  "sequences": [
+    {
+      "t": [
+        0,
+        4.8
+      ],
+      "sequence": "Accroche",
+      "visuel": "Des likes partout, Michael au téléphone : « Et les clients ? »"
+    },
+    {
+      "t": [
+        4.8,
+        9.9
+      ],
+      "sequence": "Le problème",
+      "visuel": "« Mais si personne ne devient client, à quoi ça sert ? »"
+    },
+    {
+      "t": [
+        9.9,
+        14.5
+      ],
+      "sequence": "Les MCP",
+      "visuel": "RapidoCMS (contenu) ↔ Claude (orchestrateur) ↔ RapidoCRM (suivi commercial)"
+    },
+    {
+      "t": [
+        14.5,
+        19.0
+      ],
+      "sequence": "RapidoCMS · TOFU",
+      "visuel": "Calendrier, génération IA, publication ; carrousel de démonstration « 3 erreurs qui provoquent des ruptures de stock » (non enregistré) ; 85 posts programmés"
+    },
+    {
+      "t": [
+        19.0,
+        25.7
+      ],
+      "sequence": "Passage RapidoCMS → RapidoCRM",
+      "visuel": "Like barré (aucun contact) → post avec un seul CTA → formulaire réel « Demande de démo » → consentement → contact créé avec sa source"
+    },
+    {
+      "t": [
+        25.7,
+        28.7
+      ],
+      "sequence": "RapidoCRM · BOFU",
+      "visuel": "Fil d'activité ; brouillon de qualification et relance J+3 à valider (simulation)"
+    },
+    {
+      "t": [
+        28.7,
+        35.7
+      ],
+      "sequence": "Mesure et boucle",
+      "visuel": "Entonnoir 55/30/10/5 avec son indicateur ; boucle Attirer → Engager → Convertir → Fidéliser → Mesurer → Améliorer"
+    },
+    {
+      "t": [
+        35.7,
+        44.2
+      ],
+      "sequence": "Punchline",
+      "visuel": "Avant / maintenant ; tableau disponible / configuré / envisagé"
+    },
+    {
+      "t": [
+        44.2,
+        51
+      ],
+      "sequence": "CTA",
+      "visuel": "TU VEUX MON TUNNEL ? COMMENTE « TUNNEL » · logos Claude, RapidoCMS, RapidoCRM"
+    }
+  ]
+}

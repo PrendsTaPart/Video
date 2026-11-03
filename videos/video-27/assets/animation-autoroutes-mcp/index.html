@@ -1,0 +1,88 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Vidéo 27 : des routes aux autoroutes MCP</title>
+<link rel="stylesheet" href="base.css">
+<style>
+:root{--bl:#03A9F5;--gr:#4CAF50;--vi:#7E57C2;--hw:#FFB300}
+#stage{background:radial-gradient(1000px 900px at 50% 32%,#16263a 0%,#0a121c 66%)}
+.chip{color:var(--hw)}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.lg{position:absolute;background:#fff;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.lg img{max-width:84%;max-height:78%}
+.bd{position:absolute;width:250px;height:120px;border-radius:18px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 18px 40px rgba(0,0,0,.6);font-weight:700;color:#383838;font-size:30px}
+.bd img{max-width:82%;max-height:70%}
+.n8n{font-weight:800;letter-spacing:1px;color:#EA4B71}
+.tg{position:absolute;padding:10px 20px;border-radius:999px;background:#2a1b22;color:#ffc2d1;border:2px solid #EA4B71;font-weight:700;font-size:26px}
+#map{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.row{position:absolute;left:60px;width:960px;display:flex;gap:18px;align-items:center;background:#121f2e;border:2px solid #24405c;border-radius:20px;padding:14px 20px}
+.row .lw{flex:none;width:200px;height:84px;background:#fff;border-radius:16px;display:flex;align-items:center;justify-content:center}
+.row .lw img{max-width:84%;max-height:76%}
+.row b{font-size:26px;display:block}.row code{font-family:'DejaVu Sans Mono',monospace;font-size:20px;color:#9fd8ff}
+.st{position:absolute;left:170px;width:740px;height:84px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;background:#121f2e;border:2px solid #24405c}
+.st.m{border-color:var(--hw);color:#ffe08a}.st.a{background:linear-gradient(90deg,#0b4f7a,#3b2a6b);border:0}
+.lv{position:absolute;left:60px;width:960px;border-radius:24px;padding:20px 26px;text-align:center}
+.lv b{display:block;font-size:34px}.lv span{font-size:22px;color:#cfe3f1}
+.demo{position:absolute;background:#4a3410;color:var(--orange);border-radius:999px;padding:8px 20px;font-weight:700;font-size:21px}
+#logos .lp{background:#fff}
+</style></head><body>
+<div id="stage">
+  <svg id="map" viewBox="0 0 1080 1920"><g id="roads"></g><g id="hw"></g></svg>
+  <div id="city"></div>
+  <div class="scene" id="s0"><img class="pose" id="s0m" src="a/po/bras-ouverts.webp" style="left:290px;top:800px;width:520px">
+    <div class="big" id="s0a" style="top:200px;font-size:90px;line-height:1.05">DES ROUTES<br>AUX <span style="color:var(--hw)">AUTOROUTES</span></div></div>
+  <div class="scene" id="s1"><div class="big" id="s1a" style="top:150px;font-size:54px">Mes <span class="n8n">n8n</span> workflows</div><div id="s1t"></div>
+    <div class="big" id="s1b" style="top:1430px;font-size:56px">= des <span style="color:#EA4B71">routes départementales</span></div></div>
+  <div class="scene" id="s2"><div class="big" id="s2a" style="top:150px;font-size:54px">Plus de logiciels,<br><span style="color:#EA4B71">plus de connexions</span></div>
+    <div class="big" id="s2b" style="top:1430px;font-size:54px">+ mes agents IA → <span style="color:var(--hw)">changer d'approche</span></div></div>
+  <div class="scene" id="s3"><div class="big" id="s3a" style="top:150px;font-size:58px">Les <span style="color:var(--hw)">autoroutes</span></div>
+    <div class="big" id="s3b" style="top:1430px;font-size:80px;color:var(--hw)">SERVEURS MCP</div></div>
+  <div class="scene" id="s4"><div class="chip">Outils réels des serveurs MCP connectés</div>
+    <div class="row" id="r0" style="top:200px"><div class="lw"><img src="a/lg/rapidocrm.png"></div><div><b>Clients</b><code>search_entreprises · create_devis</code></div></div>
+    <div class="row" id="r1" style="top:340px"><div class="lw"><img src="a/lg/rapidocms.png"></div><div><b>Publications</b><code>create_draft_tool · schedule_draft_tool</code></div></div>
+    <div class="row" id="r2" style="top:480px"><div class="lw"><img src="a/lg/foodeatup.png"></div><div><b>Restaurants</b><code>list_stocks · list_haccp_temperatures</code></div></div>
+    <div class="row" id="r3" style="top:620px"><div class="lw"><img src="a/lg/rapidorh.png"></div><div><b>Équipes et tâches</b><code>get-project-tasks-tool · move-task-tool</code></div></div>
+    <div class="real" id="r4" style="left:70px;top:780px;color:#9fc3dc">noms lus dans les catalogues MCP de cette session · accès selon autorisation</div></div>
+  <div class="scene" id="s5"><div class="big" id="n0" style="top:260px;font-size:120px"><span class="n8n">n8n</span></div>
+    <div class="big" id="n1" style="top:430px;font-size:50px">reste essentiel</div>
+    <div class="tg" id="n2" style="left:140px;top:600px">Déclencher mes routines</div>
+    <div class="tg" id="n3" style="left:300px;top:700px">Coordonner les opérations</div>
+    <div class="tg" id="n4" style="left:180px;top:800px">Faire travailler mes agents ensemble</div>
+    <img class="pose" id="n5" src="a/po/ok.webp" style="left:300px;top:960px;width:480px"></div>
+  <div class="scene" id="s6"><div class="chip">RapidoRH — Dispatcher Agents IA</div><div id="s6f"></div>
+    <div class="demo" id="d9" style="left:60px;top:1130px">D'après la fiche du workflow · n8n non revérifié ici · aucune tâche déclenchée</div></div>
+  <div class="scene" id="s7"><div class="big" id="i0" style="top:420px;font-size:56px;color:#9fc3dc"><s>seulement automatiser</s></div>
+    <div class="big" id="i1" style="top:580px;font-size:70px;line-height:1.1">rendre mes logiciels<br><span style="color:var(--hw)">utilisables par mes agents IA</span></div>
+    <img class="pose" id="i2" src="a/po/index-leve.webp" style="left:300px;top:930px;width:480px"></div>
+  <div class="scene" id="s8"><div class="chip">L'architecture</div>
+    <div class="lv" id="l0" style="top:240px;background:linear-gradient(90deg,#0b4f7a,#3b2a6b)"><b>Agents et orchestrateurs</b><span>Claude · ChatGPT · <span class="n8n">n8n</span></span></div>
+    <div class="lv" id="l1" style="top:470px;background:#2b2210;border:3px solid var(--hw)"><b style="color:#ffe08a">Serveurs MCP</b><span>interface standardisée vers les capacités autorisées</span></div>
+    <div class="lv" id="l2" style="top:700px;background:#121f2e;border:2px solid #24405c"><b>Mes logiciels</b><span>bases, API, règles métier, interfaces</span></div>
+    <div class="real" id="l3" style="left:70px;top:900px;color:#9fc3dc">complémentaire : rien n'est remplacé, n8n reste en place</div></div>
+  <div class="scene" id="s9"><div class="big" id="p0" style="top:380px;font-size:60px"><span class="n8n">n8n</span> organise le trafic.</div>
+    <div class="big" id="p1" style="top:540px;font-size:60px">Les <span style="color:var(--hw)">MCP</span> ouvrent les autoroutes.</div>
+    <div class="big" id="p2" style="top:700px;font-size:60px;line-height:1.1">Mes agents IA<br>prennent le volant.</div>
+    <div class="real" id="p3" style="left:0;right:0;top:900px;text-align:center;color:#9fc3dc">… avec mes validations</div>
+    <img class="pose" id="p4" src="a/po/deux-pouces.webp" style="left:300px;top:1000px;width:480px"></div>
+  <div class="scene" id="s10"><div class="ring" id="s10p" style="left:390px;top:440px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="quote" id="s10q" style="top:880px;font-size:40px;text-align:center"><b>ET TOI ?</b>Tu utilises déjà les MCP avec n8n ?</div>
+    <div class="abs" id="s10l" style="left:0;right:0;top:1120px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;padding:0 60px"><div class="lg" style="position:static;width:220px;height:110px"><img src="a/lg/foodeatup.png"></div><div class="lg" style="position:static;width:220px;height:110px"><img src="a/lg/rapidocrm.png"></div><div class="lg" style="position:static;width:220px;height:110px"><img src="a/lg/rapidocms.png"></div><div class="lg" style="position:static;width:220px;height:110px"><img src="a/lg/rapidorh.png"></div></div></div>
+  <div class="scene" id="thumb">
+    <div class="big" style="top:80px;font-size:104px;line-height:1">POURQUOI<br>J'AI PIVOTÉ<br>VERS LES <span style="color:var(--hw)">MCP !</span></div>
+    <div class="tg" style="left:40px;top:470px;font-size:34px">AVANT</div><div class="tg" style="left:760px;top:470px;font-size:34px;background:#2b2210;color:#ffe08a;border-color:var(--hw)">MAINTENANT</div>
+    <svg style="position:absolute;left:0;top:540px" width="1080" height="1000"><g stroke="#EA4B71" stroke-width="4" fill="none" opacity=".85">
+      <path d="M20 80 C120 200 40 320 200 360"/><path d="M60 40 C200 160 20 260 260 300"/><path d="M10 200 C180 260 90 420 240 520"/><path d="M80 120 C240 220 60 480 280 620"/><path d="M30 300 C200 330 100 560 300 760"/><path d="M120 60 C60 300 260 400 180 700"/><path d="M0 500 C200 520 80 700 320 860"/><path d="M200 120 C300 300 100 500 260 900"/></g>
+      <rect x="760" y="0" width="110" height="1000" fill="#2b2210"/><rect x="760" y="0" width="110" height="1000" fill="url(#g1)"/>
+      <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#FFB300" stop-opacity=".2"/><stop offset=".5" stop-color="#FFB300" stop-opacity=".9"/><stop offset="1" stop-color="#FFB300" stop-opacity=".2"/></linearGradient></defs>
+      <g stroke="#fff" stroke-width="6" stroke-dasharray="30 30"><line x1="815" y1="0" x2="815" y2="1000"/></g></svg>
+    <img class="pose" src="a/po/presente.webp" style="left:200px;top:760px;width:640px">
+    <div class="bd" style="left:880px;top:700px;width:180px;height:90px"><img src="a/lg/rapidocrm.png"></div>
+    <div class="bd" style="left:880px;top:830px;width:180px;height:90px"><img src="a/lg/foodeatup.png"></div>
+    <div class="bd" style="left:880px;top:960px;width:180px;height:90px"><img src="a/lg/rapidorh.png"></div>
+    <div class="bd" style="left:880px;top:1090px;width:180px;height:90px"><img src="a/lg/rapidocms.png"></div>
+    <div style="position:absolute;left:0;right:0;top:1380px;height:140px;background:linear-gradient(transparent,#0a121c)"></div>
+    <div class="badge" style="left:110px;right:110px;top:1560px;text-align:center;font-size:42px">Routes n8n → Autoroutes MCP</div>
+  </div>
+  <div id="logos"><div class="lp"><img src="a/lg/braindcode.png" style="height:30px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>

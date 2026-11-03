@@ -1,0 +1,295 @@
+1
+00:00:00,350 --> 00:00:01,030
+Aujourd'hui
+
+2
+00:00:01,030 --> 00:00:01,650
+je ne vais pas vous
+
+3
+00:00:01,650 --> 00:00:02,790
+parler d'un logiciel que j'ai
+
+4
+00:00:02,790 --> 00:00:03,550
+développé.
+
+5
+00:00:03,550 --> 00:00:04,290
+Je veux mettre en avant
+
+6
+00:00:04,290 --> 00:00:06,290
+quelqu'un de mon équipe Sadok.
+
+7
+00:00:06,290 --> 00:00:07,210
+Et franchement
+
+8
+00:00:07,210 --> 00:00:08,070
+je suis fier de son
+
+9
+00:00:08,070 --> 00:00:08,760
+travail.
+
+10
+00:00:12,960 --> 00:00:13,960
+Sadok nous a rejoints chez
+
+11
+00:00:13,960 --> 00:00:15,180
+BraindCode pour son stage de
+
+12
+00:00:15,180 --> 00:00:16,420
+fin d'études à ESPRIT.
+
+13
+00:00:16,420 --> 00:00:17,380
+Tout son stage s'est fait
+
+14
+00:00:17,380 --> 00:00:18,240
+à distance.
+
+15
+00:00:18,240 --> 00:00:20,660
+Sa mission faire évoluer RapidoCRM
+
+16
+00:00:20,660 --> 00:00:21,900
+notre logiciel de gestion des
+
+17
+00:00:21,900 --> 00:00:22,440
+clients
+
+18
+00:00:22,440 --> 00:00:23,520
+et y mettre de l'intelligence
+
+19
+00:00:23,520 --> 00:00:24,570
+artificielle.
+
+20
+00:00:28,770 --> 00:00:29,350
+Le défi
+
+21
+00:00:29,350 --> 00:00:30,410
+ce n'était pas d'ajouter un
+
+22
+00:00:30,410 --> 00:00:31,410
+simple chatbot.
+
+23
+00:00:31,410 --> 00:00:32,810
+Il fallait qu'une IA comprenne
+
+24
+00:00:32,810 --> 00:00:33,670
+ce qu'on lui demande
+
+25
+00:00:33,670 --> 00:00:34,710
+qu'elle puisse agir dans le
+
+26
+00:00:34,710 --> 00:00:35,490
+logiciel…
+
+27
+00:00:35,490 --> 00:00:36,830
+sans jamais voir les données
+
+28
+00:00:36,830 --> 00:00:38,100
+d'une autre entreprise.
+
+29
+00:00:42,300 --> 00:00:43,520
+Alors il a construit une
+
+30
+00:00:43,520 --> 00:00:44,320
+porte d'entrée
+
+31
+00:00:44,320 --> 00:00:45,900
+qu'on appelle un MCP.
+
+32
+00:00:45,900 --> 00:00:46,720
+Grâce à elle
+
+33
+00:00:46,720 --> 00:00:48,060
+Claude peut ouvrir une fiche
+
+34
+00:00:48,060 --> 00:00:49,400
+retrouver un contact ou suivre
+
+35
+00:00:49,400 --> 00:00:49,920
+une affaire
+
+36
+00:00:49,920 --> 00:00:51,590
+simplement quand on lui parle.
+
+37
+00:00:55,790 --> 00:00:56,390
+Et il ne s'est pas
+
+38
+00:00:56,390 --> 00:00:57,090
+arrêté là.
+
+39
+00:00:57,090 --> 00:00:58,610
+Un assistant directement dans le
+
+40
+00:00:58,610 --> 00:00:59,370
+logiciel.
+
+41
+00:00:59,370 --> 00:01:00,810
+Une bibliothèque de prompts prêts
+
+42
+00:01:00,810 --> 00:01:01,590
+à l'emploi.
+
+43
+00:01:01,590 --> 00:01:02,750
+Des automatisations.
+
+44
+00:01:02,750 --> 00:01:03,850
+Et même un agent vocal
+
+45
+00:01:03,850 --> 00:01:05,270
+qui appelle les prospects et
+
+46
+00:01:05,270 --> 00:01:06,400
+répond au téléphone.
+
+47
+00:01:10,600 --> 00:01:11,160
+Ce qui me rend le
+
+48
+00:01:11,160 --> 00:01:11,940
+plus fier
+
+49
+00:01:11,940 --> 00:01:12,700
+ce n'est pas seulement le
+
+50
+00:01:12,700 --> 00:01:13,360
+résultat.
+
+51
+00:01:13,360 --> 00:01:14,860
+C'est de l'avoir vu progresser
+
+52
+00:01:14,860 --> 00:01:16,540
+apprendre à travailler avec l'IA
+
+53
+00:01:16,540 --> 00:01:17,440
+résoudre des problèmes
+
+54
+00:01:17,440 --> 00:01:18,920
+et prendre confiance sur un
+
+55
+00:01:18,920 --> 00:01:20,430
+projet aussi ambitieux.
+
+56
+00:01:24,630 --> 00:01:26,010
+Et derrière ce projet
+
+57
+00:01:26,010 --> 00:01:26,710
+il y a toute une
+
+58
+00:01:26,710 --> 00:01:27,070
+équipe
+
+59
+00:01:27,070 --> 00:01:28,010
+qui teste
+
+60
+00:01:28,010 --> 00:01:29,370
+qui corrige et qui s'entraide
+
+61
+00:01:29,370 --> 00:01:31,080
+pour faire avancer nos logiciels.
+
+62
+00:01:35,280 --> 00:01:36,100
+Alors Sadok
+
+63
+00:01:36,100 --> 00:01:37,400
+bravo pour ton travail et
+
+64
+00:01:37,400 --> 00:01:38,420
+pour ton évolution.
+
+65
+00:01:38,420 --> 00:01:39,600
+Continue à apprendre
+
+66
+00:01:39,600 --> 00:01:41,220
+à expérimenter et à repousser
+
+67
+00:01:41,220 --> 00:01:41,900
+tes limites.
+
+68
+00:01:41,900 --> 00:01:42,940
+Toute l'équipe est fière de
+
+69
+00:01:42,940 --> 00:01:43,470
+toi
+
+70
+00:01:47,670 --> 00:01:48,870
+Une entreprise ne grandit pas
+
+71
+00:01:48,870 --> 00:01:50,470
+seulement grâce à ses logiciels.
+
+72
+00:01:50,470 --> 00:01:51,730
+Elle grandit grâce aux personnes
+
+73
+00:01:51,730 --> 00:01:52,770
+qui les construisent
+
+74
+00:01:52,770 --> 00:01:53,660
+chaque jour.

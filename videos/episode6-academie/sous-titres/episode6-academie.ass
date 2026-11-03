@@ -1,0 +1,57 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Poppins SemiBold,50,&H00E6F9FC,&H00E6F9FC,&H00231A0F,&H00231A0F,0,0,0,0,100,100,0,0,3,16,0,2,90,90,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:02.50,0:00:05.14,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, tout le monde parle d'employés IA.
+Dialogue: 0,0:00:05.14,0:00:07.74,Sub,,0,0,0,,{\fad(80,60)}Mais il y a une question que presque personne ne pose :
+Dialogue: 0,0:00:07.74,0:00:09.40,Sub,,0,0,0,,{\fad(80,60)}comment est-ce qu'on les forme à leur métier ?
+Dialogue: 0,0:00:11.07,0:00:13.40,Sub,,0,0,0,,{\fad(80,60)}Dans mes entreprises, j'ai développé beaucoup de logiciels
+Dialogue: 0,0:00:13.40,0:00:14.71,Sub,,0,0,0,,{\fad(80,60)}et de connexions MCP.
+Dialogue: 0,0:00:14.71,0:00:16.75,Sub,,0,0,0,,{\fad(80,60)}Mais donner des outils à une intelligence artificielle
+Dialogue: 0,0:00:16.75,0:00:17.61,Sub,,0,0,0,,{\fad(80,60)}ne suffit pas.
+Dialogue: 0,0:00:17.61,0:00:19.35,Sub,,0,0,0,,{\fad(80,60)}Elle doit aussi comprendre nos méthodes,
+Dialogue: 0,0:00:19.35,0:00:20.91,Sub,,0,0,0,,{\fad(80,60)}nos règles et nos objectifs.
+Dialogue: 0,0:00:22.50,0:00:24.51,Sub,,0,0,0,,{\fad(80,60)}J'ai donc développé FoodEatUp Academy.
+Dialogue: 0,0:00:24.51,0:00:26.80,Sub,,0,0,0,,{\fad(80,60)}Une plateforme de formation avec des parcours,
+Dialogue: 0,0:00:26.80,0:00:28.85,Sub,,0,0,0,,{\fad(80,60)}des missions, des quiz, des exercices
+Dialogue: 0,0:00:28.85,0:00:30.39,Sub,,0,0,0,,{\fad(80,60)}et un suivi des compétences.
+Dialogue: 0,0:00:32.00,0:00:34.20,Sub,,0,0,0,,{\fad(80,60)}Et j'ai connecté cette Académie directement à Claude,
+Dialogue: 0,0:00:34.20,0:00:35.64,Sub,,0,0,0,,{\fad(80,60)}grâce à son propre MCP.
+Dialogue: 0,0:00:35.64,0:00:37.54,Sub,,0,0,0,,{\fad(80,60)}Claude peut consulter les formations,
+Dialogue: 0,0:00:37.54,0:00:38.70,Sub,,0,0,0,,{\fad(80,60)}récupérer les procédures,
+Dialogue: 0,0:00:38.70,0:00:41.05,Sub,,0,0,0,,{\fad(80,60)}et utiliser les connaissances adaptées à ses missions.
+Dialogue: 0,0:00:42.63,0:00:44.09,Sub,,0,0,0,,{\fad(80,60)}J'ai aussi ajouté une mémoire.
+Dialogue: 0,0:00:44.09,0:00:46.53,Sub,,0,0,0,,{\fad(80,60)}Claude peut retrouver les préférences, les objectifs,
+Dialogue: 0,0:00:46.53,0:00:48.71,Sub,,0,0,0,,{\fad(80,60)}les corrections et les méthodes qui ont fonctionné.
+Dialogue: 0,0:00:48.71,0:00:51.15,Sub,,0,0,0,,{\fad(80,60)}Ces notes sont réinjectées dans son contexte de travail :
+Dialogue: 0,0:00:51.15,0:00:52.61,Sub,,0,0,0,,{\fad(80,60)}le modèle n'est pas réentraîné.
+Dialogue: 0,0:00:52.61,0:00:54.33,Sub,,0,0,0,,{\fad(80,60)}Et certaines connaissances peuvent être validées
+Dialogue: 0,0:00:54.33,0:00:55.15,Sub,,0,0,0,,{\fad(80,60)}par le responsable,
+Dialogue: 0,0:00:55.15,0:00:56.98,Sub,,0,0,0,,{\fad(80,60)}pour être partagées avec toute l'équipe.
+Dialogue: 0,0:00:58.40,0:01:00.74,Sub,,0,0,0,,{\fad(80,60)}Ensuite, je peux préparer des agents spécialisés :
+Dialogue: 0,0:01:00.74,0:01:02.78,Sub,,0,0,0,,{\fad(80,60)}commercial, marketing, gestion,
+Dialogue: 0,0:01:02.78,0:01:04.22,Sub,,0,0,0,,{\fad(80,60)}formation ou pilotage.
+Dialogue: 0,0:01:04.22,0:01:05.62,Sub,,0,0,0,,{\fad(80,60)}Chaque agent possède un rôle,
+Dialogue: 0,0:01:05.62,0:01:07.63,Sub,,0,0,0,,{\fad(80,60)}des outils autorisés et des objectifs à atteindre.
+Dialogue: 0,0:01:08.60,0:01:10.40,Sub,,0,0,0,,{\fad(80,60)}Et c'est là que ça devient intéressant.
+Dialogue: 0,0:01:10.40,0:01:12.98,Sub,,0,0,0,,{\fad(80,60)}Je peux définir des routines, leur donner un objectif,
+Dialogue: 0,0:01:12.98,0:01:14.06,Sub,,0,0,0,,{\fad(80,60)}mesurer les résultats,
+Dialogue: 0,0:01:14.06,0:01:16.38,Sub,,0,0,0,,{\fad(80,60)}et décider si la méthode doit être conservée,
+Dialogue: 0,0:01:16.38,0:01:17.74,Sub,,0,0,0,,{\fad(80,60)}améliorée ou arrêtée.
+Dialogue: 0,0:01:17.74,0:01:18.74,Sub,,0,0,0,,{\fad(80,60)}Pour qu'elles tournent seules,
+Dialogue: 0,0:01:18.74,0:01:21.12,Sub,,0,0,0,,{\fad(80,60)}il faut un orchestrateur réellement configuré.
+Dialogue: 0,0:01:37.60,0:01:39.09,Sub,,0,0,0,,{\fad(80,60)}Mon objectif, ce n'est pas simplement
+Dialogue: 0,0:01:39.09,0:01:41.53,Sub,,0,0,0,,{\fad(80,60)}d'avoir des agents IA qui répondent à des questions.
+Dialogue: 0,0:01:41.53,0:01:43.83,Sub,,0,0,0,,{\fad(80,60)}C'est de construire une équipe qui connaît nos métiers,
+Dialogue: 0,0:01:43.83,0:01:45.91,Sub,,0,0,0,,{\fad(80,60)}utilise nos outils, suit nos objectifs,
+Dialogue: 0,0:01:45.91,0:01:48.03,Sub,,0,0,0,,{\fad(80,60)}et améliore progressivement ses méthodes.
+Dialogue: 0,0:01:48.03,0:01:49.25,Sub,,0,0,0,,{\fad(80,60)}Et demain, je vous montrerai
+Dialogue: 0,0:01:49.25,0:01:50.98,Sub,,0,0,0,,{\fad(80,60)}une nouvelle étape de cette aventure.

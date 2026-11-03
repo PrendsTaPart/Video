@@ -1,0 +1,3 @@
+# Scratch de rendu : des milliers de PNG intermédiaires, régénérables par
+# capture.cjs. Les MP4 finaux vivent dans out/, qui est bien versionné.
+work/

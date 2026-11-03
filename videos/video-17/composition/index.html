@@ -1,0 +1,112 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Vidéo 17 : du post au client</title>
+<link rel="stylesheet" href="base.css">
+<style>
+#stage{background:radial-gradient(1100px 900px at 50% 30%,#163c63 0%,#0F1A23 62%)}
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.heart{position:absolute;font-size:56px;font-weight:700;color:#ef4444}
+.node{position:absolute;width:300px;height:150px;border-radius:26px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 20px 50px rgba(0,0,0,.45);color:#0F1A23;font-weight:700;font-size:24px}
+.node img{height:70px;margin-bottom:6px}
+.step{position:absolute;left:60px;width:960px;background:var(--surf);border:3px solid #2f475c;border-radius:22px;padding:16px 24px;font-size:28px;font-weight:700}
+.step small{display:block;font-size:20px;color:var(--grey);font-weight:500;margin-top:4px}
+.card{position:absolute;width:300px;height:375px;border-radius:18px;background:#FCF9E6;color:#0F1A23;padding:24px;font-weight:700;font-size:30px;box-shadow:0 20px 50px rgba(0,0,0,.5);line-height:1.15}
+.card small{display:block;font-size:18px;color:#007BFF;margin-bottom:10px}
+.fun{position:absolute;height:96px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:30px;color:#0F1A23}
+.loopn{position:absolute;width:230px;height:84px;border-radius:42px;background:var(--surf);border:3px solid #2f475c;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:25px}
+.demo{position:absolute;background:#4a3410;color:var(--orange);border-radius:999px;padding:8px 20px;font-weight:700;font-size:22px}
+.x{position:absolute;height:10px;background:#ef4444;border-radius:5px;transform-origin:left center}
+</style></head><body>
+<div id="stage">
+  <div class="scene" id="s0">
+    <div class="tab" style="left:200px;top:260px;width:680px;height:560px"><div class="scr"><img src="a/img/cms-ecran-reseaux-sociaux.webp"></div></div>
+    <div id="h0"></div>
+    <img class="pose" id="s0m" src="a/po/telephone.webp" style="left:300px;top:860px;width:480px">
+    <div class="big" id="s0q" style="top:1400px;font-size:60px">Et les <span style="color:var(--orange)">clients</span> ?</div>
+  </div>
+  <div class="scene" id="s1">
+    <div class="big" id="s1a" style="top:520px;font-size:56px;color:var(--grey)">Publier sur les réseaux,<br>c'est bien…</div>
+    <div class="big" id="s1b" style="top:760px;font-size:78px;line-height:1.1">Mais si personne<br>ne devient client,<br><span style="color:var(--orange)">à quoi ça sert ?</span></div>
+  </div>
+  <div class="scene" id="s2">
+    <div class="chip">Mes MCP</div>
+    <div class="title" style="font-size:56px">RapidoCMS + RapidoCRM,<br><b>Claude au milieu</b></div>
+    <svg class="abs" style="left:0;top:0" width="1080" height="1920"><g id="s2l" stroke="#FFA500" stroke-width="6" stroke-dasharray="14 10" fill="none"><path d="M360 800 L470 800"/><path d="M610 800 L720 800"/></g></svg>
+    <div class="node" id="n0" style="left:60px;top:725px"><img src="a/logos/rapidocms-logo-officiel.png">contenu</div>
+    <div class="node" id="n1" style="left:390px;top:700px;width:300px;height:200px;background:#FCF9E6"><img src="a/logos/claude.webp" style="height:56px">orchestrateur</div>
+    <div class="node" id="n2" style="left:720px;top:725px"><img src="a/logos/rapidocrm-logo-officiel.png">suivi commercial</div>
+    <div class="real" style="left:70px;top:1000px">Deux serveurs MCP réellement connectés à Claude, lus en lecture seule le 26/10</div>
+  </div>
+  <div class="scene" id="s3">
+    <div class="chip">TOFU · attirer</div>
+    <div class="title" style="font-size:56px">RapidoCMS crée<br><b>et organise</b></div>
+    <div class="tab" style="left:60px;top:380px;width:960px;height:560px"><div class="scr" id="s3scr"></div></div>
+    <div id="s3c"></div>
+    <div class="demo" style="left:60px;top:1390px">Carrousel de démonstration · brouillon non enregistré</div>
+    <div class="real" style="left:70px;top:960px">85 publications programmées dans RapidoCMS du 26/10 au 09/11</div>
+  </div>
+  <div class="scene" id="s4">
+    <div class="chip">Du post au contact</div>
+    <div class="title" style="font-size:56px">Un like n'est pas<br><b>un client</b></div>
+    <div class="step" id="k0" style="top:390px">♥ Like, commentaire, vue<small>reste dans RapidoCMS · aucun contact créé</small></div>
+    <div class="x" id="kx" style="left:60px;top:440px;width:960px"></div>
+    <div class="step" id="k1" style="top:530px;border-color:var(--blue)">① Le post invite à la démo<small>un seul appel à l'action</small></div>
+    <div class="step" id="k2" style="top:670px;border-color:var(--blue)">② Formulaire « FoodEatUp — Demande de démo »<small>formulaire réel de RapidoCRM · champs : nom, dirigeant, e-mail, adresse, site</small></div>
+    <div class="step" id="k3" style="top:810px;border-color:var(--orange)">③ Consentement coché<small>sans consentement, pas de contact</small></div>
+    <div class="step" id="k4" style="top:950px;border-color:#86efac">④ Contact créé dans RapidoCRM<small>avec sa source : « carrousel ruptures de stock »</small></div>
+    <div class="real" style="left:70px;top:1100px">Formulaires réels : 0 vue, 0 clic à ce jour · aucun envoi pour le tournage</div>
+  </div>
+  <div class="scene" id="s5">
+    <div class="chip">BOFU · convertir</div>
+    <div class="title" style="font-size:56px">RapidoCRM suit,<br><b>Claude prépare</b></div>
+    <div class="tab" style="left:60px;top:380px;width:960px;height:560px"><div class="scr"><img src="a/img/ecran-fil-accueil-entreprise.webp"></div></div>
+    <div class="quote" id="s5q" style="top:970px;font-size:22px"><b>BROUILLON · QUALIFICATION</b>Restaurant indépendant, intérêt « ruptures de stock ». Proposer une démo StockVision de 20 min. Relance à J+3 si pas de réponse — à valider.</div>
+    <div class="real" style="left:70px;top:1180px">Démonstration simulée · aucun contact réel affiché</div>
+  </div>
+  <div class="scene" id="s6">
+    <div class="chip">La boucle</div>
+    <div class="title" style="font-size:56px">Mesurer, comprendre,<br><b>recommencer</b></div>
+    <div class="fun" id="f0" style="left:90px;top:400px;width:900px;background:#86efac">TOFU · 55 % · portée</div>
+    <div class="fun" id="f1" style="left:190px;top:510px;width:700px;background:#7dd3fc">MOFU · 30 % · téléchargements</div>
+    <div class="fun" id="f2" style="left:290px;top:620px;width:500px;background:var(--orange)">BOFU · 10 % · demandes</div>
+    <div class="fun" id="f3" style="left:390px;top:730px;width:300px;background:#c4b5fd">Fidélité · 5 %</div>
+    <div class="real" style="left:70px;top:845px">Répartition cible du brief éditorial FoodEatUp Formation</div>
+    <svg class="abs" style="left:0;top:0" width="1080" height="1920"><circle id="cir" cx="540" cy="1160" r="230" fill="none" stroke="#FFA500" stroke-width="6" stroke-dasharray="1445" stroke-dashoffset="1445"/></svg>
+    <div id="s6n"></div>
+  </div>
+  <div class="scene" id="s7">
+    <div class="big" id="s7a" style="top:300px;font-size:52px;color:var(--grey)">Avant, je publiais<br>pour être visible.</div>
+    <div class="big" id="s7b" style="top:500px;font-size:66px;line-height:1.1">Maintenant, je construis<br>un système pour transformer<br><span style="color:var(--orange)">mon contenu en clients.</span></div>
+    <table class="abs" id="s7t" style="left:60px;top:860px;width:960px;border-collapse:separate;border-spacing:0 8px;font-size:24px">
+      <tr><td style="background:var(--surf);padding:12px 18px;border-radius:12px 0 0 12px">Outils MCP (CMS, CRM, formulaires)</td><td style="background:var(--surf);padding:12px 18px;color:#86efac;border-radius:0 12px 12px 0">disponibles</td></tr>
+      <tr><td style="background:var(--surf);padding:12px 18px;border-radius:12px 0 0 12px">Workflows (relance devis J+3, facture J+7…)</td><td style="background:var(--surf);padding:12px 18px;color:#7dd3fc;border-radius:0 12px 12px 0">3 actifs, 0 exécution</td></tr>
+      <tr><td style="background:var(--surf);padding:12px 18px;border-radius:12px 0 0 12px">« Bienvenue lead aimant »</td><td style="background:var(--surf);padding:12px 18px;color:var(--orange);border-radius:0 12px 12px 0">brouillon</td></tr>
+      <tr><td style="background:var(--surf);padding:12px 18px;border-radius:12px 0 0 12px">Boucle d'analyse automatique</td><td style="background:var(--surf);padding:12px 18px;color:var(--orange);border-radius:0 12px 12px 0">envisagée</td></tr>
+    </table>
+    <div class="real" style="left:70px;top:1230px">Aucun chiffre de conversion : rien n'a encore été mesuré</div>
+  </div>
+  <div class="scene" id="s8">
+    <div class="big" id="s8a" style="top:420px;font-size:82px;line-height:1.1">TU VEUX<br>MON TUNNEL ?</div>
+    <div class="big" id="s8b" style="top:690px;font-size:66px">COMMENTE</div>
+    <div class="abs" id="s8c" style="left:160px;top:790px;width:760px;height:200px;border-radius:40px;background:var(--orange);color:#0F1A23;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:130px;letter-spacing:4px;box-shadow:0 30px 80px rgba(0,0,0,.5)">TUNNEL</div>
+    <div class="abs" id="s8l" style="left:0;right:0;top:1080px;display:flex;justify-content:center;gap:22px">
+      <div class="logo-pill" style="position:static;height:110px"><img src="a/logos/claude.webp" style="height:62px"></div>
+      <div class="logo-pill" style="position:static;height:110px"><img src="a/logos/rapidocms-logo-officiel.png" style="height:66px"></div>
+      <div class="logo-pill" style="position:static;height:110px"><img src="a/logos/rapidocrm-logo-officiel.png" style="height:66px"></div></div>
+    <div class="ring" id="s8p" style="left:440px;top:1240px;width:200px;height:200px"><img src="a/img/braindcode-profil.jpg"></div>
+  </div>
+  <div class="scene" id="thumb">
+    <div class="big" style="top:120px;font-size:44px;letter-spacing:6px;color:var(--orange)">VIDÉO 17</div>
+    <div class="big" style="top:200px;font-size:96px;line-height:1">MON IA<br>TRANSFORME<br>MES POSTS<br><span style="color:var(--orange)">EN CLIENTS !</span></div>
+    <div class="node" style="left:40px;top:860px;width:260px"><img src="a/logos/rapidocms-logo-officiel.png">RapidoCMS</div>
+    <div class="node" style="left:780px;top:860px;width:260px"><img src="a/logos/rapidocrm-logo-officiel.png">RapidoCRM</div>
+    <div class="fun" style="left:280px;top:1100px;width:520px;background:#86efac;height:80px">♥ posts</div>
+    <div class="fun" style="left:340px;top:1190px;width:400px;background:#7dd3fc;height:80px">formulaire</div>
+    <div class="fun" style="left:400px;top:1280px;width:280px;background:var(--orange);height:80px">clients</div>
+    <div class="ring" style="left:340px;top:820px;width:400px;height:260px;border-radius:200px 200px 40px 40px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="logo-pill" style="left:440px;top:1420px;height:100px"><img src="a/logos/claude.webp" style="height:52px"></div>
+  </div>
+  <div id="logos"><div class="lp"><img src="a/logos/braindcode.png" style="height:30px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>

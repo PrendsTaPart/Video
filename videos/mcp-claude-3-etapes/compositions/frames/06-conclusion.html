@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Space Grotesk";
+          src: url("assets/fonts/SpaceGrotesk-Variable.woff2") format("woff2-variations");
+          font-weight: 300 700;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations");
+          font-weight: 100 900;
+        }
+
+        #root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          font-family: "Space Grotesk", "Inter", sans-serif;
+        }
+
+        /* ---- full-bleed background clip (never painted on #root itself) ---- */
+        .bg-clip {
+          position: absolute;
+          inset: 0;
+        }
+        .bg-inner {
+          position: absolute;
+          inset: 0;
+          background: #0b1e33;
+        }
+        .bg-vignette {
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(55% 45% at 50% 42%, rgba(59, 130, 246, 0.18) 0%, rgba(59, 130, 246, 0) 70%),
+            radial-gradient(120% 90% at 50% 50%, rgba(11, 30, 51, 0) 0%, rgba(5, 14, 26, 0.55) 100%);
+        }
+        .bg-grain {
+          position: absolute;
+          inset: 0;
+          opacity: 0.05;
+          mix-blend-mode: overlay;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        }
+
+        /* ---- ambient glow bloom, sits BEHIND the lockup ---- */
+        .glow {
+          position: absolute;
+          left: 50%;
+          top: 430px;
+          width: 900px;
+          height: 900px;
+          margin-left: -450px;
+          margin-top: -450px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, rgba(59, 130, 246, 0) 68%);
+          opacity: 0;
+          transform-origin: 50% 50%;
+          will-change: opacity, transform;
+        }
+
+        /* ---- stage: everything lives inside the caption keep-out (top 900px) ---- */
+        .stage {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .lockup {
+          position: absolute;
+          top: 430px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 56px;
+        }
+        .mark {
+          height: 148px;
+          width: auto;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+        #mark-claude {
+          transform-origin: 50% 50%;
+        }
+        #mark-mcp {
+          transform-origin: 50% 50%;
+        }
+        .divider {
+          width: 3px;
+          height: 120px;
+          background: rgba(255, 255, 255, 0.28);
+          border-radius: 2px;
+          opacity: 0;
+          transform-origin: 50% 50%;
+          will-change: transform, opacity;
+        }
+
+        .tagline {
+          position: absolute;
+          top: 640px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          gap: 0.34em;
+          font-size: 52px;
+          font-weight: 600;
+          color: #ffffff;
+          letter-spacing: -0.01em;
+          white-space: nowrap;
+        }
+        .tword {
+          display: inline-block;
+          opacity: 0;
+          will-change: transform, opacity;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="06-conclusion"
+        data-width="1920"
+        data-height="1080"
+        data-duration="6.949"
+      >
+        <div id="bg" class="clip bg-clip" data-start="0" data-duration="6.949" data-track-index="0">
+          <div class="bg-inner"></div>
+          <div class="bg-vignette"></div>
+          <div class="bg-grain"></div>
+        </div>
+
+        <div id="glow" class="clip glow" data-start="0" data-duration="6.949" data-track-index="1"></div>
+
+        <div class="stage">
+          <div class="lockup" id="lockup">
+            <img class="mark" id="mark-claude" src="assets/logos/claude-default.svg" alt="" />
+            <div class="divider" id="divider"></div>
+            <img class="mark" id="mark-mcp" src="assets/logos/mcp-white.svg" alt="" />
+          </div>
+
+          <div class="tagline" id="tagline">
+            <span class="tword" id="t0">Vos</span>
+            <span class="tword" id="t1">logiciels.</span>
+            <span class="tword" id="t2">Une</span>
+            <span class="tword" id="t3">seule</span>
+            <span class="tword" id="t4">conversation.</span>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        (function () {
+          window.__timelines = window.__timelines || {};
+          const tl = gsap.timeline({ paused: true });
+
+          const DURATION = 6.949;
+
+          // ---- defensive baseline: everything not yet on screen is explicitly hidden at t=0 ----
+          tl.set("#glow", { opacity: 0 }, 0);
+          tl.set(["#mark-claude", "#mark-mcp"], { opacity: 0, scale: 0.4 }, 0);
+          tl.set("#mark-claude", { x: -260 }, 0);
+          tl.set("#mark-mcp", { x: 260 }, 0);
+          tl.set("#divider", { opacity: 0, scaleY: 0 }, 0);
+          tl.set(["#t0", "#t1", "#t2", "#t3", "#t4"], { opacity: 0, y: 14 }, 0);
+
+          // ================= Scene 1 (0.0-2.8s) — mirrored entrance, lock at center =================
+          // Signature move: two marks converge from opposite sides and lock together with a spring-pop.
+          // fromTo so state is correct at t=0 under seek; hero visible well before t<=0.5s.
+          tl.fromTo(
+            "#mark-claude",
+            { opacity: 0, scale: 0.4, x: -260 },
+            { opacity: 1, scale: 1, x: 0, duration: 0.62, ease: "power3.out" },
+            0.05,
+          );
+          tl.fromTo(
+            "#mark-mcp",
+            { opacity: 0, scale: 0.4, x: 260 },
+            { opacity: 1, scale: 1, x: 0, duration: 0.62, ease: "power3.out" },
+            0.05,
+          );
+          // the lock: a tiny synchronized punch on both marks right as they meet at center
+          tl.fromTo(
+            ["#mark-claude", "#mark-mcp"],
+            { scale: 1 },
+            { scale: 1.06, duration: 0.12, ease: "power2.out", yoyo: true, repeat: 1 },
+            0.62,
+          );
+          tl.fromTo(
+            "#divider",
+            { opacity: 0, scaleY: 0 },
+            { opacity: 1, scaleY: 1, duration: 0.35, ease: "power3.out" },
+            0.86,
+          );
+
+          // ================= Scene 2 (2.8-4.9s) — tagline per-word reveal =================
+          const TAG_IDS = ["t0", "t1", "t2", "t3", "t4"];
+          const TAG_TIMES = [2.8, 3.06, 3.32, 3.58, 3.84];
+          TAG_IDS.forEach((id, i) => {
+            tl.fromTo(
+              "#" + id,
+              { opacity: 0, y: 14 },
+              { opacity: 1, y: 0, duration: 0.32, ease: "power2.out" },
+              TAG_TIMES[i],
+            );
+          });
+
+          // ================= Scene 3 (4.9-6.949s) — hold + ambient glow bloom, final exit =================
+          // Glow blooms in behind the lockup on the settle (un-triggered, no click/word-sync).
+          tl.fromTo(
+            "#glow",
+            { opacity: 0, scale: 0.85 },
+            { opacity: 0.4, scale: 1, duration: 0.9, ease: "power2.out" },
+            4.9,
+          );
+
+          // Bounded idle breathe on the glow only, driven by tl.time() (not repeat/yoyo) — sin(0)=0 so no jump.
+          const IDLE_START = 4.9;
+          const IDLE_DUR = Math.max(0.1, DURATION - IDLE_START - 0.4);
+          const phase = { p: 0 };
+          tl.to(
+            phase,
+            {
+              p: Math.PI * 2 * 0.9,
+              duration: IDLE_DUR,
+              ease: "none",
+              onUpdate: () => {
+                const opAmp = 0.05;
+                const scaleAmp = 0.02;
+                gsap.set("#glow", {
+                  opacity: 0.4 + Math.sin(phase.p) * opAmp,
+                  scale: 1 + Math.sin(phase.p) * scaleAmp,
+                });
+              },
+            },
+            IDLE_START + 0.9,
+          );
+
+          // Storyboard calls for a complete static hold here (lockup + tagline immobile, only the
+          // glow breathes) — no additional exit motion; the composition simply ends on this hold.
+
+          window.__timelines["06-conclusion"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .c1-bg { position: absolute; inset: 0; background: #EDEEF0; overflow: hidden; }
+        .c1-bg img {
+          position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+          filter: grayscale(1) contrast(1.05) brightness(0.92);
+        }
+        .c1-stage { position: absolute; inset: 0; }
+
+        .c1-brokenline { position: absolute; left: 140px; right: 140px; top: 940px; height: 2px; }
+        .c1-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.55; transform-origin: 0% 50%; }
+
+        .c1-label {
+          position: absolute; left: 140px; top: 96px;
+          font-size: 30px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+          color: rgba(58,63,69,0.85); opacity: 0;
+        }
+        .c1-lead {
+          position: absolute; left: 140px; top: 150px; width: 1000px;
+          font-size: 52px; font-weight: 600; line-height: 1.3; opacity: 0;
+        }
+
+        .c1-pile { position: absolute; left: 140px; top: 330px; width: 640px; height: 420px; }
+        .c1-ticket {
+          position: absolute; left: 0; width: 340px; height: 90px;
+          background: #EDEEF0; border: 1px solid #8A9099;
+          box-shadow: 0 10px 22px rgba(20,22,25,0.10);
+          opacity: 0;
+        }
+
+        .c1-count { position: absolute; left: 500px; top: 555px; font-size: 130px; line-height: 1; font-weight: 800; color: #3A3F45; font-variant-numeric: tabular-nums; opacity: 0; }
+        .c1-countlabel { position: absolute; left: 502px; top: 730px; font-size: 26px; font-weight: 600; color: rgba(58,63,69,0.85); opacity: 0; }
+
+        .c1-shout {
+          position: absolute; right: 150px; top: 360px; width: 560px;
+          border: 1px solid #8A9099; background: rgba(58,63,69,0.05);
+          padding: 32px 36px; opacity: 0;
+        }
+        .c1-shout .arrow { font-size: 30px; font-weight: 700; color: rgba(58,63,69,0.85); }
+        .c1-shout .msg { font-size: 40px; font-weight: 700; margin-top: 14px; line-height: 1.25; }
+        .c1-shout .from { font-size: 24px; font-weight: 500; color: rgba(58,63,69,0.85); margin-top: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+      </style>
+
+      <div id="root" data-composition-id="01-pass-bons" data-width="1920" data-height="1080" data-duration="12.0">
+        <div class="c1-bg clip" id="c1-bgclip" data-start="0" data-duration="12.0" data-track-index="1">
+          <img id="c1-bg-photo" src="public/generated/b1-pass-tickets.jpg" alt="" />
+        </div>
+
+        <div class="c1-stage">
+          <div class="c1-brokenline" id="c1-brokenline">
+            <span style="left:0%; width:16%;"></span>
+            <span style="left:20%; width:22%; top:-3px;"></span>
+            <span style="left:46%; width:14%; top:2px;"></span>
+            <span style="left:64%; width:20%;"></span>
+            <span style="left:88%; width:12%; top:-2px;"></span>
+          </div>
+
+          <div class="c1-label" id="c1-label">le pass</div>
+          <div class="c1-lead" id="c1-lead">Couvert de bons en papier.</div>
+
+          <div class="c1-pile" id="c1-pile">
+            <div class="c1-ticket" id="c1-t1" style="top:280px; transform:rotate(-3deg);"></div>
+            <div class="c1-ticket" id="c1-t2" style="top:220px; left:40px; transform:rotate(4deg);"></div>
+            <div class="c1-ticket" id="c1-t3" style="top:160px; left:10px; transform:rotate(-6deg);"></div>
+            <div class="c1-ticket" id="c1-t4" style="top:100px; left:60px; transform:rotate(5deg);"></div>
+            <div class="c1-ticket" id="c1-t5" style="top:40px; left:20px; transform:rotate(-2deg);"></div>
+            <div class="c1-ticket" id="c1-t6" style="top:0px; left:70px; transform:rotate(3deg);"></div>
+          </div>
+          <div class="c1-count" id="c1-count">0</div>
+          <div class="c1-countlabel" id="c1-countlabel">bons empilés</div>
+
+          <div class="c1-shout" id="c1-shout">
+            <div class="arrow">← salle</div>
+            <div class="msg">« Table 12, ça vient ?! »</div>
+            <div class="from">commande criée</div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#c1-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set(["#c1-label", "#c1-lead"], { opacity: 0, y: 14 });
+        gsap.set(".c1-ticket", { opacity: 0, y: -30, scale: 0.9 });
+        gsap.set("#c1-count", { opacity: 0 });
+        gsap.set("#c1-countlabel", { opacity: 0 });
+        gsap.set("#c1-shout", { opacity: 0, x: 24 });
+        gsap.set("#c1-bg-photo", { opacity: 0.6 });
+
+        // Scene 1 (0.0-1.0s): broken line draws itself on, segment by segment
+        tl.to("#c1-brokenline span", { opacity: 0.55, duration: 0.01 }, 0.15);
+        tl.to("#c1-brokenline span", { scaleX: 1, duration: 0.45, ease: "power2.out", stagger: 0.09 }, 0.15);
+
+        // low-amplitude continuous cinematic drift across the whole hold
+        const c1drift = { p: 0 };
+        const c1stage = document.querySelector(".c1-stage");
+        tl.to(c1drift, {
+          p: Math.PI * 2 * 3.0, duration: 11.0, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(c1drift.p);
+            c1stage.style.transform = `translate(${s * 3}px, ${Math.sin(c1drift.p * 0.6) * 2}px)`;
+          }
+        }, 0.3);
+
+        // Scene 2 (0.6-1.2s): label + lead settle; establishing photo recedes into flat ground
+        tl.to("#c1-label", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.6);
+        tl.to("#c1-lead", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.85);
+        tl.to("#c1-bg-photo", { opacity: 0.18, duration: 0.8, ease: "power2.in" }, 1.1);
+
+        // Scene 3 (1.3-3.6s, cue "Le pass est couvert de bons en papier."): tickets pile up one
+        // by one, count climbs alongside — a visible accumulation, not a single cut.
+        ["#c1-t1", "#c1-t2", "#c1-t3", "#c1-t4"].forEach((id, i) => {
+          tl.to(id, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "power3.out" }, 1.35 + i * 0.28);
+        });
+        tl.to("#c1-count", { opacity: 1, duration: 0.3, ease: "power3.out" }, 1.4);
+        tl.to("#c1-countlabel", { opacity: 1, duration: 0.3, ease: "power3.out" }, 1.55);
+        const c1count = { v: 0 };
+        const c1el = document.getElementById("c1-count");
+        tl.to(c1count, {
+          v: 6, duration: 2.2, ease: "power2.out",
+          onUpdate: () => { c1el.textContent = Math.round(c1count.v); }
+        }, 1.4);
+
+        // Scene 4 (2.4-4.8s, cue "Un serveur crie une commande depuis la salle."): shout card
+        // slides in from the right with a small impact shake — the salle reaching the pass.
+        tl.to("#c1-shout", { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, 2.45);
+        tl.to("#c1-shout", { x: -6, duration: 0.08, ease: "power1.inOut" }, 3.05);
+        tl.to("#c1-shout", { x: 0, duration: 0.16, ease: "power1.out" }, 3.13);
+
+        // Scene 5 (4.8-9.0s): visual-only continuation — the pile keeps growing silently while
+        // the room keeps talking; two more tickets land, count keeps climbing.
+        ["#c1-t5", "#c1-t6"].forEach((id, i) => {
+          tl.to(id, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "power3.out" }, 5.2 + i * 1.7);
+        });
+        tl.to(c1count, {
+          v: 8, duration: 2.6, ease: "power2.out",
+          onUpdate: () => { c1el.textContent = Math.round(c1count.v); }
+        }, 5.3);
+
+        // Scene 6 (9.0-11.5s): hold — subtle jitter on the shout card only
+        const c1phase = { p: 0 };
+        tl.to(c1phase, {
+          p: Math.PI * 2 * 1.2, duration: 2.3, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(c1phase.p);
+            gsap.set("#c1-shout", { y: s * 1.5 });
+          }
+        }, 9.1);
+
+        window.__timelines["01-pass-bons"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

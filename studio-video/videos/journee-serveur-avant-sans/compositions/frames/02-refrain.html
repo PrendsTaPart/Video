@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f2r-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f2r-brokenline { position: absolute; left: 400px; right: 400px; top: 360px; height: 2px; }
+        .f2r-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.5; transform-origin: 0% 50%; }
+
+        .f2r-l1 {
+          position: absolute; left: 0; right: 0; top: 430px; text-align: center;
+          font-size: 62px; font-weight: 600; color: #3A3F45; opacity: 0;
+        }
+        .f2r-l2 {
+          position: absolute; left: 0; right: 0; top: 540px; text-align: center;
+          font-size: 62px; font-weight: 800; opacity: 0;
+        }
+        .f2r-l2 .em { color: #D64545; }
+      </style>
+
+      <div id="root" data-composition-id="02-refrain" data-width="1920" data-height="1080" data-duration="6">
+        <div class="f2r-bg clip" id="f2r-bgclip" data-start="0" data-duration="6" data-track-index="1"></div>
+
+        <div class="f2r-brokenline" id="f2r-brokenline">
+          <span style="left:2%; width:18%;"></span>
+          <span style="left:24%; width:22%; top:-3px;"></span>
+          <span style="left:52%; width:16%; top:2px;"></span>
+          <span style="left:74%; width:22%;"></span>
+        </div>
+
+        <div class="f2r-l1" id="f2r-l1">On avait un outil pour ça.</div>
+        <div class="f2r-l2" id="f2r-l2">Plus <span class="em">personne</span> ne l'ouvre.</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f2r-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set("#f2r-l1", { opacity: 0, y: 14 });
+        gsap.set("#f2r-l2", { opacity: 0, y: 14 });
+
+        // Scene 1 (0.0-0.9s): the broken line draws itself on — same signature motif as
+        // every "sans" frame, here reduced to a bare statement.
+        tl.to("#f2r-brokenline span", { opacity: 0.5, duration: 0.01 }, 0.15);
+        tl.to("#f2r-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.08 }, 0.15);
+
+        // Scene 2 (0.3-1.0s, cue "On avait un outil pour ça."): line 1 settles.
+        tl.to("#f2r-l1", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.35);
+
+        // Scene 3 (1.3-2.0s, cue "Plus personne ne l'ouvre."): line 2 lands with the red key word.
+        tl.to("#f2r-l2", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 1.35);
+
+        // Scene 4 (2.7-6.0s): hold — a barely-perceptible breathe on the broken line only
+        const f2rphase = { p: 0 };
+        tl.to(f2rphase, {
+          p: Math.PI * 2 * 0.9, duration: 1.6, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f2rphase.p);
+            document.getElementById("f2r-brokenline").style.transform = `translateY(${s * 1.5}px)`;
+          }
+        }, 2.9);
+
+        window.__timelines["02-refrain"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

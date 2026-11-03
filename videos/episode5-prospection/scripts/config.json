@@ -1,0 +1,13 @@
+{"dir":"/tmp/claude-0/-home-user/21787f21-b634-59d5-9b5d-681235ff17db/scratchpad/ep5","vo":"audio/take1.mp3","name":"episode5-prospection",
+"A":[0,7.275,16.709,28.9,40.486,52.657,66.587,76.075,84.24],"P":[1.0,9.3,19.6,32.6,45.6,76.2,91.0,101.6],"dur":120,"music_start":10,
+"short":[[0,9.0],[9.0,19.2],[32.2,45.1],[101.1,110.0],[110.0,114.0]],
+"sections":[
+ [["Après avoir construit mes applications, mes agents IA",0.0],["et mes outils de communication,",2.5],["il me reste une question essentielle :",4.0],["comment trouver des clients ?",6.0]],
+ [["Aujourd'hui, je peux simplement demander à Claude",7.44],["de rechercher des restaurants ou des brasseries",9.52],["dans les régions qui m'intéressent.",11.2],["Je lui donne un objectif… et une règle :",12.48],["ne contacter personne sans ma validation.",14.5]],
+ [["Grâce au MCP que j'ai développé pour Prospector Hub,",16.8],["Claude peut consulter les régions et les spécialités,",19.56],["lancer des recherches autorisées,",21.88],["et retrouver les résultats directement dans mon logiciel.",23.2],["Derrière, ce sont des workflows n8n",26.0],["qui font les recherches.",27.88]],
+ [["Par exemple, mes cinq dernières recherches,",28.95],["sur les bars et brasseries,",30.7],["ont retourné 200 résultats sur cinq régions.",31.74],["Et le logiciel garde l'historique des recherches",34.1],["et des établissements enregistrés.",36.14],["200 résultats de recherche : pas 200 clients.",37.82]],
+ [["Mais trouver une entreprise ne suffit pas.",40.6],["Il faut vérifier les informations, comprendre son activité,",42.38],["éviter les doublons,",45.4],["et préparer une approche pertinente.",46.12],["Aujourd'hui, 90 bars et brasseries ont été enregistrés :",48.14],["ils sont encore au statut « nouveau ».",50.92]],
+ [["Ensuite, les routines prennent le relais :",52.66],["préparer les messages, suivre les campagnes,",54.48],["proposer les relances, analyser les résultats.",56.54],["Claude orchestre les étapes avec les outils autorisés.",58.54],["Mais pour qu'une routine tourne seule,",61.34],["elle doit être configurée dans un orchestrateur,",62.84],["comme n8n ou Plan'It.",64.9]],
+ [["Mon système gère aussi plusieurs canaux :",66.6],["e-mails, SMS, LinkedIn et appels automatisés,",68.48],["avec des règles : l'identité de l'expéditeur,",71.2],["la désinscription, et mon accord avant chaque envoi.",73.6]],
+ [["Mon objectif, ce n'est pas d'envoyer",76.22],["des milliers de messages au hasard.",77.84],["C'est de construire une prospection intelligente,",79.38],["ciblée et mesurable, pilotée depuis Claude.",81.64]]
+]}

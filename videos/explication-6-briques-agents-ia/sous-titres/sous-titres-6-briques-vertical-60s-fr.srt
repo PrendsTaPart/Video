@@ -1,0 +1,103 @@
+1
+00:00:00,000 --> 00:00:02,620
+Un agent IA performant, ce n'est pas seulement un bon prompt.
+
+2
+00:00:02,620 --> 00:00:04,920
+C'est un rôle, des compétences, des outils,
+
+3
+00:00:04,920 --> 00:00:06,500
+des règles et des automatismes.
+
+4
+00:00:06,500 --> 00:00:08,330
+Six briques. Voyons-les une par une.
+
+5
+00:00:08,380 --> 00:00:09,460
+Ce sont les mains de l'IA :
+
+6
+00:00:09,460 --> 00:00:12,480
+un protocole qui lui permet de se brancher sur les outils de l'entreprise.
+
+7
+00:00:12,480 --> 00:00:14,600
+Dans le plugin FoodEatUp, une seule ligne de configuration
+
+8
+00:00:14,600 --> 00:00:16,840
+pointe vers le serveur MCP du logiciel.
+
+9
+00:00:16,840 --> 00:00:19,640
+L'agent peut alors, par exemple, consulter les stocks d'un restaurant.
+
+10
+00:00:19,650 --> 00:00:23,390
+Un Skill est un fichier, SKILL.md, qui décrit une méthode :
+
+11
+00:00:23,390 --> 00:00:25,450
+quand l'utiliser, les étapes, les règles.
+
+12
+00:00:25,470 --> 00:00:28,190
+Un agent, c'est un rôle, un objectif et des instructions.
+
+13
+00:00:28,190 --> 00:00:29,870
+Le chef-restaurateur raisonne en ratios :
+
+14
+00:00:29,870 --> 00:00:31,890
+food cost, masse salariale, marge.
+
+15
+00:00:31,910 --> 00:00:33,630
+Dans Claude Code, deux commandes suffisent :
+
+16
+00:00:33,630 --> 00:00:36,000
+ajouter la marketplace, puis installer le plugin.
+
+17
+00:00:36,020 --> 00:00:38,220
+Contrairement au modèle, un Hook est déterministe :
+
+18
+00:00:38,220 --> 00:00:39,960
+il réagit toujours de la même façon.
+
+19
+00:00:39,960 --> 00:00:42,360
+Dans FoodEatUp, un Hook refuse un relevé de température
+
+20
+00:00:42,360 --> 00:00:43,580
+sans équipement identifié,
+
+21
+00:00:43,580 --> 00:00:46,460
+et un autre impose une confirmation avant toute action destructrice.
+
+22
+00:00:46,500 --> 00:00:49,400
+La base de connaissance, un dossier rapido-kb créé chez vous,
+
+23
+00:00:49,400 --> 00:00:52,520
+contient vos seuils, vos processus, votre charte et votre ton.
+
+24
+00:00:52,570 --> 00:00:54,590
+C'est en assemblant ces briques qu'on passe d'un chatbot
+
+25
+00:00:54,590 --> 00:00:56,430
+à une équipe d'agents IA spécialisés,
+
+26
+00:00:56,430 --> 00:00:59,270
+capables de réaliser des missions dans les outils de l'entreprise.

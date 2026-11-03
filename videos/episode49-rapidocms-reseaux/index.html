@@ -1,0 +1,103 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 49 : Claude gère mes réseaux</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter',sans-serif}#stage{background:#121212}.sc{background:radial-gradient(ellipse at 50% 110%,#3a1606 0%,#121212 55%)}.sc.or{background:#FF5A1F}
+#hdr{position:absolute;left:0;right:0;top:0;height:200px;z-index:60}#hdr span{position:absolute;left:60px;top:110px;font-family:'JetBrains Mono';font-weight:700;font-size:26px;color:#bbb;letter-spacing:2px}
+#cap{font-family:'Inter';font-weight:900;font-size:74px;color:#fff;letter-spacing:-2px}#cap i.k{color:#FF5A1F;font-style:normal}
+.win{width:900px;background:#1C1C1C;border:2px solid #333;border-radius:30px;box-shadow:0 40px 80px rgba(0,0,0,.6);padding:34px;color:#eee;font-size:34px}
+.win .bar{display:flex;gap:12px;margin-bottom:26px}.win .bar i{width:18px;height:18px;border-radius:50%;background:#444;display:block}
+.row{display:flex;align-items:center;justify-content:space-between;padding:20px 22px;border-radius:16px;margin:8px 0;background:#232323}
+.row.hi{outline:4px solid #FF5A1F}.row small{color:#888;font-size:26px}
+.btn{display:inline-block;background:#FF5A1F;color:#fff;font-weight:900;border-radius:14px;padding:14px 30px;font-size:32px}
+.fld{background:#121212;border:2px solid #444;border-radius:12px;padding:18px 20px;margin:10px 0 22px;font-family:'JetBrains Mono';font-size:30px;color:#ddd}
+.fld.hi{border-color:#FF5A1F}.blur{filter:blur(9px)}
+.lab{font-size:26px;color:#999}
+.step{font-family:'Inter';font-weight:900;font-size:66px;color:#fff;white-space:nowrap}.step b{background:#FF5A1F;color:#fff;border-radius:14px;padding:4px 18px;margin-right:18px;font-size:44px;vertical-align:middle}
+.big{font-family:'Inter';font-weight:900;font-size:230px;line-height:.9;color:#fff;letter-spacing:-8px;text-align:center}
+.pill{display:inline-block;font-family:'JetBrains Mono';font-weight:700;font-size:34px;color:#fff;background:#FF5A1F;border-radius:999px;padding:12px 28px;white-space:nowrap}.pill.g{background:#1f9d55}.pill.k{background:#2a2a2a;border:2px solid #444}
+.net{display:flex;align-items:center;gap:20px;font-weight:900;font-size:44px;color:#fff;background:#1C1C1C;border:2px solid #333;border-radius:20px;padding:18px 30px;width:560px}
+.net i{width:60px;height:60px;border-radius:50%;display:block}.net .ok{margin-left:auto;color:#1f9d55;font-size:40px}
+.cal{width:960px;display:grid;grid-template-columns:repeat(7,1fr);gap:12px}.cal .d{background:#1C1C1C;border:2px solid #333;border-radius:16px;padding:12px 8px;min-height:560px}
+.cal .d b{display:block;text-align:center;color:#ddd;font-size:26px;margin-bottom:10px}.cal .d s{display:block;height:13px;border-radius:5px;margin:5px 4px;text-decoration:none}
+.post{width:820px;background:#1C1C1C;border:2px solid #333;border-radius:24px;padding:26px;color:#ddd;font-size:30px;line-height:1.35}
+.post .h{display:flex;align-items:center;gap:14px;font-weight:900;color:#fff;margin-bottom:14px}.post .h i{width:44px;height:44px;border-radius:50%;display:block}
+.post .ln{height:16px;border-radius:8px;background:#333;margin:12px 0}
+.sm{font-family:'JetBrains Mono';font-weight:700;font-size:22px;color:#777;letter-spacing:2px}
+.arrow{width:120px;height:120px}
+</style></head><body><div id="stage"><div id="hdr"><span>michael · rapidocms</span></div><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=1540;CAP.group=3;CAP.kw=new Set(['main,','sens.','Claude.','Paramètres,','Connecteurs.','personnalisé.','RapidoCMS.','lien.','Connecter,','autorise.','tout.','Instagram,','Facebook,','LinkedIn','TikTok.','consigne.','bibliothèque,','différent','brouillons.','relis.','semaine.','deux','cents','quatre','RÉSEAUX,']);
+const NC={ig:'#E1306C',fb:'#1877F2',li:'#0A66C2',tt:'#25F4EE'};
+const arrow=`<svg class="arrow" viewBox="0 0 120 120"><path d="M10 15 C 70 10, 100 40, 92 95" stroke="#FF5A1F" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M70 80 L92 100 L108 74" stroke="#FF5A1F" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const win=(body)=>`<div class="win"><div class="bar"><i></i><i></i><i></i></div>${body}</div>`;
+const RECON='<div class="sm">ÉCRAN RECONSTITUÉ</div>';
+// 1 accroche
+let s=scene(M('Franchement,'),M('Étape un'),{tr:'cut'});
+['ig','fb','li','tt'].forEach((n,k)=>s.el(`<div class="post" style="width:520px"><div class="h"><i style="background:${NC[n]}"></i>Publication</div><div class="ln" style="width:90%"></div><div class="ln" style="width:70%"></div></div>`,{x:300+(k%2)*480,y:560+Math.floor(k/2)*330,fx:'drop',at:.3+k*.35,out:M('ça n\'a')+.3,rot:k%2?4:-4,anim:'shiver'}));
+s.el('<div class="pill">À LA MAIN · TOUS LES JOURS</div>',{x:540,y:1240,fx:'slam',at:1.2});
+s.el('<div class="big" style="font-size:130px;letter-spacing:-4px">AUCUN<br>SENS.</div>',{x:540,y:900,fx:'slam',at:M('ça n\'a')+.4,z:9});
+s.el('<div class="pill k">VIENS, JE TE MONTRE →</div>',{x:540,y:1380,fx:'up',at:M('Viens, je')});
+// 2 étape un : paramètres > connecteurs
+s=scene(M('Étape un'),M('Clique sur Ajouter'),{tr:'cut'});
+s.el('<div class="step"><b>ÉTAPE 1</b>Ouvre Claude</div>',{x:540,y:330,fx:'drop',at:M('Étape un')});
+s.el(win('<div style="font-weight:900;font-size:40px;margin-bottom:14px">Paramètres</div><div class="row" id="r1">Général</div><div class="row" id="r2">Personnalisation</div><div class="row" id="r3">Connecteurs <small>→</small></div><div class="row">Confidentialité</div>'),{x:540,y:860,fx:'pop',at:M('Étape un')+.5});
+s.el(arrow,{x:880,y:690,fx:'pop',at:M('Va dans'),out:M('puis dans')});
+s.el(arrow,{x:880,y:830,fx:'pop',at:M('puis dans')});
+s.fn(t=>{const a=document.getElementById('r3');if(a)a.classList.toggle('hi',t>=M('puis dans'));});
+s.el(RECON,{x:540,y:1290,fx:'fade',at:M('Étape un')+.5});
+// 3 ajouter connecteur + nom + lien
+s=scene(M('Clique sur Ajouter'),M('Clique sur Connecter,'),{tr:'cut'});
+s.el('<div class="step"><b>ÉTAPE 2</b>Ajoute le connecteur</div>',{x:540,y:330,fx:'drop',at:M('Clique sur Ajouter')});
+s.el(win('<div style="font-weight:900;font-size:40px;margin-bottom:20px">Ajouter un connecteur personnalisé</div><div class="lab">Nom</div><div class="fld" id="fn"></div><div class="lab">Lien</div><div class="fld" id="fu"><span class="blur">https://••••••••••••••••/••••</span></div><div style="text-align:right"><span class="btn">Ajouter</span></div>'),{x:540,y:860,fx:'pop',at:M('Clique sur Ajouter')+.3});
+s.fn(t=>{const f=document.getElementById('fn');if(!f)return;const w='RapidoCMS',k=Math.max(0,Math.min(w.length,Math.floor((t-M('Donne-lui un')-.6)*9)));f.textContent=w.slice(0,k);f.classList.toggle('hi',t>=M('Donne-lui un')&&t<M('Et colle'));const u=document.getElementById('fu');u.style.visibility=t>=M('Et colle')?'visible':'hidden';u.classList.toggle('hi',t>=M('Et colle'));});
+s.el('<div class="pill">LIEN TOUJOURS FLOUTÉ</div>',{x:540,y:1340,fx:'slam',at:M('Et colle')+.3});
+// 4 connecter + autoriser
+s=scene(M('Clique sur Connecter,'),M('C\'est tout.'),{tr:'cut'});
+s.el('<div class="step"><b>ÉTAPE 3</b>Connecte-toi</div>',{x:540,y:330,fx:'drop',at:M('Clique sur Connecter,')});
+s.el(win('<div style="text-align:center;font-size:90px">🔒</div><div style="text-align:center;font-weight:900;font-size:42px;margin:10px 0">Connexion à RapidoCMS</div><div style="text-align:center;color:#999;margin-bottom:30px">Claude demande l\'accès à ton compte</div><div style="display:flex;justify-content:center;gap:24px"><span class="btn" style="background:#333">Refuser</span><span class="btn" id="au">Autoriser</span></div>'),{x:540,y:860,fx:'pop',at:M('Clique sur Connecter,')+.2});
+s.el(arrow,{x:760,y:1110,fx:'pop',at:M('et autorise.')-.2,rot:180});
+s.fn(t=>{const a=document.getElementById('au');if(a)a.style.background=t>=M('et autorise.')+.3?'#1f9d55':'#FF5A1F';});
+// 5 c'est tout
+s=scene(M('C\'est tout.'),M('Claude voit'),{cls:'or',tr:'cut'});
+s.el('<div class="big">C\'est<br>tout.</div>',{x:540,y:880,fx:'slam',at:M('C\'est tout.')});
+// 6 réseaux connectés (vrais comptes)
+s=scene(M('Claude voit'),M('Ensuite, colle'),{tr:'cut'});
+s.el('<div class="pill g">CONNECTÉ ✓</div>',{x:540,y:330,fx:'slam',at:M('Claude voit')});
+[['Instagram','ig','Instagram,','✓'],['Facebook','fb','Facebook,','✓'],['LinkedIn','li','LinkedIn et','✓'],['TikTok','tt','TikTok.','<span style="color:#FFA500;font-size:26px">À RECONNECTER</span>']].forEach(([n,c,m,o],k)=>s.el(`<div class="net"><i style="background:${NC[c]}"></i>${n}<span class="ok">${o}</span></div>`,{x:540,y:560+k*190,fx:'left',at:M(m)-.15}));
+s.el('<div class="sm">MES COMPTES RÉELLEMENT BRANCHÉS DANS RAPIDOCMS</div>',{x:540,y:1340,fx:'fade',at:M('Instagram,')});
+// 7 consigne + travail
+s=scene(M('Ensuite, colle'),M('Il prépare'),{tr:'cut'});
+s.el('<div class="step"><b>ÉTAPE 4</b>Colle ma consigne</div>',{x:540,y:330,fx:'drop',at:M('Ensuite, colle')});
+s.el(win('<div class="lab">Toi</div><div class="fld" style="font-family:Inter;font-size:30px;line-height:1.4">Prends ma vidéo, range-la dans ma bibliothèque, écris un texte pour chaque réseau et prépare les brouillons…</div><div class="lab">Claude</div><div id="cl" style="font-size:30px;line-height:1.6"></div>'),{x:540,y:830,fx:'pop',at:M('Ensuite, colle')+.3});
+s.fn(t=>{const e=document.getElementById('cl');if(!e)return;const L=[[M('Claude prend'),'✓ Vidéo récupérée'],[M('la range'),'✓ Rangée dans ta bibliothèque'],[M('et écrit'),'✓ Un texte par réseau…']];e.innerHTML=L.filter(x=>t>=x[0]).map(x=>`<div style="color:#1f9d55;font-weight:700">${x[1]}</div>`).join('');});
+s.el(RECON,{x:540,y:1350,fx:'fade',at:M('Ensuite, colle')+.3});
+// 8 brouillons, relis, programme : vraie semaine
+s=scene(M('Il prépare'),M('Chez moi,'),{tr:'cut'});
+s.el('<div class="pill k">BROUILLONS ✓</div>',{x:280,y:330,fx:'slam',at:M('Il prépare')});
+s.el('<div class="pill k">TU RELIS ✓</div>',{x:560,y:330,fx:'slam',at:M('Toi, tu')});
+s.el('<div class="pill">PROGRAMMÉ ✓</div>',{x:850,y:330,fx:'slam',at:M('Et il programme')});
+const W=[['LUN',7,5,5,1],['MAR',6,5,5,1],['MER',8,6,6,1],['JEU',5,4,4,2],['VEN',7,5,5,2],['SAM',5,4,4,2],['DIM',2,1,1,2]];
+s.el('<div class="cal" id="cal">'+W.map(([d,li,fb,ig,tt])=>`<div class="d"><b>${d}</b>`+[[li,'li'],[fb,'fb'],[ig,'ig'],[tt,'tt']].map(([n,c])=>Array.from({length:n},()=>`<s style="background:${NC[c]}"></s>`).join('')).join('')+'</div>').join('')+'</div>',{x:540,y:880,fx:'up',at:M('Il prépare')+.3});
+s.fn(t=>{const c=document.querySelectorAll('#cal s');const p=Math.max(0,Math.min(1,(t-M('Et il programme'))/1.3));c.forEach((e,i)=>e.style.opacity=i/c.length<p?1:.15);});
+s.el('<div class="sm">MA VRAIE SEMAINE DANS RAPIDOCMS · UNE BARRE = UNE PUBLICATION</div>',{x:540,y:1290,fx:'fade',at:M('Il prépare')+.3});
+// 9 chiffre réel
+s=scene(M('Chez moi,'),M('Tu veux'),{tr:'cut'});
+s.el('<div class="pill k">CHEZ MOI, EN CE MOMENT</div>',{x:540,y:400,fx:'drop',at:M('Chez moi,')});
+s.el('<div class="big" style="font-size:150px;letter-spacing:-5px;white-space:nowrap">PLUS DE<br><span style="color:#FF5A1F">DEUX CENTS</span></div>',{x:540,y:700,fx:'slam',at:M('plus de deux')});
+s.el('<div class="pill k">PUBLICATIONS PROGRAMMÉES</div>',{x:540,y:1000,fx:'up',at:M('plus de deux')+.6});
+['ig','fb','li','tt'].forEach((c,k)=>s.el(`<i style="display:block;width:110px;height:110px;border-radius:50%;background:${NC[c]}"></i>`,{x:270+k*180,y:1210,fx:'pop',at:M('sur quatre')+k*.15}));
+s.el('<div class="sm">SUR QUATRE SEMAINES · DONNÉES RÉELLES DE MON COMPTE</div>',{x:540,y:1360,fx:'fade',at:M('sur quatre')});
+// 10 CTA
+s=scene(M('Tu veux'),C.dur+1,{tr:'cut'});
+s.el('<div class="step" style="font-size:60px">Tu veux ma <span style="color:#FF5A1F">consigne</span> ?</div>',{x:540,y:420,fx:'drop',at:M('Tu veux')});
+s.el('<div class="big" style="font-size:150px;letter-spacing:-5px">Commente</div>',{x:540,y:690,fx:'slam',at:M('Commente RÉSEAUX,')});
+s.el('<div class="win" style="width:760px;padding:24px 30px;display:flex;align-items:center;justify-content:space-between"><span style="font-family:JetBrains Mono;font-weight:700;font-size:52px">RÉSEAUX<span id="cu">|</span></span><span class="btn">Publier</span></div>',{x:540,y:900,fx:'pop',at:M('Commente RÉSEAUX,')+.2});
+s.el('<div class="pill g">JE TE L\'ENVOIE ✓</div>',{x:540,y:1090,fx:'slam',at:M('Commente RÉSEAUX,')+1.2});
+s.el('<div class="pill k">ÉPISODE 49/365</div>',{x:540,y:1300,fx:'fade',at:M('Commente RÉSEAUX,')+1.8});
+s.fn(t=>{const c=document.getElementById('cu');if(c)c.style.opacity=(t*2|0)%2;});
+CAP.show=t=>t<M('Commente RÉSEAUX,')&&!(t>=M('C\'est tout.')&&t<M('Claude voit'));
+thumbAt(M('Et il programme')+1.35,'<i>Claude publie</i><br><i class="k">à ma place.</i>');
+render(0);
+</script></body></html>

@@ -1,0 +1,81 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 50 : le bilan du jour</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Poppins',sans-serif}#stage{background:#0F1A23}.sc{background:radial-gradient(ellipse at 50% 0%,#16324d 0%,#0F1A23 60%)}.sc.cr{background:#FCF9E6}.sc.or{background:#FFA500}
+#hdr{position:absolute;left:0;right:0;top:0;height:200px;z-index:60}#hdr span{position:absolute;left:0;right:0;text-align:center;top:110px;font-weight:700;font-size:26px;color:#AEB8C2;letter-spacing:4px}
+#cap{font-family:'Poppins';font-weight:800;font-size:70px;color:#FCF9E6;letter-spacing:-1px}#cap i.k{color:#FFA500;font-style:normal}
+.dk #cap{color:#0F1A23}
+.th{width:230px;border-radius:18px;overflow:hidden;border:5px solid #FCF9E6;box-shadow:0 14px 30px rgba(0,0,0,.45)}.th img{display:block;width:100%}
+.th.b{width:400px}
+.ttl{font-weight:900;font-size:110px;line-height:.95;color:#FCF9E6;text-align:center;letter-spacing:-3px}.ttl b{color:#FFA500}
+.chip{display:inline-block;background:#007BFF;color:#fff;font-weight:800;font-size:38px;border-radius:999px;padding:12px 30px;white-space:nowrap}.chip.o{background:#FFA500;color:#0F1A23}.chip.c{background:#FCF9E6;color:#0F1A23}.chip.g{background:#1f9d55}
+.sec{font-weight:700;font-size:30px;letter-spacing:6px;color:#AEB8C2}
+.lib{width:1000px;display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.lib div{aspect-ratio:1;background:#16242F;border-radius:16px;display:flex;align-items:center;justify-content:center;overflow:hidden}.lib img{max-width:92%;max-height:92%}
+.st{width:860px;background:#16242F;border:2px solid #24384a;border-radius:26px;padding:26px 34px;color:#FCF9E6}.st .r{display:flex;gap:20px;align-items:center;font-size:34px;font-weight:600;padding:10px 0;border-bottom:1px solid #24384a}.st .r:last-child{border:0}.st .r b{display:flex;width:52px;height:52px;border-radius:50%;background:#007BFF;align-items:center;justify-content:center;font-size:26px;flex:none}
+.phone{width:520px;border-radius:56px;border:14px solid #FCF9E6;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5)}.phone img{display:block;width:100%}
+.big3{white-space:nowrap;font-weight:900;font-size:120px;letter-spacing:-4px;color:#FCF9E6;line-height:1}
+.end{font-weight:900;font-size:150px;line-height:.9;color:#0F1A23;text-align:center;letter-spacing:-5px}
+.ctab{background:#0F1A23;color:#FCF9E6;font-weight:800;font-size:60px;border-radius:999px;padding:18px 44px}
+</style></head><body><div id="stage"><div id="hdr"><span>LE BILAN DU JOUR</span></div><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="lib.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=1530;CAP.group=3;CAP.kw=new Set(['Claude,','douze','histoires.','Caroline','burger.','pizzeria.','zéro.','outils.','BraindCode,','Plan\'It,','digitale,','RapidoCMS,','bibliothèque','onze','cent','soixante','Lovable,','enregistrée.','guide,','formation,','emails,','YouTube','LinkedIn.','site.','regardé.','corrigé.','validé.','MÉTHODE,']);
+const th=(e,c='')=>`<div class="th ${c}"><img src="img/th${e}.png"></div>`;
+// 1 douze vidéos
+let s=scene(M('Aujourd\'hui,'),M('D\'abord, les'),{tr:'cut'});
+const E=[38,39,40,41,42,43,44,45,46,47,48,49];
+E.forEach((e,k)=>s.el(th(e),{x:170+(k%4)*247,y:470+Math.floor(k/4)*430,fx:'pop',at:.25+k*.13,rot:(k%2?2:-2),sc:.92}));
+s.el('<div class="ttl" style="font-size:150px;background:rgba(15,26,35,.94);border-radius:40px;padding:40px 60px;box-shadow:0 20px 60px rgba(0,0,0,.6)">DOUZE<br><b>VIDÉOS</b></div>',{x:540,y:900,fx:'slam',at:M('douze vidéos.'),out:M('Voilà ce'),z:9});
+s.el('<div class="chip o">EN UNE JOURNÉE</div>',{x:540,y:1180,fx:'slam',at:M('Voilà ce'),z:9});
+// 2 histoires
+s=scene(M('D\'abord, les'),M('Ensuite, les'),{tr:'cut'});
+s.el('<div class="sec">LES HISTOIRES</div>',{x:540,y:300,fx:'drop',at:M('D\'abord, les')});
+[[38,'Caroline qui','chez le plombier,'],[44,'chez le plombier,','chez la boulangère.'],[39,'Le vrai','La caisse'],[42,'La caisse','La fidélité'],[47,'La fidélité',null]].forEach(([e,a,b])=>s.el(th(e,'b'),{x:540,y:860,fx:'pop',at:M(a),out:b?M(b):undefined}));
+s.el('<div class="chip">AU RESTAURANT</div>',{x:540,y:1290,fx:'slam',at:M('au restaurant,'),out:M('chez le plombier,')});
+s.el('<div class="chip">CHEZ LE PLOMBIER</div>',{x:540,y:1290,fx:'slam',at:M('chez le plombier,'),out:M('chez la boulangère.')});
+s.el('<div class="chip">CHEZ LA BOULANGÈRE</div>',{x:540,y:1290,fx:'slam',at:M('chez la boulangère.'),out:M('Le vrai')});
+s.el('<div class="chip o">LE VRAI COÛT</div>',{x:540,y:1290,fx:'slam',at:M('Le vrai'),out:M('La caisse')});
+s.el('<div class="chip o">LA CAISSE DU MOIS</div>',{x:540,y:1290,fx:'slam',at:M('La caisse'),out:M('La fidélité')});
+s.el('<div class="chip o">LA FIDÉLITÉ</div>',{x:540,y:1290,fx:'slam',at:M('La fidélité')});
+// 3 outils
+s=scene(M('Ensuite, les'),M('Derrière, il'),{tr:'cut'});
+s.el('<div class="sec">LES OUTILS</div>',{x:540,y:300,fx:'drop',at:M('Ensuite, les')});
+[[41,'Le plugin','BRAINDCODE'],[43,'Plan\'It,','PLAN\'IT'],[45,'la carte','CARTE DIGITALE'],[49,'et RapidoCMS,','RAPIDOCMS']].forEach(([e,m,l],k)=>{s.el(th(e),{x:300+(k%2)*480,y:640+Math.floor(k/2)*560,fx:'pop',at:M(m)-.1,rot:k%2?3:-3});s.el(`<div class="chip c" style="font-size:30px">${l}</div>`,{x:300+(k%2)*480,y:870+Math.floor(k/2)*560,fx:'slam',at:M(m)+.1,z:5});});
+// 4 bibliothèque
+s=scene(M('Derrière, il'),M('Et pour chaque'),{tr:'cut'});
+s.el('<div class="sec">LA BIBLIOTHÈQUE</div>',{x:540,y:300,fx:'drop',at:M('Derrière, il')});
+s.el('<div class="lib" id="lib">'+LIB.map(f=>`<div><img src="../kit/${f}"></div>`).join('')+'</div>',{x:540,y:820,fx:'fade',at:M('Derrière, il')+.2});
+s.fn(t=>document.querySelectorAll('#lib div').forEach((e,i)=>{const a=M('Derrière, il')+.3+i*.09;const p=Math.max(0,Math.min(1,(t-a)/.25));e.style.opacity=p;e.style.transform=`scale(${.6+.4*eo(p)})`;}));
+s.el('<div class="chip o">ONZE STYLES</div>',{x:540,y:1270,fx:'slam',at:M('onze styles,'),out:M('plus de cent')});
+s.el('<div class="chip o">PLUS DE CENT SOIXANTE IMAGES</div>',{x:540,y:1270,fx:'slam',at:M('plus de cent'),out:M('rangées pour')});
+s.el('<div class="chip">DESSINÉES PAR LOVABLE</div>',{x:540,y:1370,fx:'up',at:M('dessinées par'),out:M('rangées pour')});
+s.el('<div class="chip g">RANGÉES · RÉUTILISABLES ✓</div>',{x:540,y:1270,fx:'slam',at:M('rangées pour')});
+// 5 structure
+s=scene(M('Et pour chaque'),M('On a aussi'),{tr:'cut'});
+s.el('<div class="sec">LA STRUCTURE DE CHAQUE STYLE</div>',{x:540,y:300,fx:'drop',at:M('Et pour chaque')});
+s.el('<div class="st">'+['L\'accroche','Le problème','La solution, montrée en vrai','La preuve','Le mot-clé à commenter'].map((t,i)=>`<div class="r" id="sr${i}"><b>${i+1}</b>${t}</div>`).join('')+'</div>',{x:540,y:800,fx:'pop',at:M('Et pour chaque')+.3});
+s.fn(t=>[0,1,2,3,4].forEach(i=>{const e=document.getElementById('sr'+i);if(e)e.style.opacity=t>=M('Et pour chaque')+.5+i*.35?1:.15;}));
+s.el('<div class="chip o">DEMAIN, CLAUDE REPART DE LÀ</div>',{x:540,y:1260,fx:'slam',at:M('Demain, Claude')});
+// 6 livrables
+s=scene(M('On a aussi'),M('Toutes les'),{tr:'cut'});
+s.el('<div class="phone" style="width:440px;border-radius:30px"><img src="img/guide.png"></div>',{x:540,y:720,fx:'pop',at:M('On a aussi')+.2,rot:-3});
+[['UN GUIDE','On a aussi'],['UNE FORMATION','une formation,'],['DES EMAILS','des emails,'],['YOUTUBE · LINKEDIN','et préparé']].forEach(([l,m],k)=>s.el(`<div class="chip ${k==3?'o':''}">${l} ✓</div>`,{x:540,y:1120+k*95,fx:'slam',at:M(m)}));
+// 7 site
+s=scene(M('Toutes les'),M('Et moi'),{tr:'cut'});
+s.el('<div class="phone"><img src="img/site-videos.png"></div>',{x:540,y:860,fx:'up',at:M('Toutes les')});
+s.el('<div class="chip g">EN LIGNE SUR MON SITE ✓</div>',{x:540,y:330,fx:'slam',at:M('Toutes les')+.6});
+// 8 et moi
+s=scene(M('Et moi'),M('Tu veux'),{tr:'cut'});
+s.el('<div class="ttl" style="color:#FFA500">et moi ?</div>',{x:540,y:420,fx:'pop',at:M('Et moi')});
+[['J\'ai regardé.','J\'AI REGARDÉ.'],['J\'ai corrigé.','J\'AI CORRIGÉ.'],['J\'ai validé.','J\'AI VALIDÉ.']].forEach(([m,t],k)=>s.el(`<div class="big3">${t}</div>`,{x:540,y:720+k*180,fx:'slam',at:M(m)}));
+// 9 CTA
+s=scene(M('Tu veux'),C.dur+1,{cls:'or',tr:'cut'});
+s.el('<div class="end">COMMENTE<br>MÉTHODE</div>',{x:540,y:640,fx:'slam',at:M('Commente MÉTHODE,')});
+s.el('<div class="phone" style="width:300px;border-radius:24px;border-color:#0F1A23"><img src="img/guide.png"></div>',{x:540,y:1060,fx:'up',at:M('Tu veux')+.2});
+s.el('<div class="ctab">Je te l\'envoie</div>',{x:540,y:1350,fx:'pop',at:M('Commente MÉTHODE,')+.8});
+s.el('<div class="chip c" style="background:#0F1A23;color:#FCF9E6">ÉPISODE 50/365</div>',{x:540,y:1530,fx:'fade',at:M('Commente MÉTHODE,')+1.5});
+CAP.show=t=>t<M('Tu veux');
+thumbAt(M('douze vidéos.')+.8,'<i>Ma journée</i> <i class="k">avec Claude</i>');
+render(0);
+</script></body></html>

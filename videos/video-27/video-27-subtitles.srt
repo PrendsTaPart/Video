@@ -1,0 +1,160 @@
+1
+00:00:00,500 --> 00:00:02,360
+Au début, j'utilisais n8n
+
+2
+00:00:02,360 --> 00:00:04,060
+pour connecter tous mes logiciels.
+
+3
+00:00:04,060 --> 00:00:06,140
+Je créais des workflows pour la prospection,
+
+4
+00:00:06,140 --> 00:00:07,980
+le marketing, les ressources humaines,
+
+5
+00:00:07,980 --> 00:00:09,460
+les stocks, les recrutements…
+
+6
+00:00:09,460 --> 00:00:11,580
+En fait, je construisais des routes départementales
+
+7
+00:00:11,580 --> 00:00:12,800
+entre mes applications !
+
+8
+00:00:12,800 --> 00:00:14,600
+Mais plus je développais de logiciels,
+
+9
+00:00:14,600 --> 00:00:16,220
+plus je devais créer de connexions.
+
+10
+00:00:16,220 --> 00:00:17,880
+Et avec l'arrivée de mes agents IA,
+
+11
+00:00:17,880 --> 00:00:19,780
+j'ai compris que je devais changer d'approche.
+
+12
+00:00:19,780 --> 00:00:22,180
+Alors j'ai décidé de construire des autoroutes !
+
+13
+00:00:22,180 --> 00:00:24,680
+Et ces autoroutes, ce sont les serveurs MCP.
+
+14
+00:00:24,680 --> 00:00:26,420
+Aujourd'hui, mes logiciels peuvent exposer
+
+15
+00:00:26,420 --> 00:00:28,640
+directement leurs fonctionnalités aux agents IA.
+
+16
+00:00:28,640 --> 00:00:30,300
+Mon CRM pour les clients.
+
+17
+00:00:30,300 --> 00:00:31,940
+Mon CMS pour les publications.
+
+18
+00:00:31,940 --> 00:00:33,500
+FoodEatUp pour les restaurants.
+
+19
+00:00:33,500 --> 00:00:35,580
+RapidoRH pour les équipes et les tâches.
+
+20
+00:00:35,580 --> 00:00:37,760
+Et je continue à utiliser n8n !
+
+21
+00:00:37,760 --> 00:00:39,920
+Parce que n8n déclenche mes routines,
+
+22
+00:00:39,920 --> 00:00:40,980
+coordonne les opérations
+
+23
+00:00:40,980 --> 00:00:42,980
+et fait travailler mes agents ensemble.
+
+24
+00:00:42,980 --> 00:00:44,860
+Par exemple, j'ai un workflow qui récupère
+
+25
+00:00:44,860 --> 00:00:47,100
+les tâches de RapidoRH grâce au MCP,
+
+26
+00:00:47,100 --> 00:00:48,540
+les confie à un agent IA,
+
+27
+00:00:48,540 --> 00:00:50,000
+puis enregistre le résultat.
+
+28
+00:00:50,000 --> 00:00:51,680
+C'est là que j'ai compris quelque chose :
+
+29
+00:00:51,680 --> 00:00:54,180
+je ne devais pas seulement automatiser mes logiciels.
+
+30
+00:00:54,180 --> 00:00:55,600
+Je devais les rendre utilisables
+
+31
+00:00:55,600 --> 00:00:57,220
+directement par mes agents IA.
+
+32
+00:00:57,220 --> 00:00:58,640
+C'est pour ça que j'ai pivoté
+
+33
+00:00:58,640 --> 00:01:00,520
+vers la création de serveurs MCP.
+
+34
+00:01:00,520 --> 00:01:03,000
+Et aujourd'hui, chaque nouveau logiciel que je développe
+
+35
+00:01:03,000 --> 00:01:04,560
+peut devenir un outil supplémentaire
+
+36
+00:01:04,560 --> 00:01:06,060
+pour mon équipe d'agents IA.
+
+37
+00:01:06,060 --> 00:01:07,780
+n8n organise le trafic.
+
+38
+00:01:07,780 --> 00:01:09,720
+Les MCP ouvrent les autoroutes.
+
+39
+00:01:09,720 --> 00:01:11,480
+Et mes agents IA prennent le volant !
+
+40
+00:01:11,480 --> 00:01:14,130
+Et toi, tu utilises déjà les MCP avec n8n ?
+

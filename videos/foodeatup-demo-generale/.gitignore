@@ -1,0 +1,13 @@
+# Intermédiaires régénérables
+work/cards/
+work/seq/
+work/subs/
+work/body.mp4
+work/body_sub.mp4
+work/audio.m4a
+work/durations.json
+# Assets lourds non utilisés dans le montage final
+assets/*.gif
+assets/scene-chef-laptop.jpg
+assets/screen-predibot-laptop.png
+assets/screen-rh-dashboard.png

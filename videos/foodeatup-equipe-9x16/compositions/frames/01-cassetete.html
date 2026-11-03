@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 1 — Le casse-tête du planning (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background-color: #f7f9fc; background-image: radial-gradient(circle at 50% 26%, rgba(30,155,240,0.05), transparent 55%), radial-gradient(circle, rgba(27,42,65,0.09) 1.6px, transparent 1.6px); background-size: 100% 100%, 46px 46px; }
+        .shake { position: absolute; inset: 0; }
+
+        .figure { position: absolute; z-index: 2; top: 60px; left: 220px; width: 640px; height: 640px; mix-blend-mode: multiply; opacity: 0; will-change: transform, opacity; }
+        .figure img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+        .fiches { position: absolute; left: 110px; top: 740px; width: 860px; z-index: 3; display: flex; flex-direction: column; gap: 20px; }
+        .fiche { position: relative; box-sizing: border-box; background: #ffffff; border: 1.5px solid rgba(27,42,65,0.1); border-radius: 16px; padding: 24px 30px; display: flex; align-items: center; gap: 22px; transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+        .fiche::before { content: ""; position: absolute; left: 0; top: 16px; bottom: 16px; width: 7px; border-radius: 4px; background: #1e9bf0; }
+        .fiche-ic { flex: 0 0 60px; width: 60px; height: 60px; display: grid; place-items: center; background: rgba(30,155,240,0.08); border-radius: 50%; }
+        .fiche-ic svg { width: 34px; height: 34px; fill: none; stroke: #1e9bf0; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .fiche-label { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 38px; letter-spacing: -0.01em; color: #1b2a41; line-height: 1.12; }
+        .fiche-sub { display: block; font-family: "Inter", sans-serif; font-weight: 500; font-size: 24px; color: #566472; margin-top: 3px; }
+
+        .stamp { position: absolute; z-index: 5; left: 50%; top: 560px; transform: translateX(-50%) rotate(-6deg); padding: 20px 48px; border: 6px solid #1b2a41; border-radius: 16px; background: rgba(247,249,252,0.85); font-family: "Poppins", sans-serif; font-weight: 800; font-size: 60px; letter-spacing: 0.03em; color: #1b2a41; transform-origin: 50% 50%; opacity: 0; white-space: nowrap; will-change: transform, opacity; }
+      </style>
+
+      <div id="root" data-composition-id="01-cassetete" data-width="1080" data-height="1920" data-duration="10.897">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="10.397" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="10.397" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="shake">
+            <div class="figure" id="figure"><img src="public/planning-chaos.png" alt="Manager débordé par les plannings" /></div>
+            <div class="fiches">
+              <div class="fiche" id="f1"><span class="fiche-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2" /><path d="M8 2v4M16 2v4M3 10h18M7 15h4M13 15h3" /></svg></span><span class="fiche-label">Remplir les plannings<span class="fiche-sub">chaque semaine</span></span></div>
+              <div class="fiche" id="f2"><span class="fiche-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg></span><span class="fiche-label">Suivre qui pointe<span class="fiche-sub">arrivées, départs</span></span></div>
+              <div class="fiche" id="f3"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M17 8l2 2 4-4" /></svg></span><span class="fiche-label">Absences & remplas<span class="fiche-sub">de dernière minute</span></span></div>
+              <div class="fiche" id="f4"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M8 7V3M16 7V3M4 11h16" /><rect x="4" y="5" width="16" height="16" rx="2" /><path d="M9 16l1.5 1.5L14 14" /></svg></span><span class="fiche-label">Valider les congés<span class="fiche-sub">sans rien oublier</span></span></div>
+            </div>
+            <div class="stamp" id="stamp">CASSE-TÊTE</div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        (function () {
+          var root = document.querySelector('[data-composition-id="01-cassetete"][id="root"]') || document.querySelector('[data-composition-id="01-cassetete"]');
+          var tl = gsap.timeline({ paused: true });
+          var shakeEl = root.querySelector(".shake");
+          tl.fromTo(root.querySelector("#figure"), { y: -34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 0.0);
+          var cues = [0.6, 2.0, 3.4, 5.4];
+          ["#f1", "#f2", "#f3", "#f4"].forEach(function (id, i) {
+            tl.fromTo(root.querySelector(id), { scale: 0.85, y: 30, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, cues[i]);
+          });
+          tl.fromTo(root.querySelector("#stamp"), { scale: 1.6, opacity: 0, rotation: -6 }, { scale: 1, opacity: 1, rotation: -6, duration: 0.4, ease: "power4.out" }, 8.2);
+          tl.to(root.querySelector(".fiches"), { scale: 0.96, duration: 0.8, ease: "power2.inOut" }, 8.4);
+          var shk = { t: 0 };
+          tl.to(shk, { t: 1, duration: 1.1, ease: "none", onUpdate: function () {
+            var tt = shk.t; var env = Math.max(0, Math.min(1, tt / 0.16, (1 - tt) / 0.18));
+            var ph = tt * 1.1 * Math.PI * 2;
+            shakeEl.style.transform = "translate(" + (Math.sin(ph * 3.5) * 3.2 * env) + "px," + (Math.sin(ph * 2.7 + 1.1) * 2.3 * env) + "px)";
+          } }, 8.4);
+          window.__timelines["01-cassetete"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

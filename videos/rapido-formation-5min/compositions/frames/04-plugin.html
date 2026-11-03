@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>S4 — Le plugin Claude Code</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+        .photo { position: absolute; z-index: 2; left: 60px; top: 90px; width: 720px; height: 900px; border-radius: 30px; overflow: hidden; border: 1.5px solid rgba(27,42,65,0.08); opacity: 0; will-change: transform, opacity; }
+        .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; display: block; }
+
+        .eyebrow-wrap { position: absolute; left: 850px; top: 120px; z-index: 3; }
+        .eyebrow-line { width: 64px; height: 5px; border-radius: 3px; background: #00a8f0; margin-bottom: 16px; transform-origin: left; opacity: 0; will-change: transform, opacity; }
+        .eyebrow { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 32px; letter-spacing: 0.08em; text-transform: uppercase; color: #0077b0; opacity: 0; margin: 0; will-change: transform, opacity; }
+        .title { position: absolute; left: 850px; top: 190px; width: 980px; z-index: 3; font-family: "Poppins", sans-serif; font-weight: 800; font-size: 58px; line-height: 1.06; letter-spacing: -0.02em; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+
+        .cards { position: absolute; left: 850px; top: 430px; width: 1000px; z-index: 3; display: flex; flex-direction: column; gap: 22px; }
+        .card { box-sizing: border-box; background: #ffffff; border: 1.5px solid rgba(0,168,240,0.2); border-radius: 22px; padding: 26px 30px; display: flex; align-items: center; gap: 26px; opacity: 0; transform-origin: 50% 50%; will-change: transform, opacity; }
+        .card .ic { flex: none; width: 84px; height: 84px; border-radius: 20px; background: rgba(0,168,240,0.1); display: grid; place-items: center; }
+        .card .ic svg { width: 46px; height: 46px; fill: none; stroke: #00a8f0; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+        .card.lock .ic { background: rgba(5,150,105,0.1); }
+        .card.lock .ic svg { stroke: #059669; }
+        .card .tx b { display: block; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 40px; color: #1b2a41; }
+        .card .tx span { display: block; margin-top: 4px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 28px; color: #566472; }
+        .card .num { margin-left: auto; font-family: "Poppins", sans-serif; font-weight: 800; font-size: 54px; color: #00a8f0; }
+      </style>
+
+      <div id="root" data-composition-id="04-plugin" data-width="1920" data-height="1080" data-duration="33.702">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="33.202" data-track-index="0"></div>
+        <div id="photo-clip" class="clip photo" data-start="0" data-duration="33.202" data-track-index="1">
+          <img src="public/img2-terminal.png" alt="Terminal Claude Code" />
+        </div>
+        <div id="content" class="clip" data-start="0" data-duration="33.202" data-track-index="2" style="position:absolute; inset:0;">
+          <div class="eyebrow-wrap"><div class="eyebrow-line" id="eyebrow-line"></div><p class="eyebrow" id="eyebrow">Le plugin BraindCode pour Claude</p></div>
+          <h1 class="title" id="title">Vous parlez.<br />L'IA agit dans vos outils.</h1>
+          <div class="cards">
+            <div class="card" id="c1"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" /></svg></span><span class="tx"><b>Skills</b><span>modes d'emploi experts par tâche</span></span><span class="num">60+</span></div>
+            <div class="card" id="c2"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" /><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1" /></svg></span><span class="tx"><b>Agents spécialisés</b><span>commercial · CM · chef de projet · DAF</span></span></div>
+            <div class="card lock" id="c3"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2" /><path d="M8 11V7a4 4 0 0 1 8 0v4" /></svg></span><span class="tx"><b>Garde-fous</b><span>rien envoyé/payé/supprimé sans accord</span></span></div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo(".photo", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.9, ease: "power3.out" }, 0.0);
+        tl.fromTo("#eyebrow-line", { scaleX: 0, opacity: 0 }, { scaleX: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.3);
+        tl.fromTo("#eyebrow", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.5);
+        tl.fromTo("#title", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 0.9);
+        tl.fromTo("#c1", { y: 26, scale: 0.95, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.55, ease: "power3.out" }, 9.5);
+        tl.fromTo("#c1 .num", { textContent: 0 }, { textContent: 60, duration: 1.2, ease: "power2.out", snap: { textContent: 1 }, onUpdate: function(){ var e=document.querySelector("#c1 .num"); if(e) e.textContent = Math.round(this.targets()[0].textContent)+"+"; } }, 10.0);
+        tl.fromTo("#c2", { y: 26, scale: 0.95, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.55, ease: "power3.out" }, 17.5);
+        tl.fromTo("#c3", { y: 26, scale: 0.95, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.55, ease: "power3.out" }, 24.5);
+        tl.fromTo("#c3 .ic", { scale: 1 }, { scale: 1.12, duration: 0.25, yoyo: true, repeat: 3, ease: "power2.inOut" }, 25.2);
+        window.__timelines["04-plugin"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,459 @@
+{
+ "voices": [
+  {
+   "frame": 1,
+   "path": "assets/voice/routine.wav",
+   "duration_s": 10.913,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Trois",
+     "start": 0.0,
+     "end": 0.364
+    },
+    {
+     "id": "w1",
+     "text": "briques.",
+     "start": 0.364,
+     "end": 0.728
+    },
+    {
+     "id": "w2",
+     "text": "Les",
+     "start": 0.728,
+     "end": 1.091
+    },
+    {
+     "id": "w3",
+     "text": "skills",
+     "start": 1.091,
+     "end": 1.455
+    },
+    {
+     "id": "w4",
+     "text": ":",
+     "start": 1.455,
+     "end": 1.819
+    },
+    {
+     "id": "w5",
+     "text": "des",
+     "start": 1.819,
+     "end": 2.183
+    },
+    {
+     "id": "w6",
+     "text": "modes",
+     "start": 2.183,
+     "end": 2.546
+    },
+    {
+     "id": "w7",
+     "text": "d'emploi",
+     "start": 2.546,
+     "end": 2.91
+    },
+    {
+     "id": "w8",
+     "text": "experts.",
+     "start": 2.91,
+     "end": 3.274
+    },
+    {
+     "id": "w9",
+     "text": "Les",
+     "start": 3.274,
+     "end": 3.638
+    },
+    {
+     "id": "w10",
+     "text": "agents",
+     "start": 3.638,
+     "end": 4.002
+    },
+    {
+     "id": "w11",
+     "text": ":",
+     "start": 4.002,
+     "end": 4.365
+    },
+    {
+     "id": "w12",
+     "text": "des",
+     "start": 4.365,
+     "end": 4.729
+    },
+    {
+     "id": "w13",
+     "text": "spécialistes",
+     "start": 4.729,
+     "end": 5.093
+    },
+    {
+     "id": "w14",
+     "text": "qui",
+     "start": 5.093,
+     "end": 5.457
+    },
+    {
+     "id": "w15",
+     "text": "prennent",
+     "start": 5.457,
+     "end": 5.82
+    },
+    {
+     "id": "w16",
+     "text": "le",
+     "start": 5.82,
+     "end": 6.184
+    },
+    {
+     "id": "w17",
+     "text": "relais.",
+     "start": 6.184,
+     "end": 6.548
+    },
+    {
+     "id": "w18",
+     "text": "Les",
+     "start": 6.548,
+     "end": 6.912
+    },
+    {
+     "id": "w19",
+     "text": "garde-fous",
+     "start": 6.912,
+     "end": 7.276
+    },
+    {
+     "id": "w20",
+     "text": ":",
+     "start": 7.276,
+     "end": 7.639
+    },
+    {
+     "id": "w21",
+     "text": "rien",
+     "start": 7.639,
+     "end": 8.003
+    },
+    {
+     "id": "w22",
+     "text": "n'est",
+     "start": 8.003,
+     "end": 8.367
+    },
+    {
+     "id": "w23",
+     "text": "envoyé,",
+     "start": 8.367,
+     "end": 8.731
+    },
+    {
+     "id": "w24",
+     "text": "payé",
+     "start": 8.731,
+     "end": 9.094
+    },
+    {
+     "id": "w25",
+     "text": "ou",
+     "start": 9.094,
+     "end": 9.458
+    },
+    {
+     "id": "w26",
+     "text": "supprimé",
+     "start": 9.458,
+     "end": 9.822
+    },
+    {
+     "id": "w27",
+     "text": "sans",
+     "start": 9.822,
+     "end": 10.186
+    },
+    {
+     "id": "w28",
+     "text": "ton",
+     "start": 10.186,
+     "end": 10.55
+    },
+    {
+     "id": "w29",
+     "text": "accord.",
+     "start": 10.55,
+     "end": 10.913
+    }
+   ]
+  },
+  {
+   "frame": 2,
+   "path": "assets/voice/prompt.wav",
+   "duration_s": 4.272,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Tu",
+     "start": 0.0,
+     "end": 0.267
+    },
+    {
+     "id": "w1",
+     "text": "dis",
+     "start": 0.267,
+     "end": 0.534
+    },
+    {
+     "id": "w2",
+     "text": ":",
+     "start": 0.534,
+     "end": 0.801
+    },
+    {
+     "id": "w3",
+     "text": "qui",
+     "start": 0.801,
+     "end": 1.068
+    },
+    {
+     "id": "w4",
+     "text": "peut",
+     "start": 1.068,
+     "end": 1.335
+    },
+    {
+     "id": "w5",
+     "text": "m'aider",
+     "start": 1.335,
+     "end": 1.602
+    },
+    {
+     "id": "w6",
+     "text": "à",
+     "start": 1.602,
+     "end": 1.869
+    },
+    {
+     "id": "w7",
+     "text": "relancer",
+     "start": 1.869,
+     "end": 2.136
+    },
+    {
+     "id": "w8",
+     "text": "un",
+     "start": 2.136,
+     "end": 2.403
+    },
+    {
+     "id": "w9",
+     "text": "client",
+     "start": 2.403,
+     "end": 2.67
+    },
+    {
+     "id": "w10",
+     "text": "?",
+     "start": 2.67,
+     "end": 2.937
+    },
+    {
+     "id": "w11",
+     "text": "Et",
+     "start": 2.937,
+     "end": 3.204
+    },
+    {
+     "id": "w12",
+     "text": "l'agent",
+     "start": 3.204,
+     "end": 3.471
+    },
+    {
+     "id": "w13",
+     "text": "commercial",
+     "start": 3.471,
+     "end": 3.738
+    },
+    {
+     "id": "w14",
+     "text": "se",
+     "start": 3.738,
+     "end": 4.005
+    },
+    {
+     "id": "w15",
+     "text": "réveille.",
+     "start": 4.005,
+     "end": 4.272
+    }
+   ]
+  },
+  {
+   "frame": 3,
+   "path": "assets/voice/cas.wav",
+   "duration_s": 8.638,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Il",
+     "start": 0.0,
+     "end": 0.332
+    },
+    {
+     "id": "w1",
+     "text": "prépare",
+     "start": 0.332,
+     "end": 0.664
+    },
+    {
+     "id": "w2",
+     "text": "la",
+     "start": 0.664,
+     "end": 0.997
+    },
+    {
+     "id": "w3",
+     "text": "relance,",
+     "start": 0.997,
+     "end": 1.329
+    },
+    {
+     "id": "w4",
+     "text": "choisit",
+     "start": 1.329,
+     "end": 1.661
+    },
+    {
+     "id": "w5",
+     "text": "le",
+     "start": 1.661,
+     "end": 1.993
+    },
+    {
+     "id": "w6",
+     "text": "bon",
+     "start": 1.993,
+     "end": 2.326
+    },
+    {
+     "id": "w7",
+     "text": "ton,",
+     "start": 2.326,
+     "end": 2.658
+    },
+    {
+     "id": "w8",
+     "text": "puis",
+     "start": 2.658,
+     "end": 2.99
+    },
+    {
+     "id": "w9",
+     "text": "s'arrête",
+     "start": 2.99,
+     "end": 3.322
+    },
+    {
+     "id": "w10",
+     "text": "et",
+     "start": 3.322,
+     "end": 3.654
+    },
+    {
+     "id": "w11",
+     "text": "te",
+     "start": 3.654,
+     "end": 3.987
+    },
+    {
+     "id": "w12",
+     "text": "demande",
+     "start": 3.987,
+     "end": 4.319
+    },
+    {
+     "id": "w13",
+     "text": ":",
+     "start": 4.319,
+     "end": 4.651
+    },
+    {
+     "id": "w14",
+     "text": "je",
+     "start": 4.651,
+     "end": 4.983
+    },
+    {
+     "id": "w15",
+     "text": "l'envoie",
+     "start": 4.983,
+     "end": 5.316
+    },
+    {
+     "id": "w16",
+     "text": "?",
+     "start": 5.316,
+     "end": 5.648
+    },
+    {
+     "id": "w17",
+     "text": "C'est",
+     "start": 5.648,
+     "end": 5.98
+    },
+    {
+     "id": "w18",
+     "text": "toi",
+     "start": 5.98,
+     "end": 6.312
+    },
+    {
+     "id": "w19",
+     "text": "qui",
+     "start": 6.312,
+     "end": 6.644
+    },
+    {
+     "id": "w20",
+     "text": "valides.",
+     "start": 6.644,
+     "end": 6.977
+    },
+    {
+     "id": "w21",
+     "text": "Toujours.",
+     "start": 6.977,
+     "end": 7.309
+    },
+    {
+     "id": "w22",
+     "text": "L'IA",
+     "start": 7.309,
+     "end": 7.641
+    },
+    {
+     "id": "w23",
+     "text": "propose,",
+     "start": 7.641,
+     "end": 7.973
+    },
+    {
+     "id": "w24",
+     "text": "tu",
+     "start": 7.973,
+     "end": 8.306
+    },
+    {
+     "id": "w25",
+     "text": "décides.",
+     "start": 8.306,
+     "end": 8.638
+    }
+   ]
+  }
+ ],
+ "bgm": null,
+ "sfx": []
+}

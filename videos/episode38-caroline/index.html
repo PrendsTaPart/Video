@@ -1,0 +1,250 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 38 : Caroline décroche</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#fff;font-family:'Fredoka',sans-serif}
+#stage{position:absolute;inset:0;overflow:hidden;background:#fff}
+#world{position:absolute;inset:0;transform-origin:540px 900px}
+.tiles{position:absolute;left:0;right:0;top:0;height:1180px;background-color:#f4f6f8;
+ background-image:linear-gradient(#dfe5ea 3px,transparent 3px),linear-gradient(90deg,#dfe5ea 3px,transparent 3px);background-size:120px 90px}
+.floor{position:absolute;left:0;right:0;top:1180px;height:740px;background:#e9dccb}
+.floor:before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(0,0,0,.05) 2px,transparent 2px);background-size:180px 100%}
+.counter{position:absolute;left:0;right:0;top:1090px;height:110px;background:#c9d2da;border-top:10px solid #aeb9c3}
+.hood{position:absolute;left:70px;top:250px;width:470px;height:150px;background:#cfd6dc;clip-path:polygon(18% 0,82% 0,100% 100%,0 100%);border-radius:10px}
+.hood:after{content:"";position:absolute;left:30%;right:30%;top:-260px;height:260px;background:#cfd6dc}
+.stove{position:absolute;left:60px;top:960px;width:500px;height:140px;background:#3a4450;border-radius:16px}
+.stove:after{content:"";position:absolute;left:20px;right:20px;top:24px;height:26px;border-radius:8px;background:#2a323b}
+.shelf{position:absolute;left:640px;top:330px;width:360px;height:18px;background:#b98a5a;border-radius:6px}
+.desk{position:absolute;left:600px;top:1040px;width:440px;height:60px;background:#2D7FF9;border-radius:14px 14px 0 0}
+.wallphone{position:absolute;left:870px;top:560px;width:120px;height:170px;transform-origin:50% 0}
+/* HUD */
+.pill{position:absolute;background:#fff;border:5px solid #111;border-radius:26px;box-shadow:0 8px 0 #111}
+#cnt{left:44px;top:70px;padding:16px 28px;display:flex;align-items:center;gap:18px;z-index:30}
+#cnt .l{font-weight:600;font-size:30px;color:#333;line-height:1}
+#cnt .n{font-weight:700;font-size:78px;line-height:.9;color:#FF8A1F;min-width:96px;text-align:center}
+#board{left:620px;top:60px;width:410px;padding:20px 26px;z-index:30;background:#1f2a24;border-color:#7a5233;box-shadow:0 8px 0 #4d331f;color:#f1f1e6}
+#board h4{font-size:30px;font-weight:700;text-align:center;letter-spacing:1px}
+#board p{font-size:24px;font-weight:500;margin-top:6px;opacity:.9}
+#full{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%) rotate(-10deg);font-family:'Inter';font-weight:900;font-size:68px;color:#fff;background:#e5322d;padding:6px 24px;border-radius:12px;border:5px solid #fff;letter-spacing:2px}
+/* notifications */
+#notifs{position:absolute;left:60px;right:60px;top:300px;z-index:35}
+.nt{position:absolute;left:0;right:0;background:#fff;border:5px solid #111;border-radius:30px;box-shadow:0 10px 0 #111;padding:22px 28px;display:flex;gap:22px;align-items:center}
+.nt .ic{width:86px;height:86px;border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:50px;flex:none}
+.nt b{display:block;font-size:38px;font-weight:700;color:#111;line-height:1.1}
+.nt span{display:block;font-size:28px;color:#555;font-weight:500;margin-top:4px}
+.nt .ok{margin-left:auto;font-family:'Inter';font-weight:800;font-size:24px;color:#fff;background:#1fb35a;border-radius:999px;padding:8px 18px;flex:none}
+/* appel */
+#call{position:absolute;left:600px;top:400px;width:420px;z-index:34;background:#111;color:#fff;border-radius:34px;padding:22px 26px;box-shadow:0 12px 0 #2D7FF9}
+#call .t{font-size:26px;color:#9fd0ff;font-weight:600}
+#call .w{font-size:38px;font-weight:700;margin-top:4px}
+#call .wave{display:flex;gap:8px;align-items:center;height:60px;margin-top:10px}
+#call .wave i{display:block;width:12px;border-radius:6px;background:#FF8A1F}
+/* bulle client */
+#bub{position:absolute;left:50px;top:740px;z-index:36;display:flex;align-items:center;gap:20px}
+#bub .av{width:150px;height:150px;border-radius:50%;background:#ffd9a8;border:6px solid #111;overflow:hidden;position:relative;flex:none}
+#bub .tx{background:#fff;border:5px solid #111;border-radius:34px;padding:22px 30px;font-size:40px;font-weight:600;box-shadow:0 8px 0 #111;max-width:780px}
+/* ticket cuisine */
+#ticket{position:absolute;left:560px;top:600px;width:340px;z-index:33;background:#fffdf3;border:4px solid #111;padding:22px 24px 30px;font-family:'Inter';box-shadow:0 10px 0 rgba(0,0,0,.25)}
+#ticket h5{font-size:26px;font-weight:900;letter-spacing:2px;border-bottom:3px dashed #111;padding-bottom:10px}
+#ticket p{font-size:30px;font-weight:800;margin-top:14px}#ticket small{display:block;font-size:22px;font-weight:600;color:#555;margin-top:8px}
+/* plan de salle */
+#plan{position:absolute;left:600px;top:760px;width:430px;height:250px;z-index:32;background:#fff;border:5px solid #111;border-radius:26px;box-shadow:0 8px 0 #111;padding:16px 20px}
+#plan h6{font-family:'Inter';font-size:20px;font-weight:800;letter-spacing:2px;color:#555}
+#plan .tb{position:absolute;width:74px;height:74px;border-radius:14px;background:#e5e9ee;border:4px solid #b9c2cb;display:flex;align-items:center;justify-content:center;font-family:'Inter';font-weight:800;font-size:22px;color:#777}
+#plan .tb.on{background:#FF8A1F;border-color:#c25f00;color:#fff}
+/* sous-titres */
+#cap{position:absolute;left:50px;right:50px;top:1430px;z-index:90;text-align:center;font-family:'Inter';font-weight:900;font-size:84px;line-height:1.08;letter-spacing:-1px;color:#fff;
+ -webkit-text-stroke:14px #111;paint-order:stroke fill}
+#cap i{font-style:normal;display:inline-block}#cap i.k{color:#FFC21A}
+#who{position:absolute;left:0;right:0;top:1340px;text-align:center;z-index:61}
+#who span{display:inline-block;font-weight:700;font-size:34px;padding:8px 26px;border-radius:999px;color:#fff;border:4px solid #111}
+#brand{position:absolute;left:0;right:0;bottom:46px;text-align:center;z-index:61;font-family:'Inter';font-weight:800;font-size:30px;color:#2D7FF9;letter-spacing:1px}
+#brand b{color:#FF8A1F}
+#flash{position:absolute;inset:0;background:#fff;z-index:80;pointer-events:none;opacity:0}
+#earlier{position:absolute;left:50%;top:880px;transform:translate(-50%,-50%);z-index:70;font-family:'Inter';font-weight:900;font-size:60px;color:#fff;background:#111;padding:14px 34px;border-radius:20px}
+/* carte finale */
+#end{position:absolute;inset:0;z-index:75;background:#2D7FF9;display:none}
+#end .bg{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.12) 3px,transparent 3px);background-size:70px 70px}
+#end .card{position:absolute;left:70px;right:70px;top:830px;background:#fff;border:6px solid #111;border-radius:44px;box-shadow:0 14px 0 #111;padding:46px 40px;text-align:center}
+#end .card h2{font-family:'Inter';font-weight:900;font-size:58px;line-height:1.05;color:#111}
+#end .card p{font-size:36px;color:#444;margin-top:18px;font-weight:500}
+#end .kw{display:inline-block;margin-top:30px;font-family:'Inter';font-weight:900;font-size:76px;color:#fff;background:#FF8A1F;border:6px solid #111;border-radius:26px;padding:10px 36px;box-shadow:0 10px 0 #111}
+#end .logo{position:absolute;left:0;right:0;top:1640px;text-align:center;font-family:'Inter';font-weight:900;font-size:56px;color:#fff;letter-spacing:1px}
+#end .logo b{color:#FFC21A}
+#end .chips{position:absolute;left:60px;right:60px;top:1740px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+#end .chips span{background:rgba(255,255,255,.18);color:#fff;font-weight:600;font-size:28px;padding:10px 20px;border-radius:999px}
+#thumb{position:absolute;inset:0;z-index:100;display:none}
+</style></head><body><div id="stage">
+<div id="world">
+ <div class="tiles"></div><div class="floor"></div>
+ <div class="hood"></div>
+ <div class="shelf"></div>
+ <svg style="position:absolute;left:660px;top:250px" width="330" height="90" viewBox="0 0 330 90"><rect x="10" y="20" width="60" height="70" rx="10" fill="#e8b04a"/><rect x="90" y="5" width="44" height="85" rx="8" fill="#7cc576"/><circle cx="190" cy="62" r="28" fill="#e5322d"/><rect x="240" y="30" width="70" height="60" rx="12" fill="#9ec9ff"/></svg>
+ <svg class="wallphone" id="wph" viewBox="0 0 120 170"><rect x="10" y="10" width="100" height="150" rx="20" fill="#111"/><rect x="24" y="26" width="72" height="44" rx="8" fill="#9fd0ff"/><g fill="#555"><circle cx="38" cy="92" r="8"/><circle cx="60" cy="92" r="8"/><circle cx="82" cy="92" r="8"/><circle cx="38" cy="116" r="8"/><circle cx="60" cy="116" r="8"/><circle cx="82" cy="116" r="8"/><circle cx="60" cy="140" r="8"/></g></svg>
+ <svg id="rings" style="position:absolute;left:820px;top:520px;z-index:3" width="220" height="250" viewBox="0 0 220 250"><g fill="none" stroke="#e5322d" stroke-width="9" stroke-linecap="round"><path d="M30 60 Q10 125 30 190"/><path d="M8 40 Q-16 125 8 210"/><path d="M190 60 Q210 125 190 190"/><path d="M212 40 Q236 125 212 210"/></g></svg>
+ <div class="counter"></div>
+ <div class="stove" style="z-index:7"></div>
+ <!-- flammes + poêles -->
+ <svg id="pans" style="position:absolute;left:60px;top:900px;z-index:7" width="500" height="120" viewBox="0 0 500 120">
+  <g id="fl"><path class="f" d="M70 100 Q60 60 80 40 Q85 70 95 60 Q100 85 90 100Z" fill="#FF8A1F"/><path class="f" d="M230 100 Q220 55 245 35 Q248 70 260 58 Q264 85 252 100Z" fill="#FF8A1F"/><path class="f" d="M390 100 Q380 60 402 42 Q406 72 416 62 Q420 86 410 100Z" fill="#FF8A1F"/></g>
+  <g fill="#222"><ellipse cx="82" cy="58" rx="62" ry="16"/><rect x="140" y="52" width="60" height="10" rx="5"/><ellipse cx="245" cy="52" rx="62" ry="16"/><ellipse cx="404" cy="58" rx="62" ry="16"/><rect x="460" y="52" width="40" height="10" rx="5"/></g>
+  <g fill="#fff" opacity=".85" id="steam"><circle cx="70" cy="30" r="10"/><circle cx="250" cy="20" r="12"/><circle cx="400" cy="28" r="9"/></g>
+ </svg>
+ <!-- CHEF -->
+ <svg id="chef" style="position:absolute;left:120px;top:430px;z-index:5;transform-origin:200px 600px" width="400" height="640" viewBox="0 0 400 640">
+  <g id="toque"><ellipse cx="200" cy="70" rx="110" ry="62" fill="#fff" stroke="#111" stroke-width="7"/><circle cx="120" cy="80" r="50" fill="#fff" stroke="#111" stroke-width="7"/><circle cx="280" cy="80" r="50" fill="#fff" stroke="#111" stroke-width="7"/><rect x="118" y="90" width="164" height="70" fill="#fff" stroke="#111" stroke-width="7"/></g>
+  <rect x="60" y="360" width="280" height="300" rx="60" fill="#fff" stroke="#111" stroke-width="7"/>
+  <g fill="#111"><circle cx="175" cy="430" r="8"/><circle cx="225" cy="430" r="8"/><circle cx="175" cy="480" r="8"/><circle cx="225" cy="480" r="8"/></g>
+  <path d="M150 370 L200 410 L250 370" fill="#e5322d" stroke="#111" stroke-width="6"/>
+  <g id="armL"><path d="M75 420 Q10 470 40 540" fill="none" stroke="#111" stroke-width="44" stroke-linecap="round"/><path d="M75 420 Q10 470 40 540" fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round"/><circle cx="42" cy="548" r="26" fill="#f2c39b" stroke="#111" stroke-width="6"/></g>
+  <g id="armR"><path d="M325 420 Q390 470 360 540" fill="none" stroke="#111" stroke-width="44" stroke-linecap="round"/><path d="M325 420 Q390 470 360 540" fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round"/><circle cx="358" cy="548" r="26" fill="#f2c39b" stroke="#111" stroke-width="6"/></g>
+  <circle cx="200" cy="250" r="118" fill="#f2c39b" stroke="#111" stroke-width="7"/>
+  <circle cx="86" cy="255" r="22" fill="#f2c39b" stroke="#111" stroke-width="6"/><circle cx="314" cy="255" r="22" fill="#f2c39b" stroke="#111" stroke-width="6"/>
+  <g id="cbrow"><path d="M135 200 Q160 185 182 198" fill="none" stroke="#111" stroke-width="9" stroke-linecap="round"/><path d="M218 198 Q240 185 265 200" fill="none" stroke="#111" stroke-width="9" stroke-linecap="round"/></g>
+  <g id="ceyeN" fill="#111"><circle cx="160" cy="238" r="13"/><circle cx="240" cy="238" r="13"/></g>
+  <g id="ceyeW"><circle cx="160" cy="238" r="26" fill="#fff" stroke="#111" stroke-width="6"/><circle cx="240" cy="238" r="26" fill="#fff" stroke="#111" stroke-width="6"/><circle cx="160" cy="240" r="11" fill="#111"/><circle cx="240" cy="240" r="11" fill="#111"/></g>
+  <path d="M200 255 Q186 285 205 290" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+  <path d="M120 312 Q160 290 200 306 Q240 290 280 312 Q245 330 200 318 Q155 330 120 312Z" fill="#5a3a22" stroke="#111" stroke-width="5"/>
+  <g id="cmC"><path d="M175 340 Q200 352 225 340" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round"/></g>
+  <g id="cmO"><ellipse cx="200" cy="348" rx="26" ry="22" fill="#7a1f1f" stroke="#111" stroke-width="6"/></g>
+  <g id="sweat" fill="#7cc8ff" stroke="#111" stroke-width="4"><path d="M300 170 Q312 195 300 205 Q288 195 300 170Z"/><path d="M96 190 Q106 210 96 218 Q86 210 96 190Z"/></g>
+ </svg>
+ <!-- CAROLINE -->
+ <svg id="caro" style="position:absolute;left:600px;top:520px;z-index:6;transform-origin:220px 560px" width="440" height="560" viewBox="0 0 440 560">
+  <path d="M90 300 Q220 250 350 300 L380 560 L60 560Z" fill="#2D7FF9" stroke="#111" stroke-width="7"/>
+  <path d="M180 300 L220 360 L260 300" fill="#fff" stroke="#111" stroke-width="6"/>
+  <rect x="268" y="390" width="74" height="38" rx="10" fill="#fff" stroke="#111" stroke-width="5"/><text x="305" y="417" font-family="Inter" font-weight="900" font-size="20" text-anchor="middle" fill="#FF8A1F">FOOD</text>
+  <path d="M95 140 Q90 30 220 28 Q350 30 345 140 L350 280 Q300 300 290 230 L150 230 Q140 300 90 280Z" fill="#5a3418" stroke="#111" stroke-width="7"/>
+  <circle cx="220" cy="20" r="40" fill="#5a3418" stroke="#111" stroke-width="7"/>
+  <ellipse cx="220" cy="165" rx="105" ry="115" fill="#f5c9a5" stroke="#111" stroke-width="7"/>
+  <path d="M118 120 Q180 60 300 110 Q270 70 220 62 Q140 62 118 120Z" fill="#5a3418"/>
+  <g id="keyeO" fill="#111"><ellipse cx="180" cy="168" rx="12" ry="15"/><ellipse cx="262" cy="168" rx="12" ry="15"/><circle cx="184" cy="162" r="4" fill="#fff"/><circle cx="266" cy="162" r="4" fill="#fff"/></g>
+  <g id="keyeC" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round"><path d="M166 170 Q180 158 194 170"/><path d="M248 170 Q262 158 276 170"/></g>
+  <g fill="#ff9e8a" opacity=".7"><ellipse cx="150" cy="205" rx="20" ry="12"/><ellipse cx="292" cy="205" rx="20" ry="12"/></g>
+  <g id="kmC"><path d="M195 228 Q221 248 247 228" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round"/></g>
+  <g id="kmO"><path d="M192 224 Q221 270 250 224Z" fill="#7a1f1f" stroke="#111" stroke-width="6" stroke-linejoin="round"/></g>
+  <!-- casque -->
+  <path d="M104 160 Q100 40 220 40 Q340 40 336 160" fill="none" stroke="#111" stroke-width="16"/>
+  <rect x="88" y="140" width="34" height="62" rx="14" fill="#FF8A1F" stroke="#111" stroke-width="6"/>
+  <rect x="318" y="140" width="34" height="62" rx="14" fill="#FF8A1F" stroke="#111" stroke-width="6"/>
+  <path d="M106 200 Q110 250 168 252" fill="none" stroke="#111" stroke-width="8"/>
+  <circle id="mic" cx="172" cy="252" r="14" fill="#FF8A1F" stroke="#111" stroke-width="5"/>
+ </svg>
+ <div class="desk"></div>
+ <div id="plan"><h6>PLAN DE SALLE · CE SOIR</h6>
+  <div class="tb" id="t1" style="left:24px;top:60px">T1</div><div class="tb" id="t2" style="left:118px;top:60px">T2</div><div class="tb" id="t3" style="left:212px;top:60px">T3</div><div class="tb" id="t4" style="left:306px;top:60px">T4</div>
+  <div class="tb" id="t5" style="left:24px;top:150px;width:168px">T5·6</div><div class="tb" id="t7" style="left:212px;top:150px;width:168px">T7·8</div></div>
+ <div id="ticket"><h5>CUISINE · À EMPORTER</h5><p>2 × Pizza</p><small>Prêtes dans 20 min · reçu par Caroline</small></div>
+</div>
+<div class="pill" id="cnt"><div class="l">Clients<br>ce soir</div><div class="n" id="cn">0</div></div>
+<div class="pill" id="board"><h4>MENU DU JOUR</h4><p>· Burger maison</p><p>· Pizza du chef</p><p>· Tiramisu</p><div id="full">COMPLET</div></div>
+<div id="call"><div class="t">📞 Appel entrant</div><div class="w">Caroline décroche</div><div class="wave" id="wave"></div></div>
+<div id="bub"><div class="av"><svg width="150" height="150" viewBox="0 0 150 150"><circle cx="75" cy="64" r="34" fill="#f2c39b" stroke="#111" stroke-width="5"/><path d="M41 58 Q45 22 75 24 Q108 24 110 58 Q96 40 75 42 Q55 40 41 58Z" fill="#222"/><path d="M20 150 Q75 96 130 150Z" fill="#7cc576" stroke="#111" stroke-width="5"/><circle cx="63" cy="66" r="4"/><circle cx="88" cy="66" r="4"/><path d="M66 82 Q75 88 84 82" fill="none" stroke="#111" stroke-width="4"/></svg></div><div class="tx" id="bubt"></div></div>
+<div id="notifs"></div>
+<div id="who"><span id="whos"></span></div>
+<div id="cap"></div>
+<div id="brand">FOOD<b>EAT</b>UP · Caroline, l'agent vocal</div>
+<div id="earlier">Une heure plus tôt…</div>
+<div id="end"><div class="bg"></div>
+ <svg style="position:absolute;left:330px;top:200px" width="420" height="540" viewBox="0 0 440 560" id="endcaro"></svg>
+ <div class="card"><h2>Toi, tu cuisines.<br>Caroline décroche.</h2><p>Réservations, commandes, rappels clients : 24 h/24, même pendant le coup de feu.</p><div class="kw">Commente CAROLINE</div></div>
+ <div class="logo">FOOD<b>EAT</b>UP</div>
+ <div class="chips"><span>Téléphone</span><span>WhatsApp</span><span>Plan de salle</span><span>Cuisine</span></div>
+</div>
+<div id="flash"></div>
+<div id="thumb"></div>
+</div>
+<script src="cfg.js"></script>
+<script>
+const C=window.CFG, $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), eo=x=>1-Math.pow(1-x,3), ebk=x=>{const c=1.7;x=cl(x);return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const L=C.lines, T=i=>L[i].t0, E=i=>L[i].t1;
+const KW=new Set(['resto','Moi','décroche','FoodEatUp','Caroline','réservé','cuisine','20','minutes','dix','anniversaire','Complet','gâteau','cuisines','CAROLINE','démo','trois','feu','quatre','pizzas','cuisinais']);
+const NAMES={chef:['Le chef','#e5322d'],caro:['Caroline · FoodEatUp','#2D7FF9'],cli:['Client au téléphone','#1fb35a']};
+// clone Caroline pour la carte finale
+$('endcaro').innerHTML=$('caro').innerHTML;
+for(let k=0;k<9;k++){const i=document.createElement('i');$('wave').appendChild(i)}
+const NT=[ // [temps, icône, fond, titre, détail]
+ [T(6)+.15,'📅','#fff1e0','Réservation · 4 pers.','Ce soir 20 h · table T1'],
+ [T(8)+.15,'🍕','#ffe7e7','Commande à emporter','2 pizzas · envoyée en cuisine'],
+ [T(10)+1.0,'⏳','#eef1f5','20 h complet','Proposé : 21 h 30'],
+ [T(10)+2.4,'🎂','#e8f1ff','Réservation · 10 pers.','21 h 30 · anniversaire · gâteau']];
+const nts=NT.map(n=>{const d=document.createElement('div');d.className='nt';d.innerHTML=`<div class="ic" style="background:${n[2]}">${n[1]}</div><div><b>${n[3]}</b><span>${n[4]}</span></div><div class="ok">✓</div>`;$('notifs').appendChild(d);return d});
+const show=(el,p,dy=40)=>{el.style.opacity=cl(p*1.5);el.style.transform=`translateY(${(1-ebk(p))*dy}px) scale(${.85+.15*ebk(p)})`};
+function who(t){for(let i=0;i<L.length;i++) if(t>=T(i)-.05&&t<E(i)+.1) return i; return -1}
+function thumb(){render(T(10)+3.2);$('cap').innerHTML='<i>Seize appels</i> <i class="k">pendant le rush ?</i>';$('whos').parentNode.style.display='none';}
+function render(t){
+ const i=who(t), sp=i>=0?L[i].sp:null;
+ const flashback=t>=E(1)+.1&&t<T(11)-.2; // de « Pas maintenant » au retour au présent
+ const present=!flashback&&t<E(1)+.1;
+ // compteur
+ let n=0; if(present||t>=T(11)-.2) n=14; else { if(t>T(6)+.15) n=4; if(t>T(10)+2.4) n=14; }
+ const pulse=[T(6)+.15,T(10)+2.4].some(x=>t>x&&t<x+.4)?1.25-(.25*eo(((t-[T(6)+.15,T(10)+2.4].find(x=>t>x&&t<x+.4))/.4))):1;
+ $('cn').textContent=n; $('cn').style.transform=`scale(${pulse})`;
+ const full=present||t>=T(10)+1.0; $('full').style.display=full?'block':'none';
+ // poêles, flammes, vapeur
+ [...document.querySelectorAll('#fl .f')].forEach((f,k)=>{f.style.transformBox='fill-box';f.style.transformOrigin='50% 100%';f.style.transform=`scaleY(${.8+.3*Math.sin(t*14+k*2)})`});
+ $('steam').style.transform=`translateY(${-10*((t*1.5)%1)}px)`;$('steam').style.opacity=.5+.4*Math.sin(t*6);
+ // chef
+ const chefTalk=sp==='chef', stressed=flashback&&t<T(4);
+ $('cmO').style.display=chefTalk&&Math.sin(t*26)>-.2?'block':'none'; $('cmC').style.display=$('cmO').style.display==='block'?'none':'block';
+ const amazed=(i===0)||(i===11)||(t>=T(11)&&t<T(12));
+ $('ceyeW').style.display=amazed||stressed?'block':'none'; $('ceyeN').style.display=amazed||stressed?'none':'block';
+ $('sweat').style.display=stressed?'block':'none';
+ const busy=flashback; $('armL').style.transform=busy?`translate(${8*Math.sin(t*9)}px,${6*Math.sin(t*11)}px)`:'none';$('armR').style.transform=busy?`translate(${-8*Math.sin(t*10)}px,${6*Math.cos(t*12)}px)`:'none';
+ $('chef').style.transform=`translateY(${(chefTalk?-6:0)*Math.abs(Math.sin(t*8))}px) rotate(${busy?2*Math.sin(t*5):0}deg)`;
+ // Caroline
+ const caroIn=cl((t-(T(1)-.15))/.35); const caroTalk=sp==='caro';
+ $('caro').style.opacity=caroIn; $('caro').style.transform=`translateY(${(1-ebk(caroIn))*120}px) scale(${.8+.2*ebk(caroIn)}) translateY(${caroTalk?-5*Math.abs(Math.sin(t*7)):0}px)`;
+ $('kmO').style.display=caroTalk&&Math.sin(t*24)>-.1?'block':'none';$('kmC').style.display=$('kmO').style.display==='block'?'none':'block';
+ const blink=(t%3.1)<.12; $('keyeO').style.display=blink?'none':'block';$('keyeC').style.display=blink?'block':'none';
+ $('mic').setAttribute('fill',caroTalk||(t>T(4)&&t<E(10))?'#1fb35a':'#FF8A1F');
+ // téléphone qui sonne : de 4,0 s au décroché
+ const ring=t>=4.0&&t<T(4)-.1&&((t-4.0)%1.2)<.8;
+ $('wph').style.transform=ring?`rotate(${10*Math.sin(t*60)}deg)`:'none'; $('rings').style.opacity=ring?1:0;
+ // carte d'appel (pendant les échanges)
+ const callA=T(4)-.2, callB=E(10)+.4, cp=cl((t-callA)/.35)*(1-cl((t-callB)/.3));
+ show($('call'),cp,-30); [...$('wave').children].forEach((b,k)=>b.style.height=(sp?14+38*Math.abs(Math.sin(t*12+k*1.3)):10)+'px');
+ // bulle client
+ const cli=[5,7,9]; let bt='',bp=0; for(const c of cli){ if(t>=T(c)-.15&&t<T(c+1)+.2){bt=L[c].txt;bp=cl((t-(T(c)-.15))/.3)*(1-cl((t-(T(c+1)+.0))/.2))} }
+ $('bubt').textContent=bt; show($('bub'),bp);
+ // notifications empilées
+ nts.forEach((d,k)=>{const a=NT[k][0];const p=cl((t-a)/.4);const vis=t>=a&&t<T(11)-.2;
+   const above=NT.filter((x,j)=>j>k&&t>=x[0]).length; d.style.display=vis?'flex':'none';
+   if(vis){d.style.opacity=cl(p*2);d.style.transform=`translateY(${(1-ebk(p))*-120+above*150}px) scale(${1-above*.04})`;d.style.zIndex=10+k}});
+ $('notifs').style.top=(i>=5&&i<=10&&bp>0.5?300:300)+'px';
+ // plan de salle
+ const planOn=t>=T(6)&&t<T(11)-.2; $('plan').style.opacity=planOn?1:0;
+ $('t1').classList.toggle('on',t>T(6)+.15); $('t5').classList.toggle('on',t>T(10)+2.4); $('t7').classList.toggle('on',t>T(10)+2.4);
+ const tk=cl((t-(T(8)+.2))/.35)*(1-cl((t-(T(10)-.1))/.3)); show($('ticket'),tk,60); $('ticket').style.transform+=` rotate(-4deg)`;
+ // caméra
+ let zx=540,zy=900,zs=1;
+ if(sp==='chef'){zx=330;zy=760;zs=1.18} else if(sp==='caro'&&i<12){zx=820;zy=820;zs=1.12} else if(i===12){zx=820;zy=780;zs=1.25}
+ const cs=cl((t-(i>=0?T(i):0))/.25), prev=$('world')._z||[540,900,1];
+ $('world').style.transform=`translate(${540-zx}px,${900-zy}px) scale(${zs})`; $('world').style.transformOrigin=`${zx}px ${zy}px`;
+ // flash + « Une heure plus tôt »
+ const fb=E(1)+.1; $('flash').style.opacity=t>=fb&&t<fb+.3?1-(t-fb)/.3:(t>=T(11)-.2&&t<T(11)+.1?1-(t-(T(11)-.2))/.3:0);
+ const ep=cl((t-fb)/.2)*(1-cl((t-(fb+1.1))/.2)); $('earlier').style.opacity=ep; $('earlier').style.transform=`translate(-50%,-50%) scale(${.8+.2*ebk(ep)})`;
+ // sous-titres mot à mot
+ if(i>=0&&i<13){const l=L[i]; const ws=l.w; let cur=ws.findIndex((w,k)=>t>=w[1]&&(k===ws.length-1||t<ws[k+1][1]));
+   // fenêtre de 4 mots max autour du mot courant
+   const start=Math.max(0,Math.floor(Math.max(cur,0)/4)*4), grp=ws.slice(start,start+4);
+   $('cap').innerHTML=grp.map((w,k)=>{const on=t>=w[1];const c=w[0].replace(/[.,!?;:]/g,'');const p=cl((t-w[1])/.12);
+     return `<i class="${KW.has(c)?'k':''}" style="opacity:${on?1:0};transform:scale(${on?.7+.3*ebk(p):.7})">${w[0]}</i>`}).join(' ');
+   $('whos').textContent=NAMES[l.sp][0]; $('whos').style.background=NAMES[l.sp][1]; $('who').style.display='block';
+ } else {$('cap').innerHTML='';$('who').style.display='none'}
+ // carte finale (CTA)
+ const endA=T(13)-.3; const ee=cl((t-endA)/.4); $('end').style.display=t>=endA?'block':'none';
+ if(t>=endA){$('end').style.clipPath=`circle(${ebk(ee)*140}% at 50% 50%)`;
+   const ec=$('endcaro'); ec.style.transform=`translateY(${-6*Math.abs(Math.sin(t*7))}px)`;
+   ec.querySelector('#kmO').style.display=t<E(13)&&Math.sin(t*24)>-.1?'block':'none';ec.querySelector('#kmC').style.display=ec.querySelector('#kmO').style.display==='block'?'none':'block';
+   ec.querySelector('#mic').setAttribute('fill','#1fb35a');
+   const kw=$('end').querySelector('.kw'); const kp=cl((t-(L[13].w[7]?L[13].w[7][1]:T(13)+2))/.35); kw.style.transform=`scale(${.6+.4*ebk(kp)}) rotate(${-3*ebk(kp)}deg)`;kw.style.opacity=cl(kp*2);
+   const l=L[13]; let cur=l.w.findIndex((w,k)=>t>=w[1]&&(k===l.w.length-1||t<l.w[k+1][1])); const st=Math.max(0,Math.floor(Math.max(cur,0)/4)*4);
+   $('cap').style.top='1390px';
+   $('cap').innerHTML=t<E(13)+.3?l.w.slice(st,st+4).map((w,k)=>`<i class="${KW.has(w[0].replace(/[.,!?;:]/g,''))?'k':''}" style="opacity:${t>=w[1]?1:0}">${w[0]}</i>`).join(' '):'';
+   $('who').style.display='none'; $('brand').style.display='none';
+ } else {$('cap').style.top='1430px';$('brand').style.display='block'}
+}
+render(0);
+</script></body></html>

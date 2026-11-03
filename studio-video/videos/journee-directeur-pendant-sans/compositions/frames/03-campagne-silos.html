@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f3-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f3-lead {
+          position: absolute; left: 0; right: 0; top: 96px; text-align: center;
+          font-size: 44px; font-weight: 600; color: rgba(58,63,69,0.85); opacity: 0;
+        }
+        .f3-lead .accent { color: #D64545; }
+
+        .f3-goal {
+          position: absolute; left: 50%; top: 240px; margin-left: -110px;
+          width: 220px; height: 220px; border-radius: 50%; border: 2px dashed #8A9099;
+          display: flex; flex-direction: column; align-items: center; justify-content: center;
+          opacity: 0;
+        }
+        .f3-goal .glabel { font-size: 20px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(58,63,69,0.85); margin-bottom: 10px; }
+        .f3-goal .gmark { font-size: 64px; font-weight: 800; color: #D64545; }
+
+        .f3-connectors { position: absolute; left: 0; top: 460px; width: 1920px; height: 260px; }
+
+        .f3-boxes { position: absolute; left: 160px; top: 720px; width: 1600px; display: flex; gap: 40px; }
+        .f3-box {
+          flex: 1; height: 260px; border: 1px dashed #8A9099; background: rgba(58,63,69,0.045);
+          padding: 30px; box-sizing: border-box; opacity: 0;
+        }
+        .f3-box .blabel { font-size: 30px; font-weight: 700; color: #3A3F45; margin-bottom: 16px; }
+        .f3-box .bsub { font-size: 22px; font-weight: 500; color: rgba(58,63,69,0.85); }
+        .f3-box .bthumb {
+          margin-top: 14px; width: 100%; height: 90px; border: 1px solid #8A9099;
+          overflow: hidden; position: relative;
+        }
+        .f3-box .bthumb img { width: 100%; height: 100%; object-fit: cover; opacity: 0.75; filter: grayscale(1); display: block; }
+        .f3-box .bthumb .bq { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 40px; font-weight: 800; color: #D64545; }
+        .f3-box .bx { position: absolute; right: 24px; top: 24px; font-size: 30px; font-weight: 800; color: #D64545; }
+
+        .f3-stamp {
+          position: absolute; left: 0; right: 0; top: 1020px; text-align: center;
+          font-size: 32px; font-weight: 600; color: rgba(58,63,69,0.85); opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="03-campagne-silos" data-width="1920" data-height="1080" data-duration="20.196">
+        <div class="f3-bg clip" id="f3-bgclip" data-start="0" data-duration="20.196" data-track-index="0"></div>
+
+        <div class="f3-lead" id="f3-lead">Une campagne pour écouler le surplus <span class="accent">?</span></div>
+
+        <div class="f3-goal" id="f3-goal">
+          <div class="glabel">campagne</div>
+          <div class="gmark">?</div>
+        </div>
+
+        <svg class="f3-connectors" id="f3-connectors" width="1920" height="260" viewBox="0 0 1920 260">
+          <line id="f3-line1" x1="380" y1="260" x2="880" y2="30" stroke="#8A9099" stroke-width="2" stroke-dasharray="10 10" opacity="0" />
+          <line id="f3-line2" x1="960" y1="260" x2="960" y2="30" stroke="#8A9099" stroke-width="2" stroke-dasharray="10 10" opacity="0" />
+          <line id="f3-line3" x1="1540" y1="260" x2="1040" y2="30" stroke="#8A9099" stroke-width="2" stroke-dasharray="10 10" opacity="0" />
+        </svg>
+
+        <div class="f3-boxes">
+          <div class="f3-box" id="f3-box1">
+            <div class="blabel">un graphiste</div>
+            <div class="bsub">visuels, mise en page</div>
+            <div class="bx">✕</div>
+          </div>
+          <div class="f3-box" id="f3-box2">
+            <div class="blabel">un fichier client à jour</div>
+            <div class="bthumb"><img src="public/generated/06-graphique-vide.jpg" alt="" /><div class="bq">?</div></div>
+          </div>
+          <div class="f3-box" id="f3-box3">
+            <div class="blabel">une plateforme d'envoi</div>
+            <div class="bsub">SMS, email, ou les deux</div>
+            <div class="bx">✕</div>
+          </div>
+        </div>
+
+        <div class="f3-stamp" id="f3-stamp">On verra le mois prochain.</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f3-lead", { opacity: 0, y: 12 });
+        gsap.set("#f3-goal", { opacity: 0, scale: 0.85 });
+        gsap.set(["#f3-box1", "#f3-box2", "#f3-box3"], { opacity: 0, y: 20 });
+        gsap.set(["#f3-line1", "#f3-line2", "#f3-line3"], { opacity: 0 });
+        gsap.set("#f3-stamp", { opacity: 0, y: 10 });
+
+        const lines = ["f3-line1", "f3-line2", "f3-line3"].map((id) => document.getElementById(id));
+        const lens = lines.map((l) => l.getTotalLength());
+        lines.forEach((l, i) => { l.style.strokeDasharray = lens[i]; l.style.strokeDashoffset = lens[i]; });
+
+        // Scene 1 (0.0-2.25s, cue "Une campagne pour écouler le surplus ?"): the headline and
+        // the unreached goal circle appear together — the question mark is already there,
+        // foreshadowing that it stays unanswered.
+        tl.to("#f3-lead", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.3);
+        tl.fromTo("#f3-goal", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 0.6);
+
+        // Scene 2 (2.25-3.75s, cue "Il faudrait un graphiste,"): box 1 tilts in, its connector
+        // draws toward the goal circle but stops well short — a gap, on purpose.
+        tl.to("#f3-box1", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 2.35);
+        tl.to("#f3-line1", { opacity: 0.8, duration: 0.15 }, 2.55);
+        tl.to("#f3-line1", { strokeDashoffset: lens[0] * 0.35, duration: 0.7, ease: "power2.out" }, 2.6);
+
+        // Scene 3 (3.75-5.24s, cue "un fichier client à jour,"): box 2, same treatment — the
+        // empty-graph thumbnail (no usable data) stands in for the missing file.
+        tl.to("#f3-box2", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 3.85);
+        tl.to("#f3-line2", { opacity: 0.8, duration: 0.15 }, 4.05);
+        tl.to("#f3-line2", { strokeDashoffset: lens[1] * 0.35, duration: 0.7, ease: "power2.out" }, 4.1);
+
+        // Scene 4 (5.24-6.57s, cue "une plateforme d'envoi."): box 3, same treatment — all
+        // three dashed lines now point at the goal and none of them arrives.
+        tl.to("#f3-box3", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 5.35);
+        tl.to("#f3-line3", { opacity: 0.8, duration: 0.15 }, 5.55);
+        tl.to("#f3-line3", { strokeDashoffset: lens[2] * 0.35, duration: 0.7, ease: "power2.out" }, 5.6);
+
+        // Scene 5 (6.57-8.12s, cue "On verra le mois prochain."): the closing stamp lands —
+        // shelved, not solved. The connector lines (decoration only, not text) fade back a
+        // touch so the eye settles on the stamp; the boxes stay fully legible.
+        tl.to("#f3-stamp", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 6.7);
+        tl.to(["#f3-line1", "#f3-line2", "#f3-line3"], { opacity: 0.4, duration: 0.8, ease: "power2.out" }, 7.2);
+
+        // Scene 6 (8.12-20.196s): long contemplative hold — the idea just sits there. A slow
+        // deterministic breathe on the goal mark keeps the frame alive without adding
+        // information (nothing changes; nothing is supposed to).
+        const f3phase = { p: 0 };
+        tl.to(f3phase, {
+          p: Math.PI * 2 * 2.4, duration: 12.0, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f3phase.p);
+            gsap.set("#f3-goal", { scale: 1 + s * 0.012 });
+          }
+        }, 8.2);
+
+        window.__timelines["03-campagne-silos"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

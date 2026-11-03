@@ -1,0 +1,22 @@
+{
+  "captures": {
+    "source": "build.braindcode.com et plugin.braindcode.com, Playwright le 26/10/2026",
+    "fichiers": [
+      "accueil",
+      "extensions-1",
+      "extensions-2",
+      "daily",
+      "daily-1",
+      "daily-3"
+    ]
+  },
+  "mcp_build_lecture_seule": [
+    "list_projects (featured) : 5 idées vedettes, toutes « a_construire »",
+    "get_project_agents(daily-brief) : 6 agents (Léo, l'Orchestrateur, Marc, Ali, Léna, Paul)"
+  ],
+  "catalogue": "100 idées (description de list_projects)",
+  "agents_photos": "URL officielles renvoyées par get_project_agents",
+  "miniatures": "Video/videos/*/renders/miniature-*.jpg et video-11",
+  "ecritures": "aucune : ni register_ai_developer, ni get_prompt_execution_plan (qui crée un tableau de suivi)",
+  "voix": "ElevenLabs, voix Noé, eleven_v4, 831 crédits"
+}

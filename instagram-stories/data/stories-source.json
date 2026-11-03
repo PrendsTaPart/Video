@@ -1,0 +1,51 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "logo": "assets/brand/foodeatup-logo-mascot.png",
+  "clin": "assets/sfx/son-clin-passe-take1.mp3",
+  "ctaVo": "assets/voice/cta.mp3",
+  "ctaSub": "Essayez 7 jours gratuitement",
+  "stories": [
+    {
+      "id": "story-1-stock",
+      "hook": "Zéro ressaisie.",
+      "video": "assets/video/hero-chef-scan-carton.mp4",
+      "vo": "assets/voice/body-stock.mp3",
+      "caption": "Je scanne. Le stock se met à jour tout seul.",
+      "punchline": "Le stock qui se gère tout seul."
+    },
+    {
+      "id": "story-2-multicanal",
+      "hook": "Zéro appel manqué.",
+      "video": "assets/video/hero-serveur-trois-tablettes.mp4",
+      "vo": "assets/voice/body-multicanal.mp3",
+      "caption": "Uber, livraison, salle. Tout arrive au même endroit.",
+      "punchline": "Toutes vos commandes, un seul endroit."
+    },
+    {
+      "id": "story-3-jarvis",
+      "hook": "Peu importe qui parle en cuisine.",
+      "video": "assets/video/hero-brigade-deux-langues.mp4",
+      "vo": "assets/voice/body-jarvis.mp3",
+      "caption": "Jarvis comprend, peu importe qui parle en cuisine. Le stock aussi.",
+      "punchline": "Une brigade. Un seul stock, à jour."
+    },
+    {
+      "id": "story-4-caisse",
+      "hook": "18 heures.",
+      "video": "assets/video/hero-caisse-ticket-z.mp4",
+      "vo": "assets/voice/body-caisse.mp3",
+      "caption": "Le Z. Un geste. Le chiffre du jour, déjà là.",
+      "punchline": "La caisse qui se ferme en un geste."
+    },
+    {
+      "id": "story-5-haccp",
+      "hook": "Le classeur HACCP.",
+      "video": "assets/video/hero-kds-mural.mp4",
+      "vo": "assets/voice/body-haccp.mp3",
+      "caption": "Une photo. L'IA contrôle. C'est tracé.",
+      "punchline": "Le classeur HACCP qui s'écrit tout seul."
+    }
+  ]
+}

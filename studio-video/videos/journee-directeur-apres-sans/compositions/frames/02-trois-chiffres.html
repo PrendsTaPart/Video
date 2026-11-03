@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f2-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .f2-tabecho {
+          position: absolute; left: 140px; top: 60px; width: 1640px; height: 40px;
+          display: flex; gap: 8px; opacity: 0.08;
+        }
+        .f2-tabecho div { width: 220px; height: 100%; border: 1px solid #8A9099; }
+
+        .f2-panel {
+          position: absolute;
+          top: 260px;
+          width: 500px;
+          height: 420px;
+          border: 1px solid #8A9099;
+          background: rgba(58,63,69,0.045);
+          padding: 34px;
+          box-sizing: border-box;
+        }
+        .f2-panel.p1 { left: 140px; }
+        .f2-panel.p2 { left: 50%; margin-left: -250px; }
+        .f2-panel.p3 { right: 140px; }
+
+        .f2-panel .shot {
+          width: 432px; height: 170px; margin-bottom: 22px;
+          border: 1px solid #8A9099; overflow: hidden; position: relative;
+        }
+        .f2-panel .shot img {
+          width: 100%; height: 100%; object-fit: cover; object-position: top center;
+          filter: grayscale(0.75) contrast(1.05);
+          display: block;
+        }
+        .f2-panel .shot.placeholder {
+          display: flex; align-items: center; justify-content: center;
+          background: #E4E5E8;
+        }
+        .f2-panel .shot.placeholder::before,
+        .f2-panel .shot.placeholder::after {
+          content: ""; position: absolute; left: 0; top: 50%; width: 100%; height: 1px;
+          background: #8A9099;
+        }
+        .f2-panel .shot.placeholder::before { transform: rotate(30deg); }
+        .f2-panel .shot.placeholder::after { transform: rotate(-30deg); }
+        .f2-panel .shot.placeholder .glyph { position: relative; font-size: 56px; font-weight: 700; color: rgba(58,63,69,0.6); }
+
+        .f2-panel .label { font-size: 28px; font-weight: 700; color: #3A3F45; margin-bottom: 12px; }
+        .f2-panel .figure { font-size: 50px; font-weight: 800; color: #3A3F45; }
+        .f2-panel .sub { font-size: 20px; font-weight: 500; color: rgba(58,63,69,0.85); margin-top: 6px; }
+
+        .f2-connector { position: absolute; left: 140px; top: 700px; width: 1640px; height: 2px; }
+        .f2-connector svg { position: absolute; top: -1px; left: 0; overflow: visible; }
+
+        .f2-close {
+          position: absolute; left: 0; right: 0; top: 780px; text-align: center;
+          font-size: 40px; font-weight: 600; color: #3A3F45; opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="02-trois-chiffres" data-width="1920" data-height="1080" data-duration="15.0">
+        <div class="f2-bg clip" id="f2-bgclip" data-start="0" data-duration="15.0" data-track-index="1"></div>
+
+        <div class="f2-tabecho">
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+
+        <div class="f2-panel p1" id="f2-p1">
+          <div class="shot"><img src="public/generated/03-deux-logiciels-right.jpg" alt="" /></div>
+          <div class="label">la caisse</div>
+          <div class="figure" id="f2-fig1">4 380 &euro;</div>
+          <div class="sub">encaissements du jour</div>
+        </div>
+
+        <div class="f2-panel p2" id="f2-p2">
+          <div class="shot"><img src="public/generated/03-deux-logiciels-left.jpg" alt="" /></div>
+          <div class="label">le stock</div>
+          <div class="figure" id="f2-fig2">3 940 &euro;</div>
+          <div class="sub">valeur théorique restante</div>
+        </div>
+
+        <div class="f2-panel p3" id="f2-p3">
+          <div class="shot placeholder"><span class="glyph">&euro;</span></div>
+          <div class="label">la banque</div>
+          <div class="figure" id="f2-fig3">4 065 &euro;</div>
+          <div class="sub">solde du compte pro</div>
+        </div>
+
+        <div class="f2-connector" id="f2-connector">
+          <svg width="1640" height="2" viewBox="0 0 1640 2">
+            <line id="f2-connline" x1="0" y1="1" x2="1640" y2="1" stroke="#D64545" stroke-width="2" stroke-dasharray="10 12" />
+          </svg>
+        </div>
+
+        <div class="f2-close" id="f2-close">Aucun des trois ne raconte la même histoire.</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set(["#f2-p1", "#f2-p2", "#f2-p3"], { opacity: 0, y: 20, scale: 0.96 });
+        gsap.set("#f2-connline", { opacity: 0 });
+        gsap.set("#f2-close", { opacity: 0, y: 12 });
+
+        // Scene 1 (0.3-1.0s, cue "La caisse dit un chiffre."): panel 1 rises in
+        tl.to("#f2-p1", { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "power3.out" }, 0.3);
+
+        // Scene 2 (1.7-2.4s, cue "Le stock en dit un autre."): panel 2 rises in
+        tl.to("#f2-p2", { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "power3.out" }, 1.75);
+
+        // Scene 3 (3.35-4.05s, cue "La banque, un troisième."): panel 3 — a bare, CSS-only
+        // ledger placeholder (no real bank software or logo reconstructed)
+        tl.to("#f2-p3", { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "power3.out" }, 3.35);
+
+        // Scene 4 (4.2-5.2s): a broken red connector draws under all three, never resolving
+        // into one line — the through-line motif of the whole series, in its alert color here.
+        const connLine = document.getElementById("f2-connline");
+        const connLen = connLine.getTotalLength();
+        connLine.style.strokeDasharray = connLen;
+        connLine.style.strokeDashoffset = connLen;
+        tl.to("#f2-connline", { opacity: 0.85, duration: 0.2 }, 4.2);
+        tl.to("#f2-connline", { strokeDashoffset: 0, duration: 1.0, ease: "power2.out" }, 4.25);
+
+        // Scene 5 (4.7-5.35s, cue "Aucun des trois ne raconte la même histoire."): the closer
+        tl.to("#f2-close", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 4.75);
+
+        // Scene 6 (5.35-15.0s): long hold — subtle jitter on the connector and panels only
+        const f2phase = { p: 0 };
+        tl.to(f2phase, {
+          p: Math.PI * 2 * 3.4, duration: 9.6, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f2phase.p);
+            gsap.set("#f2-connector", { y: s * 1.4 });
+          }
+        }, 5.4);
+
+        window.__timelines["02-trois-chiffres"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

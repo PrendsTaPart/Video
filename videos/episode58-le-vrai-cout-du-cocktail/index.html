@@ -1,0 +1,78 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 58 : le vrai coût d'un cocktail</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter'}#stage{background:#2a1608}
+#cap{font-weight:800;font-size:58px;color:#fff;text-shadow:0 4px 14px rgba(0,0,0,.9)}#cap i.k{color:#ffcf6e;font-style:normal}
+.chalk{font-family:'Caveat Brush';color:#f4f1e8;text-align:center;line-height:1.1;text-shadow:0 0 2px rgba(255,255,255,.4);white-space:nowrap}
+.tag{position:relative;width:420px}.tag img{width:100%;display:block}.tag span{position:absolute;left:8%;right:8%;top:58%;transform:translateY(-50%);text-align:center;font-weight:900;font-size:62px;color:#3a2410;line-height:1.05}.tag small{display:block;font-size:30px}
+.pill{font-weight:900;font-size:34px;color:#2a1608;background:#ffcf6e;border-radius:999px;padding:10px 26px;white-space:nowrap}.pill.r{background:#c8283a;color:#fff}
+.fiche{width:860px;background:#fffaf0;border-radius:28px;padding:30px 36px;color:#3a2410;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.fiche h4{margin:0 0 4px;font-size:44px;font-weight:900}.fiche p{margin:0 0 14px;font-size:24px;color:#8a6a4a}
+.fl{display:flex;justify-content:space-between;font-size:36px;font-weight:700;padding:8px 0;border-bottom:2px dashed #e4d3b8}.fl.t{font-weight:900;border:0;color:#1f6b3a;font-size:42px}.fl.q{color:#c8283a;border:0}
+.cta{font-weight:900;font-size:110px;color:#2a1608;background:#ffcf6e;border-radius:30px;padding:12px 46px;text-align:center;line-height:1;box-shadow:0 14px 0 #8a5a12}.cta small{display:block;font-size:34px;margin-bottom:6px}
+</style></head><body><div id="stage"><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=1500;CAP.group=5;CAP.kw=new Set(['mojito','bière.','minutes','secondes.','dix','apprend.','malade.','herbe.','toi.','soixante.','centime.','compter.','happy','hour','MARGE.']);
+const B='bar-ardoise-';
+const tag=(a,b)=>`<div style="background:#d9b27c;border:5px solid #8a5a2b;border-radius:24px;padding:16px 34px;text-align:center;color:#3a2410;font-weight:900;font-size:70px;line-height:1;box-shadow:0 10px 0 #5a3816;white-space:nowrap">${a}<div style="font-size:30px;margin-top:6px">${b}</div></div>`;
+let s=scene(0,M('Un mojito,'),{bg:B+'comptoir-face.jpg',kb:[1.05,1.15]});
+s.img(B+'cocktail.png',{x:540,y:760,w:560,fx:'pop',at:.2,out:M('Et ton barman')});
+s.el(tag('10 €','prix carte'),{x:800,y:1250,fx:'drop',at:M('à dix')-.2,out:M('Et ton barman'),z:5});
+s.el(tag('1,60 €','de matière'),{x:280,y:1250,fx:'drop',at:M('Il y a')+.2,out:M('Et ton barman'),z:5});
+s.el('<div class="pill r">EXEMPLE</div>',{x:540,y:330,fx:'pop',at:.4,out:M('Et ton barman')});
+s.img(B+'barman-biere.png',{x:540,y:1020,w:1000,fx:'up',at:M('Et ton barman')});
+// temps
+s=scene(M('Un mojito,'),M('Même en'),{bg:B+'comptoir-face.jpg',kb:[1.1,1.15],tr:'cut'});
+s.img(B+'cocktail.png',{x:280,y:900,w:400,fx:'pop',at:M('Un mojito,')});
+s.img(B+'chronometre.png',{x:280,y:560,w:240,fx:'pop',at:M('deux minutes'),anim:'pulse'});
+s.el('<div class="pill">2 MIN</div>',{x:280,y:1180,fx:'slam',at:M('deux minutes')});
+s.img(B+'pinte-biere.png',{x:800,y:900,w:340,fx:'pop',at:M('Une pinte,')});
+s.el('<div class="pill">10 S</div>',{x:800,y:1180,fx:'slam',at:M('dix secondes.')});
+// ardoise calcul
+s=scene(M('Même en'),M('Surtout, un'),{bg:B+'ardoise-vierge.jpg',kb:[1,1.04],tr:'cut'});
+s.el('<div class="chalk" style="font-size:84px">Pendant 1 mojito…</div>',{x:540,y:520,fx:'fade',at:M('Même en')});
+s.el('<div class="chalk" style="font-size:150px">10 pintes</div>',{x:540,y:760,fx:'slam',at:M('il t\'en sert')});
+s.el('<div class="chalk" style="font-size:70px;color:#ffcf6e">et elles lui laissent<br>bien plus</div>',{x:540,y:1060,fx:'fade',at:M('Et dix pintes')});
+// apprentissage
+s=scene(M('Surtout, un'),M('Samedi soir,'),{bg:B+'comptoir-face.jpg',kb:[1.1,1.18],tr:'cut'});
+s.img(B+'barman-menthe.png',{x:540,y:1020,w:1000,fx:'none'});
+s.el('<div class="pill">ÇA S\'APPREND</div>',{x:540,y:380,fx:'slam',at:M('ça s\'apprend.')});
+s=scene(M('Samedi soir,'),M('Le petit'),{bg:B+'bureau-planning.jpg',kb:[1.05,1.12],tr:'cut'});
+s.el('<div class="pill r" style="font-size:44px">SAMEDI SOIR · BARMAN MALADE</div>',{x:540,y:620,fx:'slam',at:M('Samedi soir,')+.3,rot:-4});
+s=scene(M('Le petit'),M('La bière,'),{bg:B+'bar-bonde.jpg',kb:[1.05,1.12],tr:'cut'});
+s.img(B+'debutant-menthe.png',{x:540,y:1020,w:1000,fx:'none',anim:'shake',out:M('Goût d\'herbe.')});
+s.img(B+'debutant-stresse.png',{x:540,y:1020,w:1000,fx:'pop',at:M('Goût d\'herbe.')});
+s.el('<div class="pill r" style="font-size:52px">GOÛT D\'HERBE</div>',{x:540,y:420,fx:'slam',at:M('Goût d\'herbe.')});
+s=scene(M('La bière,'),M('Ton mojito ne'),{bg:B+'comptoir-face.jpg',kb:[1.05,1.12],tr:'cut'});
+s.img(B+'patron-biere.png',{x:540,y:1020,w:1000,fx:'up',at:M('La bière,')});
+s.el('<div class="pill">MÊME TOI</div>',{x:540,y:420,fx:'slam',at:M('Même toi.')});
+// le vrai coût
+s=scene(M('Ton mojito ne'),M('Dans FoodEatUp,'),{bg:B+'ardoise-vierge.jpg',kb:[1,1.04],tr:'cut'});
+s.el('<div class="chalk" style="font-size:150px">1,60 €</div>',{x:540,y:560,fx:'fade',at:M('Ton mojito ne')});
+s.img(B+'trait-craie.png',{x:540,y:560,w:620,fx:'pop',at:M('Il coûte')-.2,rot:-8,z:5});
+s.el('<div class="chalk" style="font-size:96px;color:#ffcf6e">2 minutes<br>de quelqu\'un<br>qui sait le faire</div>',{x:540,y:980,fx:'fade',at:M('Il coûte')+.3});
+// fiche technique
+s=scene(M('Dans FoodEatUp,'),M('Alors mets'),{bg:B+'comptoir-face.jpg',kb:[1.05,1.1],tr:'cut'});
+s.el(`<div class="fiche"><h4>Fiche technique · Mojito</h4><p>exemple · coût matière par ligne</p>
+<div class="fl"><span>Menthe</span><span>0,30 €</span></div><div class="fl"><span>Citron vert</span><span>0,35 €</span></div><div class="fl"><span>Rhum</span><span>0,80 €</span></div><div class="fl"><span>Sucre</span><span>0,05 €</span></div><div class="fl"><span>Glace</span><span>0,10 €</span></div>
+<div class="fl t"><span>Coût matière</span><span>1,60 €</span></div><div class="fl q" id="tq"><span>Temps de préparation</span><span>à toi de le compter</span></div></div>`,{x:540,y:860,fx:'up',at:M('Dans FoodEatUp,')});
+s.fn(t=>{const e=document.getElementById('tq');if(e)e.style.opacity=t>=M('Les deux minutes,')?1:0;});
+s.img(B+'ingredients.png',{x:860,y:360,w:300,fx:'pop',at:M('Dans FoodEatUp,')+.4});
+// happy hour / samedi
+s=scene(M('Alors mets'),M('Et le samedi'),{bg:B+'comptoir-face.jpg',kb:[1.05,1.12],tr:'cut'});
+s.img(B+'cocktail.png',{x:540,y:900,w:480,fx:'pop',at:M('Alors mets')});
+s.el('<div class="pill" style="font-size:46px">HAPPY HOUR · QUAND LE BAR EST CALME</div>',{x:540,y:420,fx:'slam',at:M('happy hour')});
+s=scene(M('Et le samedi'),M('Tu veux le'),{bg:B+'bar-bonde.jpg',kb:[1.05,1.12],tr:'cut'});
+s.img(B+'barman-souriant.png',{x:540,y:1020,w:1000,fx:'up',at:M('Et le samedi')});
+s.img(B+'pinte-biere.png',{x:850,y:1150,w:240,fx:'pop',at:M('souris-lui.')});
+s.el('<div class="pill">SOURIS-LUI</div>',{x:540,y:420,fx:'slam',at:M('souris-lui.')});
+s=scene(M('Tu veux le'),C.dur+1,{bg:B+'ardoise-vierge.jpg',kb:[1,1.05],tr:'cut'});
+s.el('<div class="chalk" style="font-size:80px">Le calcul pour ta carte ?</div>',{x:540,y:540,fx:'fade',at:M('Tu veux le')});
+s.el('<div class="cta"><small>Écris en commentaire</small>MARGE</div>',{x:540,y:860,fx:'slam',at:M('Commente MARGE.'),anim:'pulse'});
+s.el('<div class="pill">ÉPISODE 58/365</div>',{x:540,y:1100,fx:'fade',at:M('Commente MARGE.')+1});
+CAP.show=t=>t<M('Commente MARGE.');
+thumbAt(M('Il coûte')+1.5,'<i>Ton cocktail coûte</i> <i class="k">2 minutes</i>');
+render(0);
+</script></body></html>

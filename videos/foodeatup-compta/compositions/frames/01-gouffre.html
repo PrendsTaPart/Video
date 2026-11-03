@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 1 — Le gouffre de la compta</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; overflow: hidden; font-family: "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background-color: #f7f9fc; background-image: radial-gradient(circle at 72% 44%, rgba(30,155,240,0.05), transparent 55%), radial-gradient(circle, rgba(27,42,65,0.09) 1.6px, transparent 1.6px); background-size: 100% 100%, 46px 46px; }
+        .shake { position: absolute; inset: 0; }
+
+        .figure { position: absolute; z-index: 2; top: 70px; left: 1140px; width: 700px; height: 940px; mix-blend-mode: multiply; opacity: 0; will-change: transform, opacity; }
+        .figure img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+        .fiches { position: absolute; left: 90px; top: 210px; width: 940px; z-index: 3; display: flex; flex-direction: column; gap: 22px; }
+        .fiche { position: relative; box-sizing: border-box; background: #ffffff; border: 1.5px solid rgba(27,42,65,0.1); border-radius: 16px; padding: 24px 32px; display: flex; align-items: center; gap: 24px; transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+        .fiche::before { content: ""; position: absolute; left: 0; top: 16px; bottom: 16px; width: 7px; border-radius: 4px; background: #1e9bf0; }
+        .fiche.alert::before { background: #dc2626; }
+        .fiche-ic { flex: 0 0 62px; width: 62px; height: 62px; display: grid; place-items: center; background: rgba(30,155,240,0.08); border-radius: 50%; }
+        .fiche.alert .fiche-ic { background: rgba(220,38,38,0.08); }
+        .fiche-ic svg { width: 34px; height: 34px; fill: none; stroke: #1e9bf0; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .fiche.alert .fiche-ic svg { stroke: #dc2626; }
+        .fiche-label { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 40px; letter-spacing: -0.01em; color: #1b2a41; line-height: 1.12; }
+        .fiche-sub { display: block; font-family: "Inter", sans-serif; font-weight: 500; font-size: 26px; color: #566472; margin-top: 4px; }
+
+        .stamp { position: absolute; z-index: 5; left: 300px; top: 470px; padding: 20px 48px; border: 6px solid #1b2a41; border-radius: 16px; background: rgba(247,249,252,0.82); font-family: "Poppins", sans-serif; font-weight: 800; font-size: 60px; letter-spacing: 0.03em; color: #1b2a41; transform: rotate(-7deg); transform-origin: 50% 50%; opacity: 0; white-space: nowrap; will-change: transform, opacity; }
+      </style>
+
+      <div id="root" data-composition-id="01-gouffre" data-width="1920" data-height="1080" data-duration="14.789">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="14.289" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="14.289" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="shake">
+            <div class="figure" id="figure"><img src="public/compta-chaos.png" alt="Gérant débordé par la comptabilité" /></div>
+            <div class="fiches">
+              <div class="fiche" id="f1"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" /><path d="M14 3v5h5M9 13h6M9 17h4" /></svg></span><span class="fiche-label">Les factures qui s'empilent<span class="fiche-sub">fournisseurs, tickets, reçus</span></span></div>
+              <div class="fiche" id="f2"><span class="fiche-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9h18M7 14h4M14 14h3" /></svg></span><span class="fiche-label">Les dépenses à ressaisir<span class="fiche-sub">une par une, à la main</span></span></div>
+              <div class="fiche" id="f3"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h9v18H6a2 2 0 0 1-2-2z" /><path d="M9 8h5M9 12h5" /></svg></span><span class="fiche-label">Le food cost jamais calculé<span class="fiche-sub">on fait au feeling</span></span></div>
+              <div class="fiche alert" id="f4"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 7-8" /><path d="M15 7h6v6" /></svg></span><span class="fiche-label">Les marges découvertes trop tard<span class="fiche-sub">quand le mois est fini</span></span></div>
+            </div>
+            <div class="stamp" id="stamp">Un gouffre de temps</div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        (function () {
+          var root = document.querySelector('[data-composition-id="01-gouffre"][id="root"]') || document.querySelector('[data-composition-id="01-gouffre"]');
+          var tl = gsap.timeline({ paused: true });
+          var shakeEl = root.querySelector(".shake");
+          tl.fromTo(root.querySelector("#figure"), { y: -34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 0.0);
+          var cues = [0.6, 3.2, 5.6, 8.5];
+          ["#f1", "#f2", "#f3", "#f4"].forEach(function (id, i) {
+            tl.fromTo(root.querySelector(id), { scale: 0.85, x: -30, opacity: 0 }, { scale: 1, x: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, cues[i]);
+          });
+          tl.fromTo(root.querySelector("#stamp"), { scale: 1.6, opacity: 0, rotation: -7 }, { scale: 1, opacity: 1, rotation: -7, duration: 0.4, ease: "power4.out" }, 11.5);
+          tl.to(root.querySelector(".fiches"), { scale: 0.97, duration: 0.8, ease: "power2.inOut" }, 11.7);
+          var shk = { t: 0 };
+          tl.to(shk, { t: 1, duration: 1.2, ease: "none", onUpdate: function () {
+            var tt = shk.t; var env = Math.max(0, Math.min(1, tt / 0.16, (1 - tt) / 0.18));
+            var ph = tt * 1.2 * Math.PI * 2;
+            shakeEl.style.transform = "translate(" + (Math.sin(ph * 3.5) * 3.2 * env) + "px," + (Math.sin(ph * 2.7 + 1.1) * 2.3 * env) + "px)";
+          } }, 11.7);
+          window.__timelines["01-gouffre"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

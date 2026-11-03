@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #fff;
+        }
+        .f9-bg { position: absolute; inset: 0; background: #1B2A41; }
+        .f9-glow {
+          position: absolute; left: 50%; top: 46%; width: 1300px; height: 1300px;
+          margin-left: -650px; margin-top: -650px; border-radius: 50%;
+          background: radial-gradient(circle, rgba(255,165,0,0.10) 0%, rgba(27,42,65,0) 60%);
+          opacity: 0;
+        }
+
+        .f9-eyebrow {
+          position: absolute; left: 0; right: 0; top: 336px; text-align: center;
+          font-size: 26px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+          color: #FFA500; opacity: 0;
+        }
+
+        .f9-button {
+          position: absolute; left: 50%; top: 420px; transform: translateX(-50%);
+          display: inline-flex; align-items: center; gap: 18px;
+          padding: 26px 52px; border-radius: 999px; background: #FFA500;
+          opacity: 0;
+        }
+        .f9-button .label { font-size: 40px; font-weight: 800; color: #0F1A23; white-space: nowrap; }
+        .f9-button .arrow { font-size: 40px; font-weight: 800; color: #0F1A23; }
+
+        .f9-sub {
+          position: absolute; left: 0; right: 0; top: 590px; text-align: center;
+          font-size: 28px; font-weight: 500; color: rgba(255,255,255,0.72); opacity: 0;
+        }
+
+        .f9-modules { position: absolute; left: 0; right: 0; top: 664px; text-align: center; opacity: 0; }
+        .f9-modules span {
+          display: inline-block; margin: 0 14px; padding: 10px 26px;
+          border: 1px solid rgba(255,255,255,0.28); border-radius: 999px;
+          font-size: 22px; font-weight: 600; color: rgba(255,255,255,0.85);
+        }
+      </style>
+
+      <div id="root" data-composition-id="09-cta-decouvrir" data-width="1920" data-height="1080" data-duration="4.4">
+        <div class="f9-bg clip" id="f9-bgclip" data-start="0" data-duration="4.4" data-track-index="1"></div>
+        <div class="f9-glow" id="f9-glow"></div>
+
+        <div class="f9-eyebrow" id="f9-eyebrow">La suite</div>
+
+        <div class="f9-button" id="f9-button">
+          <span class="label">Découvrir une journée type avec FoodEatUp</span>
+          <span class="arrow">→</span>
+        </div>
+
+        <div class="f9-sub" id="f9-sub">Le même parcours, minute par minute — cette fois avec FoodEatUp.</div>
+
+        <div class="f9-modules" id="f9-modules">
+          <span>Cuisine</span><span>Salle</span><span>Direction</span>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f9-glow", { opacity: 0, scale: 0.85 });
+        gsap.set("#f9-eyebrow", { opacity: 0, y: 10 });
+        gsap.set("#f9-button", { opacity: 0, y: 14, scale: 0.94 });
+        gsap.set("#f9-sub", { opacity: 0, y: 10 });
+        gsap.set("#f9-modules", { opacity: 0, y: 8 });
+
+        // Scene 1 (0.0-0.9s): stays on the same marine ground as the previous card — no cut,
+        // this reads as one continuous ending, not a new screen. Glow shifts to the CTA orange.
+        tl.to("#f9-glow", { opacity: 1, scale: 1, duration: 0.7, ease: "power2.out" }, 0.1);
+
+        // Scene 2 (0.2-0.75s): small eyebrow label
+        tl.to("#f9-eyebrow", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.2);
+
+        // Scene 3 (0.5-1.15s): the CTA button — the one warm, saturated shape in the whole film
+        // besides the product shot, on purpose: it is the door out.
+        tl.to("#f9-button", { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "power3.out" }, 0.5);
+
+        // Scene 4 (0.95-1.5s): subtitle
+        tl.to("#f9-sub", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.95);
+
+        // Scene 5 (1.25-1.8s): the three métiers, so the viewer knows this isn't a generic
+        // pitch page — it is the exact same three-role structure they just watched.
+        tl.to("#f9-modules", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 1.25);
+
+        // Scene 6 (1.8-4.4s): hold — a slow, restrained pulse on the button only, inviting the
+        // click without nagging (no bounce, no loop-scale beyond a very low amplitude).
+        const f9phase = { p: 0 };
+        tl.to(f9phase, {
+          p: Math.PI * 2 * 1.1, duration: 2.6, ease: "none",
+          onUpdate: () => { gsap.set("#f9-button", { scale: 1 + Math.sin(f9phase.p) * 0.012 }); }
+        }, 1.85);
+
+        window.__timelines["09-cta-decouvrir"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

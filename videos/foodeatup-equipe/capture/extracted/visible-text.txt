@@ -1,0 +1,3 @@
+Module Équipe & Planning de FoodEatUp. Fonctions : planning d'équipe, pointages temps réel,
+congés & absences, fiches & contrats employés, tâches assignées. Heures horodatées, prêtes pour la paie.
+Double usage : dans le logiciel OU en langage naturel via Claude (MCP) qui exécute dans FoodEatUp.

@@ -1,0 +1,206 @@
+<template id="captions-template" data-composition-id="captions" data-width="1080" data-height="1920">
+<script src="assets/vendor/gsap.min.js"></script>
+
+
+<style data-brand-tokens>
+      :root {
+      --cap-band-top: 1600px;
+      --cap-band-height: 320px;
+      }
+    </style>
+
+<style>
+  #captions-root {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  .caption-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    pointer-events: none;
+  }
+  /* the keep-out band, from captionBand(H) — frame content stays above it */
+  .caption-stage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: var(--cap-band-top, 900px);
+    height: var(--cap-band-height, 180px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .caption-group {
+    /* every group is absolutely stacked over the SAME band — exactly one shown at a
+       time via opacity. Must be absolute: in-flow groups would lay out side-by-side. */
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+  }
+
+  /* THE tinted card — 4% cobalt fill, 1.5px 20%-cobalt border, soft 14px corners,
+     NO shadow (the tinted card does the lift; cast depth is forbidden) */
+  .caption-pill {
+    max-width: 78%;
+    padding: 20px 44px 24px;
+    background: color-mix(in srgb, var(--cap-accent, #1e2bfa) 4%, var(--cap-canvas, #fdfae7));
+    border: 1.5px solid color-mix(in srgb, var(--cap-accent, #1e2bfa) 20%, transparent);
+    border-radius: 14px;
+  }
+  .caption-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.1em 0.34em;
+    font-family: var(--font-display, "Space Grotesk"), system-ui, sans-serif;
+    font-weight: 600;
+    font-size: clamp(40px, 4.4vw, 58px);
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+  }
+
+  /* upcoming — muted gray, no chip */
+  .caption-word {
+    display: inline-block;
+    padding: 0 0.18em;
+    border-radius: 0.32em;
+    color: color-mix(in srgb, var(--cap-ink, #111111) 52%, var(--cap-canvas, #fdfae7));
+  }
+  /* current word — THE solid cobalt chip (the single-accent gesture; pill-rounded
+     fill, NO shadow), cream reading on top */
+  .caption-word.is-active {
+    color: var(--cap-canvas, #fdfae7);
+    background: var(--cap-accent, #1e2bfa);
+    box-shadow: none;
+  }
+  /* already spoken — solid near-black ink, chip cleared */
+  .caption-word.is-spoken {
+    color: var(--cap-ink, #111111);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  /* optional per-word accents (dormant until a word-classer tags them) */
+  /* brand / key term — cobalt, the system's one accent on a key word */
+  .caption-word.cap-brand {
+    color: var(--cap-accent, #1e2bfa);
+  }
+  /* numerals / data — cobalt 700, the figure voice */
+  .caption-word.cap-num {
+    font-family: var(--font-display, "Space Grotesk"), system-ui, sans-serif;
+    font-weight: 700;
+    color: var(--cap-accent, #1e2bfa);
+  }
+  /* emphasis — a directional-red hairline underline (inline only, never a fill) */
+  .caption-word.cap-cta {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--cap-accent-2, #dc2626);
+    text-underline-offset: 0.1em;
+  }
+
+  @media (max-aspect-ratio: 9/16) {
+    .caption-pill {
+      max-width: 92%;
+    }
+    .caption-line {
+      font-size: clamp(34px, 5.4vw, 48px);
+    }
+  }
+</style>
+
+<div
+  id="captions-root"
+  data-composition-id="captions"
+  data-timeline-locked
+  data-start="0"
+  data-duration="53.055"
+  data-fps="30"
+  data-width="1080"
+  data-height="1920"
+>
+  <div class="caption-layer" aria-hidden="true">
+    <div id="caption-stage" class="caption-stage"></div>
+  </div>
+</div>
+
+<script>
+  // captions.mjs injects the engine's scene-aware groups + real duration here.
+  var GROUPS = [{"id":"caption-group-0","frame":1,"start":0.07,"end":1.28,"text":"relevé de température,","words":[{"id":"caption-word-0-0","text":"relevé","start":0.07,"end":0.36},{"id":"caption-word-0-1","text":"de","start":0.36,"end":0.47},{"id":"caption-word-0-2","text":"température,","start":0.55,"end":1.16}]},{"id":"caption-group-1","frame":1,"start":1.45,"end":1.96,"text":"contrôle à","words":[{"id":"caption-word-1-0","text":"contrôle","start":1.45,"end":1.85},{"id":"caption-word-1-1","text":"à","start":1.85,"end":1.87}]},{"id":"caption-group-2","frame":1,"start":1.96,"end":2.87,"text":"la réception,","words":[{"id":"caption-word-2-0","text":"la","start":1.96,"end":2.06},{"id":"caption-word-2-1","text":"réception,","start":2.06,"end":2.84}]},{"id":"caption-group-3","frame":1,"start":2.87,"end":3.72,"text":"traceabilité,","words":[{"id":"caption-word-3-0","text":"traceabilité,","start":2.87,"end":3.6}]},{"id":"caption-group-4","frame":1,"start":3.89,"end":5.03,"text":"étiquette DLC,","words":[{"id":"caption-word-4-0","text":"étiquette","start":3.89,"end":4.5},{"id":"caption-word-4-1","text":"DLC,","start":4.5,"end":4.91}]},{"id":"caption-group-5","frame":1,"start":5.15,"end":6.22,"text":"checklist d'hygiène.","words":[{"id":"caption-word-5-0","text":"checklist","start":5.15,"end":5.48},{"id":"caption-word-5-1","text":"d'hygiène.","start":5.48,"end":6.1}]},{"id":"caption-group-6","frame":1,"start":6.71,"end":8.45,"text":"La conformité HACCP,","words":[{"id":"caption-word-6-0","text":"La","start":6.71,"end":6.83},{"id":"caption-word-6-1","text":"conformité","start":6.83,"end":7.79},{"id":"caption-word-6-2","text":"HACCP,","start":7.79,"end":8.45}]},{"id":"caption-group-7","frame":1,"start":8.45,"end":9.93,"text":"c'est essentiel,","words":[{"id":"caption-word-7-0","text":"c'est","start":8.45,"end":8.91},{"id":"caption-word-7-1","text":"essentiel,","start":8.92,"end":9.93}]},{"id":"caption-group-8","frame":1,"start":9.93,"end":10.36,"text":"mais trop","words":[{"id":"caption-word-8-0","text":"mais","start":9.93,"end":10.11},{"id":"caption-word-8-1","text":"trop","start":10.11,"end":10.24}]},{"id":"caption-group-9","frame":1,"start":10.55,"end":10.74,"text":"souvent,","words":[{"id":"caption-word-9-0","text":"souvent,","start":10.55,"end":10.74}]},{"id":"caption-group-10","frame":1,"start":10.74,"end":11.67,"text":"c'est une montagne","words":[{"id":"caption-word-10-0","text":"c'est","start":10.74,"end":11.04},{"id":"caption-word-10-1","text":"une","start":11.04,"end":11.22},{"id":"caption-word-10-2","text":"montagne","start":11.22,"end":11.55}]},{"id":"caption-group-11","frame":1,"start":11.78,"end":12.48,"text":"de paprasse.","words":[{"id":"caption-word-11-0","text":"de","start":11.78,"end":11.82},{"id":"caption-word-11-1","text":"paprasse.","start":11.82,"end":12.36}]},{"id":"caption-group-12","frame":2,"start":12.737,"end":14.087,"text":"Fooditup réunit toute","words":[{"id":"caption-word-12-0","text":"Fooditup","start":12.737,"end":13.187},{"id":"caption-word-12-1","text":"réunit","start":13.287,"end":13.617},{"id":"caption-word-12-2","text":"toute","start":13.727,"end":14.027}]},{"id":"caption-group-13","frame":2,"start":14.087,"end":15.537,"text":"votre démarche HACCP","words":[{"id":"caption-word-13-0","text":"votre","start":14.087,"end":14.427},{"id":"caption-word-13-1","text":"démarche","start":14.427,"end":15.027},{"id":"caption-word-13-2","text":"HACCP","start":15.027,"end":15.447}]},{"id":"caption-group-14","frame":2,"start":15.537,"end":15.877,"text":"dans un","words":[{"id":"caption-word-14-0","text":"dans","start":15.537,"end":15.737},{"id":"caption-word-14-1","text":"un","start":15.737,"end":15.877}]},{"id":"caption-group-15","frame":2,"start":15.877,"end":16.737,"text":"seul module.","words":[{"id":"caption-word-15-0","text":"seul","start":15.877,"end":16.097},{"id":"caption-word-15-1","text":"module.","start":16.127,"end":16.617}]},{"id":"caption-group-16","frame":2,"start":16.737,"end":17.297,"text":"Digital,","words":[{"id":"caption-word-16-0","text":"Digital,","start":16.737,"end":17.187}]},{"id":"caption-group-17","frame":2,"start":17.297,"end":17.727,"text":"guidé,","words":[{"id":"caption-word-17-0","text":"guidé,","start":17.297,"end":17.627}]},{"id":"caption-group-18","frame":2,"start":17.727,"end":18.737,"text":"toujours à jour.","words":[{"id":"caption-word-18-0","text":"toujours","start":17.727,"end":18.227},{"id":"caption-word-18-1","text":"à","start":18.237,"end":18.297},{"id":"caption-word-18-2","text":"jour.","start":18.297,"end":18.617}]},{"id":"caption-group-19","frame":3,"start":19.077,"end":20.477,"text":"Enregistrez vos températures","words":[{"id":"caption-word-19-0","text":"Enregistrez","start":19.077,"end":19.637},{"id":"caption-word-19-1","text":"vos","start":19.637,"end":19.807},{"id":"caption-word-19-2","text":"températures","start":19.807,"end":20.477}]},{"id":"caption-group-20","frame":3,"start":20.477,"end":21.207,"text":"en ingeste,","words":[{"id":"caption-word-20-0","text":"en","start":20.477,"end":20.587},{"id":"caption-word-20-1","text":"ingeste,","start":20.587,"end":21.087}]},{"id":"caption-group-21","frame":3,"start":21.387,"end":22.857,"text":"validez vos réceptions,","words":[{"id":"caption-word-21-0","text":"validez","start":21.387,"end":21.687},{"id":"caption-word-21-1","text":"vos","start":21.727,"end":21.917},{"id":"caption-word-21-2","text":"réceptions,","start":21.917,"end":22.737}]},{"id":"caption-group-22","frame":3,"start":22.867,"end":24.357,"text":"tracé chaque produit,","words":[{"id":"caption-word-22-0","text":"tracé","start":22.867,"end":23.137},{"id":"caption-word-22-1","text":"chaque","start":23.137,"end":23.647},{"id":"caption-word-22-2","text":"produit,","start":23.647,"end":24.297}]},{"id":"caption-group-23","frame":3,"start":24.357,"end":25.927,"text":"imprimez vos étiquettes","words":[{"id":"caption-word-23-0","text":"imprimez","start":24.357,"end":24.907},{"id":"caption-word-23-1","text":"vos","start":24.907,"end":25.147},{"id":"caption-word-23-2","text":"étiquettes","start":25.147,"end":25.927}]},{"id":"caption-group-24","frame":3,"start":25.927,"end":26.327,"text":"DLC et","words":[{"id":"caption-word-24-0","text":"DLC","start":25.927,"end":26.177},{"id":"caption-word-24-1","text":"et","start":26.267,"end":26.327}]},{"id":"caption-group-25","frame":3,"start":26.327,"end":27.377,"text":"cochez vos checklists","words":[{"id":"caption-word-25-0","text":"cochez","start":26.327,"end":26.667},{"id":"caption-word-25-1","text":"vos","start":26.687,"end":26.837},{"id":"caption-word-25-2","text":"checklists","start":26.837,"end":27.377}]},{"id":"caption-group-26","frame":3,"start":27.377,"end":28.197,"text":"d'hygiène.","words":[{"id":"caption-word-26-0","text":"d'hygiène.","start":27.377,"end":28.137}]},{"id":"caption-group-27","frame":3,"start":28.197,"end":28.977,"text":"Chaque preuve","words":[{"id":"caption-word-27-0","text":"Chaque","start":28.197,"end":28.537},{"id":"caption-word-27-1","text":"preuve","start":28.607,"end":28.977}]},{"id":"caption-group-28","frame":3,"start":28.977,"end":29.887,"text":"est orodatée,","words":[{"id":"caption-word-28-0","text":"est","start":28.977,"end":29.187},{"id":"caption-word-28-1","text":"orodatée,","start":29.187,"end":29.887}]},{"id":"caption-group-29","frame":3,"start":29.887,"end":30.327,"text":"prête","words":[{"id":"caption-word-29-0","text":"prête","start":29.887,"end":30.207}]},{"id":"caption-group-30","frame":3,"start":30.507,"end":31.397,"text":"pour un contrôle.","words":[{"id":"caption-word-30-0","text":"pour","start":30.507,"end":30.517},{"id":"caption-word-30-1","text":"un","start":30.527,"end":30.657},{"id":"caption-word-30-2","text":"contrôle.","start":30.657,"end":31.277}]},{"id":"caption-group-31","frame":4,"start":31.704,"end":31.974,"text":"Et vous","words":[{"id":"caption-word-31-0","text":"Et","start":31.704,"end":31.744},{"id":"caption-word-31-1","text":"vous","start":31.744,"end":31.974}]},{"id":"caption-group-32","frame":4,"start":31.974,"end":32.314,"text":"avez le","words":[{"id":"caption-word-32-0","text":"avez","start":31.974,"end":32.184},{"id":"caption-word-32-1","text":"le","start":32.194,"end":32.314}]},{"id":"caption-group-33","frame":4,"start":32.314,"end":32.804,"text":"choix,","words":[{"id":"caption-word-33-0","text":"choix,","start":32.314,"end":32.714}]},{"id":"caption-group-34","frame":4,"start":32.804,"end":33.834,"text":"vous travaillez directement","words":[{"id":"caption-word-34-0","text":"vous","start":32.804,"end":32.884},{"id":"caption-word-34-1","text":"travaillez","start":32.884,"end":33.324},{"id":"caption-word-34-2","text":"directement","start":33.324,"end":33.834}]},{"id":"caption-group-35","frame":4,"start":33.834,"end":34.724,"text":"dans le logiciel","words":[{"id":"caption-word-35-0","text":"dans","start":33.834,"end":34.074},{"id":"caption-word-35-1","text":"le","start":34.074,"end":34.194},{"id":"caption-word-35-2","text":"logiciel","start":34.194,"end":34.604}]},{"id":"caption-group-36","frame":4,"start":34.854,"end":35.464,"text":"sur tablette","words":[{"id":"caption-word-36-0","text":"sur","start":34.854,"end":34.884},{"id":"caption-word-36-1","text":"tablette","start":34.884,"end":35.344}]},{"id":"caption-group-37","frame":4,"start":35.574,"end":36.464,"text":"en cuisine,","words":[{"id":"caption-word-37-0","text":"en","start":35.574,"end":35.644},{"id":"caption-word-37-1","text":"cuisine,","start":35.644,"end":36.384}]},{"id":"caption-group-38","frame":4,"start":36.464,"end":37.454,"text":"ou vous demandez","words":[{"id":"caption-word-38-0","text":"ou","start":36.464,"end":36.524},{"id":"caption-word-38-1","text":"vous","start":36.524,"end":36.794},{"id":"caption-word-38-2","text":"demandez","start":36.794,"end":37.334}]},{"id":"caption-group-39","frame":4,"start":37.564,"end":38.664,"text":"simplement à Claude,","words":[{"id":"caption-word-39-0","text":"simplement","start":37.564,"end":38.024},{"id":"caption-word-39-1","text":"à","start":38.024,"end":38.084},{"id":"caption-word-39-2","text":"Claude,","start":38.094,"end":38.664}]},{"id":"caption-group-40","frame":4,"start":38.664,"end":39.944,"text":"enregistre la température","words":[{"id":"caption-word-40-0","text":"enregistre","start":38.664,"end":39.224},{"id":"caption-word-40-1","text":"la","start":39.224,"end":39.334},{"id":"caption-word-40-2","text":"température","start":39.334,"end":39.944}]},{"id":"caption-group-41","frame":4,"start":39.944,"end":40.224,"text":"de la","words":[{"id":"caption-word-41-0","text":"de","start":39.944,"end":40.054},{"id":"caption-word-41-1","text":"la","start":40.054,"end":40.104}]},{"id":"caption-group-42","frame":4,"start":40.274,"end":41.044,"text":"chambre froide,","words":[{"id":"caption-word-42-0","text":"chambre","start":40.274,"end":40.554},{"id":"caption-word-42-1","text":"froide,","start":40.554,"end":40.924}]},{"id":"caption-group-43","frame":4,"start":41.144,"end":42.244,"text":"crée une étiquette","words":[{"id":"caption-word-43-0","text":"crée","start":41.144,"end":41.334},{"id":"caption-word-43-1","text":"une","start":41.334,"end":41.534},{"id":"caption-word-43-2","text":"étiquette","start":41.534,"end":42.124}]},{"id":"caption-group-44","frame":4,"start":42.244,"end":42.514,"text":"pour le","words":[{"id":"caption-word-44-0","text":"pour","start":42.244,"end":42.364},{"id":"caption-word-44-1","text":"le","start":42.424,"end":42.514}]},{"id":"caption-group-45","frame":4,"start":42.514,"end":43.094,"text":"saumon et","words":[{"id":"caption-word-45-0","text":"saumon","start":42.514,"end":42.954},{"id":"caption-word-45-1","text":"et","start":42.954,"end":43.094}]},{"id":"caption-group-46","frame":4,"start":43.094,"end":43.744,"text":"c'est fait","words":[{"id":"caption-word-46-0","text":"c'est","start":43.094,"end":43.454},{"id":"caption-word-46-1","text":"fait","start":43.454,"end":43.744}]},{"id":"caption-group-47","frame":4,"start":43.744,"end":44.324,"text":"dans Food","words":[{"id":"caption-word-47-0","text":"dans","start":43.744,"end":44.034},{"id":"caption-word-47-1","text":"Food","start":44.034,"end":44.324}]},{"id":"caption-group-48","frame":4,"start":44.324,"end":44.894,"text":"Eat Up.","words":[{"id":"caption-word-48-0","text":"Eat","start":44.324,"end":44.544},{"id":"caption-word-48-1","text":"Up.","start":44.544,"end":44.774}]},{"id":"caption-group-49","frame":5,"start":45.095,"end":45.495,"text":"Moins de","words":[{"id":"caption-word-49-0","text":"Moins","start":45.095,"end":45.325},{"id":"caption-word-49-1","text":"de","start":45.365,"end":45.495}]},{"id":"caption-group-50","frame":5,"start":45.495,"end":46.085,"text":"paparaz,","words":[{"id":"caption-word-50-0","text":"paparaz,","start":45.495,"end":46.085}]},{"id":"caption-group-51","frame":5,"start":46.085,"end":46.945,"text":"zéro oublie,","words":[{"id":"caption-word-51-0","text":"zéro","start":46.085,"end":46.345},{"id":"caption-word-51-1","text":"oublie,","start":46.345,"end":46.925}]},{"id":"caption-group-52","frame":5,"start":46.945,"end":47.475,"text":"une cuisine","words":[{"id":"caption-word-52-0","text":"une","start":46.945,"end":47.035},{"id":"caption-word-52-1","text":"cuisine","start":47.085,"end":47.405}]},{"id":"caption-group-53","frame":5,"start":47.475,"end":47.935,"text":"toujours prête","words":[{"id":"caption-word-53-0","text":"toujours","start":47.475,"end":47.775},{"id":"caption-word-53-1","text":"prête","start":47.775,"end":47.935}]},{"id":"caption-group-54","frame":5,"start":47.935,"end":49.255,"text":"à être contrôlée.","words":[{"id":"caption-word-54-0","text":"à","start":47.935,"end":48.065},{"id":"caption-word-54-1","text":"être","start":48.065,"end":48.345},{"id":"caption-word-54-2","text":"contrôlée.","start":48.385,"end":49.185}]},{"id":"caption-group-55","frame":5,"start":49.255,"end":50.185,"text":"Foodie top,","words":[{"id":"caption-word-55-0","text":"Foodie","start":49.255,"end":49.735},{"id":"caption-word-55-1","text":"top,","start":49.735,"end":50.185}]},{"id":"caption-group-56","frame":5,"start":50.185,"end":51.925,"text":"la conformité HACCP,","words":[{"id":"caption-word-56-0","text":"la","start":50.185,"end":50.365},{"id":"caption-word-56-1","text":"conformité","start":50.365,"end":51.245},{"id":"caption-word-56-2","text":"HACCP,","start":51.295,"end":51.845}]},{"id":"caption-group-57","frame":5,"start":51.925,"end":52.945,"text":"enfin simple.","words":[{"id":"caption-word-57-0","text":"enfin","start":51.925,"end":52.095},{"id":"caption-word-57-1","text":"simple.","start":52.215,"end":52.825}]}];
+  var DURATION = 53.055;
+
+  (function () {
+    var stage = document.getElementById("caption-stage");
+
+    // build DOM: one .caption-group per group, .caption-word per word
+    GROUPS.forEach(function (group, g) {
+      var groupEl = document.createElement("div");
+      groupEl.className = "caption-group";
+      groupEl.id = "caption-group-" + g;
+      var pill = document.createElement("div");
+      pill.className = "caption-pill";
+      var line = document.createElement("div");
+      line.className = "caption-line";
+      (group.words || []).forEach(function (w, i) {
+        var span = document.createElement("span");
+        span.className = "caption-word";
+        span.id = "caption-word-" + g + "-" + i;
+        span.textContent = String(w.text);
+        line.appendChild(span);
+      });
+      pill.appendChild(line);
+      groupEl.appendChild(pill);
+      stage.appendChild(groupEl);
+    });
+
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+
+    GROUPS.forEach(function (group, g) {
+      var groupEl = document.getElementById("caption-group-" + g);
+      var words = group.words || [];
+      var next = GROUPS[g + 1];
+      var isLast = g === GROUPS.length - 1;
+      var start = Math.max(0, Number(group.start));
+      var end = isLast ? DURATION : Math.min(Number(next.start), Number(group.end) + 0.3);
+      if (end <= start) end = start + 0.01;
+
+      // group on/off — exactly one group visible at a time
+      tl.set(groupEl, { opacity: 1 }, start);
+      tl.set(groupEl, { opacity: 0 }, end);
+
+      // 3-state karaoke via className SETS — seek-safe (gsap.set applies on the
+      // engine's frame-by-frame seek; .call callbacks would NOT fire).
+      words.forEach(function (w, i) {
+        var el = document.getElementById("caption-word-" + g + "-" + i);
+        var at = Math.max(start, Number(w.start));
+        tl.set(el, { className: "caption-word" }, start); // upcoming (also resets on reverse-seek)
+        tl.set(el, { className: "caption-word is-active" }, at); // current
+        tl.fromTo(el, { scale: 0.985 }, { scale: 1, duration: 0.18, ease: "power1.out" }, at);
+        if (i + 1 < words.length) {
+          var nextAt = Math.max(start, Number(words[i + 1].start));
+          tl.set(el, { className: "caption-word is-spoken" }, nextAt); // demote when next activates
+        }
+      });
+      if (words.length) {
+        var lastEl = document.getElementById("caption-word-" + g + "-" + (words.length - 1));
+        var lastSpoken = Math.min(end, Number(words[words.length - 1].end) + 0.1);
+        tl.set(lastEl, { className: "caption-word is-spoken" }, lastSpoken);
+      }
+    });
+
+    // full-span anchor so the sub-comp timeline spans the whole video
+    tl.to({}, { duration: DURATION }, 0);
+    window.__timelines["captions"] = tl;
+  })();
+</script>
+
+<style>
+  .caption-line { line-height: 1.1 !important; }
+</style>
+</template>

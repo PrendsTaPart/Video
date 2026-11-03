@@ -1,0 +1,465 @@
+{
+ "voices": [
+  {
+   "frame": 1,
+   "path": "assets/voice/routine.wav",
+   "duration_s": 10.031,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Le",
+     "start": 0.0,
+     "end": 0.436
+    },
+    {
+     "id": "w1",
+     "text": "coach",
+     "start": 0.436,
+     "end": 0.872
+    },
+    {
+     "id": "w2",
+     "text": "business",
+     "start": 0.872,
+     "end": 1.308
+    },
+    {
+     "id": "w3",
+     "text": "plan",
+     "start": 1.308,
+     "end": 1.745
+    },
+    {
+     "id": "w4",
+     "text": "t'interviewe,",
+     "start": 1.745,
+     "end": 2.181
+    },
+    {
+     "id": "w5",
+     "text": "section",
+     "start": 2.181,
+     "end": 2.617
+    },
+    {
+     "id": "w6",
+     "text": "par",
+     "start": 2.617,
+     "end": 3.053
+    },
+    {
+     "id": "w7",
+     "text": "section.",
+     "start": 3.053,
+     "end": 3.489
+    },
+    {
+     "id": "w8",
+     "text": "Marché,",
+     "start": 3.489,
+     "end": 3.925
+    },
+    {
+     "id": "w9",
+     "text": "offre,",
+     "start": 3.925,
+     "end": 4.361
+    },
+    {
+     "id": "w10",
+     "text": "modèle",
+     "start": 4.361,
+     "end": 4.797
+    },
+    {
+     "id": "w11",
+     "text": "économique,",
+     "start": 4.797,
+     "end": 5.234
+    },
+    {
+     "id": "w12",
+     "text": "prévisions.",
+     "start": 5.234,
+     "end": 5.67
+    },
+    {
+     "id": "w13",
+     "text": "Il",
+     "start": 5.67,
+     "end": 6.106
+    },
+    {
+     "id": "w14",
+     "text": "ne",
+     "start": 6.106,
+     "end": 6.542
+    },
+    {
+     "id": "w15",
+     "text": "remplit",
+     "start": 6.542,
+     "end": 6.978
+    },
+    {
+     "id": "w16",
+     "text": "pas",
+     "start": 6.978,
+     "end": 7.414
+    },
+    {
+     "id": "w17",
+     "text": "de",
+     "start": 7.414,
+     "end": 7.85
+    },
+    {
+     "id": "w18",
+     "text": "cases,",
+     "start": 7.85,
+     "end": 8.286
+    },
+    {
+     "id": "w19",
+     "text": "il",
+     "start": 8.286,
+     "end": 8.723
+    },
+    {
+     "id": "w20",
+     "text": "te",
+     "start": 8.723,
+     "end": 9.159
+    },
+    {
+     "id": "w21",
+     "text": "fait",
+     "start": 9.159,
+     "end": 9.595
+    },
+    {
+     "id": "w22",
+     "text": "réfléchir.",
+     "start": 9.595,
+     "end": 10.031
+    }
+   ]
+  },
+  {
+   "frame": 2,
+   "path": "assets/voice/prompt.wav",
+   "duration_s": 3.994,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Tu",
+     "start": 0.0,
+     "end": 0.333
+    },
+    {
+     "id": "w1",
+     "text": "lances",
+     "start": 0.333,
+     "end": 0.666
+    },
+    {
+     "id": "w2",
+     "text": ":",
+     "start": 0.666,
+     "end": 0.998
+    },
+    {
+     "id": "w3",
+     "text": "aide-moi",
+     "start": 0.998,
+     "end": 1.331
+    },
+    {
+     "id": "w4",
+     "text": "à",
+     "start": 1.331,
+     "end": 1.664
+    },
+    {
+     "id": "w5",
+     "text": "créer",
+     "start": 1.664,
+     "end": 1.997
+    },
+    {
+     "id": "w6",
+     "text": "mon",
+     "start": 1.997,
+     "end": 2.33
+    },
+    {
+     "id": "w7",
+     "text": "entreprise.",
+     "start": 2.33,
+     "end": 2.663
+    },
+    {
+     "id": "w8",
+     "text": "Et",
+     "start": 2.663,
+     "end": 2.995
+    },
+    {
+     "id": "w9",
+     "text": "la",
+     "start": 2.995,
+     "end": 3.328
+    },
+    {
+     "id": "w10",
+     "text": "conversation",
+     "start": 3.328,
+     "end": 3.661
+    },
+    {
+     "id": "w11",
+     "text": "commence.",
+     "start": 3.661,
+     "end": 3.994
+    }
+   ]
+  },
+  {
+   "frame": 3,
+   "path": "assets/voice/cas.wav",
+   "duration_s": 10.495,
+   "words": [
+    {
+     "id": "w0",
+     "text": "À",
+     "start": 0.0,
+     "end": 0.276
+    },
+    {
+     "id": "w1",
+     "text": "Léa,",
+     "start": 0.276,
+     "end": 0.552
+    },
+    {
+     "id": "w2",
+     "text": "il",
+     "start": 0.552,
+     "end": 0.829
+    },
+    {
+     "id": "w3",
+     "text": "pose",
+     "start": 0.829,
+     "end": 1.105
+    },
+    {
+     "id": "w4",
+     "text": "la",
+     "start": 1.105,
+     "end": 1.381
+    },
+    {
+     "id": "w5",
+     "text": "question",
+     "start": 1.381,
+     "end": 1.657
+    },
+    {
+     "id": "w6",
+     "text": "qui",
+     "start": 1.657,
+     "end": 1.933
+    },
+    {
+     "id": "w7",
+     "text": "pique",
+     "start": 1.933,
+     "end": 2.21
+    },
+    {
+     "id": "w8",
+     "text": ":",
+     "start": 2.21,
+     "end": 2.486
+    },
+    {
+     "id": "w9",
+     "text": "ton",
+     "start": 2.486,
+     "end": 2.762
+    },
+    {
+     "id": "w10",
+     "text": "marché,",
+     "start": 2.762,
+     "end": 3.038
+    },
+    {
+     "id": "w11",
+     "text": "c'est",
+     "start": 3.038,
+     "end": 3.314
+    },
+    {
+     "id": "w12",
+     "text": "toute",
+     "start": 3.314,
+     "end": 3.591
+    },
+    {
+     "id": "w13",
+     "text": "la",
+     "start": 3.591,
+     "end": 3.867
+    },
+    {
+     "id": "w14",
+     "text": "ville,",
+     "start": 3.867,
+     "end": 4.143
+    },
+    {
+     "id": "w15",
+     "text": "ou",
+     "start": 4.143,
+     "end": 4.419
+    },
+    {
+     "id": "w16",
+     "text": "les",
+     "start": 4.419,
+     "end": 4.695
+    },
+    {
+     "id": "w17",
+     "text": "trois",
+     "start": 4.695,
+     "end": 4.972
+    },
+    {
+     "id": "w18",
+     "text": "mille",
+     "start": 4.972,
+     "end": 5.248
+    },
+    {
+     "id": "w19",
+     "text": "habitants",
+     "start": 5.248,
+     "end": 5.524
+    },
+    {
+     "id": "w20",
+     "text": "à",
+     "start": 5.524,
+     "end": 5.8
+    },
+    {
+     "id": "w21",
+     "text": "dix",
+     "start": 5.8,
+     "end": 6.076
+    },
+    {
+     "id": "w22",
+     "text": "minutes",
+     "start": 6.076,
+     "end": 6.352
+    },
+    {
+     "id": "w23",
+     "text": "à",
+     "start": 6.352,
+     "end": 6.629
+    },
+    {
+     "id": "w24",
+     "text": "pied",
+     "start": 6.629,
+     "end": 6.905
+    },
+    {
+     "id": "w25",
+     "text": "?",
+     "start": 6.905,
+     "end": 7.181
+    },
+    {
+     "id": "w26",
+     "text": "En",
+     "start": 7.181,
+     "end": 7.457
+    },
+    {
+     "id": "w27",
+     "text": "une",
+     "start": 7.457,
+     "end": 7.733
+    },
+    {
+     "id": "w28",
+     "text": "heure,",
+     "start": 7.733,
+     "end": 8.01
+    },
+    {
+     "id": "w29",
+     "text": "elle",
+     "start": 8.01,
+     "end": 8.286
+    },
+    {
+     "id": "w30",
+     "text": "a",
+     "start": 8.286,
+     "end": 8.562
+    },
+    {
+     "id": "w31",
+     "text": "un",
+     "start": 8.562,
+     "end": 8.838
+    },
+    {
+     "id": "w32",
+     "text": "business",
+     "start": 8.838,
+     "end": 9.114
+    },
+    {
+     "id": "w33",
+     "text": "plan",
+     "start": 9.114,
+     "end": 9.391
+    },
+    {
+     "id": "w34",
+     "text": "solide.",
+     "start": 9.391,
+     "end": 9.667
+    },
+    {
+     "id": "w35",
+     "text": "Pas",
+     "start": 9.667,
+     "end": 9.943
+    },
+    {
+     "id": "w36",
+     "text": "un",
+     "start": 9.943,
+     "end": 10.219
+    },
+    {
+     "id": "w37",
+     "text": "copier-coller.",
+     "start": 10.219,
+     "end": 10.495
+    }
+   ]
+  }
+ ],
+ "bgm": null,
+ "sfx": []
+}

@@ -1,0 +1,10 @@
+{
+  "provider": "elevenlabs", "voice": "TGAegA0zNRi8I6nUdq3i", "lang": "fr", "model": "eleven_multilingual_v2",
+  "lines": [
+    { "id": "01", "text": "Recrutement, onboarding, plannings, projets, congés... votre RH, c'est presque un temps plein à elle toute seule. Et si vous la pilotiez juste en parlant ?" },
+    { "id": "02", "text": "Voici RapidoRH, le plugin qui branche Claude directement sur votre RH. Vous parlez, Claude agit dans le logiciel." },
+    { "id": "03", "text": "Recrutement, onboarding, projets et Kanban, dailies, agenda, horaires et congés : toute votre RH, connectée à Claude au même endroit." },
+    { "id": "04", "text": "Un exemple. Vous dites : onboarde Sarah, serveuse. Claude crée le compte, attribue le rôle, et l'ajoute au projet. Et c'est fait, dans RapidoRH." },
+    { "id": "05", "text": "Votre RH, gérée en Rapido. RapidoRH : arrêtez de subir, commencez à parler." }
+  ]
+}

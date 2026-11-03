@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .fb-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .fb-stage { position: absolute; inset: 0; }
+
+        .fb-context { position: absolute; left: 140px; top: 56px; font-size: 26px; font-weight: 500; color: rgba(58,63,69,0.85); }
+
+        .fb-panel {
+          position: absolute; top: 150px; width: 700px; height: 520px;
+          border: 1px solid #8A9099; background: #EDEEF0; box-sizing: border-box; padding: 26px;
+        }
+        .fb-panel.left { left: 140px; }
+        .fb-panel.right { right: 140px; }
+        .fb-panel .head { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #8A9099; padding-bottom: 16px; margin-bottom: 24px; }
+        .fb-panel .head .label { font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(58,63,69,0.85); }
+        .fb-panel .head .dot { width: 10px; height: 10px; border-radius: 50%; border: 1px solid #8A9099; }
+
+        .fb-order { border: 1px solid #8A9099; background: rgba(58,63,69,0.045); padding: 30px; opacity: 0; }
+        .fb-order .num { font-size: 56px; font-weight: 800; margin-bottom: 14px; }
+        .fb-order .meta { font-size: 26px; font-weight: 500; color: rgba(58,63,69,0.85); line-height: 1.6; }
+
+        .fb-cell {
+          border: 1px solid #8A9099; background: rgba(58,63,69,0.045);
+          height: 130px; display: flex; align-items: center; padding: 0 30px;
+          margin-top: 20px;
+        }
+        .fb-cell .txt { font-size: 56px; font-weight: 700; }
+        .fb-caret { display: inline-block; width: 5px; height: 50px; background: #3A3F45; margin-left: 4px; vertical-align: -10px; }
+        .fb-cell-label { font-size: 22px; font-weight: 500; color: rgba(58,63,69,0.85); }
+
+        .fb-cursor-pos { position: absolute; left: 490px; top: 352px; width: 0; height: 0; }
+        .fb-cursor {
+          width: 0; height: 0;
+          border-left: 16px solid #3A3F45; border-bottom: 26px solid transparent;
+          transform-origin: 0 0;
+        }
+
+        .fb-tally { position: absolute; left: 140px; top: 720px; display: flex; gap: 20px; }
+        .fb-tally .mark { width: 40px; height: 60px; border: 1px solid #8A9099; display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 700; color: rgba(58,63,69,0.85); }
+
+        .fb-echo { position: absolute; left: 0; right: 0; top: 936px; text-align: center; font-size: 30px; font-weight: 600; color: rgba(58,63,69,0.85); opacity: 0; }
+      </style>
+
+      <div id="root" data-composition-id="02-recopie-commande" data-width="1920" data-height="1080" data-duration="17.0">
+        <div class="fb-bg clip" id="fb-bgclip" data-start="0" data-duration="17.0" data-track-index="1"></div>
+
+        <div class="fb-stage" id="fb-stage">
+          <div class="fb-context" id="fb-context">au comptoir</div>
+
+          <div class="fb-panel left" id="fb-panel-left">
+            <div class="head"><span class="label">livraison</span><span class="dot"></span></div>
+            <div class="fb-order" id="fb-order">
+              <div class="num" id="fb-order-num">#482</div>
+              <div class="meta">3 articles — à emporter<br />reçue à l'instant</div>
+            </div>
+          </div>
+
+          <div class="fb-panel right" id="fb-panel-right">
+            <div class="head"><span class="label">caisse</span><span class="dot"></span></div>
+            <div class="fb-cell-label">n° de commande</div>
+            <div class="fb-cell" id="fb-cell"><span class="txt" id="fb-celltxt"></span><span class="fb-caret" id="fb-caret"></span></div>
+          </div>
+
+          <div class="fb-cursor-pos" id="fb-cursor-pos"><div class="fb-cursor" id="fb-cursor"></div></div>
+
+          <div class="fb-tally" id="fb-tally">
+            <div class="mark" id="fb-m1" style="opacity:0;">I</div>
+            <div class="mark" id="fb-m2" style="opacity:0;">II</div>
+            <div class="mark" id="fb-m3" style="opacity:0;">III</div>
+          </div>
+
+          <div class="fb-echo" id="fb-echo">Toujours le même geste, commande après commande.</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#fb-context", { opacity: 0 });
+        gsap.set(["#fb-panel-left", "#fb-panel-right"], { opacity: 0, y: 14 });
+        gsap.set("#fb-order", { opacity: 0, y: -16 });
+        gsap.set("#fb-celltxt", { opacity: 1 });
+        gsap.set(["#fb-m1", "#fb-m2", "#fb-m3"], { opacity: 0, scale: 0 });
+        gsap.set("#fb-echo", { opacity: 0, y: 10 });
+
+        function moveCursor(x, y, dur, at, ease) {
+          tl.to("#fb-cursor-pos", { x: x - 490, y: y - 352, duration: dur, ease: ease || "power2.inOut" }, at);
+        }
+        const orderEl = document.getElementById("fb-order-num");
+        const cellEl = document.getElementById("fb-celltxt");
+        function typeInto(text, startAt, dur) {
+          const n = text.length;
+          for (let i = 0; i < n; i++) {
+            tl.call(() => { cellEl.textContent = text.slice(0, i + 1); }, [], startAt + (i / n) * dur);
+          }
+        }
+
+        // Scene 1 (0.0-1.0s): context label, both panels settle in, cursor rests near tab 1
+        tl.to("#fb-context", { opacity: 1, duration: 0.4, ease: "power3.out" }, 0.25);
+        tl.to("#fb-panel-left", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.4);
+        tl.to("#fb-panel-right", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.55);
+
+        // Scene 2 (0.9-1.6s, cue "Une commande de livraison tombe sur l'une."): order card drops in
+        tl.fromTo("#fb-order", { opacity: 0, y: -18 }, { opacity: 1, y: 0, duration: 0.5, ease: "bounce.out" }, 0.9);
+
+        // Scene 3 (2.9-3.7s, cue "Je la recopie à la main..."): cursor travels right
+        moveCursor(1430, 500, 0.8, 2.9, "power2.inOut");
+
+        // Scene 4 (3.7-4.7s, cue "...sur celle de la caisse."): types the order number into the till
+        tl.to("#fb-cursor", { scale: 0.85, duration: 0.08, ease: "power2.in", yoyo: true, repeat: 1 }, 3.75);
+        typeInto("482", 3.85, 0.85);
+
+        // Scene 5 (4.7-5.4s): first tally mark
+        tl.fromTo("#fb-m1", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power3.out" }, 4.75);
+
+        // --- repeats beyond the spoken line: the same gesture, again and again ---
+
+        // Round-trip 2 (5.8-7.4s): a fresh order lands, cursor goes back, recopies, tally II
+        tl.call(() => { orderEl.textContent = "#517"; cellEl.textContent = ""; }, [], 5.8);
+        tl.to("#fb-order", { opacity: 0.3, duration: 0.06, ease: "none", yoyo: true, repeat: 1 }, 5.8);
+        moveCursor(490, 352, 0.35, 6.1, "power2.inOut");
+        moveCursor(1430, 500, 0.4, 6.55, "power2.inOut");
+        typeInto("517", 6.95, 0.4);
+        tl.fromTo("#fb-m2", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.28, ease: "power3.out" }, 7.15);
+
+        // Round-trip 3 (7.7-9.1s): faster still
+        tl.call(() => { orderEl.textContent = "#493"; cellEl.textContent = ""; }, [], 7.7);
+        tl.to("#fb-order", { opacity: 0.3, duration: 0.06, ease: "none", yoyo: true, repeat: 1 }, 7.7);
+        moveCursor(490, 352, 0.3, 7.95, "power2.inOut");
+        moveCursor(1430, 500, 0.35, 8.3, "power2.inOut");
+        typeInto("493", 8.65, 0.35);
+        tl.fromTo("#fb-m3", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.28, ease: "power3.out" }, 8.85);
+
+        // Scene 6 (9.5-17.0s): the echo line lands, then a long hold — the point being made
+        // is exactly this stillness: the gesture just repeats, unremarked, all service long.
+        tl.to("#fb-echo", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 9.5);
+
+        const fbRestX = 1430 - 490, fbRestY = 500 - 352;
+        const fbCursorPos = document.getElementById("fb-cursor-pos");
+        const fbPhase = { p: 0 };
+        tl.to(fbPhase, {
+          p: Math.PI * 2 * 2.2, duration: 6.8, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(fbPhase.p);
+            gsap.set(fbCursorPos, { x: fbRestX + s * 1.6, y: fbRestY + s * 1.6 });
+          }
+        }, 10.0);
+
+        const fbStage = document.getElementById("fb-stage");
+        const fbDrift = { p: 0 };
+        tl.to(fbDrift, {
+          p: Math.PI * 2 * 4.6, duration: 16.5, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(fbDrift.p);
+            const s2 = Math.sin(fbDrift.p * 1.3);
+            fbStage.style.transform = `translate(${s * 2.4}px, ${s2 * 1.7}px) scale(${1 + s * 0.002})`;
+          }
+        }, 0.2);
+
+        window.__timelines["02-recopie-commande"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

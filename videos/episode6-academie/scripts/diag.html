@@ -1,0 +1,38 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Schéma Academy</title><style>
+@font-face{font-family:P;src:url(a/fonts/Poppins-Medium.ttf);font-weight:500}
+@font-face{font-family:P;src:url(a/fonts/Poppins-Bold.ttf);font-weight:700}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1080px;height:1350px;font-family:P,sans-serif;background:radial-gradient(circle,rgba(0,123,255,.16) 2.2px,transparent 2.8px) 0 0/24px 24px,#0F1A23;color:#FCF9E6;position:relative;overflow:hidden}
+h1{position:absolute;left:60px;top:50px;font-size:54px;line-height:1.05;text-shadow:5px 5px 0 #000}
+h1 b{color:#FFA500}
+.sub{position:absolute;left:60px;top:180px;font-weight:500;font-size:24px;color:#AEB8C2}
+.n{position:absolute;left:60px;width:820px;height:108px;background:#FCF9E6;color:#0b0b0b;border:5px solid #0b0b0b;box-shadow:8px 8px 0 #000;display:flex;align-items:center;padding:0 22px;gap:20px}
+.n .i{flex:none;width:56px;height:56px;border-radius:28px;background:#007BFF;color:#fff;border:4px solid #000;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:26px}
+.n .t{font-weight:700;font-size:32px;width:220px;flex:none}
+.n .d{font-weight:500;font-size:18px;line-height:1.3;color:#1d2a35}
+.n .d b{color:#0B4FA8}
+.n.hl{background:#007BFF;color:#fff}.n.hl .d{color:#e6f0ff}.n.hl .d b{color:#fff}.n.hl .i{background:#FCF9E6;color:#000}
+.a{position:absolute;left:460px;width:14px;height:22px;background:#FCF9E6;border:3px solid #000}
+.loop{position:absolute;left:905px;top:282px;width:70px;height:810px;border:7px solid #FFA500;border-left:none;border-radius:0 40px 40px 0}
+.loop:after{content:"";position:absolute;left:-14px;top:-15px;border:14px solid transparent;border-right:22px solid #FFA500}
+.lt{position:absolute;left:992px;top:470px;writing-mode:vertical-rl;font-weight:700;font-size:22px;color:#FFA500;white-space:nowrap}
+.foot{position:absolute;left:60px;right:60px;bottom:40px;font-weight:500;font-size:19px;color:#AEB8C2;line-height:1.4}
+.logo{position:absolute;right:60px;top:60px;background:#fff;border-radius:18px;border:4px solid #000;display:flex;align-items:center;gap:10px;padding:8px 16px}
+.logo img{height:36px}.logo span{color:#000;font-weight:700;font-size:18px;line-height:1.05}.logo em{display:block;font-style:normal;font-weight:500;color:#007BFF}
+</style></head><body>
+<h1>De l'Academy<br>à <b>l'amélioration</b></h1>
+<div class="sub">Comment FoodEatUp Academy transforme Claude en collaborateur métier</div>
+<div class="logo"><img src="a/logos/foodeatup.webp"><span>FoodEatUp<em>Academy</em></span></div>
+<div id="L"></div>
+<div class="loop"></div><div class="lt">verdict du vendredi → on recommence</div>
+<div class="foot">État vérifié le 26/10/2026 (lecture seule, compte apprenant) : 6 agents « à configurer » en autonomie Aperçu · 20 routines en V0, aucun verdict · tableau KPI vide · mémoire vide. La mémoire est réinjectée dans le contexte : le modèle n'est pas réentraîné. L'exécution automatique exige un orchestrateur configuré.</div>
+<script>
+const N=[['Academy','<b>Formations, missions, quiz, exercices</b> et suivi des compétences (formation.foodeatup.fr)'],
+['MCP','Le serveur de l\'Academy : <b>191 outils</b> (122 en lecture, 69 en écriture). Toute écriture demande <b>confirm=true</b>, sinon aperçu'],
+['Claude','Lit <b>get_claude_brief</b> au début ; retient avec <b>remember</b> (aperçu puis accord) ; le savoir « équipe » est validé par le responsable'],
+['Agent','Un rôle, des connecteurs autorisés, un KPI, une autonomie <b>Aperçu → Brouillon → Confirmé</b>, un point d\'arrêt'],
+['Routine','Un prompt en <b>6 blocs</b> : objectif, sources, limite, rendu, critère d\'arrêt, accord humain'],
+['KPI','Chaque exécution au journal (<b>log_routine_run</b>). V0 → V1 après 3 exécutions, V1 → V2 avec un KPI sur 14 jours'],
+['Amélioration','Le verdict humain : <b>gardée, ajustée</b> (une seule variable) ou <b>arrêtée</b>']];
+document.getElementById('L').innerHTML=N.map(([t,d],i)=>`<div class="n${i==2?' hl':''}" style="top:${235+i*134}px"><div class="i">${i+1}</div><div class="t">${t}</div><div class="d">${d}</div></div>`+(i<6?`<div class="a" style="top:${346+i*134}px"></div>`:'')).join('');
+</script></body></html>

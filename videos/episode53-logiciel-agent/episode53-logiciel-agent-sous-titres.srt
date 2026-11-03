@@ -1,0 +1,187 @@
+1
+00:00:00,300 --> 00:00:02,600
+La prochaine entreprise géante sera un logiciel
+
+2
+00:00:02,600 --> 00:00:04,360
+qui se comporte comme une agence.
+
+3
+00:00:04,360 --> 00:00:05,700
+Et si tu construis un outil IA
+
+4
+00:00:05,700 --> 00:00:06,440
+en ce moment,
+
+5
+00:00:06,440 --> 00:00:08,560
+tu construis peut-être la mauvaise version.
+
+6
+00:00:08,560 --> 00:00:09,490
+Ce n'est pas moi qui le dis.
+
+7
+00:00:09,490 --> 00:00:10,560
+C'est Julien Bek,
+
+8
+00:00:10,560 --> 00:00:11,740
+associé chez Sequoia,
+
+9
+00:00:11,740 --> 00:00:13,340
+un des plus gros fonds du monde.
+
+10
+00:00:13,340 --> 00:00:14,420
+Pendant des années,
+
+11
+00:00:14,420 --> 00:00:16,120
+tout le monde voulait faire du logiciel.
+
+12
+00:00:16,120 --> 00:00:18,200
+Parce qu'un logiciel grandit sans embaucher.
+
+13
+00:00:18,200 --> 00:00:19,000
+Une agence,
+
+14
+00:00:19,000 --> 00:00:19,320
+non.
+
+15
+00:00:19,320 --> 00:00:20,780
+Regarde ce qu'on construit tous :
+
+16
+00:00:20,780 --> 00:00:21,920
+un outil pour vendre,
+
+17
+00:00:21,920 --> 00:00:22,980
+un outil pour écrire,
+
+18
+00:00:22,980 --> 00:00:24,140
+un outil pour la compta.
+
+19
+00:00:24,140 --> 00:00:24,780
+Des copilotes,
+
+20
+00:00:24,780 --> 00:00:26,180
+qui aident un pro à aller plus
+
+21
+00:00:26,180 --> 00:00:26,720
+vite.
+
+22
+00:00:26,720 --> 00:00:28,260
+Sauf que les entreprises ne veulent pas
+
+23
+00:00:28,260 --> 00:00:28,660
+d'outils.
+
+24
+00:00:28,660 --> 00:00:29,760
+Elles veulent le travail fait.
+
+25
+00:00:29,760 --> 00:00:31,580
+Pas un logiciel pour trier des candidats
+
+26
+00:00:31,580 --> 00:00:31,900
+:
+
+27
+00:00:31,900 --> 00:00:33,160
+les bons candidats.
+
+28
+00:00:33,160 --> 00:00:34,390
+Pas un outil pour faire des devis
+
+29
+00:00:34,390 --> 00:00:34,680
+:
+
+30
+00:00:34,680 --> 00:00:36,100
+le devis envoyé.
+
+31
+00:00:36,100 --> 00:00:37,140
+Et selon Sequoia,
+
+32
+00:00:37,140 --> 00:00:39,140
+pour chaque dollar dépensé en logiciel,
+
+33
+00:00:39,140 --> 00:00:41,360
+les entreprises en dépensent six en services.
+
+34
+00:00:41,360 --> 00:00:42,540
+Alors voilà ce que je fais :
+
+35
+00:00:42,540 --> 00:00:44,320
+chacun de mes logiciels devient un agent,
+
+36
+00:00:44,320 --> 00:00:45,860
+qui l'utilise pour toi.
+
+37
+00:00:45,860 --> 00:00:46,700
+Dans FoodEatUp,
+
+38
+00:00:46,700 --> 00:00:48,210
+Caroline prend les réservations.
+
+39
+00:00:48,210 --> 00:00:50,240
+RapidoCRM rappelle tes prospects.
+
+40
+00:00:50,240 --> 00:00:52,260
+RapidoCMS publie à ta place.
+
+41
+00:00:52,260 --> 00:00:53,860
+Et Plan'It fait tourner tout ça chaque
+
+42
+00:00:53,860 --> 00:00:54,460
+matin.
+
+43
+00:00:54,460 --> 00:00:55,520
+Le logiciel reste.
+
+44
+00:00:55,520 --> 00:00:57,180
+Mais c'est l'agent qui fait le travail.
+
+45
+00:00:57,180 --> 00:00:58,360
+Tu veux savoir quel agent pour ton
+
+46
+00:00:58,360 --> 00:00:58,900
+métier ?
+
+47
+00:00:58,900 --> 00:01:00,100
+Commente AGENT.

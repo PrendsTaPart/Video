@@ -1,0 +1,152 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 39 : le vrai coût de ton burger</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&family=Fraunces:opsz,wght@9..144,800;9..144,900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:'Inter',sans-serif}
+#stage{position:absolute;inset:0;overflow:hidden;background:radial-gradient(90% 55% at 50% 40%,#6b4127 0%,#3d2414 55%,#25150b 100%)}
+.wood{position:absolute;left:0;right:0;top:1180px;height:760px;background:linear-gradient(#7a4a26,#5a3418);border-top:10px solid #8f5a2e}
+.wood:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(0,0,0,.08) 0 3px,transparent 3px 160px)}
+#hud{position:absolute;left:50px;top:70px;z-index:40;display:flex;gap:16px;align-items:center;background:rgba(20,10,4,.75);border:3px solid #a46a3a;border-radius:20px;padding:14px 24px;color:#ffe8c7}
+#hud .l{font-size:22px;font-weight:700;letter-spacing:2px;color:#d9a774}
+#hud .v{font-family:'Fraunces',serif;font-size:56px;font-weight:900;line-height:1}
+#ex{position:absolute;right:50px;top:84px;z-index:40;font-size:22px;font-weight:700;color:#d9a774;background:rgba(20,10,4,.6);padding:8px 16px;border-radius:999px;letter-spacing:1px}
+.sc{position:absolute;inset:0;display:none}
+.big{position:absolute;left:0;right:0;text-align:center;font-family:'Fraunces',serif;font-weight:900;color:#ffe8c7;line-height:1;text-shadow:0 8px 0 rgba(0,0,0,.35)}
+.o{color:#FF8A1F}
+#burger{position:absolute;left:290px;top:430px;width:500px;height:620px;z-index:10}
+#burger .ly{position:absolute;left:0;width:500px;transform-origin:50% 50%}
+.tag{position:absolute;z-index:20;background:#fff4e2;border:4px solid #2a170b;border-radius:16px;padding:10px 20px;box-shadow:0 8px 0 rgba(0,0,0,.35);white-space:nowrap}
+.tag b{display:block;font-size:26px;font-weight:700;color:#6b4127}
+.tag span{font-family:'Fraunces',serif;font-weight:900;font-size:50px;color:#2a170b;line-height:1}
+.tag.red span{color:#e5322d}
+#price{position:absolute;left:700px;top:380px;z-index:22;transform-origin:20px 0}
+#price .card{background:#FF8A1F;border:5px solid #2a170b;border-radius:18px;padding:12px 26px;font-family:'Fraunces',serif;font-weight:900;font-size:80px;color:#fff;box-shadow:0 10px 0 #2a170b}
+#q{position:absolute;left:0;right:0;top:1100px;text-align:center;font-family:'Fraunces';font-weight:900;font-size:110px;color:#FF8A1F;z-index:21}
+.panel{position:absolute;left:70px;right:70px;background:#fff4e2;border:5px solid #2a170b;border-radius:30px;box-shadow:0 12px 0 rgba(0,0,0,.4);padding:30px 36px;z-index:20}
+.row{display:flex;justify-content:space-between;align-items:baseline;font-size:40px;font-weight:700;color:#3d2414;padding:10px 0;border-bottom:3px dashed #d9b48c}
+.row:last-child{border-bottom:none}
+.row em{font-style:normal;font-family:'Fraunces';font-weight:900;font-size:52px;color:#2a170b}
+.row.t{border-top:5px solid #2a170b;border-bottom:none;margin-top:8px}
+.row.t em{color:#FF8A1F;font-size:64px}
+.gauge{position:absolute;left:190px;width:700px;height:380px;z-index:20}
+.lbl{position:absolute;left:0;right:0;text-align:center;font-size:34px;font-weight:800;letter-spacing:3px;color:#d9a774;z-index:21}
+.screen{position:absolute;left:40px;width:1000px;border-radius:26px;border:6px solid #111;background:#111;box-shadow:0 20px 60px rgba(0,0,0,.6);z-index:20;overflow:hidden}
+.screen .bar{height:44px;background:#1e1e1e;display:flex;align-items:center;gap:10px;padding:0 18px}
+.screen .bar i{width:14px;height:14px;border-radius:50%;background:#555;display:block}
+.screen .bar span{margin-left:14px;color:#bbb;font-size:20px;font-weight:600}
+.screen .hole{background:#f3f5f8}
+.chip{position:absolute;z-index:22;background:#2D7FF9;color:#fff;font-weight:800;font-size:34px;padding:14px 26px;border-radius:999px;border:4px solid #111;box-shadow:0 8px 0 #111;white-space:nowrap}
+.logo{font-weight:900;color:#2D7FF9;letter-spacing:1px}.logo b{color:#FF8A1F}
+#cap{position:absolute;left:50px;right:50px;top:1440px;z-index:60;text-align:center;font-weight:900;font-size:80px;line-height:1.1;color:#fff;-webkit-text-stroke:12px #1a0d05;paint-order:stroke fill;letter-spacing:-1px}
+#cap i{font-style:normal;display:inline-block}#cap i.k{color:#FF9F43}
+#brand{position:absolute;left:0;right:0;bottom:46px;text-align:center;font-size:30px;z-index:61}
+#thumb{display:none}
+#cta .card{position:absolute;left:70px;right:70px;top:420px;background:#fff4e2;border:6px solid #2a170b;border-radius:40px;box-shadow:0 14px 0 #2a170b;padding:46px 40px;text-align:center}
+#cta h2{font-family:'Fraunces';font-weight:900;font-size:64px;color:#2a170b;line-height:1.05}
+#cta p{font-size:34px;color:#6b4127;font-weight:700;margin-top:18px}
+#cta .kw{display:inline-block;margin-top:30px;font-weight:900;font-size:78px;color:#fff;background:#FF8A1F;border:6px solid #2a170b;border-radius:26px;padding:10px 34px;box-shadow:0 10px 0 #2a170b}
+</style></head><body><div id="stage">
+<div class="wood"></div>
+<div id="hud"><div class="l">FOOD<br>COST</div><div class="v" id="fc">—</div></div>
+<div id="ex">CHIFFRES D'EXEMPLE</div>
+
+<!-- burger (scènes 0-1) -->
+<div id="burger">
+ <svg class="ly" id="L0" viewBox="0 0 500 170" style="top:0;height:170px"><path d="M30 160 Q30 20 250 14 Q470 20 470 160Z" fill="#e2a052" stroke="#2a170b" stroke-width="8"/><g fill="#fff4d6"><ellipse cx="170" cy="70" rx="12" ry="7"/><ellipse cx="250" cy="52" rx="12" ry="7"/><ellipse cx="330" cy="72" rx="12" ry="7"/><ellipse cx="210" cy="100" rx="12" ry="7"/><ellipse cx="300" cy="104" rx="12" ry="7"/></g></svg>
+ <svg class="ly" id="L1" viewBox="0 0 500 60" style="top:160px;height:60px"><path d="M20 10 Q60 50 100 18 Q140 52 180 18 Q220 52 260 18 Q300 52 340 18 Q380 52 420 18 Q460 52 480 10Z" fill="#7cc576" stroke="#2a170b" stroke-width="7"/><rect x="60" y="2" width="380" height="16" rx="8" fill="#e5322d" stroke="#2a170b" stroke-width="6"/></svg>
+ <svg class="ly" id="L2" viewBox="0 0 500 70" style="top:210px;height:70px"><path d="M24 10 L476 10 L440 40 L400 62 L370 30 L130 30 L100 62 L60 40Z" fill="#ffc21a" stroke="#2a170b" stroke-width="7" stroke-linejoin="round"/></svg>
+ <svg class="ly" id="L3" viewBox="0 0 500 110" style="top:262px;height:110px"><rect x="30" y="8" width="440" height="94" rx="44" fill="#6b3a1f" stroke="#2a170b" stroke-width="8"/><path d="M90 40 L140 40 M200 64 L260 64 M320 38 L380 38" stroke="#4a2612" stroke-width="10" stroke-linecap="round"/></svg>
+ <svg class="ly" id="L4" viewBox="0 0 500 50" style="top:360px;height:50px"><path d="M30 25 Q80 0 130 25 Q180 50 230 25 Q280 0 330 25 Q380 50 470 25" fill="none" stroke="#fff1d6" stroke-width="18" stroke-linecap="round"/><path d="M30 25 Q80 0 130 25 Q180 50 230 25 Q280 0 330 25 Q380 50 470 25" fill="none" stroke="#2a170b" stroke-width="4"/></svg>
+ <svg class="ly" id="L5" viewBox="0 0 500 120" style="top:400px;height:120px"><path d="M34 10 L466 10 Q466 108 250 110 Q34 108 34 10Z" fill="#d48a3e" stroke="#2a170b" stroke-width="8"/></svg>
+</div>
+<div id="price"><svg width="40" height="70" style="display:block;margin-left:0"><line x1="20" y1="0" x2="20" y2="70" stroke="#2a170b" stroke-width="5"/></svg><div class="card">14 €</div></div>
+<div id="q">?</div>
+<div class="tag" id="tg0" style="left:40px"><b>Pain</b><span>0,45 €</span></div>
+<div class="tag" id="tg1" style="left:40px"><b>Steak</b><span id="stk">1,95 €</span></div>
+<div class="tag" id="tg2" style="left:770px"><b>Cheddar</b><span>0,35 €</span></div>
+<div class="tag" id="tg3" style="left:690px"><b>Sauce + crudités</b><span>0,45 €</span></div>
+
+<!-- scène 2 : total -->
+<div class="sc" id="s2"><div class="lbl" style="top:330px">TICKET MARCHANDISE</div>
+ <div class="panel" style="top:400px"><div class="row"><span>Pain</span><em>0,45 €</em></div><div class="row"><span>Steak</span><em>1,95 €</em></div><div class="row"><span>Cheddar</span><em>0,35 €</em></div><div class="row"><span>Sauce + crudités</span><em>0,45 €</em></div><div class="row t" id="tot"><span>Total</span><em>3,20 €</em></div></div></div>
+<!-- scène 3-4 : HT + jauge -->
+<div class="sc" id="s3"><div class="lbl" style="top:330px">PRIX DE VENTE</div>
+ <div class="panel" style="top:390px;padding:24px 36px"><div class="row"><span>Prix carte TTC</span><em>14,00 €</em></div><div class="row"><span>TVA sur place (10 %)</span><em>− 1,27 €</em></div><div class="row t"><span>Prix HT</span><em>12,73 €</em></div></div>
+ <svg class="gauge" style="top:830px" viewBox="0 0 700 380"><path d="M70 340 A280 280 0 0 1 630 340" fill="none" stroke="#4a2a16" stroke-width="56" stroke-linecap="round"/><path id="garc" d="M70 340 A280 280 0 0 1 630 340" fill="none" stroke="#1fb35a" stroke-width="56" stroke-linecap="round" stroke-dasharray="880" stroke-dashoffset="880"/><text id="gv" x="350" y="320" text-anchor="middle" font-family="Fraunces" font-weight="900" font-size="120" fill="#ffe8c7">0 %</text></svg>
+ <div class="lbl" style="top:1230px" id="glbl">FOOD COST = 3,20 € ÷ 12,73 €</div>
+ <div class="tag red" id="steakup" style="left:640px;top:820px;transform:rotate(6deg)"><b>Steak</b><span>2,25 €</span></div>
+ <div class="big" id="blind" style="top:1300px;font-size:60px;color:#ffb3a8">sans rien voir</div></div>
+<!-- scène 5 : écran FoodEatUp fiche technique -->
+<div class="sc" id="s5"><div class="big" style="top:300px;font-size:72px"><span class="logo" style="font-family:Inter">FOOD<b>EAT</b>UP</span></div><div class="lbl" style="top:400px">FICHE TECHNIQUE · VRAI ÉCRAN</div>
+ <div class="screen" id="scr5" style="top:470px"><div class="bar"><i></i><i></i><i></i><span>Configuration d’une recette</span></div><div class="hole" style="height:302px"></div></div>
+ <div class="chip" id="c51" style="left:80px;top:860px">+ ingrédient → coût recalculé</div>
+ <div class="chip" id="c52" style="left:250px;top:970px;background:#FF8A1F">Coût · marge · coefficient</div></div>
+<!-- scène 6 : la donnée circule -->
+<div class="sc" id="s6"><div class="lbl" style="top:330px">UN PRIX FOURNISSEUR CHANGE…</div>
+ <div class="screen" id="scr6" style="top:390px"><div class="bar"><i></i><i></i><i></i><span>Académie FoodEatUp · Boucle 01</span></div><div class="hole" style="height:518px"></div></div>
+ <div class="chip" id="c61" style="left:170px;top:990px">…toutes les fiches se recalculent</div></div>
+<!-- CTA -->
+<div class="sc" id="cta"><div class="card"><h2>Ton vrai food cost,<br>plat par plat.</h2><p>Fiche technique → coût → marge, recalculés à chaque prix fournisseur.</p><div class="kw">Commente FOODCOST</div><p style="font-size:30px;margin-top:22px">Je t’envoie le tuto pour créer ta première fiche.</p></div>
+ <div class="big" style="top:1640px;font-size:70px;font-family:Inter"><span class="logo">FOOD<b>EAT</b>UP</span></div></div>
+<div id="cap"></div>
+<div id="brand"><span class="logo">FOOD<b>EAT</b>UP</span> <span style="color:#d9a774;font-weight:700">· food cost</span></div>
+<div id="thumb"></div>
+</div>
+<script src="cfg.js"></script>
+<script>
+const C=window.CFG,$=id=>document.getElementById(id),P=C.P;
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),eo=x=>1-Math.pow(1-x,3),ebk=x=>{x=cl(x);const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const WT={};C.words.forEach(w=>WT[w[2]]=w[1]);const wt=i=>{while(!(i in WT))i--;return WT[i]};
+const KW=new Set(['burger','14','€','combien','0,45','1,95','0,35','3,20','marchandise','12,73','25','%','food','cost','steak','30','27,5','FoodEatUp','fiche','technique','tout','seul','fournisseur','recalculent','marges','FOODCOST','tuto','première']);
+const sec=t=>{let s=0;for(let i=0;i<P.length;i++) if(t>=P[i]-.05) s=i;return s};
+function pop(el,p,dy=50,r=0){el.style.opacity=cl(p*2);el.style.transform=`translateY(${(1-ebk(p))*dy}px) scale(${.7+.3*ebk(p)}) rotate(${r}deg)`}
+function thumb(){render(P[1]+5.6);$('cap').innerHTML='<i>Ton burger à 14 €</i><br><i class="k">te coûte combien ?</i>'}
+// zones vidéo (pour la composition ffmpeg) : exposées pour post.py
+window.HOLES={s5:[40+6,470+6+44,1000-12,302],s6:[40+6,390+6+44,1000-12,518]};
+function render(t){
+ const s=sec(t);
+ // burger : visible scènes 0-1
+ const bOn=s<=1; $('burger').style.display=bOn?'block':'none'; $('price').style.display=s===0?'block':'none';
+ const b0=cl((t-P[0])/.5);
+ if(bOn){
+  const ex=cl((t-P[1]+.1)/.6); // explosion
+  const off=[-150,-95,-40,15,75,130];
+  ['L0','L1','L2','L3','L4','L5'].forEach((id,k)=>{const e=$(id);e.style.transform=`translateY(${ebk(ex)*off[k]*1.5}px) scale(${s===0?.85+.15*ebk(b0):1}) rotate(${ex*(k%2?2:-2)}deg)`});
+  $('burger').style.transform=`translateY(${(1-ebk(b0))*200}px)`;
+  const pp=cl((t-(P[0]+1.0))/.4); $('price').style.transform=`rotate(${(1-ebk(pp))*-40+4*Math.sin(t*3)}deg)`;$('price').style.opacity=pp;
+  const qp=cl((t-wt(11))/.3); $('q').style.opacity=s===0?qp:0; $('q').style.transform=`scale(${.5+.5*ebk(qp)})`;
+ } else $('q').style.opacity=0;
+ // étiquettes
+ const tops=[220,470,330,660],idx=[15,18,22,27];
+ for(let k=0;k<4;k++){const e=$('tg'+k);const on=s===1;e.style.display=on?'block':'none';if(on){e.style.top=tops[k]+'px';pop(e,cl((t-wt(idx[k])+.1)/.35),40,k%2?3:-3)}}
+ // food cost HUD
+ let fc='—'; if(t>=wt(46)) fc='25 %'; if(t>=wt(57)) fc='27,5 %'; if(s>=5) fc='calculé';
+ $('fc').textContent=fc; $('fc').style.color=t>=wt(57)&&s<5?'#ff7b6b':(s>=5?'#7be3a1':'#ffe8c7');
+ // scènes
+ ['s2','s3','s5','s6','cta'].forEach(id=>$(id).style.display='none');
+ if(s===2){$('s2').style.display='block';const p=cl((t-P[2])/.4);$('s2').style.opacity=p;const tp=cl((t-wt(30))/.3);$('tot').style.transform=`scale(${1+.08*Math.sin(tp*Math.PI)})`;}
+ if(s===3||s===4){$('s3').style.display='block';$('s3').style.opacity=cl((t-P[3])/.3);
+  let v=0; const a1=wt(41); v=25*eo(cl((t-a1)/.9)); if(s===4){const a2=wt(55);v=25+2.5*eo(cl((t-a2)/.6))}
+  $('garc').setAttribute('stroke-dashoffset',880-880*v/40); $('garc').setAttribute('stroke',v>26?'#e5322d':'#1fb35a');
+  $('gv').textContent=(Math.round(v*10)/10).toString().replace('.',',')+' %';
+  $('glbl').textContent=t>=wt(55)?'FOOD COST = 3,50 € ÷ 12,73 €':'FOOD COST = 3,20 € ÷ 12,73 €';
+  const su=cl((t-wt(50))/.35);$('steakup').style.display=s===4?'block':'none';pop($('steakup'),su,-40,6);
+  const bl=cl((t-wt(59))/.3);$('blind').style.opacity=s===4?bl:0;$('blind').style.filter=`blur(${(1-bl)*8}px)`;}
+ if(s===5){$('s5').style.display='block';const p=cl((t-P[5])/.35);$('scr5').style.transform=`translateY(${(1-ebk(p))*80}px)`;$('s5').style.opacity=cl(p*2);
+  pop($('c51'),cl((t-wt(74))/.35),30,-2);pop($('c52'),cl((t-wt(79))/.35),30,2);}
+ if(s===6){$('s6').style.display='block';const p=cl((t-P[6])/.35);$('s6').style.opacity=cl(p*2);$('scr6').style.transform=`scale(${.92+.08*ebk(p)})`;pop($('c61'),cl((t-wt(86))/.35),30,-2);}
+ if(s===7){$('cta').style.display='block';const p=cl((t-P[7])/.45);$('cta').querySelector('.card').style.transform=`translateY(${(1-ebk(p))*300}px)`;
+  const kp=cl((t-wt(97))/.35);const kw=$('cta').querySelector('.kw');kw.style.transform=`scale(${.6+.4*ebk(kp)}) rotate(${-3*ebk(kp)}deg)`;kw.style.opacity=cl(kp*2);}
+ // sous-titres : 4 mots max, groupes coupés sur ponctuation
+ const ws=C.words; let cur=-1; for(let k=0;k<ws.length;k++) if(t>=ws[k][1]) cur=k;
+ const end=ws.length?ws[ws.length-1][1]+.6:0;
+ if(cur<0||t>end){$('cap').innerHTML='';}else{
+  // groupes
+  if(!window.G){window.G=[];let g=[];ws.forEach((w,k)=>{g.push(k);if(g.length>=4||/[.,:;?!]$/.test(w[0])){G.push(g);g=[]}});if(g.length)G.push(g)}
+  const grp=G.find(g=>g.includes(cur));
+  $('cap').innerHTML=grp.map(k=>{const w=ws[k];const on=t>=w[1];const c=w[0].replace(/[.,:;?!]/g,'');const p=cl((t-w[1])/.12);return `<i class="${KW.has(c)?'k':''}" style="opacity:${on?1:0};transform:scale(${on?.7+.3*ebk(p):.7})">${w[0]}</i>`}).join(' ');
+  $('cap').style.top=(s===7?1340:1440)+'px';$('brand').style.display=s===7?'none':'block';
+ }
+}
+render(0);
+</script></body></html>

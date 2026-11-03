@@ -1,0 +1,22 @@
+const { chromium } = require('playwright');
+(async () => {
+  const out=process.argv[2];
+  const b = await chromium.launch({args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist']});
+  const ctx = await b.newContext({viewport:{width:720,height:900}, recordVideo:{dir:out, size:{width:720,height:900}}});
+  const p = await ctx.newPage();
+  p.on('console', m=>console.log('c:',m.text().slice(0,150)));
+  await p.goto('http://127.0.0.1:8765/index.html');
+  await p.addStyleTag({content:'html,body{background:#16242F !important}'});
+  await p.waitForFunction(()=>window.avatar && window.__THREE__, null, {timeout:60000});
+  await p.waitForTimeout(6000);
+  console.log('mark', Date.now());
+  const run = async (fn, ms)=>{ await p.evaluate(fn); await p.waitForTimeout(ms); };
+  await run(()=>avatar.setMood('idle'), 2000);
+  await run(()=>avatar.setMood('listening'), 2500);
+  await run(()=>{avatar.setMood('speaking'); avatar.speak(null);}, 2600);
+  await run(()=>{avatar.setMood('confirming'); avatar.speak(null);}, 2600);
+  await run(()=>{avatar.setMood('happy');}, 2500);
+  await run(()=>{avatar.setMood('speaking'); avatar.speak(null);}, 2600);
+  await run(()=>{avatar.setMood('idle');}, 1500);
+  await ctx.close(); await b.close();
+})();

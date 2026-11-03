@@ -1,0 +1,56 @@
+1
+00:00:01,000 --> 00:00:03,160
+Aujourd'hui, je développe plusieurs logiciels,
+
+2
+00:00:03,160 --> 00:00:04,700
+je travaille avec des collaborateurs
+
+3
+00:00:04,700 --> 00:00:06,380
+et je construis des agents IA.
+
+4
+00:00:06,380 --> 00:00:07,960
+Mais comment organiser tout ce monde,
+
+5
+00:00:07,960 --> 00:00:09,870
+pour que chacun sache ce qu'il doit faire ?
+
+6
+00:00:11,330 --> 00:00:12,710
+Mais le plus intéressant,
+
+7
+00:00:12,710 --> 00:00:15,850
+c'est que j'ai connecté RapidoRH à Claude grâce à son MCP.
+
+8
+00:00:15,850 --> 00:00:17,670
+Je peux lui demander d'analyser mes projets,
+
+9
+00:00:17,670 --> 00:00:19,070
+de retrouver les tâches prioritaires
+
+10
+00:00:19,070 --> 00:00:20,890
+et de préparer le travail de la journée.
+
+11
+00:00:33,900 --> 00:00:35,750
+Pour moi, le véritable enjeu de l'IA,
+
+12
+00:00:35,750 --> 00:00:37,850
+ce n'est pas seulement d'avoir des agents intelligents.
+
+13
+00:00:37,850 --> 00:00:40,890
+C'est de savoir organiser leur travail, mesurer leurs résultats,
+
+14
+00:00:40,890 --> 00:00:42,640
+et les faire collaborer avec les humains.
+

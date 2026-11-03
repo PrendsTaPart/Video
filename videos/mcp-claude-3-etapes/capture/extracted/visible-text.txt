@@ -1,0 +1,21 @@
+Connecter un MCP à Claude en 3 étapes
+
+Vous utilisez Claude au quotidien ? Et si vous lui donniez accès à vos propres outils et logiciels ?
+Aujourd'hui, on montre comment connecter un MCP à Claude, en trois étapes simples.
+
+Qu'est-ce qu'un MCP ?
+Un MCP, ou Model Context Protocol, c'est un standard qui permet à Claude de dialoguer avec vos logiciels :
+votre CRM, votre gestion de stock, vos outils métier. En clair : Claude ne se contente plus de répondre,
+il agit dans vos applications.
+
+Étape 1 : ouvrez Claude, puis rendez-vous dans les Paramètres, section Connecteurs.
+Cliquez sur "Ajouter un connecteur personnalisé".
+
+Étape 2 : renseignez l'adresse de votre serveur MCP et son mode d'authentification.
+Validez la connexion. Claude établit le lien avec votre logiciel.
+
+Étape 3 : c'est prêt ! Demandez simplement à Claude : "liste mes outils disponibles".
+Il affiche toutes les actions de votre MCP, et vous pouvez commencer à les utiliser par une simple phrase.
+
+Conclusion : en trois étapes, vos logiciels parlent désormais avec Claude.
+Connectez vos MCP, et laissez l'IA agir pour vous.

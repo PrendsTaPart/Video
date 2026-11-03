@@ -1,0 +1,83 @@
+1
+00:00:00,350 --> 00:00:00,810
+Dimanche
+
+2
+00:00:00,810 --> 00:00:02,050
+je vous montrais mes applications
+
+3
+00:00:02,050 --> 00:00:02,850
+pour les restaurants.
+
+4
+00:00:02,850 --> 00:00:04,170
+Et je vous disais prochaine
+
+5
+00:00:04,170 --> 00:00:04,710
+étape
+
+6
+00:00:04,710 --> 00:00:05,780
+Google Play.
+
+7
+00:00:06,680 --> 00:00:07,220
+Eh bien
+
+8
+00:00:07,220 --> 00:00:09,480
+c'est fait Mon application HACCP
+
+9
+00:00:09,480 --> 00:00:10,930
+est sur Google Play.
+
+10
+00:00:11,830 --> 00:00:12,530
+Et ce n'est pas moi
+
+11
+00:00:12,530 --> 00:00:13,390
+qui l'ai mise en ligne.
+
+12
+00:00:13,390 --> 00:00:15,060
+C'est mon assistant IA.
+
+13
+00:00:15,960 --> 00:00:17,440
+Je lui demande simplement mets
+
+14
+00:00:17,440 --> 00:00:19,240
+mon application HACCP en ligne
+
+15
+00:00:19,240 --> 00:00:20,430
+pour mes testeurs.
+
+16
+00:00:21,330 --> 00:00:22,850
+Il me montre le résultat.
+
+17
+00:00:22,850 --> 00:00:23,690
+Je dis oui.
+
+18
+00:00:23,690 --> 00:00:24,880
+Et l'application part.
+
+19
+00:00:25,780 --> 00:00:26,640
+Tu veux un assistant comme
+
+20
+00:00:26,640 --> 00:00:27,920
+ça pour tes applis Écris
+
+21
+00:00:27,920 --> 00:00:29,390
+STORE en commentaire.

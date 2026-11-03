@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Mon dimanche à la maison</title>
+<style>
+@font-face{font-family:M;src:url(a/fonts/Manrope-Medium.ttf);font-weight:500}
+@font-face{font-family:M;src:url(a/fonts/Manrope-Bold.ttf);font-weight:700}
+@font-face{font-family:M;src:url(a/fonts/Manrope-ExtraBold.ttf);font-weight:800}
+:root{--night:#0F1A23;--surf:#16242F;--blue:#007BFF;--orange:#FFA500;--cream:#FCF9E6;--grey:#AEB8C2}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;background:var(--night);overflow:hidden}
+body{font-family:M,sans-serif;color:#fff}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:radial-gradient(1200px 900px at 50% 38%,#173049 0%,#0F1A23 62%)}
+.abs{position:absolute}
+.scene{position:absolute;inset:0;display:none}
+#wm{position:absolute;width:1300px;left:-110px;top:420px;opacity:.035;filter:grayscale(1) brightness(3)}
+.chip{position:absolute;left:80px;top:150px;font-weight:800;font-size:30px;letter-spacing:4px;color:var(--orange);text-transform:uppercase}
+.title{position:absolute;left:80px;right:80px;top:200px;font-weight:800;font-size:76px;line-height:1.05;letter-spacing:-1px}
+.title b{color:var(--orange);font-weight:800}
+.phone{position:absolute;background:#05090d;border-radius:64px;padding:16px;box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 2px #2a3a48 inset}
+.phone .scr{position:relative;width:100%;height:100%;border-radius:50px;overflow:hidden;background:#000}
+.tab{position:absolute;background:#05090d;border-radius:42px;padding:22px;box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 2px #2a3a48 inset}
+.tab .scr{position:relative;width:100%;height:100%;border-radius:20px;overflow:hidden;background:#000}
+.scr img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.src{position:absolute;font-weight:500;font-size:22px;color:var(--grey);letter-spacing:.5px}
+.src:before{content:"";display:inline-block;width:10px;height:10px;border-radius:5px;background:#22c55e;margin-right:10px;vertical-align:2px}
+.pill{position:absolute;display:flex;align-items:center;gap:14px;background:var(--surf);border:2px solid #2a3a48;border-radius:999px;padding:16px 28px;font-weight:700;font-size:34px;white-space:nowrap}
+.pill svg{width:38px;height:38px;flex:none}
+.pill.o{background:var(--orange);color:#111;border-color:var(--orange)}
+.pill.b{background:var(--blue);color:#fff;border-color:var(--blue)}
+.pill.warn{border-color:var(--orange);color:var(--orange);background:#16242F;box-shadow:0 20px 50px rgba(0,0,0,.6)}
+.card{position:absolute;background:var(--surf);border-radius:36px;border:2px solid #24384a;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.row{display:flex;align-items:center;gap:22px;padding:22px 34px;border-top:2px solid #22364a;font-size:32px;font-weight:700}
+.row .ic{width:62px;height:62px;border-radius:16px;background:#0b2a4d;display:flex;align-items:center;justify-content:center;flex:none}
+.row .sz{margin-left:auto;color:var(--grey);font-weight:500;font-size:28px}
+.bubble{position:absolute;border-radius:30px;padding:22px 30px;font-size:33px;font-weight:700;line-height:1.25}
+.logo-pill{position:absolute;background:#fff;border-radius:999px;display:flex;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+<div id="stage">
+  <img id="wm" src="a/brand/foodeatup-logo-mascot.png">
+
+  <!-- 0 · Accroche -->
+  <div class="scene" id="s0">
+    <div class="chip" id="s0chip">Dimanche · à la maison</div>
+    <div class="title" id="s0t1" style="font-size:96px;top:205px">Mon dimanche<br>à la <b>maison</b> ?</div>
+    <div class="card" id="s0card" style="left:70px;width:940px;top:560px;overflow:hidden">
+      <div style="display:flex;align-items:center;gap:18px;padding:30px 34px">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#AEB8C2" stroke-width="2"><path d="M3 7h6l2 2h10v10H3z"/></svg>
+        <div style="font-size:30px;font-weight:700;color:var(--grey)">Google Drive › APK FoodEatUp</div>
+      </div>
+      <div id="s0rows"></div>
+    </div>
+    <div class="pill o" id="s0game" style="left:70px;top:1250px;font-size:40px">+ un jeu vidéo 3D</div>
+    <div class="logo-pill" id="s0logo" style="left:560px;top:1236px;width:450px;height:110px"><img src="a/brand/logo-foodeatup-toque-transparent.png" style="width:380px"></div>
+  </div>
+
+  <!-- 1 · Fidélité -->
+  <div class="scene" id="s1">
+    <div class="chip">App 1 · Fidélité</div>
+    <div class="title">Une borne de fidélité<br><b>au comptoir</b></div>
+    <div class="tab" id="s1tab" style="left:40px;top:520px;width:1000px;height:641px"><div class="scr" id="s1scr"></div></div>
+    <div class="src" style="left:60px;top:1180px">Captures réelles · rendus Flutter de l'app Fidélité</div>
+    <div class="pill" id="s1p1" style="left:60px;top:1290px">Points</div>
+    <div class="pill" id="s1p2" style="left:290px;top:1290px">Roue cadeaux</div>
+    <div class="pill" id="s1p3" style="left:640px;top:1290px">Sondages</div>
+  </div>
+
+  <!-- 2 · HACCP -->
+  <div class="scene" id="s2">
+    <div class="chip">App 2 · HACCP vocal</div>
+    <div class="title">Un assistant HACCP<br>à la <b>voix</b></div>
+    <div class="phone" id="s2ph" style="left:60px;top:470px;width:470px;height:811px"><div class="scr" id="s2scr"></div></div>
+    <div class="card" id="s2av" style="left:560px;top:470px;width:470px;height:560px;overflow:hidden;padding:0">
+      <img id="s2seq" class="seq" data-dir="a/av" data-n="450" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover">
+      <div style="position:absolute;left:0;right:0;bottom:0;padding:18px 24px;background:linear-gradient(transparent,rgba(15,26,35,.95));font-weight:800;font-size:30px">Jarvis · avatar 3D</div>
+    </div>
+    <div class="pill" id="s2p1" style="left:560px;top:1060px"><svg viewBox="0 0 24 24" fill="none" stroke="#FFA500" stroke-width="2"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="5" height="7" rx="2"/><rect x="16" y="14" width="5" height="7" rx="2"/></svg>Oreillettes</div>
+    <div class="pill" id="s2p2" style="left:560px;top:1160px"><svg viewBox="0 0 24 24" fill="none" stroke="#FFA500" stroke-width="2"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7z"/></svg>Imprimante</div>
+    <div class="pill" id="s2p3" style="left:560px;top:1260px"><svg viewBox="0 0 24 24" fill="none" stroke="#FFA500" stroke-width="2"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg>Mode école</div>
+    <div class="bubble" id="s2jv" style="left:560px;top:1020px;width:470px;background:#fff;color:#0F1A23;border-bottom-left-radius:6px">« C'est enregistré, merci ! »</div>
+    <div class="src" id="s2src" style="left:70px;top:1300px;width:470px;white-space:normal;line-height:1.4">Captures réelles · fiche Play de l'app + avatar 3D de l'APK</div>
+  </div>
+
+  <!-- 3 · Caisse -->
+  <div class="scene" id="s3">
+    <div class="chip">App 3 · Caisse mobile</div>
+    <div class="title">La caisse dans la poche<br>des <b>serveurs</b></div>
+    <div class="phone" id="s3b" style="left:70px;top:520px;width:430px;height:930px"><div class="scr" id="s3bscr"></div></div>
+    <div class="phone" id="s3f" style="left:560px;top:470px;width:450px;height:975px"><div class="scr" id="s3fscr"></div></div>
+    <div class="pill b" id="s3p1" style="left:110px;top:1300px"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M3 7V3h4M17 3h4v4M21 17v4h-4M7 21H3v-4"/><path d="M7 12h10"/></svg>Scanner QR code</div>
+    <div class="pill o" id="s3p2" style="left:560px;top:1300px"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg>Mode école + chef 3D</div>
+    <div class="pill warn" id="s3p3" style="left:150px;top:1300px">Paiement sans contact : bientôt</div>
+    <div class="src" style="left:70px;top:1470px">Captures réelles · caisse.foodeatup.fr</div>
+  </div>
+
+  <!-- 4 · Tablette -->
+  <div class="scene" id="s4">
+    <div class="chip">App 4 · Tablette client</div>
+    <div class="title">Le menu digital<br>sur <b>chaque table</b></div>
+    <div class="tab" id="s4tab" style="left:40px;top:520px;width:1000px;height:681px"><div class="scr" id="s4scr"></div></div>
+    <div class="src" style="left:60px;top:1220px">Captures réelles · rendus Flutter de l'app Menu digital</div>
+    <div class="pill" id="s4p1" style="left:60px;top:1290px">Menu</div>
+    <div class="pill" id="s4p2" style="left:255px;top:1290px">Commande</div>
+    <div class="pill" id="s4p3" style="left:520px;top:1290px">Jeux</div>
+    <div class="pill" id="s4p4" style="left:700px;top:1290px">Fidélité</div>
+  </div>
+
+  <!-- 5 · Personnalisation -->
+  <div class="scene" id="s5">
+    <div class="chip">Personnalisation</div>
+    <div class="title">Un thème <b>par restaurant</b></div>
+    <div id="s5grid"></div>
+    <div class="tab" id="s5ed" style="left:60px;top:840px;width:960px;height:654px"><div class="scr"><img src="a/menu/R03_fr.png"></div></div>
+    <div class="src" style="left:84px;top:335px">Captures réelles · styles de la caisse et éditeur de thème</div>
+  </div>
+
+  <!-- 6 · Rush -->
+  <div class="scene" id="s6">
+    <div class="chip">Bonus · jeu vidéo 3D</div>
+    <div class="title">FoodEatUp <b>Rush</b></div>
+    <div class="phone" id="s6ph" style="left:300px;top:420px;width:480px;height:1040px"><div class="scr"><img src="a/game/title.png"></div></div>
+    <div class="tab" id="s6tv" style="left:20px;top:560px;width:1040px;height:607px;padding:16px;border-radius:30px"><div class="scr" style="border-radius:16px">
+      <img id="s6g1" class="seq" data-dir="a/game/g1" data-n="105">
+      <img id="s6g2" class="seq" data-dir="a/game/g2" data-n="90">
+      <img id="s6g3" class="seq" data-dir="a/game/g3" data-n="120">
+      <img id="s6g4" class="seq" data-dir="a/game/g4" data-n="270">
+    </div></div>
+    <div class="pill" id="s6p1" style="left:60px;top:1230px">Dix services</div>
+    <div class="pill" id="s6p2" style="left:350px;top:1230px">Jouable dans le navigateur</div>
+    <div class="src" style="left:60px;top:1340px">Capture réelle · formation.foodeatup.fr/jeux/restaurant-3d</div>
+  </div>
+
+  <!-- 7 · Conclusion -->
+  <div class="scene" id="s7">
+    <div class="title" id="s7t" style="top:330px;font-size:92px">Tout ça,<br>depuis la <b>maison</b>.</div>
+    <div class="pill b" id="s7p1" style="left:80px;top:690px;font-size:44px">Flutter</div>
+    <div class="pill b" id="s7p2" style="left:330px;top:690px;font-size:44px">IA</div>
+    <div class="pill b" id="s7p3" style="left:490px;top:690px;font-size:44px">MCP FoodEatUp</div>
+    <div class="card" id="s7next" style="left:80px;top:880px;width:920px;padding:44px 48px">
+      <div style="font-size:30px;font-weight:800;letter-spacing:4px;color:var(--orange)">PROCHAINE ÉTAPE</div>
+      <div style="font-size:72px;font-weight:800;margin-top:14px;line-height:1.1">Google Play<br>& App Store</div>
+      <div style="font-size:30px;font-weight:500;color:var(--grey);margin-top:22px">Publication sur les stores : pas encore faite.</div>
+    </div>
+  </div>
+
+  <!-- 8 · Carton final -->
+  <div class="scene" id="s8">
+    <div class="logo-pill" id="s8a" style="left:115px;top:640px;width:850px;height:220px"><img src="a/brand/logo-foodeatup-toque-transparent.png" style="width:720px"></div>
+    <div id="s8x" class="abs" style="left:0;right:0;top:885px;text-align:center;font-size:90px;font-weight:800;color:var(--orange)">×</div>
+    <div class="logo-pill" id="s8b" style="left:115px;top:1010px;width:850px;height:220px"><img src="a/brand/braindcode.png" style="width:700px"></div>
+    <div id="s8c" class="abs" style="left:80px;right:80px;top:1290px;text-align:center;font-size:40px;font-weight:700;line-height:1.3">Comment je m'y suis pris ?<br><span style="color:var(--grey);font-weight:500">Posez la question en commentaire.</span></div>
+  </div>
+
+  <!-- Miniature -->
+  <div class="scene" id="thumb">
+    <div class="abs" style="left:70px;right:70px;top:140px;font-weight:800;font-size:150px;line-height:.98;letter-spacing:-3px">4 applis<br><span style="color:var(--orange)">+ 1 jeu</span></div>
+    <div class="abs" style="left:74px;top:470px;font-weight:700;font-size:56px;color:var(--cream)">Mon dimanche à la maison</div>
+    <div class="tab" style="left:-60px;top:640px;width:760px;height:509px;transform:rotate(-6deg);padding:16px;border-radius:30px"><div class="scr"><img src="a/fid/04_home.png"></div></div>
+    <div class="phone" style="left:640px;top:600px;width:380px;height:820px;transform:rotate(5deg);padding:12px;border-radius:52px"><div class="scr" style="border-radius:42px"><img src="a/haccp/1-accueil.png"></div></div>
+    <div class="tab" style="left:30px;top:1180px;width:760px;height:427px;transform:rotate(3deg);padding:14px;border-radius:28px"><div class="scr"><img src="a/game/g4/0200.jpg"></div></div>
+    <div class="phone" style="left:700px;top:1300px;width:300px;height:650px;transform:rotate(-4deg);padding:10px;border-radius:44px"><div class="scr" style="border-radius:36px"><img src="a/caisse/04-plan-de-salle.png"></div></div>
+    <div class="logo-pill" style="left:70px;top:1700px;width:520px;height:120px"><img src="a/brand/logo-foodeatup-toque-transparent.png" style="width:440px"></div>
+  </div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const ease=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eout=x=>1-Math.pow(1-x,3);
+const P=[0.4,7.0,17.0,31.0,42.0,50.6,57.2,69.0], A=[0,5.71,13.71,24.48,33.19,39.26,43.01,49.21];
+const V=(i,w)=>P[i]+(w-A[i]);
+const JARVIS=28.2;
+const SC=[['s0',0,6.8],['s1',6.8,16.6],['s2',16.6,30.6],['s3',30.6,41.4],['s4',41.4,50.2],['s5',50.2,56.6],['s6',56.6,68.6],['s7',68.6,76.6],['s8',76.6,82.0]];
+const DUR=82.0, FPS=30;
+
+// entrée : glisse + fondu à partir de `a`
+function pop(el,t,a,d=.45,dy=40,sc=0){const p=eout(cl((t-a)/d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px) scale(${1-sc*(1-p)})`;return p;}
+function hide(el,t,a,d=.3){const p=cl((t-a)/d);el.style.opacity=(+el.style.opacity||1)*(1-p);}
+// pile d'images dans un écran : liste [début, src]
+function stack(scrId,list){const s=$(scrId);s.innerHTML=list.map(([,src])=>`<img src="${src}" style="opacity:0">`).join('');return {list,imgs:[...s.children]};}
+function runStack(st,t,fade=.3){let cur=0;st.list.forEach(([a],i)=>{if(t>=a)cur=i;});
+  st.imgs.forEach((im,i)=>{let o=0;if(i===cur){o=1;}else if(i===cur-1){o=1-cl((t-st.list[cur][0])/fade);}im.style.opacity=o;im.style.zIndex=i;});}
+// séquence vidéo (dossier de JPEG à 30 i/s)
+const pend=[];
+function seq(el,t,a){const n=+el.dataset.n;const f=Math.max(1,Math.min(n,Math.floor((t-a)*FPS)+1));const src=`${el.dataset.dir}/${String(f).padStart(4,'0')}.jpg`;
+  if(el.getAttribute('src')!==src){el.setAttribute('src',src);pend.push(el.decode().catch(()=>{}));}}
+
+// --- construction ---
+const apks=[['foodeatup-fidelite.apk','24,0 Mo'],['foodeatup-haccp.apk','133,7 Mo'],['foodeatup-caisse-mobile.apk','86,2 Mo'],['foodeatup-menu-digital-c754de7-arm64.apk','28,6 Mo']];
+$('s0rows').innerHTML=apks.map(([n,s])=>`<div class="row"><div class="ic"><svg width="34" height="34" viewBox="0 0 24 24" fill="#3DDC84"><path d="M6 18c0 .55.45 1 1 1h1v3.5a1.5 1.5 0 0 0 3 0V19h2v3.5a1.5 1.5 0 0 0 3 0V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8A1.5 1.5 0 0 0 2 9.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 3.5 8zm17 0A1.5 1.5 0 0 0 19 9.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 20.5 8zm-4.97-5.84l1.3-1.3a.5.5 0 0 0-.7-.71l-1.48 1.48A5.96 5.96 0 0 0 12 1c-.96 0-1.86.23-2.66.63L7.85.15a.5.5 0 1 0-.7.7l1.31 1.31A5.98 5.98 0 0 0 6 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z"/></svg></div><div style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:560px">${n}</div><div class="sz">${s}</div></div>`).join('');
+const st1=stack('s1scr',[[0,'a/fid/01_attract.png'],[V(1,7.82),'a/fid/02_phone.png'],[V(1,9.4),'a/fid/04_home.png'],[V(1,10.82),'a/fid/05_rewards.png'],[V(1,11.84),'a/fid/07_wheel.png'],[V(1,12.75),'a/fid/08_survey.png']]);
+const st2=stack('s2scr',[[0,'a/haccp/1-accueil.png'],[V(2,17.98),'a/haccp/2-temperature.png'],[V(2,21.32),'a/haccp/3-etiquette.png'],[V(2,22.7),'a/haccp/ecole-missions.webp'],[JARVIS-.4,'a/haccp/6-historique.png']]);
+const st3b=stack('s3bscr',[[0,'a/caisse/04-plan-de-salle.png'],[V(3,30.96),'a/caisse/07-paiement.png']]);
+const st3f=stack('s3fscr',[[0,'a/caisse/06-commande.png'],[V(3,27.14),'a/caisse/03-accueil.png'],[V(3,28.44),'a/caisse/21-formation.png']]);
+const st4=stack('s4scr',[[0,'a/menu/Accueil_fr.png'],[V(4,36.22),'a/menu/C02_fr.png'],[V(4,37.24),'a/menu/C05_fr.png'],[V(4,37.84),'a/menu/C08_jeux_fr.png'],[V(4,38.54),'a/menu/C08_points_fr.png']]);
+const themes=['braise','brasserie','comptoir','epure','indigo','prairie'];
+$('s5grid').innerHTML=themes.map((n,i)=>`<div class="phone" style="left:${60+(i%3)*330}px;top:${400+Math.floor(i/3)*600}px;width:300px;height:640px;padding:10px;border-radius:44px"><div class="scr" style="border-radius:36px"><img src="a/theme/${n}-accueil.png"></div></div>`).join('');
+const grid=[...$('s5grid').children];
+
+function render(t){
+  pend.length=0;
+  $('wm').style.transform=`translateY(${-t*3}px) rotate(${-8+t*.05}deg)`;
+  for(const [id,a,b] of SC){const el=$(id);const on=t>=a&&t<b;el.style.display=on?'block':'none';
+    if(on){const fi=id==='s0'?1:cl((t-a)/.35),fo=id==='s8'?1:1-cl((t-(b-.3))/.3);el.style.opacity=Math.min(fi,fo);}}
+  $('thumb').style.display='none';
+  // 0
+  if(t<6.8){pop($('s0chip'),t,0.1);pop($('s0t1'),t,0.25,.6,60);pop($('s0card'),t,V(0,1.2),.5,80);
+    [...$('s0rows').children].forEach((r,i)=>pop(r,t,V(0,2.4)+i*.22,.35,30));
+    pop($('s0game'),t,V(0,3.9),.4,30,.2);pop($('s0logo'),t,V(0,4.8),.4,30,.2);}
+  // 1
+  else if(t<16.6){pop($('s1tab'),t,6.8,.6,90);runStack(st1,t);
+    pop($('s1p1'),t,V(1,10.82),.35,30,.2);pop($('s1p2'),t,V(1,11.84),.35,30,.2);pop($('s1p3'),t,V(1,12.75),.35,30,.2);
+    $('s1tab').style.transform+=` scale(${1+.02*cl((t-6.8)/9.8)})`;}
+  // 2
+  else if(t<30.6){pop($('s2ph'),t,16.6,.6,90);runStack(st2,t);pop($('s2av'),t,V(2,16.2),.5,60,.08);seq($('s2seq'),t,16.6);
+    const pe=JARVIS-.6;[['s2p1',V(2,17.98)],['s2p2',V(2,21.32)],['s2p3',V(2,22.7)]].forEach(([id,a])=>{pop($(id),t,a,.35,30,.15);if(t>pe)hide($(id),t,pe);});
+    pop($('s2jv'),t,JARVIS-.15,.35,30,.1);$('s2jv').style.display=t>JARVIS-.2?'block':'none';}
+  // 3
+  else if(t<41.4){pop($('s3b'),t,30.6,.6,90);$('s3b').style.transform+=' rotate(-5deg)';pop($('s3f'),t,30.85,.6,110);$('s3f').style.transform+=' rotate(3deg)';
+    runStack(st3b,t);runStack(st3f,t);
+    pop($('s3p1'),t,V(3,27.14),.35,30,.15);pop($('s3p2'),t,V(3,28.44),.35,30,.15);
+    const w=V(3,30.96);if(t>w-.3){hide($('s3p1'),t,w-.3,.25);hide($('s3p2'),t,w-.3,.25);}pop($('s3p3'),t,w,.4,30,.15);}
+  // 4
+  else if(t<50.2){pop($('s4tab'),t,41.4,.6,90);runStack(st4,t);
+    [['s4p1',V(4,36.22)],['s4p2',V(4,37.24)],['s4p3',V(4,37.84)],['s4p4',V(4,38.54)]].forEach(([id,a])=>pop($(id),t,a,.35,30,.2));}
+  // 5
+  else if(t<56.6){grid.forEach((g,i)=>{pop(g,t,50.3+i*.13,.45,70,.1);});
+    pop($('s5ed'),t,V(5,40.76),.55,260);}
+  // 6
+  else if(t<68.6){pop($('s6ph'),t,56.6,.5,90);hide($('s6ph'),t,58.7,.35);
+    const tv=$('s6tv');pop(tv,t,58.75,.5,0,.12);
+    const cuts=[['s6g1',58.75],['s6g2',61.3],['s6g3',63.0],['s6g4',65.2]];
+    cuts.forEach(([id,a],i)=>{const el=$(id);const b=i<3?cuts[i+1][1]:99;const on=t>=a-.01&&t<b+.25;el.style.display=on?'block':'none';
+      if(on){seq(el,t,a);el.style.zIndex=i;el.style.opacity=cl((t-a)/.25);el.style.transform=`scale(${1.04+.05*cl((t-a)/3)})`;}});
+    pop($('s6p1'),t,V(6,44.9),.35,30,.15);pop($('s6p2'),t,V(6,45.9),.35,30,.15);}
+  // 7
+  else if(t<76.6){pop($('s7t'),t,68.7,.6,60);pop($('s7p1'),t,V(7,50.72),.35,30,.2);pop($('s7p2'),t,V(7,51.48),.35,30,.2);pop($('s7p3'),t,V(7,52.32),.35,30,.2);
+    pop($('s7next'),t,V(7,53.3),.5,80);}
+  // 8
+  else {pop($('s8a'),t,76.7,.5,50,.1);pop($('s8x'),t,77.0,.4,20);pop($('s8b'),t,77.2,.5,50,.1);pop($('s8c'),t,78.0,.5,30);}
+  return Promise.all(pend);
+}
+function thumb(){for(const [id] of SC)$(id).style.display='none';$('thumb').style.display='block';}
+window.render=render;window.thumb=thumb;window.DUR=DUR;
+</script>
+</body>
+</html>

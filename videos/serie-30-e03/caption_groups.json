@@ -1,0 +1,616 @@
+{
+  "total_duration_s": 25.031,
+  "width": 1080,
+  "height": 1920,
+  "groups": [
+    {
+      "id": "caption-group-0",
+      "frame": 1,
+      "start": 0,
+      "end": 1.173,
+      "text": "Le plugin BraindCode,",
+      "words": [
+        {
+          "id": "caption-word-0-0",
+          "text": "Le",
+          "start": 0,
+          "end": 0.391
+        },
+        {
+          "id": "caption-word-0-1",
+          "text": "plugin",
+          "start": 0.391,
+          "end": 0.782
+        },
+        {
+          "id": "caption-word-0-2",
+          "text": "BraindCode,",
+          "start": 0.782,
+          "end": 1.173
+        }
+      ]
+    },
+    {
+      "id": "caption-group-1",
+      "frame": 1,
+      "start": 1.173,
+      "end": 2.345,
+      "text": "c'est une marketplace",
+      "words": [
+        {
+          "id": "caption-word-1-0",
+          "text": "c'est",
+          "start": 1.173,
+          "end": 1.563
+        },
+        {
+          "id": "caption-word-1-1",
+          "text": "une",
+          "start": 1.563,
+          "end": 1.954
+        },
+        {
+          "id": "caption-word-1-2",
+          "text": "marketplace",
+          "start": 1.954,
+          "end": 2.345
+        }
+      ]
+    },
+    {
+      "id": "caption-group-2",
+      "frame": 1,
+      "start": 2.345,
+      "end": 3.518,
+      "text": "de compétences pour",
+      "words": [
+        {
+          "id": "caption-word-2-0",
+          "text": "de",
+          "start": 2.345,
+          "end": 2.736
+        },
+        {
+          "id": "caption-word-2-1",
+          "text": "compétences",
+          "start": 2.736,
+          "end": 3.127
+        },
+        {
+          "id": "caption-word-2-2",
+          "text": "pour",
+          "start": 3.127,
+          "end": 3.518
+        }
+      ]
+    },
+    {
+      "id": "caption-group-3",
+      "frame": 1,
+      "start": 3.518,
+      "end": 4.3,
+      "text": "ton IA.",
+      "words": [
+        {
+          "id": "caption-word-3-0",
+          "text": "ton",
+          "start": 3.518,
+          "end": 3.909
+        },
+        {
+          "id": "caption-word-3-1",
+          "text": "IA.",
+          "start": 3.909,
+          "end": 4.3
+        }
+      ]
+    },
+    {
+      "id": "caption-group-4",
+      "frame": 1,
+      "start": 4.3,
+      "end": 4.69,
+      "text": "Commercial,",
+      "words": [
+        {
+          "id": "caption-word-4-0",
+          "text": "Commercial,",
+          "start": 4.3,
+          "end": 4.69
+        }
+      ]
+    },
+    {
+      "id": "caption-group-5",
+      "frame": 1,
+      "start": 4.69,
+      "end": 5.472,
+      "text": "community manager,",
+      "words": [
+        {
+          "id": "caption-word-5-0",
+          "text": "community",
+          "start": 4.69,
+          "end": 5.081
+        },
+        {
+          "id": "caption-word-5-1",
+          "text": "manager,",
+          "start": 5.081,
+          "end": 5.472
+        }
+      ]
+    },
+    {
+      "id": "caption-group-6",
+      "frame": 1,
+      "start": 5.472,
+      "end": 5.863,
+      "text": "comptable,",
+      "words": [
+        {
+          "id": "caption-word-6-0",
+          "text": "comptable,",
+          "start": 5.472,
+          "end": 5.863
+        }
+      ]
+    },
+    {
+      "id": "caption-group-7",
+      "frame": 1,
+      "start": 5.863,
+      "end": 6.374,
+      "text": "RH",
+      "words": [
+        {
+          "id": "caption-word-7-0",
+          "text": "RH",
+          "start": 5.863,
+          "end": 6.254
+        }
+      ]
+    },
+    {
+      "id": "caption-group-8",
+      "frame": 1,
+      "start": 6.645,
+      "end": 7.817,
+      "text": "plus de soixante",
+      "words": [
+        {
+          "id": "caption-word-8-0",
+          "text": "plus",
+          "start": 6.645,
+          "end": 7.036
+        },
+        {
+          "id": "caption-word-8-1",
+          "text": "de",
+          "start": 7.036,
+          "end": 7.427
+        },
+        {
+          "id": "caption-word-8-2",
+          "text": "soixante",
+          "start": 7.427,
+          "end": 7.817
+        }
+      ]
+    },
+    {
+      "id": "caption-group-9",
+      "frame": 1,
+      "start": 7.817,
+      "end": 8.208,
+      "text": "métiers,",
+      "words": [
+        {
+          "id": "caption-word-9-0",
+          "text": "métiers,",
+          "start": 7.817,
+          "end": 8.208
+        }
+      ]
+    },
+    {
+      "id": "caption-group-10",
+      "frame": 1,
+      "start": 8.208,
+      "end": 9.381,
+      "text": "prêts à l'emploi.",
+      "words": [
+        {
+          "id": "caption-word-10-0",
+          "text": "prêts",
+          "start": 8.208,
+          "end": 8.599
+        },
+        {
+          "id": "caption-word-10-1",
+          "text": "à",
+          "start": 8.599,
+          "end": 8.99
+        },
+        {
+          "id": "caption-word-10-2",
+          "text": "l'emploi.",
+          "start": 8.99,
+          "end": 9.381
+        }
+      ]
+    },
+    {
+      "id": "caption-group-11",
+      "frame": 2,
+      "start": 9.381,
+      "end": 10.337,
+      "text": "Une commande",
+      "words": [
+        {
+          "id": "caption-word-11-0",
+          "text": "Une",
+          "start": 9.381,
+          "end": 9.799
+        },
+        {
+          "id": "caption-word-11-1",
+          "text": "commande",
+          "start": 9.799,
+          "end": 10.217
+        }
+      ]
+    },
+    {
+      "id": "caption-group-12",
+      "frame": 2,
+      "start": 10.635,
+      "end": 11.053,
+      "text": "slash,",
+      "words": [
+        {
+          "id": "caption-word-12-0",
+          "text": "slash,",
+          "start": 10.635,
+          "end": 11.053
+        }
+      ]
+    },
+    {
+      "id": "caption-group-13",
+      "frame": 2,
+      "start": 11.053,
+      "end": 11.471,
+      "text": "plugin,",
+      "words": [
+        {
+          "id": "caption-word-13-0",
+          "text": "plugin,",
+          "start": 11.053,
+          "end": 11.471
+        }
+      ]
+    },
+    {
+      "id": "caption-group-14",
+      "frame": 2,
+      "start": 11.471,
+      "end": 11.889,
+      "text": "install,",
+      "words": [
+        {
+          "id": "caption-word-14-0",
+          "text": "install,",
+          "start": 11.471,
+          "end": 11.889
+        }
+      ]
+    },
+    {
+      "id": "caption-group-15",
+      "frame": 2,
+      "start": 11.889,
+      "end": 12.307,
+      "text": "rapido.",
+      "words": [
+        {
+          "id": "caption-word-15-0",
+          "text": "rapido.",
+          "start": 11.889,
+          "end": 12.307
+        }
+      ]
+    },
+    {
+      "id": "caption-group-16",
+      "frame": 2,
+      "start": 12.307,
+      "end": 13.561,
+      "text": "En quelques secondes,",
+      "words": [
+        {
+          "id": "caption-word-16-0",
+          "text": "En",
+          "start": 12.307,
+          "end": 12.725
+        },
+        {
+          "id": "caption-word-16-1",
+          "text": "quelques",
+          "start": 12.725,
+          "end": 13.143
+        },
+        {
+          "id": "caption-word-16-2",
+          "text": "secondes,",
+          "start": 13.143,
+          "end": 13.561
+        }
+      ]
+    },
+    {
+      "id": "caption-group-17",
+      "frame": 2,
+      "start": 13.561,
+      "end": 14.814,
+      "text": "tout est installé.",
+      "words": [
+        {
+          "id": "caption-word-17-0",
+          "text": "tout",
+          "start": 13.561,
+          "end": 13.979
+        },
+        {
+          "id": "caption-word-17-1",
+          "text": "est",
+          "start": 13.979,
+          "end": 14.397
+        },
+        {
+          "id": "caption-word-17-2",
+          "text": "installé.",
+          "start": 14.397,
+          "end": 14.814
+        }
+      ]
+    },
+    {
+      "id": "caption-group-18",
+      "frame": 3,
+      "start": 14.814,
+      "end": 15.993,
+      "text": "Léa n'a ni",
+      "words": [
+        {
+          "id": "caption-word-18-0",
+          "text": "Léa",
+          "start": 14.814,
+          "end": 15.207
+        },
+        {
+          "id": "caption-word-18-1",
+          "text": "n'a",
+          "start": 15.207,
+          "end": 15.6
+        },
+        {
+          "id": "caption-word-18-2",
+          "text": "ni",
+          "start": 15.6,
+          "end": 15.993
+        }
+      ]
+    },
+    {
+      "id": "caption-group-19",
+      "frame": 3,
+      "start": 15.993,
+      "end": 17.172,
+      "text": "agence ni assistant.",
+      "words": [
+        {
+          "id": "caption-word-19-0",
+          "text": "agence",
+          "start": 15.993,
+          "end": 16.386
+        },
+        {
+          "id": "caption-word-19-1",
+          "text": "ni",
+          "start": 16.386,
+          "end": 16.779
+        },
+        {
+          "id": "caption-word-19-2",
+          "text": "assistant.",
+          "start": 16.779,
+          "end": 17.172
+        }
+      ]
+    },
+    {
+      "id": "caption-group-20",
+      "frame": 3,
+      "start": 17.172,
+      "end": 18.351,
+      "text": "Mais son IA",
+      "words": [
+        {
+          "id": "caption-word-20-0",
+          "text": "Mais",
+          "start": 17.172,
+          "end": 17.565
+        },
+        {
+          "id": "caption-word-20-1",
+          "text": "son",
+          "start": 17.565,
+          "end": 17.958
+        },
+        {
+          "id": "caption-word-20-2",
+          "text": "IA",
+          "start": 17.958,
+          "end": 18.351
+        }
+      ]
+    },
+    {
+      "id": "caption-group-21",
+      "frame": 3,
+      "start": 18.351,
+      "end": 19.529,
+      "text": "sait maintenant rédiger",
+      "words": [
+        {
+          "id": "caption-word-21-0",
+          "text": "sait",
+          "start": 18.351,
+          "end": 18.744
+        },
+        {
+          "id": "caption-word-21-1",
+          "text": "maintenant",
+          "start": 18.744,
+          "end": 19.136
+        },
+        {
+          "id": "caption-word-21-2",
+          "text": "rédiger",
+          "start": 19.136,
+          "end": 19.529
+        }
+      ]
+    },
+    {
+      "id": "caption-group-22",
+      "frame": 3,
+      "start": 19.529,
+      "end": 20.315,
+      "text": "un devis,",
+      "words": [
+        {
+          "id": "caption-word-22-0",
+          "text": "un",
+          "start": 19.529,
+          "end": 19.922
+        },
+        {
+          "id": "caption-word-22-1",
+          "text": "devis,",
+          "start": 19.922,
+          "end": 20.315
+        }
+      ]
+    },
+    {
+      "id": "caption-group-23",
+      "frame": 3,
+      "start": 20.315,
+      "end": 21.494,
+      "text": "planifier un post,",
+      "words": [
+        {
+          "id": "caption-word-23-0",
+          "text": "planifier",
+          "start": 20.315,
+          "end": 20.708
+        },
+        {
+          "id": "caption-word-23-1",
+          "text": "un",
+          "start": 20.708,
+          "end": 21.101
+        },
+        {
+          "id": "caption-word-23-2",
+          "text": "post,",
+          "start": 21.101,
+          "end": 21.494
+        }
+      ]
+    },
+    {
+      "id": "caption-group-24",
+      "frame": 3,
+      "start": 21.494,
+      "end": 22.673,
+      "text": "relancer une facture.",
+      "words": [
+        {
+          "id": "caption-word-24-0",
+          "text": "relancer",
+          "start": 21.494,
+          "end": 21.887
+        },
+        {
+          "id": "caption-word-24-1",
+          "text": "une",
+          "start": 21.887,
+          "end": 22.28
+        },
+        {
+          "id": "caption-word-24-2",
+          "text": "facture.",
+          "start": 22.28,
+          "end": 22.673
+        }
+      ]
+    },
+    {
+      "id": "caption-group-25",
+      "frame": 3,
+      "start": 22.673,
+      "end": 23.852,
+      "text": "Soixante réflexes métier,",
+      "words": [
+        {
+          "id": "caption-word-25-0",
+          "text": "Soixante",
+          "start": 22.673,
+          "end": 23.066
+        },
+        {
+          "id": "caption-word-25-1",
+          "text": "réflexes",
+          "start": 23.066,
+          "end": 23.459
+        },
+        {
+          "id": "caption-word-25-2",
+          "text": "métier,",
+          "start": 23.459,
+          "end": 23.852
+        }
+      ]
+    },
+    {
+      "id": "caption-group-26",
+      "frame": 3,
+      "start": 23.852,
+      "end": 25.151,
+      "text": "débloqués d'un coup.",
+      "words": [
+        {
+          "id": "caption-word-26-0",
+          "text": "débloqués",
+          "start": 23.852,
+          "end": 24.245
+        },
+        {
+          "id": "caption-word-26-1",
+          "text": "d'un",
+          "start": 24.245,
+          "end": 24.638
+        },
+        {
+          "id": "caption-word-26-2",
+          "text": "coup.",
+          "start": 24.638,
+          "end": 25.031
+        }
+      ]
+    }
+  ]
+}

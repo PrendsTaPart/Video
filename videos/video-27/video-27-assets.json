@@ -1,0 +1,31 @@
+{
+  "voix": {
+    "outil": "ElevenLabs",
+    "voix": "Noé (7pDdnNI6PhXmAp0pXFZm)",
+    "modele": "eleven_v4",
+    "duree_s": 73.68
+  },
+  "personnage": {
+    "photo": "braindcode-profil.jpg",
+    "poses": [
+      "bras-ouverts",
+      "ok",
+      "index-leve",
+      "deux-pouces",
+      "presente"
+    ]
+  },
+  "logos": {
+    "officiels": "foodeatup, rapidocrm, rapidocms, rapidorh, braindcode (video-20/assets/logos/chartes)",
+    "n8n": "AUCUN fichier de logo officiel dans le dépôt : nom écrit en typographie, en rose #EA4B71. À fournir.",
+    "RapidoATS, StartupForge": "pas de logo officiel disponible ici : nom en typographie neutre"
+  },
+  "captures": "aucune capture n8n (connecteur non activé) ; animation pédagogique",
+  "animation_reutilisable": "assets/animation-autoroutes-mcp/",
+  "musique": "musique-184.wav",
+  "effets": [
+    "whoosh",
+    "pop",
+    "tick"
+  ]
+}

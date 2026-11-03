@@ -1,0 +1,34 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Poppins SemiBold,50,&H00E6F9FC,&H00E6F9FC,&H00231A0F,&H00231A0F,0,0,0,0,100,100,0,0,3,16,0,2,90,90,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.50,0:00:03.22,Sub,,0,0,0,,{\fad(80,60)}Salut, moi c'est Michael.
+Dialogue: 0,0:00:03.22,0:00:05.18,Sub,,0,0,0,,{\fad(80,60)}Je suis entrepreneur, fondateur de BraindCode,
+Dialogue: 0,0:00:05.18,0:00:07.50,Sub,,0,0,0,,{\fad(80,60)}et depuis plusieurs années, je construis des solutions
+Dialogue: 0,0:00:07.50,0:00:09.58,Sub,,0,0,0,,{\fad(80,60)}pour aider les entreprises à travailler autrement
+Dialogue: 0,0:00:09.58,0:00:11.03,Sub,,0,0,0,,{\fad(80,60)}grâce à la technologie.
+Dialogue: 0,0:00:11.43,0:00:12.67,Sub,,0,0,0,,{\fad(80,60)}Au fil du temps, j'ai construit
+Dialogue: 0,0:00:12.67,0:00:14.59,Sub,,0,0,0,,{\fad(80,60)}un écosystème de solutions connectées.
+Dialogue: 0,0:00:14.59,0:00:16.25,Sub,,0,0,0,,{\fad(80,60)}FoodEatUp pour les restaurateurs.
+Dialogue: 0,0:00:16.25,0:00:18.59,Sub,,0,0,0,,{\fad(80,60)}RapidoSoftware pour la gestion des entreprises.
+Dialogue: 0,0:00:18.59,0:00:20.89,Sub,,0,0,0,,{\fad(80,60)}StartupForge pour accompagner les entrepreneurs.
+Dialogue: 0,0:00:20.89,0:00:22.33,Sub,,0,0,0,,{\fad(80,60)}Et des outils qui permettent de connecter
+Dialogue: 0,0:00:22.33,0:00:24.30,Sub,,0,0,0,,{\fad(80,60)}les agents IA à tous ces logiciels.
+Dialogue: 0,0:00:25.00,0:00:26.50,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, je ne veux plus seulement créer
+Dialogue: 0,0:00:26.50,0:00:28.34,Sub,,0,0,0,,{\fad(80,60)}des logiciels que les humains utilisent.
+Dialogue: 0,0:00:28.34,0:00:30.18,Sub,,0,0,0,,{\fad(80,60)}Je veux aussi construire des équipes d'agents IA
+Dialogue: 0,0:00:30.18,0:00:32.10,Sub,,0,0,0,,{\fad(80,60)}capables d'utiliser ces logiciels,
+Dialogue: 0,0:00:32.10,0:00:33.46,Sub,,0,0,0,,{\fad(80,60)}d'apprendre des procédures métier
+Dialogue: 0,0:00:33.46,0:00:35.60,Sub,,0,0,0,,{\fad(80,60)}et de nous aider à atteindre nos objectifs.
+Dialogue: 0,0:00:37.00,0:00:39.18,Sub,,0,0,0,,{\fad(80,60)}À partir d'aujourd'hui, je vais vous présenter chaque jour
+Dialogue: 0,0:00:39.18,0:00:41.14,Sub,,0,0,0,,{\fad(80,60)}mon histoire et mon travail du jour.
+Dialogue: 0,0:00:41.14,0:00:42.60,Sub,,0,0,0,,{\fad(80,60)}Bienvenue dans mon quotidien.
+Dialogue: 0,0:00:42.60,0:00:44.57,Sub,,0,0,0,,{\fad(80,60)}Bienvenue dans l'univers BraindCode.

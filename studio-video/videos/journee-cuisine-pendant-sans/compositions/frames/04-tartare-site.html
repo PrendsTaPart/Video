@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .c4-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .c4-echo { position: absolute; left: 140px; right: 140px; top: 70px; height: 44px; display: flex; gap: 8px; opacity: 0.06; }
+        .c4-echo span { flex: 1; height: 100%; border: 1px solid #8A9099; }
+
+        .c4-panel {
+          position: absolute; top: 220px; width: 720px; height: 540px;
+          border: 1px solid #8A9099; background: rgba(58,63,69,0.05);
+          opacity: 0;
+        }
+        .c4-panel.left { left: 150px; }
+        .c4-panel.right { right: 150px; }
+        .c4-panel .head {
+          padding: 26px 30px; border-bottom: 1px solid #8A9099;
+          font-size: 24px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+          color: rgba(58,63,69,0.85);
+        }
+        .c4-panel .body { padding: 40px 30px; text-align: center; }
+
+        .c4-plate { width: 160px; height: 160px; margin: 20px auto 0; border-radius: 50%; border: 3px solid #8A9099; position: relative; }
+        .c4-plate .cross { position: absolute; inset: 0; opacity: 0; }
+        .c4-plate .cross span { position: absolute; left: 50%; top: 50%; width: 150px; height: 5px; background: #D64545; transform-origin: 50% 50%; }
+        .c4-plate .cross span.a { transform: translate(-50%,-50%) rotate(45deg); }
+        .c4-plate .cross span.b { transform: translate(-50%,-50%) rotate(-45deg); }
+        .c4-panel .caption { margin-top: 26px; font-size: 30px; font-weight: 600; color: rgba(58,63,69,0.85); }
+
+        .c4-cart { width: 150px; height: 120px; margin: 30px auto 0; border: 3px solid #8A9099; border-radius: 8px; position: relative; }
+        .c4-badge {
+          position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%) scale(0);
+          font-size: 90px; font-weight: 800; color: #D64545; font-variant-numeric: tabular-nums;
+        }
+
+        .c4-connector { position: absolute; left: 870px; right: 870px; top: 490px; height: 2px; }
+        .c4-connector-svg { position: absolute; left: -740px; top: -12px; width: 1480px; height: 26px; }
+
+        .c4-qmark {
+          position: absolute; left: 50%; top: 480px; transform: translateX(-50%) scale(0);
+          font-size: 84px; font-weight: 800; color: #D64545;
+        }
+      </style>
+
+      <div id="root" data-composition-id="04-tartare-site" data-width="1920" data-height="1080" data-duration="10.0">
+        <div class="c4-bg clip" id="c4-bgclip" data-start="0" data-duration="10.0" data-track-index="1"></div>
+
+        <div class="c4-echo">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="c4-panel left" id="c4-left">
+          <div class="head">cuisine</div>
+          <div class="body">
+            <div class="c4-plate">
+              <div class="cross" id="c4-plate-cross"><span class="a"></span><span class="b"></span></div>
+            </div>
+            <div class="caption">tartare — 0 restant depuis midi</div>
+          </div>
+        </div>
+
+        <div class="c4-panel right" id="c4-right">
+          <div class="head">le site</div>
+          <div class="body">
+            <div class="c4-cart"><div class="c4-badge" id="c4-badge">×3</div></div>
+            <div class="caption">commandes reçues quand même</div>
+          </div>
+        </div>
+
+        <div class="c4-connector" id="c4-connector">
+          <svg class="c4-connector-svg" viewBox="0 0 1480 26" preserveAspectRatio="none">
+            <line id="c4-connector-line" x1="0" y1="13" x2="1480" y2="13" stroke="#8A9099" stroke-width="2" stroke-dasharray="10 10" stroke-dashoffset="1480" />
+          </svg>
+        </div>
+        <div class="c4-qmark" id="c4-qmark">?</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#c4-left", { opacity: 0, x: -50, rotateY: 8 });
+        gsap.set("#c4-right", { opacity: 0, x: 50, rotateY: -8 });
+        gsap.set("#c4-plate-cross", { opacity: 0, scale: 0.6 });
+        gsap.set("#c4-badge", { scale: 0, opacity: 0 });
+        gsap.set("#c4-qmark", { scale: 0, opacity: 0 });
+
+        // Scene 1 (0.0-1.0s): faint echo of the seven-tab motif up top (continuity device),
+        // the "cuisine" panel arrives from the left with a tilt that settles flat (no bounce).
+        tl.to("#c4-left", { opacity: 1, x: 0, rotateY: 0, duration: 0.5, ease: "power3.out" }, 0.2);
+
+        // Scene 2 (1.0-3.0s, cue "Le tartare était fini depuis midi."): the "site" panel mirrors
+        // in from the right; the plate gets its red cross — sold out since noon.
+        tl.to("#c4-right", { opacity: 1, x: 0, rotateY: 0, duration: 0.5, ease: "power3.out" }, 1.0);
+        tl.fromTo("#c4-plate-cross", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power3.out" }, 1.6);
+
+        // Scene 3 (3.0-5.3s, cue "Le site l'a vendu trois fois de plus."): a dotted connector
+        // draws itself from one panel toward the other and stops short — it never resolves —
+        // the badge counts up to ×3, the one red figure in the frame.
+        tl.to("#c4-connector-line", { strokeDashoffset: 220, duration: 0.9, ease: "power2.out" }, 3.1);
+        tl.fromTo("#c4-badge", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "power3.out" }, 4.0);
+        const c4count = { v: 0 };
+        const c4el = document.getElementById("c4-badge");
+        tl.to(c4count, {
+          v: 3, duration: 0.9, ease: "power2.out",
+          onUpdate: () => { c4el.textContent = "×" + Math.round(c4count.v); }
+        }, 4.0);
+
+        // Scene 4 (5.3-6.3s): the "?" lands in the gap the connector never closes — the film's
+        // friction mark for a broken link, not a green check.
+        tl.fromTo("#c4-qmark", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "power3.out" }, 5.4);
+
+        // Scene 5 (6.3-9.5s): hold — subtle jitter on the "?" only.
+        const c4phase = { p: 0 };
+        tl.to(c4phase, {
+          p: Math.PI * 2 * 1.3, duration: 3.2, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(c4phase.p);
+            gsap.set("#c4-qmark", { scale: 1 + s * 0.01 });
+          }
+        }, 6.4);
+
+        window.__timelines["04-tartare-site"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

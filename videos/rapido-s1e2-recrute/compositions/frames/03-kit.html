@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>S1E2 F3 — Le kit d'embauche (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+        .glow { position: absolute; left: 90px; top: 460px; width: 900px; height: 900px; background: radial-gradient(ellipse 50% 45% at 50% 45%, rgba(120,80,192,0.1) 0%, rgba(120,80,192,0.03) 55%, rgba(120,80,192,0) 78%); opacity: 0; pointer-events: none; will-change: opacity; }
+
+        .eyebrow-wrap { position: absolute; left: 0; right: 0; top: 190px; text-align: center; z-index: 4; }
+        .eyebrow-line { width: 72px; height: 5px; border-radius: 3px; background: #7850c0; margin: 0 auto 16px; transform-origin: center; opacity: 0; will-change: transform, opacity; }
+        .eyebrow { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 38px; letter-spacing: 0.08em; text-transform: uppercase; color: #7850c0; opacity: 0; margin: 0; will-change: transform, opacity; }
+
+        .grid { position: absolute; left: 90px; top: 470px; width: 900px; z-index: 3; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .tile { box-sizing: border-box; height: 360px; background: #ffffff; border: 1.5px solid rgba(120,80,192,0.22); border-radius: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; padding: 24px; text-align: center; transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+        .tile .ic { width: 104px; height: 104px; border-radius: 26px; background: rgba(120,80,192,0.1); display: grid; place-items: center; }
+        .tile .ic svg { width: 56px; height: 56px; fill: none; stroke: #7850c0; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .tile .lbl { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 42px; letter-spacing: -0.01em; color: #1b2a41; line-height: 1.12; }
+
+        .chip { position: absolute; left: 50%; top: 1440px; transform: translateX(-50%); z-index: 4; display: flex; align-items: center; gap: 16px; padding: 22px 44px; background: #1b2a41; border-radius: 100px; opacity: 0; will-change: transform, opacity; }
+        .chip .d { width: 34px; height: 34px; border-radius: 50%; background: #059669; display: grid; place-items: center; }
+        .chip .d svg { width: 22px; height: 22px; fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+        .chip b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 40px; color: #ffffff; white-space: nowrap; }
+        .chip b span { color: #b9a6e6; }
+      </style>
+
+      <div id="root" data-composition-id="03-kit" data-width="1080" data-height="1920" data-duration="7.187">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="6.687" data-track-index="0"><div class="glow" id="glow"></div></div>
+        <div id="scene" class="clip" data-start="0" data-duration="6.687" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="eyebrow-wrap">
+            <div class="eyebrow-line" id="eyebrow-line"></div>
+            <p class="eyebrow" id="eyebrow">Le kit d'embauche complet</p>
+          </div>
+          <div class="grid">
+            <div class="tile" id="t1"><span class="ic"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z" /><path d="M14 2v6h6M9 13h7M9 17h5" /></svg></span><span class="lbl">Fiche<br />de poste</span></div>
+            <div class="tile" id="t2"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4" /><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" /></svg></span><span class="lbl">Missions &amp;<br />responsabilités</span></div>
+            <div class="tile" id="t3"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" /><path d="M5 21v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1" /></svg></span><span class="lbl">Profil<br />recherché</span></div>
+            <div class="tile" id="t4"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2" /><path d="M8 8h8M8 12h8M8 16h4" /><path d="M17 15l1.5 1.5L21 14" /></svg></span><span class="lbl">Grille<br />d'entretien</span></div>
+          </div>
+          <div class="chip" id="chip"><span class="d"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span><b>prêt à <span>l'emploi</span></b></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#eyebrow-line", { scaleX: 0, opacity: 0 }, { scaleX: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.0);
+        tl.fromTo("#eyebrow", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.2);
+        var cues = [0.8, 1.7, 2.6, 3.5];
+        ["#t1","#t2","#t3","#t4"].forEach(function (id, i) {
+          tl.fromTo(id, { y: 26, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.44, ease: "power3.out" }, cues[i]);
+        });
+        tl.fromTo("#glow", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "power2.out" }, 4.6);
+        tl.fromTo("#chip", { y: 22, scale: 0.9, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.6)" }, 4.9);
+        window.__timelines["03-kit"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

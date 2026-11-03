@@ -1,0 +1,33 @@
+$ python3 monter.py probe episode1-le-cerveau/renders/episode1-le-cerveau_1080x1920.mp4
+episode1-le-cerveau/renders/episode1-le-cerveau_1080x1920.mp4 : durée=91.0s
+
+$ python3 monter.py probe dimanche-4-apps-1-jeu/renders/dimanche-4-apps-1-jeu_1080x1920.mp4
+dimanche-4-apps-1-jeu/renders/dimanche-4-apps-1-jeu_1080x1920.mp4 : durée=82.0s
+
+$ python3 monter.py probe lundi-foodeatup-store/renders/lundi-foodeatup-store_1080x1920.mp4
+lundi-foodeatup-store/renders/lundi-foodeatup-store_1080x1920.mp4 : durée=89.0s
+
+$ python3 monter.py cut --start 1 --end 5 -o ep1.mp4 episode1-le-cerveau/renders/episode1-le-cerveau_1080x1920.mp4
+  ffmpeg -ss 1 -to 5 -i episode1-le-cerveau/renders/episode1-le-cerveau_1080x1920.mp4 -c:v libx264 -crf 20 -c:a aac ep1.mp4
+ep1.mp4
+
+$ python3 monter.py cut --start 31 --end 35 -o ep2.mp4 dimanche-4-apps-1-jeu/renders/dimanche-4-apps-1-jeu_1080x1920.mp4
+  ffmpeg -ss 31 -to 35 -i dimanche-4-apps-1-jeu/renders/dimanche-4-apps-1-jeu_1080x1920.mp4 -c:v libx264 -crf 20 -c:a aac ep2.mp4
+ep2.mp4
+
+$ python3 monter.py cut --start 13 --end 17 -o ep3.mp4 lundi-foodeatup-store/renders/lundi-foodeatup-store_1080x1920.mp4
+  ffmpeg -ss 13 -to 17 -i lundi-foodeatup-store/renders/lundi-foodeatup-store_1080x1920.mp4 -c:v libx264 -crf 20 -c:a aac ep3.mp4
+ep3.mp4
+
+$ python3 monter.py xfade --duration 0.4 --offset 3.6 -o ep12.mp4 ep1.mp4 ep2.mp4
+  ffmpeg -i ep1.mp4 -i ep2.mp4 -filter_complex '[0:v][1:v]xfade=transition=fade:duration=0.4:offset=3.6[v];[0:a][1:a]acrossfade=d=0.4[a]' -map '[v]' -map '[a]' ep12.mp4
+ep12.mp4
+
+$ python3 monter.py xfade --duration 0.4 --offset 7.2 -o intro.mp4 ep12.mp4 ep3.mp4
+  ffmpeg -i ep12.mp4 -i ep3.mp4 -filter_complex '[0:v][1:v]xfade=transition=fade:duration=0.4:offset=7.2[v];[0:a][1:a]acrossfade=d=0.4[a]' -map '[v]' -map '[a]' intro.mp4
+intro.mp4
+
+$ python3 monter.py preset --platform reels -o intro-reels.mp4 intro.mp4
+  ffmpeg -i intro.mp4 -vf 'scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30' -c:v libx264 -crf 21 -c:a aac -b:a 128k intro-reels.mp4
+intro-reels.mp4  (preset reels 1080x1920@30)
+

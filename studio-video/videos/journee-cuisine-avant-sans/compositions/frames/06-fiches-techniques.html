@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f6-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f6-brokenline { position: absolute; left: 140px; right: 140px; top: 130px; height: 2px; }
+        .f6-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.5; transform-origin: 0% 50%; }
+
+        .f6-card {
+          position: absolute; left: 250px; top: 220px; width: 520px; height: 640px;
+          border: 1px solid #8A9099; background: rgba(58,63,69,0.045);
+          display: flex; align-items: center; justify-content: center; flex-direction: column;
+        }
+        .f6-card .name { font-size: 30px; font-weight: 600; color: rgba(58,63,69,0.85); margin-bottom: 14px; }
+        .f6-stamp { font-size: 64px; font-weight: 800; letter-spacing: 2px; position: relative; }
+        .f6-cross {
+          position: absolute; left: 50%; top: 50%; width: 200px; height: 3px; background: #D64545;
+          transform: translate(-50%, -50%) rotate(-14deg); opacity: 0; transform-origin: 50% 50%;
+        }
+
+        .f6-statwrap { position: absolute; left: 900px; top: 380px; width: 780px; }
+        .f6-num { font-size: 200px; font-weight: 800; color: #D64545; font-variant-numeric: tabular-nums; line-height: 1; }
+        .f6-label { font-size: 36px; font-weight: 600; color: rgba(58,63,69,0.85); margin-top: 20px; max-width: 640px; line-height: 1.35; }
+      </style>
+
+      <div id="root" data-composition-id="06-fiches-techniques" data-width="1920" data-height="1080" data-duration="10.005">
+        <div class="f6-bg clip" id="f6-bgclip" data-start="0" data-duration="10.005" data-track-index="1"></div>
+
+        <div class="f6-brokenline" id="f6-brokenline">
+          <span style="left:4%; width:16%;"></span>
+          <span style="left:26%; width:20%; top:-3px;"></span>
+          <span style="left:52%; width:14%; top:2px;"></span>
+          <span style="left:72%; width:22%;"></span>
+        </div>
+
+        <div class="f6-card" id="f6-card">
+          <div class="name">fiche technique</div>
+          <div class="f6-stamp" id="f6-stamp">V2023<div class="f6-cross" id="f6-cross"></div></div>
+        </div>
+
+        <div class="f6-statwrap">
+          <div class="f6-num" id="f6-num">0</div>
+          <div class="f6-label">changements de prix depuis</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f6-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set("#f6-card", { opacity: 0, y: 14 });
+        gsap.set("#f6-cross", { opacity: 0, scaleX: 0 });
+        gsap.set("#f6-num", { opacity: 0 });
+        gsap.set(".f6-label", { opacity: 0 });
+
+        // Scene 1 (0.0-1.0s): broken line draws itself on
+        tl.to("#f6-brokenline span", { opacity: 0.5, duration: 0.01 }, 0.15);
+        tl.to("#f6-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.08 }, 0.15);
+
+        // Scene 2 (1.0-2.5s): "Mes fiches techniques ? Dans un classeur. Version 2023." — the card settles
+        tl.to("#f6-card", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 1.1);
+
+        // Scene 3 (2.7-3.3s): a thin red strike marks the stamp out of date (friction mark, never a check)
+        tl.to("#f6-cross", { opacity: 0.85, scaleX: 1, duration: 0.4, ease: "power3.out" }, 2.7);
+
+        // Scene 4 (3.5-6.0s): "Le prix a changé quatre fois depuis." — count-up 0 -> 4
+        tl.to(".f6-label", { opacity: 1, duration: 0.35, ease: "power3.out" }, 3.6);
+        const f6count = { v: 0 };
+        const f6el = document.getElementById("f6-num");
+        tl.to("#f6-num", { opacity: 1, duration: 0.3 }, 3.7);
+        tl.to(f6count, {
+          v: 4, duration: 1.2, ease: "power2.out",
+          onUpdate: () => { f6el.textContent = Math.round(f6count.v); }
+        }, 3.85);
+
+        // Scene 5 (6.0-10.005s): hold — subtle jitter on the broken line only
+        const f6phase = { p: 0 };
+        tl.to(f6phase, {
+          p: Math.PI * 2 * 1.1, duration: 2.9, ease: "none",
+          onUpdate: () => { gsap.set("#f6-brokenline", { y: Math.sin(f6phase.p) * 1.5 }); }
+        }, 6.1);
+
+        window.__timelines["06-fiches-techniques"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

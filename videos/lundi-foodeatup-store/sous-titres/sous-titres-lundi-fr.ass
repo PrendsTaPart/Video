@@ -1,0 +1,48 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter ExtraBold,54,&H00FFFFFF,&H00FFFFFF,&H00231A0F,&H96231A0F,0,0,0,0,100,100,0,0,3,16,0,8,90,90,1600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:01.44,Sub,,0,0,0,,{\fad(80,60)}Hier, dimanche,
+Dialogue: 0,0:00:01.44,0:00:03.08,Sub,,0,0,0,,{\fad(80,60)}je vous montrais les quatre applications Flutter
+Dialogue: 0,0:00:03.08,0:00:05.48,Sub,,0,0,0,,{\fad(80,60)}et le jeu vidéo qu'on a développés pour FoodEatUp.
+Dialogue: 0,0:00:05.48,0:00:07.22,Sub,,0,0,0,,{\fad(80,60)}Mais ce matin, une nouvelle idée :
+Dialogue: 0,0:00:07.22,0:00:08.32,Sub,,0,0,0,,{\fad(80,60)}et si toutes ces applications
+Dialogue: 0,0:00:08.32,0:00:11.04,Sub,,0,0,0,,{\fad(80,60)}étaient accessibles directement depuis FoodEatUp ?
+Dialogue: 0,0:00:12.20,0:00:13.53,Sub,,0,0,0,,{\fad(80,60)}L'objectif, c'est simple :
+Dialogue: 0,0:00:13.53,0:00:15.33,Sub,,0,0,0,,{\fad(80,60)}transformer FoodEatUp en une plateforme
+Dialogue: 0,0:00:15.33,0:00:16.83,Sub,,0,0,0,,{\fad(80,60)}où chaque restaurateur peut choisir
+Dialogue: 0,0:00:16.83,0:00:18.97,Sub,,0,0,0,,{\fad(80,60)}les applications dont il a réellement besoin.
+Dialogue: 0,0:00:23.60,0:00:24.90,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, avec Soulayma,
+Dialogue: 0,0:00:24.90,0:00:26.90,Sub,,0,0,0,,{\fad(80,60)}on s'est attaqués à cette nouvelle fonctionnalité :
+Dialogue: 0,0:00:26.90,0:00:28.70,Sub,,0,0,0,,{\fad(80,60)}imaginer le parcours utilisateur,
+Dialogue: 0,0:00:28.70,0:00:30.12,Sub,,0,0,0,,{\fad(80,60)}organiser les extensions,
+Dialogue: 0,0:00:30.12,0:00:32.83,Sub,,0,0,0,,{\fad(80,60)}et préparer leur intégration directement dans FoodEatUp.
+Dialogue: 0,0:00:36.60,0:00:37.75,Sub,,0,0,0,,{\fad(80,60)}Demain, un restaurant pourra
+Dialogue: 0,0:00:37.75,0:00:39.35,Sub,,0,0,0,,{\fad(80,60)}retrouver ses outils au même endroit :
+Dialogue: 0,0:00:39.35,0:00:41.51,Sub,,0,0,0,,{\fad(80,60)}la fidélité, le HACCP,
+Dialogue: 0,0:00:41.51,0:00:43.33,Sub,,0,0,0,,{\fad(80,60)}la caisse mobile, le menu digital…
+Dialogue: 0,0:00:43.33,0:00:44.67,Sub,,0,0,0,,{\fad(80,60)}mais aussi de nouvelles applications
+Dialogue: 0,0:00:44.67,0:00:46.40,Sub,,0,0,0,,{\fad(80,60)}et des extensions intelligentes.
+Dialogue: 0,0:00:51.40,0:00:52.45,Sub,,0,0,0,,{\fad(80,60)}Et le plus intéressant,
+Dialogue: 0,0:00:52.45,0:00:54.10,Sub,,0,0,0,,{\fad(80,60)}c'est que ces applications ne sont pas pensées
+Dialogue: 0,0:00:54.10,0:00:55.32,Sub,,0,0,0,,{\fad(80,60)}comme des outils isolés.
+Dialogue: 0,0:00:55.32,0:00:57.43,Sub,,0,0,0,,{\fad(80,60)}Elles s'inscrivent dans le même écosystème FoodEatUp,
+Dialogue: 0,0:00:57.43,0:01:00.41,Sub,,0,0,0,,{\fad(80,60)}avec des fonctionnalités métier et des connexions MCP.
+Dialogue: 0,0:01:00.41,0:01:01.30,Sub,,0,0,0,,{\fad(80,60)}L'IA ne sert pas seulement
+Dialogue: 0,0:01:01.30,0:01:03.19,Sub,,0,0,0,,{\fad(80,60)}à développer des applications plus vite :
+Dialogue: 0,0:01:03.19,0:01:04.91,Sub,,0,0,0,,{\fad(80,60)}elle permet aussi de repenser la manière
+Dialogue: 0,0:01:04.91,0:01:07.38,Sub,,0,0,0,,{\fad(80,60)}dont on construit tout un écosystème logiciel.
+Dialogue: 0,0:01:11.21,0:01:13.27,Sub,,0,0,0,,{\fad(80,60)}Dimanche, on construisait les applications.
+Dialogue: 0,0:01:13.27,0:01:14.53,Sub,,0,0,0,,{\fad(80,60)}Lundi, avec Soulayma,
+Dialogue: 0,0:01:14.53,0:01:15.59,Sub,,0,0,0,,{\fad(80,60)}on construit la plateforme
+Dialogue: 0,0:01:15.59,0:01:17.51,Sub,,0,0,0,,{\fad(80,60)}qui permettra de les retrouver au même endroit.
+Dialogue: 0,0:01:17.51,0:01:19.57,Sub,,0,0,0,,{\fad(80,60)}Le FoodEatUp Store arrive bientôt.
+Dialogue: 0,0:01:19.57,0:01:20.56,Sub,,0,0,0,,{\fad(80,60)}Et ce n'est que le début.

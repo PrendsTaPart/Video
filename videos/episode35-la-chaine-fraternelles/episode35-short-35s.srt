@@ -1,0 +1,103 @@
+1
+00:00:00,350 --> 00:00:01,010
+Aujourd'hui
+
+2
+00:00:01,010 --> 00:00:01,950
+j'ai voulu faire un cadeau
+
+3
+00:00:01,950 --> 00:00:02,690
+à ma sœur.
+
+4
+00:00:02,690 --> 00:00:03,570
+Elle fait vivre La Chaîne
+
+5
+00:00:03,570 --> 00:00:04,370
+Fratern'Elles
+
+6
+00:00:04,370 --> 00:00:06,090
+une association d'Aulnay-sous-Bois qui aide
+
+7
+00:00:06,090 --> 00:00:07,000
+des familles.
+
+8
+00:00:08,600 --> 00:00:09,520
+Puis j'ai donné à ses
+
+9
+00:00:09,520 --> 00:00:11,000
+assistants IA un accès à
+
+10
+00:00:11,000 --> 00:00:11,340
+son site.
+
+11
+00:00:11,340 --> 00:00:13,060
+Ils peuvent préparer un événement
+
+12
+00:00:13,060 --> 00:00:14,600
+une collecte ou un article…
+
+13
+00:00:14,600 --> 00:00:15,760
+mais seulement en brouillon.
+
+14
+00:00:15,760 --> 00:00:17,270
+Rien n'est publié sans elle.
+
+15
+00:00:18,870 --> 00:00:19,650
+Mon objectif
+
+16
+00:00:19,650 --> 00:00:20,510
+ce n'est pas de remplacer
+
+17
+00:00:20,510 --> 00:00:21,210
+les bénévoles.
+
+18
+00:00:21,210 --> 00:00:22,030
+C'est de leur rendre du
+
+19
+00:00:22,030 --> 00:00:22,270
+temps
+
+20
+00:00:22,270 --> 00:00:23,610
+pour être sur le terrain
+
+21
+00:00:23,610 --> 00:00:24,800
+avec les familles.
+
+22
+00:00:26,400 --> 00:00:27,080
+Parfois
+
+23
+00:00:27,080 --> 00:00:28,100
+le plus beau cadeau…
+
+24
+00:00:28,100 --> 00:00:28,940
+c'est du temps.
+
+25
+00:00:28,940 --> 00:00:30,080
+Et l'IA peut aussi nous
+
+26
+00:00:30,080 --> 00:00:30,910
+en redonner.

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #fff;
+        }
+        .f0-bg { position: absolute; inset: 0; background: #1B2A41; }
+        .f0-glow {
+          position: absolute; left: 50%; top: 46%; width: 1200px; height: 1200px;
+          margin-left: -600px; margin-top: -600px; border-radius: 50%;
+          background: radial-gradient(circle, rgba(0,123,255,0.14) 0%, rgba(27,42,65,0) 62%);
+          opacity: 0;
+        }
+
+        .f0-logo { position: absolute; left: 0; right: 0; top: 372px; text-align: center; opacity: 0; }
+        .f0-logo img { height: 96px; width: auto; }
+
+        .f0-title {
+          position: absolute; left: 0; right: 0; top: 512px; text-align: center;
+          font-size: 66px; font-weight: 700; letter-spacing: -0.01em; opacity: 0;
+        }
+        .f0-title .sans { color: #D64545; }
+
+        .f0-sub {
+          position: absolute; left: 0; right: 0; top: 616px; text-align: center;
+          font-size: 28px; font-weight: 500; color: rgba(255,255,255,0.72); opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="00-titre" data-width="1920" data-height="1080" data-duration="3.5">
+        <div class="f0-bg clip" id="f0-bgclip" data-start="0" data-duration="3.5" data-track-index="1"></div>
+        <div class="f0-glow" id="f0-glow"></div>
+
+        <div class="f0-logo" id="f0-logo">
+          <img src="public/foodeatup-logo.png" alt="FoodEatUp" />
+        </div>
+
+        <div class="f0-title" id="f0-title">Une journée <span class="sans">SANS</span> FoodEatUp</div>
+        <div class="f0-sub" id="f0-sub">Ce que vivent, chaque jour, la plupart des restaurateurs indépendants</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f0-glow", { opacity: 0, scale: 0.85 });
+        gsap.set("#f0-logo", { opacity: 0, y: 14 });
+        gsap.set("#f0-title", { opacity: 0, y: 16 });
+        gsap.set("#f0-sub", { opacity: 0, y: 10 });
+
+        // Scene 1 (0.0-0.9s): hard cut into full-bleed marine — same charter break as the
+        // closing card, so the film opens and closes on the same brand beat.
+        tl.to("#f0-glow", { opacity: 1, scale: 1, duration: 0.9, ease: "power2.out" }, 0.1);
+
+        // Scene 2 (0.3-1.1s): logo settles first
+        tl.to("#f0-logo", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 0.3);
+
+        // Scene 3 (0.75-1.55s): title reveals under the logo
+        tl.to("#f0-title", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 0.75);
+
+        // Scene 4 (1.2-1.9s): subtitle settles last
+        tl.to("#f0-sub", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 1.2);
+
+        // Scene 5 (1.9-3.1s): hold, barely-perceptible ambient breathe on the glow only
+        const f0phase = { p: 0 };
+        tl.to(f0phase, {
+          p: Math.PI * 2 * 0.6, duration: 1.2, ease: "none",
+          onUpdate: () => { gsap.set("#f0-glow", { scale: 1 + Math.sin(f0phase.p) * 0.01 }); }
+        }, 1.95);
+
+        window.__timelines["00-titre"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

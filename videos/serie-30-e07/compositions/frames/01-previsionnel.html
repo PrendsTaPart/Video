@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E7 F1 — Projection 3 ans (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; background-image: radial-gradient(circle at 50% 22%, rgba(90,103,242,0.08), transparent 55%); }
+
+        .head { position: absolute; left: 80px; right: 80px; top: 150px; z-index: 4; text-align: center; }
+        .head .ey { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.1em; text-transform: uppercase; color: #5a67f2; opacity: 0; margin: 0 0 14px; will-change: transform, opacity; }
+        .head .k { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 74px; line-height: 1.05; letter-spacing: -0.02em; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+        .head .k .a { color: #5a67f2; }
+
+        .chart { position: absolute; left: 120px; top: 500px; width: 840px; height: 620px; z-index: 3; box-sizing: border-box; background: #fff; border: 1.5px solid rgba(90,103,242,0.18); border-radius: 26px; padding: 40px 44px; opacity: 0; will-change: transform, opacity; }
+        .chart .bars { position: absolute; left: 60px; right: 60px; bottom: 110px; height: 400px; display: flex; align-items: flex-end; justify-content: space-around; }
+        .bar { width: 150px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
+        .bar .b { width: 130px; border-radius: 16px 16px 0 0; background: linear-gradient(180deg,#7c86ff,#5a67f2); transform-origin: 50% 100%; transform: scaleY(0); }
+        .bar .y { margin-top: 20px; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; color: #1b2a41; }
+        .chart .tags { position: absolute; left: 44px; top: 36px; display: flex; gap: 14px; }
+        .chart .tags span { font-family: "Inter", sans-serif; font-weight: 600; font-size: 26px; padding: 8px 18px; border-radius: 100px; background: rgba(90,103,242,0.1); color: #4a54c8; opacity: 0; will-change: transform, opacity; }
+
+        .foot { position: absolute; left: 50%; top: 1250px; transform: translateX(-50%); z-index: 4; display: flex; align-items: center; gap: 16px; padding: 22px 40px; background: #059669; border-radius: 100px; opacity: 0; white-space: nowrap; box-shadow: 0 18px 44px rgba(5,150,105,0.3); will-change: transform, opacity; }
+        .foot .d { width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,0.25); display: grid; place-items: center; }
+        .foot .d svg { width: 22px; height: 22px; fill: none; stroke: #fff; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+        .foot b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 38px; color: #fff; }
+      </style>
+
+      <div id="root" data-composition-id="01-previsionnel" data-width="1080" data-height="1920" data-duration="11.924">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="11.424" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="11.424" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="head">
+            <p class="ey" id="ey">Plan financier prévisionnel</p>
+            <div class="k" id="k">Ton activité,<br />sur <span class="a">3 ans</span>.</div>
+          </div>
+          <div class="chart" id="chart">
+            <div class="tags"><span id="t1">CA</span><span id="t2">Charges</span><span id="t3">Point mort</span></div>
+            <div class="bars">
+              <div class="bar"><div class="b" id="b1" style="height:180px"></div><div class="y">An 1</div></div>
+              <div class="bar"><div class="b" id="b2" style="height:280px"></div><div class="y">An 2</div></div>
+              <div class="bar"><div class="b" id="b3" style="height:380px"></div><div class="y">An 3</div></div>
+            </div>
+          </div>
+          <div class="foot" id="foot"><span class="d"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18" /></svg></span><b>Garde-fou anti-courbe magique</b></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#ey", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.1);
+        tl.fromTo("#k", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.4);
+        tl.fromTo("#chart", { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 1.4);
+        ["#t1","#t2","#t3"].forEach(function (id, i) { tl.fromTo(id, { y: -8, opacity: 0 }, { y: 0, opacity: 1, duration: 0.35 }, 2.2 + i * 0.3); });
+        tl.fromTo("#b1", { scaleY: 0 }, { scaleY: 1, duration: 0.7, ease: "power3.out" }, 3.2);
+        tl.fromTo("#b2", { scaleY: 0 }, { scaleY: 1, duration: 0.7, ease: "power3.out" }, 4.0);
+        tl.fromTo("#b3", { scaleY: 0 }, { scaleY: 1, duration: 0.7, ease: "power3.out" }, 4.8);
+        tl.fromTo("#foot", { y: 18, scale: 0.9, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.5)" }, 8.0);
+        window.__timelines["01-previsionnel"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "logo": "assets/brand/foodeatup-logo-mascot.png",
+  "clin": "assets/sfx/son-clin-passe-take1.mp3",
+  "ctaVo": "assets/voice/cta.mp3",
+  "ctaSub": "Essayez 7 jours gratuitement",
+  "stories": [
+    {
+      "id": "hf3-09-fermeture-salle",
+      "hook": "23h.",
+      "video": "assets/video/hf2/09-fermeture-salle.mp4",
+      "vo": "assets/voice/hf2/vo9-fermeture-salle.mp3",
+      "caption": "Service fini. La paperasse commence.",
+      "punchline": "Et si la paperasse était déjà faite ?"
+    },
+    {
+      "id": "hf3-10-notification-depart",
+      "hook": "Il valide.",
+      "video": "assets/video/hf2/10-notification-depart.mp4",
+      "vo": "assets/voice/hf2/vo10-notification-depart.mp3",
+      "caption": "Il valide, il éteint, il rentre.",
+      "punchline": "Fermer, c'est un geste."
+    },
+    {
+      "id": "hf3-11-chef-plan-sequence",
+      "hook": "Une journée.",
+      "video": "assets/video/hf2/11-chef-plan-sequence.mp4",
+      "vo": "assets/voice/hf2/vo11-chef-plan-sequence.mp3",
+      "caption": "Une journée entière. Un seul outil.",
+      "punchline": "Huit métiers. Une seule boucle."
+    },
+    {
+      "id": "hf3-12-tickets-rail",
+      "hook": "Huit tickets.",
+      "video": "assets/video/hf2/12-tickets-rail.mp4",
+      "vo": "assets/voice/hf2/vo12-tickets-rail.mp3",
+      "caption": "Huit tickets. Aucun ordre. Et le service qui monte.",
+      "punchline": "Un écran. Le bon ordre. Toujours."
+    },
+    {
+      "id": "hf3-13-cuisine-vide-nuit",
+      "hook": "Minuit.",
+      "video": "assets/video/hf2/13-cuisine-vide-nuit.mp4",
+      "vo": "assets/voice/hf2/vo13-cuisine-vide-nuit.mp3",
+      "caption": "La cuisine dort. Les données, non.",
+      "punchline": "PrediBot prépare votre demain."
+    },
+    {
+      "id": "hf3-14-chef-apres-service",
+      "hook": "Service fini.",
+      "video": "assets/video/hf2/14-chef-apres-service.mp4",
+      "vo": "assets/voice/hf2/vo14-chef-apres-service.mp3",
+      "caption": "Service fini. Le classeur s'est rempli tout seul.",
+      "punchline": "Votre HACCP s'écrit pendant que vous cuisinez."
+    },
+    {
+      "id": "hf3-15-couloir-traversee",
+      "hook": "Huit métiers.",
+      "video": "assets/video/hf2/15-couloir-traversee.mp4",
+      "vo": "assets/voice/hf2/vo15-couloir-traversee.mp3",
+      "caption": "Huit métiers. Un seul couloir.",
+      "punchline": "Tout communique. Enfin."
+    },
+    {
+      "id": "hf3-16-salle-prete",
+      "hook": "11h30.",
+      "video": "assets/video/hf2/16-salle-prete.mp4",
+      "vo": "assets/voice/hf2/vo16-salle-prete.mp3",
+      "caption": "Tout est prêt. Personne n'a couru.",
+      "punchline": "L'ouverture sans le stress."
+    },
+    {
+      "id": "hf3-17-salle-service-soir",
+      "hook": "20h30.",
+      "video": "assets/video/hf2/17-salle-service-soir.mp4",
+      "vo": "assets/voice/hf2/vo17-salle-service-soir.mp3",
+      "caption": "Le service tourne. Sans un mot de trop.",
+      "punchline": "La salle et la cuisine, synchronisées."
+    },
+    {
+      "id": "hf3-18-salle-apres-midi",
+      "hook": "15h.",
+      "video": "assets/video/hf2/18-salle-apres-midi.mp4",
+      "vo": "assets/voice/hf2/vo18-salle-apres-midi.mp3",
+      "caption": "Entre deux services. Enfin le temps de souffler.",
+      "punchline": "Le temps que vous récupérez."
+    },
+    {
+      "id": "hf3-19-serveur-fermeture",
+      "hook": "Il ferme.",
+      "video": "assets/video/hf2/19-serveur-fermeture.mp4",
+      "vo": "assets/voice/hf2/vo19-serveur-fermeture.mp3",
+      "caption": "Il ferme. Tout est déjà en ordre.",
+      "punchline": "La clôture, en un geste."
+    },
+    {
+      "id": "hf3-20-directeur-dashboard",
+      "hook": "18h.",
+      "video": "assets/video/hf2/20-directeur-dashboard.mp4",
+      "vo": "assets/voice/hf2/vo20-directeur-dashboard.mp3",
+      "caption": "Son chiffre du jour. Sans ouvrir un tableur.",
+      "punchline": "Vos marges, en direct."
+    },
+    {
+      "id": "hf3-21-chef-tablette",
+      "hook": "Un doigt.",
+      "video": "assets/video/hf2/21-chef-tablette.mp4",
+      "vo": "assets/voice/hf2/vo21-chef-tablette.mp3",
+      "caption": "Un doigt. Et plus rien n'est urgent.",
+      "punchline": "Un seul écran remplace les dix."
+    },
+    {
+      "id": "hf3-22-notifications-desordre",
+      "hook": "Ça sonne.",
+      "video": "assets/video/hf2/22-notifications-desordre.mp4",
+      "vo": "assets/voice/hf2/vo22-notifications-desordre.mp3",
+      "caption": "Les alertes s'empilent. Aucune ne dit quoi faire.",
+      "punchline": "Des alertes qui disent quoi faire."
+    },
+    {
+      "id": "hf3-23-classeur-poussiereux",
+      "hook": "Le contrôle.",
+      "video": "assets/video/hf2/23-classeur-poussiereux.mp4",
+      "vo": "assets/voice/hf2/vo23-classeur-poussiereux.mp3",
+      "caption": "Le classeur HACCP. Vide depuis trois semaines.",
+      "punchline": "Votre classeur, à jour sans y penser."
+    },
+    {
+      "id": "hf3-24-chambre-froide",
+      "hook": "7h du matin.",
+      "video": "assets/video/hf2/24-chambre-froide.mp4",
+      "vo": "assets/voice/hf2/vo24-chambre-froide.mp3",
+      "caption": "La température se relève toute seule.",
+      "punchline": "La traçabilité, sans le carnet."
+    },
+    {
+      "id": "hf3-25-reserve-immobile",
+      "hook": "Combien il reste ?",
+      "video": "assets/video/hf2/25-reserve-immobile.mp4",
+      "vo": "assets/voice/hf2/vo25-reserve-immobile.mp3",
+      "caption": "Face aux étagères. Sans savoir ce qu'il reste.",
+      "punchline": "Votre stock, toujours à jour."
+    },
+    {
+      "id": "hf3-26-comptage-recommence",
+      "hook": "Il recompte.",
+      "video": "assets/video/hf2/26-comptage-recommence.mp4",
+      "vo": "assets/voice/hf2/vo26-comptage-recommence.mp3",
+      "caption": "Il compte. Il se trompe. Il recommence.",
+      "punchline": "L'inventaire sans le recomptage."
+    },
+    {
+      "id": "hf3-27-scan-etagere",
+      "hook": "Un balayage.",
+      "video": "assets/video/hf2/27-scan-etagere.mp4",
+      "vo": "assets/voice/hf2/vo27-scan-etagere.mp3",
+      "caption": "Un balayage. L'inventaire est fait.",
+      "punchline": "StockVision AI compte pour vous."
+    },
+    {
+      "id": "hf3-28-pouce-nuit",
+      "hook": "23h.",
+      "video": "assets/video/hf2/28-pouce-nuit.mp4",
+      "vo": "assets/voice/hf2/vo28-pouce-nuit.mp3",
+      "caption": "Vingt-trois heures. Il ressaisit ce qu'il a déjà noté.",
+      "punchline": "Une saisie, pas dix."
+    }
+  ]
+}

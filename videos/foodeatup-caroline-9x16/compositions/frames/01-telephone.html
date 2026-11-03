@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame 1 — Le téléphone (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background-color: #f7f9fc; background-image: radial-gradient(circle at 50% 30%, rgba(30,155,240,0.05), transparent 55%), radial-gradient(circle, rgba(27,42,65,0.09) 1.6px, transparent 1.6px); background-size: 100% 100%, 46px 46px; }
+        .shake { position: absolute; inset: 0; }
+
+        .figure { position: absolute; z-index: 2; top: 70px; left: 190px; width: 700px; height: 880px; mix-blend-mode: multiply; opacity: 0; will-change: transform, opacity; }
+        .figure img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+        .fiches { position: absolute; left: 120px; top: 990px; width: 840px; z-index: 3; display: flex; flex-direction: column; gap: 20px; }
+        .fiche { position: relative; box-sizing: border-box; background: #ffffff; border: 1.5px solid rgba(27,42,65,0.1); border-radius: 14px; padding: 22px 30px; display: flex; align-items: center; gap: 22px; transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+        .fiche::before { content: ""; position: absolute; left: 0; top: 16px; bottom: 16px; width: 7px; border-radius: 4px; background: #1e9bf0; }
+        .fiche.alert::before { background: #dc2626; }
+        .fiche-ic { flex: 0 0 56px; width: 56px; height: 56px; display: grid; place-items: center; background: rgba(30,155,240,0.08); border-radius: 50%; }
+        .fiche.alert .fiche-ic { background: rgba(220,38,38,0.08); }
+        .fiche-ic svg { width: 32px; height: 32px; fill: none; stroke: #1e9bf0; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .fiche.alert .fiche-ic svg { stroke: #dc2626; }
+        .fiche-label { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 36px; letter-spacing: -0.01em; color: #1b2a41; line-height: 1.12; }
+        .fiche-sub { display: block; font-family: "Inter", sans-serif; font-weight: 500; font-size: 24px; color: #566472; margin-top: 3px; }
+
+        .stamp { position: absolute; z-index: 5; left: 300px; top: 470px; padding: 16px 40px; border: 5px solid #1b2a41; border-radius: 14px; font-family: "Poppins", sans-serif; font-weight: 800; font-size: 52px; letter-spacing: 0.06em; color: #1b2a41; transform: rotate(-8deg); transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+      </style>
+
+      <div id="root" data-composition-id="01-telephone" data-width="1080" data-height="1920" data-duration="11.68">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="11.18" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="11.18" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="shake">
+            <div class="figure" id="figure"><img src="public/phone-chaos.png" alt="Chef débordé par les appels" /></div>
+            <div class="fiches">
+              <div class="fiche" id="f1"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M15.5 3H19a2 2 0 0 1 2 2v3.5M8.5 21H5a2 2 0 0 1-2-2v-3.5" /><path d="M17 8l4-4M3 20l4-4" /><path d="M9 7a5 5 0 0 0 8 8" /></svg></span><span class="fiche-label">Réservation<span class="fiche-sub">au téléphone</span></span></div>
+              <div class="fiche" id="f2"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><path d="M3 6h18M16 10a4 4 0 0 1-8 0" /></svg></span><span class="fiche-label">Commande à emporter<span class="fiche-sub">à noter vite</span></span></div>
+              <div class="fiche" id="f3"><span class="fiche-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .9-1 1.7M12 17h.01" /></svg></span><span class="fiche-label">Une question ?<span class="fiche-sub">horaires, allergènes…</span></span></div>
+              <div class="fiche alert" id="f4"><span class="fiche-ic"><svg viewBox="0 0 24 24"><path d="M2 8.5C6 5 10 4 12 4s6 1 10 4.5l-2.5 2.5a1.5 1.5 0 0 1-2 .1l-1.6-1.3a1 1 0 0 0-.6-.2H8.7a1 1 0 0 0-.6.2L6.5 11a1.5 1.5 0 0 1-2-.1z" /><path d="M15 3l6 6M21 3l-6 6" /></svg></span><span class="fiche-label">Appel manqué<span class="fiche-sub">client perdu</span></span></div>
+            </div>
+            <div class="stamp" id="stamp">ÇA SONNE</div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        (function () {
+          var root = document.querySelector('[data-composition-id="01-telephone"][id="root"]') || document.querySelector('[data-composition-id="01-telephone"]');
+          var tl = gsap.timeline({ paused: true });
+          var shakeEl = root.querySelector(".shake");
+          tl.fromTo(root.querySelector("#figure"), { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 0.0);
+          var cues = [2.6, 3.7, 5.2, 8.5];
+          ["#f1", "#f2", "#f3", "#f4"].forEach(function (id, i) {
+            tl.fromTo(root.querySelector(id), { scale: 0.85, y: 30, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, cues[i]);
+          });
+          tl.fromTo(root.querySelector("#stamp"), { scale: 1.6, opacity: 0, rotation: -8 }, { scale: 1, opacity: 1, rotation: -8, duration: 0.4, ease: "power4.out" }, 6.3);
+          var shk = { t: 0 };
+          tl.to(shk, { t: 1, duration: 1.35, ease: "none", onUpdate: function () {
+            var tt = shk.t; var env = Math.max(0, Math.min(1, tt / 0.18, (1 - tt) / 0.14));
+            var ph = tt * 1.35 * Math.PI * 2;
+            shakeEl.style.transform = "translate(" + (Math.sin(ph * 3.5) * 3 * env) + "px," + (Math.sin(ph * 2.7 + 1.1) * 2.2 * env) + "px)";
+          } }, 9.8);
+          window.__timelines["01-telephone"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E3 F1 — La marketplace (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; background-image: radial-gradient(circle at 50% 26%, rgba(90,103,242,0.08), transparent 55%); }
+
+        .head { position: absolute; left: 80px; right: 80px; top: 140px; z-index: 4; text-align: center; }
+        .head .ey { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.1em; text-transform: uppercase; color: #5a67f2; opacity: 0; margin: 0 0 14px; will-change: transform, opacity; }
+        .head .k { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 74px; line-height: 1.05; letter-spacing: -0.02em; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+        .head .k .a { color: #5a67f2; }
+
+        .count { position: absolute; left: 0; right: 0; top: 430px; text-align: center; z-index: 4; }
+        .count b { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 200px; line-height: 1; color: #5a67f2; opacity: 0; display: inline-block; will-change: transform, opacity; }
+        .count span { display: block; margin-top: 4px; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 44px; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+
+        .grid { position: absolute; left: 100px; top: 880px; width: 880px; z-index: 3; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .chip { box-sizing: border-box; height: 150px; background: #ffffff; border: 1.5px solid rgba(90,103,242,0.2); border-radius: 22px; display: flex; align-items: center; gap: 20px; padding: 0 30px; opacity: 0; will-change: transform, opacity; }
+        .chip .ic { flex: none; width: 66px; height: 66px; border-radius: 16px; background: rgba(90,103,242,0.1); display: grid; place-items: center; }
+        .chip .ic svg { width: 36px; height: 36px; fill: none; stroke: #5a67f2; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+        .chip b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; color: #1b2a41; line-height: 1.1; }
+      </style>
+
+      <div id="root" data-composition-id="01-marketplace" data-width="1080" data-height="1920" data-duration="9.881">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="9.381" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="9.381" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="head">
+            <p class="ey" id="ey">Le plugin qui sait tout faire</p>
+            <div class="k" id="k">Une <span class="a">marketplace</span> de compétences.</div>
+          </div>
+          <div class="count"><b id="num">60+</b><span id="numlbl">métiers, prêts à l'emploi</span></div>
+          <div class="grid">
+            <div class="chip" id="c1"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18" /><path d="M7 14l3-3 3 3 5-6" /></svg></span><b>Commercial</b></div>
+            <div class="chip" id="c2"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H7l-3 3z" /></svg></span><b>Community<br />manager</b></div>
+            <div class="chip" id="c3"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M8 9h8M8 13h5" /></svg></span><b>Comptable</b></div>
+            <div class="chip" id="c4"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" /><path d="M5 21v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1" /></svg></span><b>RH</b></div>
+            <div class="chip" id="c5"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9h18M9 20V9" /></svg></span><b>Chef de projet</b></div>
+            <div class="chip" id="c6"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2v20M6 6h9a3 3 0 0 1 0 6H8a3 3 0 0 0 0 6h10" /></svg></span><b>Directeur<br />financier</b></div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#ey", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.1);
+        tl.fromTo("#k", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.4);
+        tl.fromTo("#num", { scale: 0.3, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.7, ease: "back.out(1.7)" }, 1.4);
+        tl.fromTo("#numlbl", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 2.0);
+        var cues = [3.0, 3.7, 4.4, 5.1, 5.8, 6.5];
+        ["#c1","#c2","#c3","#c4","#c5","#c6"].forEach(function (id, i) {
+          tl.fromTo(id, { y: 24, scale: 0.92, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.4, ease: "power3.out" }, cues[i]);
+        });
+        window.__timelines["01-marketplace"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

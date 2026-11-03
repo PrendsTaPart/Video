@@ -1,0 +1,46 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter ExtraBold,54,&H00FFFFFF,&H00FFFFFF,&H00231A0F,&H96231A0F,0,0,0,0,100,100,0,0,3,16,0,8,90,90,1600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.60,0:00:02.56,Sub,,0,0,0,,{\fad(80,60)}Pendant longtemps, on développait des logiciels
+Dialogue: 0,0:00:02.56,0:00:04.34,Sub,,0,0,0,,{\fad(80,60)}pour que les humains travaillent dessus.
+Dialogue: 0,0:00:04.34,0:00:06.84,Sub,,0,0,0,,{\fad(80,60)}Maintenant, je construis des compétences et des agents IA
+Dialogue: 0,0:00:06.84,0:00:09.51,Sub,,0,0,0,,{\fad(80,60)}pour que les logiciels puissent aussi travailler avec nous.
+Dialogue: 0,0:00:11.68,0:00:13.64,Sub,,0,0,0,,{\fad(80,60)}Première étape : connecter nos outils métier
+Dialogue: 0,0:00:13.64,0:00:15.22,Sub,,0,0,0,,{\fad(80,60)}à Claude grâce aux MCP.
+Dialogue: 0,0:00:15.22,0:00:18.44,Sub,,0,0,0,,{\fad(80,60)}Restaurant, CRM, marketing, ressources humaines…
+Dialogue: 0,0:00:18.44,0:00:19.90,Sub,,0,0,0,,{\fad(80,60)}Chaque logiciel devient accessible
+Dialogue: 0,0:00:19.90,0:00:21.21,Sub,,0,0,0,,{\fad(80,60)}à des agents autorisés.
+Dialogue: 0,0:00:24.20,0:00:26.12,Sub,,0,0,0,,{\fad(80,60)}Mais donner accès aux outils ne suffit pas.
+Dialogue: 0,0:00:26.12,0:00:28.38,Sub,,0,0,0,,{\fad(80,60)}Il faut apprendre aux agents comment travailler.
+Dialogue: 0,0:00:28.38,0:00:30.54,Sub,,0,0,0,,{\fad(80,60)}D'où les Skills : des compétences qui expliquent
+Dialogue: 0,0:00:30.54,0:00:33.06,Sub,,0,0,0,,{\fad(80,60)}les procédures, les règles métier et les étapes à suivre.
+Dialogue: 0,0:00:33.06,0:00:35.89,Sub,,0,0,0,,{\fad(80,60)}Il y en a aujourd'hui 544 dans le catalogue.
+Dialogue: 0,0:00:39.03,0:00:41.48,Sub,,0,0,0,,{\fad(80,60)}Ensuite, les agents, organisés par métier :
+Dialogue: 0,0:00:41.48,0:00:43.60,Sub,,0,0,0,,{\fad(80,60)}directeur général, directeur commercial,
+Dialogue: 0,0:00:43.60,0:00:45.60,Sub,,0,0,0,,{\fad(80,60)}marketing, finance, restaurant…
+Dialogue: 0,0:00:45.60,0:00:48.44,Sub,,0,0,0,,{\fad(80,60)}Chacun avec son rôle, ses compétences et ses outils.
+Dialogue: 0,0:00:48.44,0:00:50.08,Sub,,0,0,0,,{\fad(80,60)}77 agents au total.
+Dialogue: 0,0:00:53.00,0:00:54.43,Sub,,0,0,0,,{\fad(80,60)}Par exemple, un agent peut repérer
+Dialogue: 0,0:00:54.43,0:00:55.55,Sub,,0,0,0,,{\fad(80,60)}les stocks bas d'un restaurant
+Dialogue: 0,0:00:55.55,0:00:57.37,Sub,,0,0,0,,{\fad(80,60)}et préparer une commande fournisseur.
+Dialogue: 0,0:00:57.37,0:00:58.99,Sub,,0,0,0,,{\fad(80,60)}Mais rien ne part sans validation :
+Dialogue: 0,0:00:58.99,0:01:00.77,Sub,,0,0,0,,{\fad(80,60)}une commande, un paiement ou une publication
+Dialogue: 0,0:01:00.77,0:01:02.55,Sub,,0,0,0,,{\fad(80,60)}attend toujours votre accord.
+Dialogue: 0,0:01:05.60,0:01:07.05,Sub,,0,0,0,,{\fad(80,60)}Et pour rendre tout ça accessible,
+Dialogue: 0,0:01:07.05,0:01:08.53,Sub,,0,0,0,,{\fad(80,60)}il y a la marketplace BraindCode :
+Dialogue: 0,0:01:08.53,0:01:10.59,Sub,,0,0,0,,{\fad(80,60)}33 plugins à installer dans Claude Code,
+Dialogue: 0,0:01:10.59,0:01:11.89,Sub,,0,0,0,,{\fad(80,60)}avec une base de connaissance
+Dialogue: 0,0:01:11.89,0:01:13.71,Sub,,0,0,0,,{\fad(80,60)}pour le contexte de votre entreprise.
+Dialogue: 0,0:01:16.40,0:01:17.29,Sub,,0,0,0,,{\fad(80,60)}Le plus intéressant ?
+Dialogue: 0,0:01:17.29,0:01:20.05,Sub,,0,0,0,,{\fad(80,60)}Cette équipe IA ne va pas seulement utiliser nos logiciels.
+Dialogue: 0,0:01:20.05,0:01:22.63,Sub,,0,0,0,,{\fad(80,60)}Elle va aussi nous aider à en construire de nouveaux.
+Dialogue: 0,0:01:22.63,0:01:24.62,Sub,,0,0,0,,{\fad(80,60)}Et dimanche, je suis passé à la pratique.

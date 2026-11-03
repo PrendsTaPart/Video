@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E8 F1 — Du plan aux tâches (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; background-image: radial-gradient(circle at 50% 24%, rgba(90,103,242,0.08), transparent 55%); }
+
+        .head { position: absolute; left: 80px; right: 80px; top: 150px; z-index: 4; text-align: center; }
+        .head .ey { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.1em; text-transform: uppercase; color: #5a67f2; opacity: 0; margin: 0 0 14px; will-change: transform, opacity; }
+        .head .k { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 74px; line-height: 1.05; letter-spacing: -0.02em; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+        .head .k .a { color: #5a67f2; }
+
+        .plan { position: absolute; left: 130px; top: 480px; width: 260px; z-index: 3; box-sizing: border-box; background: #fff; border: 1.5px solid rgba(27,42,65,0.12); border-radius: 20px; padding: 26px 24px; opacity: 0; will-change: transform, opacity; }
+        .plan .t { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 30px; color: #1b2a41; margin-bottom: 16px; }
+        .plan .ln { height: 12px; border-radius: 6px; background: rgba(27,42,65,0.1); margin-bottom: 12px; }
+        .plan .ln.s { width: 70%; }
+
+        .arrow { position: absolute; left: 420px; top: 560px; z-index: 4; width: 90px; height: 90px; opacity: 0; will-change: transform, opacity; }
+        .arrow svg { width: 100%; height: 100%; fill: none; stroke: #5a67f2; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+
+        .tasks { position: absolute; left: 540px; top: 470px; width: 410px; z-index: 3; display: flex; flex-direction: column; gap: 16px; }
+        .task { background: #fff; border: 1.5px solid rgba(90,103,242,0.22); border-radius: 18px; padding: 20px 22px; opacity: 0; will-change: transform, opacity; }
+        .task .r1 { display: flex; align-items: center; gap: 14px; }
+        .task .ck { flex: none; width: 40px; height: 40px; border-radius: 10px; background: #059669; display: grid; place-items: center; }
+        .task .ck svg { width: 24px; height: 24px; fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; }
+        .task b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 30px; color: #1b2a41; }
+        .task .meta { margin-top: 12px; display: flex; gap: 10px; }
+        .task .meta span { font-family: "Inter", sans-serif; font-weight: 600; font-size: 22px; padding: 6px 14px; border-radius: 100px; background: rgba(90,103,242,0.1); color: #4a54c8; }
+
+        .foot { position: absolute; left: 50%; top: 1180px; transform: translateX(-50%); z-index: 4; display: flex; gap: 14px; opacity: 0; will-change: transform, opacity; }
+        .foot span { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; padding: 16px 30px; border-radius: 100px; background: #1b2a41; color: #fff; white-space: nowrap; }
+        .foot span.a { background: #5a67f2; }
+      </style>
+
+      <div id="root" data-composition-id="01-plan" data-width="1080" data-height="1920" data-duration="10.206">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="9.706" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="9.706" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="head">
+            <p class="ey" id="ey">Le plan d'exécution</p>
+            <div class="k" id="k">Ta stratégie<br />devient des <span class="a">tâches</span>.</div>
+          </div>
+          <div class="plan" id="plan"><div class="t">Business plan</div><div class="ln"></div><div class="ln"></div><div class="ln s"></div><div class="ln"></div><div class="ln s"></div></div>
+          <div class="arrow" id="arrow"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" /></svg></div>
+          <div class="tasks">
+            <div class="task" id="t1"><div class="r1"><span class="ck"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span><b>Trouver le local</b></div><div class="meta"><span>👤 Léa</span><span>📅 S1</span></div></div>
+            <div class="task" id="t2"><div class="r1"><span class="ck"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span><b>Déposer les statuts</b></div><div class="meta"><span>👤 Léa</span><span>📅 S2</span></div></div>
+            <div class="task" id="t3"><div class="r1"><span class="ck"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6" /></svg></span><b>Recruter l'équipe</b></div><div class="meta"><span>👤 Léa</span><span>📅 S4</span></div></div>
+          </div>
+          <div class="foot" id="foot"><span>assignée</span><span class="a">datée</span><span>dans ton outil</span></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#ey", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.1);
+        tl.fromTo("#k", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.4);
+        tl.fromTo("#plan", { x: -20, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 1.6);
+        tl.fromTo("#arrow", { x: -14, opacity: 0 }, { x: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 2.4);
+        tl.fromTo("#t1", { x: 20, opacity: 0 }, { x: 0, opacity: 1, duration: 0.44, ease: "power3.out" }, 3.0);
+        tl.fromTo("#t2", { x: 20, opacity: 0 }, { x: 0, opacity: 1, duration: 0.44, ease: "power3.out" }, 4.2);
+        tl.fromTo("#t3", { x: 20, opacity: 0 }, { x: 0, opacity: 1, duration: 0.44, ease: "power3.out" }, 5.4);
+        tl.fromTo("#foot", { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 7.0);
+        window.__timelines["01-plan"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

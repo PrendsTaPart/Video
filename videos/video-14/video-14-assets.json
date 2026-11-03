@@ -1,0 +1,14 @@
+{
+  "captures": {
+    "login": "capture d'écran fournie par le MCP Lovable (get_project e9adf807), recadrée ; aucune donnée de compte"
+  },
+  "code_lu": {
+    "src/lib/automation.ts": "mots-clés callMcpTool, sendHttpRequest, verifyStatusCode, verifyJsonPath, verifyContains, setVariable, wait ; objets api_endpoint, mcp_tool, web_element ; exécutions test_runs avec step_results (requête, réponse)",
+    "src/lib/mcp/tools/": "64 fichiers d'outils, dont create-bug, record-test-result, set-bug-status, search-similar-bugs, get-traceability-matrix, get-go-no-go, start-prompt-execution, finish-prompt-execution",
+    "roadmap.md": "20 tests MCP isolés réussis ; parcours connecté et purge des journaux bloqués par la base en pause"
+  },
+  "mcp_qatest": "non joignable dans cette session (erreur 503) : aucun outil appelé",
+  "demonstration": "cas d'échec simulé, signalé à l'écran",
+  "voix": "ElevenLabs, voix Noé, eleven_v4, 947 crédits",
+  "effets": "générés avec ffmpeg (sinusoïdes)"
+}

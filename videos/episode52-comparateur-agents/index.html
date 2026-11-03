@@ -1,0 +1,87 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 52 : le comparateur d'agents</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter',sans-serif}#stage{background:#0d1424}.sc{background:#0d1424}
+#hdr{position:absolute;left:0;right:0;top:0;height:160px;z-index:60}#hdr span{position:absolute;left:60px;top:90px;font-family:'JetBrains Mono';font-weight:700;font-size:24px;color:#8fa0c0}
+#cap{font-family:'Inter';font-weight:600;font-size:50px;color:#fff;letter-spacing:0;text-shadow:0 3px 12px rgba(0,0,0,.8)}#cap i.k{color:#7ff5ff;font-style:normal}
+.holo{width:860px;background:rgba(10,18,36,.82);border:5px solid #38e1ff;border-radius:30px;padding:26px 30px;color:#fff;box-shadow:0 0 40px rgba(56,225,255,.55),inset 0 0 30px rgba(56,225,255,.15)}
+.holo .t{display:flex;align-items:center;gap:20px;font-weight:900;font-size:52px}.holo .t img{width:90px;height:90px;object-fit:contain}
+.holo .t small{display:block;font-size:24px;font-weight:600;color:#9fb3d6}
+.ln{display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:34px;font-weight:700;background:rgba(255,255,255,.07);border-radius:16px;padding:14px 20px;margin-top:14px;opacity:.06}
+.ln.on{opacity:1}.ln b{font-size:42px}.ln.ok b{color:#3ef08a}.ln.ko b{color:#ff4d5e}
+.src{font-family:'JetBrains Mono';font-size:18px;color:#7c8db0;margin-top:14px}
+.stamp{font-family:'Inter';font-weight:900;font-size:56px;color:#ff3347;border:7px solid #ff3347;border-radius:14px;padding:4px 22px;transform:rotate(-10deg);white-space:nowrap;text-shadow:0 0 12px rgba(255,51,71,.5);background:rgba(13,20,36,.4)}
+.chat{width:520px;background:#1a2440;border-radius:24px;padding:24px}.chat i{display:block;height:34px;border-radius:17px;margin:12px 0}
+.mini{width:420px;padding:18px;border-width:4px}.mini .t{font-size:34px}.mini .t img{width:60px;height:60px}.mini .ln{font-size:22px;padding:8px 12px;margin-top:8px;opacity:1}
+.mika{display:flex;flex-direction:column;align-items:center;gap:20px}.mika img{width:300px;height:300px;border-radius:50%;object-fit:cover;border:8px solid #FFA500;box-shadow:0 0 60px rgba(255,165,0,.6)}
+.mika b{font-weight:900;font-size:90px;color:#fff}
+.pill{display:inline-block;font-family:'JetBrains Mono';font-weight:700;font-size:32px;border-radius:999px;padding:10px 26px;white-space:nowrap;background:#FFA500;color:#111}.pill.d{background:#1a2440;color:#fff;border:2px solid #38e1ff}
+</style></head><body><div id="stage"><div id="hdr"><span>michael · le quotidien avec l'ia</span></div><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=230;CAP.group=7;CAP.kw=new Set(['agent','agent.','chat.','serveur.','Hermès,','OpenClaw','Muse,','Meta','Mika.','AGENT']);
+const K='holo-nuit-agents-';
+// décor permanent + personnages
+let base=scene(0,C.dur+1,{bg:K+'bureau-toit.jpg',kb:[1.05,1.12],tr:'cut',z:1});
+const ent=base.img(K+'entrepreneur-assis-profil.png',{x:800,y:1440,w:560,fx:'none',z:3});
+const entF=base.img(K+'entrepreneur-bras-croises.png',{x:800,y:1440,w:560,fx:'none',z:3});
+const entP=base.img(K+'entrepreneur-pensif.png',{x:800,y:1440,w:560,fx:'none',z:3});
+const asF=base.img(K+'assistant-orange-face.png',{x:300,y:1300,w:300,fx:'none',z:4,anim:'float'});
+const asP=base.img(K+'assistant-orange-projette.png',{x:300,y:1300,w:300,fx:'none',z:4,anim:'float'});
+const beam=base.img(K+'faisceau-hologramme.png',{x:300,y:1000,w:420,h:520,fx:'none',z:2,style:'opacity:.7'});
+// segments où l'assistant projette
+const PROJ=[[M('Non. Moi,'),M('Et un agent')],[M('Un agent tourne'),M('Et ça existe')],[M('Plein. Hermès,'),M('Alors là…')]];
+const proj=t=>PROJ.some(([a,b])=>t>=a&&t<b);
+base.fn(t=>{const p=proj(t);asP.d.style.opacity=p?1:0;asF.d.style.opacity=p?0:1;beam.d.style.opacity=p?.75:0;
+ const crossed=(t>=M('Il faut quand')&&t<M('Suivant. L\'agent'))||(t>=M('Bon. Pour')&&t<M('Alors là…'));const pens=(t>=M('Ben…')&&t<M('Non. Moi,'))||(t>=M('Et Muse,')&&t<M('Bon. Pour'));
+ entF.d.style.opacity=crossed?1:0;entP.d.style.opacity=pens&&!crossed?1:0;ent.d.style.opacity=!crossed&&!pens?1:0;});
+// fiches
+function card(t0,t1,o){const s=scene(t0,t1,{tr:'cut',z:10,bgColor:'transparent'});s.node.style.background='transparent';
+ const id='c'+Math.random().toString(36).slice(2,7);
+ const lines=o.lines.map((l,i)=>`<div class="ln ${l[0]}" id="${id}${i}"><span>${l[1]}</span><b>${l[0]=='ok'?'✓':'✗'}</b></div>`).join('');
+ s.el(`<div class="holo" style="border-color:${o.c};box-shadow:0 0 40px ${o.c}88,inset 0 0 30px ${o.c}22"><div class="t">${o.img?`<img src="../kit/${K+o.img}">`:''}<div>${o.nom}<small>${o.sous||''}</small></div></div>${lines}${o.src?`<div class="src">${o.src}</div>`:''}</div>`,{x:540,y:o.y||640,fx:'pop',at:t0+.1});
+ s.fn(t=>o.lines.forEach((l,i)=>{const e=document.getElementById(id+i);if(e)e.classList.toggle('on',t>=l[2]);}));
+ if(o.stamp)s.el(`<div class="stamp">${o.stamp[0]}</div>`,{x:600,y:(o.y||640)+150,fx:'slam',at:o.stamp[1],z:12});
+ return s;}
+// chat
+let s=scene(M('Non. Moi,'),M('Et un agent'),{tr:'cut',z:10});s.node.style.background='transparent';
+s.el('<div class="holo" style="border-color:#7aa7ff"><div class="t">Le chat<small>la fenêtre où tu me parles</small></div><div class="chat"><i style="width:70%;background:#3b5bdb"></i><i style="width:50%;background:#e07a5f;margin-left:auto"></i><i style="width:60%;background:#3b5bdb"></i></div></div>',{x:540,y:640,fx:'pop',at:M('Non. Moi,')+.2});
+s.el('<div class="stamp" style="color:#ffb340;border-color:#ffb340">TU FERMES = JE M\'ARRÊTE</div>',{x:560,y:900,fx:'slam',at:M('Tu fermes,'),z:12});
+// serveur
+s=scene(M('Un agent tourne'),M('Et ça existe'),{tr:'cut',z:10});s.node.style.background='transparent';
+s.el(`<div class="holo" style="border-color:#3ef08a;box-shadow:0 0 40px #3ef08a88"><div class="t"><img src="../kit/${K}agent-robot-serveur.png">Un agent<small>il tourne sur un serveur</small></div><div style="display:flex;justify-content:center;margin-top:10px"><img src="../kit/${K}horloge-24h.png" style="width:200px" id="clk"></div></div>`,{x:540,y:660,fx:'pop',at:M('Un agent tourne')+.1});
+s.el('<div class="pill" style="background:#3ef08a">ALLUMÉ JOUR ET NUIT</div>',{x:540,y:930,fx:'slam',at:M('Allumé jour'),z:12});
+s.fn(t=>{const c=document.getElementById('clk');if(c)c.style.transform=`rotate(${(t-M('Un agent tourne'))*120}deg)`;});
+// Hermès
+card(M('Plein. Hermès,'),M('Suivant. L\'agent'),{nom:'Hermès',sous:'agent libre et gratuit · Nous Research',img:'agent-chevre-cornes.png',c:'#ffd23f',
+ lines:[['ok','Gratuit, open source',M('Gratuit, et')],['ok','Apprend tout seul de ses tâches',M('Gratuit, et')+1],['ko','À installer et configurer toi-même',M('Il faut quand')+.5]],
+ src:'Source : documentation Hermes Agent',stamp:['À CONFIGURER',M('Il faut quand')+1.4]});
+// ChatGPT
+card(M('Suivant. L\'agent'),M('OpenClaw ?'),{nom:'Agent ChatGPT',sous:'OpenAI',img:'agent-points-colores.png',c:'#5b8cff',
+ lines:[['ok','Rien à installer',M('Suivant. L\'agent')+1.2],['ko','Tu restes chez OpenAI',M('Tu restes')],['ko','À relire avant de t\'en servir pour de vrai',M('Et il faut')]],
+ src:'Source : guides d\'usage de l\'agent ChatGPT',stamp:['À RELIRE',M('Et il faut')+1.2]});
+// OpenClaw
+card(M('OpenClaw ?'),M('Et Muse,'),{nom:'OpenClaw',sous:'agent libre · extensions de la communauté',img:'agent-crabe-rouge.png',c:'#ff4d5e',
+ lines:[['ok','Libre, des milliers d\'extensions',M('OpenClaw ?')+.4],['ko','Au pire moment : une extension sur dix piégée',M('Au pire')+.6]],
+ src:'Source : audit Koi Security (registre ClawHub)',stamp:['EXTENSIONS À VÉRIFIER',M('Au pire')+1.8]});
+// Muse
+card(M('Et Muse,'),M('Bon. Pour'),{nom:'Muse',sous:'agent personnel · Meta',img:'agent-mouton-blanc.png',c:'#c08bff',
+ lines:[['ok','Fait tes tâches du quotidien',M('Et Muse,')+.8],['ko','Pensé pour ta vie perso',M('Pour ta vie')],['ko','Seulement aux États-Unis',M('Et seulement')]],
+ src:'Source : annonce de Meta',stamp:['PAS POUR TA BOÎTE',M('Et seulement')+1]});
+// récap
+s=scene(M('Bon. Pour'),M('Alors là…'),{tr:'cut',z:10});s.node.style.background='transparent';
+[['Hermès','agent-chevre-cornes.png','#ffd23f','À configurer'],['Agent ChatGPT','agent-points-colores.png','#5b8cff','À relire'],['OpenClaw','agent-crabe-rouge.png','#ff4d5e','Extensions à vérifier'],['Muse','agent-mouton-blanc.png','#c08bff','Pas pour ta boîte']].forEach(([n,i,c,l],k)=>
+ s.el(`<div class="holo mini" style="border-color:${c};box-shadow:0 0 24px ${c}88"><div class="t"><img src="../kit/${K+i}">${n}</div><div class="ln ko"><span>${l}</span><b>✗</b></div></div>`,{x:300+(k%2)*480,y:560+Math.floor(k/2)*300,fx:'pop',at:M('Bon. Pour')+k*.15}));
+s.el('<div class="pill d">ET POUR DE VRAIS AGENTS DANS MA BOÎTE ?</div>',{x:540,y:1000,fx:'slam',at:M('Bon. Pour')+1.2,z:12});
+// Mika
+s=scene(M('Alors là…'),C.dur+1,{tr:'cut',z:10});s.node.style.background='transparent';
+s.el('<div class="mika"><img src="img/michael.jpg"><b>MIKA</b></div>',{x:540,y:640,fx:'pop',at:M('Ça, faut'),out:M('Écris AGENT')});
+s.el('<div class="pill">DEMANDE À MIKA</div>',{x:540,y:960,fx:'slam',at:M('Ça, faut')+.6,out:M('Écris AGENT')});
+s.el('<div class="holo" style="width:760px;text-align:center;border-color:#FFA500;box-shadow:0 0 40px #FFA50088"><div style="font-size:34px;font-weight:700;color:#9fb3d6">Écris en commentaire</div><div style="font-size:110px;font-weight:900;letter-spacing:-3px">AGENT</div><div style="font-size:30px;color:#9fb3d6">il te répond</div></div>',{x:540,y:640,fx:'pop',at:M('Écris AGENT'),z:14});
+s.el('<div class="pill d">ÉPISODE 52/365</div>',{x:540,y:960,fx:'fade',at:M('Écris AGENT')+1,z:14});
+s.fn(t=>{});
+CAP.show=t=>t<M('Écris AGENT');
+thumbAt(M('Et seulement')+1.3,'<i>Quel agent</i> <i class="k">pour ma boîte ?</i>');
+render(0);
+</script></body></html>

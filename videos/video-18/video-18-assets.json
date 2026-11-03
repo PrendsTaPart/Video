@@ -1,0 +1,62 @@
+{
+  "mcp_planit": {
+    "lecture": [
+      "get_tools",
+      "list_tasks",
+      "list_routines",
+      "list_prompts",
+      "list_active_loops",
+      "list_pending_routine_actions",
+      "get_calendar",
+      "get_kpi_home",
+      "list_mcp_servers",
+      "route_orchestrator",
+      "estimate_routine_cost",
+      "recommend_routines",
+      "list_destructive_tools"
+    ],
+    "ecritures": "aucune"
+  },
+  "mcp_tutoriels_planit": [
+    "tutoriels_lister",
+    "tutoriel_detail(suivre-ses-taches)",
+    "production_etat",
+    "agents_liaisons"
+  ],
+  "depot": "PrendsTaPart/planit-app (README, pubspec, lib/features)",
+  "site": {
+    "lovable": "f0a60f70-93cf-4ab8-a4dc-cfef43ebd9b3",
+    "url": "https://plani-t.fr",
+    "captures": 24,
+    "images": [
+      "planit-icon.png",
+      "agent-orchestrateur/leo/nina/theo/sam/iris/marc.png"
+    ]
+  },
+  "videos_app": {
+    "source": "Académie Plan'It (rapido-software S3)",
+    "tutos": [
+      "11 suivre-ses-taches",
+      "13 brancher-un-serveur-mcp",
+      "04 lire-son-tableau-de-bord"
+    ],
+    "usage": "écrans réels de l'app, compte de démonstration, haut de l'image seulement"
+  },
+  "logos": [
+    "planit.png",
+    "foodeatup.png",
+    "rapidocrm-logo-officiel.png",
+    "rapidocms-logo-officiel.png",
+    "rapidorh.png",
+    "braindcode.png"
+  ],
+  "photo": "braindcode-profil.jpg",
+  "poses": [
+    "surprise.webp"
+  ],
+  "voix": "ElevenLabs Noé 7pDdnNI6PhXmAp0pXFZm",
+  "higgsfield": "aucun plan généré",
+  "non_montre": [
+    "données personnelles (le README cite un rapport de stage : non affiché)"
+  ]
+}

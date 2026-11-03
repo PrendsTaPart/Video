@@ -1,0 +1,55 @@
+1
+00:00:00,600 --> 00:00:02,000
+Le chef : Qui a rempli mon resto ?
+
+2
+00:00:02,250 --> 00:00:02,800
+Caroline : Moi !
+
+3
+00:00:03,100 --> 00:00:05,400
+Le chef : Pas maintenant, j'ai trois plats sur le feu !
+
+4
+00:00:05,600 --> 00:00:06,520
+Caroline : Je décroche.
+
+5
+00:00:08,020 --> 00:00:10,740
+Caroline : Restaurant FoodEatUp, Caroline à l'appareil, bonjour !
+
+6
+00:00:11,090 --> 00:00:13,140
+Client : Bonjour, une table pour quatre ce soir ?
+
+7
+00:00:13,440 --> 00:00:14,910
+Caroline : 20 h, c'est réservé !
+
+8
+00:00:15,610 --> 00:00:16,710
+Client : Deux pizzas à emporter !
+
+9
+00:00:17,010 --> 00:00:19,130
+Caroline : Envoyé en cuisine, prêtes dans 20 minutes !
+
+10
+00:00:19,830 --> 00:00:21,870
+Client : On sera dix, pour un anniversaire !
+
+11
+00:00:22,220 --> 00:00:26,460
+Caroline : Complet à 20 h. 21 h 30, ça vous va ? Je préviens le chef pour le gâteau !
+
+12
+00:00:27,260 --> 00:00:29,200
+Le chef : Tout ça pendant que je cuisinais ?!
+
+13
+00:00:29,550 --> 00:00:32,100
+Caroline : Toi, tu cuisines. Moi, je décroche.
+
+14
+00:00:33,000 --> 00:00:36,680
+Caroline : Tu veux Caroline dans ton resto ? Commente CAROLINE, je t'envoie la démo.

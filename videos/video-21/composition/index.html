@@ -1,0 +1,98 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Vidéo 21 : je forme mes employés IA</title>
+<link rel="stylesheet" href="base.css">
+<style>
+.ring{position:absolute;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.lw{position:absolute;background:#fff;border-radius:22px;display:flex;align-items:center;justify-content:center;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.lw img{max-width:84%;max-height:76%}
+.bot{position:absolute;width:110px;height:110px;border-radius:55px;background:linear-gradient(135deg,#007BFF,#0b4fa8);border:4px solid #fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:30px;box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.bot:before,.bot:after{content:"";position:absolute;top:38px;width:14px;height:14px;border-radius:7px;background:#fff}
+.bot:before{left:32px}.bot:after{right:32px}
+.bad{position:absolute;background:#4c1515;color:#fecaca;border:2px solid #ef4444;border-radius:16px;padding:12px 20px;font-weight:700;font-size:28px;white-space:nowrap}
+.pil{position:absolute;width:465px;height:150px;border-radius:24px;background:var(--surf);border:2px solid #2f475c;padding:20px 24px}
+.pil b{display:block;font-size:34px}.pil span{font-size:22px;color:var(--grey)}
+.step{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:20px}
+.step .n{flex:none;width:80px;height:80px;border-radius:40px;background:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:36px}
+.step .n.o{background:var(--orange);color:#0F1A23}
+.step b{font-size:40px}
+.tool{position:absolute;left:60px;width:960px;display:flex;align-items:center;gap:16px;background:var(--surf);border:2px solid #2f475c;border-radius:18px;padding:14px 20px}
+.tool code{font-family:'DejaVu Sans Mono',monospace;font-size:27px}
+.tool span{margin-left:auto;font-weight:700;font-size:19px;border-radius:999px;padding:6px 14px}
+.qz{position:absolute;left:60px;width:960px;background:var(--cream);color:var(--night);border-radius:20px;padding:16px 22px;display:flex;align-items:center;gap:16px;font-size:27px;font-weight:600}
+.qz i{font-style:normal;margin-left:auto;flex:none;background:#14532d;color:#86efac;border-radius:999px;padding:6px 14px;font-size:20px;font-weight:700}
+.sc{position:absolute;left:60px;width:960px;border-radius:22px;padding:20px 24px;font-size:24px}
+.sc .p{font-family:'DejaVu Sans Mono',monospace;font-size:21px;line-height:1.45;color:#d6e2ec;white-space:pre-wrap}
+.sc .s{position:absolute;right:24px;top:16px;font-weight:700;font-size:44px}
+.k4{position:absolute;width:465px;height:120px;border-radius:22px;background:var(--surf);border:2px solid #2f475c;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:32px;text-align:center}
+.demo{position:absolute;background:#4a3410;color:var(--orange);border-radius:999px;padding:8px 20px;font-weight:700;font-size:21px}
+.tab .scr img{object-position:top}
+</style></head><body>
+<div id="stage">
+  <div class="scene" id="s0"><div id="s0b"></div>
+    <div class="big" id="s0a" style="top:640px;font-size:66px;line-height:1.1">Tout le monde crée<br>des agents IA.</div>
+    <div class="big" id="s0q" style="top:880px;font-size:74px;line-height:1.1;color:var(--orange)">Mais qui leur apprend<br>leur travail ?</div></div>
+  <div class="scene" id="s1"><img class="pose" id="s1m" src="a/po/explique.webp" onerror="this.src='a/po/presente.webp'" style="left:270px;top:760px;width:540px">
+    <div class="big" id="s1a" style="top:300px;font-size:84px;line-height:1.05">Je forme<br><span style="color:var(--orange)">mes employés IA</span></div></div>
+  <div class="scene" id="s2"><div class="big" id="s2a" style="top:200px;font-size:58px;line-height:1.1">Sans formation,<br><span style="color:var(--orange)">n'importe quoi !</span></div><div id="s2b"></div>
+    <div class="demo" id="s2d" style="left:60px;top:1300px">Illustration · erreurs typiques d'un agent non formé</div></div>
+  <div class="scene" id="s3"><div class="chip">FoodEatUp Academy</div>
+    <div class="tab" id="s3t" style="left:270px;top:220px;width:540px;height:760px"><div class="scr"><img id="s3i" src="a/img/formations-0.png"></div></div>
+    <div class="pil" id="pl0" style="left:60px;top:1020px"><b>Formations</b><span>missions, quiz, routines</span></div>
+    <div class="pil" id="pl1" style="left:555px;top:1020px"><b>Connaissances</b><span>mémoire validée par le responsable</span></div>
+    <div class="pil" id="pl2" style="left:60px;top:1190px"><b>Prompts</b><span>6 blocs vérifiés</span></div>
+    <div class="pil" id="pl3" style="left:555px;top:1190px"><b>Compétences</b><span>skills et connecteurs MCP</span></div>
+    <div class="real" style="left:70px;top:1370px">formation.foodeatup.fr · captures publiques</div></div>
+  <div class="scene" id="s4"><div class="chip">1 · Apprendre</div>
+    <div class="abs" id="s4g" style="left:60px;top:190px;display:flex;align-items:center;gap:22px"><div class="bot" style="position:relative">S</div><div><b style="font-size:40px;display:block">Agent Ruptures de stock</b><span style="font-size:24px;color:var(--grey)">agent de démonstration</span></div></div>
+    <div class="term" id="s4t" style="left:60px;top:360px;width:960px"><div class="bar">MCP FoodEatUp Formation · learn_task · appel réel<span>● 27/10</span></div><pre id="s4pre" style="font-size:23px"></pre></div>
+    <div class="step" id="st0" style="top:780px"><div class="n">1</div><b>Produits sous le seuil</b></div>
+    <div class="step" id="st1" style="top:900px"><div class="n">2</div><b>Liste d'achats</b></div>
+    <div class="step" id="st2" style="top:1020px"><div class="n">3</div><b>Commandes préparées par fournisseur</b></div>
+    <div class="step" id="st3" style="top:1140px"><div class="n o">4</div><b>L'humain envoie</b></div>
+    <div class="real" style="left:70px;top:1270px">Mission F3 « Stocks et commandes fournisseurs » · get_mission</div></div>
+  <div class="scene" id="s5"><div class="chip">2 · S'équiper</div>
+    <div class="title" style="font-size:56px">Les bons outils,<br><b>et seulement ceux-là</b></div>
+    <div class="tool" id="tl0" style="top:400px"><code>list_low_stocks</code><span style="background:#14532d;color:#86efac">lire</span></div>
+    <div class="tool" id="tl1" style="top:510px"><code>get_shopping_list</code><span style="background:#14532d;color:#86efac">lire</span></div>
+    <div class="tool" id="tl2" style="top:620px"><code>list_suppliers</code><span style="background:#14532d;color:#86efac">lire</span></div>
+    <div class="tool" id="tl3" style="top:730px"><code>create_orders_from_shopping_list</code><span style="background:#4a3410;color:var(--orange)">prépare</span></div>
+    <div class="tool" id="tl4" style="top:860px;border-color:#ef4444"><code style="color:#fca5a5">envoi de la commande</code><span style="background:#4c1515;color:#fca5a5">humain</span></div>
+    <div class="real" style="left:70px;top:1000px">Outils du MCP FoodEatUp cités par la mission F3</div></div>
+  <div class="scene" id="s6"><div class="chip">3 · S'entraîner · 4 · Être évalué</div>
+    <div class="qz" id="qz0" style="top:200px">Qui envoie la commande fournisseur ? <b>Un humain</b><i>✓ juste</i></div>
+    <div class="qz" id="qz1" style="top:310px">Quel outil liste les produits sous le seuil ? <b>list_low_stocks</b><i>✓ juste</i></div>
+    <div class="qz" id="qz2" style="top:420px">Que fait create_orders… ? <b>Prépare</b><i>✓ juste</i></div>
+    <div class="real" id="qzr" style="left:70px;top:540px">get_quiz F3 · check_quiz_answer : réponses corrigées par le serveur</div>
+    <div class="sc" id="sc0" style="top:620px;background:#2a1414;border:2px solid #ef4444"><div class="p">« Analyse les stocks et prépare
+les achats fournisseurs. »</div><div class="s" style="color:#fca5a5">0/6</div></div>
+    <div class="sc" id="sc1" style="top:800px;background:#0f2a1b;border:2px solid #22c55e"><div class="p">Objectif : produits qui vont manquer…
+Sources : list_low_stocks, get_shopping_list…
+Limite : jamais de commande envoyée
+Tu rends : liste, quantités, fournisseur
+Critère d'arrêt : tout traité, ou « rien »
+Ne publie rien, n'envoie rien : attends mon accord.</div><div class="s" style="color:#86efac">6/6</div></div>
+    <div class="real" style="left:70px;top:1250px">check_routine_prompt · appel réel · Objectif, Sources, Limite, Rendu, Arrêt, Accord</div></div>
+  <div class="scene" id="s7"><div class="chip">Prêt pour une mission encadrée</div>
+    <div class="k4" id="k0" style="left:60px;top:260px">Quoi faire</div><div class="k4" id="k1" style="left:555px;top:260px">Comment</div>
+    <div class="k4" id="k2" style="left:60px;top:410px">Avec quels outils</div><div class="k4" id="k3" style="left:555px;top:410px">Vérifier le résultat</div>
+    <div class="badge" id="k4" style="left:60px;top:600px;right:60px;text-align:center;font-size:40px">La validation finale reste humaine</div>
+    <div class="real" id="k5" style="left:70px;top:740px">verify_practical_result : « la vérification finale reste humaine » · autonomie Aperçu ou Brouillon</div></div>
+  <div class="scene" id="s8"><div class="big" id="s8a" style="top:520px;font-size:50px;color:var(--grey)">Avant, je formais des employés<br>à mes logiciels.</div>
+    <div class="big" id="s8b" style="top:760px;font-size:70px;line-height:1.1">Maintenant, je forme<br>aussi mes<br><span style="color:var(--orange)">employés IA !</span></div></div>
+  <div class="scene" id="s9"><div id="s9b"></div>
+    <div class="ring" id="s9p" style="left:390px;top:520px;width:300px;height:300px"><img src="a/img/braindcode-profil.jpg"></div>
+    <div class="quote" id="s9q" style="top:1000px;font-size:38px;text-align:center"><b>ET TOI ?</b>Tu formerais ton premier agent IA à quel métier ?</div>
+    <div class="abs" id="s9l" style="left:0;right:0;top:1250px;display:flex;justify-content:center;gap:22px"><div class="lw" style="position:static;width:300px;height:100px"><img src="a/lg/foodeatup.png"></div><div class="lw" style="position:static;width:320px;height:100px"><img src="a/lg/braindcode.png"></div></div></div>
+  <div class="scene" id="thumb">
+    <div class="big" style="top:110px;font-size:40px;letter-spacing:6px;color:var(--orange)">VIDÉO 21</div>
+    <div class="big" style="top:180px;font-size:118px;line-height:1">JE FORME<br>MES EMPLOYÉS<br><span style="color:var(--orange)">IA !</span></div>
+    <img class="pose" src="a/po/presente.webp" style="left:-40px;top:740px;width:640px">
+    <div id="thb"></div>
+    <div class="lw" style="left:60px;top:1600px;width:420px;height:130px"><img src="a/lg/foodeatup.png"></div>
+    <div class="lw" style="left:540px;top:1600px;width:480px;height:130px"><img src="a/lg/braindcode.png"></div>
+  </div>
+  <div id="logos"><div class="lp"><img src="a/lg/braindcode.png" style="height:30px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>

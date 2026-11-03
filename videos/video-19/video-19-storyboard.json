@@ -1,0 +1,99 @@
+{
+  "video": 19,
+  "duree_s": 68,
+  "format": "1080x1920",
+  "voix": "ElevenLabs Noé, eleven_v4",
+  "charte": "Villa Beach : noir #15130F, or #CBA86B, crème #F3EBDD (relevés dans src/styles.css)",
+  "sequences": [
+    {
+      "t": [
+        0,
+        5.16
+      ],
+      "sequence": "Accroche",
+      "visuel": "« Un site que mon client pilote avec l'IA », téléphone avec l'accueil réel, logos Claude et OpenAI"
+    },
+    {
+      "t": [
+        5.16,
+        9.26
+      ],
+      "sequence": "Villa Beach",
+      "visuel": "Film réel de la terrasse (asset du site), monogramme VB"
+    },
+    {
+      "t": [
+        9.26,
+        13.6
+      ],
+      "sequence": "Lovable",
+      "visuel": "Capture du projet Lovable, logo Lovable, pile React/TanStack/Supabase"
+    },
+    {
+      "t": [
+        13.6,
+        22.08
+      ],
+      "sequence": "Connexions métier",
+      "visuel": "FoodEatUp (en ligne), RapidoCRM (codé), Caroline (à finaliser) + capture réelle de /carte"
+    },
+    {
+      "t": [
+        22.08,
+        26.65
+      ],
+      "sequence": "MCP Villa Beach",
+      "visuel": "18 familles d'outils du serveur villa-beach-admin"
+    },
+    {
+      "t": [
+        26.65,
+        34.75
+      ],
+      "sequence": "Demandes en langage naturel",
+      "visuel": "7 demandes et l'outil exact ; « pas de blog → page éditoriale »"
+    },
+    {
+      "t": [
+        34.75,
+        43.75
+      ],
+      "sequence": "Démonstration centrale",
+      "visuel": "Demande du propriétaire → appels MCP prévus → événement en brouillon + vrai formulaire → « Publier ? attend son accord » (démonstration, rien n'est publié)"
+    },
+    {
+      "t": [
+        43.75,
+        50.12
+      ],
+      "sequence": "Autorisations",
+      "visuel": "Compte admin OAuth, journal mcp_audit, confirmer=true, création désactivée par défaut"
+    },
+    {
+      "t": [
+        50.12,
+        56.56
+      ],
+      "sequence": "Tunnel commercial",
+      "visuel": "Visiteur → formulaire → demande → qualification → suivi → réservation ou devis ; pages par occasion"
+    },
+    {
+      "t": [
+        56.56,
+        61.5
+      ],
+      "sequence": "Punchline",
+      "visuel": "Avant / maintenant"
+    },
+    {
+      "t": [
+        61.5,
+        68
+      ],
+      "sequence": "Conclusion",
+      "visuel": "Michael, « la nouvelle génération de sites Internet », logos VB, Claude, OpenAI, Lovable"
+    }
+  ],
+  "sfx": "whoosh aux révélations, tick sur les autorisations, pop sur les cartes",
+  "sous_titres": "Poppins SemiBold 50 incrustés"
+}

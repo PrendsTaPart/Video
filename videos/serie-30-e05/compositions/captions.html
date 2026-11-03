@@ -1,0 +1,208 @@
+<template id="captions-template" data-composition-id="captions" data-width="1080" data-height="1920">
+<script src="assets/vendor/gsap.min.js"></script>
+
+
+<style data-brand-tokens>
+      :root {
+      --cap-band-top: 1600px;
+      --cap-band-height: 320px;
+      --cap-accent: #5A67F2;
+      --cap-accent-2: #5A67F2;
+      }
+    </style>
+
+<style>
+  #captions-root {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  .caption-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    pointer-events: none;
+  }
+  /* the keep-out band, from captionBand(H) — frame content stays above it */
+  .caption-stage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: var(--cap-band-top, 900px);
+    height: var(--cap-band-height, 180px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .caption-group {
+    /* every group is absolutely stacked over the SAME band — exactly one shown at a
+       time via opacity. Must be absolute: in-flow groups would lay out side-by-side. */
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+  }
+
+  /* THE tinted card — 4% cobalt fill, 1.5px 20%-cobalt border, soft 14px corners,
+     NO shadow (the tinted card does the lift; cast depth is forbidden) */
+  .caption-pill {
+    max-width: 78%;
+    padding: 20px 44px 24px;
+    background: color-mix(in srgb, var(--cap-accent, #1e2bfa) 4%, var(--cap-canvas, #fdfae7));
+    border: 1.5px solid color-mix(in srgb, var(--cap-accent, #1e2bfa) 20%, transparent);
+    border-radius: 14px;
+  }
+  .caption-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.1em 0.34em;
+    font-family: var(--font-display, "Space Grotesk"), system-ui, sans-serif;
+    font-weight: 600;
+    font-size: clamp(40px, 4.4vw, 58px);
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+  }
+
+  /* upcoming — muted gray, no chip */
+  .caption-word {
+    display: inline-block;
+    padding: 0 0.18em;
+    border-radius: 0.32em;
+    color: color-mix(in srgb, var(--cap-ink, #111111) 52%, var(--cap-canvas, #fdfae7));
+  }
+  /* current word — THE solid cobalt chip (the single-accent gesture; pill-rounded
+     fill, NO shadow), cream reading on top */
+  .caption-word.is-active {
+    color: var(--cap-canvas, #fdfae7);
+    background: var(--cap-accent, #1e2bfa);
+    box-shadow: none;
+  }
+  /* already spoken — solid near-black ink, chip cleared */
+  .caption-word.is-spoken {
+    color: var(--cap-ink, #111111);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  /* optional per-word accents (dormant until a word-classer tags them) */
+  /* brand / key term — cobalt, the system's one accent on a key word */
+  .caption-word.cap-brand {
+    color: var(--cap-accent, #1e2bfa);
+  }
+  /* numerals / data — cobalt 700, the figure voice */
+  .caption-word.cap-num {
+    font-family: var(--font-display, "Space Grotesk"), system-ui, sans-serif;
+    font-weight: 700;
+    color: var(--cap-accent, #1e2bfa);
+  }
+  /* emphasis — a directional-red hairline underline (inline only, never a fill) */
+  .caption-word.cap-cta {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--cap-accent-2, #dc2626);
+    text-underline-offset: 0.1em;
+  }
+
+  @media (max-aspect-ratio: 9/16) {
+    .caption-pill {
+      max-width: 92%;
+    }
+    .caption-line {
+      font-size: clamp(34px, 5.4vw, 48px);
+    }
+  }
+</style>
+
+<div
+  id="captions-root"
+  data-composition-id="captions"
+  data-timeline-locked
+  data-start="0"
+  data-duration="24.52"
+  data-fps="30"
+  data-width="1080"
+  data-height="1920"
+>
+  <div class="caption-layer" aria-hidden="true">
+    <div id="caption-stage" class="caption-stage"></div>
+  </div>
+</div>
+
+<script>
+  // captions.mjs injects the engine's scene-aware groups + real duration here.
+  var GROUPS = [{"id":"caption-group-0","frame":1,"start":0,"end":1.308,"text":"Le coach business","words":[{"id":"caption-word-0-0","text":"Le","start":0,"end":0.436},{"id":"caption-word-0-1","text":"coach","start":0.436,"end":0.872},{"id":"caption-word-0-2","text":"business","start":0.872,"end":1.308}]},{"id":"caption-group-1","frame":1,"start":1.308,"end":2.181,"text":"plan t'interviewe,","words":[{"id":"caption-word-1-0","text":"plan","start":1.308,"end":1.745},{"id":"caption-word-1-1","text":"t'interviewe,","start":1.745,"end":2.181}]},{"id":"caption-group-2","frame":1,"start":2.181,"end":3.489,"text":"section par section.","words":[{"id":"caption-word-2-0","text":"section","start":2.181,"end":2.617},{"id":"caption-word-2-1","text":"par","start":2.617,"end":3.053},{"id":"caption-word-2-2","text":"section.","start":3.053,"end":3.489}]},{"id":"caption-group-3","frame":1,"start":3.489,"end":3.925,"text":"Marché,","words":[{"id":"caption-word-3-0","text":"Marché,","start":3.489,"end":3.925}]},{"id":"caption-group-4","frame":1,"start":3.925,"end":4.361,"text":"offre,","words":[{"id":"caption-word-4-0","text":"offre,","start":3.925,"end":4.361}]},{"id":"caption-group-5","frame":1,"start":4.361,"end":5.234,"text":"modèle économique,","words":[{"id":"caption-word-5-0","text":"modèle","start":4.361,"end":4.797},{"id":"caption-word-5-1","text":"économique,","start":4.797,"end":5.234}]},{"id":"caption-group-6","frame":1,"start":5.234,"end":5.67,"text":"prévisions.","words":[{"id":"caption-word-6-0","text":"prévisions.","start":5.234,"end":5.67}]},{"id":"caption-group-7","frame":1,"start":5.67,"end":6.978,"text":"Il ne remplit","words":[{"id":"caption-word-7-0","text":"Il","start":5.67,"end":6.106},{"id":"caption-word-7-1","text":"ne","start":6.106,"end":6.542},{"id":"caption-word-7-2","text":"remplit","start":6.542,"end":6.978}]},{"id":"caption-group-8","frame":1,"start":6.978,"end":8.286,"text":"pas de cases,","words":[{"id":"caption-word-8-0","text":"pas","start":6.978,"end":7.414},{"id":"caption-word-8-1","text":"de","start":7.414,"end":7.85},{"id":"caption-word-8-2","text":"cases,","start":7.85,"end":8.286}]},{"id":"caption-group-9","frame":1,"start":8.286,"end":9.595,"text":"il te fait","words":[{"id":"caption-word-9-0","text":"il","start":8.286,"end":8.723},{"id":"caption-word-9-1","text":"te","start":8.723,"end":9.159},{"id":"caption-word-9-2","text":"fait","start":9.159,"end":9.595}]},{"id":"caption-group-10","frame":1,"start":9.595,"end":10.031,"text":"réfléchir.","words":[{"id":"caption-word-10-0","text":"réfléchir.","start":9.595,"end":10.031}]},{"id":"caption-group-11","frame":2,"start":10.031,"end":10.817,"text":"Tu lances","words":[{"id":"caption-word-11-0","text":"Tu","start":10.031,"end":10.364},{"id":"caption-word-11-1","text":"lances","start":10.364,"end":10.697}]},{"id":"caption-group-12","frame":2,"start":11.029,"end":11.695,"text":"aide-moi à","words":[{"id":"caption-word-12-0","text":"aide-moi","start":11.029,"end":11.362},{"id":"caption-word-12-1","text":"à","start":11.362,"end":11.695}]},{"id":"caption-group-13","frame":2,"start":11.695,"end":12.361,"text":"créer mon","words":[{"id":"caption-word-13-0","text":"créer","start":11.695,"end":12.028},{"id":"caption-word-13-1","text":"mon","start":12.028,"end":12.361}]},{"id":"caption-group-14","frame":2,"start":12.361,"end":12.694,"text":"entreprise.","words":[{"id":"caption-word-14-0","text":"entreprise.","start":12.361,"end":12.694}]},{"id":"caption-group-15","frame":2,"start":12.694,"end":13.359,"text":"Et la","words":[{"id":"caption-word-15-0","text":"Et","start":12.694,"end":13.026},{"id":"caption-word-15-1","text":"la","start":13.026,"end":13.359}]},{"id":"caption-group-16","frame":2,"start":13.359,"end":14.025,"text":"conversation commence.","words":[{"id":"caption-word-16-0","text":"conversation","start":13.359,"end":13.692},{"id":"caption-word-16-1","text":"commence.","start":13.692,"end":14.025}]},{"id":"caption-group-17","frame":3,"start":14.025,"end":14.577,"text":"À Léa,","words":[{"id":"caption-word-17-0","text":"À","start":14.025,"end":14.301},{"id":"caption-word-17-1","text":"Léa,","start":14.301,"end":14.577}]},{"id":"caption-group-18","frame":3,"start":14.577,"end":15.13,"text":"il pose","words":[{"id":"caption-word-18-0","text":"il","start":14.577,"end":14.854},{"id":"caption-word-18-1","text":"pose","start":14.854,"end":15.13}]},{"id":"caption-group-19","frame":3,"start":15.13,"end":15.682,"text":"la question","words":[{"id":"caption-word-19-0","text":"la","start":15.13,"end":15.406},{"id":"caption-word-19-1","text":"question","start":15.406,"end":15.682}]},{"id":"caption-group-20","frame":3,"start":15.682,"end":16.355,"text":"qui pique","words":[{"id":"caption-word-20-0","text":"qui","start":15.682,"end":15.958},{"id":"caption-word-20-1","text":"pique","start":15.958,"end":16.235}]},{"id":"caption-group-21","frame":3,"start":16.511,"end":17.063,"text":"ton marché,","words":[{"id":"caption-word-21-0","text":"ton","start":16.511,"end":16.787},{"id":"caption-word-21-1","text":"marché,","start":16.787,"end":17.063}]},{"id":"caption-group-22","frame":3,"start":17.063,"end":17.616,"text":"c'est toute","words":[{"id":"caption-word-22-0","text":"c'est","start":17.063,"end":17.339},{"id":"caption-word-22-1","text":"toute","start":17.339,"end":17.616}]},{"id":"caption-group-23","frame":3,"start":17.616,"end":18.168,"text":"la ville,","words":[{"id":"caption-word-23-0","text":"la","start":17.616,"end":17.892},{"id":"caption-word-23-1","text":"ville,","start":17.892,"end":18.168}]},{"id":"caption-group-24","frame":3,"start":18.168,"end":18.72,"text":"ou les","words":[{"id":"caption-word-24-0","text":"ou","start":18.168,"end":18.444},{"id":"caption-word-24-1","text":"les","start":18.444,"end":18.72}]},{"id":"caption-group-25","frame":3,"start":18.72,"end":19.273,"text":"trois mille","words":[{"id":"caption-word-25-0","text":"trois","start":18.72,"end":18.997},{"id":"caption-word-25-1","text":"mille","start":18.997,"end":19.273}]},{"id":"caption-group-26","frame":3,"start":19.273,"end":19.825,"text":"habitants à","words":[{"id":"caption-word-26-0","text":"habitants","start":19.273,"end":19.549},{"id":"caption-word-26-1","text":"à","start":19.549,"end":19.825}]},{"id":"caption-group-27","frame":3,"start":19.825,"end":20.377,"text":"dix minutes","words":[{"id":"caption-word-27-0","text":"dix","start":19.825,"end":20.101},{"id":"caption-word-27-1","text":"minutes","start":20.101,"end":20.377}]},{"id":"caption-group-28","frame":3,"start":20.377,"end":21.05,"text":"à pied","words":[{"id":"caption-word-28-0","text":"à","start":20.377,"end":20.654},{"id":"caption-word-28-1","text":"pied","start":20.654,"end":20.93}]},{"id":"caption-group-29","frame":3,"start":21.206,"end":21.758,"text":"En une","words":[{"id":"caption-word-29-0","text":"En","start":21.206,"end":21.482},{"id":"caption-word-29-1","text":"une","start":21.482,"end":21.758}]},{"id":"caption-group-30","frame":3,"start":21.758,"end":22.035,"text":"heure,","words":[{"id":"caption-word-30-0","text":"heure,","start":21.758,"end":22.035}]},{"id":"caption-group-31","frame":3,"start":22.035,"end":22.587,"text":"elle a","words":[{"id":"caption-word-31-0","text":"elle","start":22.035,"end":22.311},{"id":"caption-word-31-1","text":"a","start":22.311,"end":22.587}]},{"id":"caption-group-32","frame":3,"start":22.587,"end":23.139,"text":"un business","words":[{"id":"caption-word-32-0","text":"un","start":22.587,"end":22.863},{"id":"caption-word-32-1","text":"business","start":22.863,"end":23.139}]},{"id":"caption-group-33","frame":3,"start":23.139,"end":23.692,"text":"plan solide.","words":[{"id":"caption-word-33-0","text":"plan","start":23.139,"end":23.416},{"id":"caption-word-33-1","text":"solide.","start":23.416,"end":23.692}]},{"id":"caption-group-34","frame":3,"start":23.692,"end":24.64,"text":"Pas un copier-coller.","words":[{"id":"caption-word-34-0","text":"Pas","start":23.692,"end":23.968},{"id":"caption-word-34-1","text":"un","start":23.968,"end":24.244},{"id":"caption-word-34-2","text":"copier-coller.","start":24.244,"end":24.52}]}];
+  var DURATION = 24.52;
+
+  (function () {
+    var stage = document.getElementById("caption-stage");
+
+    // build DOM: one .caption-group per group, .caption-word per word
+    GROUPS.forEach(function (group, g) {
+      var groupEl = document.createElement("div");
+      groupEl.className = "caption-group";
+      groupEl.id = "caption-group-" + g;
+      var pill = document.createElement("div");
+      pill.className = "caption-pill";
+      var line = document.createElement("div");
+      line.className = "caption-line";
+      (group.words || []).forEach(function (w, i) {
+        var span = document.createElement("span");
+        span.className = "caption-word";
+        span.id = "caption-word-" + g + "-" + i;
+        span.textContent = String(w.text);
+        line.appendChild(span);
+      });
+      pill.appendChild(line);
+      groupEl.appendChild(pill);
+      stage.appendChild(groupEl);
+    });
+
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+
+    GROUPS.forEach(function (group, g) {
+      var groupEl = document.getElementById("caption-group-" + g);
+      var words = group.words || [];
+      var next = GROUPS[g + 1];
+      var isLast = g === GROUPS.length - 1;
+      var start = Math.max(0, Number(group.start));
+      var end = isLast ? DURATION : Math.min(Number(next.start), Number(group.end) + 0.3);
+      if (end <= start) end = start + 0.01;
+
+      // group on/off — exactly one group visible at a time
+      tl.set(groupEl, { opacity: 1 }, start);
+      tl.set(groupEl, { opacity: 0 }, end);
+
+      // 3-state karaoke via className SETS — seek-safe (gsap.set applies on the
+      // engine's frame-by-frame seek; .call callbacks would NOT fire).
+      words.forEach(function (w, i) {
+        var el = document.getElementById("caption-word-" + g + "-" + i);
+        var at = Math.max(start, Number(w.start));
+        tl.set(el, { className: "caption-word" }, start); // upcoming (also resets on reverse-seek)
+        tl.set(el, { className: "caption-word is-active" }, at); // current
+        tl.fromTo(el, { scale: 0.985 }, { scale: 1, duration: 0.18, ease: "power1.out" }, at);
+        if (i + 1 < words.length) {
+          var nextAt = Math.max(start, Number(words[i + 1].start));
+          tl.set(el, { className: "caption-word is-spoken" }, nextAt); // demote when next activates
+        }
+      });
+      if (words.length) {
+        var lastEl = document.getElementById("caption-word-" + g + "-" + (words.length - 1));
+        var lastSpoken = Math.min(end, Number(words[words.length - 1].end) + 0.1);
+        tl.set(lastEl, { className: "caption-word is-spoken" }, lastSpoken);
+      }
+    });
+
+    // full-span anchor so the sub-comp timeline spans the whole video
+    tl.to({}, { duration: DURATION }, 0);
+    window.__timelines["captions"] = tl;
+  })();
+</script>
+
+<style>
+  .caption-line { line-height: 1.1 !important; }
+</style>
+</template>

@@ -1,0 +1,34 @@
+{
+  "sources": {
+    "lovable": "ddd55519-8ef4-4980-ae85-98163e280573 (commit a3654c4, 16/10)",
+    "github": "PrendsTaPart/villa-beach-luxe (a6b3bc0, 24/09, en retard sur Lovable)",
+    "site": "https://villabeach.foodeatup.fr"
+  },
+  "fichiers_lus": [
+    "src/lib/mcp/index.ts",
+    "src/lib/mcp/tools/agenda.ts",
+    "src/lib/mcp/tools/formulaires.ts",
+    "src/routes/api/public/site-mcp.ts",
+    "src/lib/contact-info.ts",
+    "src/lib/foodeatup.functions.ts",
+    "src/lib/crm.server.ts",
+    "docs/mcp-villa-beach.md",
+    "docs/connecteurs-mcp.md"
+  ],
+  "captures_site": [
+    "accueil (3 plans)",
+    "carte",
+    "formulaire anniversaire",
+    "pages par occasion"
+  ],
+  "video_site": "terrasse-9x16.mp4 (asset Lovable du site)",
+  "logo_client": "villa-beach-monogram.png (asset du site)",
+  "logos": "dépôt video-20/assets/logos (FoodEatUp, RapidoCRM, BraindCode, Lovable, Claude, OpenAI)",
+  "photo": "braindcode-profil.jpg",
+  "voix": "ElevenLabs Noé 7pDdnNI6PhXmAp0pXFZm",
+  "non_utilise": [
+    "page Agenda (entrée de test visible)",
+    "données de demandes et contacts"
+  ],
+  "higgsfield": "aucun plan généré"
+}

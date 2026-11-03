@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E8 F3 — 120 tâches Kanban (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+
+        .eyebrow { position: absolute; left: 0; right: 0; top: 180px; text-align: center; z-index: 4; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 36px; letter-spacing: 0.08em; text-transform: uppercase; color: #5a67f2; opacity: 0; margin: 0; will-change: transform, opacity; }
+        .big { position: absolute; left: 0; right: 0; top: 250px; text-align: center; z-index: 4; }
+        .big b { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 150px; line-height: 1; color: #5a67f2; opacity: 0; display: inline-block; will-change: transform, opacity; }
+        .big span { display: block; margin-top: 2px; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 44px; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+
+        .board { position: absolute; left: 70px; top: 620px; width: 940px; z-index: 3; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+        .col { background: #eef1fb; border-radius: 20px; padding: 20px 16px; opacity: 0; will-change: transform, opacity; }
+        .col h5 { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 28px; color: #566472; margin: 0 0 16px; text-align: center; }
+        .col .c { background: #fff; border: 1.5px solid rgba(27,42,65,0.08); border-radius: 14px; padding: 16px 18px; margin-bottom: 12px; font-family: "Inter", sans-serif; font-weight: 600; font-size: 27px; color: #1b2a41; }
+        .col .c i { display: block; width: 40px; height: 8px; border-radius: 4px; background: #5a67f2; margin-bottom: 10px; }
+        .col.done .c i { background: #059669; }
+
+        .foot { position: absolute; left: 50%; top: 1560px; transform: translateX(-50%); z-index: 4; padding: 24px 48px; background: #5a67f2; border-radius: 100px; opacity: 0; white-space: nowrap; box-shadow: 0 20px 50px rgba(90,103,242,0.35); will-change: transform, opacity; }
+        .foot b { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 46px; color: #fff; }
+      </style>
+
+      <div id="root" data-composition-id="03-cas" data-width="1080" data-height="1920" data-duration="11.088">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="10.588" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="10.588" data-track-index="1" style="position:absolute; inset:0;">
+          <p class="eyebrow" id="eyebrow">Le plan de Léa · dans RapidoRH</p>
+          <div class="big"><b id="num">120</b><span id="numlbl">tâches, sur un Kanban clair</span></div>
+          <div class="board">
+            <div class="col" id="k1"><h5>À faire</h5><div class="c"><i></i>Trouver le local</div><div class="c"><i></i>Déposer les statuts</div></div>
+            <div class="col" id="k2"><h5>En cours</h5><div class="c"><i></i>Recruter l'équipe</div></div>
+            <div class="col done" id="k3"><h5>Fait</h5><div class="c"><i></i>Choisir le nom</div><div class="c"><i></i>Étude de zone</div></div>
+          </div>
+          <div class="foot" id="foot"><b>Du rêve à la to-do</b></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#eyebrow", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.1);
+        tl.fromTo("#num", { scale: 0.4, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.65, ease: "back.out(1.7)" }, 0.7);
+        tl.fromTo("#numlbl", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 1.4);
+        tl.fromTo("#k1", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 3.0);
+        tl.fromTo("#k2", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 4.0);
+        tl.fromTo("#k3", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 5.0);
+        tl.fromTo("#foot", { y: 18, scale: 0.9, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.5)" }, 7.6);
+        window.__timelines["03-cas"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Inter ExtraBold,40,&H00FFFFFF,&H00FFFFFF,&H00221608,&H96221608,0,0,0,0,100,100,0,0,3,12,0,2,200,200,28,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.30,0:00:02.00,Sub,,0,0,0,,{\fad(80,60)}Tout le monde parle d'agents IA.
+Dialogue: 0,0:00:02.00,0:00:03.80,Sub,,0,0,0,,{\fad(80,60)}Mais comment faire pour qu'une IA ne se contente plus
+Dialogue: 0,0:00:03.80,0:00:04.80,Sub,,0,0,0,,{\fad(80,60)}de répondre à des questions,
+Dialogue: 0,0:00:04.80,0:00:07.18,Sub,,0,0,0,,{\fad(80,60)}et puisse réellement travailler avec nos logiciels ?
+Dialogue: 0,0:00:07.18,0:00:09.82,Sub,,0,0,0,,{\fad(80,60)}Un agent IA performant, ce n'est pas seulement un bon prompt.
+Dialogue: 0,0:00:09.82,0:00:12.12,Sub,,0,0,0,,{\fad(80,60)}C'est un rôle, des compétences, des outils,
+Dialogue: 0,0:00:12.12,0:00:13.70,Sub,,0,0,0,,{\fad(80,60)}des règles et des automatismes.
+Dialogue: 0,0:00:13.70,0:00:15.53,Sub,,0,0,0,,{\fad(80,60)}Six briques. Voyons-les une par une.
+Dialogue: 0,0:00:16.62,0:00:19.96,Sub,,0,0,0,,{\fad(80,60)}Première brique : les MCP, pour Model Context Protocol.
+Dialogue: 0,0:00:19.96,0:00:21.06,Sub,,0,0,0,,{\fad(80,60)}Ce sont les mains de l'IA :
+Dialogue: 0,0:00:21.06,0:00:24.08,Sub,,0,0,0,,{\fad(80,60)}un protocole qui lui permet de se brancher sur les outils de l'entreprise.
+Dialogue: 0,0:00:24.08,0:00:26.20,Sub,,0,0,0,,{\fad(80,60)}Dans le plugin FoodEatUp, une seule ligne de configuration
+Dialogue: 0,0:00:26.20,0:00:28.44,Sub,,0,0,0,,{\fad(80,60)}pointe vers le serveur MCP du logiciel.
+Dialogue: 0,0:00:28.44,0:00:31.24,Sub,,0,0,0,,{\fad(80,60)}L'agent peut alors, par exemple, consulter les stocks d'un restaurant.
+Dialogue: 0,0:00:31.24,0:00:33.20,Sub,,0,0,0,,{\fad(80,60)}Attention : un MCP donne accès aux fonctions
+Dialogue: 0,0:00:33.20,0:00:34.82,Sub,,0,0,0,,{\fad(80,60)}autorisées pour le compte connecté.
+Dialogue: 0,0:00:34.82,0:00:37.76,Sub,,0,0,0,,{\fad(80,60)}À lui seul, il ne garantit ni l'autonomie, ni la sécurité.
+Dialogue: 0,0:00:38.92,0:00:41.24,Sub,,0,0,0,,{\fad(80,60)}Deuxième brique : les Skills, le savoir-faire.
+Dialogue: 0,0:00:41.24,0:00:43.66,Sub,,0,0,0,,{\fad(80,60)}L'IA peut lire les stocks, mais sait-elle quoi en faire ?
+Dialogue: 0,0:00:43.66,0:00:47.42,Sub,,0,0,0,,{\fad(80,60)}Un Skill est un fichier, SKILL.md, qui décrit une méthode :
+Dialogue: 0,0:00:47.42,0:00:49.48,Sub,,0,0,0,,{\fad(80,60)}quand l'utiliser, les étapes, les règles.
+Dialogue: 0,0:00:49.48,0:00:51.76,Sub,,0,0,0,,{\fad(80,60)}Le Skill de réapprovisionnement, par exemple, enchaîne :
+Dialogue: 0,0:00:51.76,0:00:54.10,Sub,,0,0,0,,{\fad(80,60)}détecter les stocks bas, regrouper par fournisseur,
+Dialogue: 0,0:00:54.10,0:00:55.58,Sub,,0,0,0,,{\fad(80,60)}faire valider, puis commander.
+Dialogue: 0,0:00:55.58,0:00:58.43,Sub,,0,0,0,,{\fad(80,60)}Le Skill définit la méthode. Il ne déclenche rien tout seul.
+Dialogue: 0,0:00:59.48,0:01:02.24,Sub,,0,0,0,,{\fad(80,60)}Troisième brique : les agents, les employés spécialisés.
+Dialogue: 0,0:01:02.24,0:01:04.98,Sub,,0,0,0,,{\fad(80,60)}Un agent, c'est un rôle, un objectif et des instructions.
+Dialogue: 0,0:01:04.98,0:01:06.66,Sub,,0,0,0,,{\fad(80,60)}Le chef-restaurateur raisonne en ratios :
+Dialogue: 0,0:01:06.66,0:01:08.68,Sub,,0,0,0,,{\fad(80,60)}food cost, masse salariale, marge.
+Dialogue: 0,0:01:08.68,0:01:10.56,Sub,,0,0,0,,{\fad(80,60)}Le directeur commercial pilote le pipeline.
+Dialogue: 0,0:01:10.56,0:01:12.30,Sub,,0,0,0,,{\fad(80,60)}Le directeur général croise les signaux.
+Dialogue: 0,0:01:12.30,0:01:14.24,Sub,,0,0,0,,{\fad(80,60)}Le catalogue en compte soixante-dix-sept.
+Dialogue: 0,0:01:14.24,0:01:17.38,Sub,,0,0,0,,{\fad(80,60)}Un agent reçoit une mission, choisit ses outils et produit un résultat,
+Dialogue: 0,0:01:17.38,0:01:18.86,Sub,,0,0,0,,{\fad(80,60)}dans les limites de sa configuration.
+Dialogue: 0,0:01:19.98,0:01:22.14,Sub,,0,0,0,,{\fad(80,60)}Quatrième brique : les plugins, le paquet.
+Dialogue: 0,0:01:22.14,0:01:24.84,Sub,,0,0,0,,{\fad(80,60)}Un plugin regroupe des Skills, des agents, des commandes,
+Dialogue: 0,0:01:24.84,0:01:27.68,Sub,,0,0,0,,{\fad(80,60)}des Hooks et ses connexions MCP, pour tout installer en une fois.
+Dialogue: 0,0:01:27.68,0:01:30.10,Sub,,0,0,0,,{\fad(80,60)}La marketplace BraindCode en propose trente-trois :
+Dialogue: 0,0:01:30.10,0:01:34.02,Sub,,0,0,0,,{\fad(80,60)}FoodEatUp, RapidoCRM, RapidoCMS, RapidoRH, Plan'It…
+Dialogue: 0,0:01:34.02,0:01:35.76,Sub,,0,0,0,,{\fad(80,60)}Dans Claude Code, deux commandes suffisent :
+Dialogue: 0,0:01:35.76,0:01:38.13,Sub,,0,0,0,,{\fad(80,60)}ajouter la marketplace, puis installer le plugin.
+Dialogue: 0,0:01:39.26,0:01:41.40,Sub,,0,0,0,,{\fad(80,60)}Cinquième brique : les Hooks, les réflexes.
+Dialogue: 0,0:01:41.40,0:01:43.32,Sub,,0,0,0,,{\fad(80,60)}Un Hook se déclenche sur un événement précis :
+Dialogue: 0,0:01:43.32,0:01:44.98,Sub,,0,0,0,,{\fad(80,60)}avant l'appel d'un outil, après,
+Dialogue: 0,0:01:44.98,0:01:47.20,Sub,,0,0,0,,{\fad(80,60)}au démarrage d'une session, ou à la fin d'une réponse.
+Dialogue: 0,0:01:47.20,0:01:49.42,Sub,,0,0,0,,{\fad(80,60)}Contrairement au modèle, un Hook est déterministe :
+Dialogue: 0,0:01:49.42,0:01:51.16,Sub,,0,0,0,,{\fad(80,60)}il réagit toujours de la même façon.
+Dialogue: 0,0:01:51.16,0:01:53.56,Sub,,0,0,0,,{\fad(80,60)}Dans FoodEatUp, un Hook refuse un relevé de température
+Dialogue: 0,0:01:53.56,0:01:54.78,Sub,,0,0,0,,{\fad(80,60)}sans équipement identifié,
+Dialogue: 0,0:01:54.78,0:01:57.66,Sub,,0,0,0,,{\fad(80,60)}et un autre impose une confirmation avant toute action destructrice.
+Dialogue: 0,0:01:57.66,0:01:59.90,Sub,,0,0,0,,{\fad(80,60)}Mais attention : une vraie validation humaine
+Dialogue: 0,0:01:59.90,0:02:01.84,Sub,,0,0,0,,{\fad(80,60)}passe par un mécanisme d'approbation.
+Dialogue: 0,0:02:01.84,0:02:04.03,Sub,,0,0,0,,{\fad(80,60)}Un Hook seul ne fait pas toute la sécurité.
+Dialogue: 0,0:02:05.10,0:02:07.54,Sub,,0,0,0,,{\fad(80,60)}Sixième brique : la connaissance de l'entreprise.
+Dialogue: 0,0:02:07.54,0:02:09.88,Sub,,0,0,0,,{\fad(80,60)}Sans contexte, même un agent bien équipé ne connaît
+Dialogue: 0,0:02:09.88,0:02:12.46,Sub,,0,0,0,,{\fad(80,60)}ni vos règles, ni vos objectifs, ni vos procédures.
+Dialogue: 0,0:02:12.46,0:02:15.38,Sub,,0,0,0,,{\fad(80,60)}La base de connaissance, un dossier rapido-kb créé chez vous,
+Dialogue: 0,0:02:15.38,0:02:18.50,Sub,,0,0,0,,{\fad(80,60)}contient vos seuils, vos processus, votre charte et votre ton.
+Dialogue: 0,0:02:18.50,0:02:19.94,Sub,,0,0,0,,{\fad(80,60)}Elle persiste d'une session à l'autre,
+Dialogue: 0,0:02:19.94,0:02:21.86,Sub,,0,0,0,,{\fad(80,60)}contrairement à l'historique d'une conversation.
+Dialogue: 0,0:02:21.86,0:02:23.72,Sub,,0,0,0,,{\fad(80,60)}Et elle n'est jamais publiée dans le dépôt.
+Dialogue: 0,0:02:24.78,0:02:25.30,Sub,,0,0,0,,{\fad(80,60)}Assemblons tout.
+Dialogue: 0,0:02:25.30,0:02:27.68,Sub,,0,0,0,,{\fad(80,60)}Un restaurateur demande : analyse mes stocks
+Dialogue: 0,0:02:27.68,0:02:30.12,Sub,,0,0,0,,{\fad(80,60)}et prépare mes achats fournisseurs pour les trois prochains jours.
+Dialogue: 0,0:02:30.12,0:02:32.06,Sub,,0,0,0,,{\fad(80,60)}Le chef-restaurateur reçoit l'objectif.
+Dialogue: 0,0:02:32.06,0:02:33.92,Sub,,0,0,0,,{\fad(80,60)}Il charge le Skill de réapprovisionnement.
+Dialogue: 0,0:02:33.92,0:02:36.36,Sub,,0,0,0,,{\fad(80,60)}Le MCP FoodEatUp fournit les données autorisées.
+Dialogue: 0,0:02:36.36,0:02:38.06,Sub,,0,0,0,,{\fad(80,60)}La base de connaissance donne les seuils.
+Dialogue: 0,0:02:38.06,0:02:39.74,Sub,,0,0,0,,{\fad(80,60)}L'agent prépare ses recommandations.
+Dialogue: 0,0:02:39.74,0:02:42.24,Sub,,0,0,0,,{\fad(80,60)}Les Hooks et les permissions encadrent les actions sensibles.
+Dialogue: 0,0:02:42.24,0:02:44.51,Sub,,0,0,0,,{\fad(80,60)}Et le restaurateur valide avant toute commande.
+Dialogue: 0,0:02:45.56,0:02:47.60,Sub,,0,0,0,,{\fad(80,60)}C'est en assemblant ces briques qu'on passe d'un chatbot
+Dialogue: 0,0:02:47.60,0:02:49.44,Sub,,0,0,0,,{\fad(80,60)}à une équipe d'agents IA spécialisés,
+Dialogue: 0,0:02:49.44,0:02:52.28,Sub,,0,0,0,,{\fad(80,60)}capables de réaliser des missions dans les outils de l'entreprise.
+Dialogue: 0,0:02:52.28,0:02:53.88,Sub,,0,0,0,,{\fad(80,60)}C'est ce que nous construisons avec BraindCode.
+Dialogue: 0,0:02:53.88,0:02:56.70,Sub,,0,0,0,,{\fad(80,60)}À retrouver sur plugin.braindcode.com

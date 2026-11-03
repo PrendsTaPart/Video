@@ -1,0 +1,108 @@
+1
+00:00:00,600 --> 00:00:02,400
+Aujourd'hui, je vais te montrer comment je dirige
+
+2
+00:00:02,400 --> 00:00:03,640
+mon équipe d'agents IA.
+
+3
+00:00:03,640 --> 00:00:05,900
+Parce que créer un agent IA, c'est bien…
+
+4
+00:00:05,900 --> 00:00:07,840
+Mais quand tu commences à en avoir plusieurs,
+
+5
+00:00:07,840 --> 00:00:09,780
+il faut aussi organiser leur travail !
+
+6
+00:00:09,780 --> 00:00:11,560
+Alors, j'ai développé Plan'It.
+
+7
+00:00:11,560 --> 00:00:13,480
+C'est l'outil qui me permet de planifier des tâches,
+
+8
+00:00:13,480 --> 00:00:15,960
+de connecter mes MCP et de suivre mes routines.
+
+9
+00:00:15,960 --> 00:00:17,260
+Je donne un objectif :
+
+10
+00:00:17,260 --> 00:00:20,000
+« Organise ma campagne commerciale FoodEatUp de la semaine. »
+
+11
+00:00:20,000 --> 00:00:21,860
+L'orchestrateur choisit les bons outils :
+
+12
+00:00:21,860 --> 00:00:23,500
+RapidoCRM pour les campagnes,
+
+13
+00:00:23,500 --> 00:00:25,260
+FoodEatUp pour l'agenda marketing.
+
+14
+00:00:25,260 --> 00:00:27,140
+Ensuite, j'en fais des tâches ou des routines,
+
+15
+00:00:27,140 --> 00:00:29,200
+avec le coût affiché avant chaque exécution.
+
+16
+00:00:29,200 --> 00:00:30,900
+Et grâce aux connexions MCP,
+
+17
+00:00:30,900 --> 00:00:33,340
+mes agents travaillent directement avec mes logiciels.
+
+18
+00:00:33,340 --> 00:00:35,360
+Mais rien de sensible ne part sans mon accord :
+
+19
+00:00:35,360 --> 00:00:37,580
+les envois, les publications et les suppressions
+
+20
+00:00:37,580 --> 00:00:38,800
+attendent ma validation.
+
+21
+00:00:38,800 --> 00:00:40,720
+Je retrouve ensuite les tâches, leur avancement
+
+22
+00:00:40,720 --> 00:00:42,780
+et les résultats dans une seule application.
+
+23
+00:00:42,780 --> 00:00:45,040
+Pour l'instant, je teste encore mes premières routines.
+
+24
+00:00:45,040 --> 00:00:47,580
+Mais avant, j'organisais moi-même le travail de mes IA.
+
+25
+00:00:47,580 --> 00:00:49,540
+Maintenant, c'est Plan'It qui l'organise.
+
+26
+00:00:49,540 --> 00:00:51,760
+Mon objectif ? Construire une véritable équipe
+
+27
+00:00:51,760 --> 00:00:54,180
+d'employés IA qui travaille avec mes logiciels !
+

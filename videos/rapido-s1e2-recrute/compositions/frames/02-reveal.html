@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>S1E2 F2 — Reveal skill recrutement (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+        .halo { position: absolute; left: 140px; top: 480px; width: 800px; height: 800px; background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(120,80,192,0.18) 0%, rgba(120,80,192,0.05) 46%, rgba(120,80,192,0) 72%); opacity: 0; pointer-events: none; will-change: transform, opacity; }
+        .stack { position: absolute; left: 0; right: 0; top: 300px; height: 1240px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .logo { width: 480px; height: auto; object-fit: contain; transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+        .badge { margin-top: 40px; padding: 20px 54px; background: #7850c0; border-radius: 100px; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 44px; letter-spacing: 0.02em; color: #ffffff; transform-origin: 50% 50%; opacity: 0; white-space: nowrap; will-change: transform, opacity; }
+        .badge .ic { display: inline-block; width: 34px; height: 34px; vertical-align: -5px; margin-right: 12px; }
+        .badge .ic svg { width: 100%; height: 100%; fill: none; stroke: #d9ccf5; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+        .tagline { margin-top: 40px; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 52px; line-height: 1.2; letter-spacing: -0.01em; color: #1b2a41; text-align: center; padding: 0 90px; opacity: 0; will-change: transform, opacity; }
+        .tagline .a { color: #7850c0; }
+        .subline { margin-top: 22px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 40px; color: #566472; text-align: center; opacity: 0; will-change: transform, opacity; }
+      </style>
+
+      <div id="root" data-composition-id="02-reveal" data-width="1080" data-height="1920" data-duration="7.213">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="6.713" data-track-index="0"><div class="halo" id="halo"></div></div>
+        <div id="stack" class="clip stack" data-start="0" data-duration="6.713" data-track-index="1">
+          <img id="logo" class="logo" src="public/rapidorh-logo.png" alt="RapidoRH" />
+          <div class="badge" id="badge"><span class="ic"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z" /></svg></span>Skill · kit d'embauche</div>
+          <div class="tagline" id="tagline">Votre recrutement,<br /><span class="a">en parlant.</span></div>
+          <div class="subline" id="subline">Un skill prépare tout le kit.</div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#halo", { opacity: 0, scale: 0.92 }, { opacity: 1, scale: 1, duration: 0.9, ease: "power2.out" }, 0.1);
+        tl.fromTo("#logo", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "power3.out" }, 0.3);
+        tl.fromTo("#badge", { scale: 0.85, opacity: 0, y: 16 }, { scale: 1, opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 1.6);
+        tl.fromTo("#tagline", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 3.0);
+        tl.fromTo("#subline", { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 4.5);
+        window.__timelines["02-reveal"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

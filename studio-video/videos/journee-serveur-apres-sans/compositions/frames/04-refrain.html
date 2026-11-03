@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f4-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f4-line1 {
+          position: absolute; left: 0; right: 0; top: 430px; text-align: center;
+          font-size: 68px; font-weight: 600; color: rgba(58,63,69,0.85);
+        }
+        .f4-line2 {
+          position: absolute; left: 0; right: 0; top: 540px; text-align: center;
+          font-size: 82px; font-weight: 700; color: #D64545;
+        }
+        .f4-hairline {
+          position: absolute; left: 50%; top: 690px; width: 180px; height: 2px;
+          margin-left: -90px; background: #3A3F45; opacity: 0; transform-origin: 50% 50%;
+        }
+      </style>
+
+      <div id="root" data-composition-id="04-refrain" data-width="1920" data-height="1080" data-duration="5.0">
+        <div class="f4-bg clip" id="f4-bgclip" data-start="0" data-duration="5.0" data-track-index="1"></div>
+
+        <div class="f4-line1" id="f4-line1">On avait un outil pour ça.</div>
+        <div class="f4-line2" id="f4-line2">Plus personne ne l'ouvre.</div>
+        <div class="f4-hairline" id="f4-hairline"></div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f4-line1", { opacity: 0 });
+        gsap.set("#f4-line2", { opacity: 0, scale: 0.94 });
+        gsap.set("#f4-hairline", { opacity: 0, scaleX: 0 });
+
+        // Scene 1 (0.0-0.6s, cue "On avait un outil pour ça."): the setup lands flat, muted —
+        // no drama yet, it reads almost administrative.
+        tl.to("#f4-line1", { opacity: 1, duration: 0.35, ease: "power3.out" }, 0.1);
+
+        // Scene 2 (0.6-1.3s, cue "Plus personne ne l'ouvre."): the turn — the series' refrain,
+        // the one line every film in this run repeats, in the single red accent.
+        tl.fromTo("#f4-line2", { opacity: 0, scale: 0.94 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 0.65);
+        tl.to("#f4-hairline", { opacity: 1, scaleX: 1, duration: 0.4, ease: "power2.out" }, 1.05);
+
+        // Scene 3 (1.4-5.0s): hold — dead still but for a barely-perceptible breathe, the
+        // longest silence this frame earns.
+        const f4phase = { p: 0 };
+        tl.to(f4phase, {
+          p: Math.PI * 2 * 1.2, duration: 2.6, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f4phase.p);
+            gsap.set("#f4-line2", { scale: 1 + s * 0.005 });
+          }
+        }, 1.5);
+
+        window.__timelines["04-refrain"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+Tu publies du contenu chaque jour, mais tes visiteurs ne savent pas où cliquer ? Moi, j'ai réglé ça avec un seul site, construit avec Lovable et Claude.
+
+Un seul lien pour tout réunir : mon profil, mes vidéos, mes projets, et un bouton pour prendre rendez-vous. Un peu comme un Linktree… mais construit pour moi.
+
+Comment j'ai fait ? J'ai demandé la base du site à Lovable. Puis j'ai repris le projet dans Claude Code, depuis GitHub : Claude modifie, teste, et Lovable met en ligne.
+
+Chaque vidéo a sa formation gratuite : les étapes, les outils, et les prompts que j'ai vraiment utilisés. On laisse son prénom et son email, et on repart avec le PDF.
+
+Les prompts s'ouvrent en un clic dans Claude. Et la charte, les logos et les écrans de mes logiciels viennent directement de ma bibliothèque de marque.
+
+Et le site a son propre MCP : mes agents IA peuvent préparer une vidéo, une formation ou une offre… toujours en brouillon. Je valide, et ça part en ligne.
+
+Résultat : trente et une vidéos, trente formations, et une vitrine qui se tient à jour avec moi.
+
+Tu veux la même pour ton activité ? La formation est sur mon site. Et si tu veux qu'on la construise ensemble, prends rendez-vous. Le lien est dans ma bio.

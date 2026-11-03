@@ -1,0 +1,54 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Poppins SemiBold,50,&H00E6F9FC,&H00E6F9FC,&H00231A0F,&H00231A0F,0,0,0,0,100,100,0,0,3,16,0,2,90,90,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:03.42,Sub,,0,0,0,,{\fad(80,60)}Après avoir construit mes applications, mes agents IA
+Dialogue: 0,0:00:03.42,0:00:04.92,Sub,,0,0,0,,{\fad(80,60)}et mes outils de communication,
+Dialogue: 0,0:00:04.92,0:00:06.92,Sub,,0,0,0,,{\fad(80,60)}il me reste une question essentielle :
+Dialogue: 0,0:00:06.92,0:00:08.22,Sub,,0,0,0,,{\fad(80,60)}comment trouver des clients ?
+Dialogue: 0,0:00:09.39,0:00:11.46,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, je peux simplement demander à Claude
+Dialogue: 0,0:00:11.46,0:00:13.14,Sub,,0,0,0,,{\fad(80,60)}de rechercher des restaurants ou des brasseries
+Dialogue: 0,0:00:13.14,0:00:14.43,Sub,,0,0,0,,{\fad(80,60)}dans les régions qui m'intéressent.
+Dialogue: 0,0:00:14.43,0:00:16.45,Sub,,0,0,0,,{\fad(80,60)}Je lui donne un objectif… et une règle :
+Dialogue: 0,0:00:16.45,0:00:18.68,Sub,,0,0,0,,{\fad(80,60)}ne contacter personne sans ma validation.
+Dialogue: 0,0:00:19.61,0:00:22.37,Sub,,0,0,0,,{\fad(80,60)}Grâce au MCP que j'ai développé pour Prospector Hub,
+Dialogue: 0,0:00:22.37,0:00:24.69,Sub,,0,0,0,,{\fad(80,60)}Claude peut consulter les régions et les spécialités,
+Dialogue: 0,0:00:24.69,0:00:26.01,Sub,,0,0,0,,{\fad(80,60)}lancer des recherches autorisées,
+Dialogue: 0,0:00:26.01,0:00:28.81,Sub,,0,0,0,,{\fad(80,60)}et retrouver les résultats directement dans mon logiciel.
+Dialogue: 0,0:00:28.81,0:00:30.69,Sub,,0,0,0,,{\fad(80,60)}Derrière, ce sont des workflows n8n
+Dialogue: 0,0:00:30.69,0:00:31.74,Sub,,0,0,0,,{\fad(80,60)}qui font les recherches.
+Dialogue: 0,0:00:32.60,0:00:34.32,Sub,,0,0,0,,{\fad(80,60)}Par exemple, mes cinq dernières recherches,
+Dialogue: 0,0:00:34.32,0:00:35.36,Sub,,0,0,0,,{\fad(80,60)}sur les bars et brasseries,
+Dialogue: 0,0:00:35.36,0:00:37.72,Sub,,0,0,0,,{\fad(80,60)}ont retourné 200 résultats sur cinq régions.
+Dialogue: 0,0:00:37.72,0:00:39.76,Sub,,0,0,0,,{\fad(80,60)}Et le logiciel garde l'historique des recherches
+Dialogue: 0,0:00:39.76,0:00:41.44,Sub,,0,0,0,,{\fad(80,60)}et des établissements enregistrés.
+Dialogue: 0,0:00:41.44,0:00:44.14,Sub,,0,0,0,,{\fad(80,60)}200 résultats de recherche : pas 200 clients.
+Dialogue: 0,0:00:45.63,0:00:47.41,Sub,,0,0,0,,{\fad(80,60)}Mais trouver une entreprise ne suffit pas.
+Dialogue: 0,0:00:47.41,0:00:50.43,Sub,,0,0,0,,{\fad(80,60)}Il faut vérifier les informations, comprendre son activité,
+Dialogue: 0,0:00:50.43,0:00:51.15,Sub,,0,0,0,,{\fad(80,60)}éviter les doublons,
+Dialogue: 0,0:00:51.15,0:00:53.17,Sub,,0,0,0,,{\fad(80,60)}et préparer une approche pertinente.
+Dialogue: 0,0:00:53.17,0:00:55.95,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, 90 bars et brasseries ont été enregistrés :
+Dialogue: 0,0:00:55.95,0:00:57.72,Sub,,0,0,0,,{\fad(80,60)}ils sont encore au statut « nouveau ».
+Dialogue: 0,0:01:16.20,0:01:17.94,Sub,,0,0,0,,{\fad(80,60)}Ensuite, les routines prennent le relais :
+Dialogue: 0,0:01:17.94,0:01:20.00,Sub,,0,0,0,,{\fad(80,60)}préparer les messages, suivre les campagnes,
+Dialogue: 0,0:01:20.00,0:01:22.00,Sub,,0,0,0,,{\fad(80,60)}proposer les relances, analyser les résultats.
+Dialogue: 0,0:01:22.00,0:01:24.80,Sub,,0,0,0,,{\fad(80,60)}Claude orchestre les étapes avec les outils autorisés.
+Dialogue: 0,0:01:24.80,0:01:26.30,Sub,,0,0,0,,{\fad(80,60)}Mais pour qu'une routine tourne seule,
+Dialogue: 0,0:01:26.30,0:01:28.36,Sub,,0,0,0,,{\fad(80,60)}elle doit être configurée dans un orchestrateur,
+Dialogue: 0,0:01:28.36,0:01:30.08,Sub,,0,0,0,,{\fad(80,60)}comme n8n ou Plan'It.
+Dialogue: 0,0:01:31.00,0:01:32.81,Sub,,0,0,0,,{\fad(80,60)}Mon système gère aussi plusieurs canaux :
+Dialogue: 0,0:01:32.81,0:01:35.53,Sub,,0,0,0,,{\fad(80,60)}e-mails, SMS, LinkedIn et appels automatisés,
+Dialogue: 0,0:01:35.53,0:01:37.93,Sub,,0,0,0,,{\fad(80,60)}avec des règles : l'identité de l'expéditeur,
+Dialogue: 0,0:01:37.93,0:01:40.44,Sub,,0,0,0,,{\fad(80,60)}la désinscription, et mon accord avant chaque envoi.
+Dialogue: 0,0:01:41.66,0:01:43.28,Sub,,0,0,0,,{\fad(80,60)}Mon objectif, ce n'est pas d'envoyer
+Dialogue: 0,0:01:43.28,0:01:44.82,Sub,,0,0,0,,{\fad(80,60)}des milliers de messages au hasard.
+Dialogue: 0,0:01:44.82,0:01:47.09,Sub,,0,0,0,,{\fad(80,60)}C'est de construire une prospection intelligente,
+Dialogue: 0,0:01:47.09,0:01:49.71,Sub,,0,0,0,,{\fad(80,60)}ciblée et mesurable, pilotée depuis Claude.

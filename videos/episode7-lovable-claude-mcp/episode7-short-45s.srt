@@ -1,0 +1,88 @@
+1
+00:00:00,500 --> 00:00:02,920
+Aujourd'hui, j'ai connecté Lovable à Claude.
+
+2
+00:00:02,920 --> 00:00:04,520
+Et ça change complètement ma façon
+
+3
+00:00:04,520 --> 00:00:07,050
+de développer mes logiciels… et mes MCP.
+
+4
+00:00:07,340 --> 00:00:09,440
+Maintenant, grâce au connecteur Lovable,
+
+5
+00:00:09,440 --> 00:00:10,940
+Claude peut retrouver mes projets,
+
+6
+00:00:10,940 --> 00:00:12,060
+consulter leur code,
+
+7
+00:00:12,060 --> 00:00:12,940
+analyser les modifications
+
+8
+00:00:12,940 --> 00:00:15,280
+et communiquer avec l'agent Lovable.
+
+9
+00:00:15,280 --> 00:00:17,920
+Je lui demande : « Retrouve BraindCode Plugins
+
+10
+00:00:17,920 --> 00:00:19,920
+et explique son MCP, sans rien modifier. »
+
+11
+00:00:19,920 --> 00:00:22,120
+Sa réponse ? 58 outils.
+
+12
+00:00:22,120 --> 00:00:24,740
+41 en lecture, 17 en écriture,
+
+13
+00:00:24,740 --> 00:00:25,980
+protégés par OAuth.
+
+14
+00:00:26,360 --> 00:00:28,320
+Mais développer un MCP ne suffit pas.
+
+15
+00:00:28,320 --> 00:00:30,820
+Je dois aussi vérifier que Claude comprend les outils,
+
+16
+00:00:30,820 --> 00:00:32,200
+qu'il transmet les bons paramètres
+
+17
+00:00:32,200 --> 00:00:33,840
+et qu'il respecte les permissions.
+
+18
+00:00:33,840 --> 00:00:36,700
+En lecture, le serveur répond avec le vrai catalogue.
+
+19
+00:00:36,700 --> 00:00:38,550
+Sans jeton… il refuse l'accès.
+
+20
+00:00:39,010 --> 00:00:41,510
+Je ne construis pas seulement des logiciels pour les humains.
+
+21
+00:00:41,510 --> 00:00:43,530
+Je construis aussi les outils qui permettront
+
+22
+00:00:43,530 --> 00:00:45,500
+à mes agents IA de travailler avec eux.
+

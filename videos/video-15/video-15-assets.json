@@ -1,0 +1,41 @@
+{
+  "ecrans_rapidocrm": {
+    "source": "MCP Formation FoodEatUp, list_brand_assets(rapidocrm, ecran)",
+    "fichiers": [
+      "https://formation.foodeatup.fr/brand/logiciels/rapidocrm-ecran-tableau-de-bord.webp",
+      "https://formation.foodeatup.fr/brand/assets/rapidocrm/ecran-formulaire-prospect.webp",
+      "https://formation.foodeatup.fr/brand/assets/rapidocrm/ecran-resultat-prospection.webp",
+      "https://formation.foodeatup.fr/brand/assets/rapidocrm/ecran-liste-des-entreprises.webp"
+    ]
+  },
+  "mcp_rapidocrm_lecture_seule": {
+    "get_dashboard_kpis": "86 clients, 70 prospects, 14 tâches ouvertes (CA non présenté : il contient des factures de test)",
+    "get_stats_pipeline_global": "70 prospects : 69 Nouveau prospect, 1 Qualification",
+    "list_devis": "7 devis ; un seul réel en attente (Client A, 1 200 €, 21/07) ; les devis expirés et le second en attente sont des tests",
+    "list_factures": "7 factures ; 2 réelles en attente (Client B 1 428 € le 09/10, Client A 600 € le 21/07)",
+    "get_today_schedule(week)": "0 rendez-vous",
+    "list_segments": "7 segments métiers (+ un segment de test)",
+    "list_campagnes": "campagnes existantes, statistiques à zéro : non présentées",
+    "exclusions": "tout ce qui porte [TEST-QA], ZZ, « TEST », « sad », « hello »"
+  },
+  "non_appeles": [
+    "send_email",
+    "send_sms",
+    "schedule_email",
+    "schedule_sms",
+    "create_task",
+    "prospecter_maps",
+    "rechercher_prospects"
+  ],
+  "photo": "braindcode-profil.jpg",
+  "poses": [
+    "surprise",
+    "telephone"
+  ],
+  "logos": [
+    "rapidocrm-logo-officiel.png",
+    "claude.webp",
+    "braindcode.png"
+  ],
+  "voix": "ElevenLabs Noé, 780 crédits"
+}

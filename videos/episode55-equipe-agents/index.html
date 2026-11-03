@@ -1,0 +1,78 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 55 : une équipe d'agents</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter',sans-serif}#stage{background:#0d1424}.sc{background:#0d1424}
+#hdr{position:absolute;left:0;right:0;top:0;height:160px;z-index:60}#hdr span{position:absolute;left:60px;top:90px;font-family:'JetBrains Mono';font-weight:700;font-size:24px;color:#8fa0c0}
+#cap{font-family:'Inter';font-weight:600;font-size:50px;color:#fff;text-shadow:0 3px 12px rgba(0,0,0,.8)}#cap i.k{color:#7ff5ff;font-style:normal}
+.holo{width:860px;background:rgba(10,18,36,.84);border:5px solid #38e1ff;border-radius:30px;padding:26px 30px;color:#fff;box-shadow:0 0 40px rgba(56,225,255,.55),inset 0 0 30px rgba(56,225,255,.15)}
+.holo .t{font-weight:900;font-size:48px}.holo .t small{display:block;font-size:24px;font-weight:600;color:#9fb3d6}
+.ln{display:flex;align-items:center;justify-content:space-between;font-size:36px;font-weight:700;background:rgba(255,255,255,.07);border-radius:16px;padding:14px 20px;margin-top:12px}
+.ln b{font-size:40px}.ln.ok b{color:#3ef08a}.ln.ko b{color:#ff4d5e}
+.gauge{height:46px;border-radius:23px;background:rgba(255,255,255,.1);overflow:hidden;margin-top:18px}.gauge i{display:block;height:100%;border-radius:23px}
+.stamp{font-weight:900;font-size:60px;color:#ff3347;border:7px solid #ff3347;border-radius:14px;padding:4px 22px;transform:rotate(-8deg);white-space:nowrap;background:rgba(13,20,36,.5)}
+.ag{width:300px;text-align:center;color:#fff}.ag img{width:220px;height:220px;border-radius:50%;object-fit:cover;border:7px solid #38e1ff;box-shadow:0 0 34px rgba(56,225,255,.6)}
+.ag b{display:block;font-size:44px;font-weight:900;margin-top:10px}.ag span{display:block;font-family:'JetBrains Mono';font-size:24px;color:#9fb3d6}
+.ag em{display:inline-block;font-style:normal;font-family:'JetBrains Mono';font-weight:700;font-size:20px;border-radius:999px;padding:6px 16px;margin-top:10px;background:#3ef08a;color:#0d1424}.ag em.s{background:#ffb340}
+.chip{font-family:'JetBrains Mono';font-weight:700;font-size:28px;color:#fff;background:#1a2440;border:3px solid #ff8a1f;border-radius:999px;padding:10px 24px;white-space:nowrap}
+.pill{display:inline-block;font-family:'JetBrains Mono';font-weight:700;font-size:34px;border-radius:999px;padding:12px 28px;white-space:nowrap;background:#FFA500;color:#111}.pill.d{background:#1a2440;color:#fff;border:2px solid #38e1ff}
+.jumble{font-size:90px}
+</style></head><body><div id="stage"><div id="hdr"><span>michael · le quotidien avec l'ia</span></div><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=230;CAP.group=6;CAP.kw=new Set(['restaurant','mémoire','sature.','divise.','Caroline.','Jarvis.','Iris.','travail.','PrediBot.','salariés.','minuit.','ÉQUIPE']);
+const K='holo-nuit-agents-';
+let base=scene(0,C.dur+1,{bg:K+'bureau-toit.jpg',kb:[1.05,1.14],tr:'cut',z:1});
+const ent=base.img(K+'entrepreneur-assis-profil.png',{x:800,y:1440,w:560,fx:'none',z:3});
+const entF=base.img(K+'entrepreneur-assis-face.png',{x:800,y:1440,w:560,fx:'none',z:3});
+const entP=base.img(K+'entrepreneur-pensif.png',{x:800,y:1440,w:560,fx:'none',z:3});
+const asF=base.img(K+'assistant-orange-face.png',{x:290,y:1320,w:300,fx:'none',z:4,anim:'float'});
+const asP=base.img(K+'assistant-orange-projette.png',{x:290,y:1320,w:300,fx:'none',z:4,anim:'float'});
+const beam=base.img(K+'faisceau-hologramme.png',{x:290,y:1020,w:420,h:520,fx:'none',z:2,style:'opacity:.7'});
+const SPLIT=M('Simple. On');
+base.fn(t=>{const p=t>=M('Les réservations,')&&t<M('Attends…');asP.d.style.opacity=p?1:0;asF.d.style.opacity=p?0:1;beam.d.style.opacity=p?.7:0;
+ const pens=(t>=M('Comme moi')&&t<SPLIT)||(t>=M('Et qui les')&&t<M('Un chef'));const face=t>=M('Attends…');
+ entP.d.style.opacity=pens?1:0;entF.d.style.opacity=face&&!pens?1:0;ent.d.style.opacity=!pens&&!face?1:0;
+ const hide=t>=SPLIT&&t<M('Attends…');[asF,asP,beam].forEach(i=>i.d.style.display=hide?'none':'block');});
+function layer(t0,t1){const s=scene(t0,t1,{tr:'cut',z:10});s.node.style.background='transparent';return s;}
+// 1. tout le restaurant
+let s=layer(M('Les réservations,'),M('Techniquement,'));
+const T=[['','Les réservations',''],['','Les fournisseurs',''],['','L\'hygiène',''],['','Le planning',''],['','Les réseaux','']];
+s.el(`<div class="holo"><div class="t">Tout mon restaurant<small>ce que je voudrais confier</small></div>${T.map((x,i)=>`<div class="ln" id="tl${i}"><span>${x[1]}</span></div>`).join('')}</div>`,{x:540,y:700,fx:'pop',at:M('Les réservations,')});
+s.fn(t=>T.forEach((x,i)=>{const e=document.getElementById('tl'+i);if(e)e.style.opacity=t>=M('Les réservations,')+i*.75?1:.08;}));
+// 2. mémoire qui sature
+s=layer(M('Mais ma mémoire'),M('Comme moi'));
+s.el('<div class="holo" style="border-color:#ff8a1f;box-shadow:0 0 40px #ff8a1f88"><div class="t">La mémoire de Claude<small>ce qu\'il peut garder en tête d\'un coup</small></div><div class="gauge"><i id="gg"></i></div></div>',{x:540,y:640,fx:'pop',at:M('Mais ma mémoire')});
+s.el('<div class="stamp">SATURÉ !</div>',{x:560,y:860,fx:'slam',at:M('Si tu me')+2.2,z:12});
+s.el('<div class="jumble" style="font-weight:900;color:#ffb340;font-size:54px;line-height:1.3;text-align:center;white-space:nowrap">planning ? réseaux ?<br>hygiène ? stock ?</div>',{x:540,y:1080,fx:'pop',at:M('Si tu me')+3,anim:'shake',z:11});
+s.fn(t=>{const g=document.getElementById('gg');if(!g)return;const p=cl((t-M('Mais ma mémoire'))/((M('Si tu me')+2.2)-M('Mais ma mémoire')));g.style.width=(15+85*p)+'%';g.style.background=p<.6?'#3ef08a':p<.9?'#ffb340':'#ff3347';});
+// 3. samedi soir
+s=layer(M('Comme moi'),SPLIT);
+s.img(K+'horloge-24h.png',{x:540,y:620,w:300,fx:'pop',at:M('Comme moi'),anim:'shake'});
+s.el('<div class="pill">LE SAMEDI SOIR</div>',{x:540,y:840,fx:'slam',at:M('Comme moi')+.4});
+// 4. on divise
+s=layer(SPLIT,M('Et qui les'));
+const AG=[['caroline','Caroline','téléphone','Un agent pour le téléphone',1],['jarvis','Jarvis','équipe','Un pour l\'équipe',0],['iris','Iris','réseaux','Un pour les réseaux',0]];
+AG.forEach(([f,n,r,m,ok],i)=>s.el(`<div class="ag"><img src="img/${f}.jpg"><b>${n}</b><span>${r}</span><em class="${ok?'':'s'}">${ok?'DISPONIBLE':'BIENTÔT'}</em></div>`,{x:200+i*340,y:620,fx:'pop',at:M(m)}));
+s.el('<div class="pill d">ON ME DIVISE</div>',{x:540,y:360,fx:'slam',at:SPLIT+.3});
+s.el(`<div class="holo" style="width:900px"><div class="t" style="font-size:40px">Caroline<small>agent du téléphone</small></div><div class="ln ok"><span>Connaît tes tables libres</span><b>✓</b></div><div class="ln ko" id="pl"><span>Ton planning</span><b>✗</b></div></div>`,{x:540,y:1090,fx:'up',at:M('Caroline connaît'),z:12});
+s.el('<div class="stamp" style="font-size:44px;color:#ffb340;border-color:#ffb340">PAS SON JOB</div>',{x:700,y:1250,fx:'slam',at:M('Ton planning,')+.5,z:13});
+// 5. le chef d'équipe
+s=layer(M('Un chef'),M('Attends…'));
+s.el('<div class="ag" style="width:400px"><img src="img/predibot.jpg" style="width:280px;height:280px;border-color:#ff8a1f;box-shadow:0 0 40px rgba(255,138,31,.7)"><b>PrediBot</b><span>le chef d\'équipe</span><em class="s">BIENTÔT</em></div>',{x:540,y:620,fx:'pop',at:M('Un chef')});
+['Stock','Hygiène','Fournisseurs','Équipe'].forEach((c,i)=>s.el(`<div class="chip">${c}</div>`,{x:[230,850,230,850][i],y:[1000,1000,1130,1130][i],fx:'pop',at:M('Le stock,')+i*.45,z:12}));
+s.el('<div class="pill d">LE BON TRAVAIL AU BON AGENT</div>',{x:540,y:880,fx:'slam',at:M('Il donne')+.2,z:12});
+// 6. comme mes salariés
+s=layer(M('Attends…'),M('Tu veux ton'));
+s.el('<div class="pill">C\'EST COMME MES SALARIÉS</div>',{x:540,y:560,fx:'slam',at:M('Attends…')+.6});
+s.img(K+'horloge-24h.png',{x:540,y:830,w:260,fx:'pop',at:M('Oui. Et toi,')});
+s.el('<div class="stamp" style="color:#3ef08a;border-color:#3ef08a">AVANT MINUIT</div>',{x:560,y:1030,fx:'slam',at:M('Oui. Et toi,')+1.2,z:12});
+// CTA
+s=layer(M('Tu veux ton'),C.dur+1);
+s.el('<div style="display:flex;gap:16px">'+['caroline','jarvis','iris','predibot'].map(f=>`<img src="img/${f}.jpg" style="width:180px;height:180px;border-radius:50%;object-fit:cover;border:5px solid #38e1ff">`).join('')+'</div>',{x:540,y:440,fx:'pop',at:M('Tu veux ton')});
+s.el('<div class="holo" style="width:760px;text-align:center;border-color:#FFA500;box-shadow:0 0 40px #FFA50088"><div style="font-size:34px;font-weight:700;color:#9fb3d6">Écris en commentaire</div><div style="font-size:110px;font-weight:900;letter-spacing:-3px">ÉQUIPE</div><div style="font-size:30px;color:#9fb3d6">je t\'envoie la composition</div></div>',{x:540,y:760,fx:'pop',at:M('Commente ÉQUIPE.'),z:14});
+s.el('<div class="pill d">ÉPISODE 55/365</div>',{x:540,y:1010,fx:'fade',at:M('Commente ÉQUIPE.')+1,z:14});
+CAP.show=t=>t<M('Commente ÉQUIPE.');
+thumbAt(M('Un pour les réseaux')+1.2,'<i>Une équipe</i> <i class="k">d\'agents IA</i>');
+render(0);
+</script></body></html>

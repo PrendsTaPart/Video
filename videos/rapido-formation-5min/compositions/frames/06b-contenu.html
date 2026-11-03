@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>S6b — Le pipeline de contenu</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+        .photo { position: absolute; z-index: 2; left: 60px; top: 90px; width: 720px; height: 900px; border-radius: 30px; overflow: hidden; border: 1.5px solid rgba(27,42,65,0.08); opacity: 0; will-change: transform, opacity; }
+        .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block; }
+        .badge { position: absolute; left: 96px; top: 122px; z-index: 3; display: flex; gap: 12px; opacity: 0; will-change: opacity; }
+        .badge b { padding: 10px 20px; border-radius: 100px; background: rgba(255,255,255,0.92); font-family: "Poppins", sans-serif; font-weight: 700; font-size: 26px; color: #1b2a41; box-shadow: 0 6px 20px rgba(27,42,65,0.12); }
+
+        .kick { position: absolute; left: 850px; top: 150px; z-index: 3; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; color: #0077b0; opacity: 0; will-change: transform, opacity; }
+        .ask { position: absolute; left: 850px; top: 210px; z-index: 3; display: inline-block; background: #1b2a41; color: #f7f9fc; border-radius: 20px 20px 20px 6px; padding: 22px 34px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 40px; opacity: 0; will-change: transform, opacity; }
+
+        .cal { position: absolute; left: 850px; top: 350px; width: 1000px; box-sizing: border-box; background: #ffffff; border: 1.5px solid rgba(0,168,240,0.18); border-radius: 24px; padding: 26px 30px; z-index: 3; opacity: 0; will-change: transform, opacity; }
+        .cal h4 { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 30px; color: #1b2a41; margin: 0 0 6px; display: flex; align-items: center; gap: 14px; }
+        .cal h4 .plats { margin-left: auto; display: flex; gap: 10px; }
+        .cal h4 .plats span { font-family: "Inter", sans-serif; font-weight: 700; font-size: 22px; padding: 6px 14px; border-radius: 100px; background: rgba(0,168,240,0.1); color: #0077b0; opacity: 0; will-change: transform, opacity; }
+        .grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; margin-top: 22px; }
+        .day { text-align: center; }
+        .day .dn { font-family: "Inter", sans-serif; font-weight: 700; font-size: 24px; color: #94a3b8; margin-bottom: 10px; }
+        .day .slot { height: 96px; border-radius: 14px; background: #eef4fa; border: 1.5px dashed rgba(0,168,240,0.3); display: grid; place-items: center; overflow: hidden; }
+        .day .slot .post { width: 100%; height: 100%; border-radius: 12px; background: linear-gradient(135deg, #00a8f0, #0077b0); display: grid; place-items: center; opacity: 0; transform: scale(0.7); will-change: transform, opacity; }
+        .day .slot .post svg { width: 34px; height: 34px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+        .metric { position: absolute; left: 850px; top: 830px; z-index: 3; display: flex; align-items: center; gap: 22px; background: rgba(5,150,105,0.08); border: 1.5px solid rgba(5,150,105,0.35); border-radius: 20px; padding: 20px 30px; opacity: 0; will-change: transform, opacity; }
+        .metric svg.tr { width: 60px; height: 46px; fill: none; stroke: #059669; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+        .metric svg.tr path { stroke-dasharray: 1; stroke-dashoffset: 1; }
+        .metric .val b { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 46px; color: #059669; }
+        .metric .val span { display: block; font-family: "Inter", sans-serif; font-weight: 600; font-size: 26px; color: #566472; }
+      </style>
+
+      <div id="root" data-composition-id="06b-contenu" data-width="1920" data-height="1080" data-duration="15.964">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="15.464" data-track-index="0"></div>
+        <div id="photo-clip" class="clip photo" data-start="0" data-duration="15.464" data-track-index="1">
+          <img src="public/img4-posts.png" alt="Contenu réseaux sociaux" />
+        </div>
+        <div id="content" class="clip" data-start="0" data-duration="15.464" data-track-index="2" style="position:absolute; inset:0;">
+          <div class="badge" id="badge"><b>Cas nº2</b></div>
+          <div class="kick" id="kick">Le pipeline de contenu</div>
+          <div class="ask" id="ask">« Crée les posts de la semaine »</div>
+          <div class="cal" id="cal">
+            <h4>Calendrier éditorial<span class="plats"><span id="pl1">LinkedIn</span><span id="pl2">Facebook</span><span id="pl3">Instagram</span></span></h4>
+            <div class="grid">
+              <div class="day"><div class="dn">Lun</div><div class="slot"><div class="post" id="d1"><svg viewBox="0 0 24 24"><path d="M4 15l5-5 4 4 7-8" /><path d="M4 20h16" /></svg></div></div></div>
+              <div class="day"><div class="dn">Mar</div><div class="slot"><div class="post" id="d2"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" /><circle cx="12" cy="12" r="3.5" /></svg></div></div></div>
+              <div class="day"><div class="dn">Mer</div><div class="slot"><div class="post" id="d3"><svg viewBox="0 0 24 24"><path d="M4 15l5-5 4 4 7-8" /><path d="M4 20h16" /></svg></div></div></div>
+              <div class="day"><div class="dn">Jeu</div><div class="slot"><div class="post" id="d4"><svg viewBox="0 0 24 24"><path d="M7 8h10M7 12h10M7 16h6" /></svg></div></div></div>
+              <div class="day"><div class="dn">Ven</div><div class="slot"><div class="post" id="d5"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" /><circle cx="12" cy="12" r="3.5" /></svg></div></div></div>
+              <div class="day"><div class="dn">Sam</div><div class="slot"><div class="post" id="d6"><svg viewBox="0 0 24 24"><path d="M12 4v16M4 12h16" /></svg></div></div></div>
+              <div class="day"><div class="dn">Dim</div><div class="slot"><div class="post" id="d7"><svg viewBox="0 0 24 24"><path d="M7 8h10M7 12h10M7 16h6" /></svg></div></div></div>
+            </div>
+          </div>
+          <div class="metric" id="metric">
+            <svg class="tr" viewBox="0 0 60 46"><path id="trline" d="M4 40 L20 30 L34 34 L56 6" /><path d="M50 6 L56 6 L56 12" /></svg>
+            <span class="val"><b>+38 %</b><span>engagement · rapport à J+7</span></span>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo(".photo", { x: -30, opacity: 0 }, { x: 0, opacity: 1, duration: 0.85, ease: "power3.out" }, 0.0);
+        tl.fromTo("#badge", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 0.3);
+        tl.fromTo("#kick", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.6);
+        tl.fromTo("#ask", { y: -14, scale: 0.96, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 2.3);
+        tl.fromTo("#cal", { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 4.4);
+        var posts = ["#d1","#d2","#d3","#d4","#d5","#d6","#d7"];
+        posts.forEach(function (id, i) {
+          tl.fromTo(id, { scale: 0.7, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: "back.out(1.7)" }, 5.4 + i * 0.42);
+        });
+        ["#pl1","#pl2","#pl3"].forEach(function (id, i) {
+          tl.fromTo(id, { y: -8, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" }, 8.8 + i * 0.35);
+        });
+        tl.fromTo("#metric", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 12.2);
+        tl.fromTo("#trline", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1.0, ease: "power2.inOut" }, 12.6);
+        window.__timelines["06b-contenu"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 61 : le jeu du service</title>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter'}#stage{background:#1a1020}
+#cap{font-family:'Luckiest Guy';font-size:78px;color:#fff;text-transform:uppercase;-webkit-text-stroke:3px #111;text-shadow:0 6px 0 #111;letter-spacing:1px}#cap i.k{color:#ffd23f;font-style:normal}
+.game{font-family:'Luckiest Guy';color:#fff;-webkit-text-stroke:3px #111;text-shadow:0 8px 0 #111;text-align:center;line-height:1;white-space:nowrap}
+.p{font-family:'Luckiest Guy';font-size:44px;color:#111;background:#ffd23f;border:5px solid #111;border-radius:16px;padding:8px 20px;box-shadow:0 6px 0 #111;white-space:nowrap}
+.boom{position:relative;width:820px}.boom img{width:100%;display:block}.boom span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Luckiest Guy';font-size:84px;color:#c8283a;text-align:center;line-height:1}
+.gauge{position:relative;width:760px}.gauge img{width:100%;display:block}.gauge i{position:absolute;left:5%;top:24%;bottom:24%;border-radius:40px;background:linear-gradient(90deg,#ffb340,#ff2a2a)}
+.tk{width:600px;background:#fff;border:5px solid #111;border-radius:20px;padding:16px 22px;font-weight:900;font-size:38px;color:#111;box-shadow:0 8px 0 #111}.tk small{display:block;font-size:28px;color:#555}.tk.late{background:#ff4d4d;color:#fff}.tk.late small{color:#fff}
+.caro{text-align:center}.caro img{width:300px;height:300px;border-radius:50%;object-fit:cover;border:8px solid #ffd23f;box-shadow:0 8px 0 #111}
+.cta{font-family:'Luckiest Guy';font-size:110px;color:#111;background:#ffd23f;border:8px solid #111;border-radius:30px;padding:16px 46px;box-shadow:0 14px 0 #111;text-align:center;line-height:1}.cta small{display:block;font-family:'Inter';font-weight:900;font-size:34px;margin-bottom:8px}
+.sc .bg{filter:brightness(.55) saturate(.9)}
+.gbar{width:760px;height:80px;border:6px solid #111;border-radius:40px;background:#3a1010;overflow:hidden;box-shadow:0 8px 0 #111}.gbar i{display:block;height:100%;background:linear-gradient(90deg,#ffb340,#ff2a2a)}
+</style></head><body><div id="stage"><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=1460;CAP.group=3;CAP.kw=new Set(['coop.','restaurant,','cuisine.','salle.','téléphone.','lents,','s\'énervent.','vient','l\'écran.','QR','longtemps.','Caroline','ruine.','pleine,','reviennent.','FoodEatUp.','sorti.','SERVICE,']);
+const G='coup-de-feu-';
+let s=scene(0,M('Un joueur'),{bg:G+'salle-pleine.jpg',kb:[1.05,1.2]});
+s.img(G+'manette.png',{x:540,y:700,w:560,fx:'drop',at:.1,anim:'float',out:M('Sauf que')});
+s.el('<div class="game" style="font-size:110px">JEU COOP</div>',{x:540,y:1080,fx:'slam',at:M('Imagine un')+.6,out:M('Sauf que')});
+s.el('<div class="game" style="font-size:96px">TON RESTO<br><span style="color:#ffd23f">SAMEDI SOIR</span></div>',{x:540,y:760,fx:'slam',at:M('Sauf que')+.5});
+s=scene(M('Un joueur'),M('Plus vous'),{bg:G+'cuisine-passe-plat.jpg',kb:[1.05,1.15],tr:'cut'});
+s.img(G+'cuisinier-court.png',{x:270,y:880,w:560,fx:'left',at:M('Un joueur')});
+s.el('<div class="p">J1 · CUISINE</div>',{x:250,y:560,fx:'pop',at:M('Un joueur')+.2});
+s.img(G+'serveur-slalom.png',{x:800,y:980,w:560,fx:'right',at:M('Un autre')});
+s.el('<div class="p">J2 · SALLE</div>',{x:800,y:690,fx:'pop',at:M('Un autre')+.2});
+s.img(G+'patron-telephone.png',{x:400,y:1300,w:420,fx:'up',at:M('Et un troisième')});
+s.img(G+'telephone-sonne.png',{x:760,y:1250,w:260,fx:'pop',at:M('Et un troisième')+.3,anim:'shake'});
+s.el('<div class="p">J3 · TÉLÉPHONE</div>',{x:400,y:1060,fx:'pop',at:M('Et un troisième')+.2});
+s=scene(M('Plus vous'),M('Et là,'),{bg:G+'salle-pleine.jpg',kb:[1.1,1.2],tr:'cut'});
+s.img(G+'clients-enerves.png',{x:540,y:950,w:820,fx:'pop',at:M('Plus vous'),anim:'shake'});
+s.el('<div class="gbar"><i id="jg"></i></div>',{x:540,y:420,fx:'drop',at:M('Plus vous')});
+s.el('<div class="game" style="font-size:60px">COLÈRE DES CLIENTS</div>',{x:540,y:300,fx:'pop',at:M('Plus vous')+.2});
+s.fn(t=>{const e=document.getElementById('jg');if(e)e.style.width=(8+82*cl((t-M('Plus vous'))/2.6))+'%';});
+s=scene(M('Et là,'),M('Et ceux qui ont'),{bg:G+'cuisine-passe-plat.jpg',kb:[1.1,1.2],tr:'cut'});
+s.el('<div class="game" style="font-size:84px">2 TYPES<br>DE JOUEURS</div>',{x:540,y:420,fx:'slam',at:M('Et là,')+.3});
+s.img(G+'cuisinier-crie.png',{x:540,y:1080,w:640,fx:'up',at:M('Ceux qui crient'),anim:'shake'});
+s.el('<div class="boom"><img src="../kit/coup-de-feu-explosion-bd.png"><span>ÇA VIENT !</span></div>',{x:540,y:720,fx:'slam',at:M('Ceux qui crient')+.5,rot:-6,z:6,sc:.7});
+s=scene(M('Et ceux qui ont'),M('Alors il y a'),{bg:G+'cuisine-passe-plat.jpg',kb:[1.05,1.1],tr:'cut'});
+s.img(G+'ecran-cuisine.png',{x:540,y:560,w:820,fx:'pop',at:M('Et ceux qui ont'),out:M('La table')});
+s.img(G+'chevalet-qr.png',{x:270,y:560,w:380,fx:'pop',at:M('La table'),out:M('Et le téléphone')});
+s.el('<div class="tk">TABLE 4 · 2 PLATS<small>reçu en cuisine</small></div>',{x:700,y:860,fx:'right',at:M('le ticket'),out:M('Et le téléphone'),z:5});
+s.el('<div class="tk late" id="lt">TABLE 7 · ATTEND<small>depuis trop longtemps</small></div>',{x:700,y:1040,fx:'right',at:M('L\'écran montre'),out:M('Et le téléphone'),anim:'pulse',z:5});
+s.el('<div class="caro"><img src="img/caroline.jpg"></div>',{x:540,y:700,fx:'pop',at:M('Et le téléphone')+.4});
+s.el('<div class="p" style="font-size:52px">CAROLINE DÉCROCHE</div>',{x:540,y:960,fx:'slam',at:M('Caroline décroche.')});
+s.img(G+'telephone-sonne.png',{x:830,y:520,w:220,fx:'pop',at:M('Et le téléphone'),anim:'shake',out:M('Caroline décroche.')});
+s=scene(M('Alors il y a'),M('Et ceux qui finiront'),{bg:G+'salle-ruine.jpg',kb:[1.05,1.15],tr:'cut'});
+s.img(G+'clients-partent.png',{x:540,y:1050,w:620,fx:'up',at:M('Alors il y a')+.3});
+s.el('<div class="game" style="font-size:88px;color:#ff4d4d">GAME OVER</div>',{x:540,y:440,fx:'slam',at:M('en ruine.')});
+s=scene(M('Et ceux qui finiront'),M('Le jeu s\'appelle'),{bg:G+'salle-parfaite.jpg',kb:[1.05,1.15],tr:'cut'});
+s.img(G+'client-content.png',{x:540,y:1060,w:600,fx:'up',at:M('Et ceux qui finiront')+.2});
+s.img(G+'etoiles-score.png',{x:540,y:440,w:620,fx:'slam',at:M('salle pleine,')});
+s.el('<div class="game" style="font-size:72px">CLIENTS QUI REVIENNENT</div>',{x:540,y:660,fx:'pop',at:M('et des clients')});
+s=scene(M('Le jeu s\'appelle'),C.dur+1,{bg:G+'salle-pleine.jpg',kb:[1.1,1.2],tr:'cut'});
+s.el('<div style="background:#fff;border:8px solid #111;border-radius:40px;padding:30px 50px;box-shadow:0 12px 0 #111"><img src="img/foodeatup.png" style="width:520px;display:block"></div>',{x:540,y:520,fx:'slam',at:M('Le jeu s\'appelle')+.5});
+s.el('<div class="p" style="font-size:56px;background:#3ef08a">DÉJÀ SORTI</div>',{x:540,y:760,fx:'slam',at:M('Et il est')+.4,rot:-4});
+s.el('<div class="cta"><small>Écris en commentaire</small>SERVICE</div>',{x:540,y:1060,fx:'slam',at:M('Commente SERVICE,'),anim:'pulse'});
+s.el('<div class="p" style="font-size:30px">ÉPISODE 61/365</div>',{x:540,y:1290,fx:'fade',at:M('Commente SERVICE,')+1});
+CAP.show=t=>t<M('Commente SERVICE,');
+thumbAt(M('Plus vous')+2.4,'<i>Le jeu coop</i><br><i class="k">du samedi soir</i>');
+render(0);
+</script></body></html>

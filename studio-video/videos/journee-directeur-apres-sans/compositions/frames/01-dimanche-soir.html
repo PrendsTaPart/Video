@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f1-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f1-brokenline { position: absolute; left: 200px; right: 200px; top: 130px; height: 2px; }
+        .f1-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.5; transform-origin: 0% 50%; }
+
+        .f1-lines { position: absolute; left: 0; right: 0; top: 230px; text-align: center; }
+        .f1-l1 { font-size: 60px; font-weight: 700; line-height: 1.3; opacity: 0; }
+        .f1-l2 { font-size: 40px; font-weight: 500; color: rgba(58,63,69,0.85); margin-top: 20px; opacity: 0; }
+
+        .f1-desk {
+          position: absolute; left: 50%; top: 500px; width: 900px; height: 460px;
+          margin-left: -450px; border: 1px solid #8A9099; background: #E4E5E8;
+          overflow: hidden; opacity: 0;
+        }
+        .f1-desk img {
+          width: 100%; height: 100%; object-fit: cover;
+          filter: grayscale(0.85) contrast(1.05) brightness(0.94);
+          opacity: 0.7;
+        }
+        .f1-desk-label {
+          position: absolute; left: 24px; bottom: 20px;
+          font-size: 20px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase;
+          color: rgba(255,255,255,0.9);
+        }
+        .f1-desk-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(58,63,69,0) 55%, rgba(58,63,69,0.55) 100%); }
+      </style>
+
+      <div id="root" data-composition-id="01-dimanche-soir" data-width="1920" data-height="1080" data-duration="7.0">
+        <div class="f1-bg clip" id="f1-bgclip" data-start="0" data-duration="7.0" data-track-index="0"></div>
+
+        <div class="f1-brokenline" id="f1-brokenline">
+          <span style="left:4%; width:16%;"></span>
+          <span style="left:26%; width:20%; top:-3px;"></span>
+          <span style="left:52%; width:14%; top:2px;"></span>
+          <span style="left:72%; width:22%;"></span>
+        </div>
+
+        <div class="f1-lines">
+          <div class="f1-l1" id="f1-l1">Dimanche soir.</div>
+          <div class="f1-l2" id="f1-l2">Le tableur du mois.</div>
+        </div>
+
+        <div class="f1-desk" id="f1-desk">
+          <img src="public/generated/04-tableur.jpg" alt="" />
+          <div class="f1-desk-shade"></div>
+          <div class="f1-desk-label">le bilan, seul, à la maison</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f1-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set("#f1-l1", { opacity: 0, y: 14 });
+        gsap.set("#f1-l2", { opacity: 0, y: 12 });
+        gsap.set("#f1-desk", { opacity: 0, y: 16, scale: 0.97 });
+
+        // Scene 1 (0.0-0.85s): broken line draws itself on segment by segment as the film
+        // settles into this frame; cue "Dimanche soir." slides up.
+        tl.to("#f1-brokenline span", { opacity: 0.5, duration: 0.01 }, 0.12);
+        tl.to("#f1-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.07 }, 0.12);
+        tl.to("#f1-l1", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.3);
+
+        // Scene 2 (1.2-1.85s, cue "Le tableur du mois."): second line settles.
+        tl.to("#f1-l2", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 1.2);
+
+        // Scene 3 (1.6-2.35s): the tableur image rises into view beneath the text — a quiet,
+        // desaturated desk, not a demo screenshot.
+        tl.to("#f1-desk", { opacity: 1, y: 0, scale: 1, duration: 0.65, ease: "power3.out" }, 1.65);
+
+        // Scene 4 (2.35-7.0s): hold — subtle jitter on the broken line + a very slow drift on
+        // the desk image, the only motion left once the words have landed.
+        const f1phase = { p: 0 };
+        tl.to(f1phase, {
+          p: Math.PI * 2 * 1.3, duration: 4.6, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f1phase.p);
+            gsap.set("#f1-brokenline", { y: s * 1.5 });
+            gsap.set("#f1-desk", { y: s * 2.2 });
+          }
+        }, 2.4);
+
+        window.__timelines["01-dimanche-soir"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

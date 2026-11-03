@@ -1,0 +1,47 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Poppins SemiBold,50,&H00E6F9FC,&H00E6F9FC,&H00231A0F,&H00231A0F,0,0,0,0,100,100,0,0,3,16,0,2,90,90,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:03.16,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, je développe plusieurs logiciels,
+Dialogue: 0,0:00:03.16,0:00:04.70,Sub,,0,0,0,,{\fad(80,60)}je travaille avec des collaborateurs
+Dialogue: 0,0:00:04.70,0:00:06.38,Sub,,0,0,0,,{\fad(80,60)}et je construis des agents IA.
+Dialogue: 0,0:00:06.38,0:00:07.96,Sub,,0,0,0,,{\fad(80,60)}Mais comment organiser tout ce monde,
+Dialogue: 0,0:00:07.96,0:00:09.87,Sub,,0,0,0,,{\fad(80,60)}pour que chacun sache ce qu'il doit faire ?
+Dialogue: 0,0:00:12.00,0:00:14.10,Sub,,0,0,0,,{\fad(80,60)}Pour ça, j'ai développé RapidoRH.
+Dialogue: 0,0:00:14.10,0:00:17.12,Sub,,0,0,0,,{\fad(80,60)}Un outil qui me permet de centraliser mes projets, mes équipes,
+Dialogue: 0,0:00:17.12,0:00:19.44,Sub,,0,0,0,,{\fad(80,60)}les responsabilités et le travail à réaliser.
+Dialogue: 0,0:00:22.00,0:00:24.61,Sub,,0,0,0,,{\fad(80,60)}Chaque projet a son responsable, ses collaborateurs,
+Dialogue: 0,0:00:24.61,0:00:26.73,Sub,,0,0,0,,{\fad(80,60)}ses dates et ses tâches, avec leur priorité.
+Dialogue: 0,0:00:26.73,0:00:28.01,Sub,,0,0,0,,{\fad(80,60)}Je peux savoir où en est le travail,
+Dialogue: 0,0:00:28.01,0:00:29.31,Sub,,0,0,0,,{\fad(80,60)}et ce qu'il reste à faire.
+Dialogue: 0,0:00:41.01,0:00:43.59,Sub,,0,0,0,,{\fad(80,60)}J'organise mes collaborateurs par rôles et par départements,
+Dialogue: 0,0:00:43.59,0:00:45.83,Sub,,0,0,0,,{\fad(80,60)}et je leur donne accès aux informations dont ils ont besoin.
+Dialogue: 0,0:00:45.83,0:00:47.21,Sub,,0,0,0,,{\fad(80,60)}Mais le plus intéressant,
+Dialogue: 0,0:00:47.21,0:00:50.35,Sub,,0,0,0,,{\fad(80,60)}c'est que j'ai connecté RapidoRH à Claude grâce à son MCP.
+Dialogue: 0,0:00:50.35,0:00:52.17,Sub,,0,0,0,,{\fad(80,60)}Je peux lui demander d'analyser mes projets,
+Dialogue: 0,0:00:52.17,0:00:53.57,Sub,,0,0,0,,{\fad(80,60)}de retrouver les tâches prioritaires
+Dialogue: 0,0:00:53.57,0:00:55.39,Sub,,0,0,0,,{\fad(80,60)}et de préparer le travail de la journée.
+Dialogue: 0,0:01:12.00,0:01:13.87,Sub,,0,0,0,,{\fad(80,60)}Et avec mes routines, je peux aller plus loin :
+Dialogue: 0,0:01:13.87,0:01:16.31,Sub,,0,0,0,,{\fad(80,60)}préparer les tâches du matin, détecter les blocages,
+Dialogue: 0,0:01:16.31,0:01:18.89,Sub,,0,0,0,,{\fad(80,60)}suivre les échéances et proposer les prochaines actions.
+Dialogue: 0,0:01:18.89,0:01:21.41,Sub,,0,0,0,,{\fad(80,60)}Une routine, il faut un orchestrateur pour la lancer :
+Dialogue: 0,0:01:21.41,0:01:23.37,Sub,,0,0,0,,{\fad(80,60)}Claude Code, Plan'It ou n8n.
+Dialogue: 0,0:01:23.37,0:01:26.41,Sub,,0,0,0,,{\fad(80,60)}Mon objectif, c'est de faire travailler les humains et les agents IA
+Dialogue: 0,0:01:26.41,0:01:27.89,Sub,,0,0,0,,{\fad(80,60)}dans une organisation cohérente.
+Dialogue: 0,0:01:27.89,0:01:29.99,Sub,,0,0,0,,{\fad(80,60)}Les humains prennent les décisions importantes,
+Dialogue: 0,0:01:29.99,0:01:31.91,Sub,,0,0,0,,{\fad(80,60)}les agents exécutent les missions autorisées,
+Dialogue: 0,0:01:31.91,0:01:34.27,Sub,,0,0,0,,{\fad(80,60)}et RapidoRH permet de suivre le travail.
+Dialogue: 0,0:01:36.00,0:01:37.85,Sub,,0,0,0,,{\fad(80,60)}Pour moi, le véritable enjeu de l'IA,
+Dialogue: 0,0:01:37.85,0:01:39.95,Sub,,0,0,0,,{\fad(80,60)}ce n'est pas seulement d'avoir des agents intelligents.
+Dialogue: 0,0:01:39.95,0:01:42.99,Sub,,0,0,0,,{\fad(80,60)}C'est de savoir organiser leur travail, mesurer leurs résultats,
+Dialogue: 0,0:01:42.99,0:01:44.74,Sub,,0,0,0,,{\fad(80,60)}et les faire collaborer avec les humains.
+Dialogue: 0,0:01:46.00,0:01:47.44,Sub,,0,0,0,,{\fad(80,60)}Et demain, je vous montrerai une nouvelle étape
+Dialogue: 0,0:01:47.44,0:01:50.07,Sub,,0,0,0,,{\fad(80,60)}de mon quotidien d'entrepreneur avec l'IA.

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E6 F1 — La mémoire de ta boîte (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; background-image: radial-gradient(circle at 50% 40%, rgba(90,103,242,0.08), transparent 55%); }
+
+        .head { position: absolute; left: 80px; right: 80px; top: 150px; z-index: 4; text-align: center; }
+        .head .ey { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.1em; text-transform: uppercase; color: #5a67f2; opacity: 0; margin: 0 0 14px; will-change: transform, opacity; }
+        .head .k { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 74px; line-height: 1.05; letter-spacing: -0.02em; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+        .head .k .a { color: #5a67f2; }
+
+        .hub { position: absolute; left: 50%; top: 500px; transform: translateX(-50%); z-index: 4; width: 220px; height: 220px; border-radius: 50%; background: #5a67f2; display: grid; place-items: center; opacity: 0; box-shadow: 0 24px 60px rgba(90,103,242,0.35); will-change: transform, opacity; }
+        .hub svg { width: 120px; height: 120px; fill: none; stroke: #fff; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+
+        .grid { position: absolute; left: 100px; top: 820px; width: 880px; z-index: 3; display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+        .chip { box-sizing: border-box; height: 170px; background: #fff; border: 1.5px solid rgba(90,103,242,0.2); border-radius: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; opacity: 0; will-change: transform, opacity; }
+        .chip b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 44px; color: #1b2a41; }
+        .chip span { font-family: "Inter", sans-serif; font-weight: 500; font-size: 28px; color: #566472; }
+
+        .foot { position: absolute; left: 50%; top: 1700px; transform: translateX(-50%); z-index: 4; padding: 22px 44px; background: #1b2a41; border-radius: 100px; opacity: 0; white-space: nowrap; will-change: transform, opacity; }
+        .foot b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 38px; color: #fff; }
+        .foot b span { color: #9aa6ff; }
+      </style>
+
+      <div id="root" data-composition-id="01-kb" data-width="1080" data-height="1920" data-duration="9.742">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="9.242" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="9.242" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="head">
+            <p class="ey" id="ey">L'onboarding entreprise</p>
+            <div class="k" id="k">La <span class="a">mémoire</span> de ta boîte.</div>
+          </div>
+          <div class="hub" id="hub"><svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 0 0-4 4 3 3 0 0 0-2 5 3 3 0 0 0 2 5 4 4 0 0 0 8 0 3 3 0 0 0 2-5 3 3 0 0 0-2-5 4 4 0 0 0-4-4z" /><path d="M12 7v10M8.5 9.5h7M8.5 14.5h7" /></svg></div>
+          <div class="grid">
+            <div class="chip" id="c1"><b>Activité</b><span>ce que tu fais</span></div>
+            <div class="chip" id="c2"><b>Ton</b><span>ta voix de marque</span></div>
+            <div class="chip" id="c3"><b>Clients</b><span>à qui tu parles</span></div>
+            <div class="chip" id="c4"><b>Offres</b><span>ce que tu vends</span></div>
+          </div>
+          <div class="foot" id="foot"><b>relue à <span>chaque tâche</span></b></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#ey", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.1);
+        tl.fromTo("#k", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.4);
+        tl.fromTo("#hub", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(1.6)" }, 1.3);
+        var cues = [3.2, 4.0, 4.8, 5.6];
+        ["#c1","#c2","#c3","#c4"].forEach(function (id, i) {
+          tl.fromTo(id, { y: 22, scale: 0.92, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.42, ease: "power3.out" }, cues[i]);
+        });
+        tl.fromTo("#hub", { boxShadow: "0 24px 60px rgba(90,103,242,0.35)" }, { boxShadow: "0 24px 90px rgba(90,103,242,0.6)", duration: 0.8, yoyo: true, repeat: 1, ease: "power2.inOut" }, 6.4);
+        tl.fromTo("#foot", { y: 18, scale: 0.9, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.5)" }, 7.4);
+        window.__timelines["01-kb"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

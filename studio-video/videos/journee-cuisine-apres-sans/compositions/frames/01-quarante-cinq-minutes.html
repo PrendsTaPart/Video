@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .g1-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .g1-stage { position: absolute; inset: 0; }
+
+        .g1-brokenline { position: absolute; left: 200px; right: 200px; top: 96px; height: 2px; }
+        .g1-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.5; transform-origin: 0% 50%; }
+
+        .g1-label {
+          position: absolute; left: 0; right: 0; top: 176px; text-align: center;
+          font-size: 38px; font-weight: 600; color: rgba(58,63,69,0.85); opacity: 0;
+        }
+
+        .g1-counter {
+          position: absolute; left: 0; right: 0; top: 330px; text-align: center;
+          font-size: 340px; font-weight: 800; color: #D64545; line-height: 1;
+          font-variant-numeric: tabular-nums; opacity: 0;
+        }
+        .g1-counter .suffix { font-size: 60px; font-weight: 600; color: rgba(58,63,69,0.85); margin-left: 16px; }
+
+        .g1-ring {
+          position: absolute; left: 50%; top: 330px; width: 460px; height: 460px;
+          margin-left: -230px; border-radius: 50%; border: 3px solid #D64545; opacity: 0;
+        }
+
+        .g1-punch {
+          position: absolute; left: 0; right: 0; top: 800px; text-align: center;
+          font-size: 66px; font-weight: 800; letter-spacing: -0.005em; opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="01-quarante-cinq-minutes" data-width="1920" data-height="1080" data-duration="8.0">
+        <div class="g1-bg clip" id="g1-bgclip" data-start="0" data-duration="8.0" data-track-index="1"></div>
+
+        <div class="g1-stage" id="g1-stage">
+          <div class="g1-brokenline" id="g1-brokenline">
+            <span style="left:2%; width:14%;"></span>
+            <span style="left:22%; width:18%; top:-3px;"></span>
+            <span style="left:46%; width:12%; top:2px;"></span>
+            <span style="left:64%; width:20%;"></span>
+            <span style="left:88%; width:10%; top:-2px;"></span>
+          </div>
+
+          <div class="g1-label" id="g1-label">le service est fini depuis</div>
+
+          <div class="g1-ring" id="g1-ring"></div>
+          <div class="g1-counter" id="g1-counter">0<span class="suffix">MIN</span></div>
+
+          <div class="g1-punch" id="g1-punch">Moi, non.</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#g1-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set("#g1-label", { opacity: 0, y: 12 });
+        gsap.set("#g1-counter", { opacity: 0, scale: 0.9 });
+        gsap.set("#g1-ring", { opacity: 0, scale: 0.85 });
+        gsap.set("#g1-punch", { opacity: 0, y: 16 });
+
+        // Scene 1 (0.0-0.6s): broken line draws itself on, segment by segment
+        tl.to("#g1-brokenline span", { opacity: 0.5, duration: 0.01 }, 0.1);
+        tl.to("#g1-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.07 }, 0.1);
+
+        // Scene 2 (0.2-0.9s, cue "Le service est fini depuis"): label settles
+        tl.to("#g1-label", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.25);
+
+        // Scene 3 (0.9-2.2s, cue "quarante-cinq minutes."): counter counts 0 -> 45
+        tl.to("#g1-counter", { opacity: 1, scale: 1, duration: 0.3, ease: "power3.out" }, 0.95);
+        const g1count = { v: 0 };
+        const g1el = document.getElementById("g1-counter");
+        tl.to(g1count, {
+          v: 45, duration: 1.2, ease: "power2.out",
+          onUpdate: () => { g1el.firstChild.nodeValue = Math.round(g1count.v); }
+        }, 1.0);
+        tl.fromTo("#g1-ring", { opacity: 0, scale: 0.85 }, { opacity: 0.7, scale: 1, duration: 0.4, ease: "power3.out" }, 1.9);
+
+        // Scene 4 (2.5-3.3s, cue "Moi, non."): the punch line lands
+        tl.to("#g1-punch", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 2.55);
+
+        // Scene 5 (3.3-8.0s): hold — continuous low-amplitude drift across the whole stage, plus
+        // a second, later beat: the alert ring pulses once more mid-hold to keep the frame alive.
+        const g1stage = document.getElementById("g1-stage");
+        const g1drift = { p: 0 };
+        tl.to(g1drift, {
+          p: Math.PI * 2 * 1.6, duration: 4.6, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(g1drift.p);
+            g1stage.style.transform = `translate(${s * 2.5}px, ${Math.sin(g1drift.p * 0.6) * 1.8}px) scale(${1 + s * 0.002})`;
+          }
+        }, 3.3);
+        tl.to("#g1-ring", { scale: 1.08, opacity: 0.35, duration: 0.68, ease: "power2.out" }, 5.4);
+        tl.to("#g1-ring", { scale: 1, opacity: 0.7, duration: 0.6, ease: "power2.inOut" }, 6.14);
+
+        window.__timelines["01-quarante-cinq-minutes"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+1
+00:00:00,600 --> 00:00:02,320
+Aujourd'hui, je vais te montrer comment j'ai créé
+
+2
+00:00:02,320 --> 00:00:04,880
+une IA qui transforme mes réunions en tâches.
+
+3
+00:00:04,880 --> 00:00:06,580
+Parce que les réunions, c'est bien…
+
+4
+00:00:06,580 --> 00:00:08,160
+Mais combien de fois on sort d'une réunion
+
+5
+00:00:08,160 --> 00:00:10,120
+avec plein d'idées, des décisions…
+
+6
+00:00:10,120 --> 00:00:12,440
+et personne ne sait vraiment qui doit faire quoi ?
+
+7
+00:00:12,440 --> 00:00:14,580
+Alors, j'ai développé RapidoMeet.
+
+8
+00:00:14,580 --> 00:00:16,860
+J'enregistre la réunion, ou j'importe l'audio.
+
+9
+00:00:16,860 --> 00:00:18,960
+La conversation est transcrite avec Whisper.
+
+10
+00:00:18,960 --> 00:00:21,600
+Ensuite, Gemini en tire un résumé, les décisions,
+
+11
+00:00:21,600 --> 00:00:24,180
+et les tâches, avec leur responsable, leur échéance…
+
+12
+00:00:24,180 --> 00:00:26,100
+et la phrase exacte qui les a fait naître.
+
+13
+00:00:30,220 --> 00:00:33,020
+Imagine : on décide de lancer une nouvelle extension FoodEatUp.
+
+14
+00:00:33,020 --> 00:00:35,260
+Préparer une démo, créer une campagne,
+
+15
+00:00:35,260 --> 00:00:36,900
+contacter les clients intéressés.
+
+16
+00:00:36,900 --> 00:00:39,100
+RapidoMeet range les tâches dans son tableau de suivi.
+
+17
+00:00:39,100 --> 00:00:41,340
+Il peut préparer les fiches prospects pour RapidoCRM
+
+18
+00:00:41,340 --> 00:00:43,200
+et les contenus pour RapidoCMS…
+
+19
+00:00:43,200 --> 00:00:45,360
+mais chaque écriture attend ma validation.
+
+20
+00:00:45,360 --> 00:00:47,720
+Pour RapidoRH, il sait déjà lire les projets.
+
+21
+00:00:47,720 --> 00:00:50,200
+Y créer les tâches directement, c'est la prochaine étape.
+
+22
+00:00:50,200 --> 00:00:53,060
+Et je reste honnête : le projet est livré à 83 %.
+
+23
+00:00:53,060 --> 00:00:55,550
+Je termine la sécurité avant de l'ouvrir à mes clients.
+
+24
+00:00:57,060 --> 00:01:00,060
+Avant, je terminais mes réunions avec une liste de choses à faire.
+
+25
+00:01:00,060 --> 00:01:02,340
+Maintenant, chaque réunion peut devenir un plan d'action.
+
+26
+00:01:02,340 --> 00:01:03,700
+Et toi, combien de temps tu perds
+
+27
+00:01:03,700 --> 00:01:05,550
+à faire tes comptes rendus de réunion ?
+

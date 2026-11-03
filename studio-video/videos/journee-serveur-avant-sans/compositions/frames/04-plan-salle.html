@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f4p-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .f4p-stage { position: absolute; inset: 0; }
+
+        .f4p-brokenline { position: absolute; left: 140px; right: 140px; top: 96px; height: 2px; }
+        .f4p-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.55; transform-origin: 0% 50%; }
+
+        .f4p-photo {
+          position: absolute; left: 620px; top: 130px; width: 660px; height: 800px;
+          border: 1px solid #8A9099; box-shadow: 0 20px 50px rgba(20,22,25,0.14); overflow: hidden;
+        }
+        .f4p-photo img {
+          width: 100%; height: 100%; object-fit: cover; display: block;
+          filter: grayscale(0.85) contrast(1.08) brightness(1.0);
+        }
+
+        /* the ring marks table 5 on the sketched plan (approx position within the photo) */
+        .f4p-ring {
+          position: absolute; left: 1045px; top: 377px; width: 130px; height: 130px;
+          border: 3px solid #D64545; border-radius: 50%; opacity: 0;
+        }
+        .f4p-badge {
+          position: absolute; left: 1190px; top: 400px;
+          padding: 8px 18px; border: 2px solid #D64545; border-radius: 999px;
+          background: #EDEEF0;
+          font-size: 26px; font-weight: 800; color: #D64545; opacity: 0;
+        }
+
+        .f4p-label { position: absolute; left: 140px; top: 200px; width: 420px; font-size: 42px; font-weight: 600; line-height: 1.3; opacity: 0; }
+        .f4p-sub { position: absolute; left: 140px; top: 400px; width: 420px; font-size: 26px; font-weight: 500; color: rgba(58,63,69,0.85); line-height: 1.5; opacity: 0; }
+
+        .f4p-connector { position: absolute; left: 560px; top: 400px; width: 60px; height: 2px; }
+        .f4p-connector svg { position: absolute; top: -1px; left: 0; overflow: visible; }
+
+        .f4p-closing {
+          position: absolute; left: 140px; width: 420px; top: 620px;
+          font-size: 30px; font-weight: 600; color: #3A3F45; line-height: 1.4; opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="04-plan-salle" data-width="1920" data-height="1080" data-duration="18">
+        <div class="f4p-bg clip" id="f4p-bgclip" data-start="0" data-duration="18" data-track-index="1"></div>
+
+        <div class="f4p-stage">
+          <div class="f4p-brokenline" id="f4p-brokenline">
+            <span style="left:0%; width:16%;"></span>
+            <span style="left:20%; width:22%; top:-3px;"></span>
+            <span style="left:46%; width:14%; top:2px;"></span>
+            <span style="left:64%; width:20%;"></span>
+            <span style="left:88%; width:12%; top:-2px;"></span>
+          </div>
+
+          <div class="f4p-label" id="f4p-label">Le plan de salle</div>
+          <div class="f4p-sub" id="f4p-sub">Dessiné au crayon, sur une feuille plastifiée.</div>
+
+          <div class="f4p-connector" id="f4p-connector">
+            <svg width="60" height="2" viewBox="0 0 60 2">
+              <line id="f4p-connline" x1="0" y1="1" x2="60" y2="1" stroke="#8A9099" stroke-width="2" stroke-dasharray="8 8" />
+            </svg>
+          </div>
+
+          <div class="f4p-photo" id="f4p-photo">
+            <img src="public/photos/floor-plan-sketch.jpg" alt="" />
+          </div>
+          <div class="f4p-ring" id="f4p-ring"></div>
+          <div class="f4p-badge" id="f4p-badge">× 2</div>
+
+          <div class="f4p-closing" id="f4p-closing">Une table réservée deux fois. On le découvrira à l'arrivée du deuxième client.</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f4p-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set("#f4p-photo", { opacity: 0, x: 40 });
+        gsap.set(["#f4p-label", "#f4p-sub"], { opacity: 0, y: 10 });
+        gsap.set("#f4p-connline", { opacity: 0 });
+        gsap.set("#f4p-ring", { opacity: 0, scale: 0.8 });
+        gsap.set("#f4p-badge", { opacity: 0, scale: 0 });
+        gsap.set("#f4p-closing", { opacity: 0, y: 12 });
+
+        // Scene 1 (0.0-1.0s): broken line draws itself on
+        tl.to("#f4p-brokenline span", { opacity: 0.55, duration: 0.01 }, 0.15);
+        tl.to("#f4p-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.08 }, 0.15);
+
+        // continuous low-amplitude drift, a touch slower here — the longest hold of the film
+        const f4pdrift = { p: 0 };
+        const f4pstage = document.querySelector(".f4p-stage");
+        tl.to(f4pdrift, {
+          p: Math.PI * 2 * 4.2, duration: 17.4, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f4pdrift.p);
+            f4pstage.style.transform = `translate(${s * 3}px, ${Math.sin(f4pdrift.p * 0.6) * 2}px) scale(${1 + s * 0.0022})`;
+          }
+        }, 0.3);
+
+        // Scene 2 (0.4-1.5s, cue "Le plan de salle,"): label settles, photo slides in
+        tl.to("#f4p-label", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.5);
+        tl.to("#f4p-photo", { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 0.7);
+
+        // Scene 3 (1.7-3.0s, cue "dessiné au crayon sur une feuille plastifiée."): sub label,
+        // dashed connector draws from the text block toward the plan.
+        tl.to("#f4p-sub", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.9);
+        const connLine = document.getElementById("f4p-connline");
+        const connLen = connLine.getTotalLength();
+        connLine.style.strokeDasharray = connLen;
+        connLine.style.strokeDashoffset = connLen;
+        tl.to("#f4p-connline", { opacity: 1, duration: 0.2 }, 2.3);
+        tl.to("#f4p-connline", { strokeDashoffset: 0, duration: 0.5, ease: "power2.out" }, 2.35);
+
+        // Scene 4 (4.4-6.8s, cue "Une table est réservée deux fois."): the red ring lands on the
+        // double-booked table, the "×2" badge pops beside it.
+        tl.fromTo("#f4p-ring", { opacity: 0, scale: 0.8 }, { opacity: 0.85, scale: 1, duration: 0.5, ease: "power3.out" }, 4.6);
+        tl.fromTo("#f4p-badge", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.45, ease: "power3.out" }, 5.2);
+
+        // Scene 5 (6.8-9.5s, cue "On le découvrira à l'arrivée du deuxième client."): closing line
+        tl.to("#f4p-closing", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 7.0);
+
+        // Scene 6 (9.5-18s): hold — subtle pulse on the ring only
+        const f4pphase = { p: 0 };
+        tl.to(f4pphase, {
+          p: Math.PI * 2 * 2.1, duration: 2.6, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f4pphase.p);
+            document.getElementById("f4p-ring").style.transform = `scale(${1 + s * 0.02})`;
+          }
+        }, 9.6);
+
+        window.__timelines["04-plan-salle"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

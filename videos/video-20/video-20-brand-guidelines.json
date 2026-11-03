@@ -1,0 +1,93 @@
+{
+  "source": "MCP FoodEatUp Formation, get_brand_guidelines (sans filtre), 26/10/2026",
+  "page": "https://formation.foodeatup.fr/charte-graphique",
+  "regles": [
+    "Le logo officiel s'utilise en fichier, jamais redessiné, recoloré ni généré par une IA.",
+    "Les couleurs de la marque sont des jetons : n'en inventez pas d'autres.",
+    "Sur fond sombre, le logo va dans une pastille blanche.",
+    "Aucun prix, aucune remise, aucun chiffre non sourcé sur un visuel."
+  ],
+  "serie": {
+    "couleurs": {
+      "marque": "#007bff",
+      "orange": "#ffa500",
+      "nuit": "#0f1a23",
+      "creme": "#fcf9e6",
+      "blanc": "#ffffff",
+      "bleuFonce": "#0b4fa8"
+    },
+    "typographie": "Goodly (charte) ; la série utilise Poppins comme les épisodes précédents",
+    "video_verticale": "1080 × 1920, sous-titres crème sur bande nuit, logo en bas à droite"
+  },
+  "chartes": {
+    "foodeatup": {
+      "couleurs": [
+        "#0F1A23",
+        "#007BFF",
+        "#FFA500",
+        "#FCF9E6"
+      ],
+      "typographie": "Goodly",
+      "logo": "assets/logos/chartes/foodeatup.png",
+      "pdf": "https://formation.foodeatup.fr/brand/chartes/charte-foodeatup.pdf"
+    },
+    "braindcode": {
+      "couleurs": [
+        "#000000",
+        "#161B2C",
+        "#0098F3",
+        "#C1C1C1",
+        "#FFFFFF"
+      ],
+      "typographie": "Poppins",
+      "logo": "assets/logos/chartes/braindcode.png",
+      "pdf": "https://formation.foodeatup.fr/brand/chartes/charte-braindcode.pdf"
+    },
+    "rapidosoftware": {
+      "couleurs": [
+        "#383838"
+      ],
+      "typographie": "Arial",
+      "logo": "assets/logos/chartes/rapidosoftware.png",
+      "declinaisons": {
+        "rapidocrm": {
+          "accent": "#4CAF50",
+          "logo": "assets/logos/chartes/rapidocrm.png"
+        },
+        "rapidocms": {
+          "accent": "#03A9F5",
+          "logo": "assets/logos/chartes/rapidocms.png"
+        },
+        "rapidorh": {
+          "accent": "#7E57C2",
+          "logo": "assets/logos/chartes/rapidorh.png"
+        }
+      }
+    },
+    "planit": {
+      "couleurs": [
+        "#FE64D5",
+        "#4F2DF9",
+        "#8236F8",
+        "#1F0D3E"
+      ],
+      "typographie": "Alte Haas Grotesk",
+      "logo": "assets/logos/chartes/planit.png",
+      "regle": "Dégradé #4F2DF9 → #FE64D5 pour les fonds"
+    },
+    "lovable": {
+      "couleurs": [
+        "#EF6F30",
+        "#EB5358",
+        "#BA6DE0",
+        "#8D71F2"
+      ],
+      "logo": "assets/logos/chartes/lovable.png"
+    },
+    "startupforge": {
+      "logo": "assets/logos/logiciels/startupforge.webp",
+      "note": "logo présent dans le MCP, pas de charte détaillée"
+    }
+  },
+  "manifeste_logos": "assets/logos/manifeste.json"
+}

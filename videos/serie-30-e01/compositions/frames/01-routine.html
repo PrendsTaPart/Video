@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E1 F1 — La routine (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; background-image: radial-gradient(circle at 50% 20%, rgba(90,103,242,0.08), transparent 55%); }
+
+        .head { position: absolute; left: 80px; right: 80px; top: 150px; z-index: 4; text-align: center; }
+        .head .ey { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0.1em; text-transform: uppercase; color: #5a67f2; opacity: 0; margin: 0 0 14px; will-change: transform, opacity; }
+        .head .k { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 78px; line-height: 1.05; letter-spacing: -0.02em; color: #1b2a41; opacity: 0; will-change: transform, opacity; }
+        .head .k .a { color: #5a67f2; }
+
+        .steps { position: absolute; left: 120px; top: 470px; width: 840px; z-index: 3; display: flex; flex-direction: column; gap: 20px; }
+        .step { display: flex; align-items: center; gap: 26px; background: #ffffff; border: 1.5px solid rgba(90,103,242,0.18); border-radius: 22px; padding: 26px 32px; opacity: 0; will-change: transform, opacity; }
+        .step .n { flex: none; width: 74px; height: 74px; border-radius: 20px; background: rgba(90,103,242,0.1); display: grid; place-items: center; font-family: "Poppins", sans-serif; font-weight: 800; font-size: 40px; color: #5a67f2; }
+        .step b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 46px; color: #1b2a41; }
+        .step span { display: block; margin-top: 2px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 30px; color: #566472; }
+        .step .tx { line-height: 1.05; }
+
+        .foot { position: absolute; left: 50%; top: 1740px; transform: translateX(-50%); z-index: 4; display: flex; gap: 16px; opacity: 0; will-change: transform, opacity; }
+        .foot .pill { padding: 16px 32px; border-radius: 100px; background: #1b2a41; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; color: #fff; white-space: nowrap; }
+        .foot .pill.a { background: #5a67f2; }
+      </style>
+
+      <div id="root" data-composition-id="01-routine" data-width="1080" data-height="1920" data-duration="13.596">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="13.096" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="13.096" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="head">
+            <p class="ey" id="ey">C'est quoi une routine ?</p>
+            <div class="k" id="k">L'IA qui <span class="a">bosse</span><br />toute seule.</div>
+          </div>
+          <div class="steps">
+            <div class="step" id="s1"><span class="n">1</span><span class="tx"><b>Observe</b><span>emails, agendas, données</span></span></div>
+            <div class="step" id="s2"><span class="n">2</span><span class="tx"><b>Planifie</b><span>ce qui compte aujourd'hui</span></span></div>
+            <div class="step" id="s3"><span class="n">3</span><span class="tx"><b>Agit</b><span>dans tes outils</span></span></div>
+            <div class="step" id="s4"><span class="n">4</span><span class="tx"><b>Apprend</b><span>de tes retours</span></span></div>
+            <div class="step" id="s5"><span class="n">5</span><span class="tx"><b>Rend compte</b><span>une page, c'est tout</span></span></div>
+          </div>
+          <div class="foot" id="foot"><span class="pill">à heure fixe</span><span class="pill a">0 clic</span></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#ey", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.1);
+        tl.fromTo("#k", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.4);
+        var cues = [1.8, 3.6, 5.4, 7.2, 9.0];
+        ["#s1","#s2","#s3","#s4","#s5"].forEach(function (id, i) {
+          tl.fromTo(id, { x: -26, scale: 0.96, opacity: 0 }, { x: 0, scale: 1, opacity: 1, duration: 0.44, ease: "power3.out" }, cues[i]);
+        });
+        tl.fromTo("#foot", { y: 18, scale: 0.9, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.5)" }, 10.9);
+        window.__timelines["01-routine"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,355 @@
+{
+ "CHARTES": {
+  "foodeatup": {
+   "id": "foodeatup",
+   "nom": "FoodEatUp",
+   "logo": "/brand/logos/foodeatup.webp",
+   "site": "https://site.foodeatup.com",
+   "couleurs": [
+    {
+     "nom": "Nuit",
+     "hex": "#0F1A23"
+    },
+    {
+     "nom": "Bleu FoodEatUp",
+     "hex": "#007BFF"
+    },
+    {
+     "nom": "Orange",
+     "hex": "#FFA500"
+    },
+    {
+     "nom": "Crème",
+     "hex": "#FCF9E6"
+    }
+   ],
+   "typographie": "Goodly, six graisses : titres 44 pt, sous-titres 33 pt, texte 22 pt.",
+   "regles": [
+    "Zone de protection : la moitié de la hauteur du logo ; taille minimale 70 px.",
+    "Texte en couleur sur fond noir ou blanc ; texte noir sur fond coloré.",
+    "L'orange est un accent, une seule fois par écran, pour l'action.",
+    "Ne pas encadrer, incliner, recolorer ni modifier le logo."
+   ],
+   "pdf": "/brand/chartes/charte-foodeatup.pdf"
+  },
+  "rapidocrm": {
+   "id": "rapidocrm",
+   "nom": "RapidoCRM",
+   "logo": "/brand/logos/rapidocrm.webp",
+   "site": "https://rapido-crm.com",
+   "couleurs": [
+    {
+     "nom": "Gris primaire",
+     "hex": "#383838"
+    },
+    {
+     "nom": "Vert RapidoCRM",
+     "hex": "#4CAF50"
+    },
+    {
+     "nom": "Violet RapidoRH",
+     "hex": "#7E57C2"
+    },
+    {
+     "nom": "Bleu RapidoCMS",
+     "hex": "#03A9F5"
+    }
+   ],
+   "typographie": "Arial Bold et Arial Regular, qui donnent l'importance au nom du logiciel.",
+   "regles": [
+    "Trois oiseaux en harmonie : les trois logiciels.",
+    "Logo en couleurs sur fond blanc, ou en défonce sur les teintes de la charte.",
+    "Ne pas modifier, déformer ni faire pivoter le logo."
+   ],
+   "pdf": "/brand/chartes/charte-rapidosoftware.pdf"
+  },
+  "rapidocms": {
+   "id": "rapidocms",
+   "nom": "RapidoCMS",
+   "logo": "/brand/logos/rapidocms.webp",
+   "site": "https://rapidocms.com",
+   "couleurs": [
+    {
+     "nom": "Gris primaire",
+     "hex": "#383838"
+    },
+    {
+     "nom": "Vert RapidoCRM",
+     "hex": "#4CAF50"
+    },
+    {
+     "nom": "Violet RapidoRH",
+     "hex": "#7E57C2"
+    },
+    {
+     "nom": "Bleu RapidoCMS",
+     "hex": "#03A9F5"
+    }
+   ],
+   "typographie": "Arial Bold et Arial Regular, qui donnent l'importance au nom du logiciel.",
+   "regles": [
+    "Trois oiseaux en harmonie : les trois logiciels.",
+    "Logo en couleurs sur fond blanc, ou en défonce sur les teintes de la charte.",
+    "Ne pas modifier, déformer ni faire pivoter le logo."
+   ],
+   "pdf": "/brand/chartes/charte-rapidosoftware.pdf"
+  },
+  "rapidorh": {
+   "id": "rapidorh",
+   "nom": "RapidoRH",
+   "logo": "/brand/logos/rapidorh.webp",
+   "site": "https://rh.rapidosoftware.com",
+   "couleurs": [
+    {
+     "nom": "Gris primaire",
+     "hex": "#383838"
+    },
+    {
+     "nom": "Vert RapidoCRM",
+     "hex": "#4CAF50"
+    },
+    {
+     "nom": "Violet RapidoRH",
+     "hex": "#7E57C2"
+    },
+    {
+     "nom": "Bleu RapidoCMS",
+     "hex": "#03A9F5"
+    }
+   ],
+   "typographie": "Arial Bold et Arial Regular, qui donnent l'importance au nom du logiciel.",
+   "regles": [
+    "Trois oiseaux en harmonie : les trois logiciels.",
+    "Logo en couleurs sur fond blanc, ou en défonce sur les teintes de la charte.",
+    "Ne pas modifier, déformer ni faire pivoter le logo."
+   ],
+   "pdf": "/brand/chartes/charte-rapidosoftware.pdf"
+  },
+  "rapidosoftware": {
+   "id": "rapidosoftware",
+   "nom": "RapidoSoftware",
+   "logo": "/brand/logos/rapidosoftware.png",
+   "site": "https://rapidosoftware.com/",
+   "couleurs": [
+    {
+     "nom": "Gris primaire",
+     "hex": "#383838"
+    },
+    {
+     "nom": "Vert RapidoCRM",
+     "hex": "#4CAF50"
+    },
+    {
+     "nom": "Violet RapidoRH",
+     "hex": "#7E57C2"
+    },
+    {
+     "nom": "Bleu RapidoCMS",
+     "hex": "#03A9F5"
+    }
+   ],
+   "typographie": "Arial Bold et Arial Regular, qui donnent l'importance au nom du logiciel.",
+   "regles": [
+    "Trois oiseaux en harmonie : les trois logiciels.",
+    "Logo en couleurs sur fond blanc, ou en défonce sur les teintes de la charte.",
+    "Ne pas modifier, déformer ni faire pivoter le logo."
+   ],
+   "pdf": "/brand/chartes/charte-rapidosoftware.pdf"
+  },
+  "planit": {
+   "id": "planit",
+   "nom": "Plan'It",
+   "logo": "/brand/logos/planit.webp",
+   "site": "https://plani-t.fr",
+   "couleurs": [
+    {
+     "nom": "Bleu violet",
+     "hex": "#4F2DF9"
+    },
+    {
+     "nom": "Violet",
+     "hex": "#8236F8"
+    },
+    {
+     "nom": "Rose",
+     "hex": "#FE64D5"
+    },
+    {
+     "nom": "Nuit",
+     "hex": "#1F0D3E"
+    }
+   ],
+   "typographie": "Alte Haas Grotesk, regular et bold.",
+   "regles": [
+    "Dégradé du bleu violet #4F2DF9 au rose #FE64D5 pour les fonds.",
+    "Logo blanc sur le dégradé, logo nuit sur le rose."
+   ],
+   "pdf": "/brand/chartes/charte-planit.pdf"
+  }
+ },
+ "ECRANS": {
+  "foodeatup": [
+   {
+    "src": "/brand/ecrans/foodeatup-kds.jpg",
+    "titre": "Écran cuisine",
+    "legende": "Les commandes à préparer, poste par poste.",
+    "vertical": false
+   },
+   {
+    "src": "/brand/ecrans/foodeatup-planning.jpg",
+    "titre": "Planning de diffusion",
+    "legende": "Les écrans de salle par tranche horaire.",
+    "vertical": false
+   },
+   {
+    "src": "/brand/ecrans/foodeatup-borne-accueil.jpg",
+    "titre": "Borne de commande",
+    "legende": "Accueil multilingue, sur place ou à emporter.",
+    "vertical": true
+   }
+  ],
+  "rapidocrm": [
+   {
+    "src": "/brand/ecrans/rapidocrm-tableau-de-bord.jpg",
+    "titre": "Tableau de bord",
+    "legende": "Le CRM sur ordinateur et tablette.",
+    "vertical": false
+   },
+   {
+    "src": "/brand/ecrans/rapidocrm-prospecter.jpg",
+    "titre": "Prospecter",
+    "legende": "Recherche de prospects depuis la liste des clients.",
+    "vertical": false
+   },
+   {
+    "src": "/brand/ecrans/rapidocrm-sms-bot.jpg",
+    "titre": "Aide du bot",
+    "legende": "Choisir un prompt pour rédiger un SMS.",
+    "vertical": false
+   }
+  ],
+  "rapidocms": [
+   {
+    "src": "/brand/ecrans/rapidocms-calendrier.jpg",
+    "titre": "Calendrier",
+    "legende": "Le calendrier éditorial du mois.",
+    "vertical": false
+   },
+   {
+    "src": "/brand/ecrans/rapidocms-calendrier-ia.jpg",
+    "titre": "Générer par l'IA",
+    "legende": "Un média généré depuis le calendrier.",
+    "vertical": false
+   },
+   {
+    "src": "/brand/ecrans/rapidocms-prompts.jpg",
+    "titre": "Prompts",
+    "legende": "Créer un prompt texte en trois étapes.",
+    "vertical": false
+   },
+   {
+    "src": "/brand/ecrans/rapidocms-chatbot.jpg",
+    "titre": "Chatbot",
+    "legende": "L'assistant conversationnel et ses suggestions.",
+    "vertical": false
+   }
+  ],
+  "rapidorh": [
+   {
+    "src": "/brand/ecrans/rapidorh-tableau-de-bord.jpg",
+    "titre": "Tableau de bord",
+    "legende": "Projets, avancement et calendrier.",
+    "vertical": false
+   },
+   {
+    "src": "/brand/ecrans/rapidorh-kanban.jpg",
+    "titre": "Kanban",
+    "legende": "À faire, en cours, terminé.",
+    "vertical": false
+   },
+   {
+    "src": "/brand/ecrans/rapidorh-projets.jpg",
+    "titre": "Projets",
+    "legende": "Les projets avec équipe et progression.",
+    "vertical": false
+   },
+   {
+    "src": "/brand/ecrans/rapidorh-departements.jpg",
+    "titre": "Départements",
+    "legende": "Les départements et leurs équipes.",
+    "vertical": false
+   }
+  ],
+  "planit": [
+   {
+    "src": "/brand/ecrans/planit-accueil.jpg",
+    "titre": "Accueil",
+    "legende": "Indicateurs et productivité.",
+    "vertical": true
+   },
+   {
+    "src": "/brand/ecrans/planit-nouveau-prompt.jpg",
+    "titre": "Nouveau prompt",
+    "legende": "Un prompt avec ses variables.",
+    "vertical": true
+   },
+   {
+    "src": "/brand/ecrans/planit-super-agent.jpg",
+    "titre": "Super Agent",
+    "legende": "L'agent qui choisit les outils.",
+    "vertical": true
+   },
+   {
+    "src": "/brand/ecrans/planit-automatisations.jpg",
+    "titre": "Automatisations",
+    "legende": "Les déclencheurs connectés.",
+    "vertical": true
+   }
+  ],
+  "rapidosoftware": [
+   {
+    "src": "/brand/ecrans/rapidosoftware-projet.jpg",
+    "titre": "RapidoSoftware",
+    "legende": "La suite CRM, CMS et RH.",
+    "vertical": false
+   },
+   {
+    "src": "/brand/ecrans/rapidocrm-tableau-de-bord.jpg",
+    "titre": "RapidoCRM",
+    "legende": "Le tableau de bord du CRM.",
+    "vertical": false
+   },
+   {
+    "src": "/brand/ecrans/rapidorh-kanban.jpg",
+    "titre": "RapidoRH",
+    "legende": "Les tâches en Kanban.",
+    "vertical": false
+   }
+  ]
+ },
+ "LOGOS": {
+  "Claude Code": "/brand/logos/claude.webp",
+  "BraindCode Plugins": "/brand/logos/braindcode.webp",
+  "Plan'It": "/brand/logos/planit.webp",
+  "Flutter": null,
+  "FoodEatUp": "/brand/logos/foodeatup.webp",
+  "ElevenLabs": null,
+  "Claude": "/brand/logos/claude.webp",
+  "Figma": null,
+  "Whisper (faster-whisper)": null,
+  "FFmpeg": null,
+  "RapidoCMS": "/brand/logos/rapidocms.webp",
+  "RapidoCRM": "/brand/logos/rapidocrm.webp",
+  "n8n": null,
+  "Mon Académie": "/brand/logos/foodeatup.webp",
+  "Lovable": "/brand/logos/lovable.webp",
+  "Supabase": null,
+  "RapidoRH": "/brand/logos/rapidorh.webp",
+  "Publisher Bot": "/brand/logos/rapidocms.webp",
+  "BraindCode Build": "/brand/logos/braindcode.webp",
+  "FoodEatUp Académie": "/brand/logos/foodeatup.webp",
+  "ChatGPT": "/brand/logos/openai.webp",
+  "Gemini": null,
+  "RapidoSoftware": "/brand/logos/rapidosoftware.png"
+ }
+}

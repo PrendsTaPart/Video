@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #EDEEF0;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="91.289"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- opening title card: "Une journée SANS FoodEatUp" — shared with the whole series -->
+      <div
+        id="el-00-titre"
+        class="scene"
+        data-composition-id="00-titre"
+        data-composition-src="compositions/frames/00-titre.html"
+        data-start="0"
+        data-duration="3.5"
+        data-track-index="0"
+      ></div>
+
+      <!-- context frame: shared with the whole series -->
+      <div
+        id="el-00b-contexte"
+        class="scene"
+        data-composition-id="00b-contexte"
+        data-composition-src="compositions/frames/00b-contexte.html"
+        data-start="3.5"
+        data-duration="22.782"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-00b-contexte-voice"
+        src="assets/audio/vo-00b.mp3"
+        data-start="3.5"
+        data-duration="22.282"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- Frame 1: the director is upstairs, not on the floor, and does not know what is
+           happening there -->
+      <div
+        id="el-01-pas-en-salle"
+        class="scene"
+        data-composition-id="01-pas-en-salle"
+        data-composition-src="compositions/frames/01-pas-en-salle.html"
+        data-start="26.282"
+        data-duration="11.498"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-01-pas-en-salle-voice"
+        src="assets/audio/vo-01.mp3"
+        data-start="26.282"
+        data-duration="10.998"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- Frame 2: the salmon stock expires Thursday, he will only find out Thursday -->
+      <div
+        id="el-02-saumon-perime"
+        class="scene"
+        data-composition-id="02-saumon-perime"
+        data-composition-src="compositions/frames/02-saumon-perime.html"
+        data-start="37.780"
+        data-duration="8.990"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-02-saumon-perime-voice"
+        src="assets/audio/vo-02.mp3"
+        data-start="37.780"
+        data-duration="8.490"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- Frame 3: the surplus campaign needs a graphic designer, an up-to-date client file,
+           a send platform — none of it ready, so it waits -->
+      <div
+        id="el-03-campagne-silos"
+        class="scene"
+        data-composition-id="03-campagne-silos"
+        data-composition-src="compositions/frames/03-campagne-silos.html"
+        data-start="46.770"
+        data-duration="20.196"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-03-campagne-silos-voice"
+        src="assets/audio/vo-03.mp3"
+        data-start="46.770"
+        data-duration="19.696"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- Frame 4: the series refrain — 7 subscriptions paid, 2 actually used -->
+      <div
+        id="el-04-refrain"
+        class="scene"
+        data-composition-id="04-refrain"
+        data-composition-src="compositions/frames/04-refrain.html"
+        data-start="66.966"
+        data-duration="7.501"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-04-refrain-voice"
+        src="assets/audio/vo-04.mp3"
+        data-start="66.966"
+        data-duration="7.001"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- Frame 5: he goes back upstairs — service continues without him, and above all,
+           without him truly knowing what happened -->
+      <div
+        id="el-05-remonte-etage"
+        class="scene"
+        data-composition-id="05-remonte-etage"
+        data-composition-src="compositions/frames/05-remonte-etage.html"
+        data-start="74.467"
+        data-duration="6.822"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-05-remonte-etage-voice"
+        src="assets/audio/vo-05.mp3"
+        data-start="74.467"
+        data-duration="6.27"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-08-carte-marque"
+        class="scene"
+        data-composition-id="08-carte-marque"
+        data-composition-src="compositions/frames/08-carte-marque.html"
+        data-start="81.289"
+        data-duration="5.6"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-08-carte-marque-voice"
+        src="assets/audio/vo-08.mp3"
+        data-start="81.589"
+        data-duration="4.18"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- CTA end card: shared with the whole series -->
+      <div
+        id="el-09-cta-decouvrir"
+        class="scene"
+        data-composition-id="09-cta-decouvrir"
+        data-composition-src="compositions/frames/09-cta-decouvrir.html"
+        data-start="86.889"
+        data-duration="4.4"
+        data-track-index="0"
+      ></div>
+
+      <!-- permanent discreet FoodEatUp watermark, "sans" body only -->
+      <div
+        id="el-watermark"
+        class="scene"
+        data-composition-id="watermark"
+        data-composition-src="compositions/watermark.html"
+        data-start="26.282"
+        data-duration="55.007"
+        data-track-index="3"
+      ></div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+      // ── frame transitions ──
+      (function () { var tl = window.__timelines["main"];
+        tl.to("#el-00-titre", { opacity: 0, duration: 0.6, ease: "power2.inOut" }, 3.5);
+        tl.fromTo("#el-00b-contexte", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.inOut" }, 3.5);
+        tl.to("#el-00b-contexte", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 26.282);
+        tl.fromTo("#el-01-pas-en-salle", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 26.282);
+        tl.to("#el-01-pas-en-salle", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 37.780);
+        tl.fromTo("#el-02-saumon-perime", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 37.780);
+        tl.to("#el-02-saumon-perime", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 46.770);
+        tl.fromTo("#el-03-campagne-silos", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 46.770);
+        tl.to("#el-03-campagne-silos", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 66.966);
+        tl.fromTo("#el-04-refrain", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 66.966);
+        tl.to("#el-04-refrain", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 74.467);
+        tl.fromTo("#el-05-remonte-etage", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 74.467);
+        tl.to({}, { duration: 91.289 }, 0); // full-span anchor — main.duration() == composition total (Studio master duration)
+      })();
+    </script>
+  </body>
+</html>

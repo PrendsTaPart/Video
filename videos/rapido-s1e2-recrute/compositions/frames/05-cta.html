@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>S1E2 F5 — Hook fin + CTA (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+        .ring { position: absolute; border-radius: 50%; opacity: 0; pointer-events: none; will-change: transform, opacity; }
+        #ring-1 { left: 240px; top: 760px; width: 600px; height: 600px; border: 2px solid rgba(120,80,192,0.14); }
+        #ring-2 { left: 140px; top: 660px; width: 800px; height: 800px; border: 2px solid rgba(120,80,192,0.1); }
+        #ring-3 { left: 40px; top: 560px; width: 1000px; height: 1000px; border: 2px solid rgba(120,80,192,0.06); }
+        .bloom { position: absolute; left: 140px; top: 700px; width: 800px; height: 720px; background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(120,80,192,0.22) 0%, rgba(120,80,192,0.08) 48%, rgba(120,80,192,0) 74%); opacity: 0; pointer-events: none; will-change: opacity; }
+
+        .wrap { position: absolute; left: 0; right: 0; top: 300px; height: 1340px; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .punch { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 96px; line-height: 1.06; letter-spacing: -0.02em; color: #1b2a41; text-align: center; padding: 0 80px; opacity: 0; will-change: transform, opacity; }
+        .punch .a { color: #7850c0; }
+        .logo { margin-top: 56px; width: 420px; height: auto; object-fit: contain; transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+        .tagline { margin-top: 26px; font-family: "Inter", sans-serif; font-weight: 500; font-size: 44px; letter-spacing: -0.01em; color: #566472; text-align: center; opacity: 0; will-change: transform, opacity; }
+        .cta-button { margin-top: 44px; padding: 26px 62px; background: #7850c0; color: #f7f9fc; border-radius: 100px; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 42px; letter-spacing: 0.01em; transform-origin: 50% 50%; opacity: 0; white-space: nowrap; will-change: transform, opacity; }
+      </style>
+
+      <div id="root" data-composition-id="05-cta" data-width="1080" data-height="1920" data-duration="5.005">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="4.505" data-track-index="0">
+          <div class="ring" id="ring-1"></div><div class="ring" id="ring-2"></div><div class="ring" id="ring-3"></div><div class="bloom" id="bloom"></div>
+        </div>
+        <div class="wrap clip" id="wrap" data-start="0" data-duration="4.505" data-track-index="1">
+          <div class="punch" id="punch">Recruté<br /><span class="a">en Rapido.</span></div>
+          <img class="logo" id="logo" src="public/rapidorh-logo.png" alt="RapidoRH" />
+          <div class="tagline" id="tagline">De l'annonce à l'entretien.</div>
+          <div class="cta-button" id="cta">Découvrir RapidoRH</div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        gsap.utils.toArray(".ring").forEach(function (el, i) {
+          tl.fromTo(el, { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 1.0, ease: "power2.out" }, 0.1 + i * 0.1);
+        });
+        tl.fromTo("#punch", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 0.2);
+        tl.fromTo("#logo", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.55, ease: "power3.out" }, 1.2);
+        tl.fromTo("#tagline", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 2.0);
+        tl.fromTo("#cta", { scale: 0, opacity: 0, y: 18 }, { scale: 1, opacity: 1, y: 0, duration: 0.55, ease: "back.out(1.5)" }, 2.8);
+        tl.fromTo("#bloom", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power2.out" }, 3.2);
+        window.__timelines["05-cta"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

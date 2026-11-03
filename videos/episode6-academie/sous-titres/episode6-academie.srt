@@ -1,0 +1,180 @@
+1
+00:00:02,500 --> 00:00:05,140
+Aujourd'hui, tout le monde parle d'employés IA.
+
+2
+00:00:05,140 --> 00:00:07,740
+Mais il y a une question que presque personne ne pose :
+
+3
+00:00:07,740 --> 00:00:09,405
+comment est-ce qu'on les forme à leur métier ?
+
+4
+00:00:11,065 --> 00:00:13,405
+Dans mes entreprises, j'ai développé beaucoup de logiciels
+
+5
+00:00:13,405 --> 00:00:14,705
+et de connexions MCP.
+
+6
+00:00:14,705 --> 00:00:16,745
+Mais donner des outils à une intelligence artificielle
+
+7
+00:00:16,745 --> 00:00:17,605
+ne suffit pas.
+
+8
+00:00:17,605 --> 00:00:19,345
+Elle doit aussi comprendre nos méthodes,
+
+9
+00:00:19,345 --> 00:00:20,910
+nos règles et nos objectifs.
+
+10
+00:00:22,500 --> 00:00:24,505
+J'ai donc développé FoodEatUp Academy.
+
+11
+00:00:24,505 --> 00:00:26,805
+Une plateforme de formation avec des parcours,
+
+12
+00:00:26,805 --> 00:00:28,845
+des missions, des quiz, des exercices
+
+13
+00:00:28,845 --> 00:00:30,392
+et un suivi des compétences.
+
+14
+00:00:32,000 --> 00:00:34,203
+Et j'ai connecté cette Académie directement à Claude,
+
+15
+00:00:34,203 --> 00:00:35,643
+grâce à son propre MCP.
+
+16
+00:00:35,643 --> 00:00:37,543
+Claude peut consulter les formations,
+
+17
+00:00:37,543 --> 00:00:38,703
+récupérer les procédures,
+
+18
+00:00:38,703 --> 00:00:41,047
+et utiliser les connaissances adaptées à ses missions.
+
+19
+00:00:42,626 --> 00:00:44,086
+J'ai aussi ajouté une mémoire.
+
+20
+00:00:44,086 --> 00:00:46,526
+Claude peut retrouver les préférences, les objectifs,
+
+21
+00:00:46,526 --> 00:00:48,706
+les corrections et les méthodes qui ont fonctionné.
+
+22
+00:00:48,706 --> 00:00:51,146
+Ces notes sont réinjectées dans son contexte de travail :
+
+23
+00:00:51,146 --> 00:00:52,606
+le modèle n'est pas réentraîné.
+
+24
+00:00:52,606 --> 00:00:54,326
+Et certaines connaissances peuvent être validées
+
+25
+00:00:54,326 --> 00:00:55,146
+par le responsable,
+
+26
+00:00:55,146 --> 00:00:56,976
+pour être partagées avec toute l'équipe.
+
+27
+00:00:58,400 --> 00:01:00,740
+Ensuite, je peux préparer des agents spécialisés :
+
+28
+00:01:00,740 --> 00:01:02,780
+commercial, marketing, gestion,
+
+29
+00:01:02,780 --> 00:01:04,220
+formation ou pilotage.
+
+30
+00:01:04,220 --> 00:01:05,620
+Chaque agent possède un rôle,
+
+31
+00:01:05,620 --> 00:01:07,634
+des outils autorisés et des objectifs à atteindre.
+
+32
+00:01:08,596 --> 00:01:10,396
+Et c'est là que ça devient intéressant.
+
+33
+00:01:10,396 --> 00:01:12,976
+Je peux définir des routines, leur donner un objectif,
+
+34
+00:01:12,976 --> 00:01:14,056
+mesurer les résultats,
+
+35
+00:01:14,056 --> 00:01:16,376
+et décider si la méthode doit être conservée,
+
+36
+00:01:16,376 --> 00:01:17,736
+améliorée ou arrêtée.
+
+37
+00:01:17,736 --> 00:01:18,736
+Pour qu'elles tournent seules,
+
+38
+00:01:18,736 --> 00:01:21,121
+il faut un orchestrateur réellement configuré.
+
+39
+00:01:37,600 --> 00:01:39,085
+Mon objectif, ce n'est pas simplement
+
+40
+00:01:39,085 --> 00:01:41,525
+d'avoir des agents IA qui répondent à des questions.
+
+41
+00:01:41,525 --> 00:01:43,825
+C'est de construire une équipe qui connaît nos métiers,
+
+42
+00:01:43,825 --> 00:01:45,905
+utilise nos outils, suit nos objectifs,
+
+43
+00:01:45,905 --> 00:01:48,025
+et améliore progressivement ses méthodes.
+
+44
+00:01:48,025 --> 00:01:49,245
+Et demain, je vous montrerai
+
+45
+00:01:49,245 --> 00:01:50,975
+une nouvelle étape de cette aventure.
+

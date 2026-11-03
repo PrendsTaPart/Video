@@ -1,0 +1,136 @@
+1
+00:00:00,600 --> 00:00:02,560
+Pendant longtemps, on développait des logiciels
+
+2
+00:00:02,560 --> 00:00:04,340
+pour que les humains travaillent dessus.
+
+3
+00:00:04,340 --> 00:00:06,840
+Maintenant, je construis des compétences et des agents IA
+
+4
+00:00:06,840 --> 00:00:09,506
+pour que les logiciels puissent aussi travailler avec nous.
+
+5
+00:00:11,684 --> 00:00:13,644
+Première étape : connecter nos outils métier
+
+6
+00:00:13,644 --> 00:00:15,224
+à Claude grâce aux MCP.
+
+7
+00:00:15,224 --> 00:00:18,444
+Restaurant, CRM, marketing, ressources humaines…
+
+8
+00:00:18,444 --> 00:00:19,904
+Chaque logiciel devient accessible
+
+9
+00:00:19,904 --> 00:00:21,213
+à des agents autorisés.
+
+10
+00:00:24,201 --> 00:00:26,121
+Mais donner accès aux outils ne suffit pas.
+
+11
+00:00:26,121 --> 00:00:28,381
+Il faut apprendre aux agents comment travailler.
+
+12
+00:00:28,381 --> 00:00:30,541
+D'où les Skills : des compétences qui expliquent
+
+13
+00:00:30,541 --> 00:00:33,061
+les procédures, les règles métier et les étapes à suivre.
+
+14
+00:00:33,061 --> 00:00:35,886
+Il y en a aujourd'hui 544 dans le catalogue.
+
+15
+00:00:39,025 --> 00:00:41,485
+Ensuite, les agents, organisés par métier :
+
+16
+00:00:41,485 --> 00:00:43,605
+directeur général, directeur commercial,
+
+17
+00:00:43,605 --> 00:00:45,605
+marketing, finance, restaurant…
+
+18
+00:00:45,605 --> 00:00:48,445
+Chacun avec son rôle, ses compétences et ses outils.
+
+19
+00:00:48,445 --> 00:00:50,083
+77 agents au total.
+
+20
+00:00:53,000 --> 00:00:54,432
+Par exemple, un agent peut repérer
+
+21
+00:00:54,432 --> 00:00:55,552
+les stocks bas d'un restaurant
+
+22
+00:00:55,552 --> 00:00:57,372
+et préparer une commande fournisseur.
+
+23
+00:00:57,372 --> 00:00:58,992
+Mais rien ne part sans validation :
+
+24
+00:00:58,992 --> 00:01:00,772
+une commande, un paiement ou une publication
+
+25
+00:01:00,772 --> 00:01:02,550
+attend toujours votre accord.
+
+26
+00:01:05,600 --> 00:01:07,052
+Et pour rendre tout ça accessible,
+
+27
+00:01:07,052 --> 00:01:08,532
+il y a la marketplace BraindCode :
+
+28
+00:01:08,532 --> 00:01:10,592
+33 plugins à installer dans Claude Code,
+
+29
+00:01:10,592 --> 00:01:11,892
+avec une base de connaissance
+
+30
+00:01:11,892 --> 00:01:13,712
+pour le contexte de votre entreprise.
+
+31
+00:01:16,400 --> 00:01:17,290
+Le plus intéressant ?
+
+32
+00:01:17,290 --> 00:01:20,050
+Cette équipe IA ne va pas seulement utiliser nos logiciels.
+
+33
+00:01:20,050 --> 00:01:22,630
+Elle va aussi nous aider à en construire de nouveaux.
+
+34
+00:01:22,630 --> 00:01:24,620
+Et dimanche, je suis passé à la pratique.
+

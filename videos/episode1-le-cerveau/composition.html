@@ -1,0 +1,252 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 1 : le cerveau</title>
+<style>
+@font-face{font-family:M;src:url(a/fonts/Manrope-Medium.ttf);font-weight:500}
+@font-face{font-family:M;src:url(a/fonts/Manrope-Bold.ttf);font-weight:700}
+@font-face{font-family:M;src:url(a/fonts/Manrope-ExtraBold.ttf);font-weight:800}
+:root{--night:#0F1A23;--surf:#16242F;--blue:#007BFF;--orange:#FFA500;--cream:#FCF9E6;--grey:#AEB8C2}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;background:var(--night);overflow:hidden}
+body{font-family:M,sans-serif;color:#fff}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:radial-gradient(1200px 900px at 50% 38%,#173049 0%,#0F1A23 62%)}
+.abs{position:absolute}
+.scene{position:absolute;inset:0;display:none}
+#wm{position:absolute;width:1300px;left:-110px;top:420px;opacity:.035;filter:grayscale(1) brightness(3)}
+.chip{position:absolute;left:80px;top:150px;font-weight:800;font-size:30px;letter-spacing:4px;color:var(--orange);text-transform:uppercase}
+.title{position:absolute;left:80px;right:80px;top:200px;font-weight:800;font-size:76px;line-height:1.05;letter-spacing:-1px}
+.title b{color:var(--orange);font-weight:800}
+.phone{position:absolute;background:#05090d;border-radius:64px;padding:16px;box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 2px #2a3a48 inset}
+.phone .scr{position:relative;width:100%;height:100%;border-radius:50px;overflow:hidden;background:#000}
+.tab{position:absolute;background:#05090d;border-radius:42px;padding:22px;box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 2px #2a3a48 inset}
+.tab .scr{position:relative;width:100%;height:100%;border-radius:20px;overflow:hidden;background:#000}
+.scr > img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.src{position:absolute;font-weight:500;font-size:22px;color:var(--grey);letter-spacing:.5px}
+.src:before{content:"";display:inline-block;width:10px;height:10px;border-radius:5px;background:#22c55e;margin-right:10px;vertical-align:2px}
+.pill{position:absolute;display:flex;align-items:center;gap:14px;background:var(--surf);border:2px solid #2a3a48;border-radius:999px;padding:16px 28px;font-weight:700;font-size:34px;white-space:nowrap}
+.pill svg{width:38px;height:38px;flex:none}
+.pill.o{background:var(--orange);color:#111;border-color:var(--orange)}
+.pill.b{background:var(--blue);color:#fff;border-color:var(--blue)}
+.pill.warn{border-color:var(--orange);color:var(--orange);background:#16242F;box-shadow:0 20px 50px rgba(0,0,0,.6)}
+.card{position:absolute;background:var(--surf);border-radius:36px;border:2px solid #24384a;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.row{display:flex;align-items:center;gap:22px;padding:22px 34px;border-top:2px solid #22364a;font-size:32px;font-weight:700}
+.row .ic{width:62px;height:62px;border-radius:16px;background:#0b2a4d;display:flex;align-items:center;justify-content:center;flex:none}
+.row .sz{margin-left:auto;color:var(--grey);font-weight:500;font-size:28px}
+.bubble{position:absolute;border-radius:30px;padding:22px 30px;font-size:33px;font-weight:700;line-height:1.25}
+.logo-pill{position:absolute;background:#fff;border-radius:999px;display:flex;align-items:center;justify-content:center}
+</style>
+</head><body>
+<style>
+:root{--bc:#2EA8FF}
+#stage{background:radial-gradient(1100px 900px at 50% 36%,#10304d 0%,#0B1622 62%)}
+.chip{color:var(--bc)}
+.title b{color:var(--bc)}
+.term{position:absolute;background:#0a0f14;border:2px solid #22364a;border-radius:24px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5);font-family:'DejaVu Sans Mono',monospace}
+.term .bar{display:flex;align-items:center;gap:10px;padding:14px 20px;background:#131d27;font-family:M,sans-serif;font-weight:700;font-size:20px;color:#8fa3b5}
+.term .bar i{width:14px;height:14px;border-radius:7px;display:inline-block}
+.term pre{margin:0;padding:18px 22px;font-size:21px;line-height:1.5;color:#d6e2ec;white-space:pre-wrap;word-break:break-word}
+.term .k{color:#7dd3fc}.term .g{color:#86efac}.term .o{color:#FFA500}.term .m{color:#8fa3b5}
+.real{position:absolute;font-weight:500;font-size:21px;color:#8fa3b5}
+.real:before{content:"";display:inline-block;width:10px;height:10px;border-radius:5px;background:#22c55e;margin-right:10px;vertical-align:2px}
+.gl{position:absolute;left:70px;right:70px;top:1420px;display:flex;align-items:center;gap:20px;background:rgba(46,168,255,.1);border:2px solid var(--bc);border-radius:26px;padding:20px 28px}
+.gl b{flex:none;background:var(--bc);color:#06121d;border-radius:14px;padding:8px 16px;font-size:30px;font-weight:800}
+.gl span{font-size:30px;font-weight:700;line-height:1.25}
+.logo-card{position:absolute;width:250px;height:150px;margin:-75px 0 0 -125px;background:#fff;border-radius:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.logo-card img{max-width:190px;max-height:70px}
+.logo-card div{color:#0B1622;font-weight:800;font-size:22px;margin-top:10px}
+.hub{position:absolute;width:280px;height:280px;margin:-140px 0 0 -140px;border-radius:50%;background:radial-gradient(circle,#2EA8FF 0%,#1269b0 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;font-size:46px;box-shadow:0 0 90px rgba(46,168,255,.55)}
+.hub small{font-size:22px;font-weight:700;opacity:.85}
+.org{position:absolute;width:300px;margin-left:-150px;background:#16242F;border:2px solid #2f475c;border-radius:24px;padding:20px 18px;text-align:center}
+.org .r{font-weight:800;font-size:30px;line-height:1.1}
+.org .f{font-family:'DejaVu Sans Mono',monospace;font-size:15px;color:#8fa3b5;margin-top:10px;word-break:break-all}
+.org.top{width:420px;margin-left:-210px;border-color:var(--bc)}
+.wf{position:absolute;left:70px;right:70px;display:flex;align-items:center;gap:22px;background:#16242F;border:2px solid #2f475c;border-radius:26px;padding:22px 28px}
+.wf .n{flex:none;width:64px;height:64px;border-radius:32px;background:#1d3a55;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:30px}
+.wf .h{font-weight:800;font-size:34px}
+.wf .p{font-family:'DejaVu Sans Mono',monospace;font-size:20px;color:#8fa3b5;margin-top:6px}
+.wf.stop{border-color:#FFA500;background:rgba(255,165,0,.1)}
+.wf.stop .n{background:#FFA500;color:#111}
+.wf.wait{opacity:.5;border-style:dashed}
+.counter{position:absolute;font-weight:800;line-height:1;letter-spacing:-3px}
+</style>
+<div id="stage">
+  <!-- 0 · Accroche -->
+  <div class="scene" id="s0">
+    <div class="chip" id="s0c">Épisode 1 · Le cerveau</div>
+    <div class="title" id="s0a" style="top:200px;font-size:46px;line-height:1.15;color:#8fa3b5">Avant : des logiciels<br>pour que les humains travaillent dessus.</div>
+    <div class="title" id="s0b" style="top:340px;font-size:64px">Maintenant : des agents IA<br><b>qui travaillent avec nous.</b></div>
+    <div class="term" id="s0t" style="left:60px;top:650px;width:960px;height:440px"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>&nbsp;Plugin-Claude-MCP-BraindCode — git log</div><pre id="s0log"></pre></div>
+    <div class="real" id="s0r" style="left:70px;top:1110px">Sortie réelle du dépôt GitHub (heures UTC)</div>
+    <div id="s0logos" class="abs" style="left:0;right:0;top:1180px;height:70px"></div>
+  </div>
+
+  <!-- 1 · MCP -->
+  <div class="scene" id="s1">
+    <div class="chip">Étape 1 · MCP</div>
+    <div class="title">Les MCP donnent<br><b>accès aux outils</b></div>
+    <svg id="s1svg" class="abs" style="left:0;top:0" width="1080" height="1920"></svg>
+    <div class="hub" id="s1hub" style="left:540px;top:860px">Claude<small>via MCP</small></div>
+    <div id="s1logos"></div>
+    <div class="pill" id="s1lock" style="left:190px;top:1250px;font-size:30px"><svg viewBox="0 0 24 24" fill="none" stroke="#2EA8FF" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Seulement les agents autorisés</div>
+    <div class="gl" id="s1g"><b>MCP</b><span>l'accès aux outils et aux données métier, selon les autorisations</span></div>
+  </div>
+
+  <!-- 2 · Skills -->
+  <div class="scene" id="s2">
+    <div class="chip">Étape 2 · Skills</div>
+    <div class="title">Leur apprendre<br><b>comment travailler</b></div>
+    <div class="phone" id="s2ph" style="left:60px;top:440px;width:440px;height:900px"><div class="scr" id="s2scr"></div></div>
+    <div class="term" id="s2t" style="left:530px;top:440px;width:490px;height:600px"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>&nbsp;SKILL.md</div><pre id="s2pre"></pre></div>
+    <div class="counter" id="s2n" style="left:530px;top:1080px;font-size:150px;color:#2EA8FF">544</div>
+    <div class="abs" id="s2nl" style="left:536px;top:1235px;font-weight:800;font-size:34px">compétences dans<br>le catalogue</div>
+    <div class="gl" id="s2g"><b>Skill</b><span>la méthode : étapes, règles métier, procédures</span></div>
+    <div class="real" style="left:70px;top:1355px">Captures réelles · plugin.braindcode.com/competences + dépôt</div>
+  </div>
+
+  <!-- 3 · Agents -->
+  <div class="scene" id="s3">
+    <div class="chip">Étape 3 · Agents IA</div>
+    <div class="title">Une équipe<br><b>organisée par métier</b></div>
+    <svg id="s3svg" class="abs" style="left:0;top:0" width="1080" height="1920"></svg>
+    <div id="s3org"></div>
+    <div class="counter" id="s3n" style="left:70px;top:1150px;font-size:130px;color:#2EA8FF">77<span style="font-size:44px;letter-spacing:0;color:#fff;margin-left:18px">agents IA spécialisés</span></div>
+    <div class="gl" id="s3g"><b>Agent</b><span>un rôle, un objectif, des compétences et des outils</span></div>
+    <div class="real" style="left:70px;top:1355px">Fichiers réels des agents dans le dépôt</div>
+  </div>
+
+  <!-- 4 · Mission -->
+  <div class="scene" id="s4">
+    <div class="chip">Une mission concrète</div>
+    <div class="title">Stock bas →<br><b>commande fournisseur</b></div>
+    <div class="wf" id="s4a" style="top:450px"><div class="n">1</div><div><div class="h">Repérer les stocks bas</div><div class="p">list_low_stocks</div></div></div>
+    <div class="wf" id="s4b" style="top:610px"><div class="n">2</div><div><div class="h">Préparer la commande</div><div class="p">regrouper par fournisseur</div></div></div>
+    <div class="wf stop" id="s4c" style="top:770px"><div class="n">✋</div><div><div class="h">Validation humaine</div><div class="p" style="color:#ffd27a">« Jamais de commande fournisseur sans validation explicite de l'utilisateur »</div></div></div>
+    <div class="wf wait" id="s4d" style="top:965px"><div class="n">3</div><div><div class="h">Commander, après accord</div><div class="p">create_supplier_order</div></div></div>
+    <div class="pill warn" id="s4e" style="left:70px;top:1130px;font-size:28px;background:#16242F">Paiement · publication · suppression : bloqués sans votre clic</div>
+    <div class="real" id="s4r" style="left:70px;top:1235px;width:940px;line-height:1.4">Procédure réelle : skill <span style="font-family:'DejaVu Sans Mono',monospace">reappro-fournisseurs</span> et hook <span style="font-family:'DejaVu Sans Mono',monospace">garde-destructif</span> du plugin FoodEatUp. Aucune exécution n'est montrée.</div>
+    <div class="gl" id="s4g"><b>Workflow</b><span>des étapes enchaînées, avec des validations</span></div>
+  </div>
+
+  <!-- 5 · Marketplace -->
+  <div class="scene" id="s5">
+    <div class="chip">La marketplace</div>
+    <div class="title"><b>plugin.braindcode.com</b></div>
+    <div class="phone" id="s5ph" style="left:60px;top:360px;width:440px;height:900px"><div class="scr" id="s5scr"></div></div>
+    <div class="counter" id="s5n" style="left:540px;top:400px;font-size:150px;color:#2EA8FF">33</div>
+    <div class="abs" id="s5nl" style="left:546px;top:555px;font-weight:800;font-size:36px">plugins Claude Code</div>
+    <div class="term" id="s5t" style="left:530px;top:650px;width:490px;height:360px"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>&nbsp;Claude Code</div><pre id="s5pre" style="font-size:19px"></pre></div>
+    <div class="real" style="left:540px;top:1025px;width:480px;line-height:1.35">Commandes réelles du README</div>
+    <div class="gl" id="s5g" style="top:1300px"><b>Knowledge Base</b><span>le contexte propre à votre entreprise</span></div>
+    <div class="real" style="left:70px;top:1270px">Captures réelles · plugin.braindcode.com</div>
+  </div>
+
+  <!-- 6 · Teasing dimanche -->
+  <div class="scene" id="s6">
+    <div class="title" id="s6t" style="top:220px;font-size:70px">Cette équipe va aussi<br><b>nous aider à construire.</b></div>
+    <div id="s6apps"></div>
+    <div class="kicker abs" id="s6k" style="left:0;right:0;top:1340px;text-align:center;font-weight:800;font-size:54px">Et dimanche… <span style="color:#FFA500">place à la pratique.</span></div>
+  </div>
+
+  <!-- 7 · Carton final -->
+  <div class="scene" id="s7" style="background:#000">
+    <div class="abs" id="s7a" style="left:0;right:0;top:640px;text-align:center;font-weight:800;font-size:62px;letter-spacing:2px">ÉPISODE 1 : <span style="color:#2EA8FF">LE CERVEAU</span></div>
+    <div class="abs" id="s7b" style="left:0;right:0;top:750px;text-align:center;font-weight:800;font-size:62px;letter-spacing:2px">DIMANCHE : <span style="color:#FFA500">LES APPLICATIONS</span></div>
+    <div class="abs" id="s7c" style="left:0;right:0;top:900px;text-align:center;font-weight:500;font-size:46px;color:#8fa3b5;letter-spacing:6px">À SUIVRE…</div>
+    <div class="logo-pill" id="s7l" style="left:240px;top:1080px;width:600px;height:150px"><img src="a/logos/braindcode.png" style="width:500px"></div>
+  </div>
+
+  <!-- Miniature -->
+  <div class="scene" id="thumb">
+    <div class="abs" style="left:70px;top:150px;font-weight:800;font-size:44px;letter-spacing:6px;color:#2EA8FF">ÉPISODE 1 · LE CERVEAU</div>
+    <div class="abs" style="left:66px;right:60px;top:220px;font-weight:800;font-size:128px;line-height:.98;letter-spacing:-3px">J'ai construit<br>mon équipe<br><span style="color:#2EA8FF">IA</span></div>
+    <div id="thorg"></div>
+    <div class="logo-pill" style="left:70px;top:1700px;width:520px;height:120px"><img src="a/logos/braindcode.png" style="width:440px"></div>
+  </div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const eout=x=>1-Math.pow(1-x,3);
+const A=[0,8.956,18.619,30.355,41.488,51.088,59.25,67.52], P=[0.6,11.6,24.2,39.0,53.0,65.6,76.4];
+const V=(i,w)=>P[i]+(w-A[i]);
+const SC=[['s0',0,11.0],['s1',11.0,23.6],['s2',23.6,38.4],['s3',38.4,52.4],['s4',52.4,65.0],['s5',65.0,75.8],['s6',75.8,85.4],['s7',85.4,91.0]];
+const DUR=91.0;
+function pop(el,t,a,d=.45,dy=40,sc=0){const p=eout(cl((t-a)/d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px) scale(${1-sc*(1-p)})`;return p;}
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+// texte tapé progressivement (contenu réel)
+function typed(el,lines,t,a,lps){const n=Math.max(0,Math.floor((t-a)*lps)+ (t>=a?1:0));
+  el.innerHTML=lines.slice(0,n).join('\n')+(t>a?'<span class="k">▍</span>':'');}
+
+// --- données réelles ---
+const GITLOG=`25/10 11:41  rapido-prospector É3 : 19 skills
+25/10 11:43  rapido-prospector É4-É5 : 4 agents, 12 commandes
+25/10 12:00  braindcode-build É3 : 22 skills
+25/10 12:02  braindcode-build É4-É5 : 6 agents, 17 commandes
+25/10 12:45  rapido-youtube É3 : 20 skills
+25/10 12:47  rapido-youtube É4-É5 : 6 agents, 17 commandes
+25/10 12:50  rapido-youtube É6 : intégration dépôt`.split('\n').map(l=>`<span class="m">${esc(l.slice(0,12))}</span>${esc(l.slice(12))}`);
+const SKILL=[`<span class="m">---</span>`,`<span class="k">name:</span> reappro-fournisseurs`,`<span class="k">description:</span> Utiliser quand l'utilisateur parle de stock bas, de commande fournisseur ou de réapprovisionnement.`,`<span class="m">---</span>`,``,`<span class="o">## Garde-fous</span>`,`- Jamais de commande fournisseur sans validation explicite de l'utilisateur.`];
+const INSTALL=[`<span class="g">&gt;</span> /plugin marketplace add`,`  PrendsTaPart/Plugin-Claude-MCP-BraindCode-`,``,`<span class="g">&gt;</span> /plugin install rapido-suite@rapido`,`<span class="g">&gt;</span> /plugin install foodeatup@rapido`];
+
+const LOGOS=[['foodeatup.png','Restaurant'],['rapidocrm.png','CRM'],['rapidocms.png','Marketing'],['rapidorh.png','RH']];
+$('s0logos').innerHTML=[...LOGOS.map(l=>l[0]),'planit.png'].map((f,i)=>`<div class="logo-pill" style="left:${70+i*192}px;top:0;width:176px;height:70px"><img src="a/logos/${f}" style="max-width:140px;max-height:44px"></div>`).join('');
+const l0=[...$('s0logos').children];
+
+const HUB=[540,860], LP=[[230,560],[850,560],[230,1140],[850,1140]];
+$('s1logos').innerHTML=LOGOS.map(([f,lab],i)=>`<div class="logo-card" style="left:${LP[i][0]}px;top:${LP[i][1]}px"><img src="a/logos/${f}"><div>${lab}</div></div>`).join('');
+const l1=[...$('s1logos').children];
+$('s1svg').innerHTML=LP.map(([x,y],i)=>`<line id="m${i}" x1="${HUB[0]}" y1="${HUB[1]}" x2="${HUB[0]}" y2="${HUB[1]}" stroke="#2EA8FF" stroke-width="5" stroke-dasharray="14 10"/>`).join('');
+
+const st2=['competences-00','competences-01','competences-02','competences-03','competences-04'];
+$('s2scr').innerHTML=st2.map(n=>`<img src="a/web/${n}.png" style="opacity:0">`).join('');
+const st5=['home-00','home-05','github-00','securite-00'];
+$('s5scr').innerHTML=st5.map(n=>`<img src="a/web/${n}.png" style="opacity:0">`).join('');
+function stackRun(id,t,a,step){const im=[...$(id).children];const k=Math.min(im.length-1,Math.max(0,Math.floor((t-a)/step)));im.forEach((e,i)=>{e.style.opacity=i===k?1:(i===k-1?1-cl(((t-a)-k*step)/.35):0);e.style.zIndex=i;});}
+
+// organigramme (agents réels du dépôt)
+const ORG=[['Directeur général','rapido-suite/agents/directeur-general.md',540,440,1],
+ ['Directeur commercial','rapidocrm/agents/directeur-commercial.md',230,700],
+ ['Responsable marketing','rapidocms/agents/responsable-marketing.md',850,700],
+ ['CFO virtuel','rapido-startup/agents/cfo-virtuel.md',230,930],
+ ['Chef-restaurateur','foodeatup/agents/chef-restaurateur.md',850,930]];
+function orgHTML(){return ORG.map(([r,f,x,y,top])=>`<div class="org${top?' top':''}" style="left:${x}px;top:${y}px"><div class="r">${r}</div><div class="f">${f}</div></div>`).join('');}
+$('s3org').innerHTML=orgHTML(); const og=[...$('s3org').children];
+$('s3svg').innerHTML=ORG.slice(1).map(([,,x,y],i)=>`<path id="o${i}" d="M540 560 C540 620 ${x} ${y-80} ${x} ${y}" stroke="#2f6f9f" stroke-width="4" fill="none"/>`).join('');
+$('thorg').innerHTML=orgHTML().replace(/top:(\d+)px/g,(m,v)=>`top:${+v+300}px`);
+// applis de dimanche
+const APPS=[['a/apps/04_home.png',70,560,470,300,'tab'],['a/apps/Accueil_fr.png',560,560,450,300,'tab'],['a/apps/1-accueil.png',100,900,190,338,'ph'],['a/apps/04-plan-de-salle.png',320,890,170,368,'ph'],['a/apps/0200.jpg',520,920,500,281,'tab']];
+$('s6apps').innerHTML=APPS.map(([s,x,y,w,h,k])=>`<div class="${k==='tab'?'tab':'phone'}" style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;padding:${k==='tab'?10:8}px;border-radius:${k==='tab'?22:30}px"><div class="scr" style="border-radius:${k==='tab'?14:24}px"><img src="${s}"></div></div>`).join('');
+const ap=[...$('s6apps').children];
+
+function render(t){
+  $('thumb').style.display='none';
+  for(const [id,a,b] of SC){const el=$(id);const on=t>=a&&t<b;el.style.display=on?'block':'none';
+    if(on){const fi=id==='s0'?1:cl((t-a)/.35),fo=id==='s7'?1:1-cl((t-(b-.3))/.3);el.style.opacity=Math.min(fi,fo);}}
+  if(t<11){pop($('s0c'),t,.1);pop($('s0a'),t,.3,.5,40);pop($('s0b'),t,V(0,3.82),.5,50);
+    pop($('s0t'),t,1.2,.5,80);typed($('s0log'),GITLOG,t,1.6,1.6);pop($('s0r'),t,2.0,.4,10);
+    l0.forEach((e,i)=>pop(e,t,7.6+i*.18,.35,20,.2));}
+  else if(t<23.6){pop($('s1hub'),t,11.2,.5,0,.4);
+    const ws=[12.66,13.48,14.14,14.92];
+    l1.forEach((e,i)=>{pop(e,t,V(1,ws[i])-.1,.4,0,.3);const p=eout(cl((t-V(1,ws[i]))/.5));const L=$('m'+i);L.setAttribute('x2',HUB[0]+(LP[i][0]-HUB[0])*p);L.setAttribute('y2',HUB[1]+(LP[i][1]-HUB[1])*p);L.setAttribute('stroke-dashoffset',-t*40);});
+    pop($('s1lock'),t,V(1,17.62),.4,20,.15);pop($('s1g'),t,V(1,10.02),.5,30);}
+  else if(t<38.4){pop($('s2ph'),t,23.6,.6,80);stackRun('s2scr',t,23.8,2.6);$('s2ph').style.transform+=` translateY(${-6*cl((t-24)/14)}px)`;
+    pop($('s2t'),t,V(2,22.88),.5,50);typed($('s2pre'),SKILL,t,V(2,23.24),2.2);
+    const pn=pop($('s2n'),t,V(2,28.58)-.1,.5,30,.2);$('s2n').textContent=Math.round(544*cl((t-(V(2,28.58)-.1))/0.9));pop($('s2nl'),t,V(2,28.58)+.2,.4,20);
+    pop($('s2g'),t,V(2,23.92),.5,30);}
+  else if(t<52.4){const wt=[32.92,33.92,35.04,35.86,36.44];
+    og.forEach((e,i)=>pop(e,t,V(3,wt[i])-.15,.45,40,.15));
+    ORG.slice(1).forEach((_,i)=>{const p=$('o'+i);const v=cl((t-V(3,wt[i+1])+.2)/.5);p.style.opacity=v;});
+    const pn=pop($('s3n'),t,V(3,39.88)-.1,.5,30);$('s3n').firstChild.textContent=Math.round(77*cl((t-(V(3,39.88)-.1))/0.8));
+    pop($('s3g'),t,V(3,37.04),.5,30);}
+  else if(t<65){pop($('s4a'),t,V(4,42.66)-.1,.45,40);pop($('s4b'),t,V(4,44.38)-.1,.45,40);pop($('s4c'),t,V(4,45.94)-.1,.45,40,.06);pop($('s4d'),t,V(4,46.78),.45,40);$('s4d').style.opacity*=.5;
+    pop($('s4e'),t,V(4,47.68),.45,30,.1);pop($('s4r'),t,53.4,.4,10);pop($('s4g'),t,V(4,48.96)+.6,.5,30);}
+  else if(t<75.8){pop($('s5ph'),t,65.0,.6,80);stackRun('s5scr',t,65.1,2.6);
+    pop($('s5n'),t,V(5,54.1)-.1,.5,30,.2);$('s5n').textContent=Math.round(33*cl((t-(V(5,54.1)-.1))/.7));pop($('s5nl'),t,V(5,54.64),.4,20);
+    pop($('s5t'),t,V(5,55.2)-.2,.5,40);typed($('s5pre'),INSTALL,t,V(5,55.2),2.5);pop($('s5g'),t,V(5,56.64),.5,30);}
+  else if(t<85.4){pop($('s6t'),t,75.9,.5,40);
+    ap.forEach((e,i)=>{pop(e,t,V(6,62.98)+i*.2,.5,80,.2);});
+    pop($('s6k'),t,V(6,65.56)-.1,.5,30);}
+  else {pop($('s7a'),t,85.6,.5,20);pop($('s7b'),t,86.2,.5,20);pop($('s7c'),t,87.0,.6,10);pop($('s7l'),t,87.6,.6,20,.1);}
+  return Promise.resolve();
+}
+function thumb(){for(const [id] of SC)$(id).style.display='none';$('thumb').style.display='block';}
+window.render=render;window.thumb=thumb;window.DUR=DUR;
+</script></body></html>

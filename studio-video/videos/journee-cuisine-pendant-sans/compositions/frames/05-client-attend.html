@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .c5-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .c5-brokenline { position: absolute; left: 200px; right: 200px; top: 200px; height: 2px; }
+        .c5-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.5; transform-origin: 0% 50%; }
+
+        .c5-clock {
+          position: absolute; left: 50%; top: 300px; transform: translateX(-50%);
+          width: 120px; height: 120px; border-radius: 50%; border: 2px solid #8A9099;
+          opacity: 0;
+        }
+        .c5-clock .hand {
+          position: absolute; left: 50%; top: 50%; width: 3px; height: 46px;
+          background: #3A3F45; transform-origin: 50% 100%; transform: translate(-50%,-100%) rotate(0deg);
+        }
+
+        .c5-lines { position: absolute; left: 0; right: 0; top: 470px; text-align: center; }
+        .c5-l { font-size: 56px; font-weight: 600; line-height: 1.5; opacity: 0; }
+        .c5-l.em { color: #D64545; font-weight: 700; }
+
+        .c5-plate {
+          position: absolute; left: 50%; bottom: 130px; transform: translateX(-50%);
+          width: 130px; height: 130px;
+        }
+        .c5-plate svg { width: 100%; height: 100%; }
+        .c5-plate circle { fill: none; stroke: #8A9099; stroke-width: 3; }
+      </style>
+
+      <div id="root" data-composition-id="05-client-attend" data-width="1920" data-height="1080" data-duration="8.0">
+        <div class="c5-bg clip" id="c5-bgclip" data-start="0" data-duration="8.0" data-track-index="1"></div>
+
+        <div class="c5-brokenline" id="c5-brokenline">
+          <span style="left:2%; width:14%;"></span>
+          <span style="left:22%; width:18%; top:-3px;"></span>
+          <span style="left:46%; width:12%; top:2px;"></span>
+          <span style="left:64%; width:20%;"></span>
+          <span style="left:88%; width:10%; top:-2px;"></span>
+        </div>
+
+        <div class="c5-clock" id="c5-clock"><div class="hand" id="c5-hand"></div></div>
+
+        <div class="c5-lines">
+          <div class="c5-l" id="c5-l1">Le client attend.</div>
+          <div class="c5-l em" id="c5-l2">Je m'excuse.</div>
+          <div class="c5-l" id="c5-l3">Je recommence un plat.</div>
+        </div>
+
+        <div class="c5-plate" id="c5-plate">
+          <svg viewBox="0 0 130 130">
+            <circle id="c5-plate-outer" cx="65" cy="65" r="58" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" />
+            <circle id="c5-plate-inner" cx="65" cy="65" r="34" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" />
+          </svg>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#c5-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set("#c5-clock", { opacity: 0, scale: 0.85 });
+        gsap.set(["#c5-l1", "#c5-l2", "#c5-l3"], { opacity: 0, y: 14 });
+
+        // Scene 1 (0.0-0.8s): broken line draws itself on
+        tl.to("#c5-brokenline span", { opacity: 0.5, duration: 0.01 }, 0.1);
+        tl.to("#c5-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.08 }, 0.1);
+
+        // clock hand sweeps continuously through the whole beat — waiting is the subject
+        const c5hand = { a: 0 };
+        tl.to(c5hand, {
+          a: 300, duration: 7.4, ease: "none",
+          onUpdate: () => { document.getElementById("c5-hand").style.transform = `translate(-50%,-100%) rotate(${c5hand.a}deg)`; }
+        }, 0.4);
+
+        // Scene 2 (0.5-1.0s): clock settles in
+        tl.to("#c5-clock", { opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" }, 0.5);
+
+        // Scene 3 (1.0-2.7s, cue "Le client attend."): line 1
+        tl.to("#c5-l1", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 1.05);
+
+        // Scene 4 (2.7-4.3s, cue "Je m'excuse."): line 2, the one red beat of this frame
+        tl.to("#c5-l2", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 2.75);
+
+        // Scene 5 (4.3-6.0s, cue "Je recommence un plat."): line 3, the plate redraws itself —
+        // an SVG self-draw, not a fade, echoing the effort of starting over
+        tl.to("#c5-l3", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 4.35);
+        tl.to("#c5-plate-outer", { strokeDashoffset: 0, duration: 0.7, ease: "power2.out" }, 4.6);
+        tl.to("#c5-plate-inner", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 5.0);
+
+        // Scene 6 (6.0-7.5s): hold — subtle jitter on the plate only
+        const c5phase = { p: 0 };
+        tl.to(c5phase, {
+          p: Math.PI * 2 * 1.0, duration: 1.5, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(c5phase.p);
+            gsap.set("#c5-plate", { scale: 1 + s * 0.01 });
+          }
+        }, 6.1);
+
+        window.__timelines["05-client-attend"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

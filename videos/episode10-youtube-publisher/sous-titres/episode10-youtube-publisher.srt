@@ -1,0 +1,144 @@
+1
+00:00:01,000 --> 00:00:02,140
+Aujourd'hui, je vais vous montrer
+
+2
+00:00:02,140 --> 00:00:04,720
+comment j'ai automatisé mes 4 chaînes YouTube.
+
+3
+00:00:04,720 --> 00:00:07,140
+Et pour ça, j'ai développé mon propre logiciel,
+
+4
+00:00:07,140 --> 00:00:09,140
+connecté directement à mes agents IA.
+
+5
+00:00:10,450 --> 00:00:12,690
+Avec plusieurs logiciels et projets à présenter,
+
+6
+00:00:12,690 --> 00:00:14,270
+je devais gérer différentes chaînes,
+
+7
+00:00:14,270 --> 00:00:16,290
+préparer les vidéos, écrire les titres,
+
+8
+00:00:16,290 --> 00:00:18,750
+programmer les publications et suivre les résultats.
+
+9
+00:00:18,750 --> 00:00:20,657
+J'ai donc décidé de centraliser tout ça.
+
+10
+00:00:21,800 --> 00:00:24,403
+J'ai construit YouTube Publisher Bot avec Lovable.
+
+11
+00:00:24,403 --> 00:00:25,783
+Depuis une seule interface,
+
+12
+00:00:25,783 --> 00:00:28,443
+je peux organiser mes vidéos, gérer leurs informations,
+
+13
+00:00:28,443 --> 00:00:29,323
+retrouver l'historique
+
+14
+00:00:29,323 --> 00:00:30,973
+et visualiser mon calendrier de publication.
+
+15
+00:00:42,080 --> 00:00:43,580
+Mais la vraie différence,
+
+16
+00:00:43,580 --> 00:00:46,400
+c'est que j'ai connecté ce logiciel à un MCP YouTube.
+
+17
+00:00:46,400 --> 00:00:48,300
+Mes agents IA peuvent consulter mes chaînes,
+
+18
+00:00:48,300 --> 00:00:50,240
+récupérer les vidéos, analyser les données
+
+19
+00:00:50,240 --> 00:00:52,825
+et préparer des actions directement depuis Claude.
+
+20
+00:00:54,000 --> 00:00:56,105
+Sur FoodEatUp, j'avais déjà des Shorts programmés
+
+21
+00:00:56,105 --> 00:00:58,065
+sur plusieurs jours lors de mon dernier relevé.
+
+22
+00:00:58,065 --> 00:01:00,065
+Et mon système dispose aussi d'un autopilote,
+
+23
+00:01:00,065 --> 00:01:02,165
+capable de proposer des créneaux de publication
+
+24
+00:01:02,165 --> 00:01:03,709
+à partir de l'historique de la chaîne.
+
+25
+00:01:19,000 --> 00:01:20,426
+Et une fois les vidéos publiées,
+
+26
+00:01:20,426 --> 00:01:21,466
+je peux exploiter les données
+
+27
+00:01:21,466 --> 00:01:22,966
+pour comprendre ce qui fonctionne.
+
+28
+00:01:22,966 --> 00:01:24,886
+Les vues, les interactions et les performances.
+
+29
+00:01:24,886 --> 00:01:26,846
+L'objectif, c'est que mes agents m'aident
+
+30
+00:01:26,846 --> 00:01:28,739
+à améliorer les prochaines publications.
+
+31
+00:01:36,000 --> 00:01:38,657
+Mon objectif n'est pas seulement d'automatiser YouTube,
+
+32
+00:01:38,657 --> 00:01:40,157
+c'est de construire une équipe d'agents IA
+
+33
+00:01:40,157 --> 00:01:42,417
+capables de travailler avec mes propres logiciels
+
+34
+00:01:42,417 --> 00:01:44,937
+pendant que je me concentre sur les produits et les clients.
+
+35
+00:01:44,937 --> 00:01:46,137
+Et demain, je vous présenterai
+
+36
+00:01:46,137 --> 00:01:48,047
+un nouveau projet et mon travail du jour.
+

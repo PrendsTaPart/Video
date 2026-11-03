@@ -1,0 +1,313 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Six briques des agents IA</title>
+<style>
+@font-face{font-family:M;src:url(a/fonts/Manrope-Medium.ttf);font-weight:500}
+@font-face{font-family:M;src:url(a/fonts/Manrope-Bold.ttf);font-weight:700}
+@font-face{font-family:M;src:url(a/fonts/Manrope-ExtraBold.ttf);font-weight:800}
+:root{--night:#0F1A23;--surf:#16242F;--blue:#007BFF;--orange:#FFA500;--cream:#FCF9E6;--grey:#AEB8C2}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;background:var(--night);overflow:hidden}
+body{font-family:M,sans-serif;color:#fff}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:radial-gradient(1200px 900px at 50% 38%,#173049 0%,#0F1A23 62%)}
+.abs{position:absolute}
+.scene{position:absolute;inset:0;display:none}
+#wm{position:absolute;width:1300px;left:-110px;top:420px;opacity:.035;filter:grayscale(1) brightness(3)}
+.chip{position:absolute;left:80px;top:150px;font-weight:800;font-size:30px;letter-spacing:4px;color:var(--orange);text-transform:uppercase}
+.title{position:absolute;left:80px;right:80px;top:200px;font-weight:800;font-size:76px;line-height:1.05;letter-spacing:-1px}
+.title b{color:var(--orange);font-weight:800}
+.phone{position:absolute;background:#05090d;border-radius:64px;padding:16px;box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 2px #2a3a48 inset}
+.phone .scr{position:relative;width:100%;height:100%;border-radius:50px;overflow:hidden;background:#000}
+.tab{position:absolute;background:#05090d;border-radius:42px;padding:22px;box-shadow:0 40px 90px rgba(0,0,0,.55),0 0 0 2px #2a3a48 inset}
+.tab .scr{position:relative;width:100%;height:100%;border-radius:20px;overflow:hidden;background:#000}
+.scr > img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.src{position:absolute;font-weight:500;font-size:22px;color:var(--grey);letter-spacing:.5px}
+.src:before{content:"";display:inline-block;width:10px;height:10px;border-radius:5px;background:#22c55e;margin-right:10px;vertical-align:2px}
+.pill{position:absolute;display:flex;align-items:center;gap:14px;background:var(--surf);border:2px solid #2a3a48;border-radius:999px;padding:16px 28px;font-weight:700;font-size:34px;white-space:nowrap}
+.pill svg{width:38px;height:38px;flex:none}
+.pill.o{background:var(--orange);color:#111;border-color:var(--orange)}
+.pill.b{background:var(--blue);color:#fff;border-color:var(--blue)}
+.pill.warn{border-color:var(--orange);color:var(--orange);background:#16242F;box-shadow:0 20px 50px rgba(0,0,0,.6)}
+.card{position:absolute;background:var(--surf);border-radius:36px;border:2px solid #24384a;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.row{display:flex;align-items:center;gap:22px;padding:22px 34px;border-top:2px solid #22364a;font-size:32px;font-weight:700}
+.row .ic{width:62px;height:62px;border-radius:16px;background:#0b2a4d;display:flex;align-items:center;justify-content:center;flex:none}
+.row .sz{margin-left:auto;color:var(--grey);font-weight:500;font-size:28px}
+.bubble{position:absolute;border-radius:30px;padding:22px 30px;font-size:33px;font-weight:700;line-height:1.25}
+.logo-pill{position:absolute;background:#fff;border-radius:999px;display:flex;align-items:center;justify-content:center}
+</style>
+</head><body>
+<style>
+html,body{width:1920px;height:1080px}
+#stage{width:1920px;height:1080px;background:radial-gradient(1500px 900px at 50% 40%,#10304d 0%,#0B1622 65%)}
+:root{--bc:#2EA8FF}
+.h1{position:absolute;left:100px;top:150px;font-weight:800;font-size:64px;line-height:1.05;letter-spacing:-1px}
+.h1 b{color:var(--bc)}
+.k{position:absolute;left:100px;top:112px;font-weight:800;font-size:26px;letter-spacing:4px;color:var(--bc);text-transform:uppercase}
+.code{position:absolute;background:#0a0f14;border:2px solid #22364a;border-radius:20px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.code .bar{padding:12px 18px;background:#131d27;font-weight:700;font-size:20px;color:#8fa3b5;display:flex;gap:8px;align-items:center}
+.code .bar i{width:12px;height:12px;border-radius:6px;display:inline-block}
+.code pre{margin:0;padding:16px 20px;font-family:'DejaVu Sans Mono',monospace;font-size:21px;line-height:1.5;color:#d6e2ec;white-space:pre-wrap}
+.c-k{color:#7dd3fc}.c-s{color:#86efac}.c-o{color:#FFA500}.c-m{color:#7d90a2}.c-r{color:#ff7b72}
+.note{position:absolute;font-weight:500;font-size:21px;color:#8fa3b5}
+.note.real:before{content:"";display:inline-block;width:10px;height:10px;border-radius:5px;background:#22c55e;margin-right:10px;vertical-align:2px}
+.note.demo:before{content:"";display:inline-block;width:10px;height:10px;border-radius:5px;background:#FFA500;margin-right:10px;vertical-align:2px}
+.box{position:absolute;background:#16242F;border:2px solid #2f475c;border-radius:22px;padding:18px 22px}
+.warn{position:absolute;display:flex;gap:14px;align-items:flex-start;background:rgba(255,165,0,.1);border:2px solid #FFA500;border-radius:20px;padding:16px 22px;font-weight:700;font-size:26px;color:#ffd27a;line-height:1.3}
+.chain{position:absolute;display:flex;align-items:center;gap:14px}
+.chain .s{background:#16242F;border:2px solid #2f475c;border-radius:16px;padding:14px 18px;font-weight:800;font-size:25px;white-space:nowrap}
+.chain .s.v{border-color:#FFA500;color:#FFA500}
+.chain .a{color:#4e6a82;font-size:30px;font-weight:800}
+.ag{position:absolute;width:360px;background:#16242F;border:2px solid #2f475c;border-radius:20px;padding:16px 18px}
+.ag .r{font-weight:800;font-size:28px}.ag .f{font-family:'DejaVu Sans Mono',monospace;font-size:16px;color:#7d90a2;margin-top:6px}
+.ag .d{font-size:19px;color:#AEB8C2;margin-top:8px;line-height:1.3}
+table.demo{border-collapse:collapse;font-size:22px}
+table.demo td,table.demo th{padding:9px 14px;border-bottom:1px solid #2f475c;text-align:left}
+table.demo th{color:#8fa3b5;font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:1px}
+.low{color:#ff8a7a;font-weight:800}
+#bricks{position:absolute;left:100px;right:100px;top:36px;display:flex;gap:12px}
+#bricks div{flex:1;text-align:center;border-radius:12px;padding:10px 0;font-weight:800;font-size:20px;letter-spacing:1px;background:#132331;color:#4e6a82;border:2px solid #1d3346}
+#bricks div.on{background:var(--bc);color:#06121d;border-color:var(--bc)}
+#bricks div.done{color:#9cc9ee;border-color:#2b5679}
+.ev{position:absolute;width:300px;text-align:center;background:#16242F;border:2px solid #2f475c;border-radius:18px;padding:16px 10px}
+.ev b{display:block;font-family:'DejaVu Sans Mono',monospace;font-size:26px;color:#7dd3fc}
+.ev span{font-size:20px;color:#AEB8C2}
+.ev i{display:block;font-style:normal;font-weight:800;font-size:22px;margin-top:8px}
+.big{position:absolute;font-weight:800;line-height:1;letter-spacing:-3px;color:var(--bc)}
+.step{position:absolute;left:100px;width:860px;display:flex;gap:18px;align-items:center;background:#16242F;border:2px solid #2f475c;border-radius:18px;padding:12px 18px}
+.step .n{flex:none;width:46px;height:46px;border-radius:23px;background:#1d3a55;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px}
+.step .t{font-weight:800;font-size:25px}.step .t small{display:block;font-weight:500;font-size:18px;color:#8fa3b5}
+.step.v{border-color:#FFA500}.step.v .n{background:#FFA500;color:#111}
+</style>
+<div id="stage">
+  <div id="bricks"><div>1 · MCP</div><div>2 · SKILLS</div><div>3 · AGENTS</div><div>4 · PLUGINS</div><div>5 · HOOKS</div><div>6 · CONNAISSANCE</div></div>
+
+  <!-- 0 accroche -->
+  <div class="scene" id="s0">
+    <div class="h1" id="s0t" style="top:160px;font-size:72px">Comment une IA passe de<br><b>répondre</b> à <b>travailler</b> ?</div>
+    <svg id="s0svg" class="abs" style="left:0;top:0" width="1920" height="1080"></svg>
+    <div id="s0ai" class="abs" style="left:860px;top:560px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,#2EA8FF,#1269b0);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:56px;box-shadow:0 0 90px rgba(46,168,255,.5)">IA</div>
+    <div id="s0n"></div>
+    <div class="abs" id="s0eq" style="left:100px;right:100px;top:850px;text-align:center;font-weight:800;font-size:38px">un rôle · des compétences · des outils · des règles · des automatismes</div>
+  </div>
+
+  <!-- 1 MCP -->
+  <div class="scene" id="s1">
+    <div class="k">Brique 1 · MCP</div>
+    <div class="h1">Les mains de l'IA :<br><b>l'accès aux outils</b></div>
+    <div class="code" id="s1c" style="left:100px;top:370px;width:760px"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>&nbsp;foodeatup/.mcp.json</div><pre><span class="c-m">{</span>
+  <span class="c-k">"mcpServers"</span>: {
+    <span class="c-k">"foodeatup"</span>: {
+      <span class="c-k">"type"</span>: <span class="c-s">"http"</span>,
+      <span class="c-k">"url"</span>: <span class="c-s">"https://foodeatup.com/api/mcp"</span>
+    }
+  }
+<span class="c-m">}</span></pre></div>
+    <div class="note real" id="s1r" style="left:100px;top:750px">Fichier réel du plugin foodeatup</div>
+    <div class="box" id="s1d" style="left:980px;top:200px;width:840px">
+      <div style="font-family:'DejaVu Sans Mono',monospace;font-size:22px;color:#7dd3fc">→ list_low_stocks <span style="color:#8fa3b5">(lecture)</span></div>
+      <table class="demo" style="margin-top:12px;width:100%"><tr><th>Ingrédient</th><th>Stock</th><th>Seuil</th></tr>
+      <tr><td>Crème liquide 35 %</td><td class="low">2 L</td><td>6 L</td></tr><tr><td>Beurre doux</td><td class="low">1,5 kg</td><td>5 kg</td></tr>
+      <tr><td>Saumon frais</td><td class="low">1,2 kg</td><td>4 kg</td></tr><tr><td>Farine T55</td><td class="low">8 kg</td><td>20 kg</td></tr></table>
+    </div>
+    <div class="note demo" id="s1dm" style="left:980px;top:530px">Données de démonstration · aucune donnée client</div>
+    <div class="warn" id="s1w" style="left:980px;top:620px;width:840px">⚠&nbsp;Un MCP donne accès aux fonctions autorisées pour le compte connecté. Il ne garantit ni l'autonomie, ni la sécurité.</div>
+  </div>
+
+  <!-- 2 Skills -->
+  <div class="scene" id="s2">
+    <div class="k">Brique 2 · Skills</div>
+    <div class="h1">Le savoir-faire :<br><b>une méthode écrite</b></div>
+    <div class="code" id="s2c" style="left:1000px;top:110px;width:820px"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>&nbsp;foodeatup/skills/reappro-fournisseurs/SKILL.md</div><pre style="font-size:19px"><span class="c-m">---</span>
+<span class="c-k">name:</span> reappro-fournisseurs
+<span class="c-k">description:</span> Utiliser quand l'utilisateur parle de stock bas, de commande fournisseur ou de réapprovisionnement.
+<span class="c-m">---</span>
+<span class="c-o">## Workflow</span>
+1. Détecter les stocks bas — list_low_stocks
+2. Préparer la commande — regrouper par fournisseur
+3. Commander — create_supplier_order
+   Faire valider (articles + quantités) AVANT l'appel
+<span class="c-o">## Garde-fous</span>
+- Jamais de commande fournisseur sans validation
+  explicite de l'utilisateur</pre></div>
+    <div class="note real" style="left:1000px;top:640px">Extrait réel du fichier (abrégé)</div>
+    <div class="chain" id="s2ch" style="left:100px;top:400px;flex-direction:column;align-items:flex-start">
+      <div class="s">① Détecter les stocks bas</div><div class="s">② Regrouper par fournisseur</div><div class="s v">✋ Faire valider</div><div class="s">③ Commander</div>
+    </div>
+    <div class="warn" id="s2w" style="left:100px;top:760px;width:820px">Le Skill définit la méthode. Il ne déclenche rien tout seul.</div>
+  </div>
+
+  <!-- 3 Agents -->
+  <div class="scene" id="s3">
+    <div class="k">Brique 3 · Agents</div>
+    <div class="h1">L'employé spécialisé :<br><b>un rôle, un objectif</b></div>
+    <div class="code" id="s3c" style="left:100px;top:370px;width:820px"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>&nbsp;foodeatup/agents/chef-restaurateur.md</div><pre style="font-size:19px"><span class="c-k">name:</span> chef-restaurateur
+<span class="c-k">description:</span> Directeur de restaurant expérimenté…
+
+<span class="c-o">Tu penses en RATIOS, toujours :</span>
+- Food cost ≤ 30 % du prix de vente
+- Masse salariale ≤ 35 % du chiffre d'affaires
+- Marge brute cible par plat : ~70 %
+Tes seuils viennent de ./rapido-kb/ quand elle existe</pre></div>
+    <div class="ag" id="a1" style="left:1000px;top:200px"><div class="r">Directeur commercial</div><div class="f">rapidocrm/agents/</div><div class="d">Pilote le funnel de vente</div></div>
+    <div class="ag" id="a2" style="left:1420px;top:200px"><div class="r">Directeur général</div><div class="f">rapido-suite/agents/</div><div class="d">Croise les signaux de l'entreprise</div></div>
+    <div class="ag" id="a3" style="left:1000px;top:390px"><div class="r">CFO virtuel</div><div class="f">rapido-startup/agents/</div><div class="d">Pilote les finances</div></div>
+    <div class="ag" id="a4" style="left:1420px;top:390px"><div class="r">Community manager</div><div class="f">rapidocms/agents/</div><div class="d">Rédige et adapte les posts</div></div>
+    <div class="big" id="s3n" style="left:1000px;top:600px;font-size:130px">77<span style="font-size:36px;letter-spacing:0;color:#fff;margin-left:16px">agents dans le catalogue</span></div>
+    <div class="chain" id="s3f" style="left:1000px;top:770px"><div class="s">Mission</div><div class="a">→</div><div class="s">Outils</div><div class="a">→</div><div class="s">Résultat</div></div>
+    <div class="note" id="s3l" style="left:1000px;top:850px">… dans les limites de sa configuration</div>
+  </div>
+
+  <!-- 4 Plugins -->
+  <div class="scene" id="s4">
+    <div class="k">Brique 4 · Plugins</div>
+    <div class="h1">Le paquet :<br><b>tout installer en une fois</b></div>
+    <div class="code" id="s4t" style="left:100px;top:370px;width:560px"><div class="bar">structure réelle</div><pre style="font-size:22px">foodeatup/
+├── .claude-plugin/
+├── .mcp.json        <span class="c-m">← MCP</span>
+├── agents/   (5)    <span class="c-m">← agents</span>
+├── skills/   (27)   <span class="c-m">← Skills</span>
+├── hooks/           <span class="c-m">← Hooks</span>
+└── reference/</pre></div>
+    <div class="code" id="s4m" style="left:700px;top:370px;width:520px"><div class="bar">.claude-plugin/marketplace.json</div><pre style="font-size:19px">"name": "rapido",
+"plugins": [
+  { "name": "foodeatup" },
+  { "name": "rapidocrm" },
+  { "name": "rapidocms" },
+  { "name": "rapidorh" },
+  { "name": "rapido-suite" },
+  { "name": "planit" }, …
+]  <span class="c-o">33 plugins</span></pre></div>
+    <div class="phone" id="s4p" style="left:1290px;top:110px;width:380px;height:780px;padding:12px;border-radius:50px"><div class="scr" style="border-radius:40px"><img src="a/web/competences-00.png"></div></div>
+    <div class="code" id="s4i" style="left:100px;top:790px;width:1120px"><div class="bar">Claude Code</div><pre id="s4pre" style="font-size:22px"></pre></div>
+    <div class="note real" style="left:1300px;top:910px">plugin.braindcode.com · README</div>
+  </div>
+
+  <!-- 5 Hooks -->
+  <div class="scene" id="s5">
+    <div class="k">Brique 5 · Hooks</div>
+    <div class="h1">Les réflexes :<br><b>déclenchés par un événement</b></div>
+    <div class="ev" id="e1" style="left:100px;top:380px"><b>SessionStart</b><span>au démarrage</span><i>9 plugins</i></div>
+    <div class="ev" id="e2" style="left:420px;top:380px"><b>PreToolUse</b><span>avant un outil</span><i>33 plugins</i></div>
+    <div class="ev" id="e3" style="left:740px;top:380px"><b>PostToolUse</b><span>après un outil</span><i>6 plugins</i></div>
+    <div class="ev" id="e4" style="left:1060px;top:380px"><b>Stop</b><span>fin de réponse</span><i>25 plugins</i></div>
+    <div class="box" id="s5det" style="left:1400px;top:380px;width:420px;font-size:22px;line-height:1.4"><b style="color:#7dd3fc">Hook</b> = script : même entrée, même réponse.<br><b style="color:#FFA500">Modèle</b> = décision générée : peut varier.</div>
+    <div class="code" id="s5r" style="left:100px;top:560px;width:1720px"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>&nbsp;exécution réelle des scripts du plugin foodeatup</div><pre id="s5pre" style="font-size:19px"></pre></div>
+    <div class="warn" id="s5w" style="left:100px;top:880px;width:1720px">⚠&nbsp;« ask » s'appuie sur le mécanisme d'approbation de Claude Code. Un Hook seul ne fait pas toute la sécurité : permissions, comptes et validations comptent aussi.</div>
+  </div>
+
+  <!-- 6 KB -->
+  <div class="scene" id="s6">
+    <div class="k">Brique 6 · Connaissance</div>
+    <div class="h1">La mémoire métier :<br><b>vos règles, vos seuils</b></div>
+    <div class="code" id="s6c" style="left:100px;top:370px;width:640px"><div class="bar">rapido-kb-template/  →  ./rapido-kb/ chez vous</div><pre style="font-size:23px">entreprise.md
+processus-internes.md   <span class="c-m">← seuils, procédures</span>
+produits-services.md
+charte-graphique.md     <span class="c-m">← charte</span>
+ton-et-accroches.md     <span class="c-m">← ton</span>
+cibles-personas.md
+propositions-valeur.md
+prospection.md
+concurrents.md</pre></div>
+    <div class="note real" style="left:100px;top:790px">Gabarit réel du dépôt · la KB du client n'est jamais versionnée</div>
+    <div class="box" id="s6a" style="left:820px;top:370px;width:480px;border-color:#2EA8FF"><div style="font-weight:800;font-size:30px;color:#7dd3fc">Base de connaissance</div><div style="font-size:23px;line-height:1.45;margin-top:10px">Fichiers persistants<br>Relue à chaque session<br>Seuils, procédures, charte, ton</div></div>
+    <div class="box" id="s6b" style="left:1340px;top:370px;width:480px"><div style="font-weight:800;font-size:30px;color:#AEB8C2">Historique de conversation</div><div style="font-size:23px;line-height:1.45;margin-top:10px;color:#AEB8C2">Limité à la session<br>Perdu ou résumé ensuite<br>Pas une source de règles</div></div>
+    <div class="warn" id="s6w" style="left:820px;top:640px;width:1000px">Exemple : « votre food cost cible est 28 % — processus-internes.md » (sans KB : valeur par défaut, signalée).</div>
+  </div>
+
+  <!-- 7 Démo -->
+  <div class="scene" id="s7">
+    <div class="k">Toutes les briques ensemble</div>
+    <div class="h1" style="font-size:44px;top:150px;width:1700px">« Analyse mes stocks et prépare mes achats fournisseurs pour les trois prochains jours. »</div>
+    <div class="step" id="d1" style="top:280px"><div class="n">1</div><div class="t">Le chef-restaurateur reçoit l'objectif<small>agent · foodeatup/agents/chef-restaurateur.md</small></div></div>
+    <div class="step" id="d2" style="top:362px"><div class="n">2</div><div class="t">Il charge le Skill de réapprovisionnement<small>skill · reappro-fournisseurs</small></div></div>
+    <div class="step" id="d3" style="top:444px"><div class="n">3</div><div class="t">Le MCP FoodEatUp fournit les données autorisées<small>MCP · list_low_stocks, list_suppliers</small></div></div>
+    <div class="step" id="d4" style="top:526px"><div class="n">4</div><div class="t">La base de connaissance donne les seuils<small>KB · processus-internes.md</small></div></div>
+    <div class="step" id="d5" style="top:608px"><div class="n">5</div><div class="t">L'agent prépare ses recommandations<small>proposition de commande par fournisseur</small></div></div>
+    <div class="step" id="d6" style="top:690px"><div class="n">6</div><div class="t">Hooks et permissions encadrent les actions sensibles<small>hooks + mode de permissions Claude Code</small></div></div>
+    <div class="step v" id="d7" style="top:772px"><div class="n">✋</div><div class="t">Le restaurateur valide avant toute commande<small>create_supplier_order seulement après accord</small></div></div>
+    <div class="box" id="s7t" style="left:1010px;top:280px;width:810px">
+      <div style="font-weight:800;font-size:26px">Proposition de commande</div>
+      <table class="demo" style="margin-top:10px;width:100%"><tr><th>Fournisseur</th><th>Article</th><th>Qté proposée</th></tr>
+      <tr><td>Laiterie (démo)</td><td>Crème liquide 35 %</td><td>6 L</td></tr><tr><td>Laiterie (démo)</td><td>Beurre doux</td><td>5 kg</td></tr>
+      <tr><td>Marée (démo)</td><td>Saumon frais</td><td>4 kg</td></tr><tr><td>Minoterie (démo)</td><td>Farine T55</td><td>25 kg</td></tr></table>
+      <div style="display:flex;gap:14px;margin-top:16px"><div style="flex:1;text-align:center;border-radius:14px;padding:14px;background:#FFA500;color:#111;font-weight:800;font-size:24px">Valider</div><div style="flex:1;text-align:center;border-radius:14px;padding:14px;border:2px solid #2f475c;font-weight:800;font-size:24px">Modifier</div></div>
+    </div>
+    <div class="note demo" id="s7n" style="left:1010px;top:700px;width:810px;line-height:1.4">Données de démonstration. Le Skill actuel part des articles en stock bas : il ne contient pas de prévision sur trois jours.</div>
+  </div>
+
+  <!-- 8 final -->
+  <div class="scene" id="s8">
+    <div id="s8b" class="abs" style="left:160px;right:160px;top:170px;display:flex;gap:14px"></div>
+    <div class="abs" id="s8t" style="left:0;right:0;top:330px;text-align:center;font-weight:800;font-size:66px;line-height:1.15">D'un chatbot<br>à une <span style="color:#2EA8FF">équipe d'agents IA spécialisés</span></div>
+    <div class="logo-pill" id="s8l" style="left:660px;top:600px;width:600px;height:150px"><img src="a/logos/braindcode.png" style="width:500px"></div>
+    <div class="abs" id="s8u" style="left:0;right:0;top:790px;text-align:center;font-weight:800;font-size:54px;color:#7dd3fc">plugin.braindcode.com</div>
+  </div>
+
+  <!-- miniature 16:9 -->
+  <div class="scene" id="thumb">
+    <div class="abs" style="left:90px;right:90px;top:120px;font-weight:800;font-size:112px;line-height:1.02;letter-spacing:-3px">MCP + SKILLS<br>+ AGENTS<br>+ <span style="color:#2EA8FF">PLUGINS</span> + <span style="color:#FFA500">HOOKS</span></div>
+    <div class="abs" style="left:96px;top:600px;font-weight:700;font-size:48px;color:#cfe3f3">Construire une équipe d'agents IA, brique par brique</div>
+    <div class="logo-pill" style="left:96px;top:730px;width:520px;height:120px"><img src="a/logos/braindcode.png" style="width:440px"></div>
+    <div class="code" style="left:1240px;top:780px;width:600px"><div class="bar">SKILL.md</div><pre style="font-size:20px"><span class="c-k">name:</span> reappro-fournisseurs
+<span class="c-o">## Garde-fous</span>
+- Jamais sans validation</pre></div>
+  </div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const eout=x=>1-Math.pow(1-x,3);
+const A=[0,15.282,36.51,56.183,75.61,93.884,118.785,137.475,157.261,168.45];
+const P=[0.3,16.582,38.81,59.483,79.91,99.184,125.085,144.775,165.561];
+const V=(i,w)=>P[i]+(w-A[i]);
+const SC=[['s0',0,16.0],['s1',16.0,38.3],['s2',38.3,59.0],['s3',59.0,79.4],['s4',79.4,98.7],['s5',98.7,124.6],['s6',124.6,144.3],['s7',144.3,165.1],['s8',165.1,180.0]];
+const DUR=180.0;
+function pop(el,t,a,d=.45,dy=40,sc=0){const p=eout(cl((t-a)/d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px) scale(${1-sc*(1-p)})`;return p;}
+function lines(el,arr,t,a,lps){const n=Math.max(0,Math.floor((t-a)*lps)+(t>=a?1:0));el.innerHTML=arr.slice(0,n).join('\n');}
+
+const INSTALL=['<span class="c-s">&gt;</span> /plugin marketplace add PrendsTaPart/Plugin-Claude-MCP-BraindCode-','<span class="c-s">&gt;</span> /plugin install foodeatup@rapido'];
+const HOOKRUN=[
+ '<span class="c-s">$</span> echo \'{"tool_name":"mcp__foodeatup__add_temperature","tool_input":{"value":3.2}}\' | sh anti-donnee-inventee.sh',
+ '{"permissionDecision": <span class="c-r">"deny"</span>, "permissionDecisionReason": "equipment_id absent : … ne doit jamais être deviné."}',
+ '',
+ '<span class="c-s">$</span> echo \'{"tool_name":"mcp__foodeatup__delete_dish", …}\' | sh garde-destructif.sh',
+ '{"permissionDecision": <span class="c-o">"ask"</span>, "permissionDecisionReason": "Action destructrice, irréversible ou sensible : confirmation utilisateur requise"}'];
+$('s4i').querySelector('.bar').textContent='Claude Code';
+$('s4m').querySelector('.bar').textContent='.claude-plugin/marketplace.json (extrait)';
+
+// accroche : IA isolée puis connexions
+const NODES=[['FoodEatUp',360,560],['RapidoCRM',1560,560],['RapidoCMS',520,800],['RapidoRH',1400,800],['Plan\'It',960,420]];
+$('s0n').innerHTML=NODES.map(([n,x,y])=>`<div class="abs" style="left:${x-110}px;top:${y-34}px;width:220px;height:68px;border-radius:999px;background:#fff;color:#0B1622;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:26px">${n}</div>`).join('');
+const n0=[...$('s0n').children];
+$('s0svg').innerHTML=NODES.map(([,x,y],i)=>`<line id="l${i}" x1="960" y1="660" x2="960" y2="660" stroke="#2EA8FF" stroke-width="4" stroke-dasharray="12 10"/>`).join('');
+// bandeau final des six briques
+$('s8b').innerHTML=['MCP','Skills','Agents','Plugins','Hooks','Connaissance'].map(b=>`<div style="flex:1;text-align:center;border-radius:14px;padding:16px 0;background:#2EA8FF;color:#06121d;font-weight:800;font-size:28px">${b}</div>`).join('');
+const b8=[...$('s8b').children]; const BR=[...$('bricks').children];
+
+function render(t){
+  $('thumb').style.display='none';
+  for(const [id,a,b] of SC){const el=$(id);const on=t>=a&&t<b;el.style.display=on?'block':'none';
+    if(on){const fi=id==='s0'?1:cl((t-a)/.35),fo=id==='s8'?1:1-cl((t-(b-.3))/.3);el.style.opacity=Math.min(fi,fo);}}
+  // progression des briques
+  const cur=t<16?-1:t<38.3?0:t<59?1:t<79.4?2:t<98.7?3:t<124.6?4:t<144.3?5:6;
+  $('bricks').style.opacity=cl((t-V(0,13.48))/.5);
+  BR.forEach((d,i)=>{d.className=cur===6?'on':(i===cur?'on':(i<cur?'done':''));});
+  if(t>=165.1) $('bricks').style.opacity=1-cl((t-165.1)/.4);
+  if(t<16){pop($('s0t'),t,.3,.6,40);pop($('s0ai'),t,.8,.5,0,.4);
+    NODES.forEach(([,x,y],i)=>{const a=V(0,6.3)+i*.25;pop(n0[i],t,a,.4,0,.3);const p=eout(cl((t-a)/.5));const L=$('l'+i);L.setAttribute('x2',960+(x-960)*p);L.setAttribute('y2',660+(y-660)*p);L.setAttribute('stroke-dashoffset',-t*40);});
+    pop($('s0eq'),t,V(0,9.88),.5,30);}
+  else if(t<38.3){pop($('s1c'),t,V(1,23.04),.5,40);pop($('s1r'),t,V(1,24.6),.4,10);pop($('s1d'),t,V(1,28.48)-.2,.5,40);pop($('s1dm'),t,V(1,28.48),.4,10);pop($('s1w'),t,V(1,30.02),.5,30,.05);}
+  else if(t<59){pop($('s2c'),t,V(2,42.04)-.2,.5,40);const ch=[...$('s2ch').children];[49.54,50.68,51.88,52.72].forEach((w,i)=>pop(ch[i],t,V(2,w)-.1,.4,0,.15));pop($('s2w'),t,V(2,53.36),.5,30);}
+  else if(t<79.4){pop($('s3c'),t,V(3,61.8)-.2,.5,40);[['a1',65.5],['a2',67.4],['a3',68.2],['a4',68.6]].forEach(([id,w])=>pop($(id),t,V(3,w)-.1,.4,30,.1));
+    pop($('s3n'),t,V(3,69.9)-.1,.5,30);$('s3n').firstChild.textContent=Math.round(77*cl((t-(V(3,69.9)-.1))/.8));
+    const f=[...$('s3f').children];f.forEach((e,i)=>pop(e,t,V(3,71.26)+i*.45,.35,0,.2));pop($('s3l'),t,V(3,74.16),.4,10);}
+  else if(t<98.7){pop($('s4t'),t,V(4,78.26),.5,40);pop($('s4m'),t,V(4,83.68),.5,40);pop($('s4p'),t,V(4,84.8),.6,60);pop($('s4i'),t,V(4,89.8),.5,30);lines($('s4pre'),INSTALL,t,V(4,91.54),.8);}
+  else if(t<124.6){[['e2',98.1],['e3',99.18],['e1',99.82],['e4',101.12]].forEach(([id,w])=>pop($(id),t,V(5,w)-.1,.4,30,.1));pop($('s5det'),t,V(5,103.36)-.1,.5,30);
+    pop($('s5r'),t,V(5,106.96)-.4,.5,30);lines($('s5pre'),HOOKRUN,t,V(5,106.96),1.3);pop($('s5w'),t,V(5,112.44),.5,30,.05);}
+  else if(t<144.3){pop($('s6c'),t,V(6,127.72)-.3,.5,40);pop($('s6a'),t,V(6,132.4)-.2,.5,30);pop($('s6b'),t,V(6,134.44)-.2,.5,30);pop($('s6w'),t,V(6,135.98),.5,30);}
+  else if(t<165.1){[['d1',142.98],['d2',144.96],['d3',146.8],['d4',149.22],['d5',151.14],['d6',152.62],['d7',155.2]].forEach(([id,w])=>pop($(id),t,V(7,w)-.15,.4,0,.08));
+    pop($('s7t'),t,V(7,151.14),.5,40);pop($('s7n'),t,V(7,151.6),.4,10);}
+  else {b8.forEach((e,i)=>pop(e,t,165.2+i*.12,.35,30,.2));pop($('s8t'),t,V(8,159.0),.6,40);pop($('s8l'),t,V(8,164.8),.5,30,.1);pop($('s8u'),t,V(8,166.4),.5,20);}
+  return Promise.resolve();
+}
+function thumb(){for(const [id] of SC)$(id).style.display='none';$('bricks').style.opacity=0;$('thumb').style.display='block';}
+window.render=render;window.thumb=thumb;window.DUR=DUR;
+</script></body></html>

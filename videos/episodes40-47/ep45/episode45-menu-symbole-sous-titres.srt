@@ -1,0 +1,119 @@
+1
+00:00:00,300 --> 00:00:01,420
+Sur certains menus,
+
+2
+00:00:01,420 --> 00:00:03,400
+le symbole euro a disparu.
+
+3
+00:00:03,400 --> 00:00:04,480
+Juste 12.
+
+4
+00:00:04,480 --> 00:00:05,800
+Pas 12 euros.
+
+5
+00:00:05,800 --> 00:00:07,440
+Des chercheurs de Cornell ont testé trois
+
+6
+00:00:07,440 --> 00:00:07,720
+menus,
+
+7
+00:00:07,720 --> 00:00:09,000
+avec les mêmes plats :
+
+8
+00:00:09,000 --> 00:00:10,400
+les prix avec le symbole,
+
+9
+00:00:10,400 --> 00:00:11,380
+les prix en chiffres seuls,
+
+10
+00:00:11,380 --> 00:00:13,220
+et les prix écrits en toutes lettres.
+
+11
+00:00:13,220 --> 00:00:14,020
+Résultat :
+
+12
+00:00:14,020 --> 00:00:15,420
+ceux qui lisaient les chiffres seuls ont
+
+13
+00:00:15,420 --> 00:00:16,580
+dépensé le plus.
+
+14
+00:00:16,580 --> 00:00:17,520
+Mais pourquoi ?
+
+15
+00:00:17,520 --> 00:00:19,380
+Le symbole rappelle que c'est de l'argent.
+
+16
+00:00:19,380 --> 00:00:20,180
+Et payer,
+
+17
+00:00:20,180 --> 00:00:20,960
+ça fait mal.
+
+18
+00:00:20,960 --> 00:00:22,040
+Alors sur ta carte,
+
+19
+00:00:22,040 --> 00:00:23,120
+chaque détail compte.
+
+20
+00:00:23,120 --> 00:00:24,040
+Avec FoodEatUp,
+
+21
+00:00:24,040 --> 00:00:25,120
+ta carte digitale,
+
+22
+00:00:25,120 --> 00:00:26,600
+ton menu QR code et tes affiches
+
+23
+00:00:26,600 --> 00:00:28,060
+sur écran se gèrent au même endroit.
+
+24
+00:00:28,060 --> 00:00:29,200
+Tu changes un prix,
+
+25
+00:00:29,200 --> 00:00:29,880
+une photo,
+
+26
+00:00:29,880 --> 00:00:30,760
+une mise en avant :
+
+27
+00:00:30,760 --> 00:00:31,360
+tout suit,
+
+28
+00:00:31,360 --> 00:00:32,840
+en salle comme sur les écrans.
+
+29
+00:00:32,840 --> 00:00:33,420
+Commente MENU,
+
+30
+00:00:33,420 --> 00:00:34,970
+et je t'envoie le tuto.

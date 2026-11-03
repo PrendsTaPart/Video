@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>S1E1 F3 — Périmètre RH (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+        .glow { position: absolute; left: 90px; top: 380px; width: 900px; height: 940px; background: radial-gradient(ellipse 50% 45% at 50% 45%, rgba(120,80,192,0.1) 0%, rgba(120,80,192,0.03) 55%, rgba(120,80,192,0) 78%); opacity: 0; pointer-events: none; will-change: opacity; }
+
+        .eyebrow-wrap { position: absolute; left: 0; right: 0; top: 150px; text-align: center; z-index: 4; }
+        .eyebrow-line { width: 72px; height: 5px; border-radius: 3px; background: #7850c0; margin: 0 auto 16px; transform-origin: center; opacity: 0; will-change: transform, opacity; }
+        .eyebrow { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 38px; letter-spacing: 0.08em; text-transform: uppercase; color: #7850c0; opacity: 0; margin: 0; will-change: transform, opacity; }
+
+        .grid { position: absolute; left: 90px; top: 320px; width: 900px; z-index: 3; display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+        .tile { box-sizing: border-box; height: 300px; background: #ffffff; border: 1.5px solid rgba(120,80,192,0.22); border-radius: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; padding: 20px; text-align: center; transform-origin: 50% 50%; opacity: 0; will-change: transform, opacity; }
+        .tile .ic { width: 96px; height: 96px; border-radius: 24px; background: rgba(120,80,192,0.1); display: grid; place-items: center; }
+        .tile .ic svg { width: 52px; height: 52px; fill: none; stroke: #7850c0; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .tile .lbl { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 40px; letter-spacing: -0.01em; color: #1b2a41; line-height: 1.1; }
+
+        .chip { position: absolute; left: 50%; top: 1400px; transform: translateX(-50%); z-index: 4; display: flex; align-items: center; gap: 16px; padding: 22px 40px; background: #1b2a41; border-radius: 100px; opacity: 0; will-change: transform, opacity; }
+        .chip .d { width: 32px; height: 32px; border-radius: 50%; background: #7850c0; display: grid; place-items: center; }
+        .chip .d svg { width: 20px; height: 20px; fill: none; stroke: #fff; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+        .chip b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 38px; color: #ffffff; white-space: nowrap; }
+        .chip b span { color: #b9a6e6; }
+      </style>
+
+      <div id="root" data-composition-id="03-perimetre" data-width="1080" data-height="1920" data-duration="9.643">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="9.143" data-track-index="0"><div class="glow" id="glow"></div></div>
+        <div id="scene" class="clip" data-start="0" data-duration="9.143" data-track-index="1" style="position:absolute; inset:0;">
+          <div class="eyebrow-wrap">
+            <div class="eyebrow-line" id="eyebrow-line"></div>
+            <p class="eyebrow" id="eyebrow">Toute votre RH, connectée</p>
+          </div>
+          <div class="grid">
+            <div class="tile" id="t1"><span class="ic"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.9" /></svg></span><span class="lbl">Recrutement</span></div>
+            <div class="tile" id="t2"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4" /><circle cx="12" cy="12" r="9" /></svg></span><span class="lbl">Onboarding</span></div>
+            <div class="tile" id="t3"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18M9 21V9M15 9v12" /></svg></span><span class="lbl">Projets &amp; Kanban</span></div>
+            <div class="tile" id="t4"><span class="ic"><svg viewBox="0 0 24 24"><path d="M8 6h11M8 12h11M8 18h11M3 6h.01M3 12h.01M3 18h.01" /></svg></span><span class="lbl">Dailies</span></div>
+            <div class="tile" id="t5"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2" /><path d="M8 2v4M16 2v4M3 10h18" /></svg></span><span class="lbl">Agenda &amp; RDV</span></div>
+            <div class="tile" id="t6"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg></span><span class="lbl">Horaires &amp; congés</span></div>
+          </div>
+          <div class="chip" id="chip"><span class="d"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z" /></svg></span><b>connecté à <span>Claude</span></b></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#eyebrow-line", { scaleX: 0, opacity: 0 }, { scaleX: 1, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.0);
+        tl.fromTo("#eyebrow", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.2);
+        var cues = [0.8, 1.6, 2.6, 3.6, 4.6, 5.6];
+        ["#t1","#t2","#t3","#t4","#t5","#t6"].forEach(function (id, i) {
+          tl.fromTo(id, { y: 26, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.44, ease: "power3.out" }, cues[i]);
+        });
+        tl.fromTo("#glow", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "power2.out" }, 6.8);
+        tl.fromTo("#chip", { y: 22, scale: 0.9, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.6)" }, 7.0);
+        window.__timelines["03-perimetre"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

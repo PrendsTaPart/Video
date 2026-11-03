@@ -1,0 +1,168 @@
+1
+00:00:00,500 --> 00:00:02,120
+Aujourd'hui, je vais te montrer quelque chose
+
+2
+00:00:02,120 --> 00:00:04,100
+qui aurait demandé toute une équipe commerciale
+
+3
+00:00:04,100 --> 00:00:05,080
+il y a quelques années.
+
+4
+00:00:05,080 --> 00:00:06,660
+J'ai créé un agent IA qui travaille
+
+5
+00:00:06,660 --> 00:00:09,060
+avec mes outils de prospection et mon CRM.
+
+6
+00:00:09,060 --> 00:00:10,900
+Et le plus intéressant, c'est que je peux lui donner
+
+7
+00:00:10,900 --> 00:00:12,880
+son objectif avec un seul prompt,
+
+8
+00:00:12,880 --> 00:00:14,520
+depuis Claude ou ChatGPT.
+
+9
+00:00:14,520 --> 00:00:16,180
+Par exemple : trouve-moi des restaurants
+
+10
+00:00:16,180 --> 00:00:18,500
+susceptibles d'être intéressés par FoodEatUp,
+
+11
+00:00:18,500 --> 00:00:19,340
+qualifie les prospects
+
+12
+00:00:19,340 --> 00:00:21,560
+et prépare les prochaines actions commerciales.
+
+13
+00:00:21,560 --> 00:00:23,420
+Grâce aux MCP, l'agent peut utiliser
+
+14
+00:00:23,420 --> 00:00:25,020
+les fonctions de RapidoCRM.
+
+15
+00:00:25,020 --> 00:00:26,800
+Il peut rechercher des entreprises,
+
+16
+00:00:26,800 --> 00:00:28,180
+retrouver leurs informations,
+
+17
+00:00:28,180 --> 00:00:30,560
+les enregistrer et les organiser par segment :
+
+18
+00:00:30,560 --> 00:00:32,580
+restauration rapide, bar / brasserie,
+
+19
+00:00:32,580 --> 00:00:34,420
+traiteur, chaînes et franchises.
+
+20
+00:00:34,420 --> 00:00:35,720
+Ensuite, les prospects entrent
+
+21
+00:00:35,720 --> 00:00:37,160
+dans mon pipeline commercial.
+
+22
+00:00:37,160 --> 00:00:39,060
+Aujourd'hui, il y en a 70.
+
+23
+00:00:39,060 --> 00:00:40,760
+Avec mon agent vocal, mon objectif
+
+24
+00:00:40,760 --> 00:00:42,120
+est d'aller encore plus loin :
+
+25
+00:00:42,120 --> 00:00:44,360
+appeler les prospects, comprendre leurs besoins,
+
+26
+00:00:44,360 --> 00:00:46,760
+présenter mes solutions et proposer un rendez-vous.
+
+27
+00:00:46,760 --> 00:00:48,480
+Son pitch et son catalogue sont prêts.
+
+28
+00:00:48,480 --> 00:00:50,860
+Mais tant que mon numéro de téléphone n'est pas connecté,
+
+29
+00:00:50,860 --> 00:00:51,980
+il ne passe aucun appel.
+
+30
+00:00:51,980 --> 00:00:54,220
+RapidoCRM dispose aussi des outils
+
+31
+00:00:54,220 --> 00:00:56,320
+pour créer les rendez-vous, préparer les devis
+
+32
+00:00:56,320 --> 00:00:57,500
+et gérer les relances.
+
+33
+00:00:57,500 --> 00:00:59,360
+Le plus important, c'est que chaque interaction
+
+34
+00:00:59,360 --> 00:01:00,220
+reste traçable,
+
+35
+00:01:00,220 --> 00:01:02,420
+et que les actions sensibles soient validées.
+
+36
+00:01:02,420 --> 00:01:03,920
+Finalement, je ne suis plus obligé
+
+37
+00:01:03,920 --> 00:01:05,000
+d'ouvrir dix logiciels
+
+38
+00:01:05,000 --> 00:01:07,060
+pour coordonner mon activité commerciale.
+
+39
+00:01:07,060 --> 00:01:08,580
+Je ne pilote plus chaque clic.
+
+40
+00:01:08,580 --> 00:01:10,260
+Je pilote les objectifs.
+
+41
+00:01:10,260 --> 00:01:11,940
+Et toi, tu serais prêt à confier une partie
+
+42
+00:01:11,940 --> 00:01:13,970
+de ta prospection à un commercial IA ?
+

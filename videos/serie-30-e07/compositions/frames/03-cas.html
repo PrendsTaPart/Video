@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E7 F3 — 3 scénarios + point mort (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #1b2a41; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: #f7f9fc; }
+
+        .eyebrow { position: absolute; left: 0; right: 0; top: 190px; text-align: center; z-index: 4; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 36px; letter-spacing: 0.08em; text-transform: uppercase; color: #5a67f2; opacity: 0; margin: 0; will-change: transform, opacity; }
+
+        .scenarios { position: absolute; left: 100px; top: 300px; width: 880px; z-index: 3; display: flex; flex-direction: column; gap: 20px; }
+        .sc { display: flex; align-items: center; gap: 22px; background: #fff; border: 1.5px solid rgba(90,103,242,0.18); border-radius: 22px; padding: 26px 32px; opacity: 0; will-change: transform, opacity; }
+        .sc .dot { flex: none; width: 30px; height: 30px; border-radius: 50%; }
+        .sc.p .dot { background: #94a3b8; } .sc.r .dot { background: #5a67f2; } .sc.a .dot { background: #059669; }
+        .sc b { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 46px; color: #1b2a41; }
+        .sc span { margin-left: auto; font-family: "Inter", sans-serif; font-weight: 600; font-size: 32px; color: #8a93a5; }
+
+        .pm { position: absolute; left: 100px; top: 640px; width: 880px; box-sizing: border-box; background: #1b2a41; border-radius: 28px; padding: 40px; z-index: 3; text-align: center; opacity: 0; will-change: transform, opacity; }
+        .pm .lbl { font-family: "Poppins", sans-serif; font-weight: 700; font-size: 34px; color: #9aa6ff; letter-spacing: 0.04em; }
+        .pm .big { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 130px; line-height: 1.05; color: #fff; opacity: 0; will-change: transform, opacity; }
+        .pm .big span { color: #7ee0a0; }
+        .pm .sub { font-family: "Inter", sans-serif; font-weight: 500; font-size: 34px; color: #c3cce6; }
+
+        .foot { position: absolute; left: 50%; top: 1560px; transform: translateX(-50%); z-index: 4; padding: 24px 48px; background: #5a67f2; border-radius: 100px; opacity: 0; white-space: nowrap; box-shadow: 0 20px 50px rgba(90,103,242,0.35); will-change: transform, opacity; }
+        .foot b { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 46px; color: #fff; }
+      </style>
+
+      <div id="root" data-composition-id="03-cas" data-width="1080" data-height="1920" data-duration="11.320">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="10.820" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="10.820" data-track-index="1" style="position:absolute; inset:0;">
+          <p class="eyebrow" id="eyebrow">Le prévisionnel de Léa</p>
+          <div class="scenarios">
+            <div class="sc p" id="s1"><span class="dot"></span><b>Prudent</b><span>le pire cas</span></div>
+            <div class="sc r" id="s2"><span class="dot"></span><b>Réaliste</b><span>le cap</span></div>
+            <div class="sc a" id="s3"><span class="dot"></span><b>Ambitieux</b><span>l'objectif</span></div>
+          </div>
+          <div class="pm" id="pm">
+            <div class="lbl">POINT MORT</div>
+            <div class="big" id="pmbig"><span>120</span> couverts</div>
+            <div class="sub">par semaine, pour être rentable</div>
+          </div>
+          <div class="foot" id="foot"><b>Un chiffre, pas un rêve</b></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#eyebrow", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.1);
+        tl.fromTo("#s1", { x: -18, opacity: 0 }, { x: 0, opacity: 1, duration: 0.42, ease: "power3.out" }, 0.7);
+        tl.fromTo("#s2", { x: -18, opacity: 0 }, { x: 0, opacity: 1, duration: 0.42, ease: "power3.out" }, 1.4);
+        tl.fromTo("#s3", { x: -18, opacity: 0 }, { x: 0, opacity: 1, duration: 0.42, ease: "power3.out" }, 2.1);
+        tl.fromTo("#pm", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 4.2);
+        tl.fromTo("#pmbig", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(1.7)" }, 5.0);
+        tl.fromTo("#foot", { y: 18, scale: 0.9, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.5)" }, 8.4);
+        window.__timelines["03-cas"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

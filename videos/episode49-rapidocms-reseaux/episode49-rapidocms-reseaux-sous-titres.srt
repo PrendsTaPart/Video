@@ -1,0 +1,159 @@
+1
+00:00:00,300 --> 00:00:01,020
+Franchement,
+
+2
+00:00:01,020 --> 00:00:02,280
+publier sur tes réseaux à la main,
+
+3
+00:00:02,280 --> 00:00:03,100
+tous les jours,
+
+4
+00:00:03,100 --> 00:00:04,540
+ça n'a plus aucun sens.
+
+5
+00:00:04,540 --> 00:00:04,900
+Viens,
+
+6
+00:00:04,900 --> 00:00:05,700
+je te montre.
+
+7
+00:00:05,700 --> 00:00:06,580
+Étape un :
+
+8
+00:00:06,580 --> 00:00:07,360
+ouvre Claude.
+
+9
+00:00:07,360 --> 00:00:08,520
+Va dans Paramètres,
+
+10
+00:00:08,520 --> 00:00:09,680
+puis dans Connecteurs.
+
+11
+00:00:09,680 --> 00:00:11,680
+Clique sur Ajouter un connecteur personnalisé.
+
+12
+00:00:11,680 --> 00:00:13,220
+Donne-lui un nom :
+
+13
+00:00:13,220 --> 00:00:14,080
+RapidoCMS.
+
+14
+00:00:14,080 --> 00:00:15,020
+Et colle le lien.
+
+15
+00:00:15,020 --> 00:00:16,030
+Clique sur Connecter,
+
+16
+00:00:16,030 --> 00:00:17,940
+connecte-toi à ton compte RapidoCMS,
+
+17
+00:00:17,940 --> 00:00:18,840
+et autorise.
+
+18
+00:00:18,840 --> 00:00:19,780
+C'est tout.
+
+19
+00:00:19,780 --> 00:00:21,060
+Claude voit maintenant tes réseaux :
+
+20
+00:00:21,060 --> 00:00:21,840
+Instagram,
+
+21
+00:00:21,840 --> 00:00:22,500
+Facebook,
+
+22
+00:00:22,500 --> 00:00:23,780
+LinkedIn et TikTok.
+
+23
+00:00:23,780 --> 00:00:24,440
+Ensuite,
+
+24
+00:00:24,440 --> 00:00:25,300
+colle ma consigne.
+
+25
+00:00:25,300 --> 00:00:26,620
+Claude prend ta vidéo,
+
+26
+00:00:26,620 --> 00:00:27,840
+la range dans ta bibliothèque,
+
+27
+00:00:27,840 --> 00:00:29,600
+et écrit un texte différent pour chaque
+
+28
+00:00:29,600 --> 00:00:30,000
+réseau.
+
+29
+00:00:30,000 --> 00:00:31,320
+Il prépare les brouillons.
+
+30
+00:00:31,320 --> 00:00:31,540
+Toi,
+
+31
+00:00:31,540 --> 00:00:32,440
+tu relis.
+
+32
+00:00:32,440 --> 00:00:33,940
+Et il programme toute la semaine.
+
+33
+00:00:33,940 --> 00:00:34,480
+Chez moi,
+
+34
+00:00:34,480 --> 00:00:34,980
+en ce moment,
+
+35
+00:00:34,980 --> 00:00:36,860
+plus de deux cents publications sont programmées
+
+36
+00:00:36,860 --> 00:00:37,700
+dans RapidoCMS,
+
+37
+00:00:37,700 --> 00:00:38,960
+sur quatre réseaux.
+
+38
+00:00:38,960 --> 00:00:39,940
+Tu veux ma consigne ?
+
+39
+00:00:39,940 --> 00:00:40,720
+Commente RÉSEAUX,
+
+40
+00:00:40,720 --> 00:00:41,880
+et je te l'envoie.

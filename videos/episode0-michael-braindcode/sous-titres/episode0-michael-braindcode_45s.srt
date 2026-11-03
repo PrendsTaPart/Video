@@ -1,0 +1,88 @@
+1
+00:00:01,500 --> 00:00:03,220
+Salut, moi c'est Michael.
+
+2
+00:00:03,220 --> 00:00:05,180
+Je suis entrepreneur, fondateur de BraindCode,
+
+3
+00:00:05,180 --> 00:00:07,500
+et depuis plusieurs années, je construis des solutions
+
+4
+00:00:07,500 --> 00:00:09,580
+pour aider les entreprises à travailler autrement
+
+5
+00:00:09,580 --> 00:00:11,026
+grâce à la technologie.
+
+6
+00:00:11,428 --> 00:00:12,668
+Au fil du temps, j'ai construit
+
+7
+00:00:12,668 --> 00:00:14,588
+un écosystème de solutions connectées.
+
+8
+00:00:14,588 --> 00:00:16,248
+FoodEatUp pour les restaurateurs.
+
+9
+00:00:16,248 --> 00:00:18,588
+RapidoSoftware pour la gestion des entreprises.
+
+10
+00:00:18,588 --> 00:00:20,888
+StartupForge pour accompagner les entrepreneurs.
+
+11
+00:00:20,888 --> 00:00:22,328
+Et des outils qui permettent de connecter
+
+12
+00:00:22,328 --> 00:00:24,301
+les agents IA à tous ces logiciels.
+
+13
+00:00:24,000 --> 00:00:26,497
+Aujourd'hui, je ne veux plus seulement créer
+
+14
+00:00:26,497 --> 00:00:28,337
+des logiciels que les humains utilisent.
+
+15
+00:00:28,337 --> 00:00:30,177
+Je veux aussi construire des équipes d'agents IA
+
+16
+00:00:30,177 --> 00:00:32,097
+capables d'utiliser ces logiciels,
+
+17
+00:00:32,097 --> 00:00:33,457
+d'apprendre des procédures métier
+
+18
+00:00:33,457 --> 00:00:35,600
+et de nous aider à atteindre nos objectifs.
+
+19
+00:00:37,000 --> 00:00:39,178
+À partir d'aujourd'hui, je vais vous présenter chaque jour
+
+20
+00:00:39,178 --> 00:00:41,138
+mon histoire et mon travail du jour.
+
+21
+00:00:41,138 --> 00:00:42,598
+Bienvenue dans mon quotidien.
+
+22
+00:00:42,598 --> 00:00:44,568
+Bienvenue dans l'univers BraindCode.
+

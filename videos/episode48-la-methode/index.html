@@ -1,0 +1,90 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 48 : la méthode</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css"><link rel="stylesheet" href="../ed.css">
+<style>
+.th{width:196px;border-radius:14px;overflow:hidden;border:5px solid #111;box-shadow:0 8px 18px rgba(0,0,0,.2)}.th img{display:block;width:100%}
+.shot{border-radius:26px;overflow:hidden;border:10px solid #111;box-shadow:0 30px 60px rgba(0,0,0,.25);background:#fff}.shot img{display:block;width:100%}
+.step{font-family:'Inter';font-weight:900;font-size:120px;letter-spacing:-4px;color:#111;line-height:1}.step span{font-family:'Instrument Serif';font-style:italic;font-weight:400;color:#E8452C}
+.doc{width:820px;font-family:'Inter';font-size:38px;font-weight:600;line-height:1.35;color:#222}.doc p{margin:0 0 14px}.doc .ok{color:#1f9d55;font-weight:900}
+.wave{display:flex;gap:10px;align-items:center;height:240px}.wave i{display:block;width:22px;background:#E8452C;border-radius:11px}
+.crop{border-radius:26px;overflow:hidden;border:10px solid #111;box-shadow:0 30px 60px rgba(0,0,0,.25);background:#fff}.crop img{display:block;width:100%;height:100%;object-fit:cover;object-position:left center}
+.kg{width:940px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;background:#fff;border:8px solid #111;border-radius:26px;padding:14px}.kg div{aspect-ratio:1;border-radius:14px;overflow:hidden;background:#f3f0ea;display:flex;align-items:center;justify-content:center}.kg img{max-width:100%;max-height:100%;object-fit:contain}
+.strip{display:flex;gap:18px}.strip .th{width:250px}
+.big3{white-space:nowrap;font-family:'Inter';font-weight:900;font-size:124px;letter-spacing:-6px;color:#fff;line-height:1}
+.ep{font-family:'JetBrains Mono';font-weight:700;font-size:34px;letter-spacing:4px;color:#fff;border:3px solid #fff;border-radius:999px;padding:10px 26px}
+</style></head><body><div id="stage"><div id="hdr"><span>LA MÉTHODE · DANS LES COULISSES</span></div><div id="scenes"></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+CAP.top=1500;CAP.group=3;CAP.kw=new Set(['dix','aucune.','méthode.','Claude.','monteur','Lovable','bibliothèque.','logiciels.','inventé.','ElevenLabs.','sous-titres','musique.','regarde.','valide.','publie.','gardé','structure.','MÉTHODE,']);
+const th=f=>`<div class="th"><img src="img/${f}"></div>`, shot=f=>`<div class="shot"><img src="img/${f}"></div>`;
+const step=(n,w)=>`<div class="step">${n} <span>${w}</span></div>`;
+// 1. accroche : les dix miniatures
+let s=scene(M('Cette semaine,'),M('Voici la'),{tr:'cut'});
+const eps=[38,39,40,41,42,43,44,45,46,47];
+eps.forEach((e,k)=>s.el(th('th'+e+'.png'),{x:150+(k%5)*195,y:560+Math.floor(k/5)*370,fx:'pop',at:.4+k*.17,rot:(k%2?3:-3)}));
+s.el('<div class="tag r">MONTÉES À LA MAIN : AUCUNE</div>',{x:540,y:1180,fx:'slam',at:M('Et je n\'en')+.5});
+// 2. titre
+s=scene(M('Voici la'),M('Un :'),{cls:'dark',tr:'cut'});
+s.el('<div class="ser" style="font-size:190px">la méthode</div>',{x:540,y:820,fx:'slam',at:M('Voici la')+.2});
+// 3. Un : la référence
+s=scene(M('Un :'),M('Deux :'),{tr:'cut'});
+s.el(step('1','la référence'),{x:540,y:330,fx:'drop',at:M('Un :')});
+s.el('<div class="card" style="width:560px;height:700px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:30px"><div style="font-size:160px">▶</div><div class="mono">UNE VIDÉO QUI MARCHE</div></div>',{x:540,y:800,fx:'pop',at:M('Un :')+.4,anim:'float'});
+s.el('<div class="tag">→ ENVOYÉE À CLAUDE</div>',{x:540,y:1340,fx:'slam',at:M('et je l\'envoie'),out:M('Il la regarde')});
+s.el('<div class="tag r">LE STYLE</div>',{x:300,y:1340,fx:'slam',at:M('le style,')});
+s.el('<div class="tag r">LE RYTHME</div>',{x:780,y:1340,fx:'slam',at:M('le rythme,')});
+s.el('<div class="tag r">L\'HISTOIRE</div>',{x:540,y:1440,fx:'slam',at:M('l\'histoire. Deux')-.4});
+// 4. Deux : Lovable dessine
+s=scene(M('Deux :'),M('Trois :'),{tr:'cut'});
+s.el(step('2','les images'),{x:540,y:330,fx:'drop',at:M('Deux :')});
+s.el('<div class="tag">DESSINÉES PAR LOVABLE</div>',{x:540,y:450,fx:'fade',at:M('de dessiner')});
+const KS={"rue-de-nuit": ["rue-de-nuit-facade-concurrent.jpg", "rue-de-nuit-facade-fermee.jpg", "rue-de-nuit-rue-vide.jpg"], "theatre-voxel": ["theatre-voxel-agent-batisseur.png", "theatre-voxel-agent-chef-projet.png", "theatre-voxel-agent-designer.png", "theatre-voxel-agent-juge.png", "theatre-voxel-agent-publicateur.png", "theatre-voxel-agent-securite.png"], "caisse-pizzeria": ["caisse-pizzeria-bulle-coeur.png", "caisse-pizzeria-cartouche-caisse.png", "caisse-pizzeria-cuisine.jpg", "caisse-pizzeria-enveloppe-billets.png", "caisse-pizzeria-enveloppe-fermee.png", "caisse-pizzeria-facade-fermee.jpg"], "ville-pixel": ["ville-pixel-barre-progression.png", "ville-pixel-boutique-vitrine.png", "ville-pixel-cable-prise.png", "ville-pixel-compteur.png", "ville-pixel-coucher-soleil.jpg", "ville-pixel-facade-enseigne.jpg"], "atelier-artisans": ["atelier-artisans-artisan-batiment.png", "atelier-artisans-atelier-reparation.jpg", "atelier-artisans-bandeau-client-perdu.png", "atelier-artisans-boulangere.png", "atelier-artisans-caroline-bureau.png", "atelier-artisans-caroline-clin-oeil.png"], "editorial-mentaliste": ["editorial-mentaliste-barre-progression.png", "editorial-mentaliste-cadre-abonnement.png", "editorial-mentaliste-carte-bancaire-douleur.png", "editorial-mentaliste-carte-bancaire-joyeuse.png", "editorial-mentaliste-carte-menu.png", "editorial-mentaliste-carte-visite-digitale.png"]};const sh=Object.keys(KS);const PICK=['rue-de-nuit-facade-concurrent.jpg','theatre-voxel-agent-batisseur.png','caisse-pizzeria-cuisine.jpg','ville-pixel-facade-enseigne.jpg','atelier-artisans-boulangere.png','editorial-mentaliste-carte-menu.png'];
+const grid=t=>'<div class="kg">'+KS[t].map(f=>`<div><img src="../kit/${f}"></div>`).join('')+'</div>';
+const d2=M('Trois :')-M('de dessiner');
+sh.forEach((f,k)=>s.el(grid(f),{x:540,y:900,fx:'pop',at:M('de dessiner')+k*d2/6,out:k<5?M('de dessiner')+(k+1)*d2/6:undefined}));
+s.el('<div class="tag r">UNE VINGTAINE PAR STYLE</div>',{x:540,y:1380,fx:'slam',at:M('Une vingtaine'),out:M('rangées dans')});
+s.el('<div class="tag g">RANGÉES DANS MA BIBLIOTHÈQUE ✓</div>',{x:540,y:1380,fx:'slam',at:M('rangées dans')});
+// 5. Trois : l'histoire vérifiée
+s=scene(M('Trois :'),M('Quatre :'),{tr:'cut'});
+s.el(step('3','l\'histoire'),{x:540,y:330,fx:'drop',at:M('Trois :')});
+s.el('<div class="card doc"><p>« Sur la tablette, ton client tape son numéro… »</p><p>« Des points de bienvenue, sa jauge est déjà entamée… »</p><p>« En partant, la tablette le lui rappelle… »</p></div>',{x:540,y:780,fx:'pop',at:M('Trois :')+.5});
+['VÉRIFIÉ DANS MON LOGICIEL ✓','VÉRIFIÉ SUR LA DÉMO ✓'].forEach((t,k)=>s.el(`<div class="tag g">${t}</div>`,{x:540,y:1120+k*100,fx:'slam',at:M('Et il vérifie')+.3+k*.6}));
+s.el('<div class="tag r">AUCUN CHIFFRE INVENTÉ</div>',{x:540,y:1340,fx:'slam',at:M('Aucun chiffre')});
+// 6. Quatre : les voix
+s=scene(M('Quatre :'),M('Cinq :'),{tr:'cut'});
+s.el(step('4','les voix'),{x:540,y:330,fx:'drop',at:M('Quatre :')});
+s.img('commun-caroline-parle.png',{x:300,y:820,w:420,fx:'left',at:M('Quatre :')+.4,anim:'talk'});
+s.img('commun-patron-telephone.png',{x:780,y:820,w:420,fx:'right',at:M('Quatre :')+.7,anim:'talk'});
+s.el('<div class="wave" id="wv">'+Array.from({length:22},()=>'<i></i>').join('')+'</div>',{x:540,y:1180,fx:'fade',at:M('Quatre :')+.6});
+s.el('<div class="tag">VOIX : ELEVENLABS</div>',{x:540,y:1380,fx:'slam',at:M('avec ElevenLabs.')-.3});
+s.fn(t=>document.querySelectorAll('#wv i').forEach((e,i)=>e.style.height=(30+190*Math.abs(Math.sin(t*7+i*.9)*Math.sin(t*3.1+i*.4)))+'px'));
+// 7. Cinq : le montage
+s=scene(M('Cinq :'),M('Et moi'),{tr:'cut'});
+s.el(step('5','le montage'),{x:540,y:330,fx:'drop',at:M('Cinq :')});
+const st=['st47-1.png','st47-4.png','st42.png','st44.png','st46.png','st47-7.png','st47-10.png','st47-1.png','st47-4.png','st42.png'];
+const strip=s.el('<div class="strip" id="sp">'+st.map(f=>th(f)).join('')+'</div>',{x:540,y:850,fx:'fade',at:M('Cinq :')+.3});
+s.fn(t=>{const e=document.getElementById('sp');if(e)e.style.transform=`translateX(${700-(t-M('Cinq :'))*260}px)`;});
+s.el('<div class="tag">IMAGE PAR IMAGE</div>',{x:540,y:1220,fx:'slam',at:M('image par')});
+s.el('<div class="tag r">+ SOUS-TITRES</div>',{x:540,y:1320,fx:'slam',at:M('avec les sous-titres')});
+s.el('<div class="tag r">+ MUSIQUE</div>',{x:540,y:1420,fx:'slam',at:M('et la musique.')});
+// 8. Et moi ?
+s=scene(M('Et moi'),M('Et chaque style'),{cls:'dark',tr:'cut'});
+s.el('<div class="ser" style="font-size:150px">et moi ?</div>',{x:540,y:420,fx:'pop',at:M('Et moi')});
+[['Je regarde.','JE REGARDE.'],['Je valide.','JE VALIDE.'],['Je publie.','JE PUBLIE.']].forEach(([m,t],k)=>s.el(`<div class="big3">${t}</div>`,{x:540,y:740+k*190,fx:'slam',at:M(m)}));
+// 9. styles gardés
+s=scene(M('Et chaque style'),M('Tu veux'),{tr:'cut'});
+s.el('<div class="tag g">CHAQUE STYLE EST GARDÉ ✓</div>',{x:540,y:330,fx:'drop',at:M('Et chaque style')});
+sh.forEach((f,k)=>s.el(`<div class="crop" style="width:300px;height:300px;border-width:6px"><img src="../kit/${PICK[k]}" style="object-position:center"></div>`,{x:220+(k%3)*320,y:700+Math.floor(k/3)*340,fx:'pop',at:M('Et chaque style')+.3+k*.12}));
+s.el('<div class="tag r">LA PROCHAINE REPART DE LÀ</div>',{x:540,y:1330,fx:'slam',at:M('la prochaine')});
+// 10. offre
+s=scene(M('Tu veux'),M('Commente MÉTHODE,'),{tr:'cut'});
+s.el('<div class="card doc" style="width:780px"><p class="mono" style="font-size:28px">LA MÉTHODE COMPLÈTE</p><p>✓ Les étapes, dans l\'ordre</p><p>✓ Les consignes à donner à Claude</p><p>✓ Les garde-fous</p></div>',{x:540,y:820,fx:'pop',at:M('Tu veux')+.2});
+s=scene(M('Commente MÉTHODE,'),C.dur+1,{cls:'red',tr:'cut'});
+s.el('<div class="end">COMMENTE<br>MÉTHODE</div>',{x:540,y:620,fx:'slam',at:M('Commente MÉTHODE,')});
+s.el('<div class="ctab">Je te l\'envoie</div>',{x:540,y:980,fx:'pop',at:M('Commente MÉTHODE,')+.8});
+s.el('<div class="ep">ÉPISODE 48/365</div>',{x:540,y:1300,fx:'fade',at:M('Commente MÉTHODE,')+1.4});
+CAP.show=t=>t<M('Commente MÉTHODE,');
+onFrame(t=>document.body.classList.toggle('dk',(t>=M('Voici la')&&t<M('Un :'))||(t>=M('Et moi')&&t<M('Et chaque style'))));
+thumbAt(M('Et je n\'en')+1.5,'<i>Dix vidéos.</i><br><i class="k">Montées à la main : aucune.</i>');
+render(0);
+</script></body></html>

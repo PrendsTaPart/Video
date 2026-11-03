@@ -1,0 +1,32 @@
+{
+  "captures": {
+    "source": "https://food-series-hub.lovable.app (projet Lovable 05bb6b0d), Playwright le 26/10/2026",
+    "fichiers": [
+      "accueil",
+      "series",
+      "series2",
+      "calendrier",
+      "clips",
+      "s-cdf1",
+      "s-cdf8",
+      "s-journee",
+      "s-upeat"
+    ]
+  },
+  "donnees": {
+    "episodes_catalogue": 367,
+    "montes": 156,
+    "a_produire": 184,
+    "bloques": 27,
+    "series": 5,
+    "methode": "statuts lus sur les 19 pages de saison"
+  },
+  "photo": "growth-loop-academy/public/brand/linkedin/michael/braindcode-profil.jpg",
+  "poses": "growth-loop-academy/public/brand/poses/surprise.webp",
+  "logos": [
+    "braindcode.png",
+    "foodeatup.png"
+  ],
+  "musique": "bibliothèque de la série (ElevenLabs Music)",
+  "voix": "ElevenLabs, voix Noé, eleven_v4, 737 crédits"
+}

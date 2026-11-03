@@ -1,0 +1,21 @@
+{
+  "logos": [
+    {
+      "fichier": "rapidotuto-icon.png",
+      "source": "PrendsTaPart/rapidotuto-base public/icon-512.png"
+    },
+    {
+      "fichier": "foodeatup.png",
+      "source": "https://formation.foodeatup.fr/brand/chartes/foodeatup.png"
+    },
+    {
+      "fichier": "rapidosoftware.png",
+      "source": "https://formation.foodeatup.fr/brand/chartes/rapidosoftware.png"
+    },
+    {
+      "fichier": "braindcode.png",
+      "source": "https://formation.foodeatup.fr/brand/chartes/braindcode.png"
+    }
+  ],
+  "manquant": "logo RapidoTuto absent de la charte Formation : icône du dépôt + mot-symbole en texte"
+}

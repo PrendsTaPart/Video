@@ -1,0 +1,411 @@
+/* Charte Academy — aucune couleur hors palette.
+   crème #FCF9E6 · marine #0F1A23 · bleu #007BFF · bleu système #147AFF · orange #FFA500
+   Les seules valeurs non listées sont des dérivés alpha de ces cinq teintes
+   (rgba(15,26,35,…) = marine transparent, rgba(0,123,255,…) = bleu transparent).
+   Vérifié par tools/check_palette.py. */
+:root {
+  --creme: #fcf9e6;
+  --marine: #0f1a23;
+  --bleu: #007bff;
+  --bleu-sys: #147aff;
+  --orange: #ffa500;
+  --titre: "Fredoka", sans-serif;
+  --corps: "Inter", sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: var(--W); height: var(--H);
+  overflow: hidden;
+  background: var(--creme);
+  color: var(--marine);
+  font-family: var(--corps);
+  -webkit-font-smoothing: antialiased;
+}
+
+#stage {
+  position: relative;
+  width: var(--W); height: var(--H);
+  background: var(--creme);
+  overflow: hidden;
+}
+
+/* Un plan occupe toute la scène ; `render(t)` pilote opacity/visibility.
+   En 16:9 le contenu est centré verticalement ; en 9:16 il est calé en haut,
+   pour laisser le bas du cadre au personnage. */
+.plan {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column;
+  justify-content: var(--plan-justify);
+  padding: var(--pad);
+  padding-top: var(--pad-haut);
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+/* ---------- éléments communs ---------- */
+
+.kicker {
+  font-family: var(--corps);
+  font-weight: 600;
+  font-size: var(--fs-kicker);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bleu);
+  margin-bottom: 0.5em;
+}
+
+.titre {
+  font-family: var(--titre);
+  font-weight: 800;
+  font-size: var(--fs-titre);
+  line-height: 1.06;
+  color: var(--marine);
+}
+
+.ligne {
+  font-family: var(--corps);
+  font-weight: 500;
+  font-size: var(--fs-corps);
+  line-height: 1.42;
+  color: var(--marine);
+  opacity: 0.86;
+  margin-top: 0.55em;
+  will-change: opacity, transform;
+}
+
+.badge-mcp {
+  position: absolute;
+  left: var(--pad); bottom: calc(var(--pad) * 0.62);
+  font-family: var(--corps);
+  font-weight: 700;
+  font-size: var(--fs-label);
+  color: var(--bleu);
+  background: rgba(0, 123, 255, 0.09);
+  border: 2px solid rgba(0, 123, 255, 0.28);
+  border-radius: 999px;
+  padding: 0.5em 1.1em;
+  will-change: opacity;
+}
+
+/* ---------- plan 2 : la phrase dite à l'agent ---------- */
+
+.bulle {
+  align-self: flex-start;
+  max-width: 88%;
+  background: var(--marine);
+  color: var(--creme);
+  font-family: var(--titre);
+  font-weight: 700;
+  font-size: var(--fs-phrase);
+  line-height: 1.2;
+  border-radius: 0.55em 0.55em 0.55em 0.12em;
+  padding: 0.62em 0.8em;
+  box-shadow: 0 18px 48px rgba(15, 26, 35, 0.22);
+  will-change: transform, opacity;
+}
+.bulle .caret {
+  display: inline-block;
+  width: 0.07em; height: 0.9em;
+  background: var(--orange);
+  vertical-align: -0.09em;
+  margin-left: 0.06em;
+}
+.agent-tag {
+  display: inline-flex; align-items: center; gap: 0.5em;
+  font-family: var(--corps); font-weight: 700;
+  font-size: var(--fs-label);
+  color: var(--marine); opacity: 0.55;
+  margin-bottom: 0.9em;
+}
+.agent-tag .pastille {
+  width: 0.85em; height: 0.85em; border-radius: 50%;
+  background: var(--bleu);
+}
+
+/* ---------- plan 3 : la cascade (le plan pilier) ---------- */
+
+/* Deux colonnes : la chaîne à gauche, les fiches touchées à droite. En reel la
+   place manque en largeur — la chaîne prend toute la colonne et les fiches
+   passent dessous. */
+.plan-3 { display: grid; align-content: center; }
+.plan-3 .kicker { grid-column: 1 / -1; }
+.grille-cascade {
+  display: grid;
+  grid-template-columns: var(--cascade-cols);
+  gap: var(--gap-colonnes);
+  align-items: start;
+}
+
+.cascade { display: flex; flex-direction: column; gap: var(--gap-maillon); }
+
+/* Programme de fidélité éteint : la chaîne reste grise, sauf le voyant qui la
+   commande — lui passe en orange, parce que c'est lui la cause.
+   Le grisage est posé maillon par maillon, jamais sur le conteneur : un
+   `filter` sur un parent s'applique à toute sa descendance et aucun `filter`
+   d'enfant ne peut l'annuler — le voyant serait gris lui aussi. */
+.cascade.eteinte .maillon:not(:first-child) {
+  filter: grayscale(1);
+  opacity: 0.4;
+}
+.cascade.eteinte .maillon:first-child {
+  border-color: var(--orange);
+  background: rgba(255, 165, 0, 0.16);
+}
+.cascade.eteinte .maillon:first-child .valeur { color: var(--orange); }
+.cascade.eteinte .maillon:first-child .puce {
+  background: var(--orange); border-color: var(--orange);
+}
+.cascade.eteinte .lien i { background: rgba(15, 26, 35, 0.18); }
+
+.maillon {
+  position: relative;
+  display: flex; align-items: center; gap: 0.9em;
+  background: rgba(15, 26, 35, 0.04);
+  border: 3px solid rgba(15, 26, 35, 0.1);
+  border-radius: 0.5em;
+  padding: var(--pad-maillon);
+  font-family: var(--corps);
+  font-weight: 600;
+  font-size: var(--fs-maillon);
+  color: var(--marine);
+  will-change: background-color, border-color, transform;
+}
+/* L'état allumé ne repose pas que sur la couleur : le liseré gauche s'épaissit
+   et la pastille se remplit — lisible aussi en niveaux de gris. */
+.maillon .puce {
+  flex: 0 0 auto;
+  width: var(--puce); height: var(--puce);
+  border-radius: 50%;
+  border: 3px solid rgba(15, 26, 35, 0.22);
+  background: transparent;
+}
+.maillon.on {
+  background: rgba(0, 123, 255, 0.1);
+  border-color: var(--bleu);
+  color: var(--marine);
+}
+.maillon.on .puce { background: var(--bleu); border-color: var(--bleu); }
+.maillon .valeur {
+  margin-left: auto;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--bleu);
+}
+
+/* Le trait qui relie deux maillons, et que la valeur parcourt. */
+.lien {
+  position: absolute;
+  left: var(--lien-x); top: 100%;
+  width: 4px; height: var(--gap-maillon);
+  background: rgba(15, 26, 35, 0.12);
+  overflow: hidden;
+}
+.lien i {
+  position: absolute; left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: var(--bleu);
+  transform-origin: top;
+  will-change: transform;
+}
+
+/* Les fiches touchées, qui clignotent pendant que la valeur passe. */
+.fiches {
+  display: flex; flex-direction: column; gap: 0.5em;
+  padding-top: var(--fiches-decalage);
+}
+.fiches .entete {
+  font-family: var(--corps); font-weight: 700;
+  font-size: var(--fs-label);
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--marine); opacity: 0.45;
+  margin-bottom: 0.2em;
+}
+.fiche {
+  display: flex; align-items: center; gap: 0.7em;
+  background: rgba(252, 249, 230, 1);
+  border: 3px solid rgba(15, 26, 35, 0.12);
+  border-radius: 0.42em;
+  padding: 0.62em 0.85em;
+  font-family: var(--corps); font-weight: 600;
+  font-size: var(--fs-fiche);
+  will-change: border-color, background-color;
+}
+.fiche .cout {
+  margin-left: auto; font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Photo du plat concerné, découpée en cercle en amont (prepare_assets.py). */
+.pastille-plat {
+  flex: 0 0 auto;
+  width: var(--pastille-plat); height: var(--pastille-plat);
+  display: block;
+  box-shadow: 0 4px 12px rgba(15, 26, 35, 0.16);
+  border-radius: 50%;
+}
+.carte-proposition .lignes .pastille-plat { margin-right: 0.1em; }
+.fiche.hot { border-color: var(--orange); background: rgba(255, 165, 0, 0.12); }
+.fiche.hot .cout { color: var(--orange); }
+
+/* ---------- plan 4 : alerte + proposition ---------- */
+
+.bandeau {
+  display: flex; align-items: center; gap: 0.7em;
+  background: var(--orange);
+  color: var(--marine);
+  font-family: var(--titre); font-weight: 800;
+  font-size: var(--fs-bandeau);
+  border-radius: 0.45em;
+  padding: 0.55em 0.85em;
+  box-shadow: 0 14px 34px rgba(255, 165, 0, 0.3);
+  will-change: transform, opacity;
+}
+
+.carte-proposition {
+  background: var(--creme);
+  border: 4px solid var(--marine);
+  border-radius: 0.55em;
+  padding: var(--pad-carte);
+  box-shadow: 0 22px 56px rgba(15, 26, 35, 0.18);
+  will-change: transform, opacity;
+}
+.carte-proposition h4 {
+  font-family: var(--titre); font-weight: 800;
+  font-size: var(--fs-carte-titre);
+  margin-bottom: 0.35em;
+}
+.carte-proposition .lignes {
+  display: flex; flex-direction: column; gap: 0.42em;
+  font-family: var(--corps); font-weight: 500;
+  font-size: var(--fs-fiche);
+}
+.carte-proposition .lignes div {
+  display: flex; align-items: center; gap: 0.7em;
+  border-bottom: 2px solid rgba(15, 26, 35, 0.09);
+  padding-bottom: 0.32em;
+}
+.carte-proposition .lignes b {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+
+.boutons { display: flex; gap: 0.7em; margin-top: 1em; }
+.btn {
+  font-family: var(--titre); font-weight: 800;
+  font-size: var(--fs-btn);
+  border-radius: 0.4em;
+  padding: 0.5em 1.2em;
+  will-change: transform, box-shadow;
+}
+.btn.valider { background: var(--bleu); color: var(--creme); }
+.btn.ignorer {
+  background: transparent; color: var(--marine);
+  border: 3px solid rgba(15, 26, 35, 0.24);
+}
+.btn.valider.presse { box-shadow: 0 0 0 0.28em rgba(0, 123, 255, 0.28); }
+
+.curseur {
+  position: absolute;
+  width: var(--curseur); height: var(--curseur);
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+.mention {
+  margin-top: 0.9em;
+  font-family: var(--corps); font-weight: 600;
+  font-size: var(--fs-label);
+  color: var(--marine); opacity: 0.6;
+  border-left: 4px solid var(--orange);
+  padding-left: 0.7em;
+}
+
+/* ---------- plan 5 : le ∞ et les boucles voisines ---------- */
+
+.infini { position: relative; align-self: center; }
+.infini svg { display: block; overflow: visible; }
+.noeud-label {
+  font-family: var(--corps); font-weight: 700;
+  font-size: var(--fs-noeud);
+  fill: var(--marine);
+}
+
+/* ---------- plan 6 : les chiffres ---------- */
+
+/* Grille, pas flex-wrap : avec quatre tuiles sur trois colonnes, la dernière
+   se retrouvait seule sur sa ligne et s'étirait sur toute la largeur. Le
+   nombre de colonnes est posé par le moteur, d'après le nombre de chiffres. */
+.chiffres { display: grid; gap: var(--gap-chiffre); }
+.chiffre {
+  min-width: 0;
+  background: rgba(0, 123, 255, 0.07);
+  border-radius: 0.42em;
+  border-bottom: 8px solid var(--bleu);
+  padding: var(--pad-chiffre);
+  will-change: transform, opacity;
+}
+.chiffre .v {
+  font-family: var(--titre); font-weight: 800;
+  font-size: var(--fs-chiffre);
+  line-height: 1.08;
+  color: var(--marine);
+  font-variant-numeric: tabular-nums;
+}
+.chiffre .l {
+  font-family: var(--corps); font-weight: 600;
+  font-size: var(--fs-label);
+  line-height: 1.3;
+  color: var(--marine); opacity: 0.62;
+  margin-top: 0.5em;
+}
+
+/* ---------- plan 7 : la coupure + CTA ---------- */
+
+.coupure {
+  font-family: var(--titre); font-weight: 800;
+  font-size: var(--fs-coupure);
+  line-height: 1.1;
+  color: var(--marine);
+}
+.cta {
+  display: inline-flex; align-items: center; gap: 0.6em;
+  align-self: flex-start;
+  margin-top: 1.1em;
+  background: var(--orange);
+  color: var(--marine);
+  font-family: var(--titre); font-weight: 800;
+  font-size: var(--fs-cta);
+  border-radius: 0.42em;
+  padding: 0.5em 1.1em;
+  will-change: transform, opacity;
+}
+.logo-fin { margin-top: 1.4em; will-change: opacity, transform; }
+.logo-fin img { display: block; height: var(--logo-h); width: auto; }
+
+/* ---------- illustration de plan ---------- */
+
+/* Les personnages 3D de la librairie maison, détourés par tools/prepare_assets.py.
+   Ils sont ancrés en bas à droite et débordent volontairement sous le bord : le
+   sujet reste au-dessus de la ligne de flottaison, le socle sort du cadre. */
+.illu {
+  position: absolute;
+  right: var(--illu-droite);
+  left: var(--illu-gauche);
+  bottom: var(--illu-bas);
+  height: var(--illu-h);
+  display: flex; justify-content: center;
+  will-change: opacity, transform;
+  pointer-events: none;
+}
+.illu img {
+  display: block;
+  height: 100%; width: auto;
+  object-fit: contain;
+}
+
+/* Le texte des plans illustrés s'arrête avant le personnage. */
+.plan-1 .titre, .plan-1 .ligne { max-width: var(--colonne-texte); }
+.plan-6 .chiffres { max-width: var(--colonne-texte); }
+.plan-7 .coupure { max-width: var(--colonne-texte); }

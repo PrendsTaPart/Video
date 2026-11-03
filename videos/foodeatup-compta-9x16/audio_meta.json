@@ -1,0 +1,1080 @@
+{
+  "tts_provider": "elevenlabs",
+  "voice_id": "TGAegA0zNRi8I6nUdq3i",
+  "bgm": {
+    "path": "assets/bgm/track.mp3",
+    "volume": 0.18,
+    "query": "calm reassuring corporate underscore",
+    "duration_s": 36
+  },
+  "bgm_pending": false,
+  "bgm_provider": null,
+  "bgm_pid": null,
+  "bgm_log": null,
+  "bgm_mode": null,
+  "bgm_target_duration_s": null,
+  "bgm_seed_duration_s": null,
+  "bgm_loop_count": null,
+  "voices": [
+    {
+      "frame": 1,
+      "path": "assets/voice/01.wav",
+      "duration_s": 14.289,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Les",
+          "start": 0.09,
+          "end": 0.16
+        },
+        {
+          "id": "w1",
+          "text": "factures",
+          "start": 0.16,
+          "end": 0.58
+        },
+        {
+          "id": "w2",
+          "text": "fournisseurs,",
+          "start": 0.58,
+          "end": 1.23
+        },
+        {
+          "id": "w3",
+          "text": "qui",
+          "start": 1.34,
+          "end": 1.47
+        },
+        {
+          "id": "w4",
+          "text": "sont",
+          "start": 1.47,
+          "end": 1.61
+        },
+        {
+          "id": "w5",
+          "text": "piles,",
+          "start": 1.69,
+          "end": 2.04
+        },
+        {
+          "id": "w6",
+          "text": "les",
+          "start": 2.28,
+          "end": 2.29
+        },
+        {
+          "id": "w7",
+          "text": "dépensent",
+          "start": 2.29,
+          "end": 2.77
+        },
+        {
+          "id": "w8",
+          "text": "à",
+          "start": 2.82,
+          "end": 2.87
+        },
+        {
+          "id": "w9",
+          "text": "ressaisir",
+          "start": 2.87,
+          "end": 3.54
+        },
+        {
+          "id": "w10",
+          "text": "une",
+          "start": 3.61,
+          "end": 3.81
+        },
+        {
+          "id": "w11",
+          "text": "par",
+          "start": 3.81,
+          "end": 4.06
+        },
+        {
+          "id": "w12",
+          "text": "une",
+          "start": 4.06,
+          "end": 4.18
+        },
+        {
+          "id": "w13",
+          "text": "les",
+          "start": 4.46,
+          "end": 4.5
+        },
+        {
+          "id": "w14",
+          "text": "fous",
+          "start": 4.57,
+          "end": 4.77
+        },
+        {
+          "id": "w15",
+          "text": "de",
+          "start": 4.77,
+          "end": 4.9
+        },
+        {
+          "id": "w16",
+          "text": "costes",
+          "start": 4.9,
+          "end": 5.32
+        },
+        {
+          "id": "w17",
+          "text": "qu'on",
+          "start": 5.32,
+          "end": 5.65
+        },
+        {
+          "id": "w18",
+          "text": "ne",
+          "start": 5.65,
+          "end": 5.73
+        },
+        {
+          "id": "w19",
+          "text": "calcule",
+          "start": 5.84,
+          "end": 6.26
+        },
+        {
+          "id": "w20",
+          "text": "jamais",
+          "start": 6.26,
+          "end": 6.47
+        },
+        {
+          "id": "w21",
+          "text": "vraiment",
+          "start": 6.78,
+          "end": 7.27
+        },
+        {
+          "id": "w22",
+          "text": "et",
+          "start": 7.32,
+          "end": 7.42
+        },
+        {
+          "id": "w23",
+          "text": "les",
+          "start": 7.43,
+          "end": 7.61
+        },
+        {
+          "id": "w24",
+          "text": "marges",
+          "start": 7.63,
+          "end": 8.02
+        },
+        {
+          "id": "w25",
+          "text": "qu'on",
+          "start": 8.02,
+          "end": 8.34
+        },
+        {
+          "id": "w26",
+          "text": "découvre",
+          "start": 8.34,
+          "end": 8.9
+        },
+        {
+          "id": "w27",
+          "text": "bien",
+          "start": 8.96,
+          "end": 9.16
+        },
+        {
+          "id": "w28",
+          "text": "trop",
+          "start": 9.16,
+          "end": 9.43
+        },
+        {
+          "id": "w29",
+          "text": "tard.",
+          "start": 9.43,
+          "end": 9.72
+        },
+        {
+          "id": "w30",
+          "text": "La",
+          "start": 9.81,
+          "end": 9.86
+        },
+        {
+          "id": "w31",
+          "text": "comptabilité",
+          "start": 9.86,
+          "end": 10.73
+        },
+        {
+          "id": "w32",
+          "text": "d'un",
+          "start": 10.76,
+          "end": 10.95
+        },
+        {
+          "id": "w33",
+          "text": "restaurant,",
+          "start": 11.06,
+          "end": 11.9
+        },
+        {
+          "id": "w34",
+          "text": "c'est",
+          "start": 11.97,
+          "end": 12.22
+        },
+        {
+          "id": "w35",
+          "text": "un",
+          "start": 12.28,
+          "end": 12.4
+        },
+        {
+          "id": "w36",
+          "text": "vrai",
+          "start": 12.4,
+          "end": 12.69
+        },
+        {
+          "id": "w37",
+          "text": "gouffre",
+          "start": 12.69,
+          "end": 13.19
+        },
+        {
+          "id": "w38",
+          "text": "de",
+          "start": 13.19,
+          "end": 13.26
+        },
+        {
+          "id": "w39",
+          "text": "temps.",
+          "start": 13.33,
+          "end": 13.82
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "path": "assets/voice/02.wav",
+      "duration_s": 7.367,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Fooditop",
+          "start": 0.12,
+          "end": 0.45
+        },
+        {
+          "id": "w1",
+          "text": "réunit",
+          "start": 0.45,
+          "end": 0.78
+        },
+        {
+          "id": "w2",
+          "text": "toute",
+          "start": 0.78,
+          "end": 1.04
+        },
+        {
+          "id": "w3",
+          "text": "votre",
+          "start": 1.12,
+          "end": 1.35
+        },
+        {
+          "id": "w4",
+          "text": "comptabilité",
+          "start": 1.35,
+          "end": 2.12
+        },
+        {
+          "id": "w5",
+          "text": "dans",
+          "start": 2.12,
+          "end": 2.34
+        },
+        {
+          "id": "w6",
+          "text": "un",
+          "start": 2.34,
+          "end": 2.42
+        },
+        {
+          "id": "w7",
+          "text": "seul",
+          "start": 2.5,
+          "end": 2.67
+        },
+        {
+          "id": "w8",
+          "text": "module,",
+          "start": 2.67,
+          "end": 3
+        },
+        {
+          "id": "w9",
+          "text": "facture,",
+          "start": 3.3,
+          "end": 3.75
+        },
+        {
+          "id": "w10",
+          "text": "fournisseur,",
+          "start": 4.07,
+          "end": 4.8
+        },
+        {
+          "id": "w11",
+          "text": "dépense",
+          "start": 4.88,
+          "end": 5.32
+        },
+        {
+          "id": "w12",
+          "text": "et",
+          "start": 5.39,
+          "end": 5.46
+        },
+        {
+          "id": "w13",
+          "text": "food",
+          "start": 5.54,
+          "end": 5.85
+        },
+        {
+          "id": "w14",
+          "text": "cost",
+          "start": 5.85,
+          "end": 6.04
+        },
+        {
+          "id": "w15",
+          "text": "au",
+          "start": 6.04,
+          "end": 6.32
+        },
+        {
+          "id": "w16",
+          "text": "même",
+          "start": 6.32,
+          "end": 6.56
+        },
+        {
+          "id": "w17",
+          "text": "endroit.",
+          "start": 6.56,
+          "end": 7.16
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "path": "assets/voice/03.wav",
+      "duration_s": 13.453,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Éditez",
+          "start": 0.06,
+          "end": 0.38
+        },
+        {
+          "id": "w1",
+          "text": "vos",
+          "start": 0.38,
+          "end": 0.57
+        },
+        {
+          "id": "w2",
+          "text": "devis",
+          "start": 0.58,
+          "end": 0.85
+        },
+        {
+          "id": "w3",
+          "text": "et",
+          "start": 0.93,
+          "end": 1.04
+        },
+        {
+          "id": "w4",
+          "text": "vos",
+          "start": 1.04,
+          "end": 1.24
+        },
+        {
+          "id": "w5",
+          "text": "factures,",
+          "start": 1.24,
+          "end": 1.93
+        },
+        {
+          "id": "w6",
+          "text": "suivez",
+          "start": 1.96,
+          "end": 2.26
+        },
+        {
+          "id": "w7",
+          "text": "vos",
+          "start": 2.26,
+          "end": 2.43
+        },
+        {
+          "id": "w8",
+          "text": "fournisseurs",
+          "start": 2.43,
+          "end": 3.06
+        },
+        {
+          "id": "w9",
+          "text": "et",
+          "start": 3.17,
+          "end": 3.22
+        },
+        {
+          "id": "w10",
+          "text": "vos",
+          "start": 3.22,
+          "end": 3.38
+        },
+        {
+          "id": "w11",
+          "text": "dépenses,",
+          "start": 3.39,
+          "end": 4.02
+        },
+        {
+          "id": "w12",
+          "text": "scannez",
+          "start": 4.08,
+          "end": 4.49
+        },
+        {
+          "id": "w13",
+          "text": "vos",
+          "start": 4.49,
+          "end": 4.69
+        },
+        {
+          "id": "w14",
+          "text": "factures",
+          "start": 4.69,
+          "end": 5.23
+        },
+        {
+          "id": "w15",
+          "text": "grâce",
+          "start": 5.23,
+          "end": 5.57
+        },
+        {
+          "id": "w16",
+          "text": "à",
+          "start": 5.57,
+          "end": 5.63
+        },
+        {
+          "id": "w17",
+          "text": "l'OCR",
+          "start": 5.63,
+          "end": 6.02
+        },
+        {
+          "id": "w18",
+          "text": "et",
+          "start": 6.02,
+          "end": 6.15
+        },
+        {
+          "id": "w19",
+          "text": "calculez",
+          "start": 6.15,
+          "end": 6.7
+        },
+        {
+          "id": "w20",
+          "text": "le",
+          "start": 6.7,
+          "end": 6.83
+        },
+        {
+          "id": "w21",
+          "text": "food",
+          "start": 6.83,
+          "end": 7.08
+        },
+        {
+          "id": "w22",
+          "text": "cost",
+          "start": 7.19,
+          "end": 7.38
+        },
+        {
+          "id": "w23",
+          "text": "et",
+          "start": 7.38,
+          "end": 7.51
+        },
+        {
+          "id": "w24",
+          "text": "la",
+          "start": 7.51,
+          "end": 7.64
+        },
+        {
+          "id": "w25",
+          "text": "marge",
+          "start": 7.64,
+          "end": 7.86
+        },
+        {
+          "id": "w26",
+          "text": "de",
+          "start": 8.12,
+          "end": 8.14
+        },
+        {
+          "id": "w27",
+          "text": "chaque",
+          "start": 8.14,
+          "end": 8.48
+        },
+        {
+          "id": "w28",
+          "text": "recette.",
+          "start": 8.48,
+          "end": 9.06
+        },
+        {
+          "id": "w29",
+          "text": "Votre",
+          "start": 9.12,
+          "end": 9.41
+        },
+        {
+          "id": "w30",
+          "text": "chiffre",
+          "start": 9.41,
+          "end": 9.9
+        },
+        {
+          "id": "w31",
+          "text": "d'affaires,",
+          "start": 9.9,
+          "end": 10.73
+        },
+        {
+          "id": "w32",
+          "text": "vos",
+          "start": 10.73,
+          "end": 11.02
+        },
+        {
+          "id": "w33",
+          "text": "impayés",
+          "start": 11.02,
+          "end": 11.49
+        },
+        {
+          "id": "w34",
+          "text": "et",
+          "start": 11.49,
+          "end": 11.61
+        },
+        {
+          "id": "w35",
+          "text": "vos",
+          "start": 11.64,
+          "end": 11.85
+        },
+        {
+          "id": "w36",
+          "text": "marges",
+          "start": 11.85,
+          "end": 12.29
+        },
+        {
+          "id": "w37",
+          "text": "en",
+          "start": 12.29,
+          "end": 12.43
+        },
+        {
+          "id": "w38",
+          "text": "un",
+          "start": 12.43,
+          "end": 12.56
+        },
+        {
+          "id": "w39",
+          "text": "coup",
+          "start": 12.61,
+          "end": 12.86
+        },
+        {
+          "id": "w40",
+          "text": "d'œil.",
+          "start": 12.86,
+          "end": 13.36
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "path": "assets/voice/04.wav",
+      "duration_s": 13.505,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Et",
+          "start": 0.07,
+          "end": 0.12
+        },
+        {
+          "id": "w1",
+          "text": "tout",
+          "start": 0.12,
+          "end": 0.36
+        },
+        {
+          "id": "w2",
+          "text": "se",
+          "start": 0.36,
+          "end": 0.48
+        },
+        {
+          "id": "w3",
+          "text": "pilote",
+          "start": 0.48,
+          "end": 0.83
+        },
+        {
+          "id": "w4",
+          "text": "aussi",
+          "start": 0.83,
+          "end": 1.07
+        },
+        {
+          "id": "w5",
+          "text": "avec",
+          "start": 1.13,
+          "end": 1.28
+        },
+        {
+          "id": "w6",
+          "text": "Claude.",
+          "start": 1.38,
+          "end": 1.92
+        },
+        {
+          "id": "w7",
+          "text": "Donnez",
+          "start": 2.09,
+          "end": 2.26
+        },
+        {
+          "id": "w8",
+          "text": "lui",
+          "start": 2.26,
+          "end": 2.4
+        },
+        {
+          "id": "w9",
+          "text": "une",
+          "start": 2.47,
+          "end": 2.6
+        },
+        {
+          "id": "w10",
+          "text": "facture",
+          "start": 2.6,
+          "end": 2.99
+        },
+        {
+          "id": "w11",
+          "text": "fournisseur.",
+          "start": 2.99,
+          "end": 3.71
+        },
+        {
+          "id": "w12",
+          "text": "Il",
+          "start": 3.71,
+          "end": 3.99
+        },
+        {
+          "id": "w13",
+          "text": "met",
+          "start": 3.99,
+          "end": 4.1
+        },
+        {
+          "id": "w14",
+          "text": "à",
+          "start": 4.11,
+          "end": 4.16
+        },
+        {
+          "id": "w15",
+          "text": "jour",
+          "start": 4.16,
+          "end": 4.39
+        },
+        {
+          "id": "w16",
+          "text": "le",
+          "start": 4.39,
+          "end": 4.51
+        },
+        {
+          "id": "w17",
+          "text": "prix",
+          "start": 4.51,
+          "end": 4.74
+        },
+        {
+          "id": "w18",
+          "text": "de",
+          "start": 4.74,
+          "end": 4.86
+        },
+        {
+          "id": "w19",
+          "text": "vos",
+          "start": 4.86,
+          "end": 4.99
+        },
+        {
+          "id": "w20",
+          "text": "ingrédients",
+          "start": 5.05,
+          "end": 5.59
+        },
+        {
+          "id": "w21",
+          "text": "et",
+          "start": 5.77,
+          "end": 5.86
+        },
+        {
+          "id": "w22",
+          "text": "recalcule",
+          "start": 6.03,
+          "end": 6.45
+        },
+        {
+          "id": "w23",
+          "text": "vos",
+          "start": 6.49,
+          "end": 6.7
+        },
+        {
+          "id": "w24",
+          "text": "marges.",
+          "start": 6.7,
+          "end": 7.4
+        },
+        {
+          "id": "w25",
+          "text": "Demandez",
+          "start": 7.57,
+          "end": 7.85
+        },
+        {
+          "id": "w26",
+          "text": "un",
+          "start": 7.85,
+          "end": 7.95
+        },
+        {
+          "id": "w27",
+          "text": "devis",
+          "start": 7.95,
+          "end": 8.14
+        },
+        {
+          "id": "w28",
+          "text": "pour",
+          "start": 8.28,
+          "end": 8.47
+        },
+        {
+          "id": "w29",
+          "text": "un",
+          "start": 8.47,
+          "end": 8.58
+        },
+        {
+          "id": "w30",
+          "text": "buffet",
+          "start": 8.58,
+          "end": 8.91
+        },
+        {
+          "id": "w31",
+          "text": "de",
+          "start": 8.91,
+          "end": 9.03
+        },
+        {
+          "id": "w32",
+          "text": "50",
+          "start": 9.03,
+          "end": 9.19
+        },
+        {
+          "id": "w33",
+          "text": "personnes.",
+          "start": 9.63,
+          "end": 10.12
+        },
+        {
+          "id": "w34",
+          "text": "Il",
+          "start": 10.12,
+          "end": 10.31
+        },
+        {
+          "id": "w35",
+          "text": "estime",
+          "start": 10.31,
+          "end": 10.76
+        },
+        {
+          "id": "w36",
+          "text": "les",
+          "start": 10.76,
+          "end": 10.87
+        },
+        {
+          "id": "w37",
+          "text": "coups",
+          "start": 11,
+          "end": 11.4
+        },
+        {
+          "id": "w38",
+          "text": "et",
+          "start": 11.4,
+          "end": 11.52
+        },
+        {
+          "id": "w39",
+          "text": "le",
+          "start": 11.62,
+          "end": 11.72
+        },
+        {
+          "id": "w40",
+          "text": "rédige",
+          "start": 11.72,
+          "end": 12.24
+        },
+        {
+          "id": "w41",
+          "text": "dans",
+          "start": 12.35,
+          "end": 12.52
+        },
+        {
+          "id": "w42",
+          "text": "Food",
+          "start": 12.52,
+          "end": 12.76
+        },
+        {
+          "id": "w43",
+          "text": "It",
+          "start": 12.8,
+          "end": 12.9
+        },
+        {
+          "id": "w44",
+          "text": "Up.",
+          "start": 12.95,
+          "end": 13.25
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "path": "assets/voice/05.wav",
+      "duration_s": 7.105,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Moins",
+          "start": 0.06,
+          "end": 0.32
+        },
+        {
+          "id": "w1",
+          "text": "de",
+          "start": 0.32,
+          "end": 0.42
+        },
+        {
+          "id": "w2",
+          "text": "saisie,",
+          "start": 0.45,
+          "end": 0.85
+        },
+        {
+          "id": "w3",
+          "text": "démarge",
+          "start": 1.03,
+          "end": 1.38
+        },
+        {
+          "id": "w4",
+          "text": "enfin",
+          "start": 1.42,
+          "end": 1.7
+        },
+        {
+          "id": "w5",
+          "text": "maîtriser,",
+          "start": 1.71,
+          "end": 2.46
+        },
+        {
+          "id": "w6",
+          "text": "une",
+          "start": 2.47,
+          "end": 2.64
+        },
+        {
+          "id": "w7",
+          "text": "compta",
+          "start": 2.64,
+          "end": 3
+        },
+        {
+          "id": "w8",
+          "text": "toujours",
+          "start": 3,
+          "end": 3.47
+        },
+        {
+          "id": "w9",
+          "text": "à",
+          "start": 3.47,
+          "end": 3.52
+        },
+        {
+          "id": "w10",
+          "text": "jour.",
+          "start": 3.58,
+          "end": 3.91
+        },
+        {
+          "id": "w11",
+          "text": "Foodit",
+          "start": 3.98,
+          "end": 4.41
+        },
+        {
+          "id": "w12",
+          "text": "up",
+          "start": 4.41,
+          "end": 4.57
+        },
+        {
+          "id": "w13",
+          "text": "votre",
+          "start": 4.57,
+          "end": 4.68
+        },
+        {
+          "id": "w14",
+          "text": "rentabilité",
+          "start": 4.99,
+          "end": 5.88
+        },
+        {
+          "id": "w15",
+          "text": "sous",
+          "start": 5.88,
+          "end": 6.11
+        },
+        {
+          "id": "w16",
+          "text": "contrôle.",
+          "start": 6.39,
+          "end": 7
+        }
+      ]
+    }
+  ],
+  "sfx": [
+    {
+      "frame": 1,
+      "file": "assets/sfx/notification.mp3",
+      "offset_s": 1,
+      "duration_s": 1.2,
+      "volume": 0.28
+    },
+    {
+      "frame": 1,
+      "file": "assets/sfx/impact-bass-1.mp3",
+      "offset_s": 12,
+      "duration_s": 2,
+      "volume": 0.26
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/chime.mp3",
+      "offset_s": 0.4,
+      "duration_s": 0.72,
+      "volume": 0.3
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 0.1,
+      "duration_s": 0.31,
+      "volume": 0.28
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/click-soft.mp3",
+      "offset_s": 6,
+      "duration_s": 0.26,
+      "volume": 0.28
+    },
+    {
+      "frame": 4,
+      "file": "assets/sfx/chime.mp3",
+      "offset_s": 3,
+      "duration_s": 0.72,
+      "volume": 0.3
+    },
+    {
+      "frame": 4,
+      "file": "assets/sfx/chime.mp3",
+      "offset_s": 9,
+      "duration_s": 0.72,
+      "volume": 0.3
+    },
+    {
+      "frame": 5,
+      "file": "assets/sfx/sparkle.mp3",
+      "offset_s": 3.6,
+      "duration_s": 1.5,
+      "volume": 0.28
+    }
+  ],
+  "total_duration_s": 55.719
+}

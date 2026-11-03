@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f3c-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .f3c-stage { position: absolute; inset: 0; }
+
+        .f3c-brokenline { position: absolute; left: 140px; right: 140px; top: 96px; height: 2px; }
+        .f3c-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.55; transform-origin: 0% 50%; }
+
+        .f3c-photo {
+          position: absolute; left: 140px; top: 150px; width: 900px; height: 620px;
+          border: 1px solid #8A9099; box-shadow: 0 20px 50px rgba(20,22,25,0.14); overflow: hidden;
+        }
+        .f3c-photo img {
+          width: 100%; height: 100%; object-fit: cover; display: block;
+          filter: grayscale(0.85) contrast(1.08) brightness(0.98);
+        }
+
+        .f3c-label { position: absolute; left: 142px; top: 800px; font-size: 34px; font-weight: 600; color: #3A3F45; }
+        .f3c-sub { position: absolute; left: 142px; top: 850px; width: 900px; font-size: 26px; font-weight: 500; color: rgba(58,63,69,0.85); line-height: 1.4; }
+
+        .f3c-panel {
+          position: absolute; right: 140px; top: 220px; width: 620px;
+        }
+        .f3c-entry {
+          position: relative; padding: 22px 26px; margin-bottom: 18px;
+          border: 1px solid #8A9099; background: rgba(58,63,69,0.045);
+          font-size: 26px; font-weight: 500; color: rgba(58,63,69,0.85);
+          opacity: 0;
+        }
+        .f3c-strike {
+          position: absolute; left: 6%; right: 6%; top: 50%; height: 2px; background: #8A9099;
+          transform: scaleX(0); transform-origin: 0% 50%;
+        }
+        .f3c-strike.second { top: 62%; background: #D64545; }
+
+        .f3c-count {
+          position: absolute; right: 140px; top: 700px;
+          font-size: 30px; font-weight: 700; color: #D64545; opacity: 0;
+        }
+      </style>
+
+      <div id="root" data-composition-id="03-cahier" data-width="1920" data-height="1080" data-duration="14">
+        <div class="f3c-bg clip" id="f3c-bgclip" data-start="0" data-duration="14" data-track-index="1"></div>
+
+        <div class="f3c-stage">
+          <div class="f3c-brokenline" id="f3c-brokenline">
+            <span style="left:0%; width:16%;"></span>
+            <span style="left:20%; width:22%; top:-3px;"></span>
+            <span style="left:46%; width:14%; top:2px;"></span>
+            <span style="left:64%; width:20%;"></span>
+            <span style="left:88%; width:12%; top:-2px;"></span>
+          </div>
+
+          <div class="f3c-photo" id="f3c-photo">
+            <img src="public/photos/paper-reservation-book.jpg" alt="" />
+          </div>
+          <div class="f3c-label" id="f3c-label">Le cahier de réservations</div>
+          <div class="f3c-sub" id="f3c-sub">Posé sur le comptoir. Des ratures partout.</div>
+
+          <div class="f3c-panel" id="f3c-panel">
+            <div class="f3c-entry" id="f3c-entry1">19h30 — table 4, deux couverts<div class="f3c-strike" id="f3c-strike1"></div></div>
+            <div class="f3c-entry" id="f3c-entry2">19h30 — table 4, quatre couverts<div class="f3c-strike second" id="f3c-strike2"></div></div>
+            <div class="f3c-entry" id="f3c-entry3">19h30 — table 4, deux couverts</div>
+          </div>
+          <div class="f3c-count" id="f3c-count">une écriture, puis une autre par-dessus</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f3c-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set("#f3c-photo", { opacity: 0, x: -40 });
+        gsap.set(["#f3c-label", "#f3c-sub"], { opacity: 0, y: 10 });
+        gsap.set(["#f3c-entry1", "#f3c-entry2", "#f3c-entry3"], { opacity: 0, y: 12 });
+        gsap.set(["#f3c-strike1", "#f3c-strike2"], { scaleX: 0 });
+        gsap.set("#f3c-count", { opacity: 0, y: 8 });
+
+        // Scene 1 (0.0-1.0s): broken line draws itself on
+        tl.to("#f3c-brokenline span", { opacity: 0.55, duration: 0.01 }, 0.15);
+        tl.to("#f3c-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.08 }, 0.15);
+
+        // continuous low-amplitude drift
+        const f3cdrift = { p: 0 };
+        const f3cstage = document.querySelector(".f3c-stage");
+        tl.to(f3cdrift, {
+          p: Math.PI * 2 * 3.6, duration: 13.4, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f3cdrift.p);
+            f3cstage.style.transform = `translate(${s * 3}px, ${Math.sin(f3cdrift.p * 0.6) * 2}px) scale(${1 + s * 0.0025})`;
+          }
+        }, 0.3);
+
+        // Scene 2 (0.4-1.5s, cue "Le cahier de réservations, posé sur le comptoir"): photo + label
+        tl.to("#f3c-photo", { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 0.5);
+        tl.to("#f3c-label", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.9);
+        tl.to("#f3c-sub", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.15);
+
+        // Scene 3 (2.0-6.6s, cue "des ratures partout, une écriture, puis une autre par-dessus."):
+        // three entries appear one on top of the other, each struck through by the next —
+        // the same reservation slot, rewritten twice.
+        tl.to("#f3c-entry1", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 2.1);
+        tl.to("#f3c-strike1", { scaleX: 1, duration: 0.35, ease: "power2.out" }, 3.0);
+        tl.to("#f3c-entry2", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 3.5);
+        tl.to("#f3c-strike2", { scaleX: 1, duration: 0.35, ease: "power2.out" }, 4.4);
+        tl.to("#f3c-entry3", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 4.9);
+        tl.to("#f3c-count", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 5.6);
+
+        // Scene 4 (6.6-14s): hold — subtle jitter on the panel only
+        const f3cphase = { p: 0 };
+        tl.to(f3cphase, {
+          p: Math.PI * 2 * 1.8, duration: 2.0, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f3cphase.p);
+            document.getElementById("f3c-panel").style.transform = `translateY(${s * 1.5}px)`;
+          }
+        }, 6.7);
+
+        window.__timelines["03-cahier"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

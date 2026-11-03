@@ -1,0 +1,141 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 5 : prospection</title>
+<link rel="stylesheet" href="base.css">
+<style>
+#stage{background:radial-gradient(1100px 900px at 50% 34%,#14324a 0%,#0F1A23 64%)}
+.prompt{position:absolute;left:60px;width:960px;background:#1f1e1d;border-radius:26px;border:2px solid #3a3836;box-shadow:0 30px 70px rgba(0,0,0,.5);overflow:hidden}
+.prompt .bar{display:flex;align-items:center;gap:12px;padding:14px 22px;background:#2a2826;color:#d9d4cc;font-weight:600;font-size:22px}
+.prompt .txt{padding:24px 28px;font-size:31px;line-height:1.45;color:#f3efe8;font-weight:500;min-height:300px}
+.prompt .txt b{color:#ff9e6b}
+.chipx{position:absolute;display:inline-block;background:#123b5c;color:#bfe3ff;border-radius:12px;padding:8px 16px;font-family:'DejaVu Sans Mono',monospace;font-size:21px}
+.tbl{position:absolute;left:60px;width:960px;background:#0a1118;border:2px solid #22364a;border-radius:22px;overflow:hidden}
+.tbl .h{display:flex;padding:12px 20px;background:#131d27;font-weight:600;font-size:20px;color:#8fa3b5}
+.tbl .r{display:flex;align-items:center;padding:12px 20px;border-top:1px solid #1d2b38;font-size:24px}
+.tbl .r span,.tbl .h span{flex:1}.tbl .r span.n,.tbl .h span.n{flex:none;width:150px;text-align:right}
+.big{position:absolute;left:0;right:0;text-align:center;font-weight:700}
+.fun{position:absolute;left:90px;height:92px;border-radius:16px;display:flex;align-items:center;padding:0 26px;font-weight:700;font-size:30px;color:#0F1A23}
+.fun small{margin-left:auto;font-weight:600;font-size:22px}
+.mail{position:absolute;background:#fff;color:#0F1A23;border-radius:22px;padding:24px 28px;font-size:22px;line-height:1.45;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.mail h5{font-size:19px;color:#5b6773;font-weight:600}.mail h4{font-size:27px;margin:4px 0 12px}
+.mail .ft{margin-top:14px;padding-top:12px;border-top:1px solid #dde3e8;font-size:17px;color:#5b6773}
+.chk{position:absolute;left:600px;width:420px;display:flex;gap:12px;align-items:center;font-weight:600;font-size:24px}
+.chk i{flex:none;width:40px;height:40px;border-radius:20px;background:#16a34a;color:#fff;font-style:normal;display:flex;align-items:center;justify-content:center;font-weight:700}
+.chk.x i{background:#b45309}
+.chan{position:absolute;width:470px;height:200px;background:var(--surf);border:2px solid #2f475c;border-radius:24px;padding:20px 24px}
+.chan b{display:block;font-size:34px}.chan code{display:block;font-family:'DejaVu Sans Mono',monospace;font-size:19px;color:#7dd3fc;margin:6px 0}
+.chan span{font-size:20px;color:#AEB8C2}
+</style></head><body>
+<div id="stage">
+  <div class="scene" id="s0">
+    <div class="chip" id="s0c">Épisode 5 · La prospection</div>
+    <div class="title" id="s0t" style="font-size:70px;top:180px">Comment trouver<br><b>des clients ?</b></div>
+    <div class="tab" id="s0tab" style="left:60px;top:470px;width:960px;height:690px"><div class="scr" style="background:#0a0f14"><img src="a/img/pebble-accueil.png"></div></div>
+    <div class="real" id="s0r" style="left:70px;top:1175px">Prospector Hub · console admin (écran de connexion réel)</div>
+    <img class="pose" id="s0m" src="a/po/reflechit.webp" style="left:660px;top:1050px;width:440px">
+    <div class="abs" id="s0l" style="left:70px;top:1260px;display:flex;flex-direction:column;gap:14px">
+      <div class="logo-pill" style="position:static;height:76px"><img src="a/logos/claude.webp" style="height:38px"></div>
+      <div class="logo-pill" style="position:static;height:76px"><img src="a/logos/foodeatup.webp" style="height:36px"></div>
+      <div class="logo-pill" style="position:static;height:76px"><img src="a/logos/braindcode.png" style="height:44px"></div>
+    </div>
+  </div>
+
+  <div class="scene" id="s1">
+    <div class="chip">Je donne un objectif</div>
+    <div class="title" style="font-size:60px">Une phrase,<br><b>une règle</b></div>
+    <div class="prompt" id="s1p" style="top:420px"><div class="bar"><img src="a/logos/claude-symbole.webp" style="height:30px">Claude · Prospector Hub connecté</div><div class="txt" id="s1txt"></div></div>
+    <div class="pill b" id="s1k" style="left:60px;top:960px;font-size:30px">Ne contacte personne sans ma validation</div>
+    <img class="pose" id="s1m" src="a/po/ordinateur.webp" style="left:600px;top:1060px;width:470px;opacity:0">
+  </div>
+
+  <div class="scene" id="s2">
+    <div class="chip">Le MCP Prospection</div>
+    <div class="title" style="font-size:58px">Claude utilise<br><b>mon logiciel</b></div>
+    <div class="term" id="s2t" style="left:60px;top:400px;width:960px"><div class="bar">prospection_terms()<span>● réponse réelle</span></div><pre id="s2pre" style="font-size:22px"></pre></div>
+    <div id="s2chips"></div>
+    <div class="row" id="s2n" style="top:1110px"><div class="n" style="background:#ea4b71">n8n</div><div class="t">Les recherches passent par n8n<small>run_prospection → webhook n8n · ne sauvegarde rien seul</small></div><span class="s man">documenté</span></div>
+    <div class="row" id="s2n2" style="top:1250px"><div class="n">+</div><div class="t">Enregistrement après dédoublonnage<small>add_clients · add_log (journal)</small></div><span class="s ok">sur accord</span></div>
+  </div>
+
+  <div class="scene" id="s3">
+    <div class="chip">Les premiers résultats</div>
+    <div class="title" style="font-size:58px">5 recherches,<br><b>200 résultats</b></div>
+    <div class="tbl" id="s3t" style="top:400px"><div class="h"><span>prospection_history · bars et brasseries · 26/10</span><span class="n">résultats</span></div><div id="s3rows"></div></div>
+    <div class="big" id="s3tot" style="top:860px;font-size:110px;color:var(--orange)">200</div>
+    <div class="badge" id="s3b" style="left:80px;top:1020px;font-size:36px">200 RÉSULTATS DE RECHERCHE ≠ 200 CLIENTS</div>
+    <div class="real" id="s3r" style="left:70px;top:1180px">Historique : 50 dernières recherches · 1 786 résultats · 25 spécialités · 18 régions</div>
+  </div>
+
+  <div class="scene" id="s4">
+    <div class="chip">La qualification</div>
+    <div class="title" style="font-size:56px">Trouver ne suffit pas :<br><b>il faut qualifier</b></div>
+    <div id="s4fun"></div>
+    <div class="tbl" id="s4t" style="top:960px"><div class="h"><span>list_clients · noms et coordonnées masqués</span><span class="n">statut</span></div><div id="s4rows"></div></div>
+  </div>
+
+  <div class="scene" id="s5">
+    <div class="chip" style="color:var(--orange)">Démo · campagne en brouillon</div>
+    <div class="title" style="font-size:54px">Claude prépare,<br><b>je valide</b></div>
+    <div class="mail" id="d1" style="left:60px;top:380px;width:520px">
+      <h5>Brouillon · e-mail · FoodEatUp</h5>
+      <h4>Votre brasserie, pilotée depuis une seule application</h4>
+      Bonjour, caisse, stocks, HACCP et fidélité : FoodEatUp réunit les outils d'un bar-brasserie au même endroit. Je vous propose une démonstration de 20 minutes, à l'heure qui vous arrange.<br><br>Michael · FoodEatUp, édité par BraindCode
+      <div class="ft">BraindCode · Levallois-Perret · <u>Se désinscrire</u> · vos données : <u>politique de confidentialité</u></div>
+    </div>
+    <div class="chk" id="c0" style="top:400px"><i>✓</i>Segment : 90 bars « nouveau »</div>
+    <div class="chk" id="c1" style="top:470px"><i>✓</i>Doublons écartés</div>
+    <div class="chk" id="c2" style="top:540px"><i>✓</i>Identité de l'expéditeur</div>
+    <div class="chk" id="c3" style="top:610px"><i>✓</i>Lien de désinscription</div>
+    <div class="chk x" id="c4" style="top:680px"><i>!</i>Modèle à créer : aucun modèle FoodEatUp</div>
+    <div class="term" id="d2" style="left:60px;top:1000px;width:960px"><div class="bar">Rapport des actions proposées<span style="color:var(--orange)">● rien n'est envoyé</span></div><pre style="font-size:21px"><span class="o">1.</span> Créer le modèle « FoodEatUp · bars et brasseries »
+<span class="o">2.</span> Envoyer à 10 établissements tests, puis mesurer
+<span class="o">3.</span> Relance J+3 à valider, sans SMS ni appel
+<span class="m">send_email : non appelé · add_email_template : non appelé</span></pre></div>
+    <div class="badge" id="d3" style="left:220px;top:1330px;font-size:40px;background:var(--blue);color:#fff">⏸ En attente de ma validation</div>
+  </div>
+
+  <div class="scene" id="s6">
+    <div class="chip">Les routines</div>
+    <div class="title" style="font-size:56px">Préparer, suivre,<br><b>relancer, mesurer</b></div>
+    <div id="s6rows"></div>
+    <div class="term" id="s6t" style="left:60px;top:1000px;width:960px"><div class="bar">Ce qui existe aujourd'hui<span>● lecture seule</span></div><pre style="font-size:21px">list_email_templates   <span class="m">→ 2 modèles (BraindCode, RapidoCMS)</span>
+list_message_templates <span class="m">→ 1 SMS · 1 texte d'appel</span>
+list_calendar_posts    <span class="m">→ publications « posté » en septembre</span>
+list_logs              <span class="m">→ « Bar et brasserie — Corse : 5 clients ajoutés »</span>
+Plan'It                <span class="o">→ 0 routine de prospection configurée</span></pre></div>
+    <div class="pill" id="s6w" style="left:60px;top:1350px;font-size:24px;border-color:var(--orange)"><span style="color:var(--orange)">●</span> Routine automatique : à configurer dans n8n ou Plan'It</div>
+  </div>
+
+  <div class="scene" id="s7">
+    <div class="chip">Plusieurs canaux</div>
+    <div class="title" style="font-size:58px">Des canaux,<br><b>des règles</b></div>
+    <div class="chan" id="ch0" style="left:60px;top:400px"><b>✉ E-mail</b><code>send_email</code><span>identité + désinscription obligatoires</span></div>
+    <div class="chan" id="ch1" style="left:550px;top:400px"><b>💬 SMS</b><code>send_sms</code><span>mention STOP obligatoire</span></div>
+    <div class="chan" id="ch2" style="left:60px;top:630px"><b>in LinkedIn</b><code>send_linkedin_invite</code><span>un par un, sur accord</span></div>
+    <div class="chan" id="ch3" style="left:550px;top:630px"><b>☎ Appels</b><code>place_call</code><span>désactivés par défaut (plugin)</span></div>
+    <div class="badge" id="s7b" style="left:160px;top:900px;font-size:40px">Aucun envoi pendant ce tournage</div>
+  </div>
+
+  <div class="scene" id="s8">
+    <div class="chip">Ma méthode</div>
+    <div class="abs" id="s8a" style="left:70px;top:320px;font-weight:700;font-size:82px;line-height:1.15">Pas au hasard.</div>
+    <div class="abs" id="s8b" style="left:70px;top:460px;font-weight:700;font-size:72px;line-height:1.25;color:var(--orange)">Ciblée.<br>Mesurable.<br>Pilotée depuis Claude.</div>
+    <img class="pose" id="s8m" src="a/po/bras-ouverts.webp" style="left:420px;top:880px;width:640px">
+  </div>
+
+  <div class="scene" id="s9">
+    <div class="abs" id="s9a" style="left:0;right:0;top:520px;text-align:center;font-weight:700;font-size:58px;line-height:1.35">BRAINDCODE <span style="color:var(--orange)">×</span> CLAUDE<br><span style="color:var(--orange)">×</span> PROSPECTOR HUB</div>
+    <div class="abs" id="s9b" style="left:60px;right:60px;top:780px;text-align:center;font-weight:600;font-size:42px;line-height:1.4;color:var(--cream)">Des objectifs.<br>Des agents IA.<br>Des opportunités commerciales.</div>
+    <div class="logo-pill" id="s9l" style="left:290px;top:1080px;width:500px;height:130px"><img src="a/logos/braindcode.png" style="height:80px"></div>
+  </div>
+
+  <div class="scene" id="thumb">
+    <div class="abs" style="left:66px;top:140px;font-weight:700;font-size:40px;letter-spacing:5px;color:var(--orange)">ÉPISODE 5 · PROSPECTION</div>
+    <div class="abs" style="left:62px;right:50px;top:210px;font-weight:700;font-size:122px;line-height:.98;letter-spacing:-3px">CLAUDE<br>TROUVE<br>MES FUTURS<br><span style="color:var(--orange)">CLIENTS</span></div>
+    <div class="prompt" style="top:900px;width:620px;transform:rotate(-3deg)"><div class="bar"><img src="a/logos/claude-symbole.webp" style="height:30px">Claude</div><div class="txt" style="font-size:26px;min-height:0">Prépare une campagne FoodEatUp. <b>Ne contacte personne sans ma validation.</b></div></div>
+    <img class="pose" src="a/po/index-leve.webp" style="left:560px;top:930px;width:560px">
+    <div class="logo-pill" style="left:70px;top:1520px;height:84px"><img src="a/logos/braindcode.png" style="height:52px"></div>
+  </div>
+
+  <div id="logos"><div class="lp"><img src="a/logos/braindcode.png" style="height:30px"></div><div class="lp"><img src="a/logos/claude.webp" style="height:24px"></div></div>
+</div>
+<script src="script.js"></script>
+</body></html>

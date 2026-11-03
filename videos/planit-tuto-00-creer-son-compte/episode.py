@@ -1,0 +1,54 @@
+#!/usr/bin/env python3
+"""Tutoriel 00 — Créer son compte Plan'It.
+
+Fiche MCP `tutoriel_spec(numero: 0)`, slug `creer-son-compte`.
+Capture source : « Inscription » — 78,0 s, 590 × 1280, muette.
+
+    python3 episode.py
+"""
+
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "planit-academy"))
+
+from academie import Episode, Segment, build_episode  # noqa: E402
+
+# Cette capture n'a pas de filigrane : recadrage limité aux bandes noires.
+CROP = "crop=590:1234:0:23"
+
+EPISODE = Episode(
+    numero=0,
+    slug="creer-son-compte",
+    titre="Créer son compte Plan'It",
+    titre_court="Créer son compte",
+    promesse="Votre compte existe et votre espace de travail est ouvert.",
+    presentation=(
+        "Bienvenue dans l'Académie Plan'It. Aujourd'hui, on commence par le tout "
+        "début : créer votre compte. Une minute, et votre espace de travail est ouvert."
+    ),
+    module_nom="Authentification",
+    module_couleur="#4F2DF9",
+    variante="A",              # concept ou découverte : l'avatar domine
+    suivant="Se connecter à son espace",
+    crop=CROP,
+    ecran_vignette=0.5,        # l'écran de connexion
+    racine=Path(__file__).resolve().parent,
+    segments=[
+        # Coupes volontaires : 39,2 → 42,0 (sortie vers l'écran d'accueil du
+        # téléphone), 47,0 → 50,5 (bascule multitâche) et 71,5 → 74,8
+        # (squelettes de chargement, clavier encore ouvert).
+        Segment("N1",  0.0,  4.2, "1 · L'écran de connexion"),
+        Segment("N2",  4.2, 13.0, "2 · Le formulaire d'inscription"),
+        Segment("N3", 13.0, 17.5, "3 · L'adresse professionnelle"),
+        Segment("N4", 17.5, 35.0, "4 · Mot de passe et confirmation"),
+        Segment("N5", 35.2, 39.2, "5 · Le code à 6 chiffres"),
+        Segment("N6", 42.0, 47.0, "6 · Le code reçu par email"),
+        Segment("N7", 50.5, 58.5, "7 · Vérification du code"),
+        Segment("N8", 58.8, 71.5, "8 · Première connexion"),
+        Segment("N9", 74.8, 78.0, "9 · Votre espace est ouvert"),
+    ],
+)
+
+if __name__ == "__main__":
+    build_episode(EPISODE)

@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f2-bg { position: absolute; inset: 0; background: #EDEEF0; }
+        .f2-tabecho {
+          position: absolute; left: 140px; top: 60px; width: 1640px; height: 40px;
+          display: flex; gap: 8px; opacity: 0.08;
+        }
+        .f2-tabecho div { width: 220px; height: 100%; border: 1px solid #8A9099; }
+
+        .f2-panel {
+          position: absolute;
+          top: 340px;
+          width: 620px;
+          height: 400px;
+          border: 1px solid #8A9099;
+          background: rgba(58,63,69,0.045);
+          padding: 40px;
+          box-sizing: border-box;
+          transform-style: preserve-3d;
+        }
+        .f2-panel.left { left: 190px; transform-origin: 100% 50%; }
+        .f2-panel.right { right: 190px; transform-origin: 0% 50%; }
+        .f2-panel .shot {
+          width: 540px; height: 190px; margin-bottom: 24px;
+          border: 1px solid #8A9099; overflow: hidden;
+        }
+        .f2-panel .shot img {
+          width: 100%; height: 100%; object-fit: cover; object-position: top center;
+          filter: grayscale(0.75) contrast(1.05);
+          display: block;
+        }
+        .f2-panel .label { font-size: 34px; font-weight: 700; color: #3A3F45; margin-bottom: 14px; }
+        .f2-panel .sub { font-size: 24px; font-weight: 500; color: rgba(58,63,69,0.85); }
+
+        .f2-connector {
+          position: absolute;
+          left: 810px; top: 540px; width: 300px; height: 2px;
+        }
+        .f2-connector svg { position: absolute; top: -1px; left: 0; overflow: visible; }
+
+        .f2-gapmark {
+          position: absolute;
+          left: 926px; top: 490px;
+          width: 68px; height: 68px;
+          border: 2px solid #D64545;
+          border-radius: 50%;
+          display: flex; align-items: center; justify-content: center;
+          font-size: 44px; font-weight: 800; color: #D64545;
+        }
+      </style>
+
+      <div id="root" data-composition-id="02-deux-logiciels" data-width="1920" data-height="1080" data-duration="8.833">
+        <div class="f2-bg clip" id="f2-bgclip" data-start="0" data-duration="8.833" data-track-index="1"></div>
+
+        <div class="f2-tabecho">
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+
+        <div class="f2-panel left" id="f2-left">
+          <div class="shot"><img src="public/generated/03-deux-logiciels-left.jpg" alt="" /></div>
+          <div class="label">mon logiciel de stock</div>
+          <div class="sub">niveaux, ruptures, réceptions</div>
+        </div>
+
+        <div class="f2-panel right" id="f2-right">
+          <div class="shot"><img src="public/generated/03-deux-logiciels-right.jpg" alt="" /></div>
+          <div class="label">ma caisse</div>
+          <div class="sub">tickets, encaissements du jour</div>
+        </div>
+
+        <div class="f2-connector" id="f2-connector">
+          <svg width="300" height="2" viewBox="0 0 300 2">
+            <line id="f2-connline" x1="0" y1="1" x2="300" y2="1" stroke="#8A9099" stroke-width="2" stroke-dasharray="10 10" />
+          </svg>
+        </div>
+
+        <div class="f2-gapmark" id="f2-gapmark">?</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f2-left", { opacity: 0, x: -60, rotationY: 22 });
+        gsap.set("#f2-right", { opacity: 0, x: 60, rotationY: -22 });
+        gsap.set("#f2-connline", { opacity: 0 });
+        gsap.set("#f2-gapmark", { opacity: 0, scale: 0 });
+
+        // Scene 1 (0.0-1.0s): "Mon logiciel" — left panel mirrored tilt-in
+        tl.fromTo("#f2-left",
+          { opacity: 0, x: -60, rotationY: 22 },
+          { opacity: 1, x: 0, rotationY: 0, duration: 0.6, ease: "power3.out" },
+          0.3
+        );
+
+        // Scene 2 (1.0-3.81s): "de stock ne sait pas ce que ma caisse a vendu hier soir." — right panel mirrored tilt-in
+        tl.fromTo("#f2-right",
+          { opacity: 0, x: 60, rotationY: -22 },
+          { opacity: 1, x: 0, rotationY: 0, duration: 0.6, ease: "power3.out" },
+          1.9
+        );
+
+        // Scene 3 (3.81-5.31s): "Les deux ne se parlent pas." — dashed connector draws, stops short
+        const connLine = document.getElementById("f2-connline");
+        const connLen = connLine.getTotalLength();
+        connLine.style.strokeDasharray = connLen;
+        connLine.style.strokeDashoffset = connLen;
+        tl.to("#f2-connline", { opacity: 1, duration: 0.2 }, 3.9);
+        tl.to("#f2-connline", { strokeDashoffset: connLen * 0.18, duration: 1.0, ease: "power2.out" }, 3.95);
+
+        // Scene 4 (5.31-7.13s): "Alors je fais le pont. À la main." — red "?" pops in the gap
+        tl.fromTo("#f2-gapmark",
+          { opacity: 0, scale: 0 },
+          { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" },
+          5.5
+        );
+
+        // Scene 5 (7.13-8.333s): hold — subtle jitter on the "?" only
+        const f2phase = { p: 0 };
+        tl.to(f2phase, {
+          p: Math.PI * 2 * 0.9, duration: 1.0, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f2phase.p);
+            document.getElementById("f2-gapmark").style.transform = `scale(${1 + s * 0.01})`;
+          }
+        }, 7.2);
+
+        window.__timelines["02-deux-logiciels"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

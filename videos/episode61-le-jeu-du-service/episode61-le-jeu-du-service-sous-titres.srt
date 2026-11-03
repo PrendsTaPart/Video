@@ -1,0 +1,111 @@
+1
+00:00:00,300 --> 00:00:01,840
+Imagine un jeu coop.
+
+2
+00:00:01,840 --> 00:00:03,560
+Sauf que c'est ton restaurant,
+
+3
+00:00:03,560 --> 00:00:04,800
+un samedi soir.
+
+4
+00:00:04,800 --> 00:00:06,140
+Un joueur en cuisine.
+
+5
+00:00:06,140 --> 00:00:07,240
+Un autre en salle.
+
+6
+00:00:07,240 --> 00:00:08,840
+Et un troisième au téléphone.
+
+7
+00:00:08,840 --> 00:00:09,900
+Plus vous êtes lents,
+
+8
+00:00:09,900 --> 00:00:11,340
+plus les clients s'énervent.
+
+9
+00:00:11,340 --> 00:00:11,860
+Et là,
+
+10
+00:00:11,860 --> 00:00:13,280
+il y a deux types de joueurs.
+
+11
+00:00:13,280 --> 00:00:14,530
+Ceux qui crient « ça vient !
+
+12
+00:00:14,530 --> 00:00:15,900
+» en courant partout.
+
+13
+00:00:15,900 --> 00:00:17,580
+Et ceux qui ont tout sur l'écran.
+
+14
+00:00:17,580 --> 00:00:19,160
+La table commande au QR code,
+
+15
+00:00:19,160 --> 00:00:20,630
+le ticket part direct en cuisine.
+
+16
+00:00:20,630 --> 00:00:22,500
+L'écran montre quel plat attend depuis trop
+
+17
+00:00:22,500 --> 00:00:23,180
+longtemps.
+
+18
+00:00:23,180 --> 00:00:24,240
+Et le téléphone ?
+
+19
+00:00:24,240 --> 00:00:25,500
+Caroline décroche.
+
+20
+00:00:25,500 --> 00:00:26,720
+Alors il y a ceux qui finiront
+
+21
+00:00:26,720 --> 00:00:27,700
+avec une salle en ruine.
+
+22
+00:00:27,700 --> 00:00:29,580
+Et ceux qui finiront avec une salle
+
+23
+00:00:29,580 --> 00:00:30,000
+pleine,
+
+24
+00:00:30,000 --> 00:00:31,640
+et des clients qui reviennent.
+
+25
+00:00:31,640 --> 00:00:33,420
+Le jeu s'appelle FoodEatUp.
+
+26
+00:00:33,420 --> 00:00:34,380
+Et il est déjà sorti.
+
+27
+00:00:34,380 --> 00:00:35,440
+Commente SERVICE,
+
+28
+00:00:35,440 --> 00:00:36,580
+je t'envoie la démo.

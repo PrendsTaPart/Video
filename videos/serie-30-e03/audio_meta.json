@@ -1,0 +1,405 @@
+{
+ "voices": [
+  {
+   "frame": 1,
+   "path": "assets/voice/routine.wav",
+   "duration_s": 9.381,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Le",
+     "start": 0.0,
+     "end": 0.391
+    },
+    {
+     "id": "w1",
+     "text": "plugin",
+     "start": 0.391,
+     "end": 0.782
+    },
+    {
+     "id": "w2",
+     "text": "BraindCode,",
+     "start": 0.782,
+     "end": 1.173
+    },
+    {
+     "id": "w3",
+     "text": "c'est",
+     "start": 1.173,
+     "end": 1.563
+    },
+    {
+     "id": "w4",
+     "text": "une",
+     "start": 1.563,
+     "end": 1.954
+    },
+    {
+     "id": "w5",
+     "text": "marketplace",
+     "start": 1.954,
+     "end": 2.345
+    },
+    {
+     "id": "w6",
+     "text": "de",
+     "start": 2.345,
+     "end": 2.736
+    },
+    {
+     "id": "w7",
+     "text": "compétences",
+     "start": 2.736,
+     "end": 3.127
+    },
+    {
+     "id": "w8",
+     "text": "pour",
+     "start": 3.127,
+     "end": 3.518
+    },
+    {
+     "id": "w9",
+     "text": "ton",
+     "start": 3.518,
+     "end": 3.909
+    },
+    {
+     "id": "w10",
+     "text": "IA.",
+     "start": 3.909,
+     "end": 4.3
+    },
+    {
+     "id": "w11",
+     "text": "Commercial,",
+     "start": 4.3,
+     "end": 4.69
+    },
+    {
+     "id": "w12",
+     "text": "community",
+     "start": 4.69,
+     "end": 5.081
+    },
+    {
+     "id": "w13",
+     "text": "manager,",
+     "start": 5.081,
+     "end": 5.472
+    },
+    {
+     "id": "w14",
+     "text": "comptable,",
+     "start": 5.472,
+     "end": 5.863
+    },
+    {
+     "id": "w15",
+     "text": "RH",
+     "start": 5.863,
+     "end": 6.254
+    },
+    {
+     "id": "w16",
+     "text": ":",
+     "start": 6.254,
+     "end": 6.645
+    },
+    {
+     "id": "w17",
+     "text": "plus",
+     "start": 6.645,
+     "end": 7.036
+    },
+    {
+     "id": "w18",
+     "text": "de",
+     "start": 7.036,
+     "end": 7.427
+    },
+    {
+     "id": "w19",
+     "text": "soixante",
+     "start": 7.427,
+     "end": 7.817
+    },
+    {
+     "id": "w20",
+     "text": "métiers,",
+     "start": 7.817,
+     "end": 8.208
+    },
+    {
+     "id": "w21",
+     "text": "prêts",
+     "start": 8.208,
+     "end": 8.599
+    },
+    {
+     "id": "w22",
+     "text": "à",
+     "start": 8.599,
+     "end": 8.99
+    },
+    {
+     "id": "w23",
+     "text": "l'emploi.",
+     "start": 8.99,
+     "end": 9.381
+    }
+   ]
+  },
+  {
+   "frame": 2,
+   "path": "assets/voice/prompt.wav",
+   "duration_s": 5.433,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Une",
+     "start": 0.0,
+     "end": 0.418
+    },
+    {
+     "id": "w1",
+     "text": "commande",
+     "start": 0.418,
+     "end": 0.836
+    },
+    {
+     "id": "w2",
+     "text": ":",
+     "start": 0.836,
+     "end": 1.254
+    },
+    {
+     "id": "w3",
+     "text": "slash,",
+     "start": 1.254,
+     "end": 1.672
+    },
+    {
+     "id": "w4",
+     "text": "plugin,",
+     "start": 1.672,
+     "end": 2.09
+    },
+    {
+     "id": "w5",
+     "text": "install,",
+     "start": 2.09,
+     "end": 2.508
+    },
+    {
+     "id": "w6",
+     "text": "rapido.",
+     "start": 2.508,
+     "end": 2.926
+    },
+    {
+     "id": "w7",
+     "text": "En",
+     "start": 2.926,
+     "end": 3.344
+    },
+    {
+     "id": "w8",
+     "text": "quelques",
+     "start": 3.344,
+     "end": 3.762
+    },
+    {
+     "id": "w9",
+     "text": "secondes,",
+     "start": 3.762,
+     "end": 4.18
+    },
+    {
+     "id": "w10",
+     "text": "tout",
+     "start": 4.18,
+     "end": 4.598
+    },
+    {
+     "id": "w11",
+     "text": "est",
+     "start": 4.598,
+     "end": 5.016
+    },
+    {
+     "id": "w12",
+     "text": "installé.",
+     "start": 5.016,
+     "end": 5.433
+    }
+   ]
+  },
+  {
+   "frame": 3,
+   "path": "assets/voice/cas.wav",
+   "duration_s": 10.217,
+   "words": [
+    {
+     "id": "w0",
+     "text": "Léa",
+     "start": 0.0,
+     "end": 0.393
+    },
+    {
+     "id": "w1",
+     "text": "n'a",
+     "start": 0.393,
+     "end": 0.786
+    },
+    {
+     "id": "w2",
+     "text": "ni",
+     "start": 0.786,
+     "end": 1.179
+    },
+    {
+     "id": "w3",
+     "text": "agence",
+     "start": 1.179,
+     "end": 1.572
+    },
+    {
+     "id": "w4",
+     "text": "ni",
+     "start": 1.572,
+     "end": 1.965
+    },
+    {
+     "id": "w5",
+     "text": "assistant.",
+     "start": 1.965,
+     "end": 2.358
+    },
+    {
+     "id": "w6",
+     "text": "Mais",
+     "start": 2.358,
+     "end": 2.751
+    },
+    {
+     "id": "w7",
+     "text": "son",
+     "start": 2.751,
+     "end": 3.144
+    },
+    {
+     "id": "w8",
+     "text": "IA",
+     "start": 3.144,
+     "end": 3.537
+    },
+    {
+     "id": "w9",
+     "text": "sait",
+     "start": 3.537,
+     "end": 3.93
+    },
+    {
+     "id": "w10",
+     "text": "maintenant",
+     "start": 3.93,
+     "end": 4.322
+    },
+    {
+     "id": "w11",
+     "text": "rédiger",
+     "start": 4.322,
+     "end": 4.715
+    },
+    {
+     "id": "w12",
+     "text": "un",
+     "start": 4.715,
+     "end": 5.108
+    },
+    {
+     "id": "w13",
+     "text": "devis,",
+     "start": 5.108,
+     "end": 5.501
+    },
+    {
+     "id": "w14",
+     "text": "planifier",
+     "start": 5.501,
+     "end": 5.894
+    },
+    {
+     "id": "w15",
+     "text": "un",
+     "start": 5.894,
+     "end": 6.287
+    },
+    {
+     "id": "w16",
+     "text": "post,",
+     "start": 6.287,
+     "end": 6.68
+    },
+    {
+     "id": "w17",
+     "text": "relancer",
+     "start": 6.68,
+     "end": 7.073
+    },
+    {
+     "id": "w18",
+     "text": "une",
+     "start": 7.073,
+     "end": 7.466
+    },
+    {
+     "id": "w19",
+     "text": "facture.",
+     "start": 7.466,
+     "end": 7.859
+    },
+    {
+     "id": "w20",
+     "text": "Soixante",
+     "start": 7.859,
+     "end": 8.252
+    },
+    {
+     "id": "w21",
+     "text": "réflexes",
+     "start": 8.252,
+     "end": 8.645
+    },
+    {
+     "id": "w22",
+     "text": "métier,",
+     "start": 8.645,
+     "end": 9.038
+    },
+    {
+     "id": "w23",
+     "text": "débloqués",
+     "start": 9.038,
+     "end": 9.431
+    },
+    {
+     "id": "w24",
+     "text": "d'un",
+     "start": 9.431,
+     "end": 9.824
+    },
+    {
+     "id": "w25",
+     "text": "coup.",
+     "start": 9.824,
+     "end": 10.217
+    }
+   ]
+  }
+ ],
+ "bgm": null,
+ "sfx": []
+}

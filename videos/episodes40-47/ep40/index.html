@@ -1,0 +1,70 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Épisode 40 : ton concurrent a déjà Caroline</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../kit.css">
+<style>
+body{font-family:'Inter',sans-serif}
+#cap{font-family:'Anton',sans-serif;font-size:78px;text-transform:uppercase;letter-spacing:1px}
+#cap i{background:#1d3fbf;color:#fff;padding:4px 16px;margin:4px 0;border:4px solid #0b1640;box-shadow:0 6px 0 #0b1640}
+#cap i.k{background:#FF8A1F;color:#111}
+#cap i.cur{transform-origin:50% 60%}
+#who span{font-family:'Anton';font-size:30px;letter-spacing:2px;border:3px solid #0b1640}
+.card{background:#fff;border:5px solid #111;border-radius:28px;box-shadow:0 10px 0 #111;padding:20px 26px;font-weight:800;font-size:36px;color:#111;display:flex;gap:18px;align-items:center}
+.card small{display:block;font-size:26px;color:#555;font-weight:600}
+.card .ic{width:76px;height:76px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:44px;flex:none}
+.clock{font-family:'Anton';font-size:150px;color:#FF8A1F;text-shadow:0 0 30px rgba(255,138,31,.8)}
+.top{font-family:'Anton';font-size:40px;color:#fff;text-transform:uppercase;text-align:center;line-height:1.1}
+.top b{display:inline-block;background:#2D7FF9;padding:0 14px}
+.neon{font-family:'Anton';font-size:64px;color:#fff;text-shadow:0 0 18px #2D7FF9,0 0 40px #2D7FF9;letter-spacing:4px}
+.cta{font-family:'Anton';font-size:110px;color:#fff;background:#FF8A1F;border:8px solid #111;box-shadow:0 14px 0 #111;padding:6px 40px;border-radius:24px;color:#111}
+.logo{font-family:'Inter';font-weight:900;font-size:64px;color:#fff;letter-spacing:1px}.logo b{color:#FF8A1F}
+</style></head><body><div id="stage"><div id="scenes"></div><div id="who"><span></span></div><div id="cap"></div></div>
+<script src="cfg.js"></script><script src="../kit.js"></script>
+<script>
+const L=C.lines, t0=i=>L[i].t0, t1=i=>L[i].t1;
+CAP.top=1330; CAP.group=3; CAP.kw=new Set(['CONCURRENT','clients','aide','22','décroche','plan','vraies','attente','rappelle','toi','premier','ÉQUIPE','IA','FoodEatUp']);
+CAP.names={pat:['LE PATRON','#c8283a'],caro:['CAROLINE · IA','#2D7FF9']};
+document.getElementById('who').style.top='1250px';
+// 1. Plan large : la rue, les deux façades
+let s=scene(0,t0(1),{bg:'rue-de-nuit-rue-vide.jpg',kb:[1.05,1.12]});
+s.img('rue-de-nuit-facade-fermee.jpg',{x:290,y:900,w:520,fx:'fade',at:0});
+s.img('rue-de-nuit-facade-concurrent.jpg',{x:800,y:900,w:520,fx:'fade',at:0});
+s.img('commun-caroline-souriante.png',{x:800,y:830,w:300,fx:'fade',at:.2,anim:'float'});
+s.img('commun-patron-inquiet.png',{x:300,y:1140,w:360,fx:'up',at:.2});
+s.txt('<div class="top"><b>PATRON :</b><br>TON CONCURRENT A DÉJÀ L\'IA</div>',{x:540,y:180,w:980,fx:'drop',at:.1});
+// helpers de plans
+function plPatron(a,b,pose,extra){const s=scene(a,b,{bg:'rue-de-nuit-facade-fermee.jpg',kb:[1.15,1.22],pan:[0,-30],tr:'cut'});s.img(pose,{x:560,y:1180,w:640,fx:'none',anim:'talk'});return s}
+function plCaro(a,b,pose){const s=scene(a,b,{bg:'rue-de-nuit-facade-concurrent.jpg',kb:[1.25,1.32],tr:'cut'});s.img(pose||'commun-caroline-parle.png',{x:560,y:1010,w:640,fx:'none',anim:'talk'});s.txt('<div class="neon">OUVERT</div>',{x:860,y:520,fx:'none',anim:'pulse'});return s}
+// 2. Révélation
+plCaro(t0(1),t0(2),'commun-caroline-souriante.png');
+plPatron(t0(2),t0(3),'commun-patron-surpris.png');
+// 3. 22 h
+s=plCaro(t0(3),t0(4));
+s.el('<div class="clock">22:00</div>',{x:540,y:300,fx:'slam',at:M('22')-.1});
+s.el('<div class="card"><div class="ic" style="background:#e8f1ff">📞</div><div>Appel entrant<small>Caroline décroche</small></div></div>',{x:540,y:480,fx:'pop',at:t0(3)+1.6});
+plPatron(t0(4),t0(5),'commun-patron-enerve.png');
+// 4. Réservations
+s=plCaro(t0(5),t0(6));
+s.el('<div class="card"><div class="ic" style="background:#fff1e0">📅</div><div>Réservation · 4 pers.<small>21 h · table 7 · plan de salle</small></div><div style="margin-left:auto;color:#1fb35a">✓</div></div>',{x:540,y:330,w:900,fx:'drop',at:M('Je les pose')+.2});
+s.el('<div class="card" style="font-size:30px"><div class="ic" style="background:#eaf8ef">🟢</div><div>Que des tables vraiment libres</div></div>',{x:540,y:500,w:820,fx:'pop',at:M('Que des')});
+plPatron(t0(6),t0(7),'commun-patron-inquiet.png');
+// 5. Complet
+s=plCaro(t0(7),t0(8));
+s.el('<div class="card"><div class="ic" style="background:#eef1f5">⏳</div><div>Liste d\'attente<small>2 personnes · prévenues par SMS</small></div></div>',{x:540,y:330,w:900,fx:'drop',at:M('Liste')});
+s.el('<div class="card"><div class="ic" style="background:#eaf8ef">✅</div><div>Rappel de confirmation<small>envoyé</small></div></div>',{x:540,y:500,w:820,fx:'pop',at:M('je rappelle')+.2});
+plPatron(t0(8),t0(9),'commun-patron-telephone.png');
+// 6. Retournement : Caroline rejoint le patron
+s=scene(t0(9),t0(10),{bg:'rue-de-nuit-facade-fermee.jpg',kb:[1.1,1.16]});
+s.img('commun-patron-surpris.png',{x:330,y:1180,w:520,fx:'none'});
+s.img('commun-caroline-clin-oeil.png',{x:760,y:880,w:520,fx:'pop',at:t0(9)+.1,anim:'talk'});
+s.txt('<div class="neon" style="color:#fff">CE SOIR</div>',{x:540,y:300,fx:'slam',at:M('Ce soir,')});
+s.el('<div class="card"><div class="ic" style="background:#e8f1ff">📞</div><div>Demain, c\'est toi<small>qu\'on appelle en premier</small></div></div>',{x:540,y:470,w:860,fx:'drop',at:M('Et demain,')+.3});
+// 7. CTA
+s=scene(t0(10),C.dur+1,{bg:'rue-de-nuit-rue-vide.jpg',kb:[1.1,1.2]});
+s.img('commun-caroline-clin-oeil.png',{x:540,y:620,w:640,fx:'pop',at:t0(10),anim:'talk'});
+s.el('<div class="cta">COMMENTE<br>« ÉQUIPE »</div>',{x:540,y:1080,fx:'slam',at:M('Commente')+.3,anim:'pulse',style:'text-align:center;line-height:1'});
+s.txt('<div class="top">Je te présente toute<br>l\'équipe IA de <b>FoodEatUp</b></div>',{x:540,y:1290,w:980,fx:'up',at:M('Commente')+1.4});
+s.txt('<div class="logo">FOOD<b>EAT</b>UP</div>',{x:540,y:1760,fx:'fade',at:M('Commente')+1.6});
+CAP.show=t=>t<t0(10)+.2;
+thumbAt(1.6,'');
+render(0);
+</script></body></html>

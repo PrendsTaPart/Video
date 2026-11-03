@@ -1,0 +1,194 @@
+{
+  "figma": {
+    "fichier": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm",
+    "acces": "MCP Figma, lecture seule (get_metadata, get_screenshot, download_assets) ; aucune modification",
+    "contenu": "page « Guide A4 — Formation caisse » : 206 cadres A4 (794 × 1123), dont 88 pages de BD « La Brigade augmentée » ; autres pages : « Écrans caisse (maquettes) », « Fondations & médiathèque »",
+    "exports": [
+      {
+        "node": "58:364",
+        "nom": "Page 01 · BD · Couverture",
+        "fichier": "bd01-couverture.png",
+        "dimensions": [
+          794,
+          1123
+        ],
+        "lien": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm?node-id=58-364"
+      },
+      {
+        "node": "58:364",
+        "nom": "Couverture ×2",
+        "fichier": "hd-bd01.png",
+        "dimensions": [
+          1588,
+          2246
+        ],
+        "lien": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm?node-id=58-364"
+      },
+      {
+        "node": "58:374",
+        "nom": "Page 05 · BD · Je m'appelle Mickael",
+        "fichier": "bd05-mickael.png",
+        "dimensions": [
+          794,
+          1123
+        ],
+        "lien": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm?node-id=58-374"
+      },
+      {
+        "node": "61:364",
+        "nom": "Page 10 · BD · planche (×2)",
+        "fichier": "hd-bd10.png",
+        "dimensions": [
+          1588,
+          2246
+        ],
+        "lien": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm?node-id=61-364"
+      },
+      {
+        "node": "61:439",
+        "nom": "Page 16 · BD · Le téléphone sonne",
+        "fichier": "bd16-telephone.png",
+        "dimensions": [
+          794,
+          1123
+        ],
+        "lien": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm?node-id=61-439"
+      },
+      {
+        "node": "62:462",
+        "nom": "Page 40 · BD · planche (×2)",
+        "fichier": "hd-bd40.png",
+        "dimensions": [
+          1588,
+          2246
+        ],
+        "lien": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm?node-id=62-462"
+      },
+      {
+        "node": "62:620",
+        "nom": "Page 53 · BD · Bienvenue dans la brigade",
+        "fichier": "bd53-brigade.png",
+        "dimensions": [
+          794,
+          1123
+        ],
+        "lien": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm?node-id=62-620"
+      },
+      {
+        "node": "89:537",
+        "nom": "Page 88 · BD · Fin",
+        "fichier": "bd88-fin.png",
+        "dimensions": [
+          794,
+          1123
+        ],
+        "lien": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm?node-id=89-537"
+      },
+      {
+        "node": "5:2",
+        "nom": "Page 89 · Couverture du guide",
+        "fichier": "doc89-couverture.png",
+        "dimensions": [
+          794,
+          1123
+        ],
+        "lien": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm?node-id=5-2"
+      },
+      {
+        "node": "7:424",
+        "nom": "Page 109 · Ch. 7 · Prendre une commande",
+        "fichier": "doc109-commande.png",
+        "dimensions": [
+          794,
+          1123
+        ],
+        "lien": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm?node-id=7-424"
+      },
+      {
+        "node": "8:389",
+        "nom": "Page 111 · Ch. 8 · Encaisser",
+        "fichier": "doc111-encaisser.png",
+        "dimensions": [
+          794,
+          1123
+        ],
+        "lien": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm?node-id=8-389"
+      },
+      {
+        "node": "33:348",
+        "nom": "Page 194 · Atlas des écrans",
+        "fichier": "doc194-atlas.png",
+        "dimensions": [
+          794,
+          1123
+        ],
+        "lien": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm?node-id=33-348"
+      },
+      {
+        "node": "44:382",
+        "nom": "Page 174 · Claude · Connexion",
+        "fichier": "doc174-claude.png",
+        "dimensions": [
+          794,
+          1123
+        ],
+        "lien": "https://www.figma.com/design/izfLEauBeeBnTcTt9tOAMm?node-id=44-382"
+      }
+    ]
+  },
+  "rapidocms": {
+    "acces": "list_all_files, lecture seule",
+    "utilises": [
+      {
+        "id": 4323,
+        "nom": "foodeatup-sunmi-d3-caisse-double-ecran-officiel",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/foodeatup-sunmi-d3-caisse-double-ecran-officiel"
+      },
+      {
+        "id": 1517,
+        "nom": "tuto-configurer-sa-caisse-pos-thumbnail",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-configurer-sa-caisse-pos-thumbnail"
+      },
+      {
+        "id": 1518,
+        "nom": "tuto-ouvrir-son-fond-de-caisse-thumbnail",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-ouvrir-son-fond-de-caisse-thumbnail"
+      },
+      {
+        "id": 1519,
+        "nom": "tuto-encaisser-une-commande-thumbnail",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-encaisser-une-commande-thumbnail"
+      },
+      {
+        "id": 1522,
+        "nom": "tuto-cloturer-sa-caisse-thumbnail",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-cloturer-sa-caisse-thumbnail"
+      },
+      {
+        "id": 1523,
+        "nom": "tuto-suivre-les-ecarts-de-caisse-thumbnail",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-suivre-les-ecarts-de-caisse-thumbnail"
+      },
+      {
+        "id": 1526,
+        "nom": "tuto-synchroniser-sa-caisse-tierce-thumbnail",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tuto-synchroniser-sa-caisse-tierce-thumbnail"
+      },
+      {
+        "id": 3951,
+        "nom": "FoodEatUp - Le terminal qui ne parle pas à la caisse (vignette).jpg",
+        "url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/FoodEatUp%20-%20Le%20terminal%20qui%20ne%20parle%20pas%20%C3%A0%20la%20caisse%20%28vignette%29.jpg"
+      }
+    ],
+    "ecartes": "images ia_… du 30/09 et « test_import_figma_bd_couverture » : elles appartiennent à la BD d'un client (non nommé), non utilisées"
+  },
+  "photo": "braindcode-profil.jpg (non utilisée à l'image ; personnage : Mickaël dans la BD)",
+  "logos": [
+    "claude.webp",
+    "rapidocms.png",
+    "foodeatup.png",
+    "braindcode.png"
+  ],
+  "musique": "bibliothèque de la série",
+  "voix": "ElevenLabs, voix Noé, eleven_v4, 664 crédits"
+}

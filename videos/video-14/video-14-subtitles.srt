@@ -1,0 +1,100 @@
+1
+00:00:00,600 --> 00:00:02,980
+Pour tester mes MCP et valider mes logiciels,
+
+2
+00:00:02,980 --> 00:00:05,340
+j'ai développé mon propre outil de contrôle qualité.
+
+3
+00:00:05,340 --> 00:00:07,860
+Parce que créer un logiciel avec l'IA, c'est bien…
+
+4
+00:00:07,860 --> 00:00:09,640
+Mais qui vérifie que tout fonctionne ?
+
+5
+00:00:09,640 --> 00:00:11,580
+Dans mon QA Hub, un scénario appelle
+
+6
+00:00:11,580 --> 00:00:13,440
+un outil MCP ou une API,
+
+7
+00:00:13,440 --> 00:00:15,480
+puis compare la réponse au résultat attendu :
+
+8
+00:00:15,480 --> 00:00:17,400
+le code, la valeur, le texte.
+
+9
+00:00:17,400 --> 00:00:19,240
+Chaque exécution garde ses preuves.
+
+10
+00:00:19,240 --> 00:00:21,020
+Quand un test échoue, l'idée, c'est de créer
+
+11
+00:00:21,020 --> 00:00:22,400
+un ticket avec ces preuves,
+
+12
+00:00:22,400 --> 00:00:24,420
+et un prompt de débogage pour Claude Code.
+
+13
+00:00:24,420 --> 00:00:25,900
+Claude corrige sur une branche,
+
+14
+00:00:25,900 --> 00:00:26,820
+les tests repartent,
+
+15
+00:00:26,820 --> 00:00:28,320
+et on vérifie que le bug a disparu.
+
+16
+00:00:28,320 --> 00:00:30,800
+Mon objectif, c'est que cette boucle tourne seule,
+
+17
+00:00:30,800 --> 00:00:32,120
+avec une validation humaine
+
+18
+00:00:32,120 --> 00:00:33,640
+avant chaque mise en production.
+
+19
+00:00:33,640 --> 00:00:34,840
+Et tant que ça ne passe pas…
+
+20
+00:00:34,840 --> 00:00:35,960
+la boucle continue !
+
+21
+00:00:35,960 --> 00:00:37,520
+Avant, je cherchais les bugs.
+
+22
+00:00:37,520 --> 00:00:39,540
+Maintenant, mes agents m'aident à les traquer,
+
+23
+00:00:39,540 --> 00:00:42,040
+à préparer les corrections et à vérifier le résultat.
+
+24
+00:00:42,040 --> 00:00:43,000
+Et demain, je te montre
+
+25
+00:00:43,000 --> 00:00:44,750
+jusqu'où cette boucle peut aller !
+

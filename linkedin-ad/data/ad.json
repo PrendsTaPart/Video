@@ -1,0 +1,64 @@
+{
+  "title": "FoodEatUp — Pub LinkedIn",
+  "fps": 30,
+  "width": 1080,
+  "height": 1080,
+  "durationSeconds": 16.83,
+  "beats": [
+    {
+      "id": "b1",
+      "video": "assets/video/hero-chef-scan-carton.mp4",
+      "vo": "assets/voice/b1.mp3",
+      "caption": "Un service. Zéro ressaisie.",
+      "fromSeconds": 0,
+      "durationSeconds": 2.1
+    },
+    {
+      "id": "b2",
+      "video": "assets/video/hero-kds-mural.mp4",
+      "vo": "assets/voice/b2.mp3",
+      "caption": "Le stock qui se met à jour tout seul.",
+      "fromSeconds": 2.1,
+      "durationSeconds": 2.31
+    },
+    {
+      "id": "b3",
+      "video": "assets/video/hero-serveur-plan-table.mp4",
+      "vo": "assets/voice/b3.mp3",
+      "caption": "La salle qui se remplit sans un appel manqué.",
+      "fromSeconds": 4.41,
+      "durationSeconds": 2.72
+    },
+    {
+      "id": "b4",
+      "video": "assets/video/hero-caisse-ticket-z.mp4",
+      "vo": "assets/voice/b4.mp3",
+      "caption": "La caisse qui se ferme en un geste.",
+      "fromSeconds": 7.13,
+      "durationSeconds": 2.07
+    },
+    {
+      "id": "b5",
+      "video": "assets/video/hero-directeur-bureau-matin.mp4",
+      "vo": "assets/voice/b5.mp3",
+      "caption": "Le chiffre du jour, déjà là.",
+      "fromSeconds": 9.2,
+      "durationSeconds": 1.84
+    }
+  ],
+  "cta": {
+    "id": "cta",
+    "vo": "assets/voice/cta.mp3",
+    "logo": "assets/brand/foodeatup-logo-mascot.png",
+    "line1": "FoodEatUp",
+    "line2": "Le mode d'emploi du restaurant qui se gère tout seul.",
+    "subCta": "Essayez 7 jours gratuitement",
+    "tailHoldSeconds": 2.5,
+    "fromSeconds": 11.04,
+    "durationSeconds": 5.79
+  },
+  "clin": {
+    "file": "assets/sfx/son-clin-passe-take1.mp3",
+    "atSeconds": 11.19
+  }
+}

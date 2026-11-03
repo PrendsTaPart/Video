@@ -1,0 +1,48 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Poppins SemiBold,50,&H00E6F9FC,&H00E6F9FC,&H00231A0F,&H00231A0F,0,0,0,0,100,100,0,0,3,16,0,2,90,90,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:02.14,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, je vais vous montrer
+Dialogue: 0,0:00:02.14,0:00:04.72,Sub,,0,0,0,,{\fad(80,60)}comment j'ai automatisé mes 4 chaînes YouTube.
+Dialogue: 0,0:00:04.72,0:00:07.14,Sub,,0,0,0,,{\fad(80,60)}Et pour ça, j'ai développé mon propre logiciel,
+Dialogue: 0,0:00:07.14,0:00:09.14,Sub,,0,0,0,,{\fad(80,60)}connecté directement à mes agents IA.
+Dialogue: 0,0:00:10.45,0:00:12.69,Sub,,0,0,0,,{\fad(80,60)}Avec plusieurs logiciels et projets à présenter,
+Dialogue: 0,0:00:12.69,0:00:14.27,Sub,,0,0,0,,{\fad(80,60)}je devais gérer différentes chaînes,
+Dialogue: 0,0:00:14.27,0:00:16.29,Sub,,0,0,0,,{\fad(80,60)}préparer les vidéos, écrire les titres,
+Dialogue: 0,0:00:16.29,0:00:18.75,Sub,,0,0,0,,{\fad(80,60)}programmer les publications et suivre les résultats.
+Dialogue: 0,0:00:18.75,0:00:20.66,Sub,,0,0,0,,{\fad(80,60)}J'ai donc décidé de centraliser tout ça.
+Dialogue: 0,0:00:21.80,0:00:24.40,Sub,,0,0,0,,{\fad(80,60)}J'ai construit YouTube Publisher Bot avec Lovable.
+Dialogue: 0,0:00:24.40,0:00:25.78,Sub,,0,0,0,,{\fad(80,60)}Depuis une seule interface,
+Dialogue: 0,0:00:25.78,0:00:28.44,Sub,,0,0,0,,{\fad(80,60)}je peux organiser mes vidéos, gérer leurs informations,
+Dialogue: 0,0:00:28.44,0:00:29.32,Sub,,0,0,0,,{\fad(80,60)}retrouver l'historique
+Dialogue: 0,0:00:29.32,0:00:30.97,Sub,,0,0,0,,{\fad(80,60)}et visualiser mon calendrier de publication.
+Dialogue: 0,0:00:42.08,0:00:43.58,Sub,,0,0,0,,{\fad(80,60)}Mais la vraie différence,
+Dialogue: 0,0:00:43.58,0:00:46.40,Sub,,0,0,0,,{\fad(80,60)}c'est que j'ai connecté ce logiciel à un MCP YouTube.
+Dialogue: 0,0:00:46.40,0:00:48.30,Sub,,0,0,0,,{\fad(80,60)}Mes agents IA peuvent consulter mes chaînes,
+Dialogue: 0,0:00:48.30,0:00:50.24,Sub,,0,0,0,,{\fad(80,60)}récupérer les vidéos, analyser les données
+Dialogue: 0,0:00:50.24,0:00:52.83,Sub,,0,0,0,,{\fad(80,60)}et préparer des actions directement depuis Claude.
+Dialogue: 0,0:00:54.00,0:00:56.11,Sub,,0,0,0,,{\fad(80,60)}Sur FoodEatUp, j'avais déjà des Shorts programmés
+Dialogue: 0,0:00:56.11,0:00:58.07,Sub,,0,0,0,,{\fad(80,60)}sur plusieurs jours lors de mon dernier relevé.
+Dialogue: 0,0:00:58.07,0:01:00.07,Sub,,0,0,0,,{\fad(80,60)}Et mon système dispose aussi d'un autopilote,
+Dialogue: 0,0:01:00.07,0:01:02.17,Sub,,0,0,0,,{\fad(80,60)}capable de proposer des créneaux de publication
+Dialogue: 0,0:01:02.17,0:01:03.71,Sub,,0,0,0,,{\fad(80,60)}à partir de l'historique de la chaîne.
+Dialogue: 0,0:01:19.00,0:01:20.43,Sub,,0,0,0,,{\fad(80,60)}Et une fois les vidéos publiées,
+Dialogue: 0,0:01:20.43,0:01:21.47,Sub,,0,0,0,,{\fad(80,60)}je peux exploiter les données
+Dialogue: 0,0:01:21.47,0:01:22.97,Sub,,0,0,0,,{\fad(80,60)}pour comprendre ce qui fonctionne.
+Dialogue: 0,0:01:22.97,0:01:24.89,Sub,,0,0,0,,{\fad(80,60)}Les vues, les interactions et les performances.
+Dialogue: 0,0:01:24.89,0:01:26.85,Sub,,0,0,0,,{\fad(80,60)}L'objectif, c'est que mes agents m'aident
+Dialogue: 0,0:01:26.85,0:01:28.74,Sub,,0,0,0,,{\fad(80,60)}à améliorer les prochaines publications.
+Dialogue: 0,0:01:36.00,0:01:38.66,Sub,,0,0,0,,{\fad(80,60)}Mon objectif n'est pas seulement d'automatiser YouTube,
+Dialogue: 0,0:01:38.66,0:01:40.16,Sub,,0,0,0,,{\fad(80,60)}c'est de construire une équipe d'agents IA
+Dialogue: 0,0:01:40.16,0:01:42.42,Sub,,0,0,0,,{\fad(80,60)}capables de travailler avec mes propres logiciels
+Dialogue: 0,0:01:42.42,0:01:44.94,Sub,,0,0,0,,{\fad(80,60)}pendant que je me concentre sur les produits et les clients.
+Dialogue: 0,0:01:44.94,0:01:46.14,Sub,,0,0,0,,{\fad(80,60)}Et demain, je vous présenterai
+Dialogue: 0,0:01:46.14,0:01:48.05,Sub,,0,0,0,,{\fad(80,60)}un nouveau projet et mon travail du jour.

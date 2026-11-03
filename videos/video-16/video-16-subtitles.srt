@@ -1,0 +1,100 @@
+1
+00:00:00,600 --> 00:00:02,700
+Aujourd'hui, je vais te montrer comment j'ai automatisé
+
+2
+00:00:02,700 --> 00:00:05,520
+une partie de la formation et du support client de FoodEatUp.
+
+3
+00:00:05,520 --> 00:00:07,880
+Parce que développer un logiciel, c'est une chose…
+
+4
+00:00:07,880 --> 00:00:10,340
+Mais expliquer à chaque client comment l'utiliser,
+
+5
+00:00:10,340 --> 00:00:11,540
+c'en est une autre !
+
+6
+00:00:11,540 --> 00:00:14,120
+Alors, j'ai créé FoodEatUp Academy :
+
+7
+00:00:14,120 --> 00:00:17,320
+173 tutoriels vidéo en ligne, sur 230 prévus.
+
+8
+00:00:17,320 --> 00:00:19,180
+Et surtout, j'ai connecté toute cette documentation
+
+9
+00:00:19,180 --> 00:00:22,060
+à Claude et ChatGPT grâce à mon MCP.
+
+10
+00:00:22,060 --> 00:00:24,700
+Maintenant, un restaurateur peut simplement demander :
+
+11
+00:00:24,700 --> 00:00:26,100
+« Comment je fais un relevé de température ? »
+
+12
+00:00:28,620 --> 00:00:30,400
+L'IA retrouve le bon tutoriel,
+
+13
+00:00:30,400 --> 00:00:31,240
+lui donne la vidéo,
+
+14
+00:00:31,240 --> 00:00:33,360
+en carte ou en lien selon l'application,
+
+15
+00:00:33,360 --> 00:00:34,520
+lui explique les étapes,
+
+16
+00:00:34,520 --> 00:00:36,240
+et peut même lui proposer un quiz !
+
+17
+00:00:36,240 --> 00:00:37,940
+Elle peut aussi créer un parcours de formation
+
+18
+00:00:37,940 --> 00:00:39,340
+adapté à son métier.
+
+19
+00:00:39,340 --> 00:00:40,980
+Et ce MCP ne fait qu'enseigner :
+
+20
+00:00:40,980 --> 00:00:42,880
+il ne touche jamais aux données du restaurant.
+
+21
+00:00:42,880 --> 00:00:45,140
+Avant, mes clients devaient chercher dans les tutoriels.
+
+22
+00:00:45,140 --> 00:00:47,400
+Maintenant, c'est l'IA qui trouve le bon tutoriel
+
+23
+00:00:47,400 --> 00:00:49,360
+et leur apprend à utiliser le logiciel.
+
+24
+00:00:49,360 --> 00:00:50,500
+Et ce n'est que le début
+
+25
+00:00:50,500 --> 00:00:51,990
+de mon service client automatisé !
+

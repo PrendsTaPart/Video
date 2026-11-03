@@ -1,0 +1,49 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Poppins SemiBold,50,&H00E6F9FC,&H00E6F9FC,&H00231A0F,&H00231A0F,0,0,0,0,100,100,0,0,3,16,0,2,90,90,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.50,0:00:03.22,Sub,,0,0,0,,{\fad(80,60)}Salut, moi c'est Michael.
+Dialogue: 0,0:00:03.22,0:00:05.18,Sub,,0,0,0,,{\fad(80,60)}Je suis entrepreneur, fondateur de BraindCode,
+Dialogue: 0,0:00:05.18,0:00:07.50,Sub,,0,0,0,,{\fad(80,60)}et depuis plusieurs années, je construis des solutions
+Dialogue: 0,0:00:07.50,0:00:09.58,Sub,,0,0,0,,{\fad(80,60)}pour aider les entreprises à travailler autrement
+Dialogue: 0,0:00:09.58,0:00:11.03,Sub,,0,0,0,,{\fad(80,60)}grâce à la technologie.
+Dialogue: 0,0:00:12.60,0:00:14.24,Sub,,0,0,0,,{\fad(80,60)}À la base, j'ai passé près de vingt ans
+Dialogue: 0,0:00:14.24,0:00:16.16,Sub,,0,0,0,,{\fad(80,60)}dans la restauration, comme chef cuisinier.
+Dialogue: 0,0:00:16.16,0:00:18.20,Sub,,0,0,0,,{\fad(80,60)}J'ai appris à gérer les équipes, les stocks,
+Dialogue: 0,0:00:18.20,0:00:20.62,Sub,,0,0,0,,{\fad(80,60)}les fournisseurs, les clients et les imprévus.
+Dialogue: 0,0:00:20.62,0:00:22.22,Sub,,0,0,0,,{\fad(80,60)}Et j'ai découvert à quel point les entreprises
+Dialogue: 0,0:00:22.22,0:00:23.82,Sub,,0,0,0,,{\fad(80,60)}avaient besoin de meilleurs outils.
+Dialogue: 0,0:00:25.40,0:00:27.21,Sub,,0,0,0,,{\fad(80,60)}C'est cette expérience du terrain qui m'a donné envie
+Dialogue: 0,0:00:27.21,0:00:28.83,Sub,,0,0,0,,{\fad(80,60)}de créer des solutions concrètes.
+Dialogue: 0,0:00:28.83,0:00:31.51,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, avec BraindCode, on développe des logiciels,
+Dialogue: 0,0:00:31.51,0:00:33.07,Sub,,0,0,0,,{\fad(80,60)}des applications et des agents IA
+Dialogue: 0,0:00:33.07,0:00:35.53,Sub,,0,0,0,,{\fad(80,60)}capables d'accompagner les entreprises dans leur quotidien.
+Dialogue: 0,0:00:37.23,0:00:38.47,Sub,,0,0,0,,{\fad(80,60)}Au fil du temps, j'ai construit
+Dialogue: 0,0:00:38.47,0:00:40.39,Sub,,0,0,0,,{\fad(80,60)}un écosystème de solutions connectées.
+Dialogue: 0,0:00:40.39,0:00:42.05,Sub,,0,0,0,,{\fad(80,60)}FoodEatUp pour les restaurateurs.
+Dialogue: 0,0:00:42.05,0:00:44.39,Sub,,0,0,0,,{\fad(80,60)}RapidoSoftware pour la gestion des entreprises.
+Dialogue: 0,0:00:44.39,0:00:46.69,Sub,,0,0,0,,{\fad(80,60)}StartupForge pour accompagner les entrepreneurs.
+Dialogue: 0,0:00:46.69,0:00:48.13,Sub,,0,0,0,,{\fad(80,60)}Et des outils qui permettent de connecter
+Dialogue: 0,0:00:48.13,0:00:50.10,Sub,,0,0,0,,{\fad(80,60)}les agents IA à tous ces logiciels.
+Dialogue: 0,0:01:02.80,0:01:04.30,Sub,,0,0,0,,{\fad(80,60)}Aujourd'hui, je ne veux plus seulement créer
+Dialogue: 0,0:01:04.30,0:01:06.14,Sub,,0,0,0,,{\fad(80,60)}des logiciels que les humains utilisent.
+Dialogue: 0,0:01:06.14,0:01:07.98,Sub,,0,0,0,,{\fad(80,60)}Je veux aussi construire des équipes d'agents IA
+Dialogue: 0,0:01:07.98,0:01:09.90,Sub,,0,0,0,,{\fad(80,60)}capables d'utiliser ces logiciels,
+Dialogue: 0,0:01:09.90,0:01:11.26,Sub,,0,0,0,,{\fad(80,60)}d'apprendre des procédures métier
+Dialogue: 0,0:01:11.26,0:01:13.40,Sub,,0,0,0,,{\fad(80,60)}et de nous aider à atteindre nos objectifs.
+Dialogue: 0,0:01:15.00,0:01:17.03,Sub,,0,0,0,,{\fad(80,60)}Et j'ai décidé de partager cette aventure avec vous.
+Dialogue: 0,0:01:17.03,0:01:19.41,Sub,,0,0,0,,{\fad(80,60)}Pas seulement les réussites, mais aussi les idées,
+Dialogue: 0,0:01:19.41,0:01:21.61,Sub,,0,0,0,,{\fad(80,60)}les tests, les développements, les difficultés,
+Dialogue: 0,0:01:21.61,0:01:23.34,Sub,,0,0,0,,{\fad(80,60)}et tout ce qu'on construit au quotidien.
+Dialogue: 0,0:01:34.00,0:01:36.18,Sub,,0,0,0,,{\fad(80,60)}À partir d'aujourd'hui, je vais vous présenter chaque jour
+Dialogue: 0,0:01:36.18,0:01:38.14,Sub,,0,0,0,,{\fad(80,60)}mon histoire et mon travail du jour.
+Dialogue: 0,0:01:38.14,0:01:39.60,Sub,,0,0,0,,{\fad(80,60)}Bienvenue dans mon quotidien.
+Dialogue: 0,0:01:39.60,0:01:41.57,Sub,,0,0,0,,{\fad(80,60)}Bienvenue dans l'univers BraindCode.

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E2 F2 — Le prompt (portrait)</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; }
+        @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-Variable.woff2") format("woff2-variations"); font-weight: 100 900; }
+
+        #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Poppins", "Inter", sans-serif; color: #eaf2ff; isolation: isolate; }
+        .bg { position: absolute; inset: 0; background: radial-gradient(ellipse 75% 55% at 50% 42%, #1b2440 0%, #121a30 60%, #0d1424 100%); }
+
+        .eyebrow { position: absolute; left: 0; right: 0; top: 300px; text-align: center; z-index: 4; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 36px; letter-spacing: 0.1em; text-transform: uppercase; color: #9aa6ff; opacity: 0; margin: 0; will-change: transform, opacity; }
+
+        .term { position: absolute; left: 90px; top: 420px; width: 900px; box-sizing: border-box; background: #0c1526; border: 1.5px solid rgba(154,166,255,0.25); border-radius: 26px; overflow: hidden; z-index: 3; opacity: 0; box-shadow: 0 30px 80px rgba(0,0,0,0.4); will-change: transform, opacity; }
+        .term .bar { display: flex; align-items: center; gap: 12px; height: 72px; padding: 0 28px; background: rgba(255,255,255,0.04); border-bottom: 1.5px solid rgba(255,255,255,0.06); }
+        .term .bar i { width: 16px; height: 16px; border-radius: 50%; }
+        .term .bar i:nth-child(1){ background:#ff5f57; } .term .bar i:nth-child(2){ background:#febc2e; } .term .bar i:nth-child(3){ background:#28c840; }
+        .term .bar b { margin-left: 10px; font-family: "Inter", sans-serif; font-weight: 600; font-size: 26px; color: #7f8db5; }
+        .term .body { padding: 40px 40px 46px; min-height: 260px; }
+        .term .line { font-family: "Courier New", monospace; font-weight: 700; font-size: 44px; line-height: 1.35; color: #eaf2ff; }
+        .term .line .pf { color: #5a67f2; margin-right: 16px; }
+        .term .cmd { color: #7ee0a0; }
+        .caret { display: inline-block; width: 20px; height: 44px; background: #9aa6ff; vertical-align: -8px; margin-left: 6px; }
+        .run { margin-top: 30px; display: flex; align-items: center; gap: 16px; font-family: "Inter", sans-serif; font-weight: 600; font-size: 34px; color: #7ee0a0; opacity: 0; will-change: opacity; }
+        .run .sp { width: 30px; height: 30px; border-radius: 50%; border: 4px solid rgba(126,224,160,0.3); border-top-color: #7ee0a0; }
+
+        .hint { position: absolute; left: 0; right: 0; top: 1180px; text-align: center; z-index: 4; font-family: "Poppins", sans-serif; font-weight: 700; font-size: 44px; color: #eaf2ff; opacity: 0; will-change: transform, opacity; }
+        .hint .a { color: #9aa6ff; }
+      </style>
+
+      <div id="root" data-composition-id="02-prompt" data-width="1080" data-height="1920" data-duration="4.772">
+        <div id="bg-clip" class="clip bg" data-start="0" data-duration="4.272" data-track-index="0"></div>
+        <div id="scene" class="clip" data-start="0" data-duration="4.272" data-track-index="1" style="position:absolute; inset:0;">
+          <p class="eyebrow" id="eyebrow">Tu dis</p>
+          <div class="term" id="term">
+            <div class="bar"><i></i><i></i><i></i><b>Claude</b></div>
+            <div class="body">
+              <div class="line"><span class="pf">›</span><span class="cmd" id="cmd"></span><span class="caret" id="caret"></span></div>
+              <div class="run" id="run"><span class="sp"></span>agent commercial · réveil…</div>
+            </div>
+          </div>
+          <div class="hint" id="hint">L'agent commercial<br /><span class="a">se réveille.</span></div>
+        </div>
+      </div>
+
+      <script src="assets/vendor/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+        var full = "Qui peut relancer un client ?";
+        tl.fromTo("#eyebrow", { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" }, 0.1);
+        tl.fromTo("#term", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 0.4);
+        var typ = { n: 0 };
+        tl.to(typ, { n: full.length, duration: 1.5, ease: "none", onUpdate: function () {
+          var e = document.querySelector("#cmd"); if (e) e.textContent = full.slice(0, Math.round(typ.n));
+        } }, 1.0);
+        tl.to("#caret", { opacity: 0, duration: 0.28, yoyo: true, repeat: 6, ease: "steps(1)" }, 1.0);
+        tl.to("#caret", { opacity: 0, duration: 0.2, overwrite: "auto" }, 2.7);
+        tl.fromTo("#run", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 2.9);
+        tl.to("#run .sp", { rotation: 360, duration: 1.0, repeat: 2, ease: "none", transformOrigin: "50% 50%" }, 3.5);
+        tl.fromTo("#hint", { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 3.2);
+        window.__timelines["02-prompt"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

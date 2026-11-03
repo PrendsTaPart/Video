@@ -1,0 +1,17 @@
+Aujourd'hui, je ne vais pas vous parler d'un logiciel que j'ai développé. Je veux mettre en avant quelqu'un de mon équipe : Sadok. Et franchement, je suis fier de son travail.
+
+Sadok nous a rejoints chez BraindCode pour son stage de fin d'études à ESPRIT. Tout son stage s'est fait à distance. Sa mission : faire évoluer RapidoCRM, notre logiciel de gestion des clients, et y mettre de l'intelligence artificielle.
+
+Le défi, ce n'était pas d'ajouter un simple chatbot. Il fallait qu'une IA comprenne ce qu'on lui demande, qu'elle puisse agir dans le logiciel… sans jamais voir les données d'une autre entreprise.
+
+Alors il a construit une porte d'entrée, qu'on appelle un MCP. Grâce à elle, Claude peut ouvrir une fiche, retrouver un contact ou suivre une affaire, simplement quand on lui parle.
+
+Et il ne s'est pas arrêté là. Un assistant directement dans le logiciel. Une bibliothèque de prompts prêts à l'emploi. Des automatisations. Et même un agent vocal, qui appelle les prospects et répond au téléphone.
+
+Ce qui me rend le plus fier, ce n'est pas seulement le résultat. C'est de l'avoir vu progresser, apprendre à travailler avec l'IA, résoudre des problèmes, et prendre confiance sur un projet aussi ambitieux.
+
+Et derrière ce projet, il y a toute une équipe, qui teste, qui corrige et qui s'entraide pour faire avancer nos logiciels.
+
+Alors Sadok, bravo pour ton travail et pour ton évolution. Continue à apprendre, à expérimenter et à repousser tes limites. Toute l'équipe est fière de toi !
+
+Une entreprise ne grandit pas seulement grâce à ses logiciels. Elle grandit grâce aux personnes qui les construisent, chaque jour.

@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: #EDEEF0;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="111.253"
+      data-width="1920"
+      data-height="1080"
+    >
+      <!-- opening title card: "Une journée SANS FoodEatUp" — reused verbatim from the pilot
+           (journee-directeur-avant-sans), same marine charter break bookend as the closing card -->
+      <div
+        id="el-00-titre"
+        class="scene"
+        data-composition-id="00-titre"
+        data-composition-src="compositions/frames/00-titre.html"
+        data-start="0"
+        data-duration="3.5"
+        data-track-index="0"
+      ></div>
+
+      <!-- context frame: reused verbatim from the pilot, same audio -->
+      <div
+        id="el-00b-contexte"
+        class="scene"
+        data-composition-id="00b-contexte"
+        data-composition-src="compositions/frames/00b-contexte.html"
+        data-start="3.5"
+        data-duration="22.782"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-00b-contexte-voice"
+        src="assets/audio/vo-00b.mp3"
+        data-start="3.5"
+        data-duration="22.282"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- ============== BODY — "Cuisine, avant le service" (this film's own 8 frames) ============== -->
+
+      <div
+        id="el-01-sept-heures-cuisine"
+        class="scene"
+        data-composition-id="01-sept-heures-cuisine"
+        data-composition-src="compositions/frames/01-sept-heures-cuisine.html"
+        data-start="26.282"
+        data-duration="7.993"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-01-voice"
+        src="assets/audio/vo-01.mp3"
+        data-start="26.282"
+        data-duration="7.493"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-02-temperatures-tableau"
+        class="scene"
+        data-composition-id="02-temperatures-tableau"
+        data-composition-src="compositions/frames/02-temperatures-tableau.html"
+        data-start="33.775"
+        data-duration="11.990"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-02-voice"
+        src="assets/audio/vo-02.mp3"
+        data-start="33.775"
+        data-duration="11.490"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- refrain aparté — hard-cut in, hard-cut out, breaks the montage for a beat -->
+      <div
+        id="el-03-refrain"
+        class="scene"
+        data-composition-id="03-refrain"
+        data-composition-src="compositions/frames/03-refrain.html"
+        data-start="45.265"
+        data-duration="7.497"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-03-voice"
+        src="assets/audio/vo-03.mp3"
+        data-start="45.265"
+        data-duration="6.997"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-04-livraison-dlc"
+        class="scene"
+        data-composition-id="04-livraison-dlc"
+        data-composition-src="compositions/frames/04-livraison-dlc.html"
+        data-start="52.262"
+        data-duration="10.501"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-04-voice"
+        src="assets/audio/vo-04.mp3"
+        data-start="52.262"
+        data-duration="10.001"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-05-facture-beurre"
+        class="scene"
+        data-composition-id="05-facture-beurre"
+        data-composition-src="compositions/frames/05-facture-beurre.html"
+        data-start="62.263"
+        data-duration="11.494"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-05-voice"
+        src="assets/audio/vo-05.mp3"
+        data-start="62.263"
+        data-duration="10.994"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-06-fiches-techniques"
+        class="scene"
+        data-composition-id="06-fiches-techniques"
+        data-composition-src="compositions/frames/06-fiches-techniques.html"
+        data-start="73.257"
+        data-duration="10.005"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-06-voice"
+        src="assets/audio/vo-06.mp3"
+        data-start="73.257"
+        data-duration="9.505"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-07-etiquettes-allergenes"
+        class="scene"
+        data-composition-id="07-etiquettes-allergenes"
+        data-composition-src="compositions/frames/07-etiquettes-allergenes.html"
+        data-start="82.762"
+        data-duration="10.501"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-07-voice"
+        src="assets/audio/vo-07.mp3"
+        data-start="82.762"
+        data-duration="10.001"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <div
+        id="el-08-onze-heures-trente"
+        class="scene"
+        data-composition-id="08-onze-heures-trente"
+        data-composition-src="compositions/frames/08-onze-heures-trente.html"
+        data-start="92.763"
+        data-duration="8.490"
+        data-track-index="1"
+      ></div>
+      <audio
+        id="el-08-voice"
+        src="assets/audio/vo-08.mp3"
+        data-start="92.763"
+        data-duration="8.490"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- ============== END BODY — reused closing cards resume below ============== -->
+
+      <div
+        id="el-09-carte-marque"
+        class="scene"
+        data-composition-id="09-carte-marque"
+        data-composition-src="compositions/frames/09-carte-marque.html"
+        data-start="101.253"
+        data-duration="5.6"
+        data-track-index="0"
+      ></div>
+      <audio
+        id="el-09-carte-marque-voice"
+        src="assets/audio/vo-09.mp3"
+        data-start="101.553"
+        data-duration="4.180"
+        data-track-index="10"
+        data-volume="1"
+      ></audio>
+
+      <!-- CTA end card: reused verbatim from the pilot, no cut from the brand card -->
+      <div
+        id="el-10-cta-decouvrir"
+        class="scene"
+        data-composition-id="10-cta-decouvrir"
+        data-composition-src="compositions/frames/10-cta-decouvrir.html"
+        data-start="106.853"
+        data-duration="4.4"
+        data-track-index="1"
+      ></div>
+
+      <!-- permanent discreet FoodEatUp watermark, "sans" body only (reused verbatim) -->
+      <div
+        id="el-watermark"
+        class="scene"
+        data-composition-id="watermark"
+        data-composition-src="compositions/watermark.html"
+        data-start="26.282"
+        data-duration="74.971"
+        data-track-index="3"
+      ></div>
+
+      <!-- no captions track: body frames carry their own large on-screen text (spoken lines are
+           short and already rendered as headlines/labels in each composition), same approach as
+           the pilot's 00b-contexte frame — see BRIEF.md "Captions" for the documented rationale -->
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+      // ── frame transitions (hand-authored, mirroring the pilot's grammar: crossfade for topic
+      //    pivots, push-slide-left for same-montage continuations, hard cut for punchlines and
+      //    the refrain aparté) ──
+      (function () { var tl = window.__timelines["main"];
+
+        // 00-titre -> 00b-contexte: crossfade (reused pair, identical to the pilot)
+        tl.to("#el-00-titre", { opacity: 0, duration: 0.6, ease: "power2.inOut" }, 3.5);
+        tl.fromTo("#el-00b-contexte", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.inOut" }, 3.5);
+
+        // 00b-contexte -> 01: crossfade into the body
+        tl.to("#el-00b-contexte", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 26.282);
+        tl.fromTo("#el-01-sept-heures-cuisine", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 26.282);
+
+        // 01 -> 02: push-slide left (same morning montage continues)
+        tl.to("#el-01-sept-heures-cuisine", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 33.775);
+        tl.fromTo("#el-02-temperatures-tableau", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 33.775);
+
+        // 02 -> 03 (refrain): hard cut — the aparté breaks the montage's rhythm on purpose
+        // 03 -> 04: hard cut back out of the aparté, straight into the flow
+
+        // 04 -> 05: push-slide left
+        tl.to("#el-04-livraison-dlc", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 62.263);
+        tl.fromTo("#el-05-facture-beurre", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 62.263);
+
+        // 05 -> 06: push-slide left
+        tl.to("#el-05-facture-beurre", { x: -1920, duration: 0.5, ease: "power3.inOut" }, 73.257);
+        tl.fromTo("#el-06-fiches-techniques", { x: 1920, opacity: 1 }, { x: 0, duration: 0.5, ease: "power3.inOut" }, 73.257);
+
+        // 06 -> 07: crossfade
+        tl.to("#el-06-fiches-techniques", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 82.762);
+        tl.fromTo("#el-07-etiquettes-allergenes", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 82.762);
+
+        // 07 -> 08: crossfade into the closing beat
+        tl.to("#el-07-etiquettes-allergenes", { opacity: 0, duration: 0.5, ease: "power2.inOut" }, 92.763);
+        tl.fromTo("#el-08-onze-heures-trente", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 92.763);
+
+        // 08 -> 09 (carte-marque): hard cut — the callback impact, same move the pilot uses
+        // 09 -> 10 (cta): no cut — same marine ground, one continuous ending (reused pair)
+
+        tl.to({}, { duration: 111.253 }, 0); // full-span anchor — main.duration() == composition total
+      })();
+    </script>
+  </body>
+</html>

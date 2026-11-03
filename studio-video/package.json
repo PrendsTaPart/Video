@@ -1,0 +1,14 @@
+{
+  "name": "studio-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx hyperframes preview",
+    "check": "npx hyperframes lint && npx hyperframes validate && npx hyperframes inspect",
+    "render": "npx hyperframes render",
+    "publish": "npx hyperframes publish"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
+  }
+}

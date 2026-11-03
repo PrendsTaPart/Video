@@ -1,0 +1,120 @@
+{
+"mode": "dial",
+"tail": 3.0,
+"lines": [
+[
+"ser",
+"ser",
+0.0,
+2.2,
+"Vous voulez la carte de fidélité, madame Josette ?",
+0.4
+],
+[
+"jos",
+"jos",
+0.0,
+4.0,
+"Ah non non, ma petite. Moi, les applications, je sais pas faire.",
+0.3
+],
+[
+"ser",
+"ser",
+2.28,
+4.45,
+"Y'a pas d'appli. Vous scannez juste ça.",
+0.3
+],
+[
+"jos",
+"jos",
+3.88,
+4.74,
+"Et après ?",
+0.3
+],
+[
+"ser",
+"ser",
+4.76,
+6.55,
+"Votre numéro de téléphone. C'est tout.",
+0.3
+],
+[
+"jos",
+"jos",
+4.74,
+5.75,
+"C'est tout ?",
+0.3
+],
+[
+"ser",
+"ser",
+6.82,
+9.5,
+"C'est tout. Et votre carte est dans votre téléphone.",
+0.3
+],
+[
+"jos",
+"jos",
+5.62,
+6.85,
+"Et mes points ?",
+0.3
+],
+[
+"ser",
+"ser",
+9.72,
+12.1,
+"Vos points sont dessus. Et votre récompense aussi.",
+0.3
+],
+[
+"jos",
+"jos",
+7.18,
+8.2,
+"Ben dites donc !",
+0.15
+],
+[
+"jos",
+"jos",
+8.25,
+9.6,
+"Faudra que je le dise à Simone.",
+0.3
+],
+[
+"cla",
+"cla",
+0.0,
+3.5,
+"Fidélise tes clients. Sans application, et sans carte en plastique.",
+0.6
+],
+[
+"cla",
+"cla",
+3.46,
+5.95,
+"Tu veux la même chez toi ? Commente FIDÉLITÉ.",
+0.3
+]
+],
+"marks": [
+"Moi, les",
+"Vous scannez",
+"Et votre carte",
+"Et votre récompense",
+"Votre numéro",
+"Vos points",
+"Simone.",
+"Commente FIDÉLITÉ."
+]
+}

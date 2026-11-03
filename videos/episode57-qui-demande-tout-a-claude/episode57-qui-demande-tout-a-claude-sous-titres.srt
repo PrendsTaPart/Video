@@ -1,0 +1,143 @@
+1
+00:00:00,400 --> 00:00:01,280
+Claude.
+
+2
+00:00:01,280 --> 00:00:02,790
+Fais la réunion à ma place.
+
+3
+00:00:02,790 --> 00:00:04,180
+Pose-leur les questions,
+
+4
+00:00:04,180 --> 00:00:05,000
+je réponds.
+
+5
+00:00:05,000 --> 00:00:05,800
+D'accord.
+
+6
+00:00:05,800 --> 00:00:06,400
+Inès,
+
+7
+00:00:06,400 --> 00:00:07,900
+la commande de saumon pour samedi,
+
+8
+00:00:07,900 --> 00:00:08,880
+on en est où ?
+
+9
+00:00:08,880 --> 00:00:09,860
+Claude.
+
+10
+00:00:09,860 --> 00:00:11,760
+Mon patron veut la commande de saumon.
+
+11
+00:00:11,760 --> 00:00:13,030
+Réponds à ma place.
+
+12
+00:00:13,030 --> 00:00:13,870
+Huit kilos commandés.
+
+13
+00:00:13,870 --> 00:00:15,490
+Quatre de plus que prévu.
+
+14
+00:00:15,490 --> 00:00:16,610
+Quatre de plus ?
+
+15
+00:00:16,610 --> 00:00:17,710
+Pourquoi ?
+
+16
+00:00:17,710 --> 00:00:18,310
+Euh…
+
+17
+00:00:18,310 --> 00:00:19,030
+demande à Tom.
+
+18
+00:00:19,030 --> 00:00:19,720
+Claude.
+
+19
+00:00:19,720 --> 00:00:22,180
+C'est quoi l'histoire du saumon ?
+
+20
+00:00:22,180 --> 00:00:23,540
+Je demande au Claude de Léa.
+
+21
+00:00:23,540 --> 00:00:24,240
+C'est pas le saumon.
+
+22
+00:00:24,240 --> 00:00:25,030
+C'est la commande.
+
+23
+00:00:25,030 --> 00:00:26,370
+Passée deux fois.
+
+24
+00:00:26,370 --> 00:00:28,170
+Pourquoi tout le monde me regarde ?
+
+25
+00:00:28,170 --> 00:00:29,150
+Tom l'a commandée.
+
+26
+00:00:29,150 --> 00:00:30,180
+Et Léa aussi.
+
+27
+00:00:30,180 --> 00:00:30,840
+Oups.
+
+28
+00:00:30,840 --> 00:00:32,630
+J'annule la deuxième.
+
+29
+00:00:32,630 --> 00:00:33,490
+Bon.
+
+30
+00:00:33,490 --> 00:00:35,750
+Qui ici demande tout à Claude ?
+
+31
+00:00:35,750 --> 00:00:37,290
+Quatre assistants qui ne se parlent pas,
+
+32
+00:00:37,290 --> 00:00:38,310
+ça fait deux commandes.
+
+33
+00:00:38,310 --> 00:00:39,830
+Branchés sur le même logiciel,
+
+34
+00:00:39,830 --> 00:00:41,410
+ils lisent la même commande.
+
+35
+00:00:41,410 --> 00:00:42,870
+Ton équipe aussi parle à Claude ?
+
+36
+00:00:42,870 --> 00:00:43,950
+Commente LOGICIEL.

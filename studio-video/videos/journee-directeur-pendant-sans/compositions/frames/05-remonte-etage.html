@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+        @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+        #root {
+          position: relative;
+          width: 1920px;
+          height: 1080px;
+          overflow: hidden;
+          font-family: "Inter", sans-serif;
+          color: #3A3F45;
+        }
+        .f5-bg { position: absolute; inset: 0; background: #EDEEF0; }
+
+        .f5-brokenline { position: absolute; left: 200px; right: 200px; top: 210px; height: 2px; }
+        .f5-brokenline span { position: absolute; top: 0; height: 2px; background: #8A9099; opacity: 0.5; transform-origin: 0% 50%; }
+
+        .f5-lines { position: absolute; left: 0; right: 0; top: 280px; text-align: center; }
+        .f5-line { font-size: 46px; font-weight: 500; color: rgba(58,63,69,0.85); margin-bottom: 14px; opacity: 0; }
+        .f5-line.emph { font-weight: 700; color: #3A3F45; }
+        .f5-line.emph .accent { color: #D64545; }
+
+        .f5-diagram { position: absolute; left: 0; right: 0; top: 610px; text-align: center; opacity: 0; }
+        .f5-floors { position: relative; display: inline-block; width: 720px; }
+        .f5-floor {
+          border: 1px solid #8A9099; background: rgba(58,63,69,0.045);
+          padding: 22px 0; margin-bottom: 18px; position: relative;
+        }
+        .f5-floor .flabel { font-size: 22px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: rgba(58,63,69,0.85); }
+        .f5-floor.salle { border-style: dashed; height: 180px; padding-top: 18px; }
+        .f5-floor.salle .flabel { position: absolute; left: 24px; top: 18px; }
+        .f5-dot {
+          position: absolute; left: 50%; margin-left: -9px; top: -46px;
+          width: 18px; height: 18px; border-radius: 50%; background: #3A3F45; opacity: 0;
+        }
+        .f5-qmark {
+          position: absolute; left: 50%; top: 50%; margin-left: -30px; margin-top: -36px;
+          width: 60px; height: 60px; border: 2px solid #D64545; border-radius: 50%;
+          display: flex; align-items: center; justify-content: center;
+          font-size: 38px; font-weight: 800; color: #D64545; opacity: 0.85;
+        }
+        .f5-ticks { position: absolute; left: 50%; margin-left: -140px; bottom: 14px; width: 280px; display: flex; justify-content: space-between; }
+        .f5-tick { width: 8px; height: 8px; border-radius: 50%; background: #8A9099; opacity: 0; }
+      </style>
+
+      <div id="root" data-composition-id="05-remonte-etage" data-width="1920" data-height="1080" data-duration="6.822">
+        <div class="f5-bg clip" id="f5-bgclip" data-start="0" data-duration="6.822" data-track-index="0"></div>
+
+        <div class="f5-brokenline" id="f5-brokenline">
+          <span style="left:4%; width:16%;"></span>
+          <span style="left:26%; width:20%; top:-3px;"></span>
+          <span style="left:52%; width:14%; top:2px;"></span>
+          <span style="left:72%; width:22%;"></span>
+        </div>
+
+        <div class="f5-lines" id="f5-lines">
+          <div class="f5-line" id="f5-l1">Je remonte à l'étage.</div>
+          <div class="f5-line" id="f5-l2">Le service continue sans moi —</div>
+          <div class="f5-line emph" id="f5-l3">sans que je le sache <span class="accent">vraiment</span>.</div>
+        </div>
+
+        <div class="f5-diagram" id="f5-diagram">
+          <div class="f5-floors">
+            <div class="f5-floor bureau">
+              <span class="flabel">bureau</span>
+              <div class="f5-dot" id="f5-dot"></div>
+            </div>
+            <div class="f5-floor salle">
+              <span class="flabel">salle</span>
+              <div class="f5-qmark" id="f5-qmark">?</div>
+              <div class="f5-ticks" id="f5-ticks">
+                <div class="f5-tick"></div><div class="f5-tick"></div><div class="f5-tick"></div>
+                <div class="f5-tick"></div><div class="f5-tick"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        gsap.set("#f5-brokenline span", { opacity: 0, scaleX: 0 });
+        gsap.set(["#f5-l1", "#f5-l2", "#f5-l3"], { opacity: 0, y: 12 });
+        gsap.set("#f5-diagram", { opacity: 0, y: 14 });
+        gsap.set("#f5-dot", { opacity: 0, scale: 0 });
+        gsap.set(".f5-tick", { opacity: 0 });
+
+        // Scene 0 (0.0-0.6s): broken line draws on.
+        tl.to("#f5-brokenline span", { opacity: 0.5, duration: 0.01 }, 0.1);
+        tl.to("#f5-brokenline span", { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.08 }, 0.1);
+
+        // Scene 1 (0.0-1.33s, cue "Je remonte à l'étage."): line 1
+        tl.to("#f5-l1", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.25);
+
+        // Scene 2 (1.33-3.09s, cue "Le service continue sans moi —"): line 2
+        tl.to("#f5-l2", { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.4);
+
+        // Scene 3 (3.09-4.41s, cue "et surtout, sans que je le sache vraiment."): line 3, the
+        // closing weight of the whole film's body.
+        tl.to("#f5-l3", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 3.2);
+
+        // Scene 4 (4.6-6.3s): the two-floor diagram returns — the dot has climbed back to the
+        // bureau, but the "?" in the salle never left. Small ticks pulse below it: the service
+        // keeps moving, unseen. Nothing resolved; the loop closes on the same gap it opened on.
+        tl.to("#f5-diagram", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 4.6);
+        tl.fromTo("#f5-dot", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" }, 5.05);
+        gsap.utils.toArray(".f5-tick").forEach((el, i) => {
+          tl.to(el, { opacity: 0.6, duration: 0.25, ease: "power3.out" }, 5.3 + i * 0.12);
+        });
+
+        // Scene 5 (6.3-6.822s): short hold — subtle jitter on the "?" only, into the cut to
+        // the brand card.
+        const f5phase = { p: 0 };
+        tl.to(f5phase, {
+          p: Math.PI * 2 * 0.6, duration: 0.5, ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(f5phase.p);
+            gsap.set("#f5-qmark", { y: s * 2 });
+          }
+        }, 6.35);
+
+        window.__timelines["05-remonte-etage"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

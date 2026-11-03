@@ -1,0 +1,28 @@
+{"dir": "SCRATCHPAD/v16", "vo": "audio/vo.mp3", "name": "video-16", "A": [0, 25.55, 49.04], "P": [0.6, 28.55], "dur": 56, "music_start": 60, "short": [[0, 56]], "sections": [[
+["Aujourd'hui, je vais te montrer comment j'ai automatisé", 0.0],
+["une partie de la formation et du support client de FoodEatUp.", 2.18],
+["Parce que développer un logiciel, c'est une chose…", 5.0],
+["Mais expliquer à chaque client comment l'utiliser,", 7.36],
+["c'en est une autre !", 9.82],
+["Alors, j'ai créé FoodEatUp Academy :", 11.02],
+["173 tutoriels vidéo en ligne, sur 230 prévus.", 13.6],
+["Et surtout, j'ai connecté toute cette documentation", 16.8],
+["à Claude et ChatGPT grâce à mon MCP.", 18.66],
+["Maintenant, un restaurateur peut simplement demander :", 21.54],
+["« Comment je fais un relevé de température ? »", 24.18]
+],[
+["L'IA retrouve le bon tutoriel,", 25.7],
+["lui donne la vidéo,", 27.48],
+["en carte ou en lien selon l'application,", 28.32],
+["lui explique les étapes,", 30.44],
+["et peut même lui proposer un quiz !", 31.6],
+["Elle peut aussi créer un parcours de formation", 33.32],
+["adapté à son métier.", 35.02],
+["Et ce MCP ne fait qu'enseigner :", 36.42],
+["il ne touche jamais aux données du restaurant.", 38.06],
+["Avant, mes clients devaient chercher dans les tutoriels.", 39.96],
+["Maintenant, c'est l'IA qui trouve le bon tutoriel", 42.22],
+["et leur apprend à utiliser le logiciel.", 44.48],
+["Et ce n'est que le début", 46.44],
+["de mon service client automatisé !", 47.58]
+]]}
