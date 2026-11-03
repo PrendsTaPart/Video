@@ -1,0 +1,8 @@
+Une caisse qui gère tout le restaurant.
+Voici le site FoodEatUp, un de mes projets.
+Chaque ticket encaissé met à jour le stock.
+Ta marge et ton hygiène suivent toutes seules.
+Tu saisis une fois, le reste suit.
+Écrans cuisine, compta et fidélité sont reliés.
+Et tu peux l'essayer gratuitement.
+Le lien est sous la vidéo : clique sur « Voir le projet ».

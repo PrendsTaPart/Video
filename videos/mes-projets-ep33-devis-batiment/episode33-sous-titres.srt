@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:01,890
+Tes devis, depuis le chantier.
+
+2
+00:00:02,210 --> 00:00:04,690
+Voici DevisBâti, un de mes projets pour le bâtiment.
+
+3
+00:00:04,990 --> 00:00:07,430
+L'artisan crée son devis directement sur son téléphone.
+
+4
+00:00:07,810 --> 00:00:09,830
+Les prix des matériaux sont rangés au même endroit.
+
+5
+00:00:10,210 --> 00:00:12,330
+Fournisseurs et frais de livraison sont pris en compte.
+
+6
+00:00:12,550 --> 00:00:13,930
+La marge se calcule toute seule.
+
+7
+00:00:14,210 --> 00:00:15,890
+Et un prix trop ancien est signalé.
+
+8
+00:00:16,090 --> 00:00:18,920
+Le lien est sous la vidéo : clique sur « Voir le projet ».

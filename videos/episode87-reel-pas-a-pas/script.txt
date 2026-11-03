@@ -1,0 +1,8 @@
+Tout le monde fait des reels animés avec l'IA, mais personne ne montre comment.
+Étape un : Claude, en application de bureau, pas dans le navigateur.
+Étape deux : un dossier « AI vidéo-éditeur » sur ton ordinateur.
+Étape trois : une conversation, en local, sur ce dossier.
+Étape quatre : tu tapes le sujet du reel, en une ligne.
+Claude écrit le script, enregistre la voix, anime chaque scène et cale les sous-titres.
+Il vérifie son animation avant que tu la voies.
+Écris ÉDITEUR en commentaire, je t'envoie mon guide complet.

@@ -1,0 +1,185 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Villa Beach Halloween</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Inter:wght@600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+:root{--or:#caa968;--rouille:#a95134;--fond:#171713;--texte:#f2eddf;--sang:#b3141b}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:#000}
+.sc{position:absolute;inset:0;overflow:hidden;visibility:hidden}
+.ph{position:absolute;inset:0;overflow:hidden}
+.ph img,.ph video{position:absolute;transform-origin:0 0;will-change:transform}
+.t{position:absolute;left:0;right:0;text-align:center;font-family:'Bebas Neue';color:var(--texte);letter-spacing:4px;text-shadow:0 0 30px #000,0 4px 0 #000}
+.gold{color:var(--or)}
+.creep{font-family:'Creepster';letter-spacing:2px}
+#fog{position:absolute;inset:-200px;pointer-events:none;background:
+ radial-gradient(ellipse 60% 18% at 30% 85%,rgba(170,190,220,.35),transparent 70%),
+ radial-gradient(ellipse 70% 16% at 75% 92%,rgba(170,190,220,.3),transparent 70%),
+ radial-gradient(ellipse 50% 14% at 50% 75%,rgba(150,170,210,.22),transparent 70%);mix-blend-mode:screen}
+#vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.85) 100%)}
+#grain{position:absolute;inset:0;pointer-events:none;opacity:.13;mix-blend-mode:overlay}
+#flash{position:absolute;inset:0;pointer-events:none;background:#dfe9ff;opacity:0}
+#red{position:absolute;inset:0;pointer-events:none;background:var(--sang);opacity:0;mix-blend-mode:multiply}
+#black{position:absolute;inset:0;pointer-events:none;background:#000;opacity:0}
+#band{position:absolute;left:0;right:0;bottom:0;height:560px;pointer-events:none;background:linear-gradient(transparent,rgba(0,0,0,.92) 55%)}
+#cap{position:absolute;left:60px;right:60px;top:1560px;text-align:center;font-family:'Bebas Neue';font-size:92px;line-height:1.05;color:var(--texte);text-shadow:0 0 18px #000,0 5px 0 #000;letter-spacing:3px}
+#cap span{opacity:.35}#cap span.on{opacity:1}#cap span.k{color:var(--or)}#cap span.r{color:#ff3b30}
+#bats{position:absolute;inset:0;pointer-events:none}
+.bat{position:absolute;width:150px}
+.sp{position:absolute;transform-origin:50% 100%}
+.card{position:absolute;width:470px;border:5px solid var(--or);border-radius:26px;overflow:hidden;background:rgba(23,23,19,.8);box-shadow:0 0 50px rgba(202,169,104,.35)}
+.card h3{font-family:'Bebas Neue';font-size:64px;letter-spacing:3px;text-align:center;padding:10px 0 4px}
+.card p{font-family:'Bebas Neue';font-size:40px;letter-spacing:2px;text-align:center;color:var(--texte);padding:0 10px 14px}
+.genre{position:absolute;left:0;right:0;text-align:center;font-family:'Bebas Neue';font-size:120px;letter-spacing:6px;text-shadow:0 0 30px #000,0 6px 0 #000}
+.badge{display:inline-block;border:4px solid var(--or);padding:10px 34px;border-radius:14px;background:rgba(23,23,19,.75)}
+</style></head><body><div id="stage">
+<div id="scenes"></div>
+<div id="bats"></div><div id="fog"></div><div id="red"></div><div id="vig"></div><canvas id="grain" width="540" height="960"></canvas>
+<div id="band"></div><div id="cap"></div><div id="flash"></div><div id="black"></div>
+</div>
+<script src="../cfg.js"></script>
+<script>
+const C=window.CFG, $=s=>document.querySelector(s), S=$('#scenes');
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)), ease=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+const rnd=s=>{const x=Math.sin(s*12.9898)*43758.5453;return x-Math.floor(x)};
+const IMG={affiche:[941,1672],pergola:[960,720],danse:[1080,1080],diner:[1080,1080],monogram:[500,500]};
+const M=k=>C.marks[k];
+const scenes=[];
+// crop = [x,y,w,h] région de l'image source à cadrer ; z0→z1 zoom supplémentaire ; filtre CSS
+function scene(a,b,src,crop0,crop1,filt){
+  const d=document.createElement('div');d.className='sc';
+  const ph=document.createElement('div');ph.className='ph';
+  const vid=src.endsWith('.webm');const im=document.createElement(vid?'video':'img');im.src=src;
+  if(vid){const [vw,vh]=src.includes("/kit/")?[1080,1920]:[540,960];im.style.width=vw+"px";im.style.height=vh+"px";im.style.maxWidth="none";im.muted=true;im.preload='auto';im.playsInline=true;}
+  ph.appendChild(im);d.appendChild(ph);S.appendChild(d);
+  const o={a,b,d,im,vid,off:0,fin:0,src:src.split('.')[0],crop0,crop1:crop1||crop0,filt:filt||(()=>''),fx:[]};scenes.push(o);return o;}
+function txt(s,html,at,y,size,anim){const e=document.createElement('div');e.className='t';e.innerHTML=html;e.style.top=y+'px';e.style.fontSize=size+'px';s.d.appendChild(e);s.fx.push({e,at,anim:anim||'fade'});return e;}
+function frameCrop(s,t){
+  const p=ease(clamp((t-s.a)/(s.b-s.a)));
+  const c=s.crop0.map((v,i)=>v+(s.crop1[i]-v)*p);
+  // cadre la région c dans 1080x1920 (cover)
+  const k=Math.max(1080/c[2],1920/c[3]);
+  const ox=-(c[0]+c[2]/2)*k+540, oy=-(c[1]+c[3]/2)*k+960;
+  return `translate(${ox}px,${oy}px) scale(${k})`;}
+
+/* ---------- découpage selon la voix (assets Lovable « chateau-hante ») ---------- */
+window.BRUME=`url(../kit/chateau-hante-brume.png) 50% 88%/1500px auto no-repeat, url(../kit/chateau-hante-brume.png) 20% 97%/1800px auto no-repeat`;
+const L=C.lines, t0=i=>L[i].t0, t1=i=>L[i].t1, END=C.dur, K='../kit/chateau-hante-';
+const FULL=[0,0,1080,1920];
+const z=(k)=>[540-540/k,960-960/k,1080/k,1920/k]; // zoom centré
+// sprite : image détourée posée dans une scène
+function spr(s,file,o){const e=document.createElement('img');e.src=K+file;e.className='sp';
+  Object.assign(e.style,{left:(o.x-o.w/2)+'px',top:(o.y)+'px',width:o.w+'px',zIndex:o.z||2,filter:o.f||''});
+  s.d.appendChild(e);s.fx.push({e,at:o.at??s.a,anim:o.anim||'fade',base:`translateY(-100%)${o.flip?' scaleX(-1)':''}`,o});return e;}
+function el(s,html,o){const d=document.createElement('div');d.innerHTML=html;const e=d.firstChild;Object.assign(e.style,{left:o.x!=null?(o.x-(o.w||0)/2)+'px':'',top:o.y+'px',zIndex:o.z||3});if(o.w)e.style.width=o.w+'px';e.o=o;s.d.appendChild(e);s.fx.push({e,at:o.at??s.a,anim:o.anim||'fade',base:'',o});return e;}
+const mid=i=>(t0(i)+t1(i))/2;
+
+// 1. L'heure dorée (vidéo du site) qui bascule dans la pergola hantée
+let s=scene(0,3.5,'../img/clip-pergola.webm',[0,0,540,960],[40,70,460,818],(t,s)=>`saturate(${1.15-.4*clamp((t-2)/4)}) brightness(${1.05-.3*clamp((t-2)/4)})`);
+txt(s,'<span class="gold">VILLA BEACH</span>',0.4,330,120,'fade');
+txt(s,'« L\'HEURE DORÉE »',1.0,470,74,'fade');
+s=scene(2.7,t0(1)+.2,K+'boucle-pergola.webm',z(1.0),z(1.12));s.fin=.8;s.off=.6;
+// 2. Le soleil ne se relèvera pas : la grille et l'allée de citrouilles
+s=scene(t0(1)+.2,t0(2),K+'grille-allee.jpg',z(1.05),z(1.25),()=>'brightness(.85) contrast(1.15)');
+txt(s,'<span class="creep" style="color:#ff3b30">31 OCTOBRE</span>',t0(1)+.8,330,150,'shake');
+spr(s,'fantome.png',{x:820,y:1250,w:420,at:t0(1)+1.4,anim:'float',f:'opacity(.75)'});
+// 3. Le château hanté sous l'orage
+s=scene(t0(2),t0(3),K+'boucle-chateau.webm',z(1.0),z(1.08),()=>'contrast(1.15) brightness(1.05)');
+el(s,`<img src="${K}eclair.png" style="position:absolute;width:520px">`,{x:280,w:520,y:0,at:t0(2),anim:'bolt',z:4}).o.bolt=[t0(2)+.05,t0(2)+1.9];
+el(s,`<img src="${K}eclair.png" style="position:absolute;width:420px;transform:scaleX(-1)">`,{x:860,w:420,y:80,at:t0(2),anim:'bolt',z:4}).o.bolt=[t0(2)+1.9];
+txt(s,'LE PLUS GRAND<br><span class="creep gold" style="font-size:150px">CHÂTEAU HANTÉ</span>',t0(2)+1.2,1080,100,'drop');
+// 4. Deux ambiances, deux univers musicaux
+s=scene(t0(3),t0(4),K+'fond-nuit.jpg',z(1.0),z(1.1));
+txt(s,'2 AMBIANCES<br><span class="gold">2 UNIVERS MUSICAUX</span>',t0(3)+.1,230,120,'drop');
+el(s,`<div class="card"><img src="${K}sorciere-dj.png" style="width:100%;height:520px;object-fit:contain;background:radial-gradient(#1d3557,#171713)"><h3 style="color:#3fd0ff">GÉNÉRALISTE</h3><p>HITS · R&B · HIP-HOP · AFRO · HOUSE</p></div>`,{x:290,w:470,y:620,at:t0(3)+.4,anim:'drop'});
+el(s,`<div class="card"><img src="${K}couple-zouk.png" style="width:100%;height:520px;object-fit:contain;background:radial-gradient(#5a2a12,#171713)"><h3 style="color:#ffc531">CARIBÉENNE</h3><p>ZOUK · KOMPA · SHATTA · DANCEHALL · BOUYON</p></div>`,{x:790,w:470,y:620,at:t0(3)+1.2,anim:'drop'});
+// 5. D'un côté : généraliste (piste hantée, sorcière DJ, squelette)
+s=scene(t0(4),t0(5),K+'piste-hantee.jpg',z(1.05),z(1.2),(t)=>`hue-rotate(${Math.sin(t*3)*25}deg) brightness(${.8+.25*(rnd(Math.floor(t*8))>.5)})`);
+spr(s,'sorciere-dj.png',{x:540,y:1300,w:640,at:t0(4),anim:'pump'});
+spr(s,'platine-citrouille.png',{x:540,y:1420,w:420,at:t0(4)+.2,anim:'pop',z:3});
+spr(s,'squelette-danseur.png',{x:190,y:1420,w:330,at:t0(4)+.6,anim:'dance'});
+['HITS','R&B','HIP-HOP','AFRO','HOUSE'].forEach((g,i,a)=>{const at=t0(4)+(t1(4)-t0(4))*(i+.6)/a.length;el(s,`<div class="genre" style="color:#3fd0ff">${g}</div>`,{y:260,at,anim:'beat',z:5}).o.until=at+(t1(4)-t0(4))/a.length;});
+// 6. De l'autre : caribéenne (couple qui danse, cocktail)
+s=scene(t0(5),t0(6),K+'piste-hantee.jpg',z(1.2),z(1.05),(t)=>`sepia(.5) hue-rotate(-20deg) saturate(1.6) brightness(${.75+.25*(rnd(Math.floor(t*8)+7)>.5)})`);
+spr(s,'couple-zouk.png',{x:540,y:1450,w:760,at:t0(5),anim:'sway'});
+spr(s,'cocktail-sang.png',{x:900,y:1480,w:260,at:t0(5)+.5,anim:'pop',z:3});
+['ZOUK','KOMPA','SHATTA','DANCEHALL','BOUYON'].forEach((g,i,a)=>{const at=t0(5)+(t1(5)-t0(5))*(i+.6)/a.length;el(s,`<div class="genre" style="color:#ffc531">${g}</div>`,{y:260,at,anim:'beat',z:5}).o.until=at+(t1(5)-t0(5))/a.length;});
+// 7. Tout est prêt… il ne manquait que vous : le banquet hanté, le vampire lève son verre
+s=scene(t0(6),t0(7),K+'diner-hante.jpg',z(1.0),z(1.25),(t)=>`brightness(${.75+.25*(rnd(Math.floor(t*12))>.8)}) contrast(1.15)`);
+spr(s,'chandelier.png',{x:180,y:1150,w:300,at:t0(6),anim:'fade',z:3});
+spr(s,'vampire.png',{x:600,y:1500,w:700,at:mid(6)-.4,anim:'rise'});
+txt(s,'TOUT EST PRÊT…',t0(6)+.1,260,120,'fade');
+txt(s,'<span class="gold">IL NE MANQUAIT QUE VOUS</span>',mid(6)+.2,400,104,'shake');
+// 8. Date et adresse dans le cadre doré
+s=scene(t0(7),t0(8),K+'fond-nuit.jpg',z(1.1),z(1.0));
+el(s,`<img src="${K}cadre-or.png" style="position:absolute;width:900px">`,{x:540,w:900,y:180,at:t0(7),anim:'pop'});
+txt(s,'RENDEZ-VOUS LE<br><span style="font-size:140px;color:#ff3b30;line-height:1.1" class="creep">SAMEDI<br>31 OCTOBRE</span>',t0(7)+.2,470,84,'drop');
+txt(s,'<span style="font-size:60px">23 RUE DES PYRÉNÉES</span><br><span class="gold" style="font-size:60px">91090 LISSES</span>',t0(7)+1.4,930,60,'drop');
+spr(s,'citrouille.png',{x:330,y:1420,w:300,at:t0(7)+.3,anim:'pop'});
+spr(s,'citrouille.png',{x:750,y:1420,w:260,at:t0(7)+.6,anim:'pop',flip:1});
+// 9. La peur, sinon rien : l'œil de la citrouille s'enflamme, puis la signature
+const JUMP=t1(8)+.15;
+s=scene(t0(8),JUMP,K+'chateau-orage.jpg',z(1.3),z(1.6),()=>'brightness(.4) blur(2px)');
+const mono=document.createElement('img');mono.src='../img/monogram.png';Object.assign(mono.style,{position:'absolute',left:'340px',top:'420px',width:'400px',filter:'drop-shadow(0 0 40px rgba(202,169,104,.7))'});s.d.appendChild(mono);s.fx.push({e:mono,at:t0(8)+.1,anim:'fade',base:'',o:{}});
+txt(s,'VILLA BEACH',t0(8)+.6,870,150,'fade');
+txt(s,'<span class="creep" style="color:#ff3b30">LA PEUR, SINON RIEN</span>',t0(8)+1.6,1040,110,'shake');
+s=scene(JUMP,JUMP+.9,K+'citrouille-oeil.png',[224,0,576,1024],[380,230,330,587],()=>'brightness(1.2) saturate(1.3)');
+s.d.style.background='#000';
+s=scene(JUMP+.9,END,K+'fond-nuit.jpg',z(1.0),z(1.08));
+const m2=mono.cloneNode();m2.style.top='330px';s.d.appendChild(m2);s.fx.push({e:m2,at:JUMP+.9,anim:'fade',base:'',o:{}});
+txt(s,'VILLA BEACH',JUMP+1,760,150,'fade');
+txt(s,'<span class="creep" style="color:#ff3b30">LA PEUR, SINON RIEN</span>',JUMP+1,930,110,'fade');
+txt(s,'SAMEDI 31 OCTOBRE<br><span style="font-size:56px">RÉSERVATIONS 01 84 60 20 46</span>',JUMP+1.4,1110,80,'fade');
+/* ---------- chauves-souris ---------- */
+const bats=[...Array(7)].map((_,i)=>{const e=document.createElement('img');e.className='bat';e.src=K+'chauve-souris.png';$('#bats').appendChild(e);return e;});
+/* ---------- grain ---------- */
+const g=$('#grain').getContext('2d'),gi=g.createImageData(540,960);
+function grain(t){const f=Math.floor(t*24);let sd=f*9301+49297;for(let i=0;i<gi.data.length;i+=4){sd=(sd*9301+49297)%233280;const v=sd/233280*255;gi.data[i]=gi.data[i+1]=gi.data[i+2]=v;gi.data[i+3]=255;}g.putImageData(gi,0,0);}
+
+/* ---------- sous-titres mot à mot ---------- */
+const KW=new Set(C.kw||[]), RED=new Set(C.red||[]);
+function caps(t){
+  const W=C.words; let li=-1; for(const l of L) if(t>=l.t0-.1&&t<=l.t1+.4) li=L.indexOf(l);
+  if(li<0||!C.showCap(t)){$('#cap').innerHTML='';return;}
+  const ws=W.filter(w=>w[2]===li); // groupe de 4 mots autour du mot courant
+  let cur=0; ws.forEach((w,i)=>{if(t>=w[1])cur=i;}); const g0=Math.floor(cur/4)*4;
+  $('#cap').innerHTML=ws.slice(g0,g0+4).map(w=>`<span class="${t>=w[1]?'on':''} ${KW.has(w[0])?'k':''} ${RED.has(w[0])?'r':''}">${w[0]}</span>`).join(' ');}
+
+/* ---------- éclairs ---------- */
+const BOLTS=C.bolts; // instants de foudre (tonnerre calé dessus)
+function flashAt(t){let v=0;for(const b of BOLTS){const d=t-b;if(d>=0&&d<.5)v=Math.max(v,(d<.06?1:d<.12?.2:d<.2?.85:Math.max(0,.5-(d-.2)*2)));}return v;}
+
+async function render(t){
+  const waits=[];
+  for(const s of scenes){const on=t>=s.a&&t<s.b;s.d.style.visibility=on?'visible':'hidden';if(!on)continue;
+    s.d.style.opacity=s.fin?clamp((t-s.a)/s.fin):1;
+    if(s.vid){const ct=Math.min(t-s.a+s.off,s.im.duration?s.im.duration-.05:7.9);if(Math.abs(s.im.currentTime-ct)>.001){waits.push(new Promise(r=>{s.im.addEventListener('seeked',r,{once:true});setTimeout(r,3000);}));s.im.currentTime=ct;}}
+    let sh=''; const fl=flashAt(t); if(fl>.5) sh=` translate(${(rnd(t*99)-.5)*30}px,${(rnd(t*77)-.5)*30}px)`;
+    s.im.style.transform=frameCrop(s,t)+sh; s.im.style.filter=s.filt(t,s);
+    for(const f of s.fx){const o=f.o||{},B=f.base||'',p=clamp((t-f.at)/(o.slow||.5));let op=p,tr='';
+      if(f.anim==='drop')tr=`translateY(${(1-ease(p))*-80}px)`;
+      if(f.anim==='shake')tr=`translate(${(rnd(Math.floor(t*20))-.5)*14}px,${(rnd(Math.floor(t*20)+3)-.5)*10}px)`;
+      if(f.anim==='pop')tr=`scale(${t<f.at?0:1+.25*Math.sin(Math.PI*clamp((t-f.at)/.35))})`;
+      if(f.anim==='float')tr=`translate(${Math.sin(t*1.3)*30}px,${Math.sin(t*2.1)*25}px)`;
+      if(f.anim==='pump')tr=`scale(${1+.03*Math.abs(Math.sin(t*Math.PI*2))})`;
+      if(f.anim==='dance')tr=`rotate(${Math.sin(t*7)*8}deg) translateY(${-Math.abs(Math.sin(t*7))*30}px)`;
+      if(f.anim==='sway')tr=`rotate(${Math.sin(t*2.6)*4}deg) translateX(${Math.sin(t*2.6)*20}px)`;
+      if(f.anim==='rise'){tr=`translateY(${(1-ease(p))*300}px)`;}
+      if(f.anim==='beat'){op=t>=f.at&&t<(o.until||1e9)?1:0;tr=`scale(${1+.35*Math.max(0,1-(t-f.at)/.2)})`;}
+      if(f.anim==='bolt'){let v=0;for(const b of o.bolt||[]){const d=t-b;if(d>=0&&d<.35)v=Math.max(v,d<.08?1:d<.14?.2:d<.22?.9:0);}op=v;}
+      f.e.style.opacity=op;f.e.style.transform=B+' '+tr;}}
+  $('#flash').style.opacity=flashAt(t)*.9;
+  // rouge sang qui pulse avec le battement de cœur
+  let hb=0; for(const h of C.heart){const d=(t-h)%0.9; if(t>=h&&t<h+5.4){hb=Math.max(hb,d<.12?.5:d>.26&&d<.38?.35:0);}}
+  $('#red').style.opacity=hb;
+  // noir : coupure "le soleil ne se relèvera pas" + fondu final
+  let bk=0; const cut=C.cut; if(t>=cut&&t<cut+.35)bk=1; if(t>END-.6)bk=clamp((t-(END-.6))/.6);
+  $('#black').style.opacity=bk;
+  $('#fog').style.transform=`translateX(${Math.sin(t*.25)*120}px)`; $('#fog').style.opacity=t<t0(1)?0:.9; if(window.BRUME)$("#fog").style.background=BRUME;
+  bats.forEach((e,i)=>{const st=C.batsAt+i*.25, p=(t-st)/3.2; e.style.display=p>0&&p<1?'block':'none';
+    e.style.left=(-120+p*1300)+'px'; e.style.top=(250+i*90+Math.sin(p*14+i)*40)+'px'; e.style.transform=`scale(${.6+rnd(i)*.8}) scaleY(${.6+.4*Math.abs(Math.sin(t*20+i))})`;});
+  grain(t); caps(t);
+  await Promise.all(waits);
+}
+function thumb(){return render(t0(6)+1.6)}
+render(0);
+</script></body></html>

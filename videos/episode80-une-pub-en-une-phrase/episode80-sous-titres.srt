@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,730
+Tu peux maintenant lancer une pub avec une seule phrase.
+
+2
+00:00:03,150 --> 00:00:05,870
+Tu branches ta page Facebook et ton compte publicitaire à Claude.
+
+3
+00:00:06,070 --> 00:00:10,130
+Puis tu écris : booste mon dernier post, une petite somme par jour, dans ma ville.
+
+4
+00:00:10,470 --> 00:00:11,670
+Claude prépare la campagne.
+
+5
+00:00:11,870 --> 00:00:14,530
+Il te montre à qui elle sera montrée, et combien ça va coûter.
+
+6
+00:00:14,770 --> 00:00:16,710
+Et rien ne part tant que tu n'as pas dit OK.
+
+7
+00:00:17,030 --> 00:00:19,510
+Pour un restaurant, c'est parfait pour remplir un mardi soir.
+
+8
+00:00:19,790 --> 00:00:22,230
+Écris BOOST en commentaire, je t'envoie le pas à pas.

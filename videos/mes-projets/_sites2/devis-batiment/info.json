@@ -1,0 +1,28 @@
+{
+ "url": "https://site-quote-builder.lovable.app/auth",
+ "title": "Connexion – DevisBâti",
+ "desc": "Connectez-vous à DevisBâti pour créer et envoyer vos devis.",
+ "og": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_1b519hn6g894ss84n23mbrbdq3/6b1b45370b5d55f05658bb7d170840d6_1792615018556.png",
+ "h1": [
+  "DEVISBÂTI"
+ ],
+ "h2": [
+  "CONNEXION"
+ ],
+ "bg": "oklch(0.975 0.004 80)",
+ "font": "Barlow, Cairo, system-ui, sans-serif",
+ "btn": [
+  [
+   "oklch(0.68 0.2 45)",
+   1
+  ],
+  [
+   "oklch(0.975 0.004 80)",
+   1
+  ]
+ ],
+ "text": "DEVISBÂTI\nVos devis, depuis le chantier.\nCONNEXION\nEmail\nMot de passe\nSE CONNECTERContinuer avec GooglePas encore de compte ? Inscription",
+ "height": 720,
+ "ok": true,
+ "rec_s": 9.676
+}

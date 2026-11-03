@@ -1,0 +1,9 @@
+Patron de resto ou salarié : qui gagne vraiment le plus à l'heure ?
+Exemple : Karim, patron de resto, se verse deux mille cinq cents euros par mois. Pas mal.
+Mais il travaille soixante-dix heures par semaine.
+Ramené à l'heure, il gagne moins que son employé de salle payé au SMIC. Son employé, lui, fait ses trente-cinq heures. Et rentre chez lui.
+Le problème de Karim, ce n'est pas son salaire. Ce sont ses heures.
+Les appels pendant le service. Le planning le dimanche soir. Les commandes fournisseurs à minuit.
+Ces heures-là, on peut les reprendre. Caroline décroche le téléphone. Le planning se prépare avec l'IA. Le stock bas te prévient avant la rupture.
+Chaque heure récupérée, c'est ton salaire à l'heure qui monte.
+Calcule le tien : écris HEURE en commentaire.

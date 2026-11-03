@@ -1,0 +1,63 @@
+1
+00:00:00,350 --> 00:00:05,170
+La Chine est en train de rattraper les géants américains de l'IA. Et la plupart de ses outils sont gratuits.
+
+2
+00:00:05,390 --> 00:00:06,630
+Voici les cinq à connaître.
+
+3
+00:00:07,070 --> 00:00:08,020
+Un : DeepSeek.
+
+4
+00:00:08,170 --> 00:00:11,650
+Celui qui a fait trembler la Silicon Valley. Gratuit, et ouvert à tous.
+
+5
+00:00:12,030 --> 00:00:13,530
+Deux : Qwen, d'Alibaba.
+
+6
+00:00:13,490 --> 00:00:16,450
+Il discute, crée des images, et fabrique même des sites.
+
+7
+00:00:16,750 --> 00:00:18,590
+Trois : Wan, toujours chez Alibaba.
+
+8
+00:00:18,830 --> 00:00:20,610
+Tu écris une phrase, il te sort une vidéo.
+
+9
+00:00:20,850 --> 00:00:23,100
+Quatre : GLM, de l'entreprise Zhipu.
+
+10
+00:00:23,250 --> 00:00:25,360
+Dans les tests, il se mesure aux meilleurs.
+
+11
+00:00:25,310 --> 00:00:26,270
+Cinq : Kimi.
+
+12
+00:00:26,530 --> 00:00:28,570
+Il lit des documents énormes d'un seul coup.
+
+13
+00:00:28,570 --> 00:00:30,590
+Et l'Europe ? On a Mistral, en France.
+
+14
+00:00:30,810 --> 00:00:35,090
+Pour ton resto, attention : avant d'y mettre les données de tes clients, vérifie où elles partent.
+
+15
+00:00:35,210 --> 00:00:38,070
+Moi, je reste sur Claude pour ce qui compte. Mais je les teste tous.
+
+16
+00:00:38,370 --> 00:00:40,730
+La liste complète : écris CHINE en commentaire.

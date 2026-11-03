@@ -1,0 +1,180 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Villa Beach Halloween flyer</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Great+Vibes&family=Montserrat:wght@300;500;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+:root{--or:#caa968;--orange:#ff7a1a;--nuit:#171713;--texte:#f2eddf}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:#0b0806;font-family:'Montserrat'}
+.L{position:absolute;inset:0;visibility:hidden}
+canvas{position:absolute;inset:0}
+.c{position:absolute;left:0;right:0;text-align:center;color:var(--texte)}
+.vb{position:absolute;overflow:hidden;background:#000}
+.vb video,.vb img.bgi{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* gros lettrage métal */
+.big{position:absolute;left:0;right:0;text-align:center;font-family:'Cinzel';font-weight:900;font-size:138px;letter-spacing:-6px;line-height:1;white-space:nowrap}
+.big span{display:inline-block;position:relative}
+.big span b{position:absolute;inset:0;color:transparent;background:linear-gradient(180deg,#fff6d8 0%,#f3c36b 28%,#ff7a1a 52%,#7a2c06 70%,#f6b35c 86%,#fff0c8 100%);-webkit-background-clip:text;background-clip:text}
+.big span i{font-style:normal;color:#3a1604;text-shadow:2px 2px 0 #4a1d06,4px 4px 0 #3a1604,6px 6px 0 #2a1003,8px 8px 0 #1c0a02,10px 12px 22px rgba(0,0,0,.9)}
+.script{position:absolute;left:0;right:0;text-align:center;font-family:'Great Vibes';font-size:150px;line-height:1;color:transparent;background:linear-gradient(180deg,#fff3cf 10%,#f0b25a 45%,#b8561a 70%,#ffd98c 95%);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 6px 4px rgba(0,0,0,.85)) drop-shadow(0 0 22px rgba(255,122,26,.45))}
+.date{font-family:'Montserrat';font-weight:300;font-size:64px;letter-spacing:2px;color:var(--texte)}
+.date b{font-weight:900;border:4px solid var(--texte);padding:0 14px;margin-left:10px;border-radius:6px}
+.small{font-weight:500;font-size:30px;letter-spacing:9px}
+.glow{font-family:'Montserrat';font-weight:900;font-size:150px;letter-spacing:-2px;color:#fff;text-shadow:0 0 10px #fff,0 0 30px var(--orange),0 0 70px var(--orange),0 6px 0 #000}
+.tag{display:inline-block;background:#d1121b;color:#fff;font-weight:900;font-size:34px;padding:2px 14px;border-radius:6px;letter-spacing:2px}
+.spaced{font-weight:500;font-size:36px;letter-spacing:16px}
+.hb{font-weight:900;font-size:120px;letter-spacing:-1px;color:#fff;text-shadow:0 6px 0 #000,0 0 40px rgba(0,0,0,.8)}
+.cols{position:absolute;left:60px;right:60px;display:flex;gap:30px}
+.cols div{flex:1;text-align:center}
+.cols h4{font-family:'Montserrat';font-weight:900;font-size:50px;letter-spacing:1px}
+.cols p{font-weight:800;font-size:28px;line-height:1.35;color:var(--texte);letter-spacing:1px}
+#flash{position:absolute;inset:0;background:#fff3dc;opacity:0;pointer-events:none;z-index:50}
+#vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 50%,rgba(0,0,0,.75) 100%);z-index:40}
+#black{position:absolute;inset:0;background:#000;opacity:0;z-index:60}
+.sep{position:absolute;left:0;right:0;height:10px;background:#0b0806}
+</style></head><body><div id="stage">
+<canvas id="rays" width="1080" height="1920"></canvas>
+<div id="layers"></div>
+<canvas id="embers" width="1080" height="1920" style="z-index:30"></canvas>
+<div id="vig"></div><div id="flash"></div><div id="black"></div>
+</div>
+<script>
+const $=s=>document.querySelector(s), clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)), ease=x=>1-Math.pow(1-clamp(x),3);
+const rnd=s=>{const x=Math.sin(s*12.9898)*43758.5453;return x-Math.floor(x)};
+const C='clips/', K='../kit/chateau-hante-';
+const DUR=31.6; window.CFG={dur:DUR};
+const BEATS=[10.2,11.4,12.6,13.8,15.0,16.2,17.4,18.6,19.8,21.0,22.2,23.4,24.6,25.8,27.0,28.2,29.4];
+const FLASH=[0.6,10.2,14.4,16.8,19.2,21.6,24.0], SOFT=[4.25,4.55,4.85,5.15,5.45,5.75,6.05,6.35,6.65];
+const layers=[], vids=[];
+function layer(a,b,z){const d=document.createElement('div');d.className='L';d.style.zIndex=z||1;$('#layers').appendChild(d);const o={a,b,d,items:[],fx:null};layers.push(o);return o;}
+// élément HTML avec apparition
+function put(l,html,o){const w=document.createElement('div');w.innerHTML=html;const e=w.firstElementChild;Object.assign(e.style,o.css||{});if(o.y!=null)e.style.top=o.y+'px';l.d.appendChild(e);l.items.push({e,at:o.at??l.a,an:o.an||'fade',until:o.until,d:o.d||.5});return e;}
+// boîte vidéo : src, rectangle, point de départ dans la source, cadrage
+function vbox(l,src,o){const b=document.createElement('div');b.className='vb';Object.assign(b.style,{left:o.x+'px',top:o.y+'px',width:o.w+'px',height:o.h+'px'});
+  let m;if(src.endsWith('.webm')){m=document.createElement('video');m.muted=true;m.preload='auto';m.src=src;vids.push({m,l,from:o.from||0,start:o.start??l.a,end:o.end??l.b,rate:o.rate||1});}
+  else{m=document.createElement('img');m.className='bgi';m.src=src;}
+  m.style.objectPosition=o.pos||'50% 50%';m.style.filter=o.f||'sepia(.3) saturate(1.25) contrast(1.1)';b.appendChild(m);l.d.appendChild(b);
+  l.items.push({e:b,at:o.at??l.a,an:o.an||'cut',until:o.end,zoom:{m,z0:o.z0||1.0,z1:o.z1||1.1,a:o.start??l.a,b:o.end??l.b}});return b;}
+function sprite(l,file,o){return put(l,`<img src="${K}${file}" style="position:absolute;left:${o.x}px;top:${o.y}px;width:${o.w}px;${o.css||''}">`,o);}
+
+/* ---------- lettrage HALLOWEEN (lettre par lettre, comme le « 2027 » de la référence) ---------- */
+function bigWord(l,y,t0,step,size){const e=put(l,`<div class="big" style="top:${y}px;font-size:${size||138}px">${[...'HALLOWEEN'].map(c=>`<span><i>${c}</i><b>${c}</b></span>`).join('')}</div>`,{at:t0,an:'none'});
+  [...e.children].forEach((s,i)=>l.items.push({e:s,at:t0+i*step,an:'slam',d:.25}));return e;}
+function flyerTop(l,t){ // haut du flyer : monogramme + date
+  put(l,`<img src="../img/monogram.png" style="position:absolute;left:480px;top:60px;width:120px;filter:drop-shadow(0 0 16px rgba(202,169,104,.6))">`,{at:t});
+  put(l,`<div class="c date" style="top:200px">SAMEDI<b>31 OCTOBRE</b></div>`,{at:t+.15});
+  put(l,`<div class="c small" style="top:300px;font-size:24px;letter-spacing:6px">LA MEILLEURE SOIRÉE HALLOWEEN DE RÉGION PARISIENNE</div>`,{at:t+.3});}
+
+/* ---------- 1. intro : rayons, logo, date (0 → 4,2) ---------- */
+let l=layer(0,4.25,5);
+put(l,`<img src="../img/monogram.png" style="position:absolute;left:400px;top:640px;width:280px;filter:drop-shadow(0 0 30px rgba(255,170,90,.8))">`,{at:.6,an:'zoomin'});
+put(l,`<div class="c" style="top:960px;font-family:Cinzel;font-weight:900;font-size:70px;letter-spacing:10px;color:#f3d9a4">VILLA BEACH</div>`,{at:1.0});
+put(l,`<div class="c date" style="top:1080px">SAMEDI<b>31 OCTOBRE</b></div>`,{at:1.45,an:'up'});
+put(l,`<div class="c small" style="top:1190px">LE PLUS GRAND CHÂTEAU HANTÉ</div>`,{at:2.6,an:'up'});
+
+/* ---------- 2. HALLOWEEN + le vampire + le script (4,2 → 7,2) ---------- */
+const hero=layer(4.25,10.2,6);
+bigWord(hero,440,4.25,.3,138);
+sprite(hero,'vampire.png',{x:40,y:520,w:1000,at:5.2,an:'rise',d:1.2});
+put(hero,`<div style="position:absolute;left:0;right:0;top:1300px;height:620px;background:linear-gradient(transparent,#0b0806 55%)"></div>`,{at:4.25,an:'none'});
+put(hero,`<div class="script" style="top:1300px">Le plus grand<br>château hanté</div>`,{at:6.3,an:'write',d:.9});
+hero.fx=t=>{const p=clamp((t-7.2)/.5);hero.d.style.filter=p?`blur(${p*9}px) brightness(${1-.45*p})`:'';};
+/* ---------- 3. « VILLA BEACH présente », titre lumineux (7,2 → 10,2) ---------- */
+l=layer(7.2,10.2,7);
+put(l,`<div class="c" style="top:760px"><span class="tag">PRÉSENTE</span></div>`,{at:7.6,an:'pop'});
+const glowT=put(l,`<div class="c glow" style="top:820px">VILLA<br>BEACH</div>`,{at:7.3,an:'zoomin',d:.6});
+put(l,`<div class="c spaced" style="top:1180px;font-size:34px">HALLOWEEN</div>`,{at:8.0});
+l.fx=t=>{let k=0;for(const b of [8.7,9.0,9.45,9.9]){const d=t-b;if(d>=0&&d<.25)k=Math.max(k,1-d/.25);}glowT.style.transform=`scale(${1+.08*k})`;};
+
+/* ---------- 4. montage en 4 bandes, coupé sur la musique (10,2 → 14,4) ---------- */
+l=layer(10.2,14.4,8);
+const H=470,G=[0,480,960,1440];
+const set1=[[C+'boucle-chateau.webm',0,'50% 32%'],[C+'ta-fete.webm',0.05,'50% 45%'],[C+'boucle-citrouille.webm',1.2,'50% 55%'],[C+'jardin-nuit.webm',1.0,'50% 50%']];
+const set2=[[C+'ta-vampire.webm',0.2,'50% 70%'],[C+'pergola-jour.webm',2.0,'60% 50%'],[C+'boucle-pergola.webm',3.6,'50% 45%'],[C+'ta-chateau.webm',0.3,'50% 40%']];
+set1.forEach((s,i)=>vbox(l,s[0],{x:0,y:G[i],w:1080,h:H,from:s[1],pos:s[2],start:10.2+i*.15,end:12.6,at:10.2+i*.15,an:'slide'+(i%2?'L':'R')}));
+set2.forEach((s,i)=>vbox(l,s[0],{x:0,y:G[i],w:1080,h:H,from:s[1],pos:s[2],start:12.6,end:14.4,at:12.6+i*.15,an:'slide'+(i%2?'R':'L')}));
+
+/* ---------- 5. ÉDITION « Château hanté » (14,4 → 16,8) ---------- */
+l=layer(14.4,16.8,9);
+put(l,`<div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,#5a2f12,#120a05 75%)"></div>`,{at:14.4,an:'none'});
+put(l,`<div class="c spaced" style="top:600px">ÉDITION</div>`,{at:14.5});
+vbox(l,C+'boucle-chateau.webm',{x:0,y:690,w:1080,h:520,from:1.5,pos:'50% 35%',at:14.6,an:'open',f:'sepia(.25) saturate(1.2)'});
+put(l,`<div class="script" style="top:1230px;font-size:170px">Château Hanté</div>`,{at:15.0,an:'write',d:.9});
+
+/* ---------- 6-7. les deux ambiances, écran partagé (16,8 → 21,6) ---------- */
+function split(a,b,top,bot,label,color,genres,spr){const l=layer(a,b,10);
+  vbox(l,top[0],{x:0,y:0,w:1080,h:900,from:top[1],pos:top[2],at:a,an:'slideD'});
+  vbox(l,bot[0],{x:0,y:1020,w:1080,h:900,from:bot[1],pos:bot[2],at:a+.1,an:'slideU'});
+  put(l,`<div style="position:absolute;left:0;right:0;top:640px;height:640px;background:linear-gradient(transparent,rgba(11,8,6,.92) 30%,rgba(11,8,6,.92) 70%,transparent)"></div>`,{at:a,an:'none'});
+  if(spr)sprite(l,spr[0],{x:spr[1],y:spr[2],w:spr[3],at:a+.3,an:'rise',d:.7});
+  if(label)put(l,`<div class="c spaced" style="top:800px;font-size:30px">AMBIANCE</div>`,{at:a+.25});
+  put(l,`<div class="c hb" style="top:845px;color:${color}">${label}</div>`,{at:a+.4,an:'zoomin',d:.35});
+  put(l,`<div class="c" style="top:990px;font-weight:800;font-size:38px;letter-spacing:2px">${genres}</div>`,{at:a+.8,an:'up'});
+  return l;}
+split(16.8,19.2,[K+'piste-hantee.jpg',0,'50% 60%'],[C+'ta-fete.webm',0.4,'50% 55%'],'GÉNÉRALISTE','#3fd0ff','HITS · R&amp;B · HIP-HOP · RAP · AFRO · HOUSE',['sorciere-dj.png',560,250,560]);
+split(19.2,21.6,[C+'jardin-nuit.webm',3.0,'50% 50%'],[C+'pergola-jour.webm',4.5,'50% 50%'],'CARIBÉENNE','#ffc531','ZOUK · KOMPA · SHATTA · DANCEHALL · BOUYON',['couple-zouk.png',10,240,560]);
+
+/* ---------- 8. le lieu (21,6 → 24,0) ---------- */
+l=split(21.6,24.0,[C+'pergola-jour.webm',0.5,'50% 50%'],[C+'boucle-pergola.webm',4.2,'50% 45%'],'','#fff','',null);
+put(l,`<div class="c" style="top:830px;font-family:Cinzel;font-weight:900;font-size:96px;letter-spacing:6px;color:#f3d9a4">VILLA BEACH</div>`,{at:21.8,an:'zoomin',d:.35});
+put(l,`<div class="c" style="top:960px;font-weight:800;font-size:40px;letter-spacing:3px">23 RUE DES PYRÉNÉES · 91090 LISSES</div>`,{at:22.2,an:'up'});
+
+/* ---------- 9. le flyer complet se monte (24,0 → fin) ---------- */
+l=layer(24.0,DUR+1,12);
+flyerTop(l,24.0);
+bigWord(l,390,24.3,.08,130);
+sprite(l,'vampire.png',{x:60,y:470,w:960,at:24.9,an:'rise',d:.9});
+put(l,`<div style="position:absolute;left:0;right:0;top:1160px;height:760px;background:linear-gradient(transparent,#0b0806 35%)"></div>`,{at:24.0,an:'none'});
+put(l,`<div class="script" style="top:1170px;font-size:120px">Le plus grand château hanté</div>`,{at:25.6,an:'write',d:.8});
+put(l,`<div class="c" style="top:1335px;font-weight:900;font-size:44px;letter-spacing:2px">2 AMBIANCES <span style="color:#d1121b">●</span> 2 UNIVERS MUSICAUX</div>`,{at:26.4,an:'up'});
+put(l,`<div class="cols" style="top:1420px"><div><h4 style="color:#3fd0ff">GÉNÉRALISTE</h4><p>HITS · R&amp;B · HIP-HOP · RAP<br>AFRO · HOUSE · ELECTRO<br>POP · HITS CLUBS</p></div><div><h4 style="color:#ffc531">CARIBÉENNE</h4><p>ZOUK · KOMPA · SHATTA<br>DANCEHALL · BOUYON<br>AFRO-CARIBBEAN</p></div></div>`,{at:27.0,an:'up'});
+put(l,`<div class="c" style="top:1680px;font-family:Cinzel;font-weight:900;font-size:46px;letter-spacing:4px;color:#f3d9a4">VILLA BEACH</div>`,{at:27.6,an:'up'});
+put(l,`<div class="c" style="top:1740px;font-weight:800;font-size:30px;letter-spacing:2px">23 RUE DES PYRÉNÉES · 91090 LISSES</div>`,{at:27.8,an:'up'});
+put(l,`<div class="c" style="top:1795px;font-weight:500;font-size:28px;letter-spacing:3px">RÉSERVATIONS 01 84 60 20 46</div>`,{at:28.2,an:'up'});
+l.fx=t=>{l.d.style.transform=`scale(${1.04-.04*ease((t-24)/7)})`;};
+
+/* ---------- rayons de lumière (fond) ---------- */
+const R=$('#rays').getContext('2d');
+function rays(t){R.clearRect(0,0,1080,1920);const cx=540,cy=820;
+  const warm=t<10.2||t>=24;R.fillStyle='#0b0806';R.fillRect(0,0,1080,1920);if(!warm)return;
+  const g=R.createRadialGradient(cx,cy,0,cx,cy,1100);g.addColorStop(0,'rgba(255,214,150,.95)');g.addColorStop(.25,'rgba(255,140,50,.55)');g.addColorStop(.6,'rgba(90,30,8,.35)');g.addColorStop(1,'rgba(0,0,0,0)');
+  R.fillStyle=g;R.fillRect(0,0,1080,1920);
+  R.save();R.translate(cx,cy);R.rotate(t*.04);R.globalCompositeOperation='lighter';
+  for(let i=0;i<36;i++){const a=i/36*Math.PI*2,w=.025+.03*rnd(i),al=.05+.07*rnd(i+9)*(.7+.3*Math.sin(t*2+i));
+    R.fillStyle=`rgba(255,190,110,${al})`;R.beginPath();R.moveTo(0,0);R.arc(0,0,1500,a,a+w);R.closePath();R.fill();}
+  R.restore();
+  // brume en bas
+  const f=R.createLinearGradient(0,1500,0,1920);f.addColorStop(0,'rgba(0,0,0,0)');f.addColorStop(1,'rgba(20,10,5,.9)');R.fillStyle=f;R.fillRect(0,1500,1080,420);}
+/* ---------- braises ---------- */
+const E=$('#embers').getContext('2d');
+function embers(t){E.clearRect(0,0,1080,1920);for(let i=0;i<70;i++){const sp=40+60*rnd(i),y=1960-((t*sp+rnd(i+1)*1960)%2000),x=rnd(i+2)*1080+Math.sin(t*1.5+i)*30,r=1.5+3*rnd(i+3);
+  E.fillStyle=`rgba(255,${120+80*rnd(i+4)|0},40,${.35+.5*rnd(i+5)})`;E.beginPath();E.arc(x,y,r,0,7);E.fill();}}
+
+function anim(it,t){const p=clamp((t-it.at)/it.d);let op=t>=it.at?1:0,tr='';
+  switch(it.an){case'fade':op=p;break;case'up':op=p;tr=`translateY(${(1-ease(p))*40}px)`;break;
+  case'zoomin':op=p;tr=`scale(${1.6-.6*ease(p)})`;break;case'pop':tr=`scale(${t<it.at?0:1+.3*Math.sin(Math.PI*clamp((t-it.at)/.3))})`;break;
+  case'slam':op=p;tr=`scale(${2.2-1.2*ease(p)})`;break;case'rise':op=p;tr=`translateY(${(1-ease(p))*260}px)`;break;
+  case'write':it.e.style.clipPath=`inset(0 ${(1-ease(p))*100}% 0 0)`;break;
+  case'slideL':tr=`translateX(${(1-ease(clamp((t-it.at)/.35)))*-1080}px)`;break;case'slideR':tr=`translateX(${(1-ease(clamp((t-it.at)/.35)))*1080}px)`;break;
+  case'slideD':tr=`translateY(${(1-ease(clamp((t-it.at)/.35)))*-900}px)`;break;case'slideU':tr=`translateY(${(1-ease(clamp((t-it.at)/.35)))*900}px)`;break;
+  case'open':it.e.style.clipPath=`inset(${(1-ease(clamp((t-it.at)/.4)))*50}% 0)`;break;case'none':op=1;break;}
+  if(it.until!=null&&t>=it.until)op=0;
+  it.e.style.opacity=op;if(it.an!=='write'&&it.an!=='open')it.e.style.transform=tr;
+  if(it.zoom){const z=it.zoom,q=clamp((t-z.a)/(z.b-z.a));z.m.style.transform=`scale(${z.z0+(z.z1-z.z0)*q})`;}}
+
+async function render(t){
+  rays(t);embers(t);
+  for(const l of layers){const on=t>=l.a&&t<l.b;l.d.style.visibility=on?'visible':'hidden';if(!on)continue;for(const it of l.items)anim(it,t);if(l.fx)l.fx(t);}
+  // pulsation sur les temps forts
+  let k=0;for(const b of BEATS){const d=t-b;if(d>=0&&d<.18)k=Math.max(k,1-d/.18);}
+  $('#layers').style.transform=`scale(${1+.012*k})`;
+  let f=0;for(const b of FLASH){const d=t-b;if(d>=0&&d<.35)f=Math.max(f,d<.05?.9:.9*(1-(d-.05)/.3));}
+  for(const b of SOFT){const d=t-b;if(d>=0&&d<.18)f=Math.max(f,.35*(1-d/.18));}
+  $('#flash').style.opacity=f;
+  $('#black').style.opacity=t>DUR-.7?clamp((t-(DUR-.7))/.7):(t<.15?1-t/.15:0);
+  const w=[];for(const v of vids){const on=t>=v.l.a&&t<v.l.b&&t>=v.start&&t<v.end;if(!on)continue;const ct=Math.min(v.from+(t-v.start)*v.rate,(v.m.duration||8)-.05);
+    if(Math.abs(v.m.currentTime-ct)>.001){w.push(new Promise(r=>{v.m.addEventListener('seeked',r,{once:true});setTimeout(r,3000);}));v.m.currentTime=ct;}}
+  await Promise.all(w);
+}
+function thumb(){return render(30)}
+render(0);
+</script></body></html>

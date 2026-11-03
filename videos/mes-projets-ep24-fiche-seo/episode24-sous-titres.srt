@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,240
+Ta recette. Son vrai coût.
+
+2
+00:00:02,250 --> 00:00:04,610
+Voici la fiche technique FoodEatUp, un de mes projets.
+
+3
+00:00:04,930 --> 00:00:07,130
+Tu choisis ton plat et tu réponds à quelques questions.
+
+4
+00:00:07,430 --> 00:00:09,530
+Tu ajoutes tes prix, ou la photo d'une facture.
+
+5
+00:00:09,770 --> 00:00:11,850
+Tu découvres ton coût matière et ta marge.
+
+6
+00:00:12,030 --> 00:00:14,090
+Tu reçois ta fiche technique, avec tes visuels.
+
+7
+00:00:14,270 --> 00:00:15,970
+C'est gratuit, sans carte bancaire.
+
+8
+00:00:16,130 --> 00:00:18,780
+Le lien est sous la vidéo : clique sur « Voir le projet ».

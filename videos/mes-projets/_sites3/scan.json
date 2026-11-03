@@ -1,0 +1,202 @@
+{
+ "rapidocrm-terrain": {
+  "title": "RapidoCRM Terrain · La prospection terrain qui remplit votre CRM",
+  "desc": "Application mobile Android et iPhone : ajoutez un prospect en 30 secondes, sondage, roue des cadeaux, consentement tracé, tout part dans RapidoCRM.",
+  "og": "https://terrain.rapido-crm.com/__l5e/assets-v1/f64f4c9a-5b26-429d-ba49-5346d98fad9e/rapidocrm-terrain-partage.jpg",
+  "icon": "https://terrain.rapido-crm.com/favicon.png",
+  "h1": [
+   "La prospection terrain qui remplit votre CRM toute seule"
+  ],
+  "h2": [
+   "RapidoCRM Terrain en 36 secondes",
+   "Sur le terrain, en trois gestes",
+   "Le téléphone passe dans les mains du prospect",
+   "Des contacts propres, avec la preuve",
+   "Comment ça marche pour l'équipe",
+   "Le pilotage reste dans RapidoCRM",
+   "Essayez le parcours complet",
+   "Une offre, adaptée à votre équipe",
+   "Questions fréquentes"
+  ],
+  "font": "Lato, system-ui, sans-serif",
+  "bodyfont": "Lato, system-ui, sans-serif",
+  "bg": "oklch(0.9672 0.0041 271.37)",
+  "vars": {
+   "--primary": "oklch(47.24% .1107 144.16)",
+   "--secondary": "oklch(93.47% .0068 277.16)",
+   "--accent": "oklch(93.47% .0068 277.16)",
+   "--background": "oklch(96.72% .0041 271.37)",
+   "--foreground": "oklch(30.92% 0 0)",
+   "--brand": "oklch(67.31% .1624 144.21)",
+   "--muted": "oklch(93.47% .0068 277.16)"
+  },
+  "btn": [
+   [
+    "oklch(0.4724 0.1107 144.16)",
+    7
+   ],
+   [
+    "oklch(0.9672 0.0041 271.37)",
+    2
+   ]
+  ],
+  "videos": [
+   "https://terrain.rapido-crm.com/__l5e/assets-v1/cd1fa6d3-0a1c-408d-a1cc-527358f673cb/rapidocrm-terrain.mp4"
+  ],
+  "imgs": [
+   "https://terrain.rapido-crm.com/__l5e/assets-v1/7eab6462-fac9-4974-8279-756cfbb44aa5/rapidocrm-icone.png",
+   "https://terrain.rapido-crm.com/__l5e/assets-v1/0cd704ef-f76d-440b-98ea-d3581bcfe659/rapidocrm-wordmark.png",
+   "https://terrain.rapido-crm.com/__l5e/assets-v1/7eab6462-fac9-4974-8279-756cfbb44aa5/rapidocrm-icone.png",
+   "https://terrain.rapido-crm.com/__l5e/assets-v1/0cd704ef-f76d-440b-98ea-d3581bcfe659/rapidocrm-wordmark.png"
+  ]
+ },
+ "rapidosoftware": {
+  "title": "RapidoSoftware",
+  "desc": "RapidoSoftware propose des solutions digitales rapides et sur mesure. Boostez votre activité dès maintenant, contactez-nous pour un accompagnement personnalisé\n",
+  "og": "https://www.rapidosoftware.com/assets/img/home/logo_icon.png",
+  "icon": "https://rapidosoftware.com/assets/img/home/logo_icon.png",
+  "h1": [
+   "RapidoSoftware"
+  ],
+  "h2": [
+   "Le tout-en-un pour propulser votre activité !",
+   "Pourquoi choisir RapidoSoftware ?",
+   "Nos dernières publications et événements",
+   "FAQ",
+   "Qu’est-ce que RapidoSoftware ?",
+   "Faut-il installer RapidoSoftware ?",
+   "Comment accéder à mon espace RapidoSoftware ?",
+   "À qui s’adresse RapidoSoftware ?",
+   "Qu’est-ce que RapidoCMS ?",
+   "Quels sont les avantages de RapidoCMS ?",
+   "Qu’est-ce que RapidoCRM ?",
+   "Quels sont ses principaux atouts ?"
+  ],
+  "font": "\"SF Pro Display\"",
+  "bodyfont": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+  "bg": "rgb(243, 244, 247)",
+  "vars": {},
+  "btn": [
+   [
+    "rgb(243, 244, 247)",
+    24
+   ]
+  ],
+  "videos": [],
+  "imgs": [
+   "https://rapidosoftware.com/assets/img/home/logo_soft.png",
+   "https://rapidosoftware.com/assets/img/home/Group%201.png",
+   "https://rapidosoftware.com/assets/img/home/Saly-38.png",
+   "https://rapidosoftware.com/assets/img/home/1%201.png",
+   "https://rapidosoftware.com/assets/img/home/Saly-12.png",
+   "https://rapidosoftware.com/assets/img/home/unsplash_xG8IQMqMITM.png",
+   "https://rapidosoftware.com/assets/img/home/unsplash_uA8YFOSzKxo.png",
+   "https://rapidosoftware.com/assets/img/home/logo_soft_2.png"
+  ]
+ },
+ "braindcode": {
+  "title": "Agence Web à Paris - création de site internet",
+  "desc": "Braindcode, agence web Paris, crée des sites et applications mobiles : vitrine, e-commerce, webdesign pour booster votre présence en ligne.",
+  "og": "public\\img\\logo png\\Logo_braindcode.jpg",
+  "icon": "https://braindcode.com/landingpage/assets/img/logos/Icon_BraindCode_Blue.png",
+  "h1": [
+   "Agence web à Paris"
+  ],
+  "h2": [
+   "90% des rêves ne se réalisent pas. Le vôtre fera la différence. Créez votre site web ou application mobile.",
+   "Vous avez l'envie d'innover\nMais",
+   "La recette de votre\nsuccès",
+   "Nos réalisations sur\nmesure",
+   "Braindcode c’est\nvous !",
+   "Ils nous font confiance",
+   "BraindCode accompagne plus 30\nStart-up",
+   "Nos Expertises pour décoder votre\nprojet",
+   "Notre décodage de\nDéveloppement",
+   "Nos Expertises pour décoder votre\ntechnologies",
+   "Ils parlent de\nnous",
+   "Suivez les dernières innovations du moment avec\nBraindCode"
+  ],
+  "font": "Poppins",
+  "bodyfont": "Poppins",
+  "bg": "rgb(247, 247, 255)",
+  "vars": {},
+  "btn": [
+   [
+    "rgb(0, 152, 243)",
+    21
+   ],
+   [
+    "rgb(17, 135, 234)",
+    1
+   ]
+  ],
+  "videos": [],
+  "imgs": [
+   "https://braindcode.com/landingpage/assets/img/logos/BraindCode_avec_texte_a_droit_.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/home/programming.png",
+   "https://braindcode.com/landingpage/assets/img/home/iphone.png",
+   "https://braindcode.com/landingpage/assets/img/home/graphic_design_hx.png",
+   "https://braindcode.com/landingpage/assets/img/illustrations/gif/slide.gif",
+   "https://braindcode.com/landingpage/assets/img/logos/stock.png",
+   "https://braindcode.com/landingpage/assets/img/logos/cocui.png"
+  ]
+ },
+ "rapidorh": {
+  "title": "Solutions efficaces et personnalisées pour votre entreprise",
+  "desc": "RapidoSoftware crée des solutions digitales sur mesure pour booster votre activité. Contactez-nous vite et transformez vos projets en succès dès aujourd’hui !\n",
+  "og": "https://www.rapidosoftware.com/assets/img/home/logo_icon.png",
+  "icon": "https://rapidosoftware.com/assets/img/home/logo_icon.png",
+  "h1": [
+   "Découvrir RapidoRH"
+  ],
+  "h2": [
+   "Optimisez la planification, gérez vos projets en temps réel et simplifiez vos processus RH. Essayez dès maintenant et boostez votre productivité !",
+   "Nos Solutions",
+   "Abonnements RapidoRh"
+  ],
+  "font": "\"SF Pro Display\"",
+  "bodyfont": "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", \"Liberation Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+  "bg": "rgb(243, 244, 247)",
+  "vars": {},
+  "btn": [
+   [
+    "rgb(243, 244, 247)",
+    7
+   ],
+   [
+    "rgb(126, 87, 194)",
+    1
+   ]
+  ],
+  "videos": [],
+  "imgs": [
+   "https://rapidosoftware.com/assets/img/home/logo_soft.png",
+   "https://rapidosoftware.com/assets/img/home/bg-dark.png",
+   "https://rapidosoftware.com/assets/img/home/capture_rh.png",
+   "https://rapidosoftware.com/assets/img/home/rh.png",
+   "https://rapidosoftware.com/assets/img/rh/Lawyer.png",
+   "https://rapidosoftware.com/assets/img/rh/Planner.png",
+   "https://rapidosoftware.com/assets/img/rh/Web%20Analytics.png",
+   "https://rapidosoftware.com/assets/img/rh/Traveler.png",
+   "https://rapidosoftware.com/assets/img/home/logo_soft_2.png"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,070
+La prospection terrain qui remplit ton CRM toute seule.
+
+2
+00:00:03,350 --> 00:00:05,630
+Voici RapidoCRM Terrain, un de mes projets.
+
+3
+00:00:05,950 --> 00:00:08,750
+Devant la boutique, tu ajoutes le prospect en quelques secondes.
+
+4
+00:00:08,750 --> 00:00:11,710
+Puis tu tends ton téléphone : un sondage ou une roue des cadeaux.
+
+5
+00:00:11,910 --> 00:00:14,530
+Le client laisse ses coordonnées, avec son accord enregistré.
+
+6
+00:00:14,750 --> 00:00:17,830
+Et tout arrive dans RapidoCRM, sans rien ressaisir le soir.
+
+7
+00:00:18,110 --> 00:00:20,950
+Une relance ou un rendez-vous se crée en un seul toucher.
+
+8
+00:00:20,930 --> 00:00:23,580
+Le lien est sous la vidéo : clique sur « Voir le projet ».

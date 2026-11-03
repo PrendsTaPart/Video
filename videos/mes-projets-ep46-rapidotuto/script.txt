@@ -1,0 +1,8 @@
+Enregistre ton tuto une fois. L'avatar répond à tes clients.
+Voici RapidoTuto, un de mes projets.
+Tu enregistres ton écran, une seule fois.
+RapidoTuto en fait un tutoriel vidéo, avec un avatar et une voix.
+Un assistant répond aux questions de tes clients.
+Et il leur montre le bon passage de la vidéo.
+Fini de répéter la même réponse toute la journée.
+Le lien est sous la vidéo : clique sur « Voir le projet ».

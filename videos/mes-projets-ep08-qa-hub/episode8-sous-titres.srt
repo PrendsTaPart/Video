@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,410
+Mes développeurs ne cherchent plus les bugs. Claude les trouve.
+
+2
+00:00:03,930 --> 00:00:05,730
+Voici QA Hub, un de mes projets.
+
+3
+00:00:06,010 --> 00:00:08,590
+Claude teste chaque outil de mes logiciels, un par un.
+
+4
+00:00:08,750 --> 00:00:10,950
+Quand quelque chose casse, il écrit un ticket complet.
+
+5
+00:00:11,190 --> 00:00:13,490
+Mon développeur reçoit la correction déjà expliquée.
+
+6
+00:00:13,630 --> 00:00:15,710
+Toute l'équipe voit la même liste, au même endroit.
+
+7
+00:00:15,950 --> 00:00:16,330
+C'est gratuit.
+
+8
+00:00:16,670 --> 00:00:19,380
+Le lien est sous la vidéo : clique sur « Voir le projet ».

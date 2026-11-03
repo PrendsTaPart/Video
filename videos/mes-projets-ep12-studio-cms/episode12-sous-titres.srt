@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,110
+Un épisode par jour sur un restaurant. Sans tournage.
+
+2
+00:00:03,370 --> 00:00:05,590
+Voici FoodEatUp Social, un de mes projets.
+
+3
+00:00:05,890 --> 00:00:08,050
+Une série vidéo qui raconte la vie d'un restaurant.
+
+4
+00:00:08,370 --> 00:00:11,200
+Une scène part en vrille, puis la fonction qui l'aurait évitée.
+
+5
+00:00:11,230 --> 00:00:14,970
+Chaque épisode est monté, planifié et publié avec RapidoCMS.
+
+6
+00:00:15,250 --> 00:00:17,710
+Il y a aussi des clips musicaux et le calendrier de diffusion.
+
+7
+00:00:17,990 --> 00:00:19,990
+C'est la démonstration de ma méthode, en public.
+
+8
+00:00:20,370 --> 00:00:23,140
+Le lien est sous la vidéo : clique sur « Voir le projet ».

@@ -1,0 +1,35 @@
+1
+00:00:00,350 --> 00:00:03,270
+Personne n'en parle : Claude peut faire des dessins animés pour YouTube.
+
+2
+00:00:03,730 --> 00:00:04,470
+Tu lui donnes une idée.
+
+3
+00:00:04,810 --> 00:00:07,150
+Il écrit l'histoire, les personnages et chaque scène.
+
+4
+00:00:07,370 --> 00:00:10,770
+Puis il fabrique chaque scène : papier, feutres, étoiles qui bougent.
+
+5
+00:00:10,930 --> 00:00:13,100
+Il ajoute un narrateur calme et des bruitages.
+
+6
+00:00:13,090 --> 00:00:15,570
+Ton histoire est longue ? Il continue, scène après scène.
+
+7
+00:00:15,810 --> 00:00:17,930
+Tu la veux de nuit ? Tu lui dis : passe-la de nuit.
+
+8
+00:00:18,190 --> 00:00:22,230
+Pour la publier, je passe par Publisher Bot : miniature, titre et mise en ligne.
+
+9
+00:00:22,430 --> 00:00:24,850
+Écris DESSIN en commentaire, je t'envoie la méthode.

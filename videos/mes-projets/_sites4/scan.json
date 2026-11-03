@@ -1,0 +1,417 @@
+{
+ "rapidomeet": {
+  "title": "RapidoMeet — Vos réunions se transforment en actions automatiques",
+  "desc": "RapidoMeet transcrit vos visioconférences et déclenche automatiquement les actions : CRM mis à jour, tâches créées, rapport WhatsApp en 3 minutes. Essai gratuit 14 jours.",
+  "og": "/og-image.png",
+  "icon": "https://rapidomeet.lovable.app/pwa/icons/icon-192.png",
+  "h1": [
+   "The meeting ends.\nThe actions begin."
+  ],
+  "h2": [
+   "Your decisions die\nbetween two meetings.",
+   "Audio in.\nActions out.",
+   "Everything that should\nalready exist.",
+   "S'intègre en 2 minutes\navec ce que vous avez déjà.",
+   "Votre agent IA\ntourne 24h/24.\nSans vous.",
+   "Un abonnement.\nUne instance OpenClaw.\nDes actions illimitées.",
+   "Real results.\nReal teams.",
+   "Everything you\nwant to know.",
+   "Your next meeting\nends with actions."
+  ],
+  "font": "Nunito, sans-serif",
+  "bodyfont": "Quicksand, sans-serif",
+  "bg": "rgb(250, 250, 250)",
+  "vars": {
+   "--primary": "326 82% 52%",
+   "--secondary": "240 14% 96%",
+   "--accent": "263 84% 58%",
+   "--background": "0 0% 98%",
+   "--foreground": "240 25% 6%",
+   "--muted": "240 14% 96%"
+  },
+  "btn": [
+   [
+    "rgb(243, 243, 246)",
+    7
+   ]
+  ],
+  "videos": [
+   "https://rapidomeet.lovable.app/videos/rapidomeet-demo.mp4"
+  ],
+  "imgs": [
+   "https://rapidomeet.lovable.app/assets/logo-google-meet-CAnLs412.png",
+   "https://rapidomeet.lovable.app/assets/logo-teams-D1WxwOFA.png",
+   "https://rapidomeet.lovable.app/assets/logo-n8n-B-jGFR2J.png",
+   "https://rapidomeet.lovable.app/assets/logo-gcalendar-C5H-3EfB.png",
+   "https://rapidomeet.lovable.app/assets/logo-whatsapp-tVWxoX_7.png",
+   "https://rapidomeet.lovable.app/assets/logo-google-meet-CAnLs412.png",
+   "https://rapidomeet.lovable.app/assets/logo-teams-D1WxwOFA.png",
+   "https://rapidomeet.lovable.app/assets/logo-n8n-B-jGFR2J.png",
+   "https://rapidomeet.lovable.app/assets/logo-gcalendar-C5H-3EfB.png",
+   "https://rapidomeet.lovable.app/assets/logo-whatsapp-tVWxoX_7.png",
+   "https://rapidomeet.lovable.app/assets/logo-telegram-B-pU6d6b.png",
+   "https://rapidomeet.lovable.app/assets/logo-gmail-Duk64lj8.png",
+   "https://rapidomeet.lovable.app/assets/logo-discord-D4tL-iiU.png",
+   "https://rapidomeet.lovable.app/assets/logo-slack-BAmq2JKD.png"
+  ]
+ },
+ "webinaire-rapidocms": {
+  "title": "Lovable App",
+  "desc": "Lovable Generated Project",
+  "og": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6e7c1859-7d7c-4cb5-87c1-363a4fde56e5/id-preview-5c5c4b38--130c31bb-6a1f-49c6-af0c-e190f267173e.lovable.app-1771264039163.png",
+  "icon": "",
+  "h1": [
+   "Créez des webinaires qui transforment vos participants en clients fidèles"
+  ],
+  "h2": [
+   "Tout ce dont vous avez besoin, rien de superflu",
+   "Ils ont transformé leur activité",
+   "Un plan pour chaque ambition",
+   "Questions fréquentes",
+   "Prêt à transformer vos formations ?"
+  ],
+  "font": "Inter, sans-serif",
+  "bodyfont": "Inter, sans-serif",
+  "bg": "rgb(249, 250, 251)",
+  "vars": {
+   "--primary": "248 72% 59%",
+   "--secondary": "160 100% 36%",
+   "--accent": "45 97% 71%",
+   "--background": "210 17% 98%",
+   "--foreground": "192 10% 20%",
+   "--muted": "210 17% 95%"
+  },
+  "btn": [
+   [
+    "rgb(249, 250, 251)",
+    4
+   ],
+   [
+    "rgb(95, 75, 226)",
+    3
+   ],
+   [
+    "rgb(0, 184, 122)",
+    1
+   ]
+  ],
+  "videos": [],
+  "imgs": []
+ },
+ "formation-youtube": {
+  "title": "Formation Braindcode - YouTube",
+  "desc": "Share your videos with friends, family, and the world",
+  "og": "https://yt3.googleusercontent.com/Cs1ncKl_lHBgLU1Wwgmxec86CFA61VhElVdJ3n-yklXtYa9UbxuaCMImN5ErWrlZbdCUkCht=s900-c-k-c0x00ffffff-no-rj",
+  "icon": "https://www.youtube.com/s/desktop/e358493a/img/favicon.ico",
+  "h1": [
+   "",
+   ""
+  ],
+  "h2": [
+   "Videos",
+   "Shorts",
+   "Playlists"
+  ],
+  "font": "Roboto, Arial, sans-serif",
+  "bodyfont": "Roboto, Arial, sans-serif",
+  "bg": "rgba(0, 0, 0, 0)",
+  "vars": {},
+  "btn": [
+   [
+    "rgb(15, 15, 15)",
+    2
+   ],
+   [
+    "rgba(0, 0, 0, 0.05)",
+    1
+   ],
+   [
+    "rgb(248, 248, 248)",
+    1
+   ]
+  ],
+  "videos": [],
+  "imgs": [
+   "https://i.ytimg.com/vi/NA-iCa67Aws/hq720.jpg?sqp=-oaymwFBCOgCEMoBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGCggNCh_MA8=&rs=AOn4CLDVbAuxo2BcGMezRK68L6MRTzf4KA",
+   "https://i.ytimg.com/vi/tS9-8mhUfzc/hq720.jpg?sqp=-oaymwFBCOgCEMoBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGBMgOyh_MA8=&rs=AOn4CLB-p9Hi_BHVyRMcjTFNWiAHrMuqbQ",
+   "https://i.ytimg.com/vi/RNozfqkMFOM/hq720.jpg?sqp=-oaymwFBCOgCEMoBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGHIgRihyMA8=&rs=AOn4CLBCvormgM1nd8T7Ors_RJ9bzChCVg",
+   "https://i.ytimg.com/vi/LUzTHBXEqLs/hq720.jpg?sqp=-oaymwFBCOgCEMoBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGFkgXShlMA8=&rs=AOn4CLD6dJ4RoaVMD4k6KIL-xWtE7rHICQ",
+   "https://i.ytimg.com/vi/iOGJnvd1bdU/hq720.jpg?sqp=-oaymwFBCOgCEMoBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLAKewDs5eqXeo5BRfloD-dWbsZTew",
+   "https://i.ytimg.com/vi/MmRgCqxrAlQ/hq720.jpg?sqp=-oaymwFBCOgCEMoBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGUgWShdMA8=&rs=AOn4CLBEPq6mhb1TC7yY6YA-0owvopRusw",
+   "https://i.ytimg.com/vi/uwjfllg-N0M/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCSeU6q4dMu726P6T2Im2ZOtxokTw"
+  ]
+ },
+ "releasesync": {
+  "title": "Connexion — ReleaseSync",
+  "desc": "Connectez-vous à ReleaseSync avec votre compte Google.",
+  "og": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_09b7bxvrx18yfrqf6pwr4wp2bm/da55ac35f8cd1ba3379af67b365ca3f3_1793177940223.png",
+  "icon": "https://play-track-release-control.lovable.app/favicon.ico",
+  "h1": [
+   "ReleaseSync"
+  ],
+  "h2": [],
+  "font": "Geist, ui-sans-serif, system-ui, sans-serif",
+  "bodyfont": "Geist, ui-sans-serif, system-ui, sans-serif",
+  "bg": "oklch(0.985 0.002 286)",
+  "vars": {
+   "--primary": "oklch(55% .2 259)",
+   "--secondary": "oklch(95.5% .003 286)",
+   "--accent": "oklch(94.5% .004 286)",
+   "--background": "oklch(98.5% .002 286)",
+   "--foreground": "oklch(21% .006 286)",
+   "--muted": "oklch(95.5% .003 286)"
+  },
+  "btn": [
+   [
+    "oklch(0.985 0.002 286)",
+    1
+   ]
+  ],
+  "videos": [],
+  "imgs": []
+ },
+ "rapidoin": {
+  "title": "RapidoIn — Publiez sur LinkedIn chaque semaine, sans y passer vos soirées",
+  "desc": "Écrivez, fabriquez vos visuels, faites relire par des pairs, programmez et publiez sur LinkedIn depuis un seul studio. Vous validez chaque envoi.",
+  "og": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_72q0ej8w0j88frwbdb8t98xpwt/916bd563c5b3931bb502e68231b5c10b_1792008108632.png",
+  "icon": "https://linkedin.rapidocms.com/favicon.png",
+  "h1": [
+   "Publiez sur LinkedIn chaque semaine, sans y passer vos soirées."
+  ],
+  "h2": [
+   "Le problème n'est pas votre motivation. C'est que tout est éparpillé.",
+   "Quatre étapes, une seule session.",
+   "Des bannières et des carrousels prêts à publier, à vos couleurs.",
+   "Tout ce dont vous avez besoin, rien qui vous mette en danger.",
+   "L'application, telle qu'elle est sur votre téléphone.",
+   "Questions fréquentes",
+   "Votre prochain post peut partir aujourd'hui."
+  ],
+  "font": "Inter, ui-sans-serif, system-ui, sans-serif",
+  "bodyfont": "Inter, ui-sans-serif, system-ui, sans-serif",
+  "bg": "oklch(0.955 0.008 85)",
+  "vars": {
+   "--primary": "oklch(49% .16 254)",
+   "--secondary": "oklch(95.5% .008 85)",
+   "--accent": "oklch(94% .01 250)",
+   "--background": "oklch(95.5% .008 85)",
+   "--foreground": "oklch(19% 0 0)",
+   "--muted": "oklch(96.8% .004 85)"
+  },
+  "btn": [
+   [
+    "oklch(0.7 0.15 232)",
+    4
+   ]
+  ],
+  "videos": [],
+  "imgs": [
+   "https://linkedin.rapidocms.com/assets/rapidoin-logo-DCkMv8d1.png",
+   "https://linkedin.rapidocms.com/screens/studio.png",
+   "https://linkedin.rapidocms.com/screens/community.png",
+   "https://linkedin.rapidocms.com/assets/example-banner-BDx8DC5D.jpg",
+   "https://linkedin.rapidocms.com/assets/example-carousel-1-BwNI7Xfv.jpg",
+   "https://linkedin.rapidocms.com/assets/example-carousel-2-D2mffSXt.jpg",
+   "https://linkedin.rapidocms.com/assets/example-carousel-3-DTZpogo-.jpg",
+   "https://linkedin.rapidocms.com/screens/calendar.png",
+   "https://linkedin.rapidocms.com/screens/circles.png",
+   "https://linkedin.rapidocms.com/screens/analytics.png",
+   "https://linkedin.rapidocms.com/screens/notifications.png",
+   "https://linkedin.rapidocms.com/assets/rapidoin-logo-DCkMv8d1.png"
+  ]
+ },
+ "plateforme-assurance": {
+  "title": "Page d’accueil",
+  "desc": "",
+  "og": "",
+  "icon": "https://plateformeassurance.fr/assets/img/home/logo_icon.png",
+  "h1": [
+   "S’adresse aux étudiants et aux professionnels"
+  ],
+  "h2": [
+   "Qui sommes-nous ?",
+   "Nos services",
+   "Vous êtes"
+  ],
+  "font": "Montserrat",
+  "bodyfont": "\"Open Sans\", sans-serif",
+  "bg": "rgb(249, 249, 249)",
+  "vars": {},
+  "btn": [
+   [
+    "rgb(69, 64, 223)",
+    9
+   ],
+   [
+    "rgb(245, 54, 92)",
+    6
+   ],
+   [
+    "rgb(38, 33, 197)",
+    2
+   ],
+   [
+    "rgba(237, 235, 235, 0.6)",
+    2
+   ]
+  ],
+  "videos": [],
+  "imgs": [
+   "https://plateformeassurance.fr/assets/img/home/Plateforme%20Assurance%20v1.png",
+   "https://plateformeassurance.fr/assets/img/home/Rectangle%20470.png",
+   "https://plateformeassurance.fr/assets/img/home/Rectangle%20471.png",
+   "https://plateformeassurance.fr/assets/img/home/Rectangle%20472.png",
+   "https://plateformeassurance.fr/assets/img/home/Rectangle%20473.png",
+   "https://plateformeassurance.fr/assets/img/icons/CV.png",
+   "https://plateformeassurance.fr/assets/img/icons/Job%20Seeker.png",
+   "https://plateformeassurance.fr/assets/img/icons/Consultation.png",
+   "https://plateformeassurance.fr/assets/img/icons/Handshake.png",
+   "https://plateformeassurance.fr/assets/img/home/Chatting.png",
+   "https://plateformeassurance.fr/assets/img/home/akson-1K8pIbIrhkQ-unsplash.png",
+   "https://plateformeassurance.fr/assets/img/home/akson-1K8pIbIrhkQ-unsplash.png",
+   "https://plateformeassurance.fr/assets/img/home/akson-1K8pIbIrhkQ-unsplash.png",
+   "https://plateformeassurance.fr/assets/img/icon/particulier/witness.svg",
+   "https://plateformeassurance.fr/assets/img/icon/particulier/new-product.png",
+   "https://plateformeassurance.fr/assets/img/icon/particulier/conversation%20(5).png",
+   "https://plateformeassurance.fr/assets/img/icon/particulier/schedule.png",
+   "https://plateformeassurance.fr/assets/img/icon/organisme/family.png",
+   "https://plateformeassurance.fr/assets/img/icon/organisme/quality%20(1).png",
+   "https://plateformeassurance.fr/assets/img/icon/organisme/group%20(3).png",
+   "https://plateformeassurance.fr/assets/img/icon/organisme/training%20(1).png",
+   "https://plateformeassurance.fr/assets/img/icon/organisme/chat.png",
+   "https://plateformeassurance.fr/assets/img/icon/conseil/target%20(1).png",
+   "https://plateformeassurance.fr/assets/img/icon/conseil/formation.svg",
+   "https://plateformeassurance.fr/assets/img/icon/conseil/announcement.png"
+  ]
+ },
+ "mon-academie": {
+  "title": "FoodEatUp — Gérer son restaurant en parlant à une IA",
+  "desc": "FoodEatUp connecte la gestion complète de votre restaurant — stocks, HACCP, équipe, facturation — à votre IA. Pilotez tout depuis une conversation, ou depuis WhatsApp.",
+  "og": "https://academie.foodeatup.com/__l5e/assets-v1/e5478551-7f34-44f4-8e49-4590f43803f1/foodeatup-mark.png",
+  "icon": "https://academie.foodeatup.com/icons/favicon-32.png",
+  "h1": [
+   "Le restaurant\nqui se gère\nen parlant à une IA."
+  ],
+  "h2": [
+   "Tout votre restaurant, piloté par l'IA",
+   "FoodEatUp en images",
+   "Et ses modules complémentaires",
+   "Trois logiciels, une même conversation.",
+   "Comment ça marche",
+   "Configurez vos outils en quelques minutes",
+   "Un restaurant qui se pilote en parlant.",
+   "Connectez comme vous voulez",
+   "Maîtriser FoodEatUp",
+   "Croisez nos MCP avec tout votre écosystème",
+   "Les prompts qui cartonnent",
+   "Prêt à faire tourner\nvotre restaurant tout seul ?"
+  ],
+  "font": "Poppins, \"Helvetica Neue\", Arial, sans-serif",
+  "bodyfont": "Poppins, \"Helvetica Neue\", Arial, sans-serif",
+  "bg": "rgb(255, 255, 255)",
+  "vars": {
+   "--primary": "#007bff",
+   "--secondary": "#fcf9e6",
+   "--accent": "orange",
+   "--background": "#fff",
+   "--foreground": "#0f1a23",
+   "--muted": "#f4f6f9"
+  },
+  "btn": [
+   [
+    "rgb(255, 165, 0)",
+    3
+   ],
+   [
+    "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+    2
+   ],
+   [
+    "rgb(15, 26, 35)",
+    2
+   ],
+   [
+    "oklab(0.604794 -0.0479087 -0.211175 / 0.05)",
+    1
+   ]
+  ],
+  "videos": [],
+  "imgs": [
+   "https://academie.foodeatup.com/__l5e/assets-v1/1cd23fb7-5722-488c-9657-86f1c9ff5460/foodeatup-wordmark.png",
+   "https://academie.foodeatup.com/__l5e/assets-v1/1ce3644b-fb70-40fd-aa55-ef0d3cb1307a/claude-logo.png",
+   "https://academie.foodeatup.com/__l5e/assets-v1/2344b4b6-eb0e-4385-a6fb-4b810c759023/openai-logo.png",
+   "https://academie.foodeatup.com/__l5e/assets-v1/79570b6a-9911-44a5-91bc-36828cc41be9/mistral-logo.jpeg",
+   "https://academie.foodeatup.com/__l5e/assets-v1/8aa64b89-2a1c-4578-8d9e-1d4d62be3a4f/foodeatup-stock-hero.png",
+   "https://academie.foodeatup.com/__l5e/assets-v1/43e383fd-b972-4d63-a89a-6cc978ab5677/foodeatup-predibot.png",
+   "https://academie.foodeatup.com/__l5e/assets-v1/e3c04fbd-2906-4114-9481-eaa6ab031ae3/foodeatup-comptabilite.png",
+   "https://academie.foodeatup.com/__l5e/assets-v1/9df1c6f4-05fd-41bc-a08e-9f3d5feb47f0/foodeatup-marche.jpg",
+   "https://academie.foodeatup.com/__l5e/assets-v1/b3d8d6d0-3d73-4fbb-a92e-2741c5245ae8/foodeatup-cuisine.jpg",
+   "https://academie.foodeatup.com/__l5e/assets-v1/d6908ead-6526-4f20-9c8b-72ba0b74eecf/foodeatup-restaurateur.jpg",
+   "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/bibliotheque/CGuynobcv7eF4yFZLvARq1GU0KLqA5bVlcfYxJgx.png",
+   "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/bibliotheque/Xzu3D6aqmouslq55LYhOR5iAPnmKxqoQJ6UuvG0P.png",
+   "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/bibliotheque/VOlevQVkp7sfjObvcYfRtCMsqKb1oW4ujuo1vt9a.png",
+   "https://academie.foodeatup.com/__l5e/assets-v1/e10f9d48-ecf6-49e6-b25c-1deb2ec20a6b/rapido-trio.png",
+   "https://academie.foodeatup.com/__l5e/assets-v1/e5478551-7f34-44f4-8e49-4590f43803f1/foodeatup-mark.png",
+   "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/bibliotheque/CGuynobcv7eF4yFZLvARq1GU0KLqA5bVlcfYxJgx.png",
+   "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/bibliotheque/Xzu3D6aqmouslq55LYhOR5iAPnmKxqoQJ6UuvG0P.png",
+   "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/bibliotheque/VOlevQVkp7sfjObvcYfRtCMsqKb1oW4ujuo1vt9a.png",
+   "https://academie.foodeatup.com/__l5e/assets-v1/1ce3644b-fb70-40fd-aa55-ef0d3cb1307a/claude-logo.png",
+   "https://academie.foodeatup.com/__l5e/assets-v1/2344b4b6-eb0e-4385-a6fb-4b810c759023/openai-logo.png",
+   "https://academie.foodeatup.com/__l5e/assets-v1/79570b6a-9911-44a5-91bc-36828cc41be9/mistral-logo.jpeg",
+   "https://academie.foodeatup.com/__l5e/assets-v1/1ce3644b-fb70-40fd-aa55-ef0d3cb1307a/claude-logo.png",
+   "https://academie.foodeatup.com/__l5e/assets-v1/2344b4b6-eb0e-4385-a6fb-4b810c759023/openai-logo.png",
+   "https://academie.foodeatup.com/__l5e/assets-v1/79570b6a-9911-44a5-91bc-36828cc41be9/mistral-logo.jpeg",
+   "https://academie.foodeatup.com/__l5e/assets-v1/1ce3644b-fb70-40fd-aa55-ef0d3cb1307a/claude-logo.png"
+  ]
+ },
+ "rapidotuto": {
+  "title": "RapidoTuto — tutoriels vidéo avec avatar IA et assistant client",
+  "desc": "Enregistrez votre écran une fois : RapidoTuto en fait un tutoriel vidéo avec avatar 3D et voix IA, puis un assistant répond à vos clients en leur montrant le bon passage.",
+  "og": "https://rapidotuto-base.lovable.app/media/og-image.png",
+  "icon": "https://rapidotuto-base.lovable.app/apple-touch-icon.png",
+  "h1": [
+   "Enregistrez votre tuto une fois. L'avatar répond à vos clients."
+  ],
+  "h2": [
+   "« Comment exporter ma facture ? » Pour la 40ᵉ fois.",
+   "Comment ça marche",
+   "Tout ce qu'il faut pour aider vos clients",
+   "Pour qui ?",
+   "Tarifs simples",
+   "Une démo sur votre cas",
+   "Questions fréquentes",
+   "Votre prochain tuto répond à votre place"
+  ],
+  "font": "Arial, Helvetica, sans-serif",
+  "bodyfont": "Arial, Helvetica, sans-serif",
+  "bg": "oklch(1 0 0)",
+  "vars": {
+   "--primary": "oklch(71% .16 233)",
+   "--secondary": "oklch(96.5% .003 247)",
+   "--accent": "oklch(96% .02 233)",
+   "--background": "oklch(100% 0 0)",
+   "--foreground": "oklch(31% 0 0)",
+   "--muted": "oklch(96.5% .003 247)"
+  },
+  "btn": [
+   [
+    "oklch(1 0 0)",
+    8
+   ],
+   [
+    "oklch(0.71 0.16 233)",
+    5
+   ]
+  ],
+  "videos": [
+   "https://rapidotuto-base.lovable.app/media/rapidotuto-presentation.mp4"
+  ],
+  "imgs": [
+   "https://rapidotuto-base.lovable.app/media/screens/storyboard.webp",
+   "https://rapidotuto-base.lovable.app/media/screens/recording.webp",
+   "https://rapidotuto-base.lovable.app/media/screens/studio.webp",
+   "https://rapidotuto-base.lovable.app/media/screens/assistant.webp",
+   "https://rapidotuto-base.lovable.app/media/screens/stats.webp"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,130
+Chaque table, à chaque instant. Sans aucune image.
+
+2
+00:00:03,530 --> 00:00:05,310
+Voici Salle Live, un de mes projets.
+
+3
+00:00:05,550 --> 00:00:08,290
+Un boîtier analyse la salle sur place, puis oublie l'image.
+
+4
+00:00:08,490 --> 00:00:10,450
+Il n'envoie que l'état des tables, rien d'autre.
+
+5
+00:00:10,650 --> 00:00:13,250
+Chaque table passe du vert au rouge, puis à l'orange.
+
+6
+00:00:13,410 --> 00:00:15,130
+Ta caisse FoodEatUp suit les commandes en direct.
+
+7
+00:00:15,330 --> 00:00:17,170
+Alertes et analyses suivent ton service.
+
+8
+00:00:17,490 --> 00:00:20,160
+Le lien est sous la vidéo : clique sur « Voir le projet ».

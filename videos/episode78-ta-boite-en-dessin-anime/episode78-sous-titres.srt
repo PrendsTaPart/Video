@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,450
+Et si ton entreprise devenait un dessin animé ?
+
+2
+00:00:02,750 --> 00:00:05,810
+Ton équipe, tes clients, ton comptoir, en personnages.
+
+3
+00:00:05,930 --> 00:00:07,870
+Tu racontes l'histoire à Claude, avec tes mots.
+
+4
+00:00:08,070 --> 00:00:11,110
+Il écrit le décor, les personnages, les voix et les sous-titres.
+
+5
+00:00:11,270 --> 00:00:13,350
+Ton ordinateur fabrique les images pendant la nuit.
+
+6
+00:00:13,570 --> 00:00:16,030
+Pas besoin de savoir coder : tu lui parles, il fait le reste.
+
+7
+00:00:16,310 --> 00:00:19,570
+C'est comme ça que je fais la série de FoodEatUp Social, un épisode par jour.
+
+8
+00:00:19,850 --> 00:00:22,190
+Écris KIT en commentaire, je t'envoie le pas à pas.

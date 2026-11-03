@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,150
+Mon assistant IA publie mes applications sur Google Play.
+
+2
+00:00:03,370 --> 00:00:05,150
+Voici ReleaseSync, un de mes projets.
+
+3
+00:00:05,390 --> 00:00:07,910
+Un tableau de bord montre chaque application et sa version.
+
+4
+00:00:08,210 --> 00:00:11,070
+Les notes de version et les étapes de publication sont au même endroit.
+
+5
+00:00:11,270 --> 00:00:13,850
+L'assistant prépare la mise en ligne, et fait d'abord un essai.
+
+6
+00:00:14,030 --> 00:00:15,210
+Rien ne part sans mon accord.
+
+7
+00:00:15,570 --> 00:00:18,370
+Et chaque action est notée : quoi, quand, et par qui.
+
+8
+00:00:18,610 --> 00:00:21,400
+Le lien est sous la vidéo : clique sur « Voir le projet ».

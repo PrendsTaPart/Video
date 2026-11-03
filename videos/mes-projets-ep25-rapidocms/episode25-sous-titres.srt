@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,250
+Un prompt, et tes posts sont prêts.
+
+2
+00:00:02,370 --> 00:00:04,330
+Voici RapidoCMS, un de mes projets.
+
+3
+00:00:04,610 --> 00:00:07,130
+Ton IA devient une équipe de communication complète.
+
+4
+00:00:07,290 --> 00:00:10,410
+Community manager, graphiste, stratège et analyste.
+
+5
+00:00:10,550 --> 00:00:11,990
+Tu parles, Rapido publie.
+
+6
+00:00:12,150 --> 00:00:15,290
+Instagram, Facebook, LinkedIn et TikTok, en une fois.
+
+7
+00:00:15,470 --> 00:00:17,350
+Et il marche avec Claude et tes autres assistants.
+
+8
+00:00:17,670 --> 00:00:20,340
+Le lien est sous la vidéo : clique sur « Voir le projet ».

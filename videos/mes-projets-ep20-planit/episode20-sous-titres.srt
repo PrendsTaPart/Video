@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,550
+Tes tâches avancent, même quand tu es occupé.
+
+2
+00:00:02,790 --> 00:00:04,450
+Voici Plan'It, un de mes projets.
+
+3
+00:00:04,750 --> 00:00:06,790
+Une phrase suffit : le bon agent s'en charge.
+
+4
+00:00:07,130 --> 00:00:09,330
+Tes devis ne dorment plus, ils sont relancés.
+
+5
+00:00:09,530 --> 00:00:11,230
+Ton plat du jour est publié partout.
+
+6
+00:00:11,570 --> 00:00:13,430
+Ton registre d'hygiène se tient tout seul.
+
+7
+00:00:13,770 --> 00:00:16,090
+Le prix est annoncé avant, et tu gardes la main.
+
+8
+00:00:16,350 --> 00:00:19,160
+Le lien est sous la vidéo : clique sur « Voir le projet ».

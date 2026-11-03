@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,730
+Les plannings, les congés et les projets de ton équipe, au même endroit.
+
+2
+00:00:03,990 --> 00:00:05,890
+Voici RapidoRH, un de mes projets.
+
+3
+00:00:06,210 --> 00:00:09,070
+Chaque employé a son profil, ses daily et son suivi.
+
+4
+00:00:09,230 --> 00:00:11,580
+Les plannings et les pointages se préparent tout seuls.
+
+5
+00:00:11,530 --> 00:00:13,970
+Les demandes de congés sont validées vite, au même endroit.
+
+6
+00:00:14,190 --> 00:00:16,810
+Un tableau de bord montre où en est l'équipe, en temps réel.
+
+7
+00:00:16,990 --> 00:00:18,650
+Et une formule gratuite permet de commencer.
+
+8
+00:00:18,910 --> 00:00:21,620
+Le lien est sous la vidéo : clique sur « Voir le projet ».

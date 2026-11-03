@@ -1,0 +1,12 @@
+J'ai choqué mon développeur en lui présentant ma méthode.
+Sadok, tu te souviens ? Celui qui a branché RapidoCRM à l'IA.
+Ce matin, on avait une idée : une appli pour les commerciaux qui prospectent sur le terrain.
+Lui voyait des semaines de travail. Moi, je lui ai montré ma méthode, marche par marche.
+Claude écrit le plan. Lovable construit l'appli, son site et sa démo.
+Sur le terrain, le commercial ajoute un prospect en quelques secondes : par son nom, autour de lui, ou avec une carte de visite.
+Puis il tend son téléphone au client : un petit sondage, une roue des cadeaux.
+Le client laisse son email seulement s'il est d'accord, et il repart avec son cadeau.
+Et tout arrive tout seul dans RapidoCRM : le contact, l'étape, la relance. Zéro ressaisie le soir.
+Le soir même, c'était en ligne. Sadok n'en revenait pas.
+Ce n'est pas l'outil qui a changé. C'est la méthode.
+Écris TERRAIN en commentaire, je t'envoie la méthode et le lien de la démo.

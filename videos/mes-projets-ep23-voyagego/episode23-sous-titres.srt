@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,890
+Dis où tu rêves d'aller. On compose tout le reste.
+
+2
+00:00:03,310 --> 00:00:05,010
+Voici VoyageGo, un de mes projets.
+
+3
+00:00:05,350 --> 00:00:07,650
+Une phrase suffit : l'agent compose ton voyage.
+
+4
+00:00:07,940 --> 00:00:10,870
+Vols, hôtels, repas et activités, à ton budget.
+
+5
+00:00:11,150 --> 00:00:13,350
+Ton voyage est mis en page comme un beau carnet.
+
+6
+00:00:13,550 --> 00:00:15,230
+Sur place, l'agent devient ton guide.
+
+7
+00:00:15,550 --> 00:00:16,990
+Et une communauté part avec toi.
+
+8
+00:00:17,230 --> 00:00:19,860
+Le lien est sous la vidéo : clique sur « Voir le projet ».

@@ -1,0 +1,10 @@
+Toutes mes vidéos animées, c'est Claude qui les fabrique.
+Il suit un seul fichier de consignes, qu'il lit en entier avant de commencer.
+Moi, je lui donne juste un sujet.
+Il va voir la source, fait ses recherches et vérifie chaque information.
+Il écrit le texte, puis il fait générer la voix.
+Il compose chaque scène, et les sous-titres tombent sur chaque mot.
+Avant de me montrer quoi que ce soit, il contrôle chaque image : texte coupé, élément qui déborde.
+Moi, je regarde l'aperçu et je dis : on exporte.
+Le secret, ce n'est pas l'outil. C'est le guide.
+Écris GUIDE en commentaire, je t'envoie comment écrire le tien.

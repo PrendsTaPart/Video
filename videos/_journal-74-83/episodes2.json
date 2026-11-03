@@ -1,0 +1,173 @@
+[
+ {
+  "ep": 84,
+  "dir": "episode84-webinaire",
+  "kw": "WEBINAIRE",
+  "proj": null,
+  "titre": "Un webinaire fait tout seul, en une heure",
+  "lines": [
+   "Des gens paient deux cents euros par mois pour un webinaire.",
+   "Moi, je viens de créer le mien en une heure, gratuitement.",
+   "Il est en direct, avec un chat et des réactions en emoji.",
+   "Les offres s'affichent ou se cachent pendant l'émission.",
+   "Ça marche sur l'ordinateur comme sur le téléphone.",
+   "Trois choses suffisent : un cerveau IA, une usine à logiciels, un assistant qui maintient tout.",
+   "Un développeur, ou pas, peut le faire aujourd'hui.",
+   "Écris WEBINAIRE en commentaire, je t'envoie la méthode."
+  ],
+  "kind": "method",
+  "fmt": "tutoriel"
+ },
+ {
+  "ep": 85,
+  "dir": "episode85-uber-commission",
+  "kw": "COMMISSION",
+  "proj": "foodeatup-app",
+  "titre": "Pourquoi Uber Eats garde une part de chaque commande",
+  "lines": [
+   "Chaque jour, des commandes passent par Uber Eats. Et Uber en garde une part.",
+   "Trois personnes travaillent sur une commande : le restaurant, le livreur, et Uber.",
+   "Uber ne cuisine rien et ne livre rien. Il se place au milieu.",
+   "Le restaurant paie une commission sur chaque commande.",
+   "Tout a commencé par un test minuscule : un seul menu, un seul midi.",
+   "Puis le service s'est élargi, ville après ville.",
+   "Ton application, ta caisse : aucune commission sur tes commandes.",
+   "Écris COMMISSION en commentaire, je t'envoie comment faire."
+  ],
+  "kind": "project",
+  "fmt": "foodeatup-app"
+ },
+ {
+  "ep": 86,
+  "dir": "episode86-une-journee-claude",
+  "kw": "JOURNÉE",
+  "proj": null,
+  "titre": "Configurer Claude en une seule journée",
+  "lines": [
+   "Si je devais configurer Claude en un seul jour, voici ce que je ferais.",
+   "Premier réglage : l'extension Chrome. Claude regarde la page avec toi.",
+   "Deuxième : les plugins. Deux clics, et Claude devient bon dans un domaine.",
+   "Troisième : il apprend à refaire une tâche de la même façon.",
+   "Quatrième : les tâches planifiées. Un brief à huit heures, tout seul.",
+   "Cinquième, le plus sous-côté : les outils dans la fenêtre à côté du chat.",
+   "Calculateur, suivi, planning : tu le demandes, il le construit.",
+   "Écris JOURNÉE en commentaire, je t'envoie la liste."
+  ],
+  "kind": "method",
+  "fmt": "tutoriel"
+ },
+ {
+  "ep": 87,
+  "dir": "episode87-reel-pas-a-pas",
+  "kw": "ÉDITEUR",
+  "proj": null,
+  "titre": "Un reel animé, étape par étape",
+  "lines": [
+   "Tout le monde fait des reels animés avec l'IA, mais personne ne montre comment.",
+   "Étape un : Claude, en application de bureau, pas dans le navigateur.",
+   "Étape deux : un dossier « AI vidéo-éditeur » sur ton ordinateur.",
+   "Étape trois : une conversation, en local, sur ce dossier.",
+   "Étape quatre : tu tapes le sujet du reel, en une ligne.",
+   "Claude écrit le script, enregistre la voix, anime chaque scène et cale les sous-titres.",
+   "Il vérifie son animation avant que tu la voies.",
+   "Écris ÉDITEUR en commentaire, je t'envoie mon guide complet."
+  ],
+  "kind": "method",
+  "fmt": "tutoriel"
+ },
+ {
+  "ep": 88,
+  "dir": "episode88-thomas",
+  "kw": "CLAUDE",
+  "proj": null,
+  "titre": "Claude remplace un poste entier",
+  "lines": [
+   "Claude remplace Thomas, tout son poste, dès lundi.",
+   "Hier, trois vidéos, prêtes avant l'aube.",
+   "Le vrai Thomas, lui, vérifie ses outils vingt minutes par jour.",
+   "Un Claude pour les vidéos, un pour les légendes, un pour les commentaires.",
+   "Sept Claude au total. Le septième surveille les six autres.",
+   "Tout tourne depuis six mois, sans qu'il le dise.",
+   "Il a pu le faire pour son Instagram, il peut le faire pour toute l'entreprise.",
+   "Écris CLAUDE en commentaire, je t'envoie les réglages qui font tourner un Instagram."
+  ],
+  "kind": "method",
+  "fmt": "tutoriel"
+ },
+ {
+  "ep": 89,
+  "dir": "episode89-qr-table-1",
+  "kw": "TABLE",
+  "proj": "foodeatup-menu-digital",
+  "titre": "Commander à table en scannant le QR code",
+  "lines": [
+   "Imagine commander au restaurant en scannant le QR code de ta table.",
+   "Pas d'appli, pas d'attente. Chaque table a son propre espace de commande.",
+   "Tes amis tapent le code de la table, et la commande part en cuisine.",
+   "Un inconnu sur son canapé demande une commande pour la table cinq ? Refusé : pas de code.",
+   "Un code photographié ne sert plus, dès que l'addition est payée.",
+   "Le paiement passe par un prestataire, et tout est chiffré.",
+   "C'est la question que tout le monde pose : peut-on le pirater ?",
+   "Écris TABLE en commentaire, je t'envoie la suite."
+  ],
+  "kind": "project",
+  "fmt": "foodeatup-menu-digital"
+ },
+ {
+  "ep": 90,
+  "dir": "episode90-qr-table-2",
+  "kw": "SÉCURITÉ",
+  "proj": "foodeatup-menu-digital",
+  "titre": "On a essayé de pirater la commande à table",
+  "lines": [
+   "Peut-on pirater une commande à table ? On a essayé.",
+   "On fait le test pas à pas, comme un client malin.",
+   "Étape un : on regarde comment la commande fonctionne.",
+   "Étape deux : le serveur accepte, et la table reçoit son code à usage unique.",
+   "Étape trois : on devine le code. Trois mauvais essais, et on est bloqué.",
+   "Étape quatre : on photographie le QR code. Le code meurt dès que la note est payée.",
+   "Étape cinq : le Wi-Fi public ne voit rien, tout est chiffré.",
+   "Écris SÉCURITÉ en commentaire, je t'envoie le détail du test."
+  ],
+  "kind": "project",
+  "fmt": "foodeatup-menu-digital"
+ },
+ {
+  "ep": 91,
+  "dir": "episode91-app-modeles",
+  "kw": "MODÈLE",
+  "proj": "foodeatup-app",
+  "titre": "Cinq façons pour une application de gagner de l'argent",
+  "lines": [
+   "Cinq façons pour une application de gagner de l'argent.",
+   "Numéro un : l'application payante. Peu de gens paient pour une appli qu'ils n'ont pas testée.",
+   "Numéro deux : la publicité. Un jeu gratuit peut rapporter, s'il a beaucoup d'utilisateurs.",
+   "Numéro trois : les achats dans l'appli. Gratuite, mais on paie une vie, un bonus.",
+   "Numéro quatre : la commission, quand l'appli relie des gens et prend sa part.",
+   "Numéro cinq : l'abonnement. On paie chaque mois pour tout débloquer.",
+   "Pour ta première appli, c'est celui que je conseille : pas besoin de millions d'utilisateurs.",
+   "Écris MODÈLE en commentaire, je t'envoie mon exemple."
+  ],
+  "kind": "project",
+  "fmt": "foodeatup-app"
+ },
+ {
+  "ep": 92,
+  "dir": "episode92-alex-niche",
+  "kw": "QUITTE",
+  "proj": null,
+  "titre": "Lancer son produit digital sans se montrer",
+  "lines": [
+   "Tu en as marre de remettre ton propre projet à plus tard ?",
+   "Alex se lance, sans montrer son visage ni sa voix.",
+   "Il choisit une niche, un vrai problème, et crée un produit digital pour le résoudre.",
+   "Avec Claude, il crée des vidéos animées, trois à quatre par jour.",
+   "La création et la publication tournent seules, une fois le système réglé.",
+   "La septième vidéo perce : elle envoie des visiteurs vers son guide.",
+   "Les ventes s'enchaînent, sans qu'il soit devant la caméra.",
+   "Écris QUITTE en commentaire, je t'envoie le guide."
+  ],
+  "kind": "method",
+  "fmt": "tutoriel"
+ }
+]

@@ -1,0 +1,16 @@
+La Chine est en train de rattraper les géants américains de l'IA. Et la plupart de ses outils sont gratuits.
+Voici les cinq à connaître.
+Un : DeepSeek.
+Celui qui a fait trembler la Silicon Valley. Gratuit, et ouvert à tous.
+Deux : Qwen, d'Alibaba.
+Il discute, crée des images, et fabrique même des sites.
+Trois : Wan, toujours chez Alibaba.
+Tu écris une phrase, il te sort une vidéo.
+Quatre : GLM, de l'entreprise Zhipu.
+Dans les tests, il se mesure aux meilleurs.
+Cinq : Kimi.
+Il lit des documents énormes d'un seul coup.
+Et l'Europe ? On a Mistral, en France.
+Pour ton resto, attention : avant d'y mettre les données de tes clients, vérifie où elles partent.
+Moi, je reste sur Claude pour ce qui compte. Mais je les teste tous.
+La liste complète : écris CHINE en commentaire.

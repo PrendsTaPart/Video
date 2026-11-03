@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,670
+Des gens paient deux cents euros par mois pour un webinaire.
+
+2
+00:00:02,950 --> 00:00:05,530
+Moi, je viens de créer le mien en une heure, gratuitement.
+
+3
+00:00:05,730 --> 00:00:08,210
+Il est en direct, avec un chat et des réactions en emoji.
+
+4
+00:00:08,510 --> 00:00:10,630
+Les offres s'affichent ou se cachent pendant l'émission.
+
+5
+00:00:10,830 --> 00:00:12,750
+Ça marche sur l'ordinateur comme sur le téléphone.
+
+6
+00:00:13,070 --> 00:00:17,510
+Trois choses suffisent : un cerveau IA, une usine à logiciels, un assistant qui maintient tout.
+
+7
+00:00:17,670 --> 00:00:19,790
+Un développeur, ou pas, peut le faire aujourd'hui.
+
+8
+00:00:19,930 --> 00:00:22,370
+Écris WEBINAIRE en commentaire, je t'envoie la méthode.

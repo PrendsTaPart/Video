@@ -1,0 +1,8 @@
+Si je devais configurer Claude en un seul jour, voici ce que je ferais.
+Premier réglage : l'extension Chrome. Claude regarde la page avec toi.
+Deuxième : les plugins. Deux clics, et Claude devient bon dans un domaine.
+Troisième : il apprend à refaire une tâche de la même façon.
+Quatrième : les tâches planifiées. Un brief à huit heures, tout seul.
+Cinquième, le plus sous-côté : les outils dans la fenêtre à côté du chat.
+Calculateur, suivi, planning : tu le demandes, il le construit.
+Écris JOURNÉE en commentaire, je t'envoie la liste.

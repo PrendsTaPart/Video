@@ -1,0 +1,4273 @@
+{
+ "braincast": {
+  "etapes": {
+   "h": "Cinq étapes, dans cet ordre, sans trou dans la chaîne",
+   "items": [
+    {
+     "titre": "Idées",
+     "texte": "Vous donnez un thème et un sujet en une phrase. Vous recevez dix scénarios courts : titre, angle, accroche de cinq mots, punchline, et une vignette verticale lisible en petit."
+    },
+    {
+     "titre": "Storyboard",
+     "texte": "L'épisode se découpe en plans : intention en une ligne, durée, action, script de voix. Une barre de durée cumulée vous alerte dès que vous dépassez le format visé."
+    },
+    {
+     "titre": "Prompts",
+     "texte": "Des cases à cocher par famille — sujet, référence, cadre, mouvement, lumière, ambiance, format, voix, texte — composent le prompt dans l'ordre imposé."
+    },
+    {
+     "titre": "Bibliothèque",
+     "texte": "Vous déposez vos fichiers ou vous les importez depuis une adresse publique. Durée, dimensions et vignette sont lues automatiquement."
+    },
+    {
+     "titre": "Publication",
+     "texte": "L'écran de publication recharge les réglages réels du compte cible, affiche un aperçu vertical, et vous demande vos choix un par un."
+    }
+   ]
+  },
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "Braincast publie-t-il à ma place sans que je valide ?",
+     "texte": "Non. Chaque envoi passe par deux étapes : les réglages réels de votre compte vous sont présentés, puis vous confirmez. L'accord est daté, à usage unique, et lié aux réglages exacts qui vous ont été montrés. Si vous modifiez le brouillon ensuite, il faut redonner votre accord."
+    },
+    {
+     "titre": "Que fait exactement l'accès pour mon assistant ?",
+     "texte": "Vous créez un jeton, votre assistant s'y connecte, et il peut lister vos comptes, écrire des brouillons, enregistrer les pièces d'un épisode, planifier ou déplacer un envoi. Cette voie ne consomme aucun crédit : le contenu est produit chez vous, nous ne faisons que l'enregistrer."
+    },
+    {
+     "titre": "Puis-je gérer plusieurs comptes ?",
+     "texte": "Oui, autant que vous voulez. Chaque compte porte un libellé que vous choisissez. Le compte sélectionné filtre la bibliothèque, les brouillons, le planning et les publications. Les options de confidentialité sont rechargées pour chaque compte, jamais réutilisées d'un compte à l'autre."
+    },
+    {
+     "titre": "Comment sont comptés les crédits ?",
+     "texte": "Chaque bouton d'IA affiche son coût et rappelle votre solde avant de partir. Le débit a lieu après le succès de l'opération, jamais avant. Un échec ne coûte rien et reste tout de même inscrit dans votre historique, avec son motif."
+    },
+    {
+     "titre": "Que se passe-t-il si une publication échoue ?",
+     "texte": "Le brouillon passe en Échec et la raison s'affiche en français, avec le code technique en dessous pour le support. Vos réglages sont conservés : vous corrigez ce qui bloque et vous relancez l'envoi."
+    },
+    {
+     "titre": "Quelles données récupérez-vous depuis TikTok ?",
+     "texte": "Votre identifiant de compte, votre nom d'affichage, votre @, votre photo de profil, les réglages de publication autorisés, et — si vous l'activez — les statistiques publiques de vos vidéos pour la page Performance. Aucune donnée d'un autre compte que le vôtre n'est accessible."
+    },
+    {
+     "titre": "Puis-je programmer une publication à l'avance ?",
+     "texte": "Oui. Vous choisissez la date et l'heure, et la publication part seule à l'échéance, à cinq minutes près. Vous pouvez la déplacer ou l'annuler depuis le Planning tant qu'elle n'est pas envoyée."
+    },
+    {
+     "titre": "Comment déconnecter un compte ou tout supprimer ?",
+     "texte": "Depuis la page Comptes, avec « Déconnecter ». L'autorisation est retirée auprès de la plateforme et les jetons sont effacés de nos serveurs. La page de suppression des données permet d'effacer l'ensemble de votre espace."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "Trois choses qui vous coûtent vos publications",
+    "items": [
+     {
+      "titre": "Vous cherchez quoi tourner",
+      "texte": "Vous ouvrez l'application, vous scrollez dix minutes, vous refermez. Aucune idée écrite, aucune vidéo tournée."
+     },
+     {
+      "titre": "Vous perdez le fil de la production",
+      "texte": "Des rushes dans un dossier, des voix dans un autre, une vignette manquante, et vous ne savez plus quel épisode est prêt."
+     },
+     {
+      "titre": "Vous publiez à la main, tard le soir",
+      "texte": "Vous recopiez la légende, vous recochez les réglages, vous oubliez une case, et vous recommencez pour chaque compte."
+     }
+    ]
+   },
+   {
+    "h": "Cinq étapes, dans cet ordre, sans trou dans la chaîne",
+    "items": [
+     {
+      "titre": "Idées",
+      "texte": "Vous donnez un thème et un sujet en une phrase. Vous recevez dix scénarios courts : titre, angle, accroche de cinq mots, punchline, et une vignette verticale lisible en petit."
+     },
+     {
+      "titre": "Storyboard",
+      "texte": "L'épisode se découpe en plans : intention en une ligne, durée, action, script de voix. Une barre de durée cumulée vous alerte dès que vous dépassez le format visé."
+     },
+     {
+      "titre": "Prompts",
+      "texte": "Des cases à cocher par famille — sujet, référence, cadre, mouvement, lumière, ambiance, format, voix, texte — composent le prompt dans l'ordre imposé."
+     },
+     {
+      "titre": "Bibliothèque",
+      "texte": "Vous déposez vos fichiers ou vous les importez depuis une adresse publique. Durée, dimensions et vignette sont lues automatiquement."
+     },
+     {
+      "titre": "Publication",
+      "texte": "L'écran de publication recharge les réglages réels du compte cible, affiche un aperçu vertical, et vous demande vos choix un par un."
+     }
+    ]
+   },
+   {
+    "h": "Tout ce que vous trouvez en vous connectant",
+    "items": [
+     {
+      "titre": "Studio",
+      "texte": "Idées Dix scénarios par thème, vignettes générées au fil de l'eau, onglet des idées écartées. Storyboard Plans réordonnables, durées, script de voix, estimation du temps de lecture. Prompts Formulaire à cases, un prompt par moteur, propagation sur tout l'épisode. Dossier de montage Tout ce qu'il faut pour monter en un seul bloc, exportable pour votre assistant. Ce qui marche Classement des épisodes publiés, agrégations par thème et par série, lecture honnête."
+     },
+     {
+      "titre": "Publication",
+      "texte": "Bibliothèque Import glisser-déposer ou par adresse, formats vidéo et photo, progression réelle. Brouillons Vignette, titre, compte cible, indicateur de complétude, ce qui manque encore. Planning Calendrier mensuel, trente jours à venir, déplacement par glisser, annulation. Publications Historique avec statut, date, compte, lien direct et bouton pour replanifier. Comptes Une carte par compte : libellé, état du jeton, compte par défaut, reconnexion."
+     },
+     {
+      "titre": "Pilotage",
+      "texte": "Performance Courbe d'abonnés, tableau de vidéos triable, rapprochement avec vos publications, export PDF. Crédits Solde en permanence dans l'en-tête, historique des mouvements, achat de packs. Conformité Journal des accords : quels réglages ont été présentés, quand, et depuis quelle surface. Réglages Créneaux de publication, profils de rédaction, jetons d'accès pour votre assistant."
+     }
+    ]
+   },
+   {
+    "h": "À quoi ressemble une vidéo prête à publier",
+    "items": []
+   },
+   {
+    "h": "Le même plan, formulé pour chaque moteur",
+    "items": [
+     {
+      "titre": "Veo 3",
+      "texte": "sujet → action → cadre → mouvement → lumière → ambiance → technique"
+     },
+     {
+      "titre": "Higgsfield / Seedance",
+      "texte": "sujet → action → cadre → mouvement → lumière → ambiance → technique"
+     },
+     {
+      "titre": "HeyGen",
+      "texte": "avatar → adresse → cadrage → voix → texte à l'écran"
+     },
+     {
+      "titre": "Réglages à recopier dans Higgsfield",
+      "texte": "Affichés en clair à côté du prompt, prêts à être reportés dans l'interface du moteur."
+     }
+    ]
+   },
+   {
+    "h": "Ce que vous contrôlez, à chaque envoi",
+    "items": []
+   }
+  ]
+ },
+ "fiche-technique-foodeatup": {
+  "etapes": {
+   "h": "Comment ça marche",
+   "items": [
+    {
+     "titre": "Donnez votre recette.",
+     "texte": "Ingrédients, quantités, prix d'achat : copiez-les d'une facture ou de mémoire."
+    },
+    {
+     "titre": "On calcule.",
+     "texte": "Coût matière, food cost, marge et coefficient, affichés tout de suite."
+    },
+    {
+     "titre": "Vous recevez le PDF.",
+     "texte": "Votre fiche complète arrive par e-mail, prête à imprimer."
+    }
+   ]
+  },
+  "faq": {
+   "h": "Créez votre fiche en 7 questions",
+   "items": []
+  },
+  "features": [
+   {
+    "h": "Créez votre fiche en 7 questions",
+    "items": []
+   },
+   {
+    "h": "Une idée pour votre prochaine recette ?",
+    "items": []
+   },
+   {
+    "h": "Voyez ce que vous allez recevoir",
+    "items": []
+   },
+   {
+    "h": "De la facture à la marge, sans ressaisie",
+    "items": [
+     {
+      "titre": "Photographiez une facture fournisseur",
+      "texte": "Les prix d'achat de vos ingrédients se mettent à jour."
+     },
+     {
+      "titre": "Importez ou photographiez votre carte",
+      "texte": "Vos plats et prix de vente sont créés."
+     },
+     {
+      "titre": "Vos fiches recettes calculent seules",
+      "texte": "Coût matière, food cost, marge et coefficient sont recalculés."
+     },
+     {
+      "titre": "Tous vos supports se mettent à jour",
+      "texte": "Votre carte, votre menu digital, votre borne et votre site. Une saisie, pas dix."
+     }
+    ]
+   },
+   {
+    "h": "Comment ça marche",
+    "items": [
+     {
+      "titre": "Donnez votre recette.",
+      "texte": "Ingrédients, quantités, prix d'achat : copiez-les d'une facture ou de mémoire."
+     },
+     {
+      "titre": "On calcule.",
+      "texte": "Coût matière, food cost, marge et coefficient, affichés tout de suite."
+     },
+     {
+      "titre": "Vous recevez le PDF.",
+      "texte": "Votre fiche complète arrive par e-mail, prête à imprimer."
+     }
+    ]
+   },
+   {
+    "h": "Le food cost, c'est là que la marge se gagne.",
+    "items": []
+   }
+  ]
+ },
+ "voyagego": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "Un agent qui compose",
+    "items": []
+   },
+   {
+    "h": "Une communauté qui part avec vous",
+    "items": []
+   },
+   {
+    "h": "Un monde qui se remplit",
+    "items": []
+   },
+   {
+    "h": "Une phrase suffit",
+    "items": []
+   },
+   {
+    "h": "Votre voyage, mis en page comme un beau livre",
+    "items": []
+   },
+   {
+    "h": "Ouverture",
+    "items": []
+   }
+  ]
+ },
+ "luks-recettes": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "Des créations reconnaissables au premier regard.",
+    "items": []
+   },
+   {
+    "h": "Tout ce qu’il faut. Rien qui ralentit.",
+    "items": []
+   },
+   {
+    "h": "Trouvée en 3 touches",
+    "items": []
+   },
+   {
+    "h": "Pas à pas au comptoir",
+    "items": []
+   },
+   {
+    "h": "Formation intégrée",
+    "items": []
+   },
+   {
+    "h": "Le bon écran, au bon endroit.",
+    "items": []
+   }
+  ]
+ },
+ "coach-cuisine": {
+  "etapes": {
+   "h": "COMMENT ÇA MARCHE",
+   "items": []
+  },
+  "faq": null,
+  "features": [
+   {
+    "h": "COMMENT ÇA MARCHE",
+    "items": []
+   },
+   {
+    "h": "Choisissez",
+    "items": []
+   },
+   {
+    "h": "On cuisine",
+    "items": []
+   },
+   {
+    "h": "On livre",
+    "items": []
+   },
+   {
+    "h": "Vous ajustez",
+    "items": []
+   },
+   {
+    "h": "LES MEILLEURS PLATS DE LA SEMAINE",
+    "items": []
+   }
+  ]
+ },
+ "villa-beach": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "LA SEMAINE À LA VILLA",
+    "items": []
+   },
+   {
+    "h": "CHOISISSEZ VOTRE MOMENT",
+    "items": [
+     {
+      "titre": "PROJETS",
+      "texte": "ANNIVERSAIRE Le dîner, le gâteau en musique, puis la piste : dès 30 € par personne, accès au Club inclus. REPAS DE GROUPE Entre amis, en famille, entre collègues : dès 10 personnes, formules à 30 € ou 40 €, accès au Club inclus. FIN D'ANNÉE ENTREPRISE Votre soirée d'équipe en décembre : dîner, puis Club, pour 10 à 130 personnes. Les dates partent vite. ENTREPRISES Séminaires, dîners d'équipe et soirées de fin d'année : le dîner, puis le Club, pour 10 à 130 personnes. ENTERREMENT DE VIE DE CÉLIBATAIRE EVJF ou EVG : dîner, puis la piste du Club. Dès 10 personnes, formules à 30 € ou 40 €. MARIAGE"
+     }
+    ]
+   },
+   {
+    "h": "LES PROCHAINES SOIRÉES",
+    "items": []
+   },
+   {
+    "h": "LA CARTE",
+    "items": [
+     {
+      "titre": "ASSIETTE DE NEMS AU POULET",
+      "texte": "9,00 €"
+     },
+     {
+      "titre": "FRAÎCHEUR DE FRUITS DE SAISON & SA FONDUE AU CHOCOLAT",
+      "texte": "12,00 €"
+     },
+     {
+      "titre": "BELLE ENTRECÔTE & PURÉE TRUFFÉE",
+      "texte": "32,00 €"
+     },
+     {
+      "titre": "L'INDISPENSABLE SALADE CÉSAR",
+      "texte": "18,50 €"
+     },
+     {
+      "titre": "LA FORMULE DU MIDI",
+      "texte": "17,90 €"
+     },
+     {
+      "titre": "BRIOCHE FAÇON PAIN PERDU",
+      "texte": "14,00 €"
+     },
+     {
+      "titre": "BURRATA CRÉMEUSE & PÊCHES RÔTIES",
+      "texte": "14,50 €"
+     },
+     {
+      "titre": "PLANCHE DE CHARCUTERIE",
+      "texte": "16,00 €"
+     }
+    ]
+   },
+   {
+    "h": "ILS Y ÉTAIENT",
+    "items": []
+   },
+   {
+    "h": "ILS PARLENT DE NOUS",
+    "items": []
+   }
+  ]
+ },
+ "studio-print-foodeatup": {
+  "etapes": null,
+  "faq": null,
+  "features": []
+ },
+ "alto": {
+  "etapes": {
+   "h": "Comment ça marche ?",
+   "items": [
+    {
+     "titre": "L'Intégration",
+     "texte": "On étudie votre profil et on définit ensemble vos objectifs."
+    },
+    {
+     "titre": "Le Contrat",
+     "texte": "Vous signez votre CDI avec la coopérative."
+    },
+    {
+     "titre": "La Route",
+     "texte": "Vous effectuez vos courses sereinement."
+    },
+    {
+     "titre": "La Paie",
+     "texte": "Chaque mois, votre bulletin de salaire sans lever le petit doigt."
+    },
+    {
+     "titre": "Alto Hub",
+     "texte": "Gérez votre activité et parlez avec K.I.T.T."
+    }
+   ]
+  },
+  "faq": null,
+  "features": [
+   {
+    "h": "Bienvenue dans le club privé.",
+    "items": []
+   },
+   {
+    "h": "Devenez chauffeur VTC en CDI. Enfin.",
+    "items": [
+     {
+      "titre": "Zéro Administratif",
+      "texte": "Oubliez la comptabilité, les factures et les déclarations complexes. Chez Alto, on s'occupe de toute la gestion pour vous. Vous conduisez, nous gérons le bureau."
+     },
+     {
+      "titre": "La Sécurité du CDI",
+      "texte": "Dites adieu à la précarité de l'auto-entrepreneur. Bénéficiez d'un contrat de travail stable, d'une protection sociale complète, d'une mutuelle et de la garantie d'un revenu."
+     },
+     {
+      "titre": "L'Esprit Coopératif",
+      "texte": "Vous n'êtes plus un simple numéro sur une application. En rejoignant Alto, vous intégrez une communauté de professionnels qui s'entraident et partagent les mêmes valeurs de qualité."
+     }
+    ]
+   },
+   {
+    "h": "Accédez à des partenariats et good deals exclusifs.",
+    "items": [
+     {
+      "titre": "Véhicule",
+      "texte": "Achat, location ou LOA à des prix très compétitifs grâce à nos partenaires."
+     },
+     {
+      "titre": "Compte bancaire",
+      "texte": "Ouverture de compte en quelques clics avec nos banques partenaires."
+     },
+     {
+      "titre": "Réparation & Carrosserie",
+      "texte": "Atelier de réparation et carrossier à tarifs préférentiels."
+     },
+     {
+      "titre": "Bonus Plateformes",
+      "texte": "Bonus et avantages sur les applications de mobilité."
+     }
+    ]
+   },
+   {
+    "h": "Alto Hub : Votre cockpit de commande, la paperasse en moins.",
+    "items": []
+   },
+   {
+    "h": "Bienvenue dans le Club Alto.",
+    "items": []
+   },
+   {
+    "h": "Arrêtez de payer pour travailler. Encaissez enfin ce que vous méritez.",
+    "items": [
+     {
+      "titre": "Auto-Entrepreneur",
+      "texte": "Un statut qui semble simple, mais où vous portez tout le poids sur vos épaules. Peu de protection, beaucoup de stress."
+     },
+     {
+      "titre": "Coopérative Alto",
+      "texte": "Le choix de l'intelligence collective : gagnez plus, déléguez tout, et dormez tranquille. C'est le modèle VTC le plus rentable et le plus sûr."
+     },
+     {
+      "titre": "SASU / EURL",
+      "texte": "Un statut d'entreprise qui offre de la flexibilité, mais au prix d'une complexité et de coûts de gestion énormes."
+     },
+     {
+      "titre": "AE sans ACRE",
+      "texte": "2 823 €"
+     },
+     {
+      "titre": "SAS IS",
+      "texte": "2 181 €"
+     },
+     {
+      "titre": "EURL IR",
+      "texte": "2 389 €"
+     },
+     {
+      "titre": "Salarié ALTO",
+      "texte": "3 162 €"
+     },
+     {
+      "titre": "Auto-Entrepreneur",
+      "texte": "40%"
+     }
+    ]
+   }
+  ]
+ },
+ "foodeatup-carte-digitale": {
+  "etapes": null,
+  "faq": null,
+  "features": []
+ },
+ "devisbati": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "CONNEXION",
+    "items": []
+   }
+  ]
+ },
+ "foodeatup-app": {
+  "etapes": {
+   "h": "Comment ça marche",
+   "items": []
+  },
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "Faut-il une caisse FoodEatUp ? +",
+     "texte": "Oui. L'app est générée depuis votre caisse FoodEatUp et un abonnement FoodEatUp est requis."
+    },
+    {
+     "titre": "Quelles données sont lues dans ma caisse ? +",
+     "texte": "Les coordonnées de l'établissement, les horaires et fermetures, la carte (catégories, produits, formules, options), le programme de fidélité, les jeux et les modes de service. Rien n'est modifié dans votre caisse sans votre accord."
+    },
+    {
+     "titre": "D'où viennent les prix affichés ? +",
+     "texte": "Toujours de votre caisse. Les totaux sont recalculés côté serveur à chaque commande, jamais par le téléphone du client."
+    },
+    {
+     "titre": "Combien de temps pour lancer mon app ? +",
+     "texte": "Environ dix minutes avec l'assistant : compte, connexion de la caisse, génération, aperçu, publication."
+    },
+    {
+     "titre": "Mon app sera-t-elle sur Google Play et l'App Store ? +",
+     "texte": "Vos clients l'installent sans store depuis un lien ou un QR code. Un kit store prêt à l'emploi vous aide à la publier aussi sur Google Play et l'App Store ; les comptes développeur Google et Apple restent à votre charge."
+    },
+    {
+     "titre": "Comment fonctionnent les notifications ? +",
+     "texte": "Le client les accepte explicitement et choisit ses catégories. Le suivi de commande est toujours actif, les offres sont limitées à deux par semaine."
+    },
+    {
+     "titre": "Comment les clients paient-ils ? +",
+     "texte": "Sur votre terminal de paiement ou par lien de paiement. FoodEatUp App ne prend aucune commission sur les commandes."
+    },
+    {
+     "titre": "Mes accès sont-ils protégés ? +",
+     "texte": "La connexion à la caisse se fait par une autorisation sécurisée. Les jetons d'accès restent sur le serveur et n'arrivent jamais dans le navigateur."
+    },
+    {
+     "titre": "J'ai plusieurs restaurants, comment faire ? +",
+     "texte": "Chaque établissement a son app, ou vous choisissez l'offre Enseigne qui couvre jusqu'à cinq établissements, puis un tarif par établissement supplémentaire."
+    },
+    {
+     "titre": "Puis-je résilier ? +",
+     "texte": "Oui, l'abonnement est mensuel. Vous pouvez aussi dépublier ou supprimer votre app à tout moment depuis votre tableau de bord."
+    },
+    {
+     "titre": "L'app fonctionne-t-elle sans réseau ? +",
+     "texte": "La carte et les images restent consultables hors-ligne. La commande nécessite une connexion pour interroger la caisse."
+    },
+    {
+     "titre": "Qui m'accompagne ? +",
+     "texte": "L'équipe FoodEatUp vous accompagne. Laissez un message avec le formulaire ou demandez un devis."
+    },
+    {
+     "titre": "Que peut faire Claude avec mon app ? +",
+     "texte": "Après votre autorisation, Claude peut consulter votre tableau de bord, préparer des offres et des actus en brouillon et envoyer des notifications dans les quotas. Il ne voit que vos propres applications."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "FoodEatUp App en vidéo",
+    "items": []
+   },
+   {
+    "h": "Les écrans de votre future app",
+    "items": [
+     {
+      "titre": "Découverte et installation",
+      "texte": "Premier lancement Le client installe l'app depuis un lien ou un QR code, sans passer par un store. Accueil Ses points, l'offre du moment et sa dernière commande à refaire en un geste. Partager et installer Un QR code et un lien pour envoyer l'app à un ami ou sur un autre appareil."
+     },
+     {
+      "titre": "Restaurants et carte",
+      "texte": "Restaurants La liste des établissements, avec l'état ouvert ou fermé et l'itinéraire. Mode de commande Click and collect, à table, drive ou livraison, selon ce que vous proposez. Carte Votre carte complète, lue dans la caisse, avec les allergènes signalés. Fiche produit Options obligatoires, suppléments, quantité et note pour la cuisine."
+     },
+     {
+      "titre": "Commande et panier",
+      "texte": "Panier Suggestion, récompense fidélité et code promo, avec un total recalculé par la caisse. Paiement Terminal du comptoir, lien de paiement, titres-restaurant ou points. Capture de l'app de démonstration Suivi de commande Numéro d'appel et étapes de préparation en temps réel. Capture de l'app de démonstration Commande à table L'ardoise partagée par toute la table, réglée à la fin."
+     },
+     {
+      "titre": "Fidélité et jeux",
+      "texte": "Fidélité Points, niveaux, récompenses et carte à code-barres à présenter en caisse. Affiche et jeux L'affiche du moment, la roue cadeaux et le sondage après commande."
+     },
+     {
+      "titre": "Offres, actus et notifications",
+      "texte": "Offres Des coupons activés en un geste et appliqués automatiquement au panier. Actus Vos nouveautés avec image, à partager. Notifications Le client choisit ce qu'il reçoit : suivi, offres, fidélité, actus."
+     },
+     {
+      "titre": "Allergènes et compte",
+      "texte": "Allergènes et régimes Les 14 allergènes et les régimes, gardés sur le téléphone du client. Compte Restaurant favori, commandes, données exportables et suppression du compte."
+     }
+    ]
+   },
+   {
+    "h": "Comment ça marche",
+    "items": []
+   },
+   {
+    "h": "Tout ce que contient votre app",
+    "items": [
+     {
+      "titre": "Carte et commande à emporter",
+      "texte": "Votre carte complète, avec options, formules et prix issus de la caisse."
+     },
+     {
+      "titre": "Click and collect et commande à table",
+      "texte": "Créneaux de retrait, ou QR code posé sur la table pour commander sans attendre."
+     },
+     {
+      "titre": "Panier et paiement",
+      "texte": "Total recalculé par la caisse, paiement sur votre terminal ou par lien."
+     },
+     {
+      "titre": "Suivi de commande",
+      "texte": "Le client suit sa commande en temps réel et retrouve son historique."
+     },
+     {
+      "titre": "Fidélité et récompenses",
+      "texte": "Points, niveaux et récompenses de votre programme FoodEatUp, avec carte à code-barres."
+     },
+     {
+      "titre": "Roue et jeux",
+      "texte": "Roue cadeaux et sondage après commande, activables à la demande."
+     },
+     {
+      "titre": "Offres et actus",
+      "texte": "Coupons activables en un geste et actualités partageables."
+     },
+     {
+      "titre": "Notifications push",
+      "texte": "Suivi de commande, offres, fidélité et actus, avec des quotas qui évitent de lasser."
+     }
+    ]
+   },
+   {
+    "h": "Vos clients l'installent sans store, et vous pouvez aussi la mettre sur Google Play et l'App Store",
+    "items": []
+   },
+   {
+    "h": "Pilotable par Claude",
+    "items": []
+   }
+  ]
+ },
+ "foodeatup-borne-drive": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "Le drive, sans interrompre le flux",
+    "items": []
+   },
+   {
+    "h": "Trois offres, des minutes partagées",
+    "items": []
+   }
+  ]
+ },
+ "foodeatup": {
+  "etapes": null,
+  "faq": null,
+  "features": []
+ },
+ "restaurant-360": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "Un lieu. Une histoire. Votre restaurant.",
+    "items": [
+     {
+      "titre": "Lire le parcours du film",
+      "texte": "11 h 30. Le restaurant s’ouvre en pleine lumière. De la cuisine à la caisse, un même restaurant. Au comptoir, la commande donne le départ : prendre la commande, l’envoyer en cuisine, suivre le service. En coulisses, les stocks, les fiches techniques et les approvisionnements côtoient le suivi de l’hygiène : températures, réceptions et plans de nettoyage. Huit boucles relient le restaurant : configuration, équipe, StockVisionAI et production, HACCP, e-commerce, communication, fidélité et marketing, comptabilité. Prenez votre place. Patron, cuisine, salle ou client : entrez dans le restaurant et"
+     }
+    ]
+   },
+   {
+    "h": "Tout part de la caisse. Et tout y revient.",
+    "items": [
+     {
+      "titre": "Le ticket sort",
+      "texte": "L'imprimante de caisse — Le ticket client, et le Z de fin de journée. LA COMPTABILITÉ"
+     }
+    ]
+   },
+   {
+    "h": "Choisissez par où vous entrez",
+    "items": []
+   },
+   {
+    "h": "Un seul restaurant, huit boucles reliées",
+    "items": [
+     {
+      "titre": "Configuration",
+      "texte": "Le restaurant se décrit une seule fois."
+     },
+     {
+      "titre": "Équipe",
+      "texte": "Chacun voit exactement son poste."
+     },
+     {
+      "titre": "StockVisionAI et production",
+      "texte": "Le stock se voit avant de manquer."
+     },
+     {
+      "titre": "HACCP",
+      "texte": "La traçabilité accompagne chaque geste."
+     },
+     {
+      "titre": "E-commerce",
+      "texte": "Vos commandes en ligne restent chez vous."
+     },
+     {
+      "titre": "Communication",
+      "texte": "Le service parle d'une seule voix."
+     },
+     {
+      "titre": "Fidélité et marketing",
+      "texte": "Gardez le lien avec vos habitués."
+     },
+     {
+      "titre": "Comptabilité",
+      "texte": "La journée se ferme juste."
+     }
+    ]
+   },
+   {
+    "h": "Ce que l'on voit en poussant la porte",
+    "items": []
+   },
+   {
+    "h": "Votre tour de pousser la porte.",
+    "items": []
+   }
+  ]
+ },
+ "foodeatup-social": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "18 h 40 — il réserve",
+    "items": []
+   },
+   {
+    "h": "L'agenda de publication",
+    "items": []
+   },
+   {
+    "h": "À l'affiche",
+    "items": [
+     {
+      "titre": "Saison 5 — Vendredi, 20 h 15",
+      "texte": "Quatre histoires, un seul service. Onze plans où elles se croisent, et un dernier où l'on comprend que c'était le même homme."
+     },
+     {
+      "titre": "Voir le prompt",
+      "texte": ""
+     }
+    ]
+   },
+   {
+    "h": "Prochainement",
+    "items": [
+     {
+      "titre": "Le service, sans les cris",
+      "texte": "Salle, cuisine, commandes : ce qui se joue pendant le coup de feu."
+     },
+     {
+      "titre": "Voir le prompt",
+      "texte": ""
+     },
+     {
+      "titre": "En cuisine",
+      "texte": "Du chef au plongeur. La boucle gestion, vue par ceux qui la tiennent."
+     },
+     {
+      "titre": "Voir le prompt",
+      "texte": ""
+     },
+     {
+      "titre": "Compter sans se tromper",
+      "texte": "Stock, marge, factures : les chiffres qui décident de ta fin de mois."
+     },
+     {
+      "titre": "Voir le prompt",
+      "texte": ""
+     },
+     {
+      "titre": "L'équipe qui tient",
+      "texte": "Plannings, contrats, pointages : faire tourner une équipe sans y passer ses nuits."
+     },
+     {
+      "titre": "Voir le prompt",
+      "texte": ""
+     }
+    ]
+   },
+   {
+    "h": "UpEatFood — La montée en puissance",
+    "items": []
+   },
+   {
+    "h": "Cette semaine",
+    "items": [
+     {
+      "titre": "EP526 · 18 h 40 — il réserve",
+      "texte": "12:00 18:30 19:00 08:00 10:00 18:30"
+     },
+     {
+      "titre": "EP527 · 18 h 41 — la salle le voit",
+      "texte": "12:00 18:30 19:00 08:00 10:00 18:30"
+     },
+     {
+      "titre": "EP528 · 18 h 42 — la cuisine l'apprend",
+      "texte": "12:00 18:30 19:00 08:00 10:00 18:30"
+     },
+     {
+      "titre": "EP529 · 18 h 43 — le bureau voit le couvert",
+      "texte": "12:00 18:30 19:00 08:00 10:00 18:30"
+     },
+     {
+      "titre": "EP530 · 20 h 15 — les quatre au même endroit",
+      "texte": "12:00 18:30 19:00 08:00 10:00 18:30"
+     },
+     {
+      "titre": "EP531 · 20 h 31 — le plat part",
+      "texte": "12:00 18:30 19:00 08:00 10:00 18:30"
+     },
+     {
+      "titre": "EP532 · 20 h 32 — il ne remarque rien",
+      "texte": "12:00 18:30 19:00 08:00 10:00 18:30"
+     }
+    ]
+   }
+  ]
+ },
+ "planit-academie": {
+  "etapes": {
+   "h": "Le parcours en 6 étapes",
+   "items": [
+    {
+     "titre": "Comprendre",
+     "texte": "Agent, connecteur, routine : les mots avant les gestes."
+    },
+    {
+     "titre": "Ouvrir la porte",
+     "texte": "Créer son compte, se connecter, retrouver son mot de passe."
+    },
+    {
+     "titre": "Brancher ses logiciels",
+     "texte": "Google, MCP et la gestion de vos connecteurs."
+    },
+    {
+     "titre": "Faire connaissance",
+     "texte": "La base de connaissance de votre entreprise."
+    },
+    {
+     "titre": "Parler à ses agents",
+     "texte": "Chat, compétences, extensions, confirmation, voix et avatar."
+    },
+    {
+     "titre": "Faire travailler",
+     "texte": "Prompts, tâches, routines et automatisations."
+    },
+    {
+     "titre": "Piloter",
+     "texte": "Accueil, indicateurs, crédits, notifications et appareils."
+    }
+   ]
+  },
+  "faq": null,
+  "features": [
+   {
+    "h": "Vous travaillez en… ?",
+    "items": []
+   },
+   {
+    "h": "Le parcours en 6 étapes",
+    "items": [
+     {
+      "titre": "Comprendre",
+      "texte": "Agent, connecteur, routine : les mots avant les gestes."
+     },
+     {
+      "titre": "Ouvrir la porte",
+      "texte": "Créer son compte, se connecter, retrouver son mot de passe."
+     },
+     {
+      "titre": "Brancher ses logiciels",
+      "texte": "Google, MCP et la gestion de vos connecteurs."
+     },
+     {
+      "titre": "Faire connaissance",
+      "texte": "La base de connaissance de votre entreprise."
+     },
+     {
+      "titre": "Parler à ses agents",
+      "texte": "Chat, compétences, extensions, confirmation, voix et avatar."
+     },
+     {
+      "titre": "Faire travailler",
+      "texte": "Prompts, tâches, routines et automatisations."
+     },
+     {
+      "titre": "Piloter",
+      "texte": "Accueil, indicateurs, crédits, notifications et appareils."
+     }
+    ]
+   },
+   {
+    "h": "Le catalogue par module",
+    "items": []
+   }
+  ]
+ },
+ "rapidocms": {
+  "etapes": null,
+  "faq": null,
+  "features": []
+ },
+ "rapidocrm": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "Vos rendez-vous, vos factures et vos échanges, à l'écran.",
+    "items": []
+   },
+   {
+    "h": "De 8h30 à 16h00 : du premier appel à la facture.",
+    "items": []
+   },
+   {
+    "h": "Le CRM que vous payez attend que vous fassiez le travail.",
+    "items": [
+     {
+      "titre": "Vous relancez de mémoire.",
+      "texte": "Les devis expirent, les factures dorment, les prospects tièdes refroidissent. Un CRM classique enregistre. Il ne relance pas."
+     },
+     {
+      "titre": "Vos journées partent dans la numérotation.",
+      "texte": "Le temps de vos commerciaux se consomme avant la conversation : trouver le bon numéro, tomber sur un répondeur, rappeler."
+     },
+     {
+      "titre": "Cinq outils qui ne se parlent pas.",
+      "texte": "CRM, facturation, emailing, agent vocal, réseaux sociaux : cinq abonnements, cinq exports CSV, aucune vision d'ensemble."
+     },
+     {
+      "titre": "Combien vous coûte votre prospection à la main, cette année ?",
+      "texte": "Nombre de commerciaux Heures de prospection par semaine et par commercial Coût horaire chargé, en euros"
+     }
+    ]
+   },
+   {
+    "h": "Pourquoi RapidoCRM appelle, et pas les autres.",
+    "items": [
+     {
+      "titre": "La liste vient de la source, pas d'un fichier acheté",
+      "texte": "Vous demandez « les garages de Rennes créés depuis 2020 ». RapidoCRM va chercher dans la base SIRENE et sur Google Maps, retire les doublons, et crée les fiches. Vous n'ouvrez aucun tableur."
+     },
+     {
+      "titre": "L'agent vocal est dans le CRM, il n'y est pas branché",
+      "texte": "Il travaille sur ces fiches, avec votre pitch et votre catalogue. Rien à exporter vers un outil d'appel, rien à réimporter le lendemain matin."
+     },
+     {
+      "titre": "Le rendez-vous atterrit dans votre agenda, pas dans un rapport",
+      "texte": "Quand l'appel aboutit, le créneau est posé dans l'agenda et l'affaire avance dans le pipeline. Vous ouvrez votre journée sur des rendez-vous, pas sur une transcription à dépouiller."
+     }
+    ]
+   },
+   {
+    "h": "Ce que vous obtenez, semaine après semaine.",
+    "items": [
+     {
+      "titre": "Préparez une liste de prospects sans acheter de fichier",
+      "texte": "Vous décrivez la cible en une phrase : secteur, ville, taille, date de création. Les fiches entreprise et contact sont créées, dédoublonnées, prêtes à appeler."
+     },
+     {
+      "titre": "Faites passer les appels pendant que vous vendez",
+      "texte": "L'agent vocal appelle votre liste, présente votre offre avec votre pitch et qualifie l'intérêt. Vous récupérez des rendez-vous posés dans l'agenda, pas une pile de numéros à rappeler."
+     },
+     {
+      "titre": "Envoyez le devis avant de quitter le parking",
+      "texte": "Le devis se prépare depuis la fiche du client, avec vos offres, votre TVA et vos remises. Il devient facture d'un geste, sans ressaisir une ligne."
+     },
+     {
+      "titre": "Ne courez plus après vos factures",
+      "texte": "Les relances partent au bon moment, par email ou par SMS, avec le ton que vous avez choisi. Vous n'intervenez que sur les dossiers qui résistent."
+     },
+     {
+      "titre": "Sachez chaque lundi où vous en êtes",
+      "texte": "Un écran vous donne les affaires en cours, celles qui n'ont pas bougé, et ce qui a été encaissé. Vous arbitrez votre semaine en cinq minutes."
+     }
+    ]
+   },
+   {
+    "h": "Vous écrivez la phrase. Le CRM fait le travail.",
+    "items": []
+   }
+  ]
+ },
+ "rapidorh": {
+  "etapes": null,
+  "faq": null,
+  "features": []
+ },
+ "rapidosoftware": {
+  "etapes": null,
+  "faq": {
+   "h": "FAQ",
+   "items": [
+    {
+     "titre": "Qu’est-ce que RapidoSoftware ?",
+     "texte": "RapidoSoftware est une suite SaaS qui optimise la gestion client (CRM), la gestion des équipes (RH) et la création de contenu (CMS) grâce à l’automatisation et l’intelligence artificielle."
+    },
+    {
+     "titre": "Faut-il installer RapidoSoftware ?",
+     "texte": "Non, RapidoSoftware est une solution 100% cloud, accessible en ligne sans installation, offrant une gestion CRM, RH et CMS en toute simplicité depuis n’importe quel appareil."
+    },
+    {
+     "titre": "Comment accéder à mon espace RapidoSoftware ?",
+     "texte": "Connectez-vous à votre compte via votre navigateur ou mobile, où que vous soyez."
+    },
+    {
+     "titre": "À qui s’adresse RapidoSoftware ?",
+     "texte": "Aux PME, startups et grandes entreprises cherchant une solution intuitive pour optimiser leur gestion client, RH et web."
+    },
+    {
+     "titre": "Qu’est-ce que RapidoCMS ?",
+     "texte": "RapidoCMS est un système de gestion de contenu (CMS) rapide et intuitif, conçu pour créer, gérer et optimiser des sites web sans compétences techniques."
+    },
+    {
+     "titre": "Quels sont les avantages de RapidoCMS ?",
+     "texte": "RapidoCMS offre une gestion de site web simple, rapide et optimisée avec un SEO performant, une personnalisation flexible, une automatisation intelligente et une sécurité renforcée"
+    },
+    {
+     "titre": "Qu’est-ce que RapidoCRM ?",
+     "texte": "RapidoCRM est un CRM intelligent qui centralise la gestion client, automatise le marketing, suit les ventes et optimise l’engagement depuis une interface intuitive."
+    },
+    {
+     "titre": "Quels sont ses principaux atouts ?",
+     "texte": "RapidoCRM centralise la gestion client, automatise les campagnes et contenus, intègre une multicanalité, optimise le SEO par IA et facilite la création de workflows, fidélité et pages dynamiques."
+    },
+    {
+     "titre": "Qu’est-ce que RapidoRH ?",
+     "texte": "Un logiciel RH cloud qui simplifie la gestion des équipes, plannings, tâches et pointages."
+    },
+    {
+     "titre": "Quels sont ses principaux atouts ?",
+     "texte": "Une solution complète pour la gestion des employés, avec suivi des profils, automatisation des plannings, gestion des congés et reporting RH en temps réel pour une prise de décision optimisée."
+    },
+    {
+     "titre": "Puis-je personnaliser les accès pour mon équipe ?",
+     "texte": "Oui ! Gérez les permissions utilisateur et définissez des accès spécifiques selon les rôles."
+    },
+    {
+     "titre": "Mes données sont-elles protégées ?",
+     "texte": "Oui ! RapidoSoftware utilise un chiffrement avancé, des sauvegardes automatiques et un hébergement sécurisé."
+    },
+    {
+     "titre": "Puis-je soumettre des suggestions d’amélioration ?",
+     "texte": "Oui, nous développons en permanence de nouvelles fonctionnalités en fonction des retours utilisateurs."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "Le tout-en-un pour propulser votre activité !",
+    "items": []
+   },
+   {
+    "h": "Pourquoi choisir RapidoSoftware ?",
+    "items": [
+     {
+      "titre": "Ce que RapidoSoftware offre",
+      "texte": ""
+     }
+    ]
+   },
+   {
+    "h": "Nos dernières publications et événements",
+    "items": []
+   },
+   {
+    "h": "FAQ",
+    "items": [
+     {
+      "titre": "Qu’est-ce que RapidoSoftware ?",
+      "texte": "RapidoSoftware est une suite SaaS qui optimise la gestion client (CRM), la gestion des équipes (RH) et la création de contenu (CMS) grâce à l’automatisation et l’intelligence artificielle."
+     },
+     {
+      "titre": "Faut-il installer RapidoSoftware ?",
+      "texte": "Non, RapidoSoftware est une solution 100% cloud, accessible en ligne sans installation, offrant une gestion CRM, RH et CMS en toute simplicité depuis n’importe quel appareil."
+     },
+     {
+      "titre": "Comment accéder à mon espace RapidoSoftware ?",
+      "texte": "Connectez-vous à votre compte via votre navigateur ou mobile, où que vous soyez."
+     },
+     {
+      "titre": "À qui s’adresse RapidoSoftware ?",
+      "texte": "Aux PME, startups et grandes entreprises cherchant une solution intuitive pour optimiser leur gestion client, RH et web."
+     },
+     {
+      "titre": "Qu’est-ce que RapidoCMS ?",
+      "texte": "RapidoCMS est un système de gestion de contenu (CMS) rapide et intuitif, conçu pour créer, gérer et optimiser des sites web sans compétences techniques."
+     },
+     {
+      "titre": "Quels sont les avantages de RapidoCMS ?",
+      "texte": "RapidoCMS offre une gestion de site web simple, rapide et optimisée avec un SEO performant, une personnalisation flexible, une automatisation intelligente et une sécurité renforcée"
+     },
+     {
+      "titre": "Qu’est-ce que RapidoCRM ?",
+      "texte": "RapidoCRM est un CRM intelligent qui centralise la gestion client, automatise le marketing, suit les ventes et optimise l’engagement depuis une interface intuitive."
+     },
+     {
+      "titre": "Quels sont ses principaux atouts ?",
+      "texte": "RapidoCRM centralise la gestion client, automatise les campagnes et contenus, intègre une multicanalité, optimise le SEO par IA et facilite la création de workflows, fidélité et pages dynamiques."
+     }
+    ]
+   },
+   {
+    "h": "Qu’est-ce que RapidoSoftware ?",
+    "items": [
+     {
+      "titre": "Faut-il installer RapidoSoftware ?",
+      "texte": "Non, RapidoSoftware est une solution 100% cloud, accessible en ligne sans installation, offrant une gestion CRM, RH et CMS en toute simplicité depuis n’importe quel appareil."
+     },
+     {
+      "titre": "Comment accéder à mon espace RapidoSoftware ?",
+      "texte": "Connectez-vous à votre compte via votre navigateur ou mobile, où que vous soyez."
+     },
+     {
+      "titre": "À qui s’adresse RapidoSoftware ?",
+      "texte": "Aux PME, startups et grandes entreprises cherchant une solution intuitive pour optimiser leur gestion client, RH et web."
+     },
+     {
+      "titre": "Qu’est-ce que RapidoCMS ?",
+      "texte": "RapidoCMS est un système de gestion de contenu (CMS) rapide et intuitif, conçu pour créer, gérer et optimiser des sites web sans compétences techniques."
+     },
+     {
+      "titre": "Quels sont les avantages de RapidoCMS ?",
+      "texte": "RapidoCMS offre une gestion de site web simple, rapide et optimisée avec un SEO performant, une personnalisation flexible, une automatisation intelligente et une sécurité renforcée"
+     },
+     {
+      "titre": "Qu’est-ce que RapidoCRM ?",
+      "texte": "RapidoCRM est un CRM intelligent qui centralise la gestion client, automatise le marketing, suit les ventes et optimise l’engagement depuis une interface intuitive."
+     },
+     {
+      "titre": "Quels sont ses principaux atouts ?",
+      "texte": "RapidoCRM centralise la gestion client, automatise les campagnes et contenus, intègre une multicanalité, optimise le SEO par IA et facilite la création de workflows, fidélité et pages dynamiques."
+     },
+     {
+      "titre": "Qu’est-ce que RapidoRH ?",
+      "texte": "Un logiciel RH cloud qui simplifie la gestion des équipes, plannings, tâches et pointages."
+     }
+    ]
+   },
+   {
+    "h": "Faut-il installer RapidoSoftware ?",
+    "items": [
+     {
+      "titre": "Qu’est-ce que RapidoSoftware ?",
+      "texte": "RapidoSoftware est une suite SaaS qui optimise la gestion client (CRM), la gestion des équipes (RH) et la création de contenu (CMS) grâce à l’automatisation et l’intelligence artificielle."
+     },
+     {
+      "titre": "Comment accéder à mon espace RapidoSoftware ?",
+      "texte": "Connectez-vous à votre compte via votre navigateur ou mobile, où que vous soyez."
+     },
+     {
+      "titre": "À qui s’adresse RapidoSoftware ?",
+      "texte": "Aux PME, startups et grandes entreprises cherchant une solution intuitive pour optimiser leur gestion client, RH et web."
+     },
+     {
+      "titre": "Qu’est-ce que RapidoCMS ?",
+      "texte": "RapidoCMS est un système de gestion de contenu (CMS) rapide et intuitif, conçu pour créer, gérer et optimiser des sites web sans compétences techniques."
+     },
+     {
+      "titre": "Quels sont les avantages de RapidoCMS ?",
+      "texte": "RapidoCMS offre une gestion de site web simple, rapide et optimisée avec un SEO performant, une personnalisation flexible, une automatisation intelligente et une sécurité renforcée"
+     },
+     {
+      "titre": "Qu’est-ce que RapidoCRM ?",
+      "texte": "RapidoCRM est un CRM intelligent qui centralise la gestion client, automatise le marketing, suit les ventes et optimise l’engagement depuis une interface intuitive."
+     },
+     {
+      "titre": "Quels sont ses principaux atouts ?",
+      "texte": "RapidoCRM centralise la gestion client, automatise les campagnes et contenus, intègre une multicanalité, optimise le SEO par IA et facilite la création de workflows, fidélité et pages dynamiques."
+     },
+     {
+      "titre": "Qu’est-ce que RapidoRH ?",
+      "texte": "Un logiciel RH cloud qui simplifie la gestion des équipes, plannings, tâches et pointages."
+     }
+    ]
+   }
+  ]
+ },
+ "plan-it": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "Une phrase. Le travail est fait.",
+    "items": []
+   },
+   {
+    "h": "Le travail avance. Vous restez à votre métier.",
+    "items": [
+     {
+      "titre": "En cuisine, pas dans les tableaux.",
+      "texte": "Températures, stocks, alertes : Léo suit les informations dans FoodEatUp pendant que vous préparez le service."
+     },
+     {
+      "titre": "Vos clients méritent votre attention.",
+      "texte": "Devis sans réponse, relances à préparer : Nina garde le fil dans RapidoCRM. Vous gardez la relation."
+     }
+    ]
+   },
+   {
+    "h": "C'est fait. Vous reprenez votre journée.",
+    "items": []
+   },
+   {
+    "h": "Une phrase suffit. Le bon agent s'en charge.",
+    "items": []
+   },
+   {
+    "h": "Le prix avant, pas après.",
+    "items": []
+   },
+   {
+    "h": "Vos devis ne dorment plus.",
+    "items": []
+   }
+  ]
+ },
+ "braindcode": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "90% des rêves ne se réalisent pas. Le vôtre fera la différence. Créez votre site web ou application mobile.",
+    "items": []
+   },
+   {
+    "h": "Vous avez l'envie d'innover Mais",
+    "items": []
+   },
+   {
+    "h": "La recette de votre succès",
+    "items": [
+     {
+      "titre": "BraindCode Labs",
+      "texte": "Multitude de fonctionnalités avec notre Laboratoire R&D. Plongez dans notre processus de découverte pour diminuer vos frais grâce à nos fonctionnalités déjà développée"
+     },
+     {
+      "titre": "BraindCode Copilote",
+      "texte": "Explorez BraindCode Copilote, notre logiciel de gestion de projet. Suivez chaque étape de développement en temps réel, accédez à une transparence totale et assurez le succès de votre projet grâce à une collaboration fluide."
+     },
+     {
+      "titre": "Suivi de projet",
+      "texte": "Découvrez notre méthode agile jusqu'à la livraison du produit. Nous développons le produit idéal et performant en un minimum de temps, garantissant ainsi une satisfaction maximale."
+     }
+    ]
+   },
+   {
+    "h": "Nos réalisations sur mesure",
+    "items": [
+     {
+      "titre": "Sncf",
+      "texte": ""
+     },
+     {
+      "titre": "Pixu",
+      "texte": ""
+     }
+    ]
+   },
+   {
+    "h": "Braindcode c’est vous !",
+    "items": []
+   },
+   {
+    "h": "Ils nous font confiance",
+    "items": []
+   }
+  ]
+ },
+ "application-haccp": {
+  "etapes": null,
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "L'app est-elle vraiment gratuite ?",
+     "texte": ""
+    },
+    {
+     "titre": "L'app est-elle vraiment gratuite ?",
+     "texte": ""
+    },
+    {
+     "titre": "Chaque employé doit-il créer un code ?",
+     "texte": ""
+    },
+    {
+     "titre": "Chaque employé doit-il créer un code ?",
+     "texte": ""
+    },
+    {
+     "titre": "Faut-il du matériel ?",
+     "texte": ""
+    },
+    {
+     "titre": "Faut-il du matériel ?",
+     "texte": ""
+    },
+    {
+     "titre": "Combien d'employés peuvent l'utiliser ?",
+     "texte": ""
+    },
+    {
+     "titre": "Combien d'employés peuvent l'utiliser ?",
+     "texte": ""
+    },
+    {
+     "titre": "L'écran est-il lisible en cuisine, sous les néons ou en plein jour ?",
+     "texte": ""
+    },
+    {
+     "titre": "L'écran est-il lisible en cuisine, sous les néons ou en plein jour ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mon équipe ne lit pas bien le français, est-ce un problème ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mon équipe ne lit pas bien le français, est-ce un problème ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je essayer l'app sans compte ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je essayer l'app sans compte ?",
+     "texte": ""
+    },
+    {
+     "titre": "Et sans réseau ?",
+     "texte": ""
+    },
+    {
+     "titre": "Et sans réseau ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je résilier ?",
+     "texte": "Oui, à tout moment, en un clic. L'abonnement est sans engagement."
+    },
+    {
+     "titre": "Puis-je résilier ?",
+     "texte": "Oui, à tout moment, en un clic. L'abonnement est sans engagement."
+    },
+    {
+     "titre": "J'ai déjà FoodEatUp, que dois-je faire ?",
+     "texte": ""
+    },
+    {
+     "titre": "J'ai déjà FoodEatUp, que dois-je faire ?",
+     "texte": ""
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "FoodEatUp HACCP en 75 secondes",
+    "items": []
+   },
+   {
+    "h": "Le HACCP papier, vous connaissez.",
+    "items": [
+     {
+      "titre": "Le classeur qu'on remplit à 23 h",
+      "texte": "Le service est fini, les relevés du jour sont à refaire de mémoire, au stylo, sur un coin d'inox."
+     },
+     {
+      "titre": "La peur du contrôle DDPP",
+      "texte": "L'inspecteur arrive, il manque trois feuilles et la signature de jeudi."
+     },
+     {
+      "titre": "Les mains prises en plein coup de feu",
+      "texte": "Gants, plaques, poêles : impossible de sortir un téléphone pour noter un degré."
+     }
+    ]
+   },
+   {
+    "h": "Trois secondes de voix. C'est enregistré.",
+    "items": [
+     {
+      "titre": "Vous dites",
+      "texte": "« Frigo 1, 3 degrés. »"
+     },
+     {
+      "titre": "Jarvis répète",
+      "texte": "« Frigo 1, 3,0 °C, conforme. Je l'enregistre ? »"
+     },
+     {
+      "titre": "Vous dites oui",
+      "texte": "C'est enregistré, signé et horodaté dans FoodEatUp."
+     }
+    ]
+   },
+   {
+    "h": "Tous vos relevés, un geste chacun",
+    "items": [
+     {
+      "titre": "Températures + sonde Bluetooth",
+      "texte": "Frigos, chambres froides, maintien chaud. La sonde remplit la valeur, le verdict tombe tout de suite."
+     },
+     {
+      "titre": "Étiquettes DLC imprimées",
+      "texte": "Produit, J+1 à J+5, lot, 14 allergènes. Scan du code-barres, DLC lue sur photo, alerte RappelConso, impression Bluetooth."
+     },
+     {
+      "titre": "Réceptions fournisseurs",
+      "texte": "Température des produits frais, conforme ou non, photo du bon de livraison."
+     },
+     {
+      "titre": "Plan de nettoyage",
+      "texte": "Zones et postes cochés au doigt, fréquence et responsable de chaque poste, postes en retard signalés, photo de preuve."
+     },
+     {
+      "titre": "Traçabilité",
+      "texte": "Une fiche par lot : produit scanné, lot, DLC, quantité, jusqu'à l'utilisation. Retrouvée en un instant en cas de rappel."
+     },
+     {
+      "titre": "Hygiène du personnel et des locaux",
+      "texte": "Tenue, bijoux, mains, ouverture et fermeture de la cuisine : oui, non ou non évalué, signé par le chef."
+     },
+     {
+      "titre": "Production",
+      "texte": "Chaque plat produit validé avec sa quantité et sa température à cœur ; zone de danger signalée tout de suite."
+     },
+     {
+      "titre": "Huiles de friture",
+      "texte": "Composés polaires, filtrations, changements. Alerte dès 20 %, changement obligatoire à 25 %."
+     }
+    ]
+   },
+   {
+    "h": "Un chef qui vous parle, vous écoute et attend votre « oui ».",
+    "items": []
+   },
+   {
+    "h": "Chacun dans sa langue. Le dossier, en français.",
+    "items": []
+   }
+  ]
+ },
+ "braindcode-build": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "Chaque extension se branche, et l'écosystème entier se met à travailler ensemble.",
+    "items": []
+   },
+   {
+    "h": "Trois assistants qui travaillent déjà pour de vraies entreprises.",
+    "items": [
+     {
+      "titre": "Le chef qui ne jette plus rien",
+      "texte": "Avant. Chaque soir, des denrées partent à la poubelle faute de suivi des dates limites en cuisine."
+     },
+     {
+      "titre": "Le devis qu'on oublie de relancer",
+      "texte": "Avant. La majorité des devis restent sans réponse, personne n'a le temps de relancer."
+     },
+     {
+      "titre": "Le site web laissé à l'abandon",
+      "texte": "Avant. Le blog de l'entreprise n'a pas bougé depuis six mois, faute de temps."
+     }
+    ]
+   },
+   {
+    "h": "Partir de zéro coûte des mois. Partir d'ici coûte un après-midi.",
+    "items": []
+   },
+   {
+    "h": "Vous pouvez aussi développer des sites sur mesure branchés sur nos logiciels.",
+    "items": []
+   },
+   {
+    "h": "Faites tourner une équipe d'agents IA sur vos logiciels.",
+    "items": []
+   },
+   {
+    "h": "Un point de départ concret pour chaque famille.",
+    "items": []
+   }
+  ]
+ },
+ "releasesync": {
+  "etapes": null,
+  "faq": null,
+  "features": []
+ },
+ "braindcode-plugins": {
+  "etapes": {
+   "h": "Trois étapes, en langage humain.",
+   "items": [
+    {
+     "titre": "Installez le plugin dans Claude Code",
+     "texte": "Deux commandes dans votre terminal, et Claude connaît tous vos outils. Aucune configuration complexe."
+    },
+    {
+     "titre": "Connectez vos comptes",
+     "texte": "Rapido, Google, n8n, Canva… chacun le sien via OAuth ou clé API. Vos identifiants restent chez vous."
+    },
+    {
+     "titre": "Parlez à Claude comme à un directeur des opérations",
+     "texte": "Il analyse, crée, exécute — et vous demande validation avant tout acte sensible (envoi, paiement, publication)."
+    }
+   ]
+  },
+  "faq": {
+   "h": "4 questions. Votre pack recommandé.",
+   "items": [
+    {
+     "titre": "Votre activité ?",
+     "texte": "Restaurant Commerce & services Agence-conseil Autre"
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "Voyez-le travailler.",
+    "items": []
+   },
+   {
+    "h": "Le même dirigeant. Deux réalités.",
+    "items": []
+   },
+   {
+    "h": "Ils délèguent déjà à Claude.",
+    "items": []
+   },
+   {
+    "h": "Trois étapes, en langage humain.",
+    "items": [
+     {
+      "titre": "Installez le plugin dans Claude Code",
+      "texte": "Deux commandes dans votre terminal, et Claude connaît tous vos outils. Aucune configuration complexe."
+     },
+     {
+      "titre": "Connectez vos comptes",
+      "texte": "Rapido, Google, n8n, Canva… chacun le sien via OAuth ou clé API. Vos identifiants restent chez vous."
+     },
+     {
+      "titre": "Parlez à Claude comme à un directeur des opérations",
+      "texte": "Il analyse, crée, exécute — et vous demande validation avant tout acte sensible (envoi, paiement, publication)."
+     }
+    ]
+   },
+   {
+    "h": "4 logiciels métier, un seul cerveau.",
+    "items": []
+   },
+   {
+    "h": "Votre espace vous suit jusque dans Claude.",
+    "items": []
+   }
+  ]
+ },
+ "mon-academie": {
+  "etapes": {
+   "h": "Comment ça marche",
+   "items": [
+    {
+     "titre": "Vous",
+     "texte": "Vous parlez à votre IA ou envoyez un message WhatsApp."
+    },
+    {
+     "titre": "Votre IA + OpenClaw",
+     "texte": "Claude / ChatGPT / Mistral comprend, appelle FoodEatUp via MCP."
+    },
+    {
+     "titre": "FoodEatUp + modules",
+     "texte": "FoodEatUp exécute. Les modules Rapido enrichissent au besoin."
+    },
+    {
+     "titre": "Résultat",
+     "texte": "Action faite, réponse claire dans votre messagerie."
+    }
+   ]
+  },
+  "faq": null,
+  "features": [
+   {
+    "h": "Tout votre restaurant, piloté par l'IA",
+    "items": [
+     {
+      "titre": "Stocks & ingrédients",
+      "texte": ""
+     },
+     {
+      "titre": "Recettes & production",
+      "texte": ""
+     },
+     {
+      "titre": "HACCP & Hygiène",
+      "texte": "Conformité légale"
+     },
+     {
+      "titre": "Facturation DGFiP",
+      "texte": ""
+     },
+     {
+      "titre": "Fournisseurs",
+      "texte": ""
+     },
+     {
+      "titre": "Équipe",
+      "texte": ""
+     },
+     {
+      "titre": "Pilotage & rentabilité",
+      "texte": ""
+     }
+    ]
+   },
+   {
+    "h": "FoodEatUp en images",
+    "items": []
+   },
+   {
+    "h": "Et ses modules complémentaires",
+    "items": [
+     {
+      "titre": "Plani't",
+      "texte": "Pilotez tout votre écosystème à la voix, depuis une seule app."
+     },
+     {
+      "titre": "RapidoCRM",
+      "texte": "Gérez aussi vos clients B2B et votre prospection traiteur."
+     },
+     {
+      "titre": "RapidoCMS",
+      "texte": "Communiquez sur vos réseaux sociaux automatiquement."
+     },
+     {
+      "titre": "RapidoRH",
+      "texte": "Gérez vos équipes et projets au-delà du restaurant."
+     }
+    ]
+   },
+   {
+    "h": "Trois logiciels, une même conversation.",
+    "items": []
+   },
+   {
+    "h": "Comment ça marche",
+    "items": [
+     {
+      "titre": "Vous",
+      "texte": "Vous parlez à votre IA ou envoyez un message WhatsApp."
+     },
+     {
+      "titre": "Votre IA + OpenClaw",
+      "texte": "Claude / ChatGPT / Mistral comprend, appelle FoodEatUp via MCP."
+     },
+     {
+      "titre": "FoodEatUp + modules",
+      "texte": "FoodEatUp exécute. Les modules Rapido enrichissent au besoin."
+     },
+     {
+      "titre": "Résultat",
+      "texte": "Action faite, réponse claire dans votre messagerie."
+     }
+    ]
+   },
+   {
+    "h": "Configurez vos outils en quelques minutes",
+    "items": [
+     {
+      "titre": "FoodEatUp",
+      "texte": ""
+     },
+     {
+      "titre": "RapidoCRM",
+      "texte": ""
+     },
+     {
+      "titre": "RapidoCMS",
+      "texte": ""
+     },
+     {
+      "titre": "RapidoRH",
+      "texte": ""
+     }
+    ]
+   }
+  ]
+ },
+ "publisher-bot": {
+  "etapes": {
+   "h": "Cinq étapes, du sujet au résultat mesuré",
+   "items": [
+    {
+     "titre": "Connectez votre chaîne",
+     "texte": "Autorisez l'accès depuis l'écran officiel de Google. Vos vidéos, statistiques et commentaires sont ensuite synchronisés selon les permissions accordées."
+    },
+    {
+     "titre": "Trouvez le bon sujet",
+     "texte": "La veille remonte les vidéos qui surperforment dans votre niche et en tire des idées applicables à votre chaîne."
+    },
+    {
+     "titre": "Produisez titre et miniature",
+     "texte": "Générez plusieurs miniatures, faites-les analyser, choisissez le titre le mieux noté et gardez votre identité visuelle."
+    },
+    {
+     "titre": "Publiez et distribuez",
+     "texte": "Programmez sur YouTube et préparez vos Shorts. La diffusion TikTok et Instagram devient disponible une fois leurs applications configurées et vos comptes autorisés."
+    },
+    {
+     "titre": "Mesurez et corrigez",
+     "texte": "Taux de clic, rétention et revenus réels, test A/B des miniatures, puis corrections appliquées en lot sur tout le catalogue."
+    }
+   ]
+  },
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "Qu'est-ce que Publisher Bot exactement ?",
+     "texte": ""
+    },
+    {
+     "titre": "Qu'est-ce que Publisher Bot exactement ?",
+     "texte": ""
+    },
+    {
+     "titre": "Faut-il donner mon mot de passe YouTube ?",
+     "texte": ""
+    },
+    {
+     "titre": "Faut-il donner mon mot de passe YouTube ?",
+     "texte": ""
+    },
+    {
+     "titre": "Les scores de clicabilité et de viralité sont-ils des mesures réelles ?",
+     "texte": ""
+    },
+    {
+     "titre": "Les scores de clicabilité et de viralité sont-ils des mesures réelles ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment fonctionnent les crédits ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment fonctionnent les crédits ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je travailler à plusieurs, en agence ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je travailler à plusieurs, en agence ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mon assistant IA peut-il piloter la plateforme ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mon assistant IA peut-il piloter la plateforme ?",
+     "texte": ""
+    },
+    {
+     "titre": "Publier ailleurs que sur YouTube, c'est possible ?",
+     "texte": "Oui, un seul composeur envoie la même vidéo vers TikTok et Instagram avec des légendes adaptées à chaque plateforme et une programmation par créneau. Ces deux connexions nécessitent vos identifiants d'application respectifs pour être activées."
+    },
+    {
+     "titre": "Publier ailleurs que sur YouTube, c'est possible ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mes données et mes vidéos sont-elles isolées ?",
+     "texte": "Oui. Chaque ligne de la base est protégée par des règles d'accès : vous ne voyez que votre contenu et celui des espaces dont vous êtes membre. Les fichiers vidéo et les miniatures sont stockés dans des espaces privés accessibles uniquement via des liens signés temporaires."
+    },
+    {
+     "titre": "Mes données et mes vidéos sont-elles isolées ?",
+     "texte": "Oui. Chaque ligne de la base est protégée par des règles d'accès : vous ne voyez que votre contenu et celui des espaces dont vous êtes membre. Les fichiers vidéo et les miniatures sont stockés dans des espaces privés accessibles uniquement via des liens signés temporaires."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "Publisher Bot en 30 secondes",
+    "items": []
+   },
+   {
+    "h": "Le problème n'est presque jamais la vidéo. C'est tout ce qu'il y a autour.",
+    "items": [
+     {
+      "titre": "Des heures perdues sur la miniature",
+      "texte": "Trois allers-retours dans un logiciel de retouche pour un visuel qu'on ne testera jamais."
+     },
+     {
+      "titre": "Des titres écrits au feeling",
+      "texte": "Aucun moyen de comparer deux formulations avant d'appuyer sur publier."
+     },
+     {
+      "titre": "Un catalogue laissé à l'abandon",
+      "texte": "Des centaines d'anciennes vidéos avec un lien mort et une miniature datée."
+     }
+    ]
+   },
+   {
+    "h": "Un studio complet, module par module",
+    "items": [
+     {
+      "titre": "Thumbnail Studio",
+      "texte": "Générez plusieurs variations d'une miniature à partir d'une phrase, retouchez au pinceau, remplacez un visage, empilez des calques et gardez l'historique de chaque version."
+     },
+     {
+      "titre": "Analyse de miniature",
+      "texte": "Une jauge de lisibilité, des cartes de chaleur du regard et des corrections concrètes : contraste, taille du texte, place du visage, encombrement."
+     },
+     {
+      "titre": "Styles & visages",
+      "texte": "Extrayez l'ADN visuel d'une chaîne que vous admirez, fusionnez plusieurs styles, entraînez votre visage et appliquez la même identité à toute la chaîne."
+     },
+     {
+      "titre": "Optimisation SEO",
+      "texte": "Score SEO avec corrections en un clic, huit variations de titre notées, recherche de mots-clés et descriptions avec chapitres horodatés."
+     },
+     {
+      "titre": "Veille & idées",
+      "texte": "Repérez les vidéos qui surperforment dans votre niche, suivez la vitesse de vues heure par heure et recevez des idées chaque matin — sans exploser votre quota d'API."
+     },
+     {
+      "titre": "Shorts",
+      "texte": "Transcription horodatée, détection des dix meilleurs passages, recadrage 9:16, sous-titres animés et accroche sur les trois premières secondes."
+     },
+     {
+      "titre": "Distribution",
+      "texte": "Préparez vos publications YouTube, TikTok et Instagram au même endroit, avec des légendes adaptées. TikTok et Instagram nécessitent la configuration de leurs applications et les autorisations de vos comptes."
+     },
+     {
+      "titre": "Traitement en lot",
+      "texte": "Renommez, retaguez, remplacez un lien dans mille descriptions ou reposez la miniature de tout un catalogue en une seule opération suivie pas à pas."
+     }
+    ]
+   },
+   {
+    "h": "Cinq étapes, du sujet au résultat mesuré",
+    "items": [
+     {
+      "titre": "Connectez votre chaîne",
+      "texte": "Autorisez l'accès depuis l'écran officiel de Google. Vos vidéos, statistiques et commentaires sont ensuite synchronisés selon les permissions accordées."
+     },
+     {
+      "titre": "Trouvez le bon sujet",
+      "texte": "La veille remonte les vidéos qui surperforment dans votre niche et en tire des idées applicables à votre chaîne."
+     },
+     {
+      "titre": "Produisez titre et miniature",
+      "texte": "Générez plusieurs miniatures, faites-les analyser, choisissez le titre le mieux noté et gardez votre identité visuelle."
+     },
+     {
+      "titre": "Publiez et distribuez",
+      "texte": "Programmez sur YouTube et préparez vos Shorts. La diffusion TikTok et Instagram devient disponible une fois leurs applications configurées et vos comptes autorisés."
+     },
+     {
+      "titre": "Mesurez et corrigez",
+      "texte": "Taux de clic, rétention et revenus réels, test A/B des miniatures, puis corrections appliquées en lot sur tout le catalogue."
+     }
+    ]
+   },
+   {
+    "h": "Dites-le à votre assistant, il fait le reste",
+    "items": []
+   },
+   {
+    "h": "Les vidéos de la communauté",
+    "items": []
+   }
+  ]
+ },
+ "rapidoin": {
+  "etapes": {
+   "h": "Quatre étapes, une seule session.",
+   "items": [
+    {
+     "titre": "1. Vous partez d'une idée, pas d'une page blanche",
+     "texte": "Vos piliers de contenu, votre voix, vos accroches déjà testées : le studio vous propose trois angles, vous choisissez le vôtre."
+    },
+    {
+     "titre": "2. Des pairs relisent avant que ce soit public",
+     "texte": "Vous soumettez le brouillon à votre cercle. Vous récupérez des retours de fond, pas des pouces levés. Ce n'est pas un pod d'engagement."
+    },
+    {
+     "titre": "3. Le calendrier tient le rythme à votre place",
+     "texte": "Vous programmez la semaine en une session. L'avance de contenu est visible en un coup d'œil, l'équilibre des piliers aussi."
+    },
+    {
+     "titre": "4. La première heure est traitée, pas ratée",
+     "texte": "Dès la mise en ligne, les réponses reçues remontent au même endroit, avec une proposition de réponse que vous validez."
+    }
+   ]
+  },
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "RapidoIn publie-t-il à ma place, sans que je voie le contenu ?",
+     "texte": ""
+    },
+    {
+     "titre": "RapidoIn publie-t-il à ma place, sans que je voie le contenu ?",
+     "texte": ""
+    },
+    {
+     "titre": "Est-ce un pod d'engagement déguisé ?",
+     "texte": ""
+    },
+    {
+     "titre": "Est-ce un pod d'engagement déguisé ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mon compte LinkedIn risque-t-il quelque chose ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mon compte LinkedIn risque-t-il quelque chose ?",
+     "texte": ""
+    },
+    {
+     "titre": "Je n'ai pas d'idées, est-ce que ça m'aidera vraiment ?",
+     "texte": ""
+    },
+    {
+     "titre": "Je n'ai pas d'idées, est-ce que ça m'aidera vraiment ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je gérer plusieurs comptes ou une page entreprise ?",
+     "texte": "Oui. Profils et pages coexistent, avec des espaces de travail, des validations et des rapports pour les équipes et les agences."
+    },
+    {
+     "titre": "Puis-je gérer plusieurs comptes ou une page entreprise ?",
+     "texte": ""
+    },
+    {
+     "titre": "Combien de temps avant mon premier post ?",
+     "texte": "Dix minutes : créer le compte, connecter le profil, écrire l'accroche, publier. Le tutoriel complet vous montre chaque écran."
+    },
+    {
+     "titre": "Combien de temps avant mon premier post ?",
+     "texte": "Dix minutes : créer le compte, connecter le profil, écrire l'accroche, publier. Le tutoriel complet vous montre chaque écran."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "Le problème n'est pas votre motivation. C'est que tout est éparpillé.",
+    "items": []
+   },
+   {
+    "h": "Quatre étapes, une seule session.",
+    "items": [
+     {
+      "titre": "1. Vous partez d'une idée, pas d'une page blanche",
+      "texte": "Vos piliers de contenu, votre voix, vos accroches déjà testées : le studio vous propose trois angles, vous choisissez le vôtre."
+     },
+     {
+      "titre": "2. Des pairs relisent avant que ce soit public",
+      "texte": "Vous soumettez le brouillon à votre cercle. Vous récupérez des retours de fond, pas des pouces levés. Ce n'est pas un pod d'engagement."
+     },
+     {
+      "titre": "3. Le calendrier tient le rythme à votre place",
+      "texte": "Vous programmez la semaine en une session. L'avance de contenu est visible en un coup d'œil, l'équilibre des piliers aussi."
+     },
+     {
+      "titre": "4. La première heure est traitée, pas ratée",
+      "texte": "Dès la mise en ligne, les réponses reçues remontent au même endroit, avec une proposition de réponse que vous validez."
+     }
+    ]
+   },
+   {
+    "h": "Des bannières et des carrousels prêts à publier, à vos couleurs.",
+    "items": []
+   },
+   {
+    "h": "Tout ce dont vous avez besoin, rien qui vous mette en danger.",
+    "items": [
+     {
+      "titre": "Studio de rédaction",
+      "texte": "Accroche, corps, appel à l'action, hashtags et premier commentaire dans une seule carte."
+     },
+     {
+      "titre": "Fabrication des visuels",
+      "texte": "Carrousels au format 4:5, bannières, visuels de citation, découpe vidéo avec sous-titres."
+     },
+     {
+      "titre": "Mesure honnête",
+      "texte": "Ce qui a porté, sur quel pilier, à quelle heure. Et la dynamique heure par heure d'un post."
+     },
+     {
+      "titre": "Cercles de relecture",
+      "texte": "Un cercle de pairs pour des retours de fond avant publication. La réputation récompense les retours donnés."
+     },
+     {
+      "titre": "Communauté",
+      "texte": "Les commentaires reçus, triés par priorité, avec des réponses proposées que vous validez."
+     },
+     {
+      "titre": "Aucune automatisation risquée",
+      "texte": "Pas de faux engagement, pas de cookie de session, pas de message privé envoyé sans vous."
+     }
+    ]
+   },
+   {
+    "h": "L'application, telle qu'elle est sur votre téléphone.",
+    "items": []
+   },
+   {
+    "h": "Questions fréquentes",
+    "items": [
+     {
+      "titre": "RapidoIn publie-t-il à ma place, sans que je voie le contenu ?",
+      "texte": ""
+     },
+     {
+      "titre": "RapidoIn publie-t-il à ma place, sans que je voie le contenu ?",
+      "texte": ""
+     },
+     {
+      "titre": "Est-ce un pod d'engagement déguisé ?",
+      "texte": ""
+     },
+     {
+      "titre": "Est-ce un pod d'engagement déguisé ?",
+      "texte": ""
+     },
+     {
+      "titre": "Mon compte LinkedIn risque-t-il quelque chose ?",
+      "texte": ""
+     },
+     {
+      "titre": "Mon compte LinkedIn risque-t-il quelque chose ?",
+      "texte": ""
+     },
+     {
+      "titre": "Je n'ai pas d'idées, est-ce que ça m'aidera vraiment ?",
+      "texte": ""
+     },
+     {
+      "titre": "Je n'ai pas d'idées, est-ce que ça m'aidera vraiment ?",
+      "texte": ""
+     }
+    ]
+   }
+  ]
+ },
+ "webinaire-rapidocms": {
+  "etapes": null,
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "Ai-je besoin de connaissances techniques ?",
+     "texte": ""
+    },
+    {
+     "titre": "Ai-je besoin de connaissances techniques ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je annuler à tout moment ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je annuler à tout moment ?",
+     "texte": ""
+    },
+    {
+     "titre": "Les participants doivent-ils créer un compte ?",
+     "texte": ""
+    },
+    {
+     "titre": "Les participants doivent-ils créer un compte ?",
+     "texte": ""
+    },
+    {
+     "titre": "Que se passe-t-il si je dépasse la limite de participants ?",
+     "texte": ""
+    },
+    {
+     "titre": "Que se passe-t-il si je dépasse la limite de participants ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment fonctionnent les notifications automatiques ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment fonctionnent les notifications automatiques ?",
+     "texte": ""
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "Tout ce dont vous avez besoin, rien de superflu",
+    "items": [
+     {
+      "titre": "Génération IA",
+      "texte": "L'IA crée vos titres et descriptions accrocheurs en quelques secondes. Plus besoin de chercher l'inspiration."
+     },
+     {
+      "titre": "Gestion simplifiée",
+      "texte": "Créez, planifiez et gérez tous vos webinaires depuis un tableau de bord unique avec vue calendrier."
+     },
+     {
+      "titre": "Notifications automatiques",
+      "texte": "SMS, WhatsApp et appels automatiques pour rappeler vos participants. Doublez votre taux de présence."
+     },
+     {
+      "titre": "Visioconférence intégrée",
+      "texte": "Jitsi Meet intégré directement dans la plateforme. Vos participants ne quittent jamais votre site."
+     },
+     {
+      "titre": "Analytics en temps réel",
+      "texte": "Suivez vos inscriptions, taux de remplissage et engagement avec des graphiques interactifs."
+     },
+     {
+      "titre": "Pages d'inscription élégantes",
+      "texte": "Formulaires optimisés pour la conversion avec compte à rebours, partage social et jauge de places."
+     }
+    ]
+   },
+   {
+    "h": "Ils ont transformé leur activité",
+    "items": []
+   },
+   {
+    "h": "Un plan pour chaque ambition",
+    "items": [
+     {
+      "titre": "Gratuit",
+      "texte": "Pour démarrer et tester la plateforme"
+     },
+     {
+      "titre": "Pro",
+      "texte": "Pour les professionnels qui veulent scaler"
+     },
+     {
+      "titre": "Business",
+      "texte": "Pour les équipes et organisations"
+     }
+    ]
+   },
+   {
+    "h": "Questions fréquentes",
+    "items": [
+     {
+      "titre": "Ai-je besoin de connaissances techniques ?",
+      "texte": ""
+     },
+     {
+      "titre": "Ai-je besoin de connaissances techniques ?",
+      "texte": ""
+     },
+     {
+      "titre": "Puis-je annuler à tout moment ?",
+      "texte": ""
+     },
+     {
+      "titre": "Puis-je annuler à tout moment ?",
+      "texte": ""
+     },
+     {
+      "titre": "Les participants doivent-ils créer un compte ?",
+      "texte": ""
+     },
+     {
+      "titre": "Les participants doivent-ils créer un compte ?",
+      "texte": ""
+     },
+     {
+      "titre": "Que se passe-t-il si je dépasse la limite de participants ?",
+      "texte": ""
+     },
+     {
+      "titre": "Que se passe-t-il si je dépasse la limite de participants ?",
+      "texte": ""
+     }
+    ]
+   },
+   {
+    "h": "Prêt à transformer vos formations ?",
+    "items": []
+   }
+  ]
+ },
+ "rapidomeet": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "Your decisions die between two meetings.",
+    "items": []
+   },
+   {
+    "h": "Audio in. Actions out.",
+    "items": [
+     {
+      "titre": "Connect or Upload",
+      "texte": "Plug in Google Meet or Teams, drag an audio file, or start recording from your mic. RapidoMeet adapts to your workflow."
+     },
+     {
+      "titre": "AI understands & structures",
+      "texte": "Our engine identifies every voice, every decision, every task, every prospect. Everything is structured into actionable data in real time."
+     },
+     {
+      "titre": "Your tools receive the orders",
+      "texte": "CRM updated, tasks assigned, calendar filled, report sent on WhatsApp. OpenClaw orchestrates everything while you hang up."
+     }
+    ]
+   },
+   {
+    "h": "Everything that should already exist.",
+    "items": [
+     {
+      "titre": "Every word captured. Every decision extracted.",
+      "texte": "Whisper + Deepgram for ultra-precise FR/EN transcription with speaker identification. AI automatically extracts tasks, decisions, prospects and sentiments — ready to act on."
+     },
+     {
+      "titre": "Your CRM updates while you hang up.",
+      "texte": "Prospects detected in meetings are automatically created in RapidoCRM. Opportunities move through the pipeline, activities are logged, tasks assigned — no manual entry."
+     },
+     {
+      "titre": "\"In 2 weeks\" becomes a real event.",
+      "texte": "\"Let's meet again in 2 weeks\" becomes a Google Calendar event created automatically, with all participants invited and reminders set for mentioned deadlines."
+     },
+     {
+      "titre": "Your workflows activate. Without you.",
+      "texte": "Trigger your N8N workflows directly from meetings. Weekly digest, email sequence, invoice generation, Slack broadcast — your business automations fire at the right time."
+     },
+     {
+      "titre": "The report hits your phone. In 3 minutes.",
+      "texte": "Report received on WhatsApp, Telegram, Discord or HTML email in under 3 minutes. Reply directly from WhatsApp to trigger additional actions — your agent listens."
+     },
+     {
+      "titre": "AI learns your vocabulary. Your clients. Your codes.",
+      "texte": "RapidoMeet learns from your company. Connect your documents, processes, business glossary. The agent uses this context for even more precise extractions with every meeting."
+     },
+     {
+      "titre": "Your brand. Your rules. Your agent.",
+      "texte": "Customize your AI agent, email templates in your brand colors, report styles and business rules. RapidoMeet adapts to your image, not the other way around."
+     }
+    ]
+   },
+   {
+    "h": "S'intègre en 2 minutes avec ce que vous avez déjà.",
+    "items": []
+   },
+   {
+    "h": "Votre agent IA tourne 24h/24. Sans vous.",
+    "items": []
+   },
+   {
+    "h": "Un abonnement. Une instance OpenClaw. Des actions illimitées.",
+    "items": []
+   }
+  ]
+ },
+ "rapidotuto": {
+  "etapes": {
+   "h": "Comment ça marche",
+   "items": [
+    {
+     "titre": "Le storyboard s'écrit tout seul",
+     "texte": "Décrivez votre objectif : l'IA propose les scènes, le texte dit par l'avatar et l'action à filmer."
+    },
+    {
+     "titre": "Vous filmez votre écran, une fois",
+     "texte": "Suivez le script de tournage. « Scène suivante » (ou la touche N) découpe l'enregistrement scène par scène."
+    },
+    {
+     "titre": "L'avatar l'explique à voix haute",
+     "texte": "Un avatar 3D lit chaque scène avec une voix IA naturelle, synchronisée sur ses lèvres, en français, anglais ou arabe."
+    },
+    {
+     "titre": "L'assistant répond à vos clients",
+     "texte": "Sur la vidéo partagée ou votre centre d'aide, l'assistant répond aux questions et ouvre la vidéo au bon passage."
+    }
+   ]
+  },
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "Faut-il savoir monter des vidéos ?",
+     "texte": ""
+    },
+    {
+     "titre": "Faut-il savoir monter des vidéos ?",
+     "texte": ""
+    },
+    {
+     "titre": "L'assistant peut-il inventer des réponses ?",
+     "texte": ""
+    },
+    {
+     "titre": "L'assistant peut-il inventer des réponses ?",
+     "texte": ""
+    },
+    {
+     "titre": "Quels navigateurs sont supportés ?",
+     "texte": ""
+    },
+    {
+     "titre": "Quels navigateurs sont supportés ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je intégrer l'assistant sur mon site ?",
+     "texte": "Oui : le Centre d'aide fournit un code d'intégration (iframe) à coller sur votre site, et un lien vers une page publique qui regroupe tous vos tutoriels."
+    },
+    {
+     "titre": "Puis-je intégrer l'assistant sur mon site ?",
+     "texte": "Oui : le Centre d'aide fournit un code d'intégration (iframe) à coller sur votre site, et un lien vers une page publique qui regroupe tous vos tutoriels."
+    },
+    {
+     "titre": "Mes données sont-elles protégées ?",
+     "texte": "Vos projets ne sont visibles que par vous. Seules les vidéos dont vous activez le partage sont publiques, et vous pouvez désactiver ce partage à tout moment."
+    },
+    {
+     "titre": "Mes données sont-elles protégées ?",
+     "texte": "Vos projets ne sont visibles que par vous. Seules les vidéos dont vous activez le partage sont publiques, et vous pouvez désactiver ce partage à tout moment."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "« Comment exporter ma facture ? » Pour la 40ᵉ fois.",
+    "items": []
+   },
+   {
+    "h": "Comment ça marche",
+    "items": [
+     {
+      "titre": "Le storyboard s'écrit tout seul",
+      "texte": "Décrivez votre objectif : l'IA propose les scènes, le texte dit par l'avatar et l'action à filmer."
+     },
+     {
+      "titre": "Vous filmez votre écran, une fois",
+      "texte": "Suivez le script de tournage. « Scène suivante » (ou la touche N) découpe l'enregistrement scène par scène."
+     },
+     {
+      "titre": "L'avatar l'explique à voix haute",
+      "texte": "Un avatar 3D lit chaque scène avec une voix IA naturelle, synchronisée sur ses lèvres, en français, anglais ou arabe."
+     },
+     {
+      "titre": "L'assistant répond à vos clients",
+      "texte": "Sur la vidéo partagée ou votre centre d'aide, l'assistant répond aux questions et ouvre la vidéo au bon passage."
+     }
+    ]
+   },
+   {
+    "h": "Tout ce qu'il faut pour aider vos clients",
+    "items": [
+     {
+      "titre": "Assistant IA",
+      "texte": "Répond à partir de vos tutoriels, cite le passage exact et passe la main à un humain si besoin."
+     },
+     {
+      "titre": "Centre d'aide et widget",
+      "texte": "Tous vos tutos sur une page publique, ou intégrés à votre site en une ligne de code."
+     },
+     {
+      "titre": "Multilingue",
+      "texte": "Traduction du projet en FR, EN et AR, voix et sous-titres compris."
+     },
+     {
+      "titre": "Sous-titres et chapitres",
+      "texte": "Sous-titres karaoké, fichier WebVTT et chapitres cliquables sur chaque vidéo."
+     },
+     {
+      "titre": "Statistiques",
+      "texte": "Vues, lectures complètes et progression moyenne de chaque tutoriel."
+     },
+     {
+      "titre": "Questions sans réponse",
+      "texte": "Les questions que vos tutos ne couvrent pas encore deviennent votre liste des prochains sujets."
+     },
+     {
+      "titre": "Brand Kit",
+      "texte": "Logo, couleurs, intro et outro animées : chaque vidéo est à votre image."
+     },
+     {
+      "titre": "Tous les formats",
+      "texte": "Export 16:9, 9:16 et 1:1 en MP4, cadres d'appareils pour les démos mobiles."
+     }
+    ]
+   },
+   {
+    "h": "Pour qui ?",
+    "items": [
+     {
+      "titre": "Support client",
+      "texte": "La même question revient chaque semaine ? Un tuto, et l'assistant y répond à toute heure."
+     },
+     {
+      "titre": "Onboarding SaaS",
+      "texte": "Guidez chaque nouvel utilisateur pas à pas, dans sa langue."
+     },
+     {
+      "titre": "Formation interne",
+      "texte": "Documentez vos procédures une fois, formez toute l'équipe."
+     }
+    ]
+   },
+   {
+    "h": "Tarifs simples",
+    "items": [
+     {
+      "titre": "Gratuit",
+      "texte": "Pour essayer avec vos premiers tutoriels."
+     },
+     {
+      "titre": "Pro",
+      "texte": "Pour le support et l'onboarding de vos clients."
+     },
+     {
+      "titre": "Business",
+      "texte": "Pour les équipes avec beaucoup de clients à former."
+     }
+    ]
+   },
+   {
+    "h": "Une démo sur votre cas",
+    "items": []
+   }
+  ]
+ },
+ "plateforme-assurance": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "Qui sommes-nous ?",
+    "items": []
+   },
+   {
+    "h": "Nos services",
+    "items": []
+   },
+   {
+    "h": "Vous êtes",
+    "items": [
+     {
+      "titre": "Rendez-vous visible auprès des recruteurs pour être contacté",
+      "texte": ""
+     },
+     {
+      "titre": "Consultez des offres d’emploi dédiées aux métiers de l’actuaire",
+      "texte": ""
+     },
+     {
+      "titre": "Participez aux questions actuarielles",
+      "texte": ""
+     },
+     {
+      "titre": "Consultez nos partenaires et trouvez des réponses à vos besoins",
+      "texte": ""
+     },
+     {
+      "titre": "Accédez à un vivier de jeunes talents",
+      "texte": ""
+     },
+     {
+      "titre": "Recrutez la perle rare dans notre réseau d’actuaires",
+      "texte": ""
+     },
+     {
+      "titre": "Renforcez vos équipes avec notre réseau de consultants",
+      "texte": ""
+     },
+     {
+      "titre": "Participez aux questions actuarielles",
+      "texte": ""
+     }
+    ]
+   }
+  ]
+ },
+ "tutoriels-foodeatup": {
+  "etapes": {
+   "h": "Votre restaurant ne devrait pas fonctionner avec dix fichiers différents",
+   "items": [
+    {
+     "titre": "La caisse ne parle pas au stock.",
+     "texte": "Vous vendez toute la journée, mais vos quantités réelles ne bougent nulle part."
+    },
+    {
+     "titre": "Les achats, les recettes et la production sont recopiés plusieurs fois.",
+     "texte": "Le même produit est saisi dans un tableur, dans un carnet, puis dans un logiciel."
+    },
+    {
+     "titre": "Les contrôles HACCP et les chiffres du jour sont préparés dans l'urgence.",
+     "texte": "La conformité et la clôture se règlent le soir, ou la veille d'un contrôle."
+    }
+   ]
+  },
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "Par où commencer avec FoodEatUp ?",
+     "texte": "Par le parcours de démarrage : 8 jalons et 38 vidéos guidées qui vous mènent du compte créé au premier service."
+    },
+    {
+     "titre": "Combien de temps faut-il pour configurer son restaurant ?",
+     "texte": "La version essentielle du parcours représente environ 22 minutes de vidéo, le parcours complet environ 28 minutes. Le temps de configuration réel dépend de la taille de votre carte et de votre équipe."
+    },
+    {
+     "titre": "FoodEatUp peut-il gérer le stock et les achats ?",
+     "texte": "Oui. StockVision AI relie la carte, les recettes, les achats, les livraisons et les productions : une vente consomme le stock, et le stock alimente vos commandes fournisseurs."
+    },
+    {
+     "titre": "Comment fonctionne l'HACCP ?",
+     "texte": "Les relevés de température, le plan de nettoyage, l'étiquetage et la traçabilité sont saisis au fil du service, horodatés, puis exportables. Le dossier se construit chaque jour au lieu d'être préparé avant un contrôle."
+    },
+    {
+     "titre": "Peut-on utiliser FoodEatUp avec ChatGPT, Claude ou Mistral ?",
+     "texte": "Oui. FoodEatUp expose un connecteur MCP que vous branchez sur l'assistant de votre choix. Les actions possibles dépendent des droits et des connexions configurés dans votre compte."
+    },
+    {
+     "titre": "Les tutoriels sont-ils accessibles sur mobile ?",
+     "texte": "Oui. Toute la documentation est consultable depuis un téléphone, en cuisine comme au comptoir."
+    },
+    {
+     "titre": "Que faire si un tutoriel est encore en préparation ?",
+     "texte": "Les fiches à venir sont signalées « bientôt disponible ». 173 tutoriels sont déjà en ligne et de nouveaux contenus sont publiés chaque semaine."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "Vous travaillez en… ?",
+    "items": []
+   },
+   {
+    "h": "Une journée avec FoodEatUp",
+    "items": []
+   },
+   {
+    "h": "Votre restaurant ne devrait pas fonctionner avec dix fichiers différents",
+    "items": [
+     {
+      "titre": "La caisse ne parle pas au stock.",
+      "texte": "Vous vendez toute la journée, mais vos quantités réelles ne bougent nulle part."
+     },
+     {
+      "titre": "Les achats, les recettes et la production sont recopiés plusieurs fois.",
+      "texte": "Le même produit est saisi dans un tableur, dans un carnet, puis dans un logiciel."
+     },
+     {
+      "titre": "Les contrôles HACCP et les chiffres du jour sont préparés dans l'urgence.",
+      "texte": "La conformité et la clôture se règlent le soir, ou la veille d'un contrôle."
+     }
+    ]
+   },
+   {
+    "h": "Une journée de service, de bout en bout",
+    "items": []
+   },
+   {
+    "h": "Ce que FoodEatUp change au quotidien",
+    "items": [
+     {
+      "titre": "Moins de saisies",
+      "texte": "Saisissez une information une seule fois et réutilisez-la dans les autres modules."
+     },
+     {
+      "titre": "Un stock plus fiable",
+      "texte": "Reliez ventes, recettes, achats, livraisons et productions."
+     },
+     {
+      "titre": "Un HACCP toujours prêt",
+      "texte": "Centralisez les relevés, le nettoyage, l'étiquetage et la traçabilité."
+     },
+     {
+      "titre": "Une équipe mieux organisée",
+      "texte": "Gérez les collaborateurs, les shifts et les besoins opérationnels au même endroit."
+     },
+     {
+      "titre": "Une cuisine mieux synchronisée",
+      "texte": "Faites circuler les commandes vers la cuisine sans ticket papier ni aller-retour inutile."
+     },
+     {
+      "titre": "Des décisions plus rapides",
+      "texte": "Interrogez vos données et vos agents IA en langage naturel."
+     }
+    ]
+   },
+   {
+    "h": "Premiers pas",
+    "items": []
+   }
+  ]
+ },
+ "citycar": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "Une solution unique pour CHAQUE profil de chauffeur.",
+    "items": []
+   },
+   {
+    "h": "Des véhicules fiables, prêts à rouler.",
+    "items": [
+     {
+      "titre": "TESLA Y",
+      "texte": "PREMIUM"
+     },
+     {
+      "titre": "TOYOTA CHR",
+      "texte": "1,8 HYBRID 122CH GRAFFIC"
+     },
+     {
+      "titre": "TOYOTA RAV4",
+      "texte": "LOUNGE"
+     },
+     {
+      "titre": "LEXUS NX300H",
+      "texte": "LUXE"
+     },
+     {
+      "titre": "HYUNDAI IONIC",
+      "texte": "EXECUTIVE"
+     },
+     {
+      "titre": "HYUNDAI TUCSON",
+      "texte": "Hybrid Executive"
+     },
+     {
+      "titre": "RENAULT MEGANE",
+      "texte": "Megane E-Tech EV40 130ch standard charge Techno"
+     },
+     {
+      "titre": "AUDI Q4 ETRON",
+      "texte": "Electrique 40 82 kWh Design Luxe VP [5P] bva 1-204CH-5cv"
+     }
+    ]
+   },
+   {
+    "h": "Un accompagnement, pas juste une location.",
+    "items": []
+   },
+   {
+    "h": "La sérénité d'un partenaire qui roule avec vous.",
+    "items": [
+     {
+      "titre": "Véhicules vérifiés & garantis",
+      "texte": "Chaque véhicule passe un contrôle technique complet et bénéficie d'une garantie mécanique."
+     },
+     {
+      "titre": "Financement flexible",
+      "texte": "Crédit, LOA ou Leasing : on adapte la solution à votre activité et votre apport."
+     },
+     {
+      "titre": "Tout inclus, zéro stress",
+      "texte": "Assurance VTC, entretien, assistance, véhicule de remplacement. Vous conduisez, on gère."
+     }
+    ]
+   },
+   {
+    "h": "Des chauffeurs, des projets, des rencontres.",
+    "items": []
+   },
+   {
+    "h": "Chauffeur VTC ? Votre véhicule vous attend.",
+    "items": []
+   }
+  ]
+ },
+ "salle-live": {
+  "etapes": {
+   "h": "Comment ça marche",
+   "items": [
+    {
+     "titre": "Le boîtier analyse la salle en local",
+     "texte": "L'image est traitée sur place, dans le boîtier, puis immédiatement oubliée."
+    },
+    {
+     "titre": "Il n'envoie que des événements anonymes",
+     "texte": "Une table, un nombre de personnes, des objets ou non, une heure. Rien d'autre."
+    },
+    {
+     "titre": "Tout se met à jour en direct",
+     "texte": "Votre plan de salle, vos alertes et vos analyses suivent le service en temps réel."
+    }
+   ]
+  },
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "Faut-il une caméra par salle ?",
+     "texte": ""
+    },
+    {
+     "titre": "Faut-il une caméra par salle ?",
+     "texte": ""
+    },
+    {
+     "titre": "Que se passe-t-il sans caméra ?",
+     "texte": ""
+    },
+    {
+     "titre": "Que se passe-t-il sans caméra ?",
+     "texte": ""
+    },
+    {
+     "titre": "Les clients sont-ils filmés ?",
+     "texte": ""
+    },
+    {
+     "titre": "Les clients sont-ils filmés ?",
+     "texte": ""
+    },
+    {
+     "titre": "Faut-il FoodEatUp ?",
+     "texte": "Non, ce n'est pas obligatoire. La connexion à la caisse FoodEatUp ajoute les tickets, les encaissements et l'historique de ventes, mais la caméra et les QR codes suffisent pour démarrer."
+    },
+    {
+     "titre": "Faut-il FoodEatUp ?",
+     "texte": ""
+    },
+    {
+     "titre": "Combien de temps pour installer ?",
+     "texte": "Il faut dessiner son plan de salle, poser le boîtier et tracer les zones des tables sur une photo de la salle vide. Comptez une session hors service ; la durée dépend surtout du nombre de tables."
+    },
+    {
+     "titre": "Combien de temps pour installer ?",
+     "texte": "Il faut dessiner son plan de salle, poser le boîtier et tracer les zones des tables sur une photo de la salle vide. Comptez une session hors service ; la durée dépend surtout du nombre de tables."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "Comment ça marche",
+    "items": [
+     {
+      "titre": "Le boîtier analyse la salle en local",
+      "texte": "L'image est traitée sur place, dans le boîtier, puis immédiatement oubliée."
+     },
+     {
+      "titre": "Il n'envoie que des événements anonymes",
+      "texte": "Une table, un nombre de personnes, des objets ou non, une heure. Rien d'autre."
+     },
+     {
+      "titre": "Tout se met à jour en direct",
+      "texte": "Votre plan de salle, vos alertes et vos analyses suivent le service en temps réel."
+     }
+    ]
+   },
+   {
+    "h": "Ce qui sort de la caméra",
+    "items": [
+     {
+      "titre": "Événements envoyés",
+      "texte": "20:00:38"
+     }
+    ]
+   },
+   {
+    "h": "Les trois couleurs",
+    "items": [
+     {
+      "titre": "Libre",
+      "texte": "Table propre et disponible : on peut installer un groupe."
+     },
+     {
+      "titre": "Occupée",
+      "texte": "Des clients sont installés ; un compteur indique depuis combien de temps."
+     },
+     {
+      "titre": "À débarrasser",
+      "texte": "Les clients sont partis, la vaisselle est encore là : priorité au débarrassage."
+     }
+    ]
+   },
+   {
+    "h": "Ce que ça change en service",
+    "items": [
+     {
+      "titre": "Alertes en temps réel",
+      "texte": "Table sans commande, addition attendue, table à débarrasser : l'équipe est prévenue au bon moment."
+     },
+     {
+      "titre": "Analytics de rotation",
+      "texte": "Durée des repas, délais de service, remplissage par quart d'heure, temps perdu au débarrassage."
+     },
+     {
+      "titre": "Planning IA",
+      "texte": "L'affluence prévue sur 7 jours et le personnel nécessaire, avec des recommandations concrètes."
+     },
+     {
+      "titre": "Commande par QR à table",
+      "texte": "Le client consulte la carte, commande et demande l'addition depuis son téléphone."
+     }
+    ]
+   },
+   {
+    "h": "Connecté à votre caisse FoodEatUp",
+    "items": [
+     {
+      "titre": "Connexion en un clic",
+      "texte": "Vous autorisez Salle Live depuis votre compte FoodEatUp, sans mot de passe à recopier."
+     },
+     {
+      "titre": "Tickets et encaissements synchronisés",
+      "texte": "Les commandes et paiements de la caisse font avancer chaque table automatiquement."
+     },
+     {
+      "titre": "Votre historique dès le premier jour",
+      "texte": "L'historique de ventes nourrit les prévisions de l'IA sans attendre des semaines de données."
+     }
+    ]
+   },
+   {
+    "h": "Respect de la vie privée",
+    "items": [
+     {
+      "titre": "Traitement local",
+      "texte": "L'analyse se fait dans le boîtier, dans votre salle."
+     },
+     {
+      "titre": "Aucune image stockée ni transmise",
+      "texte": "Ni photo, ni vidéo, ni reconnaissance faciale."
+     },
+     {
+      "titre": "Pas de suivi individuel",
+      "texte": "Les alertes visent des tables et des zones, jamais un serveur ou un client."
+     },
+     {
+      "titre": "Information client fournie",
+      "texte": "Affiche d'entrée, page de confidentialité de votre restaurant et note pour le personnel, prêtes à imprimer."
+     }
+    ]
+   }
+  ]
+ },
+ "la-chaine-fraternelles": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "Découvrez qui nous sommes",
+    "items": []
+   },
+   {
+    "h": "Depuis 2018, nous agissons au cœur du 93",
+    "items": []
+   },
+   {
+    "h": "Ce que nous faisons au quotidien",
+    "items": [
+     {
+      "titre": "Aide matérielle essentielle",
+      "texte": "Distribution de colis alimentaires, vêtements et produits d'hygiène pour les familles en situation de précarité."
+     },
+     {
+      "titre": "Accompagnement administratif",
+      "texte": "Nous guidons et assistons les personnes dans leurs démarches : CAF, Pôle emploi, aides sociales, accès aux droits."
+     },
+     {
+      "titre": "Création du lien social",
+      "texte": "Ateliers, sorties culturelles, événements solidaires : nous rompons l'isolement et tissons des liens durables."
+     }
+    ]
+   },
+   {
+    "h": "Nos dernières actions",
+    "items": [
+     {
+      "titre": "Distribution fête solidaire",
+      "texte": "Plus de 80 familles ont reçu des cadeaux pour leurs enfants et eux même lors de notre grande distribution."
+     },
+     {
+      "titre": "Koh-Lanta des Quartiers",
+      "texte": "Une journée inoubliable de jeux, de défis et de bonne humeur pour petits et grands."
+     },
+     {
+      "titre": "Octobre Rose",
+      "texte": "Deux journées de sensibilisation au cancer du col de l'utérus."
+     }
+    ]
+   },
+   {
+    "h": "Les dernières nouvelles de l'association",
+    "items": [
+     {
+      "titre": "Le Partage Alimentaire : Un Levier de Solidarité à Aulnay-sous-Bois",
+      "texte": "Découvrez l'importance du partage alimentaire pour lutter contre la précarité. Un guide sur les actions de solidarité à Aulnay-sous-Bois et comment s'impliquer concrètement."
+     },
+     {
+      "titre": "La Bienveillance : Le Cœur Battant de la Solidarité à Aulnay-sous-Bois",
+      "texte": "Découvrez pourquoi la bienveillance est le moteur de la solidarité. Un guide sur ses bienfaits pour la société et comment la cultiver au quotidien à Aulnay-sous-Bois."
+     },
+     {
+      "titre": "Le Partage et la Bienveillance : Les Piliers de la Solidarité Locale",
+      "texte": "Découvrez comment le partage et la bienveillance transforment notre société et comment les cultiver au quotidien à Aulnay-sous-Bois avec La Chaîne Fraternelle."
+     }
+    ]
+   },
+   {
+    "h": "Participez à nos collectes solidaires",
+    "items": [
+     {
+      "titre": "Une seconde vie pour vos vêtements, un sourire pour nos familles",
+      "texte": "Offrez une seconde vie à vos vêtements et soutenez les familles d'Aulnay-sous-Bois dans le besoin. Une collecte solidaire pour habiller le quotidien."
+     },
+     {
+      "titre": "Urgence Solidarité : Collecte Alimentaire à Aulnay-sous-Bois",
+      "texte": "Participez à notre grande collecte de denrées non périssables pour soutenir les familles d'Aulnay-sous-Bois en difficulté. Ensemble, luttons contre la précarité."
+     },
+     {
+      "titre": "Un habit pour chacun : Tissons la solidarité à Aulnay",
+      "texte": "Aidez La Chaîne Fratern'Elles à offrir des vêtements dignes et chauds aux familles et enfants en difficulté à Aulnay-sous-Bois. Un geste simple pour un impact réel."
+     }
+    ]
+   }
+  ]
+ },
+ "rapidocrm-terrain": {
+  "etapes": {
+   "h": "Comment ça marche pour l'équipe",
+   "items": [
+    {
+     "titre": "Connexion RapidoCRM",
+     "texte": "Le commercial se connecte avec son compte RapidoCRM : connexion sécurisée OAuth, aucun mot de passe stocké dans le téléphone."
+    },
+    {
+     "titre": "Tout arrive par le MCP",
+     "texte": "Ses sondages, jeux concours, formulaires et pipelines arrivent tout seuls par le MCP RapidoCRM. Rien à ressaisir."
+    },
+    {
+     "titre": "Même sans réseau",
+     "texte": "Il prospecte partout : les fiches attendent dans le téléphone et partent dès le retour du réseau."
+    },
+    {
+     "titre": "Le manager suit",
+     "texte": "Objectifs, performance de chaque commercial et résultats des sondages se suivent dans RapidoCRM."
+    }
+   ]
+  },
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "Faut-il ressaisir les prospects dans le CRM ?",
+     "texte": ""
+    },
+    {
+     "titre": "Faut-il ressaisir les prospects dans le CRM ?",
+     "texte": ""
+    },
+    {
+     "titre": "Que se passe-t-il sans réseau ?",
+     "texte": ""
+    },
+    {
+     "titre": "Que se passe-t-il sans réseau ?",
+     "texte": ""
+    },
+    {
+     "titre": "Le prospect peut-il refuser les offres et garder son cadeau ?",
+     "texte": ""
+    },
+    {
+     "titre": "Le prospect peut-il refuser les offres et garder son cadeau ?",
+     "texte": ""
+    },
+    {
+     "titre": "Où créer les sondages et les jeux ?",
+     "texte": ""
+    },
+    {
+     "titre": "Où créer les sondages et les jeux ?",
+     "texte": ""
+    },
+    {
+     "titre": "Sur quels téléphones fonctionne l'application ?",
+     "texte": "Sur les téléphones Android et iPhone récents."
+    },
+    {
+     "titre": "Sur quels téléphones fonctionne l'application ?",
+     "texte": "Sur les téléphones Android et iPhone récents."
+    },
+    {
+     "titre": "Le manager voit-il l'activité ?",
+     "texte": ""
+    },
+    {
+     "titre": "Le manager voit-il l'activité ?",
+     "texte": ""
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "RapidoCRM Terrain en 36 secondes",
+    "items": []
+   },
+   {
+    "h": "Sur le terrain, en trois gestes",
+    "items": [
+     {
+      "titre": "Ajouter le prospect",
+      "texte": "Recherche par nom, SIRET ou « autour de moi » (prospection Maps de RapidoCRM), saisie à la main ou scan de carte de visite. L'entreprise et le contact (prénom, nom, fonction, téléphone, email) sont créés dans RapidoCRM."
+     },
+     {
+      "titre": "Tendre le téléphone",
+      "texte": "Le commercial choisit une animation déjà créée dans RapidoCRM (sondage, jeu concours, formulaire) et passe en « mode client »."
+     },
+     {
+      "titre": "C'est dans le CRM",
+      "texte": "Le prospect est ajouté au pipeline à la bonne étape, une tâche de relance ou un rendez-vous se crée en un toucher, une note vocale peut être ajoutée."
+     }
+    ]
+   },
+   {
+    "h": "Le téléphone passe dans les mains du prospect",
+    "items": [
+     {
+      "titre": "Sondage",
+      "texte": "Trois questions, de grands boutons de réponse."
+     },
+     {
+      "titre": "Roue des cadeaux",
+      "texte": "8 parts vert, violet, bleu, orange. Lots : -10 %, café offert, tote bag, perdu."
+     },
+     {
+      "titre": "Coordonnées",
+      "texte": "« Où vous envoyer votre cadeau ? » par email ou SMS."
+     }
+    ]
+   },
+   {
+    "h": "Des contacts propres, avec la preuve",
+    "items": [
+     {
+      "titre": "Nature du consentement",
+      "texte": "Opt-in, intérêt légitime ou formulaire : c'est enregistré sur chaque contact."
+     },
+     {
+      "titre": "Source",
+      "texte": "Démarchage terrain, sondage ou jeu : on sait d'où vient chaque contact."
+     },
+     {
+      "titre": "Preuve",
+      "texte": "Date, heure, commercial et texte affiché au prospect sont conservés."
+     },
+     {
+      "titre": "Jamais pré-coché",
+      "texte": "La case de consentement est toujours vide au départ."
+     },
+     {
+      "titre": "Désinscription en un clic",
+      "texte": "Le contact peut se retirer à tout moment."
+     },
+     {
+      "titre": "Hébergé dans RapidoCRM",
+      "texte": "Les données restent dans votre CRM et ne sont jamais revendues."
+     }
+    ]
+   },
+   {
+    "h": "Comment ça marche pour l'équipe",
+    "items": [
+     {
+      "titre": "Connexion RapidoCRM",
+      "texte": "Le commercial se connecte avec son compte RapidoCRM : connexion sécurisée OAuth, aucun mot de passe stocké dans le téléphone."
+     },
+     {
+      "titre": "Tout arrive par le MCP",
+      "texte": "Ses sondages, jeux concours, formulaires et pipelines arrivent tout seuls par le MCP RapidoCRM. Rien à ressaisir."
+     },
+     {
+      "titre": "Même sans réseau",
+      "texte": "Il prospecte partout : les fiches attendent dans le téléphone et partent dès le retour du réseau."
+     },
+     {
+      "titre": "Le manager suit",
+      "texte": "Objectifs, performance de chaque commercial et résultats des sondages se suivent dans RapidoCRM."
+     }
+    ]
+   },
+   {
+    "h": "Le pilotage reste dans RapidoCRM",
+    "items": []
+   }
+  ]
+ },
+ "foodeatup-recettes": {
+  "etapes": {
+   "h": "Prête en trois étapes",
+   "items": []
+  },
+  "faq": {
+   "h": "Vos questions",
+   "items": [
+    {
+     "titre": "Faut-il ressaisir mes recettes ?",
+     "texte": ""
+    },
+    {
+     "titre": "Faut-il ressaisir mes recettes ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mes employés doivent-ils savoir se servir d'une application ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mes employés doivent-ils savoir se servir d'une application ?",
+     "texte": ""
+    },
+    {
+     "titre": "Que se passe-t-il sans Wi-Fi ?",
+     "texte": ""
+    },
+    {
+     "titre": "Que se passe-t-il sans Wi-Fi ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment chaque employé se connecte-t-il ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment chaque employé se connecte-t-il ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je changer la formatrice ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je changer la formatrice ?",
+     "texte": ""
+    },
+    {
+     "titre": "Le mode école touche-t-il mes vraies données ?",
+     "texte": ""
+    },
+    {
+     "titre": "Le mode école touche-t-il mes vraies données ?",
+     "texte": ""
+    },
+    {
+     "titre": "Quel matériel ?",
+     "texte": ""
+    },
+    {
+     "titre": "Quel matériel ?",
+     "texte": ""
+    },
+    {
+     "titre": "Ça marche pour une franchise ou une chaîne ?",
+     "texte": ""
+    },
+    {
+     "titre": "Ça marche pour une franchise ou une chaîne ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mes allergènes sont-ils fiables ?",
+     "texte": "Ils viennent des fiches ingrédients de FoodEatUp. L'application signale les recettes à vérifier."
+    },
+    {
+     "titre": "Mes allergènes sont-ils fiables ?",
+     "texte": ""
+    },
+    {
+     "titre": "Combien ça coûte ?",
+     "texte": "Rien la première année avec Premiers Pas, puis 49 € HT par an, sans engagement. Les packs FoodEatUp sont optionnels."
+    },
+    {
+     "titre": "Combien ça coûte ?",
+     "texte": "Rien la première année avec Premiers Pas, puis 49 € HT par an, sans engagement. Les packs FoodEatUp sont optionnels."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "La recette existe. Elle n'est juste jamais suivie.",
+    "items": []
+   },
+   {
+    "h": "Prête en trois étapes",
+    "items": []
+   },
+   {
+    "h": "Tout pour suivre une recette sans se tromper",
+    "items": []
+   },
+   {
+    "h": "Vos fiches recettes en PDF, à votre image",
+    "items": []
+   },
+   {
+    "h": "Le food cost complet, sans exposer les salaires",
+    "items": []
+   },
+   {
+    "h": "Ce que vous ne trouverez pas ailleurs",
+    "items": []
+   }
+  ]
+ },
+ "foodeatup-laboratoire": {
+  "etapes": null,
+  "faq": null,
+  "features": [
+   {
+    "h": "Une journée. Zéro papier.",
+    "items": [
+     {
+      "titre": "Les boutiques commandent. Le labo consolide.",
+      "texte": "Chaque commande arrive. La demande se calcule seule."
+     },
+     {
+      "titre": "Le planning est déjà prêt.",
+      "texte": "Ateliers, créneaux, capacité. Une surcharge ? Le lissage est proposé."
+     },
+     {
+      "titre": "Chaque degré est tracé.",
+      "texte": "Cuisson, refroidissement, stockage : conforme ou pas, tout de suite."
+     },
+     {
+      "titre": "Étiquettes. Lots. Livré.",
+      "texte": "62 × 29 mm, lot et DLC. Le rappel d'un lot remonte jusqu'au fournisseur."
+     },
+     {
+      "titre": "À l'atelier : deux boutons.",
+      "texte": "Démarrer. Clôturer. La tablette fait le reste."
+     }
+    ]
+   },
+   {
+    "h": "Demain, 9 h ? Un clic. Le dossier.",
+    "items": []
+   },
+   {
+    "h": "Pilotez le réseau comme un seul site.",
+    "items": []
+   },
+   {
+    "h": "Simple. Par établissement.",
+    "items": []
+   },
+   {
+    "h": "Demain, 4 h 58. Votre labo est prêt.",
+    "items": []
+   }
+  ]
+ },
+ "qa-hub": {
+  "etapes": {
+   "h": "De l'ajout du projet au ticket corrigé, en 4 étapes",
+   "items": [
+    {
+     "titre": "Ajoutez votre projet",
+     "texte": "Indiquez le connecteur MCP à tester. Les 15 prompts de démarrage s'installent automatiquement."
+    },
+    {
+     "titre": "Connectez Claude",
+     "texte": "Ajoutez QA Hub comme connecteur dans Claude avec votre clé personnelle. Claude voit votre MCP et votre espace de test."
+    },
+    {
+     "titre": "Claude audite et teste",
+     "texte": "Inventaire des outils, audit sur 9 dimensions, génération des cas de test et des prompts métier, exécution. Chaque appel est journalisé."
+    },
+    {
+     "titre": "Le bon développeur reçoit le bug",
+     "texte": "Ticket complet, assigné au responsable du module, signé par le QA, avec le prompt Claude Code qui permet de le corriger."
+    }
+   ]
+  },
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "QA Hub est-il vraiment gratuit ?",
+     "texte": ""
+    },
+    {
+     "titre": "QA Hub est-il vraiment gratuit ?",
+     "texte": ""
+    },
+    {
+     "titre": "De quoi ai-je besoin pour commencer ?",
+     "texte": ""
+    },
+    {
+     "titre": "De quoi ai-je besoin pour commencer ?",
+     "texte": ""
+    },
+    {
+     "titre": "QA Hub remplace-t-il les testeurs QA ?",
+     "texte": ""
+    },
+    {
+     "titre": "QA Hub remplace-t-il les testeurs QA ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mes données sont-elles utilisées pour entraîner un modèle ?",
+     "texte": "QA Hub orchestre vos tests et masque les données sensibles dans les journaux. Vous utilisez votre propre compte Claude et gardez le contrôle de vos données."
+    },
+    {
+     "titre": "Mes données sont-elles utilisées pour entraîner un modèle ?",
+     "texte": ""
+    },
+    {
+     "titre": "Peut-on tester plusieurs serveurs MCP ?",
+     "texte": ""
+    },
+    {
+     "titre": "Peut-on tester plusieurs serveurs MCP ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment les actions sensibles sont-elles protégées ?",
+     "texte": "Une confirmation humaine est demandée avant toute action qui supprime, paie ou publie."
+    },
+    {
+     "titre": "Comment les actions sensibles sont-elles protégées ?",
+     "texte": "Une confirmation humaine est demandée avant toute action qui supprime, paie ou publie."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "Tester un MCP à la main ne tient pas la distance",
+    "items": [
+     {
+      "titre": "Des dizaines d'outils à couvrir",
+      "texte": "Chaque outil a ses paramètres, ses cas limites et ses effets de bord. À chaque nouvelle version, tout est à revérifier."
+     },
+     {
+      "titre": "Des bugs mal décrits",
+      "texte": "Un ticket sans requête, sans réponse et sans étapes de reproduction, c'est du temps perdu pour le développeur avant même de corriger."
+     },
+     {
+      "titre": "Une direction dans le flou",
+      "texte": "« On en est où ? » Sans chiffres fiables, la réponse demande une demi-journée de tableur."
+     }
+    ]
+   },
+   {
+    "h": "De l'ajout du projet au ticket corrigé, en 4 étapes",
+    "items": [
+     {
+      "titre": "Ajoutez votre projet",
+      "texte": "Indiquez le connecteur MCP à tester. Les 15 prompts de démarrage s'installent automatiquement."
+     },
+     {
+      "titre": "Connectez Claude",
+      "texte": "Ajoutez QA Hub comme connecteur dans Claude avec votre clé personnelle. Claude voit votre MCP et votre espace de test."
+     },
+     {
+      "titre": "Claude audite et teste",
+      "texte": "Inventaire des outils, audit sur 9 dimensions, génération des cas de test et des prompts métier, exécution. Chaque appel est journalisé."
+     },
+     {
+      "titre": "Le bon développeur reçoit le bug",
+      "texte": "Ticket complet, assigné au responsable du module, signé par le QA, avec le prompt Claude Code qui permet de le corriger."
+     }
+    ]
+   },
+   {
+    "h": "Tout ce qu'il faut pour tester un MCP sérieusement",
+    "items": [
+     {
+      "titre": "Audit outil par outil",
+      "texte": "Contrat, lecture, écriture, robustesse, cohérence, sécurité, performance, idempotence, messages d'erreur : une matrice claire, un score par case."
+     },
+     {
+      "titre": "Tickets prêts à corriger",
+      "texte": "Étapes, requête et réponse MCP, chronologie, cause suspectée et prompt Claude Code, générés à chaque bug."
+     },
+     {
+      "titre": "Assignation automatique",
+      "texte": "Chaque module a son développeur responsable. Le ticket arrive chez lui, avec le nom du QA qui l'a créé."
+     },
+     {
+      "titre": "Zéro doublon",
+      "texte": "Un bug déjà connu ? Claude ajoute la nouvelle occurrence au ticket existant au lieu d'en créer un autre."
+     },
+     {
+      "titre": "Journal de chaque appel",
+      "texte": "Outil, arguments, réponse, durée et verdict : chaque action de Claude laisse une preuve."
+     },
+     {
+      "titre": "Marketplace de prompts",
+      "texte": "Des prompts de démarrage prêts à l'emploi pour auditer et tester n'importe quel MCP, et les vôtres à partager."
+     },
+     {
+      "titre": "KPI et Go/No-Go",
+      "texte": "Couverture, validation, fuite de défauts, délai de correction : un feu tricolore pour décider de livrer."
+     },
+     {
+      "titre": "Revue du lundi générée",
+      "texte": "Présentation PowerPoint et rapport PDF de la semaine, rédigés par Claude, validés par vous."
+     }
+    ]
+   },
+   {
+    "h": "Une seule source de vérité pour toute l'équipe",
+    "items": [
+     {
+      "titre": "QA testeur",
+      "texte": "Lancez les tests en langage naturel. Claude exécute, compare, journalise et rédige les tickets."
+     },
+     {
+      "titre": "QA lead",
+      "texte": "Pilotez campagnes, couverture et audits. Relisez et validez la revue de la semaine."
+     },
+     {
+      "titre": "Développeur",
+      "texte": "Recevez des bugs reproductibles avec le prompt Claude Code prêt à coller. Moins d'allers-retours."
+     },
+     {
+      "titre": "Direction",
+      "texte": "Suivez l'avancement de chaque projet et le feu Go/No-Go, et recevez le rapport chaque semaine."
+     }
+    ]
+   },
+   {
+    "h": "Un projet, dix projets, la même rigueur",
+    "items": []
+   },
+   {
+    "h": "Conçu pour tester sans prendre de risque",
+    "items": []
+   }
+  ]
+ },
+ "foodeatup-menu-digital": {
+  "etapes": {
+   "h": "Comment ça marche pour le restaurant",
+   "items": [
+    {
+     "titre": "Connectez votre compte FoodEatUp",
+     "texte": "Depuis la tablette, saisissez un code d'appairage à six caractères. Même principe que les applications Caisse et HACCP : aucune ressaisie de la carte."
+    },
+    {
+     "titre": "Choisissez l'établissement et la table",
+     "texte": "Une tablette par table, ou le mode borne à l'entrée."
+    },
+    {
+     "titre": "Habillez votre menu",
+     "texte": "Choisissez un thème, importez votre logo et vos couleurs."
+    },
+    {
+     "titre": "Tout se synchronise",
+     "texte": "Carte, prix, formules, ruptures et commandes circulent en continu avec la caisse et l'écran cuisine."
+    }
+   ]
+  },
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "Combien coûte le menu digital ?",
+     "texte": ""
+    },
+    {
+     "titre": "Combien coûte le menu digital ?",
+     "texte": ""
+    },
+    {
+     "titre": "Faut-il ressaisir la carte ?",
+     "texte": ""
+    },
+    {
+     "titre": "Faut-il ressaisir la carte ?",
+     "texte": ""
+    },
+    {
+     "titre": "Que se passe-t-il sans réseau ?",
+     "texte": ""
+    },
+    {
+     "titre": "Que se passe-t-il sans réseau ?",
+     "texte": ""
+    },
+    {
+     "titre": "Le client peut-il payer seul ?",
+     "texte": ""
+    },
+    {
+     "titre": "Le client peut-il payer seul ?",
+     "texte": ""
+    },
+    {
+     "titre": "Combien de temps pour installer ?",
+     "texte": ""
+    },
+    {
+     "titre": "Combien de temps pour installer ?",
+     "texte": ""
+    },
+    {
+     "titre": "Est-ce compatible avec ma caisse FoodEatUp ?",
+     "texte": ""
+    },
+    {
+     "titre": "Est-ce compatible avec ma caisse FoodEatUp ?",
+     "texte": ""
+    },
+    {
+     "titre": "Les jeux collectent-ils des données sur mes clients ?",
+     "texte": "Non. Les jeux tournent sur la tablette, sans compte, sans nom, sans réseau. Rien n'est enregistré ni envoyé."
+    },
+    {
+     "titre": "Les jeux collectent-ils des données sur mes clients ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je choisir quels plats montrent leur recette ?",
+     "texte": "Oui, plat par plat, depuis votre carte FoodEatUp. Par défaut, aucune recette n'est montrée."
+    },
+    {
+     "titre": "Puis-je choisir quels plats montrent leur recette ?",
+     "texte": "Oui, plat par plat, depuis votre carte FoodEatUp. Par défaut, aucune recette n'est montrée."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "Ce que vit votre client",
+    "items": [
+     {
+      "titre": "La carte en photos",
+      "texte": "Catégories et sous-catégories, de grandes photos appétissantes, les produits épuisés grisés automatiquement."
+     },
+     {
+      "titre": "Fiche produit complète",
+      "texte": "Options et suppléments (lait végétal, cold foam, chantilly) et allergènes clairement affichés."
+     },
+     {
+      "titre": "Un panier qui dit vrai",
+      "texte": "Une note pour la cuisine, et des prix recalculés par FoodEatUp à chaque changement."
+     },
+     {
+      "titre": "Suivi en direct",
+      "texte": "Reçue, en préparation, prête, servie : le client voit où en est sa commande."
+     },
+     {
+      "titre": "Appel serveur",
+      "texte": "Un toucher suffit pour faire venir un serveur à la table."
+     },
+     {
+      "titre": "L'addition, à sa façon",
+      "texte": "Terminal apporté par le serveur, paiement par téléphone via QR code, parts égales ou facture d'entreprise."
+     },
+     {
+      "titre": "La recette, si le restaurant la partage",
+      "texte": "Pour chaque plat, le restaurateur choisit de montrer ou non sa recette : ingrédients, étapes, astuce du chef, allergènes. Rien n'est partagé sans son accord."
+     },
+     {
+      "titre": "La cuisine en direct, pour cette table seulement",
+      "texte": "Reçue, en préparation, prête : chaque plat suit son stade exact comme sur l'écran cuisine, avec le temps d'attente réel du jour. Un bouton « Réclamer mes plats » prévient l'équipe, jamais plus d'une fois par minute."
+     }
+    ]
+   },
+   {
+    "h": "Pendant l'attente",
+    "items": [
+     {
+      "titre": "Enfants",
+      "texte": "Memory Qui est-ce ? Coloriage Suite de couleurs"
+     },
+     {
+      "titre": "Grands",
+      "texte": "Morpion Puissance 4 2048 Devine le plat"
+     },
+     {
+      "titre": "Pour la table",
+      "texte": "Cuisine en direct Réclamer ses plats Recette du plat Ticket par e-mail"
+     }
+    ]
+   },
+   {
+    "h": "Comment ça marche pour le restaurant",
+    "items": [
+     {
+      "titre": "Connectez votre compte FoodEatUp",
+      "texte": "Depuis la tablette, saisissez un code d'appairage à six caractères. Même principe que les applications Caisse et HACCP : aucune ressaisie de la carte."
+     },
+     {
+      "titre": "Choisissez l'établissement et la table",
+      "texte": "Une tablette par table, ou le mode borne à l'entrée."
+     },
+     {
+      "titre": "Habillez votre menu",
+      "texte": "Choisissez un thème, importez votre logo et vos couleurs."
+     },
+     {
+      "titre": "Tout se synchronise",
+      "texte": "Carte, prix, formules, ruptures et commandes circulent en continu avec la caisse et l'écran cuisine."
+     }
+    ]
+   },
+   {
+    "h": "Le menu digital en action",
+    "items": [
+     {
+      "titre": "À table",
+      "texte": "La carte en photos, à portée de doigt."
+     },
+     {
+      "titre": "En cuisine",
+      "texte": "La commande arrive aussitôt à l'écran cuisine."
+     },
+     {
+      "titre": "À l'addition",
+      "texte": "Le serveur apporte le terminal, ou le client paie par téléphone."
+     }
+    ]
+   },
+   {
+    "h": "Essayez-la comme un client",
+    "items": []
+   },
+   {
+    "h": "Tarifs : le menu digital est inclus",
+    "items": [
+     {
+      "titre": "Pack Logiciel de caisse",
+      "texte": "Caisse, écran cuisine, équipe et réservations."
+     },
+     {
+      "titre": "Pack Écrans & Borne",
+      "texte": "10 connexions d'écran incluses."
+     }
+    ]
+   }
+  ]
+ },
+ "foodeatup-kds": {
+  "etapes": {
+   "h": "Prêt en 4 étapes",
+   "items": [
+    {
+     "titre": "Bienvenue",
+     "texte": "Votre écran de cuisine est là."
+    },
+    {
+     "titre": "Les gestes",
+     "texte": "Toucher un plat, appui long pour reculer, BUMP."
+    },
+    {
+     "titre": "Son et imprimante",
+     "texte": "Toucher pour activer le son, bon test."
+    },
+    {
+     "titre": "C'est prêt",
+     "texte": "Démarrer le service ou s'entraîner en mode école."
+    }
+   ]
+  },
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "Et si la tablette est en Ne pas déranger ?",
+     "texte": ""
+    },
+    {
+     "titre": "Et si la tablette est en Ne pas déranger ?",
+     "texte": ""
+    },
+    {
+     "titre": "Peut-on former un nouveau sans risque ?",
+     "texte": ""
+    },
+    {
+     "titre": "Peut-on former un nouveau sans risque ?",
+     "texte": ""
+    },
+    {
+     "titre": "Et sans réseau ?",
+     "texte": ""
+    },
+    {
+     "titre": "Et sans réseau ?",
+     "texte": ""
+    },
+    {
+     "titre": "Quelle imprimante est compatible ?",
+     "texte": ""
+    },
+    {
+     "titre": "Quelle imprimante est compatible ?",
+     "texte": ""
+    },
+    {
+     "titre": "Combien de postes ?",
+     "texte": "Selon l'offre : un poste en Essentiel, trois en Écrans & Borne, illimité en Premium. 5 € HT par mois et par poste en plus."
+    },
+    {
+     "titre": "Combien de postes ?",
+     "texte": ""
+    },
+    {
+     "titre": "Est-ce compatible avec ma caisse FoodEatUp ?",
+     "texte": ""
+    },
+    {
+     "titre": "Est-ce compatible avec ma caisse FoodEatUp ?",
+     "texte": ""
+    },
+    {
+     "titre": "Et si je change de tablette ?",
+     "texte": "Un nouveau code d'appairage suffit. L'ancien écran est délié depuis FoodEatUp."
+    },
+    {
+     "titre": "Et si je change de tablette ?",
+     "texte": "Un nouveau code d'appairage suffit. L'ancien écran est délié depuis FoodEatUp."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "Ce que vit le cuisinier",
+    "items": [
+     {
+      "titre": "Tickets par poste",
+      "texte": "Bar, chaud, froid, pâtisserie, pass, assemblage : chacun ne voit que ses plats."
+     },
+     {
+      "titre": "Minuteur coloré",
+      "texte": "Vert sous 5 min, orange sous 10 min, rouge au-delà."
+     },
+     {
+      "titre": "BUMP en un geste",
+      "texte": "Un appui et le ticket est envoyé, le pass est prévenu."
+     },
+     {
+      "titre": "Rappel des 5 derniers",
+      "texte": "Un bump par erreur ? Le ticket revient en un appui."
+     },
+     {
+      "titre": "Appui long pour reculer",
+      "texte": "Un plat passé trop vite revient à l'étape précédente."
+     },
+     {
+      "titre": "Allergènes en rouge",
+      "texte": "Impossible de les rater, ils sont en tête du plat."
+     },
+     {
+      "titre": "Compteurs ALL-DAY",
+      "texte": "Le total de chaque plat en attente pour préparer en série."
+     }
+    ]
+   },
+   {
+    "h": "Le pass envoie la table en même temps",
+    "items": []
+   },
+   {
+    "h": "Le bon de cuisine sort sur l'imprimante du poste",
+    "items": [
+     {
+      "titre": "Imprimante réseau ESC/POS",
+      "texte": "Le poste imprime directement sur son imprimante thermique."
+     },
+     {
+      "titre": "Ou l'agent d'impression FoodEatUp",
+      "texte": "Pour les imprimantes USB branchées sur un poste."
+     },
+     {
+      "titre": "Impression de secours",
+      "texte": "Si l'écran tombe, le bon sort quand même : le service continue."
+     }
+    ]
+   },
+   {
+    "h": "Chaque poste a son son",
+    "items": []
+   },
+   {
+    "h": "Le mode école",
+    "items": []
+   },
+   {
+    "h": "Prêt en 4 étapes",
+    "items": [
+     {
+      "titre": "Bienvenue",
+      "texte": "Votre écran de cuisine est là."
+     },
+     {
+      "titre": "Les gestes",
+      "texte": "Toucher un plat, appui long pour reculer, BUMP."
+     },
+     {
+      "titre": "Son et imprimante",
+      "texte": "Toucher pour activer le son, bon test."
+     },
+     {
+      "titre": "C'est prêt",
+      "texte": "Démarrer le service ou s'entraîner en mode école."
+     }
+    ]
+   }
+  ]
+ },
+ "foodeatup-caisse-mobile": {
+  "etapes": {
+   "h": "Prêt pour ce soir, en trois étapes",
+   "items": [
+    {
+     "titre": "Activez l'abonnement Caisse",
+     "texte": "49 € HT par mois sur FoodEatUp, avec 7 jours d'essai. Votre carte, vos tables et vos serveurs sont prêts dans votre compte."
+    },
+    {
+     "titre": "Installez l'app gratuite",
+     "texte": "Sur chaque téléphone de l'équipe : « Connecter FoodEatUp », votre numéro d'établissement, et chaque serveur choisit son nom et son code."
+    },
+    {
+     "titre": "Formez, puis servez",
+     "texte": "Le mode école et Jarvis, le chef coach 3D, font passer les 28 missions. À 100 %, le serveur est prêt : commandes et encaissements partent dans votre caisse FoodEatUp."
+    }
+   ]
+  },
+  "faq": {
+   "h": "Questions fréquentes",
+   "items": [
+    {
+     "titre": "Quels téléphones sont compatibles ?",
+     "texte": ""
+    },
+    {
+     "titre": "Quels téléphones sont compatibles ?",
+     "texte": ""
+    },
+    {
+     "titre": "Et sur iPhone ?",
+     "texte": ""
+    },
+    {
+     "titre": "Et sur iPhone ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment trouver mon numéro d'établissement ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment trouver mon numéro d'établissement ?",
+     "texte": ""
+    },
+    {
+     "titre": "Le paiement Tap to Pay est-il disponible ?",
+     "texte": ""
+    },
+    {
+     "titre": "Le paiement Tap to Pay est-il disponible ?",
+     "texte": ""
+    },
+    {
+     "titre": "L'app fonctionne-t-elle sans réseau ?",
+     "texte": ""
+    },
+    {
+     "titre": "L'app fonctionne-t-elle sans réseau ?",
+     "texte": ""
+    },
+    {
+     "titre": "L'app est-elle vraiment gratuite ?",
+     "texte": ""
+    },
+    {
+     "titre": "L'app est-elle vraiment gratuite ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment former un nouveau serveur ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment former un nouveau serveur ?",
+     "texte": ""
+    },
+    {
+     "titre": "Combien ça coûte ?",
+     "texte": ""
+    },
+    {
+     "titre": "Combien ça coûte ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mes données sont-elles sécurisées ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mes données sont-elles sécurisées ?",
+     "texte": ""
+    },
+    {
+     "titre": "L'app remplace-t-elle la caisse ?",
+     "texte": ""
+    },
+    {
+     "titre": "L'app remplace-t-elle la caisse ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment sont gérés les pourboires ?",
+     "texte": "Le client choisit son pourboire au moment du paiement ; il est enregistré dans la caisse FoodEatUp et rattaché au serveur."
+    },
+    {
+     "titre": "Comment sont gérés les pourboires ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment obtenir l'application ?",
+     "texte": "Sur Android, téléchargez l'APK depuis la section Télécharger de cette page. Sur iPhone, laissez votre email pour être prévenu de l'ouverture de TestFlight."
+    },
+    {
+     "titre": "Comment obtenir l'application ?",
+     "texte": "Sur Android, téléchargez l'APK depuis la section Télécharger de cette page. Sur iPhone, laissez votre email pour être prévenu de l'ouverture de TestFlight."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "FoodEatUp Caisse Mobile en action",
+    "items": []
+   },
+   {
+    "h": "Plus de temps en salle, moins de temps à courir",
+    "items": [
+     {
+      "titre": "Fini les allers-retours au comptoir",
+      "texte": "La commande se prend à la table et part en cuisine depuis le téléphone du serveur. Il reste en salle, auprès de ses clients."
+     },
+     {
+      "titre": "L'addition sans attendre",
+      "texte": "Espèces, carte, titre restaurant, chèque ou lien de paiement : l'encaissement se fait à la table, la note se divise en un geste."
+     },
+     {
+      "titre": "Une cuisine qui suit le rythme",
+      "texte": "Chaque plat arrive au bon poste, avec ses cuissons, suppléments et allergies. Le serveur sait quand c'est prêt."
+     },
+     {
+      "titre": "Le service continue sans réseau",
+      "texte": "Le Wi-Fi tombe en plein coup de feu ? La caisse garde commandes et encaissements et les envoie dès que le réseau revient."
+     }
+    ]
+   },
+   {
+    "h": "Tout le service, dans une seule app",
+    "items": [
+     {
+      "titre": "Commande en salle",
+      "texte": "Plan de salle en temps réel Carte avec photos, options et formules Notes cuisine Envoi en cuisine en un geste Second tour sur la même note Tag NFC collé sur la table qui ouvre directement sa commande"
+     },
+     {
+      "titre": "Encaissement",
+      "texte": "Tap to Pay sur le téléphone (bientôt) TPE Smile&Pay Espèces avec rendu monnaie Lien de paiement par QR code Carte cadeau Partage d'addition par convive ou par montant Pourboire"
+     },
+     {
+      "titre": "KDS cuisine",
+      "texte": "La même app sur une tablette au pass devient l'écran cuisine Affichage par station avec chronomètres Sur le téléphone du serveur, une vue « plats prêts » Notification dès qu'un plat est prêt"
+     }
+    ]
+   },
+   {
+    "h": "Un nouveau serveur est prêt dès sa première soirée",
+    "items": [
+     {
+      "titre": "Jarvis, le chef en 3D, explique tout",
+      "texte": "Il présente chaque écran et chaque bouton, à voix haute, dans un mode école où rien n'est envoyé au restaurant."
+     },
+     {
+      "titre": "28 missions, comme un vrai service",
+      "texte": "Prendre une commande, ajouter un supplément, reprendre une note, valider une commande de la borne, gérer une réclamation, clôturer la caisse…"
+     },
+     {
+      "titre": "Prêt à 100 % avant le premier client",
+      "texte": "Chaque mission réussie fait avancer la jauge. À 100 %, le serveur reçoit son badge « prêt pour le service »."
+     }
+    ]
+   },
+   {
+    "h": "Le parcours d'un serveur, écran par écran",
+    "items": []
+   },
+   {
+    "h": "Prêt pour ce soir, en trois étapes",
+    "items": [
+     {
+      "titre": "Activez l'abonnement Caisse",
+      "texte": "49 € HT par mois sur FoodEatUp, avec 7 jours d'essai. Votre carte, vos tables et vos serveurs sont prêts dans votre compte."
+     },
+     {
+      "titre": "Installez l'app gratuite",
+      "texte": "Sur chaque téléphone de l'équipe : « Connecter FoodEatUp », votre numéro d'établissement, et chaque serveur choisit son nom et son code."
+     },
+     {
+      "titre": "Formez, puis servez",
+      "texte": "Le mode école et Jarvis, le chef coach 3D, font passer les 28 missions. À 100 %, le serveur est prêt : commandes et encaissements partent dans votre caisse FoodEatUp."
+     }
+    ]
+   }
+  ]
+ },
+ "foodeatup-fidelite": {
+  "etapes": {
+   "h": "Prêt en trois étapes",
+   "items": [
+    {
+     "titre": "Connectez votre MCP FoodEatUp",
+     "texte": "La tablette lit votre programme, votre carte et vos clients directement depuis FoodEatUp."
+    },
+    {
+     "titre": "Appairez la tablette",
+     "texte": "Générez un code à 6 caractères dans FoodEatUp et saisissez-le sur la tablette."
+    },
+    {
+     "titre": "Vos clients s'inscrivent",
+     "texte": "Un numéro de téléphone, et c'est parti : points, récompenses, jeux."
+    }
+   ]
+  },
+  "faq": {
+   "h": "Vos questions",
+   "items": [
+    {
+     "titre": "Mes clients doivent-ils installer une application ?",
+     "texte": ""
+    },
+    {
+     "titre": "Mes clients doivent-ils installer une application ?",
+     "texte": ""
+    },
+    {
+     "titre": "Quel matériel faut-il ?",
+     "texte": ""
+    },
+    {
+     "titre": "Quel matériel faut-il ?",
+     "texte": ""
+    },
+    {
+     "titre": "Les données sont-elles stockées sur la tablette ?",
+     "texte": ""
+    },
+    {
+     "titre": "Les données sont-elles stockées sur la tablette ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment éviter les abus sur la roue cadeaux ?",
+     "texte": ""
+    },
+    {
+     "titre": "Comment éviter les abus sur la roue cadeaux ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je personnaliser les récompenses ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je personnaliser les récompenses ?",
+     "texte": ""
+    },
+    {
+     "titre": "Puis-je mettre la tablette aux couleurs de mon restaurant ?",
+     "texte": "Oui. Choisissez l'un des 8 thèmes, ajoutez votre logo et vos couleurs, ou importez votre charte graphique (PDF ou site web). Les couleurs trop peu lisibles sont corrigées automatiquement."
+    },
+    {
+     "titre": "Puis-je mettre la tablette aux couleurs de mon restaurant ?",
+     "texte": ""
+    },
+    {
+     "titre": "Combien coûte l'application fidélité ?",
+     "texte": "Rien : les applications sont gratuites. Il suffit d'avoir les abonnements FoodEatUp Logiciel de caisse, Écrans & Borne, Marketing & Commercial et Avis & réputation Google (voir les tarifs ci-dessus)."
+    },
+    {
+     "titre": "Combien coûte l'application fidélité ?",
+     "texte": "Rien : les applications sont gratuites. Il suffit d'avoir les abonnements FoodEatUp Logiciel de caisse, Écrans & Borne, Marketing & Commercial et Avis & réputation Google (voir les tarifs ci-dessus)."
+    }
+   ]
+  },
+  "features": [
+   {
+    "h": "Prêt en trois étapes",
+    "items": [
+     {
+      "titre": "Connectez votre MCP FoodEatUp",
+      "texte": "La tablette lit votre programme, votre carte et vos clients directement depuis FoodEatUp."
+     },
+     {
+      "titre": "Appairez la tablette",
+      "texte": "Générez un code à 6 caractères dans FoodEatUp et saisissez-le sur la tablette."
+     },
+     {
+      "titre": "Vos clients s'inscrivent",
+      "texte": "Un numéro de téléphone, et c'est parti : points, récompenses, jeux."
+     }
+    ]
+   },
+   {
+    "h": "Tout ce qu'il faut pour faire revenir vos clients",
+    "items": [
+     {
+      "titre": "Inscription par numéro",
+      "texte": "Sans application ni mot de passe, en 10 secondes."
+     },
+     {
+      "titre": "Points et récompenses",
+      "texte": "Plat offert, bon d'achat, avantage : échangés en un geste."
+     },
+     {
+      "titre": "Roue cadeaux",
+      "texte": "Tirage côté serveur et délai entre deux parties."
+     },
+     {
+      "titre": "Sondages express",
+      "texte": "Quelques questions, des points à la clé."
+     },
+     {
+      "titre": "Avis client",
+      "texte": "QR Google proposé à tous, sans filtrage."
+     },
+     {
+      "titre": "Commande à la caisse",
+      "texte": "Envoyée directement en caisse et en cuisine."
+     },
+     {
+      "titre": "Mode kiosque",
+      "texte": "Verrouillé par code PIN gérant."
+     },
+     {
+      "titre": "Zéro donnée sur la tablette",
+      "texte": "Déconnexion automatique, session purgée."
+     }
+    ]
+   },
+   {
+    "h": "La tablette à vos couleurs",
+    "items": [
+     {
+      "titre": "8 thèmes métiers",
+      "texte": "Brasserie, boulangerie, sushi, burger… choisissez une base puis vos couleurs."
+     },
+     {
+      "titre": "Votre logo",
+      "texte": "Versions claire et sombre, SVG ou PNG haute définition."
+     },
+     {
+      "titre": "Import de charte",
+      "texte": "Déposez votre charte PDF ou l'adresse de votre site : couleurs et polices proposées, appliquées après validation."
+     },
+     {
+      "titre": "Lisible à coup sûr",
+      "texte": "Chaque couleur est vérifiée (contraste WCAG AA) et corrigée si besoin."
+     }
+    ]
+   },
+   {
+    "h": "Branchée sur les 8 boucles FoodEatUp",
+    "items": [
+     {
+      "titre": "Boucle fidélité",
+      "texte": "Chaque client identifié enrichit son historique et son solde de points."
+     },
+     {
+      "titre": "Boucle marketing",
+      "texte": "Segments RFM automatiques, campagnes SMS et WhatsApp ciblées (clients consentants)."
+     },
+     {
+      "titre": "Boucle stock",
+      "texte": "Les commandes envoyées à la caisse décrémentent le stock et rebouclent vers vos achats."
+     }
+    ]
+   },
+   {
+    "h": "L'application fidélité est gratuite",
+    "items": [
+     {
+      "titre": "Pack Logiciel de caisse",
+      "texte": "Caisse, écran cuisine, équipe et réservations."
+     },
+     {
+      "titre": "Pack Écrans & Borne",
+      "texte": "10 connexions d'écran incluses."
+     },
+     {
+      "titre": "Marketing & Commercial",
+      "texte": "1 500 crédits + 30 min audio par mois."
+     },
+     {
+      "titre": "Avis & réputation Google",
+      "texte": "Votre note Google sous contrôle."
+     }
+    ]
+   },
+   {
+    "h": "Votre programme de fidélité en un clic",
+    "items": []
+   }
+  ]
+ }
+}

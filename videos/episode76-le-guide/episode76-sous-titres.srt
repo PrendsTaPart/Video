@@ -1,0 +1,39 @@
+1
+00:00:00,350 --> 00:00:02,630
+Toutes mes vidéos animées, c'est Claude qui les fabrique.
+
+2
+00:00:02,870 --> 00:00:06,130
+Il suit un seul fichier de consignes, qu'il lit en entier avant de commencer.
+
+3
+00:00:06,430 --> 00:00:07,690
+Moi, je lui donne juste un sujet.
+
+4
+00:00:07,950 --> 00:00:11,030
+Il va voir la source, fait ses recherches et vérifie chaque information.
+
+5
+00:00:11,410 --> 00:00:13,510
+Il écrit le texte, puis il fait générer la voix.
+
+6
+00:00:13,730 --> 00:00:16,510
+Il compose chaque scène, et les sous-titres tombent sur chaque mot.
+
+7
+00:00:16,730 --> 00:00:21,130
+Avant de me montrer quoi que ce soit, il contrôle chaque image : texte coupé, élément qui déborde.
+
+8
+00:00:21,430 --> 00:00:24,010
+Moi, je regarde l'aperçu et je dis : on exporte.
+
+9
+00:00:24,170 --> 00:00:26,290
+Le secret, ce n'est pas l'outil. C'est le guide.
+
+10
+00:00:26,670 --> 00:00:29,270
+Écris GUIDE en commentaire, je t'envoie comment écrire le tien.

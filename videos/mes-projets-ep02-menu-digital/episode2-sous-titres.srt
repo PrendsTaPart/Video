@@ -1,0 +1,35 @@
+1
+00:00:00,350 --> 00:00:02,990
+Ta carte peut vendre à ta place, pendant que ton équipe court.
+
+2
+00:00:03,310 --> 00:00:05,870
+Voici le Menu digital FoodEatUp, un de mes projets.
+
+3
+00:00:06,190 --> 00:00:08,860
+Sur chaque table, une tablette avec ta carte en photos.
+
+4
+00:00:08,770 --> 00:00:12,450
+Chaque client compose sa boisson à sa façon, et commande en un toucher.
+
+5
+00:00:12,430 --> 00:00:14,970
+La commande part en cuisine, et le client voit où elle en est.
+
+6
+00:00:15,150 --> 00:00:17,730
+Un plat épuisé ? Il est remplacé tout de suite, au même prix.
+
+7
+00:00:17,770 --> 00:00:19,610
+À la fin, chacun paie comme il veut.
+
+8
+00:00:19,790 --> 00:00:22,230
+Et tout reste à jour avec ta caisse et ton écran de cuisine.
+
+9
+00:00:22,550 --> 00:00:25,300
+Le lien est sous la vidéo : clique sur « Voir le projet ».

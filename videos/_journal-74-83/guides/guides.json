@@ -1,0 +1,629 @@
+{
+ "74": {
+  "slug": "episode74-la-fournee",
+  "kw": "FOURNÉE",
+  "titre": "La fournée juste, avec Claude",
+  "sous": "Ta caisse et la météo calculent la quantité du lendemain.",
+  "items": [
+   [
+    "Ta caisse de l'année",
+    "Exporte tes ventes de l'année depuis ta caisse (par jour et par produit) et donne le fichier à Claude : « Voici mes ventes jour par jour. Dis-moi ce qui fait monter ou baisser mes ventes de [produit]. »",
+    "Une année complète montre les saisons et les jours à part."
+   ],
+   [
+    "Ajouter la météo",
+    "« Ajoute la météo de chaque jour dans [ta ville] et dis-moi si je vends moins quand il pleut, et de combien en moyenne. »",
+    "Vérifie sur quelques jours que tu te souviens."
+   ],
+   [
+    "Repérer les jours à part",
+    "« Repère les jours où j'ai été en rupture avant midi ou où j'ai beaucoup jeté. Qu'est-ce qu'ils ont en commun ? (fermeture d'un concurrent, marché, fête, vacances) »",
+    ""
+   ],
+   [
+    "La fournée du soir",
+    "« Chaque soir, à partir de mes ventes et de la météo de demain, propose-moi la quantité à préparer pour chaque produit, avec une marge de sécurité. »",
+    "Garde la même conversation, ou un projet Claude dédié."
+   ],
+   [
+    "Vérifier chaque matin",
+    "Note ce que tu as vraiment vendu et jeté, et redonne-le à Claude le soir. La prévision s'améliore avec tes vrais chiffres.",
+    "Dans FoodEatUp, c'est le rôle de la prévision : elle part de ta caisse."
+   ]
+  ]
+ },
+ "75": {
+  "slug": "episode75-quatre-jours-instagram",
+  "kw": "PUBLIE",
+  "titre": "Ma méthode pour publier tous les jours",
+  "sous": "La leçon des quatre jours : publier souvent, sur un vrai sujet, en montrant comment faire.",
+  "items": [
+   [
+    "Un vrai sujet",
+    "Choisis un seul sujet qui intéresse tes clients (ton métier, tes coulisses, une méthode). Demande à Claude : « Donne-moi trente idées de vidéos courtes sur [sujet], pour [ton public]. »",
+    ""
+   ],
+   [
+    "Une vidéo courte par jour",
+    "Mieux vaut une vidéo simple chaque jour qu'une vidéo parfaite par mois.",
+    ""
+   ],
+   [
+    "Montrer une méthode",
+    "Les vidéos qui montrent comment faire, étape par étape, sont celles qu'on garde et qu'on partage.",
+    ""
+   ],
+   [
+    "Publier partout en une fois",
+    "Avec RapidoCMS branché à Claude : « Prépare un brouillon par réseau pour cette vidéo, programme-les sur la semaine. »",
+    "Rien ne part sans ton accord : tu valides chaque brouillon."
+   ],
+   [
+    "Regarder ce qui marche",
+    "Chaque semaine : « Quelles publications ont le mieux marché, et pourquoi ? Que dois-je refaire ? »",
+    ""
+   ]
+  ]
+ },
+ "76": {
+  "slug": "episode76-le-guide",
+  "kw": "GUIDE",
+  "titre": "Écrire ton guide de consignes pour Claude",
+  "sous": "Le secret, ce n'est pas l'outil. C'est le guide.",
+  "items": [
+   [
+    "Ton style",
+    "Couleurs, police, ton, longueur des phrases, ce qui doit apparaître à l'écran. Écris-le comme pour un nouvel employé.",
+    ""
+   ],
+   [
+    "Tes étapes",
+    "Dans l'ordre : recherche et vérification des sources, texte, voix, scènes, sous-titres, contrôle, aperçu. Une étape = une phrase claire.",
+    ""
+   ],
+   [
+    "Tes interdits",
+    "Ce que tu ne veux jamais voir : chiffres inventés, mots techniques, logos redessinés, visages sans accord.",
+    "Les interdits comptent autant que les consignes."
+   ],
+   [
+    "Tes contrôles",
+    "Avant de te montrer quoi que ce soit, Claude vérifie chaque image : texte coupé, élément qui déborde, faute.",
+    ""
+   ],
+   [
+    "Un exemple réussi",
+    "Ajoute une vidéo ou un texte que tu aimes, et dis pourquoi. Puis demande : « Lis ce guide en entier avant de commencer. Voici le sujet : […] »",
+    ""
+   ]
+  ]
+ },
+ "77": {
+  "slug": "episode77-le-compteur",
+  "kw": "COMPTEUR",
+  "titre": "Le bon réflexe quand la conversation est trop longue",
+  "sous": "Plus la conversation est longue, plus Claude relit, et moins il est précis.",
+  "items": [
+   [
+    "Pourquoi ça arrive",
+    "À chaque message, Claude relit toute la conversation depuis le début. Une longue conversation use ta limite plus vite et noie l'essentiel.",
+    ""
+   ],
+   [
+    "Installer le compteur",
+    "Dans Claude Code, demande : « Affiche en bas de l'écran une ligne d'état qui montre combien de place il reste dans la conversation, en vert, orange ou rouge. » Claude règle sa propre barre d'état.",
+    "Tu peux aussi taper /statusline dans Claude Code."
+   ],
+   [
+    "Vert : continuer",
+    "Tant que c'est vert, tu continues normalement.",
+    ""
+   ],
+   [
+    "Rouge : demander un résumé",
+    "« Résume ce qu'on a fait, les décisions prises et la prochaine étape, en quelques lignes. »",
+    ""
+   ],
+   [
+    "Repartir propre",
+    "Ouvre une nouvelle conversation et colle le résumé. Tu gardes l'essentiel, tu laisses le superflu.",
+    ""
+   ]
+  ]
+ },
+ "78": {
+  "slug": "episode78-ta-boite-en-dessin-anime",
+  "kw": "KIT",
+  "titre": "Ton entreprise en dessin animé, pas à pas",
+  "sous": "Tu racontes, Claude écrit, ton ordinateur fabrique les images la nuit.",
+  "items": [
+   [
+    "Ton histoire",
+    "Raconte une scène vraie de ta journée à Claude, avec tes mots : « Voici ce qui se passe chez moi un samedi midi : […] Fais-en un court épisode de dessin animé. »",
+    ""
+   ],
+   [
+    "Tes personnages",
+    "Ton équipe, tes clients, ton comptoir. Demande une fiche par personnage (allure, caractère, façon de parler).",
+    "Pas de vraie personne reconnaissable sans son accord."
+   ],
+   [
+    "Le décor",
+    "Décris ton lieu : couleurs, comptoir, enseigne. Claude écrit le décor de chaque scène.",
+    ""
+   ],
+   [
+    "Les voix et sous-titres",
+    "Claude écrit les dialogues, prépare les voix et cale les sous-titres.",
+    ""
+   ],
+   [
+    "Le rendu de nuit",
+    "Lance la fabrication des images le soir : le matin, l'épisode t'attend. Tu regardes, tu corriges en lui parlant.",
+    ""
+   ]
+  ]
+ },
+ "79": {
+  "slug": "episode79-les-tendances",
+  "kw": "TENDANCE",
+  "titre": "Faire gérer ses vidéos courtes par Claude, la bonne méthode",
+  "sous": "Claude ne remplace pas ton regard. Il le multiplie.",
+  "items": [
+   [
+    "Pas sans consignes",
+    "Seul, sans consignes, Claude publie des vidéos qui ne marchent pas. Commence toujours par lui expliquer ton public et ton style.",
+    ""
+   ],
+   [
+    "Une vidéo à décortiquer",
+    "Donne-lui une vidéo qui marche dans ton domaine : « Décortique cette vidéo : accroche, rythme, plans, voix. Qu'est-ce qui la rend efficace ? »",
+    ""
+   ],
+   [
+    "Ce qui est tendance",
+    "Montre-lui ce qui marche en ce moment (sons, formats, sujets) et demande comment l'adapter à ton activité.",
+    ""
+   ],
+   [
+    "Une accroche nette, une vidéo serrée",
+    "« Réécris l'accroche en une phrase qui donne envie de rester, et coupe tout ce qui ne sert pas. »",
+    ""
+   ],
+   [
+    "Ton accord avant de publier",
+    "Tu restes le dernier à valider. Rien ne part sans ton accord.",
+    ""
+   ]
+  ]
+ },
+ "80": {
+  "slug": "episode80-une-pub-en-une-phrase",
+  "kw": "BOOST",
+  "titre": "Lancer une pub avec une seule phrase",
+  "sous": "Pour remplir un mardi soir, sans passer des heures dans le gestionnaire de pubs.",
+  "items": [
+   [
+    "Brancher ta page",
+    "Dans les réglages de Claude, ajoute le connecteur de ta page Facebook.",
+    ""
+   ],
+   [
+    "Brancher ton compte pub",
+    "Ajoute aussi ton compte publicitaire. Claude ne dépense rien sans ton accord.",
+    ""
+   ],
+   [
+    "Écrire ta phrase",
+    "« Booste mon dernier post, une petite somme par jour, dans ma ville, pour les gens qui aiment sortir au restaurant. »",
+    ""
+   ],
+   [
+    "Vérifier audience et budget",
+    "Claude te montre à qui la pub sera montrée et combien elle coûtera. Lis-le avant de répondre.",
+    "Fixe toi-même un budget maximum."
+   ],
+   [
+    "Dire OK",
+    "La campagne ne part qu'après ton OK. Regarde les résultats le lendemain avec Claude.",
+    ""
+   ]
+  ]
+ },
+ "81": {
+  "slug": "episode81-ta-salle-en-3d",
+  "kw": "DÉCOR",
+  "titre": "Ta salle en 3D avec trois photos",
+  "sous": "Pour tester une nouvelle disposition avant de déplacer une seule table.",
+  "items": [
+   [
+    "Prendre trois photos",
+    "Trois photos de ta salle, sous des angles différents, avec la porte et les prises bien visibles.",
+    ""
+   ],
+   [
+    "Les donner à Claude",
+    "« Voici trois photos de ma salle. Fais-en une version en trois dimensions que je peux ouvrir dans mon navigateur. Sers-toi de la porte et des prises pour deviner les tailles. »",
+    ""
+   ],
+   [
+    "Ouvrir la pièce",
+    "La pièce s'ouvre dans ton navigateur : tu tournes autour, tu déplaces les tables.",
+    ""
+   ],
+   [
+    "Tester tes idées",
+    "« Est-ce qu'une banquette rentre le long de ce mur, en laissant la place de passer ? » « Essaie ce mur en vert sauge. »",
+    ""
+   ],
+   [
+    "Vérifier au mètre",
+    "Demande la liste de chaque taille devinée et vérifie-la avec un vrai mètre avant d'acheter quoi que ce soit.",
+    "Les tailles sont des estimations."
+   ]
+  ]
+ },
+ "82": {
+  "slug": "episode82-dessins-animes-youtube",
+  "kw": "DESSIN",
+  "titre": "Des dessins animés pour YouTube avec Claude",
+  "sous": "De l'idée à la mise en ligne.",
+  "items": [
+   [
+    "Ton idée",
+    "Une idée simple, en une phrase : un personnage, un lieu, un petit problème.",
+    ""
+   ],
+   [
+    "L'histoire et les personnages",
+    "« Écris l'histoire, les personnages et chaque scène, pour un épisode court destiné aux enfants. »",
+    ""
+   ],
+   [
+    "Le style de dessin",
+    "Choisis un style (papier, feutres, étoiles qui bougent) et garde-le pour toute la série.",
+    ""
+   ],
+   [
+    "La voix et les bruitages",
+    "Un narrateur calme et quelques bruitages. Pour une histoire longue, Claude continue scène après scène.",
+    "Tu veux une autre ambiance ? « Passe-la de nuit. »"
+   ],
+   [
+    "La mise en ligne",
+    "Miniature, titre et description, puis publication. Je passe par Publisher Bot, avec ma validation avant la mise en ligne.",
+    ""
+   ]
+  ]
+ },
+ "83": {
+  "slug": "episode83-mon-studio-video",
+  "kw": "STUDIO",
+  "titre": "Mon réglage pour faire toutes mes vidéos avec un seul abonnement",
+  "sous": "On règle une fois, puis chaque vidéo suit le même chemin.",
+  "items": [
+   [
+    "Ton style",
+    "Tes couleurs, ta police, tes personnages. Explique-les une seule fois.",
+    ""
+   ],
+   [
+    "Tes interdits",
+    "Surtout, ce que tu ne veux pas voir à l'écran.",
+    ""
+   ],
+   [
+    "Ta façon de travailler",
+    "Tes étapes, dans l'ordre. Demande à Claude de ranger tout ça dans ses fichiers pour s'en souvenir.",
+    "Tu peux tout faire à l'oral : tu regardes, tu corriges en parlant."
+   ],
+   [
+    "Une image par plan",
+    "Pour chaque vidéo : tu envoies le texte, il propose une image par plan.",
+    ""
+   ],
+   [
+    "Valider avant le rendu",
+    "Tu valides les images, et seulement après, il fabrique la vidéo.",
+    ""
+   ]
+  ]
+ },
+ "84": {
+  "slug": "episode84-webinaire",
+  "kw": "WEBINAIRE",
+  "titre": "Créer son propre webinaire avec l'IA",
+  "sous": "Un direct avec chat, réactions et offres, sur ordinateur et téléphone.",
+  "items": [
+   [
+    "Ce qu'il doit faire",
+    "Écris la liste : un direct, un chat, des réactions en emoji, des offres qu'on affiche ou qu'on cache pendant l'émission, une page qui marche sur ordinateur et sur téléphone.",
+    ""
+   ],
+   [
+    "Le cerveau : Claude",
+    "Donne cette liste à Claude : « Écris le cahier des charges d'une page de webinaire avec ces fonctions, en mots simples, écran par écran. »",
+    ""
+   ],
+   [
+    "L'usine à logiciels : Lovable",
+    "Colle le cahier des charges dans Lovable. Il construit la page, l'inscription et l'espace où tu pilotes le direct.",
+    ""
+   ],
+   [
+    "L'assistant qui maintient : Claude Code",
+    "Quand quelque chose casse ou qu'il faut ajouter une fonction, Claude Code relit le projet et corrige.",
+    ""
+   ],
+   [
+    "Tester avant le vrai direct",
+    "Fais un direct de test avec deux ou trois proches, sur ordinateur et téléphone, avant d'inviter tes contacts.",
+    "Développeur ou pas, la méthode est la même."
+   ]
+  ]
+ },
+ "85": {
+  "slug": "episode85-uber-commission",
+  "kw": "COMMISSION",
+  "titre": "Garder ses commandes sans commission",
+  "sous": "Ce que fait la plateforme, et comment reprendre la relation avec tes clients.",
+  "items": [
+   [
+    "Qui fait quoi",
+    "Sur une commande livrée : le restaurant cuisine, le livreur livre, la plateforme met en relation et prend une part.",
+    ""
+   ],
+   [
+    "Ce que tu paies",
+    "Regarde ton contrat : le pourcentage pris sur chaque commande, et les frais en plus. Fais le total sur un mois.",
+    "Les vrais taux sont dans ton contrat."
+   ],
+   [
+    "Ce que tu gardes avec ta propre appli",
+    "Avec ta propre application de commande reliée à ta caisse, la commande arrive chez toi, sans commission sur tes commandes.",
+    ""
+   ],
+   [
+    "Faire connaître ton appli",
+    "Un QR code sur tes sacs, tes tables et tes tickets, un message à tes clients fidèles.",
+    ""
+   ],
+   [
+    "Le projet",
+    "L'appli de ton restaurant, créée depuis ta caisse : yookii-food-pwa.lovable.app",
+    ""
+   ]
+  ]
+ },
+ "86": {
+  "slug": "episode86-une-journee-claude",
+  "kw": "JOURNÉE",
+  "titre": "Configurer Claude en une seule journée",
+  "sous": "La liste des réglages, dans l'ordre où je les ferais.",
+  "items": [
+   [
+    "L'extension Chrome",
+    "Installe Claude pour Chrome : Claude regarde la page avec toi et peut remplir des formulaires.",
+    "Tu valides toujours les actions importantes."
+   ],
+   [
+    "Les plugins",
+    "Dans les réglages, ajoute les plugins utiles à ton métier : deux clics, et Claude devient bon dans un domaine.",
+    ""
+   ],
+   [
+    "Refaire une tâche pareil",
+    "Apprends-lui une tâche que tu répètes (une compétence) : un modèle, un exemple réussi, les règles.",
+    ""
+   ],
+   [
+    "Les tâches planifiées",
+    "Programme un brief chaque matin à huit heures : agenda, messages importants, chiffres de la veille.",
+    ""
+   ],
+   [
+    "Les outils à côté du chat",
+    "Le plus sous-côté : demande un outil plutôt qu'un texte. « Fais-moi un calculateur de marge », « un suivi des commandes », « un planning ».",
+    ""
+   ]
+  ]
+ },
+ "87": {
+  "slug": "episode87-reel-pas-a-pas",
+  "kw": "ÉDITEUR",
+  "titre": "Mon guide pour faire un reel animé avec Claude",
+  "sous": "Du sujet en une ligne au reel prêt à publier.",
+  "items": [
+   [
+    "L'application de bureau",
+    "Installe Claude en application de bureau, pas dans le navigateur : il peut travailler dans un dossier de ton ordinateur.",
+    ""
+   ],
+   [
+    "Un dossier dédié",
+    "Crée un dossier « AI vidéo-éditeur » et ouvre-le dans Claude.",
+    ""
+   ],
+   [
+    "Une conversation sur ce dossier",
+    "Démarre une conversation locale sur ce dossier : tout ce que Claude fabrique y est rangé.",
+    ""
+   ],
+   [
+    "Le sujet en une ligne",
+    "« Fais un reel animé vertical sur [sujet] : script, voix, une scène par phrase, sous-titres mot à mot. »",
+    ""
+   ],
+   [
+    "Claude vérifie avant toi",
+    "Demande-lui de contrôler chaque image avant de te la montrer : texte coupé, élément qui déborde.",
+    "Tu regardes l'aperçu, puis tu valides."
+   ]
+  ]
+ },
+ "88": {
+  "slug": "episode88-thomas",
+  "kw": "CLAUDE",
+  "titre": "Les réglages qui font tourner un Instagram",
+  "sous": "Plusieurs Claude, chacun son rôle, et un humain qui contrôle.",
+  "items": [
+   [
+    "Un Claude pour les vidéos",
+    "Il fabrique les vidéos à partir de tes sujets et de ton style.",
+    ""
+   ],
+   [
+    "Un pour les légendes",
+    "Il écrit le texte de chaque publication, dans ton ton.",
+    ""
+   ],
+   [
+    "Un pour les commentaires",
+    "Il prépare les réponses aux commentaires ; tu valides celles qui comptent.",
+    ""
+   ],
+   [
+    "Un qui surveille les autres",
+    "Un dernier relit le travail des autres et signale ce qui cloche.",
+    ""
+   ],
+   [
+    "Un contrôle par jour",
+    "Chaque jour, quelques minutes pour vérifier que tout tourne. Commence par un seul rôle, ajoute les autres ensuite.",
+    ""
+   ]
+  ]
+ },
+ "89": {
+  "slug": "episode89-qr-table-1",
+  "kw": "TABLE",
+  "titre": "Commander à table avec un QR code : comment ça marche",
+  "sous": "Pas d'appli, pas d'attente, et pas de commande à distance.",
+  "items": [
+   [
+    "Scanner le QR code",
+    "Le client scanne le QR code de sa table : la carte s'ouvre dans son téléphone, sans appli à installer.",
+    ""
+   ],
+   [
+    "Un espace par table",
+    "Chaque table a son propre espace de commande.",
+    ""
+   ],
+   [
+    "Le code de la table",
+    "Les amis de la table tapent le même code pour commander ensemble ; la commande part en cuisine.",
+    ""
+   ],
+   [
+    "Sans code : refusé",
+    "Quelqu'un qui n'est pas à table ne peut pas commander pour elle : sans code, la commande est refusée.",
+    ""
+   ],
+   [
+    "Addition payée : code mort",
+    "Une fois l'addition payée, le code ne sert plus. Le paiement passe par un prestataire, et tout est chiffré.",
+    "Le projet : tablette.foodeatup.fr"
+   ]
+  ]
+ },
+ "90": {
+  "slug": "episode90-qr-table-2",
+  "kw": "SÉCURITÉ",
+  "titre": "Le test : peut-on pirater une commande à table ?",
+  "sous": "Le test fait pas à pas, comme un client malin.",
+  "items": [
+   [
+    "Comprendre la commande",
+    "On regarde d'abord comment la commande circule entre la table, le restaurant et la cuisine.",
+    ""
+   ],
+   [
+    "Un code à usage unique",
+    "La table reçoit un code à usage unique quand le restaurant l'accepte.",
+    ""
+   ],
+   [
+    "Deviner le code",
+    "Trois mauvais essais, et on est bloqué.",
+    ""
+   ],
+   [
+    "Photographier le QR code",
+    "Le code meurt dès que la note est payée : la photo ne sert plus à rien.",
+    ""
+   ],
+   [
+    "Le Wi-Fi public",
+    "Sur un Wi-Fi public, personne ne voit le contenu : tout est chiffré.",
+    "Un test n'est pas une garantie absolue : la sécurité se revérifie à chaque nouvelle version."
+   ]
+  ]
+ },
+ "91": {
+  "slug": "episode91-app-modeles",
+  "kw": "MODÈLE",
+  "titre": "Cinq façons pour une application de gagner de l'argent",
+  "sous": "Et celle que je conseille pour une première appli.",
+  "items": [
+   [
+    "L'appli payante",
+    "On paie pour la télécharger. Difficile : peu de gens paient pour une appli qu'ils n'ont pas testée.",
+    ""
+   ],
+   [
+    "La publicité",
+    "Gratuite, financée par la pub. Il faut beaucoup d'utilisateurs.",
+    ""
+   ],
+   [
+    "Les achats dans l'appli",
+    "Gratuite, mais on paie un bonus, une vie, un contenu en plus.",
+    ""
+   ],
+   [
+    "La commission",
+    "L'appli relie des gens et prend une part de chaque échange.",
+    ""
+   ],
+   [
+    "L'abonnement",
+    "On paie chaque mois pour tout débloquer. C'est celui que je conseille pour une première appli : pas besoin d'énormément d'utilisateurs.",
+    "Mon exemple : l'appli de restaurant FoodEatUp, yookii-food-pwa.lovable.app"
+   ]
+  ]
+ },
+ "92": {
+  "slug": "episode92-alex-niche",
+  "kw": "QUITTE",
+  "titre": "Lancer son produit digital sans se montrer",
+  "sous": "La méthode d'Alex, étape par étape.",
+  "items": [
+   [
+    "Une niche",
+    "Choisis un petit public précis, que tu connais.",
+    ""
+   ],
+   [
+    "Un vrai problème",
+    "Demande à Claude : « Quels problèmes concrets rencontre [ce public] chaque semaine ? Classe-les du plus fréquent au plus rare. »",
+    ""
+   ],
+   [
+    "Un produit digital",
+    "Un guide, une check-list ou un modèle qui résout ce problème. Claude t'aide à l'écrire ; tu le relis.",
+    ""
+   ],
+   [
+    "Des vidéos animées",
+    "Sans visage ni voix : des vidéos animées faites avec Claude, plusieurs par jour, qui renvoient vers ton produit.",
+    ""
+   ],
+   [
+    "Un système qui tourne seul",
+    "Une fois le système réglé, la création et la publication tournent seules ; tu gardes un contrôle chaque jour.",
+    "Il faut parfois plusieurs vidéos avant qu'une perce."
+   ]
+  ]
+ }
+}

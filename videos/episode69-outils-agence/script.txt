@@ -1,0 +1,15 @@
+Claude a tué le business des agences web.
+Avant, un site pour un resto, c'était une agence, des semaines, et beaucoup d'argent. Aujourd'hui, voilà les outils que j'utilise vraiment.
+Un : Lovable.
+Je décris le site, il le construit. Mes pages, mes formulaires, mes réservations.
+Deux : Claude.
+C'est mon chef de chantier. Il écrit les textes, vérifie tout, et pilote les autres outils.
+Trois : Canva.
+Pour les affiches et les menus à imprimer.
+Quatre : ElevenLabs.
+Pour la voix de mes vidéos. Celle que tu entends en ce moment.
+Cinq : RapidoCMS.
+Pour programmer les posts sur tous les réseaux en une seule fois.
+Le plus fou ? Ils se parlent tous. Je décris, Claude orchestre, et ça sort.
+L'agence, maintenant, c'est toi.
+La liste avec les liens : écris OUTILS en commentaire.

@@ -1,0 +1,55 @@
+1
+00:00:00,350 --> 00:00:03,030
+Claude a tué le business des consultants en restauration.
+
+2
+00:00:03,270 --> 00:00:08,350
+Tout le monde utilise Claude pour écrire un mail. Moi, je lui demande cinq choses que presque personne ne lui demande.
+
+3
+00:00:08,630 --> 00:00:09,530
+Un : mon bras droit.
+
+4
+00:00:09,850 --> 00:00:15,010
+Je lui donne un seul objectif, remplir le mardi soir, et il me sort le plan de la semaine, tâche par tâche.
+
+5
+00:00:15,210 --> 00:00:16,610
+Deux : le prof particulier.
+
+6
+00:00:16,910 --> 00:00:22,530
+Mon nouvel employé de salle doit apprendre les allergènes. Claude lui prépare les leçons, les fiches, et reprend là où il s'est arrêté.
+
+7
+00:00:22,710 --> 00:00:24,230
+Trois : le psychologue du menu.
+
+8
+00:00:24,450 --> 00:00:28,690
+Il relit ma carte et me dit quel plat mettre en haut, et comment écrire les prix pour qu'on ne les compare pas.
+
+9
+00:00:28,690 --> 00:00:30,190
+Quatre : l'oreille des clients.
+
+10
+00:00:30,510 --> 00:00:33,830
+Je colle mes derniers avis, et il me dit ce qui revient, en bien comme en mal.
+
+11
+00:00:34,070 --> 00:00:35,570
+Cinq : le tableau qui parle.
+
+12
+00:00:35,810 --> 00:00:40,490
+Je lui demande d'expliquer le coût d'un plat, et il me construit un petit tableau où je bouge les quantités moi-même.
+
+13
+00:00:40,690 --> 00:00:43,490
+Un consultant, c'est des semaines. Là, c'est une soirée.
+
+14
+00:00:43,650 --> 00:00:47,090
+Les cinq demandes complètes sont dans mon guide. Écris CONSULTANT en commentaire.

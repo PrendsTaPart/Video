@@ -1,0 +1,9 @@
+Espèces ou carte : devine qui perd de l'argent.
+Pour le client, c'est pareil. Pour le resto, pas du tout. Exemple avec Marco, pizzaïolo.
+Un client paie vingt euros par carte.
+Sur ces vingt euros, la banque prend une petite commission. Dans notre exemple, un pour cent. Marco touche dix-neuf euros quatre-vingts.
+Un autre paie en espèces. Marco touche vingt euros.
+Sauf que le soir, il faut compter la caisse, aller à la banque, risquer l'erreur ou le vol. Ça aussi, ça coûte. En temps.
+Le vrai piège, ce n'est pas la commission. C'est de ne pas savoir ce qu'on paie vraiment.
+Dans FoodEatUp, les paiements par carte sont rapprochés automatiquement. Tu vois ce qui est entré, ce qui a été prélevé, et ce qui reste.
+Écris CAISSE en commentaire, je t'envoie le calcul.

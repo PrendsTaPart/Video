@@ -1,0 +1,42 @@
+{
+ "url": "https://yookii-food-pwa.lovable.app/",
+ "title": "FoodEatUp App — l'app de commande de votre restaurant en 10 minutes",
+ "desc": "Commande, fidélité et notifications : générez l'application de votre restaurant depuis votre caisse FoodEatUp. Installable sans store, aucune commission.",
+ "og": "https://yookii-food-pwa.lovable.app/og-vitrine.jpg",
+ "h1": [
+  "FoodEatUp App"
+ ],
+ "h2": [
+  "FoodEatUp App en vidéo",
+  "Les écrans de votre future app",
+  "Comment ça marche",
+  "Tout ce que contient votre app",
+  "Vos clients l'installent sans store, et vous pouvez aussi la mettre sur Google Play et l'App Store",
+  "Pilotable par Claude",
+  "10 modèles d'app au choix",
+  "Tarifs",
+  "FoodEatUp App ou une app native sur mesure ?",
+  "Questions fréquentes",
+  "Parlons de votre restaurant"
+ ],
+ "bg": "oklch(1 0 0)",
+ "font": "Inter, ui-sans-serif, system-ui, sans-serif",
+ "btn": [
+  [
+   "oklch(0.58 0.212 258)",
+   6
+  ],
+  [
+   "oklch(0.78 0.164 68)",
+   5
+  ],
+  [
+   "oklch(0.24 0.031 232)",
+   3
+  ]
+ ],
+ "text": "Aller au contenu\nLes écrans\nComment ça marche\nFonctionnalités\nTarifs\nFAQ\nConnexion / Inscription\nDemander un devis\nPOUR LES RESTAURATEURS FOODEATUP\nFoodEatUp App\nVotre application de commande, fidélité et notifications, générée depuis votre caisse en dix minutes.\nUne app à votre image, installable depuis un lien ou un QR code, avec votre carte et vos prix toujours à jour. Aucune commission sur vos commandes.\nCréer mon application\nVoir une démo\nEssai gratuit de 7 jours · J'ai déjà une app\nPremière ouverture · 2/19\nPause\nFoodEatUp App en vidéo\nApplications créées\n9\nCommandes passées\n5\nInstallations\n0\nChiffres réels de la plateforme, lus en direct.\nLes écrans de votre future app\nChaque écran reprend votre logo, votre thème et les données de votre caisse FoodEatUp.\nDécouverte et installation\nPremier lancement\nLe client installe l'app depuis un lien ou un QR code, sans passer par un store.\nAccueil\nSes points, l'offre du moment et sa dernière commande à refaire en un geste.\nPartager et installer\nUn QR code et un lien pour envoyer l'app à un ami ou sur un autre appareil.\nRestaurants et carte\nRestaurants\nLa liste des établissements, avec l'état ouvert ou fermé et l'itinéraire.\nMode de commande\nClick and collect, à table, drive ou livraison, selon ce que vous proposez.\nCarte\nVotre carte complète, lue dans la caisse, avec les allergènes signalés.\nFiche produit\nOptions obligatoires, suppléments, quantité et note pour la cuisine.\nCommande et panier\nPanier\nSuggestion, récompense fidélité et code promo, avec un total recalculé par la caisse.\nPaiement\nTerminal du comptoir, lien de paiement, titres-restaurant ou points.\nCapture de l'app de démonstration\nSuivi de commande\nNuméro d'appel et étapes de préparation en temps réel.\nCapture de l'app de démonstration\nCommande à table\nL'ardoise partagée par toute la table, réglée à la fin.\nFidélité et jeux\nFidélité\nPoints, niveaux, récompenses et carte à code-barres à présenter en caisse.\nAffiche et jeux\nL'affiche du moment, la roue cadeaux et le sondage après commande.\nOffres, actus et notifications\nOffres\nDes coupons activés en un geste et appliqués automatiquement au panier.\nActus\nVos nouveautés avec image, à partager.\nNotifications\nLe client choisit ce qu'il reçoit : suivi, offres, fidélité, actus.\nAllergènes et compte\nAllergènes et régimes\nLes 14 allergènes et les régimes, gardés sur le téléphone du client.\nCompte\nRestaurant favori, commandes, données exportables et suppression du compte.\nCréer mon application\nDemander un devis\nComment ça marche\nCinq étapes, exactement celles de l'assistant de création.\n1\nVotre compte\nInscrivez-vous par e-mail ou avec Google.\n2\nVotre caisse FoodEatUp\nConnectez-la en un clic, sans clé ni mot de passe à recopier, puis choisissez l'établissement.\n3\nGénération automatique\nCoordonnées, horaires, carte, fidélité et jeux sont lus dans la caisse. Ajoutez votre logo : thème, slogan et icônes sont proposés.\n4\nAperçu\nParcourez votre app dans un téléphone, avec vos vrais produits et vos vrais prix.\n5\nPublication\nRecevez le lien, le QR code à imprimer et le bouton de partage.\nCommencer maintenant\nTout ce que contient votre app\nCarte et commande à emporter\nVotre carte complète, avec options, formules et prix issus de la caisse.\nClick and collect et commande à table\nCréneaux de retrait, ou QR code posé sur la table pour commander sans attendre.\nPanier et paiement\nTotal recalculé par la caisse, paiement sur votre terminal ou par lien.\nSuivi de commande\nLe client suit sa commande en temps r",
+ "height": 13856,
+ "ok": true,
+ "rec_s": 61.389
+}

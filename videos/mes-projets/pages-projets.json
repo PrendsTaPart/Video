@@ -1,0 +1,1264 @@
+[
+ {
+  "slug": "la-chaine-fraternelles",
+  "episode_mes_projets": 9,
+  "hook": "Une association de quartier mérite un vrai site, elle aussi.",
+  "punchline": "La solidarité de quartier, à Aulnay-sous-Bois.",
+  "benefices": [
+   {
+    "titre": "Qui sont-elles",
+    "texte": "On découvre qui elles sont et ce qu'elles font au quotidien."
+   },
+   {
+    "titre": "Les actions",
+    "texte": "Leurs dernières actions et leurs nouvelles sont mises en avant."
+   },
+   {
+    "titre": "Les collectes",
+    "texte": "Chacun peut participer aux collectes solidaires."
+   },
+   {
+    "titre": "Faire un don",
+    "texte": "Et faire un don en quelques gestes."
+   },
+   {
+    "titre": "Les partenaires",
+    "texte": "Leurs partenaires sont tous réunis au même endroit."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://lachainefraternelles.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep09-chaine-fraternelles-miniature.png"
+ },
+ {
+  "slug": "citycar",
+  "episode_mes_projets": 10,
+  "hook": "Chauffeur VTC sans voiture ? Tu roules dès demain.",
+  "punchline": "Votre véhicule pour VTC dès demain.",
+  "benefices": [
+   {
+    "titre": "Chaque profil",
+    "texte": "Chaque profil de chauffeur trouve sa solution."
+   },
+   {
+    "titre": "Prêts à rouler",
+    "texte": "Des véhicules fiables, prêts à rouler."
+   },
+   {
+    "titre": "Accompagnement",
+    "texte": "Un vrai accompagnement, pas juste une location."
+   },
+   {
+    "titre": "Dossier géré",
+    "texte": "L'équipe gère tout le dossier."
+   },
+   {
+    "titre": "Avis chauffeurs",
+    "texte": "Et les chauffeurs racontent leur expérience."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://citycarvtc.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep10-citycar-miniature.png"
+ },
+ {
+  "slug": "luks-recettes",
+  "episode_mes_projets": 11,
+  "hook": "Fini le classeur de recettes derrière le comptoir.",
+  "punchline": "Le geste juste, à chaque service.",
+  "benefices": [
+   {
+    "titre": "En quelques touches",
+    "texte": "Une boisson se retrouve en quelques touches."
+   },
+   {
+    "titre": "Pas à pas",
+    "texte": "La recette s'affiche une étape à la fois, en très grand."
+   },
+   {
+    "titre": "Formation + quiz",
+    "texte": "La formation est intégrée, avec un quiz sur les vraies recettes."
+   },
+   {
+    "titre": "Validation",
+    "texte": "Le responsable valide chaque équipier."
+   },
+   {
+    "titre": "Partout",
+    "texte": "Au bar, en préparation, sur tablette ou sur téléphone."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://luks.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep11-mena-coffee-miniature.png"
+ },
+ {
+  "slug": "foodeatup-social",
+  "episode_mes_projets": 12,
+  "hook": "Un épisode par jour sur un restaurant. Sans tournage.",
+  "punchline": "Le restaurant, en trente secondes par jour.",
+  "benefices": [
+   {
+    "titre": "La série",
+    "texte": "Une série vidéo qui raconte la vie d'un restaurant."
+   },
+   {
+    "titre": "Le problème, la solution",
+    "texte": "Une scène part en vrille, puis la fonction qui l'aurait évitée."
+   },
+   {
+    "titre": "Publié avec RapidoCMS",
+    "texte": "Chaque épisode est monté, planifié et publié avec RapidoCMS."
+   },
+   {
+    "titre": "Les clips",
+    "texte": "Il y a aussi des clips musicaux et le calendrier de diffusion."
+   },
+   {
+    "titre": "Ma méthode",
+    "texte": "C'est la démonstration de ma méthode, en public."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://cms.foodeatup.com",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep12-studio-cms-miniature.png"
+ },
+ {
+  "slug": "foodeatup-borne-drive",
+  "episode_mes_projets": 13,
+  "hook": "Et si ton drive prenait les commandes à la voix ?",
+  "punchline": "Vos clients commandent à la voix. Votre caisse fait foi.",
+  "benefices": [
+   {
+    "titre": "Commande à la voix",
+    "texte": "Jarvis prend la commande au poteau, en français ou en anglais."
+   },
+   {
+    "titre": "Il relit tout",
+    "texte": "Il pose les bonnes questions et relit tout au client."
+   },
+   {
+    "titre": "Les prix de ta caisse",
+    "texte": "Les prix viennent de ta caisse : rien n'est deviné."
+   },
+   {
+    "titre": "Remplacement",
+    "texte": "Un produit épuisé ? Il propose un remplacement."
+   },
+   {
+    "titre": "L'équipier reprend",
+    "texte": "D'un mot, l'équipier reprend la main."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://drive.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep13-borne-drive-miniature.png"
+ },
+ {
+  "slug": "restaurant-360",
+  "episode_mes_projets": 14,
+  "hook": "Visite un restaurant où tout est connecté.",
+  "punchline": "Tout votre restaurant. Enfin connecté.",
+  "benefices": [
+   {
+    "titre": "La visite",
+    "texte": "Tu entres dans un restaurant virtuel et tu suis le service."
+   },
+   {
+    "titre": "La caisse au centre",
+    "texte": "Tout part de la caisse, et tout y revient."
+   },
+   {
+    "titre": "Par métier",
+    "texte": "Chaque métier choisit par où il entre."
+   },
+   {
+    "titre": "Sans ressaisie",
+    "texte": "Les boucles du restaurant se passent l'information, sans ressaisie."
+   },
+   {
+    "titre": "De la terrasse au bureau",
+    "texte": "De la terrasse au bureau, tout se visite."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://restaurant-explorer-app.lovable.app",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep14-restaurant-360-miniature.png"
+ },
+ {
+  "slug": "coach-cuisine",
+  "episode_mes_projets": 15,
+  "hook": "Des repas frais toute la semaine, sans cuisiner.",
+  "punchline": "Des repas frais, livrés chaque semaine.",
+  "benefices": [
+   {
+    "titre": "Ta formule",
+    "texte": "Tu choisis ta formule et ton rythme."
+   },
+   {
+    "titre": "Des plats frais",
+    "texte": "Les cuisiniers préparent des plats frais pour ta semaine."
+   },
+   {
+    "titre": "Livrés deux soirs",
+    "texte": "Livraison le dimanche soir et le mardi soir."
+   },
+   {
+    "titre": "Selon tes allergies",
+    "texte": "Les plats s'adaptent à tes allergies."
+   },
+   {
+    "titre": "Sans engagement",
+    "texte": "Pause ou changement de formule, quand tu veux."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://caoch.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep15-coach-cuisine-miniature.png"
+ },
+ {
+  "slug": "alto",
+  "episode_mes_projets": 16,
+  "hook": "Chauffeur VTC : et si tu ne roulais plus jamais seul ?",
+  "punchline": "Ne roulez plus jamais seul.",
+  "benefices": [
+   {
+    "titre": "Salarié",
+    "texte": "Les chauffeurs deviennent salariés, avec fiche de paie et mutuelle."
+   },
+   {
+    "titre": "Bons plans",
+    "texte": "Ils accèdent à des partenariats et à des bons plans."
+   },
+   {
+    "titre": "Alto Hub",
+    "texte": "Alto Hub devient leur tableau de bord au quotidien."
+   },
+   {
+    "titre": "Coaching",
+    "texte": "Coaching et accompagnement juridique en plus."
+   },
+   {
+    "titre": "Le club privé",
+    "texte": "Le club privé des chauffeurs qui veulent mieux vivre de leur métier."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://altovtc.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep16-alto-miniature.png"
+ },
+ {
+  "slug": "braindcode-plugins",
+  "episode_mes_projets": 17,
+  "hook": "Claude peut piloter ton entreprise de A à Z.",
+  "punchline": "Claude pilote ton entreprise de A à Z.",
+  "benefices": [
+   {
+    "titre": "Prompts prêts",
+    "texte": "Une bibliothèque de prompts en français, prêts à l'emploi."
+   },
+   {
+    "titre": "Tes logiciels branchés",
+    "texte": "Tu branches tes logiciels sur Claude, en quelques étapes."
+   },
+   {
+    "titre": "Un seul cerveau",
+    "texte": "Tes logiciels métier partagent un seul cerveau."
+   },
+   {
+    "titre": "Ton espace dans Claude",
+    "texte": "Ton espace te suit jusque dans Claude."
+   },
+   {
+    "titre": "L'académie",
+    "texte": "Et une académie pour apprendre à déléguer."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://plugin.braindcode.com",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep17-braindcode-plugins-miniature.png"
+ },
+ {
+  "slug": "braindcode-build",
+  "episode_mes_projets": 18,
+  "hook": "Mes logiciels sont ouverts. Construis l'extension qui manque.",
+  "punchline": "Construis l'extension qui manque.",
+  "benefices": [
+   {
+    "titre": "Choisis un logiciel",
+    "texte": "Tu choisis un logiciel et tu construis son extension."
+   },
+   {
+    "titre": "Une base concrète",
+    "texte": "Tu pars d'une base concrète, pas de zéro."
+   },
+   {
+    "titre": "Branchée partout",
+    "texte": "Ton extension se branche sur Claude et sur Plan'It."
+   },
+   {
+    "titre": "Des agents IA",
+    "texte": "Tu peux même faire travailler une équipe d'agents IA."
+   },
+   {
+    "titre": "Humains contre IA",
+    "texte": "Humains contre IA : chacun a sa chance."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://build.braindcode.com",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep18-braindcode-build-miniature.png"
+ },
+ {
+  "slug": "publisher-bot",
+  "episode_mes_projets": 19,
+  "hook": "Gère ta chaîne YouTube comme un pro.",
+  "punchline": "Gère ta chaîne comme un pro.",
+  "benefices": [
+   {
+    "titre": "Miniatures et titres",
+    "texte": "Les miniatures et les titres sont préparés pour toi."
+   },
+   {
+    "titre": "Les tendances",
+    "texte": "Il surveille les tendances de ton sujet."
+   },
+   {
+    "titre": "Les Shorts",
+    "texte": "Il découpe tes vidéos en Shorts."
+   },
+   {
+    "titre": "Publié partout",
+    "texte": "Il publie partout, puis il lit les vrais résultats."
+   },
+   {
+    "titre": "Tu lui parles",
+    "texte": "Tu lui parles depuis ton assistant, il fait le reste."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://youtube.rapidocms.com",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep19-youtube-publisher-miniature.png"
+ },
+ {
+  "slug": "plan-it",
+  "episode_mes_projets": 20,
+  "hook": "Tes tâches avancent, même quand tu es occupé.",
+  "punchline": "Tes tâches avancent, même quand tu es occupé.",
+  "benefices": [
+   {
+    "titre": "Une phrase",
+    "texte": "Une phrase suffit : le bon agent s'en charge."
+   },
+   {
+    "titre": "Devis relancés",
+    "texte": "Tes devis ne dorment plus, ils sont relancés."
+   },
+   {
+    "titre": "Plat du jour publié",
+    "texte": "Ton plat du jour est publié partout."
+   },
+   {
+    "titre": "Hygiène à jour",
+    "texte": "Ton registre d'hygiène se tient tout seul."
+   },
+   {
+    "titre": "Tu gardes la main",
+    "texte": "Le prix est annoncé avant, et tu gardes la main."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://plani-t.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep20-planit-miniature.png"
+ },
+ {
+  "slug": "tutoriels-foodeatup",
+  "episode_mes_projets": 21,
+  "hook": "Apprends à gérer ton restaurant sans double saisie.",
+  "punchline": "Gérer son restaurant sans double saisie.",
+  "benefices": [
+   {
+    "titre": "Par métier",
+    "texte": "Tu choisis ton métier, le parcours s'adapte."
+   },
+   {
+    "titre": "Tutoriels courts",
+    "texte": "Des tutoriels vidéo courts, module par module."
+   },
+   {
+    "titre": "Une journée de service",
+    "texte": "Une journée de service suivie de bout en bout."
+   },
+   {
+    "titre": "Tous les modules",
+    "texte": "Stock, hygiène, plannings, ventes en ligne et agents IA."
+   },
+   {
+    "titre": "Pas à pas",
+    "texte": "Des premiers pas jusqu'aux boucles du restaurant."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://tutoriel.foodeatup.com",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep21-tutoriels-foodeatup-miniature.png"
+ },
+ {
+  "slug": "salle-live",
+  "episode_mes_projets": 22,
+  "hook": "Chaque table, à chaque instant. Sans aucune image.",
+  "punchline": "Chaque table, à chaque instant.",
+  "benefices": [
+   {
+    "titre": "Analysé sur place",
+    "texte": "Un boîtier analyse la salle sur place, puis oublie l'image."
+   },
+   {
+    "titre": "Rien d'autre",
+    "texte": "Il n'envoie que l'état des tables, rien d'autre."
+   },
+   {
+    "titre": "Vert, rouge, orange",
+    "texte": "Chaque table passe du vert au rouge, puis à l'orange."
+   },
+   {
+    "titre": "Relié à ta caisse",
+    "texte": "Ta caisse FoodEatUp suit les commandes en direct."
+   },
+   {
+    "titre": "Alertes en direct",
+    "texte": "Alertes et analyses suivent ton service."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://camera.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep22-camera-miniature.png"
+ },
+ {
+  "slug": "voyagego",
+  "episode_mes_projets": 23,
+  "hook": "Dis où tu rêves d'aller. On compose tout le reste.",
+  "punchline": "Dis où tu rêves d'aller, on compose le reste.",
+  "benefices": [
+   {
+    "titre": "Une phrase",
+    "texte": "Une phrase suffit : l'agent compose ton voyage."
+   },
+   {
+    "titre": "À ton budget",
+    "texte": "Vols, hôtels, repas et activités, à ton budget."
+   },
+   {
+    "titre": "Ton carnet",
+    "texte": "Ton voyage est mis en page comme un beau carnet."
+   },
+   {
+    "titre": "Ton guide sur place",
+    "texte": "Sur place, l'agent devient ton guide."
+   },
+   {
+    "titre": "La communauté",
+    "texte": "Et une communauté part avec toi."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://voyage.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep23-voyagego-miniature.png"
+ },
+ {
+  "slug": "fiche-technique-foodeatup",
+  "episode_mes_projets": 24,
+  "hook": "Ta recette. Son vrai coût.",
+  "punchline": "Ta recette. Son vrai coût.",
+  "benefices": [
+   {
+    "titre": "Ton plat",
+    "texte": "Tu choisis ton plat et tu réponds à quelques questions."
+   },
+   {
+    "titre": "Tes prix",
+    "texte": "Tu ajoutes tes prix, ou la photo d'une facture."
+   },
+   {
+    "titre": "Coût et marge",
+    "texte": "Tu découvres ton coût matière et ta marge."
+   },
+   {
+    "titre": "Ta fiche + visuels",
+    "texte": "Tu reçois ta fiche technique, avec tes visuels."
+   },
+   {
+    "titre": "Gratuit",
+    "texte": "C'est gratuit, sans carte bancaire."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://fiche.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep24-fiche-seo-miniature.png"
+ },
+ {
+  "slug": "rapidocms",
+  "episode_mes_projets": 25,
+  "hook": "Un prompt, et tes posts sont prêts.",
+  "punchline": "Tu parles, Rapido publie.",
+  "benefices": [
+   {
+    "titre": "Ton équipe com",
+    "texte": "Ton IA devient une équipe de communication complète."
+   },
+   {
+    "titre": "Tous les rôles",
+    "texte": "Community manager, graphiste, stratège et analyste."
+   },
+   {
+    "titre": "Tu parles",
+    "texte": "Tu parles, Rapido publie."
+   },
+   {
+    "titre": "Tous tes réseaux",
+    "texte": "Instagram, Facebook, LinkedIn et TikTok, en une fois."
+   },
+   {
+    "titre": "Avec Claude",
+    "texte": "Et il marche avec Claude et tes autres assistants."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://rapidocms.com",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep25-rapidocms-miniature.png"
+ },
+ {
+  "slug": "braincast",
+  "episode_mes_projets": 26,
+  "hook": "De l'idée à la vidéo publiée, dans un seul endroit.",
+  "punchline": "De l'idée à la vidéo publiée.",
+  "benefices": [
+   {
+    "titre": "Tes idées",
+    "texte": "Tu trouves tes idées de vidéos."
+   },
+   {
+    "titre": "Tes plans",
+    "texte": "Tu découpes tes plans et tu écris tes prompts."
+   },
+   {
+    "titre": "Le montage",
+    "texte": "Tu montes ta vidéo."
+   },
+   {
+    "titre": "Publié sur TikTok",
+    "texte": "Tu publies ou tu planifies sur tes comptes TikTok."
+   },
+   {
+    "titre": "Ton accord",
+    "texte": "Rien ne part sans ton accord."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://braincast.rapidocms.com",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep26-tiktok-publisher-miniature.png"
+ },
+ {
+  "slug": "foodeatup-app",
+  "episode_mes_projets": 27,
+  "hook": "L'appli de ton restaurant, créée depuis ta caisse.",
+  "punchline": "L'appli de ton restaurant, créée depuis ta caisse.",
+  "benefices": [
+   {
+    "titre": "À ton image",
+    "texte": "Commande, fidélité et notifications, à ton image."
+   },
+   {
+    "titre": "Sans store",
+    "texte": "Tes clients l'installent avec un lien ou un QR code, sans store."
+   },
+   {
+    "titre": "Toujours à jour",
+    "texte": "Ta carte et tes prix restent toujours à jour."
+   },
+   {
+    "titre": "Zéro commission",
+    "texte": "Aucune commission sur tes commandes."
+   },
+   {
+    "titre": "Pilotée par Claude",
+    "texte": "Et tu peux la piloter avec Claude."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://yookii-food-pwa.lovable.app",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep27-pwa-miniature.png"
+ },
+ {
+  "slug": "foodeatup-carte-digitale",
+  "episode_mes_projets": 28,
+  "hook": "Ma carte de visite tient dans un lien.",
+  "punchline": "Ma carte de visite tient dans un lien.",
+  "benefices": [
+   {
+    "titre": "Mon parcours",
+    "texte": "Mon parcours et ma promesse, sur une seule page."
+   },
+   {
+    "titre": "L'équipe",
+    "texte": "On découvre l'équipe et les agents IA."
+   },
+   {
+    "titre": "Le système",
+    "texte": "Tout le système FoodEatUp, en un coup d'œil."
+   },
+   {
+    "titre": "Un devis",
+    "texte": "Un devis se demande en un geste."
+   },
+   {
+    "titre": "Caroline",
+    "texte": "On peut même appeler Caroline, l'agent vocal."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://carte.foodeatup.com",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep28-carte-visite-miniature.png"
+ },
+ {
+  "slug": "studio-print-foodeatup",
+  "episode_mes_projets": 29,
+  "hook": "Tes affiches deviennent un film.",
+  "punchline": "Tes affiches deviennent un film.",
+  "benefices": [
+   {
+    "titre": "À ton image",
+    "texte": "Tes flyers, menus et emballages, à ton image."
+   },
+   {
+    "titre": "Ta marque partout",
+    "texte": "Ton logo, tes couleurs et ton slogan sont appliqués partout."
+   },
+   {
+    "titre": "Affiches animées",
+    "texte": "Tes affiches s'animent et deviennent des vidéos."
+   },
+   {
+    "titre": "Tout au même endroit",
+    "texte": "Newsletters, réseaux et QR codes au même endroit."
+   },
+   {
+    "titre": "Jeux pour enfants",
+    "texte": "Et même des jeux pour les enfants à table."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://design.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep29-studio-print-miniature.png"
+ },
+ {
+  "slug": "foodeatup",
+  "episode_mes_projets": 30,
+  "hook": "Une caisse qui gère tout le restaurant.",
+  "punchline": "Une caisse qui gère tout le restaurant.",
+  "benefices": [
+   {
+    "titre": "Stock à jour",
+    "texte": "Chaque ticket encaissé met à jour le stock."
+   },
+   {
+    "titre": "Marge et hygiène",
+    "texte": "Ta marge et ton hygiène suivent toutes seules."
+   },
+   {
+    "titre": "Une seule saisie",
+    "texte": "Tu saisis une fois, le reste suit."
+   },
+   {
+    "titre": "Tout est relié",
+    "texte": "Écrans cuisine, compta et fidélité sont reliés."
+   },
+   {
+    "titre": "Essai gratuit",
+    "texte": "Et tu peux l'essayer gratuitement."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://site.foodeatup.com",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep30-site-foodeatup-miniature.png"
+ },
+ {
+  "slug": "villa-beach",
+  "episode_mes_projets": 31,
+  "hook": "Restaurant, lounge et club en plein air. Tout sur un site.",
+  "punchline": "Restaurant, lounge et club en plein air.",
+  "benefices": [
+   {
+    "titre": "La semaine",
+    "texte": "La semaine à la Villa, soirée par soirée."
+   },
+   {
+    "titre": "Ton moment",
+    "texte": "Chacun choisit son moment : dîner, lounge ou club."
+   },
+   {
+    "titre": "Les soirées",
+    "texte": "Les prochaines soirées sont annoncées."
+   },
+   {
+    "titre": "Les avis",
+    "texte": "Les avis des clients sont mis en avant."
+   },
+   {
+    "titre": "Réserver",
+    "texte": "Et on réserve sa soirée directement."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://villabeach.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep31-villabeach-miniature.png"
+ },
+ {
+  "slug": "planit-academie",
+  "episode_mes_projets": 32,
+  "hook": "Apprends à faire travailler l'IA dans tes logiciels.",
+  "punchline": "Apprends à faire travailler l'IA.",
+  "benefices": [
+   {
+    "titre": "Par métier",
+    "texte": "Tu choisis ton métier, le parcours s'adapte."
+   },
+   {
+    "titre": "Tutoriels courts",
+    "texte": "Des tutoriels vidéo très courts."
+   },
+   {
+    "titre": "Branche et parle",
+    "texte": "Tu branches tes logiciels, puis tu parles à tes agents."
+   },
+   {
+    "titre": "Étape par étape",
+    "texte": "Un parcours, étape par étape."
+   },
+   {
+    "titre": "Le catalogue",
+    "texte": "Et tout le catalogue, module par module."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://tutoriel.plani-t.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep32-planit-tutoriels-miniature.png"
+ },
+ {
+  "slug": "devisbati",
+  "episode_mes_projets": 33,
+  "hook": "Tes devis, depuis le chantier.",
+  "punchline": "Tes devis, depuis le chantier.",
+  "benefices": [
+   {
+    "titre": "Sur le téléphone",
+    "texte": "L'artisan crée son devis directement sur son téléphone."
+   },
+   {
+    "titre": "Prix des matériaux",
+    "texte": "Les prix des matériaux sont rangés au même endroit."
+   },
+   {
+    "titre": "Fournisseurs",
+    "texte": "Fournisseurs et frais de livraison sont pris en compte."
+   },
+   {
+    "titre": "Marge calculée",
+    "texte": "La marge se calcule toute seule."
+   },
+   {
+    "titre": "Prix à revoir",
+    "texte": "Et un prix trop ancien est signalé."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://site-quote-builder.lovable.app",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep33-devis-batiment-miniature.png"
+ },
+ {
+  "slug": "rapidocrm",
+  "episode_mes_projets": 34,
+  "hook": "Ton CRM ne prend plus de notes. Il passe les appels.",
+  "punchline": "Ton CRM passe les appels.",
+  "benefices": [
+   {
+    "titre": "Prospects trouvés",
+    "texte": "Tes prospects sont trouvés dans les annuaires officiels et sur Google Maps."
+   },
+   {
+    "titre": "L'agent vocal appelle",
+    "texte": "L'agent vocal les appelle pour toi."
+   },
+   {
+    "titre": "Rendez-vous posé",
+    "texte": "Il pose le rendez-vous dans ton agenda."
+   },
+   {
+    "titre": "Tout au même endroit",
+    "texte": "Rendez-vous, factures et échéances au même endroit."
+   },
+   {
+    "titre": "Une phrase",
+    "texte": "Tu écris une phrase, le CRM fait le travail."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://rapido-crm.com",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep34-rapidocrm-miniature.png"
+ },
+ {
+  "slug": "foodeatup-caisse-mobile",
+  "episode_mes_projets": 1,
+  "hook": "Et si le téléphone de tes équipiers devenait ta caisse ?",
+  "benefices": [
+   {
+    "titre": "1 bouton",
+    "texte": "Un bouton, et le téléphone est relié à ta caisse FoodEatUp."
+   },
+   {
+    "titre": "À table",
+    "texte": "Ton équipier prend la commande à table, sur son téléphone."
+   },
+   {
+    "titre": "En cuisine",
+    "texte": "Elle part directement en cuisine, qui la suit en direct."
+   },
+   {
+    "titre": "Paiement par carte",
+    "texte": "Et le client paie par carte, sur le même téléphone, sans terminal."
+   },
+   {
+    "titre": "Sans réseau ✓",
+    "texte": "Même sans réseau, tout est enregistré."
+   },
+   {
+    "titre": "Appli gratuite",
+    "texte": "L'appli est gratuite avec ta caisse FoodEatUp."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://caisse.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep01-caisse-miniature.png"
+ },
+ {
+  "slug": "foodeatup-menu-digital",
+  "episode_mes_projets": 2,
+  "hook": "Ta carte peut vendre à ta place, pendant que ton équipe court.",
+  "benefices": [
+   {
+    "titre": "Ta carte en photos",
+    "texte": "Sur chaque table, une tablette avec ta carte en photos."
+   },
+   {
+    "titre": "À sa façon",
+    "texte": "Chaque client compose sa boisson à sa façon, et commande en un toucher."
+   },
+   {
+    "titre": "Suivi en direct",
+    "texte": "La commande part en cuisine, et le client voit où elle en est."
+   },
+   {
+    "titre": "Remplacé, même prix",
+    "texte": "Un plat épuisé ? Il est remplacé tout de suite, au même prix."
+   },
+   {
+    "titre": "Chacun paie",
+    "texte": "À la fin, chacun paie comme il veut."
+   },
+   {
+    "titre": "Tout est à jour",
+    "texte": "Et tout reste à jour avec ta caisse et ton écran de cuisine."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://tablette.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep02-menu-digital-miniature.png"
+ },
+ {
+  "slug": "application-haccp",
+  "episode_mes_projets": 3,
+  "hook": "Ton classeur HACCP rempli à vingt-trois heures, c'est fini.",
+  "benefices": [
+   {
+    "titre": "À la voix",
+    "texte": "Tu parles : « Frigo deux, trois degrés. » C'est enregistré."
+   },
+   {
+    "titre": "Un geste",
+    "texte": "Températures, dates limites, réceptions, nettoyage : chaque relevé tient en un geste."
+   },
+   {
+    "titre": "Jarvis",
+    "texte": "Jarvis, le chef de l'appli, te parle, t'écoute et t'alerte."
+   },
+   {
+    "titre": "Chacun sa langue",
+    "texte": "Chacun parle sa langue, et le dossier sort en français."
+   },
+   {
+    "titre": "Le jour du contrôle",
+    "texte": "Le jour du contrôle, ton dossier est prêt en deux touchers."
+   },
+   {
+    "titre": "Appli gratuite",
+    "texte": "L'appli est gratuite."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://haccp.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep03-haccp-miniature.png"
+ },
+ {
+  "slug": "foodeatup-recettes",
+  "episode_mes_projets": 4,
+  "hook": "La recette existe. Elle n'est juste jamais suivie.",
+  "benefices": [
+   {
+    "titre": "Pas à pas",
+    "texte": "Sur la tablette, une étape à la fois, en photo et à voix haute."
+   },
+   {
+    "titre": "Minuteur auto",
+    "texte": "Un minuteur se lance tout seul quand il faut attendre."
+   },
+   {
+    "titre": "Allergènes",
+    "texte": "Les allergènes s'affichent avant de commencer."
+   },
+   {
+    "titre": "Mode école",
+    "texte": "Un nouveau apprend en jouant, et le responsable valide."
+   },
+   {
+    "titre": "Coûts à jour",
+    "texte": "Et les coûts arrivent tout seuls de FoodEatUp."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://recette.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep04-recettes-miniature.png"
+ },
+ {
+  "slug": "foodeatup-kds",
+  "episode_mes_projets": 5,
+  "hook": "En plein coup de feu, ta cuisine voit tout, en même temps ?",
+  "benefices": [
+   {
+    "titre": "Tickets par poste",
+    "texte": "Chaque poste reçoit ses tickets, avec un minuteur qui change de couleur."
+   },
+   {
+    "titre": "Le pass",
+    "texte": "Le pass envoie la table entière en même temps."
+   },
+   {
+    "titre": "Imprimante du poste",
+    "texte": "Le bon sort sur l'imprimante du poste."
+   },
+   {
+    "titre": "Sons + mode école",
+    "texte": "Chaque poste a son propre son, et un mode école pour les nouveaux."
+   },
+   {
+    "titre": "Écran, tablette, téléphone",
+    "texte": "Il marche sur un écran, une tablette ou un téléphone."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://kds.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep05-kds-miniature.png"
+ },
+ {
+  "slug": "foodeatup-fidelite",
+  "episode_mes_projets": 6,
+  "hook": "Et si tes clients revenaient en dix secondes chrono ?",
+  "benefices": [
+   {
+    "titre": "Juste son numéro",
+    "texte": "Au comptoir, une tablette : le client tape juste son numéro."
+   },
+   {
+    "titre": "Des points",
+    "texte": "Il cumule des points à chaque passage."
+   },
+   {
+    "titre": "La roue des cadeaux",
+    "texte": "Il tourne la roue des cadeaux, et il a envie de revenir."
+   },
+   {
+    "titre": "À tes couleurs",
+    "texte": "Tout est à tes couleurs, et respecte les règles."
+   },
+   {
+    "titre": "Appli gratuite",
+    "texte": "L'appli est gratuite."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://fidelite.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep06-fidelite-miniature.png"
+ },
+ {
+  "slug": "foodeatup-laboratoire",
+  "episode_mes_projets": 7,
+  "hook": "Quatre heures cinquante-huit du matin. Ton labo est déjà prêt.",
+  "benefices": [
+   {
+    "titre": "Commandes des boutiques",
+    "texte": "Les commandes des boutiques arrivent toutes au même endroit."
+   },
+   {
+    "titre": "Planning + étiquettes",
+    "texte": "La production se planifie, les étiquettes sortent toutes seules."
+   },
+   {
+    "titre": "Contrôle qualité",
+    "texte": "Le contrôle qualité se fait sur l'écran, le dossier est prêt en un clic."
+   },
+   {
+    "titre": "Livraisons · réseau",
+    "texte": "Les livraisons partent, et le siège suit tout le réseau."
+   },
+   {
+    "titre": "Un seul écran",
+    "texte": "Ton labo, sur un seul écran."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://lab.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep07-laboratoire-miniature.png"
+ },
+ {
+  "slug": "qa-hub",
+  "episode_mes_projets": 8,
+  "hook": "Mes développeurs ne cherchent plus les bugs. Claude les trouve.",
+  "benefices": [
+   {
+    "titre": "Chaque outil testé",
+    "texte": "Claude teste chaque outil de mes logiciels, un par un."
+   },
+   {
+    "titre": "Un ticket complet",
+    "texte": "Quand quelque chose casse, il écrit un ticket complet."
+   },
+   {
+    "titre": "La correction expliquée",
+    "texte": "Mon développeur reçoit la correction déjà expliquée."
+   },
+   {
+    "titre": "Toute l’équipe",
+    "texte": "Toute l'équipe voit la même liste, au même endroit."
+   },
+   {
+    "titre": "Gratuit",
+    "texte": "C'est gratuit."
+   }
+  ],
+  "ctas": [
+   {
+    "libelle": "Voir le projet",
+    "url": "https://qa.foodeatup.fr",
+    "type": "voir_le_projet",
+    "principal": true
+   }
+  ],
+  "couverture_source": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/mes-projets-ep08-qa-hub-miniature.png"
+ }
+]

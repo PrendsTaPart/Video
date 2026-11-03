@@ -1,0 +1,35 @@
+1
+00:00:00,350 --> 00:00:03,810
+Patron de resto ou salarié : qui gagne vraiment le plus à l'heure ?
+
+2
+00:00:04,170 --> 00:00:08,530
+Exemple : Karim, patron de resto, se verse deux mille cinq cents euros par mois. Pas mal.
+
+3
+00:00:08,930 --> 00:00:10,950
+Mais il travaille soixante-dix heures par semaine.
+
+4
+00:00:11,140 --> 00:00:17,470
+Ramené à l'heure, il gagne moins que son employé de salle payé au SMIC. Son employé, lui, fait ses trente-cinq heures. Et rentre chez lui.
+
+5
+00:00:17,830 --> 00:00:20,910
+Le problème de Karim, ce n'est pas son salaire. Ce sont ses heures.
+
+6
+00:00:21,190 --> 00:00:25,610
+Les appels pendant le service. Le planning le dimanche soir. Les commandes fournisseurs à minuit.
+
+7
+00:00:25,890 --> 00:00:32,870
+Ces heures-là, on peut les reprendre. Caroline décroche le téléphone. Le planning se prépare avec l'IA. Le stock bas te prévient avant la rupture.
+
+8
+00:00:33,070 --> 00:00:35,590
+Chaque heure récupérée, c'est ton salaire à l'heure qui monte.
+
+9
+00:00:35,700 --> 00:00:38,170
+Calcule le tien : écris HEURE en commentaire.

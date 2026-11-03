@@ -1,0 +1,8 @@
+Et si ton drive prenait les commandes à la voix ?
+Voici la borne drive vocale FoodEatUp, un de mes projets.
+Jarvis prend la commande au poteau, en français ou en anglais.
+Il pose les bonnes questions et relit tout au client.
+Les prix viennent de ta caisse : rien n'est deviné.
+Un produit épuisé ? Il propose un remplacement.
+D'un mot, l'équipier reprend la main.
+Le lien est sous la vidéo : clique sur « Voir le projet ».

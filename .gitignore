@@ -17,3 +17,7 @@ videos/**/work/
 
 # Le journal des appels MCP est une trace d'exécution, pas du code.
 .claude/journal-mcp.jsonl
+
+# Rushes bruts uploadés (vidéos source, lourdes) : non versionnés, la transcription reste dans _rushes-1030b/transcriptions.json
+videos/_rushes-1030/*.mp4
+videos/_rushes-1030b/*.mp4

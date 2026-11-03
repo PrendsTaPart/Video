@@ -1,0 +1,8 @@
+Imagine commander au restaurant en scannant le QR code de ta table.
+Pas d'appli, pas d'attente. Chaque table a son propre espace de commande.
+Tes amis tapent le code de la table, et la commande part en cuisine.
+Un inconnu sur son canapé demande une commande pour la table cinq ? Refusé : pas de code.
+Un code photographié ne sert plus, dès que l'addition est payée.
+Le paiement passe par un prestataire, et tout est chiffré.
+C'est la question que tout le monde pose : peut-on le pirater ?
+Écris TABLE en commentaire, je t'envoie la suite.

@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,550
+Apprends à faire travailler l'IA dans tes logiciels.
+
+2
+00:00:02,770 --> 00:00:04,790
+Voici l'Académie Plan'It, un de mes projets.
+
+3
+00:00:05,110 --> 00:00:07,150
+Tu choisis ton métier, le parcours s'adapte.
+
+4
+00:00:07,330 --> 00:00:08,770
+Des tutoriels vidéo très courts.
+
+5
+00:00:09,090 --> 00:00:11,350
+Tu branches tes logiciels, puis tu parles à tes agents.
+
+6
+00:00:11,550 --> 00:00:13,310
+Un parcours, étape par étape.
+
+7
+00:00:13,450 --> 00:00:15,310
+Et tout le catalogue, module par module.
+
+8
+00:00:15,590 --> 00:00:18,340
+Le lien est sous la vidéo : clique sur « Voir le projet ».

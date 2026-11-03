@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:02,430
+Visite un restaurant où tout est connecté.
+
+2
+00:00:02,670 --> 00:00:05,130
+Voici Restaurant 360, un de mes projets.
+
+3
+00:00:05,430 --> 00:00:07,950
+Tu entres dans un restaurant virtuel et tu suis le service.
+
+4
+00:00:08,270 --> 00:00:10,230
+Tout part de la caisse, et tout y revient.
+
+5
+00:00:10,350 --> 00:00:12,030
+Chaque métier choisit par où il entre.
+
+6
+00:00:12,270 --> 00:00:15,280
+Les boucles du restaurant se passent l'information, sans ressaisie.
+
+7
+00:00:15,330 --> 00:00:17,370
+De la terrasse au bureau, tout se visite.
+
+8
+00:00:17,530 --> 00:00:20,340
+Le lien est sous la vidéo : clique sur « Voir le projet ».

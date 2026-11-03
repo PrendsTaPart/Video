@@ -1,0 +1,19 @@
+{
+ "serie": "Mes 30 projets en publicité",
+ "intro": {"ep": 93, "dir": "episode93-mes-30-projets"},
+ "methode": {"ep": 124, "dir": "episode124-la-methode-des-30-pubs"},
+ "pubs": [
+  [94,"foodeatup-caisse-mobile"],[95,"foodeatup-menu-digital"],[96,"application-haccp"],[97,"foodeatup-recettes"],
+  [98,"foodeatup-kds"],[99,"foodeatup-fidelite"],[100,"foodeatup-laboratoire"],[101,"foodeatup-borne-drive"],
+  [102,"foodeatup-app"],[103,"fiche-technique-foodeatup"],[104,"salle-live"],[105,"mon-academie"],
+  [106,"rapidosoftware"],[107,"rapidocrm"],[108,"rapidocrm-terrain"],[109,"rapidomeet"],[110,"rapidoin"],
+  [111,"webinaire-rapidocms"],[112,"rapidotuto"],[113,"publisher-bot"],[114,"braincast"],
+  [115,"plan-it"],[116,"braindcode"],[117,"braindcode-plugins"],
+  [118,"villa-beach"],[119,"coach-cuisine"],[120,"citycar"],[121,"alto"],[122,"plateforme-assurance"],[123,"la-chaine-fraternelles"]
+ ],
+ "exclus": {"ecran de connexion seulement": ["releasesync","devisbati","voyagego","rapidorh"],
+            "page blanche au robot": ["foodeatup","rapidocms","studio-print-foodeatup","foodeatup-carte-digitale"],
+            "chaine YouTube": ["formation-entrepreneurs"],
+            "outils internes ou doublons": ["qa-hub","planit-academie","tutoriels-foodeatup","braindcode-build","foodeatup-social","restaurant-360","luks-recettes"]},
+ "structure_pub": ["punchline du projet (accroche)", "le problème, concret", "ce que ça coûte de ne rien changer", "révélation : logo + vrai écran", "bénéfice 1 (vrai écran / icône)", "bénéfice 2", "bénéfice 3 ou preuve (gratuit, sans réseau…)", "appel à l'action : essayer via le lien"]
+}

@@ -1,0 +1,8 @@
+Chaque table, à chaque instant. Sans aucune image.
+Voici Salle Live, un de mes projets.
+Un boîtier analyse la salle sur place, puis oublie l'image.
+Il n'envoie que l'état des tables, rien d'autre.
+Chaque table passe du vert au rouge, puis à l'orange.
+Ta caisse FoodEatUp suit les commandes en direct.
+Alertes et analyses suivent ton service.
+Le lien est sous la vidéo : clique sur « Voir le projet ».

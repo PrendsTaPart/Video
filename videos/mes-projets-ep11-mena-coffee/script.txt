@@ -1,0 +1,8 @@
+Fini le classeur de recettes derrière le comptoir.
+Voici Lüks Recettes, l'appli de formation que j'ai réalisée pour Lüks Coffee.
+Une boisson se retrouve en quelques touches.
+La recette s'affiche une étape à la fois, en très grand.
+La formation est intégrée, avec un quiz sur les vraies recettes.
+Le responsable valide chaque équipier.
+Au bar, en préparation, sur tablette ou sur téléphone.
+Le lien est sous la vidéo : clique sur « Voir le projet ».

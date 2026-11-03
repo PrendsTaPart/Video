@@ -1,0 +1,8 @@
+Trois photos de ta salle, et Claude en fait une version en trois dimensions.
+Il devine les tailles grâce à la porte et aux prises.
+Ta pièce s'ouvre dans ton navigateur.
+Tu déplaces les tables, tu demandes si une banquette rentre.
+Il vérifie les murs, la porte et la place pour passer.
+Tu essaies une nouvelle couleur sur les murs, en un clic.
+Et il te liste chaque taille devinée, pour que tu vérifies avec un mètre.
+Écris DÉCOR en commentaire, je t'envoie la méthode.

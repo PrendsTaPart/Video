@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,470
+Trois photos de ta salle, et Claude en fait une version en trois dimensions.
+
+2
+00:00:03,770 --> 00:00:05,870
+Il devine les tailles grâce à la porte et aux prises.
+
+3
+00:00:06,050 --> 00:00:07,790
+Ta pièce s'ouvre dans ton navigateur.
+
+4
+00:00:07,950 --> 00:00:10,550
+Tu déplaces les tables, tu demandes si une banquette rentre.
+
+5
+00:00:10,670 --> 00:00:13,190
+Il vérifie les murs, la porte et la place pour passer.
+
+6
+00:00:13,510 --> 00:00:15,610
+Tu essaies une nouvelle couleur sur les murs, en un clic.
+
+7
+00:00:15,930 --> 00:00:19,050
+Et il te liste chaque taille devinée, pour que tu vérifies avec un mètre.
+
+8
+00:00:19,130 --> 00:00:21,650
+Écris DÉCOR en commentaire, je t'envoie la méthode.

@@ -1,0 +1,8 @@
+Peut-on pirater une commande à table ? On a essayé.
+On fait le test pas à pas, comme un client malin.
+Étape un : on regarde comment la commande fonctionne.
+Étape deux : le serveur accepte, et la table reçoit son code à usage unique.
+Étape trois : on devine le code. Trois mauvais essais, et on est bloqué.
+Étape quatre : on photographie le QR code. Le code meurt dès que la note est payée.
+Étape cinq : le Wi-Fi public ne voit rien, tout est chiffré.
+Écris SÉCURITÉ en commentaire, je t'envoie le détail du test.
