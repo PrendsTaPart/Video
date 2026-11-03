@@ -1,0 +1,1550 @@
+[
+ {
+  "n": 1,
+  "slug": "ajouter-l-abonnement-caisse",
+  "module": "caisse-pos",
+  "titre": "Ajouter l'abonnement caisse",
+  "vignette": "Active ta caisse",
+  "ecran": "Abonnement › choisir le Pack caisse",
+  "nouvelle": false
+ },
+ {
+  "n": 2,
+  "slug": "acheter-son-materiel-de-caisse",
+  "module": "caisse-pos",
+  "titre": "Acheter son matériel de caisse",
+  "vignette": "Ta caisse livrée prête",
+  "ecran": "Menu profil › Boutiques › Matériel (/materiel)",
+  "nouvelle": false
+ },
+ {
+  "n": 3,
+  "slug": "configurer-son-imprimante-de-caisse",
+  "module": "caisse-pos",
+  "titre": "Configurer son imprimante de caisse",
+  "vignette": "Imprimante branchée",
+  "ecran": "Service › Intégrations › Imprimantes",
+  "nouvelle": false
+ },
+ {
+  "n": 4,
+  "slug": "creer-un-poste-de-caisse",
+  "module": "caisse-pos",
+  "titre": "Créer un poste de caisse",
+  "vignette": "Bar + salle = 2 caisses",
+  "ecran": "Configuration boutique › Intégration",
+  "nouvelle": false
+ },
+ {
+  "n": 5,
+  "slug": "ajouter-smile-and-pay",
+  "module": "caisse-pos",
+  "titre": "Ajouter Smile&Pay",
+  "vignette": "Branche Smile&Pay",
+  "ecran": "Service › Intégrations › Smile&Pay",
+  "nouvelle": false
+ },
+ {
+  "n": 6,
+  "slug": "ajouter-son-tpe",
+  "module": "caisse-pos",
+  "titre": "Ajouter son terminal de paiement (TPE)",
+  "vignette": "Ton TPE relié à la caisse",
+  "ecran": "Service › Intégrations › Terminaux de paiement",
+  "nouvelle": false
+ },
+ {
+  "n": 7,
+  "slug": "activer-les-garde-fous-de-caisse",
+  "module": "caisse-pos",
+  "titre": "Activer les garde-fous de caisse",
+  "vignette": "Plus de remise sauvage",
+  "ecran": "Configuration boutique › Intégration",
+  "nouvelle": false
+ },
+ {
+  "n": 8,
+  "slug": "configurer-ses-produits-en-caisse",
+  "module": "caisse-pos",
+  "titre": "Configurer ses produits en caisse",
+  "vignette": "Ta carte dans la caisse",
+  "ecran": "Ma carte › plats, puis Caisse › grille",
+  "nouvelle": false
+ },
+ {
+  "n": 9,
+  "slug": "configurer-supplements-et-cuissons",
+  "module": "caisse-pos",
+  "titre": "Cuissons & suppléments",
+  "vignette": "Cuissons sans erreur",
+  "ecran": "StockVisionAI › Cuissons & suppléments",
+  "nouvelle": false
+ },
+ {
+  "n": 10,
+  "slug": "configurer-ses-happy-hours",
+  "module": "caisse-pos",
+  "titre": "Configurer ses happy hours",
+  "vignette": "Happy hour automatique",
+  "ecran": "Service › Caisse",
+  "nouvelle": false
+ },
+ {
+  "n": 11,
+  "slug": "ajouter-une-promotion-en-caisse",
+  "module": "caisse-pos",
+  "titre": "Ajouter une promotion en caisse",
+  "vignette": "Une promo en 3 clics",
+  "ecran": "Caisse › ligne › % Remise / Offert",
+  "nouvelle": false
+ },
+ {
+  "n": 12,
+  "slug": "affecter-un-role-et-un-pin-en-caisse",
+  "module": "caisse-pos",
+  "titre": "Affecter un rôle et un code PIN à un employé",
+  "vignette": "Un code par serveur",
+  "ecran": "Équipe › Employés › fiche › rôle + code personnel",
+  "nouvelle": false
+ },
+ {
+  "n": 13,
+  "slug": "former-un-employe-mode-ecole",
+  "module": "caisse-pos",
+  "titre": "Former un employé avec le mode école",
+  "vignette": "Forme ton serveur",
+  "ecran": "Service › Caisse",
+  "nouvelle": false
+ },
+ {
+  "n": 14,
+  "slug": "prendre-une-commande-en-caisse",
+  "module": "caisse-pos",
+  "titre": "Prendre une commande à table",
+  "vignette": "Prends la commande à table",
+  "ecran": "Service › Caisse",
+  "nouvelle": false
+ },
+ {
+  "n": 15,
+  "slug": "creer-une-note-sans-table",
+  "module": "caisse-pos",
+  "titre": "Créer une note sans table — comptoir, à emporter, livraison",
+  "vignette": "Comptoir, emporter, livraison",
+  "ecran": "Service › Caisse",
+  "nouvelle": false
+ },
+ {
+  "n": 16,
+  "slug": "envoyer-une-commande-en-cuisine",
+  "module": "caisse-pos",
+  "titre": "Envoyer une commande en cuisine",
+  "vignette": "Envoie en cuisine",
+  "ecran": "Service › Caisse",
+  "nouvelle": false
+ },
+ {
+  "n": 17,
+  "slug": "realiser-un-paiement-en-caisse",
+  "module": "caisse-pos",
+  "titre": "Réaliser un paiement — la fenêtre d'encaissement",
+  "vignette": "Encaisse en 2 gestes",
+  "ecran": "Service › Caisse",
+  "nouvelle": false
+ },
+ {
+  "n": 18,
+  "slug": "encaisser-un-bon-ou-une-carte-cadeau",
+  "module": "caisse-pos",
+  "titre": "Encaisser un bon ou une carte cadeau",
+  "vignette": "Carte cadeau encaissée",
+  "ecran": "Service › Caisse",
+  "nouvelle": false
+ },
+ {
+  "n": 19,
+  "slug": "creer-un-lien-de-paiement",
+  "module": "caisse-pos",
+  "titre": "Créer un lien de paiement",
+  "vignette": "Fais-toi payer par lien",
+  "ecran": "Service › Liens de paiement",
+  "nouvelle": false
+ },
+ {
+  "n": 20,
+  "slug": "realiser-un-avoir",
+  "module": "caisse-pos",
+  "titre": "Réaliser un avoir",
+  "vignette": "Un avoir propre",
+  "ecran": "Service › Caisse",
+  "nouvelle": false
+ },
+ {
+  "n": 21,
+  "slug": "declarer-une-perte",
+  "module": "caisse-pos",
+  "titre": "Déclarer une perte",
+  "vignette": "Déclare ta perte",
+  "ecran": "Caisse › Personnel / Perte",
+  "nouvelle": false
+ },
+ {
+  "n": 22,
+  "slug": "voir-son-journal-de-caisse",
+  "module": "caisse-pos",
+  "titre": "Journal de caisse",
+  "vignette": "Le journal de caisse",
+  "ecran": "Finance › Journal de caisse; Service › Caisse",
+  "nouvelle": false
+ },
+ {
+  "n": 23,
+  "slug": "retrouver-ses-documents-fiscaux",
+  "module": "caisse-pos",
+  "titre": "Conformité fiscale",
+  "vignette": "NF525 : tout est là",
+  "ecran": "Service › Conformité fiscale",
+  "nouvelle": false
+ },
+ {
+  "n": 24,
+  "slug": "retrouver-ses-statistiques-de-caisse",
+  "module": "caisse-pos",
+  "titre": "Statistiques caisse",
+  "vignette": "Ta caisse en chiffres",
+  "ecran": "Finance › Statistiques caisse",
+  "nouvelle": false
+ },
+ {
+  "n": 25,
+  "slug": "rapprochement-comptable-pennylane",
+  "module": "caisse-pos",
+  "titre": "Faire son rapprochement comptable avec Pennylane",
+  "vignette": "Ta compta part seule",
+  "ecran": "Finance › Comptabilité › Pennylane",
+  "nouvelle": false
+ },
+ {
+  "n": 26,
+  "slug": "rapprochement-bancaire-qonto",
+  "module": "caisse-pos",
+  "titre": "Faire son rapprochement bancaire avec Qonto",
+  "vignette": "Caisse = banque ?",
+  "ecran": "Finance › Comptabilité › Qonto",
+  "nouvelle": false
+ },
+ {
+  "n": 27,
+  "slug": "telecharger-sa-compta",
+  "module": "caisse-pos",
+  "titre": "Télécharger sa comptabilité",
+  "vignette": "Ta compta en 1 fichier",
+  "ecran": "Finance › Comptabilité › Exports (FEC)",
+  "nouvelle": false
+ },
+ {
+  "n": 28,
+  "slug": "multi-caisse-z-consolide",
+  "module": "caisse-pos",
+  "titre": "Multi-caisse et Z consolidé",
+  "vignette": "Un Z pour toute la journée",
+  "ecran": "Caisse › menu Caisse › Z consolidé du jour",
+  "nouvelle": false
+ },
+ {
+  "n": 29,
+  "slug": "repas-personnel-pertes",
+  "module": "caisse-pos",
+  "titre": "Repas du personnel et pertes",
+  "vignette": "Repas staff : tracé",
+  "ecran": "Caisse › Personnel / Perte",
+  "nouvelle": false
+ },
+ {
+  "n": 30,
+  "slug": "note-frais",
+  "module": "caisse-pos",
+  "titre": "Note de frais",
+  "vignette": "Note de frais en 1 clic",
+  "ecran": "Caisse › note réglée › Note de frais",
+  "nouvelle": false
+ },
+ {
+  "n": 31,
+  "slug": "rapprocher-paiement-tpe-sans-reponse",
+  "module": "caisse-pos",
+  "titre": "Rapprochement d’un paiement TPE sans réponse",
+  "vignette": "TPE sans réponse ? Calme",
+  "ecran": "Caisse › Notes ouvertes › Le client paie autrement",
+  "nouvelle": false
+ },
+ {
+  "n": 32,
+  "slug": "caisse-pastille-arrivees",
+  "module": "caisse-pos",
+  "titre": "Voir les commandes qui arrivent en caisse",
+  "vignette": "Aucune commande ratée",
+  "ecran": "Caisse › cloche « Arrivées » **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 33,
+  "slug": "caisse-formules-et-note-en-attente",
+  "module": "caisse-pos",
+  "titre": "Vendre une formule et mettre une note en attente",
+  "vignette": "Formules en 1 geste",
+  "ecran": "Caisse › tuiles Formules, rail « En attente » **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 34,
+  "slug": "caisse-pourboire-convive-et-avec-ca",
+  "module": "caisse-pos",
+  "titre": "Pourboire, convive et « Et avec ça ? »",
+  "vignette": "Le pourboire bien rangé",
+  "ecran": "Caisse › Encaisser / ticket « Pour : C1 » **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 35,
+  "slug": "caisse-mode-par-defaut",
+  "module": "caisse-pos",
+  "titre": "Choisir le mode par défaut : salle, comptoir ou emporter",
+  "vignette": "Ta caisse, ton mode",
+  "ecran": "Caisse › menu Caisse › Mode par défaut **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 36,
+  "slug": "caisse-a-encaisser-borne",
+  "module": "caisse-pos",
+  "titre": "Encaisser au comptoir une commande de la borne",
+  "vignette": "Borne : encaisse en 2 s",
+  "ecran": "Caisse › badge « À encaisser » (F6) **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 37,
+  "slug": "caisse-notes-a-rapprocher",
+  "module": "caisse-pos",
+  "titre": "Mettre une note de côté « à rapprocher »",
+  "vignette": "Débloque ton Z",
+  "ecran": "Caisse › Notes ouvertes › Mettre à rapprocher **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 38,
+  "slug": "application-caisse-mobile",
+  "module": "caisse-pos",
+  "titre": "L'application Caisse Mobile sur téléphone",
+  "vignette": "La caisse dans ta poche",
+  "ecran": "Application FoodEatUp Caisse Mobile (téléphone) **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 39,
+  "slug": "application-kds-tablette",
+  "module": "kds-cuisine",
+  "titre": "L'application KDS sur tablette : appairer et régler",
+  "vignette": "Ton KDS sur tablette",
+  "ecran": "Cuisine (KDS) › Application tablette + appli KDS **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 40,
+  "slug": "rythme-du-service-kds",
+  "module": "kds-cuisine",
+  "titre": "Rythme du service : envois en attente et saturation",
+  "vignette": "La cuisine respire",
+  "ecran": "Cuisine (KDS) › Application tablette › Rythme du service **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 41,
+  "slug": "acompte-empreinte-bancaire",
+  "module": "reservation-salle",
+  "titre": "Acompte et empreinte bancaire — anti no-show",
+  "vignette": "Stop aux no-shows",
+  "ecran": "Réservations › Acompte / Anti no-show",
+  "nouvelle": false
+ },
+ {
+  "n": 42,
+  "slug": "rappel-sms-veille",
+  "module": "reservation-salle",
+  "titre": "Rappel SMS la veille",
+  "vignette": "Le SMS qui évite le lapin",
+  "ecran": "Réservations › Anti no-show › Rappel SMS",
+  "nouvelle": false
+ },
+ {
+  "n": 43,
+  "slug": "liste-attente-en-ligne",
+  "module": "reservation-salle",
+  "titre": "Liste d’attente en ligne",
+  "vignette": "Complet ? Liste d'attente",
+  "ecran": "Réservations › Salle › Liste d'attente en ligne",
+  "nouvelle": false
+ },
+ {
+  "n": 44,
+  "slug": "reservation-sur-autre-site",
+  "module": "reservation-salle",
+  "titre": "Module de réservation sur un autre site",
+  "vignette": "Réserve sur ton site",
+  "ecran": "Réservations › Intégration & Google",
+  "nouvelle": false
+ },
+ {
+  "n": 45,
+  "slug": "bouton-reserver-google",
+  "module": "reservation-salle",
+  "titre": "Bouton « Réserver » sur Google",
+  "vignette": "Réserver depuis Google",
+  "ecran": "Réservations › Intégration & Google › Google",
+  "nouvelle": false
+ },
+ {
+  "n": 46,
+  "slug": "offres-creneau",
+  "module": "reservation-salle",
+  "titre": "Offres de créneau",
+  "vignette": "Remplis les heures creuses",
+  "ecran": "Réservations › Promos par créneau (?tab=promos)",
+  "nouvelle": false
+ },
+ {
+  "n": 47,
+  "slug": "evenements-privatisations",
+  "module": "reservation-salle",
+  "titre": "Événements & privatisations",
+  "vignette": "Privatise, encaisse",
+  "ecran": "Service › Événements & privatisations",
+  "nouvelle": false
+ },
+ {
+  "n": 48,
+  "slug": "billets-pdf-qr-scan",
+  "module": "reservation-salle",
+  "titre": "Billets PDF à QR et scan à l’entrée",
+  "vignette": "Billet scanné à l'entrée",
+  "ecran": "Événements › Ventes + Service › Validation salle",
+  "nouvelle": false
+ },
+ {
+  "n": 49,
+  "slug": "billets-modeles",
+  "module": "reservation-salle",
+  "titre": "Billets et modèles de billet",
+  "vignette": "Tes billets à ton image",
+  "ecran": "Mon Site › Billets & modèles",
+  "nouvelle": false
+ },
+ {
+  "n": 50,
+  "slug": "module-reservation-modeles",
+  "module": "reservation-salle",
+  "titre": "Le module de réservation : modèles et plusieurs restaurants",
+  "vignette": "Ton widget de résa",
+  "ecran": "Réservations › Intégration & Google **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 51,
+  "slug": "ecrans-affichage",
+  "module": "ecrans-bornes",
+  "titre": "Écrans d’affichage",
+  "vignette": "Tes écrans prennent vie",
+  "ecran": "Display › Écrans d'affichage",
+  "nouvelle": false
+ },
+ {
+  "n": 52,
+  "slug": "regie-publicitaire",
+  "module": "ecrans-bornes",
+  "titre": "Régie publicitaire",
+  "vignette": "Tes écrans rapportent",
+  "ecran": "Display › Régie publicitaire",
+  "nouvelle": false
+ },
+ {
+  "n": 53,
+  "slug": "supervision-ecrans",
+  "module": "ecrans-bornes",
+  "titre": "Supervision des écrans",
+  "vignette": "Aucun écran éteint",
+  "ecran": "Display › Supervision des écrans",
+  "nouvelle": false
+ },
+ {
+  "n": 54,
+  "slug": "bornes-tablettes",
+  "module": "ecrans-bornes",
+  "titre": "Bornes & tablettes",
+  "vignette": "Ta borne de commande",
+  "ecran": "Display › Bornes & tablettes",
+  "nouvelle": false
+ },
+ {
+  "n": 55,
+  "slug": "menu-digital-qr-table",
+  "module": "ecrans-bornes",
+  "titre": "Menu digital & QR de table",
+  "vignette": "Le menu sur la table",
+  "ecran": "Display › Menu digital & QR de table",
+  "nouvelle": false
+ },
+ {
+  "n": 56,
+  "slug": "application-menu-digital-tablette",
+  "module": "ecrans-bornes",
+  "titre": "L'application Menu digital sur la table",
+  "vignette": "Le menu sur tablette",
+  "ecran": "Application Menu digital + Menu digital & QR **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 57,
+  "slug": "jeux-de-table-tablette",
+  "module": "ecrans-bornes",
+  "titre": "Jeux de table entre tablettes et cadeaux fidélité",
+  "vignette": "Jouez en attendant",
+  "ecran": "Marketing › Fidélité & Jeux › Jeux de table **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 58,
+  "slug": "newsletters-emails",
+  "module": "marketing-fidelite",
+  "titre": "Newsletters & e-mails",
+  "vignette": "Newsletters qui remplissent",
+  "ecran": "Marketing et communication › Email & Newsletters",
+  "nouvelle": false
+ },
+ {
+  "n": 59,
+  "slug": "supports-imprimes-qr",
+  "module": "marketing-fidelite",
+  "titre": "Supports imprimés & QR",
+  "vignette": "Flyers et QR pros",
+  "ecran": "Marketing et communication › Supports imprimés & QR",
+  "nouvelle": false
+ },
+ {
+  "n": 60,
+  "slug": "menu-enfant-jeux",
+  "module": "marketing-fidelite",
+  "titre": "Menu enfant & jeux",
+  "vignette": "Les enfants adorent",
+  "ecran": "Marketing et communication › Menu enfant & jeux",
+  "nouvelle": false
+ },
+ {
+  "n": 61,
+  "slug": "iris-creer-post",
+  "module": "marketing-fidelite",
+  "titre": "Iris — créer un post",
+  "vignette": "Ton post pro en 2 min",
+  "ecran": "Service › Iris › Créer",
+  "nouvelle": false
+ },
+ {
+  "n": 62,
+  "slug": "iris-roi",
+  "module": "marketing-fidelite",
+  "titre": "Iris — ROI",
+  "vignette": "Ton post a rapporté ?",
+  "ecran": "Service › Iris › Publications (ROI)",
+  "nouvelle": false
+ },
+ {
+  "n": 63,
+  "slug": "supports-marketing-reseaux-sociaux",
+  "module": "marketing-fidelite",
+  "titre": "Supports marketing : liens et réseaux sociaux",
+  "vignette": "Tes réseaux reliés",
+  "ecran": "Configuration boutique › Supports marketing",
+  "nouvelle": false
+ },
+ {
+  "n": 64,
+  "slug": "application-fidelite-comptoir",
+  "module": "marketing-fidelite",
+  "titre": "La tablette fidélité au comptoir",
+  "vignette": "Fidélité au comptoir",
+  "ecran": "Service › Bornes & tablettes (mode fidélité) **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 65,
+  "slug": "jeux-fidelite-six-jeux",
+  "module": "marketing-fidelite",
+  "titre": "Six jeux : roue, grattage, dé, machine à sous, pile ou face, boîtes",
+  "vignette": "6 jeux, 1 tirage honnête",
+  "ecran": "Marketing › Fidélité & Jeux › Créer un jeu **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 66,
+  "slug": "codes-promo-du-restaurant",
+  "module": "marketing-fidelite",
+  "titre": "Créer ses codes promo",
+  "vignette": "Ton code promo maison",
+  "ecran": "Newsletters & e-mails › Codes promo **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 67,
+  "slug": "emails-automatisations-par-etapes",
+  "module": "marketing-fidelite",
+  "titre": "Automatisations e-mail : panier, anniversaire, avis",
+  "vignette": "Les e-mails partent seuls",
+  "ecran": "Newsletters & e-mails › Automatisations **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 68,
+  "slug": "fiche-client-360",
+  "module": "marketing-fidelite",
+  "titre": "La fiche client 360 : achats, messages, consentements",
+  "vignette": "Tout sur ton client",
+  "ecran": "Clients › fiche client **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 69,
+  "slug": "iris-monter-une-video",
+  "module": "marketing-fidelite",
+  "titre": "Iris — monter une vidéo avec voix off",
+  "vignette": "Ta pub vidéo, montée seule",
+  "ecran": "Service › Iris › étape 5 › Monter la vidéo **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 70,
+  "slug": "iris-kit-video-google",
+  "module": "marketing-fidelite",
+  "titre": "Iris — préparer sa vidéo avec Google Flow",
+  "vignette": "Ta vidéo IA Google",
+  "ecran": "Service › Iris › Kit vidéo **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 71,
+  "slug": "iris-packs-creux-anti-gaspi",
+  "module": "marketing-fidelite",
+  "titre": "Iris — packs « remplir le creux » et anti-gaspi",
+  "vignette": "Remplis ton mardi",
+  "ecran": "Service › Iris › Opportunités **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 72,
+  "slug": "iris-diffuser-partout",
+  "module": "marketing-fidelite",
+  "titre": "Iris — diffuser un visuel partout",
+  "vignette": "1 visuel, 5 canaux",
+  "ecran": "Service › Iris › Mes visuels › Diffuser **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 73,
+  "slug": "iris-mois-propose",
+  "module": "marketing-fidelite",
+  "titre": "Iris — le mois de publications proposé",
+  "vignette": "Ton mois de posts prêt",
+  "ecran": "Service › Iris › Calendrier **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 74,
+  "slug": "menu-enfant-bande-dessinee",
+  "module": "marketing-fidelite",
+  "titre": "Menu enfant — créer une bande dessinée",
+  "vignette": "Une BD à ton nom",
+  "ecran": "Marketing › Menu enfant & jeux › Bande dessinée **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 75,
+  "slug": "menu-enfant-qui-est-ce",
+  "module": "marketing-fidelite",
+  "titre": "Menu enfant — le jeu « Qui est-ce ? » à deux téléphones",
+  "vignette": "Qui est-ce ? à table",
+  "ecran": "Menu enfant & jeux › chevalet Qui est-ce ? **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 76,
+  "slug": "commander-ses-emballages",
+  "module": "marketing-fidelite",
+  "titre": "Commander ses emballages à emporter",
+  "vignette": "Emballages livrés",
+  "ecran": "Supports imprimés & QR › Emballages **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 77,
+  "slug": "couvercle-costume-pizza",
+  "module": "marketing-fidelite",
+  "titre": "Le couvercle costume de boîte à pizza",
+  "vignette": "Ta boîte pizza déguisée",
+  "ecran": "Supports imprimés › Couvercle costume **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 78,
+  "slug": "ma-marque",
+  "module": "configuration",
+  "titre": "Ma marque",
+  "vignette": "Une marque partout",
+  "ecran": "Configuration boutique › Ma marque",
+  "nouvelle": false
+ },
+ {
+  "n": 79,
+  "slug": "documents-pro",
+  "module": "configuration",
+  "titre": "Documents pro",
+  "vignette": "Docs pro en 1 clic",
+  "ecran": "Configuration boutique › Documents pro",
+  "nouvelle": false
+ },
+ {
+  "n": 80,
+  "slug": "application-recettes-tablette",
+  "module": "configuration",
+  "titre": "Application Recettes — appairer une tablette",
+  "vignette": "Tes recettes sur tablette",
+  "ecran": "Configuration boutique › Application Recettes",
+  "nouvelle": false
+ },
+ {
+  "n": 81,
+  "slug": "securite-acces",
+  "module": "configuration",
+  "titre": "Sécurité & accès",
+  "vignette": "Ton logiciel verrouillé",
+  "ecran": "Configuration boutique › Sécurité & accès",
+  "nouvelle": false
+ },
+ {
+  "n": 82,
+  "slug": "reprises-configuration",
+  "module": "configuration",
+  "titre": "Reprises de configuration",
+  "vignette": "2e resto sans ressaisir",
+  "ecran": "Configuration boutique › Reprises de configuration",
+  "nouvelle": false
+ },
+ {
+  "n": 83,
+  "slug": "premiers-pas-18-etapes",
+  "module": "configuration",
+  "titre": "Premiers pas — parcours en 18 étapes",
+  "vignette": "Ton resto prêt en 41 étapes",
+  "ecran": "Configuration › Premiers pas (41 étapes)",
+  "nouvelle": false
+ },
+ {
+  "n": 84,
+  "slug": "facturation-abonnement",
+  "module": "configuration",
+  "titre": "Ses factures FoodEatUp et son adresse de facturation",
+  "vignette": "Tes factures FoodEatUp",
+  "ecran": "Abonnement › Facturation **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 85,
+  "slug": "chef-comprendre-apprendre-agir",
+  "module": "assistant-foodeatup",
+  "titre": "Le Chef — Comprendre / Apprendre / Agir",
+  "vignette": "Le Chef t'explique tout",
+  "ecran": "Bouton du Chef (bas à droite)",
+  "nouvelle": false
+ },
+ {
+  "n": 86,
+  "slug": "mon-profil-assistant",
+  "module": "assistant-foodeatup",
+  "titre": "Mon profil › Assistant",
+  "vignette": "Règle ton assistant",
+  "ecran": "Mon profil › Assistant",
+  "nouvelle": false
+ },
+ {
+  "n": 87,
+  "slug": "mode-ecole-restaurant-fictif",
+  "module": "assistant-foodeatup",
+  "titre": "Le mode école : s'entraîner sur un restaurant fictif",
+  "vignette": "Entraîne-toi sans risque",
+  "ecran": "Configuration boutique › Mode école",
+  "nouvelle": false
+ },
+ {
+  "n": 88,
+  "slug": "jarvis-qr-et-compagnon",
+  "module": "assistant-foodeatup",
+  "titre": "Jarvis — appairer par QR et le garder sur tous les écrans",
+  "vignette": "Jarvis te suit partout",
+  "ecran": "Service › Jarvis — sièges & appairage + Mon espace › Jarvis **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 89,
+  "slug": "chef-reponse-ia-credits",
+  "module": "assistant-foodeatup",
+  "titre": "Le Chef — la réponse de l'IA et les crédits",
+  "vignette": "Le Chef répond pour de vrai",
+  "ecran": "Chef › bouton « Réponse de l'IA » **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 90,
+  "slug": "mode-ecole-missions",
+  "module": "assistant-foodeatup",
+  "titre": "Mode école — les missions et le quiz",
+  "vignette": "Gagne tes missions",
+  "ecran": "Configuration › Mode école **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 91,
+  "slug": "tableau-bord-financier",
+  "module": "comptabilite",
+  "titre": "Tableau de bord financier",
+  "vignette": "Ton resto en 4 chiffres",
+  "ecran": "Finance › Tableau de bord financier",
+  "nouvelle": false
+ },
+ {
+  "n": 92,
+  "slug": "modeles-apparence-factures-devis",
+  "module": "comptabilite",
+  "titre": "Modèles & apparence des factures et devis",
+  "vignette": "50 factures à ton image",
+  "ecran": "Finance › Modèles & apparence",
+  "nouvelle": false
+ },
+ {
+  "n": 93,
+  "slug": "paiement-relance-fiche-client",
+  "module": "comptabilite",
+  "titre": "Paiement en ligne et relance depuis la fiche client",
+  "vignette": "Relance = payé",
+  "ecran": "Clients › fiche › Factures & devis",
+  "nouvelle": false
+ },
+ {
+  "n": 94,
+  "slug": "doc-facturation-detaillee",
+  "module": "comptabilite",
+  "titre": "Facturation : la documentation détaillée",
+  "vignette": "La facturation de A à Z",
+  "ecran": "Finance › Factures et Devis",
+  "nouvelle": false
+ },
+ {
+  "n": 95,
+  "slug": "cycles-thermiques",
+  "module": "haccp",
+  "titre": "Cycles thermiques — refroidissement et remise en température",
+  "vignette": "Refroidir sans risque",
+  "ecran": "Haccp › Cycles thermiques",
+  "nouvelle": false
+ },
+ {
+  "n": 96,
+  "slug": "friteuses-huile",
+  "module": "haccp",
+  "titre": "Friteuses & huile — tests polaires",
+  "vignette": "Ton huile sous contrôle",
+  "ecran": "Haccp › Friteuses & huile",
+  "nouvelle": false
+ },
+ {
+  "n": 97,
+  "slug": "parametres-haccp",
+  "module": "haccp",
+  "titre": "Paramètres HACCP",
+  "vignette": "Ton HACCP réglé",
+  "ecran": "Haccp › Paramètres HACCP",
+  "nouvelle": false
+ },
+ {
+  "n": 98,
+  "slug": "application-haccp-mobile",
+  "module": "haccp",
+  "titre": "L'application HACCP sur téléphone",
+  "vignette": "HACCP dans la poche",
+  "ecran": "Application FoodEatUp HACCP (téléphone) **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 99,
+  "slug": "portions-rupture-automatique",
+  "module": "stockvision-ai",
+  "titre": "Portions — compteur et rupture automatique",
+  "vignette": "Épuisé tout seul",
+  "ecran": "StockVisionAI › Portions",
+  "nouvelle": false
+ },
+ {
+  "n": 100,
+  "slug": "cadencier",
+  "module": "stockvision-ai",
+  "titre": "Cadencier",
+  "vignette": "Commande fournisseur en 2 min",
+  "ecran": "StockVisionAI › Cadencier",
+  "nouvelle": false
+ },
+ {
+  "n": 101,
+  "slug": "variables-paie",
+  "module": "equipe-planning",
+  "titre": "Variables de paie",
+  "vignette": "Paie sans erreur",
+  "ecran": "Equipe › Variables de paie",
+  "nouvelle": false
+ },
+ {
+  "n": 102,
+  "slug": "blog-recettes",
+  "module": "site-web-vitrine",
+  "titre": "Blog & recettes",
+  "vignette": "Ton blog qui attire",
+  "ecran": "Mon Site › Blog & recettes",
+  "nouvelle": false
+ },
+ {
+  "n": 103,
+  "slug": "site-cinematique",
+  "module": "site-web-vitrine",
+  "titre": "Site cinématique",
+  "vignette": "Un site comme un film",
+  "ecran": "Mon Site › Site cinématique",
+  "nouvelle": false
+ },
+ {
+  "n": 104,
+  "slug": "placement-carte-vitrine-site",
+  "module": "site-web-vitrine",
+  "titre": "Placement de la carte — vitrine et site",
+  "vignette": "Mets tes stars en avant",
+  "ecran": "Ma vitrine › Carte & placement",
+  "nouvelle": false
+ },
+ {
+  "n": 105,
+  "slug": "site-themes-ia",
+  "module": "site-web-vitrine",
+  "titre": "Créer un thème de site avec l'IA",
+  "vignette": "Ton thème en 1 phrase",
+  "ecran": "Mon Site › Templates & IA › Mon thème **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 106,
+  "slug": "caroline-transfert-humain",
+  "module": "caroline-ia",
+  "titre": "Transfert vers un humain",
+  "vignette": "Caroline te passe l'appel",
+  "ecran": "Agent IA › Configuration Voix › Transfert",
+  "nouvelle": false
+ },
+ {
+  "n": 107,
+  "slug": "previsions-rh",
+  "module": "predibot",
+  "titre": "Prévisions RH",
+  "vignette": "Le bon staff au bon jour",
+  "ecran": "PrediBot › Prévisions RH",
+  "nouvelle": false
+ },
+ {
+  "n": 108,
+  "slug": "conformite-haccp-ia",
+  "module": "predibot",
+  "titre": "Conformité HACCP IA",
+  "vignette": "L'IA veille ton HACCP",
+  "ecran": "PrediBot › Conformité HACCP IA",
+  "nouvelle": false
+ },
+ {
+  "n": 109,
+  "slug": "documentation-api-foodeatup",
+  "module": "api-developpeurs",
+  "titre": "L'API FoodEatUp : les outils du catalogue courant derrière une seule porte",
+  "vignette": "Une seule porte, tous les outils",
+  "ecran": "Page publique /tutoriels (doc API)",
+  "nouvelle": false
+ },
+ {
+  "n": 110,
+  "slug": "creer-sa-cle-api-foodeatup",
+  "module": "api-developpeurs",
+  "titre": "Créer sa clé API et obtenir un jeton",
+  "vignette": "Ta clé API en 1 minute",
+  "ecran": "Mon profil › API Clients",
+  "nouvelle": false
+ },
+ {
+  "n": 111,
+  "slug": "premier-appel-api-foodeatup",
+  "module": "api-developpeurs",
+  "titre": "Son premier appel : lister et appeler un outil",
+  "vignette": "Ton premier appel API",
+  "ecran": "/tutoriels › Tester ma clé",
+  "nouvelle": false
+ },
+ {
+  "n": 112,
+  "slug": "automatiser-avec-l-api-foodeatup",
+  "module": "api-developpeurs",
+  "titre": "Automatiser son restaurant avec n8n, Make ou un agent IA",
+  "vignette": "Ton resto en pilote auto",
+  "ecran": "n8n ou Claude + clé API",
+  "nouvelle": false
+ },
+ {
+  "n": 113,
+  "slug": "connecter-chatgpt-le-chat-grok",
+  "module": "api-developpeurs",
+  "titre": "Connecter ChatGPT, Le Chat ou Grok à son restaurant",
+  "vignette": "Ton IA préférée branchée",
+  "ecran": "Marketplace de prompts › Connecter un assistant **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 114,
+  "slug": "plugin-claude-foodeatup",
+  "module": "api-developpeurs",
+  "titre": "Installer le plugin FoodEatUp pour Claude",
+  "vignette": "Le plugin Claude",
+  "ecran": "Page publique /plugin-claude **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 115,
+  "slug": "assistant-ia-employe",
+  "module": "api-developpeurs",
+  "titre": "Brancher son assistant IA côté employé",
+  "vignette": "Ton IA, tes droits",
+  "ecran": "Réglages › Intégrations › Assistant IA (adresse employé) **(fiche à créer)**",
+  "nouvelle": true
+ },
+ {
+  "n": 116,
+  "slug": "accueil-siege",
+  "module": "reseau-franchise",
+  "titre": "Accueil siège",
+  "vignette": "Tout ton réseau, 1 écran",
+  "ecran": "Siège › Accueil siège",
+  "nouvelle": false
+ },
+ {
+  "n": 117,
+  "slug": "boutiques-reseau",
+  "module": "reseau-franchise",
+  "titre": "Boutiques",
+  "vignette": "Tes boutiques notées",
+  "ecran": "Siège › Boutiques",
+  "nouvelle": false
+ },
+ {
+  "n": 118,
+  "slug": "comparatif-reseau",
+  "module": "reseau-franchise",
+  "titre": "Comparatif",
+  "vignette": "Qui fait mieux ?",
+  "ecran": "Siège › Comparatif des boutiques",
+  "nouvelle": false
+ },
+ {
+  "n": 119,
+  "slug": "rh-reseau",
+  "module": "reseau-franchise",
+  "titre": "RH du réseau",
+  "vignette": "Le staff de tout le réseau",
+  "ecran": "Siège › RH du réseau",
+  "nouvelle": false
+ },
+ {
+  "n": 120,
+  "slug": "collecte-rh-paie-reseau",
+  "module": "reseau-franchise",
+  "titre": "Collecte RH & paie",
+  "vignette": "La paie du réseau",
+  "ecran": "Siège › Collecte RH & paie",
+  "nouvelle": false
+ },
+ {
+  "n": 121,
+  "slug": "comptabilite-banque-reseau",
+  "module": "reseau-franchise",
+  "titre": "Comptabilité & banque",
+  "vignette": "Compta réseau en ordre",
+  "ecran": "Siège › Comptabilité & banque",
+  "nouvelle": false
+ },
+ {
+  "n": 122,
+  "slug": "kpi-reseau",
+  "module": "reseau-franchise",
+  "titre": "KPI du réseau",
+  "vignette": "Les vrais KPI du réseau",
+  "ecran": "Siège › KPI du réseau",
+  "nouvelle": false
+ },
+ {
+  "n": 123,
+  "slug": "catalogue-central",
+  "module": "reseau-franchise",
+  "titre": "Catalogue central",
+  "vignette": "Une carte pour tout le réseau",
+  "ecran": "Siège › Catalogue central",
+  "nouvelle": false
+ },
+ {
+  "n": 124,
+  "slug": "prix-siege",
+  "module": "reseau-franchise",
+  "titre": "Prix du siège",
+  "vignette": "Les prix du siège",
+  "ecran": "StockVisionAI › Prix du siège",
+  "nouvelle": false
+ },
+ {
+  "n": 125,
+  "slug": "achats-centralises",
+  "module": "reseau-franchise",
+  "titre": "Achats centralisés",
+  "vignette": "Achète groupé, paie moins",
+  "ecran": "Siège › Achats centralisés",
+  "nouvelle": false
+ },
+ {
+  "n": 126,
+  "slug": "configuration-reseau",
+  "module": "reseau-franchise",
+  "titre": "Configuration du réseau",
+  "vignette": "Règle ton réseau",
+  "ecran": "Siège › Configuration du réseau",
+  "nouvelle": false
+ },
+ {
+  "n": 127,
+  "slug": "entites-topologie",
+  "module": "reseau-franchise",
+  "titre": "Entités & topologie",
+  "vignette": "Siège, labo, boutiques",
+  "ecran": "Siège › Entités & topologie",
+  "nouvelle": false
+ },
+ {
+  "n": 128,
+  "slug": "commander-laboratoire",
+  "module": "laboratoire-livraison",
+  "titre": "Commander au laboratoire",
+  "vignette": "Commande au labo",
+  "ecran": "StockVisionAI › Commander au laboratoire",
+  "nouvelle": false
+ },
+ {
+  "n": 129,
+  "slug": "commandes-boutiques-laboratoire",
+  "module": "laboratoire-livraison",
+  "titre": "Commandes des boutiques",
+  "vignette": "Toutes les commandes boutiques",
+  "ecran": "StockVisionAI › Commandes des boutiques",
+  "nouvelle": false
+ },
+ {
+  "n": 130,
+  "slug": "planning-atelier",
+  "module": "laboratoire-livraison",
+  "titre": "Planning d’atelier",
+  "vignette": "Atelier jamais saturé",
+  "ecran": "StockVisionAI › Planning d'atelier",
+  "nouvelle": false
+ },
+ {
+  "n": 131,
+  "slug": "fabrication-jour",
+  "module": "laboratoire-livraison",
+  "titre": "Fabrication du jour",
+  "vignette": "La fabrication du jour",
+  "ecran": "StockVisionAI › Fabrication du jour",
+  "nouvelle": false
+ },
+ {
+  "n": 132,
+  "slug": "stock-finis-rappel-lot",
+  "module": "laboratoire-livraison",
+  "titre": "Stock produits finis & rappel de lot",
+  "vignette": "Rappel de lot en 60 s",
+  "ecran": "StockVisionAI › Stock produits finis & rappel",
+  "nouvelle": false
+ },
+ {
+  "n": 133,
+  "slug": "preparation-colis",
+  "module": "laboratoire-livraison",
+  "titre": "Préparation & colis",
+  "vignette": "Colis sans oubli",
+  "ecran": "StockVisionAI › Préparation & colis",
+  "nouvelle": false
+ },
+ {
+  "n": 134,
+  "slug": "tournees-application-chauffeur",
+  "module": "laboratoire-livraison",
+  "titre": "Tournées de livraison — application chauffeur",
+  "vignette": "L'appli du chauffeur",
+  "ecran": "StockVisionAI › Tournées de livraison",
+  "nouvelle": false
+ },
+ {
+  "n": 135,
+  "slug": "receptions-laboratoire",
+  "module": "laboratoire-livraison",
+  "titre": "Réceptions du laboratoire",
+  "vignette": "Réception en 1 minute",
+  "ecran": "StockVisionAI › Réceptions du laboratoire",
+  "nouvelle": false
+ },
+ {
+  "n": 136,
+  "slug": "hub-laboratoire-siege",
+  "module": "laboratoire-livraison",
+  "titre": "Suivre ses laboratoires depuis le siège",
+  "vignette": "Ton labo vu du siège",
+  "ecran": "Siège › Laboratoires",
+  "nouvelle": false
+ },
+ {
+  "n": 137,
+  "slug": "hub-livraison-siege",
+  "module": "laboratoire-livraison",
+  "titre": "Suivre les livraisons du réseau depuis le siège",
+  "vignette": "Tes livraisons en direct",
+  "ecran": "Siège › Livraison",
+  "nouvelle": false
+ },
+ {
+  "n": 138,
+  "slug": "live-portefeuille-cashless",
+  "module": "foodeatup-live",
+  "titre": "Portefeuille cashless",
+  "vignette": "Zéro cash au bar",
+  "ecran": "Display › FoodEatUp Live",
+  "nouvelle": false
+ },
+ {
+  "n": 139,
+  "slug": "live-qr-paiement",
+  "module": "foodeatup-live",
+  "titre": "QR de paiement",
+  "vignette": "Paie en montrant un QR",
+  "ecran": "Display › FoodEatUp Live",
+  "nouvelle": false
+ },
+ {
+  "n": 140,
+  "slug": "live-recharges",
+  "module": "foodeatup-live",
+  "titre": "Recharges",
+  "vignette": "Recharge en 10 s",
+  "ecran": "Display › FoodEatUp Live",
+  "nouvelle": false
+ },
+ {
+  "n": 141,
+  "slug": "live-bracelets-nfc",
+  "module": "foodeatup-live",
+  "titre": "Bracelets NFC",
+  "vignette": "Bracelet = portefeuille",
+  "ecran": "Display › FoodEatUp Live",
+  "nouvelle": false
+ },
+ {
+  "n": 142,
+  "slug": "live-creer-un-evenement",
+  "module": "foodeatup-live",
+  "titre": "FoodEatUp Live : créer et ouvrir un événement",
+  "vignette": "Ton festival en ligne",
+  "ecran": "Display › FoodEatUp Live",
+  "nouvelle": false
+ },
+ {
+  "n": 143,
+  "slug": "store-trouver-application",
+  "module": "store-foodeatup",
+  "titre": "Trouver une application",
+  "vignette": "Le Store FoodEatUp",
+  "ecran": "Menu profil › Boutiques › Store",
+  "nouvelle": false
+ },
+ {
+  "n": 144,
+  "slug": "store-favoris",
+  "module": "store-foodeatup",
+  "titre": "Favoris",
+  "vignette": "Tes applis favorites",
+  "ecran": "Store › cœur sur une fiche › Mes favoris",
+  "nouvelle": false
+ },
+ {
+  "n": 145,
+  "slug": "store-installer-apk",
+  "module": "store-foodeatup",
+  "titre": "Installer un APK — hors Google Play",
+  "vignette": "Installer un APK",
+  "ecran": "Store › fiche Recettes › Télécharger l'APK (téléphone Android)",
+  "nouvelle": false
+ },
+ {
+  "n": 146,
+  "slug": "trouver-le-restaurant-et-voir-la-carte",
+  "module": "client-restaurant",
+  "titre": "Trouver le restaurant et voir la carte en ligne",
+  "vignette": "La carte avant d'y aller",
+  "ecran": "téléphone, côté client (site public, QR de table, page fidélité)",
+  "nouvelle": false
+ },
+ {
+  "n": 147,
+  "slug": "commander-depuis-le-site-du-restaurant",
+  "module": "client-restaurant",
+  "titre": "Commander depuis le site du restaurant",
+  "vignette": "Commande en ligne",
+  "ecran": "téléphone, côté client (site public, QR de table, page fidélité)",
+  "nouvelle": false
+ },
+ {
+  "n": 148,
+  "slug": "commander-a-table-avec-le-qr-code",
+  "module": "client-restaurant",
+  "titre": "Commander à table avec le QR code",
+  "vignette": "Commande depuis ta table",
+  "ecran": "téléphone, côté client (site public, QR de table, page fidélité)",
+  "nouvelle": false
+ },
+ {
+  "n": 149,
+  "slug": "payer-sa-commande-et-recevoir-son-recu",
+  "module": "client-restaurant",
+  "titre": "Payer sa commande et recevoir son reçu",
+  "vignette": "Paie, reçu par mail",
+  "ecran": "téléphone, côté client (site public, QR de table, page fidélité)",
+  "nouvelle": false
+ },
+ {
+  "n": 150,
+  "slug": "reserver-une-table",
+  "module": "client-restaurant",
+  "titre": "Réserver une table",
+  "vignette": "Réserve ta table",
+  "ecran": "téléphone, côté client (site public, QR de table, page fidélité)",
+  "nouvelle": false
+ },
+ {
+  "n": 151,
+  "slug": "rejoindre-le-programme-de-fidelite",
+  "module": "client-restaurant",
+  "titre": "Rejoindre le programme de fidélité",
+  "vignette": "Rejoins le club",
+  "ecran": "téléphone, côté client (site public, QR de table, page fidélité)",
+  "nouvelle": false
+ },
+ {
+  "n": 152,
+  "slug": "cumuler-ses-points-a-chaque-passage",
+  "module": "client-restaurant",
+  "titre": "Cumuler ses points à chaque passage",
+  "vignette": "Chaque repas rapporte",
+  "ecran": "téléphone, côté client (site public, QR de table, page fidélité)",
+  "nouvelle": false
+ },
+ {
+  "n": 153,
+  "slug": "utiliser-une-recompense-ou-une-offre",
+  "module": "client-restaurant",
+  "titre": "Utiliser une récompense ou une offre",
+  "vignette": "Utilise ta récompense",
+  "ecran": "téléphone, côté client (site public, QR de table, page fidélité)",
+  "nouvelle": false
+ },
+ {
+  "n": 154,
+  "slug": "recevoir-les-offres-du-restaurant",
+  "module": "client-restaurant",
+  "titre": "Recevoir les offres du restaurant sans être submergé",
+  "vignette": "Les offres, sans spam",
+  "ecran": "téléphone, côté client (site public, QR de table, page fidélité)",
+  "nouvelle": false
+ },
+ {
+  "n": 155,
+  "slug": "laisser-un-avis-apres-son-passage",
+  "module": "client-restaurant",
+  "titre": "Laisser un avis après son passage",
+  "vignette": "Ton avis en 20 s",
+  "ecran": "téléphone, côté client (site public, QR de table, page fidélité)",
+  "nouvelle": false
+ },
+ {
+  "n": 156,
+  "slug": "reseau-partenaires-foodeatup",
+  "module": "reseau-partenaires",
+  "titre": "Le réseau de partenaires",
+  "vignette": "Deviens partenaire",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 157,
+  "slug": "journee-type-partenaire-foodeatup",
+  "module": "reseau-partenaires",
+  "titre": "Une journée de partenaire, sur le terrain",
+  "vignette": "Une journée de partenaire",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 158,
+  "slug": "argumentaire-foodeatup-cinq-minutes",
+  "module": "reseau-partenaires",
+  "titre": "L'argumentaire FoodEatUp en cinq minutes",
+  "vignette": "FoodEatUp en 5 minutes",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 159,
+  "slug": "vendre-le-passage-a-l-ia",
+  "module": "reseau-partenaires",
+  "titre": "Vendre le passage à l'IA, pas un logiciel de plus",
+  "vignette": "Vends l'IA, pas un logiciel",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 160,
+  "slug": "compte-rendu-de-mission-partenaire",
+  "module": "reseau-partenaires",
+  "titre": "Rédiger son compte rendu de mission",
+  "vignette": "Ton compte rendu",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 161,
+  "slug": "suivre-ses-ventes-et-commissions",
+  "module": "reseau-partenaires",
+  "titre": "Suivre ses ventes et ses commissions",
+  "vignette": "Tes commissions en direct",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 162,
+  "slug": "remonter-les-retours-terrain",
+  "module": "reseau-partenaires",
+  "titre": "Remonter les retours terrain à",
+  "vignette": "Remonte le terrain",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 163,
+  "slug": "apres-la-mission-suivi-et-fidelisation",
+  "module": "reseau-partenaires",
+  "titre": "Après la mission : suivi, commissions et fidélisation",
+  "vignette": "Après la mission",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 164,
+  "slug": "former-une-brigade-a-l-haccp",
+  "module": "partenaire-formateur",
+  "titre": "Former une brigade à l'HACCP en une heure",
+  "vignette": "HACCP en 1 heure",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 165,
+  "slug": "passer-le-relais-academie",
+  "module": "partenaire-formateur",
+  "titre": "Passer le relais : l'Académie comme support",
+  "vignette": "L'Académie prend le relais",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 166,
+  "slug": "de-la-demonstration-a-la-signature",
+  "module": "partenaire-revendeur",
+  "titre": "Conclure : de la démonstration à la signature",
+  "vignette": "De la démo à la signature",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 167,
+  "slug": "le-point-a-30-jours-avec-le-client",
+  "module": "partenaire-revendeur",
+  "titre": "Le point à 30 jours avec le client",
+  "vignette": "Le point à 30 jours",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 168,
+  "slug": "installer-un-poste-de-caisse-foodeatup",
+  "module": "partenaire-installateur",
+  "titre": "Installer un poste de caisse",
+  "vignette": "Installe une caisse",
+  "ecran": "sur site, matériel réel (caisse, imprimante, TPE)",
+  "nouvelle": false
+ },
+ {
+  "n": 169,
+  "slug": "raccorder-imprimante-tiroir-et-tpe",
+  "module": "partenaire-installateur",
+  "titre": "Raccorder imprimante, tiroir et TPE",
+  "vignette": "Tout branché, tout marche",
+  "ecran": "sur site, matériel réel (caisse, imprimante, TPE)",
+  "nouvelle": false
+ },
+ {
+  "n": 170,
+  "slug": "organiser-sa-prospection-partenaire",
+  "module": "partenaire-apporteur",
+  "titre": "Organiser sa prospection de partenaire",
+  "vignette": "Prospecte malin",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 171,
+  "slug": "qualifier-un-etablissement-en-dix-questions",
+  "module": "partenaire-apporteur",
+  "titre": "Qualifier un établissement en dix questions",
+  "vignette": "10 questions, 1 client",
+  "ecran": "face caméra + diapositives",
+  "nouvelle": false
+ },
+ {
+  "n": 172,
+  "slug": "menu-enfant-dessin-anime",
+  "module": "marketing-fidelite",
+  "titre": "Menu enfant — animer sa BD en dessin animé",
+  "vignette": "Ta BD devient un dessin animé",
+  "ecran": "Marketing › Menu enfant & jeux › Bande dessinée › Animer en vidéo **(fiche à créer)**",
+  "nouvelle": true
+ }
+]

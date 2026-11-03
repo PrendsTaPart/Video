@@ -1,0 +1,895 @@
+{
+ "racine": "1LpWivm0KEPwX5XhNHiw08426NjT6PXHC",
+ "a_tourner": "1OJUwIp4Fgsm-h-dDUwU8pbUWmfkrFmf1",
+ "modules": {
+  "caisse-pos": "1kUQmQgvuxf7L5Y6O7z_zaHl_Qu2WXEta",
+  "kds-cuisine": "1lZ4POWHo2ye4x-aJZ0mPwRUnHaVgo6XA",
+  "reservation-salle": "1qpAYYbfzqfoh5WyNdD1gqmziqTDI8j7S",
+  "ecrans-bornes": "1AwCRJMz-6NVxEm38JV6ho5wjKtOCK5ib",
+  "marketing-fidelite": "1gG_osjJJpAMeM-20wSPEj4TG41OovE6k",
+  "configuration": "17C2VbHPKtzIeSpPnMxRDnvksZwSfIni5",
+  "assistant-foodeatup": "1K9BjyEwzlzF2uQQIC_qTqX5C3gIrHSWF",
+  "comptabilite": "1RIAGadpTAWOrQJwes-ZuLw5r4UGZ9E7z",
+  "haccp": "1A1rwuOK_sySi4u1pHhQcov0zEilu3ld4",
+  "stockvision-ai": "1tlNRsETDZChRJBB8_rwPAwdbrnMovRKH",
+  "equipe-planning": "1XUzSHxLkYPnBQu9QTqiggjIdFpKDaug0",
+  "site-web-vitrine": "1cJGglEFLUoPXTYKvO2-uLYQDZvjqkiHf",
+  "caroline-ia": "1GOVA5IzT-pEpcTyJkAK8iAumW4F3fdBN",
+  "predibot": "1J5dHdbQfcFwGThPTa8QSXRk_EG6VupPG",
+  "api-developpeurs": "1a9G0Yo44lrTEtgGVVAjXjQGMxJbgMVOE",
+  "reseau-franchise": "1k1RLgqkR0vXU1ojJBI0YLivFQElgwjpE",
+  "laboratoire-livraison": "1GVRMzz4TIuJUDox19ijEJM4BePuprFTg",
+  "foodeatup-live": "1tbNho13GK9NjYXkNiAysTaVw6svKbmvb",
+  "store-foodeatup": "1OR-eUclAvpVthmibkGaq5t_OmZsogFKL",
+  "client-restaurant": "1XuwjdEFOINcsJQXmT9GKnGR87sDR3R4K",
+  "reseau-partenaires": "11AXrf6jQiFaQ3MdHuL6QzBSUa8SxWrb1",
+  "partenaire-formateur": "1jA6ULh9YxtBFnGeNOXaFvjGjTFHrGAF_",
+  "partenaire-revendeur": "1u3UY37lk9E3UfXn1XX0i41y8LSEvW5ip",
+  "partenaire-installateur": "1BnkXGw-W--G2UmeY-ULXr1BEsZUveXi7",
+  "partenaire-apporteur": "1juEDEprp67ca4wrhJo76PvsVxdkvOeF6"
+ },
+ "videos": {
+  "ajouter-l-abonnement-caisse": "1kK579ABS02mEOcsygzLC7ByPH6L8PqBv",
+  "acheter-son-materiel-de-caisse": "1ghI_E3B8vP4YUeOloQykPwbOUmru1hJO",
+  "configurer-son-imprimante-de-caisse": "1pq_STcLJO52F3bAaTSB9p_mJRy7MEBzu",
+  "creer-un-poste-de-caisse": "1WEWJmfjY52wWnauvx4YeVKCsLUa2AN1Z",
+  "ajouter-smile-and-pay": "1W_WlXhHMDwZ1rmUsihQUa83a4DTrXkyi",
+  "ajouter-son-tpe": "1vXBxQxwzlikZLuujdkp5WNPEm3uLsx0s",
+  "activer-les-garde-fous-de-caisse": "1CRJKLACrjsZouf73Zo8WatRWR8ADTJ-6",
+  "configurer-ses-produits-en-caisse": "1UC2QVkJURhqPlWu_kjNftXDuxdtyCgl_",
+  "configurer-supplements-et-cuissons": "1rUF98h__t0fe49dN5Mfi-xUU-d42ThaO",
+  "configurer-ses-happy-hours": "1qanKE4llJLUZ1e0zh5BalxE7bpzyc1o0",
+  "ajouter-une-promotion-en-caisse": "18CW9Mt0Me2hn1Ciy1TyRQkCn8WCvrCve",
+  "affecter-un-role-et-un-pin-en-caisse": "1B05sgF52tgDk5NShN2V5V-8hBbGI4_ce",
+  "former-un-employe-mode-ecole": "19ph4JSP0Lvs8s64zYOocnXlqS6EwrEGk",
+  "prendre-une-commande-en-caisse": "1nJ1mvZh4n2IqSJRQiIJQ_ci-JtAFb_YS",
+  "creer-une-note-sans-table": "1GIrz02JLxESh_IeNNGbY22xjbnh72HkZ",
+  "envoyer-une-commande-en-cuisine": "1DLEUU6mPD3geO2mG29IjvbZySHveD10c",
+  "realiser-un-paiement-en-caisse": "14RooWz8WAxyOSNdqOPWUaPI4g4xhyYu5",
+  "encaisser-un-bon-ou-une-carte-cadeau": "1Zj5HdCVbn_Q0yPSL24B96eKVNyiMYpoS",
+  "creer-un-lien-de-paiement": "1uVHz9VNxZ-g8PpQWXJp9ZD5PJwPvuKZg",
+  "realiser-un-avoir": "1p4dyaGYbYgV33YyDlDdZca76JxHVrDxY",
+  "declarer-une-perte": "17aF_Fe1yiMLuWsEGkGQsuOLNJXCIDiox",
+  "voir-son-journal-de-caisse": "1gKYCsGbzn2CDvwIpYRIrQInJZLxam8Ok",
+  "retrouver-ses-documents-fiscaux": "1zhHiZM5sDu-9DfvluBQWyBpF3kV_IHcl",
+  "retrouver-ses-statistiques-de-caisse": "1HjKZDgpRisZtn67TreMk2yXyC5F3F3gk",
+  "rapprochement-comptable-pennylane": "13Rx-umBfAjKzFSesBdcPK7KM5jD4pK-y",
+  "rapprochement-bancaire-qonto": "1vT3GpxHOWVw9EN5rQqAKsJcd_11q-bBs",
+  "telecharger-sa-compta": "1J7Dx8tzea2-4MxsQPyGEtG-sLb9H9Vq7",
+  "multi-caisse-z-consolide": "16EEHaKzEZ6vSb1Sq36ntts-rup9ESuRd",
+  "repas-personnel-pertes": "1cFBXvXnR3bxawFerTwOm9QOkhqbdosAt",
+  "note-frais": "128TWBXTBPWcCGfqfHB18gYvK9WoxeT1-",
+  "rapprocher-paiement-tpe-sans-reponse": "1bTS4bC5oKnM5AdEbJnLprqmP0nNTttoB",
+  "caisse-pastille-arrivees": "1kSrs3iBFSCimkScrrTI4aimZqwH-GCl_",
+  "caisse-formules-et-note-en-attente": "1te1tSb4oZx0RZb5IxXYKC26MqPZB19HZ",
+  "caisse-pourboire-convive-et-avec-ca": "1mi3aHKkPiPSV-tM0-Xxpog_kv5rLK3Ry",
+  "caisse-mode-par-defaut": "1K9kx1cThynP9VPDMYxDtcDdcTTTTgjnf",
+  "caisse-a-encaisser-borne": "1Tr5T_F6TR6PgNh4C0bexvkzug-kHI1v9",
+  "caisse-notes-a-rapprocher": "1GOTKF-RErqckZnMKq3x7NBPzJAMb16dE",
+  "application-caisse-mobile": "1OSHR4Nn4Gl6u78nyaKD7d6pZMXqYvMuo",
+  "application-kds-tablette": "1I4e-Ubg2JDgUmg03J7fc0aO-xUWiH2aJ",
+  "rythme-du-service-kds": "1NB6aBQfAeA881Ag6OKxMdd2XKS1Lw8YG",
+  "acompte-empreinte-bancaire": "1bTz5ouVJbORPEcTaR6IpgJswM-yzLZYX",
+  "rappel-sms-veille": "1KgfuFbPRjqRE9L962oMXJdS_eWjV0csh",
+  "liste-attente-en-ligne": "1kSD9ThFvTaDCxAeZE7VrpSsFOY1fhKXi",
+  "reservation-sur-autre-site": "16ao4g0rI5raqNvbB0dVzzT_QTTiG8rPb",
+  "bouton-reserver-google": "1ih4ZVTlOGWGlI9AVEHE3ubtfb7gtMbjO",
+  "offres-creneau": "1C_TdG1XUYm-1KHmFIy-yprEkYV5mmFEh",
+  "evenements-privatisations": "1fYCNWi0UjGKq3xSmEthBNiEowGpwTtif",
+  "billets-pdf-qr-scan": "1f34PszBF41NtJO-XF6tU10n5-2ZHQR1Z",
+  "billets-modeles": "1nO2oqSZuamnzpj0QL0LG56bGbdE_OaXI",
+  "module-reservation-modeles": "1pmHcSaoZdw-kHzhgEpyN5axUkBi054zR",
+  "ecrans-affichage": "1sBfP6EtSwD8ntkXSB02upUAJkjQKfuKo",
+  "regie-publicitaire": "1zK0ZkPkjz9RuU1V59YHyfdWIVeS3gaZk",
+  "supervision-ecrans": "1KhpsxhaB51S1WR7dQVhe73-q9D5nUsB6",
+  "bornes-tablettes": "1EUEWajvuVAO4bgM61gOdSCZBT5xrFs-p",
+  "menu-digital-qr-table": "1dU_bADfu0owfxuzsWcIQF3kxWRzGt7fW",
+  "application-menu-digital-tablette": "12HCvLrZLcntlN0pRa6zq4v2DHSfZDwQr",
+  "jeux-de-table-tablette": "17VgrkcTu_hwlZ2IKj_2u3OM4ujy7sDPa",
+  "newsletters-emails": "1-1di4rgV45bggq2DA6i_EJxjDYlCvCAj",
+  "supports-imprimes-qr": "1FI3PXMX9pdAlK16UbO_CGoCTgXUM_2j9",
+  "menu-enfant-jeux": "1MWofJn8zfB_veEcRwgKBgXujLtwudoaz",
+  "iris-creer-post": "1hvRukrgtOqJtAtotVCYK9gYqkSf51t9m",
+  "iris-roi": "16r-bsc7VgcK6r2_legT0_kj5wUOHK_xe",
+  "supports-marketing-reseaux-sociaux": "18o5u_YlKfPvJuCkffKpm2nxSqN3xYMDg",
+  "application-fidelite-comptoir": "18I4e-mSzEO04Ndw65HR-xzzOfPAmBhYr",
+  "jeux-fidelite-six-jeux": "1Pitho17-np8H_8U7b8tYaUnz9G5vey8Q",
+  "codes-promo-du-restaurant": "1t9b00FbZ_2TgYdZEh9VUk7CImdniStHO",
+  "emails-automatisations-par-etapes": "1a4PigyaMull2eWazKfHJ_RhV9EJcM-tT",
+  "fiche-client-360": "1qA8OuADcJgRltfDFeQ16KToIUqS0Q5aI",
+  "iris-monter-une-video": "1Esc9gRHd2Uu991Mr0GuIZggfIVSPpGNi",
+  "iris-kit-video-google": "1KhIH0R7_Rjra2AzzFiFwMubMsnPdxc2G",
+  "iris-packs-creux-anti-gaspi": "1YteOjJT7MM_VCOoF7g88C-nRAhw4rf9F",
+  "iris-diffuser-partout": "1cxWKaB0232foOLzWE9E1d9iT6ltOOjiy",
+  "iris-mois-propose": "1byTZTr0jcNne9UjoZnip3wuAq7LYMoXZ",
+  "menu-enfant-bande-dessinee": "1AiK6rGBiTFhD-LEpJfRBoQBzhKL23Gag",
+  "menu-enfant-qui-est-ce": "1R3-tKJQ2NsWcxRHp_lsZN4qkbsJeA-nq",
+  "commander-ses-emballages": "1MTYk0dAaIvSSNfxrAoyKAv2Ap7NnGEES",
+  "couvercle-costume-pizza": "1UFsam2b4YtXq1FsqfPsR4Zgv7nQWZlVP",
+  "ma-marque": "1oQnBrmwAexismkr1Mrr8a5F_Wb7r5RMX",
+  "documents-pro": "1Tr4V2U7De-Fb3ZlNxw1w8IdSlJYGufJ7",
+  "application-recettes-tablette": "1l1yPzS2okiYXLHvNoXQj8ngfcsNjtTP3",
+  "securite-acces": "1mN32qgD1nz6otoDLuynq5GxA7BFe9NUY",
+  "reprises-configuration": "1e5Ie2fs4-Yxy7zVLZY68Z_9TchSmsh59",
+  "premiers-pas-18-etapes": "106GKldvkIgD_oF5zsqpgVtBx7wthujyV",
+  "facturation-abonnement": "1aiYRpHv9D5sU57-X_vT0GHTE1qsrOq7S",
+  "chef-comprendre-apprendre-agir": "1abv4RrdH8B37EB9f4ByizBEYkq6b2cuz",
+  "mon-profil-assistant": "13ovuG6gdvGggVVjOtMThypgkGQecmmHm",
+  "mode-ecole-restaurant-fictif": "1rDLNjuU4vOMxs2i6Nspl5N3ZoKN7nSfO",
+  "jarvis-qr-et-compagnon": "1F_mEAF5dFlWdQf9aSZf3XQywKvugvaw1",
+  "chef-reponse-ia-credits": "1Wb1HiDjEjTfdeC2PxjchZSkenZfibyaw",
+  "mode-ecole-missions": "1CJRWFaejyodjPjl0vIvKbrkzLUEVR2DP",
+  "tableau-bord-financier": "1gV2Z9Izh0Q8NR1LedcFEBlACNDE4KIj6",
+  "modeles-apparence-factures-devis": "1HEQuaixuZ4cJWUe44roXurz0QMq_Gu_i",
+  "paiement-relance-fiche-client": "1ALDugohCbflCEfxKxHopmd09ar1vlq-w",
+  "doc-facturation-detaillee": "1Ntus7m7p0lX4rSclIUbXLTyGXNhDg_V9",
+  "cycles-thermiques": "1ZCC1E8V3c6akzKnSDa_IiYh_fgwd3S-v",
+  "friteuses-huile": "16zpJerIvFL27FuDlx1UaQpSAv5BJZqa-",
+  "parametres-haccp": "1Lb4yg7NHq2AahvZ-J0x1GWTkRHHk-pg6",
+  "application-haccp-mobile": "1YKtzACFXcUVq7sy2QxpriIRzavSvYr69",
+  "portions-rupture-automatique": "1_gkVQ4aEi0oAU9QF32PuurMH0dc-Uasj",
+  "cadencier": "1qp8pc7gvREEKE3Ra6afQMK0jAPx7vxW7",
+  "variables-paie": "1kAYxoNzKY0fzCJGvVwLsSs4B1EZnI3cO",
+  "blog-recettes": "1xv62mRpasVv_Roopkzlt0sUDibNHxlLK",
+  "site-cinematique": "1b3bLhhN5Ff8LZP8JnyZd9JQbBKfdSTkv",
+  "placement-carte-vitrine-site": "1mN7kPdlZzd8inEVb2HVyB_tyjmR6YinF",
+  "site-themes-ia": "1nT6fomgBgSKRihM5-pyKmHc84BfDcXdL",
+  "caroline-transfert-humain": "1Nv-3oPlYzde4MBnOlM7FTgQWwv3B6Rzj",
+  "previsions-rh": "1ffoZ0yvD1IzuAE977FGt5TwTGx9Gg8VL",
+  "conformite-haccp-ia": "1GQ5iL82nm-vtYnTh3TXGpE1Qf77n-EAu",
+  "documentation-api-foodeatup": "10c9KoldwQpGjTWasfvjVEqiJSuagZ025",
+  "creer-sa-cle-api-foodeatup": "1titmMXqSd87l0ClcTtJg_Ts1iKOPP9Eo",
+  "premier-appel-api-foodeatup": "1c2Pji03eIHdwfP44F6ScigfQC8B2W9gd",
+  "automatiser-avec-l-api-foodeatup": "1bVKm05NaZgY8jd3mDPUd6TLNe81G7pxP",
+  "connecter-chatgpt-le-chat-grok": "1ktsRC9bWavCgjiMabMen1thZ27Tn5Jnx",
+  "plugin-claude-foodeatup": "1LHxy8Yk9hCpYh1i6RugOEGuJaJOj7ClX",
+  "assistant-ia-employe": "1G5orkPG7A361G9Usq3417XCNRV5RPHdV",
+  "accueil-siege": "1Cp71HyyNTECfHR98iURNyuPzkUNHTlw7",
+  "boutiques-reseau": "1h4OuFEzyi7Ot50UGNemN2lEsaDTbNz0D",
+  "comparatif-reseau": "1KQWELQZ7oLkCxGvqCNTMth8fvQG9XdtT",
+  "rh-reseau": "1bLXuWfc2qoma-AJNZZOKcbN1ChW9GSm-",
+  "collecte-rh-paie-reseau": "10YH6YUGF456xgu7AAqH-NuObR6UWsayS",
+  "comptabilite-banque-reseau": "1uQ1ct2yaXZwDmVTn8fjMXvehRL7ct0K_",
+  "kpi-reseau": "165tumlGH0FbLIk312aTJG3pb8V7PpAcR",
+  "catalogue-central": "1Ik1nxEUTq9KqTpGZMBUU4jPE04rmeKpX",
+  "prix-siege": "1TFP_vVNCiF5HDf_fw5j_vJqFSw675nBJ",
+  "achats-centralises": "1pGmitcTpVzCZoS3_9EyATUg_2H2HsAo9",
+  "configuration-reseau": "1GWxFFOH6EeMc696W8RqIXgsK1VVtH731",
+  "entites-topologie": "1oV_gF3PRAq4h_EC32Wjh0xOy6NjwAg0x",
+  "commander-laboratoire": "1PqjirRn0GhD--EuRuq876vXAKZzvx_HP",
+  "commandes-boutiques-laboratoire": "1pTUuPaaYDQ0fulqiG1VsG5oDht3gGr77",
+  "planning-atelier": "1AiBPolHLReajVwLhIa-8Wzf_0ifKInL9",
+  "fabrication-jour": "1S5Ys7UW2xfe339KQkn-mMXfwVNLG5zYS",
+  "stock-finis-rappel-lot": "1X-ZHfXsVcTuVsWC5ylv0YurQoQI37GlG",
+  "preparation-colis": "1eyIOX3dqh9-XvntoOFq_gyhHx0spB9pH",
+  "tournees-application-chauffeur": "1G_LEiVNOal9bJ3Yk_3t9oQVTmLppB90e",
+  "receptions-laboratoire": "1VwatABWNXyOhctXAUBIgZgjkD1OOJnVN",
+  "hub-laboratoire-siege": "1q57LAPrNv4dYn00uDwGUe1ahTRepdg-M",
+  "hub-livraison-siege": "1nghIX80rsXmLiNY-fCmOHwTVN1NLzN4M",
+  "live-portefeuille-cashless": "1pAy5DllBdmhhG43HFZLi_JVkPZHHRhoA",
+  "live-qr-paiement": "1sgxAbQNzeTXTfenjpF1RCiDlCOkxUf9D",
+  "live-recharges": "1d_IPge-KDWl2jf-EE5CI2vpfOkrg7Aqm",
+  "live-bracelets-nfc": "1Ez0STw2cfBa_g6lB19iGLVXGeORcqBjK",
+  "live-creer-un-evenement": "1uYjfSOJXZ_jWp2cnnp_SvNXHv-uc1ypQ",
+  "store-trouver-application": "1Ibi-C18jElN0aFTH5VSCWKav36ubsJVt",
+  "store-favoris": "1rKjcUZfTTys_Eg8NH1WNRK0gZO2G1Nv8",
+  "store-installer-apk": "1bnNpEmPrzMkcX1b7b-Amvbg1OJAgCGVB",
+  "trouver-le-restaurant-et-voir-la-carte": "17_a3hqF73Ormq2prPDuLh8nh52YsinbC",
+  "commander-depuis-le-site-du-restaurant": "1LRegeHRlaBZjtU0Uxo1Qz1zW4wtm1tDh",
+  "commander-a-table-avec-le-qr-code": "1tglK0_HkwAbmcqKo4w7C2kgb65A_40jo",
+  "payer-sa-commande-et-recevoir-son-recu": "1iIkm9tkAkVABYFYa6NxHF15ksWh3tPYV",
+  "reserver-une-table": "1yJ6wPTSEK6SJ1iw_mTDyygyhuq_YES_q",
+  "rejoindre-le-programme-de-fidelite": "1vR189fZ4gIhGNJw22FGk-R9ADIJojQOV",
+  "cumuler-ses-points-a-chaque-passage": "1LJvlqT-d4GahXgGaYg_XffCl1aP30L-A",
+  "utiliser-une-recompense-ou-une-offre": "1E4XApsN1-OYAw0nEe-SXLqAoYrGPm_Rl",
+  "recevoir-les-offres-du-restaurant": "1BkoX2ICOiwXdvH9Gm4SPw2RhHLXU3DcI",
+  "laisser-un-avis-apres-son-passage": "1UU45pLkyppOKuvuhkN8YQeuFCgqOWCGC",
+  "reseau-partenaires-foodeatup": "1Qq1h6Cjd5Qn64vuIceTbfVdCS4II4Sr7",
+  "journee-type-partenaire-foodeatup": "1WQLfX_MUlyDsMOGX6NVLaykm7CRV_15m",
+  "argumentaire-foodeatup-cinq-minutes": "1JB81gPtuxEcx83sS_Gm9eo9kf7Y9taTj",
+  "vendre-le-passage-a-l-ia": "1sTZVMvqLlnVP64hDHKvobQP-rcDyem5b",
+  "compte-rendu-de-mission-partenaire": "1fx0U8COtOPDiXxNOwAyDrVdXH5HRD-X4",
+  "suivre-ses-ventes-et-commissions": "1f9kt42s9hbdISBcKrywQvO8DuhTgxe9N",
+  "remonter-les-retours-terrain": "1Wzi8Ti2-cfYwfQ0LrLzt8mnIgcWgtAyE",
+  "apres-la-mission-suivi-et-fidelisation": "11FG44jeR3KYam2ULQbHU0orP_8nO3fWd",
+  "former-une-brigade-a-l-haccp": "11cmnbYVePZ-AgpjL6hlsvYD63f8sSj3a",
+  "passer-le-relais-academie": "1SEpSF7Vrb8-8H1_9mCBzwTq_udVYcwK4",
+  "de-la-demonstration-a-la-signature": "1BJN-XmPl6Mo9KmnWdn-snYfl-cngX-E1",
+  "le-point-a-30-jours-avec-le-client": "1XvcN2rU6IJgUw2ie8vI2CRTRSSR7uJAe",
+  "installer-un-poste-de-caisse-foodeatup": "1WY85g-8VfKde1goEQloftQnL4WCCQry7",
+  "raccorder-imprimante-tiroir-et-tpe": "1Vo8KPYLujZtrjDU5ECYeGoNwekpnKKTW",
+  "organiser-sa-prospection-partenaire": "1dI-XV2YK5K1rV5KvRSAGrbx4AvtVLBQ2",
+  "qualifier-un-etablissement-en-dix-questions": "1piDNmvWnV5Z5Nkn0gBHji5rJc8xmFtGM",
+  "menu-enfant-dessin-anime": "1tDDVcly77Xx6A2zUJZZs42GcAwGfhZw2"
+ },
+ "sous_dossiers": {
+  "ajouter-l-abonnement-caisse": {
+   "vignette": "1nHS2JAJOi7L6Cklll6sc6nvfvGrqpxSe",
+   "rushes": "1DU76lz0ImJ-WqawN6YWk47YDRcaKUlpq"
+  },
+  "acheter-son-materiel-de-caisse": {
+   "vignette": "1hN2bzA1_oQRK7vVDI0zfcAMcxd9lz6pk",
+   "rushes": "1WzIGcBsoNHA8jcWgh_ZICY3hnNjQb36c"
+  },
+  "configurer-son-imprimante-de-caisse": {
+   "vignette": "1Wc3N0vNTz2-sM9p_RTwUUQ6OD7mBPRq1",
+   "rushes": "1HiK4TTJX0UA1InGXn3uQdHA2dhqlfgpb"
+  },
+  "creer-un-poste-de-caisse": {
+   "vignette": "1SqBTub9SuNZnkD0JIbfEOy4OaZHErPyk",
+   "rushes": "1PQV8-pObpcKep9Kx9JemecAx5k_Y6Pm1"
+  },
+  "ajouter-smile-and-pay": {
+   "vignette": "1P8LiBu-aXJd8wHII0v8MOviNAha8WiKM",
+   "rushes": "1Auq80OSEM9ky_XZ7UbmQhfhPwlXZ4_aR"
+  },
+  "ajouter-son-tpe": {
+   "vignette": "1kI3P20vfP1wGvG0B_e17byjzcr2zx89h",
+   "rushes": "1Xn7WjshuXzmAeEsfG9aDVLkC2M4fJjBP"
+  },
+  "activer-les-garde-fous-de-caisse": {
+   "vignette": "1zKYt7MftF0H2SPjlPWh089sLYwLKouSt",
+   "rushes": "1V1IegTDIU-AjX0BzDbgCyrpLGteOXCji"
+  },
+  "configurer-ses-produits-en-caisse": {
+   "vignette": "1LF9Ta0sWNV0Uc1DvgC4Bb0hJ-xM3xD9d",
+   "rushes": "10gHN9D1vZDofrgLBiAZdspF9APzjMBFU"
+  },
+  "configurer-supplements-et-cuissons": {
+   "vignette": "1WWdXimiMtj30U2FfVQG3q46rPL_9ac7F",
+   "rushes": "1xCmEBOA_XO2QTsNI0PmXNuowoFb_dpF7"
+  },
+  "configurer-ses-happy-hours": {
+   "vignette": "1VuFEknd4w01nlyx-yFHS4V4uhDsfTUm7",
+   "rushes": "1sNUOjd9mUUOSgmwrTrMTCvomOis8TxGy"
+  },
+  "ajouter-une-promotion-en-caisse": {
+   "vignette": "1kEv12WfDs-XOM3ABVZeYDN4U7YBecslA",
+   "rushes": "1sYJOU8DJRsH-1M8cRHHTIt75AoOwb2OI"
+  },
+  "affecter-un-role-et-un-pin-en-caisse": {
+   "vignette": "12wn4KZshkfRen38eEypenT9tSu8Ut4Af",
+   "rushes": "1dbydeVfZ-6FngMUCiNh2jcrBStsfQh4E"
+  },
+  "former-un-employe-mode-ecole": {
+   "vignette": "168Q03c3k7TlbspGzoAAYhV8-iO-aOgux",
+   "rushes": "1x5QgyxHYDkLK0AvXLCgqX3V0e4vdi0G2"
+  },
+  "prendre-une-commande-en-caisse": {
+   "vignette": "1_amAzfISM-_Vr49q_UqfMmplFNat9C3R",
+   "rushes": "1z8MPqjZsHa4rM5vUHNKAn7wEsjn8Cqhf"
+  },
+  "creer-une-note-sans-table": {
+   "vignette": "1uJhvbT0D0IoeJU3iC0HpZfrNuVK127u8",
+   "rushes": "1JNIcTYcgUfZ3YvRLQ9Wwk2puwfOMBRHA"
+  },
+  "envoyer-une-commande-en-cuisine": {
+   "vignette": "1FOmcLhWky6cVU3uodhhB_gmL9zkPs97i",
+   "rushes": "1eP7djrqPTf_TV4Ou14bg7e33CDhcvueo"
+  },
+  "realiser-un-paiement-en-caisse": {
+   "vignette": "1Y56S863qronVKObr7qZz8e93Zp7JEvZq",
+   "rushes": "1qXTRliUAuOZtBtYx14fKaHIHnrnJA1yP"
+  },
+  "encaisser-un-bon-ou-une-carte-cadeau": {
+   "vignette": "1jcW4CZ-nNAzaWf4vsiHC-Xqr3ihl1gEu",
+   "rushes": "1AmFTa_FC5XosIBvlhALw-WcqWCrjMBuB"
+  },
+  "creer-un-lien-de-paiement": {
+   "vignette": "11fCtJ-2FFheuzrgdIMiC9WKaDC_Hm3Gz",
+   "rushes": "1Pg1vlhew5RaCF2Ds-QWuMeinE7x9p_Ep"
+  },
+  "realiser-un-avoir": {
+   "vignette": "1k7lRC76UuoVqx1NUg60YpqRUVfkXFAvH",
+   "rushes": "1djwiP1WE9YJPnHOpBIaGXGGizSkseIUo"
+  },
+  "declarer-une-perte": {
+   "vignette": "1RA8Pg-Mcc2Xs3EahO7HjJmf6jeabjOeJ",
+   "rushes": "1wso0yxf3WnDJ1E_JTFqE3zsJtKRtV4QS"
+  },
+  "voir-son-journal-de-caisse": {
+   "vignette": "1xFJluHa-Weqc_xU0Kdb6rlSuOUg-Gk6H",
+   "rushes": "1c20TnNQJs8WHRPdNk1GQ0kaDTRpL45ts"
+  },
+  "retrouver-ses-documents-fiscaux": {
+   "vignette": "1Sk1y96Nz8FGLKj5uroIy1QD57f7QkoPc",
+   "rushes": "12jFuG3MqibpNa04HaXdC2VglwflCiL35"
+  },
+  "retrouver-ses-statistiques-de-caisse": {
+   "vignette": "1ZPcooVZTXYvQ9JcK_6UC2U1ToJu3HwF-",
+   "rushes": "1WIBlF6uh8PmWnu-sh19oLJ1UBOcVdxl9"
+  },
+  "rapprochement-comptable-pennylane": {
+   "vignette": "1lFGjFF252pdCz6bP6cNsziskCeSYcWm4",
+   "rushes": "1yespcrD363k0vfZr0XZ-Ant48nOMjMON"
+  },
+  "rapprochement-bancaire-qonto": {
+   "vignette": "1N7hjrgc-ZTY8wSQ-he-Jy-LZWNay29ij",
+   "rushes": "1lNb099vHQjvW_kdNgFnprK_lpmuMrfNA"
+  },
+  "telecharger-sa-compta": {
+   "vignette": "1i8FifNuvj5nGHzJsW9xjuDrDmFg74PBW",
+   "rushes": "1D-E3tRMxX7Yg0Hd8hFUVHfCg8DgAs_Ay"
+  },
+  "multi-caisse-z-consolide": {
+   "vignette": "1YL8KjV84tpW0779rGpUW_lHKQ7XWXoNs",
+   "rushes": "17tN-Ysc2FC9KdeA7pruCYUlg9LdI8F5-"
+  },
+  "repas-personnel-pertes": {
+   "vignette": "1JffAsqJnc2he9poz9ouZTVs_37dWv5YR",
+   "rushes": "1c9zFxC_u5oiXokGXl9Nzacf4BUmfvuua"
+  },
+  "note-frais": {
+   "vignette": "1vYxCEqKwWWdgrG-gAs3O3Nh5G8HkmWAU",
+   "rushes": "18PP391FK9LRE2Ie2RYWH6Wp9_mnlZWm7"
+  },
+  "rapprocher-paiement-tpe-sans-reponse": {
+   "vignette": "1xmB36A9Di-M2SBcMzArT2tmCACDg6xzW",
+   "rushes": "1v22E0dJeTOTyoluGnTVFqmL-ViU7xlYA"
+  },
+  "caisse-pastille-arrivees": {
+   "vignette": "17VbWx5cJyaFrPhA_DxhtGLSD5zY3bdiC",
+   "rushes": "1BBk6hCVjwrN9DEh41Ng5lMxuTyz4eFZb"
+  },
+  "caisse-formules-et-note-en-attente": {
+   "vignette": "1kHhul1UdLjYulfInbWEdtPF8Oe1Cgm0-",
+   "rushes": "1jdYIQ1nwf9vrop3cLgJseDIIi27Oi3gg"
+  },
+  "caisse-pourboire-convive-et-avec-ca": {
+   "vignette": "1YzsIx01QWLFZCKapx0x1R0GISpT0HHF7",
+   "rushes": "1rmbimTqbgJ6A8rl1rbjs-OzMT_sqCkpf"
+  },
+  "caisse-mode-par-defaut": {
+   "vignette": "1mLfgneppJQsHr2GlYJi9uRL5xx8frFmH",
+   "rushes": "1ofx6rrXVPHevzYgU1eqpfEk-_3JjS_NJ"
+  },
+  "caisse-a-encaisser-borne": {
+   "vignette": "1I_vi1o4dcM8g5H7M-NqOOEjFVHp5uCVJ",
+   "rushes": "1-8pEhBIzOV_gdWmOv6kYZfSlVqe7eb_x"
+  },
+  "caisse-notes-a-rapprocher": {
+   "vignette": "1O5jFfEG4wZfRkR9JWBnNokhs0kC17_sU",
+   "rushes": "1o0K5SLgamrbRFfDc3Vu1nDqTVxJgBYBh"
+  },
+  "application-caisse-mobile": {
+   "vignette": "11muc8ha3PJiIHfIcM8V92Dj4fs_p1G2k",
+   "rushes": "1eIRFv5qAhA8f92-KGIM88FMICIdZjyYb"
+  },
+  "application-kds-tablette": {
+   "vignette": "1V-HO-3sXXygvHVCHqm-_ThZjw65PukIJ",
+   "rushes": "1lzN46lYvoNOa5iy9s4DV3NtlGWV0UWFF"
+  },
+  "rythme-du-service-kds": {
+   "vignette": "17Itq-ZqfFzwskj637x-hVMmVdLSS7K_D",
+   "rushes": "1IJZmizU4L6eI8iKcOwbAzUH5dOIvylfV"
+  },
+  "acompte-empreinte-bancaire": {
+   "vignette": "1mJLjPtbhdYLeRfSCR2qmxlIeUlTQ-4Ac",
+   "rushes": "1bDlRZVdUHXvXNkF2gi6Rzs4E8rfya-Vc"
+  },
+  "rappel-sms-veille": {
+   "vignette": "1ZvDESq0gZIlFyFaijy7cljg0h0v4O3ay",
+   "rushes": "10Vq1l8Isv8OWq9QFHBggRgO509efEXZ5"
+  },
+  "liste-attente-en-ligne": {
+   "vignette": "14-i6THCwvz4IrKhHFzVLC9DwOP0grALW",
+   "rushes": "1OsDPUPTz5ENT8UHQIQCba97AeG4XsgDr"
+  },
+  "reservation-sur-autre-site": {
+   "vignette": "1IFuPVvW98pqWAA0bSqjxqKliWNWi-zQe",
+   "rushes": "1InvM5__IjnkYV7lnKmlExGTVkkslTsOG"
+  },
+  "bouton-reserver-google": {
+   "vignette": "15KIIlqD0G05MkKO713pMf7iFmhQZw1WC",
+   "rushes": "1Fb7jagEKa8JAB26jWWMX6IM_Rh_oChqf"
+  },
+  "offres-creneau": {
+   "vignette": "1TEi8vHbOyFdwDse8n6MoSXJLbiCQf4jL",
+   "rushes": "1eTJkMK4bZZuElNAofgxC9-xw-pMjYknX"
+  },
+  "evenements-privatisations": {
+   "vignette": "1Nn7-SDhJuLcmCWEbcH3lisEyRtFyWnq_",
+   "rushes": "14fRInqKf85FeMfKUyHQIU1Tqih_N0HkZ"
+  },
+  "billets-pdf-qr-scan": {
+   "vignette": "1G4vtJTGP6y7ue04xitvupLmoNyNdeGAJ",
+   "rushes": "1a8YOyR9xjjez2UZ9-4AlfIEidN27K-4R"
+  },
+  "billets-modeles": {
+   "vignette": "1rxdiYnamzl5skaIyVdAhjvKZ77-Wrhde",
+   "rushes": "1axSBBrVk2pZzPEPyH1Nmyru3kykx58yc"
+  },
+  "module-reservation-modeles": {
+   "vignette": "1Uw0DN4jTK3Fog6K-ESZy9XXZghWBZxeH",
+   "rushes": "1V_qNGTPyecuHi8XIUtm48n01ZM3peZyq"
+  },
+  "ecrans-affichage": {
+   "vignette": "1c1RtMOsgYrUuDlE8t5QY61NnYyGNi7KD",
+   "rushes": "1vDsLejb2dAT8IsEYNyOReXDKsUF2AWWj"
+  },
+  "regie-publicitaire": {
+   "vignette": "1eCog8r4qsyjUtvQZLXAKs_JE7CF_cOwS",
+   "rushes": "1uRCP5SFHm7Kg3sMe83qsGsvTcm3bkJER"
+  },
+  "supervision-ecrans": {
+   "vignette": "13L_PN4uEef-Wr6JSgL-u0Gy3mHkcVGce",
+   "rushes": "1XmgHcl5MVV9K3tQCorPxtGgupnPfvvu3"
+  },
+  "bornes-tablettes": {
+   "vignette": "1cZhQjl59Q_SfSSfsE1yJKyWArv6YWO5r",
+   "rushes": "1_IYle45sruosDhuCdJ0mwrfF1wiUkH1A"
+  },
+  "menu-digital-qr-table": {
+   "vignette": "19FDuEtTW4U9ilW9UAaKW_rhZtRDPH2QF",
+   "rushes": "1iPtVsQdXpQy6tJ0lfIVf7I4DI-za8iM3"
+  },
+  "application-menu-digital-tablette": {
+   "vignette": "17-OOSJ_qHtn9_aS6BvyZv_EfGn45DIU4",
+   "rushes": "1lj1Wnl0KaU6foAeCs0m_GFF6ElHiF-dN"
+  },
+  "jeux-de-table-tablette": {
+   "vignette": "1DSdtPXLnjk-BA0_xpJsZgFwPSsweafe_",
+   "rushes": "1LbJvPUwTTMIiXaNmPYLQmhWRM55HuW7C"
+  },
+  "newsletters-emails": {
+   "vignette": "1tBbU7gcx8t8YWTV0OGT3AatJYlKeNOtN",
+   "rushes": "1y3wL6y1ZeD1RwJbd7Y05oCle_YK760Jx"
+  },
+  "supports-imprimes-qr": {
+   "vignette": "17cjiqjQFooMMQmgvBj6ahWQo4aZXhR4u",
+   "rushes": "19ukJfmFpBInaEvtjEUq9zwEGeGOYXX3j"
+  },
+  "menu-enfant-jeux": {
+   "vignette": "1tlRxmD2YSr-FCcmjtLHoln9EOuCLpbtf",
+   "rushes": "1LqNySJbONDmpSkni_TWjtkfXkRG1QO_E"
+  },
+  "iris-creer-post": {
+   "vignette": "1wZVwIW6reYxbvTChBLc4AZrwZUNXyka_",
+   "rushes": "1lxcixuyh0KplmkZtvvVL89W4k2GbFSkp"
+  },
+  "iris-roi": {
+   "vignette": "1UChGG0EEfjU6-Frv7VOGDGA4Cpj9zJoO",
+   "rushes": "1hQGzQsas2YDLQRqspZXooVFGVw4gpW3k"
+  },
+  "supports-marketing-reseaux-sociaux": {
+   "vignette": "10_bgGqIx5Xrq2NiMGZBgR0HJOsMPiBH_",
+   "rushes": "1mxjiUpIfsJARZ6KgkBlrS07f9WlXR9Tv"
+  },
+  "application-fidelite-comptoir": {
+   "vignette": "1jfBt8AHY4dbLWwT60nnxi3b4KcZtcWsX",
+   "rushes": "1XnBD6jytvhs0Qmcdf-dajkUhn9qSvVR2"
+  },
+  "jeux-fidelite-six-jeux": {
+   "vignette": "1Fk9qcO8USrd4i7iXnzUE-ay-01XFScxT",
+   "rushes": "1D0AEPkVxtChdwweyVEBLTDOtMpn5Xxz3"
+  },
+  "codes-promo-du-restaurant": {
+   "vignette": "1rkMmftPNSTNFWf70KhPrv9yJaUs4RIpL",
+   "rushes": "17K_xWt8Zd-OPw8RuSpZKSh5ImOIk_4hn"
+  },
+  "emails-automatisations-par-etapes": {
+   "vignette": "1mSSQEU8mo97iJrSM5jGK4AOfEy-PVZAk",
+   "rushes": "1lR0XFezvgNofGi8DD7S4LSkOlUknic0D"
+  },
+  "fiche-client-360": {
+   "vignette": "1gDnB1Lx1m76Cxs3F-KVyWMcuAhmRD8pw",
+   "rushes": "1qLxKbgcG3kDeoBVGX7gAXVzGCqyrHIep"
+  },
+  "iris-monter-une-video": {
+   "vignette": "1-X1sEKfcxC4DO-yupObcnWT0IAEGGR7r",
+   "rushes": "1rPCL5n_MfC1Dsx2-ev3gwlUdGQEinTjg"
+  },
+  "iris-kit-video-google": {
+   "vignette": "1PusuuhbtUzE_r0x9wNTlZU4-nIU5sva4",
+   "rushes": "1dWx5vbqpz59Kbl9-hHaxoB8V9TfFfLMl"
+  },
+  "iris-packs-creux-anti-gaspi": {
+   "vignette": "1sXSuglIHAKvMlXevD60CNA3i6HLXammy",
+   "rushes": "1Q0JXa8oQRu8pDvS5oaaOsIiFDwRKUViE"
+  },
+  "iris-diffuser-partout": {
+   "vignette": "1IapdRvAOHSiRVJR7oW2moFdDndcFSAjR",
+   "rushes": "1IHFiDQGlkRYzTofXVY8hiIPHnnffuP8e"
+  },
+  "iris-mois-propose": {
+   "vignette": "1FZoCrOiPiMMuq86qpCvF5LedONZ8olN9",
+   "rushes": "1gW1-ye9UV3PS9mUJEmYl1sJ2vNUhpCzK"
+  },
+  "menu-enfant-bande-dessinee": {
+   "vignette": "1UM6U-8tA140WXIHBEX0nHP5G1soR251t",
+   "rushes": "1vxaqvIXFFKZcVHXR5h5A5p1Z1OFhKQvB"
+  },
+  "menu-enfant-qui-est-ce": {
+   "vignette": "1oj4XIqjiKoOvsH4_FYWFTZ73sDqqmp3a",
+   "rushes": "1IK5USXCaOvsX_9fv8wT1zQFb3Cr53mO-"
+  },
+  "commander-ses-emballages": {
+   "vignette": "1oNIlLD9xyKG04adjx-bdsovvVGPng7Tt",
+   "rushes": "1akCGFP8nUleAiwuGQZGoBYBUgsVkZhHF"
+  },
+  "couvercle-costume-pizza": {
+   "vignette": "1DvbJR4GYTNp4HgvKdX91xTvl6ugHhHvL",
+   "rushes": "1Y_GFmJ4_FJgr03iVezglcMvv70KUJhnE"
+  },
+  "ma-marque": {
+   "vignette": "1dwoL4P8J7VDF0e9Ta6oqPQeN69lSZY6-",
+   "rushes": "1v6AaBFtNu5N1SdbFUfQ0XtfOSTbxN2At"
+  },
+  "documents-pro": {
+   "vignette": "1BAA_AcCGpBCtKtF3CfQkFTAXO8VrfW8M",
+   "rushes": "1JMf1HsMHO0vUoAzZrHPqINBxHVtEnun9"
+  },
+  "application-recettes-tablette": {
+   "vignette": "17VpM1iFyP93T9sSHqp-0rDIHIrunB04O",
+   "rushes": "1lQlSAAJNKyu_Dy4OSbkYET6Q944aOiFw"
+  },
+  "securite-acces": {
+   "vignette": "18lTAK1FdN7VC4LgqWbK9Xc_wxkXDhuIl",
+   "rushes": "12U_IJejnk49vgv6RNyW98NDPrEwKUyy2"
+  },
+  "reprises-configuration": {
+   "vignette": "1dqngZ3tb20-avZCAQCU7W691a7NwOe2T",
+   "rushes": "1E3ni7YNXjA8X23Zt8yYGKwMuiXIJQJSY"
+  },
+  "premiers-pas-18-etapes": {
+   "vignette": "13EGnQrg59XpE2m6HpT6LsVf2Rd5Y9xxt",
+   "rushes": "1X_GzTS5fWHhs5zcJIznwbQY_Jm3msP6_"
+  },
+  "facturation-abonnement": {
+   "vignette": "10MJZHa21Ro1gu5oFK8RGID6tXjppPXID",
+   "rushes": "1uKlKDU9jX-E6VrHjmBKQFIqdAlV1V2ZS"
+  },
+  "chef-comprendre-apprendre-agir": {
+   "vignette": "1i0IhdlYi4h4MlA3ZSFxID1elMhwnwd2L",
+   "rushes": "15VZqKlkz3wUI1uOMglnZZaTzZc2AuGu2"
+  },
+  "mon-profil-assistant": {
+   "vignette": "13rGCDIDaqvVxKoDYcR-S79_YOB2mHZgQ",
+   "rushes": "1t86whj1vh3Jt4P7mJovVpfZ3gKykB_IR"
+  },
+  "mode-ecole-restaurant-fictif": {
+   "vignette": "1bR7KUBZoa26sN7MiP2lq4b-ADdWwkxzH",
+   "rushes": "1RrBIZ7hUL15AxIvwiwQHFHvS9QWINDgH"
+  },
+  "jarvis-qr-et-compagnon": {
+   "vignette": "1PiA1Gei4_2Afbq6VK1Mi6UH0c9gRCNBN",
+   "rushes": "1PvEbUxAHkF8G2yAMxrqGizD4RHvvpw4M"
+  },
+  "chef-reponse-ia-credits": {
+   "vignette": "1dWv4FqOsq0FtT0qqqoWJykeCOWyNHxrq",
+   "rushes": "1SWGKzZ761C3Lg421K01rE_VKaSEmts1_"
+  },
+  "mode-ecole-missions": {
+   "vignette": "148muATwT1ofUunmAollztbHMZu-cb6J8",
+   "rushes": "1s3h0p5r6ddRz7z98K1fZfVusDNohwhlk"
+  },
+  "tableau-bord-financier": {
+   "vignette": "1-y7eCgdiq5qXl4UFGyfMCDn2FuY5CxQS",
+   "rushes": "1so_Bq0X_0Vr-AmpJmq-wWfGe-P25BPh5"
+  },
+  "modeles-apparence-factures-devis": {
+   "vignette": "1JsizFpgnQi4vEYHKVPEB-wzELEHnI0oD",
+   "rushes": "13HjeNLaoml92zfcbjUG-ZkP5wkV8qSek"
+  },
+  "paiement-relance-fiche-client": {
+   "vignette": "1J9XoGf6GAObiHpLMJ1-JaXb91nWPM8LF",
+   "rushes": "10-qZcS52UXXJnnr6J4kuNytHnzir1n3x"
+  },
+  "doc-facturation-detaillee": {
+   "vignette": "1UfSUOrzFSzt4wdPvSseHTHqqbClfyDLJ",
+   "rushes": "1Out0_j-qO2Mp9-DFb_Q2FwvqFEoezh3Z"
+  },
+  "cycles-thermiques": {
+   "vignette": "12lIV993eWHa58i7Vp1jqUx3OHckbTrCN",
+   "rushes": "1FCdPbLl9nN0NqHmQhYNec4HtIJAs4Ft_"
+  },
+  "friteuses-huile": {
+   "vignette": "184Aq_kd-scaHVrBlA4wfKTScxwMyRCrl",
+   "rushes": "1lGtsf3fKXP5tuJN97msSO3Y3Hs4V6e4e"
+  },
+  "parametres-haccp": {
+   "vignette": "1yDbPzsgZR8APSu9DaO4ab4YHchexKa_c",
+   "rushes": "11oLgo-eycByUQzrdTbXE8FQRVKHaQ4qx"
+  },
+  "application-haccp-mobile": {
+   "vignette": "1STdYoQQMVsVc8nw74v8tko4XwN2vOMIq",
+   "rushes": "1RmiSs62yU7H2X68_qOygpkOODnvR7W3X"
+  },
+  "portions-rupture-automatique": {
+   "vignette": "1CK6dkEPjD3Ap7hxpxMYcNdmKSmmJo0Ej",
+   "rushes": "1vpdpi8HSp7xCj2n42YNhnb0ffBk35LTJ"
+  },
+  "cadencier": {
+   "vignette": "13QOtQnZ8frakTlBQes1DW4uAJ02jvnY9",
+   "rushes": "15vKx8qBET1ZdWi72GMcKeBdNUoIkZwtX"
+  },
+  "variables-paie": {
+   "vignette": "1A8BA3C5YeG-WOml9_0eLAB02SE3HQ6NT",
+   "rushes": "1ICriAy5yHVlJl3P9y5j1vF9FvZoBD1CL"
+  },
+  "blog-recettes": {
+   "vignette": "1CjQl7yHHPagOFBMXhhseDKSlo2RVj5z1",
+   "rushes": "1dLuA_07zs4LgG2ph5ldTrHkM-Az9tNax"
+  },
+  "site-cinematique": {
+   "vignette": "1COKZOzrqxSHjHvnBIziYXpTzG6y2ZEiF",
+   "rushes": "1d5evdpLAlYg5RCT429ylILKzx3JM05cw"
+  },
+  "placement-carte-vitrine-site": {
+   "vignette": "17OzbOaBOGAJibXqScYLNNvdrEsoBvgwo",
+   "rushes": "1_bt9Qf5o1N4lTwqDZbcHGeSXEtBQLjxI"
+  },
+  "site-themes-ia": {
+   "vignette": "1IyDTDSLne0xCeFqiwQDjYuq1QbPtX5_r",
+   "rushes": "1_DbseizT9JnkqWwVwUgxCkzE-I4zM-xV"
+  },
+  "caroline-transfert-humain": {
+   "vignette": "185jUw0sH_nvPGud2-2dPboJm5L85HWF6",
+   "rushes": "1ORUnXrIUQE0i5yBOhYjhh45M4DAshNHv"
+  },
+  "previsions-rh": {
+   "vignette": "13F8cOniGRRrMImXiYAsG6LPwoQkkn2tv",
+   "rushes": "1VlMrRNtbUVvFMVeiU9vQe0begHoeKhdC"
+  },
+  "conformite-haccp-ia": {
+   "vignette": "1WnkCFaB4Yt04ZL845vSw_SbKJ_0NwE8l",
+   "rushes": "11UiNh4-31shTARJglARgsWwzqf_9kHQ_"
+  },
+  "documentation-api-foodeatup": {
+   "vignette": "1vAQihPk3BT8VvFH5AvS_6PvOCLhBrg1h",
+   "rushes": "17uoI2SAYFalA6rOBjU4eZbzbhTF-LDN4"
+  },
+  "creer-sa-cle-api-foodeatup": {
+   "vignette": "1ejwLdhTTWlXlOzZAqjoMABnyhic_XeYS",
+   "rushes": "1xPfXAURSvsBeUZkhr1InuGwvhJnWftWw"
+  },
+  "premier-appel-api-foodeatup": {
+   "vignette": "1GMVbTJfvKZEI28QsV-ydA34L1WojYTSi",
+   "rushes": "1oi6Pr-JMZRfaga7fYFVHcdsUrEJftdpF"
+  },
+  "automatiser-avec-l-api-foodeatup": {
+   "vignette": "1mA-4ciGjq28GEJbWkvqmqqN6ySQowMO5",
+   "rushes": "1TJn0pSCbTXIT8mUc6uYRh9CMyQOnd0aA"
+  },
+  "connecter-chatgpt-le-chat-grok": {
+   "vignette": "1o4i8CiQOnd3rbR4sHjPIvIUewtfhml3y",
+   "rushes": "1jcmiKHBb2P9JgAUFM0aRiTV3mUmKeREC"
+  },
+  "plugin-claude-foodeatup": {
+   "vignette": "1LJBXLFAAdXOl08gqQT6mIsfbiwzre19G",
+   "rushes": "1Z9U2kB5arye9uJlwg7La7GAukWvif6Ge"
+  },
+  "assistant-ia-employe": {
+   "vignette": "136jri41Kr9O7Vpso239zjyKBwaXSbOZU",
+   "rushes": "1a1AJ0tkMgvhAc91eTrOSZ1x3UxUsmbgo"
+  },
+  "accueil-siege": {
+   "vignette": "1M7W1KagIzKY0vIVhFMqtYTAT4uP4Oi_O",
+   "rushes": "1y_XgFgd1KQZQAv3WfruWeEqdEKzqCick"
+  },
+  "boutiques-reseau": {
+   "vignette": "1ydBV9py6PQNZpSbd5ep_Aw6RamlozvrC",
+   "rushes": "1LbmdIN90bOyqPS4FXybX42AtSh87l4Lx"
+  },
+  "comparatif-reseau": {
+   "vignette": "1eI3EPZw1HAY1twmxhKckhCi7N9QGA9q5",
+   "rushes": "1K8-KCFG-QNq4y3guSws0f3dk6MtdSiF_"
+  },
+  "rh-reseau": {
+   "vignette": "1u7bye6FngRiknGpxCrw8Lkti-U1tE8Ko",
+   "rushes": "1y-HFHPZvPu3-Kdo5xCw9oqJh0Agk08hw"
+  },
+  "collecte-rh-paie-reseau": {
+   "vignette": "1MFuSe32Hira7mnCz0OxYgHYleyiAAhzv",
+   "rushes": "1Q6AZaxNyjOgCXQsHyxB9a8BgWIqsiQcm"
+  },
+  "comptabilite-banque-reseau": {
+   "vignette": "1KauvTSiUnWOat2i9OLf_1dpMzM2OMpXt",
+   "rushes": "18kUNEVHd-jcwzO0DXOqUiGVpK2U4ac2Q"
+  },
+  "kpi-reseau": {
+   "vignette": "1uOb_Tltzh45kjH_XCa2k3MTjthMIg_Ui",
+   "rushes": "1Zi5MMXwloA-jEZ8OQBpNbHm4gBeOS_ln"
+  },
+  "catalogue-central": {
+   "vignette": "13uzMdCiiWcoRQnODnZLdrD8Tkxjej9Ir",
+   "rushes": "1DnCVvshl9QE1VtvmzDhF8n35akSh0KsB"
+  },
+  "prix-siege": {
+   "vignette": "1Ca7XGFYu41A4vPZEVeQXceoKr0crTzoC",
+   "rushes": "1szb6bo7QV7CVr3Uvn_q8w7QcE6W4QZKc"
+  },
+  "achats-centralises": {
+   "vignette": "1PW8FFRi6dN9BnyWEITHmuZ1Bi-7_spIv",
+   "rushes": "1bKCVKW86RgV9bDTKFZJS-VvVExKwbeEM"
+  },
+  "configuration-reseau": {
+   "vignette": "1iKVjr1FfDjcsuhRtevli9vUjPvS7bMOs",
+   "rushes": "1iZl9mHuyZ5pJ0zel_0M06IaeM5JaR_13"
+  },
+  "entites-topologie": {
+   "vignette": "1MxN3qmCVievrr_es4OKcTMPr7ILdcilM",
+   "rushes": "1G6Fiitjt729-MMac4uE19VkDuwOOY7wZ"
+  },
+  "commander-laboratoire": {
+   "vignette": "1UApm_GiuSF0bVJJzPpQCdpdPKgfzNlzu",
+   "rushes": "1EVHKOT_hB7JjKXwtKdRNQrs49ttjD7HN"
+  },
+  "commandes-boutiques-laboratoire": {
+   "vignette": "15bOaXlumBGrNas48tXZEycOIxS3zuib1",
+   "rushes": "1CZ_M8mFEUBQ5PHwwy7GNUaCPnv0llPEj"
+  },
+  "planning-atelier": {
+   "vignette": "1ZnLzEfq6H0GwHC1-L5noT9m37vudnI4j",
+   "rushes": "1eQ70qkFNUepFEytpt925a1esMt6nBg5p"
+  },
+  "fabrication-jour": {
+   "vignette": "1ZGoAhDKap9X6Sir3w302CPxIZp_Ua1rW",
+   "rushes": "1V_4TkMmGGgDRJBICayXNoUkjAMsAyX_1"
+  },
+  "stock-finis-rappel-lot": {
+   "vignette": "1KPMga6FlxB6CHCW0qdOvEO02qexXWXIx",
+   "rushes": "1FI1PDBqphdaaShp7QbytkyECdctZ_X_f"
+  },
+  "preparation-colis": {
+   "vignette": "1lAvZM22lR501RyWQ1aZUtmmI1fkx1Uf6",
+   "rushes": "1RduHLhme9XqznFyZ1t-3Aj6YsbpwNV4i"
+  },
+  "tournees-application-chauffeur": {
+   "vignette": "1atnHS7V0HS9mz6IPgB1yE9ng5HI-5490",
+   "rushes": "1hXhCICYNTbnHq06VHiHA0BZ-cLWj4Wk8"
+  },
+  "receptions-laboratoire": {
+   "vignette": "1LED5zjVMlYHbcUSKPuSXKY5w88QsTm8b",
+   "rushes": "1kiklwWadO7NYtAbF-vfuBq4cAjEnAP7n"
+  },
+  "hub-laboratoire-siege": {
+   "vignette": "1D2JzY0eNeHmy81ZGDx1UdRWWkmInv3nI",
+   "rushes": "1AzdHZfWxIdexvkJJvnQkcnnbtZNeyNIc"
+  },
+  "hub-livraison-siege": {
+   "vignette": "1vcptNajMwWYXB3lv6-hwAQQZCExHgrRI",
+   "rushes": "1t9KBnSxBPiACuA-d_pTgSADdedpjlKP_"
+  },
+  "live-portefeuille-cashless": {
+   "vignette": "1l-gXgvFeVHAtfK13-PZ1okAcL-LExxrh",
+   "rushes": "1-fIVmYr55MwBrnyna7LfBgX5ikleuCDZ"
+  },
+  "live-qr-paiement": {
+   "vignette": "1V3iSE-LxMtfxdrjaLoCkSfKmmRM3JTfm",
+   "rushes": "1G-zkAoVbasZd2uSGqvXLjtda71CB5eQ5"
+  },
+  "live-recharges": {
+   "vignette": "1eBfDHCZBGEIPS0HtykBl5YX5O5RfNsgO",
+   "rushes": "1iWz75HQOLPSwiVjYj5m1u_ruGmnemc-i"
+  },
+  "live-bracelets-nfc": {
+   "vignette": "1mvDgMAeKbNPKb8oy-gi_1ShUScPHzorg",
+   "rushes": "1o8yMa7-WsFmNfVtYqx1p1EEKQSp1kDJ1"
+  },
+  "live-creer-un-evenement": {
+   "vignette": "1qHyJXdSNEvO9qNEHGYR430NteigAn9C-",
+   "rushes": "1OBXvG4xlO8f8QV0ZPZkgB4eIKrUZO6fQ"
+  },
+  "store-trouver-application": {
+   "vignette": "1ugnZH-c8SFDKi7zCFAds4oeoU6tr3DI2",
+   "rushes": "1foM6hyCDcuNEB3GxCnKdTzCC7Bfor5R-"
+  },
+  "store-favoris": {
+   "vignette": "1pgM4y-Cf-Jf52IwV6aORgIcxWFtLtDhu",
+   "rushes": "16g0Ef5N0YNdNbq5riSxBnK8rtLItCvBT"
+  },
+  "store-installer-apk": {
+   "vignette": "1sQVNH2pUf-C1_r7KXP2fJKwtpeRrRXVc",
+   "rushes": "15jv6KFyZkKYN5KrvVKJvdmsAwUfpXSjN"
+  },
+  "trouver-le-restaurant-et-voir-la-carte": {
+   "vignette": "1esVMaLb7lwCQH6s72MKSgueHHFfCpMa4",
+   "rushes": "1OPzNzdW35jXSb0k4zV_Z4wu3daCSs00Z"
+  },
+  "commander-depuis-le-site-du-restaurant": {
+   "vignette": "1P0jcGPlvv2eK-Y83e8erud6VTEl1jjTJ",
+   "rushes": "1Fj-3x3qdO4LeeccpwWHyjx8T1GTdl9Hh"
+  },
+  "commander-a-table-avec-le-qr-code": {
+   "vignette": "1zGzmBWRde5Qho93h_Rg4ia_GxyQiFUsj",
+   "rushes": "17xEYARBWQEwqQ-Er3C9FJ0BYW4x4qZ_S"
+  },
+  "payer-sa-commande-et-recevoir-son-recu": {
+   "vignette": "195vh_2rTl8L0Bcp3qTolrRGfa3Ho4IXV",
+   "rushes": "1zU6lzPOMgDiWIRMpAYnQkiWWFbR0S2Mc"
+  },
+  "reserver-une-table": {
+   "vignette": "1rZ5fthQbknNr7P_mtCl5y3KI0Q6PeJnl",
+   "rushes": "1AMW53D6Pa97C_lM0zdbC8JCsFN5MX4c0"
+  },
+  "rejoindre-le-programme-de-fidelite": {
+   "vignette": "16rsAp2geI3BKWupvqG8JHwFpBI90fVef",
+   "rushes": "1t5gqpMQAp_wWVX3cz_spOdUBj8BJ6XCr"
+  },
+  "cumuler-ses-points-a-chaque-passage": {
+   "vignette": "1r0yAbHWpdCquI6WBOeDU7jZvooeItzsI",
+   "rushes": "1UZPTQFc_Mzu8nP8x8JSxxxWs2bGOLpFM"
+  },
+  "utiliser-une-recompense-ou-une-offre": {
+   "vignette": "1_qA5wVY8K5Y0aKXbI5oNsrOqXPJ2jn9v",
+   "rushes": "1o_zZkahISHpiVDWj0YZNTjewjaRKiKjb"
+  },
+  "recevoir-les-offres-du-restaurant": {
+   "vignette": "1_mea_pNoNk7zzpxr1-n2kuIVYRcjeiLg",
+   "rushes": "13zOxdWXUNi5RXTB1mPeuf2jKjEcUqn_s"
+  },
+  "laisser-un-avis-apres-son-passage": {
+   "vignette": "1FVVLZe6gA5nH5kcCiGkipN9-hh-TDrs1",
+   "rushes": "1Monxx68IuE-6LqgLa4_3-g6FQQClNIhx"
+  },
+  "reseau-partenaires-foodeatup": {
+   "vignette": "1gkl1VL0RDHOF1Qxhyrf1v56gpUevNaz_",
+   "rushes": "1c-5HvHCgn823o1WN55dOf9xVfn3Od0fb"
+  },
+  "journee-type-partenaire-foodeatup": {
+   "vignette": "1MGYAw9C9mUlAQS7rKVd0ou8dlaSOS2jL",
+   "rushes": "1m2ri7FuoZwRlR3uJOHJGngN_7kl9lxQ_"
+  },
+  "argumentaire-foodeatup-cinq-minutes": {
+   "vignette": "1Vo9r5IbuHOsvBoj_WyAXIr45aPJc3_-V",
+   "rushes": "1IztgFSBHkmQsSVR8tWC0RFyQbtmtFOk7"
+  },
+  "vendre-le-passage-a-l-ia": {
+   "vignette": "1G0XXkkiQKYhda8hac2kojxwJOpTcljjl",
+   "rushes": "1ihJBeQnTfg7kmZNigKUS3YD97sZj2xt1"
+  },
+  "compte-rendu-de-mission-partenaire": {
+   "vignette": "1tn2z-paL6H75KEbnwpv3_p7JojMZoS-N",
+   "rushes": "1Vc55XoydOJY8YmzDCo-Dz_TZmapR0A7U"
+  },
+  "suivre-ses-ventes-et-commissions": {
+   "vignette": "1HugvlYQCnzGT7szdohUpWrxRGiWLdhKS",
+   "rushes": "1THTU95h7SSMTiuQwB1clbM-KelXDTkbM"
+  },
+  "remonter-les-retours-terrain": {
+   "vignette": "1kiE9zNpKMjBop5bcbGSoO1u5H5sbvrVF",
+   "rushes": "1RzisrKbd71FSpJh7xtWrXUdu22imzjTX"
+  },
+  "apres-la-mission-suivi-et-fidelisation": {
+   "vignette": "1vVMl8YFu4ThNqfBKbPuFXvwdaVtP-jjC",
+   "rushes": "1xBGor0xTQZPsApB7tzwax599qhAwYTfW"
+  },
+  "former-une-brigade-a-l-haccp": {
+   "vignette": "1FOUVoTcbETvaR3uAZHZJ9JmWKsUtqaSs",
+   "rushes": "1fw1yBvZGAakWAtUUXA9B92OCX3gXK4yC"
+  },
+  "passer-le-relais-academie": {
+   "vignette": "1JGJ0WLx9w2hdF284Hpkf9l8EvxJeCRqJ",
+   "rushes": "1RGWJAUj-flVhORRUk0hh02Nct-NreE7L"
+  },
+  "de-la-demonstration-a-la-signature": {
+   "vignette": "1DEbHjVLab1-zUNDV_PKSlDih073lDy7i",
+   "rushes": "1hhosXely1AqUMwLj-hnIDZFpV97VW-TM"
+  },
+  "le-point-a-30-jours-avec-le-client": {
+   "vignette": "1eIb-Re4PM_J0HZ6z-adGYoqp_CCPNGDq",
+   "rushes": "1qsH7aXjgVQ094u7LFjveBKQrqGVkPR5d"
+  },
+  "installer-un-poste-de-caisse-foodeatup": {
+   "vignette": "19aywr6fVnYVkg7IA2svbzRvpNZi5xRik",
+   "rushes": "1tWGDbh0pU-nTlIXJ3ThZD_7fy-bqEBsz"
+  },
+  "raccorder-imprimante-tiroir-et-tpe": {
+   "vignette": "1ftnpEqLdfIApiaR1x2eWhsSa6HtnBnR2",
+   "rushes": "1QDS2LLb1x9-gXYvr8GEmkoTTt-tQKfAg"
+  },
+  "organiser-sa-prospection-partenaire": {
+   "vignette": "16vxM6_joiyx3bnprxI2CezwRDQvxmFja",
+   "rushes": "1ukRdVuOWZuuFHkuJYvz8UwwWs2WsjrPY"
+  },
+  "qualifier-un-etablissement-en-dix-questions": {
+   "vignette": "19tknwQbpsLr2IJLhOIATGmaS80lm4fLS",
+   "rushes": "1CbX1mK1dFlCSbWc_6z8KkDdAEAcJUUj6"
+  },
+  "menu-enfant-dessin-anime": {
+   "vignette": "1QdnKIc5V82UOEsP_WNjlmu5NnQXA1qSf",
+   "rushes": "1DaZKtZDGsh8eAIGWtwqP7nI4gd8NopMN"
+  }
+ }
+}
