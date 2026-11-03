@@ -68,3 +68,24 @@ E10 Le brief du lundi · E11 Trouve 20 prospects · E12 Le cold email · E13 Où
 | RapidoSoftware | `101119107` | `223318770858972` | — |
 | FoodEatUp | `68807312` | `201499969703551` | — |
 | Michael Kebail | — | — | `6Z5izYBhkC` (linkedin_profile) |
+
+---
+
+## 5) Tutoriels de l'application FoodEatUp Caisse Mobile (2026-11-03)
+
+✅ **6 tutoriels produits et livrés** (16:9, 26–29 s, voix Adam `TGAegA0zNRi8I6nUdq3i` en `eleven_v4`, une prise, flow ElevenLabs `VBOFvpwdmzcYHGIQAxer`, ≈ 0,54 $ au total), montés en HyperFrames 0.9.5 avec les **écrans réels** de l'application 0.21.0 dans un cadre téléphone, étapes qui s'allument au fil de la voix, chef, sous-titres.
+
+| # | Slug Académie | Sujet |
+|---|---|---|
+| 1 | `caisse-mobile-installer-et-se-connecter` | Installer l'application et se connecter |
+| 2 | `caisse-mobile-prendre-son-service` | Prendre son service et ouvrir la caisse |
+| 3 | `caisse-mobile-prendre-une-commande` | Prendre une commande à table |
+| 4 | `caisse-mobile-encaisser-et-ticket` | Encaisser à la table et remettre le ticket |
+| 5 | `caisse-mobile-cuisine-et-notifications` | Suivre la cuisine et les commandes qui arrivent |
+| 6 | `caisse-mobile-mode-ecole-styles-et-chiffres` | Former l'équipe, choisir son style, lire les chiffres |
+
+- **Fichiers** : dépôt `stockvisionai`, `public/videos/tutoriels/caisse-mobile/{slug}.mp4` + `.jpg` (PR #711) — servis par `https://foodeatup.com/videos/tutoriels/caisse-mobile/…`. Générateur : `scripts/tutoriels-videos/` (ne pas recréer une chaîne ici : c'est la même méthode que les vidéos du mode école).
+- **Académie** : fiches de la section « L'application mobile » du module Caisse, avec `videoUrl` (PR foodeatup-guide-star-227b4772 #5).
+- **App** : écran Aide › « Tutoriels vidéo » (PR foodeatup-caisse-mobile #12).
+- **Journal Michael** : 10 écrans réels ajoutés au projet `foodeatup-caisse-mobile` (assets `ecran`, actifs) pour les vidéos de communication.
+- ⏳ **Pas encore fait** : publication YouTube (chaîne FoodEatUp) et lien `youtubeUrl` sur les fiches ; déclinaison 9:16 pour TikTok/Reels ; planification RapidoCMS (compte à renouveler, cf. § 3).
