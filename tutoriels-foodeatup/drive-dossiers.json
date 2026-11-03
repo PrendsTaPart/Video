@@ -199,7 +199,8 @@
   "installer-un-poste-de-caisse-foodeatup": "1WY85g-8VfKde1goEQloftQnL4WCCQry7",
   "raccorder-imprimante-tiroir-et-tpe": "1Vo8KPYLujZtrjDU5ECYeGoNwekpnKKTW",
   "organiser-sa-prospection-partenaire": "1dI-XV2YK5K1rV5KvRSAGrbx4AvtVLBQ2",
-  "qualifier-un-etablissement-en-dix-questions": "1piDNmvWnV5Z5Nkn0gBHji5rJc8xmFtGM"
+  "qualifier-un-etablissement-en-dix-questions": "1piDNmvWnV5Z5Nkn0gBHji5rJc8xmFtGM",
+  "menu-enfant-dessin-anime": "1tDDVcly77Xx6A2zUJZZs42GcAwGfhZw2"
  },
  "sous_dossiers": {
   "ajouter-l-abonnement-caisse": {
@@ -885,6 +886,10 @@
   "qualifier-un-etablissement-en-dix-questions": {
    "vignette": "19tknwQbpsLr2IJLhOIATGmaS80lm4fLS",
    "rushes": "1CbX1mK1dFlCSbWc_6z8KkDdAEAcJUUj6"
+  },
+  "menu-enfant-dessin-anime": {
+   "vignette": "1QdnKIc5V82UOEsP_WNjlmu5NnQXA1qSf",
+   "rushes": "1DaZKtZDGsh8eAIGWtwqP7nI4gd8NopMN"
   }
  }
 }

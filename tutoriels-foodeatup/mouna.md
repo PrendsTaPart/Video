@@ -4,7 +4,7 @@ Relevé du 03/11/2026 : catalogue en ligne de l'Académie (https://tutoriel.food
 
 ## En bref
 
-- **171 vidéos à tourner** : 136 fiches existent sur l'Académie sans vidéo, 35 fonctions du logiciel n'ont pas encore de fiche (marquées « fiche à créer »).
+- **172 vidéos à tourner** : 136 fiches existent sur l'Académie sans vidéo, 36 fonctions du logiciel n'ont pas encore de fiche (marquées « fiche à créer »).
 - **1 vidéo à retourner** (l'écran a changé), voir plus bas.
 - **44 vidéos déjà montées** n'ont pas de lien YouTube : rien à tourner, Claude les publie.
 - Doublon à fusionner avant de tourner : `modeles-billet` → `billets-modeles`.
@@ -46,6 +46,28 @@ Lieu de tournage hors écran du logiciel :
 ## Ordre conseillé
 
 1. Caisse POS (le plus demandé par les clients), 2. Fiches à créer de la caisse et du KDS, 3. Réservations, 4. Écrans & bornes, 5. Marketing & Iris, 6. Configuration et assistant, 7. Réseau, laboratoire, Live, Store, 8. Côté client, 9. Partenaires.
+
+## Moteur HyperFrames (Iris et BD animée du menu enfant)
+
+Les vidéos d'Iris (« Monter la vidéo ») et les dessins animés du menu enfant (« Animer en vidéo ») sont rendus par **un seul ouvrier HyperFrames** (dossier `iris-montage-worker/`, HTML animé → MP4). Il tourne sur AWS, jamais sur le serveur de production.
+
+**Déjà fait (Claude, 03/11/2026)** — plus aucune tâche front-end ni back-end à faire :
+
+- Écran Iris « Monter la vidéo » (existait) et nouvel écran **Menu enfant › Bande dessinée › 🎬 Animer en vidéo** : format 9:16 ou 16:9, voix des personnages facultative, devis en crédits, suivi, lecteur, téléchargement du MP4.
+- Composition HyperFrames de la BD (`KidsComicVideoProjet`) : couverture au nom du restaurant, une case par plan (zoom doux, bulle qui apparaît, mouvement selon l'émotion), fin aux couleurs de la marque. Bulles en vrai texte, police embarquée.
+- File de rendu `kids-comic-video` (même contrat et même jeton qu'Iris), voix ElevenLabs `eleven_v4`, crédits débités une seule fois à la réception du MP4, outil MCP `animate_kids_comic`, tests `MenuEnfantBdAnimeeTest`.
+- Ouvrier mis à jour pour lire les deux files, **rendu vérifié de bout en bout** hors Docker : 21 s de vidéo 1080×1920 en ≈ 1 min.
+
+**Il reste une seule tâche technique, avant de tourner les vidéos marquées 🎞** : mettre l'ouvrier en service sur AWS (≈ 1 h 30), en suivant `docs/iris/NOTE-MOUNA-AWS-MONTAGE.md` :
+
+1. `openssl rand -hex 32` → le jeton partagé.
+2. `docker build` de `iris-montage-worker/` (la construction relance le rendu d'essai) puis `docker push` sur ECR `eu-west-3`.
+3. Secret `foodeatup/iris-montage-worker-token` dans Secrets Manager.
+4. Tâche ECS Fargate 2 vCPU / 4 Go, 30 Go d'éphémère, Spot, sortie internet seulement, journaux `/foodeatup/iris-montage`.
+5. Soulayma ou Mootaz : `IRIS_MONTAGE_ENABLED=true` + `IRIS_MONTAGE_WORKER_TOKEN` dans le `.env`, puis `config:cache`.
+6. Essai : une BD prête › Animer en vidéo (vertical, sans voix) → `kids-comic-video N rendu et envoyé` dans CloudWatch, puis une vidéo Iris.
+
+Ensuite, il ne reste **que les enregistrements d'écran** à déposer sur le Drive.
 
 ## Liste de tournage
 
@@ -126,7 +148,7 @@ Lieu de tournage hors écran du logiciel :
 | 056 [📁](https://drive.google.com/drive/folders/12HCvLrZLcntlN0pRa6zq4v2DHSfZDwQr) | **Le menu sur tablette** | L'application Menu digital sur la table<br>`application-menu-digital-tablette` | Application Menu digital + Menu digital & QR **(fiche à créer)**<br>🎬 Compte de démonstration (pas l'école). | ☐ | ☐ |
 | 057 [📁](https://drive.google.com/drive/folders/17VgrkcTu_hwlZ2IKj_2u3OM4ujy7sDPa) | **Jouez en attendant** | Jeux de table entre tablettes et cadeaux fidélité<br>`jeux-de-table-tablette` | Marketing › Fidélité & Jeux › Jeux de table **(fiche à créer)** | ☐ | ☐ |
 
-### marketing-fidelite (20) — [dossier Drive](https://drive.google.com/drive/folders/1gG_osjJJpAMeM-20wSPEj4TG41OovE6k)
+### marketing-fidelite (21) — [dossier Drive](https://drive.google.com/drive/folders/1gG_osjJJpAMeM-20wSPEj4TG41OovE6k)
 
 | N° | Titre de la vignette (Zied) | Fiche / slug | Où tourner (Mouna) | Rush | Vignette |
 |---|---|---|---|---|---|
@@ -141,7 +163,7 @@ Lieu de tournage hors écran du logiciel :
 | 066 [📁](https://drive.google.com/drive/folders/1t9b00FbZ_2TgYdZEh9VUk7CImdniStHO) | **Ton code promo maison** | Créer ses codes promo<br>`codes-promo-du-restaurant` | Newsletters & e-mails › Codes promo **(fiche à créer)** | ☐ | ☐ |
 | 067 [📁](https://drive.google.com/drive/folders/1a4PigyaMull2eWazKfHJ_RhV9EJcM-tT) | **Les e-mails partent seuls** | Automatisations e-mail : panier, anniversaire, avis<br>`emails-automatisations-par-etapes` | Newsletters & e-mails › Automatisations **(fiche à créer)** | ☐ | ☐ |
 | 068 [📁](https://drive.google.com/drive/folders/1qA8OuADcJgRltfDFeQ16KToIUqS0Q5aI) | **Tout sur ton client** | La fiche client 360 : achats, messages, consentements<br>`fiche-client-360` | Clients › fiche client **(fiche à créer)** | ☐ | ☐ |
-| 069 [📁](https://drive.google.com/drive/folders/1Esc9gRHd2Uu991Mr0GuIZggfIVSPpGNi) | **Ta pub vidéo, montée seule** | Iris — monter une vidéo avec voix off<br>`iris-monter-une-video` | Service › Iris › étape 5 › Monter la vidéo **(fiche à créer)** | ☐ | ☐ |
+| 069 [📁](https://drive.google.com/drive/folders/1Esc9gRHd2Uu991Mr0GuIZggfIVSPpGNi) | **Ta pub vidéo, montée seule** | Iris — monter une vidéo avec voix off<br>`iris-monter-une-video` | Service › Iris › étape 5 › Monter la vidéo **(fiche à créer)**<br>🎞 Nécessite l'ouvrier HyperFrames en service (section « Moteur HyperFrames ») : sinon le bouton reste grisé. | ☐ | ☐ |
 | 070 [📁](https://drive.google.com/drive/folders/1KhIH0R7_Rjra2AzzFiFwMubMsnPdxc2G) | **Ta vidéo IA Google** | Iris — préparer sa vidéo avec Google Flow<br>`iris-kit-video-google` | Service › Iris › Kit vidéo **(fiche à créer)** | ☐ | ☐ |
 | 071 [📁](https://drive.google.com/drive/folders/1YteOjJT7MM_VCOoF7g88C-nRAhw4rf9F) | **Remplis ton mardi** | Iris — packs « remplir le creux » et anti-gaspi<br>`iris-packs-creux-anti-gaspi` | Service › Iris › Opportunités **(fiche à créer)** | ☐ | ☐ |
 | 072 [📁](https://drive.google.com/drive/folders/1cxWKaB0232foOLzWE9E1d9iT6ltOOjiy) | **1 visuel, 5 canaux** | Iris — diffuser un visuel partout<br>`iris-diffuser-partout` | Service › Iris › Mes visuels › Diffuser **(fiche à créer)** | ☐ | ☐ |
@@ -150,6 +172,7 @@ Lieu de tournage hors écran du logiciel :
 | 075 [📁](https://drive.google.com/drive/folders/1R3-tKJQ2NsWcxRHp_lsZN4qkbsJeA-nq) | **Qui est-ce ? à table** | Menu enfant — le jeu « Qui est-ce ? » à deux téléphones<br>`menu-enfant-qui-est-ce` | Menu enfant & jeux › chevalet Qui est-ce ? **(fiche à créer)** | ☐ | ☐ |
 | 076 [📁](https://drive.google.com/drive/folders/1MTYk0dAaIvSSNfxrAoyKAv2Ap7NnGEES) | **Emballages livrés** | Commander ses emballages à emporter<br>`commander-ses-emballages` | Supports imprimés & QR › Emballages **(fiche à créer)** | ☐ | ☐ |
 | 077 [📁](https://drive.google.com/drive/folders/1UFsam2b4YtXq1FsqfPsR4Zgv7nQWZlVP) | **Ta boîte pizza déguisée** | Le couvercle costume de boîte à pizza<br>`couvercle-costume-pizza` | Supports imprimés › Couvercle costume **(fiche à créer)** | ☐ | ☐ |
+| 172 [📁](https://drive.google.com/drive/folders/1tDDVcly77Xx6A2zUJZZs42GcAwGfhZw2) | **Ta BD devient un dessin animé** | Menu enfant — animer sa BD en dessin animé<br>`menu-enfant-dessin-anime` | Marketing › Menu enfant & jeux › Bande dessinée › Animer en vidéo **(fiche à créer)**<br>🎞 Nécessite l'ouvrier HyperFrames en service (section « Moteur HyperFrames ») : sinon le bouton reste grisé. | ☐ | ☐ |
 
 ### configuration (7) — [dossier Drive](https://drive.google.com/drive/folders/17C2VbHPKtzIeSpPnMxRDnvksZwSfIni5)
 

@@ -1537,5 +1537,14 @@
   "vignette": "10 questions, 1 client",
   "ecran": "face caméra + diapositives",
   "nouvelle": false
+ },
+ {
+  "n": 172,
+  "slug": "menu-enfant-dessin-anime",
+  "module": "marketing-fidelite",
+  "titre": "Menu enfant — animer sa BD en dessin animé",
+  "vignette": "Ta BD devient un dessin animé",
+  "ecran": "Marketing › Menu enfant & jeux › Bande dessinée › Animer en vidéo **(fiche à créer)**",
+  "nouvelle": true
  }
 ]
