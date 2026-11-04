@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:00,729
+Une journée.
+
+2
+00:00:00,729 --> 00:00:01,615
+Un téléphone.
+
+3
+00:00:01,615 --> 00:00:03,171
+Regarde ce que mon site a gagné.
+
+4
+00:00:03,171 --> 00:00:04,956
+Des pages qui comparent FoodEatUp
+
+5
+00:00:04,956 --> 00:00:06,633
+aux autres logiciels, en vidéo.
+
+6
+00:00:06,633 --> 00:00:08,060
+Les huit boucles : une vente
+
+7
+00:00:08,060 --> 00:00:09,335
+part, tout le reste suit.
+
+8
+00:00:09,335 --> 00:00:10,662
+Cent idées d'extensions.
+
+9
+00:00:10,662 --> 00:00:11,655
+Ma bande dessinée.
+
+10
+00:00:11,655 --> 00:00:13,303
+Un hub avec tous les écrans.
+
+11
+00:00:13,303 --> 00:00:14,933
+Et mon assistant de prévisions,
+
+12
+00:00:14,933 --> 00:00:16,143
+dans Claude et ChatGPT.
+
+13
+00:00:16,143 --> 00:00:17,224
+Tout ça en parlant à
+
+14
+00:00:17,224 --> 00:00:18,684
+Claude, depuis mon Note 10.
+
+15
+00:00:18,684 --> 00:00:19,302
+Toi aussi ?
+
+16
+00:00:19,302 --> 00:00:22,360
+Rejoins ma formation : formation.foodeatup.fr.
+
+17
+00:00:22,360 --> 00:00:25,336
+Deviens solo entrepreneur, apprends l'IA, à développer,
+
+18
+00:00:25,336 --> 00:00:27,284
+à créer et vendre des extensions, et
+
+19
+00:00:27,284 --> 00:00:29,124
+à vendre avec un simple téléphone.
+
+20
+00:00:29,124 --> 00:00:30,851
+Comme moi, avec mon Note 10.
+

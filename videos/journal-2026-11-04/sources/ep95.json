@@ -1,0 +1,14 @@
+{"voix":"./specs/../src/v-ep95.mp3","fond":"#0F1A23","couleur":"#007BFF","accent":"#FFA500","badge":"ÉPISODE 95/365","photo":true,"remplacer":{"formation point foodeatup point f r":"formation.foodeatup.fr","FoodEatUp point com":"foodeatup.com","foodeatup point f r":"foodeatup.fr"},
+"texte":"Une journée. Un téléphone. Regarde ce que mon site a gagné. Des pages qui comparent FoodEatUp aux autres logiciels, en vidéo. Les huit boucles : une vente part, tout le reste suit. Cent idées d'extensions. Ma bande dessinée. Un hub avec tous les écrans. Et mon assistant de prévisions, dans Claude et ChatGPT. Tout ça en parlant à Claude, depuis mon Note 10. Toi aussi ? Rejoins ma formation : formation point foodeatup point f r. Deviens solo entrepreneur, apprends l'IA, à développer, à créer et vendre des extensions, et à vendre avec un simple téléphone. Comme moi, avec mon Note 10.",
+"hook_phrases":3,"cta_phrases":4,
+"hook":"Une journée.<br>Un téléphone.<br><em>Regarde ça.</em>",
+"mention":"Écrans réels de foodeatup.com · 4 novembre 2026",
+"scenes":[
+{"type":"video","src":"comparatifs_index.mp4","from":9,"mot":"Les <span>comparatifs</span>","leg":"foodeatup.com/comparatifs"},
+{"type":"video","src":"le-systeme.mp4","from":9,"mot":"Les <span>8 boucles</span>","leg":"foodeatup.com/le-systeme"},
+{"type":"video","src":"extensions.mp4","from":6,"mot":"<span>100</span> idées","leg":"foodeatup.com/extensions"},
+{"type":"image","src":"bd-frame.png","crop":[0,1280],"mot":"Ma <span>BD</span>","leg":"foodeatup.com/bd-foodeatup"},
+{"type":"video","src":"accueil-film.mp4","from":6,"mot":"Tous les <span>écrans</span>","leg":"foodeatup.com/hub"},
+{"type":"video","src":"preditbot.mp4","from":9,"mot":"Dans <span>Claude</span>","leg":"foodeatup.com/preditbot"},
+{"type":"image","src":"michael-portrait.jpg","crop":[0,1100],"mot":"Depuis mon <span>Note 10</span>","leg":"Michael Kebail-Ali"}],
+"fin":{"image":"page-formation.png","crop":[2900,4150],"big":"Deviens <span style=\"color:#FFA500\">solo entrepreneur</span>","url":"formation.foodeatup.fr","sous":"IA, développement, extensions, vente… avec un simple téléphone. Comme moi, avec mon Note 10."}}
