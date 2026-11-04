@@ -1,0 +1,347 @@
+{
+  "serie": "Application tablette KDS",
+  "app": "braindcode1/foodeatup-kitchen-screen (app/)",
+  "format": "1920x1080, ≈ 18-25 s, voix ElevenLabs Adam eleven_v4, charte de la série fidélité",
+  "videos": [
+    {
+      "numero": "039",
+      "slug": "app-kds-appairer-et-regler",
+      "titre": "Appairer la tablette et choisir son poste",
+      "vignette_hook": "Ton écran cuisine branché en 30 s",
+      "ecran_kds": [
+        "/pairing",
+        "/stations",
+        "/onboarding",
+        "/station"
+      ],
+      "etapes": [
+        "Dans FoodEatUp › Cuisine (KDS), crée le code d'appairage",
+        "Tape les 6 caractères sur la tablette",
+        "Choisis le poste affiché sur cet écran",
+        "Suis le guide : gestes, son, imprimante"
+      ],
+      "plan_final": "Le poste ouvert, un nouveau ticket arrive et on le BUMP (plan tenu 2,5 s)",
+      "donnees_demo": "KDS_SIMULATED=true — restaurant de démonstration « LUK n°53 » (Bar, Pâtisserie, Smoothies, Pass) livré avec l'app, aucun appel réseau (code KDS234 ; l'écran du back-office qui crée le code est filmé sur le serveur local)",
+      "fiches_liees": [
+        "creer-un-poste-de-travail",
+        "afficher-le-kds-par-poste"
+      ],
+      "ordre": 100,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    },
+    {
+      "numero": "040",
+      "slug": "app-kds-rythme-du-service",
+      "titre": "Rythme du service : envois en attente et saturation",
+      "vignette_hook": "Les desserts partent au bon moment",
+      "ecran_kds": [
+        "/station",
+        "/pass"
+      ],
+      "etapes": [
+        "Choisis le mode : manuel, automatique ou après un délai",
+        "Les envois suivants arrivent « En attente »",
+        "Lance l'envoi suivant d'un geste",
+        "Au-delà du seuil, la cuisine est signalée saturée"
+      ],
+      "plan_final": "Un plat marqué « À lancer dans N min » (plan tenu 2,5 s)",
+      "donnees_demo": "Serveur FoodEatUp LOCAL (base kds_demo, « Burger Club » fictif, 7 commandes borne / QR table / caisse / site / téléphone), app appairée par un code généré localement — jamais la production ; réglages du rythme filmés dans Cuisine (KDS) › Application tablette",
+      "fiches_liees": [
+        "envoyer-en-cuisine-en-direct",
+        "gerer-une-commande-en-direct-kds"
+      ],
+      "ordre": 101,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    },
+    {
+      "slug": "app-kds-gestes-du-poste",
+      "titre": "Les trois gestes du poste",
+      "vignette_hook": "Toucher, appui long, BUMP",
+      "ecran_kds": [
+        "/station"
+      ],
+      "etapes": [
+        "Touche un plat : il passe en cours, puis prêt",
+        "Appui long : il recule d'un statut",
+        "BUMP : tout le ticket part au pass",
+        "La couleur du minuteur suit l'attente"
+      ],
+      "plan_final": "Le ticket bumpé quitte l'écran (2,5 s)",
+      "donnees_demo": "KDS_SIMULATED=true — restaurant de démonstration « LUK n°53 » (Bar, Pâtisserie, Smoothies, Pass) livré avec l'app, aucun appel réseau",
+      "fiches_liees": [
+        "gerer-une-commande-en-direct-kds"
+      ],
+      "numero": null,
+      "ordre": 102,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    },
+    {
+      "slug": "app-kds-ticket-en-grand",
+      "titre": "Ouvrir un ticket en grand",
+      "vignette_hook": "Allergies en rouge, rien n'échappe",
+      "ecran_kds": [
+        "/station",
+        "/ticket/:id"
+      ],
+      "etapes": [
+        "Touche l'en-tête d'un ticket",
+        "Les allergies et options sont en gros",
+        "« Même commande » montre les autres postes",
+        "Imprime le bon si besoin"
+      ],
+      "plan_final": "Ticket plein écran avec l'allergie en rouge (2,5 s)",
+      "donnees_demo": "KDS_SIMULATED=true — restaurant de démonstration « LUK n°53 » (Bar, Pâtisserie, Smoothies, Pass) livré avec l'app, aucun appel réseau",
+      "fiches_liees": [
+        "gerer-une-commande-en-direct-kds"
+      ],
+      "numero": null,
+      "ordre": 103,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    },
+    {
+      "slug": "app-kds-filtres-et-retards",
+      "titre": "Filtrer par source et voir les retards",
+      "vignette_hook": "Borne, QR, caisse : un filtre",
+      "ecran_kds": [
+        "/station"
+      ],
+      "etapes": [
+        "Filtre par source : caisse, borne, QR table, site",
+        "Le compteur rouge annonce les retards",
+        "ALL-DAY : le total par plat",
+        "Trie par ancienneté ou par rang"
+      ],
+      "plan_final": "Filtre « Borne » actif, compteur de retards visible (2,5 s)",
+      "donnees_demo": "KDS_SIMULATED=true — restaurant de démonstration « LUK n°53 » (Bar, Pâtisserie, Smoothies, Pass) livré avec l'app, aucun appel réseau",
+      "fiches_liees": [
+        "afficher-le-kds-par-poste"
+      ],
+      "numero": null,
+      "ordre": 104,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    },
+    {
+      "slug": "app-kds-vue-production",
+      "titre": "La vue production pour cuisiner en série",
+      "vignette_hook": "12 smoothies d'un coup",
+      "ecran_kds": [
+        "/production"
+      ],
+      "etapes": [
+        "Ouvre la vue Production",
+        "Le compte par plat, toutes commandes confondues",
+        "Prépare en série",
+        "Reviens à la vue tickets"
+      ],
+      "plan_final": "Liste des plats avec leurs quantités (2,5 s)",
+      "donnees_demo": "KDS_SIMULATED=true — restaurant de démonstration « LUK n°53 » (Bar, Pâtisserie, Smoothies, Pass) livré avec l'app, aucun appel réseau",
+      "fiches_liees": [
+        "afficher-le-kds-par-poste"
+      ],
+      "numero": null,
+      "ordre": 105,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    },
+    {
+      "slug": "app-kds-rappeler-un-ticket",
+      "titre": "Rappeler un ticket bumpé par erreur",
+      "vignette_hook": "Bumpé trop vite ? Rappelle-le",
+      "ecran_kds": [
+        "/station",
+        "/recall"
+      ],
+      "etapes": [
+        "Ouvre « Rappeler »",
+        "Retrouve le ticket par l'heure du bump",
+        "Touche-le : il revient sur l'écran",
+        "Le serveur est mis à jour"
+      ],
+      "plan_final": "Le ticket réapparaît sur le poste (2,5 s)",
+      "donnees_demo": "KDS_SIMULATED=true — restaurant de démonstration « LUK n°53 » (Bar, Pâtisserie, Smoothies, Pass) livré avec l'app, aucun appel réseau",
+      "fiches_liees": [
+        "gerer-une-commande-en-direct-kds"
+      ],
+      "numero": null,
+      "ordre": 106,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    },
+    {
+      "slug": "app-kds-le-pass",
+      "titre": "Le pass : servir une table et appeler un numéro",
+      "vignette_hook": "Toute la table part ensemble",
+      "ecran_kds": [
+        "/station (poste Pass)"
+      ],
+      "etapes": [
+        "Les tables à envoyer en même temps",
+        "SERVIR quand tout est prêt",
+        "FIRE pour réclamer l'envoi suivant",
+        "Sans table : appeler le numéro, puis Remis"
+      ],
+      "plan_final": "Numéro appelé puis « Remis » (2,5 s)",
+      "donnees_demo": "KDS_SIMULATED=true — restaurant de démonstration « LUK n°53 » (Bar, Pâtisserie, Smoothies, Pass) livré avec l'app, aucun appel réseau",
+      "fiches_liees": [
+        "gerer-une-commande-en-direct-kds",
+        "envoyer-en-cuisine-en-direct"
+      ],
+      "numero": null,
+      "ordre": 107,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    },
+    {
+      "slug": "app-kds-fiche-recette",
+      "titre": "La fiche recette depuis le ticket",
+      "vignette_hook": "Le commis ne se trompe plus",
+      "ecran_kds": [
+        "/ticket/:id",
+        "/recipe/:id"
+      ],
+      "etapes": [
+        "Touche « Fiche recette » sur un plat",
+        "Les ingrédients pour une portion",
+        "Les étapes, avec leur temps",
+        "La vidéo du geste si elle existe"
+      ],
+      "plan_final": "Fiche recette ouverte (2,5 s)",
+      "donnees_demo": "KDS_SIMULATED=true — restaurant de démonstration « LUK n°53 » (Bar, Pâtisserie, Smoothies, Pass) livré avec l'app, aucun appel réseau (aucune vidéo de recette en démonstration : le bouton vidéo n'est pas filmé comme actif)",
+      "fiches_liees": [],
+      "numero": null,
+      "ordre": 108,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    },
+    {
+      "slug": "app-kds-epuise-du-jour",
+      "titre": "Marquer un plat épuisé depuis la cuisine",
+      "vignette_hook": "Plus de mochi ? Un geste",
+      "ecran_kds": [
+        "/ticket/:id",
+        "/station"
+      ],
+      "etapes": [
+        "Appui sur un plat, « Épuisé aujourd'hui »",
+        "Confirme : caisse, QR, borne et site arrêtent de le vendre",
+        "Les épuisés du jour sont listés",
+        "« Remettre en vente » le rétablit"
+      ],
+      "plan_final": "Confirmation « … est épuisé pour aujourd'hui » (2,5 s)",
+      "donnees_demo": "KDS_SIMULATED=true — restaurant de démonstration « LUK n°53 » (Bar, Pâtisserie, Smoothies, Pass) livré avec l'app, aucun appel réseau",
+      "fiches_liees": [],
+      "numero": null,
+      "ordre": 109,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    },
+    {
+      "slug": "app-kds-sons-du-poste",
+      "titre": "Régler les sons du poste",
+      "vignette_hook": "Chaque poste a son son",
+      "ecran_kds": [
+        "/settings",
+        "/settings/sounds"
+      ],
+      "etapes": [
+        "Réglages › Sons du poste",
+        "Choisis un profil et écoute-le",
+        "Règle le volume des alertes",
+        "Plus fort pendant le coup de feu"
+      ],
+      "plan_final": "Profil choisi, volume réglé (2,5 s)",
+      "donnees_demo": "KDS_SIMULATED=true — restaurant de démonstration « LUK n°53 » (Bar, Pâtisserie, Smoothies, Pass) livré avec l'app, aucun appel réseau (le son de la vidéo = la voix ; les sons du poste ne sont pas joués à l'écran)",
+      "fiches_liees": [],
+      "numero": null,
+      "ordre": 110,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    },
+    {
+      "slug": "app-kds-mode-ecole",
+      "titre": "Former un commis avec le mode école",
+      "vignette_hook": "S'entraîner sans toucher au service",
+      "ecran_kds": [
+        "/settings",
+        "/station (mode école)",
+        "/training/report"
+      ],
+      "etapes": [
+        "Réglages › Démarrer le mode école",
+        "Des tickets d'entraînement avec la vraie carte",
+        "Le coach conseille pendant l'exercice",
+        "Le bilan : bumps justes, temps, oublis"
+      ],
+      "plan_final": "Bilan de l'exercice (2,5 s)",
+      "donnees_demo": "KDS_SIMULATED=true — restaurant de démonstration « LUK n°53 » (Bar, Pâtisserie, Smoothies, Pass) livré avec l'app, aucun appel réseau",
+      "fiches_liees": [],
+      "numero": null,
+      "ordre": 111,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    },
+    {
+      "slug": "app-kds-vue-du-chef",
+      "titre": "La vue du chef pendant le service",
+      "vignette_hook": "Tout le service en un coup d'œil",
+      "ecran_kds": [
+        "/chef"
+      ],
+      "etapes": [
+        "Ouvre la vue du chef",
+        "Les tickets actifs et les retards",
+        "Les tables qui attendent",
+        "Les temps moyens par plat"
+      ],
+      "plan_final": "Vue du chef avec les tables qui attendent (2,5 s)",
+      "donnees_demo": "KDS_SIMULATED=true — restaurant de démonstration « LUK n°53 » (Bar, Pâtisserie, Smoothies, Pass) livré avec l'app, aucun appel réseau",
+      "fiches_liees": [
+        "afficher-le-kds-par-poste"
+      ],
+      "numero": null,
+      "ordre": 112,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    },
+    {
+      "slug": "app-kds-hors-ligne",
+      "titre": "Wi-Fi coupé : la cuisine continue",
+      "vignette_hook": "Le Wi-Fi tombe, pas la cuisine",
+      "ecran_kds": [
+        "/station"
+      ],
+      "etapes": [
+        "Le bandeau signale la coupure",
+        "Les gestes s'appliquent tout de suite",
+        "Ils sont gardés et rejoués au retour du réseau",
+        "Rien n'est perdu ni compté deux fois"
+      ],
+      "plan_final": "Bandeau « gestes à envoyer » puis retour au temps réel (2,5 s)",
+      "donnees_demo": "Serveur FoodEatUp LOCAL (base kds_demo, « Burger Club » fictif, 7 commandes borne / QR table / caisse / site / téléphone), app appairée par un code généré localement — jamais la production (coupure simulée par Playwright, mode hors ligne du navigateur)",
+      "fiches_liees": [],
+      "numero": null,
+      "ordre": 113,
+      "module": "kds-cuisine",
+      "categorie": "service-kds",
+      "section": "Application tablette KDS"
+    }
+  ]
+}
