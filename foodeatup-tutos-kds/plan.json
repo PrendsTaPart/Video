@@ -35,7 +35,7 @@
     {
       "numero": "040",
       "slug": "app-kds-rythme-du-service",
-      "titre": "Rythme du service : envois en attente et saturation",
+      "titre": "Les envois en attente",
       "vignette_hook": "Les desserts partent au bon moment",
       "ecran_kds": [
         "/station",
