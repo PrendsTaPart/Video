@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:01,568
+Je l'ai construit en une journée.
+
+2
+00:00:01,568 --> 00:00:02,802
+Depuis mon téléphone.
+
+3
+00:00:02,802 --> 00:00:03,882
+La page de PrédiBot,
+
+4
+00:00:03,882 --> 00:00:05,393
+mon assistant de prévisions.
+
+5
+00:00:05,393 --> 00:00:07,114
+Tu poses une question en français, par
+
+6
+00:00:07,114 --> 00:00:08,699
+exemple : je commande quoi demain ?
+
+7
+00:00:08,699 --> 00:00:10,721
+Une question, la réponse chiffrée, avec
+
+8
+00:00:10,721 --> 00:00:12,381
+tes vraies ventes et tes stocks.
+
+9
+00:00:12,381 --> 00:00:14,107
+Moi, je relis et je valide.
+
+10
+00:00:14,107 --> 00:00:14,934
+Tu veux apprendre ?
+
+11
+00:00:14,934 --> 00:00:18,215
+Rejoins ma formation : formation.foodeatup.fr.
+
+12
+00:00:18,215 --> 00:00:20,572
+Deviens solo entrepreneur, apprends l'IA, à
+
+13
+00:00:20,572 --> 00:00:22,435
+créer et vendre des extensions, et
+
+14
+00:00:22,435 --> 00:00:24,298
+à vendre avec un simple téléphone.
+
+15
+00:00:24,298 --> 00:00:26,044
+Comme moi, avec mon Note 10.
+

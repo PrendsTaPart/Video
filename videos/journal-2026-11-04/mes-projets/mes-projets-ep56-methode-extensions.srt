@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:01,540
+Je l'ai construit en une journée.
+
+2
+00:00:01,540 --> 00:00:02,706
+Depuis mon téléphone.
+
+3
+00:00:02,706 --> 00:00:05,877
+La méthode pour créer une extension FoodEatUp.
+
+4
+00:00:05,877 --> 00:00:07,420
+Huit étapes, de l'idée jusqu'au Store.
+
+5
+00:00:07,420 --> 00:00:09,278
+Vendre, installer, construire :
+
+6
+00:00:09,278 --> 00:00:10,297
+à toi de choisir.
+
+7
+00:00:10,297 --> 00:00:11,946
+Moi, je relis et je valide.
+
+8
+00:00:11,946 --> 00:00:12,777
+Tu veux apprendre ?
+
+9
+00:00:12,777 --> 00:00:15,868
+Rejoins ma formation : formation.foodeatup.fr.
+
+10
+00:00:15,868 --> 00:00:18,155
+Deviens solo entrepreneur, apprends l'IA, à
+
+11
+00:00:18,155 --> 00:00:19,963
+créer et vendre des extensions, et
+
+12
+00:00:19,963 --> 00:00:21,772
+à vendre avec un simple téléphone.
+
+13
+00:00:21,772 --> 00:00:23,484
+Comme moi, avec mon Note 10.
+

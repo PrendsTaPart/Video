@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:01,082
+POV : tu cherches
+
+2
+00:00:01,082 --> 00:00:02,099
+un métier à toi…
+
+3
+00:00:02,099 --> 00:00:02,787
+et tu ne sais
+
+4
+00:00:02,787 --> 00:00:03,898
+pas par où commencer.
+
+5
+00:00:03,898 --> 00:00:05,268
+Lina, elle, a choisi de
+
+6
+00:00:05,268 --> 00:00:07,351
+vendre FoodEatUp aux restaurateurs.
+
+7
+00:00:07,351 --> 00:00:09,422
+Elle apprend le logiciel, reçoit ses
+
+8
+00:00:09,422 --> 00:00:11,205
+outils, et monte ses agents IA.
+
+9
+00:00:11,205 --> 00:00:13,595
+Douze cases, jusqu'à sa première commission.
+
+10
+00:00:13,595 --> 00:00:14,958
+Lis son histoire en BD.
+
+11
+00:00:14,958 --> 00:00:18,286
+C'est sur foodeatup.com/bd-foodeatup.
+

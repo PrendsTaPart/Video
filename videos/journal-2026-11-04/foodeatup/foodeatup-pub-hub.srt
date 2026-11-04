@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:02,359
+POV : tu ouvres un nouveau logiciel…
+
+2
+00:00:02,359 --> 00:00:04,089
+et tu ne sais pas où cliquer.
+
+3
+00:00:04,089 --> 00:00:06,696
+Avec FoodEatUp, chaque écran a sa fiche.
+
+4
+00:00:06,696 --> 00:00:08,375
+À quoi il sert, son tutoriel,
+
+5
+00:00:08,375 --> 00:00:09,880
+et le chef qui l'explique.
+
+6
+00:00:09,880 --> 00:00:12,512
+Caisse, salle, hygiène, stocks : tout
+
+7
+00:00:12,512 --> 00:00:14,575
+le logiciel, écran par écran.
+
+8
+00:00:14,575 --> 00:00:16,017
+Explore avant de choisir.
+
+9
+00:00:16,017 --> 00:00:18,678
+Va sur foodeatup.com/hub.
+

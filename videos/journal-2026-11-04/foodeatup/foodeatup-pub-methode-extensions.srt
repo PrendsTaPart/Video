@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:00,835
+POV : tu as une
+
+2
+00:00:00,835 --> 00:00:02,727
+idée d'outil pour les restaurants…
+
+3
+00:00:02,727 --> 00:00:03,537
+mais tu ne sais
+
+4
+00:00:03,537 --> 00:00:04,671
+pas par où commencer.
+
+5
+00:00:04,671 --> 00:00:07,600
+FoodEatUp t'a préparé la méthode.
+
+6
+00:00:07,600 --> 00:00:09,093
+Huit étapes, de l'idée jusqu'au Store.
+
+7
+00:00:09,093 --> 00:00:11,116
+Vendre, installer, construire :
+
+8
+00:00:11,116 --> 00:00:12,225
+à toi de choisir.
+
+9
+00:00:12,225 --> 00:00:13,490
+Lance ton extension.
+
+10
+00:00:13,490 --> 00:00:17,241
+C'est sur foodeatup.com/extensions/methode.
+

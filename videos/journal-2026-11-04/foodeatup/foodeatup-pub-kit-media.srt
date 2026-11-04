@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:00,946
+POV : tu écris
+
+2
+00:00:00,946 --> 00:00:02,635
+un article sur FoodEatUp…
+
+3
+00:00:02,635 --> 00:00:04,330
+et tu cherches le bon logo.
+
+4
+00:00:04,330 --> 00:00:05,829
+Tout est dans le kit média.
+
+5
+00:00:05,829 --> 00:00:09,496
+Logos officiels, couleurs, police, captures et vidéos.
+
+6
+00:00:09,496 --> 00:00:11,595
+Prêts à l'emploi, même pour une IA.
+
+7
+00:00:11,595 --> 00:00:12,786
+Télécharge le kit.
+
+8
+00:00:12,786 --> 00:00:15,647
+C'est sur foodeatup.com/kit-media.
+

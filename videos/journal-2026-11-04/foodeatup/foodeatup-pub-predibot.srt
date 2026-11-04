@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:00,822
+POV : il est
+
+2
+00:00:00,822 --> 00:00:02,192
+onze heures du soir…
+
+3
+00:00:02,192 --> 00:00:02,951
+et tu ne sais pas
+
+4
+00:00:02,951 --> 00:00:04,158
+quoi commander pour demain.
+
+5
+00:00:04,158 --> 00:00:05,567
+Avec FoodEatUp, tu poses
+
+6
+00:00:05,567 --> 00:00:06,976
+la question en français.
+
+7
+00:00:06,976 --> 00:00:08,981
+PrédiBot lit tes ventes et
+
+8
+00:00:08,981 --> 00:00:10,908
+tes stocks, puis propose.
+
+9
+00:00:10,908 --> 00:00:12,551
+Une question, la réponse chiffrée.
+
+10
+00:00:12,551 --> 00:00:13,326
+Toi, tu décides.
+
+11
+00:00:13,326 --> 00:00:14,351
+Essaie la démo.
+
+12
+00:00:14,351 --> 00:00:17,319
+C'est sur foodeatup.com/preditbot.
+
