@@ -1,0 +1,65 @@
+import json
+E='/tmp/claude-0/-home-user/ef008aff-2ade-5433-9524-47302a7a1a32/scratchpad/episodes'
+CTA=" Tu veux apprendre ? Rejoins ma formation : formation point foodeatup point f r. Deviens solo entrepreneur, apprends l'IA, à créer et vendre des extensions, et à vendre avec un simple téléphone. Comme moi, avec mon Note 10."
+HOOK="Je l'ai construit en une journée. Depuis mon téléphone. "
+REMP={"formation point foodeatup point f r":"formation.foodeatup.fr","FoodEatUp point com":"foodeatup.com","foodeatup point f r":"foodeatup.fr","slash kit média":"/kit-media","slash extensions, slash méthode":"/extensions/methode","slash prédibot":"/preditbot","slash hub":"/hub","slash ressources":"/ressources","slash B D FoodEatUp":"/bd-foodeatup","slash multilingue":"/multilingue",", /":"/"}
+FINMP={"image":"page-formation.png","crop":[2900,4150],"big":"Deviens <span style=\"color:#FFA500\">solo entrepreneur</span>","url":"formation.foodeatup.fr","sous":"IA, développement, extensions, vente… avec un simple téléphone. Comme moi, avec mon Note 10."}
+def V(src,frm,mot,leg): return {"type":"video","src":src,"from":frm,"mot":mot,"leg":leg}
+def I(src,crop,mot,leg): return {"type":"image","src":src,"crop":crop,"mot":mot,"leg":leg}
+def mp(k,corps,url,scenes):
+    return k,{"voix":f"{E}/src/v-{k}.mp3","fond":"#0F1A23","couleur":"#007BFF","accent":"#FFA500","badge":"MES PROJETS","photo":True,"remplacer":REMP,
+      "texte":HOOK+corps+CTA,"hook_phrases":2,"cta_phrases":4,"hook":"Je l'ai construit<br><em>en une journée</em>,<br>depuis mon téléphone.",
+      "mention":"Écrans réels · "+url,"scenes":scenes,"fin":FINMP}
+def c(k,texte,hook,url,scenes,big,sous,page,fcrop,hcrop,col="#0066FF",ncta=2):
+    return k,{"voix":f"{E}/src/v-{k}.mp3","fond":"#061428","couleur":col,"accent":"#FFA500","badge":"FOODEATUP","photo":False,"remplacer":REMP,
+      "texte":texte,"hook_phrases":2,"cta_phrases":ncta,"hook":hook,"mention":"Écrans réels · "+url,"scenes":scenes,
+      "fin":{"big":big,"url":url,"sous":sous,"image":page,"crop":fcrop},"hook_image":{"src":page,"crop":hcrop}}
+S=dict([
+ mp("mp-bd","Ma BD : douze cases, l'histoire vraie de Lina, de sa première formation à sa première commission. Avec Claude, j'ai écrit chaque case, et une vidéo pour chacune. Lina se forme, s'outille et vend l'écosystème FoodEatUp. Moi, je relis et je valide.","foodeatup.com/bd-foodeatup",
+   [V("bd-foodeatup.mp4",5,"<span>12</span> cases","L'histoire vraie de Lina"),V("bd-foodeatup.mp4",40,"Une <span>vidéo</span> par case","Écrite avec Claude"),V("bd-foodeatup.mp4",100,"Lina <span>vend</span>","Jusqu'à sa première commission"),I("page-bd-foodeatup.png",[2800,4500],"Moi, je <span>valide</span>","foodeatup.com/bd-foodeatup")]),
+ mp("mp-hub","Le Hub FoodEatUp : tout le logiciel, écran par écran. Pour chaque écran : à quoi il sert, son tutoriel, et le chef qui l'explique. Une infinité de solutions avec FoodEatUp. Moi, je relis et je valide.","foodeatup.com/hub",
+   [I("page-hub.png",[0,1700],"Tout, <span>écran par écran</span>","foodeatup.com/hub"),V("hub_service.mp4",1,"Le chef <span>explique</span>","À quoi il sert, son tutoriel"),V("hub_haccp.mp4",1,"Une <span>infinité</span> de solutions","Service, HACCP, stocks…"),I("page-hub.png",[1950,3700],"Moi, je <span>valide</span>","foodeatup.com/hub")]),
+ mp("mp-res","Mes ressources FoodEatUp, toutes au même endroit. Des modèles à ton nom, gratuits et prêts à imprimer : devis, fiches recettes, registres d'hygiène, menus enfants. Et aussi des tutoriels, des comparatifs et une démo à jouer. Moi, je relis et je valide.","foodeatup.com/ressources",
+   [I("page-ressources.png",[0,1500],"Tout <span>au même endroit</span>","foodeatup.com/ressources"),I("page-ressources.png",[4900,6000],"<span>Gratuits</span>, à ton nom","Devis, recettes, hygiène, menus enfants"),I("page-ressources.png",[1900,3500],"Tutoriels, <span>démo</span>","Comparatifs et webinaires"),I("page-ressources.png",[0,1100],"Moi, je <span>valide</span>","foodeatup.com/ressources")]),
+ mp("mp-pred","La page de PrédiBot, mon assistant de prévisions. Tu poses une question en français, par exemple : je commande quoi demain ? Une question, la réponse chiffrée, avec tes vraies ventes et tes stocks. Moi, je relis et je valide.","foodeatup.com/preditbot",
+   [I("page-preditbot.png",[0,1700],"Mon <span>PrédiBot</span>","foodeatup.com/preditbot"),V("preditbot.mp4",5,"Une <span>question</span>","En français"),I("page-preditbot.png",[3300,5000],"La réponse <span>chiffrée</span>","Tes ventes, tes stocks"),V("preditbot.mp4",13,"Moi, je <span>valide</span>","Rien ne part sans accord")]),
+ mp("mp-multi","FoodEatUp parle la langue de ton équipe. L'application d'hygiène en tamoul, les recettes en anglais, le menu en espagnol ou en chinois. FoodEatUp s'adapte à la culture et à la langue de ton équipe. Moi, je relis et je valide.","foodeatup.com/multilingue",
+   [I("page-multilingue.png",[0,1700],"Chacun <span>sa langue</span>","foodeatup.com/multilingue"),V("multilingue.mp4",1,"Tamoul, arabe, <span>anglais</span>","L'application d'hygiène"),V("multilingue.mp4",13,"Le menu <span>aussi</span>","Espagnol, chinois…"),I("page-multilingue.png",[4900,6000],"Moi, je <span>valide</span>","Langue par langue, sans promesse")]),
+ mp("mp-kit","Le kit média de FoodEatUp. Les logos officiels, les couleurs, la police, les vidéos : tout est prêt à l'emploi. Même une version pour les intelligences artificielles, qui la lisent toutes seules. Moi, je relis et je valide.","foodeatup.com/kit-media",
+   [I("page-kit-media.png",[0,1500],"Le <span>kit média</span>","foodeatup.com/kit-media"),I("page-kit-media.png",[1500,3300],"Logos <span>officiels</span>","Couleurs, police, vidéos"),I("page-kit-media.png",[0,1000],"Lisible <span>par les IA</span>","Une version faite pour elles"),I("page-kit-media.png",[3300,5300],"Moi, je <span>valide</span>","Les règles d'usage du logo")]),
+ mp("mp-meth","La méthode pour créer une extension FoodEatUp. Huit étapes, de l'idée jusqu'au Store. Vendre, installer, construire : à toi de choisir. Moi, je relis et je valide.","foodeatup.com/extensions/methode",
+   [I("page-extensions_methode.png",[0,1700],"Ton idée, <span>une extension</span>","foodeatup.com/extensions/methode"),V("extensions.mp4",1,"De l'idée <span>au Store</span>","Pas à pas"),I("page-extensions_methode.png",[1950,3700],"Vendre, installer, <span>construire</span>","À toi de choisir"),V("extensions.mp4",17,"Moi, je <span>valide</span>","Cent idées pour démarrer")]),
+ c("c-bd","[excited] POV : tu cherches un métier à toi… et tu ne sais pas par où commencer. Lina, elle, a choisi de vendre FoodEatUp aux restaurateurs. Elle apprend le logiciel, reçoit ses outils, et monte ses agents IA. Douze cases, jusqu'à sa première commission. Lis son histoire en BD. C'est sur FoodEatUp point com, slash B D FoodEatUp.",
+   "POV : tu cherches un métier à toi… et tu <em>ne sais pas par où commencer</em>.","foodeatup.com/bd-foodeatup",
+   [V("bd-foodeatup.mp4",20,"Lina <span>vend</span> FoodEatUp","Aux restaurateurs"),V("bd-foodeatup.mp4",60,"Ses outils, <span>ses agents IA</span>","Elle prépare, elle décide"),I("page-bd-foodeatup.png",[2800,4500],"<span>12</span> cases","Une histoire vraie")],
+   "Lis son histoire <span style=\"color:#FFA500\">en BD</span>.","À lire, en vidéo ou en PDF","page-bd-foodeatup.png",[0,1100],[0,1200]),
+ c("c-hub","[excited] POV : tu ouvres un nouveau logiciel… et tu ne sais pas où cliquer. Avec FoodEatUp, chaque écran a sa fiche. À quoi il sert, son tutoriel, et le chef qui l'explique. Caisse, salle, hygiène, stocks : tout le logiciel, écran par écran. Explore avant de choisir. Va sur FoodEatUp point com, slash hub.",
+   "POV : tu ouvres un nouveau logiciel… et tu <em>ne sais pas où cliquer</em>.","foodeatup.com/hub",
+   [I("page-hub.png",[0,1700],"Chaque écran, <span>sa fiche</span>","foodeatup.com/hub"),V("hub_service.mp4",1,"Le chef <span>t'explique</span>","À quoi il sert, son tutoriel"),V("hub_haccp.mp4",1,"Tout le <span>logiciel</span>","Caisse, salle, hygiène, stocks")],
+   "Explore <span style=\"color:#FFA500\">avant de choisir</span>.","Une infinité de solutions avec FoodEatUp","page-hub.png",[0,1100],[1950,3200]),
+ c("c-res","[excited] POV : il te faut un registre d'hygiène pour demain… et tu pars de zéro. Chez FoodEatUp, les modèles sont gratuits, et à ton nom. Devis, fiches recettes, registres d'hygiène, menus enfants, affiches. Gratuits, prêts à imprimer. Va les chercher. C'est sur FoodEatUp point com, slash ressources.",
+   "POV : il te faut un registre d'hygiène pour demain… et tu <em>pars de zéro</em>.","foodeatup.com/ressources",
+   [I("page-ressources.png",[0,1500],"<span>Gratuits</span>, à ton nom","foodeatup.com/ressources"),I("page-ressources.png",[4900,6000],"Devis, recettes, <span>hygiène</span>","Menus enfants, affiches"),I("page-ressources.png",[1900,3500],"Prêts à <span>imprimer</span>","Et des tutoriels en vidéo")],
+   "Va les <span style=\"color:#FFA500\">chercher</span>.","Gratuites, prêtes à imprimer","page-ressources.png",[0,1100],[4900,6000]),
+ c("c-pred","[excited] POV : il est onze heures du soir… et tu ne sais pas quoi commander pour demain. Avec FoodEatUp, tu poses la question en français. PrédiBot lit tes ventes et tes stocks, puis propose. Une question, la réponse chiffrée. Toi, tu décides. Essaie la démo. C'est sur FoodEatUp point com, slash prédibot.",
+   "POV : il est 23 h… et tu <em>ne sais pas quoi commander</em> pour demain.","foodeatup.com/preditbot",
+   [I("page-preditbot.png",[0,1700],"Une question <span>en français</span>","foodeatup.com/preditbot"),I("page-preditbot.png",[3300,5000],"Tes ventes, <span>tes stocks</span>","PrédiBot propose"),V("preditbot.mp4",7,"La réponse <span>chiffrée</span>","Avec tes vrais chiffres"),V("preditbot.mp4",13,"Toi, tu <span>décides</span>","Tu valides avant l'action")],
+   "Essaie <span style=\"color:#FFA500\">la démo</span>.","Une question. La réponse chiffrée.","page-preditbot.png",[0,1100],[0,1200],col="#7C5CFF"),
+ c("c-multi","[excited] POV : ton commis hoche la tête… mais il n'a pas compris la consigne. Avec FoodEatUp, chacun travaille dans sa langue. L'application d'hygiène en tamoul, en arabe ou en anglais. Le menu digital en espagnol ou en chinois, pour tes clients. Et tes documents de contrôle restent en français. Ton équipe parle sa langue, FoodEatUp aussi. Découvre-le sur FoodEatUp point com, slash multilingue.",
+   "POV : ton commis hoche la tête… mais il <em>n'a pas compris</em>.","foodeatup.com/multilingue",
+   [I("page-multilingue.png",[0,1700],"Chacun <span>sa langue</span>","foodeatup.com/multilingue"),V("multilingue.mp4",1,"Tamoul, arabe, <span>anglais</span>","L'application d'hygiène"),V("multilingue.mp4",13,"Espagnol, <span>chinois</span>","Le menu de tes clients"),I("page-multilingue.png",[2300,4300],"Contrôles <span>en français</span>","Tes documents ne changent pas")],
+   "Ton équipe parle sa langue. <span style=\"color:#FFA500\">FoodEatUp aussi.</span>","Applications d'équipe et de clients","page-multilingue.png",[0,1100],[0,1200]),
+ c("c-kit","[excited] POV : tu écris un article sur FoodEatUp… et tu cherches le bon logo. Tout est dans le kit média. Logos officiels, couleurs, police, captures et vidéos. Prêts à l'emploi, même pour une IA. Télécharge le kit. C'est sur FoodEatUp point com, slash kit média.",
+   "POV : tu écris sur FoodEatUp… et tu <em>cherches le bon logo</em>.","foodeatup.com/kit-media",
+   [I("page-kit-media.png",[0,1500],"Le <span>kit média</span>","foodeatup.com/kit-media"),I("page-kit-media.png",[1500,3300],"Logos <span>officiels</span>","Couleurs, police, captures, vidéos"),I("page-kit-media.png",[5300,6000],"Prêts <span>à l'emploi</span>","Même pour une IA")],
+   "Télécharge <span style=\"color:#FFA500\">le kit</span>.","Logos, couleurs, vidéos : le kit média officiel.","page-kit-media.png",[0,1100],[1000,2200]),
+ c("c-meth","[excited] POV : tu as une idée d'outil pour les restaurants… mais tu ne sais pas par où commencer. FoodEatUp t'a préparé la méthode. Huit étapes, de l'idée jusqu'au Store. Vendre, installer, construire : à toi de choisir. Lance ton extension. C'est sur FoodEatUp point com, slash extensions, slash méthode.",
+   "POV : tu as une idée d'outil pour les restaurants… mais <em>par où commencer</em> ?","foodeatup.com/extensions/methode",
+   [I("page-extensions_methode.png",[0,1700],"La <span>méthode</span>","foodeatup.com/extensions/methode"),V("extensions.mp4",1,"De l'idée <span>au Store</span>","Pas à pas"),I("page-extensions_methode.png",[1950,3700],"Vendre, installer, <span>construire</span>","À toi de choisir")],
+   "Lance <span style=\"color:#FFA500\">ton extension</span>.","Vendre, installer, construire : à toi de choisir.","page-extensions_methode.png",[0,1100],[1950,3200]),
+])
+import re
+for k,v in S.items():
+    json.dump(v,open(f'{E}/specs/{k}.json','w'),ensure_ascii=False)
+    t=re.sub(r'\[[^\]]+\]\s*','',v['texte']); ph=re.findall(r'[^.!?…]+[.!?…]+',t)
+    print(k,len(t),'car',len(ph),'phrases mid',len(ph)-v['hook_phrases']-v['cta_phrases'],'scenes',len(v['scenes']))
