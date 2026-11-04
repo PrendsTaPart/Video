@@ -29,7 +29,8 @@
       "ordre": 100,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     },
     {
       "numero": "040",
@@ -55,7 +56,8 @@
       "ordre": 101,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     },
     {
       "slug": "app-kds-gestes-du-poste",
@@ -79,7 +81,8 @@
       "ordre": 102,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     },
     {
       "slug": "app-kds-ticket-en-grand",
@@ -104,7 +107,8 @@
       "ordre": 103,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     },
     {
       "slug": "app-kds-filtres-et-retards",
@@ -128,7 +132,8 @@
       "ordre": 104,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     },
     {
       "slug": "app-kds-vue-production",
@@ -152,7 +157,8 @@
       "ordre": 105,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     },
     {
       "slug": "app-kds-rappeler-un-ticket",
@@ -177,7 +183,8 @@
       "ordre": 106,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     },
     {
       "slug": "app-kds-le-pass",
@@ -202,7 +209,8 @@
       "ordre": 107,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     },
     {
       "slug": "app-kds-fiche-recette",
@@ -225,7 +233,8 @@
       "ordre": 108,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     },
     {
       "slug": "app-kds-epuise-du-jour",
@@ -248,7 +257,8 @@
       "ordre": 109,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     },
     {
       "slug": "app-kds-sons-du-poste",
@@ -271,7 +281,8 @@
       "ordre": 110,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     },
     {
       "slug": "app-kds-mode-ecole",
@@ -295,7 +306,8 @@
       "ordre": 111,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     },
     {
       "slug": "app-kds-vue-du-chef",
@@ -319,7 +331,8 @@
       "ordre": 112,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     },
     {
       "slug": "app-kds-hors-ligne",
@@ -341,7 +354,73 @@
       "ordre": 113,
       "module": "kds-cuisine",
       "categorie": "service-kds",
-      "section": "Application tablette KDS"
+      "section": "Application tablette KDS",
+      "statut": "a_produire"
     }
-  ]
+  ],
+  "valide": {
+    "le": "2026-11-04",
+    "par": "Michael",
+    "voix": "ElevenLabs Adam TGAegA0zNRi8I6nUdq3i, modèle eleven_v4, une prise"
+  },
+  "chaine_production": [
+    "1. Rushes : vrais écrans de l'application KDS (mode simulé ou base kds_demo locale), enregistrés avec Playwright + faux curseur",
+    "2. Voix : Adam eleven_v4 (coût annoncé dans statut.csv)",
+    "3. Montage : HyperFrames 0.9.5 local, 1920x1080, sous-titres, carton final",
+    "4. Vignette et images : demandées à Lovable (projet Académie 55ff35b7-c442-42c4-950c-8c7fd420c645), 16:9, écran réel + chef + hook",
+    "5. Contrôle qualité : ffprobe + 4 images extraites, statut.csv au vert",
+    "6. Hébergement : RapidoCMS bibliothèque (foodeatup-app-kds-<sujet>-tuto / -vignette), HTTPS 200 vérifié",
+    "7. Académie : fiches et vidéos ajoutées par le dépôt GitHub PrendsTaPart/foodeatup-guide-star-227b4772 (fichier de données src/data/fiches-app-kds.ts, sur branche + PR, jamais de réécriture d'historique)",
+    "8. YouTube : publication sur la chaîne FoodEatUp (UC0Mc8pkW4t3uVjbI-ULptUA) par le MCP YouTube, miniature attachée, lien ajouté à la fiche"
+  ],
+  "calendrier": {
+    "fuseau": "Europe/Paris",
+    "creneaux": [
+      {
+        "heure": "2026-11-04 20h10",
+        "travail": "préparation de la chaîne (enregistrement, gabarit de montage, demande Lovable des 14 vignettes)"
+      },
+      {
+        "heure": "2026-11-05 00h10",
+        "videos": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "heure": "2026-11-05 05h10",
+        "videos": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "heure": "2026-11-05 10h10",
+        "videos": [
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "heure": "2026-11-05 15h10",
+        "videos": [
+          10,
+          11,
+          12
+        ]
+      },
+      {
+        "heure": "2026-11-05 20h10",
+        "videos": [
+          13,
+          14
+        ],
+        "plus": "bilan final, PR Académie, rapport"
+      }
+    ],
+    "regle": "une vidéo n'est publiée (Académie, YouTube) qu'avec vidéo, vignette et contrôle qualité au vert"
+  }
 }
