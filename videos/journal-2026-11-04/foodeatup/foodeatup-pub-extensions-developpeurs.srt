@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:01,742
+POV : tu es développeur, et un
+
+2
+00:00:01,742 --> 00:00:04,180
+restaurant te demande un outil sur mesure.
+
+3
+00:00:04,180 --> 00:00:05,617
+Pas besoin de tout refaire.
+
+4
+00:00:05,617 --> 00:00:08,073
+Avec FoodEatUp, tu branches ton application,
+
+5
+00:00:08,073 --> 00:00:09,525
+ton agent IA ou ton plugin
+
+6
+00:00:09,525 --> 00:00:11,590
+Claude sur le logiciel du restaurant.
+
+7
+00:00:11,590 --> 00:00:13,245
+Puis tu la publies dans le Store.
+
+8
+00:00:13,245 --> 00:00:15,401
+Cent idées d'extensions t'attendent déjà.
+
+9
+00:00:15,401 --> 00:00:17,352
+Construis la suite de FoodEatUp.
+
+10
+00:00:17,352 --> 00:00:20,506
+Rendez-vous sur foodeatup.com, slash extensions.
+

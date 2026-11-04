@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:01,670
+POV : ta caisse, ta cuisine et
+
+2
+00:00:01,670 --> 00:00:03,340
+ta fidélité ne se parlent pas.
+
+3
+00:00:03,340 --> 00:00:05,280
+Avec FoodEatUp, tu saisis une fois,
+
+4
+00:00:05,280 --> 00:00:06,500
+et tout le reste suit.
+
+5
+00:00:06,500 --> 00:00:08,553
+Une vente part : la cuisine reçoit
+
+6
+00:00:08,553 --> 00:00:11,150
+la commande, la fidélité compte les points,
+
+7
+00:00:11,150 --> 00:00:13,022
+tes chiffres se mettent à jour.
+
+8
+00:00:13,022 --> 00:00:13,931
+Une vente part.
+
+9
+00:00:13,931 --> 00:00:15,956
+Huit boucles tournent.
+
+10
+00:00:15,956 --> 00:00:17,926
+Découvre-les sur foodeatup.com, et
+
+11
+00:00:17,926 --> 00:00:19,722
+essaie gratuitement sept jours.
+
