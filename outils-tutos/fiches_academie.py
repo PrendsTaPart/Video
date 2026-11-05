@@ -35,3 +35,13 @@ def fiches(T, cfg, textes, titres_bo):
             f' * dossier {os.path.basename(cfg["dossier"])}. Fichiers hébergés dans la bibliothèque RapidoCMS.\n'
             f' * Comme fichesAppKds, ces fiches s\'ajoutent au catalogue en base sans jamais écraser\n * un contenu édité dans l\'admin.\n */\n'
             f'export const {cfg["export"]}: Tutorial[] = {corps};\n')
+
+def titres_academie(D):
+    """slug -> titre de toutes les fiches déclarées dans src/data/*.ts du dépôt de l'Académie."""
+    import glob, re
+    t = {}
+    for f in glob.glob(os.path.join(D, "src/data/*.ts")):
+        for b in re.split(r"\n  \{", open(f).read()):
+            s, ti = re.search(r'slug"?: "([^"]+)"', b), re.search(r'title"?: "([^"]+)"', b)
+            if s and ti: t.setdefault(s.group(1), ti.group(1))
+    return t

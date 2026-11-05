@@ -89,7 +89,7 @@ ol {{ position:absolute; left:{tx}px; top:{430 if tx < 1000 else 400}px; right:{
 .etape {{ display:flex; align-items:center; gap:22px; background:rgba(252,249,230,.07); border:2px solid rgba(252,249,230,.12); border-radius:24px; padding:16px 24px; font-size:{33 if tx < 1000 else 29}px; font-weight:600; opacity:0; }}
 .num {{ flex-shrink:0; width:56px; height:56px; border-radius:999px; background:#007BFF; color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:30px; }}
 .etape:nth-child(even) .num {{ background:#FFA500; color:#1d1300; }}
-.chef {{ position:absolute; right:70px; bottom:150px; width:{260 if tx < 1000 else 0}px; height:260px; border-radius:999px; object-fit:cover; background:#fff; border:8px solid #FFA500; }}
+.chef {{ position:absolute; right:70px; bottom:{150 if tx < 1000 else 60}px; width:{260 if tx < 1000 else 170}px; height:{260 if tx < 1000 else 170}px; border-radius:999px; object-fit:cover; background:#fff; border:8px solid #FFA500; }}
 .demo {{ position:absolute; left:{ap["x"]}px; top:{ap["y"] - 40}px; width:{W}px; text-align:center; font-size:20px; font-weight:600; color:#AEB8C2; }}
 .sub {{ position:absolute; left:0; right:0; bottom:34px; text-align:center; font-size:44px; font-weight:800; color:#fff;
   background:rgba(5,9,13,.85); padding:10px 26px; border-radius:18px; display:table; margin:0 auto; opacity:0; z-index:5; }}
@@ -104,7 +104,7 @@ ol {{ position:absolute; left:{tx}px; top:{430 if tx < 1000 else 400}px; right:{
   <div class="app" id="app"><div class="vitre">{imgs}<div id="onde"></div><div id="cur"></div></div></div>
   <p class="demo" id="demo">Démonstration · restaurant fictif</p>
   <img class="logo" id="logo" src="assets/logo.png" alt="FoodEatUp">
-  <p class="rub" id="rub">{e(cfg["rubrique"])} · tutoriel {i+1}/{n_total}</p>
+  <p class="rub" id="rub">{e(cfg["rubrique"])} · tutoriel {v.get("numero", i+1)}/{cfg.get("total", n_total)}</p>
   <h1 class="titre" id="titre">{e(v["titre"])}</h1>
   <ol>{etapes}</ol>
   <img class="chef" id="chef" src="assets/chef.webp" alt="">
