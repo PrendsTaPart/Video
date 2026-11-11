@@ -1,0 +1,52 @@
+[
+  {
+    "mot": "Parcourir,",
+    "debut": 0,
+    "fin": 0.697
+  },
+  {
+    "mot": "puis",
+    "debut": 0.766,
+    "fin": 1.033
+  },
+  {
+    "mot": "Ajouter.",
+    "debut": 1.115,
+    "fin": 1.614
+  },
+  {
+    "mot": "C'est",
+    "debut": 1.672,
+    "fin": 1.939
+  },
+  {
+    "mot": "ce",
+    "debut": 1.974,
+    "fin": 2.171
+  },
+  {
+    "mot": "bouton-là",
+    "debut": 2.252,
+    "fin": 2.74
+  },
+  {
+    "mot": "qui",
+    "debut": 2.798,
+    "fin": 2.914
+  },
+  {
+    "mot": "attache",
+    "debut": 2.961,
+    "fin": 3.228
+  },
+  {
+    "mot": "le",
+    "debut": 3.251,
+    "fin": 3.32
+  },
+  {
+    "mot": "document.",
+    "debut": 3.367,
+    "fin": 3.82
+  }
+]

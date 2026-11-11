@@ -1,0 +1,90 @@
+{
+  "fonctionnalite": "Consulter l'historique des contrats d'une entreprise",
+  "a_quoi_ca_sert": "Voir d'un coup d'œil les contrats envoyés à un client, leurs dates de validité et leur statut, puis ouvrir le document lui-même pour le relire.",
+  "pour_qui": "Gérant ou commercial qui vérifie l'état d'un engagement",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert l'historique de l'entreprise"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Colonnes du tableau",
+      "obligatoire": false,
+      "explication": "Destinataire, Date de début, Date de fin, Statut et Action. Une ligne par contrat envoyé."
+    },
+    {
+      "nom": "Statut",
+      "obligatoire": false,
+      "explication": "L'état du contrat, affiché en pastille : en attente tant qu'il n'est pas signé."
+    },
+    {
+      "nom": "Menu de la ligne",
+      "obligatoire": false,
+      "explication": "Le bouton à trois points de la colonne Action. Il ouvre le contrat, qui s'affiche dans la visionneuse du navigateur."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_contrats",
+      "role": "Liste les contrats clients, filtrables par statut, par entreprise et par dates. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["statut", "entreprise_id", "date_debut", "date_fin", "q", "limit"],
+      "exemple_appel": { "statut": "en_attente", "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Regarder la date de fin autant que le statut : un contrat signé qui expire demain demande la même attention qu'un contrat en attente.",
+    "Ouvrir le document plutôt que de se fier au tableau quand il s'agit d'une clause."
+  ],
+  "erreurs_frequentes": [
+    "Chercher un bouton « Voir » : c'est le menu à trois points de la ligne qui ouvre le contrat.",
+    "Confondre la date de début du contrat et la date de son envoi : le tableau affiche la validité."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Vérifier si un contrat a été signé",
+      "contexte": "Le client dit avoir renvoyé le contrat.",
+      "action": "Ouvrez l'historique des contrats et lisez la colonne Statut.",
+      "resultat_attendu": "La pastille indique l'état réel du contrat."
+    },
+    {
+      "titre": "Relire une clause",
+      "contexte": "Une question porte sur la durée d'engagement.",
+      "action": "Ouvrez le contrat depuis le menu de la ligne et parcourez ses pages dans la visionneuse.",
+      "resultat_attendu": "Le document s'ouvre, page par page, avec ses vignettes sur le côté."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le contrat s'ouvre dans un onglet",
+      "contenu": "Le document part dans un nouvel onglet : le journal reste ouvert derrière.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Les vignettes servent de sommaire",
+      "contenu": "La colonne de gauche de la visionneuse montre les pages : on saute directement à la bonne.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Un champ de recherche au-dessus du tableau",
+      "contenu": "« Chercher une page » filtre le journal quand les contrats s'accumulent.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver les contrats en attente",
+    "texte": "Liste-moi mes [nombre] contrats en attente avec leur destinataire et leurs dates.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_contrats"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 à 00:08 — bouton Consulter puis tableau des contrats",
+    "a_quoi_ca_sert": "frames 00:08 et 00:13 — tableau puis visionneuse du contrat",
+    "champs_cles": "frames 00:08 et 00:09",
+    "outils_mcp": "schéma list_contrats",
+    "erreurs_frequentes": "frames 00:09 (menu à trois points) et 00:08 (colonnes de dates)",
+    "cas_usage": "frames 00:08 à 00:17",
+    "astuces": "frames 00:11, 00:13 et 00:08"
+  },
+  "a_verifier": []
+}

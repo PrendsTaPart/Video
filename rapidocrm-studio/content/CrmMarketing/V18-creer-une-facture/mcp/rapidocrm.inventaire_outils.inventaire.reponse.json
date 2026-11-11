@@ -1,0 +1,37 @@
+{
+  "outils": [
+    {
+      "nom": "list_factures",
+      "description": "Lister les factures du CRM (en attente, payées, etc.).",
+      "parametres": [
+        {
+          "nom": "statut",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtrer par statut"
+        },
+        {
+          "nom": "periode",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": ""
+        },
+        {
+          "nom": "limit",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre maximum de lignes (défaut 20)"
+        }
+      ]
+    }
+  ]
+}

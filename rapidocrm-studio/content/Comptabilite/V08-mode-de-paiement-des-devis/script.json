@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "module": "Comptabilite",
+    "module_slug": "05-comptabilite",
+    "numero": 8,
+    "titre": "Renseigner le mode de paiement d'un devis",
+    "titre_court": "Mode de paiement du devis",
+    "slug": "05-mode-de-paiement-des-devis"
+  },
+  "hook": {
+    "texte": "Le client vous dit qu'il paiera par virement. Trois semaines plus tard, personne ne s'en souvient.",
+    "promesse": "Une case cochée sur le devis, et c'est écrit.",
+    "duree": 8,
+    "alternatives": [
+      "Ce qui se dit au téléphone ne se retrouve pas dans un dossier.",
+      "Le moyen de paiement se décide avant la facture, pas après.",
+      "Un devis complet, c'est un devis qui dit aussi comment on règle."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la liste des devis, et on ressort avec un moyen de paiement noté sur l'un d'eux. Le réglage est dans le devis, sous le statut : espèce, carte, virement ou chèque. Une seule case à la fois.",
+    "duree": 17
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir la liste des devis",
+        "voix": "L'onglet devis, et la liste. Les trois points ouvrent le menu.",
+        "debut_source": 0,
+        "fin_source": 4.5,
+        "zone_focus": {
+          "x": 0.24,
+          "y": 0.25,
+          "w": 0.74,
+          "h": 0.72
+        },
+        "annotation": "Onglet devis"
+      },
+      {
+        "numero": 2,
+        "titre": "Ouvrir le devis en modification",
+        "voix": "Modifier. Le formulaire se rouvre tel qu'il a été rempli.",
+        "debut_source": 4.5,
+        "fin_source": 8.5,
+        "zone_focus": {
+          "x": 0.62,
+          "y": 0.35,
+          "w": 0.28,
+          "h": 0.35
+        },
+        "annotation": "Modifier"
+      },
+      {
+        "numero": 3,
+        "titre": "Descendre au mode de paiement",
+        "voix": "On descend au bloc Mode de paiement. Quatre moyens, et une étoile.",
+        "debut_source": 8.5,
+        "fin_source": 12.5,
+        "zone_focus": {
+          "x": 0.27,
+          "y": 0.28,
+          "w": 0.41,
+          "h": 0.38
+        },
+        "annotation": "Mode de paiement"
+      },
+      {
+        "numero": 4,
+        "titre": "Choisir le mode et enregistrer",
+        "voix": "Virement. Puis modifier, en bas.",
+        "debut_source": 12.5,
+        "fin_source": 15,
+        "zone_focus": {
+          "x": 0.27,
+          "y": 0,
+          "w": 0.41,
+          "h": 0.9
+        },
+        "annotation": "Virement"
+      },
+      {
+        "numero": 5,
+        "titre": "Lire la confirmation",
+        "voix": "Et c'est enregistré.",
+        "debut_source": 15,
+        "fin_source": 17.08,
+        "zone_focus": {
+          "x": 0.68,
+          "y": 0,
+          "w": 0.32,
+          "h": 0.2
+        },
+        "annotation": "Devis modifié"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Le moyen est noté. Pour retrouver les devis qui attendent encore une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] devis en attente avec leur destinataire et leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_devis"
+    },
+    "resultat_affiche": {
+      "titre": "3 devis en attente",
+      "lignes": [
+        "N° 2 — cabinet lefèvre — 5 760,00 €",
+        "N° 3 — olive & lin — 3 360,00 €",
+        "N° 4 — agence lumière — 5 760,00 €"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Un moyen de paiement noté sur le devis, c'est une question de moins à la facture.",
+    "duree": 8,
+    "alternatives": [
+      "Ce qui est coché se retrouve ; ce qui est dit se perd.",
+      "Le devis dit ce qu'on vend, et comment on est payé.",
+      "Une case aujourd'hui, un rapprochement en moins demain."
+    ]
+  },
+  "seo": {
+    "titre": "Mode de paiement d'un devis — RapidoCRM",
+    "description": "Renseignez le mode de paiement d'un devis RapidoCRM : espèce, carte, virement ou chèque, dans le formulaire du devis. Le tutoriel de l'Académie.",
+    "mots_cles": [
+      "mode de paiement",
+      "devis",
+      "RapidoCRM",
+      "virement",
+      "facturation",
+      "CRM"
+    ],
+    "youtube_titre": "Mode de paiement d'un devis — RapidoCRM",
+    "youtube_description": "Le tutoriel du mode de paiement d'un devis sur RapidoCRM : où se trouve le réglage, les quatre moyens proposés, et le récapitulatif des totaux juste en dessous. RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "devis",
+      "mode de paiement",
+      "CRM",
+      "facturation"
+    ]
+  }
+}

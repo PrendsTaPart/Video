@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "module": "Equipe",
+    "module_slug": "02-utilisateur",
+    "numero": 3,
+    "titre": "Modifier un objectif",
+    "titre_court": "Modifier un objectif",
+    "slug": "02-ajouter-modifier-un-objectif"
+  },
+  "hook": {
+    "texte": "Votre commercial dépasse ses objectifs depuis deux mois. Ses objectifs, eux, n'ont pas bougé.",
+    "promesse": "Quatre compteurs, et son mois redevient lisible.",
+    "duree": 8,
+    "alternatives": [
+      "Un objectif qu'on ne révise jamais finit par ne plus rien mesurer.",
+      "Le pourcentage d'atteinte ne vaut que ce que vaut la cible.",
+      "Quatre chiffres à jour valent mieux qu'un tableau de bord flatteur."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la fiche d'un commercial, et on ressort avec ses objectifs du mois remis à jour. Sur sa fiche, un bloc affiche le pourcentage des objectifs atteints, ligne par ligne. Ce pourcentage se calcule sur quatre compteurs, et ces quatre compteurs se règlent à un seul endroit : la roue crantée de la fiche, puis modifier les objectifs. Ce sont les mêmes quatre compteurs que ceux saisis à la création du commercial : sms envoyés, emails envoyés, rendez-vous organisés, contrats signés.",
+    "duree": 30
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir la fiche du commercial",
+        "voix": "Depuis la liste des commerciaux, voir profil.",
+        "debut_source": 0,
+        "fin_source": 6.0,
+        "zone_focus": {
+          "x": 0.0,
+          "y": 0.02,
+          "w": 1.0,
+          "h": 0.96
+        },
+        "annotation": "voir profil",
+        "point": {
+          "x": 0.35,
+          "y": 0.87
+        }
+      },
+      {
+        "numero": 2,
+        "titre": "Lire sa progression",
+        "voix": "La fiche affiche ses compteurs et le pourcentage des objectifs atteints.",
+        "debut_source": 6.0,
+        "fin_source": 10.5,
+        "zone_focus": {
+          "x": 0.45,
+          "y": 0.2,
+          "w": 0.54,
+          "h": 0.78
+        },
+        "annotation": "objectifs atteints",
+        "point": {
+          "x": 0.66,
+          "y": 0.55
+        }
+      },
+      {
+        "numero": 3,
+        "titre": "Ouvrir les paramètres",
+        "voix": "La roue crantée ouvre quatre entrées : profil, objectifs, portefeuille, suppression.",
+        "debut_source": 10.5,
+        "fin_source": 16.0,
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.08,
+          "w": 0.34,
+          "h": 0.85
+        },
+        "annotation": "Paramètres",
+        "point": {
+          "x": 0.5,
+          "y": 0.28
+        }
+      },
+      {
+        "numero": 4,
+        "titre": "Choisir « modifier les objectifs »",
+        "voix": "Deuxième entrée : modifier les objectifs.",
+        "debut_source": 16.0,
+        "fin_source": 19.0,
+        "zone_focus": {
+          "x": 0.36,
+          "y": 0.35,
+          "w": 0.29,
+          "h": 0.28
+        },
+        "annotation": "modifier les objectifs",
+        "point": {
+          "x": 0.5,
+          "y": 0.5
+        }
+      },
+      {
+        "numero": 5,
+        "titre": "Corriger les quatre compteurs",
+        "voix": "Sms, emails, rendez-vous, contrats. On relève les cibles. Attention, vous changez la cible, pas ce qui a déjà été réalisé : le pourcentage se recalcule sur la nouvelle valeur.",
+        "debut_source": 19.0,
+        "fin_source": 30.0,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.42,
+          "w": 0.76,
+          "h": 0.5
+        },
+        "annotation": "les quatre compteurs",
+        "point": {
+          "x": 0.35,
+          "y": 0.6
+        }
+      },
+      {
+        "numero": 6,
+        "titre": "Enregistrer",
+        "voix": "Un clic sur modifier, et on revient à la liste.",
+        "debut_source": 30.0,
+        "fin_source": 34.88,
+        "zone_focus": {
+          "x": 0.0,
+          "y": 0.02,
+          "w": 1.0,
+          "h": 0.96
+        },
+        "annotation": "modifier",
+        "point": {
+          "x": 0.6,
+          "y": 0.9
+        }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Les cibles sont posées. Pour voir où en est l'équipe sans ouvrir chaque fiche, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond, objectifs et taux d'atteinte compris. Copiez ce prompt et collez-le.",
+    "prompt": {
+      "texte": "Donne-moi la performance de mes commerciaux : objectifs, envois et taux d'atteinte.",
+      "variables": [],
+      "outil_mcp": "get_user_performance"
+    },
+    "resultat_affiche": {
+      "titre": "Performance du mois",
+      "lignes": [
+        "Commercial terrain — 32 sms sur 40 — 80 %",
+        "Chargée de clientèle — 74 emails sur 80 — 92 %"
+      ]
+    },
+    "duree": 21
+  },
+  "punchline": {
+    "texte": "Une cible juste, et le pourcentage veut enfin dire quelque chose.",
+    "duree": 7,
+    "alternatives": [
+      "Des objectifs révisés, c'est un tableau de bord qui reste honnête.",
+      "Quatre chiffres tenus à jour pilotent un mois entier.",
+      "On mesure ce qu'on a demandé, pas ce qu'on espérait."
+    ]
+  },
+  "seo": {
+    "titre": "Modifier les objectifs — RapidoCRM",
+    "description": "Réglez les objectifs mensuels d'un commercial RapidoCRM : sms, emails, rendez-vous et contrats. Le tutoriel pas à pas de l'Académie.",
+    "mots_cles": [
+      "objectifs commerciaux",
+      "RapidoCRM",
+      "performance",
+      "équipe commerciale",
+      "suivi",
+      "CRM"
+    ],
+    "youtube_titre": "Modifier un objectif — RapidoCRM",
+    "youtube_description": "Le tutoriel des objectifs mensuels de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "objectifs",
+      "performance commerciale",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}

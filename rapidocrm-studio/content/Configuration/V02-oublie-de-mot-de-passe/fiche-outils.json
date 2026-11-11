@@ -1,0 +1,128 @@
+{
+  "outils": [
+    {
+      "nom": "list_users",
+      "description": "Utilisateurs : liste les utilisateurs de l'entreprise. Lecture seule. Ne gère ni la connexion ni le mot de passe.",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "ID principal"
+        },
+        {
+          "nom": "q",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche libre"
+        },
+        {
+          "nom": "limit",
+          "type": "integer|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre maximum de résultats"
+        },
+        {
+          "nom": "statut",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtre de statut"
+        },
+        {
+          "nom": "periode",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": "Période"
+        }
+      ]
+    },
+    {
+      "nom": "get_user",
+      "description": "Utilisateurs : fiche d'un utilisateur par son identifiant. Lecture seule. N'expose aucun mot de passe.",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer",
+          "obligatoire": true,
+          "valeurs_autorisees": [],
+          "description": "ID principal"
+        },
+        {
+          "nom": "q",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche libre"
+        }
+      ]
+    },
+    {
+      "nom": "create_user",
+      "description": "Utilisateurs : crée un utilisateur dans une entreprise déjà ouverte. Écriture — non utilisé par ce pipeline. Ne couvre ni l'inscription initiale ni la réinitialisation de mot de passe.",
+      "parametres": [
+        {
+          "nom": "payload",
+          "type": "object|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Données de création/mise à jour"
+        }
+      ]
+    },
+    {
+      "nom": "get_dashboard_general_stats",
+      "description": "KPIs complets du tableau de bord général (CRM, marketing, commercial, facturation).",
+      "parametres": [
+        {
+          "nom": "periode",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": "Filtre les métriques d'activité ; tout l'historique sinon"
+        }
+      ]
+    },
+    {
+      "nom": "get_dashboard_kpis",
+      "description": "Indicateurs clés du tableau de bord.",
+      "parametres": [
+        {
+          "nom": "periode",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": "Période"
+        }
+      ]
+    }
+  ],
+  "divergences": [
+    "Divergence : « Champ adresse e-mail » (7.5s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Champ nouveau mot de passe » (23.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Champ de confirmation du mot de passe » (28.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Champ mot de passe de la page de connexion » (40.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

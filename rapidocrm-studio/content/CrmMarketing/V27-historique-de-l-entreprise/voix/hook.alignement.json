@@ -1,0 +1,127 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "client",
+    "debut": 0.186,
+    "fin": 0.43
+  },
+  {
+    "mot": "rappelle",
+    "debut": 0.488,
+    "fin": 0.813
+  },
+  {
+    "mot": "après",
+    "debut": 0.836,
+    "fin": 1.091
+  },
+  {
+    "mot": "six",
+    "debut": 1.115,
+    "fin": 1.3
+  },
+  {
+    "mot": "semaines.",
+    "debut": 1.324,
+    "fin": 1.8
+  },
+  {
+    "mot": "Qui",
+    "debut": 2.078,
+    "fin": 2.264
+  },
+  {
+    "mot": "lui",
+    "debut": 2.322,
+    "fin": 2.485
+  },
+  {
+    "mot": "a",
+    "debut": 2.508,
+    "fin": 2.543
+  },
+  {
+    "mot": "écrit",
+    "debut": 2.589,
+    "fin": 2.995
+  },
+  {
+    "mot": "?",
+    "debut": 3.03,
+    "fin": 3.146
+  },
+  {
+    "mot": "Quand",
+    "debut": 3.471,
+    "fin": 3.704
+  },
+  {
+    "mot": "?",
+    "debut": 3.82,
+    "fin": 3.866
+  },
+  {
+    "mot": "À",
+    "debut": 4.075,
+    "fin": 4.133
+  },
+  {
+    "mot": "propos",
+    "debut": 4.214,
+    "fin": 4.493
+  },
+  {
+    "mot": "de",
+    "debut": 4.516,
+    "fin": 4.586
+  },
+  {
+    "mot": "quoi",
+    "debut": 4.632,
+    "fin": 4.807
+  },
+  {
+    "mot": "?",
+    "debut": 4.923,
+    "fin": 5.004
+  },
+  {
+    "mot": "Neuf",
+    "debut": 5.515,
+    "fin": 5.84
+  },
+  {
+    "mot": "journaux",
+    "debut": 5.968,
+    "fin": 6.42
+  },
+  {
+    "mot": "répondent,",
+    "debut": 6.571,
+    "fin": 7.129
+  },
+  {
+    "mot": "sur",
+    "debut": 7.338,
+    "fin": 7.477
+  },
+  {
+    "mot": "une",
+    "debut": 7.512,
+    "fin": 7.616
+  },
+  {
+    "mot": "seule",
+    "debut": 7.639,
+    "fin": 7.814
+  },
+  {
+    "mot": "page.",
+    "debut": 7.837,
+    "fin": 8.208
+  }
+]

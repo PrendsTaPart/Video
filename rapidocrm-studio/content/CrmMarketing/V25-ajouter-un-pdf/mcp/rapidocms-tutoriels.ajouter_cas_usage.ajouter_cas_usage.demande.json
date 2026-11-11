@@ -1,0 +1,24 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_cas_usage",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-ajouter-un-pdf",
+    "cas_usage": [
+      {
+        "titre": "Attacher la carte de saison d'un client",
+        "contexte": "Le client envoie sa nouvelle carte en PDF.",
+        "action": "Ouvrez Ajouter un PDF depuis le panneau Documentation, nommez le document, choisissez le fichier et validez.",
+        "resultat": "Le document rejoint la fiche de l'entreprise."
+      },
+      {
+        "titre": "Retrouver un document rangé",
+        "contexte": "Il faut relire un tarif transmis il y a deux mois.",
+        "action": "Ouvrez la fiche du client et descendez jusqu'à ses documents.",
+        "resultat": "Le document apparaît sous le nom qu'on lui a donné."
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T12:23:21.410Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

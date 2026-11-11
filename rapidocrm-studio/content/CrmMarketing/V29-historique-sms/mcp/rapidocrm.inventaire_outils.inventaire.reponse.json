@@ -1,0 +1,50 @@
+{
+  "outils": [
+    {
+      "nom": "get_interaction_stats",
+      "description": "Statistiques d'interactions (emails, SMS, appels, RDV...) par type.",
+      "parametres": [
+        {
+          "nom": "entreprise_id",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Limiter à une entreprise (optionnel)"
+        },
+        {
+          "nom": "periode",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": ""
+        }
+      ]
+    },
+    {
+      "nom": "list_templates_sms",
+      "description": "Lister les templates SMS disponibles.",
+      "parametres": [
+        {
+          "nom": "search",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche par nom du template SMS"
+        },
+        {
+          "nom": "limit",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre max de résultats"
+        }
+      ]
+    }
+  ]
+}

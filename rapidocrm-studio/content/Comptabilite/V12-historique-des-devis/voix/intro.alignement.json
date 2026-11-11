@@ -1,0 +1,182 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "part",
+    "debut": 0.197,
+    "fin": 0.418
+  },
+  {
+    "mot": "de",
+    "debut": 0.441,
+    "fin": 0.511
+  },
+  {
+    "mot": "l'historique",
+    "debut": 0.557,
+    "fin": 1.138
+  },
+  {
+    "mot": "des",
+    "debut": 1.184,
+    "fin": 1.3
+  },
+  {
+    "mot": "devis,",
+    "debut": 1.347,
+    "fin": 1.823
+  },
+  {
+    "mot": "et",
+    "debut": 1.858,
+    "fin": 1.95
+  },
+  {
+    "mot": "on",
+    "debut": 1.974,
+    "fin": 2.032
+  },
+  {
+    "mot": "ressort",
+    "debut": 2.148,
+    "fin": 2.635
+  },
+  {
+    "mot": "avec",
+    "debut": 2.682,
+    "fin": 2.961
+  },
+  {
+    "mot": "le",
+    "debut": 3.03,
+    "fin": 3.1
+  },
+  {
+    "mot": "bon",
+    "debut": 3.17,
+    "fin": 3.32
+  },
+  {
+    "mot": "devis",
+    "debut": 3.379,
+    "fin": 3.738
+  },
+  {
+    "mot": "sous",
+    "debut": 3.82,
+    "fin": 4.005
+  },
+  {
+    "mot": "les",
+    "debut": 4.029,
+    "fin": 4.145
+  },
+  {
+    "mot": "yeux.",
+    "debut": 4.203,
+    "fin": 4.447
+  },
+  {
+    "mot": "Deux",
+    "debut": 4.725,
+    "fin": 4.946
+  },
+  {
+    "mot": "listes",
+    "debut": 4.981,
+    "fin": 5.364
+  },
+  {
+    "mot": "en",
+    "debut": 5.515,
+    "fin": 5.7
+  },
+  {
+    "mot": "haut",
+    "debut": 5.782,
+    "fin": 5.921
+  },
+  {
+    "mot": "de",
+    "debut": 5.956,
+    "fin": 6.037
+  },
+  {
+    "mot": "page",
+    "debut": 6.107,
+    "fin": 6.455
+  },
+  {
+    "mot": "filtrent,",
+    "debut": 6.548,
+    "fin": 7.082
+  },
+  {
+    "mot": "et",
+    "debut": 7.21,
+    "fin": 7.338
+  },
+  {
+    "mot": "chaque",
+    "debut": 7.396,
+    "fin": 7.709
+  },
+  {
+    "mot": "ligne",
+    "debut": 7.732,
+    "fin": 7.953
+  },
+  {
+    "mot": "porte",
+    "debut": 8.011,
+    "fin": 8.29
+  },
+  {
+    "mot": "un",
+    "debut": 8.313,
+    "fin": 8.359
+  },
+  {
+    "mot": "menu",
+    "debut": 8.394,
+    "fin": 8.731
+  },
+  {
+    "mot": "qui",
+    "debut": 8.975,
+    "fin": 9.137
+  },
+  {
+    "mot": "dit",
+    "debut": 9.207,
+    "fin": 9.439
+  },
+  {
+    "mot": "ce",
+    "debut": 9.474,
+    "fin": 9.578
+  },
+  {
+    "mot": "qu'on",
+    "debut": 9.625,
+    "fin": 9.741
+  },
+  {
+    "mot": "peut",
+    "debut": 9.799,
+    "fin": 9.927
+  },
+  {
+    "mot": "en",
+    "debut": 9.95,
+    "fin": 10.008
+  },
+  {
+    "mot": "faire.",
+    "debut": 10.089,
+    "fin": 10.414
+  }
+]

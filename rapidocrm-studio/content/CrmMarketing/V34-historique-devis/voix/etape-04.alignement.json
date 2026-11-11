@@ -1,0 +1,42 @@
+[
+  {
+    "mot": "Et",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "le",
+    "debut": 0.174,
+    "fin": 0.232
+  },
+  {
+    "mot": "bandeau",
+    "debut": 0.279,
+    "fin": 0.557
+  },
+  {
+    "mot": "dit",
+    "debut": 0.627,
+    "fin": 0.789
+  },
+  {
+    "mot": "qu'il",
+    "debut": 0.824,
+    "fin": 0.964
+  },
+  {
+    "mot": "n'est",
+    "debut": 0.998,
+    "fin": 1.138
+  },
+  {
+    "mot": "plus",
+    "debut": 1.254,
+    "fin": 1.451
+  },
+  {
+    "mot": "signable.",
+    "debut": 1.474,
+    "fin": 1.985
+  }
+]

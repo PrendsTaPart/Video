@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "module": "Produits",
+    "module_slug": "03-produit",
+    "numero": 3,
+    "titre": "Attacher des documents à une stratégie",
+    "titre_court": "Attacher des documents",
+    "slug": "03-ajouter-modifier-des-documents-a-un-produit"
+  },
+  "hook": {
+    "texte": "La consigne est écrite. Le brief commercial, lui, dort dans une pièce jointe d'octobre.",
+    "promesse": "Fichiers et consignes au même endroit que le produit.",
+    "duree": 9,
+    "alternatives": [
+      "Un document qu'on cherche est un document qu'on n'utilise pas.",
+      "La stratégie et ses outils devraient tenir sur le même écran.",
+      "Ce qu'un nouveau vendeur doit lire tient en une page."
+    ]
+  },
+  "intro": {
+    "texte": "On part d'une stratégie déjà créée sur un produit, et on ressort avec un dossier complet : les documents qui vont avec, et les consignes en clair. Deux boutons suffisent, côte à côte — ajouter une description pour du texte, ajouter un fichier pour un document. Le titre de la page rappelle en permanence de quelle stratégie et de quel produit on parle. Et tout reste modifiable : chaque bloc porte ses boutons pour corriger ou supprimer.",
+    "duree": 28
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir les descriptions de la stratégie",
+        "voix": "La page des descriptions de la stratégie, encore vide. Son titre rappelle le contexte : quelle stratégie, pour quel produit. Et deux boutons à droite.",
+        "debut_source": 0,
+        "fin_source": 10.0,
+        "zone_focus": {
+          "x": 0.2,
+          "y": 0.02,
+          "w": 0.8,
+          "h": 0.6
+        },
+        "annotation": "les deux boutons",
+        "point": {
+          "x": 0.82,
+          "y": 0.28
+        }
+      },
+      {
+        "numero": 2,
+        "titre": "Nommer le fichier",
+        "voix": "Le nom du fichier d'abord. C'est ce libellé qui s'affichera, pas le nom sur votre poste.",
+        "debut_source": 10.0,
+        "fin_source": 15.0,
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.1,
+          "w": 0.34,
+          "h": 0.5
+        },
+        "annotation": "Nom du fichier",
+        "point": {
+          "x": 0.5,
+          "y": 0.32
+        }
+      },
+      {
+        "numero": 3,
+        "titre": "Importer le fichier",
+        "voix": "Puis le document, par le bouton parcourir. Et on valide.",
+        "debut_source": 15.0,
+        "fin_source": 20.0,
+        "zone_focus": {
+          "x": 0.33,
+          "y": 0.35,
+          "w": 0.34,
+          "h": 0.6
+        },
+        "annotation": "parcourir",
+        "point": {
+          "x": 0.5,
+          "y": 0.65
+        }
+      },
+      {
+        "numero": 4,
+        "titre": "Relire ce qui est attaché",
+        "voix": "Le fichier apparaît en vignette, la description en dessous. Un nouveau vendeur ouvre la page et sait quoi faire, chiffres à l'appui.",
+        "debut_source": 20.0,
+        "fin_source": 26.837,
+        "zone_focus": {
+          "x": 0.21,
+          "y": 0.3,
+          "w": 0.78,
+          "h": 0.68
+        },
+        "annotation": "le dossier de la stratégie",
+        "point": {
+          "x": 0.3,
+          "y": 0.55
+        }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Le dossier est constitué. Pour retrouver les produits dont la description reste à écrire, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] produits avec leur description.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_products"
+    },
+    "resultat_affiche": {
+      "titre": "4 produits trouvés",
+      "lignes": [
+        "Pack site vitrine — création d'un site vitrine 5 pages",
+        "Maintenance annuelle — description à compléter"
+      ]
+    },
+    "duree": 22
+  },
+  "punchline": {
+    "texte": "Une stratégie, ses documents, ses consignes. Sur une seule page.",
+    "duree": 8,
+    "alternatives": [
+      "Ce qui est rangé au bon endroit finit par servir.",
+      "Un nouveau vendeur autonome en une page.",
+      "Le brief cesse d'être une pièce jointe perdue."
+    ]
+  },
+  "seo": {
+    "titre": "Attacher des documents à une stratégie — RapidoCRM",
+    "description": "Joignez fichiers et descriptions à la stratégie d'un produit RapidoCRM, au même endroit que la consigne de vente. Le tutoriel de l'Académie.",
+    "mots_cles": [
+      "documents produit",
+      "RapidoCRM",
+      "stratégie commerciale",
+      "brief commercial",
+      "fichiers",
+      "équipe commerciale"
+    ],
+    "youtube_titre": "Attacher des documents à une stratégie — RapidoCRM",
+    "youtube_description": "Le tutoriel des documents de stratégie de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "documents",
+      "stratégie commerciale",
+      "CRM français",
+      "tutoriel"
+    ]
+  }
+}

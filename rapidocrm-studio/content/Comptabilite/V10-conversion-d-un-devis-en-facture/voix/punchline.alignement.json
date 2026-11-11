@@ -1,0 +1,52 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "devis",
+    "debut": 0.197,
+    "fin": 0.488
+  },
+  {
+    "mot": "signé,",
+    "debut": 0.511,
+    "fin": 0.917
+  },
+  {
+    "mot": "une",
+    "debut": 0.952,
+    "fin": 1.068
+  },
+  {
+    "mot": "facture",
+    "debut": 1.103,
+    "fin": 1.474
+  },
+  {
+    "mot": "créée.",
+    "debut": 1.498,
+    "fin": 1.834
+  },
+  {
+    "mot": "Vous",
+    "debut": 1.869,
+    "fin": 1.985
+  },
+  {
+    "mot": "n'avez",
+    "debut": 2.009,
+    "fin": 2.229
+  },
+  {
+    "mot": "rien",
+    "debut": 2.252,
+    "fin": 2.415
+  },
+  {
+    "mot": "retapé.",
+    "debut": 2.45,
+    "fin": 2.972
+  }
+]

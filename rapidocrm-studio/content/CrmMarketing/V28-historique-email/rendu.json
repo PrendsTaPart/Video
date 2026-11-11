@@ -1,0 +1,76 @@
+{
+  "duree": 55.96666666666667,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V28-historique-email/out/master-16x9.mp4",
+      "octets": 7588419
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V28-historique-email/out/master-9x16.mp4",
+      "octets": 6311814
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 8.733333333333333
+    },
+    {
+      "nom": "titre",
+      "debut": 8.733333333333333,
+      "fin": 24.766666666666666
+    },
+    {
+      "nom": "demo",
+      "debut": 24.766666666666666,
+      "fin": 38.666666666666664
+    },
+    {
+      "nom": "claude",
+      "debut": 38.666666666666664,
+      "fin": 51.06666666666667
+    },
+    {
+      "nom": "punchline",
+      "debut": 51.06666666666667,
+      "fin": 55.96666666666667
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "« Je n'ai jamais reçu votre devis. » Et vous, vous cherchez dans vos envoyés."
+    },
+    {
+      "timecode": "00:08",
+      "titre": "Historique email"
+    },
+    {
+      "timecode": "00:24",
+      "titre": "Ouvrir l'historique des e-mails"
+    },
+    {
+      "timecode": "00:29",
+      "titre": "Lire le tableau des envois"
+    },
+    {
+      "timecode": "00:31",
+      "titre": "Rouvrir un e-mail envoyé"
+    },
+    {
+      "timecode": "00:38",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:51",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

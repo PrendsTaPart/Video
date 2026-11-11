@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Votre facture est partie. Le client la lit, et cherche où virer l'argent. Trois champs, et vos documents disent où vous payer."
+  },
+  {
+    "timestamp_secondes": 6,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la section Informations bancaires de votre page Profil, et on ressort avec les coordonnées de règlement de la société. Ce sont elles qui s'impriment sur vos factures : le nom de votre banque, son code, et votre IBAN. Sans elles, le client reçoit un document juste, mais il ne sait pas où envoyer l'argent. Tout se lit sur le RIB que votre banque vous a remis. Trois champs seulement, et tous les trois figurent sur ce même document. Attention à ne pas les intervertir : confondre le code de l'établissement et le numéro de compte est l'erreur la plus courante."
+  },
+  {
+    "timestamp_secondes": 37,
+    "titre": "Ouvrir les informations bancaires",
+    "texte": "Page Profil, section Informations bancaires. Sous-titre : coordonnées bancaires de facturation. Trois champs."
+  },
+  {
+    "timestamp_secondes": 44,
+    "titre": "Nommer sa banque",
+    "texte": "Le nom de l'établissement d'abord, tel qu'il apparaîtra sur vos documents."
+  },
+  {
+    "timestamp_secondes": 48,
+    "titre": "Renseigner le code guichet",
+    "texte": "Puis son code, cinq chiffres, lu lui aussi sur votre RIB."
+  },
+  {
+    "timestamp_secondes": 51,
+    "titre": "Saisir l'IBAN",
+    "texte": "Et l'IBAN, d'un seul tenant, sans les espaces du RIB papier. Relisez-le : une faute passe inaperçue et bloque le virement."
+  },
+  {
+    "timestamp_secondes": 59,
+    "titre": "Enregistrer",
+    "texte": "Un clic sur enregistrer, et vos factures savent où vous payer."
+  },
+  {
+    "timestamp_secondes": 62,
+    "titre": "Faites-le avec Claude",
+    "texte": "Vos coordonnées sont en place. Pour relire ce qui est parti sans ouvrir la facturation, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre de factures voulu."
+  },
+  {
+    "timestamp_secondes": 81,
+    "titre": "À retenir",
+    "texte": "Un RIB saisi une fois, et plus jamais de facture muette sur le paiement."
+  }
+]

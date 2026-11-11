@@ -1,0 +1,77 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "document",
+    "debut": 0.186,
+    "fin": 0.569
+  },
+  {
+    "mot": "nommé",
+    "debut": 0.604,
+    "fin": 0.894
+  },
+  {
+    "mot": "et",
+    "debut": 0.929,
+    "fin": 0.998
+  },
+  {
+    "mot": "rangé",
+    "debut": 1.045,
+    "fin": 1.277
+  },
+  {
+    "mot": "sur",
+    "debut": 1.324,
+    "fin": 1.451
+  },
+  {
+    "mot": "la",
+    "debut": 1.474,
+    "fin": 1.533
+  },
+  {
+    "mot": "fiche,",
+    "debut": 1.602,
+    "fin": 1.985
+  },
+  {
+    "mot": "c'est",
+    "debut": 2.055,
+    "fin": 2.241
+  },
+  {
+    "mot": "un",
+    "debut": 2.31,
+    "fin": 2.357
+  },
+  {
+    "mot": "mail",
+    "debut": 2.392,
+    "fin": 2.566
+  },
+  {
+    "mot": "qu'on",
+    "debut": 2.612,
+    "fin": 2.74
+  },
+  {
+    "mot": "ne",
+    "debut": 2.763,
+    "fin": 2.81
+  },
+  {
+    "mot": "rouvrira",
+    "debut": 2.856,
+    "fin": 3.309
+  },
+  {
+    "mot": "jamais.",
+    "debut": 3.46,
+    "fin": 3.855
+  }
+]

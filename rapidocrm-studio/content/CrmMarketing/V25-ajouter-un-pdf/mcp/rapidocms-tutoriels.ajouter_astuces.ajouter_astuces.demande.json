@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-ajouter-un-pdf",
+    "astuces": [
+      {
+        "titre": "Deux champs, pas plus",
+        "texte": "Un nom, un fichier : la fenêtre d'import ne demande rien d'autre.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Le nom prime sur le fichier",
+        "texte": "Le libellé saisi remplace le nom d'origine dans l'affichage de la fiche.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Annuler reste possible",
+        "texte": "Le bouton Annuler ferme la fenêtre sans rien attacher.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T12:23:21.410Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

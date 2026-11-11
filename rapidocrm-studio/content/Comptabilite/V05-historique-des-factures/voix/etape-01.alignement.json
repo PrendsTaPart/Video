@@ -1,0 +1,87 @@
+[
+  {
+    "mot": "L'historique",
+    "debut": 0,
+    "fin": 0.499
+  },
+  {
+    "mot": "des",
+    "debut": 0.522,
+    "fin": 0.604
+  },
+  {
+    "mot": "factures.",
+    "debut": 0.639,
+    "fin": 1.161
+  },
+  {
+    "mot": "Toutes",
+    "debut": 1.37,
+    "fin": 1.707
+  },
+  {
+    "mot": "y",
+    "debut": 1.765,
+    "fin": 1.788
+  },
+  {
+    "mot": "sont,",
+    "debut": 1.858,
+    "fin": 2.148
+  },
+  {
+    "mot": "la",
+    "debut": 2.264,
+    "fin": 2.345
+  },
+  {
+    "mot": "plus",
+    "debut": 2.403,
+    "fin": 2.531
+  },
+  {
+    "mot": "récente",
+    "debut": 2.554,
+    "fin": 2.856
+  },
+  {
+    "mot": "en",
+    "debut": 2.879,
+    "fin": 2.926
+  },
+  {
+    "mot": "tête,",
+    "debut": 2.972,
+    "fin": 3.413
+  },
+  {
+    "mot": "avec",
+    "debut": 3.541,
+    "fin": 3.808
+  },
+  {
+    "mot": "son",
+    "debut": 3.843,
+    "fin": 3.947
+  },
+  {
+    "mot": "client",
+    "debut": 3.994,
+    "fin": 4.458
+  },
+  {
+    "mot": "et",
+    "debut": 4.528,
+    "fin": 4.679
+  },
+  {
+    "mot": "son",
+    "debut": 4.714,
+    "fin": 4.841
+  },
+  {
+    "mot": "montant.",
+    "debut": 4.876,
+    "fin": 5.271
+  }
+]

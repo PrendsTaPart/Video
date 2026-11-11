@@ -1,0 +1,107 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "passe",
+    "debut": 0.186,
+    "fin": 0.406
+  },
+  {
+    "mot": "à",
+    "debut": 0.43,
+    "fin": 0.453
+  },
+  {
+    "mot": "l'onglet",
+    "debut": 0.476,
+    "fin": 0.743
+  },
+  {
+    "mot": "facture.",
+    "debut": 0.766,
+    "fin": 1.219
+  },
+  {
+    "mot": "En",
+    "debut": 1.37,
+    "fin": 1.451
+  },
+  {
+    "mot": "haut,",
+    "debut": 1.498,
+    "fin": 1.718
+  },
+  {
+    "mot": "les",
+    "debut": 1.776,
+    "fin": 1.881
+  },
+  {
+    "mot": "compteurs",
+    "debut": 1.916,
+    "fin": 2.252
+  },
+  {
+    "mot": "se",
+    "debut": 2.276,
+    "fin": 2.357
+  },
+  {
+    "mot": "sont",
+    "debut": 2.403,
+    "fin": 2.566
+  },
+  {
+    "mot": "recalculés",
+    "debut": 2.601,
+    "fin": 3.228
+  },
+  {
+    "mot": ":",
+    "debut": 3.262,
+    "fin": 3.309
+  },
+  {
+    "mot": "le",
+    "debut": 3.46,
+    "fin": 3.553
+  },
+  {
+    "mot": "total",
+    "debut": 3.611,
+    "fin": 3.866
+  },
+  {
+    "mot": "facturé",
+    "debut": 3.913,
+    "fin": 4.238
+  },
+  {
+    "mot": "a",
+    "debut": 4.261,
+    "fin": 4.284
+  },
+  {
+    "mot": "grimpé,",
+    "debut": 4.342,
+    "fin": 4.83
+  },
+  {
+    "mot": "l'en",
+    "debut": 4.981,
+    "fin": 5.132
+  },
+  {
+    "mot": "attente",
+    "debut": 5.213,
+    "fin": 5.503
+  },
+  {
+    "mot": "aussi.",
+    "debut": 5.526,
+    "fin": 5.886
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 13,
+    "titre": "Planifier un SMS depuis la fiche d'une entreprise",
+    "titre_court": "Planifier un SMS depuis la f",
+    "slug": "planifier-un-sms-depuis-la-fiche-d-une-entreprise"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir le panneau Communication de la fiche",
+        "voix": "",
+        "debut_source": 0.5,
+        "fin_source": 4,
+        "zone_focus": {
+          "x": 0.72,
+          "y": 0.05,
+          "w": 0.27,
+          "h": 0.85
+        },
+        "annotation": "Ouvrir le panneau Communication de la fiche"
+      },
+      {
+        "numero": 2,
+        "titre": "Choisir « Planifier un SMS »",
+        "voix": "",
+        "debut_source": 4,
+        "fin_source": 6.5,
+        "zone_focus": {
+          "x": 0.72,
+          "y": 0.12,
+          "w": 0.27,
+          "h": 0.72
+        },
+        "annotation": "Choisir « Planifier un SMS »"
+      },
+      {
+        "numero": 3,
+        "titre": "Dire à qui le SMS part",
+        "voix": "",
+        "debut_source": 6.5,
+        "fin_source": 10.5,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.05,
+          "w": 0.42,
+          "h": 0.45
+        },
+        "annotation": "Dire à qui le SMS part"
+      },
+      {
+        "numero": 4,
+        "titre": "Choisir le modèle de SMS",
+        "voix": "",
+        "debut_source": 10.5,
+        "fin_source": 14,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.05,
+          "w": 0.42,
+          "h": 0.55
+        },
+        "annotation": "Choisir le modèle de SMS"
+      },
+      {
+        "numero": 5,
+        "titre": "Fixer la date et l'heure d'envoi",
+        "voix": "",
+        "debut_source": 14,
+        "fin_source": 20.5,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.6,
+          "w": 0.42,
+          "h": 0.35
+        },
+        "annotation": "Fixer la date et l'heure d'envoi"
+      },
+      {
+        "numero": 6,
+        "titre": "Valider la planification",
+        "voix": "",
+        "debut_source": 20.5,
+        "fin_source": 25.32,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.6,
+          "w": 0.42,
+          "h": 0.38
+        },
+        "annotation": "Valider la planification"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] modèles de SMS.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_templates_sms"
+    }
+  }
+}

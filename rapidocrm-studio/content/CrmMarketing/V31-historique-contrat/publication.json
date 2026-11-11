@@ -1,0 +1,25 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V31-06-historique-contrat.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V31-06-historique-contrat-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V31-06-historique-contrat-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V31-06-historique-contrat-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "1baf79f14c931b86",
+      "video_vertical_url": "5b9974a57cd8ac22",
+      "thumbnail_url": "36c54e56718cddb1",
+      "thumbnail_vertical_url": "831d8b0d2ea4598e"
+    },
+    "publie_le": "2026-09-05T23:28:55.786Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=4_J_v122_QM",
+    "video_id": "4_J_v122_QM",
+    "publie_le": "2026-09-09T10:24:57.258Z"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/06-historique-contrat",
+    "tutoriel_id": "95e14a89-a5be-40f7-ae7a-749bd7cc94b6",
+    "publie_le": "2026-09-09T10:26:57.120Z"
+  }
+}

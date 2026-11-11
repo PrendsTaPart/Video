@@ -1,0 +1,9 @@
+{
+  "outils": [
+    {
+      "nom": "get_agent_vocal_config",
+      "description": "Affiche la configuration de l'agent vocal IA : pitch, secteur, objectif d'appel, ton de voix, catalogue produits, minutes de crédit restantes et statut Twilio. Lecture seule.",
+      "parametres": []
+    }
+  ]
+}

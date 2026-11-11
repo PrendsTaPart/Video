@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "module": "Accès et gestion",
+    "numero": 1,
+    "titre": "Créer son compte RapidoCRM",
+    "titre_court": "Créer son compte",
+    "slug": "01-creer-un-compte"
+  },
+  "hook": {
+    "texte": "Vous avez souscrit, et vous ne savez pas par où commencer ?",
+    "promesse": "En trente secondes, votre compte est ouvert et votre entreprise rattachée.",
+    "duree": 6,
+    "alternatives": [
+      "Personne dans votre équipe n'a encore d'accès au CRM ?",
+      "Un CRM vide, ça commence toujours par un compte.",
+      "Avant la première fiche client, il y a ce formulaire."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page de connexion, et on ressort avec un accès personnel et votre société enregistrée dans le CRM.",
+    "duree": 5
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir le formulaire de création",
+        "voix": "Sur la page Accéder à mon espace, cliquez sur créer un compte.",
+        "debut_source": 0,
+        "fin_source": 4.0,
+        "zone_focus": {
+          "x": 0.3,
+          "y": 0.4,
+          "w": 0.39,
+          "h": 0.35
+        },
+        "annotation": "créer un compte",
+        "point": {
+          "x": 0.545,
+          "y": 0.655
+        }
+      },
+      {
+        "numero": 2,
+        "titre": "Renseigner l'identité du gérant",
+        "voix": "Le premier écran parle de vous, pas de votre société. Votre nom, puis votre prénom : c'est l'identité qui apparaîtra dans le CRM.",
+        "debut_source": 4.0,
+        "fin_source": 12.2,
+        "zone_focus": {
+          "x": 0.3,
+          "y": 0.19,
+          "w": 0.39,
+          "h": 0.24
+        },
+        "annotation": "nom et prénom du gérant",
+        "point": {
+          "x": 0.5,
+          "y": 0.25
+        }
+      },
+      {
+        "numero": 3,
+        "titre": "Saisir l'adresse e-mail",
+        "voix": "Votre adresse e-mail devient votre identifiant de connexion.",
+        "debut_source": 12.2,
+        "fin_source": 15.6,
+        "zone_focus": {
+          "x": 0.3,
+          "y": 0.39,
+          "w": 0.39,
+          "h": 0.14
+        },
+        "annotation": "mail du gérant",
+        "point": {
+          "x": 0.5,
+          "y": 0.457
+        }
+      },
+      {
+        "numero": 4,
+        "titre": "Choisir un mot de passe et le confirmer",
+        "voix": "Un mot de passe, puis le même une seconde fois. Tant que les deux diffèrent, le bouton reste gris : ce n'est pas une panne.",
+        "debut_source": 15.6,
+        "fin_source": 23.0,
+        "zone_focus": {
+          "x": 0.3,
+          "y": 0.5,
+          "w": 0.39,
+          "h": 0.23
+        },
+        "annotation": "confirmer mot de passe",
+        "point": {
+          "x": 0.5,
+          "y": 0.664
+        }
+      },
+      {
+        "numero": 5,
+        "titre": "Passer à l'étape entreprise",
+        "voix": "Le bouton passe au vert. Cliquez sur suivant : votre accès personnel est créé.",
+        "debut_source": 23.0,
+        "fin_source": 27.5,
+        "zone_focus": {
+          "x": 0.3,
+          "y": 0.68,
+          "w": 0.39,
+          "h": 0.17
+        },
+        "annotation": "suivant",
+        "point": {
+          "x": 0.5,
+          "y": 0.768
+        }
+      },
+      {
+        "numero": 6,
+        "titre": "Renseigner l'entreprise",
+        "voix": "Le nom de votre entreprise, son e-mail, son SIRET. Validez.",
+        "debut_source": 27.5,
+        "fin_source": 30.7,
+        "zone_focus": {
+          "x": 0.3,
+          "y": 0.28,
+          "w": 0.39,
+          "h": 0.5
+        },
+        "annotation": "nom de l'entreprise, email, siret",
+        "point": {
+          "x": 0.5,
+          "y": 0.4
+        }
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ensuite, demandez-lui.",
+    "voix": "Votre compte est ouvert. À partir de là, vous n'êtes plus obligé de cliquer. RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit votre CRM et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi les [nombre] dernières entreprises enregistrées dans mon CRM, avec leur SIRET et leur dirigeant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_entreprises"
+    },
+    "resultat_affiche": {
+      "titre": "26 entreprises trouvées",
+      "lignes": [
+        "Laurent — SIRET 12345678901234",
+        "Dirigeant : Laurent · Technologie"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Un compte ouvert, une entreprise en place, et le CRM commence à travailler.",
+    "duree": 5,
+    "alternatives": [
+      "Deux écrans, et votre CRM vous appartient.",
+      "Le plus dur est fait : il ne reste qu'à s'en servir.",
+      "Votre espace est ouvert. À vous de le remplir."
+    ]
+  },
+  "seo": {
+    "titre": "Créer son compte RapidoCRM — tutoriel",
+    "description": "Créez votre compte RapidoCRM en deux écrans : identité du gérant, mot de passe, puis votre entreprise et son SIRET. Le tutoriel pas à pas de l'Académie.",
+    "mots_cles": [
+      "créer un compte",
+      "RapidoCRM",
+      "inscription",
+      "gérant",
+      "entreprise",
+      "SIRET"
+    ],
+    "youtube_titre": "Créer son compte RapidoCRM — RapidoCRM",
+    "youtube_description": "Le tutoriel d'ouverture de RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "créer un compte",
+      "inscription",
+      "CRM français"
+    ]
+  }
+}

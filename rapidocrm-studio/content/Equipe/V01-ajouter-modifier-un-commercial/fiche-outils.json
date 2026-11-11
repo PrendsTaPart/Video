@@ -1,0 +1,69 @@
+{
+  "outils": [
+    {
+      "nom": "list_commerciaux",
+      "description": "Lister les commerciaux avec statut actif/inactif et objectifs. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "q",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche par nom, prénom, email, fonction"
+        },
+        {
+          "nom": "statut",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "actif",
+            "inactif"
+          ],
+          "description": "Filtre de statut"
+        },
+        {
+          "nom": "limit",
+          "type": "integer|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre max de résultats"
+        }
+      ]
+    },
+    {
+      "nom": "get_commercial",
+      "description": "Afficher le détail d'un commercial avec objectifs et performance. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer",
+          "obligatoire": true,
+          "valeurs_autorisees": [],
+          "description": "ID du commercial"
+        }
+      ]
+    },
+    {
+      "nom": "get_user_performance",
+      "description": "Performance d'un commercial (id fourni) ou de tous les commerciaux : objectifs, envois, taux. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "ID du commercial ; sans id, tous les commerciaux"
+        }
+      ]
+    }
+  ],
+  "divergences": [
+    "Divergence : « champs Nom et Prénom » (13.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « champ Fonction » (20.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « champ Email » (25.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « champs Numéro et Adresse » (30.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « champ Code postal » (40.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « champ Image, bouton parcourir » (47.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « section « Objectifs mensuels de l'utilisateur » » (51.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V05-05-historique-des-factures.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V05-05-historique-des-factures-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V05-05-historique-des-factures-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V05-05-historique-des-factures-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "5334d89d7fbb0e16",
+      "video_vertical_url": "f41ed1d276dac1fe",
+      "thumbnail_url": "7b88907f33a372ad",
+      "thumbnail_vertical_url": "0ffb37aaed6cef0b"
+    },
+    "publie_le": "2026-09-04T01:33:55.517Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=Dm13SaU-lsg",
+    "video_id": "Dm13SaU-lsg",
+    "publie_le": "2026-09-05T16:00:39.813960+00:00"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/05-historique-des-factures",
+    "tutoriel_id": "136af25a-0108-48b1-87fd-b290b25f0f75",
+    "publie_le": "2026-09-05T16:11:55.484963+00:00"
+  }
+}

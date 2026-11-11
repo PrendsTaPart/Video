@@ -1,0 +1,62 @@
+[
+  {
+    "mot": "Nom",
+    "debut": 0,
+    "fin": 0.209
+  },
+  {
+    "mot": "du",
+    "debut": 0.255,
+    "fin": 0.337
+  },
+  {
+    "mot": "fichier,",
+    "debut": 0.383,
+    "fin": 0.836
+  },
+  {
+    "mot": "type,",
+    "debut": 0.894,
+    "fin": 1.265
+  },
+  {
+    "mot": "taille,",
+    "debut": 1.335,
+    "fin": 1.707
+  },
+  {
+    "mot": "date",
+    "debut": 1.765,
+    "fin": 1.985
+  },
+  {
+    "mot": "d'ajout",
+    "debut": 2.009,
+    "fin": 2.38
+  },
+  {
+    "mot": ":",
+    "debut": 2.426,
+    "fin": 2.461
+  },
+  {
+    "mot": "une",
+    "debut": 2.531,
+    "fin": 2.728
+  },
+  {
+    "mot": "ligne",
+    "debut": 2.752,
+    "fin": 2.984
+  },
+  {
+    "mot": "par",
+    "debut": 3.019,
+    "fin": 3.135
+  },
+  {
+    "mot": "pièce.",
+    "debut": 3.17,
+    "fin": 3.611
+  }
+]

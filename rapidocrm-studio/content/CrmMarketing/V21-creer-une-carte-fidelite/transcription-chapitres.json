@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Une carte de fidélité, d'habitude, ça passe par un imprimeur, un graphiste, et trois allers-retours. Ici, trois écrans suffisent."
+  },
+  {
+    "timestamp_secondes": 8,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de l'assistant de carte de fidélité, et on ressort avec une carte enregistrée. Trois étapes : la taille, le modèle, la relecture. La barre du haut dit toujours où on en est."
+  },
+  {
+    "timestamp_secondes": 18,
+    "titre": "Ouvrir l'assistant de carte de fidélité",
+    "texte": "L'assistant s'ouvre sur sa première étape : la taille du template."
+  },
+  {
+    "timestamp_secondes": 22,
+    "titre": "Choisir la taille de la carte",
+    "texte": "Trois formats, avec leurs millimètres. Le standard est celui d'une carte bancaire."
+  },
+  {
+    "timestamp_secondes": 27,
+    "titre": "Choisir le modèle de carte",
+    "texte": "Puis le modèle. Voir l'agrandit, Choisir le retient."
+  },
+  {
+    "timestamp_secondes": 31,
+    "titre": "Relire le récapitulatif et enregistrer",
+    "texte": "Le récapitulatif reprend tout. Chaque ligne reste modifiable."
+  },
+  {
+    "timestamp_secondes": 35,
+    "titre": "Retrouver la carte dans les programmes de fidélité",
+    "texte": "Et la page des programmes compte clients et points."
+  },
+  {
+    "timestamp_secondes": 38,
+    "titre": "Faites-le avec Claude",
+    "texte": "Une carte, ce sont des clients et des points. Pour en avoir le compte, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 51,
+    "titre": "À retenir",
+    "texte": "Trois écrans, une carte : la fidélité n'attend plus l'imprimeur."
+  }
+]

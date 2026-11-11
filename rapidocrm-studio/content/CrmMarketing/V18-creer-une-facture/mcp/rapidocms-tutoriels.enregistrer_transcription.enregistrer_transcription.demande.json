@@ -1,0 +1,57 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-une-facture",
+    "transcription": "La prestation est livrée. Il ne reste qu'à facturer — et à retrouver le prix, la TVA, l'adresse du client. Tout est déjà dans sa fiche.\n\nOn part de la fiche d'une entreprise, et on ressort avec une facture. Le panneau Finance l'ouvre, le produit choisi remplit les montants, et la facture rejoint l'activité du client.\n\nPanneau Finance : créer une facture.\n\nLe logo est repris du client. On choisit la couleur.\n\nLe catalogue défile deux par deux. Les flèches font venir les suivants.\n\nPrix hors taxes, TVA, total, remise : vous n'écrivez rien, sauf la remise.\n\nLe délai de paiement, les mentions, le statut : payée ou en attente.\n\nLe règlement, les totaux, enregistrer.\n\nEt la voilà en tête de l'activité.\n\nLes factures s'accumulent. Pour voir celles qui attendent encore un règlement, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nUne facture faite depuis la fiche du client, c'est une facture qu'on ne relit pas deux fois.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 10,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 21,
+        "titre": "Ouvrir « Créer une facture » depuis la fiche"
+      },
+      {
+        "debut": 24,
+        "titre": "Logo et charte graphique de la facture"
+      },
+      {
+        "debut": 28,
+        "titre": "Choisir le produit à facturer"
+      },
+      {
+        "debut": 32,
+        "titre": "Laisser les montants se calculer"
+      },
+      {
+        "debut": 38,
+        "titre": "Délai, mentions légales et statut"
+      },
+      {
+        "debut": 43,
+        "titre": "Mode de paiement, totaux et enregistrement"
+      },
+      {
+        "debut": 45,
+        "titre": "Retrouver la facture dans l'activité de la fiche"
+      },
+      {
+        "debut": 48,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 61,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-07T12:21:50.598Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

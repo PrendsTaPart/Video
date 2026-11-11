@@ -1,0 +1,67 @@
+[
+  {
+    "mot": "Et",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "le",
+    "debut": 0.174,
+    "fin": 0.232
+  },
+  {
+    "mot": "menu",
+    "debut": 0.279,
+    "fin": 0.476
+  },
+  {
+    "mot": "de",
+    "debut": 0.511,
+    "fin": 0.557
+  },
+  {
+    "mot": "la",
+    "debut": 0.592,
+    "fin": 0.673
+  },
+  {
+    "mot": "ligne",
+    "debut": 0.731,
+    "fin": 0.998
+  },
+  {
+    "mot": ":",
+    "debut": 1.033,
+    "fin": 1.08
+  },
+  {
+    "mot": "visualiser,",
+    "debut": 1.138,
+    "fin": 1.881
+  },
+  {
+    "mot": "modifier,",
+    "debut": 1.95,
+    "fin": 2.624
+  },
+  {
+    "mot": "télécharger,",
+    "debut": 2.67,
+    "fin": 3.483
+  },
+  {
+    "mot": "ou",
+    "debut": 3.657,
+    "fin": 3.762
+  },
+  {
+    "mot": "voir",
+    "debut": 3.808,
+    "fin": 3.936
+  },
+  {
+    "mot": "l'entreprise.",
+    "debut": 3.959,
+    "fin": 4.644
+  }
+]

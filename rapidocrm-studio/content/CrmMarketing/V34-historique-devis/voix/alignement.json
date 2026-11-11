@@ -1,0 +1,922 @@
+{
+  "duree_totale": 60.336,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 8.472,
+      "texte": "Le client rappelle pour accepter un devis de juillet. Vous, vous ne savez plus s'il est encore valable. Le devis vous le dit lui-même, dès l'ouverture.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "client",
+          "debut": 0.209,
+          "fin": 0.476
+        },
+        {
+          "mot": "rappelle",
+          "debut": 0.499,
+          "fin": 0.824
+        },
+        {
+          "mot": "pour",
+          "debut": 0.848,
+          "fin": 0.987
+        },
+        {
+          "mot": "accepter",
+          "debut": 1.022,
+          "fin": 1.428
+        },
+        {
+          "mot": "un",
+          "debut": 1.474,
+          "fin": 1.521
+        },
+        {
+          "mot": "devis",
+          "debut": 1.579,
+          "fin": 1.858
+        },
+        {
+          "mot": "de",
+          "debut": 1.904,
+          "fin": 1.985
+        },
+        {
+          "mot": "juillet.",
+          "debut": 2.032,
+          "fin": 2.485
+        },
+        {
+          "mot": "Vous,",
+          "debut": 2.694,
+          "fin": 2.984
+        },
+        {
+          "mot": "vous",
+          "debut": 3.019,
+          "fin": 3.135
+        },
+        {
+          "mot": "ne",
+          "debut": 3.158,
+          "fin": 3.239
+        },
+        {
+          "mot": "savez",
+          "debut": 3.286,
+          "fin": 3.518
+        },
+        {
+          "mot": "plus",
+          "debut": 3.553,
+          "fin": 3.715
+        },
+        {
+          "mot": "s'il",
+          "debut": 3.738,
+          "fin": 3.878
+        },
+        {
+          "mot": "est",
+          "debut": 3.936,
+          "fin": 4.005
+        },
+        {
+          "mot": "encore",
+          "debut": 4.075,
+          "fin": 4.307
+        },
+        {
+          "mot": "valable.",
+          "debut": 4.331,
+          "fin": 4.737
+        },
+        {
+          "mot": "Le",
+          "debut": 4.911,
+          "fin": 5.027
+        },
+        {
+          "mot": "devis",
+          "debut": 5.074,
+          "fin": 5.329
+        },
+        {
+          "mot": "vous",
+          "debut": 5.352,
+          "fin": 5.468
+        },
+        {
+          "mot": "le",
+          "debut": 5.492,
+          "fin": 5.573
+        },
+        {
+          "mot": "dit",
+          "debut": 5.619,
+          "fin": 5.747
+        },
+        {
+          "mot": "lui-même,",
+          "debut": 5.77,
+          "fin": 6.211
+        },
+        {
+          "mot": "dès",
+          "debut": 6.362,
+          "fin": 6.49
+        },
+        {
+          "mot": "l'ouverture.",
+          "debut": 6.513,
+          "fin": 7.129
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 8.472,
+      "duree": 11.064,
+      "texte": "On part de la page Historique, et on ressort avec le devis ouvert. Le tableau donne les dates, le statut et le prix ; le devis, lui, prévient quand la période de signature est passée.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.197
+        },
+        {
+          "mot": "part",
+          "debut": 0.232,
+          "fin": 0.395
+        },
+        {
+          "mot": "de",
+          "debut": 0.418,
+          "fin": 0.476
+        },
+        {
+          "mot": "la",
+          "debut": 0.511,
+          "fin": 0.569
+        },
+        {
+          "mot": "page",
+          "debut": 0.627,
+          "fin": 0.882
+        },
+        {
+          "mot": "Historique,",
+          "debut": 0.906,
+          "fin": 1.591
+        },
+        {
+          "mot": "et",
+          "debut": 1.765,
+          "fin": 1.869
+        },
+        {
+          "mot": "on",
+          "debut": 1.916,
+          "fin": 1.962
+        },
+        {
+          "mot": "ressort",
+          "debut": 2.009,
+          "fin": 2.438
+        },
+        {
+          "mot": "avec",
+          "debut": 2.485,
+          "fin": 2.763
+        },
+        {
+          "mot": "le",
+          "debut": 2.81,
+          "fin": 2.856
+        },
+        {
+          "mot": "devis",
+          "debut": 2.902,
+          "fin": 3.111
+        },
+        {
+          "mot": "ouvert.",
+          "debut": 3.135,
+          "fin": 3.587
+        },
+        {
+          "mot": "Le",
+          "debut": 3.796,
+          "fin": 3.901
+        },
+        {
+          "mot": "tableau",
+          "debut": 3.947,
+          "fin": 4.226
+        },
+        {
+          "mot": "donne",
+          "debut": 4.272,
+          "fin": 4.435
+        },
+        {
+          "mot": "les",
+          "debut": 4.47,
+          "fin": 4.563
+        },
+        {
+          "mot": "dates,",
+          "debut": 4.598,
+          "fin": 4.957
+        },
+        {
+          "mot": "le",
+          "debut": 5.132,
+          "fin": 5.213
+        },
+        {
+          "mot": "statut",
+          "debut": 5.248,
+          "fin": 5.7
+        },
+        {
+          "mot": "et",
+          "debut": 5.851,
+          "fin": 5.991
+        },
+        {
+          "mot": "le",
+          "debut": 6.026,
+          "fin": 6.084
+        },
+        {
+          "mot": "prix",
+          "debut": 6.13,
+          "fin": 6.385
+        },
+        {
+          "mot": ";",
+          "debut": 6.409,
+          "fin": 6.455
+        },
+        {
+          "mot": "le",
+          "debut": 6.734,
+          "fin": 6.815
+        },
+        {
+          "mot": "devis,",
+          "debut": 6.861,
+          "fin": 7.314
+        },
+        {
+          "mot": "lui,",
+          "debut": 7.488,
+          "fin": 7.802
+        },
+        {
+          "mot": "prévient",
+          "debut": 7.848,
+          "fin": 8.255
+        },
+        {
+          "mot": "quand",
+          "debut": 8.278,
+          "fin": 8.406
+        },
+        {
+          "mot": "la",
+          "debut": 8.429,
+          "fin": 8.475
+        },
+        {
+          "mot": "période",
+          "debut": 8.545,
+          "fin": 8.882
+        },
+        {
+          "mot": "de",
+          "debut": 8.916,
+          "fin": 8.986
+        },
+        {
+          "mot": "signature",
+          "debut": 9.033,
+          "fin": 9.555
+        },
+        {
+          "mot": "est",
+          "debut": 9.601,
+          "fin": 9.729
+        },
+        {
+          "mot": "passée.",
+          "debut": 9.752,
+          "fin": 10.124
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 19.536,
+      "duree": 11.352,
+      "texte": "Troisième rangée de la page Historique : les devis. On consulte. La page reste vide quelques secondes, le temps que le tableau arrive : ce n'est pas une liste vide.",
+      "mots": [
+        {
+          "mot": "Troisième",
+          "debut": 0,
+          "fin": 0.464
+        },
+        {
+          "mot": "rangée",
+          "debut": 0.488,
+          "fin": 0.906
+        },
+        {
+          "mot": "de",
+          "debut": 0.975,
+          "fin": 1.057
+        },
+        {
+          "mot": "la",
+          "debut": 1.103,
+          "fin": 1.184
+        },
+        {
+          "mot": "page",
+          "debut": 1.242,
+          "fin": 1.637
+        },
+        {
+          "mot": "Historique",
+          "debut": 1.765,
+          "fin": 2.589
+        },
+        {
+          "mot": ":",
+          "debut": 2.635,
+          "fin": 2.659
+        },
+        {
+          "mot": "les",
+          "debut": 2.937,
+          "fin": 3.111
+        },
+        {
+          "mot": "devis.",
+          "debut": 3.146,
+          "fin": 3.587
+        },
+        {
+          "mot": "On",
+          "debut": 3.762,
+          "fin": 3.866
+        },
+        {
+          "mot": "consulte.",
+          "debut": 3.901,
+          "fin": 4.574
+        },
+        {
+          "mot": "La",
+          "debut": 4.853,
+          "fin": 5.004
+        },
+        {
+          "mot": "page",
+          "debut": 5.074,
+          "fin": 5.399
+        },
+        {
+          "mot": "reste",
+          "debut": 5.433,
+          "fin": 5.712
+        },
+        {
+          "mot": "vide",
+          "debut": 5.782,
+          "fin": 6.118
+        },
+        {
+          "mot": "quelques",
+          "debut": 6.165,
+          "fin": 6.502
+        },
+        {
+          "mot": "secondes,",
+          "debut": 6.525,
+          "fin": 7.198
+        },
+        {
+          "mot": "le",
+          "debut": 7.407,
+          "fin": 7.5
+        },
+        {
+          "mot": "temps",
+          "debut": 7.558,
+          "fin": 7.721
+        },
+        {
+          "mot": "que",
+          "debut": 7.744,
+          "fin": 7.825
+        },
+        {
+          "mot": "le",
+          "debut": 7.86,
+          "fin": 7.918
+        },
+        {
+          "mot": "tableau",
+          "debut": 7.964,
+          "fin": 8.266
+        },
+        {
+          "mot": "arrive",
+          "debut": 8.29,
+          "fin": 8.696
+        },
+        {
+          "mot": ":",
+          "debut": 8.754,
+          "fin": 8.777
+        },
+        {
+          "mot": "ce",
+          "debut": 8.986,
+          "fin": 9.044
+        },
+        {
+          "mot": "n'est",
+          "debut": 9.091,
+          "fin": 9.218
+        },
+        {
+          "mot": "pas",
+          "debut": 9.265,
+          "fin": 9.462
+        },
+        {
+          "mot": "une",
+          "debut": 9.543,
+          "fin": 9.648
+        },
+        {
+          "mot": "liste",
+          "debut": 9.671,
+          "fin": 9.973
+        },
+        {
+          "mot": "vide.",
+          "debut": 10.043,
+          "fin": 10.449
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 30.888,
+      "duree": 4.8,
+      "texte": "Dates, statut, prix. Vert pour accepté, orange pour en attente.",
+      "mots": [
+        {
+          "mot": "Dates,",
+          "debut": 0,
+          "fin": 0.395
+        },
+        {
+          "mot": "statut,",
+          "debut": 0.511,
+          "fin": 1.057
+        },
+        {
+          "mot": "prix.",
+          "debut": 1.149,
+          "fin": 1.498
+        },
+        {
+          "mot": "Vert",
+          "debut": 1.707,
+          "fin": 1.939
+        },
+        {
+          "mot": "pour",
+          "debut": 1.962,
+          "fin": 2.113
+        },
+        {
+          "mot": "accepté,",
+          "debut": 2.136,
+          "fin": 2.705
+        },
+        {
+          "mot": "orange",
+          "debut": 2.856,
+          "fin": 3.204
+        },
+        {
+          "mot": "pour",
+          "debut": 3.228,
+          "fin": 3.355
+        },
+        {
+          "mot": "en",
+          "debut": 3.379,
+          "fin": 3.425
+        },
+        {
+          "mot": "attente.",
+          "debut": 3.495,
+          "fin": 3.855
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 35.688,
+      "duree": 2.208,
+      "texte": "L'icône ouvre le devis.",
+      "mots": [
+        {
+          "mot": "L'icône",
+          "debut": 0,
+          "fin": 0.441
+        },
+        {
+          "mot": "ouvre",
+          "debut": 0.488,
+          "fin": 0.755
+        },
+        {
+          "mot": "le",
+          "debut": 0.778,
+          "fin": 0.848
+        },
+        {
+          "mot": "devis.",
+          "debut": 0.894,
+          "fin": 1.219
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 37.896,
+      "duree": 3,
+      "texte": "Et le bandeau dit qu'il n'est plus signable.",
+      "mots": [
+        {
+          "mot": "Et",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "le",
+          "debut": 0.174,
+          "fin": 0.232
+        },
+        {
+          "mot": "bandeau",
+          "debut": 0.279,
+          "fin": 0.557
+        },
+        {
+          "mot": "dit",
+          "debut": 0.627,
+          "fin": 0.789
+        },
+        {
+          "mot": "qu'il",
+          "debut": 0.824,
+          "fin": 0.964
+        },
+        {
+          "mot": "n'est",
+          "debut": 0.998,
+          "fin": 1.138
+        },
+        {
+          "mot": "plus",
+          "debut": 1.254,
+          "fin": 1.451
+        },
+        {
+          "mot": "signable.",
+          "debut": 1.474,
+          "fin": 1.985
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 40.896,
+      "duree": 13.44,
+      "texte": "Le journal montre un client. Pour voir tous les devis qui attendent une réponse, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "journal",
+          "debut": 0.197,
+          "fin": 0.499
+        },
+        {
+          "mot": "montre",
+          "debut": 0.557,
+          "fin": 0.813
+        },
+        {
+          "mot": "un",
+          "debut": 0.836,
+          "fin": 0.882
+        },
+        {
+          "mot": "client.",
+          "debut": 0.929,
+          "fin": 1.335
+        },
+        {
+          "mot": "Pour",
+          "debut": 1.405,
+          "fin": 1.591
+        },
+        {
+          "mot": "voir",
+          "debut": 1.637,
+          "fin": 1.8
+        },
+        {
+          "mot": "tous",
+          "debut": 1.892,
+          "fin": 2.043
+        },
+        {
+          "mot": "les",
+          "debut": 2.067,
+          "fin": 2.159
+        },
+        {
+          "mot": "devis",
+          "debut": 2.194,
+          "fin": 2.554
+        },
+        {
+          "mot": "qui",
+          "debut": 2.601,
+          "fin": 2.728
+        },
+        {
+          "mot": "attendent",
+          "debut": 2.775,
+          "fin": 3.088
+        },
+        {
+          "mot": "une",
+          "debut": 3.146,
+          "fin": 3.216
+        },
+        {
+          "mot": "réponse,",
+          "debut": 3.239,
+          "fin": 3.75
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 4.029,
+          "fin": 4.969
+        },
+        {
+          "mot": "parle",
+          "debut": 5.062,
+          "fin": 5.352
+        },
+        {
+          "mot": "à",
+          "debut": 5.433,
+          "fin": 5.48
+        },
+        {
+          "mot": "Claude",
+          "debut": 5.561,
+          "fin": 5.898
+        },
+        {
+          "mot": ":",
+          "debut": 5.933,
+          "fin": 5.979
+        },
+        {
+          "mot": "vous",
+          "debut": 6.223,
+          "fin": 6.351
+        },
+        {
+          "mot": "demandez",
+          "debut": 6.374,
+          "fin": 6.699
+        },
+        {
+          "mot": "en",
+          "debut": 6.722,
+          "fin": 6.769
+        },
+        {
+          "mot": "français,",
+          "debut": 6.815,
+          "fin": 7.326
+        },
+        {
+          "mot": "il",
+          "debut": 7.396,
+          "fin": 7.546
+        },
+        {
+          "mot": "lit",
+          "debut": 7.639,
+          "fin": 7.779
+        },
+        {
+          "mot": "vos",
+          "debut": 7.814,
+          "fin": 7.941
+        },
+        {
+          "mot": "données",
+          "debut": 7.976,
+          "fin": 8.336
+        },
+        {
+          "mot": "et",
+          "debut": 8.487,
+          "fin": 8.638
+        },
+        {
+          "mot": "répond.",
+          "debut": 8.684,
+          "fin": 9.056
+        },
+        {
+          "mot": "Copiez",
+          "debut": 9.381,
+          "fin": 9.752
+        },
+        {
+          "mot": "ce",
+          "debut": 9.776,
+          "fin": 9.868
+        },
+        {
+          "mot": "prompt,",
+          "debut": 9.927,
+          "fin": 10.31
+        },
+        {
+          "mot": "remplacez",
+          "debut": 10.379,
+          "fin": 10.937
+        },
+        {
+          "mot": "ce",
+          "debut": 10.995,
+          "fin": 11.099
+        },
+        {
+          "mot": "qui",
+          "debut": 11.157,
+          "fin": 11.285
+        },
+        {
+          "mot": "est",
+          "debut": 11.343,
+          "fin": 11.436
+        },
+        {
+          "mot": "entre",
+          "debut": 11.552,
+          "fin": 11.865
+        },
+        {
+          "mot": "crochets.",
+          "debut": 11.912,
+          "fin": 12.341
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 54.336,
+      "duree": 6,
+      "texte": "Un devis dit lui-même qu'il a expiré : la relance part sur ce qui peut encore se signer.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "devis",
+          "debut": 0.197,
+          "fin": 0.464
+        },
+        {
+          "mot": "dit",
+          "debut": 0.499,
+          "fin": 0.639
+        },
+        {
+          "mot": "lui-même",
+          "debut": 0.662,
+          "fin": 0.964
+        },
+        {
+          "mot": "qu'il",
+          "debut": 0.987,
+          "fin": 1.126
+        },
+        {
+          "mot": "a",
+          "debut": 1.161,
+          "fin": 1.184
+        },
+        {
+          "mot": "expiré",
+          "debut": 1.254,
+          "fin": 1.707
+        },
+        {
+          "mot": ":",
+          "debut": 1.823,
+          "fin": 1.869
+        },
+        {
+          "mot": "la",
+          "debut": 2.252,
+          "fin": 2.357
+        },
+        {
+          "mot": "relance",
+          "debut": 2.415,
+          "fin": 2.74
+        },
+        {
+          "mot": "part",
+          "debut": 2.775,
+          "fin": 3.042
+        },
+        {
+          "mot": "sur",
+          "debut": 3.088,
+          "fin": 3.216
+        },
+        {
+          "mot": "ce",
+          "debut": 3.251,
+          "fin": 3.344
+        },
+        {
+          "mot": "qui",
+          "debut": 3.402,
+          "fin": 3.506
+        },
+        {
+          "mot": "peut",
+          "debut": 3.576,
+          "fin": 3.715
+        },
+        {
+          "mot": "encore",
+          "debut": 3.762,
+          "fin": 4.052
+        },
+        {
+          "mot": "se",
+          "debut": 4.075,
+          "fin": 4.168
+        },
+        {
+          "mot": "signer.",
+          "debut": 4.214,
+          "fin": 4.586
+        }
+      ]
+    }
+  ]
+}

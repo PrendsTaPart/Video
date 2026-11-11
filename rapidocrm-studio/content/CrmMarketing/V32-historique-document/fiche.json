@@ -1,0 +1,90 @@
+{
+  "fonctionnalite": "Consulter l'historique des documents d'une entreprise",
+  "a_quoi_ca_sert": "Retrouver les fichiers attachés à un client — leur nom, leur type, leur poids, leur date d'ajout — et les télécharger ou les supprimer depuis la même ligne.",
+  "pour_qui": "Gérant ou commercial qui gère les pièces jointes d'un client",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert l'historique de l'entreprise"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Colonnes du tableau",
+      "obligatoire": false,
+      "explication": "Entreprise, Nom du fichier, Type, Taille, Date d'ajout et Action. Une ligne par document."
+    },
+    {
+      "nom": "Menu de la ligne",
+      "obligatoire": false,
+      "explication": "Le bouton à trois points de la colonne Action. Il propose Télécharger et Supprimer."
+    },
+    {
+      "nom": "Message de liste vide",
+      "obligatoire": false,
+      "explication": "« Il n'y a actuellement aucune donnée à afficher » s'affiche tant que la liste n'est pas chargée ou reste vide."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "get_entreprise",
+      "role": "Détail complet d'une entreprise : tous les champs de la fiche, pas seulement le nom et le statut. Lecture seule.",
+      "parametres_obligatoires": ["id"],
+      "parametres_optionnels": [],
+      "exemple_appel": { "id": 16 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Télécharger plutôt que supprimer quand on doute : un document effacé ne revient pas.",
+    "Se fier à la date d'ajout pour distinguer deux versions d'une même carte."
+  ],
+  "erreurs_frequentes": [
+    "Prendre le message de liste vide pour une absence de documents : il s'affiche aussi le temps du chargement.",
+    "Valider la confirmation de suppression trop vite : c'est le navigateur qui la pose, et elle est en anglais."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Récupérer une pièce transmise",
+      "contexte": "Il faut renvoyer la carte des pains au client.",
+      "action": "Ouvrez l'historique des documents, ouvrez le menu de la ligne et choisissez Télécharger.",
+      "resultat_attendu": "Le fichier se télécharge sous son nom."
+    },
+    {
+      "titre": "Renoncer à une suppression",
+      "contexte": "Le menu Supprimer a été ouvert par erreur.",
+      "action": "Cliquez sur Annuler dans la boîte de confirmation du navigateur.",
+      "resultat_attendu": "Les documents sont toujours là, la liste est inchangée."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le poids est affiché",
+      "contenu": "La colonne Taille dit combien pèse chaque fichier, avant de le télécharger.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Deux actions, un seul menu",
+      "contenu": "Télécharger et Supprimer vivent dans le même menu à trois points.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "La confirmation vient du navigateur",
+      "contenu": "La boîte « Are you sure you want to delete this file? » est celle du navigateur, pas du logiciel : elle porte l'adresse du site.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Relire la fiche complète d'une entreprise",
+    "texte": "Donne-moi la fiche complète de l'entreprise numéro [identifiant].",
+    "variables": ["identifiant"],
+    "outil_mcp": "get_entreprise"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 à 00:14 — bouton Consulter puis tableau des documents",
+    "a_quoi_ca_sert": "frames 00:14 et 00:19 — colonnes du tableau et menu de la ligne",
+    "champs_cles": "frames 00:10, 00:14 et 00:16",
+    "outils_mcp": "schéma get_entreprise",
+    "erreurs_frequentes": "frames 00:10 (message de liste vide) et 00:16 (boîte de dialogue du navigateur, en anglais)",
+    "cas_usage": "frames 00:14 à 00:19",
+    "astuces": "frames 00:14 et 00:16"
+  },
+  "a_verifier": []
+}

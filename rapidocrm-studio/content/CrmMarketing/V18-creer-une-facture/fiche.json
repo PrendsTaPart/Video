@@ -1,0 +1,111 @@
+{
+  "fonctionnalite": "Créer une facture depuis la fiche d'une entreprise",
+  "a_quoi_ca_sert": "Facturer un client sans ressaisir ses coordonnées : on choisit un produit du catalogue, le logiciel calcule les montants, et la facture rejoint l'activité de la fiche.",
+  "pour_qui": "Gérant ou commercial qui facture une prestation à un client existant",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert la fiche d'une entreprise cliente",
+    "Avoir au moins un produit au catalogue"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Choisir une charte graphique",
+      "obligatoire": true,
+      "explication": "La rangée de pastilles de couleur du bloc Design, qui habille la facture."
+    },
+    {
+      "nom": "Choisir un produit",
+      "obligatoire": true,
+      "explication": "Un carrousel de cartes produits, avec leur nom et leur prix hors taxes. Les flèches font défiler le catalogue."
+    },
+    {
+      "nom": "Date de début et Date de fin",
+      "obligatoire": true,
+      "explication": "Les deux dates de la période facturée."
+    },
+    {
+      "nom": "Prix HT, TVA, TTC, Remise, Prix avec remise",
+      "obligatoire": false,
+      "explication": "Les montants, calculés depuis le produit choisi. Seule la remise se saisit."
+    },
+    {
+      "nom": "Autre délai",
+      "obligatoire": true,
+      "explication": "Le délai de paiement, choisi dans une liste — 14 jours par exemple."
+    },
+    {
+      "nom": "Statut",
+      "obligatoire": true,
+      "explication": "Payée ou En attente, sous les mentions légales."
+    },
+    {
+      "nom": "Mode de paiement",
+      "obligatoire": true,
+      "explication": "Espèce, Carte bleu, Virement ou Chèque. Une seule case à la fois."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_factures",
+      "role": "Liste les factures du CRM, filtrables par statut et par période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["statut", "periode", "limit"],
+      "exemple_appel": { "statut": "en_attente", "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Faire défiler tout le carrousel avant de cocher : le bon produit n'est pas toujours le premier.",
+    "Vérifier le total TTC en bas de fenêtre : c'est lui qu'il faudra retrouver sur le relevé bancaire."
+  ],
+  "erreurs_frequentes": [
+    "Saisir les montants à la main : ils viennent du produit et se recalculent tout seuls.",
+    "Oublier la date de fin : les deux dates bornent la période facturée."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Facturer une prestation livrée",
+      "contexte": "Le pack site vitrine est livré, il faut le facturer.",
+      "action": "Ouvrez Créer une facture depuis le panneau Finance, cochez le produit, fixez les deux dates, choisissez le délai et le mode de règlement, puis enregistrez.",
+      "resultat_attendu": "La facture apparaît en tête des activités récentes de la fiche."
+    },
+    {
+      "titre": "Émettre une facture déjà réglée",
+      "contexte": "Le client a payé par carte à la livraison.",
+      "action": "Cochez le statut Payée et le mode de paiement Carte bleu avant d'enregistrer.",
+      "resultat_attendu": "La facture est créée avec son statut et son moyen de règlement."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Trois documents, un seul panneau",
+      "contenu": "Créer un devis, Créer une facture et Créer un contrat vivent ensemble dans le bloc Finance de la fiche.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le carrousel cache le reste du catalogue",
+      "contenu": "Deux produits s'affichent à la fois ; les flèches latérales font venir les suivants.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le total se lit deux fois",
+      "contenu": "Une fois dans le bloc des montants, une fois en bas de fenêtre à côté de Total HT et Total TTC.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver les factures en attente",
+    "texte": "Liste-moi mes [nombre] factures en attente avec leur montant.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_factures"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 à 00:05 — panneau Finance puis bloc Design de la fenêtre Créer une facture",
+    "a_quoi_ca_sert": "frames 00:15 et 00:34 — montants calculés, puis ligne d'activité en tête de la fiche",
+    "champs_cles": "frames 00:05, 00:10, 00:15, 00:20, 00:25 et 00:30",
+    "outils_mcp": "schéma list_factures",
+    "erreurs_frequentes": "frames 00:15 (montants calculés) et 00:20 (deux dates)",
+    "cas_usage": "frames 00:15 à 00:34 — produit « Pack site vitrine » à 1199 €, TVA 59,95, TTC 1258,95",
+    "astuces": "frames 00:02, 00:10 et 00:30"
+  },
+  "a_verifier": []
+}

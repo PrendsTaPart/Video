@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "La consigne est écrite. Le brief commercial, lui, dort dans une pièce jointe d'octobre. Fichiers et consignes au même endroit que le produit."
+  },
+  {
+    "timestamp_secondes": 9,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part d'une stratégie déjà créée sur un produit, et on ressort avec un dossier complet : les documents qui vont avec, et les consignes en clair. Deux boutons suffisent, côte à côte — ajouter une description pour du texte, ajouter un fichier pour un document. Le titre de la page rappelle en permanence de quelle stratégie et de quel produit on parle. Et tout reste modifiable : chaque bloc porte ses boutons pour corriger ou supprimer."
+  },
+  {
+    "timestamp_secondes": 33,
+    "titre": "Ouvrir les descriptions de la stratégie",
+    "texte": "La page des descriptions de la stratégie, encore vide. Son titre rappelle le contexte : quelle stratégie, pour quel produit. Et deux boutons à droite."
+  },
+  {
+    "timestamp_secondes": 42,
+    "titre": "Nommer le fichier",
+    "texte": "Le nom du fichier d'abord. C'est ce libellé qui s'affichera, pas le nom sur votre poste."
+  },
+  {
+    "timestamp_secondes": 47,
+    "titre": "Importer le fichier",
+    "texte": "Puis le document, par le bouton parcourir. Et on valide."
+  },
+  {
+    "timestamp_secondes": 50,
+    "titre": "Relire ce qui est attaché",
+    "texte": "Le fichier apparaît en vignette, la description en dessous. Un nouveau vendeur ouvre la page et sait quoi faire, chiffres à l'appui."
+  },
+  {
+    "timestamp_secondes": 59,
+    "titre": "Faites-le avec Claude",
+    "texte": "Le dossier est constitué. Pour retrouver les produits dont la description reste à écrire, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu."
+  },
+  {
+    "timestamp_secondes": 79,
+    "titre": "À retenir",
+    "texte": "Une stratégie, ses documents, ses consignes. Sur une seule page."
+  }
+]

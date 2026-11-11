@@ -1,0 +1,120 @@
+{
+  "duree": 30.0,
+  "resolution": [1920, 1020],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Template SMS — trois templates existants" },
+    { "t": 6.0, "nom": "Modale Ajouter un template SMS — nom, catégorie, image" },
+    { "t": 12.0, "nom": "Bas de modale — Texte, aide du bot, CTA" },
+    { "t": 19.0, "nom": "Message écrit et CTA Voir facture choisi" },
+    { "t": 24.0, "nom": "Retour à la liste des templates" },
+    { "t": 28.0, "nom": "Le template Facture envoyée est en place" }
+  ],
+  "actions": [
+    {
+      "t": 2.0,
+      "type": "ouverture",
+      "cible": "page Template SMS et ses trois templates",
+      "zone": { "x": 0.23, "y": 0.28, "w": 0.75, "h": 0.7 },
+      "texte_visible": "Chercher · sélectionner une catégorie · ajouter un templateSMS — Mes templates : Création de devis · Rappel RDV · Devis prêt"
+    },
+    {
+      "t": 5.5,
+      "type": "clic",
+      "cible": "bouton ajouter un templateSMS",
+      "zone": { "x": 0.81, "y": 0.31, "w": 0.16, "h": 0.08 },
+      "texte_visible": "ajouter un templateSMS"
+    },
+    {
+      "t": 8.0,
+      "type": "saisie",
+      "cible": "champ Nom du template",
+      "zone": { "x": 0.27, "y": 0.37, "w": 0.4, "h": 0.13 },
+      "texte_visible": "Ajouter un template SMS — Nom du template — Facture en"
+    },
+    {
+      "t": 14.0,
+      "type": "saisie",
+      "cible": "zone de texte du message",
+      "zone": { "x": 0.27, "y": 0.24, "w": 0.4, "h": 0.32 },
+      "texte_visible": "Texte — Écrire un message ici… — aide du bot"
+    },
+    {
+      "t": 20.0,
+      "type": "selection",
+      "cible": "liste Ajouter un CTA",
+      "zone": { "x": 0.27, "y": 0.4, "w": 0.4, "h": 0.14 },
+      "texte_visible": "Ajouter un CTA — Voir facture — Ajouter un intitulé supplémentaire"
+    },
+    {
+      "t": 22.5,
+      "type": "validation",
+      "cible": "bouton ajouter",
+      "zone": { "x": 0.42, "y": 0.79, "w": 0.11, "h": 0.1 },
+      "texte_visible": "ajouter"
+    },
+    {
+      "t": 28.0,
+      "type": "ouverture",
+      "cible": "le quatrième template dans la liste",
+      "zone": { "x": 0.23, "y": 0.55, "w": 0.75, "h": 0.42 },
+      "texte_visible": "Création de devis · Rappel RDV · Devis prêt · Facture envoyée — consulter"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir la page des templates SMS",
+      "debut": 0,
+      "fin": 5.8,
+      "actions": [0, 1],
+      "zone_focus": { "x": 0.23, "y": 0.28, "w": 0.75, "h": 0.65 }
+    },
+    {
+      "numero": 2,
+      "titre": "Nommer le template",
+      "debut": 5.8,
+      "fin": 11.5,
+      "actions": [2],
+      "zone_focus": { "x": 0.26, "y": 0.32, "w": 0.42, "h": 0.35 }
+    },
+    {
+      "numero": 3,
+      "titre": "Écrire le message",
+      "debut": 11.5,
+      "fin": 18.0,
+      "actions": [3],
+      "zone_focus": { "x": 0.26, "y": 0.2, "w": 0.42, "h": 0.42 }
+    },
+    {
+      "numero": 4,
+      "titre": "Ajouter le bouton et valider",
+      "debut": 18.0,
+      "fin": 24.0,
+      "actions": [4, 5],
+      "zone_focus": { "x": 0.26, "y": 0.35, "w": 0.42, "h": 0.55 }
+    },
+    {
+      "numero": 5,
+      "titre": "Retrouver le template dans la liste",
+      "debut": 24.0,
+      "fin": 30.0,
+      "actions": [6],
+      "zone_focus": { "x": 0.23, "y": 0.5, "w": 0.75, "h": 0.47 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 30.0,
+      "zone": { "x": 0.0, "y": 0.0, "w": 1.0, "h": 0.145 },
+      "raison": "Barre du navigateur : onglets, extensions et adresse locale du poste d'enregistrement (127.0.0.1:8000)"
+    },
+    {
+      "t": 0,
+      "fin": 30.0,
+      "zone": { "x": 0.685, "y": 0.15, "w": 0.315, "h": 0.095 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    }
+  ]
+}

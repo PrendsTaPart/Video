@@ -1,0 +1,62 @@
+[
+  {
+    "mot": "L'icône",
+    "debut": 0,
+    "fin": 0.406
+  },
+  {
+    "mot": "en",
+    "debut": 0.43,
+    "fin": 0.476
+  },
+  {
+    "mot": "bout",
+    "debut": 0.511,
+    "fin": 0.639
+  },
+  {
+    "mot": "de",
+    "debut": 0.662,
+    "fin": 0.743
+  },
+  {
+    "mot": "ligne",
+    "debut": 0.789,
+    "fin": 1.045
+  },
+  {
+    "mot": "rouvre",
+    "debut": 1.103,
+    "fin": 1.358
+  },
+  {
+    "mot": "le",
+    "debut": 1.393,
+    "fin": 1.451
+  },
+  {
+    "mot": "message",
+    "debut": 1.498,
+    "fin": 1.939
+  },
+  {
+    "mot": ":",
+    "debut": 1.985,
+    "fin": 2.009
+  },
+  {
+    "mot": "objet,",
+    "debut": 2.45,
+    "fin": 2.937
+  },
+  {
+    "mot": "destinataire,",
+    "debut": 2.995,
+    "fin": 3.738
+  },
+  {
+    "mot": "contenu.",
+    "debut": 3.855,
+    "fin": 4.389
+  }
+]

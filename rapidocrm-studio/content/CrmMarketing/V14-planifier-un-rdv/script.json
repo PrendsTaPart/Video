@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 14,
+    "titre": "Planifier un RDV",
+    "titre_court": "Planifier un RDV",
+    "slug": "06-planifier-un-rdv"
+  },
+  "hook": {
+    "texte": "Le rendez-vous est calé. Reste à prévenir le client, l'équipe, et à penser au rappel la veille.",
+    "promesse": "Un seul formulaire, et tout le monde est prévenu.",
+    "duree": 8,
+    "alternatives": [
+      "Un créneau posé dans un coin de tête n'est pas un rendez-vous.",
+      "Prévenir trois personnes par trois canaux, c'est trois occasions d'oublier.",
+      "Le rappel de la veille, c'est ce qui fait la différence entre un rendez-vous et un lapin."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec un rendez-vous posé. Un titre, un créneau, les invités, le type, le rappel : le formulaire descend dans cet ordre.",
+    "duree": 17
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir « Prendre un rendez-vous »",
+        "voix": "Panneau Communication, prendre un rendez-vous.",
+        "debut_source": 1,
+        "fin_source": 6,
+        "zone_focus": {
+          "x": 0.72,
+          "y": 0.05,
+          "w": 0.27,
+          "h": 0.85
+        },
+        "annotation": "Prendre un rendez-vous"
+      },
+      {
+        "numero": 2,
+        "titre": "Donner un titre au rendez-vous",
+        "voix": "Un titre, d'abord. C'est lui qu'on relira dans l'agenda, alors autant qu'il dise de quoi on parle.",
+        "debut_source": 6,
+        "fin_source": 16,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.05,
+          "w": 0.42,
+          "h": 0.42
+        },
+        "annotation": "Titre"
+      },
+      {
+        "numero": 3,
+        "titre": "Fixer le créneau, début et fin",
+        "voix": "Puis le créneau. Deux champs : l'heure de début, l'heure de fin. Le formulaire accepte le matin comme le soir, alors on relit. Dix heures, dix heures quarante-cinq : le rendez-vous est borné, et il tiendra la place qu'on lui a donnée dans l'agenda, ni plus ni moins.",
+        "debut_source": 16,
+        "fin_source": 44,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.38,
+          "w": 0.42,
+          "h": 0.26
+        },
+        "annotation": "Créneau"
+      },
+      {
+        "numero": 4,
+        "titre": "Choisir les invités et les organisateurs",
+        "voix": "Les invités, ensuite. Le champ propose les utilisateurs du compte dès les premières lettres. Chaque nom retenu devient une étiquette. En dessous, les organisateurs : ceux qui tiennent le rendez-vous.",
+        "debut_source": 44,
+        "fin_source": 55.0,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.5,
+          "w": 0.42,
+          "h": 0.45
+        },
+        "annotation": "Invités et organisateurs"
+      },
+      {
+        "numero": 5,
+        "titre": "Type de rendez-vous, rappel et mode d'envoi",
+        "voix": "Visio, présentiel ou téléphone. Puis le rappel, et le canal d'envoi.",
+        "debut_source": 60.0,
+        "fin_source": 66.0,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.38,
+          "w": 0.42,
+          "h": 0.6
+        },
+        "annotation": "Type, rappel, envoi"
+      },
+      {
+        "numero": 6,
+        "titre": "Ajouter une note et enregistrer",
+        "voix": "Une note pour ce qu'il faut préparer, puis enregistrer.",
+        "debut_source": 66,
+        "fin_source": 73,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.4,
+          "w": 0.42,
+          "h": 0.55
+        },
+        "annotation": "Enregistrer"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Et pour voir la semaine ?",
+    "voix": "Les rendez-vous s'empilent. Pour savoir ce qui vous attend, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] rendez-vous de la semaine avec leur date et leur statut.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_rdvs"
+    },
+    "resultat_affiche": {
+      "titre": "3 rendez-vous cette semaine",
+      "lignes": [
+        "Mardi 10:00 — point suivi — confirmé",
+        "Mercredi 14:30 — présentation — en attente",
+        "Vendredi 09:00 — signature — confirmé"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Un rendez-vous posé, des invités prévenus, un rappel programmé : trois oublis en moins.",
+    "duree": 8,
+    "alternatives": [
+      "Ce qui est dans l'agenda existe ; ce qui est dans la tête s'évapore.",
+      "Le rappel se règle une fois, il travaille tout seul ensuite.",
+      "Un créneau borné vaut mieux qu'un « on se cale ça »."
+    ]
+  },
+  "seo": {
+    "titre": "Planifier un rendez-vous — RapidoCRM",
+    "description": "Posez un rendez-vous depuis la fiche d'une entreprise RapidoCRM : créneau, invités, type, rappel et canal d'envoi. Le tutoriel de l'Académie.",
+    "mots_cles": [
+      "rendez-vous",
+      "RapidoCRM",
+      "agenda",
+      "rappel",
+      "CRM",
+      "invités"
+    ],
+    "youtube_titre": "Planifier un rendez-vous — RapidoCRM",
+    "youtube_description": "Le tutoriel de la prise de rendez-vous sur RapidoCRM : titre, créneau, invités et organisateurs, type de rendez-vous, rappel et mode d'envoi. Tout se règle dans une seule fenêtre. RapidoCRM Académie.",
+    "youtube_tags": [
+      "RapidoCRM",
+      "rendez-vous",
+      "agenda",
+      "CRM",
+      "rappel"
+    ]
+  }
+}

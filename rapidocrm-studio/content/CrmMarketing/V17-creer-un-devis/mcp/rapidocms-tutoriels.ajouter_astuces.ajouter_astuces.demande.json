@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-un-devis",
+    "astuces": [
+      {
+        "titre": "Le devis part de la fiche client",
+        "texte": "Le panneau Finance de la fiche propose Créer un devis, Créer une facture et Créer un contrat : le client est déjà rattaché.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Le logo se reprend du client",
+        "texte": "Le bloc Design ouvre le devis avec le logo de l'entreprise et une charte graphique à choisir.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "L'envoi se décide dans la même fenêtre",
+        "texte": "La question « Envoyer votre devis directement depuis rapido CRM? » se pose entre le statut et le mode de paiement.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-07T08:18:21.295Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

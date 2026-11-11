@@ -1,0 +1,192 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "part",
+    "debut": 0.197,
+    "fin": 0.36
+  },
+  {
+    "mot": "de",
+    "debut": 0.383,
+    "fin": 0.464
+  },
+  {
+    "mot": "la",
+    "debut": 0.511,
+    "fin": 0.58
+  },
+  {
+    "mot": "liste",
+    "debut": 0.639,
+    "fin": 0.987
+  },
+  {
+    "mot": "des",
+    "debut": 1.057,
+    "fin": 1.173
+  },
+  {
+    "mot": "devis,",
+    "debut": 1.207,
+    "fin": 1.695
+  },
+  {
+    "mot": "et",
+    "debut": 1.904,
+    "fin": 2.043
+  },
+  {
+    "mot": "on",
+    "debut": 2.101,
+    "fin": 2.159
+  },
+  {
+    "mot": "ressort",
+    "debut": 2.206,
+    "fin": 2.589
+  },
+  {
+    "mot": "avec",
+    "debut": 2.612,
+    "fin": 2.879
+  },
+  {
+    "mot": "un",
+    "debut": 2.961,
+    "fin": 3.019
+  },
+  {
+    "mot": "devis",
+    "debut": 3.077,
+    "fin": 3.309
+  },
+  {
+    "mot": "signé.",
+    "debut": 3.332,
+    "fin": 3.878
+  },
+  {
+    "mot": "Tout",
+    "debut": 4.203,
+    "fin": 4.377
+  },
+  {
+    "mot": "se",
+    "debut": 4.4,
+    "fin": 4.493
+  },
+  {
+    "mot": "passe",
+    "debut": 4.551,
+    "fin": 4.737
+  },
+  {
+    "mot": "dans",
+    "debut": 4.76,
+    "fin": 4.876
+  },
+  {
+    "mot": "le",
+    "debut": 4.899,
+    "fin": 4.969
+  },
+  {
+    "mot": "logiciel",
+    "debut": 5.016,
+    "fin": 5.55
+  },
+  {
+    "mot": ":",
+    "debut": 5.666,
+    "fin": 5.724
+  },
+  {
+    "mot": "on",
+    "debut": 5.898,
+    "fin": 6.026
+  },
+  {
+    "mot": "ouvre",
+    "debut": 6.107,
+    "fin": 6.316
+  },
+  {
+    "mot": "le",
+    "debut": 6.339,
+    "fin": 6.42
+  },
+  {
+    "mot": "devis",
+    "debut": 6.467,
+    "fin": 6.699
+  },
+  {
+    "mot": "en",
+    "debut": 6.722,
+    "fin": 6.769
+  },
+  {
+    "mot": "pleine",
+    "debut": 6.815,
+    "fin": 7.012
+  },
+  {
+    "mot": "page,",
+    "debut": 7.036,
+    "fin": 7.454
+  },
+  {
+    "mot": "on",
+    "debut": 7.663,
+    "fin": 7.755
+  },
+  {
+    "mot": "trace",
+    "debut": 7.79,
+    "fin": 8.034
+  },
+  {
+    "mot": "la",
+    "debut": 8.057,
+    "fin": 8.127
+  },
+  {
+    "mot": "signature",
+    "debut": 8.173,
+    "fin": 8.731
+  },
+  {
+    "mot": "dans",
+    "debut": 8.754,
+    "fin": 8.882
+  },
+  {
+    "mot": "le",
+    "debut": 8.905,
+    "fin": 8.963
+  },
+  {
+    "mot": "cadre",
+    "debut": 9.009,
+    "fin": 9.253
+  },
+  {
+    "mot": "prévu,",
+    "debut": 9.288,
+    "fin": 9.822
+  },
+  {
+    "mot": "on",
+    "debut": 10.205,
+    "fin": 10.333
+  },
+  {
+    "mot": "enregistre.",
+    "debut": 10.403,
+    "fin": 10.948
+  }
+]

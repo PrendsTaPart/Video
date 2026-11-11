@@ -1,0 +1,20 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_prompts",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-contrat",
+    "prompts": [
+      {
+        "titre": "Retrouver les contrats en attente",
+        "texte": "Liste-moi mes [nombre] contrats en attente avec leur destinataire et leurs dates.",
+        "variables": [
+          "nombre"
+        ],
+        "outil_mcp": "list_contrats"
+      }
+    ]
+  },
+  "demande_le": "2026-09-09T10:25:08.762Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

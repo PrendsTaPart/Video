@@ -1,0 +1,20 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_prompts",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-de-l-entreprise",
+    "prompts": [
+      {
+        "titre": "Compter les échanges avec un client",
+        "texte": "Donne-moi les statistiques d'interactions du mois pour l'entreprise numéro [identifiant].",
+        "variables": [
+          "identifiant"
+        ],
+        "outil_mcp": "get_interaction_stats"
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T14:18:56.703Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "mot": "Un",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "titre,",
+    "debut": 0.163,
+    "fin": 0.511
+  },
+  {
+    "mot": "d'abord.",
+    "debut": 0.534,
+    "fin": 0.929
+  },
+  {
+    "mot": "C'est",
+    "debut": 1.08,
+    "fin": 1.289
+  },
+  {
+    "mot": "lui",
+    "debut": 1.312,
+    "fin": 1.405
+  },
+  {
+    "mot": "qu'on",
+    "debut": 1.451,
+    "fin": 1.579
+  },
+  {
+    "mot": "relira",
+    "debut": 1.625,
+    "fin": 1.95
+  },
+  {
+    "mot": "dans",
+    "debut": 1.997,
+    "fin": 2.125
+  },
+  {
+    "mot": "l'agenda,",
+    "debut": 2.148,
+    "fin": 2.705
+  },
+  {
+    "mot": "alors",
+    "debut": 2.786,
+    "fin": 3.007
+  },
+  {
+    "mot": "autant",
+    "debut": 3.042,
+    "fin": 3.32
+  },
+  {
+    "mot": "qu'il",
+    "debut": 3.355,
+    "fin": 3.506
+  },
+  {
+    "mot": "dise",
+    "debut": 3.553,
+    "fin": 3.773
+  },
+  {
+    "mot": "de",
+    "debut": 3.808,
+    "fin": 3.889
+  },
+  {
+    "mot": "quoi",
+    "debut": 3.947,
+    "fin": 4.075
+  },
+  {
+    "mot": "on",
+    "debut": 4.098,
+    "fin": 4.156
+  },
+  {
+    "mot": "parle.",
+    "debut": 4.226,
+    "fin": 4.621
+  }
+]

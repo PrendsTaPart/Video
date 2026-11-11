@@ -1,0 +1,152 @@
+[
+  {
+    "mot": "Les",
+    "debut": 0,
+    "fin": 0.197
+  },
+  {
+    "mot": "invités,",
+    "debut": 0.244,
+    "fin": 0.592
+  },
+  {
+    "mot": "ensuite.",
+    "debut": 0.627,
+    "fin": 1.103
+  },
+  {
+    "mot": "Le",
+    "debut": 1.277,
+    "fin": 1.405
+  },
+  {
+    "mot": "champ",
+    "debut": 1.44,
+    "fin": 1.649
+  },
+  {
+    "mot": "propose",
+    "debut": 1.672,
+    "fin": 2.032
+  },
+  {
+    "mot": "les",
+    "debut": 2.055,
+    "fin": 2.159
+  },
+  {
+    "mot": "utilisateurs",
+    "debut": 2.206,
+    "fin": 2.833
+  },
+  {
+    "mot": "du",
+    "debut": 2.856,
+    "fin": 2.937
+  },
+  {
+    "mot": "compte",
+    "debut": 2.995,
+    "fin": 3.437
+  },
+  {
+    "mot": "dès",
+    "debut": 3.646,
+    "fin": 3.82
+  },
+  {
+    "mot": "les",
+    "debut": 3.843,
+    "fin": 3.924
+  },
+  {
+    "mot": "premières",
+    "debut": 3.947,
+    "fin": 4.319
+  },
+  {
+    "mot": "lettres.",
+    "debut": 4.342,
+    "fin": 4.679
+  },
+  {
+    "mot": "Chaque",
+    "debut": 4.888,
+    "fin": 5.201
+  },
+  {
+    "mot": "nom",
+    "debut": 5.236,
+    "fin": 5.352
+  },
+  {
+    "mot": "retenu",
+    "debut": 5.387,
+    "fin": 5.851
+  },
+  {
+    "mot": "devient",
+    "debut": 5.944,
+    "fin": 6.269
+  },
+  {
+    "mot": "une",
+    "debut": 6.327,
+    "fin": 6.42
+  },
+  {
+    "mot": "étiquette.",
+    "debut": 6.444,
+    "fin": 7.047
+  },
+  {
+    "mot": "En",
+    "debut": 7.291,
+    "fin": 7.454
+  },
+  {
+    "mot": "dessous,",
+    "debut": 7.5,
+    "fin": 7.883
+  },
+  {
+    "mot": "les",
+    "debut": 7.918,
+    "fin": 8.011
+  },
+  {
+    "mot": "organisateurs",
+    "debut": 8.081,
+    "fin": 8.916
+  },
+  {
+    "mot": ":",
+    "debut": 8.94,
+    "fin": 8.963
+  },
+  {
+    "mot": "ceux",
+    "debut": 9.114,
+    "fin": 9.323
+  },
+  {
+    "mot": "qui",
+    "debut": 9.369,
+    "fin": 9.462
+  },
+  {
+    "mot": "tiennent",
+    "debut": 9.52,
+    "fin": 9.799
+  },
+  {
+    "mot": "le",
+    "debut": 9.834,
+    "fin": 9.88
+  },
+  {
+    "mot": "rendez-vous.",
+    "debut": 9.927,
+    "fin": 10.519
+  }
+]

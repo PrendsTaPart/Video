@@ -1,0 +1,177 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "part",
+    "debut": 0.197,
+    "fin": 0.348
+  },
+  {
+    "mot": "de",
+    "debut": 0.372,
+    "fin": 0.418
+  },
+  {
+    "mot": "la",
+    "debut": 0.453,
+    "fin": 0.522
+  },
+  {
+    "mot": "page",
+    "debut": 0.604,
+    "fin": 0.94
+  },
+  {
+    "mot": "Template",
+    "debut": 1.057,
+    "fin": 1.521
+  },
+  {
+    "mot": "S.M.S.,",
+    "debut": 1.579,
+    "fin": 2.403
+  },
+  {
+    "mot": "et",
+    "debut": 2.577,
+    "fin": 2.705
+  },
+  {
+    "mot": "on",
+    "debut": 2.752,
+    "fin": 2.798
+  },
+  {
+    "mot": "ressort",
+    "debut": 2.833,
+    "fin": 3.135
+  },
+  {
+    "mot": "avec",
+    "debut": 3.158,
+    "fin": 3.332
+  },
+  {
+    "mot": "un",
+    "debut": 3.402,
+    "fin": 3.448
+  },
+  {
+    "mot": "modèle",
+    "debut": 3.518,
+    "fin": 3.831
+  },
+  {
+    "mot": "de",
+    "debut": 3.866,
+    "fin": 3.936
+  },
+  {
+    "mot": "plus.",
+    "debut": 3.994,
+    "fin": 4.481
+  },
+  {
+    "mot": "Un",
+    "debut": 4.923,
+    "fin": 5.12
+  },
+  {
+    "mot": "nom,",
+    "debut": 5.143,
+    "fin": 5.457
+  },
+  {
+    "mot": "une",
+    "debut": 5.515,
+    "fin": 5.666
+  },
+  {
+    "mot": "catégorie,",
+    "debut": 5.689,
+    "fin": 6.536
+  },
+  {
+    "mot": "le",
+    "debut": 6.711,
+    "fin": 6.803
+  },
+  {
+    "mot": "texte",
+    "debut": 6.873,
+    "fin": 7.163
+  },
+  {
+    "mot": "du",
+    "debut": 7.21,
+    "fin": 7.279
+  },
+  {
+    "mot": "message,",
+    "debut": 7.326,
+    "fin": 7.872
+  },
+  {
+    "mot": "et",
+    "debut": 8.081,
+    "fin": 8.208
+  },
+  {
+    "mot": "un",
+    "debut": 8.29,
+    "fin": 8.336
+  },
+  {
+    "mot": "bouton",
+    "debut": 8.394,
+    "fin": 8.661
+  },
+  {
+    "mot": "d'action",
+    "debut": 8.696,
+    "fin": 8.963
+  },
+  {
+    "mot": "à",
+    "debut": 9.009,
+    "fin": 9.033
+  },
+  {
+    "mot": "joindre.",
+    "debut": 9.056,
+    "fin": 9.497
+  },
+  {
+    "mot": "Tout",
+    "debut": 9.938,
+    "fin": 10.17
+  },
+  {
+    "mot": "tient",
+    "debut": 10.194,
+    "fin": 10.519
+  },
+  {
+    "mot": "dans",
+    "debut": 10.635,
+    "fin": 10.809
+  },
+  {
+    "mot": "une",
+    "debut": 10.89,
+    "fin": 10.971
+  },
+  {
+    "mot": "seule",
+    "debut": 10.995,
+    "fin": 11.157
+  },
+  {
+    "mot": "fenêtre.",
+    "debut": 11.18,
+    "fin": 11.633
+  }
+]

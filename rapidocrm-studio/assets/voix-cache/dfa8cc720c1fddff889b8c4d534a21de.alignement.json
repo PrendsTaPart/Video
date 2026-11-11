@@ -1,0 +1,52 @@
+[
+  {
+    "mot": "Deux",
+    "debut": 0,
+    "fin": 0.209
+  },
+  {
+    "mot": "filtres",
+    "debut": 0.244,
+    "fin": 0.592
+  },
+  {
+    "mot": "posés,",
+    "debut": 0.615,
+    "fin": 1.033
+  },
+  {
+    "mot": "et",
+    "debut": 1.068,
+    "fin": 1.161
+  },
+  {
+    "mot": "le",
+    "debut": 1.196,
+    "fin": 1.254
+  },
+  {
+    "mot": "bon",
+    "debut": 1.3,
+    "fin": 1.44
+  },
+  {
+    "mot": "devis",
+    "debut": 1.486,
+    "fin": 1.765
+  },
+  {
+    "mot": "est",
+    "debut": 1.8,
+    "fin": 1.892
+  },
+  {
+    "mot": "devant",
+    "debut": 1.927,
+    "fin": 2.194
+  },
+  {
+    "mot": "vous.",
+    "debut": 2.218,
+    "fin": 2.438
+  }
+]

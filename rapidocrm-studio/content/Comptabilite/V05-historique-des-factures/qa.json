@@ -1,0 +1,102 @@
+{
+  "verte": true,
+  "controles": [
+    {
+      "famille": "Charte",
+      "intitule": "Couleurs dominantes dans la palette",
+      "statut": "avertissement",
+      "detail": "qa-008.jpg → #583838"
+    },
+    {
+      "famille": "Charte",
+      "intitule": "Police unique Arial",
+      "statut": "ok",
+      "detail": "garantie par src/brand/Text.tsx — aucune autre police n'est déclarée"
+    },
+    {
+      "famille": "Charte",
+      "intitule": "Logo non déformé, non tourné, taille et zone respectées",
+      "statut": "ok",
+      "detail": "garanti au build par les assertions de <Logo> ; la séquence 5 le monte sur #F2F4F7"
+    },
+    {
+      "famille": "Lisibilité",
+      "intitule": "Sous-titres dans les marges de sécurité",
+      "statut": "ok",
+      "detail": "positionnés à 8 % du bas, au-delà des 5 % requis"
+    },
+    {
+      "famille": "Lisibilité",
+      "intitule": "Titre de vignette lisible en petit",
+      "statut": "ok",
+      "detail": "23 caractères"
+    },
+    {
+      "famille": "Audio",
+      "intitule": "Pas de saturation",
+      "statut": "ok",
+      "detail": ""
+    },
+    {
+      "famille": "Audio",
+      "intitule": "Niveau de voix constant entre les blocs",
+      "statut": "ok",
+      "detail": "écart de 1.3 dB"
+    },
+    {
+      "famille": "Audio",
+      "intitule": "Musique sous la voix",
+      "statut": "ok",
+      "detail": "fond à -26 dB, ducké à -34 dB par sidechaincompress au mixage"
+    },
+    {
+      "famille": "Confidentialité",
+      "intitule": "5 zone(s) sensible(s) floutée(s)",
+      "statut": "ok",
+      "detail": ""
+    },
+    {
+      "famille": "Exactitude",
+      "intitule": "Aucun point en attente de vérification",
+      "statut": "ok",
+      "detail": ""
+    },
+    {
+      "famille": "Exactitude",
+      "intitule": "Chaque bloc de la fiche porte sa source",
+      "statut": "ok",
+      "detail": ""
+    },
+    {
+      "famille": "Complétude",
+      "intitule": "Transcription ≥ 140 mots",
+      "statut": "ok",
+      "detail": "195 mots"
+    },
+    {
+      "famille": "Complétude",
+      "intitule": "Au moins 3 étapes",
+      "statut": "ok",
+      "detail": "4 étapes"
+    },
+    {
+      "famille": "Complétude",
+      "intitule": "Au moins 1 prompt Claude",
+      "statut": "ok",
+      "detail": ""
+    },
+    {
+      "famille": "Complétude",
+      "intitule": "SEO aux bonnes longueurs",
+      "statut": "ok",
+      "detail": "titre 35 car., description 144 car."
+    },
+    {
+      "famille": "Complétude",
+      "intitule": "Durée finale dans la fenêtre 55–170 s",
+      "statut": "ok",
+      "detail": "73 s"
+    }
+  ],
+  "produit_le": "2026-09-04T01:29:08.877Z"
+}

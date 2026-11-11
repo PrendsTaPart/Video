@@ -1,0 +1,82 @@
+[
+  {
+    "mot": "Deux",
+    "debut": 0,
+    "fin": 0.221
+  },
+  {
+    "mot": "filtres",
+    "debut": 0.255,
+    "fin": 0.557
+  },
+  {
+    "mot": "au-dessus,",
+    "debut": 0.58,
+    "fin": 1.08
+  },
+  {
+    "mot": "statut",
+    "debut": 1.231,
+    "fin": 1.591
+  },
+  {
+    "mot": "et",
+    "debut": 1.625,
+    "fin": 1.707
+  },
+  {
+    "mot": "entreprise.",
+    "debut": 1.753,
+    "fin": 2.334
+  },
+  {
+    "mot": "Et",
+    "debut": 2.717,
+    "fin": 2.844
+  },
+  {
+    "mot": "les",
+    "debut": 2.879,
+    "fin": 2.972
+  },
+  {
+    "mot": "colonnes",
+    "debut": 2.995,
+    "fin": 3.355
+  },
+  {
+    "mot": "se",
+    "debut": 3.379,
+    "fin": 3.471
+  },
+  {
+    "mot": "trient",
+    "debut": 3.518,
+    "fin": 3.715
+  },
+  {
+    "mot": "d'un",
+    "debut": 3.75,
+    "fin": 3.866
+  },
+  {
+    "mot": "clic",
+    "debut": 3.913,
+    "fin": 4.087
+  },
+  {
+    "mot": "sur",
+    "debut": 4.133,
+    "fin": 4.238
+  },
+  {
+    "mot": "leur",
+    "debut": 4.272,
+    "fin": 4.365
+  },
+  {
+    "mot": "titre.",
+    "debut": 4.4,
+    "fin": 4.714
+  }
+]

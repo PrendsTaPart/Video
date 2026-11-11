@@ -1,0 +1,21 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_seo",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-un-jeu-concours",
+    "seo_titre": "Créer un jeu concours — RapidoCRM",
+    "seo_description": "Lancez un jeu concours depuis la fiche d'une entreprise RapidoCRM : modèle de roue, carte à gratter ou quiz, apparence et lots à gagner. Le tutoriel.",
+    "seo_mots_cles": [
+      "jeu concours",
+      "RapidoCRM",
+      "animation",
+      "CRM",
+      "marketing",
+      "fidélisation"
+    ],
+    "seo_og_image": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V23-06-creer-un-jeu-concours-thumb.jpg"
+  },
+  "demande_le": "2026-09-08T12:21:25.555Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

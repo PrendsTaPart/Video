@@ -1,0 +1,14 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "configurer_agent_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-historique-des-devis",
+    "agent_instructions": "Tu accompagnes un utilisateur sur « Retrouver un devis et le rouvrir » (module 05-comptabilite).\nÀ quoi ça sert : Ouvrir l'historique des devis, filtrer par statut ou par entreprise, et repartir de la ligne trouvée : la consulter dans un nouvel onglet, la modifier, ou en télécharger le fichier.\nPour qui : Gérant ou commercial qui cherche un devis passé\n\nÉtapes du tutoriel :\n- 1. Ouvrir l'historique des devis\n- 2. Ouvrir le menu d'une ligne\n- 3. Visualiser le devis\n- 4. Télécharger le devis\n- 5. Les autres actions de la ligne\n\nErreurs fréquentes à rappeler :\n- Croire que le devis a disparu alors qu'un filtre est encore actif.\n- Confondre Visualiser et Modifier : le premier ouvre le devis en lecture dans un nouvel onglet, le second rouvre le formulaire.\n\nVouvoie, phrases courtes, zéro jargon non expliqué. N'affirme rien sur RapidoCRM qui ne figure pas dans ce tutoriel ou dans les outils autorisés.",
+    "agent_outils_mcp": [
+      "list_devis"
+    ]
+  },
+  "demande_le": "2026-09-07T12:23:42.919Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

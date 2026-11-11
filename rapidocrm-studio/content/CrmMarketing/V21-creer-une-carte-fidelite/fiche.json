@@ -1,0 +1,97 @@
+{
+  "fonctionnalite": "Créer une carte de fidélité",
+  "a_quoi_ca_sert": "Doter son enseigne d'une carte de fidélité en trois écrans : une taille, un modèle, une relecture. La carte rejoint ensuite les programmes de fidélité, avec ses clients et ses points.",
+  "pour_qui": "Gérant qui lance un programme de fidélité",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Savoir quel format de carte on veut imprimer"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Taille du template",
+      "obligatoire": true,
+      "explication": "Trois formats au choix : grand (cr100) 88 × 63 mm, standard (cr80) 85,6 × 54 mm, petite taille (cr79) 84 × 52 mm. Tous en 0,76 mm d'épaisseur."
+    },
+    {
+      "nom": "Design et paramétrage",
+      "obligatoire": true,
+      "explication": "La galerie de modèles de carte. Chaque modèle porte un bouton Choisir et un bouton Voir."
+    },
+    {
+      "nom": "Validation",
+      "obligatoire": true,
+      "explication": "Le récapitulatif : taille, dimensions, épaisseur et modèle, chacun avec un bouton Modifier."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_programmes_fidelite",
+      "role": "Liste les programmes de fidélité de l'espace, avec l'entreprise associée et ses statistiques. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [],
+      "exemple_appel": {}
+    },
+    {
+      "nom": "list_cartes_fidelite",
+      "role": "Liste les cartes de fidélité des contacts et leurs statistiques : points offerts, nombre de clients, gains offerts. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["programme_id", "q", "statut", "date_debut", "date_fin", "limit"],
+      "exemple_appel": { "statut": "actif", "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Choisir la taille en pensant au portefeuille du client : le format standard cr80 est celui d'une carte bancaire.",
+    "Passer par Voir avant Choisir : le bouton montre le modèle en grand."
+  ],
+  "erreurs_frequentes": [
+    "Chercher un bouton Terminer : c'est Enregistrer, en bas à droite du récapitulatif, qui crée la carte.",
+    "Croire qu'un choix est définitif : chaque ligne du récapitulatif porte un bouton Modifier."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Créer une carte au format bancaire",
+      "contexte": "La carte doit tenir dans un portefeuille.",
+      "action": "Choisissez « Carte taille standard (cr80) », prenez un modèle, relisez le récapitulatif et enregistrez.",
+      "resultat_attendu": "La page Programmes de fidélité s'ouvre avec ses compteurs et son tableau."
+    },
+    {
+      "titre": "Changer de modèle avant d'enregistrer",
+      "contexte": "Le modèle retenu ne convient plus au récapitulatif.",
+      "action": "Cliquez sur Modifier en face de la ligne Modèle pour revenir à la galerie.",
+      "resultat_attendu": "L'assistant revient à l'étape Design et paramétrage."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Trois étapes, affichées en haut",
+      "contenu": "Taille du template, Design et paramétrage, Validation : la barre du haut dit toujours où on en est.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Les dimensions sont écrites sur chaque carte",
+      "contenu": "Chaque format annonce ses millimètres et son épaisseur : rien à mesurer.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "La page d'arrivée chiffre le programme",
+      "contenu": "Nombre de programmes, nombre de clients, nombre de points offerts s'affichent au-dessus du tableau.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Voir ses programmes de fidélité",
+    "texte": "Liste-moi mes programmes de fidélité avec leur nombre de clients et de points offerts.",
+    "variables": [],
+    "outil_mcp": "list_programmes_fidelite"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:05 à 00:18 — les trois étapes de l'assistant",
+    "a_quoi_ca_sert": "frames 00:17 et 00:26 — récapitulatif puis page Programmes de fidélité",
+    "champs_cles": "frames 00:09, 00:13 et 00:17",
+    "outils_mcp": "schémas list_programmes_fidelite et list_cartes_fidelite",
+    "erreurs_frequentes": "frame 00:17 — boutons Modifier et bouton Enregistrer du récapitulatif",
+    "cas_usage": "frames 00:09 à 00:26 — carte standard cr80, modèle n°2",
+    "astuces": "frames 00:13, 00:09 et 00:26"
+  },
+  "a_verifier": []
+}

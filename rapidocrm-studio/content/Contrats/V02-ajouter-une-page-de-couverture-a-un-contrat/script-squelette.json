@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "module": "Contrats",
+    "numero": 2,
+    "titre": "Ajouter une page de couverture à un template de contrat",
+    "titre_court": "Ajouter une page de couvertu",
+    "slug": "ajouter-une-page-de-couverture-a-un-template-de-contrat"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir la liste des templates de contrat",
+        "voix": "",
+        "debut_source": 0.5,
+        "fin_source": 4.8,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.4,
+          "w": 0.75,
+          "h": 0.55
+        },
+        "annotation": "Ouvrir la liste des templates de contrat"
+      },
+      {
+        "numero": 2,
+        "titre": "Ouvrir le choix de la couverture",
+        "voix": "",
+        "debut_source": 4.8,
+        "fin_source": 9.5,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.02,
+          "w": 0.43,
+          "h": 0.95
+        },
+        "annotation": "Ouvrir le choix de la couverture"
+      },
+      {
+        "numero": 3,
+        "titre": "Choisir la couverture et confirmer",
+        "voix": "",
+        "debut_source": 9.5,
+        "fin_source": 15.5,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.2,
+          "w": 0.43,
+          "h": 0.75
+        },
+        "annotation": "Choisir la couverture et confirmer"
+      },
+      {
+        "numero": 4,
+        "titre": "Voir la couverture en tête du contrat",
+        "voix": "",
+        "debut_source": 19.5,
+        "fin_source": 26,
+        "zone_focus": {
+          "x": 0.16,
+          "y": 0.15,
+          "w": 0.68,
+          "h": 0.8
+        },
+        "annotation": "Voir la couverture en tête du contrat"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] templates de contrat avec leur titre.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_contrat_templates"
+    }
+  }
+}

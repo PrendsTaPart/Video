@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 32,
+    "titre": "Historique document",
+    "titre_court": "Historique des documents",
+    "slug": "06-historique-document"
+  },
+  "hook": {
+    "texte": "Deux versions de la même carte, deux mois d'écart. Laquelle renvoyer au client ?",
+    "promesse": "La date d'ajout tranche, et le fichier se télécharge d'ici.",
+    "duree": 8,
+    "alternatives": [
+      "Un document sans date est un document sans version.",
+      "Télécharger vaut mieux que reconstituer.",
+      "Ce qui est attaché au client se retrouve depuis le client."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la page Historique, et on ressort avec le document en main. Le tableau donne le nom, le type, le poids et la date. Le menu de la ligne télécharge ou supprime.",
+    "duree": 17
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'historique des documents",
+        "voix": "Deuxième rangée de la page Historique : les documents. Le message de liste vide s'affiche le temps du chargement.",
+        "debut_source": 1,
+        "fin_source": 8.5,
+        "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.6 },
+        "annotation": "Historique des documents"
+      },
+      {
+        "numero": 2,
+        "titre": "Lire le tableau des documents",
+        "voix": "Nom du fichier, type, taille, date d'ajout : une ligne par pièce.",
+        "debut_source": 8.5,
+        "fin_source": 14,
+        "zone_focus": { "x": 0.23, "y": 0.35, "w": 0.75, "h": 0.45 },
+        "annotation": "Le tableau"
+      },
+      {
+        "numero": 3,
+        "titre": "Télécharger ou supprimer un document",
+        "voix": "Le menu de la ligne propose les deux.",
+        "debut_source": 14,
+        "fin_source": 17.5,
+        "zone_focus": { "x": 0.28, "y": 0.1, "w": 0.65, "h": 0.65 },
+        "annotation": "Télécharger · Supprimer"
+      },
+      {
+        "numero": 4,
+        "titre": "Annuler et revenir à la liste",
+        "voix": "On annule : rien n'a bougé.",
+        "debut_source": 17.5,
+        "fin_source": 19.17,
+        "zone_focus": { "x": 0.23, "y": 0.35, "w": 0.75, "h": 0.45 },
+        "annotation": "Annuler"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Et pour relire tout le dossier ?",
+    "voix": "Les documents ne sont qu'une partie de la fiche. Pour la relire d'un coup, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Donne-moi la fiche complète de l'entreprise numéro [identifiant].",
+      "variables": ["identifiant"],
+      "outil_mcp": "get_entreprise"
+    },
+    "resultat_affiche": {
+      "titre": "Fiche entreprise",
+      "lignes": [
+        "Documents : 2",
+        "Contacts : 4",
+        "Employés : 1"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Un document daté, pesé, téléchargeable : la bonne version part du premier coup.",
+    "duree": 8,
+    "alternatives": [
+      "La date d'ajout dit ce que le nom de fichier tait.",
+      "Supprimer se confirme ; télécharger ne se regrette pas.",
+      "Deux actions dans un menu, et le dossier reste propre."
+    ]
+  },
+  "seo": {
+    "titre": "Historique des documents — RapidoCRM",
+    "description": "Consultez le journal des documents d'un client dans RapidoCRM : nom, type, taille, date d'ajout, puis téléchargement ou suppression. Le tutoriel.",
+    "mots_cles": ["historique document", "RapidoCRM", "CRM", "PDF", "suivi client", "pièce jointe"],
+    "youtube_titre": "Historique des documents — RapidoCRM",
+    "youtube_description": "Le tutoriel du journal des documents sur RapidoCRM : les colonnes du tableau, le menu Télécharger ou Supprimer, et la confirmation posée par le navigateur avant toute suppression. RapidoCRM Académie.",
+    "youtube_tags": ["RapidoCRM", "historique", "document", "CRM", "PDF"]
+  }
+}

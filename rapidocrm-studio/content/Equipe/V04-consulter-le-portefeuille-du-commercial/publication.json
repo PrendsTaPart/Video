@@ -1,0 +1,27 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-equipe-V04-02-consulter-le-portefeuille-du-commercial.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-equipe-V04-02-consulter-le-portefeuille-du-commercial-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-equipe-V04-02-consulter-le-portefeuille-du-commercial-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-equipe-V04-02-consulter-le-portefeuille-du-commercial-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "d8a61e11e93f92f3",
+      "video_vertical_url": "4ca08390c1c23d05",
+      "thumbnail_url": "7712ee1ec22f0d79",
+      "thumbnail_vertical_url": "72fd2e3c9a0111f2"
+    },
+    "publie_le": "2026-08-28T01:45:22.392Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=xasAVxJNTGc",
+    "video_id": "xasAVxJNTGc",
+    "publie_le": "2026-08-28T11:33:21.463453+00:00",
+    "short_url": "https://www.youtube.com/watch?v=Gi5uAz6szhM",
+    "short_id": "Gi5uAz6szhM"
+  },
+  "site": {
+    "url": "https://tutoriel.rapidocrm.com/tutoriel/02-consulter-le-portefeuille-du-commercial",
+    "tutoriel_id": "479b72ac-faee-402a-b03b-7472b0b29cd6",
+    "publie_le": "2026-08-28T11:47:57.724+00:00"
+  }
+}

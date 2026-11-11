@@ -1,0 +1,262 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "part",
+    "debut": 0.186,
+    "fin": 0.36
+  },
+  {
+    "mot": "de",
+    "debut": 0.383,
+    "fin": 0.441
+  },
+  {
+    "mot": "la",
+    "debut": 0.476,
+    "fin": 0.534
+  },
+  {
+    "mot": "liste",
+    "debut": 0.58,
+    "fin": 0.836
+  },
+  {
+    "mot": "des",
+    "debut": 0.871,
+    "fin": 0.964
+  },
+  {
+    "mot": "factures,",
+    "debut": 0.987,
+    "fin": 1.498
+  },
+  {
+    "mot": "et",
+    "debut": 1.649,
+    "fin": 1.765
+  },
+  {
+    "mot": "on",
+    "debut": 1.811,
+    "fin": 1.869
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.904,
+    "fin": 2.229
+  },
+  {
+    "mot": "avec",
+    "debut": 2.252,
+    "fin": 2.45
+  },
+  {
+    "mot": "une",
+    "debut": 2.519,
+    "fin": 2.601
+  },
+  {
+    "mot": "facture",
+    "debut": 2.624,
+    "fin": 2.949
+  },
+  {
+    "mot": "passée",
+    "debut": 2.984,
+    "fin": 3.32
+  },
+  {
+    "mot": "de",
+    "debut": 3.367,
+    "fin": 3.46
+  },
+  {
+    "mot": "«",
+    "debut": 3.495,
+    "fin": 3.564
+  },
+  {
+    "mot": "en",
+    "debut": 3.587,
+    "fin": 3.68
+  },
+  {
+    "mot": "attente",
+    "debut": 3.762,
+    "fin": 4.122
+  },
+  {
+    "mot": "»",
+    "debut": 4.145,
+    "fin": 4.261
+  },
+  {
+    "mot": "à",
+    "debut": 4.47,
+    "fin": 4.528
+  },
+  {
+    "mot": "«",
+    "debut": 4.574,
+    "fin": 4.621
+  },
+  {
+    "mot": "payée",
+    "debut": 4.644,
+    "fin": 4.934
+  },
+  {
+    "mot": "».",
+    "debut": 4.969,
+    "fin": 5.027
+  },
+  {
+    "mot": "Le",
+    "debut": 5.352,
+    "fin": 5.468
+  },
+  {
+    "mot": "statut",
+    "debut": 5.492,
+    "fin": 5.805
+  },
+  {
+    "mot": "se",
+    "debut": 5.828,
+    "fin": 5.933
+  },
+  {
+    "mot": "change",
+    "debut": 5.979,
+    "fin": 6.211
+  },
+  {
+    "mot": "dans",
+    "debut": 6.246,
+    "fin": 6.351
+  },
+  {
+    "mot": "la",
+    "debut": 6.374,
+    "fin": 6.42
+  },
+  {
+    "mot": "facture,",
+    "debut": 6.478,
+    "fin": 6.931
+  },
+  {
+    "mot": "pas",
+    "debut": 7.082,
+    "fin": 7.21
+  },
+  {
+    "mot": "dans",
+    "debut": 7.233,
+    "fin": 7.349
+  },
+  {
+    "mot": "le",
+    "debut": 7.372,
+    "fin": 7.442
+  },
+  {
+    "mot": "tableau",
+    "debut": 7.488,
+    "fin": 7.837
+  },
+  {
+    "mot": "—",
+    "debut": 7.988,
+    "fin": 8.092
+  },
+  {
+    "mot": "juste",
+    "debut": 8.266,
+    "fin": 8.533
+  },
+  {
+    "mot": "au-dessus",
+    "debut": 8.557,
+    "fin": 8.94
+  },
+  {
+    "mot": "du",
+    "debut": 8.975,
+    "fin": 9.044
+  },
+  {
+    "mot": "moyen",
+    "debut": 9.079,
+    "fin": 9.3
+  },
+  {
+    "mot": "de",
+    "debut": 9.334,
+    "fin": 9.392
+  },
+  {
+    "mot": "paiement.",
+    "debut": 9.439,
+    "fin": 9.81
+  },
+  {
+    "mot": "On",
+    "debut": 10.054,
+    "fin": 10.182
+  },
+  {
+    "mot": "dit",
+    "debut": 10.228,
+    "fin": 10.356
+  },
+  {
+    "mot": "du",
+    "debut": 10.379,
+    "fin": 10.461
+  },
+  {
+    "mot": "même",
+    "debut": 10.507,
+    "fin": 10.67
+  },
+  {
+    "mot": "geste",
+    "debut": 10.704,
+    "fin": 10.983
+  },
+  {
+    "mot": "que",
+    "debut": 11.041,
+    "fin": 11.122
+  },
+  {
+    "mot": "l'argent",
+    "debut": 11.157,
+    "fin": 11.424
+  },
+  {
+    "mot": "est",
+    "debut": 11.471,
+    "fin": 11.54
+  },
+  {
+    "mot": "arrivé,",
+    "debut": 11.598,
+    "fin": 12.098
+  },
+  {
+    "mot": "et",
+    "debut": 12.307,
+    "fin": 12.434
+  },
+  {
+    "mot": "comment.",
+    "debut": 12.492,
+    "fin": 12.852
+  }
+]

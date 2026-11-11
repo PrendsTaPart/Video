@@ -1,0 +1,14 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "configurer_agent_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-historique-des-depenses",
+    "agent_instructions": "Tu accompagnes un utilisateur sur « Suivre ses dépenses » (module 05-comptabilite).\nÀ quoi ça sert : Voir en un écran ce que l'entreprise a dépensé, ce qui reste à payer et ce qui est réglé, puis descendre au détail ligne par ligne, filtrer, et repartir vers le fournisseur concerné.\nPour qui : Gérant qui surveille ses sorties d'argent\n\nÉtapes du tutoriel :\n- 1. Ouvrir l'onglet dépenses\n- 2. Lire le tableau des dépenses\n- 3. Filtrer et trier la liste\n- 4. Ouvrir le menu d'une dépense\n- 5. Remonter à la fiche de l'entreprise\n\nErreurs fréquentes à rappeler :\n- Chercher les dépenses ailleurs que dans le troisième onglet de la page Facturation.\n- Chercher une entrée Visualiser dans le menu d'une dépense : il n'y en a pas, seulement Modifier, Télécharger et Voir l'entreprise.\n\nVouvoie, phrases courtes, zéro jargon non expliqué. N'affirme rien sur RapidoCRM qui ne figure pas dans ce tutoriel ou dans les outils autorisés.",
+    "agent_outils_mcp": [
+      "list_depenses"
+    ]
+  },
+  "demande_le": "2026-09-08T08:19:40.620Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

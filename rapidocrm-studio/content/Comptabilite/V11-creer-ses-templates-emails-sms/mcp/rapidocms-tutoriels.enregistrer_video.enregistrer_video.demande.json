@@ -1,0 +1,12 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_video",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-creer-ses-templates-emails-sms",
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V11-05-creer-ses-templates-emails-sms.mp4",
+    "duree_secondes": 64
+  },
+  "demande_le": "2026-09-07T08:20:09.670Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

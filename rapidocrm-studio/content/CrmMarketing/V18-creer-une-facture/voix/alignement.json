@@ -1,0 +1,974 @@
+{
+  "duree_totale": 66.264,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 9.864,
+      "texte": "La prestation est livrée. Il ne reste qu'à facturer — et à retrouver le prix, la TVA, l'adresse du client. Tout est déjà dans sa fiche.",
+      "mots": [
+        {
+          "mot": "La",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "prestation",
+          "debut": 0.209,
+          "fin": 0.743
+        },
+        {
+          "mot": "est",
+          "debut": 0.789,
+          "fin": 0.871
+        },
+        {
+          "mot": "livrée.",
+          "debut": 0.906,
+          "fin": 1.335
+        },
+        {
+          "mot": "Il",
+          "debut": 1.66,
+          "fin": 1.765
+        },
+        {
+          "mot": "ne",
+          "debut": 1.8,
+          "fin": 1.858
+        },
+        {
+          "mot": "reste",
+          "debut": 1.916,
+          "fin": 2.136
+        },
+        {
+          "mot": "qu'à",
+          "debut": 2.194,
+          "fin": 2.31
+        },
+        {
+          "mot": "facturer",
+          "debut": 2.357,
+          "fin": 2.844
+        },
+        {
+          "mot": "—",
+          "debut": 2.961,
+          "fin": 3.042
+        },
+        {
+          "mot": "et",
+          "debut": 3.088,
+          "fin": 3.228
+        },
+        {
+          "mot": "à",
+          "debut": 3.251,
+          "fin": 3.274
+        },
+        {
+          "mot": "retrouver",
+          "debut": 3.32,
+          "fin": 3.692
+        },
+        {
+          "mot": "le",
+          "debut": 3.715,
+          "fin": 3.785
+        },
+        {
+          "mot": "prix,",
+          "debut": 3.831,
+          "fin": 4.191
+        },
+        {
+          "mot": "la",
+          "debut": 4.435,
+          "fin": 4.54
+        },
+        {
+          "mot": "T.V.A.,",
+          "debut": 4.609,
+          "fin": 5.224
+        },
+        {
+          "mot": "l'adresse",
+          "debut": 5.468,
+          "fin": 5.909
+        },
+        {
+          "mot": "du",
+          "debut": 5.944,
+          "fin": 6.037
+        },
+        {
+          "mot": "client.",
+          "debut": 6.06,
+          "fin": 6.49
+        },
+        {
+          "mot": "Tout",
+          "debut": 6.815,
+          "fin": 7.059
+        },
+        {
+          "mot": "est",
+          "debut": 7.105,
+          "fin": 7.175
+        },
+        {
+          "mot": "déjà",
+          "debut": 7.198,
+          "fin": 7.407
+        },
+        {
+          "mot": "dans",
+          "debut": 7.454,
+          "fin": 7.581
+        },
+        {
+          "mot": "sa",
+          "debut": 7.605,
+          "fin": 7.697
+        },
+        {
+          "mot": "fiche.",
+          "debut": 7.755,
+          "fin": 8.139
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 9.864,
+      "duree": 11.256,
+      "texte": "On part de la fiche d'une entreprise, et on ressort avec une facture. Le panneau Finance l'ouvre, le produit choisi remplit les montants, et la facture rejoint l'activité du client.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "part",
+          "debut": 0.174,
+          "fin": 0.325
+        },
+        {
+          "mot": "de",
+          "debut": 0.348,
+          "fin": 0.406
+        },
+        {
+          "mot": "la",
+          "debut": 0.441,
+          "fin": 0.511
+        },
+        {
+          "mot": "fiche",
+          "debut": 0.592,
+          "fin": 0.836
+        },
+        {
+          "mot": "d'une",
+          "debut": 0.859,
+          "fin": 1.033
+        },
+        {
+          "mot": "entreprise,",
+          "debut": 1.057,
+          "fin": 1.649
+        },
+        {
+          "mot": "et",
+          "debut": 1.683,
+          "fin": 1.776
+        },
+        {
+          "mot": "on",
+          "debut": 1.811,
+          "fin": 1.869
+        },
+        {
+          "mot": "ressort",
+          "debut": 1.95,
+          "fin": 2.415
+        },
+        {
+          "mot": "avec",
+          "debut": 2.461,
+          "fin": 2.81
+        },
+        {
+          "mot": "une",
+          "debut": 2.926,
+          "fin": 3.065
+        },
+        {
+          "mot": "facture.",
+          "debut": 3.1,
+          "fin": 3.587
+        },
+        {
+          "mot": "Le",
+          "debut": 3.913,
+          "fin": 4.017
+        },
+        {
+          "mot": "panneau",
+          "debut": 4.063,
+          "fin": 4.319
+        },
+        {
+          "mot": "Finance",
+          "debut": 4.365,
+          "fin": 4.737
+        },
+        {
+          "mot": "l'ouvre,",
+          "debut": 4.783,
+          "fin": 5.12
+        },
+        {
+          "mot": "le",
+          "debut": 5.236,
+          "fin": 5.329
+        },
+        {
+          "mot": "produit",
+          "debut": 5.375,
+          "fin": 5.666
+        },
+        {
+          "mot": "choisi",
+          "debut": 5.689,
+          "fin": 6.13
+        },
+        {
+          "mot": "remplit",
+          "debut": 6.281,
+          "fin": 6.687
+        },
+        {
+          "mot": "les",
+          "debut": 6.722,
+          "fin": 6.803
+        },
+        {
+          "mot": "montants,",
+          "debut": 6.827,
+          "fin": 7.291
+        },
+        {
+          "mot": "et",
+          "debut": 7.57,
+          "fin": 7.697
+        },
+        {
+          "mot": "la",
+          "debut": 7.744,
+          "fin": 7.802
+        },
+        {
+          "mot": "facture",
+          "debut": 7.883,
+          "fin": 8.452
+        },
+        {
+          "mot": "rejoint",
+          "debut": 8.661,
+          "fin": 9.056
+        },
+        {
+          "mot": "l'activité",
+          "debut": 9.091,
+          "fin": 9.509
+        },
+        {
+          "mot": "du",
+          "debut": 9.543,
+          "fin": 9.636
+        },
+        {
+          "mot": "client.",
+          "debut": 9.671,
+          "fin": 10.043
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 21.12,
+      "duree": 2.808,
+      "texte": "Panneau Finance : créer une facture.",
+      "mots": [
+        {
+          "mot": "Panneau",
+          "debut": 0,
+          "fin": 0.313
+        },
+        {
+          "mot": "Finance",
+          "debut": 0.36,
+          "fin": 0.778
+        },
+        {
+          "mot": ":",
+          "debut": 0.801,
+          "fin": 0.836
+        },
+        {
+          "mot": "créer",
+          "debut": 0.987,
+          "fin": 1.219
+        },
+        {
+          "mot": "une",
+          "debut": 1.277,
+          "fin": 1.358
+        },
+        {
+          "mot": "facture.",
+          "debut": 1.382,
+          "fin": 1.869
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 23.928,
+      "duree": 3.648,
+      "texte": "Le logo est repris du client. On choisit la couleur.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "logo",
+          "debut": 0.221,
+          "fin": 0.453
+        },
+        {
+          "mot": "est",
+          "debut": 0.488,
+          "fin": 0.569
+        },
+        {
+          "mot": "repris",
+          "debut": 0.592,
+          "fin": 0.848
+        },
+        {
+          "mot": "du",
+          "debut": 0.871,
+          "fin": 0.952
+        },
+        {
+          "mot": "client.",
+          "debut": 0.975,
+          "fin": 1.393
+        },
+        {
+          "mot": "On",
+          "debut": 1.567,
+          "fin": 1.672
+        },
+        {
+          "mot": "choisit",
+          "debut": 1.707,
+          "fin": 2.009
+        },
+        {
+          "mot": "la",
+          "debut": 2.032,
+          "fin": 2.101
+        },
+        {
+          "mot": "couleur.",
+          "debut": 2.171,
+          "fin": 2.647
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 27.576,
+      "duree": 4.392,
+      "texte": "Le catalogue défile deux par deux. Les flèches font venir les suivants.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "catalogue",
+          "debut": 0.197,
+          "fin": 0.662
+        },
+        {
+          "mot": "défile",
+          "debut": 0.685,
+          "fin": 1.057
+        },
+        {
+          "mot": "deux",
+          "debut": 1.091,
+          "fin": 1.219
+        },
+        {
+          "mot": "par",
+          "debut": 1.242,
+          "fin": 1.382
+        },
+        {
+          "mot": "deux.",
+          "debut": 1.44,
+          "fin": 1.649
+        },
+        {
+          "mot": "Les",
+          "debut": 1.776,
+          "fin": 1.927
+        },
+        {
+          "mot": "flèches",
+          "debut": 1.974,
+          "fin": 2.287
+        },
+        {
+          "mot": "font",
+          "debut": 2.31,
+          "fin": 2.461
+        },
+        {
+          "mot": "venir",
+          "debut": 2.485,
+          "fin": 2.752
+        },
+        {
+          "mot": "les",
+          "debut": 2.786,
+          "fin": 2.891
+        },
+        {
+          "mot": "suivants.",
+          "debut": 2.914,
+          "fin": 3.379
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 31.968,
+      "duree": 6.144,
+      "texte": "Prix hors taxes, TVA, total, remise : vous n'écrivez rien, sauf la remise.",
+      "mots": [
+        {
+          "mot": "Prix",
+          "debut": 0,
+          "fin": 0.337
+        },
+        {
+          "mot": "hors",
+          "debut": 0.372,
+          "fin": 0.534
+        },
+        {
+          "mot": "taxes,",
+          "debut": 0.569,
+          "fin": 1.057
+        },
+        {
+          "mot": "T.V.A.,",
+          "debut": 1.207,
+          "fin": 1.741
+        },
+        {
+          "mot": "total,",
+          "debut": 1.834,
+          "fin": 2.392
+        },
+        {
+          "mot": "remise",
+          "debut": 2.543,
+          "fin": 2.949
+        },
+        {
+          "mot": ":",
+          "debut": 3.042,
+          "fin": 3.1
+        },
+        {
+          "mot": "vous",
+          "debut": 3.425,
+          "fin": 3.599
+        },
+        {
+          "mot": "n'écrivez",
+          "debut": 3.622,
+          "fin": 4.005
+        },
+        {
+          "mot": "rien,",
+          "debut": 4.04,
+          "fin": 4.284
+        },
+        {
+          "mot": "sauf",
+          "debut": 4.458,
+          "fin": 4.667
+        },
+        {
+          "mot": "la",
+          "debut": 4.725,
+          "fin": 4.772
+        },
+        {
+          "mot": "remise.",
+          "debut": 4.818,
+          "fin": 5.19
+        }
+      ]
+    },
+    {
+      "id": "etape-05",
+      "fichier": "voix/etape-05.mp3",
+      "debut": 38.112,
+      "duree": 4.392,
+      "texte": "Le délai de paiement, les mentions, le statut : payée ou en attente.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "délai",
+          "debut": 0.209,
+          "fin": 0.395
+        },
+        {
+          "mot": "de",
+          "debut": 0.418,
+          "fin": 0.464
+        },
+        {
+          "mot": "paiement,",
+          "debut": 0.499,
+          "fin": 0.929
+        },
+        {
+          "mot": "les",
+          "debut": 0.975,
+          "fin": 1.068
+        },
+        {
+          "mot": "mentions,",
+          "debut": 1.103,
+          "fin": 1.579
+        },
+        {
+          "mot": "le",
+          "debut": 1.602,
+          "fin": 1.683
+        },
+        {
+          "mot": "statut",
+          "debut": 1.707,
+          "fin": 2.218
+        },
+        {
+          "mot": ":",
+          "debut": 2.241,
+          "fin": 2.264
+        },
+        {
+          "mot": "payée",
+          "debut": 2.438,
+          "fin": 2.752
+        },
+        {
+          "mot": "ou",
+          "debut": 2.775,
+          "fin": 2.844
+        },
+        {
+          "mot": "en",
+          "debut": 2.879,
+          "fin": 2.937
+        },
+        {
+          "mot": "attente.",
+          "debut": 3.019,
+          "fin": 3.437
+        }
+      ]
+    },
+    {
+      "id": "etape-06",
+      "fichier": "voix/etape-06.mp3",
+      "debut": 42.504000000000005,
+      "duree": 2.952,
+      "texte": "Le règlement, les totaux, enregistrer.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.186
+        },
+        {
+          "mot": "règlement,",
+          "debut": 0.221,
+          "fin": 0.731
+        },
+        {
+          "mot": "les",
+          "debut": 0.755,
+          "fin": 0.848
+        },
+        {
+          "mot": "totaux,",
+          "debut": 0.882,
+          "fin": 1.324
+        },
+        {
+          "mot": "enregistrer.",
+          "debut": 1.358,
+          "fin": 1.985
+        }
+      ]
+    },
+    {
+      "id": "etape-07",
+      "fichier": "voix/etape-07.mp3",
+      "debut": 45.456,
+      "duree": 2.664,
+      "texte": "Et la voilà en tête de l'activité.",
+      "mots": [
+        {
+          "mot": "Et",
+          "debut": 0,
+          "fin": 0.163
+        },
+        {
+          "mot": "la",
+          "debut": 0.197,
+          "fin": 0.267
+        },
+        {
+          "mot": "voilà",
+          "debut": 0.325,
+          "fin": 0.58
+        },
+        {
+          "mot": "en",
+          "debut": 0.615,
+          "fin": 0.662
+        },
+        {
+          "mot": "tête",
+          "debut": 0.731,
+          "fin": 0.929
+        },
+        {
+          "mot": "de",
+          "debut": 0.964,
+          "fin": 1.033
+        },
+        {
+          "mot": "l'activité.",
+          "debut": 1.068,
+          "fin": 1.695
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 48.120000000000005,
+      "duree": 13.056,
+      "texte": "Les factures s'accumulent. Pour voir celles qui attendent encore un règlement, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Les",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "factures",
+          "debut": 0.209,
+          "fin": 0.557
+        },
+        {
+          "mot": "s'accumulent.",
+          "debut": 0.604,
+          "fin": 1.184
+        },
+        {
+          "mot": "Pour",
+          "debut": 1.393,
+          "fin": 1.556
+        },
+        {
+          "mot": "voir",
+          "debut": 1.614,
+          "fin": 1.776
+        },
+        {
+          "mot": "celles",
+          "debut": 1.846,
+          "fin": 2.113
+        },
+        {
+          "mot": "qui",
+          "debut": 2.136,
+          "fin": 2.218
+        },
+        {
+          "mot": "attendent",
+          "debut": 2.264,
+          "fin": 2.601
+        },
+        {
+          "mot": "encore",
+          "debut": 2.647,
+          "fin": 3.007
+        },
+        {
+          "mot": "un",
+          "debut": 3.03,
+          "fin": 3.077
+        },
+        {
+          "mot": "règlement,",
+          "debut": 3.111,
+          "fin": 3.762
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 4.005,
+          "fin": 4.888
+        },
+        {
+          "mot": "parle",
+          "debut": 5.004,
+          "fin": 5.248
+        },
+        {
+          "mot": "à",
+          "debut": 5.271,
+          "fin": 5.294
+        },
+        {
+          "mot": "Claude",
+          "debut": 5.352,
+          "fin": 5.677
+        },
+        {
+          "mot": ":",
+          "debut": 5.759,
+          "fin": 5.828
+        },
+        {
+          "mot": "vous",
+          "debut": 6.107,
+          "fin": 6.223
+        },
+        {
+          "mot": "demandez",
+          "debut": 6.246,
+          "fin": 6.548
+        },
+        {
+          "mot": "en",
+          "debut": 6.571,
+          "fin": 6.629
+        },
+        {
+          "mot": "français,",
+          "debut": 6.676,
+          "fin": 7.187
+        },
+        {
+          "mot": "il",
+          "debut": 7.361,
+          "fin": 7.488
+        },
+        {
+          "mot": "lit",
+          "debut": 7.523,
+          "fin": 7.651
+        },
+        {
+          "mot": "vos",
+          "debut": 7.674,
+          "fin": 7.802
+        },
+        {
+          "mot": "données",
+          "debut": 7.825,
+          "fin": 8.115
+        },
+        {
+          "mot": "et",
+          "debut": 8.173,
+          "fin": 8.313
+        },
+        {
+          "mot": "répond.",
+          "debut": 8.359,
+          "fin": 8.766
+        },
+        {
+          "mot": "Copiez",
+          "debut": 9.207,
+          "fin": 9.567
+        },
+        {
+          "mot": "ce",
+          "debut": 9.59,
+          "fin": 9.694
+        },
+        {
+          "mot": "prompt,",
+          "debut": 9.741,
+          "fin": 10.205
+        },
+        {
+          "mot": "remplacez",
+          "debut": 10.449,
+          "fin": 10.937
+        },
+        {
+          "mot": "ce",
+          "debut": 10.983,
+          "fin": 11.064
+        },
+        {
+          "mot": "qui",
+          "debut": 11.122,
+          "fin": 11.227
+        },
+        {
+          "mot": "est",
+          "debut": 11.262,
+          "fin": 11.343
+        },
+        {
+          "mot": "entre",
+          "debut": 11.413,
+          "fin": 11.622
+        },
+        {
+          "mot": "crochets.",
+          "debut": 11.656,
+          "fin": 12.132
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 61.176,
+      "duree": 5.088,
+      "texte": "Une facture faite depuis la fiche du client, c'est une facture qu'on ne relit pas deux fois.",
+      "mots": [
+        {
+          "mot": "Une",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "facture",
+          "debut": 0.209,
+          "fin": 0.615
+        },
+        {
+          "mot": "faite",
+          "debut": 0.65,
+          "fin": 0.824
+        },
+        {
+          "mot": "depuis",
+          "debut": 0.848,
+          "fin": 1.08
+        },
+        {
+          "mot": "la",
+          "debut": 1.103,
+          "fin": 1.196
+        },
+        {
+          "mot": "fiche",
+          "debut": 1.312,
+          "fin": 1.521
+        },
+        {
+          "mot": "du",
+          "debut": 1.544,
+          "fin": 1.625
+        },
+        {
+          "mot": "client,",
+          "debut": 1.66,
+          "fin": 2.101
+        },
+        {
+          "mot": "c'est",
+          "debut": 2.148,
+          "fin": 2.334
+        },
+        {
+          "mot": "une",
+          "debut": 2.403,
+          "fin": 2.485
+        },
+        {
+          "mot": "facture",
+          "debut": 2.508,
+          "fin": 2.81
+        },
+        {
+          "mot": "qu'on",
+          "debut": 2.833,
+          "fin": 2.972
+        },
+        {
+          "mot": "ne",
+          "debut": 2.995,
+          "fin": 3.053
+        },
+        {
+          "mot": "relit",
+          "debut": 3.17,
+          "fin": 3.425
+        },
+        {
+          "mot": "pas",
+          "debut": 3.448,
+          "fin": 3.576
+        },
+        {
+          "mot": "deux",
+          "debut": 3.599,
+          "fin": 3.704
+        },
+        {
+          "mot": "fois.",
+          "debut": 3.727,
+          "fin": 3.982
+        }
+      ]
+    }
+  ]
+}

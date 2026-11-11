@@ -1,0 +1,117 @@
+{
+  "duree": 16.2,
+  "resolution": [1920, 882],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Facturation — statistiques et onglet devis" },
+    { "t": 3.0, "nom": "Liste des devis, cinq lignes" },
+    { "t": 5.0, "nom": "Menu Actions — Visualiser, Modifier, Signer, Télécharger" },
+    { "t": 6.5, "nom": "Devis en pleine page — informations bancaires et cadre de signature" },
+    { "t": 9.5, "nom": "Signature tracée dans le cadre" },
+    { "t": 12.5, "nom": "Haut du devis — boutons enregistrer et télécharger" }
+  ],
+  "actions": [
+    {
+      "t": 3.0,
+      "type": "ouverture",
+      "cible": "onglet devis et tableau des devis",
+      "zone": { "x": 0.24, "y": 0.28, "w": 0.74, "h": 0.7 },
+      "texte_visible": "ID · Entreprise · Destinataire · Date de création · Statut · Total TTC final · Actions"
+    },
+    {
+      "t": 5.0,
+      "type": "clic",
+      "cible": "entrée Signer du menu Actions",
+      "zone": { "x": 0.7, "y": 0.4, "w": 0.15, "h": 0.32 },
+      "texte_visible": "Visualiser · Modifier · Signer · Télécharger · Voir l'entreprise"
+    },
+    {
+      "t": 7.0,
+      "type": "ouverture",
+      "cible": "bas du devis, cadre cachet et signature",
+      "zone": { "x": 0.49, "y": 0.35, "w": 0.28, "h": 0.45 },
+      "texte_visible": "total : 7,018.95€ — cachet et signature — Signature"
+    },
+    {
+      "t": 9.5,
+      "type": "saisie",
+      "cible": "tracé de la signature à la souris",
+      "zone": { "x": 0.5, "y": 0.15, "w": 0.27, "h": 0.4 },
+      "texte_visible": "cachet et signature — Signature"
+    },
+    {
+      "t": 13.0,
+      "type": "defilement",
+      "cible": "haut du devis et barre d'actions",
+      "zone": { "x": 0.17, "y": 0.55, "w": 0.68, "h": 0.45 },
+      "texte_visible": "Devis n°5 — Informations de la société cliente"
+    },
+    {
+      "t": 15.5,
+      "type": "validation",
+      "cible": "bouton enregistrer",
+      "zone": { "x": 0.77, "y": 0.06, "w": 0.11, "h": 0.13 },
+      "texte_visible": "enregistrer · télécharger"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir le menu du devis",
+      "debut": 0,
+      "fin": 5.5,
+      "actions": [0, 1],
+      "zone_focus": { "x": 0.68, "y": 0.35, "w": 0.2, "h": 0.4 }
+    },
+    {
+      "numero": 2,
+      "titre": "Ouvrir le devis à signer",
+      "debut": 5.5,
+      "fin": 8.0,
+      "actions": [2],
+      "zone_focus": { "x": 0.48, "y": 0.3, "w": 0.3, "h": 0.5 }
+    },
+    {
+      "numero": 3,
+      "titre": "Signer dans le cadre",
+      "debut": 8.0,
+      "fin": 12.0,
+      "actions": [3],
+      "zone_focus": { "x": 0.49, "y": 0.12, "w": 0.29, "h": 0.45 }
+    },
+    {
+      "numero": 4,
+      "titre": "Remonter et enregistrer",
+      "debut": 12.0,
+      "fin": 16.2,
+      "actions": [4, 5],
+      "zone_focus": { "x": 0.75, "y": 0.03, "w": 0.24, "h": 0.2 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 5.6,
+      "zone": { "x": 0.855, "y": 0.02, "w": 0.145, "h": 0.115 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    },
+    {
+      "t": 2.0,
+      "fin": 5.6,
+      "zone": { "x": 0.385, "y": 0.42, "w": 0.125, "h": 0.58 },
+      "raison": "Adresses e-mail des destinataires dans le tableau des devis"
+    },
+    {
+      "t": 6.3,
+      "fin": 9.6,
+      "zone": { "x": 0.18, "y": 0.0, "w": 0.25, "h": 0.36 },
+      "raison": "IBAN, banque et code guichet de la société émettrice, en bas du devis"
+    },
+    {
+      "t": 12.2,
+      "fin": 16.2,
+      "zone": { "x": 0.185, "y": 0.76, "w": 0.63, "h": 0.24 },
+      "raison": "Coordonnées de la société cliente : adresse, téléphone, code postal et e-mail"
+    }
+  ]
+}

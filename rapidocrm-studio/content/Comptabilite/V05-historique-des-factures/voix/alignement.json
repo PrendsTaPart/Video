@@ -1,0 +1,1052 @@
+{
+  "duree_totale": 71.136,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 8.184,
+      "texte": "Un client conteste une facture d'il y a six mois. Vous, vous faites défiler la liste. Deux filtres croisés, et il ne reste que ce que vous cherchez.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "client",
+          "debut": 0.186,
+          "fin": 0.43
+        },
+        {
+          "mot": "conteste",
+          "debut": 0.453,
+          "fin": 0.813
+        },
+        {
+          "mot": "une",
+          "debut": 0.848,
+          "fin": 0.929
+        },
+        {
+          "mot": "facture",
+          "debut": 0.964,
+          "fin": 1.347
+        },
+        {
+          "mot": "d'il",
+          "debut": 1.37,
+          "fin": 1.509
+        },
+        {
+          "mot": "y",
+          "debut": 1.556,
+          "fin": 1.579
+        },
+        {
+          "mot": "a",
+          "debut": 1.637,
+          "fin": 1.66
+        },
+        {
+          "mot": "six",
+          "debut": 1.776,
+          "fin": 1.927
+        },
+        {
+          "mot": "mois.",
+          "debut": 1.95,
+          "fin": 2.218
+        },
+        {
+          "mot": "Vous,",
+          "debut": 2.426,
+          "fin": 2.752
+        },
+        {
+          "mot": "vous",
+          "debut": 2.786,
+          "fin": 2.914
+        },
+        {
+          "mot": "faites",
+          "debut": 2.937,
+          "fin": 3.135
+        },
+        {
+          "mot": "défiler",
+          "debut": 3.158,
+          "fin": 3.518
+        },
+        {
+          "mot": "la",
+          "debut": 3.541,
+          "fin": 3.622
+        },
+        {
+          "mot": "liste.",
+          "debut": 3.68,
+          "fin": 4.029
+        },
+        {
+          "mot": "Deux",
+          "debut": 4.203,
+          "fin": 4.4
+        },
+        {
+          "mot": "filtres",
+          "debut": 4.447,
+          "fin": 4.818
+        },
+        {
+          "mot": "croisés,",
+          "debut": 4.841,
+          "fin": 5.375
+        },
+        {
+          "mot": "et",
+          "debut": 5.654,
+          "fin": 5.759
+        },
+        {
+          "mot": "il",
+          "debut": 5.817,
+          "fin": 5.875
+        },
+        {
+          "mot": "ne",
+          "debut": 5.921,
+          "fin": 5.991
+        },
+        {
+          "mot": "reste",
+          "debut": 6.037,
+          "fin": 6.281
+        },
+        {
+          "mot": "que",
+          "debut": 6.339,
+          "fin": 6.467
+        },
+        {
+          "mot": "ce",
+          "debut": 6.49,
+          "fin": 6.536
+        },
+        {
+          "mot": "que",
+          "debut": 6.56,
+          "fin": 6.653
+        },
+        {
+          "mot": "vous",
+          "debut": 6.676,
+          "fin": 6.792
+        },
+        {
+          "mot": "cherchez.",
+          "debut": 6.815,
+          "fin": 7.268
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 8.184,
+      "duree": 15.336,
+      "texte": "On part de l'historique complet, et on ressort avec la facture voulue. Deux listes en haut de page : le statut et l'entreprise. Elles s'ajoutent l'une à l'autre, et le compteur sous le tableau dit toujours combien de lignes sont retenues, sur combien au total.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "part",
+          "debut": 0.186,
+          "fin": 0.325
+        },
+        {
+          "mot": "de",
+          "debut": 0.348,
+          "fin": 0.406
+        },
+        {
+          "mot": "l'historique",
+          "debut": 0.43,
+          "fin": 0.836
+        },
+        {
+          "mot": "complet,",
+          "debut": 0.871,
+          "fin": 1.405
+        },
+        {
+          "mot": "et",
+          "debut": 1.649,
+          "fin": 1.776
+        },
+        {
+          "mot": "on",
+          "debut": 1.823,
+          "fin": 1.892
+        },
+        {
+          "mot": "ressort",
+          "debut": 1.939,
+          "fin": 2.426
+        },
+        {
+          "mot": "avec",
+          "debut": 2.485,
+          "fin": 2.74
+        },
+        {
+          "mot": "la",
+          "debut": 2.775,
+          "fin": 2.821
+        },
+        {
+          "mot": "facture",
+          "debut": 2.868,
+          "fin": 3.158
+        },
+        {
+          "mot": "voulue.",
+          "debut": 3.181,
+          "fin": 3.564
+        },
+        {
+          "mot": "Deux",
+          "debut": 3.889,
+          "fin": 4.063
+        },
+        {
+          "mot": "listes",
+          "debut": 4.098,
+          "fin": 4.354
+        },
+        {
+          "mot": "en",
+          "debut": 4.377,
+          "fin": 4.447
+        },
+        {
+          "mot": "haut",
+          "debut": 4.481,
+          "fin": 4.586
+        },
+        {
+          "mot": "de",
+          "debut": 4.609,
+          "fin": 4.679
+        },
+        {
+          "mot": "page",
+          "debut": 4.737,
+          "fin": 5.085
+        },
+        {
+          "mot": ":",
+          "debut": 5.12,
+          "fin": 5.143
+        },
+        {
+          "mot": "le",
+          "debut": 5.259,
+          "fin": 5.352
+        },
+        {
+          "mot": "statut",
+          "debut": 5.387,
+          "fin": 5.805
+        },
+        {
+          "mot": "et",
+          "debut": 5.875,
+          "fin": 5.979
+        },
+        {
+          "mot": "l'entreprise.",
+          "debut": 6.014,
+          "fin": 6.699
+        },
+        {
+          "mot": "Elles",
+          "debut": 7.024,
+          "fin": 7.233
+        },
+        {
+          "mot": "s'ajoutent",
+          "debut": 7.256,
+          "fin": 7.779
+        },
+        {
+          "mot": "l'une",
+          "debut": 7.953,
+          "fin": 8.162
+        },
+        {
+          "mot": "à",
+          "debut": 8.185,
+          "fin": 8.208
+        },
+        {
+          "mot": "l'autre,",
+          "debut": 8.243,
+          "fin": 8.591
+        },
+        {
+          "mot": "et",
+          "debut": 8.766,
+          "fin": 8.882
+        },
+        {
+          "mot": "le",
+          "debut": 8.916,
+          "fin": 8.975
+        },
+        {
+          "mot": "compteur",
+          "debut": 9.021,
+          "fin": 9.369
+        },
+        {
+          "mot": "sous",
+          "debut": 9.462,
+          "fin": 9.625
+        },
+        {
+          "mot": "le",
+          "debut": 9.648,
+          "fin": 9.718
+        },
+        {
+          "mot": "tableau",
+          "debut": 9.764,
+          "fin": 10.147
+        },
+        {
+          "mot": "dit",
+          "debut": 10.472,
+          "fin": 10.681
+        },
+        {
+          "mot": "toujours",
+          "debut": 10.728,
+          "fin": 11.076
+        },
+        {
+          "mot": "combien",
+          "debut": 11.111,
+          "fin": 11.436
+        },
+        {
+          "mot": "de",
+          "debut": 11.482,
+          "fin": 11.54
+        },
+        {
+          "mot": "lignes",
+          "debut": 11.598,
+          "fin": 11.923
+        },
+        {
+          "mot": "sont",
+          "debut": 11.958,
+          "fin": 12.179
+        },
+        {
+          "mot": "retenues,",
+          "debut": 12.295,
+          "fin": 12.864
+        },
+        {
+          "mot": "sur",
+          "debut": 13.189,
+          "fin": 13.375
+        },
+        {
+          "mot": "combien",
+          "debut": 13.421,
+          "fin": 13.746
+        },
+        {
+          "mot": "au",
+          "debut": 13.804,
+          "fin": 13.862
+        },
+        {
+          "mot": "total.",
+          "debut": 13.909,
+          "fin": 14.385
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 23.52,
+      "duree": 6.192,
+      "texte": "L'historique des factures. Toutes y sont, la plus récente en tête, avec son client et son montant.",
+      "mots": [
+        {
+          "mot": "L'historique",
+          "debut": 0,
+          "fin": 0.499
+        },
+        {
+          "mot": "des",
+          "debut": 0.522,
+          "fin": 0.604
+        },
+        {
+          "mot": "factures.",
+          "debut": 0.639,
+          "fin": 1.161
+        },
+        {
+          "mot": "Toutes",
+          "debut": 1.37,
+          "fin": 1.707
+        },
+        {
+          "mot": "y",
+          "debut": 1.765,
+          "fin": 1.788
+        },
+        {
+          "mot": "sont,",
+          "debut": 1.858,
+          "fin": 2.148
+        },
+        {
+          "mot": "la",
+          "debut": 2.264,
+          "fin": 2.345
+        },
+        {
+          "mot": "plus",
+          "debut": 2.403,
+          "fin": 2.531
+        },
+        {
+          "mot": "récente",
+          "debut": 2.554,
+          "fin": 2.856
+        },
+        {
+          "mot": "en",
+          "debut": 2.879,
+          "fin": 2.926
+        },
+        {
+          "mot": "tête,",
+          "debut": 2.972,
+          "fin": 3.413
+        },
+        {
+          "mot": "avec",
+          "debut": 3.541,
+          "fin": 3.808
+        },
+        {
+          "mot": "son",
+          "debut": 3.843,
+          "fin": 3.947
+        },
+        {
+          "mot": "client",
+          "debut": 3.994,
+          "fin": 4.458
+        },
+        {
+          "mot": "et",
+          "debut": 4.528,
+          "fin": 4.679
+        },
+        {
+          "mot": "son",
+          "debut": 4.714,
+          "fin": 4.841
+        },
+        {
+          "mot": "montant.",
+          "debut": 4.876,
+          "fin": 5.271
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 29.712,
+      "duree": 9.456,
+      "texte": "Le statut, puis l'entreprise. Les deux s'ajoutent. Et quand rien ne correspond, le tableau le dit : aucun résultat trouvé. Ce n'est pas une panne.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "statut,",
+          "debut": 0.197,
+          "fin": 0.72
+        },
+        {
+          "mot": "puis",
+          "debut": 0.755,
+          "fin": 0.964
+        },
+        {
+          "mot": "l'entreprise.",
+          "debut": 0.987,
+          "fin": 1.695
+        },
+        {
+          "mot": "Les",
+          "debut": 2.078,
+          "fin": 2.241
+        },
+        {
+          "mot": "deux",
+          "debut": 2.287,
+          "fin": 2.403
+        },
+        {
+          "mot": "s'ajoutent.",
+          "debut": 2.438,
+          "fin": 2.972
+        },
+        {
+          "mot": "Et",
+          "debut": 3.251,
+          "fin": 3.379
+        },
+        {
+          "mot": "quand",
+          "debut": 3.437,
+          "fin": 3.587
+        },
+        {
+          "mot": "rien",
+          "debut": 3.634,
+          "fin": 3.82
+        },
+        {
+          "mot": "ne",
+          "debut": 3.843,
+          "fin": 3.913
+        },
+        {
+          "mot": "correspond,",
+          "debut": 3.959,
+          "fin": 4.656
+        },
+        {
+          "mot": "le",
+          "debut": 4.865,
+          "fin": 4.957
+        },
+        {
+          "mot": "tableau",
+          "debut": 5.016,
+          "fin": 5.306
+        },
+        {
+          "mot": "le",
+          "debut": 5.352,
+          "fin": 5.422
+        },
+        {
+          "mot": "dit",
+          "debut": 5.468,
+          "fin": 5.677
+        },
+        {
+          "mot": ":",
+          "debut": 5.77,
+          "fin": 5.817
+        },
+        {
+          "mot": "aucun",
+          "debut": 5.968,
+          "fin": 6.293
+        },
+        {
+          "mot": "résultat",
+          "debut": 6.327,
+          "fin": 6.722
+        },
+        {
+          "mot": "trouvé.",
+          "debut": 6.745,
+          "fin": 7.198
+        },
+        {
+          "mot": "Ce",
+          "debut": 7.523,
+          "fin": 7.628
+        },
+        {
+          "mot": "n'est",
+          "debut": 7.674,
+          "fin": 7.802
+        },
+        {
+          "mot": "pas",
+          "debut": 7.825,
+          "fin": 7.953
+        },
+        {
+          "mot": "une",
+          "debut": 7.976,
+          "fin": 8.081
+        },
+        {
+          "mot": "panne.",
+          "debut": 8.104,
+          "fin": 8.499
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 39.168,
+      "duree": 9.072,
+      "texte": "On change d'entreprise, et deux factures apparaissent. Le compteur précise : deux entrées sur cinq. Vous savez ce que le filtre a écarté.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.128
+        },
+        {
+          "mot": "change",
+          "debut": 0.163,
+          "fin": 0.372
+        },
+        {
+          "mot": "d'entreprise,",
+          "debut": 0.395,
+          "fin": 1.022
+        },
+        {
+          "mot": "et",
+          "debut": 1.045,
+          "fin": 1.126
+        },
+        {
+          "mot": "deux",
+          "debut": 1.184,
+          "fin": 1.312
+        },
+        {
+          "mot": "factures",
+          "debut": 1.335,
+          "fin": 1.672
+        },
+        {
+          "mot": "apparaissent.",
+          "debut": 1.741,
+          "fin": 2.299
+        },
+        {
+          "mot": "Le",
+          "debut": 2.45,
+          "fin": 2.577
+        },
+        {
+          "mot": "compteur",
+          "debut": 2.612,
+          "fin": 2.891
+        },
+        {
+          "mot": "précise",
+          "debut": 2.926,
+          "fin": 3.506
+        },
+        {
+          "mot": ":",
+          "debut": 3.553,
+          "fin": 3.587
+        },
+        {
+          "mot": "deux",
+          "debut": 3.738,
+          "fin": 3.913
+        },
+        {
+          "mot": "entrées",
+          "debut": 3.971,
+          "fin": 4.238
+        },
+        {
+          "mot": "sur",
+          "debut": 4.261,
+          "fin": 4.389
+        },
+        {
+          "mot": "cinq.",
+          "debut": 4.447,
+          "fin": 4.865
+        },
+        {
+          "mot": "Vous",
+          "debut": 5.248,
+          "fin": 5.41
+        },
+        {
+          "mot": "savez",
+          "debut": 5.433,
+          "fin": 5.689
+        },
+        {
+          "mot": "ce",
+          "debut": 5.712,
+          "fin": 5.782
+        },
+        {
+          "mot": "que",
+          "debut": 5.828,
+          "fin": 5.898
+        },
+        {
+          "mot": "le",
+          "debut": 5.933,
+          "fin": 6.014
+        },
+        {
+          "mot": "filtre",
+          "debut": 6.06,
+          "fin": 6.432
+        },
+        {
+          "mot": "a",
+          "debut": 6.548,
+          "fin": 6.629
+        },
+        {
+          "mot": "écarté.",
+          "debut": 6.676,
+          "fin": 7.233
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 48.239999999999995,
+      "duree": 5.592,
+      "texte": "Et le menu de la ligne : visualiser, modifier, télécharger, ou voir l'entreprise.",
+      "mots": [
+        {
+          "mot": "Et",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "le",
+          "debut": 0.174,
+          "fin": 0.232
+        },
+        {
+          "mot": "menu",
+          "debut": 0.279,
+          "fin": 0.476
+        },
+        {
+          "mot": "de",
+          "debut": 0.511,
+          "fin": 0.557
+        },
+        {
+          "mot": "la",
+          "debut": 0.592,
+          "fin": 0.673
+        },
+        {
+          "mot": "ligne",
+          "debut": 0.731,
+          "fin": 0.998
+        },
+        {
+          "mot": ":",
+          "debut": 1.033,
+          "fin": 1.08
+        },
+        {
+          "mot": "visualiser,",
+          "debut": 1.138,
+          "fin": 1.881
+        },
+        {
+          "mot": "modifier,",
+          "debut": 1.95,
+          "fin": 2.624
+        },
+        {
+          "mot": "télécharger,",
+          "debut": 2.67,
+          "fin": 3.483
+        },
+        {
+          "mot": "ou",
+          "debut": 3.657,
+          "fin": 3.762
+        },
+        {
+          "mot": "voir",
+          "debut": 3.808,
+          "fin": 3.936
+        },
+        {
+          "mot": "l'entreprise.",
+          "debut": 3.959,
+          "fin": 4.644
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 53.831999999999994,
+      "duree": 13.848,
+      "texte": "Les filtres trient à l'écran. Pour le même point sans toucher aux listes, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, lancez-le tel quel.",
+      "mots": [
+        {
+          "mot": "Les",
+          "debut": 0,
+          "fin": 0.209
+        },
+        {
+          "mot": "filtres",
+          "debut": 0.255,
+          "fin": 0.685
+        },
+        {
+          "mot": "trient",
+          "debut": 0.859,
+          "fin": 1.207
+        },
+        {
+          "mot": "à",
+          "debut": 1.289,
+          "fin": 1.312
+        },
+        {
+          "mot": "l'écran.",
+          "debut": 1.347,
+          "fin": 1.834
+        },
+        {
+          "mot": "Pour",
+          "debut": 2.159,
+          "fin": 2.334
+        },
+        {
+          "mot": "le",
+          "debut": 2.368,
+          "fin": 2.426
+        },
+        {
+          "mot": "même",
+          "debut": 2.473,
+          "fin": 2.647
+        },
+        {
+          "mot": "point",
+          "debut": 2.67,
+          "fin": 2.995
+        },
+        {
+          "mot": "sans",
+          "debut": 3.17,
+          "fin": 3.379
+        },
+        {
+          "mot": "toucher",
+          "debut": 3.402,
+          "fin": 3.68
+        },
+        {
+          "mot": "aux",
+          "debut": 3.704,
+          "fin": 3.796
+        },
+        {
+          "mot": "listes,",
+          "debut": 3.831,
+          "fin": 4.319
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 4.702,
+          "fin": 5.642
+        },
+        {
+          "mot": "parle",
+          "debut": 5.735,
+          "fin": 5.991
+        },
+        {
+          "mot": "à",
+          "debut": 6.014,
+          "fin": 6.037
+        },
+        {
+          "mot": "Claude",
+          "debut": 6.084,
+          "fin": 6.444
+        },
+        {
+          "mot": ":",
+          "debut": 6.478,
+          "fin": 6.536
+        },
+        {
+          "mot": "vous",
+          "debut": 6.745,
+          "fin": 6.896
+        },
+        {
+          "mot": "demandez",
+          "debut": 6.92,
+          "fin": 7.279
+        },
+        {
+          "mot": "en",
+          "debut": 7.314,
+          "fin": 7.361
+        },
+        {
+          "mot": "français,",
+          "debut": 7.407,
+          "fin": 7.918
+        },
+        {
+          "mot": "il",
+          "debut": 8.011,
+          "fin": 8.173
+        },
+        {
+          "mot": "lit",
+          "debut": 8.266,
+          "fin": 8.382
+        },
+        {
+          "mot": "vos",
+          "debut": 8.406,
+          "fin": 8.545
+        },
+        {
+          "mot": "données",
+          "debut": 8.568,
+          "fin": 8.951
+        },
+        {
+          "mot": "et",
+          "debut": 8.998,
+          "fin": 9.16
+        },
+        {
+          "mot": "répond.",
+          "debut": 9.218,
+          "fin": 9.636
+        },
+        {
+          "mot": "Copiez",
+          "debut": 9.752,
+          "fin": 10.205
+        },
+        {
+          "mot": "ce",
+          "debut": 10.228,
+          "fin": 10.344
+        },
+        {
+          "mot": "prompt,",
+          "debut": 10.403,
+          "fin": 10.925
+        },
+        {
+          "mot": "lancez-le",
+          "debut": 11.099,
+          "fin": 11.598
+        },
+        {
+          "mot": "tel",
+          "debut": 11.714,
+          "fin": 11.912
+        },
+        {
+          "mot": "quel.",
+          "debut": 11.97,
+          "fin": 12.295
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 67.67999999999999,
+      "duree": 3.456,
+      "texte": "Deux filtres, et la bonne facture est sous vos yeux.",
+      "mots": [
+        {
+          "mot": "Deux",
+          "debut": 0,
+          "fin": 0.221
+        },
+        {
+          "mot": "filtres,",
+          "debut": 0.255,
+          "fin": 0.65
+        },
+        {
+          "mot": "et",
+          "debut": 0.975,
+          "fin": 1.068
+        },
+        {
+          "mot": "la",
+          "debut": 1.103,
+          "fin": 1.161
+        },
+        {
+          "mot": "bonne",
+          "debut": 1.219,
+          "fin": 1.37
+        },
+        {
+          "mot": "facture",
+          "debut": 1.393,
+          "fin": 1.753
+        },
+        {
+          "mot": "est",
+          "debut": 1.776,
+          "fin": 1.869
+        },
+        {
+          "mot": "sous",
+          "debut": 1.904,
+          "fin": 2.09
+        },
+        {
+          "mot": "vos",
+          "debut": 2.113,
+          "fin": 2.241
+        },
+        {
+          "mot": "yeux.",
+          "debut": 2.287,
+          "fin": 2.508
+        }
+      ]
+    }
+  ]
+}

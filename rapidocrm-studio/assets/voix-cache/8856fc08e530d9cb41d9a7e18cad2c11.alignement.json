@@ -1,0 +1,77 @@
+[
+  {
+    "mot": "Facture",
+    "debut": 0,
+    "fin": 0.464
+  },
+  {
+    "mot": "créée.",
+    "debut": 0.499,
+    "fin": 0.964
+  },
+  {
+    "mot": "Elle",
+    "debut": 1.173,
+    "fin": 1.324
+  },
+  {
+    "mot": "prend",
+    "debut": 1.37,
+    "fin": 1.533
+  },
+  {
+    "mot": "sa",
+    "debut": 1.579,
+    "fin": 1.672
+  },
+  {
+    "mot": "place",
+    "debut": 1.718,
+    "fin": 1.939
+  },
+  {
+    "mot": "dans",
+    "debut": 1.962,
+    "fin": 2.09
+  },
+  {
+    "mot": "la",
+    "debut": 2.113,
+    "fin": 2.171
+  },
+  {
+    "mot": "liste,",
+    "debut": 2.229,
+    "fin": 2.647
+  },
+  {
+    "mot": "avec",
+    "debut": 2.775,
+    "fin": 3.03
+  },
+  {
+    "mot": "son",
+    "debut": 3.065,
+    "fin": 3.181
+  },
+  {
+    "mot": "client",
+    "debut": 3.216,
+    "fin": 3.576
+  },
+  {
+    "mot": "et",
+    "debut": 3.646,
+    "fin": 3.785
+  },
+  {
+    "mot": "son",
+    "debut": 3.82,
+    "fin": 3.947
+  },
+  {
+    "mot": "statut.",
+    "debut": 3.971,
+    "fin": 4.447
+  }
+]

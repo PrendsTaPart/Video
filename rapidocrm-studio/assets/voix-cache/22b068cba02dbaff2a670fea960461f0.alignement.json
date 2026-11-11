@@ -1,0 +1,42 @@
+[
+  {
+    "mot": "Les",
+    "debut": 0,
+    "fin": 0.186
+  },
+  {
+    "mot": "dates",
+    "debut": 0.221,
+    "fin": 0.395
+  },
+  {
+    "mot": "de",
+    "debut": 0.418,
+    "fin": 0.464
+  },
+  {
+    "mot": "la",
+    "debut": 0.511,
+    "fin": 0.569
+  },
+  {
+    "mot": "prestation,",
+    "debut": 0.615,
+    "fin": 1.173
+  },
+  {
+    "mot": "début",
+    "debut": 1.219,
+    "fin": 1.463
+  },
+  {
+    "mot": "et",
+    "debut": 1.486,
+    "fin": 1.533
+  },
+  {
+    "mot": "fin.",
+    "debut": 1.591,
+    "fin": 1.858
+  }
+]

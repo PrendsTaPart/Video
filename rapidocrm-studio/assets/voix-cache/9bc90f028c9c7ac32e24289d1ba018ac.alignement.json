@@ -1,0 +1,97 @@
+[
+  {
+    "mot": "Deuxième",
+    "debut": 0,
+    "fin": 0.418
+  },
+  {
+    "mot": "rangée",
+    "debut": 0.453,
+    "fin": 0.743
+  },
+  {
+    "mot": "de",
+    "debut": 0.766,
+    "fin": 0.836
+  },
+  {
+    "mot": "la",
+    "debut": 0.882,
+    "fin": 0.964
+  },
+  {
+    "mot": "page",
+    "debut": 1.022,
+    "fin": 1.37
+  },
+  {
+    "mot": "Historique",
+    "debut": 1.393,
+    "fin": 2.055
+  },
+  {
+    "mot": ":",
+    "debut": 2.09,
+    "fin": 2.125
+  },
+  {
+    "mot": "les",
+    "debut": 2.403,
+    "fin": 2.508
+  },
+  {
+    "mot": "documents.",
+    "debut": 2.543,
+    "fin": 3.088
+  },
+  {
+    "mot": "Le",
+    "debut": 3.413,
+    "fin": 3.518
+  },
+  {
+    "mot": "message",
+    "debut": 3.553,
+    "fin": 3.924
+  },
+  {
+    "mot": "de",
+    "debut": 3.947,
+    "fin": 4.017
+  },
+  {
+    "mot": "liste",
+    "debut": 4.063,
+    "fin": 4.342
+  },
+  {
+    "mot": "vide",
+    "debut": 4.4,
+    "fin": 4.748
+  },
+  {
+    "mot": "s'affiche",
+    "debut": 4.83,
+    "fin": 5.341
+  },
+  {
+    "mot": "le",
+    "debut": 5.364,
+    "fin": 5.445
+  },
+  {
+    "mot": "temps",
+    "debut": 5.492,
+    "fin": 5.689
+  },
+  {
+    "mot": "du",
+    "debut": 5.712,
+    "fin": 5.793
+  },
+  {
+    "mot": "chargement.",
+    "debut": 5.828,
+    "fin": 6.478
+  }
+]

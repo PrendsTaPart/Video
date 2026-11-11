@@ -1,0 +1,41 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-email",
+    "transcription": "« Je n'ai jamais reçu votre devis. » Et vous, vous cherchez dans vos envoyés. Le journal des e-mails le retrouve, avec son contenu.\n\nOn part de la page Historique, et on ressort avec l'e-mail sous les yeux. Le tableau liste les envois ; l'icône en bout de ligne rouvre le message tel qu'il est parti, avec son objet, son destinataire et son contenu. Rien n'est reconstitué : c'est l'envoi lui-même.\n\nPremière carte de la page Historique : les e-mails. On consulte.\n\nUne ligne par envoi, avec sa date.\n\nL'icône en bout de ligne rouvre le message : objet, destinataire, contenu. Puis on referme.\n\nLe journal montre le détail. Pour le total du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nCe qui est parti reste lisible : la discussion ne dépend plus de votre boîte mail.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 7,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 23,
+        "titre": "Ouvrir l'historique des e-mails"
+      },
+      {
+        "debut": 28,
+        "titre": "Lire le tableau des envois"
+      },
+      {
+        "debut": 30,
+        "titre": "Rouvrir un e-mail envoyé"
+      },
+      {
+        "debut": 37,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 50,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-09T08:18:19.241Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

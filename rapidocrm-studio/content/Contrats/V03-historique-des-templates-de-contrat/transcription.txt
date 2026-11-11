@@ -1,0 +1,15 @@
+Un client vous demande où en est son contrat. Vous cherchez dans vos mails. Trois chiffres, et vous savez qui relancer.
+
+On part de la page Contrat, et on ressort en sachant exactement où en est chaque document. Trois compteurs en haut, un tableau en dessous, et le contrat lui-même qu'on rouvre tel qu'il est parti chez le client.
+
+Trois compteurs : créés, signés, en attente.
+
+En dessous, le tableau.
+
+On ouvre le contrat. Quatre pages, jusqu'aux deux cases de signature.
+
+Retour à la liste.
+
+Vous savez où en est chaque contrat. Pour faire le tri sans ouvrir la page, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le statut voulu.
+
+Trois chiffres en haut, et vous savez qui relancer. Sans chercher dans vos mails.

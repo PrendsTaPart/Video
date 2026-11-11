@@ -1,0 +1,162 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "part",
+    "debut": 0.174,
+    "fin": 0.337
+  },
+  {
+    "mot": "de",
+    "debut": 0.372,
+    "fin": 0.43
+  },
+  {
+    "mot": "la",
+    "debut": 0.464,
+    "fin": 0.522
+  },
+  {
+    "mot": "page",
+    "debut": 0.58,
+    "fin": 0.789
+  },
+  {
+    "mot": "Historique,",
+    "debut": 0.813,
+    "fin": 1.405
+  },
+  {
+    "mot": "et",
+    "debut": 1.44,
+    "fin": 1.567
+  },
+  {
+    "mot": "on",
+    "debut": 1.614,
+    "fin": 1.66
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.707,
+    "fin": 2.032
+  },
+  {
+    "mot": "avec",
+    "debut": 2.055,
+    "fin": 2.218
+  },
+  {
+    "mot": "le",
+    "debut": 2.276,
+    "fin": 2.322
+  },
+  {
+    "mot": "contrat",
+    "debut": 2.368,
+    "fin": 2.659
+  },
+  {
+    "mot": "ouvert.",
+    "debut": 2.682,
+    "fin": 3.123
+  },
+  {
+    "mot": "Le",
+    "debut": 3.402,
+    "fin": 3.529
+  },
+  {
+    "mot": "tableau",
+    "debut": 3.576,
+    "fin": 3.901
+  },
+  {
+    "mot": "donne",
+    "debut": 3.936,
+    "fin": 4.145
+  },
+  {
+    "mot": "le",
+    "debut": 4.168,
+    "fin": 4.249
+  },
+  {
+    "mot": "destinataire,",
+    "debut": 4.307,
+    "fin": 5.097
+  },
+  {
+    "mot": "les",
+    "debut": 5.306,
+    "fin": 5.422
+  },
+  {
+    "mot": "dates",
+    "debut": 5.457,
+    "fin": 5.77
+  },
+  {
+    "mot": "et",
+    "debut": 5.944,
+    "fin": 6.107
+  },
+  {
+    "mot": "le",
+    "debut": 6.142,
+    "fin": 6.211
+  },
+  {
+    "mot": "statut",
+    "debut": 6.246,
+    "fin": 6.757
+  },
+  {
+    "mot": ";",
+    "debut": 6.792,
+    "fin": 6.827
+  },
+  {
+    "mot": "le",
+    "debut": 7.21,
+    "fin": 7.303
+  },
+  {
+    "mot": "menu",
+    "debut": 7.349,
+    "fin": 7.535
+  },
+  {
+    "mot": "de",
+    "debut": 7.581,
+    "fin": 7.651
+  },
+  {
+    "mot": "la",
+    "debut": 7.686,
+    "fin": 7.744
+  },
+  {
+    "mot": "ligne",
+    "debut": 7.802,
+    "fin": 8.046
+  },
+  {
+    "mot": "ouvre",
+    "debut": 8.115,
+    "fin": 8.394
+  },
+  {
+    "mot": "le",
+    "debut": 8.417,
+    "fin": 8.487
+  },
+  {
+    "mot": "document.",
+    "debut": 8.522,
+    "fin": 9.021
+  }
+]

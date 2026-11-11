@@ -1,0 +1,48 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-planifier-un-rdv",
+    "module": "06-crm-marketing",
+    "numero": 14,
+    "titre": "Planifier un RDV",
+    "titre_court": "Planifier un RDV",
+    "accroche": "Un seul formulaire, et tout le monde est prévenu.",
+    "explication": "On part de la fiche d'une entreprise, et on ressort avec un rendez-vous posé. Un titre, un créneau, les invités, le type, le rappel : le formulaire descend dans cet ordre.\n\n1. Ouvrir « Prendre un rendez-vous » — Panneau Communication, prendre un rendez-vous.\n2. Donner un titre au rendez-vous — Un titre, d'abord. C'est lui qu'on relira dans l'agenda, alors autant qu'il dise de quoi on parle.\n3. Fixer le créneau, début et fin — Puis le créneau. Deux champs : l'heure de début, l'heure de fin. Le formulaire accepte le matin comme le soir, alors on relit. Dix heures, dix heures quarante-cinq : le rendez-vous est borné, et il tiendra la place qu'on lui a donnée dans l'agenda, ni plus ni moins.\n4. Choisir les invités et les organisateurs — Les invités, ensuite. Le champ propose les utilisateurs du compte dès les premières lettres. Chaque nom retenu devient une étiquette. En dessous, les organisateurs : ceux qui tiennent le rendez-vous.\n5. Type de rendez-vous, rappel et mode d'envoi — Visio, présentiel ou téléphone. Puis le rappel, et le canal d'envoi.\n6. Ajouter une note et enregistrer — Une note pour ce qu'il faut préparer, puis enregistrer.\n\nLes rendez-vous s'empilent. Pour savoir ce qui vous attend, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir « Prendre un rendez-vous »",
+        "texte": "Panneau Communication, prendre un rendez-vous."
+      },
+      {
+        "titre": "Donner un titre au rendez-vous",
+        "texte": "Un titre, d'abord. C'est lui qu'on relira dans l'agenda, alors autant qu'il dise de quoi on parle."
+      },
+      {
+        "titre": "Fixer le créneau, début et fin",
+        "texte": "Puis le créneau. Deux champs : l'heure de début, l'heure de fin. Le formulaire accepte le matin comme le soir, alors on relit. Dix heures, dix heures quarante-cinq : le rendez-vous est borné, et il tiendra la place qu'on lui a donnée dans l'agenda, ni plus ni moins."
+      },
+      {
+        "titre": "Choisir les invités et les organisateurs",
+        "texte": "Les invités, ensuite. Le champ propose les utilisateurs du compte dès les premières lettres. Chaque nom retenu devient une étiquette. En dessous, les organisateurs : ceux qui tiennent le rendez-vous."
+      },
+      {
+        "titre": "Type de rendez-vous, rappel et mode d'envoi",
+        "texte": "Visio, présentiel ou téléphone. Puis le rappel, et le canal d'envoi."
+      },
+      {
+        "titre": "Ajouter une note et enregistrer",
+        "texte": "Une note pour ce qu'il faut préparer, puis enregistrer."
+      }
+    ],
+    "a_quoi_ca_sert": "Poser un créneau avec un client et prévenir tout le monde d'un coup : les invités reçoivent l'invitation, les organisateurs sont nommés, et le rappel part tout seul avant l'heure.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir ouvert la fiche d'une entreprise cliente",
+      "Connaître le créneau souhaité"
+    ]
+  },
+  "demande_le": "2026-09-06T12:35:06.339Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

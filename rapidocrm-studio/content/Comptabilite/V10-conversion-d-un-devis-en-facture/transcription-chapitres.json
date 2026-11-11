@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Le devis est accepté. Et vous vous apprêtez à retaper les mêmes lignes dans une facture. Signez le devis, la facture se crée toute seule."
+  },
+  {
+    "timestamp_secondes": 8,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part d'un devis en attente, et on ressort avec une facture. Il n'y a pas de bouton « convertir » : c'est la signature du devis qui crée la facture, avec le même client et le même montant."
+  },
+  {
+    "timestamp_secondes": 20,
+    "titre": "Ouvrir le devis à convertir",
+    "texte": "On ouvre le devis par Signer, comme pour le faire valider."
+  },
+  {
+    "timestamp_secondes": 24,
+    "titre": "Signer le devis et enregistrer",
+    "texte": "Le devis s'ouvre, on signe, et on enregistre. Le logiciel travaille : il signe le devis, crée la facture, et tente d'envoyer le mail au client."
+  },
+  {
+    "timestamp_secondes": 33,
+    "titre": "Lire ce que le logiciel annonce",
+    "texte": "Le bandeau dit tout : devis signé, facture créée. Seul le mail n'est pas parti."
+  },
+  {
+    "timestamp_secondes": 38,
+    "titre": "Passer à l'onglet facture",
+    "texte": "On passe à l'onglet facture. En haut, les compteurs se sont recalculés : le total facturé a grimpé, l'en attente aussi."
+  },
+  {
+    "timestamp_secondes": 46,
+    "titre": "Retrouver la facture créée",
+    "texte": "Et la voilà, en tête de liste. Même client, même montant que le devis, avec son propre numéro."
+  },
+  {
+    "timestamp_secondes": 52,
+    "titre": "Faites-le avec Claude",
+    "texte": "La facture existe. Pour vérifier ce qui vient de partir en facturation, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 65,
+    "titre": "À retenir",
+    "texte": "Un devis signé, une facture créée. Vous n'avez rien retapé."
+  }
+]

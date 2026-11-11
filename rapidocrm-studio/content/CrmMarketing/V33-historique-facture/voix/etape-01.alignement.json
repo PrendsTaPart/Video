@@ -1,0 +1,82 @@
+[
+  {
+    "mot": "Deuxième",
+    "debut": 0,
+    "fin": 0.453
+  },
+  {
+    "mot": "rangée",
+    "debut": 0.488,
+    "fin": 0.708
+  },
+  {
+    "mot": "de",
+    "debut": 0.731,
+    "fin": 0.789
+  },
+  {
+    "mot": "la",
+    "debut": 0.836,
+    "fin": 0.906
+  },
+  {
+    "mot": "page",
+    "debut": 0.964,
+    "fin": 1.358
+  },
+  {
+    "mot": "Historique",
+    "debut": 1.416,
+    "fin": 2.032
+  },
+  {
+    "mot": ":",
+    "debut": 2.09,
+    "fin": 2.136
+  },
+  {
+    "mot": "les",
+    "debut": 2.345,
+    "fin": 2.438
+  },
+  {
+    "mot": "factures.",
+    "debut": 2.473,
+    "fin": 2.984
+  },
+  {
+    "mot": "On",
+    "debut": 3.135,
+    "fin": 3.228
+  },
+  {
+    "mot": "consulte,",
+    "debut": 3.274,
+    "fin": 3.82
+  },
+  {
+    "mot": "et",
+    "debut": 3.936,
+    "fin": 4.04
+  },
+  {
+    "mot": "le",
+    "debut": 4.075,
+    "fin": 4.133
+  },
+  {
+    "mot": "tableau",
+    "debut": 4.18,
+    "fin": 4.447
+  },
+  {
+    "mot": "se",
+    "debut": 4.493,
+    "fin": 4.586
+  },
+  {
+    "mot": "charge.",
+    "debut": 4.632,
+    "fin": 4.992
+  }
+]

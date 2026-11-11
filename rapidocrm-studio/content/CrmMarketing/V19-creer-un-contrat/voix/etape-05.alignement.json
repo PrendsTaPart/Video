@@ -1,0 +1,42 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "message",
+    "debut": 0.209,
+    "fin": 0.534
+  },
+  {
+    "mot": "qui",
+    "debut": 0.557,
+    "fin": 0.639
+  },
+  {
+    "mot": "portera",
+    "debut": 0.685,
+    "fin": 0.94
+  },
+  {
+    "mot": "le",
+    "debut": 0.975,
+    "fin": 1.022
+  },
+  {
+    "mot": "contrat,",
+    "debut": 1.045,
+    "fin": 1.486
+  },
+  {
+    "mot": "puis",
+    "debut": 1.509,
+    "fin": 1.695
+  },
+  {
+    "mot": "envoyer.",
+    "debut": 1.73,
+    "fin": 2.194
+  }
+]

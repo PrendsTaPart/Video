@@ -1,0 +1,11 @@
+{
+  "serveur": "RapidoCMS",
+  "outil": "upload_file_tool",
+  "parametres": {
+    "chemin_local": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V03-gestion-des-statuts-d-une-facture/out/master-16x9.mp4",
+    "nom_fichier": "rapidocrm-tuto-comptabilite-V03-05-gestion-des-statuts-d-une-facture.mp4",
+    "consigne": "Dépose ce fichier dans la bibliothèque RapidoCMS et retourne {\"url\": \"<lien AWS public>\"}. Si l'outil d'upload porte un autre nom, inspecte les outils réellement disponibles et adapte-toi."
+  },
+  "demande_le": "2026-09-04T01:30:29.917Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

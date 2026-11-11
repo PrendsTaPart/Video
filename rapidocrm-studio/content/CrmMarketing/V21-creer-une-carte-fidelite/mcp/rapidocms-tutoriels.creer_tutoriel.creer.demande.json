@@ -1,0 +1,43 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-une-carte-fidelite",
+    "module": "06-crm-marketing",
+    "numero": 21,
+    "titre": "Créer une carte fidélité",
+    "titre_court": "Carte de fidélité",
+    "accroche": "Ici, trois écrans suffisent.",
+    "explication": "On part de l'assistant de carte de fidélité, et on ressort avec une carte enregistrée. Trois étapes : la taille, le modèle, la relecture. La barre du haut dit toujours où on en est.\n\n1. Ouvrir l'assistant de carte de fidélité — L'assistant s'ouvre sur sa première étape : la taille du template.\n2. Choisir la taille de la carte — Trois formats, avec leurs millimètres. Le standard est celui d'une carte bancaire.\n3. Choisir le modèle de carte — Puis le modèle. Voir l'agrandit, Choisir le retient.\n4. Relire le récapitulatif et enregistrer — Le récapitulatif reprend tout. Chaque ligne reste modifiable.\n5. Retrouver la carte dans les programmes de fidélité — Et la page des programmes compte clients et points.\n\nUne carte, ce sont des clients et des points. Pour en avoir le compte, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir l'assistant de carte de fidélité",
+        "texte": "L'assistant s'ouvre sur sa première étape : la taille du template."
+      },
+      {
+        "titre": "Choisir la taille de la carte",
+        "texte": "Trois formats, avec leurs millimètres. Le standard est celui d'une carte bancaire."
+      },
+      {
+        "titre": "Choisir le modèle de carte",
+        "texte": "Puis le modèle. Voir l'agrandit, Choisir le retient."
+      },
+      {
+        "titre": "Relire le récapitulatif et enregistrer",
+        "texte": "Le récapitulatif reprend tout. Chaque ligne reste modifiable."
+      },
+      {
+        "titre": "Retrouver la carte dans les programmes de fidélité",
+        "texte": "Et la page des programmes compte clients et points."
+      }
+    ],
+    "a_quoi_ca_sert": "Doter son enseigne d'une carte de fidélité en trois écrans : une taille, un modèle, une relecture. La carte rejoint ensuite les programmes de fidélité, avec ses clients et ses points.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Savoir quel format de carte on veut imprimer"
+    ]
+  },
+  "demande_le": "2026-09-08T08:17:54.090Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

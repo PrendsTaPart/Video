@@ -1,0 +1,88 @@
+{
+  "duree": 91.2,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V04-configurer-son-profil/out/master-16x9.mp4",
+      "octets": 13014276
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V04-configurer-son-profil/out/master-9x16.mp4",
+      "octets": 11816668
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 10.033333333333333
+    },
+    {
+      "nom": "titre",
+      "debut": 10.033333333333333,
+      "fin": 26.633333333333333
+    },
+    {
+      "nom": "demo",
+      "debut": 26.633333333333333,
+      "fin": 73.1
+    },
+    {
+      "nom": "claude",
+      "debut": 73.1,
+      "fin": 87.76666666666667
+    },
+    {
+      "nom": "punchline",
+      "debut": 87.76666666666667,
+      "fin": 91.2
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Votre première facture part demain. Elle portera quel nom, quelle adresse, quel logo ?"
+    },
+    {
+      "timecode": "00:10",
+      "titre": "Configurer son profil"
+    },
+    {
+      "timecode": "00:26",
+      "titre": "Ouvrir sa fiche profil"
+    },
+    {
+      "timecode": "00:36",
+      "titre": "Renseigner son identité"
+    },
+    {
+      "timecode": "00:44",
+      "titre": "Ajouter numéro et adresse"
+    },
+    {
+      "timecode": "00:51",
+      "titre": "Sauvegarder"
+    },
+    {
+      "timecode": "00:55",
+      "titre": "Compléter la fiche entreprise"
+    },
+    {
+      "timecode": "01:03",
+      "titre": "Adresse et couleur des factures"
+    },
+    {
+      "timecode": "01:13",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:27",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

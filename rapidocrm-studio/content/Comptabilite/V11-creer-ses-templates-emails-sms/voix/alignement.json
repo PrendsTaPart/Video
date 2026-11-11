@@ -1,0 +1,956 @@
+{
+  "duree_totale": 62.303999999999995,
+  "blocs": [
+    {
+      "id": "hook",
+      "fichier": "voix/hook.mp3",
+      "debut": 0,
+      "duree": 8.712,
+      "texte": "Vous écrivez le même SMS dix fois par semaine. À chaque fois, vous le retapez. Écrit une fois, repris d'un clic.",
+      "mots": [
+        {
+          "mot": "Vous",
+          "debut": 0,
+          "fin": 0.221
+        },
+        {
+          "mot": "écrivez",
+          "debut": 0.29,
+          "fin": 0.673
+        },
+        {
+          "mot": "le",
+          "debut": 0.708,
+          "fin": 0.766
+        },
+        {
+          "mot": "même",
+          "debut": 0.813,
+          "fin": 1.033
+        },
+        {
+          "mot": "S.M.S.",
+          "debut": 1.103,
+          "fin": 1.927
+        },
+        {
+          "mot": "dix",
+          "debut": 2.101,
+          "fin": 2.299
+        },
+        {
+          "mot": "fois",
+          "debut": 2.322,
+          "fin": 2.473
+        },
+        {
+          "mot": "par",
+          "debut": 2.496,
+          "fin": 2.612
+        },
+        {
+          "mot": "semaine.",
+          "debut": 2.659,
+          "fin": 3.088
+        },
+        {
+          "mot": "À",
+          "debut": 3.297,
+          "fin": 3.367
+        },
+        {
+          "mot": "chaque",
+          "debut": 3.448,
+          "fin": 3.692
+        },
+        {
+          "mot": "fois,",
+          "debut": 3.727,
+          "fin": 3.947
+        },
+        {
+          "mot": "vous",
+          "debut": 3.994,
+          "fin": 4.122
+        },
+        {
+          "mot": "le",
+          "debut": 4.145,
+          "fin": 4.191
+        },
+        {
+          "mot": "retapez.",
+          "debut": 4.238,
+          "fin": 4.76
+        },
+        {
+          "mot": "Écrit",
+          "debut": 5.039,
+          "fin": 5.41
+        },
+        {
+          "mot": "une",
+          "debut": 5.457,
+          "fin": 5.584
+        },
+        {
+          "mot": "fois,",
+          "debut": 5.619,
+          "fin": 5.921
+        },
+        {
+          "mot": "repris",
+          "debut": 6.13,
+          "fin": 6.432
+        },
+        {
+          "mot": "d'un",
+          "debut": 6.455,
+          "fin": 6.548
+        },
+        {
+          "mot": "clic.",
+          "debut": 6.583,
+          "fin": 7.012
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "fichier": "voix/intro.mp3",
+      "debut": 8.712,
+      "duree": 12.6,
+      "texte": "On part de la page Template SMS, et on ressort avec un modèle de plus. Un nom, une catégorie, le texte du message, et un bouton d'action à joindre. Tout tient dans une seule fenêtre.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "part",
+          "debut": 0.197,
+          "fin": 0.348
+        },
+        {
+          "mot": "de",
+          "debut": 0.372,
+          "fin": 0.418
+        },
+        {
+          "mot": "la",
+          "debut": 0.453,
+          "fin": 0.522
+        },
+        {
+          "mot": "page",
+          "debut": 0.604,
+          "fin": 0.94
+        },
+        {
+          "mot": "Template",
+          "debut": 1.057,
+          "fin": 1.521
+        },
+        {
+          "mot": "S.M.S.,",
+          "debut": 1.579,
+          "fin": 2.403
+        },
+        {
+          "mot": "et",
+          "debut": 2.577,
+          "fin": 2.705
+        },
+        {
+          "mot": "on",
+          "debut": 2.752,
+          "fin": 2.798
+        },
+        {
+          "mot": "ressort",
+          "debut": 2.833,
+          "fin": 3.135
+        },
+        {
+          "mot": "avec",
+          "debut": 3.158,
+          "fin": 3.332
+        },
+        {
+          "mot": "un",
+          "debut": 3.402,
+          "fin": 3.448
+        },
+        {
+          "mot": "modèle",
+          "debut": 3.518,
+          "fin": 3.831
+        },
+        {
+          "mot": "de",
+          "debut": 3.866,
+          "fin": 3.936
+        },
+        {
+          "mot": "plus.",
+          "debut": 3.994,
+          "fin": 4.481
+        },
+        {
+          "mot": "Un",
+          "debut": 4.923,
+          "fin": 5.12
+        },
+        {
+          "mot": "nom,",
+          "debut": 5.143,
+          "fin": 5.457
+        },
+        {
+          "mot": "une",
+          "debut": 5.515,
+          "fin": 5.666
+        },
+        {
+          "mot": "catégorie,",
+          "debut": 5.689,
+          "fin": 6.536
+        },
+        {
+          "mot": "le",
+          "debut": 6.711,
+          "fin": 6.803
+        },
+        {
+          "mot": "texte",
+          "debut": 6.873,
+          "fin": 7.163
+        },
+        {
+          "mot": "du",
+          "debut": 7.21,
+          "fin": 7.279
+        },
+        {
+          "mot": "message,",
+          "debut": 7.326,
+          "fin": 7.872
+        },
+        {
+          "mot": "et",
+          "debut": 8.081,
+          "fin": 8.208
+        },
+        {
+          "mot": "un",
+          "debut": 8.29,
+          "fin": 8.336
+        },
+        {
+          "mot": "bouton",
+          "debut": 8.394,
+          "fin": 8.661
+        },
+        {
+          "mot": "d'action",
+          "debut": 8.696,
+          "fin": 8.963
+        },
+        {
+          "mot": "à",
+          "debut": 9.009,
+          "fin": 9.033
+        },
+        {
+          "mot": "joindre.",
+          "debut": 9.056,
+          "fin": 9.497
+        },
+        {
+          "mot": "Tout",
+          "debut": 9.938,
+          "fin": 10.17
+        },
+        {
+          "mot": "tient",
+          "debut": 10.194,
+          "fin": 10.519
+        },
+        {
+          "mot": "dans",
+          "debut": 10.635,
+          "fin": 10.809
+        },
+        {
+          "mot": "une",
+          "debut": 10.89,
+          "fin": 10.971
+        },
+        {
+          "mot": "seule",
+          "debut": 10.995,
+          "fin": 11.157
+        },
+        {
+          "mot": "fenêtre.",
+          "debut": 11.18,
+          "fin": 11.633
+        }
+      ]
+    },
+    {
+      "id": "etape-01",
+      "fichier": "voix/etape-01.mp3",
+      "debut": 21.311999999999998,
+      "duree": 3.96,
+      "texte": "Trois modèles déjà là. Le bouton en haut à droite en ajoute un.",
+      "mots": [
+        {
+          "mot": "Trois",
+          "debut": 0,
+          "fin": 0.221
+        },
+        {
+          "mot": "modèles",
+          "debut": 0.255,
+          "fin": 0.604
+        },
+        {
+          "mot": "déjà",
+          "debut": 0.627,
+          "fin": 0.871
+        },
+        {
+          "mot": "là.",
+          "debut": 0.906,
+          "fin": 1.103
+        },
+        {
+          "mot": "Le",
+          "debut": 1.184,
+          "fin": 1.3
+        },
+        {
+          "mot": "bouton",
+          "debut": 1.347,
+          "fin": 1.649
+        },
+        {
+          "mot": "en",
+          "debut": 1.718,
+          "fin": 1.788
+        },
+        {
+          "mot": "haut",
+          "debut": 1.869,
+          "fin": 1.962
+        },
+        {
+          "mot": "à",
+          "debut": 2.009,
+          "fin": 2.032
+        },
+        {
+          "mot": "droite",
+          "debut": 2.067,
+          "fin": 2.38
+        },
+        {
+          "mot": "en",
+          "debut": 2.415,
+          "fin": 2.519
+        },
+        {
+          "mot": "ajoute",
+          "debut": 2.589,
+          "fin": 2.833
+        },
+        {
+          "mot": "un.",
+          "debut": 2.856,
+          "fin": 3.019
+        }
+      ]
+    },
+    {
+      "id": "etape-02",
+      "fichier": "voix/etape-02.mp3",
+      "debut": 25.272,
+      "duree": 5.4,
+      "texte": "Le nom d'abord. C'est lui qu'on lira dans la liste, alors on décrit ce que le message dit.",
+      "mots": [
+        {
+          "mot": "Le",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "nom",
+          "debut": 0.221,
+          "fin": 0.348
+        },
+        {
+          "mot": "d'abord.",
+          "debut": 0.406,
+          "fin": 0.824
+        },
+        {
+          "mot": "C'est",
+          "debut": 1.149,
+          "fin": 1.393
+        },
+        {
+          "mot": "lui",
+          "debut": 1.416,
+          "fin": 1.509
+        },
+        {
+          "mot": "qu'on",
+          "debut": 1.567,
+          "fin": 1.695
+        },
+        {
+          "mot": "lira",
+          "debut": 1.718,
+          "fin": 1.939
+        },
+        {
+          "mot": "dans",
+          "debut": 1.985,
+          "fin": 2.101
+        },
+        {
+          "mot": "la",
+          "debut": 2.125,
+          "fin": 2.183
+        },
+        {
+          "mot": "liste,",
+          "debut": 2.241,
+          "fin": 2.496
+        },
+        {
+          "mot": "alors",
+          "debut": 2.531,
+          "fin": 2.786
+        },
+        {
+          "mot": "on",
+          "debut": 2.868,
+          "fin": 3.053
+        },
+        {
+          "mot": "décrit",
+          "debut": 3.111,
+          "fin": 3.448
+        },
+        {
+          "mot": "ce",
+          "debut": 3.483,
+          "fin": 3.587
+        },
+        {
+          "mot": "que",
+          "debut": 3.634,
+          "fin": 3.738
+        },
+        {
+          "mot": "le",
+          "debut": 3.762,
+          "fin": 3.82
+        },
+        {
+          "mot": "message",
+          "debut": 3.878,
+          "fin": 4.191
+        },
+        {
+          "mot": "dit.",
+          "debut": 4.214,
+          "fin": 4.447
+        }
+      ]
+    },
+    {
+      "id": "etape-03",
+      "fichier": "voix/etape-03.mp3",
+      "debut": 30.671999999999997,
+      "duree": 5.64,
+      "texte": "Puis le texte. Si la rédaction vous arrête, le bouton d'aide du bot propose un premier jet.",
+      "mots": [
+        {
+          "mot": "Puis",
+          "debut": 0,
+          "fin": 0.209
+        },
+        {
+          "mot": "le",
+          "debut": 0.232,
+          "fin": 0.29
+        },
+        {
+          "mot": "texte.",
+          "debut": 0.348,
+          "fin": 0.755
+        },
+        {
+          "mot": "Si",
+          "debut": 1.138,
+          "fin": 1.289
+        },
+        {
+          "mot": "la",
+          "debut": 1.335,
+          "fin": 1.382
+        },
+        {
+          "mot": "rédaction",
+          "debut": 1.416,
+          "fin": 1.823
+        },
+        {
+          "mot": "vous",
+          "debut": 1.858,
+          "fin": 1.962
+        },
+        {
+          "mot": "arrête,",
+          "debut": 2.032,
+          "fin": 2.392
+        },
+        {
+          "mot": "le",
+          "debut": 2.543,
+          "fin": 2.624
+        },
+        {
+          "mot": "bouton",
+          "debut": 2.682,
+          "fin": 2.972
+        },
+        {
+          "mot": "d'aide",
+          "debut": 3.007,
+          "fin": 3.17
+        },
+        {
+          "mot": "du",
+          "debut": 3.193,
+          "fin": 3.286
+        },
+        {
+          "mot": "bot",
+          "debut": 3.332,
+          "fin": 3.529
+        },
+        {
+          "mot": "propose",
+          "debut": 3.587,
+          "fin": 3.947
+        },
+        {
+          "mot": "un",
+          "debut": 3.971,
+          "fin": 4.017
+        },
+        {
+          "mot": "premier",
+          "debut": 4.052,
+          "fin": 4.319
+        },
+        {
+          "mot": "jet.",
+          "debut": 4.354,
+          "fin": 4.598
+        }
+      ]
+    },
+    {
+      "id": "etape-04",
+      "fichier": "voix/etape-04.mp3",
+      "debut": 36.312,
+      "duree": 4.248,
+      "texte": "On joint un bouton d'action — voir facture — et on valide en bas.",
+      "mots": [
+        {
+          "mot": "On",
+          "debut": 0,
+          "fin": 0.151
+        },
+        {
+          "mot": "joint",
+          "debut": 0.186,
+          "fin": 0.557
+        },
+        {
+          "mot": "un",
+          "debut": 0.639,
+          "fin": 0.766
+        },
+        {
+          "mot": "bouton",
+          "debut": 0.813,
+          "fin": 1.057
+        },
+        {
+          "mot": "d'action",
+          "debut": 1.08,
+          "fin": 1.44
+        },
+        {
+          "mot": "—",
+          "debut": 1.463,
+          "fin": 1.521
+        },
+        {
+          "mot": "voir",
+          "debut": 1.556,
+          "fin": 1.672
+        },
+        {
+          "mot": "facture",
+          "debut": 1.718,
+          "fin": 2.125
+        },
+        {
+          "mot": "—",
+          "debut": 2.159,
+          "fin": 2.206
+        },
+        {
+          "mot": "et",
+          "debut": 2.357,
+          "fin": 2.45
+        },
+        {
+          "mot": "on",
+          "debut": 2.496,
+          "fin": 2.554
+        },
+        {
+          "mot": "valide",
+          "debut": 2.589,
+          "fin": 2.868
+        },
+        {
+          "mot": "en",
+          "debut": 2.891,
+          "fin": 2.937
+        },
+        {
+          "mot": "bas.",
+          "debut": 2.984,
+          "fin": 3.262
+        }
+      ]
+    },
+    {
+      "id": "etape-05",
+      "fichier": "voix/etape-05.mp3",
+      "debut": 40.559999999999995,
+      "duree": 3.96,
+      "texte": "Et le quatrième modèle prend sa place, prêt à être repris.",
+      "mots": [
+        {
+          "mot": "Et",
+          "debut": 0,
+          "fin": 0.128
+        },
+        {
+          "mot": "le",
+          "debut": 0.151,
+          "fin": 0.209
+        },
+        {
+          "mot": "quatrième",
+          "debut": 0.267,
+          "fin": 0.662
+        },
+        {
+          "mot": "modèle",
+          "debut": 0.685,
+          "fin": 1.022
+        },
+        {
+          "mot": "prend",
+          "debut": 1.057,
+          "fin": 1.196
+        },
+        {
+          "mot": "sa",
+          "debut": 1.231,
+          "fin": 1.335
+        },
+        {
+          "mot": "place,",
+          "debut": 1.382,
+          "fin": 1.73
+        },
+        {
+          "mot": "prêt",
+          "debut": 1.811,
+          "fin": 2.032
+        },
+        {
+          "mot": "à",
+          "debut": 2.067,
+          "fin": 2.101
+        },
+        {
+          "mot": "être",
+          "debut": 2.148,
+          "fin": 2.357
+        },
+        {
+          "mot": "repris.",
+          "debut": 2.403,
+          "fin": 2.752
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "fichier": "voix/claude.mp3",
+      "debut": 44.519999999999996,
+      "duree": 13.488,
+      "texte": "Vos modèles s'accumulent. Pour savoir lesquels vous avez déjà, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+      "mots": [
+        {
+          "mot": "Vos",
+          "debut": 0,
+          "fin": 0.174
+        },
+        {
+          "mot": "modèles",
+          "debut": 0.209,
+          "fin": 0.511
+        },
+        {
+          "mot": "s'accumulent.",
+          "debut": 0.546,
+          "fin": 1.196
+        },
+        {
+          "mot": "Pour",
+          "debut": 1.37,
+          "fin": 1.521
+        },
+        {
+          "mot": "savoir",
+          "debut": 1.567,
+          "fin": 1.904
+        },
+        {
+          "mot": "lesquels",
+          "debut": 1.962,
+          "fin": 2.426
+        },
+        {
+          "mot": "vous",
+          "debut": 2.508,
+          "fin": 2.659
+        },
+        {
+          "mot": "avez",
+          "debut": 2.728,
+          "fin": 2.891
+        },
+        {
+          "mot": "déjà,",
+          "debut": 2.926,
+          "fin": 3.402
+        },
+        {
+          "mot": "RapidoCRM",
+          "debut": 3.68,
+          "fin": 4.563
+        },
+        {
+          "mot": "parle",
+          "debut": 4.632,
+          "fin": 4.853
+        },
+        {
+          "mot": "à",
+          "debut": 4.876,
+          "fin": 4.899
+        },
+        {
+          "mot": "Claude",
+          "debut": 4.946,
+          "fin": 5.283
+        },
+        {
+          "mot": ":",
+          "debut": 5.352,
+          "fin": 5.375
+        },
+        {
+          "mot": "vous",
+          "debut": 5.654,
+          "fin": 5.782
+        },
+        {
+          "mot": "demandez",
+          "debut": 5.805,
+          "fin": 6.142
+        },
+        {
+          "mot": "en",
+          "debut": 6.165,
+          "fin": 6.223
+        },
+        {
+          "mot": "français,",
+          "debut": 6.281,
+          "fin": 6.85
+        },
+        {
+          "mot": "il",
+          "debut": 7.175,
+          "fin": 7.326
+        },
+        {
+          "mot": "lit",
+          "debut": 7.407,
+          "fin": 7.535
+        },
+        {
+          "mot": "vos",
+          "debut": 7.558,
+          "fin": 7.674
+        },
+        {
+          "mot": "données",
+          "debut": 7.697,
+          "fin": 8.069
+        },
+        {
+          "mot": "et",
+          "debut": 8.197,
+          "fin": 8.371
+        },
+        {
+          "mot": "répond.",
+          "debut": 8.417,
+          "fin": 8.824
+        },
+        {
+          "mot": "Copiez",
+          "debut": 9.265,
+          "fin": 9.648
+        },
+        {
+          "mot": "ce",
+          "debut": 9.671,
+          "fin": 9.776
+        },
+        {
+          "mot": "prompt,",
+          "debut": 9.822,
+          "fin": 10.344
+        },
+        {
+          "mot": "remplacez",
+          "debut": 10.623,
+          "fin": 11.238
+        },
+        {
+          "mot": "ce",
+          "debut": 11.389,
+          "fin": 11.552
+        },
+        {
+          "mot": "qui",
+          "debut": 11.598,
+          "fin": 11.703
+        },
+        {
+          "mot": "est",
+          "debut": 11.726,
+          "fin": 11.807
+        },
+        {
+          "mot": "entre",
+          "debut": 11.865,
+          "fin": 12.063
+        },
+        {
+          "mot": "crochets.",
+          "debut": 12.109,
+          "fin": 12.539
+        }
+      ]
+    },
+    {
+      "id": "punchline",
+      "fichier": "voix/punchline.mp3",
+      "debut": 58.007999999999996,
+      "duree": 4.296,
+      "texte": "Un modèle écrit une fois, c'est dix messages qui partent sans effort.",
+      "mots": [
+        {
+          "mot": "Un",
+          "debut": 0,
+          "fin": 0.139
+        },
+        {
+          "mot": "modèle",
+          "debut": 0.174,
+          "fin": 0.488
+        },
+        {
+          "mot": "écrit",
+          "debut": 0.511,
+          "fin": 0.731
+        },
+        {
+          "mot": "une",
+          "debut": 0.778,
+          "fin": 0.906
+        },
+        {
+          "mot": "fois,",
+          "debut": 0.94,
+          "fin": 1.242
+        },
+        {
+          "mot": "c'est",
+          "debut": 1.3,
+          "fin": 1.521
+        },
+        {
+          "mot": "dix",
+          "debut": 1.567,
+          "fin": 1.718
+        },
+        {
+          "mot": "messages",
+          "debut": 1.741,
+          "fin": 2.101
+        },
+        {
+          "mot": "qui",
+          "debut": 2.125,
+          "fin": 2.218
+        },
+        {
+          "mot": "partent",
+          "debut": 2.276,
+          "fin": 2.543
+        },
+        {
+          "mot": "sans",
+          "debut": 2.659,
+          "fin": 2.879
+        },
+        {
+          "mot": "effort.",
+          "debut": 2.926,
+          "fin": 3.297
+        }
+      ]
+    }
+  ]
+}

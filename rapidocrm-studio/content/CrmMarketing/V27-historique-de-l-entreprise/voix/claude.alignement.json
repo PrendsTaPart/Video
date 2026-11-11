@@ -1,0 +1,182 @@
+[
+  {
+    "mot": "Neuf",
+    "debut": 0,
+    "fin": 0.209
+  },
+  {
+    "mot": "journaux,",
+    "debut": 0.255,
+    "fin": 0.72
+  },
+  {
+    "mot": "c'est",
+    "debut": 0.789,
+    "fin": 0.975
+  },
+  {
+    "mot": "beaucoup",
+    "debut": 1.01,
+    "fin": 1.324
+  },
+  {
+    "mot": "à",
+    "debut": 1.37,
+    "fin": 1.393
+  },
+  {
+    "mot": "ouvrir.",
+    "debut": 1.428,
+    "fin": 1.834
+  },
+  {
+    "mot": "Pour",
+    "debut": 1.881,
+    "fin": 2.09
+  },
+  {
+    "mot": "avoir",
+    "debut": 2.125,
+    "fin": 2.38
+  },
+  {
+    "mot": "le",
+    "debut": 2.415,
+    "fin": 2.473
+  },
+  {
+    "mot": "total",
+    "debut": 2.519,
+    "fin": 2.786
+  },
+  {
+    "mot": "d'un",
+    "debut": 2.81,
+    "fin": 2.937
+  },
+  {
+    "mot": "coup,",
+    "debut": 2.972,
+    "fin": 3.204
+  },
+  {
+    "mot": "RapidoCRM",
+    "debut": 3.262,
+    "fin": 4.017
+  },
+  {
+    "mot": "parle",
+    "debut": 4.063,
+    "fin": 4.307
+  },
+  {
+    "mot": "à",
+    "debut": 4.331,
+    "fin": 4.354
+  },
+  {
+    "mot": "Claude",
+    "debut": 4.412,
+    "fin": 4.76
+  },
+  {
+    "mot": ":",
+    "debut": 4.783,
+    "fin": 4.807
+  },
+  {
+    "mot": "vous",
+    "debut": 4.923,
+    "fin": 5.039
+  },
+  {
+    "mot": "demandez",
+    "debut": 5.062,
+    "fin": 5.399
+  },
+  {
+    "mot": "en",
+    "debut": 5.433,
+    "fin": 5.48
+  },
+  {
+    "mot": "français,",
+    "debut": 5.526,
+    "fin": 6.107
+  },
+  {
+    "mot": "il",
+    "debut": 6.258,
+    "fin": 6.409
+  },
+  {
+    "mot": "lit",
+    "debut": 6.455,
+    "fin": 6.583
+  },
+  {
+    "mot": "vos",
+    "debut": 6.618,
+    "fin": 6.745
+  },
+  {
+    "mot": "données",
+    "debut": 6.769,
+    "fin": 7.094
+  },
+  {
+    "mot": "et",
+    "debut": 7.129,
+    "fin": 7.233
+  },
+  {
+    "mot": "répond.",
+    "debut": 7.279,
+    "fin": 7.721
+  },
+  {
+    "mot": "Copiez",
+    "debut": 7.895,
+    "fin": 8.301
+  },
+  {
+    "mot": "ce",
+    "debut": 8.324,
+    "fin": 8.44
+  },
+  {
+    "mot": "prompt,",
+    "debut": 8.487,
+    "fin": 8.963
+  },
+  {
+    "mot": "remplacez",
+    "debut": 9.079,
+    "fin": 9.648
+  },
+  {
+    "mot": "ce",
+    "debut": 9.706,
+    "fin": 9.81
+  },
+  {
+    "mot": "qui",
+    "debut": 9.857,
+    "fin": 9.938
+  },
+  {
+    "mot": "est",
+    "debut": 9.961,
+    "fin": 10.031
+  },
+  {
+    "mot": "entre",
+    "debut": 10.101,
+    "fin": 10.298
+  },
+  {
+    "mot": "crochets.",
+    "debut": 10.344,
+    "fin": 10.762
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "outils": [],
+  "divergences": [
+    "Divergence : « Mot de passe imap » (8.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Hôte imap » (10.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Port imap, Chiffrement imap et Validation certificat imap » (11.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

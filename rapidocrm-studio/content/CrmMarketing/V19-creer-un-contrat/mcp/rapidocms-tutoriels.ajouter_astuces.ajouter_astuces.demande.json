@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-un-contrat",
+    "astuces": [
+      {
+        "titre": "La bibliothèque dit combien de modèles existent",
+        "texte": "La ligne « 5 modèle(s) disponible(s) » chiffre la bibliothèque, et un champ de recherche filtre les cartes.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Un formulaire court",
+        "texte": "Une fois le modèle choisi, il ne reste que quatre champs : destinataire, deux dates, modèle d'e-mail.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Le destinataire vient de la fiche",
+        "texte": "L'adresse est reprise du client ouvert : rien à retaper, rien à confondre.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-07T14:18:52.950Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

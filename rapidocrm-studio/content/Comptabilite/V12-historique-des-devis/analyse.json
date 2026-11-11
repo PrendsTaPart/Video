@@ -1,0 +1,117 @@
+{
+  "duree": 28.1,
+  "resolution": [1920, 1020],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Facturation — onglet devis, filtres et tableau" },
+    { "t": 6.0, "nom": "Menu Actions du devis n°5" },
+    { "t": 12.0, "nom": "Le devis s'est ouvert dans un nouvel onglet" },
+    { "t": 18.0, "nom": "Téléchargement du devis en cours" },
+    { "t": 24.0, "nom": "Menu Actions rouvert sur la même ligne" }
+  ],
+  "actions": [
+    {
+      "t": 2.0,
+      "type": "ouverture",
+      "cible": "onglet devis, filtres et tableau",
+      "zone": { "x": 0.23, "y": 0.35, "w": 0.75, "h": 0.62 },
+      "texte_visible": "facture · devis · dépenses — Statut · Entreprise · créer un devis — afficher 10 entrées · rechercher"
+    },
+    {
+      "t": 7.0,
+      "type": "clic",
+      "cible": "menu Actions de la première ligne",
+      "zone": { "x": 0.7, "y": 0.38, "w": 0.15, "h": 0.2 },
+      "texte_visible": "Visualiser · Modifier · Télécharger · Voir l'entreprise — Affichage de 1 à 5 sur 5 entrées"
+    },
+    {
+      "t": 13.0,
+      "type": "ouverture",
+      "cible": "nouvel onglet du navigateur",
+      "zone": { "x": 0.16, "y": 0.0, "w": 0.14, "h": 0.06 },
+      "texte_visible": "Devis 5"
+    },
+    {
+      "t": 19.5,
+      "type": "clic",
+      "cible": "téléchargement du devis",
+      "zone": { "x": 0.66, "y": 0.78, "w": 0.34, "h": 0.22 },
+      "texte_visible": "votre téléchargement est en cours d'analyse"
+    },
+    {
+      "t": 25.0,
+      "type": "clic",
+      "cible": "menu Actions rouvert",
+      "zone": { "x": 0.7, "y": 0.38, "w": 0.15, "h": 0.2 },
+      "texte_visible": "Visualiser · Modifier · Télécharger · Voir l'entreprise"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir l'historique des devis",
+      "debut": 0,
+      "fin": 6.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.23, "y": 0.35, "w": 0.75, "h": 0.6 }
+    },
+    {
+      "numero": 2,
+      "titre": "Ouvrir le menu d'une ligne",
+      "debut": 6.0,
+      "fin": 12.0,
+      "actions": [1],
+      "zone_focus": { "x": 0.68, "y": 0.35, "w": 0.2, "h": 0.25 }
+    },
+    {
+      "numero": 3,
+      "titre": "Visualiser le devis",
+      "debut": 12.0,
+      "fin": 18.0,
+      "actions": [2],
+      "zone_focus": { "x": 0.1, "y": 0.0, "w": 0.35, "h": 0.08 }
+    },
+    {
+      "numero": 4,
+      "titre": "Télécharger le devis",
+      "debut": 18.0,
+      "fin": 24.0,
+      "actions": [3],
+      "zone_focus": { "x": 0.6, "y": 0.7, "w": 0.4, "h": 0.3 }
+    },
+    {
+      "numero": 5,
+      "titre": "Les autres actions de la ligne",
+      "debut": 24.0,
+      "fin": 28.1,
+      "actions": [4],
+      "zone_focus": { "x": 0.68, "y": 0.35, "w": 0.2, "h": 0.25 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 28.1,
+      "zone": { "x": 0.0, "y": 0.0, "w": 1.0, "h": 0.145 },
+      "raison": "Barre du navigateur : onglets, extensions et adresse locale du poste d'enregistrement (127.0.0.1:8000)"
+    },
+    {
+      "t": 0,
+      "fin": 28.1,
+      "zone": { "x": 0.685, "y": 0.15, "w": 0.315, "h": 0.095 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    },
+    {
+      "t": 0,
+      "fin": 28.1,
+      "zone": { "x": 0.385, "y": 0.42, "w": 0.13, "h": 0.55 },
+      "raison": "Adresses e-mail des destinataires dans le tableau des devis"
+    },
+    {
+      "t": 17.5,
+      "fin": 24.0,
+      "zone": { "x": 0.65, "y": 0.76, "w": 0.35, "h": 0.24 },
+      "raison": "Notification d'antivirus du navigateur, étrangère au logiciel"
+    }
+  ]
+}

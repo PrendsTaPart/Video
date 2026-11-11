@@ -1,0 +1,24 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_cas_usage",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-une-carte-fidelite",
+    "cas_usage": [
+      {
+        "titre": "Créer une carte au format bancaire",
+        "contexte": "La carte doit tenir dans un portefeuille.",
+        "action": "Choisissez « Carte taille standard (cr80) », prenez un modèle, relisez le récapitulatif et enregistrez.",
+        "resultat": "La page Programmes de fidélité s'ouvre avec ses compteurs et son tableau."
+      },
+      {
+        "titre": "Changer de modèle avant d'enregistrer",
+        "contexte": "Le modèle retenu ne convient plus au récapitulatif.",
+        "action": "Cliquez sur Modifier en face de la ligne Modèle pour revenir à la galerie.",
+        "resultat": "L'assistant revient à l'étape Design et paramétrage."
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T08:17:54.267Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

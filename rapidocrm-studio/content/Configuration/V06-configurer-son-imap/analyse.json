@@ -1,0 +1,27 @@
+{
+  "duree": 20.37,
+  "resolution": [1920, 882],
+  "fps": 25,
+  "ecrans": [
+    { "t": 0, "nom": "Profil — section « Boîte mail »" }
+  ],
+  "actions": [
+    { "t": 0.5, "type": "defilement", "cible": "section Boîte mail", "zone": { "x": 0.04, "y": 0.15, "w": 0.92, "h": 0.8 }, "texte_visible": "Boîte mail — Paramètres imap de la messagerie" },
+    { "t": 5.5, "type": "clic", "cible": "champ Mot de passe imap", "zone": { "x": 0.06, "y": 0.43, "w": 0.42, "h": 0.08 }, "texte_visible": "entrer un mot de passe imap" },
+    { "t": 8.0, "type": "saisie", "cible": "Mot de passe imap", "zone": { "x": 0.06, "y": 0.43, "w": 0.42, "h": 0.08 }, "texte_visible": "•••••••••••••••" },
+    { "t": 10.0, "type": "saisie", "cible": "Hôte imap", "zone": { "x": 0.5, "y": 0.43, "w": 0.43, "h": 0.08 }, "texte_visible": "imap.gmail.com" },
+    { "t": 11.0, "type": "saisie", "cible": "Port imap, Chiffrement imap et Validation certificat imap", "zone": { "x": 0.06, "y": 0.59, "w": 0.87, "h": 0.25 }, "texte_visible": "993 · ssl · true" },
+    { "t": 12.0, "type": "validation", "cible": "bouton enregistrer", "zone": { "x": 0.44, "y": 0.87, "w": 0.11, "h": 0.1 }, "texte_visible": "enregistrer" },
+    { "t": 17.0, "type": "defilement", "cible": "section Boîte mail complétée", "zone": { "x": 0.04, "y": 0.15, "w": 0.92, "h": 0.8 }, "texte_visible": "Boîte mail" }
+  ],
+  "etapes": [
+    { "numero": 1, "titre": "Ouvrir la section Boîte mail", "debut": 0, "fin": 5.0, "actions": [0], "zone_focus": { "x": 0.02, "y": 0.1, "w": 0.96, "h": 0.85 } },
+    { "numero": 2, "titre": "Coller le mot de passe d'application", "debut": 5.0, "fin": 10.0, "actions": [1, 2], "zone_focus": { "x": 0.03, "y": 0.3, "w": 0.55, "h": 0.35 } },
+    { "numero": 3, "titre": "Renseigner les quatre paramètres", "debut": 10.0, "fin": 12.0, "actions": [3, 4], "zone_focus": { "x": 0.03, "y": 0.35, "w": 0.94, "h": 0.55 } },
+    { "numero": 4, "titre": "Enregistrer", "debut": 12.0, "fin": 16.0, "actions": [5], "zone_focus": { "x": 0.25, "y": 0.6, "w": 0.5, "h": 0.38 } },
+    { "numero": 5, "titre": "Vérifier la fiche complétée", "debut": 16.0, "fin": 20.37, "actions": [6], "zone_focus": { "x": 0.02, "y": 0.15, "w": 0.96, "h": 0.8 } }
+  ],
+  "zones_sensibles": [
+    { "t": 0, "fin": 20.37, "zone": { "x": 0.8, "y": 0.02, "w": 0.2, "h": 0.14 }, "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête" }
+  ]
+}

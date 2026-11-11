@@ -1,0 +1,37 @@
+[
+  {
+    "mot": "Tout",
+    "debut": 0,
+    "fin": 0.244
+  },
+  {
+    "mot": "en",
+    "debut": 0.313,
+    "fin": 0.36
+  },
+  {
+    "mot": "bas",
+    "debut": 0.406,
+    "fin": 0.569
+  },
+  {
+    "mot": ":",
+    "debut": 0.604,
+    "fin": 0.65
+  },
+  {
+    "mot": "planifier",
+    "debut": 0.778,
+    "fin": 1.289
+  },
+  {
+    "mot": "un",
+    "debut": 1.37,
+    "fin": 1.44
+  },
+  {
+    "mot": "S.M.S.",
+    "debut": 1.498,
+    "fin": 1.95
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "duree": 32.32,
+  "resolution": [1920, 882],
+  "fps": 25,
+  "ecrans": [
+    { "t": 0, "nom": "Profil — onglet TVA, liste vide" },
+    { "t": 4, "nom": "Modale « Ajouter une tva »" },
+    { "t": 14.5, "nom": "TVA ajoutée — liste des taux" },
+    { "t": 18.5, "nom": "Modification d'un taux" },
+    { "t": 27.5, "nom": "Taux mis à jour" }
+  ],
+  "actions": [
+    { "t": 2, "type": "ouverture", "cible": "Onglet TVA de la page Profil",
+      "zone": { "x": 0.31, "y": 0.23, "w": 0.09, "h": 0.09 },
+      "texte_visible": "tva — Modifier votre tva · Il n'y a actuellement aucune donnée à afficher" },
+    { "t": 4, "type": "clic", "cible": "Bouton « ajouter une tva »",
+      "zone": { "x": 0.68, "y": 0.46, "w": 0.12, "h": 0.10 },
+      "texte_visible": "ajouter une tva" },
+    { "t": 8, "type": "saisie", "cible": "Champ nom de la tva",
+      "zone": { "x": 0.36, "y": 0.40, "w": 0.28, "h": 0.09 },
+      "texte_visible": "Nom de la tva" },
+    { "t": 11, "type": "saisie", "cible": "Champ pourcentage de la tva",
+      "zone": { "x": 0.36, "y": 0.57, "w": 0.28, "h": 0.09 },
+      "texte_visible": "Pourcentage de la tva" },
+    { "t": 13.5, "type": "validation", "cible": "Bouton « ajouter » de la modale",
+      "zone": { "x": 0.45, "y": 0.73, "w": 0.10, "h": 0.09 },
+      "texte_visible": "ajouter" },
+    { "t": 15.5, "type": "ouverture", "cible": "Bandeau « Tva ajoutée avec succès ! »",
+      "zone": { "x": 0.72, "y": 0.03, "w": 0.28, "h": 0.14 },
+      "texte_visible": "Tva ajoutée avec succès !" },
+    { "t": 20, "type": "clic", "cible": "Icône de modification de la ligne",
+      "zone": { "x": 0.77, "y": 0.53, "w": 0.05, "h": 0.10 },
+      "texte_visible": "Action" },
+    { "t": 25, "type": "ouverture", "cible": "Bandeau « Tva modifiée avec succès ! »",
+      "zone": { "x": 0.72, "y": 0.03, "w": 0.28, "h": 0.14 },
+      "texte_visible": "Tva modifiée avec succès !" },
+    { "t": 30, "type": "ouverture", "cible": "Ligne du taux mise à jour",
+      "zone": { "x": 0.05, "y": 0.50, "w": 0.60, "h": 0.13 },
+      "texte_visible": "tva france — 5.00 %" }
+  ],
+  "etapes": [
+    { "numero": 1, "titre": "Ouvrir l'onglet TVA", "debut": 0, "fin": 4,
+      "actions": [0], "zone_focus": { "x": 0.02, "y": 0.15, "w": 0.96, "h": 0.75 } },
+    { "numero": 2, "titre": "Ajouter un taux", "debut": 4, "fin": 14.5,
+      "actions": [1, 2, 3, 4], "zone_focus": { "x": 0.33, "y": 0.10, "w": 0.34, "h": 0.80 } },
+    { "numero": 3, "titre": "Confirmer l'ajout", "debut": 14.5, "fin": 18.5,
+      "actions": [5], "zone_focus": { "x": 0.02, "y": 0.02, "w": 0.96, "h": 0.70 } },
+    { "numero": 4, "titre": "Modifier un taux", "debut": 18.5, "fin": 27.5,
+      "actions": [6, 7], "zone_focus": { "x": 0.02, "y": 0.15, "w": 0.96, "h": 0.65 } },
+    { "numero": 5, "titre": "Vérifier le nouveau taux", "debut": 27.5, "fin": 32.32,
+      "actions": [8], "zone_focus": { "x": 0.02, "y": 0.35, "w": 0.96, "h": 0.45 } }
+  ],
+  "zones_sensibles": [
+    { "t": 0, "fin": 32.32, "zone": { "x": 0.80, "y": 0.02, "w": 0.20, "h": 0.14 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête" }
+  ]
+}

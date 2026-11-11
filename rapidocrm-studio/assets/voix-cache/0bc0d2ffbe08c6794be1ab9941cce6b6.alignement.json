@@ -1,0 +1,172 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "part",
+    "debut": 0.174,
+    "fin": 0.325
+  },
+  {
+    "mot": "de",
+    "debut": 0.348,
+    "fin": 0.395
+  },
+  {
+    "mot": "la",
+    "debut": 0.441,
+    "fin": 0.499
+  },
+  {
+    "mot": "page",
+    "debut": 0.546,
+    "fin": 0.766
+  },
+  {
+    "mot": "Historique,",
+    "debut": 0.801,
+    "fin": 1.405
+  },
+  {
+    "mot": "et",
+    "debut": 1.451,
+    "fin": 1.556
+  },
+  {
+    "mot": "on",
+    "debut": 1.602,
+    "fin": 1.672
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.741,
+    "fin": 2.136
+  },
+  {
+    "mot": "avec",
+    "debut": 2.183,
+    "fin": 2.392
+  },
+  {
+    "mot": "le",
+    "debut": 2.438,
+    "fin": 2.496
+  },
+  {
+    "mot": "document",
+    "debut": 2.543,
+    "fin": 2.984
+  },
+  {
+    "mot": "en",
+    "debut": 3.03,
+    "fin": 3.111
+  },
+  {
+    "mot": "main.",
+    "debut": 3.146,
+    "fin": 3.379
+  },
+  {
+    "mot": "Le",
+    "debut": 3.704,
+    "fin": 3.796
+  },
+  {
+    "mot": "tableau",
+    "debut": 3.855,
+    "fin": 4.156
+  },
+  {
+    "mot": "donne",
+    "debut": 4.203,
+    "fin": 4.389
+  },
+  {
+    "mot": "le",
+    "debut": 4.412,
+    "fin": 4.481
+  },
+  {
+    "mot": "nom,",
+    "debut": 4.551,
+    "fin": 4.818
+  },
+  {
+    "mot": "le",
+    "debut": 4.992,
+    "fin": 5.097
+  },
+  {
+    "mot": "type,",
+    "debut": 5.143,
+    "fin": 5.596
+  },
+  {
+    "mot": "le",
+    "debut": 5.805,
+    "fin": 5.898
+  },
+  {
+    "mot": "poids",
+    "debut": 5.956,
+    "fin": 6.269
+  },
+  {
+    "mot": "et",
+    "debut": 6.362,
+    "fin": 6.49
+  },
+  {
+    "mot": "la",
+    "debut": 6.525,
+    "fin": 6.594
+  },
+  {
+    "mot": "date.",
+    "debut": 6.653,
+    "fin": 6.978
+  },
+  {
+    "mot": "Le",
+    "debut": 7.361,
+    "fin": 7.477
+  },
+  {
+    "mot": "menu",
+    "debut": 7.535,
+    "fin": 7.814
+  },
+  {
+    "mot": "de",
+    "debut": 7.848,
+    "fin": 7.918
+  },
+  {
+    "mot": "la",
+    "debut": 7.964,
+    "fin": 8.034
+  },
+  {
+    "mot": "ligne",
+    "debut": 8.092,
+    "fin": 8.336
+  },
+  {
+    "mot": "télécharge",
+    "debut": 8.394,
+    "fin": 9.033
+  },
+  {
+    "mot": "ou",
+    "debut": 9.102,
+    "fin": 9.183
+  },
+  {
+    "mot": "supprime.",
+    "debut": 9.242,
+    "fin": 9.764
+  }
+]

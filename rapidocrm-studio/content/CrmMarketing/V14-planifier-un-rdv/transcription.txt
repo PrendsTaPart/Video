@@ -1,0 +1,19 @@
+Le rendez-vous est calé. Reste à prévenir le client, l'équipe, et à penser au rappel la veille. Un seul formulaire, et tout le monde est prévenu.
+
+On part de la fiche d'une entreprise, et on ressort avec un rendez-vous posé. Un titre, un créneau, les invités, le type, le rappel : le formulaire descend dans cet ordre.
+
+Panneau Communication, prendre un rendez-vous.
+
+Un titre, d'abord. C'est lui qu'on relira dans l'agenda, alors autant qu'il dise de quoi on parle.
+
+Puis le créneau. Deux champs : l'heure de début, l'heure de fin. Le formulaire accepte le matin comme le soir, alors on relit. Dix heures, dix heures quarante-cinq : le rendez-vous est borné, et il tiendra la place qu'on lui a donnée dans l'agenda, ni plus ni moins.
+
+Les invités, ensuite. Le champ propose les utilisateurs du compte dès les premières lettres. Chaque nom retenu devient une étiquette. En dessous, les organisateurs : ceux qui tiennent le rendez-vous.
+
+Visio, présentiel ou téléphone. Puis le rappel, et le canal d'envoi.
+
+Une note pour ce qu'il faut préparer, puis enregistrer.
+
+Les rendez-vous s'empilent. Pour savoir ce qui vous attend, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Un rendez-vous posé, des invités prévenus, un rappel programmé : trois oublis en moins.

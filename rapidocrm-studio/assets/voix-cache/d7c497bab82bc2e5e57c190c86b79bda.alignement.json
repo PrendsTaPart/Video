@@ -1,0 +1,52 @@
+[
+  {
+    "mot": "Dates,",
+    "debut": 0,
+    "fin": 0.395
+  },
+  {
+    "mot": "statut,",
+    "debut": 0.511,
+    "fin": 1.057
+  },
+  {
+    "mot": "prix.",
+    "debut": 1.149,
+    "fin": 1.498
+  },
+  {
+    "mot": "Vert",
+    "debut": 1.707,
+    "fin": 1.939
+  },
+  {
+    "mot": "pour",
+    "debut": 1.962,
+    "fin": 2.113
+  },
+  {
+    "mot": "accepté,",
+    "debut": 2.136,
+    "fin": 2.705
+  },
+  {
+    "mot": "orange",
+    "debut": 2.856,
+    "fin": 3.204
+  },
+  {
+    "mot": "pour",
+    "debut": 3.228,
+    "fin": 3.355
+  },
+  {
+    "mot": "en",
+    "debut": 3.379,
+    "fin": 3.425
+  },
+  {
+    "mot": "attente.",
+    "debut": 3.495,
+    "fin": 3.855
+  }
+]

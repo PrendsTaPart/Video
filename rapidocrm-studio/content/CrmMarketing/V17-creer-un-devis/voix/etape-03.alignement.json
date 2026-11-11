@@ -1,0 +1,57 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "produit,",
+    "debut": 0.209,
+    "fin": 0.615
+  },
+  {
+    "mot": "avec",
+    "debut": 0.673,
+    "fin": 0.906
+  },
+  {
+    "mot": "son",
+    "debut": 0.952,
+    "fin": 1.068
+  },
+  {
+    "mot": "prix.",
+    "debut": 1.091,
+    "fin": 1.382
+  },
+  {
+    "mot": "C'est",
+    "debut": 1.498,
+    "fin": 1.683
+  },
+  {
+    "mot": "lui",
+    "debut": 1.707,
+    "fin": 1.8
+  },
+  {
+    "mot": "qui",
+    "debut": 1.846,
+    "fin": 1.927
+  },
+  {
+    "mot": "remplit",
+    "debut": 1.962,
+    "fin": 2.229
+  },
+  {
+    "mot": "le",
+    "debut": 2.252,
+    "fin": 2.322
+  },
+  {
+    "mot": "reste.",
+    "debut": 2.368,
+    "fin": 2.705
+  }
+]

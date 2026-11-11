@@ -1,0 +1,62 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "descend",
+    "debut": 0.197,
+    "fin": 0.488
+  },
+  {
+    "mot": "au",
+    "debut": 0.522,
+    "fin": 0.592
+  },
+  {
+    "mot": "bloc",
+    "debut": 0.627,
+    "fin": 0.917
+  },
+  {
+    "mot": "Mode",
+    "debut": 1.068,
+    "fin": 1.358
+  },
+  {
+    "mot": "de",
+    "debut": 1.428,
+    "fin": 1.533
+  },
+  {
+    "mot": "paiement.",
+    "debut": 1.579,
+    "fin": 1.927
+  },
+  {
+    "mot": "Quatre",
+    "debut": 2.136,
+    "fin": 2.357
+  },
+  {
+    "mot": "moyens,",
+    "debut": 2.392,
+    "fin": 2.868
+  },
+  {
+    "mot": "et",
+    "debut": 2.914,
+    "fin": 3.042
+  },
+  {
+    "mot": "une",
+    "debut": 3.077,
+    "fin": 3.204
+  },
+  {
+    "mot": "étoile.",
+    "debut": 3.228,
+    "fin": 3.599
+  }
+]

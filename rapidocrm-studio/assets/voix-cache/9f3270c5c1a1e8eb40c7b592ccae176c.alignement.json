@@ -1,0 +1,162 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "part",
+    "debut": 0.163,
+    "fin": 0.302
+  },
+  {
+    "mot": "de",
+    "debut": 0.325,
+    "fin": 0.383
+  },
+  {
+    "mot": "la",
+    "debut": 0.418,
+    "fin": 0.476
+  },
+  {
+    "mot": "page",
+    "debut": 0.546,
+    "fin": 0.894
+  },
+  {
+    "mot": "Historique,",
+    "debut": 0.917,
+    "fin": 1.579
+  },
+  {
+    "mot": "et",
+    "debut": 1.602,
+    "fin": 1.718
+  },
+  {
+    "mot": "on",
+    "debut": 1.765,
+    "fin": 1.823
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.881,
+    "fin": 2.229
+  },
+  {
+    "mot": "avec",
+    "debut": 2.252,
+    "fin": 2.45
+  },
+  {
+    "mot": "l'e-mail",
+    "debut": 2.531,
+    "fin": 2.821
+  },
+  {
+    "mot": "sous",
+    "debut": 2.891,
+    "fin": 3.03
+  },
+  {
+    "mot": "les",
+    "debut": 3.053,
+    "fin": 3.17
+  },
+  {
+    "mot": "yeux.",
+    "debut": 3.228,
+    "fin": 3.46
+  },
+  {
+    "mot": "Le",
+    "debut": 3.785,
+    "fin": 3.901
+  },
+  {
+    "mot": "tableau",
+    "debut": 3.947,
+    "fin": 4.238
+  },
+  {
+    "mot": "liste",
+    "debut": 4.296,
+    "fin": 4.551
+  },
+  {
+    "mot": "les",
+    "debut": 4.598,
+    "fin": 4.702
+  },
+  {
+    "mot": "envois",
+    "debut": 4.772,
+    "fin": 5.108
+  },
+  {
+    "mot": ";",
+    "debut": 5.132,
+    "fin": 5.19
+  },
+  {
+    "mot": "l'icône",
+    "debut": 5.468,
+    "fin": 5.886
+  },
+  {
+    "mot": "en",
+    "debut": 5.909,
+    "fin": 5.956
+  },
+  {
+    "mot": "bout",
+    "debut": 6.014,
+    "fin": 6.165
+  },
+  {
+    "mot": "de",
+    "debut": 6.188,
+    "fin": 6.258
+  },
+  {
+    "mot": "ligne",
+    "debut": 6.304,
+    "fin": 6.618
+  },
+  {
+    "mot": "rouvre",
+    "debut": 6.734,
+    "fin": 7.129
+  },
+  {
+    "mot": "le",
+    "debut": 7.152,
+    "fin": 7.221
+  },
+  {
+    "mot": "message",
+    "debut": 7.268,
+    "fin": 7.767
+  },
+  {
+    "mot": "tel",
+    "debut": 7.941,
+    "fin": 8.115
+  },
+  {
+    "mot": "qu'il",
+    "debut": 8.162,
+    "fin": 8.301
+  },
+  {
+    "mot": "est",
+    "debut": 8.348,
+    "fin": 8.417
+  },
+  {
+    "mot": "parti.",
+    "debut": 8.487,
+    "fin": 8.975
+  }
+]

@@ -1,0 +1,8 @@
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V09-signature-electronique-d-un-devis/voix/hook.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V09-signature-electronique-d-un-devis/voix/intro.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V09-signature-electronique-d-un-devis/voix/etape-01.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V09-signature-electronique-d-un-devis/voix/etape-02.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V09-signature-electronique-d-un-devis/voix/etape-03.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V09-signature-electronique-d-un-devis/voix/etape-04.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V09-signature-electronique-d-un-devis/voix/claude.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V09-signature-electronique-d-un-devis/voix/punchline.mp3'

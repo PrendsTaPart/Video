@@ -1,0 +1,57 @@
+[
+  {
+    "mot": "Visio,",
+    "debut": 0,
+    "fin": 0.569
+  },
+  {
+    "mot": "présentiel",
+    "debut": 0.685,
+    "fin": 1.382
+  },
+  {
+    "mot": "ou",
+    "debut": 1.591,
+    "fin": 1.707
+  },
+  {
+    "mot": "téléphone.",
+    "debut": 1.765,
+    "fin": 2.299
+  },
+  {
+    "mot": "Puis",
+    "debut": 2.45,
+    "fin": 2.612
+  },
+  {
+    "mot": "le",
+    "debut": 2.635,
+    "fin": 2.682
+  },
+  {
+    "mot": "rappel,",
+    "debut": 2.728,
+    "fin": 3.158
+  },
+  {
+    "mot": "et",
+    "debut": 3.274,
+    "fin": 3.413
+  },
+  {
+    "mot": "le",
+    "debut": 3.437,
+    "fin": 3.495
+  },
+  {
+    "mot": "canal",
+    "debut": 3.541,
+    "fin": 3.808
+  },
+  {
+    "mot": "d'envoi.",
+    "debut": 3.855,
+    "fin": 4.238
+  }
+]

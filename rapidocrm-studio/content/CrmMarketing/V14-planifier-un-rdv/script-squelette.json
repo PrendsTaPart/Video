@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 14,
+    "titre": "Prendre un rendez-vous depuis la fiche d'une entreprise",
+    "titre_court": "Prendre un rendez-vous depui",
+    "slug": "prendre-un-rendez-vous-depuis-la-fiche-d-une-entreprise"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir « Prendre un rendez-vous »",
+        "voix": "",
+        "debut_source": 1,
+        "fin_source": 6,
+        "zone_focus": {
+          "x": 0.72,
+          "y": 0.05,
+          "w": 0.27,
+          "h": 0.85
+        },
+        "annotation": "Ouvrir « Prendre un rendez-vous »"
+      },
+      {
+        "numero": 2,
+        "titre": "Donner un titre au rendez-vous",
+        "voix": "",
+        "debut_source": 6,
+        "fin_source": 16,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.05,
+          "w": 0.42,
+          "h": 0.42
+        },
+        "annotation": "Donner un titre au rendez-vous"
+      },
+      {
+        "numero": 3,
+        "titre": "Fixer le créneau, début et fin",
+        "voix": "",
+        "debut_source": 16,
+        "fin_source": 44,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.38,
+          "w": 0.42,
+          "h": 0.26
+        },
+        "annotation": "Fixer le créneau, début et fin"
+      },
+      {
+        "numero": 4,
+        "titre": "Choisir les invités et les organisateurs",
+        "voix": "",
+        "debut_source": 44,
+        "fin_source": 56,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.5,
+          "w": 0.42,
+          "h": 0.45
+        },
+        "annotation": "Choisir les invités et les organisateurs"
+      },
+      {
+        "numero": 5,
+        "titre": "Type de rendez-vous, rappel et mode d'envoi",
+        "voix": "",
+        "debut_source": 56,
+        "fin_source": 66,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.38,
+          "w": 0.42,
+          "h": 0.6
+        },
+        "annotation": "Type de rendez-vous, rappel et mode d'envoi"
+      },
+      {
+        "numero": 6,
+        "titre": "Ajouter une note et enregistrer",
+        "voix": "",
+        "debut_source": 66,
+        "fin_source": 73,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.4,
+          "w": 0.42,
+          "h": 0.55
+        },
+        "annotation": "Ajouter une note et enregistrer"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] rendez-vous de la semaine avec leur date et leur statut.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_rdvs"
+    }
+  }
+}

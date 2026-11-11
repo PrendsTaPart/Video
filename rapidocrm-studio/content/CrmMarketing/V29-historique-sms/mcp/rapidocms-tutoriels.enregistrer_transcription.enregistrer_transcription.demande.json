@@ -1,0 +1,41 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-sms",
+    "transcription": "Le client dit qu'il n'a pas été prévenu. Vous, vous croyez lui avoir envoyé un SMS. Le journal tranche : le message, le numéro, la date.\n\nOn part de la page Historique, et on ressort avec le SMS sous les yeux. Le tableau montre le numéro du destinataire et la date de chaque envoi ; l'icône en bout de ligne rouvre le message mot pour mot. C'est la trace de ce qui est parti, pas un brouillon.\n\nDeuxième carte de la page Historique : les SMS. On consulte.\n\nIci, le numéro du destinataire est une colonne.\n\nL'icône rouvre le message, mot pour mot. Puis on ferme.\n\nLe journal montre le détail. Pour le total du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nLe numéro, la date, le texte : trois colonnes qui valent mieux qu'une discussion.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 8,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 23,
+        "titre": "Ouvrir l'historique des SMS"
+      },
+      {
+        "debut": 28,
+        "titre": "Lire le tableau des envois"
+      },
+      {
+        "debut": 31,
+        "titre": "Rouvrir un SMS envoyé"
+      },
+      {
+        "debut": 35,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 48,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-09T08:19:59.152Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

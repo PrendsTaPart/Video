@@ -1,0 +1,80 @@
+{
+  "duree": 55.8,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V25-ajouter-un-pdf/out/master-16x9.mp4",
+      "octets": 8384239
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/CrmMarketing/V25-ajouter-un-pdf/out/master-9x16.mp4",
+      "octets": 7003281
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 9.633333333333333
+    },
+    {
+      "nom": "titre",
+      "debut": 9.633333333333333,
+      "fin": 19.2
+    },
+    {
+      "nom": "demo",
+      "debut": 19.2,
+      "fin": 37.733333333333334
+    },
+    {
+      "nom": "claude",
+      "debut": 37.733333333333334,
+      "fin": 50.96666666666667
+    },
+    {
+      "nom": "punchline",
+      "debut": 50.96666666666667,
+      "fin": 55.8
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Le tarif du client est dans un mail de mars. Ou dans un dossier partagé. Ou sur le bureau de quelqu'un."
+    },
+    {
+      "timecode": "00:09",
+      "titre": "Ajouter un PDF"
+    },
+    {
+      "timecode": "00:19",
+      "titre": "Ouvrir « Ajouter un PDF » depuis la fiche"
+    },
+    {
+      "timecode": "00:22",
+      "titre": "Nommer le document"
+    },
+    {
+      "timecode": "00:28",
+      "titre": "Choisir le fichier et l'ajouter"
+    },
+    {
+      "timecode": "00:33",
+      "titre": "Retrouver la fiche et ses documents"
+    },
+    {
+      "timecode": "00:37",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:50",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

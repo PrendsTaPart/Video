@@ -1,0 +1,48 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-un-contrat",
+    "module": "06-crm-marketing",
+    "numero": 19,
+    "titre": "Créer un contrat",
+    "titre_court": "Créer un contrat",
+    "accroche": "Un modèle, deux dates, et il part.",
+    "explication": "On part de la fiche d'une entreprise, et on ressort avec un contrat envoyé. La bibliothèque propose des modèles, le formulaire tient en quatre champs, et le logiciel confirme l'envoi.\n\n1. Ouvrir « Créer un contrat » depuis la fiche — Panneau Finance : créer un contrat.\n2. Choisir un modèle dans la bibliothèque — La bibliothèque annonce ses modèles. Chacun dit ce qu'il couvre.\n3. Vérifier le destinataire du contrat — Le destinataire est déjà rempli : c'est le client de la fiche.\n4. Fixer les dates de début et de fin — Puis les deux bornes. La date de début ouvre l'engagement, la date de fin le referme. C'est elle qui dira, plus tard, qu'il faut renouveler.\n5. Choisir le modèle d'e-mail et envoyer — Le message qui portera le contrat, puis envoyer.\n6. Lire la confirmation — Le bandeau confirme : le contrat est envoyé. Il rejoint l'historique du client, où on ira lire son statut.\n\nUn contrat envoyé n'est pas un contrat signé. Pour voir ceux qui attendent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir « Créer un contrat » depuis la fiche",
+        "texte": "Panneau Finance : créer un contrat."
+      },
+      {
+        "titre": "Choisir un modèle dans la bibliothèque",
+        "texte": "La bibliothèque annonce ses modèles. Chacun dit ce qu'il couvre."
+      },
+      {
+        "titre": "Vérifier le destinataire du contrat",
+        "texte": "Le destinataire est déjà rempli : c'est le client de la fiche."
+      },
+      {
+        "titre": "Fixer les dates de début et de fin",
+        "texte": "Puis les deux bornes. La date de début ouvre l'engagement, la date de fin le referme. C'est elle qui dira, plus tard, qu'il faut renouveler."
+      },
+      {
+        "titre": "Choisir le modèle d'e-mail et envoyer",
+        "texte": "Le message qui portera le contrat, puis envoyer."
+      },
+      {
+        "titre": "Lire la confirmation",
+        "texte": "Le bandeau confirme : le contrat est envoyé. Il rejoint l'historique du client, où on ira lire son statut."
+      }
+    ],
+    "a_quoi_ca_sert": "Envoyer un contrat à un client en partant d'un modèle prêt à l'emploi : on choisit le modèle, on borne les dates, on prend un modèle d'e-mail, et le contrat part.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir ouvert la fiche d'une entreprise cliente",
+      "Avoir au moins un modèle de contrat dans la bibliothèque"
+    ]
+  },
+  "demande_le": "2026-09-07T14:18:52.804Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

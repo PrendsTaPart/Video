@@ -1,0 +1,24 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_cas_usage",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-un-jeu-concours",
+    "cas_usage": [
+      {
+        "titre": "Lancer une roue sur une opération",
+        "contexte": "L'enseigne veut animer sa clientèle pendant deux mois.",
+        "action": "Ouvrez les modèles depuis la fiche, lancez le modèle Roue, réglez l'image et le texte, puis décrivez les lots.",
+        "resultat": "L'aperçu montre la roue avec son visuel et son titre."
+      },
+      {
+        "titre": "Ajouter un lot de faible valeur",
+        "contexte": "Il faut un lot fréquent, peu coûteux.",
+        "action": "Dans le bloc Cadeaux, nommez la récompense, mettez son prix et une chance de gagner élevée.",
+        "resultat": "Le lot s'ajoute à ceux du jeu avec sa probabilité."
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T12:21:25.555Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

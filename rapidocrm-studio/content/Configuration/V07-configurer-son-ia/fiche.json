@@ -1,0 +1,49 @@
+{
+  "fonctionnalite": "Brancher sa propre clé d'API sur l'agent IA",
+  "a_quoi_ca_sert": "L'agent IA de RapidoCRM fonctionne par défaut sur la clé du serveur. En collant la vôtre, l'agent consomme votre compte chez le fournisseur plutôt que le quota partagé. Le champ laissé vide, on revient à la clé globale.",
+  "pour_qui": "Gérant ou administrateur disposant d'un compte chez un fournisseur d'IA",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir une clé d'API chez un fournisseur d'IA (anthropic, openai, gemini, openrouter…)"
+  ],
+  "champs_cles": [
+    { "nom": "Clé api agent ia", "obligatoire": false, "explication": "La clé personnelle de l'agent. Elle s'affiche masquée, avec une icône en bout de champ pour la révéler. Laissée vide, l'agent utilise la clé globale du serveur." }
+  ],
+  "outils_mcp": [
+    { "nom": "get_agent_vocal_config", "role": "Affiche la configuration de l'agent vocal IA : pitch, secteur, objectif d'appel, ton de voix, catalogue produits, minutes de crédit restantes et statut Twilio. Lecture seule.",
+      "parametres_obligatoires": [], "parametres_optionnels": [],
+      "exemple_appel": {} }
+  ],
+  "bonnes_pratiques": [
+    "Créez une clé dédiée à RapidoCRM chez votre fournisseur : vous saurez ce qu'elle consomme et vous pourrez la révoquer seule.",
+    "Videz le champ plutôt que de coller une clé approximative : l'agent repart alors sur la clé du serveur, qui fonctionne."
+  ],
+  "erreurs_frequentes": [
+    "Coller une clé d'un autre service que ceux annoncés sous le champ — anthropic, openai, gemini, openrouter.",
+    "Croire que le champ vide désactive l'agent : il le fait simplement basculer sur la clé globale du serveur."
+  ],
+  "cas_usage": [
+    { "titre": "Passer sur son propre compte", "contexte": "Vous utilisez l'agent intensivement et voulez maîtriser la facture côté fournisseur.",
+      "resultat_attendu": "L'agent appelle votre compte, et la consommation apparaît chez votre fournisseur, pas sur le quota partagé." },
+    { "titre": "Revenir à la clé du serveur", "contexte": "Votre clé arrive à expiration et vous n'avez pas le temps d'en générer une autre.",
+      "resultat_attendu": "Le champ vidé puis enregistré, l'agent repart sur la clé globale sans interruption." }
+  ],
+  "astuces": [
+    { "titre": "Vide n'est pas éteint", "contenu": "Le texte sous le champ le dit : laissez vide pour utiliser la clé globale du serveur. L'agent continue de fonctionner.", "niveau": "debutant" },
+    { "titre": "Quatre fournisseurs annoncés", "contenu": "Le champ mentionne anthropic, openai, gemini et openrouter. C'est là qu'il faut aller chercher sa clé.", "niveau": "debutant" },
+    { "titre": "L'œil en bout de champ", "contenu": "La clé s'affiche masquée. L'icône à droite la révèle le temps de vérifier qu'elle est bien collée en entier.", "niveau": "pro" }
+  ],
+  "prompt_claude": {
+    "titre": "Vérifier l'état de son agent",
+    "texte": "Montre-moi la configuration de mon agent vocal : objectif d'appel, ton de voix et minutes restantes.",
+    "variables": [],
+    "outil_mcp": "get_agent_vocal_config"
+  },
+  "sources": {
+    "champs_cles": "frames 00:08 à 00:12 de l'enregistrement : section « Agent ia — Clé api personnelle pour l'agent », champ « Clé api agent ia » et son texte d'aide",
+    "a_quoi_ca_sert": "frame 00:08 : « Collez ici votre clé api (anthropic, openai, gemini, openrouter…) pour que l'agent utilise votre propre compte, laissez vide pour utiliser la clé globale du serveur. »",
+    "erreurs_frequentes": "même texte d'aide, lu à la lettre",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne lit ni n'écrit la clé de l'agent : elle se saisit uniquement dans cette section."
+  },
+  "a_verifier": []
+}

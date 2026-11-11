@@ -1,0 +1,122 @@
+{
+  "fonctionnalite": "Créer un template de SMS",
+  "a_quoi_ca_sert": "Écrire une fois un message qu'on envoie souvent — la facture est partie, le devis est prêt — et le rappeler d'un clic au lieu de le retaper. Le template porte son texte, son bouton d'action et sa catégorie.",
+  "pour_qui": "Gérant ou commercial qui envoie les mêmes messages toute la semaine",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Savoir quel message revient assez souvent pour mériter un modèle"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Nom du template",
+      "obligatoire": true,
+      "explication": "Le libellé affiché sous la vignette dans la liste. C'est lui qu'on cherchera."
+    },
+    {
+      "nom": "Catégorie",
+      "obligatoire": false,
+      "explication": "Le classement du template, choisi dans une liste. Il alimente le filtre en haut de page."
+    },
+    {
+      "nom": "Image",
+      "obligatoire": false,
+      "explication": "L'illustration de la carte, déposée ou choisie par le bouton parcourir."
+    },
+    {
+      "nom": "Texte",
+      "obligatoire": true,
+      "explication": "Le message lui-même. Un bouton « aide du bot » propose un premier jet."
+    },
+    {
+      "nom": "Ajouter un CTA",
+      "obligatoire": false,
+      "explication": "Le bouton d'action joint au message — « Voir facture », par exemple."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_templates_sms",
+      "role": "Liste les templates SMS disponibles, avec recherche par nom. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [
+        "search",
+        "limit"
+      ],
+      "exemple_appel": {
+        "limit": 10
+      }
+    },
+    {
+      "nom": "get_template",
+      "role": "Contenu complet d'un template email, SMS ou newsletter, par identifiant ou par nom. Lecture seule.",
+      "parametres_obligatoires": [
+        "type"
+      ],
+      "parametres_optionnels": [
+        "template_id",
+        "template_nom"
+      ],
+      "exemple_appel": {
+        "type": "sms",
+        "template_nom": "Facture"
+      }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Nommer le template par ce qu'il dit, pas par un numéro : c'est ce nom qu'on lira dans la liste.",
+    "Relire le premier jet du bot avant de valider : c'est vous qui signez le message."
+  ],
+  "erreurs_frequentes": [
+    "Laisser la catégorie vide et ne plus retrouver le template derrière le filtre en haut de page.",
+    "Fermer la modale sans le bouton ajouter, tout en bas : rien n'est enregistré."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Préparer le message d'envoi de facture",
+      "contexte": "Vous prévenez chaque client que sa facture est partie.",
+      "action": "Ajoutez un template SMS, nommez-le, écrivez le message et joignez le CTA « Voir facture ».",
+      "resultat_attendu": "Le template apparaît dans la liste, prêt à être repris."
+    },
+    {
+      "titre": "Reprendre un message existant",
+      "contexte": "Vous voulez réutiliser un modèle déjà écrit.",
+      "action": "Depuis la liste, ouvrez la carte par le bouton consulter.",
+      "resultat_attendu": "Le contenu du template s'affiche tel qu'il a été enregistré."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le bot peut écrire le message",
+      "contenu": "Le bouton « aide du bot », sous la zone de texte, propose une rédaction à relire.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le CTA se choisit dans une liste",
+      "contenu": "« Voir facture » par exemple. Il s'ajoute au message comme bouton.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "La liste se filtre par catégorie",
+      "contenu": "Le sélecteur en haut de page trie les templates. D'où l'intérêt de renseigner la catégorie.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Faire le tour de ses templates SMS",
+    "texte": "Liste-moi mes [nombre] templates SMS.",
+    "variables": [
+      "nombre"
+    ],
+    "outil_mcp": "list_templates_sms"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 et 00:08 — page Template SMS et modale d'ajout",
+    "a_quoi_ca_sert": "frames 00:08 à 00:30",
+    "champs_cles": "frames 00:08, 00:14 et 00:20",
+    "outils_mcp": "schémas list_templates_sms et get_template",
+    "erreurs_frequentes": "frames 00:02 (filtre par catégorie) et 00:20 (bouton ajouter en bas de modale)",
+    "cas_usage": "frames 00:08 à 00:30",
+    "astuces": "frames 00:14 et 00:20"
+  },
+  "a_verifier": []
+}

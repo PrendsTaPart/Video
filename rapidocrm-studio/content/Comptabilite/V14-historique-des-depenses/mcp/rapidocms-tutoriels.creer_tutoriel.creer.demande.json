@@ -1,0 +1,43 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-historique-des-depenses",
+    "module": "05-comptabilite",
+    "numero": 14,
+    "titre": "Suivre ses dépenses",
+    "titre_court": "Historique des dépenses",
+    "accroche": "Quatre cartes, un tableau, et le compte est clair.",
+    "explication": "On part de la page Facturation, et on ressort avec une vue claire des sorties. Les dépenses sont le troisième onglet, à côté des factures et des devis. Quatre cartes donnent la photo, le tableau donne le détail.\n\n1. Ouvrir l'onglet dépenses — Troisième onglet : dépenses. En haut, ce qui est dépensé, ce qui reste dû, ce qui est payé.\n2. Lire le tableau des dépenses — Et la quatrième carte : les bénéfices, une fois les dépenses retirées. Puis le tableau, ligne par ligne, avec son entreprise et son montant.\n3. Filtrer et trier la liste — Deux filtres au-dessus, statut et entreprise. Et les colonnes se trient d'un clic sur leur titre.\n4. Ouvrir le menu d'une dépense — Les trois points ouvrent le menu. Trois entrées ici, pas quatre : une dépense ne se visualise pas.\n5. Remonter à la fiche de l'entreprise — La dernière remonte à la fiche du fournisseur.\n\nVos sorties sont sous les yeux. Pour savoir ce qui reste à régler sans filtrer, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir l'onglet dépenses",
+        "texte": "Troisième onglet : dépenses. En haut, ce qui est dépensé, ce qui reste dû, ce qui est payé."
+      },
+      {
+        "titre": "Lire le tableau des dépenses",
+        "texte": "Et la quatrième carte : les bénéfices, une fois les dépenses retirées. Puis le tableau, ligne par ligne, avec son entreprise et son montant."
+      },
+      {
+        "titre": "Filtrer et trier la liste",
+        "texte": "Deux filtres au-dessus, statut et entreprise. Et les colonnes se trient d'un clic sur leur titre."
+      },
+      {
+        "titre": "Ouvrir le menu d'une dépense",
+        "texte": "Les trois points ouvrent le menu. Trois entrées ici, pas quatre : une dépense ne se visualise pas."
+      },
+      {
+        "titre": "Remonter à la fiche de l'entreprise",
+        "texte": "La dernière remonte à la fiche du fournisseur."
+      }
+    ],
+    "a_quoi_ca_sert": "Voir en un écran ce que l'entreprise a dépensé, ce qui reste à payer et ce qui est réglé, puis descendre au détail ligne par ligne, filtrer, et repartir vers le fournisseur concerné.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir au moins une dépense enregistrée"
+    ]
+  },
+  "demande_le": "2026-09-08T08:19:40.278Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

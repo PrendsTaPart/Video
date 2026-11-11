@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 21,
+    "titre": "Créer une carte de fidélité",
+    "titre_court": "Créer une carte de fidélité",
+    "slug": "creer-une-carte-de-fidelite"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'assistant de carte de fidélité",
+        "voix": "",
+        "debut_source": 1,
+        "fin_source": 7,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.15,
+          "w": 0.77,
+          "h": 0.6
+        },
+        "annotation": "Ouvrir l'assistant de carte de fidélité"
+      },
+      {
+        "numero": 2,
+        "titre": "Choisir la taille de la carte",
+        "voix": "",
+        "debut_source": 7,
+        "fin_source": 12,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.2,
+          "w": 0.77,
+          "h": 0.55
+        },
+        "annotation": "Choisir la taille de la carte"
+      },
+      {
+        "numero": 3,
+        "titre": "Choisir le modèle de carte",
+        "voix": "",
+        "debut_source": 12,
+        "fin_source": 16,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.74,
+          "h": 0.55
+        },
+        "annotation": "Choisir le modèle de carte"
+      },
+      {
+        "numero": 4,
+        "titre": "Relire le récapitulatif et enregistrer",
+        "voix": "",
+        "debut_source": 16,
+        "fin_source": 20.68,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.25,
+          "w": 0.74,
+          "h": 0.62
+        },
+        "annotation": "Relire le récapitulatif et enregistrer"
+      },
+      {
+        "numero": 5,
+        "titre": "Retrouver la carte dans les programmes de fidélité",
+        "voix": "",
+        "debut_source": 20.68,
+        "fin_source": 25.73,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.28,
+          "w": 0.77,
+          "h": 0.68
+        },
+        "annotation": "Retrouver la carte dans les programmes de fidélité"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes programmes de fidélité avec leur nombre de clients et de points offerts.",
+      "variables": [],
+      "outil_mcp": "list_programmes_fidelite"
+    }
+  }
+}

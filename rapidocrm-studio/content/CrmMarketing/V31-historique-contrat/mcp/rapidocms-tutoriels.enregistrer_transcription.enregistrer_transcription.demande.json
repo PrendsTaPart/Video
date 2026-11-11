@@ -1,0 +1,45 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-contrat",
+    "transcription": "Un contrat envoyé en mai, une question sur sa durée en septembre. Où est le document ? Dans l'historique du client, à une ligne de là.\n\nOn part de la page Historique, et on ressort avec le contrat ouvert. Le tableau donne le destinataire, les dates et le statut ; le menu de la ligne ouvre le document. Le statut dit s'il est signé, le document dit ce qu'il engage.\n\nDeuxième rangée de la page Historique : les contrats. On consulte.\n\nDestinataire, dates, statut : tout est là.\n\nLe menu de la ligne l'ouvre.\n\nLe document s'ouvre dans un onglet, avec ses pages en vignettes sur le côté.\n\nUn contrat envoyé n'est pas signé. Pour repérer ceux qui traînent, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nLe statut au tableau, la clause dans le document : deux clics séparent la question de la réponse.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 7,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 21,
+        "titre": "Ouvrir l'historique des contrats"
+      },
+      {
+        "debut": 25,
+        "titre": "Lire le tableau des contrats"
+      },
+      {
+        "debut": 29,
+        "titre": "Ouvrir le contrat"
+      },
+      {
+        "debut": 31,
+        "titre": "Parcourir le contrat, page par page"
+      },
+      {
+        "debut": 36,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 48,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-09T10:25:08.761Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

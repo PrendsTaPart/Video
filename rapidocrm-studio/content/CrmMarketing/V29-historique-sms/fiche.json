@@ -1,0 +1,97 @@
+{
+  "fonctionnalite": "Consulter l'historique des SMS d'une entreprise",
+  "a_quoi_ca_sert": "Retrouver les messages courts envoyés à un client, avec leur date et leur contenu exact. Ce qui a été dit par SMS reste écrit quelque part.",
+  "pour_qui": "Gérant ou commercial qui vérifie une relance",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert l'historique de l'entreprise"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Colonnes du tableau",
+      "obligatoire": false,
+      "explication": "Entreprise, Nom, Fonction, Numéro, Date et Action. Une ligne par SMS envoyé."
+    },
+    {
+      "nom": "Icône œil",
+      "obligatoire": false,
+      "explication": "Le bouton de la colonne Action. Il rouvre le SMS dans une fenêtre."
+    },
+    {
+      "nom": "Fenêtre SMS",
+      "obligatoire": false,
+      "explication": "Expéditeur, destinataire, contenu du message, et un bouton Fermer."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "get_interaction_stats",
+      "role": "Statistiques d'interactions par type — e-mails, SMS, appels, rendez-vous — sur une période, éventuellement pour une seule entreprise. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["entreprise_id", "periode"],
+      "exemple_appel": { "periode": "month" }
+    },
+    {
+      "nom": "list_templates_sms",
+      "role": "Liste les modèles de SMS enregistrés, avec recherche par nom. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["search", "limit"],
+      "exemple_appel": { "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Vérifier le numéro autant que la date : un SMS parti au mauvais contact ne se rattrape pas.",
+    "Relire le message avant de relancer, pour ne pas répéter la même phrase."
+  ],
+  "erreurs_frequentes": [
+    "Chercher le contenu dans le tableau : il n'apparaît qu'en ouvrant la ligne.",
+    "Confondre le journal des SMS et celui des e-mails : ce sont deux cartes distinctes de l'historique."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Vérifier un rappel de rendez-vous",
+      "contexte": "Le client dit ne pas avoir été prévenu.",
+      "action": "Ouvrez l'historique des SMS, repérez la ligne à la bonne date et cliquez sur l'œil.",
+      "resultat_attendu": "Le message se rouvre avec son contenu exact."
+    },
+    {
+      "titre": "Contrôler le numéro utilisé",
+      "contexte": "Le contact a changé de téléphone.",
+      "action": "Lisez la colonne Numéro du journal.",
+      "resultat_attendu": "Le numéro auquel chaque SMS est parti s'affiche sur sa ligne."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le numéro est une colonne",
+      "contenu": "Contrairement au journal des e-mails, celui des SMS montre le numéro du destinataire dès le tableau.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Fermer, pas supprimer",
+      "contenu": "La fenêtre d'un SMS se referme par le bouton Fermer : elle ne propose pas de suppression.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Un champ de recherche au-dessus",
+      "contenu": "Le champ Chercher filtre le journal quand les envois s'accumulent.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Compter les SMS envoyés",
+    "texte": "Donne-moi les statistiques d'interactions du mois pour l'entreprise numéro [identifiant].",
+    "variables": ["identifiant"],
+    "outil_mcp": "get_interaction_stats"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 à 00:08 — bouton Consulter puis tableau des SMS",
+    "a_quoi_ca_sert": "frames 00:08 et 00:11 — tableau des envois, puis fenêtre SMS",
+    "champs_cles": "frames 00:08 et 00:11",
+    "outils_mcp": "schémas get_interaction_stats et list_templates_sms",
+    "erreurs_frequentes": "frames 00:08 (le contenu n'est pas dans le tableau) et 00:02 (deux cartes distinctes)",
+    "cas_usage": "frames 00:08 à 00:14",
+    "astuces": "frames 00:08 et 00:11"
+  },
+  "a_verifier": []
+}

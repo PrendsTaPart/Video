@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "module_slug": "06-crm-marketing",
+    "numero": 23,
+    "titre": "Créer un jeu concours",
+    "titre_court": "Jeu concours",
+    "slug": "06-creer-un-jeu-concours"
+  },
+  "hook": {
+    "texte": "Une roue à faire tourner, une carte à gratter : ça attire, mais ça se code, et c'est là que le projet meurt.",
+    "promesse": "Ici, on part d'un modèle déjà fait.",
+    "duree": 8,
+    "alternatives": [
+      "Un jeu bien fait ramène des clients ; un jeu jamais lancé ne ramène rien.",
+      "Le plus dur dans une animation, c'est de la mettre en ligne.",
+      "Trois types de jeux, zéro ligne de code."
+    ]
+  },
+  "intro": {
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec un jeu personnalisé. La bibliothèque propose une roue, une carte à gratter ou un quiz. Ensuite, on règle l'apparence et les lots.",
+    "duree": 17
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir les jeux depuis la fiche entreprise",
+        "voix": "Panneau Marketing de la fiche client.",
+        "debut_source": 1,
+        "fin_source": 5,
+        "zone_focus": { "x": 0.7, "y": 0.15, "w": 0.29, "h": 0.6 },
+        "annotation": "Marketing"
+      },
+      {
+        "numero": 2,
+        "titre": "Choisir un modèle de jeu",
+        "voix": "Roue, carte à gratter ou quiz. Chacun annonce ses lots.",
+        "debut_source": 5,
+        "fin_source": 10,
+        "zone_focus": { "x": 0.17, "y": 0.11, "w": 0.66, "h": 0.85 },
+        "annotation": "Modèles disponibles"
+      },
+      {
+        "numero": 3,
+        "titre": "Les trois étapes de personnalisation",
+        "voix": "Trois étapes : informations, apparence, validation.",
+        "debut_source": 10,
+        "fin_source": 15,
+        "zone_focus": { "x": 0.22, "y": 0.3, "w": 0.77, "h": 0.4 },
+        "annotation": "Personnaliser"
+      },
+      {
+        "numero": 4,
+        "titre": "Régler l'apparence et voir l'aperçu",
+        "voix": "L'écran se coupe en deux : ce qu'on règle à gauche, ce que le client verra à droite. Image, texte, et l'aperçu suit.",
+        "debut_source": 15,
+        "fin_source": 24,
+        "zone_focus": { "x": 0.22, "y": 0.3, "w": 0.77, "h": 0.68 },
+        "annotation": "Apparence et aperçu"
+      },
+      {
+        "numero": 5,
+        "titre": "Décrire les lots à gagner",
+        "voix": "Chaque lot a un nom, un prix, et une chance de gagner. C'est elle qui règle la générosité.",
+        "debut_source": 24,
+        "fin_source": 30.5,
+        "zone_focus": { "x": 0.22, "y": 0.22, "w": 0.4, "h": 0.76 },
+        "annotation": "Cadeaux"
+      },
+      {
+        "numero": 6,
+        "titre": "Revenir à la fiche",
+        "voix": "Puis on revient à la fiche du client.",
+        "debut_source": 30.5,
+        "fin_source": 34.19,
+        "zone_focus": { "x": 0.22, "y": 0.15, "w": 0.77, "h": 0.8 },
+        "annotation": "Retour à la fiche"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Et pour suivre les jeux lancés ?",
+    "voix": "Les animations se succèdent. Pour retrouver celles du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] jeux concours du mois avec leur statut.",
+      "variables": ["nombre"],
+      "outil_mcp": "list_jeux_concours"
+    },
+    "resultat_affiche": {
+      "titre": "3 jeux ce mois-ci",
+      "lignes": [
+        "Roue — 4 lots — en cours",
+        "Carte à gratter — 3 lots — en cours",
+        "Quiz — 3 lots — terminé"
+      ]
+    },
+    "duree": 18
+  },
+  "punchline": {
+    "texte": "Un modèle, une image, trois lots : l'animation est en ligne avant la fin de la pause.",
+    "duree": 8,
+    "alternatives": [
+      "Ce qui se voit à droite pendant qu'on règle à gauche ne réserve pas de surprise.",
+      "La chance de gagner se règle : la générosité du jeu aussi.",
+      "Un jeu lancé vaut mieux qu'un jeu parfait jamais publié."
+    ]
+  },
+  "seo": {
+    "titre": "Créer un jeu concours — RapidoCRM",
+    "description": "Lancez un jeu concours depuis la fiche d'une entreprise RapidoCRM : modèle de roue, carte à gratter ou quiz, apparence et lots à gagner. Le tutoriel.",
+    "mots_cles": ["jeu concours", "RapidoCRM", "animation", "CRM", "marketing", "fidélisation"],
+    "youtube_titre": "Créer un jeu concours — RapidoCRM",
+    "youtube_description": "Le tutoriel du jeu concours sur RapidoCRM : la bibliothèque de modèles — roue, carte à gratter, quiz —, l'étape Apparence avec son aperçu en direct, et le bloc Cadeaux où se règlent les lots. RapidoCRM Académie.",
+    "youtube_tags": ["RapidoCRM", "jeu concours", "marketing", "CRM", "animation"]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "duree": 28.01,
+  "resolution": [1920, 882],
+  "fps": 25,
+  "ecrans": [
+    { "t": 0, "nom": "Profil — section « Informations bancaires »" }
+  ],
+  "actions": [
+    { "t": 0.5, "type": "defilement", "cible": "section Informations bancaires", "zone": { "x": 0.04, "y": 0.05, "w": 0.92, "h": 0.6 }, "texte_visible": "Informations bancaires — Coordonnées bancaires de facturation" },
+    { "t": 7.0, "type": "saisie", "cible": "champ Banque", "zone": { "x": 0.06, "y": 0.32, "w": 0.42, "h": 0.09 }, "texte_visible": "crédit ag…" },
+    { "t": 11.0, "type": "saisie", "cible": "champ Switch", "zone": { "x": 0.5, "y": 0.32, "w": 0.43, "h": 0.09 }, "texte_visible": "30006" },
+    { "t": 16.0, "type": "saisie", "cible": "champ Iban", "zone": { "x": 0.06, "y": 0.48, "w": 0.42, "h": 0.09 }, "texte_visible": "fr76••••••••••••••••••••••" },
+    { "t": 25.0, "type": "validation", "cible": "bouton enregistrer", "zone": { "x": 0.44, "y": 0.62, "w": 0.11, "h": 0.09 }, "texte_visible": "enregistrer" }
+  ],
+  "etapes": [
+    { "numero": 1, "titre": "Ouvrir les informations bancaires", "debut": 0, "fin": 6.0, "actions": [0], "zone_focus": { "x": 0.02, "y": 0.02, "w": 0.96, "h": 0.7 } },
+    { "numero": 2, "titre": "Nommer sa banque", "debut": 6.0, "fin": 10.0, "actions": [1], "zone_focus": { "x": 0.03, "y": 0.2, "w": 0.55, "h": 0.35 } },
+    { "numero": 3, "titre": "Renseigner le code guichet", "debut": 10.0, "fin": 15.0, "actions": [2], "zone_focus": { "x": 0.45, "y": 0.2, "w": 0.52, "h": 0.35 } },
+    { "numero": 4, "titre": "Saisir l'IBAN", "debut": 15.0, "fin": 24.0, "actions": [3], "zone_focus": { "x": 0.03, "y": 0.38, "w": 0.6, "h": 0.35 } },
+    { "numero": 5, "titre": "Enregistrer", "debut": 24.0, "fin": 28.01, "actions": [4], "zone_focus": { "x": 0.2, "y": 0.4, "w": 0.6, "h": 0.45 } }
+  ],
+  "zones_sensibles": [
+    { "t": 0, "fin": 28.01, "zone": { "x": 0.8, "y": 0.02, "w": 0.2, "h": 0.14 }, "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête" },
+    { "t": 0, "fin": 28.01, "zone": { "x": 0.03, "y": 0.44, "w": 0.45, "h": 0.13 }, "raison": "IBAN affiché en clair dans le champ" }
+  ]
+}

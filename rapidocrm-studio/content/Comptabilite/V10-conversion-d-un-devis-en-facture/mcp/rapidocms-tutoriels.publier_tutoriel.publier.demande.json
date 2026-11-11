@@ -1,0 +1,10 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "publier_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-conversion-d-un-devis-en-facture"
+  },
+  "demande_le": "2026-09-06T12:38:14.467Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

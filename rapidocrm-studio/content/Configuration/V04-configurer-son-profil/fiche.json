@@ -1,0 +1,54 @@
+{
+  "fonctionnalite": "Configurer son profil et sa fiche entreprise",
+  "a_quoi_ca_sert": "Cette page décide de ce que vos clients voient. Votre identité côté logiciel, et surtout la fiche de la société émettrice : c'est elle qui apparaîtra en tête de vos devis et de vos factures, avec son logo, son adresse et sa couleur.",
+  "pour_qui": "Gérant, dirigeant, ou toute personne chargée de l'apparence des documents commerciaux",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir sous la main le logo de l'entreprise et son adresse complète"
+  ],
+  "champs_cles": [
+    { "nom": "Photo de profil", "obligatoire": false, "explication": "Elle remplace l'initiale dans l'en-tête. Un simple glisser-déposer, ou le bouton parcourir." },
+    { "nom": "Nom et prénom", "obligatoire": true, "explication": "Votre identité dans le logiciel, celle qui s'affiche en haut à droite." },
+    { "nom": "E-mail", "obligatoire": true, "explication": "Votre adresse de connexion, rappelée ici." },
+    { "nom": "Numéro et adresse", "obligatoire": false, "explication": "Vos coordonnées personnelles, distinctes de celles de la société." },
+    { "nom": "Logo de l'entreprise", "obligatoire": false, "explication": "Section Entreprise : c'est ce logo qui sera imprimé sur vos documents." },
+    { "nom": "Nom et SIRET de l'entreprise", "obligatoire": true, "explication": "L'identité légale de la société émettrice." },
+    { "nom": "Adresse, code postal, ville", "obligatoire": false, "explication": "Les coordonnées qui figureront sur vos factures." },
+    { "nom": "Couleur de la charte des factures", "obligatoire": false, "explication": "Un sélecteur de couleur qui teinte vos documents commerciaux." }
+  ],
+  "outils_mcp": [
+    { "nom": "get_company", "role": "Renvoie les informations de la société émettrice : nom, SIRET, adresse et coordonnées. Lecture seule.",
+      "parametres_obligatoires": [], "parametres_optionnels": [],
+      "exemple_appel": {} }
+  ],
+  "bonnes_pratiques": [
+    "Complétez la fiche entreprise avant d'émettre votre premier devis : ce qui manque ici manquera sur le document.",
+    "Déposez un logo au format carré ou horizontal, sur fond transparent : il sera repris tel quel en tête de facture."
+  ],
+  "erreurs_frequentes": [
+    "Confondre ses coordonnées personnelles et celles de la société : ce sont deux blocs distincts sur la même page.",
+    "Quitter la page sans cliquer sur sauvegarder : le bouton est en bas de la première section."
+  ],
+  "cas_usage": [
+    { "titre": "Préparer sa première facture", "contexte": "Vous venez d'ouvrir votre espace et vous voulez que vos documents portent votre identité visuelle.",
+      "resultat_attendu": "Logo, adresse et couleur enregistrés : la première facture sort déjà à votre image." }
+  ],
+  "astuces": [
+    { "titre": "Deux blocs, deux identités", "contenu": "Le haut de la page parle de vous, le bas parle de votre société. Les deux ont leur propre adresse et leur propre e-mail.", "niveau": "debutant" },
+    { "titre": "La couleur suit vos factures", "contenu": "Le sélecteur en bas de la fiche entreprise teinte vos documents commerciaux. Choisissez celle de votre marque, elle sera reprise partout.", "niveau": "debutant" }
+  ],
+  "prompt_claude": {
+    "titre": "Vérifier sa fiche entreprise",
+    "texte": "Montre-moi les informations de ma société émettrice : nom, SIRET, adresse et coordonnées.",
+    "variables": [],
+    "outil_mcp": "get_company"
+  },
+  "sources": {
+    "champs_cles": "frames 00:03 à 00:60 de l'enregistrement (libellés lus à l'écran)",
+    "a_quoi_ca_sert": "libellé de la section : « Entreprise — Informations de la société émettrice »",
+    "erreurs_frequentes": "frames 00:15 et 00:22 : le bouton sauvegarder clôt la section profil, la section entreprise vient après",
+    "astuces": "frame 00:45 : libellé « Personnalisation de la charte graphique des factures » suivi d'un sélecteur de couleur",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne dépose de photo ni de logo : ces envois de fichier sont exclusivement web."
+  },
+  "a_verifier": []
+}

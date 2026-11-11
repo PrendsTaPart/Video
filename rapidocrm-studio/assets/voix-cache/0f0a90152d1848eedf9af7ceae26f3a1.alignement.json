@@ -1,0 +1,132 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "client",
+    "debut": 0.209,
+    "fin": 0.534
+  },
+  {
+    "mot": "a",
+    "debut": 0.569,
+    "fin": 0.604
+  },
+  {
+    "mot": "payé",
+    "debut": 0.673,
+    "fin": 0.836
+  },
+  {
+    "mot": "la",
+    "debut": 0.882,
+    "fin": 0.94
+  },
+  {
+    "mot": "semaine",
+    "debut": 0.987,
+    "fin": 1.184
+  },
+  {
+    "mot": "dernière.",
+    "debut": 1.207,
+    "fin": 1.672
+  },
+  {
+    "mot": "Votre",
+    "debut": 1.881,
+    "fin": 2.206
+  },
+  {
+    "mot": "liste,",
+    "debut": 2.241,
+    "fin": 2.589
+  },
+  {
+    "mot": "elle,",
+    "debut": 2.624,
+    "fin": 3.007
+  },
+  {
+    "mot": "le",
+    "debut": 3.332,
+    "fin": 3.413
+  },
+  {
+    "mot": "compte",
+    "debut": 3.471,
+    "fin": 3.704
+  },
+  {
+    "mot": "encore",
+    "debut": 3.727,
+    "fin": 4.087
+  },
+  {
+    "mot": "parmi",
+    "debut": 4.122,
+    "fin": 4.389
+  },
+  {
+    "mot": "les",
+    "debut": 4.423,
+    "fin": 4.528
+  },
+  {
+    "mot": "impayés.",
+    "debut": 4.586,
+    "fin": 5.074
+  },
+  {
+    "mot": "Deux",
+    "debut": 5.399,
+    "fin": 5.573
+  },
+  {
+    "mot": "clics,",
+    "debut": 5.596,
+    "fin": 6.037
+  },
+  {
+    "mot": "et",
+    "debut": 6.188,
+    "fin": 6.304
+  },
+  {
+    "mot": "vos",
+    "debut": 6.339,
+    "fin": 6.467
+  },
+  {
+    "mot": "relances",
+    "debut": 6.49,
+    "fin": 6.896
+  },
+  {
+    "mot": "redeviennent",
+    "debut": 6.989,
+    "fin": 7.454
+  },
+  {
+    "mot": "justes.",
+    "debut": 7.488,
+    "fin": 7.906
+  },
+  {
+    "mot": "<break",
+    "debut": 9.195,
+    "fin": 9.195
+  },
+  {
+    "mot": "time=\"0.4s\"",
+    "debut": 9.195,
+    "fin": 9.195
+  },
+  {
+    "mot": "/>",
+    "debut": 9.195,
+    "fin": 9.195
+  }
+]

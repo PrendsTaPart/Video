@@ -1,0 +1,62 @@
+[
+  {
+    "mot": "Les",
+    "debut": 0,
+    "fin": 0.186
+  },
+  {
+    "mot": "trois",
+    "debut": 0.221,
+    "fin": 0.406
+  },
+  {
+    "mot": "points",
+    "debut": 0.441,
+    "fin": 0.673
+  },
+  {
+    "mot": "en",
+    "debut": 0.708,
+    "fin": 0.789
+  },
+  {
+    "mot": "fin",
+    "debut": 0.859,
+    "fin": 0.987
+  },
+  {
+    "mot": "de",
+    "debut": 1.022,
+    "fin": 1.08
+  },
+  {
+    "mot": "ligne",
+    "debut": 1.126,
+    "fin": 1.312
+  },
+  {
+    "mot": "ouvrent",
+    "debut": 1.37,
+    "fin": 1.602
+  },
+  {
+    "mot": "le",
+    "debut": 1.625,
+    "fin": 1.683
+  },
+  {
+    "mot": "menu.",
+    "debut": 1.73,
+    "fin": 2.043
+  },
+  {
+    "mot": "Quatre",
+    "debut": 2.368,
+    "fin": 2.647
+  },
+  {
+    "mot": "entrées.",
+    "debut": 2.67,
+    "fin": 3.053
+  }
+]

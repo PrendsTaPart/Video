@@ -1,0 +1,45 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-document",
+    "transcription": "Deux versions de la même carte, deux mois d'écart. Laquelle renvoyer au client ? La date d'ajout tranche, et le fichier se télécharge d'ici.\n\nOn part de la page Historique, et on ressort avec le document en main. Le tableau donne le nom, le type, le poids et la date. Le menu de la ligne télécharge ou supprime.\n\nDeuxième rangée de la page Historique : les documents. Le message de liste vide s'affiche le temps du chargement.\n\nNom du fichier, type, taille, date d'ajout : une ligne par pièce.\n\nLe menu de la ligne propose les deux.\n\nOn annule : rien n'a bougé.\n\nLes documents ne sont qu'une partie de la fiche. Pour la relire d'un coup, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nUn document daté, pesé, téléchargeable : la bonne version part du premier coup.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 9,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 19,
+        "titre": "Ouvrir l'historique des documents"
+      },
+      {
+        "debut": 27,
+        "titre": "Lire le tableau des documents"
+      },
+      {
+        "debut": 31,
+        "titre": "Télécharger ou supprimer un document"
+      },
+      {
+        "debut": 34,
+        "titre": "Annuler et revenir à la liste"
+      },
+      {
+        "debut": 36,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 49,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-09T12:22:40.653Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

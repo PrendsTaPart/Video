@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-historique-des-devis",
+    "astuces": [
+      {
+        "titre": "Visualiser ouvre un onglet",
+        "texte": "La liste reste où elle est : on lit le devis à côté, puis on revient.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Quatre gestes par ligne",
+        "texte": "Visualiser, Modifier, Télécharger, Voir l'entreprise. Le dernier bascule sur la fiche du client.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Les filtres se cumulent",
+        "texte": "Statut et entreprise s'ajoutent, et le compteur sous le tableau dit ce qui reste.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-07T12:23:42.918Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

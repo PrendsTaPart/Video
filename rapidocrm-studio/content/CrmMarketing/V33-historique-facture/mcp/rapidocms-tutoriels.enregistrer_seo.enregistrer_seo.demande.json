@@ -1,0 +1,21 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_seo",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-facture",
+    "seo_titre": "Historique des factures — RapidoCRM",
+    "seo_description": "Consultez le journal des factures d'un client dans RapidoCRM : statut, total TTC, ouverture de la facture et téléchargement du document. Le tutoriel.",
+    "seo_mots_cles": [
+      "historique facture",
+      "RapidoCRM",
+      "CRM",
+      "facturation",
+      "encaissement",
+      "suivi client"
+    ],
+    "seo_og_image": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V33-06-historique-facture-thumb.jpg"
+  },
+  "demande_le": "2026-09-09T14:24:09.600Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

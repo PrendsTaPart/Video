@@ -1,0 +1,132 @@
+[
+  {
+    "mot": "«",
+    "debut": 0,
+    "fin": 0.07
+  },
+  {
+    "mot": "Où",
+    "debut": 0.186,
+    "fin": 0.255
+  },
+  {
+    "mot": "en",
+    "debut": 0.29,
+    "fin": 0.348
+  },
+  {
+    "mot": "est",
+    "debut": 0.418,
+    "fin": 0.499
+  },
+  {
+    "mot": "mon",
+    "debut": 0.592,
+    "fin": 0.697
+  },
+  {
+    "mot": "compte",
+    "debut": 0.731,
+    "fin": 1.091
+  },
+  {
+    "mot": "?",
+    "debut": 1.115,
+    "fin": 1.149
+  },
+  {
+    "mot": "»",
+    "debut": 1.173,
+    "fin": 1.196
+  },
+  {
+    "mot": "Le",
+    "debut": 1.324,
+    "fin": 1.463
+  },
+  {
+    "mot": "client",
+    "debut": 1.486,
+    "fin": 1.73
+  },
+  {
+    "mot": "demande,",
+    "debut": 1.765,
+    "fin": 2.229
+  },
+  {
+    "mot": "et",
+    "debut": 2.403,
+    "fin": 2.531
+  },
+  {
+    "mot": "vous",
+    "debut": 2.566,
+    "fin": 2.682
+  },
+  {
+    "mot": "ouvrez",
+    "debut": 2.728,
+    "fin": 2.972
+  },
+  {
+    "mot": "trois",
+    "debut": 3.019,
+    "fin": 3.286
+  },
+  {
+    "mot": "onglets.",
+    "debut": 3.344,
+    "fin": 3.762
+  },
+  {
+    "mot": "Un",
+    "debut": 4.145,
+    "fin": 4.272
+  },
+  {
+    "mot": "tableau",
+    "debut": 4.319,
+    "fin": 4.621
+  },
+  {
+    "mot": "répond",
+    "debut": 4.656,
+    "fin": 5.039
+  },
+  {
+    "mot": ":",
+    "debut": 5.062,
+    "fin": 5.085
+  },
+  {
+    "mot": "statut",
+    "debut": 5.259,
+    "fin": 5.747
+  },
+  {
+    "mot": "et",
+    "debut": 5.805,
+    "fin": 5.909
+  },
+  {
+    "mot": "total,",
+    "debut": 5.956,
+    "fin": 6.513
+  },
+  {
+    "mot": "ligne",
+    "debut": 6.722,
+    "fin": 7.024
+  },
+  {
+    "mot": "par",
+    "debut": 7.047,
+    "fin": 7.21
+  },
+  {
+    "mot": "ligne.",
+    "debut": 7.233,
+    "fin": 7.523
+  }
+]

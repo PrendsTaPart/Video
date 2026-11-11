@@ -1,0 +1,24 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_cas_usage",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-historique-des-depenses",
+    "cas_usage": [
+      {
+        "titre": "Faire le point sur ce qui reste à payer",
+        "contexte": "Vous préparez vos règlements de fin de mois.",
+        "action": "Ouvrez l'onglet dépenses et lisez la carte « Total dépenses en attente de paiement », puis triez le tableau par statut.",
+        "resultat": "Le montant en attente et les lignes concernées sont à l'écran."
+      },
+      {
+        "titre": "Remonter au fournisseur",
+        "contexte": "Une dépense demande une explication.",
+        "action": "Ouvrez le menu Actions de la ligne et choisissez Voir l'entreprise.",
+        "resultat": "La fiche du fournisseur s'ouvre depuis la dépense."
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T08:19:40.619Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

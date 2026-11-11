@@ -1,0 +1,76 @@
+{
+  "outils": [
+    {
+      "nom": "list_rdvs",
+      "description": "Tool RapidoCRM (Agenda et Evenements) : list_rdvs. Utiliser ce tool pour cette action metier.",
+      "parametres": [
+        {
+          "nom": "id",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "ID principal"
+        },
+        {
+          "nom": "statut",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtre de statut"
+        },
+        {
+          "nom": "periode",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": ""
+        },
+        {
+          "nom": "q",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche libre"
+        },
+        {
+          "nom": "limit",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre maximum de résultats"
+        }
+      ]
+    },
+    {
+      "nom": "get_today_schedule",
+      "description": "Programme agenda de la période : rendez-vous et événements.",
+      "parametres": [
+        {
+          "nom": "periode",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "tomorrow",
+            "week"
+          ],
+          "description": ""
+        }
+      ]
+    }
+  ],
+  "divergences": [
+    "Divergence : « Champ Titre » (13.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Champ De du créneau » (22.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Champ A du créneau » (40.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Liste des invités proposés » (48.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Type de rendez-vous, rappel et mode d'envoi » (58.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Informations complémentaires » (67.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

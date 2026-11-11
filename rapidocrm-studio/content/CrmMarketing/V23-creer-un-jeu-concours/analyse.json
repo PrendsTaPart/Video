@@ -1,0 +1,141 @@
+{
+  "duree": 34.19,
+  "resolution": [1920, 1020],
+  "fps": 60,
+  "ecrans": [
+    { "t": 0.0, "nom": "Fiche entreprise — point de départ" },
+    { "t": 4.5, "nom": "Modèles de jeux disponibles" },
+    { "t": 10.0, "nom": "Jeux concours — personnaliser, étape 1" },
+    { "t": 15.0, "nom": "Étape Apparence — configuration et aperçu" },
+    { "t": 24.0, "nom": "Bloc Cadeaux" },
+    { "t": 30.5, "nom": "Retour à la fiche entreprise (chargement)" }
+  ],
+  "actions": [
+    {
+      "t": 2.0,
+      "type": "ouverture",
+      "cible": "Panneau Marketing de la fiche entreprise",
+      "zone": { "x": 0.72, "y": 0.2, "w": 0.27, "h": 0.5 },
+      "texte_visible": "Finance · Marketing · Documentation"
+    },
+    {
+      "t": 6.0,
+      "type": "ouverture",
+      "cible": "Bibliothèque des modèles de jeux",
+      "zone": { "x": 0.17, "y": 0.11, "w": 0.66, "h": 0.85 },
+      "texte_visible": "Modèles disponibles · Choisissez un modèle, puis lancez-le sur cette fiche. · Mes jeux · Chercher un modèle · Roue · 4 lots · À gratter · 3 lots · Quiz · 3 lots · Lancer"
+    },
+    {
+      "t": 7.5,
+      "type": "clic",
+      "cible": "Bouton Lancer d'un modèle",
+      "zone": { "x": 0.24, "y": 0.79, "w": 0.09, "h": 0.08 },
+      "texte_visible": "Lancer"
+    },
+    {
+      "t": 11.5,
+      "type": "ouverture",
+      "cible": "Assistant de personnalisation du jeu",
+      "zone": { "x": 0.22, "y": 0.33, "w": 0.77, "h": 0.35 },
+      "texte_visible": "Personnaliser votre jeu concours · 1 Informations générales · 2 Apparence · 3 Validation"
+    },
+    {
+      "t": 17.0,
+      "type": "ouverture",
+      "cible": "Étape Apparence : configuration à gauche, aperçu à droite",
+      "zone": { "x": 0.22, "y": 0.33, "w": 0.77, "h": 0.65 },
+      "texte_visible": "Configuration · Aperçu · Images et texte · Image · Importer une image · Sélectionner une image · Parcourir · Tournez la roue !"
+    },
+    {
+      "t": 21.0,
+      "type": "defilement",
+      "cible": "Bas de l'étape Apparence",
+      "zone": { "x": 0.22, "y": 0.6, "w": 0.77, "h": 0.35 },
+      "texte_visible": "Précédent · Suivant · Enregistrer"
+    },
+    {
+      "t": 26.0,
+      "type": "saisie",
+      "cible": "Bloc Cadeaux",
+      "zone": { "x": 0.23, "y": 0.25, "w": 0.37, "h": 0.72 },
+      "texte_visible": "Cadeaux · Nom de la récompense : Dessert du jour · Prix : 8.00 · Chance de gagner : 15 · Image 1 · Sélectionner un fichier · Parcourir"
+    },
+    {
+      "t": 31.0,
+      "type": "ouverture",
+      "cible": "Retour à la fiche entreprise",
+      "zone": { "x": 0.22, "y": 0.15, "w": 0.77, "h": 0.8 },
+      "texte_visible": "Entreprise · S'il vous plaît, attendez…"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir les jeux depuis la fiche entreprise",
+      "debut": 1.0,
+      "fin": 5.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.7, "y": 0.15, "w": 0.29, "h": 0.6 }
+    },
+    {
+      "numero": 2,
+      "titre": "Choisir un modèle de jeu",
+      "debut": 5.0,
+      "fin": 10.0,
+      "actions": [1, 2],
+      "zone_focus": { "x": 0.17, "y": 0.11, "w": 0.66, "h": 0.85 }
+    },
+    {
+      "numero": 3,
+      "titre": "Les trois étapes de personnalisation",
+      "debut": 10.0,
+      "fin": 15.0,
+      "actions": [3],
+      "zone_focus": { "x": 0.22, "y": 0.3, "w": 0.77, "h": 0.4 }
+    },
+    {
+      "numero": 4,
+      "titre": "Régler l'apparence et voir l'aperçu",
+      "debut": 15.0,
+      "fin": 24.0,
+      "actions": [4, 5],
+      "zone_focus": { "x": 0.22, "y": 0.3, "w": 0.77, "h": 0.68 }
+    },
+    {
+      "numero": 5,
+      "titre": "Décrire les lots à gagner",
+      "debut": 24.0,
+      "fin": 30.5,
+      "actions": [6],
+      "zone_focus": { "x": 0.22, "y": 0.22, "w": 0.4, "h": 0.76 }
+    },
+    {
+      "numero": 6,
+      "titre": "Revenir à la fiche",
+      "debut": 30.5,
+      "fin": 34.19,
+      "actions": [7],
+      "zone_focus": { "x": 0.22, "y": 0.15, "w": 0.77, "h": 0.8 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 34.19,
+      "zone": { "x": 0.0, "y": 0.0, "w": 1.0, "h": 0.15 },
+      "raison": "Fenêtre du navigateur : onglets, adresse locale 127.0.0.1:8000, extensions et bouton « Demander à Gemini »."
+    },
+    {
+      "t": 0.0,
+      "fin": 34.19,
+      "zone": { "x": 0.79, "y": 0.14, "w": 0.21, "h": 0.13 },
+      "raison": "Photo et nom du titulaire du compte (Dupont lina)."
+    },
+    {
+      "t": 0.0,
+      "fin": 5.0,
+      "zone": { "x": 0.24, "y": 0.25, "w": 0.5, "h": 0.65 },
+      "raison": "Activités récentes de la fiche entreprise : photo et nom de l'utilisatrice sur chaque ligne."
+    }
+  ]
+}

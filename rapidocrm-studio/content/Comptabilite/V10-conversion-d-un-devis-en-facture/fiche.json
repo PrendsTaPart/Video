@@ -1,0 +1,121 @@
+{
+  "fonctionnalite": "Transformer un devis accepté en facture",
+  "a_quoi_ca_sert": "Ne pas ressaisir une facture quand le devis est signé. Signer le devis crée la facture : mêmes lignes, même montant, même client, et elle apparaît dans l'onglet facture avec son propre numéro.",
+  "pour_qui": "Gérant ou commercial qui facture ce qu'il vient de faire accepter",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir un devis en attente",
+    "Avoir branché la boîte mail de la société pour que l'envoi parte"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Signer",
+      "obligatoire": true,
+      "explication": "L'entrée du menu Actions du devis qui ouvre le devis en pleine page. C'est ce geste qui déclenche la création de la facture."
+    },
+    {
+      "nom": "enregistrer",
+      "obligatoire": true,
+      "explication": "Le bouton en haut du devis. À la validation, le logiciel signe le devis et crée la facture."
+    },
+    {
+      "nom": "Onglet facture",
+      "obligatoire": false,
+      "explication": "Le premier des trois onglets de la page Facturation. La facture créée s'y ajoute."
+    },
+    {
+      "nom": "Cartes de statistiques",
+      "obligatoire": false,
+      "explication": "Total facturé, en attente et bénéfices, en haut de page. Elles se recalculent après la conversion."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_devis",
+      "role": "Liste les devis avec filtres : statut, entreprise, recherche par destinataire, période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [
+        "statut",
+        "entreprise_id",
+        "q",
+        "periode",
+        "limit"
+      ],
+      "exemple_appel": {
+        "statut": "en_attente",
+        "limit": 10
+      }
+    },
+    {
+      "nom": "list_factures",
+      "role": "Liste les factures du CRM, filtrables par statut et par période. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [
+        "statut",
+        "periode",
+        "limit"
+      ],
+      "exemple_appel": {
+        "statut": "en_attente",
+        "limit": 10
+      }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Vérifier le devis avant de le signer : la facture reprend ce qu'il contient.",
+    "Passer sur l'onglet facture après la conversion pour confirmer que la ligne est bien là."
+  ],
+  "erreurs_frequentes": [
+    "Chercher un bouton « convertir en facture » : il n'y en a pas. C'est la signature du devis qui crée la facture.",
+    "Croire que le client a reçu la facture : si la boîte mail n'est pas branchée, le bandeau le dit — « l'envoi de l'e-mail a échoué » — et la facture existe quand même."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Facturer un devis accepté",
+      "contexte": "Le client vient d'accepter votre devis.",
+      "action": "Ouvrez le devis par Signer, puis enregistrez.",
+      "resultat_attendu": "Le bandeau annonce « Devis signé et facture créée », et la facture apparaît dans l'onglet facture."
+    },
+    {
+      "titre": "Vérifier ce qui a été facturé",
+      "contexte": "Vous voulez confirmer le montant passé en facturation.",
+      "action": "Ouvrez l'onglet facture et lisez la nouvelle ligne, ou relisez les cartes du haut de page.",
+      "resultat_attendu": "La facture porte le même client et le même total que le devis ; le total facturé a augmenté d'autant."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "La signature fait la facture",
+      "contenu": "Il n'y a pas d'écran de conversion. Signer le devis suffit.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le bandeau dit tout",
+      "contenu": "« Devis signé et facture créée, mais l'envoi de l'e-mail a échoué » : la facture est là, seul le mail n'est pas parti.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Les compteurs suivent",
+      "contenu": "Total facturé et en attente se recalculent tout seuls après la conversion.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Voir ce qui vient d'être facturé",
+    "texte": "Liste-moi mes [nombre] dernières factures avec leur statut et leur montant.",
+    "variables": [
+      "nombre"
+    ],
+    "outil_mcp": "list_factures"
+  },
+  "sources": {
+    "fonctionnalite": "frame 00:30 — bandeau « Devis signé et facture créée »",
+    "a_quoi_ca_sert": "frames 00:30 et 00:47 — la facture n°11 reprend le montant du devis n°3",
+    "champs_cles": "frames 00:05, 00:14, 00:36 et 00:42",
+    "outils_mcp": "schémas list_devis et list_factures",
+    "erreurs_frequentes": "frame 00:30 — l'envoi de l'e-mail a échoué, la facture existe malgré tout",
+    "cas_usage": "frames 00:30 à 00:55",
+    "astuces": "frames 00:30 et 00:42 — cartes recalculées"
+  },
+  "a_verifier": []
+}

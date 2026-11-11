@@ -1,0 +1,112 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.221
+  },
+  {
+    "mot": "descend",
+    "debut": 0.267,
+    "fin": 0.662
+  },
+  {
+    "mot": ":",
+    "debut": 0.755,
+    "fin": 0.789
+  },
+  {
+    "mot": "le",
+    "debut": 0.964,
+    "fin": 1.033
+  },
+  {
+    "mot": "délai",
+    "debut": 1.091,
+    "fin": 1.289
+  },
+  {
+    "mot": "de",
+    "debut": 1.324,
+    "fin": 1.37
+  },
+  {
+    "mot": "paiement,",
+    "debut": 1.393,
+    "fin": 1.858
+  },
+  {
+    "mot": "les",
+    "debut": 2.032,
+    "fin": 2.148
+  },
+  {
+    "mot": "mentions",
+    "debut": 2.183,
+    "fin": 2.45
+  },
+  {
+    "mot": "légales,",
+    "debut": 2.473,
+    "fin": 2.984
+  },
+  {
+    "mot": "le",
+    "debut": 3.158,
+    "fin": 3.274
+  },
+  {
+    "mot": "statut.",
+    "debut": 3.309,
+    "fin": 3.889
+  },
+  {
+    "mot": "Et",
+    "debut": 4.331,
+    "fin": 4.458
+  },
+  {
+    "mot": "la",
+    "debut": 4.493,
+    "fin": 4.563
+  },
+  {
+    "mot": "question",
+    "debut": 4.609,
+    "fin": 4.899
+  },
+  {
+    "mot": "de",
+    "debut": 4.934,
+    "fin": 4.992
+  },
+  {
+    "mot": "l'envoi,",
+    "debut": 5.039,
+    "fin": 5.422
+  },
+  {
+    "mot": "à",
+    "debut": 5.48,
+    "fin": 5.526
+  },
+  {
+    "mot": "laquelle",
+    "debut": 5.584,
+    "fin": 5.863
+  },
+  {
+    "mot": "on",
+    "debut": 5.886,
+    "fin": 5.933
+  },
+  {
+    "mot": "répond",
+    "debut": 5.979,
+    "fin": 6.269
+  },
+  {
+    "mot": "ici.",
+    "debut": 6.293,
+    "fin": 6.676
+  }
+]

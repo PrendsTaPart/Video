@@ -1,0 +1,86 @@
+{
+  "duree": 79.46666666666667,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V09-configurer-stripe/out/master-16x9.mp4",
+      "octets": 8990581
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V09-configurer-stripe/out/master-9x16.mp4",
+      "octets": 7740884
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 7.666666666666667
+    },
+    {
+      "nom": "titre",
+      "debut": 7.666666666666667,
+      "fin": 39.46666666666667
+    },
+    {
+      "nom": "demo",
+      "debut": 39.46666666666667,
+      "fin": 53.7
+    },
+    {
+      "nom": "claude",
+      "debut": 53.7,
+      "fin": 75.1
+    },
+    {
+      "nom": "punchline",
+      "debut": 75.1,
+      "fin": 79.46666666666667
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Votre client veut payer maintenant. Vous, vous lui envoyez un RIB."
+    },
+    {
+      "timecode": "00:07",
+      "titre": "Configurer Stripe"
+    },
+    {
+      "timecode": "00:39",
+      "titre": "Ouvrir la section Stripe"
+    },
+    {
+      "timecode": "00:42",
+      "titre": "Situer Stripe parmi les connexions"
+    },
+    {
+      "timecode": "00:47",
+      "titre": "Retrouver la page et ses onglets"
+    },
+    {
+      "timecode": "00:50",
+      "titre": "Coller la clé secrète"
+    },
+    {
+      "timecode": "00:52",
+      "titre": "Enregistrer"
+    },
+    {
+      "timecode": "00:53",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:15",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 79s, hors de la fenêtre 80–170s."
+  ]
+}

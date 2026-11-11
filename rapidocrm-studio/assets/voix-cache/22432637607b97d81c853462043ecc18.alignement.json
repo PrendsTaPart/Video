@@ -1,0 +1,27 @@
+[
+  {
+    "mot": "Panneau",
+    "debut": 0,
+    "fin": 0.302
+  },
+  {
+    "mot": "Communication,",
+    "debut": 0.337,
+    "fin": 1.033
+  },
+  {
+    "mot": "envoyer",
+    "debut": 1.068,
+    "fin": 1.451
+  },
+  {
+    "mot": "une",
+    "debut": 1.486,
+    "fin": 1.567
+  },
+  {
+    "mot": "newsletter.",
+    "debut": 1.591,
+    "fin": 2.229
+  }
+]

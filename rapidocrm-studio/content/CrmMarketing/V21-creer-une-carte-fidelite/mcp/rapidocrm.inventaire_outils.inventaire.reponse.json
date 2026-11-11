@@ -1,0 +1,60 @@
+{
+  "outils": [
+    {
+      "nom": "list_programmes_fidelite",
+      "description": "Liste les programmes de fidélité créés dans votre espace, avec l'entreprise associée et ses statistiques (nombre de clients, points offerts, gains offerts).",
+      "parametres": []
+    },
+    {
+      "nom": "list_cartes_fidelite",
+      "description": "Liste les cartes de fidélité des contacts, avec les statistiques (points offerts, nombre de clients, gains offerts).",
+      "parametres": [
+        {
+          "nom": "programme_id",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Filtrer par programme de fidélité"
+        },
+        {
+          "nom": "q",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Recherche sur le nom du client"
+        },
+        {
+          "nom": "statut",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "actif",
+            "inactif"
+          ],
+          "description": ""
+        },
+        {
+          "nom": "date_debut",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Date de création minimale (AAAA-MM-JJ)"
+        },
+        {
+          "nom": "date_fin",
+          "type": "string",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Date de création maximale (AAAA-MM-JJ)"
+        },
+        {
+          "nom": "limit",
+          "type": "integer",
+          "obligatoire": false,
+          "valeurs_autorisees": [],
+          "description": "Nombre maximum de cartes retournées (défaut 20)"
+        }
+      ]
+    }
+  ]
+}

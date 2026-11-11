@@ -1,0 +1,84 @@
+{
+  "duree": 86.46666666666667,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V10-configurer-son-iban/out/master-16x9.mp4",
+      "octets": 10034901
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V10-configurer-son-iban/out/master-9x16.mp4",
+      "octets": 8804389
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 7.5
+    },
+    {
+      "nom": "titre",
+      "debut": 7.5,
+      "fin": 38.733333333333334
+    },
+    {
+      "nom": "demo",
+      "debut": 38.733333333333334,
+      "fin": 63.266666666666666
+    },
+    {
+      "nom": "claude",
+      "debut": 63.266666666666666,
+      "fin": 82.33333333333333
+    },
+    {
+      "nom": "punchline",
+      "debut": 82.33333333333333,
+      "fin": 86.46666666666667
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Votre facture est partie. Le client la lit, et cherche où virer l'argent."
+    },
+    {
+      "timecode": "00:07",
+      "titre": "Configurer son IBAN"
+    },
+    {
+      "timecode": "00:38",
+      "titre": "Ouvrir les informations bancaires"
+    },
+    {
+      "timecode": "00:45",
+      "titre": "Nommer sa banque"
+    },
+    {
+      "timecode": "00:49",
+      "titre": "Renseigner le code guichet"
+    },
+    {
+      "timecode": "00:52",
+      "titre": "Saisir l'IBAN"
+    },
+    {
+      "timecode": "00:59",
+      "titre": "Enregistrer"
+    },
+    {
+      "timecode": "01:03",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:22",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

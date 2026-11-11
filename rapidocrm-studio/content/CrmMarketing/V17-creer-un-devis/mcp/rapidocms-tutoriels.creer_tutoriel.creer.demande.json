@@ -1,0 +1,52 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-un-devis",
+    "module": "06-crm-marketing",
+    "numero": 17,
+    "titre": "Créer un devis",
+    "titre_court": "Créer un devis",
+    "accroche": "Ou bien vous partez de sa fiche, et le prix vient tout seul.",
+    "explication": "On part de la fiche d'une entreprise, et on ressort avec un devis. Le panneau Finance l'ouvre, le catalogue remplit les montants, et le devis se retrouve dans l'activité du client.\n\n1. Ouvrir « Créer un devis » depuis la fiche — Panneau Finance : créer un devis.\n2. Logo et charte graphique du devis — Le logo du client est déjà là. On choisit une couleur.\n3. Choisir le produit, les montants suivent — Le produit, avec son prix. C'est lui qui remplit le reste.\n4. Fixer les dates du devis — Les dates de la prestation, début et fin.\n5. Délai de paiement, mentions légales, statut — On descend : le délai de paiement, les mentions légales, le statut. Et la question de l'envoi, à laquelle on répond ici.\n6. Mode de paiement, totaux et enregistrement — Le mode de règlement, les totaux, et enregistrer.\n7. Retrouver le devis dans l'activité de la fiche — Le devis prend sa place dans l'activité du client.\n\nUn devis part, un autre attend. Pour savoir lesquels, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir « Créer un devis » depuis la fiche",
+        "texte": "Panneau Finance : créer un devis."
+      },
+      {
+        "titre": "Logo et charte graphique du devis",
+        "texte": "Le logo du client est déjà là. On choisit une couleur."
+      },
+      {
+        "titre": "Choisir le produit, les montants suivent",
+        "texte": "Le produit, avec son prix. C'est lui qui remplit le reste."
+      },
+      {
+        "titre": "Fixer les dates du devis",
+        "texte": "Les dates de la prestation, début et fin."
+      },
+      {
+        "titre": "Délai de paiement, mentions légales, statut",
+        "texte": "On descend : le délai de paiement, les mentions légales, le statut. Et la question de l'envoi, à laquelle on répond ici."
+      },
+      {
+        "titre": "Mode de paiement, totaux et enregistrement",
+        "texte": "Le mode de règlement, les totaux, et enregistrer."
+      },
+      {
+        "titre": "Retrouver le devis dans l'activité de la fiche",
+        "texte": "Le devis prend sa place dans l'activité du client."
+      }
+    ],
+    "a_quoi_ca_sert": "Établir un devis sans quitter la fiche du client : on choisit un produit du catalogue et le logiciel remplit les montants. Le devis rejoint ensuite l'activité de l'entreprise, daté et horodaté.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir ouvert la fiche d'une entreprise cliente",
+      "Avoir au moins un produit au catalogue"
+    ]
+  },
+  "demande_le": "2026-09-07T08:18:21.170Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

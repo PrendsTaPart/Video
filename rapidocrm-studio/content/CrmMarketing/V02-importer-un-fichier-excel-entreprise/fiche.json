@@ -1,0 +1,91 @@
+{
+  "fonctionnalite": "Importer une liste d'entreprises depuis un fichier Excel",
+  "a_quoi_ca_sert": "Remplir sa base clients d'un coup, à partir du fichier Excel qu'on a déjà, au lieu de créer les fiches une par une. Le logiciel fournit le modèle de fichier à respecter.",
+  "pour_qui": "Gérant ou administrateur qui démarre son espace, ou qui reprend une liste venue d'ailleurs",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir sa liste d'entreprises dans un fichier Excel"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Fichier",
+      "obligatoire": true,
+      "explication": "Le fichier Excel à envoyer, choisi par le bouton parcourir. C'est lui qui porte les entreprises à créer."
+    },
+    {
+      "nom": "Template excel",
+      "obligatoire": false,
+      "explication": "Le modèle de fichier téléchargeable depuis la même fenêtre. Il donne les colonnes attendues, dans l'ordre attendu."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_entreprises",
+      "role": "Relire les entreprises de l'espace après l'import, pour vérifier ce qui est entré.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["q", "statut", "limit", "periode"],
+      "exemple_appel": { "limit": 20 }
+    },
+    {
+      "nom": "search_entreprises",
+      "role": "Retrouver une entreprise précise par son nom, sa ville ou son domaine.",
+      "parametres_obligatoires": ["q"],
+      "parametres_optionnels": ["limit"],
+      "exemple_appel": { "q": "boulangerie" }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Télécharger le template depuis la fenêtre d'import avant de préparer son fichier : les colonnes attendues y sont déjà nommées.",
+    "Vérifier la liste juste après l'import : les entreprises importées apparaissent parmi les autres, sans mise en avant."
+  ],
+  "erreurs_frequentes": [
+    "Envoyer son propre fichier sans reprendre les colonnes du template : les entreprises n'entrent pas comme prévu.",
+    "Refaire l'import parce que la liste semble inchangée, alors que les nouvelles entreprises sont plus bas dans la page."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Reprendre une liste existante",
+      "contexte": "Vous tenez vos clients dans un tableur depuis des années.",
+      "action": "Sur la page Clients, ouvrez la fenêtre d'import, choisissez votre fichier et lancez l'import.",
+      "resultat_attendu": "Les entreprises du fichier apparaissent dans la liste des clients, avec leur ville et leur code postal."
+    },
+    {
+      "titre": "Partir du bon format",
+      "contexte": "Vous ne savez pas quelles colonnes le logiciel attend.",
+      "action": "Depuis la fenêtre d'import, téléchargez le template excel et remplissez-le.",
+      "resultat_attendu": "Le fichier a les colonnes attendues, et l'import se passe sans reprise."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le modèle est dans la fenêtre",
+      "contenu": "Le bouton « télécharger un template excel » est juste sous la zone de dépôt. Inutile de le chercher ailleurs.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "L'import se lance depuis la liste",
+      "contenu": "L'icône d'import se trouve dans la barre d'outils de la page Clients, entre la recherche et le filtre.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Les fiches importées restent modifiables",
+      "contenu": "Une entreprise importée est une fiche comme une autre : au survol, les boutons modifier et supprimer sont là.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Vérifier ce qui est entré",
+    "texte": "Liste-moi mes [nombre] dernières entreprises avec leur ville et leur code postal.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_entreprises"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 à 00:10 — barre d'outils de la page Clients et modale « Importer un fichier excel »",
+    "a_quoi_ca_sert": "frames 00:02 et 00:16 — la liste avant, puis les entreprises issues du fichier",
+    "champs_cles": "frame 00:06 — zone de dépôt, bouton parcourir, bouton télécharger un template excel, bouton importer",
+    "erreurs_frequentes": "frames 00:06 et 00:16 — le template proposé, et les nouvelles fiches placées à la suite des anciennes",
+    "outils_mcp": "schémas des outils list_entreprises et search_entreprises du MCP RapidoCRM",
+    "cas_usage": "frame 00:16 — Le fleuriste, Pain d'or, Le fournil saint-jean avec leur ville et leur code postal"
+  },
+  "a_verifier": []
+}

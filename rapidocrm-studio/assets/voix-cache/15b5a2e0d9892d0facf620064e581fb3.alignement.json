@@ -1,0 +1,232 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.128
+  },
+  {
+    "mot": "part",
+    "debut": 0.163,
+    "fin": 0.302
+  },
+  {
+    "mot": "de",
+    "debut": 0.325,
+    "fin": 0.372
+  },
+  {
+    "mot": "la",
+    "debut": 0.406,
+    "fin": 0.476
+  },
+  {
+    "mot": "page",
+    "debut": 0.534,
+    "fin": 0.778
+  },
+  {
+    "mot": "Facturation,",
+    "debut": 0.801,
+    "fin": 1.567
+  },
+  {
+    "mot": "et",
+    "debut": 1.776,
+    "fin": 1.881
+  },
+  {
+    "mot": "on",
+    "debut": 1.927,
+    "fin": 1.997
+  },
+  {
+    "mot": "ressort",
+    "debut": 2.032,
+    "fin": 2.403
+  },
+  {
+    "mot": "avec",
+    "debut": 2.426,
+    "fin": 2.624
+  },
+  {
+    "mot": "une",
+    "debut": 2.705,
+    "fin": 2.786
+  },
+  {
+    "mot": "facture",
+    "debut": 2.81,
+    "fin": 3.123
+  },
+  {
+    "mot": "faite,",
+    "debut": 3.158,
+    "fin": 3.425
+  },
+  {
+    "mot": "puis",
+    "debut": 3.46,
+    "fin": 3.611
+  },
+  {
+    "mot": "corrigée.",
+    "debut": 3.634,
+    "fin": 4.156
+  },
+  {
+    "mot": "Un",
+    "debut": 4.331,
+    "fin": 4.458
+  },
+  {
+    "mot": "seul",
+    "debut": 4.516,
+    "fin": 4.656
+  },
+  {
+    "mot": "formulaire",
+    "debut": 4.69,
+    "fin": 5.201
+  },
+  {
+    "mot": ":",
+    "debut": 5.236,
+    "fin": 5.294
+  },
+  {
+    "mot": "le",
+    "debut": 5.445,
+    "fin": 5.55
+  },
+  {
+    "mot": "client,",
+    "debut": 5.584,
+    "fin": 6.014
+  },
+  {
+    "mot": "le",
+    "debut": 6.258,
+    "fin": 6.351
+  },
+  {
+    "mot": "produit,",
+    "debut": 6.409,
+    "fin": 6.896
+  },
+  {
+    "mot": "la",
+    "debut": 7.14,
+    "fin": 7.245
+  },
+  {
+    "mot": "date.",
+    "debut": 7.314,
+    "fin": 7.721
+  },
+  {
+    "mot": "Les",
+    "debut": 7.93,
+    "fin": 8.069
+  },
+  {
+    "mot": "montants",
+    "debut": 8.092,
+    "fin": 8.394
+  },
+  {
+    "mot": "se",
+    "debut": 8.417,
+    "fin": 8.498
+  },
+  {
+    "mot": "calculent",
+    "debut": 8.533,
+    "fin": 8.905
+  },
+  {
+    "mot": "seuls.",
+    "debut": 8.928,
+    "fin": 9.253
+  },
+  {
+    "mot": "Retenez",
+    "debut": 9.636,
+    "fin": 10.008
+  },
+  {
+    "mot": "une",
+    "debut": 10.031,
+    "fin": 10.124
+  },
+  {
+    "mot": "chose",
+    "debut": 10.147,
+    "fin": 10.484
+  },
+  {
+    "mot": ":",
+    "debut": 10.53,
+    "fin": 10.565
+  },
+  {
+    "mot": "le",
+    "debut": 10.844,
+    "fin": 10.948
+  },
+  {
+    "mot": "prix",
+    "debut": 10.995,
+    "fin": 11.192
+  },
+  {
+    "mot": "toutes",
+    "debut": 11.215,
+    "fin": 11.401
+  },
+  {
+    "mot": "taxes",
+    "debut": 11.424,
+    "fin": 11.68
+  },
+  {
+    "mot": "comprises",
+    "debut": 11.703,
+    "fin": 12.272
+  },
+  {
+    "mot": "ne",
+    "debut": 12.388,
+    "fin": 12.492
+  },
+  {
+    "mot": "se",
+    "debut": 12.539,
+    "fin": 12.632
+  },
+  {
+    "mot": "tape",
+    "debut": 12.69,
+    "fin": 12.887
+  },
+  {
+    "mot": "jamais",
+    "debut": 12.922,
+    "fin": 13.189
+  },
+  {
+    "mot": "à",
+    "debut": 13.212,
+    "fin": 13.235
+  },
+  {
+    "mot": "la",
+    "debut": 13.27,
+    "fin": 13.328
+  },
+  {
+    "mot": "main.",
+    "debut": 13.386,
+    "fin": 13.642
+  }
+]

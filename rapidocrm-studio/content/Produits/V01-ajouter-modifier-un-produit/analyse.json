@@ -1,0 +1,133 @@
+{
+  "duree": 60.48,
+  "resolution": [1920, 882],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Produits — liste vide" },
+    { "t": 1.72, "nom": "Modale « Ajouter un produit »" },
+    { "t": 43.48, "nom": "Produits — la fiche créée" }
+  ],
+  "actions": [
+    {
+      "t": 1.2,
+      "type": "clic",
+      "cible": "bouton « ajouter un produit »",
+      "zone": { "x": 0.85, "y": 0.22, "w": 0.14, "h": 0.1 },
+      "texte_visible": "Chercher · sélectionner une nature · ajouter un produit"
+    },
+    {
+      "t": 8.0,
+      "type": "saisie",
+      "cible": "champ Nom du produit",
+      "zone": { "x": 0.35, "y": 0.25, "w": 0.3, "h": 0.12 },
+      "texte_visible": "Nom du produit"
+    },
+    {
+      "t": 13.0,
+      "type": "selection",
+      "cible": "zone Image du produit, bouton parcourir",
+      "zone": { "x": 0.35, "y": 0.42, "w": 0.3, "h": 0.3 },
+      "texte_visible": "Image du produit — Sélectionner un fichier — parcourir"
+    },
+    {
+      "t": 20.0,
+      "type": "saisie",
+      "cible": "champs Date de début et Date de fin",
+      "zone": { "x": 0.35, "y": 0.03, "w": 0.3, "h": 0.28 },
+      "texte_visible": "Date de début · Date de fin"
+    },
+    {
+      "t": 26.0,
+      "type": "selection",
+      "cible": "champ Nature",
+      "zone": { "x": 0.35, "y": 0.3, "w": 0.3, "h": 0.13 },
+      "texte_visible": "Nature — Service"
+    },
+    {
+      "t": 32.0,
+      "type": "saisie",
+      "cible": "champs Prix ht, Pourcentage tva et Prix ttc",
+      "zone": { "x": 0.35, "y": 0.42, "w": 0.3, "h": 0.45 },
+      "texte_visible": "Prix ht · Pourcentage tva — tva france (5.00 %) · Prix ttc"
+    },
+    {
+      "t": 39.0,
+      "type": "saisie",
+      "cible": "champ Description du produit et question du programme de fidélité",
+      "zone": { "x": 0.35, "y": 0.3, "w": 0.3, "h": 0.45 },
+      "texte_visible": "Description du produit · Ajouter au programme de fidélité ? Oui / Non"
+    },
+    {
+      "t": 43.0,
+      "type": "validation",
+      "cible": "bouton ajouter produit",
+      "zone": { "x": 0.43, "y": 0.78, "w": 0.14, "h": 0.1 },
+      "texte_visible": "ajouter produit"
+    },
+    {
+      "t": 52.0,
+      "type": "ouverture",
+      "cible": "fiche du produit dans la liste, avec ses trois actions au survol",
+      "zone": { "x": 0.24, "y": 0.3, "w": 0.22, "h": 0.45 },
+      "texte_visible": "Pack site vitrine — voir · modifier · supprimer"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir la page Produits",
+      "debut": 0,
+      "fin": 5.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.0, "y": 0.02, "w": 1.0, "h": 0.96 }
+    },
+    {
+      "numero": 2,
+      "titre": "Nommer le produit et lui donner une image",
+      "debut": 5.0,
+      "fin": 18.0,
+      "actions": [1, 2],
+      "zone_focus": { "x": 0.33, "y": 0.05, "w": 0.34, "h": 0.9 }
+    },
+    {
+      "numero": 3,
+      "titre": "Fixer sa période et sa nature",
+      "debut": 18.0,
+      "fin": 30.0,
+      "actions": [3, 4],
+      "zone_focus": { "x": 0.33, "y": 0.02, "w": 0.34, "h": 0.9 }
+    },
+    {
+      "numero": 4,
+      "titre": "Renseigner le prix et la TVA",
+      "debut": 30.0,
+      "fin": 38.0,
+      "actions": [5],
+      "zone_focus": { "x": 0.33, "y": 0.35, "w": 0.34, "h": 0.6 }
+    },
+    {
+      "numero": 5,
+      "titre": "Décrire le produit",
+      "debut": 38.0,
+      "fin": 43.48,
+      "actions": [6, 7],
+      "zone_focus": { "x": 0.33, "y": 0.25, "w": 0.34, "h": 0.7 }
+    },
+    {
+      "numero": 6,
+      "titre": "Retrouver la fiche dans la liste",
+      "debut": 43.48,
+      "fin": 60.48,
+      "actions": [8],
+      "zone_focus": { "x": 0.2, "y": 0.15, "w": 0.5, "h": 0.75 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 60.48,
+      "zone": { "x": 0.7, "y": 0.02, "w": 0.3, "h": 0.14 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    }
+  ]
+}

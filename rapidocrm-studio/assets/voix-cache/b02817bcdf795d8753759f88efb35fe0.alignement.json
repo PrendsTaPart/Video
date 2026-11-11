@@ -1,0 +1,97 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "nom",
+    "debut": 0.186,
+    "fin": 0.313
+  },
+  {
+    "mot": "d'abord.",
+    "debut": 0.348,
+    "fin": 0.813
+  },
+  {
+    "mot": "C'est",
+    "debut": 1.138,
+    "fin": 1.324
+  },
+  {
+    "mot": "lui",
+    "debut": 1.347,
+    "fin": 1.509
+  },
+  {
+    "mot": "qu'on",
+    "debut": 1.556,
+    "fin": 1.672
+  },
+  {
+    "mot": "relira",
+    "debut": 1.718,
+    "fin": 1.962
+  },
+  {
+    "mot": "dans",
+    "debut": 2.009,
+    "fin": 2.113
+  },
+  {
+    "mot": "la",
+    "debut": 2.136,
+    "fin": 2.194
+  },
+  {
+    "mot": "fiche,",
+    "debut": 2.264,
+    "fin": 2.624
+  },
+  {
+    "mot": "alors",
+    "debut": 2.717,
+    "fin": 2.949
+  },
+  {
+    "mot": "autant",
+    "debut": 2.972,
+    "fin": 3.379
+  },
+  {
+    "mot": "qu'il",
+    "debut": 3.413,
+    "fin": 3.564
+  },
+  {
+    "mot": "dise",
+    "debut": 3.622,
+    "fin": 3.808
+  },
+  {
+    "mot": "ce",
+    "debut": 3.831,
+    "fin": 3.936
+  },
+  {
+    "mot": "que",
+    "debut": 3.994,
+    "fin": 4.063
+  },
+  {
+    "mot": "le",
+    "debut": 4.098,
+    "fin": 4.168
+  },
+  {
+    "mot": "fichier",
+    "debut": 4.214,
+    "fin": 4.516
+  },
+  {
+    "mot": "contient.",
+    "debut": 4.563,
+    "fin": 4.981
+  }
+]

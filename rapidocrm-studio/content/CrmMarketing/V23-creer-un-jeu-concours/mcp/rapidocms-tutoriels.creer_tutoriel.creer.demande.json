@@ -1,0 +1,48 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-un-jeu-concours",
+    "module": "06-crm-marketing",
+    "numero": 23,
+    "titre": "Créer un jeu concours",
+    "titre_court": "Jeu concours",
+    "accroche": "Ici, on part d'un modèle déjà fait.",
+    "explication": "On part de la fiche d'une entreprise, et on ressort avec un jeu personnalisé. La bibliothèque propose une roue, une carte à gratter ou un quiz. Ensuite, on règle l'apparence et les lots.\n\n1. Ouvrir les jeux depuis la fiche entreprise — Panneau Marketing de la fiche client.\n2. Choisir un modèle de jeu — Roue, carte à gratter ou quiz. Chacun annonce ses lots.\n3. Les trois étapes de personnalisation — Trois étapes : informations, apparence, validation.\n4. Régler l'apparence et voir l'aperçu — L'écran se coupe en deux : ce qu'on règle à gauche, ce que le client verra à droite. Image, texte, et l'aperçu suit.\n5. Décrire les lots à gagner — Chaque lot a un nom, un prix, et une chance de gagner. C'est elle qui règle la générosité.\n6. Revenir à la fiche — Puis on revient à la fiche du client.\n\nLes animations se succèdent. Pour retrouver celles du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir les jeux depuis la fiche entreprise",
+        "texte": "Panneau Marketing de la fiche client."
+      },
+      {
+        "titre": "Choisir un modèle de jeu",
+        "texte": "Roue, carte à gratter ou quiz. Chacun annonce ses lots."
+      },
+      {
+        "titre": "Les trois étapes de personnalisation",
+        "texte": "Trois étapes : informations, apparence, validation."
+      },
+      {
+        "titre": "Régler l'apparence et voir l'aperçu",
+        "texte": "L'écran se coupe en deux : ce qu'on règle à gauche, ce que le client verra à droite. Image, texte, et l'aperçu suit."
+      },
+      {
+        "titre": "Décrire les lots à gagner",
+        "texte": "Chaque lot a un nom, un prix, et une chance de gagner. C'est elle qui règle la générosité."
+      },
+      {
+        "titre": "Revenir à la fiche",
+        "texte": "Puis on revient à la fiche du client."
+      }
+    ],
+    "a_quoi_ca_sert": "Animer son fichier client avec une roue, une carte à gratter ou un quiz, sans rien coder : on part d'un modèle, on change l'image et le texte, on décrit les lots.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir ouvert la fiche d'une entreprise cliente",
+      "Savoir quels lots on met en jeu"
+    ]
+  },
+  "demande_le": "2026-09-08T12:21:25.212Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

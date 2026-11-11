@@ -1,0 +1,86 @@
+{
+  "duree": 63.7,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V11-creer-ses-templates-emails-sms/out/master-16x9.mp4",
+      "octets": 9759702
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V11-creer-ses-templates-emails-sms/out/master-9x16.mp4",
+      "octets": 7962235
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 10.1
+    },
+    {
+      "nom": "titre",
+      "debut": 10.1,
+      "fin": 22.7
+    },
+    {
+      "nom": "demo",
+      "debut": 22.7,
+      "fin": 45.9
+    },
+    {
+      "nom": "claude",
+      "debut": 45.9,
+      "fin": 59.4
+    },
+    {
+      "nom": "punchline",
+      "debut": 59.4,
+      "fin": 63.7
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Vous écrivez le même SMS dix fois par semaine. À chaque fois, vous le retapez."
+    },
+    {
+      "timecode": "00:10",
+      "titre": "Créer un template de SMS"
+    },
+    {
+      "timecode": "00:22",
+      "titre": "Ouvrir la page des templates SMS"
+    },
+    {
+      "timecode": "00:26",
+      "titre": "Nommer le template"
+    },
+    {
+      "timecode": "00:32",
+      "titre": "Écrire le message"
+    },
+    {
+      "timecode": "00:37",
+      "titre": "Ajouter le bouton et valider"
+    },
+    {
+      "timecode": "00:41",
+      "titre": "Retrouver le template dans la liste"
+    },
+    {
+      "timecode": "00:45",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:59",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 64s, hors de la fenêtre 80–170s."
+  ]
+}

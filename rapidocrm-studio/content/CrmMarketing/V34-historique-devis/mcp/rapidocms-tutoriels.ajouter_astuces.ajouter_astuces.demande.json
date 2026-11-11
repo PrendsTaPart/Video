@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-devis",
+    "astuces": [
+      {
+        "titre": "Deux couleurs de statut",
+        "texte": "Accepté en vert, En attente en orange : le tableau se lit d'un coup d'œil.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Le devis dit lui-même qu'il est périmé",
+        "texte": "L'alerte apparaît à l'ouverture, sans rien avoir à calculer.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Le chargement peut prendre quelques secondes",
+        "texte": "La page reste vide un instant avant que le tableau n'apparaisse : ce n'est pas une liste vide.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-10T06:21:13.481Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

@@ -1,0 +1,131 @@
+{
+  "duree": 25.73,
+  "resolution": [1920, 1020],
+  "fps": 60,
+  "ecrans": [
+    { "t": 0.0, "nom": "Fiche entreprise — point de départ" },
+    { "t": 4.0, "nom": "Carte de fidélité — assistant, étape Taille du template" },
+    { "t": 12.0, "nom": "Carte de fidélité — Design et paramétrage" },
+    { "t": 16.0, "nom": "Carte de fidélité — Validation, récapitulatif" },
+    { "t": 20.68, "nom": "Programmes de fidélité" }
+  ],
+  "actions": [
+    {
+      "t": 2.0,
+      "type": "ouverture",
+      "cible": "Fiche entreprise, panneau de droite",
+      "zone": { "x": 0.72, "y": 0.2, "w": 0.27, "h": 0.65 },
+      "texte_visible": "Communication · Finance · Marketing · Documentation"
+    },
+    {
+      "t": 5.0,
+      "type": "ouverture",
+      "cible": "Page Carte de fidélité",
+      "zone": { "x": 0.22, "y": 0.15, "w": 0.77, "h": 0.8 },
+      "texte_visible": "Carte de fidélité"
+    },
+    {
+      "t": 9.0,
+      "type": "selection",
+      "cible": "Les trois tailles de carte proposées",
+      "zone": { "x": 0.22, "y": 0.24, "w": 0.77, "h": 0.45 },
+      "texte_visible": "Carte de taille grand (cr100) 88 mm x 63 mm · Carte taille standard (cr80) 85,6 mm x 54 mm · Carte de petite taille (cr79) 84 mm x 52 mm · Épaisseur : 0.76 mm · Choisir · Suivant"
+    },
+    {
+      "t": 13.0,
+      "type": "selection",
+      "cible": "Modèles de carte, étape Design et paramétrage",
+      "zone": { "x": 0.24, "y": 0.35, "w": 0.72, "h": 0.5 },
+      "texte_visible": "Créez une carte de fidélité en choisissant l'un de nos modèles disponibles. · Choisir · Voir · Précédent · Suivant"
+    },
+    {
+      "t": 17.5,
+      "type": "ouverture",
+      "cible": "Récapitulatif de la carte",
+      "zone": { "x": 0.24, "y": 0.28, "w": 0.72, "h": 0.55 },
+      "texte_visible": "Vérifiez votre carte de fidélité avant de l'enregistrer. · Taille : Carte taille standard (cr80) · Dimensions 85,6 mm x 54 mm · Épaisseur 0.76 mm · Modèle : Modèle n°2 · Modifier"
+    },
+    {
+      "t": 19.07,
+      "type": "validation",
+      "cible": "Bouton Enregistrer",
+      "zone": { "x": 0.85, "y": 0.75, "w": 0.11, "h": 0.09 },
+      "texte_visible": "Enregistrer"
+    },
+    {
+      "t": 24.5,
+      "type": "ouverture",
+      "cible": "Page Programmes de fidélité",
+      "zone": { "x": 0.22, "y": 0.3, "w": 0.77, "h": 0.65 },
+      "texte_visible": "Programmes de fidélité · Créer un programme · Nombre de programmes 2 · Nombre de clients 1 · Nombre de points offerts 7 · Entreprise · Date de création · Nombre de clients · Points offerts · Gains offerts · Action"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir l'assistant de carte de fidélité",
+      "debut": 1.0,
+      "fin": 7.0,
+      "actions": [0, 1],
+      "zone_focus": { "x": 0.22, "y": 0.15, "w": 0.77, "h": 0.6 }
+    },
+    {
+      "numero": 2,
+      "titre": "Choisir la taille de la carte",
+      "debut": 7.0,
+      "fin": 12.0,
+      "actions": [2],
+      "zone_focus": { "x": 0.22, "y": 0.2, "w": 0.77, "h": 0.55 }
+    },
+    {
+      "numero": 3,
+      "titre": "Choisir le modèle de carte",
+      "debut": 12.0,
+      "fin": 16.0,
+      "actions": [3],
+      "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.74, "h": 0.55 }
+    },
+    {
+      "numero": 4,
+      "titre": "Relire le récapitulatif et enregistrer",
+      "debut": 16.0,
+      "fin": 20.68,
+      "actions": [4, 5],
+      "zone_focus": { "x": 0.23, "y": 0.25, "w": 0.74, "h": 0.62 }
+    },
+    {
+      "numero": 5,
+      "titre": "Retrouver la carte dans les programmes de fidélité",
+      "debut": 20.68,
+      "fin": 25.73,
+      "actions": [6],
+      "zone_focus": { "x": 0.22, "y": 0.28, "w": 0.77, "h": 0.68 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 25.73,
+      "zone": { "x": 0.0, "y": 0.0, "w": 1.0, "h": 0.15 },
+      "raison": "Fenêtre du navigateur : onglets, adresse locale 127.0.0.1:8000, extensions et bouton « Demander à Gemini ». Rien de tout cela n'appartient au produit."
+    },
+    {
+      "t": 0.0,
+      "fin": 25.73,
+      "zone": { "x": 0.79, "y": 0.14, "w": 0.21, "h": 0.13 },
+      "raison": "Photo et nom du titulaire du compte (Dupont lina)."
+    },
+    {
+      "t": 0.0,
+      "fin": 4.5,
+      "zone": { "x": 0.24, "y": 0.36, "w": 0.5, "h": 0.52 },
+      "raison": "Activités récentes de la fiche entreprise : photo et nom de l'utilisatrice sur chaque ligne."
+    },
+    {
+      "t": 23.0,
+      "fin": 25.73,
+      "zone": { "x": 0.22, "y": 0.7, "w": 0.16, "h": 0.28 },
+      "raison": "Colonne Entreprise du tableau des programmes : noms de clients réels (brasserie du quai, alexa)."
+    }
+  ]
+}

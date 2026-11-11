@@ -1,0 +1,53 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-un-jeu-concours",
+    "transcription": "Une roue à faire tourner, une carte à gratter : ça attire, mais ça se code, et c'est là que le projet meurt. Ici, on part d'un modèle déjà fait.\n\nOn part de la fiche d'une entreprise, et on ressort avec un jeu personnalisé. La bibliothèque propose une roue, une carte à gratter ou un quiz. Ensuite, on règle l'apparence et les lots.\n\nPanneau Marketing de la fiche client.\n\nRoue, carte à gratter ou quiz. Chacun annonce ses lots.\n\nTrois étapes : informations, apparence, validation.\n\nL'écran se coupe en deux : ce qu'on règle à gauche, ce que le client verra à droite. Image, texte, et l'aperçu suit.\n\nChaque lot a un nom, un prix, et une chance de gagner. C'est elle qui règle la générosité.\n\nPuis on revient à la fiche du client.\n\nLes animations se succèdent. Pour retrouver celles du mois, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nUn modèle, une image, trois lots : l'animation est en ligne avant la fin de la pause.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 8,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 20,
+        "titre": "Ouvrir les jeux depuis la fiche entreprise"
+      },
+      {
+        "debut": 22,
+        "titre": "Choisir un modèle de jeu"
+      },
+      {
+        "debut": 26,
+        "titre": "Les trois étapes de personnalisation"
+      },
+      {
+        "debut": 30,
+        "titre": "Régler l'apparence et voir l'aperçu"
+      },
+      {
+        "debut": 37,
+        "titre": "Décrire les lots à gagner"
+      },
+      {
+        "debut": 43,
+        "titre": "Revenir à la fiche"
+      },
+      {
+        "debut": 45,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 58,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T12:21:25.555Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

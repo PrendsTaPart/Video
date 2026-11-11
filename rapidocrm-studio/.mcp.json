@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "RapidoCRM": {
+      "type": "http",
+      "url": "https://crm.rapidosoftware.com/mcp"
+    },
+    "RapidoCMS": {
+      "type": "http",
+      "url": "https://cms.rapidosoftware.com/mcp"
+    },
+    "YouTube": {
+      "type": "http",
+      "url": "https://youtube-publisher-pro.lovable.app/mcp"
+    },
+    "RapidoCMS tutoriels": {
+      "type": "http",
+      "url": "A_RENSEIGNER_QUAND_LOVABLE_EST_LIVRE"
+    }
+  }
+}

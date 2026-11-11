@@ -1,0 +1,21 @@
+Le compte est créé. Le mail d'activation, lui, n'est jamais arrivé. Votre commercial se donne un mot de passe en une minute.
+
+On part de la page de connexion, et on ressort dans le tableau de bord du commercial. La procédure est la même dans deux cas : le mot de passe oublié, et le compte tout neuf dont le mail d'activation n'a pas pu partir. Le principe ne change pas : l'utilisateur demande un lien, le reçoit sur sa boîte, choisit son mot de passe. L'administrateur crée le compte, l'utilisateur choisit son mot de passe — les deux rôles restent séparés.
+
+Le commercial existe dans la liste. Il lui manque juste son mot de passe.
+
+Sur la page de connexion, le lien mot de passe oublié, sous le champ.
+
+On saisit l'adresse du compte, et on envoie le lien de réinitialisation.
+
+Le mail arrive dans la boîte : réinitialisation de votre mot de passe.
+
+Le lien ouvre la page de réinitialisation. Deux champs identiques, et on définit le nouveau mot de passe. Ce lien ne vaut que pour cette demande.
+
+Retour à la connexion, avec le bandeau qui confirme : votre mot de passe a été modifié. S'il n'apparaît pas, le changement n'est pas passé. On saisit l'adresse et le nouveau mot de passe.
+
+Et il est chez lui, sur son propre tableau de bord.
+
+L'accès est ouvert. Pour vérifier qui a bien un compte actif sans ouvrir chaque fiche, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.
+
+Un lien, un mot de passe, et votre commercial travaille.

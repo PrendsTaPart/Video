@@ -1,0 +1,102 @@
+{
+  "fonctionnalite": "Consulter l'historique des e-mails d'une entreprise",
+  "a_quoi_ca_sert": "Savoir ce qui a été écrit à un client, et quand. Le journal liste les envois, et chaque ligne se rouvre pour relire l'e-mail tel qu'il est parti.",
+  "pour_qui": "Gérant ou commercial qui vérifie un échange passé",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert l'historique de l'entreprise"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Colonnes du tableau",
+      "obligatoire": false,
+      "explication": "Entreprise, Nom, Fonction, Date et Action. Une ligne par e-mail envoyé."
+    },
+    {
+      "nom": "Icône œil",
+      "obligatoire": false,
+      "explication": "Le bouton de la colonne Action. Il rouvre l'e-mail dans une fenêtre."
+    },
+    {
+      "nom": "Fenêtre Mail",
+      "obligatoire": false,
+      "explication": "Objet, expéditeur, destinataire, contenu, et un bouton Supprimer."
+    },
+    {
+      "nom": "Envoyer un email",
+      "obligatoire": false,
+      "explication": "Le bouton en haut à droite du tableau : on repart d'ici pour un nouvel envoi."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "get_interaction_stats",
+      "role": "Statistiques d'interactions par type — e-mails, SMS, appels, rendez-vous — sur une période, éventuellement pour une seule entreprise. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["entreprise_id", "periode"],
+      "exemple_appel": { "periode": "month" }
+    },
+    {
+      "nom": "list_templates_email",
+      "role": "Liste les modèles d'e-mail disponibles pour les campagnes et les workflows. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["search", "limit"],
+      "exemple_appel": { "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Relire l'e-mail avant de rappeler : l'objet ne dit pas tout, le corps si.",
+    "Utiliser le champ Chercher plutôt que de faire défiler quand les envois s'accumulent."
+  ],
+  "erreurs_frequentes": [
+    "Confondre l'œil et la suppression : l'œil ouvre, le bouton Supprimer se trouve à l'intérieur de la fenêtre.",
+    "Chercher le journal dans la boîte mail : il vit dans l'historique de l'entreprise."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Vérifier ce qui a été envoyé",
+      "contexte": "Le client dit ne pas avoir reçu le devis.",
+      "action": "Ouvrez l'historique des e-mails, repérez la ligne à la bonne date et cliquez sur l'œil.",
+      "resultat_attendu": "L'e-mail se rouvre avec son objet, son destinataire et son contenu."
+    },
+    {
+      "titre": "Repartir sur un nouvel envoi",
+      "contexte": "Il faut relancer le même client.",
+      "action": "Depuis le journal, cliquez sur « Envoyer un email » en haut à droite.",
+      "resultat_attendu": "Le formulaire d'envoi s'ouvre depuis le journal."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Une ligne par envoi",
+      "contenu": "Le tableau garde la date de chaque e-mail : c'est la trace, pas un brouillon.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "L'objet en premier",
+      "contenu": "La fenêtre affiche l'objet en haut : on sait de quoi il s'agit avant de lire le corps.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le journal sert aussi de point de départ",
+      "contenu": "Le bouton « Envoyer un email » évite de revenir à la fiche.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Compter les e-mails envoyés",
+    "texte": "Donne-moi les statistiques d'interactions du mois pour l'entreprise numéro [identifiant].",
+    "variables": ["identifiant"],
+    "outil_mcp": "get_interaction_stats"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:02 à 00:08 — bouton Consulter puis tableau des e-mails",
+    "a_quoi_ca_sert": "frames 00:08 et 00:14 — tableau des envois, puis fenêtre Mail",
+    "champs_cles": "frames 00:08 et 00:14",
+    "outils_mcp": "schémas get_interaction_stats et list_templates_email",
+    "erreurs_frequentes": "frames 00:08 (colonne Action) et 00:14 (bouton Supprimer dans la fenêtre)",
+    "cas_usage": "frames 00:08 à 00:16",
+    "astuces": "frames 00:08 et 00:14"
+  },
+  "a_verifier": []
+}

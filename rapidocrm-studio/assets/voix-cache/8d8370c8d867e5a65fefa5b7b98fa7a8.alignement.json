@@ -1,0 +1,242 @@
+[
+  {
+    "mot": "Puis",
+    "debut": 0,
+    "fin": 0.36
+  },
+  {
+    "mot": "le",
+    "debut": 0.395,
+    "fin": 0.476
+  },
+  {
+    "mot": "créneau.",
+    "debut": 0.511,
+    "fin": 0.929
+  },
+  {
+    "mot": "Deux",
+    "debut": 0.998,
+    "fin": 1.196
+  },
+  {
+    "mot": "champs",
+    "debut": 1.219,
+    "fin": 1.451
+  },
+  {
+    "mot": ":",
+    "debut": 1.486,
+    "fin": 1.521
+  },
+  {
+    "mot": "l'heure",
+    "debut": 1.614,
+    "fin": 1.834
+  },
+  {
+    "mot": "de",
+    "debut": 1.858,
+    "fin": 1.939
+  },
+  {
+    "mot": "début,",
+    "debut": 1.985,
+    "fin": 2.485
+  },
+  {
+    "mot": "l'heure",
+    "debut": 2.659,
+    "fin": 2.891
+  },
+  {
+    "mot": "de",
+    "debut": 2.914,
+    "fin": 3.007
+  },
+  {
+    "mot": "fin.",
+    "debut": 3.088,
+    "fin": 3.413
+  },
+  {
+    "mot": "Le",
+    "debut": 3.622,
+    "fin": 3.727
+  },
+  {
+    "mot": "formulaire",
+    "debut": 3.785,
+    "fin": 4.226
+  },
+  {
+    "mot": "accepte",
+    "debut": 4.249,
+    "fin": 4.76
+  },
+  {
+    "mot": "le",
+    "debut": 4.83,
+    "fin": 4.911
+  },
+  {
+    "mot": "matin",
+    "debut": 4.969,
+    "fin": 5.283
+  },
+  {
+    "mot": "comme",
+    "debut": 5.364,
+    "fin": 5.561
+  },
+  {
+    "mot": "le",
+    "debut": 5.584,
+    "fin": 5.654
+  },
+  {
+    "mot": "soir,",
+    "debut": 5.712,
+    "fin": 6.153
+  },
+  {
+    "mot": "alors",
+    "debut": 6.281,
+    "fin": 6.664
+  },
+  {
+    "mot": "on",
+    "debut": 6.687,
+    "fin": 6.838
+  },
+  {
+    "mot": "relit.",
+    "debut": 6.885,
+    "fin": 7.279
+  },
+  {
+    "mot": "Dix",
+    "debut": 7.488,
+    "fin": 7.721
+  },
+  {
+    "mot": "heures,",
+    "debut": 7.779,
+    "fin": 8.046
+  },
+  {
+    "mot": "dix",
+    "debut": 8.173,
+    "fin": 8.359
+  },
+  {
+    "mot": "heures",
+    "debut": 8.394,
+    "fin": 8.545
+  },
+  {
+    "mot": "quarante-cinq",
+    "debut": 8.568,
+    "fin": 9.125
+  },
+  {
+    "mot": ":",
+    "debut": 9.276,
+    "fin": 9.3
+  },
+  {
+    "mot": "le",
+    "debut": 9.543,
+    "fin": 9.625
+  },
+  {
+    "mot": "rendez-vous",
+    "debut": 9.671,
+    "fin": 10.077
+  },
+  {
+    "mot": "est",
+    "debut": 10.101,
+    "fin": 10.17
+  },
+  {
+    "mot": "borné,",
+    "debut": 10.194,
+    "fin": 10.751
+  },
+  {
+    "mot": "et",
+    "debut": 10.925,
+    "fin": 11.064
+  },
+  {
+    "mot": "il",
+    "debut": 11.088,
+    "fin": 11.134
+  },
+  {
+    "mot": "tiendra",
+    "debut": 11.204,
+    "fin": 11.471
+  },
+  {
+    "mot": "la",
+    "debut": 11.529,
+    "fin": 11.598
+  },
+  {
+    "mot": "place",
+    "debut": 11.668,
+    "fin": 11.935
+  },
+  {
+    "mot": "qu'on",
+    "debut": 11.97,
+    "fin": 12.109
+  },
+  {
+    "mot": "lui",
+    "debut": 12.156,
+    "fin": 12.237
+  },
+  {
+    "mot": "a",
+    "debut": 12.283,
+    "fin": 12.318
+  },
+  {
+    "mot": "donnée",
+    "debut": 12.388,
+    "fin": 12.701
+  },
+  {
+    "mot": "dans",
+    "debut": 12.725,
+    "fin": 12.852
+  },
+  {
+    "mot": "l'agenda,",
+    "debut": 12.875,
+    "fin": 13.514
+  },
+  {
+    "mot": "ni",
+    "debut": 13.688,
+    "fin": 13.827
+  },
+  {
+    "mot": "plus",
+    "debut": 13.874,
+    "fin": 14.06
+  },
+  {
+    "mot": "ni",
+    "debut": 14.083,
+    "fin": 14.176
+  },
+  {
+    "mot": "moins.",
+    "debut": 14.222,
+    "fin": 14.524
+  }
+]

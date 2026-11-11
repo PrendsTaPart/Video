@@ -1,0 +1,29 @@
+{
+  "outils": [
+    {
+      "nom": "get_revenue_summary",
+      "description": "Résumé du chiffre d'affaires à partir des factures et devis. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "periode",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": "Période"
+        }
+      ]
+    }
+  ],
+  "divergences": [
+    "Divergence : « champ E-mail » (22.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Informations de la carte » (34.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « date d'expiration et CVC » (44.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma.",
+    "Divergence : « Nom du titulaire et Pays ou région » (52.0s) ne correspond à aucun paramètre des outils MCP retenus — à décrire depuis la frame, pas depuis un schéma."
+  ]
+}

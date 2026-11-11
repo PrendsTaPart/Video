@@ -1,0 +1,102 @@
+{
+  "fonctionnalite": "Configurer la boîte mail de la société (IMAP)",
+  "a_quoi_ca_sert": "C'est ce réglage qui ouvre la page Boîte mail du CRM. Une fois la messagerie de la société branchée, vous écrivez à vos clients et vous leur envoyez devis et factures depuis RapidoCRM, sans repasser par votre webmail.",
+  "pour_qui": "L'administrateur de la société — seul un utilisateur ayant ce rôle peut configurer le profil de la compagnie",
+  "prerequis": [
+    "Être connecté à son espace avec le rôle administrateur",
+    "Disposer d'un compte Gmail dédié à la société",
+    "Avoir activé la validation en deux étapes sur ce compte Google",
+    "Avoir généré un mot de passe d'application sur myaccount.google.com/apppasswords"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Mot de passe imap",
+      "obligatoire": true,
+      "explication": "Le mot de passe d'application généré côté Google, pas le mot de passe habituel du compte. Il s'affiche masqué."
+    },
+    {
+      "nom": "Hôte imap",
+      "obligatoire": true,
+      "explication": "Le serveur de réception. Pour un compte Gmail : imap.gmail.com."
+    },
+    {
+      "nom": "Port imap",
+      "obligatoire": true,
+      "explication": "Le port de connexion. Pour Gmail en SSL : 993."
+    },
+    {
+      "nom": "Chiffrement imap",
+      "obligatoire": true,
+      "explication": "Le mode de chiffrement de la liaison. Pour Gmail : ssl."
+    },
+    {
+      "nom": "Validation certificat imap",
+      "obligatoire": true,
+      "explication": "Contrôle du certificat du serveur. Valeur attendue : true."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_contacts",
+      "role": "Liste les contacts de l'entreprise — ceux à qui la boîte mail servira à écrire. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [
+        "limit",
+        "q",
+        "statut",
+        "periode"
+      ],
+      "exemple_appel": {
+        "limit": 5
+      }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Dédiez un compte Gmail à la société plutôt que d'utiliser une adresse personnelle : c'est cette adresse que vos clients verront.",
+    "Générez le mot de passe d'application sous un nom explicite, « CRM » par exemple, pour savoir quoi révoquer le jour venu."
+  ],
+  "erreurs_frequentes": [
+    "Coller le mot de passe habituel du compte Google au lieu du mot de passe d'application : la connexion est refusée.",
+    "Chercher les mots de passe d'application sans avoir activé la validation en deux étapes — la page n'existe pas tant que celle-ci n'est pas active."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Envoyer ses factures depuis le CRM",
+      "contexte": "Vos factures partent aujourd'hui depuis votre webmail, à la main, sans trace dans le CRM.",
+      "resultat_attendu": "La page Boîte mail s'ouvre, et les envois de devis et de factures partent de l'adresse de la société."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Un mot de passe d'application, pas le vôtre",
+      "contenu": "Google ne laisse pas une application tierce utiliser votre mot de passe de compte. Le mot de passe d'application se génère sur myaccount.google.com/apppasswords et ne sert qu'à ça.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Les quatre autres champs ne changent pas",
+      "contenu": "Pour un compte Gmail, hôte imap.gmail.com, port 993, chiffrement ssl et validation certificat true conviennent tels quels.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Révoquer sans changer de mot de passe",
+      "contenu": "Un mot de passe d'application se supprime côté Google sans toucher au compte. C'est la bonne façon de couper l'accès du CRM à la messagerie.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver ses contacts avant d'écrire",
+    "texte": "Liste-moi mes [nombre] derniers contacts avec leur adresse e-mail.",
+    "variables": [
+      "nombre"
+    ],
+    "outil_mcp": "list_contacts"
+  },
+  "sources": {
+    "champs_cles": "frames 00:00 à 00:12 de l'enregistrement (libellés de la section « Boîte mail — Paramètres imap de la messagerie ») et document « Configuration du mail de la compagnie pour le CRM », étape 4",
+    "prerequis": "document « Configuration du mail de la compagnie pour le CRM », section Prérequis et étapes 1 à 3",
+    "erreurs_frequentes": "document fourni, étapes 2 et 3 : la page des mots de passe d'application n'est accessible qu'une fois la validation en deux étapes activée",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne configure la messagerie : les paramètres imap se saisissent uniquement dans cette section. Le prompt proposé porte sur les destinataires, en aval.",
+    "a_quoi_ca_sert": "document « Configuration du mail de la compagnie pour le CRM », préambule : « Ce compte sera utilisé pour accéder à la page Boîte mail du CRM, communiquer avec les clients et leur envoyer des factures et des devis. »"
+  },
+  "a_verifier": []
+}

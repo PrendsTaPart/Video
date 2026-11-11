@@ -1,0 +1,21 @@
+Votre espace est ouvert, et la moitié des boutons ne répond pas. Un règlement, et le CRM vous dit quoi configurer ensuite.
+
+On part du tableau de bord, et on ressort avec un espace débloqué et une feuille de route. Le règlement passe par une page Stripe : vous y lisez ce que vous payez, vous renseignez votre adresse et votre carte. Et une fois le paiement passé, RapidoCRM ne vous laisse pas devant un écran vide : une liste s'ouvre et vous dit exactement ce qu'il reste à remplir pour que les factures, la boîte mail, les paiements et les campagnes fonctionnent.
+
+Voici le tableau de bord, et le menu de gauche : clients, pipeline, boîte mail, agenda, événements, tâches. Tout est là, mais tout n'est pas encore ouvert.
+
+La page de règlement annonce l'offre et son montant : abonnement mensuel Premium, cent quarante-neuf euros. On sait ce qu'on engage avant de sortir sa carte.
+
+L'adresse d'abord : c'est là qu'arriveront le reçu et les avis d'échéance. Mettez-en une que vous consultez vraiment.
+
+Puis la carte : le numéro, la date d'expiration au format mois barre année, et le cryptogramme au dos. La page est celle de Stripe, vos coordonnées ne passent pas par le CRM.
+
+Le nom du titulaire, exactement celui inscrit sur la carte, et le pays de facturation.
+
+La case du dessous est facultative : elle mémorise la carte pour les prochains règlements. Puis Payer.
+
+Et au retour, la liste de ce qu'il reste à configurer. Suivez-la dans l'ordre.
+
+Votre espace est ouvert. Pour prendre sa mesure sans ouvrir cinq pages, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.
+
+Payé une fois, guidé ensuite. La liste fait le reste.

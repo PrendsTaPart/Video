@@ -1,0 +1,109 @@
+{
+  "fonctionnalite": "Ajouter un commercial à son équipe",
+  "a_quoi_ca_sert": "Créer la fiche d'un membre de l'équipe commerciale : son identité, ses coordonnées, sa photo, et les objectifs mensuels sur lesquels il sera suivi. C'est cette fiche qui lui ouvre un accès au logiciel et qui alimente ensuite son suivi de performance.",
+  "pour_qui": "Gérant ou administrateur qui constitue son équipe commerciale",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Disposer de l'adresse e-mail professionnelle du commercial",
+    "Avoir en tête les objectifs mensuels à lui fixer"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Nom et Prénom",
+      "obligatoire": true,
+      "explication": "L'identité du commercial, telle qu'elle apparaîtra sur sa fiche et dans les listes."
+    },
+    {
+      "nom": "Fonction",
+      "obligatoire": false,
+      "explication": "Son intitulé de poste, affiché sous son nom sur la fiche — « commercial terrain » par exemple."
+    },
+    {
+      "nom": "Email",
+      "obligatoire": true,
+      "explication": "L'adresse qui reçoit le mail d'activation du compte. C'est aussi son identifiant de connexion."
+    },
+    {
+      "nom": "Numéro, Adresse, Code postal",
+      "obligatoire": false,
+      "explication": "Les coordonnées du commercial, regroupées sur sa fiche."
+    },
+    {
+      "nom": "Image",
+      "obligatoire": false,
+      "explication": "Sa photo, choisie par le bouton parcourir. Elle l'identifie dans la liste des commerciaux."
+    },
+    {
+      "nom": "Objectifs mensuels de l'utilisateur",
+      "obligatoire": false,
+      "explication": "Quatre compteurs : nombre de sms envoyés, d'emails envoyés, de rendez-vous organisés et de contrats signés. Ce sont eux qui servent de base au pourcentage d'objectifs atteints affiché sur sa fiche."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_commerciaux",
+      "role": "Liste les commerciaux avec leur statut actif ou inactif et leurs objectifs. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["q", "statut", "limit"],
+      "exemple_appel": { "limit": 10 }
+    },
+    {
+      "nom": "get_user_performance",
+      "role": "Performance d'un commercial ou de toute l'équipe : objectifs, envois, taux. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["id"],
+      "exemple_appel": {}
+    }
+  ],
+  "bonnes_pratiques": [
+    "Renseignez une adresse e-mail que le commercial relève vraiment : c'est là qu'arrive son mail d'activation, et c'est son identifiant de connexion.",
+    "Fixez les objectifs mensuels dès la création : la fiche affiche ensuite un pourcentage d'atteinte, qui n'a de sens que si les compteurs sont remplis."
+  ],
+  "erreurs_frequentes": [
+    "Créer le commercial sans avoir branché la boîte mail de la société : le compte est bien créé, mais le mail d'activation ne part pas.",
+    "Laisser les objectifs mensuels vides, et se retrouver avec une fiche de suivi qui n'affiche rien à mesurer."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Ouvrir un accès à une nouvelle recrue",
+      "contexte": "Un commercial rejoint l'équipe et doit pouvoir travailler dans le logiciel dès lundi.",
+      "resultat_attendu": "Sa fiche existe, il reçoit son mail d'activation et apparaît dans la liste des commerciaux."
+    },
+    {
+      "titre": "Suivre la production de l'équipe",
+      "contexte": "Vous voulez comparer ce que chacun réalise à ce qui lui a été demandé.",
+      "resultat_attendu": "Chaque fiche porte ses objectifs mensuels, et le pourcentage d'atteinte se calcule tout seul."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le mail d'activation dépend de votre boîte mail",
+      "contenu": "Si les identifiants de la messagerie de la société sont refusés, le commercial est créé mais son mail ne part pas. Un bandeau vous le dit, et propose la sortie de secours : il définit son mot de passe lui-même via « mot de passe oublié ».",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Quatre compteurs, pas un de plus",
+      "contenu": "Sms envoyés, emails envoyés, rendez-vous organisés, contrats signés. C'est tout ce que le logiciel mesure — inutile de chercher un objectif de chiffre d'affaires ici.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "La photo n'est pas décorative",
+      "contenu": "Elle identifie le commercial d'un coup d'œil dans la liste. Sur une équipe de dix, ça va plus vite que de lire dix noms.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Faire le point sur son équipe",
+    "texte": "Liste-moi mes commerciaux avec leur statut et leurs objectifs, les [nombre] premiers.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_commerciaux"
+  },
+  "sources": {
+    "champs_cles": "frames 00:06 à 00:52 de l'enregistrement : modale « Ajouter un utilisateur », sections « Informations personnelles » (Nom, Prénom, Fonction, Email, Numéro, Adresse, Code postal, Image) et « Objectifs mensuels de l'utilisateur » (Nombre de sms envoyés, Nombre d'emails envoyés, Nombre de rendez-vous organisés, Nombre de contrats signés)",
+    "a_quoi_ca_sert": "frames 00:00 et 00:57 : page « Commerciaux » vide au départ — « Votre liste de commerciaux ne contient encore aucune fiche » — puis fiche créée avec fonction, statut « Disponible » et bouton « voir profil »",
+    "erreurs_frequentes": "frame 00:57 : bandeau « Le commercial a été créé, mais l'email d'activation n'a pas pu être envoyé. les identifiants de la boîte mail ont été refusés. vérifiez l'email et le mot de passe d'application dans profil. en attendant, il peut définir son mot de passe via « mot de passe oublié ». »",
+    "astuces": "même bandeau, frame 00:57, et section « Objectifs mensuels de l'utilisateur » des frames 00:42 à 00:52",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne crée un commercial : la fiche se saisit uniquement dans cette modale. Les prompts proposés portent sur la lecture de l'équipe, en aval."
+  },
+  "a_verifier": []
+}

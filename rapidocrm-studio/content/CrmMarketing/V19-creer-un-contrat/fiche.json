@@ -1,0 +1,103 @@
+{
+  "fonctionnalite": "Créer un contrat depuis un modèle, sur la fiche d'une entreprise",
+  "a_quoi_ca_sert": "Envoyer un contrat à un client en partant d'un modèle prêt à l'emploi : on choisit le modèle, on borne les dates, on prend un modèle d'e-mail, et le contrat part.",
+  "pour_qui": "Gérant ou commercial qui contractualise avec un client existant",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert la fiche d'une entreprise cliente",
+    "Avoir au moins un modèle de contrat dans la bibliothèque"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Modèle de contrat",
+      "obligatoire": true,
+      "explication": "La bibliothèque annonce le nombre de modèles disponibles ; chaque carte porte un titre, un résumé et un bouton Choisir."
+    },
+    {
+      "nom": "Nom du destinataire",
+      "obligatoire": true,
+      "explication": "Prérempli avec l'adresse du client de la fiche. C'est à cette adresse que le contrat part."
+    },
+    {
+      "nom": "Date de début et Date de fin",
+      "obligatoire": true,
+      "explication": "Les deux bornes de validité du contrat."
+    },
+    {
+      "nom": "Choisir template mail",
+      "obligatoire": true,
+      "explication": "Le modèle d'e-mail qui portera le contrat, choisi dans une liste déroulante."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_contrat_templates",
+      "role": "Liste les modèles de contrat disponibles, avec recherche par titre. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["search", "limit"],
+      "exemple_appel": { "limit": 10 }
+    },
+    {
+      "nom": "list_contrats",
+      "role": "Liste les contrats clients, filtrables par statut, par entreprise et par dates. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["statut", "entreprise_id", "date_debut", "date_fin", "q", "limit"],
+      "exemple_appel": { "statut": "en_attente", "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Lire le résumé sous le titre du modèle avant de le choisir : il dit ce que le contrat couvre.",
+    "Fixer une date de fin cohérente avec la prestation : c'est elle qui déclenchera le renouvellement."
+  ],
+  "erreurs_frequentes": [
+    "Modifier le destinataire alors qu'il vient de la fiche : le contrat part à cette adresse-là.",
+    "Cliquer sur Envoyer sans avoir choisi de modèle d'e-mail : le contrat a besoin d'un message pour partir."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Contractualiser une prestation web",
+      "contexte": "Le devis est accepté, il faut envoyer le contrat.",
+      "action": "Ouvrez Créer un contrat, choisissez « Contrat de prestation web », fixez les dates, prenez un modèle d'e-mail et envoyez.",
+      "resultat_attendu": "Le bandeau « Contrat est envoyé avec succès » confirme l'envoi."
+    },
+    {
+      "titre": "Poser un contrat pluriannuel",
+      "contexte": "L'accord court sur plus d'un an.",
+      "action": "Renseignez une date de fin en 2027 dans le formulaire du contrat.",
+      "resultat_attendu": "Les deux bornes s'affichent dans le formulaire avant l'envoi."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "La bibliothèque dit combien de modèles existent",
+      "contenu": "La ligne « 5 modèle(s) disponible(s) » chiffre la bibliothèque, et un champ de recherche filtre les cartes.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Un formulaire court",
+      "contenu": "Une fois le modèle choisi, il ne reste que quatre champs : destinataire, deux dates, modèle d'e-mail.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Le destinataire vient de la fiche",
+      "contenu": "L'adresse est reprise du client ouvert : rien à retaper, rien à confondre.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver les contrats en attente",
+    "texte": "Liste-moi mes [nombre] contrats en attente avec leur destinataire et leurs dates.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_contrats"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:04 à 00:07 — panneau Finance puis bibliothèque « Choisir un modèle de contrat »",
+    "a_quoi_ca_sert": "frames 00:11 à 00:34 — formulaire du contrat puis bandeau de confirmation",
+    "champs_cles": "frames 00:06, 00:11, 00:17, 00:23 et 00:29",
+    "outils_mcp": "schémas list_contrat_templates et list_contrats",
+    "erreurs_frequentes": "frames 00:11 (destinataire prérempli) et 00:29 (liste des modèles d'e-mail)",
+    "cas_usage": "frames 00:06 à 00:34 — « Contrat de prestation web », 28/08/2026 → 28/10/2027",
+    "astuces": "frames 00:06 et 00:11"
+  },
+  "a_verifier": []
+}

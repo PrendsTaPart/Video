@@ -1,0 +1,127 @@
+{
+  "duree": 34.88,
+  "resolution": [1920, 882],
+  "fps": 30,
+  "ecrans": [
+    { "t": 0, "nom": "Commerciaux — liste" },
+    { "t": 6.0, "nom": "Profil du commercial — objectifs et progression" },
+    { "t": 10.5, "nom": "Modale Paramètres" },
+    { "t": 19.0, "nom": "Objectifs — modifier les objectifs" },
+    { "t": 30.0, "nom": "Commerciaux — liste" }
+  ],
+  "actions": [
+    {
+      "t": 3.0,
+      "type": "clic",
+      "cible": "bouton « voir profil » de la fiche du commercial",
+      "zone": { "x": 0.29, "y": 0.82, "w": 0.12, "h": 0.09 },
+      "texte_visible": "voir profil"
+    },
+    {
+      "t": 8.0,
+      "type": "ouverture",
+      "cible": "page Profil : compteurs et pourcentage des objectifs atteints",
+      "zone": { "x": 0.47, "y": 0.25, "w": 0.52, "h": 0.7 },
+      "texte_visible": "Nombre de sms envoyés · Nombre d'email envoyé · Pourcentage des objectifs mensuels atteints"
+    },
+    {
+      "t": 11.0,
+      "type": "clic",
+      "cible": "roue crantée de la fiche, puis modale Paramètres",
+      "zone": { "x": 0.35, "y": 0.1, "w": 0.3, "h": 0.8 },
+      "texte_visible": "Paramètres — modifier le profil · modifier les objectifs · consulter le portefeuille clients · supprimer l'utilisateur"
+    },
+    {
+      "t": 16.0,
+      "type": "selection",
+      "cible": "entrée « modifier les objectifs »",
+      "zone": { "x": 0.4, "y": 0.45, "w": 0.21, "h": 0.09 },
+      "texte_visible": "modifier les objectifs"
+    },
+    {
+      "t": 22.0,
+      "type": "saisie",
+      "cible": "les quatre compteurs de la page Objectifs",
+      "zone": { "x": 0.24, "y": 0.48, "w": 0.72, "h": 0.35 },
+      "texte_visible": "Nombre de sms envoyés · Nombre d'emails envoyés · Nombre de rendez-vous organisés · Nombre de contrats signés"
+    },
+    {
+      "t": 28.0,
+      "type": "validation",
+      "cible": "bouton modifier",
+      "zone": { "x": 0.55, "y": 0.86, "w": 0.1, "h": 0.1 },
+      "texte_visible": "modifier"
+    },
+    {
+      "t": 32.0,
+      "type": "ouverture",
+      "cible": "retour à la liste des commerciaux",
+      "zone": { "x": 0.22, "y": 0.05, "w": 0.78, "h": 0.9 },
+      "texte_visible": "Commerciaux"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir la fiche du commercial",
+      "debut": 0,
+      "fin": 6.0,
+      "actions": [0],
+      "zone_focus": { "x": 0.0, "y": 0.02, "w": 1.0, "h": 0.96 }
+    },
+    {
+      "numero": 2,
+      "titre": "Lire sa progression",
+      "debut": 6.0,
+      "fin": 10.5,
+      "actions": [1],
+      "zone_focus": { "x": 0.45, "y": 0.2, "w": 0.54, "h": 0.78 }
+    },
+    {
+      "numero": 3,
+      "titre": "Ouvrir les paramètres de la fiche",
+      "debut": 10.5,
+      "fin": 16.0,
+      "actions": [2],
+      "zone_focus": { "x": 0.33, "y": 0.08, "w": 0.34, "h": 0.85 }
+    },
+    {
+      "numero": 4,
+      "titre": "Choisir « modifier les objectifs »",
+      "debut": 16.0,
+      "fin": 19.0,
+      "actions": [3],
+      "zone_focus": { "x": 0.36, "y": 0.35, "w": 0.29, "h": 0.28 }
+    },
+    {
+      "numero": 5,
+      "titre": "Corriger les quatre compteurs",
+      "debut": 19.0,
+      "fin": 30.0,
+      "actions": [4, 5],
+      "zone_focus": { "x": 0.22, "y": 0.42, "w": 0.76, "h": 0.5 }
+    },
+    {
+      "numero": 6,
+      "titre": "Enregistrer et revenir à la liste",
+      "debut": 30.0,
+      "fin": 34.88,
+      "actions": [6],
+      "zone_focus": { "x": 0.0, "y": 0.02, "w": 1.0, "h": 0.96 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0,
+      "fin": 34.88,
+      "zone": { "x": 0.7, "y": 0.02, "w": 0.3, "h": 0.14 },
+      "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête du CRM"
+    },
+    {
+      "t": 6.0,
+      "fin": 19.0,
+      "zone": { "x": 0.23, "y": 0.55, "w": 0.24, "h": 0.36 },
+      "raison": "Adresse e-mail, numéro de téléphone et adresse postale du commercial sur sa fiche de profil"
+    }
+  ]
+}

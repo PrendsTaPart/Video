@@ -1,0 +1,10 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "publier_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-un-devis"
+  },
+  "demande_le": "2026-09-07T08:18:21.296Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

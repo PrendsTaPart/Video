@@ -1,0 +1,172 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "part",
+    "debut": 0.209,
+    "fin": 0.348
+  },
+  {
+    "mot": "de",
+    "debut": 0.383,
+    "fin": 0.441
+  },
+  {
+    "mot": "l'assistant",
+    "debut": 0.476,
+    "fin": 0.848
+  },
+  {
+    "mot": "de",
+    "debut": 0.871,
+    "fin": 0.917
+  },
+  {
+    "mot": "carte",
+    "debut": 0.964,
+    "fin": 1.138
+  },
+  {
+    "mot": "de",
+    "debut": 1.161,
+    "fin": 1.231
+  },
+  {
+    "mot": "fidélité,",
+    "debut": 1.289,
+    "fin": 1.985
+  },
+  {
+    "mot": "et",
+    "debut": 2.159,
+    "fin": 2.299
+  },
+  {
+    "mot": "on",
+    "debut": 2.345,
+    "fin": 2.415
+  },
+  {
+    "mot": "ressort",
+    "debut": 2.485,
+    "fin": 2.891
+  },
+  {
+    "mot": "avec",
+    "debut": 2.914,
+    "fin": 3.123
+  },
+  {
+    "mot": "une",
+    "debut": 3.274,
+    "fin": 3.402
+  },
+  {
+    "mot": "carte",
+    "debut": 3.437,
+    "fin": 3.68
+  },
+  {
+    "mot": "enregistrée.",
+    "debut": 3.704,
+    "fin": 4.319
+  },
+  {
+    "mot": "Trois",
+    "debut": 4.4,
+    "fin": 4.679
+  },
+  {
+    "mot": "étapes",
+    "debut": 4.748,
+    "fin": 5.097
+  },
+  {
+    "mot": ":",
+    "debut": 5.143,
+    "fin": 5.178
+  },
+  {
+    "mot": "la",
+    "debut": 5.329,
+    "fin": 5.433
+  },
+  {
+    "mot": "taille,",
+    "debut": 5.503,
+    "fin": 5.851
+  },
+  {
+    "mot": "le",
+    "debut": 6.002,
+    "fin": 6.084
+  },
+  {
+    "mot": "modèle,",
+    "debut": 6.13,
+    "fin": 6.583
+  },
+  {
+    "mot": "la",
+    "debut": 6.734,
+    "fin": 6.815
+  },
+  {
+    "mot": "relecture.",
+    "debut": 6.873,
+    "fin": 7.477
+  },
+  {
+    "mot": "La",
+    "debut": 7.721,
+    "fin": 7.837
+  },
+  {
+    "mot": "barre",
+    "debut": 7.895,
+    "fin": 8.069
+  },
+  {
+    "mot": "du",
+    "debut": 8.092,
+    "fin": 8.185
+  },
+  {
+    "mot": "haut",
+    "debut": 8.208,
+    "fin": 8.324
+  },
+  {
+    "mot": "dit",
+    "debut": 8.348,
+    "fin": 8.464
+  },
+  {
+    "mot": "toujours",
+    "debut": 8.499,
+    "fin": 8.905
+  },
+  {
+    "mot": "où",
+    "debut": 8.963,
+    "fin": 9.16
+  },
+  {
+    "mot": "on",
+    "debut": 9.183,
+    "fin": 9.253
+  },
+  {
+    "mot": "en",
+    "debut": 9.323,
+    "fin": 9.381
+  },
+  {
+    "mot": "est.",
+    "debut": 9.451,
+    "fin": 9.613
+  }
+]

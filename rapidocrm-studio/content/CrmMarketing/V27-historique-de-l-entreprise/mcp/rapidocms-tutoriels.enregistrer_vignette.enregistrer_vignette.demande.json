@@ -1,0 +1,11 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_vignette",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-de-l-entreprise",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V27-06-historique-de-l-entreprise-thumb.jpg"
+  },
+  "demande_le": "2026-09-08T14:18:56.701Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

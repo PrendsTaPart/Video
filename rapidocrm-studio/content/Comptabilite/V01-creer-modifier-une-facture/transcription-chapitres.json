@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Votre facture part sur un tableur, recopiée à la main. Et le total, vous le vérifiez deux fois. Le produit choisi, les montants suivent."
+  },
+  {
+    "timestamp_secondes": 8,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la page Facturation, et on ressort avec une facture faite, puis corrigée. Un seul formulaire : le client, le produit, la date. Les montants se calculent seuls. Retenez une chose : le prix toutes taxes comprises ne se tape jamais à la main."
+  },
+  {
+    "timestamp_secondes": 23,
+    "titre": "Ouvrir la page Facturation",
+    "texte": "Page Facturation. Trois onglets, deux filtres, et le bouton créer une facture."
+  },
+  {
+    "timestamp_secondes": 28,
+    "titre": "Choisir le client et le produit",
+    "texte": "L'entreprise d'abord, prise dans vos clients. Puis le produit, avec son prix. C'est lui qui remplit la facture."
+  },
+  {
+    "timestamp_secondes": 34,
+    "titre": "Laisser les montants se calculer",
+    "texte": "La date, puis les montants : hors taxes, TVA, total. Vous n'écrivez rien."
+  },
+  {
+    "timestamp_secondes": 40,
+    "titre": "Fixer le délai et le statut",
+    "texte": "Le délai de paiement, les mentions légales, le statut. Le logiciel peut aussi envoyer la facture."
+  },
+  {
+    "timestamp_secondes": 47,
+    "titre": "Relire les totaux",
+    "texte": "Dernière ligne : total TTC final. C'est ce que le client paiera."
+  },
+  {
+    "timestamp_secondes": 51,
+    "titre": "Retrouver la facture au tableau",
+    "texte": "Facture créée. Elle prend sa place dans la liste, avec son client et son statut."
+  },
+  {
+    "timestamp_secondes": 57,
+    "titre": "Corriger une facture",
+    "texte": "Une erreur de produit ? La fiche se rouvre telle quelle, on corrige."
+  },
+  {
+    "timestamp_secondes": 62,
+    "titre": "Voir la correction confirmée",
+    "texte": "Et le bandeau confirme la modification."
+  },
+  {
+    "timestamp_secondes": 65,
+    "titre": "Faites-le avec Claude",
+    "texte": "Vos factures s'empilent. Pour savoir ce qui reste à encaisser, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 78,
+    "titre": "À retenir",
+    "texte": "Le produit choisi, la facture s'écrit. Et elle reste corrigeable."
+  }
+]

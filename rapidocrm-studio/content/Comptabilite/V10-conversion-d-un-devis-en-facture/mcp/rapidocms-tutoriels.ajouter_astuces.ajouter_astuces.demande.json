@@ -1,0 +1,27 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_astuces",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-conversion-d-un-devis-en-facture",
+    "astuces": [
+      {
+        "titre": "La signature fait la facture",
+        "texte": "Il n'y a pas d'écran de conversion. Signer le devis suffit.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Le bandeau dit tout",
+        "texte": "« Devis signé et facture créée, mais l'envoi de l'e-mail a échoué » : la facture est là, seul le mail n'est pas parti.",
+        "niveau": "debutant"
+      },
+      {
+        "titre": "Les compteurs suivent",
+        "texte": "Total facturé et en attente se recalculent tout seuls après la conversion.",
+        "niveau": "pro"
+      }
+    ]
+  },
+  "demande_le": "2026-09-06T12:38:14.466Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

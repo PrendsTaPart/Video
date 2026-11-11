@@ -1,0 +1,21 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_seo",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-un-contrat",
+    "seo_titre": "Créer un contrat — RapidoCRM",
+    "seo_description": "Envoyez un contrat depuis la fiche d'une entreprise RapidoCRM : modèle de la bibliothèque, destinataire, dates de validité et modèle d'e-mail. Le tutoriel.",
+    "seo_mots_cles": [
+      "contrat",
+      "RapidoCRM",
+      "modèle de contrat",
+      "CRM",
+      "signature",
+      "commercial"
+    ],
+    "seo_og_image": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V19-06-creer-un-contrat-thumb.jpg"
+  },
+  "demande_le": "2026-09-07T14:18:52.951Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

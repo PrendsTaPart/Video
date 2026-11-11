@@ -1,0 +1,127 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "statut,",
+    "debut": 0.197,
+    "fin": 0.72
+  },
+  {
+    "mot": "puis",
+    "debut": 0.755,
+    "fin": 0.964
+  },
+  {
+    "mot": "l'entreprise.",
+    "debut": 0.987,
+    "fin": 1.695
+  },
+  {
+    "mot": "Les",
+    "debut": 2.078,
+    "fin": 2.241
+  },
+  {
+    "mot": "deux",
+    "debut": 2.287,
+    "fin": 2.403
+  },
+  {
+    "mot": "s'ajoutent.",
+    "debut": 2.438,
+    "fin": 2.972
+  },
+  {
+    "mot": "Et",
+    "debut": 3.251,
+    "fin": 3.379
+  },
+  {
+    "mot": "quand",
+    "debut": 3.437,
+    "fin": 3.587
+  },
+  {
+    "mot": "rien",
+    "debut": 3.634,
+    "fin": 3.82
+  },
+  {
+    "mot": "ne",
+    "debut": 3.843,
+    "fin": 3.913
+  },
+  {
+    "mot": "correspond,",
+    "debut": 3.959,
+    "fin": 4.656
+  },
+  {
+    "mot": "le",
+    "debut": 4.865,
+    "fin": 4.957
+  },
+  {
+    "mot": "tableau",
+    "debut": 5.016,
+    "fin": 5.306
+  },
+  {
+    "mot": "le",
+    "debut": 5.352,
+    "fin": 5.422
+  },
+  {
+    "mot": "dit",
+    "debut": 5.468,
+    "fin": 5.677
+  },
+  {
+    "mot": ":",
+    "debut": 5.77,
+    "fin": 5.817
+  },
+  {
+    "mot": "aucun",
+    "debut": 5.968,
+    "fin": 6.293
+  },
+  {
+    "mot": "résultat",
+    "debut": 6.327,
+    "fin": 6.722
+  },
+  {
+    "mot": "trouvé.",
+    "debut": 6.745,
+    "fin": 7.198
+  },
+  {
+    "mot": "Ce",
+    "debut": 7.523,
+    "fin": 7.628
+  },
+  {
+    "mot": "n'est",
+    "debut": 7.674,
+    "fin": 7.802
+  },
+  {
+    "mot": "pas",
+    "debut": 7.825,
+    "fin": 7.953
+  },
+  {
+    "mot": "une",
+    "debut": 7.976,
+    "fin": 8.081
+  },
+  {
+    "mot": "panne.",
+    "debut": 8.104,
+    "fin": 8.499
+  }
+]

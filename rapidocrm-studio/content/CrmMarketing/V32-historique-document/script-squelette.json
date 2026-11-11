@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 32,
+    "titre": "Consulter l'historique des documents d'une entreprise",
+    "titre_court": "Consulter l'historique des d",
+    "slug": "consulter-l-historique-des-documents-d-une-entreprise"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir l'historique des documents",
+        "voix": "",
+        "debut_source": 1,
+        "fin_source": 8.5,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.3,
+          "w": 0.75,
+          "h": 0.6
+        },
+        "annotation": "Ouvrir l'historique des documents"
+      },
+      {
+        "numero": 2,
+        "titre": "Lire le tableau des documents",
+        "voix": "",
+        "debut_source": 8.5,
+        "fin_source": 14,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.35,
+          "w": 0.75,
+          "h": 0.45
+        },
+        "annotation": "Lire le tableau des documents"
+      },
+      {
+        "numero": 3,
+        "titre": "Télécharger ou supprimer un document",
+        "voix": "",
+        "debut_source": 14,
+        "fin_source": 17.5,
+        "zone_focus": {
+          "x": 0.28,
+          "y": 0.1,
+          "w": 0.65,
+          "h": 0.65
+        },
+        "annotation": "Télécharger ou supprimer un document"
+      },
+      {
+        "numero": 4,
+        "titre": "Annuler et revenir à la liste",
+        "voix": "",
+        "debut_source": 17.5,
+        "fin_source": 19.17,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.35,
+          "w": 0.75,
+          "h": 0.45
+        },
+        "annotation": "Annuler et revenir à la liste"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Donne-moi la fiche complète de l'entreprise numéro [identifiant].",
+      "variables": [
+        "identifiant"
+      ],
+      "outil_mcp": "get_entreprise"
+    }
+  }
+}

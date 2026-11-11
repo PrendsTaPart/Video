@@ -1,0 +1,19 @@
+Il est vingt-deux heures. Vous écrivez le SMS de demain matin, et vous vous notez de l'envoyer à huit heures. Écrivez-le maintenant, le logiciel l'enverra à l'heure dite.
+
+On part de la fiche d'une entreprise, et on ressort avec un SMS programmé. Trois choses à dire : qui le reçoit, quel message, et à quelle date. Tout tient dans une seule fenêtre.
+
+Le panneau de droite, bloc Communication.
+
+Tout en bas : planifier un SMS.
+
+D'abord la cible. Ici, toutes mes entreprises.
+
+Puis le modèle. Un aperçu sous chacun.
+
+Reste la date et l'heure. C'est ce moment-là qui déclenche l'envoi, pas le clic.
+
+Envoyer. Le message attendra huit heures du matin.
+
+Vos modèles s'accumulent. Pour savoir lesquels vous avez sous la main, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Un message écrit le soir, envoyé le matin : la relance ne dépend plus de votre réveil.

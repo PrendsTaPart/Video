@@ -1,0 +1,92 @@
+[
+  {
+    "mot": "Statut",
+    "debut": 0,
+    "fin": 0.546
+  },
+  {
+    "mot": ":",
+    "debut": 0.58,
+    "fin": 0.639
+  },
+  {
+    "mot": "payée.",
+    "debut": 0.789,
+    "fin": 1.149
+  },
+  {
+    "mot": "Et",
+    "debut": 1.358,
+    "fin": 1.463
+  },
+  {
+    "mot": "juste",
+    "debut": 1.498,
+    "fin": 1.707
+  },
+  {
+    "mot": "en",
+    "debut": 1.73,
+    "fin": 1.776
+  },
+  {
+    "mot": "dessous,",
+    "debut": 1.8,
+    "fin": 2.125
+  },
+  {
+    "mot": "le",
+    "debut": 2.218,
+    "fin": 2.31
+  },
+  {
+    "mot": "moyen",
+    "debut": 2.357,
+    "fin": 2.635
+  },
+  {
+    "mot": "—",
+    "debut": 2.717,
+    "fin": 2.775
+  },
+  {
+    "mot": "espèces,",
+    "debut": 2.868,
+    "fin": 3.529
+  },
+  {
+    "mot": "carte,",
+    "debut": 3.657,
+    "fin": 4.087
+  },
+  {
+    "mot": "virement",
+    "debut": 4.203,
+    "fin": 4.563
+  },
+  {
+    "mot": "ou",
+    "debut": 4.609,
+    "fin": 4.679
+  },
+  {
+    "mot": "chèque.",
+    "debut": 4.714,
+    "fin": 5.097
+  },
+  {
+    "mot": "<break",
+    "debut": 5.573,
+    "fin": 5.573
+  },
+  {
+    "mot": "time=\"0.4s\"",
+    "debut": 5.573,
+    "fin": 5.573
+  },
+  {
+    "mot": "/>",
+    "debut": 5.573,
+    "fin": 5.573
+  }
+]

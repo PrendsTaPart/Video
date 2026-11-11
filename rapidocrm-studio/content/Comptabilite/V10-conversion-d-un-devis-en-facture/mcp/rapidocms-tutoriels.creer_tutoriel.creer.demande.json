@@ -1,0 +1,44 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-conversion-d-un-devis-en-facture",
+    "module": "05-comptabilite",
+    "numero": 10,
+    "titre": "Transformer un devis accepté en facture",
+    "titre_court": "Du devis à la facture",
+    "accroche": "Signez le devis, la facture se crée toute seule.",
+    "explication": "On part d'un devis en attente, et on ressort avec une facture. Il n'y a pas de bouton « convertir » : c'est la signature du devis qui crée la facture, avec le même client et le même montant.\n\n1. Ouvrir le devis à convertir — On ouvre le devis par Signer, comme pour le faire valider.\n2. Signer le devis et enregistrer — Le devis s'ouvre, on signe, et on enregistre. Le logiciel travaille : il signe le devis, crée la facture, et tente d'envoyer le mail au client.\n3. Lire ce que le logiciel annonce — Le bandeau dit tout : devis signé, facture créée. Seul le mail n'est pas parti.\n4. Passer à l'onglet facture — On passe à l'onglet facture. En haut, les compteurs se sont recalculés : le total facturé a grimpé, l'en attente aussi.\n5. Retrouver la facture créée — Et la voilà, en tête de liste. Même client, même montant que le devis, avec son propre numéro.\n\nLa facture existe. Pour vérifier ce qui vient de partir en facturation, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir le devis à convertir",
+        "texte": "On ouvre le devis par Signer, comme pour le faire valider."
+      },
+      {
+        "titre": "Signer le devis et enregistrer",
+        "texte": "Le devis s'ouvre, on signe, et on enregistre. Le logiciel travaille : il signe le devis, crée la facture, et tente d'envoyer le mail au client."
+      },
+      {
+        "titre": "Lire ce que le logiciel annonce",
+        "texte": "Le bandeau dit tout : devis signé, facture créée. Seul le mail n'est pas parti."
+      },
+      {
+        "titre": "Passer à l'onglet facture",
+        "texte": "On passe à l'onglet facture. En haut, les compteurs se sont recalculés : le total facturé a grimpé, l'en attente aussi."
+      },
+      {
+        "titre": "Retrouver la facture créée",
+        "texte": "Et la voilà, en tête de liste. Même client, même montant que le devis, avec son propre numéro."
+      }
+    ],
+    "a_quoi_ca_sert": "Ne pas ressaisir une facture quand le devis est signé. Signer le devis crée la facture : mêmes lignes, même montant, même client, et elle apparaît dans l'onglet facture avec son propre numéro.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Avoir un devis en attente",
+      "Avoir branché la boîte mail de la société pour que l'envoi parte"
+    ]
+  },
+  "demande_le": "2026-09-06T12:38:14.141Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

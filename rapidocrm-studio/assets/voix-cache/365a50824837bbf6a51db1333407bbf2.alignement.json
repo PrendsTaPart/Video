@@ -1,0 +1,32 @@
+[
+  {
+    "mot": "Panneau",
+    "debut": 0,
+    "fin": 0.313
+  },
+  {
+    "mot": "Finance",
+    "debut": 0.36,
+    "fin": 0.778
+  },
+  {
+    "mot": ":",
+    "debut": 0.801,
+    "fin": 0.836
+  },
+  {
+    "mot": "créer",
+    "debut": 0.987,
+    "fin": 1.219
+  },
+  {
+    "mot": "une",
+    "debut": 1.277,
+    "fin": 1.358
+  },
+  {
+    "mot": "facture.",
+    "debut": 1.382,
+    "fin": 1.869
+  }
+]

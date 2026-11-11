@@ -1,0 +1,15 @@
+Votre contrat s'ouvre sur l'article 1. Le client, lui, voit un mur de texte. Une vraie première page, choisie en trois clics.
+
+On part de la liste de vos contrats types, et on ressort avec une vraie page de garde. Vous la choisissez dans une galerie d'images, comme un fond d'écran. Aucun éditeur à ouvrir.
+
+Vos contrats types. Le bouton plus.
+
+La galerie s'ouvre. Chaque image, une couverture.
+
+On prend la première, on confirme. C'est enregistré.
+
+Et le contrat s'ouvre dessus. Prestataire, client, tout y est.
+
+Vos couvertures sont posées. Pour savoir quels contrats types vous avez sous la main, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.
+
+Une page de garde choisie une fois, et tous vos contrats en profitent. Sans éditeur.

@@ -1,0 +1,42 @@
+[
+  {
+    "mot": "Envoyer.",
+    "debut": 0,
+    "fin": 0.464
+  },
+  {
+    "mot": "Le",
+    "debut": 0.673,
+    "fin": 0.766
+  },
+  {
+    "mot": "message",
+    "debut": 0.813,
+    "fin": 1.115
+  },
+  {
+    "mot": "attendra",
+    "debut": 1.138,
+    "fin": 1.428
+  },
+  {
+    "mot": "huit",
+    "debut": 1.474,
+    "fin": 1.649
+  },
+  {
+    "mot": "heures",
+    "debut": 1.683,
+    "fin": 1.823
+  },
+  {
+    "mot": "du",
+    "debut": 1.846,
+    "fin": 1.904
+  },
+  {
+    "mot": "matin.",
+    "debut": 1.939,
+    "fin": 2.299
+  }
+]

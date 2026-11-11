@@ -1,0 +1,37 @@
+[
+  {
+    "mot": "Quatre",
+    "debut": 0,
+    "fin": 0.267
+  },
+  {
+    "mot": "moyens,",
+    "debut": 0.302,
+    "fin": 0.673
+  },
+  {
+    "mot": "un",
+    "debut": 0.755,
+    "fin": 0.836
+  },
+  {
+    "mot": "seul",
+    "debut": 0.882,
+    "fin": 1.022
+  },
+  {
+    "mot": "coché.",
+    "debut": 1.068,
+    "fin": 1.498
+  },
+  {
+    "mot": "Ici,",
+    "debut": 1.625,
+    "fin": 2.009
+  },
+  {
+    "mot": "virement.",
+    "debut": 2.043,
+    "fin": 2.415
+  }
+]

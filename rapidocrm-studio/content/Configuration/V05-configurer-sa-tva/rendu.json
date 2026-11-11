@@ -1,0 +1,84 @@
+{
+  "duree": 86,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V05-configurer-sa-tva/out/master-16x9.mp4",
+      "octets": 11143229
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V05-configurer-sa-tva/out/master-9x16.mp4",
+      "octets": 10727051
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 11.333333333333334
+    },
+    {
+      "nom": "titre",
+      "debut": 11.333333333333334,
+      "fin": 27.566666666666666
+    },
+    {
+      "nom": "demo",
+      "debut": 27.566666666666666,
+      "fin": 67.13333333333334
+    },
+    {
+      "nom": "claude",
+      "debut": 67.13333333333334,
+      "fin": 82.53333333333333
+    },
+    {
+      "nom": "punchline",
+      "debut": 82.53333333333333,
+      "fin": 86
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Vous établissez votre premier devis, et aucun taux de TVA ne vous est proposé."
+    },
+    {
+      "timecode": "00:11",
+      "titre": "Configurer sa TVA"
+    },
+    {
+      "timecode": "00:27",
+      "titre": "Ouvrir l'onglet TVA"
+    },
+    {
+      "timecode": "00:31",
+      "titre": "Ajouter un taux"
+    },
+    {
+      "timecode": "00:44",
+      "titre": "Confirmer l'ajout"
+    },
+    {
+      "timecode": "00:48",
+      "titre": "Modifier un taux"
+    },
+    {
+      "timecode": "00:57",
+      "titre": "Vérifier le nouveau taux"
+    },
+    {
+      "timecode": "01:07",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:22",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

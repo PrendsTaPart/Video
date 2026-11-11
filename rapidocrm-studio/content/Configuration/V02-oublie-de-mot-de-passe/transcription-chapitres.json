@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Vous êtes devant la page de connexion, et le mot de passe ne revient pas. En une minute, vous en choisissez un nouveau et vous retrouvez votre tableau de bord."
+  },
+  {
+    "timestamp_secondes": 9,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la page de connexion, et on ressort sur votre tableau de bord avec un mot de passe tout neuf. Personne à appeler, aucun accès perdu : RapidoCRM sait vous rouvrir la porte tout seul."
+  },
+  {
+    "timestamp_secondes": 21,
+    "titre": "Ouvrir « mot de passe oublié »",
+    "texte": "Sous le champ mot de passe, le lien mot de passe oublié attend. Cliquez dessus : c'est le point de départ."
+  },
+  {
+    "timestamp_secondes": 27,
+    "titre": "Saisir son adresse e-mail",
+    "texte": "Saisissez l'adresse de votre compte. C'est elle qui vous sert d'identifiant, et c'est là que le lien arrivera. Puis validez avec envoyer le lien de réinitialisation."
+  },
+  {
+    "timestamp_secondes": 36,
+    "titre": "Recevoir le lien de réinitialisation",
+    "texte": "Un bandeau vert confirme l'envoi. Le message part immédiatement : si rien n'arrive, c'est l'adresse qu'il faut revérifier, pas la patience."
+  },
+  {
+    "timestamp_secondes": 45,
+    "titre": "Choisir un nouveau mot de passe",
+    "texte": "Le lien ouvre cette page. Votre nouveau mot de passe, puis le même une seconde fois. L'ancien n'est jamais redemandé. Validez avec définir un nouveau mot de passe."
+  },
+  {
+    "timestamp_secondes": 54,
+    "titre": "Se reconnecter",
+    "texte": "Retour à la page de connexion, votre adresse est déjà là. Tapez le mot de passe que vous venez de choisir, et cliquez sur connexion."
+  },
+  {
+    "timestamp_secondes": 62,
+    "titre": "Retrouver son tableau de bord",
+    "texte": "Et voilà votre tableau de bord, exactement comme vous l'aviez laissé. Vos clients, votre pipeline, vos factures : rien n'a bougé."
+  },
+  {
+    "timestamp_secondes": 70,
+    "titre": "Faites-le avec Claude",
+    "texte": "Vous avez retrouvé votre accès. Profitez-en pour voir qui d'autre entre dans votre espace. RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 86,
+    "titre": "À retenir",
+    "texte": "Un mot de passe oublié n'est jamais un compte perdu."
+  }
+]

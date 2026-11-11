@@ -1,0 +1,48 @@
+{
+  "duree": 30.7,
+  "resolution": [1920, 882],
+  "fps": 25,
+  "ecrans": [
+    { "t": 0, "nom": "Accéder à mon espace (page de connexion)" },
+    { "t": 3.2, "nom": "Créer un compte — étape 1 : le gérant" },
+    { "t": 27.5, "nom": "Créer un compte — étape 2 : l'entreprise" }
+  ],
+  "actions": [
+    { "t": 2.9, "type": "clic", "cible": "Lien créer un compte",
+      "zone": { "x": 0.44, "y": 0.63, "w": 0.16, "h": 0.05 },
+      "texte_visible": "Vous n'êtes pas encore client ? créer un compte" },
+    { "t": 6.8, "type": "saisie", "cible": "Champ nom du gérant",
+      "zone": { "x": 0.30, "y": 0.215, "w": 0.39, "h": 0.07 }, "texte_visible": "nom du gérant" },
+    { "t": 10.2, "type": "saisie", "cible": "Champ prénom du gérant",
+      "zone": { "x": 0.30, "y": 0.32, "w": 0.39, "h": 0.07 }, "texte_visible": "prénom du gérant" },
+    { "t": 13.4, "type": "saisie", "cible": "Champ mail du gérant",
+      "zone": { "x": 0.30, "y": 0.425, "w": 0.39, "h": 0.07 }, "texte_visible": "mail du gérant" },
+    { "t": 16.5, "type": "saisie", "cible": "Champ mot de passe",
+      "zone": { "x": 0.30, "y": 0.525, "w": 0.39, "h": 0.07 }, "texte_visible": "mot de passe" },
+    { "t": 20.4, "type": "saisie", "cible": "Champ confirmer mot de passe",
+      "zone": { "x": 0.30, "y": 0.63, "w": 0.39, "h": 0.07 }, "texte_visible": "confirmer mot de passe" },
+    { "t": 26.0, "type": "validation", "cible": "Bouton suivant",
+      "zone": { "x": 0.30, "y": 0.73, "w": 0.39, "h": 0.075 }, "texte_visible": "suivant" },
+    { "t": 28.5, "type": "ouverture", "cible": "Formulaire entreprise",
+      "zone": { "x": 0.30, "y": 0.30, "w": 0.39, "h": 0.45 },
+      "texte_visible": "nom de l'entreprise · email de l'entreprise · siret · création" }
+  ],
+  "etapes": [
+    { "numero": 1, "titre": "Ouvrir le formulaire de création", "debut": 0, "fin": 4.0,
+      "actions": [0], "zone_focus": { "x": 0.30, "y": 0.40, "w": 0.39, "h": 0.35 } },
+    { "numero": 2, "titre": "Renseigner l'identité du gérant", "debut": 4.0, "fin": 12.2,
+      "actions": [1, 2], "zone_focus": { "x": 0.30, "y": 0.19, "w": 0.39, "h": 0.24 } },
+    { "numero": 3, "titre": "Saisir l'adresse e-mail", "debut": 12.2, "fin": 15.6,
+      "actions": [3], "zone_focus": { "x": 0.30, "y": 0.39, "w": 0.39, "h": 0.14 } },
+    { "numero": 4, "titre": "Choisir un mot de passe et le confirmer", "debut": 15.6, "fin": 23.0,
+      "actions": [4, 5], "zone_focus": { "x": 0.30, "y": 0.50, "w": 0.39, "h": 0.23 } },
+    { "numero": 5, "titre": "Passer à l'étape entreprise", "debut": 23.0, "fin": 27.5,
+      "actions": [6], "zone_focus": { "x": 0.30, "y": 0.68, "w": 0.39, "h": 0.17 } },
+    { "numero": 6, "titre": "Renseigner l'entreprise", "debut": 27.5, "fin": 30.7,
+      "actions": [7], "zone_focus": { "x": 0.30, "y": 0.28, "w": 0.39, "h": 0.50 } }
+  ],
+  "zones_sensibles": [
+    { "t": 12.2, "fin": 30.7, "zone": { "x": 0.30, "y": 0.42, "w": 0.39, "h": 0.08 },
+      "raison": "adresse e-mail réelle saisie à l'écran (apprenantbc@gmail.com)" }
+  ]
+}

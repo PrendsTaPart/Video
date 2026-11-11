@@ -1,0 +1,18 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_prompts",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-une-carte-fidelite",
+    "prompts": [
+      {
+        "titre": "Voir ses programmes de fidélité",
+        "texte": "Liste-moi mes programmes de fidélité avec leur nombre de clients et de points offerts.",
+        "variables": [],
+        "outil_mcp": "list_programmes_fidelite"
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T08:17:54.267Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

@@ -1,0 +1,165 @@
+{
+  "duree": 39.0,
+  "resolution": [1920, 882],
+  "fps": 25,
+  "ecrans": [
+    { "t": 0.0, "nom": "Fiche entreprise — panneau Finance" },
+    { "t": 4.04, "nom": "Modale « Choisir un modèle de contrat »" },
+    { "t": 6.96, "nom": "Modale « Contrat de prestation web »" },
+    { "t": 29.92, "nom": "Confirmation — contrat envoyé" }
+  ],
+  "actions": [
+    {
+      "t": 1.5,
+      "type": "ouverture",
+      "cible": "Panneau Finance de la fiche entreprise",
+      "zone": { "x": 0.72, "y": 0.4, "w": 0.27, "h": 0.35 },
+      "texte_visible": "Entreprise · Communication · Finance · Marketing · Documentation"
+    },
+    {
+      "t": 4.04,
+      "type": "clic",
+      "cible": "Créer un contrat",
+      "zone": { "x": 0.74, "y": 0.4, "w": 0.24, "h": 0.09 },
+      "texte_visible": "Créer un contrat"
+    },
+    {
+      "t": 6.0,
+      "type": "ouverture",
+      "cible": "Bibliothèque des modèles de contrat",
+      "zone": { "x": 0.23, "y": 0.02, "w": 0.44, "h": 0.96 },
+      "texte_visible": "Choisir un modèle de contrat · 5 modèle(s) disponible(s) · Rechercher un modèle · Contrat de prestation web · Contrat de prestation de services · Contrat de vente de produits · Contrat de maintenance · Choisir"
+    },
+    {
+      "t": 6.96,
+      "type": "clic",
+      "cible": "Bouton Choisir du modèle « Contrat de prestation web »",
+      "zone": { "x": 0.25, "y": 0.66, "w": 0.09, "h": 0.09 },
+      "texte_visible": "Choisir"
+    },
+    {
+      "t": 10.0,
+      "type": "ouverture",
+      "cible": "Formulaire du contrat de prestation web",
+      "zone": { "x": 0.34, "y": 0.02, "w": 0.31, "h": 0.96 },
+      "texte_visible": "Contrat de prestation web · Nom du destinataire · Date de début · Date de fin · Choisir template mail · Envoyer"
+    },
+    {
+      "t": 17.0,
+      "type": "saisie",
+      "cible": "Date de début",
+      "zone": { "x": 0.35, "y": 0.44, "w": 0.28, "h": 0.11 },
+      "texte_visible": "28/08/2026"
+    },
+    {
+      "t": 23.0,
+      "type": "saisie",
+      "cible": "Date de fin",
+      "zone": { "x": 0.35, "y": 0.48, "w": 0.28, "h": 0.11 },
+      "texte_visible": "28/10/2027"
+    },
+    {
+      "t": 28.0,
+      "type": "selection",
+      "cible": "Liste Choisir template mail",
+      "zone": { "x": 0.35, "y": 0.65, "w": 0.28, "h": 0.11 },
+      "texte_visible": "Création de devis"
+    },
+    {
+      "t": 29.5,
+      "type": "validation",
+      "cible": "Bouton Envoyer",
+      "zone": { "x": 0.44, "y": 0.79, "w": 0.12, "h": 0.11 },
+      "texte_visible": "Envoyer"
+    },
+    {
+      "t": 34.0,
+      "type": "ouverture",
+      "cible": "Bandeau de confirmation",
+      "zone": { "x": 0.71, "y": 0.03, "w": 0.29, "h": 0.14 },
+      "texte_visible": "Contrat est envoyé avec succès"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir « Créer un contrat » depuis la fiche",
+      "debut": 1.0,
+      "fin": 4.5,
+      "actions": [0, 1],
+      "zone_focus": { "x": 0.72, "y": 0.3, "w": 0.27, "h": 0.5 }
+    },
+    {
+      "numero": 2,
+      "titre": "Choisir un modèle dans la bibliothèque",
+      "debut": 4.5,
+      "fin": 9.5,
+      "actions": [2, 3],
+      "zone_focus": { "x": 0.23, "y": 0.02, "w": 0.44, "h": 0.9 }
+    },
+    {
+      "numero": 3,
+      "titre": "Vérifier le destinataire du contrat",
+      "debut": 9.5,
+      "fin": 15.0,
+      "actions": [4],
+      "zone_focus": { "x": 0.34, "y": 0.05, "w": 0.31, "h": 0.4 }
+    },
+    {
+      "numero": 4,
+      "titre": "Fixer les dates de début et de fin",
+      "debut": 15.0,
+      "fin": 26.0,
+      "actions": [5, 6],
+      "zone_focus": { "x": 0.34, "y": 0.35, "w": 0.31, "h": 0.35 }
+    },
+    {
+      "numero": 5,
+      "titre": "Choisir le modèle d'e-mail et envoyer",
+      "debut": 26.0,
+      "fin": 31.0,
+      "actions": [7, 8],
+      "zone_focus": { "x": 0.34, "y": 0.55, "w": 0.31, "h": 0.4 }
+    },
+    {
+      "numero": 6,
+      "titre": "Lire la confirmation",
+      "debut": 31.0,
+      "fin": 39.0,
+      "actions": [9],
+      "zone_focus": { "x": 0.68, "y": 0.02, "w": 0.32, "h": 0.25 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 39.0,
+      "zone": { "x": 0.79, "y": 0.0, "w": 0.21, "h": 0.14 },
+      "raison": "Photo et nom du titulaire du compte (Dupont lina)."
+    },
+    {
+      "t": 0.0,
+      "fin": 39.0,
+      "zone": { "x": 0.25, "y": 0.15, "w": 0.09, "h": 0.85 },
+      "raison": "Colonne des photos de l'utilisatrice dans les activités récentes, visible aussi de part et d'autre de la modale."
+    },
+    {
+      "t": 0.0,
+      "fin": 5.0,
+      "zone": { "x": 0.25, "y": 0.5, "w": 0.48, "h": 0.5 },
+      "raison": "Activités récentes : photo et nom de l'utilisatrice sur chaque ligne."
+    },
+    {
+      "t": 9.0,
+      "fin": 31.5,
+      "zone": { "x": 0.34, "y": 0.15, "w": 0.31, "h": 0.25 },
+      "raison": "Champ « Nom du destinataire » : adresse e-mail réelle du client (labaguetterie@gmail.com)."
+    },
+    {
+      "t": 31.0,
+      "fin": 39.0,
+      "zone": { "x": 0.25, "y": 0.15, "w": 0.48, "h": 0.75 },
+      "raison": "Retour à la fiche : les lignes d'activité, avec photo et nom de l'utilisatrice, redeviennent lisibles."
+    }
+  ]
+}

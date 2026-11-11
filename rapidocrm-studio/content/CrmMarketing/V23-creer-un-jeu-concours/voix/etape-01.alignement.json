@@ -1,0 +1,32 @@
+[
+  {
+    "mot": "Panneau",
+    "debut": 0,
+    "fin": 0.325
+  },
+  {
+    "mot": "Marketing",
+    "debut": 0.372,
+    "fin": 0.778
+  },
+  {
+    "mot": "de",
+    "debut": 0.813,
+    "fin": 0.871
+  },
+  {
+    "mot": "la",
+    "debut": 0.906,
+    "fin": 0.964
+  },
+  {
+    "mot": "fiche",
+    "debut": 1.022,
+    "fin": 1.207
+  },
+  {
+    "mot": "client.",
+    "debut": 1.231,
+    "fin": 1.567
+  }
+]

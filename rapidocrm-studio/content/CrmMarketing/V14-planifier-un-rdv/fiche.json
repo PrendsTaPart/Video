@@ -1,0 +1,123 @@
+{
+  "fonctionnalite": "Prendre un rendez-vous depuis la fiche d'une entreprise",
+  "a_quoi_ca_sert": "Poser un créneau avec un client et prévenir tout le monde d'un coup : les invités reçoivent l'invitation, les organisateurs sont nommés, et le rappel part tout seul avant l'heure.",
+  "pour_qui": "Gérant ou commercial qui cale un point avec un client",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert la fiche d'une entreprise cliente",
+    "Connaître le créneau souhaité"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Titre",
+      "obligatoire": true,
+      "explication": "Le nom du rendez-vous, en haut de la fenêtre. C'est lui qu'on relira dans l'agenda."
+    },
+    {
+      "nom": "Créneau — De et A",
+      "obligatoire": true,
+      "explication": "Deux champs date et heure côte à côte. Le premier ouvre le rendez-vous, le second le ferme."
+    },
+    {
+      "nom": "E-mails des invités",
+      "obligatoire": false,
+      "explication": "Un champ qui propose les utilisateurs du compte au fur et à mesure de la frappe. Chaque invité retenu devient une étiquette."
+    },
+    {
+      "nom": "Organisateurs",
+      "obligatoire": false,
+      "explication": "Le même mécanisme d'étiquettes, pour dire qui tient le rendez-vous."
+    },
+    {
+      "nom": "Type de rendez-vous",
+      "obligatoire": true,
+      "explication": "Visioconférence, Présentiel ou Téléphonique. Une seule case à la fois."
+    },
+    {
+      "nom": "Rappel",
+      "obligatoire": true,
+      "explication": "30 min avant, Dans 24h ou Dans 48h. C'est le délai avant lequel le rappel part."
+    },
+    {
+      "nom": "Mode d'envoi",
+      "obligatoire": true,
+      "explication": "Par SMS, Par e-mail, ou Par SMS et e-mail. C'est le canal du rappel."
+    },
+    {
+      "nom": "Informations complémentaires",
+      "obligatoire": false,
+      "explication": "Une zone de texte libre, en bas de la fenêtre, pour ce qu'il faut préparer."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_rdvs",
+      "role": "Liste les rendez-vous, filtrables par statut, par période et par recherche libre. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["id", "statut", "periode", "q", "limit"],
+      "exemple_appel": { "periode": "week", "limit": 10 }
+    },
+    {
+      "nom": "get_today_schedule",
+      "role": "Programme de l'agenda sur une période : rendez-vous et événements. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["periode"],
+      "exemple_appel": { "periode": "today" }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Fixer l'heure de fin en même temps que celle de début : un créneau ouvert n'aide personne à s'organiser.",
+    "Choisir le rappel selon le type : 30 minutes suffisent pour une visio, 24 heures se justifient pour un déplacement."
+  ],
+  "erreurs_frequentes": [
+    "Confondre invités et organisateurs : les invités reçoivent l'invitation, les organisateurs tiennent le rendez-vous.",
+    "Régler le rappel sans choisir de mode d'envoi : le délai est fixé, mais rien ne dit par quel canal il part."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Caler un point de suivi en visio",
+      "contexte": "Le client veut faire le point sur sa carte avant l'automne.",
+      "action": "Ouvrez Prendre un rendez-vous, nommez-le, fixez le créneau, ajoutez le client aux invités, cochez Visioconférence et un rappel 30 min avant.",
+      "resultat_attendu": "Le rendez-vous est posé et le rappel partira trente minutes avant."
+    },
+    {
+      "titre": "Préparer un rendez-vous à plusieurs",
+      "contexte": "Deux personnes de l'équipe tiennent le rendez-vous.",
+      "action": "Ajoutez-les toutes les deux dans Organisateurs, et notez ce qu'il faut préparer dans Informations complémentaires.",
+      "resultat_attendu": "Les deux étiquettes apparaissent, et la note reste attachée au rendez-vous."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Le champ propose, vous choisissez",
+      "contenu": "Dès les premières lettres, le champ des invités déroule les utilisateurs du compte : on clique plutôt que de taper l'adresse en entier.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Trois types, trois usages",
+      "contenu": "Visioconférence, Présentiel et Téléphonique ne changent pas le formulaire, mais ils se retrouvent dans l'agenda.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "La note voyage avec le rendez-vous",
+      "contenu": "Informations complémentaires est le bon endroit pour ce qu'il faut apporter : elle reste attachée au créneau.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Voir les rendez-vous de la semaine",
+    "texte": "Liste-moi mes [nombre] rendez-vous de la semaine avec leur date et leur statut.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_rdvs"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:04 à 00:06 — entrée « Prendre un rendez-vous » puis ouverture de la fenêtre",
+    "a_quoi_ca_sert": "frames 00:50 à 01:08 — invités, organisateurs, rappel et mode d'envoi",
+    "champs_cles": "frames 00:06, 00:12, 00:20, 00:40, 00:50, 01:00 et 01:08",
+    "outils_mcp": "schémas list_rdvs et get_today_schedule",
+    "erreurs_frequentes": "frames 00:50 et 01:00 — deux champs d'étiquettes distincts, rappel et mode d'envoi séparés",
+    "cas_usage": "frames 00:12 à 01:08 — « Point suivi carte menu », 28/08/2026 10:00 AM → 10:45 AM, visioconférence, rappel 30 min avant, envoi par e-mail",
+    "astuces": "frames 00:50 et 01:00"
+  },
+  "a_verifier": []
+}

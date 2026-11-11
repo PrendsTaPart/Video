@@ -1,0 +1,21 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-contrats-V03-04-historique-des-templates-de-contrat.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-contrats-V03-04-historique-des-templates-de-contrat-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-contrats-V03-04-historique-des-templates-de-contrat-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-contrats-V03-04-historique-des-templates-de-contrat-thumb-vertical.jpg",
+    "publie_le": "2026-09-04T08:12:00+00:00"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=IOR9fPAAHtU",
+    "video_id": "IOR9fPAAHtU",
+    "publie_le": "2026-09-04T08:12:00+00:00",
+    "short_url": "https://www.youtube.com/watch?v=obg6ZYbLdeo",
+    "short_id": "obg6ZYbLdeo"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/04-historique-des-templates-de-contrat",
+    "tutoriel_id": "65a5e78d-2eb6-4b0a-85c3-ac90f30bffb6",
+    "publie_le": "2026-09-04T08:13:28.191+00:00"
+  }
+}

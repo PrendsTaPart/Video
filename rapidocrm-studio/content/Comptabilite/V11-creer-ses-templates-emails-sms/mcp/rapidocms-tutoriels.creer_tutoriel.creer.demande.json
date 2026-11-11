@@ -1,0 +1,43 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "creer_tutoriel",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "05-creer-ses-templates-emails-sms",
+    "module": "05-comptabilite",
+    "numero": 11,
+    "titre": "Créer un template de SMS",
+    "titre_court": "Créer un template SMS",
+    "accroche": "Écrit une fois, repris d'un clic.",
+    "explication": "On part de la page Template SMS, et on ressort avec un modèle de plus. Un nom, une catégorie, le texte du message, et un bouton d'action à joindre. Tout tient dans une seule fenêtre.\n\n1. Ouvrir la page des templates SMS — Trois modèles déjà là. Le bouton en haut à droite en ajoute un.\n2. Nommer le template — Le nom d'abord. C'est lui qu'on lira dans la liste, alors on décrit ce que le message dit.\n3. Écrire le message — Puis le texte. Si la rédaction vous arrête, le bouton d'aide du bot propose un premier jet.\n4. Ajouter le bouton et valider — On joint un bouton d'action — voir facture — et on valide en bas.\n5. Retrouver le template dans la liste — Et le quatrième modèle prend sa place, prêt à être repris.\n\nVos modèles s'accumulent. Pour savoir lesquels vous avez déjà, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.",
+    "etapes": [
+      {
+        "titre": "Ouvrir la page des templates SMS",
+        "texte": "Trois modèles déjà là. Le bouton en haut à droite en ajoute un."
+      },
+      {
+        "titre": "Nommer le template",
+        "texte": "Le nom d'abord. C'est lui qu'on lira dans la liste, alors on décrit ce que le message dit."
+      },
+      {
+        "titre": "Écrire le message",
+        "texte": "Puis le texte. Si la rédaction vous arrête, le bouton d'aide du bot propose un premier jet."
+      },
+      {
+        "titre": "Ajouter le bouton et valider",
+        "texte": "On joint un bouton d'action — voir facture — et on valide en bas."
+      },
+      {
+        "titre": "Retrouver le template dans la liste",
+        "texte": "Et le quatrième modèle prend sa place, prêt à être repris."
+      }
+    ],
+    "a_quoi_ca_sert": "Écrire une fois un message qu'on envoie souvent — la facture est partie, le devis est prêt — et le rappeler d'un clic au lieu de le retaper. Le template porte son texte, son bouton d'action et sa catégorie.",
+    "prerequis": [
+      "Être connecté à son espace",
+      "Savoir quel message revient assez souvent pour mériter un modèle"
+    ]
+  },
+  "demande_le": "2026-09-07T08:20:09.668Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

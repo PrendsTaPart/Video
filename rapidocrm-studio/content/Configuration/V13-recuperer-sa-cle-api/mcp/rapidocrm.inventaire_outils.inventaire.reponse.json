@@ -1,0 +1,78 @@
+{
+  "outils": [
+    {
+      "nom": "list_entreprises",
+      "description": "CRM : liste les entreprises de la base. Lecture seule. C'est la ressource appelée par l'exemple curl affiché sous le tableau des tokens.",
+      "parametres": [
+        {
+          "nom": "limit",
+          "type": "integer|null",
+          "obligatoire": false,
+          "description": "Nombre maximum de résultats"
+        },
+        {
+          "nom": "q",
+          "type": "string|null",
+          "obligatoire": false,
+          "description": "Recherche libre"
+        },
+        {
+          "nom": "statut",
+          "type": "string|null",
+          "obligatoire": false,
+          "description": "Filtre de statut"
+        },
+        {
+          "nom": "periode",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": "Période"
+        }
+      ]
+    },
+    {
+      "nom": "list_contacts",
+      "description": "CRM : liste les contacts de l'entreprise. Lecture seule.",
+      "parametres": [
+        {
+          "nom": "limit",
+          "type": "integer|null",
+          "obligatoire": false,
+          "description": "Nombre maximum de résultats"
+        },
+        {
+          "nom": "q",
+          "type": "string|null",
+          "obligatoire": false,
+          "description": "Recherche libre"
+        },
+        {
+          "nom": "statut",
+          "type": "string|null",
+          "obligatoire": false,
+          "description": "Filtre de statut"
+        },
+        {
+          "nom": "periode",
+          "type": "string|null",
+          "obligatoire": false,
+          "valeurs_autorisees": [
+            "today",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": "Période"
+        }
+      ]
+    }
+  ]
+}

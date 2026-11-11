@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Un client rappelle après six semaines. Qui lui a écrit ? Quand ? À propos de quoi ? Neuf journaux répondent, sur une seule page."
+  },
+  {
+    "timestamp_secondes": 9,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la fiche d'une entreprise, et on ressort avec sa page d'historique. Neuf journaux : e-mails, SMS, rendez-vous, contrats, documents, factures, devis, dépenses et notes."
+  },
+  {
+    "timestamp_secondes": 23,
+    "titre": "Ouvrir le panneau Entreprise de la fiche",
+    "texte": "Le panneau de droite, premier bloc : Entreprise. Il tient quatre entrées."
+  },
+  {
+    "timestamp_secondes": 28,
+    "titre": "Ouvrir l'historique de l'entreprise",
+    "texte": "La troisième : historique de l'entreprise."
+  },
+  {
+    "timestamp_secondes": 31,
+    "titre": "Parcourir les neuf journaux",
+    "texte": "Neuf cartes, trois par rangée. Chacune couvre un type d'échange."
+  },
+  {
+    "timestamp_secondes": 35,
+    "titre": "Choisir le journal à consulter",
+    "texte": "Et le même bouton partout : Consulter."
+  },
+  {
+    "timestamp_secondes": 38,
+    "titre": "Faites-le avec Claude",
+    "texte": "Neuf journaux, c'est beaucoup à ouvrir. Pour avoir le total d'un coup, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 51,
+    "titre": "À retenir",
+    "texte": "Neuf journaux sur une page : reprendre un dossier prend moins de temps que de s'en souvenir."
+  }
+]

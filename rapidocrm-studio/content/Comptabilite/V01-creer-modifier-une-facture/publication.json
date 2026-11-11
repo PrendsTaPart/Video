@@ -1,0 +1,25 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V01-05-creer-modifier-une-facture.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V01-05-creer-modifier-une-facture-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V01-05-creer-modifier-une-facture-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-comptabilite-V01-05-creer-modifier-une-facture-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "22ac227df9d9245c",
+      "video_vertical_url": "e4d023c5c662e6df",
+      "thumbnail_url": "f1813022c02cccd3",
+      "thumbnail_vertical_url": "1bc4fd170e140c46"
+    },
+    "publie_le": "2026-09-04T01:33:41.033Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=HSQazBmzAS4",
+    "video_id": "HSQazBmzAS4",
+    "publie_le": "2026-09-05T16:00:39.813960+00:00"
+  },
+  "site": {
+    "url": "https://tutoriel.rapido-crm.com/tutoriel/05-creer-modifier-une-facture",
+    "tutoriel_id": "55f1239a-a367-4661-bc1c-65ac76b68f9c",
+    "publie_le": "2026-09-05T16:11:55.484963+00:00"
+  }
+}

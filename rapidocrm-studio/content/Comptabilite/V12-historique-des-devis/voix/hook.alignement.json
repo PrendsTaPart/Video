@@ -1,0 +1,117 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.221
+  },
+  {
+    "mot": "client",
+    "debut": 0.255,
+    "fin": 0.534
+  },
+  {
+    "mot": "vous",
+    "debut": 0.569,
+    "fin": 0.673
+  },
+  {
+    "mot": "rappelle",
+    "debut": 0.697,
+    "fin": 1.115
+  },
+  {
+    "mot": "au",
+    "debut": 1.138,
+    "fin": 1.231
+  },
+  {
+    "mot": "sujet",
+    "debut": 1.289,
+    "fin": 1.591
+  },
+  {
+    "mot": "d'un",
+    "debut": 1.614,
+    "fin": 1.73
+  },
+  {
+    "mot": "devis",
+    "debut": 1.776,
+    "fin": 2.043
+  },
+  {
+    "mot": "de",
+    "debut": 2.067,
+    "fin": 2.136
+  },
+  {
+    "mot": "mars.",
+    "debut": 2.194,
+    "fin": 2.612
+  },
+  {
+    "mot": "Vous,",
+    "debut": 2.786,
+    "fin": 3.193
+  },
+  {
+    "mot": "vous",
+    "debut": 3.367,
+    "fin": 3.506
+  },
+  {
+    "mot": "faites",
+    "debut": 3.529,
+    "fin": 3.738
+  },
+  {
+    "mot": "défiler",
+    "debut": 3.762,
+    "fin": 4.145
+  },
+  {
+    "mot": "la",
+    "debut": 4.168,
+    "fin": 4.226
+  },
+  {
+    "mot": "liste.",
+    "debut": 4.284,
+    "fin": 4.714
+  },
+  {
+    "mot": "Deux",
+    "debut": 4.992,
+    "fin": 5.178
+  },
+  {
+    "mot": "filtres,",
+    "debut": 5.213,
+    "fin": 5.631
+  },
+  {
+    "mot": "et",
+    "debut": 5.84,
+    "fin": 5.979
+  },
+  {
+    "mot": "quatre",
+    "debut": 6.037,
+    "fin": 6.304
+  },
+  {
+    "mot": "gestes",
+    "debut": 6.362,
+    "fin": 6.676
+  },
+  {
+    "mot": "par",
+    "debut": 6.699,
+    "fin": 6.838
+  },
+  {
+    "mot": "ligne.",
+    "debut": 6.861,
+    "fin": 7.221
+  }
+]

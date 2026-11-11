@@ -1,0 +1,92 @@
+[
+  {
+    "mot": "Les",
+    "debut": 0,
+    "fin": 0.174
+  },
+  {
+    "mot": "trois",
+    "debut": 0.197,
+    "fin": 0.383
+  },
+  {
+    "mot": "points",
+    "debut": 0.406,
+    "fin": 0.639
+  },
+  {
+    "mot": "ouvrent",
+    "debut": 0.685,
+    "fin": 0.975
+  },
+  {
+    "mot": "le",
+    "debut": 0.998,
+    "fin": 1.045
+  },
+  {
+    "mot": "menu.",
+    "debut": 1.103,
+    "fin": 1.509
+  },
+  {
+    "mot": "Trois",
+    "debut": 1.788,
+    "fin": 2.055
+  },
+  {
+    "mot": "entrées",
+    "debut": 2.113,
+    "fin": 2.426
+  },
+  {
+    "mot": "ici,",
+    "debut": 2.473,
+    "fin": 2.856
+  },
+  {
+    "mot": "pas",
+    "debut": 2.891,
+    "fin": 3.019
+  },
+  {
+    "mot": "quatre",
+    "debut": 3.042,
+    "fin": 3.367
+  },
+  {
+    "mot": ":",
+    "debut": 3.437,
+    "fin": 3.471
+  },
+  {
+    "mot": "une",
+    "debut": 3.855,
+    "fin": 4.017
+  },
+  {
+    "mot": "dépense",
+    "debut": 4.04,
+    "fin": 4.447
+  },
+  {
+    "mot": "ne",
+    "debut": 4.481,
+    "fin": 4.551
+  },
+  {
+    "mot": "se",
+    "debut": 4.598,
+    "fin": 4.69
+  },
+  {
+    "mot": "visualise",
+    "debut": 4.76,
+    "fin": 5.213
+  },
+  {
+    "mot": "pas.",
+    "debut": 5.248,
+    "fin": 5.503
+  }
+]

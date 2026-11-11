@@ -1,0 +1,49 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_transcription",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-une-carte-fidelite",
+    "transcription": "Une carte de fidélité, d'habitude, ça passe par un imprimeur, un graphiste, et trois allers-retours. Ici, trois écrans suffisent.\n\nOn part de l'assistant de carte de fidélité, et on ressort avec une carte enregistrée. Trois étapes : la taille, le modèle, la relecture. La barre du haut dit toujours où on en est.\n\nL'assistant s'ouvre sur sa première étape : la taille du template.\n\nTrois formats, avec leurs millimètres. Le standard est celui d'une carte bancaire.\n\nPuis le modèle. Voir l'agrandit, Choisir le retient.\n\nLe récapitulatif reprend tout. Chaque ligne reste modifiable.\n\nEt la page des programmes compte clients et points.\n\nUne carte, ce sont des clients et des points. Pour en avoir le compte, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.\n\nTrois écrans, une carte : la fidélité n'attend plus l'imprimeur.",
+    "chapitres": [
+      {
+        "debut": 0,
+        "titre": "Le problème"
+      },
+      {
+        "debut": 8,
+        "titre": "Ce qu'on va faire"
+      },
+      {
+        "debut": 18,
+        "titre": "Ouvrir l'assistant de carte de fidélité"
+      },
+      {
+        "debut": 22,
+        "titre": "Choisir la taille de la carte"
+      },
+      {
+        "debut": 27,
+        "titre": "Choisir le modèle de carte"
+      },
+      {
+        "debut": 31,
+        "titre": "Relire le récapitulatif et enregistrer"
+      },
+      {
+        "debut": 35,
+        "titre": "Retrouver la carte dans les programmes de fidélité"
+      },
+      {
+        "debut": 38,
+        "titre": "Faites-le avec Claude"
+      },
+      {
+        "debut": 51,
+        "titre": "À retenir"
+      }
+    ]
+  },
+  "demande_le": "2026-09-08T08:17:54.267Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

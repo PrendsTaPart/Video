@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Trois commerciaux vendent le même produit. Chacun le vend à sa façon. Une stratégie écrite sur la fiche, et tout le monde lit la même chose."
+  },
+  {
+    "timestamp_secondes": 7,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la liste des produits, et on ressort avec une consigne de vente attachée à l'un d'eux. La stratégie ne vit pas dans un document à part : elle se range sur la fiche du produit, avec son type, son nom et sa description. Le logiciel garde qui l'a écrite et quand. Et si la rédaction vous arrête, un bouton d'aide du bot vous propose un premier jet."
+  },
+  {
+    "timestamp_secondes": 29,
+    "titre": "Ouvrir la fiche du produit",
+    "texte": "Depuis la liste des produits, le premier des trois boutons : voir."
+  },
+  {
+    "timestamp_secondes": 32,
+    "titre": "Repérer les deux boutons",
+    "texte": "Deux boutons en haut à droite : liste des stratégies pour consulter, ajouter une stratégie pour créer."
+  },
+  {
+    "timestamp_secondes": 39,
+    "titre": "Choisir le type et nommer",
+    "texte": "Le type d'abord : stratégie commerciale. Puis le nom — décrivez ce qu'elle fait, pas un numéro d'essai."
+  },
+  {
+    "timestamp_secondes": 46,
+    "titre": "Décrire la stratégie",
+    "texte": "La description dit ce qu'il faut faire. Écrivez-la en actions vérifiables : un nombre, un délai, une relance. Et si vous séchez, le bouton d'aide du bot propose un premier jet, à relire avant de valider."
+  },
+  {
+    "timestamp_secondes": 61,
+    "titre": "Relire la liste des stratégies",
+    "texte": "Et la stratégie apparaît dans le tableau : qui l'a écrite, son type, son nom, sa date de création. Quand plusieurs personnes en ajoutent, on sait d'où sort chaque consigne."
+  },
+  {
+    "timestamp_secondes": 72,
+    "titre": "Faites-le avec Claude",
+    "texte": "Vos consignes sont écrites. Pour repérer les produits qui n'en ont pas encore, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu."
+  },
+  {
+    "timestamp_secondes": 90,
+    "titre": "À retenir",
+    "texte": "La stratégie vit sur le produit, plus dans une réunion oubliée."
+  }
+]

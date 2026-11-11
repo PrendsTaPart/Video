@@ -1,0 +1,57 @@
+[
+  {
+    "mot": "Statut",
+    "debut": 0,
+    "fin": 0.43
+  },
+  {
+    "mot": "et",
+    "debut": 0.464,
+    "fin": 0.534
+  },
+  {
+    "mot": "total",
+    "debut": 0.58,
+    "fin": 0.859
+  },
+  {
+    "mot": "toutes",
+    "debut": 0.929,
+    "fin": 1.115
+  },
+  {
+    "mot": "taxes",
+    "debut": 1.138,
+    "fin": 1.37
+  },
+  {
+    "mot": "comprises",
+    "debut": 1.393,
+    "fin": 1.869
+  },
+  {
+    "mot": ":",
+    "debut": 1.916,
+    "fin": 1.95
+  },
+  {
+    "mot": "l'essentiel",
+    "debut": 2.276,
+    "fin": 2.821
+  },
+  {
+    "mot": "se",
+    "debut": 2.891,
+    "fin": 2.984
+  },
+  {
+    "mot": "lit",
+    "debut": 3.03,
+    "fin": 3.135
+  },
+  {
+    "mot": "ici.",
+    "debut": 3.17,
+    "fin": 3.576
+  }
+]

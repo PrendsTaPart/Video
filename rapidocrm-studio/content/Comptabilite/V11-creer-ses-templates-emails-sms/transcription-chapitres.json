@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp_secondes": 0,
+    "titre": "Le problème",
+    "texte": "Vous écrivez le même SMS dix fois par semaine. À chaque fois, vous le retapez. Écrit une fois, repris d'un clic."
+  },
+  {
+    "timestamp_secondes": 9,
+    "titre": "Ce qu'on va faire",
+    "texte": "On part de la page Template SMS, et on ressort avec un modèle de plus. Un nom, une catégorie, le texte du message, et un bouton d'action à joindre. Tout tient dans une seule fenêtre."
+  },
+  {
+    "timestamp_secondes": 21,
+    "titre": "Ouvrir la page des templates SMS",
+    "texte": "Trois modèles déjà là. Le bouton en haut à droite en ajoute un."
+  },
+  {
+    "timestamp_secondes": 25,
+    "titre": "Nommer le template",
+    "texte": "Le nom d'abord. C'est lui qu'on lira dans la liste, alors on décrit ce que le message dit."
+  },
+  {
+    "timestamp_secondes": 31,
+    "titre": "Écrire le message",
+    "texte": "Puis le texte. Si la rédaction vous arrête, le bouton d'aide du bot propose un premier jet."
+  },
+  {
+    "timestamp_secondes": 36,
+    "titre": "Ajouter le bouton et valider",
+    "texte": "On joint un bouton d'action — voir facture — et on valide en bas."
+  },
+  {
+    "timestamp_secondes": 41,
+    "titre": "Retrouver le template dans la liste",
+    "texte": "Et le quatrième modèle prend sa place, prêt à être repris."
+  },
+  {
+    "timestamp_secondes": 45,
+    "titre": "Faites-le avec Claude",
+    "texte": "Vos modèles s'accumulent. Pour savoir lesquels vous avez déjà, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets."
+  },
+  {
+    "timestamp_secondes": 58,
+    "titre": "À retenir",
+    "texte": "Un modèle écrit une fois, c'est dix messages qui partent sans effort."
+  }
+]

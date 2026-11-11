@@ -1,0 +1,24 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_cas_usage",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-historique-document",
+    "cas_usage": [
+      {
+        "titre": "Récupérer une pièce transmise",
+        "contexte": "Il faut renvoyer la carte des pains au client.",
+        "action": "Ouvrez l'historique des documents, ouvrez le menu de la ligne et choisissez Télécharger.",
+        "resultat": "Le fichier se télécharge sous son nom."
+      },
+      {
+        "titre": "Renoncer à une suppression",
+        "contexte": "Le menu Supprimer a été ouvert par erreur.",
+        "action": "Cliquez sur Annuler dans la boîte de confirmation du navigateur.",
+        "resultat": "Les documents sont toujours là, la liste est inchangée."
+      }
+    ]
+  },
+  "demande_le": "2026-09-09T12:22:40.653Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "mot": "On",
+    "debut": 0,
+    "fin": 0.139
+  },
+  {
+    "mot": "part",
+    "debut": 0.174,
+    "fin": 0.325
+  },
+  {
+    "mot": "de",
+    "debut": 0.348,
+    "fin": 0.406
+  },
+  {
+    "mot": "la",
+    "debut": 0.441,
+    "fin": 0.511
+  },
+  {
+    "mot": "fiche",
+    "debut": 0.592,
+    "fin": 0.836
+  },
+  {
+    "mot": "d'une",
+    "debut": 0.859,
+    "fin": 1.033
+  },
+  {
+    "mot": "entreprise,",
+    "debut": 1.057,
+    "fin": 1.649
+  },
+  {
+    "mot": "et",
+    "debut": 1.683,
+    "fin": 1.776
+  },
+  {
+    "mot": "on",
+    "debut": 1.811,
+    "fin": 1.869
+  },
+  {
+    "mot": "ressort",
+    "debut": 1.95,
+    "fin": 2.415
+  },
+  {
+    "mot": "avec",
+    "debut": 2.461,
+    "fin": 2.81
+  },
+  {
+    "mot": "une",
+    "debut": 2.926,
+    "fin": 3.065
+  },
+  {
+    "mot": "facture.",
+    "debut": 3.1,
+    "fin": 3.587
+  },
+  {
+    "mot": "Le",
+    "debut": 3.913,
+    "fin": 4.017
+  },
+  {
+    "mot": "panneau",
+    "debut": 4.063,
+    "fin": 4.319
+  },
+  {
+    "mot": "Finance",
+    "debut": 4.365,
+    "fin": 4.737
+  },
+  {
+    "mot": "l'ouvre,",
+    "debut": 4.783,
+    "fin": 5.12
+  },
+  {
+    "mot": "le",
+    "debut": 5.236,
+    "fin": 5.329
+  },
+  {
+    "mot": "produit",
+    "debut": 5.375,
+    "fin": 5.666
+  },
+  {
+    "mot": "choisi",
+    "debut": 5.689,
+    "fin": 6.13
+  },
+  {
+    "mot": "remplit",
+    "debut": 6.281,
+    "fin": 6.687
+  },
+  {
+    "mot": "les",
+    "debut": 6.722,
+    "fin": 6.803
+  },
+  {
+    "mot": "montants,",
+    "debut": 6.827,
+    "fin": 7.291
+  },
+  {
+    "mot": "et",
+    "debut": 7.57,
+    "fin": 7.697
+  },
+  {
+    "mot": "la",
+    "debut": 7.744,
+    "fin": 7.802
+  },
+  {
+    "mot": "facture",
+    "debut": 7.883,
+    "fin": 8.452
+  },
+  {
+    "mot": "rejoint",
+    "debut": 8.661,
+    "fin": 9.056
+  },
+  {
+    "mot": "l'activité",
+    "debut": 9.091,
+    "fin": 9.509
+  },
+  {
+    "mot": "du",
+    "debut": 9.543,
+    "fin": 9.636
+  },
+  {
+    "mot": "client.",
+    "debut": 9.671,
+    "fin": 10.043
+  }
+]

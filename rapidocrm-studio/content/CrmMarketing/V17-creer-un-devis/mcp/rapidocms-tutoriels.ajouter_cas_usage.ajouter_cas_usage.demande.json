@@ -1,0 +1,24 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "ajouter_cas_usage",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-creer-un-devis",
+    "cas_usage": [
+      {
+        "titre": "Chiffrer une prestation au catalogue",
+        "contexte": "Le client demande un devis pour une identité visuelle.",
+        "action": "Ouvrez Créer un devis depuis le panneau Finance, cochez le produit, fixez les dates, choisissez le délai de paiement et le mode de règlement, puis enregistrez.",
+        "resultat": "Le devis apparaît dans les activités récentes de la fiche, avec sa date et son heure."
+      },
+      {
+        "titre": "Accorder une remise",
+        "contexte": "Le client obtient un geste commercial.",
+        "action": "Saisissez le pourcentage dans le champ Remise et lisez le prix avec remise juste en dessous.",
+        "resultat": "Le prix avec remise se met à jour sans toucher au prix HT."
+      }
+    ]
+  },
+  "demande_le": "2026-09-07T08:18:21.295Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom. Remplace chaque valeur « <RAPIDO_ACADEMIE_API_KEY> » par la variable d'environnement du même nom."
+}

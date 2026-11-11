@@ -1,0 +1,27 @@
+{
+  "rapidocms": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-produits-V03-03-ajouter-modifier-des-documents-a-un-produit.mp4",
+    "video_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-produits-V03-03-ajouter-modifier-des-documents-a-un-produit-vertical.mp4",
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-produits-V03-03-ajouter-modifier-des-documents-a-un-produit-thumb.jpg",
+    "thumbnail_vertical_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-produits-V03-03-ajouter-modifier-des-documents-a-un-produit-thumb-vertical.jpg",
+    "empreintes": {
+      "video_url": "8437909bb1dbf282",
+      "video_vertical_url": "cdd2d91bed4deb4a",
+      "thumbnail_url": "b744ec94d83e9452",
+      "thumbnail_vertical_url": "98a9df8356f88208"
+    },
+    "publie_le": "2026-08-28T01:47:00.231Z"
+  },
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=sZKuyYfuWrU",
+    "video_id": "sZKuyYfuWrU",
+    "publie_le": "2026-08-28T11:33:21.463453+00:00",
+    "short_url": "https://www.youtube.com/watch?v=zoBK8JqAqRA",
+    "short_id": "zoBK8JqAqRA"
+  },
+  "site": {
+    "url": "https://tutoriel.rapidocrm.com/tutoriel/03-ajouter-modifier-des-documents-a-un-produit",
+    "tutoriel_id": "0ff591c0-b83e-4041-86c4-6119f8ffd86a",
+    "publie_le": "2026-08-28T12:00:11.146+00:00"
+  }
+}

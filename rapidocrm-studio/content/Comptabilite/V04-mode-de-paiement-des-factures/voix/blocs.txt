@@ -1,0 +1,8 @@
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V04-mode-de-paiement-des-factures/voix/hook.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V04-mode-de-paiement-des-factures/voix/intro.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V04-mode-de-paiement-des-factures/voix/etape-01.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V04-mode-de-paiement-des-factures/voix/etape-02.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V04-mode-de-paiement-des-factures/voix/etape-03.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V04-mode-de-paiement-des-factures/voix/etape-04.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V04-mode-de-paiement-des-factures/voix/claude.mp3'
+file '/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V04-mode-de-paiement-des-factures/voix/punchline.mp3'

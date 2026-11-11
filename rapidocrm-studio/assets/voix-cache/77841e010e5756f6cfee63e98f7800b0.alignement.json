@@ -1,0 +1,87 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.163
+  },
+  {
+    "mot": "fichier",
+    "debut": 0.197,
+    "fin": 0.499
+  },
+  {
+    "mot": "est",
+    "debut": 0.557,
+    "fin": 0.627
+  },
+  {
+    "mot": "déjà",
+    "debut": 0.65,
+    "fin": 0.848
+  },
+  {
+    "mot": "là,",
+    "debut": 0.906,
+    "fin": 1.103
+  },
+  {
+    "mot": "la",
+    "debut": 1.138,
+    "fin": 1.196
+  },
+  {
+    "mot": "newsletter",
+    "debut": 1.254,
+    "fin": 1.672
+  },
+  {
+    "mot": "part",
+    "debut": 1.741,
+    "fin": 1.892
+  },
+  {
+    "mot": "de",
+    "debut": 1.916,
+    "fin": 1.974
+  },
+  {
+    "mot": "là",
+    "debut": 2.02,
+    "fin": 2.183
+  },
+  {
+    "mot": ":",
+    "debut": 2.241,
+    "fin": 2.264
+  },
+  {
+    "mot": "un",
+    "debut": 2.334,
+    "fin": 2.438
+  },
+  {
+    "mot": "outil",
+    "debut": 2.508,
+    "fin": 2.728
+  },
+  {
+    "mot": "de",
+    "debut": 2.752,
+    "fin": 2.821
+  },
+  {
+    "mot": "moins",
+    "debut": 2.868,
+    "fin": 3.1
+  },
+  {
+    "mot": "à",
+    "debut": 3.17,
+    "fin": 3.193
+  },
+  {
+    "mot": "ouvrir.",
+    "debut": 3.239,
+    "fin": 3.622
+  }
+]

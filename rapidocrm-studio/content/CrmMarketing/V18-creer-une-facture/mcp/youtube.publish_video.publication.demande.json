@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V18-06-creer-une-facture.mp4",
+    "titre": "Créer une facture — RapidoCRM",
+    "description": "Tout est déjà dans sa fiche.\n\nOn part de la fiche d'une entreprise, et on ressort avec une facture. Le panneau Finance l'ouvre, le produit choisi remplit les montants, et la facture rejoint l'activité du client.\n\nChapitres\n00:00 La prestation est livrée. Il ne reste qu'à facturer — et à retrouver le prix, la TVA, l'adresse du client.\n00:11 Créer une facture\n00:22 Ouvrir « Créer une facture » depuis la fiche\n00:25 Logo et charte graphique de la facture\n00:28 Choisir le produit à facturer\n00:33 Laisser les montants se calculer\n00:39 Délai, mentions légales et statut\n00:43 Mode de paiement, totaux et enregistrement\n00:46 Retrouver la facture dans l'activité de la fiche\n00:49 Faites-le avec Claude\n01:02 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] factures en attente avec leur montant.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/06-creer-une-facture\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "facture",
+      "facturation",
+      "CRM",
+      "TVA",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "CrmMarketing"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V18-06-creer-une-facture-thumb.jpg",
+    "playlist": "RapidoCRM — CrmMarketing",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T23:29:34.625Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

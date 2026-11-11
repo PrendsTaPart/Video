@@ -1,0 +1,35 @@
+{
+  "duree": 43.2,
+  "resolution": [1920, 882],
+  "fps": 25,
+  "ecrans": [
+    { "t": 0, "nom": "Profil — onglet « Tokens api »" },
+    { "t": 6, "nom": "Modale « Créer un token api »" },
+    { "t": 30, "nom": "Profil — onglet « Tokens api », token créé" },
+    { "t": 34, "nom": "Popover « Permissions — app produits »" },
+    { "t": 40, "nom": "Confirmation de révocation du token" }
+  ],
+  "actions": [
+    { "t": 0.5, "type": "ouverture", "cible": "onglet Tokens api", "zone": { "x": 0.02, "y": 0.08, "w": 0.94, "h": 0.5 }, "texte_visible": "Tokens api — Générez des clés d'accès pour vos applications externes" },
+    { "t": 4.0, "type": "clic", "cible": "bouton + nouveau token", "zone": { "x": 0.78, "y": 0.13, "w": 0.15, "h": 0.08 }, "texte_visible": "+ nouveau token" },
+    { "t": 8.0, "type": "saisie", "cible": "champ Nom du token", "zone": { "x": 0.17, "y": 0.6, "w": 0.3, "h": 0.09 }, "texte_visible": "app produits" },
+    { "t": 15.0, "type": "saisie", "cible": "champ Date d'expiration", "zone": { "x": 0.5, "y": 0.6, "w": 0.3, "h": 0.09 }, "texte_visible": "31/12/2026" },
+    { "t": 20.0, "type": "selection", "cible": "colonne Lire du tableau des permissions", "zone": { "x": 0.17, "y": 0.72, "w": 0.63, "h": 0.26 }, "texte_visible": "Ressource · Lire · Créer · Modifier · Supprimer · Tout" },
+    { "t": 28.0, "type": "validation", "cible": "bouton générer le token", "zone": { "x": 0.4, "y": 0.8, "w": 0.14, "h": 0.09 }, "texte_visible": "générer le token" },
+    { "t": 31.0, "type": "ouverture", "cible": "ligne du token dans le tableau", "zone": { "x": 0.35, "y": 0.25, "w": 0.6, "h": 0.15 }, "texte_visible": "app produits · 31/12/2026 · Actif" },
+    { "t": 35.0, "type": "clic", "cible": "badge des scopes du token", "zone": { "x": 0.09, "y": 0.68, "w": 0.28, "h": 0.25 }, "texte_visible": "Permissions — app produits" },
+    { "t": 40.0, "type": "clic", "cible": "icône corbeille de la colonne Action", "zone": { "x": 0.43, "y": 0.5, "w": 0.35, "h": 0.15 }, "texte_visible": "Révoquer ce token ? Les applications qui l'utilisent perdront l'accès." }
+  ],
+  "etapes": [
+    { "numero": 1, "titre": "Ouvrir l'onglet Tokens api", "debut": 0, "fin": 4.0, "actions": [0], "zone_focus": { "x": 0.02, "y": 0.05, "w": 0.96, "h": 0.6 } },
+    { "numero": 2, "titre": "Créer un nouveau token", "debut": 4.0, "fin": 14.0, "actions": [1, 2], "zone_focus": { "x": 0.13, "y": 0.4, "w": 0.75, "h": 0.55 } },
+    { "numero": 3, "titre": "Fixer une date d'expiration", "debut": 14.0, "fin": 19.0, "actions": [3], "zone_focus": { "x": 0.4, "y": 0.45, "w": 0.5, "h": 0.35 } },
+    { "numero": 4, "titre": "Cocher les permissions", "debut": 19.0, "fin": 28.0, "actions": [4], "zone_focus": { "x": 0.13, "y": 0.5, "w": 0.75, "h": 0.48 } },
+    { "numero": 5, "titre": "Générer le token", "debut": 28.0, "fin": 34.0, "actions": [5, 6], "zone_focus": { "x": 0.02, "y": 0.15, "w": 0.96, "h": 0.6 } },
+    { "numero": 6, "titre": "Relire ses permissions", "debut": 34.0, "fin": 39.0, "actions": [7], "zone_focus": { "x": 0.05, "y": 0.55, "w": 0.45, "h": 0.42 } },
+    { "numero": 7, "titre": "Révoquer un token", "debut": 39.0, "fin": 43.2, "actions": [8], "zone_focus": { "x": 0.35, "y": 0.4, "w": 0.6, "h": 0.4 } }
+  ],
+  "zones_sensibles": [
+    { "t": 0, "fin": 43.2, "zone": { "x": 0.8, "y": 0.02, "w": 0.2, "h": 0.14 }, "raison": "Nom du titulaire du compte et solde de crédits dans l'en-tête" }
+  ]
+}

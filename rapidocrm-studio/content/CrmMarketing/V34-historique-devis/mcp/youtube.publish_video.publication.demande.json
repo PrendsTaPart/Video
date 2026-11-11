@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V34-06-historique-devis.mp4",
+    "titre": "Historique des devis — RapidoCRM",
+    "description": "Le devis vous le dit lui-même, dès l'ouverture.\n\nOn part de la page Historique, et on ressort avec le devis ouvert. Le tableau donne les dates, le statut et le prix ; le devis, lui, prévient quand la période de signature est passée.\n\nChapitres\n00:00 Le client rappelle pour accepter un devis de juillet. Vous, vous ne savez plus s'il est encore valable.\n00:09 Historique devis\n00:20 Ouvrir l'historique des devis\n00:32 Lire le tableau des devis\n00:37 Ouvrir un devis\n00:39 Lire l'alerte de période de signature\n00:42 Faites-le avec Claude\n00:55 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] devis en attente avec leur destinataire et leur montant.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/06-historique-devis\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "historique",
+      "devis",
+      "CRM",
+      "commercial",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "CrmMarketing"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V34-06-historique-devis-thumb.jpg",
+    "playlist": "RapidoCRM — CrmMarketing",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T23:30:10.510Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

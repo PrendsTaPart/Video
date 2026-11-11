@@ -1,0 +1,47 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.151
+  },
+  {
+    "mot": "devis",
+    "debut": 0.197,
+    "fin": 0.441
+  },
+  {
+    "mot": "prend",
+    "debut": 0.464,
+    "fin": 0.615
+  },
+  {
+    "mot": "sa",
+    "debut": 0.65,
+    "fin": 0.755
+  },
+  {
+    "mot": "place",
+    "debut": 0.801,
+    "fin": 1.033
+  },
+  {
+    "mot": "dans",
+    "debut": 1.057,
+    "fin": 1.184
+  },
+  {
+    "mot": "l'activité",
+    "debut": 1.219,
+    "fin": 1.718
+  },
+  {
+    "mot": "du",
+    "debut": 1.765,
+    "fin": 1.858
+  },
+  {
+    "mot": "client.",
+    "debut": 1.904,
+    "fin": 2.264
+  }
+]

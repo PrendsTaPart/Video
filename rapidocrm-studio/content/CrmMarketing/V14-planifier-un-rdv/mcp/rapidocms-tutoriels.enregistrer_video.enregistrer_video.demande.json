@@ -1,0 +1,12 @@
+{
+  "serveur": "RapidoCMS tutoriels",
+  "outil": "enregistrer_video",
+  "parametres": {
+    "cle_api": "<RAPIDO_ACADEMIE_API_KEY>",
+    "slug": "06-planifier-un-rdv",
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V14-06-planifier-un-rdv.mp4",
+    "duree_secondes": 85
+  },
+  "demande_le": "2026-09-06T12:35:06.649Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

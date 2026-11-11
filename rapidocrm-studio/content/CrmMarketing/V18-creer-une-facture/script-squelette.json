@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 18,
+    "titre": "Créer une facture depuis la fiche d'une entreprise",
+    "titre_court": "Créer une facture depuis la ",
+    "slug": "creer-une-facture-depuis-la-fiche-d-une-entreprise"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir « Créer une facture » depuis la fiche",
+        "voix": "",
+        "debut_source": 0.8,
+        "fin_source": 3.5,
+        "zone_focus": {
+          "x": 0.72,
+          "y": 0.55,
+          "w": 0.27,
+          "h": 0.42
+        },
+        "annotation": "Ouvrir « Créer une facture » depuis la fiche"
+      },
+      {
+        "numero": 2,
+        "titre": "Logo et charte graphique de la facture",
+        "voix": "",
+        "debut_source": 3.5,
+        "fin_source": 8,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0,
+          "w": 0.42,
+          "h": 0.85
+        },
+        "annotation": "Logo et charte graphique de la facture"
+      },
+      {
+        "numero": 3,
+        "titre": "Choisir le produit à facturer",
+        "voix": "",
+        "debut_source": 8,
+        "fin_source": 15,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0,
+          "w": 0.42,
+          "h": 0.7
+        },
+        "annotation": "Choisir le produit à facturer"
+      },
+      {
+        "numero": 4,
+        "titre": "Laisser les montants se calculer",
+        "voix": "",
+        "debut_source": 15,
+        "fin_source": 22,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0,
+          "w": 0.42,
+          "h": 0.95
+        },
+        "annotation": "Laisser les montants se calculer"
+      },
+      {
+        "numero": 5,
+        "titre": "Délai, mentions légales et statut",
+        "voix": "",
+        "debut_source": 22,
+        "fin_source": 27.5,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0,
+          "w": 0.42,
+          "h": 0.9
+        },
+        "annotation": "Délai, mentions légales et statut"
+      },
+      {
+        "numero": 6,
+        "titre": "Mode de paiement, totaux et enregistrement",
+        "voix": "",
+        "debut_source": 27.5,
+        "fin_source": 31,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.05,
+          "w": 0.42,
+          "h": 0.9
+        },
+        "annotation": "Mode de paiement, totaux et enregistrement"
+      },
+      {
+        "numero": 7,
+        "titre": "Retrouver la facture dans l'activité de la fiche",
+        "voix": "",
+        "debut_source": 31,
+        "fin_source": 34,
+        "zone_focus": {
+          "x": 0.24,
+          "y": 0.25,
+          "w": 0.5,
+          "h": 0.65
+        },
+        "annotation": "Retrouver la facture dans l'activité de la fiche"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] factures en attente avec leur montant.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_factures"
+    }
+  }
+}

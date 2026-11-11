@@ -1,0 +1,80 @@
+{
+  "duree": 52.93333333333333,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Contrats/V02-ajouter-une-page-de-couverture-a-un-contrat/out/master-16x9.mp4",
+      "octets": 8174162
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Contrats/V02-ajouter-une-page-de-couverture-a-un-contrat/out/master-9x16.mp4",
+      "octets": 6496429
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 8.633333333333333
+    },
+    {
+      "nom": "titre",
+      "debut": 8.633333333333333,
+      "fin": 18.366666666666667
+    },
+    {
+      "nom": "demo",
+      "debut": 18.366666666666667,
+      "fin": 31
+    },
+    {
+      "nom": "claude",
+      "debut": 31,
+      "fin": 48.1
+    },
+    {
+      "nom": "punchline",
+      "debut": 48.1,
+      "fin": 52.93333333333333
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Votre contrat s'ouvre sur l'article 1. Le client, lui, voit un mur de texte."
+    },
+    {
+      "timecode": "00:08",
+      "titre": "Ajouter une page de couverture à un contrat"
+    },
+    {
+      "timecode": "00:18",
+      "titre": "Ouvrir la liste des contrats types"
+    },
+    {
+      "timecode": "00:21",
+      "titre": "Ouvrir le choix de la couverture"
+    },
+    {
+      "timecode": "00:24",
+      "titre": "Choisir la couverture et confirmer"
+    },
+    {
+      "timecode": "00:27",
+      "titre": "Voir la couverture en tête du contrat"
+    },
+    {
+      "timecode": "00:31",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:48",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

@@ -1,0 +1,110 @@
+{
+  "duree": 18.23,
+  "resolution": [1920, 1020],
+  "fps": 60,
+  "ecrans": [
+    { "t": 0.0, "nom": "Page Historique — les journaux" },
+    { "t": 4.5, "nom": "Historique des factures — chargement" },
+    { "t": 8.5, "nom": "Historique des factures — le tableau" },
+    { "t": 11.85, "nom": "Ouverture de la facture dans un nouvel onglet" },
+    { "t": 15.5, "nom": "Facture n°17 — vue complète" }
+  ],
+  "actions": [
+    {
+      "t": 2.5,
+      "type": "clic",
+      "cible": "Bouton Consulter de la carte « Historique des factures »",
+      "zone": { "x": 0.8, "y": 0.73, "w": 0.11, "h": 0.1 },
+      "texte_visible": "Historique des factures · Consulter"
+    },
+    {
+      "t": 5.5,
+      "type": "ouverture",
+      "cible": "Page Historique des factures",
+      "zone": { "x": 0.23, "y": 0.15, "w": 0.75, "h": 0.3 },
+      "texte_visible": "Historique des fa…"
+    },
+    {
+      "t": 10.0,
+      "type": "ouverture",
+      "cible": "Colonnes du tableau des factures",
+      "zone": { "x": 0.23, "y": 0.4, "w": 0.75, "h": 0.2 },
+      "texte_visible": "Chercher… · ID · Destinataire · Date de début · Date de fin · Statut · Total TTC · Action"
+    },
+    {
+      "t": 11.85,
+      "type": "clic",
+      "cible": "Ouverture d'une facture",
+      "zone": { "x": 0.83, "y": 0.44, "w": 0.06, "h": 0.09 },
+      "texte_visible": ""
+    },
+    {
+      "t": 14.0,
+      "type": "ouverture",
+      "cible": "Facture ouverte dans un onglet",
+      "zone": { "x": 0.0, "y": 0.14, "w": 1.0, "h": 0.86 },
+      "texte_visible": "Facture 17 · Télécharger · Informations de la société cliente · Informations de la société émettrice"
+    },
+    {
+      "t": 16.5,
+      "type": "defilement",
+      "cible": "Corps de la facture",
+      "zone": { "x": 0.17, "y": 0.2, "w": 0.66, "h": 0.8 },
+      "texte_visible": "Facture n°17 · Date d'émission · Date de début · Date de fin · Informations de facture · DÉTAIL · PRIX · TVA · TOTAL"
+    }
+  ],
+  "etapes": [
+    {
+      "numero": 1,
+      "titre": "Ouvrir l'historique des factures",
+      "debut": 1.0,
+      "fin": 8.0,
+      "actions": [0, 1],
+      "zone_focus": { "x": 0.23, "y": 0.3, "w": 0.75, "h": 0.6 }
+    },
+    {
+      "numero": 2,
+      "titre": "Lire les colonnes du tableau",
+      "debut": 8.0,
+      "fin": 11.85,
+      "actions": [2],
+      "zone_focus": { "x": 0.23, "y": 0.35, "w": 0.75, "h": 0.3 }
+    },
+    {
+      "numero": 3,
+      "titre": "Ouvrir une facture",
+      "debut": 11.85,
+      "fin": 15.5,
+      "actions": [3, 4],
+      "zone_focus": { "x": 0.0, "y": 0.14, "w": 1.0, "h": 0.5 }
+    },
+    {
+      "numero": 4,
+      "titre": "Lire la facture et la télécharger",
+      "debut": 15.5,
+      "fin": 18.23,
+      "actions": [5],
+      "zone_focus": { "x": 0.0, "y": 0.14, "w": 1.0, "h": 0.5 }
+    }
+  ],
+  "zones_sensibles": [
+    {
+      "t": 0.0,
+      "fin": 18.23,
+      "zone": { "x": 0.0, "y": 0.0, "w": 1.0, "h": 0.15 },
+      "raison": "Fenêtre du navigateur : onglets, adresse locale 127.0.0.1:8000, extensions et bouton « Demander à Gemini »."
+    },
+    {
+      "t": 0.0,
+      "fin": 12.4,
+      "zone": { "x": 0.79, "y": 0.14, "w": 0.21, "h": 0.13 },
+      "raison": "Photo et nom du titulaire du compte (Dupont lina)."
+    },
+    {
+      "t": 12.4,
+      "fin": 18.23,
+      "zone": { "x": 0.0, "y": 0.22, "w": 1.0, "h": 0.78 },
+      "raison": "Corps de la facture : téléphone, SIRET, adresse postale, code postal et e-mail de la société cliente comme de la société émettrice. Le tutoriel n'a besoin que de l'en-tête et du bouton Télécharger."
+    }
+  ]
+}

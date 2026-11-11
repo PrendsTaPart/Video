@@ -1,0 +1,32 @@
+[
+  {
+    "mot": "Panneau",
+    "debut": 0,
+    "fin": 0.337
+  },
+  {
+    "mot": "Documentation",
+    "debut": 0.383,
+    "fin": 1.091
+  },
+  {
+    "mot": ":",
+    "debut": 1.126,
+    "fin": 1.149
+  },
+  {
+    "mot": "ajouter",
+    "debut": 1.219,
+    "fin": 1.544
+  },
+  {
+    "mot": "un",
+    "debut": 1.567,
+    "fin": 1.614
+  },
+  {
+    "mot": "P.D.F.",
+    "debut": 1.66,
+    "fin": 2.194
+  }
+]

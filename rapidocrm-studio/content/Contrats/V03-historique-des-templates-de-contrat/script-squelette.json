@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "module": "Contrats",
+    "numero": 3,
+    "titre": "Consulter l'historique des contrats et rouvrir un contrat généré",
+    "titre_court": "Consulter l'historique des c",
+    "slug": "consulter-l-historique-des-contrats-et-rouvrir-un-contrat-genere"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Lire les trois compteurs de contrats",
+        "voix": "",
+        "debut_source": 0.5,
+        "fin_source": 4,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.1,
+          "w": 0.76,
+          "h": 0.3
+        },
+        "annotation": "Lire les trois compteurs de contrats"
+      },
+      {
+        "numero": 2,
+        "titre": "Retrouver un contrat dans l'historique",
+        "voix": "",
+        "debut_source": 4,
+        "fin_source": 6.5,
+        "zone_focus": {
+          "x": 0.22,
+          "y": 0.4,
+          "w": 0.76,
+          "h": 0.56
+        },
+        "annotation": "Retrouver un contrat dans l'historique"
+      },
+      {
+        "numero": 3,
+        "titre": "Ouvrir le contrat généré",
+        "voix": "",
+        "debut_source": 9.5,
+        "fin_source": 17.5,
+        "zone_focus": {
+          "x": 0.02,
+          "y": 0.02,
+          "w": 0.96,
+          "h": 0.96
+        },
+        "annotation": "Ouvrir le contrat généré"
+      },
+      {
+        "numero": 4,
+        "titre": "Revenir à la liste",
+        "voix": "",
+        "debut_source": 20.2,
+        "fin_source": 22.4,
+        "zone_focus": {
+          "x": 0.23,
+          "y": 0.68,
+          "w": 0.75,
+          "h": 0.28
+        },
+        "annotation": "Revenir à la liste"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes contrats au statut [statut] avec leur entreprise et leur date de création.",
+      "variables": [
+        "statut"
+      ],
+      "outil_mcp": "list_contrats"
+    }
+  }
+}

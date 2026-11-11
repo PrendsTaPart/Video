@@ -1,0 +1,84 @@
+{
+  "duree": 82.2,
+  "fichiers": [
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V07-configurer-son-ia/out/master-16x9.mp4",
+      "octets": 10480651
+    },
+    {
+      "chemin": "/home/user/Video/rapidocrm-studio/content/Configuration/V07-configurer-son-ia/out/master-9x16.mp4",
+      "octets": 9027219
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 8.1
+    },
+    {
+      "nom": "titre",
+      "debut": 8.1,
+      "fin": 38.5
+    },
+    {
+      "nom": "demo",
+      "debut": 38.5,
+      "fin": 61.53333333333333
+    },
+    {
+      "nom": "claude",
+      "debut": 61.53333333333333,
+      "fin": 77.66666666666667
+    },
+    {
+      "nom": "punchline",
+      "debut": 77.66666666666667,
+      "fin": 82.2
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Votre agent tourne sur la clé de tout le monde. La vôtre dort dans un coin."
+    },
+    {
+      "timecode": "00:08",
+      "titre": "Configurer son IA"
+    },
+    {
+      "timecode": "00:38",
+      "titre": "Trouver la section Agent ia"
+    },
+    {
+      "timecode": "00:43",
+      "titre": "Repérer les autres réglages"
+    },
+    {
+      "timecode": "00:48",
+      "titre": "Coller sa propre clé"
+    },
+    {
+      "timecode": "00:54",
+      "titre": "Enregistrer"
+    },
+    {
+      "timecode": "00:55",
+      "titre": "Laisser vide pour la clé du serveur"
+    },
+    {
+      "timecode": "01:01",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "01:17",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": []
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "mot": "Le",
+    "debut": 0,
+    "fin": 0.186
+  },
+  {
+    "mot": "cadre",
+    "debut": 0.232,
+    "fin": 0.488
+  },
+  {
+    "mot": "est",
+    "debut": 0.511,
+    "fin": 0.58
+  },
+  {
+    "mot": "en",
+    "debut": 0.65,
+    "fin": 0.708
+  },
+  {
+    "mot": "bas,",
+    "debut": 0.755,
+    "fin": 0.94
+  },
+  {
+    "mot": "sous",
+    "debut": 1.057,
+    "fin": 1.231
+  },
+  {
+    "mot": "les",
+    "debut": 1.254,
+    "fin": 1.347
+  },
+  {
+    "mot": "totaux.",
+    "debut": 1.37,
+    "fin": 1.73
+  },
+  {
+    "mot": "On",
+    "debut": 1.765,
+    "fin": 1.892
+  },
+  {
+    "mot": "signe",
+    "debut": 1.974,
+    "fin": 2.206
+  },
+  {
+    "mot": "à",
+    "debut": 2.229,
+    "fin": 2.252
+  },
+  {
+    "mot": "la",
+    "debut": 2.276,
+    "fin": 2.334
+  },
+  {
+    "mot": "souris.",
+    "debut": 2.392,
+    "fin": 2.74
+  }
+]

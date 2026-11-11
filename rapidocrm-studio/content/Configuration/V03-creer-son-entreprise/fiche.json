@@ -1,0 +1,50 @@
+{
+  "fonctionnalite": "Créer son entreprise à l'inscription",
+  "a_quoi_ca_sert": "C'est le second écran de l'inscription : celui où votre société entre dans le logiciel. Tout ce que vous saisirez ensuite — clients, devis, factures — sera rattaché à cette entreprise. La renseigner correctement dès le départ vous évite de tout reprendre plus tard.",
+  "pour_qui": "Gérant ou dirigeant qui vient de créer son accès personnel et ouvre l'espace de sa société",
+  "prerequis": [
+    "Avoir créé son accès personnel à l'écran précédent",
+    "Le numéro de SIRET de l'établissement, si vous voulez le renseigner tout de suite"
+  ],
+  "champs_cles": [
+    { "nom": "Nom de l'entreprise", "obligatoire": true, "explication": "Le nom de la société, pas le vôtre. C'est celui qui apparaîtra sur vos documents." },
+    { "nom": "Email de l'entreprise", "obligatoire": false, "explication": "L'adresse de contact de la société, distincte de votre adresse personnelle de connexion." },
+    { "nom": "SIRET", "obligatoire": false, "explication": "Quatorze chiffres qui identifient l'établissement de façon unique. Facultatif, il peut être ajouté plus tard." },
+    { "nom": "Nouveau mot de passe", "obligatoire": true, "explication": "Écran suivant : le mot de passe que vous utiliserez pour vous connecter, à saisir deux fois." }
+  ],
+  "outils_mcp": [
+    { "nom": "list_entreprises", "role": "Liste les entreprises enregistrées, avec nom, e-mail, SIRET, dirigeant et domaine. Lecture seule.",
+      "parametres_obligatoires": [], "parametres_optionnels": ["limit", "q"],
+      "exemple_appel": { "limit": 5 } }
+  ],
+  "bonnes_pratiques": [
+    "Donnez à l'entreprise une adresse de contact distincte de la vôtre : la vôtre sert d'identifiant de connexion, celle de la société sert à être jointe.",
+    "Renseignez le SIRET dès la création : il identifie l'établissement de façon unique et évite les doublons plus tard."
+  ],
+  "erreurs_frequentes": [
+    "Saisir son nom personnel dans le champ nom de l'entreprise : cet écran attend une société, pas une personne.",
+    "Un SIRET incomplet : le champ en attend quatorze, et le rappelle dans son libellé."
+  ],
+  "cas_usage": [
+    { "titre": "Ouvrir l'espace de son restaurant", "contexte": "Votre accès personnel vient d'être créé et l'établissement n'existe pas encore dans le logiciel.",
+      "resultat_attendu": "L'entreprise est enregistrée, un forfait vous est proposé, et votre espace est prêt à recevoir vos premiers clients." }
+  ],
+  "astuces": [
+    { "titre": "Le SIRET peut attendre", "contenu": "Le champ n'est pas obligatoire. Vous pouvez créer l'entreprise sans, et compléter la fiche plus tard.", "niveau": "debutant" },
+    { "titre": "Deux adresses différentes", "contenu": "Celle de l'entreprise n'est pas celle de votre connexion. La première sert à être joint, la seconde à entrer dans votre espace.", "niveau": "debutant" }
+  ],
+  "prompt_claude": {
+    "titre": "Vérifier les entreprises enregistrées",
+    "texte": "Liste-moi les [nombre] dernières entreprises enregistrées, avec leur SIRET et leur dirigeant.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_entreprises"
+  },
+  "sources": {
+    "champs_cles": "frames 00:03 à 00:26 de l'enregistrement (libellés lus à l'écran : nom de l'entreprise, email de l'entreprise, siret (14 chiffres))",
+    "a_quoi_ca_sert": "enchaînement observé : formulaire entreprise → création → choix du forfait → définition du mot de passe → connexion → tableau de bord",
+    "erreurs_frequentes": "frame 00:22 : le libellé du champ SIRET précise « 14 chiffres »",
+    "astuces": "schéma create_entreprise du MCP RapidoCRM : seul « nom » est obligatoire, siret et email sont de type [\"string\",\"null\"]",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. create_entreprise crée une entreprise *cliente* dans un espace déjà ouvert et ne couvre pas cet écran d'inscription, qui reste web."
+  },
+  "a_verifier": []
+}

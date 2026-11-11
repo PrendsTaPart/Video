@@ -1,0 +1,19 @@
+Vous êtes devant la page de connexion, et le mot de passe ne revient pas. En une minute, vous en choisissez un nouveau et vous retrouvez votre tableau de bord.
+
+On part de la page de connexion, et on ressort sur votre tableau de bord avec un mot de passe tout neuf. Personne à appeler, aucun accès perdu : RapidoCRM sait vous rouvrir la porte tout seul.
+
+Sous le champ mot de passe, le lien mot de passe oublié attend. Cliquez dessus : c'est le point de départ.
+
+Saisissez l'adresse de votre compte. C'est elle qui vous sert d'identifiant, et c'est là que le lien arrivera. Puis validez avec envoyer le lien de réinitialisation.
+
+Un bandeau vert confirme l'envoi. Le message part immédiatement : si rien n'arrive, c'est l'adresse qu'il faut revérifier, pas la patience.
+
+Le lien ouvre cette page. Votre nouveau mot de passe, puis le même une seconde fois. L'ancien n'est jamais redemandé. Validez avec définir un nouveau mot de passe.
+
+Retour à la page de connexion, votre adresse est déjà là. Tapez le mot de passe que vous venez de choisir, et cliquez sur connexion.
+
+Et voilà votre tableau de bord, exactement comme vous l'aviez laissé. Vos clients, votre pipeline, vos factures : rien n'a bougé.
+
+Vous avez retrouvé votre accès. Profitez-en pour voir qui d'autre entre dans votre espace. RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets.
+
+Un mot de passe oublié n'est jamais un compte perdu.

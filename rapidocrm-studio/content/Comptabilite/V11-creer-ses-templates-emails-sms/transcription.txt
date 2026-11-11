@@ -1,0 +1,17 @@
+Vous écrivez le même SMS dix fois par semaine. À chaque fois, vous le retapez. Écrit une fois, repris d'un clic.
+
+On part de la page Template SMS, et on ressort avec un modèle de plus. Un nom, une catégorie, le texte du message, et un bouton d'action à joindre. Tout tient dans une seule fenêtre.
+
+Trois modèles déjà là. Le bouton en haut à droite en ajoute un.
+
+Le nom d'abord. C'est lui qu'on lira dans la liste, alors on décrit ce que le message dit.
+
+Puis le texte. Si la rédaction vous arrête, le bouton d'aide du bot propose un premier jet.
+
+On joint un bouton d'action — voir facture — et on valide en bas.
+
+Et le quatrième modèle prend sa place, prêt à être repris.
+
+Vos modèles s'accumulent. Pour savoir lesquels vous avez déjà, RapidoCRM parle à Claude : vous demandez en français, il lit vos données et répond. Copiez ce prompt, remplacez ce qui est entre crochets.
+
+Un modèle écrit une fois, c'est dix messages qui partent sans effort.

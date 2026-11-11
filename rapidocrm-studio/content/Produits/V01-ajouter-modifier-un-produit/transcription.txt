@@ -1,0 +1,19 @@
+Chaque devis, vous retapez les mêmes lignes. Et le prix TTC, vous le calculez de tête. Une fiche produit, et tout se reprend tout seul.
+
+On part de la page Produits, vide, et on ressort avec une fiche complète. Un seul formulaire : le nom, une image, la période de validité, la nature, le prix, la TVA et la description. Et une dernière question, sur laquelle on reviendra : est-ce que ce produit fait gagner des points de fidélité. Un point à retenir dès maintenant — le prix TTC ne se saisit pas. Vous donnez le prix hors taxes et le taux, le logiciel fait le calcul.
+
+Page Produits, encore vide. Une barre de recherche, un filtre par nature, et le bouton ajouter un produit.
+
+Le nom d'abord : c'est lui qui apparaîtra sur vos documents commerciaux. Puis l'image, par le bouton parcourir — elle illustre la fiche dans la liste.
+
+Les dates de début et de fin bornent l'offre — utile pour une promotion. Puis la nature : service, par exemple. C'est elle qui alimente le filtre de la liste.
+
+Le prix hors taxes, puis le taux dans la liste. Et le prix TTC se remplit tout seul. N'y touchez pas.
+
+La description, en clair : c'est ce texte que le client lira. Et la fidélité ferme le formulaire.
+
+Et voilà le produit au catalogue. Au survol, trois boutons : voir, modifier, supprimer. Le premier ouvre la fiche, où se rangeront ensuite les stratégies de vente.
+
+Votre catalogue se remplit. Pour le relire sans ouvrir chaque fiche, RapidoCRM se branche sur Claude : vous écrivez votre demande en français, il lit vos données et vous répond, prix et TVA compris. Copiez ce prompt, collez-le, et remplacez ce qui est entre crochets par le nombre voulu.
+
+Un produit saisi une fois, et vos devis se remplissent sans vous.

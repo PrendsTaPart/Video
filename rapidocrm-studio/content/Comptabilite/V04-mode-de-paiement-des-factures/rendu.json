@@ -1,0 +1,82 @@
+{
+  "duree": 60.266666666666666,
+  "fichiers": [
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V04-mode-de-paiement-des-factures/out/master-16x9.mp4",
+      "octets": 9663639
+    },
+    {
+      "chemin": "/home/user/pipeline/rapidocrm-studio/content/Comptabilite/V04-mode-de-paiement-des-factures/out/master-9x16.mp4",
+      "octets": 7019445
+    }
+  ],
+  "sequences": [
+    {
+      "nom": "ouverture",
+      "debut": 0,
+      "fin": 1.4
+    },
+    {
+      "nom": "hook",
+      "debut": 1.4,
+      "fin": 11.666666666666666
+    },
+    {
+      "nom": "titre",
+      "debut": 11.666666666666666,
+      "fin": 27.466666666666665
+    },
+    {
+      "nom": "demo",
+      "debut": 27.466666666666665,
+      "fin": 41.233333333333334
+    },
+    {
+      "nom": "claude",
+      "debut": 41.233333333333334,
+      "fin": 56.53333333333333
+    },
+    {
+      "nom": "punchline",
+      "debut": 56.53333333333333,
+      "fin": 60.266666666666666
+    }
+  ],
+  "chapitres_youtube": [
+    {
+      "timecode": "00:00",
+      "titre": "Un virement tombe sur le compte. Trois semaines plus tard, vous cherchez encore à quelle facture il correspond."
+    },
+    {
+      "timecode": "00:11",
+      "titre": "Renseigner le mode de paiement d'une facture"
+    },
+    {
+      "timecode": "00:27",
+      "titre": "Ouvrir la facture réglée"
+    },
+    {
+      "timecode": "00:31",
+      "titre": "Choisir le moyen"
+    },
+    {
+      "timecode": "00:35",
+      "titre": "Contrôler le montant"
+    },
+    {
+      "timecode": "00:38",
+      "titre": "Enregistrer"
+    },
+    {
+      "timecode": "00:41",
+      "titre": "Faites-le avec Claude"
+    },
+    {
+      "timecode": "00:56",
+      "titre": "À retenir"
+    }
+  ],
+  "avertissements": [
+    "Durée finale 60s, hors de la fenêtre 80–170s."
+  ]
+}

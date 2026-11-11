@@ -1,0 +1,28 @@
+{
+  "serveur": "YouTube",
+  "outil": "publish_video",
+  "parametres": {
+    "video_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V19-06-creer-un-contrat.mp4",
+    "titre": "Créer un contrat — RapidoCRM",
+    "description": "Un modèle, deux dates, et il part.\n\nOn part de la fiche d'une entreprise, et on ressort avec un contrat envoyé. La bibliothèque propose des modèles, le formulaire tient en quatre champs, et le logiciel confirme l'envoi.\n\nChapitres\n00:00 Le devis est accepté. Reste à sortir un contrat, à le relire, à trouver la bonne adresse.\n00:09 Créer un contrat\n00:20 Ouvrir « Créer un contrat » depuis la fiche\n00:23 Choisir un modèle dans la bibliothèque\n00:26 Vérifier le destinataire du contrat\n00:30 Fixer les dates de début et de fin\n00:40 Choisir le modèle d'e-mail et envoyer\n00:43 Lire la confirmation\n00:50 Faites-le avec Claude\n01:04 À retenir\n\nLe prompt Claude de ce tutoriel\nListe-moi mes [nombre] contrats en attente avec leur destinataire et leurs dates.\n\nLa page du tutoriel : https://tutoriel.rapido-crm.com/tutoriel/06-creer-un-contrat\nEssayer RapidoCRM : https://crm.rapidosoftware.com\nTous les modules : https://tutoriel.rapido-crm.com",
+    "tags": [
+      "RapidoCRM",
+      "contrat",
+      "CRM",
+      "signature",
+      "commercial",
+      "RapidoCRM",
+      "CRM français",
+      "tutoriel CRM",
+      "CrmMarketing"
+    ],
+    "thumbnail_url": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/rapidocrm-tuto-crmmarketing-V19-06-creer-un-contrat-thumb.jpg",
+    "playlist": "RapidoCRM — CrmMarketing",
+    "creer_playlist_si_absente": true,
+    "visibilite": "public",
+    "categorie": "Science et technologie",
+    "langue": "fr"
+  },
+  "demande_le": "2026-09-05T23:29:37.854Z",
+  "consigne": "Exécute cet outil MCP, puis écris son résultat (JSON brut) dans le fichier .reponse.json portant le même nom."
+}

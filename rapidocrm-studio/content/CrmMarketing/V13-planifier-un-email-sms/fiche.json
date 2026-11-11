@@ -1,0 +1,98 @@
+{
+  "fonctionnalite": "Planifier un SMS depuis la fiche d'une entreprise",
+  "a_quoi_ca_sert": "Écrire le message aujourd'hui et laisser le logiciel l'envoyer au jour et à l'heure choisis. Le message part tout seul, même si vous n'êtes pas devant l'écran ce matin-là.",
+  "pour_qui": "Gérant ou commercial qui prépare ses relances à l'avance",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir ouvert la fiche d'une entreprise cliente",
+    "Avoir au moins un modèle de SMS enregistré"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Envoyé à",
+      "obligatoire": true,
+      "explication": "La liste déroulante en haut de la fenêtre Cible. Elle dit qui recevra le SMS ; « Toutes mes entreprises » l'envoie à tout le fichier."
+    },
+    {
+      "nom": "Modèle de template SMS",
+      "obligatoire": true,
+      "explication": "Le carrousel de modèles, avec un champ de recherche au-dessus et un bouton Aperçu sous chacun. Une seule pastille reste cochée."
+    },
+    {
+      "nom": "Date et heure d'envoi",
+      "obligatoire": true,
+      "explication": "Le champ jj/mm/aaaa --:-- sous les modèles. C'est ce moment-là, et pas l'instant où vous validez, qui déclenche l'envoi."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_templates_sms",
+      "role": "Liste les modèles de SMS enregistrés, avec recherche par nom. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["search", "limit"],
+      "exemple_appel": { "limit": 10 }
+    },
+    {
+      "nom": "list_templates_email",
+      "role": "Liste les modèles d'e-mail disponibles pour les campagnes et les workflows. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["search", "limit"],
+      "exemple_appel": { "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Choisir la cible avant le modèle : ce qu'on écrit à un client ne se dit pas de la même façon à tout le fichier.",
+    "Relire l'heure avant de valider : le champ accepte le matin comme le soir, et 05:11 PM n'est pas 08:00 AM."
+  ],
+  "erreurs_frequentes": [
+    "Chercher la planification dans la page Campagnes : elle est dans le panneau Communication de la fiche entreprise.",
+    "Laisser la date vide et cliquer sur Envoyer : sans date et heure d'envoi, il n'y a rien à planifier."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Programmer un rappel de rendez-vous",
+      "contexte": "Le rendez-vous est demain matin et vous ne serez pas devant l'écran à l'ouverture.",
+      "action": "Ouvrez Planifier un SMS, choisissez la cible, prenez le modèle de rappel, et fixez l'envoi au lendemain 08:00 AM.",
+      "resultat_attendu": "Le SMS part à l'heure dite, sans intervention."
+    },
+    {
+      "titre": "Annoncer une nouveauté à tout le fichier",
+      "contexte": "Une nouvelle carte sort la semaine prochaine.",
+      "action": "Choisissez « Toutes mes entreprises » dans Envoyé à, sélectionnez le modèle d'annonce et datez l'envoi au jour de la sortie.",
+      "resultat_attendu": "Le même message part à tout le fichier, au bon moment."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "Sept actions dans le même panneau",
+      "contenu": "Le bloc Communication de la fiche réunit l'envoi immédiat (SMS, e-mail, newsletter), l'appel avec IA, la prise de rendez-vous et les deux planifications.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Un aperçu avant de choisir",
+      "contenu": "Chaque modèle porte un bouton Aperçu : on lit le message avant de le programmer.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "La même fenêtre pour l'e-mail",
+      "contenu": "« Planifier un e-mail » ouvre la même fenêtre Cible, avec les modèles d'e-mail à la place des modèles de SMS.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Retrouver ses modèles de SMS",
+    "texte": "Liste-moi mes [nombre] modèles de SMS.",
+    "variables": ["nombre"],
+    "outil_mcp": "list_templates_sms"
+  },
+  "sources": {
+    "fonctionnalite": "frames 00:03 à 00:06 — entrée « Planifier un SMS » du panneau Communication",
+    "a_quoi_ca_sert": "frames 00:11 à 00:23 — champ Date et heure d'envoi puis bouton Envoyer",
+    "champs_cles": "frames 00:07, 00:09, 00:13 et 00:19 — Envoyé à, carrousel de modèles, date et heure",
+    "outils_mcp": "schémas list_templates_sms et list_templates_email",
+    "erreurs_frequentes": "frames 00:03 (panneau Communication) et 00:13 (champ de date vide)",
+    "cas_usage": "frames 00:09 à 00:23 — cible « Toutes mes entreprises », modèle « Création de devis », envoi au 28/08/2026 08:00 AM",
+    "astuces": "frames 00:03 et 00:11"
+  },
+  "a_verifier": []
+}

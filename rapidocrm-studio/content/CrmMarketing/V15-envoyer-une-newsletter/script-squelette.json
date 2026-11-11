@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "module": "CrmMarketing",
+    "numero": 15,
+    "titre": "Envoyer une newsletter depuis la fiche d'une entreprise",
+    "titre_court": "Envoyer une newsletter depui",
+    "slug": "envoyer-une-newsletter-depuis-la-fiche-d-une-entreprise"
+  },
+  "demo": {
+    "etapes": [
+      {
+        "numero": 1,
+        "titre": "Ouvrir « Envoyer une newsletter »",
+        "voix": "",
+        "debut_source": 0.5,
+        "fin_source": 4,
+        "zone_focus": {
+          "x": 0.72,
+          "y": 0.12,
+          "w": 0.27,
+          "h": 0.85
+        },
+        "annotation": "Ouvrir « Envoyer une newsletter »"
+      },
+      {
+        "numero": 2,
+        "titre": "Dire à qui la newsletter part",
+        "voix": "",
+        "debut_source": 4,
+        "fin_source": 8.5,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.12,
+          "w": 0.42,
+          "h": 0.4
+        },
+        "annotation": "Dire à qui la newsletter part"
+      },
+      {
+        "numero": 3,
+        "titre": "Fixer la date et l'heure d'envoi",
+        "voix": "",
+        "debut_source": 8.5,
+        "fin_source": 14.5,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.45,
+          "w": 0.42,
+          "h": 0.25
+        },
+        "annotation": "Fixer la date et l'heure d'envoi"
+      },
+      {
+        "numero": 4,
+        "titre": "Choisir le modèle de newsletter",
+        "voix": "",
+        "debut_source": 14.5,
+        "fin_source": 17.5,
+        "zone_focus": {
+          "x": 0.26,
+          "y": 0.4,
+          "w": 0.42,
+          "h": 0.55
+        },
+        "annotation": "Choisir le modèle de newsletter"
+      },
+      {
+        "numero": 5,
+        "titre": "Lire la confirmation",
+        "voix": "",
+        "debut_source": 17.5,
+        "fin_source": 20,
+        "zone_focus": {
+          "x": 0.68,
+          "y": 0.08,
+          "w": 0.32,
+          "h": 0.2
+        },
+        "annotation": "Lire la confirmation"
+      }
+    ]
+  },
+  "segment_claude": {
+    "accroche": "Ou demandez-le simplement.",
+    "voix": "Vous n'avez pas envie de cliquer ? Copiez ce prompt, collez-le dans Claude, et c'est fait.",
+    "prompt": {
+      "texte": "Liste-moi mes [nombre] dernières newsletters avec leur statut.",
+      "variables": [
+        "nombre"
+      ],
+      "outil_mcp": "list_newsletters"
+    }
+  }
+}

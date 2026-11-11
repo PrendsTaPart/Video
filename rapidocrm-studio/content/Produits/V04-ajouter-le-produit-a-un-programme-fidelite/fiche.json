@@ -1,0 +1,94 @@
+{
+  "fonctionnalite": "Rattacher un produit à un programme de fidélité",
+  "a_quoi_ca_sert": "Décider qu'un produit fait gagner des points, et combien. Le rattachement se fait depuis la fiche du produit, en deux champs, et vaut pour tous les clients du programme choisi.",
+  "pour_qui": "Gérant ou administrateur qui anime un programme de fidélité",
+  "prerequis": [
+    "Être connecté à son espace",
+    "Avoir un produit créé",
+    "Avoir au moins un programme de fidélité existant"
+  ],
+  "champs_cles": [
+    {
+      "nom": "Ajouter au programme de fidélité ?",
+      "obligatoire": true,
+      "explication": "La question en bas du formulaire du produit. Répondre Oui fait apparaître les deux champs suivants."
+    },
+    {
+      "nom": "Programme de fidélité",
+      "obligatoire": true,
+      "explication": "Le programme auquel rattacher le produit. La liste affiche son nom et son nombre de clients."
+    },
+    {
+      "nom": "Nombre de points fidélités",
+      "obligatoire": true,
+      "explication": "Les points que l'achat de ce produit fait gagner."
+    }
+  ],
+  "outils_mcp": [
+    {
+      "nom": "list_programmes_fidelite",
+      "role": "Liste les programmes de fidélité de l'espace, avec l'entreprise associée et ses statistiques : nombre de clients, points offerts, gains offerts. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": [],
+      "exemple_appel": {}
+    },
+    {
+      "nom": "list_products",
+      "role": "Liste les produits et offres de l'entreprise. Lecture seule.",
+      "parametres_obligatoires": [],
+      "parametres_optionnels": ["q", "statut", "limit", "periode"],
+      "exemple_appel": { "limit": 10 }
+    }
+  ],
+  "bonnes_pratiques": [
+    "Décidez le nombre de points en rapport avec le prix du produit : un barème cohérent se comprend sans être expliqué.",
+    "Vérifiez le nombre de clients affiché à côté du programme avant de rattacher : c'est lui qui dit si le programme est vivant."
+  ],
+  "erreurs_frequentes": [
+    "Répondre Oui et enregistrer sans choisir de programme ni de points : le rattachement ne veut alors rien dire.",
+    "Chercher ce réglage dans le menu de fidélité : il se trouve en bas de la fiche du produit."
+  ],
+  "cas_usage": [
+    {
+      "titre": "Faire tirer un produit par la fidélité",
+      "contexte": "Vous voulez pousser une offre auprès de vos clients réguliers.",
+      "resultat_attendu": "Le produit rapporte des points, et le programme le met en avant."
+    },
+    {
+      "titre": "Revenir sur une décision",
+      "contexte": "Un produit avait été créé sans fidélité.",
+      "resultat_attendu": "La question se rouvre depuis la fiche, et le rattachement se fait après coup."
+    }
+  ],
+  "astuces": [
+    {
+      "titre": "La question est en bas du formulaire",
+      "contenu": "Elle vient après la description du produit. C'est le dernier réglage de la fiche, à la création comme à la modification.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "La liste dit combien de clients",
+      "contenu": "Chaque programme s'affiche avec son nombre de clients — « Alexa (0 client(s)) ». De quoi éviter de rattacher à un programme vide.",
+      "niveau": "debutant"
+    },
+    {
+      "titre": "Rien n'est définitif",
+      "contenu": "Le rattachement se modifie comme n'importe quel champ du produit, et la confirmation « Produit modifié avec succès ! » vous le dit.",
+      "niveau": "pro"
+    }
+  ],
+  "prompt_claude": {
+    "titre": "Faire le point sur ses programmes",
+    "texte": "Liste-moi mes programmes de fidélité avec leur nombre de clients et les points offerts.",
+    "variables": [],
+    "outil_mcp": "list_programmes_fidelite"
+  },
+  "sources": {
+    "champs_cles": "frames 00:06 à 00:21 de l'enregistrement : bas du formulaire du produit — « Ajouter au programme de fidélité ? » Oui / Non — puis les champs « Programme de fidélité » et « Nombre de points fidélités »",
+    "a_quoi_ca_sert": "frame 00:21 : le champ Programme de fidélité affiche « Alexa (0 client(s)) » ; frame 00:14 : bandeau « Produit modifié avec succès ! » après validation",
+    "astuces": "mêmes frames : la question ferme le formulaire, la liste des programmes porte le nombre de clients, et la confirmation s'affiche en haut de la page Produits",
+    "erreurs_frequentes": "frames 00:06 à 00:21 : les deux champs n'apparaissent qu'après avoir répondu Oui",
+    "outils_mcp": "schémas du MCP RapidoCRM, en lecture seule. Aucun outil ne rattache un produit à un programme : cela se fait uniquement depuis la fiche du produit. Le prompt proposé lit les programmes, en amont."
+  },
+  "a_verifier": []
+}
