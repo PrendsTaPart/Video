@@ -1,5 +1,5 @@
 {
-  "voiceStartInCapture": 3.297,
+  "voiceStartInCapture": 3.356,
   "paragraphs": {
     "intro": 0.03,
     "acces": 7.83,
@@ -38,9 +38,9 @@
     ],
     "secret": [
       666,
-      168,
+      116,
       588,
-      745
+      848
     ]
   }
 }
