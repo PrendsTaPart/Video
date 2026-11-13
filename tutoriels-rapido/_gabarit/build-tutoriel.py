@@ -106,17 +106,33 @@ measured = {}
 tpath = os.path.join(EP, 'captures', 'timing.json')
 if os.path.exists(tpath):
     measured = json.load(open(tpath)).get('zones', {})
-src = cfg.get('chapters') or [s for s in cfg.get('scenes', []) if s.get('label')]
+if cfg.get('chapters'):
+    src = cfg['chapters']
+else:
+    # une entrée par paragraphe : libellé de la scène, ou zone seule (le chapitre précédent continue, cadre déplacé)
+    byat = {}
+    for sc in cfg.get('scenes', []):
+        if sc.get('label') or sc.get('zone'):
+            e = byat.setdefault(sc['at'], {'at': sc['at']})
+            for k in ('label', 'zone', 'zoom'):
+                if sc.get(k) is not None:
+                    e[k] = sc[k]
+    src = list(byat.values())
 src = [dict(c, zone=measured.get(c['at']) if not isinstance(c.get('zone'), list) else c['zone']) for c in src]
 src = [c for c in src if c.get('zone')] + [dict(c, zone=[0, 0, 1920, 1080], zoom=1.0) for c in src if not c.get('zone')]
 src.sort(key=lambda c: float(paras[c['at']]))
 chapters = []
+n, label = 0, ''
 for i, ch in enumerate(src):
     start = INTRO + float(paras[ch['at']])
     nxt = INTRO + float(paras[src[i + 1]['at']]) if i + 1 < len(src) else INTRO + float(paras.get('outro', paras['end']))
     z = ch['zone']
     auto = min(1.45, max(1.0, 0.92 * min(1920 / max(z[2], 1), 1080 / max(z[3], 1))))
-    chapters.append(dict(ch, start=start, end=nxt, n=i + 1, zoom=float(ch.get('zoom', round(auto, 2)))))
+    if ch.get('label'):
+        n, label = n + 1, ch['label']
+    if not label:
+        continue
+    chapters.append(dict(ch, label=label, start=start, end=nxt, n=n, k=len(chapters) + 1, zoom=float(ch.get('zoom', round(auto, 2)))))
 
 def cam_for(zone, zoom):
     x, y, w, h = zone
@@ -186,13 +202,13 @@ add(f'''<!doctype html>
 ''')
 for ch in chapters:
     x, y, w, h = ch['zone']
-    add(f'      <div class="hl" id="hl{ch["n"]}" style="left:{x*K:.0f}px;top:{y*K:.0f}px;width:{w*K:.0f}px;height:{h*K:.0f}px"></div>\n')
+    add(f'      <div class="hl" id="hl{ch["k"]}" style="left:{x*K:.0f}px;top:{y*K:.0f}px;width:{w*K:.0f}px;height:{h*K:.0f}px"></div>\n')
 add('''    </div>
   </div>
   <div class="brand"><img src="assets/logo_icon.png" alt="">''' + PRODUCT + '''</div>
 ''')
 for ch in chapters:
-    add(f'  <div class="chap" id="ch{ch["n"]}"><b>{ch["n"]}</b>{esc(ch["label"])}</div>\n')
+    add(f'  <div class="chap" id="ch{ch["k"]}"><b>{ch["n"]}</b>{esc(ch["label"])}</div>\n')
 for i, (s, e, t) in enumerate(subs):
     add(f'  <div class="sub clip" id="s{i}" data-start="{s:.3f}" data-duration="{max(0.2, e - s):.3f}" data-track-index="7"><span>{esc(t)}</span></div>\n')
 add(f'''  <div class="bar"><i id="bar"></i></div>
@@ -232,10 +248,10 @@ for ch in chapters:
     tx, ty = cam_for(ch['zone'], ch['zoom'])
     d = ch['end'] - ch['start']
     add(f"  tl.to('#cam', {{ scale: {ch['zoom']}, x: {tx}, y: {ty}, duration: 1.2, ease: 'power3.inOut' }}, {ch['start']:.3f})\n")
-    add(f"    .fromTo('#hl{ch['n']}', {{ opacity: 0, scale: .97 }}, {{ opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }}, {ch['start'] + 0.8:.3f})\n")
-    add(f"    .to('#hl{ch['n']}', {{ opacity: 0, duration: .35 }}, {ch['end'] - 0.2:.3f})\n")
-    add(f"    .fromTo('#ch{ch['n']}', {{ opacity: 0, x: -30 }}, {{ opacity: 1, x: 0, duration: .5, ease: 'expo.out' }}, {ch['start'] + 0.2:.3f})\n")
-    add(f"    .to('#ch{ch['n']}', {{ opacity: 0, x: -20, duration: .3 }}, {ch['end'] - 0.25:.3f});\n")
+    add(f"    .fromTo('#hl{ch['k']}', {{ opacity: 0, scale: .97 }}, {{ opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }}, {ch['start'] + 0.8:.3f})\n")
+    add(f"    .to('#hl{ch['k']}', {{ opacity: 0, duration: .35 }}, {ch['end'] - 0.2:.3f})\n")
+    add(f"    .fromTo('#ch{ch['k']}', {{ opacity: 0, x: -30 }}, {{ opacity: 1, x: 0, duration: .5, ease: 'expo.out' }}, {ch['start'] + 0.2:.3f})\n")
+    add(f"    .to('#ch{ch['k']}', {{ opacity: 0, x: -20, duration: .3 }}, {ch['end'] - 0.25:.3f});\n")
 last_end = chapters[-1]['end'] if chapters else INTRO
 add(f"  tl.to('#cam', {{ scale: 1, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }}, {last_end:.3f});\n")
 add(f"""  // Outro

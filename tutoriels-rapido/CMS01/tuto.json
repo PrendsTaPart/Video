@@ -111,9 +111,16 @@
       "zone": "form"
     },
     {
+      "at": "email",
+      "wait": 4.5
+    },
+    {
+      "at": "email",
+      "goto": "/confirm-email/camille.durand@atelier-camille.test"
+    },
+    {
       "at": "entreprise",
       "label": "Votre entreprise",
-      "goto": "/confirm-email/camille.durand@atelier-camille.test",
       "zone": "form",
       "fill": [
         [

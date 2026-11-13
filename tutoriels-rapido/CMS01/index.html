@@ -103,7 +103,8 @@
       <div class="hl" id="hl4" style="left:234px;top:257px;width:1283px;height:733px"></div>
       <div class="hl" id="hl5" style="left:729px;top:270px;width:302px;height:532px"></div>
       <div class="hl" id="hl6" style="left:339px;top:270px;width:215px;height:417px"></div>
-      <div class="hl" id="hl7" style="left:234px;top:156px;width:1283px;height:330px"></div>
+      <div class="hl" id="hl7" style="left:234px;top:110px;width:1302px;height:174px"></div>
+      <div class="hl" id="hl8" style="left:234px;top:156px;width:1283px;height:330px"></div>
     </div>
   </div>
   <div class="brand"><img src="assets/logo_icon.png" alt="">RapidoCMS</div>
@@ -113,7 +114,8 @@
   <div class="chap" id="ch4"><b>4</b>Les formules</div>
   <div class="chap" id="ch5"><b>5</b>Mois, année, code promo</div>
   <div class="chap" id="ch6"><b>6</b>L&#x27;Essai gratuit</div>
-  <div class="chap" id="ch7"><b>7</b>Votre abonnement</div>
+  <div class="chap" id="ch7"><b>6</b>L&#x27;Essai gratuit</div>
+  <div class="chap" id="ch8"><b>7</b>Votre abonnement</div>
   <div class="sub clip" id="s0" data-start="3.030" data-duration="1.020" data-track-index="7"><span>Dans ce tutoriel</span></div>
   <div class="sub clip" id="s1" data-start="4.080" data-duration="2.000" data-track-index="7"><span>on crée votre compte RapidoCMS et</span></div>
   <div class="sub clip" id="s2" data-start="6.100" data-duration="1.310" data-track-index="7"><span>on choisit votre formule</span></div>
@@ -225,14 +227,19 @@
     .to('#ch5', { opacity: 0, x: -20, duration: .3 }, 54.780);
   tl.to('#cam', { scale: 1.45, x: 0, y: -199.5, duration: 1.2, ease: 'power3.inOut' }, 55.030)
     .fromTo('#hl6', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 55.830)
-    .to('#hl6', { opacity: 0, duration: .35 }, 64.360)
+    .to('#hl6', { opacity: 0, duration: .35 }, 59.030)
     .fromTo('#ch6', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 55.230)
-    .to('#ch6', { opacity: 0, x: -20, duration: .3 }, 64.310);
+    .to('#ch6', { opacity: 0, x: -20, duration: .3 }, 58.980);
+  tl.to('#cam', { scale: 1.24, x: -216.9, y: 0, duration: 1.2, ease: 'power3.inOut' }, 59.230)
+    .fromTo('#hl7', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 60.030)
+    .to('#hl7', { opacity: 0, duration: .35 }, 64.360)
+    .fromTo('#ch7', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 59.430)
+    .to('#ch7', { opacity: 0, x: -20, duration: .3 }, 64.310);
   tl.to('#cam', { scale: 1.26, x: -223.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 64.560)
-    .fromTo('#hl7', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 65.360)
-    .to('#hl7', { opacity: 0, duration: .35 }, 73.730)
-    .fromTo('#ch7', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 64.760)
-    .to('#ch7', { opacity: 0, x: -20, duration: .3 }, 73.680);
+    .fromTo('#hl8', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 65.360)
+    .to('#hl8', { opacity: 0, duration: .35 }, 73.730)
+    .fromTo('#ch8', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 64.760)
+    .to('#ch8', { opacity: 0, x: -20, duration: .3 }, 73.680);
   tl.to('#cam', { scale: 1, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 73.930);
   // Outro
   tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 77.970)
