@@ -136,7 +136,7 @@ continue avec les sections B (RapidoCMS) puis C (RapidoRH), puis D. Reprendre la
 - [x] CMS03 — Connecter ses réseaux sociaux (Facebook, Instagram, LinkedIn, TikTok)
 - [~] CMS04 — Connecter LinkedIn → fusionné dans CMS03 (un seul écran, quatre panneaux)
 - [~] CMS05 — Connecter TikTok → fusionné dans CMS03
-- [ ] CMS06 — Créer son kit de marque
+- [x] CMS06 — Créer son kit de marque
 - [x] CMS07 — Les clés d'API et les intégrations (Zapier, Make, n8n)
 - [x] CMS08 — Rédiger un post avec l'IA
 - [x] CMS09 — Générer un visuel IA
