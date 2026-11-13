@@ -1,0 +1,109 @@
+{
+  "id": "CRM30",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Sa carte de visite digitale",
+  "em": "carte de visite",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/profil",
+  "type_delay": 22,
+  "fixes": {
+    "QR": "QR",
+    "NFC": "NFC"
+  },
+  "end_cta": "Prochain épisode : les salons et leurs leads",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Dans ce tutoriel, on crée sa carte de visite digitale, à partager d'un simple QR code."
+    },
+    {
+      "key": "onglet",
+      "text": "Ouvrez votre Profil, puis l'onglet Carte de visite. Vos modèles s'affichent à gauche, conçus dans l'éditeur."
+    },
+    {
+      "key": "choisir",
+      "text": "Cliquez sur un modèle : l'aperçu apparaît à droite. Enregistrez, et c'est votre carte."
+    },
+    {
+      "key": "partager",
+      "text": "Les deux boutons en haut de l'aperçu ouvrent votre carte en ligne, et affichent son QR code, à imprimer ou à mettre sur une carte NFC."
+    },
+    {
+      "key": "page",
+      "text": "L'onglet Page associée complète la carte : une bannière, un texte de présentation, vos couleurs, et vos liens."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on transforme ses rencontres de salon en clients. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "onglet",
+      "label": "Vos modèles",
+      "click": "button:has-text(\"carte de visite\") >> visible=true",
+      "wait": 1.0,
+      "zone": [
+        310,
+        320,
+        530,
+        280
+      ]
+    },
+    {
+      "at": "choisir",
+      "label": "Choisir et enregistrer",
+      "click": ".carte-template-pick .carte-temp-preview >> nth=0",
+      "wait": 0.6
+    },
+    {
+      "at": "choisir",
+      "click": "button:has-text(\"enregistrer\") >> visible=true",
+      "wait": 0.6,
+      "zone": [
+        310,
+        320,
+        1300,
+        440
+      ]
+    },
+    {
+      "at": "partager",
+      "label": "Partager",
+      "click": "button[data-bs-target=\"#QrCodeModal\"] >> visible=true",
+      "wait": 1.0,
+      "zone": "#QrCodeModal .modal-content"
+    },
+    {
+      "at": "page",
+      "label": "La page associée",
+      "click": "#QrCodeModal .btn-close"
+    },
+    {
+      "at": "page",
+      "click": "button:has-text(\"page associée\") >> visible=true",
+      "wait": 0.8,
+      "zone": [
+        310,
+        320,
+        1300,
+        700
+      ]
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ],
+  "thumb_shot": "fin.png"
+}
