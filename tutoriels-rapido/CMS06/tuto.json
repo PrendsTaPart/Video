@@ -84,9 +84,12 @@
       "zone": ".modal.show .modal-content"
     },
     {
-      "at": "liste",
-      "label": "La liste des marques",
+      "at": "ajouter",
       "click": ".modal.show button:has-text(\"Commencer\")"
+    },
+    {
+      "at": "liste",
+      "label": "La liste des marques"
     },
     {
       "at": "liste",
