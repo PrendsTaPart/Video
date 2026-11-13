@@ -140,6 +140,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM14.png"
   },
   {
+    "id": "CRM15",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Contrats et signature électronique",
+    "tag": "1 min · Débutant",
+    "duree_s": 59,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM15.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM15.png"
+  },
+  {
     "id": "CRM16",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",
@@ -188,6 +198,16 @@
     "duree_s": 50,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM20.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM20.png"
+  },
+  {
+    "id": "CRM21",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Créer des segments de clients",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 58,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM21.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM21.png"
   },
   {
     "id": "CRM22",

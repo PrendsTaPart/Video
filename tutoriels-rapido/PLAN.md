@@ -104,13 +104,13 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM12 — Créer et envoyer un devis
 - [x] CRM13 — Factures et suivi des paiements
 - [x] CRM14 — Dépenses
-- [~] CRM15 — Contrats et signature électronique
+- [x] CRM15 — Contrats et signature électronique
 - [x] CRM16 — Modèles de contrats
 - [x] CRM17 — Campagnes email
 - [x] CRM18 — Campagnes SMS et aperçu
 - [x] CRM19 — Newsletters
 - [x] CRM20 — Campagnes automatiques
-- [~] CRM21 — Segments
+- [x] CRM21 — Segments
 - [x] CRM22 — Modèles d'emails et de SMS (éditeur)
 - [x] CRM23 — Workflows : créer, activer, suivre
 - [x] CRM24 — Formulaires
