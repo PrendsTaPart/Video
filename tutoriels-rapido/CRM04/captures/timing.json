@@ -1,0 +1,52 @@
+{
+  "voiceStartInCapture": 3.379,
+  "paragraphs": {
+    "intro": 0.04,
+    "acces": 5.03,
+    "recherche": 12.2,
+    "resultats": 19.94,
+    "unitaire": 27.94,
+    "tous": 33.32,
+    "suite": 39.56,
+    "outro": 44.74,
+    "end": 49.16
+  },
+  "zones": {
+    "acces": [
+      766,
+      369,
+      388,
+      342
+    ],
+    "recherche": [
+      666,
+      318,
+      528,
+      444
+    ],
+    "resultats": [
+      400,
+      210,
+      1380,
+      380
+    ],
+    "unitaire": [
+      400,
+      260,
+      680,
+      330
+    ],
+    "tous": [
+      1480,
+      210,
+      320,
+      70
+    ],
+    "suite": [
+      380,
+      110,
+      1420,
+      500
+    ]
+  }
+}

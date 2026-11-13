@@ -93,7 +93,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM01 — Créer son compte et choisir son forfait
 - [x] CRM02 — Visite guidée du tableau de bord
 - [x] CRM03 — Compléter son profil et sa configuration
-- [ ] CRM04 — Prospecter sur Google Maps
+- [x] CRM04 — Prospecter sur Google Maps
 - [ ] CRM05 — Rechercher une entreprise par SIRET
 - [ ] CRM06 — Gérer ses prospects et leurs notes
 - [ ] CRM07 — Le pipeline : étapes, déplacement, clôture
