@@ -80,8 +80,13 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 3 sources (`resources/views/admin/layouts/admin.blade.php`, `resources/views/admin/tutoriels/templates/editeur_pdf.blade.php`,
 `resources/js/components/CalendarComponent.vue`). Conséquence : **aucun composant Vue de RapidoCRM ne se charge**
 (Clients, prospection, pipeline, campagnes…). Les écrans en Blade pur (inscription, tableau de bord, profil) fonctionnent.
-Règle : on ne modifie pas `rapido-crm` → **CRM04 à CRM43 en attente de la décision de Michael** ; la production
-continue avec les sections B (RapidoCMS) puis C (RapidoRH), puis D. Reprendre la section A dès que le dépôt est corrigé.
+**Décision de Michael (13/11/2026) : recompiler en local pour filmer, sans toucher au dépôt.** Fait :
+- copie de travail **hors dépôt** `/home/user/rapido-crm-film` (sans `.git`, aucun commit/push possible) ;
+- dans cette copie seulement : marqueurs de conflit résolus en gardant la version la plus récente, et
+  `EntrepriseProfil.vue` (tronqué : la section « Entreprise » de l'accordéon enchaîne sur la fin d'un formulaire de
+  facture, déjà le cas avant la fusion) refermé pour compiler — cette section reste vide à l'écran ;
+- `npm run build` dans la copie, servie sur le port 8124 (voir LANCEMENT.md). Le dépôt `rapido-crm` reste intact.
+→ **CRM04 à CRM43 débloqués.** À signaler à l'équipe : le dépôt garde ses marqueurs et `EntrepriseProfil.vue` tronqué.
 
 ## A. RapidoCRM — un tutoriel par onglet / écran
 

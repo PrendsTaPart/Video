@@ -22,3 +22,27 @@ d'inscription doivent avoir un domaine réel (validation DNS) mais aucun e-mail 
 
 ## RapidoCMS / RapidoRH
 Même principe (Laravel 11 + Vue). Recette détaillée ajoutée lors du premier tutoriel de chaque application.
+
+
+## RapidoCRM — copie de tournage recompilée (depuis le 13/11/2026)
+
+Le dépôt contient des marqueurs de conflit (build et 3 sources) : on filme une **copie hors dépôt**.
+
+```bash
+mkdir -p /home/user/rapido-crm-film
+tar -C /home/user/rapido-crm --exclude=./.git -cf - . | tar -C /home/user/rapido-crm-film -xf -
+cd /home/user/rapido-crm-film
+# résoudre les marqueurs (garder la 2e version) dans :
+#   resources/views/admin/layouts/admin.blade.php, resources/views/admin/tutoriels/templates/editeur_pdf.blade.php,
+#   resources/js/components/CalendarComponent.vue
+# refermer les balises de EntrepriseProfil.vue après la ligne 138 (section tronquée), puis :
+npm run build
+php artisan serve --port=8124
+node /home/user/video/tutoriels-rapido/_gabarit/mock-n8n.cjs   # prospection Maps simulée (port 8199)
+```
+
+## RapidoCMS (port 8125)
+
+`.env` local : `SESSION_DRIVER=file`, `CACHE_STORE=file`, `QUEUE_CONNECTION=sync`, `MAIL_MAILER=log`,
+`MAIL_FROM_ADDRESS="no-reply@rapido.test"`. Données : `php _gabarit/demo-cms.php database/database.sqlite`.
+Les fonctions IA (OpenAI) sont simulées dans le navigateur par `record.cjs` (`mocks` dans tuto.json).
