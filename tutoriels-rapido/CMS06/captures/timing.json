@@ -1,5 +1,5 @@
 {
-  "voiceStartInCapture": 3.306,
+  "voiceStartInCapture": 3.397,
   "paragraphs": {
     "intro": 0.02,
     "acces": 9.6,
@@ -50,10 +50,10 @@
       200
     ],
     "multi": [
-      312,
-      305,
-      1296,
-      360
+      226,
+      328,
+      1468,
+      752
     ]
   }
 }
