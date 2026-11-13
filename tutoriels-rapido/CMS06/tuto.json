@@ -90,22 +90,17 @@
     },
     {
       "at": "liste",
-      "click": ".nav-link:has-text(\"Entreprise\")"
-    },
-    {
-      "at": "liste",
-      "click": "text=Ma marque",
       "hover": "td [data-bs-toggle=dropdown]",
       "zone": [
         312,
         305,
         1296,
         360
-      ]
+      ],
+      "wait": 2.5
     },
     {
-      "at": "infos",
-      "label": "Les informations",
+      "at": "liste",
       "click": "td [data-bs-toggle=dropdown]"
     },
     {
@@ -130,7 +125,8 @@
         120,
         760,
         260
-      ]
+      ],
+      "label": "Les informations"
     },
     {
       "at": "charte",
