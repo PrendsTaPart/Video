@@ -1,0 +1,46 @@
+{
+  "voiceStartInCapture": 3.468,
+  "paragraphs": {
+    "intro": 0.02,
+    "acces": 4.84,
+    "stats": 8.06,
+    "tableau": 14.82,
+    "resultat": 21.32,
+    "transcript": 28.92,
+    "suite": 34.82,
+    "outro": 39.32,
+    "end": 43.5
+  },
+  "zones": {
+    "stats": [
+      442,
+      385,
+      1296,
+      130
+    ],
+    "tableau": [
+      442,
+      535,
+      690,
+      510
+    ],
+    "resultat": [
+      970,
+      535,
+      520,
+      510
+    ],
+    "transcript": [
+      546,
+      211,
+      828,
+      658
+    ],
+    "suite": [
+      442,
+      590,
+      1296,
+      80
+    ]
+  }
+}
