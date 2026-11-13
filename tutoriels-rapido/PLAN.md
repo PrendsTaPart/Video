@@ -131,7 +131,7 @@ continue avec les sections B (RapidoCMS) puis C (RapidoRH), puis D. Reprendre la
 
 ## B. RapidoCMS — un tutoriel par onglet / écran
 
-- [ ] CMS01 — Créer son compte et choisir un pack
+- [x] CMS01 — Créer son compte et choisir un pack
 - [x] CMS02 — Visite guidée du tableau de bord
 - [ ] CMS03 — Connecter ses réseaux sociaux (Facebook, Instagram, LinkedIn, TikTok)
 - [~] CMS04 — Connecter LinkedIn → fusionné dans CMS03 (un seul écran, quatre panneaux)
