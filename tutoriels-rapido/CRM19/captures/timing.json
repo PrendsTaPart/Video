@@ -1,0 +1,45 @@
+{
+  "voiceStartInCapture": 3.866,
+  "paragraphs": {
+    "intro": 0.03,
+    "historique": 5.07,
+    "cible": 9.77,
+    "modele": 16.55,
+    "compte": 23.83,
+    "apercu": 26.93,
+    "outro": 33.57,
+    "end": 37.64
+  },
+  "zones": {
+    "historique": [
+      280,
+      360,
+      1620,
+      380
+    ],
+    "cible": [
+      390,
+      280,
+      1400,
+      140
+    ],
+    "modele": [
+      390,
+      470,
+      1400,
+      540
+    ],
+    "compte": [
+      390,
+      260,
+      1400,
+      180
+    ],
+    "apercu": [
+      740,
+      290,
+      700,
+      440
+    ]
+  }
+}
