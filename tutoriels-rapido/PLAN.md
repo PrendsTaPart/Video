@@ -133,7 +133,7 @@ continue avec les sections B (RapidoCMS) puis C (RapidoRH), puis D. Reprendre la
 
 - [x] CMS01 — Créer son compte et choisir un pack
 - [x] CMS02 — Visite guidée du tableau de bord
-- [ ] CMS03 — Connecter ses réseaux sociaux (Facebook, Instagram, LinkedIn, TikTok)
+- [x] CMS03 — Connecter ses réseaux sociaux (Facebook, Instagram, LinkedIn, TikTok)
 - [~] CMS04 — Connecter LinkedIn → fusionné dans CMS03 (un seul écran, quatre panneaux)
 - [~] CMS05 — Connecter TikTok → fusionné dans CMS03
 - [ ] CMS06 — Créer son kit de marque
