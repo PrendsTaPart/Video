@@ -1,0 +1,52 @@
+{
+  "voiceStartInCapture": 3.33,
+  "paragraphs": {
+    "intro": 0.02,
+    "liste": 4.62,
+    "types": 11.5,
+    "detail": 21.14,
+    "recalculer": 24.9,
+    "creer": 29.66,
+    "utiliser": 40.54,
+    "outro": 45.9,
+    "end": 50.52
+  },
+  "zones": {
+    "liste": [
+      280,
+      190,
+      1620,
+      420
+    ],
+    "types": [
+      280,
+      370,
+      1620,
+      240
+    ],
+    "detail": [
+      280,
+      110,
+      1620,
+      560
+    ],
+    "recalculer": [
+      1780,
+      115,
+      130,
+      55
+    ],
+    "creer": [
+      666,
+      194,
+      528,
+      692
+    ],
+    "utiliser": [
+      390,
+      280,
+      1400,
+      260
+    ]
+  }
+}
