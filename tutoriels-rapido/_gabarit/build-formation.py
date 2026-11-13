@@ -94,9 +94,9 @@ for i, s in enumerate(slides):
     if t == 'prompt':
         n = len(s['prompt'])
         anim.append(f"  (function(){{ const el = document.querySelector('#{sid} .typed'); const txt = el.dataset.text; const o = {{ n: 0 }};")
-        anim.append(f"    tl.to(o, {{ n: txt.length, duration: {min(3.2, n * 0.035):.2f}, ease: 'none', onUpdate: () => {{ el.textContent = txt.slice(0, Math.round(o.n)); }} }}, {st + 0.6:.3f}); }})();")
-        anim.append(f"  tl.from('#{sid} .a', {{ opacity: 0, y: 20, duration: .6, ease: 'expo.out' }}, {st + 0.8 + min(3.2, n * 0.035):.3f})")
-        anim.append(f"    .from('#{sid} .a p', {{ opacity: 0, y: 10, stagger: .35, duration: .4 }}, {st + 1.1 + min(3.2, n * 0.035):.3f});")
+        anim.append(f"    tl.to(o, {{ n: txt.length, duration: {min(3.2, n * 0.035, max(1.0, d * 0.32)):.2f}, ease: 'none', onUpdate: () => {{ el.textContent = txt.slice(0, Math.round(o.n)); }} }}, {st + 0.6:.3f}); }})();")
+        anim.append(f"  tl.from('#{sid} .a', {{ opacity: 0, y: 20, duration: .6, ease: 'expo.out' }}, {st + 0.8 + min(3.2, n * 0.035, max(1.0, d * 0.32)):.3f})")
+        anim.append(f"    .from('#{sid} .a p', {{ opacity: 0, y: 10, stagger: .35, duration: .4 }}, {st + 1.1 + min(3.2, n * 0.035, max(1.0, d * 0.32)):.3f});")
     anim.append(f"  tl.to('#{sid} .inner', {{ opacity: 0, y: -20, duration: .35, ease: 'power2.in' }}, {s['end'] - 0.3:.3f});")
 
 html_out = f'''<!doctype html>

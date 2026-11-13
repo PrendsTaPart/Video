@@ -1,0 +1,1148 @@
+[
+  {
+    "text": "et",
+    "start": 0.06,
+    "end": 0.13,
+    "id": "w0"
+  },
+  {
+    "text": "si",
+    "start": 0.13,
+    "end": 0.24,
+    "id": "w1"
+  },
+  {
+    "text": "vous",
+    "start": 0.26,
+    "end": 0.53,
+    "id": "w2"
+  },
+  {
+    "text": "pilotiez",
+    "start": 0.53,
+    "end": 1.07,
+    "id": "w3"
+  },
+  {
+    "text": "RAPIDO",
+    "start": 1.07,
+    "end": 1.46,
+    "id": "w4"
+  },
+  {
+    "text": "CMS",
+    "start": 1.46,
+    "end": 1.74,
+    "id": "w5"
+  },
+  {
+    "text": "en",
+    "start": 1.74,
+    "end": 1.89,
+    "id": "w6"
+  },
+  {
+    "text": "parlant",
+    "start": 1.89,
+    "end": 2.43,
+    "id": "w7"
+  },
+  {
+    "text": "simplement",
+    "start": 2.43,
+    "end": 3.22,
+    "id": "w8"
+  },
+  {
+    "text": "à",
+    "start": 3.22,
+    "end": 3.29,
+    "id": "w9"
+  },
+  {
+    "text": "Cloud.",
+    "start": 3.29,
+    "end": 3.78,
+    "id": "w10"
+  },
+  {
+    "text": "C'est",
+    "start": 3.84,
+    "end": 4.14,
+    "id": "w11"
+  },
+  {
+    "text": "possible",
+    "start": 4.14,
+    "end": 4.73,
+    "id": "w12"
+  },
+  {
+    "text": "grâce",
+    "start": 4.73,
+    "end": 5.1,
+    "id": "w13"
+  },
+  {
+    "text": "au",
+    "start": 5.1,
+    "end": 5.24,
+    "id": "w14"
+  },
+  {
+    "text": "connecteur",
+    "start": 5.24,
+    "end": 5.98,
+    "id": "w15"
+  },
+  {
+    "text": "MCP.",
+    "start": 5.98,
+    "end": 6.46,
+    "id": "w16"
+  },
+  {
+    "text": "Voyons",
+    "start": 6.52,
+    "end": 6.76,
+    "id": "w17"
+  },
+  {
+    "text": "comment",
+    "start": 6.78,
+    "end": 7.11,
+    "id": "w18"
+  },
+  {
+    "text": "l'installer",
+    "start": 7.17,
+    "end": 7.75,
+    "id": "w19"
+  },
+  {
+    "text": "et",
+    "start": 7.75,
+    "end": 7.86,
+    "id": "w20"
+  },
+  {
+    "text": "ce",
+    "start": 7.86,
+    "end": 7.96,
+    "id": "w21"
+  },
+  {
+    "text": "qu'il",
+    "start": 7.97,
+    "end": 8.2,
+    "id": "w22"
+  },
+  {
+    "text": "permet.",
+    "start": 8.28,
+    "end": 8.78,
+    "id": "w23"
+  },
+  {
+    "text": "MCP",
+    "start": 8.84,
+    "end": 9.02,
+    "id": "w24"
+  },
+  {
+    "text": "est",
+    "start": 9.02,
+    "end": 9.26,
+    "id": "w25"
+  },
+  {
+    "text": "un",
+    "start": 9.27,
+    "end": 9.43,
+    "id": "w26"
+  },
+  {
+    "text": "standard",
+    "start": 9.43,
+    "end": 10.09,
+    "id": "w27"
+  },
+  {
+    "text": "ouvert",
+    "start": 10.09,
+    "end": 10.62,
+    "id": "w28"
+  },
+  {
+    "text": "qui",
+    "start": 10.62,
+    "end": 10.77,
+    "id": "w29"
+  },
+  {
+    "text": "permet",
+    "start": 10.77,
+    "end": 11.08,
+    "id": "w30"
+  },
+  {
+    "text": "à",
+    "start": 11.08,
+    "end": 11.16,
+    "id": "w31"
+  },
+  {
+    "text": "un",
+    "start": 11.17,
+    "end": 11.29,
+    "id": "w32"
+  },
+  {
+    "text": "assistant",
+    "start": 11.35,
+    "end": 12.18,
+    "id": "w33"
+  },
+  {
+    "text": "IA",
+    "start": 12.18,
+    "end": 12.4,
+    "id": "w34"
+  },
+  {
+    "text": "d'utiliser",
+    "start": 12.46,
+    "end": 13.04,
+    "id": "w35"
+  },
+  {
+    "text": "vos",
+    "start": 13.04,
+    "end": 13.2,
+    "id": "w36"
+  },
+  {
+    "text": "logiciels.",
+    "start": 13.23,
+    "end": 14.06,
+    "id": "w37"
+  },
+  {
+    "text": "Avec",
+    "start": 14.12,
+    "end": 14.3,
+    "id": "w38"
+  },
+  {
+    "text": "le",
+    "start": 14.32,
+    "end": 14.45,
+    "id": "w39"
+  },
+  {
+    "text": "connecteur",
+    "start": 14.45,
+    "end": 15.12,
+    "id": "w40"
+  },
+  {
+    "text": "RAPIDO",
+    "start": 15.12,
+    "end": 15.5,
+    "id": "w41"
+  },
+  {
+    "text": "CMS,",
+    "start": 15.5,
+    "end": 15.86,
+    "id": "w42"
+  },
+  {
+    "text": "Cloud",
+    "start": 15.88,
+    "end": 16.26,
+    "id": "w43"
+  },
+  {
+    "text": "accède",
+    "start": 16.26,
+    "end": 16.71,
+    "id": "w44"
+  },
+  {
+    "text": "à",
+    "start": 16.71,
+    "end": 16.78,
+    "id": "w45"
+  },
+  {
+    "text": "45",
+    "start": 16.78,
+    "end": 17.24,
+    "id": "w46"
+  },
+  {
+    "text": "outils.",
+    "start": 17.24,
+    "end": 17.98,
+    "id": "w47"
+  },
+  {
+    "text": "Vos",
+    "start": 18.04,
+    "end": 18.16,
+    "id": "w48"
+  },
+  {
+    "text": "comptes,",
+    "start": 18.16,
+    "end": 18.71,
+    "id": "w49"
+  },
+  {
+    "text": "vos",
+    "start": 18.71,
+    "end": 18.89,
+    "id": "w50"
+  },
+  {
+    "text": "brouillons,",
+    "start": 18.89,
+    "end": 19.68,
+    "id": "w51"
+  },
+  {
+    "text": "vos",
+    "start": 19.68,
+    "end": 19.87,
+    "id": "w52"
+  },
+  {
+    "text": "images,",
+    "start": 19.94,
+    "end": 20.56,
+    "id": "w53"
+  },
+  {
+    "text": "votre",
+    "start": 20.58,
+    "end": 20.92,
+    "id": "w54"
+  },
+  {
+    "text": "marque",
+    "start": 20.92,
+    "end": 21.32,
+    "id": "w55"
+  },
+  {
+    "text": "et",
+    "start": 21.32,
+    "end": 21.38,
+    "id": "w56"
+  },
+  {
+    "text": "vos",
+    "start": 21.38,
+    "end": 21.8,
+    "id": "w57"
+  },
+  {
+    "text": "campagnes.",
+    "start": 21.8,
+    "end": 22.52,
+    "id": "w58"
+  },
+  {
+    "text": "Pour",
+    "start": 22.58,
+    "end": 22.73,
+    "id": "w59"
+  },
+  {
+    "text": "l'installer,",
+    "start": 22.73,
+    "end": 23.41,
+    "id": "w60"
+  },
+  {
+    "text": "ouvrez",
+    "start": 23.42,
+    "end": 23.78,
+    "id": "w61"
+  },
+  {
+    "text": "les",
+    "start": 23.78,
+    "end": 23.96,
+    "id": "w62"
+  },
+  {
+    "text": "paramètres",
+    "start": 23.96,
+    "end": 24.56,
+    "id": "w63"
+  },
+  {
+    "text": "de",
+    "start": 24.56,
+    "end": 24.68,
+    "id": "w64"
+  },
+  {
+    "text": "Cloud,",
+    "start": 24.68,
+    "end": 25.16,
+    "id": "w65"
+  },
+  {
+    "text": "rubrique",
+    "start": 25.16,
+    "end": 25.73,
+    "id": "w66"
+  },
+  {
+    "text": "Connecteur,",
+    "start": 25.73,
+    "end": 26.48,
+    "id": "w67"
+  },
+  {
+    "text": "et",
+    "start": 26.54,
+    "end": 26.61,
+    "id": "w68"
+  },
+  {
+    "text": "ajoutez",
+    "start": 26.61,
+    "end": 27.07,
+    "id": "w69"
+  },
+  {
+    "text": "un",
+    "start": 27.07,
+    "end": 27.2,
+    "id": "w70"
+  },
+  {
+    "text": "connecteur",
+    "start": 27.2,
+    "end": 27.85,
+    "id": "w71"
+  },
+  {
+    "text": "personnalisé",
+    "start": 27.85,
+    "end": 28.63,
+    "id": "w72"
+  },
+  {
+    "text": "avec",
+    "start": 28.63,
+    "end": 28.87,
+    "id": "w73"
+  },
+  {
+    "text": "l'adresse",
+    "start": 28.89,
+    "end": 29.46,
+    "id": "w74"
+  },
+  {
+    "text": "de",
+    "start": 29.53,
+    "end": 29.56,
+    "id": "w75"
+  },
+  {
+    "text": "RAPIDO",
+    "start": 29.6,
+    "end": 29.98,
+    "id": "w76"
+  },
+  {
+    "text": "CMS.",
+    "start": 30.18,
+    "end": 30.48,
+    "id": "w77"
+  },
+  {
+    "text": "Connectez-vous",
+    "start": 30.54,
+    "end": 31.28,
+    "id": "w78"
+  },
+  {
+    "text": "ensuite",
+    "start": 31.28,
+    "end": 31.69,
+    "id": "w79"
+  },
+  {
+    "text": "avec",
+    "start": 31.69,
+    "end": 31.92,
+    "id": "w80"
+  },
+  {
+    "text": "votre",
+    "start": 31.92,
+    "end": 32.21,
+    "id": "w81"
+  },
+  {
+    "text": "compte",
+    "start": 32.21,
+    "end": 32.56,
+    "id": "w82"
+  },
+  {
+    "text": "RAPIDO.",
+    "start": 32.56,
+    "end": 33.12,
+    "id": "w83"
+  },
+  {
+    "text": "Cloud",
+    "start": 33.18,
+    "end": 33.45,
+    "id": "w84"
+  },
+  {
+    "text": "agit",
+    "start": 33.45,
+    "end": 33.71,
+    "id": "w85"
+  },
+  {
+    "text": "avec",
+    "start": 33.71,
+    "end": 33.97,
+    "id": "w86"
+  },
+  {
+    "text": "vos",
+    "start": 33.97,
+    "end": 34.1,
+    "id": "w87"
+  },
+  {
+    "text": "droits",
+    "start": 34.16,
+    "end": 34.54,
+    "id": "w88"
+  },
+  {
+    "text": "sur",
+    "start": 34.54,
+    "end": 34.73,
+    "id": "w89"
+  },
+  {
+    "text": "votre",
+    "start": 34.73,
+    "end": 35.01,
+    "id": "w90"
+  },
+  {
+    "text": "entreprise",
+    "start": 35.08,
+    "end": 35.7,
+    "id": "w91"
+  },
+  {
+    "text": "uniquement.",
+    "start": 35.72,
+    "end": 36.52,
+    "id": "w92"
+  },
+  {
+    "text": "Premier",
+    "start": 36.7,
+    "end": 37.16,
+    "id": "w93"
+  },
+  {
+    "text": "exemple,",
+    "start": 37.16,
+    "end": 37.75,
+    "id": "w94"
+  },
+  {
+    "text": "demandez-lui",
+    "start": 37.77,
+    "end": 38.26,
+    "id": "w95"
+  },
+  {
+    "text": "trois",
+    "start": 38.26,
+    "end": 38.48,
+    "id": "w96"
+  },
+  {
+    "text": "brouillons",
+    "start": 38.48,
+    "end": 38.96,
+    "id": "w97"
+  },
+  {
+    "text": "pour",
+    "start": 38.96,
+    "end": 39.15,
+    "id": "w98"
+  },
+  {
+    "text": "la",
+    "start": 39.21,
+    "end": 39.3,
+    "id": "w99"
+  },
+  {
+    "text": "semaine",
+    "start": 39.3,
+    "end": 39.7,
+    "id": "w100"
+  },
+  {
+    "text": "à",
+    "start": 39.72,
+    "end": 39.78,
+    "id": "w101"
+  },
+  {
+    "text": "partir",
+    "start": 39.78,
+    "end": 40.04,
+    "id": "w102"
+  },
+  {
+    "text": "de",
+    "start": 40.04,
+    "end": 40.46,
+    "id": "w103"
+  },
+  {
+    "text": "votre",
+    "start": 40.46,
+    "end": 40.64,
+    "id": "w104"
+  },
+  {
+    "text": "kit",
+    "start": 40.64,
+    "end": 40.82,
+    "id": "w105"
+  },
+  {
+    "text": "de",
+    "start": 40.84,
+    "end": 40.97,
+    "id": "w106"
+  },
+  {
+    "text": "marque.",
+    "start": 40.97,
+    "end": 41.6,
+    "id": "w107"
+  },
+  {
+    "text": "Cloud",
+    "start": 41.66,
+    "end": 41.93,
+    "id": "w108"
+  },
+  {
+    "text": "lit",
+    "start": 41.94,
+    "end": 42.12,
+    "id": "w109"
+  },
+  {
+    "text": "votre",
+    "start": 42.12,
+    "end": 42.45,
+    "id": "w110"
+  },
+  {
+    "text": "marque",
+    "start": 42.45,
+    "end": 42.83,
+    "id": "w111"
+  },
+  {
+    "text": "puis",
+    "start": 42.84,
+    "end": 43.1,
+    "id": "w112"
+  },
+  {
+    "text": "crée",
+    "start": 43.1,
+    "end": 43.34,
+    "id": "w113"
+  },
+  {
+    "text": "les",
+    "start": 43.4,
+    "end": 43.49,
+    "id": "w114"
+  },
+  {
+    "text": "brouillons",
+    "start": 43.56,
+    "end": 44.18,
+    "id": "w115"
+  },
+  {
+    "text": "dans",
+    "start": 44.2,
+    "end": 44.45,
+    "id": "w116"
+  },
+  {
+    "text": "RAPIDO",
+    "start": 44.45,
+    "end": 44.83,
+    "id": "w117"
+  },
+  {
+    "text": "CMS.",
+    "start": 44.83,
+    "end": 45.3,
+    "id": "w118"
+  },
+  {
+    "text": "Il",
+    "start": 45.36,
+    "end": 45.44,
+    "id": "w119"
+  },
+  {
+    "text": "peut",
+    "start": 45.44,
+    "end": 45.72,
+    "id": "w120"
+  },
+  {
+    "text": "aussi",
+    "start": 45.72,
+    "end": 46.08,
+    "id": "w121"
+  },
+  {
+    "text": "générer",
+    "start": 46.08,
+    "end": 46.57,
+    "id": "w122"
+  },
+  {
+    "text": "un",
+    "start": 46.57,
+    "end": 46.71,
+    "id": "w123"
+  },
+  {
+    "text": "visuel",
+    "start": 46.71,
+    "end": 47.18,
+    "id": "w124"
+  },
+  {
+    "text": "ou",
+    "start": 47.18,
+    "end": 47.28,
+    "id": "w125"
+  },
+  {
+    "text": "transformer",
+    "start": 47.28,
+    "end": 47.8,
+    "id": "w126"
+  },
+  {
+    "text": "l'une",
+    "start": 47.87,
+    "end": 48.13,
+    "id": "w127"
+  },
+  {
+    "text": "de",
+    "start": 48.13,
+    "end": 48.22,
+    "id": "w128"
+  },
+  {
+    "text": "vos",
+    "start": 48.22,
+    "end": 48.36,
+    "id": "w129"
+  },
+  {
+    "text": "photos",
+    "start": 48.42,
+    "end": 48.7,
+    "id": "w130"
+  },
+  {
+    "text": "à",
+    "start": 48.7,
+    "end": 49.11,
+    "id": "w131"
+  },
+  {
+    "text": "partir",
+    "start": 49.11,
+    "end": 49.19,
+    "id": "w132"
+  },
+  {
+    "text": "d'une",
+    "start": 49.19,
+    "end": 49.48,
+    "id": "w133"
+  },
+  {
+    "text": "consigne.",
+    "start": 49.49,
+    "end": 50.18,
+    "id": "w134"
+  },
+  {
+    "text": "Et",
+    "start": 50.24,
+    "end": 50.28,
+    "id": "w135"
+  },
+  {
+    "text": "quand",
+    "start": 50.28,
+    "end": 50.54,
+    "id": "w136"
+  },
+  {
+    "text": "tout",
+    "start": 50.54,
+    "end": 50.75,
+    "id": "w137"
+  },
+  {
+    "text": "est",
+    "start": 50.75,
+    "end": 50.91,
+    "id": "w138"
+  },
+  {
+    "text": "prêt,",
+    "start": 50.91,
+    "end": 51.26,
+    "id": "w139"
+  },
+  {
+    "text": "il",
+    "start": 51.26,
+    "end": 51.36,
+    "id": "w140"
+  },
+  {
+    "text": "programme",
+    "start": 51.36,
+    "end": 51.85,
+    "id": "w141"
+  },
+  {
+    "text": "vos",
+    "start": 51.85,
+    "end": 52.01,
+    "id": "w142"
+  },
+  {
+    "text": "publications",
+    "start": 52.01,
+    "end": 52.68,
+    "id": "w143"
+  },
+  {
+    "text": "aux",
+    "start": 52.68,
+    "end": 52.82,
+    "id": "w144"
+  },
+  {
+    "text": "horaires",
+    "start": 52.82,
+    "end": 53.16,
+    "id": "w145"
+  },
+  {
+    "text": "que",
+    "start": 53.23,
+    "end": 53.37,
+    "id": "w146"
+  },
+  {
+    "text": "vous",
+    "start": 53.37,
+    "end": 53.58,
+    "id": "w147"
+  },
+  {
+    "text": "choisissez",
+    "start": 53.88,
+    "end": 54.2,
+    "id": "w148"
+  },
+  {
+    "text": "sur",
+    "start": 54.2,
+    "end": 54.36,
+    "id": "w149"
+  },
+  {
+    "text": "les",
+    "start": 54.38,
+    "end": 54.56,
+    "id": "w150"
+  },
+  {
+    "text": "bons",
+    "start": 54.56,
+    "end": 54.8,
+    "id": "w151"
+  },
+  {
+    "text": "réseaux.",
+    "start": 54.8,
+    "end": 55.42,
+    "id": "w152"
+  },
+  {
+    "text": "Le",
+    "start": 55.48,
+    "end": 55.53,
+    "id": "w153"
+  },
+  {
+    "text": "bon",
+    "start": 55.53,
+    "end": 55.7,
+    "id": "w154"
+  },
+  {
+    "text": "réflexe,",
+    "start": 55.7,
+    "end": 56.2,
+    "id": "w155"
+  },
+  {
+    "text": "relisez",
+    "start": 56.2,
+    "end": 56.59,
+    "id": "w156"
+  },
+  {
+    "text": "toujours",
+    "start": 56.59,
+    "end": 57.05,
+    "id": "w157"
+  },
+  {
+    "text": "les",
+    "start": 57.05,
+    "end": 57.17,
+    "id": "w158"
+  },
+  {
+    "text": "brouillons",
+    "start": 57.22,
+    "end": 57.78,
+    "id": "w159"
+  },
+  {
+    "text": "avant",
+    "start": 57.78,
+    "end": 58.07,
+    "id": "w160"
+  },
+  {
+    "text": "de",
+    "start": 58.07,
+    "end": 58.18,
+    "id": "w161"
+  },
+  {
+    "text": "les",
+    "start": 58.18,
+    "end": 58.34,
+    "id": "w162"
+  },
+  {
+    "text": "programmer.",
+    "start": 58.34,
+    "end": 59.22,
+    "id": "w163"
+  },
+  {
+    "text": "Cloud",
+    "start": 59.28,
+    "end": 59.52,
+    "id": "w164"
+  },
+  {
+    "text": "propose,",
+    "start": 59.54,
+    "end": 60.11,
+    "id": "w165"
+  },
+  {
+    "text": "c'est",
+    "start": 60.11,
+    "end": 60.42,
+    "id": "w166"
+  },
+  {
+    "text": "vous",
+    "start": 60.42,
+    "end": 60.67,
+    "id": "w167"
+  },
+  {
+    "text": "qui",
+    "start": 60.67,
+    "end": 60.86,
+    "id": "w168"
+  },
+  {
+    "text": "validez.",
+    "start": 60.86,
+    "end": 61.54,
+    "id": "w169"
+  },
+  {
+    "text": "Un",
+    "start": 61.6,
+    "end": 61.68,
+    "id": "w170"
+  },
+  {
+    "text": "connecteur,",
+    "start": 61.68,
+    "end": 62.52,
+    "id": "w171"
+  },
+  {
+    "text": "45",
+    "start": 62.58,
+    "end": 62.97,
+    "id": "w172"
+  },
+  {
+    "text": "outils,",
+    "start": 62.97,
+    "end": 63.58,
+    "id": "w173"
+  },
+  {
+    "text": "et",
+    "start": 63.58,
+    "end": 63.71,
+    "id": "w174"
+  },
+  {
+    "text": "votre",
+    "start": 63.71,
+    "end": 64.04,
+    "id": "w175"
+  },
+  {
+    "text": "communication",
+    "start": 64.04,
+    "end": 64.9,
+    "id": "w176"
+  },
+  {
+    "text": "pilotée",
+    "start": 64.9,
+    "end": 65.36,
+    "id": "w177"
+  },
+  {
+    "text": "en",
+    "start": 65.37,
+    "end": 65.49,
+    "id": "w178"
+  },
+  {
+    "text": "langage",
+    "start": 65.49,
+    "end": 65.95,
+    "id": "w179"
+  },
+  {
+    "text": "naturel.",
+    "start": 65.95,
+    "end": 66.58,
+    "id": "w180"
+  },
+  {
+    "text": "Retrouvez",
+    "start": 66.72,
+    "end": 67.29,
+    "id": "w181"
+  },
+  {
+    "text": "tous",
+    "start": 67.29,
+    "end": 67.55,
+    "id": "w182"
+  },
+  {
+    "text": "les",
+    "start": 67.56,
+    "end": 67.76,
+    "id": "w183"
+  },
+  {
+    "text": "tutoriels",
+    "start": 67.79,
+    "end": 68.4,
+    "id": "w184"
+  },
+  {
+    "text": "RAPIDO",
+    "start": 68.41,
+    "end": 68.83,
+    "id": "w185"
+  },
+  {
+    "text": "CMS",
+    "start": 68.83,
+    "end": 69.04,
+    "id": "w186"
+  },
+  {
+    "text": "sur",
+    "start": 69.04,
+    "end": 69.24,
+    "id": "w187"
+  },
+  {
+    "text": "RAPIDOSoftware.com.",
+    "start": 69.26,
+    "end": 70.74,
+    "id": "w188"
+  },
+  {
+    "text": "À",
+    "start": 70.8,
+    "end": 70.81,
+    "id": "w189"
+  },
+  {
+    "text": "bientôt!",
+    "start": 70.81,
+    "end": 71.54,
+    "id": "w190"
+  }
+]
