@@ -1,0 +1,22 @@
+{
+  "id": "CRM02",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Visite guidée du tableau de bord",
+  "em": "tableau de bord",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "fixes": { "Rapido CRM": "RapidoCRM", "emails": "e-mails" },
+  "chapters": [
+    { "at": "stats", "label": "Statistique générale", "zone": [380, 165, 1430, 545], "zoom": 1.18 },
+    { "at": "crm", "label": "Bloc CRM", "zone": [380, 760, 1400, 300], "zoom": 1.32 },
+    { "at": "marketing", "label": "Marketing", "zone": [380, 100, 1400, 200], "zoom": 1.3 },
+    { "at": "commercial", "label": "Commercial", "zone": [380, 160, 1400, 420], "zoom": 1.22 },
+    { "at": "segmentation", "label": "Segmentation", "zone": [380, 650, 1430, 420], "zoom": 1.2 },
+    { "at": "menu", "label": "Menu de navigation", "zone": [0, 150, 270, 700], "zoom": 1.25 }
+  ],
+  "end_cta": "Tous les tutoriels sur rapidosoftware.com"
+}

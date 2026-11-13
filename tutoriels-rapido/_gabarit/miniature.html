@@ -1,0 +1,83 @@
+<!doctype html>
+<!--
+  Gabarit de miniature YouTube 1280×720 des tutoriels Rapido (sans service externe).
+  Paramètres d'URL : product (crm|cms|rh|suite), num, title, em (mot(s) en italique),
+  kicker, tag, shot (chemin/URL de la capture d'écran, optionnel).
+  Rendu : node tutoriels-rapido/_gabarit/miniature.cjs <ID> "<titre>" ... (voir ce script).
+-->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@500&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<style>
+  :root { --crm-a:#4CAF50; --crm-b:#9BE15D; --cms-a:#03A9F5; --cms-b:#6EE7FF; --rh-a:#7E57C2; --rh-b:#C084FC; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1280px; height:720px; overflow:hidden; background:#05060A; }
+  .t { --a:var(--crm-a); --b:var(--crm-b); --grad:linear-gradient(100deg,var(--a),var(--b));
+       position:relative; width:1280px; height:720px; overflow:hidden; color:#fff;
+       font-family:"Geist",system-ui,sans-serif; isolation:isolate; display:flex; }
+  .t[data-p="cms"] { --a:var(--cms-a); --b:var(--cms-b); }
+  .t[data-p="rh"]  { --a:var(--rh-a);  --b:var(--rh-b); }
+  .t[data-p="suite"] { --a:var(--cms-a); --b:var(--rh-b); --grad:linear-gradient(100deg,var(--crm-b),var(--cms-b) 50%,var(--rh-b)); }
+  .halo { position:absolute; border-radius:50%; filter:blur(110px); z-index:-2; }
+  .h1 { width:760px; height:640px; right:-180px; top:-200px; background:var(--a); opacity:.55; }
+  .h2 { width:540px; height:480px; left:-220px; bottom:-280px; background:var(--b); opacity:.32; }
+  .h3 { width:420px; height:420px; right:240px; bottom:-260px; background:var(--a); opacity:.28; }
+  .grid { position:absolute; inset:0; z-index:-1;
+    background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);
+    background-size:48px 48px; -webkit-mask-image:radial-gradient(ellipse 70% 80% at 30% 40%,#000 20%,transparent 75%); }
+  .grain { position:absolute; inset:0; z-index:5; pointer-events:none; opacity:.12; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  .left { width:57%; padding:68px 0 56px 72px; display:flex; flex-direction:column; z-index:2; }
+  .top { display:flex; align-items:center; gap:18px; }
+  .num { font-family:"Geist Mono",monospace; font-size:26px; font-weight:500; padding:8px 18px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .kicker { font-size:21px; font-weight:600; text-transform:uppercase; letter-spacing:.18em; color:rgba(255,255,255,.72); }
+  h1 { margin-top:34px; font-size:90px; line-height:.98; font-weight:800; letter-spacing:-.045em; text-wrap:balance; text-shadow:0 4px 40px rgba(0,0,0,.5); }
+  h1 em { font-family:"Instrument Serif",serif; font-style:italic; font-weight:400; letter-spacing:-.01em; padding-right:.06em;
+    background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .tag { align-self:flex-start; margin-top:30px; font-size:25px; font-weight:600; padding:10px 22px; border-radius:14px;
+    border:2px solid color-mix(in srgb,var(--b) 70%,transparent); color:var(--b); background:color-mix(in srgb,var(--a) 16%,transparent); }
+  .brand { margin-top:auto; display:flex; align-items:center; gap:12px; font-size:22px; font-weight:600; color:rgba(255,255,255,.7); }
+  .brand img { width:40px; height:40px; }
+  .brand b { color:#fff; font-weight:600; } .brand i { opacity:.4; font-style:normal; }
+  .right { width:43%; position:relative; perspective:1500px; z-index:1; }
+  .screen { position:absolute; right:44px; top:50%; width:560px; height:350px; margin-top:-175px; border-radius:20px; overflow:hidden;
+    transform:rotateY(-14deg) rotateX(4deg); transform-origin:center;
+    border:1px solid rgba(255,255,255,.2); background:#12151f;
+    box-shadow:0 60px 120px -20px rgba(0,0,0,.85),0 0 0 10px rgba(255,255,255,.04),0 0 90px -10px var(--a); }
+  .screen img { width:100%; height:100%; object-fit:cover; object-position:top left; display:block; }
+  .glare { position:absolute; inset:0; background:linear-gradient(120deg,rgba(255,255,255,.22),transparent 35%,transparent 70%,rgba(255,255,255,.06)); }
+  .reflect { position:absolute; right:70px; top:560px; width:520px; height:70px; border-radius:50%; background:var(--a); filter:blur(50px); opacity:.35; }
+</style>
+</head>
+<body>
+<div class="t" id="t">
+  <div class="halo h1"></div><div class="halo h2"></div><div class="halo h3"></div><div class="grid"></div><div class="grain"></div>
+  <div class="left">
+    <div class="top"><span class="num" id="num"></span><span class="kicker" id="kicker"></span></div>
+    <h1 id="title"></h1>
+    <span class="tag" id="tag"></span>
+    <div class="brand"><img src="logo_icon.png" alt="" onerror="this.style.display='none'"><span>RapidoSoftware</span><i>/</i><b id="prod"></b></div>
+  </div>
+  <div class="right"><div class="screen"><img id="shot" alt=""><div class="glare"></div></div><div class="reflect"></div></div>
+</div>
+<script>
+  const q = new URLSearchParams(location.search);
+  const p = ['crm','cms','rh','suite'].includes(q.get('product')) ? q.get('product') : 'crm';
+  const names = { crm:'RapidoCRM', cms:'RapidoCMS', rh:'RapidoRH', suite:'Suite Rapido' };
+  const esc = (s) => s.replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  document.getElementById('t').dataset.p = p;
+  document.getElementById('num').textContent = q.get('num') || '';
+  document.getElementById('kicker').textContent = q.get('kicker') || ('Tutoriel ' + names[p]);
+  document.getElementById('prod').textContent = names[p];
+  const tag = q.get('tag'); const tagEl = document.getElementById('tag');
+  if (tag) tagEl.textContent = tag; else tagEl.remove();
+  const title = q.get('title') || 'Titre du tutoriel', em = q.get('em');
+  let html = esc(title);
+  if (em && title.includes(em)) html = esc(title).replace(esc(em), '<em>' + esc(em) + '</em>');
+  document.getElementById('title').innerHTML = html;
+  const shot = q.get('shot'); const img = document.getElementById('shot');
+  if (shot) img.src = shot; else img.remove();
+</script>
+</body>
+</html>

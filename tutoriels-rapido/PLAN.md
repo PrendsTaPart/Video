@@ -51,16 +51,17 @@ modifier les fichiers suivis par git**), `npm ci && npm run build`, `php artisan
    (règles de sous-titres du `studio-video/CLAUDE.md`), intro/outro aux couleurs du Rapido
    (CRM `#4CAF50`, CMS `#03A9F5`, RH `#7E57C2`). Rendu 16:9 1920×1080 ;
    version 9:16 pour les formations courtes si pertinent.
-5. **Miniature** : projet Lovable « Rapido Tutoriels — Miniatures » dans le workspace
-   **Market** (générateur de miniatures 1280×720 par paramètres d'URL) ; capture
-   Playwright de la page déployée → `miniature.png`.
+5. **Miniature** (sans Lovable ni service externe) : gabarit local
+   `tutoriels-rapido/_gabarit/miniature.html` rendu en PNG 1280×720 par
+   `node tutoriels-rapido/_gabarit/miniature.cjs --product crm --num CRM02 --title "…" --em "…" --tag "…" --shot capture.png --out tutoriels-rapido/<ID>/miniature.png`
+   (`--shot` = une vraie capture de l'écran filmé).
 6. **Dépôt** : `videos/tutoriels-rapido/<ID>.mp4`, `tutoriels-rapido/<ID>/miniature.png`,
    script, sous-titres `.srt`. Commit + push sur `tutoriels-rapido`.
 
 ## Références à remplir au fil des exécutions
 
-- Voix ElevenLabs : `voice_id = À DÉFINIR`
-- Projet Lovable miniatures : `project_id = À DÉFINIR` · URL déployée : `À DÉFINIR`
+- Voix ElevenLabs : `voice_id = TGAegA0zNRi8I6nUdq3i` (« Adam — Instructor », modèle `eleven_v4`) — en attente de validation par Michael sur la vidéo pilote CRM02
+- Miniatures : gabarit local `tutoriels-rapido/_gabarit/` (Lovable retiré à la demande de Michael)
 - Étude de la concurrence : `tutoriels-rapido/CONCURRENCE.md`
 
 ---
@@ -69,7 +70,7 @@ modifier les fichiers suivis par git**), `npm ci && npm run build`, `php artisan
 
 - [ ] P1 — Étude de la concurrence (HubSpot Academy, Pipedrive, Zoho, Salesforce Trailhead, Hootsuite, Buffer, Agorapulse, Lucca, PayFit, Monday, Asana, Notion) : formats, durées, structure, miniatures → `CONCURRENCE.md`
 - [ ] P2 — Charte des tutoriels (intro/outro, habillage, typographies, sous-titres) + gabarit HyperFrames réutilisable `tutoriels-rapido/_gabarit/`
-- [ ] P3 — Choix de la voix ElevenLabs + projet Lovable « Miniatures » (workspace Market) déployé
+- [ ] P3 — Validation de la voix ElevenLabs et du gabarit de miniature sur la vidéo pilote CRM02
 - [ ] P4 — Recette de lancement local de chaque application (CRM, CMS, RH) avec données fictives, documentée dans `tutoriels-rapido/LANCEMENT.md`
 
 ## A. RapidoCRM — un tutoriel par onglet / écran
@@ -227,3 +228,5 @@ Dépôt `rapido-software`, branche `site-vrais-ecrans` (jamais `production`).
 
 | Date (Paris) | Éléments traités | Résultat | Notes |
 |---|---|---|---|
+| 13/11 01 h 40 | P1, P2 | Perdu | La session de la routine n'avait pas le dépôt vidéo : push refusé (403), travail resté dans le conteneur. Routine mise en pause. |
+| 13/11 02 h 30 | Pilote CRM02 (vidéo + miniature) | Fait, en attente de validation | `videos/tutoriels-rapido/CRM02.mp4` (1 min 07, −14 LUFS), `tutoriels-rapido/CRM02/miniature.png`. Gabarits : `_gabarit/build-tutoriel.py`, `_gabarit/miniature.cjs`, `_gabarit/demo-crm.php`. |
