@@ -11,7 +11,7 @@
   "transcript": "audio/transcript.json",
   "capture": "captures/ecran.mp4",
   "start_path": "/contrat/config",
-  "type_delay": 28,
+  "type_delay": 16,
   "fixes": {
     "IA": "IA"
   },
@@ -99,11 +99,11 @@
       "fill": [
         [
           "#contratModal input[name=titre]",
-          "Contrat de shooting photo"
+          "Shooting photo"
         ],
         [
           "#contratModal textarea",
-          "Séance photo sur site et droits d'usage."
+          "Séance photo sur site."
         ]
       ],
       "zone": "#contratModal .modal-content"
@@ -111,7 +111,8 @@
     {
       "at": "titres",
       "label": "Article par article",
-      "click": "#contratModal button:has-text(\"Paramétrer\")"
+      "click": "#contratModal button:has-text(\"Paramétrer\")",
+      "wait": 1.0
     },
     {
       "at": "titres",
@@ -119,7 +120,7 @@
       "fill": [
         [
           "#titleModal #newtitre-input",
-          "Objet de la prestation"
+          "Objet"
         ],
         [
           "#titleModal input[type=number]",
@@ -144,7 +145,7 @@
       "fill": [
         [
           "#botModal textarea",
-          "Séance photo d'une demi-journée, 20 photos retouchées, livraison sous 10 jours"
+          "Séance photo, 20 images retouchées"
         ]
       ]
     },

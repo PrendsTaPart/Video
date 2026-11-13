@@ -1,0 +1,129 @@
+{
+  "id": "CRM24",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Créer un formulaire de contact",
+  "em": "formulaire",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/formulaires",
+  "type_delay": 22,
+  "fixes": {},
+  "end_cta": "Prochain épisode : les CTA et les pages",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Dans ce tutoriel, on crée un formulaire pour recueillir de nouveaux contacts, directement dans RapidoCRM."
+    },
+    {
+      "key": "creer",
+      "text": "Dans Formulaires, cliquez sur Créer un formulaire, puis donnez-lui un nom, par exemple : Demande de devis."
+    },
+    {
+      "key": "source",
+      "text": "Choisissez sa source : un contact, ou une fiche client complète, et l'entreprise à laquelle il se rattache."
+    },
+    {
+      "key": "champs",
+      "text": "Cochez ensuite les champs à demander : nom, prénom, e-mail et téléphone. Le nom et l'e-mail sont obligatoires."
+    },
+    {
+      "key": "liste",
+      "text": "Le formulaire apparaît dans la liste, avec son lien, ses champs et le nombre de clics qu'il reçoit."
+    },
+    {
+      "key": "usage",
+      "text": "Insérez-le dans vos pages : chaque réponse crée automatiquement un contact, et peut déclencher un workflow, comme un e-mail de bienvenue."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on ajoute des boutons d'appel à l'action à ses pages. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "creer",
+      "label": "Un nouveau formulaire",
+      "click": "button[data-bs-target=\"#ajouterFormModal\"]",
+      "fill": [
+        [
+          "#ajouterFormModal input[name=name]",
+          "Demande de devis"
+        ]
+      ],
+      "zone": "#ajouterFormModal .modal-content"
+    },
+    {
+      "at": "source",
+      "label": "Source et client",
+      "select": [
+        [
+          "#ajouterFormModal select[name=type]",
+          "Contact"
+        ],
+        [
+          "#ajouterFormModal select[name=entreprise]",
+          {
+            "index": 3
+          }
+        ]
+      ],
+      "zone": "#ajouterFormModal .modal-content"
+    },
+    {
+      "at": "champs",
+      "label": "Les champs",
+      "click": "#ajouterFormModal input[name=\"champs[]\"][value=nom] >> visible=true"
+    },
+    {
+      "at": "champs",
+      "click": "#ajouterFormModal input[name=\"champs[]\"][value=prenom] >> visible=true"
+    },
+    {
+      "at": "champs",
+      "click": "#ajouterFormModal input[name=\"champs[]\"][value=email] >> visible=true"
+    },
+    {
+      "at": "champs",
+      "click": "#ajouterFormModal input[name=\"champs[]\"][value=telephone] >> visible=true",
+      "zone": "#ajouterFormModal .modal-content"
+    },
+    {
+      "at": "liste",
+      "label": "Vos formulaires",
+      "click": "#ajouterFormModal button[type=submit]",
+      "wait": 1.0,
+      "zone": [
+        390,
+        200,
+        1400,
+        120
+      ]
+    },
+    {
+      "at": "usage",
+      "goto": "/admin/workflow",
+      "click": "button[data-bs-target=\"#addModal\"]",
+      "label": "Réponses et workflows"
+    },
+    {
+      "at": "usage",
+      "click": "#addModal button:has-text(\"modèle\")",
+      "wait": 1.0,
+      "zone": "#listModelsModal .modal-content"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ],
+  "thumb_shot": "fin.png"
+}
