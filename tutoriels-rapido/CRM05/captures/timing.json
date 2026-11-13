@@ -1,0 +1,45 @@
+{
+  "voiceStartInCapture": 3.411,
+  "paragraphs": {
+    "intro": 0.03,
+    "acces": 7.99,
+    "saisie": 12.43,
+    "resultat": 17.59,
+    "enregistrer": 23.55,
+    "astuce": 28.91,
+    "outro": 34.75,
+    "end": 38.76
+  },
+  "zones": {
+    "acces": [
+      666,
+      318,
+      528,
+      444
+    ],
+    "saisie": [
+      666,
+      318,
+      528,
+      444
+    ],
+    "resultat": [
+      400,
+      210,
+      680,
+      400
+    ],
+    "enregistrer": [
+      400,
+      260,
+      680,
+      330
+    ],
+    "astuce": [
+      400,
+      210,
+      1380,
+      400
+    ]
+  }
+}

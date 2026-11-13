@@ -94,7 +94,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM02 — Visite guidée du tableau de bord
 - [x] CRM03 — Compléter son profil et sa configuration
 - [x] CRM04 — Prospecter sur Google Maps
-- [ ] CRM05 — Rechercher une entreprise par SIRET
+- [x] CRM05 — Rechercher une entreprise par SIRET
 - [ ] CRM06 — Gérer ses prospects et leurs notes
 - [ ] CRM07 — Le pipeline : étapes, déplacement, clôture
 - [ ] CRM08 — L'agent vocal IA : configuration et premiers appels

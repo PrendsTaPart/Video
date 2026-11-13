@@ -40,6 +40,16 @@
   "miniature": null
  },
  {
+  "id": "CRM05",
+  "produit": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "titre": "Rechercher une entreprise par SIRET",
+  "tag": "1 min · Débutant",
+  "duree_s": 47,
+  "video": null,
+  "miniature": null
+ },
+ {
   "id": "CMS01",
   "produit": "cms",
   "kicker": "Tutoriel RapidoCMS",
