@@ -6,8 +6,8 @@
   "titre": "Créer son compte et choisir son forfait",
   "tag": "2 min · Débutant",
   "duree_s": 63,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM01.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM01.png"
  },
  {
   "id": "CRM02",
@@ -16,8 +16,8 @@
   "titre": "Visite guidée du tableau de bord",
   "tag": "",
   "duree_s": 67,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM02.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM02.png"
  },
  {
   "id": "CRM03",
@@ -26,8 +26,8 @@
   "titre": "Compléter son profil et sa configuration",
   "tag": "1 min · Débutant",
   "duree_s": 82,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM03.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM03.png"
  },
  {
   "id": "CRM04",
@@ -36,8 +36,8 @@
   "titre": "Prospecter sur Google Maps",
   "tag": "1 min · Débutant",
   "duree_s": 57,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM04.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM04.png"
  },
  {
   "id": "CRM05",
@@ -46,8 +46,8 @@
   "titre": "Rechercher une entreprise par SIRET",
   "tag": "1 min · Débutant",
   "duree_s": 47,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM05.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM05.png"
  },
  {
   "id": "CMS01",
@@ -56,8 +56,8 @@
   "titre": "Créer son compte et choisir sa formule",
   "tag": "2 min · Débutant",
   "duree_s": 82,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS01.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS01.png"
  },
  {
   "id": "CMS02",
@@ -66,8 +66,8 @@
   "titre": "Visite guidée du tableau de bord",
   "tag": "1 min · Débutant",
   "duree_s": 81,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS02.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS02.png"
  },
  {
   "id": "CMS03",
@@ -76,8 +76,8 @@
   "titre": "Connecter ses réseaux sociaux",
   "tag": "2 min · Débutant",
   "duree_s": 69,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS03.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS03.png"
  },
  {
   "id": "CMS06",
@@ -86,8 +86,8 @@
   "titre": "Créer son kit de marque",
   "tag": "2 min · Débutant",
   "duree_s": 63,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS06.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS06.png"
  },
  {
   "id": "CMS07",
@@ -96,8 +96,8 @@
   "titre": "Les clés d'API et les intégrations",
   "tag": "2 min · Avancé",
   "duree_s": 61,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS07.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS07.png"
  },
  {
   "id": "CMS08",
@@ -106,8 +106,8 @@
   "titre": "Rédiger un post avec l'IA",
   "tag": "1 min · Débutant",
   "duree_s": 58,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS08.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS08.png"
  },
  {
   "id": "CMS09",
@@ -116,8 +116,8 @@
   "titre": "Générer un visuel avec l'IA",
   "tag": "1 min · Débutant",
   "duree_s": 58,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS09.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS09.png"
  },
  {
   "id": "CMS24",
@@ -126,8 +126,8 @@
   "titre": "Piloter RapidoCMS avec Claude (MCP)",
   "tag": "2 min · Avancé",
   "duree_s": 79,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS24.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CMS24.png"
  },
  {
   "id": "F01",
@@ -136,8 +136,8 @@
   "titre": "Construire sa ligne éditoriale en 1 heure avec l'IA",
   "tag": "3 min · Méthode",
   "duree_s": 121,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F01.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F01.png"
  },
  {
   "id": "F02",
@@ -146,7 +146,7 @@
   "titre": "Un mois de contenus en une après-midi",
   "tag": "3 min · Méthode",
   "duree_s": 98,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F02.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F02.png"
  }
 ]

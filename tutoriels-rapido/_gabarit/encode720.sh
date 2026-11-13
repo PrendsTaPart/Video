@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Réencode des épisodes validés en 720p pour le site (H.264 + AAC, lecture progressive « faststart »).
+# Publication : pousser sur GitHub (dépôt public), puis importer chaque fichier dans la bibliothèque RapidoCMS du compte
+# (outil MCP Rapidocms upload_file_tool, nom « tutoriel-rapido-<EP>.mp4 » / « .png ») → URL S3 notées dans publication.json.
 # Usage : bash _gabarit/encode720.sh CRM01 CMS02 ...   → ../videos/tutoriels-rapido/720p/<EP>.mp4
 set -euo pipefail
 cd "$(dirname "$0")/../../videos/tutoriels-rapido"
