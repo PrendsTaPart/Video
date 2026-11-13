@@ -1,5 +1,5 @@
 {
-  "voiceStartInCapture": 3.33,
+  "voiceStartInCapture": 3.16,
   "paragraphs": {
     "intro": 0.02,
     "liste": 4.62,
@@ -25,16 +25,16 @@
       240
     ],
     "detail": [
-      280,
-      110,
-      1620,
-      560
+      270,
+      100,
+      1640,
+      600
     ],
     "recalculer": [
       1780,
-      115,
+      110,
       130,
-      55
+      60
     ],
     "creer": [
       666,

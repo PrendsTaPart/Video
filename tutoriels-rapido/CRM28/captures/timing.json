@@ -1,5 +1,5 @@
 {
-  "voiceStartInCapture": 3.011,
+  "voiceStartInCapture": 2.992,
   "paragraphs": {
     "intro": 0.01,
     "infos": 4.21,
@@ -29,10 +29,10 @@
       700
     ],
     "resultats": [
-      1100,
-      420,
-      700,
-      700
+      380,
+      70,
+      1500,
+      980
     ]
   }
 }

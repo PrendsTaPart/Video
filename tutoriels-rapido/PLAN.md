@@ -111,13 +111,13 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM19 — Newsletters
 - [x] CRM20 — Campagnes automatiques
 - [~] CRM21 — Segments
-- [~] CRM22 — Modèles d'emails et de SMS (éditeur)
+- [x] CRM22 — Modèles d'emails et de SMS (éditeur)
 - [x] CRM23 — Workflows : créer, activer, suivre
 - [x] CRM24 — Formulaires
 - [x] CRM25 — CTA et pages
 - [x] CRM26 — Programme de fidélité et cartes NFC
-- [~] CRM27 — Jeux concours
-- [~] CRM28 — Sondages
+- [x] CRM27 — Jeux concours
+- [x] CRM28 — Sondages
 - [x] CRM29 — Avis clients
 - [x] CRM30 — Cartes de visite digitales
 - [ ] CRM31 — Salons et leads de salon

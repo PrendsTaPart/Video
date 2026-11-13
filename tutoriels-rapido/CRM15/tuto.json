@@ -84,8 +84,7 @@
   {
    "at": "envoyer",
    "click": "button[data-bs-target=\"#listecontratModal\"]",
-   "wait": 3.0,
-   "zone": "#listecontratModal .modal-content"
+   "wait": 3.0
   },
   {
    "at": "details",

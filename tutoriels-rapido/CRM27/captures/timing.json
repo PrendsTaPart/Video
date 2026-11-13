@@ -1,5 +1,5 @@
 {
-  "voiceStartInCapture": 3.339,
+  "voiceStartInCapture": 3.005,
   "paragraphs": {
     "intro": 0.02,
     "infos": 5.8,
@@ -30,16 +30,16 @@
       720
     ],
     "recompenses": [
-      390,
-      350,
-      1400,
-      720
+      380,
+      70,
+      1500,
+      980
     ],
     "lancer": [
-      390,
-      350,
-      1400,
-      720
+      380,
+      70,
+      1500,
+      980
     ]
   }
 }

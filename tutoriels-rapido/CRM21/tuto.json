@@ -79,13 +79,8 @@
   {
    "at": "detail",
    "label": "Le détail",
-   "click": "tbody tr:first-child .dropdown-toggle",
-   "wait": 0.3
-  },
-  {
-   "at": "detail",
-   "click": "tbody tr:first-child a:has-text(\"Voir\")",
-   "wait": 0.8,
+   "wait": 2.5,
+   "eval": "location.href=document.querySelector('a[href*=\"segmentation/\"]').href",
    "zone": [
     270,
     100,

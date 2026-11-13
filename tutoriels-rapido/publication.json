@@ -190,6 +190,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM20.png"
   },
   {
+    "id": "CRM22",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Modèles d'e-mails et de SMS",
+    "tag": "1 min · Débutant",
+    "duree_s": 55,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM22.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM22.png"
+  },
+  {
     "id": "CRM23",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",
@@ -228,6 +238,26 @@
     "duree_s": 59,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM26.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM26.png"
+  },
+  {
+    "id": "CRM27",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Lancer un jeu concours",
+    "tag": "1 min · Débutant",
+    "duree_s": 54,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM27.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM27.png"
+  },
+  {
+    "id": "CRM28",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Créer un sondage",
+    "tag": "1 min · Débutant",
+    "duree_s": 45,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM28.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM28.png"
   },
   {
     "id": "CRM29",
