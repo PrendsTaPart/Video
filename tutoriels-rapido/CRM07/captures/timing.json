@@ -1,5 +1,5 @@
 {
-  "voiceStartInCapture": 3.252,
+  "voiceStartInCapture": 3.721,
   "paragraphs": {
     "intro": 0.04,
     "stats": 6.88,
@@ -37,10 +37,10 @@
       500
     ],
     "cloture": [
-      284,
-      120,
-      1612,
-      520
+      270,
+      787,
+      549,
+      245
     ],
     "plusieurs": [
       1505,
