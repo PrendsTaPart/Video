@@ -1,0 +1,41 @@
+{
+  "id": "CRM03",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Compléter son profil et sa configuration",
+  "em": "sa configuration",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "fixes": { "IMAP": "IMAP", "imap": "IMAP", "Twilio": "Twilio", "BIC": "BIC", "Iban": "IBAN", "IBAN": "IBAN", "API": "API" },
+  "end_cta": "Prochain épisode : prospecter sur Google Maps",
+  "start_path": "/dashboard",
+  "paragraphs": [
+    { "key": "intro", "text": "Dans ce tutoriel, on complète votre profil et la configuration de votre entreprise. C'est indispensable pour envoyer vos factures, vos e-mails et vos SMS." },
+    { "key": "profil", "text": "Ouvrez votre profil depuis le menu en haut à droite. Le premier onglet regroupe vos informations personnelles : ajoutez votre photo, votre numéro, votre adresse, puis cliquez sur Sauvegarder." },
+    { "key": "entreprise", "text": "Deuxième onglet : l'entreprise. Son logo, son nom, son SIRET, ses coordonnées et la couleur de vos factures : ces informations apparaissent sur vos devis et vos factures." },
+    { "key": "banque", "text": "Vos informations bancaires, la banque, le code BIC et l'IBAN, sont reprises automatiquement sur vos factures." },
+    { "key": "mail", "text": "Le bloc Boîte mail connecte votre messagerie en IMAP, pour gérer vos e-mails directement depuis RapidoCRM." },
+    { "key": "stripe", "text": "Avec votre clé Stripe, vos clients peuvent payer leurs factures en ligne." },
+    { "key": "twilio", "text": "Twilio sert à la fois à l'envoi des SMS et aux appels de l'agent vocal IA : renseignez votre identifiant, votre jeton et votre numéro." },
+    { "key": "agent", "text": "Enfin, vous pouvez utiliser votre propre clé d'API pour l'agent IA, ou laisser ce champ vide pour utiliser celle de RapidoCRM." },
+    { "key": "onglets", "text": "Les autres onglets vous donnent l'historique de vos abonnements, vos taux de TVA, votre carte de visite et vos jetons d'API." },
+    { "key": "outro", "text": "Dans le prochain tutoriel, on part à la recherche de vos premiers prospects. À tout de suite !" }
+  ],
+  "scenes": [
+    { "at": "intro", "click": "text=Léa martin" },
+    { "at": "profil", "label": "Votre profil", "click": "a.dropdown-item:has-text(\"profil\")", "zone": "form:has(input[name=\"telephone\"])",
+      "fill": [["input[name=\"telephone\"]", "06 12 34 56 78"], ["input[name=\"adresse\"]", "1 quai des Chartrons"], ["input[name=\"code_postal\"]", "33000"]] },
+    { "at": "entreprise", "label": "L'entreprise", "click": ".nav-link:has-text(\"entreprise\")", "zone": "Entreprise" },
+    { "at": "banque", "label": "Informations bancaires", "scroll": "Informations bancaires", "zone": "Informations bancaires" },
+    { "at": "mail", "label": "Boîte mail", "scroll": "Boîte mail", "zone": "Boîte mail" },
+    { "at": "stripe", "label": "Paiement en ligne", "scroll": "Stripe", "zone": "Stripe" },
+    { "at": "twilio", "label": "SMS et appels", "scroll": "Twilio", "zone": "Twilio" },
+    { "at": "agent", "label": "Agent IA", "scroll": "Agent ia", "zone": "Agent ia" },
+    { "at": "onglets", "label": "Les autres onglets", "top": true, "hover": ".nav-link:has-text(\"tva\")", "zone": [255, 120, 720, 60] }
+  ],
+  "thumb_shot": "fin.png"
+}

@@ -64,4 +64,7 @@ for ($d = 6; $d >= 0; $d--) {
 foreach (['Démo RapidoCRM — Lotus Lounge', 'Point devis — Maison Lafitte', 'Signature — Clover Bistro', 'Shooting — Petal & Plate', 'Bilan trimestriel', 'Rendez-vous salon'] as $i => $t) {
     $ins('rendez_vous', ['titre' => $t, 'entreprise_id' => $ents[$i], 'date_debut' => date('Y-m-d H:i:s', strtotime('+' . ($i + 1) . ' days 10:00')), 'date_fin' => date('Y-m-d H:i:s', strtotime('+' . ($i + 1) . ' days 11:00')), 'type' => 'visio', 'mode_envoi' => 'email', 'user_id' => $admin]);
 }
+// Réglages fictifs de l'entreprise (évite la fenêtre d'accueil « à compléter ») — chiffrés comme le fait l'application :
+// à lancer ensuite : php artisan tinker --execute='$c=App\Models\Company::find(1); foreach(["password"=>"demo-imap","stripe_secret"=>"sk_test_demo","sms_id"=>"demo-sms"] as $k=>$v){$c->$k=Illuminate\Support\Facades\Crypt::encryptString($v);} $c->saveQuietly();'
+$db->exec("update companies set banque='Banque Démo', switch='DEMOFRPP', iban='FR7600000000000000000000000', host='imap.exemple.test', port=993, encryption='ssl', adresse='1 quai des Chartrons', code_postal='33000', site_web='https://studio-lumiere.test' where id=$companyId");
 echo "Données de démonstration créées : company #$companyId, admin demo@rapido.test\n";

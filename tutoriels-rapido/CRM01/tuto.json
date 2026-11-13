@@ -1,0 +1,137 @@
+{
+  "id": "CRM01",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Créer son compte et choisir son forfait",
+  "em": "son forfait",
+  "tag": "2 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "fixes": {
+    "standard": "Standard",
+    "medium": "Medium",
+    "premium": "Premium"
+  },
+  "end_cta": "Prochain épisode : visite guidée du tableau de bord",
+  "public": true,
+  "start_path": "/register",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Bienvenue ! Dans ce tutoriel, on crée votre compte RapidoCRM et on choisit votre formule. Comptez deux minutes."
+    },
+    {
+      "key": "compte",
+      "text": "Sur la page d'inscription, renseignez le nom et le prénom du gérant, son adresse e-mail, puis choisissez un mot de passe d'au moins huit caractères, à confirmer juste en dessous."
+    },
+    {
+      "key": "suivant",
+      "text": "Cliquez sur Suivant."
+    },
+    {
+      "key": "entreprise",
+      "text": "Deuxième étape : votre entreprise. Indiquez son nom, son adresse e-mail et son numéro SIRET à quatorze chiffres, puis cliquez sur Création."
+    },
+    {
+      "key": "forfait",
+      "text": "Vous arrivez sur le choix du forfait. Quatre formules : un essai gratuit de trente jours, puis Standard, Medium et Premium, à payer au mois ou à l'année."
+    },
+    {
+      "key": "compare",
+      "text": "Elles se distinguent par le nombre de comptes commerciaux, d'e-mails, de SMS, de signatures électroniques et de cartes NFC. Les contacts, eux, sont illimités dans toutes les formules."
+    },
+    {
+      "key": "choisir",
+      "text": "Pour découvrir RapidoCRM sans engagement, commencez par l'essai gratuit : vous pourrez changer de forfait à tout moment."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on fait le tour du tableau de bord. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "compte",
+      "label": "Votre compte",
+      "zone": "form",
+      "fill": [
+        [
+          "input[name=\"nom\"]",
+          "Bernard"
+        ],
+        [
+          "input[name=\"prenom\"]",
+          "Camille"
+        ],
+        [
+          "input[name=\"email\"]",
+          "camille.bernard.demo@gmail.com"
+        ],
+        [
+          "input[name=\"password\"]",
+          "Demo-Rapido-2026"
+        ],
+        [
+          "input[name=\"password_confirmation\"]",
+          "Demo-Rapido-2026"
+        ]
+      ]
+    },
+    {
+      "at": "suivant",
+      "click": "button:has-text(\"suivant\")"
+    },
+    {
+      "at": "entreprise",
+      "label": "Votre entreprise",
+      "zone": "form",
+      "fill": [
+        [
+          "input[name=\"nom\"]",
+          "Atelier Camille"
+        ],
+        [
+          "input[name=\"email\"]",
+          "contact.ateliercamille@gmail.com"
+        ],
+        [
+          "input[name=\"siret\"]",
+          "12345678900037"
+        ]
+      ]
+    },
+    {
+      "at": "forfait",
+      "label": "Les formules",
+      "click": "button:has-text(\"création\")",
+      "zone": [
+        250,
+        160,
+        1400,
+        220
+      ]
+    },
+    {
+      "at": "compare",
+      "label": "Comparer",
+      "hover": "text=Medium",
+      "zone": [
+        250,
+        360,
+        1400,
+        720
+      ]
+    },
+    {
+      "at": "choisir",
+      "label": "L'essai gratuit",
+      "hover": "text=commencez gratuitement",
+      "zone": "text=commencez gratuitement",
+      "zone_closest": ".card"
+    }
+  ],
+  "thumb_shot": "fin.png"
+}

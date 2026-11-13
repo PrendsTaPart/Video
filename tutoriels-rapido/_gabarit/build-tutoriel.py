@@ -53,8 +53,12 @@ subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', VOICE_SRC, '-af', 'loudnorm
 FONTS = open(os.path.join(G, 'vendor', 'fonts', 'fonts.css')).read().replace('src: url(', 'src: url(assets/fonts/')
 
 # ---------------------------------------------------------------- sous-titres
+DEFAULT_FIXES = {'Rapido CRM': 'RapidoCRM', 'Rapido CMS': 'RapidoCMS', 'Rapido RH': 'RapidoRH',
+                 'Rapido Software': 'RapidoSoftware', 'emails': 'e-mails', 'email': 'e-mail', 'Email': 'E-mail',
+                 'siret': 'SIRET', 'Siret': 'SIRET', 'nfc': 'NFC', ' ia ': ' IA ', 'Kanban': 'Kanban'}
+
 def fix(text):
-    for a, b in cfg.get('fixes', {}).items():
+    for a, b in {**DEFAULT_FIXES, **cfg.get('fixes', {})}.items():
         text = text.replace(a, b)
     return text
 
@@ -91,11 +95,22 @@ for i in range(len(subs) - 1):
         subs[i] = (subs[i][0], subs[i + 1][0] - 0.02, subs[i][2])
 
 # ---------------------------------------------------------------- chapitres
+# Chapitres : « chapters » (zones fixes) ou « scenes » du tournage (zones mesurées dans captures/timing.json)
+measured = {}
+tpath = os.path.join(EP, 'captures', 'timing.json')
+if os.path.exists(tpath):
+    measured = json.load(open(tpath)).get('zones', {})
+src = cfg.get('chapters') or [s for s in cfg.get('scenes', []) if s.get('label')]
+src = [dict(c, zone=measured.get(c['at']) if not isinstance(c.get('zone'), list) else c['zone']) for c in src]
+src = [c for c in src if c.get('zone')] + [dict(c, zone=[0, 0, 1920, 1080], zoom=1.0) for c in src if not c.get('zone')]
+src.sort(key=lambda c: float(paras[c['at']]))
 chapters = []
-for i, ch in enumerate(cfg['chapters']):
+for i, ch in enumerate(src):
     start = INTRO + float(paras[ch['at']])
-    nxt = INTRO + float(paras[cfg['chapters'][i + 1]['at']]) if i + 1 < len(cfg['chapters']) else INTRO + float(paras.get('outro', paras['end']))
-    chapters.append(dict(ch, start=start, end=nxt, n=i + 1))
+    nxt = INTRO + float(paras[src[i + 1]['at']]) if i + 1 < len(src) else INTRO + float(paras.get('outro', paras['end']))
+    z = ch['zone']
+    auto = min(1.45, max(1.0, 0.92 * min(1920 / max(z[2], 1), 1080 / max(z[3], 1))))
+    chapters.append(dict(ch, start=start, end=nxt, n=i + 1, zoom=float(ch.get('zoom', round(auto, 2)))))
 
 def cam_for(zone, zoom):
     x, y, w, h = zone

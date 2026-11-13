@@ -1,0 +1,134 @@
+// Enregistreur générique des tutoriels Rapido.
+// Usage : node _gabarit/record.cjs <EP> <BASE_URL> <email> <mot_de_passe>
+// Lit <EP>/tuto.json (scènes) et <EP>/paragraphes.json (débuts de paragraphe de la voix, en s),
+// filme l'application au rythme de la voix et écrit <EP>/captures/{ecran.webm,timing.json,fin.png}.
+//
+// Une scène (tuto.json → "scenes") :
+//   { "at": "clé du paragraphe", "goto": "/chemin" (optionnel), "scroll": "Titre exact" | "css",
+//     "hover": "css", "click": "css", "fill": [["css","texte"]...], "wait": 0.8,
+//     "zone": "css" | "Titre exact" | [x,y,w,h], "label": "Libellé du chapitre", "zoom": 1.25 }
+const fs = require('fs');
+const path = require('path');
+const { chromium } = require('playwright');
+
+const [, , EP, BASE, EMAIL, PASSWORD] = process.argv;
+const cfg = JSON.parse(fs.readFileSync(path.join(EP, 'tuto.json'), 'utf8'));
+const T = JSON.parse(fs.readFileSync(path.join(EP, 'paragraphes.json'), 'utf8'));
+const OUT = path.join(EP, 'captures');
+fs.mkdirSync(OUT, { recursive: true });
+
+const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;height:28px;margin:-3px 0 0 -4px;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\'%3E%3Cpath d=\'M4 2l16 9-7 2-3 7z\' fill=\'%23111\' stroke=\'white\' stroke-width=\'1.6\'/%3E%3C/svg%3E") no-repeat}#rx-cursor.down{transform:scale(.85)}';
+
+(async () => {
+    const browser = await chromium.launch();
+    let state;
+    if (!cfg.public) {
+        const login = await browser.newContext({ viewport: { width: 1920, height: 1080 } });
+        const lp = await login.newPage();
+        await lp.goto(`${BASE}${cfg.login_path || '/login'}`, { waitUntil: 'networkidle' });
+        await lp.fill(cfg.login_email || 'input[name="email"]', EMAIL);
+        await lp.fill(cfg.login_password || 'input[name="password"]', PASSWORD);
+        await Promise.all([lp.waitForNavigation({ waitUntil: 'networkidle' }).catch(() => {}), lp.press(cfg.login_password || 'input[name="password"]', 'Enter')]);
+        state = await login.storageState();
+        await login.close();
+    }
+    const ctx = await browser.newContext({ viewport: { width: 1920, height: 1080 }, storageState: state, recordVideo: { dir: OUT, size: { width: 1920, height: 1080 } } });
+    const page = await ctx.newPage();
+    const installCursor = async () => {
+        await page.addStyleTag({ content: CURSOR_CSS }).catch(() => {});
+        await page.evaluate(() => {
+            if (document.getElementById('rx-cursor')) return;
+            const c = document.createElement('div'); c.id = 'rx-cursor'; document.body.appendChild(c);
+            const p = window.__rxMouse || { x: 1100, y: 520 }; c.style.left = p.x + 'px'; c.style.top = p.y + 'px';
+            document.addEventListener('mousemove', (e) => { window.__rxMouse = { x: e.clientX, y: e.clientY }; c.style.left = e.clientX + 'px'; c.style.top = e.clientY + 'px'; });
+            document.addEventListener('mousedown', () => c.classList.add('down'));
+            document.addEventListener('mouseup', () => c.classList.remove('down'));
+        }).catch(() => {});
+    };
+    page.on('load', installCursor);
+
+    const t0 = Date.now();
+    await page.goto(`${BASE}${cfg.start_path || '/dashboard'}`, { waitUntil: 'networkidle' });
+    await installCursor();
+    await page.waitForTimeout(1800);
+    const ready = (Date.now() - t0) / 1000;
+    const at = async (s) => { const w = ready + s - (Date.now() - t0) / 1000; if (w > 0) await page.waitForTimeout(w * 1000); };
+
+    let mouse = { x: 1100, y: 520 };
+    await page.mouse.move(mouse.x, mouse.y);
+    const moveTo = async (x, y, steps = 28) => { await page.mouse.move(x, y, { steps }); mouse = { x, y }; };
+
+    // Trouve un élément : sélecteur CSS, ou titre / texte exact
+    const resolve = async (target) => {
+        if (!target || Array.isArray(target)) return null;
+        let loc = null;
+        try { loc = page.locator(target).first(); if (await loc.count()) return loc; } catch (e) { /* pas un sélecteur valide */ }
+        loc = page.locator('main h1,main h2,main h3,main h4,main h5,main h6,.content-wrapper h1,.content-wrapper h2,.content-wrapper h3,.content-wrapper h4,.content-wrapper h5,h1,h2,h3,h4,h5,h6').filter({ hasText: new RegExp(`^\\s*${target.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*$`) }).first();
+        if (await loc.count()) return loc;
+        loc = page.getByText(target, { exact: true }).first();
+        return (await loc.count()) ? loc : null;
+    };
+    const scrollTo = async (target) => {
+        const el = await resolve(target);
+        if (!el) return;
+        await el.evaluate((n) => window.scrollTo({ top: n.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' }));
+        await page.waitForTimeout(1000);
+    };
+    // Zone d'un titre = du titre jusqu'au titre de même niveau suivant ; zone d'un sélecteur = sa boîte
+    const zoneOf = async (z, closest) => {
+        if (Array.isArray(z)) return z;
+        const el = await resolve(z);
+        if (!el) return null;
+        const r = await el.evaluate((n, closest) => {
+            if (closest && n.closest(closest)) n = n.closest(closest);
+            const isH = /^H[1-6]$/.test(n.tagName);
+            let rect = n.getBoundingClientRect();
+            if (isH) {
+                const hs = [...document.querySelectorAll(n.tagName)].filter((h) => h.offsetParent);
+                const next = hs.find((h) => h.getBoundingClientRect().top > rect.top + 30);
+                const container = n.parentElement.closest('.container-xxl,.container-fluid,.container,.content-wrapper,main') || n.parentElement;
+                const c = container.getBoundingClientRect();
+                const bottom = next ? next.getBoundingClientRect().top - 16 : Math.min(c.bottom, window.innerHeight);
+                return [c.left, rect.top - 10, c.width, bottom - rect.top + 10];
+            }
+            return [rect.left, rect.top, rect.width, rect.height];
+        }, closest || null);
+        let [x, y, w, h] = r.map((v) => Math.round(v));
+        const pad = 14; x -= pad; y -= pad; w += 2 * pad; h += 2 * pad;
+        x = Math.max(0, x); y = Math.max(0, y); w = Math.min(w, 1920 - x); h = Math.min(h, 1080 - y);
+        return h > 20 && w > 20 ? [x, y, w, h] : null;
+    };
+
+    const zones = {};
+    for (const sc of cfg.scenes) {
+        await at(T[sc.at]);
+        if (sc.goto) { await page.goto(`${BASE}${sc.goto}`, { waitUntil: 'networkidle' }).catch(() => {}); await installCursor(); await page.waitForTimeout(900); }
+        if (sc.click) {
+            const el = await resolve(sc.click);
+            if (el) { await el.scrollIntoViewIfNeeded().catch(() => {}); const b = await el.boundingBox(); if (b) await moveTo(b.x + Math.min(b.width / 2, 120), b.y + b.height / 2); await page.waitForTimeout(250); await el.click().catch(() => {}); await page.waitForLoadState('networkidle').catch(() => {}); await installCursor(); await page.waitForTimeout(800); }
+        }
+        if (sc.top) { await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' })); await page.waitForTimeout(700); }
+        if (sc.scroll) await scrollTo(sc.scroll);
+        for (const [sel, txt] of sc.fill || []) {
+            const el = await resolve(sel); if (!el) continue;
+            const b = await el.boundingBox(); if (b) await moveTo(b.x + 30, b.y + b.height / 2);
+            await el.click().catch(() => {}); await el.fill('').catch(() => {});
+            await el.pressSequentially(txt, { delay: 45 }).catch(() => {});
+            await page.waitForTimeout(250);
+        }
+        if (sc.hover) { const el = await resolve(sc.hover); if (el) { await el.evaluate((n) => { const r = n.getBoundingClientRect(); if (r.top < 90 || r.bottom > window.innerHeight - 40) window.scrollBy({ top: r.top - window.innerHeight / 2, behavior: 'smooth' }); }); await page.waitForTimeout(700); const b = await el.boundingBox(); if (b) await moveTo(b.x + Math.min(b.width / 2, 120), b.y + b.height / 2); } }
+        if (sc.wait) await page.waitForTimeout(sc.wait * 1000);
+        if (sc.zone) { const z = await zoneOf(sc.zone, sc.zone_closest); if (z) zones[sc.at] = z; }
+        if (!sc.hover && !sc.click && zones[sc.at]) { const [x, y, w, h] = zones[sc.at]; await moveTo(x + w * 0.45, y + Math.min(h * 0.5, 300)); }
+    }
+    await at(T.end + 0.8);
+    await page.evaluate(() => window.scrollTo({ top: 0 })).catch(() => {});
+    await page.waitForTimeout(300);
+    await page.screenshot({ path: path.join(OUT, 'fin.png') });
+    const video = page.video();
+    await ctx.close();
+    fs.renameSync(await video.path(), path.join(OUT, 'ecran.webm'));
+    fs.writeFileSync(path.join(OUT, 'timing.json'), JSON.stringify({ voiceStartInCapture: ready, paragraphs: T, zones }, null, 2));
+    await browser.close();
+    console.log(`capture ok — voix à ${ready.toFixed(2)} s ; zones mesurées : ${Object.keys(zones).join(', ') || 'aucune'}`);
+})();

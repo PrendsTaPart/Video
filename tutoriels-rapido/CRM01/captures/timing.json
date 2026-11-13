@@ -1,0 +1,46 @@
+{
+  "voiceStartInCapture": 3.138,
+  "paragraphs": {
+    "intro": 0.04,
+    "compte": 6.8,
+    "suivant": 15.8,
+    "entreprise": 17.55,
+    "forfait": 25.96,
+    "compare": 35.35,
+    "choisir": 45.52,
+    "outro": 51.72,
+    "end": 55.48
+  },
+  "zones": {
+    "compte": [
+      687,
+      240,
+      546,
+      503
+    ],
+    "entreprise": [
+      687,
+      329,
+      546,
+      374
+    ],
+    "forfait": [
+      250,
+      160,
+      1400,
+      220
+    ],
+    "compare": [
+      250,
+      360,
+      1400,
+      720
+    ],
+    "choisir": [
+      250,
+      0,
+      328,
+      1065
+    ]
+  }
+}

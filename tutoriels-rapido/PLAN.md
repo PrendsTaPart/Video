@@ -68,15 +68,15 @@ modifier les fichiers suivis par git**), `npm ci && npm run build`, `php artisan
 
 ## 0. Préparation (à faire en premier)
 
-- [ ] P1 — Étude de la concurrence (HubSpot Academy, Pipedrive, Zoho, Salesforce Trailhead, Hootsuite, Buffer, Agorapulse, Lucca, PayFit, Monday, Asana, Notion) : formats, durées, structure, miniatures → `CONCURRENCE.md`
-- [ ] P2 — Charte des tutoriels (intro/outro, habillage, typographies, sous-titres) + gabarit HyperFrames réutilisable `tutoriels-rapido/_gabarit/`
-- [ ] P3 — Validation de la voix ElevenLabs et du gabarit de miniature sur la vidéo pilote CRM02
-- [ ] P4 — Recette de lancement local de chaque application (CRM, CMS, RH) avec données fictives, documentée dans `tutoriels-rapido/LANCEMENT.md`
+- [x] P1 — Étude de la concurrence (HubSpot Academy, Pipedrive, Zoho, Salesforce Trailhead, Hootsuite, Buffer, Agorapulse, Lucca, PayFit, Monday, Asana, Notion) : formats, durées, structure, miniatures → `CONCURRENCE.md`
+- [x] P2 — Charte des tutoriels (intro/outro, habillage, typographies, sous-titres) + gabarit HyperFrames réutilisable `tutoriels-rapido/_gabarit/`
+- [x] P3 — Validation de la voix ElevenLabs et du gabarit de miniature sur la vidéo pilote CRM02
+- [x] P4 — Recette de lancement local de chaque application (CRM, CMS, RH) avec données fictives, documentée dans `tutoriels-rapido/LANCEMENT.md`
 
 ## A. RapidoCRM — un tutoriel par onglet / écran
 
-- [ ] CRM01 — Créer son compte et choisir son forfait
-- [ ] CRM02 — Visite guidée du tableau de bord
+- [x] CRM01 — Créer son compte et choisir son forfait
+- [x] CRM02 — Visite guidée du tableau de bord
 - [ ] CRM03 — Compléter son profil et sa configuration
 - [ ] CRM04 — Prospecter sur Google Maps
 - [ ] CRM05 — Rechercher une entreprise par SIRET
@@ -229,4 +229,5 @@ Dépôt `rapido-software`, branche `site-vrais-ecrans` (jamais `production`).
 | Date (Paris) | Éléments traités | Résultat | Notes |
 |---|---|---|---|
 | 13/11 01 h 40 | P1, P2 | Perdu | La session de la routine n'avait pas le dépôt vidéo : push refusé (403), travail resté dans le conteneur. Routine mise en pause. |
+| 13/11 02 h 50 | P1, P2, P3, P4, CRM01 | Fait | Voix et style validés par Michael ; chaîne générique `_gabarit/make.sh` (tournage, minutage, montage, rendu, miniature). |
 | 13/11 02 h 30 | Pilote CRM02 (vidéo + miniature) | Fait, en attente de validation | `videos/tutoriels-rapido/CRM02.mp4` (1 min 07, −14 LUFS), `tutoriels-rapido/CRM02/miniature.png`. Gabarits : `_gabarit/build-tutoriel.py`, `_gabarit/miniature.cjs`, `_gabarit/demo-crm.php`. |
