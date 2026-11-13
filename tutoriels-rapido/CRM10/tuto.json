@@ -1,0 +1,144 @@
+{
+  "id": "CRM10",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Ajouter, filtrer et importer ses clients",
+  "em": "importer ses clients",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/entreprises",
+  "type_delay": 30,
+  "fixes": {
+    "TVA": "TVA",
+    "NAF": "NAF",
+    "Excel": "Excel"
+  },
+  "end_cta": "Prochain épisode : le catalogue produits",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Dans ce tutoriel, on ajoute et on organise ses clients dans RapidoCRM : la fiche entreprise, les filtres, la recherche et l'import."
+    },
+    {
+      "key": "ajouter",
+      "text": "Dans Clients, le bouton Ajouter ouvre la fiche d'une nouvelle entreprise. On commence par son nom, son dirigeant et son domaine d'activité."
+    },
+    {
+      "key": "coordonnees",
+      "text": "Viennent ensuite ses coordonnées : e-mail, téléphone et adresse, puis ses réseaux sociaux."
+    },
+    {
+      "key": "financier",
+      "text": "En bas, les informations financières : numéro de TVA, code NAF, chiffre d'affaires et effectif."
+    },
+    {
+      "key": "filtre",
+      "text": "Dans la liste, le bouton Filtre trie vos clients par ville, par domaine d'activité, ou par commercial responsable."
+    },
+    {
+      "key": "recherche",
+      "text": "Et pour retrouver un client précis, tapez simplement son nom dans la recherche."
+    },
+    {
+      "key": "import",
+      "text": "Vous avez déjà un fichier clients ? L'icône Excel permet de l'importer. Téléchargez d'abord le modèle, remplissez-le, puis importez-le."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on crée son catalogue de produits et de services. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "ajouter",
+      "label": "Une nouvelle entreprise",
+      "click": "button:has-text(\"ajouter\") >> visible=true",
+      "fill": [
+        [
+          ".modal.show input[placeholder=\"Entrer un nom\"]",
+          "Atelier Garonne"
+        ],
+        [
+          ".modal.show input[placeholder=\"Entrer un nom de dirigeant\"]",
+          "Hugo Bernard"
+        ]
+      ],
+      "zone": [
+        680,
+        120,
+        500,
+        330
+      ]
+    },
+    {
+      "at": "coordonnees",
+      "label": "Coordonnées",
+      "scroll": ".modal.show :text('Coordonnées professionnelles')",
+      "zone": [
+        680,
+        120,
+        500,
+        500
+      ]
+    },
+    {
+      "at": "financier",
+      "label": "Informations financières",
+      "scroll": ".modal.show :text('Informations financières')",
+      "zone": [
+        680,
+        120,
+        500,
+        360
+      ]
+    },
+    {
+      "at": "filtre",
+      "label": "Filtrer",
+      "click": ".modal.show .btn-close"
+    },
+    {
+      "at": "filtre",
+      "click": "button:has-text(\"filtre\")",
+      "zone": ".dropdown-menu.show"
+    },
+    {
+      "at": "recherche",
+      "label": "Rechercher",
+      "click": "h1:has-text(\"Clients\")",
+      "fill": [
+        [
+          "input[placeholder=\"Chercher\"] >> visible=true",
+          "café"
+        ]
+      ],
+      "wait": 1.2,
+      "zone": [
+        390,
+        115,
+        1400,
+        470
+      ]
+    },
+    {
+      "at": "import",
+      "label": "Importer un fichier",
+      "click": "button.btn-excel",
+      "hover": ".modal.show label:has-text(\"Télécharger un template excel\")",
+      "zone": ".modal.show .modal-content"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ],
+  "thumb_shot": "fin.png"
+}
