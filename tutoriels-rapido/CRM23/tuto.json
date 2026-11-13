@@ -1,0 +1,134 @@
+{
+  "id": "CRM23",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Workflows : créer, activer, suivre",
+  "em": "Workflows",
+  "tag": "1 min · Intermédiaire",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/admin/workflow",
+  "type_delay": 30,
+  "fixes": {
+    "IA": "IA"
+  },
+  "end_cta": "Prochain épisode : les formulaires",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Dans ce tutoriel, on automatise ses relances avec les workflows de RapidoCRM."
+    },
+    {
+      "key": "liste",
+      "text": "La page Workflow liste vos automatisations, avec leur statut, actif ou inactif, et le nombre de contacts inscrits. Le filtre affiche par exemple seulement les workflows actifs."
+    },
+    {
+      "key": "creer",
+      "text": "Le bouton Créer un workflow propose deux chemins : partir de zéro, ou partir d'un modèle."
+    },
+    {
+      "key": "modeles",
+      "text": "Onze modèles sont prêts à l'emploi : e-mail de bienvenue, relance de devis, relance de facture impayée, ou même prospection complète avec l'agent vocal IA."
+    },
+    {
+      "key": "editeur",
+      "text": "Choisissons Relance devis. Le workflow s'ouvre dans l'éditeur : un déclencheur, un délai de trois jours, puis l'envoi d'un e-mail."
+    },
+    {
+      "key": "blocs",
+      "text": "À droite, la bibliothèque de blocs : communication, CRM, marketing, délais, branches conditionnelles, et prospection avec l'IA. Un clic suffit pour les ajouter."
+    },
+    {
+      "key": "activer",
+      "text": "Il ne reste qu'à passer le statut en Actif et à enregistrer : le workflow tourne alors tout seul, et chaque exécution est tracée."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on crée des formulaires qui alimentent ces workflows. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "liste",
+      "label": "Vos workflows",
+      "zone": [
+        390,
+        235,
+        1400,
+        280
+      ]
+    },
+    {
+      "at": "liste",
+      "click": "button:has-text(\"Filtre\") >> visible=true",
+      "wait": 0.4
+    },
+    {
+      "at": "creer",
+      "label": "Créer un workflow",
+      "click": "button[data-bs-target=\"#addModal\"]",
+      "wait": 0.6,
+      "zone": "#addModal .modal-content"
+    },
+    {
+      "at": "modeles",
+      "label": "Les modèles",
+      "click": "#addModal button:has-text(\"modèle\")",
+      "wait": 1.2,
+      "zone": "#listModelsModal .modal-content"
+    },
+    {
+      "at": "editeur",
+      "label": "L'éditeur",
+      "click": "#listModelsModal button:has-text(\"Relance devis\")",
+      "wait": 1.0,
+      "zone": [
+        390,
+        140,
+        920,
+        900
+      ]
+    },
+    {
+      "at": "blocs",
+      "label": "Les blocs",
+      "click": "button:has-text(\"communication\") >> visible=true",
+      "wait": 0.6,
+      "zone": [
+        1330,
+        220,
+        470,
+        840
+      ]
+    },
+    {
+      "at": "activer",
+      "label": "Activer",
+      "hover": "button:has-text(\"enregistrer\") >> visible=true",
+      "zone": [
+        1440,
+        140,
+        360,
+        70
+      ],
+      "select": [
+        [
+          "#workflowStatutVisible",
+          "Actif"
+        ]
+      ]
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ],
+  "thumb_shot": "fin.png"
+}
