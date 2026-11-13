@@ -1,0 +1,9 @@
+{
+  "name": "cocuisinage-tuto-scanner",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npx --yes hyperframes@0.9.41 check",
+    "render": "npx --yes hyperframes@0.9.41 render"
+  }
+}
