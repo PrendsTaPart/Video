@@ -111,11 +111,11 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
     const zones = {};
     for (const sc of cfg.scenes) {
         await at(T[sc.at]);
-        if (sc.goto) { await page.goto(`${BASE}${sc.goto}`, { waitUntil: 'load', timeout: 15000 }).catch(() => {}); await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => {}); await installCursor(); await page.waitForTimeout(900); }
+        if (sc.goto) { await page.goto(`${BASE}${sc.goto}`, { waitUntil: 'load', timeout: 15000 }).catch(() => {}); await page.waitForLoadState('networkidle', { timeout: 1500 }).catch(() => {}); await installCursor(); await page.waitForTimeout(900); }
         if (sc.eval) await page.evaluate(sc.eval).catch((e) => console.warn('eval', e.message));
         if (sc.click) {
             const el = await resolve(sc.click);
-            if (el) { await el.scrollIntoViewIfNeeded().catch(() => {}); const b = await el.boundingBox(); if (b) await moveTo(b.x + Math.min(b.width / 2, 120), b.y + b.height / 2); await page.waitForTimeout(250); await el.click().catch(() => {}); await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => {}); await installCursor(); await page.waitForTimeout(800); }
+            if (el) { await el.scrollIntoViewIfNeeded().catch(() => {}); const b = await el.boundingBox(); if (b) await moveTo(b.x + Math.min(b.width / 2, 120), b.y + b.height / 2); await page.waitForTimeout(250); await el.click().catch(() => {}); await page.waitForLoadState('networkidle', { timeout: 1500 }).catch(() => {}); await installCursor(); await page.waitForTimeout(800); }
         }
         if (sc.top) { await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' })); await page.waitForTimeout(700); }
         if (sc.scroll) await scrollTo(sc.scroll);

@@ -122,7 +122,7 @@
         ],
         [
           ".modal.show input[name=\"slogan\"]",
-          "La lumière qui raconte votre histoire"
+          "Votre histoire en lumière"
         ]
       ],
       "zone": [
@@ -171,5 +171,5 @@
     }
   ],
   "thumb_shot": "fin.png",
-  "type_delay": 25
+  "type_delay": 14
 }
