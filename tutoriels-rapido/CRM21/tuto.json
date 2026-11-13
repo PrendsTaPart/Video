@@ -1,0 +1,39 @@
+{
+  "id": "CRM21",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Créer des segments de clients",
+  "em": "segments",
+  "tag": "1 min · Intermédiaire",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/admin/segmentation",
+  "type_delay": 30,
+  "fixes": {"VIP": "VIP", "IA": "IA"},
+  "end_cta": "Prochain épisode : les modèles d'e-mails et de SMS",
+  "paragraphs": [
+    {"key": "intro", "text": "Dans ce tutoriel, on regroupe ses contacts en segments pour leur parler au bon moment."},
+    {"key": "liste", "text": "La page Segmentation liste vos segments, avec leur type, leur priorité et le nombre de contacts qu'ils réunissent."},
+    {"key": "types", "text": "Un segment actif se met à jour tout seul selon ses critères, par exemple : les commerces de Bordeaux. Un segment statique, comme vos clients VIP, est une liste fixe."},
+    {"key": "detail", "text": "Ouvrez un segment pour voir ses contacts, et comment chacun y est entré."},
+    {"key": "recalculer", "text": "Le bouton Recalculer applique à nouveau les critères, pour intégrer vos nouveaux clients."},
+    {"key": "creer", "text": "Pour en créer un, donnez-lui un nom, un type et une priorité. Et si vous utilisez l'assistant IA de RapidoCRM, demandez-lui simplement de créer le segment : il écrit les critères pour vous."},
+    {"key": "utiliser", "text": "Vos segments servent ensuite de cible dans toutes vos campagnes : e-mail, SMS et newsletter."},
+    {"key": "outro", "text": "Dans le prochain tutoriel, on soigne ses modèles d'e-mails et de SMS. À tout de suite !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3},
+    {"at": "liste", "label": "Vos segments", "zone": [280, 190, 1620, 420]},
+    {"at": "types", "label": "Actif ou statique", "zone": [280, 370, 1620, 240]},
+    {"at": "detail", "label": "Le détail", "goto": "/admin/segmentation/1", "wait": 0.4, "zone": [280, 110, 1620, 560]},
+    {"at": "recalculer", "label": "Recalculer", "hover": "button:has-text(\"recalculer\") >> visible=true", "zone": [1780, 115, 130, 55]},
+    {"at": "creer", "label": "Un nouveau segment", "goto": "/admin/segmentation", "click": "button:has-text(\"créer un segment\") >> visible=true",
+     "fill": [[".modal.show input >> nth=0", "Nouveaux clients 2026"]], "wait": 0.4, "zone": ".modal.show .modal-content"},
+    {"at": "utiliser", "label": "Cibler un segment", "goto": "/ajout-campagne-email", "select": [["select >> nth=0", "Par segment"]], "wait": 0.6, "zone": [390, 280, 1400, 260]},
+    {"at": "outro", "wait": 0.3}
+  ],
+  "thumb_shot": "fin.png"
+}

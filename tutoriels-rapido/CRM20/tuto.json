@@ -1,0 +1,37 @@
+{
+  "id": "CRM20",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Les campagnes automatiques",
+  "em": "automatiques",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/entreprises",
+  "type_delay": 30,
+  "fixes": {"SMS": "SMS"},
+  "end_cta": "Prochain épisode : les segments",
+  "paragraphs": [
+    {"key": "intro", "text": "Dans ce tutoriel, on programme ses campagnes à l'avance pour qu'elles partent toutes seules."},
+    {"key": "bouton", "text": "Depuis votre liste de clients, le bouton Campagne automatisée lance une campagne en un clic."},
+    {"key": "choix", "text": "Choisissez son canal : SMS, e-mail ou newsletter. Chacun suit les mêmes trois étapes : ciblage, message, validation."},
+    {"key": "programmer", "text": "Une fois validée, la campagne attend sa date d'envoi. Sur la page Campagnes, les envois à venir côtoient ceux déjà partis."},
+    {"key": "canaux", "text": "Un onglet par canal, avec pour chacun la cible, le domaine ou le segment visé, et la date."},
+    {"key": "compteurs", "text": "En haut, les compteurs résument votre activité : le total des campagnes, et leur répartition par canal."},
+    {"key": "outro", "text": "Dans le prochain tutoriel, on crée des segments pour cibler encore plus finement. À tout de suite !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3},
+    {"at": "bouton", "label": "Campagne automatisée", "hover": "button:has-text(\"campagne automatisée\") >> visible=true", "zone": [1300, 120, 230, 60]},
+    {"at": "choix", "label": "Le canal", "click": "button:has-text(\"campagne automatisée\") >> visible=true", "wait": 0.6, "zone": "#compagneModal .modal-content"},
+    {"at": "programmer", "label": "Envois programmés", "goto": "/campagnes-automatiques", "wait": 0.4, "zone": [280, 430, 1620, 300]},
+    {"at": "canaux", "label": "Un onglet par canal", "click": "button[data-bs-target=\"#tab-sms\"]", "wait": 0.5, "zone": [280, 360, 1620, 300]},
+    {"at": "canaux", "click": "button[data-bs-target=\"#tab-newsletter\"]"},
+    {"at": "compteurs", "label": "Les compteurs", "zone": [280, 220, 1620, 120]},
+    {"at": "outro", "wait": 0.3}
+  ],
+  "thumb_shot": "fin.png"
+}
