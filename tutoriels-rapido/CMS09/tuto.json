@@ -1,0 +1,42 @@
+{
+  "id": "CMS09",
+  "product": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "title": "Générer un visuel avec l'IA",
+  "em": "visuel",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/dashboard/social-media/ajout",
+  "type_delay": 22,
+  "fixes": { "IA": "IA" },
+  "end_cta": "Prochain épisode : la bibliothèque de fichiers",
+  "mocks": [
+    { "url": "**/api/posts/generate_image", "delay": 3.0, "json": { "success": true, "content": "/demo-rapido/visuel-famille.png" } },
+    { "url": "**/demo-rapido/visuel-famille.png", "file": "media/visuel-famille.png" }
+  ],
+  "paragraphs": [
+    { "key": "intro", "text": "Dans ce tutoriel, on génère un visuel avec l'IA, directement depuis une publication." },
+    { "key": "type", "text": "Créez un poste, choisissez le réseau et le compte, puis le type Texte et Média." },
+    { "key": "media", "text": "Sélectionnez le média image. Trois sources s'offrent à vous : votre bibliothèque, vos templates, ou l'IA, avec le bouton étoile." },
+    { "key": "taille", "text": "Dans la fenêtre Générer un média, choisissez la taille : haute définition ou standard." },
+    { "key": "description", "text": "Puis décrivez l'image : le sujet, le lieu, la lumière et l'ambiance. Plus c'est précis, plus le résultat vous ressemble." },
+    { "key": "generer", "text": "Cliquez sur Générer. Après quelques secondes, votre visuel apparaît, et il est ajouté à votre publication." },
+    { "key": "conseils", "text": "Pas satisfait ? Modifiez la description et générez à nouveau. Chaque image est aussi enregistrée dans votre bibliothèque, et consomme davantage de crédits qu'un texte." },
+    { "key": "outro", "text": "Dans le prochain tutoriel, on découvre la bibliothèque de fichiers. À tout de suite !" }
+  ],
+  "scenes": [
+    { "at": "intro", "wait": 0.3 },
+    { "at": "type", "label": "Texte et média", "fill": [["input[placeholder^=\"Nom du poste\"]", "Séances photo automne"]], "select": [["select >> nth=0", "Facebook"], ["select >> nth=1", "Studio Lumière"], ["select >> nth=2", "Texte et Média"]], "zone": [400, 140, 670, 400] },
+    { "at": "media", "label": "Trois sources", "click": "label[for=\"image\"]", "hover": "#image-media-source button[data-bs-target=\"#genererModal\"]", "zone": [400, 530, 670, 230] },
+    { "at": "taille", "label": "Générer un média", "click": "#image-media-source button[data-bs-target=\"#genererModal\"]", "select": [["#ia-img-size", "Haute Définition"]], "zone": "#genererModal .modal-content" },
+    { "at": "description", "label": "La description", "fill": [["#ia-img-prompt", "Jeune famille qui rit dans un parc de Bordeaux en automne, feuilles dorées, lumière de fin d'après-midi, style photo naturelle."]], "zone": "#genererModal .modal-content" },
+    { "at": "generer", "label": "Le résultat", "click": "#genererModal button:has-text(\"Générer\")", "wait": 3.4, "zone": "#genererModal .modal-content" },
+    { "at": "conseils", "label": "Dans votre publication", "click": "#genererModal .btn-close", "zone": [1160, 190, 570, 500] },
+    { "at": "outro", "wait": 0.3 }
+  ],
+  "thumb_shot": "fin.png"
+}

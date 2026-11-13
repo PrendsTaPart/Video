@@ -140,7 +140,7 @@ continue avec les sections B (RapidoCMS) puis C (RapidoRH), puis D. Reprendre la
 - [ ] CMS07 — Les clés d'API et les intégrations (Zapier, Make, n8n)
 - [ ] CMS08 — Rédiger un post avec l'IA
 - [ ] CMS09 — Générer un visuel IA
-- [ ] CMS10 — Transformer une photo (image vers image)
+- [~] CMS10 — Transformer une photo (image vers image) → fonction disponible uniquement via le connecteur MCP : traitée dans CMS24
 - [ ] CMS11 — La bibliothèque de fichiers
 - [ ] CMS12 — Mes templates
 - [ ] CMS13 — Mes prompts

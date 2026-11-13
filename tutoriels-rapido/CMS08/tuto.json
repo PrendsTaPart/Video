@@ -1,0 +1,41 @@
+{
+  "id": "CMS08",
+  "product": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "title": "Rédiger un post avec l'IA",
+  "em": "avec l'IA",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/dashboard/social-media",
+  "type_delay": 22,
+  "fixes": { "IA": "IA" },
+  "end_cta": "Prochain épisode : générer un visuel avec l'IA",
+  "mocks": [
+    { "url": "**/api/posts/generate_text", "delay": 2.2, "json": { "success": true, "content": "📸 Vos photos de famille méritent mieux qu'un dossier oublié sur votre téléphone !\n\nCet automne, Studio Lumière vous propose des séances en extérieur, au cœur de Bordeaux : 45 minutes, 15 photos retouchées, et des souvenirs pour toute la vie.\n\n👉 Réservez votre créneau avant le 30 novembre, en message privé.\n\n#Bordeaux #PhotoDeFamille #StudioLumiere" } }
+  ],
+  "paragraphs": [
+    { "key": "intro", "text": "Dans ce tutoriel, on rédige une publication avec l'aide de l'IA de RapidoCMS. Il vous faut simplement un réseau social connecté." },
+    { "key": "creer", "text": "Dans Réseaux sociaux, cliquez sur Créer un poste." },
+    { "key": "parametrage", "text": "Donnez un nom à votre publication pour la retrouver facilement. Choisissez le réseau, le compte, puis le type : texte seul, texte et média, ou média seul." },
+    { "key": "bot", "text": "Cliquez sur Aide du bot, et décrivez ce que vous voulez dire : le sujet, la cible, le ton et l'appel à l'action." },
+    { "key": "generer", "text": "Cliquez sur Générer : en quelques secondes, l'IA rédige votre texte. Chaque génération consomme un peu de vos crédits." },
+    { "key": "relire", "text": "Fermez la fenêtre : le texte est placé dans votre publication. Relisez-le, et ajoutez votre touche personnelle." },
+    { "key": "valider", "text": "Cliquez sur Créer : votre publication apparaît dans la liste de vos posts Facebook." },
+    { "key": "outro", "text": "Dans le prochain tutoriel, on génère un visuel avec l'IA. À tout de suite !" }
+  ],
+  "scenes": [
+    { "at": "intro", "wait": 0.3 },
+    { "at": "creer", "label": "Créer un poste", "click": "a:has-text(\"Créer un poste\")" },
+    { "at": "parametrage", "label": "Le paramétrage", "fill": [["input[placeholder^=\"Nom du poste\"]", "Séances photo automne"]], "select": [["select >> nth=0", "Facebook"], ["select >> nth=1", "Studio Lumière"], ["select >> nth=2", "Texte"]], "zone": [400, 140, 670, 620] },
+    { "at": "bot", "label": "L'aide du bot", "click": "a:has-text(\"Aide du bot\")", "fill": [["#ia-prompt", "Post Facebook pour mon studio photo à Bordeaux : séances photo de famille en extérieur cet automne. Cible : jeunes parents. Ton chaleureux. Appel à l'action : réserver en message privé."]], "zone": "#generateTextModal .modal-content" },
+    { "at": "generer", "label": "Générer", "click": "#generateTextModal button:has-text(\"Générer\")", "wait": 2.6, "zone": "#generateTextModal .modal-content" },
+    { "at": "relire", "label": "Relire", "click": "#generateTextModal .btn-close", "hover": "textarea", "zone": [400, 690, 670, 220] },
+    { "at": "valider", "label": "Votre publication", "click": "form button:has-text(\"Créer\")", "zone": [380, 260, 1420, 330] },
+    { "at": "outro", "wait": 0.3 }
+  ],
+  "thumb_shot": "fin.png"
+}

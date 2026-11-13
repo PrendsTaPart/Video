@@ -1,0 +1,147 @@
+{
+  "id": "CMS24",
+  "product": "cms",
+  "kicker": "Tutoriel RapidoCMS · IA",
+  "title": "Piloter RapidoCMS avec Claude (MCP)",
+  "em": "avec Claude",
+  "tag": "2 min · Avancé",
+  "intro": 3.0,
+  "outro": 4.5,
+  "end_cta": "Tous les tutoriels sur rapidosoftware.com",
+  "fixes": {
+    "MCP": "MCP",
+    "Claude": "Claude"
+  },
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Et si vous pilotiez RapidoCMS en parlant simplement à Claude ? C'est possible grâce au connecteur MCP. Voyons comment l'installer, et ce qu'il permet."
+    },
+    {
+      "key": "mcp",
+      "text": "MCP est un standard ouvert qui permet à un assistant IA d'utiliser vos logiciels. Avec le connecteur RapidoCMS, Claude accède à quarante-cinq outils : vos comptes, vos brouillons, vos images, votre marque et vos campagnes."
+    },
+    {
+      "key": "installer",
+      "text": "Pour l'installer, ouvrez les paramètres de Claude, rubrique Connecteurs, et ajoutez un connecteur personnalisé avec l'adresse de RapidoCMS. Connectez-vous ensuite avec votre compte Rapido : Claude agit avec vos droits, sur votre entreprise uniquement."
+    },
+    {
+      "key": "brouillons",
+      "text": "Premier exemple : demandez-lui trois brouillons pour la semaine, à partir de votre kit de marque. Claude lit votre marque, puis crée les brouillons dans RapidoCMS."
+    },
+    {
+      "key": "visuels",
+      "text": "Il peut aussi générer un visuel, ou transformer l'une de vos photos à partir d'une consigne."
+    },
+    {
+      "key": "programmer",
+      "text": "Et quand tout est prêt, il programme vos publications aux horaires que vous choisissez, sur les bons réseaux."
+    },
+    {
+      "key": "controle",
+      "text": "Le bon réflexe : relisez toujours les brouillons avant de les programmer. Claude propose, c'est vous qui validez."
+    },
+    {
+      "key": "recap",
+      "text": "Un connecteur, quarante-cinq outils, et votre communication pilotée en langage naturel."
+    },
+    {
+      "key": "outro",
+      "text": "Retrouvez tous les tutoriels RapidoCMS sur rapidosoftware.com. À bientôt !"
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "RapidoCMS · Connecteur MCP",
+      "title": "RapidoCMS piloté par Claude",
+      "em": "Claude"
+    },
+    {
+      "at": "mcp",
+      "type": "points",
+      "title": "45 outils pour Claude",
+      "em": "45 outils",
+      "items": [
+        "Comptes connectés",
+        "Brouillons et programmation",
+        "Images : générer, transformer",
+        "Kit de marque et bibliothèque",
+        "Campagnes et statistiques"
+      ]
+    },
+    {
+      "at": "installer",
+      "type": "steps",
+      "title": "Installer le connecteur",
+      "em": "Installer",
+      "items": [
+        "Claude › Paramètres › Connecteurs",
+        "Ajouter un connecteur personnalisé",
+        "Adresse : cms.rapidosoftware.com/claude",
+        "Se connecter avec son compte Rapido"
+      ]
+    },
+    {
+      "at": "brouillons",
+      "type": "prompt",
+      "title": "Des brouillons à votre image",
+      "em": "à votre image",
+      "prompt": "Lis le kit de marque Studio Lumière et prépare 3 brouillons Facebook pour la semaine : un conseil, une coulisse, une offre.",
+      "answer": [
+        "✓ Marque « Studio Lumière » lue (ton, couleurs, slogan)",
+        "✓ 3 brouillons créés dans RapidoCMS",
+        "→ À relire dans votre espace avant programmation"
+      ]
+    },
+    {
+      "at": "visuels",
+      "type": "prompt",
+      "title": "Visuels et retouches",
+      "em": "Visuels",
+      "prompt": "Transforme la photo « atelier.jpg » de ma bibliothèque en visuel automnal, lumière dorée, et ajoute-la au brouillon « coulisse ».",
+      "answer": [
+        "✓ Image transformée à partir de votre photo",
+        "✓ Ajoutée au brouillon « coulisse »"
+      ]
+    },
+    {
+      "at": "programmer",
+      "type": "prompt",
+      "title": "Programmer en une phrase",
+      "em": "une phrase",
+      "prompt": "Programme les 3 brouillons : mardi, jeudi et samedi à 18 h sur la page Facebook Studio Lumière.",
+      "answer": [
+        "✓ Mardi 18:00 · conseil",
+        "✓ Jeudi 18:00 · coulisse",
+        "✓ Samedi 18:00 · offre"
+      ]
+    },
+    {
+      "at": "controle",
+      "type": "compare",
+      "title": "Claude propose, vous validez",
+      "em": "vous validez",
+      "left": [
+        "Claude",
+        "Rédige les brouillons",
+        "Prépare les visuels",
+        "Propose un planning"
+      ],
+      "right": [
+        "Vous",
+        "Relisez et ajustez",
+        "Validez les visuels",
+        "Confirmez la programmation"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Votre communication pilotée en langage naturel",
+      "em": "en langage naturel"
+    }
+  ],
+  "brand": "RapidoCMS"
+}

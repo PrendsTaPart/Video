@@ -154,7 +154,7 @@ html_out = f'''<!doctype html>
 <body>
 <div id="root" data-composition-id="main" data-start="0" data-duration="{TOTAL}" data-width="1920" data-height="1080">
   <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
-  <div class="brand"><img src="assets/logo_icon.png" alt="">Formation Rapido</div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">{cfg.get('brand', 'Formation Rapido')}</div>
 {''.join(body)}'''
 for i, (s0, e0, t0) in enumerate(subs):
     html_out += f'  <div class="sub clip" id="s{i}" data-start="{s0:.3f}" data-duration="{max(0.2, e0 - s0):.3f}" data-track-index="7"><span>{esc(t0)}</span></div>\n'
