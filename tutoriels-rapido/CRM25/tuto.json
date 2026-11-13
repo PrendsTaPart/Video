@@ -1,0 +1,38 @@
+{
+  "id": "CRM25",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "CTA et pages",
+  "em": "CTA",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/cta",
+  "type_delay": 20,
+  "fixes": {"CTA": "CTA", "SMS": "SMS", "URL": "URL"},
+  "end_cta": "Prochain épisode : la fidélité et les cartes NFC",
+  "paragraphs": [
+    {"key": "intro", "text": "Dans ce tutoriel, on crée des boutons d'appel à l'action, les CTA, et on les place dans ses pages."},
+    {"key": "liste", "text": "La page CTA liste vos boutons, avec leur type et surtout leur nombre de clics : vous voyez tout de suite ce qui fonctionne."},
+    {"key": "creer", "text": "Le bouton Créer un CTA ouvre le formulaire. Trois types possibles : un lien vers une page, un e-mail ou un SMS."},
+    {"key": "remplir", "text": "Donnez-lui un nom, puis sa destination, et enregistrez."},
+    {"key": "pages", "text": "Direction l'éditeur : newsletters, sites web, pages de destination et cartes de visite se conçoivent ici, à partir de modèles."},
+    {"key": "inserer", "text": "Glissez vos CTA et vos formulaires dans la page. Chaque clic est compté, et peut faire entrer le contact dans un segment ou déclencher un workflow."},
+    {"key": "outro", "text": "Dans le prochain tutoriel, on fidélise ses clients avec les cartes NFC. À tout de suite !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3},
+    {"at": "liste", "label": "Vos CTA", "zone": [390, 225, 1400, 245]},
+    {"at": "creer", "label": "Un nouveau CTA", "click": "button[data-bs-target=\"#ajouterCTAModal\"]",
+     "select": [["#ajouterCTAModal select[name=type]", "Url"]], "zone": "#ajouterCTAModal .modal-content"},
+    {"at": "remplir", "label": "Nom et destination", "fill": [["#ajouterCTAModal input[name=name]", "Voir le portfolio"], ["#ajouterCTAModal input[name=url]", "https://studio-lumiere.test/portfolio"]], "zone": "#ajouterCTAModal .modal-content"},
+    {"at": "pages", "label": "L'éditeur de pages", "click": "#ajouterCTAModal button[type=submit]", "wait": 0.6},
+    {"at": "pages", "goto": "/editeur", "wait": 0.8, "zone": [390, 160, 1400, 560]},
+    {"at": "inserer", "label": "Vos designs", "scroll": "h2:has-text(\"Vos derniers designs\"), :text(\"Vos derniers designs\")", "wait": 0.4, "zone": [390, 300, 1400, 520]},
+    {"at": "outro", "wait": 0.3}
+  ],
+  "thumb_shot": "fin.png"
+}
