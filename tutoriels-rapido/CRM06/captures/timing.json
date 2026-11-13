@@ -1,0 +1,54 @@
+{
+  "voiceStartInCapture": 3.9,
+  "paragraphs": {
+    "intro": 0.02,
+    "ouvrir": 6.54,
+    "activites": 10.7,
+    "contacts": 14.7,
+    "employes": 21.38,
+    "fiche": 25.14,
+    "stats": 27.94,
+    "historique": 36.26,
+    "actions": 43.06,
+    "outro": 48.1,
+    "end": 52.6
+  },
+  "zones": {
+    "activites": [
+      405,
+      290,
+      905,
+      130
+    ],
+    "contacts": [
+      405,
+      445,
+      905,
+      380
+    ],
+    "employes": [
+      405,
+      845,
+      905,
+      115
+    ],
+    "stats": [
+      865,
+      145,
+      925,
+      120
+    ],
+    "historique": [
+      865,
+      305,
+      925,
+      245
+    ],
+    "actions": [
+      395,
+      150,
+      300,
+      400
+    ]
+  }
+}

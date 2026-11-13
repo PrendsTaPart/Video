@@ -1,0 +1,37 @@
+{
+  "id": "CRM07",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Suivre ses ventes avec le pipeline",
+  "em": "le pipeline",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/admin/pipeline",
+  "fixes": {},
+  "end_cta": "Prochain épisode : l'agent vocal IA",
+  "paragraphs": [
+    { "key": "intro", "text": "Dans ce tutoriel, on suit ses ventes avec le pipeline : chaque affaire avance d'étape en étape, jusqu'à la signature." },
+    { "key": "stats", "text": "En haut, l'essentiel : le nombre de prospects, le montant total en jeu, et vos affaires gagnées ou perdues." },
+    { "key": "etapes", "text": "Le pipeline est découpé en étapes : nouveau prospect, qualification, contact établi, proposition, négociation et décision, puis gagné ou perdu." },
+    { "key": "carte", "text": "Chaque carte est une affaire : le client, le montant, et depuis quand elle se trouve à cette étape." },
+    { "key": "deplacer", "text": "Pour faire avancer une affaire, faites glisser sa carte vers l'étape suivante. Chaque déplacement est gardé dans son historique." },
+    { "key": "cloture", "text": "Quand l'affaire est signée, glissez-la dans Fermé, Gagné. Sinon, dans Fermé, Perdu. Les compteurs se mettent à jour." },
+    { "key": "plusieurs", "text": "Vous gérez plusieurs activités ? Le menu en haut à droite permet de passer d'un pipeline à l'autre." },
+    { "key": "outro", "text": "Dans le prochain tutoriel, on configure l'agent vocal IA. À tout de suite !" }
+  ],
+  "scenes": [
+    { "at": "intro", "wait": 0.3 },
+    { "at": "stats", "label": "Les chiffres clés", "zone": [284, 195, 1612, 112] },
+    { "at": "etapes", "label": "Les étapes", "zone": [284, 335, 1612, 500] },
+    { "at": "carte", "label": "Une affaire", "hover": ".etape-list >> nth=0 >> h4 >> nth=0", "zone": [290, 405, 510, 195] },
+    { "at": "deplacer", "label": "Faire avancer", "wait": 1.5, "drag": [".etape-list >> nth=0 >> h4 >> nth=0", ".etape-list >> nth=1"], "zone": [284, 335, 1080, 500] },
+    { "at": "cloture", "label": "Gagné ou perdu", "scroll": "Fermé - gagné", "zone": "Fermé - gagné" },
+    { "at": "plusieurs", "label": "Plusieurs pipelines", "top": true, "hover": "select", "zone": [1505, 125, 395, 52] },
+    { "at": "outro", "wait": 0.3 }
+  ],
+  "thumb_shot": "fin.png"
+}

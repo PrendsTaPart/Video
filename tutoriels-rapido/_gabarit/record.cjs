@@ -5,7 +5,7 @@
 //
 // Une scène (tuto.json → "scenes") :
 //   { "at": "clé du paragraphe", "goto": "/chemin" (optionnel), "scroll": "Titre exact" | "css",
-//     "eval": "js exécuté dans la page avant le clic", "hover": "css", "click": "css", "fill": [["css","texte"]...], "select": [["css","libellé"]], "wait": 0.8,
+//     "eval": "js exécuté dans la page avant le clic", "hover": "css", "click": "css", "fill": [["css","texte"]...], "select": [["css","libellé"]], "drag": ["source","cible"], "wait": 0.8,
 //     "zone": "css" | "Titre exact" | [x,y,w,h], "label": "Libellé du chapitre", "zoom": 1.25 }
 const fs = require('fs');
 const path = require('path');
@@ -147,6 +147,16 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
             const el = await resolve(sel); if (!el) continue;
             const b = await el.boundingBox(); if (b) await moveTo(b.x + 40, b.y + b.height / 2);
             await page.waitForTimeout(250); await el.selectOption({ label }).catch(() => {}); await page.waitForTimeout(400);
+        }
+        if (sc.drag) { // glisser-déposer : [source, cible] (sélecteurs CSS)
+            const a = await resolve(sc.drag[0]), z = await resolve(sc.drag[1]);
+            const ba = a && await a.boundingBox(), bz = z && await z.boundingBox();
+            if (ba && bz) {
+                await moveTo(ba.x + ba.width / 2, ba.y + 30); await page.mouse.down(); await page.waitForTimeout(300);
+                await moveTo(ba.x + ba.width / 2 + 20, ba.y + 50, 8);
+                await moveTo(bz.x + bz.width / 2, bz.y + Math.min(bz.height / 2, 120), 40); await page.waitForTimeout(300);
+                await page.mouse.up(); await page.waitForLoadState('networkidle', { timeout: 1500 }).catch(() => {}); await page.waitForTimeout(600);
+            }
         }
         if (sc.hover) { const el = await resolve(sc.hover); if (el) { await el.evaluate((n) => { const r = n.getBoundingClientRect(); if (r.top < 90 || r.bottom > window.innerHeight - 40) window.scrollBy({ top: r.top - window.innerHeight / 2, behavior: 'smooth' }); }); await page.waitForTimeout(700); const b = await el.boundingBox(); if (b) await moveTo(b.x + Math.min(b.width / 2, 120), b.y + b.height / 2); } }
         if (sc.wait) await page.waitForTimeout(sc.wait * 1000);

@@ -1,0 +1,43 @@
+{
+  "id": "CRM06",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "La fiche entreprise et la fiche contact",
+  "em": "la fiche contact",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/entreprises",
+  "fixes": { "SMS": "SMS", "sms": "SMS" },
+  "end_cta": "Prochain épisode : le pipeline commercial",
+  "paragraphs": [
+    { "key": "intro", "text": "Dans ce tutoriel, on découvre la fiche d'un client : son entreprise, ses contacts, et l'historique de vos échanges." },
+    { "key": "ouvrir", "text": "Dans Clients, cliquez sur le nom d'une entreprise pour ouvrir sa fiche." },
+    { "key": "activites", "text": "En haut, les activités récentes avec ce client, que vous pouvez filtrer." },
+    { "key": "contacts", "text": "Juste en dessous, ses contacts, avec leur e-mail et leur téléphone. Le bouton Ajouter un contact en crée un nouveau." },
+    { "key": "employes", "text": "Plus bas, les employés de l'entreprise, que vous pouvez aussi ajouter." },
+    { "key": "fiche", "text": "Le menu d'un contact ouvre sa fiche personnelle." },
+    { "key": "stats", "text": "On y retrouve le nombre de SMS et d'e-mails envoyés, et ses points de fidélité : dix points par SMS, cinq par e-mail." },
+    { "key": "historique", "text": "L'onglet Historique liste chaque SMS et chaque e-mail envoyé, et l'onglet Carte fidélité affiche sa carte." },
+    { "key": "actions", "text": "Enfin, depuis la fiche, vous pouvez lui envoyer un e-mail, ou revenir à son entreprise." },
+    { "key": "outro", "text": "Dans le prochain tutoriel, on organise ses ventes avec le pipeline. À tout de suite !" }
+  ],
+  "scenes": [
+    { "at": "intro", "wait": 0.3 },
+    { "at": "ouvrir", "label": "La fiche entreprise", "click": "text=Épicerie victor" },
+    { "at": "activites", "label": "Activités récentes", "zone": [405, 290, 905, 130] },
+    { "at": "contacts", "label": "Les contacts", "hover": "button:has-text(\"ajouter un contact\")", "zone": [405, 445, 905, 380] },
+    { "at": "employes", "label": "Les employés", "hover": "button:has-text(\"ajouter un employé\")", "zone": [405, 845, 905, 115] },
+    { "at": "fiche", "label": "La fiche contact", "click": "td [data-bs-toggle=dropdown], td .dropdown-toggle, td button >> nth=0" },
+    { "at": "fiche", "wait": 1.0 },
+    { "at": "fiche", "click": ".dropdown-menu.show >> text=voir la fiche" },
+    { "at": "stats", "label": "Envois et fidélité", "zone": [865, 145, 925, 120] },
+    { "at": "historique", "label": "Historique", "hover": "button:has-text(\"carte fidélité\")", "zone": [865, 305, 925, 245] },
+    { "at": "actions", "label": "Actions rapides", "hover": "button:has-text(\"envoyer un e-mail\")", "zone": [395, 150, 300, 400] },
+    { "at": "outro", "wait": 0.3 }
+  ],
+  "thumb_shot": "fin.png"
+}
