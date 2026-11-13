@@ -1,0 +1,52 @@
+{
+  "voiceStartInCapture": 3.774,
+  "paragraphs": {
+    "intro": 0.03,
+    "ajouter": 8.53,
+    "coordonnees": 16.53,
+    "financier": 22.03,
+    "filtre": 28.53,
+    "recherche": 35.03,
+    "import": 39.03,
+    "outro": 47.03,
+    "end": 51.93
+  },
+  "zones": {
+    "ajouter": [
+      680,
+      120,
+      500,
+      330
+    ],
+    "coordonnees": [
+      680,
+      120,
+      500,
+      500
+    ],
+    "financier": [
+      680,
+      120,
+      500,
+      360
+    ],
+    "filtre": [
+      1053,
+      162,
+      263,
+      357
+    ],
+    "recherche": [
+      390,
+      115,
+      1400,
+      470
+    ],
+    "import": [
+      766,
+      275,
+      388,
+      530
+    ]
+  }
+}

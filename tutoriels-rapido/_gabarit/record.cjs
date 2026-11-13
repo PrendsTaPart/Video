@@ -146,7 +146,7 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
         for (const [sel, label] of sc.select || []) {
             const el = await resolve(sel); if (!el) continue;
             const b = await el.boundingBox(); if (b) await moveTo(b.x + 40, b.y + b.height / 2);
-            await page.waitForTimeout(250); await el.selectOption({ label }).catch(() => {}); await page.waitForTimeout(400);
+            await page.waitForTimeout(250); await el.selectOption(typeof label === 'object' ? label : { label }).catch(() => {}); await page.waitForTimeout(400);
         }
         if (sc.drag) { // glisser-déposer : [source, cible] (sélecteurs CSS)
             const a = await resolve(sc.drag[0]), z = await resolve(sc.drag[1]);
