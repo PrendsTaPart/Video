@@ -154,7 +154,7 @@ continue avec les sections B (RapidoCMS) puis C (RapidoRH), puis D. Reprendre la
 - [ ] CMS21 — Blog
 - [ ] CMS22 — Notifications et email
 - [ ] CMS23 — Abonnements, packs et paiement
-- [ ] CMS24 — Connecter RapidoCMS à Claude (MCP)
+- [x] CMS24 — Connecter RapidoCMS à Claude (MCP)
 
 ## C. RapidoRH — un tutoriel par onglet / écran
 
