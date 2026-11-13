@@ -100,7 +100,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM08 — L'agent vocal IA : configuration, appels entrants, catalogue
 - [x] CRM09 — Historique des appels
 - [x] CRM10 — Contacts et entreprises
-- [~] CRM11 — Catalogue produits et offres
+- [x] CRM11 — Catalogue produits et offres
 - [~] CRM12 — Créer et envoyer un devis
 - [~] CRM13 — Factures et suivi des paiements
 - [~] CRM14 — Dépenses

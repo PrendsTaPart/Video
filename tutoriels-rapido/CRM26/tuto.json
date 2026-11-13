@@ -1,0 +1,41 @@
+{
+  "id": "CRM26",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Créer un programme de fidélité",
+  "em": "programme de fidélité",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/fidelite",
+  "type_delay": 20,
+  "fixes": {"NFC": "NFC"},
+  "end_cta": "Prochain épisode : les jeux concours",
+  "paragraphs": [
+    {"key": "intro", "text": "Dans ce tutoriel, on récompense ses clients fidèles avec un programme de points, sur tablette ou carte NFC."},
+    {"key": "liste", "text": "La page Fidélité résume vos programmes : le nombre de clients inscrits, les points distribués et les cadeaux offerts."},
+    {"key": "creer", "text": "Créer un programme ouvre le configurateur. On choisit d'abord l'établissement concerné."},
+    {"key": "perso", "text": "On personnalise ensuite la page d'accueil : images, couleurs et textes. L'aperçu à droite se met à jour en direct."},
+    {"key": "conditions", "text": "Dans Conditions d'entrée, on décide ce que le client saisit pour s'inscrire : son téléphone, son e-mail, ou les deux. Puis on crée le programme."},
+    {"key": "cartes", "text": "Chaque programme a ses cartes clients : les points cumulés, les cadeaux déjà offerts, et le statut de la carte."},
+    {"key": "tablette", "text": "En boutique, la tablette affiche votre page. Le client tape son numéro, et ses points s'ajoutent en quelques secondes."},
+    {"key": "outro", "text": "Dans le prochain tutoriel, on anime sa clientèle avec un jeu concours. À tout de suite !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3},
+    {"at": "liste", "label": "Vos programmes", "zone": [390, 190, 1400, 270]},
+    {"at": "creer", "label": "Un nouveau programme", "click": "a:has-text(\"créer un programme\") >> visible=true", "wait": 0.8},
+    {"at": "creer", "select": [["select >> nth=0", "Fournil des Chartrons"]], "zone": [430, 310, 670, 160]},
+    {"at": "perso", "label": "Personnaliser", "click": "button:has-text(\"couleurs\") >> visible=true", "wait": 0.6},
+    {"at": "perso", "click": "button:has-text(\"textes\") >> visible=true", "wait": 0.5, "zone": [430, 310, 1300, 560]},
+    {"at": "conditions", "label": "Conditions d'entrée", "click": "button:has-text(\"condition\") >> visible=true", "wait": 0.6, "zone": [430, 310, 1300, 560]},
+    {"at": "cartes", "label": "Les cartes clients", "click": "button:has-text(\"créer le programme\") >> visible=true", "wait": 0.5},
+    {"at": "cartes", "goto_file": "lien-cartes.txt", "wait": 0.6, "zone": [390, 120, 1400, 520]},
+    {"at": "tablette", "label": "La tablette en boutique", "goto_file": "lien-tablette.txt", "wait": 0.8, "zone": [0, 0, 1920, 900]},
+    {"at": "outro", "wait": 0.3}
+  ],
+  "thumb_shot": "fin.png"
+}
