@@ -125,14 +125,13 @@
       "zone": "main"
     },
     {
-      "at": "doc",
-      "eval": "document.body.innerHTML=document.body.innerHTML.split('http://127.0.0.1:8125').join('https://cms.rapidosoftware.com')",
-      "wait": 0.3
-    },
-    {
       "at": "outro",
       "wait": 0.3
     }
   ],
-  "thumb_shot": "fin.png"
+  "thumb_shot": "fin.png",
+  "replace_text": {
+    "http://127.0.0.1:8125": "https://cms.rapidosoftware.com",
+    "127.0.0.1:8125": "cms.rapidosoftware.com"
+  }
 }

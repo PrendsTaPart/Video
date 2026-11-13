@@ -34,6 +34,21 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
     }
     const ctx = await browser.newContext({ viewport: { width: 1920, height: 1080 }, storageState: state, recordVideo: { dir: OUT, size: { width: 1920, height: 1080 } } });
     const page = await ctx.newPage();
+    // Remplacement de textes à l'affichage (ex. adresse locale → adresse publique), sans toucher au code de l'application.
+    if (cfg.replace_text) {
+        await page.addInitScript((pairs) => {
+            const fix = (root) => {
+                const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+                for (let n = w.nextNode(); n; n = w.nextNode()) {
+                    for (const [a, b] of pairs) if (n.nodeValue.includes(a)) n.nodeValue = n.nodeValue.split(a).join(b);
+                }
+            };
+            document.addEventListener('DOMContentLoaded', () => {
+                fix(document.body);
+                new MutationObserver((ms) => ms.forEach((m) => m.addedNodes.forEach((x) => fix(x.nodeType === 3 ? x.parentNode || document.body : x)))).observe(document.body, { childList: true, subtree: true });
+            });
+        }, Object.entries(cfg.replace_text));
+    }
     const installCursor = async () => {
         await page.addStyleTag({ content: CURSOR_CSS }).catch(() => {});
         await page.evaluate(() => {
