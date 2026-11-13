@@ -231,11 +231,13 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 
 ## E. Site web RapidoSoftware — vrais écrans
 
-Dépôt `rapido-software`, branche `site-vrais-ecrans` (jamais `production`).
+Dépôt `rapido-software`, branche `ccr-dbfe6358-2gefhr` (jamais `production` sans l'accord de Michael).
+Hébergement des vidéos (décision de Michael, 13/11/2026) : 720p, dans la bibliothèque RapidoCMS du compte (S3).
+Mise à jour du site : `python3 _gabarit/export-site.py /home/user/rapido-software/resources/data/academie.json`.
 - [ ] W1 — Remplacer les captures et démos de la page RapidoCRM par les vrais écrans filmés (boucles vidéo courtes + animations HTML/CSS)
 - [ ] W2 — Idem page RapidoCMS
 - [ ] W3 — Idem page RapidoRH
-- [ ] W4 — Accueil : section « tutoriels » qui présente les vidéos réalisées
+- [x] W4 — Accueil : section « tutoriels » qui présente les vidéos réalisées → « Académie Rapido » (/academie, page vidéo, section accueil et pages produit), branche ccr-dbfe6358-2gefhr, commit 08cf25d
 
 ---
 
