@@ -1,0 +1,13 @@
+{
+ "intro": 0.03,
+ "profil": 9.06,
+ "entreprise": 20.03,
+ "banque": 30.06,
+ "mail": 37.04,
+ "stripe": 43.03,
+ "twilio": 47.03,
+ "agent": 55.03,
+ "onglets": 62.06,
+ "outro": 69.06,
+ "end": 74
+}

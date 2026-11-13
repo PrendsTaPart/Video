@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#4CAF50; --b:#9BE15D; --grad:linear-gradient(100deg,#4CAF50,#9BE15D); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; background:#05060A; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(120px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.45; }
+  .h2 { width:700px; height:600px; left:-260px; bottom:-320px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  #frame { position:absolute; left:80px; top:56px; width:1760px; height:990px; border-radius:22px; overflow:hidden; background:#f3f4f7;
+           box-shadow:0 50px 120px -30px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.12),0 0 120px -30px var(--a); }
+  #cam { position:absolute; left:0; top:0; width:1760px; height:990px; transform-origin:0 0; }
+  #cam video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .hl { position:absolute; border-radius:18px; border:3px solid var(--a); box-shadow:0 0 0 9999px rgba(5,6,10,.28),0 0 40px -6px var(--a); opacity:0; }
+  .chap { position:absolute; left:108px; top:82px; display:flex; align-items:center; gap:14px; padding:12px 22px 12px 12px; border-radius:999px;
+          background:rgba(10,12,18,.82); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.14); font-size:26px; font-weight:600; opacity:0; z-index:5; }
+  .chap b { width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:19px; }
+  .sub { position:absolute; inset:auto 0 58px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; letter-spacing:-.01em; white-space:nowrap; box-shadow:0 10px 30px rgba(0,0,0,.4); }
+  .bar { position:absolute; left:80px; bottom:22px; width:1760px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:104px; top:84px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  /* intro / outro */
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .kick { font-size:28px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.7); }
+  .card h1 { text-wrap:balance; margin-top:40px; font-size:128px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1500px; }
+  .card h1 em, .card h2 em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; line-height:1; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="81.9" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+
+  <div id="frame">
+    <div id="cam">
+      <video id="cap" class="clip" src="captures/ecran.mp4" muted data-start="3.0" data-duration="78.9" data-track-index="1"></video>
+      <div class="hl" id="hl1" style="left:273px;top:311px;width:1214px;height:600px"></div>
+      <div class="hl" id="hl2" style="left:207px;top:208px;width:1346px;height:782px"></div>
+      <div class="hl" id="hl3" style="left:207px;top:88px;width:1346px;height:425px"></div>
+      <div class="hl" id="hl4" style="left:207px;top:88px;width:1346px;height:506px"></div>
+      <div class="hl" id="hl5" style="left:207px;top:88px;width:1346px;height:345px"></div>
+      <div class="hl" id="hl6" style="left:207px;top:111px;width:1346px;height:502px"></div>
+      <div class="hl" id="hl7" style="left:0px;top:0px;width:1760px;height:990px"></div>
+      <div class="hl" id="hl8" style="left:234px;top:110px;width:660px;height:55px"></div>
+    </div>
+  </div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">RapidoCRM</div>
+  <div class="chap" id="ch1"><b>1</b>Votre profil</div>
+  <div class="chap" id="ch2"><b>2</b>L&#x27;entreprise</div>
+  <div class="chap" id="ch3"><b>3</b>Informations bancaires</div>
+  <div class="chap" id="ch4"><b>4</b>Boîte mail</div>
+  <div class="chap" id="ch5"><b>5</b>Paiement en ligne</div>
+  <div class="chap" id="ch6"><b>6</b>SMS et appels</div>
+  <div class="chap" id="ch7"><b>7</b>Agent IA</div>
+  <div class="chap" id="ch8"><b>8</b>Les autres onglets</div>
+  <div class="sub clip" id="s0" data-start="3.030" data-duration="0.860" data-track-index="7"><span>Dans ce tutoriel,</span></div>
+  <div class="sub clip" id="s1" data-start="3.910" data-duration="1.630" data-track-index="7"><span>on complète votre profil et la</span></div>
+  <div class="sub clip" id="s2" data-start="5.560" data-duration="1.980" data-track-index="7"><span>configuration de votre entreprise</span></div>
+  <div class="sub clip" id="s3" data-start="7.560" data-duration="2.460" data-track-index="7"><span>C&#x27;est indispensable pour envoyer vos factures,</span></div>
+  <div class="sub clip" id="s4" data-start="10.040" data-duration="2.000" data-track-index="7"><span>vos e-mails et vos SMS</span></div>
+  <div class="sub clip" id="s5" data-start="12.060" data-duration="1.800" data-track-index="7"><span>Ouvrez votre profil depuis le menu</span></div>
+  <div class="sub clip" id="s6" data-start="13.880" data-duration="1.140" data-track-index="7"><span>en haut à droite</span></div>
+  <div class="sub clip" id="s7" data-start="15.040" data-duration="2.980" data-track-index="7"><span>Le premier onglet regroupe vos informations personnelles</span></div>
+  <div class="sub clip" id="s8" data-start="18.040" data-duration="1.220" data-track-index="7"><span>Ajoutez votre photo,</span></div>
+  <div class="sub clip" id="s9" data-start="19.280" data-duration="0.850" data-track-index="7"><span>votre numéro,</span></div>
+  <div class="sub clip" id="s10" data-start="20.150" data-duration="0.960" data-track-index="7"><span>votre adresse,</span></div>
+  <div class="sub clip" id="s11" data-start="21.130" data-duration="1.880" data-track-index="7"><span>puis cliquez sur Sauvegarder</span></div>
+  <div class="sub clip" id="s12" data-start="23.030" data-duration="1.980" data-track-index="7"><span>Deuxième onglet, l&#x27;entreprise</span></div>
+  <div class="sub clip" id="s13" data-start="25.030" data-duration="0.730" data-track-index="7"><span>Son logo,</span></div>
+  <div class="sub clip" id="s14" data-start="25.780" data-duration="0.670" data-track-index="7"><span>son nom,</span></div>
+  <div class="sub clip" id="s15" data-start="26.470" data-duration="1.010" data-track-index="7"><span>son sirène,</span></div>
+  <div class="sub clip" id="s16" data-start="27.500" data-duration="1.600" data-track-index="7"><span>ses coordonnées et la couleur de</span></div>
+  <div class="sub clip" id="s17" data-start="29.120" data-duration="0.920" data-track-index="7"><span>vos factures</span></div>
+  <div class="sub clip" id="s18" data-start="30.060" data-duration="2.050" data-track-index="7"><span>Ces informations apparaissent sur vos devis</span></div>
+  <div class="sub clip" id="s19" data-start="32.130" data-duration="0.910" data-track-index="7"><span>et vos factures</span></div>
+  <div class="sub clip" id="s20" data-start="33.060" data-duration="1.920" data-track-index="7"><span>Vos informations bancaires,</span></div>
+  <div class="sub clip" id="s21" data-start="35.000" data-duration="0.740" data-track-index="7"><span>la banque,</span></div>
+  <div class="sub clip" id="s22" data-start="35.760" data-duration="1.350" data-track-index="7"><span>le code BIC et Liban,</span></div>
+  <div class="sub clip" id="s23" data-start="37.130" data-duration="2.890" data-track-index="7"><span>sont reprises automatiquement sur vos factures</span></div>
+  <div class="sub clip" id="s24" data-start="40.040" data-duration="1.800" data-track-index="7"><span>Le bloc boîte mail connecte votre</span></div>
+  <div class="sub clip" id="s25" data-start="41.860" data-duration="1.920" data-track-index="7"><span>messagerie en IMAP pour gérer vos</span></div>
+  <div class="sub clip" id="s26" data-start="43.800" data-duration="2.210" data-track-index="7"><span>e-mails directement depuis RapidoCRM</span></div>
+  <div class="sub clip" id="s27" data-start="46.030" data-duration="1.200" data-track-index="7"><span>Avec votre clé Stripe,</span></div>
+  <div class="sub clip" id="s28" data-start="47.250" data-duration="2.050" data-track-index="7"><span>vos clients peuvent payer leurs factures</span></div>
+  <div class="sub clip" id="s29" data-start="49.320" data-duration="0.690" data-track-index="7"><span>en ligne</span></div>
+  <div class="sub clip" id="s30" data-start="50.030" data-duration="1.050" data-track-index="7"><span>Twilio sert à la fois à</span></div>
+  <div class="sub clip" id="s31" data-start="51.100" data-duration="1.710" data-track-index="7"><span>l&#x27;envoi des SMS et aux appels</span></div>
+  <div class="sub clip" id="s32" data-start="52.830" data-duration="1.210" data-track-index="7"><span>de l&#x27;agent vocal IA</span></div>
+  <div class="sub clip" id="s33" data-start="54.060" data-duration="2.070" data-track-index="7"><span>Renseignez votre identifiant,</span></div>
+  <div class="sub clip" id="s34" data-start="56.130" data-duration="1.880" data-track-index="7"><span>votre jeton et votre numéro</span></div>
+  <div class="sub clip" id="s35" data-start="58.030" data-duration="2.470" data-track-index="7"><span>Enfin, vous pouvez utiliser votre propre</span></div>
+  <div class="sub clip" id="s36" data-start="60.520" data-duration="1.570" data-track-index="7"><span>clé d&#x27;API pour l&#x27;agent IA ou</span></div>
+  <div class="sub clip" id="s37" data-start="62.110" data-duration="1.730" data-track-index="7"><span>laisser ce champ vide pour utiliser</span></div>
+  <div class="sub clip" id="s38" data-start="63.860" data-duration="1.180" data-track-index="7"><span>celle de RapidoCRM</span></div>
+  <div class="sub clip" id="s39" data-start="65.060" data-duration="2.050" data-track-index="7"><span>Les autres onglets vous donnent l&#x27;historique</span></div>
+  <div class="sub clip" id="s40" data-start="67.130" data-duration="0.990" data-track-index="7"><span>de vos abonnements,</span></div>
+  <div class="sub clip" id="s41" data-start="68.140" data-duration="0.870" data-track-index="7"><span>vos taux de TVA,</span></div>
+  <div class="sub clip" id="s42" data-start="69.030" data-duration="1.810" data-track-index="7"><span>votre carte de visite et vos</span></div>
+  <div class="sub clip" id="s43" data-start="70.860" data-duration="1.180" data-track-index="7"><span>jetons d&#x27;API</span></div>
+  <div class="sub clip" id="s44" data-start="72.060" data-duration="0.830" data-track-index="7"><span>Dans le prochain tutoriel,</span></div>
+  <div class="sub clip" id="s45" data-start="72.910" data-duration="0.970" data-track-index="7"><span>on part à la recherche de</span></div>
+  <div class="sub clip" id="s46" data-start="73.900" data-duration="1.140" data-track-index="7"><span>vos premiers prospects</span></div>
+  <div class="sub clip" id="s47" data-start="75.060" data-duration="2.060" data-track-index="7"><span>À tout de suite</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="74.4" data-track-index="10" data-volume="1"></audio>
+
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <div class="top"><span class="num">CRM03</span><span class="kick">Tutoriel RapidoCRM</span></div>
+      <h1>Compléter son profil et <em>sa configuration</em></h1>
+    </div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+
+  <div class="clip card" id="outro" data-start="77.10000000000001" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <h2>Merci d'avoir <em>regardé</em></h2>
+      <p>Prochain épisode : prospecter sur Google Maps</p>
+    </div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  // Intro
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .from('#intro .logo', { opacity: 0, duration: .6 }, .6)
+    .to('#intro', { opacity: 0, scale: 1.04, duration: .6, ease: 'power2.in' }, 3.0)
+    .from('#frame', { scale: .92, opacity: 0, duration: .9, ease: 'expo.out' }, 2.8);
+  // Progression
+  tl.to('#bar', { scaleX: 1, duration: 74.4, ease: 'none' }, 3.0);
+  tl.to('#cam', { scale: 1.33, x: -290.4, y: -317.6, duration: 1.2, ease: 'power3.inOut' }, 12.060)
+    .fromTo('#hl1', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 12.860)
+    .to('#hl1', { opacity: 0, duration: .35 }, 22.830)
+    .fromTo('#ch1', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 12.260)
+    .to('#ch1', { opacity: 0, x: -20, duration: .3 }, 22.780);
+  tl.to('#cam', { scale: 1.16, x: -140.8, y: -158.4, duration: 1.2, ease: 'power3.inOut' }, 23.030)
+    .fromTo('#hl2', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 23.830)
+    .to('#hl2', { opacity: 0, duration: .35 }, 32.860)
+    .fromTo('#ch2', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 23.230)
+    .to('#ch2', { opacity: 0, x: -20, duration: .3 }, 32.810);
+  tl.to('#cam', { scale: 1.2, x: -176.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 33.060)
+    .fromTo('#hl3', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 33.860)
+    .to('#hl3', { opacity: 0, duration: .35 }, 39.840)
+    .fromTo('#ch3', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 33.260)
+    .to('#ch3', { opacity: 0, x: -20, duration: .3 }, 39.790);
+  tl.to('#cam', { scale: 1.2, x: -176.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 40.040)
+    .fromTo('#hl4', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 40.840)
+    .to('#hl4', { opacity: 0, duration: .35 }, 45.830)
+    .fromTo('#ch4', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 40.240)
+    .to('#ch4', { opacity: 0, x: -20, duration: .3 }, 45.780);
+  tl.to('#cam', { scale: 1.2, x: -176.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 46.030)
+    .fromTo('#hl5', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 46.830)
+    .to('#hl5', { opacity: 0, duration: .35 }, 49.830)
+    .fromTo('#ch5', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 46.230)
+    .to('#ch5', { opacity: 0, x: -20, duration: .3 }, 49.780);
+  tl.to('#cam', { scale: 1.2, x: -176.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 50.030)
+    .fromTo('#hl6', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 50.830)
+    .to('#hl6', { opacity: 0, duration: .35 }, 57.830)
+    .fromTo('#ch6', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 50.230)
+    .to('#ch6', { opacity: 0, x: -20, duration: .3 }, 57.780);
+  tl.to('#cam', { scale: 1.0, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 58.030)
+    .fromTo('#hl7', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 58.830)
+    .to('#hl7', { opacity: 0, duration: .35 }, 64.860)
+    .fromTo('#ch7', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 58.230)
+    .to('#ch7', { opacity: 0, x: -20, duration: .3 }, 64.810);
+  tl.to('#cam', { scale: 1.45, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 65.060)
+    .fromTo('#hl8', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 65.860)
+    .to('#hl8', { opacity: 0, duration: .35 }, 71.860)
+    .fromTo('#ch8', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 65.260)
+    .to('#ch8', { opacity: 0, x: -20, duration: .3 }, 71.810);
+  tl.to('#cam', { scale: 1, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 72.060);
+  // Outro
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 77.400)
+    .from('#outro p', { y: 30, opacity: 0, duration: .7, ease: 'expo.out' }, 77.650);
+  window.__timelines['main'] = tl;
+</script>
+</body>
+</html>

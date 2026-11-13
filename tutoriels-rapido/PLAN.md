@@ -73,11 +73,21 @@ modifier les fichiers suivis par git**), `npm ci && npm run build`, `php artisan
 - [x] P3 — Validation de la voix ElevenLabs et du gabarit de miniature sur la vidéo pilote CRM02
 - [x] P4 — Recette de lancement local de chaque application (CRM, CMS, RH) avec données fictives, documentée dans `tutoriels-rapido/LANCEMENT.md`
 
+## ⚠️ Blocage RapidoCRM (13/11/2026)
+
+Le dépôt `rapido-crm` (branche par défaut, merge de la PR #97 du 07/09/2026) contient des **marqueurs de conflit git
+non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk partagé `vue-vendor-D2P1ka8e.js`) et
+3 sources (`resources/views/admin/layouts/admin.blade.php`, `resources/views/admin/tutoriels/templates/editeur_pdf.blade.php`,
+`resources/js/components/CalendarComponent.vue`). Conséquence : **aucun composant Vue de RapidoCRM ne se charge**
+(Clients, prospection, pipeline, campagnes…). Les écrans en Blade pur (inscription, tableau de bord, profil) fonctionnent.
+Règle : on ne modifie pas `rapido-crm` → **CRM04 à CRM43 en attente de la décision de Michael** ; la production
+continue avec les sections B (RapidoCMS) puis C (RapidoRH), puis D. Reprendre la section A dès que le dépôt est corrigé.
+
 ## A. RapidoCRM — un tutoriel par onglet / écran
 
 - [x] CRM01 — Créer son compte et choisir son forfait
 - [x] CRM02 — Visite guidée du tableau de bord
-- [ ] CRM03 — Compléter son profil et sa configuration
+- [x] CRM03 — Compléter son profil et sa configuration
 - [ ] CRM04 — Prospecter sur Google Maps
 - [ ] CRM05 — Rechercher une entreprise par SIRET
 - [ ] CRM06 — Gérer ses prospects et leurs notes
