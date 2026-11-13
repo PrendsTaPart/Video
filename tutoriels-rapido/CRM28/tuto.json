@@ -1,0 +1,127 @@
+{
+  "id": "CRM28",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Créer un sondage",
+  "em": "sondage",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/sondage",
+  "type_delay": 22,
+  "fixes": {
+    "QR": "QR"
+  },
+  "end_cta": "Prochain épisode : les avis clients",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Dans ce tutoriel, on demande l'avis de ses clients avec un sondage en ligne."
+    },
+    {
+      "key": "infos",
+      "text": "Dans Sondages, créez un nouveau sondage : un nom, son objectif, sa période, et si l'on peut y répondre une ou plusieurs fois."
+    },
+    {
+      "key": "apparence",
+      "text": "À l'étape Apparence, on choisit l'image de fond, le titre, le bouton et les couleurs. Un QR code permet de le tester sur son téléphone."
+    },
+    {
+      "key": "questions",
+      "text": "Puis on rédige les questions et leurs réponses possibles. On en ajoute autant qu'on veut, l'aperçu suit à droite."
+    },
+    {
+      "key": "resultats",
+      "text": "Une fois le sondage créé, partagez son lien : chaque réponse arrive dans RapidoCRM et enrichit la fiche de vos contacts."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on récolte des avis clients. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "infos",
+      "label": "Informations générales",
+      "fill": [
+        [
+          "input[placeholder=\"Entrer un nom\"]",
+          "Satisfaction clients"
+        ]
+      ],
+      "click": "a:has-text(\"créer un sondage\") >> visible=true",
+      "wait": 0.8
+    },
+    {
+      "at": "infos",
+      "click": "text=Remplir un formulaire",
+      "fill": [
+        [
+          "input[type=date] >> nth=0",
+          "2026-12-01"
+        ],
+        [
+          "input[type=date] >> nth=1",
+          "2026-12-31"
+        ]
+      ]
+    },
+    {
+      "at": "infos",
+      "click": "text=Répondre une seule fois",
+      "zone": [
+        410,
+        380,
+        1360,
+        620
+      ]
+    },
+    {
+      "at": "apparence",
+      "label": "Apparence",
+      "click": "button:has-text(\"suivant\") >> visible=true",
+      "wait": 0.8,
+      "zone": [
+        410,
+        360,
+        1360,
+        700
+      ]
+    },
+    {
+      "at": "questions",
+      "label": "Les questions",
+      "click": "button:has-text(\"suivant\") >> visible=true",
+      "wait": 1.0,
+      "zone": [
+        410,
+        360,
+        1360,
+        700
+      ]
+    },
+    {
+      "at": "resultats",
+      "label": "Partager",
+      "wait": 0.3,
+      "zone": [
+        1100,
+        420,
+        700,
+        700
+      ]
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ],
+  "thumb_shot": "fin.png"
+}
