@@ -99,20 +99,20 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM07 — Le pipeline : étapes, déplacement, clôture
 - [x] CRM08 — L'agent vocal IA : configuration, appels entrants, catalogue
 - [x] CRM09 — Historique des appels
-- [ ] CRM10 — Contacts et entreprises
-- [ ] CRM11 — Catalogue produits et offres
-- [ ] CRM12 — Créer et envoyer un devis
-- [ ] CRM13 — Factures et suivi des paiements
-- [ ] CRM14 — Dépenses
-- [ ] CRM15 — Contrats et signature électronique
-- [ ] CRM16 — Modèles de contrats
-- [ ] CRM17 — Campagnes email
-- [ ] CRM18 — Campagnes SMS et aperçu
-- [ ] CRM19 — Newsletters
-- [ ] CRM20 — Campagnes automatiques
-- [ ] CRM21 — Segments
-- [ ] CRM22 — Modèles d'emails et de SMS (éditeur)
-- [ ] CRM23 — Workflows : créer, activer, suivre
+- [~] CRM10 — Contacts et entreprises
+- [~] CRM11 — Catalogue produits et offres
+- [~] CRM12 — Créer et envoyer un devis
+- [~] CRM13 — Factures et suivi des paiements
+- [~] CRM14 — Dépenses
+- [~] CRM15 — Contrats et signature électronique
+- [~] CRM16 — Modèles de contrats
+- [~] CRM17 — Campagnes email
+- [~] CRM18 — Campagnes SMS et aperçu
+- [~] CRM19 — Newsletters
+- [~] CRM20 — Campagnes automatiques
+- [~] CRM21 — Segments
+- [~] CRM22 — Modèles d'emails et de SMS (éditeur)
+- [!] CRM23 — Workflows : créer, activer, suivre
 - [ ] CRM24 — Formulaires
 - [ ] CRM25 — CTA et pages
 - [ ] CRM26 — Programme de fidélité et cartes NFC
@@ -260,3 +260,23 @@ est fusionnée et déployée automatiquement — à ouvrir avec l'accord de Mich
 - `public/assets/js/toasts.js` : ne supprime plus les conteneurs `.alert` vides/masqués réservés aux erreurs
   → le bouton « Créer » d'un pipeline fonctionne de nouveau (il ne trouvait plus `#pipelineError`).
 Les mêmes correctifs sont appliqués à la copie de tournage `/home/user/rapido-crm-film`.
+
+Suite (même branche, 13/11 après-midi) :
+- contrats : modèles par défaut proposés dans la fiche client ; page de signature et PDF ne plantent plus
+  sur un modèle par défaut ; variables `{{client_nom}}`… remplies (`ContratVariablesService`) ;
+- CKEditor : plugins `emoji`/`codesnippet` en 404 → plus aucun éditeur de texte riche ne s'ouvrait
+  (campagnes e-mail, devis, factures, boîte mail) ; bandeau « version is not secure » supprimé ;
+- campagne SMS : aperçu lisible (texte blanc, casse d'origine) et au nom de la société ;
+- modèles e-mail/SMS : recherche et catégorie s'appliquent aussi aux modèles globaux ; texte « liste vide » SMS ;
+- workflows : « créer depuis un modèle » ouvre l'éditeur (au lieu d'un JSON brut) ; menu Filtre branché
+  (il contenait les textes d'exemple Bootstrap) ;
+- **sécurité** : routes de back-office sans `auth` (workflows, segmentation, pipeline, contrats,
+  historique général, analyse, /test, /test/email, /test-logo/{id}, upload-ckeditor…) passées sous `auth`.
+- Reste à signaler (non corrigé, choix produit) : `POST devis/{id}/signer` est public et non signé
+  (n'importe qui peut signer un devis par son numéro) ; critères de segment saisis en JSON brut.
+
+## Blocage voix (13/11, 16 h) — crédits ElevenLabs épuisés
+Quota du compte atteint (101 crédits restants, ~800–1 000 par épisode). CRM23 est scénarisé
+(`CRM23/tuto.json`) mais sans voix. Reprise dès recharge des crédits : générer la voix avec le texte
+des paragraphes (voix Adam - Instructor), puis `bash _gabarit/file.sh CRM23`.
+CRM20 : recentré sur « campagnes automatiques » (bouton de la liste Clients + suivi des envois programmés).
