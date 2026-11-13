@@ -1,0 +1,39 @@
+{
+  "id": "CRM14",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Enregistrer ses dépenses",
+  "em": "ses dépenses",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/facturation",
+  "type_delay": 30,
+  "fixes": {"TVA": "TVA", "TTC": "TTC", "HT": "HT"},
+  "end_cta": "Prochain épisode : contrats et signature électronique",
+  "paragraphs": [
+    {"key": "intro", "text": "Dans ce tutoriel, on enregistre ses dépenses dans RapidoCRM pour connaître son vrai bénéfice."},
+    {"key": "liste", "text": "Dans Factures, l'onglet Dépenses liste vos achats, avec leur statut, payée ou en attente, et leur montant."},
+    {"key": "creer", "text": "Le bouton Créer une dépense ouvre le formulaire. On y joint d'abord le justificatif : la facture du fournisseur, en PDF ou en photo."},
+    {"key": "items", "text": "On choisit ensuite les articles achetés. Les montants hors taxe, la TVA et le TTC se calculent automatiquement."},
+    {"key": "statut", "text": "On indique si la dépense est déjà payée, et par quel moyen : espèces, carte, virement ou chèque."},
+    {"key": "bilan", "text": "En haut de la page, RapidoCRM fait le bilan : le total de vos dépenses, celles qui restent à payer, et votre bénéfice."},
+    {"key": "outro", "text": "Dans le prochain tutoriel, on fait signer un contrat en ligne à ses clients. À tout de suite !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3},
+    {"at": "liste", "label": "Les dépenses", "click": "button[data-bs-target=\"#depenselist\"]", "wait": 0.6, "zone": [400, 470, 1370, 520]},
+    {"at": "creer", "label": "Une nouvelle dépense", "click": "#depenselist button:has-text(\"Créer une dépense\")", "wait": 0.4, "zone": [680, 120, 500, 240]},
+    {"at": "items", "label": "Les articles", "click": "#depenselist .modal.show .cardBox input[type=checkbox] >> nth=0"},
+    {"at": "items", "click": "#depenselist .modal.show .cardBox input[type=checkbox] >> nth=1", "zone": [680, 470, 500, 470]},
+    {"at": "statut", "label": "Statut et paiement", "scroll": "#depenselist .modal.show h6:has-text(\"Statut\")", "click": "#depenselist .modal.show #depense_payee"},
+    {"at": "statut", "click": "#depenselist .modal.show #paiement22", "zone": [680, 300, 500, 480]},
+    {"at": "bilan", "label": "Le bilan", "click": "#depenselist .modal.show .btn-close"},
+    {"at": "bilan", "top": true, "wait": 0.4, "zone": [390, 230, 1410, 130]},
+    {"at": "outro", "wait": 0.3}
+  ],
+  "thumb_shot": "fin.png"
+}

@@ -55,12 +55,12 @@
   "scenes": [
     {
       "at": "intro",
-      "wait": 0.3
+      "wait": 1.5,
+      "click": "button:has-text(\"ajouter\") >> visible=true"
     },
     {
       "at": "ajouter",
       "label": "Une nouvelle entreprise",
-      "click": "button:has-text(\"ajouter\") >> visible=true",
       "fill": [
         [
           ".modal.show input[placeholder=\"Entrer un nom\"]",
@@ -116,7 +116,7 @@
       "click": "h1:has-text(\"Clients\")",
       "fill": [
         [
-          "input[placeholder=\"Chercher\"] >> visible=true",
+          "input[placeholder^=\"Chercher\"] >> visible=true",
           "café"
         ]
       ],

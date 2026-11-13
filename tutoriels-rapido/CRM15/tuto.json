@@ -1,0 +1,42 @@
+{
+  "id": "CRM15",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Contrats et signature électronique",
+  "em": "signature électronique",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/contrat",
+  "type_delay": 30,
+  "fixes": {"PDF": "PDF"},
+  "end_cta": "Prochain épisode : les modèles de contrats",
+  "paragraphs": [
+    {"key": "intro", "text": "Dans ce tutoriel, on envoie un contrat à un client et il le signe en ligne, sans papier ni imprimante."},
+    {"key": "stats", "text": "La page Contrats compte vos contrats envoyés, ceux qui sont signés, et ceux qui attendent encore une signature."},
+    {"key": "liste", "text": "Dessous, chaque contrat avec son client, sa date et son statut. Filtrez par client, par statut ou par période."},
+    {"key": "envoyer", "text": "Pour en envoyer un, ouvrez la fiche du client. Dans le menu Finance, cliquez sur Créer un contrat, puis choisissez un modèle."},
+    {"key": "details", "text": "Vérifiez l'adresse du destinataire, fixez les dates de début et de fin, choisissez le message d'accompagnement, et envoyez."},
+    {"key": "signature", "text": "Votre client reçoit un lien sécurisé. Il relit le contrat, déjà rempli avec vos informations et les siennes, puis le signe du bout du doigt."},
+    {"key": "suivi", "text": "Le contrat passe alors en Signé, et vous téléchargez la version PDF signée en un clic."},
+    {"key": "outro", "text": "Dans le prochain tutoriel, on crée ses propres modèles de contrats. À tout de suite !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3},
+    {"at": "stats", "label": "Vos contrats", "zone": [390, 165, 1410, 120]},
+    {"at": "liste", "label": "Le suivi", "zone": [390, 455, 1400, 320]},
+    {"at": "envoyer", "label": "Envoyer un contrat", "goto": "/entreprises/5/profil", "click": "#headingThree button"},
+    {"at": "envoyer", "click": "button[data-bs-target=\"#listecontratModal\"]", "wait": 0.6, "zone": "#listecontratModal .modal-content"},
+    {"at": "details", "label": "Destinataire et dates", "click": "#listecontratModal label:has-text(\"Choisir\") >> nth=0",
+     "fill": [["#editcontratModal input[type=date] >> nth=0", "2026-12-01"], ["#editcontratModal input[type=date] >> nth=1", "2027-11-30"]],
+     "select": [["#editcontratModal select", "Envoi de contrat"]],
+     "zone": "#editcontratModal .modal-content"},
+    {"at": "signature", "label": "La signature du client", "goto_file": "lien-signature.txt", "wait": 0.8, "scroll": "h5:has-text(\"Contenu du contrat\"), :text(\"Contenu du contrat\")", "zone": [260, 60, 1400, 900]},
+    {"at": "suivi", "label": "Le contrat signé", "goto": "/contrat", "click": "tbody tr:first-child .dropdown-toggle", "zone": ".dropdown-menu.show"},
+    {"at": "outro", "wait": 0.3}
+  ],
+  "thumb_shot": "fin.png"
+}

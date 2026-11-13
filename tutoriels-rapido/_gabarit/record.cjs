@@ -126,6 +126,7 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
     const zones = {};
     for (const sc of cfg.scenes) {
         await at(T[sc.at]);
+        if (sc.goto_file) sc.goto = fs.readFileSync(path.join(path.dirname(OUT), sc.goto_file), 'utf8').trim(); // lien signé généré par avant-<EP>.sh
         if (sc.goto) { await page.goto(`${BASE}${sc.goto}`, { waitUntil: 'load', timeout: 15000 }).catch(() => {}); await page.waitForLoadState('networkidle', { timeout: 1500 }).catch(() => {}); await installCursor(); await page.waitForTimeout(900); }
         if (sc.eval) await page.evaluate(sc.eval).catch((e) => console.warn('eval', e.message));
         if (sc.click) {
