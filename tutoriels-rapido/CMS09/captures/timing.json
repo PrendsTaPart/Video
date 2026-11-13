@@ -1,0 +1,52 @@
+{
+  "voiceStartInCapture": 3.309,
+  "paragraphs": {
+    "intro": 0.02,
+    "type": 5.02,
+    "media": 10.02,
+    "taille": 18.02,
+    "description": 23.02,
+    "generer": 31.02,
+    "conseils": 37.02,
+    "outro": 45.02,
+    "end": 50
+  },
+  "zones": {
+    "type": [
+      400,
+      140,
+      670,
+      400
+    ],
+    "media": [
+      400,
+      530,
+      670,
+      230
+    ],
+    "taille": [
+      666,
+      194,
+      588,
+      692
+    ],
+    "description": [
+      666,
+      194,
+      588,
+      692
+    ],
+    "generer": [
+      666,
+      158,
+      588,
+      764
+    ],
+    "conseils": [
+      1160,
+      190,
+      570,
+      500
+    ]
+  }
+}
