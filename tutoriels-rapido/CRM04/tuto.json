@@ -1,0 +1,42 @@
+{
+  "id": "CRM04",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Prospecter sur Google Maps",
+  "em": "Google Maps",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/entreprises",
+  "type_delay": 40,
+  "fixes": { "Maps": "Maps", "maps": "Maps" },
+  "end_cta": "Prochain épisode : rechercher une entreprise par SIRET",
+  "paragraphs": [
+    { "key": "intro", "text": "Dans ce tutoriel, on trouve de nouveaux prospects sur Google Maps, sans quitter RapidoCRM." },
+    { "key": "acces", "text": "Dans Clients, cliquez sur Prospecter. Trois sources s'offrent à vous : un prospect, une entreprise, ou Maps." },
+    { "key": "recherche", "text": "Choisissez Maps, puis indiquez la spécialité recherchée et la ville. Par exemple : boulangerie, à Bordeaux. Validez." },
+    { "key": "resultats", "text": "En quelques secondes, RapidoCRM affiche les établissements trouvés, avec leur adresse, leur site web, leur domaine d'activité et leur téléphone." },
+    { "key": "unitaire", "text": "Sur chaque fiche, la loupe affiche le détail, et la disquette enregistre l'établissement dans vos clients." },
+    { "key": "tous", "text": "Tout vous intéresse ? Cliquez sur Enregistrer tous : la liste entière rejoint vos clients en un clic." },
+    { "key": "suite", "text": "Vos nouveaux prospects sont prêts : il ne reste plus qu'à les contacter, ou à les ajouter à votre pipeline." },
+    { "key": "outro", "text": "Dans le prochain tutoriel, on recherche une entreprise par son numéro SIRET. À tout de suite !" }
+  ],
+  "scenes": [
+    { "at": "intro", "wait": 0.3 },
+    { "at": "acces", "label": "Prospecter", "click": "button:has-text(\"prospecter\")", "zone": ".modal.show .modal-content" },
+    { "at": "recherche", "label": "Recherche Maps", "click": ".modal.show button:has-text(\"maps\")", "fill": [[".modal.show input >> nth=0", "Boulangerie"], [".modal.show input >> nth=1", "Bordeaux"]], "zone": ".modal.show .modal-content" },
+    { "at": "recherche", "wait": 0.8 },
+    { "at": "recherche", "click": ".modal.show button:has-text(\"valider\")" },
+    { "at": "resultats", "label": "Les résultats", "wait": 1.5, "zone": [400, 210, 1380, 380] },
+    { "at": "unitaire", "label": "Une fiche", "hover": "button[title=\"Voir détail\"]", "zone": [400, 260, 680, 330] },
+    { "at": "unitaire", "wait": 2.5 },
+    { "at": "unitaire", "click": "button[title=\"Enregistrer\"]" },
+    { "at": "tous", "label": "Enregistrer tous", "click": "button:has-text(\"enregistrer tous\")", "zone": [1480, 210, 320, 70] },
+    { "at": "suite", "label": "Vos prospects", "wait": 1.0, "zone": [380, 110, 1420, 500] },
+    { "at": "outro", "wait": 0.3 }
+  ],
+  "thumb_shot": "fin.png"
+}

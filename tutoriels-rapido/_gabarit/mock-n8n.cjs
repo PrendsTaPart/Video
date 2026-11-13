@@ -5,7 +5,7 @@
 //   N8N_ENTREPRISE_WEBHOOK=http://127.0.0.1:8199/entreprise
 const http = require('http');
 const port = +(process.argv[2] || 8199);
-const noms = ['Le Fournil Gourmand', 'Boulangerie des Capucins', 'Maison Dorée', 'Au Pain de Saint-Michel', 'La Mie Câline Démo',
+const noms = ['Le Fournil Gourmand', 'Boulangerie des Capucins', 'Maison Dorée', 'Au Pain de Saint-Michel', 'La Mie des Chartrons',
     'Boulangerie du Jardin Public', 'L\'Épi Bordelais', 'Pains & Merveilles', 'Le Pétrin de Bacalan', 'Fournée Chartronnaise',
     'La Tradition du Pont', 'Douceurs de la Bastide'];
 const rues = ['rue Sainte-Catherine', 'cours Victor Hugo', 'rue Notre-Dame', 'place du Marché', 'cours de l\'Intendance', 'quai Richelieu'];
