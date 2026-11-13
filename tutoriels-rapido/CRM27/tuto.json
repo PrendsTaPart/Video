@@ -1,136 +1,136 @@
 {
-  "id": "CRM27",
-  "product": "crm",
-  "kicker": "Tutoriel RapidoCRM",
-  "title": "Lancer un jeu concours",
-  "em": "jeu concours",
-  "tag": "1 min · Débutant",
-  "intro": 3.0,
-  "outro": 4.5,
-  "voice": "audio/voix.mp3",
-  "transcript": "audio/transcript.json",
-  "capture": "captures/ecran.mp4",
-  "start_path": "/jeux",
-  "type_delay": 22,
-  "fixes": {},
-  "end_cta": "Prochain épisode : les sondages",
-  "paragraphs": [
-    {
-      "key": "intro",
-      "text": "Dans ce tutoriel, on crée une roue de la fortune pour animer sa clientèle et récolter de nouveaux contacts."
-    },
-    {
-      "key": "infos",
-      "text": "Dans Jeux concours, cliquez sur Créer un jeu concours. Première étape : son nom, son objectif, par exemple faire remplir un formulaire, et sa période."
-    },
-    {
-      "key": "frequence",
-      "text": "On choisit aussi si chaque client peut jouer une seule fois, ou plusieurs fois."
-    },
-    {
-      "key": "apparence",
-      "text": "Deuxième étape, l'apparence : image de fond, titre, texte d'accroche et couleurs. L'aperçu se met à jour en direct."
-    },
-    {
-      "key": "recompenses",
-      "text": "Troisième étape, les récompenses : des points de fidélité, des cadeaux, et pour chacun sa chance de gagner. La roue se dessine à droite."
-    },
-    {
-      "key": "lancer",
-      "text": "Il ne reste qu'à créer le jeu, puis à le partager à vos clients : chaque participation remplit votre CRM."
-    },
-    {
-      "key": "outro",
-      "text": "Dans le prochain tutoriel, on interroge ses clients avec un sondage. À tout de suite !"
-    }
-  ],
-  "scenes": [
-    {
-      "at": "intro",
-      "wait": 0.3
-    },
-    {
-      "at": "infos",
-      "label": "Informations générales",
-      "fill": [
-        [
-          "input[placeholder=\"Entrer un nom\"]",
-          "Roue des fêtes"
-        ]
-      ],
-      "click": "a:has-text(\"créer un jeu\") >> visible=true",
-      "wait": 0.8
-    },
-    {
-      "at": "infos",
-      "click": "text=Remplir un formulaire",
-      "fill": [
-        [
-          "input[type=date] >> nth=0",
-          "2026-12-01"
-        ],
-        [
-          "input[type=date] >> nth=1",
-          "2026-12-24"
-        ]
-      ],
-      "zone": [
-        390,
-        380,
-        1400,
-        480
-      ]
-    },
-    {
-      "at": "frequence",
-      "label": "Fréquence",
-      "click": "text=Jouer une seule fois",
-      "zone": [
-        390,
-        870,
-        1400,
-        120
-      ]
-    },
-    {
-      "at": "apparence",
-      "label": "Apparence",
-      "click": "button:has-text(\"suivant\") >> visible=true",
-      "wait": 0.8,
-      "zone": [
-        390,
-        350,
-        1400,
-        720
-      ]
-    },
-    {
-      "at": "recompenses",
-      "label": "Les récompenses",
-      "click": "button:has-text(\"suivant\") >> visible=true",
-      "wait": 1.0,
-      "zone": [
-        390,
-        350,
-        1400,
-        720
-      ]
-    },
-    {
-      "at": "lancer",
-      "label": "Créer le jeu",
-      "hover": "button:has-text(\"création du jeu\") >> visible=true",
-      "zone": [
-        390,
-        350,
-        1400,
-        720
-      ]
-    },
-    {
-      "at": "outro",
-      "wait": 0.3
-    }
-  ],
-  "thumb_shot": "fin.png"
+ "id": "CRM27",
+ "product": "crm",
+ "kicker": "Tutoriel RapidoCRM",
+ "title": "Lancer un jeu concours",
+ "em": "jeu concours",
+ "tag": "1 min · Débutant",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/jeux",
+ "type_delay": 22,
+ "fixes": {},
+ "end_cta": "Prochain épisode : les sondages",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on crée une roue de la fortune pour animer sa clientèle et récolter de nouveaux contacts."
+  },
+  {
+   "key": "infos",
+   "text": "Dans Jeux concours, cliquez sur Créer un jeu concours. Première étape : son nom, son objectif, par exemple faire remplir un formulaire, et sa période."
+  },
+  {
+   "key": "frequence",
+   "text": "On choisit aussi si chaque client peut jouer une seule fois, ou plusieurs fois."
+  },
+  {
+   "key": "apparence",
+   "text": "Deuxième étape, l'apparence : image de fond, titre, texte d'accroche et couleurs. L'aperçu se met à jour en direct."
+  },
+  {
+   "key": "recompenses",
+   "text": "Troisième étape, les récompenses : des points de fidélité, des cadeaux, et pour chacun sa chance de gagner. La roue se dessine à droite."
+  },
+  {
+   "key": "lancer",
+   "text": "Il ne reste qu'à créer le jeu, puis à le partager à vos clients : chaque participation remplit votre CRM."
+  },
+  {
+   "key": "outro",
+   "text": "Dans le prochain tutoriel, on interroge ses clients avec un sondage. À tout de suite !"
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "infos",
+   "label": "Informations générales",
+   "fill": [
+    [
+     "input[placeholder=\"Entrer un nom\"]",
+     "Roue des fêtes"
+    ]
+   ],
+   "click": "a:has-text(\"créer un jeu\") >> visible=true",
+   "wait": 0.8
+  },
+  {
+   "at": "infos",
+   "click": "text=Remplir un formulaire",
+   "fill": [
+    [
+     "input[type=date] >> nth=0",
+     "2026-12-01"
+    ],
+    [
+     "input[type=date] >> nth=1",
+     "2026-12-24"
+    ]
+   ],
+   "zone": [
+    390,
+    380,
+    1400,
+    480
+   ]
+  },
+  {
+   "at": "frequence",
+   "label": "Fréquence",
+   "click": "text=Jouer une seule fois",
+   "zone": [
+    390,
+    870,
+    1400,
+    120
+   ]
+  },
+  {
+   "at": "apparence",
+   "label": "Apparence",
+   "click": "button:has-text(\"suivant\") >> visible=true",
+   "wait": 0.8,
+   "zone": [
+    390,
+    350,
+    1400,
+    720
+   ]
+  },
+  {
+   "at": "recompenses",
+   "label": "Les récompenses",
+   "click": "button:has-text(\"suivant\") >> visible=true",
+   "wait": 1.0,
+   "zone": [
+    380,
+    70,
+    1500,
+    980
+   ]
+  },
+  {
+   "at": "lancer",
+   "label": "Créer le jeu",
+   "hover": "button:has-text(\"création du jeu\") >> visible=true",
+   "zone": [
+    380,
+    70,
+    1500,
+    980
+   ]
+  },
+  {
+   "at": "outro",
+   "wait": 0.3
+  }
+ ],
+ "thumb_shot": "fin.png"
 }

@@ -1,0 +1,818 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.02,
+    "end": 0.25,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.25,
+    "end": 0.32,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.4,
+    "end": 0.96,
+    "id": "w2"
+  },
+  {
+    "text": "on",
+    "start": 0.96,
+    "end": 1.12,
+    "id": "w3"
+  },
+  {
+    "text": "crée",
+    "start": 1.12,
+    "end": 1.34,
+    "id": "w4"
+  },
+  {
+    "text": "une",
+    "start": 1.34,
+    "end": 1.52,
+    "id": "w5"
+  },
+  {
+    "text": "roue",
+    "start": 1.52,
+    "end": 1.76,
+    "id": "w6"
+  },
+  {
+    "text": "de",
+    "start": 1.76,
+    "end": 1.83,
+    "id": "w7"
+  },
+  {
+    "text": "la",
+    "start": 1.87,
+    "end": 1.99,
+    "id": "w8"
+  },
+  {
+    "text": "fortune",
+    "start": 1.99,
+    "end": 2.52,
+    "id": "w9"
+  },
+  {
+    "text": "pour",
+    "start": 2.52,
+    "end": 2.71,
+    "id": "w10"
+  },
+  {
+    "text": "animer",
+    "start": 2.77,
+    "end": 3.1,
+    "id": "w11"
+  },
+  {
+    "text": "sa",
+    "start": 3.1,
+    "end": 3.21,
+    "id": "w12"
+  },
+  {
+    "text": "clientèle",
+    "start": 3.24,
+    "end": 3.81,
+    "id": "w13"
+  },
+  {
+    "text": "et",
+    "start": 3.92,
+    "end": 3.96,
+    "id": "w14"
+  },
+  {
+    "text": "récolter",
+    "start": 3.96,
+    "end": 4.46,
+    "id": "w15"
+  },
+  {
+    "text": "de",
+    "start": 4.46,
+    "end": 4.59,
+    "id": "w16"
+  },
+  {
+    "text": "nouveaux",
+    "start": 4.59,
+    "end": 5.14,
+    "id": "w17"
+  },
+  {
+    "text": "contacts.",
+    "start": 5.14,
+    "end": 5.78,
+    "id": "w18"
+  },
+  {
+    "text": "Dans",
+    "start": 5.8,
+    "end": 6.05,
+    "id": "w19"
+  },
+  {
+    "text": "«",
+    "start": 6.05,
+    "end": 6.1,
+    "id": "w20"
+  },
+  {
+    "text": "Jeux",
+    "start": 6.15,
+    "end": 6.37,
+    "id": "w21"
+  },
+  {
+    "text": "concours",
+    "start": 6.37,
+    "end": 6.74,
+    "id": "w22"
+  },
+  {
+    "text": "»,",
+    "start": 6.9,
+    "end": 7.11,
+    "id": "w23"
+  },
+  {
+    "text": "cliquez",
+    "start": 7.11,
+    "end": 7.58,
+    "id": "w24"
+  },
+  {
+    "text": "sur",
+    "start": 7.58,
+    "end": 7.77,
+    "id": "w25"
+  },
+  {
+    "text": "«",
+    "start": 7.77,
+    "end": 7.78,
+    "id": "w26"
+  },
+  {
+    "text": "Créer",
+    "start": 7.86,
+    "end": 8.16,
+    "id": "w27"
+  },
+  {
+    "text": "un",
+    "start": 8.16,
+    "end": 8.29,
+    "id": "w28"
+  },
+  {
+    "text": "jeu",
+    "start": 8.29,
+    "end": 8.47,
+    "id": "w29"
+  },
+  {
+    "text": "concours",
+    "start": 8.55,
+    "end": 8.99,
+    "id": "w30"
+  },
+  {
+    "text": "».",
+    "start": 9.02,
+    "end": 9.42,
+    "id": "w31"
+  },
+  {
+    "text": "Première",
+    "start": 9.44,
+    "end": 9.85,
+    "id": "w32"
+  },
+  {
+    "text": "étape,",
+    "start": 9.92,
+    "end": 10.3,
+    "id": "w33"
+  },
+  {
+    "text": "son",
+    "start": 10.3,
+    "end": 10.59,
+    "id": "w34"
+  },
+  {
+    "text": "nom,",
+    "start": 10.59,
+    "end": 11.07,
+    "id": "w35"
+  },
+  {
+    "text": "son",
+    "start": 11.07,
+    "end": 11.36,
+    "id": "w36"
+  },
+  {
+    "text": "objectif,",
+    "start": 11.36,
+    "end": 12.27,
+    "id": "w37"
+  },
+  {
+    "text": "par",
+    "start": 12.27,
+    "end": 12.45,
+    "id": "w38"
+  },
+  {
+    "text": "exemple",
+    "start": 12.45,
+    "end": 12.86,
+    "id": "w39"
+  },
+  {
+    "text": "faire",
+    "start": 12.86,
+    "end": 13.16,
+    "id": "w40"
+  },
+  {
+    "text": "remplir",
+    "start": 13.16,
+    "end": 13.57,
+    "id": "w41"
+  },
+  {
+    "text": "un",
+    "start": 13.57,
+    "end": 13.69,
+    "id": "w42"
+  },
+  {
+    "text": "formulaire",
+    "start": 13.69,
+    "end": 14.29,
+    "id": "w43"
+  },
+  {
+    "text": "et",
+    "start": 14.34,
+    "end": 14.46,
+    "id": "w44"
+  },
+  {
+    "text": "sa",
+    "start": 14.52,
+    "end": 14.63,
+    "id": "w45"
+  },
+  {
+    "text": "période.",
+    "start": 14.79,
+    "end": 15.61,
+    "id": "w46"
+  },
+  {
+    "text": "On",
+    "start": 15.68,
+    "end": 15.78,
+    "id": "w47"
+  },
+  {
+    "text": "choisit",
+    "start": 15.78,
+    "end": 16.2,
+    "id": "w48"
+  },
+  {
+    "text": "aussi",
+    "start": 16.2,
+    "end": 16.5,
+    "id": "w49"
+  },
+  {
+    "text": "si",
+    "start": 16.5,
+    "end": 16.61,
+    "id": "w50"
+  },
+  {
+    "text": "chaque",
+    "start": 16.61,
+    "end": 16.97,
+    "id": "w51"
+  },
+  {
+    "text": "client",
+    "start": 16.99,
+    "end": 17.34,
+    "id": "w52"
+  },
+  {
+    "text": "peut",
+    "start": 17.34,
+    "end": 17.58,
+    "id": "w53"
+  },
+  {
+    "text": "jouer",
+    "start": 17.58,
+    "end": 17.8,
+    "id": "w54"
+  },
+  {
+    "text": "une",
+    "start": 17.94,
+    "end": 18.06,
+    "id": "w55"
+  },
+  {
+    "text": "seule",
+    "start": 18.06,
+    "end": 18.35,
+    "id": "w56"
+  },
+  {
+    "text": "fois",
+    "start": 18.43,
+    "end": 18.6,
+    "id": "w57"
+  },
+  {
+    "text": "ou",
+    "start": 18.6,
+    "end": 18.72,
+    "id": "w58"
+  },
+  {
+    "text": "plusieurs",
+    "start": 18.72,
+    "end": 19.26,
+    "id": "w59"
+  },
+  {
+    "text": "fois.",
+    "start": 19.26,
+    "end": 19.69,
+    "id": "w60"
+  },
+  {
+    "text": "Deuxième",
+    "start": 19.72,
+    "end": 20.26,
+    "id": "w61"
+  },
+  {
+    "text": "étape,",
+    "start": 20.26,
+    "end": 20.66,
+    "id": "w62"
+  },
+  {
+    "text": "l'apparence,",
+    "start": 20.82,
+    "end": 21.69,
+    "id": "w63"
+  },
+  {
+    "text": "image",
+    "start": 21.69,
+    "end": 22.11,
+    "id": "w64"
+  },
+  {
+    "text": "de",
+    "start": 22.11,
+    "end": 22.22,
+    "id": "w65"
+  },
+  {
+    "text": "fond,",
+    "start": 22.3,
+    "end": 22.76,
+    "id": "w66"
+  },
+  {
+    "text": "titre,",
+    "start": 22.76,
+    "end": 23.36,
+    "id": "w67"
+  },
+  {
+    "text": "texte",
+    "start": 23.36,
+    "end": 23.71,
+    "id": "w68"
+  },
+  {
+    "text": "d'accroche",
+    "start": 23.71,
+    "end": 24.41,
+    "id": "w69"
+  },
+  {
+    "text": "et",
+    "start": 24.41,
+    "end": 24.55,
+    "id": "w70"
+  },
+  {
+    "text": "couleur.",
+    "start": 24.55,
+    "end": 25.16,
+    "id": "w71"
+  },
+  {
+    "text": "L'aperçu",
+    "start": 25.28,
+    "end": 25.86,
+    "id": "w72"
+  },
+  {
+    "text": "se",
+    "start": 25.86,
+    "end": 26.01,
+    "id": "w73"
+  },
+  {
+    "text": "met",
+    "start": 26.01,
+    "end": 26.22,
+    "id": "w74"
+  },
+  {
+    "text": "à",
+    "start": 26.22,
+    "end": 26.38,
+    "id": "w75"
+  },
+  {
+    "text": "jour",
+    "start": 26.38,
+    "end": 26.62,
+    "id": "w76"
+  },
+  {
+    "text": "en",
+    "start": 26.62,
+    "end": 26.77,
+    "id": "w77"
+  },
+  {
+    "text": "direct.",
+    "start": 26.77,
+    "end": 27.45,
+    "id": "w78"
+  },
+  {
+    "text": "Troisième",
+    "start": 27.54,
+    "end": 28.09,
+    "id": "w79"
+  },
+  {
+    "text": "étape,",
+    "start": 28.09,
+    "end": 28.48,
+    "id": "w80"
+  },
+  {
+    "text": "les",
+    "start": 28.64,
+    "end": 28.71,
+    "id": "w81"
+  },
+  {
+    "text": "récompenses,",
+    "start": 28.71,
+    "end": 29.51,
+    "id": "w82"
+  },
+  {
+    "text": "des",
+    "start": 29.51,
+    "end": 29.71,
+    "id": "w83"
+  },
+  {
+    "text": "points",
+    "start": 29.71,
+    "end": 30.05,
+    "id": "w84"
+  },
+  {
+    "text": "de",
+    "start": 30.1,
+    "end": 30.21,
+    "id": "w85"
+  },
+  {
+    "text": "fidélité,",
+    "start": 30.21,
+    "end": 30.79,
+    "id": "w86"
+  },
+  {
+    "text": "des",
+    "start": 30.84,
+    "end": 31.02,
+    "id": "w87"
+  },
+  {
+    "text": "cadeaux",
+    "start": 31.02,
+    "end": 31.55,
+    "id": "w88"
+  },
+  {
+    "text": "et",
+    "start": 31.59,
+    "end": 31.67,
+    "id": "w89"
+  },
+  {
+    "text": "pour",
+    "start": 31.74,
+    "end": 32.01,
+    "id": "w90"
+  },
+  {
+    "text": "chacun",
+    "start": 32.05,
+    "end": 32.55,
+    "id": "w91"
+  },
+  {
+    "text": "sa",
+    "start": 32.55,
+    "end": 32.68,
+    "id": "w92"
+  },
+  {
+    "text": "chance",
+    "start": 32.68,
+    "end": 32.94,
+    "id": "w93"
+  },
+  {
+    "text": "de",
+    "start": 32.94,
+    "end": 33.32,
+    "id": "w94"
+  },
+  {
+    "text": "gagner.",
+    "start": 33.32,
+    "end": 33.71,
+    "id": "w95"
+  },
+  {
+    "text": "La",
+    "start": 33.78,
+    "end": 33.91,
+    "id": "w96"
+  },
+  {
+    "text": "roue",
+    "start": 33.91,
+    "end": 34.19,
+    "id": "w97"
+  },
+  {
+    "text": "se",
+    "start": 34.26,
+    "end": 34.36,
+    "id": "w98"
+  },
+  {
+    "text": "dessine",
+    "start": 34.36,
+    "end": 34.72,
+    "id": "w99"
+  },
+  {
+    "text": "à",
+    "start": 34.88,
+    "end": 34.95,
+    "id": "w100"
+  },
+  {
+    "text": "droite.",
+    "start": 34.95,
+    "end": 35.68,
+    "id": "w101"
+  },
+  {
+    "text": "Il",
+    "start": 35.7,
+    "end": 35.8,
+    "id": "w102"
+  },
+  {
+    "text": "ne",
+    "start": 35.8,
+    "end": 35.91,
+    "id": "w103"
+  },
+  {
+    "text": "reste",
+    "start": 35.92,
+    "end": 36.22,
+    "id": "w104"
+  },
+  {
+    "text": "qu'à",
+    "start": 36.22,
+    "end": 36.46,
+    "id": "w105"
+  },
+  {
+    "text": "créer",
+    "start": 36.46,
+    "end": 36.64,
+    "id": "w106"
+  },
+  {
+    "text": "le",
+    "start": 36.8,
+    "end": 36.88,
+    "id": "w107"
+  },
+  {
+    "text": "jeu",
+    "start": 36.88,
+    "end": 37.05,
+    "id": "w108"
+  },
+  {
+    "text": "puis",
+    "start": 37.06,
+    "end": 37.3,
+    "id": "w109"
+  },
+  {
+    "text": "à",
+    "start": 37.3,
+    "end": 37.36,
+    "id": "w110"
+  },
+  {
+    "text": "le",
+    "start": 37.36,
+    "end": 37.48,
+    "id": "w111"
+  },
+  {
+    "text": "partager",
+    "start": 37.48,
+    "end": 37.96,
+    "id": "w112"
+  },
+  {
+    "text": "à",
+    "start": 37.96,
+    "end": 38.03,
+    "id": "w113"
+  },
+  {
+    "text": "vos",
+    "start": 38.03,
+    "end": 38.2,
+    "id": "w114"
+  },
+  {
+    "text": "clients.",
+    "start": 38.28,
+    "end": 38.89,
+    "id": "w115"
+  },
+  {
+    "text": "Chaque",
+    "start": 38.92,
+    "end": 39.33,
+    "id": "w116"
+  },
+  {
+    "text": "participation",
+    "start": 39.4,
+    "end": 40.3,
+    "id": "w117"
+  },
+  {
+    "text": "remplit",
+    "start": 40.3,
+    "end": 40.81,
+    "id": "w118"
+  },
+  {
+    "text": "votre",
+    "start": 40.81,
+    "end": 41.03,
+    "id": "w119"
+  },
+  {
+    "text": "CRM.",
+    "start": 41.17,
+    "end": 41.61,
+    "id": "w120"
+  },
+  {
+    "text": "Dans",
+    "start": 41.66,
+    "end": 41.86,
+    "id": "w121"
+  },
+  {
+    "text": "le",
+    "start": 41.88,
+    "end": 41.96,
+    "id": "w122"
+  },
+  {
+    "text": "prochain",
+    "start": 42.04,
+    "end": 42.45,
+    "id": "w123"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 42.45,
+    "end": 43,
+    "id": "w124"
+  },
+  {
+    "text": "on",
+    "start": 43.02,
+    "end": 43.13,
+    "id": "w125"
+  },
+  {
+    "text": "interroge",
+    "start": 43.13,
+    "end": 43.63,
+    "id": "w126"
+  },
+  {
+    "text": "ses",
+    "start": 43.63,
+    "end": 43.78,
+    "id": "w127"
+  },
+  {
+    "text": "clients",
+    "start": 43.82,
+    "end": 44.17,
+    "id": "w128"
+  },
+  {
+    "text": "avec",
+    "start": 44.23,
+    "end": 44.45,
+    "id": "w129"
+  },
+  {
+    "text": "un",
+    "start": 44.45,
+    "end": 44.56,
+    "id": "w130"
+  },
+  {
+    "text": "sondage.",
+    "start": 44.56,
+    "end": 45.28,
+    "id": "w131"
+  },
+  {
+    "text": "À",
+    "start": 45.3,
+    "end": 45.31,
+    "id": "w132"
+  },
+  {
+    "text": "tout",
+    "start": 45.32,
+    "end": 45.5,
+    "id": "w133"
+  },
+  {
+    "text": "de",
+    "start": 45.52,
+    "end": 45.6,
+    "id": "w134"
+  },
+  {
+    "text": "suite!",
+    "start": 45.6,
+    "end": 46,
+    "id": "w135"
+  }
+]

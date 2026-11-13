@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#4CAF50; --b:#9BE15D; --grad:linear-gradient(100deg,#4CAF50,#9BE15D); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; background:#05060A; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(120px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.45; }
+  .h2 { width:700px; height:600px; left:-260px; bottom:-320px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  #frame { position:absolute; left:80px; top:56px; width:1760px; height:990px; border-radius:22px; overflow:hidden; background:#f3f4f7;
+           box-shadow:0 50px 120px -30px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.12),0 0 120px -30px var(--a); }
+  #cam { position:absolute; left:0; top:0; width:1760px; height:990px; transform-origin:0 0; }
+  #cam video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .hl { position:absolute; border-radius:18px; border:3px solid var(--a); box-shadow:0 0 0 9999px rgba(5,6,10,.28),0 0 40px -6px var(--a); opacity:0; }
+  .chap { position:absolute; left:108px; top:82px; display:flex; align-items:center; gap:14px; padding:12px 22px 12px 12px; border-radius:999px;
+          background:rgba(10,12,18,.82); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.14); font-size:26px; font-weight:600; opacity:0; z-index:5; }
+  .chap b { width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:19px; }
+  .sub { position:absolute; inset:auto 0 58px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; letter-spacing:-.01em; white-space:nowrap; box-shadow:0 10px 30px rgba(0,0,0,.4); }
+  .bar { position:absolute; left:80px; bottom:22px; width:1760px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:104px; top:84px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  /* intro / outro */
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .kick { font-size:28px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.7); }
+  .card h1 { text-wrap:balance; margin-top:40px; font-size:128px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1500px; }
+  .card h1 em, .card h2 em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; line-height:1; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="69.1" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+
+  <div id="frame">
+    <div id="cam">
+      <video id="cap" class="clip" src="captures/ecran.mp4" muted data-start="3.0" data-duration="66.1" data-track-index="1"></video>
+      <div class="hl" id="hl1" style="left:358px;top:215px;width:1283px;height:257px"></div>
+      <div class="hl" id="hl2" style="left:702px;top:358px;width:356px;height:276px"></div>
+      <div class="hl" id="hl3" style="left:500px;top:121px;width:759px;height:748px"></div>
+      <div class="hl" id="hl4" style="left:358px;top:128px;width:843px;height:825px"></div>
+      <div class="hl" id="hl5" style="left:1219px;top:202px;width:431px;height:770px"></div>
+      <div class="hl" id="hl6" style="left:1320px;top:128px;width:330px;height:64px"></div>
+    </div>
+  </div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">RapidoCRM</div>
+  <div class="chap" id="ch1"><b>1</b>Vos workflows</div>
+  <div class="chap" id="ch2"><b>2</b>Créer un workflow</div>
+  <div class="chap" id="ch3"><b>3</b>Les modèles</div>
+  <div class="chap" id="ch4"><b>4</b>L&#x27;éditeur</div>
+  <div class="chap" id="ch5"><b>5</b>Les blocs</div>
+  <div class="chap" id="ch6"><b>6</b>Activer</div>
+  <div class="sub clip" id="s0" data-start="3.030" data-duration="1.020" data-track-index="7"><span>Dans ce tutoriel</span></div>
+  <div class="sub clip" id="s1" data-start="4.090" data-duration="1.910" data-track-index="7"><span>on automatise ses relances avec les</span></div>
+  <div class="sub clip" id="s2" data-start="6.020" data-duration="1.683" data-track-index="7"><span>workflows de RapidoCRM</span></div>
+  <div class="sub clip" id="s3" data-start="7.830" data-duration="2.710" data-track-index="7"><span>La page Workflow liste vos automatisations</span></div>
+  <div class="sub clip" id="s4" data-start="10.560" data-duration="1.020" data-track-index="7"><span>avec leur statut</span></div>
+  <div class="sub clip" id="s5" data-start="11.600" data-duration="1.470" data-track-index="7"><span>actif ou inactif</span></div>
+  <div class="sub clip" id="s6" data-start="13.090" data-duration="1.920" data-track-index="7"><span>et le nombre de contacts inscrits</span></div>
+  <div class="sub clip" id="s7" data-start="15.030" data-duration="2.090" data-track-index="7"><span>Le filtre affiche par exemple seulement</span></div>
+  <div class="sub clip" id="s8" data-start="17.140" data-duration="1.370" data-track-index="7"><span>les workflows actifs</span></div>
+  <div class="sub clip" id="s9" data-start="18.530" data-duration="2.120" data-track-index="7"><span>Le bouton Créer un workflow propose</span></div>
+  <div class="sub clip" id="s10" data-start="20.670" data-duration="1.030" data-track-index="7"><span>deux chemins</span></div>
+  <div class="sub clip" id="s11" data-start="21.720" data-duration="0.860" data-track-index="7"><span>partir de zéro</span></div>
+  <div class="sub clip" id="s12" data-start="22.600" data-duration="1.610" data-track-index="7"><span>ou partir d&#x27;un modèle</span></div>
+  <div class="sub clip" id="s13" data-start="24.230" data-duration="1.933" data-track-index="7"><span>Onze modèles sont prêts à l&#x27;emploi</span></div>
+  <div class="sub clip" id="s14" data-start="26.183" data-duration="1.198" data-track-index="7"><span>e-mail de bienvenue</span></div>
+  <div class="sub clip" id="s15" data-start="27.420" data-duration="1.050" data-track-index="7"><span>relance de devis</span></div>
+  <div class="sub clip" id="s16" data-start="28.490" data-duration="1.500" data-track-index="7"><span>relance de facture impayée</span></div>
+  <div class="sub clip" id="s17" data-start="30.030" data-duration="2.610" data-track-index="7"><span>ou même prospection complète avec l&#x27;agent</span></div>
+  <div class="sub clip" id="s18" data-start="32.660" data-duration="0.750" data-track-index="7"><span>vocal IA</span></div>
+  <div class="sub clip" id="s19" data-start="33.430" data-duration="1.880" data-track-index="7"><span>Choisissons Relance devis</span></div>
+  <div class="sub clip" id="s20" data-start="35.330" data-duration="2.080" data-track-index="7"><span>Le workflow s&#x27;ouvre dans l&#x27;éditeur</span></div>
+  <div class="sub clip" id="s21" data-start="37.430" data-duration="1.050" data-track-index="7"><span>un déclencheur</span></div>
+  <div class="sub clip" id="s22" data-start="38.500" data-duration="1.390" data-track-index="7"><span>un délai de trois jours</span></div>
+  <div class="sub clip" id="s23" data-start="39.910" data-duration="1.570" data-track-index="7"><span>puis l&#x27;envoi d&#x27;un e-mail</span></div>
+  <div class="sub clip" id="s24" data-start="41.530" data-duration="0.620" data-track-index="7"><span>À droite</span></div>
+  <div class="sub clip" id="s25" data-start="42.170" data-duration="1.540" data-track-index="7"><span>la bibliothèque de blocs</span></div>
+  <div class="sub clip" id="s26" data-start="43.730" data-duration="1.500" data-track-index="7"><span>communication, CRM</span></div>
+  <div class="sub clip" id="s27" data-start="45.250" data-duration="1.609" data-track-index="7"><span>marketing, délais</span></div>
+  <div class="sub clip" id="s28" data-start="46.879" data-duration="1.145" data-track-index="7"><span>branches conditionnelles</span></div>
+  <div class="sub clip" id="s29" data-start="48.160" data-duration="2.150" data-track-index="7"><span>et prospection avec l&#x27;IA</span></div>
+  <div class="sub clip" id="s30" data-start="50.330" data-duration="1.780" data-track-index="7"><span>Un clic suffit pour les ajouter</span></div>
+  <div class="sub clip" id="s31" data-start="52.130" data-duration="1.440" data-track-index="7"><span>Il ne reste qu&#x27;à passer le</span></div>
+  <div class="sub clip" id="s32" data-start="53.590" data-duration="2.220" data-track-index="7"><span>statut en Actif et à enregistrer</span></div>
+  <div class="sub clip" id="s33" data-start="55.830" data-duration="1.830" data-track-index="7"><span>le workflow tourne alors tout seul</span></div>
+  <div class="sub clip" id="s34" data-start="57.680" data-duration="1.930" data-track-index="7"><span>et chaque exécution est tracée</span></div>
+  <div class="sub clip" id="s35" data-start="59.630" data-duration="1.190" data-track-index="7"><span>Dans le prochain tutoriel</span></div>
+  <div class="sub clip" id="s36" data-start="60.840" data-duration="1.750" data-track-index="7"><span>on crée des formulaires qui alimentent</span></div>
+  <div class="sub clip" id="s37" data-start="62.610" data-duration="0.720" data-track-index="7"><span>ces workflows</span></div>
+  <div class="sub clip" id="s38" data-start="63.350" data-duration="0.970" data-track-index="7"><span>À tout de suite</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="61.6" data-track-index="10" data-volume="1"></audio>
+
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <div class="top"><span class="num">CRM23</span><span class="kick">Tutoriel RapidoCRM</span></div>
+      <h1><em>Workflows</em> : créer, activer, suivre</h1>
+    </div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+
+  <div class="clip card" id="outro" data-start="64.3" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <h2>Merci d'avoir <em>regardé</em></h2>
+      <p>Prochain épisode : les formulaires</p>
+    </div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  // Intro
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .from('#intro .logo', { opacity: 0, duration: .6 }, .6)
+    .to('#intro', { opacity: 0, scale: 1.04, duration: .6, ease: 'power2.in' }, 3.0)
+    .from('#frame', { scale: .92, opacity: 0, duration: .9, ease: 'expo.out' }, 2.8);
+  // Progression
+  tl.to('#bar', { scaleX: 1, duration: 61.6, ease: 'none' }, 3.0);
+  tl.to('#cam', { scale: 1.26, x: -379.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 7.830)
+    .fromTo('#hl1', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 8.630)
+    .to('#hl1', { opacity: 0, duration: .35 }, 18.330)
+    .fromTo('#ch1', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 8.030)
+    .to('#ch1', { opacity: 0, x: -20, duration: .3 }, 18.280);
+  tl.to('#cam', { scale: 1.45, x: -396.0, y: -223.4, duration: 1.2, ease: 'power3.inOut' }, 18.530)
+    .fromTo('#hl2', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 19.330)
+    .to('#hl2', { opacity: 0, duration: .35 }, 24.030)
+    .fromTo('#ch2', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 18.730)
+    .to('#ch2', { opacity: 0, x: -20, duration: .3 }, 23.980);
+  tl.to('#cam', { scale: 1.22, x: -193.6, y: -108.9, duration: 1.2, ease: 'power3.inOut' }, 24.230)
+    .fromTo('#hl3', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 25.030)
+    .to('#hl3', { opacity: 0, duration: .35 }, 33.230)
+    .fromTo('#ch3', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 24.430)
+    .to('#ch3', { opacity: 0, x: -20, duration: .3 }, 33.180);
+  tl.to('#cam', { scale: 1.1, x: 0, y: -99.0, duration: 1.2, ease: 'power3.inOut' }, 33.430)
+    .fromTo('#hl4', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 34.230)
+    .to('#hl4', { opacity: 0, duration: .35 }, 41.330)
+    .fromTo('#ch4', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 33.630)
+    .to('#ch4', { opacity: 0, x: -20, duration: .3 }, 41.280);
+  tl.to('#cam', { scale: 1.18, x: -316.8, y: -178.2, duration: 1.2, ease: 'power3.inOut' }, 41.530)
+    .fromTo('#hl5', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 42.330)
+    .to('#hl5', { opacity: 0, duration: .35 }, 51.930)
+    .fromTo('#ch5', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 41.730)
+    .to('#ch5', { opacity: 0, x: -20, duration: .3 }, 51.880);
+  tl.to('#cam', { scale: 1.45, x: -792.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 52.130)
+    .fromTo('#hl6', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 52.930)
+    .to('#hl6', { opacity: 0, duration: .35 }, 59.430)
+    .fromTo('#ch6', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 52.330)
+    .to('#ch6', { opacity: 0, x: -20, duration: .3 }, 59.380);
+  tl.to('#cam', { scale: 1, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 59.630);
+  // Outro
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 64.600)
+    .from('#outro p', { y: 30, opacity: 0, duration: .7, ease: 'expo.out' }, 64.850);
+  window.__timelines['main'] = tl;
+</script>
+</body>
+</html>

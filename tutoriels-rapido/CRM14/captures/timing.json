@@ -1,5 +1,5 @@
 {
-  "voiceStartInCapture": 5.438,
+  "voiceStartInCapture": 3.802,
   "paragraphs": {
     "intro": 0.02,
     "liste": 5.9,
@@ -37,9 +37,9 @@
     ],
     "bilan": [
       390,
-      230,
+      325,
       1410,
-      130
+      120
     ]
   }
 }

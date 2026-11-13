@@ -34,6 +34,7 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
     }
     const ctx = await browser.newContext({ viewport: { width: 1920, height: 1080 }, storageState: state, recordVideo: { dir: OUT, size: { width: 1920, height: 1080 } } });
     const page = await ctx.newPage();
+    page.setDefaultTimeout(5000); // un élément masqué ne doit pas bloquer la scène 30 s (décalage voix/image)
     // Remplacement de textes à l'affichage (ex. adresse locale → adresse publique), sans toucher au code de l'application.
     if (cfg.replace_text) {
         await page.addInitScript((pairs) => {

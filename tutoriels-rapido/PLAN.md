@@ -101,25 +101,25 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM09 — Historique des appels
 - [x] CRM10 — Contacts et entreprises
 - [x] CRM11 — Catalogue produits et offres
-- [~] CRM12 — Créer et envoyer un devis
+- [x] CRM12 — Créer et envoyer un devis
 - [x] CRM13 — Factures et suivi des paiements
-- [~] CRM14 — Dépenses
+- [x] CRM14 — Dépenses
 - [~] CRM15 — Contrats et signature électronique
-- [~] CRM16 — Modèles de contrats
+- [x] CRM16 — Modèles de contrats
 - [x] CRM17 — Campagnes email
 - [x] CRM18 — Campagnes SMS et aperçu
-- [~] CRM19 — Newsletters
+- [x] CRM19 — Newsletters
 - [x] CRM20 — Campagnes automatiques
 - [~] CRM21 — Segments
 - [~] CRM22 — Modèles d'emails et de SMS (éditeur)
-- [~] CRM23 — Workflows : créer, activer, suivre
-- [~] CRM24 — Formulaires
-- [~] CRM25 — CTA et pages
-- [~] CRM26 — Programme de fidélité et cartes NFC
+- [x] CRM23 — Workflows : créer, activer, suivre
+- [x] CRM24 — Formulaires
+- [x] CRM25 — CTA et pages
+- [x] CRM26 — Programme de fidélité et cartes NFC
 - [~] CRM27 — Jeux concours
 - [~] CRM28 — Sondages
-- [~] CRM29 — Avis clients
-- [~] CRM30 — Cartes de visite digitales
+- [x] CRM29 — Avis clients
+- [x] CRM30 — Cartes de visite digitales
 - [ ] CRM31 — Salons et leads de salon
 - [ ] CRM32 — Événements
 - [ ] CRM33 — Agenda et rendez-vous

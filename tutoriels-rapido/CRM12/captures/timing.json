@@ -1,5 +1,5 @@
 {
-  "voiceStartInCapture": 3.888,
+  "voiceStartInCapture": 3.537,
   "paragraphs": {
     "intro": 0.03,
     "liste": 5.83,
@@ -39,7 +39,7 @@
     ],
     "envoi": [
       670,
-      323,
+      459,
       520,
       115
     ],

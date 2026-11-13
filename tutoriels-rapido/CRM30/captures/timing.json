@@ -1,0 +1,38 @@
+{
+  "voiceStartInCapture": 3.832,
+  "paragraphs": {
+    "intro": 0.03,
+    "onglet": 5.29,
+    "choisir": 11.33,
+    "partager": 16.57,
+    "page": 24.27,
+    "outro": 31.13,
+    "end": 35.8
+  },
+  "zones": {
+    "onglet": [
+      310,
+      320,
+      530,
+      280
+    ],
+    "choisir": [
+      310,
+      320,
+      1300,
+      440
+    ],
+    "partager": [
+      666,
+      357,
+      528,
+      367
+    ],
+    "page": [
+      310,
+      320,
+      1300,
+      700
+    ]
+  }
+}

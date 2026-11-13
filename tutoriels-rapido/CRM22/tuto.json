@@ -1,41 +1,147 @@
 {
-  "id": "CRM22",
-  "product": "crm",
-  "kicker": "Tutoriel RapidoCRM",
-  "title": "Modèles d'e-mails et de SMS",
-  "em": "Modèles",
-  "tag": "1 min · Débutant",
-  "intro": 3.0,
-  "outro": 4.5,
-  "voice": "audio/voix.mp3",
-  "transcript": "audio/transcript.json",
-  "capture": "captures/ecran.mp4",
-  "start_path": "/templates/e-mail",
-  "type_delay": 30,
-  "fixes": {"SMS": "SMS", "Excel": "Excel"},
-  "end_cta": "Prochain épisode : les workflows",
-  "paragraphs": [
-    {"key": "intro", "text": "Dans ce tutoriel, on prépare ses modèles d'e-mails et de SMS, pour ne plus jamais réécrire le même message."},
-    {"key": "biblio", "text": "Dans Templates, puis Mail, vous retrouvez tous vos modèles. Le menu Catégorie les range : devis, factures, rendez-vous, marketing ou relances."},
-    {"key": "ajouter", "text": "Ajouter un template ouvre le formulaire : un nom, une catégorie, puis une image d'en-tête si vous le souhaitez."},
-    {"key": "texte", "text": "Le texte se rédige dans un éditeur complet : mise en forme, liens, images, tableaux et émojis."},
-    {"key": "consulter", "text": "Le bouton Consulter rouvre un modèle existant pour le modifier à tout moment."},
-    {"key": "sms", "text": "Côté SMS, même principe dans Templates, puis SMS, avec des messages courts et directs."},
-    {"key": "import", "text": "Et vous avez déjà vos textes dans un tableur ? L'icône Excel les importe tous d'un coup."},
-    {"key": "outro", "text": "Dans le prochain tutoriel, on automatise ses relances avec les workflows. À tout de suite !"}
-  ],
-  "scenes": [
-    {"at": "intro", "wait": 0.3},
-    {"at": "biblio", "label": "Vos modèles", "click": "button:has-text(\"catégorie\") >> visible=true", "wait": 0.4, "zone": [390, 120, 1400, 500]},
-    {"at": "ajouter", "label": "Un nouveau modèle", "click": "button:has-text(\"Ajouter un\") >> visible=true",
-     "fill": [[".modal.show input[placeholder=\"Entrer un nom\"]", "Confirmation de rendez-vous"]],
-     "select": [[".modal.show select >> nth=0", "RDV"]], "zone": ".modal.show .modal-content"},
-    {"at": "texte", "label": "L'éditeur", "scroll": ".modal.show label:has-text(\"Texte\")", "wait": 0.3, "zone": [680, 240, 500, 420]},
-    {"at": "consulter", "label": "Modifier un modèle", "click": ".modal.show .btn-close"},
-    {"at": "consulter", "click": "button:has-text(\"Consulter\") >> nth=0", "wait": 0.8, "zone": ".modal.show .modal-content"},
-    {"at": "sms", "label": "Les modèles SMS", "goto": "/templates/sms", "wait": 0.4, "zone": [390, 220, 1400, 400]},
-    {"at": "import", "label": "Import Excel", "click": "button.btn-excel >> visible=true", "wait": 0.8, "zone": ".modal.show .modal-content"},
-    {"at": "outro", "wait": 0.3}
-  ],
-  "thumb_shot": "fin.png"
+ "id": "CRM22",
+ "product": "crm",
+ "kicker": "Tutoriel RapidoCRM",
+ "title": "Modèles d'e-mails et de SMS",
+ "em": "Modèles",
+ "tag": "1 min · Débutant",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/templates/e-mail",
+ "type_delay": 30,
+ "fixes": {
+  "SMS": "SMS",
+  "Excel": "Excel"
+ },
+ "end_cta": "Prochain épisode : les workflows",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on prépare ses modèles d'e-mails et de SMS, pour ne plus jamais réécrire le même message."
+  },
+  {
+   "key": "biblio",
+   "text": "Dans Templates, puis Mail, vous retrouvez tous vos modèles. Le menu Catégorie les range : devis, factures, rendez-vous, marketing ou relances."
+  },
+  {
+   "key": "ajouter",
+   "text": "Ajouter un template ouvre le formulaire : un nom, une catégorie, puis une image d'en-tête si vous le souhaitez."
+  },
+  {
+   "key": "texte",
+   "text": "Le texte se rédige dans un éditeur complet : mise en forme, liens, images, tableaux et émojis."
+  },
+  {
+   "key": "consulter",
+   "text": "Le bouton Consulter rouvre un modèle existant pour le modifier à tout moment."
+  },
+  {
+   "key": "sms",
+   "text": "Côté SMS, même principe dans Templates, puis SMS, avec des messages courts et directs."
+  },
+  {
+   "key": "import",
+   "text": "Et vous avez déjà vos textes dans un tableur ? L'icône Excel les importe tous d'un coup."
+  },
+  {
+   "key": "outro",
+   "text": "Dans le prochain tutoriel, on automatise ses relances avec les workflows. À tout de suite !"
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "biblio",
+   "label": "Vos modèles",
+   "click": "button:has-text(\"catégorie\") >> visible=true",
+   "wait": 0.4,
+   "zone": [
+    390,
+    120,
+    1400,
+    500
+   ]
+  },
+  {
+   "at": "ajouter",
+   "label": "Un nouveau modèle",
+   "click": "button:has-text(\"Ajouter un\") >> visible=true",
+   "fill": [
+    [
+     ".modal.show input[placeholder=\"Entrer un nom\"]",
+     "Confirmation de rendez-vous"
+    ]
+   ],
+   "select": [
+    [
+     ".modal.show select >> nth=0",
+     "RDV"
+    ]
+   ],
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "texte",
+   "label": "L'éditeur",
+   "scroll": ".modal.show label:has-text(\"Texte\")",
+   "wait": 0.3,
+   "zone": [
+    680,
+    240,
+    500,
+    420
+   ]
+  },
+  {
+   "at": "consulter",
+   "label": "Modifier un modèle",
+   "click": ".modal.show .btn-close >> visible=true"
+  },
+  {
+   "at": "consulter",
+   "click": "button:has-text(\"consulter\") >> visible=true",
+   "wait": 1.0,
+   "zone": [
+    640,
+    40,
+    640,
+    1000
+   ]
+  },
+  {
+   "at": "sms",
+   "label": "Les modèles SMS",
+   "goto": "/templates/sms",
+   "wait": 0.4,
+   "zone": [
+    390,
+    220,
+    1400,
+    400
+   ]
+  },
+  {
+   "at": "import",
+   "label": "Import Excel",
+   "click": "button.btn-excel >> visible=true",
+   "wait": 0.8,
+   "zone": [
+    560,
+    40,
+    800,
+    1000
+   ]
+  },
+  {
+   "at": "outro",
+   "wait": 0.3
+  }
+ ],
+ "thumb_shot": "fin.png"
 }

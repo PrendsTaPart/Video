@@ -110,6 +110,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM11.png"
   },
   {
+    "id": "CRM12",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Créer et envoyer un devis",
+    "tag": "1 min · Débutant",
+    "duree_s": 58,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM12.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM12.png"
+  },
+  {
     "id": "CRM13",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",
@@ -118,6 +128,26 @@
     "duree_s": 56,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM13.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM13.png"
+  },
+  {
+    "id": "CRM14",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Enregistrer ses dépenses",
+    "tag": "1 min · Débutant",
+    "duree_s": 53,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM14.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM14.png"
+  },
+  {
+    "id": "CRM16",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Créer ses modèles de contrats",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 58,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM16.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM16.png"
   },
   {
     "id": "CRM17",
@@ -140,6 +170,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM18.png"
   },
   {
+    "id": "CRM19",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Envoyer une newsletter",
+    "tag": "1 min · Débutant",
+    "duree_s": 46,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM19.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM19.png"
+  },
+  {
     "id": "CRM20",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",
@@ -148,6 +188,66 @@
     "duree_s": 50,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM20.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM20.png"
+  },
+  {
+    "id": "CRM23",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Workflows : créer, activer, suivre",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 69,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM23.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM23.png"
+  },
+  {
+    "id": "CRM24",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Créer un formulaire de contact",
+    "tag": "1 min · Débutant",
+    "duree_s": 50,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM24.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM24.png"
+  },
+  {
+    "id": "CRM25",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "CTA et pages",
+    "tag": "1 min · Débutant",
+    "duree_s": 52,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM25.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM25.png"
+  },
+  {
+    "id": "CRM26",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Créer un programme de fidélité",
+    "tag": "1 min · Débutant",
+    "duree_s": 59,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM26.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM26.png"
+  },
+  {
+    "id": "CRM29",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Suivre les avis de ses clients",
+    "tag": "1 min · Débutant",
+    "duree_s": 45,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM29.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM29.png"
+  },
+  {
+    "id": "CRM30",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Sa carte de visite digitale",
+    "tag": "1 min · Débutant",
+    "duree_s": 44,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM30.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM30.png"
   },
   {
     "id": "CMS01",
