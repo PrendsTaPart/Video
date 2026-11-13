@@ -1,0 +1,40 @@
+{
+  "id": "CRM19",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Envoyer une newsletter",
+  "em": "newsletter",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/campagnes-automatiques",
+  "type_delay": 30,
+  "fixes": {},
+  "end_cta": "Prochain épisode : les campagnes automatiques",
+  "paragraphs": [
+    {"key": "intro", "text": "Dans ce tutoriel, on envoie une newsletter mise en page à ses clients avec RapidoCRM."},
+    {"key": "historique", "text": "Dans Campagnes, l'onglet Newsletter garde la trace de toutes celles que vous avez envoyées."},
+    {"key": "cible", "text": "Pour en créer une, on choisit d'abord la cible : vos entreprises, vos contacts ou un segment, et le domaine d'activité."},
+    {"key": "modele", "text": "On sélectionne ensuite un de ses modèles de newsletter, conçus dans l'éditeur visuel, puis les portefeuilles et la date d'envoi."},
+    {"key": "compte", "text": "RapidoCRM calcule aussitôt le nombre de destinataires."},
+    {"key": "apercu", "text": "Et l'aperçu montre la newsletter telle qu'elle arrivera dans la boîte mail de vos clients. Un clic sur Valider, et elle est programmée."},
+    {"key": "outro", "text": "Dans le prochain tutoriel, on automatise toutes ces campagnes. À tout de suite !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3},
+    {"at": "historique", "label": "Vos newsletters", "click": "button[data-bs-target=\"#tab-newsletter\"]", "wait": 0.4, "zone": [280, 360, 1620, 380]},
+    {"at": "cible", "label": "Le ciblage", "goto": "/ajout-campagne-newsletter",
+     "select": [["select >> nth=0", "Toutes mes entreprises"], ["select >> nth=1", "Commerce"]], "zone": [390, 280, 1400, 140]},
+    {"at": "modele", "label": "Le modèle", "click": ".card input[type=radio] >> nth=1"},
+    {"at": "modele", "click": ".tagify__input", "fill": [[".tagify__input", "Léa"]]},
+    {"at": "modele", "click": ".tagify__dropdown__item >> nth=0", "fill": [["input[type=datetime-local]", "2026-11-25T08:30"]], "zone": [390, 470, 1400, 540]},
+    {"at": "compte", "label": "Les destinataires", "click": "button.btn-next >> visible=true", "wait": 0.5, "zone": [390, 260, 1400, 180]},
+    {"at": "apercu", "label": "L'aperçu", "click": "button.btn-next >> visible=true", "wait": 0.6, "zone": [740, 290, 700, 440]},
+    {"at": "apercu", "hover": "button:has-text(\"valider\") >> visible=true"},
+    {"at": "outro", "wait": 0.3}
+  ],
+  "thumb_shot": "fin.png"
+}

@@ -8,6 +8,7 @@ mkdir -p /tmp/claude-0
 up 8124 /home/user/rapido-crm-film
 up 8125 /home/user/rapido-cms
 up 8126 /home/user/rapido-RH
+up 8130 /home/user/rapido-software
 pgrep -f mock-n8n.cjs >/dev/null || (nohup node "$(dirname "$0")/mock-n8n.cjs" > /tmp/claude-0/mock-n8n.log 2>&1 &)
 sleep 4
 for p in 8124 8125 8126; do echo "$p : $(curl -s -o /dev/null -m 5 -w '%{http_code}' http://127.0.0.1:$p/login)"; done

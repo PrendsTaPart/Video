@@ -19,6 +19,6 @@ $desc = [
     'Campagne réseaux' => 'Un mois de publications sur Instagram, Facebook et LinkedIn, visuels compris.',
 ];
 foreach ($desc as $nom => $txt) {
-    $db->prepare("update offres set description = ? where company_id = 1 and nom = ? and (description is null or description = '')")->execute(['<p>' . $txt . '</p>', $nom]);
+    $db->prepare("update offres set description = ? where company_id = 1 and nom = ? and (description is null or description = '')")->execute([$txt, $nom]);
 }
 echo "Descriptions de démo prêtes\n";
