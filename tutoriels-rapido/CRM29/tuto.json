@@ -1,0 +1,35 @@
+{
+  "id": "CRM29",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Suivre les avis de ses clients",
+  "em": "avis",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/entreprises/5/profil",
+  "type_delay": 22,
+  "fixes": {},
+  "end_cta": "Prochain épisode : les cartes de visite digitales",
+  "paragraphs": [
+    {"key": "intro", "text": "Dans ce tutoriel, on centralise les avis laissés par ses clients, directement sur leur fiche."},
+    {"key": "ouvrir", "text": "Ouvrez la fiche d'un client. Dans le menu Entreprise, cliquez sur Avis utilisateurs."},
+    {"key": "stats", "text": "En haut, la note moyenne, le nombre d'avis, leur répartition par étoiles et l'évolution sur six mois."},
+    {"key": "liste", "text": "Dessous, chaque avis avec son auteur, sa date, sa note et son commentaire. Le menu permet de le modifier ou de le supprimer."},
+    {"key": "ajouter", "text": "Le bouton Ajouter un avis enregistre un retour reçu par téléphone ou en boutique : l'auteur, la date, la note en étoiles et le commentaire."},
+    {"key": "outro", "text": "Dans le prochain tutoriel, on crée sa carte de visite digitale. À tout de suite !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3},
+    {"at": "ouvrir", "label": "La fiche client", "click": "button.accordion-button:has-text(\"entreprise\")", "wait": 0.5, "zone": [1335, 150, 440, 270]},
+    {"at": "stats", "label": "La note moyenne", "click": "a:has-text(\"Avis utilisateurs\")", "wait": 1.0, "zone": [690, 160, 480, 320]},
+    {"at": "liste", "label": "Les avis", "zone": [690, 510, 480, 440]},
+    {"at": "ajouter", "label": "Ajouter un avis", "click": "button:has-text(\"ajouter un avis\") >> visible=true", "wait": 0.6,
+     "fill": [[".modal.show input[placeholder=\"Nom de l'auteur\"]", "Thomas B."], [".modal.show textarea", "Super accueil, je recommande !"]], "zone": ".modal.show .modal-content"},
+    {"at": "outro", "wait": 0.3}
+  ],
+  "thumb_shot": "fin.png"
+}

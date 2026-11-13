@@ -117,8 +117,8 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [~] CRM25 — CTA et pages
 - [~] CRM26 — Programme de fidélité et cartes NFC
 - [~] CRM27 — Jeux concours
-- [ ] CRM28 — Sondages
-- [ ] CRM29 — Avis clients
+- [~] CRM28 — Sondages
+- [~] CRM29 — Avis clients
 - [ ] CRM30 — Cartes de visite digitales
 - [ ] CRM31 — Salons et leads de salon
 - [ ] CRM32 — Événements

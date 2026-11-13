@@ -1,0 +1,52 @@
+{
+  "voiceStartInCapture": 3.16,
+  "paragraphs": {
+    "intro": 0.03,
+    "historique": 5.77,
+    "cible": 13.23,
+    "modele": 21.93,
+    "planifier": 24.73,
+    "texte": 29.33,
+    "apercu": 36.53,
+    "outro": 43.33,
+    "end": 47.46
+  },
+  "zones": {
+    "historique": [
+      280,
+      220,
+      1620,
+      500
+    ],
+    "cible": [
+      390,
+      280,
+      1400,
+      140
+    ],
+    "modele": [
+      390,
+      440,
+      1400,
+      390
+    ],
+    "planifier": [
+      390,
+      890,
+      1400,
+      100
+    ],
+    "texte": [
+      390,
+      280,
+      1400,
+      560
+    ],
+    "apercu": [
+      390,
+      280,
+      1400,
+      650
+    ]
+  }
+}
