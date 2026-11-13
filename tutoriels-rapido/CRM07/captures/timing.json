@@ -1,0 +1,52 @@
+{
+  "voiceStartInCapture": 3.252,
+  "paragraphs": {
+    "intro": 0.04,
+    "stats": 6.88,
+    "etapes": 13.39,
+    "carte": 24.56,
+    "deplacer": 29.84,
+    "cloture": 36.52,
+    "plusieurs": 43.92,
+    "outro": 49.32,
+    "end": 53.79
+  },
+  "zones": {
+    "stats": [
+      284,
+      195,
+      1612,
+      112
+    ],
+    "etapes": [
+      284,
+      335,
+      1612,
+      500
+    ],
+    "carte": [
+      290,
+      405,
+      510,
+      195
+    ],
+    "deplacer": [
+      284,
+      335,
+      1080,
+      500
+    ],
+    "cloture": [
+      284,
+      120,
+      1612,
+      520
+    ],
+    "plusieurs": [
+      1505,
+      125,
+      395,
+      52
+    ]
+  }
+}
