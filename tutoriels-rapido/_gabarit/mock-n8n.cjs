@@ -19,13 +19,27 @@ const fake = (speciality, city) => noms.map((n, i) => ({
     domaine: speciality || 'Boulangerie',
     note: (4.2 + (i % 8) / 10).toFixed(1),
 }));
+// /entreprise : recherche par nom ou SIRET → une fiche légale (SIRET, NAF, dirigeant) ; /prospect : sociétés d'un secteur.
+const siretDe = (i) => String(91234567800011 + i * 1010);
+const legal = (r, i) => Object.assign({}, r, { siret: siretDe(i), code_naf: '10.71C', naf: '10.71C', dirigeant: ['Claire Martin', 'Hugo Bernard', 'Inès Moreau', 'Paul Laurent'][i % 4], effectif: ['3 à 5', '6 à 9', '10 à 19'][i % 3] });
 http.createServer((req, res) => {
     let body = '';
     req.on('data', (c) => (body += c));
     req.on('end', () => {
         let p = {};
         try { p = JSON.parse(body || '{}'); } catch (e) { /* ignore */ }
-        const out = { resultats: fake(p.speciality || p.secteur || p.query, p.city || p.ville) };
-        setTimeout(() => { res.writeHead(200, { 'content-type': 'application/json' }); res.end(JSON.stringify(out)); }, 1600);
+        let resultats;
+        if (req.url.startsWith('/entreprise')) {
+            const base = fake('', 'Bordeaux').map(legal);
+            const q = (p.nom || '').toLowerCase();
+            const hit = base.find((r) => (p.siret && r.siret === p.siret) || (q && r.nom.toLowerCase().includes(q))) || legal(Object.assign(fake('', 'Bordeaux')[0], { nom: p.nom || 'Le Fournil Gourmand' }), 0);
+            if (p.siret) hit.siret = p.siret;
+            resultats = [hit];
+        } else if (req.url.startsWith('/prospect')) {
+            resultats = fake(p.specialite || '', 'Bordeaux').map(legal).slice(0, Math.min(+p.nombre || 8, 8));
+        } else {
+            resultats = fake(p.speciality || p.secteur || p.query, p.city || p.ville);
+        }
+        setTimeout(() => { res.writeHead(200, { 'content-type': 'application/json' }); res.end(JSON.stringify({ resultats })); }, 1600);
     });
 }).listen(port, '127.0.0.1', () => console.log('mock n8n sur', port));

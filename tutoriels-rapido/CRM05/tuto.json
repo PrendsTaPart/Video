@@ -1,0 +1,38 @@
+{
+  "id": "CRM05",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Rechercher une entreprise par SIRET",
+  "em": "SIRET",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/entreprises",
+  "type_delay": 45,
+  "fixes": { "SIRET": "SIRET", "Siret": "SIRET", "siret": "SIRET", "NAF": "NAF", "naf": "NAF" },
+  "end_cta": "Prochain épisode : gérer ses prospects et leurs notes",
+  "paragraphs": [
+    { "key": "intro", "text": "Dans ce tutoriel, on retrouve une entreprise précise grâce à son nom ou à son numéro SIRET, pour l'ajouter à vos clients avec ses informations légales." },
+    { "key": "acces", "text": "Dans Clients, cliquez sur Prospecter, puis choisissez Entreprise." },
+    { "key": "saisie", "text": "Saisissez le nom de l'entreprise, son SIRET, ou les deux, puis validez." },
+    { "key": "resultat", "text": "RapidoCRM affiche la fiche trouvée : son adresse, son site web, son domaine d'activité et son téléphone." },
+    { "key": "enregistrer", "text": "Cliquez sur la disquette : l'entreprise rejoint vos clients, avec son SIRET et son code NAF." },
+    { "key": "astuce", "text": "Astuce : le SIRET compte quatorze chiffres. Vous le trouvez sur les factures et les devis de l'entreprise." },
+    { "key": "outro", "text": "Dans le prochain tutoriel, on gère ses prospects et leurs notes. À tout de suite !" }
+  ],
+  "scenes": [
+    { "at": "intro", "wait": 0.3 },
+    { "at": "acces", "label": "Prospecter", "click": "button:has-text(\"prospecter\")" },
+    { "at": "acces", "click": ".modal.show button:has-text(\"entreprise\")", "zone": ".modal.show .modal-content" },
+    { "at": "saisie", "label": "Nom ou SIRET", "fill": [[".modal.show input >> nth=0", "Fournil Gourmand"], [".modal.show input >> nth=1", "91234567800011"]], "zone": ".modal.show .modal-content" },
+    { "at": "saisie", "click": ".modal.show button:has-text(\"valider\")" },
+    { "at": "resultat", "label": "La fiche trouvée", "wait": 1.2, "zone": [400, 210, 680, 400] },
+    { "at": "enregistrer", "label": "Enregistrer", "click": "button[title=\"Enregistrer\"]", "zone": [400, 260, 680, 330] },
+    { "at": "astuce", "label": "Le SIRET", "zone": [400, 210, 1380, 400] },
+    { "at": "outro", "wait": 0.3 }
+  ],
+  "thumb_shot": "fin.png"
+}
