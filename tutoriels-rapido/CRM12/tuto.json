@@ -33,7 +33,7 @@
     {"at": "client", "label": "Client et produits", "scroll": "#devislist .modal.show label:has-text(\"Entreprise*\")",
      "select": [["#devislist .modal.show select >> nth=0", {"index": 3}]]},
     {"at": "client", "click": "#devislist .modal.show .cardBox input[type=checkbox] >> nth=0"},
-    {"at": "client", "click": "#devislist .modal.show .cardBox input[type=checkbox] >> nth=2", "zone": [680, 520, 500, 420]},
+    {"at": "client", "click": "#devislist .modal.show .cardBox input[type=checkbox] >> nth=1", "zone": [680, 520, 500, 420]},
     {"at": "conditions", "label": "Conditions", "scroll": "#devislist .modal.show label:has-text(\"Date de début\")",
      "fill": [["#devislist .modal.show input[type=date] >> nth=0", "2026-11-15"], ["#devislist .modal.show input[type=date] >> nth=1", "2026-12-15"]],
      "zone": [680, 120, 500, 700]},

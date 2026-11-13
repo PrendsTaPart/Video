@@ -1,0 +1,41 @@
+{
+  "id": "CRM17",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Lancer une campagne e-mail",
+  "em": "campagne e-mail",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/campagnes-automatiques",
+  "type_delay": 30,
+  "fixes": {"SMS": "SMS"},
+  "end_cta": "Prochain épisode : les campagnes SMS",
+  "paragraphs": [
+    {"key": "intro", "text": "Dans ce tutoriel, on envoie une campagne e-mail à ses clients avec RapidoCRM, en trois étapes."},
+    {"key": "historique", "text": "La page Campagnes regroupe tout votre historique : e-mails, SMS et newsletters, avec la cible et la date d'envoi de chacun."},
+    {"key": "cible", "text": "Cliquez sur Nouvelle campagne. Première étape, le ciblage : toutes vos entreprises, vos contacts, ou un segment, filtré par domaine d'activité."},
+    {"key": "modele", "text": "Choisissez ensuite un modèle d'e-mail parmi les vôtres."},
+    {"key": "planifier", "text": "Sélectionnez les portefeuilles de commerciaux concernés, puis la date et l'heure d'envoi."},
+    {"key": "texte", "text": "Deuxième étape : RapidoCRM affiche le nombre de personnes touchées. On écrit l'objet, et on ajuste le texte dans l'éditeur."},
+    {"key": "apercu", "text": "Dernière étape, l'aperçu : vérifiez le rendu, puis validez. La campagne partira toute seule à l'heure prévue."},
+    {"key": "outro", "text": "Dans le prochain tutoriel, on fait la même chose par SMS. À tout de suite !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3},
+    {"at": "historique", "label": "L'historique", "zone": [280, 220, 1620, 500]},
+    {"at": "cible", "label": "Le ciblage", "click": "a:has-text(\"nouvelle campagne\"), button:has-text(\"nouvelle campagne\")",
+     "select": [["select >> nth=0", "Toutes mes entreprises"], ["select >> nth=1", "Commerce"]], "zone": [390, 280, 1400, 140]},
+    {"at": "modele", "label": "Le modèle", "click": ".card input[type=radio] >> nth=4", "zone": [390, 440, 1400, 390]},
+    {"at": "planifier", "label": "Portefeuille et date", "click": ".tagify__input", "fill": [[".tagify__input", "Léa"]]},
+    {"at": "planifier", "click": ".tagify__dropdown__item >> nth=0", "fill": [["input[type=datetime-local]", "2026-11-20T10:00"]], "zone": [390, 890, 1400, 100]},
+    {"at": "texte", "label": "Objet et texte", "click": "button.btn-next >> visible=true", "fill": [["input[placeholder=\"Tapez un objet ...\"]", "Offre de fin d'année : -15 %"]], "wait": 0.5, "zone": [390, 280, 1400, 560]},
+    {"at": "apercu", "label": "Aperçu et validation", "click": "button.btn-next >> visible=true", "wait": 0.6, "zone": [390, 280, 1400, 650]},
+    {"at": "apercu", "hover": "button:has-text(\"valider\") >> visible=true"},
+    {"at": "outro", "wait": 0.3}
+  ],
+  "thumb_shot": "fin.png"
+}

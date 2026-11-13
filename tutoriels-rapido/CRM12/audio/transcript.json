@@ -1,0 +1,962 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.03,
+    "end": 0.28,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.28,
+    "end": 0.41,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.47,
+    "end": 1.12,
+    "id": "w2"
+  },
+  {
+    "text": "on",
+    "start": 1.12,
+    "end": 1.24,
+    "id": "w3"
+  },
+  {
+    "text": "crée",
+    "start": 1.27,
+    "end": 1.53,
+    "id": "w4"
+  },
+  {
+    "text": "un",
+    "start": 1.54,
+    "end": 1.68,
+    "id": "w5"
+  },
+  {
+    "text": "devis",
+    "start": 1.68,
+    "end": 2.02,
+    "id": "w6"
+  },
+  {
+    "text": "dans",
+    "start": 2.04,
+    "end": 2.31,
+    "id": "w7"
+  },
+  {
+    "text": "Rapido",
+    "start": 2.31,
+    "end": 2.73,
+    "id": "w8"
+  },
+  {
+    "text": "CRM",
+    "start": 2.73,
+    "end": 2.94,
+    "id": "w9"
+  },
+  {
+    "text": "et",
+    "start": 3.06,
+    "end": 3.12,
+    "id": "w10"
+  },
+  {
+    "text": "on",
+    "start": 3.12,
+    "end": 3.24,
+    "id": "w11"
+  },
+  {
+    "text": "l'envoie",
+    "start": 3.24,
+    "end": 3.68,
+    "id": "w12"
+  },
+  {
+    "text": "au",
+    "start": 3.68,
+    "end": 3.75,
+    "id": "w13"
+  },
+  {
+    "text": "client,",
+    "start": 3.75,
+    "end": 4.28,
+    "id": "w14"
+  },
+  {
+    "text": "sans",
+    "start": 4.29,
+    "end": 4.45,
+    "id": "w15"
+  },
+  {
+    "text": "quitter",
+    "start": 4.45,
+    "end": 4.76,
+    "id": "w16"
+  },
+  {
+    "text": "le",
+    "start": 4.76,
+    "end": 4.96,
+    "id": "w17"
+  },
+  {
+    "text": "logiciel.",
+    "start": 4.96,
+    "end": 5.8,
+    "id": "w18"
+  },
+  {
+    "text": "Dans",
+    "start": 5.83,
+    "end": 6.09,
+    "id": "w19"
+  },
+  {
+    "text": "Facture,",
+    "start": 6.09,
+    "end": 6.74,
+    "id": "w20"
+  },
+  {
+    "text": "l'onglet",
+    "start": 6.74,
+    "end": 7.32,
+    "id": "w21"
+  },
+  {
+    "text": "devis",
+    "start": 7.32,
+    "end": 7.66,
+    "id": "w22"
+  },
+  {
+    "text": "liste",
+    "start": 7.67,
+    "end": 8.04,
+    "id": "w23"
+  },
+  {
+    "text": "tous",
+    "start": 8.04,
+    "end": 8.33,
+    "id": "w24"
+  },
+  {
+    "text": "vos",
+    "start": 8.33,
+    "end": 8.55,
+    "id": "w25"
+  },
+  {
+    "text": "devis,",
+    "start": 8.55,
+    "end": 9.12,
+    "id": "w26"
+  },
+  {
+    "text": "avec",
+    "start": 9.12,
+    "end": 9.4,
+    "id": "w27"
+  },
+  {
+    "text": "leur",
+    "start": 9.4,
+    "end": 9.67,
+    "id": "w28"
+  },
+  {
+    "text": "statut,",
+    "start": 9.67,
+    "end": 10.2,
+    "id": "w29"
+  },
+  {
+    "text": "en",
+    "start": 10.2,
+    "end": 10.32,
+    "id": "w30"
+  },
+  {
+    "text": "attente,",
+    "start": 10.4,
+    "end": 10.95,
+    "id": "w31"
+  },
+  {
+    "text": "accepté",
+    "start": 10.95,
+    "end": 11.67,
+    "id": "w32"
+  },
+  {
+    "text": "ou",
+    "start": 11.74,
+    "end": 11.87,
+    "id": "w33"
+  },
+  {
+    "text": "refusé.",
+    "start": 11.87,
+    "end": 12.8,
+    "id": "w34"
+  },
+  {
+    "text": "Le",
+    "start": 12.83,
+    "end": 12.95,
+    "id": "w35"
+  },
+  {
+    "text": "bouton",
+    "start": 12.95,
+    "end": 13.4,
+    "id": "w36"
+  },
+  {
+    "text": "Créer",
+    "start": 13.4,
+    "end": 13.74,
+    "id": "w37"
+  },
+  {
+    "text": "un",
+    "start": 13.89,
+    "end": 13.92,
+    "id": "w38"
+  },
+  {
+    "text": "devis",
+    "start": 13.92,
+    "end": 14.3,
+    "id": "w39"
+  },
+  {
+    "text": "ouvre",
+    "start": 14.3,
+    "end": 14.66,
+    "id": "w40"
+  },
+  {
+    "text": "le",
+    "start": 14.67,
+    "end": 14.82,
+    "id": "w41"
+  },
+  {
+    "text": "formulaire.",
+    "start": 14.84,
+    "end": 15.7,
+    "id": "w42"
+  },
+  {
+    "text": "On",
+    "start": 15.73,
+    "end": 15.82,
+    "id": "w43"
+  },
+  {
+    "text": "ajoute",
+    "start": 15.82,
+    "end": 16.18,
+    "id": "w44"
+  },
+  {
+    "text": "son",
+    "start": 16.18,
+    "end": 16.36,
+    "id": "w45"
+  },
+  {
+    "text": "logo",
+    "start": 16.36,
+    "end": 16.61,
+    "id": "w46"
+  },
+  {
+    "text": "et",
+    "start": 16.61,
+    "end": 16.64,
+    "id": "w47"
+  },
+  {
+    "text": "on",
+    "start": 16.79,
+    "end": 16.85,
+    "id": "w48"
+  },
+  {
+    "text": "choisit",
+    "start": 16.85,
+    "end": 17.23,
+    "id": "w49"
+  },
+  {
+    "text": "la",
+    "start": 17.28,
+    "end": 17.4,
+    "id": "w50"
+  },
+  {
+    "text": "couleur",
+    "start": 17.4,
+    "end": 17.81,
+    "id": "w51"
+  },
+  {
+    "text": "du",
+    "start": 17.87,
+    "end": 17.94,
+    "id": "w52"
+  },
+  {
+    "text": "document.",
+    "start": 17.96,
+    "end": 18.64,
+    "id": "w53"
+  },
+  {
+    "text": "On",
+    "start": 18.73,
+    "end": 18.81,
+    "id": "w54"
+  },
+  {
+    "text": "sélectionne",
+    "start": 18.81,
+    "end": 19.44,
+    "id": "w55"
+  },
+  {
+    "text": "le",
+    "start": 19.44,
+    "end": 19.55,
+    "id": "w56"
+  },
+  {
+    "text": "client,",
+    "start": 19.55,
+    "end": 20,
+    "id": "w57"
+  },
+  {
+    "text": "puis",
+    "start": 20.02,
+    "end": 20.23,
+    "id": "w58"
+  },
+  {
+    "text": "on",
+    "start": 20.28,
+    "end": 20.35,
+    "id": "w59"
+  },
+  {
+    "text": "coche",
+    "start": 20.35,
+    "end": 20.63,
+    "id": "w60"
+  },
+  {
+    "text": "les",
+    "start": 20.63,
+    "end": 20.8,
+    "id": "w61"
+  },
+  {
+    "text": "produits",
+    "start": 20.8,
+    "end": 21.27,
+    "id": "w62"
+  },
+  {
+    "text": "du",
+    "start": 21.27,
+    "end": 21.38,
+    "id": "w63"
+  },
+  {
+    "text": "catalogue.",
+    "start": 21.38,
+    "end": 22.2,
+    "id": "w64"
+  },
+  {
+    "text": "Les",
+    "start": 22.23,
+    "end": 22.39,
+    "id": "w65"
+  },
+  {
+    "text": "prix",
+    "start": 22.41,
+    "end": 22.6,
+    "id": "w66"
+  },
+  {
+    "text": "et",
+    "start": 22.67,
+    "end": 22.8,
+    "id": "w67"
+  },
+  {
+    "text": "la",
+    "start": 22.8,
+    "end": 22.93,
+    "id": "w68"
+  },
+  {
+    "text": "TVA",
+    "start": 22.93,
+    "end": 23.11,
+    "id": "w69"
+  },
+  {
+    "text": "se",
+    "start": 23.11,
+    "end": 23.14,
+    "id": "w70"
+  },
+  {
+    "text": "remplissent",
+    "start": 23.29,
+    "end": 23.99,
+    "id": "w71"
+  },
+  {
+    "text": "tout",
+    "start": 23.99,
+    "end": 24.26,
+    "id": "w72"
+  },
+  {
+    "text": "seul.",
+    "start": 24.26,
+    "end": 24.8,
+    "id": "w73"
+  },
+  {
+    "text": "On",
+    "start": 24.83,
+    "end": 24.93,
+    "id": "w74"
+  },
+  {
+    "text": "fixe",
+    "start": 24.93,
+    "end": 25.19,
+    "id": "w75"
+  },
+  {
+    "text": "la",
+    "start": 25.19,
+    "end": 25.32,
+    "id": "w76"
+  },
+  {
+    "text": "période",
+    "start": 25.32,
+    "end": 25.74,
+    "id": "w77"
+  },
+  {
+    "text": "de",
+    "start": 25.89,
+    "end": 25.91,
+    "id": "w78"
+  },
+  {
+    "text": "validité,",
+    "start": 25.91,
+    "end": 26.6,
+    "id": "w79"
+  },
+  {
+    "text": "une",
+    "start": 26.6,
+    "end": 26.81,
+    "id": "w80"
+  },
+  {
+    "text": "remise",
+    "start": 26.82,
+    "end": 27.26,
+    "id": "w81"
+  },
+  {
+    "text": "si",
+    "start": 27.26,
+    "end": 27.4,
+    "id": "w82"
+  },
+  {
+    "text": "besoin,",
+    "start": 27.4,
+    "end": 28,
+    "id": "w83"
+  },
+  {
+    "text": "le",
+    "start": 28,
+    "end": 28.13,
+    "id": "w84"
+  },
+  {
+    "text": "délai",
+    "start": 28.13,
+    "end": 28.45,
+    "id": "w85"
+  },
+  {
+    "text": "et",
+    "start": 28.45,
+    "end": 28.55,
+    "id": "w86"
+  },
+  {
+    "text": "le",
+    "start": 28.57,
+    "end": 28.71,
+    "id": "w87"
+  },
+  {
+    "text": "mode",
+    "start": 28.71,
+    "end": 28.84,
+    "id": "w88"
+  },
+  {
+    "text": "de",
+    "start": 29.08,
+    "end": 29.11,
+    "id": "w89"
+  },
+  {
+    "text": "paiement.",
+    "start": 29.11,
+    "end": 29.9,
+    "id": "w90"
+  },
+  {
+    "text": "Enfin,",
+    "start": 29.93,
+    "end": 30.31,
+    "id": "w91"
+  },
+  {
+    "text": "on",
+    "start": 30.35,
+    "end": 30.44,
+    "id": "w92"
+  },
+  {
+    "text": "choisit",
+    "start": 30.44,
+    "end": 30.84,
+    "id": "w93"
+  },
+  {
+    "text": "d'envoyer",
+    "start": 30.92,
+    "end": 31.4,
+    "id": "w94"
+  },
+  {
+    "text": "le",
+    "start": 31.4,
+    "end": 31.52,
+    "id": "w95"
+  },
+  {
+    "text": "devis",
+    "start": 31.52,
+    "end": 31.82,
+    "id": "w96"
+  },
+  {
+    "text": "par",
+    "start": 31.82,
+    "end": 32,
+    "id": "w97"
+  },
+  {
+    "text": "e-mail,",
+    "start": 32,
+    "end": 32.48,
+    "id": "w98"
+  },
+  {
+    "text": "avec",
+    "start": 32.48,
+    "end": 32.72,
+    "id": "w99"
+  },
+  {
+    "text": "un",
+    "start": 32.72,
+    "end": 32.84,
+    "id": "w100"
+  },
+  {
+    "text": "modèle",
+    "start": 32.84,
+    "end": 33.2,
+    "id": "w101"
+  },
+  {
+    "text": "de",
+    "start": 33.2,
+    "end": 33.32,
+    "id": "w102"
+  },
+  {
+    "text": "message",
+    "start": 33.32,
+    "end": 33.58,
+    "id": "w103"
+  },
+  {
+    "text": "tout",
+    "start": 33.74,
+    "end": 33.94,
+    "id": "w104"
+  },
+  {
+    "text": "prêt.",
+    "start": 34.18,
+    "end": 34.47,
+    "id": "w105"
+  },
+  {
+    "text": "Dans",
+    "start": 34.53,
+    "end": 34.75,
+    "id": "w106"
+  },
+  {
+    "text": "la",
+    "start": 34.75,
+    "end": 34.87,
+    "id": "w107"
+  },
+  {
+    "text": "liste,",
+    "start": 34.87,
+    "end": 35.3,
+    "id": "w108"
+  },
+  {
+    "text": "le",
+    "start": 35.3,
+    "end": 35.41,
+    "id": "w109"
+  },
+  {
+    "text": "menu",
+    "start": 35.41,
+    "end": 35.67,
+    "id": "w110"
+  },
+  {
+    "text": "de",
+    "start": 35.67,
+    "end": 35.79,
+    "id": "w111"
+  },
+  {
+    "text": "chaque",
+    "start": 35.79,
+    "end": 36.17,
+    "id": "w112"
+  },
+  {
+    "text": "devis",
+    "start": 36.17,
+    "end": 36.48,
+    "id": "w113"
+  },
+  {
+    "text": "permet",
+    "start": 36.48,
+    "end": 36.86,
+    "id": "w114"
+  },
+  {
+    "text": "de",
+    "start": 36.86,
+    "end": 36.98,
+    "id": "w115"
+  },
+  {
+    "text": "le",
+    "start": 36.98,
+    "end": 37.1,
+    "id": "w116"
+  },
+  {
+    "text": "visualiser,",
+    "start": 37.1,
+    "end": 38,
+    "id": "w117"
+  },
+  {
+    "text": "de",
+    "start": 38,
+    "end": 38.15,
+    "id": "w118"
+  },
+  {
+    "text": "le",
+    "start": 38.15,
+    "end": 38.25,
+    "id": "w119"
+  },
+  {
+    "text": "télécharger",
+    "start": 38.25,
+    "end": 39.12,
+    "id": "w120"
+  },
+  {
+    "text": "en",
+    "start": 39.12,
+    "end": 39.27,
+    "id": "w121"
+  },
+  {
+    "text": "PDF",
+    "start": 39.27,
+    "end": 39.5,
+    "id": "w122"
+  },
+  {
+    "text": "ou",
+    "start": 39.5,
+    "end": 39.65,
+    "id": "w123"
+  },
+  {
+    "text": "de",
+    "start": 39.65,
+    "end": 39.8,
+    "id": "w124"
+  },
+  {
+    "text": "le",
+    "start": 39.8,
+    "end": 39.95,
+    "id": "w125"
+  },
+  {
+    "text": "renvoyer.",
+    "start": 39.95,
+    "end": 40.76,
+    "id": "w126"
+  },
+  {
+    "text": "Votre",
+    "start": 40.83,
+    "end": 41.09,
+    "id": "w127"
+  },
+  {
+    "text": "client",
+    "start": 41.14,
+    "end": 41.46,
+    "id": "w128"
+  },
+  {
+    "text": "reçoit",
+    "start": 41.46,
+    "end": 41.74,
+    "id": "w129"
+  },
+  {
+    "text": "un",
+    "start": 41.89,
+    "end": 41.94,
+    "id": "w130"
+  },
+  {
+    "text": "devis",
+    "start": 41.94,
+    "end": 42.24,
+    "id": "w131"
+  },
+  {
+    "text": "clair,",
+    "start": 42.24,
+    "end": 42.65,
+    "id": "w132"
+  },
+  {
+    "text": "à",
+    "start": 42.65,
+    "end": 42.72,
+    "id": "w133"
+  },
+  {
+    "text": "vos",
+    "start": 42.72,
+    "end": 42.9,
+    "id": "w134"
+  },
+  {
+    "text": "couleurs,",
+    "start": 42.9,
+    "end": 43.5,
+    "id": "w135"
+  },
+  {
+    "text": "qu'il",
+    "start": 43.5,
+    "end": 43.74,
+    "id": "w136"
+  },
+  {
+    "text": "peut",
+    "start": 43.86,
+    "end": 44.04,
+    "id": "w137"
+  },
+  {
+    "text": "signer",
+    "start": 44.04,
+    "end": 44.4,
+    "id": "w138"
+  },
+  {
+    "text": "en",
+    "start": 44.4,
+    "end": 44.48,
+    "id": "w139"
+  },
+  {
+    "text": "ligne.",
+    "start": 44.55,
+    "end": 45.1,
+    "id": "w140"
+  },
+  {
+    "text": "Dans",
+    "start": 45.13,
+    "end": 45.33,
+    "id": "w141"
+  },
+  {
+    "text": "le",
+    "start": 45.34,
+    "end": 45.44,
+    "id": "w142"
+  },
+  {
+    "text": "prochain",
+    "start": 45.46,
+    "end": 45.93,
+    "id": "w143"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 45.93,
+    "end": 46.51,
+    "id": "w144"
+  },
+  {
+    "text": "on",
+    "start": 46.51,
+    "end": 46.62,
+    "id": "w145"
+  },
+  {
+    "text": "transforme",
+    "start": 46.62,
+    "end": 47.21,
+    "id": "w146"
+  },
+  {
+    "text": "ce",
+    "start": 47.21,
+    "end": 47.33,
+    "id": "w147"
+  },
+  {
+    "text": "devis",
+    "start": 47.33,
+    "end": 47.62,
+    "id": "w148"
+  },
+  {
+    "text": "en",
+    "start": 47.62,
+    "end": 47.72,
+    "id": "w149"
+  },
+  {
+    "text": "Facture",
+    "start": 47.75,
+    "end": 48.04,
+    "id": "w150"
+  },
+  {
+    "text": "et",
+    "start": 48.16,
+    "end": 48.27,
+    "id": "w151"
+  },
+  {
+    "text": "on",
+    "start": 48.27,
+    "end": 48.39,
+    "id": "w152"
+  },
+  {
+    "text": "suit",
+    "start": 48.39,
+    "end": 48.63,
+    "id": "w153"
+  },
+  {
+    "text": "les",
+    "start": 48.63,
+    "end": 48.78,
+    "id": "w154"
+  },
+  {
+    "text": "paiements.",
+    "start": 48.85,
+    "end": 49.6,
+    "id": "w155"
+  },
+  {
+    "text": "À",
+    "start": 49.63,
+    "end": 49.66,
+    "id": "w156"
+  },
+  {
+    "text": "tout",
+    "start": 49.66,
+    "end": 49.89,
+    "id": "w157"
+  },
+  {
+    "text": "de",
+    "start": 49.94,
+    "end": 50.01,
+    "id": "w158"
+  },
+  {
+    "text": "suite!",
+    "start": 50.07,
+    "end": 50.54,
+    "id": "w159"
+  }
+]

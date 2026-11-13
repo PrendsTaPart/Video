@@ -10,3 +10,15 @@ foreach ([['TVA réduite', 5.5], ['TVA intermédiaire', 10], ['TVA normale', 20]
     $db->prepare('insert into tvas (nom, pourcentage, company_id, created_at, updated_at) values (?, ?, 1, ?, ?)')->execute([$nom, $p, $t, $t]);
 }
 echo "TVA de démo prêtes\n";
+// Descriptions des produits de démo (la fiche produit affichait une description vide).
+$desc = [
+    'Site vitrine' => 'Site de 5 pages, responsive, optimisé pour le référencement local et livré en 3 semaines.',
+    'Maintenance mensuelle' => 'Mises à jour, sauvegardes quotidiennes et petites modifications de contenu, chaque mois.',
+    'Shooting photo' => 'Séance photo d\'une demi-journée sur site, 20 photos retouchées livrées sous 10 jours.',
+    'Carte NFC' => 'Carte de visite connectée : un simple contact du téléphone ouvre votre fiche digitale.',
+    'Campagne réseaux' => 'Un mois de publications sur Instagram, Facebook et LinkedIn, visuels compris.',
+];
+foreach ($desc as $nom => $txt) {
+    $db->prepare("update offres set description = ? where company_id = 1 and nom = ? and (description is null or description = '')")->execute(['<p>' . $txt . '</p>', $nom]);
+}
+echo "Descriptions de démo prêtes\n";

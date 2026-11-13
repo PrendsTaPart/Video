@@ -1,0 +1,40 @@
+{
+  "id": "CRM18",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Campagnes SMS et aperçu",
+  "em": "Campagnes SMS",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/campagnes-automatiques",
+  "type_delay": 30,
+  "fixes": {"SMS": "SMS"},
+  "end_cta": "Prochain épisode : les newsletters",
+  "paragraphs": [
+    {"key": "intro", "text": "Dans ce tutoriel, on envoie un SMS à toute sa clientèle avec RapidoCRM, et on le prévisualise avant l'envoi."},
+    {"key": "historique", "text": "Dans Campagnes, l'onglet SMS liste les envois passés et programmés, avec leur cible et leur date."},
+    {"key": "cible", "text": "Une nouvelle campagne SMS commence par le ciblage : vos entreprises, vos contacts ou un segment, filtré par domaine d'activité."},
+    {"key": "modele", "text": "On choisit un modèle de SMS, puis les portefeuilles concernés et l'heure d'envoi."},
+    {"key": "texte", "text": "À l'étape suivante, on voit combien de personnes recevront le message, et on peut retoucher le texte."},
+    {"key": "apercu", "text": "L'aperçu montre le SMS tel qu'il s'affichera sur le téléphone de vos clients, avec le nom de votre société. Il ne reste qu'à valider."},
+    {"key": "outro", "text": "Dans le prochain tutoriel, on crée une newsletter. À tout de suite !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3},
+    {"at": "historique", "label": "L'historique SMS", "click": "button[data-bs-target=\"#tab-sms\"]", "wait": 0.4, "zone": [280, 360, 1620, 300]},
+    {"at": "cible", "label": "Le ciblage", "goto": "/ajout-campagne-sms",
+     "select": [["select >> nth=0", "Toutes mes entreprises"], ["select >> nth=1", "Commerce"]], "zone": [390, 280, 1400, 140]},
+    {"at": "modele", "label": "Modèle et envoi", "click": ".card input[type=radio] >> nth=2"},
+    {"at": "modele", "click": ".tagify__input", "fill": [[".tagify__input", "Léa"]]},
+    {"at": "modele", "click": ".tagify__dropdown__item >> nth=0", "fill": [["input[type=datetime-local]", "2026-11-21T09:30"]], "zone": [390, 440, 1400, 570]},
+    {"at": "texte", "label": "Le message", "click": "button.btn-next >> visible=true", "wait": 0.5, "zone": [390, 280, 1400, 400]},
+    {"at": "apercu", "label": "L'aperçu", "click": "button.btn-next >> visible=true", "wait": 0.6, "zone": [900, 300, 380, 600]},
+    {"at": "apercu", "hover": "button:has-text(\"valider\") >> visible=true"},
+    {"at": "outro", "wait": 0.3}
+  ],
+  "thumb_shot": "fin.png"
+}

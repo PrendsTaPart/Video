@@ -1,0 +1,179 @@
+{
+  "id": "CRM16",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Créer ses modèles de contrats",
+  "em": "modèles de contrats",
+  "tag": "1 min · Intermédiaire",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/contrat/config",
+  "type_delay": 28,
+  "fixes": {
+    "IA": "IA"
+  },
+  "end_cta": "Prochain épisode : les campagnes e-mail",
+  "mocks": [
+    {
+      "url": "**/api/credit/check",
+      "json": {
+        "content": true
+      }
+    },
+    {
+      "url": "**/api/contrat/text_contrat",
+      "delay": 1.6,
+      "json": {
+        "content": "<p>Le Prestataire réalise pour le Client une séance photo sur site d'une demi-journée, comprenant la préparation, la prise de vue et la retouche de vingt images. Les fichiers haute définition sont livrés sous dix jours ouvrés, via un lien de téléchargement sécurisé.</p>"
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Dans ce tutoriel, on crée ses propres modèles de contrats dans RapidoCRM, pour les envoyer ensuite en quelques clics."
+    },
+    {
+      "key": "liste",
+      "text": "Sur la page Contrats, le bouton Voir la liste des templates mène à votre bibliothèque. Quatre modèles sont fournis : prestation de services, vente, maintenance et confidentialité."
+    },
+    {
+      "key": "apercu",
+      "text": "Le bouton plus déplie un modèle : on voit les parties prenantes et chaque article du contrat."
+    },
+    {
+      "key": "nouveau",
+      "text": "Pour créer le vôtre, cliquez sur Ajouter une template, donnez-lui un titre et une courte description, puis Paramétrer."
+    },
+    {
+      "key": "titres",
+      "text": "Le contrat se construit article par article. Ajoutez un titre, son numéro d'ordre, puis le texte."
+    },
+    {
+      "key": "bot",
+      "text": "Pas d'inspiration ? Le bouton Aide du bot rédige l'article pour vous, à partir d'une simple consigne."
+    },
+    {
+      "key": "enregistrer",
+      "text": "Ajoutez des sous-titres si besoin, enregistrez, et votre modèle apparaît dans la fiche de chaque client."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on lance sa première campagne e-mail. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "liste",
+      "label": "Votre bibliothèque",
+      "zone": [
+        390,
+        235,
+        1400,
+        390
+      ]
+    },
+    {
+      "at": "apercu",
+      "label": "Aperçu d'un modèle",
+      "click": "button[data-bs-target=\"#accordionIcon1\"]",
+      "wait": 0.5,
+      "zone": [
+        390,
+        430,
+        1400,
+        480
+      ]
+    },
+    {
+      "at": "nouveau",
+      "label": "Un nouveau modèle",
+      "click": "button[data-bs-target=\"#contratModal\"]",
+      "fill": [
+        [
+          "#contratModal input[name=titre]",
+          "Contrat de shooting photo"
+        ],
+        [
+          "#contratModal textarea",
+          "Séance photo sur site et droits d'usage."
+        ]
+      ],
+      "zone": "#contratModal .modal-content"
+    },
+    {
+      "at": "titres",
+      "label": "Article par article",
+      "click": "#contratModal button:has-text(\"Paramétrer\")"
+    },
+    {
+      "at": "titres",
+      "click": "button[data-bs-target=\"#titleModal\"]",
+      "fill": [
+        [
+          "#titleModal #newtitre-input",
+          "Objet de la prestation"
+        ],
+        [
+          "#titleModal input[type=number]",
+          "1"
+        ]
+      ]
+    },
+    {
+      "at": "titres",
+      "click": "#titleModal button:has-text(\"Ajouter\")",
+      "zone": [
+        390,
+        270,
+        1400,
+        520
+      ]
+    },
+    {
+      "at": "bot",
+      "label": "L'aide du bot",
+      "click": "button:has-text(\"Aide du bot\") >> nth=0",
+      "fill": [
+        [
+          "#botModal textarea",
+          "Séance photo d'une demi-journée, 20 photos retouchées, livraison sous 10 jours"
+        ]
+      ]
+    },
+    {
+      "at": "bot",
+      "click": "#botModal button:has-text(\"Générer\")",
+      "wait": 2.2,
+      "zone": [
+        390,
+        270,
+        1400,
+        520
+      ]
+    },
+    {
+      "at": "enregistrer",
+      "label": "Enregistrer",
+      "hover": "button.btn-excel",
+      "zone": [
+        1590,
+        195,
+        200,
+        65
+      ]
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ],
+  "thumb_shot": "fin.png"
+}
