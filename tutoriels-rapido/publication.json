@@ -56,8 +56,8 @@
   "titre": "La fiche entreprise et la fiche contact",
   "tag": "1 min · Débutant",
   "duree_s": 60,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM06.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM06.png"
  },
  {
   "id": "CRM07",
@@ -66,8 +66,8 @@
   "titre": "Suivre ses ventes avec le pipeline",
   "tag": "1 min · Débutant",
   "duree_s": 62,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM07.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM07.png"
  },
  {
   "id": "CRM08",
@@ -76,8 +76,8 @@
   "titre": "Configurer l'agent vocal IA",
   "tag": "2 min · Intermédiaire",
   "duree_s": 60,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM08.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM08.png"
  },
  {
   "id": "CRM09",
@@ -86,8 +86,8 @@
   "titre": "L'historique des appels de l'agent vocal",
   "tag": "1 min · Débutant",
   "duree_s": 51,
-  "video": null,
-  "miniature": null
+  "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM09.mp4",
+  "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM09.png"
  },
  {
   "id": "CMS01",
