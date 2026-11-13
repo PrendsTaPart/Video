@@ -140,6 +140,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM18.png"
   },
   {
+    "id": "CRM20",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Les campagnes automatiques",
+    "tag": "1 min · Débutant",
+    "duree_s": 50,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM20.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM20.png"
+  },
+  {
     "id": "CMS01",
     "produit": "cms",
     "kicker": "Tutoriel RapidoCMS",

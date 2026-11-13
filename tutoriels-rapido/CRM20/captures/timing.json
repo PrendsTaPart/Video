@@ -1,0 +1,45 @@
+{
+  "voiceStartInCapture": 3.905,
+  "paragraphs": {
+    "intro": 0.02,
+    "bouton": 4.44,
+    "choix": 9.78,
+    "programmer": 18.46,
+    "canaux": 25.54,
+    "compteurs": 31.42,
+    "outro": 37.38,
+    "end": 42.34
+  },
+  "zones": {
+    "bouton": [
+      1300,
+      120,
+      230,
+      60
+    ],
+    "choix": [
+      666,
+      318,
+      528,
+      443
+    ],
+    "programmer": [
+      280,
+      430,
+      1620,
+      300
+    ],
+    "canaux": [
+      280,
+      360,
+      1620,
+      300
+    ],
+    "compteurs": [
+      280,
+      220,
+      1620,
+      120
+    ]
+  }
+}

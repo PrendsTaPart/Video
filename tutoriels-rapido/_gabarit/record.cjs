@@ -144,6 +144,11 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
             await el.pressSequentially(txt, { delay: cfg.type_delay || 45 }).catch(() => {});
             await page.waitForTimeout(250);
         }
+        for (const [sel, fichier] of sc.upload || []) { // champ fichier : chemin relatif à l'épisode
+            const el = await resolve(sel); if (!el) continue;
+            await el.setInputFiles(path.isAbsolute(fichier) ? fichier : path.join(EP, fichier)).catch((e) => console.warn('upload', e.message));
+            await page.waitForTimeout(500);
+        }
         for (const [sel, label] of sc.select || []) {
             const el = await resolve(sel); if (!el) continue;
             const b = await el.boundingBox(); if (b) await moveTo(b.x + 40, b.y + b.height / 2);
