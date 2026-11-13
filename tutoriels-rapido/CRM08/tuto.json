@@ -12,28 +12,134 @@
   "capture": "captures/ecran.mp4",
   "start_path": "/admin/agent-vocal/configuration",
   "type_delay": 22,
-  "fixes": { "IA": "IA", "Twilio": "Twilio", "twilio": "Twilio" },
+  "fixes": {
+    "IA": "IA",
+    "Twilio": "Twilio",
+    "twilio": "Twilio"
+  },
   "end_cta": "Prochain épisode : l'historique des appels",
   "paragraphs": [
-    { "key": "intro", "text": "Dans ce tutoriel, on configure l'agent vocal IA de RapidoCRM : un assistant qui appelle vos prospects, et répond à vos clients, à votre place." },
-    { "key": "credits", "text": "En haut, vos crédits disponibles, en minutes d'appel." },
-    { "key": "identite", "text": "Commencez par l'identité de votre entreprise : son nom, son secteur d'activité, et un pitch de deux ou trois phrases, que l'agent lira pour se présenter." },
-    { "key": "objectif", "text": "Choisissez ensuite l'objectif de l'appel, comme la prise de rendez-vous ou la démonstration produit, et le ton de voix : professionnel, chaleureux ou dynamique." },
-    { "key": "sauver", "text": "Vérifiez que l'agent est actif, puis cliquez sur Sauvegarder." },
-    { "key": "entrants", "text": "Deux nouvelles sections apparaissent. La première permet de répondre aux appels entrants : avec un numéro Twilio connecté, l'agent décroche à votre place, avec votre message d'accueil." },
-    { "key": "catalogue", "text": "La seconde, c'est le catalogue : ajoutez vos produits, et l'agent pourra les présenter pendant ses appels." },
-    { "key": "outro", "text": "Dans le prochain tutoriel, on retrouve l'historique de tous les appels de l'agent. À tout de suite !" }
+    {
+      "key": "intro",
+      "text": "Dans ce tutoriel, on configure l'agent vocal IA de RapidoCRM : un assistant qui appelle vos prospects, et répond à vos clients, à votre place."
+    },
+    {
+      "key": "credits",
+      "text": "En haut, vos crédits disponibles, en minutes d'appel."
+    },
+    {
+      "key": "identite",
+      "text": "Commencez par l'identité de votre entreprise : son nom, son secteur d'activité, et un pitch de deux ou trois phrases, que l'agent lira pour se présenter."
+    },
+    {
+      "key": "objectif",
+      "text": "Choisissez ensuite l'objectif de l'appel, comme la prise de rendez-vous ou la démonstration produit, et le ton de voix : professionnel, chaleureux ou dynamique."
+    },
+    {
+      "key": "sauver",
+      "text": "Vérifiez que l'agent est actif, puis cliquez sur Sauvegarder."
+    },
+    {
+      "key": "entrants",
+      "text": "Deux nouvelles sections apparaissent. La première permet de répondre aux appels entrants : avec un numéro Twilio connecté, l'agent décroche à votre place, avec votre message d'accueil."
+    },
+    {
+      "key": "catalogue",
+      "text": "La seconde, c'est le catalogue : ajoutez vos produits, et l'agent pourra les présenter pendant ses appels."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on retrouve l'historique de tous les appels de l'agent. À tout de suite !"
+    }
   ],
   "scenes": [
-    { "at": "intro", "wait": 0.3 },
-    { "at": "credits", "label": "Vos crédits", "zone": [1540, 225, 250, 60] },
-    { "at": "identite", "label": "L'identité", "fill": [["input[placeholder^=\"Ex : Rapido\"]", "Studio Lumière"], ["input[placeholder^=\"Ex : Logiciels\"]", "Photographie"], ["textarea >> nth=0", "Studio photo à Bordeaux : portraits, familles et entreprises."]], "zone": [420, 520, 1300, 230] },
-    { "at": "objectif", "label": "Objectif et ton", "select": [["select >> nth=0", "Prise de RDV"], ["select >> nth=1", "Chaleureux"]], "zone": [420, 830, 1300, 110] },
-    { "at": "sauver", "label": "Sauvegarder", "hover": "button:has-text(\"sauvegarder\") >> nth=0", "wait": 1.2 },
-    { "at": "sauver", "click": "button:has-text(\"sauvegarder\") >> nth=0" },
-    { "at": "entrants", "label": "Appels entrants", "scroll": "h5:has-text(\"répondre aux appels entrants\")", "zone": "h5:has-text(\"répondre aux appels entrants\")", "zone_closest": ".card" },
-    { "at": "catalogue", "label": "Le catalogue", "scroll": "h5:has-text(\"catalogue produits\")", "hover": "button:has-text(\"ajouter un produit\")", "zone": "h5:has-text(\"catalogue produits\")", "zone_closest": ".card" },
-    { "at": "outro", "wait": 0.3 }
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "credits",
+      "label": "Vos crédits",
+      "zone": [
+        1540,
+        225,
+        250,
+        60
+      ]
+    },
+    {
+      "at": "identite",
+      "label": "L'identité",
+      "fill": [
+        [
+          "input[placeholder^=\"Ex : Rapido\"]",
+          "Studio Lumière"
+        ],
+        [
+          "input[placeholder^=\"Ex : Logiciels\"]",
+          "Photographie"
+        ],
+        [
+          "textarea >> nth=0",
+          "Studio photo à Bordeaux : portraits, familles et entreprises."
+        ]
+      ],
+      "zone": [
+        420,
+        520,
+        1300,
+        230
+      ]
+    },
+    {
+      "at": "objectif",
+      "label": "Objectif et ton",
+      "select": [
+        [
+          "select >> nth=0",
+          "Prise de RDV"
+        ],
+        [
+          "select >> nth=1",
+          "Chaleureux"
+        ]
+      ],
+      "zone": [
+        420,
+        830,
+        1300,
+        110
+      ]
+    },
+    {
+      "at": "sauver",
+      "label": "Sauvegarder",
+      "hover": "button:has-text(\"sauvegarder\") >> nth=0",
+      "wait": 1.2
+    },
+    {
+      "at": "sauver",
+      "click": "button:has-text(\"sauvegarder\") >> nth=0"
+    },
+    {
+      "at": "entrants",
+      "label": "Appels entrants",
+      "scroll": "h5:has-text(\"répondre aux appels entrants\") >> visible=true",
+      "zone": "h5:has-text(\"répondre aux appels entrants\") >> visible=true",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "catalogue",
+      "label": "Le catalogue",
+      "scroll": "h5:has-text(\"catalogue produits\") >> visible=true",
+      "hover": "button:has-text(\"ajouter un produit\") >> visible=true",
+      "zone": "h5:has-text(\"catalogue produits\") >> visible=true",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
   ],
   "thumb_shot": "fin.png"
 }

@@ -1,0 +1,40 @@
+{
+  "voiceStartInCapture": 3.421,
+  "paragraphs": {
+    "intro": 0.03,
+    "credits": 8.85,
+    "identite": 12.05,
+    "objectif": 20.25,
+    "sauver": 28.81,
+    "entrants": 32.33,
+    "catalogue": 41.93,
+    "outro": 47.61,
+    "end": 52.57
+  },
+  "zones": {
+    "credits": [
+      1540,
+      225,
+      250,
+      60
+    ],
+    "identite": [
+      420,
+      520,
+      1300,
+      230
+    ],
+    "objectif": [
+      420,
+      830,
+      1300,
+      110
+    ],
+    "entrants": [
+      380,
+      197,
+      1396,
+      536
+    ]
+  }
+}

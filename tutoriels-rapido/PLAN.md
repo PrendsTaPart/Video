@@ -237,6 +237,7 @@ Mise à jour du site : `python3 _gabarit/export-site.py /home/user/rapido-softwa
 - [ ] W1 — Remplacer les captures et démos de la page RapidoCRM par les vrais écrans filmés (boucles vidéo courtes + animations HTML/CSS)
 - [ ] W2 — Idem page RapidoCMS
 - [ ] W3 — Idem page RapidoRH
+- [x] W5 — Marketplace de prompts (/marketplace-prompts) : 46 prompts CRM/CMS/RH/suite, filtres logiciel · catégorie · fonctionnalité · outil MCP, champs [entre crochets] en formulaire, Claude / ChatGPT / Mistral, bouton Infos → tutoriel (commit b0aee81, branche ccr-dbfe6358-2gefhr)
 - [x] W4 — Accueil : section « tutoriels » qui présente les vidéos réalisées → « Académie Rapido » (/academie, page vidéo, section accueil et pages produit), branche ccr-dbfe6358-2gefhr, commit 08cf25d
 
 ---
@@ -248,3 +249,14 @@ Mise à jour du site : `python3 _gabarit/export-site.py /home/user/rapido-softwa
 | 13/11 01 h 40 | P1, P2 | Perdu | La session de la routine n'avait pas le dépôt vidéo : push refusé (403), travail resté dans le conteneur. Routine mise en pause. |
 | 13/11 02 h 50 | P1, P2, P3, P4, CRM01 | Fait | Voix et style validés par Michael ; chaîne générique `_gabarit/make.sh` (tournage, minutage, montage, rendu, miniature). |
 | 13/11 02 h 30 | Pilote CRM02 (vidéo + miniature) | Fait, en attente de validation | `videos/tutoriels-rapido/CRM02.mp4` (1 min 07, −14 LUFS), `tutoriels-rapido/CRM02/miniature.png`. Gabarits : `_gabarit/build-tutoriel.py`, `_gabarit/miniature.cjs`, `_gabarit/demo-crm.php`. |
+
+
+## Correctifs RapidoCRM (13/11/2026, demande de Michael : « résous les bugs en même temps »)
+
+Branche `correctifs-tutoriels` du dépôt `rapido-crm` (poussée, **pas de PR** : toute PR vers `production`
+est fusionnée et déployée automatiquement — à ouvrir avec l'accord de Michael) :
+- marqueurs de conflit de la fusion #97 résolus (3 sources) et `public/build` recompilé → les écrans Vue chargent ;
+- `EntrepriseProfil.vue` : bloc de 1 073 lignes perdu à la fusion a5cfe8b (21/08) restauré depuis e1a9304 ;
+- `public/assets/js/toasts.js` : ne supprime plus les conteneurs `.alert` vides/masqués réservés aux erreurs
+  → le bouton « Créer » d'un pipeline fonctionne de nouveau (il ne trouvait plus `#pipelineError`).
+Les mêmes correctifs sont appliqués à la copie de tournage `/home/user/rapido-crm-film`.
