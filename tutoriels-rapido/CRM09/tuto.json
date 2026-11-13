@@ -1,0 +1,37 @@
+{
+  "id": "CRM09",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "L'historique des appels de l'agent vocal",
+  "em": "l'agent vocal",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/admin/agent-vocal/configuration",
+  "fixes": { "IA": "IA" },
+  "end_cta": "Prochain épisode : contacts et entreprises",
+  "paragraphs": [
+    { "key": "intro", "text": "Dans ce tutoriel, on retrouve tous les appels passés et reçus par l'agent vocal IA." },
+    { "key": "acces", "text": "Dans Agent vocal IA, ouvrez l'onglet Historique." },
+    { "key": "stats", "text": "En haut, vos chiffres clés : le nombre d'appels, les rendez-vous pris, le taux de conversion, et les minutes utilisées." },
+    { "key": "tableau", "text": "Chaque ligne est un appel : son sens, entrant ou sortant, le prospect, la date et la durée." },
+    { "key": "resultat", "text": "L'agent classe lui-même chaque appel : rendez-vous pris, intéressé, à rappeler ou pas intéressé. Et il en rédige un résumé." },
+    { "key": "transcript", "text": "Le bouton Voir ouvre la transcription complète de l'échange, réplique par réplique, avec le minutage." },
+    { "key": "suite", "text": "Enfin, un clic sur le nom du prospect vous ramène à sa fiche, pour donner suite." },
+    { "key": "outro", "text": "Dans le prochain tutoriel, on gère ses contacts et ses entreprises. À tout de suite !" }
+  ],
+  "scenes": [
+    { "at": "intro", "wait": 0.3 },
+    { "at": "acces", "label": "L'historique", "click": "a:has-text(\"historique\") >> visible=true" },
+    { "at": "stats", "label": "Les chiffres clés", "zone": [442, 385, 1296, 130] },
+    { "at": "tableau", "label": "Les appels", "zone": [442, 535, 690, 510] },
+    { "at": "resultat", "label": "Résultat et résumé", "zone": [970, 535, 520, 510] },
+    { "at": "transcript", "label": "La transcription", "click": "button:has-text(\"voir\") >> nth=0", "zone": ".modal.show .modal-content" },
+    { "at": "suite", "label": "Donner suite", "click": ".modal.show .btn-close", "hover": "td a.fw-semibold >> nth=0", "zone": [442, 590, 1296, 80] },
+    { "at": "outro", "wait": 0.3 }
+  ],
+  "thumb_shot": "fin.png"
+}

@@ -1,5 +1,5 @@
 {
-  "voiceStartInCapture": 3.421,
+  "voiceStartInCapture": 3.464,
   "paragraphs": {
     "intro": 0.03,
     "credits": 8.85,
@@ -35,6 +35,12 @@
       197,
       1396,
       536
+    ],
+    "catalogue": [
+      380,
+      704,
+      1396,
+      343
     ]
   }
 }
