@@ -138,7 +138,7 @@ continue avec les sections B (RapidoCMS) puis C (RapidoRH), puis D. Reprendre la
 - [~] CMS05 — Connecter TikTok → fusionné dans CMS03
 - [ ] CMS06 — Créer son kit de marque
 - [x] CMS07 — Les clés d'API et les intégrations (Zapier, Make, n8n)
-- [ ] CMS08 — Rédiger un post avec l'IA
+- [x] CMS08 — Rédiger un post avec l'IA
 - [x] CMS09 — Générer un visuel IA
 - [~] CMS10 — Transformer une photo (image vers image) → fonction disponible uniquement via le connecteur MCP : traitée dans CMS24
 - [ ] CMS11 — La bibliothèque de fichiers
