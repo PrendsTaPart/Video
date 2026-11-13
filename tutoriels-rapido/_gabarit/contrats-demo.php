@@ -35,7 +35,7 @@ foreach ($sms as [$nom, $cat, $txt]) {
 }
 
 // Contrats envoyés aux clients : deux signés, deux en attente
-$db->exec('delete from contrat_user_crm where id between 9001 and 9010');
+$db->exec("delete from contrat_user_crm where (id between 9001 and 9010) or (user_id = 1 and destinataire like '%.test')");
 $ents = $db->query('select id, email from entreprises where company_id = 1 and deleted_at is null order by id limit 4')->fetchAll(PDO::FETCH_ASSOC);
 $envois = [[1, 'signature_demo_1.png', 12], [3, 'signature_demo_2.png', 8], [2, null, 3], [4, null, 1]];
 foreach ($envois as $i => [$contrat, $sig, $jours]) {
