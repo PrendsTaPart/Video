@@ -1,0 +1,52 @@
+{
+  "voiceStartInCapture": 18.599,
+  "paragraphs": {
+    "intro": 0.04,
+    "acces": 11.55,
+    "facebook": 16.74,
+    "instagram": 30.68,
+    "linkedin": 40.39,
+    "tiktok": 45.68,
+    "limite": 51.79,
+    "outro": 57.82,
+    "end": 61.46
+  },
+  "zones": {
+    "acces": [
+      288,
+      207,
+      1344,
+      577
+    ],
+    "facebook": [
+      752,
+      250,
+      856,
+      494
+    ],
+    "instagram": [
+      752,
+      250,
+      856,
+      494
+    ],
+    "linkedin": [
+      752,
+      250,
+      856,
+      494
+    ],
+    "tiktok": [
+      752,
+      250,
+      856,
+      494
+    ],
+    "limite": [
+      356,
+      358,
+      1468,
+      463
+    ]
+  }
+}
