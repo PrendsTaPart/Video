@@ -187,7 +187,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 
 ### Marketing & communication
 - [x] F01 — Construire sa ligne éditoriale en 1 heure avec l'IA
-- [ ] F02 — Un mois de contenus en une après-midi (RapidoCMS)
+- [x] F02 — Un mois de contenus en une après-midi (RapidoCMS)
 - [ ] F03 — Écrire un post qui engage : structure et accroches
 - [ ] F04 — Visuels de marque cohérents avec un kit de marque
 - [ ] F05 — Lire ses statistiques et décider quoi refaire

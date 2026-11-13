@@ -1,0 +1,142 @@
+[
+ {
+  "id": "CRM01",
+  "produit": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "titre": "Créer son compte et choisir son forfait",
+  "tag": "2 min · Débutant",
+  "duree_s": 63,
+  "video": null,
+  "miniature": null
+ },
+ {
+  "id": "CRM02",
+  "produit": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "titre": "Visite guidée du tableau de bord",
+  "tag": "",
+  "duree_s": 67,
+  "video": null,
+  "miniature": null
+ },
+ {
+  "id": "CRM03",
+  "produit": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "titre": "Compléter son profil et sa configuration",
+  "tag": "1 min · Débutant",
+  "duree_s": 82,
+  "video": null,
+  "miniature": null
+ },
+ {
+  "id": "CRM04",
+  "produit": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "titre": "Prospecter sur Google Maps",
+  "tag": "1 min · Débutant",
+  "duree_s": 57,
+  "video": null,
+  "miniature": null
+ },
+ {
+  "id": "CMS01",
+  "produit": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "titre": "Créer son compte et choisir sa formule",
+  "tag": "2 min · Débutant",
+  "duree_s": 82,
+  "video": null,
+  "miniature": null
+ },
+ {
+  "id": "CMS02",
+  "produit": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "titre": "Visite guidée du tableau de bord",
+  "tag": "1 min · Débutant",
+  "duree_s": 81,
+  "video": null,
+  "miniature": null
+ },
+ {
+  "id": "CMS03",
+  "produit": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "titre": "Connecter ses réseaux sociaux",
+  "tag": "2 min · Débutant",
+  "duree_s": 69,
+  "video": null,
+  "miniature": null
+ },
+ {
+  "id": "CMS06",
+  "produit": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "titre": "Créer son kit de marque",
+  "tag": "2 min · Débutant",
+  "duree_s": 63,
+  "video": null,
+  "miniature": null
+ },
+ {
+  "id": "CMS07",
+  "produit": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "titre": "Les clés d'API et les intégrations",
+  "tag": "2 min · Avancé",
+  "duree_s": 61,
+  "video": null,
+  "miniature": null
+ },
+ {
+  "id": "CMS08",
+  "produit": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "titre": "Rédiger un post avec l'IA",
+  "tag": "1 min · Débutant",
+  "duree_s": 58,
+  "video": null,
+  "miniature": null
+ },
+ {
+  "id": "CMS09",
+  "produit": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "titre": "Générer un visuel avec l'IA",
+  "tag": "1 min · Débutant",
+  "duree_s": 58,
+  "video": null,
+  "miniature": null
+ },
+ {
+  "id": "CMS24",
+  "produit": "cms",
+  "kicker": "Tutoriel RapidoCMS · IA",
+  "titre": "Piloter RapidoCMS avec Claude (MCP)",
+  "tag": "2 min · Avancé",
+  "duree_s": 79,
+  "video": null,
+  "miniature": null
+ },
+ {
+  "id": "F01",
+  "produit": "cms",
+  "kicker": "Formation · Marketing",
+  "titre": "Construire sa ligne éditoriale en 1 heure avec l'IA",
+  "tag": "3 min · Méthode",
+  "duree_s": 121,
+  "video": null,
+  "miniature": null
+ },
+ {
+  "id": "F02",
+  "produit": "cms",
+  "kicker": "Formation · Marketing",
+  "titre": "Un mois de contenus en une après-midi",
+  "tag": "3 min · Méthode",
+  "duree_s": 98,
+  "video": null,
+  "miniature": null
+ }
+]
