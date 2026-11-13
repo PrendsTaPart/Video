@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#03A9F5; --b:#6EE7FF; --grad:linear-gradient(100deg,#03A9F5,#6EE7FF); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; background:#05060A; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(120px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.45; }
+  .h2 { width:700px; height:600px; left:-260px; bottom:-320px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  #frame { position:absolute; left:80px; top:56px; width:1760px; height:990px; border-radius:22px; overflow:hidden; background:#f3f4f7;
+           box-shadow:0 50px 120px -30px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.12),0 0 120px -30px var(--a); }
+  #cam { position:absolute; left:0; top:0; width:1760px; height:990px; transform-origin:0 0; }
+  #cam video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .hl { position:absolute; border-radius:18px; border:3px solid var(--a); box-shadow:0 0 0 9999px rgba(5,6,10,.28),0 0 40px -6px var(--a); opacity:0; }
+  .chap { position:absolute; left:108px; top:82px; display:flex; align-items:center; gap:14px; padding:12px 22px 12px 12px; border-radius:999px;
+          background:rgba(10,12,18,.82); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.14); font-size:26px; font-weight:600; opacity:0; z-index:5; }
+  .chap b { width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:19px; }
+  .sub { position:absolute; inset:auto 0 58px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; letter-spacing:-.01em; white-space:nowrap; box-shadow:0 10px 30px rgba(0,0,0,.4); }
+  .bar { position:absolute; left:80px; bottom:22px; width:1760px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:104px; top:84px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  /* intro / outro */
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .kick { font-size:28px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.7); }
+  .card h1 { text-wrap:balance; margin-top:40px; font-size:128px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1500px; }
+  .card h1 em, .card h2 em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; line-height:1; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="57.88" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+
+  <div id="frame">
+    <div id="cam">
+      <video id="cap" class="clip" src="captures/ecran.mp4" muted data-start="3.0" data-duration="54.88" data-track-index="1"></video>
+      <div class="hl" id="hl1" style="left:0px;top:0px;width:1760px;height:990px"></div>
+      <div class="hl" id="hl2" style="left:367px;top:128px;width:614px;height:568px"></div>
+      <div class="hl" id="hl3" style="left:610px;top:277px;width:539px;height:436px"></div>
+      <div class="hl" id="hl4" style="left:610px;top:244px;width:539px;height:502px"></div>
+      <div class="hl" id="hl5" style="left:367px;top:632px;width:614px;height:202px"></div>
+      <div class="hl" id="hl6" style="left:348px;top:238px;width:1302px;height:302px"></div>
+    </div>
+  </div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">RapidoCMS</div>
+  <div class="chap" id="ch1"><b>1</b>Créer un poste</div>
+  <div class="chap" id="ch2"><b>2</b>Le paramétrage</div>
+  <div class="chap" id="ch3"><b>3</b>L&#x27;aide du bot</div>
+  <div class="chap" id="ch4"><b>4</b>Générer</div>
+  <div class="chap" id="ch5"><b>5</b>Relire</div>
+  <div class="chap" id="ch6"><b>6</b>Votre publication</div>
+  <div class="sub clip" id="s0" data-start="3.020" data-duration="1.010" data-track-index="7"><span>Dans ce tutoriel</span></div>
+  <div class="sub clip" id="s1" data-start="4.080" data-duration="1.830" data-track-index="7"><span>on rédige une publication avec l&#x27;aide</span></div>
+  <div class="sub clip" id="s2" data-start="5.930" data-duration="1.725" data-track-index="7"><span>de l&#x27;IA de RapidoCMS</span></div>
+  <div class="sub clip" id="s3" data-start="7.840" data-duration="1.670" data-track-index="7"><span>Il vous faut simplement un réseau</span></div>
+  <div class="sub clip" id="s4" data-start="9.530" data-duration="1.030" data-track-index="7"><span>social connecté</span></div>
+  <div class="sub clip" id="s5" data-start="10.580" data-duration="1.320" data-track-index="7"><span>Dans Réseaux sociaux</span></div>
+  <div class="sub clip" id="s6" data-start="11.920" data-duration="1.610" data-track-index="7"><span>cliquez sur Créer un poste</span></div>
+  <div class="sub clip" id="s7" data-start="13.840" data-duration="1.490" data-track-index="7"><span>Donnez un nom à votre publication</span></div>
+  <div class="sub clip" id="s8" data-start="15.350" data-duration="1.610" data-track-index="7"><span>pour la retrouver facilement</span></div>
+  <div class="sub clip" id="s9" data-start="16.980" data-duration="1.390" data-track-index="7"><span>Choisissez le réseau</span></div>
+  <div class="sub clip" id="s10" data-start="18.390" data-duration="0.700" data-track-index="7"><span>le compte</span></div>
+  <div class="sub clip" id="s11" data-start="19.110" data-duration="1.010" data-track-index="7"><span>puis le type</span></div>
+  <div class="sub clip" id="s12" data-start="20.140" data-duration="1.010" data-track-index="7"><span>texte seul</span></div>
+  <div class="sub clip" id="s13" data-start="21.200" data-duration="0.960" data-track-index="7"><span>texte et média</span></div>
+  <div class="sub clip" id="s14" data-start="22.180" data-duration="1.280" data-track-index="7"><span>ou média seul</span></div>
+  <div class="sub clip" id="s15" data-start="23.480" data-duration="1.740" data-track-index="7"><span>Cliquez sur Aide du bot</span></div>
+  <div class="sub clip" id="s16" data-start="25.240" data-duration="1.490" data-track-index="7"><span>et décrivez ce que vous voulez</span></div>
+  <div class="sub clip" id="s17" data-start="26.750" data-duration="0.970" data-track-index="7"><span>dire : le sujet</span></div>
+  <div class="sub clip" id="s18" data-start="27.740" data-duration="0.660" data-track-index="7"><span>la cible</span></div>
+  <div class="sub clip" id="s19" data-start="28.420" data-duration="2.180" data-track-index="7"><span>le ton et l&#x27;appel à l&#x27;action</span></div>
+  <div class="sub clip" id="s20" data-start="30.620" data-duration="1.420" data-track-index="7"><span>Cliquez sur Générer</span></div>
+  <div class="sub clip" id="s21" data-start="32.320" data-duration="1.422" data-track-index="7"><span>en quelques secondes</span></div>
+  <div class="sub clip" id="s22" data-start="33.763" data-duration="1.537" data-track-index="7"><span>l&#x27;IA rédige votre texte</span></div>
+  <div class="sub clip" id="s23" data-start="35.320" data-duration="1.790" data-track-index="7"><span>Chaque génération consomme un peu de</span></div>
+  <div class="sub clip" id="s24" data-start="37.130" data-duration="0.810" data-track-index="7"><span>vos crédits</span></div>
+  <div class="sub clip" id="s25" data-start="37.960" data-duration="1.140" data-track-index="7"><span>Fermez la fenêtre</span></div>
+  <div class="sub clip" id="s26" data-start="39.120" data-duration="2.120" data-track-index="7"><span>le texte est placé dans votre publication</span></div>
+  <div class="sub clip" id="s27" data-start="41.260" data-duration="2.880" data-track-index="7"><span>Relisez-le, et ajoutez votre touche personnelle</span></div>
+  <div class="sub clip" id="s28" data-start="44.160" data-duration="1.280" data-track-index="7"><span>Cliquez sur Créer</span></div>
+  <div class="sub clip" id="s29" data-start="45.680" data-duration="1.950" data-track-index="7"><span>votre publication apparaît dans la liste</span></div>
+  <div class="sub clip" id="s30" data-start="47.650" data-duration="1.330" data-track-index="7"><span>de vos posts Facebook</span></div>
+  <div class="sub clip" id="s31" data-start="49.000" data-duration="1.320" data-track-index="7"><span>Dans le prochain tutoriel</span></div>
+  <div class="sub clip" id="s32" data-start="50.340" data-duration="1.940" data-track-index="7"><span>on génère un visuel avec l&#x27;IA</span></div>
+  <div class="sub clip" id="s33" data-start="52.300" data-duration="0.800" data-track-index="7"><span>À tout de suite</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="50.379999999999995" data-track-index="10" data-volume="1"></audio>
+
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <div class="top"><span class="num">CMS08</span><span class="kick">Tutoriel RapidoCMS</span></div>
+      <h1>Rédiger un post <em>avec l&#x27;IA</em></h1>
+    </div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCMS</b></div>
+  </div>
+
+  <div class="clip card" id="outro" data-start="53.08" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <h2>Merci d'avoir <em>regardé</em></h2>
+      <p>Prochain épisode : générer un visuel avec l&#x27;IA</p>
+    </div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCMS</b></div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  // Intro
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .from('#intro .logo', { opacity: 0, duration: .6 }, .6)
+    .to('#intro', { opacity: 0, scale: 1.04, duration: .6, ease: 'power2.in' }, 3.0)
+    .from('#frame', { scale: .92, opacity: 0, duration: .9, ease: 'expo.out' }, 2.8);
+  // Progression
+  tl.to('#bar', { scaleX: 1, duration: 50.379999999999995, ease: 'none' }, 3.0);
+  tl.to('#cam', { scale: 1.0, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 10.580)
+    .fromTo('#hl1', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 11.380)
+    .to('#hl1', { opacity: 0, duration: .35 }, 13.640)
+    .fromTo('#ch1', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 10.780)
+    .to('#ch1', { opacity: 0, x: -20, duration: .3 }, 13.590);
+  tl.to('#cam', { scale: 1.45, x: -96.9, y: -103.1, duration: 1.2, ease: 'power3.inOut' }, 13.840)
+    .fromTo('#hl2', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 14.640)
+    .to('#hl2', { opacity: 0, duration: .35 }, 23.280)
+    .fromTo('#ch2', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 14.040)
+    .to('#ch2', { opacity: 0, x: -20, duration: .3 }, 23.230);
+  tl.to('#cam', { scale: 1.45, x: -396.0, y: -222.8, duration: 1.2, ease: 'power3.inOut' }, 23.480)
+    .fromTo('#hl3', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 24.280)
+    .to('#hl3', { opacity: 0, duration: .35 }, 30.420)
+    .fromTo('#ch3', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 23.680)
+    .to('#ch3', { opacity: 0, x: -20, duration: .3 }, 30.370);
+  tl.to('#cam', { scale: 1.45, x: -396.0, y: -222.8, duration: 1.2, ease: 'power3.inOut' }, 30.620)
+    .fromTo('#hl4', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 31.420)
+    .to('#hl4', { opacity: 0, duration: .35 }, 37.760)
+    .fromTo('#ch4', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 30.820)
+    .to('#ch4', { opacity: 0, x: -20, duration: .3 }, 37.710);
+  tl.to('#cam', { scale: 1.45, x: -96.9, y: -445.5, duration: 1.2, ease: 'power3.inOut' }, 37.960)
+    .fromTo('#hl5', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 38.760)
+    .to('#hl5', { opacity: 0, duration: .35 }, 43.960)
+    .fromTo('#ch5', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 38.160)
+    .to('#ch5', { opacity: 0, x: -20, duration: .3 }, 43.910);
+  tl.to('#cam', { scale: 1.24, x: -359.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 44.160)
+    .fromTo('#hl6', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 44.960)
+    .to('#hl6', { opacity: 0, duration: .35 }, 48.800)
+    .fromTo('#ch6', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 44.360)
+    .to('#ch6', { opacity: 0, x: -20, duration: .3 }, 48.750);
+  tl.to('#cam', { scale: 1, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 49.000);
+  // Outro
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 53.380)
+    .from('#outro p', { y: 30, opacity: 0, duration: .7, ease: 'expo.out' }, 53.630);
+  window.__timelines['main'] = tl;
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "voiceStartInCapture": 18.213,
+  "paragraphs": {
+    "intro": 0.02,
+    "creer": 7.58,
+    "parametrage": 10.84,
+    "bot": 20.48,
+    "generer": 27.62,
+    "relire": 34.96,
+    "valider": 41.16,
+    "outro": 46,
+    "end": 49.98
+  },
+  "zones": {
+    "parametrage": [
+      400,
+      140,
+      670,
+      620
+    ],
+    "bot": [
+      666,
+      302,
+      588,
+      476
+    ],
+    "generer": [
+      666,
+      266,
+      588,
+      548
+    ],
+    "relire": [
+      400,
+      690,
+      670,
+      220
+    ],
+    "valider": [
+      380,
+      260,
+      1420,
+      330
+    ]
+  }
+}
