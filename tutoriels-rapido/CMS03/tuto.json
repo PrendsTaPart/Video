@@ -131,7 +131,7 @@
       "goto": "/dashboard/tableau-de-bord",
       "scroll": "Statistiques d’abonnements",
       "zone": "Statistiques d’abonnements",
-      "wait": 1.2
+      "wait": 3.5
     },
     {
       "at": "outro",
