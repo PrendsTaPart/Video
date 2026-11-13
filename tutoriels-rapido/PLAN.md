@@ -95,7 +95,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM03 — Compléter son profil et sa configuration
 - [x] CRM04 — Prospecter sur Google Maps
 - [x] CRM05 — Rechercher une entreprise par SIRET
-- [ ] CRM06 — La fiche entreprise et la fiche contact (pas d'écran « notes » dans l'interface : les notes passent par le MCP)
+- [x] CRM06 — La fiche entreprise et la fiche contact (pas d'écran « notes » dans l'interface : les notes passent par le MCP)
 - [ ] CRM07 — Le pipeline : étapes, déplacement, clôture
 - [ ] CRM08 — L'agent vocal IA : configuration et premiers appels
 - [ ] CRM09 — Historique des appels
