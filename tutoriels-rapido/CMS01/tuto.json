@@ -1,0 +1,194 @@
+{
+  "id": "CMS01",
+  "product": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "title": "Créer son compte et choisir sa formule",
+  "em": "choisir sa formule",
+  "tag": "2 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "public": true,
+  "start_path": "/register",
+  "fixes": {
+    "SIRET": "SIRET",
+    "Siret": "SIRET",
+    "siret": "SIRET",
+    "standard": "Standard",
+    "medium": "Medium",
+    "premium": "Premium"
+  },
+  "end_cta": "Prochain épisode : visite guidée du tableau de bord",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Dans ce tutoriel, on crée votre compte RapidoCMS et on choisit votre formule. Comptez deux minutes."
+    },
+    {
+      "key": "compte",
+      "text": "Sur la page d'inscription, renseignez le nom et le prénom du gérant, votre adresse e-mail, puis un mot de passe solide : au moins huit caractères, avec une majuscule, un chiffre et un symbole."
+    },
+    {
+      "key": "valider",
+      "text": "Après la vérification anti-robot, cliquez sur S'inscrire."
+    },
+    {
+      "key": "email",
+      "text": "RapidoCMS vous envoie un e-mail de confirmation. Ouvrez-le et cliquez sur le lien. Vous ne l'avez pas reçu ? Le bouton Renvoyer vous en envoie un nouveau."
+    },
+    {
+      "key": "entreprise",
+      "text": "Deuxième étape : votre entreprise. Indiquez son nom, son adresse e-mail et son numéro SIRET, puis validez."
+    },
+    {
+      "key": "formules",
+      "text": "Vous arrivez sur le choix de l'abonnement. Quatre formules : Essai, Standard, Medium et Premium. Elles diffèrent par les crédits IA, le stockage, le nombre de cartes connectées et de comptes de réseaux sociaux."
+    },
+    {
+      "key": "periodes",
+      "text": "Les formules payantes se règlent au mois ou à l'année, et acceptent un code promo."
+    },
+    {
+      "key": "essai",
+      "text": "Pour découvrir l'outil, commencez par l'Essai : il est gratuit pendant trente jours."
+    },
+    {
+      "key": "active",
+      "text": "Cliquez sur Acheter : c'est activé, et vous recevez cinq euros de crédits pour tester l'IA."
+    },
+    {
+      "key": "liste",
+      "text": "Votre abonnement actif et sa date d'expiration s'affichent ici, avec l'historique, vos packs et vos dépenses de crédits. Le bouton Mettre à jour abonnement permet de changer de formule."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on fait le tour du tableau de bord. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "compte",
+      "label": "Votre compte",
+      "zone": "form",
+      "fill": [
+        [
+          "input[name=\"nom\"]",
+          "Durand"
+        ],
+        [
+          "input[name=\"prenom\"]",
+          "Camille"
+        ],
+        [
+          "input[name=\"email\"]",
+          "camille.durand@atelier-camille.test"
+        ],
+        [
+          "input[name=\"password\"]",
+          "Atelier-Rapido-2026"
+        ],
+        [
+          "input[name=\"password_confirmation\"]",
+          "Atelier-Rapido-2026"
+        ]
+      ]
+    },
+    {
+      "at": "valider",
+      "eval": "captchaCallback('demo')",
+      "click": "#register-btn"
+    },
+    {
+      "at": "email",
+      "label": "Confirmer son e-mail",
+      "hover": "button:has-text(\"Renvoyer\")",
+      "zone": "form"
+    },
+    {
+      "at": "entreprise",
+      "label": "Votre entreprise",
+      "goto": "/confirm-email/camille.durand@atelier-camille.test",
+      "zone": "form",
+      "fill": [
+        [
+          "input[name=\"nom\"]",
+          "Atelier Camille"
+        ],
+        [
+          "input[name=\"email\"]",
+          "contact@atelier-camille.test"
+        ],
+        [
+          "input[name=\"siret\"]",
+          "12345678900029"
+        ]
+      ]
+    },
+    {
+      "at": "formules",
+      "label": "Les formules",
+      "click": "button:has-text(\"S'inscrire\")",
+      "zone": [
+        255,
+        280,
+        1400,
+        800
+      ]
+    },
+    {
+      "at": "periodes",
+      "label": "Mois, année, code promo",
+      "hover": "input[name=\"code_promo\"]",
+      "zone": [
+        795,
+        295,
+        330,
+        580
+      ]
+    },
+    {
+      "at": "essai",
+      "label": "L'Essai gratuit",
+      "hover": "button:has-text(\"Acheter\")",
+      "zone": [
+        370,
+        295,
+        235,
+        455
+      ]
+    },
+    {
+      "at": "active",
+      "click": "button:has-text(\"Acheter\")",
+      "zone": [
+        255,
+        120,
+        1420,
+        190
+      ]
+    },
+    {
+      "at": "liste",
+      "label": "Votre abonnement",
+      "hover": "a:has-text(\"Mettre à jour abonnement\")",
+      "zone": [
+        255,
+        170,
+        1400,
+        360
+      ]
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ],
+  "thumb_shot": "fin.png",
+  "type_delay": 18
+}

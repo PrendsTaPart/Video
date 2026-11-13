@@ -1,0 +1,37 @@
+{
+  "id": "CMS02",
+  "product": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "title": "Visite guidée du tableau de bord",
+  "em": "tableau de bord",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "fixes": { "TikTok": "TikTok", "Tiktok": "TikTok", "LinkedIn": "LinkedIn", "Linkedin": "LinkedIn" },
+  "end_cta": "Prochain épisode : connecter Instagram et Facebook",
+  "start_path": "/dashboard/tableau-de-bord",
+  "paragraphs": [
+    { "key": "intro", "text": "Bienvenue dans RapidoCMS. Dans ce tutoriel, on fait le tour du tableau de bord : c'est votre point de départ pour piloter vos réseaux sociaux." },
+    { "key": "reseaux", "text": "En haut, les statistiques de vos réseaux : Facebook, LinkedIn, Instagram et TikTok. Pour chacun, vous voyez les J'aime, les commentaires, les partages, le taux d'engagement et le nombre de publications." },
+    { "key": "abonnement", "text": "Juste en dessous, votre abonnement : pour chaque fonctionnalité, ce que vous avez utilisé et ce qu'il vous reste, comme les cartes de visite connectées ou les comptes de réseaux sociaux." },
+    { "key": "credits", "text": "Puis la consommation de vos crédits. Votre solde est affiché en haut de l'écran : un clic dessus permet d'acheter un pack de crédits." },
+    { "key": "menu", "text": "Le menu de gauche est organisé en trois parties. CMS, avec le calendrier et l'historique de vos publications. Communication, avec vos réseaux sociaux et vos campagnes. Et Éditeur, avec les templates, la carte digitale, la bibliothèque et vos prompts." },
+    { "key": "profil", "text": "Le menu de votre profil donne accès aux paramètres, à vos abonnements, aux tutoriels et au contact." },
+    { "key": "aide", "text": "Enfin, le bouton d'information, à droite, ouvre une courte vidéo d'aide sur l'écran en cours, et l'assistant en bas à droite vous met en relation avec le service client." },
+    { "key": "outro", "text": "Dans le prochain tutoriel, on connecte vos comptes Instagram et Facebook. À tout de suite !" }
+  ],
+  "scenes": [
+    { "at": "intro", "wait": 0.3 },
+    { "at": "reseaux", "label": "Statistiques des réseaux", "zone": "Statistiques réseaux sociaux" },
+    { "at": "abonnement", "label": "Votre abonnement", "scroll": "Statistiques d’abonnements", "zone": "Statistiques d’abonnements" },
+    { "at": "credits", "label": "Vos crédits", "scroll": "Statistiques du crédits", "zone": "Statistiques du crédits" },
+    { "at": "menu", "label": "Le menu", "top": true, "hover": "a[href$=\"/dashboard/calendrier\"]", "zone": "#layout-menu" },
+    { "at": "profil", "label": "Votre profil", "click": "text=Léa Martin", "zone": ".dropdown-menu.show" },
+    { "at": "aide", "label": "Aide et assistance", "click": "h1:has-text(\"Tableau de bord\")", "hover": "button.btn-info", "zone": [1860, 120, 60, 80] },
+    { "at": "outro", "wait": 0.3 }
+  ],
+  "thumb_shot": "fin.png"
+}

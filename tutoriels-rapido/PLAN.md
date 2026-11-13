@@ -132,12 +132,12 @@ continue avec les sections B (RapidoCMS) puis C (RapidoRH), puis D. Reprendre la
 ## B. RapidoCMS — un tutoriel par onglet / écran
 
 - [ ] CMS01 — Créer son compte et choisir un pack
-- [ ] CMS02 — Visite guidée du tableau de bord
-- [ ] CMS03 — Connecter Instagram et Facebook
-- [ ] CMS04 — Connecter LinkedIn
-- [ ] CMS05 — Connecter TikTok
-- [ ] CMS06 — Intégrations
-- [ ] CMS07 — Créer son kit de marque
+- [x] CMS02 — Visite guidée du tableau de bord
+- [ ] CMS03 — Connecter ses réseaux sociaux (Facebook, Instagram, LinkedIn, TikTok)
+- [~] CMS04 — Connecter LinkedIn → fusionné dans CMS03 (un seul écran, quatre panneaux)
+- [~] CMS05 — Connecter TikTok → fusionné dans CMS03
+- [ ] CMS06 — Créer son kit de marque
+- [ ] CMS07 — Les clés d'API et les intégrations (Zapier, Make, n8n)
 - [ ] CMS08 — Rédiger un post avec l'IA
 - [ ] CMS09 — Générer un visuel IA
 - [ ] CMS10 — Transformer une photo (image vers image)
@@ -181,7 +181,7 @@ continue avec les sections B (RapidoCMS) puis C (RapidoRH), puis D. Reprendre la
 ## D. Formations métier (avec Rapido et l'IA)
 
 ### Marketing & communication
-- [ ] F01 — Construire sa ligne éditoriale en 1 heure avec l'IA
+- [x] F01 — Construire sa ligne éditoriale en 1 heure avec l'IA
 - [ ] F02 — Un mois de contenus en une après-midi (RapidoCMS)
 - [ ] F03 — Écrire un post qui engage : structure et accroches
 - [ ] F04 — Visuels de marque cohérents avec un kit de marque

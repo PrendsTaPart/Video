@@ -1,0 +1,138 @@
+{
+  "id": "CMS07",
+  "product": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "title": "Les clés d'API et les intégrations",
+  "em": "intégrations",
+  "tag": "2 min · Avancé",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/dashboard/parametres",
+  "fixes": {
+    "API": "API",
+    "Zapier": "Zapier",
+    "RCMS": "RCMS"
+  },
+  "end_cta": "Prochain épisode : rédiger un post avec l'IA",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Dans ce tutoriel, on relie RapidoCMS à vos autres outils, comme Zapier, Make ou n8n, grâce aux clés d'API."
+    },
+    {
+      "key": "acces",
+      "text": "Dans les paramètres, ouvrez l'onglet Intégration API. Le tableau liste vos clés : leur titre, leurs permissions et leur date d'expiration."
+    },
+    {
+      "key": "generer",
+      "text": "Cliquez sur Générer un token, et donnez-lui un titre qui dit à quoi il sert."
+    },
+    {
+      "key": "scopes",
+      "text": "Cochez ensuite uniquement les permissions nécessaires : lister vos comptes, gérer vos brouillons, publier, ou envoyer des fichiers. Moins une clé en fait, plus elle est sûre."
+    },
+    {
+      "key": "expiration",
+      "text": "Choisissez une date d'expiration, puis cliquez sur Générer."
+    },
+    {
+      "key": "secret",
+      "text": "Votre clé complète s'affiche alors : copiez-la et gardez-la en lieu sûr. Dans le tableau, elle reste masquée, et vous pouvez la supprimer à tout moment."
+    },
+    {
+      "key": "doc",
+      "text": "Le bouton Documentation détaille l'authentification, les permissions et chaque route disponible, avec des exemples de réponses."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on rédige un post avec l'IA. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "acces",
+      "label": "Intégration API",
+      "click": ".nav-link:has-text(\"Intégration API\")",
+      "zone": [
+        300,
+        240,
+        1320,
+        210
+      ]
+    },
+    {
+      "at": "generer",
+      "label": "Générer un token",
+      "click": "button:has-text(\"Générer un token\")"
+    },
+    {
+      "at": "generer",
+      "fill": [
+        [
+          ".modal.show input[placeholder^=\"Ex.\"]",
+          "Automatisation n8n"
+        ]
+      ],
+      "zone": ".modal.show .modal-content"
+    },
+    {
+      "at": "scopes",
+      "label": "Les permissions",
+      "click": ".modal.show label:has-text(\"list_accounts\")"
+    },
+    {
+      "at": "scopes",
+      "click": ".modal.show label:has-text(\"list_drafts\")"
+    },
+    {
+      "at": "scopes",
+      "click": ".modal.show label:has-text(\"add_draft\")",
+      "zone": ".modal.show .modal-content"
+    },
+    {
+      "at": "expiration",
+      "label": "Expiration",
+      "hover": ".modal.show input[type=\"date\"]",
+      "zone": ".modal.show .modal-content",
+      "fill": [
+        [
+          ".modal.show input[type=\"date\"]",
+          "2027-03-31"
+        ]
+      ]
+    },
+    {
+      "at": "secret",
+      "label": "Un secret à copier",
+      "click": ".modal.show button:has-text(\"Générer\")",
+      "zone": ".modal.show .modal-content"
+    },
+    {
+      "at": "doc",
+      "label": "La documentation",
+      "click": ".modal.show button:has-text(\"Fermer\")"
+    },
+    {
+      "at": "doc",
+      "click": "a:has-text(\"Documentation\")",
+      "zone": "main"
+    },
+    {
+      "at": "doc",
+      "eval": "document.body.innerHTML=document.body.innerHTML.split('http://127.0.0.1:8125').join('https://cms.rapidosoftware.com')",
+      "wait": 0.3
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ],
+  "thumb_shot": "fin.png"
+}

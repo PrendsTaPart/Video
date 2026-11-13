@@ -1,0 +1,175 @@
+{
+  "id": "CMS06",
+  "product": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "title": "Créer son kit de marque",
+  "em": "kit de marque",
+  "tag": "2 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/dashboard/parametres",
+  "fixes": {},
+  "end_cta": "Prochain épisode : les clés d'API",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Dans ce tutoriel, on crée votre kit de marque : toute votre identité au même endroit, que votre assistant IA peut consulter quand vous connectez RapidoCMS à Claude."
+    },
+    {
+      "key": "acces",
+      "text": "Dans les paramètres, ouvrez l'onglet Entreprise, puis Ma marque."
+    },
+    {
+      "key": "ajouter",
+      "text": "Cliquez sur Ajouter une marque, donnez-lui un nom, puis cliquez sur Commencer."
+    },
+    {
+      "key": "liste",
+      "text": "Votre marque apparaît dans la liste. Le menu Actions permet de la modifier ou de la supprimer."
+    },
+    {
+      "key": "infos",
+      "text": "Dans sa fiche, renseignez d'abord les informations : la langue officielle, le site web et votre slogan."
+    },
+    {
+      "key": "charte",
+      "text": "Puis la charte graphique : votre logo, la police de vos textes, et les couleurs de votre marque, ajoutées une à une avec le bouton plus."
+    },
+    {
+      "key": "images",
+      "text": "Les images de marque s'ajoutent depuis la bibliothèque. Cliquez enfin sur Modifier pour enregistrer."
+    },
+    {
+      "key": "multi",
+      "text": "Vous gérez plusieurs marques ? Créez une fiche pour chacune : chaque marque garde sa propre charte."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on génère des clés d'API pour relier RapidoCMS à vos autres outils. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 7
+    },
+    {
+      "at": "intro",
+      "click": ".nav-link:has-text(\"Entreprise\")"
+    },
+    {
+      "at": "acces",
+      "click": "text=Ma marque",
+      "zone": [
+        312,
+        305,
+        1296,
+        360
+      ],
+      "label": "Ma marque"
+    },
+    {
+      "at": "ajouter",
+      "label": "Ajouter une marque",
+      "click": "button:has-text(\"Ajouter une marque\")",
+      "fill": [
+        [
+          ".modal.show input[name=\"nom\"]",
+          "Studio Lumière"
+        ]
+      ],
+      "zone": ".modal.show .modal-content"
+    },
+    {
+      "at": "liste",
+      "label": "La liste des marques",
+      "click": ".modal.show button:has-text(\"Commencer\")"
+    },
+    {
+      "at": "liste",
+      "click": ".nav-link:has-text(\"Entreprise\")"
+    },
+    {
+      "at": "liste",
+      "click": "text=Ma marque",
+      "hover": "td [data-bs-toggle=dropdown]",
+      "zone": [
+        312,
+        305,
+        1296,
+        360
+      ]
+    },
+    {
+      "at": "infos",
+      "label": "Les informations",
+      "click": "td [data-bs-toggle=dropdown]"
+    },
+    {
+      "at": "infos",
+      "click": ".dropdown-menu.show >> text=Edit",
+      "fill": [
+        [
+          ".modal.show input[name=\"langue\"]",
+          "Français"
+        ],
+        [
+          ".modal.show input[name=\"site_web\"]",
+          "studio-lumiere.test"
+        ],
+        [
+          ".modal.show input[name=\"slogan\"]",
+          "La lumière qui raconte votre histoire"
+        ]
+      ],
+      "zone": [
+        580,
+        120,
+        760,
+        260
+      ]
+    },
+    {
+      "at": "charte",
+      "label": "La charte graphique",
+      "select": [
+        [
+          ".modal.show select[name=\"font_family\"]",
+          "Georgia"
+        ]
+      ],
+      "hover": ".modal.show label:has-text(\"+\")",
+      "zone": [
+        580,
+        390,
+        760,
+        420
+      ]
+    },
+    {
+      "at": "images",
+      "label": "Images de marque",
+      "hover": ".modal.show button:has-text(\"Modifier\")",
+      "zone": [
+        580,
+        820,
+        760,
+        200
+      ]
+    },
+    {
+      "at": "multi",
+      "click": ".modal.show .btn-close",
+      "zone": "Liste de vos marques"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ],
+  "thumb_shot": "fin.png",
+  "type_delay": 25
+}

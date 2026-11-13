@@ -1,0 +1,34 @@
+{
+  "id": "F02",
+  "product": "cms",
+  "kicker": "Formation · Marketing",
+  "title": "Un mois de contenus en une après-midi",
+  "em": "une après-midi",
+  "tag": "3 min · Méthode",
+  "intro": 3.0,
+  "outro": 4.5,
+  "end_cta": "Prochaine formation : écrire un post qui engage",
+  "paragraphs": [
+    { "key": "intro", "text": "Douze publications, rédigées, illustrées et programmées en une seule après-midi. C'est possible, à condition de travailler par lots. Voici la méthode, avec RapidoCMS." },
+    { "key": "principe", "text": "Le principe est simple : on ne crée plus un post le matin même. On regroupe chaque tâche en un seul bloc : d'abord toutes les idées, puis tous les textes, puis tous les visuels, et enfin la programmation." },
+    { "key": "idees", "text": "Bloc un, trente minutes : les idées. Reprenez vos piliers de contenu et demandez à l'IA trois idées par pilier. Gardez les douze meilleures, une par créneau du mois." },
+    { "key": "prompt", "text": "Plus votre demande est précise, meilleures sont les idées : votre métier, votre ville, votre cible et le ton souhaité." },
+    { "key": "textes", "text": "Bloc deux, une heure : les textes. Pour chaque idée, générez un brouillon dans RapidoCMS, puis relisez-le à voix haute. Ajoutez une anecdote vraie : c'est elle qui rend le post unique." },
+    { "key": "visuels", "text": "Bloc trois, une heure : les visuels. Alternez vos propres photos et des visuels générés par l'IA, toujours aux couleurs de votre marque." },
+    { "key": "programmation", "text": "Bloc quatre, trente minutes : la programmation. Placez chaque brouillon dans le calendrier de RapidoCMS, sur les bons réseaux, aux bons horaires. Ensuite, vous n'avez plus rien à faire." },
+    { "key": "conseils", "text": "Trois conseils pour finir. Gardez deux créneaux libres pour l'actualité. Vérifiez vos statistiques chaque fin de mois. Et recyclez les posts qui ont le mieux marché." },
+    { "key": "recap", "text": "Les idées, les textes, les visuels, la programmation : trois heures par mois, et vos réseaux vivent tout seuls." },
+    { "key": "outro", "text": "Dans la prochaine formation, on apprend à écrire un post qui engage vraiment. À tout de suite !" }
+  ],
+  "slides": [
+    { "at": "intro", "type": "title", "kicker": "Marketing · Production", "title": "12 posts en une après-midi", "em": "une après-midi" },
+    { "at": "principe", "type": "compare", "title": "Travailler par lots", "em": "par lots", "left": ["Au fil de l'eau", "Une idée le matin", "Un texte à la hâte", "Un visuel au dernier moment"], "right": ["Par lots", "Toutes les idées", "Tous les textes", "Tous les visuels, puis la programmation"] },
+    { "at": "idees", "type": "points", "title": "Bloc 1 · Les idées · 30 min", "em": "Les idées", "items": ["Vos piliers de contenu", "3 idées par pilier avec l'IA", "Les 12 meilleures", "Une par créneau du mois"] },
+    { "at": "prompt", "type": "prompt", "title": "Une demande précise", "em": "précise", "prompt": "Je suis fleuriste à Lyon, cible : actifs de 30-45 ans. Donne-moi 3 idées de posts « conseils » pour novembre, ton chaleureux.", "answer": ["1. Faire durer un bouquet deux semaines : 4 gestes simples", "2. Les fleurs de saison de novembre et leur signification", "3. Composer un centre de table pour un dîner entre amis"] },
+    { "at": "textes", "type": "points", "title": "Bloc 2 · Les textes · 1 h", "em": "Les textes", "items": ["Un brouillon par idée dans RapidoCMS", "Relecture à voix haute", "Une anecdote vraie", "Un appel à l'action clair"] },
+    { "at": "visuels", "type": "points", "title": "Bloc 3 · Les visuels · 1 h", "em": "Les visuels", "items": ["Vos vraies photos", "Des visuels générés par l'IA", "Aux couleurs de votre marque", "Un format par réseau"] },
+    { "at": "programmation", "type": "steps", "title": "Bloc 4 · La programmation · 30 min", "em": "La programmation", "items": ["Brouillons validés", "Placés dans le calendrier", "Bons réseaux, bons horaires", "Publication automatique"] },
+    { "at": "conseils", "type": "points", "title": "Trois conseils", "em": "conseils", "items": ["2 créneaux libres pour l'actualité", "Statistiques en fin de mois", "Recycler les meilleurs posts"] },
+    { "at": "recap", "type": "takeaway", "title": "3 heures par mois, et vos réseaux vivent tout seuls", "em": "tout seuls" }
+  ]
+}

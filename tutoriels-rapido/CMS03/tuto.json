@@ -1,0 +1,142 @@
+{
+  "id": "CMS03",
+  "product": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "title": "Connecter ses réseaux sociaux",
+  "em": "réseaux sociaux",
+  "tag": "2 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/dashboard/tableau-de-bord",
+  "fixes": {
+    "TikTok": "TikTok",
+    "Tiktok": "TikTok",
+    "tiktok": "TikTok",
+    "LinkedIn": "LinkedIn",
+    "Linkedin": "LinkedIn",
+    "linkedin": "LinkedIn"
+  },
+  "end_cta": "Prochain épisode : créer son kit de marque",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Dans ce tutoriel, on connecte vos réseaux sociaux à RapidoCMS : Facebook, Instagram, LinkedIn et TikTok. C'est ce qui vous permet ensuite d'y publier et de suivre vos statistiques."
+    },
+    {
+      "key": "acces",
+      "text": "Ouvrez les paramètres depuis le menu de votre profil, puis l'onglet Configuration compte."
+    },
+    {
+      "key": "facebook",
+      "text": "Commencez par Facebook. Attention : RapidoCMS publie sur vos pages Facebook, pas sur votre profil personnel. Cliquez sur Associer une page Facebook, connectez-vous dans la fenêtre de Facebook, puis choisissez les pages à ajouter."
+    },
+    {
+      "key": "instagram",
+      "text": "Pour Instagram, votre compte doit être relié à une page Facebook déjà connectée à Rapido. Connectez donc Facebook en premier : vos comptes Instagram apparaîtront ensuite ici."
+    },
+    {
+      "key": "linkedin",
+      "text": "Sur LinkedIn, vous pouvez associer votre profil personnel et vos pages entreprise, séparément."
+    },
+    {
+      "key": "tiktok",
+      "text": "Enfin, TikTok : cliquez sur Associer un compte TikTok, puis autorisez RapidoCMS."
+    },
+    {
+      "key": "limite",
+      "text": "Le nombre de comptes que vous pouvez connecter dépend de votre formule. Vous le retrouvez sur le tableau de bord, avec ce qu'il vous reste."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on crée votre kit de marque. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 6.5
+    },
+    {
+      "at": "intro",
+      "click": "text=Léa Martin"
+    },
+    {
+      "at": "acces",
+      "click": "a.dropdown-item:has-text(\"Paramètres\")",
+      "label": "Les paramètres"
+    },
+    {
+      "at": "acces",
+      "click": ".nav-link:has-text(\"Configuration compte\")",
+      "zone": [
+        288,
+        207,
+        1344,
+        577
+      ]
+    },
+    {
+      "at": "facebook",
+      "label": "Facebook",
+      "click": "img[src$=\"Facebook.png\"]",
+      "hover": "button:has-text(\"Associer une page Facebook\")",
+      "zone": [
+        752,
+        250,
+        856,
+        494
+      ]
+    },
+    {
+      "at": "instagram",
+      "label": "Instagram",
+      "click": "img[src$=\"Instagram.png\"]",
+      "zone": [
+        752,
+        250,
+        856,
+        494
+      ]
+    },
+    {
+      "at": "linkedin",
+      "label": "LinkedIn",
+      "click": "img[src$=\"LinkedIn.png\"]",
+      "hover": "button:has-text(\"Associer un compte LinkedIn\")",
+      "zone": [
+        752,
+        250,
+        856,
+        494
+      ]
+    },
+    {
+      "at": "tiktok",
+      "label": "TikTok",
+      "click": "img[src$=\"tiktok.png\"]",
+      "hover": "button:has-text(\"Associer un compte TikTok\")",
+      "zone": [
+        752,
+        250,
+        856,
+        494
+      ]
+    },
+    {
+      "at": "limite",
+      "label": "Selon votre formule",
+      "goto": "/dashboard/tableau-de-bord",
+      "scroll": "Statistiques d’abonnements",
+      "zone": "Statistiques d’abonnements",
+      "wait": 1.2
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ],
+  "thumb_shot": "fin.png"
+}

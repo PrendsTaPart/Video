@@ -1,0 +1,36 @@
+{
+  "id": "F01",
+  "product": "cms",
+  "kicker": "Formation · Marketing",
+  "title": "Construire sa ligne éditoriale en 1 heure avec l'IA",
+  "em": "en 1 heure",
+  "tag": "3 min · Méthode",
+  "intro": 3.0,
+  "outro": 4.5,
+  "end_cta": "Prochaine formation : un mois de contenus en une après-midi",
+  "paragraphs": [
+    { "key": "intro", "text": "Publier sans ligne éditoriale, c'est improviser chaque matin. Dans cette formation, on construit la vôtre en une heure, avec l'aide de l'intelligence artificielle et de RapidoCMS." },
+    { "key": "definition", "text": "Une ligne éditoriale répond à quatre questions : à qui vous parlez, pour leur apporter quoi, sur quel ton, et à quel rythme. Sans elle, vos publications partent dans tous les sens. Avec elle, chaque post renforce votre image." },
+    { "key": "cible", "text": "Étape un, quinze minutes : votre cible. Décrivez votre client idéal : son métier, ses problèmes, ce qu'il cherche sur les réseaux." },
+    { "key": "prompt", "text": "Demandez à l'IA de vous proposer trois profils de clients, puis gardez celui qui ressemble le plus à vos meilleurs clients." },
+    { "key": "piliers", "text": "Étape deux, quinze minutes : vos piliers de contenu. Ce sont trois à cinq grands thèmes que vous traiterez en boucle : les coulisses, les conseils, les nouveautés, et la preuve sociale, c'est-à-dire les avis de vos clients." },
+    { "key": "ton", "text": "Étape trois, dix minutes : votre ton. Choisissez trois adjectifs, par exemple chaleureux, expert et local, et une courte liste de mots à éviter. Enregistrez-les dans un prompt réutilisable de RapidoCMS : chaque texte généré suivra ce ton." },
+    { "key": "rythme", "text": "Étape quatre, dix minutes : votre rythme. Mieux vaut trois posts par semaine pendant un an que dix posts une seule semaine. Fixez des jours précis, et tenez-les." },
+    { "key": "calendrier", "text": "Étape cinq, dix minutes : le calendrier. Associez un pilier à chaque jour : le lundi les coulisses, le mercredi un conseil, le vendredi une nouveauté. Demandez ensuite à l'IA un mois d'idées, et programmez-les dans le calendrier de RapidoCMS." },
+    { "key": "avant", "text": "Avant, vous cherchiez quoi publier chaque matin. Après, vous savez à l'avance quoi dire, à qui, et quand." },
+    { "key": "recap", "text": "Récapitulons : la cible, les piliers, le ton, le rythme et le calendrier. Une heure de travail, pour des mois de publications cohérentes." },
+    { "key": "outro", "text": "Dans la prochaine formation, on produit un mois de contenus en une après-midi. À tout de suite !" }
+  ],
+  "slides": [
+    { "at": "intro", "type": "title", "kicker": "Marketing · Communication", "title": "Une ligne éditoriale en une heure", "em": "en une heure" },
+    { "at": "definition", "type": "points", "title": "Quatre questions", "em": "Quatre", "items": ["À qui je parle ?", "Pour leur apporter quoi ?", "Sur quel ton ?", "À quel rythme ?"] },
+    { "at": "cible", "type": "points", "title": "Étape 1 · Votre cible", "em": "cible", "items": ["Son métier", "Ses problèmes", "Ce qu'elle cherche sur les réseaux", "Ce qui la fait acheter"] },
+    { "at": "prompt", "type": "prompt", "title": "Demandez à l'IA", "em": "l'IA", "prompt": "Je suis boulanger à Bordeaux. Propose-moi 3 profils de clients idéaux et ce qu'ils attendent de moi sur Instagram.", "answer": ["1. Les familles du quartier : idées de goûters, horaires, nouveautés", "2. Les actifs pressés : formules du midi, commande à l'avance", "3. Les gourmands curieux : coulisses du fournil, recettes de saison"] },
+    { "at": "piliers", "type": "points", "title": "Étape 2 · Vos piliers", "em": "piliers", "items": ["Les coulisses", "Les conseils", "Les nouveautés", "La preuve sociale"] },
+    { "at": "ton", "type": "points", "title": "Étape 3 · Votre ton", "em": "ton", "items": ["Chaleureux", "Expert", "Local", "Mots à éviter : « promo », « pas cher »"] },
+    { "at": "rythme", "type": "takeaway", "title": "3 posts par semaine pendant un an > 10 posts une seule semaine", "em": "pendant un an" },
+    { "at": "calendrier", "type": "steps", "title": "Étape 5 · Le calendrier", "em": "calendrier", "items": ["Lundi : coulisses", "Mercredi : conseil", "Vendredi : nouveauté", "Programmé dans RapidoCMS"] },
+    { "at": "avant", "type": "compare", "title": "Ce qui change", "em": "change", "left": ["Avant", "Quoi publier aujourd'hui ?", "Des posts sans lien entre eux", "Des semaines sans rien"], "right": ["Après", "Un plan pour le mois", "Une image cohérente", "Un rythme tenu"] },
+    { "at": "recap", "type": "steps", "title": "Récapitulatif", "em": "Récapitulatif", "items": ["Cible", "Piliers", "Ton", "Rythme", "Calendrier"] }
+  ]
+}

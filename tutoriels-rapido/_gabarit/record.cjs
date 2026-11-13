@@ -5,7 +5,7 @@
 //
 // Une scène (tuto.json → "scenes") :
 //   { "at": "clé du paragraphe", "goto": "/chemin" (optionnel), "scroll": "Titre exact" | "css",
-//     "hover": "css", "click": "css", "fill": [["css","texte"]...], "wait": 0.8,
+//     "eval": "js exécuté dans la page avant le clic", "hover": "css", "click": "css", "fill": [["css","texte"]...], "select": [["css","libellé"]], "wait": 0.8,
 //     "zone": "css" | "Titre exact" | [x,y,w,h], "label": "Libellé du chapitre", "zoom": 1.25 }
 const fs = require('fs');
 const path = require('path');
@@ -46,6 +46,15 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
         }).catch(() => {});
     };
     page.on('load', installCursor);
+    // Réponses simulées (IA, services externes) : interceptées dans le navigateur, le code de l'application n'est pas modifié.
+    //   "mocks": [{ "url": "**/api/posts/generate_text", "delay": 2.5, "json": {...} | "file": "chemin/local.png" }]
+    for (const m of cfg.mocks || []) {
+        await page.route(m.url, async (route) => {
+            if (m.delay) await new Promise((r) => setTimeout(r, m.delay * 1000));
+            if (m.file) return route.fulfill({ path: path.isAbsolute(m.file) ? m.file : path.join(EP, m.file) });
+            return route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(m.json) });
+        });
+    }
 
     const t0 = Date.now();
     await page.goto(`${BASE}${cfg.start_path || '/dashboard'}`, { waitUntil: 'networkidle' });
@@ -102,23 +111,32 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
     const zones = {};
     for (const sc of cfg.scenes) {
         await at(T[sc.at]);
-        if (sc.goto) { await page.goto(`${BASE}${sc.goto}`, { waitUntil: 'networkidle' }).catch(() => {}); await installCursor(); await page.waitForTimeout(900); }
+        if (sc.goto) { await page.goto(`${BASE}${sc.goto}`, { waitUntil: 'load', timeout: 15000 }).catch(() => {}); await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => {}); await installCursor(); await page.waitForTimeout(900); }
+        if (sc.eval) await page.evaluate(sc.eval).catch((e) => console.warn('eval', e.message));
         if (sc.click) {
             const el = await resolve(sc.click);
-            if (el) { await el.scrollIntoViewIfNeeded().catch(() => {}); const b = await el.boundingBox(); if (b) await moveTo(b.x + Math.min(b.width / 2, 120), b.y + b.height / 2); await page.waitForTimeout(250); await el.click().catch(() => {}); await page.waitForLoadState('networkidle').catch(() => {}); await installCursor(); await page.waitForTimeout(800); }
+            if (el) { await el.scrollIntoViewIfNeeded().catch(() => {}); const b = await el.boundingBox(); if (b) await moveTo(b.x + Math.min(b.width / 2, 120), b.y + b.height / 2); await page.waitForTimeout(250); await el.click().catch(() => {}); await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => {}); await installCursor(); await page.waitForTimeout(800); }
         }
         if (sc.top) { await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' })); await page.waitForTimeout(700); }
         if (sc.scroll) await scrollTo(sc.scroll);
         for (const [sel, txt] of sc.fill || []) {
             const el = await resolve(sel); if (!el) continue;
             const b = await el.boundingBox(); if (b) await moveTo(b.x + 30, b.y + b.height / 2);
+            const typ = await el.getAttribute('type');
+            if (typ === 'date' || typ === 'datetime-local' || typ === 'time') { await el.fill(txt).catch(() => {}); await page.waitForTimeout(400); continue; }
             await el.click().catch(() => {}); await el.fill('').catch(() => {});
-            await el.pressSequentially(txt, { delay: 45 }).catch(() => {});
+            await el.pressSequentially(txt, { delay: cfg.type_delay || 45 }).catch(() => {});
             await page.waitForTimeout(250);
+        }
+        for (const [sel, label] of sc.select || []) {
+            const el = await resolve(sel); if (!el) continue;
+            const b = await el.boundingBox(); if (b) await moveTo(b.x + 40, b.y + b.height / 2);
+            await page.waitForTimeout(250); await el.selectOption({ label }).catch(() => {}); await page.waitForTimeout(400);
         }
         if (sc.hover) { const el = await resolve(sc.hover); if (el) { await el.evaluate((n) => { const r = n.getBoundingClientRect(); if (r.top < 90 || r.bottom > window.innerHeight - 40) window.scrollBy({ top: r.top - window.innerHeight / 2, behavior: 'smooth' }); }); await page.waitForTimeout(700); const b = await el.boundingBox(); if (b) await moveTo(b.x + Math.min(b.width / 2, 120), b.y + b.height / 2); } }
         if (sc.wait) await page.waitForTimeout(sc.wait * 1000);
         if (sc.zone) { const z = await zoneOf(sc.zone, sc.zone_closest); if (z) zones[sc.at] = z; }
+        const lag = (Date.now() - t0) / 1000 - ready - T[sc.at]; if (lag > 4) console.warn(`retard scène ${sc.at} : ${lag.toFixed(1)} s`);
         if (!sc.hover && !sc.click && zones[sc.at]) { const [x, y, w, h] = zones[sc.at]; await moveTo(x + w * 0.45, y + Math.min(h * 0.5, 300)); }
     }
     await at(T.end + 0.8);

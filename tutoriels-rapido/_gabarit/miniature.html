@@ -77,7 +77,9 @@
   if (em && title.includes(em)) html = esc(title).replace(esc(em), '<em>' + esc(em) + '</em>');
   document.getElementById('title').innerHTML = html;
   const shot = q.get('shot'); const img = document.getElementById('shot');
-  if (shot) img.src = shot; else img.remove();
+  if (shot) img.src = shot;
+  else { img.src = 'logo_icon.png'; img.style.cssText = 'width:62%;height:auto;object-fit:contain;margin:60px auto;display:block;filter:drop-shadow(0 30px 60px rgba(0,0,0,.6))';
+         document.querySelector('.screen').style.background = 'radial-gradient(circle at 50% 40%, color-mix(in srgb, var(--a) 45%, #12151f), #0b0d14 70%)'; }
 </script>
 </body>
 </html>

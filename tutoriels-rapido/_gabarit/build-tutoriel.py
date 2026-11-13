@@ -94,6 +94,12 @@ for i in range(len(subs) - 1):
     if subs[i][1] > subs[i + 1][0]:
         subs[i] = (subs[i][0], subs[i + 1][0] - 0.02, subs[i][2])
 
+# Préférence : texte exact du script calé sur la transcription (pas de faute de transcription à l'écran)
+if cfg.get('paragraphs'):
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from subs import build_subs
+    subs = build_subs(cfg, words, INTRO)
+
 # ---------------------------------------------------------------- chapitres
 # Chapitres : « chapters » (zones fixes) ou « scenes » du tournage (zones mesurées dans captures/timing.json)
 measured = {}
