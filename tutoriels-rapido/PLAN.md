@@ -125,7 +125,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM33 — Agenda et rendez-vous
 - [ ] CRM34 — Visioconférence
 - [x] CRM35 — Tâches
-- [ ] CRM36 — Équipe commerciale et objectifs
+- [x] CRM36 — Équipe commerciale et objectifs
 - [ ] CRM37 — Stratégie commerciale assistée par IA
 - [ ] CRM38 — Statistiques et engagement
 - [ ] CRM39 — Documents et stockage
@@ -291,3 +291,14 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
 - [x] AG03 — Confier une routine à un agent
 - [x] AG04 — Le loop-engineering : des routines qui s'améliorent
 - [x] AG05 — Les KPI qui pilotent le loop-engineering
+
+## Session programmée 1/6 (14/11/2026, 19 h 30)
+- CRM35 « Les tâches de l'équipe » publié (refilmé une fois pour la synchronisation voix/image).
+- CRM36 « L'équipe commerciale et ses objectifs » publié (refilmé : premier rendu désynchronisé car tourné pendant
+  l'encodage 720p de CRM35 (machine saturée) → ne jamais tourner pendant un encodage ou un rendu.
+- Correctifs RapidoCRM (commits LOCAUX sur correctifs-tutoriels, non poussés — aucune GitHub Action) :
+  - Tâches : l'origine reste lisible si le workflow a été supprimé (withTrashed).
+  - Commerciaux (sécurité) : profil, édition, objectifs, disponibilité et suppression limités à la société
+    (avant : User::findOrFail / User::destroy sur n'importe quel identifiant) ; page objectifs qui plantait
+    sans objectifs ; jauge « 100 % atteints » sans objectif → 0 % + lien ; objectifs mensuels comparés aux
+    envois du mois ; ObjectifCommercialService partagé avec l'outil MCP update_commercial_objectifs.

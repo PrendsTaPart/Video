@@ -330,6 +330,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM35.png"
   },
   {
+    "id": "CRM36",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "L'équipe commerciale et ses objectifs",
+    "tag": "1 min · Débutant",
+    "duree_s": 63,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM36.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM36.png"
+  },
+  {
     "id": "CRM43",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM · IA",

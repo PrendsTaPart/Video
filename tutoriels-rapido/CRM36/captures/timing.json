@@ -1,0 +1,45 @@
+{
+  "voiceStartInCapture": 3.066,
+  "paragraphs": {
+    "intro": 0.11,
+    "liste": 9.71,
+    "profil": 15.71,
+    "objectifs": 26.31,
+    "disponibilite": 36.43,
+    "assistant": 44.42,
+    "outro": 50.51,
+    "end": 55.15
+  },
+  "zones": {
+    "liste": [
+      356,
+      88,
+      1468,
+      607
+    ],
+    "profil": [
+      852,
+      269,
+      948,
+      345
+    ],
+    "objectifs": [
+      380,
+      134,
+      1420,
+      451
+    ],
+    "disponibilite": [
+      852,
+      269,
+      948,
+      367
+    ],
+    "assistant": [
+      852,
+      269,
+      948,
+      345
+    ]
+  }
+}
