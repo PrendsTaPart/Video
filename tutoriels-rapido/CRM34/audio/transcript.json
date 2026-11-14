@@ -1,0 +1,734 @@
+[
+  {
+    "text": "Votre",
+    "start": 0.03,
+    "end": 0.27,
+    "id": "w0"
+  },
+  {
+    "text": "rendez-vous",
+    "start": 0.27,
+    "end": 0.87,
+    "id": "w1"
+  },
+  {
+    "text": "commercial",
+    "start": 0.87,
+    "end": 1.42,
+    "id": "w2"
+  },
+  {
+    "text": "commence",
+    "start": 1.42,
+    "end": 1.72,
+    "id": "w3"
+  },
+  {
+    "text": "et",
+    "start": 1.95,
+    "end": 1.98,
+    "id": "w4"
+  },
+  {
+    "text": "votre",
+    "start": 1.98,
+    "end": 2.24,
+    "id": "w5"
+  },
+  {
+    "text": "argumentaire",
+    "start": 2.24,
+    "end": 2.85,
+    "id": "w6"
+  },
+  {
+    "text": "est",
+    "start": 2.95,
+    "end": 3.1,
+    "id": "w7"
+  },
+  {
+    "text": "juste",
+    "start": 3.1,
+    "end": 3.46,
+    "id": "w8"
+  },
+  {
+    "text": "à",
+    "start": 3.46,
+    "end": 3.49,
+    "id": "w9"
+  },
+  {
+    "text": "côté",
+    "start": 3.55,
+    "end": 3.82,
+    "id": "w10"
+  },
+  {
+    "text": "du",
+    "start": 3.82,
+    "end": 3.92,
+    "id": "w11"
+  },
+  {
+    "text": "client.",
+    "start": 3.92,
+    "end": 4.46,
+    "id": "w12"
+  },
+  {
+    "text": "Dans",
+    "start": 4.5,
+    "end": 4.81,
+    "id": "w13"
+  },
+  {
+    "text": "Rapido",
+    "start": 4.81,
+    "end": 5.33,
+    "id": "w14"
+  },
+  {
+    "text": "CRM,",
+    "start": 5.33,
+    "end": 5.78,
+    "id": "w15"
+  },
+  {
+    "text": "la",
+    "start": 5.78,
+    "end": 5.89,
+    "id": "w16"
+  },
+  {
+    "text": "visioconférence",
+    "start": 5.89,
+    "end": 6.72,
+    "id": "w17"
+  },
+  {
+    "text": "affiche",
+    "start": 6.72,
+    "end": 7.04,
+    "id": "w18"
+  },
+  {
+    "text": "aussi",
+    "start": 7.12,
+    "end": 7.31,
+    "id": "w19"
+  },
+  {
+    "text": "vos",
+    "start": 7.41,
+    "end": 7.57,
+    "id": "w20"
+  },
+  {
+    "text": "stratégies",
+    "start": 7.57,
+    "end": 8.11,
+    "id": "w21"
+  },
+  {
+    "text": "de",
+    "start": 8.14,
+    "end": 8.24,
+    "id": "w22"
+  },
+  {
+    "text": "vente.",
+    "start": 8.24,
+    "end": 8.64,
+    "id": "w23"
+  },
+  {
+    "text": "Dans",
+    "start": 8.82,
+    "end": 8.99,
+    "id": "w24"
+  },
+  {
+    "text": "l'agenda,",
+    "start": 9.01,
+    "end": 9.56,
+    "id": "w25"
+  },
+  {
+    "text": "ouvrez",
+    "start": 9.56,
+    "end": 9.9,
+    "id": "w26"
+  },
+  {
+    "text": "le",
+    "start": 9.9,
+    "end": 9.96,
+    "id": "w27"
+  },
+  {
+    "text": "rendez-vous",
+    "start": 10.02,
+    "end": 10.54,
+    "id": "w28"
+  },
+  {
+    "text": "en",
+    "start": 10.73,
+    "end": 10.74,
+    "id": "w29"
+  },
+  {
+    "text": "visioconférence.",
+    "start": 10.74,
+    "end": 11.84,
+    "id": "w30"
+  },
+  {
+    "text": "Le",
+    "start": 11.87,
+    "end": 11.97,
+    "id": "w31"
+  },
+  {
+    "text": "lien",
+    "start": 11.97,
+    "end": 12.24,
+    "id": "w32"
+  },
+  {
+    "text": "Invité",
+    "start": 12.24,
+    "end": 12.64,
+    "id": "w33"
+  },
+  {
+    "text": "part",
+    "start": 12.64,
+    "end": 12.91,
+    "id": "w34"
+  },
+  {
+    "text": "chez",
+    "start": 12.91,
+    "end": 13.18,
+    "id": "w35"
+  },
+  {
+    "text": "votre",
+    "start": 13.18,
+    "end": 13.51,
+    "id": "w36"
+  },
+  {
+    "text": "client.",
+    "start": 13.51,
+    "end": 14.15,
+    "id": "w37"
+  },
+  {
+    "text": "Vous,",
+    "start": 14.2,
+    "end": 14.55,
+    "id": "w38"
+  },
+  {
+    "text": "vous",
+    "start": 14.55,
+    "end": 14.81,
+    "id": "w39"
+  },
+  {
+    "text": "rejoignez",
+    "start": 14.81,
+    "end": 15.34,
+    "id": "w40"
+  },
+  {
+    "text": "par",
+    "start": 15.41,
+    "end": 15.58,
+    "id": "w41"
+  },
+  {
+    "text": "le",
+    "start": 15.58,
+    "end": 15.7,
+    "id": "w42"
+  },
+  {
+    "text": "lien",
+    "start": 15.7,
+    "end": 15.92,
+    "id": "w43"
+  },
+  {
+    "text": "Organisateur.",
+    "start": 16.11,
+    "end": 16.96,
+    "id": "w44"
+  },
+  {
+    "text": "La",
+    "start": 17,
+    "end": 17.1,
+    "id": "w45"
+  },
+  {
+    "text": "salle",
+    "start": 17.1,
+    "end": 17.46,
+    "id": "w46"
+  },
+  {
+    "text": "s'ouvre",
+    "start": 17.46,
+    "end": 17.93,
+    "id": "w47"
+  },
+  {
+    "text": "dans",
+    "start": 17.96,
+    "end": 18.25,
+    "id": "w48"
+  },
+  {
+    "text": "Rapido",
+    "start": 18.25,
+    "end": 18.68,
+    "id": "w49"
+  },
+  {
+    "text": "CRM,",
+    "start": 18.68,
+    "end": 19.07,
+    "id": "w50"
+  },
+  {
+    "text": "avec",
+    "start": 19.12,
+    "end": 19.35,
+    "id": "w51"
+  },
+  {
+    "text": "la",
+    "start": 19.35,
+    "end": 19.48,
+    "id": "w52"
+  },
+  {
+    "text": "date,",
+    "start": 19.48,
+    "end": 19.81,
+    "id": "w53"
+  },
+  {
+    "text": "le",
+    "start": 19.91,
+    "end": 20,
+    "id": "w54"
+  },
+  {
+    "text": "titre",
+    "start": 20,
+    "end": 20.3,
+    "id": "w55"
+  },
+  {
+    "text": "du",
+    "start": 20.3,
+    "end": 20.42,
+    "id": "w56"
+  },
+  {
+    "text": "rendez-vous",
+    "start": 20.42,
+    "end": 21.08,
+    "id": "w57"
+  },
+  {
+    "text": "et",
+    "start": 21.08,
+    "end": 21.14,
+    "id": "w58"
+  },
+  {
+    "text": "votre",
+    "start": 21.14,
+    "end": 21.49,
+    "id": "w59"
+  },
+  {
+    "text": "client",
+    "start": 21.49,
+    "end": 21.75,
+    "id": "w60"
+  },
+  {
+    "text": "à",
+    "start": 21.8,
+    "end": 21.85,
+    "id": "w61"
+  },
+  {
+    "text": "l'écran.",
+    "start": 21.85,
+    "end": 22.44,
+    "id": "w62"
+  },
+  {
+    "text": "À",
+    "start": 22.47,
+    "end": 22.51,
+    "id": "w63"
+  },
+  {
+    "text": "droite,",
+    "start": 22.53,
+    "end": 23.09,
+    "id": "w64"
+  },
+  {
+    "text": "l'onglet",
+    "start": 23.09,
+    "end": 23.62,
+    "id": "w65"
+  },
+  {
+    "text": "Stratégie.",
+    "start": 23.69,
+    "end": 24.44,
+    "id": "w66"
+  },
+  {
+    "text": "Choisissez",
+    "start": 24.47,
+    "end": 24.9,
+    "id": "w67"
+  },
+  {
+    "text": "le",
+    "start": 24.9,
+    "end": 24.99,
+    "id": "w68"
+  },
+  {
+    "text": "produit",
+    "start": 24.99,
+    "end": 25.32,
+    "id": "w69"
+  },
+  {
+    "text": "dont",
+    "start": 25.32,
+    "end": 25.51,
+    "id": "w70"
+  },
+  {
+    "text": "vous",
+    "start": 25.51,
+    "end": 25.69,
+    "id": "w71"
+  },
+  {
+    "text": "parlez.",
+    "start": 25.69,
+    "end": 26.16,
+    "id": "w72"
+  },
+  {
+    "text": "Ici,",
+    "start": 26.2,
+    "end": 26.48,
+    "id": "w73"
+  },
+  {
+    "text": "le",
+    "start": 26.48,
+    "end": 26.61,
+    "id": "w74"
+  },
+  {
+    "text": "site",
+    "start": 26.61,
+    "end": 26.82,
+    "id": "w75"
+  },
+  {
+    "text": "Vitrine",
+    "start": 26.87,
+    "end": 27.32,
+    "id": "w76"
+  },
+  {
+    "text": "et",
+    "start": 27.32,
+    "end": 27.45,
+    "id": "w77"
+  },
+  {
+    "text": "ses",
+    "start": 27.45,
+    "end": 27.64,
+    "id": "w78"
+  },
+  {
+    "text": "stratégies",
+    "start": 27.64,
+    "end": 28.27,
+    "id": "w79"
+  },
+  {
+    "text": "apparaissent.",
+    "start": 28.32,
+    "end": 29.3,
+    "id": "w80"
+  },
+  {
+    "text": "Ouvrez-en",
+    "start": 29.33,
+    "end": 29.93,
+    "id": "w81"
+  },
+  {
+    "text": "une.",
+    "start": 29.93,
+    "end": 30.38,
+    "id": "w82"
+  },
+  {
+    "text": "La",
+    "start": 30.41,
+    "end": 30.49,
+    "id": "w83"
+  },
+  {
+    "text": "cible,",
+    "start": 30.49,
+    "end": 30.87,
+    "id": "w84"
+  },
+  {
+    "text": "l'offre",
+    "start": 30.87,
+    "end": 31.24,
+    "id": "w85"
+  },
+  {
+    "text": "et",
+    "start": 31.24,
+    "end": 31.35,
+    "id": "w86"
+  },
+  {
+    "text": "les",
+    "start": 31.35,
+    "end": 31.51,
+    "id": "w87"
+  },
+  {
+    "text": "arguments",
+    "start": 31.51,
+    "end": 32,
+    "id": "w88"
+  },
+  {
+    "text": "préparés",
+    "start": 32,
+    "end": 32.45,
+    "id": "w89"
+  },
+  {
+    "text": "par",
+    "start": 32.45,
+    "end": 32.61,
+    "id": "w90"
+  },
+  {
+    "text": "l'équipe",
+    "start": 32.61,
+    "end": 33.14,
+    "id": "w91"
+  },
+  {
+    "text": "restent",
+    "start": 33.14,
+    "end": 33.55,
+    "id": "w92"
+  },
+  {
+    "text": "sous",
+    "start": 33.55,
+    "end": 33.75,
+    "id": "w93"
+  },
+  {
+    "text": "vos",
+    "start": 33.81,
+    "end": 33.97,
+    "id": "w94"
+  },
+  {
+    "text": "yeux",
+    "start": 33.97,
+    "end": 34.22,
+    "id": "w95"
+  },
+  {
+    "text": "pendant",
+    "start": 34.22,
+    "end": 34.56,
+    "id": "w96"
+  },
+  {
+    "text": "tout",
+    "start": 34.56,
+    "end": 34.88,
+    "id": "w97"
+  },
+  {
+    "text": "l'échange.",
+    "start": 34.88,
+    "end": 35.52,
+    "id": "w98"
+  },
+  {
+    "text": "Autre",
+    "start": 35.56,
+    "end": 35.83,
+    "id": "w99"
+  },
+  {
+    "text": "stratégie",
+    "start": 35.83,
+    "end": 36.4,
+    "id": "w100"
+  },
+  {
+    "text": "pour",
+    "start": 36.4,
+    "end": 36.65,
+    "id": "w101"
+  },
+  {
+    "text": "passer",
+    "start": 36.65,
+    "end": 37.01,
+    "id": "w102"
+  },
+  {
+    "text": "à",
+    "start": 37.02,
+    "end": 37.09,
+    "id": "w103"
+  },
+  {
+    "text": "la",
+    "start": 37.09,
+    "end": 37.21,
+    "id": "w104"
+  },
+  {
+    "text": "suivante.",
+    "start": 37.21,
+    "end": 37.98,
+    "id": "w105"
+  },
+  {
+    "text": "Pour",
+    "start": 38.02,
+    "end": 38.19,
+    "id": "w106"
+  },
+  {
+    "text": "préparer",
+    "start": 38.21,
+    "end": 38.64,
+    "id": "w107"
+  },
+  {
+    "text": "ces",
+    "start": 38.64,
+    "end": 38.8,
+    "id": "w108"
+  },
+  {
+    "text": "stratégies,",
+    "start": 38.8,
+    "end": 39.48,
+    "id": "w109"
+  },
+  {
+    "text": "voyez",
+    "start": 39.48,
+    "end": 39.71,
+    "id": "w110"
+  },
+  {
+    "text": "le",
+    "start": 39.73,
+    "end": 39.74,
+    "id": "w111"
+  },
+  {
+    "text": "tutoriel",
+    "start": 39.93,
+    "end": 40.25,
+    "id": "w112"
+  },
+  {
+    "text": "sur",
+    "start": 40.25,
+    "end": 40.4,
+    "id": "w113"
+  },
+  {
+    "text": "les",
+    "start": 40.4,
+    "end": 40.55,
+    "id": "w114"
+  },
+  {
+    "text": "stratégies",
+    "start": 40.55,
+    "end": 41.06,
+    "id": "w115"
+  },
+  {
+    "text": "commerciales",
+    "start": 41.06,
+    "end": 41.68,
+    "id": "w116"
+  },
+  {
+    "text": "de",
+    "start": 41.68,
+    "end": 41.78,
+    "id": "w117"
+  },
+  {
+    "text": "vos",
+    "start": 41.78,
+    "end": 41.9,
+    "id": "w118"
+  },
+  {
+    "text": "produits.",
+    "start": 41.9,
+    "end": 42.58,
+    "id": "w119"
+  },
+  {
+    "text": "À",
+    "start": 42.61,
+    "end": 42.67,
+    "id": "w120"
+  },
+  {
+    "text": "bientôt!",
+    "start": 42.67,
+    "end": 43.55,
+    "id": "w121"
+  }
+]

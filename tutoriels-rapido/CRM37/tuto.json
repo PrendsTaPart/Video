@@ -13,7 +13,7 @@
   "start_path": "/offres",
   "type_delay": 30,
   "fixes": {},
-  "end_cta": "Prochain épisode : les statistiques et l'engagement",
+  "end_cta": "Prochain épisode : l'historique de tous vos échanges",
   "thumb_shot": "fin.png",
   "paragraphs": [
     {
@@ -38,11 +38,11 @@
     },
     {
       "key": "detail",
-      "text": "Ouvrez-la avec voir. Chacun y ajoute ses idées et ses retours du terrain, avec son nom, et vous joignez vos documents : argumentaire, présentation ou tarifs."
+      "text": "Ouvrez-la avec voir. Chacun y ajoute ses idées et ses retours du terrain, et vous joignez vos documents. Pendant vos rendez-vous en visioconférence, cette stratégie s'affiche à côté de votre client."
     },
     {
       "key": "outro",
-      "text": "Dans le prochain tutoriel, on mesure l'engagement de vos clients avec les statistiques. À tout de suite !"
+      "text": "Dans le prochain tutoriel, on retrouve tous les échanges avec vos clients dans l'historique. À tout de suite !"
     }
   ],
   "scenes": [

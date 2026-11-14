@@ -123,7 +123,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM31 — Salons et leads de salon
 - [x] CRM32 — Événements
 - [x] CRM33 — Agenda et rendez-vous
-- [ ] CRM34 — Visioconférence
+- [x] CRM34 — Visioconférence et stratégie à l’écran (publié)
 - [x] CRM35 — Tâches
 - [x] CRM36 — Équipe commerciale et objectifs
 - [x] CRM37 — Stratégies commerciales des produits (publié)
@@ -302,3 +302,13 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
     (avant : User::findOrFail / User::destroy sur n'importe quel identifiant) ; page objectifs qui plantait
     sans objectifs ; jauge « 100 % atteints » sans objectif → 0 % + lien ; objectifs mensuels comparés aux
     envois du mois ; ObjectifCommercialService partagé avec l'outil MCP update_commercial_objectifs.
+
+### Session du 14/11 (soir) — suite des tutoriels CRM
+- Publiés : CRM37 (stratégies, republié avec la stratégie visible en visio), CRM38 (historique), CRM39 (documents
+  et bibliothèque), CRM40 (prompts, génération simulée faute de clé IA locale), CRM34 (visio + stratégie, salle
+  de visio simulée faute de service de visio local). Académie : 57 épisodes.
+- Correctifs rapido-crm (locaux, non poussés) : stratégies, historique (montants TTC faux, devis d'une autre
+  société), API fiches clients (18 actions sans contrôle, dont la suppression), bibliothèque (tailles, images de
+  l'éditeur), prompts privés, éditeur de prompts, notifications (tâche assignée, devis ouvert), visio
+  (organisateur refusé, panneau stratégie), accents mal encodés, chemin des assets.
+- Reste : CRM31 Salons, CRM41 Notifications, CRM42 Abonnement et packs.
