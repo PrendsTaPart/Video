@@ -1,0 +1,135 @@
+{
+  "id": "CRM36",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "L'équipe commerciale et ses objectifs",
+  "em": "objectifs",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/commerciaux",
+  "type_delay": 40,
+  "fixes": {
+    "soixante-cinq pour cent": "65 %",
+    "soixante-douze pour cent": "72 %"
+  },
+  "end_cta": "Prochain épisode : la stratégie commerciale avec l'IA",
+  "thumb_shot": "fin.png",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Qui a atteint ses objectifs ce mois-ci ? Avec la page Commerciaux de RapidoCRM, vous suivez votre équipe de vente, ses envois et ses rendez-vous, commercial par commercial."
+    },
+    {
+      "key": "liste",
+      "text": "Chaque commercial a sa carte, avec sa disponibilité. Un clic sur voir profil ouvre son tableau de bord."
+    },
+    {
+      "key": "profil",
+      "text": "Vous y trouvez les SMS et les e-mails envoyés, et une jauge qui compare le mois en cours à ses objectifs : ici, soixante-cinq pour cent des SMS et soixante-douze pour cent des e-mails."
+    },
+    {
+      "key": "objectifs",
+      "text": "Pour fixer les objectifs, ouvrez les paramètres avec la roue crantée, puis modifier les objectifs. Indiquez les SMS, les e-mails, les rendez-vous et les contrats attendus chaque mois."
+    },
+    {
+      "key": "disponibilite",
+      "text": "Sans objectif fixé, la page vous le signale. Et les boutons actif et inactif indiquent si le commercial est disponible pour recevoir de nouveaux clients."
+    },
+    {
+      "key": "assistant",
+      "text": "Votre assistant IA connaît aussi ces chiffres : demandez-lui le point de l'équipe, ou de mettre à jour un objectif."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on construit une stratégie commerciale avec l'IA. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "liste",
+      "label": "L'équipe",
+      "hover": "text=Karim bernard",
+      "zone": ".row.g-3, .content-wrapper .row",
+      "zone_closest": ".container-xxl"
+    },
+    {
+      "at": "liste",
+      "click": "text=voir profil >> nth=0"
+    },
+    {
+      "at": "profil",
+      "label": "Le profil",
+      "hover": "text=Pourcentage des objectifs mensuels atteints",
+      "zone": "text=Pourcentage des objectifs mensuels atteints",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "objectifs",
+      "label": "Fixer les objectifs",
+      "click": "button[data-bs-target=\"#settingModal\"]",
+      "wait": 0.6
+    },
+    {
+      "at": "objectifs",
+      "click": "#settingModal >> text=Modifier les objectifs"
+    },
+    {
+      "at": "objectifs",
+      "fill": [
+        [
+          "input[name=nombre_sms]",
+          "50"
+        ],
+        [
+          "input[name=nombre_email]",
+          "35"
+        ],
+        [
+          "input[name=nombre_RDV]",
+          "10"
+        ],
+        [
+          "input[name=nombre_contrat]",
+          "4"
+        ]
+      ],
+      "zone": "form",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "objectifs",
+      "click": "button:has-text(\"modifier\")"
+    },
+    {
+      "at": "disponibilite",
+      "label": "Disponibilité",
+      "goto": "/commercial/4/profil",
+      "hover": "text=Aucun objectif fixé pour ce mois",
+      "zone": "text=Pourcentage des objectifs mensuels atteints",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "disponibilite",
+      "hover": "label[for=notEmplye]"
+    },
+    {
+      "at": "assistant",
+      "label": "Avec votre assistant IA",
+      "goto": "/commercial/2/profil",
+      "zone": "text=Pourcentage des objectifs mensuels atteints",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "voiceStartInCapture": 2.923,
+  "paragraphs": {
+    "intro": 0.03,
+    "liste": 10.15,
+    "filtres": 20.15,
+    "creer": 24.99,
+    "statut": 33.55,
+    "assistant": 39.87,
+    "outro": 47.07,
+    "end": 51.6
+  },
+  "zones": {
+    "liste": [
+      380,
+      243,
+      1420,
+      572
+    ],
+    "filtres": [
+      380,
+      243,
+      1420,
+      215
+    ],
+    "creer": [
+      666,
+      259,
+      588,
+      562
+    ],
+    "statut": [
+      380,
+      243,
+      1420,
+      638
+    ],
+    "assistant": [
+      380,
+      243,
+      1420,
+      638
+    ]
+  }
+}

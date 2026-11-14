@@ -1,0 +1,133 @@
+{
+  "id": "CRM35",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Les tâches de l'équipe",
+  "em": "tâches",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/admin/taches",
+  "type_delay": 20,
+  "fixes": {},
+  "end_cta": "Prochain épisode : l'équipe commerciale",
+  "thumb_shot": "fin.png",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Rappeler un client, préparer une démo, relancer une facture : la page Tâches de RapidoCRM rassemble tout ce que votre équipe doit faire, avec les échéances et les priorités."
+    },
+    {
+      "key": "liste",
+      "text": "Chaque tâche affiche son client, la personne assignée, son origine, saisie à la main ou créée par un workflow, et son échéance. Les retards sont signalés en rouge."
+    },
+    {
+      "key": "filtres",
+      "text": "Filtrez par statut ou par collaborateur pour retrouver, par exemple, les tâches de Karim."
+    },
+    {
+      "key": "creer",
+      "text": "Pour en créer une, cliquez sur nouvelle tâche. Donnez-lui un titre, une échéance et une priorité, puis assignez-la et rattachez-la à un client."
+    },
+    {
+      "key": "statut",
+      "text": "Dans le menu d'une tâche, commencez-la, puis terminez-la quand c'est fait. Vous pouvez aussi la modifier ou la supprimer."
+    },
+    {
+      "key": "assistant",
+      "text": "Et votre assistant IA peut en créer pour vous : demandez-lui de programmer un rappel, la tâche apparaît ici, prête à être traitée."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on pilote l'équipe commerciale et ses objectifs. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "liste",
+      "label": "Vos tâches",
+      "hover": "table tbody tr >> nth=1",
+      "zone": "table"
+    },
+    {
+      "at": "filtres",
+      "label": "Les filtres",
+      "select": [
+        [
+          "select[name=assigne]",
+          "Karim Bernard"
+        ]
+      ],
+      "zone": "table"
+    },
+    {
+      "at": "filtres",
+      "goto": "/admin/taches"
+    },
+    {
+      "at": "creer",
+      "label": "Nouvelle tâche",
+      "click": "button:has-text(\"nouvelle tâche\")",
+      "fill": [
+        [
+          "#modalTache #tacheTitre",
+          "Proposer la carte fidélité à Lotus Lounge"
+        ],
+        [
+          "#modalTache #tacheEcheance",
+          "2026-11-16T11:00"
+        ]
+      ],
+      "select": [
+        [
+          "#modalTache #tachePriorite",
+          "Haute"
+        ],
+        [
+          "#modalTache #tacheAssigne",
+          "Karim Bernard"
+        ],
+        [
+          "#modalTache #tacheEntreprise",
+          "Lotus Lounge"
+        ]
+      ],
+      "zone": "#modalTache .modal-content"
+    },
+    {
+      "at": "creer",
+      "click": "#modalTache #tacheValider"
+    },
+    {
+      "at": "statut",
+      "label": "Avancer une tâche",
+      "click": "table [data-bs-toggle=dropdown] >> nth=0"
+    },
+    {
+      "at": "statut",
+      "click": ".dropdown-menu.show button:has-text(\"Commencer\")"
+    },
+    {
+      "at": "statut",
+      "click": "table [data-bs-toggle=dropdown] >> nth=0",
+      "zone": "table"
+    },
+    {
+      "at": "assistant",
+      "label": "Avec votre assistant IA",
+      "hover": "table tbody tr >> nth=0",
+      "zone": "table"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ]
+}
