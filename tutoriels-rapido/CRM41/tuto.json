@@ -1,0 +1,105 @@
+{
+  "id": "CRM41",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Les notifications",
+  "em": "notifications",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/dashboard",
+  "type_delay": 30,
+  "fixes": {},
+  "end_cta": "Prochain épisode : l'abonnement et les packs",
+  "thumb_shot": "fin.png",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Un client vient d'ouvrir votre devis ? RapidoCRM vous prévient tout de suite, grâce aux notifications."
+    },
+    {
+      "key": "cloche",
+      "text": "Le chiffre sur la cloche indique les notifications non lues. Un clic les affiche : les nouvelles sont en gras, avec le temps écoulé."
+    },
+    {
+      "key": "types",
+      "text": "Vous êtes prévenu quand un client ouvre un devis pour la première fois, le moment idéal pour le rappeler, quand un devis est signé, quand on vous confie une tâche, ou quand un commercial rejoint l'équipe."
+    },
+    {
+      "key": "page",
+      "text": "Voir toutes les notifications ouvre l'historique complet."
+    },
+    {
+      "key": "tache",
+      "text": "Et quand vous confiez une tâche à un collègue, c'est lui qui reçoit la notification, avec l'échéance."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on gère l'abonnement et les packs. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "cloche",
+      "label": "La cloche",
+      "hover": ".notifBtn"
+    },
+    {
+      "at": "cloche",
+      "click": ".notifBtn",
+      "zone": ".notificationBox"
+    },
+    {
+      "at": "types",
+      "label": "Ce qui vous est signalé",
+      "hover": ".dropdown-notifications-item >> nth=0"
+    },
+    {
+      "at": "types",
+      "hover": ".dropdown-notifications-item >> nth=2"
+    },
+    {
+      "at": "page",
+      "label": "Toutes les notifications",
+      "click": ".notificationBox a:has-text(\"Voir toutes\")",
+      "zone": ".card >> nth=0"
+    },
+    {
+      "at": "tache",
+      "label": "Prévenir un collègue",
+      "goto": "/admin/taches"
+    },
+    {
+      "at": "tache",
+      "click": "button:has-text(\"nouvelle tâche\")",
+      "fill": [
+        [
+          "#tacheTitre",
+          "Envoyer la proposition à Clover Bistro"
+        ],
+        [
+          "#tacheEcheance",
+          "2026-11-18T11:00"
+        ]
+      ],
+      "select": [
+        [
+          "#tacheAssigne",
+          "Karim Bernard"
+        ]
+      ],
+      "zone": "#modalTache .modal-content"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ]
+}
