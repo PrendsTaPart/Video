@@ -126,8 +126,8 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM34 — Visioconférence
 - [x] CRM35 — Tâches
 - [x] CRM36 — Équipe commerciale et objectifs
-- [x] CRM37 — Stratégie commerciale assistée par IA
-- [ ] CRM38 — Statistiques et engagement
+- [x] CRM37 — Stratégies commerciales des produits (publié)
+- [x] CRM38 — Statistiques et engagement
 - [ ] CRM39 — Documents et stockage
 - [ ] CRM40 — Bibliothèque de prompts et assistant
 - [ ] CRM41 — Notifications

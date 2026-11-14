@@ -1,0 +1,109 @@
+{
+  "id": "CRM38",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "L'historique de tous vos échanges",
+  "em": "historique",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/historiques",
+  "type_delay": 30,
+  "fixes": {},
+  "end_cta": "Prochain épisode : les documents et la bibliothèque",
+  "thumb_shot": "fin.png",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Qui a écrit à ce client, et quand ? La page Historique de RapidoCRM rassemble tous les échanges de votre équipe avec vos clients."
+    },
+    {
+      "key": "cartes",
+      "text": "Chaque carte ouvre un historique : e-mails, SMS, appels de l'agent vocal, rendez-vous, contrats, documents, factures et devis."
+    },
+    {
+      "key": "emails",
+      "text": "Dans les e-mails, vous voyez le client, le commercial qui a écrit et la date. Voir mail affiche l'objet, l'expéditeur, le destinataire et le message."
+    },
+    {
+      "key": "sms",
+      "text": "Même principe pour les SMS, avec le numéro du destinataire."
+    },
+    {
+      "key": "devis",
+      "text": "L'historique des devis montre la période de validité, le statut et le montant TTC de chaque devis."
+    },
+    {
+      "key": "client",
+      "text": "Et sur chaque fiche client, l'onglet historique reprend les mêmes informations, filtrées sur ce client."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on range les documents dans la bibliothèque. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "cartes",
+      "label": "Tous vos historiques",
+      "hover": "h5:has-text(\"Historique des appels\")",
+      "zone": ".container-xxl .row"
+    },
+    {
+      "at": "cartes",
+      "hover": "h5:has-text(\"Historique des devis\")"
+    },
+    {
+      "at": "emails",
+      "label": "Les e-mails",
+      "click": "a[href$='/historiques/emails']",
+      "zone": "table"
+    },
+    {
+      "at": "emails",
+      "click": "text=voir mail >> nth=0",
+      "zone": ".modal.show .modal-content"
+    },
+    {
+      "at": "sms",
+      "label": "Les SMS",
+      "goto": "/historiques/sms",
+      "zone": "table"
+    },
+    {
+      "at": "sms",
+      "hover": "table tbody tr >> nth=0"
+    },
+    {
+      "at": "devis",
+      "label": "Les devis",
+      "goto": "/historiques/devis",
+      "zone": "table"
+    },
+    {
+      "at": "devis",
+      "hover": "table tbody tr >> nth=1"
+    },
+    {
+      "at": "client",
+      "label": "Sur la fiche client",
+      "goto": "/entreprises/1/historiques",
+      "zone": ".container-xxl .row"
+    },
+    {
+      "at": "client",
+      "hover": "h5:has-text(\"Historique des appels\")"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ]
+}
