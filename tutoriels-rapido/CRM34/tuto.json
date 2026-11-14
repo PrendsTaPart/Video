@@ -1,0 +1,40 @@
+{
+  "id": "CRM34",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "La visioconférence et votre stratégie à l'écran",
+  "em": "visioconférence",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/agenda",
+  "type_delay": 30,
+  "fixes": {},
+  "end_cta": "Tutoriel lié : les stratégies commerciales de vos produits",
+  "thumb_shot": "fin.png",
+  "mocks": [
+    {"url": "https://meet.exemple.test/**", "file": "/home/user/video/tutoriels-rapido/_gabarit/visio-salle-demo.html"}
+  ],
+  "paragraphs": [
+    {"key": "intro", "text": "Votre rendez-vous commercial commence, et votre argumentaire est juste à côté du client. Dans RapidoCRM, la visioconférence affiche aussi vos stratégies de vente."},
+    {"key": "agenda", "text": "Dans l'agenda, ouvrez le rendez-vous en visioconférence. Le lien invités part chez votre client ; vous, vous rejoignez par le lien organisateurs."},
+    {"key": "salle", "text": "La salle s'ouvre dans RapidoCRM, avec la date, le titre du rendez-vous et votre client à l'écran."},
+    {"key": "strategie", "text": "À droite, l'onglet stratégie : choisissez le produit dont vous parlez, ici le site vitrine, et ses stratégies apparaissent."},
+    {"key": "plan", "text": "Ouvrez-en une : la cible, l'offre et les arguments préparés par l'équipe restent sous vos yeux pendant tout l'échange. Autres stratégies, pour passer à la suivante."},
+    {"key": "outro", "text": "Pour préparer ces stratégies, voyez le tutoriel sur les stratégies commerciales de vos produits. À bientôt !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3},
+    {"at": "agenda", "label": "Le rendez-vous", "click": ".fc-event:has-text(\"Démo RapidoCRM\") >> nth=0", "wait": 0.8, "zone": ".modal.show .modal-content"},
+    {"at": "agenda", "eval": "document.querySelectorAll('.modal.show a[target=_blank]').forEach(a => a.removeAttribute('target'))", "hover": ".modal.show a:has-text(\"Organisateurs\")"},
+    {"at": "salle", "label": "La salle de visio", "click": ".modal.show a:has-text(\"Organisateurs\")", "wait": 1.0, "zone": "iframe"},
+    {"at": "strategie", "label": "Votre stratégie", "click": "#detailmeet .dropdown-btn", "zone": "#detailmeet"},
+    {"at": "strategie", "click": "#detailmeet .dropdown-item:has-text(\"Site vitrine\")"},
+    {"at": "plan", "label": "Le plan de vente", "click": "#detailmeet .strategiesList .box >> nth=0", "zone": "#detailmeet"},
+    {"at": "plan", "hover": "#detailmeet button:has-text(\"Autres stratégies\")"},
+    {"at": "outro", "wait": 0.3}
+  ]
+}
