@@ -1,0 +1,127 @@
+{
+  "id": "CRM37",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Les stratégies commerciales de vos produits",
+  "em": "stratégies",
+  "tag": "1 min · Intermédiaire",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/offres",
+  "type_delay": 30,
+  "fixes": {},
+  "end_cta": "Prochain épisode : les statistiques et l'engagement",
+  "thumb_shot": "fin.png",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Comment allez-vous vendre ce produit ? Dans RapidoCRM, chaque produit a ses stratégies commerciales et de communication, construites à plusieurs."
+    },
+    {
+      "key": "produit",
+      "text": "Ouvrez la page Produits et choisissez une offre, ici le site vitrine. En haut, deux boutons : la liste des stratégies, et ajouter une stratégie."
+    },
+    {
+      "key": "liste",
+      "text": "La liste montre le type, le nom, la date, et les membres de l'équipe qui ont contribué à chaque stratégie."
+    },
+    {
+      "key": "ajout",
+      "text": "Pour en créer une, choisissez le type, donnez-lui un nom, puis décrivez le plan : la cible, l'offre, les actions. Le bouton aide du bot peut rédiger ce texte pour vous à partir d'un prompt."
+    },
+    {
+      "key": "valider",
+      "text": "Validez : la stratégie rejoint la liste."
+    },
+    {
+      "key": "detail",
+      "text": "Ouvrez-la avec voir. Chacun y ajoute ses idées et ses retours du terrain, avec son nom, et vous joignez vos documents : argumentaire, présentation ou tarifs."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on mesure l'engagement de vos clients avec les statistiques. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "produit",
+      "label": "Vos produits",
+      "hover": "text=Site vitrine >> nth=0"
+    },
+    {
+      "at": "produit",
+      "click": "a[href='/offres/1']"
+    },
+    {
+      "at": "produit",
+      "hover": "a:has-text(\"liste des stratégies\"), button:has-text(\"liste des stratégies\")",
+      "zone": ".filters-line"
+    },
+    {
+      "at": "liste",
+      "label": "Les stratégies",
+      "click": "a:has-text(\"liste des stratégies\")",
+      "zone": "table"
+    },
+    {
+      "at": "liste",
+      "hover": "table tbody tr >> nth=1"
+    },
+    {
+      "at": "ajout",
+      "label": "Nouvelle stratégie",
+      "click": "button:has-text(\"ajouter une stratégie\")",
+      "select": [
+        [
+          "#addStrategieModal select",
+          "Stratégie commerciale"
+        ]
+      ],
+      "fill": [
+        [
+          "#addStrategieModal input[type=text]",
+          "Offre rentrée des restaurateurs"
+        ]
+      ],
+      "zone": "#addStrategieModal .modal-content"
+    },
+    {
+      "at": "ajout",
+      "eval": "(() => { const ed = window.CKEDITOR && CKEDITOR.instances.strategieEditorNew; if (ed) ed.setData('<p><strong>Cible :</strong> restaurants et brasseries du centre-ville.</p><ul><li>Menu en ligne et réservation inclus</li><li>Démo sur place, devis le jour même</li></ul>'); })()"
+    },
+    {
+      "at": "ajout",
+      "hover": "#addStrategieModal a:has-text(\"Aide du bot\")"
+    },
+    {
+      "at": "valider",
+      "click": "#addStrategieModal button[type=submit]",
+      "zone": "table"
+    },
+    {
+      "at": "detail",
+      "label": "Le travail d'équipe",
+      "click": "table tbody tr:has-text(\"relance des artisans\") [data-bs-toggle=dropdown]"
+    },
+    {
+      "at": "detail",
+      "click": ".dropdown-menu.show a:has-text(\"Voir\")"
+    },
+    {
+      "at": "detail",
+      "hover": "button:has-text(\"ajouter un fichier\")",
+      "zone": ".content-wrapper .container-xxl"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "voiceStartInCapture": 3.16,
+  "paragraphs": {
+    "intro": 0.05,
+    "produit": 8.35,
+    "liste": 17.35,
+    "ajout": 23.55,
+    "valider": 35.35,
+    "detail": 38.25,
+    "outro": 47.95,
+    "end": 53.16
+  },
+  "zones": {
+    "produit": [
+      372,
+      118,
+      1436,
+      92
+    ],
+    "liste": [
+      380,
+      169,
+      1420,
+      222
+    ],
+    "ajout": [
+      766,
+      121,
+      388,
+      839
+    ],
+    "valider": [
+      380,
+      169,
+      1420,
+      294
+    ]
+  }
+}
