@@ -129,7 +129,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM37 — Stratégies commerciales des produits (publié)
 - [x] CRM38 — Historique de tous les échanges (publié)
 - [x] CRM39 — Documents clients et bibliothèque (publié)
-- [ ] CRM40 — Bibliothèque de prompts et assistant
+- [x] CRM40 — Bibliothèque de prompts (publié)
 - [ ] CRM41 — Notifications
 - [ ] CRM42 — Facturation de l'abonnement et packs
 - [x] CRM43 — Connecter RapidoCRM à Claude (MCP)

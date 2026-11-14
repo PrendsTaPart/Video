@@ -1,0 +1,32 @@
+{
+  "voiceStartInCapture": 3.331,
+  "paragraphs": {
+    "intro": 0.07,
+    "catalogue": 10.65,
+    "mots": 15.99,
+    "generer": 22.45,
+    "mes": 30.82,
+    "outro": 39.31,
+    "end": 42.76
+  },
+  "zones": {
+    "catalogue": [
+      380,
+      219,
+      1420,
+      220
+    ],
+    "generer": [
+      1431,
+      267,
+      364,
+      116
+    ],
+    "mes": [
+      766,
+      322,
+      388,
+      436
+    ]
+  }
+}
