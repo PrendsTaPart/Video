@@ -418,5 +418,55 @@
     "duree_s": 98,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F02.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F02.png"
+  },
+  {
+    "id": "AG01",
+    "produit": "suite",
+    "kicker": "Formation agents IA · 1/5",
+    "titre": "Connecter un MCP à son assistant IA",
+    "tag": "2 min · Débutant",
+    "duree_s": 74,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-AG01.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-AG01.png"
+  },
+  {
+    "id": "AG02",
+    "produit": "suite",
+    "kicker": "Formation agents IA · 2/5",
+    "titre": "Créer un agent IA spécialisé",
+    "tag": "2 min · Débutant",
+    "duree_s": 67,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-AG02.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-AG02.png"
+  },
+  {
+    "id": "AG03",
+    "produit": "suite",
+    "kicker": "Formation agents IA · 3/5",
+    "titre": "Confier une routine à un agent",
+    "tag": "2 min · Intermédiaire",
+    "duree_s": 65,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-AG03.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-AG03.png"
+  },
+  {
+    "id": "AG04",
+    "produit": "suite",
+    "kicker": "Formation agents IA · 4/5",
+    "titre": "Le loop-engineering : des routines qui s'améliorent",
+    "tag": "2 min · Avancé",
+    "duree_s": 69,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-AG04.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-AG04.png"
+  },
+  {
+    "id": "AG05",
+    "produit": "suite",
+    "kicker": "Formation agents IA · 5/5",
+    "titre": "Les KPI qui pilotent le loop-engineering",
+    "tag": "2 min · Avancé",
+    "duree_s": 71,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-AG05.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-AG05.png"
   }
 ]

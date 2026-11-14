@@ -10,7 +10,10 @@
   "end_cta": "Tous les tutoriels sur rapidosoftware.com",
   "fixes": {
     "MCP": "MCP",
-    "Claude": "Claude"
+    "Claude": "Claude",
+    "crm point rapidosoftware point com, barre oblique MCP": "crm.rapidosoftware.com/mcp",
+    "crm point rapidosoftware point com": "crm.rapidosoftware.com",
+    "barre oblique MCP": "/mcp"
   },
   "paragraphs": [
     {

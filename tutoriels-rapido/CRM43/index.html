@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#4CAF50; --b:#9BE15D; --grad:linear-gradient(100deg,#4CAF50,#9BE15D); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(130px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.42; }
+  .h2 { width:760px; height:640px; left:-280px; bottom:-340px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .slide .inner { position:absolute; inset:110px 150px 190px; display:flex; flex-direction:column; justify-content:center; }
+  .slide h1 { font-size:118px; line-height:.96; font-weight:800; letter-spacing:-.045em; text-wrap:balance; }
+  .slide h2 { font-size:86px; line-height:1; font-weight:800; letter-spacing:-.04em; margin-bottom:56px; text-wrap:balance; }
+  .kick { font-family:'Geist Mono',monospace; font-size:26px; letter-spacing:.16em; text-transform:uppercase; color:rgba(255,255,255,.65); margin-bottom:28px; }
+  .points { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .pt { display:flex; gap:22px; align-items:center; padding:26px 30px; border-radius:24px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); font-size:40px; font-weight:500; line-height:1.25; }
+  .pt b, .st b { flex:none; width:62px; height:62px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:28px; }
+  .steps { position:relative; display:flex; gap:28px; }
+  .steps .line { position:absolute; left:31px; right:31px; top:31px; height:3px; background:var(--grad); transform-origin:left; }
+  .st { position:relative; flex:1; display:flex; flex-direction:column; gap:22px; font-size:38px; font-weight:500; line-height:1.25; }
+  .cmp { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+  .col { padding:36px; border-radius:28px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.04); }
+  .col.r { border-color:var(--a); background:color-mix(in srgb,var(--a) 14%,transparent); box-shadow:0 0 60px -20px var(--a); }
+  .col h3 { font-size:30px; font-family:'Geist Mono',monospace; letter-spacing:.12em; text-transform:uppercase; margin-bottom:22px; color:rgba(255,255,255,.7); }
+  .col.r h3 { color:var(--b); }
+  .col p { font-size:38px; line-height:1.35; margin-top:14px; }
+  .chat { width:1300px; border-radius:28px; background:#262624; border:1px solid rgba(255,255,255,.12); padding:36px; display:flex; flex-direction:column; gap:26px; box-shadow:0 40px 100px -30px rgba(0,0,0,.9); }
+  .chat .q { align-self:flex-end; max-width:85%; background:#141413; border:1px solid rgba(255,255,255,.1); border-radius:20px; padding:20px 26px; font-size:32px; line-height:1.4; min-height:84px; }
+  .chat .a { display:flex; gap:20px; font-size:30px; line-height:1.45; color:#f5f4ef; }
+  .chat .a p { margin-bottom:10px; }
+  .glyph { color:#d97757; font-size:36px; }
+  .take { font-size:96px; line-height:1.02; font-weight:800; letter-spacing:-.04em; text-align:center; text-wrap:balance; }
+  .sub { position:absolute; inset:auto 0 70px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; white-space:nowrap; }
+  .bar { position:absolute; left:150px; right:150px; bottom:34px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:60px; top:44px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .card h1 { margin-top:40px; font-size:122px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1600px; text-wrap:balance; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style></head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="89.3" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">Formation Rapido</div>
+  <div class="slide clip" id="sl0" data-start="3.030" data-duration="9.820" data-track-index="2"><div class="inner"><div class="kick">RapidoCRM · Connecteur MCP</div><h1>RapidoCRM piloté par <em>Claude</em></h1></div></div>
+  <div class="slide clip" id="sl1" data-start="12.350" data-duration="10.580" data-track-index="2"><div class="inner"><h2><em>131 outils</em> pour Claude</h2><div class="points"><div class="pt"><b>1</b><span>Clients et entreprises</span></div><div class="pt"><b>2</b><span>Pipeline et opportunités</span></div><div class="pt"><b>3</b><span>Devis, factures, dépenses</span></div><div class="pt"><b>4</b><span>Campagnes e-mail et SMS</span></div><div class="pt"><b>5</b><span>Fidélité et agent vocal</span></div></div></div></div>
+  <div class="slide clip" id="sl2" data-start="22.430" data-duration="17.220" data-track-index="2"><div class="inner"><h2><em>Installer</em> le connecteur</h2><div class="steps"><i class="line"></i><div class="st"><b>1</b><span>Claude › Paramètres › Connecteurs</span></div><div class="st"><b>2</b><span>Ajouter un connecteur personnalisé</span></div><div class="st"><b>3</b><span>Adresse : crm.rapidosoftware.com/mcp</span></div><div class="st"><b>4</b><span>Se connecter avec son compte Rapido</span></div></div></div></div>
+  <div class="slide clip" id="sl3" data-start="39.150" data-duration="9.980" data-track-index="2"><div class="inner"><h2>Les affaires qui <em>stagnent</em></h2><div class="chat"><div class="q"><span class="typed" data-text="Quelles affaires n&#x27;ont pas bougé depuis 14 jours dans mon pipeline ?"></span></div><div class="a"><span class="glyph">✳</span><div><p>✓ 3 opportunités sans mouvement</p><p>✓ Lotus Lounge · 21 jours · Négociation</p><p>→ Une relance proposée pour chacune</p></div></div></div></div></div>
+  <div class="slide clip" id="sl4" data-start="48.630" data-duration="10.060" data-track-index="2"><div class="inner"><h2>Un devis en <em>une phrase</em></h2><div class="chat"><div class="q"><span class="typed" data-text="Prépare un devis pour Clover Bistro : site vitrine et 12 mois de maintenance, remise de 10 %."></span></div><div class="a"><span class="glyph">✳</span><div><p>✓ Client Clover Bistro retrouvé</p><p>✓ 2 produits du catalogue, remise 10 %</p><p>→ Devis prêt, à relire avant envoi</p></div></div></div></div></div>
+  <div class="slide clip" id="sl5" data-start="58.190" data-duration="7.220" data-track-index="2"><div class="inner"><h2>Les <em>impayés</em></h2><div class="chat"><div class="q"><span class="typed" data-text="Liste mes factures en retard et prépare une relance pour chacune."></span></div><div class="a"><span class="glyph">✳</span><div><p>✓ 2 factures échues trouvées</p><p>✓ 2 relances rédigées</p><p>→ En attente de votre validation</p></div></div></div></div></div>
+  <div class="slide clip" id="sl6" data-start="64.910" data-duration="9.380" data-track-index="2"><div class="inner"><h2>Claude propose, <em>vous décidez</em></h2><div class="cmp"><div class="col l"><h3>Claude</h3><p>Lit vos données</p><p>Prépare devis et relances</p><p>Propose les envois</p></div><div class="col r"><h3>Vous</h3><p>Relisez</p><p>Ajustez</p><p>Validez l&#x27;envoi</p></div></div></div></div>
+  <div class="slide clip" id="sl7" data-start="73.790" data-duration="11.510" data-track-index="2"><div class="inner"><div class="take">Votre CRM piloté <em>en langage naturel</em></div></div></div>
+  <div class="sub clip" id="s0" data-start="3.030" data-duration="1.970" data-track-index="7"><span>Et si vous pilotiez RapidoCRM en</span></div>
+  <div class="sub clip" id="s1" data-start="5.020" data-duration="1.710" data-track-index="7"><span>parlant simplement à Claude</span></div>
+  <div class="sub clip" id="s2" data-start="6.750" data-duration="1.500" data-track-index="7"><span>Grâce au connecteur MCP</span></div>
+  <div class="sub clip" id="s3" data-start="8.270" data-duration="1.020" data-track-index="7"><span>c&#x27;est possible</span></div>
+  <div class="sub clip" id="s4" data-start="9.310" data-duration="1.230" data-track-index="7"><span>Voyons comment l&#x27;installer</span></div>
+  <div class="sub clip" id="s5" data-start="10.560" data-duration="1.770" data-track-index="7"><span>et ce qu&#x27;il change au quotidien</span></div>
+  <div class="sub clip" id="s6" data-start="12.350" data-duration="2.273" data-track-index="7"><span>Le connecteur RapidoCRM donne à Claude</span></div>
+  <div class="sub clip" id="s7" data-start="14.643" data-duration="1.408" data-track-index="7"><span>cent trente et un outils</span></div>
+  <div class="sub clip" id="s8" data-start="16.070" data-duration="0.790" data-track-index="7"><span>vos clients</span></div>
+  <div class="sub clip" id="s9" data-start="16.880" data-duration="1.060" data-track-index="7"><span>votre pipeline</span></div>
+  <div class="sub clip" id="s10" data-start="17.960" data-duration="1.340" data-track-index="7"><span>vos devis et factures</span></div>
+  <div class="sub clip" id="s11" data-start="19.320" data-duration="0.810" data-track-index="7"><span>vos campagnes</span></div>
+  <div class="sub clip" id="s12" data-start="20.150" data-duration="2.358" data-track-index="7"><span>la fidélité et l&#x27;agent vocal</span></div>
+  <div class="sub clip" id="s13" data-start="22.527" data-duration="0.490" data-track-index="7"><span>Dans Claude</span></div>
+  <div class="sub clip" id="s14" data-start="23.038" data-duration="1.453" data-track-index="7"><span>ouvrez les paramètres</span></div>
+  <div class="sub clip" id="s15" data-start="24.510" data-duration="1.315" data-track-index="7"><span>rubrique Connecteurs</span></div>
+  <div class="sub clip" id="s16" data-start="25.910" data-duration="3.180" data-track-index="7"><span>et ajoutez un connecteur personnalisé avec</span></div>
+  <div class="sub clip" id="s17" data-start="29.110" data-duration="2.899" data-track-index="7"><span>l&#x27;adresse crm.rapidosoftware.com</span></div>
+  <div class="sub clip" id="s18" data-start="32.029" data-duration="1.287" data-track-index="7"><span>/mcp</span></div>
+  <div class="sub clip" id="s19" data-start="33.390" data-duration="2.160" data-track-index="7"><span>Connectez-vous avec votre compte Rapido</span></div>
+  <div class="sub clip" id="s20" data-start="35.570" data-duration="1.450" data-track-index="7"><span>Claude agit avec vos droits</span></div>
+  <div class="sub clip" id="s21" data-start="37.040" data-duration="1.940" data-track-index="7"><span>sur votre société uniquement</span></div>
+  <div class="sub clip" id="s22" data-start="39.150" data-duration="1.100" data-track-index="7"><span>Premier exemple</span></div>
+  <div class="sub clip" id="s23" data-start="40.270" data-duration="2.850" data-track-index="7"><span>demandez quelles affaires stagnent dans votre pipeline</span></div>
+  <div class="sub clip" id="s24" data-start="43.140" data-duration="1.160" data-track-index="7"><span>Claude lit vos étapes</span></div>
+  <div class="sub clip" id="s25" data-start="44.320" data-duration="2.070" data-track-index="7"><span>repère les opportunités sans mouvement</span></div>
+  <div class="sub clip" id="s26" data-start="46.410" data-duration="2.200" data-track-index="7"><span>et propose une relance pour chacune</span></div>
+  <div class="sub clip" id="s27" data-start="48.630" data-duration="1.310" data-track-index="7"><span>Deuxième exemple</span></div>
+  <div class="sub clip" id="s28" data-start="49.960" data-duration="1.535" data-track-index="7"><span>un devis en une phrase</span></div>
+  <div class="sub clip" id="s29" data-start="51.515" data-duration="1.305" data-track-index="7"><span>Claude retrouve le client</span></div>
+  <div class="sub clip" id="s30" data-start="52.840" data-duration="1.850" data-track-index="7"><span>choisit les produits du catalogue</span></div>
+  <div class="sub clip" id="s31" data-start="54.710" data-duration="1.030" data-track-index="7"><span>applique la remise</span></div>
+  <div class="sub clip" id="s32" data-start="55.760" data-duration="2.300" data-track-index="7"><span>et prépare le devis dans RapidoCRM</span></div>
+  <div class="sub clip" id="s33" data-start="58.190" data-duration="1.160" data-track-index="7"><span>Troisième exemple</span></div>
+  <div class="sub clip" id="s34" data-start="59.370" data-duration="0.930" data-track-index="7"><span>les impayés</span></div>
+  <div class="sub clip" id="s35" data-start="60.320" data-duration="1.790" data-track-index="7"><span>Claude liste les factures en retard</span></div>
+  <div class="sub clip" id="s36" data-start="62.130" data-duration="1.780" data-track-index="7"><span>et rédige une relance adaptée à</span></div>
+  <div class="sub clip" id="s37" data-start="64.020" data-duration="0.870" data-track-index="7"><span>chaque client</span></div>
+  <div class="sub clip" id="s38" data-start="64.910" data-duration="0.820" data-track-index="7"><span>Le bon réflexe</span></div>
+  <div class="sub clip" id="s39" data-start="65.750" data-duration="1.760" data-track-index="7"><span>tout ce qui part chez un client</span></div>
+  <div class="sub clip" id="s40" data-start="67.530" data-duration="0.710" data-track-index="7"><span>un e-mail</span></div>
+  <div class="sub clip" id="s41" data-start="68.260" data-duration="0.760" data-track-index="7"><span>un SMS</span></div>
+  <div class="sub clip" id="s42" data-start="69.040" data-duration="0.740" data-track-index="7"><span>un appel</span></div>
+  <div class="sub clip" id="s43" data-start="69.800" data-duration="1.738" data-track-index="7"><span>attend votre validation</span></div>
+  <div class="sub clip" id="s44" data-start="71.558" data-duration="0.772" data-track-index="7"><span>Claude propose</span></div>
+  <div class="sub clip" id="s45" data-start="72.350" data-duration="1.420" data-track-index="7"><span>c&#x27;est vous qui décidez</span></div>
+  <div class="sub clip" id="s46" data-start="73.790" data-duration="1.080" data-track-index="7"><span>Un connecteur</span></div>
+  <div class="sub clip" id="s47" data-start="74.890" data-duration="1.070" data-track-index="7"><span>cent trente et un outils</span></div>
+  <div class="sub clip" id="s48" data-start="75.980" data-duration="2.750" data-track-index="7"><span>et votre CRM piloté en langage naturel</span></div>
+  <div class="sub clip" id="s49" data-start="78.750" data-duration="1.640" data-track-index="7"><span>Retrouvez les agents IA prêts à</span></div>
+  <div class="sub clip" id="s50" data-start="80.410" data-duration="3.360" data-track-index="7"><span>l&#x27;emploi et tous les tutoriels sur rapidosoftware.com</span></div>
+  <div class="sub clip" id="s51" data-start="83.790" data-duration="0.730" data-track-index="7"><span>À bientôt</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="81.80000000000001" data-track-index="10" data-volume="1"></audio>
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative"><div class="top"><span class="num">CRM43</span><span class="kick" style="margin:0">Tutoriel RapidoCRM · IA</span></div>
+    <h1>Connecter RapidoCRM <em>à Claude</em> (MCP)</h1></div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+  <div class="clip card" id="outro" data-start="84.50000000000001" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative"><h2>Merci d'avoir <em>regardé</em></h2><p>Tous les tutoriels sur rapidosoftware.com</p></div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware</div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .to('#intro', { opacity: 0, duration: .6, ease: 'power2.in' }, 3.0);
+  tl.to('#bar', { scaleX: 1, duration: 81.80000000000001, ease: 'none' }, 3.0);
+  tl.from('#sl0 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 3.080);
+  tl.to('#sl0 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 12.050);
+  tl.from('#sl1 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 12.400);
+  tl.from('#sl1 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.41 }, 12.950);
+  tl.to('#sl1 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 22.130);
+  tl.from('#sl2 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 22.480);
+  tl.from('#sl2 .st', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 23.030);
+  tl.from('#sl2 .line', { scaleX: 0, duration: 6.40, ease: 'none' }, 23.030);
+  tl.to('#sl2 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 38.850);
+  tl.from('#sl3 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 39.200);
+  (function(){ const el = document.querySelector('#sl3 .typed'); const txt = el.dataset.text; const o = { n: 0 };
+    tl.to(o, { n: txt.length, duration: 2.38, ease: 'none', onUpdate: () => { el.textContent = txt.slice(0, Math.round(o.n)); } }, 39.750); })();
+  tl.from('#sl3 .a', { opacity: 0, y: 20, duration: .6, ease: 'expo.out' }, 42.330)
+    .from('#sl3 .a p', { opacity: 0, y: 10, stagger: .35, duration: .4 }, 42.630);
+  tl.to('#sl3 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 48.330);
+  tl.from('#sl4 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 48.680);
+  (function(){ const el = document.querySelector('#sl4 .typed'); const txt = el.dataset.text; const o = { n: 0 };
+    tl.to(o, { n: txt.length, duration: 3.06, ease: 'none', onUpdate: () => { el.textContent = txt.slice(0, Math.round(o.n)); } }, 49.230); })();
+  tl.from('#sl4 .a', { opacity: 0, y: 20, duration: .6, ease: 'expo.out' }, 52.489)
+    .from('#sl4 .a p', { opacity: 0, y: 10, stagger: .35, duration: .4 }, 52.789);
+  tl.to('#sl4 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 57.890);
+  tl.from('#sl5 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 58.240);
+  (function(){ const el = document.querySelector('#sl5 .typed'); const txt = el.dataset.text; const o = { n: 0 };
+    tl.to(o, { n: txt.length, duration: 2.15, ease: 'none', onUpdate: () => { el.textContent = txt.slice(0, Math.round(o.n)); } }, 58.790); })();
+  tl.from('#sl5 .a', { opacity: 0, y: 20, duration: .6, ease: 'expo.out' }, 61.140)
+    .from('#sl5 .a p', { opacity: 0, y: 10, stagger: .35, duration: .4 }, 61.440);
+  tl.to('#sl5 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 64.610);
+  tl.from('#sl6 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 64.960);
+  tl.from('#sl6 .col.l p', { opacity: 0, x: -30, stagger: .25, duration: .5 }, 65.510)
+    .from('#sl6 .col.r', { opacity: 0, scale: .94, duration: .7, ease: 'back.out(1.6)' }, 68.906)
+    .from('#sl6 .col.r p', { opacity: 0, x: 30, stagger: .25, duration: .5 }, 69.206);
+  tl.to('#sl6 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 73.490);
+  tl.from('#sl7 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 73.840);
+  tl.to('#sl7 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 84.500);
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 84.800);
+  window.__timelines['main'] = tl;
+</script>
+</body></html>

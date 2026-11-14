@@ -75,6 +75,8 @@ def build_subs(cfg, words, offset):
         text = ' '.join(sw[i][0] for i in c)
         text = re.sub(r'\s+([:;!?»])', ' \\1', text)            # espaces insécables françaises
         text = re.sub(r'[.!?…]+$', '', text).rstrip(' ,:; ').strip()
+        for a, b in cfg.get('fixes', {}).items():               # graphie à l'écran (ex. adresse épelée à l'oral)
+            text = text.replace(a, b)
         subs.append([offset + times[c[0]][0], offset + times[c[-1]][1] + 0.12, text])
     for i in range(len(subs) - 1):
         subs[i][1] = min(subs[i][1], subs[i + 1][0] - 0.02)

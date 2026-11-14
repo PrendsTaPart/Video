@@ -1,0 +1,1070 @@
+[
+  {
+    "text": "Une",
+    "start": 0.05,
+    "end": 0.18,
+    "id": "w0"
+  },
+  {
+    "text": "boucle",
+    "start": 0.18,
+    "end": 0.54,
+    "id": "w1"
+  },
+  {
+    "text": "d'amélioration",
+    "start": 0.54,
+    "end": 1.38,
+    "id": "w2"
+  },
+  {
+    "text": "sans",
+    "start": 1.38,
+    "end": 1.62,
+    "id": "w3"
+  },
+  {
+    "text": "indicateurs",
+    "start": 1.62,
+    "end": 2.15,
+    "id": "w4"
+  },
+  {
+    "text": "tourne",
+    "start": 2.33,
+    "end": 2.64,
+    "id": "w5"
+  },
+  {
+    "text": "à",
+    "start": 2.64,
+    "end": 2.69,
+    "id": "w6"
+  },
+  {
+    "text": "vide.",
+    "start": 2.69,
+    "end": 3.34,
+    "id": "w7"
+  },
+  {
+    "text": "Voyons",
+    "start": 3.39,
+    "end": 3.72,
+    "id": "w8"
+  },
+  {
+    "text": "quel",
+    "start": 3.77,
+    "end": 4.04,
+    "id": "w9"
+  },
+  {
+    "text": "KPI",
+    "start": 4.04,
+    "end": 4.25,
+    "id": "w10"
+  },
+  {
+    "text": "choisir",
+    "start": 4.25,
+    "end": 4.74,
+    "id": "w11"
+  },
+  {
+    "text": "pour",
+    "start": 4.74,
+    "end": 5.01,
+    "id": "w12"
+  },
+  {
+    "text": "piloter",
+    "start": 5.09,
+    "end": 5.49,
+    "id": "w13"
+  },
+  {
+    "text": "vos",
+    "start": 5.67,
+    "end": 5.72,
+    "id": "w14"
+  },
+  {
+    "text": "routines.",
+    "start": 5.72,
+    "end": 6.32,
+    "id": "w15"
+  },
+  {
+    "text": "D'abord,",
+    "start": 6.55,
+    "end": 7.36,
+    "id": "w16"
+  },
+  {
+    "text": "un",
+    "start": 7.37,
+    "end": 7.57,
+    "id": "w17"
+  },
+  {
+    "text": "KPI",
+    "start": 7.57,
+    "end": 7.86,
+    "id": "w18"
+  },
+  {
+    "text": "métier,",
+    "start": 7.86,
+    "end": 8.65,
+    "id": "w19"
+  },
+  {
+    "text": "attaché",
+    "start": 8.65,
+    "end": 9.14,
+    "id": "w20"
+  },
+  {
+    "text": "à",
+    "start": 9.17,
+    "end": 9.24,
+    "id": "w21"
+  },
+  {
+    "text": "chaque",
+    "start": 9.24,
+    "end": 9.44,
+    "id": "w22"
+  },
+  {
+    "text": "routine.",
+    "start": 9.88,
+    "end": 10.24,
+    "id": "w23"
+  },
+  {
+    "text": "Le",
+    "start": 10.29,
+    "end": 10.34,
+    "id": "w24"
+  },
+  {
+    "text": "taux",
+    "start": 10.34,
+    "end": 10.54,
+    "id": "w25"
+  },
+  {
+    "text": "de",
+    "start": 10.54,
+    "end": 10.62,
+    "id": "w26"
+  },
+  {
+    "text": "signature",
+    "start": 10.67,
+    "end": 11.1,
+    "id": "w27"
+  },
+  {
+    "text": "des",
+    "start": 11.12,
+    "end": 11.27,
+    "id": "w28"
+  },
+  {
+    "text": "deux",
+    "start": 11.27,
+    "end": 11.46,
+    "id": "w29"
+  },
+  {
+    "text": "vies,",
+    "start": 11.48,
+    "end": 11.84,
+    "id": "w30"
+  },
+  {
+    "text": "le",
+    "start": 11.84,
+    "end": 11.91,
+    "id": "w31"
+  },
+  {
+    "text": "montant",
+    "start": 11.99,
+    "end": 12.39,
+    "id": "w32"
+  },
+  {
+    "text": "des",
+    "start": 12.57,
+    "end": 12.64,
+    "id": "w33"
+  },
+  {
+    "text": "impayés,",
+    "start": 12.64,
+    "end": 13.19,
+    "id": "w34"
+  },
+  {
+    "text": "l'engagement",
+    "start": 13.35,
+    "end": 13.96,
+    "id": "w35"
+  },
+  {
+    "text": "des",
+    "start": 13.96,
+    "end": 14.13,
+    "id": "w36"
+  },
+  {
+    "text": "publications",
+    "start": 14.13,
+    "end": 14.84,
+    "id": "w37"
+  },
+  {
+    "text": "ou",
+    "start": 14.84,
+    "end": 14.97,
+    "id": "w38"
+  },
+  {
+    "text": "le",
+    "start": 15.05,
+    "end": 15.13,
+    "id": "w39"
+  },
+  {
+    "text": "taux",
+    "start": 15.21,
+    "end": 15.44,
+    "id": "w40"
+  },
+  {
+    "text": "de",
+    "start": 15.44,
+    "end": 15.45,
+    "id": "w41"
+  },
+  {
+    "text": "daily",
+    "start": 15.63,
+    "end": 15.95,
+    "id": "w42"
+  },
+  {
+    "text": "rempli.",
+    "start": 15.95,
+    "end": 16.74,
+    "id": "w43"
+  },
+  {
+    "text": "C'est",
+    "start": 16.79,
+    "end": 17.05,
+    "id": "w44"
+  },
+  {
+    "text": "lui",
+    "start": 17.05,
+    "end": 17.23,
+    "id": "w45"
+  },
+  {
+    "text": "qui",
+    "start": 17.27,
+    "end": 17.43,
+    "id": "w46"
+  },
+  {
+    "text": "juge",
+    "start": 17.43,
+    "end": 17.69,
+    "id": "w47"
+  },
+  {
+    "text": "si",
+    "start": 17.69,
+    "end": 17.81,
+    "id": "w48"
+  },
+  {
+    "text": "la",
+    "start": 17.81,
+    "end": 17.95,
+    "id": "w49"
+  },
+  {
+    "text": "routine",
+    "start": 17.95,
+    "end": 18.4,
+    "id": "w50"
+  },
+  {
+    "text": "sert",
+    "start": 18.4,
+    "end": 18.57,
+    "id": "w51"
+  },
+  {
+    "text": "à",
+    "start": 18.66,
+    "end": 18.72,
+    "id": "w52"
+  },
+  {
+    "text": "quelque",
+    "start": 18.72,
+    "end": 19.16,
+    "id": "w53"
+  },
+  {
+    "text": "chose.",
+    "start": 19.16,
+    "end": 19.67,
+    "id": "w54"
+  },
+  {
+    "text": "Au",
+    "start": 19.79,
+    "end": 19.84,
+    "id": "w55"
+  },
+  {
+    "text": "moment",
+    "start": 19.84,
+    "end": 20.12,
+    "id": "w56"
+  },
+  {
+    "text": "de",
+    "start": 20.17,
+    "end": 20.22,
+    "id": "w57"
+  },
+  {
+    "text": "l'attacher,",
+    "start": 20.27,
+    "end": 20.88,
+    "id": "w58"
+  },
+  {
+    "text": "Planit",
+    "start": 20.88,
+    "end": 21.27,
+    "id": "w59"
+  },
+  {
+    "text": "enregistre",
+    "start": 21.27,
+    "end": 21.89,
+    "id": "w60"
+  },
+  {
+    "text": "une",
+    "start": 22.07,
+    "end": 22.11,
+    "id": "w61"
+  },
+  {
+    "text": "référence.",
+    "start": 22.11,
+    "end": 22.72,
+    "id": "w62"
+  },
+  {
+    "text": "Ensuite,",
+    "start": 22.95,
+    "end": 23.54,
+    "id": "w63"
+  },
+  {
+    "text": "chaque",
+    "start": 23.54,
+    "end": 23.96,
+    "id": "w64"
+  },
+  {
+    "text": "exécution",
+    "start": 23.96,
+    "end": 24.57,
+    "id": "w65"
+  },
+  {
+    "text": "est",
+    "start": 24.65,
+    "end": 24.73,
+    "id": "w66"
+  },
+  {
+    "text": "comparée.",
+    "start": 24.82,
+    "end": 25.44,
+    "id": "w67"
+  },
+  {
+    "text": "En",
+    "start": 25.49,
+    "end": 25.61,
+    "id": "w68"
+  },
+  {
+    "text": "progrès,",
+    "start": 25.61,
+    "end": 26.34,
+    "id": "w69"
+  },
+  {
+    "text": "stable",
+    "start": 26.34,
+    "end": 26.85,
+    "id": "w70"
+  },
+  {
+    "text": "ou",
+    "start": 26.85,
+    "end": 27.02,
+    "id": "w71"
+  },
+  {
+    "text": "en",
+    "start": 27.02,
+    "end": 27.11,
+    "id": "w72"
+  },
+  {
+    "text": "régression,",
+    "start": 27.19,
+    "end": 28.08,
+    "id": "w73"
+  },
+  {
+    "text": "avec",
+    "start": 28.1,
+    "end": 28.35,
+    "id": "w74"
+  },
+  {
+    "text": "l'écart",
+    "start": 28.35,
+    "end": 28.77,
+    "id": "w75"
+  },
+  {
+    "text": "en",
+    "start": 28.84,
+    "end": 28.88,
+    "id": "w76"
+  },
+  {
+    "text": "pourcentage.",
+    "start": 28.91,
+    "end": 29.8,
+    "id": "w77"
+  },
+  {
+    "text": "Côté",
+    "start": 29.85,
+    "end": 30.04,
+    "id": "w78"
+  },
+  {
+    "text": "Planit,",
+    "start": 30.05,
+    "end": 30.58,
+    "id": "w79"
+  },
+  {
+    "text": "trois",
+    "start": 30.58,
+    "end": 30.92,
+    "id": "w80"
+  },
+  {
+    "text": "KPI",
+    "start": 30.92,
+    "end": 31.11,
+    "id": "w81"
+  },
+  {
+    "text": "surveillent",
+    "start": 31.11,
+    "end": 31.85,
+    "id": "w82"
+  },
+  {
+    "text": "la",
+    "start": 31.85,
+    "end": 31.95,
+    "id": "w83"
+  },
+  {
+    "text": "santé",
+    "start": 32.13,
+    "end": 32.32,
+    "id": "w84"
+  },
+  {
+    "text": "des",
+    "start": 32.32,
+    "end": 32.52,
+    "id": "w85"
+  },
+  {
+    "text": "agents.",
+    "start": 32.52,
+    "end": 33.08,
+    "id": "w86"
+  },
+  {
+    "text": "Le",
+    "start": 33.13,
+    "end": 33.19,
+    "id": "w87"
+  },
+  {
+    "text": "taux",
+    "start": 33.19,
+    "end": 33.41,
+    "id": "w88"
+  },
+  {
+    "text": "de",
+    "start": 33.41,
+    "end": 33.52,
+    "id": "w89"
+  },
+  {
+    "text": "réussite",
+    "start": 33.52,
+    "end": 33.96,
+    "id": "w90"
+  },
+  {
+    "text": "des",
+    "start": 33.96,
+    "end": 34.13,
+    "id": "w91"
+  },
+  {
+    "text": "routines,",
+    "start": 34.13,
+    "end": 34.74,
+    "id": "w92"
+  },
+  {
+    "text": "le",
+    "start": 34.74,
+    "end": 34.89,
+    "id": "w93"
+  },
+  {
+    "text": "coût",
+    "start": 34.89,
+    "end": 35.19,
+    "id": "w94"
+  },
+  {
+    "text": "par",
+    "start": 35.19,
+    "end": 35.23,
+    "id": "w95"
+  },
+  {
+    "text": "action",
+    "start": 35.43,
+    "end": 35.88,
+    "id": "w96"
+  },
+  {
+    "text": "livré",
+    "start": 35.88,
+    "end": 36.28,
+    "id": "w97"
+  },
+  {
+    "text": "et",
+    "start": 36.28,
+    "end": 36.3,
+    "id": "w98"
+  },
+  {
+    "text": "le",
+    "start": 36.3,
+    "end": 36.48,
+    "id": "w99"
+  },
+  {
+    "text": "nombre",
+    "start": 36.48,
+    "end": 36.78,
+    "id": "w100"
+  },
+  {
+    "text": "d'actions",
+    "start": 36.78,
+    "end": 37.32,
+    "id": "w101"
+  },
+  {
+    "text": "livrées.",
+    "start": 37.32,
+    "end": 37.94,
+    "id": "w102"
+  },
+  {
+    "text": "Une",
+    "start": 37.99,
+    "end": 38.15,
+    "id": "w103"
+  },
+  {
+    "text": "règle",
+    "start": 38.15,
+    "end": 38.5,
+    "id": "w104"
+  },
+  {
+    "text": "simple.",
+    "start": 38.5,
+    "end": 39.14,
+    "id": "w105"
+  },
+  {
+    "text": "Une",
+    "start": 39.19,
+    "end": 39.31,
+    "id": "w106"
+  },
+  {
+    "text": "amélioration",
+    "start": 39.31,
+    "end": 39.98,
+    "id": "w107"
+  },
+  {
+    "text": "ne",
+    "start": 39.98,
+    "end": 40.09,
+    "id": "w108"
+  },
+  {
+    "text": "doit",
+    "start": 40.09,
+    "end": 40.31,
+    "id": "w109"
+  },
+  {
+    "text": "pas",
+    "start": 40.31,
+    "end": 40.47,
+    "id": "w110"
+  },
+  {
+    "text": "faire",
+    "start": 40.48,
+    "end": 40.76,
+    "id": "w111"
+  },
+  {
+    "text": "exploser",
+    "start": 40.76,
+    "end": 41.21,
+    "id": "w112"
+  },
+  {
+    "text": "le",
+    "start": 41.21,
+    "end": 41.29,
+    "id": "w113"
+  },
+  {
+    "text": "coût",
+    "start": 41.43,
+    "end": 41.54,
+    "id": "w114"
+  },
+  {
+    "text": "par",
+    "start": 41.54,
+    "end": 41.71,
+    "id": "w115"
+  },
+  {
+    "text": "action.",
+    "start": 41.71,
+    "end": 42.11,
+    "id": "w116"
+  },
+  {
+    "text": "Si",
+    "start": 42.35,
+    "end": 42.43,
+    "id": "w117"
+  },
+  {
+    "text": "le",
+    "start": 42.43,
+    "end": 42.56,
+    "id": "w118"
+  },
+  {
+    "text": "KPI",
+    "start": 42.56,
+    "end": 42.75,
+    "id": "w119"
+  },
+  {
+    "text": "métier",
+    "start": 42.75,
+    "end": 43.15,
+    "id": "w120"
+  },
+  {
+    "text": "progresse",
+    "start": 43.15,
+    "end": 43.75,
+    "id": "w121"
+  },
+  {
+    "text": "mais",
+    "start": 43.75,
+    "end": 43.97,
+    "id": "w122"
+  },
+  {
+    "text": "que",
+    "start": 44.05,
+    "end": 44.13,
+    "id": "w123"
+  },
+  {
+    "text": "le",
+    "start": 44.22,
+    "end": 44.35,
+    "id": "w124"
+  },
+  {
+    "text": "coût",
+    "start": 44.35,
+    "end": 44.61,
+    "id": "w125"
+  },
+  {
+    "text": "double,",
+    "start": 44.63,
+    "end": 45.21,
+    "id": "w126"
+  },
+  {
+    "text": "ce",
+    "start": 45.21,
+    "end": 45.27,
+    "id": "w127"
+  },
+  {
+    "text": "n'est",
+    "start": 45.39,
+    "end": 45.6,
+    "id": "w128"
+  },
+  {
+    "text": "pas",
+    "start": 45.68,
+    "end": 45.75,
+    "id": "w129"
+  },
+  {
+    "text": "une",
+    "start": 45.78,
+    "end": 45.92,
+    "id": "w130"
+  },
+  {
+    "text": "victoire.",
+    "start": 45.92,
+    "end": 46.54,
+    "id": "w131"
+  },
+  {
+    "text": "Ajoutez",
+    "start": 46.59,
+    "end": 46.99,
+    "id": "w132"
+  },
+  {
+    "text": "ces",
+    "start": 46.99,
+    "end": 47.18,
+    "id": "w133"
+  },
+  {
+    "text": "KPI",
+    "start": 47.18,
+    "end": 47.37,
+    "id": "w134"
+  },
+  {
+    "text": "à",
+    "start": 47.37,
+    "end": 47.42,
+    "id": "w135"
+  },
+  {
+    "text": "votre",
+    "start": 47.42,
+    "end": 47.74,
+    "id": "w136"
+  },
+  {
+    "text": "tableau",
+    "start": 47.75,
+    "end": 48.2,
+    "id": "w137"
+  },
+  {
+    "text": "de",
+    "start": 48.2,
+    "end": 48.33,
+    "id": "w138"
+  },
+  {
+    "text": "bord",
+    "start": 48.33,
+    "end": 48.59,
+    "id": "w139"
+  },
+  {
+    "text": "Planit",
+    "start": 48.59,
+    "end": 49.04,
+    "id": "w140"
+  },
+  {
+    "text": "et",
+    "start": 49.09,
+    "end": 49.15,
+    "id": "w141"
+  },
+  {
+    "text": "laissez",
+    "start": 49.15,
+    "end": 49.52,
+    "id": "w142"
+  },
+  {
+    "text": "les",
+    "start": 49.53,
+    "end": 49.69,
+    "id": "w143"
+  },
+  {
+    "text": "alertes",
+    "start": 49.69,
+    "end": 50.08,
+    "id": "w144"
+  },
+  {
+    "text": "vous",
+    "start": 50.08,
+    "end": 50.3,
+    "id": "w145"
+  },
+  {
+    "text": "prévenir",
+    "start": 50.3,
+    "end": 50.71,
+    "id": "w146"
+  },
+  {
+    "text": "quand",
+    "start": 50.79,
+    "end": 51.02,
+    "id": "w147"
+  },
+  {
+    "text": "une",
+    "start": 51.02,
+    "end": 51.18,
+    "id": "w148"
+  },
+  {
+    "text": "routine",
+    "start": 51.18,
+    "end": 51.57,
+    "id": "w149"
+  },
+  {
+    "text": "dérive.",
+    "start": 51.57,
+    "end": 51.99,
+    "id": "w150"
+  },
+  {
+    "text": "Un",
+    "start": 52.19,
+    "end": 52.3,
+    "id": "w151"
+  },
+  {
+    "text": "KPI",
+    "start": 52.3,
+    "end": 52.52,
+    "id": "w152"
+  },
+  {
+    "text": "métier",
+    "start": 52.57,
+    "end": 53.04,
+    "id": "w153"
+  },
+  {
+    "text": "pour",
+    "start": 53.04,
+    "end": 53.36,
+    "id": "w154"
+  },
+  {
+    "text": "juger,",
+    "start": 53.39,
+    "end": 53.97,
+    "id": "w155"
+  },
+  {
+    "text": "des",
+    "start": 54.06,
+    "end": 54.24,
+    "id": "w156"
+  },
+  {
+    "text": "KPI",
+    "start": 54.24,
+    "end": 54.47,
+    "id": "w157"
+  },
+  {
+    "text": "Planit",
+    "start": 54.5,
+    "end": 54.95,
+    "id": "w158"
+  },
+  {
+    "text": "pour",
+    "start": 54.96,
+    "end": 55.09,
+    "id": "w159"
+  },
+  {
+    "text": "surveiller.",
+    "start": 55.52,
+    "end": 56.1,
+    "id": "w160"
+  },
+  {
+    "text": "Vos",
+    "start": 56.15,
+    "end": 56.25,
+    "id": "w161"
+  },
+  {
+    "text": "agents",
+    "start": 56.25,
+    "end": 56.58,
+    "id": "w162"
+  },
+  {
+    "text": "progressent,",
+    "start": 56.58,
+    "end": 57.27,
+    "id": "w163"
+  },
+  {
+    "text": "chiffre",
+    "start": 57.27,
+    "end": 57.64,
+    "id": "w164"
+  },
+  {
+    "text": "à",
+    "start": 57.64,
+    "end": 57.68,
+    "id": "w165"
+  },
+  {
+    "text": "l'appui.",
+    "start": 57.68,
+    "end": 58.25,
+    "id": "w166"
+  },
+  {
+    "text": "Retrouvez",
+    "start": 58.35,
+    "end": 58.77,
+    "id": "w167"
+  },
+  {
+    "text": "les",
+    "start": 58.77,
+    "end": 58.93,
+    "id": "w168"
+  },
+  {
+    "text": "100",
+    "start": 58.93,
+    "end": 59.41,
+    "id": "w169"
+  },
+  {
+    "text": "agents",
+    "start": 59.41,
+    "end": 59.73,
+    "id": "w170"
+  },
+  {
+    "text": "et",
+    "start": 59.73,
+    "end": 59.83,
+    "id": "w171"
+  },
+  {
+    "text": "leurs",
+    "start": 59.83,
+    "end": 60.1,
+    "id": "w172"
+  },
+  {
+    "text": "KPI",
+    "start": 60.1,
+    "end": 60.3,
+    "id": "w173"
+  },
+  {
+    "text": "sur",
+    "start": 60.3,
+    "end": 60.45,
+    "id": "w174"
+  },
+  {
+    "text": "rapidosoftware.com.",
+    "start": 60.63,
+    "end": 62.02,
+    "id": "w175"
+  },
+  {
+    "text": "À",
+    "start": 62.07,
+    "end": 62.08,
+    "id": "w176"
+  },
+  {
+    "text": "bientôt!",
+    "start": 62.08,
+    "end": 62.76,
+    "id": "w177"
+  }
+]

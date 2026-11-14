@@ -286,8 +286,8 @@ CRM20 : recentré sur « campagnes automatiques » (bouton de la liste Clients +
 ## Formations agents IA (14/11/2026) — page /academie/agents-ia du site
 
 Motion design (gabarit formation, voix Adam), une par étape du guide :
-- [ ] AG01 — Connecter un MCP à son assistant IA
-- [ ] AG02 — Créer un agent IA spécialisé
-- [ ] AG03 — Confier une routine à un agent
-- [ ] AG04 — Le loop-engineering : des routines qui s'améliorent
-- [ ] AG05 — Les KPI qui pilotent le loop-engineering
+- [x] AG01 — Connecter un MCP à son assistant IA
+- [x] AG02 — Créer un agent IA spécialisé
+- [x] AG03 — Confier une routine à un agent
+- [x] AG04 — Le loop-engineering : des routines qui s'améliorent
+- [x] AG05 — Les KPI qui pilotent le loop-engineering
