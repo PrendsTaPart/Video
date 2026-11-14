@@ -1,0 +1,142 @@
+{
+  "id": "CRM39",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Les documents clients et la bibliothèque",
+  "em": "documents",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/entreprises/1/profil",
+  "type_delay": 30,
+  "fixes": {},
+  "end_cta": "Prochain épisode : la bibliothèque de prompts",
+  "thumb_shot": "fin.png",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Où est passé le cahier des charges de ce client ? Avec RapidoCRM, chaque document est rangé sur la fiche du client, et vos visuels dans la bibliothèque."
+    },
+    {
+      "key": "ajout",
+      "text": "Sur la fiche client, ouvrez la rubrique documentation, puis ajouter un PDF. Donnez un nom au fichier, choisissez-le sur votre ordinateur, et ajoutez-le."
+    },
+    {
+      "key": "historique",
+      "text": "Il apparaît dans l'historique des documents du client, avec son type, sa taille et sa date. Le menu permet de le télécharger ou de le supprimer."
+    },
+    {
+      "key": "global",
+      "text": "La page historique des documents, elle, rassemble les fichiers de tous vos clients."
+    },
+    {
+      "key": "biblio",
+      "text": "Pour vos visuels et vos textes, il y a la bibliothèque. Vous y voyez l'espace utilisé sur votre forfait, et vous filtrez par type."
+    },
+    {
+      "key": "biblio_ajout",
+      "text": "Ajouter un fichier : choisissez le type, un nom et le fichier. Il sera disponible dans l'éditeur, pour vos e-mails et vos pages."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on découvre la bibliothèque de prompts. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "ajout",
+      "label": "Ajouter un document",
+      "click": "button.accordion-button:has-text(\"Documentation\")"
+    },
+    {
+      "at": "ajout",
+      "click": "button:has-text(\"Ajouter un PDF\")",
+      "fill": [
+        [
+          "#fileNameInput",
+          "Proposition site vitrine"
+        ]
+      ],
+      "upload": [
+        [
+          "#piece4",
+          "/home/user/video/tutoriels-rapido/_gabarit/demo-proposition.pdf"
+        ]
+      ],
+      "zone": ".modal.show .modal-content"
+    },
+    {
+      "at": "ajout",
+      "click": ".modal.show button:has-text(\"Ajouter\")"
+    },
+    {
+      "at": "historique",
+      "label": "Les documents du client",
+      "goto": "/entreprises/1/historiques/documents",
+      "zone": "table"
+    },
+    {
+      "at": "historique",
+      "click": "table [data-bs-toggle=dropdown] >> nth=0"
+    },
+    {
+      "at": "global",
+      "label": "Tous les documents",
+      "goto": "/historiques/documents",
+      "zone": "table"
+    },
+    {
+      "at": "biblio",
+      "label": "La bibliothèque",
+      "goto": "/bibliotheque",
+      "zone": "table"
+    },
+    {
+      "at": "biblio",
+      "hover": "text=utilisés sur"
+    },
+    {
+      "at": "biblio_ajout",
+      "label": "Ajouter un visuel",
+      "click": "button[data-bs-target='#addFileModal']",
+      "select": [
+        [
+          "#type-file-input",
+          "Image"
+        ]
+      ],
+      "fill": [
+        [
+          "#addFileModal input[name=name]",
+          "Visuel menu du midi"
+        ]
+      ],
+      "zone": "#addFileModal .modal-content"
+    },
+    {
+      "at": "biblio_ajout",
+      "upload": [
+        [
+          "#piece",
+          "/home/user/video/tutoriels-rapido/_gabarit/biblio-demo/banniere-rentree.jpg"
+        ]
+      ]
+    },
+    {
+      "at": "biblio_ajout",
+      "click": "#addFileModal button[type=submit]",
+      "zone": "table"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ]
+}
