@@ -1,0 +1,132 @@
+{
+  "id": "AG05",
+  "product": "suite",
+  "kicker": "Formation agents IA · 5/5",
+  "title": "Les KPI qui pilotent le loop-engineering",
+  "em": "KPI",
+  "tag": "2 min · Avancé",
+  "intro": 3.0,
+  "outro": 4.5,
+  "end_cta": "Tous les tutoriels sur rapidosoftware.com",
+  "fixes": {
+    "MCP": "MCP",
+    "Claude": "Claude",
+    "Plan'It": "Plan'It",
+    "ChatGPT": "ChatGPT",
+    "KPI": "KPI"
+  },
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Une boucle d'amélioration sans indicateur tourne à vide. Voyons quels KPI choisir pour piloter vos routines."
+    },
+    {
+      "key": "metier",
+      "text": "D'abord, un KPI métier, attaché à chaque routine : le taux de signature des devis, le montant des impayés, l'engagement des publications, ou le taux de dailies remplis. C'est lui qui juge si la routine sert à quelque chose."
+    },
+    {
+      "key": "reference",
+      "text": "Au moment de l'attacher, Plan'It enregistre une référence. Ensuite, chaque exécution est comparée : en progrès, stable, ou en régression, avec l'écart en pourcentage."
+    },
+    {
+      "key": "planit",
+      "text": "Côté Plan'It, trois KPI surveillent la santé des agents : le taux de réussite des routines, le coût par action livrée, et le nombre d'actions livrées."
+    },
+    {
+      "key": "garde",
+      "text": "Une règle simple : une amélioration ne doit pas faire exploser le coût par action. Si le KPI métier progresse mais que le coût double, ce n'est pas une victoire."
+    },
+    {
+      "key": "tableau",
+      "text": "Ajoutez ces KPI à votre tableau de bord Plan'It, et laissez les alertes vous prévenir quand une routine dérive."
+    },
+    {
+      "key": "recap",
+      "text": "Un KPI métier pour juger, des KPI Plan'It pour surveiller : vos agents progressent, chiffres à l'appui."
+    },
+    {
+      "key": "outro",
+      "text": "Retrouvez les cent agents et leurs KPI sur rapidosoftware.com. À bientôt !"
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "Agents IA · Étape 5",
+      "title": "Les KPI de la boucle",
+      "em": "KPI"
+    },
+    {
+      "at": "metier",
+      "type": "points",
+      "title": "Un KPI métier par routine",
+      "em": "KPI métier",
+      "items": [
+        "Taux de signature des devis",
+        "Montant des impayés",
+        "Engagement des publications",
+        "Dailies remplis"
+      ]
+    },
+    {
+      "at": "reference",
+      "type": "compare",
+      "title": "Comparer à la référence",
+      "em": "référence",
+      "left": [
+        "Référence",
+        "Taux de signature : 22 %",
+        "Mesurée au départ",
+        "Après 0 exécution"
+      ],
+      "right": [
+        "Aujourd'hui",
+        "Taux de signature : 31 %",
+        "En progrès : +41 %",
+        "Après 8 exécutions"
+      ]
+    },
+    {
+      "at": "planit",
+      "type": "points",
+      "title": "Les KPI de Plan'It",
+      "em": "Plan'It",
+      "items": [
+        "Taux de réussite des routines",
+        "Coût par action livrée",
+        "Actions livrées"
+      ]
+    },
+    {
+      "at": "garde",
+      "type": "prompt",
+      "title": "Le garde-fou",
+      "em": "garde-fou",
+      "prompt": "La nouvelle consigne améliore-t-elle vraiment la routine ?",
+      "answer": [
+        "✓ Taux de signature : +9 points",
+        "⚠ Coût par action : +80 %",
+        "→ Proposition : revenir à 1 relance au lieu de 2"
+      ]
+    },
+    {
+      "at": "tableau",
+      "type": "steps",
+      "title": "Sur votre tableau de bord",
+      "em": "tableau de bord",
+      "items": [
+        "Plan'It › Accueil KPI",
+        "Ajouter les widgets",
+        "Activer les alertes",
+        "Décider : appliquer ou refuser"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Vos agents progressent, chiffres à l'appui",
+      "em": "chiffres à l'appui"
+    }
+  ]
+}

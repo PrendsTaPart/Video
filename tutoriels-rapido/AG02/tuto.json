@@ -1,0 +1,131 @@
+{
+  "id": "AG02",
+  "product": "suite",
+  "kicker": "Formation agents IA · 2/5",
+  "title": "Créer un agent IA spécialisé",
+  "em": "spécialisé",
+  "tag": "2 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "end_cta": "Tous les tutoriels sur rapidosoftware.com",
+  "fixes": {
+    "MCP": "MCP",
+    "Claude": "Claude",
+    "Plan'It": "Plan'It",
+    "ChatGPT": "ChatGPT",
+    "KPI": "KPI"
+  },
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Un assistant connecté, c'est bien. Un agent qui connaît son métier, c'est mieux. Voyons comment créer le vôtre en trois minutes."
+    },
+    {
+      "key": "recette",
+      "text": "Un agent, c'est trois ingrédients : un assistant, un prompt système qui décrit son métier et ses règles, et une sélection d'outils MCP."
+    },
+    {
+      "key": "fiche",
+      "text": "Sur rapidosoftware.com, la page Agents propose cent agents prêts à l'emploi. Ouvrez une fiche, par exemple Arthur, le relanceur de devis, et copiez son prompt système."
+    },
+    {
+      "key": "claude",
+      "text": "Dans Claude, créez un projet au nom de l'agent et collez le prompt dans les instructions. Dans ChatGPT, créez un GPT personnalisé et collez-le dans le même champ."
+    },
+    {
+      "key": "planit",
+      "text": "Dans Plan'It, c'est encore plus simple : l'orchestrateur choisit lui-même l'agent adapté à votre demande, parmi ceux dont les connecteurs sont branchés."
+    },
+    {
+      "key": "outils",
+      "text": "N'activez que les outils listés sur la fiche. Ceux qui agissent chez vos clients, comme l'envoi d'un e-mail, restent en validation obligatoire."
+    },
+    {
+      "key": "recap",
+      "text": "Un prompt, quelques outils, et un collègue IA qui fait son métier."
+    },
+    {
+      "key": "outro",
+      "text": "Dans la prochaine formation, on confie à cet agent une routine. À tout de suite !"
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "Agents IA · Étape 2",
+      "title": "Créer un agent spécialisé",
+      "em": "agent"
+    },
+    {
+      "at": "recette",
+      "type": "points",
+      "title": "Les 3 ingrédients d'un agent",
+      "em": "3 ingrédients",
+      "items": [
+        "Un assistant : Claude, ChatGPT, Plan'It",
+        "Un prompt système : son métier, ses règles",
+        "Des outils MCP choisis"
+      ]
+    },
+    {
+      "at": "fiche",
+      "type": "steps",
+      "title": "Partir d'une fiche",
+      "em": "fiche",
+      "items": [
+        "rapidosoftware.com/agents",
+        "Choisir l'agent : Arthur, relanceur de devis",
+        "Copier son prompt système",
+        "Noter ses outils MCP"
+      ]
+    },
+    {
+      "at": "claude",
+      "type": "compare",
+      "title": "Claude ou ChatGPT",
+      "em": "ChatGPT",
+      "left": [
+        "Claude",
+        "Créer un Projet",
+        "Coller dans Instructions",
+        "Activer les connecteurs"
+      ],
+      "right": [
+        "ChatGPT",
+        "Créer un GPT personnalisé",
+        "Coller dans Instructions",
+        "Ajouter les connecteurs"
+      ]
+    },
+    {
+      "at": "planit",
+      "type": "prompt",
+      "title": "Plan'It choisit l'agent",
+      "em": "Plan'It",
+      "prompt": "Relance les devis ouverts sans signature depuis 3 jours.",
+      "answer": [
+        "→ Orchestrateur : agent Arthur, relanceur de devis",
+        "✓ 3 devis trouvés dans RapidoCRM",
+        "→ 3 e-mails prêts, en attente de votre validation"
+      ]
+    },
+    {
+      "at": "outils",
+      "type": "points",
+      "title": "Juste les bons outils",
+      "em": "bons outils",
+      "items": [
+        "Lecture : list_devis, get_historique",
+        "Action : send_email en validation",
+        "Rien d'autre"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Un collègue IA qui fait son métier",
+      "em": "son métier"
+    }
+  ]
+}

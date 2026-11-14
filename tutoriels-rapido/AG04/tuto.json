@@ -1,0 +1,128 @@
+{
+  "id": "AG04",
+  "product": "suite",
+  "kicker": "Formation agents IA · 4/5",
+  "title": "Le loop-engineering : des routines qui s'améliorent",
+  "em": "s'améliorent",
+  "tag": "2 min · Avancé",
+  "intro": 3.0,
+  "outro": 4.5,
+  "end_cta": "Tous les tutoriels sur rapidosoftware.com",
+  "fixes": {
+    "MCP": "MCP",
+    "Claude": "Claude",
+    "Plan'It": "Plan'It",
+    "ChatGPT": "ChatGPT",
+    "KPI": "KPI"
+  },
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Une routine qui tourne, c'est bien. Une routine qui s'améliore toute seule, c'est mieux. C'est l'idée du loop-engineering."
+    },
+    {
+      "key": "boucle",
+      "text": "Le principe tient en quatre mots : exécuter, mesurer, comparer, ajuster. La routine tourne, on mesure son effet, on le compare à une référence, puis on corrige."
+    },
+    {
+      "key": "evaluation",
+      "text": "Après quelques exécutions, Plan'It évalue chaque routine et rend un verdict : efficace, à améliorer, sans effet mesuré, en échec, ou pas assez de données."
+    },
+    {
+      "key": "proposition",
+      "text": "Quand la routine peut mieux faire, Plan'It propose une seule modification à la fois : un autre horaire, un ciblage plus fin, ou un message plus court. Vous l'appliquez, ou vous la refusez."
+    },
+    {
+      "key": "signaux",
+      "text": "Il surveille aussi les signaux d'alerte : une routine silencieuse, en échec, trop chère ou sans effet est signalée, et peut être mise en pause."
+    },
+    {
+      "key": "prompt",
+      "text": "Chaque fiche agent fournit son prompt de loop-engineering : collez-le dans l'évaluation de la routine."
+    },
+    {
+      "key": "recap",
+      "text": "Exécuter, mesurer, comparer, ajuster : votre routine apprend de ses résultats."
+    },
+    {
+      "key": "outro",
+      "text": "Dans la dernière formation, on choisit les KPI qui pilotent cette boucle. À tout de suite !"
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "Agents IA · Étape 4",
+      "title": "Le loop-engineering",
+      "em": "loop-engineering"
+    },
+    {
+      "at": "boucle",
+      "type": "steps",
+      "title": "La boucle",
+      "em": "boucle",
+      "items": [
+        "Exécuter",
+        "Mesurer",
+        "Comparer à la référence",
+        "Ajuster"
+      ]
+    },
+    {
+      "at": "evaluation",
+      "type": "points",
+      "title": "Le verdict de Plan'It",
+      "em": "verdict",
+      "items": [
+        "Efficace",
+        "À améliorer",
+        "Sans effet mesuré",
+        "En échec",
+        "Pas assez de données"
+      ]
+    },
+    {
+      "at": "proposition",
+      "type": "prompt",
+      "title": "Une modification à la fois",
+      "em": "à la fois",
+      "prompt": "Évalue la routine « Relance des devis » sur ses 4 dernières exécutions.",
+      "answer": [
+        "→ Verdict : à améliorer (taux de signature stable)",
+        "✓ Proposition : relancer à 14 h au lieu de 9 h",
+        "→ Appliquer ou refuser ?"
+      ]
+    },
+    {
+      "at": "signaux",
+      "type": "points",
+      "title": "Les signaux d'alerte",
+      "em": "alerte",
+      "items": [
+        "Silencieuse",
+        "En échec",
+        "Trop chère",
+        "Sans effet"
+      ]
+    },
+    {
+      "at": "prompt",
+      "type": "steps",
+      "title": "Le prompt de la fiche",
+      "em": "prompt",
+      "items": [
+        "Ouvrir la fiche de l'agent",
+        "Section Loop-engineering",
+        "Copier le prompt",
+        "Le coller dans l'évaluation"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Votre routine apprend de ses résultats",
+      "em": "apprend"
+    }
+  ]
+}

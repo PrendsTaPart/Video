@@ -8,7 +8,7 @@ for EP in "$@"; do
   LOG="/tmp/claude-0/$EP.log"
   [ -f "_gabarit/avant-$EP.sh" ] && bash "_gabarit/avant-$EP.sh" > "$LOG" 2>&1
   case "$EP" in
-    F*|CMS24) bash _gabarit/make-formation.sh "$EP" >> "$LOG" 2>&1 ;;
+    F*|AG*|CMS24|CRM43) bash _gabarit/make-formation.sh "$EP" >> "$LOG" 2>&1 ;;
     CMS*) bash _gabarit/make.sh "$EP" http://127.0.0.1:8125 >> "$LOG" 2>&1 ;;
     CRM*) bash _gabarit/make.sh "$EP" http://127.0.0.1:8124 >> "$LOG" 2>&1 ;;
     RH*) bash _gabarit/make.sh "$EP" http://127.0.0.1:8126 >> "$LOG" 2>&1 ;;

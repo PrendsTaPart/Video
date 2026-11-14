@@ -1,0 +1,147 @@
+{
+  "id": "CRM43",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM · IA",
+  "title": "Connecter RapidoCRM à Claude (MCP)",
+  "em": "à Claude",
+  "tag": "2 min · Avancé",
+  "intro": 3.0,
+  "outro": 4.5,
+  "end_cta": "Tous les tutoriels sur rapidosoftware.com",
+  "fixes": {
+    "MCP": "MCP",
+    "Claude": "Claude"
+  },
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Et si vous pilotiez RapidoCRM en parlant simplement à Claude ? Grâce au connecteur MCP, c'est possible. Voyons comment l'installer, et ce qu'il change au quotidien."
+    },
+    {
+      "key": "outils",
+      "text": "Le connecteur RapidoCRM donne à Claude cent trente et un outils : vos clients, votre pipeline, vos devis et factures, vos campagnes, la fidélité et l'agent vocal."
+    },
+    {
+      "key": "installer",
+      "text": "Dans Claude, ouvrez les paramètres, rubrique Connecteurs, et ajoutez un connecteur personnalisé avec l'adresse crm point rapidosoftware point com, barre oblique MCP. Connectez-vous avec votre compte Rapido : Claude agit avec vos droits, sur votre société uniquement."
+    },
+    {
+      "key": "pipeline",
+      "text": "Premier exemple : demandez quelles affaires stagnent dans votre pipeline. Claude lit vos étapes, repère les opportunités sans mouvement, et propose une relance pour chacune."
+    },
+    {
+      "key": "devis",
+      "text": "Deuxième exemple : un devis en une phrase. Claude retrouve le client, choisit les produits du catalogue, applique la remise, et prépare le devis dans RapidoCRM."
+    },
+    {
+      "key": "relances",
+      "text": "Troisième exemple : les impayés. Claude liste les factures en retard et rédige une relance adaptée à chaque client."
+    },
+    {
+      "key": "controle",
+      "text": "Le bon réflexe : tout ce qui part chez un client, un e-mail, un SMS, un appel, attend votre validation. Claude propose, c'est vous qui décidez."
+    },
+    {
+      "key": "recap",
+      "text": "Un connecteur, cent trente et un outils, et votre CRM piloté en langage naturel."
+    },
+    {
+      "key": "outro",
+      "text": "Retrouvez les agents IA prêts à l'emploi et tous les tutoriels sur rapidosoftware.com. À bientôt !"
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "RapidoCRM · Connecteur MCP",
+      "title": "RapidoCRM piloté par Claude",
+      "em": "Claude"
+    },
+    {
+      "at": "outils",
+      "type": "points",
+      "title": "131 outils pour Claude",
+      "em": "131 outils",
+      "items": [
+        "Clients et entreprises",
+        "Pipeline et opportunités",
+        "Devis, factures, dépenses",
+        "Campagnes e-mail et SMS",
+        "Fidélité et agent vocal"
+      ]
+    },
+    {
+      "at": "installer",
+      "type": "steps",
+      "title": "Installer le connecteur",
+      "em": "Installer",
+      "items": [
+        "Claude › Paramètres › Connecteurs",
+        "Ajouter un connecteur personnalisé",
+        "Adresse : crm.rapidosoftware.com/mcp",
+        "Se connecter avec son compte Rapido"
+      ]
+    },
+    {
+      "at": "pipeline",
+      "type": "prompt",
+      "title": "Les affaires qui stagnent",
+      "em": "stagnent",
+      "prompt": "Quelles affaires n'ont pas bougé depuis 14 jours dans mon pipeline ?",
+      "answer": [
+        "✓ 3 opportunités sans mouvement",
+        "✓ Lotus Lounge · 21 jours · Négociation",
+        "→ Une relance proposée pour chacune"
+      ]
+    },
+    {
+      "at": "devis",
+      "type": "prompt",
+      "title": "Un devis en une phrase",
+      "em": "une phrase",
+      "prompt": "Prépare un devis pour Clover Bistro : site vitrine et 12 mois de maintenance, remise de 10 %.",
+      "answer": [
+        "✓ Client Clover Bistro retrouvé",
+        "✓ 2 produits du catalogue, remise 10 %",
+        "→ Devis prêt, à relire avant envoi"
+      ]
+    },
+    {
+      "at": "relances",
+      "type": "prompt",
+      "title": "Les impayés",
+      "em": "impayés",
+      "prompt": "Liste mes factures en retard et prépare une relance pour chacune.",
+      "answer": [
+        "✓ 2 factures échues trouvées",
+        "✓ 2 relances rédigées",
+        "→ En attente de votre validation"
+      ]
+    },
+    {
+      "at": "controle",
+      "type": "compare",
+      "title": "Claude propose, vous décidez",
+      "em": "vous décidez",
+      "left": [
+        "Claude",
+        "Lit vos données",
+        "Prépare devis et relances",
+        "Propose les envois"
+      ],
+      "right": [
+        "Vous",
+        "Relisez",
+        "Ajustez",
+        "Validez l'envoi"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Votre CRM piloté en langage naturel",
+      "em": "en langage naturel"
+    }
+  ]
+}

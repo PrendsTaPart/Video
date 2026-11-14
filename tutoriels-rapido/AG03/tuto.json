@@ -1,0 +1,132 @@
+{
+  "id": "AG03",
+  "product": "suite",
+  "kicker": "Formation agents IA · 3/5",
+  "title": "Confier une routine à un agent",
+  "em": "une routine",
+  "tag": "2 min · Intermédiaire",
+  "intro": 3.0,
+  "outro": 4.5,
+  "end_cta": "Tous les tutoriels sur rapidosoftware.com",
+  "fixes": {
+    "MCP": "MCP",
+    "Claude": "Claude",
+    "Plan'It": "Plan'It",
+    "ChatGPT": "ChatGPT",
+    "KPI": "KPI"
+  },
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Un agent devient vraiment utile quand il travaille sans qu'on le lui demande. C'est le rôle des routines. Voyons comment en créer une dans Plan'It."
+    },
+    {
+      "key": "definition",
+      "text": "Une routine est une mission planifiée : une consigne, une fréquence, des connecteurs, et un niveau d'autonomie."
+    },
+    {
+      "key": "consigne",
+      "text": "Écrivez une consigne précise, avec un critère clair. Par exemple : chaque matin, relance les devis ouverts sans signature depuis trois jours."
+    },
+    {
+      "key": "frequence",
+      "text": "Choisissez ensuite la fréquence, tous les jours à neuf heures, et les connecteurs : RapidoCRM pour les devis, Plan'It pour le suivi."
+    },
+    {
+      "key": "autonomie",
+      "text": "Le plus important : l'autonomie. En mode proposer, l'agent prépare tout, mais aucun e-mail ne part sans votre validation. Les outils qui agissent chez vos clients sont toujours confirmés."
+    },
+    {
+      "key": "cout",
+      "text": "Plan'It estime aussi le coût mensuel en crédits, et vous pouvez plafonner chaque exécution."
+    },
+    {
+      "key": "recap",
+      "text": "Une consigne, une fréquence, et un agent qui travaille pendant que vous faites autre chose."
+    },
+    {
+      "key": "outro",
+      "text": "Dans la prochaine formation, on apprend à améliorer cette routine avec le loop-engineering. À tout de suite !"
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "Agents IA · Étape 3",
+      "title": "Confier une routine",
+      "em": "routine"
+    },
+    {
+      "at": "definition",
+      "type": "points",
+      "title": "Une routine, c'est",
+      "em": "routine",
+      "items": [
+        "Une consigne",
+        "Une fréquence",
+        "Des connecteurs",
+        "Un niveau d'autonomie"
+      ]
+    },
+    {
+      "at": "consigne",
+      "type": "prompt",
+      "title": "Une consigne précise",
+      "em": "précise",
+      "prompt": "Chaque matin, relance les devis ouverts sans signature depuis 3 jours.",
+      "answer": [
+        "✓ Critère clair : ouvert, non signé, 3 jours",
+        "✓ Action unique : une relance",
+        "→ Mesurable : taux de signature"
+      ]
+    },
+    {
+      "at": "frequence",
+      "type": "steps",
+      "title": "Planifier",
+      "em": "Planifier",
+      "items": [
+        "Plan'It › Tâches › Nouvelle routine",
+        "Fréquence : tous les jours, 9 h",
+        "Connecteurs : rapidocrm, planit",
+        "Objectif : taux de signature"
+      ]
+    },
+    {
+      "at": "autonomie",
+      "type": "compare",
+      "title": "Vous gardez la main",
+      "em": "la main",
+      "left": [
+        "L'agent",
+        "Trouve les devis",
+        "Rédige les relances",
+        "Propose l'envoi"
+      ],
+      "right": [
+        "Vous",
+        "Relisez",
+        "Modifiez si besoin",
+        "Validez l'envoi"
+      ]
+    },
+    {
+      "at": "cout",
+      "type": "points",
+      "title": "Sous contrôle",
+      "em": "contrôle",
+      "items": [
+        "Coût mensuel estimé",
+        "Plafond de crédits par exécution",
+        "Pause en un clic"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Un agent qui travaille pour vous",
+      "em": "pour vous"
+    }
+  ]
+}

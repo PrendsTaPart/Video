@@ -282,3 +282,12 @@ Quota du compte atteint (101 crédits restants, ~800–1 000 par épisode). CRM2
 (`CRM23/tuto.json`) mais sans voix. Reprise dès recharge des crédits : générer la voix avec le texte
 des paragraphes (voix Adam - Instructor), puis `bash _gabarit/file.sh CRM23`.
 CRM20 : recentré sur « campagnes automatiques » (bouton de la liste Clients + suivi des envois programmés).
+
+## Formations agents IA (14/11/2026) — page /academie/agents-ia du site
+
+Motion design (gabarit formation, voix Adam), une par étape du guide :
+- [ ] AG01 — Connecter un MCP à son assistant IA
+- [ ] AG02 — Créer un agent IA spécialisé
+- [ ] AG03 — Confier une routine à un agent
+- [ ] AG04 — Le loop-engineering : des routines qui s'améliorent
+- [ ] AG05 — Les KPI qui pilotent le loop-engineering

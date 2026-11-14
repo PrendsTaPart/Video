@@ -10,7 +10,9 @@ ICI = os.path.dirname(os.path.abspath(__file__))
 RACINE = os.path.dirname(ICI)
 out = sys.argv[1]
 pub = json.load(open(os.path.join(RACINE, 'publication.json')))
-LIBELLE = {'crm': 'RapidoCRM', 'cms': 'RapidoCMS', 'rh': 'RapidoRH'}
+LIBELLE = {'crm': 'RapidoCRM', 'cms': 'RapidoCMS', 'rh': 'RapidoRH', 'suite': 'Suite Rapido'}
+# Formations : métiers (F..) et agents IA (AG..)
+est_formation = lambda i: i.startswith(('F', 'AG'))
 episodes = []
 for e in pub:
     if not e.get('video'):
@@ -22,9 +24,9 @@ for e in pub:
     episodes.append({
         'id': e['id'],
         'slug': e['id'].lower(),
-        'categorie': 'formation' if e['id'].startswith('F') else e['produit'],
+        'categorie': 'formation' if est_formation(e['id']) else e['produit'],
         'produit': LIBELLE.get(e['produit'], 'Rapido'),
-        'format': 'Formation' if e['id'].startswith('F') else 'Tutoriel',
+        'format': 'Formation' if est_formation(e['id']) else 'Tutoriel',
         'titre': e['titre'],
         'accent': c.get('em', ''),
         'tag': e.get('tag', ''),

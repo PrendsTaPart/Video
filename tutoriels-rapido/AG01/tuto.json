@@ -1,0 +1,126 @@
+{
+  "id": "AG01",
+  "product": "suite",
+  "kicker": "Formation agents IA · 1/5",
+  "title": "Connecter un MCP à son assistant IA",
+  "em": "un MCP",
+  "tag": "2 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "end_cta": "Tous les tutoriels sur rapidosoftware.com",
+  "fixes": {
+    "MCP": "MCP",
+    "Claude": "Claude",
+    "Plan'It": "Plan'It",
+    "ChatGPT": "ChatGPT",
+    "KPI": "KPI"
+  },
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Votre assistant IA peut travailler directement dans vos logiciels Rapido. Il suffit de le connecter, une seule fois, grâce à MCP. Voyons comment."
+    },
+    {
+      "key": "mcp",
+      "text": "MCP, pour Model Context Protocol, est un standard ouvert. Il donne à un assistant IA des outils : lire vos devis, créer un brouillon, déplacer une tâche. RapidoCRM en expose cent trente et un, RapidoCMS quarante-cinq, et RapidoRH vingt-deux."
+    },
+    {
+      "key": "claude",
+      "text": "Dans Claude, ouvrez les paramètres, rubrique Connecteurs, et ajoutez un connecteur personnalisé avec l'adresse de votre logiciel Rapido."
+    },
+    {
+      "key": "chatgpt",
+      "text": "Dans ChatGPT, le principe est le même : dans les paramètres des connecteurs, activez le mode développeur selon votre offre, puis créez un connecteur avec la même adresse."
+    },
+    {
+      "key": "compte",
+      "text": "Connectez-vous ensuite avec votre compte Rapido. L'assistant agit avec vos droits, et uniquement sur votre entreprise."
+    },
+    {
+      "key": "test",
+      "text": "Pour vérifier, posez une question simple : quels sont mes devis en attente ? La réponse vient directement de RapidoCRM."
+    },
+    {
+      "key": "recap",
+      "text": "Une adresse, une connexion, et votre assistant devient un collègue qui connaît vos logiciels."
+    },
+    {
+      "key": "outro",
+      "text": "Dans la prochaine formation, on transforme cet assistant en agent spécialisé. À tout de suite !"
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "Agents IA · Étape 1",
+      "title": "Connecter un MCP",
+      "em": "MCP"
+    },
+    {
+      "at": "mcp",
+      "type": "points",
+      "title": "198 outils dans les 3 Rapido",
+      "em": "198 outils",
+      "items": [
+        "RapidoCRM · 131 outils",
+        "RapidoCMS · 45 outils",
+        "RapidoRH · 22 outils",
+        "Un standard ouvert : MCP"
+      ]
+    },
+    {
+      "at": "claude",
+      "type": "steps",
+      "title": "Dans Claude",
+      "em": "Claude",
+      "items": [
+        "Paramètres › Connecteurs",
+        "Ajouter un connecteur personnalisé",
+        "Adresse : crm.rapidosoftware.com/mcp",
+        "Se connecter avec son compte Rapido"
+      ]
+    },
+    {
+      "at": "chatgpt",
+      "type": "steps",
+      "title": "Dans ChatGPT",
+      "em": "ChatGPT",
+      "items": [
+        "Paramètres › Applications et connecteurs",
+        "Activer le mode développeur",
+        "Créer un connecteur MCP",
+        "Authentification OAuth"
+      ]
+    },
+    {
+      "at": "compte",
+      "type": "points",
+      "title": "Vos droits, votre entreprise",
+      "em": "Vos droits",
+      "items": [
+        "Connexion avec votre compte Rapido",
+        "Données de votre entreprise uniquement",
+        "Révocable à tout moment"
+      ]
+    },
+    {
+      "at": "test",
+      "type": "prompt",
+      "title": "Premier test",
+      "em": "test",
+      "prompt": "Quels sont mes devis en attente ?",
+      "answer": [
+        "✓ 4 devis en attente lus dans RapidoCRM",
+        "✓ Dont 2 ouverts par le client",
+        "→ Voulez-vous que je les relance ?"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Votre assistant connaît vos logiciels",
+      "em": "connaît vos logiciels"
+    }
+  ]
+}
