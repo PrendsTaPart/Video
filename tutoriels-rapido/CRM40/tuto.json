@@ -1,0 +1,130 @@
+{
+  "id": "CRM40",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "La bibliothèque de prompts",
+  "em": "prompts",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/prompts",
+  "type_delay": 30,
+  "fixes": {},
+  "end_cta": "Prochain épisode : les notifications",
+  "thumb_shot": "fin.png",
+  "mocks": [
+    {
+      "url": "**/api/prompts/generate_text",
+      "delay": 2.0,
+      "json": {
+        "content": "Objet : Un site qui fait venir vos clients\n\nBonjour,\n\nJe me permets de vous contacter car Maison Lafitte mérite d'être trouvée en un clic par les amateurs de cuisine du quartier. Nous créons des sites vitrines de 5 pages, livrés en 3 semaines et optimisés pour Google : vos clients vous trouvent, réservent et reviennent.\n\nSeriez-vous disponible pour un échange téléphonique de 15 minutes cette semaine ?\n\nBien à vous,\nKarim Bernard"
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Envie d'un premier jet en quelques secondes ? La page Prompts de RapidoCRM vous donne des modèles prêts à l'emploi pour l'IA : e-mails, SMS, stratégies, contrats ou visuels."
+    },
+    {
+      "key": "catalogue",
+      "text": "Choisissez une catégorie en haut, ou piochez dans les propositions, comme cet e-mail de prospection à froid."
+    },
+    {
+      "key": "mots",
+      "text": "Les mots entre crochets deviennent des champs : remplissez le nom du client, son secteur, votre produit et son bénéfice."
+    },
+    {
+      "key": "generer",
+      "text": "Cliquez sur générer : le texte apparaît dans l'aperçu, prêt à être relu et retouché. Chaque génération utilise les crédits IA de votre forfait."
+    },
+    {
+      "key": "mes",
+      "text": "Vos propres modèles vont dans mes prompts. Ajouter un prompt : un titre, le texte avec ses mots entre crochets, et il vous attend pour vos prochaines rédactions."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on fait le tour des notifications. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "catalogue",
+      "label": "Les modèles",
+      "hover": "text=Prompt type texte",
+      "zone": ".card >> nth=1"
+    },
+    {
+      "at": "catalogue",
+      "hover": "a[href*='prompt_result'] >> nth=0"
+    },
+    {
+      "at": "mots",
+      "label": "Les mots-clés",
+      "click": "a[href*='prompt_result'] >> nth=0",
+      "fill": [
+        [
+          "input[placeholder^=\"Nom de l\"]",
+          "Maison Lafitte"
+        ],
+        [
+          "input[placeholder^=\"Secteur\"]",
+          "Restauration"
+        ],
+        [
+          "input[placeholder^=\"Produit\"]",
+          "Site vitrine"
+        ],
+        [
+          "input[placeholder^=\"Bénéfice\"]",
+          "Plus de réservations"
+        ]
+      ]
+    },
+    {
+      "at": "generer",
+      "label": "Générer",
+      "click": "#generate-btn",
+      "zone": "#full-editor-7"
+    },
+    {
+      "at": "mes",
+      "label": "Vos prompts",
+      "goto": "/prompts/mes_prompts"
+    },
+    {
+      "at": "mes",
+      "click": "button[data-bs-target='#typePromptModal']"
+    },
+    {
+      "at": "mes",
+      "click": "#typePromptModal button[data-bs-target='#addPromptTextModal']",
+      "fill": [
+        [
+          "#addPromptTextModal input[name=titre]",
+          "Relance devis sans réponse"
+        ],
+        [
+          "#addPromptTextModal textarea[name=prompt]",
+          "Rédige une relance courte pour [nom du client] au sujet du devis [numéro du devis], avec un créneau d'appel."
+        ]
+      ],
+      "zone": "#addPromptTextModal .modal-content"
+    },
+    {
+      "at": "mes",
+      "click": "#addPromptTextModal button[type=submit]"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ]
+}
