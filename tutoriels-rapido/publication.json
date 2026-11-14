@@ -300,6 +300,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM30.png"
   },
   {
+    "id": "CRM43",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM · IA",
+    "titre": "Connecter RapidoCRM à Claude (MCP)",
+    "tag": "2 min · Avancé",
+    "duree_s": 89,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM43.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM43.png"
+  },
+  {
     "id": "CRM44",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",
