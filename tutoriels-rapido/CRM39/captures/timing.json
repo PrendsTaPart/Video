@@ -1,0 +1,45 @@
+{
+  "voiceStartInCapture": 4.991,
+  "paragraphs": {
+    "intro": 0.04,
+    "ajout": 8.14,
+    "historique": 17.34,
+    "global": 25.14,
+    "biblio": 29.34,
+    "biblio_ajout": 36.14,
+    "outro": 43.94,
+    "end": 48.1
+  },
+  "zones": {
+    "ajout": [
+      766,
+      274,
+      388,
+      532
+    ],
+    "historique": [
+      380,
+      169,
+      1420,
+      150
+    ],
+    "global": [
+      380,
+      182,
+      1420,
+      294
+    ],
+    "biblio": [
+      380,
+      212,
+      1420,
+      362
+    ],
+    "biblio_ajout": [
+      380,
+      212,
+      1420,
+      434
+    ]
+  }
+}
