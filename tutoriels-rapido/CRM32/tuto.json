@@ -1,0 +1,173 @@
+{
+  "id": "CRM32",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Les événements et la prise de rendez-vous",
+  "em": "événements",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/events",
+  "type_delay": 30,
+  "fixes": {},
+  "end_cta": "Prochain épisode : l'agenda et les rendez-vous",
+  "thumb_shot": "fin.png",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Portes ouvertes, démonstrations, ateliers : avec les événements de RapidoCRM, vos clients réservent eux-mêmes leur créneau, et chaque rendez-vous arrive dans votre CRM."
+    },
+    {
+      "key": "liste",
+      "text": "Dans le menu Événements, vous retrouvez vos événements actifs et passés, avec le nombre de rendez-vous pris pour chacun."
+    },
+    {
+      "key": "creer",
+      "text": "Cliquez sur créer un événement. Donnez-lui un nom, un logo, la personne qui reçoit les clients, et la durée de chaque rendez-vous."
+    },
+    {
+      "key": "dates",
+      "text": "Choisissez le type, présentiel, visio ou téléphone, puis les dates. RapidoCRM propose des horaires pour chaque journée : ajustez-les, ou ajoutez une pause."
+    },
+    {
+      "key": "ciblage",
+      "text": "À l'étape Ciblage, choisissez le formulaire que remplira le client, l'e-mail de confirmation, et la page vers laquelle il sera redirigé."
+    },
+    {
+      "key": "apercu",
+      "text": "La visualisation montre exactement la page de réservation que verront vos clients. Il ne reste plus qu'à l'envoyer."
+    },
+    {
+      "key": "rdv",
+      "text": "Les réservations arrivent dans le détail de l'événement : en attente, réalisées ou annulées, avec le client et l'horaire."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on organise son agenda et ses rendez-vous. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "liste",
+      "label": "Vos événements",
+      "hover": "text=Evènement actifs",
+      "zone": "table",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "creer",
+      "label": "Créer un événement",
+      "click": "text=créer un événement",
+      "fill": [
+        [
+          "input[placeholder^=\"Entrer un nom\"]",
+          "Soirée dégustation clients"
+        ]
+      ],
+      "upload": [
+        [
+          "input[type=file]",
+          "../_gabarit/logo-demo.png"
+        ]
+      ],
+      "select": [
+        [
+          "select:has(option[value=\"4\"])",
+          "Léa Martin"
+        ],
+        [
+          "select:has(option[value=\"1 heure\"])",
+          "30 min"
+        ]
+      ],
+      "zone": "Paramétrer votre évènement"
+    },
+    {
+      "at": "dates",
+      "label": "Type et horaires",
+      "fill": [
+        [
+          "input[type=date] >> nth=0",
+          "2026-11-26"
+        ],
+        [
+          "input[type=date] >> nth=1",
+          "2026-11-27"
+        ]
+      ],
+      "select": [
+        [
+          "select:has(option[value=\"Présentiel\"])",
+          "Présentiel"
+        ]
+      ],
+      "wait": 0.6
+    },
+    {
+      "at": "dates",
+      "fill": [
+        [
+          "input[placeholder=\"Entrez l'adresse\"]",
+          "12 quai des Chartrons, Bordeaux"
+        ]
+      ],
+      "zone": "text=Horaires par jour",
+      "zone_closest": "form, .card, .tab-pane"
+    },
+    {
+      "at": "ciblage",
+      "label": "Le ciblage",
+      "click": "button:has-text(\"suivant\")",
+      "select": [
+        [
+          "select:has(option:text(\"Demande de devis\"))",
+          "Demande de devis"
+        ]
+      ],
+      "wait": 0.4
+    },
+    {
+      "at": "ciblage",
+      "click": "input[type=radio]",
+      "fill": [
+        [
+          "input[placeholder=\"Entrez le lien de redirection\"]",
+          "https://www.exemple.test/merci"
+        ],
+        [
+          "input[placeholder^=\"Ex: Voir plus\"]",
+          "Découvrir nos offres"
+        ]
+      ],
+      "zone": "Cibler votre évènement",
+      "zone_closest": "form, .tab-pane, .card"
+    },
+    {
+      "at": "apercu",
+      "label": "L'aperçu",
+      "click": "button:has-text(\"suivant\")",
+      "wait": 0.8,
+      "zone": "text=Choisissez une date",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "rdv",
+      "label": "Les réservations",
+      "goto": "/events/2/details",
+      "wait": 0.6,
+      "zone": "table",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ]
+}
