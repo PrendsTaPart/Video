@@ -300,6 +300,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM30.png"
   },
   {
+    "id": "CRM32",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Les événements et la prise de rendez-vous",
+    "tag": "1 min · Débutant",
+    "duree_s": 66,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM32.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM32.png"
+  },
+  {
     "id": "CRM43",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM · IA",
