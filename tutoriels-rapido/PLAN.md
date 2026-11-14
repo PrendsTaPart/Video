@@ -133,6 +133,8 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM41 — Notifications
 - [ ] CRM42 — Facturation de l'abonnement et packs
 - [ ] CRM43 — Connecter RapidoCRM à Claude (MCP)
+- [x] CRM44 — Les relances automatiques (devis et factures) + suivi d'ouverture des devis
+- [x] CRM45 — Le prévisionnel pondéré et les affaires à relancer (pipeline)
 
 ## B. RapidoCMS — un tutoriel par onglet / écran
 

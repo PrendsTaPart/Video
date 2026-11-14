@@ -1,0 +1,45 @@
+{
+  "voiceStartInCapture": 2.992,
+  "paragraphs": {
+    "intro": 0.03,
+    "pondere": 6.39,
+    "relancer": 16.95,
+    "carte": 21.39,
+    "configurer": 28.47,
+    "seuil": 37.43,
+    "outro": 42.11,
+    "end": 45.68
+  },
+  "zones": {
+    "pondere": [
+      275,
+      185,
+      1630,
+      130
+    ],
+    "relancer": [
+      1497,
+      186,
+      413,
+      131
+    ],
+    "carte": [
+      278,
+      717,
+      533,
+      254
+    ],
+    "configurer": [
+      294,
+      236,
+      1592,
+      548
+    ],
+    "seuil": [
+      294,
+      530,
+      1592,
+      85
+    ]
+  }
+}

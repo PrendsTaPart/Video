@@ -1,0 +1,52 @@
+{
+  "voiceStartInCapture": 2.863,
+  "paragraphs": {
+    "intro": 0.04,
+    "reglages": 6.06,
+    "delais": 13.88,
+    "message": 22.56,
+    "prevues": 28.76,
+    "historique": 33.56,
+    "suivi": 36.5,
+    "outro": 41.72,
+    "end": 46.6
+  },
+  "zones": {
+    "reglages": [
+      262,
+      136,
+      1656,
+      519
+    ],
+    "delais": [
+      270,
+      152,
+      826,
+      503
+    ],
+    "message": [
+      270,
+      0,
+      826,
+      503
+    ],
+    "prevues": [
+      270,
+      381,
+      1640,
+      311
+    ],
+    "historique": [
+      270,
+      688,
+      1640,
+      368
+    ],
+    "suivi": [
+      412,
+      698,
+      1356,
+      382
+    ]
+  }
+}

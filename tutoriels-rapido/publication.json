@@ -300,6 +300,26 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM30.png"
   },
   {
+    "id": "CRM44",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Les relances automatiques",
+    "tag": "1 min · Débutant",
+    "duree_s": 55,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM44.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM44.png"
+  },
+  {
+    "id": "CRM45",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Le prévisionnel et les affaires à relancer",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 54,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM45.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM45.png"
+  },
+  {
     "id": "CMS01",
     "produit": "cms",
     "kicker": "Tutoriel RapidoCMS",

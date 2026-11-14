@@ -1,0 +1,105 @@
+{
+ "id": "CRM44",
+ "product": "crm",
+ "kicker": "Tutoriel RapidoCRM",
+ "title": "Les relances automatiques",
+ "em": "automatiques",
+ "tag": "1 min · Débutant",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/relances",
+ "type_delay": 30,
+ "fixes": {},
+ "end_cta": "Prochain épisode : le pipeline pondéré",
+ "thumb_shot": "fin.png",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on laisse RapidoCRM relancer à votre place les devis sans réponse et les factures impayées."
+  },
+  {
+   "key": "reglages",
+   "text": "Dans le menu Relances, activez les relances des devis, des factures, ou des deux. Elles partent chaque matin, depuis votre propre adresse e-mail."
+  },
+  {
+   "key": "delais",
+   "text": "Choisissez vos délais : par exemple trois, sept et quatorze jours après l'envoi d'un devis. Tout s'arrête dès que le devis est signé, ou que la facture est payée."
+  },
+  {
+   "key": "message",
+   "text": "Le message est prêt à l'emploi, et vous pouvez le personnaliser. Le lien de signature en ligne y est ajouté automatiquement."
+  },
+  {
+   "key": "prevues",
+   "text": "Chaque jour, la liste des relances prévues montre qui sera relancé, et à quel niveau."
+  },
+  {
+   "key": "historique",
+   "text": "L'historique garde la trace de chaque relance envoyée."
+  },
+  {
+   "key": "suivi",
+   "text": "Et dans la liste des devis, vous savez enfin si votre client a ouvert son devis, et combien de fois."
+  },
+  {
+   "key": "outro",
+   "text": "Dans le prochain tutoriel, on pilote son pipeline avec le prévisionnel pondéré. À tout de suite !"
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "reglages",
+   "label": "Activer",
+   "hover": "label[for=devis_actif]",
+   "zone": "form .row.g-3"
+  },
+  {
+   "at": "delais",
+   "label": "Les délais",
+   "click": "input[name=devis_jours]",
+   "wait": 0.3,
+   "zone_closest": ".card",
+   "zone": "input[name=devis_jours]"
+  },
+  {
+   "at": "message",
+   "label": "Le message",
+   "scroll": "textarea[name=message_devis]",
+   "zone_closest": ".card",
+   "zone": "textarea[name=message_devis]"
+  },
+  {
+   "at": "prevues",
+   "label": "Prévues aujourd'hui",
+   "scroll": "h5:has-text(\"Prévues\")",
+   "zone_closest": ".card",
+   "zone": "h5:has-text(\"Prévues\")"
+  },
+  {
+   "at": "historique",
+   "label": "L'historique",
+   "scroll": "h5:has-text(\"Historique\")",
+   "zone_closest": ".card",
+   "zone": "h5:has-text(\"Historique\")"
+  },
+  {
+   "at": "suivi",
+   "label": "Vu par le client",
+   "goto": "/facturation",
+   "click": "button[data-bs-target=\"#devislist\"]",
+   "wait": 1.5,
+   "zone": "#devislist table"
+  },
+  {
+   "at": "outro",
+   "wait": 0.3
+  }
+ ]
+}

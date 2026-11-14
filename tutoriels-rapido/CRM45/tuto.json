@@ -1,0 +1,105 @@
+{
+ "id": "CRM45",
+ "product": "crm",
+ "kicker": "Tutoriel RapidoCRM",
+ "title": "Le prévisionnel et les affaires à relancer",
+ "em": "à relancer",
+ "tag": "1 min · Intermédiaire",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/admin/pipeline",
+ "type_delay": 60,
+ "fixes": {},
+ "end_cta": "Prochain épisode : les événements",
+ "thumb_shot": "fin.png",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on pilote son pipeline avec le prévisionnel pondéré, et on repère les affaires qui stagnent."
+  },
+  {
+   "key": "pondere",
+   "text": "En haut du pipeline, le montant total additionne toutes vos opportunités. Le prévisionnel pondéré, lui, tient compte de leurs chances de succès : c'est ce que vous pouvez raisonnablement espérer signer."
+  },
+  {
+   "key": "relancer",
+   "text": "Le compteur À relancer signale les opportunités restées trop longtemps sans mouvement."
+  },
+  {
+   "key": "carte",
+   "text": "Sur le tableau, elles sont repérées par un liseré rouge et le nombre de jours écoulés. Déplacer la carte remet le compteur à zéro."
+  },
+  {
+   "key": "configurer",
+   "text": "Le bouton Configurer règle, étape par étape, la probabilité de gain et le seuil d'inactivité. Par défaut, une affaire est signalée après quatorze jours."
+  },
+  {
+   "key": "seuil",
+   "text": "En négociation, sept jours suffisent souvent : indiquez-le, puis enregistrez."
+  },
+  {
+   "key": "outro",
+   "text": "Dans le prochain tutoriel, on organise ses événements. À tout de suite !"
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "pondere",
+   "label": "Le prévisionnel pondéré",
+   "hover": "p:has-text(\"Prévisionnel pondéré\")",
+   "zone": [
+    275,
+    185,
+    1630,
+    130
+   ]
+  },
+  {
+   "at": "relancer",
+   "label": "À relancer",
+   "hover": "p:has-text(\"À relancer\")",
+   "zone": "p:has-text(\"À relancer\")",
+   "zone_closest": ".card"
+  },
+  {
+   "at": "carte",
+   "label": "Les affaires qui stagnent",
+   "hover": ".item-stagne >> nth=0",
+   "zone": ".item-stagne >> nth=0"
+  },
+  {
+   "at": "configurer",
+   "label": "Configurer",
+   "click": "a:has-text(\"Configurer\")",
+   "wait": 1.0,
+   "zone": "table"
+  },
+  {
+   "at": "seuil",
+   "label": "Le seuil d'inactivité",
+   "fill": [
+    [
+     "tr:has-text(\"Négociation\") input[name$=\"[jours_inactivite]\"]",
+     "7"
+    ]
+   ],
+   "zone": "tr:has-text(\"Négociation\")"
+  },
+  {
+   "at": "seuil",
+   "click": "button:has-text(\"Enregistrer\")",
+   "wait": 1.0
+  },
+  {
+   "at": "outro",
+   "wait": 0.3
+  }
+ ]
+}
