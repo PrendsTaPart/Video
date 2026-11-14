@@ -122,7 +122,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM30 — Cartes de visite digitales
 - [ ] CRM31 — Salons et leads de salon
 - [x] CRM32 — Événements
-- [ ] CRM33 — Agenda et rendez-vous
+- [x] CRM33 — Agenda et rendez-vous
 - [ ] CRM34 — Visioconférence
 - [ ] CRM35 — Tâches
 - [ ] CRM36 — Équipe commerciale et objectifs

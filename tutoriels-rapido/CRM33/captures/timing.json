@@ -1,0 +1,39 @@
+{
+  "voiceStartInCapture": 3.269,
+  "paragraphs": {
+    "intro": 0.02,
+    "vues": 7.84,
+    "ajouter": 14.1,
+    "type": 20.34,
+    "envoi": 30.74,
+    "modifier": 39.38,
+    "outro": 47.54,
+    "end": 51.59
+  },
+  "zones": {
+    "vues": [
+      680,
+      142,
+      1112,
+      938
+    ],
+    "ajouter": [
+      666,
+      14,
+      528,
+      1066
+    ],
+    "envoi": [
+      680,
+      142,
+      1112,
+      938
+    ],
+    "modifier": [
+      666,
+      14,
+      528,
+      1066
+    ]
+  }
+}

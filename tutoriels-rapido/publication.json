@@ -310,6 +310,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM32.png"
   },
   {
+    "id": "CRM33",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "L'agenda et les rendez-vous",
+    "tag": "1 min · Débutant",
+    "duree_s": 60,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM33.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM33.png"
+  },
+  {
     "id": "CRM43",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM · IA",

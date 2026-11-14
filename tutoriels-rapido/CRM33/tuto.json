@@ -1,0 +1,148 @@
+{
+  "id": "CRM33",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "L'agenda et les rendez-vous",
+  "em": "agenda",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/agenda",
+  "type_delay": 28,
+  "fixes": {},
+  "end_cta": "Prochain épisode : les tâches",
+  "thumb_shot": "fin.png",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Démonstrations, signatures, appels de suivi : l'agenda de RapidoCRM réunit les rendez-vous de toute votre équipe, au même endroit."
+    },
+    {
+      "key": "vues",
+      "text": "Passez de la vue mois à la semaine, au jour ou à la liste. Chaque rendez-vous affiche son horaire et son client."
+    },
+    {
+      "key": "ajouter",
+      "text": "Pour en créer un, cliquez sur ajouter un rendez-vous. Donnez-lui un titre, puis une heure de début et de fin."
+    },
+    {
+      "key": "type",
+      "text": "Choisissez le type : visioconférence, présentiel ou téléphone. Pour un rendez-vous sur place, indiquez l'adresse. Ajoutez ensuite l'e-mail du client et les organisateurs de votre équipe."
+    },
+    {
+      "key": "envoi",
+      "text": "Le mode d'envoi décide comment part l'invitation : par SMS, par e-mail, ou les deux. Enregistrez : le rendez-vous apparaît aussitôt dans l'agenda."
+    },
+    {
+      "key": "modifier",
+      "text": "Un clic sur un rendez-vous l'ouvre : vous pouvez le décaler, changer son type, ou le supprimer. Vous pouvez aussi le glisser directement à une autre date."
+    },
+    {
+      "key": "outro",
+      "text": "Dans le prochain tutoriel, on organise les tâches de l'équipe. À tout de suite !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "vues",
+      "label": "Les vues",
+      "click": "text=Semaine",
+      "wait": 1.2,
+      "zone": ".fc",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "vues",
+      "click": "text=Liste",
+      "wait": 0.8
+    },
+    {
+      "at": "ajouter",
+      "label": "Ajouter un rendez-vous",
+      "click": "text=ajouter un rendez-vous",
+      "fill": [
+        [
+          ".modal.show #eventTitle",
+          "Démo agent vocal — Lotus Lounge"
+        ],
+        [
+          ".modal.show input[type=datetime-local] >> nth=0",
+          "2026-11-17T15:00"
+        ],
+        [
+          ".modal.show input[type=datetime-local] >> nth=1",
+          "2026-11-17T15:30"
+        ]
+      ],
+      "zone": ".modal.show .modal-content"
+    },
+    {
+      "at": "type",
+      "label": "Type et invités",
+      "click": ".modal.show label[for=defaultRadio2]",
+      "fill": [
+        [
+          ".modal.show input[placeholder=Adresse]",
+          "12 quai des Chartrons, Bordeaux"
+        ],
+        [
+          ".modal.show .tagify__input >> nth=0",
+          "contact@lotuslounge.exemple.test"
+        ],
+        [
+          ".modal.show .tagify__input >> nth=1",
+          "Léa"
+        ]
+      ],
+      "wait": 0.4
+    },
+    {
+      "at": "type",
+      "click": ".tagify__dropdown__item",
+      "wait": 0.3
+    },
+    {
+      "at": "envoi",
+      "label": "L'invitation",
+      "click": ".modal.show label[for=defaultRadio8]",
+      "fill": [
+        [
+          ".modal.show textarea",
+          "Présenter l'agent vocal et ses tarifs."
+        ]
+      ],
+      "wait": 0.4
+    },
+    {
+      "at": "envoi",
+      "click": ".modal.show button[type=submit]",
+      "wait": 1.2,
+      "zone": ".fc",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "modifier",
+      "label": "Modifier",
+      "click": "text=Mois",
+      "wait": 0.6
+    },
+    {
+      "at": "modifier",
+      "click": ".fc-event >> nth=3",
+      "wait": 0.8,
+      "zone": ".modal.show .modal-content"
+    },
+    {
+      "at": "outro",
+      "eval": "document.querySelector('.modal.show .btn-close') && document.querySelector('.modal.show .btn-close').click()",
+      "wait": 0.3
+    }
+  ]
+}
