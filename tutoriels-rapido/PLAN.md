@@ -189,6 +189,22 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] RH18 — Abonnement et facturation
 - [ ] RH19 — Connecter RapidoRH à Claude (MCP)
 
+### RapidoRH V2 — employés IA et collaboration (voix Adam, une prise)
+- [ ] RH20 — Transformer une idée en projet
+- [ ] RH21 — Valider le travail d'un employé IA
+- [ ] RH22 — Créer et activer une routine
+- [ ] RH23 — La messagerie d'équipe
+- [ ] RH24 — Demander une information et débloquer une tâche
+- [ ] RH25 — Le forum d'entraide et la connaissance validée
+- [ ] RH26 — Les paramètres IA de l'entreprise
+- [ ] RH27 — Réunions Whereby (bloqué : aucune clé Whereby fournie)
+- [ ] RH28 — Découvrir vos employés IA
+- [ ] RH29 — Configurer et activer un employé IA
+- [ ] RH30 — Confier une tâche à un employé IA
+- [ ] RH31 — Suivre le travail de vos employés IA
+- [ ] RH32 — Demander un congé (collaborateur)
+- [ ] RH33 — Répondre dans la messagerie (collaborateur ; voix non générée : crédits ElevenLabs épuisés)
+
 ## D. Formations métier (avec Rapido et l'IA)
 
 ### Marketing & communication
