@@ -1,0 +1,48 @@
+1
+00:00:02,500 --> 00:00:06,714
+Le journal d'audit, réservé au propriétaire du
+compte, garde la trace de chaque
+
+2
+00:00:06,764 --> 00:00:07,685
+action importante.
+
+3
+00:00:07,735 --> 00:00:08,861
+Pour chaque entrée :
+
+4
+00:00:08,911 --> 00:00:13,681
+la date, l'auteur — humain, employé IA ou
+système —, l'action et l'objet concerné.
+
+5
+00:00:13,731 --> 00:00:15,327
+Rien ne peut y être modifié.
+
+6
+00:00:15,377 --> 00:00:17,134
+Filtrez par auteur ou par période :
+
+7
+00:00:17,184 --> 00:00:19,766
+ici, seulement les actions
+faites par une personne.
+
+8
+00:00:19,816 --> 00:00:21,953
+Ouvrez le détail d'une entrée :
+
+9
+00:00:22,003 --> 00:00:26,749
+les clés et mots de passe n'y
+apparaissent jamais, ils sont masqués.
+
+10
+00:00:26,799 --> 00:00:31,907
+Enfin, cliquez sur une trace pour retrouver
+toutes les actions d'une même requête ou
+
+11
+00:00:31,957 --> 00:00:33,196
+d'une même exécution.
