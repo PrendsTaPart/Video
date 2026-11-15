@@ -1,0 +1,94 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 30,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM69",
+  "title": "Connecter RapidoRH : l'équipe IA au travail",
+  "em": "RapidoRH",
+  "tag": "2 min · Intermédiaire",
+  "start_path": "/connexions",
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "connecter",
+      "label": "Connecter RapidoRH",
+      "zone": ".card:has(.app-logo) >> nth=0",
+      "fill": [
+        [
+          "input[name=url] >> nth=0",
+          "https://rh.exemple.fr/mcp/rapidorh"
+        ]
+      ]
+    },
+    {
+      "at": "connecter",
+      "hover": "button:has-text(\"Connecter RapidoRH\")"
+    },
+    {
+      "at": "regle",
+      "label": "Les règles",
+      "scroll": "Envoyer l’équipe RapidoRH au travail",
+      "zone": "Envoyer l’équipe RapidoRH au travail"
+    },
+    {
+      "at": "evenements",
+      "scroll": "table.table-cartes >> nth=0",
+      "zone": "table.table-cartes >> nth=0"
+    },
+    {
+      "at": "assigner",
+      "hover": "table.table-cartes >> nth=0"
+    },
+    {
+      "at": "journal",
+      "label": "Journal",
+      "scroll": "Journal",
+      "zone": "Journal"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "RapidoCRM peut envoyer votre équipe au travail : employés ou agents IA de RapidoRH reçoivent une tâche dès qu'un client agit. Voyons comment."
+    },
+    {
+      "key": "connecter",
+      "text": "Dans Connexions, collez l'adresse du serveur MCP de RapidoRH et cliquez sur Connecter. Vous autorisez l'accès dans RapidoRH, avec la même connexion sécurisée que Claude ou ChatGPT : aucun mot de passe n'est stocké."
+    },
+    {
+      "key": "regle",
+      "text": "Créez ensuite une règle : quand un événement arrive, alors une tâche est créée dans un projet RapidoRH, ou un e-mail, ou un WhatsApp est envoyé."
+    },
+    {
+      "key": "evenements",
+      "text": "Dix-huit événements sont disponibles : formulaire rempli, demande de devis, devis ouvert ou signé, facture payée, e-mail reçu, prospect chaud, rendez-vous, achat en ligne, carte digitale, fidélité…"
+    },
+    {
+      "key": "assigner",
+      "text": "Choisissez le projet, la liste de tâches, la priorité, et les membres à assigner : un employé, ou un agent IA spécialisé. Le titre peut reprendre le nom du client et le montant."
+    },
+    {
+      "key": "journal",
+      "text": "Chaque envoi est tracé dans le journal, et le bouton test envoie un exemple avec des données fictives."
+    },
+    {
+      "key": "outro",
+      "text": "Votre CRM et votre équipe travaillent désormais ensemble. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ]
+}

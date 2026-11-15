@@ -140,6 +140,28 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM48 — Les CTA : pop-up, bannière et encart sur votre site (publié)
 - [x] CRM49 — Statistiques des CTA et test A/B (publié)
 
+### Nouveaux modules (séance du 15/11, 16 h 50) — ordre de production
+- [ ] CRM50 — Sites et pages : publication, SEO, sitemap
+- [ ] CRM51 — Connecter son nom de domaine
+- [ ] CRM52 — Le sous-domaine d'envoi des e-mails (SPF, DKIM, DMARC)
+- [ ] CRM53 — L'éditeur : sections et modèles gratuits
+- [ ] CRM54 — L'éditeur sur téléphone
+- [ ] CRM55 — Les ventes en ligne : bouton d'achat et paiement (Stripe en mode test, aucun paiement réel)
+- [ ] CRM56 — Les lead magnets
+- [ ] CRM57 — Le tunnel de vente créé par Claude (outil creer_tunnel_de_vente)
+- [ ] CRM58 — Bibliothèque : partage suivi et statistiques de téléchargement
+- [ ] CRM59 — Connecter son IA (Claude, ChatGPT, Le Chat, Grok)
+- [ ] CRM60 — Les 100 agents IA
+- [ ] CRM61 — Un prompt par outil MCP
+- [ ] CRM62 — Fusionner les doublons
+- [ ] CRM63 — Les séquences de prospection
+- [ ] CRM64 — Le score des prospects
+- [ ] CRM65 — La carte de visite digitale en 1 clic (boucle marketing)
+- [ ] CRM66 — Les puces NFC
+- [ ] CRM67 — Le programme de fidélité et la caisse
+- [ ] CRM68 — Le formulaire de devis en ligne
+- [ ] CRM69 — Connecter RapidoRH : l'équipe IA au travail
+
 ## B. RapidoCMS — un tutoriel par onglet / écran
 
 - [x] CMS01 — Créer son compte et choisir un pack
@@ -225,6 +247,10 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] F13 — Le devis qui se signe : présentation et relances
 - [ ] F14 — Salons : avant, pendant, après
 - [ ] F15 — Fidéliser : programmes, jeux concours, avis
+- [ ] F40 — Transformer sa carte de visite en machine à prospects (carte digitale, NFC, devis en ligne)
+- [ ] F41 — Du lead magnet à la vente : construire son tunnel avec Claude
+- [ ] F42 — Fidélité digitale : tampons, parrainage et récompenses qui font revenir
+- [ ] F43 — Faire travailler son équipe IA : CRM + RapidoRH connectés
 
 ### Gestion de projet & équipe
 - [ ] F16 — Lancer un projet : découpage, rôles, échéances

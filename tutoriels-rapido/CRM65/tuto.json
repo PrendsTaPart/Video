@@ -1,0 +1,125 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 30,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "id": "CRM65",
+  "title": "La carte de visite digitale en 1 clic",
+  "em": "carte de visite",
+  "tag": "2 min · Débutant",
+  "start_path": "/cartes",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Votre carte de visite peut faire bien plus que donner un numéro : elle peut lancer toute votre prospection. Voyons comment la configurer en un clic."
+    },
+    {
+      "key": "unclic",
+      "text": "Dans Cartes digitales, le bouton Tout configurer crée la carte de votre société à partir de votre profil, relie votre formulaire de devis, votre guide gratuit, la prise de rendez-vous et la fidélité, puis active les workflows de suivi."
+    },
+    {
+      "key": "apercu",
+      "text": "À droite, l'aperçu montre la carte telle que vos contacts la verront sur leur téléphone : appel, e-mail, WhatsApp, itinéraire, et l'enregistrement du contact en un geste."
+    },
+    {
+      "key": "outils",
+      "text": "Plus bas, la section Relier la carte à vos outils propose vos formulaires, lead magnets et événements : un clic suffit pour les ajouter en bouton."
+    },
+    {
+      "key": "design",
+      "text": "Choisissez ensuite un des dix modèles : vos informations le remplissent automatiquement. Vous pouvez aussi le personnaliser dans l'éditeur."
+    },
+    {
+      "key": "partage",
+      "text": "Partagez la carte par lien, par QR code à imprimer, ou par une puce NFC. Chaque vue, chaque clic et chaque contact enregistré est compté dans les statistiques."
+    },
+    {
+      "key": "public",
+      "text": "Quand un visiteur laisse ses coordonnées, il devient un contact, son score augmente, et votre équipe reçoit la tâche de le rappeler."
+    },
+    {
+      "key": "outro",
+      "text": "Votre carte est prête à travailler pour vous. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "intro",
+      "hover": "button:has-text(\"Tout configurer\")"
+    },
+    {
+      "at": "unclic",
+      "label": "Configurer en 1 clic",
+      "zone": "button:has-text(\"Tout configurer\")",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "unclic",
+      "click": "button:has-text(\"Tout configurer\")",
+      "wait": 1.5
+    },
+    {
+      "at": "apercu",
+      "label": "Aperçu sur téléphone",
+      "zone": ".telephone",
+      "hover": ".telephone"
+    },
+    {
+      "at": "outils",
+      "label": "Relier vos outils",
+      "scroll": "Relier la carte à vos outils",
+      "zone": "Relier la carte à vos outils"
+    },
+    {
+      "at": "outils",
+      "hover": "form:has(button:has-text(\"Ajouter\")) button >> nth=0"
+    },
+    {
+      "at": "design",
+      "label": "Dix modèles",
+      "scroll": "Design",
+      "zone": "Design"
+    },
+    {
+      "at": "design",
+      "click": ".modele-choix >> nth=3",
+      "wait": 1.5
+    },
+    {
+      "at": "partage",
+      "label": "Lien, QR code, NFC",
+      "scroll": "Partager",
+      "zone": "Partager"
+    },
+    {
+      "at": "partage",
+      "hover": "a:has-text(\"QR code (SVG\")"
+    },
+    {
+      "at": "public",
+      "label": "La carte en ligne",
+      "goto": "/v/lea-martin?src=qr",
+      "wait": 1.0
+    },
+    {
+      "at": "public",
+      "scroll": ".rc-echange",
+      "zone": ".rc-echange"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ]
+}

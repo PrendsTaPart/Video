@@ -1,0 +1,135 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 30,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM68",
+  "title": "Le formulaire de devis en ligne",
+  "em": "devis en ligne",
+  "tag": "2 min · Débutant",
+  "start_path": "/formulaires-devis",
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "creer",
+      "label": "Créer le formulaire",
+      "click": "a.carte-site >> nth=0",
+      "wait": 1.2
+    },
+    {
+      "at": "creer",
+      "scroll": "Produits proposés",
+      "zone": "Produits proposés"
+    },
+    {
+      "at": "options",
+      "label": "Rendez-vous et options",
+      "top": true,
+      "zone": "form#formFd .card >> nth=0"
+    },
+    {
+      "at": "public",
+      "label": "Le formulaire public",
+      "goto": "/devis-en-ligne/demande-de-devis"
+    },
+    {
+      "at": "public",
+      "click": ".plus >> nth=0"
+    },
+    {
+      "at": "public",
+      "click": ".plus >> nth=5",
+      "wait": 0.6
+    },
+    {
+      "at": "public",
+      "scroll": "#ttc",
+      "zone": ".carte:has(#ttc)"
+    },
+    {
+      "at": "resultat",
+      "fill_now": [
+        [
+          "input[name=prenom]",
+          "Paul"
+        ],
+        [
+          "input[name=nom]",
+          "Lafitte"
+        ],
+        [
+          "input[name=email]",
+          "paul.lafitte@exemple.test"
+        ]
+      ],
+      "eval": "document.querySelector('input[name=consentement]').checked=true"
+    },
+    {
+      "at": "resultat",
+      "click": "button:has-text(\"Recevoir mon devis\")",
+      "wait": 1.5
+    },
+    {
+      "at": "resultat",
+      "zone": ".ok"
+    },
+    {
+      "at": "suite",
+      "label": "Statistiques",
+      "goto": "/formulaires-devis"
+    },
+    {
+      "at": "suite",
+      "click": "a.carte-site >> nth=0",
+      "wait": 1.0
+    },
+    {
+      "at": "suite",
+      "zone": ".row.g-3"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Et si vos clients composaient leur devis eux-mêmes, à toute heure ? C'est le formulaire de devis en ligne. Voyons comment le créer."
+    },
+    {
+      "key": "creer",
+      "text": "Dans Formulaires de devis, donnez un titre : le formulaire est créé avec tous vos produits. Décochez ceux que vous ne voulez pas proposer."
+    },
+    {
+      "key": "options",
+      "text": "Choisissez le rendez-vous proposé après la demande, la durée de validité, la couleur, et l'envoi automatique du devis par e-mail."
+    },
+    {
+      "key": "public",
+      "text": "Côté client, il choisit ses produits et ses quantités : le total se calcule en direct. Il saisit ses coordonnées, et reçoit son devis."
+    },
+    {
+      "key": "resultat",
+      "text": "Il peut télécharger le PDF, le signer en ligne, et réserver un rendez-vous. Le devis apparaît aussitôt dans votre facturation, en attente de signature."
+    },
+    {
+      "key": "suite",
+      "text": "Le contact est créé, son score augmente, vos workflows se déclenchent, et votre équipe RapidoRH peut recevoir la tâche de l'appeler. Les statistiques suivent les vues, les demandes et les devis signés."
+    },
+    {
+      "key": "outro",
+      "text": "Votre formulaire de devis est en ligne. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ]
+}

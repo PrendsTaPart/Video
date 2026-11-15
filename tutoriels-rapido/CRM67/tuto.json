@@ -1,0 +1,115 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 30,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM67",
+  "title": "Le programme de fidélité et la caisse",
+  "em": "fidélité",
+  "tag": "2 min · Débutant",
+  "start_path": "/fidelite",
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "programme",
+      "label": "Créer un programme",
+      "click": "a.carte-site >> nth=0",
+      "wait": 1.2
+    },
+    {
+      "at": "programme",
+      "zone": "Fonctionnement"
+    },
+    {
+      "at": "bonus",
+      "label": "Bonus et parrainage",
+      "scroll": "Bonus",
+      "zone": "Bonus"
+    },
+    {
+      "at": "design",
+      "label": "Design de la carte",
+      "scroll": "Design de la carte",
+      "zone": ".telephone",
+      "hover": ".telephone"
+    },
+    {
+      "at": "caisse",
+      "label": "La caisse",
+      "goto": "/fidelite/caisse"
+    },
+    {
+      "at": "caisse",
+      "fill": [
+        [
+          "#q",
+          "Paul"
+        ]
+      ]
+    },
+    {
+      "at": "caisse",
+      "click": "#formRecherche button",
+      "wait": 1.0
+    },
+    {
+      "at": "caisse",
+      "click": "button:has-text(\"Ajouter une visite\")",
+      "wait": 1.2
+    },
+    {
+      "at": "recompense",
+      "label": "Récompenses",
+      "zone": "Récompenses",
+      "hover": "button:has-text(\"Utiliser\") >> nth=0"
+    },
+    {
+      "at": "recompense",
+      "zone": "Historique"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Faites revenir vos clients avec une carte de fidélité dans leur téléphone, à tampons ou à points. Voyons comment la créer et l'utiliser en caisse."
+    },
+    {
+      "key": "programme",
+      "text": "Dans Fidélité, créez un programme en une minute. Choisissez le type de carte, le nombre de cases, et les récompenses par paliers, comme un café offert au dixième passage."
+    },
+    {
+      "key": "bonus",
+      "text": "Ajoutez des bonus : à l'inscription, le jour de l'anniversaire, et pour chaque filleul parrainé. Les points peuvent aussi expirer après quelques mois sans visite."
+    },
+    {
+      "key": "design",
+      "text": "Choisissez un des dix modèles de carte. À droite, l'aperçu montre la page d'inscription que vos clients ouvrent en scannant le QR code du comptoir."
+    },
+    {
+      "key": "caisse",
+      "text": "En caisse, scannez la carte du client ou cherchez-le par son nom, son e-mail ou son téléphone. Un bouton ajoute sa visite."
+    },
+    {
+      "key": "recompense",
+      "text": "Quand une récompense est débloquée, elle s'allume : un clic sur Utiliser la remet, et le solde est mis à jour. L'historique garde chaque mouvement."
+    },
+    {
+      "key": "outro",
+      "text": "Votre programme de fidélité est prêt. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ]
+}

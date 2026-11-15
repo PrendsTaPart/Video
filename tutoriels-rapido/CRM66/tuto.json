@@ -1,0 +1,97 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 30,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM66",
+  "title": "Les puces NFC",
+  "em": "NFC",
+  "tag": "1 min · Débutant",
+  "start_path": "/cartes/nfc",
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "creer",
+      "label": "Nouvelle puce",
+      "zone": "Nouvelle puce",
+      "fill": [
+        [
+          "input[name=libelle]",
+          "Présentoir caisse"
+        ]
+      ]
+    },
+    {
+      "at": "creer",
+      "select": [
+        [
+          "#cibleType",
+          "L’inscription à un programme de fidélité"
+        ]
+      ],
+      "wait": 0.8
+    },
+    {
+      "at": "adresse",
+      "label": "Programmer la puce",
+      "zone": "Programmer une puce",
+      "hover": "Programmer une puce"
+    },
+    {
+      "at": "changer",
+      "label": "Scans et destination",
+      "zone": "table.table-cartes",
+      "hover": "table.table-cartes tbody tr >> nth=0"
+    },
+    {
+      "at": "impression",
+      "label": "Design d'impression",
+      "hover": "a[title=\"Design d’impression\"] >> nth=0"
+    },
+    {
+      "at": "impression",
+      "goto": "/cartes/nfc/1/impression",
+      "wait": 1.2
+    },
+    {
+      "at": "outro",
+      "goto": "/cartes/nfc"
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Une carte, un autocollant ou un présentoir NFC : le client approche son téléphone, et votre carte digitale s'ouvre. Voici comment le mettre en place."
+    },
+    {
+      "key": "creer",
+      "text": "Dans Puces NFC, donnez un nom à la puce, puis choisissez ce qu'elle ouvre : une carte digitale, l'inscription à votre programme de fidélité, ou une autre adresse, comme vos avis Google."
+    },
+    {
+      "key": "adresse",
+      "text": "RapidoCRM vous donne une adresse courte. Programmez-la une seule fois sur la puce avec une application gratuite d'écriture NFC, en suivant les quatre étapes affichées."
+    },
+    {
+      "key": "changer",
+      "text": "Ensuite, vous pouvez changer la destination à tout moment, sans reprogrammer la puce. Chaque scan est compté, avec la date du dernier passage."
+    },
+    {
+      "key": "impression",
+      "text": "Le bouton imprimante ouvre le design de la carte, au format carte de visite, avec un QR code de secours pour les téléphones sans NFC."
+    },
+    {
+      "key": "outro",
+      "text": "Vos puces NFC sont prêtes. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ]
+}
