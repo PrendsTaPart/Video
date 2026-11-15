@@ -1,0 +1,31 @@
+1
+00:00:00,350 --> 00:00:03,170
+Des humains et des employés IA, dans la même équipe.
+
+2
+00:00:03,350 --> 00:00:05,190
+Voici RapidoRH, un de mes projets.
+
+3
+00:00:05,590 --> 00:00:08,510
+Je choisis un modèle, et le projet se crée avec son équipe.
+
+4
+00:00:08,730 --> 00:00:11,650
+Les employés IA préparent le travail. Moi, je valide.
+
+5
+00:00:11,870 --> 00:00:14,290
+Une réunion devient des tâches, sans rien recopier.
+
+6
+00:00:14,550 --> 00:00:17,010
+Le recrutement est suivi, de l'annonce à l'arrivée.
+
+7
+00:00:17,210 --> 00:00:19,730
+Et chaque action est notée : qui a fait quoi, et quand.
+
+8
+00:00:19,990 --> 00:00:22,760
+Le lien est sous la vidéo : clique sur « Voir le projet ».
