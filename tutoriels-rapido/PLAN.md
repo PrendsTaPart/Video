@@ -399,4 +399,4 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   corriger le sélecteur fautif dans `CRM65/tuto.json` si besoin (essai à blanc conseillé).
 - Voix CRM66–CRM69 : NON générées (dépense refusée par Michael pendant la séance) — demander son accord avant de générer.
 - Copie de tournage `rapido-crm-film` synchronisée (migrations 160000, 170000, 180000) et données fictives créées
-  (`_gabarit` : voir le script `demo-cartes.php` du scratchpad, à recréer au besoin : carte « Léa Martin », programme « Carte café », formulaire « Demande de devis »).
+  (`_gabarit` : `_gabarit/cartes-demo.php`, via `php artisan tinker` : carte « Léa Martin », programme « Carte café », formulaire « Demande de devis »).
