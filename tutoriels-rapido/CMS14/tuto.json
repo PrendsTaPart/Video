@@ -1,0 +1,125 @@
+{
+  "product": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 22,
+  "thumb_shot": "fin.png",
+  "fixes": {
+    "IA": "IA"
+  },
+  "id": "CMS14",
+  "title": "Les propositions de contenus",
+  "em": "propositions",
+  "tag": "1 min · Débutant",
+  "start_path": "/dashboard/prompts/propositions",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "mocks": [
+    {
+      "url": "**/api/prompts/generate_text",
+      "delay": 2.0,
+      "json": {
+        "success": true,
+        "content": "🎄 Offre de Noël au Studio Lumière : -20 % sur tous nos albums photo jusqu’au 24 décembre !\n\nOffrez des souvenirs qui durent : vos plus belles photos de l’année, imprimées sur un papier d’art.\n\n👉 Réservez votre séance en message privé ou au 05 00 00 00 00.\n\n#Bordeaux #PhotographeBordeaux #CadeauDeNoël"
+      }
+    },
+    {
+      "url": "**/api/prompts/generate_template",
+      "delay": 2.0,
+      "json": {
+        "success": true,
+        "content": "🎄 Offre de Noël au Studio Lumière : -20 % sur tous nos albums photo jusqu’au 24 décembre !\n\nOffrez des souvenirs qui durent : vos plus belles photos de l’année, imprimées sur un papier d’art.\n\n👉 Réservez votre séance en message privé ou au 05 00 00 00 00.\n\n#Bordeaux #PhotographeBordeaux #CadeauDeNoël"
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "En panne d'idée ? Les propositions de contenus offrent des prompts prêts à l'emploi, classés par objectif."
+    },
+    {
+      "key": "filtres",
+      "text": "Promotion, engagement, expertise, événement, et des idées de visuels : filtrez par type pour aller droit au but."
+    },
+    {
+      "key": "choisir",
+      "text": "Choisissez une proposition, par exemple Annonce de soldes. Remplissez les champs : la réduction, le produit et la date."
+    },
+    {
+      "key": "generer",
+      "text": "Cliquez sur Générer : un post complet apparaît, avec un appel à l'action. Retouchez-le, puis programmez-le."
+    },
+    {
+      "key": "garder",
+      "text": "Une proposition vous plaît ? Ajoutez votre propre version dans Mes prompts pour la réutiliser."
+    },
+    {
+      "key": "outro",
+      "text": "Vous avez de quoi publier toute l'année. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "filtres",
+      "label": "Filtrer les idées",
+      "click": "button:has-text(\"Filtre\")"
+    },
+    {
+      "at": "filtres",
+      "click": "button:has-text(\"Filtre\")",
+      "hover": "a:has-text(\"Sondage en story\")"
+    },
+    {
+      "at": "choisir",
+      "label": "Choisir une proposition",
+      "click": "a:has-text(\"Annonce de soldes\")",
+      "fill": [
+        [
+          "#input0",
+          "-20 %"
+        ],
+        [
+          "#input1",
+          "nos albums photo"
+        ],
+        [
+          "#input2",
+          "24 décembre"
+        ]
+      ]
+    },
+    {
+      "at": "generer",
+      "label": "Générer",
+      "click": "#generate-btn",
+      "wait": 2.6
+    },
+    {
+      "at": "generer",
+      "hover": ".ql-editor",
+      "zone": [
+        850,
+        240,
+        570,
+        320
+      ]
+    },
+    {
+      "at": "garder",
+      "label": "Garder la sienne",
+      "goto": "/dashboard/prompts/mes_prompts",
+      "hover": "button:has-text(\"Ajouter un prompt\")"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ]
+}

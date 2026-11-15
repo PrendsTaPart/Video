@@ -1,0 +1,81 @@
+{
+  "product": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 22,
+  "thumb_shot": "fin.png",
+  "fixes": {
+    "IA": "IA"
+  },
+  "id": "CMS12",
+  "title": "Mes templates",
+  "em": "templates",
+  "tag": "1 min · Débutant",
+  "start_path": "/dashboard/editeur/mes-templates",
+  "end_cta": "Prochain épisode : vos prompts",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Vos modèles de visuels, créés dans l'éditeur ou choisis dans la galerie, sont regroupés dans Mes templates."
+    },
+    {
+      "key": "liste",
+      "text": "Chaque template affiche son aperçu, son type et sa date de création. Le filtre et la recherche aident à retrouver le bon."
+    },
+    {
+      "key": "menu",
+      "text": "Le menu d'un template permet de télécharger le visuel, ou de le modifier dans l'éditeur pour changer un texte, une couleur ou une photo."
+    },
+    {
+      "key": "galerie",
+      "text": "Dans Templates, la galerie propose des modèles prêts à l'emploi : un clic, et le modèle rejoint vos templates."
+    },
+    {
+      "key": "outro",
+      "text": "Gardez vos modèles à portée de main. Dans le prochain tutoriel, on enregistre vos meilleurs prompts."
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "liste",
+      "label": "Vos templates",
+      "hover": "tbody tr >> nth=0",
+      "zone": [
+        260,
+        180,
+        1180,
+        420
+      ]
+    },
+    {
+      "at": "liste",
+      "hover": "button:has-text(\"Filtre\")"
+    },
+    {
+      "at": "menu",
+      "label": "Télécharger ou modifier",
+      "click": "#dropdownMenuButton >> nth=0"
+    },
+    {
+      "at": "menu",
+      "hover": ".dropdown-menu.show a:has-text(\"Modifier\")"
+    },
+    {
+      "at": "galerie",
+      "label": "La galerie",
+      "goto": "/dashboard/editeur"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ]
+}

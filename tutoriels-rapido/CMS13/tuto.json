@@ -1,0 +1,139 @@
+{
+  "product": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 22,
+  "thumb_shot": "fin.png",
+  "fixes": {
+    "IA": "IA"
+  },
+  "id": "CMS13",
+  "title": "Mes prompts",
+  "em": "prompts",
+  "tag": "1 min · Débutant",
+  "start_path": "/dashboard/prompts/mes_prompts",
+  "end_cta": "Prochain épisode : les propositions de contenus",
+  "mocks": [
+    {
+      "url": "**/api/prompts/generate_text",
+      "delay": 2.0,
+      "json": {
+        "success": true,
+        "content": "🎄 Offre de Noël au Studio Lumière : -20 % sur tous nos albums photo jusqu’au 24 décembre !\n\nOffrez des souvenirs qui durent : vos plus belles photos de l’année, imprimées sur un papier d’art.\n\n👉 Réservez votre séance en message privé ou au 05 00 00 00 00.\n\n#Bordeaux #PhotographeBordeaux #CadeauDeNoël"
+      }
+    },
+    {
+      "url": "**/api/prompts/generate_template",
+      "delay": 2.0,
+      "json": {
+        "success": true,
+        "content": "🎄 Offre de Noël au Studio Lumière : -20 % sur tous nos albums photo jusqu’au 24 décembre !\n\nOffrez des souvenirs qui durent : vos plus belles photos de l’année, imprimées sur un papier d’art.\n\n👉 Réservez votre séance en message privé ou au 05 00 00 00 00.\n\n#Bordeaux #PhotographeBordeaux #CadeauDeNoël"
+      }
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Une consigne qui donne de bons résultats ? Enregistrez-la dans Mes prompts pour la réutiliser en un clic."
+    },
+    {
+      "key": "cartes",
+      "text": "Chaque prompt porte un badge : texte pour rédiger un post, visuel pour générer une image."
+    },
+    {
+      "key": "ajouter",
+      "text": "Ajouter un prompt, puis Prompt pour texte : donnez-lui un titre et écrivez la consigne. Les mots entre crochets deviendront des champs à remplir à chaque utilisation."
+    },
+    {
+      "key": "utiliser",
+      "text": "Pour l'utiliser, ouvrez-le : remplissez le champ, ici l'offre, puis cliquez sur Générer."
+    },
+    {
+      "key": "resultat",
+      "text": "Le texte arrive dans l'aperçu, prêt à être retouché puis publié. Vous pouvez aussi le tester dans votre assistant IA préféré."
+    },
+    {
+      "key": "outro",
+      "text": "Vos meilleures consignes sont à l'abri. Dans le prochain tutoriel, on explore les propositions de contenus."
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "cartes",
+      "label": "Vos prompts",
+      "hover": "a:has-text(\"Post promo saisonnière\")"
+    },
+    {
+      "at": "cartes",
+      "hover": "a:has-text(\"Visuel offre de Noël\")"
+    },
+    {
+      "at": "ajouter",
+      "label": "Ajouter un prompt",
+      "click": "button:has-text(\"Ajouter un prompt\")"
+    },
+    {
+      "at": "ajouter",
+      "click": "button:has-text(\"Prompt pour texte\")",
+      "fill": [
+        [
+          "#addPromptTextModal input[name=titre]",
+          "Annonce atelier photo"
+        ],
+        [
+          "#addPromptTextModal textarea[name=prompt]",
+          "Rédige un post Instagram pour annoncer notre atelier [thème] du [date], places limitées, ton enthousiaste."
+        ]
+      ],
+      "zone": "#addPromptTextModal .modal-content"
+    },
+    {
+      "at": "ajouter",
+      "click": "#addPromptTextModal button:has-text(\"Enregistrer\")",
+      "wait": 1.0
+    },
+    {
+      "at": "utiliser",
+      "label": "Utiliser un prompt",
+      "click": "a:has-text(\"Post promo saisonnière\")",
+      "fill": [
+        [
+          "#input0",
+          "nos albums photo de Noël, -20 % jusqu’au 24 décembre"
+        ]
+      ]
+    },
+    {
+      "at": "utiliser",
+      "click": "#generate-btn",
+      "wait": 2.6
+    },
+    {
+      "at": "resultat",
+      "label": "Le résultat",
+      "hover": ".ql-editor",
+      "zone": [
+        850,
+        240,
+        570,
+        320
+      ]
+    },
+    {
+      "at": "resultat",
+      "hover": "#dropdownLLM"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "product": "cms",
+  "kicker": "Tutoriel RapidoCMS",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 22,
+  "thumb_shot": "fin.png",
+  "fixes": {
+    "IA": "IA"
+  },
+  "id": "CMS11",
+  "title": "La bibliothèque de fichiers",
+  "em": "bibliothèque",
+  "tag": "1 min · Débutant",
+  "start_path": "/dashboard/bibliotheque",
+  "end_cta": "Prochain épisode : vos templates",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Vos photos, visuels et vidéos sont rangés au même endroit : la bibliothèque de fichiers."
+    },
+    {
+      "key": "grille",
+      "text": "Chaque fichier affiche son aperçu, son nom et sa taille. En haut, la jauge indique l'espace de stockage utilisé par rapport à votre abonnement."
+    },
+    {
+      "key": "chercher",
+      "text": "Pour retrouver un visuel, filtrez par type ou tapez un mot du nom : par exemple, Noël."
+    },
+    {
+      "key": "actions",
+      "text": "Sous chaque fichier, quatre boutons : copier son lien, l'associer à une publication, le renommer ou le supprimer."
+    },
+    {
+      "key": "ajouter",
+      "text": "Ajouter un fichier ouvre l'import depuis votre ordinateur. Les visuels générés par l'IA arrivent ici automatiquement."
+    },
+    {
+      "key": "outro",
+      "text": "Votre bibliothèque est prête. Dans le prochain tutoriel, on découvre vos templates."
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "grille",
+      "label": "Vos fichiers",
+      "hover": ".card >> nth=1",
+      "zone": [
+        260,
+        130,
+        1180,
+        640
+      ]
+    },
+    {
+      "at": "grille",
+      "hover": "text=utilisé sur"
+    },
+    {
+      "at": "chercher",
+      "label": "Filtrer et chercher",
+      "click": "button:has-text(\"Filtre\")"
+    },
+    {
+      "at": "chercher",
+      "fill": [
+        [
+          "#searchBib",
+          "Noël"
+        ]
+      ],
+      "click": "button:has-text(\"Filtre\")"
+    },
+    {
+      "at": "chercher",
+      "click": "button[onclick=\"appliquer_filtre_bib()\"]",
+      "wait": 1.0
+    },
+    {
+      "at": "actions",
+      "label": "Les actions",
+      "goto": "/dashboard/bibliotheque",
+      "hover": "button[onclick^=\"copyfile\"] >> nth=0"
+    },
+    {
+      "at": "actions",
+      "hover": "button[onclick^=\"openAssocierModal\"] >> nth=0"
+    },
+    {
+      "at": "actions",
+      "hover": "button[onclick^=\"openEditModal\"] >> nth=0"
+    },
+    {
+      "at": "ajouter",
+      "label": "Ajouter un fichier",
+      "click": "button:has-text(\"Ajouter un fichier\")",
+      "zone": "#addFileModal .modal-content"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ]
+}
