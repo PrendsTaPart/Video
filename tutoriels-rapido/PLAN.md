@@ -161,6 +161,11 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM67 — Le programme de fidélité et la caisse
 - [ ] CRM68 — Le formulaire de devis en ligne
 - [ ] CRM69 — Connecter RapidoRH : l'équipe IA au travail
+- [ ] CRM70 — Téléphonie : numéros et standard (dès que le module existe)
+- [ ] CRM71 — Appeler un client depuis sa fiche et le prompteur temps réel
+- [ ] CRM72 — Analyse des appels, enregistrement et tâches envoyées à l'équipe IA
+- [ ] CRM73 — L'agent IA sur votre site web
+- [ ] CRM74 — Boîte de réception et tickets
 
 ## B. RapidoCMS — un tutoriel par onglet / écran
 

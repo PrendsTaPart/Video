@@ -34,7 +34,13 @@ Tâches qu'un humain doit faire (accès, comptes, argent, serveurs, validation).
 - [ ] Valider la voix « Adam — Instructor » sur un épisode pilote.
 - [ ] Publier sur les vrais réseaux sociaux / YouTube (les agents n'ont pas le droit de publier sur des comptes réels).
 
-## 5. Matériel et options
+## 5. Téléphonie VoIP (plan : rapido-crm/docs/PLAN_VOIP_2026-11-15.md)
+- [ ] Compte Twilio principal (sous-comptes par client), et compte Telnyx pour les appels vers mobiles (phase 2) ; moyens de paiement et plafonds de dépense.
+- [ ] Dossier réglementaire des numéros français (pièce d'identité, justificatif d'adresse, Kbis) ; demandes de portage des numéros existants des clients.
+- [ ] Clé de transcription (Deepgram ou Amazon Transcribe) et budget LLM ; instance AWS pour le service média temps réel, bucket S3 chiffré pour les enregistrements.
+- [ ] Valider les tarifs des packs Téléphonie Essentiel / IA et la mention d'information sur l'enregistrement (relecture juridique RGPD / CNIL).
+
+## 6. Matériel et options
 - [ ] Commander des puces NFC NTAG213/215 (cartes, autocollants, présentoir) et imprimer les designs (RapidoCRM › Puces NFC › imprimante).
 - [ ] Apple Wallet / Google Wallet (option) : créer les certificats émetteur (Apple Developer, Google Pay & Wallet Console).
 - [ ] Relecture juridique : mentions RGPD des formulaires publics (cartes, fidélité, devis), règlement du programme de fidélité, CGV.
