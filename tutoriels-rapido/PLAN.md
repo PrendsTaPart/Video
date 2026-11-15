@@ -137,6 +137,8 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM45 — Le prévisionnel pondéré et les affaires à relancer (pipeline)
 - [x] CRM46 — Personnaliser le design d'un formulaire
 - [x] CRM47 — Intégrer un formulaire à son site (iframe) et suivre les réponses
+- [x] CRM48 — Les CTA : pop-up, bannière et encart sur votre site (publié)
+- [x] CRM49 — Statistiques des CTA et test A/B (publié)
 
 ## B. RapidoCMS — un tutoriel par onglet / écran
 
@@ -323,3 +325,10 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   avec aperçu, réponses + export CSV, notifications, sécurité), fuseau horaire dans le profil entreprise.
 - Vidéos : CRM24 refait (lien public), CRM46 (design), CRM47 (intégration iframe sur un site fictif servi en local
   sur le port 8131 par _gabarit/site-demo, et suivi des réponses).
+
+### Session du 15/11 (nuit, suite) — CTA et audit concurrentiel (demande de Michael)
+- Recherche HubSpot (formats, ciblage, A/B, statistiques) et comparatifs CRM PME 2026 ; audit complet dans
+  rapido-crm/docs/AUDIT_CONCURRENTS_2026-11-15.md.
+- RapidoCRM : CTA refondus (4 formats, design, ciblage, période, A/B, widget, suivi, statistiques, 3 outils MCP),
+  désinscription des envois marketing (RGPD).
+- Vidéos : CRM48 (création d'un CTA pop-up et intégration sur le site fictif), CRM49 (statistiques et test A/B).

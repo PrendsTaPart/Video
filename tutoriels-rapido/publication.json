@@ -450,6 +450,26 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM47.png"
   },
   {
+    "id": "CRM48",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Les CTA : pop-up, bannière et encart sur votre site",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 70,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM48.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM48.png"
+  },
+  {
+    "id": "CRM49",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Statistiques des CTA et test A/B",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 58,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM49.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM49.png"
+  },
+  {
     "id": "CMS01",
     "produit": "cms",
     "kicker": "Tutoriel RapidoCMS",
