@@ -15,4 +15,6 @@ for EP in "$@"; do
   esac
   echo "EXIT=$?" >> "$LOG"
   [ -f "_gabarit/apres-$EP.sh" ] && bash "_gabarit/apres-$EP.sh" >> "$LOG" 2>&1
+  # Cache d'extraction de HyperFrames (~250 Mo par rendu) : purgé après chaque épisode, sinon le disque de la session se remplit.
+  find /tmp/hyperframes-extract-cache-0 -mindepth 1 -maxdepth 1 -type d -mmin +5 -exec rm -rf {} + 2>/dev/null
 done
