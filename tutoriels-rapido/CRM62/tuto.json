@@ -1,0 +1,113 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 30,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM62",
+  "title": "Fusionner les doublons",
+  "em": "doublons",
+  "tag": "1 min · Débutant",
+  "start_path": "/doublons?type=entreprise",
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "detecter",
+      "label": "Détection automatique",
+      "zone": "2 fiches semblables",
+      "zone_closest": ".card",
+      "hover": "2 fiches semblables"
+    },
+    {
+      "at": "ignorer",
+      "label": "Pas des doublons ?",
+      "hover": "Ce ne sont pas des doublons"
+    },
+    {
+      "at": "comparer",
+      "label": "Comparer",
+      "click": "Comparer et fusionner"
+    },
+    {
+      "at": "choisir",
+      "label": "Fiche gardée, champ par champ",
+      "zone": "table",
+      "hover": "input[name=\"principal\"] >> nth=0"
+    },
+    {
+      "at": "choisir",
+      "click": "input[name=\"choix[nom]\"] >> nth=0",
+      "wait": 0.6
+    },
+    {
+      "at": "historique",
+      "label": "Tout l'historique rattaché",
+      "zone": ".encadre",
+      "hover": ".encadre"
+    },
+    {
+      "at": "fusionner",
+      "label": "Fusionner",
+      "click": "#formFusion button.btn-primary",
+      "wait": 0.8,
+      "eval": "window.confirm = () => true"
+    },
+    {
+      "at": "contacts",
+      "label": "Contacts",
+      "click": "a[href*=\"type=contact\"]",
+      "wait": 0.6
+    },
+    {
+      "at": "outro",
+      "goto": "/doublons?type=contact"
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Le même client saisi deux fois, c'est un historique coupé en deux. RapidoCRM repère les doublons pour vous."
+    },
+    {
+      "key": "detecter",
+      "text": "Dans Doublons, les fiches semblables sont regroupées : même SIRET, même e-mail, même téléphone, ou un nom identique sans la forme juridique."
+    },
+    {
+      "key": "ignorer",
+      "text": "Si ce sont bien deux clients différents, cliquez sur « Ce ne sont pas des doublons » : le groupe ne reviendra plus."
+    },
+    {
+      "key": "comparer",
+      "text": "Sinon, cliquez sur « Comparer et fusionner »."
+    },
+    {
+      "key": "choisir",
+      "text": "Choisissez la fiche à garder, puis, champ par champ, la valeur à conserver. Les champs vides sont complétés avec ceux de l'autre fiche."
+    },
+    {
+      "key": "historique",
+      "text": "Contacts, devis, factures, e-mails, tâches et pipeline sont rattachés à la fiche gardée ; l'autre passe à la corbeille."
+    },
+    {
+      "key": "fusionner",
+      "text": "Cliquez sur Fusionner : la fusion apparaît dans l'historique."
+    },
+    {
+      "key": "contacts",
+      "text": "L'onglet Contacts fonctionne de la même manière, avec l'e-mail, le téléphone ou le prénom et le nom."
+    },
+    {
+      "key": "outro",
+      "text": "Une seule fiche par client, et tout son historique au même endroit."
+    }
+  ]
+}

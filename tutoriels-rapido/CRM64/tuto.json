@@ -1,0 +1,41 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 30,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM64",
+  "title": "Le score des prospects",
+  "em": "score",
+  "tag": "1 min · Débutant",
+  "start_path": "/score-prospects",
+  "scenes": [
+    { "at": "intro", "wait": 0.4 },
+    { "at": "bareme", "label": "Le barème", "zone": "Barème", "hover": "input[name=\"bareme[email_ouvert]\"]" },
+    { "at": "bareme", "hover": "input[name=\"bareme[devis_demande]\"]" },
+    { "at": "modifier", "label": "À votre main", "fill": [["input[name=\"bareme[rdv]\"]", "25"]] },
+    { "at": "seuil", "label": "Le seuil « chaud »", "zone": "input[name=seuil_chaud]", "fill": [["input[name=seuil_chaud]", "55"]] },
+    { "at": "options", "label": "Tâche et décroissance", "hover": "label[for=tache]" },
+    { "at": "options", "hover": "label[for=decr]" },
+    { "at": "options", "click": "form.card button.btn-primary", "wait": 0.8 },
+    { "at": "chauds", "label": "Prospects chauds", "zone": "h5:has-text(\"Prospects chauds\")", "zone_closest": ".card", "hover": "h5:has-text(\"Prospects chauds\")" },
+    { "at": "historique", "label": "Dernières interactions", "zone": "Dernières interactions", "zone_closest": ".card", "hover": "Dernières interactions" },
+    { "at": "outro", "top": true }
+  ],
+  "paragraphs": [
+    { "key": "intro", "text": "Qui est prêt à acheter ? Le score des prospects vous le dit, sans tableur." },
+    { "key": "bareme", "text": "Chaque interaction rapporte des points : un e-mail ouvert, un clic, un formulaire, un guide téléchargé, un devis consulté ou demandé." },
+    { "key": "modifier", "text": "Le barème est à votre main : un rendez-vous compte plus pour vous ? Augmentez ses points." },
+    { "key": "seuil", "text": "Réglez ensuite le seuil à partir duquel un contact devient un prospect chaud." },
+    { "key": "options", "text": "Au passage du seuil, RapidoCRM crée une tâche de rappel pour le commercial et vous notifie. Les contacts inactifs perdent dix pour cent par semaine. Enregistrez." },
+    { "key": "chauds", "text": "Vos prospects chauds sont listés ici, du plus engagé au moins engagé." },
+    { "key": "historique", "text": "Et chaque point gagné est tracé, avec son origine." },
+    { "key": "outro", "text": "Appelez d'abord ceux qui sont prêts : vos commerciaux gagnent du temps." }
+  ]
+}
