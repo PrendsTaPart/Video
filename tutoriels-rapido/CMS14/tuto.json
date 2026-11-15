@@ -17,24 +17,6 @@
   "tag": "1 min · Débutant",
   "start_path": "/dashboard/prompts/propositions",
   "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
-  "mocks": [
-    {
-      "url": "**/api/prompts/generate_text",
-      "delay": 2.0,
-      "json": {
-        "success": true,
-        "content": "🎄 Offre de Noël au Studio Lumière : -20 % sur tous nos albums photo jusqu’au 24 décembre !\n\nOffrez des souvenirs qui durent : vos plus belles photos de l’année, imprimées sur un papier d’art.\n\n👉 Réservez votre séance en message privé ou au 05 00 00 00 00.\n\n#Bordeaux #PhotographeBordeaux #CadeauDeNoël"
-      }
-    },
-    {
-      "url": "**/api/prompts/generate_template",
-      "delay": 2.0,
-      "json": {
-        "success": true,
-        "content": "🎄 Offre de Noël au Studio Lumière : -20 % sur tous nos albums photo jusqu’au 24 décembre !\n\nOffrez des souvenirs qui durent : vos plus belles photos de l’année, imprimées sur un papier d’art.\n\n👉 Réservez votre séance en message privé ou au 05 00 00 00 00.\n\n#Bordeaux #PhotographeBordeaux #CadeauDeNoël"
-      }
-    }
-  ],
   "paragraphs": [
     {
       "key": "intro",
@@ -50,7 +32,7 @@
     },
     {
       "key": "generer",
-      "text": "Cliquez sur Générer : un post complet apparaît, avec un appel à l'action. Retouchez-le, puis programmez-le."
+      "text": "Votre consigne personnalisée est prête : envoyez-la à l'IA, ou testez-la dans votre assistant préféré avec Tester dans un LLM."
     },
     {
       "key": "garder",
@@ -98,18 +80,11 @@
     {
       "at": "generer",
       "label": "Générer",
-      "click": "#generate-btn",
-      "wait": 2.6
+      "hover": "#generate-btn"
     },
     {
       "at": "generer",
-      "hover": ".ql-editor",
-      "zone": [
-        850,
-        240,
-        570,
-        320
-      ]
+      "hover": "#dropdownLLM"
     },
     {
       "at": "garder",

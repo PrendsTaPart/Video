@@ -17,24 +17,6 @@
   "tag": "1 min · Débutant",
   "start_path": "/dashboard/prompts/mes_prompts",
   "end_cta": "Prochain épisode : les propositions de contenus",
-  "mocks": [
-    {
-      "url": "**/api/prompts/generate_text",
-      "delay": 2.0,
-      "json": {
-        "success": true,
-        "content": "🎄 Offre de Noël au Studio Lumière : -20 % sur tous nos albums photo jusqu’au 24 décembre !\n\nOffrez des souvenirs qui durent : vos plus belles photos de l’année, imprimées sur un papier d’art.\n\n👉 Réservez votre séance en message privé ou au 05 00 00 00 00.\n\n#Bordeaux #PhotographeBordeaux #CadeauDeNoël"
-      }
-    },
-    {
-      "url": "**/api/prompts/generate_template",
-      "delay": 2.0,
-      "json": {
-        "success": true,
-        "content": "🎄 Offre de Noël au Studio Lumière : -20 % sur tous nos albums photo jusqu’au 24 décembre !\n\nOffrez des souvenirs qui durent : vos plus belles photos de l’année, imprimées sur un papier d’art.\n\n👉 Réservez votre séance en message privé ou au 05 00 00 00 00.\n\n#Bordeaux #PhotographeBordeaux #CadeauDeNoël"
-      }
-    }
-  ],
   "paragraphs": [
     {
       "key": "intro",
@@ -50,11 +32,11 @@
     },
     {
       "key": "utiliser",
-      "text": "Pour l'utiliser, ouvrez-le : remplissez le champ, ici l'offre, puis cliquez sur Générer."
+      "text": "Pour l'utiliser, ouvrez-le et remplissez le champ entre crochets : ici, l'offre du moment."
     },
     {
       "key": "resultat",
-      "text": "Le texte arrive dans l'aperçu, prêt à être retouché puis publié. Vous pouvez aussi le tester dans votre assistant IA préféré."
+      "text": "La consigne complétée est prête : envoyez-la à l'IA de RapidoCMS, ou testez-la dans votre assistant préféré grâce au bouton Tester dans un LLM."
     },
     {
       "key": "outro",
@@ -112,20 +94,8 @@
       ]
     },
     {
-      "at": "utiliser",
-      "click": "#generate-btn",
-      "wait": 2.6
-    },
-    {
       "at": "resultat",
-      "label": "Le résultat",
-      "hover": ".ql-editor",
-      "zone": [
-        850,
-        240,
-        570,
-        320
-      ]
+      "hover": "#dropdownLLM"
     },
     {
       "at": "resultat",

@@ -32,7 +32,7 @@
     },
     {
       "key": "galerie",
-      "text": "Dans Templates, la galerie propose des modèles prêts à l'emploi : un clic, et le modèle rejoint vos templates."
+      "text": "Le menu Templates rassemble vos derniers designs et le bouton Designer dans l'éditeur, pour créer un nouveau modèle à partir d'une page blanche."
     },
     {
       "key": "outro",
@@ -71,7 +71,8 @@
     {
       "at": "galerie",
       "label": "La galerie",
-      "goto": "/dashboard/editeur"
+      "goto": "/dashboard/editeur",
+      "hover": "text=Designer dans l’éditeur"
     },
     {
       "at": "outro",
