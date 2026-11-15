@@ -130,7 +130,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM38 — Historique de tous les échanges (publié)
 - [x] CRM39 — Documents clients et bibliothèque (publié)
 - [x] CRM40 — Bibliothèque de prompts (publié)
-- [ ] CRM41 — Notifications
+- [x] CRM41 — Notifications (publié)
 - [ ] CRM42 — Facturation de l'abonnement et packs
 - [x] CRM43 — Connecter RapidoCRM à Claude (MCP)
 - [x] CRM44 — Les relances automatiques (devis et factures) + suivi d'ouverture des devis
@@ -311,4 +311,7 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   société), API fiches clients (18 actions sans contrôle, dont la suppression), bibliothèque (tailles, images de
   l'éditeur), prompts privés, éditeur de prompts, notifications (tâche assignée, devis ouvert), visio
   (organisateur refusé, panneau stratégie), accents mal encodés, chemin des assets.
-- Reste : CRM31 Salons, CRM41 Notifications, CRM42 Abonnement et packs.
+- Session programmée 2/6 (00:30) : ses tâches CRM37–CRM39 étaient déjà faites ; rattrapage CRM41 Notifications
+  publié (notifications « tâche confiée » et « devis ouvert » ajoutées au CRM, textes d'exemple « Clover Bistro »
+  en dur retirés). À signaler : fuseau de l'application codé en dur `Africa/Tunis` (config/app.php), APP_TIMEZONE ignoré.
+- Reste : CRM31 Salons, CRM42 Abonnement et packs.

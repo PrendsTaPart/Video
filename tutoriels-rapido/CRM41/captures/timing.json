@@ -1,0 +1,32 @@
+{
+  "voiceStartInCapture": 3.32,
+  "paragraphs": {
+    "intro": 0.07,
+    "cloche": 5.53,
+    "types": 12.77,
+    "page": 23.21,
+    "tache": 26.45,
+    "outro": 31.57,
+    "end": 35.73
+  },
+  "zones": {
+    "cloche": [
+      1085,
+      62,
+      380,
+      522
+    ],
+    "page": [
+      616,
+      112,
+      948,
+      378
+    ],
+    "tache": [
+      666,
+      259,
+      588,
+      562
+    ]
+  }
+}
