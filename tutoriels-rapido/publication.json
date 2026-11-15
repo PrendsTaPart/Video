@@ -320,6 +320,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM33.png"
   },
   {
+    "id": "CRM34",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "La visioconférence et votre stratégie à l'écran",
+    "tag": "1 min · Débutant",
+    "duree_s": 51,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM34.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM34.png"
+  },
+  {
     "id": "CRM35",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",
@@ -338,6 +348,56 @@
     "duree_s": 63,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM36.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM36.png"
+  },
+  {
+    "id": "CRM37",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Les stratégies commerciales de vos produits",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 61,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM37.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM37.png"
+  },
+  {
+    "id": "CRM38",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "L'historique de tous vos échanges",
+    "tag": "1 min · Débutant",
+    "duree_s": 52,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM38.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM38.png"
+  },
+  {
+    "id": "CRM39",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Les documents clients et la bibliothèque",
+    "tag": "1 min · Débutant",
+    "duree_s": 56,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM39.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM39.png"
+  },
+  {
+    "id": "CRM40",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "La bibliothèque de prompts",
+    "tag": "1 min · Débutant",
+    "duree_s": 51,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM40.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM40.png"
+  },
+  {
+    "id": "CRM41",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Les notifications",
+    "tag": "1 min · Débutant",
+    "duree_s": 44,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM41.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM41.png"
   },
   {
     "id": "CRM43",
@@ -368,6 +428,26 @@
     "duree_s": 54,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM45.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM45.png"
+  },
+  {
+    "id": "CRM46",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Personnaliser le design d'un formulaire",
+    "tag": "1 min · Débutant",
+    "duree_s": 48,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM46.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM46.png"
+  },
+  {
+    "id": "CRM47",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Intégrer un formulaire à votre site et suivre les réponses",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 50,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM47.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM47.png"
   },
   {
     "id": "CMS01",
