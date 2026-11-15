@@ -1,0 +1,40 @@
+{
+  "id": "CRM46",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Personnaliser le design d'un formulaire",
+  "em": "design",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/formulaires",
+  "type_delay": 30,
+  "fixes": {},
+  "end_cta": "Prochain épisode : intégrer le formulaire à votre site",
+  "thumb_shot": "fin.png",
+  "paragraphs": [
+    {"key": "intro", "text": "Votre formulaire peut porter vos couleurs. Dans RapidoCRM, chaque formulaire a sa page design, avec un aperçu en direct."},
+    {"key": "ouvrir", "text": "Dans la liste, ouvrez le menu du formulaire, puis design et intégration."},
+    {"key": "textes", "text": "Changez le titre, ajoutez une phrase d'introduction et le texte du bouton : l'aperçu se met à jour pendant que vous tapez."},
+    {"key": "couleurs", "text": "Choisissez la couleur principale, celle du fond et du texte, la police, et l'arrondi des angles."},
+    {"key": "merci", "text": "Personnalisez aussi le message de remerciement, ou redirigez le visiteur vers une page de votre site. Enregistrez."},
+    {"key": "page", "text": "La page publique du formulaire reprend aussitôt votre design."},
+    {"key": "outro", "text": "Dans le prochain tutoriel, on intègre ce formulaire à votre site, et on suit les réponses. À tout de suite !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3},
+    {"at": "ouvrir", "label": "Design et intégration", "click": "table tbody tr:has-text(\"site web\") [data-bs-toggle=dropdown]"},
+    {"at": "ouvrir", "click": ".dropdown-menu.show a:has-text(\"Design et intégration\")", "wait": 0.6},
+    {"at": "textes", "label": "Les textes", "fill": [["#dTitre", "Parlons de votre projet"], ["#dSousTitre", "Devis gratuit, réponse sous 24 h."], ["#dBouton", "Recevoir mon devis"]], "zone": "#apercu"},
+    {"at": "couleurs", "label": "Couleurs et style",
+     "eval": "(() => { const r = (id, v) => { const el = document.getElementById(id); el.value = v; el.dispatchEvent(new Event('input', { bubbles: true })); }; r('d_couleur_principale', '#7e57c2'); setTimeout(() => r('dArrondi', '16'), 900); })()",
+     "select": [["#dPolice", "Poppins"]], "zone": "#apercu"},
+    {"at": "merci", "label": "Après l'envoi", "fill": [["#dMerci", "Merci ! Nous revenons vers vous sous 24 h."]]},
+    {"at": "merci", "click": "#enregistrerDesign", "wait": 0.6},
+    {"at": "page", "label": "La page publique", "goto": "/f/demo-devis-studio-lumiere", "zone": ".carte"},
+    {"at": "outro", "wait": 0.3}
+  ]
+}
