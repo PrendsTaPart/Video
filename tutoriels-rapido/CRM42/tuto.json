@@ -1,0 +1,108 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 30,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "id": "CRM42",
+  "title": "L'abonnement et les packs",
+  "em": "abonnement",
+  "tag": "1 min · Débutant",
+  "start_path": "/dashboard",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Votre forfait, vos factures et vos crédits supplémentaires se gèrent depuis votre compte. Voyons comment."
+    },
+    {
+      "key": "historique",
+      "text": "Dans le profil, l'onglet Historique liste vos abonnements : la formule, mensuelle ou annuelle, le prix payé et la date. Chaque ligne a sa facture en PDF."
+    },
+    {
+      "key": "packs",
+      "text": "Le second onglet retrace les packs achetés : SMS, e-mails, minutes d'agent vocal."
+    },
+    {
+      "key": "forfait",
+      "text": "Changer d'abonnement ouvre la comparaison des formules. Le paiement annuel revient moins cher : environ deux mois offerts."
+    },
+    {
+      "key": "pack",
+      "text": "Besoin de plus de SMS ou de stockage en cours de mois ? Le portefeuille, en haut de l'écran, mène aux packs : choisissez la quantité, puis payez."
+    },
+    {
+      "key": "paiement",
+      "text": "Le paiement se fait sur la page sécurisée de Stripe ; une fois validé, les crédits sont ajoutés aussitôt à votre compte."
+    },
+    {
+      "key": "outro",
+      "text": "Vous savez maintenant gérer votre abonnement. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "intro",
+      "hover": "a.btn[href$=\"/add-pack\"], a[href$=\"/add-pack\"] >> nth=0"
+    },
+    {
+      "at": "historique",
+      "label": "Historique et factures",
+      "goto": "/profil"
+    },
+    {
+      "at": "historique",
+      "click": ".nav-link:has-text(\"Historique\") >> nth=0",
+      "wait": 1.2,
+      "zone": "#navs-top-histAbonnement"
+    },
+    {
+      "at": "historique",
+      "hover": "#navs-top-histAbonnement a.btn >> nth=0"
+    },
+    {
+      "at": "packs",
+      "label": "Packs achetés",
+      "click": ".nav-link:has-text(\"Historique des packs\")",
+      "wait": 1.2,
+      "zone": "#navs-top-histFacture"
+    },
+    {
+      "at": "forfait",
+      "label": "Changer de formule",
+      "goto": "/change-forfait"
+    },
+    {
+      "at": "forfait",
+      "click": "label[for=annuel_3]",
+      "zone": ".card >> nth=1"
+    },
+    {
+      "at": "pack",
+      "label": "Acheter un pack",
+      "goto": "/add-pack"
+    },
+    {
+      "at": "pack",
+      "click": "label:has-text(\"500 sms\")",
+      "zone": ".card >> nth=0"
+    },
+    {
+      "at": "paiement",
+      "hover": ".card >> nth=0 >> button:has-text(\"payer\")"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
+  ]
+}

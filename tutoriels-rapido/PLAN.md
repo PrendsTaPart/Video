@@ -131,7 +131,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM39 — Documents clients et bibliothèque (publié)
 - [x] CRM40 — Bibliothèque de prompts (publié)
 - [x] CRM41 — Notifications (publié)
-- [ ] CRM42 — Facturation de l'abonnement et packs
+- [ ] CRM42 — Facturation de l'abonnement et packs (démo, scénario et essai à blanc prêts ; voix bloquée : quota ElevenLabs épuisé)
 - [x] CRM43 — Connecter RapidoCRM à Claude (MCP)
 - [x] CRM44 — Les relances automatiques (devis et factures) + suivi d'ouverture des devis
 - [x] CRM45 — Le prévisionnel pondéré et les affaires à relancer (pipeline)
@@ -332,3 +332,19 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
 - RapidoCRM : CTA refondus (4 formats, design, ciblage, période, A/B, widget, suivi, statistiques, 3 outils MCP),
   désinscription des envois marketing (RGPD).
 - Vidéos : CRM48 (création d'un CTA pop-up et intégration sur le site fictif), CRM49 (statistiques et test A/B).
+
+### Session programmée 3/6 (15/11, 04:30)
+- CRM40, CRM41, CRM34 : déjà publiés lors des sessions précédentes.
+- CRM42 Abonnement et packs : exploré, données fictives (`_gabarit/abonnement-demo.php`, `avant-CRM42.sh`),
+  scénario `CRM42/tuto.json`, essai à blanc validé. **Voix impossible : quota ElevenLabs épuisé (326 crédits
+  restants, 824 nécessaires)** — à reprendre dès que le quota est rechargé (puis file.sh, planche, publication).
+- CRM31 Salons : non repris, même blocage (voix).
+- Correctifs rapido-crm (commits locaux, non poussés) :
+  - « Error initializing abonnement: Attempt to read property id on null » : venait du code (EmailService, utilisateur
+    sans abonnement actif) → cas géré, plus d'erreur au journal ;
+  - facture PDF d'abonnement entièrement en dur (1490 €, « Annuelle », dates de 2024) → vraies valeurs ;
+  - historique : prix mensuel affiché pour un abonnement annuel → prix selon la périodicité ;
+  - téléchargement de facture d'abonnement sans contrôle de propriété → limité au titulaire ;
+  - historique des packs : « 30 agent_vocal » → « 30 min d'agent vocal », « Gb » → « Go ».
+- Contrôle mobile 390 px : 29 écrans, aucun débordement (dont les nouveaux écrans Jeux et Sondages).
+- Jeux concours v2 et sondages v2 livrés dans la même nuit (voir CLAUDE.md de rapido-crm).
