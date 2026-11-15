@@ -48,7 +48,7 @@
     },
     {
       "at": "public",
-      "click": ".plus >> nth=5",
+      "click": ".plus >> nth=3",
       "wait": 0.6
     },
     {
