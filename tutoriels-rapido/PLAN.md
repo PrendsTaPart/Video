@@ -153,9 +153,9 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM59 — Connecter son IA (Claude, ChatGPT, Le Chat, Grok)
 - [ ] CRM60 — Les 100 agents IA
 - [ ] CRM61 — Un prompt par outil MCP
-- [ ] CRM62 — Fusionner les doublons
-- [ ] CRM63 — Les séquences de prospection
-- [ ] CRM64 — Le score des prospects
+- [~] CRM62 — Fusionner les doublons (scénario, démo `doublons-demo.php`, essai à blanc, voix 905 cr. — en file de tournage)
+- [~] CRM63 — Les séquences de prospection (scénario, démo `sequences-demo.php`, essai à blanc, voix 894 cr. — en file)
+- [~] CRM64 — Le score des prospects (scénario, démo `score-demo.php`, essai à blanc, voix 738 cr. — en file)
 - [ ] CRM65 — La carte de visite digitale en 1 clic (boucle marketing)
 - [ ] CRM66 — Les puces NFC
 - [ ] CRM67 — Le programme de fidélité et la caisse
@@ -419,7 +419,7 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   serveur à froid, pas d'un sélecteur.
 - Nouvel outil `_gabarit/essai-blanc.cjs` (vérifie chaque cible d'un scénario, saisies comprises, sans voix ni vidéo) et
   `_gabarit/reperage.cjs` (titres, boutons, liens et champs d'un écran pour écrire un scénario).
-- Voix générées (Adam, eleven_v4, une prise) : CRM66 (859 cr.), CRM67 (990), CRM68 (982), CRM69 (1 091), CRM50 (956), CRM51 (815), CRM52 (852)
+- Voix générées (Adam, eleven_v4, une prise) : CRM66 (859 cr.), CRM67 (990), CRM68 (982), CRM69 (1 091), CRM50 (956), CRM51 (815), CRM52 (852), CRM62 (905), CRM63 (894), CRM64 (738)
   → 6 545 crédits.
 - CRM66 : **rendu OK (56 s)** après une première tentative perdue (disque plein pendant le rendu). CRM69 : relancé après un plantage
   du navigateur (même cause).
