@@ -390,3 +390,13 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   - historique des packs : « 30 agent_vocal » → « 30 min d'agent vocal », « Gb » → « Go ».
 - Contrôle mobile 390 px : 29 écrans, aucun débordement (dont les nouveaux écrans Jeux et Sondages).
 - Jeux concours v2 et sondages v2 livrés dans la même nuit (voir CLAUDE.md de rapido-crm).
+
+### Séance du 15/11, 16 h 50 — nouveaux modules (interrompue : fin des crédits de la session)
+- Épisodes CRM50–CRM69 et formations F40–F43 ajoutés au plan.
+- Scénarios écrits : CRM65 (carte digitale en 1 clic), CRM66 (NFC), CRM67 (fidélité et caisse), CRM68 (devis en ligne), CRM69 (RapidoRH).
+- CRM65 : voix générée (Adam, une prise, 68 s, `CRM65/audio/voix.mp3`) ; le tournage a échoué sur un `TimeoutError` Playwright
+  (voir `/tmp/claude-0/CRM65.log` si encore présent) → relancer `bash _gabarit/file.sh CRM65` après `bash _gabarit/serveurs.sh`,
+  corriger le sélecteur fautif dans `CRM65/tuto.json` si besoin (essai à blanc conseillé).
+- Voix CRM66–CRM69 : NON générées (dépense refusée par Michael pendant la séance) — demander son accord avant de générer.
+- Copie de tournage `rapido-crm-film` synchronisée (migrations 160000, 170000, 180000) et données fictives créées
+  (`_gabarit` : voir le script `demo-cartes.php` du scratchpad, à recréer au besoin : carte « Léa Martin », programme « Carte café », formulaire « Demande de devis »).
