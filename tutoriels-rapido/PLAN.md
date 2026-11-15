@@ -169,40 +169,40 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 
 ## C. RapidoRH — un tutoriel par onglet / écran
 
-- [ ] RH01 — Créer son espace et son compte administrateur
-- [ ] RH02 — Visite guidée du tableau de bord
-- [ ] RH03 — Inviter et gérer ses collaborateurs
-- [ ] RH04 — Départements
-- [ ] RH05 — Rôles et permissions
-- [ ] RH06 — Créer un projet
-- [ ] RH07 — Listes de tâches et Kanban
-- [ ] RH08 — Détail d'une tâche
-- [ ] RH09 — Documents et liens du projet
-- [ ] RH10 — Les dailies
-- [ ] RH11 — Agenda
-- [ ] RH12 — Rendez-vous
+- [x] RH01 — Créer son espace et son compte administrateur
+- [x] RH02 — Visite guidée du tableau de bord
+- [x] RH03 — Inviter et gérer ses collaborateurs
+- [x] RH04 — Départements
+- [x] RH05 — Rôles et permissions
+- [x] RH06 — Créer un projet
+- [x] RH07 — Listes de tâches et Kanban
+- [x] RH08 — Détail d'une tâche
+- [x] RH09 — Documents et liens du projet
+- [x] RH10 — Les dailies
+- [x] RH11 — Agenda
+- [x] RH12 — Rendez-vous
 - [ ] RH13 — Pointage des horaires
-- [ ] RH14 — Congés
-- [ ] RH15 — Espace collaborateur (vue membre)
+- [x] RH14 — Congés
+- [x] RH15 — Espace collaborateur (vue membre)
 - [ ] RH16 — Modèles d'emails
-- [ ] RH17 — Notifications (email, WhatsApp)
-- [ ] RH18 — Abonnement et facturation
-- [ ] RH19 — Connecter RapidoRH à Claude (MCP)
+- [x] RH17 — Notifications (email, WhatsApp)
+- [x] RH18 — Abonnement et facturation
+- [x] RH19 — Connecter RapidoRH à Claude (MCP)
 
 ### RapidoRH V2 — employés IA et collaboration (voix Adam, une prise)
-- [ ] RH20 — Transformer une idée en projet
-- [ ] RH21 — Valider le travail d'un employé IA
-- [ ] RH22 — Créer et activer une routine
-- [ ] RH23 — La messagerie d'équipe
-- [ ] RH24 — Demander une information et débloquer une tâche
-- [ ] RH25 — Le forum d'entraide et la connaissance validée
-- [ ] RH26 — Les paramètres IA de l'entreprise
+- [x] RH20 — Transformer une idée en projet
+- [x] RH21 — Valider le travail d'un employé IA
+- [x] RH22 — Créer et activer une routine
+- [x] RH23 — La messagerie d'équipe
+- [x] RH24 — Demander une information et débloquer une tâche
+- [x] RH25 — Le forum d'entraide et la connaissance validée
+- [x] RH26 — Les paramètres IA de l'entreprise
 - [ ] RH27 — Réunions Whereby (bloqué : aucune clé Whereby fournie)
-- [ ] RH28 — Découvrir vos employés IA
-- [ ] RH29 — Configurer et activer un employé IA
-- [ ] RH30 — Confier une tâche à un employé IA
-- [ ] RH31 — Suivre le travail de vos employés IA
-- [ ] RH32 — Demander un congé (collaborateur)
+- [x] RH28 — Découvrir vos employés IA
+- [x] RH29 — Configurer et activer un employé IA
+- [x] RH30 — Confier une tâche à un employé IA
+- [x] RH31 — Suivre le travail de vos employés IA
+- [x] RH32 — Demander un congé (collaborateur)
 - [ ] RH33 — Répondre dans la messagerie (collaborateur ; voix non générée : crédits ElevenLabs épuisés)
 
 ## D. Formations métier (avec Rapido et l'IA)

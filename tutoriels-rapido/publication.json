@@ -618,5 +618,295 @@
     "duree_s": 71,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-AG05.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-AG05.png"
+  },
+  {
+    "id": "RH01",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Créer son espace RapidoRH",
+    "tag": "1 min · Débutant",
+    "duree_s": 35,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH01.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH01.png"
+  },
+  {
+    "id": "RH02",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Visite guidée du tableau de bord",
+    "tag": "1 min · Débutant",
+    "duree_s": 38,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH02.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH02.png"
+  },
+  {
+    "id": "RH03",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Ajouter et gérer ses collaborateurs",
+    "tag": "1 min · Débutant",
+    "duree_s": 41,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH03.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH03.png"
+  },
+  {
+    "id": "RH04",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Organiser son équipe en départements",
+    "tag": "1 min · Débutant",
+    "duree_s": 31,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH04.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH04.png"
+  },
+  {
+    "id": "RH05",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Rôles et permissions",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 35,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH05.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH05.png"
+  },
+  {
+    "id": "RH06",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Créer un projet",
+    "tag": "1 min · Débutant",
+    "duree_s": 34,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH06.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH06.png"
+  },
+  {
+    "id": "RH07",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Le Kanban et les listes de tâches",
+    "tag": "1 min · Débutant",
+    "duree_s": 33,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH07.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH07.png"
+  },
+  {
+    "id": "RH08",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Le détail d'une tâche",
+    "tag": "1 min · Débutant",
+    "duree_s": 30,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH08.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH08.png"
+  },
+  {
+    "id": "RH09",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Documents et liens du projet",
+    "tag": "1 min · Débutant",
+    "duree_s": 34,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH09.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH09.png"
+  },
+  {
+    "id": "RH10",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Les dailies de l'équipe",
+    "tag": "1 min · Débutant",
+    "duree_s": 32,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH10.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH10.png"
+  },
+  {
+    "id": "RH11",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "L'agenda des tâches",
+    "tag": "1 min · Débutant",
+    "duree_s": 28,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH11.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH11.png"
+  },
+  {
+    "id": "RH12",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Organiser un rendez-vous",
+    "tag": "1 min · Débutant",
+    "duree_s": 34,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH12.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH12.png"
+  },
+  {
+    "id": "RH14",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Gérer les demandes de congé",
+    "tag": "1 min · Débutant",
+    "duree_s": 31,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH14.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH14.png"
+  },
+  {
+    "id": "RH15",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "L'espace du collaborateur",
+    "tag": "1 min · Débutant",
+    "duree_s": 29,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH15.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH15.png"
+  },
+  {
+    "id": "RH17",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Les notifications",
+    "tag": "1 min · Débutant",
+    "duree_s": 27,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH17.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH17.png"
+  },
+  {
+    "id": "RH18",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Votre abonnement",
+    "tag": "1 min · Débutant",
+    "duree_s": 29,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH18.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH18.png"
+  },
+  {
+    "id": "RH19",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Connecter RapidoRH à Claude",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 38,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH19.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH19.png"
+  },
+  {
+    "id": "RH20",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Transformer une idée en projet",
+    "tag": "1 min · Débutant",
+    "duree_s": 67,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH20.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH20.png"
+  },
+  {
+    "id": "RH21",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Valider le travail d'un employé IA",
+    "tag": "1 min · Débutant",
+    "duree_s": 46,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH21.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH21.png"
+  },
+  {
+    "id": "RH22",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Créer et activer une routine",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 50,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH22.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH22.png"
+  },
+  {
+    "id": "RH23",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "La messagerie d'équipe",
+    "tag": "1 min · Débutant",
+    "duree_s": 40,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH23.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH23.png"
+  },
+  {
+    "id": "RH24",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Demander une information et débloquer une tâche",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 36,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH24.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH24.png"
+  },
+  {
+    "id": "RH25",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Le forum d'entraide et la connaissance validée",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 45,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH25.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH25.png"
+  },
+  {
+    "id": "RH26",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Les paramètres IA de l'entreprise",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 38,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH26.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH26.png"
+  },
+  {
+    "id": "RH28",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Découvrir vos employés IA",
+    "tag": "1 min · Débutant",
+    "duree_s": 35,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH28.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH28.png"
+  },
+  {
+    "id": "RH29",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Configurer et activer un employé IA",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 36,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH29.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH29.png"
+  },
+  {
+    "id": "RH30",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Confier une tâche à un employé IA",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 35,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH30.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH30.png"
+  },
+  {
+    "id": "RH31",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Suivre le travail de vos employés IA",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 33,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH31.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH31.png"
+  },
+  {
+    "id": "RH32",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Demander un congé",
+    "tag": "1 min · Débutant",
+    "duree_s": 31,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH32.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH32.png"
   }
 ]
