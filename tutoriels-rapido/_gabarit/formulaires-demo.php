@@ -41,4 +41,11 @@ foreach ($reponses as [$nom, $email, $tel, $domaine, $desc, $j, $origine]) {
         ->execute([$formId, $donnees, $entId, $origine, $il($j), $il($j)]);
 }
 $db->exec("delete from notifications where user_id = 1 and contenu like 'Nouvelle réponse au formulaire%'");
+// Adresse de la page Design, lue par la scène « goto_file » de CRM47 (épisode et essai à blanc)
+foreach (['/home/user/video/tutoriels-rapido/CRM47', '/tmp/claude-0/CRM47-test'] as $dossier) {
+    if (is_dir($dossier)) {
+        file_put_contents("$dossier/lien-design.txt", "/formulaires/$formId/design");
+        file_put_contents("$dossier/lien-reponses.txt", "/formulaires/$formId/reponses");
+    }
+}
 echo "formulaire $formId : 3 réponses\n";

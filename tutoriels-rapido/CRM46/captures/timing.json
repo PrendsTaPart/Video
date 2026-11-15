@@ -1,0 +1,33 @@
+{
+  "voiceStartInCapture": 3.127,
+  "paragraphs": {
+    "intro": 0.04,
+    "ouvrir": 7.64,
+    "textes": 12.36,
+    "couleurs": 18.96,
+    "merci": 24.72,
+    "page": 31.15,
+    "outro": 34.52,
+    "end": 40.22
+  },
+  "zones": {
+    "textes": [
+      1200,
+      262,
+      488,
+      591
+    ],
+    "couleurs": [
+      1200,
+      262,
+      488,
+      591
+    ],
+    "page": [
+      646,
+      26,
+      628,
+      829
+    ]
+  }
+}

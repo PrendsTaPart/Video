@@ -113,7 +113,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM21 — Segments
 - [x] CRM22 — Modèles d'emails et de SMS (éditeur)
 - [x] CRM23 — Workflows : créer, activer, suivre
-- [x] CRM24 — Formulaires
+- [x] CRM24 — Formulaires (refait le 15/11 : lien public)
 - [x] CRM25 — CTA et pages
 - [x] CRM26 — Programme de fidélité et cartes NFC
 - [x] CRM27 — Jeux concours
@@ -135,6 +135,8 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM43 — Connecter RapidoCRM à Claude (MCP)
 - [x] CRM44 — Les relances automatiques (devis et factures) + suivi d'ouverture des devis
 - [x] CRM45 — Le prévisionnel pondéré et les affaires à relancer (pipeline)
+- [x] CRM46 — Personnaliser le design d'un formulaire
+- [x] CRM47 — Intégrer un formulaire à son site (iframe) et suivre les réponses
 
 ## B. RapidoCMS — un tutoriel par onglet / écran
 
@@ -315,3 +317,9 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   publié (notifications « tâche confiée » et « devis ouvert » ajoutées au CRM, textes d'exemple « Clover Bistro »
   en dur retirés). À signaler : fuseau de l'application codé en dur `Africa/Tunis` (config/app.php), APP_TIMEZONE ignoré.
 - Reste : CRM31 Salons, CRM42 Abonnement et packs.
+
+### Session du 15/11 (nuit) — formulaires et fuseau horaire (demande de Michael)
+- RapidoCRM : refonte des formulaires (lien public /f/{slug}, iframe à hauteur automatique, design personnalisable
+  avec aperçu, réponses + export CSV, notifications, sécurité), fuseau horaire dans le profil entreprise.
+- Vidéos : CRM24 refait (lien public), CRM46 (design), CRM47 (intégration iframe sur un site fictif servi en local
+  sur le port 8131 par _gabarit/site-demo, et suivi des réponses).

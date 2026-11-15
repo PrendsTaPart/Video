@@ -11,32 +11,108 @@
   "transcript": "audio/transcript.json",
   "capture": "captures/ecran.mp4",
   "start_path": "/formulaires",
-  "type_delay": 30,
+  "type_delay": 14,
   "fixes": {},
   "end_cta": "Tous les tutoriels RapidoCRM sur l'Académie",
   "thumb_shot": "fin.png",
   "paragraphs": [
-    {"key": "intro", "text": "Vos visiteurs remplissent le formulaire sur votre propre site, et les demandes arrivent directement dans RapidoCRM."},
-    {"key": "code", "text": "Dans design et intégration, deux options : le lien du formulaire, à partager, et le code d'intégration. Copiez le code."},
-    {"key": "site", "text": "Collez-le dans votre site : WordPress, Wix, Shopify ou une simple page. Le formulaire s'affiche à vos couleurs et s'ajuste tout seul à la hauteur."},
-    {"key": "envoi", "text": "Un visiteur le remplit et l'envoie : il voit votre message de remerciement."},
-    {"key": "reponses", "text": "Côté RapidoCRM, la page réponses liste chaque envoi : la date, les informations saisies, et la fiche client créée automatiquement. Vous pouvez tout exporter en CSV."},
-    {"key": "notif", "text": "Et la cloche vous prévient à chaque nouvelle demande."},
-    {"key": "outro", "text": "Retrouvez tous les tutoriels RapidoCRM sur l'Académie. À bientôt !"}
+    {
+      "key": "intro",
+      "text": "Vos visiteurs remplissent le formulaire sur votre propre site, et les demandes arrivent directement dans RapidoCRM."
+    },
+    {
+      "key": "code",
+      "text": "Dans design et intégration, deux options : le lien du formulaire, à partager, et le code d'intégration. Copiez le code."
+    },
+    {
+      "key": "site",
+      "text": "Collez-le dans votre site : WordPress, Wix, Shopify ou une simple page. Le formulaire s'affiche à vos couleurs et s'ajuste tout seul à la hauteur."
+    },
+    {
+      "key": "envoi",
+      "text": "Un visiteur le remplit et l'envoie : il voit votre message de remerciement."
+    },
+    {
+      "key": "reponses",
+      "text": "Côté RapidoCRM, la page réponses liste chaque envoi : la date, les informations saisies, et la fiche client créée automatiquement. Vous pouvez tout exporter en CSV."
+    },
+    {
+      "key": "notif",
+      "text": "Et la cloche vous prévient à chaque nouvelle demande."
+    },
+    {
+      "key": "outro",
+      "text": "Retrouvez tous les tutoriels RapidoCRM sur l'Académie. À bientôt !"
+    }
   ],
   "scenes": [
-    {"at": "intro", "wait": 0.3},
-    {"at": "code", "label": "Le code d'intégration", "click": "table tbody tr:has-text(\"site web\") [data-bs-toggle=dropdown]"},
-    {"at": "code", "click": ".dropdown-menu.show a:has-text(\"Design et intégration\")", "wait": 0.6},
-    {"at": "code", "scroll": "#codeIntegration", "hover": "#lienPublic", "zone": "#codeIntegration", "zone_closest": ".card"},
-    {"at": "code", "click": "button[data-copier='#codeIntegration']"},
-    {"at": "site", "label": "Sur votre site", "goto": "http://127.0.0.1:8131/", "wait": 1.0, "zone": "iframe"},
-    {"at": "envoi", "label": "Un visiteur écrit", "fill": [["iframe >> internal:control=enter-frame >> #champ-nom", "Café des Arts"], ["iframe >> internal:control=enter-frame >> #champ-email", "contact@cafedesarts.exemple.test"], ["iframe >> internal:control=enter-frame >> #champ-domaine", "Restauration"], ["iframe >> internal:control=enter-frame >> #champ-description", "Un site avec la carte et la réservation en ligne."]], "zone": "iframe"},
-    {"at": "envoi", "click": "iframe >> internal:control=enter-frame >> button[type=submit]", "wait": 1.0},
-    {"at": "reponses", "label": "Les réponses", "goto": "/formulaires", "click": "table tbody tr:has-text(\"site web\") [data-bs-toggle=dropdown]"},
-    {"at": "reponses", "click": ".dropdown-menu.show a:has-text(\"Réponses\")", "wait": 0.8, "zone": "table"},
-    {"at": "reponses", "hover": "table tbody tr >> nth=0"},
-    {"at": "notif", "label": "La notification", "click": ".notifBtn", "zone": ".notificationBox"},
-    {"at": "outro", "wait": 0.3}
+    {
+      "at": "intro",
+      "wait": 0.3
+    },
+    {
+      "at": "code",
+      "label": "Le code d'intégration",
+      "goto_file": "lien-design.txt",
+      "scroll": "#codeIntegration",
+      "zone": "#codeIntegration",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "code",
+      "click": "button[data-copier='#codeIntegration']"
+    },
+    {
+      "at": "site",
+      "label": "Sur votre site",
+      "goto": "http://127.0.0.1:8131/",
+      "wait": 1.0,
+      "zone": "iframe"
+    },
+    {
+      "at": "site",
+      "fill": [
+        [
+          "iframe >> internal:control=enter-frame >> #champ-nom",
+          "Café des Arts"
+        ],
+        [
+          "iframe >> internal:control=enter-frame >> #champ-email",
+          "contact@cafedesarts.exemple.test"
+        ],
+        [
+          "iframe >> internal:control=enter-frame >> #champ-description",
+          "Carte et réservation en ligne."
+        ]
+      ]
+    },
+    {
+      "at": "envoi",
+      "click": "iframe >> internal:control=enter-frame >> button[type=submit]",
+      "wait": 1.0,
+      "label": "Un visiteur écrit",
+      "zone": "iframe"
+    },
+    {
+      "at": "reponses",
+      "label": "Les réponses",
+      "wait": 0.6,
+      "zone": "table",
+      "goto_file": "lien-reponses.txt"
+    },
+    {
+      "at": "reponses",
+      "hover": "table tbody tr >> nth=0"
+    },
+    {
+      "at": "notif",
+      "label": "La notification",
+      "click": ".notifBtn",
+      "zone": ".notificationBox"
+    },
+    {
+      "at": "outro",
+      "wait": 0.3
+    }
   ]
 }
