@@ -1,0 +1,109 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 30,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM61",
+  "title": "Un prompt pour chaque outil",
+  "em": "prompt",
+  "tag": "1 min · Débutant",
+  "start_path": "/prompts/outils",
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "familles",
+      "label": "151 actions, par famille",
+      "zone": ".card:has(.prompt-outil) >> nth=0",
+      "hover": ".prompt-outil >> nth=0"
+    },
+    {
+      "at": "familles",
+      "hover": ".prompt-outil >> nth=2"
+    },
+    {
+      "at": "crochets",
+      "label": "Les [crochets] à remplacer",
+      "hover": ".prompt-outil >> nth=3"
+    },
+    {
+      "at": "chercher",
+      "label": "Rechercher",
+      "fill": [
+        [
+          "#rechercheOutil",
+          "relance"
+        ]
+      ],
+      "wait": 0.6
+    },
+    {
+      "at": "utiliser",
+      "label": "Utiliser",
+      "click": ".prompt-outil:visible .ouvrir-outil >> nth=0",
+      "wait": 0.8
+    },
+    {
+      "at": "modifier",
+      "label": "Ajuster la demande",
+      "zone": "#lanceur .modal-content",
+      "hover": "#lanceurTexte"
+    },
+    {
+      "at": "lancer",
+      "label": "Lancer ou copier",
+      "hover": "#lanceur button.lancer >> nth=0"
+    },
+    {
+      "at": "lancer",
+      "hover": "#lanceurCopier"
+    },
+    {
+      "at": "outro",
+      "goto": "/prompts/outils"
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Que peut faire votre assistant IA dans RapidoCRM ? Tout est listé, avec la demande toute prête."
+    },
+    {
+      "key": "familles",
+      "text": "Dans Prompts, onglet Prompts des outils, les cent cinquante et une actions sont rangées par famille : clients, pipeline, marketing, facturation, fidélité…"
+    },
+    {
+      "key": "crochets",
+      "text": "Chaque prompt indique l'outil utilisé. Remplacez simplement les mots entre crochets par les vôtres."
+    },
+    {
+      "key": "chercher",
+      "text": "Cherchez un besoin, par exemple « relance »."
+    },
+    {
+      "key": "utiliser",
+      "text": "Cliquez sur Utiliser."
+    },
+    {
+      "key": "modifier",
+      "text": "La demande s'ouvre : complétez-la, par exemple avec le nom du client."
+    },
+    {
+      "key": "lancer",
+      "text": "Lancez-la dans votre assistant connecté à RapidoCRM, ou copiez-la pour l'utiliser ailleurs."
+    },
+    {
+      "key": "outro",
+      "text": "Plus besoin de chercher comment demander : la bonne phrase est déjà écrite."
+    }
+  ]
+}

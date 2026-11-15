@@ -1,0 +1,42 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 30,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM59",
+  "title": "Connecter son IA à RapidoCRM",
+  "em": "IA",
+  "tag": "1 min · Débutant",
+  "start_path": "/prompts/connecter-mon-ia",
+  "scenes": [
+    { "at": "intro", "wait": 0.4 },
+    { "at": "adresse", "label": "L'adresse du serveur", "zone": "Adresse du serveur MCP RapidoCRM", "zone_closest": ".card", "hover": "#urlMcp" },
+    { "at": "adresse", "hover": "Copier" },
+    { "at": "assistants", "label": "Claude, ChatGPT, Le Chat, Grok", "hover": "#connecter-claude" },
+    { "at": "assistants", "hover": "#connecter-chatgpt" },
+    { "at": "assistants", "hover": "#connecter-mistral" },
+    { "at": "assistants", "hover": "#connecter-grok" },
+    { "at": "etapes", "label": "Quatre étapes", "zone": "Claude", "zone_closest": ".card", "hover": "Claude" },
+    { "at": "securite", "label": "Accès protégé", "zone": "Adresse du serveur MCP RapidoCRM", "zone_closest": ".card", "hover": "Adresse du serveur MCP RapidoCRM" },
+    { "at": "thematiques", "label": "Serveurs thématiques", "scroll": "Serveurs thématiques (facultatif)", "zone": "Serveurs thématiques (facultatif)", "zone_closest": ".card" },
+    { "at": "essayer", "label": "Première demande", "zone": "Et ensuite ?", "zone_closest": ".card", "hover": "a.btn-ia >> nth=0" },
+    { "at": "outro", "top": true }
+  ],
+  "paragraphs": [
+    { "key": "intro", "text": "Votre assistant IA peut lire et agir dans RapidoCRM. Voici comment le connecter en deux minutes." },
+    { "key": "adresse", "text": "Dans Prompts, onglet Connecter mon IA, copiez l'adresse du serveur MCP de RapidoCRM." },
+    { "key": "assistants", "text": "Elle fonctionne avec Claude, ChatGPT, Le Chat de Mistral et Grok. Chaque bouton ouvre directement la page des connecteurs de l'assistant." },
+    { "key": "etapes", "text": "Suivez les quatre étapes affichées : ajoutez un connecteur personnalisé, nommez-le RapidoCRM, collez l'adresse, puis connectez-vous." },
+    { "key": "securite", "text": "L'accès est protégé : l'assistant vous demande de vous connecter à RapidoCRM et d'autoriser l'accès. Il agit avec votre compte et vos droits." },
+    { "key": "thematiques", "text": "Pour un assistant spécialisé, utilisez plutôt un serveur thématique : clients, pipeline, marketing, facturation ou fidélité." },
+    { "key": "essayer", "text": "Testez ensuite avec une première demande, par exemple vos indicateurs du mois et les prospects à rappeler." },
+    { "key": "outro", "text": "Votre CRM répond désormais dans la conversation." }
+  ]
+}

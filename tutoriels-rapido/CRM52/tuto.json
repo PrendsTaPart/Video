@@ -29,7 +29,6 @@
     {"at": "saisir", "label": "Sous-domaine d'envoi", "zone": "Sous-domaine d’envoi des e-mails", "fill": [["input[name=email_domaine]", "notify.studio-lumiere-demo.fr"]]},
     {"at": "saisir", "click": "button:has-text(\"Configurer\")", "wait": 1.5},
     {"at": "trois", "label": "SPF, DKIM, DMARC", "zone": "table", "hover": "table"},
-    {"at": "trois", "scroll": "Les trois enregistrements", "zone": "Les trois enregistrements"},
     {"at": "copier", "label": "Copier puis vérifier", "top": true, "hover": "button.copier >> nth=0"},
     {"at": "copier", "hover": "form button:has-text(\"Vérifier\")"},
     {"at": "signe", "label": "E-mails signés", "zone": "Sous-domaine d’envoi des e-mails"},
