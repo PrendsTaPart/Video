@@ -411,3 +411,20 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
 - Voix CRM66–CRM69 : NON générées (dépense refusée par Michael pendant la séance) — demander son accord avant de générer.
 - Copie de tournage `rapido-crm-film` synchronisée (migrations 160000, 170000, 180000) et données fictives créées
   (`_gabarit` : `_gabarit/cartes-demo.php`, via `php artisan tinker` : carte « Léa Martin », programme « Carte café », formulaire « Demande de devis »).
+
+### Séance du 15/11, 18 h 30 → 22 h (heure de Paris) — reprise programmée (accord de Michael : toutes les voix, une prise)
+- Conteneur neuf : copie de tournage recréée (`/home/user/rapido-crm-film`, `vendor` partagé par lien avec rapido-crm, base SQLite
+  « Studio Lumière » via `demo-crm.php` + `cartes-demo.php` + nouveau `sites-demo.php`). RapidoCMS (8125) et RapidoRH (8126) non installés ici.
+- CRM65 : l'essai à blanc ne montre aucune cible manquante ; relancé tel quel → **rendu OK (76 s)**. Le `TimeoutError` venait du
+  serveur à froid, pas d'un sélecteur.
+- Nouvel outil `_gabarit/essai-blanc.cjs` (vérifie chaque cible d'un scénario, saisies comprises, sans voix ni vidéo) et
+  `_gabarit/reperage.cjs` (titres, boutons, liens et champs d'un écran pour écrire un scénario).
+- Voix générées (Adam, eleven_v4, une prise) : CRM66 (859 cr.), CRM67 (990), CRM68 (982), CRM69 (1 091), CRM50 (956), CRM51 (815), CRM52 (852)
+  → 6 545 crédits.
+- CRM66 : **rendu OK (56 s)** après une première tentative perdue (disque plein pendant le rendu). CRM69 : relancé après un plantage
+  du navigateur (même cause).
+- Scénarios écrits et validés à blanc : CRM50 (sites, SEO, audit, plan du site), CRM51 (nom de domaine, domaine fictif
+  `studio-lumiere-demo.fr`), CRM52 (sous-domaine d'envoi SPF / DKIM / DMARC) ; `avant-`/`apres-CRM51.sh` et `CRM52.sh` remettent le site
+  de démo à zéro. CRM68 : le formulaire de démo a 5 produits → clic sur le 4e « + » au lieu du 6e.
+- ⚠️ Disque : le conteneur a saturé deux fois (ancien clone `/home/user/Video` de 17 Go impossible à supprimer par l'agent,
+  dépendances Composer clonées avec leur historique git). Garder > 3 Go libres avant un rendu.

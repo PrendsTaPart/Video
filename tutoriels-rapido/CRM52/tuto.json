@@ -1,0 +1,38 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 45,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "id": "CRM52",
+  "title": "Le sous-domaine d'envoi des e-mails",
+  "em": "sous-domaine",
+  "tag": "2 min · Intermédiaire",
+  "start_path": "/sites/1?onglet=emails",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "paragraphs": [
+    {"key": "intro", "text": "Vos e-mails arrivent dans les spams ? Un sous-domaine d'envoi authentifié prouve aux messageries que c'est bien vous. Voyons comment le configurer."},
+    {"key": "saisir", "text": "Dans l'onglet E-mails d'envoi, saisissez un sous-domaine réservé aux envois, par exemple notify suivi de votre domaine, puis cliquez sur Configurer."},
+    {"key": "trois", "text": "RapidoCRM génère pour vous trois enregistrements : SPF, la liste des serveurs autorisés ; DKIM, une signature unique créée pour votre société ; et DMARC, la consigne donnée aux messageries."},
+    {"key": "copier", "text": "Copiez-les un par un chez votre hébergeur, puis revenez cliquer sur Vérifier. Chaque enregistrement passe au vert dès qu'il est visible."},
+    {"key": "signe", "text": "Une fois vérifié, chaque e-mail envoyé depuis RapidoCRM est signé automatiquement : vos campagnes, vos relances et vos devis inspirent confiance."},
+    {"key": "outro", "text": "Vos e-mails sont authentifiés. Retrouvez tous nos tutoriels dans l'Académie !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.4},
+    {"at": "intro", "hover": "input[name=email_domaine]"},
+    {"at": "saisir", "label": "Sous-domaine d'envoi", "zone": "Sous-domaine d’envoi des e-mails", "fill": [["input[name=email_domaine]", "notify.studio-lumiere-demo.fr"]]},
+    {"at": "saisir", "click": "button:has-text(\"Configurer\")", "wait": 1.5},
+    {"at": "trois", "label": "SPF, DKIM, DMARC", "zone": "table", "hover": "table"},
+    {"at": "trois", "scroll": "Les trois enregistrements", "zone": "Les trois enregistrements"},
+    {"at": "copier", "label": "Copier puis vérifier", "top": true, "hover": "button.copier >> nth=0"},
+    {"at": "copier", "hover": "form button:has-text(\"Vérifier\")"},
+    {"at": "signe", "label": "E-mails signés", "zone": "Sous-domaine d’envoi des e-mails"},
+    {"at": "outro", "top": true}
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 35,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "id": "CRM50",
+  "title": "Sites et pages : publication et référencement",
+  "em": "référencement",
+  "tag": "2 min · Débutant",
+  "start_path": "/sites",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "paragraphs": [
+    {"key": "intro", "text": "Créez le site de votre entreprise directement dans RapidoCRM, et soignez son référencement sans être un expert. Voyons comment."},
+    {"key": "pages", "text": "Dans Sites et pages, chaque site regroupe ses pages. Donnez un titre à une nouvelle page, choisissez un modèle gratuit, et elle s'ouvre dans l'éditeur."},
+    {"key": "publier", "text": "Vos modifications restent en brouillon. Le bouton Publier met en ligne la version actuelle : vos visiteurs ne voient jamais une page en cours de travail."},
+    {"key": "seo", "text": "Le bouton SEO ouvre le référencement de la page : titre et description dans Google, mot-clé principal, image de partage et données structurées. L'aperçu Google se met à jour en direct."},
+    {"key": "audit", "text": "Juste en dessous, l'audit note la page sur cent et liste ce qu'il reste à corriger."},
+    {"key": "sitemap", "text": "Le plan du site et le fichier robots sont générés automatiquement, et l'onglet Statistiques suit les vues, les appareils et la provenance de vos visiteurs."},
+    {"key": "outro", "text": "Votre site est en ligne et prêt pour Google. Retrouvez tous nos tutoriels dans l'Académie !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.4},
+    {"at": "intro", "hover": "a.card.p-4 >> nth=0"},
+    {"at": "pages", "click": "a.card.p-4 >> nth=0", "wait": 1.0},
+    {"at": "pages", "label": "Une page, un modèle", "zone": "Nouvelle page", "fill": [["form:has(#creerPage) input[name=titre]", "Offre de rentrée"]]},
+    {"at": "pages", "hover": "form:has(#creerPage) select[name=modele_id]"},
+    {"at": "publier", "label": "Brouillon et publication", "zone": "table", "hover": "button:has-text(\"Publier\") >> nth=0"},
+    {"at": "seo", "label": "Référencement", "click": "button:has-text(\"SEO\") >> nth=0", "wait": 1.0},
+    {"at": "seo", "zone": ".apercu-google >> nth=0", "hover": ".apercu-google >> nth=0"},
+    {"at": "audit", "label": "Audit sur 100", "scroll": "ul.controles >> nth=0", "zone": "ul.controles >> nth=0"},
+    {"at": "sitemap", "label": "Plan du site et statistiques", "scroll": "Référencement automatique", "zone": "Référencement automatique"},
+    {"at": "sitemap", "goto": "/sites/1?onglet=statistiques", "wait": 0.8},
+    {"at": "sitemap", "zone": "Pages les plus vues"},
+    {"at": "outro", "top": true}
+  ]
+}

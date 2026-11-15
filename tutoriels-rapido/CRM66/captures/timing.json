@@ -1,0 +1,32 @@
+{
+  "voiceStartInCapture": 3.21,
+  "paragraphs": {
+    "intro": 0.05,
+    "creer": 9.09,
+    "adresse": 19.9,
+    "changer": 28.57,
+    "impression": 36.63,
+    "outro": 44.17,
+    "end": 48.04
+  },
+  "zones": {
+    "creer": [
+      356,
+      296,
+      1468,
+      470
+    ],
+    "adresse": [
+      356,
+      744,
+      1468,
+      336
+    ],
+    "changer": [
+      852,
+      282,
+      948,
+      162
+    ]
+  }
+}

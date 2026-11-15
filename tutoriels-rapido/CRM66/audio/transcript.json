@@ -1,0 +1,848 @@
+[
+  {
+    "text": "Une",
+    "start": 0.05,
+    "end": 0.18,
+    "id": "w0"
+  },
+  {
+    "text": "carte,",
+    "start": 0.25,
+    "end": 0.65,
+    "id": "w1"
+  },
+  {
+    "text": "un",
+    "start": 0.77,
+    "end": 0.92,
+    "id": "w2"
+  },
+  {
+    "text": "autocollant",
+    "start": 0.92,
+    "end": 1.77,
+    "id": "w3"
+  },
+  {
+    "text": "ou",
+    "start": 1.77,
+    "end": 1.92,
+    "id": "w4"
+  },
+  {
+    "text": "un",
+    "start": 1.92,
+    "end": 2.07,
+    "id": "w5"
+  },
+  {
+    "text": "présentoir",
+    "start": 2.07,
+    "end": 2.85,
+    "id": "w6"
+  },
+  {
+    "text": "NFC.",
+    "start": 2.85,
+    "end": 3.42,
+    "id": "w7"
+  },
+  {
+    "text": "Le",
+    "start": 3.47,
+    "end": 3.54,
+    "id": "w8"
+  },
+  {
+    "text": "client",
+    "start": 3.54,
+    "end": 3.89,
+    "id": "w9"
+  },
+  {
+    "text": "approche",
+    "start": 4.02,
+    "end": 4.37,
+    "id": "w10"
+  },
+  {
+    "text": "son",
+    "start": 4.43,
+    "end": 4.62,
+    "id": "w11"
+  },
+  {
+    "text": "téléphone",
+    "start": 4.62,
+    "end": 5.22,
+    "id": "w12"
+  },
+  {
+    "text": "et",
+    "start": 5.22,
+    "end": 5.34,
+    "id": "w13"
+  },
+  {
+    "text": "votre",
+    "start": 5.35,
+    "end": 5.69,
+    "id": "w14"
+  },
+  {
+    "text": "carte",
+    "start": 5.69,
+    "end": 6.03,
+    "id": "w15"
+  },
+  {
+    "text": "digitale",
+    "start": 6.03,
+    "end": 6.46,
+    "id": "w16"
+  },
+  {
+    "text": "s'ouvre.",
+    "start": 6.63,
+    "end": 7.26,
+    "id": "w17"
+  },
+  {
+    "text": "Voici",
+    "start": 7.31,
+    "end": 7.57,
+    "id": "w18"
+  },
+  {
+    "text": "comment",
+    "start": 7.57,
+    "end": 7.91,
+    "id": "w19"
+  },
+  {
+    "text": "le",
+    "start": 8.03,
+    "end": 8.14,
+    "id": "w20"
+  },
+  {
+    "text": "mettre",
+    "start": 8.14,
+    "end": 8.52,
+    "id": "w21"
+  },
+  {
+    "text": "en",
+    "start": 8.52,
+    "end": 8.64,
+    "id": "w22"
+  },
+  {
+    "text": "place.",
+    "start": 8.64,
+    "end": 9.04,
+    "id": "w23"
+  },
+  {
+    "text": "Dans",
+    "start": 9.09,
+    "end": 9.46,
+    "id": "w24"
+  },
+  {
+    "text": "PUS",
+    "start": 9.48,
+    "end": 9.82,
+    "id": "w25"
+  },
+  {
+    "text": "NFC,",
+    "start": 9.82,
+    "end": 10.4,
+    "id": "w26"
+  },
+  {
+    "text": "donnez",
+    "start": 10.4,
+    "end": 10.86,
+    "id": "w27"
+  },
+  {
+    "text": "un",
+    "start": 10.86,
+    "end": 11.02,
+    "id": "w28"
+  },
+  {
+    "text": "nom",
+    "start": 11.02,
+    "end": 11.22,
+    "id": "w29"
+  },
+  {
+    "text": "à",
+    "start": 11.29,
+    "end": 11.33,
+    "id": "w30"
+  },
+  {
+    "text": "la",
+    "start": 11.33,
+    "end": 11.49,
+    "id": "w31"
+  },
+  {
+    "text": "PUS",
+    "start": 11.49,
+    "end": 11.76,
+    "id": "w32"
+  },
+  {
+    "text": "puis",
+    "start": 11.76,
+    "end": 12,
+    "id": "w33"
+  },
+  {
+    "text": "choisissez",
+    "start": 12,
+    "end": 12.6,
+    "id": "w34"
+  },
+  {
+    "text": "ce",
+    "start": 12.6,
+    "end": 12.72,
+    "id": "w35"
+  },
+  {
+    "text": "qui",
+    "start": 12.72,
+    "end": 12.9,
+    "id": "w36"
+  },
+  {
+    "text": "est",
+    "start": 12.9,
+    "end": 13.07,
+    "id": "w37"
+  },
+  {
+    "text": "l'ouvre.",
+    "start": 13.13,
+    "end": 13.57,
+    "id": "w38"
+  },
+  {
+    "text": "Une",
+    "start": 13.63,
+    "end": 13.76,
+    "id": "w39"
+  },
+  {
+    "text": "carte",
+    "start": 13.83,
+    "end": 14.05,
+    "id": "w40"
+  },
+  {
+    "text": "digitale,",
+    "start": 14.18,
+    "end": 14.86,
+    "id": "w41"
+  },
+  {
+    "text": "l'inscription",
+    "start": 14.86,
+    "end": 15.56,
+    "id": "w42"
+  },
+  {
+    "text": "à",
+    "start": 15.56,
+    "end": 15.61,
+    "id": "w43"
+  },
+  {
+    "text": "votre",
+    "start": 15.61,
+    "end": 15.88,
+    "id": "w44"
+  },
+  {
+    "text": "programme",
+    "start": 15.88,
+    "end": 16.33,
+    "id": "w45"
+  },
+  {
+    "text": "de",
+    "start": 16.38,
+    "end": 16.49,
+    "id": "w46"
+  },
+  {
+    "text": "fidélité",
+    "start": 16.49,
+    "end": 16.98,
+    "id": "w47"
+  },
+  {
+    "text": "ou",
+    "start": 17.03,
+    "end": 17.1,
+    "id": "w48"
+  },
+  {
+    "text": "une",
+    "start": 17.1,
+    "end": 17.29,
+    "id": "w49"
+  },
+  {
+    "text": "autre",
+    "start": 17.29,
+    "end": 17.6,
+    "id": "w50"
+  },
+  {
+    "text": "adresse,",
+    "start": 17.6,
+    "end": 18.15,
+    "id": "w51"
+  },
+  {
+    "text": "comme",
+    "start": 18.15,
+    "end": 18.46,
+    "id": "w52"
+  },
+  {
+    "text": "vos",
+    "start": 18.46,
+    "end": 18.65,
+    "id": "w53"
+  },
+  {
+    "text": "avis",
+    "start": 18.65,
+    "end": 18.9,
+    "id": "w54"
+  },
+  {
+    "text": "Google.",
+    "start": 18.9,
+    "end": 19.44,
+    "id": "w55"
+  },
+  {
+    "text": "Rapido",
+    "start": 19.57,
+    "end": 19.9,
+    "id": "w56"
+  },
+  {
+    "text": "CRM",
+    "start": 19.9,
+    "end": 20.09,
+    "id": "w57"
+  },
+  {
+    "text": "vous",
+    "start": 20.12,
+    "end": 20.35,
+    "id": "w58"
+  },
+  {
+    "text": "donne",
+    "start": 20.35,
+    "end": 20.67,
+    "id": "w59"
+  },
+  {
+    "text": "une",
+    "start": 20.67,
+    "end": 20.86,
+    "id": "w60"
+  },
+  {
+    "text": "adresse",
+    "start": 20.86,
+    "end": 21.31,
+    "id": "w61"
+  },
+  {
+    "text": "courte.",
+    "start": 21.31,
+    "end": 21.96,
+    "id": "w62"
+  },
+  {
+    "text": "Programmez-la",
+    "start": 22.01,
+    "end": 22.61,
+    "id": "w63"
+  },
+  {
+    "text": "une",
+    "start": 22.73,
+    "end": 22.87,
+    "id": "w64"
+  },
+  {
+    "text": "seule",
+    "start": 22.87,
+    "end": 23.16,
+    "id": "w65"
+  },
+  {
+    "text": "fois",
+    "start": 23.16,
+    "end": 23.39,
+    "id": "w66"
+  },
+  {
+    "text": "sur",
+    "start": 23.39,
+    "end": 23.47,
+    "id": "w67"
+  },
+  {
+    "text": "la",
+    "start": 23.56,
+    "end": 23.67,
+    "id": "w68"
+  },
+  {
+    "text": "PUS",
+    "start": 23.67,
+    "end": 23.88,
+    "id": "w69"
+  },
+  {
+    "text": "avec",
+    "start": 23.9,
+    "end": 24.13,
+    "id": "w70"
+  },
+  {
+    "text": "une",
+    "start": 24.21,
+    "end": 24.32,
+    "id": "w71"
+  },
+  {
+    "text": "application",
+    "start": 24.32,
+    "end": 24.83,
+    "id": "w72"
+  },
+  {
+    "text": "gratuite",
+    "start": 24.83,
+    "end": 25.2,
+    "id": "w73"
+  },
+  {
+    "text": "d'écriture",
+    "start": 25.2,
+    "end": 26.22,
+    "id": "w74"
+  },
+  {
+    "text": "NFC",
+    "start": 26.22,
+    "end": 26.56,
+    "id": "w75"
+  },
+  {
+    "text": "en",
+    "start": 26.61,
+    "end": 26.66,
+    "id": "w76"
+  },
+  {
+    "text": "suivant",
+    "start": 26.66,
+    "end": 27.03,
+    "id": "w77"
+  },
+  {
+    "text": "les",
+    "start": 27.03,
+    "end": 27.19,
+    "id": "w78"
+  },
+  {
+    "text": "quatre",
+    "start": 27.19,
+    "end": 27.51,
+    "id": "w79"
+  },
+  {
+    "text": "étapes",
+    "start": 27.51,
+    "end": 27.81,
+    "id": "w80"
+  },
+  {
+    "text": "affichées.",
+    "start": 27.81,
+    "end": 28.48,
+    "id": "w81"
+  },
+  {
+    "text": "Ensuite,",
+    "start": 28.57,
+    "end": 28.98,
+    "id": "w82"
+  },
+  {
+    "text": "vous",
+    "start": 29.02,
+    "end": 29.17,
+    "id": "w83"
+  },
+  {
+    "text": "pouvez",
+    "start": 29.29,
+    "end": 29.56,
+    "id": "w84"
+  },
+  {
+    "text": "changer",
+    "start": 29.56,
+    "end": 29.94,
+    "id": "w85"
+  },
+  {
+    "text": "la",
+    "start": 29.94,
+    "end": 30.03,
+    "id": "w86"
+  },
+  {
+    "text": "destination",
+    "start": 30.12,
+    "end": 30.68,
+    "id": "w87"
+  },
+  {
+    "text": "à",
+    "start": 30.68,
+    "end": 30.7,
+    "id": "w88"
+  },
+  {
+    "text": "tout",
+    "start": 30.77,
+    "end": 30.97,
+    "id": "w89"
+  },
+  {
+    "text": "moment",
+    "start": 31.07,
+    "end": 31.48,
+    "id": "w90"
+  },
+  {
+    "text": "sans",
+    "start": 31.48,
+    "end": 31.56,
+    "id": "w91"
+  },
+  {
+    "text": "reprogrammer",
+    "start": 32.02,
+    "end": 32.55,
+    "id": "w92"
+  },
+  {
+    "text": "la",
+    "start": 32.61,
+    "end": 32.69,
+    "id": "w93"
+  },
+  {
+    "text": "PUS.",
+    "start": 32.69,
+    "end": 33.12,
+    "id": "w94"
+  },
+  {
+    "text": "Chaque",
+    "start": 33.17,
+    "end": 33.53,
+    "id": "w95"
+  },
+  {
+    "text": "scan",
+    "start": 33.53,
+    "end": 33.77,
+    "id": "w96"
+  },
+  {
+    "text": "est",
+    "start": 33.89,
+    "end": 34.03,
+    "id": "w97"
+  },
+  {
+    "text": "compté",
+    "start": 34.03,
+    "end": 34.46,
+    "id": "w98"
+  },
+  {
+    "text": "avec",
+    "start": 34.46,
+    "end": 34.74,
+    "id": "w99"
+  },
+  {
+    "text": "la",
+    "start": 34.74,
+    "end": 34.88,
+    "id": "w100"
+  },
+  {
+    "text": "date",
+    "start": 34.88,
+    "end": 35.15,
+    "id": "w101"
+  },
+  {
+    "text": "du",
+    "start": 35.15,
+    "end": 35.29,
+    "id": "w102"
+  },
+  {
+    "text": "dernier",
+    "start": 35.3,
+    "end": 35.8,
+    "id": "w103"
+  },
+  {
+    "text": "passage.",
+    "start": 35.8,
+    "end": 36.58,
+    "id": "w104"
+  },
+  {
+    "text": "Le",
+    "start": 36.63,
+    "end": 36.71,
+    "id": "w105"
+  },
+  {
+    "text": "bouton",
+    "start": 36.71,
+    "end": 37.04,
+    "id": "w106"
+  },
+  {
+    "text": "Imprimante",
+    "start": 37.17,
+    "end": 37.75,
+    "id": "w107"
+  },
+  {
+    "text": "ouvre",
+    "start": 37.75,
+    "end": 38.07,
+    "id": "w108"
+  },
+  {
+    "text": "le",
+    "start": 38.07,
+    "end": 38.2,
+    "id": "w109"
+  },
+  {
+    "text": "design",
+    "start": 38.2,
+    "end": 38.59,
+    "id": "w110"
+  },
+  {
+    "text": "de",
+    "start": 38.59,
+    "end": 38.72,
+    "id": "w111"
+  },
+  {
+    "text": "la",
+    "start": 38.72,
+    "end": 38.85,
+    "id": "w112"
+  },
+  {
+    "text": "carte",
+    "start": 38.85,
+    "end": 39.24,
+    "id": "w113"
+  },
+  {
+    "text": "au",
+    "start": 39.24,
+    "end": 39.33,
+    "id": "w114"
+  },
+  {
+    "text": "format",
+    "start": 39.36,
+    "end": 39.61,
+    "id": "w115"
+  },
+  {
+    "text": "Carte",
+    "start": 39.61,
+    "end": 40.18,
+    "id": "w116"
+  },
+  {
+    "text": "de",
+    "start": 40.18,
+    "end": 40.32,
+    "id": "w117"
+  },
+  {
+    "text": "visite",
+    "start": 40.32,
+    "end": 40.8,
+    "id": "w118"
+  },
+  {
+    "text": "avec",
+    "start": 40.85,
+    "end": 41.06,
+    "id": "w119"
+  },
+  {
+    "text": "un",
+    "start": 41.07,
+    "end": 41.2,
+    "id": "w120"
+  },
+  {
+    "text": "QR",
+    "start": 41.2,
+    "end": 41.26,
+    "id": "w121"
+  },
+  {
+    "text": "code",
+    "start": 41.4,
+    "end": 41.6,
+    "id": "w122"
+  },
+  {
+    "text": "de",
+    "start": 41.6,
+    "end": 41.73,
+    "id": "w123"
+  },
+  {
+    "text": "secours",
+    "start": 41.73,
+    "end": 42.2,
+    "id": "w124"
+  },
+  {
+    "text": "pour",
+    "start": 42.2,
+    "end": 42.47,
+    "id": "w125"
+  },
+  {
+    "text": "les",
+    "start": 42.47,
+    "end": 42.67,
+    "id": "w126"
+  },
+  {
+    "text": "téléphones",
+    "start": 42.67,
+    "end": 43.25,
+    "id": "w127"
+  },
+  {
+    "text": "sans",
+    "start": 43.35,
+    "end": 43.62,
+    "id": "w128"
+  },
+  {
+    "text": "NFC.",
+    "start": 43.62,
+    "end": 43.84,
+    "id": "w129"
+  },
+  {
+    "text": "Vos",
+    "start": 44.17,
+    "end": 44.3,
+    "id": "w130"
+  },
+  {
+    "text": "PUS",
+    "start": 44.37,
+    "end": 44.59,
+    "id": "w131"
+  },
+  {
+    "text": "NFC",
+    "start": 44.59,
+    "end": 44.77,
+    "id": "w132"
+  },
+  {
+    "text": "sont",
+    "start": 44.89,
+    "end": 45.17,
+    "id": "w133"
+  },
+  {
+    "text": "prêtes!",
+    "start": 45.17,
+    "end": 45.96,
+    "id": "w134"
+  },
+  {
+    "text": "Retrouvez",
+    "start": 46.01,
+    "end": 46.37,
+    "id": "w135"
+  },
+  {
+    "text": "tous",
+    "start": 46.37,
+    "end": 46.43,
+    "id": "w136"
+  },
+  {
+    "text": "nos",
+    "start": 46.56,
+    "end": 46.61,
+    "id": "w137"
+  },
+  {
+    "text": "tutoriels",
+    "start": 46.73,
+    "end": 47.13,
+    "id": "w138"
+  },
+  {
+    "text": "dans",
+    "start": 47.13,
+    "end": 47.32,
+    "id": "w139"
+  },
+  {
+    "text": "l'académie!",
+    "start": 47.32,
+    "end": 48.04,
+    "id": "w140"
+  }
+]

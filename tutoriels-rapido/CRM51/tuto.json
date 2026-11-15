@@ -1,0 +1,38 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 45,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "id": "CRM51",
+  "title": "Connecter son nom de domaine",
+  "em": "nom de domaine",
+  "tag": "2 min · Intermédiaire",
+  "start_path": "/sites/1?onglet=domaine",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "paragraphs": [
+    {"key": "intro", "text": "Votre site peut s'afficher sur votre propre nom de domaine, comme le nom de votre entreprise point fr. Voyons comment le connecter."},
+    {"key": "saisir", "text": "Dans l'onglet Nom de domaine, saisissez votre domaine ou un sous-domaine, puis cliquez sur Continuer. Vous gardez votre domaine chez votre hébergeur."},
+    {"key": "etapes", "text": "RapidoCRM cherche votre hébergeur et affiche la configuration en trois étapes, avec un lien direct vers son interface quand il est reconnu."},
+    {"key": "records", "text": "Copiez les enregistrements indiqués : celui qui prouve que le domaine est à vous, et celui qui pointe vers votre site. Collez-les chez votre hébergeur."},
+    {"key": "verifier", "text": "Revenez cliquer sur Vérifier maintenant. Dès que les enregistrements sont visibles, le domaine est validé et le site s'affiche en adresse sécurisée."},
+    {"key": "outro", "text": "Votre site est sur votre nom de domaine. Retrouvez tous nos tutoriels dans l'Académie !"}
+  ],
+  "replace_text": {"http://127.0.0.1:8124": "https://crm.rapidosoftware.com"},
+  "scenes": [
+    {"at": "intro", "wait": 0.4},
+    {"at": "intro", "hover": "input[name=domaine]"},
+    {"at": "saisir", "label": "Votre domaine", "zone": "Publier sur votre nom de domaine", "fill": [["input[name=domaine]", "studio-lumiere-demo.fr"]]},
+    {"at": "saisir", "click": "#ajouterDomaine", "wait": 1.5},
+    {"at": "etapes", "label": "Configuration en 3 étapes", "scroll": "Configuration en 3 étapes", "zone": "Configuration en 3 étapes"},
+    {"at": "records", "label": "Les enregistrements", "zone": "table", "hover": "button.copier >> nth=0"},
+    {"at": "records", "hover": "button.copier >> nth=1"},
+    {"at": "verifier", "label": "Vérifier", "top": true, "zone": "#verifierDomaine", "hover": "#verifierDomaine"},
+    {"at": "outro", "top": true}
+  ]
+}
