@@ -76,6 +76,20 @@
   let html = esc(title);
   if (em && title.includes(em)) html = esc(title).replace(esc(em), '<em>' + esc(em) + '</em>');
   document.getElementById('title').innerHTML = html;
+  // Le titre ne doit jamais chevaucher la capture : on limite sa largeur au bord de l'écran incliné
+  // et on réduit la taille jusqu'à ce que chaque ligne tienne (aucun mot ne déborde).
+  const fitTitle = () => {
+    const h = document.getElementById('title');
+    const lim = document.querySelector('.screen').getBoundingClientRect().left - 28;
+    h.style.maxWidth = Math.max(380, lim - h.getBoundingClientRect().left) + 'px';
+    for (let fs = 90; fs >= 52; fs -= 3) {
+      h.style.fontSize = fs + 'px';
+      const rg = document.createRange(); rg.selectNodeContents(h);
+      const right = Math.max(...[...rg.getClientRects()].map((x) => x.right));
+      if (right <= lim && h.getBoundingClientRect().bottom < 470) break;
+    }
+  };
+  document.fonts.ready.then(fitTitle);
   const shot = q.get('shot'); const img = document.getElementById('shot');
   if (shot) img.src = shot;
   else { img.src = 'logo_icon.png'; img.style.cssText = 'width:62%;height:auto;object-fit:contain;margin:60px auto;display:block;filter:drop-shadow(0 30px 60px rgba(0,0,0,.6))';

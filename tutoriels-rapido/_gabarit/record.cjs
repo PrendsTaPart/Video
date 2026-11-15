@@ -5,7 +5,7 @@
 //
 // Une scène (tuto.json → "scenes") :
 //   { "at": "clé du paragraphe", "goto": "/chemin" (optionnel), "scroll": "Titre exact" | "css",
-//     "eval": "js exécuté dans la page avant le clic", "hover": "css", "click": "css", "fill": [["css","texte"]...], "select": [["css","libellé"]], "drag": ["source","cible"], "wait": 0.8,
+//     "eval": "js exécuté dans la page avant le clic", "hover": "css", "click": "css", "fill": [["css","texte"]...], "fill_now": [["css","texte"]] (sans frappe), "select": [["css","libellé"]], "drag": ["source","cible"], "wait": 0.8,
 //     "zone": "css" | "Titre exact" | [x,y,w,h], "label": "Libellé du chapitre", "zoom": 1.25 }
 const fs = require('fs');
 const path = require('path');
@@ -32,7 +32,7 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
         state = await login.storageState();
         await login.close();
     }
-    const ctx = await browser.newContext({ viewport: { width: 1920, height: 1080 }, storageState: state, recordVideo: { dir: OUT, size: { width: 1920, height: 1080 } } });
+    const ctx = await browser.newContext({ viewport: { width: 1920, height: 1080 }, locale: cfg.locale || 'fr-FR', timezoneId: cfg.timezone || 'Europe/Paris', storageState: state, recordVideo: { dir: OUT, size: { width: 1920, height: 1080 } } });
     const page = await ctx.newPage();
     page.setDefaultTimeout(5000); // un élément masqué ne doit pas bloquer la scène 30 s (décalage voix/image)
     // Remplacement de textes à l'affichage (ex. adresse locale → adresse publique), sans toucher au code de l'application.
@@ -144,6 +144,11 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
             await el.click().catch(() => {}); await el.fill('').catch(() => {});
             await el.pressSequentially(txt, { delay: cfg.type_delay || 45 }).catch(() => {});
             await page.waitForTimeout(250);
+        }
+        for (const [sel, txt] of sc.fill_now || []) { // champ secondaire : rempli d'un coup (pas de frappe animée), pour rester calé sur la voix
+            const el = await resolve(sel); if (!el) continue;
+            await el.fill(txt).catch(() => {});
+            await el.evaluate((n) => { n.dispatchEvent(new Event('input', { bubbles: true })); n.dispatchEvent(new Event('change', { bubbles: true })); }).catch(() => {});
         }
         for (const [sel, fichier] of sc.upload || []) { // champ fichier : chemin relatif à l'épisode
             const el = await resolve(sel); if (!el) continue;

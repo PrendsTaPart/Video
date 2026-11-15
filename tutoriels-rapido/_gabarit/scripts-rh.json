@@ -1,0 +1,683 @@
+{
+ "_note": "Scripts voix des tutoriels RapidoRH (série RH). Un paragraphe = une scène. Voix ElevenLabs Adam - Instructor (TGAegA0zNRi8I6nUdq3i), eleven_v4, une seule prise.",
+ "RH01": {
+  "title": "Créer son espace RapidoRH",
+  "em": "espace RapidoRH",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Bienvenue ! Dans ce tutoriel, on crée votre espace RapidoRH en moins d'une minute."
+   ],
+   [
+    "compte",
+    "Sur la page d'inscription, indiquez votre prénom, votre nom, votre adresse e-mail, puis choisissez un mot de passe."
+   ],
+   [
+    "entreprise",
+    "Deuxième étape : votre entreprise. Renseignez son nom et son adresse e-mail de contact, puis validez."
+   ],
+   [
+    "offre",
+    "Choisissez ensuite votre offre. L'essai gratuit vous permet de tout découvrir sans engagement."
+   ],
+   [
+    "outro",
+    "Votre espace est prêt. Dans le prochain tutoriel, on fait le tour du tableau de bord."
+   ]
+  ]
+ },
+ "RH02": {
+  "title": "Visite guidée du tableau de bord",
+  "em": "tableau de bord",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on fait le tour du tableau de bord, votre point de départ chaque matin."
+   ],
+   [
+    "projets",
+    "En haut, l'état de vos projets : à démarrer, en cours et terminés, avec leur avancement."
+   ],
+   [
+    "equipe",
+    "La progression hebdomadaire et le top cinq des employés montrent qui avance, à partir des tâches réellement terminées."
+   ],
+   [
+    "taches",
+    "La répartition des tâches se filtre par projet : à faire, en cours ou terminées."
+   ],
+   [
+    "stats",
+    "Plus bas, les statistiques de chaque projet, avec une recherche pour retrouver le bon."
+   ],
+   [
+    "outro",
+    "Dans le prochain tutoriel, on ajoute ses collaborateurs."
+   ]
+  ]
+ },
+ "RH03": {
+  "title": "Ajouter et gérer ses collaborateurs",
+  "em": "collaborateurs",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on ajoute un collaborateur et on retrouve toute l'équipe, humaine et IA, au même endroit."
+   ],
+   [
+    "liste",
+    "La page Utilisateurs liste toute l'équipe. Les filtres Humains et Agents IA séparent vos collaborateurs de vos employés IA."
+   ],
+   [
+    "ajouter",
+    "Cliquez sur Ajouter un utilisateur. Renseignez son nom, son e-mail, son téléphone, son département et son rôle."
+   ],
+   [
+    "contrat",
+    "Indiquez aussi ses heures, son salaire et ses jours de congé : ils servent au suivi des congés."
+   ],
+   [
+    "outro",
+    "Votre collaborateur reçoit une invitation pour choisir lui-même son mot de passe. Prochain épisode : les départements."
+   ]
+  ]
+ },
+ "RH04": {
+  "title": "Organiser son équipe en départements",
+  "em": "départements",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on organise l'entreprise en départements."
+   ],
+   [
+    "liste",
+    "La page Départements liste vos pôles : marketing, développement, ressources humaines…"
+   ],
+   [
+    "ajouter",
+    "Cliquez sur Ajouter un département, donnez-lui un nom, et validez."
+   ],
+   [
+    "rattacher",
+    "Chaque collaborateur est ensuite rattaché à son département depuis sa fiche. Les filtres de projets et de l'agenda s'en servent."
+   ],
+   [
+    "outro",
+    "Dans le prochain tutoriel, on définit les rôles et leurs permissions."
+   ]
+  ]
+ },
+ "RH05": {
+  "title": "Rôles et permissions",
+  "em": "permissions",
+  "tag": "1 min · Intermédiaire",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on décide qui peut voir et faire quoi dans RapidoRH."
+   ],
+   [
+    "liste",
+    "La page Rôles liste les rôles de l'entreprise, avec leurs permissions."
+   ],
+   [
+    "ajouter",
+    "Cliquez sur Ajouter un rôle et donnez-lui un nom, par exemple Chef de projet."
+   ],
+   [
+    "permissions",
+    "Cochez ensuite ses permissions, module par module : projets, tâches, congés, utilisateurs, documents."
+   ],
+   [
+    "outro",
+    "Un collaborateur ne voit dans son menu que ce que son rôle autorise. Prochain épisode : créer un projet."
+   ]
+  ]
+ },
+ "RH06": {
+  "title": "Créer un projet",
+  "em": "un projet",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on crée un projet et on lui affecte son équipe."
+   ],
+   [
+    "liste",
+    "La page Les projets regroupe tous vos projets, filtrables par statut. Cliquez sur Créer un projet."
+   ],
+   [
+    "infos",
+    "Renseignez le nom, la taille, la priorité et le tarif du projet."
+   ],
+   [
+    "equipe",
+    "Choisissez ensuite les dates, le chef de projet et les employés qui y participent."
+   ],
+   [
+    "outro",
+    "Enregistrez : le projet apparaît dans la liste, prêt à recevoir ses tâches. Prochain épisode : le Kanban."
+   ]
+  ]
+ },
+ "RH07": {
+  "title": "Le Kanban et les listes de tâches",
+  "em": "Kanban",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on fait avancer les tâches d'un projet sur le tableau Kanban."
+   ],
+   [
+    "colonnes",
+    "Chaque colonne est une liste de tâches : à faire, en cours, terminé. Le bouton Ajouter une colonne en crée une nouvelle."
+   ],
+   [
+    "ajouter",
+    "Le bouton plus, en haut d'une colonne, ajoute une tâche directement dans cette liste."
+   ],
+   [
+    "deplacer",
+    "Pour faire avancer une tâche, glissez-la simplement d'une colonne à l'autre."
+   ],
+   [
+    "outro",
+    "Toute l'équipe voit le tableau à jour. Prochain épisode : le détail d'une tâche."
+   ]
+  ]
+ },
+ "RH08": {
+  "title": "Le détail d'une tâche",
+  "em": "d'une tâche",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on ouvre une tâche pour la compléter."
+   ],
+   [
+    "ouvrir",
+    "Cliquez sur une carte du Kanban pour ouvrir sa fiche."
+   ],
+   [
+    "champs",
+    "Modifiez son titre, son statut, sa priorité, la personne assignée et ses dates."
+   ],
+   [
+    "fichiers",
+    "Ajoutez une description et des fichiers joints : tout ce qu'il faut pour réaliser la tâche."
+   ],
+   [
+    "outro",
+    "En bas de la fiche, vous pouvez aussi confier la tâche à un employé IA : on le verra dans un prochain tutoriel."
+   ]
+  ]
+ },
+ "RH09": {
+  "title": "Documents et liens du projet",
+  "em": "Documents et liens",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on centralise les documents et les liens utiles d'un projet."
+   ],
+   [
+    "details",
+    "Depuis la liste des projets, ouvrez le détail d'un projet."
+   ],
+   [
+    "documents",
+    "La section Documents rassemble les fichiers du projet : cliquez sur Ajouter, donnez un nom et choisissez le fichier."
+   ],
+   [
+    "liens",
+    "La section Liens garde les adresses utiles, comme une maquette ou un site de test, avec un titre et une description."
+   ],
+   [
+    "outro",
+    "Seuls les membres du projet y ont accès. Prochain épisode : les dailies."
+   ]
+  ]
+ },
+ "RH10": {
+  "title": "Les dailies de l'équipe",
+  "em": "dailies",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on suit le travail de l'équipe grâce aux dailies."
+   ],
+   [
+    "liste",
+    "La page Daily des utilisateurs liste, jour après jour, ce que chacun a fait."
+   ],
+   [
+    "detail",
+    "Chaque daily détaille les tâches travaillées, le nombre d'heures et un commentaire."
+   ],
+   [
+    "filtres",
+    "Les filtres et la recherche permettent de retrouver un jour, une personne ou un projet."
+   ],
+   [
+    "outro",
+    "Les employés IA écrivent aussi leur daily à chaque tâche terminée. Prochain épisode : l'agenda."
+   ]
+  ]
+ },
+ "RH11": {
+  "title": "L'agenda des tâches",
+  "em": "agenda",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on visualise les échéances de l'équipe dans l'agenda."
+   ],
+   [
+    "vues",
+    "L'agenda affiche les tâches par mois, par semaine, par jour ou sous forme de liste."
+   ],
+   [
+    "filtres",
+    "À gauche, cochez les projets à afficher pour vous concentrer sur l'essentiel."
+   ],
+   [
+    "naviguer",
+    "Les flèches et le bouton Aujourd'hui permettent de naviguer dans le temps."
+   ],
+   [
+    "outro",
+    "Dans le prochain tutoriel, on organise un rendez-vous."
+   ]
+  ]
+ },
+ "RH12": {
+  "title": "Organiser un rendez-vous",
+  "em": "rendez-vous",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on planifie un rendez-vous avec son équipe."
+   ],
+   [
+    "calendrier",
+    "La page Rendez-vous affiche tous vos rendez-vous dans un calendrier."
+   ],
+   [
+    "ajouter",
+    "Cliquez sur un jour pour en créer un : titre, type de rendez-vous, dates de début et de fin, et participants."
+   ],
+   [
+    "details",
+    "Cliquez sur un rendez-vous pour voir ses détails : organisateur, durée, lieu ou lien de visioconférence."
+   ],
+   [
+    "outro",
+    "Les participants le retrouvent dans leur propre calendrier. Prochain épisode : les congés."
+   ]
+  ]
+ },
+ "RH14": {
+  "title": "Gérer les demandes de congé",
+  "em": "congé",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on traite les demandes de congé de l'équipe."
+   ],
+   [
+    "liste",
+    "La page Congés liste toutes les demandes : employé, type, dates, jours pris et statut."
+   ],
+   [
+    "decision",
+    "Dans la colonne Actions, approuvez ou refusez la demande en attente."
+   ],
+   [
+    "filtres",
+    "Le filtre vous aide à retrouver les demandes en attente ou celles d'une période."
+   ],
+   [
+    "outro",
+    "Les jours de congé restants de chaque collaborateur en tiennent compte. Prochain épisode : les notifications."
+   ]
+  ]
+ },
+ "RH17": {
+  "title": "Les notifications",
+  "em": "notifications",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on retrouve toutes ses notifications."
+   ],
+   [
+    "cloche",
+    "La cloche, en haut de l'écran, signale les nouveautés : tâche assignée, congé demandé, livrable à valider."
+   ],
+   [
+    "page",
+    "La page Notifications les rassemble toutes, de la plus récente à la plus ancienne."
+   ],
+   [
+    "actions",
+    "Marquez-les comme lues ou supprimez celles qui ne servent plus."
+   ],
+   [
+    "outro",
+    "Dans le prochain tutoriel, on gère son abonnement."
+   ]
+  ]
+ },
+ "RH18": {
+  "title": "Votre abonnement",
+  "em": "abonnement",
+  "tag": "1 min · Débutant",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on consulte son abonnement RapidoRH."
+   ],
+   [
+    "offre",
+    "La page Mon abonnement indique votre offre en cours, ici l'essai gratuit, et sa date de fin."
+   ],
+   [
+    "factures",
+    "À droite, vos factures, téléchargeables à tout moment."
+   ],
+   [
+    "changer",
+    "Le bouton Voir les offres compare les formules pour changer d'offre quand vous le souhaitez."
+   ],
+   [
+    "outro",
+    "Dans le prochain tutoriel, on connecte RapidoRH à Claude."
+   ]
+  ]
+ },
+ "RH19": {
+  "title": "Connecter RapidoRH à Claude",
+  "em": "à Claude",
+  "tag": "1 min · Intermédiaire",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on prépare la connexion de RapidoRH à votre assistant IA, comme Claude."
+   ],
+   [
+    "page",
+    "Ouvrez la page Tokens : c'est là que vous créez les clés d'accès de votre assistant."
+   ],
+   [
+    "generer",
+    "Cliquez sur Générer un token, donnez-lui un nom et, si vous le souhaitez, une date d'expiration."
+   ],
+   [
+    "copier",
+    "Copiez le token affiché : il ne sera plus visible ensuite. Collez-le dans le connecteur RapidoRH de votre assistant."
+   ],
+   [
+    "outro",
+    "Vous pouvez révoquer un token à tout moment. Votre assistant pilote alors projets, tâches et équipe en langage naturel."
+   ]
+  ]
+ },
+ "RH26": {
+  "title": "Les paramètres IA de l'entreprise",
+  "em": "paramètres IA",
+  "tag": "1 min · Intermédiaire",
+  "profil": "admin",
+  "paragraphs": [
+   [
+    "intro",
+    "Avant d'activer vos employés IA, configurez l'IA de votre entreprise dans Paramètres IA."
+   ],
+   [
+    "cle",
+    "RapidoRH utilise votre propre clé Anthropic. Collez-la ici : elle est chiffrée et ne sera plus jamais affichée."
+   ],
+   [
+    "modele",
+    "Choisissez le modèle par défaut. Le tarif par million de tokens est indiqué pour chaque modèle."
+   ],
+   [
+    "tester",
+    "Enregistrez, puis testez la connexion : le test ne consomme que quelques tokens."
+   ],
+   [
+    "outro",
+    "Sans clé configurée, aucun employé IA ne peut être activé. Prochain épisode : découvrir vos employés IA."
+   ]
+  ]
+ },
+ "RH28": {
+  "title": "Découvrir vos employés IA",
+  "em": "employés IA",
+  "tag": "1 min · Débutant",
+  "profil": "ia",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on découvre les employés IA installés dans votre entreprise."
+   ],
+   [
+    "catalogue",
+    "La page Employés IA présente chaque agent : son nom, sa mission, son pôle et son statut."
+   ],
+   [
+    "filtres",
+    "Recherchez un agent par nom ou par mission, ou filtrez par pôle et par statut."
+   ],
+   [
+    "responsable",
+    "Chaque employé IA a un responsable humain. Un agent installé reste en formation tant que personne ne l'a activé."
+   ],
+   [
+    "outro",
+    "Cliquez sur un agent pour ouvrir sa fiche : c'est le sujet du prochain tutoriel."
+   ]
+  ]
+ },
+ "RH29": {
+  "title": "Configurer et activer un employé IA",
+  "em": "activer",
+  "tag": "1 min · Intermédiaire",
+  "profil": "ia",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on configure un employé IA puis on l'active."
+   ],
+   [
+    "fiche",
+    "La fiche présente sa mission, ses compétences et les outils qu'il peut utiliser, en lecture seule."
+   ],
+   [
+    "budget",
+    "Fixez son budget mensuel en tokens : sans budget, l'agent ne travaille pas."
+   ],
+   [
+    "prompt",
+    "Son prompt système est versionné : chaque modification crée une nouvelle version, consultable dans l'historique."
+   ],
+   [
+    "activer",
+    "Activez-le. Vous pourrez le suspendre ou le désactiver à tout moment."
+   ],
+   [
+    "outro",
+    "Prochain épisode : confier une tâche à un employé IA."
+   ]
+  ]
+ },
+ "RH30": {
+  "title": "Confier une tâche à un employé IA",
+  "em": "employé IA",
+  "tag": "1 min · Intermédiaire",
+  "profil": "ia",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on confie une tâche du Kanban à un employé IA."
+   ],
+   [
+    "ouvrir",
+    "Ouvrez la tâche. En bas de sa fiche, le panneau Employé IA permet de lui confier le travail."
+   ],
+   [
+    "mode",
+    "Choisissez le mode et l'employé IA, puis écrivez ses instructions : ce qu'il doit produire, pour qui, et sous quelle forme."
+   ],
+   [
+    "outils",
+    "Cochez les outils qu'il peut consulter. Il ne peut que lire : aucune action n'est faite à votre place."
+   ],
+   [
+    "outro",
+    "Enregistrez. Son livrable vous sera soumis pour validation avant toute suite."
+   ]
+  ]
+ },
+ "RH31": {
+  "title": "Suivre le travail de vos employés IA",
+  "em": "employés IA",
+  "tag": "1 min · Intermédiaire",
+  "profil": "ia",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on suit ce que font vos employés IA et ce qu'ils coûtent."
+   ],
+   [
+    "journal",
+    "Sur la fiche d'un agent, le journal liste ses exécutions : tâche, statut, tokens consommés et coût estimé."
+   ],
+   [
+    "daily",
+    "Chaque tâche terminée produit aussi un daily, visible avec ceux de l'équipe."
+   ],
+   [
+    "validation",
+    "Ses livrables arrivent dans le centre de validation : rien n'avance sans votre accord."
+   ],
+   [
+    "outro",
+    "En cas de besoin, suspendez l'agent d'un clic : ses tâches en attente sont mises de côté."
+   ]
+  ]
+ },
+ "RH15": {
+  "title": "L'espace du collaborateur",
+  "em": "collaborateur",
+  "tag": "1 min · Débutant",
+  "profil": "employe",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, on découvre RapidoRH du côté d'un collaborateur."
+   ],
+   [
+    "menu",
+    "Le menu d'un collaborateur ne montre que ce que son rôle autorise : ses projets, ses tâches, ses congés, ses rendez-vous."
+   ],
+   [
+    "projets",
+    "Il retrouve les projets auxquels il participe."
+   ],
+   [
+    "taches",
+    "Sur le Kanban, il fait avancer ses tâches d'une colonne à l'autre."
+   ],
+   [
+    "outro",
+    "Dans le prochain tutoriel, on pose une demande de congé."
+   ]
+  ]
+ },
+ "RH32": {
+  "title": "Demander un congé",
+  "em": "un congé",
+  "tag": "1 min · Débutant",
+  "profil": "employe",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, un collaborateur pose une demande de congé."
+   ],
+   [
+    "ouvrir",
+    "Sur la page Congés, cliquez sur Faire une demande de congé."
+   ],
+   [
+    "formulaire",
+    "Choisissez le type de congé, les dates de début et de fin, et indiquez la cause. Un justificatif peut être joint."
+   ],
+   [
+    "suivi",
+    "La demande part en attente : son statut change dès que votre responsable l'a traitée."
+   ],
+   [
+    "outro",
+    "Dans le prochain tutoriel, on répond à ses collègues dans la messagerie."
+   ]
+  ]
+ },
+ "RH33": {
+  "title": "Répondre dans la messagerie",
+  "em": "messagerie",
+  "tag": "1 min · Débutant",
+  "profil": "employe",
+  "paragraphs": [
+   [
+    "intro",
+    "Dans ce tutoriel, un collaborateur répond à une demande d'information dans la messagerie."
+   ],
+   [
+    "canal",
+    "Les conversations qui contiennent une mention ou une demande pour vous sont signalées."
+   ],
+   [
+    "repondre",
+    "Ouvrez la demande, écrivez votre réponse directement dans le message, puis envoyez."
+   ],
+   [
+    "deblocage",
+    "La demande passe à Répondu : si une tâche l'attendait, elle repart aussitôt."
+   ],
+   [
+    "outro",
+    "Une réaction ou un vu ne vaut pas validation : seule votre réponse compte."
+   ]
+  ]
+ }
+}
