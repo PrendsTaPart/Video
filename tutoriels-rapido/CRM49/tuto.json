@@ -1,0 +1,40 @@
+{
+  "id": "CRM49",
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "title": "Statistiques des CTA et test A/B",
+  "em": "test A/B",
+  "tag": "1 min · Intermédiaire",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/cta",
+  "type_delay": 20,
+  "fixes": {"dix-sept pour cent": "17 %"},
+  "end_cta": "Tous les tutoriels RapidoCRM sur l'Académie",
+  "thumb_shot": "fin.png",
+  "paragraphs": [
+    {"key": "intro", "text": "Votre CTA fonctionne-t-il ? RapidoCRM mesure chaque vue, chaque clic et chaque fermeture."},
+    {"key": "liste", "text": "La liste des CTA affiche déjà les vues, les clics et le taux de clic. Ouvrez le menu, puis statistiques."},
+    {"key": "chiffres", "text": "En haut, les chiffres clés sur la période : vues, clics, taux de clic, visiteurs différents, et fermetures sans clic. Le graphique montre l'évolution jour après jour."},
+    {"key": "ab", "text": "Le test A/B compare deux versions du bouton, montrées chacune à la moitié des visiteurs. Ici, la version B gagne avec plus du double de clics."},
+    {"key": "detail", "text": "Plus bas, vous voyez les pages qui convertissent le mieux, d'où viennent vos visiteurs, et sur quel appareil."},
+    {"key": "regler", "text": "Pour lancer un test, activez-le dans les paramètres du CTA et écrivez la version B. Votre assistant IA peut aussi vous donner ces chiffres."},
+    {"key": "outro", "text": "Retrouvez tous les tutoriels RapidoCRM sur l'Académie. À bientôt !"}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3},
+    {"at": "liste", "label": "Vos CTA", "hover": "table tbody tr:has-text(\"prendre rendez-vous\") >> nth=0", "zone": "table"},
+    {"at": "liste", "click": "table tbody tr:has-text(\"prendre rendez-vous\") [data-bs-toggle=dropdown]"},
+    {"at": "liste", "click": ".dropdown-menu.show a:has-text(\"Statistiques\")", "wait": 0.6},
+    {"at": "chiffres", "label": "Les chiffres clés", "zone": ".row.g-3", "hover": ".chiffre >> nth=2"},
+    {"at": "chiffres", "hover": ".courbe", "zone": ".courbe", "zone_closest": ".card"},
+    {"at": "ab", "label": "Le test A/B", "scroll": ".ab-gagnant", "zone": ".ab-gagnant", "zone_closest": ".card"},
+    {"at": "detail", "label": "Pages, sources, appareils", "scroll": "h5:has-text(\"Provenance\")", "zone": "h5:has-text(\"Pages\")", "zone_closest": ".card"},
+    {"at": "regler", "label": "Lancer un test", "click": "a:has-text(\"Paramètres\")", "wait": 0.6},
+    {"at": "regler", "scroll": "#abActif", "zone": "#abActif", "zone_closest": ".cta-section"},
+    {"at": "outro", "wait": 0.3}
+  ]
+}
