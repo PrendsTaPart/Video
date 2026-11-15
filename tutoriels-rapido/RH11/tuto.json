@@ -1,0 +1,90 @@
+{
+ "id": "RH11",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "L'agenda des tâches",
+ "em": "agenda",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/Agenda",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : organiser un rendez-vous",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on visualise les échéances de l'équipe dans l'agenda."
+  },
+  {
+   "key": "vues",
+   "text": "L'agenda affiche les tâches par mois, par semaine, par jour ou sous forme de liste."
+  },
+  {
+   "key": "filtres",
+   "text": "À gauche, cochez les projets à afficher pour vous concentrer sur l'essentiel."
+  },
+  {
+   "key": "naviguer",
+   "text": "Les flèches et le bouton Aujourd'hui permettent de naviguer dans le temps."
+  },
+  {
+   "key": "outro",
+   "text": "Dans le prochain tutoriel, on organise un rendez-vous."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3,
+   "zone": ".fc"
+  },
+  {
+   "at": "vues",
+   "label": "Mois, semaine, jour, liste",
+   "click": ".fc-timeGridWeek-button",
+   "wait": 0.6
+  },
+  {
+   "at": "vues",
+   "click": ".fc-listWeek-button",
+   "wait": 0.6
+  },
+  {
+   "at": "vues",
+   "click": ".fc-dayGridMonth-button",
+   "zone": ".fc-header-toolbar"
+  },
+  {
+   "at": "filtres",
+   "label": "Filtrer par projet",
+   "click": ".form-check:has-text(\"Salon Food\") input",
+   "zone": "Filtre par liste des projets",
+   "zone_closest": ".card"
+  },
+  {
+   "at": "naviguer",
+   "label": "Naviguer",
+   "click": ".fc-next-button",
+   "wait": 0.6
+  },
+  {
+   "at": "naviguer",
+   "click": ".fc-today-button",
+   "zone": ".fc-header-toolbar"
+  },
+  {
+   "at": "outro",
+   "wait": 0.2,
+   "zone": ".fc"
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

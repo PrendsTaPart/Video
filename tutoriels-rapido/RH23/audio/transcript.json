@@ -1,0 +1,554 @@
+[
+  {
+    "text": "Voici",
+    "start": 0.02,
+    "end": 0.36,
+    "id": "w0"
+  },
+  {
+    "text": "la",
+    "start": 0.36,
+    "end": 0.5,
+    "id": "w1"
+  },
+  {
+    "text": "messagerie",
+    "start": 0.5,
+    "end": 1.22,
+    "id": "w2"
+  },
+  {
+    "text": "de",
+    "start": 1.22,
+    "end": 1.35,
+    "id": "w3"
+  },
+  {
+    "text": "Rapido",
+    "start": 1.36,
+    "end": 1.72,
+    "id": "w4"
+  },
+  {
+    "text": "RH.",
+    "start": 1.74,
+    "end": 2.3,
+    "id": "w5"
+  },
+  {
+    "text": "A",
+    "start": 2.3,
+    "end": 2.39,
+    "id": "w6"
+  },
+  {
+    "text": "gauche,",
+    "start": 2.39,
+    "end": 3,
+    "id": "w7"
+  },
+  {
+    "text": "vos",
+    "start": 3,
+    "end": 3.21,
+    "id": "w8"
+  },
+  {
+    "text": "canaux,",
+    "start": 3.21,
+    "end": 3.8,
+    "id": "w9"
+  },
+  {
+    "text": "vos",
+    "start": 3.8,
+    "end": 3.97,
+    "id": "w10"
+  },
+  {
+    "text": "fils",
+    "start": 3.97,
+    "end": 4.23,
+    "id": "w11"
+  },
+  {
+    "text": "de",
+    "start": 4.23,
+    "end": 4.29,
+    "id": "w12"
+  },
+  {
+    "text": "projets",
+    "start": 4.64,
+    "end": 4.8,
+    "id": "w13"
+  },
+  {
+    "text": "et",
+    "start": 4.8,
+    "end": 4.93,
+    "id": "w14"
+  },
+  {
+    "text": "vos",
+    "start": 4.93,
+    "end": 5.11,
+    "id": "w15"
+  },
+  {
+    "text": "messages",
+    "start": 5.13,
+    "end": 5.64,
+    "id": "w16"
+  },
+  {
+    "text": "directs.",
+    "start": 5.64,
+    "end": 6.25,
+    "id": "w17"
+  },
+  {
+    "text": "Ouvrons",
+    "start": 6.32,
+    "end": 6.79,
+    "id": "w18"
+  },
+  {
+    "text": "le",
+    "start": 6.79,
+    "end": 6.91,
+    "id": "w19"
+  },
+  {
+    "text": "canal",
+    "start": 6.94,
+    "end": 7.27,
+    "id": "w20"
+  },
+  {
+    "text": "Marketing.",
+    "start": 7.32,
+    "end": 8.08,
+    "id": "w21"
+  },
+  {
+    "text": "Les",
+    "start": 8.16,
+    "end": 8.31,
+    "id": "w22"
+  },
+  {
+    "text": "messages",
+    "start": 8.31,
+    "end": 8.74,
+    "id": "w23"
+  },
+  {
+    "text": "non",
+    "start": 8.76,
+    "end": 8.93,
+    "id": "w24"
+  },
+  {
+    "text": "lus",
+    "start": 8.93,
+    "end": 9.09,
+    "id": "w25"
+  },
+  {
+    "text": "et",
+    "start": 9.09,
+    "end": 9.2,
+    "id": "w26"
+  },
+  {
+    "text": "les",
+    "start": 9.2,
+    "end": 9.37,
+    "id": "w27"
+  },
+  {
+    "text": "nouveautés",
+    "start": 9.37,
+    "end": 9.93,
+    "id": "w28"
+  },
+  {
+    "text": "sont",
+    "start": 9.93,
+    "end": 10.12,
+    "id": "w29"
+  },
+  {
+    "text": "signalés.",
+    "start": 10.47,
+    "end": 10.84,
+    "id": "w30"
+  },
+  {
+    "text": "Écrivez",
+    "start": 10.86,
+    "end": 11.28,
+    "id": "w31"
+  },
+  {
+    "text": "votre",
+    "start": 11.28,
+    "end": 11.59,
+    "id": "w32"
+  },
+  {
+    "text": "message.",
+    "start": 11.59,
+    "end": 12.19,
+    "id": "w33"
+  },
+  {
+    "text": "Les",
+    "start": 12.26,
+    "end": 12.42,
+    "id": "w34"
+  },
+  {
+    "text": "étoiles",
+    "start": 12.42,
+    "end": 12.83,
+    "id": "w35"
+  },
+  {
+    "text": "mettent",
+    "start": 12.83,
+    "end": 13.27,
+    "id": "w36"
+  },
+  {
+    "text": "en",
+    "start": 13.27,
+    "end": 13.36,
+    "id": "w37"
+  },
+  {
+    "text": "gras",
+    "start": 13.4,
+    "end": 13.68,
+    "id": "w38"
+  },
+  {
+    "text": "et",
+    "start": 13.68,
+    "end": 13.79,
+    "id": "w39"
+  },
+  {
+    "text": "l'arribase",
+    "start": 13.79,
+    "end": 14.23,
+    "id": "w40"
+  },
+  {
+    "text": "permet",
+    "start": 14.57,
+    "end": 14.64,
+    "id": "w41"
+  },
+  {
+    "text": "de",
+    "start": 14.64,
+    "end": 14.75,
+    "id": "w42"
+  },
+  {
+    "text": "mentionner",
+    "start": 14.75,
+    "end": 15.32,
+    "id": "w43"
+  },
+  {
+    "text": "un",
+    "start": 15.32,
+    "end": 15.42,
+    "id": "w44"
+  },
+  {
+    "text": "collègue.",
+    "start": 15.48,
+    "end": 16.1,
+    "id": "w45"
+  },
+  {
+    "text": "Réagissez",
+    "start": 16.12,
+    "end": 16.7,
+    "id": "w46"
+  },
+  {
+    "text": "d'un",
+    "start": 16.74,
+    "end": 17.01,
+    "id": "w47"
+  },
+  {
+    "text": "clic",
+    "start": 17.01,
+    "end": 17.29,
+    "id": "w48"
+  },
+  {
+    "text": "avec",
+    "start": 17.29,
+    "end": 17.57,
+    "id": "w49"
+  },
+  {
+    "text": "un",
+    "start": 17.57,
+    "end": 17.71,
+    "id": "w50"
+  },
+  {
+    "text": "emoji.",
+    "start": 17.71,
+    "end": 18.09,
+    "id": "w51"
+  },
+  {
+    "text": "Une",
+    "start": 18.32,
+    "end": 18.52,
+    "id": "w52"
+  },
+  {
+    "text": "réaction",
+    "start": 18.52,
+    "end": 19.1,
+    "id": "w53"
+  },
+  {
+    "text": "ou",
+    "start": 19.1,
+    "end": 19.24,
+    "id": "w54"
+  },
+  {
+    "text": "un",
+    "start": 19.24,
+    "end": 19.38,
+    "id": "w55"
+  },
+  {
+    "text": "vu",
+    "start": 19.38,
+    "end": 19.52,
+    "id": "w56"
+  },
+  {
+    "text": "ne",
+    "start": 19.52,
+    "end": 19.65,
+    "id": "w57"
+  },
+  {
+    "text": "vaut",
+    "start": 19.7,
+    "end": 19.93,
+    "id": "w58"
+  },
+  {
+    "text": "jamais",
+    "start": 19.96,
+    "end": 20.27,
+    "id": "w59"
+  },
+  {
+    "text": "validation.",
+    "start": 20.64,
+    "end": 21.4,
+    "id": "w60"
+  },
+  {
+    "text": "Pour",
+    "start": 21.42,
+    "end": 21.61,
+    "id": "w61"
+  },
+  {
+    "text": "ne",
+    "start": 21.61,
+    "end": 21.71,
+    "id": "w62"
+  },
+  {
+    "text": "pas",
+    "start": 21.71,
+    "end": 21.87,
+    "id": "w63"
+  },
+  {
+    "text": "encombrer",
+    "start": 21.87,
+    "end": 22.33,
+    "id": "w64"
+  },
+  {
+    "text": "le",
+    "start": 22.33,
+    "end": 22.43,
+    "id": "w65"
+  },
+  {
+    "text": "canal,",
+    "start": 22.43,
+    "end": 22.88,
+    "id": "w66"
+  },
+  {
+    "text": "répondez",
+    "start": 22.88,
+    "end": 23.34,
+    "id": "w67"
+  },
+  {
+    "text": "dans",
+    "start": 23.34,
+    "end": 23.39,
+    "id": "w68"
+  },
+  {
+    "text": "un",
+    "start": 23.39,
+    "end": 23.74,
+    "id": "w69"
+  },
+  {
+    "text": "fil",
+    "start": 23.74,
+    "end": 23.85,
+    "id": "w70"
+  },
+  {
+    "text": "de",
+    "start": 23.89,
+    "end": 24,
+    "id": "w71"
+  },
+  {
+    "text": "discussion.",
+    "start": 24,
+    "end": 24.8,
+    "id": "w72"
+  },
+  {
+    "text": "Épingliez",
+    "start": 24.82,
+    "end": 25.27,
+    "id": "w73"
+  },
+  {
+    "text": "les",
+    "start": 25.27,
+    "end": 25.41,
+    "id": "w74"
+  },
+  {
+    "text": "messages",
+    "start": 25.44,
+    "end": 25.87,
+    "id": "w75"
+  },
+  {
+    "text": "importants,",
+    "start": 25.87,
+    "end": 26.52,
+    "id": "w76"
+  },
+  {
+    "text": "enregistrez-les",
+    "start": 26.56,
+    "end": 27.46,
+    "id": "w77"
+  },
+  {
+    "text": "pour",
+    "start": 27.46,
+    "end": 27.64,
+    "id": "w78"
+  },
+  {
+    "text": "plus",
+    "start": 27.78,
+    "end": 27.94,
+    "id": "w79"
+  },
+  {
+    "text": "tard",
+    "start": 27.94,
+    "end": 28.2,
+    "id": "w80"
+  },
+  {
+    "text": "Et",
+    "start": 28.22,
+    "end": 28.31,
+    "id": "w81"
+  },
+  {
+    "text": "retrouvez",
+    "start": 28.31,
+    "end": 28.81,
+    "id": "w82"
+  },
+  {
+    "text": "tout",
+    "start": 28.82,
+    "end": 29.04,
+    "id": "w83"
+  },
+  {
+    "text": "avec",
+    "start": 29.06,
+    "end": 29.28,
+    "id": "w84"
+  },
+  {
+    "text": "la",
+    "start": 29.28,
+    "end": 29.39,
+    "id": "w85"
+  },
+  {
+    "text": "recherche",
+    "start": 29.39,
+    "end": 29.92,
+    "id": "w86"
+  },
+  {
+    "text": "ou",
+    "start": 29.96,
+    "end": 30.1,
+    "id": "w87"
+  },
+  {
+    "text": "le",
+    "start": 30.1,
+    "end": 30.19,
+    "id": "w88"
+  },
+  {
+    "text": "raccourci",
+    "start": 30.46,
+    "end": 30.9,
+    "id": "w89"
+  },
+  {
+    "text": "Ctrl",
+    "start": 30.91,
+    "end": 31.49,
+    "id": "w90"
+  },
+  {
+    "text": "K.",
+    "start": 31.49,
+    "end": 31.64,
+    "id": "w91"
+  }
+]

@@ -1,0 +1,88 @@
+{
+ "id": "RH05",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Rôles et permissions",
+ "em": "permissions",
+ "tag": "1 min · Intermédiaire",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/roles",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : créer un projet",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on décide qui peut voir et faire quoi dans RapidoRH."
+  },
+  {
+   "key": "liste",
+   "text": "La page Rôles liste les rôles de l'entreprise, avec leurs permissions."
+  },
+  {
+   "key": "ajouter",
+   "text": "Cliquez sur Ajouter un rôle et donnez-lui un nom, par exemple Chef de projet."
+  },
+  {
+   "key": "permissions",
+   "text": "Cochez ensuite ses permissions, module par module : projets, tâches, congés, utilisateurs, documents."
+  },
+  {
+   "key": "outro",
+   "text": "Un collaborateur ne voit dans son menu que ce que son rôle autorise. Prochain épisode : créer un projet."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3,
+   "zone": "table"
+  },
+  {
+   "at": "liste",
+   "label": "Les rôles",
+   "zone": "table"
+  },
+  {
+   "at": "ajouter",
+   "label": "Ajouter un rôle",
+   "click": "button:has-text(\"Ajouter un rôle\")",
+   "fill": [
+    [
+     ".modal.show input[placeholder=\"Entrer un nom\"]",
+     "Chef de projet"
+    ]
+   ],
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "permissions",
+   "label": "Les permissions",
+   "click": ".modal.show label:has-text(\"Voir la liste des projets\")"
+  },
+  {
+   "at": "permissions",
+   "click": ".modal.show label:has-text(\"Voir la liste des tâches\")"
+  },
+  {
+   "at": "permissions",
+   "click": ".modal.show label:has-text(\"Voir la liste des congés\")",
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "outro",
+   "click": ".modal.show button:has-text(\"Ajouter\")",
+   "wait": 1.0,
+   "zone": "table"
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

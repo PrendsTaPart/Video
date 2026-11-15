@@ -1,0 +1,140 @@
+{
+ "id": "RH25",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Le forum d'entraide et la connaissance validée",
+ "em": "connaissance validée",
+ "tag": "1 min · Intermédiaire",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/forum",
+ "type_delay": 18,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : les paramètres IA",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Le forum d'entraide reste interne à votre entreprise. Ouvrez un nouveau sujet pour signaler un problème ou poser une question."
+  },
+  {
+   "key": "sujet",
+   "text": "Choisissez la catégorie, un titre clair, puis décrivez le contexte et les étapes. Les clés et mots de passe éventuels sont masqués automatiquement."
+  },
+  {
+   "key": "reponse",
+   "text": "Vos collègues répondent dans le sujet. Les réponses des employés IA sont identifiées."
+  },
+  {
+   "key": "accepter",
+   "text": "Acceptez la réponse qui vous a aidé, puis marquez le sujet comme résolu."
+  },
+  {
+   "key": "article",
+   "text": "Un responsable vérifie la solution, puis la publie comme article de connaissance, versionné et daté."
+  },
+  {
+   "key": "outro",
+   "text": "Les articles validés sont consultables par l'équipe et par les employés IA, comme des sources à citer, jamais comme des ordres."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "label": "Ouvrir un sujet",
+   "click": "button:has-text(\"Nouveau\")",
+   "wait": 0.6,
+   "zone": "form.card"
+  },
+  {
+   "at": "sujet",
+   "select": [
+    [
+     "#nt-c",
+     "Questions métier"
+    ]
+   ],
+   "fill": [
+    [
+     "#nt-t",
+     "Exporter les dailies du mois en CSV"
+    ]
+   ],
+   "zone": "form.card",
+   "fill_now": [
+    [
+     "#nt-b",
+     "Je cherche à exporter les dailies de l'équipe pour le bilan mensuel."
+    ]
+   ]
+  },
+  {
+   "at": "sujet",
+   "click": "form.card button:has-text(\"Publier\")",
+   "wait": 1.0
+  },
+  {
+   "at": "reponse",
+   "label": "Répondre",
+   "zone": "#fo-r",
+   "zone_closest": "form",
+   "fill_now": [
+    [
+     "#fo-r",
+     "Dans Daily, filtrez le mois puis cliquez sur Exporter en CSV."
+    ]
+   ]
+  },
+  {
+   "at": "reponse",
+   "click": "button:has-text(\"Publier la réponse\")",
+   "wait": 1.0
+  },
+  {
+   "at": "accepter",
+   "label": "Accepter et résoudre",
+   "click": "button:has-text(\"Accepter cette réponse\")",
+   "wait": 0.8
+  },
+  {
+   "at": "accepter",
+   "click": "button:has-text(\"Marquer résolu\")",
+   "wait": 0.8,
+   "zone": "article.card"
+  },
+  {
+   "at": "article",
+   "label": "Publier l'article",
+   "click": "button:has-text(\"Vérifier (responsable)\")",
+   "wait": 0.8
+  },
+  {
+   "at": "article",
+   "zone": "#pr-b",
+   "zone_closest": "div",
+   "fill_now": [
+    [
+     "#pr-b",
+     "Dans Daily : filtrer le mois, puis Exporter en CSV. Vérifié sur la version 2."
+    ]
+   ]
+  },
+  {
+   "at": "article",
+   "click": "button:has-text(\"Publier l'article validé\")",
+   "wait": 1.0
+  },
+  {
+   "at": "outro",
+   "label": "La connaissance validée",
+   "click": "button:has-text(\"Connaissance validée\")",
+   "wait": 1.0,
+   "zone": "article.card"
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

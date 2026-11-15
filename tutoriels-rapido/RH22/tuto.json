@@ -1,0 +1,96 @@
+{
+ "id": "RH22",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Créer et activer une routine",
+ "em": "une routine",
+ "tag": "1 min · Intermédiaire",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/routines",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : la messagerie d'équipe",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Quand vous créez un projet depuis un modèle, RapidoRH vous propose des routines : par exemple, un suivi quotidien des blocages."
+  },
+  {
+   "key": "desactivee",
+   "text": "Elles sont toujours créées désactivées. La liste rouge indique ce qui manque avant de pouvoir les lancer."
+  },
+  {
+   "key": "budget",
+   "text": "Fixez un budget par exécution, en tokens : sans budget, aucune activation n'est possible. Vous pouvez aussi définir une fenêtre de silence."
+  },
+  {
+   "key": "essai",
+   "text": "Lancez ensuite un essai à blanc : RapidoRH vérifie la configuration sans appeler l'IA ni créer de tâche."
+  },
+  {
+   "key": "activer",
+   "text": "L'essai est réussi : activez la routine. Elle s'exécutera du lundi au vendredi à neuf heures, heure de Paris."
+  },
+  {
+   "key": "outro",
+   "text": "Chaque routine propose, mais n'applique rien seule. Elle s'arrête après deux échecs, et un bouton d'arrêt d'urgence coupe toutes les routines d'un coup."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3,
+   "zone": "article.card-body"
+  },
+  {
+   "at": "desactivee",
+   "label": "Les routines proposées",
+   "hover": "article.card-body ul.text-danger",
+   "zone": "article.card-body ul.text-danger"
+  },
+  {
+   "at": "budget",
+   "label": "Budget et planification",
+   "fill": [
+    [
+     "input[id^=rt-b-]",
+     "6000"
+    ]
+   ],
+   "zone": "article.card-body form"
+  },
+  {
+   "at": "budget",
+   "click": "article.card-body button[type=submit]",
+   "wait": 1.0
+  },
+  {
+   "at": "essai",
+   "label": "L'essai à blanc",
+   "click": "button:has-text(\"Essai à blanc\")",
+   "wait": 1.0,
+   "zone": "article.card-body"
+  },
+  {
+   "at": "activer",
+   "label": "Activer",
+   "click": "button.btn-success:has-text(\"Activer\")",
+   "wait": 1.0,
+   "zone": "article.card-body"
+  },
+  {
+   "at": "outro",
+   "label": "Arrêter",
+   "click": "article.card-body details summary",
+   "hover": "button:has-text(\"Arrêt d'urgence\")",
+   "zone": "button:has-text(\"Arrêt d'urgence\")"
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

@@ -1,0 +1,111 @@
+{
+ "id": "RH29",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Configurer et activer un employé IA",
+ "em": "activer",
+ "tag": "1 min · Intermédiaire",
+ "profil": "ia",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/agents",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : confier une tâche à un employé IA",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on configure un employé IA puis on l'active."
+  },
+  {
+   "key": "fiche",
+   "text": "La fiche présente sa mission, ses compétences et les outils qu'il peut utiliser, en lecture seule."
+  },
+  {
+   "key": "budget",
+   "text": "Fixez son budget mensuel en tokens : sans budget, l'agent ne travaille pas."
+  },
+  {
+   "key": "prompt",
+   "text": "Son prompt système est versionné : chaque modification crée une nouvelle version, consultable dans l'historique."
+  },
+  {
+   "key": "activer",
+   "text": "Activez-le. Vous pourrez le suspendre ou le désactiver à tout moment."
+  },
+  {
+   "key": "outro",
+   "text": "Prochain épisode : confier une tâche à un employé IA."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "goto_file": "agent.txt",
+   "wait": 0.3
+  },
+  {
+   "at": "fiche",
+   "label": "La fiche",
+   "zone": [
+    380,
+    110,
+    1420,
+    520
+   ]
+  },
+  {
+   "at": "fiche",
+   "click": "#tab-outils",
+   "wait": 0.6
+  },
+  {
+   "at": "budget",
+   "label": "Le budget",
+   "click": "#tab-configuration",
+   "fill": [
+    [
+     "#cfg-budget",
+     "200000"
+    ]
+   ],
+   "zone": "#cfg-budget",
+   "zone_closest": ".row, .card"
+  },
+  {
+   "at": "prompt",
+   "label": "Prompt versionné",
+   "click": "button:has-text(\"Historique des versions\")",
+   "wait": 0.8
+  },
+  {
+   "at": "activer",
+   "label": "Activer",
+   "click": "button:has-text(\"Enregistrer la configuration\")",
+   "wait": 0.6
+  },
+  {
+   "at": "activer",
+   "top": true,
+   "click": "button:has-text(\"Activer\")",
+   "wait": 1.0,
+   "zone": [
+    380,
+    110,
+    1420,
+    300
+   ]
+  },
+  {
+   "at": "outro",
+   "hover": "button:has-text(\"Suspendre\")"
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

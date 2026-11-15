@@ -1,0 +1,92 @@
+{
+ "id": "RH32",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Demander un congé",
+ "em": "un congé",
+ "tag": "1 min · Débutant",
+ "profil": "employe",
+ "login_as": "hugo@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/conges",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : répondre dans la messagerie",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, un collaborateur pose une demande de congé."
+  },
+  {
+   "key": "ouvrir",
+   "text": "Sur la page Congés, cliquez sur Faire une demande de congé."
+  },
+  {
+   "key": "formulaire",
+   "text": "Choisissez le type de congé, les dates de début et de fin, et indiquez la cause. Un justificatif peut être joint."
+  },
+  {
+   "key": "suivi",
+   "text": "La demande part en attente : son statut change dès que votre responsable l'a traitée."
+  },
+  {
+   "key": "outro",
+   "text": "Dans le prochain tutoriel, on répond à ses collègues dans la messagerie."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "ouvrir",
+   "label": "Faire une demande",
+   "click": "a:has-text(\"Faire une demande de congé\")",
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "formulaire",
+   "label": "Le formulaire",
+   "select": [
+    [
+     ".modal.show select:has(option:text(\"Congés annuels\"))",
+     "Congés annuels"
+    ]
+   ],
+   "fill": [
+    [
+     ".modal.show input[type=date] >> nth=0",
+     "2027-02-15"
+    ],
+    [
+     ".modal.show input[type=date] >> nth=1",
+     "2027-02-19"
+    ],
+    [
+     ".modal.show textarea",
+     "Vacances d'hiver en famille."
+    ]
+   ],
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "suivi",
+   "label": "Le suivi",
+   "click": ".modal.show button:has-text(\"Créer la demande\")",
+   "wait": 1.2,
+   "zone": "table"
+  },
+  {
+   "at": "outro",
+   "wait": 0.2
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

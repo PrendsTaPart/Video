@@ -1,0 +1,93 @@
+{
+ "id": "RH31",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Suivre le travail de vos employés IA",
+ "em": "employés IA",
+ "tag": "1 min · Intermédiaire",
+ "profil": "ia",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/agents",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : l'espace du collaborateur",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on suit ce que font vos employés IA et ce qu'ils coûtent."
+  },
+  {
+   "key": "journal",
+   "text": "Sur la fiche d'un agent, le journal liste ses exécutions : tâche, statut, tokens consommés et coût estimé."
+  },
+  {
+   "key": "daily",
+   "text": "Chaque tâche terminée produit aussi un daily, visible avec ceux de l'équipe."
+  },
+  {
+   "key": "validation",
+   "text": "Ses livrables arrivent dans le centre de validation : rien n'avance sans votre accord."
+  },
+  {
+   "key": "outro",
+   "text": "En cas de besoin, suspendez l'agent d'un clic : ses tâches en attente sont mises de côté."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "goto_file": "agent.txt",
+   "wait": 0.3
+  },
+  {
+   "at": "journal",
+   "label": "Le journal",
+   "click": "#tab-journal",
+   "zone": [
+    380,
+    290,
+    1420,
+    520
+   ]
+  },
+  {
+   "at": "daily",
+   "label": "Son daily",
+   "goto": "/dailies",
+   "wait": 1.2,
+   "zone": "table"
+  },
+  {
+   "at": "validation",
+   "label": "Centre de validation",
+   "goto": "/validations",
+   "wait": 0.8,
+   "zone": [
+    380,
+    110,
+    1420,
+    600
+   ]
+  },
+  {
+   "at": "outro",
+   "label": "Suspendre",
+   "goto_file": "agent.txt",
+   "hover": "button:has-text(\"Suspendre\")",
+   "zone": [
+    1200,
+    180,
+    600,
+    80
+   ]
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

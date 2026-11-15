@@ -1,0 +1,90 @@
+{
+ "id": "RH21",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Valider le travail d'un employé IA",
+ "em": "employé IA",
+ "tag": "1 min · Débutant",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/validations",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : créer et activer une routine",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Un employé IA ne valide jamais son propre travail. Ses livrables arrivent dans le centre de validation."
+  },
+  {
+   "key": "infos",
+   "text": "Pour chaque demande, vous voyez le projet, l'employé IA, la version du livrable et l'échéance."
+  },
+  {
+   "key": "lire",
+   "text": "Ouvrez le livrable pour le relire en entier."
+  },
+  {
+   "key": "refuser",
+   "text": "Pour le refuser, indiquez un motif : l'agent reprendra son travail avec votre retour. Vous pouvez aussi simplement demander une modification."
+  },
+  {
+   "key": "valider",
+   "text": "Ici, le calendrier nous convient : on efface le motif et on valide cette version exacte."
+  },
+  {
+   "key": "outro",
+   "text": "Si le livrable change entre-temps, la validation est refusée : vous validez toujours ce que vous avez lu. Les demandes peuvent aussi vous parvenir par e-mail ou WhatsApp, avec un lien sécurisé."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "infos",
+   "label": "Le centre de validation",
+   "hover": "article.card-body h3",
+   "zone": "article.card-body"
+  },
+  {
+   "at": "lire",
+   "label": "Relire le livrable",
+   "click": "article.card-body details summary",
+   "wait": 0.6,
+   "zone": "article.card-body details"
+  },
+  {
+   "at": "refuser",
+   "label": "Refuser ou demander une modification",
+   "fill": [
+    [
+     "textarea[id^=vc-r-]",
+     "Ajouter un post sur la conférence du jeudi."
+    ]
+   ],
+   "zone": "textarea[id^=vc-r-]",
+   "zone_closest": "div"
+  },
+  {
+   "at": "valider",
+   "label": "Valider",
+   "eval": "(()=>{const t=document.querySelector('textarea[id^=vc-r-]');t.value='';t.dispatchEvent(new Event('input'))})()",
+   "click": "button:has-text(\"Valider cette version\")",
+   "wait": 1.2
+  },
+  {
+   "at": "outro",
+   "click": "button:has-text(\"Validées\")",
+   "wait": 1.0,
+   "zone": "article.card-body"
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

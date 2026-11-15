@@ -1,0 +1,32 @@
+{
+  "voiceStartInCapture": 3.554,
+  "paragraphs": {
+    "intro": 0.01,
+    "fiche": 4.25,
+    "budget": 9.75,
+    "prompt": 14.29,
+    "activer": 20.47,
+    "outro": 24.43,
+    "end": 27.82
+  },
+  "zones": {
+    "fiche": [
+      380,
+      110,
+      1420,
+      520
+    ],
+    "budget": [
+      400,
+      620,
+      1380,
+      376
+    ],
+    "activer": [
+      380,
+      110,
+      1420,
+      300
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "voiceStartInCapture": 4.692,
+  "paragraphs": {
+    "intro": 0.03,
+    "colonnes": 4.23,
+    "ajouter": 11.93,
+    "deplacer": 16.63,
+    "outro": 20.53,
+    "end": 25.29
+  },
+  "zones": {
+    "colonnes": [
+      380,
+      208,
+      958,
+      872
+    ],
+    "ajouter": [
+      395,
+      208,
+      308,
+      542
+    ],
+    "deplacer": [
+      380,
+      208,
+      958,
+      872
+    ],
+    "outro": [
+      380,
+      208,
+      958,
+      872
+    ]
+  }
+}

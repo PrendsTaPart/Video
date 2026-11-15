@@ -1,0 +1,31 @@
+{
+  "voiceStartInCapture": 4.594,
+  "paragraphs": {
+    "intro": 0.03,
+    "cloche": 2.95,
+    "page": 9.19,
+    "actions": 13.67,
+    "outro": 16.95,
+    "end": 19.46
+  },
+  "zones": {
+    "cloche": [
+      1219,
+      62,
+      380,
+      473
+    ],
+    "page": [
+      380,
+      110,
+      1420,
+      600
+    ],
+    "actions": [
+      380,
+      106,
+      1420,
+      599
+    ]
+  }
+}

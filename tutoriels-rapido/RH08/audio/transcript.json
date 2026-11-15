@@ -1,0 +1,434 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.03,
+    "end": 0.24,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.25,
+    "end": 0.37,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.37,
+    "end": 0.93,
+    "id": "w2"
+  },
+  {
+    "text": "on",
+    "start": 0.93,
+    "end": 1.15,
+    "id": "w3"
+  },
+  {
+    "text": "ouvre",
+    "start": 1.15,
+    "end": 1.4,
+    "id": "w4"
+  },
+  {
+    "text": "une",
+    "start": 1.4,
+    "end": 1.58,
+    "id": "w5"
+  },
+  {
+    "text": "tâche",
+    "start": 1.58,
+    "end": 1.88,
+    "id": "w6"
+  },
+  {
+    "text": "pour",
+    "start": 1.88,
+    "end": 2.13,
+    "id": "w7"
+  },
+  {
+    "text": "la",
+    "start": 2.13,
+    "end": 2.21,
+    "id": "w8"
+  },
+  {
+    "text": "compléter.",
+    "start": 2.28,
+    "end": 2.9,
+    "id": "w9"
+  },
+  {
+    "text": "Cliquez",
+    "start": 2.93,
+    "end": 3.3,
+    "id": "w10"
+  },
+  {
+    "text": "sur",
+    "start": 3.37,
+    "end": 3.5,
+    "id": "w11"
+  },
+  {
+    "text": "une",
+    "start": 3.5,
+    "end": 3.68,
+    "id": "w12"
+  },
+  {
+    "text": "carte",
+    "start": 3.68,
+    "end": 3.83,
+    "id": "w13"
+  },
+  {
+    "text": "du",
+    "start": 4.05,
+    "end": 4.1,
+    "id": "w14"
+  },
+  {
+    "text": "camp",
+    "start": 4.1,
+    "end": 4.34,
+    "id": "w15"
+  },
+  {
+    "text": "de",
+    "start": 4.34,
+    "end": 4.46,
+    "id": "w16"
+  },
+  {
+    "text": "banc",
+    "start": 4.46,
+    "end": 4.74,
+    "id": "w17"
+  },
+  {
+    "text": "pour",
+    "start": 4.74,
+    "end": 5.01,
+    "id": "w18"
+  },
+  {
+    "text": "ouvrir",
+    "start": 5.01,
+    "end": 5.41,
+    "id": "w19"
+  },
+  {
+    "text": "sa",
+    "start": 5.41,
+    "end": 5.53,
+    "id": "w20"
+  },
+  {
+    "text": "fiche.",
+    "start": 5.54,
+    "end": 6.1,
+    "id": "w21"
+  },
+  {
+    "text": "Modifiez",
+    "start": 6.13,
+    "end": 6.62,
+    "id": "w22"
+  },
+  {
+    "text": "son",
+    "start": 6.62,
+    "end": 6.82,
+    "id": "w23"
+  },
+  {
+    "text": "titre,",
+    "start": 6.82,
+    "end": 7.3,
+    "id": "w24"
+  },
+  {
+    "text": "son",
+    "start": 7.3,
+    "end": 7.57,
+    "id": "w25"
+  },
+  {
+    "text": "statut,",
+    "start": 7.57,
+    "end": 8.3,
+    "id": "w26"
+  },
+  {
+    "text": "sa",
+    "start": 8.3,
+    "end": 8.48,
+    "id": "w27"
+  },
+  {
+    "text": "priorité,",
+    "start": 8.48,
+    "end": 9.4,
+    "id": "w28"
+  },
+  {
+    "text": "la",
+    "start": 9.4,
+    "end": 9.53,
+    "id": "w29"
+  },
+  {
+    "text": "personne",
+    "start": 9.53,
+    "end": 10.05,
+    "id": "w30"
+  },
+  {
+    "text": "assignée",
+    "start": 10.07,
+    "end": 10.56,
+    "id": "w31"
+  },
+  {
+    "text": "et",
+    "start": 10.6,
+    "end": 10.73,
+    "id": "w32"
+  },
+  {
+    "text": "ses",
+    "start": 10.73,
+    "end": 10.93,
+    "id": "w33"
+  },
+  {
+    "text": "dates.",
+    "start": 10.93,
+    "end": 11.5,
+    "id": "w34"
+  },
+  {
+    "text": "Ajoutez",
+    "start": 11.53,
+    "end": 11.89,
+    "id": "w35"
+  },
+  {
+    "text": "une",
+    "start": 11.89,
+    "end": 12.06,
+    "id": "w36"
+  },
+  {
+    "text": "description",
+    "start": 12.06,
+    "end": 12.69,
+    "id": "w37"
+  },
+  {
+    "text": "et",
+    "start": 12.69,
+    "end": 12.8,
+    "id": "w38"
+  },
+  {
+    "text": "des",
+    "start": 12.8,
+    "end": 12.97,
+    "id": "w39"
+  },
+  {
+    "text": "fichiers",
+    "start": 12.97,
+    "end": 13.41,
+    "id": "w40"
+  },
+  {
+    "text": "joints,",
+    "start": 13.41,
+    "end": 13.89,
+    "id": "w41"
+  },
+  {
+    "text": "tout",
+    "start": 13.93,
+    "end": 14.04,
+    "id": "w42"
+  },
+  {
+    "text": "ce",
+    "start": 14.12,
+    "end": 14.22,
+    "id": "w43"
+  },
+  {
+    "text": "qu'il",
+    "start": 14.35,
+    "end": 14.51,
+    "id": "w44"
+  },
+  {
+    "text": "faut",
+    "start": 14.7,
+    "end": 14.73,
+    "id": "w45"
+  },
+  {
+    "text": "pour",
+    "start": 14.73,
+    "end": 14.95,
+    "id": "w46"
+  },
+  {
+    "text": "réaliser",
+    "start": 14.95,
+    "end": 15.39,
+    "id": "w47"
+  },
+  {
+    "text": "la",
+    "start": 15.39,
+    "end": 15.49,
+    "id": "w48"
+  },
+  {
+    "text": "tâche.",
+    "start": 15.54,
+    "end": 15.99,
+    "id": "w49"
+  },
+  {
+    "text": "En",
+    "start": 16.03,
+    "end": 16.12,
+    "id": "w50"
+  },
+  {
+    "text": "bas",
+    "start": 16.12,
+    "end": 16.29,
+    "id": "w51"
+  },
+  {
+    "text": "de",
+    "start": 16.34,
+    "end": 16.4,
+    "id": "w52"
+  },
+  {
+    "text": "la",
+    "start": 16.47,
+    "end": 16.54,
+    "id": "w53"
+  },
+  {
+    "text": "fiche,",
+    "start": 16.54,
+    "end": 16.93,
+    "id": "w54"
+  },
+  {
+    "text": "vous",
+    "start": 17.15,
+    "end": 17.28,
+    "id": "w55"
+  },
+  {
+    "text": "pouvez",
+    "start": 17.28,
+    "end": 17.63,
+    "id": "w56"
+  },
+  {
+    "text": "aussi",
+    "start": 17.7,
+    "end": 18.05,
+    "id": "w57"
+  },
+  {
+    "text": "confier",
+    "start": 18.05,
+    "end": 18.54,
+    "id": "w58"
+  },
+  {
+    "text": "la",
+    "start": 18.54,
+    "end": 18.68,
+    "id": "w59"
+  },
+  {
+    "text": "tâche",
+    "start": 18.68,
+    "end": 19.03,
+    "id": "w60"
+  },
+  {
+    "text": "à",
+    "start": 19.03,
+    "end": 19.2,
+    "id": "w61"
+  },
+  {
+    "text": "un",
+    "start": 19.2,
+    "end": 19.24,
+    "id": "w62"
+  },
+  {
+    "text": "employé",
+    "start": 19.24,
+    "end": 19.73,
+    "id": "w63"
+  },
+  {
+    "text": "IA.",
+    "start": 19.73,
+    "end": 20.09,
+    "id": "w64"
+  },
+  {
+    "text": "On",
+    "start": 20.13,
+    "end": 20.19,
+    "id": "w65"
+  },
+  {
+    "text": "le",
+    "start": 20.2,
+    "end": 20.3,
+    "id": "w66"
+  },
+  {
+    "text": "verra",
+    "start": 20.3,
+    "end": 20.5,
+    "id": "w67"
+  },
+  {
+    "text": "dans",
+    "start": 20.57,
+    "end": 20.76,
+    "id": "w68"
+  },
+  {
+    "text": "un",
+    "start": 20.76,
+    "end": 20.86,
+    "id": "w69"
+  },
+  {
+    "text": "prochain",
+    "start": 20.86,
+    "end": 21.28,
+    "id": "w70"
+  },
+  {
+    "text": "tutoriel.",
+    "start": 21.28,
+    "end": 21.9,
+    "id": "w71"
+  }
+]

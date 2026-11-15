@@ -1,0 +1,128 @@
+{
+ "id": "RH03",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Ajouter et gérer ses collaborateurs",
+ "em": "collaborateurs",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/users",
+ "type_delay": 18,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : les départements",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on ajoute un collaborateur et on retrouve toute l'équipe, humaine et IA, au même endroit."
+  },
+  {
+   "key": "liste",
+   "text": "La page Utilisateurs liste toute l'équipe. Les filtres Humains et Agents IA séparent vos collaborateurs de vos employés IA."
+  },
+  {
+   "key": "ajouter",
+   "text": "Cliquez sur Ajouter un utilisateur. Renseignez son nom, son e-mail, son téléphone, son département et son rôle."
+  },
+  {
+   "key": "contrat",
+   "text": "Indiquez aussi ses heures, son salaire et ses jours de congé : ils servent au suivi des congés."
+  },
+  {
+   "key": "outro",
+   "text": "Votre collaborateur reçoit une invitation pour choisir lui-même son mot de passe. Prochain épisode : les départements."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3,
+   "zone": "table"
+  },
+  {
+   "at": "liste",
+   "label": "Humains et agents IA",
+   "click": "button:has-text(\"Agents IA\")",
+   "zone": "table"
+  },
+  {
+   "at": "liste",
+   "click": "button:has-text(\"Humains\")",
+   "wait": 0.6
+  },
+  {
+   "at": "ajouter",
+   "label": "Ajouter un utilisateur",
+   "click": "a:has-text(\"Ajouter un utilisateur\")",
+   "fill": [
+    [
+     ".modal.show input[placeholder=\"Entrer un nom\"]",
+     "Robert"
+    ],
+    [
+     ".modal.show input[placeholder=\"Entrer un prénom\"]",
+     "Emma"
+    ],
+    [
+     ".modal.show input[placeholder=\"Entrer une adresse e-mail\"]",
+     "emma@studio-demo.test"
+    ]
+   ],
+   "fill_now": [
+    [
+     ".modal.show input[placeholder=\"Entrer un nom d'utilisateur\"]",
+     "emma.robert"
+    ],
+    [
+     ".modal.show input[placeholder=\"Entrer un numéro de téléphone\"]",
+     "0600000000"
+    ]
+   ],
+   "select": [
+    [
+     ".modal.show select:has(option:text(\"Collaborateur\"))",
+     "Collaborateur"
+    ],
+    [
+     ".modal.show select:has(option:text(\"Marketing\"))",
+     "Marketing"
+    ]
+   ],
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "contrat",
+   "label": "Heures, salaire, congés",
+   "fill_now": [
+    [
+     ".modal.show input[placeholder=\"Entrer nombre d'heures\"]",
+     "35"
+    ],
+    [
+     ".modal.show input[placeholder=\"Entrer un salaire\"]",
+     "2400"
+    ],
+    [
+     ".modal.show input[placeholder=\"Entrer nombre de jours\"]",
+     "25"
+    ]
+   ],
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "outro",
+   "label": "L'invitation",
+   "click": ".modal.show button:has-text(\"Ajouter\")",
+   "wait": 1.2,
+   "zone": "table"
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

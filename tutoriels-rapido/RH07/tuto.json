@@ -1,0 +1,88 @@
+{
+ "id": "RH07",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Le Kanban et les listes de tâches",
+ "em": "Kanban",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/projects",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : le détail d'une tâche",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on fait avancer les tâches d'un projet sur le tableau Kanban."
+  },
+  {
+   "key": "colonnes",
+   "text": "Chaque colonne est une liste de tâches : à faire, en cours, terminé. Le bouton Ajouter une colonne en crée une nouvelle."
+  },
+  {
+   "key": "ajouter",
+   "text": "Le bouton plus, en haut d'une colonne, ajoute une tâche directement dans cette liste."
+  },
+  {
+   "key": "deplacer",
+   "text": "Pour faire avancer une tâche, glissez-la simplement d'une colonne à l'autre."
+  },
+  {
+   "key": "outro",
+   "text": "Toute l'équipe voit le tableau à jour. Prochain épisode : le détail d'une tâche."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "goto_file": "boutique-taches.txt",
+   "wait": 0.3
+  },
+  {
+   "at": "colonnes",
+   "label": "Les colonnes",
+   "hover": "button:has-text(\"Ajouter une colonne\")",
+   "zone": ".kanban-container"
+  },
+  {
+   "at": "ajouter",
+   "label": "Ajouter une tâche",
+   "click": ".kanban-board:has-text(\"À faire\") .kanban-board-header button",
+   "fill": [
+    [
+     "textarea.add-new-item",
+     "Rédiger la page À propos"
+    ]
+   ],
+   "zone": ".kanban-board:has-text(\"À faire\")"
+  },
+  {
+   "at": "ajouter",
+   "click": ".kanban-board button:has-text(\"Ajouter\")",
+   "wait": 0.8
+  },
+  {
+   "at": "deplacer",
+   "label": "Glisser-déposer",
+   "drag": [
+    ".kanban-item:has-text(\"Photos des produits phares\")",
+    ".kanban-board:has-text(\"En cours\") .kanban-drag"
+   ],
+   "zone": ".kanban-container"
+  },
+  {
+   "at": "outro",
+   "wait": 0.2,
+   "zone": ".kanban-container"
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

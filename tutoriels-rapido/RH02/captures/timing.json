@@ -1,0 +1,38 @@
+{
+  "voiceStartInCapture": 5.343,
+  "paragraphs": {
+    "intro": 0.03,
+    "projets": 4.89,
+    "equipe": 10.69,
+    "taches": 17.13,
+    "stats": 22.45,
+    "outro": 26.85,
+    "end": 29.82
+  },
+  "zones": {
+    "projets": [
+      380,
+      110,
+      1420,
+      230
+    ],
+    "equipe": [
+      380,
+      330,
+      1420,
+      210
+    ],
+    "taches": [
+      356,
+      777,
+      1468,
+      303
+    ],
+    "stats": [
+      356,
+      596,
+      1468,
+      484
+    ]
+  }
+}

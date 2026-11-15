@@ -1,0 +1,86 @@
+{
+ "id": "RH14",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Gérer les demandes de congé",
+ "em": "congé",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/conges",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : les notifications",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on traite les demandes de congé de l'équipe."
+  },
+  {
+   "key": "liste",
+   "text": "La page Congés liste toutes les demandes : employé, type, dates, jours pris et statut."
+  },
+  {
+   "key": "decision",
+   "text": "Dans la colonne Actions, approuvez ou refusez la demande en attente."
+  },
+  {
+   "key": "filtres",
+   "text": "Le filtre vous aide à retrouver les demandes en attente ou celles d'une période."
+  },
+  {
+   "key": "outro",
+   "text": "Les jours de congé restants de chaque collaborateur en tiennent compte. Prochain épisode : les notifications."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3,
+   "zone": "table"
+  },
+  {
+   "at": "liste",
+   "label": "Les demandes",
+   "zone": "table"
+  },
+  {
+   "at": "decision",
+   "label": "Approuver ou refuser",
+   "click": "tr:has-text(\"En attente\") button:has-text(\"Actions\")",
+   "zone": "tr:has-text(\"En attente\")"
+  },
+  {
+   "at": "decision",
+   "click": ".dropdown-menu.show a[data-action=approve]",
+   "wait": 1.2
+  },
+  {
+   "at": "filtres",
+   "label": "Filtrer",
+   "click": "button:has-text(\"Filtrer\")",
+   "zone": [
+    380,
+    110,
+    1420,
+    400
+   ]
+  },
+  {
+   "at": "outro",
+   "label": "Jours restants",
+   "goto": "/users",
+   "wait": 1.2,
+   "hover": "tr:has-text(\"Lucas Petit\")",
+   "zone": "tr:has-text(\"Lucas Petit\")"
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

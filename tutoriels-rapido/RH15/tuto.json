@@ -1,0 +1,90 @@
+{
+ "id": "RH15",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "L'espace du collaborateur",
+ "em": "collaborateur",
+ "tag": "1 min · Débutant",
+ "profil": "employe",
+ "login_as": "hugo@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/dashboard",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : demander un congé",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on découvre RapidoRH du côté d'un collaborateur."
+  },
+  {
+   "key": "menu",
+   "text": "Le menu d'un collaborateur ne montre que ce que son rôle autorise : ses projets, ses tâches, ses congés, ses rendez-vous."
+  },
+  {
+   "key": "projets",
+   "text": "Il retrouve les projets auxquels il participe."
+  },
+  {
+   "key": "taches",
+   "text": "Sur le Kanban, il fait avancer ses tâches d'une colonne à l'autre."
+  },
+  {
+   "key": "outro",
+   "text": "Dans le prochain tutoriel, on pose une demande de congé."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "menu",
+   "label": "Son menu",
+   "zone": [
+    0,
+    0,
+    262,
+    1080
+   ]
+  },
+  {
+   "at": "projets",
+   "label": "Ses projets",
+   "goto": "/projects",
+   "wait": 1.2,
+   "zone": [
+    380,
+    110,
+    1420,
+    560
+   ]
+  },
+  {
+   "at": "taches",
+   "label": "Ses tâches",
+   "goto_file": "boutique-taches.txt",
+   "wait": 1.5
+  },
+  {
+   "at": "taches",
+   "drag": [
+    ".kanban-item:has-text(\"Maquette de la page\")",
+    ".kanban-board:has-text(\"Terminé\") .kanban-drag"
+   ],
+   "zone": ".kanban-container"
+  },
+  {
+   "at": "outro",
+   "wait": 0.2
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

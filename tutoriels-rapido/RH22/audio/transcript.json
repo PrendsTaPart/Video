@@ -1,0 +1,704 @@
+[
+  {
+    "text": "Quand",
+    "start": 0.04,
+    "end": 0.29,
+    "id": "w0"
+  },
+  {
+    "text": "vous",
+    "start": 0.29,
+    "end": 0.53,
+    "id": "w1"
+  },
+  {
+    "text": "créez",
+    "start": 0.53,
+    "end": 0.81,
+    "id": "w2"
+  },
+  {
+    "text": "un",
+    "start": 0.81,
+    "end": 0.93,
+    "id": "w3"
+  },
+  {
+    "text": "projet",
+    "start": 0.93,
+    "end": 1.22,
+    "id": "w4"
+  },
+  {
+    "text": "depuis",
+    "start": 1.35,
+    "end": 1.63,
+    "id": "w5"
+  },
+  {
+    "text": "un",
+    "start": 1.63,
+    "end": 1.75,
+    "id": "w6"
+  },
+  {
+    "text": "modèle,",
+    "start": 1.75,
+    "end": 2.28,
+    "id": "w7"
+  },
+  {
+    "text": "Rapido",
+    "start": 2.28,
+    "end": 2.64,
+    "id": "w8"
+  },
+  {
+    "text": "RH",
+    "start": 2.64,
+    "end": 2.73,
+    "id": "w9"
+  },
+  {
+    "text": "vous",
+    "start": 2.76,
+    "end": 3,
+    "id": "w10"
+  },
+  {
+    "text": "propose",
+    "start": 3,
+    "end": 3.44,
+    "id": "w11"
+  },
+  {
+    "text": "des",
+    "start": 3.44,
+    "end": 3.66,
+    "id": "w12"
+  },
+  {
+    "text": "routines.",
+    "start": 3.66,
+    "end": 4.46,
+    "id": "w13"
+  },
+  {
+    "text": "Par",
+    "start": 4.5,
+    "end": 4.66,
+    "id": "w14"
+  },
+  {
+    "text": "exemple,",
+    "start": 4.66,
+    "end": 5.21,
+    "id": "w15"
+  },
+  {
+    "text": "un",
+    "start": 5.26,
+    "end": 5.39,
+    "id": "w16"
+  },
+  {
+    "text": "suivi",
+    "start": 5.39,
+    "end": 5.69,
+    "id": "w17"
+  },
+  {
+    "text": "quotidien",
+    "start": 5.81,
+    "end": 6.33,
+    "id": "w18"
+  },
+  {
+    "text": "des",
+    "start": 6.33,
+    "end": 6.45,
+    "id": "w19"
+  },
+  {
+    "text": "blocages.",
+    "start": 6.67,
+    "end": 7.34,
+    "id": "w20"
+  },
+  {
+    "text": "Elles",
+    "start": 7.38,
+    "end": 7.62,
+    "id": "w21"
+  },
+  {
+    "text": "sont",
+    "start": 7.62,
+    "end": 7.84,
+    "id": "w22"
+  },
+  {
+    "text": "toujours",
+    "start": 7.84,
+    "end": 8.29,
+    "id": "w23"
+  },
+  {
+    "text": "créées",
+    "start": 8.29,
+    "end": 8.56,
+    "id": "w24"
+  },
+  {
+    "text": "désactivées.",
+    "start": 8.69,
+    "end": 9.33,
+    "id": "w25"
+  },
+  {
+    "text": "La",
+    "start": 9.48,
+    "end": 9.56,
+    "id": "w26"
+  },
+  {
+    "text": "liste",
+    "start": 9.56,
+    "end": 9.85,
+    "id": "w27"
+  },
+  {
+    "text": "rouge",
+    "start": 9.86,
+    "end": 10.16,
+    "id": "w28"
+  },
+  {
+    "text": "indique",
+    "start": 10.16,
+    "end": 10.56,
+    "id": "w29"
+  },
+  {
+    "text": "ce",
+    "start": 10.6,
+    "end": 10.66,
+    "id": "w30"
+  },
+  {
+    "text": "qui",
+    "start": 10.79,
+    "end": 10.88,
+    "id": "w31"
+  },
+  {
+    "text": "manque",
+    "start": 10.88,
+    "end": 11.25,
+    "id": "w32"
+  },
+  {
+    "text": "avant",
+    "start": 11.25,
+    "end": 11.43,
+    "id": "w33"
+  },
+  {
+    "text": "de",
+    "start": 11.65,
+    "end": 11.67,
+    "id": "w34"
+  },
+  {
+    "text": "pouvoir",
+    "start": 11.67,
+    "end": 12.1,
+    "id": "w35"
+  },
+  {
+    "text": "les",
+    "start": 12.1,
+    "end": 12.28,
+    "id": "w36"
+  },
+  {
+    "text": "lancer.",
+    "start": 12.28,
+    "end": 12.9,
+    "id": "w37"
+  },
+  {
+    "text": "Fixez",
+    "start": 12.94,
+    "end": 13.19,
+    "id": "w38"
+  },
+  {
+    "text": "un",
+    "start": 13.29,
+    "end": 13.39,
+    "id": "w39"
+  },
+  {
+    "text": "budget",
+    "start": 13.39,
+    "end": 13.81,
+    "id": "w40"
+  },
+  {
+    "text": "par",
+    "start": 13.81,
+    "end": 14.02,
+    "id": "w41"
+  },
+  {
+    "text": "execution,",
+    "start": 14.02,
+    "end": 14.8,
+    "id": "w42"
+  },
+  {
+    "text": "en",
+    "start": 14.8,
+    "end": 14.89,
+    "id": "w43"
+  },
+  {
+    "text": "token.",
+    "start": 15.11,
+    "end": 15.7,
+    "id": "w44"
+  },
+  {
+    "text": "Sans",
+    "start": 15.74,
+    "end": 15.95,
+    "id": "w45"
+  },
+  {
+    "text": "budget,",
+    "start": 15.95,
+    "end": 16.44,
+    "id": "w46"
+  },
+  {
+    "text": "aucune",
+    "start": 16.44,
+    "end": 16.81,
+    "id": "w47"
+  },
+  {
+    "text": "activation",
+    "start": 16.81,
+    "end": 17.43,
+    "id": "w48"
+  },
+  {
+    "text": "n'est",
+    "start": 17.43,
+    "end": 17.69,
+    "id": "w49"
+  },
+  {
+    "text": "possible.",
+    "start": 17.91,
+    "end": 18.43,
+    "id": "w50"
+  },
+  {
+    "text": "Vous",
+    "start": 18.5,
+    "end": 18.71,
+    "id": "w51"
+  },
+  {
+    "text": "pouvez",
+    "start": 18.71,
+    "end": 19.09,
+    "id": "w52"
+  },
+  {
+    "text": "aussi",
+    "start": 19.09,
+    "end": 19.41,
+    "id": "w53"
+  },
+  {
+    "text": "définir",
+    "start": 19.41,
+    "end": 19.85,
+    "id": "w54"
+  },
+  {
+    "text": "une",
+    "start": 19.85,
+    "end": 20.04,
+    "id": "w55"
+  },
+  {
+    "text": "fenêtre",
+    "start": 20.04,
+    "end": 20.45,
+    "id": "w56"
+  },
+  {
+    "text": "de",
+    "start": 20.45,
+    "end": 20.67,
+    "id": "w57"
+  },
+  {
+    "text": "silence.",
+    "start": 20.67,
+    "end": 21.3,
+    "id": "w58"
+  },
+  {
+    "text": "Lancez",
+    "start": 21.34,
+    "end": 21.68,
+    "id": "w59"
+  },
+  {
+    "text": "ensuite",
+    "start": 21.69,
+    "end": 22.11,
+    "id": "w60"
+  },
+  {
+    "text": "un",
+    "start": 22.12,
+    "end": 22.24,
+    "id": "w61"
+  },
+  {
+    "text": "essai",
+    "start": 22.24,
+    "end": 22.52,
+    "id": "w62"
+  },
+  {
+    "text": "à",
+    "start": 22.52,
+    "end": 22.65,
+    "id": "w63"
+  },
+  {
+    "text": "blanc.",
+    "start": 22.65,
+    "end": 23.16,
+    "id": "w64"
+  },
+  {
+    "text": "Rapido",
+    "start": 23.2,
+    "end": 23.59,
+    "id": "w65"
+  },
+  {
+    "text": "RH",
+    "start": 23.6,
+    "end": 23.75,
+    "id": "w66"
+  },
+  {
+    "text": "vérifie",
+    "start": 23.75,
+    "end": 24.27,
+    "id": "w67"
+  },
+  {
+    "text": "la",
+    "start": 24.27,
+    "end": 24.38,
+    "id": "w68"
+  },
+  {
+    "text": "configuration",
+    "start": 24.51,
+    "end": 25.42,
+    "id": "w69"
+  },
+  {
+    "text": "sans",
+    "start": 25.44,
+    "end": 25.72,
+    "id": "w70"
+  },
+  {
+    "text": "appeler",
+    "start": 25.72,
+    "end": 26.24,
+    "id": "w71"
+  },
+  {
+    "text": "lia",
+    "start": 26.24,
+    "end": 26.41,
+    "id": "w72"
+  },
+  {
+    "text": "ni",
+    "start": 26.49,
+    "end": 26.63,
+    "id": "w73"
+  },
+  {
+    "text": "créer",
+    "start": 26.63,
+    "end": 26.95,
+    "id": "w74"
+  },
+  {
+    "text": "de",
+    "start": 27.03,
+    "end": 27.15,
+    "id": "w75"
+  },
+  {
+    "text": "tâches.",
+    "start": 27.15,
+    "end": 27.86,
+    "id": "w76"
+  },
+  {
+    "text": "L'essai",
+    "start": 27.9,
+    "end": 28.35,
+    "id": "w77"
+  },
+  {
+    "text": "est",
+    "start": 28.35,
+    "end": 28.56,
+    "id": "w78"
+  },
+  {
+    "text": "réussi,",
+    "start": 28.56,
+    "end": 29.08,
+    "id": "w79"
+  },
+  {
+    "text": "activez",
+    "start": 29.21,
+    "end": 29.63,
+    "id": "w80"
+  },
+  {
+    "text": "la",
+    "start": 29.63,
+    "end": 29.77,
+    "id": "w81"
+  },
+  {
+    "text": "routine.",
+    "start": 29.77,
+    "end": 30.54,
+    "id": "w82"
+  },
+  {
+    "text": "Elle",
+    "start": 30.58,
+    "end": 30.82,
+    "id": "w83"
+  },
+  {
+    "text": "s'exécutera",
+    "start": 30.82,
+    "end": 31.59,
+    "id": "w84"
+  },
+  {
+    "text": "du",
+    "start": 31.59,
+    "end": 31.73,
+    "id": "w85"
+  },
+  {
+    "text": "lundi",
+    "start": 31.73,
+    "end": 32.08,
+    "id": "w86"
+  },
+  {
+    "text": "au",
+    "start": 32.08,
+    "end": 32.2,
+    "id": "w87"
+  },
+  {
+    "text": "vendredi",
+    "start": 32.24,
+    "end": 32.78,
+    "id": "w88"
+  },
+  {
+    "text": "à",
+    "start": 32.78,
+    "end": 32.85,
+    "id": "w89"
+  },
+  {
+    "text": "9h,",
+    "start": 32.85,
+    "end": 33.26,
+    "id": "w90"
+  },
+  {
+    "text": "heure",
+    "start": 33.27,
+    "end": 33.62,
+    "id": "w91"
+  },
+  {
+    "text": "de",
+    "start": 33.62,
+    "end": 33.77,
+    "id": "w92"
+  },
+  {
+    "text": "Paris.",
+    "start": 33.77,
+    "end": 34.44,
+    "id": "w93"
+  },
+  {
+    "text": "Chaque",
+    "start": 34.48,
+    "end": 34.73,
+    "id": "w94"
+  },
+  {
+    "text": "routine",
+    "start": 34.83,
+    "end": 35.19,
+    "id": "w95"
+  },
+  {
+    "text": "propose,",
+    "start": 35.24,
+    "end": 35.66,
+    "id": "w96"
+  },
+  {
+    "text": "mais",
+    "start": 35.79,
+    "end": 36,
+    "id": "w97"
+  },
+  {
+    "text": "n'applique",
+    "start": 36,
+    "end": 36.43,
+    "id": "w98"
+  },
+  {
+    "text": "rien",
+    "start": 36.65,
+    "end": 36.8,
+    "id": "w99"
+  },
+  {
+    "text": "seul.",
+    "start": 36.85,
+    "end": 37.3,
+    "id": "w100"
+  },
+  {
+    "text": "Elle",
+    "start": 37.34,
+    "end": 37.57,
+    "id": "w101"
+  },
+  {
+    "text": "s'arrête",
+    "start": 37.57,
+    "end": 38.05,
+    "id": "w102"
+  },
+  {
+    "text": "après",
+    "start": 38.1,
+    "end": 38.42,
+    "id": "w103"
+  },
+  {
+    "text": "deux",
+    "start": 38.42,
+    "end": 38.7,
+    "id": "w104"
+  },
+  {
+    "text": "échecs",
+    "start": 38.7,
+    "end": 39.14,
+    "id": "w105"
+  },
+  {
+    "text": "et",
+    "start": 39.14,
+    "end": 39.24,
+    "id": "w106"
+  },
+  {
+    "text": "un",
+    "start": 39.24,
+    "end": 39.29,
+    "id": "w107"
+  },
+  {
+    "text": "bouton",
+    "start": 39.51,
+    "end": 39.64,
+    "id": "w108"
+  },
+  {
+    "text": "d'arrêt",
+    "start": 39.64,
+    "end": 39.99,
+    "id": "w109"
+  },
+  {
+    "text": "d'urgence",
+    "start": 39.99,
+    "end": 40.39,
+    "id": "w110"
+  },
+  {
+    "text": "coupe",
+    "start": 40.5,
+    "end": 40.72,
+    "id": "w111"
+  },
+  {
+    "text": "toutes",
+    "start": 40.72,
+    "end": 40.97,
+    "id": "w112"
+  },
+  {
+    "text": "les",
+    "start": 41.01,
+    "end": 41.1,
+    "id": "w113"
+  },
+  {
+    "text": "routines",
+    "start": 41.16,
+    "end": 41.45,
+    "id": "w114"
+  },
+  {
+    "text": "d'un",
+    "start": 41.59,
+    "end": 41.72,
+    "id": "w115"
+  },
+  {
+    "text": "coup.",
+    "start": 41.8,
+    "end": 42.1,
+    "id": "w116"
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.03,
+    "end": 0.24,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.25,
+    "end": 0.37,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.37,
+    "end": 0.95,
+    "id": "w2"
+  },
+  {
+    "text": "on",
+    "start": 0.95,
+    "end": 1.13,
+    "id": "w3"
+  },
+  {
+    "text": "visualise",
+    "start": 1.13,
+    "end": 1.67,
+    "id": "w4"
+  },
+  {
+    "text": "les",
+    "start": 1.67,
+    "end": 1.85,
+    "id": "w5"
+  },
+  {
+    "text": "échéances",
+    "start": 1.85,
+    "end": 2.39,
+    "id": "w6"
+  },
+  {
+    "text": "de",
+    "start": 2.46,
+    "end": 2.52,
+    "id": "w7"
+  },
+  {
+    "text": "l'équipe",
+    "start": 2.52,
+    "end": 2.96,
+    "id": "w8"
+  },
+  {
+    "text": "dans",
+    "start": 2.98,
+    "end": 3.21,
+    "id": "w9"
+  },
+  {
+    "text": "l'agenda.",
+    "start": 3.21,
+    "end": 3.9,
+    "id": "w10"
+  },
+  {
+    "text": "L'agenda",
+    "start": 3.93,
+    "end": 4.42,
+    "id": "w11"
+  },
+  {
+    "text": "affiche",
+    "start": 4.42,
+    "end": 4.85,
+    "id": "w12"
+  },
+  {
+    "text": "les",
+    "start": 5.03,
+    "end": 5.09,
+    "id": "w13"
+  },
+  {
+    "text": "tâches",
+    "start": 5.09,
+    "end": 5.48,
+    "id": "w14"
+  },
+  {
+    "text": "par",
+    "start": 5.48,
+    "end": 5.66,
+    "id": "w15"
+  },
+  {
+    "text": "mois,",
+    "start": 5.69,
+    "end": 6.14,
+    "id": "w16"
+  },
+  {
+    "text": "par",
+    "start": 6.14,
+    "end": 6.3,
+    "id": "w17"
+  },
+  {
+    "text": "semaine,",
+    "start": 6.35,
+    "end": 6.96,
+    "id": "w18"
+  },
+  {
+    "text": "par",
+    "start": 6.96,
+    "end": 7.28,
+    "id": "w19"
+  },
+  {
+    "text": "jour",
+    "start": 7.28,
+    "end": 7.44,
+    "id": "w20"
+  },
+  {
+    "text": "ou",
+    "start": 7.44,
+    "end": 7.95,
+    "id": "w21"
+  },
+  {
+    "text": "sous",
+    "start": 7.95,
+    "end": 8.2,
+    "id": "w22"
+  },
+  {
+    "text": "forme",
+    "start": 8.2,
+    "end": 8.57,
+    "id": "w23"
+  },
+  {
+    "text": "de",
+    "start": 8.66,
+    "end": 8.74,
+    "id": "w24"
+  },
+  {
+    "text": "liste.",
+    "start": 8.74,
+    "end": 9.38,
+    "id": "w25"
+  },
+  {
+    "text": "À",
+    "start": 9.41,
+    "end": 9.44,
+    "id": "w26"
+  },
+  {
+    "text": "gauche,",
+    "start": 9.44,
+    "end": 9.93,
+    "id": "w27"
+  },
+  {
+    "text": "cochez",
+    "start": 9.93,
+    "end": 10.29,
+    "id": "w28"
+  },
+  {
+    "text": "les",
+    "start": 10.29,
+    "end": 10.33,
+    "id": "w29"
+  },
+  {
+    "text": "projets",
+    "start": 10.51,
+    "end": 10.9,
+    "id": "w30"
+  },
+  {
+    "text": "à",
+    "start": 10.9,
+    "end": 10.96,
+    "id": "w31"
+  },
+  {
+    "text": "afficher",
+    "start": 10.96,
+    "end": 11.48,
+    "id": "w32"
+  },
+  {
+    "text": "pour",
+    "start": 11.48,
+    "end": 11.71,
+    "id": "w33"
+  },
+  {
+    "text": "vous",
+    "start": 11.71,
+    "end": 11.93,
+    "id": "w34"
+  },
+  {
+    "text": "concentrer",
+    "start": 11.94,
+    "end": 12.51,
+    "id": "w35"
+  },
+  {
+    "text": "sur",
+    "start": 12.51,
+    "end": 12.68,
+    "id": "w36"
+  },
+  {
+    "text": "l'essentiel.",
+    "start": 12.68,
+    "end": 13.52,
+    "id": "w37"
+  },
+  {
+    "text": "Les",
+    "start": 13.55,
+    "end": 13.69,
+    "id": "w38"
+  },
+  {
+    "text": "flèches",
+    "start": 13.69,
+    "end": 14.08,
+    "id": "w39"
+  },
+  {
+    "text": "et",
+    "start": 14.08,
+    "end": 14.19,
+    "id": "w40"
+  },
+  {
+    "text": "le",
+    "start": 14.19,
+    "end": 14.3,
+    "id": "w41"
+  },
+  {
+    "text": "bouton",
+    "start": 14.3,
+    "end": 14.64,
+    "id": "w42"
+  },
+  {
+    "text": "«",
+    "start": 14.65,
+    "end": 14.69,
+    "id": "w43"
+  },
+  {
+    "text": "Aujourd'hui",
+    "start": 14.69,
+    "end": 15.28,
+    "id": "w44"
+  },
+  {
+    "text": "»",
+    "start": 15.31,
+    "end": 15.36,
+    "id": "w45"
+  },
+  {
+    "text": "permettent",
+    "start": 15.36,
+    "end": 15.92,
+    "id": "w46"
+  },
+  {
+    "text": "de",
+    "start": 15.98,
+    "end": 16.04,
+    "id": "w47"
+  },
+  {
+    "text": "naviguer",
+    "start": 16.04,
+    "end": 16.48,
+    "id": "w48"
+  },
+  {
+    "text": "dans",
+    "start": 16.5,
+    "end": 16.73,
+    "id": "w49"
+  },
+  {
+    "text": "le",
+    "start": 16.73,
+    "end": 16.84,
+    "id": "w50"
+  },
+  {
+    "text": "temps.",
+    "start": 16.84,
+    "end": 17.42,
+    "id": "w51"
+  },
+  {
+    "text": "Dans",
+    "start": 17.45,
+    "end": 17.64,
+    "id": "w52"
+  },
+  {
+    "text": "le",
+    "start": 17.65,
+    "end": 17.72,
+    "id": "w53"
+  },
+  {
+    "text": "prochain",
+    "start": 17.77,
+    "end": 18.22,
+    "id": "w54"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 18.22,
+    "end": 18.79,
+    "id": "w55"
+  },
+  {
+    "text": "on",
+    "start": 18.79,
+    "end": 18.9,
+    "id": "w56"
+  },
+  {
+    "text": "organise",
+    "start": 18.9,
+    "end": 19.35,
+    "id": "w57"
+  },
+  {
+    "text": "un",
+    "start": 19.35,
+    "end": 19.47,
+    "id": "w58"
+  },
+  {
+    "text": "rendez-vous.",
+    "start": 19.47,
+    "end": 20.24,
+    "id": "w59"
+  }
+]

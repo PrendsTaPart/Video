@@ -1,0 +1,344 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.03,
+    "end": 0.23,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.23,
+    "end": 0.3,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.37,
+    "end": 0.87,
+    "id": "w2"
+  },
+  {
+    "text": "on",
+    "start": 1.01,
+    "end": 1.02,
+    "id": "w3"
+  },
+  {
+    "text": "retrouve",
+    "start": 1.02,
+    "end": 1.46,
+    "id": "w4"
+  },
+  {
+    "text": "toutes",
+    "start": 1.57,
+    "end": 1.83,
+    "id": "w5"
+  },
+  {
+    "text": "ces",
+    "start": 1.83,
+    "end": 2,
+    "id": "w6"
+  },
+  {
+    "text": "notifications.",
+    "start": 2,
+    "end": 2.92,
+    "id": "w7"
+  },
+  {
+    "text": "La",
+    "start": 2.95,
+    "end": 3.05,
+    "id": "w8"
+  },
+  {
+    "text": "cloche",
+    "start": 3.05,
+    "end": 3.43,
+    "id": "w9"
+  },
+  {
+    "text": "en",
+    "start": 3.43,
+    "end": 3.56,
+    "id": "w10"
+  },
+  {
+    "text": "haut",
+    "start": 3.56,
+    "end": 3.78,
+    "id": "w11"
+  },
+  {
+    "text": "de",
+    "start": 3.93,
+    "end": 3.95,
+    "id": "w12"
+  },
+  {
+    "text": "l'écran",
+    "start": 3.95,
+    "end": 4.39,
+    "id": "w13"
+  },
+  {
+    "text": "signale",
+    "start": 4.49,
+    "end": 4.84,
+    "id": "w14"
+  },
+  {
+    "text": "les",
+    "start": 4.84,
+    "end": 4.99,
+    "id": "w15"
+  },
+  {
+    "text": "nouveautés.",
+    "start": 5.01,
+    "end": 5.76,
+    "id": "w16"
+  },
+  {
+    "text": "Tâche",
+    "start": 5.79,
+    "end": 6.1,
+    "id": "w17"
+  },
+  {
+    "text": "à",
+    "start": 6.13,
+    "end": 6.15,
+    "id": "w18"
+  },
+  {
+    "text": "signer,",
+    "start": 6.22,
+    "end": 6.63,
+    "id": "w19"
+  },
+  {
+    "text": "congé",
+    "start": 6.76,
+    "end": 7.09,
+    "id": "w20"
+  },
+  {
+    "text": "demandé,",
+    "start": 7.09,
+    "end": 7.71,
+    "id": "w21"
+  },
+  {
+    "text": "livrable",
+    "start": 7.75,
+    "end": 8.29,
+    "id": "w22"
+  },
+  {
+    "text": "à",
+    "start": 8.29,
+    "end": 8.34,
+    "id": "w23"
+  },
+  {
+    "text": "valider.",
+    "start": 8.36,
+    "end": 9.16,
+    "id": "w24"
+  },
+  {
+    "text": "La",
+    "start": 9.19,
+    "end": 9.29,
+    "id": "w25"
+  },
+  {
+    "text": "page",
+    "start": 9.29,
+    "end": 9.54,
+    "id": "w26"
+  },
+  {
+    "text": "Notifications",
+    "start": 9.54,
+    "end": 10.36,
+    "id": "w27"
+  },
+  {
+    "text": "les",
+    "start": 10.43,
+    "end": 10.56,
+    "id": "w28"
+  },
+  {
+    "text": "rassemble",
+    "start": 10.56,
+    "end": 11.11,
+    "id": "w29"
+  },
+  {
+    "text": "toutes,",
+    "start": 11.15,
+    "end": 11.67,
+    "id": "w30"
+  },
+  {
+    "text": "de",
+    "start": 11.67,
+    "end": 11.74,
+    "id": "w31"
+  },
+  {
+    "text": "la",
+    "start": 11.74,
+    "end": 12.16,
+    "id": "w32"
+  },
+  {
+    "text": "plus",
+    "start": 12.16,
+    "end": 12.2,
+    "id": "w33"
+  },
+  {
+    "text": "récente",
+    "start": 12.2,
+    "end": 12.64,
+    "id": "w34"
+  },
+  {
+    "text": "à",
+    "start": 12.64,
+    "end": 12.7,
+    "id": "w35"
+  },
+  {
+    "text": "la",
+    "start": 12.7,
+    "end": 12.83,
+    "id": "w36"
+  },
+  {
+    "text": "plus",
+    "start": 12.83,
+    "end": 13.09,
+    "id": "w37"
+  },
+  {
+    "text": "ancienne.",
+    "start": 13.09,
+    "end": 13.64,
+    "id": "w38"
+  },
+  {
+    "text": "Marquez-les",
+    "start": 13.67,
+    "end": 14.26,
+    "id": "w39"
+  },
+  {
+    "text": "comme",
+    "start": 14.26,
+    "end": 14.5,
+    "id": "w40"
+  },
+  {
+    "text": "l'U",
+    "start": 14.61,
+    "end": 14.71,
+    "id": "w41"
+  },
+  {
+    "text": "ou",
+    "start": 14.71,
+    "end": 14.82,
+    "id": "w42"
+  },
+  {
+    "text": "supprimez",
+    "start": 14.82,
+    "end": 15.29,
+    "id": "w43"
+  },
+  {
+    "text": "celles",
+    "start": 15.37,
+    "end": 15.66,
+    "id": "w44"
+  },
+  {
+    "text": "qui",
+    "start": 15.66,
+    "end": 15.81,
+    "id": "w45"
+  },
+  {
+    "text": "ne",
+    "start": 15.86,
+    "end": 15.94,
+    "id": "w46"
+  },
+  {
+    "text": "servent",
+    "start": 15.94,
+    "end": 16.23,
+    "id": "w47"
+  },
+  {
+    "text": "plus.",
+    "start": 16.57,
+    "end": 16.92,
+    "id": "w48"
+  },
+  {
+    "text": "Dans",
+    "start": 16.95,
+    "end": 17.14,
+    "id": "w49"
+  },
+  {
+    "text": "le",
+    "start": 17.14,
+    "end": 17.22,
+    "id": "w50"
+  },
+  {
+    "text": "prochain",
+    "start": 17.29,
+    "end": 17.7,
+    "id": "w51"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 17.7,
+    "end": 18.25,
+    "id": "w52"
+  },
+  {
+    "text": "on",
+    "start": 18.25,
+    "end": 18.36,
+    "id": "w53"
+  },
+  {
+    "text": "gère",
+    "start": 18.37,
+    "end": 18.57,
+    "id": "w54"
+  },
+  {
+    "text": "son",
+    "start": 18.57,
+    "end": 18.73,
+    "id": "w55"
+  },
+  {
+    "text": "abonnement.",
+    "start": 18.73,
+    "end": 19.46,
+    "id": "w56"
+  }
+]

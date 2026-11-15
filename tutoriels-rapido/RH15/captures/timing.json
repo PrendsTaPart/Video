@@ -1,0 +1,31 @@
+{
+  "voiceStartInCapture": 5.101,
+  "paragraphs": {
+    "intro": 0.03,
+    "menu": 4.21,
+    "projets": 11.61,
+    "taches": 14.03,
+    "outro": 17.77,
+    "end": 20.74
+  },
+  "zones": {
+    "menu": [
+      0,
+      0,
+      262,
+      1080
+    ],
+    "projets": [
+      380,
+      110,
+      1420,
+      560
+    ],
+    "taches": [
+      380,
+      208,
+      958,
+      872
+    ]
+  }
+}

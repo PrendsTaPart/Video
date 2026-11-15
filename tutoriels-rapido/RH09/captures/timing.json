@@ -1,0 +1,31 @@
+{
+  "voiceStartInCapture": 4.584,
+  "paragraphs": {
+    "intro": 0.03,
+    "details": 4.39,
+    "documents": 7.69,
+    "liens": 14.91,
+    "outro": 21.42,
+    "end": 25.92
+  },
+  "zones": {
+    "documents": [
+      666,
+      286,
+      588,
+      508
+    ],
+    "liens": [
+      666,
+      289,
+      588,
+      503
+    ],
+    "outro": [
+      860,
+      260,
+      940,
+      360
+    ]
+  }
+}

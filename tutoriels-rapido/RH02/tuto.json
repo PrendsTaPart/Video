@@ -1,0 +1,101 @@
+{
+ "id": "RH02",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Visite guidée du tableau de bord",
+ "em": "tableau de bord",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/dashboard",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : ajouter ses collaborateurs",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on fait le tour du tableau de bord, votre point de départ chaque matin."
+  },
+  {
+   "key": "projets",
+   "text": "En haut, l'état de vos projets : à démarrer, en cours et terminés, avec leur avancement."
+  },
+  {
+   "key": "equipe",
+   "text": "La progression hebdomadaire et le top cinq des employés montrent qui avance, à partir des tâches réellement terminées."
+  },
+  {
+   "key": "taches",
+   "text": "La répartition des tâches se filtre par projet : à faire, en cours ou terminées."
+  },
+  {
+   "key": "stats",
+   "text": "Plus bas, les statistiques de chaque projet, avec une recherche pour retrouver le bon."
+  },
+  {
+   "key": "outro",
+   "text": "Dans le prochain tutoriel, on ajoute ses collaborateurs."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "projets",
+   "label": "Vos projets",
+   "zone": [
+    380,
+    110,
+    1420,
+    230
+   ]
+  },
+  {
+   "at": "equipe",
+   "label": "L'équipe qui avance",
+   "zone": [
+    380,
+    330,
+    1420,
+    210
+   ]
+  },
+  {
+   "at": "taches",
+   "label": "Répartition des tâches",
+   "select": [
+    [
+     "select.form-select-sm",
+     "Boutique en ligne"
+    ]
+   ],
+   "zone": "Répartition des tâches"
+  },
+  {
+   "at": "stats",
+   "label": "Statistiques des projets",
+   "scroll": "Statistique des projets",
+   "fill": [
+    [
+     "input[placeholder=\"Chercher un projet...\"]",
+     "Boutique"
+    ]
+   ],
+   "zone": "Statistique des projets"
+  },
+  {
+   "at": "outro",
+   "top": true
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

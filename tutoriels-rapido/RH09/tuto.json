@@ -1,0 +1,124 @@
+{
+ "id": "RH09",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Documents et liens du projet",
+ "em": "Documents et liens",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/projects",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : les dailies",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on centralise les documents et les liens utiles d'un projet."
+  },
+  {
+   "key": "details",
+   "text": "Depuis la liste des projets, ouvrez le détail d'un projet."
+  },
+  {
+   "key": "documents",
+   "text": "La section Documents rassemble les fichiers du projet : cliquez sur Ajouter, donnez un nom et choisissez le fichier."
+  },
+  {
+   "key": "liens",
+   "text": "La section Liens garde les adresses utiles, comme une maquette ou un site de test, avec un titre et une description."
+  },
+  {
+   "key": "outro",
+   "text": "Seuls les membres du projet y ont accès. Prochain épisode : les dailies."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "details",
+   "label": "Le détail du projet",
+   "hover": "h5:has-text(\"Boutique en ligne\")"
+  },
+  {
+   "at": "details",
+   "goto_file": "boutique-details.txt",
+   "wait": 0.3
+  },
+  {
+   "at": "documents",
+   "label": "Documents",
+   "click": ".btn-rect >> nth=0",
+   "fill": [
+    [
+     ".modal.show input[placeholder=\"Entrer un nom...\"]",
+     "Cahier des charges"
+    ]
+   ],
+   "upload": [
+    [
+     ".modal.show input[type=file]",
+     "assets/cahier-des-charges-fictif.pdf"
+    ]
+   ],
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "documents",
+   "hover": ".modal.show button:has-text(\"Ajouter\")",
+   "wait": 0.6
+  },
+  {
+   "at": "liens",
+   "label": "Liens utiles",
+   "eval": "document.querySelector('.modal.show .btn-close')?.click()",
+   "wait": 0.5
+  },
+  {
+   "at": "liens",
+   "click": ".btn-rect >> nth=1",
+   "fill": [
+    [
+     ".modal.show input[placeholder=\"Titre descriptif\"]",
+     "Maquette de la page d'accueil"
+    ]
+   ],
+   "fill_now": [
+    [
+     ".modal.show input[placeholder=\"https://www.site.com\"]",
+     "https://maquette.studio-demo.test"
+    ],
+    [
+     ".modal.show textarea[placeholder=\"Description du lien\"]",
+     "Version 2, validée en réunion"
+    ]
+   ],
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "liens",
+   "click": ".modal.show button:has-text(\"Ajouter\")",
+   "wait": 1.0
+  },
+  {
+   "at": "outro",
+   "zone": [
+    860,
+    260,
+    940,
+    360
+   ]
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

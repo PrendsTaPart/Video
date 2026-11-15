@@ -1,0 +1,37 @@
+{
+  "voiceStartInCapture": 4.454,
+  "paragraphs": {
+    "intro": 0.02,
+    "calendrier": 3.6,
+    "ajouter": 7.36,
+    "details": 14.16,
+    "outro": 20.88,
+    "end": 25.78
+  },
+  "zones": {
+    "intro": [
+      768,
+      153,
+      992,
+      881
+    ],
+    "calendrier": [
+      768,
+      153,
+      992,
+      881
+    ],
+    "ajouter": [
+      666,
+      136,
+      588,
+      809
+    ],
+    "details": [
+      396,
+      129,
+      344,
+      519
+    ]
+  }
+}

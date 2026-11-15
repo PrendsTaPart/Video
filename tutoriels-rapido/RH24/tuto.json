@@ -1,0 +1,90 @@
+{
+ "id": "RH24",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Demander une information et débloquer une tâche",
+ "em": "débloquer une tâche",
+ "tag": "1 min · Intermédiaire",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/messagerie",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : le forum d'entraide",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Il manque une donnée pour avancer ? Envoyez une demande d'information depuis la conversation."
+  },
+  {
+   "key": "question",
+   "text": "Choisissez le destinataire, puis posez une question précise."
+  },
+  {
+   "key": "envoi",
+   "text": "La demande apparaît dans le canal avec son état : en attente de réponse."
+  },
+  {
+   "key": "pause",
+   "text": "Quand la demande est liée à une tâche, celle-ci reste en pause tant que personne n'a répondu. Seul le destinataire peut y répondre, directement dans le message."
+  },
+  {
+   "key": "outro",
+   "text": "Dès la réponse, seule la tâche concernée repart : rien d'autre n'est relancé, et la réponse n'autorise aucune dépense à elle seule."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "click": ".sk-conv >> text=marketing",
+   "wait": 0.6
+  },
+  {
+   "at": "intro",
+   "label": "Demander une information",
+   "click": "button[aria-label=\"Demander une information\"]",
+   "wait": 0.6,
+   "zone": ".sk-panel"
+  },
+  {
+   "at": "question",
+   "label": "La question",
+   "select": [
+    [
+     "#ir-to",
+     "Inès Bernard"
+    ]
+   ],
+   "fill": [
+    [
+     "#ir-q",
+     "Quel budget maximum pour les publications sponsorisées du salon ?"
+    ]
+   ],
+   "zone": ".sk-panel form"
+  },
+  {
+   "at": "envoi",
+   "label": "En attente de réponse",
+   "click": "button:has-text(\"Envoyer la demande\")",
+   "wait": 1.2,
+   "zone": ".sk-main .sk-msg >> nth=-1"
+  },
+  {
+   "at": "pause",
+   "label": "La tâche en pause",
+   "hover": ".sk-main .sk-msg >> nth=-1",
+   "zone": ".sk-main .sk-msg >> nth=-1"
+  },
+  {
+   "at": "outro",
+   "wait": 0.3
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

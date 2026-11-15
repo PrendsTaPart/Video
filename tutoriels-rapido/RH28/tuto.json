@@ -1,0 +1,96 @@
+{
+ "id": "RH28",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Découvrir vos employés IA",
+ "em": "employés IA",
+ "tag": "1 min · Débutant",
+ "profil": "ia",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/agents",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : configurer un employé IA",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on découvre les employés IA installés dans votre entreprise."
+  },
+  {
+   "key": "catalogue",
+   "text": "La page Employés IA présente chaque agent : son nom, sa mission, son pôle et son statut."
+  },
+  {
+   "key": "filtres",
+   "text": "Recherchez un agent par nom ou par mission, ou filtrez par pôle et par statut."
+  },
+  {
+   "key": "responsable",
+   "text": "Chaque employé IA a un responsable humain. Un agent installé reste en formation tant que personne ne l'a activé."
+  },
+  {
+   "key": "outro",
+   "text": "Cliquez sur un agent pour ouvrir sa fiche : c'est le sujet du prochain tutoriel."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "catalogue",
+   "label": "Vos employés IA",
+   "zone": [
+    380,
+    190,
+    1420,
+    600
+   ]
+  },
+  {
+   "at": "filtres",
+   "label": "Rechercher et filtrer",
+   "fill": [
+    [
+     "#agent-search",
+     "projet"
+    ]
+   ],
+   "select": [
+    [
+     "#agent-status",
+     "En formation"
+    ]
+   ],
+   "zone": [
+    380,
+    120,
+    1420,
+    600
+   ]
+  },
+  {
+   "at": "responsable",
+   "label": "Un responsable humain",
+   "eval": "(()=>{const s=document.querySelector('#agent-search');s.value='';s.dispatchEvent(new Event('input'))})()",
+   "wait": 0.6,
+   "hover": "text=Responsable : Camille Durand >> nth=0",
+   "zone": "text=Responsable : Camille Durand >> nth=0",
+   "zone_closest": ".card"
+  },
+  {
+   "at": "outro",
+   "click": "a[href^=\"/agents/\"] >> nth=0",
+   "wait": 0.5
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

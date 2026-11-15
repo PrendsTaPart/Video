@@ -1,0 +1,356 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.03,
+    "end": 0.23,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.25,
+    "end": 0.34,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.36,
+    "end": 0.95,
+    "id": "w2"
+  },
+  {
+    "text": "on",
+    "start": 0.95,
+    "end": 1.1,
+    "id": "w3"
+  },
+  {
+    "text": "organise",
+    "start": 1.1,
+    "end": 1.57,
+    "id": "w4"
+  },
+  {
+    "text": "l'entreprise",
+    "start": 1.57,
+    "end": 2.27,
+    "id": "w5"
+  },
+  {
+    "text": "en",
+    "start": 2.35,
+    "end": 2.41,
+    "id": "w6"
+  },
+  {
+    "text": "département.",
+    "start": 2.41,
+    "end": 3.34,
+    "id": "w7"
+  },
+  {
+    "text": "La",
+    "start": 3.37,
+    "end": 3.5,
+    "id": "w8"
+  },
+  {
+    "text": "page",
+    "start": 3.5,
+    "end": 3.82,
+    "id": "w9"
+  },
+  {
+    "text": "département",
+    "start": 3.82,
+    "end": 4.68,
+    "id": "w10"
+  },
+  {
+    "text": "liste",
+    "start": 4.7,
+    "end": 5.09,
+    "id": "w11"
+  },
+  {
+    "text": "vos",
+    "start": 5.09,
+    "end": 5.34,
+    "id": "w12"
+  },
+  {
+    "text": "paules,",
+    "start": 5.34,
+    "end": 5.93,
+    "id": "w13"
+  },
+  {
+    "text": "marketing,",
+    "start": 5.99,
+    "end": 6.76,
+    "id": "w14"
+  },
+  {
+    "text": "développement,",
+    "start": 6.85,
+    "end": 7.57,
+    "id": "w15"
+  },
+  {
+    "text": "ressources",
+    "start": 7.71,
+    "end": 8.17,
+    "id": "w16"
+  },
+  {
+    "text": "humaines.",
+    "start": 8.17,
+    "end": 8.67,
+    "id": "w17"
+  },
+  {
+    "text": "Cliquez",
+    "start": 8.71,
+    "end": 9.18,
+    "id": "w18"
+  },
+  {
+    "text": "sur",
+    "start": 9.18,
+    "end": 9.4,
+    "id": "w19"
+  },
+  {
+    "text": "Ajouter",
+    "start": 9.4,
+    "end": 9.9,
+    "id": "w20"
+  },
+  {
+    "text": "un",
+    "start": 9.9,
+    "end": 10.01,
+    "id": "w21"
+  },
+  {
+    "text": "département,",
+    "start": 10.04,
+    "end": 11.04,
+    "id": "w22"
+  },
+  {
+    "text": "donnez-lui",
+    "start": 11.04,
+    "end": 11.75,
+    "id": "w23"
+  },
+  {
+    "text": "un",
+    "start": 11.75,
+    "end": 11.97,
+    "id": "w24"
+  },
+  {
+    "text": "nom",
+    "start": 11.97,
+    "end": 12.19,
+    "id": "w25"
+  },
+  {
+    "text": "et",
+    "start": 12.19,
+    "end": 12.3,
+    "id": "w26"
+  },
+  {
+    "text": "validez.",
+    "start": 12.38,
+    "end": 13.14,
+    "id": "w27"
+  },
+  {
+    "text": "Chaque",
+    "start": 13.17,
+    "end": 13.48,
+    "id": "w28"
+  },
+  {
+    "text": "collaborateur",
+    "start": 13.5,
+    "end": 14.28,
+    "id": "w29"
+  },
+  {
+    "text": "est",
+    "start": 14.28,
+    "end": 14.46,
+    "id": "w30"
+  },
+  {
+    "text": "ensuite",
+    "start": 14.46,
+    "end": 14.88,
+    "id": "w31"
+  },
+  {
+    "text": "rattaché",
+    "start": 14.88,
+    "end": 15.36,
+    "id": "w32"
+  },
+  {
+    "text": "à",
+    "start": 15.36,
+    "end": 15.41,
+    "id": "w33"
+  },
+  {
+    "text": "son",
+    "start": 15.49,
+    "end": 15.6,
+    "id": "w34"
+  },
+  {
+    "text": "département",
+    "start": 15.6,
+    "end": 16.21,
+    "id": "w35"
+  },
+  {
+    "text": "depuis",
+    "start": 16.21,
+    "end": 16.65,
+    "id": "w36"
+  },
+  {
+    "text": "sa",
+    "start": 16.65,
+    "end": 16.74,
+    "id": "w37"
+  },
+  {
+    "text": "fiche.",
+    "start": 16.74,
+    "end": 17.22,
+    "id": "w38"
+  },
+  {
+    "text": "Les",
+    "start": 17.31,
+    "end": 17.46,
+    "id": "w39"
+  },
+  {
+    "text": "filtres",
+    "start": 17.46,
+    "end": 17.89,
+    "id": "w40"
+  },
+  {
+    "text": "de",
+    "start": 17.89,
+    "end": 18.01,
+    "id": "w41"
+  },
+  {
+    "text": "projet",
+    "start": 18.01,
+    "end": 18.23,
+    "id": "w42"
+  },
+  {
+    "text": "et",
+    "start": 18.38,
+    "end": 18.5,
+    "id": "w43"
+  },
+  {
+    "text": "de",
+    "start": 18.5,
+    "end": 18.61,
+    "id": "w44"
+  },
+  {
+    "text": "l'agenda",
+    "start": 18.65,
+    "end": 19.05,
+    "id": "w45"
+  },
+  {
+    "text": "s'en",
+    "start": 19.14,
+    "end": 19.35,
+    "id": "w46"
+  },
+  {
+    "text": "servent.",
+    "start": 19.35,
+    "end": 20.01,
+    "id": "w47"
+  },
+  {
+    "text": "Dans",
+    "start": 20.09,
+    "end": 20.28,
+    "id": "w48"
+  },
+  {
+    "text": "le",
+    "start": 20.28,
+    "end": 20.35,
+    "id": "w49"
+  },
+  {
+    "text": "prochain",
+    "start": 20.42,
+    "end": 20.84,
+    "id": "w50"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 20.84,
+    "end": 21.39,
+    "id": "w51"
+  },
+  {
+    "text": "on",
+    "start": 21.39,
+    "end": 21.5,
+    "id": "w52"
+  },
+  {
+    "text": "définit",
+    "start": 21.5,
+    "end": 21.83,
+    "id": "w53"
+  },
+  {
+    "text": "les",
+    "start": 21.92,
+    "end": 22.05,
+    "id": "w54"
+  },
+  {
+    "text": "rôles",
+    "start": 22.05,
+    "end": 22.31,
+    "id": "w55"
+  },
+  {
+    "text": "et",
+    "start": 22.31,
+    "end": 22.42,
+    "id": "w56"
+  },
+  {
+    "text": "leurs",
+    "start": 22.42,
+    "end": 22.65,
+    "id": "w57"
+  },
+  {
+    "text": "permissions.",
+    "start": 22.71,
+    "end": 23.56,
+    "id": "w58"
+  }
+]

@@ -1,0 +1,109 @@
+{
+ "id": "RH23",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "La messagerie d'équipe",
+ "em": "d'équipe",
+ "tag": "1 min · Débutant",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/messagerie",
+ "type_delay": 18,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : demander une information",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Voici la messagerie de RapidoRH. À gauche, vos canaux, vos fils de projet et vos messages directs."
+  },
+  {
+   "key": "canal",
+   "text": "Ouvrons le canal marketing. Les messages non lus et les nouveautés sont signalés."
+  },
+  {
+   "key": "ecrire",
+   "text": "Écrivez votre message. Les étoiles mettent en gras, et l'arobase permet de mentionner un collègue."
+  },
+  {
+   "key": "reagir",
+   "text": "Réagissez d'un clic avec un emoji : une réaction ou un vu ne vaut jamais validation."
+  },
+  {
+   "key": "fil",
+   "text": "Pour ne pas encombrer le canal, répondez dans un fil de discussion."
+  },
+  {
+   "key": "outro",
+   "text": "Épinglez les messages importants, enregistrez-les pour plus tard, et retrouvez tout avec la recherche ou le raccourci Contrôle K."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "label": "Vos conversations",
+   "zone": ".sk-side"
+  },
+  {
+   "at": "canal",
+   "label": "Un canal",
+   "click": ".sk-conv >> text=marketing",
+   "wait": 0.8,
+   "zone": ".sk-messages"
+  },
+  {
+   "at": "ecrire",
+   "label": "Écrire et mentionner",
+   "fill": [
+    [
+     ".sk-input-row textarea",
+     "Super ! Le *brief* du salon est validé, merci @Hugo Martin 🙏"
+    ]
+   ],
+   "zone": ".sk-composer"
+  },
+  {
+   "at": "ecrire",
+   "click": ".sk-send .send",
+   "wait": 1.0
+  },
+  {
+   "at": "reagir",
+   "label": "Réagir",
+   "hover": ".sk-main .sk-msg >> nth=-1",
+   "eval": "document.querySelectorAll('.sk-main .sk-msg')[document.querySelectorAll('.sk-main .sk-msg').length-1].querySelector('button[aria-label=\"Réagir ✅\"]')?.click()",
+   "wait": 0.8,
+   "zone": ".sk-main .sk-msg >> nth=-1"
+  },
+  {
+   "at": "fil",
+   "label": "Les fils de discussion",
+   "eval": "document.querySelectorAll('.sk-main .sk-msg')[1].querySelector('button[aria-label=\"Répondre dans un fil\"]')?.click()",
+   "wait": 1.0,
+   "fill": [
+    [
+     ".sk-panel textarea",
+     "Je les relis dès réception."
+    ]
+   ],
+   "zone": ".sk-panel"
+  },
+  {
+   "at": "fil",
+   "click": ".sk-panel .sk-send .send",
+   "wait": 0.8
+  },
+  {
+   "at": "outro",
+   "label": "Épingler et retrouver",
+   "click": "button[aria-label=\"Messages épinglés\"]",
+   "wait": 0.8,
+   "zone": ".sk-head"
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

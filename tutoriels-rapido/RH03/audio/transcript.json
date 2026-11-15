@@ -1,0 +1,524 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.03,
+    "end": 0.24,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.25,
+    "end": 0.37,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.37,
+    "end": 0.94,
+    "id": "w2"
+  },
+  {
+    "text": "on",
+    "start": 1.12,
+    "end": 1.13,
+    "id": "w3"
+  },
+  {
+    "text": "ajoute",
+    "start": 1.13,
+    "end": 1.45,
+    "id": "w4"
+  },
+  {
+    "text": "un",
+    "start": 1.52,
+    "end": 1.61,
+    "id": "w5"
+  },
+  {
+    "text": "collaborateur",
+    "start": 1.65,
+    "end": 2.46,
+    "id": "w6"
+  },
+  {
+    "text": "et",
+    "start": 2.55,
+    "end": 2.63,
+    "id": "w7"
+  },
+  {
+    "text": "on",
+    "start": 2.63,
+    "end": 2.74,
+    "id": "w8"
+  },
+  {
+    "text": "retrouve",
+    "start": 2.74,
+    "end": 3.08,
+    "id": "w9"
+  },
+  {
+    "text": "toute",
+    "start": 3.25,
+    "end": 3.5,
+    "id": "w10"
+  },
+  {
+    "text": "l'équipe,",
+    "start": 3.5,
+    "end": 4.11,
+    "id": "w11"
+  },
+  {
+    "text": "humaine",
+    "start": 4.11,
+    "end": 4.45,
+    "id": "w12"
+  },
+  {
+    "text": "et",
+    "start": 4.57,
+    "end": 4.66,
+    "id": "w13"
+  },
+  {
+    "text": "EA,",
+    "start": 4.66,
+    "end": 5.2,
+    "id": "w14"
+  },
+  {
+    "text": "au",
+    "start": 5.23,
+    "end": 5.32,
+    "id": "w15"
+  },
+  {
+    "text": "même",
+    "start": 5.32,
+    "end": 5.57,
+    "id": "w16"
+  },
+  {
+    "text": "endroit.",
+    "start": 5.57,
+    "end": 6.14,
+    "id": "w17"
+  },
+  {
+    "text": "La",
+    "start": 6.23,
+    "end": 6.34,
+    "id": "w18"
+  },
+  {
+    "text": "page",
+    "start": 6.34,
+    "end": 6.6,
+    "id": "w19"
+  },
+  {
+    "text": "Utilisateur",
+    "start": 6.67,
+    "end": 7.42,
+    "id": "w20"
+  },
+  {
+    "text": "liste",
+    "start": 7.42,
+    "end": 7.78,
+    "id": "w21"
+  },
+  {
+    "text": "toute",
+    "start": 7.78,
+    "end": 8.14,
+    "id": "w22"
+  },
+  {
+    "text": "l'équipe.",
+    "start": 8.14,
+    "end": 9.04,
+    "id": "w23"
+  },
+  {
+    "text": "Les",
+    "start": 9.07,
+    "end": 9.25,
+    "id": "w24"
+  },
+  {
+    "text": "filtres",
+    "start": 9.27,
+    "end": 9.74,
+    "id": "w25"
+  },
+  {
+    "text": "humains",
+    "start": 9.74,
+    "end": 10.23,
+    "id": "w26"
+  },
+  {
+    "text": "et",
+    "start": 10.23,
+    "end": 10.37,
+    "id": "w27"
+  },
+  {
+    "text": "agents",
+    "start": 10.37,
+    "end": 10.79,
+    "id": "w28"
+  },
+  {
+    "text": "EA",
+    "start": 10.79,
+    "end": 10.93,
+    "id": "w29"
+  },
+  {
+    "text": "séparent",
+    "start": 10.93,
+    "end": 11.49,
+    "id": "w30"
+  },
+  {
+    "text": "vos",
+    "start": 11.49,
+    "end": 11.7,
+    "id": "w31"
+  },
+  {
+    "text": "collaborateurs",
+    "start": 11.7,
+    "end": 12.76,
+    "id": "w32"
+  },
+  {
+    "text": "de",
+    "start": 12.76,
+    "end": 12.9,
+    "id": "w33"
+  },
+  {
+    "text": "vos",
+    "start": 12.9,
+    "end": 12.92,
+    "id": "w34"
+  },
+  {
+    "text": "employés",
+    "start": 13.11,
+    "end": 13.67,
+    "id": "w35"
+  },
+  {
+    "text": "EA.",
+    "start": 13.67,
+    "end": 14.04,
+    "id": "w36"
+  },
+  {
+    "text": "Cliquez",
+    "start": 14.07,
+    "end": 14.63,
+    "id": "w37"
+  },
+  {
+    "text": "sur",
+    "start": 14.63,
+    "end": 14.89,
+    "id": "w38"
+  },
+  {
+    "text": "Ajouter",
+    "start": 14.89,
+    "end": 15.49,
+    "id": "w39"
+  },
+  {
+    "text": "un",
+    "start": 15.49,
+    "end": 15.65,
+    "id": "w40"
+  },
+  {
+    "text": "utilisateur.",
+    "start": 15.69,
+    "end": 16.72,
+    "id": "w41"
+  },
+  {
+    "text": "Renseignez",
+    "start": 16.75,
+    "end": 17.42,
+    "id": "w42"
+  },
+  {
+    "text": "son",
+    "start": 17.42,
+    "end": 17.63,
+    "id": "w43"
+  },
+  {
+    "text": "nom,",
+    "start": 17.63,
+    "end": 17.98,
+    "id": "w44"
+  },
+  {
+    "text": "son",
+    "start": 17.98,
+    "end": 18.17,
+    "id": "w45"
+  },
+  {
+    "text": "email,",
+    "start": 18.24,
+    "end": 18.68,
+    "id": "w46"
+  },
+  {
+    "text": "son",
+    "start": 18.68,
+    "end": 18.89,
+    "id": "w47"
+  },
+  {
+    "text": "téléphone,",
+    "start": 18.89,
+    "end": 19.7,
+    "id": "w48"
+  },
+  {
+    "text": "son",
+    "start": 19.7,
+    "end": 19.84,
+    "id": "w49"
+  },
+  {
+    "text": "département",
+    "start": 19.97,
+    "end": 20.6,
+    "id": "w50"
+  },
+  {
+    "text": "et",
+    "start": 20.79,
+    "end": 20.87,
+    "id": "w51"
+  },
+  {
+    "text": "son",
+    "start": 20.87,
+    "end": 21.09,
+    "id": "w52"
+  },
+  {
+    "text": "rôle.",
+    "start": 21.09,
+    "end": 21.64,
+    "id": "w53"
+  },
+  {
+    "text": "Indiquez",
+    "start": 21.67,
+    "end": 22.14,
+    "id": "w54"
+  },
+  {
+    "text": "aussi",
+    "start": 22.14,
+    "end": 22.46,
+    "id": "w55"
+  },
+  {
+    "text": "ses",
+    "start": 22.46,
+    "end": 22.58,
+    "id": "w56"
+  },
+  {
+    "text": "heures,",
+    "start": 22.76,
+    "end": 23.09,
+    "id": "w57"
+  },
+  {
+    "text": "son",
+    "start": 23.16,
+    "end": 23.34,
+    "id": "w58"
+  },
+  {
+    "text": "salaire",
+    "start": 23.34,
+    "end": 23.69,
+    "id": "w59"
+  },
+  {
+    "text": "et",
+    "start": 23.79,
+    "end": 23.9,
+    "id": "w60"
+  },
+  {
+    "text": "ses",
+    "start": 23.9,
+    "end": 24.09,
+    "id": "w61"
+  },
+  {
+    "text": "jours",
+    "start": 24.09,
+    "end": 24.39,
+    "id": "w62"
+  },
+  {
+    "text": "de",
+    "start": 24.42,
+    "end": 24.49,
+    "id": "w63"
+  },
+  {
+    "text": "congés.",
+    "start": 24.56,
+    "end": 25.15,
+    "id": "w64"
+  },
+  {
+    "text": "Il",
+    "start": 25.23,
+    "end": 25.32,
+    "id": "w65"
+  },
+  {
+    "text": "sert",
+    "start": 25.32,
+    "end": 25.55,
+    "id": "w66"
+  },
+  {
+    "text": "vos",
+    "start": 25.56,
+    "end": 25.74,
+    "id": "w67"
+  },
+  {
+    "text": "suivis",
+    "start": 25.74,
+    "end": 26.1,
+    "id": "w68"
+  },
+  {
+    "text": "des",
+    "start": 26.1,
+    "end": 26.14,
+    "id": "w69"
+  },
+  {
+    "text": "congés.",
+    "start": 26.32,
+    "end": 26.81,
+    "id": "w70"
+  },
+  {
+    "text": "Votre",
+    "start": 26.87,
+    "end": 27.13,
+    "id": "w71"
+  },
+  {
+    "text": "collaborateur",
+    "start": 27.2,
+    "end": 27.93,
+    "id": "w72"
+  },
+  {
+    "text": "reçoit",
+    "start": 27.96,
+    "end": 28.29,
+    "id": "w73"
+  },
+  {
+    "text": "une",
+    "start": 28.29,
+    "end": 28.45,
+    "id": "w74"
+  },
+  {
+    "text": "invitation",
+    "start": 28.49,
+    "end": 29.08,
+    "id": "w75"
+  },
+  {
+    "text": "pour",
+    "start": 29.08,
+    "end": 29.3,
+    "id": "w76"
+  },
+  {
+    "text": "choisir",
+    "start": 29.39,
+    "end": 29.69,
+    "id": "w77"
+  },
+  {
+    "text": "lui-même",
+    "start": 29.76,
+    "end": 30.17,
+    "id": "w78"
+  },
+  {
+    "text": "son",
+    "start": 30.22,
+    "end": 30.35,
+    "id": "w79"
+  },
+  {
+    "text": "mot",
+    "start": 30.49,
+    "end": 30.58,
+    "id": "w80"
+  },
+  {
+    "text": "de",
+    "start": 30.58,
+    "end": 30.7,
+    "id": "w81"
+  },
+  {
+    "text": "passe.",
+    "start": 30.7,
+    "end": 31.28,
+    "id": "w82"
+  },
+  {
+    "text": "Prochain",
+    "start": 31.31,
+    "end": 31.76,
+    "id": "w83"
+  },
+  {
+    "text": "épisode,",
+    "start": 31.76,
+    "end": 32.23,
+    "id": "w84"
+  },
+  {
+    "text": "les",
+    "start": 32.4,
+    "end": 32.49,
+    "id": "w85"
+  },
+  {
+    "text": "départements.",
+    "start": 32.49,
+    "end": 33.44,
+    "id": "w86"
+  }
+]

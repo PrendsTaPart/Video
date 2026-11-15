@@ -1,0 +1,42 @@
+{
+  "id": "RH20",
+  "product": "rh",
+  "kicker": "Tutoriel RapidoRH",
+  "title": "Transformer une idée en projet",
+  "em": "en projet",
+  "tag": "1 min · Débutant",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "start_path": "/marketplace",
+  "type_delay": 35,
+  "fixes": {"mille": "1 000", "vingt": "20"},
+  "end_cta": "Prochain épisode : valider le travail d'un employé IA",
+  "paragraphs": [
+    {"key": "intro", "text": "Bienvenue ! Dans ce tutoriel, on transforme une simple idée en projet complet, grâce à la marketplace des mille modèles de RapidoRH."},
+    {"key": "recherche", "text": "Les modèles sont classés en vingt départements. Tapez votre besoin, par exemple : calendrier éditorial."},
+    {"key": "fiche", "text": "Chaque fiche détaille les étapes, l'équipe proposée, humains et employés IA, et les validations prévues."},
+    {"key": "idee", "text": "Le plus rapide, c'est de partir d'une idée. Cliquez sur Partir d'une idée, puis décrivez le résultat attendu."},
+    {"key": "modeles", "text": "RapidoRH propose les modèles les plus proches et explique pourquoi. Cochez celui qui vous convient."},
+    {"key": "budget", "text": "Indiquez l'échéance et le budget mensuel des employés IA : sans budget, aucun agent ne travaille. Puis composez le plan."},
+    {"key": "plan", "text": "Le plan liste chaque tâche, qui s'en charge, et dans quel ordre. Le contrôle qualité attend toujours la validation d'un humain."},
+    {"key": "accepter", "text": "Acceptez le plan : le projet, ses tâches et leurs dépendances sont créés d'un seul coup, sans doublon même en cas de double clic."},
+    {"key": "outro", "text": "Votre projet est prêt. Dans le prochain tutoriel, on valide le travail d'un employé IA."}
+  ],
+  "scenes": [
+    {"at": "intro", "wait": 0.3, "zone": "#mkt-title"},
+    {"at": "recherche", "label": "La marketplace", "fill": [["#mkt-q", "calendrier éditorial"]], "click": "form[role=search] button[type=submit]", "wait": 0.8, "zone": "form[role=search]"},
+    {"at": "fiche", "label": "Une fiche modèle", "click": "article.card h3 button", "wait": 0.8, "zone": ".mkt-detail"},
+    {"at": "idee", "label": "Partir d'une idée", "eval": "document.querySelector('.mkt-detail button[aria-label=Fermer]')?.click()", "click": "button:has-text(\"Partir d'une idée\")", "fill": [["#idea-text", "Calendrier éditorial LinkedIn pour le salon Food & Tech"]], "zone": "#idea-text"},
+    {"at": "modeles", "label": "Les modèles proposés", "click": "button:has-text(\"Trouver des modèles\")", "wait": 1.0},
+    {"at": "modeles", "hover": "input[id^=cand-] >> nth=0", "zone": "input[id^=cand-] >> nth=0", "zone_closest": "section, .card, form, div.mb-3"},
+    {"at": "budget", "label": "Échéance et budget", "fill": [["#idea-budget", "200000"]], "zone": "#idea-budget", "zone_closest": ".row"},
+    {"at": "budget", "click": "button:has-text(\"Composer le plan\")", "wait": 1.2},
+    {"at": "plan", "label": "Le plan", "scroll": "table", "zone": "table"},
+    {"at": "accepter", "label": "Créer le projet", "click": "button:has-text(\"Accepter le plan\")", "wait": 1.5, "zone": ".alert-success"},
+    {"at": "outro", "wait": 0.3}
+  ],
+  "thumb_shot": "fin.png"
+}

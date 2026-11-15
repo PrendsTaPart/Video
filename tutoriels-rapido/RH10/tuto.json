@@ -1,0 +1,84 @@
+{
+ "id": "RH10",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Les dailies de l'équipe",
+ "em": "dailies",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/dailies",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : l'agenda",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on suit le travail de l'équipe grâce aux dailies."
+  },
+  {
+   "key": "liste",
+   "text": "La page Daily des utilisateurs liste, jour après jour, ce que chacun a fait."
+  },
+  {
+   "key": "detail",
+   "text": "Chaque daily détaille les tâches travaillées, le nombre d'heures et un commentaire."
+  },
+  {
+   "key": "filtres",
+   "text": "Les filtres et la recherche permettent de retrouver un jour, une personne ou un projet."
+  },
+  {
+   "key": "outro",
+   "text": "Les employés IA écrivent aussi leur daily à chaque tâche terminée. Prochain épisode : l'agenda."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3,
+   "zone": "table"
+  },
+  {
+   "at": "liste",
+   "label": "Jour après jour",
+   "zone": "table"
+  },
+  {
+   "at": "detail",
+   "label": "Le détail d'un daily",
+   "click": ".btn-rect >> nth=0",
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "filtres",
+   "label": "Filtres et recherche",
+   "eval": "document.querySelector('.modal.show .btn-close')?.click()",
+   "click": "button:has-text(\"Filtres\")",
+   "fill": [
+    [
+     "input[placeholder=\"Chercher un projet\"]",
+     "Boutique"
+    ]
+   ],
+   "zone": [
+    380,
+    110,
+    1420,
+    520
+   ]
+  },
+  {
+   "at": "outro",
+   "wait": 0.2
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

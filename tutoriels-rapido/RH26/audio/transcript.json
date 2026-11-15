@@ -1,0 +1,452 @@
+[
+  {
+    "text": "Avant",
+    "start": 0.03,
+    "end": 0.35,
+    "id": "w0"
+  },
+  {
+    "text": "d'activer",
+    "start": 0.44,
+    "end": 0.97,
+    "id": "w1"
+  },
+  {
+    "text": "vos",
+    "start": 1.01,
+    "end": 1.24,
+    "id": "w2"
+  },
+  {
+    "text": "employés",
+    "start": 1.24,
+    "end": 1.76,
+    "id": "w3"
+  },
+  {
+    "text": "IA,",
+    "start": 1.89,
+    "end": 2.12,
+    "id": "w4"
+  },
+  {
+    "text": "configurez",
+    "start": 2.12,
+    "end": 2.74,
+    "id": "w5"
+  },
+  {
+    "text": "l'IA",
+    "start": 2.74,
+    "end": 3,
+    "id": "w6"
+  },
+  {
+    "text": "de",
+    "start": 3,
+    "end": 3.09,
+    "id": "w7"
+  },
+  {
+    "text": "votre",
+    "start": 3.09,
+    "end": 3.36,
+    "id": "w8"
+  },
+  {
+    "text": "entreprise",
+    "start": 3.37,
+    "end": 3.88,
+    "id": "w9"
+  },
+  {
+    "text": "dans",
+    "start": 3.94,
+    "end": 4.17,
+    "id": "w10"
+  },
+  {
+    "text": "Paramètres",
+    "start": 4.17,
+    "end": 4.75,
+    "id": "w11"
+  },
+  {
+    "text": "IA.",
+    "start": 4.88,
+    "end": 5.58,
+    "id": "w12"
+  },
+  {
+    "text": "Rapido",
+    "start": 5.61,
+    "end": 5.93,
+    "id": "w13"
+  },
+  {
+    "text": "RH",
+    "start": 6.03,
+    "end": 6.17,
+    "id": "w14"
+  },
+  {
+    "text": "utilise",
+    "start": 6.18,
+    "end": 6.71,
+    "id": "w15"
+  },
+  {
+    "text": "votre",
+    "start": 6.71,
+    "end": 7.08,
+    "id": "w16"
+  },
+  {
+    "text": "propre",
+    "start": 7.09,
+    "end": 7.36,
+    "id": "w17"
+  },
+  {
+    "text": "clé",
+    "start": 7.62,
+    "end": 7.74,
+    "id": "w18"
+  },
+  {
+    "text": "Anthropic.",
+    "start": 7.82,
+    "end": 8.72,
+    "id": "w19"
+  },
+  {
+    "text": "Collez-la",
+    "start": 8.75,
+    "end": 9.36,
+    "id": "w20"
+  },
+  {
+    "text": "ici.",
+    "start": 9.36,
+    "end": 9.84,
+    "id": "w21"
+  },
+  {
+    "text": "Elle",
+    "start": 9.87,
+    "end": 10.08,
+    "id": "w22"
+  },
+  {
+    "text": "est",
+    "start": 10.08,
+    "end": 10.2,
+    "id": "w23"
+  },
+  {
+    "text": "chiffrée",
+    "start": 10.29,
+    "end": 10.74,
+    "id": "w24"
+  },
+  {
+    "text": "et",
+    "start": 10.74,
+    "end": 10.81,
+    "id": "w25"
+  },
+  {
+    "text": "ne",
+    "start": 10.91,
+    "end": 10.98,
+    "id": "w26"
+  },
+  {
+    "text": "sera",
+    "start": 10.98,
+    "end": 11.16,
+    "id": "w27"
+  },
+  {
+    "text": "plus",
+    "start": 11.24,
+    "end": 11.46,
+    "id": "w28"
+  },
+  {
+    "text": "jamais",
+    "start": 11.46,
+    "end": 11.61,
+    "id": "w29"
+  },
+  {
+    "text": "affichée.",
+    "start": 11.88,
+    "end": 12.56,
+    "id": "w30"
+  },
+  {
+    "text": "Choisissez",
+    "start": 12.59,
+    "end": 13.14,
+    "id": "w31"
+  },
+  {
+    "text": "le",
+    "start": 13.14,
+    "end": 13.26,
+    "id": "w32"
+  },
+  {
+    "text": "modèle",
+    "start": 13.26,
+    "end": 13.53,
+    "id": "w33"
+  },
+  {
+    "text": "par",
+    "start": 13.63,
+    "end": 13.8,
+    "id": "w34"
+  },
+  {
+    "text": "défaut.",
+    "start": 13.8,
+    "end": 14.32,
+    "id": "w35"
+  },
+  {
+    "text": "Le",
+    "start": 14.39,
+    "end": 14.48,
+    "id": "w36"
+  },
+  {
+    "text": "tarif",
+    "start": 14.48,
+    "end": 14.71,
+    "id": "w37"
+  },
+  {
+    "text": "par",
+    "start": 14.81,
+    "end": 14.95,
+    "id": "w38"
+  },
+  {
+    "text": "million",
+    "start": 14.96,
+    "end": 15.33,
+    "id": "w39"
+  },
+  {
+    "text": "de",
+    "start": 15.43,
+    "end": 15.51,
+    "id": "w40"
+  },
+  {
+    "text": "tokens",
+    "start": 15.51,
+    "end": 15.88,
+    "id": "w41"
+  },
+  {
+    "text": "est",
+    "start": 15.91,
+    "end": 16.06,
+    "id": "w42"
+  },
+  {
+    "text": "indiqué",
+    "start": 16.06,
+    "end": 16.48,
+    "id": "w43"
+  },
+  {
+    "text": "pour",
+    "start": 16.48,
+    "end": 16.73,
+    "id": "w44"
+  },
+  {
+    "text": "chaque",
+    "start": 16.73,
+    "end": 17.1,
+    "id": "w45"
+  },
+  {
+    "text": "modèle.",
+    "start": 17.1,
+    "end": 17.72,
+    "id": "w46"
+  },
+  {
+    "text": "Enregistrez",
+    "start": 17.77,
+    "end": 18.47,
+    "id": "w47"
+  },
+  {
+    "text": "puis",
+    "start": 18.47,
+    "end": 18.71,
+    "id": "w48"
+  },
+  {
+    "text": "testez",
+    "start": 18.75,
+    "end": 19.06,
+    "id": "w49"
+  },
+  {
+    "text": "la",
+    "start": 19.14,
+    "end": 19.26,
+    "id": "w50"
+  },
+  {
+    "text": "connexion.",
+    "start": 19.29,
+    "end": 20.1,
+    "id": "w51"
+  },
+  {
+    "text": "Le",
+    "start": 20.13,
+    "end": 20.22,
+    "id": "w52"
+  },
+  {
+    "text": "test",
+    "start": 20.23,
+    "end": 20.45,
+    "id": "w53"
+  },
+  {
+    "text": "ne",
+    "start": 20.55,
+    "end": 20.62,
+    "id": "w54"
+  },
+  {
+    "text": "consomme",
+    "start": 20.62,
+    "end": 21.07,
+    "id": "w55"
+  },
+  {
+    "text": "que",
+    "start": 21.17,
+    "end": 21.33,
+    "id": "w56"
+  },
+  {
+    "text": "quelques",
+    "start": 21.33,
+    "end": 21.85,
+    "id": "w57"
+  },
+  {
+    "text": "tokens.",
+    "start": 21.85,
+    "end": 22.48,
+    "id": "w58"
+  },
+  {
+    "text": "Sans",
+    "start": 22.51,
+    "end": 22.76,
+    "id": "w59"
+  },
+  {
+    "text": "clé",
+    "start": 22.76,
+    "end": 22.98,
+    "id": "w60"
+  },
+  {
+    "text": "configuré,",
+    "start": 22.99,
+    "end": 23.79,
+    "id": "w61"
+  },
+  {
+    "text": "aucun",
+    "start": 23.79,
+    "end": 24.16,
+    "id": "w62"
+  },
+  {
+    "text": "employé",
+    "start": 24.16,
+    "end": 24.63,
+    "id": "w63"
+  },
+  {
+    "text": "IA",
+    "start": 24.72,
+    "end": 24.81,
+    "id": "w64"
+  },
+  {
+    "text": "ne",
+    "start": 24.81,
+    "end": 24.96,
+    "id": "w65"
+  },
+  {
+    "text": "peut",
+    "start": 24.96,
+    "end": 25.25,
+    "id": "w66"
+  },
+  {
+    "text": "être",
+    "start": 25.25,
+    "end": 25.54,
+    "id": "w67"
+  },
+  {
+    "text": "activé.",
+    "start": 25.54,
+    "end": 26.3,
+    "id": "w68"
+  },
+  {
+    "text": "Prochain",
+    "start": 26.33,
+    "end": 26.83,
+    "id": "w69"
+  },
+  {
+    "text": "épisode,",
+    "start": 26.83,
+    "end": 27.38,
+    "id": "w70"
+  },
+  {
+    "text": "Découvrir",
+    "start": 27.38,
+    "end": 28.42,
+    "id": "w71"
+  },
+  {
+    "text": "vos",
+    "start": 28.42,
+    "end": 28.77,
+    "id": "w72"
+  },
+  {
+    "text": "employés",
+    "start": 28.77,
+    "end": 29.67,
+    "id": "w73"
+  },
+  {
+    "text": "IA.",
+    "start": 29.75,
+    "end": 29.98,
+    "id": "w74"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "voiceStartInCapture": 3.449,
+  "paragraphs": {
+    "intro": 0.02,
+    "catalogue": 4.66,
+    "filtres": 11.22,
+    "responsable": 16.06,
+    "outro": 22.86,
+    "end": 27.07
+  },
+  "zones": {
+    "catalogue": [
+      380,
+      190,
+      1420,
+      600
+    ],
+    "filtres": [
+      380,
+      120,
+      1420,
+      600
+    ],
+    "responsable": [
+      380,
+      193,
+      481,
+      202
+    ]
+  }
+}

@@ -1,0 +1,518 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.03,
+    "end": 0.26,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.26,
+    "end": 0.39,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.39,
+    "end": 0.92,
+    "id": "w2"
+  },
+  {
+    "text": "on",
+    "start": 1.08,
+    "end": 1.15,
+    "id": "w3"
+  },
+  {
+    "text": "fait",
+    "start": 1.15,
+    "end": 1.41,
+    "id": "w4"
+  },
+  {
+    "text": "le",
+    "start": 1.41,
+    "end": 1.43,
+    "id": "w5"
+  },
+  {
+    "text": "tour",
+    "start": 1.54,
+    "end": 1.8,
+    "id": "w6"
+  },
+  {
+    "text": "du",
+    "start": 1.8,
+    "end": 1.83,
+    "id": "w7"
+  },
+  {
+    "text": "tableau",
+    "start": 1.95,
+    "end": 2.37,
+    "id": "w8"
+  },
+  {
+    "text": "de",
+    "start": 2.37,
+    "end": 2.49,
+    "id": "w9"
+  },
+  {
+    "text": "bord,",
+    "start": 2.5,
+    "end": 2.92,
+    "id": "w10"
+  },
+  {
+    "text": "votre",
+    "start": 2.92,
+    "end": 3.23,
+    "id": "w11"
+  },
+  {
+    "text": "point",
+    "start": 3.23,
+    "end": 3.45,
+    "id": "w12"
+  },
+  {
+    "text": "de",
+    "start": 3.54,
+    "end": 3.66,
+    "id": "w13"
+  },
+  {
+    "text": "départ",
+    "start": 3.66,
+    "end": 4,
+    "id": "w14"
+  },
+  {
+    "text": "chaque",
+    "start": 4.09,
+    "end": 4.4,
+    "id": "w15"
+  },
+  {
+    "text": "matin.",
+    "start": 4.4,
+    "end": 4.86,
+    "id": "w16"
+  },
+  {
+    "text": "En",
+    "start": 4.89,
+    "end": 5.01,
+    "id": "w17"
+  },
+  {
+    "text": "haut,",
+    "start": 5.01,
+    "end": 5.47,
+    "id": "w18"
+  },
+  {
+    "text": "l'état",
+    "start": 5.47,
+    "end": 5.76,
+    "id": "w19"
+  },
+  {
+    "text": "de",
+    "start": 5.94,
+    "end": 6.06,
+    "id": "w20"
+  },
+  {
+    "text": "vos",
+    "start": 6.12,
+    "end": 6.29,
+    "id": "w21"
+  },
+  {
+    "text": "projets.",
+    "start": 6.38,
+    "end": 6.94,
+    "id": "w22"
+  },
+  {
+    "text": "À",
+    "start": 6.97,
+    "end": 7.01,
+    "id": "w23"
+  },
+  {
+    "text": "démarrer,",
+    "start": 7.01,
+    "end": 7.75,
+    "id": "w24"
+  },
+  {
+    "text": "en",
+    "start": 7.75,
+    "end": 7.84,
+    "id": "w25"
+  },
+  {
+    "text": "cours",
+    "start": 8.02,
+    "end": 8.27,
+    "id": "w26"
+  },
+  {
+    "text": "et",
+    "start": 8.27,
+    "end": 8.37,
+    "id": "w27"
+  },
+  {
+    "text": "terminés",
+    "start": 8.46,
+    "end": 9.02,
+    "id": "w28"
+  },
+  {
+    "text": "avec",
+    "start": 9.02,
+    "end": 9.32,
+    "id": "w29"
+  },
+  {
+    "text": "leur",
+    "start": 9.32,
+    "end": 9.48,
+    "id": "w30"
+  },
+  {
+    "text": "avancement.",
+    "start": 9.76,
+    "end": 10.66,
+    "id": "w31"
+  },
+  {
+    "text": "La",
+    "start": 10.69,
+    "end": 10.78,
+    "id": "w32"
+  },
+  {
+    "text": "progression",
+    "start": 10.78,
+    "end": 11.45,
+    "id": "w33"
+  },
+  {
+    "text": "hebdomadaire",
+    "start": 11.45,
+    "end": 12.09,
+    "id": "w34"
+  },
+  {
+    "text": "et",
+    "start": 12.18,
+    "end": 12.29,
+    "id": "w35"
+  },
+  {
+    "text": "le",
+    "start": 12.29,
+    "end": 12.39,
+    "id": "w36"
+  },
+  {
+    "text": "top",
+    "start": 12.42,
+    "end": 12.49,
+    "id": "w37"
+  },
+  {
+    "text": "5",
+    "start": 12.61,
+    "end": 12.77,
+    "id": "w38"
+  },
+  {
+    "text": "des",
+    "start": 12.77,
+    "end": 12.85,
+    "id": "w39"
+  },
+  {
+    "text": "employés",
+    "start": 12.95,
+    "end": 13.5,
+    "id": "w40"
+  },
+  {
+    "text": "montrent",
+    "start": 13.5,
+    "end": 13.94,
+    "id": "w41"
+  },
+  {
+    "text": "qui",
+    "start": 13.94,
+    "end": 14.24,
+    "id": "w42"
+  },
+  {
+    "text": "avance",
+    "start": 14.24,
+    "end": 14.84,
+    "id": "w43"
+  },
+  {
+    "text": "à",
+    "start": 14.84,
+    "end": 14.88,
+    "id": "w44"
+  },
+  {
+    "text": "partir",
+    "start": 14.91,
+    "end": 15.07,
+    "id": "w45"
+  },
+  {
+    "text": "des",
+    "start": 15.07,
+    "end": 15.45,
+    "id": "w46"
+  },
+  {
+    "text": "tâches",
+    "start": 15.45,
+    "end": 15.78,
+    "id": "w47"
+  },
+  {
+    "text": "réellement",
+    "start": 15.78,
+    "end": 16.35,
+    "id": "w48"
+  },
+  {
+    "text": "terminées.",
+    "start": 16.35,
+    "end": 17.09,
+    "id": "w49"
+  },
+  {
+    "text": "La",
+    "start": 17.13,
+    "end": 17.24,
+    "id": "w50"
+  },
+  {
+    "text": "répartition",
+    "start": 17.24,
+    "end": 18,
+    "id": "w51"
+  },
+  {
+    "text": "des",
+    "start": 18.01,
+    "end": 18.22,
+    "id": "w52"
+  },
+  {
+    "text": "tâches",
+    "start": 18.22,
+    "end": 18.53,
+    "id": "w53"
+  },
+  {
+    "text": "se",
+    "start": 18.64,
+    "end": 18.78,
+    "id": "w54"
+  },
+  {
+    "text": "filtre",
+    "start": 18.78,
+    "end": 19.2,
+    "id": "w55"
+  },
+  {
+    "text": "par",
+    "start": 19.2,
+    "end": 19.41,
+    "id": "w56"
+  },
+  {
+    "text": "projet,",
+    "start": 19.41,
+    "end": 20.02,
+    "id": "w57"
+  },
+  {
+    "text": "à",
+    "start": 20.02,
+    "end": 20.08,
+    "id": "w58"
+  },
+  {
+    "text": "faire,",
+    "start": 20.13,
+    "end": 20.69,
+    "id": "w59"
+  },
+  {
+    "text": "en",
+    "start": 20.69,
+    "end": 20.84,
+    "id": "w60"
+  },
+  {
+    "text": "cours",
+    "start": 20.88,
+    "end": 21.28,
+    "id": "w61"
+  },
+  {
+    "text": "ou",
+    "start": 21.28,
+    "end": 21.44,
+    "id": "w62"
+  },
+  {
+    "text": "terminée.",
+    "start": 21.44,
+    "end": 22.42,
+    "id": "w63"
+  },
+  {
+    "text": "Plus",
+    "start": 22.45,
+    "end": 22.64,
+    "id": "w64"
+  },
+  {
+    "text": "bas,",
+    "start": 22.64,
+    "end": 22.92,
+    "id": "w65"
+  },
+  {
+    "text": "les",
+    "start": 22.92,
+    "end": 23.09,
+    "id": "w66"
+  },
+  {
+    "text": "statistiques",
+    "start": 23.09,
+    "end": 23.76,
+    "id": "w67"
+  },
+  {
+    "text": "de",
+    "start": 23.76,
+    "end": 23.85,
+    "id": "w68"
+  },
+  {
+    "text": "chaque",
+    "start": 23.94,
+    "end": 24.21,
+    "id": "w69"
+  },
+  {
+    "text": "projet,",
+    "start": 24.21,
+    "end": 24.65,
+    "id": "w70"
+  },
+  {
+    "text": "avec",
+    "start": 24.65,
+    "end": 24.87,
+    "id": "w71"
+  },
+  {
+    "text": "une",
+    "start": 24.88,
+    "end": 24.97,
+    "id": "w72"
+  },
+  {
+    "text": "recherche",
+    "start": 25.25,
+    "end": 25.52,
+    "id": "w73"
+  },
+  {
+    "text": "pour",
+    "start": 25.62,
+    "end": 25.78,
+    "id": "w74"
+  },
+  {
+    "text": "retrouver",
+    "start": 25.8,
+    "end": 26.29,
+    "id": "w75"
+  },
+  {
+    "text": "le",
+    "start": 26.29,
+    "end": 26.4,
+    "id": "w76"
+  },
+  {
+    "text": "bon.",
+    "start": 26.4,
+    "end": 26.82,
+    "id": "w77"
+  },
+  {
+    "text": "Dans",
+    "start": 26.85,
+    "end": 27.01,
+    "id": "w78"
+  },
+  {
+    "text": "le",
+    "start": 27.03,
+    "end": 27.11,
+    "id": "w79"
+  },
+  {
+    "text": "prochain",
+    "start": 27.18,
+    "end": 27.53,
+    "id": "w80"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 27.53,
+    "end": 28,
+    "id": "w81"
+  },
+  {
+    "text": "on",
+    "start": 28.08,
+    "end": 28.2,
+    "id": "w82"
+  },
+  {
+    "text": "ajoute",
+    "start": 28.2,
+    "end": 28.62,
+    "id": "w83"
+  },
+  {
+    "text": "ses",
+    "start": 28.62,
+    "end": 28.83,
+    "id": "w84"
+  },
+  {
+    "text": "collaborateurs.",
+    "start": 28.83,
+    "end": 29.82,
+    "id": "w85"
+  }
+]

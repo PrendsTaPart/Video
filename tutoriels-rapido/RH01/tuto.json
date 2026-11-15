@@ -1,0 +1,111 @@
+{
+ "id": "RH01",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Créer son espace RapidoRH",
+ "em": "espace RapidoRH",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/register",
+ "type_delay": 18,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : le tableau de bord",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Bienvenue ! Dans ce tutoriel, on crée votre espace RapidoRH en moins d'une minute."
+  },
+  {
+   "key": "compte",
+   "text": "Sur la page d'inscription, indiquez votre prénom, votre nom, votre adresse e-mail, puis choisissez un mot de passe."
+  },
+  {
+   "key": "entreprise",
+   "text": "Deuxième étape : votre entreprise. Renseignez son nom et son adresse e-mail de contact, puis validez."
+  },
+  {
+   "key": "offre",
+   "text": "Choisissez ensuite votre offre. L'essai gratuit vous permet de tout découvrir sans engagement."
+  },
+  {
+   "key": "outro",
+   "text": "Votre espace est prêt. Dans le prochain tutoriel, on fait le tour du tableau de bord."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3,
+   "zone": "form"
+  },
+  {
+   "at": "compte",
+   "label": "Le gérant",
+   "fill": [
+    [
+     "input[name=first_name]",
+     "Julie"
+    ],
+    [
+     "input[name=last_name]",
+     "Moreau"
+    ]
+   ],
+   "fill_now": [
+    [
+     "input[name=email]",
+     "julie@atelier-demo.test"
+    ],
+    [
+     "input[name=password]",
+     "Demo-Tuto-2026!"
+    ],
+    [
+     "input[name=password_confirmation]",
+     "Demo-Tuto-2026!"
+    ]
+   ],
+   "zone": "form"
+  },
+  {
+   "at": "entreprise",
+   "label": "L'entreprise",
+   "click": "button:has-text(\"Suivant\")",
+   "fill": [
+    [
+     "input[name=name]",
+     "Atelier Démo (fictif)"
+    ]
+   ],
+   "fill_now": [
+    [
+     "input[name=email]",
+     "contact@atelier-demo.test"
+    ]
+   ],
+   "zone": "form"
+  },
+  {
+   "at": "offre",
+   "label": "L'offre",
+   "click": "form button[type=submit], button:has-text(\"Connexion\")",
+   "wait": 0.8,
+   "zone": ".card:has-text(\"Essai Gratuit\")"
+  },
+  {
+   "at": "outro",
+   "hover": "button:has-text(\"Commencer l'essai gratuit\")",
+   "zone": ".card:has-text(\"Essai Gratuit\")"
+  }
+ ],
+ "thumb_shot": "fin.png",
+ "public": true
+}

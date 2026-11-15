@@ -1,0 +1,422 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.02,
+    "end": 0.28,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.28,
+    "end": 0.4,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.47,
+    "end": 1.12,
+    "id": "w2"
+  },
+  {
+    "text": "on",
+    "start": 1.12,
+    "end": 1.26,
+    "id": "w3"
+  },
+  {
+    "text": "décide",
+    "start": 1.26,
+    "end": 1.62,
+    "id": "w4"
+  },
+  {
+    "text": "qui",
+    "start": 1.72,
+    "end": 1.85,
+    "id": "w5"
+  },
+  {
+    "text": "peut",
+    "start": 1.92,
+    "end": 2.17,
+    "id": "w6"
+  },
+  {
+    "text": "voir",
+    "start": 2.17,
+    "end": 2.46,
+    "id": "w7"
+  },
+  {
+    "text": "et",
+    "start": 2.46,
+    "end": 2.6,
+    "id": "w8"
+  },
+  {
+    "text": "faire",
+    "start": 2.6,
+    "end": 2.87,
+    "id": "w9"
+  },
+  {
+    "text": "quoi",
+    "start": 2.96,
+    "end": 3.24,
+    "id": "w10"
+  },
+  {
+    "text": "dans",
+    "start": 3.24,
+    "end": 3.64,
+    "id": "w11"
+  },
+  {
+    "text": "Rapido",
+    "start": 3.64,
+    "end": 4.24,
+    "id": "w12"
+  },
+  {
+    "text": "RH.",
+    "start": 4.24,
+    "end": 4.5,
+    "id": "w13"
+  },
+  {
+    "text": "La",
+    "start": 4.52,
+    "end": 4.64,
+    "id": "w14"
+  },
+  {
+    "text": "page",
+    "start": 4.64,
+    "end": 4.9,
+    "id": "w15"
+  },
+  {
+    "text": "Roles",
+    "start": 4.97,
+    "end": 5.29,
+    "id": "w16"
+  },
+  {
+    "text": "liste",
+    "start": 5.29,
+    "end": 5.65,
+    "id": "w17"
+  },
+  {
+    "text": "les",
+    "start": 5.65,
+    "end": 5.87,
+    "id": "w18"
+  },
+  {
+    "text": "rôles",
+    "start": 5.87,
+    "end": 6.22,
+    "id": "w19"
+  },
+  {
+    "text": "de",
+    "start": 6.25,
+    "end": 6.35,
+    "id": "w20"
+  },
+  {
+    "text": "l'entreprise",
+    "start": 6.42,
+    "end": 7.34,
+    "id": "w21"
+  },
+  {
+    "text": "avec",
+    "start": 7.34,
+    "end": 7.59,
+    "id": "w22"
+  },
+  {
+    "text": "leur",
+    "start": 7.59,
+    "end": 7.84,
+    "id": "w23"
+  },
+  {
+    "text": "permission.",
+    "start": 7.84,
+    "end": 8.5,
+    "id": "w24"
+  },
+  {
+    "text": "Cliquez",
+    "start": 8.52,
+    "end": 9.09,
+    "id": "w25"
+  },
+  {
+    "text": "sur",
+    "start": 9.09,
+    "end": 9.35,
+    "id": "w26"
+  },
+  {
+    "text": "Ajouter",
+    "start": 9.35,
+    "end": 9.95,
+    "id": "w27"
+  },
+  {
+    "text": "un",
+    "start": 9.95,
+    "end": 10.12,
+    "id": "w28"
+  },
+  {
+    "text": "rôle",
+    "start": 10.12,
+    "end": 10.5,
+    "id": "w29"
+  },
+  {
+    "text": "et",
+    "start": 10.5,
+    "end": 10.63,
+    "id": "w30"
+  },
+  {
+    "text": "donnez",
+    "start": 10.63,
+    "end": 11.03,
+    "id": "w31"
+  },
+  {
+    "text": "lui",
+    "start": 11.03,
+    "end": 11.23,
+    "id": "w32"
+  },
+  {
+    "text": "un",
+    "start": 11.23,
+    "end": 11.36,
+    "id": "w33"
+  },
+  {
+    "text": "nom,",
+    "start": 11.46,
+    "end": 11.71,
+    "id": "w34"
+  },
+  {
+    "text": "par",
+    "start": 11.73,
+    "end": 11.93,
+    "id": "w35"
+  },
+  {
+    "text": "exemple",
+    "start": 11.93,
+    "end": 12.39,
+    "id": "w36"
+  },
+  {
+    "text": "Chef",
+    "start": 12.39,
+    "end": 12.65,
+    "id": "w37"
+  },
+  {
+    "text": "de",
+    "start": 12.65,
+    "end": 12.78,
+    "id": "w38"
+  },
+  {
+    "text": "projet.",
+    "start": 13.17,
+    "end": 13.4,
+    "id": "w39"
+  },
+  {
+    "text": "Cochez",
+    "start": 13.42,
+    "end": 13.79,
+    "id": "w40"
+  },
+  {
+    "text": "ensuite",
+    "start": 13.79,
+    "end": 14.25,
+    "id": "w41"
+  },
+  {
+    "text": "ses",
+    "start": 14.25,
+    "end": 14.35,
+    "id": "w42"
+  },
+  {
+    "text": "permissions,",
+    "start": 14.52,
+    "end": 15.25,
+    "id": "w43"
+  },
+  {
+    "text": "module",
+    "start": 15.32,
+    "end": 15.68,
+    "id": "w44"
+  },
+  {
+    "text": "par",
+    "start": 15.68,
+    "end": 15.85,
+    "id": "w45"
+  },
+  {
+    "text": "module,",
+    "start": 15.9,
+    "end": 16.48,
+    "id": "w46"
+  },
+  {
+    "text": "projet,",
+    "start": 16.48,
+    "end": 17.21,
+    "id": "w47"
+  },
+  {
+    "text": "tâche,",
+    "start": 17.21,
+    "end": 17.69,
+    "id": "w48"
+  },
+  {
+    "text": "congé,",
+    "start": 18.1,
+    "end": 18.5,
+    "id": "w49"
+  },
+  {
+    "text": "utilisateur,",
+    "start": 18.5,
+    "end": 19.41,
+    "id": "w50"
+  },
+  {
+    "text": "document.",
+    "start": 19.5,
+    "end": 20.38,
+    "id": "w51"
+  },
+  {
+    "text": "Un",
+    "start": 20.42,
+    "end": 20.53,
+    "id": "w52"
+  },
+  {
+    "text": "collaborateur",
+    "start": 20.53,
+    "end": 21.35,
+    "id": "w53"
+  },
+  {
+    "text": "ne",
+    "start": 21.35,
+    "end": 21.52,
+    "id": "w54"
+  },
+  {
+    "text": "voit",
+    "start": 21.52,
+    "end": 21.76,
+    "id": "w55"
+  },
+  {
+    "text": "dans",
+    "start": 21.76,
+    "end": 22.02,
+    "id": "w56"
+  },
+  {
+    "text": "son",
+    "start": 22.02,
+    "end": 22.21,
+    "id": "w57"
+  },
+  {
+    "text": "menu",
+    "start": 22.21,
+    "end": 22.46,
+    "id": "w58"
+  },
+  {
+    "text": "que",
+    "start": 22.51,
+    "end": 22.66,
+    "id": "w59"
+  },
+  {
+    "text": "ce",
+    "start": 22.66,
+    "end": 22.79,
+    "id": "w60"
+  },
+  {
+    "text": "que",
+    "start": 22.79,
+    "end": 22.98,
+    "id": "w61"
+  },
+  {
+    "text": "son",
+    "start": 22.98,
+    "end": 23.17,
+    "id": "w62"
+  },
+  {
+    "text": "rôle",
+    "start": 23.17,
+    "end": 23.37,
+    "id": "w63"
+  },
+  {
+    "text": "autorise.",
+    "start": 23.43,
+    "end": 24.2,
+    "id": "w64"
+  },
+  {
+    "text": "Prochain",
+    "start": 24.22,
+    "end": 24.79,
+    "id": "w65"
+  },
+  {
+    "text": "épisode,",
+    "start": 24.79,
+    "end": 25.52,
+    "id": "w66"
+  },
+  {
+    "text": "Créer",
+    "start": 25.52,
+    "end": 25.97,
+    "id": "w67"
+  },
+  {
+    "text": "un",
+    "start": 25.97,
+    "end": 26.15,
+    "id": "w68"
+  },
+  {
+    "text": "projet.",
+    "start": 26.15,
+    "end": 26.7,
+    "id": "w69"
+  }
+]

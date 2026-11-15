@@ -1,0 +1,404 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.03,
+    "end": 0.24,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.25,
+    "end": 0.35,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.37,
+    "end": 0.94,
+    "id": "w2"
+  },
+  {
+    "text": "on",
+    "start": 1.1,
+    "end": 1.11,
+    "id": "w3"
+  },
+  {
+    "text": "suit",
+    "start": 1.11,
+    "end": 1.29,
+    "id": "w4"
+  },
+  {
+    "text": "le",
+    "start": 1.34,
+    "end": 1.44,
+    "id": "w5"
+  },
+  {
+    "text": "travail",
+    "start": 1.44,
+    "end": 1.84,
+    "id": "w6"
+  },
+  {
+    "text": "de",
+    "start": 1.84,
+    "end": 1.95,
+    "id": "w7"
+  },
+  {
+    "text": "l'équipe",
+    "start": 1.95,
+    "end": 2.4,
+    "id": "w8"
+  },
+  {
+    "text": "grâce",
+    "start": 2.4,
+    "end": 2.84,
+    "id": "w9"
+  },
+  {
+    "text": "aux",
+    "start": 2.84,
+    "end": 3.1,
+    "id": "w10"
+  },
+  {
+    "text": "dailies.",
+    "start": 3.1,
+    "end": 4,
+    "id": "w11"
+  },
+  {
+    "text": "La",
+    "start": 4.03,
+    "end": 4.14,
+    "id": "w12"
+  },
+  {
+    "text": "page",
+    "start": 4.14,
+    "end": 4.4,
+    "id": "w13"
+  },
+  {
+    "text": "dailies",
+    "start": 4.48,
+    "end": 4.94,
+    "id": "w14"
+  },
+  {
+    "text": "des",
+    "start": 4.94,
+    "end": 5.16,
+    "id": "w15"
+  },
+  {
+    "text": "utilisateurs",
+    "start": 5.16,
+    "end": 6.04,
+    "id": "w16"
+  },
+  {
+    "text": "liste",
+    "start": 6.04,
+    "end": 6.4,
+    "id": "w17"
+  },
+  {
+    "text": "jour",
+    "start": 6.4,
+    "end": 6.69,
+    "id": "w18"
+  },
+  {
+    "text": "après",
+    "start": 6.69,
+    "end": 7.05,
+    "id": "w19"
+  },
+  {
+    "text": "jour",
+    "start": 7.05,
+    "end": 7.34,
+    "id": "w20"
+  },
+  {
+    "text": "ce",
+    "start": 7.34,
+    "end": 7.49,
+    "id": "w21"
+  },
+  {
+    "text": "que",
+    "start": 7.49,
+    "end": 7.98,
+    "id": "w22"
+  },
+  {
+    "text": "chacun",
+    "start": 7.98,
+    "end": 8.09,
+    "id": "w23"
+  },
+  {
+    "text": "a",
+    "start": 8.16,
+    "end": 8.2,
+    "id": "w24"
+  },
+  {
+    "text": "fait.",
+    "start": 8.2,
+    "end": 8.7,
+    "id": "w25"
+  },
+  {
+    "text": "Chaque",
+    "start": 8.73,
+    "end": 9,
+    "id": "w26"
+  },
+  {
+    "text": "dailie",
+    "start": 9.03,
+    "end": 9.33,
+    "id": "w27"
+  },
+  {
+    "text": "détaille",
+    "start": 9.33,
+    "end": 9.64,
+    "id": "w28"
+  },
+  {
+    "text": "les",
+    "start": 9.8,
+    "end": 9.9,
+    "id": "w29"
+  },
+  {
+    "text": "tâches",
+    "start": 9.9,
+    "end": 10.19,
+    "id": "w30"
+  },
+  {
+    "text": "travaillées,",
+    "start": 10.32,
+    "end": 10.98,
+    "id": "w31"
+  },
+  {
+    "text": "le",
+    "start": 11.04,
+    "end": 11.12,
+    "id": "w32"
+  },
+  {
+    "text": "nombre",
+    "start": 11.12,
+    "end": 11.5,
+    "id": "w33"
+  },
+  {
+    "text": "d'heures",
+    "start": 11.5,
+    "end": 11.98,
+    "id": "w34"
+  },
+  {
+    "text": "et",
+    "start": 11.98,
+    "end": 12.11,
+    "id": "w35"
+  },
+  {
+    "text": "un",
+    "start": 12.11,
+    "end": 12.19,
+    "id": "w36"
+  },
+  {
+    "text": "commentaire.",
+    "start": 12.68,
+    "end": 13.16,
+    "id": "w37"
+  },
+  {
+    "text": "Les",
+    "start": 13.23,
+    "end": 13.35,
+    "id": "w38"
+  },
+  {
+    "text": "filtres",
+    "start": 13.35,
+    "end": 13.69,
+    "id": "w39"
+  },
+  {
+    "text": "et",
+    "start": 13.69,
+    "end": 13.79,
+    "id": "w40"
+  },
+  {
+    "text": "la",
+    "start": 13.79,
+    "end": 13.89,
+    "id": "w41"
+  },
+  {
+    "text": "recherche",
+    "start": 13.89,
+    "end": 14.33,
+    "id": "w42"
+  },
+  {
+    "text": "permettent",
+    "start": 14.33,
+    "end": 14.69,
+    "id": "w43"
+  },
+  {
+    "text": "de",
+    "start": 14.82,
+    "end": 14.91,
+    "id": "w44"
+  },
+  {
+    "text": "retrouver",
+    "start": 14.91,
+    "end": 15.27,
+    "id": "w45"
+  },
+  {
+    "text": "en",
+    "start": 15.4,
+    "end": 15.66,
+    "id": "w46"
+  },
+  {
+    "text": "jour",
+    "start": 15.68,
+    "end": 16.2,
+    "id": "w47"
+  },
+  {
+    "text": "une",
+    "start": 16.2,
+    "end": 16.37,
+    "id": "w48"
+  },
+  {
+    "text": "personne",
+    "start": 16.38,
+    "end": 16.67,
+    "id": "w49"
+  },
+  {
+    "text": "ou",
+    "start": 16.97,
+    "end": 17.05,
+    "id": "w50"
+  },
+  {
+    "text": "un",
+    "start": 17.18,
+    "end": 17.22,
+    "id": "w51"
+  },
+  {
+    "text": "projet.",
+    "start": 17.22,
+    "end": 18,
+    "id": "w52"
+  },
+  {
+    "text": "Les",
+    "start": 18.03,
+    "end": 18.19,
+    "id": "w53"
+  },
+  {
+    "text": "employés",
+    "start": 18.25,
+    "end": 18.71,
+    "id": "w54"
+  },
+  {
+    "text": "IA",
+    "start": 18.71,
+    "end": 18.83,
+    "id": "w55"
+  },
+  {
+    "text": "écrivent",
+    "start": 18.83,
+    "end": 19.29,
+    "id": "w56"
+  },
+  {
+    "text": "aussi",
+    "start": 19.34,
+    "end": 19.66,
+    "id": "w57"
+  },
+  {
+    "text": "leurs",
+    "start": 19.66,
+    "end": 19.97,
+    "id": "w58"
+  },
+  {
+    "text": "dailies",
+    "start": 19.98,
+    "end": 20.42,
+    "id": "w59"
+  },
+  {
+    "text": "à",
+    "start": 20.42,
+    "end": 20.47,
+    "id": "w60"
+  },
+  {
+    "text": "chaque",
+    "start": 20.48,
+    "end": 20.87,
+    "id": "w61"
+  },
+  {
+    "text": "tâche",
+    "start": 20.87,
+    "end": 21.17,
+    "id": "w62"
+  },
+  {
+    "text": "terminée.",
+    "start": 21.18,
+    "end": 22,
+    "id": "w63"
+  },
+  {
+    "text": "Prochain",
+    "start": 22.03,
+    "end": 22.63,
+    "id": "w64"
+  },
+  {
+    "text": "épisode,",
+    "start": 22.63,
+    "end": 23.29,
+    "id": "w65"
+  },
+  {
+    "text": "l'agenda.",
+    "start": 23.34,
+    "end": 24,
+    "id": "w66"
+  }
+]

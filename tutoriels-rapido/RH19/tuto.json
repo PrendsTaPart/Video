@@ -1,0 +1,87 @@
+{
+ "id": "RH19",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Connecter RapidoRH à Claude",
+ "em": "à Claude",
+ "tag": "1 min · Intermédiaire",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/tokens",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : les paramètres IA",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on prépare la connexion de RapidoRH à votre assistant IA, comme Claude."
+  },
+  {
+   "key": "page",
+   "text": "Ouvrez la page Tokens : c'est là que vous créez les clés d'accès de votre assistant."
+  },
+  {
+   "key": "generer",
+   "text": "Cliquez sur Générer un token, donnez-lui un nom et, si vous le souhaitez, une date d'expiration."
+  },
+  {
+   "key": "copier",
+   "text": "Copiez le token affiché : il ne sera plus visible ensuite. Collez-le dans le connecteur RapidoRH de votre assistant."
+  },
+  {
+   "key": "outro",
+   "text": "Vous pouvez révoquer un token à tout moment. Votre assistant pilote alors projets, tâches et équipe en langage naturel."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "page",
+   "label": "La page Tokens",
+   "zone": [
+    380,
+    110,
+    1420,
+    360
+   ]
+  },
+  {
+   "at": "generer",
+   "label": "Générer un token",
+   "click": "button:has-text(\"Générer un token\")",
+   "fill": [
+    [
+     "#tokenName",
+     "Claude - assistant"
+    ]
+   ],
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "copier",
+   "label": "Copier le token",
+   "eval": "document.head.insertAdjacentHTML('beforeend','<style>.modal input[readonly], .modal input[disabled], .modal code, .modal pre, .modal textarea, .modal .token, .modal [class*=token] input { filter: blur(8px) !important; }</style>')",
+   "click": ".modal.show button:has-text(\"Générer\")",
+   "wait": 0.8,
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "outro",
+   "label": "Révoquer",
+   "eval": "document.querySelector('.modal.show .btn-close')?.click()",
+   "wait": 0.6,
+   "zone": "table"
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

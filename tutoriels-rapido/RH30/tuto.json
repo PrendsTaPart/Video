@@ -1,0 +1,104 @@
+{
+ "id": "RH30",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Confier une tâche à un employé IA",
+ "em": "employé IA",
+ "tag": "1 min · Intermédiaire",
+ "profil": "ia",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/projects",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : suivre vos employés IA",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on confie une tâche du Kanban à un employé IA."
+  },
+  {
+   "key": "ouvrir",
+   "text": "Ouvrez la tâche. En bas de sa fiche, le panneau Employé IA permet de lui confier le travail."
+  },
+  {
+   "key": "mode",
+   "text": "Choisissez le mode et l'employé IA, puis écrivez ses instructions : ce qu'il doit produire, pour qui, et sous quelle forme."
+  },
+  {
+   "key": "outils",
+   "text": "Cochez les outils qu'il peut consulter. Il ne peut que lire : aucune action n'est faite à votre place."
+  },
+  {
+   "key": "outro",
+   "text": "Enregistrez. Son livrable vous sera soumis pour validation avant toute suite."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "goto_file": "boutique-taches.txt",
+   "wait": 0.3
+  },
+  {
+   "at": "ouvrir",
+   "label": "Le panneau Employé IA",
+   "click": ".kanban-item:has-text(\"Rédiger les fiches produits\")",
+   "wait": 0.5
+  },
+  {
+   "at": "ouvrir",
+   "hover": ".modal.show select[id^=ai-mode]",
+   "zone": ".modal.show select[id^=ai-mode]",
+   "zone_closest": ".border, .card, div.mt-4"
+  },
+  {
+   "at": "mode",
+   "label": "Mode et instructions",
+   "select": [
+    [
+     ".modal.show select[id^=ai-mode]",
+     {
+      "index": 1
+     }
+    ]
+   ],
+   "wait": 0.6
+  },
+  {
+   "at": "mode",
+   "select": [
+    [
+     ".modal.show select[id^=ai-agent]",
+     {
+      "index": 1
+     }
+    ]
+   ],
+   "fill_now": [
+    [
+     ".modal.show textarea[id^=ai-instr]",
+     "Rédige 6 fiches produits de 80 mots pour la boutique, ton chaleureux, à valider par Hugo."
+    ]
+   ]
+  },
+  {
+   "at": "outils",
+   "label": "Outils en lecture",
+   "click": ".modal.show input[id^=ai-tool] >> nth=0",
+   "zone": ".modal.show input[id^=ai-tool] >> nth=0",
+   "zone_closest": ".border, .card, div.mt-4"
+  },
+  {
+   "at": "outro",
+   "hover": ".modal.show button:has-text(\"Enregistrer le mode IA\")"
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

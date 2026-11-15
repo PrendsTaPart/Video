@@ -1,0 +1,145 @@
+{
+ "id": "RH06",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Créer un projet",
+ "em": "un projet",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/projects",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : le Kanban",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on crée un projet et on lui affecte son équipe."
+  },
+  {
+   "key": "liste",
+   "text": "La page Les projets regroupe tous vos projets, filtrables par statut. Cliquez sur Créer un projet."
+  },
+  {
+   "key": "infos",
+   "text": "Renseignez le nom, la taille, la priorité et le tarif du projet."
+  },
+  {
+   "key": "equipe",
+   "text": "Choisissez ensuite les dates, le chef de projet et les employés qui y participent."
+  },
+  {
+   "key": "outro",
+   "text": "Enregistrez : le projet apparaît dans la liste, prêt à recevoir ses tâches. Prochain épisode : le Kanban."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "liste",
+   "label": "Vos projets",
+   "hover": "a:has-text(\"Créer un projet\")",
+   "zone": [
+    380,
+    110,
+    1420,
+    700
+   ]
+  },
+  {
+   "at": "liste",
+   "click": "a:has-text(\"Créer un projet\")",
+   "wait": 0.5
+  },
+  {
+   "at": "infos",
+   "label": "Les informations",
+   "fill": [
+    [
+     "input[placeholder=\"Entrer un nom\"]",
+     "Site vitrine 2027"
+    ]
+   ],
+   "fill_now": [
+    [
+     "input[placeholder=\"Entrer tarif du projet\"]",
+     "4500"
+    ]
+   ],
+   "select": [
+    [
+     "select:has(option:text(\"Sélectionner une priorité\"))",
+     {
+      "index": 2
+     }
+    ],
+    [
+     "select:has(option:text(\"Sélectionner une taille du projet\"))",
+     {
+      "index": 2
+     }
+    ]
+   ],
+   "zone": "Information du projet"
+  },
+  {
+   "at": "equipe",
+   "label": "Dates et équipe",
+   "fill_now": [
+    [
+     "input[type=date] >> nth=0",
+     "2027-01-04"
+    ],
+    [
+     "input[type=date] >> nth=1",
+     "2027-03-26"
+    ]
+   ],
+   "select": [
+    [
+     "select:has(option:text(\"Sélectionner un chef de projet\"))",
+     "Camille Durand"
+    ]
+   ],
+   "zone": "Information de l’équipe responsable"
+  },
+  {
+   "at": "equipe",
+   "fill": [
+    [
+     ".tagify__input",
+     "Hugo"
+    ]
+   ],
+   "wait": 0.4
+  },
+  {
+   "at": "equipe",
+   "click": ".tagify__dropdown__item >> nth=0",
+   "wait": 0.4
+  },
+  {
+   "at": "outro",
+   "label": "Enregistrer",
+   "click": "button:has-text(\"Créer un projet\")",
+   "wait": 1.5,
+   "zone": [
+    380,
+    110,
+    1420,
+    520
+   ]
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

@@ -1,0 +1,428 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.03,
+    "end": 0.24,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.24,
+    "end": 0.36,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.37,
+    "end": 0.95,
+    "id": "w2"
+  },
+  {
+    "text": "on",
+    "start": 0.95,
+    "end": 1.12,
+    "id": "w3"
+  },
+  {
+    "text": "fait",
+    "start": 1.12,
+    "end": 1.32,
+    "id": "w4"
+  },
+  {
+    "text": "avancer",
+    "start": 1.32,
+    "end": 1.76,
+    "id": "w5"
+  },
+  {
+    "text": "les",
+    "start": 1.76,
+    "end": 1.89,
+    "id": "w6"
+  },
+  {
+    "text": "tâches",
+    "start": 1.89,
+    "end": 2.16,
+    "id": "w7"
+  },
+  {
+    "text": "d'un",
+    "start": 2.16,
+    "end": 2.34,
+    "id": "w8"
+  },
+  {
+    "text": "projet",
+    "start": 2.39,
+    "end": 2.76,
+    "id": "w9"
+  },
+  {
+    "text": "sur",
+    "start": 2.76,
+    "end": 2.96,
+    "id": "w10"
+  },
+  {
+    "text": "le",
+    "start": 2.96,
+    "end": 3.09,
+    "id": "w11"
+  },
+  {
+    "text": "tableau",
+    "start": 3.09,
+    "end": 3.56,
+    "id": "w12"
+  },
+  {
+    "text": "Camban.",
+    "start": 3.56,
+    "end": 4.19,
+    "id": "w13"
+  },
+  {
+    "text": "Chaque",
+    "start": 4.23,
+    "end": 4.56,
+    "id": "w14"
+  },
+  {
+    "text": "colonne",
+    "start": 4.57,
+    "end": 4.98,
+    "id": "w15"
+  },
+  {
+    "text": "est",
+    "start": 4.98,
+    "end": 5.15,
+    "id": "w16"
+  },
+  {
+    "text": "une",
+    "start": 5.32,
+    "end": 5.34,
+    "id": "w17"
+  },
+  {
+    "text": "liste",
+    "start": 5.34,
+    "end": 5.64,
+    "id": "w18"
+  },
+  {
+    "text": "de",
+    "start": 5.64,
+    "end": 5.76,
+    "id": "w19"
+  },
+  {
+    "text": "tâches,",
+    "start": 5.76,
+    "end": 6.28,
+    "id": "w20"
+  },
+  {
+    "text": "affaires,",
+    "start": 6.28,
+    "end": 7,
+    "id": "w21"
+  },
+  {
+    "text": "encours,",
+    "start": 7,
+    "end": 7.82,
+    "id": "w22"
+  },
+  {
+    "text": "terminés.",
+    "start": 7.82,
+    "end": 8.9,
+    "id": "w23"
+  },
+  {
+    "text": "Le",
+    "start": 8.93,
+    "end": 9.04,
+    "id": "w24"
+  },
+  {
+    "text": "bouton",
+    "start": 9.04,
+    "end": 9.46,
+    "id": "w25"
+  },
+  {
+    "text": "Ajouter",
+    "start": 9.46,
+    "end": 9.85,
+    "id": "w26"
+  },
+  {
+    "text": "une",
+    "start": 10.02,
+    "end": 10.15,
+    "id": "w27"
+  },
+  {
+    "text": "colonne",
+    "start": 10.21,
+    "end": 10.65,
+    "id": "w28"
+  },
+  {
+    "text": "en",
+    "start": 10.65,
+    "end": 10.79,
+    "id": "w29"
+  },
+  {
+    "text": "crée",
+    "start": 10.79,
+    "end": 11.07,
+    "id": "w30"
+  },
+  {
+    "text": "une",
+    "start": 11.07,
+    "end": 11.23,
+    "id": "w31"
+  },
+  {
+    "text": "nouvelle.",
+    "start": 11.29,
+    "end": 11.9,
+    "id": "w32"
+  },
+  {
+    "text": "Le",
+    "start": 11.93,
+    "end": 12.02,
+    "id": "w33"
+  },
+  {
+    "text": "bouton",
+    "start": 12.02,
+    "end": 12.39,
+    "id": "w34"
+  },
+  {
+    "text": "Plus,",
+    "start": 12.39,
+    "end": 12.76,
+    "id": "w35"
+  },
+  {
+    "text": "en",
+    "start": 12.76,
+    "end": 12.85,
+    "id": "w36"
+  },
+  {
+    "text": "haut",
+    "start": 13.02,
+    "end": 13.12,
+    "id": "w37"
+  },
+  {
+    "text": "d'une",
+    "start": 13.19,
+    "end": 13.43,
+    "id": "w38"
+  },
+  {
+    "text": "colonne,",
+    "start": 13.43,
+    "end": 14.04,
+    "id": "w39"
+  },
+  {
+    "text": "ajoute",
+    "start": 14.04,
+    "end": 14.4,
+    "id": "w40"
+  },
+  {
+    "text": "une",
+    "start": 14.4,
+    "end": 14.58,
+    "id": "w41"
+  },
+  {
+    "text": "tâche",
+    "start": 14.58,
+    "end": 14.88,
+    "id": "w42"
+  },
+  {
+    "text": "directement",
+    "start": 14.88,
+    "end": 15.53,
+    "id": "w43"
+  },
+  {
+    "text": "dans",
+    "start": 15.53,
+    "end": 15.68,
+    "id": "w44"
+  },
+  {
+    "text": "cette",
+    "start": 15.91,
+    "end": 16.08,
+    "id": "w45"
+  },
+  {
+    "text": "liste.",
+    "start": 16.19,
+    "end": 16.6,
+    "id": "w46"
+  },
+  {
+    "text": "Pour",
+    "start": 16.63,
+    "end": 16.82,
+    "id": "w47"
+  },
+  {
+    "text": "faire",
+    "start": 16.85,
+    "end": 17.1,
+    "id": "w48"
+  },
+  {
+    "text": "avancer",
+    "start": 17.1,
+    "end": 17.49,
+    "id": "w49"
+  },
+  {
+    "text": "une",
+    "start": 17.49,
+    "end": 17.55,
+    "id": "w50"
+  },
+  {
+    "text": "tâche,",
+    "start": 17.7,
+    "end": 18.02,
+    "id": "w51"
+  },
+  {
+    "text": "glissez-la",
+    "start": 18.02,
+    "end": 18.49,
+    "id": "w52"
+  },
+  {
+    "text": "simplement",
+    "start": 18.59,
+    "end": 19.13,
+    "id": "w53"
+  },
+  {
+    "text": "d'une",
+    "start": 19.13,
+    "end": 19.39,
+    "id": "w54"
+  },
+  {
+    "text": "colonne",
+    "start": 19.39,
+    "end": 19.78,
+    "id": "w55"
+  },
+  {
+    "text": "à",
+    "start": 19.78,
+    "end": 19.83,
+    "id": "w56"
+  },
+  {
+    "text": "l'autre.",
+    "start": 19.83,
+    "end": 20.38,
+    "id": "w57"
+  },
+  {
+    "text": "Toute",
+    "start": 20.53,
+    "end": 20.8,
+    "id": "w58"
+  },
+  {
+    "text": "l'équipe",
+    "start": 20.84,
+    "end": 21.31,
+    "id": "w59"
+  },
+  {
+    "text": "voit",
+    "start": 21.31,
+    "end": 21.45,
+    "id": "w60"
+  },
+  {
+    "text": "le",
+    "start": 21.62,
+    "end": 21.68,
+    "id": "w61"
+  },
+  {
+    "text": "tableau",
+    "start": 21.68,
+    "end": 22.12,
+    "id": "w62"
+  },
+  {
+    "text": "à",
+    "start": 22.12,
+    "end": 22.18,
+    "id": "w63"
+  },
+  {
+    "text": "jour.",
+    "start": 22.18,
+    "end": 22.67,
+    "id": "w64"
+  },
+  {
+    "text": "Prochain",
+    "start": 22.73,
+    "end": 23.26,
+    "id": "w65"
+  },
+  {
+    "text": "épisode,",
+    "start": 23.26,
+    "end": 23.89,
+    "id": "w66"
+  },
+  {
+    "text": "le",
+    "start": 23.89,
+    "end": 24.03,
+    "id": "w67"
+  },
+  {
+    "text": "détail",
+    "start": 24.03,
+    "end": 24.45,
+    "id": "w68"
+  },
+  {
+    "text": "d'une",
+    "start": 24.45,
+    "end": 24.8,
+    "id": "w69"
+  },
+  {
+    "text": "tâche.",
+    "start": 24.8,
+    "end": 25.29,
+    "id": "w70"
+  }
+]

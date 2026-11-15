@@ -1,0 +1,88 @@
+{
+ "id": "RH12",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Organiser un rendez-vous",
+ "em": "rendez-vous",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/rdv",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : les congés",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on planifie un rendez-vous avec son équipe."
+  },
+  {
+   "key": "calendrier",
+   "text": "La page Rendez-vous affiche tous vos rendez-vous dans un calendrier."
+  },
+  {
+   "key": "ajouter",
+   "text": "Cliquez sur un jour pour en créer un : titre, type de rendez-vous, dates de début et de fin, et participants."
+  },
+  {
+   "key": "details",
+   "text": "Cliquez sur un rendez-vous pour voir ses détails : organisateur, durée, lieu ou lien de visioconférence."
+  },
+  {
+   "key": "outro",
+   "text": "Les participants le retrouvent dans leur propre calendrier. Prochain épisode : les congés."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3,
+   "zone": ".fc"
+  },
+  {
+   "at": "calendrier",
+   "label": "Le calendrier",
+   "zone": ".fc"
+  },
+  {
+   "at": "ajouter",
+   "label": "Créer un rendez-vous",
+   "click": ".fc-day-future >> nth=4",
+   "fill": [
+    [
+     ".modal.show input.form-control >> nth=0",
+     "Revue du site vitrine"
+    ]
+   ],
+   "select": [
+    [
+     ".modal.show select:has(option:text(\"Sélectionner un type\"))",
+     {
+      "index": 1
+     }
+    ]
+   ],
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "details",
+   "label": "Les détails",
+   "eval": "document.querySelector('.modal.show .btn-close')?.click()",
+   "click": ".fc-event:has-text(\"Point boutique\")",
+   "zone": "Détails du rendez-vous",
+   "zone_closest": ".card, .col-lg-3, .col-md-4"
+  },
+  {
+   "at": "outro",
+   "wait": 0.2
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

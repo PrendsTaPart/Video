@@ -1,0 +1,440 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.01,
+    "end": 0.29,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.34,
+    "end": 0.4,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.47,
+    "end": 1.22,
+    "id": "w2"
+  },
+  {
+    "text": "on",
+    "start": 1.22,
+    "end": 1.37,
+    "id": "w3"
+  },
+  {
+    "text": "configure",
+    "start": 1.37,
+    "end": 2.07,
+    "id": "w4"
+  },
+  {
+    "text": "un",
+    "start": 2.07,
+    "end": 2.22,
+    "id": "w5"
+  },
+  {
+    "text": "employé",
+    "start": 2.22,
+    "end": 2.75,
+    "id": "w6"
+  },
+  {
+    "text": "IA,",
+    "start": 2.75,
+    "end": 3.09,
+    "id": "w7"
+  },
+  {
+    "text": "puis",
+    "start": 3.09,
+    "end": 3.35,
+    "id": "w8"
+  },
+  {
+    "text": "on",
+    "start": 3.35,
+    "end": 3.48,
+    "id": "w9"
+  },
+  {
+    "text": "l'active.",
+    "start": 3.48,
+    "end": 4.02,
+    "id": "w10"
+  },
+  {
+    "text": "La",
+    "start": 4.25,
+    "end": 4.36,
+    "id": "w11"
+  },
+  {
+    "text": "fiche",
+    "start": 4.36,
+    "end": 4.64,
+    "id": "w12"
+  },
+  {
+    "text": "présente",
+    "start": 4.71,
+    "end": 5.16,
+    "id": "w13"
+  },
+  {
+    "text": "sa",
+    "start": 5.16,
+    "end": 5.17,
+    "id": "w14"
+  },
+  {
+    "text": "mission,",
+    "start": 5.37,
+    "end": 5.92,
+    "id": "w15"
+  },
+  {
+    "text": "ses",
+    "start": 5.92,
+    "end": 6.11,
+    "id": "w16"
+  },
+  {
+    "text": "compétences",
+    "start": 6.11,
+    "end": 6.84,
+    "id": "w17"
+  },
+  {
+    "text": "et",
+    "start": 6.84,
+    "end": 6.95,
+    "id": "w18"
+  },
+  {
+    "text": "les",
+    "start": 6.95,
+    "end": 7,
+    "id": "w19"
+  },
+  {
+    "text": "outils",
+    "start": 7.21,
+    "end": 7.43,
+    "id": "w20"
+  },
+  {
+    "text": "qu'il",
+    "start": 7.54,
+    "end": 7.7,
+    "id": "w21"
+  },
+  {
+    "text": "peut",
+    "start": 7.7,
+    "end": 7.92,
+    "id": "w22"
+  },
+  {
+    "text": "utiliser,",
+    "start": 7.92,
+    "end": 8.5,
+    "id": "w23"
+  },
+  {
+    "text": "en",
+    "start": 8.5,
+    "end": 8.62,
+    "id": "w24"
+  },
+  {
+    "text": "lecture",
+    "start": 8.62,
+    "end": 8.97,
+    "id": "w25"
+  },
+  {
+    "text": "seule.",
+    "start": 9.03,
+    "end": 9.74,
+    "id": "w26"
+  },
+  {
+    "text": "Fixez",
+    "start": 9.75,
+    "end": 10.09,
+    "id": "w27"
+  },
+  {
+    "text": "son",
+    "start": 10.1,
+    "end": 10.32,
+    "id": "w28"
+  },
+  {
+    "text": "budget",
+    "start": 10.32,
+    "end": 10.67,
+    "id": "w29"
+  },
+  {
+    "text": "mensuel",
+    "start": 10.87,
+    "end": 11.27,
+    "id": "w30"
+  },
+  {
+    "text": "en",
+    "start": 11.27,
+    "end": 11.41,
+    "id": "w31"
+  },
+  {
+    "text": "token.",
+    "start": 11.41,
+    "end": 12.03,
+    "id": "w32"
+  },
+  {
+    "text": "Sans",
+    "start": 12.05,
+    "end": 12.27,
+    "id": "w33"
+  },
+  {
+    "text": "budget,",
+    "start": 12.28,
+    "end": 12.77,
+    "id": "w34"
+  },
+  {
+    "text": "l'agent",
+    "start": 12.77,
+    "end": 13.19,
+    "id": "w35"
+  },
+  {
+    "text": "ne",
+    "start": 13.19,
+    "end": 13.26,
+    "id": "w36"
+  },
+  {
+    "text": "travaille",
+    "start": 13.32,
+    "end": 13.86,
+    "id": "w37"
+  },
+  {
+    "text": "pas.",
+    "start": 13.86,
+    "end": 14.28,
+    "id": "w38"
+  },
+  {
+    "text": "Son",
+    "start": 14.29,
+    "end": 14.48,
+    "id": "w39"
+  },
+  {
+    "text": "prompt",
+    "start": 14.48,
+    "end": 14.88,
+    "id": "w40"
+  },
+  {
+    "text": "système",
+    "start": 14.88,
+    "end": 15.21,
+    "id": "w41"
+  },
+  {
+    "text": "est",
+    "start": 15.41,
+    "end": 15.5,
+    "id": "w42"
+  },
+  {
+    "text": "versionné.",
+    "start": 15.56,
+    "end": 16.38,
+    "id": "w43"
+  },
+  {
+    "text": "Chaque",
+    "start": 16.39,
+    "end": 16.67,
+    "id": "w44"
+  },
+  {
+    "text": "modification",
+    "start": 16.72,
+    "end": 17.31,
+    "id": "w45"
+  },
+  {
+    "text": "crée",
+    "start": 17.49,
+    "end": 17.6,
+    "id": "w46"
+  },
+  {
+    "text": "une",
+    "start": 17.6,
+    "end": 17.77,
+    "id": "w47"
+  },
+  {
+    "text": "nouvelle",
+    "start": 17.77,
+    "end": 18.22,
+    "id": "w48"
+  },
+  {
+    "text": "version,",
+    "start": 18.22,
+    "end": 18.67,
+    "id": "w49"
+  },
+  {
+    "text": "consultable",
+    "start": 18.77,
+    "end": 19.15,
+    "id": "w50"
+  },
+  {
+    "text": "dans",
+    "start": 19.34,
+    "end": 19.55,
+    "id": "w51"
+  },
+  {
+    "text": "l'historique.",
+    "start": 19.55,
+    "end": 20.33,
+    "id": "w52"
+  },
+  {
+    "text": "Activez-le.",
+    "start": 20.47,
+    "end": 21.39,
+    "id": "w53"
+  },
+  {
+    "text": "Vous",
+    "start": 21.47,
+    "end": 21.69,
+    "id": "w54"
+  },
+  {
+    "text": "pourrez",
+    "start": 21.69,
+    "end": 22.09,
+    "id": "w55"
+  },
+  {
+    "text": "le",
+    "start": 22.09,
+    "end": 22.2,
+    "id": "w56"
+  },
+  {
+    "text": "suspendre",
+    "start": 22.2,
+    "end": 22.68,
+    "id": "w57"
+  },
+  {
+    "text": "ou",
+    "start": 22.74,
+    "end": 22.83,
+    "id": "w58"
+  },
+  {
+    "text": "le",
+    "start": 22.83,
+    "end": 22.94,
+    "id": "w59"
+  },
+  {
+    "text": "désactiver",
+    "start": 22.94,
+    "end": 23.51,
+    "id": "w60"
+  },
+  {
+    "text": "à",
+    "start": 23.51,
+    "end": 23.56,
+    "id": "w61"
+  },
+  {
+    "text": "tout",
+    "start": 23.56,
+    "end": 23.75,
+    "id": "w62"
+  },
+  {
+    "text": "moment.",
+    "start": 23.85,
+    "end": 24.22,
+    "id": "w63"
+  },
+  {
+    "text": "Prochain",
+    "start": 24.43,
+    "end": 24.99,
+    "id": "w64"
+  },
+  {
+    "text": "épisode,",
+    "start": 24.99,
+    "end": 25.63,
+    "id": "w65"
+  },
+  {
+    "text": "confiez",
+    "start": 25.63,
+    "end": 26.11,
+    "id": "w66"
+  },
+  {
+    "text": "une",
+    "start": 26.14,
+    "end": 26.33,
+    "id": "w67"
+  },
+  {
+    "text": "tâche",
+    "start": 26.33,
+    "end": 26.68,
+    "id": "w68"
+  },
+  {
+    "text": "à",
+    "start": 26.68,
+    "end": 26.71,
+    "id": "w69"
+  },
+  {
+    "text": "un",
+    "start": 26.81,
+    "end": 26.89,
+    "id": "w70"
+  },
+  {
+    "text": "employé",
+    "start": 26.89,
+    "end": 27.39,
+    "id": "w71"
+  },
+  {
+    "text": "IA.",
+    "start": 27.39,
+    "end": 27.82,
+    "id": "w72"
+  }
+]

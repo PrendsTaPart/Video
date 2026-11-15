@@ -1,0 +1,83 @@
+{
+ "id": "RH17",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Les notifications",
+ "em": "notifications",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/dashboard",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : votre abonnement",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on retrouve toutes ses notifications."
+  },
+  {
+   "key": "cloche",
+   "text": "La cloche, en haut de l'écran, signale les nouveautés : tâche assignée, congé demandé, livrable à valider."
+  },
+  {
+   "key": "page",
+   "text": "La page Notifications les rassemble toutes, de la plus récente à la plus ancienne."
+  },
+  {
+   "key": "actions",
+   "text": "Marquez-les comme lues ou supprimez celles qui ne servent plus."
+  },
+  {
+   "key": "outro",
+   "text": "Dans le prochain tutoriel, on gère son abonnement."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "cloche",
+   "label": "La cloche",
+   "click": "button:has(.ti-bell)",
+   "zone": ".dropdown-menu.show"
+  },
+  {
+   "at": "page",
+   "label": "Toutes les notifications",
+   "goto": "/notifications",
+   "zone": [
+    380,
+    110,
+    1420,
+    600
+   ]
+  },
+  {
+   "at": "actions",
+   "label": "Lire ou supprimer",
+   "hover": ".btn-rect >> nth=0",
+   "zone": ".btn-rect >> nth=0",
+   "zone_closest": ".card, li, .row"
+  },
+  {
+   "at": "actions",
+   "click": ".btn-rect >> nth=0",
+   "wait": 0.8
+  },
+  {
+   "at": "outro",
+   "wait": 0.2
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

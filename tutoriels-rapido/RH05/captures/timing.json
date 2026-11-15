@@ -1,0 +1,43 @@
+{
+  "voiceStartInCapture": 4.677,
+  "paragraphs": {
+    "intro": 0.02,
+    "liste": 4.52,
+    "ajouter": 8.52,
+    "permissions": 13.42,
+    "outro": 20.42,
+    "end": 26.7
+  },
+  "zones": {
+    "intro": [
+      380,
+      220,
+      1420,
+      203
+    ],
+    "liste": [
+      380,
+      220,
+      1420,
+      203
+    ],
+    "ajouter": [
+      666,
+      14,
+      588,
+      1066
+    ],
+    "permissions": [
+      666,
+      14,
+      588,
+      1066
+    ],
+    "outro": [
+      380,
+      220,
+      1420,
+      261
+    ]
+  }
+}

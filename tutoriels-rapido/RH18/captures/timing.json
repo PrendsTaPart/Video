@@ -1,0 +1,25 @@
+{
+  "voiceStartInCapture": 3.328,
+  "paragraphs": {
+    "intro": 0.03,
+    "offre": 3.63,
+    "factures": 9.31,
+    "changer": 12.55,
+    "outro": 17.07,
+    "end": 20.64
+  },
+  "zones": {
+    "offre": [
+      380,
+      106,
+      830,
+      252
+    ],
+    "factures": [
+      1206,
+      106,
+      594,
+      252
+    ]
+  }
+}

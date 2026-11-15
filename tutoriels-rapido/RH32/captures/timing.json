@@ -1,0 +1,31 @@
+{
+  "voiceStartInCapture": 4.443,
+  "paragraphs": {
+    "intro": 0.03,
+    "ouvrir": 3.59,
+    "formulaire": 7.71,
+    "suivi": 14.71,
+    "outro": 19.51,
+    "end": 23
+  },
+  "zones": {
+    "ouvrir": [
+      546,
+      14,
+      828,
+      541
+    ],
+    "formulaire": [
+      546,
+      14,
+      828,
+      625
+    ],
+    "suivi": [
+      380,
+      272,
+      1420,
+      170
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+ "id": "RH04",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Organiser son équipe en départements",
+ "em": "départements",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/departments",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : rôles et permissions",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on organise l'entreprise en départements."
+  },
+  {
+   "key": "liste",
+   "text": "La page Départements liste vos pôles : marketing, développement, ressources humaines…"
+  },
+  {
+   "key": "ajouter",
+   "text": "Cliquez sur Ajouter un département, donnez-lui un nom, et validez."
+  },
+  {
+   "key": "rattacher",
+   "text": "Chaque collaborateur est ensuite rattaché à son département depuis sa fiche. Les filtres de projets et de l'agenda s'en servent."
+  },
+  {
+   "key": "outro",
+   "text": "Dans le prochain tutoriel, on définit les rôles et leurs permissions."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3,
+   "zone": "table"
+  },
+  {
+   "at": "liste",
+   "label": "Vos départements",
+   "zone": "table"
+  },
+  {
+   "at": "ajouter",
+   "label": "Ajouter un département",
+   "click": "button:has-text(\"Ajouter un département\")",
+   "fill": [
+    [
+     ".modal.show input[placeholder=\"Entrer un nom\"]",
+     "Service client"
+    ]
+   ],
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "ajouter",
+   "click": ".modal.show button:has-text(\"Ajouter\")",
+   "wait": 1.0
+  },
+  {
+   "at": "ajouter",
+   "wait": 0.6,
+   "zone": "table"
+  },
+  {
+   "at": "rattacher",
+   "label": "Rattacher un collaborateur",
+   "goto": "/users",
+   "zone": "tr:has-text(\"Hugo Martin\")",
+   "click": "tr:has-text(\"Hugo Martin\") button.me-2"
+  },
+  {
+   "at": "rattacher",
+   "click": ".dropdown-menu.show a:has-text(\"Modifier\")",
+   "wait": 0.6
+  },
+  {
+   "at": "rattacher",
+   "select": [
+    [
+     ".modal.show select:has(option:text(\"Service client\"))",
+     "Service client"
+    ]
+   ]
+  },
+  {
+   "at": "outro",
+   "eval": "document.querySelector('.modal.show .btn-close')?.click()",
+   "wait": 0.2
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

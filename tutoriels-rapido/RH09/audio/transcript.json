@@ -1,0 +1,482 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.03,
+    "end": 0.27,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.27,
+    "end": 0.4,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.4,
+    "end": 0.97,
+    "id": "w2"
+  },
+  {
+    "text": "on",
+    "start": 1.17,
+    "end": 1.21,
+    "id": "w3"
+  },
+  {
+    "text": "centralise",
+    "start": 1.21,
+    "end": 1.86,
+    "id": "w4"
+  },
+  {
+    "text": "les",
+    "start": 1.86,
+    "end": 2.02,
+    "id": "w5"
+  },
+  {
+    "text": "documents",
+    "start": 2.02,
+    "end": 2.48,
+    "id": "w6"
+  },
+  {
+    "text": "et",
+    "start": 2.53,
+    "end": 2.63,
+    "id": "w7"
+  },
+  {
+    "text": "les",
+    "start": 2.63,
+    "end": 2.82,
+    "id": "w8"
+  },
+  {
+    "text": "liens",
+    "start": 2.83,
+    "end": 3.16,
+    "id": "w9"
+  },
+  {
+    "text": "utiles",
+    "start": 3.16,
+    "end": 3.56,
+    "id": "w10"
+  },
+  {
+    "text": "d'un",
+    "start": 3.56,
+    "end": 3.81,
+    "id": "w11"
+  },
+  {
+    "text": "projet.",
+    "start": 3.81,
+    "end": 4.36,
+    "id": "w12"
+  },
+  {
+    "text": "Depuis",
+    "start": 4.39,
+    "end": 4.74,
+    "id": "w13"
+  },
+  {
+    "text": "la",
+    "start": 4.75,
+    "end": 4.86,
+    "id": "w14"
+  },
+  {
+    "text": "liste",
+    "start": 4.86,
+    "end": 5.17,
+    "id": "w15"
+  },
+  {
+    "text": "des",
+    "start": 5.17,
+    "end": 5.31,
+    "id": "w16"
+  },
+  {
+    "text": "projets,",
+    "start": 5.53,
+    "end": 5.82,
+    "id": "w17"
+  },
+  {
+    "text": "ouvrez",
+    "start": 5.92,
+    "end": 6.3,
+    "id": "w18"
+  },
+  {
+    "text": "le",
+    "start": 6.3,
+    "end": 6.42,
+    "id": "w19"
+  },
+  {
+    "text": "détail",
+    "start": 6.42,
+    "end": 6.79,
+    "id": "w20"
+  },
+  {
+    "text": "d'un",
+    "start": 6.79,
+    "end": 7.03,
+    "id": "w21"
+  },
+  {
+    "text": "projet.",
+    "start": 7.03,
+    "end": 7.66,
+    "id": "w22"
+  },
+  {
+    "text": "La",
+    "start": 7.69,
+    "end": 7.78,
+    "id": "w23"
+  },
+  {
+    "text": "section",
+    "start": 7.78,
+    "end": 8.22,
+    "id": "w24"
+  },
+  {
+    "text": "«",
+    "start": 8.22,
+    "end": 8.28,
+    "id": "w25"
+  },
+  {
+    "text": "Documents",
+    "start": 8.28,
+    "end": 8.62,
+    "id": "w26"
+  },
+  {
+    "text": "»",
+    "start": 8.83,
+    "end": 8.89,
+    "id": "w27"
+  },
+  {
+    "text": "rassemble",
+    "start": 8.89,
+    "end": 9.45,
+    "id": "w28"
+  },
+  {
+    "text": "les",
+    "start": 9.45,
+    "end": 9.63,
+    "id": "w29"
+  },
+  {
+    "text": "fichiers",
+    "start": 9.63,
+    "end": 10.12,
+    "id": "w30"
+  },
+  {
+    "text": "du",
+    "start": 10.12,
+    "end": 10.24,
+    "id": "w31"
+  },
+  {
+    "text": "projet.",
+    "start": 10.24,
+    "end": 10.82,
+    "id": "w32"
+  },
+  {
+    "text": "Cliquez",
+    "start": 10.91,
+    "end": 11.35,
+    "id": "w33"
+  },
+  {
+    "text": "sur",
+    "start": 11.37,
+    "end": 11.58,
+    "id": "w34"
+  },
+  {
+    "text": "«",
+    "start": 11.58,
+    "end": 11.65,
+    "id": "w35"
+  },
+  {
+    "text": "Ajouter",
+    "start": 11.65,
+    "end": 12.15,
+    "id": "w36"
+  },
+  {
+    "text": "»,",
+    "start": 12.15,
+    "end": 12.34,
+    "id": "w37"
+  },
+  {
+    "text": "donner",
+    "start": 12.44,
+    "end": 12.82,
+    "id": "w38"
+  },
+  {
+    "text": "un",
+    "start": 12.82,
+    "end": 12.96,
+    "id": "w39"
+  },
+  {
+    "text": "nom",
+    "start": 12.96,
+    "end": 13.17,
+    "id": "w40"
+  },
+  {
+    "text": "et",
+    "start": 13.17,
+    "end": 13.31,
+    "id": "w41"
+  },
+  {
+    "text": "choisissez",
+    "start": 13.31,
+    "end": 14.01,
+    "id": "w42"
+  },
+  {
+    "text": "le",
+    "start": 14.01,
+    "end": 14.15,
+    "id": "w43"
+  },
+  {
+    "text": "fichier.",
+    "start": 14.15,
+    "end": 14.87,
+    "id": "w44"
+  },
+  {
+    "text": "La",
+    "start": 14.91,
+    "end": 15.01,
+    "id": "w45"
+  },
+  {
+    "text": "section",
+    "start": 15.01,
+    "end": 15.49,
+    "id": "w46"
+  },
+  {
+    "text": "«",
+    "start": 15.49,
+    "end": 15.55,
+    "id": "w47"
+  },
+  {
+    "text": "liens",
+    "start": 15.55,
+    "end": 15.83,
+    "id": "w48"
+  },
+  {
+    "text": "»",
+    "start": 15.83,
+    "end": 16.05,
+    "id": "w49"
+  },
+  {
+    "text": "garde",
+    "start": 16.05,
+    "end": 16.28,
+    "id": "w50"
+  },
+  {
+    "text": "les",
+    "start": 16.28,
+    "end": 16.48,
+    "id": "w51"
+  },
+  {
+    "text": "adresses",
+    "start": 16.48,
+    "end": 16.96,
+    "id": "w52"
+  },
+  {
+    "text": "utiles,",
+    "start": 17.02,
+    "end": 17.57,
+    "id": "w53"
+  },
+  {
+    "text": "comme",
+    "start": 17.58,
+    "end": 17.79,
+    "id": "w54"
+  },
+  {
+    "text": "une",
+    "start": 17.79,
+    "end": 17.9,
+    "id": "w55"
+  },
+  {
+    "text": "maquette",
+    "start": 17.92,
+    "end": 18.28,
+    "id": "w56"
+  },
+  {
+    "text": "ou",
+    "start": 18.28,
+    "end": 18.39,
+    "id": "w57"
+  },
+  {
+    "text": "un",
+    "start": 18.39,
+    "end": 18.5,
+    "id": "w58"
+  },
+  {
+    "text": "site",
+    "start": 18.5,
+    "end": 18.73,
+    "id": "w59"
+  },
+  {
+    "text": "de",
+    "start": 18.73,
+    "end": 18.85,
+    "id": "w60"
+  },
+  {
+    "text": "test,",
+    "start": 18.86,
+    "end": 19.48,
+    "id": "w61"
+  },
+  {
+    "text": "avec",
+    "start": 19.51,
+    "end": 19.73,
+    "id": "w62"
+  },
+  {
+    "text": "un",
+    "start": 19.73,
+    "end": 19.85,
+    "id": "w63"
+  },
+  {
+    "text": "titre",
+    "start": 19.85,
+    "end": 20.17,
+    "id": "w64"
+  },
+  {
+    "text": "et",
+    "start": 20.17,
+    "end": 20.29,
+    "id": "w65"
+  },
+  {
+    "text": "une",
+    "start": 20.29,
+    "end": 20.43,
+    "id": "w66"
+  },
+  {
+    "text": "description.",
+    "start": 20.65,
+    "end": 21.42,
+    "id": "w67"
+  },
+  {
+    "text": "Seuls",
+    "start": 21.42,
+    "end": 21.75,
+    "id": "w68"
+  },
+  {
+    "text": "les",
+    "start": 21.75,
+    "end": 21.94,
+    "id": "w69"
+  },
+  {
+    "text": "membres",
+    "start": 21.95,
+    "end": 22.42,
+    "id": "w70"
+  },
+  {
+    "text": "du",
+    "start": 22.42,
+    "end": 22.55,
+    "id": "w71"
+  },
+  {
+    "text": "projet",
+    "start": 22.55,
+    "end": 22.94,
+    "id": "w72"
+  },
+  {
+    "text": "y",
+    "start": 22.98,
+    "end": 23.02,
+    "id": "w73"
+  },
+  {
+    "text": "ont",
+    "start": 23.02,
+    "end": 23.22,
+    "id": "w74"
+  },
+  {
+    "text": "accès.",
+    "start": 23.22,
+    "end": 23.84,
+    "id": "w75"
+  },
+  {
+    "text": "Prochain",
+    "start": 23.87,
+    "end": 24.41,
+    "id": "w76"
+  },
+  {
+    "text": "épisode,",
+    "start": 24.41,
+    "end": 25.07,
+    "id": "w77"
+  },
+  {
+    "text": "les",
+    "start": 25.07,
+    "end": 25.29,
+    "id": "w78"
+  },
+  {
+    "text": "dailies!",
+    "start": 25.29,
+    "end": 25.92,
+    "id": "w79"
+  }
+]

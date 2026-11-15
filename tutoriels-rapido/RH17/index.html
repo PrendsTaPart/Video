@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#7E57C2; --b:#C084FC; --grad:linear-gradient(100deg,#7E57C2,#C084FC); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; background:#05060A; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(120px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.45; }
+  .h2 { width:700px; height:600px; left:-260px; bottom:-320px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  #frame { position:absolute; left:80px; top:56px; width:1760px; height:990px; border-radius:22px; overflow:hidden; background:#f3f4f7;
+           box-shadow:0 50px 120px -30px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.12),0 0 120px -30px var(--a); }
+  #cam { position:absolute; left:0; top:0; width:1760px; height:990px; transform-origin:0 0; }
+  #cam video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .hl { position:absolute; border-radius:18px; border:3px solid var(--a); box-shadow:0 0 0 9999px rgba(5,6,10,.28),0 0 40px -6px var(--a); opacity:0; }
+  .chap { position:absolute; left:108px; top:82px; display:flex; align-items:center; gap:14px; padding:12px 22px 12px 12px; border-radius:999px;
+          background:rgba(10,12,18,.82); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.14); font-size:26px; font-weight:600; opacity:0; z-index:5; }
+  .chap b { width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:19px; }
+  .sub { position:absolute; inset:auto 0 58px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; letter-spacing:-.01em; white-space:nowrap; box-shadow:0 10px 30px rgba(0,0,0,.4); }
+  .bar { position:absolute; left:80px; bottom:22px; width:1760px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:104px; top:84px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  /* intro / outro */
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .kick { font-size:28px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.7); }
+  .card h1 { text-wrap:balance; margin-top:40px; font-size:128px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1500px; }
+  .card h1 em, .card h2 em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; line-height:1; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="27.36" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+
+  <div id="frame">
+    <div id="cam">
+      <video id="cap" class="clip" src="captures/ecran.mp4" muted data-start="3.0" data-duration="24.36" data-track-index="1"></video>
+      <div class="hl" id="hl1" style="left:1117px;top:57px;width:348px;height:434px"></div>
+      <div class="hl" id="hl2" style="left:348px;top:101px;width:1302px;height:550px"></div>
+      <div class="hl" id="hl3" style="left:348px;top:97px;width:1302px;height:549px"></div>
+    </div>
+  </div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">RapidoRH</div>
+  <div class="chap" id="ch1"><b>1</b>La cloche</div>
+  <div class="chap" id="ch2"><b>2</b>Toutes les notifications</div>
+  <div class="chap" id="ch3"><b>3</b>Lire ou supprimer</div>
+  <div class="sub clip" id="s0" data-start="3.030" data-duration="0.960" data-track-index="7"><span>Dans ce tutoriel</span></div>
+  <div class="sub clip" id="s1" data-start="4.010" data-duration="1.920" data-track-index="7"><span>on retrouve toutes ses notifications</span></div>
+  <div class="sub clip" id="s2" data-start="5.950" data-duration="0.460" data-track-index="7"><span>La cloche</span></div>
+  <div class="sub clip" id="s3" data-start="6.430" data-duration="1.040" data-track-index="7"><span>en haut de l&#x27;écran</span></div>
+  <div class="sub clip" id="s4" data-start="7.490" data-duration="1.280" data-track-index="7"><span>signale les nouveautés</span></div>
+  <div class="sub clip" id="s5" data-start="8.790" data-duration="0.925" data-track-index="7"><span>tâche assignée</span></div>
+  <div class="sub clip" id="s6" data-start="9.760" data-duration="0.970" data-track-index="7"><span>congé demandé</span></div>
+  <div class="sub clip" id="s7" data-start="10.750" data-duration="1.420" data-track-index="7"><span>livrable à valider</span></div>
+  <div class="sub clip" id="s8" data-start="12.190" data-duration="2.460" data-track-index="7"><span>La page Notifications les rassemble toutes</span></div>
+  <div class="sub clip" id="s9" data-start="14.670" data-duration="1.140" data-track-index="7"><span>de la plus récente à la</span></div>
+  <div class="sub clip" id="s10" data-start="15.830" data-duration="0.820" data-track-index="7"><span>plus ancienne</span></div>
+  <div class="sub clip" id="s11" data-start="16.670" data-duration="1.970" data-track-index="7"><span>Marquez-les comme lues ou supprimez celles</span></div>
+  <div class="sub clip" id="s12" data-start="18.660" data-duration="1.270" data-track-index="7"><span>qui ne servent plus</span></div>
+  <div class="sub clip" id="s13" data-start="19.950" data-duration="1.280" data-track-index="7"><span>Dans le prochain tutoriel</span></div>
+  <div class="sub clip" id="s14" data-start="21.250" data-duration="1.330" data-track-index="7"><span>on gère son abonnement</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="19.86" data-track-index="10" data-volume="1"></audio>
+
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <div class="top"><span class="num">RH17</span><span class="kick">Tutoriel RapidoRH</span></div>
+      <h1>Les <em>notifications</em></h1>
+    </div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoRH</b></div>
+  </div>
+
+  <div class="clip card" id="outro" data-start="22.56" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <h2>Merci d'avoir <em>regardé</em></h2>
+      <p>Prochain épisode : votre abonnement</p>
+    </div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoRH</b></div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  // Intro
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .from('#intro .logo', { opacity: 0, duration: .6 }, .6)
+    .to('#intro', { opacity: 0, scale: 1.04, duration: .6, ease: 'power2.in' }, 3.0)
+    .from('#frame', { scale: .92, opacity: 0, duration: .9, ease: 'expo.out' }, 2.8);
+  // Progression
+  tl.to('#bar', { scaleX: 1, duration: 19.86, ease: 'none' }, 3.0);
+  tl.to('#cam', { scale: 1.45, x: -792.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 5.950)
+    .fromTo('#hl1', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 6.750)
+    .to('#hl1', { opacity: 0, duration: .35 }, 11.990)
+    .fromTo('#ch1', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 6.150)
+    .to('#ch1', { opacity: 0, x: -20, duration: .3 }, 11.940);
+  tl.to('#cam', { scale: 1.24, x: -359.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 12.190)
+    .fromTo('#hl2', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 12.990)
+    .to('#hl2', { opacity: 0, duration: .35 }, 16.470)
+    .fromTo('#ch2', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 12.390)
+    .to('#ch2', { opacity: 0, x: -20, duration: .3 }, 16.420);
+  tl.to('#cam', { scale: 1.24, x: -359.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 16.670)
+    .fromTo('#hl3', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 17.470)
+    .to('#hl3', { opacity: 0, duration: .35 }, 19.750)
+    .fromTo('#ch3', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 16.870)
+    .to('#ch3', { opacity: 0, x: -20, duration: .3 }, 19.700);
+  tl.to('#cam', { scale: 1, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 19.950);
+  // Outro
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 22.860)
+    .from('#outro p', { y: 30, opacity: 0, duration: .7, ease: 'expo.out' }, 23.110);
+  window.__timelines['main'] = tl;
+</script>
+</body>
+</html>

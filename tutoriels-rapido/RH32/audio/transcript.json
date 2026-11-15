@@ -1,0 +1,434 @@
+[
+  {
+    "text": "Dans",
+    "start": 0.03,
+    "end": 0.24,
+    "id": "w0"
+  },
+  {
+    "text": "ce",
+    "start": 0.25,
+    "end": 0.35,
+    "id": "w1"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 0.37,
+    "end": 0.93,
+    "id": "w2"
+  },
+  {
+    "text": "un",
+    "start": 0.93,
+    "end": 1.17,
+    "id": "w3"
+  },
+  {
+    "text": "collaborateur",
+    "start": 1.17,
+    "end": 1.98,
+    "id": "w4"
+  },
+  {
+    "text": "pose",
+    "start": 2.02,
+    "end": 2.28,
+    "id": "w5"
+  },
+  {
+    "text": "une",
+    "start": 2.29,
+    "end": 2.49,
+    "id": "w6"
+  },
+  {
+    "text": "demande",
+    "start": 2.49,
+    "end": 2.97,
+    "id": "w7"
+  },
+  {
+    "text": "de",
+    "start": 2.97,
+    "end": 3.1,
+    "id": "w8"
+  },
+  {
+    "text": "congé.",
+    "start": 3.1,
+    "end": 3.56,
+    "id": "w9"
+  },
+  {
+    "text": "Sur",
+    "start": 3.59,
+    "end": 3.8,
+    "id": "w10"
+  },
+  {
+    "text": "la",
+    "start": 3.81,
+    "end": 3.96,
+    "id": "w11"
+  },
+  {
+    "text": "page",
+    "start": 3.96,
+    "end": 4.29,
+    "id": "w12"
+  },
+  {
+    "text": "«",
+    "start": 4.29,
+    "end": 4.37,
+    "id": "w13"
+  },
+  {
+    "text": "Congé",
+    "start": 4.37,
+    "end": 4.77,
+    "id": "w14"
+  },
+  {
+    "text": "»,",
+    "start": 4.77,
+    "end": 5.06,
+    "id": "w15"
+  },
+  {
+    "text": "cliquez",
+    "start": 5.06,
+    "end": 5.54,
+    "id": "w16"
+  },
+  {
+    "text": "sur",
+    "start": 5.58,
+    "end": 5.76,
+    "id": "w17"
+  },
+  {
+    "text": "«",
+    "start": 5.76,
+    "end": 5.83,
+    "id": "w18"
+  },
+  {
+    "text": "Faire",
+    "start": 5.83,
+    "end": 6.18,
+    "id": "w19"
+  },
+  {
+    "text": "une",
+    "start": 6.18,
+    "end": 6.39,
+    "id": "w20"
+  },
+  {
+    "text": "demande",
+    "start": 6.39,
+    "end": 6.83,
+    "id": "w21"
+  },
+  {
+    "text": "de",
+    "start": 6.83,
+    "end": 7.23,
+    "id": "w22"
+  },
+  {
+    "text": "congé",
+    "start": 7.23,
+    "end": 7.37,
+    "id": "w23"
+  },
+  {
+    "text": "».",
+    "start": 7.37,
+    "end": 7.68,
+    "id": "w24"
+  },
+  {
+    "text": "Choisissez",
+    "start": 7.71,
+    "end": 8.34,
+    "id": "w25"
+  },
+  {
+    "text": "le",
+    "start": 8.34,
+    "end": 8.47,
+    "id": "w26"
+  },
+  {
+    "text": "type",
+    "start": 8.47,
+    "end": 8.61,
+    "id": "w27"
+  },
+  {
+    "text": "de",
+    "start": 8.85,
+    "end": 8.86,
+    "id": "w28"
+  },
+  {
+    "text": "congé,",
+    "start": 8.86,
+    "end": 9.36,
+    "id": "w29"
+  },
+  {
+    "text": "les",
+    "start": 9.36,
+    "end": 9.6,
+    "id": "w30"
+  },
+  {
+    "text": "dates",
+    "start": 9.6,
+    "end": 10,
+    "id": "w31"
+  },
+  {
+    "text": "de",
+    "start": 10,
+    "end": 10.14,
+    "id": "w32"
+  },
+  {
+    "text": "début",
+    "start": 10.16,
+    "end": 10.54,
+    "id": "w33"
+  },
+  {
+    "text": "et",
+    "start": 10.61,
+    "end": 10.72,
+    "id": "w34"
+  },
+  {
+    "text": "de",
+    "start": 10.72,
+    "end": 10.88,
+    "id": "w35"
+  },
+  {
+    "text": "fin,",
+    "start": 10.88,
+    "end": 11.16,
+    "id": "w36"
+  },
+  {
+    "text": "et",
+    "start": 11.16,
+    "end": 11.42,
+    "id": "w37"
+  },
+  {
+    "text": "indiquez",
+    "start": 11.42,
+    "end": 11.86,
+    "id": "w38"
+  },
+  {
+    "text": "la",
+    "start": 11.86,
+    "end": 12,
+    "id": "w39"
+  },
+  {
+    "text": "cause.",
+    "start": 12,
+    "end": 12.56,
+    "id": "w40"
+  },
+  {
+    "text": "Un",
+    "start": 12.63,
+    "end": 12.73,
+    "id": "w41"
+  },
+  {
+    "text": "justificatif",
+    "start": 12.73,
+    "end": 13.52,
+    "id": "w42"
+  },
+  {
+    "text": "peut",
+    "start": 13.77,
+    "end": 13.81,
+    "id": "w43"
+  },
+  {
+    "text": "être",
+    "start": 13.81,
+    "end": 14.08,
+    "id": "w44"
+  },
+  {
+    "text": "joint.",
+    "start": 14.08,
+    "end": 14.63,
+    "id": "w45"
+  },
+  {
+    "text": "La",
+    "start": 14.71,
+    "end": 14.81,
+    "id": "w46"
+  },
+  {
+    "text": "demande",
+    "start": 14.81,
+    "end": 15.29,
+    "id": "w47"
+  },
+  {
+    "text": "part",
+    "start": 15.29,
+    "end": 15.56,
+    "id": "w48"
+  },
+  {
+    "text": "en",
+    "start": 15.56,
+    "end": 15.61,
+    "id": "w49"
+  },
+  {
+    "text": "attente.",
+    "start": 15.85,
+    "end": 16.4,
+    "id": "w50"
+  },
+  {
+    "text": "Son",
+    "start": 16.43,
+    "end": 16.58,
+    "id": "w51"
+  },
+  {
+    "text": "statut",
+    "start": 16.58,
+    "end": 16.95,
+    "id": "w52"
+  },
+  {
+    "text": "change",
+    "start": 16.95,
+    "end": 17.32,
+    "id": "w53"
+  },
+  {
+    "text": "dès",
+    "start": 17.32,
+    "end": 17.33,
+    "id": "w54"
+  },
+  {
+    "text": "que",
+    "start": 17.57,
+    "end": 17.66,
+    "id": "w55"
+  },
+  {
+    "text": "votre",
+    "start": 17.72,
+    "end": 17.99,
+    "id": "w56"
+  },
+  {
+    "text": "responsable",
+    "start": 17.99,
+    "end": 18.67,
+    "id": "w57"
+  },
+  {
+    "text": "l'a",
+    "start": 18.67,
+    "end": 18.85,
+    "id": "w58"
+  },
+  {
+    "text": "traité.",
+    "start": 18.85,
+    "end": 19.48,
+    "id": "w59"
+  },
+  {
+    "text": "Dans",
+    "start": 19.51,
+    "end": 19.7,
+    "id": "w60"
+  },
+  {
+    "text": "le",
+    "start": 19.73,
+    "end": 19.78,
+    "id": "w61"
+  },
+  {
+    "text": "prochain",
+    "start": 19.85,
+    "end": 20.28,
+    "id": "w62"
+  },
+  {
+    "text": "tutoriel,",
+    "start": 20.28,
+    "end": 20.88,
+    "id": "w63"
+  },
+  {
+    "text": "on",
+    "start": 20.88,
+    "end": 20.97,
+    "id": "w64"
+  },
+  {
+    "text": "répond",
+    "start": 20.98,
+    "end": 21.22,
+    "id": "w65"
+  },
+  {
+    "text": "à",
+    "start": 21.3,
+    "end": 21.34,
+    "id": "w66"
+  },
+  {
+    "text": "ses",
+    "start": 21.34,
+    "end": 21.46,
+    "id": "w67"
+  },
+  {
+    "text": "collègues",
+    "start": 21.5,
+    "end": 21.94,
+    "id": "w68"
+  },
+  {
+    "text": "dans",
+    "start": 21.96,
+    "end": 22.16,
+    "id": "w69"
+  },
+  {
+    "text": "la",
+    "start": 22.16,
+    "end": 22.26,
+    "id": "w70"
+  },
+  {
+    "text": "messagerie.",
+    "start": 22.26,
+    "end": 23,
+    "id": "w71"
+  }
+]

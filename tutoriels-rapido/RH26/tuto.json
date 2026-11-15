@@ -1,0 +1,90 @@
+{
+ "id": "RH26",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Les paramètres IA de l'entreprise",
+ "em": "paramètres IA",
+ "tag": "1 min · Intermédiaire",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/parametres-ia",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : découvrir vos employés IA",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Avant d'activer vos employés IA, configurez l'IA de votre entreprise dans Paramètres IA."
+  },
+  {
+   "key": "cle",
+   "text": "RapidoRH utilise votre propre clé Anthropic. Collez-la ici : elle est chiffrée et ne sera plus jamais affichée."
+  },
+  {
+   "key": "modele",
+   "text": "Choisissez le modèle par défaut. Le tarif par million de tokens est indiqué pour chaque modèle."
+  },
+  {
+   "key": "tester",
+   "text": "Enregistrez, puis testez la connexion : le test ne consomme que quelques tokens."
+  },
+  {
+   "key": "outro",
+   "text": "Sans clé configurée, aucun employé IA ne peut être activé. Prochain épisode : découvrir vos employés IA."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "cle",
+   "label": "Votre clé Anthropic",
+   "fill": [
+    [
+     "#ai-key",
+     "sk-ant-exemple-fictif"
+    ]
+   ],
+   "zone": "#ai-key",
+   "zone_closest": ".card"
+  },
+  {
+   "at": "modele",
+   "label": "Le modèle",
+   "select": [
+    [
+     "#ai-model",
+     {
+      "index": 1
+     }
+    ]
+   ],
+   "zone": "#ai-model"
+  },
+  {
+   "at": "tester",
+   "label": "Enregistrer et tester",
+   "hover": "button:has-text(\"Enregistrer\")",
+   "wait": 0.8
+  },
+  {
+   "at": "tester",
+   "hover": "button:has-text(\"Tester la connexion\")",
+   "zone": "button:has-text(\"Tester la connexion\")"
+  },
+  {
+   "at": "outro",
+   "wait": 0.2
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

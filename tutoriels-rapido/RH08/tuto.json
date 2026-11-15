@@ -1,0 +1,88 @@
+{
+ "id": "RH08",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Le détail d'une tâche",
+ "em": "d'une tâche",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/projects",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : documents et liens du projet",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on ouvre une tâche pour la compléter."
+  },
+  {
+   "key": "ouvrir",
+   "text": "Cliquez sur une carte du Kanban pour ouvrir sa fiche."
+  },
+  {
+   "key": "champs",
+   "text": "Modifiez son titre, son statut, sa priorité, la personne assignée et ses dates."
+  },
+  {
+   "key": "fichiers",
+   "text": "Ajoutez une description et des fichiers joints : tout ce qu'il faut pour réaliser la tâche."
+  },
+  {
+   "key": "outro",
+   "text": "En bas de la fiche, vous pouvez aussi confier la tâche à un employé IA : on le verra dans un prochain tutoriel."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "goto_file": "boutique-taches.txt",
+   "wait": 0.3
+  },
+  {
+   "at": "ouvrir",
+   "label": "Ouvrir une tâche",
+   "click": ".kanban-item:has-text(\"Maquette de la page\")",
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "champs",
+   "label": "Statut, priorité, dates",
+   "select": [
+    [
+     ".modal.show select:has(option:text(\"Urgent\"))",
+     "Urgent"
+    ]
+   ],
+   "hover": ".modal.show select:has(option:text(\"En cours\"))",
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "fichiers",
+   "label": "Description et fichiers",
+   "fill": [
+    [
+     ".modal.show textarea[placeholder=\"Ecrire une description\"]",
+     "Proposer deux variantes de la page d'accueil, version mobile comprise."
+    ]
+   ],
+   "hover": ".modal.show label:has-text(\"Parcourir\")",
+   "zone": ".modal.show .modal-content"
+  },
+  {
+   "at": "outro",
+   "label": "Confier à un employé IA",
+   "hover": ".modal.show select[id^=ai-mode]",
+   "zone": ".modal.show select[id^=ai-mode]",
+   "zone_closest": ".border, .card, div.mt-4"
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

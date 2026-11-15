@@ -1,0 +1,37 @@
+{
+  "voiceStartInCapture": 4.771,
+  "paragraphs": {
+    "intro": 0.03,
+    "ouvrir": 2.93,
+    "champs": 6.13,
+    "fichiers": 11.53,
+    "outro": 16.03,
+    "end": 21.9
+  },
+  "zones": {
+    "ouvrir": [
+      666,
+      14,
+      588,
+      1066
+    ],
+    "champs": [
+      666,
+      14,
+      588,
+      1066
+    ],
+    "fichiers": [
+      666,
+      14,
+      588,
+      1066
+    ],
+    "outro": [
+      698,
+      922,
+      524,
+      158
+    ]
+  }
+}

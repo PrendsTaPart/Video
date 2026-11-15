@@ -1,0 +1,72 @@
+{
+ "id": "RH18",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Votre abonnement",
+ "em": "abonnement",
+ "tag": "1 min · Débutant",
+ "profil": "admin",
+ "login_as": "camille@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/mon-abonnement",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Prochain épisode : connecter RapidoRH à Claude",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, on consulte son abonnement RapidoRH."
+  },
+  {
+   "key": "offre",
+   "text": "La page Mon abonnement indique votre offre en cours, ici l'essai gratuit, et sa date de fin."
+  },
+  {
+   "key": "factures",
+   "text": "À droite, vos factures, téléchargeables à tout moment."
+  },
+  {
+   "key": "changer",
+   "text": "Le bouton Voir les offres compare les formules pour changer d'offre quand vous le souhaitez."
+  },
+  {
+   "key": "outro",
+   "text": "Dans le prochain tutoriel, on connecte RapidoRH à Claude."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "offre",
+   "label": "Offre en cours",
+   "zone": "Offre en cours",
+   "zone_closest": ".card"
+  },
+  {
+   "at": "factures",
+   "label": "Factures",
+   "zone": "Factures",
+   "zone_closest": ".card"
+  },
+  {
+   "at": "changer",
+   "label": "Changer d'offre",
+   "click": "a:has-text(\"Voir les offres\")",
+   "wait": 0.8
+  },
+  {
+   "at": "outro",
+   "wait": 0.2
+  }
+ ],
+ "thumb_shot": "fin.png"
+}
