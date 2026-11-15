@@ -20,7 +20,8 @@ fs.mkdirSync(OUT, { recursive: true });
 const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;height:28px;margin:-3px 0 0 -4px;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\'%3E%3Cpath d=\'M4 2l16 9-7 2-3 7z\' fill=\'%23111\' stroke=\'white\' stroke-width=\'1.6\'/%3E%3C/svg%3E") no-repeat}#rx-cursor.down{transform:scale(.85)}';
 
 (async () => {
-    const browser = await chromium.launch();
+    // Navigateur en français : les champs de date natifs suivent la langue du système (jj/mm/aaaa).
+    const browser = await chromium.launch({ args: ['--lang=fr-FR'], env: { ...process.env, LANG: 'fr_FR.UTF-8', LANGUAGE: 'fr', LC_ALL: 'fr_FR.UTF-8' } });
     let state;
     if (!cfg.public) {
         const login = await browser.newContext({ viewport: { width: 1920, height: 1080 } });

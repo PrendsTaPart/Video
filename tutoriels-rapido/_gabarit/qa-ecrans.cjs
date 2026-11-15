@@ -7,7 +7,7 @@ const fs = require('fs');
 const [, , BASE, EMAIL, PASS, ...PATHS] = process.argv;
 (async () => {
     fs.mkdirSync('/tmp/qa-ecrans', { recursive: true });
-    const b = await chromium.launch();
+    const b = await chromium.launch({ args: ['--lang=fr-FR'], env: { ...process.env, LANG: 'fr_FR.UTF-8', LANGUAGE: 'fr', LC_ALL: 'fr_FR.UTF-8' } });
     const login = await b.newContext({ viewport: { width: 1920, height: 1080 } });
     const lp = await login.newPage();
     await lp.goto(`${BASE}/login`, { waitUntil: 'networkidle' });

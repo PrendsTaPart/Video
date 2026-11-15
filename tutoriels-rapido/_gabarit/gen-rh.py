@@ -71,9 +71,9 @@ EPISODES = {
              fill=[[f'{M} input[placeholder="Entrer un nom"]', 'Service client']], zone=MODAL),
         dict(at='ajouter', click=f'{M} button:has-text("Ajouter")', wait=1.0),
         dict(at='ajouter', wait=0.6, zone='table'),
-        dict(at='rattacher', label='Rattacher un collaborateur', goto='/users', click='tr:has-text("Hugo Martin") button.me-2'),
+        dict(at='rattacher', label='Rattacher un collaborateur', goto='/users', zone='tr:has-text("Hugo Martin")', click='tr:has-text("Hugo Martin") button.me-2'),
         dict(at='rattacher', click='.dropdown-menu.show a:has-text("Modifier")', wait=0.6),
-        dict(at='rattacher', select=[[f'{M} select:has(option:text("Service client"))', 'Service client']], zone=MODAL),
+        dict(at='rattacher', select=[[f'{M} select:has(option:text("Service client"))', 'Service client']]),
         dict(at='outro', eval=FERMER_MODALE, wait=0.2),
     ]),
     'RH05': dict(start_path='/roles', scenes=[
@@ -159,7 +159,7 @@ EPISODES = {
         dict(at='decision', label='Approuver ou refuser', click='tr:has-text("En attente") button:has-text("Actions")', zone='tr:has-text("En attente")'),
         dict(at='decision', click='.dropdown-menu.show a[data-action=approve]', wait=1.2),
         dict(at='filtres', label='Filtrer', click='button:has-text("Filtrer")', zone=[380, 110, 1420, 400]),
-        dict(at='outro', label='Jours restants', goto='/users', hover='tr:has-text("Lucas Petit")', zone='tr:has-text("Lucas Petit")'),
+        dict(at='outro', label='Jours restants', goto='/users', wait=1.2, hover='tr:has-text("Lucas Petit")', zone='tr:has-text("Lucas Petit")'),
     ]),
     'RH17': dict(start_path='/dashboard', scenes=[
         dict(at='intro', wait=0.3),
@@ -180,8 +180,10 @@ EPISODES = {
         dict(at='intro', wait=0.3),
         dict(at='page', label='La page Tokens', zone=[380, 110, 1420, 360]),
         dict(at='generer', label='Générer un token', click='button:has-text("Générer un token")', fill=[['#tokenName', 'Claude - assistant']], zone=MODAL),
-        dict(at='copier', label='Copier le token', click=f'{M} button:has-text("Générer")', wait=0.8,
-             eval="document.querySelectorAll('.modal.show input, .modal.show code, .modal.show pre, .modal.show textarea').forEach(e=>{e.style.filter='blur(7px)'})", zone=MODAL),
+        # Zéro secret à l'écran : le champ du jeton est flouté par une règle CSS posée AVANT la génération.
+        dict(at='copier', label='Copier le token',
+             eval="document.head.insertAdjacentHTML('beforeend','<style>.modal input[readonly], .modal input[disabled], .modal code, .modal pre, .modal textarea, .modal .token, .modal [class*=token] input { filter: blur(8px) !important; }</style>')",
+             click=f'{M} button:has-text("Générer")', wait=0.8, zone=MODAL),
         dict(at='outro', label='Révoquer', eval=FERMER_MODALE, wait=0.6, zone='table'),
     ]),
     'RH26': dict(start_path='/parametres-ia', scenes=[
@@ -223,15 +225,15 @@ EPISODES = {
     'RH31': dict(start_path='/agents', scenes=[
         dict(at='intro', goto_file='agent.txt', wait=0.3),
         dict(at='journal', label='Le journal', click='#tab-journal', zone=[380, 290, 1420, 520]),
-        dict(at='daily', label='Son daily', goto='/dailies', zone='table'),
-        dict(at='validation', label='Centre de validation', goto='/validations', zone=[380, 110, 1420, 600]),
+        dict(at='daily', label='Son daily', goto='/dailies', wait=1.2, zone='table'),
+        dict(at='validation', label='Centre de validation', goto='/validations', wait=0.8, zone=[380, 110, 1420, 600]),
         dict(at='outro', label='Suspendre', goto_file='agent.txt', hover='button:has-text("Suspendre")', zone=[1200, 180, 600, 80]),
     ]),
     'RH15': dict(login=HUGO, start_path='/dashboard', scenes=[
         dict(at='intro', wait=0.3),
         dict(at='menu', label='Son menu', zone=[0, 0, 262, 1080]),
         dict(at='projets', label='Ses projets', goto='/projects', wait=1.2, zone=[380, 110, 1420, 560]),
-        dict(at='taches', label='Ses tâches', goto_file='boutique-taches.txt', wait=0.3),
+        dict(at='taches', label='Ses tâches', goto_file='boutique-taches.txt', wait=1.5),
         dict(at='taches', drag=['.kanban-item:has-text("Maquette de la page")', '.kanban-board:has-text("Terminé") .kanban-drag'], zone='.kanban-container'),
         dict(at='outro', wait=0.2),
     ]),
