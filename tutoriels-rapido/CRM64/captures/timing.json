@@ -1,0 +1,40 @@
+{
+  "voiceStartInCapture": 2.882,
+  "paragraphs": {
+    "intro": 0.11,
+    "bareme": 3.95,
+    "modifier": 11.95,
+    "seuil": 16.22,
+    "options": 20.35,
+    "chauds": 29.44,
+    "historique": 33.51,
+    "outro": 36.51,
+    "end": 40.37
+  },
+  "zones": {
+    "bareme": [
+      356,
+      198,
+      1468,
+      206
+    ],
+    "seuil": [
+      404,
+      951,
+      546,
+      66
+    ],
+    "chauds": [
+      970,
+      246,
+      830,
+      258
+    ],
+    "historique": [
+      970,
+      501,
+      830,
+      579
+    ]
+  }
+}

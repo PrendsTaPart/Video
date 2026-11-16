@@ -1,0 +1,46 @@
+{
+  "voiceStartInCapture": 3.018,
+  "paragraphs": {
+    "intro": 0.03,
+    "adresse": 6.47,
+    "assistants": 12.47,
+    "etapes": 20.22,
+    "securite": 28.47,
+    "thematiques": 36.47,
+    "essayer": 44.23,
+    "outro": 49.59,
+    "end": 52.56
+  },
+  "zones": {
+    "adresse": [
+      380,
+      260,
+      1420,
+      205
+    ],
+    "etapes": [
+      380,
+      461,
+      358,
+      448
+    ],
+    "securite": [
+      380,
+      260,
+      1420,
+      205
+    ],
+    "thematiques": [
+      380,
+      388,
+      830,
+      660
+    ],
+    "essayer": [
+      1206,
+      905,
+      594,
+      175
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "voiceStartInCapture": 2.843,
+  "paragraphs": {
+    "intro": 0.02,
+    "nommer": 5.7,
+    "etapes": 9.3,
+    "ajouter": 17.14,
+    "regles": 23.14,
+    "enregistrer": 30.38,
+    "inscrire": 31.5,
+    "suivi": 37.98,
+    "outro": 45.2,
+    "end": 47.96
+  },
+  "zones": {
+    "etapes": [
+      356,
+      257,
+      1468,
+      823
+    ],
+    "regles": [
+      356,
+      172,
+      1468,
+      107
+    ],
+    "inscrire": [
+      380,
+      688,
+      476,
+      275
+    ],
+    "suivi": [
+      852,
+      282,
+      948,
+      228
+    ]
+  }
+}

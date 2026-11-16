@@ -1,0 +1,734 @@
+[
+  {
+    "text": "Vos",
+    "start": 0.03,
+    "end": 0.15,
+    "id": "w0"
+  },
+  {
+    "text": "e-mails",
+    "start": 0.15,
+    "end": 0.5,
+    "id": "w1"
+  },
+  {
+    "text": "arrivent",
+    "start": 0.5,
+    "end": 0.9,
+    "id": "w2"
+  },
+  {
+    "text": "dans",
+    "start": 0.9,
+    "end": 1.1,
+    "id": "w3"
+  },
+  {
+    "text": "l'espame?",
+    "start": 1.1,
+    "end": 1.72,
+    "id": "w4"
+  },
+  {
+    "text": "Un",
+    "start": 1.75,
+    "end": 1.83,
+    "id": "w5"
+  },
+  {
+    "text": "sous-domaine",
+    "start": 1.83,
+    "end": 2.5,
+    "id": "w6"
+  },
+  {
+    "text": "d'envoi",
+    "start": 2.5,
+    "end": 2.84,
+    "id": "w7"
+  },
+  {
+    "text": "authentifié",
+    "start": 2.9,
+    "end": 3.56,
+    "id": "w8"
+  },
+  {
+    "text": "prouve",
+    "start": 3.56,
+    "end": 3.81,
+    "id": "w9"
+  },
+  {
+    "text": "au",
+    "start": 3.85,
+    "end": 3.92,
+    "id": "w10"
+  },
+  {
+    "text": "messagerie",
+    "start": 3.92,
+    "end": 4.36,
+    "id": "w11"
+  },
+  {
+    "text": "que",
+    "start": 4.36,
+    "end": 4.53,
+    "id": "w12"
+  },
+  {
+    "text": "c'est",
+    "start": 4.53,
+    "end": 4.8,
+    "id": "w13"
+  },
+  {
+    "text": "bien",
+    "start": 4.8,
+    "end": 5.02,
+    "id": "w14"
+  },
+  {
+    "text": "vous.",
+    "start": 5.02,
+    "end": 5.44,
+    "id": "w15"
+  },
+  {
+    "text": "Voyons",
+    "start": 5.47,
+    "end": 5.8,
+    "id": "w16"
+  },
+  {
+    "text": "comment",
+    "start": 5.8,
+    "end": 6.23,
+    "id": "w17"
+  },
+  {
+    "text": "le",
+    "start": 6.23,
+    "end": 6.35,
+    "id": "w18"
+  },
+  {
+    "text": "configurer.",
+    "start": 6.35,
+    "end": 7.16,
+    "id": "w19"
+  },
+  {
+    "text": "Dans",
+    "start": 7.19,
+    "end": 7.4,
+    "id": "w20"
+  },
+  {
+    "text": "l'onglet",
+    "start": 7.4,
+    "end": 7.88,
+    "id": "w21"
+  },
+  {
+    "text": "Immerse",
+    "start": 7.88,
+    "end": 8.28,
+    "id": "w22"
+  },
+  {
+    "text": "d'envoi,",
+    "start": 8.34,
+    "end": 8.86,
+    "id": "w23"
+  },
+  {
+    "text": "saisissez",
+    "start": 8.98,
+    "end": 9.38,
+    "id": "w24"
+  },
+  {
+    "text": "un",
+    "start": 9.38,
+    "end": 9.49,
+    "id": "w25"
+  },
+  {
+    "text": "sous-domaine",
+    "start": 9.49,
+    "end": 10.16,
+    "id": "w26"
+  },
+  {
+    "text": "réservé",
+    "start": 10.2,
+    "end": 10.56,
+    "id": "w27"
+  },
+  {
+    "text": "aux",
+    "start": 10.56,
+    "end": 10.73,
+    "id": "w28"
+  },
+  {
+    "text": "envois.",
+    "start": 10.73,
+    "end": 11.16,
+    "id": "w29"
+  },
+  {
+    "text": "Par",
+    "start": 11.19,
+    "end": 11.4,
+    "id": "w30"
+  },
+  {
+    "text": "exemple,",
+    "start": 11.4,
+    "end": 12.1,
+    "id": "w31"
+  },
+  {
+    "text": "notify",
+    "start": 12.1,
+    "end": 12.57,
+    "id": "w32"
+  },
+  {
+    "text": "suivi",
+    "start": 12.57,
+    "end": 12.96,
+    "id": "w33"
+  },
+  {
+    "text": "de",
+    "start": 12.98,
+    "end": 13.12,
+    "id": "w34"
+  },
+  {
+    "text": "votre",
+    "start": 13.12,
+    "end": 13.52,
+    "id": "w35"
+  },
+  {
+    "text": "domaine,",
+    "start": 13.52,
+    "end": 14.26,
+    "id": "w36"
+  },
+  {
+    "text": "puis",
+    "start": 14.26,
+    "end": 14.54,
+    "id": "w37"
+  },
+  {
+    "text": "cliquez",
+    "start": 14.54,
+    "end": 15.02,
+    "id": "w38"
+  },
+  {
+    "text": "sur",
+    "start": 15.02,
+    "end": 15.24,
+    "id": "w39"
+  },
+  {
+    "text": "Configurer.",
+    "start": 15.24,
+    "end": 16.15,
+    "id": "w40"
+  },
+  {
+    "text": "Rapido",
+    "start": 16.19,
+    "end": 16.54,
+    "id": "w41"
+  },
+  {
+    "text": "CRM",
+    "start": 16.54,
+    "end": 16.72,
+    "id": "w42"
+  },
+  {
+    "text": "génère",
+    "start": 16.73,
+    "end": 17.11,
+    "id": "w43"
+  },
+  {
+    "text": "pour",
+    "start": 17.11,
+    "end": 17.37,
+    "id": "w44"
+  },
+  {
+    "text": "vous",
+    "start": 17.37,
+    "end": 17.6,
+    "id": "w45"
+  },
+  {
+    "text": "3",
+    "start": 17.6,
+    "end": 17.95,
+    "id": "w46"
+  },
+  {
+    "text": "enregistrements.",
+    "start": 17.95,
+    "end": 19.08,
+    "id": "w47"
+  },
+  {
+    "text": "SPF,",
+    "start": 19.11,
+    "end": 19.49,
+    "id": "w48"
+  },
+  {
+    "text": "la",
+    "start": 19.49,
+    "end": 19.65,
+    "id": "w49"
+  },
+  {
+    "text": "liste",
+    "start": 19.66,
+    "end": 20.08,
+    "id": "w50"
+  },
+  {
+    "text": "des",
+    "start": 20.08,
+    "end": 20.33,
+    "id": "w51"
+  },
+  {
+    "text": "serveurs",
+    "start": 20.33,
+    "end": 21,
+    "id": "w52"
+  },
+  {
+    "text": "autorisés.",
+    "start": 21,
+    "end": 21.8,
+    "id": "w53"
+  },
+  {
+    "text": "DKIM,",
+    "start": 21.83,
+    "end": 22.31,
+    "id": "w54"
+  },
+  {
+    "text": "une",
+    "start": 22.31,
+    "end": 22.57,
+    "id": "w55"
+  },
+  {
+    "text": "signature",
+    "start": 22.57,
+    "end": 23.24,
+    "id": "w56"
+  },
+  {
+    "text": "unique",
+    "start": 23.62,
+    "end": 23.87,
+    "id": "w57"
+  },
+  {
+    "text": "créée",
+    "start": 23.87,
+    "end": 24.3,
+    "id": "w58"
+  },
+  {
+    "text": "pour",
+    "start": 24.3,
+    "end": 24.64,
+    "id": "w59"
+  },
+  {
+    "text": "votre",
+    "start": 24.64,
+    "end": 25.05,
+    "id": "w60"
+  },
+  {
+    "text": "société.",
+    "start": 25.09,
+    "end": 25.72,
+    "id": "w61"
+  },
+  {
+    "text": "Et",
+    "start": 25.75,
+    "end": 25.85,
+    "id": "w62"
+  },
+  {
+    "text": "démarque,",
+    "start": 25.85,
+    "end": 26.51,
+    "id": "w63"
+  },
+  {
+    "text": "la",
+    "start": 26.51,
+    "end": 26.64,
+    "id": "w64"
+  },
+  {
+    "text": "consigne",
+    "start": 26.64,
+    "end": 27.16,
+    "id": "w65"
+  },
+  {
+    "text": "donnée",
+    "start": 27.16,
+    "end": 27.55,
+    "id": "w66"
+  },
+  {
+    "text": "au",
+    "start": 27.55,
+    "end": 27.68,
+    "id": "w67"
+  },
+  {
+    "text": "messagerie.",
+    "start": 27.68,
+    "end": 28.56,
+    "id": "w68"
+  },
+  {
+    "text": "Copiez-les",
+    "start": 28.63,
+    "end": 29.15,
+    "id": "w69"
+  },
+  {
+    "text": "un",
+    "start": 29.15,
+    "end": 29.26,
+    "id": "w70"
+  },
+  {
+    "text": "par",
+    "start": 29.26,
+    "end": 29.42,
+    "id": "w71"
+  },
+  {
+    "text": "un",
+    "start": 29.43,
+    "end": 29.54,
+    "id": "w72"
+  },
+  {
+    "text": "chez",
+    "start": 29.54,
+    "end": 29.72,
+    "id": "w73"
+  },
+  {
+    "text": "votre",
+    "start": 29.78,
+    "end": 30.04,
+    "id": "w74"
+  },
+  {
+    "text": "hébergeur,",
+    "start": 30.04,
+    "end": 30.69,
+    "id": "w75"
+  },
+  {
+    "text": "puis",
+    "start": 30.73,
+    "end": 30.99,
+    "id": "w76"
+  },
+  {
+    "text": "revenez",
+    "start": 30.99,
+    "end": 31.44,
+    "id": "w77"
+  },
+  {
+    "text": "cliquer",
+    "start": 31.5,
+    "end": 31.93,
+    "id": "w78"
+  },
+  {
+    "text": "sur",
+    "start": 31.93,
+    "end": 32.04,
+    "id": "w79"
+  },
+  {
+    "text": "Vérifier.",
+    "start": 32.15,
+    "end": 32.92,
+    "id": "w80"
+  },
+  {
+    "text": "Chaque",
+    "start": 32.95,
+    "end": 33.24,
+    "id": "w81"
+  },
+  {
+    "text": "enregistrement",
+    "start": 33.24,
+    "end": 34.01,
+    "id": "w82"
+  },
+  {
+    "text": "passe",
+    "start": 34.01,
+    "end": 34.28,
+    "id": "w83"
+  },
+  {
+    "text": "au",
+    "start": 34.28,
+    "end": 34.36,
+    "id": "w84"
+  },
+  {
+    "text": "verre",
+    "start": 34.55,
+    "end": 34.66,
+    "id": "w85"
+  },
+  {
+    "text": "dès",
+    "start": 34.74,
+    "end": 34.82,
+    "id": "w86"
+  },
+  {
+    "text": "qu'il",
+    "start": 34.82,
+    "end": 35.09,
+    "id": "w87"
+  },
+  {
+    "text": "est",
+    "start": 35.09,
+    "end": 35.25,
+    "id": "w88"
+  },
+  {
+    "text": "visible.",
+    "start": 35.25,
+    "end": 35.84,
+    "id": "w89"
+  },
+  {
+    "text": "Une",
+    "start": 35.87,
+    "end": 36.02,
+    "id": "w90"
+  },
+  {
+    "text": "fois",
+    "start": 36.02,
+    "end": 36.27,
+    "id": "w91"
+  },
+  {
+    "text": "vérifié,",
+    "start": 36.27,
+    "end": 36.84,
+    "id": "w92"
+  },
+  {
+    "text": "chaque",
+    "start": 36.84,
+    "end": 37.22,
+    "id": "w93"
+  },
+  {
+    "text": "e-mail",
+    "start": 37.22,
+    "end": 37.59,
+    "id": "w94"
+  },
+  {
+    "text": "envoyé",
+    "start": 37.66,
+    "end": 37.93,
+    "id": "w95"
+  },
+  {
+    "text": "depuis",
+    "start": 37.97,
+    "end": 38.35,
+    "id": "w96"
+  },
+  {
+    "text": "Rapido",
+    "start": 38.35,
+    "end": 38.68,
+    "id": "w97"
+  },
+  {
+    "text": "CRM",
+    "start": 38.74,
+    "end": 38.96,
+    "id": "w98"
+  },
+  {
+    "text": "est",
+    "start": 38.96,
+    "end": 39.14,
+    "id": "w99"
+  },
+  {
+    "text": "signé",
+    "start": 39.14,
+    "end": 39.43,
+    "id": "w100"
+  },
+  {
+    "text": "automatiquement.",
+    "start": 39.44,
+    "end": 40.56,
+    "id": "w101"
+  },
+  {
+    "text": "Vos",
+    "start": 40.59,
+    "end": 40.74,
+    "id": "w102"
+  },
+  {
+    "text": "campagnes,",
+    "start": 40.74,
+    "end": 41.38,
+    "id": "w103"
+  },
+  {
+    "text": "vos",
+    "start": 41.4,
+    "end": 41.58,
+    "id": "w104"
+  },
+  {
+    "text": "relances",
+    "start": 41.58,
+    "end": 42,
+    "id": "w105"
+  },
+  {
+    "text": "et",
+    "start": 42,
+    "end": 42.19,
+    "id": "w106"
+  },
+  {
+    "text": "vos",
+    "start": 42.19,
+    "end": 42.38,
+    "id": "w107"
+  },
+  {
+    "text": "deux",
+    "start": 42.38,
+    "end": 42.6,
+    "id": "w108"
+  },
+  {
+    "text": "vies",
+    "start": 42.61,
+    "end": 42.84,
+    "id": "w109"
+  },
+  {
+    "text": "inspirent",
+    "start": 42.84,
+    "end": 43.38,
+    "id": "w110"
+  },
+  {
+    "text": "confiance.",
+    "start": 43.38,
+    "end": 44.15,
+    "id": "w111"
+  },
+  {
+    "text": "Vos",
+    "start": 44.19,
+    "end": 44.35,
+    "id": "w112"
+  },
+  {
+    "text": "e-mails",
+    "start": 44.35,
+    "end": 44.79,
+    "id": "w113"
+  },
+  {
+    "text": "sont",
+    "start": 44.79,
+    "end": 45.06,
+    "id": "w114"
+  },
+  {
+    "text": "authentifiés.",
+    "start": 45.06,
+    "end": 46.12,
+    "id": "w115"
+  },
+  {
+    "text": "Retrouvez",
+    "start": 46.15,
+    "end": 46.59,
+    "id": "w116"
+  },
+  {
+    "text": "tous",
+    "start": 46.59,
+    "end": 46.8,
+    "id": "w117"
+  },
+  {
+    "text": "nos",
+    "start": 46.8,
+    "end": 46.95,
+    "id": "w118"
+  },
+  {
+    "text": "tutoriels",
+    "start": 46.95,
+    "end": 47.43,
+    "id": "w119"
+  },
+  {
+    "text": "dans",
+    "start": 47.43,
+    "end": 47.56,
+    "id": "w120"
+  },
+  {
+    "text": "l'académie.",
+    "start": 47.69,
+    "end": 48.36,
+    "id": "w121"
+  }
+]

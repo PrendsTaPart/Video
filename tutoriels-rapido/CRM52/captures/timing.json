@@ -1,0 +1,32 @@
+{
+  "voiceStartInCapture": 3.147,
+  "paragraphs": {
+    "intro": 0.03,
+    "saisir": 7.19,
+    "trois": 16.54,
+    "copier": 28.63,
+    "signe": 35.87,
+    "outro": 44.19,
+    "end": 48.36
+  },
+  "zones": {
+    "saisir": [
+      356,
+      274,
+      1468,
+      798
+    ],
+    "trois": [
+      404,
+      680,
+      900,
+      266
+    ],
+    "signe": [
+      356,
+      336,
+      1468,
+      736
+    ]
+  }
+}

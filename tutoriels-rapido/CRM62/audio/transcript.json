@@ -1,0 +1,926 @@
+[
+  {
+    "text": "Le",
+    "start": 0.03,
+    "end": 0.14,
+    "id": "w0"
+  },
+  {
+    "text": "même",
+    "start": 0.14,
+    "end": 0.41,
+    "id": "w1"
+  },
+  {
+    "text": "client",
+    "start": 0.46,
+    "end": 0.82,
+    "id": "w2"
+  },
+  {
+    "text": "saisit",
+    "start": 0.83,
+    "end": 1.26,
+    "id": "w3"
+  },
+  {
+    "text": "deux",
+    "start": 1.26,
+    "end": 1.54,
+    "id": "w4"
+  },
+  {
+    "text": "fois,",
+    "start": 1.54,
+    "end": 1.88,
+    "id": "w5"
+  },
+  {
+    "text": "c'est",
+    "start": 1.93,
+    "end": 2.2,
+    "id": "w6"
+  },
+  {
+    "text": "un",
+    "start": 2.2,
+    "end": 2.33,
+    "id": "w7"
+  },
+  {
+    "text": "historique",
+    "start": 2.33,
+    "end": 2.93,
+    "id": "w8"
+  },
+  {
+    "text": "coupé",
+    "start": 3,
+    "end": 3.28,
+    "id": "w9"
+  },
+  {
+    "text": "en",
+    "start": 3.31,
+    "end": 3.41,
+    "id": "w10"
+  },
+  {
+    "text": "deux.",
+    "start": 3.45,
+    "end": 3.82,
+    "id": "w11"
+  },
+  {
+    "text": "Rapido",
+    "start": 3.85,
+    "end": 4.23,
+    "id": "w12"
+  },
+  {
+    "text": "CRM",
+    "start": 4.29,
+    "end": 4.48,
+    "id": "w13"
+  },
+  {
+    "text": "repère",
+    "start": 4.48,
+    "end": 4.92,
+    "id": "w14"
+  },
+  {
+    "text": "les",
+    "start": 4.92,
+    "end": 5.14,
+    "id": "w15"
+  },
+  {
+    "text": "doublons",
+    "start": 5.14,
+    "end": 5.55,
+    "id": "w16"
+  },
+  {
+    "text": "pour",
+    "start": 5.77,
+    "end": 6.03,
+    "id": "w17"
+  },
+  {
+    "text": "vous.",
+    "start": 6.03,
+    "end": 6.38,
+    "id": "w18"
+  },
+  {
+    "text": "Dans",
+    "start": 6.41,
+    "end": 6.63,
+    "id": "w19"
+  },
+  {
+    "text": "Doublon,",
+    "start": 6.63,
+    "end": 7.2,
+    "id": "w20"
+  },
+  {
+    "text": "les",
+    "start": 7.2,
+    "end": 7.37,
+    "id": "w21"
+  },
+  {
+    "text": "fiches",
+    "start": 7.37,
+    "end": 7.7,
+    "id": "w22"
+  },
+  {
+    "text": "semblables",
+    "start": 7.7,
+    "end": 8.11,
+    "id": "w23"
+  },
+  {
+    "text": "sont",
+    "start": 8.32,
+    "end": 8.43,
+    "id": "w24"
+  },
+  {
+    "text": "regroupées.",
+    "start": 8.5,
+    "end": 9.1,
+    "id": "w25"
+  },
+  {
+    "text": "Même",
+    "start": 9.13,
+    "end": 9.36,
+    "id": "w26"
+  },
+  {
+    "text": "sirètes,",
+    "start": 9.36,
+    "end": 9.94,
+    "id": "w27"
+  },
+  {
+    "text": "même",
+    "start": 9.94,
+    "end": 10.21,
+    "id": "w28"
+  },
+  {
+    "text": "e-mail,",
+    "start": 10.21,
+    "end": 10.78,
+    "id": "w29"
+  },
+  {
+    "text": "même",
+    "start": 10.78,
+    "end": 11.1,
+    "id": "w30"
+  },
+  {
+    "text": "téléphone",
+    "start": 11.1,
+    "end": 11.78,
+    "id": "w31"
+  },
+  {
+    "text": "ou",
+    "start": 11.92,
+    "end": 12.1,
+    "id": "w32"
+  },
+  {
+    "text": "un",
+    "start": 12.1,
+    "end": 12.24,
+    "id": "w33"
+  },
+  {
+    "text": "nom",
+    "start": 12.24,
+    "end": 12.45,
+    "id": "w34"
+  },
+  {
+    "text": "identique",
+    "start": 12.45,
+    "end": 13.07,
+    "id": "w35"
+  },
+  {
+    "text": "sans",
+    "start": 13.12,
+    "end": 13.3,
+    "id": "w36"
+  },
+  {
+    "text": "la",
+    "start": 13.32,
+    "end": 13.44,
+    "id": "w37"
+  },
+  {
+    "text": "forme",
+    "start": 13.44,
+    "end": 13.74,
+    "id": "w38"
+  },
+  {
+    "text": "juridique.",
+    "start": 13.74,
+    "end": 14.46,
+    "id": "w39"
+  },
+  {
+    "text": "Si",
+    "start": 14.49,
+    "end": 14.57,
+    "id": "w40"
+  },
+  {
+    "text": "ce",
+    "start": 14.57,
+    "end": 14.68,
+    "id": "w41"
+  },
+  {
+    "text": "sont",
+    "start": 14.68,
+    "end": 14.87,
+    "id": "w42"
+  },
+  {
+    "text": "bien",
+    "start": 14.93,
+    "end": 15.14,
+    "id": "w43"
+  },
+  {
+    "text": "deux",
+    "start": 15.14,
+    "end": 15.37,
+    "id": "w44"
+  },
+  {
+    "text": "clients",
+    "start": 15.37,
+    "end": 15.77,
+    "id": "w45"
+  },
+  {
+    "text": "différents,",
+    "start": 15.77,
+    "end": 16.48,
+    "id": "w46"
+  },
+  {
+    "text": "cliquez",
+    "start": 16.48,
+    "end": 16.9,
+    "id": "w47"
+  },
+  {
+    "text": "sur",
+    "start": 16.9,
+    "end": 17.07,
+    "id": "w48"
+  },
+  {
+    "text": "«",
+    "start": 17.07,
+    "end": 17.14,
+    "id": "w49"
+  },
+  {
+    "text": "Ce",
+    "start": 17.14,
+    "end": 17.17,
+    "id": "w50"
+  },
+  {
+    "text": "ne",
+    "start": 17.28,
+    "end": 17.38,
+    "id": "w51"
+  },
+  {
+    "text": "sont",
+    "start": 17.38,
+    "end": 17.62,
+    "id": "w52"
+  },
+  {
+    "text": "pas",
+    "start": 17.62,
+    "end": 17.8,
+    "id": "w53"
+  },
+  {
+    "text": "des",
+    "start": 17.8,
+    "end": 17.88,
+    "id": "w54"
+  },
+  {
+    "text": "doublons",
+    "start": 18.16,
+    "end": 18.43,
+    "id": "w55"
+  },
+  {
+    "text": "».",
+    "start": 18.48,
+    "end": 18.71,
+    "id": "w56"
+  },
+  {
+    "text": "Le",
+    "start": 18.77,
+    "end": 18.86,
+    "id": "w57"
+  },
+  {
+    "text": "groupe",
+    "start": 18.86,
+    "end": 19.15,
+    "id": "w58"
+  },
+  {
+    "text": "ne",
+    "start": 19.21,
+    "end": 19.33,
+    "id": "w59"
+  },
+  {
+    "text": "reviendra",
+    "start": 19.33,
+    "end": 19.85,
+    "id": "w60"
+  },
+  {
+    "text": "plus.",
+    "start": 19.85,
+    "end": 20.3,
+    "id": "w61"
+  },
+  {
+    "text": "Sinon,",
+    "start": 20.33,
+    "end": 20.78,
+    "id": "w62"
+  },
+  {
+    "text": "cliquez",
+    "start": 20.84,
+    "end": 21.31,
+    "id": "w63"
+  },
+  {
+    "text": "sur",
+    "start": 21.31,
+    "end": 21.43,
+    "id": "w64"
+  },
+  {
+    "text": "«",
+    "start": 21.54,
+    "end": 21.6,
+    "id": "w65"
+  },
+  {
+    "text": "Comparer",
+    "start": 21.6,
+    "end": 22.04,
+    "id": "w66"
+  },
+  {
+    "text": "et",
+    "start": 22.24,
+    "end": 22.32,
+    "id": "w67"
+  },
+  {
+    "text": "fusionner",
+    "start": 22.32,
+    "end": 22.98,
+    "id": "w68"
+  },
+  {
+    "text": "».",
+    "start": 22.98,
+    "end": 23.34,
+    "id": "w69"
+  },
+  {
+    "text": "Choisissez",
+    "start": 23.37,
+    "end": 23.9,
+    "id": "w70"
+  },
+  {
+    "text": "la",
+    "start": 23.9,
+    "end": 24.01,
+    "id": "w71"
+  },
+  {
+    "text": "fiche",
+    "start": 24.01,
+    "end": 24.28,
+    "id": "w72"
+  },
+  {
+    "text": "à",
+    "start": 24.28,
+    "end": 24.33,
+    "id": "w73"
+  },
+  {
+    "text": "garder,",
+    "start": 24.33,
+    "end": 24.77,
+    "id": "w74"
+  },
+  {
+    "text": "puis",
+    "start": 24.83,
+    "end": 25.07,
+    "id": "w75"
+  },
+  {
+    "text": "«",
+    "start": 25.07,
+    "end": 25.08,
+    "id": "w76"
+  },
+  {
+    "text": "Chant",
+    "start": 25.27,
+    "end": 25.45,
+    "id": "w77"
+  },
+  {
+    "text": "par",
+    "start": 25.46,
+    "end": 25.65,
+    "id": "w78"
+  },
+  {
+    "text": "chant",
+    "start": 25.65,
+    "end": 25.95,
+    "id": "w79"
+  },
+  {
+    "text": "»",
+    "start": 26.01,
+    "end": 26.03,
+    "id": "w80"
+  },
+  {
+    "text": "la",
+    "start": 26.03,
+    "end": 26.05,
+    "id": "w81"
+  },
+  {
+    "text": "valeur",
+    "start": 26.16,
+    "end": 26.55,
+    "id": "w82"
+  },
+  {
+    "text": "à",
+    "start": 26.55,
+    "end": 26.61,
+    "id": "w83"
+  },
+  {
+    "text": "conserver.",
+    "start": 26.61,
+    "end": 27.46,
+    "id": "w84"
+  },
+  {
+    "text": "Les",
+    "start": 27.49,
+    "end": 27.62,
+    "id": "w85"
+  },
+  {
+    "text": "champs",
+    "start": 27.62,
+    "end": 27.94,
+    "id": "w86"
+  },
+  {
+    "text": "vides",
+    "start": 27.94,
+    "end": 28.21,
+    "id": "w87"
+  },
+  {
+    "text": "sont",
+    "start": 28.21,
+    "end": 28.43,
+    "id": "w88"
+  },
+  {
+    "text": "complétés",
+    "start": 28.43,
+    "end": 28.89,
+    "id": "w89"
+  },
+  {
+    "text": "avec",
+    "start": 28.95,
+    "end": 29.14,
+    "id": "w90"
+  },
+  {
+    "text": "ceux",
+    "start": 29.14,
+    "end": 29.19,
+    "id": "w91"
+  },
+  {
+    "text": "de",
+    "start": 29.39,
+    "end": 29.47,
+    "id": "w92"
+  },
+  {
+    "text": "l'autre",
+    "start": 29.47,
+    "end": 29.79,
+    "id": "w93"
+  },
+  {
+    "text": "fiche.",
+    "start": 29.87,
+    "end": 30.32,
+    "id": "w94"
+  },
+  {
+    "text": "Contact,",
+    "start": 30.37,
+    "end": 31.08,
+    "id": "w95"
+  },
+  {
+    "text": "devis,",
+    "start": 31.08,
+    "end": 31.65,
+    "id": "w96"
+  },
+  {
+    "text": "facture,",
+    "start": 31.65,
+    "end": 32.38,
+    "id": "w97"
+  },
+  {
+    "text": "e-mail,",
+    "start": 32.38,
+    "end": 33.02,
+    "id": "w98"
+  },
+  {
+    "text": "tâche",
+    "start": 33.02,
+    "end": 33.43,
+    "id": "w99"
+  },
+  {
+    "text": "et",
+    "start": 33.43,
+    "end": 33.58,
+    "id": "w100"
+  },
+  {
+    "text": "pipeline",
+    "start": 33.59,
+    "end": 34.31,
+    "id": "w101"
+  },
+  {
+    "text": "sont",
+    "start": 34.36,
+    "end": 34.58,
+    "id": "w102"
+  },
+  {
+    "text": "rattachés",
+    "start": 34.58,
+    "end": 35.12,
+    "id": "w103"
+  },
+  {
+    "text": "à",
+    "start": 35.12,
+    "end": 35.17,
+    "id": "w104"
+  },
+  {
+    "text": "la",
+    "start": 35.18,
+    "end": 35.28,
+    "id": "w105"
+  },
+  {
+    "text": "fiche",
+    "start": 35.36,
+    "end": 35.6,
+    "id": "w106"
+  },
+  {
+    "text": "gardée.",
+    "start": 35.6,
+    "end": 36.17,
+    "id": "w107"
+  },
+  {
+    "text": "L'autre",
+    "start": 36.21,
+    "end": 36.56,
+    "id": "w108"
+  },
+  {
+    "text": "passe",
+    "start": 36.56,
+    "end": 36.84,
+    "id": "w109"
+  },
+  {
+    "text": "à",
+    "start": 36.84,
+    "end": 36.89,
+    "id": "w110"
+  },
+  {
+    "text": "la",
+    "start": 36.89,
+    "end": 37,
+    "id": "w111"
+  },
+  {
+    "text": "corbeille.",
+    "start": 37,
+    "end": 37.7,
+    "id": "w112"
+  },
+  {
+    "text": "Cliquez",
+    "start": 37.73,
+    "end": 38.16,
+    "id": "w113"
+  },
+  {
+    "text": "sur",
+    "start": 38.17,
+    "end": 38.38,
+    "id": "w114"
+  },
+  {
+    "text": "«",
+    "start": 38.38,
+    "end": 38.45,
+    "id": "w115"
+  },
+  {
+    "text": "Fusionner",
+    "start": 38.45,
+    "end": 39.06,
+    "id": "w116"
+  },
+  {
+    "text": "».",
+    "start": 39.06,
+    "end": 39.38,
+    "id": "w117"
+  },
+  {
+    "text": "La",
+    "start": 39.38,
+    "end": 39.43,
+    "id": "w118"
+  },
+  {
+    "text": "fusion",
+    "start": 39.64,
+    "end": 39.81,
+    "id": "w119"
+  },
+  {
+    "text": "apparaît",
+    "start": 39.82,
+    "end": 40.25,
+    "id": "w120"
+  },
+  {
+    "text": "dans",
+    "start": 40.25,
+    "end": 40.38,
+    "id": "w121"
+  },
+  {
+    "text": "l'historique.",
+    "start": 40.52,
+    "end": 41.16,
+    "id": "w122"
+  },
+  {
+    "text": "L'onglet",
+    "start": 41.37,
+    "end": 41.75,
+    "id": "w123"
+  },
+  {
+    "text": "«",
+    "start": 41.8,
+    "end": 41.82,
+    "id": "w124"
+  },
+  {
+    "text": "Contact",
+    "start": 41.88,
+    "end": 42.22,
+    "id": "w125"
+  },
+  {
+    "text": "»",
+    "start": 42.24,
+    "end": 42.28,
+    "id": "w126"
+  },
+  {
+    "text": "fonctionne",
+    "start": 42.28,
+    "end": 42.86,
+    "id": "w127"
+  },
+  {
+    "text": "de",
+    "start": 42.86,
+    "end": 42.97,
+    "id": "w128"
+  },
+  {
+    "text": "la",
+    "start": 42.97,
+    "end": 43.07,
+    "id": "w129"
+  },
+  {
+    "text": "même",
+    "start": 43.07,
+    "end": 43.31,
+    "id": "w130"
+  },
+  {
+    "text": "manière",
+    "start": 43.31,
+    "end": 43.78,
+    "id": "w131"
+  },
+  {
+    "text": "avec",
+    "start": 43.78,
+    "end": 44.02,
+    "id": "w132"
+  },
+  {
+    "text": "l'e-mail,",
+    "start": 44.02,
+    "end": 44.61,
+    "id": "w133"
+  },
+  {
+    "text": "le",
+    "start": 44.65,
+    "end": 44.75,
+    "id": "w134"
+  },
+  {
+    "text": "téléphone",
+    "start": 45.17,
+    "end": 45.42,
+    "id": "w135"
+  },
+  {
+    "text": "ou",
+    "start": 45.45,
+    "end": 45.5,
+    "id": "w136"
+  },
+  {
+    "text": "le",
+    "start": 45.5,
+    "end": 45.64,
+    "id": "w137"
+  },
+  {
+    "text": "prénom",
+    "start": 45.64,
+    "end": 46.03,
+    "id": "w138"
+  },
+  {
+    "text": "et",
+    "start": 46.1,
+    "end": 46.2,
+    "id": "w139"
+  },
+  {
+    "text": "le",
+    "start": 46.2,
+    "end": 46.28,
+    "id": "w140"
+  },
+  {
+    "text": "nom.",
+    "start": 46.36,
+    "end": 46.76,
+    "id": "w141"
+  },
+  {
+    "text": "Une",
+    "start": 46.81,
+    "end": 46.94,
+    "id": "w142"
+  },
+  {
+    "text": "seule",
+    "start": 46.94,
+    "end": 47.19,
+    "id": "w143"
+  },
+  {
+    "text": "fiche",
+    "start": 47.24,
+    "end": 47.48,
+    "id": "w144"
+  },
+  {
+    "text": "par",
+    "start": 47.48,
+    "end": 47.63,
+    "id": "w145"
+  },
+  {
+    "text": "client",
+    "start": 47.63,
+    "end": 47.91,
+    "id": "w146"
+  },
+  {
+    "text": "est",
+    "start": 47.97,
+    "end": 48.13,
+    "id": "w147"
+  },
+  {
+    "text": "tout",
+    "start": 48.13,
+    "end": 48.35,
+    "id": "w148"
+  },
+  {
+    "text": "son",
+    "start": 48.35,
+    "end": 48.51,
+    "id": "w149"
+  },
+  {
+    "text": "historique",
+    "start": 48.51,
+    "end": 49.06,
+    "id": "w150"
+  },
+  {
+    "text": "au",
+    "start": 49.06,
+    "end": 49.11,
+    "id": "w151"
+  },
+  {
+    "text": "même",
+    "start": 49.19,
+    "end": 49.39,
+    "id": "w152"
+  },
+  {
+    "text": "endroit.",
+    "start": 49.39,
+    "end": 50.02,
+    "id": "w153"
+  }
+]

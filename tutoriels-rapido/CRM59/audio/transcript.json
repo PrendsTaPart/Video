@@ -1,0 +1,824 @@
+[
+  {
+    "text": "Votre",
+    "start": 0.03,
+    "end": 0.39,
+    "id": "w0"
+  },
+  {
+    "text": "assistant",
+    "start": 0.4,
+    "end": 1.15,
+    "id": "w1"
+  },
+  {
+    "text": "IA",
+    "start": 1.15,
+    "end": 1.23,
+    "id": "w2"
+  },
+  {
+    "text": "peut",
+    "start": 1.37,
+    "end": 1.64,
+    "id": "w3"
+  },
+  {
+    "text": "lire",
+    "start": 1.64,
+    "end": 1.97,
+    "id": "w4"
+  },
+  {
+    "text": "et",
+    "start": 1.97,
+    "end": 2.13,
+    "id": "w5"
+  },
+  {
+    "text": "agir",
+    "start": 2.13,
+    "end": 2.52,
+    "id": "w6"
+  },
+  {
+    "text": "dans",
+    "start": 2.52,
+    "end": 2.86,
+    "id": "w7"
+  },
+  {
+    "text": "Rapido",
+    "start": 2.86,
+    "end": 3.35,
+    "id": "w8"
+  },
+  {
+    "text": "CRM.",
+    "start": 3.35,
+    "end": 3.87,
+    "id": "w9"
+  },
+  {
+    "text": "Voici",
+    "start": 3.91,
+    "end": 4.22,
+    "id": "w10"
+  },
+  {
+    "text": "comment",
+    "start": 4.22,
+    "end": 4.6,
+    "id": "w11"
+  },
+  {
+    "text": "le",
+    "start": 4.71,
+    "end": 4.83,
+    "id": "w12"
+  },
+  {
+    "text": "connecter",
+    "start": 4.85,
+    "end": 5.45,
+    "id": "w13"
+  },
+  {
+    "text": "en",
+    "start": 5.45,
+    "end": 5.59,
+    "id": "w14"
+  },
+  {
+    "text": "deux",
+    "start": 5.59,
+    "end": 5.87,
+    "id": "w15"
+  },
+  {
+    "text": "minutes.",
+    "start": 5.87,
+    "end": 6.41,
+    "id": "w16"
+  },
+  {
+    "text": "Dans",
+    "start": 6.47,
+    "end": 6.75,
+    "id": "w17"
+  },
+  {
+    "text": "Prompt,",
+    "start": 6.75,
+    "end": 7.35,
+    "id": "w18"
+  },
+  {
+    "text": "on",
+    "start": 7.42,
+    "end": 7.51,
+    "id": "w19"
+  },
+  {
+    "text": "glait",
+    "start": 7.51,
+    "end": 7.89,
+    "id": "w20"
+  },
+  {
+    "text": "«",
+    "start": 7.89,
+    "end": 7.96,
+    "id": "w21"
+  },
+  {
+    "text": "connectez",
+    "start": 7.96,
+    "end": 8.65,
+    "id": "w22"
+  },
+  {
+    "text": "mon",
+    "start": 8.65,
+    "end": 8.88,
+    "id": "w23"
+  },
+  {
+    "text": "IA",
+    "start": 8.88,
+    "end": 9.01,
+    "id": "w24"
+  },
+  {
+    "text": "»",
+    "start": 9.01,
+    "end": 9.16,
+    "id": "w25"
+  },
+  {
+    "text": "copier",
+    "start": 9.19,
+    "end": 9.66,
+    "id": "w26"
+  },
+  {
+    "text": "l'adresse",
+    "start": 9.66,
+    "end": 10.39,
+    "id": "w27"
+  },
+  {
+    "text": "du",
+    "start": 10.53,
+    "end": 10.59,
+    "id": "w28"
+  },
+  {
+    "text": "serveur",
+    "start": 10.59,
+    "end": 11.17,
+    "id": "w29"
+  },
+  {
+    "text": "MCP",
+    "start": 11.26,
+    "end": 11.44,
+    "id": "w30"
+  },
+  {
+    "text": "de",
+    "start": 11.44,
+    "end": 11.61,
+    "id": "w31"
+  },
+  {
+    "text": "Rapido",
+    "start": 11.61,
+    "end": 12.11,
+    "id": "w32"
+  },
+  {
+    "text": "CRM.",
+    "start": 12.11,
+    "end": 12.44,
+    "id": "w33"
+  },
+  {
+    "text": "Elle",
+    "start": 12.47,
+    "end": 12.72,
+    "id": "w34"
+  },
+  {
+    "text": "fonctionne",
+    "start": 12.72,
+    "end": 13.42,
+    "id": "w35"
+  },
+  {
+    "text": "avec",
+    "start": 13.45,
+    "end": 13.64,
+    "id": "w36"
+  },
+  {
+    "text": "Cloud,",
+    "start": 13.81,
+    "end": 14.2,
+    "id": "w37"
+  },
+  {
+    "text": "Chat",
+    "start": 14.2,
+    "end": 14.45,
+    "id": "w38"
+  },
+  {
+    "text": "GPT,",
+    "start": 14.54,
+    "end": 14.86,
+    "id": "w39"
+  },
+  {
+    "text": "le",
+    "start": 14.86,
+    "end": 14.97,
+    "id": "w40"
+  },
+  {
+    "text": "Chat",
+    "start": 15,
+    "end": 15.27,
+    "id": "w41"
+  },
+  {
+    "text": "de",
+    "start": 15.27,
+    "end": 15.42,
+    "id": "w42"
+  },
+  {
+    "text": "Mistral",
+    "start": 15.42,
+    "end": 15.9,
+    "id": "w43"
+  },
+  {
+    "text": "et",
+    "start": 15.91,
+    "end": 15.98,
+    "id": "w44"
+  },
+  {
+    "text": "Grok.",
+    "start": 16.21,
+    "end": 16.6,
+    "id": "w45"
+  },
+  {
+    "text": "Chaque",
+    "start": 16.63,
+    "end": 16.94,
+    "id": "w46"
+  },
+  {
+    "text": "bouton",
+    "start": 16.94,
+    "end": 17.28,
+    "id": "w47"
+  },
+  {
+    "text": "ouvre",
+    "start": 17.28,
+    "end": 17.55,
+    "id": "w48"
+  },
+  {
+    "text": "directement",
+    "start": 17.57,
+    "end": 18.24,
+    "id": "w49"
+  },
+  {
+    "text": "la",
+    "start": 18.24,
+    "end": 18.37,
+    "id": "w50"
+  },
+  {
+    "text": "page",
+    "start": 18.37,
+    "end": 18.61,
+    "id": "w51"
+  },
+  {
+    "text": "des",
+    "start": 18.7,
+    "end": 18.79,
+    "id": "w52"
+  },
+  {
+    "text": "connecteurs",
+    "start": 18.79,
+    "end": 19.35,
+    "id": "w53"
+  },
+  {
+    "text": "de",
+    "start": 19.35,
+    "end": 19.45,
+    "id": "w54"
+  },
+  {
+    "text": "l'assistant.",
+    "start": 19.45,
+    "end": 20.14,
+    "id": "w55"
+  },
+  {
+    "text": "Suivez",
+    "start": 20.22,
+    "end": 20.56,
+    "id": "w56"
+  },
+  {
+    "text": "les",
+    "start": 20.56,
+    "end": 20.7,
+    "id": "w57"
+  },
+  {
+    "text": "quatre",
+    "start": 20.79,
+    "end": 21.1,
+    "id": "w58"
+  },
+  {
+    "text": "étapes",
+    "start": 21.1,
+    "end": 21.4,
+    "id": "w59"
+  },
+  {
+    "text": "affichées.",
+    "start": 21.57,
+    "end": 22.04,
+    "id": "w60"
+  },
+  {
+    "text": "Ajoutez",
+    "start": 22.07,
+    "end": 22.49,
+    "id": "w61"
+  },
+  {
+    "text": "un",
+    "start": 22.49,
+    "end": 22.55,
+    "id": "w62"
+  },
+  {
+    "text": "connecteur",
+    "start": 22.63,
+    "end": 23.24,
+    "id": "w63"
+  },
+  {
+    "text": "personnalisé,",
+    "start": 23.41,
+    "end": 24.08,
+    "id": "w64"
+  },
+  {
+    "text": "nommez",
+    "start": 24.1,
+    "end": 24.58,
+    "id": "w65"
+  },
+  {
+    "text": "le",
+    "start": 24.67,
+    "end": 24.8,
+    "id": "w66"
+  },
+  {
+    "text": "«",
+    "start": 24.91,
+    "end": 24.93,
+    "id": "w67"
+  },
+  {
+    "text": "Rapido",
+    "start": 24.93,
+    "end": 25.51,
+    "id": "w68"
+  },
+  {
+    "text": "CRM",
+    "start": 25.51,
+    "end": 25.79,
+    "id": "w69"
+  },
+  {
+    "text": "»,",
+    "start": 25.79,
+    "end": 26.09,
+    "id": "w70"
+  },
+  {
+    "text": "collez",
+    "start": 26.19,
+    "end": 26.48,
+    "id": "w71"
+  },
+  {
+    "text": "l'adresse,",
+    "start": 26.49,
+    "end": 27.11,
+    "id": "w72"
+  },
+  {
+    "text": "puis",
+    "start": 27.13,
+    "end": 27.36,
+    "id": "w73"
+  },
+  {
+    "text": "connectez-vous.",
+    "start": 27.53,
+    "end": 28.44,
+    "id": "w74"
+  },
+  {
+    "text": "L'accès",
+    "start": 28.47,
+    "end": 28.94,
+    "id": "w75"
+  },
+  {
+    "text": "est",
+    "start": 28.94,
+    "end": 29.16,
+    "id": "w76"
+  },
+  {
+    "text": "protégé.",
+    "start": 29.27,
+    "end": 29.96,
+    "id": "w77"
+  },
+  {
+    "text": "L'assistant",
+    "start": 29.99,
+    "end": 30.41,
+    "id": "w78"
+  },
+  {
+    "text": "vous",
+    "start": 30.41,
+    "end": 30.58,
+    "id": "w79"
+  },
+  {
+    "text": "demande",
+    "start": 30.58,
+    "end": 30.87,
+    "id": "w80"
+  },
+  {
+    "text": "de",
+    "start": 30.87,
+    "end": 30.97,
+    "id": "w81"
+  },
+  {
+    "text": "vous",
+    "start": 30.97,
+    "end": 31.13,
+    "id": "w82"
+  },
+  {
+    "text": "connecter",
+    "start": 31.13,
+    "end": 31.56,
+    "id": "w83"
+  },
+  {
+    "text": "à",
+    "start": 31.56,
+    "end": 31.66,
+    "id": "w84"
+  },
+  {
+    "text": "Rapido",
+    "start": 31.66,
+    "end": 32.3,
+    "id": "w85"
+  },
+  {
+    "text": "CRM",
+    "start": 32.3,
+    "end": 32.64,
+    "id": "w86"
+  },
+  {
+    "text": "et",
+    "start": 32.64,
+    "end": 32.73,
+    "id": "w87"
+  },
+  {
+    "text": "d'autoriser",
+    "start": 32.79,
+    "end": 33.44,
+    "id": "w88"
+  },
+  {
+    "text": "l'accès.",
+    "start": 33.44,
+    "end": 34.12,
+    "id": "w89"
+  },
+  {
+    "text": "Il",
+    "start": 34.15,
+    "end": 34.25,
+    "id": "w90"
+  },
+  {
+    "text": "agit",
+    "start": 34.25,
+    "end": 34.51,
+    "id": "w91"
+  },
+  {
+    "text": "avec",
+    "start": 34.51,
+    "end": 34.77,
+    "id": "w92"
+  },
+  {
+    "text": "votre",
+    "start": 34.77,
+    "end": 35.09,
+    "id": "w93"
+  },
+  {
+    "text": "compte",
+    "start": 35.1,
+    "end": 35.32,
+    "id": "w94"
+  },
+  {
+    "text": "et",
+    "start": 35.49,
+    "end": 35.62,
+    "id": "w95"
+  },
+  {
+    "text": "vos",
+    "start": 35.62,
+    "end": 35.81,
+    "id": "w96"
+  },
+  {
+    "text": "droits.",
+    "start": 35.81,
+    "end": 36.44,
+    "id": "w97"
+  },
+  {
+    "text": "Pour",
+    "start": 36.47,
+    "end": 36.67,
+    "id": "w98"
+  },
+  {
+    "text": "un",
+    "start": 36.68,
+    "end": 36.8,
+    "id": "w99"
+  },
+  {
+    "text": "assistant",
+    "start": 36.8,
+    "end": 37.34,
+    "id": "w100"
+  },
+  {
+    "text": "spécialisé,",
+    "start": 37.34,
+    "end": 38.08,
+    "id": "w101"
+  },
+  {
+    "text": "utilisez",
+    "start": 38.08,
+    "end": 38.58,
+    "id": "w102"
+  },
+  {
+    "text": "plutôt",
+    "start": 38.58,
+    "end": 38.96,
+    "id": "w103"
+  },
+  {
+    "text": "un",
+    "start": 38.96,
+    "end": 39.08,
+    "id": "w104"
+  },
+  {
+    "text": "serveur",
+    "start": 39.08,
+    "end": 39.52,
+    "id": "w105"
+  },
+  {
+    "text": "thématique.",
+    "start": 39.52,
+    "end": 40.2,
+    "id": "w106"
+  },
+  {
+    "text": "Client,",
+    "start": 40.23,
+    "end": 40.8,
+    "id": "w107"
+  },
+  {
+    "text": "pipeline,",
+    "start": 40.8,
+    "end": 41.4,
+    "id": "w108"
+  },
+  {
+    "text": "marketing,",
+    "start": 41.57,
+    "end": 42.37,
+    "id": "w109"
+  },
+  {
+    "text": "facturation",
+    "start": 42.37,
+    "end": 43.19,
+    "id": "w110"
+  },
+  {
+    "text": "ou",
+    "start": 43.19,
+    "end": 43.34,
+    "id": "w111"
+  },
+  {
+    "text": "fidélité.",
+    "start": 43.34,
+    "end": 44.2,
+    "id": "w112"
+  },
+  {
+    "text": "Testez",
+    "start": 44.23,
+    "end": 44.52,
+    "id": "w113"
+  },
+  {
+    "text": "ensuite",
+    "start": 44.52,
+    "end": 44.92,
+    "id": "w114"
+  },
+  {
+    "text": "avec",
+    "start": 44.92,
+    "end": 45.14,
+    "id": "w115"
+  },
+  {
+    "text": "une",
+    "start": 45.18,
+    "end": 45.31,
+    "id": "w116"
+  },
+  {
+    "text": "première",
+    "start": 45.31,
+    "end": 45.76,
+    "id": "w117"
+  },
+  {
+    "text": "demande.",
+    "start": 45.76,
+    "end": 46.2,
+    "id": "w118"
+  },
+  {
+    "text": "Par",
+    "start": 46.23,
+    "end": 46.34,
+    "id": "w119"
+  },
+  {
+    "text": "exemple,",
+    "start": 46.38,
+    "end": 46.92,
+    "id": "w120"
+  },
+  {
+    "text": "vos",
+    "start": 46.92,
+    "end": 47.11,
+    "id": "w121"
+  },
+  {
+    "text": "indicateurs",
+    "start": 47.11,
+    "end": 47.81,
+    "id": "w122"
+  },
+  {
+    "text": "du",
+    "start": 47.81,
+    "end": 47.93,
+    "id": "w123"
+  },
+  {
+    "text": "mois",
+    "start": 47.93,
+    "end": 48.2,
+    "id": "w124"
+  },
+  {
+    "text": "et",
+    "start": 48.2,
+    "end": 48.21,
+    "id": "w125"
+  },
+  {
+    "text": "les",
+    "start": 48.3,
+    "end": 48.45,
+    "id": "w126"
+  },
+  {
+    "text": "prospects",
+    "start": 48.45,
+    "end": 48.92,
+    "id": "w127"
+  },
+  {
+    "text": "à",
+    "start": 48.92,
+    "end": 48.97,
+    "id": "w128"
+  },
+  {
+    "text": "rappeler.",
+    "start": 48.97,
+    "end": 49.55,
+    "id": "w129"
+  },
+  {
+    "text": "Votre",
+    "start": 49.59,
+    "end": 49.88,
+    "id": "w130"
+  },
+  {
+    "text": "CRM",
+    "start": 49.88,
+    "end": 50.07,
+    "id": "w131"
+  },
+  {
+    "text": "répond",
+    "start": 50.07,
+    "end": 50.47,
+    "id": "w132"
+  },
+  {
+    "text": "désormais",
+    "start": 50.47,
+    "end": 51.07,
+    "id": "w133"
+  },
+  {
+    "text": "dans",
+    "start": 51.07,
+    "end": 51.34,
+    "id": "w134"
+  },
+  {
+    "text": "la",
+    "start": 51.34,
+    "end": 51.41,
+    "id": "w135"
+  },
+  {
+    "text": "conversation.",
+    "start": 51.49,
+    "end": 52.56,
+    "id": "w136"
+  }
+]

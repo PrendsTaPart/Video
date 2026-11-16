@@ -1,0 +1,45 @@
+{
+  "voiceStartInCapture": 3.146,
+  "paragraphs": {
+    "intro": 0.03,
+    "creer": 6.79,
+    "options": 14.13,
+    "public": 21.93,
+    "resultat": 29.93,
+    "suite": 38.53,
+    "outro": 49.53,
+    "end": 53.8
+  },
+  "zones": {
+    "creer": [
+      356,
+      595,
+      1468,
+      477
+    ],
+    "options": [
+      380,
+      288,
+      830,
+      450
+    ],
+    "public": [
+      584,
+      446,
+      752,
+      149
+    ],
+    "resultat": [
+      584,
+      14,
+      752,
+      404
+    ],
+    "suite": [
+      372,
+      168,
+      1436,
+      124
+    ]
+  }
+}

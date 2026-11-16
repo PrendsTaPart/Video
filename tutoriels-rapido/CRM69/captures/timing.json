@@ -1,0 +1,39 @@
+{
+  "voiceStartInCapture": 2.92,
+  "paragraphs": {
+    "intro": 0.42,
+    "connecter": 9.02,
+    "regle": 22.24,
+    "evenements": 30.1,
+    "assigner": 43.86,
+    "journal": 54.4,
+    "outro": 60.02,
+    "end": 65.8
+  },
+  "zones": {
+    "connecter": [
+      380,
+      206,
+      712,
+      324
+    ],
+    "regle": [
+      356,
+      459,
+      1468,
+      360
+    ],
+    "evenements": [
+      380,
+      648,
+      1420,
+      147
+    ],
+    "journal": [
+      356,
+      798,
+      1468,
+      274
+    ]
+  }
+}

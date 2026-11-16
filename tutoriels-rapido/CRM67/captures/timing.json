@@ -1,0 +1,39 @@
+{
+  "voiceStartInCapture": 2.834,
+  "paragraphs": {
+    "intro": 0.05,
+    "programme": 8.07,
+    "bonus": 17.89,
+    "design": 26.51,
+    "caisse": 34.44,
+    "recompense": 41.97,
+    "outro": 50.35,
+    "end": 54.68
+  },
+  "zones": {
+    "programme": [
+      356,
+      378,
+      1468,
+      368
+    ],
+    "bonus": [
+      356,
+      96,
+      1468,
+      304
+    ],
+    "design": [
+      1319,
+      76,
+      368,
+      708
+    ],
+    "recompense": [
+      356,
+      766,
+      1468,
+      311
+    ]
+  }
+}

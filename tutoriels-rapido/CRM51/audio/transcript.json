@@ -1,0 +1,800 @@
+[
+  {
+    "text": "Votre",
+    "start": 0.03,
+    "end": 0.27,
+    "id": "w0"
+  },
+  {
+    "text": "site",
+    "start": 0.27,
+    "end": 0.49,
+    "id": "w1"
+  },
+  {
+    "text": "peut",
+    "start": 0.49,
+    "end": 0.71,
+    "id": "w2"
+  },
+  {
+    "text": "s'afficher",
+    "start": 0.71,
+    "end": 1.24,
+    "id": "w3"
+  },
+  {
+    "text": "sur",
+    "start": 1.24,
+    "end": 1.4,
+    "id": "w4"
+  },
+  {
+    "text": "votre",
+    "start": 1.4,
+    "end": 1.67,
+    "id": "w5"
+  },
+  {
+    "text": "propre",
+    "start": 1.67,
+    "end": 2,
+    "id": "w6"
+  },
+  {
+    "text": "nom",
+    "start": 2,
+    "end": 2.16,
+    "id": "w7"
+  },
+  {
+    "text": "de",
+    "start": 2.16,
+    "end": 2.27,
+    "id": "w8"
+  },
+  {
+    "text": "domaine,",
+    "start": 2.27,
+    "end": 2.72,
+    "id": "w9"
+  },
+  {
+    "text": "comme",
+    "start": 2.79,
+    "end": 2.99,
+    "id": "w10"
+  },
+  {
+    "text": "le",
+    "start": 3.02,
+    "end": 3.09,
+    "id": "w11"
+  },
+  {
+    "text": "nom",
+    "start": 3.09,
+    "end": 3.23,
+    "id": "w12"
+  },
+  {
+    "text": "de",
+    "start": 3.23,
+    "end": 3.26,
+    "id": "w13"
+  },
+  {
+    "text": "votre",
+    "start": 3.39,
+    "end": 3.56,
+    "id": "w14"
+  },
+  {
+    "text": "entreprise,",
+    "start": 3.56,
+    "end": 4.16,
+    "id": "w15"
+  },
+  {
+    "text": "point",
+    "start": 4.16,
+    "end": 4.77,
+    "id": "w16"
+  },
+  {
+    "text": "FR.",
+    "start": 4.77,
+    "end": 5.38,
+    "id": "w17"
+  },
+  {
+    "text": "Voyons",
+    "start": 5.41,
+    "end": 5.7,
+    "id": "w18"
+  },
+  {
+    "text": "comment",
+    "start": 5.7,
+    "end": 6.09,
+    "id": "w19"
+  },
+  {
+    "text": "le",
+    "start": 6.09,
+    "end": 6.2,
+    "id": "w20"
+  },
+  {
+    "text": "connecter.",
+    "start": 6.2,
+    "end": 6.88,
+    "id": "w21"
+  },
+  {
+    "text": "Dans",
+    "start": 6.93,
+    "end": 7.11,
+    "id": "w22"
+  },
+  {
+    "text": "l'onglet",
+    "start": 7.13,
+    "end": 7.54,
+    "id": "w23"
+  },
+  {
+    "text": "«",
+    "start": 7.54,
+    "end": 7.59,
+    "id": "w24"
+  },
+  {
+    "text": "Noms",
+    "start": 7.59,
+    "end": 7.75,
+    "id": "w25"
+  },
+  {
+    "text": "de",
+    "start": 7.82,
+    "end": 7.91,
+    "id": "w26"
+  },
+  {
+    "text": "domaine",
+    "start": 7.91,
+    "end": 8.29,
+    "id": "w27"
+  },
+  {
+    "text": "»,",
+    "start": 8.29,
+    "end": 8.47,
+    "id": "w28"
+  },
+  {
+    "text": "saisissez",
+    "start": 8.53,
+    "end": 9,
+    "id": "w29"
+  },
+  {
+    "text": "votre",
+    "start": 9.13,
+    "end": 9.35,
+    "id": "w30"
+  },
+  {
+    "text": "domaine",
+    "start": 9.42,
+    "end": 9.78,
+    "id": "w31"
+  },
+  {
+    "text": "ou",
+    "start": 9.78,
+    "end": 9.9,
+    "id": "w32"
+  },
+  {
+    "text": "un",
+    "start": 9.9,
+    "end": 10,
+    "id": "w33"
+  },
+  {
+    "text": "sous-domaine,",
+    "start": 10.02,
+    "end": 10.8,
+    "id": "w34"
+  },
+  {
+    "text": "puis",
+    "start": 10.83,
+    "end": 11.03,
+    "id": "w35"
+  },
+  {
+    "text": "cliquez",
+    "start": 11.04,
+    "end": 11.46,
+    "id": "w36"
+  },
+  {
+    "text": "sur",
+    "start": 11.46,
+    "end": 11.64,
+    "id": "w37"
+  },
+  {
+    "text": "«",
+    "start": 11.64,
+    "end": 11.65,
+    "id": "w38"
+  },
+  {
+    "text": "Continuer",
+    "start": 11.72,
+    "end": 12.21,
+    "id": "w39"
+  },
+  {
+    "text": "».",
+    "start": 12.32,
+    "end": 12.5,
+    "id": "w40"
+  },
+  {
+    "text": "Vous",
+    "start": 12.53,
+    "end": 12.71,
+    "id": "w41"
+  },
+  {
+    "text": "gardez",
+    "start": 12.73,
+    "end": 13,
+    "id": "w42"
+  },
+  {
+    "text": "votre",
+    "start": 13.13,
+    "end": 13.32,
+    "id": "w43"
+  },
+  {
+    "text": "domaine",
+    "start": 13.32,
+    "end": 13.7,
+    "id": "w44"
+  },
+  {
+    "text": "chez",
+    "start": 13.7,
+    "end": 13.91,
+    "id": "w45"
+  },
+  {
+    "text": "votre",
+    "start": 14.02,
+    "end": 14.18,
+    "id": "w46"
+  },
+  {
+    "text": "hébergeur.",
+    "start": 14.19,
+    "end": 14.89,
+    "id": "w47"
+  },
+  {
+    "text": "Rapido",
+    "start": 14.93,
+    "end": 15.3,
+    "id": "w48"
+  },
+  {
+    "text": "CRM",
+    "start": 15.3,
+    "end": 15.51,
+    "id": "w49"
+  },
+  {
+    "text": "cherche",
+    "start": 15.53,
+    "end": 15.99,
+    "id": "w50"
+  },
+  {
+    "text": "votre",
+    "start": 15.99,
+    "end": 16.31,
+    "id": "w51"
+  },
+  {
+    "text": "hébergeur",
+    "start": 16.35,
+    "end": 17,
+    "id": "w52"
+  },
+  {
+    "text": "et",
+    "start": 17.03,
+    "end": 17.13,
+    "id": "w53"
+  },
+  {
+    "text": "affiche",
+    "start": 17.13,
+    "end": 17.5,
+    "id": "w54"
+  },
+  {
+    "text": "la",
+    "start": 17.63,
+    "end": 17.72,
+    "id": "w55"
+  },
+  {
+    "text": "configuration",
+    "start": 17.72,
+    "end": 18.57,
+    "id": "w56"
+  },
+  {
+    "text": "en",
+    "start": 18.66,
+    "end": 18.71,
+    "id": "w57"
+  },
+  {
+    "text": "trois",
+    "start": 18.72,
+    "end": 19.05,
+    "id": "w58"
+  },
+  {
+    "text": "étapes,",
+    "start": 19.05,
+    "end": 19.5,
+    "id": "w59"
+  },
+  {
+    "text": "avec",
+    "start": 19.53,
+    "end": 19.71,
+    "id": "w60"
+  },
+  {
+    "text": "un",
+    "start": 19.73,
+    "end": 19.84,
+    "id": "w61"
+  },
+  {
+    "text": "lien",
+    "start": 19.84,
+    "end": 20,
+    "id": "w62"
+  },
+  {
+    "text": "direct",
+    "start": 20.13,
+    "end": 20.35,
+    "id": "w63"
+  },
+  {
+    "text": "vers",
+    "start": 20.42,
+    "end": 20.65,
+    "id": "w64"
+  },
+  {
+    "text": "son",
+    "start": 20.65,
+    "end": 20.82,
+    "id": "w65"
+  },
+  {
+    "text": "interface",
+    "start": 20.82,
+    "end": 21.4,
+    "id": "w66"
+  },
+  {
+    "text": "quand",
+    "start": 21.4,
+    "end": 21.67,
+    "id": "w67"
+  },
+  {
+    "text": "il",
+    "start": 21.67,
+    "end": 21.78,
+    "id": "w68"
+  },
+  {
+    "text": "est",
+    "start": 21.78,
+    "end": 21.94,
+    "id": "w69"
+  },
+  {
+    "text": "reconnu.",
+    "start": 21.94,
+    "end": 22.5,
+    "id": "w70"
+  },
+  {
+    "text": "Copiez",
+    "start": 22.53,
+    "end": 22.86,
+    "id": "w71"
+  },
+  {
+    "text": "les",
+    "start": 22.86,
+    "end": 23,
+    "id": "w72"
+  },
+  {
+    "text": "enregistrements",
+    "start": 23.13,
+    "end": 23.91,
+    "id": "w73"
+  },
+  {
+    "text": "indiqués,",
+    "start": 23.95,
+    "end": 24.5,
+    "id": "w74"
+  },
+  {
+    "text": "celui",
+    "start": 24.53,
+    "end": 24.8,
+    "id": "w75"
+  },
+  {
+    "text": "qui",
+    "start": 24.8,
+    "end": 24.98,
+    "id": "w76"
+  },
+  {
+    "text": "prouve",
+    "start": 24.98,
+    "end": 25.34,
+    "id": "w77"
+  },
+  {
+    "text": "que",
+    "start": 25.34,
+    "end": 25.52,
+    "id": "w78"
+  },
+  {
+    "text": "le",
+    "start": 25.52,
+    "end": 25.64,
+    "id": "w79"
+  },
+  {
+    "text": "domaine",
+    "start": 25.64,
+    "end": 26.06,
+    "id": "w80"
+  },
+  {
+    "text": "est",
+    "start": 26.06,
+    "end": 26.23,
+    "id": "w81"
+  },
+  {
+    "text": "à",
+    "start": 26.25,
+    "end": 26.3,
+    "id": "w82"
+  },
+  {
+    "text": "vous,",
+    "start": 26.3,
+    "end": 26.6,
+    "id": "w83"
+  },
+  {
+    "text": "et",
+    "start": 26.63,
+    "end": 26.72,
+    "id": "w84"
+  },
+  {
+    "text": "celui",
+    "start": 26.72,
+    "end": 27.03,
+    "id": "w85"
+  },
+  {
+    "text": "qui",
+    "start": 27.03,
+    "end": 27.1,
+    "id": "w86"
+  },
+  {
+    "text": "pointe",
+    "start": 27.23,
+    "end": 27.58,
+    "id": "w87"
+  },
+  {
+    "text": "vers",
+    "start": 27.58,
+    "end": 27.81,
+    "id": "w88"
+  },
+  {
+    "text": "votre",
+    "start": 27.83,
+    "end": 28.14,
+    "id": "w89"
+  },
+  {
+    "text": "site.",
+    "start": 28.14,
+    "end": 28.6,
+    "id": "w90"
+  },
+  {
+    "text": "Collez-les",
+    "start": 28.63,
+    "end": 29.1,
+    "id": "w91"
+  },
+  {
+    "text": "chez",
+    "start": 29.23,
+    "end": 29.33,
+    "id": "w92"
+  },
+  {
+    "text": "votre",
+    "start": 29.33,
+    "end": 29.6,
+    "id": "w93"
+  },
+  {
+    "text": "hébergeur.",
+    "start": 29.6,
+    "end": 30.3,
+    "id": "w94"
+  },
+  {
+    "text": "Revenis",
+    "start": 30.33,
+    "end": 30.72,
+    "id": "w95"
+  },
+  {
+    "text": "cliquer",
+    "start": 30.72,
+    "end": 31.15,
+    "id": "w96"
+  },
+  {
+    "text": "sur",
+    "start": 31.22,
+    "end": 31.33,
+    "id": "w97"
+  },
+  {
+    "text": "«",
+    "start": 31.33,
+    "end": 31.39,
+    "id": "w98"
+  },
+  {
+    "text": "Vérifier",
+    "start": 31.39,
+    "end": 31.87,
+    "id": "w99"
+  },
+  {
+    "text": "maintenant",
+    "start": 31.96,
+    "end": 32.5,
+    "id": "w100"
+  },
+  {
+    "text": "».",
+    "start": 32.5,
+    "end": 32.79,
+    "id": "w101"
+  },
+  {
+    "text": "Dès",
+    "start": 32.83,
+    "end": 32.95,
+    "id": "w102"
+  },
+  {
+    "text": "que",
+    "start": 32.95,
+    "end": 33.1,
+    "id": "w103"
+  },
+  {
+    "text": "les",
+    "start": 33.1,
+    "end": 33.25,
+    "id": "w104"
+  },
+  {
+    "text": "enregistrements",
+    "start": 33.25,
+    "end": 34.01,
+    "id": "w105"
+  },
+  {
+    "text": "sont",
+    "start": 34.03,
+    "end": 34.21,
+    "id": "w106"
+  },
+  {
+    "text": "visibles,",
+    "start": 34.25,
+    "end": 34.8,
+    "id": "w107"
+  },
+  {
+    "text": "le",
+    "start": 34.83,
+    "end": 34.92,
+    "id": "w108"
+  },
+  {
+    "text": "domaine",
+    "start": 34.92,
+    "end": 35.3,
+    "id": "w109"
+  },
+  {
+    "text": "est",
+    "start": 35.43,
+    "end": 35.52,
+    "id": "w110"
+  },
+  {
+    "text": "validé",
+    "start": 35.52,
+    "end": 35.9,
+    "id": "w111"
+  },
+  {
+    "text": "et",
+    "start": 35.9,
+    "end": 35.99,
+    "id": "w112"
+  },
+  {
+    "text": "le",
+    "start": 35.99,
+    "end": 36.1,
+    "id": "w113"
+  },
+  {
+    "text": "site",
+    "start": 36.1,
+    "end": 36.3,
+    "id": "w114"
+  },
+  {
+    "text": "s'affiche",
+    "start": 36.32,
+    "end": 36.8,
+    "id": "w115"
+  },
+  {
+    "text": "en",
+    "start": 36.8,
+    "end": 36.92,
+    "id": "w116"
+  },
+  {
+    "text": "adresse",
+    "start": 36.92,
+    "end": 37.34,
+    "id": "w117"
+  },
+  {
+    "text": "sécurisée.",
+    "start": 37.34,
+    "end": 38.1,
+    "id": "w118"
+  },
+  {
+    "text": "Votre",
+    "start": 38.13,
+    "end": 38.42,
+    "id": "w119"
+  },
+  {
+    "text": "site",
+    "start": 38.42,
+    "end": 38.6,
+    "id": "w120"
+  },
+  {
+    "text": "est",
+    "start": 38.73,
+    "end": 38.87,
+    "id": "w121"
+  },
+  {
+    "text": "sur",
+    "start": 38.88,
+    "end": 39.06,
+    "id": "w122"
+  },
+  {
+    "text": "votre",
+    "start": 39.06,
+    "end": 39.38,
+    "id": "w123"
+  },
+  {
+    "text": "nom",
+    "start": 39.38,
+    "end": 39.51,
+    "id": "w124"
+  },
+  {
+    "text": "de",
+    "start": 39.57,
+    "end": 39.67,
+    "id": "w125"
+  },
+  {
+    "text": "domaine.",
+    "start": 39.76,
+    "end": 40.4,
+    "id": "w126"
+  },
+  {
+    "text": "Retrouvez",
+    "start": 40.43,
+    "end": 40.87,
+    "id": "w127"
+  },
+  {
+    "text": "tous",
+    "start": 40.87,
+    "end": 41.08,
+    "id": "w128"
+  },
+  {
+    "text": "nos",
+    "start": 41.08,
+    "end": 41.24,
+    "id": "w129"
+  },
+  {
+    "text": "tutoriels",
+    "start": 41.24,
+    "end": 41.72,
+    "id": "w130"
+  },
+  {
+    "text": "dans",
+    "start": 41.72,
+    "end": 41.93,
+    "id": "w131"
+  },
+  {
+    "text": "l'académie.",
+    "start": 41.93,
+    "end": 42.7,
+    "id": "w132"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "voiceStartInCapture": 2.867,
+  "paragraphs": {
+    "intro": 0.03,
+    "detecter": 6.41,
+    "ignorer": 14.49,
+    "comparer": 20.33,
+    "choisir": 23.37,
+    "historique": 30.37,
+    "fusionner": 37.73,
+    "contacts": 41.37,
+    "outro": 46.81,
+    "end": 50.02
+  },
+  "zones": {
+    "detecter": [
+      380,
+      256,
+      948,
+      242
+    ],
+    "choisir": [
+      404,
+      208,
+      1372,
+      384
+    ],
+    "historique": [
+      404,
+      589,
+      1372,
+      96
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+ "intro": 0.03,
+ "detecter": 6.41,
+ "ignorer": 14.49,
+ "comparer": 20.33,
+ "choisir": 23.37,
+ "historique": 30.37,
+ "fusionner": 37.73,
+ "contacts": 41.37,
+ "outro": 46.81,
+ "end": 50.02
+}
