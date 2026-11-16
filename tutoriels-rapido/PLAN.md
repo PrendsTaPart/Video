@@ -120,7 +120,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM28 — Sondages
 - [x] CRM29 — Avis clients
 - [x] CRM30 — Cartes de visite digitales
-- [ ] CRM31 — Salons et leads de salon
+- [!] CRM31 — Salons et leads de salon (16/11 : aucun écran « Salons » dans RapidoCRM, seulement les outils MCP create_salon, enregistrer_lead_salon, remercier_leads_salon, get_salon_stats → décision de Michael : formation motion design « salons avec Claude » ou abandon ; voir Ahmed.md)
 - [x] CRM32 — Événements
 - [x] CRM33 — Agenda et rendez-vous
 - [x] CRM34 — Visioconférence et stratégie à l’écran (publié)

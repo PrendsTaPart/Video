@@ -49,3 +49,10 @@ Tâches qu'un humain doit faire (accès, comptes, argent, serveurs, validation).
 - [ ] Commander des puces NFC NTAG213/215 (cartes, autocollants, présentoir) et imprimer les designs (RapidoCRM › Puces NFC › imprimante).
 - [ ] Apple Wallet / Google Wallet (option) : créer les certificats émetteur (Apple Developer, Google Pay & Wallet Console).
 - [ ] Relecture juridique : mentions RGPD des formulaires publics (cartes, fidélité, devis), règlement du programme de fidélité, CGV.
+
+## 8. Décisions et tâches manuelles ajoutées le 16/11 (nuit)
+- [ ] **CRM31 Salons** : RapidoCRM n'a pas d'écran « Salons » (seulement des outils MCP). Décider : formation motion design « Vos salons avec Claude » (comme F41) ou abandon de l'épisode.
+- [ ] **CRM55 Ventes en ligne** : pour filmer le paiement, il faut une clé Stripe **de test** dans la société de démo (RapidoCRM › Profil › Paiement) ; sans elle, l'épisode ne montre que le bouton d'achat et l'écran Ventes.
+- [ ] **Disque de la session cloud** : supprimer `/home/user/Video` (ancien clone de 17 Go) ; les agents ne sont pas autorisés à le faire et le disque descend sous 2 Go pendant les rendus.
+- [ ] **ElevenLabs** : budget de la nuit du 15 au 16/11 ≈ 12 000 crédits (CRM42, 56, 58–64, F40–F43, une prise chacun). La lecture du solde (`account_get_usage`) demande de reconnecter le connecteur avec plus de droits.
+- [ ] **CRM69** : la règle « équipe » de démonstration reste vide tant que RapidoRH n'accepte pas le domaine de retour de RapidoCRM (voir rapido-crm/Ahmed.md § 2) ; refaire le tournage ensuite pour montrer une vraie règle.
