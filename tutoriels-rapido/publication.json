@@ -490,6 +490,36 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM51.png"
   },
   {
+    "id": "CRM52",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Le sous-domaine d'envoi des e-mails",
+    "tag": "2 min · Intermédiaire",
+    "duree_s": 56,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM52.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM52.png"
+  },
+  {
+    "id": "CRM59",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Connecter son IA à RapidoCRM",
+    "tag": "1 min · Débutant",
+    "duree_s": 60,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM59.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM59.png"
+  },
+  {
+    "id": "CRM60",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Les 100 agents IA",
+    "tag": "1 min · Débutant",
+    "duree_s": 51,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM60.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM60.png"
+  },
+  {
     "id": "CRM62",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",
@@ -498,6 +528,26 @@
     "duree_s": 58,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM62.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM62.png"
+  },
+  {
+    "id": "CRM63",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Les séquences de prospection",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 56,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM63.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM63.png"
+  },
+  {
+    "id": "CRM64",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Le score des prospects",
+    "tag": "1 min · Débutant",
+    "duree_s": 48,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM64.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM64.png"
   },
   {
     "id": "CRM65",
@@ -518,6 +568,16 @@
     "duree_s": 56,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM66.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM66.png"
+  },
+  {
+    "id": "CRM67",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Le programme de fidélité et la caisse",
+    "tag": "2 min · Débutant",
+    "duree_s": 63,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM67.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM67.png"
   },
   {
     "id": "CRM68",
