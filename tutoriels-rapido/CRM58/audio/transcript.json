@@ -1,0 +1,926 @@
+[
+  {
+    "text": "plaquettes,",
+    "start": 0.1,
+    "end": 0.93,
+    "id": "w0"
+  },
+  {
+    "text": "catalogues,",
+    "start": 0.93,
+    "end": 1.87,
+    "id": "w1"
+  },
+  {
+    "text": "guides…",
+    "start": 1.87,
+    "end": 2.44,
+    "id": "w2"
+  },
+  {
+    "text": "La",
+    "start": 2.44,
+    "end": 2.54,
+    "id": "w3"
+  },
+  {
+    "text": "bibliothèque",
+    "start": 2.54,
+    "end": 3.13,
+    "id": "w4"
+  },
+  {
+    "text": "rassemble",
+    "start": 3.13,
+    "end": 3.6,
+    "id": "w5"
+  },
+  {
+    "text": "les",
+    "start": 3.6,
+    "end": 3.75,
+    "id": "w6"
+  },
+  {
+    "text": "documents",
+    "start": 3.75,
+    "end": 4.22,
+    "id": "w7"
+  },
+  {
+    "text": "de",
+    "start": 4.24,
+    "end": 4.37,
+    "id": "w8"
+  },
+  {
+    "text": "votre",
+    "start": 4.37,
+    "end": 4.55,
+    "id": "w9"
+  },
+  {
+    "text": "équipe",
+    "start": 4.9,
+    "end": 5.12,
+    "id": "w10"
+  },
+  {
+    "text": "et",
+    "start": 5.12,
+    "end": 5.22,
+    "id": "w11"
+  },
+  {
+    "text": "vous",
+    "start": 5.22,
+    "end": 5.39,
+    "id": "w12"
+  },
+  {
+    "text": "dit",
+    "start": 5.48,
+    "end": 5.61,
+    "id": "w13"
+  },
+  {
+    "text": "qu'il",
+    "start": 5.65,
+    "end": 5.94,
+    "id": "w14"
+  },
+  {
+    "text": "est",
+    "start": 5.94,
+    "end": 6.13,
+    "id": "w15"
+  },
+  {
+    "text": "télécharge.",
+    "start": 6.13,
+    "end": 6.98,
+    "id": "w16"
+  },
+  {
+    "text": "Glissez",
+    "start": 7.1,
+    "end": 7.43,
+    "id": "w17"
+  },
+  {
+    "text": "un",
+    "start": 7.43,
+    "end": 7.46,
+    "id": "w18"
+  },
+  {
+    "text": "fichier",
+    "start": 7.6,
+    "end": 7.97,
+    "id": "w19"
+  },
+  {
+    "text": "dans",
+    "start": 8.03,
+    "end": 8.22,
+    "id": "w20"
+  },
+  {
+    "text": "la",
+    "start": 8.22,
+    "end": 8.33,
+    "id": "w21"
+  },
+  {
+    "text": "zone",
+    "start": 8.33,
+    "end": 8.49,
+    "id": "w22"
+  },
+  {
+    "text": "de",
+    "start": 8.67,
+    "end": 8.71,
+    "id": "w23"
+  },
+  {
+    "text": "dépôt",
+    "start": 8.71,
+    "end": 9.01,
+    "id": "w24"
+  },
+  {
+    "text": "jusqu'à",
+    "start": 9.01,
+    "end": 9.44,
+    "id": "w25"
+  },
+  {
+    "text": "50",
+    "start": 9.53,
+    "end": 9.81,
+    "id": "w26"
+  },
+  {
+    "text": "méga",
+    "start": 9.81,
+    "end": 9.95,
+    "id": "w27"
+  },
+  {
+    "text": "octets.",
+    "start": 10.04,
+    "end": 10.72,
+    "id": "w28"
+  },
+  {
+    "text": "Rangez-le",
+    "start": 10.77,
+    "end": 11.18,
+    "id": "w29"
+  },
+  {
+    "text": "dans",
+    "start": 11.32,
+    "end": 11.38,
+    "id": "w30"
+  },
+  {
+    "text": "un",
+    "start": 11.38,
+    "end": 11.61,
+    "id": "w31"
+  },
+  {
+    "text": "dossier,",
+    "start": 11.61,
+    "end": 12.07,
+    "id": "w32"
+  },
+  {
+    "text": "puis",
+    "start": 12.07,
+    "end": 12.21,
+    "id": "w33"
+  },
+  {
+    "text": "filtrez",
+    "start": 12.39,
+    "end": 12.83,
+    "id": "w34"
+  },
+  {
+    "text": "par",
+    "start": 12.83,
+    "end": 13.25,
+    "id": "w35"
+  },
+  {
+    "text": "type,",
+    "start": 13.25,
+    "end": 13.52,
+    "id": "w36"
+  },
+  {
+    "text": "par",
+    "start": 13.52,
+    "end": 13.67,
+    "id": "w37"
+  },
+  {
+    "text": "dossier",
+    "start": 13.76,
+    "end": 14.21,
+    "id": "w38"
+  },
+  {
+    "text": "ou",
+    "start": 14.21,
+    "end": 14.35,
+    "id": "w39"
+  },
+  {
+    "text": "par",
+    "start": 14.35,
+    "end": 14.54,
+    "id": "w40"
+  },
+  {
+    "text": "fichier",
+    "start": 14.56,
+    "end": 15.03,
+    "id": "w41"
+  },
+  {
+    "text": "partagé.",
+    "start": 15.03,
+    "end": 15.75,
+    "id": "w42"
+  },
+  {
+    "text": "Pour",
+    "start": 15.86,
+    "end": 15.98,
+    "id": "w43"
+  },
+  {
+    "text": "partager",
+    "start": 15.98,
+    "end": 16.41,
+    "id": "w44"
+  },
+  {
+    "text": "un",
+    "start": 16.41,
+    "end": 16.46,
+    "id": "w45"
+  },
+  {
+    "text": "document,",
+    "start": 16.66,
+    "end": 17.09,
+    "id": "w46"
+  },
+  {
+    "text": "cliquez",
+    "start": 17.09,
+    "end": 17.48,
+    "id": "w47"
+  },
+  {
+    "text": "sur",
+    "start": 17.48,
+    "end": 17.64,
+    "id": "w48"
+  },
+  {
+    "text": "le",
+    "start": 17.64,
+    "end": 17.75,
+    "id": "w49"
+  },
+  {
+    "text": "bouton",
+    "start": 17.75,
+    "end": 18.08,
+    "id": "w50"
+  },
+  {
+    "text": "de",
+    "start": 18.08,
+    "end": 18.29,
+    "id": "w51"
+  },
+  {
+    "text": "partage",
+    "start": 18.29,
+    "end": 18.64,
+    "id": "w52"
+  },
+  {
+    "text": "et",
+    "start": 18.64,
+    "end": 18.71,
+    "id": "w53"
+  },
+  {
+    "text": "activez",
+    "start": 18.8,
+    "end": 19.31,
+    "id": "w54"
+  },
+  {
+    "text": "le",
+    "start": 19.31,
+    "end": 19.46,
+    "id": "w55"
+  },
+  {
+    "text": "lien.",
+    "start": 19.46,
+    "end": 20,
+    "id": "w56"
+  },
+  {
+    "text": "Choisissez",
+    "start": 20.1,
+    "end": 20.63,
+    "id": "w57"
+  },
+  {
+    "text": "l'accès,",
+    "start": 20.63,
+    "end": 21.18,
+    "id": "w58"
+  },
+  {
+    "text": "téléchargement",
+    "start": 21.18,
+    "end": 22.06,
+    "id": "w59"
+  },
+  {
+    "text": "direct",
+    "start": 22.06,
+    "end": 22.11,
+    "id": "w60"
+  },
+  {
+    "text": "ou",
+    "start": 22.53,
+    "end": 22.66,
+    "id": "w61"
+  },
+  {
+    "text": "adresse",
+    "start": 22.66,
+    "end": 23.12,
+    "id": "w62"
+  },
+  {
+    "text": "email",
+    "start": 23.17,
+    "end": 23.5,
+    "id": "w63"
+  },
+  {
+    "text": "demandée",
+    "start": 23.5,
+    "end": 24.06,
+    "id": "w64"
+  },
+  {
+    "text": "avant.",
+    "start": 24.07,
+    "end": 24.63,
+    "id": "w65"
+  },
+  {
+    "text": "Dans",
+    "start": 24.74,
+    "end": 24.87,
+    "id": "w66"
+  },
+  {
+    "text": "ce",
+    "start": 24.98,
+    "end": 25.04,
+    "id": "w67"
+  },
+  {
+    "text": "cas,",
+    "start": 25.04,
+    "end": 25.35,
+    "id": "w68"
+  },
+  {
+    "text": "chaque",
+    "start": 25.54,
+    "end": 25.78,
+    "id": "w69"
+  },
+  {
+    "text": "visiteur",
+    "start": 25.78,
+    "end": 26.31,
+    "id": "w70"
+  },
+  {
+    "text": "devient",
+    "start": 26.31,
+    "end": 26.75,
+    "id": "w71"
+  },
+  {
+    "text": "un",
+    "start": 26.75,
+    "end": 27.17,
+    "id": "w72"
+  },
+  {
+    "text": "contact",
+    "start": 27.17,
+    "end": 27.4,
+    "id": "w73"
+  },
+  {
+    "text": "dans",
+    "start": 27.4,
+    "end": 27.59,
+    "id": "w74"
+  },
+  {
+    "text": "votre",
+    "start": 27.68,
+    "end": 28.01,
+    "id": "w75"
+  },
+  {
+    "text": "CRM.",
+    "start": 28.01,
+    "end": 28.46,
+    "id": "w76"
+  },
+  {
+    "text": "Ajoutez",
+    "start": 28.62,
+    "end": 28.88,
+    "id": "w77"
+  },
+  {
+    "text": "une",
+    "start": 28.88,
+    "end": 28.98,
+    "id": "w78"
+  },
+  {
+    "text": "description",
+    "start": 29.12,
+    "end": 29.61,
+    "id": "w79"
+  },
+  {
+    "text": "pour",
+    "start": 29.61,
+    "end": 29.82,
+    "id": "w80"
+  },
+  {
+    "text": "la",
+    "start": 29.82,
+    "end": 29.9,
+    "id": "w81"
+  },
+  {
+    "text": "page",
+    "start": 29.9,
+    "end": 30.01,
+    "id": "w82"
+  },
+  {
+    "text": "de",
+    "start": 30.19,
+    "end": 30.23,
+    "id": "w83"
+  },
+  {
+    "text": "téléchargement.",
+    "start": 30.23,
+    "end": 31.16,
+    "id": "w84"
+  },
+  {
+    "text": "Vous",
+    "start": 31.26,
+    "end": 31.39,
+    "id": "w85"
+  },
+  {
+    "text": "pouvez",
+    "start": 31.5,
+    "end": 31.62,
+    "id": "w86"
+  },
+  {
+    "text": "fixer",
+    "start": 31.75,
+    "end": 32.06,
+    "id": "w87"
+  },
+  {
+    "text": "une",
+    "start": 32.06,
+    "end": 32.24,
+    "id": "w88"
+  },
+  {
+    "text": "date",
+    "start": 32.24,
+    "end": 32.48,
+    "id": "w89"
+  },
+  {
+    "text": "d'expiration",
+    "start": 32.48,
+    "end": 33.24,
+    "id": "w90"
+  },
+  {
+    "text": "et",
+    "start": 33.24,
+    "end": 33.27,
+    "id": "w91"
+  },
+  {
+    "text": "relier",
+    "start": 33.54,
+    "end": 33.71,
+    "id": "w92"
+  },
+  {
+    "text": "un",
+    "start": 33.71,
+    "end": 33.83,
+    "id": "w93"
+  },
+  {
+    "text": "formulaire",
+    "start": 33.83,
+    "end": 34.44,
+    "id": "w94"
+  },
+  {
+    "text": "qui",
+    "start": 34.44,
+    "end": 34.63,
+    "id": "w95"
+  },
+  {
+    "text": "enverra",
+    "start": 34.63,
+    "end": 35.06,
+    "id": "w96"
+  },
+  {
+    "text": "le",
+    "start": 35.06,
+    "end": 35.16,
+    "id": "w97"
+  },
+  {
+    "text": "fichier",
+    "start": 35.2,
+    "end": 35.62,
+    "id": "w98"
+  },
+  {
+    "text": "par",
+    "start": 35.62,
+    "end": 35.79,
+    "id": "w99"
+  },
+  {
+    "text": "email.",
+    "start": 35.79,
+    "end": 36.16,
+    "id": "w100"
+  },
+  {
+    "text": "Enregistrez",
+    "start": 36.46,
+    "end": 37.05,
+    "id": "w101"
+  },
+  {
+    "text": "chaque",
+    "start": 37.26,
+    "end": 37.63,
+    "id": "w102"
+  },
+  {
+    "text": "fichier",
+    "start": 37.63,
+    "end": 38.14,
+    "id": "w103"
+  },
+  {
+    "text": "partagé",
+    "start": 38.14,
+    "end": 38.66,
+    "id": "w104"
+  },
+  {
+    "text": "à",
+    "start": 38.66,
+    "end": 38.73,
+    "id": "w105"
+  },
+  {
+    "text": "son",
+    "start": 38.89,
+    "end": 38.95,
+    "id": "w106"
+  },
+  {
+    "text": "lien",
+    "start": 38.95,
+    "end": 39.25,
+    "id": "w107"
+  },
+  {
+    "text": "suivi",
+    "start": 39.25,
+    "end": 39.68,
+    "id": "w108"
+  },
+  {
+    "text": "et",
+    "start": 39.68,
+    "end": 39.83,
+    "id": "w109"
+  },
+  {
+    "text": "un",
+    "start": 39.83,
+    "end": 39.98,
+    "id": "w110"
+  },
+  {
+    "text": "lien",
+    "start": 39.98,
+    "end": 40.28,
+    "id": "w111"
+  },
+  {
+    "text": "dédié",
+    "start": 40.28,
+    "end": 40.65,
+    "id": "w112"
+  },
+  {
+    "text": "pour",
+    "start": 40.65,
+    "end": 40.95,
+    "id": "w113"
+  },
+  {
+    "text": "vos",
+    "start": 40.95,
+    "end": 41.18,
+    "id": "w114"
+  },
+  {
+    "text": "CTA.",
+    "start": 41.18,
+    "end": 41.68,
+    "id": "w115"
+  },
+  {
+    "text": "Ces",
+    "start": 41.78,
+    "end": 41.83,
+    "id": "w116"
+  },
+  {
+    "text": "statistiques",
+    "start": 41.83,
+    "end": 42.34,
+    "id": "w117"
+  },
+  {
+    "text": "montrent",
+    "start": 42.56,
+    "end": 42.83,
+    "id": "w118"
+  },
+  {
+    "text": "les",
+    "start": 42.83,
+    "end": 42.98,
+    "id": "w119"
+  },
+  {
+    "text": "téléchargements,",
+    "start": 42.98,
+    "end": 43.79,
+    "id": "w120"
+  },
+  {
+    "text": "les",
+    "start": 43.79,
+    "end": 44.2,
+    "id": "w121"
+  },
+  {
+    "text": "visiteurs,",
+    "start": 44.2,
+    "end": 44.76,
+    "id": "w122"
+  },
+  {
+    "text": "la",
+    "start": 44.76,
+    "end": 44.85,
+    "id": "w123"
+  },
+  {
+    "text": "provenance",
+    "start": 44.89,
+    "end": 45.5,
+    "id": "w124"
+  },
+  {
+    "text": "et",
+    "start": 45.52,
+    "end": 45.65,
+    "id": "w125"
+  },
+  {
+    "text": "les",
+    "start": 45.65,
+    "end": 45.84,
+    "id": "w126"
+  },
+  {
+    "text": "appareils.",
+    "start": 45.84,
+    "end": 46.64,
+    "id": "w127"
+  },
+  {
+    "text": "Et",
+    "start": 46.74,
+    "end": 46.75,
+    "id": "w128"
+  },
+  {
+    "text": "en",
+    "start": 46.75,
+    "end": 46.86,
+    "id": "w129"
+  },
+  {
+    "text": "haut",
+    "start": 46.86,
+    "end": 47.09,
+    "id": "w130"
+  },
+  {
+    "text": "de",
+    "start": 47.09,
+    "end": 47.1,
+    "id": "w131"
+  },
+  {
+    "text": "la",
+    "start": 47.24,
+    "end": 47.31,
+    "id": "w132"
+  },
+  {
+    "text": "page,",
+    "start": 47.31,
+    "end": 47.61,
+    "id": "w133"
+  },
+  {
+    "text": "la",
+    "start": 47.67,
+    "end": 47.76,
+    "id": "w134"
+  },
+  {
+    "text": "vue",
+    "start": 47.76,
+    "end": 47.93,
+    "id": "w135"
+  },
+  {
+    "text": "d'ensemble",
+    "start": 47.93,
+    "end": 48.5,
+    "id": "w136"
+  },
+  {
+    "text": "de",
+    "start": 48.5,
+    "end": 48.61,
+    "id": "w137"
+  },
+  {
+    "text": "la",
+    "start": 48.61,
+    "end": 48.72,
+    "id": "w138"
+  },
+  {
+    "text": "bibliothèque",
+    "start": 48.72,
+    "end": 49.4,
+    "id": "w139"
+  },
+  {
+    "text": "sur",
+    "start": 49.4,
+    "end": 49.57,
+    "id": "w140"
+  },
+  {
+    "text": "30",
+    "start": 49.57,
+    "end": 49.87,
+    "id": "w141"
+  },
+  {
+    "text": "jours.",
+    "start": 49.91,
+    "end": 50.56,
+    "id": "w142"
+  },
+  {
+    "text": "Vos",
+    "start": 50.61,
+    "end": 50.72,
+    "id": "w143"
+  },
+  {
+    "text": "documents",
+    "start": 50.72,
+    "end": 51.21,
+    "id": "w144"
+  },
+  {
+    "text": "travaillent",
+    "start": 51.46,
+    "end": 51.87,
+    "id": "w145"
+  },
+  {
+    "text": "pour",
+    "start": 51.87,
+    "end": 52.04,
+    "id": "w146"
+  },
+  {
+    "text": "vous",
+    "start": 52.23,
+    "end": 52.33,
+    "id": "w147"
+  },
+  {
+    "text": "et",
+    "start": 52.33,
+    "end": 52.44,
+    "id": "w148"
+  },
+  {
+    "text": "vous",
+    "start": 52.44,
+    "end": 52.67,
+    "id": "w149"
+  },
+  {
+    "text": "savez",
+    "start": 52.67,
+    "end": 53.09,
+    "id": "w150"
+  },
+  {
+    "text": "qui",
+    "start": 53.09,
+    "end": 53.13,
+    "id": "w151"
+  },
+  {
+    "text": "s'y",
+    "start": 53.13,
+    "end": 53.27,
+    "id": "w152"
+  },
+  {
+    "text": "intéresse.",
+    "start": 53.31,
+    "end": 54.03,
+    "id": "w153"
+  }
+]
