@@ -760,6 +760,46 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F11.png"
   },
   {
+    "id": "F12",
+    "produit": "crm",
+    "kicker": "Formation · Commercial",
+    "titre": "Piloter son pipeline et ses prévisions",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 73,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F12.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F12.png"
+  },
+  {
+    "id": "F13",
+    "produit": "crm",
+    "kicker": "Formation · Commercial",
+    "titre": "Le devis qui se signe",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 75,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F13.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F13.png"
+  },
+  {
+    "id": "F14",
+    "produit": "crm",
+    "kicker": "Formation · Prospection",
+    "titre": "Salons : avant, pendant, après",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 64,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F14.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F14.png"
+  },
+  {
+    "id": "F15",
+    "produit": "crm",
+    "kicker": "Formation · Fidélisation",
+    "titre": "Fidéliser : programmes, jeux concours, avis",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 75,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F15.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F15.png"
+  },
+  {
     "id": "F21",
     "produit": "suite",
     "kicker": "Formation · IA",
