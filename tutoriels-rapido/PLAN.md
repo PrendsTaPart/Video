@@ -148,7 +148,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM54 — L'éditeur sur téléphone
 - [ ] CRM55 — Les ventes en ligne : bouton d'achat et paiement (Stripe en mode test, aucun paiement réel)
 - [~] CRM56 — Les lead magnets (scénario, `leadmagnets-demo.php`, essai à blanc, voix 880 cr. — en file)
-- [ ] CRM57 — Le tunnel de vente créé par Claude (outil creer_tunnel_de_vente)
+- [~] CRM57 — Le tunnel de vente créé par Claude (outil creer_tunnel_de_vente) (scénario, `tunnel-demo.php`, essai à blanc, voix 847 cr. — en file)
 - [~] CRM58 — Bibliothèque : partage suivi et statistiques de téléchargement (scénario, `bibliotheque-demo.php`, essai à blanc, voix 995 cr. — en file)
 - [~] CRM59 — Connecter son IA (Claude, ChatGPT, Le Chat, Grok) (voix 882 cr. — en file)
 - [~] CRM60 — Les 100 agents IA (voix 720 cr. — en file)
