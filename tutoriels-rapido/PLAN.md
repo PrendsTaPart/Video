@@ -131,7 +131,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM39 — Documents clients et bibliothèque (publié)
 - [x] CRM40 — Bibliothèque de prompts (publié)
 - [x] CRM41 — Notifications (publié)
-- [ ] CRM42 — Facturation de l'abonnement et packs (démo, scénario et essai à blanc prêts ; voix bloquée : quota ElevenLabs épuisé)
+- [~] CRM42 — Facturation de l'abonnement et packs (sélecteurs corrigés le 16/11, voix 830 cr. — en file)
 - [x] CRM43 — Connecter RapidoCRM à Claude (MCP)
 - [x] CRM44 — Les relances automatiques (devis et factures) + suivi d'ouverture des devis
 - [x] CRM45 — Le prévisionnel pondéré et les affaires à relancer (pipeline)

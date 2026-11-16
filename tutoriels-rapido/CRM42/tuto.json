@@ -72,8 +72,8 @@
     {
       "at": "packs",
       "label": "Packs achetés",
-      "click": ".nav-link:has-text(\"Historique des packs\")",
-      "wait": 1.2,
+      "click": "button[data-bs-target=\"#navs-top-histFacture\"]",
+      "wait": 1.5,
       "zone": "#navs-top-histFacture"
     },
     {
@@ -94,11 +94,12 @@
     {
       "at": "pack",
       "click": "label:has-text(\"500 sms\")",
-      "zone": ".card >> nth=0"
+      "zone": "Pack SMS",
+      "zone_closest": ".card"
     },
     {
       "at": "paiement",
-      "hover": ".card >> nth=0 >> button:has-text(\"payer\")"
+      "hover": "button:has-text(\"payer\") >> nth=0"
     },
     {
       "at": "outro",
