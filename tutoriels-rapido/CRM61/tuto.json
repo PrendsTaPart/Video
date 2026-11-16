@@ -69,7 +69,9 @@
     },
     {
       "at": "outro",
-      "goto": "/prompts/outils"
+      "eval": "document.querySelectorAll('.modal.show .btn-close').forEach(b => b.click())",
+      "wait": 0.6,
+      "top": true
     }
   ],
   "paragraphs": [
