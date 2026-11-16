@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#03A9F5; --b:#C084FC; --grad:linear-gradient(100deg,#9BE15D,#6EE7FF 50%,#C084FC); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(130px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.42; }
+  .h2 { width:760px; height:640px; left:-280px; bottom:-340px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .slide .inner { position:absolute; inset:110px 150px 190px; display:flex; flex-direction:column; justify-content:center; }
+  .slide h1 { font-size:118px; line-height:.96; font-weight:800; letter-spacing:-.045em; text-wrap:balance; }
+  .slide h2 { font-size:86px; line-height:1; font-weight:800; letter-spacing:-.04em; margin-bottom:56px; text-wrap:balance; }
+  .kick { font-family:'Geist Mono',monospace; font-size:26px; letter-spacing:.16em; text-transform:uppercase; color:rgba(255,255,255,.65); margin-bottom:28px; }
+  .points { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .pt { display:flex; gap:22px; align-items:center; padding:26px 30px; border-radius:24px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); font-size:40px; font-weight:500; line-height:1.25; }
+  .pt b, .st b { flex:none; width:62px; height:62px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:28px; }
+  .steps { position:relative; display:flex; gap:28px; }
+  .steps .line { position:absolute; left:31px; right:31px; top:31px; height:3px; background:var(--grad); transform-origin:left; }
+  .st { position:relative; flex:1; display:flex; flex-direction:column; gap:22px; font-size:38px; font-weight:500; line-height:1.25; }
+  .cmp { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+  .col { padding:36px; border-radius:28px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.04); }
+  .col.r { border-color:var(--a); background:color-mix(in srgb,var(--a) 14%,transparent); box-shadow:0 0 60px -20px var(--a); }
+  .col h3 { font-size:30px; font-family:'Geist Mono',monospace; letter-spacing:.12em; text-transform:uppercase; margin-bottom:22px; color:rgba(255,255,255,.7); }
+  .col.r h3 { color:var(--b); }
+  .col p { font-size:38px; line-height:1.35; margin-top:14px; }
+  .chat { width:1300px; border-radius:28px; background:#262624; border:1px solid rgba(255,255,255,.12); padding:36px; display:flex; flex-direction:column; gap:26px; box-shadow:0 40px 100px -30px rgba(0,0,0,.9); }
+  .chat .q { align-self:flex-end; max-width:85%; background:#141413; border:1px solid rgba(255,255,255,.1); border-radius:20px; padding:20px 26px; font-size:32px; line-height:1.4; min-height:84px; }
+  .chat .a { display:flex; gap:20px; font-size:30px; line-height:1.45; color:#f5f4ef; }
+  .chat .a p { margin-bottom:10px; }
+  .glyph { color:#d97757; font-size:36px; }
+  .take { font-size:96px; line-height:1.02; font-weight:800; letter-spacing:-.04em; text-align:center; text-wrap:balance; }
+  .sub { position:absolute; inset:auto 0 70px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; white-space:nowrap; }
+  .bar { position:absolute; left:150px; right:150px; bottom:34px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:60px; top:44px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .card h1 { margin-top:40px; font-size:122px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1600px; text-wrap:balance; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style></head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="70.27" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">Formation Rapido</div>
+  <div class="slide clip" id="sl0" data-start="3.050" data-duration="6.460" data-track-index="2"><div class="inner"><div class="kick">IA · MCP</div><h1>Le connecteur MCP, <em>sans jargon</em></h1></div></div>
+  <div class="slide clip" id="sl1" data-start="9.010" data-duration="7.620" data-track-index="2"><div class="inner"><h2>Avec ou sans <em>connecteur</em></h2><div class="cmp"><div class="col l"><h3>Sans</h3><p>Copier-coller</p><p>Aucune donnée</p><p>Aucune action</p></div><div class="col r"><h3>Avec</h3><p>Vos clients</p><p>Vos devis</p><p>Des actions réelles</p></div></div></div></div>
+  <div class="slide clip" id="sl2" data-start="16.130" data-duration="11.860" data-track-index="2"><div class="inner"><h2><em>MCP</em>, c&#x27;est quoi ?</h2><div class="points"><div class="pt"><b>1</b><span>Model Context Protocol</span></div><div class="pt"><b>2</b><span>Un standard ouvert</span></div><div class="pt"><b>3</b><span>Une prise universelle</span></div><div class="pt"><b>4</b><span>Claude, ChatGPT, Le Chat</span></div></div></div></div>
+  <div class="slide clip" id="sl3" data-start="27.490" data-duration="10.220" data-track-index="2"><div class="inner"><h2>Comment ça <em>marche</em></h2><div class="steps"><i class="line"></i><div class="st"><b>1</b><span>Le logiciel expose des outils</span></div><div class="st"><b>2</b><span>Vous faites une demande</span></div><div class="st"><b>3</b><span>L&#x27;assistant choisit l&#x27;outil</span></div><div class="st"><b>4</b><span>Il montre ce qu&#x27;il fait</span></div></div></div></div>
+  <div class="slide clip" id="sl4" data-start="37.210" data-duration="9.180" data-track-index="2"><div class="inner"><h2>Et la <em>sécurité</em> ?</h2><div class="points"><div class="pt"><b>1</b><span>Votre compte</span></div><div class="pt"><b>2</b><span>Votre autorisation</span></div><div class="pt"><b>3</b><span>Vos droits</span></div><div class="pt"><b>4</b><span>Accès retirable</span></div></div></div></div>
+  <div class="slide clip" id="sl5" data-start="45.890" data-duration="10.860" data-track-index="2"><div class="inner"><h2>Dans la suite <em>Rapido</em></h2><div class="points"><div class="pt"><b>1</b><span>RapidoCRM</span></div><div class="pt"><b>2</b><span>RapidoCMS</span></div><div class="pt"><b>3</b><span>RapidoRH</span></div><div class="pt"><b>4</b><span>Une seule conversation</span></div></div></div></div>
+  <div class="slide clip" id="sl6" data-start="56.250" data-duration="10.020" data-track-index="2"><div class="inner"><div class="take">De la conversation à <em>l&#x27;action</em></div></div></div>
+  <div class="sub clip" id="s0" data-start="3.050" data-duration="2.080" data-track-index="7"><span>MCP : trois lettres qui changent la</span></div>
+  <div class="sub clip" id="s1" data-start="5.150" data-duration="1.920" data-track-index="7"><span>façon de travailler avec l&#x27;IA</span></div>
+  <div class="sub clip" id="s2" data-start="7.090" data-duration="0.980" data-track-index="7"><span>Voici ce que c&#x27;est</span></div>
+  <div class="sub clip" id="s3" data-start="8.090" data-duration="0.900" data-track-index="7"><span>sans jargon</span></div>
+  <div class="sub clip" id="s4" data-start="9.010" data-duration="1.020" data-track-index="7"><span>Sans connecteur</span></div>
+  <div class="sub clip" id="s5" data-start="10.050" data-duration="1.120" data-track-index="7"><span>l&#x27;IA ne voit que ce que</span></div>
+  <div class="sub clip" id="s6" data-start="11.190" data-duration="1.080" data-track-index="7"><span>vous copiez-collez</span></div>
+  <div class="sub clip" id="s7" data-start="12.290" data-duration="1.340" data-track-index="7"><span>Elle ne connaît ni vos clients</span></div>
+  <div class="sub clip" id="s8" data-start="13.650" data-duration="0.970" data-track-index="7"><span>ni vos devis</span></div>
+  <div class="sub clip" id="s9" data-start="14.640" data-duration="1.430" data-track-index="7"><span>ni votre planning</span></div>
+  <div class="sub clip" id="s10" data-start="16.130" data-duration="0.680" data-track-index="7"><span>MCP, pour</span></div>
+  <div class="sub clip" id="s11" data-start="17.090" data-duration="1.930" data-track-index="7"><span>Model Context Protocol</span></div>
+  <div class="sub clip" id="s12" data-start="19.040" data-duration="1.630" data-track-index="7"><span>est un standard ouvert</span></div>
+  <div class="sub clip" id="s13" data-start="20.690" data-duration="2.360" data-track-index="7"><span>Il permet à un assistant comme Claude</span></div>
+  <div class="sub clip" id="s14" data-start="23.070" data-duration="1.430" data-track-index="7"><span>ChatGPT ou Le Chat de se</span></div>
+  <div class="sub clip" id="s15" data-start="24.520" data-duration="1.390" data-track-index="7"><span>brancher sur un logiciel</span></div>
+  <div class="sub clip" id="s16" data-start="25.930" data-duration="1.540" data-track-index="7"><span>comme une prise universelle</span></div>
+  <div class="sub clip" id="s17" data-start="27.490" data-duration="0.680" data-track-index="7"><span>Le logiciel</span></div>
+  <div class="sub clip" id="s18" data-start="28.450" data-duration="0.980" data-track-index="7"><span>expose des outils</span></div>
+  <div class="sub clip" id="s19" data-start="29.450" data-duration="1.070" data-track-index="7"><span>lister les clients</span></div>
+  <div class="sub clip" id="s20" data-start="30.540" data-duration="0.920" data-track-index="7"><span>créer un devis</span></div>
+  <div class="sub clip" id="s21" data-start="31.480" data-duration="1.415" data-track-index="7"><span>programmer un post</span></div>
+  <div class="sub clip" id="s22" data-start="32.930" data-duration="1.940" data-track-index="7"><span>L&#x27;assistant choisit le bon outil selon</span></div>
+  <div class="sub clip" id="s23" data-start="34.890" data-duration="0.770" data-track-index="7"><span>votre demande</span></div>
+  <div class="sub clip" id="s24" data-start="35.680" data-duration="1.510" data-track-index="7"><span>et vous montre ce qu&#x27;il fait</span></div>
+  <div class="sub clip" id="s25" data-start="37.210" data-duration="1.300" data-track-index="7"><span>Côté sécurité</span></div>
+  <div class="sub clip" id="s26" data-start="38.530" data-duration="1.630" data-track-index="7"><span>vous vous connectez avec votre compte</span></div>
+  <div class="sub clip" id="s27" data-start="40.180" data-duration="1.450" data-track-index="7"><span>et vous autorisez l&#x27;accès</span></div>
+  <div class="sub clip" id="s28" data-start="41.650" data-duration="1.850" data-track-index="7"><span>L&#x27;assistant agit avec vos droits</span></div>
+  <div class="sub clip" id="s29" data-start="43.520" data-duration="1.490" data-track-index="7"><span>et vous pouvez retirer l&#x27;accès à</span></div>
+  <div class="sub clip" id="s30" data-start="45.030" data-duration="0.840" data-track-index="7"><span>tout moment</span></div>
+  <div class="sub clip" id="s31" data-start="45.890" data-duration="1.930" data-track-index="7"><span>La suite Rapido a ses serveurs</span></div>
+  <div class="sub clip" id="s32" data-start="47.840" data-duration="1.415" data-track-index="7"><span>MCP : RapidoCRM</span></div>
+  <div class="sub clip" id="s33" data-start="49.275" data-duration="2.277" data-track-index="7"><span>RapidoCMS et RapidoRH</span></div>
+  <div class="sub clip" id="s34" data-start="51.690" data-duration="1.810" data-track-index="7"><span>Une seule conversation peut donc toucher</span></div>
+  <div class="sub clip" id="s35" data-start="53.520" data-duration="0.720" data-track-index="7"><span>vos ventes</span></div>
+  <div class="sub clip" id="s36" data-start="54.260" data-duration="1.970" data-track-index="7"><span>vos contenus et votre équipe</span></div>
+  <div class="sub clip" id="s37" data-start="56.250" data-duration="0.650" data-track-index="7"><span>Un standard</span></div>
+  <div class="sub clip" id="s38" data-start="57.200" data-duration="1.090" data-track-index="7"><span>ouvert, des outils</span></div>
+  <div class="sub clip" id="s39" data-start="58.310" data-duration="0.960" data-track-index="7"><span>vos droits</span></div>
+  <div class="sub clip" id="s40" data-start="59.290" data-duration="2.620" data-track-index="7"><span>l&#x27;IA passe de la conversation à l&#x27;action</span></div>
+  <div class="sub clip" id="s41" data-start="61.930" data-duration="0.660" data-track-index="7"><span>Dans la prochaine</span></div>
+  <div class="sub clip" id="s42" data-start="62.890" data-duration="1.830" data-track-index="7"><span>formation, on branche la suite Rapido</span></div>
+  <div class="sub clip" id="s43" data-start="64.740" data-duration="0.750" data-track-index="7"><span>à Claude</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="62.769999999999996" data-track-index="10" data-volume="1"></audio>
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative"><div class="top"><span class="num">F23</span><span class="kick" style="margin:0">Formation · IA</span></div>
+    <h1>Qu&#x27;est-ce qu&#x27;un <em>connecteur MCP</em> ?</h1></div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">Suite Rapido</b></div>
+  </div>
+  <div class="clip card" id="outro" data-start="65.47" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative"><h2>Merci d'avoir <em>regardé</em></h2><p>Prochaine formation : brancher la suite Rapido à Claude</p></div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware</div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .to('#intro', { opacity: 0, duration: .6, ease: 'power2.in' }, 3.0);
+  tl.to('#bar', { scaleX: 1, duration: 62.769999999999996, ease: 'none' }, 3.0);
+  tl.from('#sl0 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 3.100);
+  tl.to('#sl0 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 8.710);
+  tl.from('#sl1 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 9.060);
+  tl.from('#sl1 .col.l p', { opacity: 0, x: -30, stagger: .25, duration: .5 }, 9.610)
+    .from('#sl1 .col.r', { opacity: 0, scale: .94, duration: .7, ease: 'back.out(1.6)' }, 12.214)
+    .from('#sl1 .col.r p', { opacity: 0, x: 30, stagger: .25, duration: .5 }, 12.514);
+  tl.to('#sl1 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 15.830);
+  tl.from('#sl2 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 16.180);
+  tl.from('#sl2 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 16.730);
+  tl.to('#sl2 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 27.190);
+  tl.from('#sl3 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 27.540);
+  tl.from('#sl3 .st', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 28.090);
+  tl.from('#sl3 .line', { scaleX: 0, duration: 6.40, ease: 'none' }, 28.090);
+  tl.to('#sl3 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 36.910);
+  tl.from('#sl4 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 37.260);
+  tl.from('#sl4 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.52 }, 37.810);
+  tl.to('#sl4 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 45.590);
+  tl.from('#sl5 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 45.940);
+  tl.from('#sl5 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 46.490);
+  tl.to('#sl5 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 55.950);
+  tl.from('#sl6 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 56.300);
+  tl.to('#sl6 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 65.470);
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 65.770);
+  window.__timelines['main'] = tl;
+</script>
+</body></html>
