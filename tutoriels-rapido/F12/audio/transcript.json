@@ -1,0 +1,1058 @@
+[
+  {
+    "text": "Un",
+    "start": 0.05,
+    "end": 0.13,
+    "id": "w0"
+  },
+  {
+    "text": "pipeline",
+    "start": 0.13,
+    "end": 0.65,
+    "id": "w1"
+  },
+  {
+    "text": "bien",
+    "start": 0.65,
+    "end": 0.89,
+    "id": "w2"
+  },
+  {
+    "text": "tenu",
+    "start": 0.97,
+    "end": 1.16,
+    "id": "w3"
+  },
+  {
+    "text": "vous",
+    "start": 1.16,
+    "end": 1.42,
+    "id": "w4"
+  },
+  {
+    "text": "dit",
+    "start": 1.42,
+    "end": 1.61,
+    "id": "w5"
+  },
+  {
+    "text": "combien",
+    "start": 1.61,
+    "end": 2.1,
+    "id": "w6"
+  },
+  {
+    "text": "vous",
+    "start": 2.1,
+    "end": 2.3,
+    "id": "w7"
+  },
+  {
+    "text": "allez",
+    "start": 2.3,
+    "end": 2.56,
+    "id": "w8"
+  },
+  {
+    "text": "signer",
+    "start": 2.56,
+    "end": 2.95,
+    "id": "w9"
+  },
+  {
+    "text": "ce",
+    "start": 2.95,
+    "end": 3.08,
+    "id": "w10"
+  },
+  {
+    "text": "mois-ci.",
+    "start": 3.08,
+    "end": 3.75,
+    "id": "w11"
+  },
+  {
+    "text": "Voici",
+    "start": 3.82,
+    "end": 4.09,
+    "id": "w12"
+  },
+  {
+    "text": "comment",
+    "start": 4.15,
+    "end": 4.65,
+    "id": "w13"
+  },
+  {
+    "text": "piloter",
+    "start": 4.73,
+    "end": 5.18,
+    "id": "w14"
+  },
+  {
+    "text": "le",
+    "start": 5.18,
+    "end": 5.33,
+    "id": "w15"
+  },
+  {
+    "text": "vôtre",
+    "start": 5.33,
+    "end": 5.69,
+    "id": "w16"
+  },
+  {
+    "text": "dans",
+    "start": 5.69,
+    "end": 5.99,
+    "id": "w17"
+  },
+  {
+    "text": "Rapido",
+    "start": 5.99,
+    "end": 6.43,
+    "id": "w18"
+  },
+  {
+    "text": "CRM.",
+    "start": 6.43,
+    "end": 6.72,
+    "id": "w19"
+  },
+  {
+    "text": "1.",
+    "start": 6.78,
+    "end": 7.72,
+    "id": "w20"
+  },
+  {
+    "text": "Des",
+    "start": 7.72,
+    "end": 7.92,
+    "id": "w21"
+  },
+  {
+    "text": "étapes",
+    "start": 7.92,
+    "end": 8.31,
+    "id": "w22"
+  },
+  {
+    "text": "claires.",
+    "start": 8.31,
+    "end": 8.8,
+    "id": "w23"
+  },
+  {
+    "text": "Par",
+    "start": 8.86,
+    "end": 8.95,
+    "id": "w24"
+  },
+  {
+    "text": "défaut,",
+    "start": 9.02,
+    "end": 9.48,
+    "id": "w25"
+  },
+  {
+    "text": "de",
+    "start": 9.52,
+    "end": 9.65,
+    "id": "w26"
+  },
+  {
+    "text": "nouveaux",
+    "start": 9.65,
+    "end": 10.18,
+    "id": "w27"
+  },
+  {
+    "text": "prospects",
+    "start": 10.18,
+    "end": 10.77,
+    "id": "w28"
+  },
+  {
+    "text": "à",
+    "start": 10.77,
+    "end": 10.83,
+    "id": "w29"
+  },
+  {
+    "text": "négociation",
+    "start": 10.83,
+    "end": 11.6,
+    "id": "w30"
+  },
+  {
+    "text": "puis",
+    "start": 11.6,
+    "end": 12.05,
+    "id": "w31"
+  },
+  {
+    "text": "gagné",
+    "start": 12.05,
+    "end": 12.63,
+    "id": "w32"
+  },
+  {
+    "text": "ou",
+    "start": 12.63,
+    "end": 12.86,
+    "id": "w33"
+  },
+  {
+    "text": "perdu.",
+    "start": 12.86,
+    "end": 13.45,
+    "id": "w34"
+  },
+  {
+    "text": "Une",
+    "start": 13.54,
+    "end": 13.63,
+    "id": "w35"
+  },
+  {
+    "text": "affaire",
+    "start": 13.7,
+    "end": 14.05,
+    "id": "w36"
+  },
+  {
+    "text": "avance",
+    "start": 14.05,
+    "end": 14.37,
+    "id": "w37"
+  },
+  {
+    "text": "quand",
+    "start": 14.45,
+    "end": 14.68,
+    "id": "w38"
+  },
+  {
+    "text": "le",
+    "start": 14.68,
+    "end": 14.77,
+    "id": "w39"
+  },
+  {
+    "text": "client",
+    "start": 14.78,
+    "end": 15.12,
+    "id": "w40"
+  },
+  {
+    "text": "fait",
+    "start": 15.23,
+    "end": 15.37,
+    "id": "w41"
+  },
+  {
+    "text": "un",
+    "start": 15.37,
+    "end": 15.48,
+    "id": "w42"
+  },
+  {
+    "text": "pas,",
+    "start": 15.48,
+    "end": 15.84,
+    "id": "w43"
+  },
+  {
+    "text": "pas",
+    "start": 15.84,
+    "end": 15.99,
+    "id": "w44"
+  },
+  {
+    "text": "quand",
+    "start": 15.99,
+    "end": 16.24,
+    "id": "w45"
+  },
+  {
+    "text": "vous",
+    "start": 16.24,
+    "end": 16.44,
+    "id": "w46"
+  },
+  {
+    "text": "l'espérez.",
+    "start": 16.44,
+    "end": 17.08,
+    "id": "w47"
+  },
+  {
+    "text": "2.",
+    "start": 17.13,
+    "end": 17.6,
+    "id": "w48"
+  },
+  {
+    "text": "Une",
+    "start": 17.6,
+    "end": 17.86,
+    "id": "w49"
+  },
+  {
+    "text": "probabilité",
+    "start": 17.86,
+    "end": 18.72,
+    "id": "w50"
+  },
+  {
+    "text": "par",
+    "start": 18.83,
+    "end": 19.08,
+    "id": "w51"
+  },
+  {
+    "text": "étape.",
+    "start": 19.08,
+    "end": 19.56,
+    "id": "w52"
+  },
+  {
+    "text": "10%",
+    "start": 19.62,
+    "end": 20.05,
+    "id": "w53"
+  },
+  {
+    "text": "pour",
+    "start": 20.05,
+    "end": 20.33,
+    "id": "w54"
+  },
+  {
+    "text": "un",
+    "start": 20.33,
+    "end": 20.45,
+    "id": "w55"
+  },
+  {
+    "text": "nouveau",
+    "start": 20.53,
+    "end": 20.96,
+    "id": "w56"
+  },
+  {
+    "text": "prospect,",
+    "start": 20.96,
+    "end": 21.66,
+    "id": "w57"
+  },
+  {
+    "text": "75",
+    "start": 21.66,
+    "end": 22.08,
+    "id": "w58"
+  },
+  {
+    "text": "en",
+    "start": 22.08,
+    "end": 22.22,
+    "id": "w59"
+  },
+  {
+    "text": "négociation.",
+    "start": 22.22,
+    "end": 23.24,
+    "id": "w60"
+  },
+  {
+    "text": "Vous",
+    "start": 23.3,
+    "end": 23.39,
+    "id": "w61"
+  },
+  {
+    "text": "les",
+    "start": 23.46,
+    "end": 23.57,
+    "id": "w62"
+  },
+  {
+    "text": "ajustez",
+    "start": 23.63,
+    "end": 23.98,
+    "id": "w63"
+  },
+  {
+    "text": "dans",
+    "start": 23.98,
+    "end": 24.13,
+    "id": "w64"
+  },
+  {
+    "text": "les",
+    "start": 24.21,
+    "end": 24.35,
+    "id": "w65"
+  },
+  {
+    "text": "réglages",
+    "start": 24.35,
+    "end": 24.76,
+    "id": "w66"
+  },
+  {
+    "text": "du",
+    "start": 24.76,
+    "end": 24.86,
+    "id": "w67"
+  },
+  {
+    "text": "pipeline.",
+    "start": 24.86,
+    "end": 25.5,
+    "id": "w68"
+  },
+  {
+    "text": "3.",
+    "start": 25.57,
+    "end": 26.04,
+    "id": "w69"
+  },
+  {
+    "text": "Le",
+    "start": 26.04,
+    "end": 26.2,
+    "id": "w70"
+  },
+  {
+    "text": "prévisionnel",
+    "start": 26.22,
+    "end": 27.16,
+    "id": "w71"
+  },
+  {
+    "text": "pondéré.",
+    "start": 27.27,
+    "end": 27.92,
+    "id": "w72"
+  },
+  {
+    "text": "Rapido",
+    "start": 27.98,
+    "end": 28.25,
+    "id": "w73"
+  },
+  {
+    "text": "CRM",
+    "start": 28.31,
+    "end": 28.51,
+    "id": "w74"
+  },
+  {
+    "text": "multiplie",
+    "start": 28.51,
+    "end": 29.11,
+    "id": "w75"
+  },
+  {
+    "text": "chaque",
+    "start": 29.11,
+    "end": 29.51,
+    "id": "w76"
+  },
+  {
+    "text": "montant",
+    "start": 29.51,
+    "end": 29.98,
+    "id": "w77"
+  },
+  {
+    "text": "par",
+    "start": 29.98,
+    "end": 30.18,
+    "id": "w78"
+  },
+  {
+    "text": "sa",
+    "start": 30.18,
+    "end": 30.31,
+    "id": "w79"
+  },
+  {
+    "text": "probabilité.",
+    "start": 30.31,
+    "end": 31.22,
+    "id": "w80"
+  },
+  {
+    "text": "Une",
+    "start": 31.38,
+    "end": 31.47,
+    "id": "w81"
+  },
+  {
+    "text": "affaire",
+    "start": 31.54,
+    "end": 31.88,
+    "id": "w82"
+  },
+  {
+    "text": "de",
+    "start": 31.88,
+    "end": 31.99,
+    "id": "w83"
+  },
+  {
+    "text": "10",
+    "start": 31.99,
+    "end": 32.33,
+    "id": "w84"
+  },
+  {
+    "text": "000",
+    "start": 32.33,
+    "end": 32.84,
+    "id": "w85"
+  },
+  {
+    "text": "euros",
+    "start": 32.84,
+    "end": 33.09,
+    "id": "w86"
+  },
+  {
+    "text": "à",
+    "start": 33.11,
+    "end": 33.17,
+    "id": "w87"
+  },
+  {
+    "text": "60%",
+    "start": 33.17,
+    "end": 33.56,
+    "id": "w88"
+  },
+  {
+    "text": "compte",
+    "start": 33.56,
+    "end": 33.9,
+    "id": "w89"
+  },
+  {
+    "text": "pour",
+    "start": 33.9,
+    "end": 34.12,
+    "id": "w90"
+  },
+  {
+    "text": "6000.",
+    "start": 34.12,
+    "end": 35.04,
+    "id": "w91"
+  },
+  {
+    "text": "4.",
+    "start": 35.1,
+    "end": 35.44,
+    "id": "w92"
+  },
+  {
+    "text": "Les",
+    "start": 35.47,
+    "end": 35.7,
+    "id": "w93"
+  },
+  {
+    "text": "affaires",
+    "start": 35.7,
+    "end": 36.29,
+    "id": "w94"
+  },
+  {
+    "text": "qui",
+    "start": 36.29,
+    "end": 36.51,
+    "id": "w95"
+  },
+  {
+    "text": "stagnent.",
+    "start": 36.51,
+    "end": 37.12,
+    "id": "w96"
+  },
+  {
+    "text": "Sans",
+    "start": 37.18,
+    "end": 37.27,
+    "id": "w97"
+  },
+  {
+    "text": "mouvement",
+    "start": 37.34,
+    "end": 37.8,
+    "id": "w98"
+  },
+  {
+    "text": "depuis",
+    "start": 37.84,
+    "end": 38.16,
+    "id": "w99"
+  },
+  {
+    "text": "14",
+    "start": 38.16,
+    "end": 38.49,
+    "id": "w100"
+  },
+  {
+    "text": "jours,",
+    "start": 38.49,
+    "end": 38.76,
+    "id": "w101"
+  },
+  {
+    "text": "elles",
+    "start": 38.87,
+    "end": 39.14,
+    "id": "w102"
+  },
+  {
+    "text": "sont",
+    "start": 39.14,
+    "end": 39.36,
+    "id": "w103"
+  },
+  {
+    "text": "signalées.",
+    "start": 39.36,
+    "end": 40.04,
+    "id": "w104"
+  },
+  {
+    "text": "Le",
+    "start": 40.09,
+    "end": 40.18,
+    "id": "w105"
+  },
+  {
+    "text": "seuil",
+    "start": 40.18,
+    "end": 40.53,
+    "id": "w106"
+  },
+  {
+    "text": "se",
+    "start": 40.53,
+    "end": 40.67,
+    "id": "w107"
+  },
+  {
+    "text": "règle",
+    "start": 40.67,
+    "end": 41.02,
+    "id": "w108"
+  },
+  {
+    "text": "étape",
+    "start": 41.02,
+    "end": 41.33,
+    "id": "w109"
+  },
+  {
+    "text": "par",
+    "start": 41.37,
+    "end": 41.58,
+    "id": "w110"
+  },
+  {
+    "text": "étape.",
+    "start": 41.58,
+    "end": 42.16,
+    "id": "w111"
+  },
+  {
+    "text": "Chaque",
+    "start": 42.22,
+    "end": 42.48,
+    "id": "w112"
+  },
+  {
+    "text": "lundi,",
+    "start": 42.48,
+    "end": 42.83,
+    "id": "w113"
+  },
+  {
+    "text": "10",
+    "start": 42.83,
+    "end": 43.16,
+    "id": "w114"
+  },
+  {
+    "text": "minutes",
+    "start": 43.16,
+    "end": 43.54,
+    "id": "w115"
+  },
+  {
+    "text": "suffisent.",
+    "start": 43.54,
+    "end": 44.24,
+    "id": "w116"
+  },
+  {
+    "text": "Relancer",
+    "start": 44.3,
+    "end": 44.77,
+    "id": "w117"
+  },
+  {
+    "text": "ce",
+    "start": 44.77,
+    "end": 44.9,
+    "id": "w118"
+  },
+  {
+    "text": "qui",
+    "start": 44.9,
+    "end": 45.1,
+    "id": "w119"
+  },
+  {
+    "text": "stagne,",
+    "start": 45.1,
+    "end": 45.64,
+    "id": "w120"
+  },
+  {
+    "text": "fermer",
+    "start": 45.64,
+    "end": 45.99,
+    "id": "w121"
+  },
+  {
+    "text": "ce",
+    "start": 46,
+    "end": 46.12,
+    "id": "w122"
+  },
+  {
+    "text": "qui",
+    "start": 46.12,
+    "end": 46.3,
+    "id": "w123"
+  },
+  {
+    "text": "est",
+    "start": 46.3,
+    "end": 46.48,
+    "id": "w124"
+  },
+  {
+    "text": "perdu,",
+    "start": 46.48,
+    "end": 46.96,
+    "id": "w125"
+  },
+  {
+    "text": "mettez",
+    "start": 46.96,
+    "end": 47.35,
+    "id": "w126"
+  },
+  {
+    "text": "les",
+    "start": 47.35,
+    "end": 47.54,
+    "id": "w127"
+  },
+  {
+    "text": "montants",
+    "start": 47.56,
+    "end": 48.07,
+    "id": "w128"
+  },
+  {
+    "text": "à",
+    "start": 48.08,
+    "end": 48.14,
+    "id": "w129"
+  },
+  {
+    "text": "jour.",
+    "start": 48.14,
+    "end": 48.44,
+    "id": "w130"
+  },
+  {
+    "text": "Et",
+    "start": 48.49,
+    "end": 48.57,
+    "id": "w131"
+  },
+  {
+    "text": "si",
+    "start": 48.57,
+    "end": 48.7,
+    "id": "w132"
+  },
+  {
+    "text": "votre",
+    "start": 48.7,
+    "end": 49.02,
+    "id": "w133"
+  },
+  {
+    "text": "assistant",
+    "start": 49.02,
+    "end": 49.6,
+    "id": "w134"
+  },
+  {
+    "text": "IA",
+    "start": 49.6,
+    "end": 49.71,
+    "id": "w135"
+  },
+  {
+    "text": "est",
+    "start": 49.72,
+    "end": 49.91,
+    "id": "w136"
+  },
+  {
+    "text": "connecté,",
+    "start": 49.91,
+    "end": 50.6,
+    "id": "w137"
+  },
+  {
+    "text": "demandez-lui",
+    "start": 50.6,
+    "end": 51.52,
+    "id": "w138"
+  },
+  {
+    "text": "où",
+    "start": 51.52,
+    "end": 51.64,
+    "id": "w139"
+  },
+  {
+    "text": "en",
+    "start": 51.64,
+    "end": 51.74,
+    "id": "w140"
+  },
+  {
+    "text": "est",
+    "start": 51.76,
+    "end": 51.79,
+    "id": "w141"
+  },
+  {
+    "text": "mon",
+    "start": 52.05,
+    "end": 52.14,
+    "id": "w142"
+  },
+  {
+    "text": "pipeline?",
+    "start": 52.26,
+    "end": 52.83,
+    "id": "w143"
+  },
+  {
+    "text": "Il",
+    "start": 52.93,
+    "end": 53.01,
+    "id": "w144"
+  },
+  {
+    "text": "vous",
+    "start": 53.01,
+    "end": 53.28,
+    "id": "w145"
+  },
+  {
+    "text": "répond",
+    "start": 53.28,
+    "end": 53.68,
+    "id": "w146"
+  },
+  {
+    "text": "étape",
+    "start": 53.68,
+    "end": 54.01,
+    "id": "w147"
+  },
+  {
+    "text": "par",
+    "start": 54.01,
+    "end": 54.15,
+    "id": "w148"
+  },
+  {
+    "text": "étape,",
+    "start": 54.21,
+    "end": 54.65,
+    "id": "w149"
+  },
+  {
+    "text": "affaire",
+    "start": 54.68,
+    "end": 55.14,
+    "id": "w150"
+  },
+  {
+    "text": "par",
+    "start": 55.14,
+    "end": 55.34,
+    "id": "w151"
+  },
+  {
+    "text": "affaire.",
+    "start": 55.34,
+    "end": 56.08,
+    "id": "w152"
+  },
+  {
+    "text": "Des",
+    "start": 56.14,
+    "end": 56.23,
+    "id": "w153"
+  },
+  {
+    "text": "étapes",
+    "start": 56.3,
+    "end": 56.58,
+    "id": "w154"
+  },
+  {
+    "text": "claires,",
+    "start": 56.58,
+    "end": 57.09,
+    "id": "w155"
+  },
+  {
+    "text": "des",
+    "start": 57.09,
+    "end": 57.26,
+    "id": "w156"
+  },
+  {
+    "text": "probabilités",
+    "start": 57.26,
+    "end": 57.96,
+    "id": "w157"
+  },
+  {
+    "text": "justes,",
+    "start": 57.96,
+    "end": 58.52,
+    "id": "w158"
+  },
+  {
+    "text": "un",
+    "start": 58.52,
+    "end": 58.67,
+    "id": "w159"
+  },
+  {
+    "text": "rituel",
+    "start": 58.67,
+    "end": 59.13,
+    "id": "w160"
+  },
+  {
+    "text": "chaque",
+    "start": 59.13,
+    "end": 59.38,
+    "id": "w161"
+  },
+  {
+    "text": "semaine,",
+    "start": 59.9,
+    "end": 60.16,
+    "id": "w162"
+  },
+  {
+    "text": "votre",
+    "start": 60.21,
+    "end": 60.49,
+    "id": "w163"
+  },
+  {
+    "text": "prévision",
+    "start": 60.56,
+    "end": 61.16,
+    "id": "w164"
+  },
+  {
+    "text": "devient",
+    "start": 61.16,
+    "end": 61.66,
+    "id": "w165"
+  },
+  {
+    "text": "fiable.",
+    "start": 61.66,
+    "end": 62.32,
+    "id": "w166"
+  },
+  {
+    "text": "Dans",
+    "start": 62.38,
+    "end": 62.47,
+    "id": "w167"
+  },
+  {
+    "text": "la",
+    "start": 62.54,
+    "end": 62.65,
+    "id": "w168"
+  },
+  {
+    "text": "prochaine",
+    "start": 62.65,
+    "end": 63.16,
+    "id": "w169"
+  },
+  {
+    "text": "formation,",
+    "start": 63.16,
+    "end": 63.8,
+    "id": "w170"
+  },
+  {
+    "text": "le",
+    "start": 63.8,
+    "end": 63.94,
+    "id": "w171"
+  },
+  {
+    "text": "Devis",
+    "start": 63.94,
+    "end": 64.29,
+    "id": "w172"
+  },
+  {
+    "text": "qui",
+    "start": 64.29,
+    "end": 64.5,
+    "id": "w173"
+  },
+  {
+    "text": "se",
+    "start": 64.5,
+    "end": 64.64,
+    "id": "w174"
+  },
+  {
+    "text": "signe.",
+    "start": 64.64,
+    "end": 65.24,
+    "id": "w175"
+  }
+]

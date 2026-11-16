@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#4CAF50; --b:#9BE15D; --grad:linear-gradient(100deg,#4CAF50,#9BE15D); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(130px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.42; }
+  .h2 { width:760px; height:640px; left:-280px; bottom:-340px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .slide .inner { position:absolute; inset:110px 150px 190px; display:flex; flex-direction:column; justify-content:center; }
+  .slide h1 { font-size:118px; line-height:.96; font-weight:800; letter-spacing:-.045em; text-wrap:balance; }
+  .slide h2 { font-size:86px; line-height:1; font-weight:800; letter-spacing:-.04em; margin-bottom:56px; text-wrap:balance; }
+  .kick { font-family:'Geist Mono',monospace; font-size:26px; letter-spacing:.16em; text-transform:uppercase; color:rgba(255,255,255,.65); margin-bottom:28px; }
+  .points { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .pt { display:flex; gap:22px; align-items:center; padding:26px 30px; border-radius:24px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); font-size:40px; font-weight:500; line-height:1.25; }
+  .pt b, .st b { flex:none; width:62px; height:62px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:28px; }
+  .steps { position:relative; display:flex; gap:28px; }
+  .steps .line { position:absolute; left:31px; right:31px; top:31px; height:3px; background:var(--grad); transform-origin:left; }
+  .st { position:relative; flex:1; display:flex; flex-direction:column; gap:22px; font-size:38px; font-weight:500; line-height:1.25; }
+  .cmp { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+  .col { padding:36px; border-radius:28px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.04); }
+  .col.r { border-color:var(--a); background:color-mix(in srgb,var(--a) 14%,transparent); box-shadow:0 0 60px -20px var(--a); }
+  .col h3 { font-size:30px; font-family:'Geist Mono',monospace; letter-spacing:.12em; text-transform:uppercase; margin-bottom:22px; color:rgba(255,255,255,.7); }
+  .col.r h3 { color:var(--b); }
+  .col p { font-size:38px; line-height:1.35; margin-top:14px; }
+  .chat { width:1300px; border-radius:28px; background:#262624; border:1px solid rgba(255,255,255,.12); padding:36px; display:flex; flex-direction:column; gap:26px; box-shadow:0 40px 100px -30px rgba(0,0,0,.9); }
+  .chat .q { align-self:flex-end; max-width:85%; background:#141413; border:1px solid rgba(255,255,255,.1); border-radius:20px; padding:20px 26px; font-size:32px; line-height:1.4; min-height:84px; }
+  .chat .a { display:flex; gap:20px; font-size:30px; line-height:1.45; color:#f5f4ef; }
+  .chat .a p { margin-bottom:10px; }
+  .glyph { color:#d97757; font-size:36px; }
+  .take { font-size:96px; line-height:1.02; font-weight:800; letter-spacing:-.04em; text-align:center; text-wrap:balance; }
+  .sub { position:absolute; inset:auto 0 70px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; white-space:nowrap; }
+  .bar { position:absolute; left:150px; right:150px; bottom:34px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:60px; top:44px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .card h1 { margin-top:40px; font-size:122px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1600px; text-wrap:balance; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style></head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="74.66" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">Formation Rapido</div>
+  <div class="slide clip" id="sl0" data-start="3.020" data-duration="9.300" data-track-index="2"><div class="inner"><div class="kick">Fidélisation · Trois leviers</div><h1>Des clients qui <em>reviennent</em></h1></div></div>
+  <div class="slide clip" id="sl1" data-start="11.820" data-duration="8.660" data-track-index="2"><div class="inner"><h2>1 · Le <em>programme</em></h2><div class="points"><div class="pt"><b>1</b><span>Tampons ou points</span></div><div class="pt"><b>2</b><span>Paliers de récompense</span></div><div class="pt"><b>3</b><span>Bienvenue, anniversaire</span></div><div class="pt"><b>4</b><span>Parrainage</span></div></div></div></div>
+  <div class="slide clip" id="sl2" data-start="19.980" data-duration="12.060" data-track-index="2"><div class="inner"><h2>2 · Les <em>jeux concours</em></h2><div class="points"><div class="pt"><b>1</b><span>Roue, grattage, machine à sous</span></div><div class="pt"><b>2</b><span>Tirage côté serveur</span></div><div class="pt"><b>3</b><span>Lots avec stock</span></div><div class="pt"><b>4</b><span>Code de gain unique</span></div></div></div></div>
+  <div class="slide clip" id="sl3" data-start="31.540" data-duration="7.060" data-track-index="2"><div class="inner"><h2>Un contact <em>qualifié</em></h2><div class="cmp"><div class="col l"><h3>Liste achetée</h3><p>Inconnus</p><p>Aucun accord</p></div><div class="col r"><h3>Participant</h3><p>Consentement</p><p>Règlement accepté</p></div></div></div></div>
+  <div class="slide clip" id="sl4" data-start="38.100" data-duration="10.220" data-track-index="2"><div class="inner"><h2>3 · Les <em>avis</em></h2><div class="points"><div class="pt"><b>1</b><span>Note de 1 à 5</span></div><div class="pt"><b>2</b><span>Moyenne</span></div><div class="pt"><b>3</b><span>Répartition</span></div><div class="pt"><b>4</b><span>Évolution mensuelle</span></div></div></div></div>
+  <div class="slide clip" id="sl5" data-start="47.820" data-duration="8.060" data-track-index="2"><div class="inner"><h2>Après le <em>service client</em></h2><div class="steps"><i class="line"></i><div class="st"><b>1</b><span>Ticket résolu</span></div><div class="st"><b>2</b><span>Lien d&#x27;avis envoyé</span></div><div class="st"><b>3</b><span>Satisfaction mesurée</span></div></div></div></div>
+  <div class="slide clip" id="sl6" data-start="55.380" data-duration="6.500" data-track-index="2"><div class="inner"><h2>Le bon <em>rythme</em></h2><div class="steps"><i class="line"></i><div class="st"><b>1</b><span>Programme : toute l&#x27;année</span></div><div class="st"><b>2</b><span>Jeu : un temps fort</span></div><div class="st"><b>3</b><span>Avis : chaque mois</span></div></div></div></div>
+  <div class="slide clip" id="sl7" data-start="61.380" data-duration="9.280" data-track-index="2"><div class="inner"><div class="take">Récompenser, animer, <em>écouter</em></div></div></div>
+  <div class="sub clip" id="s0" data-start="3.020" data-duration="1.640" data-track-index="7"><span>Garder un client coûte bien moins</span></div>
+  <div class="sub clip" id="s1" data-start="4.680" data-duration="1.680" data-track-index="7"><span>cher que d&#x27;en trouver un nouveau</span></div>
+  <div class="sub clip" id="s2" data-start="6.380" data-duration="1.888" data-track-index="7"><span>Trois leviers dans RapidoCRM</span></div>
+  <div class="sub clip" id="s3" data-start="8.340" data-duration="1.400" data-track-index="7"><span>le programme de fidélité</span></div>
+  <div class="sub clip" id="s4" data-start="9.760" data-duration="2.040" data-track-index="7"><span>les jeux concours et les avis</span></div>
+  <div class="sub clip" id="s5" data-start="11.820" data-duration="2.140" data-track-index="7"><span>Un : le programme de fidélité</span></div>
+  <div class="sub clip" id="s6" data-start="13.980" data-duration="1.400" data-track-index="7"><span>Des tampons ou des points</span></div>
+  <div class="sub clip" id="s7" data-start="15.400" data-duration="1.258" data-track-index="7"><span>des paliers de récompense</span></div>
+  <div class="sub clip" id="s8" data-start="16.700" data-duration="1.280" data-track-index="7"><span>et des bonus de bienvenue</span></div>
+  <div class="sub clip" id="s9" data-start="18.000" data-duration="1.960" data-track-index="7"><span>d&#x27;anniversaire ou de parrainage</span></div>
+  <div class="sub clip" id="s10" data-start="19.980" data-duration="1.973" data-track-index="7"><span>Deux : les jeux concours</span></div>
+  <div class="sub clip" id="s11" data-start="21.973" data-duration="1.382" data-track-index="7"><span>Roue, carte à gratter</span></div>
+  <div class="sub clip" id="s12" data-start="23.375" data-duration="1.888" data-track-index="7"><span>machine à sous ou boîte mystère</span></div>
+  <div class="sub clip" id="s13" data-start="25.340" data-duration="1.840" data-track-index="7"><span>Le tirage se fait côté serveur</span></div>
+  <div class="sub clip" id="s14" data-start="27.200" data-duration="1.190" data-track-index="7"><span>les lots ont un stock</span></div>
+  <div class="sub clip" id="s15" data-start="28.580" data-duration="1.340" data-track-index="7"><span>et chaque gain porte un code</span></div>
+  <div class="sub clip" id="s16" data-start="29.940" data-duration="1.580" data-track-index="7"><span>vérifiable une seule fois</span></div>
+  <div class="sub clip" id="s17" data-start="31.540" data-duration="1.840" data-track-index="7"><span>Le participant donne son consentement et</span></div>
+  <div class="sub clip" id="s18" data-start="33.400" data-duration="1.220" data-track-index="7"><span>accepte le règlement</span></div>
+  <div class="sub clip" id="s19" data-start="34.740" data-duration="1.990" data-track-index="7"><span>Vous récupérez un contact qualifié</span></div>
+  <div class="sub clip" id="s20" data-start="36.750" data-duration="1.330" data-track-index="7"><span>pas une liste achetée</span></div>
+  <div class="sub clip" id="s21" data-start="38.100" data-duration="1.580" data-track-index="7"><span>Trois : les avis</span></div>
+  <div class="sub clip" id="s22" data-start="39.700" data-duration="2.110" data-track-index="7"><span>Notez la satisfaction de chaque client</span></div>
+  <div class="sub clip" id="s23" data-start="41.830" data-duration="1.410" data-track-index="7"><span>de une à cinq étoiles</span></div>
+  <div class="sub clip" id="s24" data-start="43.282" data-duration="1.867" data-track-index="7"><span>RapidoCRM calcule la moyenne</span></div>
+  <div class="sub clip" id="s25" data-start="45.170" data-duration="2.630" data-track-index="7"><span>la répartition et l&#x27;évolution mois par mois</span></div>
+  <div class="sub clip" id="s26" data-start="47.820" data-duration="1.330" data-track-index="7"><span>Et quand un ticket de service</span></div>
+  <div class="sub clip" id="s27" data-start="49.170" data-duration="0.910" data-track-index="7"><span>client est résolu</span></div>
+  <div class="sub clip" id="s28" data-start="50.100" data-duration="1.400" data-track-index="7"><span>le client reçoit un lien pour</span></div>
+  <div class="sub clip" id="s29" data-start="51.520" data-duration="1.000" data-track-index="7"><span>donner son avis</span></div>
+  <div class="sub clip" id="s30" data-start="52.540" data-duration="1.160" data-track-index="7"><span>Vous savez tout de suite si</span></div>
+  <div class="sub clip" id="s31" data-start="53.720" data-duration="1.640" data-track-index="7"><span>le problème est vraiment réglé</span></div>
+  <div class="sub clip" id="s32" data-start="55.380" data-duration="1.060" data-track-index="7"><span>Le bon rythme</span></div>
+  <div class="sub clip" id="s33" data-start="56.460" data-duration="1.400" data-track-index="7"><span>le programme toute l&#x27;année</span></div>
+  <div class="sub clip" id="s34" data-start="57.880" data-duration="1.480" data-track-index="7"><span>un jeu pour un temps fort</span></div>
+  <div class="sub clip" id="s35" data-start="59.380" data-duration="1.980" data-track-index="7"><span>et les avis regardés chaque mois</span></div>
+  <div class="sub clip" id="s36" data-start="61.380" data-duration="1.750" data-track-index="7"><span>Récompenser, animer</span></div>
+  <div class="sub clip" id="s37" data-start="63.150" data-duration="2.230" data-track-index="7"><span>écouter : trois raisons pour vos clients</span></div>
+  <div class="sub clip" id="s38" data-start="65.400" data-duration="0.760" data-track-index="7"><span>de revenir</span></div>
+  <div class="sub clip" id="s39" data-start="66.180" data-duration="1.480" data-track-index="7"><span>Dans la prochaine formation</span></div>
+  <div class="sub clip" id="s40" data-start="67.680" data-duration="2.200" data-track-index="7"><span>la fidélité digitale en détail</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="67.16000000000001" data-track-index="10" data-volume="1"></audio>
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative"><div class="top"><span class="num">F15</span><span class="kick" style="margin:0">Formation · Fidélisation</span></div>
+    <h1><em>Fidéliser</em> : programmes, jeux concours, avis</h1></div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+  <div class="clip card" id="outro" data-start="69.86000000000001" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative"><h2>Merci d'avoir <em>regardé</em></h2><p>Prochaine formation : la fidélité digitale en détail</p></div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware</div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .to('#intro', { opacity: 0, duration: .6, ease: 'power2.in' }, 3.0);
+  tl.to('#bar', { scaleX: 1, duration: 67.16000000000001, ease: 'none' }, 3.0);
+  tl.from('#sl0 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 3.070);
+  tl.to('#sl0 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 11.520);
+  tl.from('#sl1 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 11.870);
+  tl.from('#sl1 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.43 }, 12.420);
+  tl.to('#sl1 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 19.680);
+  tl.from('#sl2 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 20.030);
+  tl.from('#sl2 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 20.580);
+  tl.to('#sl2 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 31.240);
+  tl.from('#sl3 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 31.590);
+  tl.from('#sl3 .col.l p', { opacity: 0, x: -30, stagger: .25, duration: .5 }, 32.140)
+    .from('#sl3 .col.r', { opacity: 0, scale: .94, duration: .7, ease: 'back.out(1.6)' }, 34.492)
+    .from('#sl3 .col.r p', { opacity: 0, x: 30, stagger: .25, duration: .5 }, 34.792);
+  tl.to('#sl3 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 37.800);
+  tl.from('#sl4 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 38.150);
+  tl.from('#sl4 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 38.700);
+  tl.to('#sl4 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 47.520);
+  tl.from('#sl5 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 47.870);
+  tl.from('#sl5 .st', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 48.420);
+  tl.from('#sl5 .line', { scaleX: 0, duration: 4.80, ease: 'none' }, 48.420);
+  tl.to('#sl5 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 55.080);
+  tl.from('#sl6 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 55.430);
+  tl.from('#sl6 .st', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.40 }, 55.980);
+  tl.from('#sl6 .line', { scaleX: 0, duration: 4.20, ease: 'none' }, 55.980);
+  tl.to('#sl6 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 61.080);
+  tl.from('#sl7 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 61.430);
+  tl.to('#sl7 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 69.860);
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 70.160);
+  window.__timelines['main'] = tl;
+</script>
+</body></html>

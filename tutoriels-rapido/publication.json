@@ -400,6 +400,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM41.png"
   },
   {
+    "id": "CRM42",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "L'abonnement et les packs",
+    "tag": "1 min · Débutant",
+    "duree_s": 56,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM42.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM42.png"
+  },
+  {
     "id": "CRM43",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM · IA",
@@ -500,6 +510,36 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM52.png"
   },
   {
+    "id": "CRM56",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Les lead magnets",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 59,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM56.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM56.png"
+  },
+  {
+    "id": "CRM57",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Le tunnel de vente créé par Claude",
+    "tag": "1 min · Intermédiaire",
+    "duree_s": 56,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM57.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM57.png"
+  },
+  {
+    "id": "CRM58",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "La bibliothèque partagée",
+    "tag": "1 min · Débutant",
+    "duree_s": 62,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM58.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM58.png"
+  },
+  {
     "id": "CRM59",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",
@@ -518,6 +558,16 @@
     "duree_s": 51,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM60.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM60.png"
+  },
+  {
+    "id": "CRM61",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Un prompt pour chaque outil",
+    "tag": "1 min · Débutant",
+    "duree_s": 45,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM61.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM61.png"
   },
   {
     "id": "CRM62",
@@ -698,6 +748,116 @@
     "duree_s": 98,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F02.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F02.png"
+  },
+  {
+    "id": "F11",
+    "produit": "crm",
+    "kicker": "Formation · Prospection",
+    "titre": "Le cold email qui obtient des réponses",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 71,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F11.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F11.png"
+  },
+  {
+    "id": "F21",
+    "produit": "suite",
+    "kicker": "Formation · IA",
+    "titre": "Comprendre l'IA générative pour son entreprise",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 72,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F21.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F21.png"
+  },
+  {
+    "id": "F22",
+    "produit": "suite",
+    "kicker": "Formation · IA",
+    "titre": "Bien écrire un prompt",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 72,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F22.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F22.png"
+  },
+  {
+    "id": "F23",
+    "produit": "suite",
+    "kicker": "Formation · IA",
+    "titre": "Qu'est-ce qu'un connecteur MCP ?",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 70,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F23.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F23.png"
+  },
+  {
+    "id": "F24",
+    "produit": "suite",
+    "kicker": "Formation · IA",
+    "titre": "Brancher la suite Rapido à Claude",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 62,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F24.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F24.png"
+  },
+  {
+    "id": "F25",
+    "produit": "suite",
+    "kicker": "Formation · IA",
+    "titre": "Agents IA : déléguer sans perdre le contrôle",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 67,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F25.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F25.png"
+  },
+  {
+    "id": "F26",
+    "produit": "crm",
+    "kicker": "Formation · Automatisation",
+    "titre": "Automatiser avec les workflows Rapido",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 62,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F26.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F26.png"
+  },
+  {
+    "id": "F40",
+    "produit": "crm",
+    "kicker": "Formation · Prospection",
+    "titre": "Votre carte de visite, machine à prospects",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 73,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F40.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F40.png"
+  },
+  {
+    "id": "F41",
+    "produit": "crm",
+    "kicker": "Formation · Marketing",
+    "titre": "Du lead magnet à la vente avec Claude",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 66,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F41.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F41.png"
+  },
+  {
+    "id": "F42",
+    "produit": "crm",
+    "kicker": "Formation · Fidélité",
+    "titre": "La fidélité digitale qui fait revenir",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 64,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F42.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F42.png"
+  },
+  {
+    "id": "F43",
+    "produit": "suite",
+    "kicker": "Formation · Équipe IA",
+    "titre": "Faire travailler son équipe IA",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 72,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F43.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F43.png"
   },
   {
     "id": "AG01",

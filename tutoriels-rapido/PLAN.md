@@ -131,7 +131,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM39 — Documents clients et bibliothèque (publié)
 - [x] CRM40 — Bibliothèque de prompts (publié)
 - [x] CRM41 — Notifications (publié)
-- [~] CRM42 — Facturation de l'abonnement et packs (sélecteurs corrigés le 16/11, voix 830 cr. — en file)
+- [x] CRM42 — Facturation de l'abonnement et packs (sélecteurs corrigés le 16/11, voix 830 cr. — en file)
 - [x] CRM43 — Connecter RapidoCRM à Claude (MCP)
 - [x] CRM44 — Les relances automatiques (devis et factures) + suivi d'ouverture des devis
 - [x] CRM45 — Le prévisionnel pondéré et les affaires à relancer (pipeline)
@@ -147,12 +147,12 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM53 — L'éditeur : sections et modèles gratuits
 - [ ] CRM54 — L'éditeur sur téléphone
 - [ ] CRM55 — Les ventes en ligne : bouton d'achat et paiement (Stripe en mode test, aucun paiement réel)
-- [~] CRM56 — Les lead magnets (scénario, `leadmagnets-demo.php`, essai à blanc, voix 880 cr. — en file)
-- [~] CRM57 — Le tunnel de vente créé par Claude (outil creer_tunnel_de_vente) (scénario, `tunnel-demo.php`, essai à blanc, voix 847 cr. — en file)
-- [~] CRM58 — Bibliothèque : partage suivi et statistiques de téléchargement (scénario, `bibliotheque-demo.php`, essai à blanc, voix 995 cr. — en file)
+- [x] CRM56 — Les lead magnets (scénario, `leadmagnets-demo.php`, essai à blanc, voix 880 cr. — en file)
+- [x] CRM57 — Le tunnel de vente créé par Claude (outil creer_tunnel_de_vente) (scénario, `tunnel-demo.php`, essai à blanc, voix 847 cr. — en file)
+- [x] CRM58 — Bibliothèque : partage suivi et statistiques de téléchargement (scénario, `bibliotheque-demo.php`, essai à blanc, voix 995 cr. — en file)
 - [x] CRM59 — Connecter son IA (Claude, ChatGPT, Le Chat, Grok) (voix 882 cr. — en file)
 - [x] CRM60 — Les 100 agents IA (voix 720 cr. — en file)
-- [~] CRM61 — Un prompt par outil MCP (voix 662 cr. — en file)
+- [x] CRM61 — Un prompt par outil MCP (voix 662 cr. — en file)
 - [x] CRM62 — Fusionner les doublons (scénario, démo `doublons-demo.php`, essai à blanc, voix 905 cr. — en file de tournage)
 - [x] CRM63 — Les séquences de prospection (scénario, démo `sequences-demo.php`, essai à blanc, voix 894 cr. — en file)
 - [x] CRM64 — Le score des prospects (scénario, démo `score-demo.php`, essai à blanc, voix 738 cr. — en file)
@@ -253,15 +253,15 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] F08 — Définir sa cible et son fichier de prospects
 - [ ] F09 — Prospection locale avec Google Maps et SIRET
 - [ ] F10 — Le premier appel : script et qualification (agent vocal)
-- [~] F11 — Le cold email qui obtient des réponses (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
+- [x] F11 — Le cold email qui obtient des réponses (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
 - [~] F12 — Piloter son pipeline et ses prévisions (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
 - [~] F13 — Le devis qui se signe : présentation et relances (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
 - [~] F14 — Salons : avant, pendant, après (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
 - [~] F15 — Fidéliser : programmes, jeux concours, avis (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
-- [~] F40 — Transformer sa carte de visite en machine à prospects (carte digitale, NFC, devis en ligne) (script, voix générée — en file de rendu)
-- [~] F41 — Du lead magnet à la vente : construire son tunnel avec Claude (script, voix générée — en file de rendu)
-- [~] F42 — Fidélité digitale : tampons, parrainage et récompenses qui font revenir (script, voix générée — en file de rendu)
-- [~] F43 — Faire travailler son équipe IA : CRM + RapidoRH connectés (script, voix générée — en file de rendu)
+- [x] F40 — Transformer sa carte de visite en machine à prospects (carte digitale, NFC, devis en ligne) (script, voix générée — en file de rendu)
+- [x] F41 — Du lead magnet à la vente : construire son tunnel avec Claude (script, voix générée — en file de rendu)
+- [x] F42 — Fidélité digitale : tampons, parrainage et récompenses qui font revenir (script, voix générée — en file de rendu)
+- [x] F43 — Faire travailler son équipe IA : CRM + RapidoRH connectés (script, voix générée — en file de rendu)
 
 ### Gestion de projet & équipe
 - [ ] F16 — Lancer un projet : découpage, rôles, échéances
@@ -271,12 +271,12 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] F20 — Gérer congés et charge de travail
 
 ### Intelligence artificielle
-- [~] F21 — Comprendre l'IA générative pour son entreprise (script, voix générée — en file de rendu)
-- [~] F22 — Bien écrire un prompt (script, voix générée — en file de rendu)
-- [~] F23 — Qu'est-ce qu'un connecteur MCP ? (script, voix générée — en file de rendu)
-- [~] F24 — Brancher la suite Rapido à Claude (script, voix générée — en file de rendu)
-- [~] F25 — Agents IA : déléguer sans perdre le contrôle (script, voix générée — en file de rendu)
-- [~] F26 — Automatiser avec les workflows Rapido (script, voix générée — en file de rendu)
+- [x] F21 — Comprendre l'IA générative pour son entreprise (script, voix générée — en file de rendu)
+- [x] F22 — Bien écrire un prompt (script, voix générée — en file de rendu)
+- [x] F23 — Qu'est-ce qu'un connecteur MCP ? (script, voix générée — en file de rendu)
+- [x] F24 — Brancher la suite Rapido à Claude (script, voix générée — en file de rendu)
+- [x] F25 — Agents IA : déléguer sans perdre le contrôle (script, voix générée — en file de rendu)
+- [x] F26 — Automatiser avec les workflows Rapido (script, voix générée — en file de rendu)
 
 ### Par secteur d'activité
 - [ ] F27 — Restaurant & food : Rapido au quotidien
