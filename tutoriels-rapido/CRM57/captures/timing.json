@@ -1,0 +1,29 @@
+{
+  "voiceStartInCapture": 3.022,
+  "paragraphs": {
+    "intro": 0.06,
+    "demande": 6.84,
+    "site": 16.48,
+    "capture": 21.28,
+    "vente": 26.28,
+    "guide": 31.78,
+    "sequence": 35.38,
+    "relire": 39.88,
+    "outro": 44.62,
+    "end": 47.76
+  },
+  "zones": {
+    "demande": [
+      380,
+      184,
+      476,
+      163
+    ],
+    "site": [
+      380,
+      260,
+      948,
+      210
+    ]
+  }
+}

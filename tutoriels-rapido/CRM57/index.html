@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#4CAF50; --b:#9BE15D; --grad:linear-gradient(100deg,#4CAF50,#9BE15D); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; background:#05060A; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(120px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.45; }
+  .h2 { width:700px; height:600px; left:-260px; bottom:-320px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  #frame { position:absolute; left:80px; top:56px; width:1760px; height:990px; border-radius:22px; overflow:hidden; background:#f3f4f7;
+           box-shadow:0 50px 120px -30px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.12),0 0 120px -30px var(--a); }
+  #cam { position:absolute; left:0; top:0; width:1760px; height:990px; transform-origin:0 0; }
+  #cam video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .hl { position:absolute; border-radius:18px; border:3px solid var(--a); box-shadow:0 0 0 9999px rgba(5,6,10,.28),0 0 40px -6px var(--a); opacity:0; }
+  .chap { position:absolute; left:108px; top:82px; display:flex; align-items:center; gap:14px; padding:12px 22px 12px 12px; border-radius:999px;
+          background:rgba(10,12,18,.82); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.14); font-size:26px; font-weight:600; opacity:0; z-index:5; }
+  .chap b { width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:19px; }
+  .sub { position:absolute; inset:auto 0 58px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; letter-spacing:-.01em; white-space:nowrap; box-shadow:0 10px 30px rgba(0,0,0,.4); }
+  .bar { position:absolute; left:80px; bottom:22px; width:1760px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:104px; top:84px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  /* intro / outro */
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .kick { font-size:28px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.7); }
+  .card h1 { text-wrap:balance; margin-top:40px; font-size:128px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1500px; }
+  .card h1 em, .card h2 em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; line-height:1; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="55.66" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+
+  <div id="frame">
+    <div id="cam">
+      <video id="cap" class="clip" src="captures/ecran.mp4" muted data-start="3.0" data-duration="52.66" data-track-index="1"></video>
+      <div class="hl" id="hl1" style="left:348px;top:169px;width:436px;height:149px"></div>
+      <div class="hl" id="hl2" style="left:348px;top:238px;width:869px;height:192px"></div>
+      <div class="hl" id="hl3" style="left:0px;top:0px;width:1760px;height:990px"></div>
+      <div class="hl" id="hl4" style="left:0px;top:0px;width:1760px;height:990px"></div>
+      <div class="hl" id="hl5" style="left:0px;top:0px;width:1760px;height:990px"></div>
+      <div class="hl" id="hl6" style="left:0px;top:0px;width:1760px;height:990px"></div>
+      <div class="hl" id="hl7" style="left:0px;top:0px;width:1760px;height:990px"></div>
+    </div>
+  </div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">RapidoCRM</div>
+  <div class="chap" id="ch1"><b>1</b>Une seule demande</div>
+  <div class="chap" id="ch2"><b>2</b>Le site et ses pages</div>
+  <div class="chap" id="ch3"><b>3</b>La page d&#x27;inscription</div>
+  <div class="chap" id="ch4"><b>4</b>La page de vente</div>
+  <div class="chap" id="ch5"><b>5</b>Le guide offert</div>
+  <div class="chap" id="ch6"><b>6</b>La séquence d&#x27;e-mails</div>
+  <div class="chap" id="ch7"><b>7</b>Relire et ajuster</div>
+  <div class="sub clip" id="s0" data-start="3.060" data-duration="1.590" data-track-index="7"><span>Un tunnel de vente complet</span></div>
+  <div class="sub clip" id="s1" data-start="4.670" data-duration="1.998" data-track-index="7"><span>construit en une seule demande à Claude</span></div>
+  <div class="sub clip" id="s2" data-start="6.710" data-duration="1.610" data-track-index="7"><span>connecté à RapidoCRM</span></div>
+  <div class="sub clip" id="s3" data-start="8.520" data-duration="1.300" data-track-index="7"><span>Voici ce qu&#x27;il crée</span></div>
+  <div class="sub clip" id="s4" data-start="9.840" data-duration="1.230" data-track-index="7"><span>On a demandé à Claude un</span></div>
+  <div class="sub clip" id="s5" data-start="11.090" data-duration="2.132" data-track-index="7"><span>tunnel pour un coaching sportif à</span></div>
+  <div class="sub clip" id="s6" data-start="13.242" data-duration="0.538" data-track-index="7"><span>quarante-neuf euros</span></div>
+  <div class="sub clip" id="s7" data-start="13.800" data-duration="2.350" data-track-index="7"><span>avec un guide gratuit et trois e-mails</span></div>
+  <div class="sub clip" id="s8" data-start="16.170" data-duration="1.880" data-track-index="7"><span>Claude a utilisé l&#x27;outil de tunnel</span></div>
+  <div class="sub clip" id="s9" data-start="18.070" data-duration="1.335" data-track-index="7"><span>de vente de RapidoCRM</span></div>
+  <div class="sub clip" id="s10" data-start="19.480" data-duration="1.270" data-track-index="7"><span>Résultat : un site</span></div>
+  <div class="sub clip" id="s11" data-start="20.770" data-duration="1.470" data-track-index="7"><span>avec deux pages déjà en ligne</span></div>
+  <div class="sub clip" id="s12" data-start="22.260" data-duration="2.000" data-track-index="7"><span>et notées pour le référencement</span></div>
+  <div class="sub clip" id="s13" data-start="24.280" data-duration="0.750" data-track-index="7"><span>La première</span></div>
+  <div class="sub clip" id="s14" data-start="25.050" data-duration="1.490" data-track-index="7"><span>la page d&#x27;inscription</span></div>
+  <div class="sub clip" id="s15" data-start="26.560" data-duration="1.610" data-track-index="7"><span>le visiteur laisse son adresse et</span></div>
+  <div class="sub clip" id="s16" data-start="28.190" data-duration="1.070" data-track-index="7"><span>reçoit le guide</span></div>
+  <div class="sub clip" id="s17" data-start="29.280" data-duration="0.630" data-track-index="7"><span>La seconde</span></div>
+  <div class="sub clip" id="s18" data-start="29.930" data-duration="0.950" data-track-index="7"><span>la page de vente</span></div>
+  <div class="sub clip" id="s19" data-start="30.900" data-duration="1.360" data-track-index="7"><span>reliée au paiement</span></div>
+  <div class="sub clip" id="s20" data-start="32.280" data-duration="2.480" data-track-index="7"><span>Aucun avis ni coordonnée n&#x27;est inventé</span></div>
+  <div class="sub clip" id="s21" data-start="34.780" data-duration="1.420" data-track-index="7"><span>Le guide offert est créé dans</span></div>
+  <div class="sub clip" id="s22" data-start="36.390" data-duration="0.720" data-track-index="7"><span>Lead magnets</span></div>
+  <div class="sub clip" id="s23" data-start="37.130" data-duration="1.230" data-track-index="7"><span>prêt à être complété</span></div>
+  <div class="sub clip" id="s24" data-start="38.380" data-duration="1.420" data-track-index="7"><span>Et la séquence de trois e-mails</span></div>
+  <div class="sub clip" id="s25" data-start="39.990" data-duration="0.840" data-track-index="7"><span>attend les inscrits</span></div>
+  <div class="sub clip" id="s26" data-start="40.850" data-duration="1.220" data-track-index="7"><span>avec le lien vers la page</span></div>
+  <div class="sub clip" id="s27" data-start="42.090" data-duration="0.770" data-track-index="7"><span>de vente</span></div>
+  <div class="sub clip" id="s28" data-start="42.880" data-duration="0.960" data-track-index="7"><span>Votre rôle</span></div>
+  <div class="sub clip" id="s29" data-start="43.860" data-duration="2.260" data-track-index="7"><span>relire, ajuster les textes et le prix</span></div>
+  <div class="sub clip" id="s30" data-start="46.140" data-duration="1.460" data-track-index="7"><span>puis suivre les chiffres</span></div>
+  <div class="sub clip" id="s31" data-start="47.620" data-duration="1.590" data-track-index="7"><span>Une demande pour construire</span></div>
+  <div class="sub clip" id="s32" data-start="49.230" data-duration="1.650" data-track-index="7"><span>une relecture pour lancer</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="48.16" data-track-index="10" data-volume="1"></audio>
+
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <div class="top"><span class="num">CRM57</span><span class="kick">Tutoriel RapidoCRM</span></div>
+      <h1>Le <em>tunnel de vente</em> créé par Claude</h1>
+    </div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+
+  <div class="clip card" id="outro" data-start="50.86" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <h2>Merci d'avoir <em>regardé</em></h2>
+      <p>Retrouvez tous les tutoriels dans l&#x27;Académie RapidoSoftware</p>
+    </div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  // Intro
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .from('#intro .logo', { opacity: 0, duration: .6 }, .6)
+    .to('#intro', { opacity: 0, scale: 1.04, duration: .6, ease: 'power2.in' }, 3.0)
+    .from('#frame', { scale: .92, opacity: 0, duration: .9, ease: 'expo.out' }, 2.8);
+  // Progression
+  tl.to('#bar', { scaleX: 1, duration: 48.16, ease: 'none' }, 3.0);
+  tl.to('#cam', { scale: 1.45, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 9.840)
+    .fromTo('#hl1', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 10.640)
+    .to('#hl1', { opacity: 0, duration: .35 }, 19.280)
+    .fromTo('#ch1', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 10.040)
+    .to('#ch1', { opacity: 0, x: -20, duration: .3 }, 19.230);
+  tl.to('#cam', { scale: 1.45, x: -255.1, y: 0, duration: 1.2, ease: 'power3.inOut' }, 19.480)
+    .fromTo('#hl2', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 20.280)
+    .to('#hl2', { opacity: 0, duration: .35 }, 24.080)
+    .fromTo('#ch2', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 19.680)
+    .to('#ch2', { opacity: 0, x: -20, duration: .3 }, 24.030);
+  tl.to('#cam', { scale: 1.0, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 24.280)
+    .fromTo('#hl3', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 25.080)
+    .to('#hl3', { opacity: 0, duration: .35 }, 29.080)
+    .fromTo('#ch3', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 24.480)
+    .to('#ch3', { opacity: 0, x: -20, duration: .3 }, 29.030);
+  tl.to('#cam', { scale: 1.0, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 29.280)
+    .fromTo('#hl4', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 30.080)
+    .to('#hl4', { opacity: 0, duration: .35 }, 34.580)
+    .fromTo('#ch4', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 29.480)
+    .to('#ch4', { opacity: 0, x: -20, duration: .3 }, 34.530);
+  tl.to('#cam', { scale: 1.0, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 34.780)
+    .fromTo('#hl5', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 35.580)
+    .to('#hl5', { opacity: 0, duration: .35 }, 38.180)
+    .fromTo('#ch5', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 34.980)
+    .to('#ch5', { opacity: 0, x: -20, duration: .3 }, 38.130);
+  tl.to('#cam', { scale: 1.0, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 38.380)
+    .fromTo('#hl6', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 39.180)
+    .to('#hl6', { opacity: 0, duration: .35 }, 42.680)
+    .fromTo('#ch6', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 38.580)
+    .to('#ch6', { opacity: 0, x: -20, duration: .3 }, 42.630);
+  tl.to('#cam', { scale: 1.0, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 42.880)
+    .fromTo('#hl7', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 43.680)
+    .to('#hl7', { opacity: 0, duration: .35 }, 47.420)
+    .fromTo('#ch7', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 43.080)
+    .to('#ch7', { opacity: 0, x: -20, duration: .3 }, 47.370);
+  tl.to('#cam', { scale: 1, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 47.620);
+  // Outro
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 51.160)
+    .from('#outro p', { y: 30, opacity: 0, duration: .7, ease: 'expo.out' }, 51.410);
+  window.__timelines['main'] = tl;
+</script>
+</body>
+</html>
