@@ -1,0 +1,126 @@
+{
+  "id": "F23",
+  "product": "suite",
+  "kicker": "Formation · IA",
+  "title": "Qu'est-ce qu'un connecteur MCP ?",
+  "em": "connecteur MCP",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Prochaine formation : brancher la suite Rapido à Claude",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "MCP : trois lettres qui changent la façon de travailler avec l'IA. Voici ce que c'est, sans jargon."
+    },
+    {
+      "key": "probleme",
+      "text": "Sans connecteur, l'IA ne voit que ce que vous copiez-collez. Elle ne connaît ni vos clients, ni vos devis, ni votre planning."
+    },
+    {
+      "key": "definition",
+      "text": "MCP, pour Model Context Protocol, est un standard ouvert. Il permet à un assistant comme Claude, ChatGPT ou Le Chat de se brancher sur un logiciel, comme une prise universelle."
+    },
+    {
+      "key": "outils",
+      "text": "Le logiciel expose des outils : lister les clients, créer un devis, programmer un post. L'assistant choisit le bon outil selon votre demande, et vous montre ce qu'il fait."
+    },
+    {
+      "key": "securite",
+      "text": "Côté sécurité : vous vous connectez avec votre compte et vous autorisez l'accès. L'assistant agit avec vos droits, et vous pouvez retirer l'accès à tout moment."
+    },
+    {
+      "key": "rapido",
+      "text": "La suite Rapido a ses serveurs MCP : RapidoCRM, RapidoCMS et RapidoRH. Une seule conversation peut donc toucher vos ventes, vos contenus et votre équipe."
+    },
+    {
+      "key": "recap",
+      "text": "Un standard ouvert, des outils, vos droits : l'IA passe de la conversation à l'action."
+    },
+    {
+      "key": "outro",
+      "text": "Dans la prochaine formation, on branche la suite Rapido à Claude."
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "IA · MCP",
+      "title": "Le connecteur MCP, sans jargon",
+      "em": "sans jargon"
+    },
+    {
+      "at": "probleme",
+      "type": "compare",
+      "title": "Avec ou sans connecteur",
+      "em": "connecteur",
+      "left": [
+        "Sans",
+        "Copier-coller",
+        "Aucune donnée",
+        "Aucune action"
+      ],
+      "right": [
+        "Avec",
+        "Vos clients",
+        "Vos devis",
+        "Des actions réelles"
+      ]
+    },
+    {
+      "at": "definition",
+      "type": "points",
+      "title": "MCP, c'est quoi ?",
+      "em": "MCP",
+      "items": [
+        "Model Context Protocol",
+        "Un standard ouvert",
+        "Une prise universelle",
+        "Claude, ChatGPT, Le Chat"
+      ]
+    },
+    {
+      "at": "outils",
+      "type": "steps",
+      "title": "Comment ça marche",
+      "em": "marche",
+      "items": [
+        "Le logiciel expose des outils",
+        "Vous faites une demande",
+        "L'assistant choisit l'outil",
+        "Il montre ce qu'il fait"
+      ]
+    },
+    {
+      "at": "securite",
+      "type": "points",
+      "title": "Et la sécurité ?",
+      "em": "sécurité",
+      "items": [
+        "Votre compte",
+        "Votre autorisation",
+        "Vos droits",
+        "Accès retirable"
+      ]
+    },
+    {
+      "at": "rapido",
+      "type": "points",
+      "title": "Dans la suite Rapido",
+      "em": "Rapido",
+      "items": [
+        "RapidoCRM",
+        "RapidoCMS",
+        "RapidoRH",
+        "Une seule conversation"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "De la conversation à l'action",
+      "em": "l'action"
+    }
+  ],
+  "intro": 3.0,
+  "outro": 4.5
+}

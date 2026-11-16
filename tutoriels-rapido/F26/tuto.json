@@ -1,0 +1,119 @@
+{
+  "id": "F26",
+  "product": "crm",
+  "kicker": "Formation · Automatisation",
+  "title": "Automatiser avec les workflows Rapido",
+  "em": "workflows",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Retrouvez toutes les formations dans l'Académie RapidoSoftware",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Certaines tâches reviennent toujours de la même façon : un formulaire rempli, un e-mail de bienvenue, une tâche de rappel. Un workflow les fait à votre place."
+    },
+    {
+      "key": "declencheur",
+      "text": "Tout commence par un déclencheur : un formulaire envoyé, un clic sur un CTA, un achat, une inscription à un événement, un jeu concours."
+    },
+    {
+      "key": "actions",
+      "text": "Viennent ensuite les actions : envoyer un e-mail ou un SMS, créer une tâche, ajouter au pipeline, ou envoyer une tâche à votre équipe RapidoRH."
+    },
+    {
+      "key": "delais",
+      "text": "Entre les deux, des délais et des conditions : attendre deux jours, vérifier par exemple si le contact a un téléphone, puis choisir la suite."
+    },
+    {
+      "key": "modele",
+      "text": "Le plus simple : partir d'un modèle, l'ajuster, puis l'activer."
+    },
+    {
+      "key": "suivre",
+      "text": "Chaque exécution est tracée, étape par étape : vous savez ce qui s'est passé, pour qui et quand."
+    },
+    {
+      "key": "recap",
+      "text": "Un déclencheur, des actions, des délais : les tâches répétitives se font toutes seules, et vous gardez l'historique."
+    },
+    {
+      "key": "outro",
+      "text": "Retrouvez toutes les formations dans l'Académie RapidoSoftware."
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "RapidoCRM · Workflows",
+      "title": "Les tâches qui se font toutes seules",
+      "em": "toutes seules"
+    },
+    {
+      "at": "declencheur",
+      "type": "points",
+      "title": "Le déclencheur",
+      "em": "déclencheur",
+      "items": [
+        "Formulaire envoyé",
+        "Clic sur un CTA",
+        "Achat en ligne",
+        "Inscription à un événement"
+      ]
+    },
+    {
+      "at": "actions",
+      "type": "points",
+      "title": "Les actions",
+      "em": "actions",
+      "items": [
+        "E-mail ou SMS",
+        "Tâche",
+        "Ajout au pipeline",
+        "Tâche à l'équipe RapidoRH"
+      ]
+    },
+    {
+      "at": "delais",
+      "type": "steps",
+      "title": "Délais et conditions",
+      "em": "conditions",
+      "items": [
+        "Attendre 2 jours",
+        "Le contact a un téléphone ?",
+        "Oui : SMS",
+        "Non : e-mail"
+      ]
+    },
+    {
+      "at": "modele",
+      "type": "steps",
+      "title": "Partir d'un modèle",
+      "em": "modèle",
+      "items": [
+        "Choisir un modèle",
+        "L'ajuster",
+        "L'activer"
+      ]
+    },
+    {
+      "at": "suivre",
+      "type": "points",
+      "title": "Tout est tracé",
+      "em": "tracé",
+      "items": [
+        "Chaque exécution",
+        "Étape par étape",
+        "Pour qui",
+        "Quand"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Les tâches répétitives se font toutes seules",
+      "em": "toutes seules"
+    }
+  ],
+  "intro": 3.0,
+  "outro": 4.5
+}

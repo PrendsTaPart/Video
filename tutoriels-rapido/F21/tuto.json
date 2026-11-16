@@ -1,0 +1,126 @@
+{
+  "id": "F21",
+  "product": "suite",
+  "kicker": "Formation · IA",
+  "title": "Comprendre l'IA générative pour son entreprise",
+  "em": "IA générative",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Prochaine formation : bien écrire un prompt",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "L'IA générative écrit, résume, traduit et analyse en quelques secondes. Mais que peut-elle vraiment faire pour une petite entreprise ? Voyons-le simplement."
+    },
+    {
+      "key": "principe",
+      "text": "Le principe : un modèle de langage prédit la suite la plus probable d'un texte. Il a lu énormément, mais il ne sait que ce qu'on lui donne, et il peut se tromper avec assurance."
+    },
+    {
+      "key": "forces",
+      "text": "Ses forces : rédiger un premier jet, reformuler, résumer un long document, classer des demandes, proposer des idées. Là, il vous fait gagner des heures."
+    },
+    {
+      "key": "limites",
+      "text": "Ses limites : les chiffres, les faits récents et vos données internes. Sans contexte, il invente. La règle : il prépare, vous vérifiez."
+    },
+    {
+      "key": "outils",
+      "text": "Le vrai saut, c'est quand l'IA accède à vos outils : votre CRM, vos réseaux, votre équipe. Elle ne se contente plus d'écrire, elle agit, avec vos droits."
+    },
+    {
+      "key": "commencer",
+      "text": "Pour commencer : choisissez une tâche répétitive, comme les relances ou les comptes rendus, et confiez le premier jet à l'IA pendant une semaine."
+    },
+    {
+      "key": "recap",
+      "text": "Une IA qui prépare, un humain qui valide, et des outils connectés : c'est la bonne façon de commencer."
+    },
+    {
+      "key": "outro",
+      "text": "Dans la prochaine formation, on apprend à bien écrire un prompt."
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "IA · Les bases",
+      "title": "L'IA générative, concrètement",
+      "em": "concrètement"
+    },
+    {
+      "at": "principe",
+      "type": "points",
+      "title": "Comment ça marche",
+      "em": "marche",
+      "items": [
+        "Prédit la suite d'un texte",
+        "A beaucoup lu",
+        "Ne sait que ce qu'on lui donne",
+        "Peut se tromper avec assurance"
+      ]
+    },
+    {
+      "at": "forces",
+      "type": "points",
+      "title": "Ce qu'elle fait bien",
+      "em": "bien",
+      "items": [
+        "Premiers jets",
+        "Reformuler, résumer",
+        "Classer des demandes",
+        "Proposer des idées"
+      ]
+    },
+    {
+      "at": "limites",
+      "type": "compare",
+      "title": "Elle prépare, vous vérifiez",
+      "em": "vérifiez",
+      "left": [
+        "Ses limites",
+        "Les chiffres",
+        "Les faits récents",
+        "Vos données internes"
+      ],
+      "right": [
+        "Votre rôle",
+        "Fournir le contexte",
+        "Relire",
+        "Décider"
+      ]
+    },
+    {
+      "at": "outils",
+      "type": "steps",
+      "title": "Le vrai saut : les outils",
+      "em": "outils",
+      "items": [
+        "L'IA écrit",
+        "L'IA lit votre CRM",
+        "L'IA agit avec vos droits",
+        "Vous validez"
+      ]
+    },
+    {
+      "at": "commencer",
+      "type": "points",
+      "title": "Par où commencer",
+      "em": "commencer",
+      "items": [
+        "Une tâche répétitive",
+        "Relances ou comptes rendus",
+        "Premier jet par l'IA",
+        "Pendant une semaine"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "L'IA prépare, l'humain valide",
+      "em": "valide"
+    }
+  ],
+  "intro": 3.0,
+  "outro": 4.5
+}

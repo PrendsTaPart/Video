@@ -1,0 +1,136 @@
+{
+  "id": "F22",
+  "product": "suite",
+  "kicker": "Formation · IA",
+  "title": "Bien écrire un prompt",
+  "em": "prompt",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Prochaine formation : qu'est-ce qu'un connecteur MCP ?",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Une réponse décevante vient presque toujours d'une demande trop vague. Voici une méthode simple pour écrire un prompt qui marche du premier coup."
+    },
+    {
+      "key": "role",
+      "text": "Un : le rôle. Dites à l'IA qui elle est : un commercial, une rédactrice, un assistant comptable."
+    },
+    {
+      "key": "contexte",
+      "text": "Deux : le contexte. Votre métier, votre ville, votre client, ce qui s'est déjà passé. Plus il est précis, moins elle invente."
+    },
+    {
+      "key": "tache",
+      "text": "Trois : la tâche, avec un verbe d'action et un résultat attendu : rédige, résume, classe, propose trois options."
+    },
+    {
+      "key": "format",
+      "text": "Quatre : le format. La longueur, le ton, la structure : un e-mail de cinq lignes, un tableau, une liste à puces."
+    },
+    {
+      "key": "exemple",
+      "text": "Par exemple : tu es mon assistant commercial. Lotus Lounge n'a pas répondu à mon devis depuis une semaine. Rédige une relance courte et chaleureuse, en trois phrases."
+    },
+    {
+      "key": "iterer",
+      "text": "Enfin, itérez : demandez une version plus courte, un autre ton, ou trois variantes. Et gardez vos meilleurs prompts dans Mes prompts."
+    },
+    {
+      "key": "recap",
+      "text": "Un rôle, un contexte, une tâche, un format : quatre ingrédients pour des réponses utiles."
+    },
+    {
+      "key": "outro",
+      "text": "Dans la prochaine formation : qu'est-ce qu'un connecteur MCP ?"
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "IA · Méthode",
+      "title": "Le prompt qui marche du premier coup",
+      "em": "premier coup"
+    },
+    {
+      "at": "role",
+      "type": "steps",
+      "title": "Les 4 ingrédients",
+      "em": "ingrédients",
+      "items": [
+        "Le rôle",
+        "Le contexte",
+        "La tâche",
+        "Le format"
+      ]
+    },
+    {
+      "at": "contexte",
+      "type": "points",
+      "title": "Le contexte",
+      "em": "contexte",
+      "items": [
+        "Votre métier",
+        "Votre ville",
+        "Votre client",
+        "Ce qui s'est passé"
+      ]
+    },
+    {
+      "at": "tache",
+      "type": "points",
+      "title": "La tâche",
+      "em": "tâche",
+      "items": [
+        "Un verbe d'action",
+        "Rédige, résume, classe",
+        "Un résultat attendu",
+        "Trois options si besoin"
+      ]
+    },
+    {
+      "at": "format",
+      "type": "points",
+      "title": "Le format",
+      "em": "format",
+      "items": [
+        "Longueur",
+        "Ton",
+        "Structure",
+        "Tableau ou liste"
+      ]
+    },
+    {
+      "at": "exemple",
+      "type": "prompt",
+      "title": "Un exemple",
+      "em": "exemple",
+      "prompt": "Tu es mon assistant commercial. Lotus Lounge n'a pas répondu à mon devis depuis une semaine. Rédige une relance courte et chaleureuse, en trois phrases.",
+      "answer": [
+        "Bonjour, je reviens vers vous au sujet du devis envoyé la semaine dernière.",
+        "Avez-vous des questions ou souhaitez-vous l'ajuster ?",
+        "Je reste disponible pour en parler quand cela vous arrange."
+      ]
+    },
+    {
+      "at": "iterer",
+      "type": "points",
+      "title": "Itérer",
+      "em": "Itérer",
+      "items": [
+        "Plus court",
+        "Un autre ton",
+        "Trois variantes",
+        "Garder dans Mes prompts"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Rôle, contexte, tâche, format",
+      "em": "format"
+    }
+  ],
+  "intro": 3.0,
+  "outro": 4.5
+}

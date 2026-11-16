@@ -1,0 +1,126 @@
+{
+  "id": "F25",
+  "product": "suite",
+  "kicker": "Formation · IA",
+  "title": "Agents IA : déléguer sans perdre le contrôle",
+  "em": "sans perdre le contrôle",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Prochaine formation : automatiser avec les workflows Rapido",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Un agent IA, c'est une mission confiée à l'IA, avec des outils et des règles. Bien cadré, il travaille pour vous. Mal cadré, il vous inquiète. Voici comment bien le cadrer."
+    },
+    {
+      "key": "mission",
+      "text": "D'abord, une mission précise : relancer les devis sans réponse depuis trois jours, pas « s'occuper des ventes »."
+    },
+    {
+      "key": "outils",
+      "text": "Ensuite, les outils, et seulement ceux-là : lire les devis, rédiger un e-mail. Pas de suppression, pas de facture."
+    },
+    {
+      "key": "validation",
+      "text": "Puis la règle d'or : tout ce qui part chez un client passe d'abord par votre validation. L'agent propose, vous envoyez."
+    },
+    {
+      "key": "suivi",
+      "text": "Suivez-le avec un indicateur simple, comme le nombre de devis signés après relance, et relisez son journal de temps en temps."
+    },
+    {
+      "key": "catalogue",
+      "text": "Pour démarrer, la suite Rapido propose cent agents prêts à l'emploi, chacun avec sa mission et ses outils. Choisissez-en un, ajustez la demande, et lancez-le dans votre assistant."
+    },
+    {
+      "key": "recap",
+      "text": "Une mission précise, des outils limités, une validation humaine et un indicateur : vous déléguez, vous gardez la main."
+    },
+    {
+      "key": "outro",
+      "text": "Dans la prochaine formation, on automatise avec les workflows Rapido."
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "IA · Agents",
+      "title": "Déléguer sans perdre la main",
+      "em": "la main"
+    },
+    {
+      "at": "mission",
+      "type": "compare",
+      "title": "Une mission précise",
+      "em": "précise",
+      "left": [
+        "Trop vague",
+        "S'occuper des ventes",
+        "Gérer les clients",
+        "Faire du marketing"
+      ],
+      "right": [
+        "Précise",
+        "Relancer les devis à J+3",
+        "Qualifier les leads du jour",
+        "Préparer 3 posts"
+      ]
+    },
+    {
+      "at": "outils",
+      "type": "points",
+      "title": "Des outils limités",
+      "em": "limités",
+      "items": [
+        "Lire les devis",
+        "Rédiger un e-mail",
+        "Pas de suppression",
+        "Pas de facture"
+      ]
+    },
+    {
+      "at": "validation",
+      "type": "steps",
+      "title": "La règle d'or",
+      "em": "règle d'or",
+      "items": [
+        "L'agent propose",
+        "Vous relisez",
+        "Vous envoyez",
+        "Tout est tracé"
+      ]
+    },
+    {
+      "at": "suivi",
+      "type": "points",
+      "title": "Le suivre",
+      "em": "suivre",
+      "items": [
+        "Un indicateur simple",
+        "Devis signés après relance",
+        "Son journal",
+        "Ajuster la mission"
+      ]
+    },
+    {
+      "at": "catalogue",
+      "type": "points",
+      "title": "100 agents prêts",
+      "em": "prêts",
+      "items": [
+        "Une mission chacun",
+        "Ses outils",
+        "Une demande ajustable",
+        "Lancé dans votre assistant"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Vous déléguez, vous gardez la main",
+      "em": "la main"
+    }
+  ],
+  "intro": 3.0,
+  "outro": 4.5
+}

@@ -271,12 +271,12 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] F20 — Gérer congés et charge de travail
 
 ### Intelligence artificielle
-- [ ] F21 — Comprendre l'IA générative pour son entreprise
-- [ ] F22 — Bien écrire un prompt
-- [ ] F23 — Qu'est-ce qu'un connecteur MCP ?
-- [ ] F24 — Brancher la suite Rapido à Claude
-- [ ] F25 — Agents IA : déléguer sans perdre le contrôle
-- [ ] F26 — Automatiser avec les workflows Rapido
+- [~] F21 — Comprendre l'IA générative pour son entreprise (script, voix générée — en file de rendu)
+- [~] F22 — Bien écrire un prompt (script, voix générée — en file de rendu)
+- [~] F23 — Qu'est-ce qu'un connecteur MCP ? (script, voix générée — en file de rendu)
+- [~] F24 — Brancher la suite Rapido à Claude (script, voix générée — en file de rendu)
+- [~] F25 — Agents IA : déléguer sans perdre le contrôle (script, voix générée — en file de rendu)
+- [~] F26 — Automatiser avec les workflows Rapido (script, voix générée — en file de rendu)
 
 ### Par secteur d'activité
 - [ ] F27 — Restaurant & food : Rapido au quotidien
@@ -419,7 +419,7 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   serveur à froid, pas d'un sélecteur.
 - Nouvel outil `_gabarit/essai-blanc.cjs` (vérifie chaque cible d'un scénario, saisies comprises, sans voix ni vidéo) et
   `_gabarit/reperage.cjs` (titres, boutons, liens et champs d'un écran pour écrire un scénario).
-- Voix générées (Adam, eleven_v4, une prise) : CRM66 (859 cr.), CRM67 (990), CRM68 (982), CRM69 (1 091), CRM50 (956), CRM51 (815), CRM52 (852), CRM62 (905), CRM63 (894), CRM64 (738), CRM59 (882), CRM60 (720), CRM61 (662), CRM56 (880), CRM58 (995), F40 (1 160), F41 (960), F42 (1 027), F43 (1 077)
+- Voix générées (Adam, eleven_v4, une prise) : CRM66 (859 cr.), CRM67 (990), CRM68 (982), CRM69 (1 091), CRM50 (956), CRM51 (815), CRM52 (852), CRM62 (905), CRM63 (894), CRM64 (738), CRM59 (882), CRM60 (720), CRM61 (662), CRM56 (880), CRM58 (995), F40 (1 160), F41 (960), F42 (1 027), F43 (1 077), F21 (1 098), F22 (1 056), F23 (1 049), F24 (901), F25 (1 022), F26 (929)
   → 6 545 crédits.
 - CRM66 : **rendu OK (56 s)** après une première tentative perdue (disque plein pendant le rendu). CRM69 : relancé après un plantage
   du navigateur (même cause).

@@ -1,0 +1,119 @@
+{
+  "id": "F24",
+  "product": "suite",
+  "kicker": "Formation · IA",
+  "title": "Brancher la suite Rapido à Claude",
+  "em": "Claude",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Prochaine formation : agents IA, déléguer sans perdre le contrôle",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Brancher RapidoCRM, RapidoCMS et RapidoRH à Claude prend deux minutes. Voici les étapes."
+    },
+    {
+      "key": "adresse",
+      "text": "Dans RapidoCRM, l'écran Connecter mon IA donne l'adresse du serveur MCP. RapidoCMS et RapidoRH ont aussi la leur. Copiez-la."
+    },
+    {
+      "key": "ajouter",
+      "text": "Dans Claude, ouvrez les paramètres, puis les connecteurs, et ajoutez un connecteur personnalisé : un nom, l'adresse copiée, et c'est tout."
+    },
+    {
+      "key": "autoriser",
+      "text": "Claude vous redirige vers le logiciel : connectez-vous et autorisez l'accès. Aucun mot de passe n'est donné à Claude."
+    },
+    {
+      "key": "repeter",
+      "text": "Recommencez pour les deux autres logiciels. Vous pouvez aussi choisir un serveur thématique, par exemple la facturation seule."
+    },
+    {
+      "key": "tester",
+      "text": "Testez avec une demande qui croise les outils : mes trois meilleurs clients du mois, et prépare un post LinkedIn pour les remercier."
+    },
+    {
+      "key": "recap",
+      "text": "Une adresse, un connecteur, une autorisation : Claude travaille dans vos logiciels."
+    },
+    {
+      "key": "outro",
+      "text": "Dans la prochaine formation : déléguer à des agents IA sans perdre le contrôle."
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "IA · Connexion",
+      "title": "La suite Rapido dans Claude",
+      "em": "dans Claude"
+    },
+    {
+      "at": "adresse",
+      "type": "steps",
+      "title": "1 · L'adresse",
+      "em": "adresse",
+      "items": [
+        "Prompts › Connecter mon IA",
+        "Adresse du serveur MCP",
+        "Copier"
+      ]
+    },
+    {
+      "at": "ajouter",
+      "type": "steps",
+      "title": "2 · Le connecteur",
+      "em": "connecteur",
+      "items": [
+        "Paramètres de Claude",
+        "Connecteurs",
+        "Connecteur personnalisé",
+        "Nom + adresse"
+      ]
+    },
+    {
+      "at": "autoriser",
+      "type": "points",
+      "title": "3 · L'autorisation",
+      "em": "autorisation",
+      "items": [
+        "Connexion au logiciel",
+        "Accès autorisé",
+        "Aucun mot de passe donné",
+        "Retirable à tout moment"
+      ]
+    },
+    {
+      "at": "repeter",
+      "type": "points",
+      "title": "4 · Les autres logiciels",
+      "em": "logiciels",
+      "items": [
+        "RapidoCRM",
+        "RapidoCMS",
+        "RapidoRH",
+        "Ou un serveur thématique"
+      ]
+    },
+    {
+      "at": "tester",
+      "type": "prompt",
+      "title": "5 · Le test",
+      "em": "test",
+      "prompt": "Quels sont mes trois meilleurs clients du mois ? Prépare un brouillon de post LinkedIn pour les remercier.",
+      "answer": [
+        "RapidoCRM : 3 meilleurs clients trouvés",
+        "RapidoCMS : brouillon de post créé",
+        "Rien n'est publié sans votre validation"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Claude travaille dans vos logiciels",
+      "em": "vos logiciels"
+    }
+  ],
+  "intro": 3.0,
+  "outro": 4.5
+}
