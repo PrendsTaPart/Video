@@ -258,10 +258,10 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] F13 — Le devis qui se signe : présentation et relances
 - [ ] F14 — Salons : avant, pendant, après
 - [ ] F15 — Fidéliser : programmes, jeux concours, avis
-- [ ] F40 — Transformer sa carte de visite en machine à prospects (carte digitale, NFC, devis en ligne)
-- [ ] F41 — Du lead magnet à la vente : construire son tunnel avec Claude
-- [ ] F42 — Fidélité digitale : tampons, parrainage et récompenses qui font revenir
-- [ ] F43 — Faire travailler son équipe IA : CRM + RapidoRH connectés
+- [~] F40 — Transformer sa carte de visite en machine à prospects (carte digitale, NFC, devis en ligne) (script, voix générée — en file de rendu)
+- [~] F41 — Du lead magnet à la vente : construire son tunnel avec Claude (script, voix générée — en file de rendu)
+- [~] F42 — Fidélité digitale : tampons, parrainage et récompenses qui font revenir (script, voix générée — en file de rendu)
+- [~] F43 — Faire travailler son équipe IA : CRM + RapidoRH connectés (script, voix générée — en file de rendu)
 
 ### Gestion de projet & équipe
 - [ ] F16 — Lancer un projet : découpage, rôles, échéances
@@ -419,7 +419,7 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   serveur à froid, pas d'un sélecteur.
 - Nouvel outil `_gabarit/essai-blanc.cjs` (vérifie chaque cible d'un scénario, saisies comprises, sans voix ni vidéo) et
   `_gabarit/reperage.cjs` (titres, boutons, liens et champs d'un écran pour écrire un scénario).
-- Voix générées (Adam, eleven_v4, une prise) : CRM66 (859 cr.), CRM67 (990), CRM68 (982), CRM69 (1 091), CRM50 (956), CRM51 (815), CRM52 (852), CRM62 (905), CRM63 (894), CRM64 (738), CRM59 (882), CRM60 (720), CRM61 (662), CRM56 (880), CRM58 (995)
+- Voix générées (Adam, eleven_v4, une prise) : CRM66 (859 cr.), CRM67 (990), CRM68 (982), CRM69 (1 091), CRM50 (956), CRM51 (815), CRM52 (852), CRM62 (905), CRM63 (894), CRM64 (738), CRM59 (882), CRM60 (720), CRM61 (662), CRM56 (880), CRM58 (995), F40 (1 160), F41 (960), F42 (1 027), F43 (1 077)
   → 6 545 crédits.
 - CRM66 : **rendu OK (56 s)** après une première tentative perdue (disque plein pendant le rendu). CRM69 : relancé après un plantage
   du navigateur (même cause).

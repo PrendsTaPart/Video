@@ -1,0 +1,126 @@
+{
+  "id": "F43",
+  "product": "suite",
+  "kicker": "Formation · Équipe IA",
+  "title": "Faire travailler son équipe IA",
+  "em": "équipe IA",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Retrouvez toutes les formations dans l'Académie RapidoSoftware",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Un devis signé, un formulaire rempli, un prospect qui devient chaud : à chaque fois, quelqu'un doit agir. Avec RapidoCRM connecté à RapidoRH, c'est votre équipe, humaine ou IA, qui reçoit la tâche."
+    },
+    {
+      "key": "connecter",
+      "text": "Étape un : connectez RapidoRH depuis l'écran Connexions de RapidoCRM. La connexion est sécurisée, et aucun mot de passe n'est stocké."
+    },
+    {
+      "key": "regles",
+      "text": "Étape deux : créez des règles. Quand un événement arrive, une demande de devis par exemple, une tâche est créée dans RapidoRH pour l'employé choisi, ou un e-mail ou un WhatsApp est envoyé."
+    },
+    {
+      "key": "workflow",
+      "text": "Étape trois : dans vos workflows, le nœud « Envoyer à l'équipe RapidoRH » fait la même chose, au milieu de n'importe quel scénario."
+    },
+    {
+      "key": "agent",
+      "text": "L'employé IA prépare le travail : un brouillon de réponse, une relance, une fiche à compléter. Bonne pratique : faites relire par un humain avant tout envoi important."
+    },
+    {
+      "key": "suivre",
+      "text": "Chaque envoi est tracé dans le journal des connexions : vous savez ce qui a été demandé, à qui, et quand."
+    },
+    {
+      "key": "recap",
+      "text": "Des événements, des règles, une équipe : rien ne tombe plus entre deux chaises."
+    },
+    {
+      "key": "outro",
+      "text": "Retrouvez toutes les formations dans l'Académie RapidoSoftware."
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "RapidoCRM + RapidoRH",
+      "title": "Votre équipe IA au travail",
+      "em": "au travail"
+    },
+    {
+      "at": "connecter",
+      "type": "steps",
+      "title": "1 · Connecter RapidoRH",
+      "em": "Connecter",
+      "items": [
+        "Écran Connexions",
+        "Adresse de RapidoRH",
+        "Autorisation sécurisée",
+        "Aucun mot de passe stocké"
+      ]
+    },
+    {
+      "at": "regles",
+      "type": "steps",
+      "title": "2 · Les règles « équipe »",
+      "em": "règles",
+      "items": [
+        "Un événement",
+        "Une règle",
+        "Une tâche, un e-mail ou un WhatsApp",
+        "Pour l'employé choisi"
+      ]
+    },
+    {
+      "at": "workflow",
+      "type": "points",
+      "title": "3 · Dans vos workflows",
+      "em": "workflows",
+      "items": [
+        "Nœud « Envoyer à l'équipe RapidoRH »",
+        "Tâche, e-mail ou WhatsApp",
+        "Variables du contact",
+        "Au milieu de tout scénario"
+      ]
+    },
+    {
+      "at": "agent",
+      "type": "compare",
+      "title": "Qui fait quoi ?",
+      "em": "quoi",
+      "left": [
+        "Employé IA",
+        "Prépare le brouillon",
+        "Relance",
+        "Complète la fiche"
+      ],
+      "right": [
+        "Humain",
+        "Relit",
+        "Valide",
+        "Décide"
+      ]
+    },
+    {
+      "at": "suivre",
+      "type": "points",
+      "title": "Tout est tracé",
+      "em": "tracé",
+      "items": [
+        "Ce qui a été demandé",
+        "À qui",
+        "Quand",
+        "Avec quel résultat"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Rien ne tombe entre deux chaises",
+      "em": "deux chaises"
+    }
+  ],
+  "intro": 3.0,
+  "outro": 4.5
+}

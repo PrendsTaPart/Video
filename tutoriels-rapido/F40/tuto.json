@@ -1,0 +1,126 @@
+{
+  "id": "F40",
+  "product": "crm",
+  "kicker": "Formation · Prospection",
+  "title": "Votre carte de visite, machine à prospects",
+  "em": "machine à prospects",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Prochaine formation : du lead magnet à la vente avec Claude",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Une carte de visite papier finit dans un tiroir. Une carte digitale, elle, vous rapporte des contacts. Voici comment en faire une vraie machine à prospects avec RapidoCRM."
+    },
+    {
+      "key": "carte",
+      "text": "Étape un : créez votre carte digitale. Elle reprend votre profil : appel, e-mail, WhatsApp, itinéraire, et vos liens importants, comme une page de liens."
+    },
+    {
+      "key": "nfc",
+      "text": "Étape deux : posez-la partout. Sur une puce NFC au comptoir, un autocollant sur la vitrine, un QR code imprimé sur vos supports. Un geste du téléphone, et votre carte s'ouvre."
+    },
+    {
+      "key": "echange",
+      "text": "Étape trois : l'échange de coordonnées. Le visiteur laisse les siennes, et il devient un contact dans votre CRM, avec des points de score."
+    },
+    {
+      "key": "devis",
+      "text": "Étape quatre : ajoutez un bouton « Demander un devis ». Le formulaire de devis en ligne calcule le prix à partir de vos produits, et crée le devis en attente de signature."
+    },
+    {
+      "key": "boucle",
+      "text": "Pour aller vite, la boucle marketing installe tout en un clic : la carte, le formulaire de devis, les boutons reliés et les workflows de suivi."
+    },
+    {
+      "key": "recap",
+      "text": "Une carte, une puce, un formulaire : chaque rencontre devient un contact, et chaque contact peut devenir un devis."
+    },
+    {
+      "key": "outro",
+      "text": "Dans la prochaine formation, on construit un tunnel de vente complet avec Claude."
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "Prospection · Cartes digitales",
+      "title": "La carte qui rapporte des contacts",
+      "em": "rapporte"
+    },
+    {
+      "at": "carte",
+      "type": "points",
+      "title": "1 · La carte digitale",
+      "em": "carte digitale",
+      "items": [
+        "Appel, e-mail, WhatsApp",
+        "Itinéraire",
+        "Vos liens importants",
+        "Votre profil, à jour"
+      ]
+    },
+    {
+      "at": "nfc",
+      "type": "points",
+      "title": "2 · Partout où l'on vous rencontre",
+      "em": "Partout",
+      "items": [
+        "Puce NFC au comptoir",
+        "Autocollant en vitrine",
+        "QR code imprimé",
+        "Lien dans vos e-mails"
+      ]
+    },
+    {
+      "at": "echange",
+      "type": "steps",
+      "title": "3 · L'échange de coordonnées",
+      "em": "coordonnées",
+      "items": [
+        "Le visiteur laisse ses coordonnées",
+        "Un contact est créé",
+        "Des points de score",
+        "Une relance possible"
+      ]
+    },
+    {
+      "at": "devis",
+      "type": "steps",
+      "title": "4 · Le devis en ligne",
+      "em": "devis",
+      "items": [
+        "Bouton « Demander un devis »",
+        "Prix relus dans votre catalogue",
+        "Devis créé, PDF envoyé",
+        "Signature en ligne"
+      ]
+    },
+    {
+      "at": "boucle",
+      "type": "compare",
+      "title": "La boucle marketing",
+      "em": "boucle",
+      "left": [
+        "À la main",
+        "Créer la carte",
+        "Créer le formulaire",
+        "Relier les boutons"
+      ],
+      "right": [
+        "En un clic",
+        "Carte + formulaire",
+        "Boutons reliés",
+        "Workflows de suivi"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Chaque rencontre devient un contact",
+      "em": "un contact"
+    }
+  ],
+  "intro": 3.0,
+  "outro": 4.5
+}

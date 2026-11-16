@@ -1,0 +1,123 @@
+{
+  "id": "F41",
+  "product": "crm",
+  "kicker": "Formation · Marketing",
+  "title": "Du lead magnet à la vente avec Claude",
+  "em": "avec Claude",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Prochaine formation : la fidélité digitale",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Un tunnel de vente, c'est un chemin : un guide gratuit, une inscription, quelques e-mails, puis une offre. Avec RapidoCRM connecté à Claude, il se construit en une seule demande."
+    },
+    {
+      "key": "chemin",
+      "text": "Le chemin a cinq étapes : votre produit, un lead magnet, une page d'inscription, une séquence d'e-mails, et une page de vente reliée au paiement."
+    },
+    {
+      "key": "demande",
+      "text": "Dans Claude, connecté à RapidoCRM, décrivez votre offre, votre cible et le guide gratuit que vous voulez proposer."
+    },
+    {
+      "key": "resultat",
+      "text": "Claude utilise l'outil de tunnel de vente : il crée le guide, la page d'inscription, la séquence et la page de vente, sans inventer d'avis ni de coordonnées."
+    },
+    {
+      "key": "relire",
+      "text": "Votre rôle : relire. Ajustez le guide, le ton des e-mails et le prix, puis publiez."
+    },
+    {
+      "key": "suivre",
+      "text": "Ensuite, suivez les chiffres : vues, inscrits, ouvertures et ventes. Améliorez une étape à la fois."
+    },
+    {
+      "key": "recap",
+      "text": "Une demande pour construire, une relecture pour valider, et des chiffres pour progresser."
+    },
+    {
+      "key": "outro",
+      "text": "Dans la prochaine formation : la fidélité digitale, qui fait revenir vos clients."
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "Marketing · Tunnel de vente",
+      "title": "Un tunnel en une demande",
+      "em": "une demande"
+    },
+    {
+      "at": "chemin",
+      "type": "steps",
+      "title": "Les 5 étapes du tunnel",
+      "em": "5 étapes",
+      "items": [
+        "Le produit",
+        "Le lead magnet",
+        "La page d'inscription",
+        "La séquence d'e-mails",
+        "La page de vente"
+      ]
+    },
+    {
+      "at": "demande",
+      "type": "prompt",
+      "title": "La demande à Claude",
+      "em": "Claude",
+      "prompt": "Avec RapidoCRM, crée un tunnel de vente pour mon coaching sportif à 49 € : un guide gratuit « 5 séances à faire chez soi », une séquence de 3 e-mails, puis la page de vente.",
+      "answer": [
+        "Guide « 5 séances à faire chez soi » créé",
+        "Page d'inscription publiée",
+        "Séquence de 3 e-mails reliée",
+        "Page de vente reliée au paiement"
+      ]
+    },
+    {
+      "at": "resultat",
+      "type": "points",
+      "title": "Ce que Claude crée",
+      "em": "Claude",
+      "items": [
+        "Le guide en pages",
+        "La page d'inscription",
+        "La séquence d'e-mails",
+        "La page de vente",
+        "Aucun avis inventé"
+      ]
+    },
+    {
+      "at": "relire",
+      "type": "points",
+      "title": "Votre rôle : relire",
+      "em": "relire",
+      "items": [
+        "Le contenu du guide",
+        "Le ton des e-mails",
+        "Le prix et l'offre",
+        "Puis publier"
+      ]
+    },
+    {
+      "at": "suivre",
+      "type": "steps",
+      "title": "Suivre et améliorer",
+      "em": "améliorer",
+      "items": [
+        "Vues",
+        "Inscrits",
+        "Ouvertures",
+        "Ventes"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Construire, valider, progresser",
+      "em": "progresser"
+    }
+  ],
+  "intro": 3.0,
+  "outro": 4.5
+}

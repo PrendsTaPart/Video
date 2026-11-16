@@ -1,0 +1,126 @@
+{
+  "id": "F42",
+  "product": "crm",
+  "kicker": "Formation · Fidélité",
+  "title": "La fidélité digitale qui fait revenir",
+  "em": "fait revenir",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Prochaine formation : faire travailler son équipe IA",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Un client fidèle dépense plus et parle de vous. La carte de fidélité en carton se perd ; la carte digitale, elle, reste dans le téléphone. Voici comment la mettre en place."
+    },
+    {
+      "key": "type",
+      "text": "D'abord, choisissez la mécanique : des tampons, par exemple un café offert au dixième passage, ou des points, par exemple un point par euro."
+    },
+    {
+      "key": "bonus",
+      "text": "Ajoutez des bonus : un cadeau de bienvenue, un bonus d'anniversaire, et des points pour le parrain comme pour le filleul."
+    },
+    {
+      "key": "inscription",
+      "text": "Le client rejoint le programme en scannant un QR code. Sa carte s'ajoute à l'écran d'accueil de son téléphone."
+    },
+    {
+      "key": "caisse",
+      "text": "En caisse, scannez sa carte ou cherchez-le par son nom, puis créditez le passage. Quand une récompense est débloquée, elle se valide en un clic."
+    },
+    {
+      "key": "relancer",
+      "text": "Enfin, faites vivre le programme : un workflow peut féliciter le client à chaque récompense, et ses points d'anniversaire arrivent tout seuls."
+    },
+    {
+      "key": "recap",
+      "text": "Une règle simple, des bonus qui donnent envie, et une caisse rapide : vos clients reviennent."
+    },
+    {
+      "key": "outro",
+      "text": "Dans la prochaine formation, on fait travailler votre équipe IA avec RapidoCRM et RapidoRH."
+    }
+  ],
+  "slides": [
+    {
+      "at": "intro",
+      "type": "title",
+      "kicker": "Fidélité · Carte digitale",
+      "title": "Des clients qui reviennent",
+      "em": "reviennent"
+    },
+    {
+      "at": "type",
+      "type": "compare",
+      "title": "Tampons ou points ?",
+      "em": "points",
+      "left": [
+        "Tampons",
+        "Simple à comprendre",
+        "1 passage = 1 tampon",
+        "Idéal café, coiffeur"
+      ],
+      "right": [
+        "Points",
+        "Selon le montant",
+        "1 € = 1 point",
+        "Idéal boutique, restaurant"
+      ]
+    },
+    {
+      "at": "bonus",
+      "type": "points",
+      "title": "Les bonus qui donnent envie",
+      "em": "bonus",
+      "items": [
+        "Cadeau de bienvenue",
+        "Bonus d'anniversaire",
+        "Parrain récompensé",
+        "Filleul récompensé"
+      ]
+    },
+    {
+      "at": "inscription",
+      "type": "steps",
+      "title": "L'inscription",
+      "em": "inscription",
+      "items": [
+        "Le client scanne le QR code",
+        "Il remplit son nom",
+        "Sa carte s'ouvre",
+        "Ajout à l'écran d'accueil"
+      ]
+    },
+    {
+      "at": "caisse",
+      "type": "steps",
+      "title": "En caisse",
+      "em": "caisse",
+      "items": [
+        "Scanner ou chercher le client",
+        "Créditer le passage",
+        "Récompense débloquée",
+        "Validée en un clic"
+      ]
+    },
+    {
+      "at": "relancer",
+      "type": "points",
+      "title": "Faire vivre le programme",
+      "em": "vivre",
+      "items": [
+        "Félicitations automatiques",
+        "Points d'anniversaire",
+        "Parrainage suivi",
+        "Mouvements tracés"
+      ]
+    },
+    {
+      "at": "recap",
+      "type": "takeaway",
+      "title": "Une règle simple, des clients qui reviennent",
+      "em": "reviennent"
+    }
+  ],
+  "intro": 3.0,
+  "outro": 4.5
+}
