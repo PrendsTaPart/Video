@@ -22,3 +22,5 @@ Outils : `node _gabarit/essai-blanc.cjs <EP> http://127.0.0.1:8124` (avant toute
 `enregistrer-publication.py` appelle `export-site.py`, qui RÉÉCRIT `rapido-software/resources/data/academie.json` depuis `publication.json` :
 il supprime les entrées ajoutées à la main (RHV2-07 à 10) et ajoute la série RH01–RH32, jamais publiée sur le site (décision de Michael, Ahmed.md).
 Après l'export, ne garder que les nouveaux épisodes : fusionner avec la version précédente (`git show HEAD:resources/data/academie.json`), comme le 16/11 à 2 h.
+
+- (16/11, 8 h 20) Fusion de l'Académie : réécrire academie.json avec `json.dump(..., ensure_ascii=False, indent=1)` (format d'export-site.py). Avec indent=2, tout le fichier apparaît modifié. Le diff attendu ne contient que des ajouts.
