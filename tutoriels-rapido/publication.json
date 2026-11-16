@@ -470,6 +470,76 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM49.png"
   },
   {
+    "id": "CRM50",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Sites et pages : publication et référencement",
+    "tag": "2 min · Débutant",
+    "duree_s": 60,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM50.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM50.png"
+  },
+  {
+    "id": "CRM51",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Connecter son nom de domaine",
+    "tag": "2 min · Intermédiaire",
+    "duree_s": 51,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM51.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM51.png"
+  },
+  {
+    "id": "CRM62",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Fusionner les doublons",
+    "tag": "1 min · Débutant",
+    "duree_s": 58,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM62.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM62.png"
+  },
+  {
+    "id": "CRM65",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "La carte de visite digitale en 1 clic",
+    "tag": "2 min · Débutant",
+    "duree_s": 76,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM65.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM65.png"
+  },
+  {
+    "id": "CRM66",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Les puces NFC",
+    "tag": "1 min · Débutant",
+    "duree_s": 56,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM66.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM66.png"
+  },
+  {
+    "id": "CRM68",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Le formulaire de devis en ligne",
+    "tag": "2 min · Débutant",
+    "duree_s": 62,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM68.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM68.png"
+  },
+  {
+    "id": "CRM69",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Connecter RapidoRH : l'équipe IA au travail",
+    "tag": "2 min · Intermédiaire",
+    "duree_s": 74,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM69.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM69.png"
+  },
+  {
     "id": "CMS01",
     "produit": "cms",
     "kicker": "Tutoriel RapidoCMS",

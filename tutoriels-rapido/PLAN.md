@@ -141,8 +141,8 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM49 — Statistiques des CTA et test A/B (publié)
 
 ### Nouveaux modules (séance du 15/11, 16 h 50) — ordre de production
-- [ ] CRM50 — Sites et pages : publication, SEO, sitemap
-- [ ] CRM51 — Connecter son nom de domaine
+- [x] CRM50 — Sites et pages : publication, SEO, sitemap
+- [x] CRM51 — Connecter son nom de domaine
 - [ ] CRM52 — Le sous-domaine d'envoi des e-mails (SPF, DKIM, DMARC)
 - [ ] CRM53 — L'éditeur : sections et modèles gratuits
 - [ ] CRM54 — L'éditeur sur téléphone
@@ -153,14 +153,14 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [~] CRM59 — Connecter son IA (Claude, ChatGPT, Le Chat, Grok) (voix 882 cr. — en file)
 - [~] CRM60 — Les 100 agents IA (voix 720 cr. — en file)
 - [~] CRM61 — Un prompt par outil MCP (voix 662 cr. — en file)
-- [~] CRM62 — Fusionner les doublons (scénario, démo `doublons-demo.php`, essai à blanc, voix 905 cr. — en file de tournage)
+- [x] CRM62 — Fusionner les doublons (scénario, démo `doublons-demo.php`, essai à blanc, voix 905 cr. — en file de tournage)
 - [~] CRM63 — Les séquences de prospection (scénario, démo `sequences-demo.php`, essai à blanc, voix 894 cr. — en file)
 - [~] CRM64 — Le score des prospects (scénario, démo `score-demo.php`, essai à blanc, voix 738 cr. — en file)
-- [ ] CRM65 — La carte de visite digitale en 1 clic (boucle marketing)
-- [ ] CRM66 — Les puces NFC
+- [x] CRM65 — La carte de visite digitale en 1 clic (boucle marketing)
+- [x] CRM66 — Les puces NFC
 - [ ] CRM67 — Le programme de fidélité et la caisse
-- [ ] CRM68 — Le formulaire de devis en ligne
-- [ ] CRM69 — Connecter RapidoRH : l'équipe IA au travail
+- [x] CRM68 — Le formulaire de devis en ligne
+- [x] CRM69 — Connecter RapidoRH : l'équipe IA au travail
 - [ ] CRM70 — Téléphonie : numéros et standard (dès que le module existe)
 - [ ] CRM71 — Appeler un client depuis sa fiche et le prompteur temps réel
 - [ ] CRM72 — Analyse des appels, enregistrement et tâches envoyées à l'équipe IA

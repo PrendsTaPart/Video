@@ -56,3 +56,4 @@ Tâches qu'un humain doit faire (accès, comptes, argent, serveurs, validation).
 - [ ] **Disque de la session cloud** : supprimer `/home/user/Video` (ancien clone de 17 Go) ; les agents ne sont pas autorisés à le faire et le disque descend sous 2 Go pendant les rendus.
 - [ ] **ElevenLabs** : budget de la nuit du 15 au 16/11 ≈ 12 000 crédits (CRM42, 56, 58–64, F40–F43, une prise chacun). La lecture du solde (`account_get_usage`) demande de reconnecter le connecteur avec plus de droits.
 - [ ] **CRM69** : la règle « équipe » de démonstration reste vide tant que RapidoRH n'accepte pas le domaine de retour de RapidoCRM (voir rapido-crm/Ahmed.md § 2) ; refaire le tournage ensuite pour montrer une vraie règle.
+- [ ] **Académie du site** : la série RapidoRH RH01–RH32 est dans `publication.json` (vidéos dans RapidoCMS) mais n'a jamais été ajoutée à l'Académie du site. La publier ? (Les agents ne l'ajoutent pas sans votre accord.)

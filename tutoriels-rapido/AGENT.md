@@ -17,3 +17,8 @@ Outils : `node _gabarit/essai-blanc.cjs <EP> http://127.0.0.1:8124` (avant toute
 ## Reste (16/11, 2 h)
 - RH13 (pointage), RH16 (modèles d'e-mails), RH33 (messagerie : narration dans scripts-rh.json, scènes à ajouter dans gen-rh.py ; dépend de la messagerie « demandes » de RapidoRH V2).
 - CMS11–CMS23 : RapidoCMS n'est pas installé dans la session (disque insuffisant pour un composer depuis les sources) → après suppression de /home/user/Video.
+
+## ⚠️ Export de l'Académie (16/11)
+`enregistrer-publication.py` appelle `export-site.py`, qui RÉÉCRIT `rapido-software/resources/data/academie.json` depuis `publication.json` :
+il supprime les entrées ajoutées à la main (RHV2-07 à 10) et ajoute la série RH01–RH32, jamais publiée sur le site (décision de Michael, Ahmed.md).
+Après l'export, ne garder que les nouveaux épisodes : fusionner avec la version précédente (`git show HEAD:resources/data/academie.json`), comme le 16/11 à 2 h.

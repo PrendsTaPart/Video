@@ -1,0 +1,28 @@
+{
+  "voiceStartInCapture": 3.043,
+  "paragraphs": {
+    "intro": 0.04,
+    "familles": 5.68,
+    "crochets": 15.23,
+    "chercher": 20.52,
+    "utiliser": 23.2,
+    "modifier": 24.88,
+    "lancer": 28.68,
+    "outro": 33.64,
+    "end": 37.55
+  },
+  "zones": {
+    "familles": [
+      380,
+      314,
+      712,
+      766
+    ],
+    "modifier": [
+      546,
+      277,
+      828,
+      527
+    ]
+  }
+}
