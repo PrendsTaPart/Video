@@ -147,12 +147,12 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM53 — L'éditeur : sections et modèles gratuits
 - [ ] CRM54 — L'éditeur sur téléphone
 - [ ] CRM55 — Les ventes en ligne : bouton d'achat et paiement (Stripe en mode test, aucun paiement réel)
-- [ ] CRM56 — Les lead magnets
+- [~] CRM56 — Les lead magnets (scénario, `leadmagnets-demo.php`, essai à blanc, voix 880 cr. — en file)
 - [ ] CRM57 — Le tunnel de vente créé par Claude (outil creer_tunnel_de_vente)
-- [ ] CRM58 — Bibliothèque : partage suivi et statistiques de téléchargement
-- [ ] CRM59 — Connecter son IA (Claude, ChatGPT, Le Chat, Grok)
-- [ ] CRM60 — Les 100 agents IA
-- [ ] CRM61 — Un prompt par outil MCP
+- [~] CRM58 — Bibliothèque : partage suivi et statistiques de téléchargement (scénario, `bibliotheque-demo.php`, essai à blanc, voix 995 cr. — en file)
+- [~] CRM59 — Connecter son IA (Claude, ChatGPT, Le Chat, Grok) (voix 882 cr. — en file)
+- [~] CRM60 — Les 100 agents IA (voix 720 cr. — en file)
+- [~] CRM61 — Un prompt par outil MCP (voix 662 cr. — en file)
 - [~] CRM62 — Fusionner les doublons (scénario, démo `doublons-demo.php`, essai à blanc, voix 905 cr. — en file de tournage)
 - [~] CRM63 — Les séquences de prospection (scénario, démo `sequences-demo.php`, essai à blanc, voix 894 cr. — en file)
 - [~] CRM64 — Le score des prospects (scénario, démo `score-demo.php`, essai à blanc, voix 738 cr. — en file)
@@ -419,7 +419,7 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   serveur à froid, pas d'un sélecteur.
 - Nouvel outil `_gabarit/essai-blanc.cjs` (vérifie chaque cible d'un scénario, saisies comprises, sans voix ni vidéo) et
   `_gabarit/reperage.cjs` (titres, boutons, liens et champs d'un écran pour écrire un scénario).
-- Voix générées (Adam, eleven_v4, une prise) : CRM66 (859 cr.), CRM67 (990), CRM68 (982), CRM69 (1 091), CRM50 (956), CRM51 (815), CRM52 (852), CRM62 (905), CRM63 (894), CRM64 (738)
+- Voix générées (Adam, eleven_v4, une prise) : CRM66 (859 cr.), CRM67 (990), CRM68 (982), CRM69 (1 091), CRM50 (956), CRM51 (815), CRM52 (852), CRM62 (905), CRM63 (894), CRM64 (738), CRM59 (882), CRM60 (720), CRM61 (662), CRM56 (880), CRM58 (995)
   → 6 545 crédits.
 - CRM66 : **rendu OK (56 s)** après une première tentative perdue (disque plein pendant le rendu). CRM69 : relancé après un plantage
   du navigateur (même cause).
