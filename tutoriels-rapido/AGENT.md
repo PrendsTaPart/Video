@@ -24,3 +24,7 @@ il supprime les entrées ajoutées à la main (RHV2-07 à 10) et ajoute la séri
 Après l'export, ne garder que les nouveaux épisodes : fusionner avec la version précédente (`git show HEAD:resources/data/academie.json`), comme le 16/11 à 2 h.
 
 - (16/11, 8 h 20) Fusion de l'Académie : réécrire academie.json avec `json.dump(..., ensure_ascii=False, indent=1)` (format d'export-site.py). Avec indent=2, tout le fichier apparaît modifié. Le diff attendu ne contient que des ajouts.
+
+- (16/11, 12 h 20) Fusion de l'Académie automatisée : après `enregistrer-publication.py`, lancer
+  `python3 _gabarit/fusion-academie.py /home/user/rapido-software EP1 EP2 …` (part de HEAD, n'ajoute que ces épisodes : CRM après le dernier CRM,
+  F à leur place numérique, écrit avec indent=1). Vérifier ensuite que `git diff --stat` ne montre que des ajouts.
