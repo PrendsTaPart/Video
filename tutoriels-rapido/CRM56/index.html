@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#4CAF50; --b:#9BE15D; --grad:linear-gradient(100deg,#4CAF50,#9BE15D); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; background:#05060A; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(120px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.45; }
+  .h2 { width:700px; height:600px; left:-260px; bottom:-320px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  #frame { position:absolute; left:80px; top:56px; width:1760px; height:990px; border-radius:22px; overflow:hidden; background:#f3f4f7;
+           box-shadow:0 50px 120px -30px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.12),0 0 120px -30px var(--a); }
+  #cam { position:absolute; left:0; top:0; width:1760px; height:990px; transform-origin:0 0; }
+  #cam video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .hl { position:absolute; border-radius:18px; border:3px solid var(--a); box-shadow:0 0 0 9999px rgba(5,6,10,.28),0 0 40px -6px var(--a); opacity:0; }
+  .chap { position:absolute; left:108px; top:82px; display:flex; align-items:center; gap:14px; padding:12px 22px 12px 12px; border-radius:999px;
+          background:rgba(10,12,18,.82); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.14); font-size:26px; font-weight:600; opacity:0; z-index:5; }
+  .chap b { width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:19px; }
+  .sub { position:absolute; inset:auto 0 58px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; letter-spacing:-.01em; white-space:nowrap; box-shadow:0 10px 30px rgba(0,0,0,.4); }
+  .bar { position:absolute; left:80px; bottom:22px; width:1760px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:104px; top:84px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  /* intro / outro */
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .kick { font-size:28px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.7); }
+  .card h1 { text-wrap:balance; margin-top:40px; font-size:128px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1500px; }
+  .card h1 em, .card h2 em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; line-height:1; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="59.45" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+
+  <div id="frame">
+    <div id="cam">
+      <video id="cap" class="clip" src="captures/ecran.mp4" muted data-start="3.0" data-duration="56.45" data-track-index="1"></video>
+      <div class="hl" id="hl1" style="left:0px;top:0px;width:1760px;height:990px"></div>
+      <div class="hl" id="hl2" style="left:348px;top:460px;width:761px;height:530px"></div>
+      <div class="hl" id="hl3" style="left:0px;top:0px;width:1760px;height:990px"></div>
+      <div class="hl" id="hl4" style="left:348px;top:385px;width:761px;height:268px"></div>
+      <div class="hl" id="hl5" style="left:348px;top:338px;width:761px;height:517px"></div>
+      <div class="hl" id="hl6" style="left:0px;top:0px;width:1760px;height:990px"></div>
+      <div class="hl" id="hl7" style="left:1106px;top:226px;width:544px;height:297px"></div>
+      <div class="hl" id="hl8" style="left:0px;top:0px;width:1760px;height:990px"></div>
+    </div>
+  </div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">RapidoCRM</div>
+  <div class="chap" id="ch1"><b>1</b>Nouveau lead magnet</div>
+  <div class="chap" id="ch2"><b>2</b>Pages et blocs</div>
+  <div class="chap" id="ch3"><b>3</b>Design</div>
+  <div class="chap" id="ch4"><b>4</b>Page d&#x27;inscription</div>
+  <div class="chap" id="ch5"><b>5</b>Livraison et suite</div>
+  <div class="chap" id="ch6"><b>6</b>Enregistrer et publier</div>
+  <div class="chap" id="ch7"><b>7</b>Résultats et intégration</div>
+  <div class="chap" id="ch8"><b>8</b>Aperçu</div>
+  <div class="sub clip" id="s0" data-start="3.050" data-duration="1.560" data-track-index="7"><span>Un guide gratuit contre une adresse</span></div>
+  <div class="sub clip" id="s1" data-start="4.630" data-duration="2.090" data-track-index="7"><span>e-mail : c&#x27;est le lead magnet</span></div>
+  <div class="sub clip" id="s2" data-start="6.793" data-duration="1.277" data-track-index="7"><span>RapidoCRM le crée</span></div>
+  <div class="sub clip" id="s3" data-start="8.090" data-duration="2.260" data-track-index="7"><span>le livre et suit chaque inscrit</span></div>
+  <div class="sub clip" id="s4" data-start="10.370" data-duration="1.030" data-track-index="7"><span>Dans Lead magnets</span></div>
+  <div class="sub clip" id="s5" data-start="11.420" data-duration="1.040" data-track-index="7"><span>donnez un titre</span></div>
+  <div class="sub clip" id="s6" data-start="12.480" data-duration="1.450" data-track-index="7"><span>choisissez le format</span></div>
+  <div class="sub clip" id="s7" data-start="13.950" data-duration="1.012" data-track-index="7"><span>guide, check-list</span></div>
+  <div class="sub clip" id="s8" data-start="15.030" data-duration="1.480" data-track-index="7"><span>e-book ou mini-cours</span></div>
+  <div class="sub clip" id="s9" data-start="16.530" data-duration="1.560" data-track-index="7"><span>puis cliquez sur Créer</span></div>
+  <div class="sub clip" id="s10" data-start="18.370" data-duration="1.630" data-track-index="7"><span>Le contenu se construit en pages</span></div>
+  <div class="sub clip" id="s11" data-start="20.020" data-duration="0.790" data-track-index="7"><span>et en blocs</span></div>
+  <div class="sub clip" id="s12" data-start="20.850" data-duration="1.060" data-track-index="7"><span>titres, textes</span></div>
+  <div class="sub clip" id="s13" data-start="21.930" data-duration="2.540" data-track-index="7"><span>listes, chiffres clés, encadrés</span></div>
+  <div class="sub clip" id="s14" data-start="24.490" data-duration="1.960" data-track-index="7"><span>Choisissez la couleur et le style</span></div>
+  <div class="sub clip" id="s15" data-start="26.570" data-duration="1.530" data-track-index="7"><span>Rédigez la phrase d&#x27;accroche de la</span></div>
+  <div class="sub clip" id="s16" data-start="28.120" data-duration="2.070" data-track-index="7"><span>page d&#x27;inscription et ses bénéfices</span></div>
+  <div class="sub clip" id="s17" data-start="30.210" data-duration="1.620" data-track-index="7"><span>Ensuite, la suite</span></div>
+  <div class="sub clip" id="s18" data-start="31.850" data-duration="1.820" data-track-index="7"><span>la séquence d&#x27;e-mails qui démarre après</span></div>
+  <div class="sub clip" id="s19" data-start="33.690" data-duration="1.100" data-track-index="7"><span>le téléchargement</span></div>
+  <div class="sub clip" id="s20" data-start="34.810" data-duration="2.340" data-track-index="7"><span>et le produit proposé en dernière page</span></div>
+  <div class="sub clip" id="s21" data-start="37.170" data-duration="2.140" data-track-index="7"><span>Enregistrez, puis publiez</span></div>
+  <div class="sub clip" id="s22" data-start="39.330" data-duration="1.070" data-track-index="7"><span>Vous suivez les vues</span></div>
+  <div class="sub clip" id="s23" data-start="40.420" data-duration="0.730" data-track-index="7"><span>les inscrits</span></div>
+  <div class="sub clip" id="s24" data-start="41.170" data-duration="1.500" data-track-index="7"><span>le taux de conversion et les</span></div>
+  <div class="sub clip" id="s25" data-start="42.910" data-duration="0.720" data-track-index="7"><span>clients obtenus</span></div>
+  <div class="sub clip" id="s26" data-start="43.650" data-duration="1.960" data-track-index="7"><span>Le code d&#x27;intégration permet de l&#x27;afficher</span></div>
+  <div class="sub clip" id="s27" data-start="45.750" data-duration="1.090" data-track-index="7"><span>sur un autre site</span></div>
+  <div class="sub clip" id="s28" data-start="46.865" data-duration="1.955" data-track-index="7"><span>L&#x27;aperçu montre le guide tel qu&#x27;il</span></div>
+  <div class="sub clip" id="s29" data-start="48.950" data-duration="1.560" data-track-index="7"><span>sera téléchargé en PDF</span></div>
+  <div class="sub clip" id="s30" data-start="50.530" data-duration="2.210" data-track-index="7"><span>Chaque téléchargement devient un contact</span></div>
+  <div class="sub clip" id="s31" data-start="52.760" data-duration="1.910" data-track-index="7"><span>et peut-être votre prochain client</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="51.949999999999996" data-track-index="10" data-volume="1"></audio>
+
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <div class="top"><span class="num">CRM56</span><span class="kick">Tutoriel RapidoCRM</span></div>
+      <h1>Les <em>lead magnets</em></h1>
+    </div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+
+  <div class="clip card" id="outro" data-start="54.65" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <h2>Merci d'avoir <em>regardé</em></h2>
+      <p>Retrouvez tous les tutoriels dans l&#x27;Académie RapidoSoftware</p>
+    </div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  // Intro
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .from('#intro .logo', { opacity: 0, duration: .6 }, .6)
+    .to('#intro', { opacity: 0, scale: 1.04, duration: .6, ease: 'power2.in' }, 3.0)
+    .from('#frame', { scale: .92, opacity: 0, duration: .9, ease: 'expo.out' }, 2.8);
+  // Progression
+  tl.to('#bar', { scaleX: 1, duration: 51.949999999999996, ease: 'none' }, 3.0);
+  tl.to('#cam', { scale: 1.0, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 10.370)
+    .fromTo('#hl1', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 11.170)
+    .to('#hl1', { opacity: 0, duration: .35 }, 18.170)
+    .fromTo('#ch1', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 10.570)
+    .to('#ch1', { opacity: 0, x: -20, duration: .3 }, 18.120);
+  tl.to('#cam', { scale: 1.45, x: -176.7, y: -445.5, duration: 1.2, ease: 'power3.inOut' }, 18.370)
+    .fromTo('#hl2', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 19.170)
+    .to('#hl2', { opacity: 0, duration: .35 }, 24.290)
+    .fromTo('#ch2', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 18.570)
+    .to('#ch2', { opacity: 0, x: -20, duration: .3 }, 24.240);
+  tl.to('#cam', { scale: 1.0, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 24.490)
+    .fromTo('#hl3', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 25.290)
+    .to('#hl3', { opacity: 0, duration: .35 }, 26.370)
+    .fromTo('#ch3', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 24.690)
+    .to('#ch3', { opacity: 0, x: -20, duration: .3 }, 26.320);
+  tl.to('#cam', { scale: 1.45, x: -176.7, y: -257.3, duration: 1.2, ease: 'power3.inOut' }, 26.570)
+    .fromTo('#hl4', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 27.370)
+    .to('#hl4', { opacity: 0, duration: .35 }, 30.010)
+    .fromTo('#ch4', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 26.770)
+    .to('#ch4', { opacity: 0, x: -20, duration: .3 }, 29.960);
+  tl.to('#cam', { scale: 1.45, x: -176.7, y: -370.3, duration: 1.2, ease: 'power3.inOut' }, 30.210)
+    .fromTo('#hl5', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 31.010)
+    .to('#hl5', { opacity: 0, duration: .35 }, 36.970)
+    .fromTo('#ch5', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 30.410)
+    .to('#ch5', { opacity: 0, x: -20, duration: .3 }, 36.920);
+  tl.to('#cam', { scale: 1.0, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 37.170)
+    .fromTo('#hl6', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 37.970)
+    .to('#hl6', { opacity: 0, duration: .35 }, 39.130)
+    .fromTo('#ch6', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 37.370)
+    .to('#ch6', { opacity: 0, x: -20, duration: .3 }, 39.080);
+  tl.to('#cam', { scale: 1.45, x: -792.0, y: -48.6, duration: 1.2, ease: 'power3.inOut' }, 39.330)
+    .fromTo('#hl7', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 40.130)
+    .to('#hl7', { opacity: 0, duration: .35 }, 46.650)
+    .fromTo('#ch7', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 39.530)
+    .to('#ch7', { opacity: 0, x: -20, duration: .3 }, 46.600);
+  tl.to('#cam', { scale: 1.0, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 46.850)
+    .fromTo('#hl8', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 47.650)
+    .to('#hl8', { opacity: 0, duration: .35 }, 50.330)
+    .fromTo('#ch8', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 47.050)
+    .to('#ch8', { opacity: 0, x: -20, duration: .3 }, 50.280);
+  tl.to('#cam', { scale: 1, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 50.530);
+  // Outro
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 54.950)
+    .from('#outro p', { y: 30, opacity: 0, duration: .7, ease: 'expo.out' }, 55.200);
+  window.__timelines['main'] = tl;
+</script>
+</body>
+</html>
