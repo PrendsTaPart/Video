@@ -428,3 +428,11 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   de démo à zéro. CRM68 : le formulaire de démo a 5 produits → clic sur le 4e « + » au lieu du 6e.
 - ⚠️ Disque : le conteneur a saturé deux fois (ancien clone `/home/user/Video` de 17 Go impossible à supprimer par l'agent,
   dépendances Composer clonées avec leur historique git). Garder > 3 Go libres avant un rendu.
+
+## Journal — 16/11, exécution de 7 h 10
+- Redémarrage du conteneur vers 2 h : CRM56 coupé pendant son rendu → rendu seul ; file relancée (`/tmp/claude-0/file15.sh` → 18).
+- Publiés (RapidoCMS + Académie) depuis 2 h : CRM50, 51, 62, 65, 66, 68, 69. Lot 2 (CRM52, 59, 60, 63, 64, 67) encodé en fin de file15.
+- CRM56 vérifié (défauts mineurs : zone « Design » non surlignée, adresse locale dans le code d'intégration). CRM61 : écran blanc de 4 s en fin → corrigé, retournage.
+- Nouveaux : CRM57 (tunnel créé par Claude, démo par TunnelVenteService), formations F21–F26 (IA, prompt, MCP, Claude, agents, workflows). Voix : CRM57 (847), F21 (1 098), F22 (1 056), F23 (1 049), F24 (901), F25 (1 022), F26 (929).
+- Copie de tournage synchronisée avec rapido-crm (5 migrations de l'autre agent : agents IA, journal MCP, agent des sites, idempotence, tickets) : l'écran Connexions plantait (table webhooks absente).
+- Disque : ~1 Go libre ; les fichiers déjà poussés de videos/ sont retirés de l'arbre (`git update-index --skip-worktree` puis suppression).
