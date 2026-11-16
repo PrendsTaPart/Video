@@ -1,0 +1,29 @@
+{
+  "voiceStartInCapture": 3.185,
+  "paragraphs": {
+    "intro": 0.03,
+    "grille": 6.22,
+    "filtrer": 15.37,
+    "ouvrir": 20.61,
+    "mission": 22.61,
+    "texte": 26.49,
+    "lancer": 30.82,
+    "garder": 38.07,
+    "outro": 40.97,
+    "end": 43.26
+  },
+  "zones": {
+    "grille": [
+      380,
+      323,
+      364,
+      192
+    ],
+    "mission": [
+      546,
+      253,
+      828,
+      573
+    ]
+  }
+}
