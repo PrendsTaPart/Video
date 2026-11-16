@@ -1,0 +1,32 @@
+{
+  "id": "F14",
+  "product": "crm",
+  "kicker": "Formation · Prospection",
+  "title": "Salons : avant, pendant, après",
+  "em": "après",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Prochaine formation : fidéliser ses clients",
+  "intro": 3.0,
+  "outro": 4.5,
+  "paragraphs": [
+    {"key": "intro", "text": "Un salon se gagne avant d'arriver, et se transforme après. Voici comment l'organiser avec RapidoCRM."},
+    {"key": "avant", "text": "Avant : préparez un formulaire de contact, ouvert sur une tablette au stand, et une séquence de suivi prête à partir."},
+    {"key": "pendant", "text": "Pendant : chaque visiteur intéressé touche votre carte NFC ou remplit le formulaire. Ses coordonnées arrivent directement dans le CRM, avec des points de score."},
+    {"key": "noter", "text": "Notez une phrase sur son besoin, tant que c'est frais : c'est elle qui rendra votre relance personnelle."},
+    {"key": "apres", "text": "Après : dès le lendemain, inscrivez les contacts du formulaire à la séquence. Un merci d'abord, puis une proposition quelques jours plus tard."},
+    {"key": "chauds", "text": "Ceux qui ouvrent et qui cliquent montent en score. Au-dessus du seuil chaud, une tâche de rappel est créée pour vous."},
+    {"key": "mesurer", "text": "Enfin, comptez : contacts récoltés, réponses, devis envoyés. C'est ce qui dit si le salon valait le prix du stand."},
+    {"key": "recap", "text": "Préparer, capter, relancer dans les quarante-huit heures."},
+    {"key": "outro", "text": "Dans la prochaine formation : fidéliser ses clients."}
+  ],
+  "slides": [
+    {"at": "intro", "type": "title", "kicker": "Prospection · Salons", "title": "Un salon qui rapporte", "em": "rapporte"},
+    {"at": "avant", "type": "points", "title": "Avant", "em": "Avant", "items": ["Formulaire sur tablette", "Séquence de suivi prête"]},
+    {"at": "pendant", "type": "steps", "title": "Pendant", "em": "Pendant", "items": ["Carte NFC ou formulaire", "Contact dans le CRM", "Points de score"]},
+    {"at": "noter", "type": "points", "title": "Une phrase sur le besoin", "em": "besoin", "items": ["Notée sur le moment", "Relance personnelle"]},
+    {"at": "apres", "type": "steps", "title": "Après", "em": "Après", "items": ["Lendemain : inscription", "Merci", "Proposition à J + 3"]},
+    {"at": "chauds", "type": "points", "title": "Les prospects chauds", "em": "chauds", "items": ["Ouvertures et clics", "Score qui monte", "Tâche de rappel créée"]},
+    {"at": "mesurer", "type": "points", "title": "Mesurer", "em": "Mesurer", "items": ["Contacts récoltés", "Réponses", "Devis envoyés"]},
+    {"at": "recap", "type": "takeaway", "title": "Préparer, capter, relancer", "em": "relancer"}
+  ]
+}

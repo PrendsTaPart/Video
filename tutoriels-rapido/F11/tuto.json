@@ -1,0 +1,32 @@
+{
+  "id": "F11",
+  "product": "crm",
+  "kicker": "Formation · Prospection",
+  "title": "Le cold email qui obtient des réponses",
+  "em": "réponses",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Prochaine formation : piloter son pipeline et ses prévisions",
+  "intro": 3.0,
+  "outro": 4.5,
+  "paragraphs": [
+    {"key": "intro", "text": "Un e-mail de prospection réussi ne vend rien : il ouvre une conversation. Voici comment écrire le vôtre et l'envoyer en séquence avec RapidoCRM."},
+    {"key": "objet", "text": "Un : l'objet. Court, précis, sans majuscules ni promesse : le nom de l'entreprise et un sujet concret suffisent."},
+    {"key": "corps", "text": "Deux : le corps, en quatre phrases. Pourquoi vous lui écrivez à lui, le problème que vous voyez, ce que vous proposez, et une seule question pour finir."},
+    {"key": "personnaliser", "text": "Trois : personnalisez. Les variables remplissent le prénom et l'entreprise. Avant l'envoi, vérifiez l'e-mail et envoyez-vous un test, variables remplies."},
+    {"key": "sequence", "text": "Quatre : la séquence. Un premier e-mail, une relance trois jours ouvrés plus tard, puis une tâche pour appeler. Tout part tout seul."},
+    {"key": "arret", "text": "Dès que le prospect répond, sa séquence s'arrête automatiquement, et vous êtes prévenu. Pas de relance gênante après un oui."},
+    {"key": "respect", "text": "Chaque e-mail porte un lien de désinscription. Ceux qui se désinscrivent ne reçoivent plus rien : c'est la loi, et c'est bon pour votre réputation."},
+    {"key": "recap", "text": "Un objet simple, quatre phrases, une question, et une séquence qui s'arrête à la réponse."},
+    {"key": "outro", "text": "Dans la prochaine formation : piloter son pipeline et ses prévisions."}
+  ],
+  "slides": [
+    {"at": "intro", "type": "title", "kicker": "Prospection · E-mail", "title": "Ouvrir une conversation", "em": "conversation"},
+    {"at": "objet", "type": "compare", "title": "1 · L'objet", "em": "objet", "left": ["À éviter", "OFFRE EXCEPTIONNELLE !!!", "Une promesse floue"], "right": ["À préférer", "Boulangerie Dorée × commandes en ligne", "Court et concret"]},
+    {"at": "corps", "type": "steps", "title": "2 · Quatre phrases", "em": "Quatre phrases", "items": ["Pourquoi lui", "Le problème vu", "Votre proposition", "Une seule question"]},
+    {"at": "personnaliser", "type": "points", "title": "3 · Personnaliser", "em": "Personnaliser", "items": ["Prénom et entreprise", "Vérifier l'e-mail", "S'envoyer un test"]},
+    {"at": "sequence", "type": "steps", "title": "4 · La séquence", "em": "séquence", "items": ["E-mail J0", "Relance J + 3 ouvrés", "Tâche : appeler"]},
+    {"at": "arret", "type": "points", "title": "Arrêt à la réponse", "em": "réponse", "items": ["Le prospect répond", "Séquence arrêtée", "Vous êtes prévenu"]},
+    {"at": "respect", "type": "points", "title": "Le respect", "em": "respect", "items": ["Lien de désinscription", "Plus aucun envoi", "Réputation protégée"]},
+    {"at": "recap", "type": "takeaway", "title": "Simple, court, une question", "em": "une question"}
+  ]
+}

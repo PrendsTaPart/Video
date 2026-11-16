@@ -1,0 +1,32 @@
+{
+  "id": "F13",
+  "product": "crm",
+  "kicker": "Formation · Commercial",
+  "title": "Le devis qui se signe",
+  "em": "se signe",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Prochaine formation : salons, avant, pendant, après",
+  "intro": 3.0,
+  "outro": 4.5,
+  "paragraphs": [
+    {"key": "intro", "text": "Un devis envoyé n'est pas un devis signé. Voici comment présenter le vôtre, suivre sa lecture et relancer au bon moment."},
+    {"key": "presentation", "text": "Un : la présentation. Vos produits viennent du catalogue, avec leurs prix et leur TVA. Ajoutez votre logo, votre charte et des conditions claires : délai, mode de paiement, validité."},
+    {"key": "envoi", "text": "Deux : l'envoi. Le client reçoit un lien sécurisé. Il lit le devis et le signe en ligne, sur ordinateur ou sur téléphone."},
+    {"key": "suivi", "text": "Trois : le suivi. Vous voyez quand le devis est ouvert, et combien de fois. À la première ouverture, vous êtes prévenu : c'est le bon moment pour appeler."},
+    {"key": "relances", "text": "Quatre : les relances automatiques. Par défaut à trois, sept et quatorze jours, avec le lien de signature. Vous réglez les délais et le message dans l'écran Relances."},
+    {"key": "signature", "text": "À la signature, la facture est créée automatiquement, avec les mêmes lignes. Rien à ressaisir."},
+    {"key": "conseil", "text": "Un conseil : envoyez le devis dans les vingt-quatre heures qui suivent le rendez-vous, tant que le besoin est frais."},
+    {"key": "recap", "text": "Un devis clair, un lien de signature, un appel au bon moment et des relances qui ne s'oublient pas."},
+    {"key": "outro", "text": "Dans la prochaine formation : réussir un salon, avant, pendant et après."}
+  ],
+  "slides": [
+    {"at": "intro", "type": "title", "kicker": "Commercial · Devis", "title": "Du devis envoyé au devis signé", "em": "signé"},
+    {"at": "presentation", "type": "points", "title": "1 · La présentation", "em": "présentation", "items": ["Produits du catalogue", "Prix et TVA justes", "Logo et charte", "Délai, paiement, validité"]},
+    {"at": "envoi", "type": "steps", "title": "2 · L'envoi", "em": "envoi", "items": ["Lien sécurisé", "Lecture en ligne", "Signature sur téléphone"]},
+    {"at": "suivi", "type": "points", "title": "3 · Le suivi", "em": "suivi", "items": ["Devis ouvert ?", "Combien de fois", "Alerte à la 1re ouverture", "Le bon moment pour appeler"]},
+    {"at": "relances", "type": "steps", "title": "4 · Les relances", "em": "relances", "items": ["J + 3", "J + 7", "J + 14", "Délais et message réglables"]},
+    {"at": "signature", "type": "compare", "title": "À la signature", "em": "signature", "left": ["Avant", "Ressaisir la facture", "Oublis, erreurs"], "right": ["Avec RapidoCRM", "Facture créée", "Mêmes lignes"]},
+    {"at": "conseil", "type": "points", "title": "Le bon tempo", "em": "tempo", "items": ["Devis sous 24 h", "Besoin encore frais"]},
+    {"at": "recap", "type": "takeaway", "title": "Clair, suivi, relancé", "em": "relancé"}
+  ]
+}

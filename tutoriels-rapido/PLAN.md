@@ -253,11 +253,11 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] F08 — Définir sa cible et son fichier de prospects
 - [ ] F09 — Prospection locale avec Google Maps et SIRET
 - [ ] F10 — Le premier appel : script et qualification (agent vocal)
-- [ ] F11 — Le cold email qui obtient des réponses
-- [ ] F12 — Piloter son pipeline et ses prévisions
-- [ ] F13 — Le devis qui se signe : présentation et relances
-- [ ] F14 — Salons : avant, pendant, après
-- [ ] F15 — Fidéliser : programmes, jeux concours, avis
+- [~] F11 — Le cold email qui obtient des réponses (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
+- [~] F12 — Piloter son pipeline et ses prévisions (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
+- [~] F13 — Le devis qui se signe : présentation et relances (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
+- [~] F14 — Salons : avant, pendant, après (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
+- [~] F15 — Fidéliser : programmes, jeux concours, avis (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
 - [~] F40 — Transformer sa carte de visite en machine à prospects (carte digitale, NFC, devis en ligne) (script, voix générée — en file de rendu)
 - [~] F41 — Du lead magnet à la vente : construire son tunnel avec Claude (script, voix générée — en file de rendu)
 - [~] F42 — Fidélité digitale : tampons, parrainage et récompenses qui font revenir (script, voix générée — en file de rendu)

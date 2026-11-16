@@ -1,0 +1,32 @@
+{
+  "id": "F15",
+  "product": "crm",
+  "kicker": "Formation · Fidélisation",
+  "title": "Fidéliser : programmes, jeux concours, avis",
+  "em": "Fidéliser",
+  "tag": "1 min 30 · Méthode",
+  "end_cta": "Prochaine formation : la fidélité digitale en détail",
+  "intro": 3.0,
+  "outro": 4.5,
+  "paragraphs": [
+    {"key": "intro", "text": "Garder un client coûte bien moins cher que d'en trouver un nouveau. Trois leviers dans RapidoCRM : le programme de fidélité, les jeux concours et les avis."},
+    {"key": "programme", "text": "Un : le programme de fidélité. Des tampons ou des points, des paliers de récompense, et des bonus de bienvenue, d'anniversaire ou de parrainage."},
+    {"key": "jeux", "text": "Deux : les jeux concours. Roue, carte à gratter, machine à sous ou boîte mystère. Le tirage se fait côté serveur, les lots ont un stock, et chaque gain porte un code vérifiable une seule fois."},
+    {"key": "consentement", "text": "Le participant donne son consentement et accepte le règlement. Vous récupérez un contact qualifié, pas une liste achetée."},
+    {"key": "avis", "text": "Trois : les avis. Notez la satisfaction de chaque client de une à cinq étoiles. RapidoCRM calcule la moyenne, la répartition et l'évolution mois par mois."},
+    {"key": "sav", "text": "Et quand un ticket de service client est résolu, le client reçoit un lien pour donner son avis. Vous savez tout de suite si le problème est vraiment réglé."},
+    {"key": "rythme", "text": "Le bon rythme : le programme toute l'année, un jeu pour un temps fort, et les avis regardés chaque mois."},
+    {"key": "recap", "text": "Récompenser, animer, écouter : trois raisons pour vos clients de revenir."},
+    {"key": "outro", "text": "Dans la prochaine formation : la fidélité digitale en détail."}
+  ],
+  "slides": [
+    {"at": "intro", "type": "title", "kicker": "Fidélisation · Trois leviers", "title": "Des clients qui reviennent", "em": "reviennent"},
+    {"at": "programme", "type": "points", "title": "1 · Le programme", "em": "programme", "items": ["Tampons ou points", "Paliers de récompense", "Bienvenue, anniversaire", "Parrainage"]},
+    {"at": "jeux", "type": "points", "title": "2 · Les jeux concours", "em": "jeux concours", "items": ["Roue, grattage, machine à sous", "Tirage côté serveur", "Lots avec stock", "Code de gain unique"]},
+    {"at": "consentement", "type": "compare", "title": "Un contact qualifié", "em": "qualifié", "left": ["Liste achetée", "Inconnus", "Aucun accord"], "right": ["Participant", "Consentement", "Règlement accepté"]},
+    {"at": "avis", "type": "points", "title": "3 · Les avis", "em": "avis", "items": ["Note de 1 à 5", "Moyenne", "Répartition", "Évolution mensuelle"]},
+    {"at": "sav", "type": "steps", "title": "Après le service client", "em": "service client", "items": ["Ticket résolu", "Lien d'avis envoyé", "Satisfaction mesurée"]},
+    {"at": "rythme", "type": "steps", "title": "Le bon rythme", "em": "rythme", "items": ["Programme : toute l'année", "Jeu : un temps fort", "Avis : chaque mois"]},
+    {"at": "recap", "type": "takeaway", "title": "Récompenser, animer, écouter", "em": "écouter"}
+  ]
+}
