@@ -1,0 +1,1022 @@
+[
+  {
+    "text": "Un",
+    "start": 0.08,
+    "end": 0.16,
+    "id": "w0"
+  },
+  {
+    "text": "client",
+    "start": 0.16,
+    "end": 0.63,
+    "id": "w1"
+  },
+  {
+    "text": "fidèle",
+    "start": 0.63,
+    "end": 1.03,
+    "id": "w2"
+  },
+  {
+    "text": "dépense",
+    "start": 1.1,
+    "end": 1.65,
+    "id": "w3"
+  },
+  {
+    "text": "plus",
+    "start": 1.65,
+    "end": 1.89,
+    "id": "w4"
+  },
+  {
+    "text": "et",
+    "start": 2.01,
+    "end": 2.07,
+    "id": "w5"
+  },
+  {
+    "text": "parle",
+    "start": 2.2,
+    "end": 2.53,
+    "id": "w6"
+  },
+  {
+    "text": "de",
+    "start": 2.53,
+    "end": 2.68,
+    "id": "w7"
+  },
+  {
+    "text": "vous.",
+    "start": 2.68,
+    "end": 3.08,
+    "id": "w8"
+  },
+  {
+    "text": "La",
+    "start": 3.16,
+    "end": 3.22,
+    "id": "w9"
+  },
+  {
+    "text": "carte",
+    "start": 3.22,
+    "end": 3.57,
+    "id": "w10"
+  },
+  {
+    "text": "de",
+    "start": 3.57,
+    "end": 3.71,
+    "id": "w11"
+  },
+  {
+    "text": "fidélité",
+    "start": 3.71,
+    "end": 4.24,
+    "id": "w12"
+  },
+  {
+    "text": "en",
+    "start": 4.32,
+    "end": 4.41,
+    "id": "w13"
+  },
+  {
+    "text": "carton",
+    "start": 4.41,
+    "end": 4.82,
+    "id": "w14"
+  },
+  {
+    "text": "se",
+    "start": 4.82,
+    "end": 4.95,
+    "id": "w15"
+  },
+  {
+    "text": "perd.",
+    "start": 4.97,
+    "end": 5.48,
+    "id": "w16"
+  },
+  {
+    "text": "La",
+    "start": 5.56,
+    "end": 5.6,
+    "id": "w17"
+  },
+  {
+    "text": "carte",
+    "start": 5.6,
+    "end": 5.92,
+    "id": "w18"
+  },
+  {
+    "text": "digitale,",
+    "start": 5.92,
+    "end": 6.51,
+    "id": "w19"
+  },
+  {
+    "text": "elle,",
+    "start": 6.54,
+    "end": 6.92,
+    "id": "w20"
+  },
+  {
+    "text": "reste",
+    "start": 7.03,
+    "end": 7.29,
+    "id": "w21"
+  },
+  {
+    "text": "dans",
+    "start": 7.29,
+    "end": 7.55,
+    "id": "w22"
+  },
+  {
+    "text": "le",
+    "start": 7.55,
+    "end": 7.68,
+    "id": "w23"
+  },
+  {
+    "text": "téléphone.",
+    "start": 7.68,
+    "end": 8.27,
+    "id": "w24"
+  },
+  {
+    "text": "Voici",
+    "start": 8.56,
+    "end": 8.74,
+    "id": "w25"
+  },
+  {
+    "text": "comment",
+    "start": 8.76,
+    "end": 9.15,
+    "id": "w26"
+  },
+  {
+    "text": "la",
+    "start": 9.2,
+    "end": 9.27,
+    "id": "w27"
+  },
+  {
+    "text": "mettre",
+    "start": 9.27,
+    "end": 9.61,
+    "id": "w28"
+  },
+  {
+    "text": "en",
+    "start": 9.61,
+    "end": 9.65,
+    "id": "w29"
+  },
+  {
+    "text": "place.",
+    "start": 9.72,
+    "end": 10.2,
+    "id": "w30"
+  },
+  {
+    "text": "D'abord,",
+    "start": 10.26,
+    "end": 10.69,
+    "id": "w31"
+  },
+  {
+    "text": "choisissez",
+    "start": 10.81,
+    "end": 11.34,
+    "id": "w32"
+  },
+  {
+    "text": "la",
+    "start": 11.34,
+    "end": 11.46,
+    "id": "w33"
+  },
+  {
+    "text": "mécanique.",
+    "start": 11.46,
+    "end": 12.24,
+    "id": "w34"
+  },
+  {
+    "text": "Des",
+    "start": 12.32,
+    "end": 12.42,
+    "id": "w35"
+  },
+  {
+    "text": "tampons,",
+    "start": 12.46,
+    "end": 13.04,
+    "id": "w36"
+  },
+  {
+    "text": "par",
+    "start": 13.04,
+    "end": 13.22,
+    "id": "w37"
+  },
+  {
+    "text": "exemple",
+    "start": 13.22,
+    "end": 13.65,
+    "id": "w38"
+  },
+  {
+    "text": "un",
+    "start": 13.65,
+    "end": 13.68,
+    "id": "w39"
+  },
+  {
+    "text": "café",
+    "start": 13.79,
+    "end": 14.01,
+    "id": "w40"
+  },
+  {
+    "text": "offert",
+    "start": 14.01,
+    "end": 14.31,
+    "id": "w41"
+  },
+  {
+    "text": "au",
+    "start": 14.44,
+    "end": 14.54,
+    "id": "w42"
+  },
+  {
+    "text": "10e",
+    "start": 14.54,
+    "end": 15.02,
+    "id": "w43"
+  },
+  {
+    "text": "passage,",
+    "start": 15.46,
+    "end": 15.56,
+    "id": "w44"
+  },
+  {
+    "text": "ou",
+    "start": 15.64,
+    "end": 15.67,
+    "id": "w45"
+  },
+  {
+    "text": "des",
+    "start": 15.67,
+    "end": 15.82,
+    "id": "w46"
+  },
+  {
+    "text": "points,",
+    "start": 15.84,
+    "end": 16.32,
+    "id": "w47"
+  },
+  {
+    "text": "par",
+    "start": 16.32,
+    "end": 16.52,
+    "id": "w48"
+  },
+  {
+    "text": "exemple",
+    "start": 16.52,
+    "end": 16.99,
+    "id": "w49"
+  },
+  {
+    "text": "un",
+    "start": 17.11,
+    "end": 17.12,
+    "id": "w50"
+  },
+  {
+    "text": "point",
+    "start": 17.13,
+    "end": 17.46,
+    "id": "w51"
+  },
+  {
+    "text": "par",
+    "start": 17.57,
+    "end": 17.63,
+    "id": "w52"
+  },
+  {
+    "text": "euro.",
+    "start": 17.76,
+    "end": 18.16,
+    "id": "w53"
+  },
+  {
+    "text": "Ajoutez",
+    "start": 18.28,
+    "end": 18.78,
+    "id": "w54"
+  },
+  {
+    "text": "des",
+    "start": 18.81,
+    "end": 19.04,
+    "id": "w55"
+  },
+  {
+    "text": "bonus.",
+    "start": 19.04,
+    "end": 19.48,
+    "id": "w56"
+  },
+  {
+    "text": "Un",
+    "start": 19.56,
+    "end": 19.59,
+    "id": "w57"
+  },
+  {
+    "text": "cadeau",
+    "start": 19.59,
+    "end": 19.92,
+    "id": "w58"
+  },
+  {
+    "text": "de",
+    "start": 19.92,
+    "end": 19.97,
+    "id": "w59"
+  },
+  {
+    "text": "bienvenue,",
+    "start": 20.09,
+    "end": 20.64,
+    "id": "w60"
+  },
+  {
+    "text": "un",
+    "start": 20.64,
+    "end": 20.77,
+    "id": "w61"
+  },
+  {
+    "text": "bonus",
+    "start": 20.77,
+    "end": 21.11,
+    "id": "w62"
+  },
+  {
+    "text": "d'anniversaire,",
+    "start": 21.11,
+    "end": 22.08,
+    "id": "w63"
+  },
+  {
+    "text": "et",
+    "start": 22.16,
+    "end": 22.17,
+    "id": "w64"
+  },
+  {
+    "text": "des",
+    "start": 22.17,
+    "end": 22.31,
+    "id": "w65"
+  },
+  {
+    "text": "points",
+    "start": 22.31,
+    "end": 22.57,
+    "id": "w66"
+  },
+  {
+    "text": "pour",
+    "start": 22.69,
+    "end": 22.75,
+    "id": "w67"
+  },
+  {
+    "text": "le",
+    "start": 22.8,
+    "end": 22.88,
+    "id": "w68"
+  },
+  {
+    "text": "parrain,",
+    "start": 22.88,
+    "end": 23.36,
+    "id": "w69"
+  },
+  {
+    "text": "comme",
+    "start": 23.36,
+    "end": 23.67,
+    "id": "w70"
+  },
+  {
+    "text": "pour",
+    "start": 23.67,
+    "end": 23.92,
+    "id": "w71"
+  },
+  {
+    "text": "le",
+    "start": 23.92,
+    "end": 23.98,
+    "id": "w72"
+  },
+  {
+    "text": "fiole.",
+    "start": 24.08,
+    "end": 24.51,
+    "id": "w73"
+  },
+  {
+    "text": "Le",
+    "start": 24.64,
+    "end": 24.68,
+    "id": "w74"
+  },
+  {
+    "text": "client",
+    "start": 24.68,
+    "end": 25.06,
+    "id": "w75"
+  },
+  {
+    "text": "rejoint",
+    "start": 25.06,
+    "end": 25.49,
+    "id": "w76"
+  },
+  {
+    "text": "le",
+    "start": 25.49,
+    "end": 25.59,
+    "id": "w77"
+  },
+  {
+    "text": "programme",
+    "start": 25.61,
+    "end": 26.18,
+    "id": "w78"
+  },
+  {
+    "text": "en",
+    "start": 26.18,
+    "end": 26.3,
+    "id": "w79"
+  },
+  {
+    "text": "scanant",
+    "start": 26.3,
+    "end": 26.63,
+    "id": "w80"
+  },
+  {
+    "text": "un",
+    "start": 26.76,
+    "end": 26.86,
+    "id": "w81"
+  },
+  {
+    "text": "QR",
+    "start": 26.86,
+    "end": 26.97,
+    "id": "w82"
+  },
+  {
+    "text": "code.",
+    "start": 26.97,
+    "end": 27.34,
+    "id": "w83"
+  },
+  {
+    "text": "Sa",
+    "start": 27.56,
+    "end": 27.59,
+    "id": "w84"
+  },
+  {
+    "text": "carte",
+    "start": 27.59,
+    "end": 27.86,
+    "id": "w85"
+  },
+  {
+    "text": "s'ajoute",
+    "start": 27.86,
+    "end": 28.29,
+    "id": "w86"
+  },
+  {
+    "text": "à",
+    "start": 28.29,
+    "end": 28.34,
+    "id": "w87"
+  },
+  {
+    "text": "l'écran",
+    "start": 28.34,
+    "end": 28.65,
+    "id": "w88"
+  },
+  {
+    "text": "d'accueil",
+    "start": 28.72,
+    "end": 29.19,
+    "id": "w89"
+  },
+  {
+    "text": "de",
+    "start": 29.19,
+    "end": 29.3,
+    "id": "w90"
+  },
+  {
+    "text": "son",
+    "start": 29.3,
+    "end": 29.38,
+    "id": "w91"
+  },
+  {
+    "text": "téléphone.",
+    "start": 29.49,
+    "end": 30.19,
+    "id": "w92"
+  },
+  {
+    "text": "En",
+    "start": 30.28,
+    "end": 30.33,
+    "id": "w93"
+  },
+  {
+    "text": "caisse,",
+    "start": 30.33,
+    "end": 30.86,
+    "id": "w94"
+  },
+  {
+    "text": "scannez",
+    "start": 30.86,
+    "end": 31.33,
+    "id": "w95"
+  },
+  {
+    "text": "sa",
+    "start": 31.33,
+    "end": 31.46,
+    "id": "w96"
+  },
+  {
+    "text": "carte",
+    "start": 31.46,
+    "end": 31.84,
+    "id": "w97"
+  },
+  {
+    "text": "ou",
+    "start": 31.84,
+    "end": 31.94,
+    "id": "w98"
+  },
+  {
+    "text": "cherchez-le",
+    "start": 31.94,
+    "end": 32.59,
+    "id": "w99"
+  },
+  {
+    "text": "par",
+    "start": 32.59,
+    "end": 32.77,
+    "id": "w100"
+  },
+  {
+    "text": "son",
+    "start": 32.77,
+    "end": 32.94,
+    "id": "w101"
+  },
+  {
+    "text": "nom,",
+    "start": 32.94,
+    "end": 33.2,
+    "id": "w102"
+  },
+  {
+    "text": "puis",
+    "start": 33.29,
+    "end": 33.46,
+    "id": "w103"
+  },
+  {
+    "text": "créditez",
+    "start": 33.48,
+    "end": 34.01,
+    "id": "w104"
+  },
+  {
+    "text": "le",
+    "start": 34.01,
+    "end": 34.14,
+    "id": "w105"
+  },
+  {
+    "text": "passage.",
+    "start": 34.14,
+    "end": 34.84,
+    "id": "w106"
+  },
+  {
+    "text": "Quand",
+    "start": 34.92,
+    "end": 35.07,
+    "id": "w107"
+  },
+  {
+    "text": "une",
+    "start": 35.07,
+    "end": 35.21,
+    "id": "w108"
+  },
+  {
+    "text": "récompense",
+    "start": 35.21,
+    "end": 35.66,
+    "id": "w109"
+  },
+  {
+    "text": "est",
+    "start": 35.66,
+    "end": 35.8,
+    "id": "w110"
+  },
+  {
+    "text": "débloquée,",
+    "start": 35.8,
+    "end": 36.28,
+    "id": "w111"
+  },
+  {
+    "text": "elle",
+    "start": 36.39,
+    "end": 36.65,
+    "id": "w112"
+  },
+  {
+    "text": "se",
+    "start": 36.65,
+    "end": 36.74,
+    "id": "w113"
+  },
+  {
+    "text": "valide",
+    "start": 36.85,
+    "end": 37.21,
+    "id": "w114"
+  },
+  {
+    "text": "en",
+    "start": 37.21,
+    "end": 37.35,
+    "id": "w115"
+  },
+  {
+    "text": "un",
+    "start": 37.35,
+    "end": 37.49,
+    "id": "w116"
+  },
+  {
+    "text": "clic.",
+    "start": 37.49,
+    "end": 38.04,
+    "id": "w117"
+  },
+  {
+    "text": "Enfin,",
+    "start": 38.13,
+    "end": 38.5,
+    "id": "w118"
+  },
+  {
+    "text": "faites",
+    "start": 38.5,
+    "end": 38.9,
+    "id": "w119"
+  },
+  {
+    "text": "vivre",
+    "start": 38.9,
+    "end": 39.2,
+    "id": "w120"
+  },
+  {
+    "text": "le",
+    "start": 39.28,
+    "end": 39.36,
+    "id": "w121"
+  },
+  {
+    "text": "programme.",
+    "start": 39.36,
+    "end": 40.11,
+    "id": "w122"
+  },
+  {
+    "text": "Un",
+    "start": 40.28,
+    "end": 40.31,
+    "id": "w123"
+  },
+  {
+    "text": "workflow",
+    "start": 40.31,
+    "end": 40.7,
+    "id": "w124"
+  },
+  {
+    "text": "peut",
+    "start": 40.81,
+    "end": 40.98,
+    "id": "w125"
+  },
+  {
+    "text": "féliciter",
+    "start": 40.98,
+    "end": 41.47,
+    "id": "w126"
+  },
+  {
+    "text": "le",
+    "start": 41.47,
+    "end": 41.58,
+    "id": "w127"
+  },
+  {
+    "text": "client",
+    "start": 41.58,
+    "end": 41.96,
+    "id": "w128"
+  },
+  {
+    "text": "à",
+    "start": 41.96,
+    "end": 42.03,
+    "id": "w129"
+  },
+  {
+    "text": "chaque",
+    "start": 42.03,
+    "end": 42.45,
+    "id": "w130"
+  },
+  {
+    "text": "récompense,",
+    "start": 42.45,
+    "end": 43.2,
+    "id": "w131"
+  },
+  {
+    "text": "et",
+    "start": 43.28,
+    "end": 43.3,
+    "id": "w132"
+  },
+  {
+    "text": "ses",
+    "start": 43.3,
+    "end": 43.44,
+    "id": "w133"
+  },
+  {
+    "text": "points",
+    "start": 43.48,
+    "end": 43.7,
+    "id": "w134"
+  },
+  {
+    "text": "d'anniversaire",
+    "start": 43.77,
+    "end": 44.45,
+    "id": "w135"
+  },
+  {
+    "text": "arrivent",
+    "start": 44.45,
+    "end": 44.85,
+    "id": "w136"
+  },
+  {
+    "text": "tout",
+    "start": 44.85,
+    "end": 45.05,
+    "id": "w137"
+  },
+  {
+    "text": "seul.",
+    "start": 45.05,
+    "end": 45.44,
+    "id": "w138"
+  },
+  {
+    "text": "Une",
+    "start": 45.52,
+    "end": 45.68,
+    "id": "w139"
+  },
+  {
+    "text": "règle",
+    "start": 45.68,
+    "end": 46.08,
+    "id": "w140"
+  },
+  {
+    "text": "simple,",
+    "start": 46.08,
+    "end": 46.7,
+    "id": "w141"
+  },
+  {
+    "text": "des",
+    "start": 46.7,
+    "end": 46.85,
+    "id": "w142"
+  },
+  {
+    "text": "bonus",
+    "start": 46.85,
+    "end": 47.1,
+    "id": "w143"
+  },
+  {
+    "text": "qui",
+    "start": 47.1,
+    "end": 47.25,
+    "id": "w144"
+  },
+  {
+    "text": "donnent",
+    "start": 47.25,
+    "end": 47.51,
+    "id": "w145"
+  },
+  {
+    "text": "envie,",
+    "start": 47.64,
+    "end": 47.88,
+    "id": "w146"
+  },
+  {
+    "text": "et",
+    "start": 47.96,
+    "end": 48,
+    "id": "w147"
+  },
+  {
+    "text": "une",
+    "start": 48,
+    "end": 48.18,
+    "id": "w148"
+  },
+  {
+    "text": "caisse",
+    "start": 48.18,
+    "end": 48.53,
+    "id": "w149"
+  },
+  {
+    "text": "rapide,",
+    "start": 48.54,
+    "end": 49.04,
+    "id": "w150"
+  },
+  {
+    "text": "vos",
+    "start": 49.04,
+    "end": 49.22,
+    "id": "w151"
+  },
+  {
+    "text": "clients",
+    "start": 49.22,
+    "end": 49.65,
+    "id": "w152"
+  },
+  {
+    "text": "reviennent.",
+    "start": 49.65,
+    "end": 50.47,
+    "id": "w153"
+  },
+  {
+    "text": "Dans",
+    "start": 50.56,
+    "end": 50.66,
+    "id": "w154"
+  },
+  {
+    "text": "la",
+    "start": 50.7,
+    "end": 50.78,
+    "id": "w155"
+  },
+  {
+    "text": "prochaine",
+    "start": 50.78,
+    "end": 51.24,
+    "id": "w156"
+  },
+  {
+    "text": "formation,",
+    "start": 51.24,
+    "end": 51.72,
+    "id": "w157"
+  },
+  {
+    "text": "on",
+    "start": 51.8,
+    "end": 51.83,
+    "id": "w158"
+  },
+  {
+    "text": "fait",
+    "start": 51.83,
+    "end": 52.05,
+    "id": "w159"
+  },
+  {
+    "text": "travailler",
+    "start": 52.05,
+    "end": 52.6,
+    "id": "w160"
+  },
+  {
+    "text": "votre",
+    "start": 52.6,
+    "end": 52.87,
+    "id": "w161"
+  },
+  {
+    "text": "équipe",
+    "start": 52.87,
+    "end": 53.16,
+    "id": "w162"
+  },
+  {
+    "text": "EA",
+    "start": 53.27,
+    "end": 53.32,
+    "id": "w163"
+  },
+  {
+    "text": "avec",
+    "start": 53.32,
+    "end": 53.62,
+    "id": "w164"
+  },
+  {
+    "text": "Rapido",
+    "start": 53.73,
+    "end": 54.29,
+    "id": "w165"
+  },
+  {
+    "text": "CRM",
+    "start": 54.29,
+    "end": 54.51,
+    "id": "w166"
+  },
+  {
+    "text": "et",
+    "start": 54.51,
+    "end": 54.94,
+    "id": "w167"
+  },
+  {
+    "text": "Rapido",
+    "start": 54.94,
+    "end": 55.22,
+    "id": "w168"
+  },
+  {
+    "text": "RH.",
+    "start": 55.28,
+    "end": 55.72,
+    "id": "w169"
+  }
+]

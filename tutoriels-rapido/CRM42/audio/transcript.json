@@ -1,0 +1,782 @@
+[
+  {
+    "text": "Votre",
+    "start": 0.03,
+    "end": 0.3,
+    "id": "w0"
+  },
+  {
+    "text": "forfait,",
+    "start": 0.4,
+    "end": 0.83,
+    "id": "w1"
+  },
+  {
+    "text": "vos",
+    "start": 0.97,
+    "end": 1.11,
+    "id": "w2"
+  },
+  {
+    "text": "factures",
+    "start": 1.11,
+    "end": 1.66,
+    "id": "w3"
+  },
+  {
+    "text": "et",
+    "start": 1.68,
+    "end": 1.78,
+    "id": "w4"
+  },
+  {
+    "text": "vos",
+    "start": 1.78,
+    "end": 1.92,
+    "id": "w5"
+  },
+  {
+    "text": "crédits",
+    "start": 1.96,
+    "end": 2.28,
+    "id": "w6"
+  },
+  {
+    "text": "supplémentaires",
+    "start": 2.28,
+    "end": 3.08,
+    "id": "w7"
+  },
+  {
+    "text": "se",
+    "start": 3.08,
+    "end": 3.18,
+    "id": "w8"
+  },
+  {
+    "text": "gèrent",
+    "start": 3.18,
+    "end": 3.48,
+    "id": "w9"
+  },
+  {
+    "text": "depuis",
+    "start": 3.48,
+    "end": 3.78,
+    "id": "w10"
+  },
+  {
+    "text": "votre",
+    "start": 3.78,
+    "end": 4.04,
+    "id": "w11"
+  },
+  {
+    "text": "compte.",
+    "start": 4.04,
+    "end": 4.76,
+    "id": "w12"
+  },
+  {
+    "text": "Voyons",
+    "start": 4.79,
+    "end": 5.06,
+    "id": "w13"
+  },
+  {
+    "text": "comment.",
+    "start": 5.16,
+    "end": 5.84,
+    "id": "w14"
+  },
+  {
+    "text": "Dans",
+    "start": 5.87,
+    "end": 6.12,
+    "id": "w15"
+  },
+  {
+    "text": "le",
+    "start": 6.12,
+    "end": 6.26,
+    "id": "w16"
+  },
+  {
+    "text": "profil,",
+    "start": 6.26,
+    "end": 6.84,
+    "id": "w17"
+  },
+  {
+    "text": "l'onglet",
+    "start": 6.84,
+    "end": 7.36,
+    "id": "w18"
+  },
+  {
+    "text": "historique",
+    "start": 7.36,
+    "end": 8.03,
+    "id": "w19"
+  },
+  {
+    "text": "liste",
+    "start": 8.03,
+    "end": 8.36,
+    "id": "w20"
+  },
+  {
+    "text": "vos",
+    "start": 8.36,
+    "end": 8.51,
+    "id": "w21"
+  },
+  {
+    "text": "abonnements.",
+    "start": 8.59,
+    "end": 9.36,
+    "id": "w22"
+  },
+  {
+    "text": "La",
+    "start": 9.39,
+    "end": 9.5,
+    "id": "w23"
+  },
+  {
+    "text": "formule,",
+    "start": 9.5,
+    "end": 10.11,
+    "id": "w24"
+  },
+  {
+    "text": "mensuelle",
+    "start": 10.11,
+    "end": 10.66,
+    "id": "w25"
+  },
+  {
+    "text": "ou",
+    "start": 10.78,
+    "end": 10.87,
+    "id": "w26"
+  },
+  {
+    "text": "annuelle,",
+    "start": 10.87,
+    "end": 11.6,
+    "id": "w27"
+  },
+  {
+    "text": "le",
+    "start": 11.6,
+    "end": 11.73,
+    "id": "w28"
+  },
+  {
+    "text": "prix",
+    "start": 11.8,
+    "end": 12.03,
+    "id": "w29"
+  },
+  {
+    "text": "payé",
+    "start": 12.11,
+    "end": 12.45,
+    "id": "w30"
+  },
+  {
+    "text": "est",
+    "start": 12.45,
+    "end": 12.71,
+    "id": "w31"
+  },
+  {
+    "text": "la",
+    "start": 12.71,
+    "end": 12.87,
+    "id": "w32"
+  },
+  {
+    "text": "date.",
+    "start": 12.87,
+    "end": 13.52,
+    "id": "w33"
+  },
+  {
+    "text": "Chaque",
+    "start": 13.55,
+    "end": 14.01,
+    "id": "w34"
+  },
+  {
+    "text": "ligne",
+    "start": 14.02,
+    "end": 14.35,
+    "id": "w35"
+  },
+  {
+    "text": "a",
+    "start": 14.49,
+    "end": 14.52,
+    "id": "w36"
+  },
+  {
+    "text": "sa",
+    "start": 14.52,
+    "end": 14.66,
+    "id": "w37"
+  },
+  {
+    "text": "facture",
+    "start": 14.75,
+    "end": 15.28,
+    "id": "w38"
+  },
+  {
+    "text": "en",
+    "start": 15.28,
+    "end": 15.44,
+    "id": "w39"
+  },
+  {
+    "text": "PDF.",
+    "start": 15.48,
+    "end": 16,
+    "id": "w40"
+  },
+  {
+    "text": "Le",
+    "start": 16.03,
+    "end": 16.14,
+    "id": "w41"
+  },
+  {
+    "text": "second",
+    "start": 16.14,
+    "end": 16.53,
+    "id": "w42"
+  },
+  {
+    "text": "onglet",
+    "start": 16.63,
+    "end": 16.99,
+    "id": "w43"
+  },
+  {
+    "text": "retrace",
+    "start": 16.99,
+    "end": 17.49,
+    "id": "w44"
+  },
+  {
+    "text": "les",
+    "start": 17.49,
+    "end": 17.7,
+    "id": "w45"
+  },
+  {
+    "text": "packs",
+    "start": 17.72,
+    "end": 18.07,
+    "id": "w46"
+  },
+  {
+    "text": "achetés.",
+    "start": 18.07,
+    "end": 18.64,
+    "id": "w47"
+  },
+  {
+    "text": "S,",
+    "start": 18.67,
+    "end": 18.92,
+    "id": "w48"
+  },
+  {
+    "text": "MS,",
+    "start": 18.92,
+    "end": 19.3,
+    "id": "w49"
+  },
+  {
+    "text": "e-mail,",
+    "start": 19.3,
+    "end": 20.04,
+    "id": "w50"
+  },
+  {
+    "text": "minutes",
+    "start": 20.05,
+    "end": 20.73,
+    "id": "w51"
+  },
+  {
+    "text": "d'agent",
+    "start": 20.73,
+    "end": 21.31,
+    "id": "w52"
+  },
+  {
+    "text": "vocal.",
+    "start": 21.39,
+    "end": 22.24,
+    "id": "w53"
+  },
+  {
+    "text": "Changer",
+    "start": 22.27,
+    "end": 22.55,
+    "id": "w54"
+  },
+  {
+    "text": "d'abonnement",
+    "start": 22.64,
+    "end": 23.25,
+    "id": "w55"
+  },
+  {
+    "text": "ouvre",
+    "start": 23.27,
+    "end": 23.54,
+    "id": "w56"
+  },
+  {
+    "text": "la",
+    "start": 23.64,
+    "end": 23.66,
+    "id": "w57"
+  },
+  {
+    "text": "comparaison",
+    "start": 23.66,
+    "end": 24.27,
+    "id": "w58"
+  },
+  {
+    "text": "des",
+    "start": 24.27,
+    "end": 24.43,
+    "id": "w59"
+  },
+  {
+    "text": "formules.",
+    "start": 24.43,
+    "end": 25.12,
+    "id": "w60"
+  },
+  {
+    "text": "Le",
+    "start": 25.15,
+    "end": 25.23,
+    "id": "w61"
+  },
+  {
+    "text": "paiement",
+    "start": 25.23,
+    "end": 25.65,
+    "id": "w62"
+  },
+  {
+    "text": "annuel",
+    "start": 25.75,
+    "end": 25.95,
+    "id": "w63"
+  },
+  {
+    "text": "revient",
+    "start": 26.09,
+    "end": 26.42,
+    "id": "w64"
+  },
+  {
+    "text": "moins",
+    "start": 26.42,
+    "end": 26.7,
+    "id": "w65"
+  },
+  {
+    "text": "cher,",
+    "start": 26.7,
+    "end": 27.04,
+    "id": "w66"
+  },
+  {
+    "text": "environ",
+    "start": 27.08,
+    "end": 27.58,
+    "id": "w67"
+  },
+  {
+    "text": "deux",
+    "start": 27.58,
+    "end": 27.79,
+    "id": "w68"
+  },
+  {
+    "text": "mois",
+    "start": 27.87,
+    "end": 28.14,
+    "id": "w69"
+  },
+  {
+    "text": "offerts.",
+    "start": 28.14,
+    "end": 28.88,
+    "id": "w70"
+  },
+  {
+    "text": "Besoin",
+    "start": 28.91,
+    "end": 29.18,
+    "id": "w71"
+  },
+  {
+    "text": "de",
+    "start": 29.28,
+    "end": 29.41,
+    "id": "w72"
+  },
+  {
+    "text": "plus",
+    "start": 29.41,
+    "end": 29.68,
+    "id": "w73"
+  },
+  {
+    "text": "de",
+    "start": 29.68,
+    "end": 29.71,
+    "id": "w74"
+  },
+  {
+    "text": "SMS",
+    "start": 29.85,
+    "end": 30.01,
+    "id": "w75"
+  },
+  {
+    "text": "ou",
+    "start": 30.01,
+    "end": 30.14,
+    "id": "w76"
+  },
+  {
+    "text": "de",
+    "start": 30.14,
+    "end": 30.18,
+    "id": "w77"
+  },
+  {
+    "text": "stockage",
+    "start": 30.28,
+    "end": 30.79,
+    "id": "w78"
+  },
+  {
+    "text": "en",
+    "start": 30.8,
+    "end": 30.93,
+    "id": "w79"
+  },
+  {
+    "text": "cours",
+    "start": 30.94,
+    "end": 31.25,
+    "id": "w80"
+  },
+  {
+    "text": "de",
+    "start": 31.32,
+    "end": 31.39,
+    "id": "w81"
+  },
+  {
+    "text": "mois?",
+    "start": 31.39,
+    "end": 31.9,
+    "id": "w82"
+  },
+  {
+    "text": "Le",
+    "start": 31.95,
+    "end": 32.04,
+    "id": "w83"
+  },
+  {
+    "text": "portefeuille,",
+    "start": 32.04,
+    "end": 32.89,
+    "id": "w84"
+  },
+  {
+    "text": "en",
+    "start": 32.9,
+    "end": 33.02,
+    "id": "w85"
+  },
+  {
+    "text": "haut",
+    "start": 33.02,
+    "end": 33.22,
+    "id": "w86"
+  },
+  {
+    "text": "de",
+    "start": 33.34,
+    "end": 33.37,
+    "id": "w87"
+  },
+  {
+    "text": "l'écran,",
+    "start": 33.4,
+    "end": 33.93,
+    "id": "w88"
+  },
+  {
+    "text": "mène",
+    "start": 33.94,
+    "end": 34.19,
+    "id": "w89"
+  },
+  {
+    "text": "au",
+    "start": 34.19,
+    "end": 34.29,
+    "id": "w90"
+  },
+  {
+    "text": "pack.",
+    "start": 34.36,
+    "end": 34.84,
+    "id": "w91"
+  },
+  {
+    "text": "Choisissez",
+    "start": 34.87,
+    "end": 35.5,
+    "id": "w92"
+  },
+  {
+    "text": "la",
+    "start": 35.5,
+    "end": 35.63,
+    "id": "w93"
+  },
+  {
+    "text": "quantité,",
+    "start": 35.63,
+    "end": 36.29,
+    "id": "w94"
+  },
+  {
+    "text": "puis",
+    "start": 36.29,
+    "end": 36.54,
+    "id": "w95"
+  },
+  {
+    "text": "payez.",
+    "start": 36.56,
+    "end": 37.12,
+    "id": "w96"
+  },
+  {
+    "text": "Le",
+    "start": 37.15,
+    "end": 37.23,
+    "id": "w97"
+  },
+  {
+    "text": "paiement",
+    "start": 37.23,
+    "end": 37.65,
+    "id": "w98"
+  },
+  {
+    "text": "se",
+    "start": 37.75,
+    "end": 37.79,
+    "id": "w99"
+  },
+  {
+    "text": "fait",
+    "start": 37.79,
+    "end": 37.95,
+    "id": "w100"
+  },
+  {
+    "text": "sur",
+    "start": 38.09,
+    "end": 38.19,
+    "id": "w101"
+  },
+  {
+    "text": "la",
+    "start": 38.19,
+    "end": 38.26,
+    "id": "w102"
+  },
+  {
+    "text": "page",
+    "start": 38.35,
+    "end": 38.52,
+    "id": "w103"
+  },
+  {
+    "text": "sécurisée",
+    "start": 38.53,
+    "end": 39.04,
+    "id": "w104"
+  },
+  {
+    "text": "de",
+    "start": 39.08,
+    "end": 39.16,
+    "id": "w105"
+  },
+  {
+    "text": "Stripe.",
+    "start": 39.16,
+    "end": 39.79,
+    "id": "w106"
+  },
+  {
+    "text": "Une",
+    "start": 39.83,
+    "end": 40,
+    "id": "w107"
+  },
+  {
+    "text": "fois",
+    "start": 40,
+    "end": 40.26,
+    "id": "w108"
+  },
+  {
+    "text": "validé,",
+    "start": 40.26,
+    "end": 40.8,
+    "id": "w109"
+  },
+  {
+    "text": "les",
+    "start": 40.8,
+    "end": 40.94,
+    "id": "w110"
+  },
+  {
+    "text": "crédits",
+    "start": 41.03,
+    "end": 41.43,
+    "id": "w111"
+  },
+  {
+    "text": "sont",
+    "start": 41.43,
+    "end": 41.68,
+    "id": "w112"
+  },
+  {
+    "text": "ajoutés",
+    "start": 41.68,
+    "end": 42.11,
+    "id": "w113"
+  },
+  {
+    "text": "aussitôt",
+    "start": 42.11,
+    "end": 42.6,
+    "id": "w114"
+  },
+  {
+    "text": "à",
+    "start": 42.6,
+    "end": 42.66,
+    "id": "w115"
+  },
+  {
+    "text": "votre",
+    "start": 42.66,
+    "end": 42.93,
+    "id": "w116"
+  },
+  {
+    "text": "compte.",
+    "start": 42.97,
+    "end": 43.6,
+    "id": "w117"
+  },
+  {
+    "text": "Vous",
+    "start": 43.63,
+    "end": 43.75,
+    "id": "w118"
+  },
+  {
+    "text": "savez",
+    "start": 43.79,
+    "end": 44.02,
+    "id": "w119"
+  },
+  {
+    "text": "maintenant",
+    "start": 44.02,
+    "end": 44.43,
+    "id": "w120"
+  },
+  {
+    "text": "gérer",
+    "start": 44.53,
+    "end": 44.72,
+    "id": "w121"
+  },
+  {
+    "text": "votre",
+    "start": 44.72,
+    "end": 44.9,
+    "id": "w122"
+  },
+  {
+    "text": "abonnement.",
+    "start": 45.02,
+    "end": 45.6,
+    "id": "w123"
+  },
+  {
+    "text": "Retrouvez",
+    "start": 45.63,
+    "end": 46.08,
+    "id": "w124"
+  },
+  {
+    "text": "tous",
+    "start": 46.09,
+    "end": 46.3,
+    "id": "w125"
+  },
+  {
+    "text": "nos",
+    "start": 46.3,
+    "end": 46.43,
+    "id": "w126"
+  },
+  {
+    "text": "tutoriels",
+    "start": 46.57,
+    "end": 46.9,
+    "id": "w127"
+  },
+  {
+    "text": "dans",
+    "start": 47.02,
+    "end": 47.17,
+    "id": "w128"
+  },
+  {
+    "text": "l'académie.",
+    "start": 47.17,
+    "end": 47.92,
+    "id": "w129"
+  }
+]

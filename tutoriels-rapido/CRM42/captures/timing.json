@@ -1,0 +1,39 @@
+{
+  "voiceStartInCapture": 3.574,
+  "paragraphs": {
+    "intro": 0.03,
+    "historique": 5.87,
+    "packs": 16.03,
+    "forfait": 22.27,
+    "pack": 28.91,
+    "paiement": 37.15,
+    "outro": 43.63,
+    "end": 47.92
+  },
+  "zones": {
+    "historique": [
+      298,
+      338,
+      1324,
+      419
+    ],
+    "packs": [
+      298,
+      338,
+      1324,
+      290
+    ],
+    "forfait": [
+      427,
+      161,
+      328,
+      919
+    ],
+    "pack": [
+      324,
+      137,
+      328,
+      419
+    ]
+  }
+}

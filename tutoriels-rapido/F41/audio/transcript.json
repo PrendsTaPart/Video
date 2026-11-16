@@ -1,0 +1,932 @@
+[
+  {
+    "text": "Un",
+    "start": 0.06,
+    "end": 0.13,
+    "id": "w0"
+  },
+  {
+    "text": "tunnel",
+    "start": 0.13,
+    "end": 0.52,
+    "id": "w1"
+  },
+  {
+    "text": "de",
+    "start": 0.52,
+    "end": 0.64,
+    "id": "w2"
+  },
+  {
+    "text": "vente,",
+    "start": 0.64,
+    "end": 1.03,
+    "id": "w3"
+  },
+  {
+    "text": "c'est",
+    "start": 1.16,
+    "end": 1.41,
+    "id": "w4"
+  },
+  {
+    "text": "un",
+    "start": 1.41,
+    "end": 1.54,
+    "id": "w5"
+  },
+  {
+    "text": "chemin.",
+    "start": 1.54,
+    "end": 2.21,
+    "id": "w6"
+  },
+  {
+    "text": "Un",
+    "start": 2.21,
+    "end": 2.37,
+    "id": "w7"
+  },
+  {
+    "text": "guide",
+    "start": 2.37,
+    "end": 2.68,
+    "id": "w8"
+  },
+  {
+    "text": "gratuit,",
+    "start": 2.72,
+    "end": 3.31,
+    "id": "w9"
+  },
+  {
+    "text": "une",
+    "start": 3.39,
+    "end": 3.52,
+    "id": "w10"
+  },
+  {
+    "text": "inscription,",
+    "start": 3.52,
+    "end": 4.24,
+    "id": "w11"
+  },
+  {
+    "text": "quelques",
+    "start": 4.38,
+    "end": 4.66,
+    "id": "w12"
+  },
+  {
+    "text": "emails,",
+    "start": 4.66,
+    "end": 5.43,
+    "id": "w13"
+  },
+  {
+    "text": "puis",
+    "start": 5.43,
+    "end": 5.59,
+    "id": "w14"
+  },
+  {
+    "text": "une",
+    "start": 5.74,
+    "end": 5.94,
+    "id": "w15"
+  },
+  {
+    "text": "offre.",
+    "start": 5.94,
+    "end": 6.54,
+    "id": "w16"
+  },
+  {
+    "text": "Avec",
+    "start": 6.6,
+    "end": 6.85,
+    "id": "w17"
+  },
+  {
+    "text": "Rapido",
+    "start": 6.85,
+    "end": 7.31,
+    "id": "w18"
+  },
+  {
+    "text": "CRM",
+    "start": 7.31,
+    "end": 7.53,
+    "id": "w19"
+  },
+  {
+    "text": "connecté",
+    "start": 7.53,
+    "end": 8.14,
+    "id": "w20"
+  },
+  {
+    "text": "à",
+    "start": 8.14,
+    "end": 8.21,
+    "id": "w21"
+  },
+  {
+    "text": "Cloud,",
+    "start": 8.21,
+    "end": 8.82,
+    "id": "w22"
+  },
+  {
+    "text": "il",
+    "start": 8.91,
+    "end": 8.95,
+    "id": "w23"
+  },
+  {
+    "text": "se",
+    "start": 8.95,
+    "end": 9.07,
+    "id": "w24"
+  },
+  {
+    "text": "construit",
+    "start": 9.08,
+    "end": 9.68,
+    "id": "w25"
+  },
+  {
+    "text": "en",
+    "start": 9.68,
+    "end": 9.81,
+    "id": "w26"
+  },
+  {
+    "text": "une",
+    "start": 9.81,
+    "end": 10.01,
+    "id": "w27"
+  },
+  {
+    "text": "seule",
+    "start": 10.01,
+    "end": 10.32,
+    "id": "w28"
+  },
+  {
+    "text": "demande.",
+    "start": 10.37,
+    "end": 11.04,
+    "id": "w29"
+  },
+  {
+    "text": "Le",
+    "start": 11.12,
+    "end": 11.22,
+    "id": "w30"
+  },
+  {
+    "text": "chemin",
+    "start": 11.22,
+    "end": 11.71,
+    "id": "w31"
+  },
+  {
+    "text": "a",
+    "start": 11.74,
+    "end": 11.8,
+    "id": "w32"
+  },
+  {
+    "text": "cinq",
+    "start": 11.8,
+    "end": 12.09,
+    "id": "w33"
+  },
+  {
+    "text": "étapes.",
+    "start": 12.28,
+    "end": 12.88,
+    "id": "w34"
+  },
+  {
+    "text": "Votre",
+    "start": 12.89,
+    "end": 13.33,
+    "id": "w35"
+  },
+  {
+    "text": "produit,",
+    "start": 13.43,
+    "end": 14.1,
+    "id": "w36"
+  },
+  {
+    "text": "un",
+    "start": 14.1,
+    "end": 14.22,
+    "id": "w37"
+  },
+  {
+    "text": "lead",
+    "start": 14.22,
+    "end": 14.47,
+    "id": "w38"
+  },
+  {
+    "text": "magnète,",
+    "start": 14.47,
+    "end": 15.08,
+    "id": "w39"
+  },
+  {
+    "text": "une",
+    "start": 15.08,
+    "end": 15.26,
+    "id": "w40"
+  },
+  {
+    "text": "page",
+    "start": 15.26,
+    "end": 15.5,
+    "id": "w41"
+  },
+  {
+    "text": "d'inscription,",
+    "start": 15.5,
+    "end": 16.42,
+    "id": "w42"
+  },
+  {
+    "text": "une",
+    "start": 16.44,
+    "end": 16.6,
+    "id": "w43"
+  },
+  {
+    "text": "séquence",
+    "start": 16.6,
+    "end": 17.05,
+    "id": "w44"
+  },
+  {
+    "text": "d'emails",
+    "start": 17.08,
+    "end": 17.66,
+    "id": "w45"
+  },
+  {
+    "text": "et",
+    "start": 17.76,
+    "end": 17.8,
+    "id": "w46"
+  },
+  {
+    "text": "une",
+    "start": 17.8,
+    "end": 17.94,
+    "id": "w47"
+  },
+  {
+    "text": "page",
+    "start": 18.02,
+    "end": 18.29,
+    "id": "w48"
+  },
+  {
+    "text": "de",
+    "start": 18.29,
+    "end": 18.41,
+    "id": "w49"
+  },
+  {
+    "text": "vente",
+    "start": 18.45,
+    "end": 18.8,
+    "id": "w50"
+  },
+  {
+    "text": "reliée",
+    "start": 18.8,
+    "end": 19.19,
+    "id": "w51"
+  },
+  {
+    "text": "au",
+    "start": 19.19,
+    "end": 19.31,
+    "id": "w52"
+  },
+  {
+    "text": "paiement.",
+    "start": 19.43,
+    "end": 20.04,
+    "id": "w53"
+  },
+  {
+    "text": "Dans",
+    "start": 20.1,
+    "end": 20.3,
+    "id": "w54"
+  },
+  {
+    "text": "Cloud,",
+    "start": 20.3,
+    "end": 20.76,
+    "id": "w55"
+  },
+  {
+    "text": "connecté",
+    "start": 20.76,
+    "end": 21.28,
+    "id": "w56"
+  },
+  {
+    "text": "à",
+    "start": 21.28,
+    "end": 21.34,
+    "id": "w57"
+  },
+  {
+    "text": "Rapido",
+    "start": 21.34,
+    "end": 21.73,
+    "id": "w58"
+  },
+  {
+    "text": "CRM,",
+    "start": 21.73,
+    "end": 21.92,
+    "id": "w59"
+  },
+  {
+    "text": "décrivez",
+    "start": 22.18,
+    "end": 22.55,
+    "id": "w60"
+  },
+  {
+    "text": "votre",
+    "start": 22.58,
+    "end": 22.89,
+    "id": "w61"
+  },
+  {
+    "text": "offre,",
+    "start": 22.89,
+    "end": 23.34,
+    "id": "w62"
+  },
+  {
+    "text": "votre",
+    "start": 23.34,
+    "end": 23.66,
+    "id": "w63"
+  },
+  {
+    "text": "cible",
+    "start": 23.71,
+    "end": 24,
+    "id": "w64"
+  },
+  {
+    "text": "et",
+    "start": 24,
+    "end": 24.13,
+    "id": "w65"
+  },
+  {
+    "text": "le",
+    "start": 24.13,
+    "end": 24.26,
+    "id": "w66"
+  },
+  {
+    "text": "guide",
+    "start": 24.26,
+    "end": 24.54,
+    "id": "w67"
+  },
+  {
+    "text": "gratuit",
+    "start": 24.59,
+    "end": 25.05,
+    "id": "w68"
+  },
+  {
+    "text": "que",
+    "start": 25.05,
+    "end": 25.2,
+    "id": "w69"
+  },
+  {
+    "text": "vous",
+    "start": 25.42,
+    "end": 25.51,
+    "id": "w70"
+  },
+  {
+    "text": "voulez",
+    "start": 25.51,
+    "end": 25.91,
+    "id": "w71"
+  },
+  {
+    "text": "proposer.",
+    "start": 25.91,
+    "end": 26.78,
+    "id": "w72"
+  },
+  {
+    "text": "Cloud",
+    "start": 26.84,
+    "end": 27.08,
+    "id": "w73"
+  },
+  {
+    "text": "utilise",
+    "start": 27.08,
+    "end": 27.51,
+    "id": "w74"
+  },
+  {
+    "text": "l'outil",
+    "start": 27.51,
+    "end": 27.81,
+    "id": "w75"
+  },
+  {
+    "text": "de",
+    "start": 28,
+    "end": 28.05,
+    "id": "w76"
+  },
+  {
+    "text": "tunnel",
+    "start": 28.05,
+    "end": 28.4,
+    "id": "w77"
+  },
+  {
+    "text": "de",
+    "start": 28.41,
+    "end": 28.53,
+    "id": "w78"
+  },
+  {
+    "text": "vente.",
+    "start": 28.53,
+    "end": 29,
+    "id": "w79"
+  },
+  {
+    "text": "Il",
+    "start": 29,
+    "end": 29.15,
+    "id": "w80"
+  },
+  {
+    "text": "crée",
+    "start": 29.15,
+    "end": 29.37,
+    "id": "w81"
+  },
+  {
+    "text": "le",
+    "start": 29.37,
+    "end": 29.45,
+    "id": "w82"
+  },
+  {
+    "text": "guide,",
+    "start": 29.5,
+    "end": 29.91,
+    "id": "w83"
+  },
+  {
+    "text": "la",
+    "start": 29.91,
+    "end": 30.03,
+    "id": "w84"
+  },
+  {
+    "text": "page",
+    "start": 30.03,
+    "end": 30.27,
+    "id": "w85"
+  },
+  {
+    "text": "d'inscription,",
+    "start": 30.27,
+    "end": 31.28,
+    "id": "w86"
+  },
+  {
+    "text": "la",
+    "start": 31.28,
+    "end": 31.43,
+    "id": "w87"
+  },
+  {
+    "text": "séquence",
+    "start": 31.43,
+    "end": 31.94,
+    "id": "w88"
+  },
+  {
+    "text": "et",
+    "start": 32.16,
+    "end": 32.17,
+    "id": "w89"
+  },
+  {
+    "text": "la",
+    "start": 32.18,
+    "end": 32.33,
+    "id": "w90"
+  },
+  {
+    "text": "page",
+    "start": 32.33,
+    "end": 32.64,
+    "id": "w91"
+  },
+  {
+    "text": "de",
+    "start": 32.64,
+    "end": 32.77,
+    "id": "w92"
+  },
+  {
+    "text": "vente",
+    "start": 32.79,
+    "end": 33.03,
+    "id": "w93"
+  },
+  {
+    "text": "sans",
+    "start": 33.48,
+    "end": 33.49,
+    "id": "w94"
+  },
+  {
+    "text": "inventer",
+    "start": 33.49,
+    "end": 34.02,
+    "id": "w95"
+  },
+  {
+    "text": "d'avis",
+    "start": 34.02,
+    "end": 34.4,
+    "id": "w96"
+  },
+  {
+    "text": "ni",
+    "start": 34.4,
+    "end": 34.52,
+    "id": "w97"
+  },
+  {
+    "text": "de",
+    "start": 34.52,
+    "end": 34.66,
+    "id": "w98"
+  },
+  {
+    "text": "coordonnées.",
+    "start": 34.66,
+    "end": 35.44,
+    "id": "w99"
+  },
+  {
+    "text": "Votre",
+    "start": 35.72,
+    "end": 36.04,
+    "id": "w100"
+  },
+  {
+    "text": "rôle?",
+    "start": 36.04,
+    "end": 36.57,
+    "id": "w101"
+  },
+  {
+    "text": "Relire.",
+    "start": 36.64,
+    "end": 37.53,
+    "id": "w102"
+  },
+  {
+    "text": "Ajustez",
+    "start": 37.68,
+    "end": 38.13,
+    "id": "w103"
+  },
+  {
+    "text": "le",
+    "start": 38.14,
+    "end": 38.26,
+    "id": "w104"
+  },
+  {
+    "text": "guide,",
+    "start": 38.29,
+    "end": 38.82,
+    "id": "w105"
+  },
+  {
+    "text": "le",
+    "start": 38.84,
+    "end": 38.96,
+    "id": "w106"
+  },
+  {
+    "text": "ton",
+    "start": 39.03,
+    "end": 39.19,
+    "id": "w107"
+  },
+  {
+    "text": "des",
+    "start": 39.19,
+    "end": 39.41,
+    "id": "w108"
+  },
+  {
+    "text": "emails",
+    "start": 39.41,
+    "end": 39.5,
+    "id": "w109"
+  },
+  {
+    "text": "et",
+    "start": 39.99,
+    "end": 40.01,
+    "id": "w110"
+  },
+  {
+    "text": "le",
+    "start": 40.01,
+    "end": 40.15,
+    "id": "w111"
+  },
+  {
+    "text": "prix,",
+    "start": 40.16,
+    "end": 40.6,
+    "id": "w112"
+  },
+  {
+    "text": "puis",
+    "start": 40.63,
+    "end": 40.91,
+    "id": "w113"
+  },
+  {
+    "text": "publiez.",
+    "start": 40.91,
+    "end": 41.74,
+    "id": "w114"
+  },
+  {
+    "text": "Ensuite,",
+    "start": 41.8,
+    "end": 42.25,
+    "id": "w115"
+  },
+  {
+    "text": "suivez",
+    "start": 42.25,
+    "end": 42.58,
+    "id": "w116"
+  },
+  {
+    "text": "les",
+    "start": 42.58,
+    "end": 42.75,
+    "id": "w117"
+  },
+  {
+    "text": "chiffres.",
+    "start": 42.75,
+    "end": 43.42,
+    "id": "w118"
+  },
+  {
+    "text": "Vues,",
+    "start": 43.42,
+    "end": 43.9,
+    "id": "w119"
+  },
+  {
+    "text": "inscrits,",
+    "start": 44.11,
+    "end": 44.7,
+    "id": "w120"
+  },
+  {
+    "text": "ouvertures",
+    "start": 44.7,
+    "end": 45.51,
+    "id": "w121"
+  },
+  {
+    "text": "et",
+    "start": 45.51,
+    "end": 45.65,
+    "id": "w122"
+  },
+  {
+    "text": "vente.",
+    "start": 45.68,
+    "end": 46.38,
+    "id": "w123"
+  },
+  {
+    "text": "Améliorer",
+    "start": 46.44,
+    "end": 47.01,
+    "id": "w124"
+  },
+  {
+    "text": "une",
+    "start": 47.02,
+    "end": 47.24,
+    "id": "w125"
+  },
+  {
+    "text": "étape",
+    "start": 47.24,
+    "end": 47.6,
+    "id": "w126"
+  },
+  {
+    "text": "à",
+    "start": 47.6,
+    "end": 47.67,
+    "id": "w127"
+  },
+  {
+    "text": "la",
+    "start": 47.67,
+    "end": 47.81,
+    "id": "w128"
+  },
+  {
+    "text": "fois.",
+    "start": 47.81,
+    "end": 48.25,
+    "id": "w129"
+  },
+  {
+    "text": "Une",
+    "start": 48.25,
+    "end": 48.75,
+    "id": "w130"
+  },
+  {
+    "text": "demande",
+    "start": 48.75,
+    "end": 48.99,
+    "id": "w131"
+  },
+  {
+    "text": "pour",
+    "start": 48.99,
+    "end": 49.23,
+    "id": "w132"
+  },
+  {
+    "text": "construire,",
+    "start": 49.23,
+    "end": 49.96,
+    "id": "w133"
+  },
+  {
+    "text": "une",
+    "start": 49.96,
+    "end": 50.14,
+    "id": "w134"
+  },
+  {
+    "text": "relecture",
+    "start": 50.14,
+    "end": 50.62,
+    "id": "w135"
+  },
+  {
+    "text": "pour",
+    "start": 50.68,
+    "end": 50.88,
+    "id": "w136"
+  },
+  {
+    "text": "valider",
+    "start": 50.96,
+    "end": 51.33,
+    "id": "w137"
+  },
+  {
+    "text": "et",
+    "start": 51.33,
+    "end": 51.46,
+    "id": "w138"
+  },
+  {
+    "text": "des",
+    "start": 51.46,
+    "end": 51.54,
+    "id": "w139"
+  },
+  {
+    "text": "chiffres",
+    "start": 51.76,
+    "end": 52.13,
+    "id": "w140"
+  },
+  {
+    "text": "pour",
+    "start": 52.13,
+    "end": 52.37,
+    "id": "w141"
+  },
+  {
+    "text": "progresser.",
+    "start": 52.37,
+    "end": 53.26,
+    "id": "w142"
+  },
+  {
+    "text": "Dans",
+    "start": 53.36,
+    "end": 53.46,
+    "id": "w143"
+  },
+  {
+    "text": "la",
+    "start": 53.53,
+    "end": 53.61,
+    "id": "w144"
+  },
+  {
+    "text": "prochaine",
+    "start": 53.61,
+    "end": 54.09,
+    "id": "w145"
+  },
+  {
+    "text": "formation,",
+    "start": 54.09,
+    "end": 54.63,
+    "id": "w146"
+  },
+  {
+    "text": "la",
+    "start": 54.71,
+    "end": 54.86,
+    "id": "w147"
+  },
+  {
+    "text": "fidélité",
+    "start": 54.86,
+    "end": 55.52,
+    "id": "w148"
+  },
+  {
+    "text": "digitale",
+    "start": 55.67,
+    "end": 56.22,
+    "id": "w149"
+  },
+  {
+    "text": "qui",
+    "start": 56.23,
+    "end": 56.38,
+    "id": "w150"
+  },
+  {
+    "text": "fait",
+    "start": 56.38,
+    "end": 56.6,
+    "id": "w151"
+  },
+  {
+    "text": "revenir",
+    "start": 56.6,
+    "end": 56.92,
+    "id": "w152"
+  },
+  {
+    "text": "vos",
+    "start": 56.98,
+    "end": 57.14,
+    "id": "w153"
+  },
+  {
+    "text": "clients.",
+    "start": 57.14,
+    "end": 57.61,
+    "id": "w154"
+  }
+]
