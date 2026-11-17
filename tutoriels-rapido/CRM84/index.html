@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#4CAF50; --b:#9BE15D; --grad:linear-gradient(100deg,#4CAF50,#9BE15D); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; background:#05060A; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(120px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.45; }
+  .h2 { width:700px; height:600px; left:-260px; bottom:-320px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  #frame { position:absolute; left:80px; top:56px; width:1760px; height:990px; border-radius:22px; overflow:hidden; background:#f3f4f7;
+           box-shadow:0 50px 120px -30px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.12),0 0 120px -30px var(--a); }
+  #cam { position:absolute; left:0; top:0; width:1760px; height:990px; transform-origin:0 0; }
+  #cam video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .hl { position:absolute; border-radius:18px; border:3px solid var(--a); box-shadow:0 0 0 9999px rgba(5,6,10,.28),0 0 40px -6px var(--a); opacity:0; }
+  .chap { position:absolute; left:108px; top:82px; display:flex; align-items:center; gap:14px; padding:12px 22px 12px 12px; border-radius:999px;
+          background:rgba(10,12,18,.82); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.14); font-size:26px; font-weight:600; opacity:0; z-index:5; }
+  .chap b { width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:19px; }
+  .sub { position:absolute; inset:auto 0 58px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; letter-spacing:-.01em; white-space:nowrap; box-shadow:0 10px 30px rgba(0,0,0,.4); }
+  .bar { position:absolute; left:80px; bottom:22px; width:1760px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:104px; top:84px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  /* intro / outro */
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .kick { font-size:28px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.7); }
+  .card h1 { text-wrap:balance; margin-top:40px; font-size:128px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1500px; }
+  .card h1 em, .card h2 em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; line-height:1; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="69.31" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+
+  <div id="frame">
+    <div id="cam">
+      <video id="cap" class="clip" src="captures/ecran.mp4" muted data-start="3.0" data-duration="66.31" data-track-index="1"></video>
+      <div class="hl" id="hl1" style="left:348px;top:169px;width:1302px;height:185px"></div>
+      <div class="hl" id="hl2" style="left:348px;top:134px;width:1302px;height:46px"></div>
+      <div class="hl" id="hl3" style="left:341px;top:130px;width:1316px;height:124px"></div>
+      <div class="hl" id="hl4" style="left:889px;top:82px;width:761px;height:908px"></div>
+      <div class="hl" id="hl5" style="left:348px;top:380px;width:1302px;height:127px"></div>
+      <div class="hl" id="hl6" style="left:348px;top:182px;width:1302px;height:228px"></div>
+      <div class="hl" id="hl7" style="left:348px;top:182px;width:1302px;height:281px"></div>
+      <div class="hl" id="hl8" style="left:348px;top:226px;width:1302px;height:79px"></div>
+    </div>
+  </div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">RapidoCRM</div>
+  <div class="chap" id="ch1"><b>1</b>Ouvertures et clics</div>
+  <div class="chap" id="ch2"><b>1</b>Ouvertures et clics</div>
+  <div class="chap" id="ch3"><b>2</b>Le détail d&#x27;une campagne</div>
+  <div class="chap" id="ch4"><b>2</b>Le détail d&#x27;une campagne</div>
+  <div class="chap" id="ch5"><b>3</b>Les campagnes SMS</div>
+  <div class="chap" id="ch6"><b>4</b>Les désinscriptions</div>
+  <div class="chap" id="ch7"><b>4</b>Les désinscriptions</div>
+  <div class="chap" id="ch8"><b>4</b>Les désinscriptions</div>
+  <div class="sub clip" id="s0" data-start="3.030" data-duration="1.390" data-track-index="7"><span>Vos campagnes sont parties</span></div>
+  <div class="sub clip" id="s1" data-start="4.510" data-duration="0.950" data-track-index="7"><span>qui les a ouvertes</span></div>
+  <div class="sub clip" id="s2" data-start="5.480" data-duration="1.090" data-track-index="7"><span>qui a cliqué</span></div>
+  <div class="sub clip" id="s3" data-start="6.590" data-duration="1.520" data-track-index="7"><span>Voici le suivi des envois</span></div>
+  <div class="sub clip" id="s4" data-start="8.130" data-duration="1.600" data-track-index="7"><span>dans le menu Marketing</span></div>
+  <div class="sub clip" id="s5" data-start="9.750" data-duration="2.215" data-track-index="7"><span>Chaque campagne e-mail et chaque newsletter</span></div>
+  <div class="sub clip" id="s6" data-start="11.985" data-duration="1.465" data-track-index="7"><span>affiche le nombre d&#x27;envois</span></div>
+  <div class="sub clip" id="s7" data-start="13.470" data-duration="1.040" data-track-index="7"><span>le taux d&#x27;ouverture</span></div>
+  <div class="sub clip" id="s8" data-start="14.530" data-duration="1.220" data-track-index="7"><span>le taux de clic</span></div>
+  <div class="sub clip" id="s9" data-start="15.770" data-duration="1.280" data-track-index="7"><span>et la part des lecteurs qui</span></div>
+  <div class="sub clip" id="s10" data-start="17.070" data-duration="0.580" data-track-index="7"><span>ont cliqué</span></div>
+  <div class="sub clip" id="s11" data-start="17.670" data-duration="1.900" data-track-index="7"><span>Retenez surtout le taux de clic</span></div>
+  <div class="sub clip" id="s12" data-start="19.590" data-duration="2.460" data-track-index="7"><span>certaines messageries ouvrent les images toutes seules</span></div>
+  <div class="sub clip" id="s13" data-start="22.090" data-duration="1.520" data-track-index="7"><span>ce qui gonfle les ouvertures</span></div>
+  <div class="sub clip" id="s14" data-start="23.630" data-duration="1.578" data-track-index="7"><span>Cliquez sur Détail</span></div>
+  <div class="sub clip" id="s15" data-start="25.270" data-duration="1.090" data-track-index="7"><span>les chiffres de la campagne</span></div>
+  <div class="sub clip" id="s16" data-start="26.380" data-duration="1.870" data-track-index="7"><span>et les liens les plus cliqués</span></div>
+  <div class="sub clip" id="s17" data-start="28.270" data-duration="0.550" data-track-index="7"><span>Plus bas</span></div>
+  <div class="sub clip" id="s18" data-start="28.840" data-duration="1.410" data-track-index="7"><span>chaque destinataire</span></div>
+  <div class="sub clip" id="s19" data-start="30.270" data-duration="0.920" data-track-index="7"><span>quand il a ouvert</span></div>
+  <div class="sub clip" id="s20" data-start="31.210" data-duration="0.790" data-track-index="7"><span>combien de fois</span></div>
+  <div class="sub clip" id="s21" data-start="32.020" data-duration="1.230" data-track-index="7"><span>et combien de clics</span></div>
+  <div class="sub clip" id="s22" data-start="33.270" data-duration="1.760" data-track-index="7"><span>Les plus intéressés sont en tête</span></div>
+  <div class="sub clip" id="s23" data-start="35.050" data-duration="1.440" data-track-index="7"><span>ce sont eux à rappeler</span></div>
+  <div class="sub clip" id="s24" data-start="36.510" data-duration="2.540" data-track-index="7"><span>Vos campagnes SMS sont suivies aussi</span></div>
+  <div class="sub clip" id="s25" data-start="39.070" data-duration="1.180" data-track-index="7"><span>les liens sont raccourcis</span></div>
+  <div class="sub clip" id="s26" data-start="40.570" data-duration="2.120" data-track-index="7"><span>automatiquement, et chaque clic est compté</span></div>
+  <div class="sub clip" id="s27" data-start="42.710" data-duration="1.307" data-track-index="7"><span>Dans Désinscriptions</span></div>
+  <div class="sub clip" id="s28" data-start="44.220" data-duration="1.440" data-track-index="7"><span>retrouvez les adresses qui ne veulent</span></div>
+  <div class="sub clip" id="s29" data-start="45.680" data-duration="1.210" data-track-index="7"><span>plus recevoir vos e-mails</span></div>
+  <div class="sub clip" id="s30" data-start="46.910" data-duration="1.000" data-track-index="7"><span>par le lien en bas de</span></div>
+  <div class="sub clip" id="s31" data-start="47.930" data-duration="1.380" data-track-index="7"><span>chaque envoi ou en un clic</span></div>
+  <div class="sub clip" id="s32" data-start="49.420" data-duration="1.310" data-track-index="7"><span>depuis leur messagerie</span></div>
+  <div class="sub clip" id="s33" data-start="50.750" data-duration="1.820" data-track-index="7"><span>Une personne vous le demande par téléphone</span></div>
+  <div class="sub clip" id="s34" data-start="52.590" data-duration="1.180" data-track-index="7"><span>Ajoutez son adresse</span></div>
+  <div class="sub clip" id="s35" data-start="53.790" data-duration="1.180" data-track-index="7"><span>elle ne recevra plus</span></div>
+  <div class="sub clip" id="s36" data-start="55.290" data-duration="0.760" data-track-index="7"><span>aucune campagne</span></div>
+  <div class="sub clip" id="s37" data-start="56.070" data-duration="1.390" data-track-index="7"><span>Et si elle change d&#x27;avis</span></div>
+  <div class="sub clip" id="s38" data-start="57.480" data-duration="1.410" data-track-index="7"><span>réinscrivez-la d&#x27;un clic</span></div>
+  <div class="sub clip" id="s39" data-start="58.910" data-duration="1.040" data-track-index="7"><span>Vos envois sont suivis</span></div>
+  <div class="sub clip" id="s40" data-start="59.970" data-duration="2.160" data-track-index="7"><span>et les choix de vos clients respectés</span></div>
+  <div class="sub clip" id="s41" data-start="62.270" data-duration="2.260" data-track-index="7"><span>Retrouvez tous nos tutoriels dans l&#x27;Académie</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="61.809999999999995" data-track-index="10" data-volume="1"></audio>
+
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <div class="top"><span class="num">CRM84</span><span class="kick">Tutoriel RapidoCRM</span></div>
+      <h1>Suivre <em>vos envois</em> et les désinscriptions</h1>
+    </div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+
+  <div class="clip card" id="outro" data-start="64.51" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <h2>Merci d'avoir <em>regardé</em></h2>
+      <p>Retrouvez tous les tutoriels dans l&#x27;Académie RapidoSoftware</p>
+    </div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  // Intro
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .from('#intro .logo', { opacity: 0, duration: .6 }, .6)
+    .to('#intro', { opacity: 0, scale: 1.04, duration: .6, ease: 'power2.in' }, 3.0)
+    .from('#frame', { scale: .92, opacity: 0, duration: .9, ease: 'expo.out' }, 2.8);
+  // Progression
+  tl.to('#bar', { scaleX: 1, duration: 61.809999999999995, ease: 'none' }, 3.0);
+  tl.to('#cam', { scale: 1.24, x: -359.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 9.750)
+    .fromTo('#hl1', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 10.550)
+    .to('#hl1', { opacity: 0, duration: .35 }, 17.470)
+    .fromTo('#ch1', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 9.950)
+    .to('#ch1', { opacity: 0, x: -20, duration: .3 }, 17.420);
+  tl.to('#cam', { scale: 1.24, x: -359.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 17.670)
+    .fromTo('#hl2', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 18.470)
+    .to('#hl2', { opacity: 0, duration: .35 }, 23.430)
+    .fromTo('#ch2', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 17.870)
+    .to('#ch2', { opacity: 0, x: -20, duration: .3 }, 23.380);
+  tl.to('#cam', { scale: 1.23, x: -349.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 23.630)
+    .fromTo('#hl3', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 24.430)
+    .to('#hl3', { opacity: 0, duration: .35 }, 28.070)
+    .fromTo('#ch3', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 23.830)
+    .to('#ch3', { opacity: 0, x: -20, duration: .3 }, 28.020);
+  tl.to('#cam', { scale: 1.0, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 28.270)
+    .fromTo('#hl4', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 29.070)
+    .to('#hl4', { opacity: 0, duration: .35 }, 36.310)
+    .fromTo('#ch4', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 28.470)
+    .to('#ch4', { opacity: 0, x: -20, duration: .3 }, 36.260);
+  tl.to('#cam', { scale: 1.24, x: -359.0, y: -54.6, duration: 1.2, ease: 'power3.inOut' }, 36.510)
+    .fromTo('#hl5', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 37.310)
+    .to('#hl5', { opacity: 0, duration: .35 }, 42.510)
+    .fromTo('#ch5', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 36.710)
+    .to('#ch5', { opacity: 0, x: -20, duration: .3 }, 42.460);
+  tl.to('#cam', { scale: 1.24, x: -359.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 42.710)
+    .fromTo('#hl6', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 43.510)
+    .to('#hl6', { opacity: 0, duration: .35 }, 50.550)
+    .fromTo('#ch6', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 42.910)
+    .to('#ch6', { opacity: 0, x: -20, duration: .3 }, 50.500);
+  tl.to('#cam', { scale: 1.24, x: -359.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 50.750)
+    .fromTo('#hl7', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 51.550)
+    .to('#hl7', { opacity: 0, duration: .35 }, 55.870)
+    .fromTo('#ch7', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 50.950)
+    .to('#ch7', { opacity: 0, x: -20, duration: .3 }, 55.820);
+  tl.to('#cam', { scale: 1.24, x: -359.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 56.070)
+    .fromTo('#hl8', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 56.870)
+    .to('#hl8', { opacity: 0, duration: .35 }, 58.710)
+    .fromTo('#ch8', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 56.270)
+    .to('#ch8', { opacity: 0, x: -20, duration: .3 }, 58.660);
+  tl.to('#cam', { scale: 1, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 58.910);
+  // Outro
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 64.810)
+    .from('#outro p', { y: 30, opacity: 0, duration: .7, ease: 'expo.out' }, 65.060);
+  window.__timelines['main'] = tl;
+</script>
+</body>
+</html>
