@@ -172,6 +172,24 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM78 — Mots-clés, scores et tendances : le calendrier de publication
 - [ ] CRM79 — Publicités Google Ads et Meta Ads pilotées par les agents IA
 - [ ] CRM80 — La communication par entreprise et le tableau de bord KPI
+- [ ] CRM81 — Le portail client (lien magique : devis, factures, contrats, demandes, fidélité, rendez-vous)
+- [ ] CRM82 — Sécuriser son compte : la double authentification
+- [ ] CRM83 — La facture électronique Factur-X
+- [ ] CRM84 — Suivre les e-mails et SMS envoyés, gérer les désinscriptions
+
+### Inventaire du 17/11 (après-midi) — fonctionnalités de RapidoCRM sans tutoriel ou avec un tutoriel périmé
+- **Développées, écran prêt, sans tutoriel** (écrans audités 1440 / 390 px : aucune erreur JS ni réseau, aucun débordement) :
+  CRM73 agent IA des sites (⚠️ modèle de langage simulé), CRM74 boîte de réception et tickets, CRM77 blog, CRM53 / CRM54 éditeur (sections, 70 modèles,
+  téléphone), CRM55 ventes en ligne (clé Stripe de test), CRM81 portail client, CRM82 double authentification, CRM83 Factur-X, CRM84 suivi des envois
+  et désinscriptions.
+- **Tutoriels périmés** (tournés le 13/11, avant la refonte du module les 15–17/11) → à retourner : CRM13 factures (+ Factur-X), CRM15 contrats v2
+  (signature, relances, reconduction), CRM17 / CRM18 campagnes e-mail et SMS (audiences, compteur SMS, aperçu, test), CRM21 segments (constructeur
+  ET / OU), CRM27 jeux concours v2 (4 mécaniques), CRM28 sondages v2 (logique conditionnelle).
+- **Prévus au plan mais absents du code** (pas de tutoriel possible) : CRM71 prompteur temps réel, CRM72 enregistrement et analyse des appels,
+  CRM78 mots-clés et calendrier de publication, CRM79 publicités Google / Meta, CRM80 communication par entreprise et KPI, CRM31 écran Salons.
+- **RapidoMeet** : application séparée (React + Supabase, serveur Express `openclaw-server` hors de ce dépôt) ; aucune intégration dans RapidoCRM
+  (la visio du CRM passe par Whereby). Tutoriels RapidoMeet impossibles ici sans le serveur et un projet Supabase de démonstration.
+
 
 ## B. RapidoCMS — un tutoriel par onglet / écran
 
