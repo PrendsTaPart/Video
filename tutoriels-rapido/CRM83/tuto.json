@@ -1,0 +1,123 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 40,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM83",
+  "title": "Émettre une facture électronique Factur-X",
+  "em": "facture électronique",
+  "tag": "2 min · Débutant",
+  "start_path": "/facturation/facture/1",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "À partir de septembre 2026, toutes les entreprises doivent pouvoir recevoir des factures électroniques. RapidoCRM produit vos factures au format Factur-X."
+    },
+    {
+      "key": "ouvrir",
+      "text": "Ouvrez une facture, puis cliquez sur Facture électronique."
+    },
+    {
+      "key": "controle",
+      "text": "RapidoCRM vérifie d'abord les mentions obligatoires. Ici, il manque le numéro de TVA intracommunautaire de votre entreprise."
+    },
+    {
+      "key": "completer",
+      "text": "Cliquez sur Compléter mon entreprise. Le champ manquant est surligné : saisissez votre numéro de TVA, puis enregistrez."
+    },
+    {
+      "key": "retour",
+      "text": "Revenez à la facture et cliquez de nouveau sur Facture électronique."
+    },
+    {
+      "key": "fichier",
+      "text": "Le fichier est prêt. C'est un PDF que votre client lit comme d'habitude, avec à l'intérieur les données de la facture au format européen EN 16931."
+    },
+    {
+      "key": "donnees",
+      "text": "Lignes, taux de TVA, remise, échéance, IBAN : son logiciel comptable les importe sans rien ressaisir."
+    },
+    {
+      "key": "limite",
+      "text": "À savoir : la transmission par une plateforme agréée se fait encore en dehors de RapidoCRM."
+    },
+    {
+      "key": "outro",
+      "text": "Vos factures sont prêtes pour la facture électronique. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "zone": ".cardDevis"
+    },
+    {
+      "at": "ouvrir",
+      "label": "Facture électronique",
+      "click": "a[href$='/factur-x']",
+      "wait": 0.4
+    },
+    {
+      "at": "controle",
+      "label": "Les mentions obligatoires",
+      "zone": ".facturx-manques"
+    },
+    {
+      "at": "completer",
+      "click": ".facturx-manques a.btn-primary",
+      "wait": 0.6
+    },
+    {
+      "at": "completer",
+      "zone": "#numTva",
+      "zone_closest": ".col-lg-6",
+      "fill": [
+        [
+          "#numTva",
+          "FR32123456789"
+        ]
+      ]
+    },
+    {
+      "at": "completer",
+      "click": "#navs-top-Entreprise form:has(#numTva) button[type=submit]",
+      "wait": 0.4
+    },
+    {
+      "at": "retour",
+      "label": "Retour à la facture",
+      "click": "#retourFacturx a",
+      "wait": 0.3
+    },
+    {
+      "at": "retour",
+      "click": "a[href$='/factur-x']"
+    },
+    {
+      "at": "fichier",
+      "label": "Le fichier Factur-X",
+      "zone": ".cardDevis"
+    },
+    {
+      "at": "donnees",
+      "scroll": "Informations de facture",
+      "zone": "table.table >> nth=0"
+    },
+    {
+      "at": "limite",
+      "zone": "a[href$=\"/factur-x\"]",
+      "zone_closest": ".d-lg-flex"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ]
+}

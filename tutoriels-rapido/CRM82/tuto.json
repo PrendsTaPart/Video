@@ -18,16 +18,16 @@
   "scenes": [
     {
       "at": "intro",
-      "wait": 0.4
+      "wait": 4.0
+    },
+    {
+      "at": "intro",
+      "click": "a.btn-profil",
+      "wait": 0.3
     },
     {
       "at": "ouvrir",
       "label": "Sécurité du compte",
-      "click": "a.btn-profil",
-      "wait": 0.4
-    },
-    {
-      "at": "ouvrir",
       "click": "a.dropdown-item[href$='/securite']"
     },
     {
@@ -54,17 +54,17 @@
       "at": "secours",
       "label": "Les codes de secours",
       "zone": ".codes",
-      "zone_closest": ".encadre, div"
+      "zone_closest": ".encadre, div",
+      "wait": 3.5
     },
     {
-      "at": "connexion",
-      "label": "À la prochaine connexion",
+      "at": "secours",
       "goto": "/logout"
     },
     {
-      "at": "connexion",
+      "at": "secours",
       "goto": "/login",
-      "fill": [
+      "fill_now": [
         [
           "input[name=email]",
           "demo@rapido.test"
@@ -78,7 +78,8 @@
     {
       "at": "connexion",
       "click": "button[type=submit]",
-      "wait": 0.6
+      "wait": 0.6,
+      "label": "À la prochaine connexion"
     },
     {
       "at": "saisir",
