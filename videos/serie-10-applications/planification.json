@@ -1,0 +1,22 @@
+[
+ {
+  "n": 3,
+  "reseau": "linkedin",
+  "draft_id": 2212,
+  "post_id": 2105,
+  "job_id_ou_message": 2485,
+  "date": "2026-11-19",
+  "statut": "planifie",
+  "erreur": null
+ },
+ {
+  "n": 3,
+  "reseau": "tiktok",
+  "draft_id": 2213,
+  "post_id": null,
+  "job_id_ou_message": 2486,
+  "date": "2026-11-19",
+  "statut": "planifie",
+  "erreur": null
+ }
+]
