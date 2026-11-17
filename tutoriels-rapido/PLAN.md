@@ -161,13 +161,13 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM67 — Le programme de fidélité et la caisse
 - [x] CRM68 — Le formulaire de devis en ligne
 - [x] CRM69 — Connecter RapidoRH : l'équipe IA au travail
-- [ ] CRM70 — Téléphonie : numéros et standard (dès que le module existe)
-- [ ] CRM71 — Appeler un client depuis sa fiche et le prompteur temps réel
+- [ ] CRM70 — Appeler vos clients en un clic (téléphonie : clic pour appeler, journal, rappel, « Qui m'appelle ? »)
+- [~] CRM71 — Appeler un client depuis sa fiche et le prompteur temps réel (17/11 : l'appel depuis la fiche est montré dans CRM70 ; le prompteur temps réel n'existe pas encore dans RapidoCRM)
 - [ ] CRM72 — Analyse des appels, enregistrement et tâches envoyées à l'équipe IA
 - [ ] CRM73 — L'agent IA sur votre site web
 - [ ] CRM74 — Boîte de réception et tickets
-- [ ] CRM75 — La Marketing Map : construire un parcours inbound / outbound
-- [ ] CRM76 — Suivre ses prospects en direct sur la carte (2,5D / 3D)
+- [ ] CRM75 — Dessiner sa stratégie avec la Marketing Map
+- [ ] CRM76 — Suivre ses prospects en direct sur la carte
 - [ ] CRM77 — Écrire un article de blog optimisé SEO
 - [ ] CRM78 — Mots-clés, scores et tendances : le calendrier de publication
 - [ ] CRM79 — Publicités Google Ads et Meta Ads pilotées par les agents IA

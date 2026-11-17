@@ -51,8 +51,15 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
             });
         }, Object.entries(cfg.replace_text));
     }
+    // cfg.css posé dès le chargement de chaque page (pas de bandeau qui apparaît une seconde avant d'être masqué).
+    if (cfg.css) {
+        await page.addInitScript((css) => {
+            document.addEventListener('DOMContentLoaded', () => { const st = document.createElement('style'); st.textContent = css; document.head.appendChild(st); });
+        }, cfg.css);
+    }
     const installCursor = async () => {
-        await page.addStyleTag({ content: CURSOR_CSS }).catch(() => {});
+        // cfg.css : habillage propre au tournage (ex. masquer un bandeau technique de la copie locale), réinjecté à chaque page.
+        await page.addStyleTag({ content: CURSOR_CSS + (cfg.css || '') }).catch(() => {});
         await page.evaluate(() => {
             if (document.getElementById('rx-cursor')) return;
             const c = document.createElement('div'); c.id = 'rx-cursor'; document.body.appendChild(c);

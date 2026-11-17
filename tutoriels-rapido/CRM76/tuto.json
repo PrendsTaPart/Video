@@ -1,0 +1,135 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 45,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM76",
+  "title": "Suivre ses prospects en direct sur la carte",
+  "em": "en direct",
+  "tag": "2 min · Intermédiaire",
+  "start_path": "/marketing-map",
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "ouvrir",
+      "label": "Une carte active",
+      "click": "a:has-text(\"Salon de l’habitat\") >> nth=0",
+      "wait": 2.0
+    },
+    {
+      "at": "kpis",
+      "label": "Les chiffres de la carte",
+      "zone": "#mm-kpis"
+    },
+    {
+      "at": "blocs",
+      "label": "Les contacts, bloc par bloc",
+      "zone": ".mm-bloc >> nth=1",
+      "hover": ".mm-bloc >> nth=1 >> .suivi"
+    },
+    {
+      "at": "blocs",
+      "hover": ".mm-bloc >> nth=2 >> .suivi"
+    },
+    {
+      "at": "agir",
+      "label": "Agir depuis un bloc",
+      "click": ".mm-bloc >> nth=1",
+      "wait": 0.8
+    },
+    {
+      "at": "agir",
+      "click": "#mm-panneau button:has-text(\"Voir les contacts présents\")",
+      "wait": 0.8
+    },
+    {
+      "at": "agir",
+      "zone": "#mm-panneau",
+      "hover": "#mm-panneau button:has-text(\"tâche de relance\")"
+    },
+    {
+      "at": "vues",
+      "label": "Vues 2,5D et 3D",
+      "click": "button.mm-vue-3d:has-text(\"2,5D\")",
+      "wait": 1.8
+    },
+    {
+      "at": "vues",
+      "click": "button.mm-vue-3d:has-text(\"3D\") >> nth=-1",
+      "wait": 3.0
+    },
+    {
+      "at": "partager",
+      "label": "Présenter et partager",
+      "click": "button:has-text(\"Partager\")",
+      "wait": 0.6
+    },
+    {
+      "at": "partager",
+      "zone": ".dropdown-menu.show",
+      "hover": "#mm-lien"
+    },
+    {
+      "at": "partager",
+      "click": "#mm-lien",
+      "wait": 1.0
+    },
+    {
+      "at": "partager",
+      "eval": "document.querySelectorAll('#mm-partage input').forEach(i => { i.value = i.value.replace('http://127.0.0.1:8124', 'https://crm.rapidosoftware.com'); })",
+      "zone": "#mm-partage"
+    },
+    {
+      "at": "outro",
+      "eval": "document.querySelectorAll('.modal.show .btn-close').forEach(b => b.click())",
+      "wait": 0.6
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Une fois votre Marketing Map activée, elle devient un tableau de bord vivant : vous voyez où en est chacun de vos prospects. Voyons comment la suivre."
+    },
+    {
+      "key": "ouvrir",
+      "text": "Ouvrez une carte active : ici, la carte du salon de l'habitat."
+    },
+    {
+      "key": "kpis",
+      "text": "En haut, les chiffres clés : les leads actifs, les prospects chauds, les contacts arrivés en conversion, le taux de conversion, et la prévision."
+    },
+    {
+      "key": "blocs",
+      "text": "Chaque bloc montre les contacts présents, ceux qui sont passés, et le taux de passage depuis l'étape précédente. Les compteurs avancent tout seuls, à chaque formulaire, e-mail, appel ou achat."
+    },
+    {
+      "key": "agir",
+      "text": "Cliquez sur un bloc pour voir qui s'y trouve, puis agissez : créez une tâche de relance pour chacun, ou inscrivez-les à une séquence. Une confirmation vous est toujours demandée."
+    },
+    {
+      "key": "vues",
+      "text": "Passez en vue deux et demie ou en trois D : chaque étage est une étape du parcours. Faites tourner la carte pour la présenter à votre équipe."
+    },
+    {
+      "key": "partager",
+      "text": "Dans Partager : le mode présentation, l'export en image ou en PDF, et un lien de lecture seule, valable trente jours, que vous pouvez désactiver à tout moment."
+    },
+    {
+      "key": "outro",
+      "text": "Vous savez maintenant suivre votre stratégie en direct. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ],
+  "replace_text": {
+    "http://127.0.0.1:8124": "https://crm.rapidosoftware.com"
+  }
+}
