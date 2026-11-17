@@ -1,0 +1,1130 @@
+[
+  {
+    "text": "Vos",
+    "start": 0.03,
+    "end": 0.13,
+    "id": "w0"
+  },
+  {
+    "text": "campagnes",
+    "start": 0.13,
+    "end": 0.52,
+    "id": "w1"
+  },
+  {
+    "text": "sont",
+    "start": 0.54,
+    "end": 0.67,
+    "id": "w2"
+  },
+  {
+    "text": "partis.",
+    "start": 0.71,
+    "end": 1.09,
+    "id": "w3"
+  },
+  {
+    "text": "Qui",
+    "start": 1.51,
+    "end": 1.64,
+    "id": "w4"
+  },
+  {
+    "text": "les",
+    "start": 1.64,
+    "end": 1.79,
+    "id": "w5"
+  },
+  {
+    "text": "a",
+    "start": 1.79,
+    "end": 1.85,
+    "id": "w6"
+  },
+  {
+    "text": "ouvertes?",
+    "start": 1.85,
+    "end": 2.48,
+    "id": "w7"
+  },
+  {
+    "text": "Qui",
+    "start": 2.48,
+    "end": 2.57,
+    "id": "w8"
+  },
+  {
+    "text": "a",
+    "start": 2.72,
+    "end": 2.74,
+    "id": "w9"
+  },
+  {
+    "text": "cliqué?",
+    "start": 2.96,
+    "end": 3.56,
+    "id": "w10"
+  },
+  {
+    "text": "Voici",
+    "start": 3.59,
+    "end": 3.87,
+    "id": "w11"
+  },
+  {
+    "text": "le",
+    "start": 3.93,
+    "end": 4.05,
+    "id": "w12"
+  },
+  {
+    "text": "suivi",
+    "start": 4.05,
+    "end": 4.39,
+    "id": "w13"
+  },
+  {
+    "text": "des",
+    "start": 4.46,
+    "end": 4.61,
+    "id": "w14"
+  },
+  {
+    "text": "envois",
+    "start": 4.61,
+    "end": 5.08,
+    "id": "w15"
+  },
+  {
+    "text": "dans",
+    "start": 5.13,
+    "end": 5.42,
+    "id": "w16"
+  },
+  {
+    "text": "le",
+    "start": 5.42,
+    "end": 5.58,
+    "id": "w17"
+  },
+  {
+    "text": "menu",
+    "start": 5.58,
+    "end": 5.87,
+    "id": "w18"
+  },
+  {
+    "text": "Marketing.",
+    "start": 6.09,
+    "end": 6.72,
+    "id": "w19"
+  },
+  {
+    "text": "Chaque",
+    "start": 6.75,
+    "end": 7.03,
+    "id": "w20"
+  },
+  {
+    "text": "campagne",
+    "start": 7.09,
+    "end": 7.51,
+    "id": "w21"
+  },
+  {
+    "text": "e-mail",
+    "start": 7.51,
+    "end": 7.81,
+    "id": "w22"
+  },
+  {
+    "text": "et",
+    "start": 7.81,
+    "end": 8.26,
+    "id": "w23"
+  },
+  {
+    "text": "chaque",
+    "start": 8.26,
+    "end": 8.37,
+    "id": "w24"
+  },
+  {
+    "text": "newsletter",
+    "start": 8.37,
+    "end": 8.86,
+    "id": "w25"
+  },
+  {
+    "text": "affichent",
+    "start": 8.99,
+    "end": 9.36,
+    "id": "w26"
+  },
+  {
+    "text": "le",
+    "start": 9.36,
+    "end": 9.46,
+    "id": "w27"
+  },
+  {
+    "text": "nombre",
+    "start": 9.51,
+    "end": 9.8,
+    "id": "w28"
+  },
+  {
+    "text": "d'envoi,",
+    "start": 9.8,
+    "end": 10.44,
+    "id": "w29"
+  },
+  {
+    "text": "le",
+    "start": 10.47,
+    "end": 10.56,
+    "id": "w30"
+  },
+  {
+    "text": "taux",
+    "start": 10.56,
+    "end": 10.75,
+    "id": "w31"
+  },
+  {
+    "text": "d'ouverture,",
+    "start": 10.81,
+    "end": 11.53,
+    "id": "w32"
+  },
+  {
+    "text": "le",
+    "start": 11.53,
+    "end": 11.87,
+    "id": "w33"
+  },
+  {
+    "text": "taux",
+    "start": 11.87,
+    "end": 12.13,
+    "id": "w34"
+  },
+  {
+    "text": "de",
+    "start": 12.13,
+    "end": 12.31,
+    "id": "w35"
+  },
+  {
+    "text": "clic,",
+    "start": 12.31,
+    "end": 12.77,
+    "id": "w36"
+  },
+  {
+    "text": "et",
+    "start": 12.77,
+    "end": 12.81,
+    "id": "w37"
+  },
+  {
+    "text": "la",
+    "start": 12.97,
+    "end": 12.98,
+    "id": "w38"
+  },
+  {
+    "text": "part",
+    "start": 13,
+    "end": 13.18,
+    "id": "w39"
+  },
+  {
+    "text": "des",
+    "start": 13.24,
+    "end": 13.33,
+    "id": "w40"
+  },
+  {
+    "text": "lecteurs",
+    "start": 13.44,
+    "end": 13.57,
+    "id": "w41"
+  },
+  {
+    "text": "qui",
+    "start": 13.57,
+    "end": 13.93,
+    "id": "w42"
+  },
+  {
+    "text": "ont",
+    "start": 14.07,
+    "end": 14.09,
+    "id": "w43"
+  },
+  {
+    "text": "cliqué.",
+    "start": 14.09,
+    "end": 14.64,
+    "id": "w44"
+  },
+  {
+    "text": "Retenez",
+    "start": 14.67,
+    "end": 15.09,
+    "id": "w45"
+  },
+  {
+    "text": "surtout",
+    "start": 15.09,
+    "end": 15.43,
+    "id": "w46"
+  },
+  {
+    "text": "le",
+    "start": 15.54,
+    "end": 15.68,
+    "id": "w47"
+  },
+  {
+    "text": "taux",
+    "start": 15.68,
+    "end": 15.77,
+    "id": "w48"
+  },
+  {
+    "text": "de",
+    "start": 15.77,
+    "end": 16.18,
+    "id": "w49"
+  },
+  {
+    "text": "clic.",
+    "start": 16.18,
+    "end": 16.56,
+    "id": "w50"
+  },
+  {
+    "text": "Certaines",
+    "start": 16.59,
+    "end": 16.98,
+    "id": "w51"
+  },
+  {
+    "text": "messageries",
+    "start": 16.98,
+    "end": 17.5,
+    "id": "w52"
+  },
+  {
+    "text": "ouvrent",
+    "start": 17.5,
+    "end": 17.69,
+    "id": "w53"
+  },
+  {
+    "text": "les",
+    "start": 17.69,
+    "end": 18.1,
+    "id": "w54"
+  },
+  {
+    "text": "images",
+    "start": 18.1,
+    "end": 18.26,
+    "id": "w55"
+  },
+  {
+    "text": "toutes",
+    "start": 18.26,
+    "end": 18.53,
+    "id": "w56"
+  },
+  {
+    "text": "seules,",
+    "start": 18.55,
+    "end": 18.93,
+    "id": "w57"
+  },
+  {
+    "text": "ce",
+    "start": 19.09,
+    "end": 19.1,
+    "id": "w58"
+  },
+  {
+    "text": "qui",
+    "start": 19.12,
+    "end": 19.27,
+    "id": "w59"
+  },
+  {
+    "text": "gonfle",
+    "start": 19.27,
+    "end": 19.61,
+    "id": "w60"
+  },
+  {
+    "text": "les",
+    "start": 19.61,
+    "end": 19.69,
+    "id": "w61"
+  },
+  {
+    "text": "ouvertures.",
+    "start": 20.13,
+    "end": 20.6,
+    "id": "w62"
+  },
+  {
+    "text": "Cliquez",
+    "start": 20.63,
+    "end": 21.26,
+    "id": "w63"
+  },
+  {
+    "text": "sur",
+    "start": 21.26,
+    "end": 21.54,
+    "id": "w64"
+  },
+  {
+    "text": "Détails.",
+    "start": 21.54,
+    "end": 22.24,
+    "id": "w65"
+  },
+  {
+    "text": "Les",
+    "start": 22.27,
+    "end": 22.41,
+    "id": "w66"
+  },
+  {
+    "text": "chiffres",
+    "start": 22.45,
+    "end": 22.88,
+    "id": "w67"
+  },
+  {
+    "text": "de",
+    "start": 22.88,
+    "end": 23,
+    "id": "w68"
+  },
+  {
+    "text": "la",
+    "start": 23,
+    "end": 23.07,
+    "id": "w69"
+  },
+  {
+    "text": "campagne",
+    "start": 23.14,
+    "end": 23.38,
+    "id": "w70"
+  },
+  {
+    "text": "et",
+    "start": 23.38,
+    "end": 23.78,
+    "id": "w71"
+  },
+  {
+    "text": "les",
+    "start": 23.78,
+    "end": 23.89,
+    "id": "w72"
+  },
+  {
+    "text": "liens",
+    "start": 23.89,
+    "end": 24.18,
+    "id": "w73"
+  },
+  {
+    "text": "les",
+    "start": 24.18,
+    "end": 24.36,
+    "id": "w74"
+  },
+  {
+    "text": "plus",
+    "start": 24.36,
+    "end": 24.55,
+    "id": "w75"
+  },
+  {
+    "text": "cliqués.",
+    "start": 24.6,
+    "end": 25.13,
+    "id": "w76"
+  },
+  {
+    "text": "Plus",
+    "start": 25.27,
+    "end": 25.5,
+    "id": "w77"
+  },
+  {
+    "text": "bas,",
+    "start": 25.5,
+    "end": 25.81,
+    "id": "w78"
+  },
+  {
+    "text": "chaque",
+    "start": 25.84,
+    "end": 26.23,
+    "id": "w79"
+  },
+  {
+    "text": "destinataire.",
+    "start": 26.23,
+    "end": 27.21,
+    "id": "w80"
+  },
+  {
+    "text": "Quand",
+    "start": 27.27,
+    "end": 27.55,
+    "id": "w81"
+  },
+  {
+    "text": "il",
+    "start": 27.55,
+    "end": 27.67,
+    "id": "w82"
+  },
+  {
+    "text": "a",
+    "start": 27.67,
+    "end": 27.73,
+    "id": "w83"
+  },
+  {
+    "text": "ouvert,",
+    "start": 27.73,
+    "end": 28.21,
+    "id": "w84"
+  },
+  {
+    "text": "combien",
+    "start": 28.21,
+    "end": 28.36,
+    "id": "w85"
+  },
+  {
+    "text": "de",
+    "start": 28.36,
+    "end": 28.81,
+    "id": "w86"
+  },
+  {
+    "text": "fois",
+    "start": 28.81,
+    "end": 29.02,
+    "id": "w87"
+  },
+  {
+    "text": "et",
+    "start": 29.02,
+    "end": 29.14,
+    "id": "w88"
+  },
+  {
+    "text": "combien",
+    "start": 29.14,
+    "end": 29.54,
+    "id": "w89"
+  },
+  {
+    "text": "de",
+    "start": 29.54,
+    "end": 29.6,
+    "id": "w90"
+  },
+  {
+    "text": "clics.",
+    "start": 29.78,
+    "end": 30.13,
+    "id": "w91"
+  },
+  {
+    "text": "Les",
+    "start": 30.27,
+    "end": 30.41,
+    "id": "w92"
+  },
+  {
+    "text": "plus",
+    "start": 30.45,
+    "end": 30.68,
+    "id": "w93"
+  },
+  {
+    "text": "intéressés",
+    "start": 30.68,
+    "end": 31.31,
+    "id": "w94"
+  },
+  {
+    "text": "sont",
+    "start": 31.31,
+    "end": 31.37,
+    "id": "w95"
+  },
+  {
+    "text": "en",
+    "start": 31.37,
+    "end": 31.78,
+    "id": "w96"
+  },
+  {
+    "text": "tête,",
+    "start": 31.78,
+    "end": 32.05,
+    "id": "w97"
+  },
+  {
+    "text": "ce",
+    "start": 32.05,
+    "end": 32.17,
+    "id": "w98"
+  },
+  {
+    "text": "sont",
+    "start": 32.17,
+    "end": 32.38,
+    "id": "w99"
+  },
+  {
+    "text": "eux",
+    "start": 32.38,
+    "end": 32.55,
+    "id": "w100"
+  },
+  {
+    "text": "à",
+    "start": 32.6,
+    "end": 32.61,
+    "id": "w101"
+  },
+  {
+    "text": "rappeler.",
+    "start": 32.79,
+    "end": 33.37,
+    "id": "w102"
+  },
+  {
+    "text": "Vos",
+    "start": 33.51,
+    "end": 33.69,
+    "id": "w103"
+  },
+  {
+    "text": "campagnes",
+    "start": 33.7,
+    "end": 34.31,
+    "id": "w104"
+  },
+  {
+    "text": "SMS",
+    "start": 34.38,
+    "end": 34.57,
+    "id": "w105"
+  },
+  {
+    "text": "sont",
+    "start": 34.61,
+    "end": 34.62,
+    "id": "w106"
+  },
+  {
+    "text": "suivis",
+    "start": 35.03,
+    "end": 35.39,
+    "id": "w107"
+  },
+  {
+    "text": "aussi.",
+    "start": 35.39,
+    "end": 36.04,
+    "id": "w108"
+  },
+  {
+    "text": "Les",
+    "start": 36.07,
+    "end": 36.2,
+    "id": "w109"
+  },
+  {
+    "text": "liens",
+    "start": 36.2,
+    "end": 36.47,
+    "id": "w110"
+  },
+  {
+    "text": "sont",
+    "start": 36.47,
+    "end": 36.69,
+    "id": "w111"
+  },
+  {
+    "text": "raccourcis",
+    "start": 36.69,
+    "end": 37.13,
+    "id": "w112"
+  },
+  {
+    "text": "automatiquement",
+    "start": 37.57,
+    "end": 38.08,
+    "id": "w113"
+  },
+  {
+    "text": "et",
+    "start": 38.08,
+    "end": 38.19,
+    "id": "w114"
+  },
+  {
+    "text": "chaque",
+    "start": 38.33,
+    "end": 38.6,
+    "id": "w115"
+  },
+  {
+    "text": "clic",
+    "start": 38.6,
+    "end": 38.85,
+    "id": "w116"
+  },
+  {
+    "text": "est",
+    "start": 38.85,
+    "end": 39.06,
+    "id": "w117"
+  },
+  {
+    "text": "compté.",
+    "start": 39.06,
+    "end": 39.68,
+    "id": "w118"
+  },
+  {
+    "text": "Dans",
+    "start": 39.71,
+    "end": 39.93,
+    "id": "w119"
+  },
+  {
+    "text": "Des",
+    "start": 39.93,
+    "end": 40.11,
+    "id": "w120"
+  },
+  {
+    "text": "Inscriptions,",
+    "start": 40.11,
+    "end": 41,
+    "id": "w121"
+  },
+  {
+    "text": "retrouvez",
+    "start": 41.22,
+    "end": 41.43,
+    "id": "w122"
+  },
+  {
+    "text": "les",
+    "start": 41.43,
+    "end": 41.58,
+    "id": "w123"
+  },
+  {
+    "text": "adresses",
+    "start": 41.58,
+    "end": 41.99,
+    "id": "w124"
+  },
+  {
+    "text": "qui",
+    "start": 41.99,
+    "end": 42.04,
+    "id": "w125"
+  },
+  {
+    "text": "ne",
+    "start": 42.24,
+    "end": 42.25,
+    "id": "w126"
+  },
+  {
+    "text": "veulent",
+    "start": 42.29,
+    "end": 42.57,
+    "id": "w127"
+  },
+  {
+    "text": "plus",
+    "start": 42.68,
+    "end": 42.8,
+    "id": "w128"
+  },
+  {
+    "text": "recevoir",
+    "start": 43.09,
+    "end": 43.31,
+    "id": "w129"
+  },
+  {
+    "text": "vos",
+    "start": 43.31,
+    "end": 43.47,
+    "id": "w130"
+  },
+  {
+    "text": "e-mails,",
+    "start": 43.47,
+    "end": 43.88,
+    "id": "w131"
+  },
+  {
+    "text": "par",
+    "start": 43.91,
+    "end": 44.05,
+    "id": "w132"
+  },
+  {
+    "text": "le",
+    "start": 44.09,
+    "end": 44.19,
+    "id": "w133"
+  },
+  {
+    "text": "lien",
+    "start": 44.25,
+    "end": 44.45,
+    "id": "w134"
+  },
+  {
+    "text": "en",
+    "start": 44.48,
+    "end": 44.55,
+    "id": "w135"
+  },
+  {
+    "text": "bas",
+    "start": 44.59,
+    "end": 44.8,
+    "id": "w136"
+  },
+  {
+    "text": "de",
+    "start": 44.8,
+    "end": 44.93,
+    "id": "w137"
+  },
+  {
+    "text": "chaque",
+    "start": 44.93,
+    "end": 44.97,
+    "id": "w138"
+  },
+  {
+    "text": "envoi",
+    "start": 45.42,
+    "end": 45.68,
+    "id": "w139"
+  },
+  {
+    "text": "ou",
+    "start": 45.68,
+    "end": 45.8,
+    "id": "w140"
+  },
+  {
+    "text": "en",
+    "start": 45.8,
+    "end": 45.92,
+    "id": "w141"
+  },
+  {
+    "text": "un",
+    "start": 45.92,
+    "end": 46.03,
+    "id": "w142"
+  },
+  {
+    "text": "clic",
+    "start": 46.03,
+    "end": 46.19,
+    "id": "w143"
+  },
+  {
+    "text": "depuis",
+    "start": 46.42,
+    "end": 46.62,
+    "id": "w144"
+  },
+  {
+    "text": "leur",
+    "start": 46.67,
+    "end": 46.89,
+    "id": "w145"
+  },
+  {
+    "text": "messagerie.",
+    "start": 46.89,
+    "end": 47.72,
+    "id": "w146"
+  },
+  {
+    "text": "Une",
+    "start": 47.75,
+    "end": 47.86,
+    "id": "w147"
+  },
+  {
+    "text": "personne",
+    "start": 47.86,
+    "end": 48.23,
+    "id": "w148"
+  },
+  {
+    "text": "vous",
+    "start": 48.23,
+    "end": 48.39,
+    "id": "w149"
+  },
+  {
+    "text": "le",
+    "start": 48.43,
+    "end": 48.5,
+    "id": "w150"
+  },
+  {
+    "text": "demande",
+    "start": 48.5,
+    "end": 48.8,
+    "id": "w151"
+  },
+  {
+    "text": "par",
+    "start": 48.84,
+    "end": 48.85,
+    "id": "w152"
+  },
+  {
+    "text": "téléphone?",
+    "start": 49.25,
+    "end": 49.56,
+    "id": "w153"
+  },
+  {
+    "text": "Ajoutez",
+    "start": 49.59,
+    "end": 49.97,
+    "id": "w154"
+  },
+  {
+    "text": "son",
+    "start": 49.97,
+    "end": 50.13,
+    "id": "w155"
+  },
+  {
+    "text": "adresse.",
+    "start": 50.16,
+    "end": 50.65,
+    "id": "w156"
+  },
+  {
+    "text": "Elle",
+    "start": 50.79,
+    "end": 51.05,
+    "id": "w157"
+  },
+  {
+    "text": "ne",
+    "start": 51.05,
+    "end": 51.19,
+    "id": "w158"
+  },
+  {
+    "text": "recevra",
+    "start": 51.19,
+    "end": 51.69,
+    "id": "w159"
+  },
+  {
+    "text": "plus",
+    "start": 51.69,
+    "end": 51.85,
+    "id": "w160"
+  },
+  {
+    "text": "aucune",
+    "start": 52.29,
+    "end": 52.42,
+    "id": "w161"
+  },
+  {
+    "text": "campagne.",
+    "start": 52.42,
+    "end": 53.04,
+    "id": "w162"
+  },
+  {
+    "text": "Et",
+    "start": 53.07,
+    "end": 53.16,
+    "id": "w163"
+  },
+  {
+    "text": "si",
+    "start": 53.16,
+    "end": 53.28,
+    "id": "w164"
+  },
+  {
+    "text": "elle",
+    "start": 53.28,
+    "end": 53.52,
+    "id": "w165"
+  },
+  {
+    "text": "change",
+    "start": 53.52,
+    "end": 53.83,
+    "id": "w166"
+  },
+  {
+    "text": "d'avis,",
+    "start": 53.94,
+    "end": 54.36,
+    "id": "w167"
+  },
+  {
+    "text": "réinscrivez-la",
+    "start": 54.48,
+    "end": 55.19,
+    "id": "w168"
+  },
+  {
+    "text": "d'un",
+    "start": 55.19,
+    "end": 55.4,
+    "id": "w169"
+  },
+  {
+    "text": "clic.",
+    "start": 55.59,
+    "end": 55.85,
+    "id": "w170"
+  },
+  {
+    "text": "Vos",
+    "start": 55.91,
+    "end": 56.05,
+    "id": "w171"
+  },
+  {
+    "text": "envois",
+    "start": 56.09,
+    "end": 56.43,
+    "id": "w172"
+  },
+  {
+    "text": "sont",
+    "start": 56.43,
+    "end": 56.67,
+    "id": "w173"
+  },
+  {
+    "text": "suivis",
+    "start": 56.67,
+    "end": 56.97,
+    "id": "w174"
+  },
+  {
+    "text": "et",
+    "start": 56.97,
+    "end": 57.21,
+    "id": "w175"
+  },
+  {
+    "text": "les",
+    "start": 57.21,
+    "end": 57.45,
+    "id": "w176"
+  },
+  {
+    "text": "choix",
+    "start": 57.45,
+    "end": 57.66,
+    "id": "w177"
+  },
+  {
+    "text": "de",
+    "start": 57.67,
+    "end": 57.79,
+    "id": "w178"
+  },
+  {
+    "text": "vos",
+    "start": 57.79,
+    "end": 57.98,
+    "id": "w179"
+  },
+  {
+    "text": "clients",
+    "start": 57.98,
+    "end": 58.42,
+    "id": "w180"
+  },
+  {
+    "text": "respectés.",
+    "start": 58.44,
+    "end": 59.01,
+    "id": "w181"
+  },
+  {
+    "text": "Retrouvez",
+    "start": 59.27,
+    "end": 59.71,
+    "id": "w182"
+  },
+  {
+    "text": "tous",
+    "start": 59.71,
+    "end": 59.91,
+    "id": "w183"
+  },
+  {
+    "text": "nos",
+    "start": 59.95,
+    "end": 60.04,
+    "id": "w184"
+  },
+  {
+    "text": "tutoriels",
+    "start": 60.14,
+    "end": 60.38,
+    "id": "w185"
+  },
+  {
+    "text": "dans",
+    "start": 60.38,
+    "end": 60.81,
+    "id": "w186"
+  },
+  {
+    "text": "l'académie.",
+    "start": 60.81,
+    "end": 61.41,
+    "id": "w187"
+  }
+]

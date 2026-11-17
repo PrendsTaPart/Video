@@ -1,0 +1,145 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 40,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM82",
+  "title": "Protéger votre compte avec la double authentification",
+  "em": "double authentification",
+  "tag": "2 min · Débutant",
+  "start_path": "/dashboard",
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "ouvrir",
+      "label": "Sécurité du compte",
+      "click": "a.btn-top.px-3",
+      "wait": 0.4
+    },
+    {
+      "at": "ouvrir",
+      "click": "a.dropdown-item[href$='/securite']"
+    },
+    {
+      "at": "application",
+      "zone": "ol"
+    },
+    {
+      "at": "scanner",
+      "label": "Scanner le QR code",
+      "zone": "#qrDeuxFacteurs",
+      "zone_closest": ".d-flex"
+    },
+    {
+      "at": "code",
+      "eval": "(async()=>{const b32=s=>{const a='ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';let bits='';for(const c of s.replace(/[\\s=]/g,'').toUpperCase())bits+=a.indexOf(c).toString(2).padStart(5,'0');const o=[];for(let i=0;i+8<=bits.length;i+=8)o.push(parseInt(bits.slice(i,i+8),2));return new Uint8Array(o);};const totp=async s=>{const k=await crypto.subtle.importKey('raw',b32(s),{name:'HMAC',hash:'SHA-1'},false,['sign']);const m=new ArrayBuffer(8);new DataView(m).setUint32(4,Math.floor(Date.now()/30000));const h=new Uint8Array(await crypto.subtle.sign('HMAC',k,m));const f=h[19]&15;return String((((h[f]&127)<<24)|(h[f+1]<<16)|(h[f+2]<<8)|h[f+3])%1000000).padStart(6,'0');};const cle=document.getElementById('cleDeuxFacteurs').textContent;localStorage.setItem('cle2fa',cle);const i=document.getElementById('codeActivation');i.value=await totp(cle);i.dispatchEvent(new Event('input',{bubbles:true}));})()",
+      "zone": "form[action$='/securite/activer']"
+    },
+    {
+      "at": "code",
+      "click": "#activerDeuxFacteurs",
+      "wait": 0.6
+    },
+    {
+      "at": "secours",
+      "label": "Les codes de secours",
+      "zone": ".codes",
+      "zone_closest": ".encadre, div"
+    },
+    {
+      "at": "connexion",
+      "label": "À la prochaine connexion",
+      "goto": "/logout"
+    },
+    {
+      "at": "connexion",
+      "goto": "/login",
+      "fill": [
+        [
+          "input[name=email]",
+          "demo@rapido.test"
+        ],
+        [
+          "input[name=password]",
+          "Demo-Rapido-2026"
+        ]
+      ]
+    },
+    {
+      "at": "connexion",
+      "click": "button[type=submit]",
+      "wait": 0.6
+    },
+    {
+      "at": "saisir",
+      "eval": "(async()=>{const b32=s=>{const a='ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';let bits='';for(const c of s.replace(/[\\s=]/g,'').toUpperCase())bits+=a.indexOf(c).toString(2).padStart(5,'0');const o=[];for(let i=0;i+8<=bits.length;i+=8)o.push(parseInt(bits.slice(i,i+8),2));return new Uint8Array(o);};const totp=async s=>{const k=await crypto.subtle.importKey('raw',b32(s),{name:'HMAC',hash:'SHA-1'},false,['sign']);const m=new ArrayBuffer(8);new DataView(m).setUint32(4,Math.floor(Date.now()/30000));const h=new Uint8Array(await crypto.subtle.sign('HMAC',k,m));const f=h[19]&15;return String((((h[f]&127)<<24)|(h[f+1]<<16)|(h[f+2]<<8)|h[f+3])%1000000).padStart(6,'0');};const i=document.getElementById('code');i.value=await totp(localStorage.getItem('cle2fa'));i.dispatchEvent(new Event('input',{bubbles:true}));})()",
+      "zone": "form"
+    },
+    {
+      "at": "saisir",
+      "click": "#valider",
+      "wait": 0.8
+    },
+    {
+      "at": "assistants",
+      "goto": "/securite",
+      "zone": ".col-lg-5 .card"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Un mot de passe peut être volé. Avec la double authentification, il faut aussi votre téléphone pour entrer dans RapidoCRM."
+    },
+    {
+      "key": "ouvrir",
+      "text": "Ouvrez le menu de votre profil, puis Sécurité du compte."
+    },
+    {
+      "key": "application",
+      "text": "Installez une application d'authentification sur votre téléphone, comme Google Authenticator, Microsoft Authenticator ou 1Password."
+    },
+    {
+      "key": "scanner",
+      "text": "Scannez ce QR code avec l'application, ou recopiez la clé à la main."
+    },
+    {
+      "key": "code",
+      "text": "L'application affiche un code à six chiffres, qui change toutes les trente secondes. Saisissez-le, puis cliquez sur Activer."
+    },
+    {
+      "key": "secours",
+      "text": "Voici vos huit codes de secours. Notez-les en lieu sûr : ils vous dépannent si vous perdez votre téléphone, et chacun ne sert qu'une fois."
+    },
+    {
+      "key": "connexion",
+      "text": "Désormais, à chaque connexion, vous saisissez d'abord votre e-mail et votre mot de passe, comme d'habitude."
+    },
+    {
+      "key": "saisir",
+      "text": "Puis RapidoCRM vous demande le code de l'application. Sans votre téléphone, impossible d'entrer."
+    },
+    {
+      "key": "assistants",
+      "text": "La protection s'applique aussi aux assistants IA que vous connectez, comme Claude ou ChatGPT. Vous pouvez la désactiver à tout moment avec votre mot de passe."
+    },
+    {
+      "key": "outro",
+      "text": "Votre compte est protégé. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ]
+}
