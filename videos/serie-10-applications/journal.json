@@ -1,0 +1,302 @@
+[
+  {
+    "n": 1,
+    "episode": 105,
+    "id": "4cf3c23e-1ab9-47f0-abe0-0784be3997f3",
+    "slug": "10-applis-ep01-haccp-le-probleme",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep01-haccp-le-probleme",
+    "erreur": null,
+    "cree_cette_session": false
+  },
+  {
+    "n": 2,
+    "episode": 106,
+    "id": "45f529fb-8867-4bfe-8852-adfa8932c9ce",
+    "slug": "10-applis-ep02-haccp-comment-ca-marche",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep02-haccp-comment-ca-marche",
+    "erreur": null,
+    "cree_cette_session": false
+  },
+  {
+    "n": 3,
+    "episode": 107,
+    "id": "0f538b1b-be08-422f-9447-fe40255f4434",
+    "slug": "10-applis-ep03-haccp-passer-a-l-action",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep03-haccp-passer-a-l-action",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 4,
+    "episode": 108,
+    "id": "78b4ebfb-2107-469c-94bf-5186bc6a3da1",
+    "slug": "10-applis-ep04-caisse-le-probleme",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep04-caisse-le-probleme",
+    "erreur": null,
+    "cree_cette_session": false
+  },
+  {
+    "n": 5,
+    "episode": 109,
+    "id": "d451a689-78f4-4736-a901-dd6b50030bb6",
+    "slug": "10-applis-ep05-caisse-comment-ca-marche",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep05-caisse-comment-ca-marche",
+    "erreur": null,
+    "cree_cette_session": false
+  },
+  {
+    "n": 6,
+    "episode": 110,
+    "id": "9453f5b1-18dc-40eb-9940-7ac2580fad69",
+    "slug": "10-applis-ep06-caisse-passer-a-l-action",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep06-caisse-passer-a-l-action",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 7,
+    "episode": 111,
+    "id": "780c6af4-a0c8-4a20-b685-15304240f29c",
+    "slug": "10-applis-ep07-kds-le-probleme",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep07-kds-le-probleme",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 8,
+    "episode": 112,
+    "id": "30fa02f9-e0d9-4381-859a-aeb46e47b832",
+    "slug": "10-applis-ep08-kds-comment-ca-marche",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep08-kds-comment-ca-marche",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 9,
+    "episode": 113,
+    "id": "0b85f8bf-8a28-4761-803a-1bc2b80caa7b",
+    "slug": "10-applis-ep09-kds-passer-a-l-action",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep09-kds-passer-a-l-action",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 10,
+    "episode": 114,
+    "id": "d953cd4b-7879-4133-b2b6-4eb8d8356c25",
+    "slug": "10-applis-ep10-menu-le-probleme",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep10-menu-le-probleme",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 11,
+    "episode": 115,
+    "id": "83eb073e-fc1d-4aa0-9d98-effaa193ac66",
+    "slug": "10-applis-ep11-menu-comment-ca-marche",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep11-menu-comment-ca-marche",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 12,
+    "episode": 116,
+    "id": "2263e993-0c46-4538-9c18-8356da7e245a",
+    "slug": "10-applis-ep12-menu-passer-a-l-action",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep12-menu-passer-a-l-action",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 13,
+    "episode": 117,
+    "id": "253eff26-c10b-4c6d-adab-9c51ae1bf848",
+    "slug": "10-applis-ep13-fidelite-le-probleme",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep13-fidelite-le-probleme",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 14,
+    "episode": 118,
+    "id": "2caaac76-feb0-4bab-9995-e28938d2ce31",
+    "slug": "10-applis-ep14-fidelite-comment-ca-marche",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep14-fidelite-comment-ca-marche",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 15,
+    "episode": 119,
+    "id": "e0841e18-6e5d-4145-8842-8ceec95a4f8e",
+    "slug": "10-applis-ep15-fidelite-passer-a-l-action",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep15-fidelite-passer-a-l-action",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 16,
+    "episode": 120,
+    "id": "8ab0f5c4-a86a-407c-985d-7b06cbc8dc87",
+    "slug": "10-applis-ep16-recettes-le-probleme",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep16-recettes-le-probleme",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 17,
+    "episode": 121,
+    "id": "fe4bdda4-e95e-4829-93af-2f6165755af4",
+    "slug": "10-applis-ep17-recettes-comment-ca-marche",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep17-recettes-comment-ca-marche",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 18,
+    "episode": 122,
+    "id": "bb9fbf10-600f-44d7-ac55-adbb99f5f8f9",
+    "slug": "10-applis-ep18-recettes-passer-a-l-action",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep18-recettes-passer-a-l-action",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 19,
+    "episode": 123,
+    "id": "8694ebb4-1437-4e4f-913b-ecf9ab3faa60",
+    "slug": "10-applis-ep19-production-le-probleme",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep19-production-le-probleme",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 20,
+    "episode": 124,
+    "id": "a64a91cd-fcc6-4e87-879e-3bdc474be41a",
+    "slug": "10-applis-ep20-production-comment-ca-marche",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep20-production-comment-ca-marche",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 21,
+    "episode": 125,
+    "id": "7cfa332d-3395-4922-81b0-e3bb0ad30f42",
+    "slug": "10-applis-ep21-production-passer-a-l-action",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep21-production-passer-a-l-action",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 22,
+    "episode": 126,
+    "id": "0da04dc4-ae8b-45db-b772-e894dd1af0d4",
+    "slug": "10-applis-ep22-labo-le-probleme",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep22-labo-le-probleme",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 23,
+    "episode": 127,
+    "id": "14699e38-45c7-4add-ba0c-b4e8f616f6a3",
+    "slug": "10-applis-ep23-labo-comment-ca-marche",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep23-labo-comment-ca-marche",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 24,
+    "episode": 128,
+    "id": "b9a5ba68-2ce7-4855-a173-1be251f60a0c",
+    "slug": "10-applis-ep24-labo-passer-a-l-action",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep24-labo-passer-a-l-action",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 25,
+    "episode": 129,
+    "id": "da52bb90-45fe-4abe-a6ac-d9b6a53a05a9",
+    "slug": "10-applis-ep25-game-le-probleme",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep25-game-le-probleme",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 26,
+    "episode": 130,
+    "id": "c15493c4-0bf9-480a-91d1-eb1ee21f9650",
+    "slug": "10-applis-ep26-game-comment-ca-marche",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep26-game-comment-ca-marche",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 27,
+    "episode": 131,
+    "id": "aeba232c-f8ef-4628-b39a-a06e648f237c",
+    "slug": "10-applis-ep27-game-passer-a-l-action",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep27-game-passer-a-l-action",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 28,
+    "episode": 132,
+    "id": "135e1d0d-1f0c-42d3-b510-25d11d38d5ae",
+    "slug": "10-applis-ep28-cocuisinage-le-probleme",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep28-cocuisinage-le-probleme",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 29,
+    "episode": 133,
+    "id": "ee13e22f-eef7-4909-99a1-40bfb64fbfa3",
+    "slug": "10-applis-ep29-cocuisinage-comment-ca-marche",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep29-cocuisinage-comment-ca-marche",
+    "erreur": null,
+    "cree_cette_session": true
+  },
+  {
+    "n": 30,
+    "episode": 134,
+    "id": "55791f55-720a-41af-8f07-b3fd1d3fe702",
+    "slug": "10-applis-ep30-cocuisinage-passer-a-l-action",
+    "statut": "publie",
+    "page": "/videos/10-applis-ep30-cocuisinage-passer-a-l-action",
+    "erreur": null,
+    "cree_cette_session": true
+  }
+]

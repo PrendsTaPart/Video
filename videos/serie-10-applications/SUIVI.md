@@ -13,19 +13,44 @@ Page de vente (Lovable, publiée) : https://foodeatup-10-applications.lovable.ap
 - `python3 posts.py` : légendes TikTok / LinkedIn et calendrier.
 - Écrans : `ecrans/<app>/` (Store FoodEatUp, journal-assets, captures Cocuisinage, jeux FoodEatUp Game). **Production** : maquettes du site, signalées « Aperçu · application en préparation » dans la vidéo.
 
-## État
+## État (17/11/2026, fin de journée)
 
-| # | Épisode | Voix | Vidéo | Bibliothèque RapidoCMS | Planifié 18 h | Journal (brouillon) |
-|---|---|---|---|---|---|---|
-| 1 | ep01-haccp-tofu | ✅ | ✅ 21 s | ✅ `10-applis-ep01-haccp-tofu` | 17/11 · LI brouillon 2204 · TT 2205 | ✅ ép. 105 |
-| 2 | ep02-haccp-mofu | ✅ | ✅ 21 s | ✅ | 18/11 · LI 2206 · TT 2207 | ✅ ép. 106 |
-| 3 | ep03-haccp-bofu | ❌ crédits ElevenLabs | — | — | 19/11 à faire | — |
-| 4 | ep04-caisse-tofu | ✅ | ✅ 18 s | ✅ | 20/11 · LI 2208 · TT 2209 | ✅ ép. 108 |
-| 5 | ep05-caisse-mofu | ✅ | ✅ 17 s | ✅ | 21/11 · LI 2210 · TT 2211 | ✅ ép. 109 |
-| 6–30 | voir `POSTS.md` | ❌ crédits ElevenLabs | — | — | — | — (numéros 110 à 134 réservés) |
+Les 30 épisodes sont montés, déposés dans la bibliothèque RapidoCMS, planifiés à 18 h (LinkedIn + TikTok Michael) et **publiés** dans le Journal (série « Mes projets », épisodes 105 à 134).
 
-## Bloqueurs
+| # | Date | Brouillon LI | Brouillon TT | Journal |
+|---|---|---|---|---|
+| 1 | 2026-11-17 | 2204 | 2205 | 105 · publie |
+| 2 | 2026-11-18 | 2206 | 2207 | 106 · publie |
+| 3 | 2026-11-19 | 2212 | 2213 | 107 · publie |
+| 4 | 2026-11-20 | 2208 | 2209 | 108 · publie |
+| 5 | 2026-11-21 | 2210 | 2211 | 109 · publie |
+| 6 | 2026-11-22 | 2214 | 2215 | 110 · publie |
+| 7 | 2026-11-23 | 2216 | 2217 | 111 · publie |
+| 8 | 2026-11-24 | 2218 | 2219 | 112 · publie |
+| 9 | 2026-11-25 | 2220 | 2221 | 113 · publie |
+| 10 | 2026-11-26 | 2222 | 2223 | 114 · publie |
+| 11 | 2026-11-27 | 2224 | 2225 | 115 · publie |
+| 12 | 2026-11-28 | 2226 | 2227 | 116 · publie |
+| 13 | 2026-11-29 | 2228 | 2229 | 117 · publie |
+| 14 | 2026-11-30 | 2230 | 2231 | 118 · publie |
+| 15 | 2026-12-01 | 2232 | 2233 | 119 · publie |
+| 16 | 2026-12-02 | 2234 | 2235 | 120 · publie |
+| 17 | 2026-12-03 | 2236 | 2237 | 121 · publie |
+| 18 | 2026-12-04 | 2238 | 2239 | 122 · publie |
+| 19 | 2026-12-05 | 2240 | 2241 | 123 · publie |
+| 20 | 2026-12-06 | 2242 | 2243 | 124 · publie |
+| 21 | 2026-12-07 | 2244 | 2245 | 125 · publie |
+| 22 | 2026-12-08 | 2246 | 2247 | 126 · publie |
+| 23 | 2026-12-09 | 2248 | 2249 | 127 · publie |
+| 24 | 2026-12-10 | 2250 | 2251 | 128 · publie |
+| 25 | 2026-12-11 | 2252 | 2253 | 129 · publie |
+| 26 | 2026-12-12 | 2254 | 2255 | 130 · publie |
+| 27 | 2026-12-13 | 2256 | 2257 | 131 · publie |
+| 28 | 2026-12-14 | 2258 | 2259 | 132 · publie |
+| 29 | 2026-12-15 | 2260 | 2261 | 133 · publie |
+| 30 | 2026-12-16 | 2262 | 2263 | 134 · publie |
 
-1. **ElevenLabs** : quota mensuel atteint après 4 voix (« exceeds your quota »). Recharger ou attendre la remise à zéro, puis générer les 26 voix restantes (textes = `phrases` de `episodes.json`), et relancer `construire.py` + `rendre.sh`. Le Journal ne peut pas prendre le relais tant qu'ElevenLabs n'y est pas connecté (Communauté → Connexions).
-2. **TikTok Michael** : le compte est marqué **expiré** dans RapidoCMS. Les posts TikTok sont planifiés mais ne partiront pas tant que le compte n'est pas reconnecté.
-3. **Lovable** : crédits épuisés après la création de la page ; la page est publiée, mais les retouches demanderont des crédits. Points à valider : texte de consentement du formulaire et lien des mentions légales (foodeatup.com/mentions-legales supposé).
+## Restant
+
+1. **TikTok Michael** est marqué expiré dans RapidoCMS : les posts TikTok ne partiront qu'après reconnexion.
+2. **Page Lovable** : l'ajout des 30 vidéos est refusé faute de crédits Lovable ; la demande est prête dans `LOVABLE-VIDEOS.md`.
