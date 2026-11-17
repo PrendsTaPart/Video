@@ -54,3 +54,7 @@ Les 30 épisodes sont montés, déposés dans la bibliothèque RapidoCMS, planif
 
 1. **TikTok Michael** est marqué expiré dans RapidoCMS : les posts TikTok ne partiront qu'après reconnexion.
 2. **Page Lovable** : l'ajout des 30 vidéos est refusé faute de crédits Lovable ; la demande est prête dans `LOVABLE-VIDEOS.md`.
+
+## YouTube
+
+Les 30 Shorts sont planifiés sur la chaîne FoodEatUp (`UC0Mc8pkW4t3uVjbI-ULptUA`) via Rapido YouTube, à 18 h du 17/11 au 16/12, en mode « envoi à l’heure prévue » (une vidéo par jour, dans le quota). Identifiants : `youtube-planif.json`, métadonnées : `youtube.json`.
