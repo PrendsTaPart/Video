@@ -1,0 +1,67 @@
+{
+  "voiceStartInCapture": 2.897,
+  "paragraphs": {
+    "intro": 0.04,
+    "journal": 9.44,
+    "analyser": 17.36,
+    "compterendu": 21.86,
+    "transcription": 29.44,
+    "actions": 33.76,
+    "tout": 43.16,
+    "reglages": 48.4,
+    "enregistrement": 53.24,
+    "enregistrer": 60.32,
+    "outro": 63.76,
+    "end": 68.18
+  },
+  "zones": {
+    "journal": [
+      380,
+      567,
+      1420,
+      281
+    ],
+    "compterendu": [
+      380,
+      275,
+      833,
+      217
+    ],
+    "transcription": [
+      1201,
+      449,
+      599,
+      631
+    ],
+    "actions": [
+      380,
+      106,
+      833,
+      792
+    ],
+    "tout": [
+      380,
+      215,
+      1420,
+      74
+    ],
+    "reglages": [
+      380,
+      437,
+      1420,
+      307
+    ],
+    "enregistrement": [
+      396,
+      491,
+      1388,
+      237
+    ],
+    "enregistrer": [
+      380,
+      184,
+      1420,
+      74
+    ]
+  }
+}
