@@ -23,7 +23,7 @@
     {
       "at": "ouvrir",
       "label": "Sécurité du compte",
-      "click": "a.btn-top.px-3",
+      "click": "a.btn-profil",
       "wait": 0.4
     },
     {
