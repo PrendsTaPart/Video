@@ -53,7 +53,7 @@ Les 30 épisodes sont montés, déposés dans la bibliothèque RapidoCMS, planif
 ## Restant
 
 1. **TikTok Michael** est marqué expiré dans RapidoCMS : les posts TikTok ne partiront qu'après reconnexion.
-2. **Page Lovable** : l'ajout des 30 vidéos est refusé faute de crédits Lovable ; la demande est prête dans `LOVABLE-VIDEOS.md`.
+2. **Page Lovable** : les 30 vidéos sont en ligne sur https://foodeatup-10-applications.lovable.app (section « La série », filtres par application, lecteur), republiée le 17/11 (déploiement 045e61e3-ac90-4c84-b24a-944c4e7bc4b6).
 
 ## YouTube
 
