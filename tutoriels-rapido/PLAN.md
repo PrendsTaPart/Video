@@ -176,7 +176,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM82 — Sécuriser son compte : la double authentification
 - [ ] CRM83 — La facture électronique Factur-X
 - [ ] CRM84 — Suivre les e-mails et SMS envoyés, gérer les désinscriptions
-- [!] CRM85 — Analyser une réunion : transcription, compte rendu, tâches (fonctionnalités de RapidoMeet non développées dans RapidoCRM : maquettes « Analyse visio » seulement)
+- [~] CRM85 — Transformer une réunion en actions (analyse de réunion développée le 17/11, PR #115 ; tournage en cours)
 
 ### Inventaire du 17/11 (après-midi) — fonctionnalités de RapidoCRM sans tutoriel ou avec un tutoriel périmé
 - **Développées, écran prêt, sans tutoriel** (écrans audités 1440 / 390 px : aucune erreur JS ni réseau, aucun débordement) :
@@ -192,8 +192,8 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
   Vérification du code de RapidoCRM (branche `correctifs-tutoriels` et toutes les branches distantes, dont l'ancienne `master`) :
   | RapidoMeet | Dans RapidoCRM | État |
   |---|---|---|
-  | Nouvelle réunion (envoi audio / vidéo), transcription, rapport, liste des réunions | menu « Analyse visio » : `/analyse`, `/analyse/add`, `/analyse/statiques`, `/analyse/visio` | ⛔ **maquettes seulement** : composants `resources/js/components/analyse/*.vue` sans aucun appel serveur, données écrites en dur (« Transaction.pdf », « Nom Admin du meet », menu « Action / Another action ») ; aucune table, aucun service, aucune transcription, aucune extraction |
-  | Extraction des tâches, décisions, contacts ; actions envoyées au CRM / RH / CMS avec confirmation | — | ⛔ absent (seul l'agent vocal ElevenLabs a une transcription et un résumé, pour les appels téléphoniques) |
+  | Nouvelle réunion (envoi audio / vidéo), transcription, rapport, liste des réunions | « Analyse de réunion » `/analyse` (développé le 17/11 à la demande de Michael, remplace les maquettes « Analyse visio ») | ✅ import Teams / Zoom / Meet (.vtt, .srt, .txt) ou texte collé ; audio / vidéo via ElevenLabs Scribe sur activation (`REUNIONS_TRANSCRIPTION`) ; compte rendu, PDF, statistiques — tutoriel CRM85 |
+  | Extraction des tâches, décisions, contacts ; actions envoyées au CRM / RH / CMS avec confirmation | idem | ✅ tâches (RapidoCRM ou liste RapidoRH), contacts, rendez-vous, décisions, questions, rubriques par type — toujours après confirmation humaine (RapidoCMS non relié) |
   | Transcription en direct | — | ⛔ absent |
   | Agenda, visio de rendez-vous | Agenda, visio Whereby + stratégies à l'écran | ✅ (tutoriels CRM33, CRM34) |
   | Scénarios | Workflows | ✅ (CRM23) |
@@ -203,9 +203,8 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
   | Statistiques | Tableau de bord, statistiques par module | ✅ (CRM02) |
   | Export comptable | — | ⛔ absent (seuls les exports CSV de formulaires, jeux, sondages) |
   | Affiliation | — | ⛔ absent (seulement le parrainage du programme de fidélité) |
-  → [!] **CRM85 — Analyser une réunion : transcription, compte rendu, tâches** : bloqué, la fonctionnalité n'est pas développée dans RapidoCRM (maquettes).
-  ⚠️ Le menu « Analyse visio » est visible des clients et montre des données fictives : à masquer ou à marquer « bientôt disponible » (décision de Michael).
-  Aucun tutoriel publié ne filme ces maquettes (CRM34 montre la vraie visio Whereby).
+  → Michael a choisi (17/11) de développer réellement l'analyse de réunion : livrée dans la PR brouillon #115 (commit 9d3f49d0, 16 tests, 488 tests verts
+  SQLite + MySQL 8), tutoriel **CRM85**. Reste hors périmètre : transcription en direct, export comptable, affiliation.
 
 
 ## B. RapidoCMS — un tutoriel par onglet / écran
