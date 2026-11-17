@@ -175,7 +175,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM81 — Le portail client (lien magique : devis, factures, contrats, demandes, fidélité, rendez-vous)
 - [ ] CRM82 — Sécuriser son compte : la double authentification
 - [ ] CRM83 — La facture électronique Factur-X
-- [~] CRM84 — Suivre les e-mails et SMS envoyés, gérer les désinscriptions (voix 1 158 crédits, rendu en cours le 17/11)
+- [x] CRM84 — Suivre les e-mails et SMS envoyés, gérer les désinscriptions (voix 1 158 crédits, rendu en cours le 17/11)
 - [~] CRM82 — (scénario prêt : activation, codes de secours, connexion avec code ; avant / après remettent le compte de démonstration sans 2FA)
 - [ ] CRM87 — Toute la communication d'un client (chronologie tous canaux, filtres, prochaines actions) — écran `/communication/client/{id}`
 - [ ] CRM88 — Confier un événement à l'équipe RapidoRH (devis signé, ticket urgent, appel, bloc de Marketing Map → tâches des employés IA)
