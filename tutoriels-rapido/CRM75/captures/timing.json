@@ -1,0 +1,47 @@
+{
+  "voiceStartInCapture": 3.206,
+  "paragraphs": {
+    "intro": 0.03,
+    "modeles": 9.49,
+    "creer": 18.09,
+    "carte": 23.57,
+    "relier": 35.17,
+    "ajouter": 43.67,
+    "activer": 51.59,
+    "confirmer": 58.41,
+    "outro": 64.95,
+    "end": 70.3
+  },
+  "zones": {
+    "modeles": [
+      372,
+      531,
+      1436,
+      378
+    ],
+    "carte": [
+      602,
+      256,
+      886,
+      824
+    ],
+    "relier": [
+      1483,
+      631,
+      306,
+      137
+    ],
+    "activer": [
+      666,
+      14,
+      588,
+      473
+    ],
+    "confirmer": [
+      666,
+      14,
+      588,
+      277
+    ]
+  }
+}
