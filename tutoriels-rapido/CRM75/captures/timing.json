@@ -1,5 +1,5 @@
 {
-  "voiceStartInCapture": 3.206,
+  "voiceStartInCapture": 3.111,
   "paragraphs": {
     "intro": 0.03,
     "modeles": 9.49,
@@ -30,12 +30,6 @@
       631,
       306,
       137
-    ],
-    "activer": [
-      666,
-      14,
-      588,
-      473
     ],
     "confirmer": [
       666,
