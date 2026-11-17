@@ -1,0 +1,53 @@
+{
+  "voiceStartInCapture": 3.26,
+  "paragraphs": {
+    "intro": 0.04,
+    "ouvrir": 9.34,
+    "controle": 13.42,
+    "completer": 20.54,
+    "retour": 28.2,
+    "fichier": 32.36,
+    "donnees": 41.86,
+    "limite": 49.36,
+    "outro": 54.86,
+    "end": 59.62
+  },
+  "zones": {
+    "intro": [
+      486,
+      133,
+      948,
+      947
+    ],
+    "controle": [
+      486,
+      101,
+      948,
+      157
+    ],
+    "completer": [
+      286,
+      472,
+      688,
+      130
+    ],
+    "fichier": [
+      486,
+      133,
+      948,
+      947
+    ],
+    "donnees": [
+      510,
+      437,
+      900,
+      203
+    ],
+    "limite": [
+      250,
+      0,
+      410,
+      79
+    ]
+  }
+}

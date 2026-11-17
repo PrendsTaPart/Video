@@ -1,0 +1,920 @@
+[
+  {
+    "text": "À",
+    "start": 0.04,
+    "end": 0.06,
+    "id": "w0"
+  },
+  {
+    "text": "partir",
+    "start": 0.06,
+    "end": 0.43,
+    "id": "w1"
+  },
+  {
+    "text": "de",
+    "start": 0.44,
+    "end": 0.54,
+    "id": "w2"
+  },
+  {
+    "text": "septembre",
+    "start": 0.56,
+    "end": 1.07,
+    "id": "w3"
+  },
+  {
+    "text": "2026,",
+    "start": 1.13,
+    "end": 1.92,
+    "id": "w4"
+  },
+  {
+    "text": "toutes",
+    "start": 2.12,
+    "end": 2.32,
+    "id": "w5"
+  },
+  {
+    "text": "les",
+    "start": 2.32,
+    "end": 2.46,
+    "id": "w6"
+  },
+  {
+    "text": "entreprises",
+    "start": 2.46,
+    "end": 2.97,
+    "id": "w7"
+  },
+  {
+    "text": "doivent",
+    "start": 3.02,
+    "end": 3.15,
+    "id": "w8"
+  },
+  {
+    "text": "pouvoir",
+    "start": 3.28,
+    "end": 3.63,
+    "id": "w9"
+  },
+  {
+    "text": "recevoir",
+    "start": 3.63,
+    "end": 4.1,
+    "id": "w10"
+  },
+  {
+    "text": "des",
+    "start": 4.1,
+    "end": 4.22,
+    "id": "w11"
+  },
+  {
+    "text": "factures",
+    "start": 4.22,
+    "end": 4.78,
+    "id": "w12"
+  },
+  {
+    "text": "électroniques.",
+    "start": 4.78,
+    "end": 5.74,
+    "id": "w13"
+  },
+  {
+    "text": "Rapido",
+    "start": 5.78,
+    "end": 6.22,
+    "id": "w14"
+  },
+  {
+    "text": "CRM",
+    "start": 6.22,
+    "end": 6.43,
+    "id": "w15"
+  },
+  {
+    "text": "produit",
+    "start": 6.56,
+    "end": 7.03,
+    "id": "w16"
+  },
+  {
+    "text": "vos",
+    "start": 7.03,
+    "end": 7.25,
+    "id": "w17"
+  },
+  {
+    "text": "factures",
+    "start": 7.28,
+    "end": 7.93,
+    "id": "w18"
+  },
+  {
+    "text": "au",
+    "start": 7.93,
+    "end": 8.09,
+    "id": "w19"
+  },
+  {
+    "text": "format",
+    "start": 8.09,
+    "end": 8.58,
+    "id": "w20"
+  },
+  {
+    "text": "Facturix.",
+    "start": 8.58,
+    "end": 9.3,
+    "id": "w21"
+  },
+  {
+    "text": "Ouvrez",
+    "start": 9.34,
+    "end": 9.66,
+    "id": "w22"
+  },
+  {
+    "text": "une",
+    "start": 9.66,
+    "end": 9.85,
+    "id": "w23"
+  },
+  {
+    "text": "facture,",
+    "start": 9.85,
+    "end": 10.44,
+    "id": "w24"
+  },
+  {
+    "text": "puis",
+    "start": 10.44,
+    "end": 10.71,
+    "id": "w25"
+  },
+  {
+    "text": "cliquez",
+    "start": 10.71,
+    "end": 11.17,
+    "id": "w26"
+  },
+  {
+    "text": "sur",
+    "start": 11.17,
+    "end": 11.21,
+    "id": "w27"
+  },
+  {
+    "text": "«",
+    "start": 11.42,
+    "end": 11.43,
+    "id": "w28"
+  },
+  {
+    "text": "facture",
+    "start": 11.43,
+    "end": 11.9,
+    "id": "w29"
+  },
+  {
+    "text": "électronique",
+    "start": 11.9,
+    "end": 12.69,
+    "id": "w30"
+  },
+  {
+    "text": "».",
+    "start": 12.7,
+    "end": 13.01,
+    "id": "w31"
+  },
+  {
+    "text": "Rapido",
+    "start": 13.06,
+    "end": 13.42,
+    "id": "w32"
+  },
+  {
+    "text": "CRM",
+    "start": 13.42,
+    "end": 13.61,
+    "id": "w33"
+  },
+  {
+    "text": "vérifie",
+    "start": 13.61,
+    "end": 14.07,
+    "id": "w34"
+  },
+  {
+    "text": "d'abord",
+    "start": 14.07,
+    "end": 14.52,
+    "id": "w35"
+  },
+  {
+    "text": "les",
+    "start": 14.52,
+    "end": 14.72,
+    "id": "w36"
+  },
+  {
+    "text": "mentions",
+    "start": 14.72,
+    "end": 15.22,
+    "id": "w37"
+  },
+  {
+    "text": "obligatoires.",
+    "start": 15.31,
+    "end": 16.32,
+    "id": "w38"
+  },
+  {
+    "text": "Ici,",
+    "start": 16.36,
+    "end": 16.64,
+    "id": "w39"
+  },
+  {
+    "text": "il",
+    "start": 16.64,
+    "end": 16.77,
+    "id": "w40"
+  },
+  {
+    "text": "manque",
+    "start": 16.77,
+    "end": 17.16,
+    "id": "w41"
+  },
+  {
+    "text": "le",
+    "start": 17.16,
+    "end": 17.29,
+    "id": "w42"
+  },
+  {
+    "text": "numéro",
+    "start": 17.29,
+    "end": 17.68,
+    "id": "w43"
+  },
+  {
+    "text": "de",
+    "start": 17.68,
+    "end": 17.8,
+    "id": "w44"
+  },
+  {
+    "text": "TVA",
+    "start": 17.81,
+    "end": 18,
+    "id": "w45"
+  },
+  {
+    "text": "intracommunitaire",
+    "start": 18,
+    "end": 19.06,
+    "id": "w46"
+  },
+  {
+    "text": "de",
+    "start": 19.1,
+    "end": 19.22,
+    "id": "w47"
+  },
+  {
+    "text": "votre",
+    "start": 19.22,
+    "end": 19.47,
+    "id": "w48"
+  },
+  {
+    "text": "entreprise.",
+    "start": 19.6,
+    "end": 20.5,
+    "id": "w49"
+  },
+  {
+    "text": "Cliquez",
+    "start": 20.54,
+    "end": 20.95,
+    "id": "w50"
+  },
+  {
+    "text": "sur",
+    "start": 20.95,
+    "end": 21.15,
+    "id": "w51"
+  },
+  {
+    "text": "«",
+    "start": 21.15,
+    "end": 21.19,
+    "id": "w52"
+  },
+  {
+    "text": "compléter",
+    "start": 21.32,
+    "end": 21.8,
+    "id": "w53"
+  },
+  {
+    "text": "mon",
+    "start": 21.8,
+    "end": 22,
+    "id": "w54"
+  },
+  {
+    "text": "entreprise",
+    "start": 22,
+    "end": 22.66,
+    "id": "w55"
+  },
+  {
+    "text": "».",
+    "start": 22.66,
+    "end": 23,
+    "id": "w56"
+  },
+  {
+    "text": "Le",
+    "start": 23.04,
+    "end": 23.09,
+    "id": "w57"
+  },
+  {
+    "text": "champ",
+    "start": 23.15,
+    "end": 23.46,
+    "id": "w58"
+  },
+  {
+    "text": "manquant",
+    "start": 23.46,
+    "end": 23.97,
+    "id": "w59"
+  },
+  {
+    "text": "est",
+    "start": 23.97,
+    "end": 24.16,
+    "id": "w60"
+  },
+  {
+    "text": "surliné.",
+    "start": 24.16,
+    "end": 24.86,
+    "id": "w61"
+  },
+  {
+    "text": "Saisissez",
+    "start": 24.9,
+    "end": 25.49,
+    "id": "w62"
+  },
+  {
+    "text": "votre",
+    "start": 25.49,
+    "end": 25.84,
+    "id": "w63"
+  },
+  {
+    "text": "numéro",
+    "start": 25.84,
+    "end": 26.27,
+    "id": "w64"
+  },
+  {
+    "text": "de",
+    "start": 26.27,
+    "end": 26.37,
+    "id": "w65"
+  },
+  {
+    "text": "TVA,",
+    "start": 26.41,
+    "end": 26.78,
+    "id": "w66"
+  },
+  {
+    "text": "puis",
+    "start": 26.98,
+    "end": 27.06,
+    "id": "w67"
+  },
+  {
+    "text": "enregistrez.",
+    "start": 27.15,
+    "end": 28.16,
+    "id": "w68"
+  },
+  {
+    "text": "Revenez",
+    "start": 28.2,
+    "end": 28.59,
+    "id": "w69"
+  },
+  {
+    "text": "à",
+    "start": 28.6,
+    "end": 28.66,
+    "id": "w70"
+  },
+  {
+    "text": "la",
+    "start": 28.66,
+    "end": 28.79,
+    "id": "w71"
+  },
+  {
+    "text": "facture,",
+    "start": 28.79,
+    "end": 29.36,
+    "id": "w72"
+  },
+  {
+    "text": "et",
+    "start": 29.36,
+    "end": 29.49,
+    "id": "w73"
+  },
+  {
+    "text": "cliquez",
+    "start": 29.49,
+    "end": 29.93,
+    "id": "w74"
+  },
+  {
+    "text": "de",
+    "start": 29.93,
+    "end": 30.06,
+    "id": "w75"
+  },
+  {
+    "text": "nouveau",
+    "start": 30.06,
+    "end": 30.51,
+    "id": "w76"
+  },
+  {
+    "text": "sur",
+    "start": 30.51,
+    "end": 30.66,
+    "id": "w77"
+  },
+  {
+    "text": "«",
+    "start": 30.75,
+    "end": 30.76,
+    "id": "w78"
+  },
+  {
+    "text": "facture",
+    "start": 30.76,
+    "end": 31.21,
+    "id": "w79"
+  },
+  {
+    "text": "électronique",
+    "start": 31.21,
+    "end": 31.97,
+    "id": "w80"
+  },
+  {
+    "text": "».",
+    "start": 31.97,
+    "end": 32.26,
+    "id": "w81"
+  },
+  {
+    "text": "Le",
+    "start": 32.36,
+    "end": 32.41,
+    "id": "w82"
+  },
+  {
+    "text": "fichier",
+    "start": 32.47,
+    "end": 32.91,
+    "id": "w83"
+  },
+  {
+    "text": "est",
+    "start": 32.91,
+    "end": 33.01,
+    "id": "w84"
+  },
+  {
+    "text": "prêt.",
+    "start": 33.14,
+    "end": 33.62,
+    "id": "w85"
+  },
+  {
+    "text": "C'est",
+    "start": 33.66,
+    "end": 33.84,
+    "id": "w86"
+  },
+  {
+    "text": "un",
+    "start": 33.93,
+    "end": 34.05,
+    "id": "w87"
+  },
+  {
+    "text": "PDF",
+    "start": 34.06,
+    "end": 34.25,
+    "id": "w88"
+  },
+  {
+    "text": "que",
+    "start": 34.25,
+    "end": 34.31,
+    "id": "w89"
+  },
+  {
+    "text": "votre",
+    "start": 34.44,
+    "end": 34.76,
+    "id": "w90"
+  },
+  {
+    "text": "client",
+    "start": 34.76,
+    "end": 35.13,
+    "id": "w91"
+  },
+  {
+    "text": "lit",
+    "start": 35.17,
+    "end": 35.34,
+    "id": "w92"
+  },
+  {
+    "text": "comme",
+    "start": 35.34,
+    "end": 35.54,
+    "id": "w93"
+  },
+  {
+    "text": "d'habitude,",
+    "start": 35.72,
+    "end": 36.36,
+    "id": "w94"
+  },
+  {
+    "text": "avec",
+    "start": 36.4,
+    "end": 36.58,
+    "id": "w95"
+  },
+  {
+    "text": "à",
+    "start": 36.58,
+    "end": 36.67,
+    "id": "w96"
+  },
+  {
+    "text": "l'intérieur",
+    "start": 36.67,
+    "end": 37.27,
+    "id": "w97"
+  },
+  {
+    "text": "les",
+    "start": 37.27,
+    "end": 37.43,
+    "id": "w98"
+  },
+  {
+    "text": "données",
+    "start": 37.43,
+    "end": 37.84,
+    "id": "w99"
+  },
+  {
+    "text": "de",
+    "start": 37.85,
+    "end": 37.96,
+    "id": "w100"
+  },
+  {
+    "text": "la",
+    "start": 37.96,
+    "end": 38.07,
+    "id": "w101"
+  },
+  {
+    "text": "facture",
+    "start": 38.07,
+    "end": 38.56,
+    "id": "w102"
+  },
+  {
+    "text": "au",
+    "start": 38.56,
+    "end": 38.75,
+    "id": "w103"
+  },
+  {
+    "text": "format",
+    "start": 38.75,
+    "end": 39.33,
+    "id": "w104"
+  },
+  {
+    "text": "européen",
+    "start": 39.39,
+    "end": 40.07,
+    "id": "w105"
+  },
+  {
+    "text": "EN",
+    "start": 40.14,
+    "end": 40.31,
+    "id": "w106"
+  },
+  {
+    "text": "6931.",
+    "start": 40.31,
+    "end": 41.79,
+    "id": "w107"
+  },
+  {
+    "text": "L'ing,",
+    "start": 41.86,
+    "end": 42.51,
+    "id": "w108"
+  },
+  {
+    "text": "taux",
+    "start": 42.62,
+    "end": 42.91,
+    "id": "w109"
+  },
+  {
+    "text": "de",
+    "start": 42.95,
+    "end": 43.12,
+    "id": "w110"
+  },
+  {
+    "text": "TVA,",
+    "start": 43.12,
+    "end": 43.62,
+    "id": "w111"
+  },
+  {
+    "text": "remise,",
+    "start": 43.62,
+    "end": 44.42,
+    "id": "w112"
+  },
+  {
+    "text": "échéance,",
+    "start": 44.42,
+    "end": 45.43,
+    "id": "w113"
+  },
+  {
+    "text": "e-ban,",
+    "start": 45.43,
+    "end": 46.04,
+    "id": "w114"
+  },
+  {
+    "text": "son",
+    "start": 46.12,
+    "end": 46.27,
+    "id": "w115"
+  },
+  {
+    "text": "logiciel",
+    "start": 46.27,
+    "end": 46.77,
+    "id": "w116"
+  },
+  {
+    "text": "comptable",
+    "start": 46.9,
+    "end": 47.35,
+    "id": "w117"
+  },
+  {
+    "text": "les",
+    "start": 47.35,
+    "end": 47.53,
+    "id": "w118"
+  },
+  {
+    "text": "importe",
+    "start": 47.53,
+    "end": 47.98,
+    "id": "w119"
+  },
+  {
+    "text": "sans",
+    "start": 47.98,
+    "end": 48.23,
+    "id": "w120"
+  },
+  {
+    "text": "rien",
+    "start": 48.23,
+    "end": 48.48,
+    "id": "w121"
+  },
+  {
+    "text": "ressaisir.",
+    "start": 48.48,
+    "end": 49.23,
+    "id": "w122"
+  },
+  {
+    "text": "À",
+    "start": 49.36,
+    "end": 49.41,
+    "id": "w123"
+  },
+  {
+    "text": "savoir,",
+    "start": 49.41,
+    "end": 50.2,
+    "id": "w124"
+  },
+  {
+    "text": "la",
+    "start": 50.2,
+    "end": 50.31,
+    "id": "w125"
+  },
+  {
+    "text": "transmission",
+    "start": 50.31,
+    "end": 50.96,
+    "id": "w126"
+  },
+  {
+    "text": "par",
+    "start": 50.97,
+    "end": 51.14,
+    "id": "w127"
+  },
+  {
+    "text": "une",
+    "start": 51.14,
+    "end": 51.24,
+    "id": "w128"
+  },
+  {
+    "text": "plateforme",
+    "start": 51.44,
+    "end": 51.82,
+    "id": "w129"
+  },
+  {
+    "text": "agrée",
+    "start": 51.91,
+    "end": 52.16,
+    "id": "w130"
+  },
+  {
+    "text": "se",
+    "start": 52.16,
+    "end": 52.29,
+    "id": "w131"
+  },
+  {
+    "text": "fait",
+    "start": 52.34,
+    "end": 52.62,
+    "id": "w132"
+  },
+  {
+    "text": "encore",
+    "start": 52.62,
+    "end": 53.04,
+    "id": "w133"
+  },
+  {
+    "text": "en",
+    "start": 53.1,
+    "end": 53.17,
+    "id": "w134"
+  },
+  {
+    "text": "dehors",
+    "start": 53.23,
+    "end": 53.69,
+    "id": "w135"
+  },
+  {
+    "text": "de",
+    "start": 53.69,
+    "end": 53.83,
+    "id": "w136"
+  },
+  {
+    "text": "Rapido",
+    "start": 53.86,
+    "end": 54.23,
+    "id": "w137"
+  },
+  {
+    "text": "CRM.",
+    "start": 54.32,
+    "end": 54.75,
+    "id": "w138"
+  },
+  {
+    "text": "Vos",
+    "start": 54.86,
+    "end": 54.91,
+    "id": "w139"
+  },
+  {
+    "text": "factures",
+    "start": 54.97,
+    "end": 55.39,
+    "id": "w140"
+  },
+  {
+    "text": "sont",
+    "start": 55.39,
+    "end": 55.51,
+    "id": "w141"
+  },
+  {
+    "text": "prêtes",
+    "start": 55.64,
+    "end": 55.9,
+    "id": "w142"
+  },
+  {
+    "text": "pour",
+    "start": 55.95,
+    "end": 56.12,
+    "id": "w143"
+  },
+  {
+    "text": "la",
+    "start": 56.12,
+    "end": 56.22,
+    "id": "w144"
+  },
+  {
+    "text": "facture",
+    "start": 56.22,
+    "end": 56.58,
+    "id": "w145"
+  },
+  {
+    "text": "électronique.",
+    "start": 56.58,
+    "end": 57.42,
+    "id": "w146"
+  },
+  {
+    "text": "Retrouvez",
+    "start": 57.46,
+    "end": 57.87,
+    "id": "w147"
+  },
+  {
+    "text": "tous",
+    "start": 57.87,
+    "end": 58.07,
+    "id": "w148"
+  },
+  {
+    "text": "nos",
+    "start": 58.07,
+    "end": 58.11,
+    "id": "w149"
+  },
+  {
+    "text": "tutoriels",
+    "start": 58.24,
+    "end": 58.68,
+    "id": "w150"
+  },
+  {
+    "text": "dans",
+    "start": 58.68,
+    "end": 58.87,
+    "id": "w151"
+  },
+  {
+    "text": "l'académie.",
+    "start": 58.87,
+    "end": 59.62,
+    "id": "w152"
+  }
+]
