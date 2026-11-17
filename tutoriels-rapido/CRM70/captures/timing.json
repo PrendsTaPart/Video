@@ -1,0 +1,52 @@
+{
+  "voiceStartInCapture": 3.174,
+  "paragraphs": {
+    "intro": 0.04,
+    "principe": 7.8,
+    "appeler": 18.16,
+    "fiche": 24.92,
+    "journal": 29.46,
+    "noter": 35.6,
+    "quiappelle": 43.26,
+    "outro": 53.28,
+    "end": 58.72
+  },
+  "zones": {
+    "principe": [
+      372,
+      168,
+      1436,
+      142
+    ],
+    "appeler": [
+      380,
+      184,
+      1420,
+      74
+    ],
+    "fiche": [
+      404,
+      446,
+      280,
+      114
+    ],
+    "journal": [
+      380,
+      154,
+      1420,
+      177
+    ],
+    "noter": [
+      1316,
+      312,
+      464,
+      158
+    ],
+    "quiappelle": [
+      1084,
+      361,
+      716,
+      235
+    ]
+  }
+}
