@@ -1,0 +1,197 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 40,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM85",
+  "title": "Transformer une réunion en actions",
+  "em": "en actions",
+  "tag": "3 min · Débutant",
+  "start_path": "/analyse",
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "principe",
+      "label": "Déposer, relire, confirmer",
+      "zone": ".etapes-vides"
+    },
+    {
+      "at": "deposer",
+      "label": "Déposer la réunion",
+      "click": ".entete-actions a"
+    },
+    {
+      "at": "deposer",
+      "fill": [
+        [
+          "#titre",
+          "Réservations en ligne — Hôtel des Quais"
+        ]
+      ]
+    },
+    {
+      "at": "deposer",
+      "select": [
+        [
+          "#entreprise_id",
+          "Hôtel des Quais"
+        ]
+      ]
+    },
+    {
+      "at": "deposer",
+      "upload": [
+        [
+          "#fichier",
+          "assets/reunion-hotel-des-quais.vtt"
+        ]
+      ],
+      "zone": "#zone-depot"
+    },
+    {
+      "at": "aide",
+      "zone": ".col-lg-5 .card >> nth=0",
+      "hover": "details >> nth=0"
+    },
+    {
+      "at": "analyser",
+      "click": "#btn-analyser",
+      "wait": 3.5
+    },
+    {
+      "at": "compterendu",
+      "label": "Le compte rendu",
+      "top": true,
+      "zone": "section[aria-labelledby=t-resume]"
+    },
+    {
+      "at": "transcription",
+      "click": "section[aria-labelledby=t-resume] .horodatage >> nth=1",
+      "zone": "section[aria-labelledby=t-transcription]"
+    },
+    {
+      "at": "actions",
+      "label": "Les actions proposées",
+      "scroll": "#actions",
+      "zone": "#actions .action >> nth=0"
+    },
+    {
+      "at": "modifier",
+      "click": "#actions .action >> nth=1 >> summary",
+      "zone": "#actions .action >> nth=1"
+    },
+    {
+      "at": "confirmer",
+      "click": "#actions .action >> nth=0 >> button.btn-success",
+      "wait": 0.6
+    },
+    {
+      "at": "confirmer",
+      "zone": "#actions .action.executee"
+    },
+    {
+      "at": "contact",
+      "scroll": "#actions .action:has(.ti-user-plus)",
+      "zone": "#actions .action:has(.ti-user-plus)"
+    },
+    {
+      "at": "tout",
+      "click": "#btn-tout",
+      "wait": 0.8
+    },
+    {
+      "at": "tout",
+      "top": true,
+      "zone": ".encadre >> nth=0"
+    },
+    {
+      "at": "decisions",
+      "label": "Décisions et besoins",
+      "scroll": "section[aria-labelledby=t-decisions]",
+      "zone": "section[aria-labelledby=t-decisions]"
+    },
+    {
+      "at": "partager",
+      "label": "Partager le compte rendu",
+      "top": true,
+      "hover": "#btn-copier",
+      "zone": ".entete-actions"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Une réunion se termine, et il reste à écrire le compte rendu, créer les tâches et noter les contacts. RapidoCRM le fait pour vous : voici l'analyse de réunion."
+    },
+    {
+      "key": "principe",
+      "text": "Trois étapes : vous déposez la réunion, vous relisez le compte rendu, puis vous confirmez ce qui doit être créé. Rien n'est créé sans votre accord."
+    },
+    {
+      "key": "deposer",
+      "text": "Cliquez sur Analyser une réunion. Donnez-lui un titre, gardez le type rendez-vous commercial, choisissez le client, puis déposez la transcription exportée de Teams, Zoom ou Google Meet."
+    },
+    {
+      "key": "aide",
+      "text": "Vous ne savez pas où la trouver ? Le chemin est expliqué pour chaque outil. Vous pouvez aussi coller vos notes."
+    },
+    {
+      "key": "analyser",
+      "text": "Cliquez sur Analyser la réunion. Quelques secondes plus tard, tout est prêt."
+    },
+    {
+      "key": "compterendu",
+      "text": "En haut, le compte rendu : qui était là, combien de décisions, de tâches et de contacts ont été relevés, et les points clés de l'échange."
+    },
+    {
+      "key": "transcription",
+      "text": "Chaque point renvoie au moment exact de la conversation. À droite, le temps de parole de chacun et toute la transcription, avec une recherche."
+    },
+    {
+      "key": "actions",
+      "text": "Voici les actions proposées, avec la phrase d'où elles viennent. Léa a dit : je vais envoyer la proposition d'ici vendredi. La tâche est donc pour Léa, à faire pour vendredi."
+    },
+    {
+      "key": "modifier",
+      "text": "Karim doit préparer la maquette avant mercredi : la tâche lui est confiée. Vous pouvez tout modifier avant de confirmer, ou l'envoyer dans une liste de tâches RapidoRH."
+    },
+    {
+      "key": "confirmer",
+      "text": "Cliquez sur Confirmer : la tâche est créée dans RapidoCRM."
+    },
+    {
+      "key": "contact",
+      "text": "Le contact cité pendant la réunion est prêt, avec son e-mail, son téléphone et son poste. Il sera rattaché au client."
+    },
+    {
+      "key": "tout",
+      "text": "Pour le reste, laissez cochées les propositions qui vous conviennent et confirmez la sélection : les tâches et le contact sont créés, et le rendez-vous de suivi entre dans votre agenda."
+    },
+    {
+      "key": "decisions",
+      "text": "Plus bas, retrouvez les décisions prises, les questions posées, et pour un rendez-vous commercial, les besoins, les freins et le budget évoqués."
+    },
+    {
+      "key": "partager",
+      "text": "Enfin, copiez le compte rendu pour l'envoyer, ou téléchargez-le en PDF."
+    },
+    {
+      "key": "outro",
+      "text": "Vos réunions se transforment en actions. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ]
+}

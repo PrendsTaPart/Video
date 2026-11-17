@@ -53,6 +53,7 @@ const cfg = JSON.parse(fs.readFileSync(path.join(EP, 'tuto.json'), 'utf8'));
         // Saisies : faites d'un coup (pas de frappe animée) pour que la suite du scénario soit dans le bon état.
         for (const [sel, txt] of [...(sc.fill || []), ...(sc.fill_now || [])]) { const el = await resolve(sel); if (el && el !== true) await el.fill(txt).catch(() => {}); }
         for (const [sel, label] of sc.select || []) { const el = await resolve(sel); if (el && el !== true) await el.selectOption(typeof label === 'object' ? label : { label }).catch(() => {}); }
+        for (const [sel, fichier] of sc.upload || []) { const el = await resolve(sel); if (el && el !== true) await el.setInputFiles(path.isAbsolute(fichier) ? fichier : path.join(EP, fichier)).catch((e) => console.warn('upload', e.message)); }
         if (sc.click) { const el = await resolve(sc.click); if (el && el !== true) { await el.click({ timeout: 5000 }).catch((e) => console.log(`  ✗ scène ${i} clic impossible : ${e.message.split('\n')[0]}`)); await page.waitForLoadState('networkidle', { timeout: 3000 }).catch(() => {}); await page.waitForTimeout(500); } }
         if (sc.scroll) { const el = await resolve(sc.scroll); if (el && el !== true) await el.scrollIntoViewIfNeeded().catch(() => {}); }
     }
