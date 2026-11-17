@@ -176,6 +176,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM82 — Sécuriser son compte : la double authentification
 - [ ] CRM83 — La facture électronique Factur-X
 - [ ] CRM84 — Suivre les e-mails et SMS envoyés, gérer les désinscriptions
+- [!] CRM85 — Analyser une réunion : transcription, compte rendu, tâches (fonctionnalités de RapidoMeet non développées dans RapidoCRM : maquettes « Analyse visio » seulement)
 
 ### Inventaire du 17/11 (après-midi) — fonctionnalités de RapidoCRM sans tutoriel ou avec un tutoriel périmé
 - **Développées, écran prêt, sans tutoriel** (écrans audités 1440 / 390 px : aucune erreur JS ni réseau, aucun débordement) :
@@ -187,8 +188,24 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
   ET / OU), CRM27 jeux concours v2 (4 mécaniques), CRM28 sondages v2 (logique conditionnelle).
 - **Prévus au plan mais absents du code** (pas de tutoriel possible) : CRM71 prompteur temps réel, CRM72 enregistrement et analyse des appels,
   CRM78 mots-clés et calendrier de publication, CRM79 publicités Google / Meta, CRM80 communication par entreprise et KPI, CRM31 écran Salons.
-- **RapidoMeet** : application séparée (React + Supabase, serveur Express `openclaw-server` hors de ce dépôt) ; aucune intégration dans RapidoCRM
-  (la visio du CRM passe par Whereby). Tutoriels RapidoMeet impossibles ici sans le serveur et un projet Supabase de démonstration.
+- **RapidoMeet → RapidoCRM** (précision de Michael, 17/11 : le dépôt RapidoMeet n'est pas à utiliser ; ses fonctionnalités ont été reprises dans RapidoCRM).
+  Vérification du code de RapidoCRM (branche `correctifs-tutoriels` et toutes les branches distantes, dont l'ancienne `master`) :
+  | RapidoMeet | Dans RapidoCRM | État |
+  |---|---|---|
+  | Nouvelle réunion (envoi audio / vidéo), transcription, rapport, liste des réunions | menu « Analyse visio » : `/analyse`, `/analyse/add`, `/analyse/statiques`, `/analyse/visio` | ⛔ **maquettes seulement** : composants `resources/js/components/analyse/*.vue` sans aucun appel serveur, données écrites en dur (« Transaction.pdf », « Nom Admin du meet », menu « Action / Another action ») ; aucune table, aucun service, aucune transcription, aucune extraction |
+  | Extraction des tâches, décisions, contacts ; actions envoyées au CRM / RH / CMS avec confirmation | — | ⛔ absent (seul l'agent vocal ElevenLabs a une transcription et un résumé, pour les appels téléphoniques) |
+  | Transcription en direct | — | ⛔ absent |
+  | Agenda, visio de rendez-vous | Agenda, visio Whereby + stratégies à l'écran | ✅ (tutoriels CRM33, CRM34) |
+  | Scénarios | Workflows | ✅ (CRM23) |
+  | Skills marketplace | 100 agents IA, un prompt par outil | ✅ (CRM60, CRM61) |
+  | Éditeur d'e-mails, éditeur PDF, pages de destination | Modèles e-mail / SMS, éditeur (brochures A4), Sites v2 | ✅ (CRM22, CRM50) — éditeur à filmer (CRM53 / 54) |
+  | Intégrations, clés d'API, abonnement, espace d'équipe, notifications | Connexions MCP, jetons d'API, abonnement et packs, utilisateurs, notifications | ✅ (CRM42, CRM59, CRM69, CRM41, CRM36) |
+  | Statistiques | Tableau de bord, statistiques par module | ✅ (CRM02) |
+  | Export comptable | — | ⛔ absent (seuls les exports CSV de formulaires, jeux, sondages) |
+  | Affiliation | — | ⛔ absent (seulement le parrainage du programme de fidélité) |
+  → [!] **CRM85 — Analyser une réunion : transcription, compte rendu, tâches** : bloqué, la fonctionnalité n'est pas développée dans RapidoCRM (maquettes).
+  ⚠️ Le menu « Analyse visio » est visible des clients et montre des données fictives : à masquer ou à marquer « bientôt disponible » (décision de Michael).
+  Aucun tutoriel publié ne filme ces maquettes (CRM34 montre la vraie visio Whereby).
 
 
 ## B. RapidoCMS — un tutoriel par onglet / écran
