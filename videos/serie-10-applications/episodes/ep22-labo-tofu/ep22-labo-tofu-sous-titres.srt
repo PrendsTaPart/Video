@@ -1,0 +1,55 @@
+1
+00:00:00,300 --> 00:00:01,420
+Quatre heures du matin.
+
+2
+00:00:01,420 --> 00:00:02,500
+Ton labo démarre.
+
+3
+00:00:02,500 --> 00:00:03,940
+Les commandes des boutiques sont arrivées par
+
+4
+00:00:03,940 --> 00:00:04,560
+message.
+
+5
+00:00:04,560 --> 00:00:05,520
+Il faut produire,
+
+6
+00:00:05,520 --> 00:00:06,140
+étiqueter,
+
+7
+00:00:06,140 --> 00:00:07,040
+charger le camion.
+
+8
+00:00:07,040 --> 00:00:08,580
+Et le siège veut ses chiffres.
+
+9
+00:00:08,580 --> 00:00:10,060
+Et si tout ton labo tenait sur
+
+10
+00:00:10,060 --> 00:00:11,020
+un seul écran ?
+
+11
+00:00:11,020 --> 00:00:11,520
+Demain,
+
+12
+00:00:11,520 --> 00:00:12,370
+je te montre comment.
+
+13
+00:00:12,370 --> 00:00:13,340
+Commente LABO,
+
+14
+00:00:13,340 --> 00:00:14,620
+je t'envoie le lien.

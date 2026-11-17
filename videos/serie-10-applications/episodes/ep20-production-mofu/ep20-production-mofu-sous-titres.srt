@@ -1,0 +1,67 @@
+1
+00:00:00,300 --> 00:00:00,760
+Hier,
+
+2
+00:00:00,760 --> 00:00:02,260
+je te parlais de la rupture découverte
+
+3
+00:00:02,260 --> 00:00:02,840
+à neuf heures.
+
+4
+00:00:02,840 --> 00:00:04,620
+On prépare FoodEatUp Production.
+
+5
+00:00:04,620 --> 00:00:05,760
+Voici un aperçu.
+
+6
+00:00:05,760 --> 00:00:06,340
+Le matin,
+
+7
+00:00:06,340 --> 00:00:07,740
+tu vois tes productions du jour et
+
+8
+00:00:07,740 --> 00:00:08,480
+ce qui est prêt.
+
+9
+00:00:08,480 --> 00:00:09,460
+Il manque un ingrédient ?
+
+10
+00:00:09,460 --> 00:00:10,960
+Tu le vois avant de commencer.
+
+11
+00:00:10,960 --> 00:00:12,040
+La recette se met à la bonne
+
+12
+00:00:12,040 --> 00:00:12,740
+quantité,
+
+13
+00:00:12,740 --> 00:00:13,740
+étape par étape.
+
+14
+00:00:13,740 --> 00:00:14,240
+Tu valides,
+
+15
+00:00:14,240 --> 00:00:15,310
+et l'étiquette sort.
+
+16
+00:00:15,310 --> 00:00:16,160
+Commente PROD,
+
+17
+00:00:16,160 --> 00:00:17,580
+je te préviens à la sortie.

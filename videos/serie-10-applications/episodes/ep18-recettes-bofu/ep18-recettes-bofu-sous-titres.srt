@@ -1,0 +1,39 @@
+1
+00:00:00,300 --> 00:00:01,420
+Chaque recette réussie,
+
+2
+00:00:01,420 --> 00:00:02,720
+dès le premier jour.
+
+3
+00:00:02,720 --> 00:00:04,420
+Tu relies la tablette à FoodEatUp :
+
+4
+00:00:04,420 --> 00:00:06,040
+tes recettes arrivent toutes seules.
+
+5
+00:00:06,040 --> 00:00:07,640
+Tu publies des missions de formation.
+
+6
+00:00:07,640 --> 00:00:09,760
+Chaque employé s'entraîne sur son téléphone.
+
+7
+00:00:09,760 --> 00:00:10,760
+Et la recette est finie,
+
+8
+00:00:10,760 --> 00:00:11,620
+sans se tromper.
+
+9
+00:00:11,620 --> 00:00:12,540
+Commente RECETTE,
+
+10
+00:00:12,540 --> 00:00:13,820
+je t'envoie le lien.

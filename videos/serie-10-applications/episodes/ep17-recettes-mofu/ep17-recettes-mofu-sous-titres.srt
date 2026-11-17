@@ -1,0 +1,55 @@
+1
+00:00:00,300 --> 00:00:00,780
+Hier,
+
+2
+00:00:00,780 --> 00:00:02,430
+je te parlais du classeur que personne
+
+3
+00:00:02,430 --> 00:00:02,940
+n'ouvre.
+
+4
+00:00:02,940 --> 00:00:04,220
+Avec FoodEatUp Recettes,
+
+5
+00:00:04,220 --> 00:00:05,780
+ton équipe choisit la recette.
+
+6
+00:00:05,780 --> 00:00:06,700
+Une étape par écran,
+
+7
+00:00:06,700 --> 00:00:08,160
+avec la photo du geste.
+
+8
+00:00:08,160 --> 00:00:09,080
+La voix lit l'étape,
+
+9
+00:00:09,080 --> 00:00:10,340
+et le minuteur tourne.
+
+10
+00:00:10,340 --> 00:00:12,080
+Les allergènes sont en un coup d'œil.
+
+11
+00:00:12,080 --> 00:00:12,580
+Et toi,
+
+12
+00:00:12,580 --> 00:00:14,120
+tu vois ce que coûte chaque recette.
+
+13
+00:00:14,120 --> 00:00:15,000
+Commente RECETTE,
+
+14
+00:00:15,000 --> 00:00:16,200
+je t'envoie le lien.

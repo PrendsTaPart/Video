@@ -1,0 +1,51 @@
+1
+00:00:00,300 --> 00:00:01,480
+Ton client s'assoit.
+
+2
+00:00:01,480 --> 00:00:02,480
+Il attend la carte.
+
+3
+00:00:02,480 --> 00:00:04,560
+Puis il attend qu'on prenne sa commande.
+
+4
+00:00:04,560 --> 00:00:05,840
+Puis il attend l'addition.
+
+5
+00:00:05,840 --> 00:00:06,640
+Pendant ce temps,
+
+6
+00:00:06,640 --> 00:00:07,700
+ton équipe court partout.
+
+7
+00:00:07,700 --> 00:00:09,220
+Et si ta carte vendait à ta
+
+8
+00:00:09,220 --> 00:00:09,540
+place,
+
+9
+00:00:09,540 --> 00:00:11,140
+directement sur la table ?
+
+10
+00:00:11,140 --> 00:00:11,360
+Demain,
+
+11
+00:00:11,360 --> 00:00:12,500
+je te montre comment.
+
+12
+00:00:12,500 --> 00:00:13,280
+Commente MENU,
+
+13
+00:00:13,280 --> 00:00:14,460
+je t'envoie le lien.

@@ -1,0 +1,31 @@
+1
+00:00:00,300 --> 00:00:01,860
+Ton labo sur un seul écran,
+
+2
+00:00:01,860 --> 00:00:02,800
+tu peux l'essayer.
+
+3
+00:00:02,800 --> 00:00:04,420
+Sur ordinateur dans le labo.
+
+4
+00:00:04,420 --> 00:00:05,100
+Et sur téléphone,
+
+5
+00:00:05,100 --> 00:00:05,930
+au poste.
+
+6
+00:00:05,930 --> 00:00:07,780
+L'essai est gratuit pendant sept jours.
+
+7
+00:00:07,780 --> 00:00:08,800
+Commente LABO,
+
+8
+00:00:08,800 --> 00:00:10,080
+je t'envoie le lien.

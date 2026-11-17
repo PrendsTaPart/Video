@@ -1,0 +1,43 @@
+1
+00:00:00,300 --> 00:00:01,780
+Ta borne de fidélité peut être sur
+
+2
+00:00:01,780 --> 00:00:03,180
+ton comptoir cette semaine.
+
+3
+00:00:03,180 --> 00:00:05,060
+Elle prend les couleurs de ton restaurant.
+
+4
+00:00:05,060 --> 00:00:05,640
+Boulangerie,
+
+5
+00:00:05,640 --> 00:00:06,260
+burger,
+
+6
+00:00:06,260 --> 00:00:07,560
+sushi ou trattoria.
+
+7
+00:00:07,560 --> 00:00:09,120
+Tu la relies à FoodEatUp avec un
+
+8
+00:00:09,120 --> 00:00:09,640
+code.
+
+9
+00:00:09,640 --> 00:00:10,690
+Et tes clients reviennent.
+
+10
+00:00:10,690 --> 00:00:11,760
+Commente FIDÈLE,
+
+11
+00:00:11,760 --> 00:00:13,020
+je t'envoie le lien.
