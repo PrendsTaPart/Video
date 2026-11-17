@@ -172,11 +172,10 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM78 — Mots-clés, scores et tendances : le calendrier de publication
 - [ ] CRM79 — Publicités Google Ads et Meta Ads pilotées par les agents IA
 - [ ] CRM80 — La communication par entreprise et le tableau de bord KPI
-- [ ] CRM81 — Le portail client (lien magique : devis, factures, contrats, demandes, fidélité, rendez-vous)
-- [ ] CRM82 — Sécuriser son compte : la double authentification
-- [ ] CRM83 — La facture électronique Factur-X
-- [x] CRM84 — Suivre les e-mails et SMS envoyés, gérer les désinscriptions (voix 1 158 crédits, rendu en cours le 17/11)
-- [~] CRM82 — (scénario prêt : activation, codes de secours, connexion avec code ; avant / après remettent le compte de démonstration sans 2FA)
+- [ ] CRM81 — Le portail client (lien magique : devis, factures, contrats, demandes, fidélité, rendez-vous) (17/11 : voix 938 crédits ; bugs corrigés : facture payée « À régler », aucune confirmation dans la boîte de réception)
+- [x] CRM82 — Sécuriser son compte : la double authentification (17/11 : voix 1 090 crédits, 2e prise après répartition des actions, publié RapidoCMS + Académie)
+- [ ] CRM83 — La facture électronique Factur-X (17/11 : voix 978 crédits, tournage en cours ; bouton « Compléter mon entreprise » ajouté au CRM)
+- [x] CRM84 — Suivre les e-mails et SMS envoyés, gérer les désinscriptions (voix 1 158 crédits, publié le 17/11)
 - [ ] CRM87 — Toute la communication d'un client (chronologie tous canaux, filtres, prochaines actions) — écran `/communication/client/{id}`
 - [ ] CRM88 — Confier un événement à l'équipe RapidoRH (devis signé, ticket urgent, appel, bloc de Marketing Map → tâches des employés IA)
 - [ ] CRM89 — Marketing Map : audience des pages et statistiques des posts RapidoCMS reliés aux blocs

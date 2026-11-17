@@ -17,3 +17,4 @@ videos/**/work/
 
 # Le journal des appels MCP est une trace d'exécution, pas du code.
 .claude/journal-mcp.jsonl
+tutoriels-rapido/*/lien-portail.txt

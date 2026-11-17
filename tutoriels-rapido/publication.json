@@ -680,6 +680,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM76.png"
   },
   {
+    "id": "CRM82",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Protéger votre compte avec la double authentification",
+    "tag": "2 min · Débutant",
+    "duree_s": 68,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM82.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM82.png"
+  },
+  {
     "id": "CRM84",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",
