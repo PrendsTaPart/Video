@@ -1,0 +1,76 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Speaker MMA · habillage</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:transparent}
+#st{position:absolute;inset:0;overflow:hidden}
+.bar{position:absolute;left:0;right:0;height:0;background:#000}
+#bt{top:0}#bb{bottom:0}
+#flash{position:absolute;inset:0;background:#fff;opacity:0}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 45%,rgba(160,0,0,.55) 100%);opacity:0}
+#dark{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.7) 100%)}
+.t{position:absolute;left:50px;right:50px;text-align:center;font-family:Anton,sans-serif;color:#fff;text-transform:uppercase;line-height:.95;text-shadow:0 6px 30px rgba(0,0,0,.8);opacity:0}
+.t em{font-style:normal;color:#ff2a1f}
+.tag{position:absolute;left:0;right:0;text-align:center;opacity:0}
+.tag span{display:inline-block;background:#ff2a1f;color:#fff;font-family:Inter;font-weight:800;font-size:34px;letter-spacing:4px;padding:10px 26px;border-radius:6px}
+#live{position:absolute;top:120px;left:60px;font-family:Inter;font-weight:800;font-size:32px;color:#fff;letter-spacing:3px;opacity:0}
+#live i{display:inline-block;width:22px;height:22px;border-radius:50%;background:#ff2a1f;margin-right:12px;vertical-align:middle}
+#sub{position:absolute;left:60px;right:60px;top:1500px;text-align:center;font-family:Inter;font-weight:800;font-size:58px;color:#fff;line-height:1.2;text-shadow:0 4px 0 #000,0 0 20px #000}
+#sub b{color:#ffd23f}
+#chap{position:absolute;top:80px;left:0;right:0;text-align:center;font-family:Inter;font-weight:800;font-size:30px;letter-spacing:10px;color:rgba(255,255,255,.85);opacity:0}
+</style></head><body><div id="st">
+<div id="dark"></div><div id="vig"></div><div id="bt" class="bar"></div><div id="bb" class="bar"></div>
+<div id="chap"></div><div id="live"><i></i>LA VRAIE VOIX · EN DIRECT</div>
+<div id="txt"></div><div id="sub"></div><div id="flash"></div></div>
+<script>
+const DUR=58.5;
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), eo=x=>1-Math.pow(1-cl(x),3);
+const ebk=x=>{x=cl(x);const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+// [début, fin, html, taille, y, style]  style : slam | rise | type
+const T=[
+ [0.30,3.40,'Avant le combat,',110,760,'rise'],[1.74,3.40,'il y a <em>une voix.</em>',110,900,'slam'],
+ [3.60,6.80,'Tidiane',230,700,'slam'],
+ [7.00,10.20,'Dernier<br><em>regard.</em>',150,1260,'rise'],
+ [10.40,13.70,'La salle est vide.',96,300,'rise'],[12.03,13.70,'<em>Il répète.</em>',120,430,'slam'],
+ [13.85,17.10,'Chaque seconde<br><em>compte.</em>',120,1300,'rise'],
+ [17.25,20.55,'La pression<br><em>monte.</em>',140,1250,'slam'],
+ [21.94,22.78,'3',420,700,'slam'],[22.80,23.62,'2',420,700,'slam'],[23.64,24.05,'1',420,700,'slam'],
+ [24.06,25.70,'C\'est<br><em>l\'heure.</em>',190,640,'slam'],
+ [25.75,26.58,'La foule',150,1300,'slam'],[26.61,28.30,'La <em>cage</em>',150,300,'slam'],
+ [28.33,29.16,'Le show',150,1360,'slam'],[29.19,30.88,'Les <em>coups</em>',150,320,'slam'],
+ [30.91,31.73,'L\'énergie',150,1350,'slam'],[31.76,33.43,'La <em>tension</em>',150,300,'slam'],
+ [33.46,35.15,'Les vainqueurs',130,1400,'slam'],[35.18,36.87,'La <em>lumière</em>',150,300,'slam'],
+ [36.90,38.58,'Les fighters',140,1420,'slam'],[38.61,40.30,'Le dernier<br><em>combat…</em>',150,300,'slam'],
+ [49.60,50.60,'La voix',190,700,'slam'],[50.62,51.46,'du',220,700,'slam'],[51.48,53.18,'<em>combat.</em>',200,700,'slam'],
+ [53.40,58.50,'Tidiane',230,470,'slam'],[54.20,58.50,'<em>Speaker</em> MMA',110,790,'rise'],
+];
+const TAGS=[[3.90,6.80,'SPEAKER · ACCRÉDITÉ',990],[54.8,58.5,'AVANT · PENDANT · APRÈS',980]];
+const CHAP=[[0.2,24.0,'AVANT'],[24.06,49.6,'PENDANT']];
+const CUTS=[24.06,25.75,26.61,28.33,29.19,30.91,31.76,33.46,35.18,36.90,38.61,40.33,49.60,50.62,51.48,52.34,53.20];
+const BEAT=0.4180,B0=24.06;
+// vraie voix (WA0019 139,25 s -> 40,33 s), découpage de la transcription
+const SUB=[[40.6,43.2,'« Allez, attention, <b>mesdames et messieurs.</b> »'],[43.4,47.0,'« On continue avec <b>le main event</b> de ce soir. »'],[47.4,49.6,'« Le dernier combat, <b>mesdames et messieurs.</b> »']];
+const box=document.getElementById('txt');
+const EL=T.map(t=>{const d=document.createElement('div');d.className='t';d.innerHTML=t[2];d.style.fontSize=t[3]+'px';d.style.top=t[4]+'px';box.appendChild(d);return d;});
+const TG=TAGS.map(t=>{const d=document.createElement('div');d.className='tag';d.innerHTML='<span>'+t[2]+'</span>';d.style.top=t[3]+'px';box.appendChild(d);return d;});
+function render(t){
+ T.forEach((x,i)=>{const e=EL[i],on=t>=x[0]&&t<x[1];e.style.opacity=on?1:0;if(!on)return;const u=t-x[0];
+  if(x[5]==='slam'){const p=ebk(u/0.22);e.style.transform=`scale(${1.6-0.6*p}) rotate(${(1-p)*-4}deg)`;e.style.opacity=cl(u/0.06);}
+  else{const p=eo(u/0.5);e.style.transform=`translateY(${(1-p)*60}px)`;e.style.opacity=cl(u/0.3)*cl((x[1]-t)/0.2);e.style.letterSpacing=(6-6*p)+'px';}
+  const out=cl((x[1]-t)/0.08);if(x[5]==='slam')e.style.opacity=Math.min(+e.style.opacity,out);});
+ TAGS.forEach((x,i)=>{const on=t>=x[0]&&t<x[1];TG[i].style.opacity=on?cl((t-x[0])/0.2):0;TG[i].style.transform=`translateX(${(1-eo((t-x[0])/0.4))*-200}px)`;});
+ const c=CHAP.find(c=>t>=c[0]&&t<c[1]);const ch=document.getElementById('chap');ch.textContent=c?c[2]:'';ch.style.opacity=c?0.9*cl((t-c[0])/0.5):0;
+ // bandes cinéma (acte 1 et final), absentes pendant le combat
+ const lb=(t<24.06||t>=53.2)?150:(t>=40.33&&t<49.6?90:0);document.getElementById('bt').style.height=lb+'px';document.getElementById('bb').style.height=lb+'px';
+ // flash blanc à chaque coupe de l'acte 2, flash plus fort au drop
+ let f=0;CUTS.forEach(c=>{const u=t-c;if(u>=0&&u<0.16)f=Math.max(f,(c===24.06?1:0.55)*(1-u/0.16));});
+ [1.74,5.18,8.59,12.03,15.46,18.9].forEach(c=>{const u=t-c;if(u>=0&&u<0.12)f=Math.max(f,0.18*(1-u/0.12));});
+ document.getElementById('flash').style.opacity=f;
+ // vignette rouge qui pulse sur le temps pendant l'acte 2 et la fin
+ const inB=(t>=24.06&&t<40.33)||(t>=49.6&&t<53.2);const ph=((t-B0)/BEAT)%1;document.getElementById('vig').style.opacity=inB?0.9*(1-ph):(t>=40.33&&t<49.6?0.35:0);
+ // voix en direct
+ const lv=t>=40.33&&t<49.6;document.getElementById('live').style.opacity=lv?(0.6+0.4*Math.sin(t*6)):0;
+ const s=SUB.find(s=>t>=s[0]&&t<s[1]);document.getElementById('sub').innerHTML=s?s[2]:'';
+}
+window.CFG={dur:DUR};window.thumb=()=>render(3.95);
+</script></body></html>
