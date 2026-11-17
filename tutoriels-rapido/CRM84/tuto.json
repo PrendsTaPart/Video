@@ -1,0 +1,136 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 40,
+  "fixes": {},
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM84",
+  "title": "Suivre vos envois et les désinscriptions",
+  "em": "vos envois",
+  "tag": "2 min · Débutant",
+  "start_path": "/suivi-emails",
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "tableau",
+      "label": "Ouvertures et clics",
+      "zone": "table >> nth=0"
+    },
+    {
+      "at": "fiable",
+      "zone": ".casse-naturelle > p >> nth=0"
+    },
+    {
+      "at": "detail",
+      "label": "Le détail d'une campagne",
+      "click": "table >> nth=0 >> tr >> nth=2 >> a"
+    },
+    {
+      "at": "detail",
+      "zone": ".row >> nth=0"
+    },
+    {
+      "at": "destinataires",
+      "scroll": "Destinataires",
+      "zone": "Destinataires",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "sms",
+      "label": "Les campagnes SMS",
+      "goto": "/suivi-emails"
+    },
+    {
+      "at": "sms",
+      "scroll": "table >> nth=1",
+      "zone": "table >> nth=1"
+    },
+    {
+      "at": "desinscriptions",
+      "label": "Les désinscriptions",
+      "goto": "/desinscriptions"
+    },
+    {
+      "at": "desinscriptions",
+      "zone": "table"
+    },
+    {
+      "at": "ajouter",
+      "fill": [
+        [
+          "input[name=email]",
+          "claire.fontaine@exemple.test"
+        ]
+      ]
+    },
+    {
+      "at": "ajouter",
+      "click": "form button",
+      "wait": 0.6
+    },
+    {
+      "at": "ajouter",
+      "zone": "table"
+    },
+    {
+      "at": "reinscrire",
+      "hover": "table tbody tr >> nth=0 >> button",
+      "zone": "table tbody tr >> nth=0"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Vos campagnes sont parties : qui les a ouvertes, qui a cliqué ? Voici le suivi des envois, dans le menu Marketing."
+    },
+    {
+      "key": "tableau",
+      "text": "Chaque campagne e-mail et chaque newsletter affiche le nombre d'envois, le taux d'ouverture, le taux de clic, et la part des lecteurs qui ont cliqué."
+    },
+    {
+      "key": "fiable",
+      "text": "Retenez surtout le taux de clic : certaines messageries ouvrent les images toutes seules, ce qui gonfle les ouvertures."
+    },
+    {
+      "key": "detail",
+      "text": "Cliquez sur Détail : les chiffres de la campagne, et les liens les plus cliqués."
+    },
+    {
+      "key": "destinataires",
+      "text": "Plus bas, chaque destinataire : quand il a ouvert, combien de fois, et combien de clics. Les plus intéressés sont en tête : ce sont eux à rappeler."
+    },
+    {
+      "key": "sms",
+      "text": "Vos campagnes SMS sont suivies aussi : les liens sont raccourcis automatiquement, et chaque clic est compté."
+    },
+    {
+      "key": "desinscriptions",
+      "text": "Dans Désinscriptions, retrouvez les adresses qui ne veulent plus recevoir vos e-mails, par le lien en bas de chaque envoi ou en un clic depuis leur messagerie."
+    },
+    {
+      "key": "ajouter",
+      "text": "Une personne vous le demande par téléphone ? Ajoutez son adresse : elle ne recevra plus aucune campagne."
+    },
+    {
+      "key": "reinscrire",
+      "text": "Et si elle change d'avis, réinscrivez-la d'un clic."
+    },
+    {
+      "key": "outro",
+      "text": "Vos envois sont suivis, et les choix de vos clients respectés. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ]
+}
