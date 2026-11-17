@@ -650,6 +650,36 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM69.png"
   },
   {
+    "id": "CRM70",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Appeler vos clients en un clic",
+    "tag": "2 min · Débutant",
+    "duree_s": 67,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM70.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM70.png"
+  },
+  {
+    "id": "CRM75",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Dessiner sa stratégie avec la Marketing Map",
+    "tag": "3 min · Intermédiaire",
+    "duree_s": 78,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM75.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM75.png"
+  },
+  {
+    "id": "CRM76",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Suivre ses prospects en direct sur la carte",
+    "tag": "2 min · Intermédiaire",
+    "duree_s": 72,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM76.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM76.png"
+  },
+  {
     "id": "CMS01",
     "produit": "cms",
     "kicker": "Tutoriel RapidoCMS",

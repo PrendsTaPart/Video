@@ -161,13 +161,13 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM67 — Le programme de fidélité et la caisse
 - [x] CRM68 — Le formulaire de devis en ligne
 - [x] CRM69 — Connecter RapidoRH : l'équipe IA au travail
-- [ ] CRM70 — Appeler vos clients en un clic (téléphonie : clic pour appeler, journal, rappel, « Qui m'appelle ? »)
+- [x] CRM70 — Appeler vos clients en un clic (téléphonie : clic pour appeler, journal, rappel, « Qui m'appelle ? »)
 - [~] CRM71 — Appeler un client depuis sa fiche et le prompteur temps réel (17/11 : l'appel depuis la fiche est montré dans CRM70 ; le prompteur temps réel n'existe pas encore dans RapidoCRM)
 - [ ] CRM72 — Analyse des appels, enregistrement et tâches envoyées à l'équipe IA
 - [ ] CRM73 — L'agent IA sur votre site web
 - [ ] CRM74 — Boîte de réception et tickets
-- [ ] CRM75 — Dessiner sa stratégie avec la Marketing Map
-- [ ] CRM76 — Suivre ses prospects en direct sur la carte
+- [x] CRM75 — Dessiner sa stratégie avec la Marketing Map
+- [x] CRM76 — Suivre ses prospects en direct sur la carte
 - [ ] CRM77 — Écrire un article de blog optimisé SEO
 - [ ] CRM78 — Mots-clés, scores et tendances : le calendrier de publication
 - [ ] CRM79 — Publicités Google Ads et Meta Ads pilotées par les agents IA
@@ -436,3 +436,15 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
 - Nouveaux : CRM57 (tunnel créé par Claude, démo par TunnelVenteService), formations F21–F26 (IA, prompt, MCP, Claude, agents, workflows). Voix : CRM57 (847), F21 (1 098), F22 (1 056), F23 (1 049), F24 (901), F25 (1 022), F26 (929).
 - Copie de tournage synchronisée avec rapido-crm (5 migrations de l'autre agent : agents IA, journal MCP, agent des sites, idempotence, tickets) : l'écran Connexions plantait (table webhooks absente).
 - Disque : ~1 Go libre ; les fichiers déjà poussés de videos/ sont retirés de l'arbre (`git update-index --skip-worktree` puis suppression).
+
+## Journal — 17/11, séance de l'après-midi (demande de Michael : nouveaux modules)
+- Revue du travail de l'autre agent (Téléphonie, Marketing Map, constructeur de segments) : 470 tests verts SQLite + MySQL 8 ; parcours testés au navigateur
+  (1440 / 390 px) sans erreur. Ergonomie corrigée dans rapido-crm (commits 5dec7885, 662a164b, PR brouillon #115) : conditions bloquantes de la
+  téléphonie visibles avec action, numéros lisibles, rappel étiqueté ; modèles de carte en lignes de trois, état « Active », lien de partage visible
+  avec copie, cadrage 2,5D / 3D.
+- Publiés (RapidoCMS + publication.json + Académie : 102 épisodes) : CRM70 (67 s), CRM75 (78 s), CRM76 (72 s). Voix Adam, une prise : 1 034 + 1 236 + 1 135
+  = 3 405 crédits. CRM70 et CRM75 retournés une fois (cadrage), sans nouvelle voix.
+- Téléphonie filmée en mode simulé (`TWILIO_SIMULATE=true` dans la copie de tournage seulement) : message simulé remplacé à l'image par celui d'un vrai
+  appel (`replace_text`), bandeau « Mode test » masqué (nouvelle option `css` de record.cjs). Démo : `telephonie-demo.php`, `marketing-map-demo.php`.
+- Piège : le cadrage (`zone`) d'un paragraphe s'applique dès son début : ne pas cadrer une fenêtre qui s'ouvre au milieu du paragraphe.
+- Piège : `fusion-academie.py` lit les épisodes dans le fichier exporté : enchaîner export (enregistrer-publication.py) puis fusion, sans revenir au fichier d'origine entre les deux.
