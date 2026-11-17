@@ -1,0 +1,145 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 40,
+  "fixes": {},
+  "css": ".sites-ecran > .encadre.info:has(.ti-flask) { display: none !important; }",
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "id": "CRM86",
+  "title": "Transformer vos appels en actions",
+  "em": "en actions",
+  "tag": "2 min · Débutant",
+  "start_path": "/telephonie?source=ia",
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "journal",
+      "label": "Les appels de l'agent vocal",
+      "scroll": "table",
+      "zone": "table"
+    },
+    {
+      "at": "analyser",
+      "label": "Analyser un appel",
+      "click": "form[action*='/telephonie/ia/'] button >> nth=0",
+      "wait": 3.5
+    },
+    {
+      "at": "compterendu",
+      "top": true,
+      "zone": "section[aria-labelledby=t-resume]"
+    },
+    {
+      "at": "transcription",
+      "click": "section[aria-labelledby=t-transcription] .horodatage >> nth=1",
+      "zone": "section[aria-labelledby=t-transcription]"
+    },
+    {
+      "at": "actions",
+      "label": "Les actions proposées",
+      "scroll": "#actions",
+      "zone": "#actions"
+    },
+    {
+      "at": "tout",
+      "click": "#btn-tout",
+      "wait": 0.8
+    },
+    {
+      "at": "tout",
+      "top": true,
+      "zone": ".encadre >> nth=0"
+    },
+    {
+      "at": "reglages",
+      "label": "Réglages des appels",
+      "goto": "/telephonie?source=ia"
+    },
+    {
+      "at": "reglages",
+      "click": "#reglages-appels summary",
+      "zone": "#reglages-appels"
+    },
+    {
+      "at": "reglages",
+      "click": "#analyse_auto"
+    },
+    {
+      "at": "enregistrement",
+      "hover": "label[for=enregistrement]",
+      "zone": "#reglages-appels form"
+    },
+    {
+      "at": "enregistrement",
+      "click": "#enregistrement"
+    },
+    {
+      "at": "enregistrer",
+      "click": "#reglages-appels button.btn-primary",
+      "wait": 0.6
+    },
+    {
+      "at": "enregistrer",
+      "zone": ".encadre >> nth=0"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ],
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Votre agent vocal IA répond au téléphone, et chaque appel est transcrit. RapidoCRM en tire maintenant les actions à mener : voici l'analyse des appels."
+    },
+    {
+      "key": "journal",
+      "text": "Dans Téléphonie, onglet Agent vocal IA, chaque appel affiche son résultat, son résumé, et un bouton Analyser cet appel."
+    },
+    {
+      "key": "analyser",
+      "text": "Cliquez : en quelques secondes, la conversation devient un compte rendu, sans aucun coût."
+    },
+    {
+      "key": "compterendu",
+      "text": "L'appelant s'est présenté : Julien Morel, du Café des Arts. Le résumé reprend son besoin, son budget et l'urgence."
+    },
+    {
+      "key": "transcription",
+      "text": "Toute la conversation est là, réplique par réplique, avec l'heure de chaque passage."
+    },
+    {
+      "key": "actions",
+      "text": "Trois actions sont proposées : envoyer la proposition d'ici vendredi, ajouter Julien comme contact avec son e-mail et son portable, et le rendez-vous en visio jeudi prochain."
+    },
+    {
+      "key": "tout",
+      "text": "Confirmez la sélection : la tâche, le contact et le rendez-vous sont créés en un clic."
+    },
+    {
+      "key": "reglages",
+      "text": "Dans les réglages des appels, un administrateur peut faire analyser chaque appel automatiquement."
+    },
+    {
+      "key": "enregistrement",
+      "text": "Il peut aussi enregistrer les appels de l'équipe. Le client entend d'abord une annonce, et l'enregistrement s'écoute ensuite dans le journal."
+    },
+    {
+      "key": "enregistrer",
+      "text": "Enregistrez les réglages : ils s'appliquent dès le prochain appel."
+    },
+    {
+      "key": "outro",
+      "text": "Vos appels se transforment en actions. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ]
+}
