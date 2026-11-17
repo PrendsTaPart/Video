@@ -21,33 +21,149 @@
   "tag": "2 min · Débutant",
   "start_path": "/telephonie",
   "scenes": [
-    { "at": "intro", "wait": 0.4 },
-    { "at": "principe", "label": "Votre numéro, votre téléphone", "zone": ".sites-ecran > .mb-3 >> nth=0" },
-    { "at": "principe", "zone": ".row.g-3 >> nth=0" },
-    { "at": "appeler", "label": "Appeler un numéro", "fill": [["#numero", "07 12 34 56 78"]] },
-    { "at": "appeler", "click": "form[action$=\"/telephonie/appeler\"] button", "wait": 1.0 },
-    { "at": "appeler", "zone": ".encadre >> nth=0" },
-    { "at": "fiche", "label": "Depuis la fiche contact", "goto": "/contacts/1/fiche" },
-    { "at": "fiche", "zone": "form[action$=\"/telephonie/appeler\"]", "hover": "form[action$=\"/telephonie/appeler\"] button" },
-    { "at": "journal", "label": "Le journal des appels", "goto": "/telephonie" },
-    { "at": "journal", "scroll": "table", "zone": "table tbody tr >> nth=0" },
-    { "at": "noter", "label": "Noter et programmer un rappel", "select": [["form[action*=\"/noter\"] >> nth=1 >> select[name=resultat]", "À rappeler"]] },
-    { "at": "noter", "fill": [["form[action*=\"/noter\"] >> nth=1 >> textarea", "Rappeler après validation du budget"]] },
-    { "at": "noter", "eval": "document.querySelectorAll('form[action*=\"/noter\"]')[1].querySelector('input[name=rappel_le]').value='2026-12-01T10:00'", "zone": "form[action*=\"/noter\"] >> nth=1" },
-    { "at": "noter", "click": "form[action*=\"/noter\"] >> nth=1 >> button", "wait": 1.0 },
-    { "at": "quiappelle", "label": "Qui m'appelle ?", "top": true, "fill": [["#numeroFiche", "06 45 21 87 90"]] },
-    { "at": "quiappelle", "click": "#btnFiche", "wait": 1.2 },
-    { "at": "quiappelle", "zone": "#formFiche" },
-    { "at": "outro", "top": true }
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "principe",
+      "label": "Votre numéro, votre téléphone",
+      "zone": ".sites-ecran > .mb-3 >> nth=0"
+    },
+    {
+      "at": "principe",
+      "zone": ".row.g-3 >> nth=0"
+    },
+    {
+      "at": "appeler",
+      "label": "Appeler un numéro",
+      "fill": [
+        [
+          "#numero",
+          "07 12 34 56 78"
+        ]
+      ]
+    },
+    {
+      "at": "appeler",
+      "click": "form[action$=\"/telephonie/appeler\"] button",
+      "wait": 1.0
+    },
+    {
+      "at": "appeler",
+      "zone": ".encadre >> nth=0"
+    },
+    {
+      "at": "fiche",
+      "label": "Depuis la fiche contact",
+      "goto": "/contacts/1/fiche"
+    },
+    {
+      "at": "fiche",
+      "zone": "form[action$=\"/telephonie/appeler\"]",
+      "hover": "form[action$=\"/telephonie/appeler\"] button"
+    },
+    {
+      "at": "journal",
+      "label": "Le journal des appels",
+      "goto": "/telephonie"
+    },
+    {
+      "at": "journal",
+      "scroll": "table",
+      "zone": "table tbody tr >> nth=0"
+    },
+    {
+      "at": "noter",
+      "label": "Noter et programmer un rappel",
+      "select": [
+        [
+          "form[action*=\"/noter\"] >> nth=1 >> select[name=resultat]",
+          "À rappeler"
+        ]
+      ]
+    },
+    {
+      "at": "noter",
+      "fill": [
+        [
+          "form[action*=\"/noter\"] >> nth=1 >> textarea",
+          "Rappeler après validation du budget"
+        ]
+      ]
+    },
+    {
+      "at": "noter",
+      "eval": "document.querySelectorAll('form[action*=\"/noter\"]')[1].querySelector('input[name=rappel_le]').value='2026-12-01T10:00'",
+      "zone": "form[action*=\"/noter\"] >> nth=1"
+    },
+    {
+      "at": "noter",
+      "click": "form[action*=\"/noter\"] >> nth=1 >> button",
+      "wait": 1.0
+    },
+    {
+      "at": "noter",
+      "top": true,
+      "zone": ".encadre >> nth=0"
+    },
+    {
+      "at": "quiappelle",
+      "label": "Qui m'appelle ?",
+      "top": true,
+      "fill": [
+        [
+          "#numeroFiche",
+          "06 45 21 87 90"
+        ]
+      ]
+    },
+    {
+      "at": "quiappelle",
+      "click": "#btnFiche",
+      "wait": 1.2
+    },
+    {
+      "at": "quiappelle",
+      "zone": "#formFiche"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
   ],
   "paragraphs": [
-    { "key": "intro", "text": "Appelez vos clients depuis RapidoCRM, avec le numéro de votre entreprise, et gardez une trace de chaque appel. Voici la téléphonie." },
-    { "key": "principe", "text": "Elle utilise le compte Twilio déjà connecté pour l'agent vocal. Quand vous appelez, votre propre téléphone sonne d'abord, puis vous êtes relié au client. Les chiffres des trente derniers jours sont en haut." },
-    { "key": "appeler", "text": "Tapez un numéro et cliquez sur Appeler. Si ce client est déjà dans votre CRM, il est retrouvé automatiquement." },
-    { "key": "fiche", "text": "Sur la fiche d'un contact, le bouton Appeler fait la même chose, en un clic." },
-    { "key": "journal", "text": "Chaque appel rejoint le journal : la date, le client, qui a appelé, le statut et la durée." },
-    { "key": "noter", "text": "Après l'appel, choisissez le résultat, notez ce qui s'est dit, et programmez un rappel : une tâche est créée pour vous à la bonne date." },
-    { "key": "quiappelle", "text": "Un numéro vous appelle et vous ne savez plus qui c'est ? Tapez-le dans Qui m'appelle : vous voyez le contact, son entreprise, ses devis en attente, ses impayés et ses derniers appels." },
-    { "key": "outro", "text": "Vos appels sont maintenant suivis dans RapidoCRM. Retrouvez tous nos tutoriels dans l'Académie !" }
+    {
+      "key": "intro",
+      "text": "Appelez vos clients depuis RapidoCRM, avec le numéro de votre entreprise, et gardez une trace de chaque appel. Voici la téléphonie."
+    },
+    {
+      "key": "principe",
+      "text": "Elle utilise le compte Twilio déjà connecté pour l'agent vocal. Quand vous appelez, votre propre téléphone sonne d'abord, puis vous êtes relié au client. Les chiffres des trente derniers jours sont en haut."
+    },
+    {
+      "key": "appeler",
+      "text": "Tapez un numéro et cliquez sur Appeler. Si ce client est déjà dans votre CRM, il est retrouvé automatiquement."
+    },
+    {
+      "key": "fiche",
+      "text": "Sur la fiche d'un contact, le bouton Appeler fait la même chose, en un clic."
+    },
+    {
+      "key": "journal",
+      "text": "Chaque appel rejoint le journal : la date, le client, qui a appelé, le statut et la durée."
+    },
+    {
+      "key": "noter",
+      "text": "Après l'appel, choisissez le résultat, notez ce qui s'est dit, et programmez un rappel : une tâche est créée pour vous à la bonne date."
+    },
+    {
+      "key": "quiappelle",
+      "text": "Un numéro vous appelle et vous ne savez plus qui c'est ? Tapez-le dans Qui m'appelle : vous voyez le contact, son entreprise, ses devis en attente, ses impayés et ses derniers appels."
+    },
+    {
+      "key": "outro",
+      "text": "Vos appels sont maintenant suivis dans RapidoCRM. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
   ]
 }
