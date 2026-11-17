@@ -176,7 +176,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM82 — Sécuriser son compte : la double authentification
 - [ ] CRM83 — La facture électronique Factur-X
 - [ ] CRM84 — Suivre les e-mails et SMS envoyés, gérer les désinscriptions
-- [~] CRM85 — Transformer une réunion en actions (analyse de réunion développée le 17/11, PR #115 ; tournage en cours)
+- [x] CRM85 — Transformer une réunion en actions (analyse de réunion développée le 17/11, PR #115 ; tournage en cours)
 
 ### Inventaire du 17/11 (après-midi) — fonctionnalités de RapidoCRM sans tutoriel ou avec un tutoriel périmé
 - **Développées, écran prêt, sans tutoriel** (écrans audités 1440 / 390 px : aucune erreur JS ni réseau, aucun débordement) :
@@ -482,3 +482,12 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   appel (`replace_text`), bandeau « Mode test » masqué (nouvelle option `css` de record.cjs). Démo : `telephonie-demo.php`, `marketing-map-demo.php`.
 - Piège : le cadrage (`zone`) d'un paragraphe s'applique dès son début : ne pas cadrer une fenêtre qui s'ouvre au milieu du paragraphe.
 - Piège : `fusion-academie.py` lit les épisodes dans le fichier exporté : enchaîner export (enregistrer-publication.py) puis fusion, sans revenir au fichier d'origine entre les deux.
+
+### Journal 17/11 (après-midi) — analyse de réunion
+- Michael : développer réellement l'analyse de réunion dans RapidoCRM (reprise de RapidoMeet). Livré dans la PR brouillon #115
+  (commit 9d3f49d0 puis correctifs d'analyse : « aujourd'hui, on fait le point » n'est plus un rendez-vous, « est-ce que vous pouvez… ? »
+  est une question et non une tâche ; trouvés pendant le repérage du tutoriel). 488 tests verts SQLite + MySQL 8.
+- CRM85 tourné (2 prises : la 1re décalée de 7 s sur le dépôt, titre désormais rempli d'un coup), voix Adam une prise = 1 989 crédits,
+  publié : RapidoCMS `tutoriel-rapido-CRM85.mp4/.png`, Académie 103 épisodes (rapido-software).
+- essai-blanc.cjs gère désormais `upload` (dépôt de fichier) comme record.cjs.
+

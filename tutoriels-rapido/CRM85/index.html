@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#4CAF50; --b:#9BE15D; --grad:linear-gradient(100deg,#4CAF50,#9BE15D); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; background:#05060A; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(120px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.45; }
+  .h2 { width:700px; height:600px; left:-260px; bottom:-320px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  #frame { position:absolute; left:80px; top:56px; width:1760px; height:990px; border-radius:22px; overflow:hidden; background:#f3f4f7;
+           box-shadow:0 50px 120px -30px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.12),0 0 120px -30px var(--a); }
+  #cam { position:absolute; left:0; top:0; width:1760px; height:990px; transform-origin:0 0; }
+  #cam video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .hl { position:absolute; border-radius:18px; border:3px solid var(--a); box-shadow:0 0 0 9999px rgba(5,6,10,.28),0 0 40px -6px var(--a); opacity:0; }
+  .chap { position:absolute; left:108px; top:82px; display:flex; align-items:center; gap:14px; padding:12px 22px 12px 12px; border-radius:999px;
+          background:rgba(10,12,18,.82); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.14); font-size:26px; font-weight:600; opacity:0; z-index:5; }
+  .chap b { width:40px; height:40px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:19px; }
+  .sub { position:absolute; inset:auto 0 58px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; letter-spacing:-.01em; white-space:nowrap; box-shadow:0 10px 30px rgba(0,0,0,.4); }
+  .bar { position:absolute; left:80px; bottom:22px; width:1760px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:104px; top:84px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  /* intro / outro */
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .kick { font-size:28px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.7); }
+  .card h1 { text-wrap:balance; margin-top:40px; font-size:128px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1500px; }
+  .card h1 em, .card h2 em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; line-height:1; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="118.56" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+
+  <div id="frame">
+    <div id="cam">
+      <video id="cap" class="clip" src="captures/ecran.mp4" muted data-start="3.0" data-duration="115.56" data-track-index="1"></video>
+      <div class="hl" id="hl1" style="left:370px;top:320px;width:1258px;height:138px"></div>
+      <div class="hl" id="hl2" style="left:363px;top:656px;width:734px;height:154px"></div>
+      <div class="hl" id="hl3" style="left:1101px;top:196px;width:549px;height:188px"></div>
+      <div class="hl" id="hl4" style="left:348px;top:254px;width:764px;height:320px"></div>
+      <div class="hl" id="hl5" style="left:1101px;top:446px;width:549px;height:544px"></div>
+      <div class="hl" id="hl6" style="left:363px;top:162px;width:734px;height:217px"></div>
+      <div class="hl" id="hl7" style="left:363px;top:361px;width:734px;height:390px"></div>
+      <div class="hl" id="hl8" style="left:363px;top:227px;width:734px;height:136px"></div>
+      <div class="hl" id="hl9" style="left:363px;top:97px;width:734px;height:217px"></div>
+      <div class="hl" id="hl10" style="left:348px;top:197px;width:1302px;height:68px"></div>
+      <div class="hl" id="hl11" style="left:348px;top:399px;width:764px;height:188px"></div>
+      <div class="hl" id="hl12" style="left:1147px;top:130px;width:503px;height:61px"></div>
+    </div>
+  </div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">RapidoCRM</div>
+  <div class="chap" id="ch1"><b>1</b>Déposer, relire, confirmer</div>
+  <div class="chap" id="ch2"><b>2</b>Déposer la réunion</div>
+  <div class="chap" id="ch3"><b>2</b>Déposer la réunion</div>
+  <div class="chap" id="ch4"><b>3</b>Le compte rendu</div>
+  <div class="chap" id="ch5"><b>3</b>Le compte rendu</div>
+  <div class="chap" id="ch6"><b>4</b>Les actions proposées</div>
+  <div class="chap" id="ch7"><b>4</b>Les actions proposées</div>
+  <div class="chap" id="ch8"><b>4</b>Les actions proposées</div>
+  <div class="chap" id="ch9"><b>4</b>Les actions proposées</div>
+  <div class="chap" id="ch10"><b>4</b>Les actions proposées</div>
+  <div class="chap" id="ch11"><b>5</b>Décisions et besoins</div>
+  <div class="chap" id="ch12"><b>6</b>Partager le compte rendu</div>
+  <div class="sub clip" id="s0" data-start="3.050" data-duration="1.300" data-track-index="7"><span>Une réunion se termine</span></div>
+  <div class="sub clip" id="s1" data-start="4.500" data-duration="0.970" data-track-index="7"><span>et il reste à écrire le</span></div>
+  <div class="sub clip" id="s2" data-start="5.490" data-duration="0.790" data-track-index="7"><span>compte rendu</span></div>
+  <div class="sub clip" id="s3" data-start="6.340" data-duration="2.020" data-track-index="7"><span>créer les tâches et noter les contacts</span></div>
+  <div class="sub clip" id="s4" data-start="8.460" data-duration="1.910" data-track-index="7"><span>RapidoCRM le fait pour vous</span></div>
+  <div class="sub clip" id="s5" data-start="10.390" data-duration="1.980" data-track-index="7"><span>voici l&#x27;analyse de réunion</span></div>
+  <div class="sub clip" id="s6" data-start="12.390" data-duration="0.860" data-track-index="7"><span>Trois étapes</span></div>
+  <div class="sub clip" id="s7" data-start="13.270" data-duration="1.430" data-track-index="7"><span>vous déposez la réunion</span></div>
+  <div class="sub clip" id="s8" data-start="14.720" data-duration="1.780" data-track-index="7"><span>vous relisez le compte rendu</span></div>
+  <div class="sub clip" id="s9" data-start="16.560" data-duration="1.360" data-track-index="7"><span>puis vous confirmez ce qui doit</span></div>
+  <div class="sub clip" id="s10" data-start="17.940" data-duration="0.630" data-track-index="7"><span>être créé</span></div>
+  <div class="sub clip" id="s11" data-start="18.690" data-duration="1.980" data-track-index="7"><span>Rien n&#x27;est créé sans votre accord</span></div>
+  <div class="sub clip" id="s12" data-start="20.690" data-duration="2.480" data-track-index="7"><span>Cliquez sur Analyser une réunion</span></div>
+  <div class="sub clip" id="s13" data-start="23.190" data-duration="1.430" data-track-index="7"><span>Donnez-lui un titre</span></div>
+  <div class="sub clip" id="s14" data-start="24.640" data-duration="2.090" data-track-index="7"><span>gardez le type rendez-vous commercial</span></div>
+  <div class="sub clip" id="s15" data-start="26.750" data-duration="1.220" data-track-index="7"><span>choisissez le client</span></div>
+  <div class="sub clip" id="s16" data-start="27.990" data-duration="2.830" data-track-index="7"><span>puis déposez la transcription exportée de Teams</span></div>
+  <div class="sub clip" id="s17" data-start="30.840" data-duration="1.450" data-track-index="7"><span>Zoom ou Google Meet</span></div>
+  <div class="sub clip" id="s18" data-start="32.310" data-duration="1.310" data-track-index="7"><span>Vous ne savez pas où la trouver</span></div>
+  <div class="sub clip" id="s19" data-start="33.710" data-duration="1.980" data-track-index="7"><span>Le chemin est expliqué pour chaque outil</span></div>
+  <div class="sub clip" id="s20" data-start="35.710" data-duration="1.980" data-track-index="7"><span>Vous pouvez aussi coller vos notes</span></div>
+  <div class="sub clip" id="s21" data-start="37.710" data-duration="1.980" data-track-index="7"><span>Cliquez sur Analyser la réunion</span></div>
+  <div class="sub clip" id="s22" data-start="39.710" data-duration="1.160" data-track-index="7"><span>Quelques secondes plus tard</span></div>
+  <div class="sub clip" id="s23" data-start="40.890" data-duration="0.800" data-track-index="7"><span>tout est prêt</span></div>
+  <div class="sub clip" id="s24" data-start="41.710" data-duration="0.690" data-track-index="7"><span>En haut</span></div>
+  <div class="sub clip" id="s25" data-start="42.420" data-duration="1.270" data-track-index="7"><span>le compte rendu</span></div>
+  <div class="sub clip" id="s26" data-start="43.710" data-duration="1.130" data-track-index="7"><span>qui était là</span></div>
+  <div class="sub clip" id="s27" data-start="44.860" data-duration="0.780" data-track-index="7"><span>combien de décisions</span></div>
+  <div class="sub clip" id="s28" data-start="45.660" data-duration="1.400" data-track-index="7"><span>de tâches et de contacts ont</span></div>
+  <div class="sub clip" id="s29" data-start="47.080" data-duration="0.610" data-track-index="7"><span>été relevés</span></div>
+  <div class="sub clip" id="s30" data-start="47.710" data-duration="1.980" data-track-index="7"><span>et les points clés de l&#x27;échange</span></div>
+  <div class="sub clip" id="s31" data-start="49.710" data-duration="1.750" data-track-index="7"><span>Chaque point renvoie au moment exact</span></div>
+  <div class="sub clip" id="s32" data-start="51.480" data-duration="1.210" data-track-index="7"><span>de la conversation</span></div>
+  <div class="sub clip" id="s33" data-start="52.710" data-duration="0.510" data-track-index="7"><span>À droite</span></div>
+  <div class="sub clip" id="s34" data-start="53.240" data-duration="1.517" data-track-index="7"><span>le temps de parole de chacun</span></div>
+  <div class="sub clip" id="s35" data-start="54.777" data-duration="1.553" data-track-index="7"><span>et toute la transcription</span></div>
+  <div class="sub clip" id="s36" data-start="56.350" data-duration="1.340" data-track-index="7"><span>avec une recherche</span></div>
+  <div class="sub clip" id="s37" data-start="57.710" data-duration="1.320" data-track-index="7"><span>Voici les actions proposées</span></div>
+  <div class="sub clip" id="s38" data-start="59.160" data-duration="1.527" data-track-index="7"><span>avec la phrase d&#x27;où elles viennent</span></div>
+  <div class="sub clip" id="s39" data-start="60.710" data-duration="0.510" data-track-index="7"><span>Léa a dit</span></div>
+  <div class="sub clip" id="s40" data-start="61.240" data-duration="3.110" data-track-index="7"><span>je vais envoyer la proposition d&#x27;ici vendredi</span></div>
+  <div class="sub clip" id="s41" data-start="64.710" data-duration="1.430" data-track-index="7"><span>La tâche est donc pour Léa</span></div>
+  <div class="sub clip" id="s42" data-start="66.160" data-duration="1.530" data-track-index="7"><span>à faire pour vendredi</span></div>
+  <div class="sub clip" id="s43" data-start="67.710" data-duration="1.300" data-track-index="7"><span>Karim doit préparer la maquette avant</span></div>
+  <div class="sub clip" id="s44" data-start="69.160" data-duration="2.530" data-track-index="7"><span>mercredi : la tâche lui est confiée</span></div>
+  <div class="sub clip" id="s45" data-start="71.710" data-duration="1.980" data-track-index="7"><span>Vous pouvez tout modifier avant de confirmer</span></div>
+  <div class="sub clip" id="s46" data-start="73.710" data-duration="1.680" data-track-index="7"><span>ou l&#x27;envoyer dans une liste de</span></div>
+  <div class="sub clip" id="s47" data-start="75.410" data-duration="1.180" data-track-index="7"><span>tâches RapidoRH</span></div>
+  <div class="sub clip" id="s48" data-start="76.710" data-duration="1.980" data-track-index="7"><span>Cliquez sur Confirmer</span></div>
+  <div class="sub clip" id="s49" data-start="78.710" data-duration="1.900" data-track-index="7"><span>la tâche est créée dans RapidoCRM</span></div>
+  <div class="sub clip" id="s50" data-start="80.710" data-duration="1.930" data-track-index="7"><span>Le contact cité pendant la réunion</span></div>
+  <div class="sub clip" id="s51" data-start="82.660" data-duration="0.360" data-track-index="7"><span>est prêt</span></div>
+  <div class="sub clip" id="s52" data-start="83.040" data-duration="0.600" data-track-index="7"><span>avec son e-mail</span></div>
+  <div class="sub clip" id="s53" data-start="83.660" data-duration="2.030" data-track-index="7"><span>son téléphone et son poste</span></div>
+  <div class="sub clip" id="s54" data-start="85.710" data-duration="1.980" data-track-index="7"><span>Il sera rattaché au client</span></div>
+  <div class="sub clip" id="s55" data-start="87.710" data-duration="0.580" data-track-index="7"><span>Pour le reste</span></div>
+  <div class="sub clip" id="s56" data-start="88.310" data-duration="1.730" data-track-index="7"><span>laissez cochées les propositions qui vous</span></div>
+  <div class="sub clip" id="s57" data-start="90.060" data-duration="1.630" data-track-index="7"><span>conviennent et confirmez la sélection</span></div>
+  <div class="sub clip" id="s58" data-start="91.710" data-duration="2.133" data-track-index="7"><span>les tâches et le contact sont créés</span></div>
+  <div class="sub clip" id="s59" data-start="93.890" data-duration="1.540" data-track-index="7"><span>et le rendez-vous de suivi entre</span></div>
+  <div class="sub clip" id="s60" data-start="95.450" data-duration="1.240" data-track-index="7"><span>dans votre agenda</span></div>
+  <div class="sub clip" id="s61" data-start="96.710" data-duration="0.390" data-track-index="7"><span>Plus bas</span></div>
+  <div class="sub clip" id="s62" data-start="97.120" data-duration="1.520" data-track-index="7"><span>retrouvez les décisions prises</span></div>
+  <div class="sub clip" id="s63" data-start="98.660" data-duration="1.030" data-track-index="7"><span>les questions posées</span></div>
+  <div class="sub clip" id="s64" data-start="99.710" data-duration="1.930" data-track-index="7"><span>et pour un rendez-vous commercial</span></div>
+  <div class="sub clip" id="s65" data-start="101.660" data-duration="0.980" data-track-index="7"><span>les besoins</span></div>
+  <div class="sub clip" id="s66" data-start="102.660" data-duration="1.990" data-track-index="7"><span>les freins et le budget évoqués</span></div>
+  <div class="sub clip" id="s67" data-start="104.710" data-duration="2.350" data-track-index="7"><span>Enfin, copiez le compte rendu pour l&#x27;envoyer</span></div>
+  <div class="sub clip" id="s68" data-start="107.080" data-duration="1.610" data-track-index="7"><span>ou téléchargez-le en PDF</span></div>
+  <div class="sub clip" id="s69" data-start="108.710" data-duration="2.980" data-track-index="7"><span>Vos réunions se transforment en actions</span></div>
+  <div class="sub clip" id="s70" data-start="111.710" data-duration="2.070" data-track-index="7"><span>Retrouvez tous nos tutoriels dans l&#x27;Académie</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="111.06" data-track-index="10" data-volume="1"></audio>
+
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <div class="top"><span class="num">CRM85</span><span class="kick">Tutoriel RapidoCRM</span></div>
+      <h1>Transformer une réunion <em>en actions</em></h1>
+    </div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+
+  <div class="clip card" id="outro" data-start="113.76" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative">
+      <h2>Merci d'avoir <em>regardé</em></h2>
+      <p>Retrouvez tous les tutoriels dans l&#x27;Académie RapidoSoftware</p>
+    </div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  // Intro
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .from('#intro .logo', { opacity: 0, duration: .6 }, .6)
+    .to('#intro', { opacity: 0, scale: 1.04, duration: .6, ease: 'power2.in' }, 3.0)
+    .from('#frame', { scale: .92, opacity: 0, duration: .9, ease: 'expo.out' }, 2.8);
+  // Progression
+  tl.to('#bar', { scaleX: 1, duration: 111.06, ease: 'none' }, 3.0);
+  tl.to('#cam', { scale: 1.29, x: -408.9, y: -6.4, duration: 1.2, ease: 'power3.inOut' }, 12.390)
+    .fromTo('#hl1', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 13.190)
+    .to('#hl1', { opacity: 0, duration: .35 }, 20.490)
+    .fromTo('#ch1', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 12.590)
+    .to('#ch1', { opacity: 0, x: -20, duration: .3 }, 20.440);
+  tl.to('#cam', { scale: 1.45, x: -178.7, y: -445.5, duration: 1.2, ease: 'power3.inOut' }, 20.690)
+    .fromTo('#hl2', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 21.490)
+    .to('#hl2', { opacity: 0, duration: .35 }, 32.110)
+    .fromTo('#ch2', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 20.890)
+    .to('#ch2', { opacity: 0, x: -20, duration: .3 }, 32.060);
+  tl.to('#cam', { scale: 1.45, x: -792.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 32.310)
+    .fromTo('#hl3', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 33.110)
+    .to('#hl3', { opacity: 0, duration: .35 }, 41.510)
+    .fromTo('#ch3', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 32.510)
+    .to('#ch3', { opacity: 0, x: -20, duration: .3 }, 41.460);
+  tl.to('#cam', { scale: 1.45, x: -178.7, y: -105.1, duration: 1.2, ease: 'power3.inOut' }, 41.710)
+    .fromTo('#hl4', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 42.510)
+    .to('#hl4', { opacity: 0, duration: .35 }, 49.510)
+    .fromTo('#ch4', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 41.910)
+    .to('#ch4', { opacity: 0, x: -20, duration: .3 }, 49.460);
+  tl.to('#cam', { scale: 1.45, x: -792.0, y: -445.5, duration: 1.2, ease: 'power3.inOut' }, 49.710)
+    .fromTo('#hl5', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 50.510)
+    .to('#hl5', { opacity: 0, duration: .35 }, 57.510)
+    .fromTo('#ch5', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 49.910)
+    .to('#ch5', { opacity: 0, x: -20, duration: .3 }, 57.460);
+  tl.to('#cam', { scale: 1.45, x: -178.7, y: 0, duration: 1.2, ease: 'power3.inOut' }, 57.710)
+    .fromTo('#hl6', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 58.510)
+    .to('#hl6', { opacity: 0, duration: .35 }, 67.510)
+    .fromTo('#ch6', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 57.910)
+    .to('#ch6', { opacity: 0, x: -20, duration: .3 }, 67.460);
+  tl.to('#cam', { scale: 1.45, x: -178.7, y: -311.1, duration: 1.2, ease: 'power3.inOut' }, 67.710)
+    .fromTo('#hl7', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 68.510)
+    .to('#hl7', { opacity: 0, duration: .35 }, 76.510)
+    .fromTo('#ch7', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 67.910)
+    .to('#ch7', { opacity: 0, x: -20, duration: .3 }, 76.460);
+  tl.to('#cam', { scale: 1.45, x: -178.7, y: 0, duration: 1.2, ease: 'power3.inOut' }, 76.710)
+    .fromTo('#hl8', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 77.510)
+    .to('#hl8', { opacity: 0, duration: .35 }, 80.510)
+    .fromTo('#ch8', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 76.910)
+    .to('#ch8', { opacity: 0, x: -20, duration: .3 }, 80.460);
+  tl.to('#cam', { scale: 1.45, x: -178.7, y: 0, duration: 1.2, ease: 'power3.inOut' }, 80.710)
+    .fromTo('#hl9', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 81.510)
+    .to('#hl9', { opacity: 0, duration: .35 }, 87.510)
+    .fromTo('#ch9', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 80.910)
+    .to('#ch9', { opacity: 0, x: -20, duration: .3 }, 87.460);
+  tl.to('#cam', { scale: 1.24, x: -359.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 87.710)
+    .fromTo('#hl10', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 88.510)
+    .to('#hl10', { opacity: 0, duration: .35 }, 96.510)
+    .fromTo('#ch10', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 87.910)
+    .to('#ch10', { opacity: 0, x: -20, duration: .3 }, 96.460);
+  tl.to('#cam', { scale: 1.45, x: -178.7, y: -219.4, duration: 1.2, ease: 'power3.inOut' }, 96.710)
+    .fromTo('#hl11', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 97.510)
+    .to('#hl11', { opacity: 0, duration: .35 }, 104.510)
+    .fromTo('#ch11', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 96.910)
+    .to('#ch11', { opacity: 0, x: -20, duration: .3 }, 104.460);
+  tl.to('#cam', { scale: 1.45, x: -792.0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 104.710)
+    .fromTo('#hl12', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 105.510)
+    .to('#hl12', { opacity: 0, duration: .35 }, 108.510)
+    .fromTo('#ch12', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 104.910)
+    .to('#ch12', { opacity: 0, x: -20, duration: .3 }, 108.460);
+  tl.to('#cam', { scale: 1, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 108.710);
+  // Outro
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 114.060)
+    .from('#outro p', { y: 30, opacity: 0, duration: .7, ease: 'expo.out' }, 114.310);
+  window.__timelines['main'] = tl;
+</script>
+</body>
+</html>

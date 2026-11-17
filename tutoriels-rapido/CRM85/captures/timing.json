@@ -1,0 +1,95 @@
+{
+  "voiceStartInCapture": 3.001,
+  "paragraphs": {
+    "intro": 0.05,
+    "principe": 9.39,
+    "deposer": 17.69,
+    "aide": 29.31,
+    "analyser": 34.71,
+    "compterendu": 38.71,
+    "transcription": 46.71,
+    "actions": 54.71,
+    "modifier": 64.71,
+    "confirmer": 73.71,
+    "contact": 77.71,
+    "tout": 84.71,
+    "decisions": 93.71,
+    "partager": 101.71,
+    "outro": 105.71,
+    "end": 110.66
+  },
+  "zones": {
+    "principe": [
+      404,
+      349,
+      1372,
+      150
+    ],
+    "deposer": [
+      396,
+      716,
+      801,
+      168
+    ],
+    "aide": [
+      1201,
+      214,
+      599,
+      205
+    ],
+    "compterendu": [
+      380,
+      277,
+      833,
+      349
+    ],
+    "transcription": [
+      1201,
+      486,
+      599,
+      594
+    ],
+    "actions": [
+      396,
+      177,
+      801,
+      237
+    ],
+    "modifier": [
+      396,
+      394,
+      801,
+      425
+    ],
+    "confirmer": [
+      396,
+      248,
+      801,
+      148
+    ],
+    "contact": [
+      396,
+      106,
+      801,
+      237
+    ],
+    "tout": [
+      380,
+      215,
+      1420,
+      74
+    ],
+    "decisions": [
+      380,
+      435,
+      833,
+      205
+    ],
+    "partager": [
+      1251,
+      142,
+      549,
+      67
+    ]
+  }
+}
