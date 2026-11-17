@@ -84,20 +84,18 @@
       "zone_closest": "section"
     },
     {
-      "at": "demande",
-      "label": "Nouvelle demande",
+      "at": "factures",
       "scroll": "#t-demandes",
       "click": "summary"
     },
     {
       "at": "demande",
-      "fill": [
+      "label": "Nouvelle demande",
+      "fill_now": [
         [
           "#sujet",
           "Photos pour le menu de Noël"
-        ]
-      ],
-      "fill_now": [
+        ],
         [
           "#description",
           "Bonjour, pouvez-vous ajouter les photos du menu de Noël sur la page Carte ?"
@@ -107,7 +105,7 @@
     {
       "at": "demande",
       "click": "form[action$='/portail/demandes'] button",
-      "wait": 1.2
+      "wait": 0.5
     },
     {
       "at": "rdv",
@@ -117,12 +115,6 @@
       "at": "rdv",
       "scroll": "#t-rdv",
       "zone": "#t-rdv",
-      "zone_closest": "section"
-    },
-    {
-      "at": "rdv",
-      "scroll": "#t-contrats",
-      "zone": "#t-contrats",
       "zone_closest": "section"
     },
     {
