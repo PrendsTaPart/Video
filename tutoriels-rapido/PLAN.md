@@ -176,7 +176,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM82 — Sécuriser son compte : la double authentification
 - [ ] CRM83 — La facture électronique Factur-X
 - [ ] CRM84 — Suivre les e-mails et SMS envoyés, gérer les désinscriptions
-- [~] CRM86 — Transformer vos appels en actions (appels de l'agent vocal → analyse de réunion, réglages : analyse automatique, enregistrement des appels de l'équipe ; développé le 17/11, PR #115 commit 98b21f25)
+- [x] CRM86 — Transformer vos appels en actions (appels de l'agent vocal → analyse de réunion, réglages : analyse automatique, enregistrement des appels de l'équipe ; développé le 17/11, PR #115 commit 98b21f25) — publié le 17/11 (1 min 16, RapidoCMS + Académie)
 - [x] CRM85 — Transformer une réunion en actions (analyse de réunion développée le 17/11, PR #115 ; tournage en cours)
 
 ### Inventaire du 17/11 (après-midi) — fonctionnalités de RapidoCRM sans tutoriel ou avec un tutoriel périmé
@@ -491,4 +491,9 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
 - CRM85 tourné (2 prises : la 1re décalée de 7 s sur le dépôt, titre désormais rempli d'un coup), voix Adam une prise = 1 989 crédits,
   publié : RapidoCMS `tutoriel-rapido-CRM85.mp4/.png`, Académie 103 épisodes (rapido-software).
 - essai-blanc.cjs gère désormais `upload` (dépôt de fichier) comme record.cjs.
+- Appels → analyse de réunion (accord de Michael, y compris la dépense d'enregistrement) : livré PR #115 commit 98b21f25. Débogage pendant le repérage :
+  webhook de fin d'appel de l'agent vocal en 500 à chaque appel (imports manquants, GREATEST() MySQL seulement) — corrigé ; analyse : « 8 000 €. »
+  non relevé, « décaler notre rendez-vous » pris pour un nouveau rendez-vous, politesse prise pour une question, rappel attribué au client,
+  appelant qui se présente affiché « Client » ; bouton « CopierLe compte rendu » ; statuts bruts « termine / non defini » et numéros coupés dans
+  le journal de l'agent vocal — tous corrigés. CRM86 tourné et publié (voix 1 226 crédits), Académie 104 épisodes.
 
