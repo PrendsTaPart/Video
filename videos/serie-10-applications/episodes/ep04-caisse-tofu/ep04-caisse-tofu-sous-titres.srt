@@ -1,0 +1,51 @@
+1
+00:00:00,300 --> 00:00:02,100
+Ton serveur prend la commande à table.
+
+2
+00:00:02,100 --> 00:00:03,720
+Puis il traverse la salle pour la
+
+3
+00:00:03,720 --> 00:00:04,740
+taper à la caisse.
+
+4
+00:00:04,740 --> 00:00:06,560
+Puis il revient avec le terminal pour
+
+5
+00:00:06,560 --> 00:00:07,260
+encaisser.
+
+6
+00:00:07,260 --> 00:00:08,200
+Le samedi soir,
+
+7
+00:00:08,200 --> 00:00:09,720
+ce sont des kilomètres.
+
+8
+00:00:09,720 --> 00:00:11,400
+Et si le téléphone de ton serveur
+
+9
+00:00:11,400 --> 00:00:12,460
+devenait ta caisse ?
+
+10
+00:00:12,460 --> 00:00:12,940
+Demain,
+
+11
+00:00:12,940 --> 00:00:13,880
+je te montre comment.
+
+12
+00:00:13,880 --> 00:00:14,880
+Commente CAISSE,
+
+13
+00:00:14,880 --> 00:00:16,140
+je t'envoie le lien.
