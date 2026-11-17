@@ -39,6 +39,7 @@ const cfg = JSON.parse(fs.readFileSync(path.join(EP, 'tuto.json'), 'utf8'));
     };
     let manquants = 0;
     for (const [i, sc] of cfg.scenes.entries()) {
+        if (sc.goto_file) sc.goto = require('fs').readFileSync(require('path').join(__dirname, '..', process.argv[2], sc.goto_file), 'utf8').trim(); // lien signé écrit par avant-<EP>.sh
         if (sc.goto) { await page.goto(/^https?:/.test(sc.goto) ? sc.goto : `${BASE}${sc.goto}`, { waitUntil: 'load', timeout: 15000 }).catch((e) => console.log(`  ✗ scène ${i} goto ${sc.goto} : ${e.message.split('\n')[0]}`)); await page.waitForTimeout(800); }
         const cibles = [['click', sc.click], ['hover', sc.hover], ['scroll', sc.scroll], ['zone', sc.zone],
             ...(sc.fill || []).map(([s]) => ['fill', s]), ...(sc.fill_now || []).map(([s]) => ['fill_now', s]), ...(sc.select || []).map(([s]) => ['select', s])];

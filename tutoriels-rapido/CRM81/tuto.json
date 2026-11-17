@@ -1,0 +1,138 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 40,
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "fixes": {},
+  "id": "CRM81",
+  "title": "Ouvrir un espace client à vos clients",
+  "em": "espace client",
+  "tag": "2 min · Débutant",
+  "start_path": "/boite-de-reception/contact/47",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Vos clients n'ont plus besoin de vous écrire pour retrouver une facture. Avec l'espace client, ils retrouvent tout au même endroit."
+    },
+    {
+      "key": "envoyer",
+      "text": "Depuis le fil d'un contact, ou depuis une demande, cliquez sur Envoyer l'accès à l'espace client."
+    },
+    {
+      "key": "lien",
+      "text": "Votre client reçoit par e-mail un lien personnel, valable sept jours. Pas de mot de passe à retenir."
+    },
+    {
+      "key": "espace",
+      "text": "Voici ce qu'il voit : ses demandes, ses devis, ses factures, ses rendez-vous et ses contrats. Uniquement les siens."
+    },
+    {
+      "key": "factures",
+      "text": "Il télécharge ses factures en PDF, et repère tout de suite celles qui restent à régler."
+    },
+    {
+      "key": "demande",
+      "text": "Il peut aussi ouvrir une nouvelle demande. Elle arrive directement dans vos tickets."
+    },
+    {
+      "key": "rdv",
+      "text": "Ses rendez-vous à venir affichent le lien de la visio, et un contrat en attente se signe en ligne."
+    },
+    {
+      "key": "securite",
+      "text": "Pour sa sécurité, la session se ferme après deux heures. S'il a perdu son lien, il en redemande un depuis la page de connexion."
+    },
+    {
+      "key": "outro",
+      "text": "Votre service client gagne du temps. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "zone": ".container-xxl, main"
+    },
+    {
+      "at": "envoyer",
+      "label": "Envoyer l'accès",
+      "click": "form[action*='/portail/'] button",
+      "wait": 0.4
+    },
+    {
+      "at": "lien",
+      "zone": ".encadre"
+    },
+    {
+      "at": "espace",
+      "label": "L'espace du client",
+      "goto_file": "lien-portail.txt"
+    },
+    {
+      "at": "espace",
+      "zone": "main"
+    },
+    {
+      "at": "factures",
+      "scroll": "#t-factures",
+      "zone": "#t-factures",
+      "zone_closest": "section"
+    },
+    {
+      "at": "demande",
+      "label": "Nouvelle demande",
+      "scroll": "#t-demandes",
+      "click": "summary"
+    },
+    {
+      "at": "demande",
+      "fill": [
+        [
+          "#sujet",
+          "Photos pour le menu de Noël"
+        ]
+      ],
+      "fill_now": [
+        [
+          "#description",
+          "Bonjour, pouvez-vous ajouter les photos du menu de Noël sur la page Carte ?"
+        ]
+      ]
+    },
+    {
+      "at": "demande",
+      "click": "form[action$='/portail/demandes'] button",
+      "wait": 1.2
+    },
+    {
+      "at": "rdv",
+      "goto": "/portail"
+    },
+    {
+      "at": "rdv",
+      "scroll": "#t-rdv",
+      "zone": "#t-rdv",
+      "zone_closest": "section"
+    },
+    {
+      "at": "rdv",
+      "scroll": "#t-contrats",
+      "zone": "#t-contrats",
+      "zone_closest": "section"
+    },
+    {
+      "at": "securite",
+      "top": true,
+      "zone": "h1"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ]
+}
