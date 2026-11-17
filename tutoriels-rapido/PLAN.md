@@ -164,18 +164,22 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM70 — Appeler vos clients en un clic (téléphonie : clic pour appeler, journal, rappel, « Qui m'appelle ? »)
 - [~] CRM71 — Appeler un client depuis sa fiche et le prompteur temps réel (17/11 : l'appel depuis la fiche est montré dans CRM70 ; le prompteur temps réel n'existe pas encore dans RapidoCRM)
 - [ ] CRM72 — Analyse des appels, enregistrement et tâches envoyées à l'équipe IA
-- [ ] CRM73 — L'agent IA sur votre site web
-- [ ] CRM74 — Boîte de réception et tickets
+- [ ] CRM73 — L'agent IA sur votre site web (à inclure : simulateur, documents partagés et guides comme sources, statut de commande — ajouts du 17/11)
+- [ ] CRM74 — Boîte de réception et tickets (à inclure : répondre à un SMS ou un e-mail depuis la file, refus si STOP — ajout du 17/11)
 - [x] CRM75 — Dessiner sa stratégie avec la Marketing Map
 - [x] CRM76 — Suivre ses prospects en direct sur la carte
-- [ ] CRM77 — Écrire un article de blog optimisé SEO
+- [ ] CRM77 — Écrire un article de blog optimisé SEO (à inclure : mesure de lecture, prospects par article, commentaires modérés — ajouts du 17/11)
 - [ ] CRM78 — Mots-clés, scores et tendances : le calendrier de publication
 - [ ] CRM79 — Publicités Google Ads et Meta Ads pilotées par les agents IA
 - [ ] CRM80 — La communication par entreprise et le tableau de bord KPI
 - [ ] CRM81 — Le portail client (lien magique : devis, factures, contrats, demandes, fidélité, rendez-vous)
 - [ ] CRM82 — Sécuriser son compte : la double authentification
 - [ ] CRM83 — La facture électronique Factur-X
-- [ ] CRM84 — Suivre les e-mails et SMS envoyés, gérer les désinscriptions
+- [~] CRM84 — Suivre les e-mails et SMS envoyés, gérer les désinscriptions (voix 1 158 crédits, rendu en cours le 17/11)
+- [~] CRM82 — (scénario prêt : activation, codes de secours, connexion avec code ; avant / après remettent le compte de démonstration sans 2FA)
+- [ ] CRM87 — Toute la communication d'un client (chronologie tous canaux, filtres, prochaines actions) — écran `/communication/client/{id}`
+- [ ] CRM88 — Confier un événement à l'équipe RapidoRH (devis signé, ticket urgent, appel, bloc de Marketing Map → tâches des employés IA)
+- [ ] CRM89 — Marketing Map : audience des pages et statistiques des posts RapidoCMS reliés aux blocs
 - [x] CRM86 — Transformer vos appels en actions (appels de l'agent vocal → analyse de réunion, réglages : analyse automatique, enregistrement des appels de l'équipe ; développé le 17/11, PR #115 commit 98b21f25) — publié le 17/11 (1 min 16, RapidoCMS + Académie)
 - [x] CRM85 — Transformer une réunion en actions (analyse de réunion développée le 17/11, PR #115 ; tournage en cours)
 
@@ -496,4 +500,13 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   non relevé, « décaler notre rendez-vous » pris pour un nouveau rendez-vous, politesse prise pour une question, rappel attribué au client,
   appelant qui se présente affiché « Client » ; bouton « CopierLe compte rendu » ; statuts bruts « termine / non defini » et numéros coupés dans
   le journal de l'agent vocal — tous corrigés. CRM86 tourné et publié (voix 1 226 crédits), Académie 104 épisodes.
+
+### Inventaire du 17/11 (soir) — travail des autres agents récupéré
+- RapidoCRM (session 0191…) : blog (mesure de lecture, prospects par article, commentaires), Marketing Map (audience, posts RapidoCMS), agent IA
+  du site (simulateur, sources, statut de commande), boîte de réception (réponse depuis la file), vue Communication, événements vers RapidoRH.
+  Écrans vérifiés en 1440 / 390 px : conformes au design system (sites-ecran, encadrés, pastilles, états vides). Seule la Segmentation (ancien écran)
+  n'était pas conforme → corrigée (commit 29396a58).
+- RapidoRH (branche ccr-281b30bc-x0biva) : outil crm-event-tool (événements CRM → tâches des employés IA), F1 (identifiants limités à l'entreprise).
+  Tutoriel RH correspondant à prévoir quand la branche sera fusionnée et déployée.
+- Site : pages produits refondues avec fil conducteur, nouvelles fonctionnalités et vrais écrans, plus aucun « V2 » (PR brouillon #49).
 
