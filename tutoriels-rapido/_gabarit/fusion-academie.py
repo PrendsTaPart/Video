@@ -1,12 +1,14 @@
 """Fusion de l'Académie : part de HEAD, n'ajoute que les épisodes demandés, depuis l'export frais.
-Usage : python3 fusion-academie.py <repo rapido-software> EP1 EP2 …
+Usage : python3 fusion-academie.py <repo rapido-software> [--remplacer] EP1 EP2 …
+--remplacer : un épisode déjà présent (tutoriel retourné) est remplacé à sa place par sa version fraîche.
 """
 import json
 import re
 import subprocess
 import sys
 
-repo, ids = sys.argv[1], sys.argv[2:]
+repo, ids = sys.argv[1], [a for a in sys.argv[2:] if a != '--remplacer']
+remplacer = '--remplacer' in sys.argv
 chemin = f'{repo}/resources/data/academie.json'
 head = json.loads(subprocess.check_output(['git', '-C', repo, 'show', 'HEAD:resources/data/academie.json']))
 frais = {e['id']: e for e in json.load(open(chemin))['episodes']}
@@ -23,6 +25,8 @@ def num(i):
 
 for i in ids:
     if i in deja:
+        if remplacer:
+            eps[[k for k, e in enumerate(eps) if e['id'] == i][0]] = frais[i]
         continue
     prefixe = re.match(r'[A-Z]+', i).group(0)
     meme = [k for k, e in enumerate(eps) if re.match(r'[A-Z]+', e['id']).group(0) == prefixe and not e['id'].startswith('RHV2')]

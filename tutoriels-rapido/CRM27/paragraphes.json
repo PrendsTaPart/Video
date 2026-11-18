@@ -1,10 +1,11 @@
 {
- "intro": 0.02,
- "infos": 5.8,
- "frequence": 15.68,
- "apparence": 19.72,
- "recompenses": 27.54,
- "lancer": 35.7,
- "outro": 41.66,
- "end": 46
+ "intro": 0.07,
+ "creer": 10.47,
+ "design": 15.67,
+ "lots": 22.11,
+ "regles": 29.43,
+ "partager": 35.63,
+ "resultats": 41.91,
+ "outro": 48.87,
+ "end": 53.04
 }

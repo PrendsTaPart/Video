@@ -10,132 +10,123 @@
  "voice": "audio/voix.mp3",
  "transcript": "audio/transcript.json",
  "capture": "captures/ecran.mp4",
- "start_path": "/contrat",
+ "start_path": "/contrats",
  "type_delay": 30,
- "fixes": {
-  "PDF": "PDF"
- },
- "end_cta": "Prochain épisode : les modèles de contrats",
+ "fixes": {},
+ "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
  "paragraphs": [
   {
    "key": "intro",
-   "text": "Dans ce tutoriel, on envoie un contrat à un client et il le signe en ligne, sans papier ni imprimante."
+   "text": "Envoyez vos contrats et faites-les signer en ligne : le document est figé, la signature horodatée, et chaque étape est tracée."
   },
   {
-   "key": "stats",
-   "text": "La page Contrats compte vos contrats envoyés, ceux qui sont signés, et ceux qui attendent encore une signature."
+   "key": "tableau",
+   "text": "La page Contrats suit tout : les contrats en attente, les signés, le taux de signature, le montant signé et les échéances à venir."
   },
   {
-   "key": "liste",
-   "text": "Dessous, chaque contrat avec son client, sa date et son statut. Filtrez par client, par statut ou par période."
+   "key": "filtres",
+   "text": "Filtrez par statut. Ici, un client a refusé : son motif est enregistré avec le contrat."
   },
   {
    "key": "envoyer",
-   "text": "Pour en envoyer un, ouvrez la fiche du client. Dans le menu Finance, cliquez sur Créer un contrat, puis choisissez un modèle."
-  },
-  {
-   "key": "details",
-   "text": "Vérifiez l'adresse du destinataire, fixez les dates de début et de fin, choisissez le message d'accompagnement, et envoyez."
+   "text": "Pour envoyer un contrat, partez de la fiche du client et choisissez un modèle : il se remplit avec ses informations."
   },
   {
    "key": "signature",
-   "text": "Votre client reçoit un lien sécurisé. Il relit le contrat, déjà rempli avec vos informations et les siennes, puis le signe du bout du doigt."
+   "text": "Votre client reçoit un lien sécurisé. Il relit le contrat, déjà rempli à son nom, signe du bout du doigt, accepte, et valide."
   },
   {
    "key": "suivi",
-   "text": "Le contrat passe alors en Signé, et vous téléchargez la version PDF signée en un clic."
+   "text": "Le contrat passe en Signé. Le journal garde chaque preuve : l'envoi, l'ouverture, la signature, l'adresse IP et l'empreinte du document."
+  },
+  {
+   "key": "echeances",
+   "text": "Relances automatiques, alerte avant le préavis, reconduction tacite : RapidoCRM s'en occupe. Et le PDF signé contient son certificat."
   },
   {
    "key": "outro",
-   "text": "Dans le prochain tutoriel, on crée ses propres modèles de contrats. À tout de suite !"
+   "text": "Des contrats signés en quelques minutes. Retrouvez tous nos tutoriels dans l'Académie !"
   }
  ],
  "scenes": [
   {
    "at": "intro",
-   "wait": 0.3
+   "wait": 0.4
   },
   {
-   "at": "stats",
-   "label": "Vos contrats",
-   "zone": [
-    390,
-    165,
-    1410,
-    120
-   ]
-  },
-  {
-   "at": "liste",
+   "at": "tableau",
    "label": "Le suivi",
    "zone": [
-    390,
-    455,
-    1400,
-    320
+    394,
+    186,
+    1392,
+    110
    ]
+  },
+  {
+   "at": "filtres",
+   "label": "Filtrer par statut",
+   "click": "a:has-text(\"refusé (1)\")",
+   "zone": "table"
   },
   {
    "at": "envoyer",
    "label": "Envoyer un contrat",
-   "goto": "/entreprises/5/profil",
-   "click": "#headingThree button"
-  },
-  {
-   "at": "envoyer",
-   "click": "button[data-bs-target=\"#listecontratModal\"]",
-   "wait": 3.0
-  },
-  {
-   "at": "details",
-   "label": "Destinataire et dates",
-   "click": "#listecontratModal label:has-text(\"Choisir\") >> nth=0",
-   "fill": [
-    [
-     "#editcontratModal input[type=date] >> nth=0",
-     "2026-12-01"
-    ],
-    [
-     "#editcontratModal input[type=date] >> nth=1",
-     "2027-11-30"
-    ]
-   ],
-   "select": [
-    [
-     "#editcontratModal select",
-     "Envoi de contrat"
-    ]
-   ],
-   "zone": "#editcontratModal .modal-content"
+   "hover": "a:has-text(\"envoyer depuis une fiche client\")"
   },
   {
    "at": "signature",
-   "label": "La signature du client",
+   "label": "Côté client",
    "goto_file": "lien-signature.txt",
-   "wait": 0.8,
-   "scroll": "h5:has-text(\"Contenu du contrat\"), :text(\"Contenu du contrat\")",
-   "zone": [
-    260,
-    60,
-    1400,
-    900
+   "wait": 0.6
+  },
+  {
+   "at": "signature",
+   "fill": [
+    [
+     "#nom",
+     "Claire Lafitte"
+    ]
    ]
+  },
+  {
+   "at": "signature",
+   "eval": "(async()=>{const c=document.getElementById('pad');c.scrollIntoView({block:'center'});await new Promise(r=>setTimeout(r,400));const r=c.getBoundingClientRect();const ev=(t,x,y)=>c.dispatchEvent(new MouseEvent(t,{bubbles:true,cancelable:true,clientX:r.left+x,clientY:r.top+y}));const pts=[];for(let i=0;i<=60;i++){const u=i/60;pts.push([80+u*520,95+Math.sin(u*Math.PI*5)*32-u*20]);}ev('mousedown',pts[0][0],pts[0][1]);for(const [x,y] of pts){ev('mousemove',x,y);await new Promise(r=>setTimeout(r,16));}ev('mouseup',pts[pts.length-1][0],pts[pts.length-1][1]);const p2=[];for(let i=0;i<=25;i++){const u=i/25;p2.push([300+u*260,130+Math.sin(u*Math.PI)*-18]);}ev('mousedown',p2[0][0],p2[0][1]);for(const [x,y] of p2){ev('mousemove',x,y);await new Promise(r=>setTimeout(r,16));}ev('mouseup',p2[25][0],p2[25][1]);})()",
+   "wait": 0.3
+  },
+  {
+   "at": "signature",
+   "click": "#consentement"
+  },
+  {
+   "at": "signature",
+   "click": "#boutonSigner",
+   "wait": 0.8
   },
   {
    "at": "suivi",
-   "label": "Le contrat signé",
-   "goto": "/contrat",
-   "click": "tbody tr:first-child .dropdown-toggle",
-   "zone": [
-    380,
-    380,
-    1460,
-    420
-   ]
+   "label": "Le journal des preuves",
+   "goto_file": "contrat-url.txt",
+   "wait": 0.4
+  },
+  {
+   "at": "suivi",
+   "scroll": "h5:has-text(\"Journal et preuves\")",
+   "zone": ".card:has(h5:has-text(\"Journal et preuves\"))"
+  },
+  {
+   "at": "echeances",
+   "label": "Échéances et certificat",
+   "top": true,
+   "zone": ".card:has(h5:has-text(\"Dates, montant et reconduction\"))"
+  },
+  {
+   "at": "echeances",
+   "hover": "a:has-text(\"pdf et certificat\")"
   },
   {
    "at": "outro",
-   "wait": 0.3
+   "goto": "/contrats"
   }
  ],
  "thumb_shot": "fin.png"
