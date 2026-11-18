@@ -1,0 +1,56 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Souris d'agneau · habillage</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:transparent}
+#st{position:absolute;inset:0;overflow:hidden}
+#grad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,7,4,.55) 0%,rgba(10,7,4,0) 22%,rgba(10,7,4,0) 55%,rgba(10,7,4,.78) 100%)}
+#dip{position:absolute;inset:0;background:#0d0a07;opacity:0}
+.t{position:absolute;left:70px;right:70px;text-align:center;color:#f6efe2;opacity:0;text-shadow:0 4px 30px rgba(0,0,0,.75)}
+.serif{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1}
+.it{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500}
+.gold{color:#d9b46a}
+.caps{font-family:Inter;font-weight:700;letter-spacing:12px;text-transform:uppercase}
+.rule{display:block;width:120px;height:2px;background:#d9b46a;margin:0 auto}
+#top{position:absolute;top:110px;left:0;right:0;text-align:center;font-family:Inter;font-weight:700;font-size:26px;letter-spacing:14px;color:rgba(246,239,226,.9);opacity:0}
+#fin{position:absolute;inset:0;opacity:0}
+#fin .bg{position:absolute;inset:-40px;background:url(src/fin.jpg) center/cover;filter:blur(26px) brightness(.32) saturate(1.2)}
+#fin .glow{position:absolute;inset:0;background:radial-gradient(circle at 50% 38%,rgba(217,180,106,.22),rgba(0,0,0,0) 55%)}
+#logo{position:absolute;left:50%;top:420px;width:420px;margin-left:-210px;opacity:0}
+</style></head><body><div id="st">
+<div id="grad"></div>
+<div id="top">VILLA BEACH · LA CARTE</div>
+<div id="fin"><div class="bg"></div><div class="glow"></div><img id="logo" src="journal/logo-villa-beach.png"></div>
+<div id="txt"></div><div id="dip"></div></div>
+<script>
+const DUR=23.0;
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), eo=x=>1-Math.pow(1-cl(x),3);
+// [début, fin, html, y, taille]
+const T=[
+ [0.85,5.0,'<div class="serif gold" style="font-size:330px">9&nbsp;h</div>',1080],
+ [1.85,5.0,'<div class="it" style="font-size:78px">de cuisson lente</div>',1440],
+ [5.35,8.2,'<div class="it" style="font-size:96px;line-height:1.05">Confite lentement<br><span class="gold">dans son jus</span></div>',1420],
+ [8.45,11.2,'<div class="it" style="font-size:92px;line-height:1.05">Un écrasé de<br>pommes de terre<br><span class="gold">onctueux</span></div>',1330],
+ [11.45,13.75,'<div class="it" style="font-size:96px;line-height:1.05">La viande se détache<br><span class="gold">toute seule</span></div>',1420],
+ [13.95,15.6,'<div><span class="rule"></span><div class="caps gold" style="font-size:30px;margin:34px 0 22px">À la carte</div><div class="serif" style="font-size:120px">Souris d\'agneau</div><div class="it" style="font-size:74px;margin-top:16px">confite 9 heures</div><div class="it gold" style="font-size:54px;margin-top:14px">écrasé de pommes de terre</div></div>',1180],
+ [15.85,18.9,'<div class="it" style="font-size:110px;line-height:1.05">Ce soir,<br><span class="gold">à la Villa Beach</span></div>',1400],
+ [19.6,23.0,'<div><div class="serif" style="font-size:96px">Souris d\'agneau</div><div class="it gold" style="font-size:66px;margin-top:12px">confite 9 heures</div></div>',960],
+ [20.4,23.0,'<div><span class="rule"></span><div class="caps" style="font-size:30px;margin-top:40px">Réservez votre table</div><div style="font-family:Inter;font-weight:500;font-size:40px;margin-top:22px;color:#d9b46a">villabeach.foodeatup.fr</div></div>',1330],
+];
+const CUTS=[5.2,8.35,11.35,13.85,15.7,19.0];
+const box=document.getElementById('txt');
+const EL=T.map(t=>{const d=document.createElement('div');d.className='t';d.innerHTML=t[2];d.style.top=t[3]+'px';box.appendChild(d);return d;});
+function render(t){
+ T.forEach((x,i)=>{const e=EL[i];const on=t>=x[0]&&t<x[1];if(!on){e.style.opacity=0;return;}
+  const u=t-x[0],p=eo(u/0.9);const out=cl((x[1]-t)/0.35);
+  e.style.opacity=Math.min(cl(u/0.7),out);e.style.transform=`translateY(${(1-p)*40}px)`;e.style.letterSpacing=(1-p)*4+'px';e.style.filter=`blur(${(1-cl(u/0.5))*8}px)`;});
+ // fondus noirs doux aux coupes, ouverture au noir
+ let d=t<0.7?1-t/0.7:0;CUTS.forEach(c=>{const u=Math.abs(t-c);if(u<0.18)d=Math.max(d,0.55*(1-u/0.18));});
+ if(t>22.3)d=Math.max(d,(t-22.3)/0.7);document.getElementById('dip').style.opacity=d;
+ const tp=document.getElementById('top');tp.style.opacity=(t>0.4&&t<5.0)?0.9*cl((t-0.4)/0.8)*cl((5.0-t)/0.4):0;
+ const f=document.getElementById('fin');f.style.opacity=t>=19?cl((t-19)/0.5):0;
+ const lg=document.getElementById('logo');const lu=t-19.15;lg.style.opacity=lu>0?cl(lu/0.8):0;lg.style.transform=`scale(${1.08-0.08*eo(lu/1.6)})`;
+ document.getElementById('grad').style.opacity=t<19?1:0;
+}
+window.CFG={dur:DUR};window.thumb=()=>render(14.9);
+</script></body></html>
