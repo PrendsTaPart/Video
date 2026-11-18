@@ -1,0 +1,46 @@
+{
+  "voiceStartInCapture": 4.614,
+  "paragraphs": {
+    "intro": 0.04,
+    "ouvrir": 6.76,
+    "resume": 10.32,
+    "actions": 15.8,
+    "chronologie": 21.43,
+    "filtrer": 29.8,
+    "contact": 33.76,
+    "outro": 37,
+    "end": 41.44
+  },
+  "zones": {
+    "resume": [
+      372,
+      168,
+      1436,
+      139
+    ],
+    "actions": [
+      380,
+      295,
+      1420,
+      143
+    ],
+    "chronologie": [
+      380,
+      217,
+      1420,
+      863
+    ],
+    "filtrer": [
+      380,
+      538,
+      1420,
+      490
+    ],
+    "contact": [
+      372,
+      168,
+      1436,
+      139
+    ]
+  }
+}
