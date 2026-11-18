@@ -1,0 +1,166 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 40,
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "fixes": {},
+  "id": "CRM74",
+  "title": "Boîte de réception et tickets : ne laissez aucun client sans réponse",
+  "em": "aucun client",
+  "tag": "2 min · Débutant",
+  "start_path": "/boite-de-reception",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Vos clients vous écrivent partout : chat du site, SMS, e-mail, centre d'aide. La boîte de réception réunit tout dans une seule file."
+    },
+    {
+      "key": "file",
+      "text": "L'onglet À traiter montre tout ce qui attend une réponse. Filtrez par canal si besoin."
+    },
+    {
+      "key": "sms",
+      "text": "Répondez à un SMS sans quitter la file. Il part depuis votre numéro, et jamais vers quelqu'un qui a répondu STOP."
+    },
+    {
+      "key": "ticket",
+      "text": "Une demande plus longue à traiter ? Transformez l'e-mail en ticket, d'un clic."
+    },
+    {
+      "key": "tickets",
+      "text": "Dans Tickets, chaque demande a un numéro, une priorité et un délai de réponse. Celles en retard ressortent en rouge."
+    },
+    {
+      "key": "repondre",
+      "text": "Ouvrez un ticket et répondez au client. Cochez Note interne pour écrire à vos collègues sans que le client le voie."
+    },
+    {
+      "key": "resoudre",
+      "text": "Quand c'est réglé, passez le ticket en Résolu."
+    },
+    {
+      "key": "avis",
+      "text": "Le client reçoit un lien pour noter votre réponse, et dire s'il vous recommanderait à un proche."
+    },
+    {
+      "key": "nps",
+      "text": "Votre satisfaction moyenne et votre NPS des quatre-vingt-dix derniers jours s'affichent en haut de la page Tickets."
+    },
+    {
+      "key": "outro",
+      "text": "Plus aucun message oublié. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "file",
+      "label": "Tout dans une file",
+      "zone": ".card:has(.ligne)"
+    },
+    {
+      "at": "sms",
+      "label": "Répondre par SMS",
+      "click": "summary:has-text('Répondre par SMS')"
+    },
+    {
+      "at": "sms",
+      "fill_now": [
+        [
+          "form[action*='/messages/1/repondre'] textarea",
+          "Bonjour Camille, oui, nous livrons samedi entre 9 h et 12 h. Bonne journée !"
+        ]
+      ]
+    },
+    {
+      "at": "sms",
+      "click": "form[action*='/messages/1/repondre'] button",
+      "wait": 0.4
+    },
+    {
+      "at": "ticket",
+      "label": "E-mail → ticket",
+      "click": "form[action*='/messages/2/ticket'] button",
+      "wait": 0.4
+    },
+    {
+      "at": "tickets",
+      "label": "Les tickets",
+      "goto": "/tickets"
+    },
+    {
+      "at": "tickets",
+      "zone": "table"
+    },
+    {
+      "at": "repondre",
+      "click": "a:has-text('T-00001')"
+    },
+    {
+      "at": "repondre",
+      "fill": [
+        [
+          "#rep",
+          "Bonjour Camille, voici votre facture de septembre."
+        ]
+      ]
+    },
+    {
+      "at": "repondre",
+      "click": "form:has(#rep) button.btn-primary",
+      "wait": 0.4
+    },
+    {
+      "at": "resoudre",
+      "label": "Résolu",
+      "select": [
+        [
+          "#st",
+          "Résolu"
+        ]
+      ]
+    },
+    {
+      "at": "resoudre",
+      "click": "form:has(#st) button",
+      "wait": 0.4
+    },
+    {
+      "at": "avis",
+      "label": "L'avis du client",
+      "goto_file": "lien-avis.txt"
+    },
+    {
+      "at": "avis",
+      "eval": "(()=>{for(const [n,v] of [['note','5'],['nps','9']]){const i=document.querySelector(`input[name=${n}][value='${v}']`);if(i){i.checked=true;i.dispatchEvent(new Event('change',{bubbles:true}));}}})()",
+      "wait": 0.8
+    },
+    {
+      "at": "avis",
+      "click": "button:has-text('Envoyer mon avis')",
+      "wait": 0.4
+    },
+    {
+      "at": "nps",
+      "label": "Satisfaction et NPS",
+      "goto": "/tickets"
+    },
+    {
+      "at": "nps",
+      "zone": ".row:has-text('NPS')"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ]
+}

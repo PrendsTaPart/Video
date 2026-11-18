@@ -126,16 +126,14 @@
     },
     {
       "at": "mesure",
-      "scroll": "Statistiques",
-      "zone": "Statistiques",
-      "zone_closest": ".card"
+      "scroll": ".card:has(> strong:text('Statistiques'))",
+      "zone": ".card:has(> strong:text('Statistiques'))"
     },
     {
       "at": "commentaires",
       "label": "Les commentaires",
-      "scroll": "Commentaires",
-      "zone": "Commentaires",
-      "zone_closest": ".card"
+      "scroll": "form[action*='/commentaires/']",
+      "zone": ".card:has(form[action$='/commentaires'])"
     },
     {
       "at": "commentaires",
