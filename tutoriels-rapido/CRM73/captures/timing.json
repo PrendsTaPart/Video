@@ -1,0 +1,42 @@
+{
+  "voiceStartInCapture": 2.965,
+  "paragraphs": {
+    "intro": 0.05,
+    "modeles": 7.89,
+    "connaissances": 16.53,
+    "faq": 23.97,
+    "tester": 27.61,
+    "reponse": 32.81,
+    "prix": 36.09,
+    "conseiller": 38.45,
+    "installer": 45.37,
+    "outro": 48.77,
+    "end": 52.96
+  },
+  "zones": {
+    "modeles": [
+      372,
+      299,
+      1436,
+      216
+    ],
+    "connaissances": [
+      970,
+      282,
+      830,
+      798
+    ],
+    "reponse": [
+      404,
+      686,
+      1372,
+      193
+    ],
+    "installer": [
+      404,
+      622,
+      1372,
+      76
+    ]
+  }
+}

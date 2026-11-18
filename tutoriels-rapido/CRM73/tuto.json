@@ -81,13 +81,11 @@
       "at": "faq",
       "label": "Une question fréquente",
       "scroll": "#faqQ",
-      "fill": [
+      "fill_now": [
         [
           "#faqQ",
           "Quels sont vos horaires ?"
-        ]
-      ],
-      "fill_now": [
+        ],
         [
           "#faqR",
           "Nous sommes ouverts du lundi au vendredi, de 9 h à 18 h, et le samedi matin sur rendez-vous."
@@ -97,7 +95,7 @@
     {
       "at": "faq",
       "click": "form[action$='/faq'] button",
-      "wait": 0.4
+      "wait": 0.2
     },
     {
       "at": "tester",
@@ -107,11 +105,11 @@
     {
       "at": "tester",
       "click": "details.simulateur > summary",
-      "wait": 0.3
+      "wait": 0.1
     },
     {
       "at": "reponse",
-      "fill": [
+      "fill_now": [
         [
           "details.simulateur input",
           "Quels sont vos horaires ?"
@@ -121,12 +119,12 @@
     {
       "at": "reponse",
       "click": "details.simulateur form button",
-      "wait": 0.8,
+      "wait": 0.3,
       "zone": "details.simulateur"
     },
     {
       "at": "prix",
-      "fill": [
+      "fill_now": [
         [
           "details.simulateur input",
           "Combien coûte un site vitrine ?"
@@ -136,11 +134,11 @@
     {
       "at": "prix",
       "click": "details.simulateur form button",
-      "wait": 0.8
+      "wait": 0.3
     },
     {
       "at": "conseiller",
-      "fill": [
+      "fill_now": [
         [
           "details.simulateur input",
           "Je voudrais parler à un conseiller"
@@ -150,7 +148,7 @@
     {
       "at": "conseiller",
       "click": "details.simulateur form button",
-      "wait": 0.8
+      "wait": 0.3
     },
     {
       "at": "installer",
