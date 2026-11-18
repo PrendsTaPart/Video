@@ -1,770 +1,704 @@
 [
   {
-    "text": "Dans",
-    "start": 0.03,
-    "end": 0.22,
+    "text": "Une",
+    "start": 0.06,
+    "end": 0.17,
     "id": "w0"
   },
   {
-    "text": "ce",
+    "text": "campagne",
     "start": 0.23,
-    "end": 0.31,
+    "end": 0.72,
     "id": "w1"
   },
   {
-    "text": "tutoriel,",
-    "start": 0.37,
-    "end": 0.91,
+    "text": "email",
+    "start": 0.72,
+    "end": 1.03,
     "id": "w2"
   },
   {
-    "text": "on",
-    "start": 0.91,
-    "end": 0.96,
+    "text": "se",
+    "start": 1.06,
+    "end": 1.17,
     "id": "w3"
   },
   {
-    "text": "envoie",
-    "start": 1.15,
-    "end": 1.35,
+    "text": "prépare",
+    "start": 1.21,
+    "end": 1.64,
     "id": "w4"
   },
   {
-    "text": "une",
-    "start": 1.35,
-    "end": 1.52,
+    "text": "en",
+    "start": 1.64,
+    "end": 1.77,
     "id": "w5"
   },
   {
-    "text": "campagne",
-    "start": 1.52,
-    "end": 1.98,
+    "text": "trois",
+    "start": 1.77,
+    "end": 2.08,
     "id": "w6"
   },
   {
-    "text": "email",
-    "start": 1.98,
-    "end": 2.36,
+    "text": "étapes.",
+    "start": 2.17,
+    "end": 2.68,
     "id": "w7"
   },
   {
-    "text": "à",
-    "start": 2.36,
-    "end": 2.41,
+    "text": "La",
+    "start": 2.74,
+    "end": 2.92,
     "id": "w8"
   },
   {
-    "text": "ses",
-    "start": 2.41,
-    "end": 2.55,
+    "text": "cible,",
+    "start": 2.93,
+    "end": 3.69,
     "id": "w9"
   },
   {
-    "text": "clients",
-    "start": 2.58,
-    "end": 3,
+    "text": "le",
+    "start": 3.69,
+    "end": 3.84,
     "id": "w10"
   },
   {
-    "text": "avec",
-    "start": 3,
-    "end": 3.44,
+    "text": "message,",
+    "start": 3.84,
+    "end": 4.47,
     "id": "w11"
   },
   {
-    "text": "Rapido",
-    "start": 3.44,
-    "end": 4.1,
+    "text": "puis",
+    "start": 4.48,
+    "end": 4.76,
     "id": "w12"
   },
   {
-    "text": "CRM,",
-    "start": 4.1,
-    "end": 4.57,
+    "text": "la",
+    "start": 4.85,
+    "end": 4.93,
     "id": "w13"
   },
   {
-    "text": "en",
-    "start": 4.57,
-    "end": 4.62,
+    "text": "validation.",
+    "start": 5.05,
+    "end": 6,
     "id": "w14"
   },
   {
-    "text": "trois",
-    "start": 4.71,
-    "end": 4.96,
+    "text": "Choisissez",
+    "start": 6.1,
+    "end": 6.85,
     "id": "w15"
   },
   {
-    "text": "étapes.",
-    "start": 4.96,
-    "end": 5.74,
+    "text": "la",
+    "start": 6.85,
+    "end": 7.01,
     "id": "w16"
   },
   {
-    "text": "La",
-    "start": 5.77,
-    "end": 5.86,
+    "text": "cible.",
+    "start": 7.01,
+    "end": 7.44,
     "id": "w17"
   },
   {
-    "text": "page",
-    "start": 5.86,
-    "end": 6.05,
+    "text": "Ici",
+    "start": 7.5,
+    "end": 7.78,
     "id": "w18"
   },
   {
-    "text": "Campagne",
-    "start": 6.11,
-    "end": 6.61,
+    "text": "un",
+    "start": 7.84,
+    "end": 8.02,
     "id": "w19"
   },
   {
-    "text": "regroupe",
-    "start": 6.61,
-    "end": 7.1,
+    "text": "segment,",
+    "start": 8.02,
+    "end": 8.93,
     "id": "w20"
   },
   {
-    "text": "tout",
-    "start": 7.1,
-    "end": 7.35,
+    "text": "les",
+    "start": 8.94,
+    "end": 9.1,
     "id": "w21"
   },
   {
-    "text": "votre",
-    "start": 7.35,
-    "end": 7.66,
+    "text": "prospects",
+    "start": 9.1,
+    "end": 9.52,
     "id": "w22"
   },
   {
-    "text": "historique.",
-    "start": 7.66,
-    "end": 8.47,
+    "text": "chauds",
+    "start": 9.6,
+    "end": 9.9,
     "id": "w23"
   },
   {
-    "text": "Email,",
-    "start": 8.54,
-    "end": 9.24,
+    "text": "de",
+    "start": 9.9,
+    "end": 10.01,
     "id": "w24"
   },
   {
-    "text": "SMS",
-    "start": 9.24,
-    "end": 9.46,
+    "text": "bordeaux.",
+    "start": 10.01,
+    "end": 10.64,
     "id": "w25"
   },
   {
-    "text": "et",
-    "start": 9.65,
-    "end": 9.76,
+    "text": "Choisissez",
+    "start": 10.7,
+    "end": 11.26,
     "id": "w26"
   },
   {
-    "text": "newsletter",
-    "start": 9.76,
-    "end": 10.84,
+    "text": "ensuite",
+    "start": 11.26,
+    "end": 11.66,
     "id": "w27"
   },
   {
-    "text": "avec",
-    "start": 10.84,
-    "end": 11.11,
+    "text": "un",
+    "start": 11.7,
+    "end": 11.81,
     "id": "w28"
   },
   {
-    "text": "la",
-    "start": 11.11,
-    "end": 11.24,
+    "text": "modèle",
+    "start": 11.85,
+    "end": 12.19,
     "id": "w29"
   },
   {
-    "text": "cible",
-    "start": 11.26,
-    "end": 11.59,
+    "text": "d'email,",
+    "start": 12.23,
+    "end": 12.68,
     "id": "w30"
   },
   {
-    "text": "et",
-    "start": 11.6,
-    "end": 11.72,
+    "text": "le",
+    "start": 12.74,
+    "end": 12.81,
     "id": "w31"
   },
   {
-    "text": "la",
-    "start": 11.72,
-    "end": 11.76,
+    "text": "portefeuille",
+    "start": 12.81,
+    "end": 13.59,
     "id": "w32"
   },
   {
-    "text": "date",
-    "start": 11.86,
-    "end": 12.08,
+    "text": "concerné",
+    "start": 13.59,
+    "end": 14.16,
     "id": "w33"
   },
   {
-    "text": "d'envoi",
-    "start": 12.08,
-    "end": 12.5,
+    "text": "et",
+    "start": 14.16,
+    "end": 14.3,
     "id": "w34"
   },
   {
-    "text": "de",
-    "start": 12.5,
-    "end": 12.61,
+    "text": "la",
+    "start": 14.3,
+    "end": 14.38,
     "id": "w35"
   },
   {
-    "text": "chacun.",
-    "start": 12.61,
-    "end": 13.2,
+    "text": "date",
+    "start": 14.44,
+    "end": 14.73,
     "id": "w36"
   },
   {
-    "text": "Cliquez",
-    "start": 13.23,
-    "end": 13.76,
+    "text": "d'envoi.",
+    "start": 14.73,
+    "end": 15.48,
     "id": "w37"
   },
   {
-    "text": "sur",
-    "start": 13.76,
-    "end": 14,
+    "text": "À",
+    "start": 15.48,
+    "end": 15.54,
     "id": "w38"
   },
   {
-    "text": "Nouvelle",
-    "start": 14,
-    "end": 14.64,
+    "text": "l'étape",
+    "start": 15.54,
+    "end": 15.9,
     "id": "w39"
   },
   {
-    "text": "campagne.",
-    "start": 14.64,
-    "end": 15.3,
+    "text": "suivante,",
+    "start": 15.9,
+    "end": 16.48,
     "id": "w40"
   },
   {
-    "text": "Première",
-    "start": 15.33,
-    "end": 15.87,
+    "text": "vous",
+    "start": 16.48,
+    "end": 16.65,
     "id": "w41"
   },
   {
-    "text": "étape,",
-    "start": 15.89,
-    "end": 16.26,
+    "text": "retrouvez",
+    "start": 16.69,
+    "end": 17.07,
     "id": "w42"
   },
   {
-    "text": "le",
-    "start": 16.45,
-    "end": 16.52,
+    "text": "la",
+    "start": 17.07,
+    "end": 17.25,
     "id": "w43"
   },
   {
-    "text": "ciblage.",
-    "start": 16.52,
-    "end": 17.3,
+    "text": "cible",
+    "start": 17.27,
+    "end": 17.68,
     "id": "w44"
   },
   {
-    "text": "Toutes",
-    "start": 17.33,
-    "end": 17.61,
+    "text": "et",
+    "start": 17.68,
+    "end": 17.74,
     "id": "w45"
   },
   {
-    "text": "vos",
-    "start": 17.67,
-    "end": 17.84,
+    "text": "le",
+    "start": 17.85,
+    "end": 17.9,
     "id": "w46"
   },
   {
-    "text": "entreprises,",
-    "start": 17.84,
-    "end": 18.63,
+    "text": "nombre",
+    "start": 17.9,
+    "end": 18.26,
     "id": "w47"
   },
   {
-    "text": "vos",
-    "start": 18.63,
-    "end": 18.81,
+    "text": "de",
+    "start": 18.26,
+    "end": 18.32,
     "id": "w48"
   },
   {
-    "text": "contacts",
-    "start": 18.81,
-    "end": 19.31,
+    "text": "personnes",
+    "start": 18.32,
+    "end": 18.8,
     "id": "w49"
   },
   {
-    "text": "ou",
-    "start": 19.39,
-    "end": 19.44,
+    "text": "touchées.",
+    "start": 19.08,
+    "end": 19.42,
     "id": "w50"
   },
   {
-    "text": "un",
-    "start": 19.44,
-    "end": 19.56,
+    "text": "Écrivez",
+    "start": 19.5,
+    "end": 19.97,
     "id": "w51"
   },
   {
-    "text": "segment",
-    "start": 19.56,
-    "end": 19.92,
+    "text": "l'objet",
+    "start": 19.97,
+    "end": 20.52,
     "id": "w52"
   },
   {
-    "text": "filtrés",
-    "start": 20.06,
-    "end": 20.42,
+    "text": "et",
+    "start": 20.52,
+    "end": 20.62,
     "id": "w53"
   },
   {
-    "text": "par",
-    "start": 20.42,
-    "end": 20.56,
+    "text": "ajustez",
+    "start": 20.65,
+    "end": 21.06,
     "id": "w54"
   },
   {
-    "text": "domaine",
-    "start": 20.66,
-    "end": 21.03,
+    "text": "le",
+    "start": 21.06,
+    "end": 21.14,
     "id": "w55"
   },
   {
-    "text": "d'activité.",
-    "start": 21.03,
-    "end": 21.9,
+    "text": "texte",
+    "start": 21.21,
+    "end": 21.5,
     "id": "w56"
   },
   {
-    "text": "Choisissez",
-    "start": 21.93,
-    "end": 22.46,
+    "text": "dans",
+    "start": 21.5,
+    "end": 21.69,
     "id": "w57"
   },
   {
-    "text": "ensuite",
-    "start": 22.46,
-    "end": 22.84,
+    "text": "l'éditeur.",
+    "start": 21.81,
+    "end": 22.56,
     "id": "w58"
   },
   {
-    "text": "un",
-    "start": 22.84,
-    "end": 22.86,
+    "text": "Vérifiez",
+    "start": 22.62,
+    "end": 23.07,
     "id": "w59"
   },
   {
-    "text": "modèle",
-    "start": 23.05,
-    "end": 23.3,
+    "text": "le",
+    "start": 23.07,
+    "end": 23.2,
     "id": "w60"
   },
   {
-    "text": "d'email",
-    "start": 23.3,
-    "end": 23.68,
+    "text": "rendu",
+    "start": 23.2,
+    "end": 23.52,
     "id": "w61"
   },
   {
-    "text": "parmi",
-    "start": 23.68,
-    "end": 23.91,
+    "text": "sur",
+    "start": 23.52,
+    "end": 23.72,
     "id": "w62"
   },
   {
-    "text": "les",
-    "start": 24,
-    "end": 24.13,
+    "text": "ordinateur,",
+    "start": 23.72,
+    "end": 24.56,
     "id": "w63"
   },
   {
-    "text": "vôtres.",
-    "start": 24.13,
-    "end": 24.7,
+    "text": "puis",
+    "start": 24.56,
+    "end": 24.81,
     "id": "w64"
   },
   {
-    "text": "Sélectionnez",
-    "start": 24.73,
-    "end": 25.31,
+    "text": "sur",
+    "start": 24.93,
+    "end": 24.98,
     "id": "w65"
   },
   {
-    "text": "les",
-    "start": 25.31,
-    "end": 25.46,
+    "text": "téléphone.",
+    "start": 25.34,
+    "end": 25.88,
     "id": "w66"
   },
   {
-    "text": "portefeuilles",
-    "start": 25.46,
-    "end": 26.12,
+    "text": "Le",
+    "start": 25.94,
+    "end": 26.02,
     "id": "w67"
   },
   {
-    "text": "de",
-    "start": 26.12,
-    "end": 26.22,
+    "text": "bouton",
+    "start": 26.02,
+    "end": 26.44,
     "id": "w68"
   },
   {
-    "text": "commerciaux",
-    "start": 26.22,
-    "end": 26.71,
+    "text": "vérifier",
+    "start": 26.44,
+    "end": 26.98,
     "id": "w69"
   },
   {
-    "text": "concernés,",
-    "start": 26.79,
-    "end": 27.42,
+    "text": "contrôle",
+    "start": 27.03,
+    "end": 27.58,
     "id": "w70"
   },
   {
-    "text": "puis",
-    "start": 27.46,
-    "end": 27.67,
+    "text": "votre",
+    "start": 27.58,
+    "end": 27.94,
     "id": "w71"
   },
   {
-    "text": "la",
-    "start": 27.67,
-    "end": 27.79,
+    "text": "email",
+    "start": 27.94,
+    "end": 28.27,
     "id": "w72"
   },
   {
-    "text": "date",
-    "start": 27.79,
-    "end": 27.96,
+    "text": "avant",
+    "start": 28.27,
+    "end": 28.3,
     "id": "w73"
   },
   {
-    "text": "et",
-    "start": 28.06,
-    "end": 28.16,
+    "text": "l'envoi.",
+    "start": 28.66,
+    "end": 29.2,
     "id": "w74"
   },
   {
-    "text": "l'heure",
-    "start": 28.16,
-    "end": 28.6,
+    "text": "Et",
+    "start": 29.26,
+    "end": 29.31,
     "id": "w75"
   },
   {
-    "text": "d'envoi.",
-    "start": 28.6,
-    "end": 29.3,
+    "text": "envoyez-vous",
+    "start": 29.31,
+    "end": 29.99,
     "id": "w76"
   },
   {
-    "text": "Deuxième",
-    "start": 29.33,
-    "end": 29.82,
+    "text": "un",
+    "start": 29.99,
+    "end": 30.1,
     "id": "w77"
   },
   {
-    "text": "étape,",
-    "start": 29.82,
-    "end": 30.26,
+    "text": "test",
+    "start": 30.1,
+    "end": 30.3,
     "id": "w78"
   },
   {
-    "text": "Rapido",
-    "start": 30.45,
-    "end": 30.65,
+    "text": "pour",
+    "start": 30.35,
+    "end": 30.56,
     "id": "w79"
   },
   {
-    "text": "CRM",
-    "start": 30.65,
-    "end": 30.84,
+    "text": "le",
+    "start": 30.56,
+    "end": 30.67,
     "id": "w80"
   },
   {
-    "text": "affiche",
-    "start": 30.84,
-    "end": 31.29,
+    "text": "voir",
+    "start": 30.67,
+    "end": 30.89,
     "id": "w81"
   },
   {
-    "text": "le",
-    "start": 31.29,
-    "end": 31.42,
+    "text": "dans",
+    "start": 30.96,
+    "end": 31.13,
     "id": "w82"
   },
   {
-    "text": "nombre",
-    "start": 31.42,
-    "end": 31.79,
+    "text": "votre",
+    "start": 31.13,
+    "end": 31.42,
     "id": "w83"
   },
   {
-    "text": "de",
-    "start": 31.79,
-    "end": 31.93,
+    "text": "propre",
+    "start": 31.42,
+    "end": 31.63,
     "id": "w84"
   },
   {
-    "text": "personnes",
-    "start": 32,
-    "end": 32.52,
+    "text": "boîte.",
+    "start": 31.94,
+    "end": 32.35,
     "id": "w85"
   },
   {
-    "text": "touchées.",
-    "start": 32.52,
-    "end": 33.3,
+    "text": "Le",
+    "start": 32.42,
+    "end": 32.49,
     "id": "w86"
   },
   {
-    "text": "On",
-    "start": 33.33,
-    "end": 33.43,
+    "text": "lien",
+    "start": 32.49,
+    "end": 32.7,
     "id": "w87"
   },
   {
-    "text": "écrit",
-    "start": 33.43,
-    "end": 33.72,
+    "text": "de",
+    "start": 32.76,
+    "end": 32.88,
     "id": "w88"
   },
   {
-    "text": "l'objet",
-    "start": 33.78,
-    "end": 34.22,
+    "text": "désinscription",
+    "start": 32.88,
+    "end": 33.84,
     "id": "w89"
   },
   {
     "text": "et",
-    "start": 34.22,
-    "end": 34.26,
+    "start": 33.84,
+    "end": 33.9,
     "id": "w90"
   },
   {
-    "text": "on",
-    "start": 34.45,
-    "end": 34.48,
+    "text": "le",
+    "start": 33.95,
+    "end": 34.06,
     "id": "w91"
   },
   {
-    "text": "ajuste",
-    "start": 34.48,
-    "end": 34.88,
+    "text": "suivi",
+    "start": 34.12,
+    "end": 34.33,
     "id": "w92"
   },
   {
-    "text": "le",
-    "start": 34.88,
-    "end": 35.01,
+    "text": "des",
+    "start": 34.33,
+    "end": 34.44,
     "id": "w93"
   },
   {
-    "text": "texte",
-    "start": 35.01,
-    "end": 35.31,
+    "text": "ouvertures",
+    "start": 34.52,
+    "end": 35.08,
     "id": "w94"
   },
   {
-    "text": "dans",
-    "start": 35.4,
-    "end": 35.61,
+    "text": "et",
+    "start": 35.14,
+    "end": 35.22,
     "id": "w95"
   },
   {
-    "text": "l'éditeur.",
-    "start": 35.61,
-    "end": 36.47,
+    "text": "des",
+    "start": 35.22,
+    "end": 35.43,
     "id": "w96"
   },
   {
-    "text": "Dernière",
-    "start": 36.53,
-    "end": 37.07,
+    "text": "clics",
+    "start": 35.43,
+    "end": 35.69,
     "id": "w97"
   },
   {
-    "text": "étape,",
-    "start": 37.09,
-    "end": 37.46,
+    "text": "sont",
+    "start": 35.86,
+    "end": 36.04,
     "id": "w98"
   },
   {
-    "text": "l'aperçue.",
-    "start": 37.65,
-    "end": 38.5,
+    "text": "ajoutés",
+    "start": 36.05,
+    "end": 36.47,
     "id": "w99"
   },
   {
-    "text": "Vérifiez",
-    "start": 38.53,
-    "end": 39.07,
+    "text": "automatiquement",
+    "start": 36.47,
+    "end": 37.4,
     "id": "w100"
   },
   {
-    "text": "le",
-    "start": 39.09,
-    "end": 39.21,
+    "text": "à",
+    "start": 37.41,
+    "end": 37.47,
     "id": "w101"
   },
   {
-    "text": "rendu,",
-    "start": 39.21,
-    "end": 39.71,
+    "text": "chaque",
+    "start": 37.47,
+    "end": 37.85,
     "id": "w102"
   },
   {
-    "text": "puis",
-    "start": 39.71,
-    "end": 40,
+    "text": "envoi.",
+    "start": 37.85,
+    "end": 38.26,
     "id": "w103"
   },
   {
-    "text": "validez.",
-    "start": 40,
-    "end": 40.8,
+    "text": "Le",
+    "start": 38.46,
+    "end": 38.56,
     "id": "w104"
   },
   {
-    "text": "La",
-    "start": 40.83,
-    "end": 40.92,
+    "text": "bon",
+    "start": 38.56,
+    "end": 38.74,
     "id": "w105"
   },
   {
-    "text": "campagne",
-    "start": 40.92,
-    "end": 41.41,
+    "text": "message",
+    "start": 38.8,
+    "end": 39.36,
     "id": "w106"
   },
   {
-    "text": "partira",
-    "start": 41.41,
-    "end": 41.76,
+    "text": "à",
+    "start": 39.36,
+    "end": 39.43,
     "id": "w107"
   },
   {
-    "text": "toute",
-    "start": 41.95,
-    "end": 42.15,
+    "text": "la",
+    "start": 39.43,
+    "end": 39.57,
     "id": "w108"
   },
   {
-    "text": "seule",
-    "start": 42.15,
-    "end": 42.42,
+    "text": "bonne",
+    "start": 39.61,
+    "end": 40,
     "id": "w109"
   },
   {
-    "text": "à",
-    "start": 42.46,
-    "end": 42.52,
+    "text": "cible.",
+    "start": 40,
+    "end": 40.65,
     "id": "w110"
   },
   {
-    "text": "leur",
-    "start": 42.52,
-    "end": 42.77,
+    "text": "Retrouvez",
+    "start": 40.74,
+    "end": 41.22,
     "id": "w111"
   },
   {
-    "text": "prévu.",
-    "start": 42.77,
-    "end": 43.28,
+    "text": "tous",
+    "start": 41.22,
+    "end": 41.46,
     "id": "w112"
   },
   {
-    "text": "Dans",
-    "start": 43.33,
-    "end": 43.55,
+    "text": "nos",
+    "start": 41.46,
+    "end": 41.64,
     "id": "w113"
   },
   {
-    "text": "le",
-    "start": 43.55,
-    "end": 43.61,
+    "text": "tutoriels",
+    "start": 41.64,
+    "end": 42.17,
     "id": "w114"
   },
   {
-    "text": "prochain",
-    "start": 43.67,
-    "end": 44.18,
+    "text": "dans",
+    "start": 42.17,
+    "end": 42.38,
     "id": "w115"
   },
   {
-    "text": "tutoriel,",
-    "start": 44.18,
-    "end": 44.8,
+    "text": "l'académie.",
+    "start": 42.44,
+    "end": 43.04,
     "id": "w116"
-  },
-  {
-    "text": "on",
-    "start": 44.8,
-    "end": 44.92,
-    "id": "w117"
-  },
-  {
-    "text": "fait",
-    "start": 44.92,
-    "end": 45.17,
-    "id": "w118"
-  },
-  {
-    "text": "la",
-    "start": 45.17,
-    "end": 45.29,
-    "id": "w119"
-  },
-  {
-    "text": "même",
-    "start": 45.29,
-    "end": 45.54,
-    "id": "w120"
-  },
-  {
-    "text": "chose",
-    "start": 45.54,
-    "end": 45.83,
-    "id": "w121"
-  },
-  {
-    "text": "par",
-    "start": 45.83,
-    "end": 46.04,
-    "id": "w122"
-  },
-  {
-    "text": "SMS.",
-    "start": 46.06,
-    "end": 46.47,
-    "id": "w123"
-  },
-  {
-    "text": "À",
-    "start": 46.53,
-    "end": 46.56,
-    "id": "w124"
-  },
-  {
-    "text": "tout",
-    "start": 46.56,
-    "end": 46.81,
-    "id": "w125"
-  },
-  {
-    "text": "de",
-    "start": 46.87,
-    "end": 46.92,
-    "id": "w126"
-  },
-  {
-    "text": "suite!",
-    "start": 46.98,
-    "end": 47.46,
-    "id": "w127"
   }
 ]
