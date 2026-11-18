@@ -1,132 +1,134 @@
 {
-  "id": "CRM13",
-  "product": "crm",
-  "kicker": "Tutoriel RapidoCRM",
-  "title": "Factures et suivi des paiements",
-  "em": "suivi des paiements",
-  "tag": "1 min · Débutant",
-  "intro": 3.0,
-  "outro": 4.5,
-  "voice": "audio/voix.mp3",
-  "transcript": "audio/transcript.json",
-  "capture": "captures/ecran.mp4",
-  "start_path": "/facturation",
-  "type_delay": 30,
-  "fixes": {
-    "PDF": "PDF",
-    "TTC": "TTC"
+ "id": "CRM13",
+ "product": "crm",
+ "kicker": "Tutoriel RapidoCRM",
+ "title": "Factures et suivi des paiements",
+ "em": "paiements",
+ "tag": "1 min · Débutant",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/facturation",
+ "type_delay": 30,
+ "fixes": {
+  "Factur-X": "Factur-X"
+ },
+ "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Suivez vos factures, faites-vous payer en ligne, et laissez RapidoCRM relancer les retards."
   },
-  "end_cta": "Prochain épisode : les dépenses",
-  "paragraphs": [
-    {
-      "key": "intro",
-      "text": "Dans ce tutoriel, on gère ses factures dans RapidoCRM et on suit ce qui a été payé."
-    },
-    {
-      "key": "stats",
-      "text": "En haut de la page Factures, vos chiffres clés : le total facturé, l'argent encaissé, ce qui reste en attente et les retards."
-    },
-    {
-      "key": "liste",
-      "text": "Dessous, la liste des factures. Filtrez par statut, payée ou en attente, ou par client."
-    },
-    {
-      "key": "signature",
-      "text": "Quand un client signe un devis en ligne, la facture est créée automatiquement, avec un lien de paiement par carte."
-    },
-    {
-      "key": "creer",
-      "text": "Vous pouvez aussi créer une facture à la main : c'est le même formulaire que le devis, avec le statut payée ou en attente."
-    },
-    {
-      "key": "suivi",
-      "text": "Le menu de chaque facture permet de la visualiser, de la télécharger en PDF, ou de relancer le client."
-    },
-    {
-      "key": "apercu",
-      "text": "Dès que le client paie en ligne, la facture passe en Payée, et il reçoit automatiquement son reçu."
-    },
-    {
-      "key": "outro",
-      "text": "Dans le prochain tutoriel, on enregistre ses dépenses pour connaître son vrai bénéfice. À tout de suite !"
-    }
-  ],
-  "scenes": [
-    {
-      "at": "intro",
-      "wait": 0.3
-    },
-    {
-      "at": "stats",
-      "label": "Les chiffres clés",
-      "zone": [
-        390,
-        140,
-        1410,
-        310
-      ]
-    },
-    {
-      "at": "liste",
-      "label": "La liste des factures",
-      "scroll": "button[data-bs-target=\"#factlist\"]",
-      "zone": [
-        400,
-        470,
-        1370,
-        560
-      ]
-    },
-    {
-      "at": "signature",
-      "label": "Signature et paiement",
-      "click": "h1:has-text(\"Facturation\")",
-      "zone": [
-        400,
-        470,
-        1370,
-        560
-      ]
-    },
-    {
-      "at": "creer",
-      "label": "Créer une facture",
-      "click": "#factlist button:has-text(\"Créer une facture\")",
-      "wait": 0.6
-    },
-    {
-      "at": "creer",
-      "scroll": "#factlist .modal.show label[for=\"payee\"]",
-      "zone": "#factlist .modal.show label[for=\"payee\"]",
-      "zone_closest": ".col-12"
-    },
-    {
-      "at": "suivi",
-      "label": "Suivre et relancer",
-      "click": "#factlist .modal.show .btn-close"
-    },
-    {
-      "at": "suivi",
-      "click": "#factlist tbody tr:first-child .dropdown-toggle",
-      "zone": "#factlist .dropdown-menu.show"
-    },
-    {
-      "at": "apercu",
-      "label": "La facture du client",
-      "goto": "/facturation/facture/7",
-      "wait": 0.6,
-      "scroll": "h5:has-text(\"Informations de facture\")",
-      "zone": [
-        500,
-        100,
-        920,
-        800
-      ]
-    },
-    {
-      "at": "outro",
-      "wait": 0.3
-    }
-  ],
-  "thumb_shot": "fin.png"
+  {
+   "key": "stats",
+   "text": "En haut, vos chiffres clés : le total facturé, l'argent encaissé, ce qui reste en attente, les retards, et votre bénéfice après dépenses."
+  },
+  {
+   "key": "liste",
+   "text": "Dessous, la liste des factures. Filtrez-la par statut, par exemple celles en attente de paiement."
+  },
+  {
+   "key": "actions",
+   "text": "Le menu de chaque facture permet de la visualiser, la télécharger en PDF, la renvoyer au client, ou la modifier."
+  },
+  {
+   "key": "fiche",
+   "text": "La facture affiche ses lignes, ses totaux et vos coordonnées bancaires. Téléchargez-la en PDF, ou en facture électronique Factur-X."
+  },
+  {
+   "key": "paiement",
+   "text": "Quand votre client paie en ligne par carte, la facture passe en Payée toute seule, une fois le paiement vérifié."
+  },
+  {
+   "key": "relances",
+   "text": "Dans Relances, activez la relance des factures impayées : un, sept et quinze jours après l'échéance. Les relances du jour apparaissent aussitôt."
+  },
+  {
+   "key": "outro",
+   "text": "Moins d'impayés, plus de temps pour vos clients. Retrouvez tous nos tutoriels dans l'Académie !"
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.4
+  },
+  {
+   "at": "stats",
+   "label": "Vos chiffres clés",
+   "zone": [
+    394,
+    210,
+    1392,
+    230
+   ]
+  },
+  {
+   "at": "liste",
+   "label": "Filtrer",
+   "scroll": "#FactureStatus"
+  },
+  {
+   "at": "liste",
+   "select": [
+    [
+     "#FactureStatus",
+     "En attente"
+    ]
+   ],
+   "wait": 0.6,
+   "zone": "table"
+  },
+  {
+   "at": "actions",
+   "label": "Le menu",
+   "click": "table tbody tr >> nth=0 >> button.dropdown-toggle",
+   "wait": 0.6
+  },
+  {
+   "at": "fiche",
+   "label": "La facture",
+   "goto": "/facturation/facture/7",
+   "wait": 0.4
+  },
+  {
+   "at": "fiche",
+   "hover": "a:has-text(\"Facture électronique (Factur-X)\"), button:has-text(\"Facture électronique (Factur-X)\")"
+  },
+  {
+   "at": "paiement",
+   "label": "Paiement en ligne",
+   "goto": "/facturation",
+   "wait": 0.4,
+   "zone": "table"
+  },
+  {
+   "at": "relances",
+   "label": "Relances automatiques",
+   "goto": "/relances",
+   "wait": 0.3
+  },
+  {
+   "at": "relances",
+   "click": "#factures_actif",
+   "wait": 0.3
+  },
+  {
+   "at": "relances",
+   "click": "button:has-text(\"enregistrer les réglages\")",
+   "wait": 0.8
+  },
+  {
+   "at": "relances",
+   "scroll": "h5:has-text(\"Prévues aujourd\")",
+   "zone": ".card:has(h5:has-text(\"Prévues aujourd\"))"
+  },
+  {
+   "at": "outro",
+   "top": true
+  }
+ ],
+ "thumb_shot": "fin.png"
 }

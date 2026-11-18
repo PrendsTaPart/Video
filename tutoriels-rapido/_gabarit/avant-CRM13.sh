@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# CRM13 : lignes de devis/factures de démo (copie de tournage uniquement).
-php "$(dirname "$0")/facturation-demo.php" /home/user/rapido-crm-film/database/database.sqlite
+# CRM13 (factures) : lignes et échéances fictives, relances des factures désactivées avant le tournage.
+cd /home/user/rapido-crm-film && php artisan tinker --execute="require '/home/user/video/tutoriels-rapido/_gabarit/factures-demo.php';"
