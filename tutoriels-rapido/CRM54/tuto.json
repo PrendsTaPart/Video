@@ -1,0 +1,141 @@
+{
+ "product": "crm",
+ "kicker": "Tutoriel RapidoCRM",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "type_delay": 40,
+ "thumb_shot": "fin.png",
+ "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+ "fixes": {},
+ "id": "CRM54",
+ "title": "L'éditeur sur téléphone",
+ "em": "téléphone",
+ "tag": "1 min · Débutant",
+ "start_path": "/editeur/edit?template=2&type=Site%20web",
+ "telephone": {
+  "scale": 1.18
+ },
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Une idée pour votre site, loin de votre bureau ? L'éditeur de RapidoCRM fonctionne aussi sur votre téléphone."
+  },
+  {
+   "key": "ecran",
+   "text": "La page occupe tout l'écran. En bas, la barre d'outils : ajouter, style, réglages, calques, annuler, aperçu et enregistrer."
+  },
+  {
+   "key": "ajouter",
+   "text": "Touchez Ajouter : les sections sont rangées par usage. Ouvrez Preuves, puis touchez Chiffres clés : la section s'ajoute juste après celle que vous aviez sélectionnée."
+  },
+  {
+   "key": "actions",
+   "text": "L'élément sélectionné garde sa barre d'actions rapides : modifier le texte, monter, descendre, dupliquer ou supprimer."
+  },
+  {
+   "key": "style",
+   "text": "Style règle son apparence : typographie, dimensions, couleurs."
+  },
+  {
+   "key": "calques",
+   "text": "Calques montre la structure de la page, pour retrouver un élément en un toucher."
+  },
+  {
+   "key": "apercu",
+   "text": "Aperçu affiche la page telle que vos visiteurs la verront, sans aucun outil autour."
+  },
+  {
+   "key": "enregistrer",
+   "text": "Enfin, touchez Enregistrer, donnez un nom à votre création, puis validez : votre travail est gardé."
+  },
+  {
+   "key": "outro",
+   "text": "Votre site se modifie partout, même depuis votre téléphone. Retrouvez tous nos tutoriels dans l'Académie !"
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.4
+  },
+  {
+   "at": "ecran",
+   "label": "La barre d'outils",
+   "zone": ".rm-barre"
+  },
+  {
+   "at": "ajouter",
+   "label": "Ajouter une section",
+   "eval": "(()=>{const e=window.editeurRapido;const h=e.getWrapper().find('[data-section=\"hero\"]')[0];if(h){e.select(h);}})()",
+   "click": ".rm-barre [data-tiroir=blocs]",
+   "wait": 0.8
+  },
+  {
+   "at": "ajouter",
+   "click": ".rm-ouvert .gjs-block-category:has-text('Preuves') .gjs-title",
+   "wait": 0.6
+  },
+  {
+   "at": "ajouter",
+   "click": ".rm-ouvert .gjs-block:has-text('Chiffres clés')"
+  },
+  {
+   "at": "actions",
+   "label": "Actions rapides",
+   "zone": ".rm-actions"
+  },
+  {
+   "at": "actions",
+   "hover": ".rm-actions [data-a=dupliquer]"
+  },
+  {
+   "at": "style",
+   "label": "Style",
+   "click": ".rm-barre [data-tiroir=style]"
+  },
+  {
+   "at": "style",
+   "click": ".rm-ouvert .gjs-sm-sector:has-text('Typographie') .gjs-sm-sector-title"
+  },
+  {
+   "at": "calques",
+   "label": "Calques",
+   "click": ".rm-barre [data-tiroir=calques]"
+  },
+  {
+   "at": "apercu",
+   "label": "Aperçu",
+   "click": ".rm-barre [data-action=apercu]",
+   "wait": 2.4
+  },
+  {
+   "at": "enregistrer",
+   "label": "Enregistrer",
+   "click": ".rm-barre [data-action=enregistrer]",
+   "wait": 0.4,
+   "eval": "window.editeurRapido.stopCommand('preview')"
+  },
+  {
+   "at": "enregistrer",
+   "fill_now": [
+    [
+     "#nameInput",
+     "La Table de Marius — mobile"
+    ]
+   ],
+   "wait": 0.8
+  },
+  {
+   "at": "enregistrer",
+   "click": "#saveNameBtn",
+   "wait": 0.6
+  },
+  {
+   "at": "outro",
+   "wait": 0.4
+  }
+ ]
+}

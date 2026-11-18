@@ -7,6 +7,10 @@
 //   { "at": "clé du paragraphe", "goto": "/chemin" (optionnel), "scroll": "Titre exact" | "css",
 //     "eval": "js exécuté dans la page avant le clic", "hover": "css", "click": "css", "fill": [["css","texte"]...], "fill_now": [["css","texte"]] (sans frappe), "select": [["css","libellé"]], "drag": ["source","cible"], "wait": 0.8,
 //     "zone": "css" | "Titre exact" | [x,y,w,h], "label": "Libellé du chapitre", "zoom": 1.25 }
+//
+// Cadre téléphone (tuto.json → "telephone": { "scale": 1.18 }) : l'application est filmée dans une iframe de 390 × 844
+// posée dans un téléphone au centre de l'image (page servie sur la même origine par une route simulée). Les scènes
+// (goto, click, fill, zone…) visent alors le contenu de l'iframe ; start_path est la page ouverte dans le téléphone.
 const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
@@ -18,6 +22,12 @@ const OUT = path.join(EP, 'captures');
 fs.mkdirSync(OUT, { recursive: true });
 
 const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;height:28px;margin:-3px 0 0 -4px;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\'%3E%3Cpath d=\'M4 2l16 9-7 2-3 7z\' fill=\'%23111\' stroke=\'white\' stroke-width=\'1.6\'/%3E%3C/svg%3E") no-repeat}#rx-cursor.down{transform:scale(.85)}';
+
+const CADRE_TELEPHONE = (src, scale) => `<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;height:100%;background:radial-gradient(circle at 30% 20%,#123b1f,#05140a 70%);overflow:hidden}
+#tel{position:absolute;left:50%;top:50%;width:390px;height:844px;transform:translate(-50%,-50%) scale(${scale});border-radius:46px;background:#0b0b0c;padding:12px;box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 0 2px #2a2a2a}
+#tel iframe{width:390px;height:844px;border:0;border-radius:36px;background:#fff;display:block}
+</style></head><body><div id="tel"><iframe name="app" src="${src}"></iframe></div></body></html>`;
 
 (async () => {
     // Navigateur en français : les champs de date natifs suivent la langue du système (jj/mm/aaaa).
@@ -57,6 +67,16 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
             document.addEventListener('DOMContentLoaded', () => { const st = document.createElement('style'); st.textContent = css; document.head.appendChild(st); });
         }, cfg.css);
     }
+    // Cadre téléphone : la souris au-dessus de l'iframe est relayée au curseur de la page (coordonnées mises à l'échelle).
+    if (cfg.telephone) {
+        await page.addInitScript(() => {
+            if (window.top === window) return;
+            const relai = (e, type) => { try { const fe = window.frameElement; const r = fe.getBoundingClientRect(); const k = r.width / fe.offsetWidth; window.parent.__rxPos(r.left + e.clientX * k, r.top + e.clientY * k, type); } catch (err) { /* hors cadre */ } };
+            document.addEventListener('mousemove', (e) => relai(e, 'move'), true);
+            document.addEventListener('mousedown', (e) => relai(e, 'down'), true);
+            document.addEventListener('mouseup', (e) => relai(e, 'up'), true);
+        });
+    }
     const installCursor = async () => {
         // cfg.css : habillage propre au tournage (ex. masquer un bandeau technique de la copie locale), réinjecté à chaque page.
         await page.addStyleTag({ content: CURSOR_CSS + (cfg.css || '') }).catch(() => {});
@@ -67,6 +87,7 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
             document.addEventListener('mousemove', (e) => { window.__rxMouse = { x: e.clientX, y: e.clientY }; c.style.left = e.clientX + 'px'; c.style.top = e.clientY + 'px'; });
             document.addEventListener('mousedown', () => c.classList.add('down'));
             document.addEventListener('mouseup', () => c.classList.remove('down'));
+            window.__rxPos = (x, y, type) => { window.__rxMouse = { x, y }; c.style.left = x + 'px'; c.style.top = y + 'px'; if (type === 'down') c.classList.add('down'); if (type === 'up') c.classList.remove('down'); };
         }).catch(() => {});
     };
     page.on('load', installCursor);
@@ -81,7 +102,16 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
     }
 
     const t0 = Date.now();
-    await page.goto(`${BASE}${cfg.start_path || '/dashboard'}`, { waitUntil: 'networkidle' });
+    // app : la page filmée, ou l'iframe du cadre téléphone (mêmes méthodes : locator, evaluate, goto…).
+    let app = page;
+    if (cfg.telephone) {
+        await page.route(`${BASE}/__cadre-telephone`, (r) => r.fulfill({ contentType: 'text/html', body: CADRE_TELEPHONE(cfg.start_path || '/dashboard', cfg.telephone.scale || 1.18) }));
+        await page.goto(`${BASE}/__cadre-telephone`, { waitUntil: 'load' });
+        app = page.frame({ name: 'app' });
+        await app.waitForLoadState('networkidle').catch(() => {});
+    } else {
+        await page.goto(`${BASE}${cfg.start_path || '/dashboard'}`, { waitUntil: 'networkidle' });
+    }
     await installCursor();
     await page.waitForTimeout(1800);
     const ready = (Date.now() - t0) / 1000;
@@ -95,10 +125,10 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
     const resolve = async (target) => {
         if (!target || Array.isArray(target)) return null;
         let loc = null;
-        try { loc = page.locator(target).first(); if (await loc.count()) return loc; } catch (e) { /* pas un sélecteur valide */ }
-        loc = page.locator('main h1,main h2,main h3,main h4,main h5,main h6,.content-wrapper h1,.content-wrapper h2,.content-wrapper h3,.content-wrapper h4,.content-wrapper h5,h1,h2,h3,h4,h5,h6').filter({ hasText: new RegExp(`^\\s*${target.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*$`) }).first();
+        try { loc = app.locator(target).first(); if (await loc.count()) return loc; } catch (e) { /* pas un sélecteur valide */ }
+        loc = app.locator('main h1,main h2,main h3,main h4,main h5,main h6,.content-wrapper h1,.content-wrapper h2,.content-wrapper h3,.content-wrapper h4,.content-wrapper h5,h1,h2,h3,h4,h5,h6').filter({ hasText: new RegExp(`^\\s*${target.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*$`) }).first();
         if (await loc.count()) return loc;
-        loc = page.getByText(target, { exact: true }).first();
+        loc = app.getByText(target, { exact: true }).first();
         return (await loc.count()) ? loc : null;
     };
     const scrollTo = async (target) => {
@@ -112,7 +142,7 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
         if (Array.isArray(z)) return z;
         const el = await resolve(z);
         if (!el) return null;
-        const r = await el.evaluate((n, closest) => {
+        const r = cfg.telephone ? await el.evaluateHandle((n, c) => (c && n.closest(c)) || n, closest || null).then((h) => h.asElement().boundingBox()).then((b) => b && [b.x, b.y, b.width, b.height]) : await el.evaluate((n, closest) => {
             if (closest && n.closest(closest)) n = n.closest(closest);
             const isH = /^H[1-6]$/.test(n.tagName);
             let rect = n.getBoundingClientRect();
@@ -126,6 +156,7 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
             }
             return [rect.left, rect.top, rect.width, rect.height];
         }, closest || null);
+        if (!r) return null;
         let [x, y, w, h] = r.map((v) => Math.round(v));
         const pad = 14; x -= pad; y -= pad; w += 2 * pad; h += 2 * pad;
         x = Math.max(0, x); y = Math.max(0, y); w = Math.min(w, 1920 - x); h = Math.min(h, 1080 - y);
@@ -136,13 +167,13 @@ const CURSOR_CSS = '#rx-cursor{position:fixed;z-index:2147483647;width:28px;heig
     for (const sc of cfg.scenes) {
         await at(T[sc.at]);
         if (sc.goto_file) sc.goto = fs.readFileSync(path.join(path.dirname(OUT), sc.goto_file), 'utf8').trim(); // lien signé généré par avant-<EP>.sh
-        if (sc.goto) { await page.goto(/^https?:\/\//.test(sc.goto) ? sc.goto : `${BASE}${sc.goto}`, { waitUntil: 'load', timeout: 15000 }).catch(() => {}); await page.waitForLoadState('networkidle', { timeout: 1500 }).catch(() => {}); await installCursor(); await page.waitForTimeout(900); }
-        if (sc.eval) await page.evaluate(sc.eval).catch((e) => console.warn('eval', e.message));
+        if (sc.goto) { await app.goto(/^https?:\/\//.test(sc.goto) ? sc.goto : `${BASE}${sc.goto}`, { waitUntil: 'load', timeout: 15000 }).catch(() => {}); await app.waitForLoadState('networkidle', { timeout: 1500 }).catch(() => {}); await installCursor(); await page.waitForTimeout(900); }
+        if (sc.eval) await app.evaluate(sc.eval).catch((e) => console.warn('eval', e.message));
         if (sc.click) {
             const el = await resolve(sc.click);
-            if (el) { await el.scrollIntoViewIfNeeded().catch(() => {}); const b = await el.boundingBox(); if (b) await moveTo(b.x + Math.min(b.width / 2, 120), b.y + b.height / 2); await page.waitForTimeout(250); await el.click().catch(() => {}); await page.waitForLoadState('networkidle', { timeout: 1500 }).catch(() => {}); await installCursor(); await page.waitForTimeout(800); }
+            if (el) { await el.scrollIntoViewIfNeeded().catch(() => {}); const b = await el.boundingBox(); if (b) await moveTo(b.x + Math.min(b.width / 2, 120), b.y + b.height / 2); await page.waitForTimeout(250); await el.click().catch(() => {}); await app.waitForLoadState('networkidle', { timeout: cfg.telephone ? 300 : 1500 }).catch(() => {}); await installCursor(); await page.waitForTimeout(800); }
         }
-        if (sc.top) { await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' })); await page.waitForTimeout(700); }
+        if (sc.top) { await app.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' })); await page.waitForTimeout(700); }
         if (sc.scroll) await scrollTo(sc.scroll);
         for (const [sel, txt] of sc.fill || []) {
             const el = await resolve(sel); if (!el) continue;
