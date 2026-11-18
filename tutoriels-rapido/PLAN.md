@@ -168,7 +168,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM74 — Boîte de réception et tickets (à inclure : répondre à un SMS ou un e-mail depuis la file, refus si STOP — ajout du 17/11)
 - [x] CRM75 — Dessiner sa stratégie avec la Marketing Map
 - [x] CRM76 — Suivre ses prospects en direct sur la carte
-- [ ] CRM77 — Écrire un article de blog optimisé SEO (à inclure : mesure de lecture, prospects par article, commentaires modérés — ajouts du 17/11)
+- [x] CRM77 — Écrire un article de blog optimisé SEO (18/11 : voix 1 105 crédits, 2e prise, publié RapidoCMS + Académie ; bouton « Enregistrer et publier » ajouté)
 - [ ] CRM78 — Mots-clés, scores et tendances : le calendrier de publication
 - [ ] CRM79 — Publicités Google Ads et Meta Ads pilotées par les agents IA
 - [ ] CRM80 — La communication par entreprise et le tableau de bord KPI

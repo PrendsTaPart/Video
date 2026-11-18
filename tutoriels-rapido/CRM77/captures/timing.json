@@ -1,0 +1,48 @@
+{
+  "voiceStartInCapture": 2.98,
+  "paragraphs": {
+    "intro": 0.04,
+    "nouveau": 8.2,
+    "titre": 14.36,
+    "contenu": 19.52,
+    "note": 24.8,
+    "publier": 32.84,
+    "public": 39,
+    "mesure": 44.76,
+    "commentaires": 53.08,
+    "outro": 57.64,
+    "end": 61.6
+  },
+  "zones": {
+    "intro": [
+      380,
+      248,
+      1420,
+      209
+    ],
+    "contenu": [
+      396,
+      589,
+      916,
+      491
+    ],
+    "note": [
+      1324,
+      76,
+      476,
+      531
+    ],
+    "mesure": [
+      1324,
+      583,
+      476,
+      175
+    ],
+    "commentaires": [
+      1324,
+      745,
+      476,
+      238
+    ]
+  }
+}
