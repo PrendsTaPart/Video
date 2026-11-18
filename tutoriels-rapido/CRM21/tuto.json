@@ -13,7 +13,7 @@
  "start_path": "/admin/segmentation",
  "type_delay": 30,
  "fixes": {},
- "end_cta": "Prochain épisode : les modèles d'e-mails et de SMS",
+ "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
  "paragraphs": [
   {
    "key": "intro",
@@ -180,14 +180,31 @@
   },
   {
    "at": "fiche",
-   "eval": "(()=>{const a=[...document.querySelectorAll('a')].find(x=>/Prospects chauds de Bordeaux/i.test(x.innerText)&&/segmentation\\/\\d/.test(x.href));if(a)location.href=a.href;})()",
+   "eval": "(()=>{const tr=[...document.querySelectorAll('tr')].find(x=>/Prospects chauds de Bordeaux/i.test(x.innerText));const a=tr&&tr.querySelector('a[href*=\"segmentation/\"]');if(a)location.href=a.href;})()",
    "wait": 1.8
   },
   {
    "at": "utiliser",
    "label": "Cibler un segment",
    "goto": "/ajout-campagne-email",
-   "wait": 0.6
+   "select": [
+    [
+     "select:has(option:has-text(\"Par segment\"))",
+     "Par segment"
+    ]
+   ],
+   "wait": 0.5
+  },
+  {
+   "at": "utiliser",
+   "select": [
+    [
+     "select:has(option:has-text(\"Choisir un segment\"))",
+     "Prospects chauds de Bordeaux"
+    ]
+   ],
+   "wait": 0.6,
+   "zone": ".card:has(option:has-text(\"Par segment\"))"
   },
   {
    "at": "outro",

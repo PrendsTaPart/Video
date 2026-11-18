@@ -10,117 +10,131 @@
  "voice": "audio/voix.mp3",
  "transcript": "audio/transcript.json",
  "capture": "captures/ecran.mp4",
- "start_path": "/sondage",
+ "start_path": "/sondages",
  "type_delay": 22,
- "fixes": {
-  "QR": "QR"
- },
- "end_cta": "Prochain épisode : les avis clients",
+ "fixes": {},
+ "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
  "paragraphs": [
   {
    "key": "intro",
-   "text": "Dans ce tutoriel, on demande l'avis de ses clients avec un sondage en ligne."
+   "text": "Un sondage RapidoCRM s'affiche une question par écran, se remplit en quelques secondes, et adapte son parcours aux réponses."
   },
   {
-   "key": "infos",
-   "text": "Dans Sondages, créez un nouveau sondage : un nom, son objectif, sa période, et si l'on peut y répondre une ou plusieurs fois."
-  },
-  {
-   "key": "apparence",
-   "text": "À l'étape Apparence, on choisit l'image de fond, le titre, le bouton et les couleurs. Un QR code permet de le tester sur son téléphone."
+   "key": "creer",
+   "text": "Donnez un nom au sondage et créez-le : il commence par la question de recommandation, notée de zéro à dix."
   },
   {
    "key": "questions",
-   "text": "Puis on rédige les questions et leurs réponses possibles. On en ajoute autant qu'on veut, l'aperçu suit à droite."
+   "text": "Ajoutez vos questions : choix, oui ou non, texte, e-mail, téléphone, date, étoiles… Par exemple : souhaitez-vous être rappelé ?"
+  },
+  {
+   "key": "logique",
+   "text": "Ajoutez ensuite le numéro de téléphone. Puis, avec une règle : si la réponse est non, on va directement à la fin du sondage."
+  },
+  {
+   "key": "partager",
+   "text": "Enregistrez, puis partagez : un lien, un code à intégrer dans votre site, ou un QR code."
   },
   {
    "key": "resultats",
-   "text": "Une fois le sondage créé, partagez son lien : chaque réponse arrive dans RapidoCRM et enrichit la fiche de vos contacts."
+   "text": "Les résultats calculent votre NPS, le taux de complétion et la répartition des réponses, avec les commentaires libres et un export CSV."
   },
   {
    "key": "outro",
-   "text": "Dans le prochain tutoriel, on récolte des avis clients. À tout de suite !"
+   "text": "Écoutez vos clients, simplement. Retrouvez tous nos tutoriels dans l'Académie !"
   }
  ],
  "scenes": [
   {
    "at": "intro",
-   "wait": 0.3
+   "wait": 0.4
   },
   {
-   "at": "infos",
-   "label": "Informations générales",
+   "at": "creer",
+   "label": "Nouveau sondage",
    "fill": [
     [
-     "input[placeholder=\"Entrer un nom\"]",
-     "Satisfaction clients"
+     "#nomNouveauSondage",
+     "Avis après rendez-vous"
     ]
    ],
-   "click": "a:has-text(\"créer un sondage\") >> visible=true",
-   "wait": 0.8
-  },
-  {
-   "at": "infos",
-   "click": "text=Remplir un formulaire",
-   "fill": [
-    [
-     "input[type=date] >> nth=0",
-     "2026-12-01"
-    ],
-    [
-     "input[type=date] >> nth=1",
-     "2026-12-31"
-    ]
-   ]
-  },
-  {
-   "at": "infos",
-   "click": "text=Répondre une seule fois",
-   "zone": [
-    410,
-    380,
-    1360,
-    620
-   ]
-  },
-  {
-   "at": "apparence",
-   "label": "Apparence",
-   "click": "button:has-text(\"suivant\") >> visible=true",
-   "wait": 0.8,
-   "zone": [
-    410,
-    360,
-    1360,
-    700
-   ]
+   "click": "#boutonCreerSondage",
+   "wait": 1.2
   },
   {
    "at": "questions",
    "label": "Les questions",
-   "click": "button:has-text(\"suivant\") >> visible=true",
-   "wait": 1.0,
-   "zone": [
-    410,
-    360,
-    1360,
-    700
+   "click": "[data-ajouter=\"oui_non\"]",
+   "wait": 0.4
+  },
+  {
+   "at": "questions",
+   "fill": [
+    [
+     "[data-champ=\"titre\"][data-i=\"2\"]",
+     "Souhaitez-vous être rappelé ?"
+    ]
    ]
+  },
+  {
+   "at": "logique",
+   "label": "Logique conditionnelle",
+   "click": "[data-ajouter=\"telephone\"]"
+  },
+  {
+   "at": "logique",
+   "fill_now": [
+    [
+     "[data-champ=\"titre\"][data-i=\"3\"]",
+     "Votre numéro de téléphone"
+    ]
+   ],
+   "click": "[data-ouvrir=\"2\"]"
+  },
+  {
+   "at": "logique",
+   "click": "[data-ajouter-regle=\"2\"]"
+  },
+  {
+   "at": "logique",
+   "select": [
+    [
+     "[data-regle-si=\"0\"][data-i=\"2\"]",
+     "Non"
+    ],
+    [
+     "[data-regle-aller=\"0\"][data-i=\"2\"]",
+     "Fin du sondage"
+    ]
+   ],
+   "wait": 0.6,
+   "zone": ".regle"
+  },
+  {
+   "at": "partager",
+   "label": "Partager",
+   "click": "#enregistrerSondage",
+   "wait": 0.8
+  },
+  {
+   "at": "partager",
+   "click": "#tab-partager",
+   "wait": 0.4
   },
   {
    "at": "resultats",
-   "label": "Partager",
-   "wait": 0.3,
-   "zone": [
-    380,
-    70,
-    1500,
-    980
-   ]
+   "label": "Résultats",
+   "goto": "/sondages",
+   "wait": 0.3
+  },
+  {
+   "at": "resultats",
+   "eval": "(()=>{const tr=[...document.querySelectorAll('tr')].find(x=>/Satisfaction après livraison/.test(x.innerText));const a=tr&&[...tr.querySelectorAll('a')].find(a=>/resultats/.test(a.href));if(a)location.href=a.href;})()",
+   "wait": 1.5
   },
   {
    "at": "outro",
-   "wait": 0.3
+   "top": true
   }
  ],
  "thumb_shot": "fin.png"
