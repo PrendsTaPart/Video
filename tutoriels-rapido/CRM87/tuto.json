@@ -1,0 +1,112 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 40,
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "fixes": {},
+  "id": "CRM87",
+  "title": "Toute la communication d'un client sur un seul écran",
+  "em": "Toute la communication",
+  "tag": "1 min · Débutant",
+  "start_path": "/entreprises/1/profil",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Un client vous appelle. Qu'est-ce qu'on lui a envoyé, qu'a-t-il demandé, où en est son devis ? Tout est réuni sur un seul écran."
+    },
+    {
+      "key": "ouvrir",
+      "text": "Sur la fiche d'un client, cliquez sur Toute la communication."
+    },
+    {
+      "key": "resume",
+      "text": "En haut : le nombre d'échanges, la date du dernier contact et la répartition par canal."
+    },
+    {
+      "key": "actions",
+      "text": "RapidoCRM vous suggère les prochaines actions : relancer un devis en attente, répondre aux demandes ouvertes."
+    },
+    {
+      "key": "chronologie",
+      "text": "Dessous, toute la chronologie, du plus récent au plus ancien : e-mails, SMS, appels, tickets, devis, factures et contrats."
+    },
+    {
+      "key": "filtrer",
+      "text": "Filtrez par canal ou par période. Par exemple, seulement les tickets."
+    },
+    {
+      "key": "contact",
+      "text": "La même vue existe pour chaque contact, depuis sa fiche."
+    },
+    {
+      "key": "outro",
+      "text": "Avant chaque appel, vous savez tout. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "ouvrir",
+      "label": "Toute la communication",
+      "click": "a[href*='/communication/client/']"
+    },
+    {
+      "at": "resume",
+      "label": "La synthèse",
+      "zone": ".row.g-3.mb-3"
+    },
+    {
+      "at": "actions",
+      "label": "Les prochaines actions",
+      "zone": ".card:has(> strong:text('Prochaines actions'))"
+    },
+    {
+      "at": "chronologie",
+      "label": "La chronologie",
+      "scroll": "form.card",
+      "zone": "form.card + .card"
+    },
+    {
+      "at": "filtrer",
+      "label": "Filtrer",
+      "scroll": "#canal",
+      "select": [
+        [
+          "#canal",
+          "Tickets"
+        ]
+      ]
+    },
+    {
+      "at": "filtrer",
+      "click": "form.card button",
+      "wait": 0.4
+    },
+    {
+      "at": "filtrer",
+      "zone": "form.card + .card"
+    },
+    {
+      "at": "contact",
+      "label": "Pour un contact",
+      "goto": "/communication/contact/47"
+    },
+    {
+      "at": "contact",
+      "zone": ".row.g-3.mb-3"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ]
+}
