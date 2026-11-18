@@ -1,46 +1,40 @@
 {
-  "voiceStartInCapture": 3.949,
+  "voiceStartInCapture": 3.586,
   "paragraphs": {
-    "intro": 0.02,
-    "stats": 4.92,
-    "liste": 12.85,
-    "signature": 18.88,
-    "creer": 24.68,
-    "suivi": 31.12,
-    "apercu": 37.12,
-    "outro": 42.62,
-    "end": 48.13
+    "intro": 0.05,
+    "stats": 5.26,
+    "liste": 14.17,
+    "actions": 19.76,
+    "fiche": 26.35,
+    "paiement": 34.06,
+    "relances": 39.66,
+    "outro": 48.05,
+    "end": 52.93
   },
   "zones": {
     "stats": [
-      390,
-      140,
-      1410,
-      310
+      394,
+      210,
+      1392,
+      230
     ],
     "liste": [
-      400,
-      470,
-      1370,
-      560
+      412,
+      663,
+      1356,
+      278
     ],
-    "signature": [
-      400,
-      470,
-      1370,
-      560
+    "paiement": [
+      412,
+      698,
+      1356,
+      382
     ],
-    "suivi": [
-      1334,
-      493,
-      188,
-      146
-    ],
-    "apercu": [
-      500,
-      100,
-      920,
-      800
+    "relances": [
+      270,
+      562,
+      1640,
+      230
     ]
   }
 }

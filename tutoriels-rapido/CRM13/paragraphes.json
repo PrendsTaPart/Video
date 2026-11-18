@@ -1,11 +1,11 @@
 {
- "intro": 0.02,
- "stats": 4.92,
- "liste": 12.85,
- "signature": 18.88,
- "creer": 24.68,
- "suivi": 31.12,
- "apercu": 37.12,
- "outro": 42.62,
- "end": 48.13
+ "intro": 0.05,
+ "stats": 5.26,
+ "liste": 14.17,
+ "actions": 19.76,
+ "fiche": 26.35,
+ "paiement": 34.06,
+ "relances": 39.66,
+ "outro": 48.05,
+ "end": 52.93
 }
