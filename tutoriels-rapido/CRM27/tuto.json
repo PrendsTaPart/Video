@@ -17,119 +17,122 @@
  "paragraphs": [
   {
    "key": "intro",
-   "text": "Dans ce tutoriel, on crée une roue de la fortune pour animer sa clientèle et récolter de nouveaux contacts."
+   "text": "Un jeu concours anime votre clientèle et remplit votre CRM de nouveaux contacts. Quatre mécaniques sont prêtes : roue de la fortune, carte à gratter, machine à sous et boîte mystère."
   },
   {
-   "key": "infos",
-   "text": "Dans Jeux concours, cliquez sur Créer un jeu concours. Première étape : son nom, son objectif, par exemple faire remplir un formulaire, et sa période."
+   "key": "creer",
+   "text": "Choisissez une mécanique, par exemple la carte à gratter, donnez un nom au jeu et créez-le."
   },
   {
-   "key": "frequence",
-   "text": "On choisit aussi si chaque client peut jouer une seule fois, ou plusieurs fois."
+   "key": "design",
+   "text": "Dans l'onglet Design, réglez le titre, le texte du bouton et les couleurs : l'aperçu se met à jour en direct."
   },
   {
-   "key": "apparence",
-   "text": "Deuxième étape, l'apparence : image de fond, titre, texte d'accroche et couleurs. L'aperçu se met à jour en direct."
+   "key": "lots",
+   "text": "Dans Lots, indiquez chaque lot, sa chance de gagner et son stock. Le tirage se fait sur le serveur : personne ne peut tricher."
   },
   {
-   "key": "recompenses",
-   "text": "Troisième étape, les récompenses : des points de fidélité, des cadeaux, et pour chacun sa chance de gagner. La roue se dessine à droite."
+   "key": "regles",
+   "text": "Dans Règles : une seule participation, ou une par jour, la validité des codes de gain et le consentement."
   },
   {
-   "key": "lancer",
-   "text": "Il ne reste qu'à créer le jeu, puis à le partager à vos clients : chaque participation remplit votre CRM."
+   "key": "partager",
+   "text": "Enregistrez, puis partagez votre jeu : un lien, un code à coller dans votre site, ou un QR code à imprimer."
+  },
+  {
+   "key": "resultats",
+   "text": "Les résultats montrent les vues, les parties, les gagnants et la provenance. Chaque joueur devient un contact de votre CRM."
   },
   {
    "key": "outro",
-   "text": "Dans le prochain tutoriel, on interroge ses clients avec un sondage. À tout de suite !"
+   "text": "Un jeu prêt en quelques minutes. Retrouvez tous nos tutoriels dans l'Académie !"
   }
  ],
  "scenes": [
   {
    "at": "intro",
-   "wait": 0.3
+   "wait": 0.4,
+   "zone": ".card:has(#nomNouveauJeu)"
   },
   {
-   "at": "infos",
-   "label": "Informations générales",
+   "at": "creer",
+   "label": "Nouveau jeu",
+   "click": "label:has-text(\"Carte à gratter\")"
+  },
+  {
+   "at": "creer",
    "fill": [
     [
-     "input[placeholder=\"Entrer un nom\"]",
-     "Roue des fêtes"
+     "#nomNouveauJeu",
+     "Carte à gratter de Noël"
     ]
    ],
-   "click": "a:has-text(\"créer un jeu\") >> visible=true",
+   "click": "#boutonCreerJeu",
+   "wait": 1.0
+  },
+  {
+   "at": "design",
+   "label": "Design",
+   "click": "#tab-design"
+  },
+  {
+   "at": "design",
+   "fill_now": [
+    [
+     "input[name=\"design[titre]\"]",
+     "Grattez et gagnez !"
+    ]
+   ],
+   "eval": "(()=>{const c=document.querySelector('input[name=\"design[couleur_principale]\"]');if(c){c.value='#c62828';c.dispatchEvent(new Event('input',{bubbles:true}));c.dispatchEvent(new Event('change',{bubbles:true}));}})()",
+   "wait": 1.2
+  },
+  {
+   "at": "lots",
+   "label": "Lots",
+   "click": "#tab-lots",
+   "zone": "#onglet-lots"
+  },
+  {
+   "at": "lots",
+   "fill_now": [
+    [
+     "#lignesLots tr:nth-child(1) [data-champ=\"reward_name\"]",
+     "Une bûche offerte"
+    ]
+   ],
+   "wait": 0.6
+  },
+  {
+   "at": "regles",
+   "label": "Règles",
+   "click": "#tab-regles",
+   "zone": "#onglet-regles"
+  },
+  {
+   "at": "partager",
+   "label": "Partager",
+   "click": "#enregistrerJeu",
    "wait": 0.8
   },
   {
-   "at": "infos",
-   "click": "text=Remplir un formulaire",
-   "fill": [
-    [
-     "input[type=date] >> nth=0",
-     "2026-12-01"
-    ],
-    [
-     "input[type=date] >> nth=1",
-     "2026-12-24"
-    ]
-   ],
-   "zone": [
-    390,
-    380,
-    1400,
-    480
-   ]
+   "at": "partager",
+   "click": "#tab-partager",
+   "zone": "#onglet-partager"
   },
   {
-   "at": "frequence",
-   "label": "Fréquence",
-   "click": "text=Jouer une seule fois",
-   "zone": [
-    390,
-    870,
-    1400,
-    120
-   ]
+   "at": "resultats",
+   "label": "Résultats",
+   "goto": "/jeux",
+   "wait": 0.3
   },
   {
-   "at": "apparence",
-   "label": "Apparence",
-   "click": "button:has-text(\"suivant\") >> visible=true",
-   "wait": 0.8,
-   "zone": [
-    390,
-    350,
-    1400,
-    720
-   ]
-  },
-  {
-   "at": "recompenses",
-   "label": "Les récompenses",
-   "click": "button:has-text(\"suivant\") >> visible=true",
-   "wait": 1.0,
-   "zone": [
-    380,
-    70,
-    1500,
-    980
-   ]
-  },
-  {
-   "at": "lancer",
-   "label": "Créer le jeu",
-   "hover": "button:has-text(\"création du jeu\") >> visible=true",
-   "zone": [
-    380,
-    70,
-    1500,
-    980
-   ]
+   "at": "resultats",
+   "eval": "(()=>{const tr=[...document.querySelectorAll('tr')].find(x=>/Roue du printemps/.test(x.innerText));const a=tr&&[...tr.querySelectorAll('a')].find(a=>/resultats/.test(a.href));if(a)location.href=a.href;})()",
+   "wait": 1.5
   },
   {
    "at": "outro",
-   "wait": 0.3
+   "top": true
   }
  ],
  "thumb_shot": "fin.png"
