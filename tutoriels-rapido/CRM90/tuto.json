@@ -1,0 +1,149 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 40,
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "fixes": {},
+  "id": "CRM90",
+  "title": "Centre d’aide et répartition des nouveaux prospects",
+  "em": "Centre d’aide",
+  "tag": "2 min · Débutant",
+  "start_path": "/score-prospects",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Deux outils pour mieux accueillir vos clients : un centre d'aide sur votre site, et la répartition automatique des nouveaux prospects."
+    },
+    {
+      "key": "aide",
+      "text": "Votre site a son propre centre d'aide, relié au lien Aide de votre blog. On y trouve vos questions fréquentes, les mêmes que celles de votre agent IA."
+    },
+    {
+      "key": "recherche",
+      "text": "Le visiteur tape sa question, par exemple livraison, et trouve la réponse tout seul."
+    },
+    {
+      "key": "demande",
+      "text": "S'il ne trouve pas, il ouvre une demande. Elle devient un ticket dans RapidoCRM, et le visiteur est enregistré comme contact."
+    },
+    {
+      "key": "repartition",
+      "text": "Les nouveaux prospects, eux, peuvent être confiés automatiquement à vos commerciaux. Ouvrez Score des prospects."
+    },
+    {
+      "key": "mode",
+      "text": "Activez la répartition. Choisissez à tour de rôle, ou le commercial le moins chargé, puis cochez les commerciaux et les canaux concernés."
+    },
+    {
+      "key": "tache",
+      "text": "Enregistrez. Chaque nouveau prospect reçoit un responsable, prévenu aussitôt, avec une tâche pour le contacter dès le lendemain."
+    },
+    {
+      "key": "outro",
+      "text": "Aucun visiteur sans réponse, aucun prospect oublié. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "goto": "/site/studio-lumiere/aide",
+      "wait": 0.3
+    },
+    {
+      "at": "aide",
+      "label": "Le centre d'aide",
+      "zone": "h1",
+      "zone_closest": "main, body"
+    },
+    {
+      "at": "recherche",
+      "fill": [
+        [
+          "#q-aide",
+          "livraison"
+        ]
+      ]
+    },
+    {
+      "at": "recherche",
+      "click": "form:has(#q-aide) button",
+      "wait": 0.5
+    },
+    {
+      "at": "demande",
+      "label": "Ouvrir une demande",
+      "scroll": "input[name=nom]",
+      "fill_now": [
+        [
+          "input[name=nom]",
+          "Julie Moreau"
+        ],
+        [
+          "input[name=email]",
+          "julie.moreau@exemple.test"
+        ],
+        [
+          "input[name=sujet]",
+          "Refonte de notre site"
+        ],
+        [
+          "textarea[name=message]",
+          "Bonjour, nous aimerions refaire le site de notre boulangerie. Pouvez-vous nous rappeler ?"
+        ]
+      ]
+    },
+    {
+      "at": "demande",
+      "click": "form:has(input[name=sujet]) button[type=submit]",
+      "wait": 0.5
+    },
+    {
+      "at": "repartition",
+      "label": "Répartition des prospects",
+      "goto": "/score-prospects#repartition"
+    },
+    {
+      "at": "repartition",
+      "scroll": "#repartition",
+      "zone": "#repartition"
+    },
+    {
+      "at": "mode",
+      "click": "#rep-actif"
+    },
+    {
+      "at": "mode",
+      "select": [
+        [
+          "#rep-mode",
+          "Au moins chargé (30 derniers jours)"
+        ]
+      ]
+    },
+    {
+      "at": "mode",
+      "eval": "(()=>{document.querySelectorAll('#repartition input[name=\"commerciaux[]\"]').forEach((c,i)=>{if(i>0){c.checked=true;c.dispatchEvent(new Event('change',{bubbles:true}));}});})()",
+      "wait": 0.6
+    },
+    {
+      "at": "tache",
+      "click": "#repartition button.btn-primary",
+      "wait": 0.5
+    },
+    {
+      "at": "tache",
+      "scroll": "#repartition",
+      "zone": "#repartition"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ]
+}
