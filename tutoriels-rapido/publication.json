@@ -510,6 +510,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM52.png"
   },
   {
+    "id": "CRM53",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "L'éditeur : sections et modèles gratuits",
+    "tag": "1 min · Débutant",
+    "duree_s": 61,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM53.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM53.png"
+  },
+  {
     "id": "CRM55",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",

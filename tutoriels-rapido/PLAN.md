@@ -144,7 +144,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM50 — Sites et pages : publication, SEO, sitemap
 - [x] CRM51 — Connecter son nom de domaine
 - [x] CRM52 — Le sous-domaine d'envoi des e-mails (SPF, DKIM, DMARC)
-- [ ] CRM53 — L'éditeur : sections et modèles gratuits
+- [x] CRM53 — L'éditeur : sections et modèles gratuits
 - [ ] CRM54 — L'éditeur sur téléphone
 - [x] CRM55 — Les ventes en ligne : bouton d'achat et paiement (Stripe en mode test, aucun paiement réel)
 - [x] CRM56 — Les lead magnets (scénario, `leadmagnets-demo.php`, essai à blanc, voix 880 cr. — en file)

@@ -1,0 +1,848 @@
+[
+  {
+    "text": "Pas",
+    "start": 0.05,
+    "end": 0.18,
+    "id": "w0"
+  },
+  {
+    "text": "besoin",
+    "start": 0.18,
+    "end": 0.52,
+    "id": "w1"
+  },
+  {
+    "text": "de",
+    "start": 0.59,
+    "end": 0.66,
+    "id": "w2"
+  },
+  {
+    "text": "partir",
+    "start": 0.66,
+    "end": 1.02,
+    "id": "w3"
+  },
+  {
+    "text": "d'une",
+    "start": 1.02,
+    "end": 1.32,
+    "id": "w4"
+  },
+  {
+    "text": "page",
+    "start": 1.32,
+    "end": 1.56,
+    "id": "w5"
+  },
+  {
+    "text": "blanche.",
+    "start": 1.56,
+    "end": 2.08,
+    "id": "w6"
+  },
+  {
+    "text": "L'éditeur",
+    "start": 2.13,
+    "end": 2.74,
+    "id": "w7"
+  },
+  {
+    "text": "de",
+    "start": 2.74,
+    "end": 2.89,
+    "id": "w8"
+  },
+  {
+    "text": "Rapido",
+    "start": 2.89,
+    "end": 3.33,
+    "id": "w9"
+  },
+  {
+    "text": "CRM",
+    "start": 3.33,
+    "end": 3.6,
+    "id": "w10"
+  },
+  {
+    "text": "vous",
+    "start": 3.6,
+    "end": 3.83,
+    "id": "w11"
+  },
+  {
+    "text": "offre",
+    "start": 3.83,
+    "end": 4.12,
+    "id": "w12"
+  },
+  {
+    "text": "70",
+    "start": 4.21,
+    "end": 4.52,
+    "id": "w13"
+  },
+  {
+    "text": "modèles",
+    "start": 4.52,
+    "end": 4.99,
+    "id": "w14"
+  },
+  {
+    "text": "gratuits",
+    "start": 5.01,
+    "end": 5.6,
+    "id": "w15"
+  },
+  {
+    "text": "et",
+    "start": 5.6,
+    "end": 5.73,
+    "id": "w16"
+  },
+  {
+    "text": "25",
+    "start": 5.73,
+    "end": 6.15,
+    "id": "w17"
+  },
+  {
+    "text": "sections",
+    "start": 6.15,
+    "end": 6.72,
+    "id": "w18"
+  },
+  {
+    "text": "prêtes",
+    "start": 6.72,
+    "end": 7.08,
+    "id": "w19"
+  },
+  {
+    "text": "à",
+    "start": 7.08,
+    "end": 7.13,
+    "id": "w20"
+  },
+  {
+    "text": "l'emploi.",
+    "start": 7.14,
+    "end": 7.84,
+    "id": "w21"
+  },
+  {
+    "text": "Choisissez",
+    "start": 7.89,
+    "end": 8.43,
+    "id": "w22"
+  },
+  {
+    "text": "d'abord",
+    "start": 8.44,
+    "end": 8.86,
+    "id": "w23"
+  },
+  {
+    "text": "ce",
+    "start": 8.86,
+    "end": 8.93,
+    "id": "w24"
+  },
+  {
+    "text": "que",
+    "start": 8.98,
+    "end": 9.16,
+    "id": "w25"
+  },
+  {
+    "text": "vous",
+    "start": 9.16,
+    "end": 9.4,
+    "id": "w26"
+  },
+  {
+    "text": "créez,",
+    "start": 9.4,
+    "end": 9.72,
+    "id": "w27"
+  },
+  {
+    "text": "sites",
+    "start": 9.77,
+    "end": 10.06,
+    "id": "w28"
+  },
+  {
+    "text": "web,",
+    "start": 10.06,
+    "end": 10.39,
+    "id": "w29"
+  },
+  {
+    "text": "pages",
+    "start": 10.39,
+    "end": 10.73,
+    "id": "w30"
+  },
+  {
+    "text": "de",
+    "start": 10.73,
+    "end": 10.81,
+    "id": "w31"
+  },
+  {
+    "text": "destination,",
+    "start": 10.86,
+    "end": 11.76,
+    "id": "w32"
+  },
+  {
+    "text": "newsletter,",
+    "start": 11.85,
+    "end": 12.62,
+    "id": "w33"
+  },
+  {
+    "text": "brochures",
+    "start": 12.62,
+    "end": 13.28,
+    "id": "w34"
+  },
+  {
+    "text": "ou",
+    "start": 13.28,
+    "end": 13.41,
+    "id": "w35"
+  },
+  {
+    "text": "cartes",
+    "start": 13.41,
+    "end": 13.81,
+    "id": "w36"
+  },
+  {
+    "text": "de",
+    "start": 13.81,
+    "end": 13.94,
+    "id": "w37"
+  },
+  {
+    "text": "visite.",
+    "start": 13.94,
+    "end": 14.59,
+    "id": "w38"
+  },
+  {
+    "text": "Parcourez",
+    "start": 14.65,
+    "end": 15.08,
+    "id": "w39"
+  },
+  {
+    "text": "les",
+    "start": 15.08,
+    "end": 15.24,
+    "id": "w40"
+  },
+  {
+    "text": "modèles,",
+    "start": 15.24,
+    "end": 15.76,
+    "id": "w41"
+  },
+  {
+    "text": "par",
+    "start": 15.76,
+    "end": 15.95,
+    "id": "w42"
+  },
+  {
+    "text": "exemple",
+    "start": 15.95,
+    "end": 16.39,
+    "id": "w43"
+  },
+  {
+    "text": "ce",
+    "start": 16.39,
+    "end": 16.73,
+    "id": "w44"
+  },
+  {
+    "text": "restaurant,",
+    "start": 16.73,
+    "end": 17.24,
+    "id": "w45"
+  },
+  {
+    "text": "puis",
+    "start": 17.29,
+    "end": 17.55,
+    "id": "w46"
+  },
+  {
+    "text": "cliquez",
+    "start": 17.55,
+    "end": 18.08,
+    "id": "w47"
+  },
+  {
+    "text": "sur",
+    "start": 18.08,
+    "end": 18.31,
+    "id": "w48"
+  },
+  {
+    "text": "Utiliser",
+    "start": 18.31,
+    "end": 18.91,
+    "id": "w49"
+  },
+  {
+    "text": "ce",
+    "start": 18.91,
+    "end": 19.04,
+    "id": "w50"
+  },
+  {
+    "text": "modèle.",
+    "start": 19.37,
+    "end": 19.8,
+    "id": "w51"
+  },
+  {
+    "text": "À",
+    "start": 19.85,
+    "end": 19.86,
+    "id": "w52"
+  },
+  {
+    "text": "droite,",
+    "start": 19.86,
+    "end": 20.32,
+    "id": "w53"
+  },
+  {
+    "text": "les",
+    "start": 20.39,
+    "end": 20.51,
+    "id": "w54"
+  },
+  {
+    "text": "sections",
+    "start": 20.58,
+    "end": 21.05,
+    "id": "w55"
+  },
+  {
+    "text": "sont",
+    "start": 21.05,
+    "end": 21.3,
+    "id": "w56"
+  },
+  {
+    "text": "rangées",
+    "start": 21.3,
+    "end": 21.61,
+    "id": "w57"
+  },
+  {
+    "text": "par",
+    "start": 21.61,
+    "end": 21.93,
+    "id": "w58"
+  },
+  {
+    "text": "usage.",
+    "start": 21.93,
+    "end": 22.28,
+    "id": "w59"
+  },
+  {
+    "text": "En",
+    "start": 22.33,
+    "end": 22.44,
+    "id": "w60"
+  },
+  {
+    "text": "tête,",
+    "start": 22.44,
+    "end": 22.91,
+    "id": "w61"
+  },
+  {
+    "text": "preuve,",
+    "start": 22.91,
+    "end": 23.53,
+    "id": "w62"
+  },
+  {
+    "text": "contenu,",
+    "start": 23.53,
+    "end": 24.09,
+    "id": "w63"
+  },
+  {
+    "text": "vente,",
+    "start": 24.31,
+    "end": 24.77,
+    "id": "w64"
+  },
+  {
+    "text": "boutique.",
+    "start": 24.77,
+    "end": 25.72,
+    "id": "w65"
+  },
+  {
+    "text": "Ajoutez-en",
+    "start": 25.77,
+    "end": 26.52,
+    "id": "w66"
+  },
+  {
+    "text": "une",
+    "start": 26.52,
+    "end": 26.76,
+    "id": "w67"
+  },
+  {
+    "text": "en",
+    "start": 26.76,
+    "end": 26.92,
+    "id": "w68"
+  },
+  {
+    "text": "un",
+    "start": 26.92,
+    "end": 27.07,
+    "id": "w69"
+  },
+  {
+    "text": "clic.",
+    "start": 27.08,
+    "end": 27.53,
+    "id": "w70"
+  },
+  {
+    "text": "Ici,",
+    "start": 27.73,
+    "end": 27.99,
+    "id": "w71"
+  },
+  {
+    "text": "une",
+    "start": 27.99,
+    "end": 28.18,
+    "id": "w72"
+  },
+  {
+    "text": "fois",
+    "start": 28.18,
+    "end": 28.35,
+    "id": "w73"
+  },
+  {
+    "text": "aux",
+    "start": 28.46,
+    "end": 28.62,
+    "id": "w74"
+  },
+  {
+    "text": "questions,",
+    "start": 28.62,
+    "end": 29.28,
+    "id": "w75"
+  },
+  {
+    "text": "juste",
+    "start": 29.28,
+    "end": 29.49,
+    "id": "w76"
+  },
+  {
+    "text": "avant",
+    "start": 29.81,
+    "end": 29.95,
+    "id": "w77"
+  },
+  {
+    "text": "le",
+    "start": 29.96,
+    "end": 30.02,
+    "id": "w78"
+  },
+  {
+    "text": "pied",
+    "start": 30.1,
+    "end": 30.32,
+    "id": "w79"
+  },
+  {
+    "text": "de",
+    "start": 30.32,
+    "end": 30.44,
+    "id": "w80"
+  },
+  {
+    "text": "page.",
+    "start": 30.44,
+    "end": 30.76,
+    "id": "w81"
+  },
+  {
+    "text": "Chaque",
+    "start": 30.81,
+    "end": 31.16,
+    "id": "w82"
+  },
+  {
+    "text": "texte",
+    "start": 31.16,
+    "end": 31.47,
+    "id": "w83"
+  },
+  {
+    "text": "se",
+    "start": 31.54,
+    "end": 31.62,
+    "id": "w84"
+  },
+  {
+    "text": "modifie",
+    "start": 31.62,
+    "end": 32.08,
+    "id": "w85"
+  },
+  {
+    "text": "directement",
+    "start": 32.08,
+    "end": 32.55,
+    "id": "w86"
+  },
+  {
+    "text": "sur",
+    "start": 32.89,
+    "end": 33.03,
+    "id": "w87"
+  },
+  {
+    "text": "la",
+    "start": 33.04,
+    "end": 33.1,
+    "id": "w88"
+  },
+  {
+    "text": "page.",
+    "start": 33.18,
+    "end": 33.67,
+    "id": "w89"
+  },
+  {
+    "text": "Le",
+    "start": 33.73,
+    "end": 33.81,
+    "id": "w90"
+  },
+  {
+    "text": "bouton",
+    "start": 33.81,
+    "end": 34.2,
+    "id": "w91"
+  },
+  {
+    "text": "couleur",
+    "start": 34.2,
+    "end": 34.69,
+    "id": "w92"
+  },
+  {
+    "text": "et",
+    "start": 34.69,
+    "end": 34.77,
+    "id": "w93"
+  },
+  {
+    "text": "police",
+    "start": 34.82,
+    "end": 35.27,
+    "id": "w94"
+  },
+  {
+    "text": "change",
+    "start": 35.27,
+    "end": 35.48,
+    "id": "w95"
+  },
+  {
+    "text": "d'un",
+    "start": 35.64,
+    "end": 35.79,
+    "id": "w96"
+  },
+  {
+    "text": "coup",
+    "start": 35.81,
+    "end": 35.99,
+    "id": "w97"
+  },
+  {
+    "text": "l'apparence",
+    "start": 35.99,
+    "end": 36.47,
+    "id": "w98"
+  },
+  {
+    "text": "de",
+    "start": 36.54,
+    "end": 36.64,
+    "id": "w99"
+  },
+  {
+    "text": "toutes",
+    "start": 36.64,
+    "end": 36.95,
+    "id": "w100"
+  },
+  {
+    "text": "les",
+    "start": 36.95,
+    "end": 37.1,
+    "id": "w101"
+  },
+  {
+    "text": "sections.",
+    "start": 37.1,
+    "end": 37.6,
+    "id": "w102"
+  },
+  {
+    "text": "L'audit",
+    "start": 37.77,
+    "end": 38.24,
+    "id": "w103"
+  },
+  {
+    "text": "SEO",
+    "start": 38.31,
+    "end": 38.54,
+    "id": "w104"
+  },
+  {
+    "text": "vérifie",
+    "start": 38.55,
+    "end": 39.14,
+    "id": "w105"
+  },
+  {
+    "text": "la",
+    "start": 39.14,
+    "end": 39.31,
+    "id": "w106"
+  },
+  {
+    "text": "page",
+    "start": 39.31,
+    "end": 39.52,
+    "id": "w107"
+  },
+  {
+    "text": "en",
+    "start": 39.52,
+    "end": 39.85,
+    "id": "w108"
+  },
+  {
+    "text": "direct.",
+    "start": 39.85,
+    "end": 40.63,
+    "id": "w109"
+  },
+  {
+    "text": "Titres,",
+    "start": 40.69,
+    "end": 41.31,
+    "id": "w110"
+  },
+  {
+    "text": "texte,",
+    "start": 41.31,
+    "end": 41.9,
+    "id": "w111"
+  },
+  {
+    "text": "images,",
+    "start": 41.9,
+    "end": 42.45,
+    "id": "w112"
+  },
+  {
+    "text": "liens.",
+    "start": 42.75,
+    "end": 43.08,
+    "id": "w113"
+  },
+  {
+    "text": "Enregistrez",
+    "start": 43.13,
+    "end": 43.79,
+    "id": "w114"
+  },
+  {
+    "text": "votre",
+    "start": 43.86,
+    "end": 44.14,
+    "id": "w115"
+  },
+  {
+    "text": "design.",
+    "start": 44.14,
+    "end": 44.76,
+    "id": "w116"
+  },
+  {
+    "text": "Ils",
+    "start": 44.81,
+    "end": 44.95,
+    "id": "w117"
+  },
+  {
+    "text": "rejoignent",
+    "start": 44.95,
+    "end": 45.58,
+    "id": "w118"
+  },
+  {
+    "text": "vos",
+    "start": 45.58,
+    "end": 45.77,
+    "id": "w119"
+  },
+  {
+    "text": "designs",
+    "start": 45.77,
+    "end": 46.21,
+    "id": "w120"
+  },
+  {
+    "text": "prêts",
+    "start": 46.21,
+    "end": 46.52,
+    "id": "w121"
+  },
+  {
+    "text": "à",
+    "start": 46.52,
+    "end": 46.57,
+    "id": "w122"
+  },
+  {
+    "text": "être",
+    "start": 46.57,
+    "end": 46.89,
+    "id": "w123"
+  },
+  {
+    "text": "publiés",
+    "start": 46.89,
+    "end": 47.27,
+    "id": "w124"
+  },
+  {
+    "text": "depuis",
+    "start": 47.27,
+    "end": 47.65,
+    "id": "w125"
+  },
+  {
+    "text": "sites",
+    "start": 47.65,
+    "end": 47.97,
+    "id": "w126"
+  },
+  {
+    "text": "et",
+    "start": 47.97,
+    "end": 48.06,
+    "id": "w127"
+  },
+  {
+    "text": "pages.",
+    "start": 48.1,
+    "end": 48.68,
+    "id": "w128"
+  },
+  {
+    "text": "Un",
+    "start": 48.73,
+    "end": 48.8,
+    "id": "w129"
+  },
+  {
+    "text": "site",
+    "start": 48.8,
+    "end": 49.05,
+    "id": "w130"
+  },
+  {
+    "text": "professionnel",
+    "start": 49.05,
+    "end": 49.88,
+    "id": "w131"
+  },
+  {
+    "text": "en",
+    "start": 49.88,
+    "end": 50,
+    "id": "w132"
+  },
+  {
+    "text": "quelques",
+    "start": 50,
+    "end": 50.47,
+    "id": "w133"
+  },
+  {
+    "text": "minutes.",
+    "start": 50.81,
+    "end": 51,
+    "id": "w134"
+  },
+  {
+    "text": "Retrouvez",
+    "start": 51.05,
+    "end": 51.52,
+    "id": "w135"
+  },
+  {
+    "text": "tous",
+    "start": 51.59,
+    "end": 51.71,
+    "id": "w136"
+  },
+  {
+    "text": "nos",
+    "start": 51.78,
+    "end": 51.96,
+    "id": "w137"
+  },
+  {
+    "text": "tutoriels",
+    "start": 51.96,
+    "end": 52.5,
+    "id": "w138"
+  },
+  {
+    "text": "dans",
+    "start": 52.5,
+    "end": 52.73,
+    "id": "w139"
+  },
+  {
+    "text": "l'académie.",
+    "start": 52.73,
+    "end": 53.4,
+    "id": "w140"
+  }
+]
