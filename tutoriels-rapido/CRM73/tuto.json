@@ -1,0 +1,166 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 40,
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "fixes": {},
+  "id": "CRM73",
+  "title": "Un agent IA qui répond sur votre site",
+  "em": "agent IA",
+  "tag": "2 min · Débutant",
+  "start_path": "/agents-site",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Un visiteur pose une question le soir ou le week-end ? L'agent IA de votre site lui répond à votre place, à partir de vos propres contenus."
+    },
+    {
+      "key": "modeles",
+      "text": "Ouvrez Agents IA des sites. Choisissez un modèle : accueil, qualification de prospects, prise de rendez-vous, support ou relance de devis."
+    },
+    {
+      "key": "connaissances",
+      "text": "L'agent apprend de vos pages publiées, de vos produits, de vos guides et de vos documents partagés. Il se met à jour tout seul, chaque heure."
+    },
+    {
+      "key": "faq",
+      "text": "Ajoutez aussi vos questions fréquentes, avec la réponse que vous voulez donner."
+    },
+    {
+      "key": "tester",
+      "text": "Testez votre agent dans le simulateur : aucun contact n'est créé et aucune alerte n'est envoyée."
+    },
+    {
+      "key": "reponse",
+      "text": "Il répond avec vos informations, et cite ses sources."
+    },
+    {
+      "key": "prix",
+      "text": "Il connaît aussi vos produits et vos tarifs."
+    },
+    {
+      "key": "conseiller",
+      "text": "Si le visiteur demande un conseiller, ou si l'agent ne connaît pas la réponse, la conversation vous est transmise dans votre boîte de réception."
+    },
+    {
+      "key": "installer",
+      "text": "Pour l'installer, copiez cette ligne et collez-la sur votre site."
+    },
+    {
+      "key": "outro",
+      "text": "Votre site répond jour et nuit. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "wait": 0.4
+    },
+    {
+      "at": "modeles",
+      "label": "Un modèle par besoin",
+      "zone": ".modele",
+      "zone_closest": ".row"
+    },
+    {
+      "at": "connaissances",
+      "label": "La base de connaissances",
+      "goto": "/agents-site?onglet=connaissances"
+    },
+    {
+      "at": "connaissances",
+      "zone": "table"
+    },
+    {
+      "at": "faq",
+      "label": "Une question fréquente",
+      "scroll": "#faqQ",
+      "fill": [
+        [
+          "#faqQ",
+          "Quels sont vos horaires ?"
+        ]
+      ],
+      "fill_now": [
+        [
+          "#faqR",
+          "Nous sommes ouverts du lundi au vendredi, de 9 h à 18 h, et le samedi matin sur rendez-vous."
+        ]
+      ]
+    },
+    {
+      "at": "faq",
+      "click": "form[action$='/faq'] button",
+      "wait": 0.4
+    },
+    {
+      "at": "tester",
+      "label": "Le simulateur",
+      "goto": "/agents-site"
+    },
+    {
+      "at": "tester",
+      "click": "details.simulateur > summary",
+      "wait": 0.3
+    },
+    {
+      "at": "reponse",
+      "fill": [
+        [
+          "details.simulateur input",
+          "Quels sont vos horaires ?"
+        ]
+      ]
+    },
+    {
+      "at": "reponse",
+      "click": "details.simulateur form button",
+      "wait": 0.8,
+      "zone": "details.simulateur"
+    },
+    {
+      "at": "prix",
+      "fill": [
+        [
+          "details.simulateur input",
+          "Combien coûte un site vitrine ?"
+        ]
+      ]
+    },
+    {
+      "at": "prix",
+      "click": "details.simulateur form button",
+      "wait": 0.8
+    },
+    {
+      "at": "conseiller",
+      "fill": [
+        [
+          "details.simulateur input",
+          "Je voudrais parler à un conseiller"
+        ]
+      ]
+    },
+    {
+      "at": "conseiller",
+      "click": "details.simulateur form button",
+      "wait": 0.8
+    },
+    {
+      "at": "installer",
+      "label": "Installer sur votre site",
+      "zone": "code.extrait",
+      "zone_closest": ".d-flex"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ]
+}
