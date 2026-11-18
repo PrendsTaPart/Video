@@ -1,0 +1,135 @@
+{
+ "product": "crm",
+ "kicker": "Tutoriel RapidoCRM",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "type_delay": 40,
+ "thumb_shot": "fin.png",
+ "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+ "fixes": {},
+ "id": "CRM53",
+ "title": "L'éditeur : sections et modèles gratuits",
+ "em": "modèles gratuits",
+ "tag": "1 min · Débutant",
+ "start_path": "/editeur",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Pas besoin de partir d'une page blanche : l'éditeur de RapidoCRM vous offre soixante-dix modèles gratuits et vingt-cinq sections prêtes à l'emploi."
+  },
+  {
+   "key": "types",
+   "text": "Choisissez d'abord ce que vous créez : site web, page de destination, newsletter, brochure ou carte de visite."
+  },
+  {
+   "key": "modele",
+   "text": "Parcourez les modèles, par exemple ce restaurant, puis cliquez sur Utiliser ce modèle."
+  },
+  {
+   "key": "sections",
+   "text": "À droite, les sections sont rangées par usage : en-tête, preuves, contenu, vente, boutique."
+  },
+  {
+   "key": "ajouter",
+   "text": "Ajoutez-en une en un clic. Ici, une foire aux questions, juste avant le pied de page. Chaque texte se modifie directement sur la page."
+  },
+  {
+   "key": "theme",
+   "text": "Le bouton Couleurs et police change d'un coup l'apparence de toutes les sections."
+  },
+  {
+   "key": "seo",
+   "text": "L'audit SEO vérifie la page en direct : titre, textes, images, liens."
+  },
+  {
+   "key": "enregistrer",
+   "text": "Enregistrez votre design. Il rejoint vos designs, prêt à être publié depuis Sites et pages."
+  },
+  {
+   "key": "outro",
+   "text": "Un site professionnel en quelques minutes. Retrouvez tous nos tutoriels dans l'Académie !"
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.4
+  },
+  {
+   "at": "types",
+   "label": "Que créez-vous ?",
+   "zone": "h5:has-text(\"Designer dans l\")",
+   "zone_closest": ".card"
+  },
+  {
+   "at": "types",
+   "hover": "a[href$='/editeur/marketplace/2']"
+  },
+  {
+   "at": "modele",
+   "label": "Les modèles gratuits",
+   "goto": "/editeur/marketplace/2"
+  },
+  {
+   "at": "modele",
+   "hover": ".cardProduct:has-text('Marius') .btn"
+  },
+  {
+   "at": "modele",
+   "click": ".cardProduct:has-text('Marius') .btn",
+   "wait": 0.6
+  },
+  {
+   "at": "modele",
+   "click": ".modal.show a.btn-primary"
+  },
+  {
+   "at": "sections",
+   "label": "Sections par usage",
+   "zone": ".gjs-blocks-cs, .gjs-pn-views-container"
+  },
+  {
+   "at": "ajouter",
+   "label": "Ajouter une section",
+   "eval": "(()=>{const e=window.editeurRapido;const w=e.getWrapper();const pied=w.find('[data-section=\"contact\"]')[0]||w.find('[data-section=\"pied\"]')[0];const html=e.Blocks.get('rs-faq').get('content');const par=pied?pied.parent():w;const at=pied?pied.index():w.components().length;const s=par.append(html,{at})[0];window.__faq=s;e.select(s);s.getEl().scrollIntoView({behavior:'smooth',block:'center'});})()",
+   "wait": 1.2
+  },
+  {
+   "at": "theme",
+   "label": "Couleurs et police",
+   "eval": "(()=>{const ed=window.editeurRapido;ed.runCommand('rapido-theme');setTimeout(()=>{const m=document.querySelector('.gjs-mdl-content');if(!m)return;m.querySelector('#rt-couleur').value='#1e5f74';m.querySelector('#rt-police').value='Playfair Display';},700);setTimeout(()=>{document.querySelector('.gjs-mdl-content #rt-ok')?.click();},2600);})()",
+   "wait": 3.2
+  },
+  {
+   "at": "seo",
+   "label": "Audit SEO",
+   "eval": "window.editeurRapido.runCommand('rapido-seo')",
+   "zone": ".gjs-mdl-dialog"
+  },
+  {
+   "at": "enregistrer",
+   "label": "Enregistrer",
+   "eval": "(()=>{document.querySelector('.gjs-mdl-btn-close')?.click();})()",
+   "click": "button.btn-secondary:has-text('Enregistrer'):not(#saveNameBtn)",
+   "wait": 0.8
+  },
+  {
+   "at": "enregistrer",
+   "fill_now": [
+    [
+     "#nameInput",
+     "La Table de Marius — site"
+    ]
+   ],
+   "click": "#saveNameBtn",
+   "wait": 1.0
+  },
+  {
+   "at": "outro",
+   "goto": "/editeur/mes-templates"
+  }
+ ]
+}
