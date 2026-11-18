@@ -1,0 +1,116 @@
+{
+ "product": "crm",
+ "kicker": "Tutoriel RapidoCRM",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "type_delay": 40,
+ "thumb_shot": "fin.png",
+ "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+ "fixes": {},
+ "id": "CRM55",
+ "title": "Vendre en ligne avec un bouton d'achat",
+ "em": "bouton d'achat",
+ "tag": "1 min · Débutant",
+ "start_path": "/editeur/edit?id=2&type=Site%20web",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Vendez directement depuis vos pages : un bouton d'achat relié à l'un de vos produits ouvre le paiement par carte."
+  },
+  {
+   "key": "editeur",
+   "text": "Ouvrez votre page dans l'éditeur et ajoutez la section Offre et bouton d'achat."
+  },
+  {
+   "key": "produit",
+   "text": "Sélectionnez le bouton. Dans ses réglages, choisissez le produit vendu : le paiement reprendra le prix de votre catalogue. Ajustez aussi le prix affiché."
+  },
+  {
+   "key": "publier",
+   "text": "Enregistrez, puis publiez la page depuis Sites et pages."
+  },
+  {
+   "key": "public",
+   "text": "Sur votre site, le bouton ouvre le paiement sécurisé Stripe, avec votre propre compte : l'argent arrive directement chez vous."
+  },
+  {
+   "key": "ventes",
+   "text": "Chaque achat apparaît dans Ventes en ligne : la commande, le client créé automatiquement et le montant."
+  },
+  {
+   "key": "stats",
+   "text": "Vous suivez aussi vos ventes du mois, votre panier moyen et les paiements abandonnés."
+  },
+  {
+   "key": "outro",
+   "text": "Vos pages deviennent une boutique. Retrouvez tous nos tutoriels dans l'Académie !"
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.4
+  },
+  {
+   "at": "editeur",
+   "label": "Section Offre et bouton d'achat",
+   "eval": "(()=>{const e=window.editeurRapido;const w=e.getWrapper();const pied=w.find('[data-section=\"pied\"]')[0];const html=e.Blocks.get('rs-offre').get('content');const s=pied?pied.parent().append(html,{at:pied.index()})[0]:w.append(html)[0];window.__offre=s;s.getEl().scrollIntoView({behavior:'smooth',block:'center'});window.scrollTo(0,0);})()",
+   "wait": 1.2
+  },
+  {
+   "at": "produit",
+   "label": "Le produit vendu",
+   "eval": "(()=>{const e=window.editeurRapido;const s=window.__offre;const b=s.find('[data-rapido-produit]')[0];e.select(b);const btn=e.Panels.getButton('views','open-tm');if(btn)btn.set('active',true);setTimeout(()=>{const t=b.getTrait('data-rapido-produit');if(t)t.setValue('3');else b.addAttributes({'data-rapido-produit':'3'});const p=s.find('.rs-prix')[0];if(p)p.components('540 €');const pb=s.find('.rs-prix-barre')[0];if(pb)pb.remove();setTimeout(()=>{const g=[...document.querySelectorAll('button.btn-secondary')].find(x=>x.offsetParent&&x.id!=='saveNameBtn'&&/Enregistrer/.test(x.innerText));if(g)g.click();},1200);window.__sv=new Promise(async r=>{const z=ms=>new Promise(q=>setTimeout(q,ms));await z(2600);for(let i=0;i<80&&document.querySelector('.editeur-save-status');i++)await z(250);r();});},900);})()",
+   "wait": 2.2
+  },
+  {
+   "at": "produit",
+   "zone": ".gjs-trt-traits, .gjs-traits-cs, .gjs-pn-views-container"
+  },
+  {
+   "at": "publier",
+   "label": "Enregistrer puis publier",
+   "eval": "(async()=>{if(window.__sv)await Promise.race([window.__sv,new Promise(r=>setTimeout(r,20000))]);})()",
+   "wait": 0.6
+  },
+  {
+   "at": "publier",
+   "goto": "/sites/1?onglet=pages"
+  },
+  {
+   "at": "publier",
+   "click": "form[action$='/pages/2/publier'] button",
+   "wait": 0.4
+  },
+  {
+   "at": "public",
+   "label": "Sur votre site",
+   "goto": "/site/studio-lumiere/guide-gratuit"
+  },
+  {
+   "at": "public",
+   "scroll": "#offre",
+   "hover": "a[data-rapido-produit]"
+  },
+  {
+   "at": "ventes",
+   "label": "Ventes en ligne",
+   "goto": "/ventes"
+  },
+  {
+   "at": "ventes",
+   "zone": "table"
+  },
+  {
+   "at": "stats",
+   "zone": ".row:has(.card)"
+  },
+  {
+   "at": "outro",
+   "top": true
+  }
+ ]
+}
