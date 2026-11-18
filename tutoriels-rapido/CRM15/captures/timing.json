@@ -1,46 +1,40 @@
 {
-  "voiceStartInCapture": 3.125,
+  "voiceStartInCapture": 2.98,
   "paragraphs": {
-    "intro": 0.03,
-    "stats": 6.25,
-    "liste": 12.25,
-    "envoyer": 19.43,
-    "details": 27.08,
-    "signature": 34.12,
-    "suivi": 42.31,
-    "outro": 47.45,
-    "end": 51.52
+    "intro": 0.04,
+    "tableau": 7.04,
+    "filtres": 14.54,
+    "envoyer": 20.04,
+    "signature": 26.54,
+    "suivi": 34.54,
+    "echeances": 43.04,
+    "outro": 51.54,
+    "end": 56
   },
   "zones": {
-    "stats": [
-      390,
-      165,
-      1410,
-      120
+    "tableau": [
+      394,
+      186,
+      1392,
+      110
     ],
-    "liste": [
-      390,
-      455,
-      1400,
-      320
-    ],
-    "details": [
-      766,
-      224,
-      388,
-      632
-    ],
-    "signature": [
-      260,
-      60,
-      1400,
-      900
+    "filtres": [
+      380,
+      383,
+      1420,
+      139
     ],
     "suivi": [
-      380,
-      380,
-      1460,
-      420
+      1206,
+      653,
+      594,
+      396
+    ],
+    "echeances": [
+      1206,
+      320,
+      594,
+      366
     ]
   }
 }

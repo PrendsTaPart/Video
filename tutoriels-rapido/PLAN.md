@@ -188,7 +188,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
   CRM73 agent IA des sites (⚠️ modèle de langage simulé), CRM74 boîte de réception et tickets, CRM77 blog, CRM53 / CRM54 éditeur (sections, 70 modèles,
   téléphone), CRM55 ventes en ligne (clé Stripe de test), CRM81 portail client, CRM82 double authentification, CRM83 Factur-X, CRM84 suivi des envois
   et désinscriptions.
-- **Tutoriels périmés** (tournés le 13/11, avant la refonte du module les 15–17/11) → à retourner : CRM13 factures (+ Factur-X), CRM15 contrats v2
+- **Tutoriels périmés** (tournés le 13/11, avant la refonte du module les 15–17/11) → **retournés et republiés le 18/11 : CRM15, CRM21, CRM27, CRM28** (même identifiant, Académie mise à jour par `fusion-academie.py --remplacer`) ; reste CRM13, CRM17 / CRM18. Liste d'origine : CRM13 factures (+ Factur-X), CRM15 contrats v2
   (signature, relances, reconduction), CRM17 / CRM18 campagnes e-mail et SMS (audiences, compteur SMS, aperçu, test), CRM21 segments (constructeur
   ET / OU), CRM27 jeux concours v2 (4 mécaniques), CRM28 sondages v2 (logique conditionnelle).
 - **Prévus au plan mais absents du code** (pas de tutoriel possible) : CRM71 prompteur temps réel, CRM72 enregistrement et analyse des appels,
