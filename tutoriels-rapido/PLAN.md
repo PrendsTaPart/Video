@@ -179,6 +179,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM87 — Toute la communication d'un client (chronologie tous canaux, filtres, prochaines actions) — écran `/communication/client/{id}`
 - [ ] CRM88 — Confier un événement à l'équipe RapidoRH (devis signé, ticket urgent, appel, bloc de Marketing Map → tâches des employés IA)
 - [ ] CRM89 — Marketing Map : audience des pages et statistiques des posts RapidoCMS reliés aux blocs
+- [ ] CRM90 — Centre d'aide public et répartition des nouveaux prospects (travail de l'autre session du 17/11)
 - [x] CRM86 — Transformer vos appels en actions (appels de l'agent vocal → analyse de réunion, réglages : analyse automatique, enregistrement des appels de l'équipe ; développé le 17/11, PR #115 commit 98b21f25) — publié le 17/11 (1 min 16, RapidoCMS + Académie)
 - [x] CRM85 — Transformer une réunion en actions (analyse de réunion développée le 17/11, PR #115 ; tournage en cours)
 
@@ -509,3 +510,17 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   Tutoriel RH correspondant à prévoir quand la branche sera fusionnée et déployée.
 - Site : pages produits refondues avec fil conducteur, nouvelles fonctionnalités et vrais écrans, plus aucun « V2 » (PR brouillon #49).
 
+
+## Journal — 18/11, nuit (demande de Michael : revue du travail de l'autre agent, bugs, tutoriels)
+
+- Revue des écrans livrés par l'autre session (blog, agent du site, relation client, KPI RapidoRH), tests navigateur 1440 / 390 px.
+- **Bugs corrigés dans rapido-crm** (PR #115) :
+  - ⚠️ rappels externes en 419 en production : `routes/api.php` passe par le groupe `web` (CSRF) ; Twilio (téléphonie, SMS STOP), compte rendu
+    RapidoRH, centre d'aide, commentaires et mesure du blog, API REST des outils ne pouvaient pas aboutir (tests sans CSRF) → exemptés, test qui rejoue
+    le vrai CSRF (a2f77654) ;
+  - base de connaissances des agents du site réindexée toutes les heures (daaaf29b) ; source citée une seule fois (bd1eb476) ;
+  - tickets : retard visible dès l'échéance dépassée, sans attendre `tickets:sla` (baefe326, c34e8448) ;
+  - blog : bouton « Enregistrer et publier » (06a10f23) ;
+  - casse : première lettre forcée par le thème sur les écrans `sites-ecran` (adresses e-mail), Score des prospects.
+- Tutoriels : CRM77 blog publié (2e prise : cadrage des commentaires) ; CRM73 (2e prise : questions saisies d'un coup), CRM74, CRM90 en cours.
+- Copie de tournage : `APP_URL=http://127.0.0.1:8124` (liens des sources de l'agent), resynchronisée par `tar` (pas de rsync dans le conteneur).
