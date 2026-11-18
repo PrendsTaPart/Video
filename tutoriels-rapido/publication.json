@@ -510,6 +510,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM52.png"
   },
   {
+    "id": "CRM55",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Vendre en ligne avec un bouton d'achat",
+    "tag": "1 min · Débutant",
+    "duree_s": 52,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM55.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM55.png"
+  },
+  {
     "id": "CRM56",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",
