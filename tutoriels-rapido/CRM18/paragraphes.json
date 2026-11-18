@@ -1,10 +1,12 @@
 {
- "intro": 0.03,
- "historique": 7.25,
- "cible": 13.57,
- "modele": 21.03,
- "texte": 25.65,
- "apercu": 30.89,
- "outro": 38.31,
- "end": 41.78
+ "intro": 0.05,
+ "cible": 5.55,
+ "compte": 12.79,
+ "modele": 17.81,
+ "texte": 22.17,
+ "compteur": 27.09,
+ "apercu": 40.09,
+ "creneaux": 46.43,
+ "outro": 51.25,
+ "end": 56.24
 }

@@ -173,9 +173,9 @@
     "id": "CRM18",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",
-    "titre": "Campagnes SMS et aperçu",
+    "titre": "Campagnes SMS : cible, compteur et aperçu",
     "tag": "1 min · Débutant",
-    "duree_s": 50,
+    "duree_s": 64,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM18.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM18.png"
   },
