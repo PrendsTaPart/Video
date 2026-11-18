@@ -1,21 +1,13 @@
 <?php
-// Segments FICTIFS pour filmer CRM21 (copie de tournage /home/user/rapido-crm-film, jamais le dépôt).
-// À lancer depuis la copie : php artisan tinker --execute="require '<ce fichier>';"
-use App\Models\Segment;
-$defs = [
-    ['Commerçants bordelais', 'Commerces et restaurants de Bordeaux à relancer avant les fêtes.', 'actif', 'haute', '#4CAF50',
-        ['operateur_global' => 'ET', 'groupes' => [['operateur' => 'ET', 'conditions' => [
-            ['champ' => 'ville', 'op' => 'contient', 'valeur' => 'bordeaux'],
-            ['champ' => 'secteur_activite', 'op' => '=', 'valeur' => 'Commerce']]]]]],
-    ['Hôtels et tourisme', 'Établissements touristiques : offre portraits d\'équipe.', 'actif', 'normale', '#03A9F5',
-        ['operateur_global' => 'ET', 'groupes' => [['operateur' => 'ET', 'conditions' => [
-            ['champ' => 'secteur_activite', 'op' => '=', 'valeur' => 'Tourisme']]]]]],
-    ['Clients VIP', 'Liste fixe des meilleurs clients, choisis à la main.', 'statique', 'haute', '#7E57C2', null],
-];
-foreach ($defs as [$nom, $desc, $type, $prio, $couleur, $criteres]) {
-    Segment::withTrashed()->where('company_id', 1)->where('nom', $nom)->forceDelete();
-    $s = Segment::create(['company_id' => 1, 'nom' => $nom, 'description' => $desc, 'type' => $type, 'priorite' => $prio,
-        'couleur' => $couleur, 'criteres' => $criteres, 'actif' => true, 'cree_par' => 1]);
-    if ($criteres) { $s->recalculer(); }
+// Données fictives pour CRM21 (segments). Copie de tournage uniquement. Rejouable.
+// Scores d'engagement variés pour que le compteur en direct change à chaque condition ; anciens segments de démonstration retirés.
+use Illuminate\Support\Facades\DB;
+
+$cid = 1;
+foreach (DB::table('contacts')->where('company_id', $cid)->where('id', '>', 5)->pluck('id') as $id) {
+    DB::table('contacts')->where('id', $id)->update(['score_engagement' => ($id * 37) % 95]);
 }
-echo "Segments de démo prêts\n";
+$ids = DB::table('segments')->where('company_id', $cid)->where('nom', 'like', 'Prospects chauds de Bordeaux%')->pluck('id');
+DB::table('segment_contacts')->whereIn('segment_id', $ids)->delete();
+DB::table('segments')->whereIn('id', $ids)->delete();
+echo 'Segments prêts ('.DB::table('contacts')->where('company_id', $cid)->where('score_engagement', '>=', 50)->count()." contacts au score ≥ 50)\n";

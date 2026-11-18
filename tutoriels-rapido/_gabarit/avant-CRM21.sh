@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
-# CRM21 : segments de démo (copie de tournage uniquement).
-G="$(cd "$(dirname "$0")" && pwd)"; DB=/home/user/rapido-crm-film/database/database.sqlite
-php "$G/domaines-demo.php" "$DB"
-cd /home/user/rapido-crm-film && php artisan tinker --execute="require '$G/segments-demo.php';"
+# CRM21 (segments, constructeur ET / OU) : scores fictifs variés, segment de la prise précédente retiré.
+cd /home/user/rapido-crm-film && php artisan tinker --execute="require '/home/user/video/tutoriels-rapido/_gabarit/segments-demo.php';"

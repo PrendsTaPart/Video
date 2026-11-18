@@ -12,128 +12,186 @@
  "capture": "captures/ecran.mp4",
  "start_path": "/admin/segmentation",
  "type_delay": 30,
- "fixes": {
-  "VIP": "VIP",
-  "IA": "IA"
- },
+ "fixes": {},
  "end_cta": "Prochain épisode : les modèles d'e-mails et de SMS",
  "paragraphs": [
   {
    "key": "intro",
-   "text": "Dans ce tutoriel, on regroupe ses contacts en segments pour leur parler au bon moment."
-  },
-  {
-   "key": "liste",
-   "text": "La page Segmentation liste vos segments, avec leur type, leur priorité et le nombre de contacts qu'ils réunissent."
-  },
-  {
-   "key": "types",
-   "text": "Un segment actif se met à jour tout seul selon ses critères, par exemple : les commerces de Bordeaux. Un segment statique, comme vos clients VIP, est une liste fixe."
-  },
-  {
-   "key": "detail",
-   "text": "Ouvrez un segment pour voir ses contacts, et comment chacun y est entré."
-  },
-  {
-   "key": "recalculer",
-   "text": "Le bouton Recalculer applique à nouveau les critères, pour intégrer vos nouveaux clients."
+   "text": "Un segment regroupe les contacts qui se ressemblent, pour leur envoyer le bon message au bon moment."
   },
   {
    "key": "creer",
-   "text": "Pour en créer un, donnez-lui un nom, un type et une priorité. Et si vous utilisez l'assistant IA de RapidoCRM, demandez-lui simplement de créer le segment : il écrit les critères pour vous."
+   "text": "Cliquez sur Créer un segment et donnez-lui un nom, par exemple : prospects chauds de Bordeaux."
+  },
+  {
+   "key": "ville",
+   "text": "Ajoutez une condition : la ville est Bordeaux. Le nombre de contacts correspondants se met à jour en direct."
+  },
+  {
+   "key": "score",
+   "text": "Ajoutez-en une seconde : un score d'au moins cinquante. Ici, toutes les conditions doivent être vraies."
+  },
+  {
+   "key": "groupe",
+   "text": "Un second groupe élargit la cible. Avec « au moins un groupe », on ajoute les contacts qui ont cliqué dans un e-mail ces trente derniers jours."
+  },
+  {
+   "key": "types",
+   "text": "Un segment dynamique se met à jour tout seul. Un segment statique garde la liste du jour de sa création."
+  },
+  {
+   "key": "fiche",
+   "text": "Créez le segment : sa fiche montre ses contacts, et ses critères restent modifiables."
   },
   {
    "key": "utiliser",
-   "text": "Vos segments servent ensuite de cible dans toutes vos campagnes : e-mail, SMS et newsletter."
+   "text": "Vos segments servent ensuite de cible dans vos campagnes e-mail et SMS, vos séquences et vos workflows."
   },
   {
    "key": "outro",
-   "text": "Dans le prochain tutoriel, on soigne ses modèles d'e-mails et de SMS. À tout de suite !"
+   "text": "Le bon message, aux bonnes personnes. Retrouvez tous nos tutoriels dans l'Académie !"
   }
  ],
  "scenes": [
   {
    "at": "intro",
-   "wait": 0.3
-  },
-  {
-   "at": "liste",
-   "label": "Vos segments",
-   "zone": [
-    280,
-    190,
-    1620,
-    420
-   ]
-  },
-  {
-   "at": "types",
-   "label": "Actif ou statique",
-   "zone": [
-    280,
-    370,
-    1620,
-    240
-   ]
-  },
-  {
-   "at": "detail",
-   "label": "Le détail",
-   "wait": 2.5,
-   "eval": "location.href=document.querySelector('a[href*=\"segmentation/\"]').href",
-   "zone": [
-    270,
-    100,
-    1640,
-    600
-   ]
-  },
-  {
-   "at": "recalculer",
-   "label": "Recalculer",
-   "hover": "button:has-text(\"recalculer\") >> visible=true",
-   "zone": [
-    1780,
-    110,
-    130,
-    60
-   ]
+   "wait": 0.4
   },
   {
    "at": "creer",
-   "label": "Un nouveau segment",
-   "goto": "/admin/segmentation",
-   "click": "button:has-text(\"créer un segment\") >> visible=true",
+   "label": "Nouveau segment",
+   "click": "button:has-text(\"Créer un segment\") >> visible=true",
+   "wait": 0.4
+  },
+  {
+   "at": "creer",
    "fill": [
     [
-     ".modal.show input >> nth=0",
-     "Nouveaux clients 2026"
+     "#segmentNom",
+     "Prospects chauds de Bordeaux"
+    ]
+   ]
+  },
+  {
+   "at": "ville",
+   "label": "Une condition",
+   "click": ".modal.show button:has-text(\"+ Condition\") >> nth=0"
+  },
+  {
+   "at": "ville",
+   "select": [
+    [
+     ".modal.show .cs-ligne >> nth=0 >> select >> nth=0",
+     "Ville"
+    ]
+   ]
+  },
+  {
+   "at": "ville",
+   "fill_now": [
+    [
+     ".modal.show .cs-ligne >> nth=0 >> .cs-valeur",
+     "Bordeaux"
     ]
    ],
-   "wait": 0.4,
-   "zone": ".modal.show .modal-content"
+   "wait": 0.9,
+   "zone": ".modal.show .cs-compteur"
+  },
+  {
+   "at": "score",
+   "label": "Toutes les conditions",
+   "click": ".modal.show button:has-text(\"+ Condition\") >> nth=0"
+  },
+  {
+   "at": "score",
+   "select": [
+    [
+     ".modal.show .cs-ligne >> nth=1 >> select >> nth=0",
+     "Score"
+    ],
+    [
+     ".modal.show .cs-ligne >> nth=1 >> select >> nth=1",
+     "au moins"
+    ]
+   ]
+  },
+  {
+   "at": "score",
+   "fill_now": [
+    [
+     ".modal.show .cs-ligne >> nth=1 >> .cs-valeur",
+     "50"
+    ]
+   ],
+   "wait": 0.9,
+   "zone": ".modal.show .cs-compteur"
+  },
+  {
+   "at": "groupe",
+   "label": "Un second groupe",
+   "click": ".modal.show button:has-text(\"+ Groupe\")"
+  },
+  {
+   "at": "groupe",
+   "select": [
+    [
+     ".modal.show select.form-select-sm >> nth=0",
+     "au moins un groupe"
+    ]
+   ]
+  },
+  {
+   "at": "groupe",
+   "click": ".modal.show button:has-text(\"+ Condition\") >> nth=1"
+  },
+  {
+   "at": "groupe",
+   "select": [
+    [
+     ".modal.show .cs-ligne >> nth=2 >> select >> nth=0",
+     "A cliqué dans un e-mail"
+    ]
+   ]
+  },
+  {
+   "at": "groupe",
+   "fill_now": [
+    [
+     ".modal.show .cs-ligne >> nth=2 >> .cs-jours",
+     "30"
+    ]
+   ],
+   "wait": 0.9,
+   "zone": ".modal.show .cs-compteur"
+  },
+  {
+   "at": "types",
+   "label": "Dynamique ou statique",
+   "eval": "document.querySelector('#segmentType').scrollIntoView({block:'center',behavior:'smooth'})",
+   "wait": 0.8,
+   "zone": "#segmentType",
+   "hover": "#segmentType"
+  },
+  {
+   "at": "fiche",
+   "label": "La fiche du segment",
+   "click": ".modal.show button:has-text(\"créer\")",
+   "wait": 1.0
+  },
+  {
+   "at": "fiche",
+   "eval": "(()=>{const a=[...document.querySelectorAll('a')].find(x=>/Prospects chauds de Bordeaux/i.test(x.innerText)&&/segmentation\\/\\d/.test(x.href));if(a)location.href=a.href;})()",
+   "wait": 1.8
   },
   {
    "at": "utiliser",
    "label": "Cibler un segment",
    "goto": "/ajout-campagne-email",
-   "select": [
-    [
-     "select >> nth=0",
-     "Par segment"
-    ]
-   ],
-   "wait": 0.6,
-   "zone": [
-    390,
-    280,
-    1400,
-    260
-   ]
+   "wait": 0.6
   },
   {
    "at": "outro",
-   "wait": 0.3
+   "top": true
   }
  ],
  "thumb_shot": "fin.png"
