@@ -176,7 +176,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM82 — Sécuriser son compte : la double authentification (17/11 : voix 1 090 crédits, 2e prise après répartition des actions, publié RapidoCMS + Académie)
 - [x] CRM83 — La facture électronique Factur-X (17/11 : voix 978 crédits, publié RapidoCMS + Académie ; bouton « Compléter mon entreprise » ajouté au CRM)
 - [x] CRM84 — Suivre les e-mails et SMS envoyés, gérer les désinscriptions (voix 1 158 crédits, publié le 17/11)
-- [ ] CRM87 — Toute la communication d'un client (chronologie tous canaux, filtres, prochaines actions) — écran `/communication/client/{id}`
+- [x] CRM87 — Toute la communication d'un client (chronologie tous canaux, filtres, prochaines actions) — écran `/communication/client/{id}`
 - [ ] CRM88 — Confier un événement à l'équipe RapidoRH (devis signé, ticket urgent, appel, bloc de Marketing Map → tâches des employés IA)
 - [ ] CRM89 — Marketing Map : audience des pages et statistiques des posts RapidoCMS reliés aux blocs
 - [x] CRM90 — Centre d'aide public et répartition des nouveaux prospects (18/11 : voix 982 crédits, publié RapidoCMS + Académie ; centre d'aide en 419 corrigé)

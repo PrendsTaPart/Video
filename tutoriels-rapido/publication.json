@@ -770,6 +770,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM86.png"
   },
   {
+    "id": "CRM87",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Toute la communication d'un client sur un seul écran",
+    "tag": "1 min · Débutant",
+    "duree_s": 49,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM87.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM87.png"
+  },
+  {
     "id": "CRM90",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",
