@@ -23,6 +23,6 @@ foreach ($noms as $i => $nom) {
         $s->compterVue($jeu, ['source' => ['qr', 'site', 'instagram'][$i % 3], 'appareil' => $i % 2 ? 'mobile' : 'ordinateur', 'visiteur' => 'v'.$i.$v]);
     }
     $email = strtolower(str_replace([' ', 'é', 'è', 'ï', 'ô'], ['.', 'e', 'e', 'i', 'o'], $nom)).'@exemple.test';
-    $s->jouer($jeu, ['nom' => $nom, 'email' => $email, 'consentement' => '1'], ['source' => ['qr', 'site', 'instagram'][$i % 3], 'appareil' => $i % 2 ? 'mobile' : 'ordinateur']);
+    $s->jouer($jeu, ['nom' => $nom, 'email' => $email, 'telephone' => '06 12 34 5'.sprintf('%03d', $i * 7), 'consentement' => '1'], ['source' => ['qr', 'site', 'instagram'][$i % 3], 'appareil' => $i % 2 ? 'mobile' : 'ordinateur']);
 }
 echo 'Jeux prêts : '.$jeu->fresh()->vues.' vues, '.DB::table('jeu_participations')->where('game_id', $jeu->id)->count()." parties\n";

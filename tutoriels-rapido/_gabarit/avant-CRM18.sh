@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-# CRM18 : campagnes, modèles d'e-mail et domaines d'activité de démo (copie de tournage uniquement).
-G="$(cd "$(dirname "$0")" && pwd)"; DB=/home/user/rapido-crm-film/database/database.sqlite
-php "$G/contrats-demo.php" "$DB"; php "$G/domaines-demo.php" "$DB"; php "$G/campagnes-demo.php" "$DB"
+# CRM18 (campagnes SMS) : modèles de SMS fictifs et joueurs du jeu de démonstration avec téléphone.
+cd /home/user/rapido-crm-film && php artisan tinker --execute="require '/home/user/video/tutoriels-rapido/_gabarit/sms-demo.php';"

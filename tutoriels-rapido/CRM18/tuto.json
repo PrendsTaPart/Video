@@ -1,40 +1,178 @@
 {
-  "id": "CRM18",
-  "product": "crm",
-  "kicker": "Tutoriel RapidoCRM",
-  "title": "Campagnes SMS et aperçu",
-  "em": "Campagnes SMS",
-  "tag": "1 min · Débutant",
-  "intro": 3.0,
-  "outro": 4.5,
-  "voice": "audio/voix.mp3",
-  "transcript": "audio/transcript.json",
-  "capture": "captures/ecran.mp4",
-  "start_path": "/campagnes-automatiques",
-  "type_delay": 30,
-  "fixes": {"SMS": "SMS"},
-  "end_cta": "Prochain épisode : les newsletters",
-  "paragraphs": [
-    {"key": "intro", "text": "Dans ce tutoriel, on envoie un SMS à toute sa clientèle avec RapidoCRM, et on le prévisualise avant l'envoi."},
-    {"key": "historique", "text": "Dans Campagnes, l'onglet SMS liste les envois passés et programmés, avec leur cible et leur date."},
-    {"key": "cible", "text": "Une nouvelle campagne SMS commence par le ciblage : vos entreprises, vos contacts ou un segment, filtré par domaine d'activité."},
-    {"key": "modele", "text": "On choisit un modèle de SMS, puis les portefeuilles concernés et l'heure d'envoi."},
-    {"key": "texte", "text": "À l'étape suivante, on voit combien de personnes recevront le message, et on peut retoucher le texte."},
-    {"key": "apercu", "text": "L'aperçu montre le SMS tel qu'il s'affichera sur le téléphone de vos clients, avec le nom de votre société. Il ne reste qu'à valider."},
-    {"key": "outro", "text": "Dans le prochain tutoriel, on crée une newsletter. À tout de suite !"}
-  ],
-  "scenes": [
-    {"at": "intro", "wait": 0.3},
-    {"at": "historique", "label": "L'historique SMS", "click": "button[data-bs-target=\"#tab-sms\"]", "wait": 0.4, "zone": [280, 360, 1620, 300]},
-    {"at": "cible", "label": "Le ciblage", "goto": "/ajout-campagne-sms",
-     "select": [["select >> nth=0", "Toutes mes entreprises"], ["select >> nth=1", "Commerce"]], "zone": [390, 280, 1400, 140]},
-    {"at": "modele", "label": "Modèle et envoi", "click": ".card input[type=radio] >> nth=2"},
-    {"at": "modele", "click": ".tagify__input", "fill": [[".tagify__input", "Léa"]]},
-    {"at": "modele", "click": ".tagify__dropdown__item >> nth=0", "fill": [["input[type=datetime-local]", "2026-11-21T09:30"]], "zone": [390, 440, 1400, 570]},
-    {"at": "texte", "label": "Le message", "click": "button.btn-next >> visible=true", "wait": 0.5, "zone": [390, 280, 1400, 400]},
-    {"at": "apercu", "label": "L'aperçu", "click": "button.btn-next >> visible=true", "wait": 0.6, "zone": [900, 300, 380, 600]},
-    {"at": "apercu", "hover": "button:has-text(\"valider\") >> visible=true"},
-    {"at": "outro", "wait": 0.3}
-  ],
-  "thumb_shot": "fin.png"
+ "id": "CRM18",
+ "product": "crm",
+ "kicker": "Tutoriel RapidoCRM",
+ "title": "Campagnes SMS : cible, compteur et aperçu",
+ "em": "SMS",
+ "tag": "1 min · Débutant",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/ajout-campagne-sms",
+ "type_delay": 30,
+ "fixes": {
+  "Unicode": "Unicode"
+ },
+ "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Envoyez un SMS aux bonnes personnes, au bon moment, et sans mauvaise surprise sur la facture."
+  },
+  {
+   "key": "cible",
+   "text": "Choisissez la cible. Avec Écosystème, visez par exemple les gagnants d'un jeu concours qui n'ont pas encore retiré leur lot."
+  },
+  {
+   "key": "compte",
+   "text": "RapidoCRM compte aussitôt les destinataires qui ont un numéro de téléphone, sans les désinscrits."
+  },
+  {
+   "key": "modele",
+   "text": "Choisissez ensuite un modèle, le portefeuille concerné, et la date d'envoi."
+  },
+  {
+   "key": "texte",
+   "text": "À l'étape suivante, retouchez le texte, et insérez le prénom ou la ville en un clic."
+  },
+  {
+   "key": "compteur",
+   "text": "Le compteur affiche les caractères et les SMS facturés. Ici, une apostrophe courbe et un A accentué font passer le message en Unicode : deux SMS au lieu d'un. On les remplace, et l'on revient à un seul SMS."
+  },
+  {
+   "key": "apercu",
+   "text": "L'aperçu montre le message final, avec la mention STOP obligatoire. Envoyez-vous un test avant de valider."
+  },
+  {
+   "key": "creneaux",
+   "text": "Les envois partent du lundi au samedi, de huit heures à vingt heures, hors jours fériés."
+  },
+  {
+   "key": "outro",
+   "text": "Des SMS efficaces, et maîtrisés. Retrouvez tous nos tutoriels dans l'Académie !"
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.4
+  },
+  {
+   "at": "cible",
+   "label": "La cible",
+   "select": [
+    [
+     "select:has(option:has-text(\"Par segment\"))",
+     "Écosystème : pipeline, jeu, sondage, formulaire, engagement…"
+    ]
+   ],
+   "wait": 0.4
+  },
+  {
+   "at": "cible",
+   "select": [
+    [
+     "select:has(option:has-text(\"Choisir une source\"))",
+     "Participants d’un jeu"
+    ]
+   ],
+   "wait": 0.4
+  },
+  {
+   "at": "cible",
+   "select": [
+    [
+     "select:has(option:has-text(\"Choisir…\"))",
+     "Roue du printemps"
+    ]
+   ],
+   "wait": 0.4
+  },
+  {
+   "at": "cible",
+   "select": [
+    [
+     "select:has(option:has-text(\"Tous les participants\"))",
+     {
+      "value": "non_remis"
+     }
+    ]
+   ],
+   "wait": 0.6
+  },
+  {
+   "at": "compte",
+   "label": "Les destinataires",
+   "zone": ".audience-apercu"
+  },
+  {
+   "at": "modele",
+   "label": "Modèle et date",
+   "click": ".slidecardBox:has-text(\"Lot à retirer\") label:has-text(\"Choisir\")",
+   "wait": 0.4
+  },
+  {
+   "at": "modele",
+   "click": "#showTemplateSmsModal button:has-text(\"Utiliser ce modèle\")"
+  },
+  {
+   "at": "modele",
+   "click": ".tagify__input",
+   "wait": 0.4
+  },
+  {
+   "at": "modele",
+   "click": ".tagify__dropdown__item >> nth=0"
+  },
+  {
+   "at": "modele",
+   "fill": [
+    [
+     "input[type=\"datetime-local\"]",
+     "2026-11-20T10:00"
+    ]
+   ]
+  },
+  {
+   "at": "texte",
+   "label": "Le texte",
+   "click": "button:has-text(\"Suivant\") >> visible=true",
+   "wait": 0.6,
+   "zone": "#texteSms"
+  },
+  {
+   "at": "compteur",
+   "label": "SMS facturés",
+   "zone": ".sms-outils"
+  },
+  {
+   "at": "compteur",
+   "eval": "(()=>{const t=document.getElementById('texteSms');t.value=t.value.replace(/’/g,\"'\").replace(/À/g,'A');t.dispatchEvent(new Event('input',{bubbles:true}));})()",
+   "wait": 0.6
+  },
+  {
+   "at": "apercu",
+   "label": "Aperçu et test",
+   "fill": [
+    [
+     ".sms-outils input[type=\"tel\"]",
+     "06 12 34 56 78"
+    ]
+   ],
+   "zone": ".sms-telephone",
+   "zone_closest": ".row"
+  },
+  {
+   "at": "creneaux",
+   "label": "Créneaux d’envoi",
+   "hover": ".sms-outils button:has(.ti-send)"
+  },
+  {
+   "at": "outro",
+   "top": true
+  }
+ ],
+ "thumb_shot": "fin.png"
 }
