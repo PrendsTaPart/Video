@@ -670,6 +670,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM73.png"
   },
   {
+    "id": "CRM74",
+    "produit": "crm",
+    "kicker": "Tutoriel RapidoCRM",
+    "titre": "Boîte de réception et tickets : ne laissez aucun client sans réponse",
+    "tag": "2 min · Débutant",
+    "duree_s": 61,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM74.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-CRM74.png"
+  },
+  {
     "id": "CRM75",
     "produit": "crm",
     "kicker": "Tutoriel RapidoCRM",

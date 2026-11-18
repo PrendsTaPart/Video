@@ -165,7 +165,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [~] CRM71 — Appeler un client depuis sa fiche et le prompteur temps réel (17/11 : l'appel depuis la fiche est montré dans CRM70 ; le prompteur temps réel n'existe pas encore dans RapidoCRM)
 - [x] CRM72 — (couvert par CRM86, publié le 17/11) Analyse des appels, enregistrement et tâches envoyées à l'équipe IA
 - [x] CRM73 — L'agent IA sur votre site web (18/11 : voix 995 crédits, 2e prise, publié RapidoCMS + Académie ; réindexation horaire et source citée une fois ajoutées)
-- [ ] CRM74 — Boîte de réception et tickets (à inclure : répondre à un SMS ou un e-mail depuis la file, refus si STOP — ajout du 17/11)
+- [x] CRM74 — Boîte de réception et tickets (18/11 : voix 988 crédits, 2e prise, publié RapidoCMS + Académie ; retard des tickets visible sans attendre la commande planifiée)
 - [x] CRM75 — Dessiner sa stratégie avec la Marketing Map
 - [x] CRM76 — Suivre ses prospects en direct sur la carte
 - [x] CRM77 — Écrire un article de blog optimisé SEO (18/11 : voix 1 105 crédits, 2e prise, publié RapidoCMS + Académie ; bouton « Enregistrer et publier » ajouté)

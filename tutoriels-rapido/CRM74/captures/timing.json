@@ -1,0 +1,36 @@
+{
+  "voiceStartInCapture": 3.418,
+  "paragraphs": {
+    "intro": 0.03,
+    "file": 8.02,
+    "sms": 13.02,
+    "ticket": 19.02,
+    "tickets": 24.02,
+    "repondre": 30.03,
+    "resoudre": 36.03,
+    "avis": 38.02,
+    "nps": 43.02,
+    "outro": 49.03,
+    "end": 53
+  },
+  "zones": {
+    "file": [
+      380,
+      339,
+      1420,
+      741
+    ],
+    "tickets": [
+      380,
+      346,
+      1420,
+      390
+    ],
+    "nps": [
+      372,
+      168,
+      1436,
+      122
+    ]
+  }
+}

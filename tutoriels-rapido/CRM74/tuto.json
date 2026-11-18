@@ -84,13 +84,13 @@
     {
       "at": "sms",
       "click": "form[action*='/messages/1/repondre'] button",
-      "wait": 0.4
+      "wait": 0.3
     },
     {
       "at": "ticket",
       "label": "E-mail → ticket",
       "click": "form[action*='/messages/2/ticket'] button",
-      "wait": 0.4
+      "wait": 0.3
     },
     {
       "at": "tickets",
@@ -107,17 +107,17 @@
     },
     {
       "at": "repondre",
-      "fill": [
+      "fill_now": [
         [
           "#rep",
-          "Bonjour Camille, voici votre facture de septembre."
+          "Bonjour Camille, voici votre facture de septembre en pièce jointe. Bonne journée !"
         ]
       ]
     },
     {
       "at": "repondre",
       "click": "form:has(#rep) button.btn-primary",
-      "wait": 0.4
+      "wait": 0.2
     },
     {
       "at": "resoudre",
@@ -130,24 +130,20 @@
       ]
     },
     {
-      "at": "resoudre",
+      "at": "avis",
       "click": "form:has(#st) button",
-      "wait": 0.4
+      "wait": 0.2
     },
     {
       "at": "avis",
       "label": "L'avis du client",
-      "goto_file": "lien-avis.txt"
+      "goto_file": "lien-avis.txt",
+      "eval": "(()=>{for(const [n,v] of [['note','5'],['nps','9']]){const i=document.querySelector(`input[name=${n}][value='${v}']`);if(i){i.checked=true;i.dispatchEvent(new Event('change',{bubbles:true}));}}})()"
     },
     {
-      "at": "avis",
-      "eval": "(()=>{for(const [n,v] of [['note','5'],['nps','9']]){const i=document.querySelector(`input[name=${n}][value='${v}']`);if(i){i.checked=true;i.dispatchEvent(new Event('change',{bubbles:true}));}}})()",
-      "wait": 0.8
-    },
-    {
-      "at": "avis",
-      "click": "button:has-text('Envoyer mon avis')",
-      "wait": 0.4
+      "at": "nps",
+      "eval": "(()=>{const f=document.querySelector('form');if(f)f.submit();})()",
+      "wait": 1.0
     },
     {
       "at": "nps",
