@@ -179,7 +179,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [ ] CRM87 — Toute la communication d'un client (chronologie tous canaux, filtres, prochaines actions) — écran `/communication/client/{id}`
 - [ ] CRM88 — Confier un événement à l'équipe RapidoRH (devis signé, ticket urgent, appel, bloc de Marketing Map → tâches des employés IA)
 - [ ] CRM89 — Marketing Map : audience des pages et statistiques des posts RapidoCMS reliés aux blocs
-- [ ] CRM90 — Centre d'aide public et répartition des nouveaux prospects (travail de l'autre session du 17/11)
+- [x] CRM90 — Centre d'aide public et répartition des nouveaux prospects (travail de l'autre session du 17/11)
 - [x] CRM86 — Transformer vos appels en actions (appels de l'agent vocal → analyse de réunion, réglages : analyse automatique, enregistrement des appels de l'équipe ; développé le 17/11, PR #115 commit 98b21f25) — publié le 17/11 (1 min 16, RapidoCMS + Académie)
 - [x] CRM85 — Transformer une réunion en actions (analyse de réunion développée le 17/11, PR #115 ; tournage en cours)
 

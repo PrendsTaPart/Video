@@ -1,0 +1,34 @@
+{
+  "voiceStartInCapture": 3.18,
+  "paragraphs": {
+    "intro": 0.02,
+    "aide": 6.8,
+    "recherche": 15.36,
+    "demande": 20.46,
+    "repartition": 27,
+    "mode": 33.46,
+    "tache": 40.76,
+    "outro": 47.87,
+    "end": 53.44
+  },
+  "zones": {
+    "aide": [
+      536,
+      83,
+      848,
+      997
+    ],
+    "repartition": [
+      380,
+      294,
+      594,
+      754
+    ],
+    "tache": [
+      380,
+      294,
+      594,
+      754
+    ]
+  }
+}
