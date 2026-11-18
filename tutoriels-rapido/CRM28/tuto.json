@@ -57,7 +57,10 @@
      "#nomNouveauSondage",
      "Avis après rendez-vous"
     ]
-   ],
+   ]
+  },
+  {
+   "at": "creer",
    "click": "#boutonCreerSondage",
    "wait": 1.2
   },
@@ -88,7 +91,10 @@
      "[data-champ=\"titre\"][data-i=\"3\"]",
      "Votre numéro de téléphone"
     ]
-   ],
+   ]
+  },
+  {
+   "at": "logique",
    "click": "[data-ouvrir=\"2\"]"
   },
   {
