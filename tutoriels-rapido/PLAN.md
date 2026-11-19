@@ -304,9 +304,9 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 
 ### Gestion de projet & équipe
 - [x] F16 — Lancer un projet : découpage, rôles, échéances — PUBLIÉ (19/11)
-- [~] F17 — Le Kanban au quotidien (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [~] F18 — Le daily efficace en 5 minutes (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [~] F19 — Intégrer un nouveau collaborateur (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F17 — Le Kanban au quotidien — PUBLIÉ (19/11)
+- [x] F18 — Le daily efficace en 5 minutes — PUBLIÉ (19/11)
+- [x] F19 — Intégrer un nouveau collaborateur — PUBLIÉ (19/11)
 - [~] F20 — Gérer congés et charge de travail (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 
 ### Intelligence artificielle

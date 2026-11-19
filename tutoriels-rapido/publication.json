@@ -1060,6 +1060,36 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F16.png"
   },
   {
+    "id": "F17",
+    "produit": "rh",
+    "kicker": "Formation · Projet & équipe",
+    "titre": "Le Kanban au quotidien",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 63,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F17.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F17.png"
+  },
+  {
+    "id": "F18",
+    "produit": "rh",
+    "kicker": "Formation · Projet & équipe",
+    "titre": "Le daily efficace en 5 minutes",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 55,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F18.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F18.png"
+  },
+  {
+    "id": "F19",
+    "produit": "rh",
+    "kicker": "Formation · Projet & équipe",
+    "titre": "Intégrer un nouveau collaborateur",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 59,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F19.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F19.png"
+  },
+  {
     "id": "F21",
     "produit": "suite",
     "kicker": "Formation · IA",
