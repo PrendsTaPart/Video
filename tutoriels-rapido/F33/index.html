@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#03A9F5; --b:#C084FC; --grad:linear-gradient(100deg,#9BE15D,#6EE7FF 50%,#C084FC); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(130px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.42; }
+  .h2 { width:760px; height:640px; left:-280px; bottom:-340px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .slide .inner { position:absolute; inset:110px 150px 190px; display:flex; flex-direction:column; justify-content:center; }
+  .slide h1 { font-size:118px; line-height:.96; font-weight:800; letter-spacing:-.045em; text-wrap:balance; }
+  .slide h2 { font-size:86px; line-height:1; font-weight:800; letter-spacing:-.04em; margin-bottom:56px; text-wrap:balance; }
+  .kick { font-family:'Geist Mono',monospace; font-size:26px; letter-spacing:.16em; text-transform:uppercase; color:rgba(255,255,255,.65); margin-bottom:28px; }
+  .points { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .pt { display:flex; gap:22px; align-items:center; padding:26px 30px; border-radius:24px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); font-size:40px; font-weight:500; line-height:1.25; }
+  .pt b, .st b { flex:none; width:62px; height:62px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:28px; }
+  .steps { position:relative; display:flex; gap:28px; }
+  .steps .line { position:absolute; left:31px; right:31px; top:31px; height:3px; background:var(--grad); transform-origin:left; }
+  .st { position:relative; flex:1; display:flex; flex-direction:column; gap:22px; font-size:38px; font-weight:500; line-height:1.25; }
+  .cmp { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+  .col { padding:36px; border-radius:28px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.04); }
+  .col.r { border-color:var(--a); background:color-mix(in srgb,var(--a) 14%,transparent); box-shadow:0 0 60px -20px var(--a); }
+  .col h3 { font-size:30px; font-family:'Geist Mono',monospace; letter-spacing:.12em; text-transform:uppercase; margin-bottom:22px; color:rgba(255,255,255,.7); }
+  .col.r h3 { color:var(--b); }
+  .col p { font-size:38px; line-height:1.35; margin-top:14px; }
+  .chat { width:1300px; border-radius:28px; background:#262624; border:1px solid rgba(255,255,255,.12); padding:36px; display:flex; flex-direction:column; gap:26px; box-shadow:0 40px 100px -30px rgba(0,0,0,.9); }
+  .chat .q { align-self:flex-end; max-width:85%; background:#141413; border:1px solid rgba(255,255,255,.1); border-radius:20px; padding:20px 26px; font-size:32px; line-height:1.4; min-height:84px; }
+  .chat .a { display:flex; gap:20px; font-size:30px; line-height:1.45; color:#f5f4ef; }
+  .chat .a p { margin-bottom:10px; }
+  .glyph { color:#d97757; font-size:36px; }
+  .take { font-size:96px; line-height:1.02; font-weight:800; letter-spacing:-.04em; text-align:center; text-wrap:balance; }
+  .sub { position:absolute; inset:auto 0 70px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; white-space:nowrap; }
+  .bar { position:absolute; left:150px; right:150px; bottom:34px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:60px; top:44px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .card h1 { margin-top:40px; font-size:122px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1600px; text-wrap:balance; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style></head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="62.86" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">Formation Rapido</div>
+  <div class="slide clip" id="sl0" data-start="3.030" data-duration="7.700" data-track-index="2"><div class="inner"><div class="kick">Secteur · Santé &amp; bien-être</div><h1>Du temps pour <em>vos clients</em></h1></div></div>
+  <div class="slide clip" id="sl1" data-start="10.230" data-duration="6.740" data-track-index="2"><div class="inner"><h2>1 · Les <em>rendez-vous</em></h2><div class="points"><div class="pt"><b>1</b><span>Réservation en ligne</span></div><div class="pt"><b>2</b><span>Dans votre agenda</span></div></div></div></div>
+  <div class="slide clip" id="sl2" data-start="16.470" data-duration="7.300" data-track-index="2"><div class="inner"><h2>2 · La <em>fidélité</em></h2><div class="points"><div class="pt"><b>1</b><span>Une séance offerte toutes les dix</span></div><div class="pt"><b>2</b><span>Bonus d&#x27;anniversaire</span></div></div></div></div>
+  <div class="slide clip" id="sl3" data-start="23.270" data-duration="8.420" data-track-index="2"><div class="inner"><h2>3 · Du <em>contenu</em> utile</h2><div class="points"><div class="pt"><b>1</b><span>Un guide gratuit</span></div><div class="pt"><b>2</b><span>Une newsletter mensuelle</span></div></div></div></div>
+  <div class="slide clip" id="sl4" data-start="31.190" data-duration="7.460" data-track-index="2"><div class="inner"><h2>4 · <em>Écouter</em></h2><div class="points"><div class="pt"><b>1</b><span>Sondage court</span></div><div class="pt"><b>2</b><span>Recommandation de 0 à 10</span></div></div></div></div>
+  <div class="slide clip" id="sl5" data-start="38.150" data-duration="5.740" data-track-index="2"><div class="inner"><h2>Les <em>questions</em> pratiques</h2><div class="points"><div class="pt"><b>1</b><span>Agent IA du site</span></div><div class="pt"><b>2</b><span>Relais vers un humain</span></div></div></div></div>
+  <div class="slide clip" id="sl6" data-start="43.390" data-duration="5.260" data-track-index="2"><div class="inner"><h2>Votre <em>compte</em></h2><div class="points"><div class="pt"><b>1</b><span>Double authentification</span></div></div></div></div>
+  <div class="slide clip" id="sl7" data-start="48.150" data-duration="10.710" data-track-index="2"><div class="inner"><div class="take">Plus de temps pour <em>vos clients</em></div></div></div>
+  <div class="sub clip" id="s0" data-start="3.216" data-duration="0.845" data-track-index="7"><span>Praticiens, coachs</span></div>
+  <div class="sub clip" id="s1" data-start="4.081" data-duration="1.769" data-track-index="7"><span>centres de bien-être</span></div>
+  <div class="sub clip" id="s2" data-start="5.870" data-duration="0.680" data-track-index="7"><span>votre métier</span></div>
+  <div class="sub clip" id="s3" data-start="6.570" data-duration="1.700" data-track-index="7"><span>c&#x27;est la personne en face de vous</span></div>
+  <div class="sub clip" id="s4" data-start="8.290" data-duration="1.920" data-track-index="7"><span>Rapido s&#x27;occupe du reste</span></div>
+  <div class="sub clip" id="s5" data-start="10.230" data-duration="1.900" data-track-index="7"><span>Un : la prise de rendez-vous</span></div>
+  <div class="sub clip" id="s6" data-start="12.150" data-duration="1.820" data-track-index="7"><span>Vos créneaux sont réservables en ligne</span></div>
+  <div class="sub clip" id="s7" data-start="13.990" data-duration="2.460" data-track-index="7"><span>et chaque réservation arrive dans votre agenda</span></div>
+  <div class="sub clip" id="s8" data-start="16.470" data-duration="1.740" data-track-index="7"><span>Deux : la fidélité</span></div>
+  <div class="sub clip" id="s9" data-start="18.230" data-duration="1.070" data-track-index="7"><span>Une carte à tampons</span></div>
+  <div class="sub clip" id="s10" data-start="19.320" data-duration="1.720" data-track-index="7"><span>par exemple une séance offerte toutes</span></div>
+  <div class="sub clip" id="s11" data-start="21.060" data-duration="0.510" data-track-index="7"><span>les dix</span></div>
+  <div class="sub clip" id="s12" data-start="21.590" data-duration="1.660" data-track-index="7"><span>avec un bonus d&#x27;anniversaire</span></div>
+  <div class="sub clip" id="s13" data-start="23.270" data-duration="2.140" data-track-index="7"><span>Trois : du contenu utile</span></div>
+  <div class="sub clip" id="s14" data-start="25.430" data-duration="0.990" data-track-index="7"><span>Un guide gratuit</span></div>
+  <div class="sub clip" id="s15" data-start="26.440" data-duration="1.540" data-track-index="7"><span>une newsletter mensuelle avec un</span></div>
+  <div class="sub clip" id="s16" data-start="28.250" data-duration="0.840" data-track-index="7"><span>vrai conseil</span></div>
+  <div class="sub clip" id="s17" data-start="29.110" data-duration="2.060" data-track-index="7"><span>vos clients restent en lien avec vous</span></div>
+  <div class="sub clip" id="s18" data-start="31.190" data-duration="1.980" data-track-index="7"><span>Quatre : écoutez vos clients</span></div>
+  <div class="sub clip" id="s19" data-start="33.190" data-duration="0.910" data-track-index="7"><span>Un sondage court</span></div>
+  <div class="sub clip" id="s20" data-start="34.120" data-duration="1.590" data-track-index="7"><span>ou la question qui compte</span></div>
+  <div class="sub clip" id="s21" data-start="35.830" data-duration="1.150" data-track-index="7"><span>nous recommanderiez-vous</span></div>
+  <div class="sub clip" id="s22" data-start="37.000" data-duration="1.130" data-track-index="7"><span>de zéro à dix</span></div>
+  <div class="sub clip" id="s23" data-start="38.150" data-duration="1.540" data-track-index="7"><span>L&#x27;agent IA de votre site répond</span></div>
+  <div class="sub clip" id="s24" data-start="39.710" data-duration="1.380" data-track-index="7"><span>aux questions pratiques</span></div>
+  <div class="sub clip" id="s25" data-start="41.110" data-duration="0.910" data-track-index="7"><span>et passe la main à un</span></div>
+  <div class="sub clip" id="s26" data-start="42.040" data-duration="1.330" data-track-index="7"><span>humain quand il le faut</span></div>
+  <div class="sub clip" id="s27" data-start="43.390" data-duration="1.810" data-track-index="7"><span>Protégez votre compte avec la double</span></div>
+  <div class="sub clip" id="s28" data-start="45.220" data-duration="1.930" data-track-index="7"><span>authentification : un code en plus du</span></div>
+  <div class="sub clip" id="s29" data-start="47.170" data-duration="0.960" data-track-index="7"><span>mot de passe</span></div>
+  <div class="sub clip" id="s30" data-start="48.150" data-duration="1.760" data-track-index="7"><span>Rendez-vous, fidélité</span></div>
+  <div class="sub clip" id="s31" data-start="49.930" data-duration="1.400" data-track-index="7"><span>contenu, écoute</span></div>
+  <div class="sub clip" id="s32" data-start="51.350" data-duration="1.370" data-track-index="7"><span>plus de temps pour vos clients</span></div>
+  <div class="sub clip" id="s33" data-start="52.740" data-duration="1.710" data-track-index="7"><span>moins pour l&#x27;administratif</span></div>
+  <div class="sub clip" id="s34" data-start="54.470" data-duration="1.610" data-track-index="7"><span>Dans la prochaine formation</span></div>
+  <div class="sub clip" id="s35" data-start="56.163" data-duration="1.917" data-track-index="7"><span>associations et événementiel</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="55.36" data-track-index="10" data-volume="1"></audio>
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative"><div class="top"><span class="num">F33</span><span class="kick" style="margin:0">Formation · Santé &amp; bien-être</span></div>
+    <h1>Santé et <em>bien-être</em></h1></div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">Suite Rapido</b></div>
+  </div>
+  <div class="clip card" id="outro" data-start="58.06" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative"><h2>Merci d'avoir <em>regardé</em></h2><p>Prochaine formation : associations et événementiel</p></div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware</div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .to('#intro', { opacity: 0, duration: .6, ease: 'power2.in' }, 3.0);
+  tl.to('#bar', { scaleX: 1, duration: 55.36, ease: 'none' }, 3.0);
+  tl.from('#sl0 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 3.080);
+  tl.to('#sl0 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 9.930);
+  tl.from('#sl1 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 10.280);
+  tl.from('#sl1 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 10.830);
+  tl.to('#sl1 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 16.170);
+  tl.from('#sl2 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 16.520);
+  tl.from('#sl2 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 17.070);
+  tl.to('#sl2 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 22.970);
+  tl.from('#sl3 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 23.320);
+  tl.from('#sl3 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 23.870);
+  tl.to('#sl3 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 30.890);
+  tl.from('#sl4 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 31.240);
+  tl.from('#sl4 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 31.790);
+  tl.to('#sl4 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 37.850);
+  tl.from('#sl5 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 38.200);
+  tl.from('#sl5 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 38.750);
+  tl.to('#sl5 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 43.090);
+  tl.from('#sl6 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 43.440);
+  tl.from('#sl6 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 43.990);
+  tl.to('#sl6 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 47.850);
+  tl.from('#sl7 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 48.200);
+  tl.to('#sl7 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 58.060);
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 58.360);
+  window.__timelines['main'] = tl;
+</script>
+</body></html>
