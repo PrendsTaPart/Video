@@ -1,0 +1,12 @@
+{
+ "intro": 0.04,
+ "questions": 5.56,
+ "ecrit": 9.8,
+ "blocage": 16.2,
+ "ia": 21.24,
+ "suivi": 27.32,
+ "assistant": 33.24,
+ "recap": 37.16,
+ "outro": 43.64,
+ "end": 47.12
+}
