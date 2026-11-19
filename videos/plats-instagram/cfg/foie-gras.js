@@ -1,0 +1,1 @@
+window.CFG={"dur": 14.35, "nom": "Foie gras<br>& chutney", "lignes": [[0.64, 2.53, "Le foie gras,<br><em>fondant</em>"], [2.68, 6.15, "Chutney, fleur de sel,<br><em>pain toasté</em>"], [6.3, 8.4, "Le début parfait<br><em>d'une belle soirée</em>"]], "titre": [8.55, 10.95], "carte": 10.95, "coupes": [2.58, 6.2, 8.45], "fond": "photos/foie-gras-chutney.jpg"};

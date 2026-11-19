@@ -1,0 +1,1 @@
+window.CFG={"dur": 14.0, "nom": "Brioche façon<br>pain perdu", "lignes": [[0.5, 2.95, "La brioche…<br><em>et la flamme</em>"], [3.1, 5.55, "Fruits rouges,<br><em>banane, kiwi</em>"], [5.7, 8.05, "Le dessert<br><em>qui fait tourner les têtes</em>"]], "titre": [8.2, 10.6], "carte": 10.6, "coupes": [3.0, 5.6, 8.1], "fond": "photos/pain-perdu-brioche-flambe-1.jpg"};

@@ -1,0 +1,1 @@
+window.CFG={"dur": 12.34, "nom": "Tagliatelles<br>& burrata", "lignes": [[0.4, 2.47, "Des tagliatelles<br><em>bien crémeuses</em>"], [2.62, 4.63, "Et au milieu,<br><em>une burrata</em>"], [4.78, 6.26, "On la coupe…<br><em>et c'est parti</em>"]], "titre": [6.41, 8.94], "carte": 8.94, "coupes": [2.52, 4.68, 6.31], "fond": "photos/tagliatelles-burrata.jpg"};

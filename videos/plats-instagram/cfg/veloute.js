@@ -1,0 +1,1 @@
+window.CFG={"dur": 14.0, "nom": "Le velouté", "lignes": [[0.5, 2.95, "Un velouté<br><em>tout doux</em>"], [3.1, 5.55, "Herbes fraîches,<br><em>une fleur</em>"], [5.7, 8.05, "L'entrée<br><em>qui réchauffe</em>"]], "titre": [8.2, 10.6], "carte": 10.6, "coupes": [3.0, 5.6, 8.1], "fond": "photos/veloute.jpg"};
