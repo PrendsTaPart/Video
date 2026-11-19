@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#4CAF50; --b:#9BE15D; --grad:linear-gradient(100deg,#4CAF50,#9BE15D); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(130px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.42; }
+  .h2 { width:760px; height:640px; left:-280px; bottom:-340px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .slide .inner { position:absolute; inset:110px 150px 190px; display:flex; flex-direction:column; justify-content:center; }
+  .slide h1 { font-size:118px; line-height:.96; font-weight:800; letter-spacing:-.045em; text-wrap:balance; }
+  .slide h2 { font-size:86px; line-height:1; font-weight:800; letter-spacing:-.04em; margin-bottom:56px; text-wrap:balance; }
+  .kick { font-family:'Geist Mono',monospace; font-size:26px; letter-spacing:.16em; text-transform:uppercase; color:rgba(255,255,255,.65); margin-bottom:28px; }
+  .points { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .pt { display:flex; gap:22px; align-items:center; padding:26px 30px; border-radius:24px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); font-size:40px; font-weight:500; line-height:1.25; }
+  .pt b, .st b { flex:none; width:62px; height:62px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:28px; }
+  .steps { position:relative; display:flex; gap:28px; }
+  .steps .line { position:absolute; left:31px; right:31px; top:31px; height:3px; background:var(--grad); transform-origin:left; }
+  .st { position:relative; flex:1; display:flex; flex-direction:column; gap:22px; font-size:38px; font-weight:500; line-height:1.25; }
+  .cmp { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+  .col { padding:36px; border-radius:28px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.04); }
+  .col.r { border-color:var(--a); background:color-mix(in srgb,var(--a) 14%,transparent); box-shadow:0 0 60px -20px var(--a); }
+  .col h3 { font-size:30px; font-family:'Geist Mono',monospace; letter-spacing:.12em; text-transform:uppercase; margin-bottom:22px; color:rgba(255,255,255,.7); }
+  .col.r h3 { color:var(--b); }
+  .col p { font-size:38px; line-height:1.35; margin-top:14px; }
+  .chat { width:1300px; border-radius:28px; background:#262624; border:1px solid rgba(255,255,255,.12); padding:36px; display:flex; flex-direction:column; gap:26px; box-shadow:0 40px 100px -30px rgba(0,0,0,.9); }
+  .chat .q { align-self:flex-end; max-width:85%; background:#141413; border:1px solid rgba(255,255,255,.1); border-radius:20px; padding:20px 26px; font-size:32px; line-height:1.4; min-height:84px; }
+  .chat .a { display:flex; gap:20px; font-size:30px; line-height:1.45; color:#f5f4ef; }
+  .chat .a p { margin-bottom:10px; }
+  .glyph { color:#d97757; font-size:36px; }
+  .take { font-size:96px; line-height:1.02; font-weight:800; letter-spacing:-.04em; text-align:center; text-wrap:balance; }
+  .sub { position:absolute; inset:auto 0 70px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; white-space:nowrap; }
+  .bar { position:absolute; left:150px; right:150px; bottom:34px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:60px; top:44px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .card h1 { margin-top:40px; font-size:122px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1600px; text-wrap:balance; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style></head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="74.7" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">Formation Rapido</div>
+  <div class="slide clip" id="sl0" data-start="3.050" data-duration="8.540" data-track-index="2"><div class="inner"><div class="kick">Marketing · Relation client</div><h1>Quand ça se passe <em>mal</em></h1></div></div>
+  <div class="slide clip" id="sl1" data-start="11.090" data-duration="9.000" data-track-index="2"><div class="inner"><h2>1 · Répondre <em>vite</em></h2><div class="points"><div class="pt"><b>1</b><span>Chaque demande = un ticket</span></div><div class="pt"><b>2</b><span>Un délai de réponse</span></div><div class="pt"><b>3</b><span>Alerte si dépassé</span></div></div></div></div>
+  <div class="slide clip" id="sl2" data-start="19.590" data-duration="10.340" data-track-index="2"><div class="inner"><h2>2 · <em>Écouter</em> d&#x27;abord</h2><div class="points"><div class="pt"><b>1</b><span>E-mails</span></div><div class="pt"><b>2</b><span>SMS</span></div><div class="pt"><b>3</b><span>Chat du site</span></div><div class="pt"><b>4</b><span>Une seule boîte de réception</span></div></div></div></div>
+  <div class="slide clip" id="sl3" data-start="29.430" data-duration="8.920" data-track-index="2"><div class="inner"><h2>3 · Une réponse en <em>trois temps</em></h2><div class="steps"><i class="line"></i><div class="st"><b>1</b><span>Je comprends</span></div><div class="st"><b>2</b><span>Voici ce qui s&#x27;est passé</span></div><div class="st"><b>3</b><span>Voici ce que je fais</span></div></div></div></div>
+  <div class="slide clip" id="sl4" data-start="37.850" data-duration="8.000" data-track-index="2"><div class="inner"><h2>4 · Un <em>humain</em> répond</h2><div class="cmp"><div class="col l"><h3>Réponse automatique</h3><p>Ton froid</p><p>Colère qui monte</p></div><div class="col r"><h3>Réponse type relue</h3><p>Envoyée par une personne</p><p>Client écouté</p></div></div></div></div>
+  <div class="slide clip" id="sl5" data-start="45.350" data-duration="9.000" data-track-index="2"><div class="inner"><h2><em>Après</em></h2><div class="points"><div class="pt"><b>1</b><span>Demande d&#x27;avis</span></div><div class="pt"><b>2</b><span>Satisfaction</span></div><div class="pt"><b>3</b><span>Recommandation de 0 à 10</span></div></div></div></div>
+  <div class="slide clip" id="sl6" data-start="53.850" data-duration="7.500" data-track-index="2"><div class="inner"><h2>En cas de <em>crise</em></h2><div class="points"><div class="pt"><b>1</b><span>Un seul message clair</span></div><div class="pt"><b>2</b><span>Publié tôt</span></div><div class="pt"><b>3</b><span>Préparé à l&#x27;avance</span></div></div></div></div>
+  <div class="slide clip" id="sl7" data-start="60.850" data-duration="9.850" data-track-index="2"><div class="inner"><div class="take">Un avis négatif, une <em>preuve de sérieux</em></div></div></div>
+  <div class="sub clip" id="s0" data-start="3.050" data-duration="1.110" data-track-index="7"><span>Un client mécontent</span></div>
+  <div class="sub clip" id="s1" data-start="4.300" data-duration="1.230" data-track-index="7"><span>un avis négatif</span></div>
+  <div class="sub clip" id="s2" data-start="5.590" data-duration="1.280" data-track-index="7"><span>une livraison ratée</span></div>
+  <div class="sub clip" id="s3" data-start="6.890" data-duration="1.280" data-track-index="7"><span>ce n&#x27;est pas la fin</span></div>
+  <div class="sub clip" id="s4" data-start="8.190" data-duration="1.590" data-track-index="7"><span>C&#x27;est la manière de répondre qui</span></div>
+  <div class="sub clip" id="s5" data-start="9.800" data-duration="1.270" data-track-index="7"><span>fait la différence</span></div>
+  <div class="sub clip" id="s6" data-start="11.090" data-duration="1.980" data-track-index="7"><span>Un : répondez vite</span></div>
+  <div class="sub clip" id="s7" data-start="13.090" data-duration="1.125" data-track-index="7"><span>Dans RapidoCRM</span></div>
+  <div class="sub clip" id="s8" data-start="14.340" data-duration="1.710" data-track-index="7"><span>chaque demande devient un ticket avec</span></div>
+  <div class="sub clip" id="s9" data-start="16.070" data-duration="1.380" data-track-index="7"><span>un délai de réponse</span></div>
+  <div class="sub clip" id="s10" data-start="17.470" data-duration="0.890" data-track-index="7"><span>S&#x27;il est dépassé</span></div>
+  <div class="sub clip" id="s11" data-start="18.380" data-duration="1.190" data-track-index="7"><span>vous êtes alerté</span></div>
+  <div class="sub clip" id="s12" data-start="19.590" data-duration="2.520" data-track-index="7"><span>Deux : écoutez avant de répondre</span></div>
+  <div class="sub clip" id="s13" data-start="22.130" data-duration="1.380" data-track-index="7"><span>Toute la conversation est dans la</span></div>
+  <div class="sub clip" id="s14" data-start="23.530" data-duration="1.070" data-track-index="7"><span>boîte de réception</span></div>
+  <div class="sub clip" id="s15" data-start="24.678" data-duration="1.062" data-track-index="7"><span>e-mails, SMS</span></div>
+  <div class="sub clip" id="s16" data-start="25.880" data-duration="1.190" data-track-index="7"><span>chat du site</span></div>
+  <div class="sub clip" id="s17" data-start="27.130" data-duration="2.280" data-track-index="7"><span>Vous répondez en connaissant l&#x27;histoire</span></div>
+  <div class="sub clip" id="s18" data-start="29.430" data-duration="2.440" data-track-index="7"><span>Trois : une réponse en trois temps</span></div>
+  <div class="sub clip" id="s19" data-start="31.890" data-duration="0.800" data-track-index="7"><span>Je comprends</span></div>
+  <div class="sub clip" id="s20" data-start="32.710" data-duration="1.400" data-track-index="7"><span>voici ce qui s&#x27;est passé</span></div>
+  <div class="sub clip" id="s21" data-start="34.130" data-duration="1.700" data-track-index="7"><span>voici ce que je fais pour vous</span></div>
+  <div class="sub clip" id="s22" data-start="35.850" data-duration="1.110" data-track-index="7"><span>Sans vous justifier</span></div>
+  <div class="sub clip" id="s23" data-start="37.100" data-duration="0.730" data-track-index="7"><span>sans accuser</span></div>
+  <div class="sub clip" id="s24" data-start="37.850" data-duration="1.980" data-track-index="7"><span>Quatre : un humain répond</span></div>
+  <div class="sub clip" id="s25" data-start="39.850" data-duration="1.980" data-track-index="7"><span>Vos réponses types font gagner du temps</span></div>
+  <div class="sub clip" id="s26" data-start="41.850" data-duration="1.610" data-track-index="7"><span>mais chaque message au client part</span></div>
+  <div class="sub clip" id="s27" data-start="43.480" data-duration="0.470" data-track-index="7"><span>de l&#x27;écran</span></div>
+  <div class="sub clip" id="s28" data-start="43.970" data-duration="1.360" data-track-index="7"><span>relu par une personne</span></div>
+  <div class="sub clip" id="s29" data-start="45.350" data-duration="1.920" data-track-index="7"><span>Une fois le problème réglé</span></div>
+  <div class="sub clip" id="s30" data-start="47.290" data-duration="1.540" data-track-index="7"><span>le client reçoit une demande d&#x27;avis</span></div>
+  <div class="sub clip" id="s31" data-start="48.850" data-duration="2.980" data-track-index="7"><span>Vous mesurez sa satisfaction et sa recommandation</span></div>
+  <div class="sub clip" id="s32" data-start="51.850" data-duration="1.980" data-track-index="7"><span>et vous voyez si la confiance revient</span></div>
+  <div class="sub clip" id="s33" data-start="53.850" data-duration="0.930" data-track-index="7"><span>En cas de crise</span></div>
+  <div class="sub clip" id="s34" data-start="54.800" data-duration="0.980" data-track-index="7"><span>un seul message clair</span></div>
+  <div class="sub clip" id="s35" data-start="55.800" data-duration="1.030" data-track-index="7"><span>publié tôt</span></div>
+  <div class="sub clip" id="s36" data-start="56.850" data-duration="1.980" data-track-index="7"><span>vaut mieux que dix réponses improvisées</span></div>
+  <div class="sub clip" id="s37" data-start="58.850" data-duration="1.980" data-track-index="7"><span>Préparez-le avant d&#x27;en avoir besoin</span></div>
+  <div class="sub clip" id="s38" data-start="60.850" data-duration="1.920" data-track-index="7"><span>Vite, à l&#x27;écoute</span></div>
+  <div class="sub clip" id="s39" data-start="62.790" data-duration="0.530" data-track-index="7"><span>en trois temps</span></div>
+  <div class="sub clip" id="s40" data-start="63.390" data-duration="0.440" data-track-index="7"><span>par un humain</span></div>
+  <div class="sub clip" id="s41" data-start="63.850" data-duration="1.690" data-track-index="7"><span>un avis négatif peut devenir une</span></div>
+  <div class="sub clip" id="s42" data-start="65.560" data-duration="1.270" data-track-index="7"><span>preuve de sérieux</span></div>
+  <div class="sub clip" id="s43" data-start="66.850" data-duration="3.070" data-track-index="7"><span>Retrouvez toutes nos formations dans l&#x27;Académie</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="67.2" data-track-index="10" data-volume="1"></audio>
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative"><div class="top"><span class="num">F07</span><span class="kick" style="margin:0">Formation · Marketing</span></div>
+    <h1>Communication de crise et <em>avis négatifs</em></h1></div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoCRM</b></div>
+  </div>
+  <div class="clip card" id="outro" data-start="69.9" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative"><h2>Merci d'avoir <em>regardé</em></h2><p>Retrouvez toutes les formations dans l&#x27;Académie RapidoSoftware</p></div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware</div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .to('#intro', { opacity: 0, duration: .6, ease: 'power2.in' }, 3.0);
+  tl.to('#bar', { scaleX: 1, duration: 67.2, ease: 'none' }, 3.0);
+  tl.from('#sl0 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 3.100);
+  tl.to('#sl0 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 10.790);
+  tl.from('#sl1 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 11.140);
+  tl.from('#sl1 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 11.690);
+  tl.to('#sl1 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 19.290);
+  tl.from('#sl2 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 19.640);
+  tl.from('#sl2 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 20.190);
+  tl.to('#sl2 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 29.130);
+  tl.from('#sl3 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 29.480);
+  tl.from('#sl3 .st', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 30.030);
+  tl.from('#sl3 .line', { scaleX: 0, duration: 4.80, ease: 'none' }, 30.030);
+  tl.to('#sl3 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 37.550);
+  tl.from('#sl4 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 37.900);
+  tl.from('#sl4 .col.l p', { opacity: 0, x: -30, stagger: .25, duration: .5 }, 38.450)
+    .from('#sl4 .col.r', { opacity: 0, scale: .94, duration: .7, ease: 'back.out(1.6)' }, 41.225)
+    .from('#sl4 .col.r p', { opacity: 0, x: 30, stagger: .25, duration: .5 }, 41.525);
+  tl.to('#sl4 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 45.050);
+  tl.from('#sl5 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 45.400);
+  tl.from('#sl5 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 45.950);
+  tl.to('#sl5 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 53.550);
+  tl.from('#sl6 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 53.900);
+  tl.from('#sl6 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 54.450);
+  tl.to('#sl6 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 60.550);
+  tl.from('#sl7 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 60.900);
+  tl.to('#sl7 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 69.900);
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 70.200);
+  window.__timelines['main'] = tl;
+</script>
+</body></html>

@@ -1,0 +1,914 @@
+[
+  {
+    "text": "Le",
+    "start": 0.07,
+    "end": 0.13,
+    "id": "w0"
+  },
+  {
+    "text": "Kanban,",
+    "start": 0.13,
+    "end": 0.66,
+    "id": "w1"
+  },
+  {
+    "text": "c'est",
+    "start": 0.66,
+    "end": 0.99,
+    "id": "w2"
+  },
+  {
+    "text": "votre",
+    "start": 0.99,
+    "end": 1.33,
+    "id": "w3"
+  },
+  {
+    "text": "projet",
+    "start": 1.33,
+    "end": 1.74,
+    "id": "w4"
+  },
+  {
+    "text": "d'un",
+    "start": 1.74,
+    "end": 2,
+    "id": "w5"
+  },
+  {
+    "text": "seul",
+    "start": 2,
+    "end": 2.26,
+    "id": "w6"
+  },
+  {
+    "text": "coup",
+    "start": 2.36,
+    "end": 2.54,
+    "id": "w7"
+  },
+  {
+    "text": "d'œil.",
+    "start": 2.54,
+    "end": 3.04,
+    "id": "w8"
+  },
+  {
+    "text": "Bien",
+    "start": 3.11,
+    "end": 3.33,
+    "id": "w9"
+  },
+  {
+    "text": "utilisé,",
+    "start": 3.33,
+    "end": 3.98,
+    "id": "w10"
+  },
+  {
+    "text": "il",
+    "start": 3.98,
+    "end": 4.12,
+    "id": "w11"
+  },
+  {
+    "text": "remplace",
+    "start": 4.12,
+    "end": 4.71,
+    "id": "w12"
+  },
+  {
+    "text": "la",
+    "start": 4.71,
+    "end": 4.8,
+    "id": "w13"
+  },
+  {
+    "text": "moitié",
+    "start": 4.95,
+    "end": 5.28,
+    "id": "w14"
+  },
+  {
+    "text": "des",
+    "start": 5.28,
+    "end": 5.48,
+    "id": "w15"
+  },
+  {
+    "text": "réunions.",
+    "start": 5.5,
+    "end": 6.38,
+    "id": "w16"
+  },
+  {
+    "text": "1.",
+    "start": 6.46,
+    "end": 7.15,
+    "id": "w17"
+  },
+  {
+    "text": "Chaque",
+    "start": 7.3,
+    "end": 7.55,
+    "id": "w18"
+  },
+  {
+    "text": "colonne",
+    "start": 7.55,
+    "end": 7.95,
+    "id": "w19"
+  },
+  {
+    "text": "est",
+    "start": 7.95,
+    "end": 8.12,
+    "id": "w20"
+  },
+  {
+    "text": "une",
+    "start": 8.12,
+    "end": 8.14,
+    "id": "w21"
+  },
+  {
+    "text": "liste",
+    "start": 8.29,
+    "end": 8.57,
+    "id": "w22"
+  },
+  {
+    "text": "de",
+    "start": 8.57,
+    "end": 8.64,
+    "id": "w23"
+  },
+  {
+    "text": "tâches.",
+    "start": 8.73,
+    "end": 9.08,
+    "id": "w24"
+  },
+  {
+    "text": "Vous",
+    "start": 9.37,
+    "end": 9.48,
+    "id": "w25"
+  },
+  {
+    "text": "déplacez",
+    "start": 9.55,
+    "end": 9.9,
+    "id": "w26"
+  },
+  {
+    "text": "une",
+    "start": 9.9,
+    "end": 10.05,
+    "id": "w27"
+  },
+  {
+    "text": "carte",
+    "start": 10.05,
+    "end": 10.31,
+    "id": "w28"
+  },
+  {
+    "text": "d'une",
+    "start": 10.31,
+    "end": 10.55,
+    "id": "w29"
+  },
+  {
+    "text": "colonne",
+    "start": 10.58,
+    "end": 10.92,
+    "id": "w30"
+  },
+  {
+    "text": "à",
+    "start": 10.92,
+    "end": 10.97,
+    "id": "w31"
+  },
+  {
+    "text": "l'autre",
+    "start": 10.97,
+    "end": 11.38,
+    "id": "w32"
+  },
+  {
+    "text": "d'un",
+    "start": 11.38,
+    "end": 11.67,
+    "id": "w33"
+  },
+  {
+    "text": "simple",
+    "start": 11.67,
+    "end": 12,
+    "id": "w34"
+  },
+  {
+    "text": "glissé",
+    "start": 12.28,
+    "end": 12.58,
+    "id": "w35"
+  },
+  {
+    "text": "déposé.",
+    "start": 12.58,
+    "end": 13.2,
+    "id": "w36"
+  },
+  {
+    "text": "2.",
+    "start": 13.37,
+    "end": 13.74,
+    "id": "w37"
+  },
+  {
+    "text": "Limitez",
+    "start": 13.74,
+    "end": 14.26,
+    "id": "w38"
+  },
+  {
+    "text": "le",
+    "start": 14.26,
+    "end": 14.41,
+    "id": "w39"
+  },
+  {
+    "text": "travail",
+    "start": 14.41,
+    "end": 14.94,
+    "id": "w40"
+  },
+  {
+    "text": "en",
+    "start": 14.94,
+    "end": 15.06,
+    "id": "w41"
+  },
+  {
+    "text": "cours.",
+    "start": 15.15,
+    "end": 15.73,
+    "id": "w42"
+  },
+  {
+    "text": "Mieux",
+    "start": 15.8,
+    "end": 16.05,
+    "id": "w43"
+  },
+  {
+    "text": "vaut",
+    "start": 16.05,
+    "end": 16.29,
+    "id": "w44"
+  },
+  {
+    "text": "trois",
+    "start": 16.29,
+    "end": 16.51,
+    "id": "w45"
+  },
+  {
+    "text": "tâches",
+    "start": 16.66,
+    "end": 16.96,
+    "id": "w46"
+  },
+  {
+    "text": "terminées",
+    "start": 17.03,
+    "end": 17.5,
+    "id": "w47"
+  },
+  {
+    "text": "que",
+    "start": 17.65,
+    "end": 17.7,
+    "id": "w48"
+  },
+  {
+    "text": "dix",
+    "start": 17.7,
+    "end": 17.87,
+    "id": "w49"
+  },
+  {
+    "text": "commencer.",
+    "start": 17.87,
+    "end": 18.47,
+    "id": "w50"
+  },
+  {
+    "text": "3.",
+    "start": 18.77,
+    "end": 19.2,
+    "id": "w51"
+  },
+  {
+    "text": "Une",
+    "start": 19.2,
+    "end": 19.45,
+    "id": "w52"
+  },
+  {
+    "text": "carte",
+    "start": 19.45,
+    "end": 19.87,
+    "id": "w53"
+  },
+  {
+    "text": "qui",
+    "start": 19.87,
+    "end": 20.11,
+    "id": "w54"
+  },
+  {
+    "text": "dit",
+    "start": 20.13,
+    "end": 20.37,
+    "id": "w55"
+  },
+  {
+    "text": "tout.",
+    "start": 20.37,
+    "end": 20.96,
+    "id": "w56"
+  },
+  {
+    "text": "Son",
+    "start": 21.05,
+    "end": 21.16,
+    "id": "w57"
+  },
+  {
+    "text": "titre,",
+    "start": 21.25,
+    "end": 21.75,
+    "id": "w58"
+  },
+  {
+    "text": "sa",
+    "start": 21.91,
+    "end": 21.94,
+    "id": "w59"
+  },
+  {
+    "text": "priorité,",
+    "start": 21.94,
+    "end": 22.74,
+    "id": "w60"
+  },
+  {
+    "text": "son",
+    "start": 22.74,
+    "end": 22.98,
+    "id": "w61"
+  },
+  {
+    "text": "échéance,",
+    "start": 22.98,
+    "end": 23.68,
+    "id": "w62"
+  },
+  {
+    "text": "la",
+    "start": 23.68,
+    "end": 24.08,
+    "id": "w63"
+  },
+  {
+    "text": "personne",
+    "start": 24.08,
+    "end": 24.49,
+    "id": "w64"
+  },
+  {
+    "text": "responsable",
+    "start": 24.49,
+    "end": 25.2,
+    "id": "w65"
+  },
+  {
+    "text": "et",
+    "start": 25.2,
+    "end": 25.29,
+    "id": "w66"
+  },
+  {
+    "text": "son",
+    "start": 25.37,
+    "end": 25.52,
+    "id": "w67"
+  },
+  {
+    "text": "statut.",
+    "start": 25.52,
+    "end": 26.14,
+    "id": "w68"
+  },
+  {
+    "text": "Affaire,",
+    "start": 26.21,
+    "end": 26.86,
+    "id": "w69"
+  },
+  {
+    "text": "en",
+    "start": 26.86,
+    "end": 26.91,
+    "id": "w70"
+  },
+  {
+    "text": "cours,",
+    "start": 27.06,
+    "end": 27.58,
+    "id": "w71"
+  },
+  {
+    "text": "terminée.",
+    "start": 27.58,
+    "end": 28.4,
+    "id": "w72"
+  },
+  {
+    "text": "Les",
+    "start": 28.55,
+    "end": 28.66,
+    "id": "w73"
+  },
+  {
+    "text": "tâches",
+    "start": 28.75,
+    "end": 29.15,
+    "id": "w74"
+  },
+  {
+    "text": "confiées",
+    "start": 29.15,
+    "end": 29.74,
+    "id": "w75"
+  },
+  {
+    "text": "à",
+    "start": 29.75,
+    "end": 29.82,
+    "id": "w76"
+  },
+  {
+    "text": "un",
+    "start": 29.87,
+    "end": 29.97,
+    "id": "w77"
+  },
+  {
+    "text": "employé",
+    "start": 29.97,
+    "end": 30.5,
+    "id": "w78"
+  },
+  {
+    "text": "EA",
+    "start": 30.5,
+    "end": 30.72,
+    "id": "w79"
+  },
+  {
+    "text": "affichent",
+    "start": 30.72,
+    "end": 31.18,
+    "id": "w80"
+  },
+  {
+    "text": "aussi",
+    "start": 31.18,
+    "end": 31.56,
+    "id": "w81"
+  },
+  {
+    "text": "leur",
+    "start": 31.56,
+    "end": 31.69,
+    "id": "w82"
+  },
+  {
+    "text": "avancement",
+    "start": 31.69,
+    "end": 32.28,
+    "id": "w83"
+  },
+  {
+    "text": "et",
+    "start": 32.35,
+    "end": 32.39,
+    "id": "w84"
+  },
+  {
+    "text": "attendent",
+    "start": 32.39,
+    "end": 32.88,
+    "id": "w85"
+  },
+  {
+    "text": "votre",
+    "start": 32.88,
+    "end": 33.05,
+    "id": "w86"
+  },
+  {
+    "text": "validation",
+    "start": 33.21,
+    "end": 33.72,
+    "id": "w87"
+  },
+  {
+    "text": "avant",
+    "start": 33.72,
+    "end": 34,
+    "id": "w88"
+  },
+  {
+    "text": "d'être",
+    "start": 34,
+    "end": 34.32,
+    "id": "w89"
+  },
+  {
+    "text": "terminée.",
+    "start": 34.32,
+    "end": 34.98,
+    "id": "w90"
+  },
+  {
+    "text": "4.",
+    "start": 35.05,
+    "end": 35.45,
+    "id": "w91"
+  },
+  {
+    "text": "Regardez",
+    "start": 35.45,
+    "end": 36.11,
+    "id": "w92"
+  },
+  {
+    "text": "le",
+    "start": 36.11,
+    "end": 36.27,
+    "id": "w93"
+  },
+  {
+    "text": "tableau",
+    "start": 36.27,
+    "end": 36.74,
+    "id": "w94"
+  },
+  {
+    "text": "chaque",
+    "start": 36.83,
+    "end": 37.24,
+    "id": "w95"
+  },
+  {
+    "text": "matin.",
+    "start": 37.34,
+    "end": 37.78,
+    "id": "w96"
+  },
+  {
+    "text": "Ce",
+    "start": 37.85,
+    "end": 37.9,
+    "id": "w97"
+  },
+  {
+    "text": "qui",
+    "start": 37.9,
+    "end": 38.09,
+    "id": "w98"
+  },
+  {
+    "text": "est",
+    "start": 38.09,
+    "end": 38.28,
+    "id": "w99"
+  },
+  {
+    "text": "bloqué,",
+    "start": 38.28,
+    "end": 38.78,
+    "id": "w100"
+  },
+  {
+    "text": "ce",
+    "start": 38.78,
+    "end": 38.9,
+    "id": "w101"
+  },
+  {
+    "text": "qui",
+    "start": 38.9,
+    "end": 39.09,
+    "id": "w102"
+  },
+  {
+    "text": "est",
+    "start": 39.09,
+    "end": 39.28,
+    "id": "w103"
+  },
+  {
+    "text": "en",
+    "start": 39.28,
+    "end": 39.4,
+    "id": "w104"
+  },
+  {
+    "text": "retard,",
+    "start": 39.4,
+    "end": 39.98,
+    "id": "w105"
+  },
+  {
+    "text": "ce",
+    "start": 39.98,
+    "end": 40.04,
+    "id": "w106"
+  },
+  {
+    "text": "qui",
+    "start": 40.14,
+    "end": 40.3,
+    "id": "w107"
+  },
+  {
+    "text": "est",
+    "start": 40.3,
+    "end": 40.48,
+    "id": "w108"
+  },
+  {
+    "text": "prêt",
+    "start": 40.48,
+    "end": 40.51,
+    "id": "w109"
+  },
+  {
+    "text": "à",
+    "start": 40.51,
+    "end": 40.86,
+    "id": "w110"
+  },
+  {
+    "text": "valider.",
+    "start": 40.86,
+    "end": 41.48,
+    "id": "w111"
+  },
+  {
+    "text": "Avec",
+    "start": 41.55,
+    "end": 41.8,
+    "id": "w112"
+  },
+  {
+    "text": "votre",
+    "start": 41.8,
+    "end": 42.2,
+    "id": "w113"
+  },
+  {
+    "text": "assistant",
+    "start": 42.2,
+    "end": 42.93,
+    "id": "w114"
+  },
+  {
+    "text": "EA,",
+    "start": 42.93,
+    "end": 43.24,
+    "id": "w115"
+  },
+  {
+    "text": "quelles",
+    "start": 43.35,
+    "end": 43.63,
+    "id": "w116"
+  },
+  {
+    "text": "tâches",
+    "start": 43.63,
+    "end": 43.93,
+    "id": "w117"
+  },
+  {
+    "text": "sont",
+    "start": 43.93,
+    "end": 44.05,
+    "id": "w118"
+  },
+  {
+    "text": "en",
+    "start": 44.2,
+    "end": 44.23,
+    "id": "w119"
+  },
+  {
+    "text": "retard",
+    "start": 44.23,
+    "end": 44.51,
+    "id": "w120"
+  },
+  {
+    "text": "sur",
+    "start": 44.53,
+    "end": 44.68,
+    "id": "w121"
+  },
+  {
+    "text": "le",
+    "start": 44.68,
+    "end": 44.78,
+    "id": "w122"
+  },
+  {
+    "text": "projet",
+    "start": 44.78,
+    "end": 45.04,
+    "id": "w123"
+  },
+  {
+    "text": "du",
+    "start": 45.04,
+    "end": 45.19,
+    "id": "w124"
+  },
+  {
+    "text": "restaurant?",
+    "start": 45.19,
+    "end": 45.87,
+    "id": "w125"
+  },
+  {
+    "text": "Des",
+    "start": 45.95,
+    "end": 46.06,
+    "id": "w126"
+  },
+  {
+    "text": "colonnes",
+    "start": 46.06,
+    "end": 46.53,
+    "id": "w127"
+  },
+  {
+    "text": "claires,",
+    "start": 46.53,
+    "end": 47.06,
+    "id": "w128"
+  },
+  {
+    "text": "peu",
+    "start": 47.1,
+    "end": 47.22,
+    "id": "w129"
+  },
+  {
+    "text": "de",
+    "start": 47.27,
+    "end": 47.38,
+    "id": "w130"
+  },
+  {
+    "text": "travail",
+    "start": 47.38,
+    "end": 47.81,
+    "id": "w131"
+  },
+  {
+    "text": "en",
+    "start": 47.81,
+    "end": 47.93,
+    "id": "w132"
+  },
+  {
+    "text": "cours,",
+    "start": 47.93,
+    "end": 48.38,
+    "id": "w133"
+  },
+  {
+    "text": "des",
+    "start": 48.38,
+    "end": 48.58,
+    "id": "w134"
+  },
+  {
+    "text": "cartes",
+    "start": 48.59,
+    "end": 49.01,
+    "id": "w135"
+  },
+  {
+    "text": "complètes,",
+    "start": 49.04,
+    "end": 49.68,
+    "id": "w136"
+  },
+  {
+    "text": "un",
+    "start": 49.75,
+    "end": 49.82,
+    "id": "w137"
+  },
+  {
+    "text": "coup",
+    "start": 49.82,
+    "end": 50.1,
+    "id": "w138"
+  },
+  {
+    "text": "d'œil",
+    "start": 50.1,
+    "end": 50.44,
+    "id": "w139"
+  },
+  {
+    "text": "chaque",
+    "start": 50.44,
+    "end": 50.86,
+    "id": "w140"
+  },
+  {
+    "text": "matin.",
+    "start": 50.96,
+    "end": 51.44,
+    "id": "w141"
+  },
+  {
+    "text": "Dans",
+    "start": 51.55,
+    "end": 51.66,
+    "id": "w142"
+  },
+  {
+    "text": "la",
+    "start": 51.75,
+    "end": 51.82,
+    "id": "w143"
+  },
+  {
+    "text": "prochaine",
+    "start": 51.82,
+    "end": 52.23,
+    "id": "w144"
+  },
+  {
+    "text": "formation,",
+    "start": 52.4,
+    "end": 52.98,
+    "id": "w145"
+  },
+  {
+    "text": "le",
+    "start": 52.98,
+    "end": 53.13,
+    "id": "w146"
+  },
+  {
+    "text": "Daily",
+    "start": 53.13,
+    "end": 53.52,
+    "id": "w147"
+  },
+  {
+    "text": "Efficace",
+    "start": 53.52,
+    "end": 54.13,
+    "id": "w148"
+  },
+  {
+    "text": "en",
+    "start": 54.13,
+    "end": 54.18,
+    "id": "w149"
+  },
+  {
+    "text": "cinq",
+    "start": 54.55,
+    "end": 54.59,
+    "id": "w150"
+  },
+  {
+    "text": "minutes.",
+    "start": 54.64,
+    "end": 55.28,
+    "id": "w151"
+  }
+]

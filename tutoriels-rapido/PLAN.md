@@ -282,14 +282,14 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 ### Marketing & communication
 - [x] F01 — Construire sa ligne éditoriale en 1 heure avec l'IA
 - [x] F02 — Un mois de contenus en une après-midi (RapidoCMS)
-- [~] F03 — Écrire un post qui engage : structure et accroches (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [~] F04 — Visuels de marque cohérents avec un kit de marque (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [~] F05 — Lire ses statistiques et décider quoi refaire (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [~] F06 — Newsletter qui se lit : objet, contenu, fréquence (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [~] F07 — Communication de crise et avis négatifs (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F03 — Écrire un post qui engage : structure et accroches (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F04 — Visuels de marque cohérents avec un kit de marque (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F05 — Lire ses statistiques et décider quoi refaire (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F06 — Newsletter qui se lit : objet, contenu, fréquence (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F07 — Communication de crise et avis négatifs (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 
 ### Commercial & prospection
-- [~] F08 — Définir sa cible et son fichier de prospects (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F08 — Définir sa cible et son fichier de prospects (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 - [~] F09 — Prospection locale avec Google Maps et SIRET (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 - [~] F10 — Le premier appel : script et qualification (agent vocal) (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 - [x] F11 — Le cold email qui obtient des réponses (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)

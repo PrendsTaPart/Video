@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=1920, height=1080">
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-ext-2558.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(assets/fonts/Geist-latin-9415.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-ext-502.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/InstrumentSerif-latin-4088.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-ext-8586.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(assets/fonts/GeistMono-latin-73.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+  :root { --a:#7E57C2; --b:#C084FC; --grad:linear-gradient(100deg,#7E57C2,#C084FC); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#05060A; font-family:'Geist',sans-serif; color:#fff; }
+  .clip { position:absolute; inset:0; }
+  .bg { position:absolute; inset:0; overflow:hidden; }
+  .halo { position:absolute; border-radius:50%; filter:blur(130px); }
+  .h1 { width:900px; height:800px; right:-260px; top:-300px; background:var(--a); opacity:.42; }
+  .h2 { width:760px; height:640px; left:-280px; bottom:-340px; background:var(--b); opacity:.28; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:56px 56px; -webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 40%,#000 20%,transparent 75%); }
+  em { font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent; padding-right:.06em; }
+  .slide .inner { position:absolute; inset:110px 150px 190px; display:flex; flex-direction:column; justify-content:center; }
+  .slide h1 { font-size:118px; line-height:.96; font-weight:800; letter-spacing:-.045em; text-wrap:balance; }
+  .slide h2 { font-size:86px; line-height:1; font-weight:800; letter-spacing:-.04em; margin-bottom:56px; text-wrap:balance; }
+  .kick { font-family:'Geist Mono',monospace; font-size:26px; letter-spacing:.16em; text-transform:uppercase; color:rgba(255,255,255,.65); margin-bottom:28px; }
+  .points { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .pt { display:flex; gap:22px; align-items:center; padding:26px 30px; border-radius:24px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); font-size:40px; font-weight:500; line-height:1.25; }
+  .pt b, .st b { flex:none; width:62px; height:62px; border-radius:50%; display:grid; place-items:center; background:var(--grad); color:#05060A; font-family:'Geist Mono',monospace; font-size:28px; }
+  .steps { position:relative; display:flex; gap:28px; }
+  .steps .line { position:absolute; left:31px; right:31px; top:31px; height:3px; background:var(--grad); transform-origin:left; }
+  .st { position:relative; flex:1; display:flex; flex-direction:column; gap:22px; font-size:38px; font-weight:500; line-height:1.25; }
+  .cmp { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+  .col { padding:36px; border-radius:28px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.04); }
+  .col.r { border-color:var(--a); background:color-mix(in srgb,var(--a) 14%,transparent); box-shadow:0 0 60px -20px var(--a); }
+  .col h3 { font-size:30px; font-family:'Geist Mono',monospace; letter-spacing:.12em; text-transform:uppercase; margin-bottom:22px; color:rgba(255,255,255,.7); }
+  .col.r h3 { color:var(--b); }
+  .col p { font-size:38px; line-height:1.35; margin-top:14px; }
+  .chat { width:1300px; border-radius:28px; background:#262624; border:1px solid rgba(255,255,255,.12); padding:36px; display:flex; flex-direction:column; gap:26px; box-shadow:0 40px 100px -30px rgba(0,0,0,.9); }
+  .chat .q { align-self:flex-end; max-width:85%; background:#141413; border:1px solid rgba(255,255,255,.1); border-radius:20px; padding:20px 26px; font-size:32px; line-height:1.4; min-height:84px; }
+  .chat .a { display:flex; gap:20px; font-size:30px; line-height:1.45; color:#f5f4ef; }
+  .chat .a p { margin-bottom:10px; }
+  .glyph { color:#d97757; font-size:36px; }
+  .take { font-size:96px; line-height:1.02; font-weight:800; letter-spacing:-.04em; text-align:center; text-wrap:balance; }
+  .sub { position:absolute; inset:auto 0 70px 0; text-align:center; z-index:6; }
+  .sub span { display:inline-block; padding:10px 26px; border-radius:16px; background:rgba(5,6,10,.86); font-size:40px; font-weight:700; white-space:nowrap; }
+  .bar { position:absolute; left:150px; right:150px; bottom:34px; height:5px; border-radius:5px; background:rgba(255,255,255,.12); overflow:hidden; z-index:6; }
+  .bar i { position:absolute; inset:0; background:var(--grad); transform-origin:left; transform:scaleX(0); }
+  .brand { position:absolute; right:60px; top:44px; display:flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; background:rgba(10,12,18,.82); border:1px solid rgba(255,255,255,.14); font-size:22px; font-weight:600; z-index:5; }
+  .brand img { width:30px; }
+  .card { display:flex; flex-direction:column; justify-content:center; padding:0 150px; z-index:10; }
+  .card .top { display:flex; align-items:center; gap:20px; }
+  .num { font-family:'Geist Mono',monospace; font-size:32px; padding:10px 24px; border-radius:999px; background:var(--grad); color:#05060A; }
+  .card h1 { margin-top:40px; font-size:122px; line-height:.95; font-weight:800; letter-spacing:-.045em; max-width:1600px; text-wrap:balance; }
+  .card .logo { position:absolute; left:150px; bottom:90px; display:flex; align-items:center; gap:14px; font-size:30px; font-weight:600; color:rgba(255,255,255,.75); }
+  .card .logo img { width:48px; }
+  .card h2 { font-size:110px; font-weight:800; letter-spacing:-.045em; }
+  .card p { margin-top:30px; font-size:40px; color:rgba(255,255,255,.75); }
+</style></head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="63.18" data-width="1920" data-height="1080">
+  <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+  <div class="brand"><img src="assets/logo_icon.png" alt="">Formation Rapido</div>
+  <div class="slide clip" id="sl0" data-start="3.070" data-duration="6.890" data-track-index="2"><div class="inner"><div class="kick">Projet · Kanban</div><h1>Le Kanban au <em>quotidien</em></h1></div></div>
+  <div class="slide clip" id="sl1" data-start="9.460" data-duration="7.410" data-track-index="2"><div class="inner"><h2>1 · Des <em>colonnes</em></h2><div class="steps"><i class="line"></i><div class="st"><b>1</b><span>Une liste = une colonne</span></div><div class="st"><b>2</b><span>Glisser-déposer</span></div></div></div></div>
+  <div class="slide clip" id="sl2" data-start="16.370" data-duration="5.900" data-track-index="2"><div class="inner"><h2>2 · Limiter l&#x27;<em>en-cours</em></h2><div class="cmp"><div class="col l"><h3>10 tâches commencées</h3><p>0 terminée</p></div><div class="col r"><h3>3 tâches en cours</h3><p>Terminées une à une</p></div></div></div></div>
+  <div class="slide clip" id="sl3" data-start="21.770" data-duration="10.280" data-track-index="2"><div class="inner"><h2>3 · Une <em>carte</em> complète</h2><div class="points"><div class="pt"><b>1</b><span>Priorité</span></div><div class="pt"><b>2</b><span>Échéance</span></div><div class="pt"><b>3</b><span>Responsable</span></div><div class="pt"><b>4</b><span>À faire · En cours · Terminée</span></div></div></div></div>
+  <div class="slide clip" id="sl4" data-start="31.550" data-duration="7.000" data-track-index="2"><div class="inner"><h2>Employés <em>IA</em></h2><div class="points"><div class="pt"><b>1</b><span>Avancement visible</span></div><div class="pt"><b>2</b><span>Validation avant de terminer</span></div></div></div></div>
+  <div class="slide clip" id="sl5" data-start="38.050" data-duration="7.000" data-track-index="2"><div class="inner"><h2>4 · Chaque <em>matin</em></h2><div class="steps"><i class="line"></i><div class="st"><b>1</b><span>Bloqué ?</span></div><div class="st"><b>2</b><span>En retard ?</span></div><div class="st"><b>3</b><span>Prêt à valider ?</span></div></div></div></div>
+  <div class="slide clip" id="sl6" data-start="44.550" data-duration="4.900" data-track-index="2"><div class="inner"><h2>Demandez à votre <em>IA</em></h2><div class="chat"><div class="q"><span class="typed" data-text="Quelles tâches sont en retard sur le projet du restaurant ?"></span></div><div class="a"><span class="glyph">✳</span><div><p>2 tâches en retard.</p><p>« Rédiger la carte » : échéance dépassée de 3 jours.</p><p>« Photos des plats » : en attente de validation.</p></div></div></div></div></div>
+  <div class="slide clip" id="sl7" data-start="48.950" data-duration="10.230" data-track-index="2"><div class="inner"><div class="take">Un coup d&#x27;œil <em>chaque matin</em></div></div></div>
+  <div class="sub clip" id="s0" data-start="3.070" data-duration="0.570" data-track-index="7"><span>Le Kanban</span></div>
+  <div class="sub clip" id="s1" data-start="3.660" data-duration="2.430" data-track-index="7"><span>c&#x27;est votre projet d&#x27;un seul coup d&#x27;œil</span></div>
+  <div class="sub clip" id="s2" data-start="6.110" data-duration="0.850" data-track-index="7"><span>Bien utilisé</span></div>
+  <div class="sub clip" id="s3" data-start="6.980" data-duration="2.460" data-track-index="7"><span>il remplace la moitié des réunions</span></div>
+  <div class="sub clip" id="s4" data-start="9.460" data-duration="2.090" data-track-index="7"><span>Un : chaque colonne est une liste</span></div>
+  <div class="sub clip" id="s5" data-start="11.570" data-duration="0.630" data-track-index="7"><span>de tâches</span></div>
+  <div class="sub clip" id="s6" data-start="12.370" data-duration="1.530" data-track-index="7"><span>Vous déplacez une carte d&#x27;une colonne</span></div>
+  <div class="sub clip" id="s7" data-start="13.920" data-duration="2.228" data-track-index="7"><span>à l&#x27;autre d&#x27;un simple glisser-déposer</span></div>
+  <div class="sub clip" id="s8" data-start="16.370" data-duration="2.410" data-track-index="7"><span>Deux : limitez le travail en cours</span></div>
+  <div class="sub clip" id="s9" data-start="18.800" data-duration="1.880" data-track-index="7"><span>Mieux vaut trois tâches terminées que</span></div>
+  <div class="sub clip" id="s10" data-start="20.700" data-duration="0.965" data-track-index="7"><span>dix commencées</span></div>
+  <div class="sub clip" id="s11" data-start="21.770" data-duration="2.260" data-track-index="7"><span>Trois : une carte qui dit tout</span></div>
+  <div class="sub clip" id="s12" data-start="24.050" data-duration="0.820" data-track-index="7"><span>Son titre</span></div>
+  <div class="sub clip" id="s13" data-start="24.910" data-duration="0.810" data-track-index="7"><span>sa priorité</span></div>
+  <div class="sub clip" id="s14" data-start="25.740" data-duration="0.920" data-track-index="7"><span>son échéance</span></div>
+  <div class="sub clip" id="s15" data-start="26.680" data-duration="2.560" data-track-index="7"><span>la personne responsable et son statut</span></div>
+  <div class="sub clip" id="s16" data-start="29.260" data-duration="0.580" data-track-index="7"><span>à faire</span></div>
+  <div class="sub clip" id="s17" data-start="29.860" data-duration="1.660" data-track-index="7"><span>en cours, terminée</span></div>
+  <div class="sub clip" id="s18" data-start="31.550" data-duration="1.985" data-track-index="7"><span>Les tâches confiées à un employé</span></div>
+  <div class="sub clip" id="s19" data-start="33.555" data-duration="1.775" data-track-index="7"><span>IA affichent aussi leur avancement</span></div>
+  <div class="sub clip" id="s20" data-start="35.350" data-duration="2.637" data-track-index="7"><span>et attendent votre validation avant d&#x27;être terminées</span></div>
+  <div class="sub clip" id="s21" data-start="38.050" data-duration="2.780" data-track-index="7"><span>Quatre : regardez le tableau chaque matin</span></div>
+  <div class="sub clip" id="s22" data-start="40.850" data-duration="0.910" data-track-index="7"><span>Ce qui est bloqué</span></div>
+  <div class="sub clip" id="s23" data-start="41.780" data-duration="1.180" data-track-index="7"><span>ce qui est en retard</span></div>
+  <div class="sub clip" id="s24" data-start="42.980" data-duration="1.550" data-track-index="7"><span>ce qui est prêt à valider</span></div>
+  <div class="sub clip" id="s25" data-start="44.550" data-duration="1.780" data-track-index="7"><span>Avec votre assistant IA</span></div>
+  <div class="sub clip" id="s26" data-start="46.350" data-duration="1.310" data-track-index="7"><span>quelles tâches sont en retard sur</span></div>
+  <div class="sub clip" id="s27" data-start="47.680" data-duration="1.250" data-track-index="7"><span>le projet du restaurant</span></div>
+  <div class="sub clip" id="s28" data-start="48.950" data-duration="1.130" data-track-index="7"><span>Des colonnes claires</span></div>
+  <div class="sub clip" id="s29" data-start="50.100" data-duration="1.260" data-track-index="7"><span>peu de travail en cours</span></div>
+  <div class="sub clip" id="s30" data-start="51.380" data-duration="1.350" data-track-index="7"><span>des cartes complètes</span></div>
+  <div class="sub clip" id="s31" data-start="52.750" data-duration="1.780" data-track-index="7"><span>un coup d&#x27;œil chaque matin</span></div>
+  <div class="sub clip" id="s32" data-start="54.550" data-duration="1.410" data-track-index="7"><span>Dans la prochaine formation</span></div>
+  <div class="sub clip" id="s33" data-start="55.980" data-duration="1.320" data-track-index="7"><span>le daily efficace en</span></div>
+  <div class="sub clip" id="s34" data-start="57.550" data-duration="0.850" data-track-index="7"><span>cinq minutes</span></div>
+  <div class="bar"><i id="bar"></i></div>
+  <audio id="voice" src="assets/voix-16lufs.mp3" data-start="3.0" data-duration="55.68" data-track-index="10" data-volume="1"></audio>
+  <div class="clip card" id="intro" data-start="0" data-duration="3.6" data-track-index="8">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative"><div class="top"><span class="num">F17</span><span class="kick" style="margin:0">Formation · Projet &amp; équipe</span></div>
+    <h1>Le <em>Kanban</em> au quotidien</h1></div>
+    <div class="logo"><img src="assets/logo_icon.png" alt="">RapidoSoftware&nbsp;/&nbsp;<b style="color:#fff">RapidoRH</b></div>
+  </div>
+  <div class="clip card" id="outro" data-start="58.38" data-duration="4.8" data-track-index="9" style="align-items:center;text-align:center">
+    <div class="bg"><div class="halo h1"></div><div class="halo h2"></div><div class="grid"></div></div>
+    <div style="position:relative"><h2>Merci d'avoir <em>regardé</em></h2><p>Prochaine formation : le daily efficace en cinq minutes</p></div>
+    <div class="logo" style="left:50%;transform:translateX(-50%)"><img src="assets/logo_icon.png" alt="">RapidoSoftware</div>
+  </div>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  tl.from('#intro .top', { y: 40, opacity: 0, duration: .7, ease: 'expo.out' }, .15)
+    .from('#intro h1', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, .3)
+    .to('#intro', { opacity: 0, duration: .6, ease: 'power2.in' }, 3.0);
+  tl.to('#bar', { scaleX: 1, duration: 55.68, ease: 'none' }, 3.0);
+  tl.from('#sl0 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 3.120);
+  tl.to('#sl0 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 9.160);
+  tl.from('#sl1 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 9.510);
+  tl.from('#sl1 .st', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 10.060);
+  tl.from('#sl1 .line', { scaleX: 0, duration: 3.20, ease: 'none' }, 10.060);
+  tl.to('#sl1 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 16.070);
+  tl.from('#sl2 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 16.420);
+  tl.from('#sl2 .col.l p', { opacity: 0, x: -30, stagger: .25, duration: .5 }, 16.970)
+    .from('#sl2 .col.r', { opacity: 0, scale: .94, duration: .7, ease: 'back.out(1.6)' }, 18.800)
+    .from('#sl2 .col.r p', { opacity: 0, x: 30, stagger: .25, duration: .5 }, 19.100);
+  tl.to('#sl2 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 21.470);
+  tl.from('#sl3 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 21.820);
+  tl.from('#sl3 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 22.370);
+  tl.to('#sl3 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 31.250);
+  tl.from('#sl4 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 31.600);
+  tl.from('#sl4 .pt', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.60 }, 32.150);
+  tl.to('#sl4 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 37.750);
+  tl.from('#sl5 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 38.100);
+  tl.from('#sl5 .st', { x: -40, opacity: 0, duration: .6, ease: 'back.out(1.6)', stagger: 1.52 }, 38.650);
+  tl.from('#sl5 .line', { scaleX: 0, duration: 4.55, ease: 'none' }, 38.650);
+  tl.to('#sl5 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 44.250);
+  tl.from('#sl6 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 44.600);
+  (function(){ const el = document.querySelector('#sl6 .typed'); const txt = el.dataset.text; const o = { n: 0 };
+    tl.to(o, { n: txt.length, duration: 1.41, ease: 'none', onUpdate: () => { el.textContent = txt.slice(0, Math.round(o.n)); } }, 45.150); })();
+  tl.from('#sl6 .a', { opacity: 0, y: 20, duration: .6, ease: 'expo.out' }, 46.758)
+    .from('#sl6 .a p', { opacity: 0, y: 10, stagger: .35, duration: .4 }, 47.058);
+  tl.to('#sl6 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 48.650);
+  tl.from('#sl7 .inner > *', { y: 40, opacity: 0, duration: .8, ease: 'expo.out', stagger: .12 }, 49.000);
+  tl.to('#sl7 .inner', { opacity: 0, y: -20, duration: .35, ease: 'power2.in' }, 58.380);
+  tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 58.680);
+  window.__timelines['main'] = tl;
+</script>
+</body></html>

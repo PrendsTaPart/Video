@@ -920,6 +920,66 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F02.png"
   },
   {
+    "id": "F03",
+    "produit": "cms",
+    "kicker": "Formation · Marketing",
+    "titre": "Écrire un post qui engage",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 71,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F03.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F03.png"
+  },
+  {
+    "id": "F04",
+    "produit": "cms",
+    "kicker": "Formation · Marketing",
+    "titre": "Des visuels de marque cohérents",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 66,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F04.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F04.png"
+  },
+  {
+    "id": "F05",
+    "produit": "cms",
+    "kicker": "Formation · Marketing",
+    "titre": "Lire ses statistiques et décider quoi refaire",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 66,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F05.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F05.png"
+  },
+  {
+    "id": "F06",
+    "produit": "crm",
+    "kicker": "Formation · Marketing",
+    "titre": "La newsletter qui se lit",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 73,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F06.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F06.png"
+  },
+  {
+    "id": "F07",
+    "produit": "crm",
+    "kicker": "Formation · Marketing",
+    "titre": "Communication de crise et avis négatifs",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 75,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F07.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F07.png"
+  },
+  {
+    "id": "F08",
+    "produit": "crm",
+    "kicker": "Formation · Commercial",
+    "titre": "Définir sa cible et son fichier de prospects",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 76,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F08.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F08.png"
+  },
+  {
     "id": "F11",
     "produit": "crm",
     "kicker": "Formation · Prospection",
