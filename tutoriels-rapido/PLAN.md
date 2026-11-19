@@ -275,7 +275,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] RH30 — Confier une tâche à un employé IA
 - [x] RH31 — Suivre le travail de vos employés IA
 - [x] RH32 — Demander un congé (collaborateur)
-- [x] RH33 — Répondre dans la messagerie (collaborateur ; voix non générée : crédits ElevenLabs épuisés)
+- [x] RH33 — Répondre dans la messagerie (collaborateur) — PUBLIÉ dans RapidoCMS (19/11), hors Académie comme la série RH
 
 ## D. Formations métier (avec Rapido et l'IA)
 
