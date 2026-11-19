@@ -323,9 +323,9 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] F29 — Agences & freelances — PUBLIÉ (19/11)
 - [x] F30 — Commerce de proximité — PUBLIÉ (19/11)
 - [x] F31 — Immobilier — PUBLIÉ (19/11)
-- [~] F32 — Services aux entreprises (PME) (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [~] F33 — Santé & bien-être (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [~] F34 — Associations & événementiel (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F32 — Services aux entreprises (PME) — PUBLIÉ (19/11)
+- [x] F33 — Santé & bien-être — PUBLIÉ (19/11)
+- [x] F34 — Associations & événementiel — PUBLIÉ (19/11)
 
 ## E. Site web RapidoSoftware — vrais écrans
 

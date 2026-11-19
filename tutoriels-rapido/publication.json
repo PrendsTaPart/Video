@@ -1210,6 +1210,36 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F31.png"
   },
   {
+    "id": "F32",
+    "produit": "suite",
+    "kicker": "Formation · Services aux entreprises",
+    "titre": "Services aux entreprises (PME)",
+    "tag": "1 min 30 · Secteur",
+    "duree_s": 63,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F32.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F32.png"
+  },
+  {
+    "id": "F33",
+    "produit": "suite",
+    "kicker": "Formation · Santé & bien-être",
+    "titre": "Santé et bien-être",
+    "tag": "1 min 30 · Secteur",
+    "duree_s": 63,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F33.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F33.png"
+  },
+  {
+    "id": "F34",
+    "produit": "suite",
+    "kicker": "Formation · Associations & événementiel",
+    "titre": "Associations et événementiel",
+    "tag": "1 min 30 · Secteur",
+    "duree_s": 65,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F34.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F34.png"
+  },
+  {
     "id": "F40",
     "produit": "crm",
     "kicker": "Formation · Prospection",

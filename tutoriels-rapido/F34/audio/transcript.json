@@ -1,0 +1,806 @@
+[
+  {
+    "text": "Une",
+    "start": 0.07,
+    "end": 0.18,
+    "id": "w0"
+  },
+  {
+    "text": "association",
+    "start": 0.18,
+    "end": 0.86,
+    "id": "w1"
+  },
+  {
+    "text": "ou",
+    "start": 0.86,
+    "end": 0.97,
+    "id": "w2"
+  },
+  {
+    "text": "un",
+    "start": 0.98,
+    "end": 1.1,
+    "id": "w3"
+  },
+  {
+    "text": "organisateur",
+    "start": 1.1,
+    "end": 1.78,
+    "id": "w4"
+  },
+  {
+    "text": "d'événement,",
+    "start": 1.86,
+    "end": 2.6,
+    "id": "w5"
+  },
+  {
+    "text": "c'est",
+    "start": 2.66,
+    "end": 2.9,
+    "id": "w6"
+  },
+  {
+    "text": "beaucoup",
+    "start": 2.9,
+    "end": 3.4,
+    "id": "w7"
+  },
+  {
+    "text": "de",
+    "start": 3.4,
+    "end": 3.52,
+    "id": "w8"
+  },
+  {
+    "text": "monde",
+    "start": 3.52,
+    "end": 3.8,
+    "id": "w9"
+  },
+  {
+    "text": "à",
+    "start": 3.83,
+    "end": 3.89,
+    "id": "w10"
+  },
+  {
+    "text": "coordonner.",
+    "start": 3.89,
+    "end": 4.54,
+    "id": "w11"
+  },
+  {
+    "text": "Voici",
+    "start": 4.61,
+    "end": 4.89,
+    "id": "w12"
+  },
+  {
+    "text": "comment",
+    "start": 4.89,
+    "end": 5.38,
+    "id": "w13"
+  },
+  {
+    "text": "Rapido",
+    "start": 5.38,
+    "end": 5.8,
+    "id": "w14"
+  },
+  {
+    "text": "simplifie",
+    "start": 5.8,
+    "end": 6.43,
+    "id": "w15"
+  },
+  {
+    "text": "l'organisation.",
+    "start": 6.43,
+    "end": 7.44,
+    "id": "w16"
+  },
+  {
+    "text": "1.",
+    "start": 7.51,
+    "end": 8.43,
+    "id": "w17"
+  },
+  {
+    "text": "L'événement.",
+    "start": 8.44,
+    "end": 8.94,
+    "id": "w18"
+  },
+  {
+    "text": "Créez-le",
+    "start": 9.01,
+    "end": 9.45,
+    "id": "w19"
+  },
+  {
+    "text": "avec",
+    "start": 9.45,
+    "end": 9.71,
+    "id": "w20"
+  },
+  {
+    "text": "ces",
+    "start": 9.71,
+    "end": 9.9,
+    "id": "w21"
+  },
+  {
+    "text": "créneaux",
+    "start": 9.9,
+    "end": 10.39,
+    "id": "w22"
+  },
+  {
+    "text": "et",
+    "start": 10.45,
+    "end": 10.53,
+    "id": "w23"
+  },
+  {
+    "text": "les",
+    "start": 10.53,
+    "end": 10.67,
+    "id": "w24"
+  },
+  {
+    "text": "inscriptions",
+    "start": 10.67,
+    "end": 11.24,
+    "id": "w25"
+  },
+  {
+    "text": "arrivent",
+    "start": 11.24,
+    "end": 11.62,
+    "id": "w26"
+  },
+  {
+    "text": "en",
+    "start": 11.62,
+    "end": 11.71,
+    "id": "w27"
+  },
+  {
+    "text": "ligne,",
+    "start": 11.71,
+    "end": 12.08,
+    "id": "w28"
+  },
+  {
+    "text": "chacune",
+    "start": 12.15,
+    "end": 12.54,
+    "id": "w29"
+  },
+  {
+    "text": "suivie",
+    "start": 12.54,
+    "end": 12.94,
+    "id": "w30"
+  },
+  {
+    "text": "dans",
+    "start": 12.94,
+    "end": 13.21,
+    "id": "w31"
+  },
+  {
+    "text": "votre",
+    "start": 13.21,
+    "end": 13.53,
+    "id": "w32"
+  },
+  {
+    "text": "liste.",
+    "start": 13.59,
+    "end": 14.12,
+    "id": "w33"
+  },
+  {
+    "text": "2.",
+    "start": 14.19,
+    "end": 14.65,
+    "id": "w34"
+  },
+  {
+    "text": "Les",
+    "start": 14.65,
+    "end": 14.92,
+    "id": "w35"
+  },
+  {
+    "text": "formulaires.",
+    "start": 14.92,
+    "end": 15.92,
+    "id": "w36"
+  },
+  {
+    "text": "Adhésion,",
+    "start": 15.99,
+    "end": 16.62,
+    "id": "w37"
+  },
+  {
+    "text": "bénévolat,",
+    "start": 16.62,
+    "end": 17.37,
+    "id": "w38"
+  },
+  {
+    "text": "inscription",
+    "start": 17.43,
+    "end": 18.2,
+    "id": "w39"
+  },
+  {
+    "text": "à",
+    "start": 18.2,
+    "end": 18.27,
+    "id": "w40"
+  },
+  {
+    "text": "un",
+    "start": 18.27,
+    "end": 18.41,
+    "id": "w41"
+  },
+  {
+    "text": "atelier,",
+    "start": 18.41,
+    "end": 19,
+    "id": "w42"
+  },
+  {
+    "text": "chaque",
+    "start": 19.07,
+    "end": 19.43,
+    "id": "w43"
+  },
+  {
+    "text": "réponse",
+    "start": 19.43,
+    "end": 19.93,
+    "id": "w44"
+  },
+  {
+    "text": "crée",
+    "start": 19.93,
+    "end": 20.21,
+    "id": "w45"
+  },
+  {
+    "text": "un",
+    "start": 20.21,
+    "end": 20.35,
+    "id": "w46"
+  },
+  {
+    "text": "contact",
+    "start": 20.35,
+    "end": 20.78,
+    "id": "w47"
+  },
+  {
+    "text": "prêt",
+    "start": 20.86,
+    "end": 21.12,
+    "id": "w48"
+  },
+  {
+    "text": "à",
+    "start": 21.13,
+    "end": 21.2,
+    "id": "w49"
+  },
+  {
+    "text": "être",
+    "start": 21.2,
+    "end": 21.48,
+    "id": "w50"
+  },
+  {
+    "text": "relancé.",
+    "start": 21.48,
+    "end": 22.18,
+    "id": "w51"
+  },
+  {
+    "text": "3.",
+    "start": 22.31,
+    "end": 22.7,
+    "id": "w52"
+  },
+  {
+    "text": "Communiquez.",
+    "start": 22.7,
+    "end": 23.8,
+    "id": "w53"
+  },
+  {
+    "text": "Une",
+    "start": 23.87,
+    "end": 23.96,
+    "id": "w54"
+  },
+  {
+    "text": "newsletter",
+    "start": 23.96,
+    "end": 24.5,
+    "id": "w55"
+  },
+  {
+    "text": "aux",
+    "start": 24.51,
+    "end": 24.67,
+    "id": "w56"
+  },
+  {
+    "text": "adhérents,",
+    "start": 24.67,
+    "end": 25.25,
+    "id": "w57"
+  },
+  {
+    "text": "un",
+    "start": 25.31,
+    "end": 25.51,
+    "id": "w58"
+  },
+  {
+    "text": "SMS",
+    "start": 25.51,
+    "end": 25.83,
+    "id": "w59"
+  },
+  {
+    "text": "de",
+    "start": 25.83,
+    "end": 26.03,
+    "id": "w60"
+  },
+  {
+    "text": "rappel,",
+    "start": 26.04,
+    "end": 26.82,
+    "id": "w61"
+  },
+  {
+    "text": "toujours",
+    "start": 26.86,
+    "end": 27.27,
+    "id": "w62"
+  },
+  {
+    "text": "avec",
+    "start": 27.27,
+    "end": 27.49,
+    "id": "w63"
+  },
+  {
+    "text": "la",
+    "start": 27.49,
+    "end": 27.55,
+    "id": "w64"
+  },
+  {
+    "text": "désinscription",
+    "start": 27.6,
+    "end": 28.05,
+    "id": "w65"
+  },
+  {
+    "text": "respectée.",
+    "start": 28.46,
+    "end": 29.04,
+    "id": "w66"
+  },
+  {
+    "text": "4.",
+    "start": 29.11,
+    "end": 29.73,
+    "id": "w67"
+  },
+  {
+    "text": "Animez.",
+    "start": 29.73,
+    "end": 30.44,
+    "id": "w68"
+  },
+  {
+    "text": "Un",
+    "start": 30.51,
+    "end": 30.55,
+    "id": "w69"
+  },
+  {
+    "text": "sondage",
+    "start": 30.55,
+    "end": 30.91,
+    "id": "w70"
+  },
+  {
+    "text": "après",
+    "start": 30.93,
+    "end": 31.17,
+    "id": "w71"
+  },
+  {
+    "text": "l'événement,",
+    "start": 31.2,
+    "end": 31.96,
+    "id": "w72"
+  },
+  {
+    "text": "un",
+    "start": 31.96,
+    "end": 32.1,
+    "id": "w73"
+  },
+  {
+    "text": "jeu",
+    "start": 32.1,
+    "end": 32.32,
+    "id": "w74"
+  },
+  {
+    "text": "concours",
+    "start": 32.32,
+    "end": 32.9,
+    "id": "w75"
+  },
+  {
+    "text": "avec",
+    "start": 32.9,
+    "end": 33.19,
+    "id": "w76"
+  },
+  {
+    "text": "un",
+    "start": 33.19,
+    "end": 33.33,
+    "id": "w77"
+  },
+  {
+    "text": "QR",
+    "start": 33.33,
+    "end": 33.46,
+    "id": "w78"
+  },
+  {
+    "text": "code",
+    "start": 33.47,
+    "end": 33.76,
+    "id": "w79"
+  },
+  {
+    "text": "sur",
+    "start": 33.76,
+    "end": 33.98,
+    "id": "w80"
+  },
+  {
+    "text": "place.",
+    "start": 33.98,
+    "end": 34.63,
+    "id": "w81"
+  },
+  {
+    "text": "Côté",
+    "start": 34.7,
+    "end": 34.89,
+    "id": "w82"
+  },
+  {
+    "text": "organisation,",
+    "start": 34.89,
+    "end": 35.88,
+    "id": "w83"
+  },
+  {
+    "text": "Rapido",
+    "start": 35.88,
+    "end": 36.28,
+    "id": "w84"
+  },
+  {
+    "text": "RH",
+    "start": 36.28,
+    "end": 36.41,
+    "id": "w85"
+  },
+  {
+    "text": "découpe",
+    "start": 36.41,
+    "end": 36.87,
+    "id": "w86"
+  },
+  {
+    "text": "l'événement",
+    "start": 36.88,
+    "end": 37.6,
+    "id": "w87"
+  },
+  {
+    "text": "en",
+    "start": 37.6,
+    "end": 37.73,
+    "id": "w88"
+  },
+  {
+    "text": "tâches,",
+    "start": 37.73,
+    "end": 38.33,
+    "id": "w89"
+  },
+  {
+    "text": "confier",
+    "start": 38.33,
+    "end": 38.61,
+    "id": "w90"
+  },
+  {
+    "text": "aux",
+    "start": 38.64,
+    "end": 38.77,
+    "id": "w91"
+  },
+  {
+    "text": "bénévoles",
+    "start": 38.77,
+    "end": 39.2,
+    "id": "w92"
+  },
+  {
+    "text": "ou",
+    "start": 39.2,
+    "end": 39.3,
+    "id": "w93"
+  },
+  {
+    "text": "aux",
+    "start": 39.3,
+    "end": 39.44,
+    "id": "w94"
+  },
+  {
+    "text": "employés",
+    "start": 39.44,
+    "end": 40.03,
+    "id": "w95"
+  },
+  {
+    "text": "IA",
+    "start": 40.12,
+    "end": 40.64,
+    "id": "w96"
+  },
+  {
+    "text": "avec",
+    "start": 40.64,
+    "end": 40.83,
+    "id": "w97"
+  },
+  {
+    "text": "un",
+    "start": 40.91,
+    "end": 41,
+    "id": "w98"
+  },
+  {
+    "text": "daily",
+    "start": 41,
+    "end": 41.3,
+    "id": "w99"
+  },
+  {
+    "text": "poursuivre",
+    "start": 41.3,
+    "end": 41.87,
+    "id": "w100"
+  },
+  {
+    "text": "l'avancement.",
+    "start": 41.87,
+    "end": 42.8,
+    "id": "w101"
+  },
+  {
+    "text": "Un",
+    "start": 42.87,
+    "end": 42.92,
+    "id": "w102"
+  },
+  {
+    "text": "workflow",
+    "start": 42.92,
+    "end": 43.41,
+    "id": "w103"
+  },
+  {
+    "text": "peut",
+    "start": 43.42,
+    "end": 43.67,
+    "id": "w104"
+  },
+  {
+    "text": "tout",
+    "start": 43.67,
+    "end": 43.92,
+    "id": "w105"
+  },
+  {
+    "text": "enchaîner.",
+    "start": 43.92,
+    "end": 44.52,
+    "id": "w106"
+  },
+  {
+    "text": "Une",
+    "start": 44.59,
+    "end": 44.67,
+    "id": "w107"
+  },
+  {
+    "text": "inscription",
+    "start": 44.67,
+    "end": 45.24,
+    "id": "w108"
+  },
+  {
+    "text": "déclenche",
+    "start": 45.24,
+    "end": 45.7,
+    "id": "w109"
+  },
+  {
+    "text": "un",
+    "start": 45.7,
+    "end": 45.8,
+    "id": "w110"
+  },
+  {
+    "text": "email",
+    "start": 45.8,
+    "end": 46.06,
+    "id": "w111"
+  },
+  {
+    "text": "de",
+    "start": 46.06,
+    "end": 46.16,
+    "id": "w112"
+  },
+  {
+    "text": "bienvenue,",
+    "start": 46.16,
+    "end": 46.8,
+    "id": "w113"
+  },
+  {
+    "text": "puis",
+    "start": 46.8,
+    "end": 47.05,
+    "id": "w114"
+  },
+  {
+    "text": "après",
+    "start": 47.19,
+    "end": 47.5,
+    "id": "w115"
+  },
+  {
+    "text": "un",
+    "start": 47.5,
+    "end": 47.65,
+    "id": "w116"
+  },
+  {
+    "text": "délai,",
+    "start": 47.65,
+    "end": 48.17,
+    "id": "w117"
+  },
+  {
+    "text": "un",
+    "start": 48.17,
+    "end": 48.27,
+    "id": "w118"
+  },
+  {
+    "text": "rappel.",
+    "start": 48.32,
+    "end": 48.78,
+    "id": "w119"
+  },
+  {
+    "text": "Inscrire,",
+    "start": 49.15,
+    "end": 49.93,
+    "id": "w120"
+  },
+  {
+    "text": "rassembler,",
+    "start": 49.93,
+    "end": 50.86,
+    "id": "w121"
+  },
+  {
+    "text": "informer,",
+    "start": 50.94,
+    "end": 51.79,
+    "id": "w122"
+  },
+  {
+    "text": "animer.",
+    "start": 51.79,
+    "end": 52.36,
+    "id": "w123"
+  },
+  {
+    "text": "Vous",
+    "start": 52.43,
+    "end": 52.73,
+    "id": "w124"
+  },
+  {
+    "text": "organisez",
+    "start": 52.73,
+    "end": 53.56,
+    "id": "w125"
+  },
+  {
+    "text": "Rapido",
+    "start": 53.56,
+    "end": 54.1,
+    "id": "w126"
+  },
+  {
+    "text": "Cordon.",
+    "start": 54.1,
+    "end": 54.89,
+    "id": "w127"
+  },
+  {
+    "text": "Retrouvez",
+    "start": 55.03,
+    "end": 55.43,
+    "id": "w128"
+  },
+  {
+    "text": "toutes",
+    "start": 55.45,
+    "end": 55.77,
+    "id": "w129"
+  },
+  {
+    "text": "nos",
+    "start": 55.77,
+    "end": 55.93,
+    "id": "w130"
+  },
+  {
+    "text": "formations",
+    "start": 55.93,
+    "end": 56.48,
+    "id": "w131"
+  },
+  {
+    "text": "dans",
+    "start": 56.48,
+    "end": 56.7,
+    "id": "w132"
+  },
+  {
+    "text": "l'académie.",
+    "start": 56.7,
+    "end": 57.44,
+    "id": "w133"
+  }
+]
