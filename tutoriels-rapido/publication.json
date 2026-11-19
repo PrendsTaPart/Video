@@ -1180,6 +1180,36 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F28.png"
   },
   {
+    "id": "F29",
+    "produit": "suite",
+    "kicker": "Formation · Agences & freelances",
+    "titre": "Agences et freelances",
+    "tag": "1 min 30 · Secteur",
+    "duree_s": 65,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F29.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F29.png"
+  },
+  {
+    "id": "F30",
+    "produit": "suite",
+    "kicker": "Formation · Commerce de proximité",
+    "titre": "Commerce de proximité",
+    "tag": "1 min 30 · Secteur",
+    "duree_s": 64,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F30.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F30.png"
+  },
+  {
+    "id": "F31",
+    "produit": "suite",
+    "kicker": "Formation · Immobilier",
+    "titre": "Immobilier",
+    "tag": "1 min 30 · Secteur",
+    "duree_s": 65,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F31.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F31.png"
+  },
+  {
     "id": "F40",
     "produit": "crm",
     "kicker": "Formation · Prospection",

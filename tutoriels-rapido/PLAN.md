@@ -320,9 +320,9 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 ### Par secteur d'activité
 - [x] F27 — Restaurant & food : Rapido au quotidien — PUBLIÉ (19/11)
 - [x] F28 — Artisans & BTP — PUBLIÉ (19/11)
-- [~] F29 — Agences & freelances (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [~] F30 — Commerce de proximité (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [~] F31 — Immobilier (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F29 — Agences & freelances — PUBLIÉ (19/11)
+- [x] F30 — Commerce de proximité — PUBLIÉ (19/11)
+- [x] F31 — Immobilier — PUBLIÉ (19/11)
 - [~] F32 — Services aux entreprises (PME) (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 - [~] F33 — Santé & bien-être (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 - [~] F34 — Associations & événementiel (19/11 : script vérifié dans le code, voix générée — en file de rendu)
