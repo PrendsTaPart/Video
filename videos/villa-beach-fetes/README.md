@@ -42,3 +42,14 @@ npx remotion studio     # aperçu interactif
 Toutes les transitions tombent sur la grille 120 BPM (un temps = 0,5 s = 15 images) : Noël = intro 3 s, trois sections de 4 s,
 final 5 s ; Nouvel An = intro 2 s, trois sections de 3 s, prix 3 s, compte à rebours 3-2-1 (1 s chacun), confettis et appel final 3 s ;
 teasers = une coupe toutes les 2 temps (1 s) avec flash doré.
+
+## Bibliothèque d'assets FoodEatUp (Villa Beach, établissement 46, ajoutées le 19/11/2026)
+
+| Asset | Nom | Fichier |
+|---|---|---|
+| 46 | noel-menu-reel-1080x1920 | villa-beach-noel-menu-1080x1920.mp4 |
+| 47 | nouvel-an-menu-reel-1080x1920 | villa-beach-nouvel-an-menu-1080x1920.mp4 |
+| 48 | noel-teaser-places-limitees | villa-beach-noel-teaser-1080x1920.mp4 |
+| 49 | nouvel-an-teaser-places-limitees | villa-beach-nouvel-an-teaser-1080x1920.mp4 |
+| 50 | noel-menu-post-1080x1350 | villa-beach-noel-menu-1080x1350.mp4 |
+| 51 | nouvel-an-menu-post-1080x1350 | villa-beach-nouvel-an-menu-1080x1350.mp4 |
