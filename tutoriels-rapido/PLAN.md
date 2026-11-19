@@ -282,16 +282,16 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 ### Marketing & communication
 - [x] F01 — Construire sa ligne éditoriale en 1 heure avec l'IA
 - [x] F02 — Un mois de contenus en une après-midi (RapidoCMS)
-- [x] F03 — Écrire un post qui engage : structure et accroches (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [x] F04 — Visuels de marque cohérents avec un kit de marque (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [x] F05 — Lire ses statistiques et décider quoi refaire (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [x] F06 — Newsletter qui se lit : objet, contenu, fréquence (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [x] F07 — Communication de crise et avis négatifs (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F03 — Écrire un post qui engage : structure et accroches — PUBLIÉ (19/11)
+- [x] F04 — Visuels de marque cohérents avec un kit de marque — PUBLIÉ (19/11)
+- [x] F05 — Lire ses statistiques et décider quoi refaire — PUBLIÉ (19/11)
+- [x] F06 — Newsletter qui se lit : objet, contenu, fréquence — PUBLIÉ (19/11)
+- [x] F07 — Communication de crise et avis négatifs — PUBLIÉ (19/11)
 
 ### Commercial & prospection
-- [x] F08 — Définir sa cible et son fichier de prospects (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [~] F09 — Prospection locale avec Google Maps et SIRET (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [~] F10 — Le premier appel : script et qualification (agent vocal) (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F08 — Définir sa cible et son fichier de prospects — PUBLIÉ (19/11)
+- [x] F09 — Prospection locale avec Google Maps et SIRET — PUBLIÉ (19/11)
+- [x] F10 — Le premier appel : script et qualification (agent vocal) — PUBLIÉ (19/11)
 - [x] F11 — Le cold email qui obtient des réponses (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
 - [x] F12 — Piloter son pipeline et ses prévisions (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
 - [x] F13 — Le devis qui se signe : présentation et relances (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
@@ -303,7 +303,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] F43 — Faire travailler son équipe IA : CRM + RapidoRH connectés (script, voix générée — en file de rendu)
 
 ### Gestion de projet & équipe
-- [~] F16 — Lancer un projet : découpage, rôles, échéances (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F16 — Lancer un projet : découpage, rôles, échéances — PUBLIÉ (19/11)
 - [~] F17 — Le Kanban au quotidien (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 - [~] F18 — Le daily efficace en 5 minutes (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 - [~] F19 — Intégrer un nouveau collaborateur (19/11 : script vérifié dans le code, voix générée — en file de rendu)

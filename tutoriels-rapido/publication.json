@@ -980,6 +980,26 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F08.png"
   },
   {
+    "id": "F09",
+    "produit": "crm",
+    "kicker": "Formation · Commercial",
+    "titre": "Prospection locale avec Google Maps et le SIRET",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 69,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F09.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F09.png"
+  },
+  {
+    "id": "F10",
+    "produit": "crm",
+    "kicker": "Formation · Commercial",
+    "titre": "Le premier appel : script et qualification",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 68,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F10.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F10.png"
+  },
+  {
     "id": "F11",
     "produit": "crm",
     "kicker": "Formation · Prospection",
@@ -1028,6 +1048,16 @@
     "duree_s": 75,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F15.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F15.png"
+  },
+  {
+    "id": "F16",
+    "produit": "rh",
+    "kicker": "Formation · Projet & équipe",
+    "titre": "Lancer un projet : découpage, rôles, échéances",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 74,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F16.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F16.png"
   },
   {
     "id": "F21",
