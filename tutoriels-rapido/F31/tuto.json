@@ -1,0 +1,125 @@
+{
+ "id": "F31",
+ "product": "suite",
+ "kicker": "Formation · Immobilier",
+ "title": "Immobilier",
+ "em": "Immobilier",
+ "tag": "1 min 30 · Secteur",
+ "end_cta": "Prochaine formation : les services aux entreprises",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "En immobilier, celui qui rappelle le premier signe souvent le mandat. Voici comment Rapido vous fait gagner ces minutes décisives."
+  },
+  {
+   "key": "capter",
+   "text": "Un : captez les contacts. Un formulaire d'estimation sur votre site, une page de destination par quartier : chaque demande crée un contact."
+  },
+  {
+   "key": "score",
+   "text": "Deux : repérez les vendeurs chauds. Chaque visite, clic ou formulaire rapporte des points. Au-delà du seuil, une tâche de rappel est créée pour vous."
+  },
+  {
+   "key": "repartir",
+   "text": "Trois : répartissez. Les nouveaux contacts sont confiés à tour de rôle à vos agents, ou au moins chargé."
+  },
+  {
+   "key": "rappeler",
+   "text": "Quatre : rappelez vite. En un clic depuis la fiche du contact, ou par l'agent vocal, qui propose un rendez-vous et l'inscrit dans votre agenda."
+  },
+  {
+   "key": "mandat",
+   "text": "Le mandat se signe en ligne, avec un document figé et un certificat de signature."
+  },
+  {
+   "key": "segments",
+   "text": "Vos segments par ville ou par code postal servent ensuite à prévenir les bons acquéreurs à chaque nouveau bien."
+  },
+  {
+   "key": "recap",
+   "text": "Capter, repérer, répartir, rappeler : vous êtes le premier au téléphone."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : les services aux entreprises."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "title": "Le premier au téléphone",
+   "em": "premier",
+   "kicker": "Secteur · Immobilier"
+  },
+  {
+   "at": "capter",
+   "type": "points",
+   "title": "1 · Capter",
+   "em": "Capter",
+   "items": [
+    "Formulaire d'estimation",
+    "Page par quartier"
+   ]
+  },
+  {
+   "at": "score",
+   "type": "points",
+   "title": "2 · Les vendeurs chauds",
+   "em": "chauds",
+   "items": [
+    "Points à chaque interaction",
+    "Seuil dépassé : tâche de rappel"
+   ]
+  },
+  {
+   "at": "repartir",
+   "type": "points",
+   "title": "3 · Répartir",
+   "em": "Répartir",
+   "items": [
+    "À tour de rôle",
+    "Ou au moins chargé"
+   ]
+  },
+  {
+   "at": "rappeler",
+   "type": "steps",
+   "title": "4 · Rappeler vite",
+   "em": "vite",
+   "items": [
+    "Clic pour appeler",
+    "Ou agent vocal",
+    "Rendez-vous dans l'agenda"
+   ]
+  },
+  {
+   "at": "mandat",
+   "type": "points",
+   "title": "Le mandat",
+   "em": "mandat",
+   "items": [
+    "Signé en ligne",
+    "Certificat de signature"
+   ]
+  },
+  {
+   "at": "segments",
+   "type": "points",
+   "title": "Les acquéreurs",
+   "em": "acquéreurs",
+   "items": [
+    "Segments par ville",
+    "Par code postal"
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Le premier au téléphone",
+   "em": "premier"
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "id": "F30",
+ "product": "suite",
+ "kicker": "Formation · Commerce de proximité",
+ "title": "Commerce de proximité",
+ "em": "proximité",
+ "tag": "1 min 30 · Secteur",
+ "end_cta": "Prochaine formation : l'immobilier",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Face aux géants du web, le commerce de proximité a un atout : la relation. Rapido vous aide à l'entretenir."
+  },
+  {
+   "key": "fidelite",
+   "text": "Un : la fidélité. Une carte à tampons ou à points, que le client ajoute à l'écran d'accueil de son téléphone."
+  },
+  {
+   "key": "jeu",
+   "text": "Deux : l'animation. Un jeu concours en vitrine, avec un QR code et des lots à retirer en boutique."
+  },
+  {
+   "key": "sms",
+   "text": "Trois : le SMS qui fait venir. Une offre courte, un lien, la mention STOP, envoyé aux heures autorisées. Ceux qui ont répondu STOP ne reçoivent plus rien."
+  },
+  {
+   "key": "vente",
+   "text": "Quatre : vendre aussi en ligne. Un bouton d'achat sur votre page, un paiement sécurisé par carte, et la commande arrive dans votre CRM."
+  },
+  {
+   "key": "reseaux",
+   "text": "Sur les réseaux, montrez les nouveautés et les coulisses, toujours aux couleurs de votre boutique."
+  },
+  {
+   "key": "nfc",
+   "text": "Une puce NFC sur le comptoir mène vers votre page de liens : avis, réseaux, carte de fidélité."
+  },
+  {
+   "key": "recap",
+   "text": "Fidélité, animation, SMS, vente en ligne : la relation de proximité, avec les outils des grands."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : l'immobilier."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "title": "La relation, votre atout",
+   "em": "relation",
+   "kicker": "Secteur · Commerce"
+  },
+  {
+   "at": "fidelite",
+   "type": "points",
+   "title": "1 · La fidélité",
+   "em": "fidélité",
+   "items": [
+    "Tampons ou points",
+    "Sur le téléphone du client"
+   ]
+  },
+  {
+   "at": "jeu",
+   "type": "points",
+   "title": "2 · L'animation",
+   "em": "animation",
+   "items": [
+    "Jeu en vitrine",
+    "QR code",
+    "Lots en boutique"
+   ]
+  },
+  {
+   "at": "sms",
+   "type": "steps",
+   "title": "3 · Le SMS",
+   "em": "SMS",
+   "items": [
+    "Offre courte",
+    "Lien",
+    "Mention STOP",
+    "Heures autorisées"
+   ]
+  },
+  {
+   "at": "vente",
+   "type": "steps",
+   "title": "4 · Vendre en ligne",
+   "em": "en ligne",
+   "items": [
+    "Bouton d'achat",
+    "Paiement par carte",
+    "Commande dans le CRM"
+   ]
+  },
+  {
+   "at": "reseaux",
+   "type": "points",
+   "title": "Les réseaux",
+   "em": "réseaux",
+   "items": [
+    "Nouveautés",
+    "Coulisses",
+    "Vos couleurs"
+   ]
+  },
+  {
+   "at": "nfc",
+   "type": "points",
+   "title": "Sur le comptoir",
+   "em": "comptoir",
+   "items": [
+    "Puce NFC",
+    "Page de liens"
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Les outils des grands",
+   "em": "grands"
+  }
+ ]
+}

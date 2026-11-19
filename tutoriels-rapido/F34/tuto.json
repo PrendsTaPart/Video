@@ -1,0 +1,128 @@
+{
+ "id": "F34",
+ "product": "suite",
+ "kicker": "Formation · Associations & événementiel",
+ "title": "Associations et événementiel",
+ "em": "événementiel",
+ "tag": "1 min 30 · Secteur",
+ "end_cta": "Retrouvez toutes les formations dans l'Académie RapidoSoftware",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Une association ou un organisateur d'événements, c'est beaucoup de monde à coordonner. Voici comment Rapido simplifie l'organisation."
+  },
+  {
+   "key": "evenement",
+   "text": "Un : l'événement. Créez-le avec ses créneaux, et les inscriptions arrivent en ligne, chacune suivie dans votre liste."
+  },
+  {
+   "key": "formulaire",
+   "text": "Deux : les formulaires. Adhésion, bénévolat, inscription à un atelier : chaque réponse crée un contact, prêt à être relancé."
+  },
+  {
+   "key": "communiquer",
+   "text": "Trois : communiquer. Une newsletter aux adhérents, un SMS de rappel, toujours avec la désinscription respectée."
+  },
+  {
+   "key": "animer",
+   "text": "Quatre : animer. Un sondage après l'événement, un jeu concours avec un QR code sur place."
+  },
+  {
+   "key": "benevoles",
+   "text": "Côté organisation, RapidoRH découpe l'événement en tâches, confiées aux bénévoles ou aux employés IA, avec un daily pour suivre l'avancement."
+  },
+  {
+   "key": "workflow",
+   "text": "Un workflow peut tout enchaîner : une inscription déclenche un e-mail de bienvenue, puis, après un délai, un rappel."
+  },
+  {
+   "key": "recap",
+   "text": "Inscrire, rassembler, informer, animer : vous organisez, Rapido coordonne."
+  },
+  {
+   "key": "outro",
+   "text": "Retrouvez toutes nos formations dans l'Académie !"
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "title": "Organiser sans s'épuiser",
+   "em": "Organiser",
+   "kicker": "Secteur · Associations & événements"
+  },
+  {
+   "at": "evenement",
+   "type": "points",
+   "title": "1 · L'événement",
+   "em": "événement",
+   "items": [
+    "Créneaux",
+    "Inscriptions en ligne"
+   ]
+  },
+  {
+   "at": "formulaire",
+   "type": "points",
+   "title": "2 · Les formulaires",
+   "em": "formulaires",
+   "items": [
+    "Adhésion",
+    "Bénévolat",
+    "Atelier"
+   ]
+  },
+  {
+   "at": "communiquer",
+   "type": "points",
+   "title": "3 · Communiquer",
+   "em": "Communiquer",
+   "items": [
+    "Newsletter",
+    "SMS de rappel",
+    "Désinscription respectée"
+   ]
+  },
+  {
+   "at": "animer",
+   "type": "points",
+   "title": "4 · Animer",
+   "em": "Animer",
+   "items": [
+    "Sondage après",
+    "Jeu concours sur place"
+   ]
+  },
+  {
+   "at": "benevoles",
+   "type": "steps",
+   "title": "L'organisation",
+   "em": "organisation",
+   "items": [
+    "Tâches",
+    "Bénévoles ou employés IA",
+    "Daily"
+   ]
+  },
+  {
+   "at": "workflow",
+   "type": "steps",
+   "title": "Un workflow",
+   "em": "workflow",
+   "items": [
+    "Inscription",
+    "E-mail de bienvenue",
+    "Délai, puis rappel"
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Rapido coordonne",
+   "em": "coordonne"
+  }
+ ]
+}

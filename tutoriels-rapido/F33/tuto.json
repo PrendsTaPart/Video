@@ -1,0 +1,123 @@
+{
+ "id": "F33",
+ "product": "suite",
+ "kicker": "Formation · Santé & bien-être",
+ "title": "Santé et bien-être",
+ "em": "bien-être",
+ "tag": "1 min 30 · Secteur",
+ "end_cta": "Prochaine formation : associations et événementiel",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Praticiens, coachs, centres de bien-être : votre métier, c'est la personne en face de vous. Rapido s'occupe du reste."
+  },
+  {
+   "key": "rendezvous",
+   "text": "Un : la prise de rendez-vous. Vos créneaux sont réservables en ligne, et chaque réservation arrive dans votre agenda."
+  },
+  {
+   "key": "fidelite",
+   "text": "Deux : la fidélité. Une carte à tampons, par exemple une séance offerte toutes les dix, avec un bonus d'anniversaire."
+  },
+  {
+   "key": "contenu",
+   "text": "Trois : du contenu utile. Un guide gratuit, une newsletter mensuelle avec un vrai conseil : vos clients restent en lien avec vous."
+  },
+  {
+   "key": "satisfaction",
+   "text": "Quatre : écoutez vos clients. Un sondage court, ou la question qui compte : nous recommanderiez-vous, de zéro à dix ?"
+  },
+  {
+   "key": "questions",
+   "text": "L'agent IA de votre site répond aux questions pratiques, et passe la main à un humain quand il le faut."
+  },
+  {
+   "key": "securite",
+   "text": "Protégez votre compte avec la double authentification : un code en plus du mot de passe."
+  },
+  {
+   "key": "recap",
+   "text": "Rendez-vous, fidélité, contenu, écoute : plus de temps pour vos clients, moins pour l'administratif."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : associations et événementiel."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "title": "Du temps pour vos clients",
+   "em": "vos clients",
+   "kicker": "Secteur · Santé & bien-être"
+  },
+  {
+   "at": "rendezvous",
+   "type": "points",
+   "title": "1 · Les rendez-vous",
+   "em": "rendez-vous",
+   "items": [
+    "Réservation en ligne",
+    "Dans votre agenda"
+   ]
+  },
+  {
+   "at": "fidelite",
+   "type": "points",
+   "title": "2 · La fidélité",
+   "em": "fidélité",
+   "items": [
+    "Une séance offerte toutes les dix",
+    "Bonus d'anniversaire"
+   ]
+  },
+  {
+   "at": "contenu",
+   "type": "points",
+   "title": "3 · Du contenu utile",
+   "em": "contenu",
+   "items": [
+    "Un guide gratuit",
+    "Une newsletter mensuelle"
+   ]
+  },
+  {
+   "at": "satisfaction",
+   "type": "points",
+   "title": "4 · Écouter",
+   "em": "Écouter",
+   "items": [
+    "Sondage court",
+    "Recommandation de 0 à 10"
+   ]
+  },
+  {
+   "at": "questions",
+   "type": "points",
+   "title": "Les questions pratiques",
+   "em": "questions",
+   "items": [
+    "Agent IA du site",
+    "Relais vers un humain"
+   ]
+  },
+  {
+   "at": "securite",
+   "type": "points",
+   "title": "Votre compte",
+   "em": "compte",
+   "items": [
+    "Double authentification"
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Plus de temps pour vos clients",
+   "em": "vos clients"
+  }
+ ]
+}

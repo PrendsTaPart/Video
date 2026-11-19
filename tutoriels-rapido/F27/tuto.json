@@ -1,0 +1,130 @@
+{
+ "id": "F27",
+ "product": "suite",
+ "kicker": "Formation · Restaurant & food",
+ "title": "Restaurant : Rapido au quotidien",
+ "em": "Restaurant",
+ "tag": "1 min 30 · Secteur",
+ "end_cta": "Prochaine formation : artisans et BTP",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Un restaurant vit de ses habitués. Voici comment Rapido vous aide à les faire revenir, sans y passer vos soirées."
+  },
+  {
+   "key": "fidelite",
+   "text": "Un : la carte de fidélité. Tampons ou points, une récompense au bout, et un bonus de bienvenue. En caisse, vous scannez le QR code du client et vous créditez."
+  },
+  {
+   "key": "jeu",
+   "text": "Deux : un jeu concours. Une roue ou une carte à gratter, un QR code sur la table, des lots en stock : chaque participant laisse ses coordonnées."
+  },
+  {
+   "key": "posts",
+   "text": "Trois : vos réseaux. Le plat du jour, les coulisses, l'équipe : préparez un mois de publications en une après-midi avec RapidoCMS."
+  },
+  {
+   "key": "questions",
+   "text": "Quatre : les questions des clients. L'agent IA de votre site répond sur les horaires ou la carte, à partir de vos pages et de votre foire aux questions."
+  },
+  {
+   "key": "avis",
+   "text": "Après un souci, le client reçoit une demande d'avis. Vous mesurez sa satisfaction et vous voyez s'il vous recommande."
+  },
+  {
+   "key": "equipe",
+   "text": "Côté équipe, RapidoRH gère les projets, les congés et les dailies de chacun."
+  },
+  {
+   "key": "recap",
+   "text": "Fidélité, jeu, réseaux, réponses aux clients : vos habitués reviennent, et les nouveaux aussi."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : artisans et BTP."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "title": "Faire revenir ses habitués",
+   "em": "habitués",
+   "kicker": "Secteur · Restaurant"
+  },
+  {
+   "at": "fidelite",
+   "type": "points",
+   "title": "1 · La carte de fidélité",
+   "em": "fidélité",
+   "items": [
+    "Tampons ou points",
+    "Bonus de bienvenue",
+    "QR code scanné en caisse"
+   ]
+  },
+  {
+   "at": "jeu",
+   "type": "steps",
+   "title": "2 · Un jeu concours",
+   "em": "jeu",
+   "items": [
+    "QR code sur la table",
+    "Roue ou carte à gratter",
+    "Coordonnées récoltées"
+   ]
+  },
+  {
+   "at": "posts",
+   "type": "points",
+   "title": "3 · Vos réseaux",
+   "em": "réseaux",
+   "items": [
+    "Le plat du jour",
+    "Les coulisses",
+    "Un mois en une après-midi"
+   ]
+  },
+  {
+   "at": "questions",
+   "type": "points",
+   "title": "4 · Les questions",
+   "em": "questions",
+   "items": [
+    "Agent IA du site",
+    "Horaires, carte",
+    "Vos pages et votre FAQ"
+   ]
+  },
+  {
+   "at": "avis",
+   "type": "points",
+   "title": "Après un souci",
+   "em": "souci",
+   "items": [
+    "Demande d'avis",
+    "Satisfaction",
+    "Recommandation"
+   ]
+  },
+  {
+   "at": "equipe",
+   "type": "points",
+   "title": "Votre équipe",
+   "em": "équipe",
+   "items": [
+    "Projets",
+    "Congés",
+    "Dailies"
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Ils reviennent",
+   "em": "reviennent"
+  }
+ ]
+}

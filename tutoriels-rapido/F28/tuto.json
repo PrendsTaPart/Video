@@ -1,0 +1,128 @@
+{
+ "id": "F28",
+ "product": "suite",
+ "kicker": "Formation · Artisans & BTP",
+ "title": "Artisans et BTP",
+ "em": "BTP",
+ "tag": "1 min 30 · Secteur",
+ "end_cta": "Prochaine formation : agences et freelances",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Sur un chantier, chaque heure passée au bureau est une heure perdue. Voici comment Rapido réduit la paperasse des artisans."
+  },
+  {
+   "key": "devis",
+   "text": "Un : le devis en ligne. Votre client choisit vos prestations sur un formulaire, les prix sont relus dans votre catalogue, et le devis part tout seul en PDF."
+  },
+  {
+   "key": "signature",
+   "text": "Deux : la signature à distance. Le client signe son devis en ligne, sans imprimer ni scanner."
+  },
+  {
+   "key": "factures",
+   "text": "Trois : des factures conformes. Lignes, TVA, échéance : téléchargez-les en PDF ou en facture électronique Factur-X."
+  },
+  {
+   "key": "relances",
+   "text": "Quatre : les relances automatiques. Un, sept et quinze jours après l'échéance, RapidoCRM relance pour vous."
+  },
+  {
+   "key": "carte",
+   "text": "Sur le chantier, votre carte de visite digitale ou une puce NFC partage vos coordonnées et votre formulaire de devis d'un simple geste."
+  },
+  {
+   "key": "prospection",
+   "text": "Pour trouver de nouveaux clients, cherchez par métier et par ville, et enregistrez les entreprises sans doublon."
+  },
+  {
+   "key": "recap",
+   "text": "Devis en ligne, signature à distance, factures conformes, relances automatiques : moins de bureau, plus de chantier."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : agences et freelances."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "title": "Moins de bureau",
+   "em": "bureau",
+   "kicker": "Secteur · Artisans & BTP"
+  },
+  {
+   "at": "devis",
+   "type": "steps",
+   "title": "1 · Le devis en ligne",
+   "em": "devis",
+   "items": [
+    "Le client choisit",
+    "Prix relus au catalogue",
+    "PDF envoyé"
+   ]
+  },
+  {
+   "at": "signature",
+   "type": "points",
+   "title": "2 · La signature à distance",
+   "em": "signature",
+   "items": [
+    "Signé en ligne",
+    "Sans imprimer"
+   ]
+  },
+  {
+   "at": "factures",
+   "type": "points",
+   "title": "3 · Des factures conformes",
+   "em": "conformes",
+   "items": [
+    "TVA et échéance",
+    "PDF",
+    "Factur-X"
+   ]
+  },
+  {
+   "at": "relances",
+   "type": "steps",
+   "title": "4 · Les relances",
+   "em": "relances",
+   "items": [
+    "J+1",
+    "J+7",
+    "J+15"
+   ]
+  },
+  {
+   "at": "carte",
+   "type": "points",
+   "title": "Sur le chantier",
+   "em": "chantier",
+   "items": [
+    "Carte digitale",
+    "Puce NFC",
+    "Formulaire de devis"
+   ]
+  },
+  {
+   "at": "prospection",
+   "type": "points",
+   "title": "De nouveaux clients",
+   "em": "nouveaux",
+   "items": [
+    "Métier + ville",
+    "Sans doublon"
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Plus de chantier",
+   "em": "chantier"
+  }
+ ]
+}

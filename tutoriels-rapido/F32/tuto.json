@@ -1,0 +1,130 @@
+{
+ "id": "F32",
+ "product": "suite",
+ "kicker": "Formation · Services aux entreprises",
+ "title": "Services aux entreprises (PME)",
+ "em": "PME",
+ "tag": "1 min 30 · Secteur",
+ "end_cta": "Prochaine formation : santé et bien-être",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Une PME de services vit de ses contrats récurrents et de la qualité de son suivi. Voici comment Rapido structure les deux."
+  },
+  {
+   "key": "pipeline",
+   "text": "Un : un pipeline qui prévoit. Des étapes claires, une probabilité par étape, et un prévisionnel pondéré."
+  },
+  {
+   "key": "contrats",
+   "text": "Deux : des contrats suivis. Signés en ligne, signalés avant le préavis, et reconduits automatiquement quand c'est prévu."
+  },
+  {
+   "key": "facturation",
+   "text": "Trois : une facturation propre. Factures électroniques Factur-X, paiement par carte, relances automatiques des impayés."
+  },
+  {
+   "key": "sav",
+   "text": "Quatre : un service client mesuré. Chaque demande devient un ticket, avec un délai de réponse et un avis à la clôture."
+  },
+  {
+   "key": "equipe",
+   "text": "Votre équipe et vos employés IA travaillent sur les mêmes projets dans RapidoRH, et chaque livrable est validé par un humain."
+  },
+  {
+   "key": "ia",
+   "text": "Avec votre assistant IA : quels contrats arrivent à échéance ce trimestre ?"
+  },
+  {
+   "key": "recap",
+   "text": "Prévoir, contractualiser, facturer, servir : une PME pilotée, pas débordée."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : santé et bien-être."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "title": "Une PME pilotée",
+   "em": "pilotée",
+   "kicker": "Secteur · PME"
+  },
+  {
+   "at": "pipeline",
+   "type": "points",
+   "title": "1 · Le pipeline",
+   "em": "pipeline",
+   "items": [
+    "Étapes claires",
+    "Probabilités",
+    "Prévisionnel pondéré"
+   ]
+  },
+  {
+   "at": "contrats",
+   "type": "steps",
+   "title": "2 · Les contrats",
+   "em": "contrats",
+   "items": [
+    "Signés en ligne",
+    "Signalés avant le préavis",
+    "Reconduits"
+   ]
+  },
+  {
+   "at": "facturation",
+   "type": "points",
+   "title": "3 · La facturation",
+   "em": "facturation",
+   "items": [
+    "Factur-X",
+    "Paiement par carte",
+    "Relances"
+   ]
+  },
+  {
+   "at": "sav",
+   "type": "points",
+   "title": "4 · Le service client",
+   "em": "service",
+   "items": [
+    "Tickets",
+    "Délai de réponse",
+    "Avis à la clôture"
+   ]
+  },
+  {
+   "at": "equipe",
+   "type": "points",
+   "title": "Équipe et employés IA",
+   "em": "employés IA",
+   "items": [
+    "Mêmes projets",
+    "Validation humaine"
+   ]
+  },
+  {
+   "at": "ia",
+   "type": "prompt",
+   "title": "Demandez à votre IA",
+   "em": "IA",
+   "prompt": "Quels contrats arrivent à échéance ce trimestre ?",
+   "answer": [
+    "4 contrats arrivent à échéance.",
+    "2 se reconduisent tacitement.",
+    "2 arrivent à leur préavis : à décider."
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Pilotée, pas débordée",
+   "em": "pas débordée"
+  }
+ ]
+}
