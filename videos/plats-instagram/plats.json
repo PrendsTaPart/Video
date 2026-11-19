@@ -105,7 +105,7 @@
   "slug": "veloute",
   "nom": "Le velouté",
   "musique": "bistro",
-  "vo": null,
+  "vo": "vo-veloute.mp3",
   "plans": [
    [
     "veloute",
@@ -138,13 +138,16 @@
   ],
   "lignes": [
    [
-    "Un velouté<br><em>tout doux</em>"
+    "Un velouté<br><em>tout doux</em>",
+    "un"
    ],
    [
-    "Herbes fraîches,<br><em>une fleur</em>"
+    "Herbes fraîches,<br><em>une fleur</em>",
+    "quelques"
    ],
    [
-    "L'entrée<br><em>qui réchauffe</em>"
+    "L'entrée<br><em>qui réchauffe</em>",
+    "le"
    ]
   ],
   "titre": "Le velouté"
@@ -204,7 +207,7 @@
   "slug": "burger-poulet",
   "nom": "Burger au poulet & frites",
   "musique": "lounge",
-  "vo": null,
+  "vo": "vo-burger.mp3",
   "plans": [
    [
     "burger-poulet-frites",
@@ -237,13 +240,16 @@
   ],
   "lignes": [
    [
-    "Un burger au poulet,<br><em>généreux</em>"
+    "Un burger au poulet,<br><em>généreux</em>",
+    "un"
    ],
    [
-    "Le fromage<br><em>qui coule</em>"
+    "Le fromage<br><em>qui coule</em>",
+    "le"
    ],
    [
-    "Et ses frites,<br><em>bien dorées</em>"
+    "Et ses frites,<br><em>bien dorées</em>",
+    "et"
    ]
   ],
   "titre": "Burger au poulet<br>& frites"
@@ -252,7 +258,7 @@
   "slug": "jarret-agneau",
   "nom": "Jarret d'agneau & purée",
   "musique": "bistro",
-  "vo": null,
+  "vo": "vo-jarret.mp3",
   "plans": [
    [
     "jarret-agneau-puree",
@@ -285,13 +291,16 @@
   ],
   "lignes": [
    [
-    "Le jarret d'agneau,<br><em>nappé de son jus</em>"
+    "Le jarret d'agneau,<br><em>nappé de son jus</em>",
+    "le"
    ],
    [
-    "Une purée<br><em>toute onctueuse</em>"
+    "Une purée<br><em>toute onctueuse</em>",
+    "à"
    ],
    [
-    "Un plat<br><em>qui prend son temps</em>"
+    "Un plat<br><em>qui prend son temps</em>",
+    "un"
    ]
   ],
   "titre": "Jarret d'agneau<br>& purée"
@@ -300,7 +309,7 @@
   "slug": "supreme-poulet",
   "nom": "Suprême de poulet & gratin dauphinois",
   "musique": "bistro",
-  "vo": null,
+  "vo": "vo-supreme.mp3",
   "plans": [
    [
     "supreme-poulet-gratin-dauphinois",
@@ -333,13 +342,16 @@
   ],
   "lignes": [
    [
-    "Un suprême de poulet,<br><em>bien doré</em>"
+    "Un suprême de poulet,<br><em>bien doré</em>",
+    "un"
    ],
    [
-    "Un gratin dauphinois,<br><em>gratiné comme il faut</em>"
+    "Un gratin dauphinois,<br><em>gratiné comme il faut</em>",
+    "à"
    ],
    [
-    "Le réconfort,<br><em>tout simplement</em>"
+    "Le réconfort,<br><em>tout simplement</em>",
+    "le"
    ]
   ],
   "titre": "Suprême de poulet<br>& gratin dauphinois"
@@ -348,7 +360,7 @@
   "slug": "pain-perdu",
   "nom": "Brioche façon pain perdu",
   "musique": "dessert",
-  "vo": null,
+  "vo": "vo-pain-perdu.mp3",
   "plans": [
    [
     "pain-perdu-brioche-flambe-1",
@@ -381,13 +393,16 @@
   ],
   "lignes": [
    [
-    "La brioche…<br><em>et la flamme</em>"
+    "La brioche…<br><em>et la flamme</em>",
+    "la"
    ],
    [
-    "Fruits rouges,<br><em>banane, kiwi</em>"
+    "Fruits rouges,<br><em>banane, kiwi</em>",
+    "fruits"
    ],
    [
-    "Le dessert<br><em>qui fait tourner les têtes</em>"
+    "Le dessert<br><em>qui fait tourner les têtes</em>",
+    "le"
    ]
   ],
   "titre": "Brioche façon<br>pain perdu"
@@ -396,7 +411,7 @@
   "slug": "fondant-chocolat",
   "nom": "Fondant au chocolat & fruits frais",
   "musique": "dessert",
-  "vo": null,
+  "vo": "vo-fondant.mp3",
   "plans": [
    [
     "fondant-chocolat-fruits",
@@ -429,13 +444,16 @@
   ],
   "lignes": [
    [
-    "Un fondant<br><em>au chocolat</em>"
+    "Un fondant<br><em>au chocolat</em>",
+    "un"
    ],
    [
-    "Et tout autour,<br><em>des fruits frais</em>"
+    "Et tout autour,<br><em>des fruits frais</em>",
+    "et"
    ],
    [
-    "Pour finir<br><em>en douceur</em>"
+    "Pour finir<br><em>en douceur</em>",
+    "pour"
    ]
   ],
   "titre": "Fondant au chocolat<br>& fruits frais"

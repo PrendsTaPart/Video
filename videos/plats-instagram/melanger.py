@@ -3,9 +3,9 @@ import json, os, re, subprocess, sys
 D = os.path.dirname(os.path.abspath(__file__)); s = sys.argv[1]; W = f"{D}/work/{s}"
 P = {p["slug"]: p for p in json.load(open(f"{D}/plats.json"))}[s]
 C = json.loads(re.sub(r"^window\.CFG=|;$", "", open(f"{D}/cfg/{s}.js").read().strip()))
-MUS = {"magret": ("diner", 0), "veloute": ("diner", 4), "jarret-agneau": ("diner", 8), "supreme-poulet": ("diner", 11),
-       "foie-gras": ("stories", 0), "tagliatelles-burrata": ("stories", 11), "burger-poulet": ("stories", 21),
-       "pain-perdu": ("dessert", 2), "fondant-chocolat": ("dessert", 0)}
+MUS = {"magret": ("bistro", 0), "jarret-agneau": ("bistro", 3), "veloute": ("diner", 0), "supreme-poulet": ("diner", 8),
+       "foie-gras": ("lounge", 0), "tagliatelles-burrata": ("lounge", 4), "burger-poulet": ("stories", 0),
+       "pain-perdu": ("dessert", 0), "fondant-chocolat": ("dessert", 4)}
 m, off = MUS[s]; dur = C["dur"]; os.makedirs(f"{D}/final", exist_ok=True)
 def run(a): subprocess.run(["ffmpeg", "-y", "-v", "error", *a], check=True)
 mus = f"[m0]aresample=48000,atrim={off}:{off + dur},asetpts=PTS-STARTPTS,afade=t=in:d=0.4,afade=t=out:st={dur - 1.2}:d=1.2"
