@@ -292,15 +292,15 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] F08 — Définir sa cible et son fichier de prospects — PUBLIÉ (19/11)
 - [x] F09 — Prospection locale avec Google Maps et SIRET — PUBLIÉ (19/11)
 - [x] F10 — Le premier appel : script et qualification (agent vocal) — PUBLIÉ (19/11)
-- [x] F11 — Le cold email qui obtient des réponses (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
-- [x] F12 — Piloter son pipeline et ses prévisions (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
-- [x] F13 — Le devis qui se signe : présentation et relances (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
-- [x] F14 — Salons : avant, pendant, après (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
-- [x] F15 — Fidéliser : programmes, jeux concours, avis (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
-- [x] F40 — Transformer sa carte de visite en machine à prospects (carte digitale, NFC, devis en ligne) (script, voix générée — en file de rendu)
-- [x] F41 — Du lead magnet à la vente : construire son tunnel avec Claude (script, voix générée — en file de rendu)
-- [x] F42 — Fidélité digitale : tampons, parrainage et récompenses qui font revenir (script, voix générée — en file de rendu)
-- [x] F43 — Faire travailler son équipe IA : CRM + RapidoRH connectés (script, voix générée — en file de rendu)
+- [x] F11 — Le cold email qui obtient des réponses — PUBLIÉ
+- [x] F12 — Piloter son pipeline et ses prévisions — PUBLIÉ
+- [x] F13 — Le devis qui se signe : présentation et relances — PUBLIÉ
+- [x] F14 — Salons : avant, pendant, après — PUBLIÉ
+- [x] F15 — Fidéliser : programmes, jeux concours, avis — PUBLIÉ
+- [x] F40 — Transformer sa carte de visite en machine à prospects (carte digitale, NFC, devis en ligne) — PUBLIÉ
+- [x] F41 — Du lead magnet à la vente : construire son tunnel avec Claude — PUBLIÉ
+- [x] F42 — Fidélité digitale : tampons, parrainage et récompenses qui font revenir — PUBLIÉ
+- [x] F43 — Faire travailler son équipe IA : CRM + RapidoRH connectés — PUBLIÉ
 
 ### Gestion de projet & équipe
 - [x] F16 — Lancer un projet : découpage, rôles, échéances — PUBLIÉ (19/11)
@@ -310,12 +310,12 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] F20 — Gérer congés et charge de travail — PUBLIÉ (19/11)
 
 ### Intelligence artificielle
-- [x] F21 — Comprendre l'IA générative pour son entreprise (script, voix générée — en file de rendu)
-- [x] F22 — Bien écrire un prompt (script, voix générée — en file de rendu)
-- [x] F23 — Qu'est-ce qu'un connecteur MCP ? (script, voix générée — en file de rendu)
-- [x] F24 — Brancher la suite Rapido à Claude (script, voix générée — en file de rendu)
-- [x] F25 — Agents IA : déléguer sans perdre le contrôle (script, voix générée — en file de rendu)
-- [x] F26 — Automatiser avec les workflows Rapido (script, voix générée — en file de rendu)
+- [x] F21 — Comprendre l'IA générative pour son entreprise — PUBLIÉ
+- [x] F22 — Bien écrire un prompt — PUBLIÉ
+- [x] F23 — Qu'est-ce qu'un connecteur MCP ? — PUBLIÉ
+- [x] F24 — Brancher la suite Rapido à Claude — PUBLIÉ
+- [x] F25 — Agents IA : déléguer sans perdre le contrôle — PUBLIÉ
+- [x] F26 — Automatiser avec les workflows Rapido — PUBLIÉ
 
 ### Par secteur d'activité
 - [x] F27 — Restaurant & food : Rapido au quotidien — PUBLIÉ (19/11)
