@@ -251,9 +251,8 @@ EPISODES = {
         dict(at='canal', label='Une demande pour vous', hover='.sk-conv:has-text("marketing")', zone='.sk-conv:has-text("marketing")'),
         dict(at='repondre', label='Répondre dans le message', click='.sk-conv >> text=marketing', wait=0.8, zone='.sk-main .sk-ir', zone_closest='.sk-msg'),
         dict(at='repondre', fill=[['.sk-main .sk-ir input', 'Oui : douze photos sont dans le dossier partagé du projet.']]),
-        dict(at='deblocage', label='Répondu', click='.sk-main .sk-ir button:has-text("Répondre")', wait=1.0),
-        dict(at='deblocage', goto='/messagerie', click='.sk-conv >> text=marketing', wait=0.8, zone='.sk-main .sk-ir', zone_closest='.sk-msg'),
-        dict(at='outro', hover='.sk-main .sk-msg >> nth=-1', wait=0.3),
+        dict(at='deblocage', label='Votre réponse', click='.sk-main .sk-ir button:has-text("Répondre")', wait=1.2, zone='.sk-main .sk-msg >> nth=-1'),
+        dict(at='outro', label='Répondu', goto='/messagerie', click='.sk-conv >> text=marketing', wait=1.0, zone='.sk-main .sk-ir', zone_closest='.sk-msg'),
     ]),
 }
 
