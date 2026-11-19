@@ -100,14 +100,12 @@
       <div class="hl" id="hl1" style="left:230px;top:358px;width:264px;height:55px"></div>
       <div class="hl" id="hl2" style="left:468px;top:402px;width:1061px;height:129px"></div>
       <div class="hl" id="hl3" style="left:468px;top:505px;width:1061px;height:100px"></div>
-      <div class="hl" id="hl4" style="left:468px;top:368px;width:1061px;height:96px"></div>
     </div>
   </div>
   <div class="brand"><img src="assets/logo_icon.png" alt="">RapidoRH</div>
   <div class="chap" id="ch1"><b>1</b>Une demande pour vous</div>
   <div class="chap" id="ch2"><b>2</b>Répondre dans le message</div>
   <div class="chap" id="ch3"><b>3</b>Votre réponse</div>
-  <div class="chap" id="ch4"><b>4</b>Répondu</div>
   <div class="sub clip" id="s0" data-start="3.020" data-duration="1.050" data-track-index="7"><span>Dans ce tutoriel</span></div>
   <div class="sub clip" id="s1" data-start="4.170" data-duration="1.720" data-track-index="7"><span>un collaborateur répond à une demande</span></div>
   <div class="sub clip" id="s2" data-start="5.910" data-duration="1.850" data-track-index="7"><span>d&#x27;information dans la messagerie</span></div>
@@ -169,11 +167,6 @@
     .to('#hl3', { opacity: 0, duration: .35 }, 21.780)
     .fromTo('#ch3', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 17.340)
     .to('#ch3', { opacity: 0, x: -20, duration: .3 }, 21.730);
-  tl.to('#cam', { scale: 1.45, x: -568.1, y: -109.1, duration: 1.2, ease: 'power3.inOut' }, 21.980)
-    .fromTo('#hl4', { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(2)' }, 22.780)
-    .to('#hl4', { opacity: 0, duration: .35 }, 21.780)
-    .fromTo('#ch4', { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .5, ease: 'expo.out' }, 22.180)
-    .to('#ch4', { opacity: 0, x: -20, duration: .3 }, 21.730);
   tl.to('#cam', { scale: 1, x: 0, y: 0, duration: 1.2, ease: 'power3.inOut' }, 21.980);
   // Outro
   tl.from('#outro h2', { y: 60, opacity: 0, duration: .9, ease: 'expo.out' }, 26.710)

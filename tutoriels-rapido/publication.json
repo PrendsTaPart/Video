@@ -1618,5 +1618,15 @@
     "duree_s": 31,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH32.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH32.png"
+  },
+  {
+    "id": "RH33",
+    "produit": "rh",
+    "kicker": "Tutoriel RapidoRH",
+    "titre": "Répondre dans la messagerie",
+    "tag": "1 min · Débutant",
+    "duree_s": 31,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH33.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-RH33.png"
   }
 ]

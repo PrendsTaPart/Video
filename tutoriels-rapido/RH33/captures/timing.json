@@ -1,5 +1,5 @@
 {
-  "voiceStartInCapture": 4.74,
+  "voiceStartInCapture": 4.555,
   "paragraphs": {
     "intro": 0.02,
     "canal": 4.78,
@@ -26,12 +26,6 @@
       551,
       1157,
       109
-    ],
-    "outro": [
-      511,
-      402,
-      1157,
-      105
     ]
   }
 }
