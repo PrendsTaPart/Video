@@ -14,7 +14,7 @@ export const Teaser: React.FC<{fete: 'noel' | 'nye'}> = ({fete: cle}) => {
   const idx = Math.floor(f / cut);
   const photo = fete.teaser.photos[idx % fete.teaser.photos.length];
   const u = (f % cut) / cut;
-  const flash = interpolate(f % cut, [0, 2, 7], [0.5, 0.35, 0], clamp);
+  const flash = interpolate(f % cut, [0, 2, 6], [0.22, 0.14, 0], clamp);
 
   // Plage d'un bloc de texte : entrée en « punch » sur le temps, sortie à la plage suivante.
   const bloc = (d: number, fin: number) => {

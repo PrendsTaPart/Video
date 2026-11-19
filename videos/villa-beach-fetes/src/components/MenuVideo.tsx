@@ -118,7 +118,7 @@ export const MenuVideo: React.FC<{fete: 'noel' | 'nye'}> = ({fete: cle}) => {
                 <div style={{fontFamily: bebas, fontSize: 64 * k, letterSpacing: '0.12em', color: charte.creme, textAlign: 'center'}}>{restaurant.telephone}</div>
               </Ligne>
               <Ligne debut={d + 2 * TEMPS} fin={9999} style={{marginTop: 10 * k}}>
-                <div style={{fontFamily: cormorant, fontStyle: 'italic', fontSize: 44 * k, color: charte.creme, opacity: 0.9, textAlign: 'center', lineHeight: 1.2}}>
+                <div style={{fontFamily: cormorant, fontStyle: 'italic', fontSize: 50 * k, color: charte.creme, textAlign: 'center', lineHeight: 1.2}}>
                   {restaurant.nom} · {restaurant.lieu}<br />{restaurant.adresse}
                 </div>
               </Ligne>

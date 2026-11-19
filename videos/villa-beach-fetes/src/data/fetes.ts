@@ -66,7 +66,7 @@ export const fetes: Record<'noel' | 'nye', Fete> = {
     details: ['Boissons comprises', 'Du 20 au 25 décembre'],
     cta: 'Réservez votre table',
     compteARebours: false,
-    musique: { fichier: 'music-noel.mp3', debut: 0, volume: 0.8 },
+    musique: { fichier: 'music-noel.mp3', debut: 0, volume: 0.9 },
     teaser: {
       accroche: 'Noël à la Villa',
       mots: ['Places', 'limitées'],
@@ -101,7 +101,7 @@ export const fetes: Record<'noel' | 'nye', Fete> = {
     details: ['Champagne à minuit', "Club jusqu'à l'aube"],
     cta: 'Réservez votre table',
     compteARebours: true,
-    musique: { fichier: 'music-nye.mp3', debut: 16, volume: 0.8 },
+    musique: { fichier: 'music-nye.mp3', debut: 16, volume: 0.9 },
     teaser: {
       accroche: 'Réveillon à la Villa',
       mots: ['Places', 'limitées'],
