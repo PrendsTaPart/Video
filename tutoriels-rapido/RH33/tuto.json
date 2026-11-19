@@ -77,12 +77,8 @@
   },
   {
    "at": "outro",
-   "label": "Répondu",
-   "goto": "/messagerie",
-   "click": ".sk-conv >> text=marketing",
-   "wait": 1.0,
-   "zone": ".sk-main .sk-ir",
-   "zone_closest": ".sk-msg"
+   "hover": ".sk-main .sk-msg >> nth=-1",
+   "wait": 0.3
   }
  ],
  "thumb_shot": "fin.png"
