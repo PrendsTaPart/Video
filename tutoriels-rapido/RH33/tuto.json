@@ -1,0 +1,92 @@
+{
+ "id": "RH33",
+ "product": "rh",
+ "kicker": "Tutoriel RapidoRH",
+ "title": "Répondre dans la messagerie",
+ "em": "messagerie",
+ "tag": "1 min · Débutant",
+ "profil": "employe",
+ "login_as": "hugo@studio-demo.test",
+ "intro": 3.0,
+ "outro": 4.5,
+ "voice": "audio/voix.mp3",
+ "transcript": "audio/transcript.json",
+ "capture": "captures/ecran.mp4",
+ "start_path": "/messagerie",
+ "type_delay": 35,
+ "fixes": {
+  "Contrôle K": "Ctrl + K"
+ },
+ "end_cta": "Retrouvez tous les tutoriels sur rapidosoftware.com",
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Dans ce tutoriel, un collaborateur répond à une demande d'information dans la messagerie."
+  },
+  {
+   "key": "canal",
+   "text": "Les conversations qui contiennent une mention ou une demande pour vous sont signalées."
+  },
+  {
+   "key": "repondre",
+   "text": "Ouvrez la demande, écrivez votre réponse directement dans le message, puis envoyez."
+  },
+  {
+   "key": "deblocage",
+   "text": "La demande passe à Répondu : si une tâche l'attendait, elle repart aussitôt."
+  },
+  {
+   "key": "outro",
+   "text": "Une réaction ou un vu ne vaut pas validation : seule votre réponse compte."
+  }
+ ],
+ "scenes": [
+  {
+   "at": "intro",
+   "wait": 0.3
+  },
+  {
+   "at": "canal",
+   "label": "Une demande pour vous",
+   "hover": ".sk-conv:has-text(\"marketing\")",
+   "zone": ".sk-conv:has-text(\"marketing\")"
+  },
+  {
+   "at": "repondre",
+   "label": "Répondre dans le message",
+   "click": ".sk-conv >> text=marketing",
+   "wait": 0.8,
+   "zone": ".sk-main .sk-ir",
+   "zone_closest": ".sk-msg"
+  },
+  {
+   "at": "repondre",
+   "fill": [
+    [
+     ".sk-main .sk-ir input",
+     "Oui : douze photos sont dans le dossier partagé du projet."
+    ]
+   ]
+  },
+  {
+   "at": "deblocage",
+   "label": "Répondu",
+   "click": ".sk-main .sk-ir button:has-text(\"Répondre\")",
+   "wait": 1.0
+  },
+  {
+   "at": "deblocage",
+   "goto": "/messagerie",
+   "click": ".sk-conv >> text=marketing",
+   "wait": 0.8,
+   "zone": ".sk-main .sk-ir",
+   "zone_closest": ".sk-msg"
+  },
+  {
+   "at": "outro",
+   "hover": ".sk-main .sk-msg >> nth=-1",
+   "wait": 0.3
+  }
+ ],
+ "thumb_shot": "fin.png"
+}

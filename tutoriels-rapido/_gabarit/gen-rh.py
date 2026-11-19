@@ -19,7 +19,7 @@ HUGO = 'hugo@studio-demo.test'
 
 # Ordre de la série (le CTA de fin annonce l'épisode suivant).
 ORDRE = ['RH01', 'RH02', 'RH03', 'RH04', 'RH05', 'RH06', 'RH07', 'RH08', 'RH09', 'RH10', 'RH11', 'RH12', 'RH14',
-         'RH17', 'RH18', 'RH19', 'RH26', 'RH28', 'RH29', 'RH30', 'RH31', 'RH15', 'RH32']
+         'RH17', 'RH18', 'RH19', 'RH26', 'RH28', 'RH29', 'RH30', 'RH31', 'RH15', 'RH32', 'RH33']
 SUIVANT = {  # titre court de l'épisode suivant
     'RH01': 'le tableau de bord', 'RH02': 'ajouter ses collaborateurs', 'RH03': 'les départements',
     'RH04': 'rôles et permissions', 'RH05': 'créer un projet', 'RH06': 'le Kanban', 'RH07': "le détail d'une tâche",
@@ -245,6 +245,15 @@ EPISODES = {
                    [f'{M} textarea', 'Vacances d\'hiver en famille.']], zone=MODAL),
         dict(at='suivi', label='Le suivi', click=f'{M} button:has-text("Créer la demande")', wait=1.2, zone='table'),
         dict(at='outro', wait=0.2),
+    ]),
+    'RH33': dict(login=HUGO, start_path='/messagerie', scenes=[
+        dict(at='intro', wait=0.3),
+        dict(at='canal', label='Une demande pour vous', hover='.sk-conv:has-text("marketing")', zone='.sk-conv:has-text("marketing")'),
+        dict(at='repondre', label='Répondre dans le message', click='.sk-conv >> text=marketing', wait=0.8, zone='.sk-main .sk-ir', zone_closest='.sk-msg'),
+        dict(at='repondre', fill=[['.sk-main .sk-ir input', 'Oui : douze photos sont dans le dossier partagé du projet.']]),
+        dict(at='deblocage', label='Répondu', click='.sk-main .sk-ir button:has-text("Répondre")', wait=1.0),
+        dict(at='deblocage', goto='/messagerie', click='.sk-conv >> text=marketing', wait=0.8, zone='.sk-main .sk-ir', zone_closest='.sk-msg'),
+        dict(at='outro', hover='.sk-main .sk-msg >> nth=-1', wait=0.3),
     ]),
 }
 

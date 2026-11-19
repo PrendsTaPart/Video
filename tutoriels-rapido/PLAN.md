@@ -253,10 +253,10 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] RH10 — Les dailies
 - [x] RH11 — Agenda
 - [x] RH12 — Rendez-vous
-- [ ] RH13 — Pointage des horaires
+- [ ] RH13 — Pointage des horaires (bloqué, 19/11 : l’écran « Gestion des horraires » est une maquette sans backend — collaborateurs et pagination écrits en dur, aucun appel serveur, aucun horaire enregistré ; titre mal orthographié. À construire dans RapidoRH avec l’accord de Michael)
 - [x] RH14 — Congés
 - [x] RH15 — Espace collaborateur (vue membre)
-- [ ] RH16 — Modèles d'emails
+- [ ] RH16 — Modèles d’e-mails (bloqué, 19/11 : « Templates emails onboarding » est un aperçu de développement « avant intégration backend » — les boutons d’envoi n’appellent aucun serveur. À brancher dans RapidoRH avec l’accord de Michael)
 - [x] RH17 — Notifications (email, WhatsApp)
 - [x] RH18 — Abonnement et facturation
 - [x] RH19 — Connecter RapidoRH à Claude (MCP)
@@ -524,3 +524,10 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
   - casse : première lettre forcée par le thème sur les écrans `sites-ecran` (adresses e-mail), Score des prospects.
 - Tutoriels : CRM77 blog publié (2e prise : cadrage des commentaires) ; CRM73 (2e prise : questions saisies d'un coup), CRM74, CRM90 en cours.
 - Copie de tournage : `APP_URL=http://127.0.0.1:8124` (liens des sources de l'agent), resynchronisée par `tar` (pas de rsync dans le conteneur).
+
+## Journal — 19/11, après-midi
+- Les 21 formations (F03–F10, F16–F20, F27–F34) sont rendues, vérifiées sur planche et publiées (RapidoCMS, publication.json, Académie : 162 épisodes).
+- RH13 et RH16 bloqués : écrans maquettes sans backend dans RapidoRH (voir les lignes RH13 / RH16). Aucun tutoriel tourné sur une fonction qui n'enregistre rien.
+- RH33 : scènes ajoutées dans `gen-rh.py`, demande fictive créée par `_gabarit/avant-RH33.sh` (Camille → Hugo, #marketing, tâche « Photos des produits phares »). Voix : une prise, 416 crédits.
+- Bug RapidoRH (non corrigé, code RapidoRH = accord de Michael) : après « Répondre » à une demande d'information, la réponse s'affiche mais la demande garde « En attente de réponse » et son champ jusqu'à la réouverture de la conversation (`Messaging.vue::answer()` appelle `poll()`, qui n'actualise pas le message de la demande). En base, le statut passe bien à `answered` et la tâche liée est relancée (`MessagingService::unblock`). Le tutoriel rouvre la conversation pour montrer « Répondu ».
+- Rappel : PostgreSQL peut être arrêté au redémarrage du conteneur (`service postgresql start` avant de tourner RapidoRH sur 8126 ; mot de passe démo RH : `Demo-Tuto-2026!`).
