@@ -1,0 +1,127 @@
+{
+ "id": "F29",
+ "product": "suite",
+ "kicker": "Formation · Agences & freelances",
+ "title": "Agences et freelances",
+ "em": "freelances",
+ "tag": "1 min 30 · Secteur",
+ "end_cta": "Prochaine formation : le commerce de proximité",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Une agence ou un freelance vend son temps. Voici comment Rapido vous en fait gagner, de la prospection à la livraison."
+  },
+  {
+   "key": "attirer",
+   "text": "Un : attirer. Un guide gratuit à télécharger, un article de blog bien référencé, et vos prospects viennent à vous."
+  },
+  {
+   "key": "suivre",
+   "text": "Deux : suivre. Une séquence d'e-mails relance chaque prospect au bon rythme, et s'arrête dès qu'il répond."
+  },
+  {
+   "key": "signer",
+   "text": "Trois : signer. Devis et contrat se signent en ligne, avec un document figé et un certificat de signature."
+  },
+  {
+   "key": "livrer",
+   "text": "Quatre : livrer. Dans RapidoRH, le projet est découpé en listes et en tâches, partagé avec votre client, et vos employés IA prennent leur part."
+  },
+  {
+   "key": "portail",
+   "text": "Votre client retrouve ses devis, ses factures et ses demandes dans son portail, avec un simple lien."
+  },
+  {
+   "key": "ia",
+   "text": "Avec votre assistant IA : où en est le projet du client, et qu'est-ce qui reste à facturer ?"
+  },
+  {
+   "key": "recap",
+   "text": "Attirer, suivre, signer, livrer : chaque étape a son outil, et vous gardez du temps pour le travail qui compte."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : le commerce de proximité."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "title": "Gagner du temps",
+   "em": "temps",
+   "kicker": "Secteur · Agences & freelances"
+  },
+  {
+   "at": "attirer",
+   "type": "points",
+   "title": "1 · Attirer",
+   "em": "Attirer",
+   "items": [
+    "Un guide gratuit",
+    "Un article de blog"
+   ]
+  },
+  {
+   "at": "suivre",
+   "type": "points",
+   "title": "2 · Suivre",
+   "em": "Suivre",
+   "items": [
+    "Séquence d'e-mails",
+    "Arrêt dès la réponse"
+   ]
+  },
+  {
+   "at": "signer",
+   "type": "points",
+   "title": "3 · Signer",
+   "em": "Signer",
+   "items": [
+    "Devis et contrat en ligne",
+    "Certificat de signature"
+   ]
+  },
+  {
+   "at": "livrer",
+   "type": "steps",
+   "title": "4 · Livrer",
+   "em": "Livrer",
+   "items": [
+    "Projet découpé",
+    "Partagé avec le client",
+    "Employés IA"
+   ]
+  },
+  {
+   "at": "portail",
+   "type": "points",
+   "title": "Le portail client",
+   "em": "portail",
+   "items": [
+    "Devis",
+    "Factures",
+    "Demandes"
+   ]
+  },
+  {
+   "at": "ia",
+   "type": "prompt",
+   "title": "Demandez à votre IA",
+   "em": "IA",
+   "prompt": "Où en est le projet du client, et qu'est-ce qui reste à facturer ?",
+   "answer": [
+    "Projet : 12 tâches sur 15 terminées.",
+    "Reste à facturer : la phase 2, 2 400 € HT."
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Du temps pour ce qui compte",
+   "em": "ce qui compte"
+  }
+ ]
+}
