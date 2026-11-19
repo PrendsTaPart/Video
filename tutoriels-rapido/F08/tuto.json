@@ -1,0 +1,139 @@
+{
+ "id": "F08",
+ "product": "crm",
+ "kicker": "Formation · Commercial",
+ "title": "Définir sa cible et son fichier de prospects",
+ "em": "cible",
+ "tag": "1 min 30 · Méthode",
+ "end_cta": "Prochaine formation : la prospection locale avec Google Maps et le SIRET",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Prospecter tout le monde, c'est ne convaincre personne. Voici comment définir votre cible et tenir un fichier propre dans RapidoCRM."
+  },
+  {
+   "key": "portrait",
+   "text": "Un : dessinez votre client idéal. Un secteur d'activité, une zone, une taille, et le problème que vous résolvez pour lui."
+  },
+  {
+   "key": "segment",
+   "text": "Deux : traduisez-le en segment. Secteur, ville, code postal, étape du pipeline : combinez les critères avec et, ou. Le compteur vous dit aussitôt combien de contacts correspondent."
+  },
+  {
+   "key": "score",
+   "text": "Trois : laissez le score trier. Chaque ouverture, clic ou formulaire rapporte des points. Au-delà de soixante, le prospect devient chaud et une tâche de rappel est créée pour vous."
+  },
+  {
+   "key": "propre",
+   "text": "Quatre : gardez un fichier propre. RapidoCRM repère les doublons par SIRET, e-mail ou téléphone, et vous les fusionnez sans perdre l'historique."
+  },
+  {
+   "key": "repartition",
+   "text": "En équipe, les nouveaux prospects se répartissent tout seuls : à tour de rôle, ou vers le commercial le moins chargé."
+  },
+  {
+   "key": "ia",
+   "text": "Et si votre assistant IA est connecté, demandez-lui : quels sont mes prospects chauds cette semaine ?"
+  },
+  {
+   "key": "recap",
+   "text": "Un portrait précis, un segment vivant, un score qui trie : vous appelez les bonnes personnes au bon moment."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : la prospection locale avec Google Maps et le SIRET."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "kicker": "Commercial · Ciblage",
+   "title": "La bonne cible, le bon fichier",
+   "em": "cible"
+  },
+  {
+   "at": "portrait",
+   "type": "points",
+   "title": "1 · Le client idéal",
+   "em": "idéal",
+   "items": [
+    "Un secteur d'activité",
+    "Une zone",
+    "Une taille",
+    "Le problème que vous résolvez"
+   ]
+  },
+  {
+   "at": "segment",
+   "type": "steps",
+   "title": "2 · Un segment vivant",
+   "em": "segment",
+   "items": [
+    "Secteur d'activité",
+    "Ville ou code postal",
+    "Étape du pipeline",
+    "ET / OU",
+    "Compteur en direct"
+   ]
+  },
+  {
+   "at": "score",
+   "type": "compare",
+   "title": "3 · Le score trie pour vous",
+   "em": "score",
+   "left": [
+    "Froid",
+    "Moins de 60 points",
+    "On nourrit"
+   ],
+   "right": [
+    "Chaud",
+    "60 points et plus",
+    "Tâche de rappel créée"
+   ]
+  },
+  {
+   "at": "propre",
+   "type": "points",
+   "title": "4 · Un fichier propre",
+   "em": "propre",
+   "items": [
+    "Doublons par SIRET",
+    "Par e-mail ou téléphone",
+    "Fusion sans perte d'historique"
+   ]
+  },
+  {
+   "at": "repartition",
+   "type": "points",
+   "title": "En équipe",
+   "em": "équipe",
+   "items": [
+    "À tour de rôle",
+    "Ou au moins chargé",
+    "Un responsable par prospect"
+   ]
+  },
+  {
+   "at": "ia",
+   "type": "prompt",
+   "title": "Demandez à votre IA",
+   "em": "IA",
+   "prompt": "Quels sont mes prospects chauds cette semaine ?",
+   "answer": [
+    "4 prospects au-dessus de 60 points.",
+    "Atelier Garonne : 82 points, devis consulté hier.",
+    "Je vous propose de les rappeler dans cet ordre."
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Les bonnes personnes, au bon moment",
+   "em": "bon moment"
+  }
+ ]
+}

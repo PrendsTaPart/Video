@@ -1,0 +1,138 @@
+{
+ "id": "F10",
+ "product": "crm",
+ "kicker": "Formation · Commercial",
+ "title": "Le premier appel : script et qualification",
+ "em": "premier appel",
+ "tag": "1 min 30 · Méthode",
+ "end_cta": "Retrouvez toutes les formations dans l'Académie RapidoSoftware",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Le premier appel décide souvent de tout. Voici comment le préparer, que vous appeliez vous-même ou que l'agent vocal de RapidoCRM appelle pour vous."
+  },
+  {
+   "key": "objectif",
+   "text": "Un : un seul objectif par appel. Un rendez-vous, un devis, une démo, ou simplement qualifier. Dans l'agent vocal, c'est le premier réglage."
+  },
+  {
+   "key": "pitch",
+   "text": "Deux : un pitch de deux phrases. Qui vous êtes, et ce que vous changez pour ce type de client. Le ton aussi se choisit : professionnel, chaleureux ou dynamique."
+  },
+  {
+   "key": "qualifier",
+   "text": "Trois : quatre questions pour qualifier. Quel est le besoin ? Pour quand ? Qui décide ? Quel budget ?"
+  },
+  {
+   "key": "suite",
+   "text": "Quatre : finir sur une suite datée. L'agent vocal propose un créneau, et le rendez-vous arrive directement dans votre agenda."
+  },
+  {
+   "key": "trace",
+   "text": "Après chaque appel, la transcription et un résumé sont dans le journal. Analysez l'appel pour en tirer les tâches et les contacts cités."
+  },
+  {
+   "key": "ia",
+   "text": "Avec votre assistant IA : appelle les restaurants de Bordeaux de mon fichier et propose-leur un rendez-vous."
+  },
+  {
+   "key": "recap",
+   "text": "Un objectif, un pitch court, quatre questions et une suite datée : chaque appel fait avancer une affaire."
+  },
+  {
+   "key": "outro",
+   "text": "Retrouvez toutes nos formations dans l'Académie !"
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "kicker": "Commercial · Appel",
+   "title": "Le premier appel",
+   "em": "premier appel"
+  },
+  {
+   "at": "objectif",
+   "type": "points",
+   "title": "1 · Un seul objectif",
+   "em": "objectif",
+   "items": [
+    "Rendez-vous",
+    "Devis",
+    "Démo",
+    "Qualification"
+   ]
+  },
+  {
+   "at": "pitch",
+   "type": "points",
+   "title": "2 · Un pitch de deux phrases",
+   "em": "pitch",
+   "items": [
+    "Qui vous êtes",
+    "Ce que vous changez",
+    "Ton : professionnel, chaleureux ou dynamique"
+   ]
+  },
+  {
+   "at": "qualifier",
+   "type": "steps",
+   "title": "3 · Quatre questions",
+   "em": "questions",
+   "items": [
+    "Quel besoin ?",
+    "Pour quand ?",
+    "Qui décide ?",
+    "Quel budget ?"
+   ]
+  },
+  {
+   "at": "suite",
+   "type": "compare",
+   "title": "4 · Une suite datée",
+   "em": "datée",
+   "left": [
+    "« Je vous rappelle »",
+    "Rien de prévu",
+    "L'affaire refroidit"
+   ],
+   "right": [
+    "« Mardi à 10 h ? »",
+    "Rendez-vous créé",
+    "Dans votre agenda"
+   ]
+  },
+  {
+   "at": "trace",
+   "type": "points",
+   "title": "Après l'appel",
+   "em": "Après",
+   "items": [
+    "Transcription",
+    "Résumé",
+    "Analyse : tâches et contacts"
+   ]
+  },
+  {
+   "at": "ia",
+   "type": "prompt",
+   "title": "Demandez à votre IA",
+   "em": "IA",
+   "prompt": "Appelle les restaurants de Bordeaux de mon fichier et propose-leur un rendez-vous.",
+   "answer": [
+    "8 restaurants de Bordeaux dans votre fichier.",
+    "Appels lancés par l'agent vocal.",
+    "Les rendez-vous pris arriveront dans votre agenda."
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Chaque appel fait avancer une affaire",
+   "em": "avancer"
+  }
+ ]
+}

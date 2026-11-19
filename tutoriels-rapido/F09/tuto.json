@@ -1,0 +1,136 @@
+{
+ "id": "F09",
+ "product": "crm",
+ "kicker": "Formation · Commercial",
+ "title": "Prospection locale avec Google Maps et le SIRET",
+ "em": "locale",
+ "tag": "1 min 30 · Méthode",
+ "end_cta": "Prochaine formation : le premier appel, script et qualification",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Vos meilleurs clients sont peut-être à dix minutes de chez vous. Voici comment les trouver avec la prospection de RapidoCRM."
+  },
+  {
+   "key": "maps",
+   "text": "Un : cherchez par métier et par ville. Restaurants à Bordeaux, plombiers à Lyon : RapidoCRM interroge Google Maps et vous rend une liste avec l'adresse, le téléphone et le site."
+  },
+  {
+   "key": "siret",
+   "text": "Deux : vérifiez avec le SIRET. Une recherche par nom ou par numéro vous donne l'identité légale de l'entreprise et son code d'activité."
+  },
+  {
+   "key": "trier",
+   "text": "Trois : triez avant d'enregistrer. Gardez ceux qui correspondent à votre cible, pas toute la liste."
+  },
+  {
+   "key": "enregistrer",
+   "text": "Quatre : enregistrez, un par un ou en une fois. Si l'entreprise existe déjà dans votre CRM, vous êtes prévenu : pas de doublon."
+  },
+  {
+   "key": "pipeline",
+   "text": "Chaque prospect enregistré garde son origine, prospection, entre dans votre pipeline et gagne ses premiers points de score."
+  },
+  {
+   "key": "ia",
+   "text": "Avec votre assistant IA, une phrase suffit : trouve-moi les fleuristes de Nantes et enregistre ceux qui ont un site."
+  },
+  {
+   "key": "recap",
+   "text": "Chercher local, vérifier, trier, enregistrer : un fichier de prospects propre en quelques minutes."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : le premier appel, script et qualification."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "kicker": "Commercial · Prospection",
+   "title": "Vos clients sont tout près",
+   "em": "tout près"
+  },
+  {
+   "at": "maps",
+   "type": "points",
+   "title": "1 · Métier + ville",
+   "em": "ville",
+   "items": [
+    "Restaurants à Bordeaux",
+    "Adresse et téléphone",
+    "Site web"
+   ]
+  },
+  {
+   "at": "siret",
+   "type": "points",
+   "title": "2 · Vérifier avec le SIRET",
+   "em": "SIRET",
+   "items": [
+    "Par nom ou par numéro",
+    "Identité légale",
+    "Code d'activité"
+   ]
+  },
+  {
+   "at": "trier",
+   "type": "compare",
+   "title": "3 · Trier avant d'enregistrer",
+   "em": "Trier",
+   "left": [
+    "Toute la liste",
+    "Fichier qui gonfle",
+    "Appels perdus"
+   ],
+   "right": [
+    "Votre cible",
+    "Fichier utile",
+    "Appels qui comptent"
+   ]
+  },
+  {
+   "at": "enregistrer",
+   "type": "steps",
+   "title": "4 · Enregistrer sans doublon",
+   "em": "sans doublon",
+   "items": [
+    "Un par un",
+    "Ou tous d'un coup",
+    "Déjà dans le CRM ? Prévenu"
+   ]
+  },
+  {
+   "at": "pipeline",
+   "type": "points",
+   "title": "Et ensuite",
+   "em": "ensuite",
+   "items": [
+    "Origine : prospection",
+    "Entrée dans le pipeline",
+    "Premiers points de score"
+   ]
+  },
+  {
+   "at": "ia",
+   "type": "prompt",
+   "title": "Demandez à votre IA",
+   "em": "IA",
+   "prompt": "Trouve-moi les fleuristes de Nantes et enregistre ceux qui ont un site.",
+   "answer": [
+    "12 fleuristes trouvés à Nantes.",
+    "7 ont un site web : je les enregistre.",
+    "1 existait déjà dans votre CRM : ignoré."
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Un fichier propre en quelques minutes",
+   "em": "quelques minutes"
+  }
+ ]
+}
