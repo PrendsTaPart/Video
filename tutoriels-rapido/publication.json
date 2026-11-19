@@ -1090,6 +1090,16 @@
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F19.png"
   },
   {
+    "id": "F20",
+    "produit": "rh",
+    "kicker": "Formation · Projet & équipe",
+    "titre": "Gérer congés et charge de travail",
+    "tag": "1 min 30 · Méthode",
+    "duree_s": 67,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F20.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F20.png"
+  },
+  {
     "id": "F21",
     "produit": "suite",
     "kicker": "Formation · IA",
@@ -1148,6 +1158,26 @@
     "duree_s": 62,
     "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F26.mp4",
     "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F26.png"
+  },
+  {
+    "id": "F27",
+    "produit": "suite",
+    "kicker": "Formation · Restaurant & food",
+    "titre": "Restaurant : Rapido au quotidien",
+    "tag": "1 min 30 · Secteur",
+    "duree_s": 69,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F27.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F27.png"
+  },
+  {
+    "id": "F28",
+    "produit": "suite",
+    "kicker": "Formation · Artisans & BTP",
+    "titre": "Artisans et BTP",
+    "tag": "1 min 30 · Secteur",
+    "duree_s": 68,
+    "video": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F28.mp4",
+    "miniature": "https://rapido-software.s3.eu-west-3.amazonaws.com/rapidosoftware/cms/bibliotheque/tutoriel-rapido-F28.png"
   },
   {
     "id": "F40",

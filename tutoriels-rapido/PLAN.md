@@ -307,7 +307,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] F17 — Le Kanban au quotidien — PUBLIÉ (19/11)
 - [x] F18 — Le daily efficace en 5 minutes — PUBLIÉ (19/11)
 - [x] F19 — Intégrer un nouveau collaborateur — PUBLIÉ (19/11)
-- [~] F20 — Gérer congés et charge de travail (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F20 — Gérer congés et charge de travail — PUBLIÉ (19/11)
 
 ### Intelligence artificielle
 - [x] F21 — Comprendre l'IA générative pour son entreprise (script, voix générée — en file de rendu)
@@ -318,8 +318,8 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] F26 — Automatiser avec les workflows Rapido (script, voix générée — en file de rendu)
 
 ### Par secteur d'activité
-- [~] F27 — Restaurant & food : Rapido au quotidien (19/11 : script vérifié dans le code, voix générée — en file de rendu)
-- [~] F28 — Artisans & BTP (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [x] F27 — Restaurant & food : Rapido au quotidien — PUBLIÉ (19/11)
+- [x] F28 — Artisans & BTP — PUBLIÉ (19/11)
 - [~] F29 — Agences & freelances (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 - [~] F30 — Commerce de proximité (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 - [~] F31 — Immobilier (19/11 : script vérifié dans le code, voix générée — en file de rendu)
