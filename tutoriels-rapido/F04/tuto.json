@@ -1,0 +1,137 @@
+{
+ "id": "F04",
+ "product": "cms",
+ "kicker": "Formation · Marketing",
+ "title": "Des visuels de marque cohérents",
+ "em": "cohérents",
+ "tag": "1 min 30 · Méthode",
+ "end_cta": "Prochaine formation : lire ses statistiques et décider quoi refaire",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Un visuel reconnaissable au premier coup d'œil, c'est une marque qui reste en mémoire. Tout commence par le kit de marque de RapidoCMS."
+  },
+  {
+   "key": "kit",
+   "text": "Un : remplissez votre kit de marque. Votre nom, votre slogan, votre langue, votre logo et votre site."
+  },
+  {
+   "key": "couleurs",
+   "text": "Deux : fixez vos couleurs et votre police. Deux ou trois couleurs, une seule police : c'est la règle des marques qu'on reconnaît."
+  },
+  {
+   "key": "ia",
+   "text": "Trois : générez vos visuels à partir du kit. L'IA crée des images, ou transforme vos propres photos, en respectant vos couleurs."
+  },
+  {
+   "key": "regle",
+   "text": "Quatre : une règle simple pour vos publications. Alternez vos vraies photos, d'équipe, de clients, de coulisses, avec des visuels générés."
+  },
+  {
+   "key": "bibliotheque",
+   "text": "Rangez tout dans votre bibliothèque de fichiers : chaque brouillon y puise ses images, et rien ne se perd."
+  },
+  {
+   "key": "assistant",
+   "text": "Avec votre assistant IA : crée un visuel pour notre offre de printemps, aux couleurs de la marque."
+  },
+  {
+   "key": "recap",
+   "text": "Un kit complet, deux couleurs, une police, des photos vraies : votre marque devient reconnaissable."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : lire ses statistiques et décider quoi refaire."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "kicker": "Marketing · Marque",
+   "title": "Des visuels qu'on reconnaît",
+   "em": "reconnaît"
+  },
+  {
+   "at": "kit",
+   "type": "points",
+   "title": "1 · Le kit de marque",
+   "em": "kit",
+   "items": [
+    "Nom et slogan",
+    "Langue",
+    "Logo",
+    "Site web"
+   ]
+  },
+  {
+   "at": "couleurs",
+   "type": "compare",
+   "title": "2 · Couleurs et police",
+   "em": "Couleurs",
+   "left": [
+    "Six couleurs",
+    "Trois polices",
+    "On ne vous reconnaît pas"
+   ],
+   "right": [
+    "Deux ou trois couleurs",
+    "Une police",
+    "On vous reconnaît"
+   ]
+  },
+  {
+   "at": "ia",
+   "type": "points",
+   "title": "3 · Visuels générés",
+   "em": "générés",
+   "items": [
+    "Images créées par l'IA",
+    "Vos photos transformées",
+    "Toujours à vos couleurs"
+   ]
+  },
+  {
+   "at": "regle",
+   "type": "steps",
+   "title": "4 · L'alternance",
+   "em": "alternance",
+   "items": [
+    "Photo d'équipe",
+    "Visuel généré",
+    "Photo client",
+    "Visuel généré"
+   ]
+  },
+  {
+   "at": "bibliotheque",
+   "type": "points",
+   "title": "La bibliothèque",
+   "em": "bibliothèque",
+   "items": [
+    "Toutes vos images",
+    "Réutilisées dans les brouillons",
+    "Rien ne se perd"
+   ]
+  },
+  {
+   "at": "assistant",
+   "type": "prompt",
+   "title": "Demandez à votre IA",
+   "em": "IA",
+   "prompt": "Crée un visuel pour notre offre de printemps, aux couleurs de la marque.",
+   "answer": [
+    "Kit de marque lu : vert et crème, police Georgia.",
+    "Visuel créé et ajouté à votre bibliothèque."
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Une marque reconnaissable",
+   "em": "reconnaissable"
+  }
+ ]
+}

@@ -1,0 +1,136 @@
+{
+ "id": "F07",
+ "product": "crm",
+ "kicker": "Formation · Marketing",
+ "title": "Communication de crise et avis négatifs",
+ "em": "avis négatifs",
+ "tag": "1 min 30 · Méthode",
+ "end_cta": "Retrouvez toutes les formations dans l'Académie RapidoSoftware",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Un client mécontent, un avis négatif, une livraison ratée : ce n'est pas la fin. C'est la manière de répondre qui fait la différence."
+  },
+  {
+   "key": "vite",
+   "text": "Un : répondez vite. Dans RapidoCRM, chaque demande devient un ticket avec un délai de réponse. S'il est dépassé, vous êtes alerté."
+  },
+  {
+   "key": "ecouter",
+   "text": "Deux : écoutez avant de répondre. Toute la conversation est dans la boîte de réception : e-mails, SMS, chat du site. Vous répondez en connaissant l'histoire."
+  },
+  {
+   "key": "reponse",
+   "text": "Trois : une réponse en trois temps. Je comprends, voici ce qui s'est passé, voici ce que je fais pour vous. Sans vous justifier, sans accuser."
+  },
+  {
+   "key": "humain",
+   "text": "Quatre : un humain répond. Vos réponses types font gagner du temps, mais chaque message au client part de l'écran, relu par une personne."
+  },
+  {
+   "key": "apres",
+   "text": "Une fois le problème réglé, le client reçoit une demande d'avis. Vous mesurez sa satisfaction et sa recommandation, et vous voyez si la confiance revient."
+  },
+  {
+   "key": "crise",
+   "text": "En cas de crise, un seul message clair, publié tôt, vaut mieux que dix réponses improvisées. Préparez-le avant d'en avoir besoin."
+  },
+  {
+   "key": "recap",
+   "text": "Vite, à l'écoute, en trois temps, par un humain : un avis négatif peut devenir une preuve de sérieux."
+  },
+  {
+   "key": "outro",
+   "text": "Retrouvez toutes nos formations dans l'Académie !"
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "kicker": "Marketing · Relation client",
+   "title": "Quand ça se passe mal",
+   "em": "mal"
+  },
+  {
+   "at": "vite",
+   "type": "points",
+   "title": "1 · Répondre vite",
+   "em": "vite",
+   "items": [
+    "Chaque demande = un ticket",
+    "Un délai de réponse",
+    "Alerte si dépassé"
+   ]
+  },
+  {
+   "at": "ecouter",
+   "type": "points",
+   "title": "2 · Écouter d'abord",
+   "em": "Écouter",
+   "items": [
+    "E-mails",
+    "SMS",
+    "Chat du site",
+    "Une seule boîte de réception"
+   ]
+  },
+  {
+   "at": "reponse",
+   "type": "steps",
+   "title": "3 · Une réponse en trois temps",
+   "em": "trois temps",
+   "items": [
+    "Je comprends",
+    "Voici ce qui s'est passé",
+    "Voici ce que je fais"
+   ]
+  },
+  {
+   "at": "humain",
+   "type": "compare",
+   "title": "4 · Un humain répond",
+   "em": "humain",
+   "left": [
+    "Réponse automatique",
+    "Ton froid",
+    "Colère qui monte"
+   ],
+   "right": [
+    "Réponse type relue",
+    "Envoyée par une personne",
+    "Client écouté"
+   ]
+  },
+  {
+   "at": "apres",
+   "type": "points",
+   "title": "Après",
+   "em": "Après",
+   "items": [
+    "Demande d'avis",
+    "Satisfaction",
+    "Recommandation de 0 à 10"
+   ]
+  },
+  {
+   "at": "crise",
+   "type": "points",
+   "title": "En cas de crise",
+   "em": "crise",
+   "items": [
+    "Un seul message clair",
+    "Publié tôt",
+    "Préparé à l'avance"
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Un avis négatif, une preuve de sérieux",
+   "em": "preuve de sérieux"
+  }
+ ]
+}

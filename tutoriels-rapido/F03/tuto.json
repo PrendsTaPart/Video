@@ -1,0 +1,138 @@
+{
+ "id": "F03",
+ "product": "cms",
+ "kicker": "Formation · Marketing",
+ "title": "Écrire un post qui engage",
+ "em": "engage",
+ "tag": "1 min 30 · Méthode",
+ "end_cta": "Prochaine formation : des visuels de marque cohérents",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Un post qui engage ne doit rien au hasard. Il suit une structure simple, que vous pouvez appliquer à chaque publication dans RapidoCMS."
+  },
+  {
+   "key": "accroche",
+   "text": "Un : l'accroche. Elle tient en une ligne et donne envie de lire la suite : une question, un chiffre, ou une situation que votre client connaît par cœur."
+  },
+  {
+   "key": "corps",
+   "text": "Deux : le corps. Une seule idée, des phrases courtes, et une anecdote vraie. C'est elle qui rend le post unique."
+  },
+  {
+   "key": "appel",
+   "text": "Trois : l'appel à l'action. Dites ce que vous attendez : commenter, réserver, télécharger le guide. Un seul appel, pas trois."
+  },
+  {
+   "key": "reseau",
+   "text": "Quatre : adaptez au réseau. LinkedIn, Facebook, Instagram, TikTok : chaque brouillon de RapidoCMS se prépare pour un réseau précis, avec du texte, un visuel, ou les deux."
+  },
+  {
+   "key": "prompts",
+   "text": "Gardez vos meilleures demandes à l'IA dans votre bibliothèque de prompts : vous les réutilisez à chaque nouveau post."
+  },
+  {
+   "key": "ia",
+   "text": "Avec votre assistant IA : écris trois accroches pour un post LinkedIn sur notre nouvelle offre, et crée le brouillon."
+  },
+  {
+   "key": "recap",
+   "text": "Une accroche, une idée, une anecdote, un appel : votre post se lit jusqu'au bout."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : des visuels de marque cohérents."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "kicker": "Marketing · Rédaction",
+   "title": "Un post qui engage",
+   "em": "engage"
+  },
+  {
+   "at": "accroche",
+   "type": "points",
+   "title": "1 · L'accroche",
+   "em": "accroche",
+   "items": [
+    "Une question",
+    "Un chiffre",
+    "Une situation vécue"
+   ]
+  },
+  {
+   "at": "corps",
+   "type": "points",
+   "title": "2 · Le corps",
+   "em": "corps",
+   "items": [
+    "Une seule idée",
+    "Des phrases courtes",
+    "Une anecdote vraie"
+   ]
+  },
+  {
+   "at": "appel",
+   "type": "compare",
+   "title": "3 · Un seul appel à l'action",
+   "em": "appel",
+   "left": [
+    "Commentez, partagez,",
+    "réservez, abonnez-vous…",
+    "Personne ne fait rien"
+   ],
+   "right": [
+    "« Réservez votre",
+    "essai gratuit »",
+    "Un geste clair"
+   ]
+  },
+  {
+   "at": "reseau",
+   "type": "steps",
+   "title": "4 · Adapté au réseau",
+   "em": "réseau",
+   "items": [
+    "LinkedIn",
+    "Facebook",
+    "Instagram",
+    "TikTok"
+   ]
+  },
+  {
+   "at": "prompts",
+   "type": "points",
+   "title": "Votre bibliothèque de prompts",
+   "em": "prompts",
+   "items": [
+    "Vos meilleures demandes",
+    "Réutilisées à chaque post",
+    "Le même ton partout"
+   ]
+  },
+  {
+   "at": "ia",
+   "type": "prompt",
+   "title": "Demandez à votre IA",
+   "em": "IA",
+   "prompt": "Écris trois accroches pour un post LinkedIn sur notre nouvelle offre, et crée le brouillon.",
+   "answer": [
+    "1. Vous perdez encore une heure par jour sur vos devis ?",
+    "2. 3 clics, 1 devis signé : on vous montre.",
+    "3. Ce que nos clients ont arrêté de faire le lundi matin.",
+    "Brouillon LinkedIn créé avec la première."
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Un post lu jusqu'au bout",
+   "em": "jusqu'au bout"
+  }
+ ]
+}

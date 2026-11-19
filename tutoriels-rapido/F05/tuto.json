@@ -1,0 +1,136 @@
+{
+ "id": "F05",
+ "product": "cms",
+ "kicker": "Formation · Marketing",
+ "title": "Lire ses statistiques et décider quoi refaire",
+ "em": "décider",
+ "tag": "1 min 30 · Méthode",
+ "end_cta": "Prochaine formation : la newsletter qui se lit",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Publier sans regarder ses statistiques, c'est avancer les yeux fermés. Voici comment les lire en dix minutes par mois, et surtout quoi en faire."
+  },
+  {
+   "key": "chiffres",
+   "text": "Un : regardez trois chiffres, pas trente. La portée, les interactions, et les clics vers votre site ou votre offre."
+  },
+  {
+   "key": "taux",
+   "text": "Deux : comparez les taux, pas les totaux. Cent interactions sur mille vues valent mieux que deux cents sur dix mille."
+  },
+  {
+   "key": "top",
+   "text": "Trois : repérez vos trois meilleurs posts du mois. Quel sujet ? Quel format ? Quelle accroche ? C'est votre recette."
+  },
+  {
+   "key": "decider",
+   "text": "Quatre : décidez. Refaites ce qui marche sous une autre forme, arrêtez ce qui ne prend pas, et testez une seule nouveauté."
+  },
+  {
+   "key": "outils",
+   "text": "Dans RapidoCMS, les statistiques de chaque post et de chaque campagne sont à portée de clic. Dans RapidoCRM, la Marketing Map relie vos posts au parcours de vos prospects."
+  },
+  {
+   "key": "ia",
+   "text": "Avec votre assistant IA : quels sont mes trois meilleurs posts du mois, et pourquoi ?"
+  },
+  {
+   "key": "recap",
+   "text": "Trois chiffres, des taux, trois gagnants, une décision : dix minutes par mois suffisent."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : la newsletter qui se lit."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "kicker": "Marketing · Statistiques",
+   "title": "Lire, puis décider",
+   "em": "décider"
+  },
+  {
+   "at": "chiffres",
+   "type": "points",
+   "title": "1 · Trois chiffres",
+   "em": "Trois",
+   "items": [
+    "Portée",
+    "Interactions",
+    "Clics vers votre offre"
+   ]
+  },
+  {
+   "at": "taux",
+   "type": "compare",
+   "title": "2 · Des taux, pas des totaux",
+   "em": "taux",
+   "left": [
+    "200 interactions",
+    "sur 10 000 vues",
+    "2 %"
+   ],
+   "right": [
+    "100 interactions",
+    "sur 1 000 vues",
+    "10 %"
+   ]
+  },
+  {
+   "at": "top",
+   "type": "steps",
+   "title": "3 · Vos trois meilleurs posts",
+   "em": "meilleurs",
+   "items": [
+    "Quel sujet ?",
+    "Quel format ?",
+    "Quelle accroche ?"
+   ]
+  },
+  {
+   "at": "decider",
+   "type": "steps",
+   "title": "4 · Décider",
+   "em": "Décider",
+   "items": [
+    "Refaire ce qui marche",
+    "Arrêter ce qui ne prend pas",
+    "Tester une nouveauté"
+   ]
+  },
+  {
+   "at": "outils",
+   "type": "points",
+   "title": "Où regarder",
+   "em": "regarder",
+   "items": [
+    "Statistiques par post",
+    "Statistiques par campagne",
+    "Marketing Map du CRM"
+   ]
+  },
+  {
+   "at": "ia",
+   "type": "prompt",
+   "title": "Demandez à votre IA",
+   "em": "IA",
+   "prompt": "Quels sont mes trois meilleurs posts du mois, et pourquoi ?",
+   "answer": [
+    "1. Le carrousel avant / après : 9 % d'interactions.",
+    "2. La question du lundi : 7 %.",
+    "Point commun : une accroche en question et une vraie photo."
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Dix minutes par mois",
+   "em": "Dix minutes"
+  }
+ ]
+}

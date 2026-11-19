@@ -1,0 +1,141 @@
+{
+ "id": "F06",
+ "product": "crm",
+ "kicker": "Formation · Marketing",
+ "title": "La newsletter qui se lit",
+ "em": "se lit",
+ "tag": "1 min 30 · Méthode",
+ "end_cta": "Prochaine formation : communication de crise et avis négatifs",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Une newsletter ouverte, lue et cliquée, c'est possible. Voici les règles qui comptent, et ce que RapidoCRM vérifie pour vous avant l'envoi."
+  },
+  {
+   "key": "objet",
+   "text": "Un : l'objet. Moins de soixante caractères, sinon il est coupé sur mobile. Et pas de majuscules ni de points d'exclamation à répétition : ils mènent droit aux indésirables."
+  },
+  {
+   "key": "contenu",
+   "text": "Deux : le contenu. Un sujet principal, du texte et pas seulement des images, un texte alternatif sur chaque image, et un seul bouton qui compte."
+  },
+  {
+   "key": "personnaliser",
+   "text": "Trois : personnalisez, avec une valeur de secours. Bonjour prénom, ou Madame, Monsieur si le prénom manque."
+  },
+  {
+   "key": "frequence",
+   "text": "Quatre : un rythme régulier. Une fois par mois vaut mieux qu'une rafale suivie de six mois de silence."
+  },
+  {
+   "key": "verifier",
+   "text": "Avant d'envoyer, cliquez sur Vérifier : RapidoCRM signale l'objet trop long, les liens vides, le message trop lourd. Puis envoyez-vous un test."
+  },
+  {
+   "key": "suivi",
+   "text": "Le lien de désinscription et le suivi des ouvertures et des clics sont ajoutés automatiquement. Les désinscrits ne reçoivent plus rien."
+  },
+  {
+   "key": "recap",
+   "text": "Un objet court, un sujet, un bouton, un rythme : votre newsletter se lit."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : communication de crise et avis négatifs."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "kicker": "Marketing · E-mail",
+   "title": "La newsletter qui se lit",
+   "em": "se lit"
+  },
+  {
+   "at": "objet",
+   "type": "compare",
+   "title": "1 · L'objet",
+   "em": "objet",
+   "left": [
+    "PROMO EXCEPTIONNELLE !!!",
+    "Majuscules et !!!",
+    "Indésirables"
+   ],
+   "right": [
+    "Votre printemps à -20 %",
+    "Moins de 60 caractères",
+    "Boîte de réception"
+   ]
+  },
+  {
+   "at": "contenu",
+   "type": "points",
+   "title": "2 · Le contenu",
+   "em": "contenu",
+   "items": [
+    "Un sujet principal",
+    "Du texte, pas que des images",
+    "Texte alternatif sur les images",
+    "Un seul bouton qui compte"
+   ]
+  },
+  {
+   "at": "personnaliser",
+   "type": "points",
+   "title": "3 · Personnaliser",
+   "em": "Personnaliser",
+   "items": [
+    "Bonjour [prénom]",
+    "Valeur de secours : Madame, Monsieur"
+   ]
+  },
+  {
+   "at": "frequence",
+   "type": "compare",
+   "title": "4 · Un rythme",
+   "em": "rythme",
+   "left": [
+    "Cinq envois en mars",
+    "Puis six mois de silence",
+    "On vous oublie"
+   ],
+   "right": [
+    "Une fois par mois",
+    "Le même jour",
+    "On vous attend"
+   ]
+  },
+  {
+   "at": "verifier",
+   "type": "steps",
+   "title": "Avant l'envoi",
+   "em": "envoi",
+   "items": [
+    "Vérifier",
+    "Corriger",
+    "S'envoyer un test",
+    "Envoyer"
+   ]
+  },
+  {
+   "at": "suivi",
+   "type": "points",
+   "title": "Automatique",
+   "em": "Automatique",
+   "items": [
+    "Lien de désinscription",
+    "Ouvertures et clics suivis",
+    "Désinscrits exclus"
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Une newsletter qui se lit",
+   "em": "se lit"
+  }
+ ]
+}
