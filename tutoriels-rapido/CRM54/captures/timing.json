@@ -1,0 +1,29 @@
+{
+  "voiceStartInCapture": 8.516,
+  "paragraphs": {
+    "intro": 0.09,
+    "ecran": 6.21,
+    "ajouter": 15.45,
+    "actions": 25.02,
+    "style": 32.21,
+    "calques": 36.77,
+    "apercu": 41.18,
+    "enregistrer": 46.01,
+    "outro": 52.38,
+    "end": 57.86
+  },
+  "zones": {
+    "ecran": [
+      716,
+      948,
+      488,
+      104
+    ],
+    "actions": [
+      725,
+      870,
+      469,
+      94
+    ]
+  }
+}

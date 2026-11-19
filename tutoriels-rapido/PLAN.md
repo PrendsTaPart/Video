@@ -145,7 +145,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM51 — Connecter son nom de domaine
 - [x] CRM52 — Le sous-domaine d'envoi des e-mails (SPF, DKIM, DMARC)
 - [x] CRM53 — L'éditeur : sections et modèles gratuits
-- [!] CRM54 — L'éditeur sur téléphone — voix en attente (ElevenLabs injoignable le 18/11 à 17 h). Prêt : option `telephone` de record.cjs (iframe 390 × 844 dans un cadre téléphone, servie par une route simulée sur la même origine, curseur relayé), scénario CRM54/tuto.json, essai de tournage validé. Correctifs RapidoCRM faits avant (catégories repliées, barre du bas, aperçu, titres, enregistrement sans alerte).
+- [x] CRM54 — L'éditeur sur téléphone — 19/11 : voix générée, tournage en cours. Prêt : option `telephone` de record.cjs (iframe 390 × 844 dans un cadre téléphone, servie par une route simulée sur la même origine, curseur relayé), scénario CRM54/tuto.json, essai de tournage validé. Correctifs RapidoCRM faits avant (catégories repliées, barre du bas, aperçu, titres, enregistrement sans alerte).
 - [x] CRM55 — Les ventes en ligne : bouton d'achat et paiement (Stripe en mode test, aucun paiement réel)
 - [x] CRM56 — Les lead magnets (scénario, `leadmagnets-demo.php`, essai à blanc, voix 880 cr. — en file)
 - [x] CRM57 — Le tunnel de vente créé par Claude (outil creer_tunnel_de_vente) (scénario, `tunnel-demo.php`, essai à blanc, voix 847 cr. — en file)
@@ -282,16 +282,16 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 ### Marketing & communication
 - [x] F01 — Construire sa ligne éditoriale en 1 heure avec l'IA
 - [x] F02 — Un mois de contenus en une après-midi (RapidoCMS)
-- [ ] F03 — Écrire un post qui engage : structure et accroches
-- [ ] F04 — Visuels de marque cohérents avec un kit de marque
-- [ ] F05 — Lire ses statistiques et décider quoi refaire
-- [ ] F06 — Newsletter qui se lit : objet, contenu, fréquence
-- [ ] F07 — Communication de crise et avis négatifs
+- [~] F03 — Écrire un post qui engage : structure et accroches (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F04 — Visuels de marque cohérents avec un kit de marque (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F05 — Lire ses statistiques et décider quoi refaire (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F06 — Newsletter qui se lit : objet, contenu, fréquence (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F07 — Communication de crise et avis négatifs (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 
 ### Commercial & prospection
-- [ ] F08 — Définir sa cible et son fichier de prospects
-- [ ] F09 — Prospection locale avec Google Maps et SIRET
-- [ ] F10 — Le premier appel : script et qualification (agent vocal)
+- [~] F08 — Définir sa cible et son fichier de prospects (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F09 — Prospection locale avec Google Maps et SIRET (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F10 — Le premier appel : script et qualification (agent vocal) (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 - [x] F11 — Le cold email qui obtient des réponses (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
 - [x] F12 — Piloter son pipeline et ses prévisions (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
 - [x] F13 — Le devis qui se signe : présentation et relances (16/11 : script vérifié dans le code de RapidoCRM, voix générée — en file de rendu)
@@ -303,11 +303,11 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] F43 — Faire travailler son équipe IA : CRM + RapidoRH connectés (script, voix générée — en file de rendu)
 
 ### Gestion de projet & équipe
-- [ ] F16 — Lancer un projet : découpage, rôles, échéances
-- [ ] F17 — Le Kanban au quotidien
-- [ ] F18 — Le daily efficace en 5 minutes
-- [ ] F19 — Intégrer un nouveau collaborateur
-- [ ] F20 — Gérer congés et charge de travail
+- [~] F16 — Lancer un projet : découpage, rôles, échéances (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F17 — Le Kanban au quotidien (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F18 — Le daily efficace en 5 minutes (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F19 — Intégrer un nouveau collaborateur (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F20 — Gérer congés et charge de travail (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 
 ### Intelligence artificielle
 - [x] F21 — Comprendre l'IA générative pour son entreprise (script, voix générée — en file de rendu)
@@ -318,14 +318,14 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] F26 — Automatiser avec les workflows Rapido (script, voix générée — en file de rendu)
 
 ### Par secteur d'activité
-- [ ] F27 — Restaurant & food : Rapido au quotidien
-- [ ] F28 — Artisans & BTP
-- [ ] F29 — Agences & freelances
-- [ ] F30 — Commerce de proximité
-- [ ] F31 — Immobilier
-- [ ] F32 — Services aux entreprises (PME)
-- [ ] F33 — Santé & bien-être
-- [ ] F34 — Associations & événementiel
+- [~] F27 — Restaurant & food : Rapido au quotidien (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F28 — Artisans & BTP (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F29 — Agences & freelances (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F30 — Commerce de proximité (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F31 — Immobilier (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F32 — Services aux entreprises (PME) (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F33 — Santé & bien-être (19/11 : script vérifié dans le code, voix générée — en file de rendu)
+- [~] F34 — Associations & événementiel (19/11 : script vérifié dans le code, voix générée — en file de rendu)
 
 ## E. Site web RapidoSoftware — vrais écrans
 
