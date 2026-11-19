@@ -145,7 +145,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM51 — Connecter son nom de domaine
 - [x] CRM52 — Le sous-domaine d'envoi des e-mails (SPF, DKIM, DMARC)
 - [x] CRM53 — L'éditeur : sections et modèles gratuits
-- [x] CRM54 — L'éditeur sur téléphone — 19/11 : voix générée, tournage en cours. Prêt : option `telephone` de record.cjs (iframe 390 × 844 dans un cadre téléphone, servie par une route simulée sur la même origine, curseur relayé), scénario CRM54/tuto.json, essai de tournage validé. Correctifs RapidoCRM faits avant (catégories repliées, barre du bas, aperçu, titres, enregistrement sans alerte).
+- [x] CRM54 — L'éditeur sur téléphone — 19/11 : PUBLIÉ. Prêt : option `telephone` de record.cjs (iframe 390 × 844 dans un cadre téléphone, servie par une route simulée sur la même origine, curseur relayé), scénario CRM54/tuto.json, essai de tournage validé. Correctifs RapidoCRM faits avant (catégories repliées, barre du bas, aperçu, titres, enregistrement sans alerte).
 - [x] CRM55 — Les ventes en ligne : bouton d'achat et paiement (Stripe en mode test, aucun paiement réel)
 - [x] CRM56 — Les lead magnets (scénario, `leadmagnets-demo.php`, essai à blanc, voix 880 cr. — en file)
 - [x] CRM57 — Le tunnel de vente créé par Claude (outil creer_tunnel_de_vente) (scénario, `tunnel-demo.php`, essai à blanc, voix 847 cr. — en file)
