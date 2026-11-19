@@ -17,3 +17,17 @@ ces plats ne sont pas encore dans la carte FoodEatUp (sauf la brioche façon pai
 | villa-beach-fondant-chocolat.mp4 | Un fondant au chocolat et, tout autour, des fruits frais 🍫🥝 Pour finir en douceur. Réservez 👉 villabeach.foodeatup.fr #villabeach #fondantauchocolat #dessert #lisses |
 
 Note : « Lisses » vient du site de la Villa Beach (vidéo de la carte). Le lien de réservation est celui de la carte de fin.
+
+## Bibliothèque d'assets FoodEatUp (établissement 46, ajoutées le 19/11/2026)
+
+| Asset | Nom | Vidéo |
+|---|---|---|
+| 37 | reel-magret-de-canard | villa-beach-magret.mp4 |
+| 38 | reel-foie-gras-chutney | villa-beach-foie-gras.mp4 |
+| 39 | reel-veloute | villa-beach-veloute.mp4 |
+| 40 | reel-tagliatelles-burrata | villa-beach-tagliatelles-burrata.mp4 |
+| 41 | reel-burger-poulet-frites | villa-beach-burger-poulet.mp4 |
+| 42 | reel-jarret-agneau-puree | villa-beach-jarret-agneau.mp4 |
+| 43 | reel-supreme-poulet-gratin-dauphinois | villa-beach-supreme-poulet.mp4 |
+| 44 | reel-brioche-pain-perdu | villa-beach-pain-perdu.mp4 |
+| 45 | reel-fondant-chocolat-fruits | villa-beach-fondant-chocolat.mp4 |
