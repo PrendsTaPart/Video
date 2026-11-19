@@ -1,0 +1,37 @@
+{
+  "voiceStartInCapture": 4.74,
+  "paragraphs": {
+    "intro": 0.02,
+    "canal": 4.78,
+    "repondre": 9.18,
+    "deblocage": 14.14,
+    "outro": 18.98,
+    "end": 23.31
+  },
+  "zones": {
+    "canal": [
+      251,
+      390,
+      288,
+      60
+    ],
+    "repondre": [
+      511,
+      438,
+      1157,
+      141
+    ],
+    "deblocage": [
+      511,
+      551,
+      1157,
+      109
+    ],
+    "outro": [
+      511,
+      402,
+      1157,
+      105
+    ]
+  }
+}
