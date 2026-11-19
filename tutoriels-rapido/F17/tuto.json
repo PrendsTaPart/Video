@@ -1,0 +1,133 @@
+{
+ "id": "F17",
+ "product": "rh",
+ "kicker": "Formation · Projet & équipe",
+ "title": "Le Kanban au quotidien",
+ "em": "Kanban",
+ "tag": "1 min 30 · Méthode",
+ "end_cta": "Prochaine formation : le daily efficace en cinq minutes",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Le Kanban, c'est votre projet d'un seul coup d'œil. Bien utilisé, il remplace la moitié des réunions."
+  },
+  {
+   "key": "colonnes",
+   "text": "Un : chaque colonne est une liste de tâches. Vous déplacez une carte d'une colonne à l'autre d'un simple glisser-déposer."
+  },
+  {
+   "key": "limite",
+   "text": "Deux : limitez le travail en cours. Mieux vaut trois tâches terminées que dix commencées."
+  },
+  {
+   "key": "carte",
+   "text": "Trois : une carte qui dit tout. Son titre, sa priorité, son échéance, la personne responsable et son statut : à faire, en cours, terminée."
+  },
+  {
+   "key": "ia",
+   "text": "Les tâches confiées à un employé IA affichent aussi leur avancement, et attendent votre validation avant d'être terminées."
+  },
+  {
+   "key": "routine",
+   "text": "Quatre : regardez le tableau chaque matin. Ce qui est bloqué, ce qui est en retard, ce qui est prêt à valider."
+  },
+  {
+   "key": "assistant",
+   "text": "Avec votre assistant IA : quelles tâches sont en retard sur le projet du restaurant ?"
+  },
+  {
+   "key": "recap",
+   "text": "Des colonnes claires, peu de travail en cours, des cartes complètes, un coup d'œil chaque matin."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : le daily efficace en cinq minutes."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "kicker": "Projet · Kanban",
+   "title": "Le Kanban au quotidien",
+   "em": "quotidien"
+  },
+  {
+   "at": "colonnes",
+   "type": "steps",
+   "title": "1 · Des colonnes",
+   "em": "colonnes",
+   "items": [
+    "Une liste = une colonne",
+    "Glisser-déposer"
+   ]
+  },
+  {
+   "at": "limite",
+   "type": "compare",
+   "title": "2 · Limiter l'en-cours",
+   "em": "en-cours",
+   "left": [
+    "10 tâches commencées",
+    "0 terminée"
+   ],
+   "right": [
+    "3 tâches en cours",
+    "Terminées une à une"
+   ]
+  },
+  {
+   "at": "carte",
+   "type": "points",
+   "title": "3 · Une carte complète",
+   "em": "carte",
+   "items": [
+    "Priorité",
+    "Échéance",
+    "Responsable",
+    "À faire · En cours · Terminée"
+   ]
+  },
+  {
+   "at": "ia",
+   "type": "points",
+   "title": "Employés IA",
+   "em": "IA",
+   "items": [
+    "Avancement visible",
+    "Validation avant de terminer"
+   ]
+  },
+  {
+   "at": "routine",
+   "type": "steps",
+   "title": "4 · Chaque matin",
+   "em": "matin",
+   "items": [
+    "Bloqué ?",
+    "En retard ?",
+    "Prêt à valider ?"
+   ]
+  },
+  {
+   "at": "assistant",
+   "type": "prompt",
+   "title": "Demandez à votre IA",
+   "em": "IA",
+   "prompt": "Quelles tâches sont en retard sur le projet du restaurant ?",
+   "answer": [
+    "2 tâches en retard.",
+    "« Rédiger la carte » : échéance dépassée de 3 jours.",
+    "« Photos des plats » : en attente de validation."
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Un coup d'œil chaque matin",
+   "em": "chaque matin"
+  }
+ ]
+}

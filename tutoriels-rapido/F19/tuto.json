@@ -1,0 +1,127 @@
+{
+ "id": "F19",
+ "product": "rh",
+ "kicker": "Formation · Projet & équipe",
+ "title": "Intégrer un nouveau collaborateur",
+ "em": "nouveau collaborateur",
+ "tag": "1 min 30 · Méthode",
+ "end_cta": "Prochaine formation : gérer congés et charge de travail",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Les premiers jours d'un collaborateur décident souvent de la suite. Voici comment les préparer avec RapidoRH."
+  },
+  {
+   "key": "avant",
+   "text": "Avant son arrivée : invitez-le. Il reçoit un lien pour créer son compte, et rejoint directement votre espace."
+  },
+  {
+   "key": "role",
+   "text": "Donnez-lui un rôle et un département : il voit ce dont il a besoin, rien de plus."
+  },
+  {
+   "key": "projet",
+   "text": "Ajoutez-le à un premier projet, avec une ou deux tâches simples. Une première réussite la première semaine compte beaucoup."
+  },
+  {
+   "key": "reperes",
+   "text": "Ses repères : le Kanban pour savoir quoi faire, le daily pour dire ce qu'il a fait, la messagerie pour poser ses questions."
+  },
+  {
+   "key": "referent",
+   "text": "Nommez un référent. Une personne à qui il peut tout demander, sans crainte de déranger."
+  },
+  {
+   "key": "point",
+   "text": "Au bout d'un mois, faites un point : ce qui va, ce qui manque, la suite."
+  },
+  {
+   "key": "recap",
+   "text": "Une invitation, un rôle, un premier projet, un référent : votre nouveau collaborateur est vite autonome."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : gérer congés et charge de travail."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "kicker": "Équipe · Intégration",
+   "title": "Bien intégrer",
+   "em": "intégrer"
+  },
+  {
+   "at": "avant",
+   "type": "points",
+   "title": "Avant l'arrivée",
+   "em": "arrivée",
+   "items": [
+    "Invitation par lien",
+    "Compte créé par lui",
+    "Dans votre espace"
+   ]
+  },
+  {
+   "at": "role",
+   "type": "points",
+   "title": "Rôle et département",
+   "em": "Rôle",
+   "items": [
+    "Ce dont il a besoin",
+    "Rien de plus"
+   ]
+  },
+  {
+   "at": "projet",
+   "type": "steps",
+   "title": "Un premier projet",
+   "em": "premier",
+   "items": [
+    "Une tâche simple",
+    "Une première réussite"
+   ]
+  },
+  {
+   "at": "reperes",
+   "type": "points",
+   "title": "Ses repères",
+   "em": "repères",
+   "items": [
+    "Kanban : quoi faire",
+    "Daily : ce qu'il a fait",
+    "Messagerie : ses questions"
+   ]
+  },
+  {
+   "at": "referent",
+   "type": "points",
+   "title": "Un référent",
+   "em": "référent",
+   "items": [
+    "Une personne",
+    "Toutes les questions"
+   ]
+  },
+  {
+   "at": "point",
+   "type": "steps",
+   "title": "Le point à un mois",
+   "em": "un mois",
+   "items": [
+    "Ce qui va",
+    "Ce qui manque",
+    "La suite"
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Vite autonome",
+   "em": "autonome"
+  }
+ ]
+}

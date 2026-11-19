@@ -1,0 +1,133 @@
+{
+ "id": "F20",
+ "product": "rh",
+ "kicker": "Formation · Projet & équipe",
+ "title": "Gérer congés et charge de travail",
+ "em": "congés",
+ "tag": "1 min 30 · Méthode",
+ "end_cta": "Retrouvez toutes les formations dans l'Académie RapidoSoftware",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Des congés bien gérés, c'est une équipe reposée et des projets qui ne s'arrêtent pas. Voici la méthode avec RapidoRH."
+  },
+  {
+   "key": "demande",
+   "text": "Un : la demande. Le collaborateur choisit le type, congés annuels, maladie, maternité, paternité ou autre, les dates et le motif. Il peut joindre un justificatif."
+  },
+  {
+   "key": "decision",
+   "text": "Deux : la décision. Le responsable approuve ou refuse, et un refus s'accompagne toujours d'un motif."
+  },
+  {
+   "key": "anticiper",
+   "text": "Trois : anticipez. Avant d'approuver, regardez les échéances du projet et qui d'autre est absent."
+  },
+  {
+   "key": "charge",
+   "text": "Quatre : équilibrez la charge. Le Kanban et les dailies montrent qui porte trop de tâches. Réaffectez avant la surcharge."
+  },
+  {
+   "key": "ia",
+   "text": "Pendant une absence, certaines tâches peuvent être confiées à un employé IA, toujours avec votre validation."
+  },
+  {
+   "key": "assistant",
+   "text": "Avec votre assistant IA : qui est absent la semaine prochaine, et quelles tâches sont concernées ?"
+  },
+  {
+   "key": "recap",
+   "text": "Une demande claire, une décision motivée, des absences anticipées : l'équipe se repose, les projets avancent."
+  },
+  {
+   "key": "outro",
+   "text": "Retrouvez toutes nos formations dans l'Académie !"
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "kicker": "Équipe · Congés",
+   "title": "Congés et charge",
+   "em": "Congés"
+  },
+  {
+   "at": "demande",
+   "type": "points",
+   "title": "1 · La demande",
+   "em": "demande",
+   "items": [
+    "Annuels, maladie, maternité, paternité, autre",
+    "Dates et motif",
+    "Justificatif"
+   ]
+  },
+  {
+   "at": "decision",
+   "type": "compare",
+   "title": "2 · La décision",
+   "em": "décision",
+   "left": [
+    "Approuvé",
+    "Dates confirmées"
+   ],
+   "right": [
+    "Refusé",
+    "Toujours un motif"
+   ]
+  },
+  {
+   "at": "anticiper",
+   "type": "steps",
+   "title": "3 · Anticiper",
+   "em": "Anticiper",
+   "items": [
+    "Échéances du projet",
+    "Autres absences",
+    "Puis décider"
+   ]
+  },
+  {
+   "at": "charge",
+   "type": "points",
+   "title": "4 · Équilibrer la charge",
+   "em": "charge",
+   "items": [
+    "Kanban",
+    "Dailies",
+    "Réaffecter à temps"
+   ]
+  },
+  {
+   "at": "ia",
+   "type": "points",
+   "title": "Pendant l'absence",
+   "em": "absence",
+   "items": [
+    "Tâches confiées à un employé IA",
+    "Validées par vous"
+   ]
+  },
+  {
+   "at": "assistant",
+   "type": "prompt",
+   "title": "Demandez à votre IA",
+   "em": "IA",
+   "prompt": "Qui est absent la semaine prochaine, et quelles tâches sont concernées ?",
+   "answer": [
+    "Camille : congés annuels du lundi au mercredi.",
+    "2 tâches à échéance pendant son absence.",
+    "Je vous propose de les réaffecter à Thomas."
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Une équipe reposée",
+   "em": "reposée"
+  }
+ ]
+}

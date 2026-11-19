@@ -1,0 +1,136 @@
+{
+ "id": "F16",
+ "product": "rh",
+ "kicker": "Formation · Projet & équipe",
+ "title": "Lancer un projet : découpage, rôles, échéances",
+ "em": "Lancer",
+ "tag": "1 min 30 · Méthode",
+ "end_cta": "Prochaine formation : le Kanban au quotidien",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Un projet qui démarre bien, c'est un projet qui finit bien. Voici comment le lancer en trois étapes dans RapidoRH."
+  },
+  {
+   "key": "cadre",
+   "text": "Un : posez le cadre. Un nom clair, une description de ce qu'on livre, une date de début et une date de fin. Et un chef de projet, un seul."
+  },
+  {
+   "key": "decoupage",
+   "text": "Deux : découpez en listes. Par exemple : à préparer, en production, à valider. Chaque liste regroupe les tâches d'une même étape."
+  },
+  {
+   "key": "taches",
+   "text": "Trois : des tâches précises. Un titre qui commence par un verbe, une échéance, une priorité, urgente, moyenne ou basse, et une personne responsable."
+  },
+  {
+   "key": "ia",
+   "text": "Une tâche peut aussi être confiée à un employé IA : elle devient automatisée ou semi-automatisée, et rien ne part sans votre validation."
+  },
+  {
+   "key": "rituel",
+   "text": "Enfin, partagez le projet avec l'équipe et, si besoin, avec le client : chacun voit ce qui le concerne."
+  },
+  {
+   "key": "assistant",
+   "text": "Avec votre assistant IA : transforme cette idée en projet, avec les listes et les premières tâches."
+  },
+  {
+   "key": "recap",
+   "text": "Un cadre, des listes, des tâches précises, un responsable par tâche : votre projet démarre sur de bonnes bases."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : le Kanban au quotidien."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "kicker": "Projet · Lancement",
+   "title": "Bien lancer un projet",
+   "em": "lancer"
+  },
+  {
+   "at": "cadre",
+   "type": "points",
+   "title": "1 · Le cadre",
+   "em": "cadre",
+   "items": [
+    "Un nom clair",
+    "Ce qu'on livre",
+    "Début et fin",
+    "Un chef de projet"
+   ]
+  },
+  {
+   "at": "decoupage",
+   "type": "steps",
+   "title": "2 · Des listes",
+   "em": "listes",
+   "items": [
+    "À préparer",
+    "En production",
+    "À valider"
+   ]
+  },
+  {
+   "at": "taches",
+   "type": "points",
+   "title": "3 · Des tâches précises",
+   "em": "précises",
+   "items": [
+    "Un verbe d'action",
+    "Une échéance",
+    "Une priorité",
+    "Un responsable"
+   ]
+  },
+  {
+   "at": "ia",
+   "type": "compare",
+   "title": "Humain ou employé IA",
+   "em": "employé IA",
+   "left": [
+    "Tâche manuelle",
+    "Faite par l'équipe"
+   ],
+   "right": [
+    "Tâche automatisée",
+    "Validée par vous"
+   ]
+  },
+  {
+   "at": "rituel",
+   "type": "points",
+   "title": "Partager",
+   "em": "Partager",
+   "items": [
+    "L'équipe",
+    "Le client, si besoin",
+    "Chacun voit sa part"
+   ]
+  },
+  {
+   "at": "assistant",
+   "type": "prompt",
+   "title": "Demandez à votre IA",
+   "em": "IA",
+   "prompt": "Transforme cette idée en projet, avec les listes et les premières tâches.",
+   "answer": [
+    "Projet « Site du restaurant » créé.",
+    "3 listes, 9 tâches, échéances sur 4 semaines.",
+    "À vous de valider les responsables."
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "De bonnes bases",
+   "em": "bonnes bases"
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "id": "F18",
+ "product": "rh",
+ "kicker": "Formation · Projet & équipe",
+ "title": "Le daily efficace en 5 minutes",
+ "em": "5 minutes",
+ "tag": "1 min 30 · Méthode",
+ "end_cta": "Prochaine formation : intégrer un nouveau collaborateur",
+ "intro": 3.0,
+ "outro": 4.5,
+ "paragraphs": [
+  {
+   "key": "intro",
+   "text": "Le daily ne doit pas durer une heure. Cinq minutes suffisent, à condition de suivre trois questions."
+  },
+  {
+   "key": "questions",
+   "text": "Qu'ai-je fait hier ? Que vais-je faire aujourd'hui ? Qu'est-ce qui me bloque ?"
+  },
+  {
+   "key": "ecrit",
+   "text": "Dans RapidoRH, le daily s'écrit : chacun note les tâches travaillées, le nombre d'heures, et un commentaire."
+  },
+  {
+   "key": "blocage",
+   "text": "Un blocage se règle après le daily, entre les personnes concernées. Pas devant toute l'équipe."
+  },
+  {
+   "key": "ia",
+   "text": "Les employés IA écrivent aussi leur daily, à chaque tâche terminée : vous voyez leur travail au même endroit."
+  },
+  {
+   "key": "suivi",
+   "text": "Le responsable retrouve tout par jour, par personne ou par projet. Fini les comptes rendus à réclamer."
+  },
+  {
+   "key": "assistant",
+   "text": "Avec votre assistant IA : résume-moi les dailies d'hier de l'équipe."
+  },
+  {
+   "key": "recap",
+   "text": "Trois questions, un daily écrit, les blocages réglés à part : cinq minutes, et toute l'équipe sait où elle va."
+  },
+  {
+   "key": "outro",
+   "text": "Dans la prochaine formation : intégrer un nouveau collaborateur."
+  }
+ ],
+ "slides": [
+  {
+   "at": "intro",
+   "type": "title",
+   "kicker": "Équipe · Daily",
+   "title": "Le daily en 5 minutes",
+   "em": "5 minutes"
+  },
+  {
+   "at": "questions",
+   "type": "steps",
+   "title": "Trois questions",
+   "em": "questions",
+   "items": [
+    "Hier ?",
+    "Aujourd'hui ?",
+    "Un blocage ?"
+   ]
+  },
+  {
+   "at": "ecrit",
+   "type": "points",
+   "title": "Un daily écrit",
+   "em": "écrit",
+   "items": [
+    "Tâches travaillées",
+    "Nombre d'heures",
+    "Un commentaire"
+   ]
+  },
+  {
+   "at": "blocage",
+   "type": "compare",
+   "title": "Les blocages",
+   "em": "blocages",
+   "left": [
+    "Débattus devant tous",
+    "20 minutes perdues"
+   ],
+   "right": [
+    "Réglés après",
+    "Entre les concernés"
+   ]
+  },
+  {
+   "at": "ia",
+   "type": "points",
+   "title": "Employés IA",
+   "em": "IA",
+   "items": [
+    "Un daily par tâche terminée",
+    "Au même endroit"
+   ]
+  },
+  {
+   "at": "suivi",
+   "type": "points",
+   "title": "Pour le responsable",
+   "em": "responsable",
+   "items": [
+    "Par jour",
+    "Par personne",
+    "Par projet"
+   ]
+  },
+  {
+   "at": "assistant",
+   "type": "prompt",
+   "title": "Demandez à votre IA",
+   "em": "IA",
+   "prompt": "Résume-moi les dailies d'hier de l'équipe.",
+   "answer": [
+    "5 dailies, 34 heures déclarées.",
+    "Projet restaurant : maquettes terminées.",
+    "1 blocage : accès au domaine du client."
+   ]
+  },
+  {
+   "at": "recap",
+   "type": "takeaway",
+   "title": "Cinq minutes, une équipe alignée",
+   "em": "alignée"
+  }
+ ]
+}
