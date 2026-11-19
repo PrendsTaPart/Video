@@ -23,9 +23,11 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:transparent}
 <div id="fin"><div class="bg" id="bg"></div><div class="glow"></div><img id="logo" src="logo-villa-beach.png"></div>
 <div id="txt"></div><div id="dip"></div></div>
 <script>
-const s=new URLSearchParams(location.search).get('s');document.write('<script src="cfg/'+s+'.js"><\/script>');
-</script>
-<script>
+// la vidéo à habiller est désignée par ?s=<slug> ; seul un nom simple est accepté, puis cfg/<slug>.js est chargé
+const slug=new URLSearchParams(location.search).get('s')||'';
+if(!/^[a-z0-9-]{1,60}$/.test(slug))throw new Error('nom de vidéo invalide');
+const sc=document.createElement('script');sc.src='cfg/'+encodeURIComponent(slug)+'.js';sc.onload=init;document.head.appendChild(sc);
+function init(){
 const C=window.CFG;document.getElementById('bg').style.backgroundImage=`url(${C.fond})`;
 const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), eo=x=>1-Math.pow(1-cl(x),3);
 const T=C.lignes.map(l=>[l[0],l[1],`<div class="l">${l[2]}</div>`,1400]);
@@ -45,5 +47,6 @@ function render(t){
  const lg=document.getElementById('logo'),lu=t-C.carte-0.1;lg.style.opacity=lu>0?cl(lu/0.7):0;lg.style.transform=`scale(${1.08-0.08*eo(lu/1.5)})`;
  document.getElementById('grad').style.opacity=t<C.carte?1:0;
 }
-window.thumb=()=>render((C.titre[0]+C.titre[1])/2);
+window.render=render;window.thumb=()=>render((C.titre[0]+C.titre[1])/2);
+}
 </script></body></html>
