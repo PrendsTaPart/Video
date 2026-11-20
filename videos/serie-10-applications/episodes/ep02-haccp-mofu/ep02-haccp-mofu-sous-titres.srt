@@ -1,0 +1,71 @@
+1
+00:00:00,300 --> 00:00:00,780
+Hier,
+
+2
+00:00:00,780 --> 00:00:02,900
+je te parlais du classeur HACCP rempli
+
+3
+00:00:02,900 --> 00:00:03,860
+à vingt-trois heures.
+
+4
+00:00:03,860 --> 00:00:05,580
+Voici l'application qui le remplace.
+
+5
+00:00:05,580 --> 00:00:06,540
+Tu ouvres le frigo,
+
+6
+00:00:06,540 --> 00:00:07,620
+tu touches l'équipement,
+
+7
+00:00:07,620 --> 00:00:08,820
+tu notes la température.
+
+8
+00:00:08,820 --> 00:00:09,620
+Si c'est trop chaud,
+
+9
+00:00:09,620 --> 00:00:10,620
+elle te dit quoi faire,
+
+10
+00:00:10,620 --> 00:00:11,320
+tout de suite.
+
+11
+00:00:11,320 --> 00:00:12,180
+Tu as les mains prises ?
+
+12
+00:00:12,180 --> 00:00:12,920
+Tu lui parles.
+
+13
+00:00:12,920 --> 00:00:14,400
+Elle imprime aussi tes étiquettes de date
+
+14
+00:00:14,400 --> 00:00:14,960
+limite.
+
+15
+00:00:14,960 --> 00:00:16,100
+Et le jour du contrôle,
+
+16
+00:00:16,100 --> 00:00:17,120
+tout l'historique est là.
+
+17
+00:00:17,120 --> 00:00:18,360
+Commente HACCP,
+
+18
+00:00:18,360 --> 00:00:19,580
+je t'envoie le lien.

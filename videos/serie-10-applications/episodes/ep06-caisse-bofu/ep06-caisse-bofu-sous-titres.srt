@@ -1,0 +1,55 @@
+1
+00:00:00,300 --> 00:00:01,240
+Ta caisse dans la poche de ton
+
+2
+00:00:01,240 --> 00:00:01,760
+équipe,
+
+3
+00:00:01,760 --> 00:00:02,950
+ça se met en place vite.
+
+4
+00:00:02,950 --> 00:00:05,300
+L'application s'installe sur un téléphone Android.
+
+5
+00:00:05,300 --> 00:00:06,720
+Tu la relies à ton compte FoodEatUp,
+
+6
+00:00:06,720 --> 00:00:08,200
+et ta carte est déjà là.
+
+7
+00:00:08,200 --> 00:00:09,880
+Tes serveurs voient les commandes qui arrivent
+
+8
+00:00:09,880 --> 00:00:11,000
+et les notifications.
+
+9
+00:00:11,000 --> 00:00:11,480
+Et toi,
+
+10
+00:00:11,480 --> 00:00:12,690
+tu suis tes chiffres de la journée.
+
+11
+00:00:12,690 --> 00:00:14,080
+Elle prend même les couleurs de ton
+
+12
+00:00:14,080 --> 00:00:14,590
+restaurant.
+
+13
+00:00:14,590 --> 00:00:15,600
+Commente CAISSE,
+
+14
+00:00:15,600 --> 00:00:16,860
+je t'envoie le lien.

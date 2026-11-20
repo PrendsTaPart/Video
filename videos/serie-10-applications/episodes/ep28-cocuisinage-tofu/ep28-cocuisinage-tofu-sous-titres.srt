@@ -1,0 +1,47 @@
+1
+00:00:00,300 --> 00:00:00,900
+Ce soir,
+
+2
+00:00:00,900 --> 00:00:01,740
+on mange quoi ?
+
+3
+00:00:01,740 --> 00:00:02,540
+Tu ouvres le frigo,
+
+4
+00:00:02,540 --> 00:00:04,640
+et tu n'as aucune idée.
+
+5
+00:00:04,640 --> 00:00:05,900
+Et si les restaurants que tu aimes
+
+6
+00:00:05,900 --> 00:00:06,920
+te donnaient leurs recettes ?
+
+7
+00:00:06,920 --> 00:00:08,580
+Et te disaient quoi cuisiner avec ce
+
+8
+00:00:08,580 --> 00:00:09,480
+que tu as chez toi ?
+
+9
+00:00:09,480 --> 00:00:10,000
+Demain,
+
+10
+00:00:10,000 --> 00:00:10,980
+je te montre comment.
+
+11
+00:00:10,980 --> 00:00:12,120
+Commente COCUISINE,
+
+12
+00:00:12,120 --> 00:00:13,380
+je t'envoie le lien.

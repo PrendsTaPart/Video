@@ -1,0 +1,51 @@
+1
+00:00:00,300 --> 00:00:01,080
+Coup de feu.
+
+2
+00:00:01,080 --> 00:00:02,380
+Les tickets s'empilent.
+
+3
+00:00:02,380 --> 00:00:03,260
+Le chaud crie,
+
+4
+00:00:03,260 --> 00:00:04,760
+le froid n'a rien entendu.
+
+5
+00:00:04,760 --> 00:00:06,580
+La table 7 attend depuis vingt minutes.
+
+6
+00:00:06,580 --> 00:00:08,720
+Et le dessert part avant le plat.
+
+7
+00:00:08,720 --> 00:00:10,320
+Et si chaque poste voyait ses plats,
+
+8
+00:00:10,320 --> 00:00:11,180
+et ceux des autres,
+
+9
+00:00:11,180 --> 00:00:12,120
+en même temps ?
+
+10
+00:00:12,120 --> 00:00:12,480
+Demain,
+
+11
+00:00:12,480 --> 00:00:13,500
+je te montre comment.
+
+12
+00:00:13,500 --> 00:00:14,480
+Commente CUISINE,
+
+13
+00:00:14,480 --> 00:00:15,740
+je t'envoie le lien.

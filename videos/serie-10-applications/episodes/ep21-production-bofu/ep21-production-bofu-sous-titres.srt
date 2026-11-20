@@ -1,0 +1,39 @@
+1
+00:00:00,300 --> 00:00:02,360
+FoodEatUp Production arrive bientôt.
+
+2
+00:00:02,360 --> 00:00:03,260
+Ton plan de la semaine,
+
+3
+00:00:03,260 --> 00:00:04,480
+d'après ton stock.
+
+4
+00:00:04,480 --> 00:00:06,640
+Des prévisions pour savoir combien produire.
+
+5
+00:00:06,640 --> 00:00:07,520
+Les courses qui manquent,
+
+6
+00:00:07,520 --> 00:00:08,920
+prêtes pour ton fournisseur.
+
+7
+00:00:08,920 --> 00:00:10,100
+Et ton registre de production,
+
+8
+00:00:10,100 --> 00:00:11,250
+toujours à jour.
+
+9
+00:00:11,250 --> 00:00:12,080
+Commente PROD,
+
+10
+00:00:12,080 --> 00:00:13,570
+je te préviens à la sortie.

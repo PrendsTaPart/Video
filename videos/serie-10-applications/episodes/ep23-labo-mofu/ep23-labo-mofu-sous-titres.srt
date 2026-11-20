@@ -1,0 +1,47 @@
+1
+00:00:00,300 --> 00:00:00,780
+Hier,
+
+2
+00:00:00,780 --> 00:00:01,940
+je te parlais de ton labo à
+
+3
+00:00:01,940 --> 00:00:02,900
+quatre heures du matin.
+
+4
+00:00:02,900 --> 00:00:04,440
+Avec FoodEatUp Laboratoire,
+
+5
+00:00:04,440 --> 00:00:05,860
+les commandes des boutiques arrivent au même
+
+6
+00:00:05,860 --> 00:00:06,400
+endroit.
+
+7
+00:00:06,400 --> 00:00:08,000
+Tu vois ce qu'il faut produire aujourd'hui.
+
+8
+00:00:08,000 --> 00:00:09,380
+Tu prépares chaque boutique,
+
+9
+00:00:09,380 --> 00:00:10,400
+carton par carton.
+
+10
+00:00:10,400 --> 00:00:11,880
+Et les tournées de livraison sont prêtes.
+
+11
+00:00:11,880 --> 00:00:12,660
+Commente LABO,
+
+12
+00:00:12,660 --> 00:00:13,860
+je t'envoie le lien.

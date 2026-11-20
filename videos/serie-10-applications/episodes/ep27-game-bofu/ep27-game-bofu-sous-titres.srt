@@ -1,0 +1,47 @@
+1
+00:00:00,300 --> 00:00:01,010
+FoodEatUp Game,
+
+2
+00:00:01,010 --> 00:00:01,960
+c'est gratuit.
+
+3
+00:00:01,960 --> 00:00:04,040
+Sur téléphone et sur tablette Android.
+
+4
+00:00:04,040 --> 00:00:05,040
+Pour patienter,
+
+5
+00:00:05,040 --> 00:00:05,880
+pour s'amuser en famille,
+
+6
+00:00:05,880 --> 00:00:07,200
+ou pour gagner un lot dans ton
+
+7
+00:00:07,200 --> 00:00:08,440
+restaurant préféré.
+
+8
+00:00:08,440 --> 00:00:09,160
+Restaurateur ?
+
+9
+00:00:09,160 --> 00:00:10,020
+Tes clients jouent,
+
+10
+00:00:10,020 --> 00:00:10,780
+et ils reviennent.
+
+11
+00:00:10,780 --> 00:00:11,740
+Commente JOUER,
+
+12
+00:00:11,740 --> 00:00:13,000
+je t'envoie le lien.

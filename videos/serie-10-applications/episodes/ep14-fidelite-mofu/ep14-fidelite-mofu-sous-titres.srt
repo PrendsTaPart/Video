@@ -1,0 +1,47 @@
+1
+00:00:00,300 --> 00:00:00,760
+Hier,
+
+2
+00:00:00,760 --> 00:00:01,760
+je te parlais de la carte en
+
+3
+00:00:01,760 --> 00:00:02,320
+carton.
+
+4
+00:00:02,320 --> 00:00:03,820
+Avec FoodEatUp Fidélité,
+
+5
+00:00:03,820 --> 00:00:05,660
+une tablette est posée sur ton comptoir.
+
+6
+00:00:05,660 --> 00:00:07,280
+Ton client tape son numéro de téléphone.
+
+7
+00:00:07,280 --> 00:00:08,120
+C'est tout.
+
+8
+00:00:08,120 --> 00:00:09,840
+Il voit ses points et ses récompenses.
+
+9
+00:00:09,840 --> 00:00:11,040
+Il fait tourner la roue cadeaux.
+
+10
+00:00:11,040 --> 00:00:12,900
+Et tout remonte dans ton FoodEatUp.
+
+11
+00:00:12,900 --> 00:00:13,840
+Commente FIDÈLE,
+
+12
+00:00:13,840 --> 00:00:15,060
+je t'envoie le lien.

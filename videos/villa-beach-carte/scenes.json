@@ -1,0 +1,15 @@
+[
+ ["Tu cherches un endroit à Lisses pour bien manger, boire un verre et faire la fête ?", {"k": "intro"}],
+ ["Bienvenue à la Villa Beach.", {"k": "logo"}],
+ ["En entrée : burrata et pêches rôties, camembert rôti au miel, tataki de bœuf ou tartare saumon mangue.", {"k": "grille", "s": "entrees"}],
+ ["Côté fraîcheur : salade César, poké bowl, ou la salade signature de la Villa.", {"k": "grille", "s": "salades"}],
+ ["Les plats : entrecôte et purée truffée, le Tigre qui pleure en version XL, le burger signature, les raviolis à la truffe.", {"k": "grille", "s": "plats"}],
+ ["Des planches à partager, charcuterie, fromages ou mixte.", {"k": "grille", "s": "planches"}],
+ ["Et pour finir : la crème brûlée flambée sous tes yeux, le moelleux au chocolat, la brioche façon pain perdu.", {"k": "grille", "s": "desserts"}],
+ ["Le midi, une formule à dix-sept euros quatre-vingt-dix, du mardi au vendredi.", {"k": "grille", "s": "midi"}],
+ ["Une vraie cave, rouges, rosés, blancs, champagnes, et un bar.", {"k": "bar"}],
+ ["Un anniversaire, un groupe, une soirée privée ?", {"k": "groupes"}],
+ ["Deux salles, jusqu'à cent trente couverts.", {"k": "salles"}],
+ ["Villa Beach, vingt-trois rue des Pyrénées, à Lisses.", {"k": "adresse"}],
+ ["Commente VILLA, je t'envoie la carte.", {"k": "cta"}]
+]

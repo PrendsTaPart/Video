@@ -1,0 +1,55 @@
+1
+00:00:00,300 --> 00:00:01,560
+La recette existe.
+
+2
+00:00:01,560 --> 00:00:03,210
+Elle est dans un classeur que personne
+
+3
+00:00:03,210 --> 00:00:03,780
+n'ouvre.
+
+4
+00:00:03,780 --> 00:00:05,120
+Le nouveau te demande toutes les cinq
+
+5
+00:00:05,120 --> 00:00:05,700
+minutes.
+
+6
+00:00:05,700 --> 00:00:07,130
+Et le même plat change selon qui
+
+7
+00:00:07,130 --> 00:00:08,140
+le prépare.
+
+8
+00:00:08,140 --> 00:00:09,760
+Et si chaque recette se suivait une
+
+9
+00:00:09,760 --> 00:00:10,420
+étape à la fois,
+
+10
+00:00:10,420 --> 00:00:12,140
+en photo et à voix haute ?
+
+11
+00:00:12,140 --> 00:00:12,480
+Demain,
+
+12
+00:00:12,480 --> 00:00:13,620
+je te montre comment.
+
+13
+00:00:13,620 --> 00:00:14,560
+Commente RECETTE,
+
+14
+00:00:14,560 --> 00:00:15,820
+je t'envoie le lien.

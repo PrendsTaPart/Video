@@ -1,0 +1,76 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Villa Beach · la carte</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--or:#C9A45C;--or2:#E8CF94;--nuit:#0B0B0D;--creme:#F6EFE2}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--nuit);font-family:Poppins,sans-serif}
+#stage{position:absolute;inset:0;overflow:hidden;background:radial-gradient(1100px 900px at 50% 30%,#2a2216 0%,#0B0B0D 65%)}
+#bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0}
+#voile{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,.15) 40%,rgba(0,0,0,.75) 100%);opacity:0}
+.sc{position:absolute;inset:0;display:none}
+.tag{position:absolute;top:90px;left:0;right:0;text-align:center}
+.tag span{display:inline-block;font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-size:40px;color:var(--or2);letter-spacing:2px;border-bottom:2px solid var(--or);padding-bottom:6px}
+.titre{position:absolute;top:170px;left:40px;right:40px;text-align:center;font-family:'Playfair Display',serif;font-weight:800;font-size:96px;color:var(--creme);line-height:1}
+.grid{position:absolute;left:40px;right:40px;top:330px;display:grid;gap:22px}
+.card{background:#16130F;border:2px solid rgba(201,164,92,.45);border-radius:26px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.card img{display:block;width:100%;object-fit:cover}
+.card .t{padding:12px 16px 14px;color:var(--creme);font-weight:600;line-height:1.15}
+.card .p{display:inline-block;margin-top:6px;background:var(--or);color:#111;font-weight:800;border-radius:12px;padding:2px 12px}
+.big{position:absolute;left:60px;right:60px;text-align:center;font-family:'Playfair Display',serif;font-weight:800;color:var(--creme);line-height:1.05}
+.big i{font-style:italic;color:var(--or2)}
+.chips{position:absolute;left:0;right:0;text-align:center}
+.chips span{display:inline-block;margin:10px;background:rgba(0,0,0,.55);border:2px solid var(--or);color:var(--creme);font-weight:700;font-size:46px;border-radius:40px;padding:12px 34px}
+.liste{position:absolute;left:90px;right:90px;top:1080px;color:var(--creme);font-size:40px;font-weight:600}
+.liste div{display:flex;justify-content:space-between;border-bottom:1px solid rgba(201,164,92,.35);padding:12px 0}
+.liste b{color:var(--or2)}
+.logo{position:absolute;left:50%;top:560px;width:520px;margin-left:-260px}
+.cta{position:absolute;left:0;right:0;text-align:center}
+.cta .k{display:inline-block;background:var(--or);color:#111;font-family:Poppins;font-weight:800;font-size:150px;border-radius:40px;padding:30px 70px;line-height:1;box-shadow:0 18px 0 #000}
+.cta small{display:block;font-size:38px;font-weight:800;margin-bottom:12px}
+#cap{position:absolute;left:60px;right:60px;top:1640px;text-align:center;font-weight:800;font-size:58px;line-height:1.2;color:#fff;text-shadow:0 4px 0 #000,0 0 18px rgba(0,0,0,.9);z-index:30}
+#cap .on{color:var(--or2)}
+#src{position:absolute;bottom:34px;left:0;right:0;text-align:center;color:rgba(246,239,226,.7);font-size:24px;z-index:31}
+#bar{position:absolute;left:0;bottom:0;height:10px;background:var(--or);z-index:40}
+</style></head><body><div id="stage"><img id="bg"><div id="voile"></div><div id="scenes"></div><div id="cap"></div>
+<div id="src">Carte et prix : FoodEatUp · Villa Beach, Lisses · 17/11/2026</div><div id="bar"></div></div>
+<script src="cfg.js"></script>
+<script>
+const C=window.CFG, D=C.carte;
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), eo=x=>1-Math.pow(1-cl(x),3);
+const ebk=x=>{x=cl(x);const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const eur=v=>(Number.isInteger(v)?v:v.toFixed(2).replace('.',','))+' €';
+const S={};D.sections.forEach(s=>S[s.cle]=s);
+const box=document.getElementById('scenes'),SC=[];
+function grille(s){const n=s.plats.length;const cols=n<=2?1:(n<=4?2:3);const w=(1000-(cols-1)*22)/cols;const ih=n<=2?420:(n<=4?330:(n<=6?300:240));const fs=cols==3?26:(cols==2?32:40);
+ return `<div class="tag"><span>La carte</span></div><div class="titre">${s.titre}</div><div class="grid" style="grid-template-columns:repeat(${cols},1fr)">`+
+ s.plats.map(p=>`<div class="card"><img src="photos/${p[2]}.jpg" style="height:${ih}px"><div class="t" style="font-size:${fs}px">${p[0]}<br><span class="p" style="font-size:${fs}px">${eur(p[1])}</span></div></div>`).join('')+`</div>`;}
+C.scenes.forEach(sc=>{const d=document.createElement('div');d.className='sc';const v=sc.v;let h='';
+ if(v.k==='intro')h=`<div class="big" style="top:420px;font-size:110px">Lisses<br><i>ce soir ?</i></div><div class="chips" style="top:900px"><span>Manger</span><span>Boire un verre</span><span>Faire la fête</span></div>`;
+ if(v.k==='logo')h=`<img class="logo" src="site/monogram.png"><div class="big" style="top:1150px;font-size:120px">Villa <i>Beach</i></div><div class="chips" style="top:1330px"><span>Restaurant · Lounge · Club</span></div>`;
+ if(v.k==='grille')h=grille(S[v.s]);
+ if(v.k==='bar'){const s=S.bar;h=`<div class="tag"><span>La carte</span></div><div class="titre">La Cave & le Bar</div><div class="grid" style="grid-template-columns:repeat(4,1fr);top:330px">`+s.plats.map(p=>`<div class="card"><img src="photos/${p[2]}.jpg" style="height:300px"><div class="t" style="font-size:22px">${p[0]}<br><span class="p" style="font-size:22px">${eur(p[1])}</span></div></div>`).join('')+`</div><div class="liste" style="top:820px">`+D.boissons_resume.map(x=>{const [a,b]=x.split(' : ');return `<div><span>${a}</span><b>${b} références</b></div>`}).join('')+`</div>`;}
+ if(v.k==='groupes')h=`<div class="tag"><span>Groupes & événements</span></div><div class="big" style="top:250px;font-size:100px">Anniversaire,<br>groupe,<br><i>soirée privée</i></div><div class="liste" style="top:840px">`+D.groupes.slice(0,4).map(x=>{const [a,b]=x.split(' : ');return `<div><span>${a}</span><b>${b}</b></div>`}).join('')+`</div>`;
+ if(v.k==='salles')h=`<div class="tag"><span>Groupes & événements</span></div><div class="big" style="top:420px;font-size:150px"><i>2</i> salles</div><div class="liste" style="top:820px;font-size:48px"><div><span>Grande salle</span><b>130 couverts</b></div><div><span>Petite salle</span><b>60 places</b></div></div>`;
+ if(v.k==='adresse')h=`<img class="logo" src="site/monogram.png" style="top:330px;width:360px;margin-left:-180px"><div class="big" style="top:760px;font-size:100px">Villa <i>Beach</i></div><div class="big" style="top:930px;font-size:52px;font-family:Poppins;font-weight:700">23 rue des Pyrénées<br>91090 Lisses<br><span style="color:var(--or2)">01 84 60 20 46</span></div>`;
+ if(v.k==='cta')h=`<img class="logo" src="site/monogram.png" style="top:300px;width:300px;margin-left:-150px"><div class="cta" style="top:720px"><div class="k"><small>Écris en commentaire</small>VILLA</div></div><div class="big" style="top:1150px;font-size:56px;font-family:Poppins;font-weight:700">je t'envoie <i>toute la carte</i></div><div class="big" style="top:1290px;font-size:40px;font-family:Poppins;font-weight:600;color:var(--or2)">villabeach.foodeatup.fr</div>`;
+ d.innerHTML=h;box.appendChild(d);SC.push({d,k:v.k,t0:sc.t0,t1:sc.t1});});
+const BG=['intro','logo','groupes','salles','adresse','cta'];
+let GR=null;function groups(){GR=[];let g=[];C.words.forEach((w,k)=>{g.push(k);const nx=C.words[k+1];if(g.length>=4||/[.,:;?!…]$/.test(w[0])||(nx&&nx[2]!==w[2])){GR.push(g);g=[];}});if(g.length)GR.push(g);}
+const bg=document.getElementById('bg'),voile=document.getElementById('voile');
+function render(t){if(!GR)groups();let cur=null;
+ SC.forEach(s=>{const on=t>=s.t0&&t<s.t1;s.d.style.display=on?'block':'none';if(!on)return;cur=s;const u=t-s.t0,L=s.t1-s.t0;
+  s.d.querySelectorAll('.card').forEach((c,i)=>{const p=eo((u-0.08*i)/0.45);c.style.opacity=cl((u-0.08*i)/0.25);c.style.transform=`translateY(${(1-p)*120}px) scale(${0.92+0.08*p})`;c.querySelector('img').style.transform=`scale(${1.04+0.06*cl(u/L)})`;});
+  s.d.querySelectorAll('.titre,.big,.tag').forEach((e,i)=>{const p=ebk((u-0.1*i)/0.4);e.style.opacity=cl((u-0.1*i)/0.2);e.style.transform=`scale(${1.25-0.25*p})`;});
+  s.d.querySelectorAll('.chips span,.liste div').forEach((e,i)=>{const p=eo((u-0.25-0.12*i)/0.4);e.style.opacity=cl((u-0.25-0.12*i)/0.2);e.style.transform=`translateX(${(1-p)*-80}px)`;});
+  s.d.querySelectorAll('.logo').forEach(e=>{const p=ebk(u/0.6);e.style.opacity=cl(u/0.3);e.style.transform=`scale(${0.7+0.3*p})`;});
+  s.d.querySelectorAll('.k').forEach(e=>{const p=ebk(u/0.45);e.style.transform=`scale(${(0.5+0.5*p)*(1+0.03*Math.sin(u*6))})`;});
+ });
+ const useBg=cur&&BG.includes(cur.k);
+ if(useBg){const f=1+Math.floor((t*30)%240);bg.src='fond/f'+String(f).padStart(3,'0')+'.jpg';}
+ bg.style.opacity=useBg?(cur.k==='intro'?1:0.45):0;voile.style.opacity=useBg?1:0;
+ const cap=document.getElementById('cap');const last=SC[SC.length-1];
+ if(cur&&(cur.k==='cta')){cap.innerHTML='';}else{let gi=-1;GR.forEach((g,i)=>{if(C.words[g[0]][1]<=t+0.05)gi=i;});
+  cap.innerHTML=gi<0?'':GR[gi].map(k=>'<span class="'+(C.words[k][1]<=t+0.02&&(k===GR[gi][GR[gi].length-1]||C.words[k+1][1]>t)?'on':'')+'">'+C.words[k][0]+'</span>').join(' ');}
+ document.getElementById('bar').style.width=(100*t/C.dur)+'%';}
+window.thumb=()=>{render(C.thumbT);const cp=document.getElementById('cap');cp.style.top='1380px';cp.innerHTML='<span style="font-family:Playfair Display;font-size:96px;line-height:1.05;display:block;background:var(--or);color:#111;text-shadow:none;border-radius:30px;padding:26px 20px">Villa Beach :<br>toute la carte</span>';};
+</script></body></html>

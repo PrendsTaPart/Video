@@ -1,0 +1,49 @@
+{
+ "source": "MCP FoodEatUp, établissement 46 (Villa beach), list_dishes / list_dish_categories / list_formules, lu le 17/11/2026 23:08",
+ "sections": [
+  {"cle": "entrees", "titre": "Nos entrées", "plats": [
+   ["Assiette de Nems au Poulet", 9, "15fde6376ff9640c9952b733455d3770200c2136", "29d7d7015fc5686e502813bef80231f6eb8126f74ca8ebe9a5d041eb34d56021"],
+   ["Burrata Crémeuse & Pêches Rôties", 14.5, "485aece6ed38c4cb1873ac221a37c218aefa670f", "ba7f8452a2c10927b0559df2d6b407cf5b233c9045c7d26dd5f5713ecd6f34e6"],
+   ["Demi Camembert Rôti au Miel", 12, "b425abf480c0204bc260dc014923ad771c1716a2", "f9265206b1fa539e9db9f77f5267d7ff6c18941ab75d6b20a3d6ebfdb9a71ce4"],
+   ["Tartare Avocat, Saumon & Mangue", 16, "8fb7f4b1c770b55cf251c691c9ae7292014ad484", "e20b44e6b6858a61c14e4f2bb49b1b5453e8ffac088fdcb126452ae0d589f206"],
+   ["Tataki de Bœuf, Sauce Chimichurri", 16, "778b06f89ad53bfc4367a8331ccace9858818ac4", "9b5dea75595e7c9c77ef451a2817f801f653219943e6593ac24f7f52446dff87"]]},
+  {"cle": "salades", "titre": "Nos salades estivales", "plats": [
+   ["L'indispensable Salade César", 18.5, "8455c9140226134556069c25d50a8a960ec9ae06", "5b3ec7dff5f2e29ce0ea778436c7948c51c6198692e97bc2fb05ef8d1acfae7a"],
+   ["Salade Signature Villa", 22, "f00c4a8436bc16663519406937dc5abad3520568", "6b099bd40a376cb340b1b5a5851b74df0c87e27526d4de5ac8f9a6170f6d85ef"],
+   ["Le Poké Bowl Hawaïen", 19.5, "6f24aa03b119979bf9766d324c502c6481b9096b", "c9e714f943c68e46222b97e8c32a78422ef43d31bb37d8d2cfcc4ca740abc992"],
+   ["Salade du Berger", 17.5, "ce189e1a961ed987c0d57cb52b94ec96cc8dbd84", "9d6c2b3bf6cf60590c4617eecfb6485cce06b51cda44e9df97d9dbfb448d5616"]]},
+  {"cle": "plats", "titre": "Nos plats", "plats": [
+   ["Belle Entrecôte & Purée Truffée", 32, "47fe2dfc459d8a8782ebd8d6836f4afed345404b", "24bc9e33c37697d2358307f9013584371880a5fc120800acf01e249dc58d1a9e"],
+   ["Le Tigre qui pleure, version XL", 26, "2e54abbe4ddc363c2d7eaf427197af521a2125ba", "d94100e77f640eadffe9223d9e0959ebde7a3bd491dd0215c00e8f4684eb3900"],
+   ["Le Burger Signature de la Villa", 19.5, "bf83c296c6b877feedc9511af1fbcbe8dfae2198", "1760173c12fc4d3155e54c36c2c67ea192d83aa98548e38c3abbd0f3e95bc9f9"],
+   ["Raviolis à la Truffe Blanche d'Alba", 24, "c4f4bf2191c2c68481eb930a9ac75558757794b2", "d9802b07b1bef1a2c9c1c9e2f063b3af3d0b4b0fe40b1867692aec9f9f3a5c3c"],
+   ["Pavé de Saumon, Risotto Crémeux", 24, "17a6d1a622a3fa6c196d957de8269b6ce14abc3d", "975badf59d59354abbabbab6fec627acf7ee104baa4c9579c2a79ebe1d61b40a"],
+   ["Filet de Daurade Royale, Sauce Vierge", 22, "b3153244f0a30061cf90faf4576f8ec11810e38e", "94942c8d6d9c212ff062f431be3124a77e6bd8620e27f350a20c48e171a7b60d"],
+   ["Le Traditionnel Tartare de Bœuf", 22, "ba9952f424f806e911673568703718fb799e16a4", "61579d6347297c146733136603b96720b8bf9905f55f0066afdfca5383d29751"],
+   ["Suprême de Poulet, Curry & Espelette", 22, "4c9e4ca9eec59f77267fbb6163739b59900ac984", "67f1014e8f10fecc48dbf0cda9dacc2982170c8b13f53c2fbd48f154dbe8c6b7"],
+   ["Courge Butternut Rôtie Farcie", 18.5, "573c6e14ddd9731b2eebeb4927e858e14d517d66", "759da19cc65ce436b4e8c51d86d8caa1173a695933b46f52577581e24ba842fd"]]},
+  {"cle": "planches", "titre": "Nos planches", "plats": [
+   ["Planche de Charcuterie", 16, "095663795f60cb6c8864b50c54f4bc28960c3531", "294d546edcd5bfccc2db1b435bb1249e924be4d8a311146b84f227098e415363"],
+   ["Planche de Fromages", 16, "8c5e0e893f1feb6fefde7c0884b506274499a9a9", "f82a8ebdf3e9b6ea6509731746e38959b24779018e6074732a9373f2071cd943"],
+   ["Planche Mixte", 17, "c4f96e2c5b73e560d19aed67400d1d15c91c3bba", "37216cb7464a6d94fe23f4f66fcb059ca857017cc6319f07ce212d1a93ba4bdd"],
+   ["Fruits de Saison & Fondue au Chocolat", 12, "b43e5fba66c389a623645ac5cfd32f61fd516fc6", "41a4d556fa1b6bb199a9bc00cc072b25d353528ebbe152daaa7781978b06f8a8"]]},
+  {"cle": "desserts", "titre": "Nos desserts", "plats": [
+   ["Crème Brûlée Flambée sous vos Yeux", 10, "6be864d3ff325dcc09050e343717971a4b17531a", "8ed18de7eddec67419ae7908b84397ccdbcb015327858013faf8bce088e717ee"],
+   ["Moelleux au Chocolat, Glace Vanille", 10, "b8f9f87d98183cc2cb1ec0cd5657c2e9a5ff2e0d", "06d6cedb32937de28e0d1a16a8c54559c570290e1e5d0b348c02eb81344ed4c0"],
+   ["Brioche façon Pain Perdu", 14, "1c5142474d4c8acad3c306ea50ffdfffb607147f", "773e517a6f2964d950446d8149754f2b2f7fc615cb0905d2645921f7bb8f6232"],
+   ["Cheese Cake Mangue & Passion", 12, "5e74fc3a49f8d1046efbba6ee17fab7d31603709", "4b26ec40e201b1b46d7de2cdb1863a04a5f517485ea03621f71b6d84c7a60450"],
+   ["Café ou Thé Gourmand", 12, "07f0e828d17498d56a830d387bd68a4265209aaf", "415cbc626620398b9fb4ca209189f8c15e9fe6156965efc759dc68b6d10e0012"],
+   ["Trio Gourmand", 9, "133254a8348d4801983fdbdcdaa26ac0d1a37798", "d74317ad4a87c2827cdb23ee108209340484c6bac637631c7be3f50ea725a2a9"]]},
+  {"cle": "midi", "titre": "Le Midi", "plats": [
+   ["La Formule du Midi", 17.9, "1fb164f27b190b7bb71cd2c269ace3ea06c85d18", "dc41e7340a96f84b624943a482058ccd403eb3d9c1d7f0c3232347a8d6fd2b56"],
+   ["La Salade Composée du Midi", 9.9, "a60c9f1e722096beccd82bf145a63482c8bd3924", "2f105f73407b44e9d2906aea28ad5aaeb0c60cc37ea8f60c51930f5fd82b4502"]]},
+  {"cle": "bar", "titre": "Le Bar & La Cave", "plats": [
+   ["Kir Royal", 9, "3833ba4df0b66f1ee2b2d12807ae7f2e7fddd142", "5f4fb33a1fa5644102a962d6e24f606bb8d476e181a3d63874c1c58a46844278"],
+   ["Côtes de Provence AOP", 10, "129b498c3b6dc767e960c69c0008cff646377aba", "a6d8fd33752fa2eb666d755113cc20079c1bb73b1320b88269c49cb2d608172f"],
+   ["Möet & Chandon", 120, "be5a572c3a20f2155d453e944581d25fcbdb6c2e", "04192deca01c0f645f0774f6285708b8b8fd71c712ad257c59ce452aaa5d81e9"],
+   ["Irish Coffee", 12, "0977ab6361761ca79310b81f7e12782d41733366", "81e5510d6b2e6917e944984ad7fcca4ad4308e8320cb9bcc562ac51310434fcc"]]}
+ ],
+ "boissons_resume": ["Apéritifs : 5", "Vins rouges : 8", "Vins rosés : 10", "Vins blancs : 8", "Champagnes : 3", "Boissons fraîches : 8", "Boissons chaudes : 7", "Digestifs : 3"],
+ "groupes": ["Formule Semaine groupes (mar.–jeu.) : 30 €", "Formule Week-end groupes (ven.–dim.) : 40 €", "Menu enfant groupes : 12 €", "Option anniversaire : 5 €/pers.", "Grande salle : 130 couverts", "Petite salle : 60 places"],
+ "fiche": {"nom": "Villa Beach", "adresse": "23 rue des Pyrénées, 91090 Lisses", "telephone": "01 84 60 20 46", "site": "villabeach.foodeatup.fr"}
+}

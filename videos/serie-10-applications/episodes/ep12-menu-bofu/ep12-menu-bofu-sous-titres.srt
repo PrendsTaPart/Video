@@ -1,0 +1,47 @@
+1
+00:00:00,300 --> 00:00:01,540
+Ta carte sur tes tables,
+
+2
+00:00:01,540 --> 00:00:02,840
+sans rien ressaisir.
+
+3
+00:00:02,840 --> 00:00:04,540
+Tu relies la tablette à FoodEatUp avec
+
+4
+00:00:04,540 --> 00:00:05,300
+un code.
+
+5
+00:00:05,300 --> 00:00:05,980
+Ta carte,
+
+6
+00:00:05,980 --> 00:00:07,770
+tes prix et tes ruptures arrivent tout
+
+7
+00:00:07,770 --> 00:00:08,120
+seuls.
+
+8
+00:00:08,120 --> 00:00:09,720
+Tu mets tes couleurs et ton logo.
+
+9
+00:00:09,720 --> 00:00:11,480
+Et le client rejoint ta fidélité à
+
+10
+00:00:11,480 --> 00:00:12,360
+la fin du repas.
+
+11
+00:00:12,360 --> 00:00:13,200
+Commente MENU,
+
+12
+00:00:13,200 --> 00:00:14,480
+je t'envoie le lien.

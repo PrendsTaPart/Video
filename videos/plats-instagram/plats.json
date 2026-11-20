@@ -1,0 +1,461 @@
+[
+ {
+  "slug": "magret",
+  "nom": "Magret de canard",
+  "musique": "bistro",
+  "vo": "vo-magret.mp3",
+  "plans": [
+   [
+    "magret-ardoise-marbre-vert",
+    1.0,
+    1.08,
+    0.5,
+    0.55
+   ],
+   [
+    "magret-ardoise-bois-vertical",
+    1.9,
+    2.05,
+    0.82,
+    0.45
+   ],
+   [
+    "magret-ardoise-bois-vertical",
+    1.8,
+    1.95,
+    0.42,
+    0.62
+   ],
+   [
+    "magret-ardoise-bois-vertical",
+    1.15,
+    1.0,
+    0.6,
+    0.55
+   ]
+  ],
+  "lignes": [
+   [
+    "Tranché,<br><em>bien rosé</em>",
+    "tranché"
+   ],
+   [
+    "Pommes de terre dorées,<br><em>salade fraîche</em>",
+    "des"
+   ],
+   [
+    "Une ardoise<br><em>qui donne faim</em>",
+    "une"
+   ]
+  ],
+  "titre": "Magret de canard"
+ },
+ {
+  "slug": "foie-gras",
+  "nom": "Foie gras & chutney",
+  "musique": "lounge",
+  "vo": "vo-foie-gras.mp3",
+  "plans": [
+   [
+    "foie-gras-chutney",
+    1.0,
+    1.08,
+    0.5,
+    0.55
+   ],
+   [
+    "foie-gras-chutney",
+    2.0,
+    2.15,
+    0.45,
+    0.6
+   ],
+   [
+    "foie-gras-chutney",
+    1.9,
+    2.05,
+    0.8,
+    0.7
+   ],
+   [
+    "foie-gras-chutney",
+    1.15,
+    1.0,
+    0.5,
+    0.55
+   ]
+  ],
+  "lignes": [
+   [
+    "Le foie gras,<br><em>fondant</em>",
+    "foie"
+   ],
+   [
+    "Chutney, fleur de sel,<br><em>pain toasté</em>",
+    "son"
+   ],
+   [
+    "Le début parfait<br><em>d'une belle soirée</em>",
+    "le"
+   ]
+  ],
+  "titre": "Foie gras<br>& chutney"
+ },
+ {
+  "slug": "veloute",
+  "nom": "Le velouté",
+  "musique": "bistro",
+  "vo": "vo-veloute.mp3",
+  "plans": [
+   [
+    "veloute",
+    1.0,
+    1.08,
+    0.6,
+    0.58
+   ],
+   [
+    "veloute",
+    2.4,
+    2.6,
+    0.6,
+    0.6
+   ],
+   [
+    "veloute",
+    1.8,
+    1.95,
+    0.42,
+    0.68
+   ],
+   [
+    "veloute",
+    1.15,
+    1.0,
+    0.6,
+    0.58
+   ]
+  ],
+  "lignes": [
+   [
+    "Un velouté<br><em>tout doux</em>",
+    "un"
+   ],
+   [
+    "Herbes fraîches,<br><em>une fleur</em>",
+    "quelques"
+   ],
+   [
+    "L'entrée<br><em>qui réchauffe</em>",
+    "le"
+   ]
+  ],
+  "titre": "Le velouté"
+ },
+ {
+  "slug": "tagliatelles-burrata",
+  "nom": "Tagliatelles & burrata",
+  "musique": "lounge",
+  "vo": "vo-tagliatelles.mp3",
+  "plans": [
+   [
+    "tagliatelles-burrata",
+    1.0,
+    1.08,
+    0.62,
+    0.66
+   ],
+   [
+    "tagliatelles-burrata",
+    2.3,
+    2.45,
+    0.75,
+    0.62
+   ],
+   [
+    "tagliatelles-burrata",
+    2.0,
+    2.15,
+    0.55,
+    0.7
+   ],
+   [
+    "tagliatelles-burrata",
+    1.15,
+    1.0,
+    0.62,
+    0.66
+   ]
+  ],
+  "lignes": [
+   [
+    "Des tagliatelles<br><em>bien crémeuses</em>",
+    "des"
+   ],
+   [
+    "Et au milieu,<br><em>une burrata</em>",
+    "et"
+   ],
+   [
+    "On la coupe…<br><em>et c'est parti</em>",
+    "on"
+   ]
+  ],
+  "titre": "Tagliatelles<br>& burrata"
+ },
+ {
+  "slug": "burger-poulet",
+  "nom": "Burger au poulet & frites",
+  "musique": "lounge",
+  "vo": "vo-burger.mp3",
+  "plans": [
+   [
+    "burger-poulet-frites",
+    1.0,
+    1.08,
+    0.55,
+    0.55
+   ],
+   [
+    "burger-poulet-frites",
+    2.0,
+    2.15,
+    0.67,
+    0.5
+   ],
+   [
+    "burger-poulet-frites",
+    2.0,
+    2.15,
+    0.4,
+    0.55
+   ],
+   [
+    "burger-poulet-frites",
+    1.15,
+    1.0,
+    0.55,
+    0.55
+   ]
+  ],
+  "lignes": [
+   [
+    "Un burger au poulet,<br><em>généreux</em>",
+    "un"
+   ],
+   [
+    "Le fromage<br><em>qui coule</em>",
+    "le"
+   ],
+   [
+    "Et ses frites,<br><em>bien dorées</em>",
+    "et"
+   ]
+  ],
+  "titre": "Burger au poulet<br>& frites"
+ },
+ {
+  "slug": "jarret-agneau",
+  "nom": "Jarret d'agneau & purée",
+  "musique": "bistro",
+  "vo": "vo-jarret.mp3",
+  "plans": [
+   [
+    "jarret-agneau-puree",
+    1.0,
+    1.08,
+    0.55,
+    0.55
+   ],
+   [
+    "jarret-agneau-puree",
+    1.9,
+    2.05,
+    0.45,
+    0.55
+   ],
+   [
+    "jarret-agneau-puree",
+    2.0,
+    2.15,
+    0.62,
+    0.68
+   ],
+   [
+    "jarret-agneau-puree",
+    1.15,
+    1.0,
+    0.55,
+    0.55
+   ]
+  ],
+  "lignes": [
+   [
+    "Le jarret d'agneau,<br><em>nappé de son jus</em>",
+    "le"
+   ],
+   [
+    "Une purée<br><em>toute onctueuse</em>",
+    "à"
+   ],
+   [
+    "Un plat<br><em>qui prend son temps</em>",
+    "un"
+   ]
+  ],
+  "titre": "Jarret d'agneau<br>& purée"
+ },
+ {
+  "slug": "supreme-poulet",
+  "nom": "Suprême de poulet & gratin dauphinois",
+  "musique": "bistro",
+  "vo": "vo-supreme.mp3",
+  "plans": [
+   [
+    "supreme-poulet-gratin-dauphinois",
+    1.0,
+    1.08,
+    0.5,
+    0.6
+   ],
+   [
+    "supreme-poulet-gratin-dauphinois",
+    2.0,
+    2.15,
+    0.38,
+    0.52
+   ],
+   [
+    "supreme-poulet-gratin-dauphinois",
+    2.0,
+    2.15,
+    0.6,
+    0.7
+   ],
+   [
+    "supreme-poulet-gratin-dauphinois",
+    1.15,
+    1.0,
+    0.5,
+    0.6
+   ]
+  ],
+  "lignes": [
+   [
+    "Un suprême de poulet,<br><em>bien doré</em>",
+    "un"
+   ],
+   [
+    "Un gratin dauphinois,<br><em>gratiné comme il faut</em>",
+    "à"
+   ],
+   [
+    "Le réconfort,<br><em>tout simplement</em>",
+    "le"
+   ]
+  ],
+  "titre": "Suprême de poulet<br>& gratin dauphinois"
+ },
+ {
+  "slug": "pain-perdu",
+  "nom": "Brioche façon pain perdu",
+  "musique": "dessert",
+  "vo": "vo-pain-perdu.mp3",
+  "plans": [
+   [
+    "pain-perdu-brioche-flambe-1",
+    1.0,
+    1.1,
+    0.5,
+    0.5
+   ],
+   [
+    "pain-perdu-brioche-flambe-2",
+    1.6,
+    1.75,
+    0.47,
+    0.62
+   ],
+   [
+    "pain-perdu-brioche-flambe-2",
+    1.6,
+    1.75,
+    0.82,
+    0.66
+   ],
+   [
+    "pain-perdu-brioche-flambe-1",
+    1.15,
+    1.0,
+    0.45,
+    0.5
+   ]
+  ],
+  "lignes": [
+   [
+    "La brioche…<br><em>et la flamme</em>",
+    "la"
+   ],
+   [
+    "Fruits rouges,<br><em>banane, kiwi</em>",
+    "fruits"
+   ],
+   [
+    "Le dessert<br><em>qui fait tourner les têtes</em>",
+    "le"
+   ]
+  ],
+  "titre": "Brioche façon<br>pain perdu"
+ },
+ {
+  "slug": "fondant-chocolat",
+  "nom": "Fondant au chocolat & fruits frais",
+  "musique": "dessert",
+  "vo": "vo-fondant.mp3",
+  "plans": [
+   [
+    "fondant-chocolat-fruits",
+    1.0,
+    1.08,
+    0.55,
+    0.6
+   ],
+   [
+    "fondant-chocolat-fruits",
+    2.1,
+    2.25,
+    0.7,
+    0.58
+   ],
+   [
+    "fondant-chocolat-fruits",
+    2.0,
+    2.15,
+    0.38,
+    0.6
+   ],
+   [
+    "fondant-chocolat-fruits",
+    1.15,
+    1.0,
+    0.55,
+    0.6
+   ]
+  ],
+  "lignes": [
+   [
+    "Un fondant<br><em>au chocolat</em>",
+    "un"
+   ],
+   [
+    "Et tout autour,<br><em>des fruits frais</em>",
+    "et"
+   ],
+   [
+    "Pour finir<br><em>en douceur</em>",
+    "pour"
+   ]
+  ],
+  "titre": "Fondant au chocolat<br>& fruits frais"
+ }
+]

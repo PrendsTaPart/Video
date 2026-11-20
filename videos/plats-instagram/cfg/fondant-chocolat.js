@@ -1,0 +1,1 @@
+window.CFG={"dur": 13.55, "nom": "Fondant au chocolat<br>& fruits frais", "lignes": [[0.4, 1.77, "Un fondant<br><em>au chocolat</em>"], [1.92, 6.17, "Et tout autour,<br><em>des fruits frais</em>"], [6.32, 7.6, "Pour finir<br><em>en douceur</em>"]], "titre": [7.75, 10.15], "carte": 10.15, "coupes": [1.82, 6.22, 7.65], "fond": "photos/fondant-chocolat-fruits.jpg"};

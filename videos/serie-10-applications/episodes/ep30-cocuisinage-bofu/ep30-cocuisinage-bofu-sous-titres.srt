@@ -1,0 +1,43 @@
+1
+00:00:00,300 --> 00:00:00,820
+Cocuisinage,
+
+2
+00:00:00,820 --> 00:00:01,900
+c'est pour toi,
+
+3
+00:00:01,900 --> 00:00:02,660
+à la maison.
+
+4
+00:00:02,660 --> 00:00:04,160
+Tu réserves une table ou tu commandes
+
+5
+00:00:04,160 --> 00:00:04,980
+chez tes restaurants.
+
+6
+00:00:04,980 --> 00:00:06,600
+Tu gardes toutes tes cartes de fidélité
+
+7
+00:00:06,600 --> 00:00:07,540
+au même endroit.
+
+8
+00:00:07,540 --> 00:00:08,700
+Et tu poses tes questions de cuisine
+
+9
+00:00:08,700 --> 00:00:09,380
+au chef.
+
+10
+00:00:09,380 --> 00:00:10,380
+Commente COCUISINE,
+
+11
+00:00:10,380 --> 00:00:11,600
+je t'envoie le lien.

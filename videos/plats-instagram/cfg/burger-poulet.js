@@ -1,0 +1,1 @@
+window.CFG={"dur": 13.97, "nom": "Burger au poulet<br>& frites", "lignes": [[0.4, 2.77, "Un burger au poulet,<br><em>généreux</em>"], [2.92, 5.01, "Le fromage<br><em>qui coule</em>"], [5.16, 8.02, "Et ses frites,<br><em>bien dorées</em>"]], "titre": [8.17, 10.57], "carte": 10.57, "coupes": [2.82, 5.06, 8.07], "fond": "photos/burger-poulet-frites.jpg"};

@@ -1,0 +1,121 @@
+[
+ {
+  "slug": "villa-beach-carte",
+  "titre": "Villa Beach · toute la carte",
+  "collection": "La carte",
+  "video_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/villa-beach-carte/villa-beach-carte-49s.mp4",
+  "miniature_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/villa-beach-carte/villa-beach-carte-miniature.png",
+  "format": "9:16",
+  "legende": "Toute la carte de la Villa Beach en 49 secondes. Réservez sur villabeach.foodeatup.fr",
+  "publie": true
+ },
+ {
+  "slug": "villa-beach-souris-agneau",
+  "titre": "Souris d'agneau confite 9 h",
+  "collection": "Nos plats",
+  "video_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/souris-agneau/villa-beach-souris-agneau.mp4",
+  "miniature_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/souris-agneau/villa-beach-souris-agneau-miniature.jpg",
+  "format": "9:16",
+  "legende": "La souris d'agneau confite neuf heures, écrasé de pommes de terre. Ce soir, à la Villa Beach.",
+  "publie": true
+ },
+ {
+  "slug": "villa-beach-magret",
+  "titre": "Magret de canard",
+  "collection": "Nos plats",
+  "video_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-magret.mp4",
+  "miniature_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-magret-miniature.jpg",
+  "format": "9:16",
+  "legende": "Le magret de canard, tranché et bien rosé 🦆 Pommes de terre dorées, salade fraîche… une ardoise qui donne faim. Réservez votre table 👉 villabeach.foodeatup.fr #villabeach #magret #restaurant #lisses #foodporn",
+  "publie": true,
+  "foodeatup_asset_id": 37
+ },
+ {
+  "slug": "villa-beach-foie-gras",
+  "titre": "Foie gras & chutney",
+  "collection": "Nos plats",
+  "video_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-foie-gras.mp4",
+  "miniature_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-foie-gras-miniature.jpg",
+  "format": "9:16",
+  "legende": "Le foie gras, fondant, avec son chutney et son pain toasté ✨ Le début parfait d'une belle soirée. Réservez 👉 villabeach.foodeatup.fr #villabeach #foiegras #entree #restaurant #lisses",
+  "publie": true,
+  "foodeatup_asset_id": 38
+ },
+ {
+  "slug": "villa-beach-veloute",
+  "titre": "Le velouté",
+  "collection": "Nos plats",
+  "video_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-veloute.mp4",
+  "miniature_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-veloute-miniature.jpg",
+  "format": "9:16",
+  "legende": "Un velouté tout doux, herbes fraîches et une fleur 🌼 L'entrée qui réchauffe. Réservez 👉 villabeach.foodeatup.fr #villabeach #veloute #restaurant #lisses",
+  "publie": true,
+  "foodeatup_asset_id": 39
+ },
+ {
+  "slug": "villa-beach-tagliatelles-burrata",
+  "titre": "Tagliatelles & burrata",
+  "collection": "Nos plats",
+  "video_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-tagliatelles-burrata.mp4",
+  "miniature_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-tagliatelles-burrata-miniature.jpg",
+  "format": "9:16",
+  "legende": "Des tagliatelles bien crémeuses… et au milieu, une burrata 🤍 Réservez 👉 villabeach.foodeatup.fr #villabeach #burrata #pasta #restaurant #lisses",
+  "publie": true,
+  "foodeatup_asset_id": 40
+ },
+ {
+  "slug": "villa-beach-burger-poulet",
+  "titre": "Burger au poulet & frites",
+  "collection": "Nos plats",
+  "video_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-burger-poulet.mp4",
+  "miniature_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-burger-poulet-miniature.jpg",
+  "format": "9:16",
+  "legende": "Un burger au poulet généreux, le fromage qui coule, et ses frites bien dorées 🍔🍟 Réservez 👉 villabeach.foodeatup.fr #villabeach #burger #frites #restaurant #lisses",
+  "publie": true,
+  "foodeatup_asset_id": 41
+ },
+ {
+  "slug": "villa-beach-jarret-agneau",
+  "titre": "Jarret d'agneau & purée",
+  "collection": "Nos plats",
+  "video_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-jarret-agneau.mp4",
+  "miniature_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-jarret-agneau-miniature.jpg",
+  "format": "9:16",
+  "legende": "Le jarret d'agneau, nappé de son jus, et sa purée toute onctueuse. Un plat qui prend son temps 🔥 Réservez 👉 villabeach.foodeatup.fr #villabeach #agneau #restaurant #lisses",
+  "publie": true,
+  "foodeatup_asset_id": 42
+ },
+ {
+  "slug": "villa-beach-supreme-poulet",
+  "titre": "Suprême de poulet & gratin dauphinois",
+  "collection": "Nos plats",
+  "video_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-supreme-poulet.mp4",
+  "miniature_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-supreme-poulet-miniature.jpg",
+  "format": "9:16",
+  "legende": "Un suprême de poulet bien doré et un gratin dauphinois gratiné comme il faut 🧀 Le réconfort, tout simplement. Réservez 👉 villabeach.foodeatup.fr #villabeach #gratindauphinois #restaurant #lisses",
+  "publie": true,
+  "foodeatup_asset_id": 43
+ },
+ {
+  "slug": "villa-beach-pain-perdu",
+  "titre": "Brioche façon pain perdu",
+  "collection": "Nos plats",
+  "video_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-pain-perdu.mp4",
+  "miniature_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-pain-perdu-miniature.jpg",
+  "format": "9:16",
+  "legende": "La brioche façon pain perdu… et la flamme 🔥 Fruits rouges, banane, kiwi. Le dessert qui fait tourner les têtes. Réservez 👉 villabeach.foodeatup.fr #villabeach #painperdu #dessert #lisses",
+  "publie": true,
+  "foodeatup_asset_id": 44
+ },
+ {
+  "slug": "villa-beach-fondant-chocolat",
+  "titre": "Fondant au chocolat & fruits frais",
+  "collection": "Nos plats",
+  "video_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-fondant-chocolat.mp4",
+  "miniature_url": "https://raw.githubusercontent.com/PrendsTaPart/Video/20080c414d15d0fc5e19295f4f00032f50f8829d/videos/plats-instagram/final/villa-beach-fondant-chocolat-miniature.jpg",
+  "format": "9:16",
+  "legende": "Un fondant au chocolat et, tout autour, des fruits frais 🍫🥝 Pour finir en douceur. Réservez 👉 villabeach.foodeatup.fr #villabeach #fondantauchocolat #dessert #lisses",
+  "publie": true,
+  "foodeatup_asset_id": 45
+ }
+]

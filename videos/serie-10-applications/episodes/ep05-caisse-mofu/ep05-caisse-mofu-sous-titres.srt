@@ -1,0 +1,55 @@
+1
+00:00:00,300 --> 00:00:00,780
+Hier,
+
+2
+00:00:00,780 --> 00:00:02,060
+je te parlais des allers-retours à la
+
+3
+00:00:02,060 --> 00:00:02,600
+caisse.
+
+4
+00:00:02,600 --> 00:00:04,080
+Avec FoodEatUp Caisse Mobile,
+
+5
+00:00:04,080 --> 00:00:05,380
+ton serveur voit tout le plan de
+
+6
+00:00:05,380 --> 00:00:06,540
+salle sur son téléphone.
+
+7
+00:00:06,540 --> 00:00:07,840
+Il prend la commande à table,
+
+8
+00:00:07,840 --> 00:00:08,640
+plat par plat.
+
+9
+00:00:08,640 --> 00:00:10,320
+Elle part directement en cuisine.
+
+10
+00:00:10,320 --> 00:00:11,720
+Le client paie avec sa carte,
+
+11
+00:00:11,720 --> 00:00:12,720
+sur le téléphone.
+
+12
+00:00:12,720 --> 00:00:13,690
+Et le ticket est prêt.
+
+13
+00:00:13,690 --> 00:00:14,540
+Commente CAISSE,
+
+14
+00:00:14,540 --> 00:00:15,720
+je t'envoie le lien.

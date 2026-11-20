@@ -1,0 +1,1 @@
+window.CFG={"dur": 14.63, "nom": "Magret de canard", "lignes": [[1.82, 3.75, "Tranché,<br><em>bien rosé</em>"], [3.9, 5.03, "Pommes de terre dorées,<br><em>salade fraîche</em>"], [5.18, 8.68, "Une ardoise<br><em>qui donne faim</em>"]], "titre": [8.83, 11.23], "carte": 11.23, "coupes": [3.8, 5.08, 8.73], "fond": "photos/magret-ardoise-marbre-vert.jpg"};

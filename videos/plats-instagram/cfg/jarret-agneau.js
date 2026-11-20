@@ -1,0 +1,1 @@
+window.CFG={"dur": 14.63, "nom": "Jarret d'agneau<br>& purée", "lignes": [[0.4, 3.81, "Le jarret d'agneau,<br><em>nappé de son jus</em>"], [3.96, 6.31, "Une purée<br><em>toute onctueuse</em>"], [6.46, 8.68, "Un plat<br><em>qui prend son temps</em>"]], "titre": [8.83, 11.23], "carte": 11.23, "coupes": [3.86, 6.36, 8.73], "fond": "photos/jarret-agneau-puree.jpg"};
