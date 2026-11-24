@@ -1,0 +1,185 @@
+{
+  "draftLabel": "VERSION DE TRAVAIL · voix off et musique à finaliser",
+  "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet TikTok Reels",
+  "title": "Reel 4 — Expérience VIP",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 19
+  },
+  "scenes": [
+    {
+      "id": "a",
+      "start": 0,
+      "end": 3,
+      "media": "assets/photos/amies-tenues-chic-bouteille.jpg",
+      "fx": "50% 35%",
+      "grade": "club",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "kicker",
+          "text": "Réveillon 31.12.2026",
+          "at": 0.1
+        },
+        {
+          "role": "brand",
+          "text": "Votre réveillon",
+          "at": 0.25
+        },
+        {
+          "role": "tagline",
+          "text": "en mode VIP",
+          "at": 0.5
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "start": 3.0,
+      "end": 5.5,
+      "media": "assets/photos/amies-tenues-chic-bouteille.jpg",
+      "fx": "45% 60%",
+      "grade": "dark",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "price",
+          "label": "Pack Classique",
+          "text": "200 €",
+          "at": 3.08
+        },
+        {
+          "role": "menu",
+          "text": "4 entrées · table · 1 bouteille",
+          "at": 3.35
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "start": 5.5,
+      "end": 8.0,
+      "media": "assets/photos/bar-flamme-cocktail.jpg",
+      "fx": "50% 45%",
+      "grade": "dark",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "price",
+          "label": "Pack Premium",
+          "text": "280 €",
+          "at": 5.58
+        },
+        {
+          "role": "menu",
+          "text": "4 entrées · table · bouteille premium",
+          "at": 5.85
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "start": 8.0,
+      "end": 10.5,
+      "media": "assets/photos/serveur-cocktails-plateau.jpg",
+      "fx": "55% 55%",
+      "grade": "dark",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "price",
+          "label": "Pack Magnum",
+          "text": "500 €",
+          "at": 8.08
+        },
+        {
+          "role": "menu",
+          "text": "8 entrées · table · magnum premium",
+          "at": 8.35
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "start": 10.5,
+      "end": 13.0,
+      "media": "assets/photos/groupe-neon-villabeach.jpg",
+      "fx": "50% 45%",
+      "grade": "dark",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "price",
+          "label": "Pack Ultra VIP",
+          "text": "1 200 €",
+          "at": 10.58
+        },
+        {
+          "role": "menu",
+          "text": "16 entrées · place Ultra VIP · réhoboam 4,5 L",
+          "at": 10.85
+        }
+      ]
+    },
+    {
+      "id": "fin",
+      "start": 13,
+      "end": 19,
+      "type": "endcard",
+      "date": "31 décembre 2026",
+      "title": "Réservez votre table",
+      "sub": "Préventes conseillées • Accès prioritaire",
+      "venue": "Domaine Villa Beach",
+      "address": "23 rue des Pyrénées, 91090 Lisses",
+      "phone": "01 84 60 20 46",
+      "url": null,
+      "qr": null
+    }
+  ],
+  "subtitles": [
+    {
+      "start": 0.3,
+      "end": 2.9,
+      "text": "Tables, bouteilles et espaces VIP"
+    },
+    {
+      "start": 3.1,
+      "end": 5.4,
+      "text": "Choisissez votre pack"
+    },
+    {
+      "start": 5.6,
+      "end": 8.0,
+      "text": "et vivez le réveillon en grand"
+    }
+  ],
+  "voiceover": {
+    "lines": [
+      {
+        "start": 0.3,
+        "text": "Tables, bouteilles et espaces VIP. Choisissez votre pack et vivez le réveillon en grand."
+      }
+    ]
+  },
+  "music": {
+    "sections": [
+      {
+        "style": "build",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "style": "drop",
+        "start": 3,
+        "end": 13
+      },
+      {
+        "style": "outro",
+        "start": 13,
+        "end": 19
+      }
+    ]
+  }
+}

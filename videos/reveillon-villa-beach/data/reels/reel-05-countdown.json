@@ -1,0 +1,169 @@
+{
+  "draftLabel": "VERSION DE TRAVAIL · voix off et musique à finaliser",
+  "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet TikTok Reels",
+  "title": "Reel 5 — Countdown minuit",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 21
+  },
+  "scenes": [
+    {
+      "id": "h",
+      "start": 0,
+      "end": 4,
+      "media": "assets/photos/silhouette-lumieres-villabeach.jpg",
+      "fx": "50% 50%",
+      "grade": "night",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "kicker",
+          "text": "31 décembre 2026",
+          "at": 0.1
+        },
+        {
+          "role": "big",
+          "text": "23:59",
+          "at": 0.3
+        }
+      ]
+    },
+    {
+      "id": "dj",
+      "start": 4,
+      "end": 6,
+      "media": "assets/photos/dj-neon-villabeach.jpg",
+      "fx": "30% 50%",
+      "grade": "club",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "big",
+          "text": "Prêts ?",
+          "at": 4.1
+        }
+      ]
+    },
+    {
+      "id": "dj2",
+      "start": 6,
+      "end": 8,
+      "media": "assets/photos/piste-mains-levees.jpg",
+      "fx": "60% 45%",
+      "grade": "club",
+      "zoom": "in"
+    },
+    {
+      "id": "cd",
+      "start": 8,
+      "end": 11,
+      "type": "countdown",
+      "beats": [
+        8.0,
+        8.3,
+        8.6,
+        8.9,
+        9.2,
+        9.5,
+        9.8,
+        10.1,
+        10.4,
+        10.7
+      ],
+      "labels": [
+        "10",
+        "9",
+        "8",
+        "7",
+        "6",
+        "5",
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "kicker": "Minuit"
+    },
+    {
+      "id": "ny",
+      "start": 11,
+      "end": 15,
+      "media": "assets/photos/fete-villa.jpg",
+      "fx": "70% 40%",
+      "grade": "midnight",
+      "celebrate": true,
+      "texts": [
+        {
+          "role": "burst",
+          "text": "Happy New Year",
+          "at": 11.1,
+          "end": 15
+        },
+        {
+          "role": "big",
+          "text": "2027 !",
+          "at": 11.4
+        }
+      ]
+    },
+    {
+      "id": "fin",
+      "start": 15,
+      "end": 21,
+      "type": "endcard",
+      "date": "31 décembre 2026",
+      "title": "Fêtez 2027 avec nous",
+      "sub": "Préventes conseillées • Accès prioritaire",
+      "venue": "Domaine Villa Beach",
+      "address": "23 rue des Pyrénées, 91090 Lisses",
+      "phone": "01 84 60 20 46",
+      "url": null,
+      "qr": null
+    }
+  ],
+  "subtitles": [],
+  "voiceover": {
+    "lines": []
+  },
+  "music": {
+    "sections": [
+      {
+        "style": "intro",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "style": "build",
+        "start": 4,
+        "end": 8
+      },
+      {
+        "style": "countdown",
+        "beats": [
+          8.0,
+          8.3,
+          8.6,
+          8.9,
+          9.2,
+          9.5,
+          9.8,
+          10.1,
+          10.4,
+          10.7
+        ]
+      },
+      {
+        "style": "drop",
+        "start": 11,
+        "end": 15
+      },
+      {
+        "style": "outro",
+        "start": 15,
+        "end": 21
+      }
+    ]
+  }
+}

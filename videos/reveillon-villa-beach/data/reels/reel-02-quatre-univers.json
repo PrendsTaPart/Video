@@ -1,0 +1,143 @@
+{
+  "draftLabel": "VERSION DE TRAVAIL · voix off et musique à finaliser",
+  "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet TikTok Reels",
+  "title": "Reel 2 — 4 univers",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 20
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "start": 0.0,
+      "end": 3.0,
+      "media": "assets/photos/dj-neon-villabeach.jpg",
+      "fx": "30% 50%",
+      "grade": "salle-gen",
+      "zoom": "in",
+      "salle": {
+        "num": "Salle 1",
+        "name": "Team Généraliste ?",
+        "genres": "Hits · Pop · R&B · House"
+      }
+    },
+    {
+      "id": "s2",
+      "start": 3.0,
+      "end": 6.0,
+      "media": "assets/photos/salle-latino-couple-1.jpg",
+      "fx": "45% 40%",
+      "grade": "salle-latino",
+      "zoom": "in",
+      "salle": {
+        "num": "Salle 2",
+        "name": "Team Latino ?",
+        "genres": "Salsa · Bachata · Kizomba"
+      }
+    },
+    {
+      "id": "s3",
+      "start": 6.0,
+      "end": 9.0,
+      "media": "assets/photos/fete-villa.jpg",
+      "fx": "35% 45%",
+      "grade": "salle-retro",
+      "zoom": "in",
+      "salle": {
+        "num": "Salle 3",
+        "name": "Team 80-90-2000 ?",
+        "genres": "Disco · Funk · Classics"
+      }
+    },
+    {
+      "id": "s4",
+      "start": 9.0,
+      "end": 12.0,
+      "media": "assets/photos/couple-danse.jpg",
+      "fx": "55% 40%",
+      "grade": "salle-carib",
+      "zoom": "in",
+      "salle": {
+        "num": "Salle 4",
+        "name": "Team Caraïbéenne ?",
+        "genres": "Zouk · Dancehall · Shatta"
+      }
+    },
+    {
+      "id": "t",
+      "start": 12.0,
+      "end": 14.0,
+      "media": "assets/photos/piste-mains-levees.jpg",
+      "fx": "55% 50%",
+      "grade": "club",
+      "celebrate": true,
+      "texts": [
+        {
+          "role": "mid",
+          "text": "4 salles, 4 ambiances !",
+          "at": 12.1
+        }
+      ]
+    },
+    {
+      "id": "fin",
+      "start": 14.0,
+      "end": 20.0,
+      "type": "endcard",
+      "date": "31 décembre 2026",
+      "title": "Quelle sera votre salle ?",
+      "sub": "Préventes conseillées • Accès prioritaire",
+      "venue": "Domaine Villa Beach",
+      "address": "23 rue des Pyrénées, 91090 Lisses",
+      "phone": "01 84 60 20 46",
+      "url": null,
+      "qr": null
+    }
+  ],
+  "subtitles": [],
+  "voiceover": {
+    "optional": true,
+    "lines": [
+      {
+        "start": 12.1,
+        "text": "Quelle salle sera votre QG ?"
+      }
+    ]
+  },
+  "music": {
+    "sections": [
+      {
+        "style": "house",
+        "start": 0.0,
+        "end": 3.0
+      },
+      {
+        "style": "latin",
+        "start": 3.0,
+        "end": 6.0
+      },
+      {
+        "style": "disco",
+        "start": 6.0,
+        "end": 9.0
+      },
+      {
+        "style": "carib",
+        "start": 9.0,
+        "end": 12.0
+      },
+      {
+        "style": "drop",
+        "start": 12.0,
+        "end": 14.0
+      },
+      {
+        "style": "outro",
+        "start": 14.0,
+        "end": 20.0
+      }
+    ]
+  }
+}

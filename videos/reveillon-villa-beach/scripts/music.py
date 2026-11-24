@@ -11,15 +11,19 @@ sur le même découpage. Le découpage suit data/timeline.json :
   26-30 dancehall/zouk + steel drum (Caraïbéenne) | 30-34.4 montée
   34.4-37 compte à rebours (3 battements) | 37-47 drop minuit | 47-54 outro
 
-Usage : python3 scripts/music.py assets/music/musique-travail.wav
+Usage : python3 scripts/music.py data/timeline.json assets/music/musique-travail.wav
 """
 import sys
 import wave
 
 import numpy as np
 
+import json
 SR = 44100
-DUR = 54.0
+# Plan musical : clé "music" d'un fichier timeline (sections style/start/end).
+TL = json.load(open(sys.argv[1], encoding="utf-8"))
+PLAN = TL["music"]
+DUR = float(TL["format"]["duration"])
 BPM = 120.0
 BEAT = 60.0 / BPM
 N = int(SR * DUR)
@@ -169,132 +173,142 @@ def chord_at(x, start, chords, bar=4 * BEAT):
     return chords[int((x - start) / bar) % len(chords)], int((x - start) / bar) % len(chords)
 
 
-# 0-5 intro
-add(pad([60, 64, 67, 71, 74], 5.6, a=1.2), 0, 0.5)
-for i, m in enumerate([84, 88, 91, 95, 91, 96, 100, 95]):
-    add(bell(m), 0.25 + i * 0.55, 0.12, pan=(-0.5 if i % 2 else 0.5))
-for x in beats(2.5, 5.0):
-    add(kick(punch=0.6), x, 0.35 * (x - 2.0) / 3)
+def sec_intro(a, b):
+    add(pad([60, 64, 67, 71, 74], b - a + 0.6, a=min(1.2, (b - a) / 3)), a, 0.5)
+    for i, m in enumerate([84, 88, 91, 95, 91, 96, 100, 95]):
+        if a + 0.25 + i * 0.55 < b:
+            add(bell(m), a + 0.25 + i * 0.55, 0.12, pan=(-0.5 if i % 2 else 0.5))
+    k0 = a + (b - a) / 2
+    for x in beats(k0, b):
+        add(kick(punch=0.6), x, 0.35 * (x - k0 + 0.5) / (b - k0 + 0.5))
 
-# 5-14 lounge
-for x in beats(5.0, 14.0):
-    k = round((x - 5.0) / BEAT)
-    if k % 2 == 0:
-        add(kick(punch=0.5), x, 0.45)
-    add(hat(0.04), x + BEAT / 2, 0.12, pan=0.3)
-    if k % 4 == 0:
-        ch, idx = chord_at(x, 5.0, CHORDS_LOUNGE)
-        add(rhodes(ch, 2.0), x, 0.55)
-    _, idx = chord_at(x, 5.0, CHORDS_LOUNGE)
-    walk = [0, 7, 12, 7][k % 4]
-    add(bass(ROOTS_LOUNGE[idx] + walk, 0.45), x, 0.45)
-    if k % 4 == 1:
-        add(woodblock(), x + BEAT / 2, 0.08, pan=-0.4)
 
-# 14-18 house (Généraliste)
-for x in beats(14.0, 18.0):
-    k = round((x - 14.0) / BEAT)
-    add(kick(), x, 0.8)
-    add(hat(0.09), x + BEAT / 2, 0.22, pan=0.25)
-    if k % 2 == 1:
-        add(clap(), x, 0.35)
-    ch, idx = chord_at(x, 14.0, CHORDS_PARTY)
-    add(saw_stab([m + 12 for m in ch]), x + BEAT / 2, 0.22)
-    add(bass(ROOTS_PARTY[idx], 0.3), x + BEAT / 2, 0.5)
+def sec_lounge(a, b):
+    for x in beats(a, b):
+        k = round((x - a) / BEAT)
+        if k % 2 == 0:
+            add(kick(punch=0.5), x, 0.45)
+        add(hat(0.04), x + BEAT / 2, 0.12, pan=0.3)
+        ch, idx = chord_at(x, a, CHORDS_LOUNGE)
+        if k % 4 == 0:
+            add(rhodes(ch, 2.0), x, 0.55)
+        add(bass(ROOTS_LOUNGE[idx] + [0, 7, 12, 7][k % 4], 0.45), x, 0.45)
+        if k % 4 == 1:
+            add(woodblock(), x + BEAT / 2, 0.08, pan=-0.4)
 
-# 18-22 latino (clave son 3-2, congas, montuno, tumbao)
-clave = [0, 1.5, 3, 5, 6]  # en temps sur 2 mesures
-for bar in beats(18.0, 22.0, step=8 * BEAT):
-    for c in clave:
-        add(woodblock(), bar + c * BEAT, 0.3, pan=0.2)
-for x in beats(18.0, 22.0, step=BEAT / 2):
-    k = round((x - 18.0) / (BEAT / 2))
-    ch, idx = chord_at(x, 18.0, CHORDS_PARTY)
-    add(pluck(ch[k % 3] + 12 * (1 + (k % 4 == 3)), 0.25, 4), x, 0.25, pan=-0.2)
-    if k % 4 in (3, 6 % 4):
-        add(conga(330 if k % 8 < 4 else 260), x, 0.35, pan=0.4)
-for x in beats(18.0, 22.0):
-    k = round((x - 18.0) / BEAT)
-    add(kick(punch=0.4), x, 0.3)
-    _, idx = chord_at(x, 18.0, CHORDS_PARTY)
-    if k % 2 == 1:
-        add(bass(ROOTS_PARTY[idx], 0.4), x + BEAT / 2, 0.55)
-    add(conga(200), x + BEAT * 0.75, 0.25, pan=-0.4)
 
-# 22-26 disco funk (80/90/2000)
-for x in beats(22.0, 26.0, step=BEAT / 2):
-    k = round((x - 22.0) / (BEAT / 2))
-    _, idx = chord_at(x, 22.0, CHORDS_PARTY)
-    add(bass(ROOTS_PARTY[idx] + (12 if k % 2 else 0), 0.22), x, 0.55)
-    add(hat(0.06 if k % 2 else 0.03), x, 0.2 if k % 2 else 0.1, pan=0.3)
-for x in beats(22.0, 26.0):
-    k = round((x - 22.0) / BEAT)
-    add(kick(), x, 0.75)
-    if k % 2 == 1:
-        add(snare(), x, 0.3)
-    if k % 4 == 0:
-        ch, _ = chord_at(x, 22.0, CHORDS_PARTY)
-        add(pad([m + 12 for m in ch], 2.0, a=0.15), x, 0.45)
-    ch, _ = chord_at(x, 22.0, CHORDS_PARTY)
-    add(pluck(ch[1] + 24, 0.12, 6), x + BEAT * 0.75, 0.15, pan=-0.5)
+def sec_house(a, b, light=False):
+    for x in beats(a, b):
+        k = round((x - a) / BEAT)
+        add(kick(), x, 0.8 if not light else 0.65)
+        add(hat(0.09), x + BEAT / 2, 0.22, pan=0.25)
+        if k % 2 == 1:
+            add(clap(), x, 0.35)
+        ch, idx = chord_at(x, a, CHORDS_PARTY)
+        add(saw_stab([m + 12 for m in ch]), x + BEAT / 2, 0.22 if not light else 0.15)
+        add(bass(ROOTS_PARTY[idx], 0.3), x + BEAT / 2, 0.5)
 
-# 26-30 caraïbes (dembow + steel drum)
-for bar in beats(26.0, 30.0, step=4 * BEAT):
-    for b in (0, 2):
-        add(kick(punch=0.7), bar + b * BEAT, 0.7)
-    for b in (0.75, 1.5, 2.75, 3.5):
-        add(snare(0.18), bar + b * BEAT, 0.28)
-    for i, m in enumerate([76, 79, 81, 79, 76, 74, 72, 74]):
-        add(steel(m), bar + i * BEAT / 2, 0.3, pan=0.3 * (1 if i % 2 else -1))
-for x in beats(26.0, 30.0, step=BEAT / 2):
-    add(hat(0.04), x, 0.12)
-    _, idx = chord_at(x, 26.0, CHORDS_PARTY)
-for x in beats(26.0, 30.0):
-    _, idx = chord_at(x, 26.0, CHORDS_PARTY)
-    add(bass(ROOTS_PARTY[idx], 0.45), x, 0.5)
 
-# 30-34.4 montée
-for x in beats(30.0, 34.4):
-    add(kick(punch=0.8), x, 0.6)
-    add(hat(0.05), x + BEAT / 2, 0.15)
-add(pad([57, 60, 64, 69], 4.6, a=0.8), 30.0, 0.45)
-add(noise_riser(7.0), 30.0, 0.22)
-roll_t = 32.4
-step = BEAT / 2
-while roll_t < 34.4:
-    add(snare(0.12), roll_t, 0.12 + 0.2 * (roll_t - 32.4) / 2)
-    roll_t += step
-    step = max(step * 0.82, 0.045)
+def sec_latin(a, b):
+    for bar in beats(a, b, step=8 * BEAT):
+        for c in [0, 1.5, 3, 5, 6]:
+            if bar + c * BEAT < b:
+                add(woodblock(), bar + c * BEAT, 0.3, pan=0.2)
+    for x in beats(a, b, step=BEAT / 2):
+        k = round((x - a) / (BEAT / 2))
+        ch, idx = chord_at(x, a, CHORDS_PARTY)
+        add(pluck(ch[k % 3] + 12 * (1 + (k % 4 == 3)), 0.25, 4), x, 0.25, pan=-0.2)
+        if k % 4 in (2, 3):
+            add(conga(330 if k % 8 < 4 else 260), x, 0.35, pan=0.4)
+    for x in beats(a, b):
+        k = round((x - a) / BEAT)
+        add(kick(punch=0.4), x, 0.3)
+        _, idx = chord_at(x, a, CHORDS_PARTY)
+        if k % 2 == 1:
+            add(bass(ROOTS_PARTY[idx], 0.4), x + BEAT / 2, 0.55)
+        add(conga(200), x + BEAT * 0.75, 0.25, pan=-0.4)
 
-# 34.4-37 compte à rebours : 3 battements sur les chiffres 3, 2, 1
-for i, x in enumerate([34.5, 35.35, 36.2]):
-    add(kick(0.6, punch=1.3), x, 0.9)
-    add(bell(81 + i * 2), x, 0.18)
 
-# 37 impact + drop minuit
-add(impact(), 37.0, 0.9)
-for i, m in enumerate([96, 100, 103, 108, 103, 100]):
-    add(bell(m), 37.05 + i * 0.12, 0.1, pan=0.6 * (-1) ** i)
-for x in beats(37.0, 47.0):
-    k = round((x - 37.0) / BEAT)
-    add(kick(), x, 0.85)
-    add(hat(0.09), x + BEAT / 2, 0.24, pan=0.25)
-    add(hat(0.03), x + BEAT / 4, 0.08, pan=-0.3)
-    if k % 2 == 1:
-        add(clap(), x, 0.4)
-    ch, idx = chord_at(x, 37.0, CHORDS_PARTY)
-    add(saw_stab([m + 12 for m in ch], 0.18), x + BEAT / 2, 0.24 if x < 41 else 0.16)
-    if k % 4 == 0:
+def sec_disco(a, b):
+    for x in beats(a, b, step=BEAT / 2):
+        k = round((x - a) / (BEAT / 2))
+        _, idx = chord_at(x, a, CHORDS_PARTY)
+        add(bass(ROOTS_PARTY[idx] + (12 if k % 2 else 0), 0.22), x, 0.55)
+        add(hat(0.06 if k % 2 else 0.03), x, 0.2 if k % 2 else 0.1, pan=0.3)
+    for x in beats(a, b):
+        k = round((x - a) / BEAT)
+        add(kick(), x, 0.75)
+        if k % 2 == 1:
+            add(snare(), x, 0.3)
+        ch, _ = chord_at(x, a, CHORDS_PARTY)
+        if k % 4 == 0:
+            add(pad([m + 12 for m in ch], 2.0, a=0.15), x, 0.45)
+        add(pluck(ch[1] + 24, 0.12, 6), x + BEAT * 0.75, 0.15, pan=-0.5)
+
+
+def sec_carib(a, b):
+    for bar in beats(a, b, step=4 * BEAT):
+        for bb in (0, 2):
+            add(kick(punch=0.7), bar + bb * BEAT, 0.7)
+        for bb in (0.75, 1.5, 2.75, 3.5):
+            add(snare(0.18), bar + bb * BEAT, 0.28)
+        for i, m in enumerate([76, 79, 81, 79, 76, 74, 72, 74]):
+            add(steel(m), bar + i * BEAT / 2, 0.3, pan=0.3 * (1 if i % 2 else -1))
+    for x in beats(a, b, step=BEAT / 2):
+        add(hat(0.04), x, 0.12)
+    for x in beats(a, b):
+        _, idx = chord_at(x, a, CHORDS_PARTY)
+        add(bass(ROOTS_PARTY[idx], 0.45), x, 0.5)
+
+
+def sec_build(a, b):
+    for x in beats(a, b):
+        add(kick(punch=0.8), x, 0.6)
+        add(hat(0.05), x + BEAT / 2, 0.15)
+    add(pad([57, 60, 64, 69], b - a + 0.2, a=0.8), a, 0.45)
+    add(noise_riser(b - a + 2.5), a, 0.22)
+    t0 = max(a, b - 2.0)
+    step = BEAT / 2
+    while t0 < b:
+        add(snare(0.12), t0, 0.12 + 0.2 * (t0 - (b - 2.0)) / 2)
+        t0 += step
+        step = max(step * 0.82, 0.045)
+
+
+def sec_countdown(beat_times):
+    for i, x in enumerate(beat_times):
+        add(kick(0.6, punch=1.3), x, 0.9)
+        add(bell(81 + (i % 6) * 2), x, 0.16)
+
+
+def sec_drop(a, b):
+    add(impact(), a, 0.9)
+    for i, m in enumerate([96, 100, 103, 108, 103, 100]):
+        add(bell(m), a + 0.05 + i * 0.12, 0.1, pan=0.6 * (-1) ** i)
+    sec_house(a, b)
+    for x in beats(a, b, step=4 * BEAT):
+        ch, _ = chord_at(x, a, CHORDS_PARTY)
         add(pad([m + 12 for m in ch], 2.0, a=0.3), x, 0.3)
-    add(bass(ROOTS_PARTY[idx], 0.3), x + BEAT / 2, 0.55)
 
-# 47-54 outro
-for x in beats(47.0, 52.0):
-    add(kick(punch=0.6), x, 0.5 * (52.0 - x) / 5 + 0.1)
-    add(hat(0.05), x + BEAT / 2, 0.12)
-add(pad([57, 60, 64, 67, 72], 7.0, a=1.0), 47.0, 0.55)
-for i, m in enumerate([81, 84, 88, 93]):
-    add(bell(m), 52.0 + i * 0.15, 0.12)
+
+def sec_outro(a, b):
+    for x in beats(a, max(a, b - 2.0)):
+        add(kick(punch=0.6), x, 0.5 * (b - 2.0 - x) / max(b - 2.0 - a, 0.5) + 0.1)
+        add(hat(0.05), x + BEAT / 2, 0.12)
+    add(pad([57, 60, 64, 67, 72], b - a, a=1.0), a, 0.55)
+    for i, m in enumerate([81, 84, 88, 93]):
+        add(bell(m), b - 2.0 + i * 0.15, 0.12)
+
+
+STYLES = {"intro": sec_intro, "lounge": sec_lounge, "house": sec_house, "latin": sec_latin,
+          "disco": sec_disco, "carib": sec_carib, "build": sec_build, "drop": sec_drop, "outro": sec_outro,
+          "houselight": lambda a, b: sec_house(a, b, light=True)}
+
+for sec in PLAN["sections"]:
+    if sec["style"] == "countdown":
+        sec_countdown(sec["beats"])
+    else:
+        STYLES[sec["style"]](sec["start"], sec["end"])
 
 # master : léger bus compression + normalisation à -1 dBFS crête
 out = np.tanh(out * 1.4) / np.tanh(1.4)
@@ -305,7 +319,7 @@ out *= fade[:, None]
 out *= 10 ** (-1 / 20) / np.max(np.abs(out))
 
 pcm = (out * 32767).astype(np.int16)
-with wave.open(sys.argv[1] if len(sys.argv) > 1 else "musique-travail.wav", "wb") as w:
+with wave.open(sys.argv[2], "wb") as w:
     w.setnchannels(2)
     w.setsampwidth(2)
     w.setframerate(SR)

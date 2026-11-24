@@ -5,10 +5,12 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "build:final": "node scripts/build.mjs --final",
-    "music": "python3 scripts/music.py assets/music/musique-travail.wav",
+    "music": "python3 scripts/music.py data/timeline.json assets/music/musique-travail.wav",
     "check": "npx hyperframes lint && npx hyperframes validate",
     "render": "npx hyperframes render --output renders/video-muette.mp4",
     "mix": "bash scripts/mix.sh",
-    "srt": "node scripts/srt.mjs"
+    "srt": "node scripts/srt.mjs",
+    "reels:data": "python3 scripts/reels-data.py",
+    "reels": "bash scripts/render-reels.sh"
   }
 }

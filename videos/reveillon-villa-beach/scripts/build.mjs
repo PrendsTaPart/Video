@@ -11,7 +11,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const T = JSON.parse(readFileSync(path.join(ROOT, 'data/timeline.json'), 'utf8'));
+const SRC = process.argv.slice(2).find((a) => !a.startsWith('--')) || 'data/timeline.json';
+const T = JSON.parse(readFileSync(path.join(ROOT, SRC), 'utf8'));
 const FINAL = process.argv.includes('--final');
 const DUR = T.format.duration;
 
@@ -47,18 +48,19 @@ for (const s of T.scenes) {
       `<img src="${s.media}" alt="" style="object-position:${s.fx}"><div class="ov ov-${s.grade}"></div>`,
       s.start, s.end, 1, `scene grade-${s.grade}`,
     );
-    const zoomIn = s.id.includes('salle') || /gen|latino|80|carib/.test(s.id);
-    const from = s.id === 's07-latino' ? 1.2 : zoomIn ? 1.06 : 1.14;
-    const to = s.id === 's07-latino' ? 1.13 : zoomIn ? 1.16 : 1.04;
-    const origin = s.id === 's07-latino' ? '50% 12%' : '50% 50%';
+    const zoomIn = s.zoom ? s.zoom === 'in' : (s.id.includes('salle') || /gen|latino|80|carib/.test(s.id));
+    const crop = s.id === 's07-latino' || s.cropBottom;
+    const from = crop ? 1.2 : zoomIn ? 1.06 : 1.14;
+    const to = crop ? 1.13 : zoomIn ? 1.16 : 1.04;
+    const origin = crop ? '50% 12%' : '50% 50%';
     anim.push(`tl.fromTo('${sel} img', {scale:${from}, transformOrigin:'${origin}'}, {scale:${to}, duration:${r2(d)}, ease:'none'}, ${s.start});`);
     // coupe : flash doré court à l'entrée de chaque plan (sauf le premier)
     if (s.start > 0) anim.push(`tl.fromTo('${sel}', {opacity:0}, {opacity:1, duration:0.18, ease:'power1.out'}, ${s.start});`);
   }
 
   for (const t of s.texts ?? []) {
-    const sel = clip(`<div class="t-${t.role}">${t.label ? `<span class="lbl">${esc(t.label)}</span>` : ''}<span class="txt">${esc(t.text)}</span></div>`,
-      t.at, s.end, 20, `layer pos-${t.role}`);
+    const sel = clip(`<div class="t-${t.role}"${t.color ? ` style="color:${t.color}"` : ''}>${t.label ? `<span class="lbl">${esc(t.label)}</span>` : ''}<span class="txt">${esc(t.text)}</span></div>`,
+      t.at, t.end ?? s.end, 20, `layer pos-${t.role}`);
     const ease = t.role === 'burst' ? 'back.out(2.2)' : 'power3.out';
     anim.push(`tl.fromTo('${sel} > div', {opacity:0, y:${t.role === 'burst' ? 0 : 40}, scale:${t.role === 'burst' ? 0.4 : 1}}, {opacity:1, y:0, scale:1, duration:${t.role === 'burst' ? 0.5 : 0.55}, ease:'${ease}'}, ${t.at});`);
     if (t.role === 'burst') anim.push(`tl.to('${sel} > div', {opacity:0, y:-60, duration:0.4, ease:'power2.in'}, ${r2(t.at + 1.5)});`);
@@ -98,7 +100,7 @@ for (const s of T.scenes) {
       anim.push(`tl.fromTo('${sel} .pill', {opacity:0, x:-120}, {opacity:1, x:0, duration:0.5, ease:'back.out(1.4)'}, ${it.at});`);
     });
     // cotillons qui tombent déjà en fin de séquence (annonce de minuit)
-    confetti(s.end - 1.6, s.end, 40, 0.6);
+    if (s.confettiEnd !== false) confetti(s.end - 1.6, s.end, 40, 0.6);
   }
 
   if (s.type === 'countdown') {
@@ -109,10 +111,10 @@ for (const s of T.scenes) {
       anim.push(`tl.fromTo('${sel} .cd-num', {scale:2.4, opacity:0}, {scale:1, opacity:1, duration:0.32, ease:'power4.out'}, ${b});`);
       anim.push(`tl.fromTo('${sel} .cd-ring', {scale:0.4, opacity:0.9}, {scale:2.2, opacity:0, duration:0.75, ease:'power2.out'}, ${b});`);
     });
-    clip('<div class="cd-kicker">Minuit</div>', s.start, s.end, 21, 'layer pos-cdk');
+    clip(`<div class="cd-kicker">${esc(s.kicker ?? 'Minuit')}</div>`, s.start, s.end, 21, 'layer pos-cdk');
   }
 
-  if (s.id === 's12-minuit') {
+  if (s.id === 's12-minuit' || s.celebrate) {
     const f = clip('<div class="flash"></div>', s.start, s.start + 0.8, 30, 'layer');
     anim.push(`tl.fromTo('${f} .flash', {opacity:1}, {opacity:0, duration:0.75, ease:'power2.out'}, ${s.start});`);
     confetti(s.start, s.end, 120, 1);
@@ -131,6 +133,7 @@ for (const s of T.scenes) {
     glitter(s.start, s.end, 46);
     const html = `
       <img class="e-logo" src="assets/brand/villa-beach-monogram.png" alt="Villa Beach">
+      ${s.date ? `<div class="e-date">${esc(s.date)}</div>` : ''}
       <div class="e-title">${esc(s.title)}</div>
       <div class="e-sub">${esc(s.sub)}</div>
       <div class="e-rule"></div>
@@ -139,7 +142,7 @@ for (const s of T.scenes) {
       <div class="e-phone"><span class="e-tel">Réservations</span>${esc(s.phone)}</div>
       ${s.url ? `<div class="e-url">${esc(s.url)}</div>` : ''}`;
     const sel = clip(html, s.start, s.end, 20, 'layer endcard');
-    const parts = ['.e-logo', '.e-title', '.e-sub', '.e-rule', '.e-venue', '.e-addr', '.e-phone'];
+    const parts = ['.e-logo', ...(s.date ? ['.e-date'] : []), '.e-title', '.e-sub', '.e-rule', '.e-venue', '.e-addr', '.e-phone'];
     parts.forEach((p, i) => anim.push(`tl.fromTo('${sel} ${p}', {opacity:0, y:30}, {opacity:1, y:0, duration:0.5, ease:'power3.out'}, ${r2(s.start + 0.05 + i * 0.08)});`));
     anim.push(`tl.fromTo('${sel} .e-phone', {boxShadow:'0 0 0px rgba(232,211,154,0)'}, {boxShadow:'0 0 60px rgba(232,211,154,.55)', duration:0.8, ease:'sine.inOut', yoyo:true, repeat:5}, ${r2(s.start + 1.4)});`);
   }
@@ -192,14 +195,15 @@ function glitter(start, end, n) {
 }
 
 // ---------- sous-titres ----------
-for (const sub of T.subtitles) {
+for (const sub of T.subtitles ?? []) {
   const sel = clip(`<div class="sub">${esc(sub.text)}</div>`, sub.start, sub.end, 40, 'layer pos-sub');
   anim.push(`tl.fromTo('${sel} .sub', {opacity:0, y:14}, {opacity:1, y:0, duration:0.16, ease:'power2.out'}, ${sub.start});`);
 }
 
 // petit monogramme en coin pendant les plans « réels » (pas sur le carton final qui l'affiche en grand)
-clip('<img class="corner-logo" src="assets/brand/villa-beach-monogram.png" alt="">', 0, 47, 35, 'layer');
-if (!FINAL) clip('<div class="draft">VERSION DE TRAVAIL · année, voix off, musique et lien à valider</div>', 0, DUR, 50, 'layer');
+const END = (T.scenes.find((x) => x.type === 'endcard') ?? { start: DUR }).start;
+clip('<img class="corner-logo" src="assets/brand/villa-beach-monogram.png" alt="">', 0, END, 35, 'layer');
+if (!FINAL) clip(`<div class="draft">${esc(T.draftLabel ?? 'VERSION DE TRAVAIL · voix off et musique à finaliser')}</div>`, 0, DUR, 50, 'layer');
 
 const html = `<!doctype html>
 <html lang="fr">
@@ -225,4 +229,4 @@ window.__timelines['main'] = tl;
 </html>
 `;
 writeFileSync(path.join(ROOT, 'index.html'), html);
-console.log(`index.html : ${clips.length} clips, ${anim.length} animations, ${DUR}s, ${FINAL ? 'FINAL' : 'version de travail'}`);
+console.log(`${SRC} -> index.html : ${clips.length} clips, ${anim.length} animations, ${DUR}s, ${FINAL ? 'FINAL' : 'version de travail'}`);

@@ -1,0 +1,183 @@
+{
+  "draftLabel": "VERSION DE TRAVAIL · voix off et musique à finaliser",
+  "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet TikTok Reels",
+  "title": "Reel 3 — Dîner de fête",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 22
+  },
+  "scenes": [
+    {
+      "id": "a",
+      "start": 0,
+      "end": 3,
+      "media": "assets/photos/table-dressee-rose-bougies.jpg",
+      "fx": "50% 50%",
+      "grade": "warm",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "kicker",
+          "text": "Réveillon 31.12.2026",
+          "at": 0.1
+        },
+        {
+          "role": "title",
+          "text": "Un dîner d'exception",
+          "at": 0.3
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "start": 3,
+      "end": 6,
+      "media": "assets/photos/tartare-crevettes-mangue.jpg",
+      "fx": "50% 50%",
+      "grade": "warm",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "chip",
+          "text": "Foie gras ou tartare",
+          "at": 3.1
+        }
+      ]
+    },
+    {
+      "id": "c",
+      "start": 6,
+      "end": 10,
+      "media": "assets/photos/serveur-cocktails-plateau.jpg",
+      "fx": "50% 50%",
+      "grade": "softblur",
+      "texts": [
+        {
+          "role": "mid",
+          "text": "Veau ou Saint‑Jacques",
+          "at": 6.1
+        },
+        {
+          "role": "low",
+          "text": "plats au choix",
+          "at": 6.4
+        }
+      ]
+    },
+    {
+      "id": "d",
+      "start": 10,
+      "end": 13,
+      "media": "assets/photos/table-dressee-rose-bougies.jpg",
+      "fx": "20% 50%",
+      "grade": "softblur",
+      "texts": [
+        {
+          "role": "mid",
+          "text": "Bûches du Nouvel An",
+          "at": 10.1
+        },
+        {
+          "role": "low",
+          "text": "dessert",
+          "at": 10.4
+        }
+      ]
+    },
+    {
+      "id": "e",
+      "start": 13,
+      "end": 16,
+      "media": "assets/photos/tartare-crevettes-mangue.jpg",
+      "fx": "80% 50%",
+      "grade": "blur",
+      "cards": [
+        {
+          "big": "120 € / pers.",
+          "small": "Dîner de fête · vin inclus",
+          "at": 13.1
+        },
+        {
+          "big": "180 € / pers.",
+          "small": "Dîner Champagne",
+          "at": 13.8
+        },
+        {
+          "big": "Dès 19 h",
+          "small": "puis les 4 salles jusqu'à 05 h",
+          "at": 14.5
+        }
+      ]
+    },
+    {
+      "id": "fin",
+      "start": 16,
+      "end": 22,
+      "type": "endcard",
+      "date": "31 décembre 2026",
+      "title": "Réservez votre dîner",
+      "sub": "Préventes conseillées • Accès prioritaire",
+      "venue": "Domaine Villa Beach",
+      "address": "23 rue des Pyrénées, 91090 Lisses",
+      "phone": "01 84 60 20 46",
+      "url": null,
+      "qr": null
+    }
+  ],
+  "subtitles": [
+    {
+      "start": 0.3,
+      "end": 2.9,
+      "text": "Pour commencer la nouvelle année avec élégance"
+    },
+    {
+      "start": 3.1,
+      "end": 5.4,
+      "text": "découvrez notre dîner de fête"
+    },
+    {
+      "start": 6.1,
+      "end": 8.2,
+      "text": "Un menu raffiné, deux formules"
+    },
+    {
+      "start": 8.2,
+      "end": 11.4,
+      "text": "et l'accès aux quatre salles"
+    },
+    {
+      "start": 11.4,
+      "end": 12.9,
+      "text": "pour poursuivre la soirée"
+    }
+  ],
+  "voiceover": {
+    "lines": [
+      {
+        "start": 0.3,
+        "text": "Pour commencer la nouvelle année avec élégance, découvrez notre dîner de fête. Un menu raffiné, deux formules et l'accès aux quatre salles pour poursuivre la soirée."
+      }
+    ]
+  },
+  "music": {
+    "sections": [
+      {
+        "style": "intro",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "style": "lounge",
+        "start": 3,
+        "end": 16
+      },
+      {
+        "style": "outro",
+        "start": 16,
+        "end": 22
+      }
+    ]
+  }
+}

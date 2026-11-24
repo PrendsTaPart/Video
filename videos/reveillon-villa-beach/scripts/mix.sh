@@ -10,8 +10,8 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 VIDEO=${1:-renders/video-muette.mp4}
 OUT=${2:-renders/reveillon-villa-beach_9x16_version-de-travail.mp4}
-MUSIC=assets/music/musique-travail.wav
-VOICE=assets/voice/voix-off.wav
+MUSIC=${MUSIC:-assets/music/musique-travail.wav}
+VOICE=${VOICE:-assets/voice/voix-off.wav}
 
 if [[ -f "$VOICE" ]]; then
   ffmpeg -v error -y -i "$VIDEO" -i "$MUSIC" -i "$VOICE" -filter_complex "

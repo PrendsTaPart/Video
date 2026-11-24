@@ -1,6 +1,6 @@
 # Réveillon du Nouvel An — Domaine Villa Beach (Reels / TikTok / Stories)
 
-Teaser vertical **1080 × 1920, 30 i/s, 54 s**, monté avec HyperFrames + GSAP (pipeline du dépôt).
+Teaser vertical **1080 × 1920, 30 i/s, 54 s** + 5 Reels/TikTok du plan de campagne, monté avec HyperFrames + GSAP (pipeline du dépôt).
 Source unique : `data/timeline.json` (scènes, textes à l'écran, voix off, sous-titres).
 
 > ⚠️ **VERSION DE TRAVAIL — ne pas diffuser en l'état.** Le bandeau jaune en haut de l'image
@@ -16,35 +16,38 @@ Source unique : `data/timeline.json` (scènes, textes à l'écran, voix off, sou
 | `scripts/music.py` | Musique de travail originale (synthèse par code, aucun droit tiers) |
 | `scripts/mix.sh` | Mixage voix + musique (sidechain, -14 LUFS) et mux |
 
-## Points à valider avant l'export diffusion
+## Reels / TikTok — plan de campagne Excel (onglet « TikTok Reels »)
 
-1. **Édition / année** — le site Lovable « Réveillon Villa Beach » annonce la nuit du
-   **31 décembre 2026 au 1er janvier 2027** (titre « Nouvel An 2026 », programme « pour 2027 »,
-   roadmap « Conserver la nuit du 31 décembre 2026 au 1er janvier 2027 »). Le brief parle du
-   passage **2025 → 2026**. Aucune année n'est affichée à l'écran (accroche, minuit « Bonne année ! »).
-2. **Lien / QR de réservation** — le site réveillon **n'est pas publié** : aucune URL vérifiée,
-   donc ni URL ni QR code à l'écran. Le carton final affiche le téléphone du site
-   (01 84 60 20 46) et l'adresse. Si une URL est publiée et vérifiée, la renseigner dans
-   `scenes[s14-reservation].url` (elle s'affiche sous le téléphone).
-3. **Tarifs** (lus dans `src/lib/offers.ts` du site, identiques au brief) : Dîner de fête 120 €/pers.,
-   Dîner Champagne 180 €/pers., entrée clubbing dès 20 €. Restaurant dès 19 h, clubbing jusqu'à 05 h.
-4. **Voix off — manquante.** ElevenLabs a refusé la génération le 24/11/2026 :
-   « Your subscription has a failed or incomplete payment ». Régler la facture, puis générer :
-   - voix **Simon - Voix Radio** (`mvhJVdVoTWVUtL4keT7W`), modèle `eleven_v4`, 1 prise ;
-   - texte : `voiceover.lines` dans `data/timeline.json` (le texte du brief, avec « dix-neuf heures »,
-     « vingt euros », « cinq heures » écrits en toutes lettres pour la prononciation) ;
-   - flow ElevenLabs déjà créé : « Réveillon Villa Beach – voix off & musique ».
-5. **Musique — placeholder.** ElevenLabs Music a échoué (« Insufficient funds »). La musique actuelle
-   est une composition originale générée par `scripts/music.py` (droits : aucun tiers), suffisante
-   pour valider le rythme, pas pour la diffusion. Remplacer `assets/music/musique-travail.wav` par une
-   musique sous licence promotionnelle (ElevenLabs Music une fois le compte réglé) en gardant le
-   découpage (dîner lounge 5-14 s, house 14-18, latino 18-22, disco 22-26, caribéen 26-30,
-   montée 30-34,4, décompte 34,5 / 35,35 / 36,2, drop 37 s, outro 47-54).
-6. **Images** — toutes réelles (site réveillon : « Intégrer les photos réelles » ; site Villa Beach :
-   vidéo terrasse, pergola, monogramme VB). Aucune image IA. Manquent : table dressée du réveillon,
-   service à table, cotillons/bulles réels (remplacés par des effets graphiques), photo propre à la
-   salle Caraïbéenne (photo d'ambiance du club recadrée et étalonnée). Les deux photos de plats
-   ne sont pas légendées comme les plats du menu ; le menu est cité à part (« Au menu : … »).
+Édition confirmée : **31 décembre 2026 → 1er janvier 2027**. Timelines générées par
+`scripts/reels-data.py` → `data/reels/*.json`, rendus par `bash scripts/render-reels.sh`.
+
+| Reel | Fichier | Durée | Contenu |
+|---|---|---|---|
+| 1 Grand lancement | `renders/reels/reel-01-lancement_9x16_version-de-travail.mp4` | 25,6 s | 2027 approche… → domaine → 4 salles → DJ/foule → 3-2-1 → jusqu'à 05 h → carton |
+| 2 4 univers | `renders/reels/reel-02-quatre-univers_9x16_version-de-travail.mp4` | 20 s | Team Généraliste / Latino / 80-90-2000 / Caraïbéenne ? (musique propre à chaque salle) → carton |
+| 3 Dîner de fête | `renders/reels/reel-03-diner_9x16_version-de-travail.mp4` | 22 s | table dressée → tartare → plats → bûches → 120 € / 180 € / dès 19 h → carton |
+| 4 Expérience VIP | `renders/reels/reel-04-vip_9x16_version-de-travail.mp4` | 19 s | packs 200 / 280 / 500 / 1 200 € avec inclusions → carton |
+| 5 Countdown minuit | `renders/reels/reel-05-countdown_9x16_version-de-travail.mp4` | 21 s | 23:59 → Prêts ? → 10…1 → Happy New Year 2027 ! → carton |
+
+Carton final commun (6 s) : monogramme, 31 décembre 2026, préventes conseillées, adresse,
+**01 84 60 20 46**. Pas d'URL ni de QR tant que le site réveillon n'est pas publié
+(renseigner `url` dans `END()` de `scripts/reels-data.py` le moment venu).
+Photos : uniquement les photos réelles fournies (`assets/photos/`), aucune image IA.
+Les photos de plats ne sont pas légendées comme des plats du menu, sauf le tartare (entrée du menu).
+Le service bouteilles/tables VIP n'a pas de photo dédiée : le Reel 4 utilise bar, flamme,
+plateau de cocktails et bouteille au seau.
+
+## Points à valider avant diffusion
+
+1. **Voix off — manquante** (Reels 1, 3, 4 et teaser ; Reel 2 optionnelle, Reel 5 sans voix).
+   ElevenLabs a refusé la génération (facture d'abonnement impayée). Textes prêts dans
+   `voiceover.lines` de chaque JSON. Déposer `assets/voice/<reel>.wav` puis relancer
+   `FINAL=1 bash scripts/render-reels.sh <reel>` : le mix baisse la musique sous la voix.
+   Coût estimé ElevenLabs : ~600 crédits par voix off, ~900 par musique — à valider avant génération.
+2. **Musique — placeholder** : composition originale générée par `scripts/music.py` (aucun droit
+   tiers), à remplacer par une musique sous licence promotionnelle.
+3. **Lien de réservation** : à ajouter à la publication du site.
+4. **Tarifs** (site + Excel, identiques) : dîners 120 / 180 €, clubbing dès 20 €, packs 200 / 280 / 500 / 1 200 €.
 
 ## Finaliser (une fois les points validés)
 

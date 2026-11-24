@@ -73,9 +73,9 @@ body { font-family: "Inter", sans-serif; color: var(--creme); }
 
 /* ---------- textes ---------- */
 .pos-kicker { top: 300px; } .pos-title { top: 360px; }
-.pos-brand { top: 330px; } .pos-tagline { top: 450px; }
+.pos-brand { top: 370px; } .pos-tagline { top: 485px; }
 .pos-chip { top: 360px; } .pos-price { top: 340px; } .pos-menu { top: 1010px; }
-.pos-burst { top: 560px; } .pos-headline { top: 760px; }
+.pos-burst { top: 500px; } .pos-headline { top: 760px; }
 .pos-salle { top: 300px; } .pos-center { top: 0; } .pos-cdk { top: 330px; }
 .pos-kicker, .pos-title, .pos-brand, .pos-tagline, .pos-chip, .pos-price, .pos-menu, .pos-burst, .pos-headline, .pos-salle, .pos-cdk { bottom: auto; height: auto; }
 
@@ -92,7 +92,7 @@ body { font-family: "Inter", sans-serif; color: var(--creme); }
 .t-price .txt { font: 700 150px/1 "Cormorant Garamond"; background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 6px 24px rgba(0,0,0,.7)); }
 .t-menu { margin: 0 150px 0 80px; padding: 22px 30px; border-left: 4px solid var(--or); background: rgba(11,10,8,.6);
   font: italic 600 50px/1.15 "Cormorant Garamond"; color: var(--creme); text-wrap: balance; }
-.t-burst { text-align: center; margin: 0 80px; font: 700 150px/1 "Cormorant Garamond"; font-style: italic; }
+.t-burst { text-align: center; margin: 0 80px; font: 700 130px/1 "Cormorant Garamond"; font-style: italic; }
 .t-burst .txt { background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 30px rgba(232,211,154,.8)); }
 .t-headline { text-wrap: balance; text-align: center; margin: 0 80px; font: 400 160px/1 "Bebas Neue"; letter-spacing: .03em; color: var(--creme);
   text-shadow: 0 0 40px rgba(232,211,154,.7), 0 6px 30px rgba(0,0,0,.8); }
@@ -127,18 +127,18 @@ body { font-family: "Inter", sans-serif; color: var(--creme); }
 
 .card { margin: 0 150px 0 80px; padding: 40px 46px; border: 2px solid rgba(201,164,92,.85); border-radius: 22px;
   background: rgba(26,20,16,.72); box-shadow: 0 20px 60px rgba(0,0,0,.5); }
-.c-big { font: 400 112px/1 "Bebas Neue"; letter-spacing: .03em; background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.c-big { padding-top: .1em; font: 400 96px/1.05 "Bebas Neue"; letter-spacing: .03em; background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .c-small { margin-top: 10px; font: italic 600 58px/1.1 "Cormorant Garamond"; color: var(--creme); }
 
 .end-bg { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 30%, #3a2a14 0%, var(--brun) 40%, var(--noir) 80%); }
-.endcard { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 250px 140px 0 80px; }
+.endcard { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 200px 140px 0 80px; }
 .e-logo { width: 200px; height: 200px; }
-.e-title { margin-top: 30px; font: 700 112px/1 "Cormorant Garamond"; background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.e-title { margin-top: 18px; font: 700 112px/1 "Cormorant Garamond"; background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .e-sub { text-wrap: balance; margin-top: 26px; font: 700 36px/1.3 "Inter"; letter-spacing: .08em; text-transform: uppercase; color: var(--creme); }
-.e-rule { margin: 42px 0 36px; width: 240px; height: 3px; background: var(--grad-or); }
+.e-rule { margin: 30px 0 26px; width: 240px; height: 3px; background: var(--grad-or); }
 .e-venue { font: 400 86px/1 "Bebas Neue"; letter-spacing: .08em; color: var(--creme); }
 .e-addr { margin-top: 18px; font: 500 40px/1.3 "Inter"; color: var(--creme); }
-.e-phone { margin-top: 44px; padding: 26px 50px 22px; border-radius: 26px; background: var(--grad-or); color: var(--noir);
+.e-phone { margin-top: 30px; padding: 26px 50px 22px; border-radius: 26px; background: var(--grad-or); color: var(--noir);
   font: 400 128px/1 "Bebas Neue"; letter-spacing: .04em; display: flex; flex-direction: column; align-items: center; }
 .e-tel { font: 800 28px/1 "Inter"; letter-spacing: .3em; text-transform: uppercase; margin-bottom: 10px; }
 .e-url { margin-top: 30px; font: 700 46px "Inter"; color: var(--or-clair); }
@@ -150,3 +150,17 @@ body { font-family: "Inter", sans-serif; color: var(--creme); }
 .corner-logo { position: absolute; left: 80px; top: 1530px; width: 96px; height: 96px; opacity: .9; }
 .draft { position: absolute; left: 0; right: 0; top: 150px; text-align: center; font: 800 26px "Inter"; letter-spacing: .08em;
   color: #111; background: rgba(255,196,0,.92); padding: 10px 0; }
+
+/* ---------- ajouts Reels ---------- */
+.pos-center { top: 0; }
+.pos-big { top: 700px; bottom: auto; height: auto; } .pos-mid { top: 600px; bottom: auto; height: auto; } .pos-low { top: 1000px; bottom: auto; height: auto; }
+.t-big { text-align: center; margin: 0 80px; padding-top: .12em; font: 400 230px/1.02 "Bebas Neue"; letter-spacing: .02em; text-wrap: balance;
+  background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 40px rgba(232,211,154,.5)) drop-shadow(0 8px 30px rgba(0,0,0,.8)); }
+.t-mid { text-align: center; margin: 0 80px; font: 400 150px/0.95 "Bebas Neue"; letter-spacing: .03em; color: var(--creme); text-wrap: balance;
+  text-shadow: 0 0 40px rgba(232,211,154,.6), 0 6px 30px rgba(0,0,0,.85); }
+.t-low { text-align: center; margin: 0 80px; font: italic 600 74px/1.1 "Cormorant Garamond"; color: var(--creme); text-wrap: balance; text-shadow: 0 4px 24px rgba(0,0,0,.95); }
+.e-date { margin-top: 20px; font: 400 64px/1 "Bebas Neue"; letter-spacing: .12em; color: var(--or-clair); }
+.ov-dark { background: linear-gradient(180deg, rgba(11,10,8,.7), rgba(11,10,8,.35) 45%, rgba(11,10,8,.85)); }
+.grade-dark img { filter: brightness(.6) saturate(1.1) contrast(1.05); }
+.grade-softblur img { filter: blur(6px) brightness(.5) saturate(1.15); }
+.ov-softblur { background: linear-gradient(180deg, rgba(11,10,8,.5), rgba(11,10,8,.3) 45%, rgba(11,10,8,.85)); }

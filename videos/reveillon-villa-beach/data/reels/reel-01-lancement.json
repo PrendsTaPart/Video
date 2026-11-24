@@ -1,0 +1,275 @@
+{
+  "draftLabel": "VERSION DE TRAVAIL · voix off et musique à finaliser",
+  "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet TikTok Reels",
+  "title": "Reel 1 — Grand lancement",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 25.6
+  },
+  "scenes": [
+    {
+      "id": "a1",
+      "start": 0,
+      "end": 1.6,
+      "media": "assets/photos/silhouette-lumieres-villabeach.jpg",
+      "fx": "50% 50%",
+      "grade": "night",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "big",
+          "text": "2027",
+          "at": 0.15
+        }
+      ]
+    },
+    {
+      "id": "a2",
+      "start": 1.6,
+      "end": 3.2,
+      "media": "assets/photos/piste-mains-levees.jpg",
+      "fx": "65% 40%",
+      "grade": "club",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "mid",
+          "text": "approche…",
+          "at": 1.7
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "start": 3.2,
+      "end": 6.2,
+      "type": "video",
+      "media": "assets/video/terrasse-9x16.mp4",
+      "grade": "dusk",
+      "texts": [
+        {
+          "role": "kicker",
+          "text": "31 décembre 2026",
+          "at": 3.3
+        },
+        {
+          "role": "brand",
+          "text": "Domaine Villa Beach",
+          "at": 3.5
+        }
+      ]
+    },
+    {
+      "id": "c1",
+      "start": 6.2,
+      "end": 7.2,
+      "media": "assets/photos/dj-neon-villabeach.jpg",
+      "fx": "30% 50%",
+      "grade": "salle-gen",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "mid",
+          "text": "4 salles",
+          "at": 6.25,
+          "end": 10.2
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "start": 7.2,
+      "end": 8.2,
+      "media": "assets/photos/salle-latino-renverse.jpg",
+      "fx": "45% 50%",
+      "grade": "salle-latino",
+      "zoom": "in"
+    },
+    {
+      "id": "c3",
+      "start": 8.2,
+      "end": 9.2,
+      "media": "assets/photos/fete-villa.jpg",
+      "fx": "35% 45%",
+      "grade": "salle-retro",
+      "zoom": "in"
+    },
+    {
+      "id": "c4",
+      "start": 9.2,
+      "end": 10.2,
+      "media": "assets/photos/couple-danse.jpg",
+      "fx": "55% 40%",
+      "grade": "salle-carib",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "low",
+          "text": "4 ambiances",
+          "at": 8.2,
+          "end": 10.2
+        }
+      ]
+    },
+    {
+      "id": "d1",
+      "start": 10.2,
+      "end": 12.6,
+      "media": "assets/photos/dj-platines-nb.jpg",
+      "fx": "40% 50%",
+      "grade": "salle-gen",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "mid",
+          "text": "Une nuit inoubliable",
+          "at": 10.4
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "start": 12.6,
+      "end": 15.0,
+      "media": "assets/photos/ambiance-villa-hd.jpg",
+      "fx": "35% 40%",
+      "grade": "club",
+      "zoom": "in"
+    },
+    {
+      "id": "e",
+      "start": 15.0,
+      "end": 17.4,
+      "type": "countdown",
+      "beats": [
+        15.1,
+        15.85,
+        16.6
+      ],
+      "labels": [
+        "3",
+        "2",
+        "1"
+      ],
+      "kicker": "Jusqu'à 05 h"
+    },
+    {
+      "id": "f",
+      "start": 17.4,
+      "end": 19.6,
+      "media": "assets/photos/fete-villa.jpg",
+      "fx": "70% 40%",
+      "grade": "midnight",
+      "celebrate": true,
+      "texts": [
+        {
+          "role": "headline",
+          "text": "Jusqu'à 05 h",
+          "at": 17.6
+        }
+      ]
+    },
+    {
+      "id": "fin",
+      "start": 19.6,
+      "end": 25.6,
+      "type": "endcard",
+      "date": "31 décembre 2026",
+      "title": "Réservez maintenant",
+      "sub": "Préventes conseillées • Accès prioritaire",
+      "venue": "Domaine Villa Beach",
+      "address": "23 rue des Pyrénées, 91090 Lisses",
+      "phone": "01 84 60 20 46",
+      "url": null,
+      "qr": null
+    }
+  ],
+  "subtitles": [
+    {
+      "start": 0.3,
+      "end": 3.1,
+      "text": "Le 31 décembre, préparez-vous"
+    },
+    {
+      "start": 3.3,
+      "end": 6.1,
+      "text": "à vivre une nuit exceptionnelle"
+    },
+    {
+      "start": 6.3,
+      "end": 8.6,
+      "text": "Le Domaine Villa Beach vous donne rendez-vous"
+    },
+    {
+      "start": 8.6,
+      "end": 10.1,
+      "text": "pour célébrer 2027"
+    },
+    {
+      "start": 10.4,
+      "end": 12.4,
+      "text": "quatre salles, DJs, animations"
+    },
+    {
+      "start": 12.6,
+      "end": 14.9,
+      "text": "et fête jusqu'à cinq heures"
+    },
+    {
+      "start": 19.8,
+      "end": 22.0,
+      "text": "Réservez dès maintenant"
+    }
+  ],
+  "voiceover": {
+    "lines": [
+      {
+        "start": 0.3,
+        "text": "Le 31 décembre, préparez-vous à vivre une nuit exceptionnelle. Le Domaine Villa Beach vous donne rendez-vous pour célébrer 2027 : quatre salles, DJs, animations et fête jusqu'à cinq heures."
+      },
+      {
+        "start": 19.8,
+        "text": "Réservez dès maintenant."
+      }
+    ]
+  },
+  "music": {
+    "sections": [
+      {
+        "style": "intro",
+        "start": 0,
+        "end": 3.2
+      },
+      {
+        "style": "houselight",
+        "start": 3.2,
+        "end": 6.2
+      },
+      {
+        "style": "house",
+        "start": 6.2,
+        "end": 15.0
+      },
+      {
+        "style": "countdown",
+        "beats": [
+          15.1,
+          15.85,
+          16.6
+        ]
+      },
+      {
+        "style": "drop",
+        "start": 17.4,
+        "end": 19.6
+      },
+      {
+        "style": "outro",
+        "start": 19.6,
+        "end": 25.6
+      }
+    ]
+  }
+}
