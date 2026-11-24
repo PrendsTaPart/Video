@@ -1,0 +1,67 @@
+{
+  "draftLabel": "VERSION DE TRAVAIL · musique à finaliser",
+  "footer": "31.12.2026 · Réservations 01 84 60 20 46",
+  "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet Stories Instagram",
+  "title": "Story 9 — Dress code",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 7
+  },
+  "scenes": [
+    {
+      "id": "a",
+      "start": 0,
+      "end": 3.5,
+      "media": "assets/photos/couple-danse-bleu.jpg",
+      "fx": "50% 45%",
+      "grade": "dark",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "kicker",
+          "text": "Dress code",
+          "at": 0.2
+        },
+        {
+          "role": "title",
+          "text": "Chic & élégant",
+          "at": 0.4
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "start": 3.5,
+      "end": 7,
+      "media": "assets/photos/amies-tenues-chic-bouteille.jpg",
+      "fx": "40% 40%",
+      "grade": "dark",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "kicker",
+          "text": "Dress code",
+          "at": 3.5
+        },
+        {
+          "role": "title",
+          "text": "Sortez vos plus belles tenues",
+          "at": 3.6
+        }
+      ]
+    }
+  ],
+  "subtitles": [],
+  "music": {
+    "sections": [
+      {
+        "style": "lounge",
+        "start": 0,
+        "end": 7
+      }
+    ]
+  },
+  "sticker": "Question : « Ta tenue du 31 ? »"
+}

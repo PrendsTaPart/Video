@@ -164,3 +164,16 @@ body { font-family: "Inter", sans-serif; color: var(--creme); }
 .grade-dark img { filter: brightness(.6) saturate(1.1) contrast(1.05); }
 .grade-softblur img { filter: blur(6px) brightness(.5) saturate(1.15); }
 .ov-softblur { background: linear-gradient(180deg, rgba(11,10,8,.5), rgba(11,10,8,.3) 45%, rgba(11,10,8,.85)); }
+
+/* ---------- ajouts Stories Instagram ----------
+   Zones réservées Stories : 0-250 px (barre de profil) et 1580-1920 px (barre de réponse).
+   Zone 1080-1400 laissée libre quand un sticker (sondage, compte à rebours, lien) est prévu. */
+.pos-rows { top: 380px; bottom: auto; height: auto; }
+.rows { margin: 0 150px 0 80px; padding: 30px 40px; border: 2px solid rgba(201,164,92,.85); border-radius: 22px; background: rgba(26,20,16,.75); }
+.row { display: flex; justify-content: space-between; align-items: baseline; gap: 30px; padding: 22px 0; border-bottom: 1px solid rgba(201,164,92,.35); }
+.row:last-child { border-bottom: 0; }
+.r-l { font: 600 46px/1.15 "Inter"; color: var(--creme); }
+.r-p { padding-top: .1em; font: 400 100px/1 "Bebas Neue"; background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; white-space: nowrap; }
+.footer { position: absolute; left: 80px; right: 80px; top: 1470px; display: flex; align-items: center; gap: 18px; white-space: nowrap;
+  font: 700 27px "Inter"; letter-spacing: .05em; text-transform: uppercase; color: var(--or-clair); text-shadow: 0 2px 12px rgba(0,0,0,.9); }
+.footer img { width: 72px; height: 72px; }

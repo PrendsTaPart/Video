@@ -1,4 +1,4 @@
 renders/video-muette.mp4
 renders/draft*.mp4
-renders/reels/*-muette.mp4
+renders/*/*-muette.mp4
 .hyperframes/

@@ -11,6 +11,8 @@
     "mix": "bash scripts/mix.sh",
     "srt": "node scripts/srt.mjs",
     "reels:data": "python3 scripts/reels-data.py",
-    "reels": "bash scripts/render-reels.sh"
+    "reels": "bash scripts/render-reels.sh",
+    "stories:data": "python3 scripts/stories-data.py",
+    "stories": "bash scripts/render-stories.sh"
   }
 }

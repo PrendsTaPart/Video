@@ -1,0 +1,121 @@
+{
+  "draftLabel": "VERSION DE TRAVAIL · musique à finaliser",
+  "footer": "31.12.2026 · Réservations 01 84 60 20 46",
+  "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet Stories Instagram",
+  "title": "Story 3 — 4 salles",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 8
+  },
+  "scenes": [
+    {
+      "id": "s0",
+      "start": 0.0,
+      "end": 1.25,
+      "media": "assets/photos/dj-neon-villabeach.jpg",
+      "fx": "30% 50%",
+      "grade": "salle-gen",
+      "zoom": "in",
+      "salle": {
+        "num": "Salle 1",
+        "name": "Généraliste",
+        "genres": ""
+      }
+    },
+    {
+      "id": "s1",
+      "start": 1.25,
+      "end": 2.5,
+      "media": "assets/photos/salle-latino-couple-1.jpg",
+      "fx": "45% 40%",
+      "grade": "salle-latino",
+      "zoom": "in",
+      "salle": {
+        "num": "Salle 2",
+        "name": "Latino / SBK",
+        "genres": ""
+      }
+    },
+    {
+      "id": "s2",
+      "start": 2.5,
+      "end": 3.75,
+      "media": "assets/photos/fete-villa.jpg",
+      "fx": "35% 45%",
+      "grade": "salle-retro",
+      "zoom": "in",
+      "salle": {
+        "num": "Salle 3",
+        "name": "80 / 90 / 2000",
+        "genres": ""
+      }
+    },
+    {
+      "id": "s3",
+      "start": 3.75,
+      "end": 5.0,
+      "media": "assets/photos/couple-danse.jpg",
+      "fx": "55% 40%",
+      "grade": "salle-carib",
+      "zoom": "in",
+      "salle": {
+        "num": "Salle 4",
+        "name": "Caraïbéenne",
+        "genres": ""
+      }
+    },
+    {
+      "id": "q",
+      "start": 5,
+      "end": 8,
+      "media": "assets/photos/piste-mains-levees.jpg",
+      "fx": "55% 50%",
+      "grade": "club",
+      "texts": [
+        {
+          "role": "brand",
+          "text": "4 salles • 4 ambiances",
+          "at": 5.1
+        },
+        {
+          "role": "tagline",
+          "text": "Quelle sera la vôtre ?",
+          "at": 5.4
+        }
+      ]
+    }
+  ],
+  "subtitles": [],
+  "music": {
+    "sections": [
+      {
+        "style": "house",
+        "start": 0.0,
+        "end": 1.25
+      },
+      {
+        "style": "latin",
+        "start": 1.25,
+        "end": 2.5
+      },
+      {
+        "style": "disco",
+        "start": 2.5,
+        "end": 3.75
+      },
+      {
+        "style": "carib",
+        "start": 3.75,
+        "end": 5.0
+      },
+      {
+        "style": "house",
+        "start": 5,
+        "end": 8
+      }
+    ]
+  },
+  "sticker": "Sondage : Généraliste / Latino / 80-2000 / Caraïbes"
+}

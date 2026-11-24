@@ -1,0 +1,92 @@
+{
+  "draftLabel": "VERSION DE TRAVAIL · musique à finaliser",
+  "footer": "31.12.2026 · Réservations 01 84 60 20 46",
+  "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet Stories Instagram",
+  "title": "Story 6 — Compte à rebours",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 8
+  },
+  "scenes": [
+    {
+      "id": "cd",
+      "start": 0,
+      "end": 5.1,
+      "type": "countdown",
+      "beats": [
+        0.6,
+        1.05,
+        1.5,
+        1.95,
+        2.4,
+        2.85,
+        3.3,
+        3.75,
+        4.2,
+        4.65
+      ],
+      "labels": [
+        "10",
+        "9",
+        "8",
+        "7",
+        "6",
+        "5",
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "kicker": "31.12.2026"
+    },
+    {
+      "id": "ny",
+      "start": 5.1,
+      "end": 8,
+      "media": "assets/photos/fete-villa.jpg",
+      "fx": "70% 40%",
+      "grade": "midnight",
+      "celebrate": true,
+      "texts": [
+        {
+          "role": "big",
+          "text": "2027 !",
+          "at": 5.2
+        }
+      ]
+    }
+  ],
+  "subtitles": [],
+  "music": {
+    "sections": [
+      {
+        "style": "build",
+        "start": 0,
+        "end": 0.6
+      },
+      {
+        "style": "countdown",
+        "beats": [
+          0.6,
+          1.05,
+          1.5,
+          1.95,
+          2.4,
+          2.85,
+          3.3,
+          3.75,
+          4.2,
+          4.65
+        ]
+      },
+      {
+        "style": "drop",
+        "start": 5.1,
+        "end": 8
+      }
+    ]
+  },
+  "sticker": "Partager / taguer ses amis"
+}

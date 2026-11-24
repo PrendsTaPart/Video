@@ -121,6 +121,12 @@ for (const s of T.scenes) {
     bubbles(s.start + 0.3, s.end, 28);
   }
 
+  if (s.rows) {
+    const html = `<div class="rows">${s.rows.map((r, i) => `<div class="row r${i}"><span class="r-l">${esc(r.label)}</span><span class="r-p">${esc(r.price)}</span></div>`).join('')}</div>`;
+    const sel = clip(html, s.start, s.end, 20, 'layer pos-rows');
+    s.rows.forEach((r, i) => anim.push(`tl.fromTo('${sel} .r${i}', {opacity:0, x:-80}, {opacity:1, x:0, duration:0.45, ease:'power3.out'}, ${r.at});`));
+  }
+
   if (s.cards) {
     s.cards.forEach((c, i) => {
       const sel = clip(`<div class="card"><div class="c-big">${esc(c.big)}</div><div class="c-small">${esc(c.small)}</div></div>`, c.at, s.end, 20, 'layer', `top:${330 + i * 300}px`);
@@ -202,7 +208,12 @@ for (const sub of T.subtitles ?? []) {
 
 // petit monogramme en coin pendant les plans « réels » (pas sur le carton final qui l'affiche en grand)
 const END = (T.scenes.find((x) => x.type === 'endcard') ?? { start: DUR }).start;
-clip('<img class="corner-logo" src="assets/brand/villa-beach-monogram.png" alt="">', 0, END, 35, 'layer');
+if (T.footer && END > 0) {
+  // pied de page constant des stories : logo + date + téléphone, au-dessus de la barre de réponse Instagram
+  clip(`<div class="footer"><img src="assets/brand/villa-beach-monogram.png" alt=""><span>${esc(T.footer)}</span></div>`, 0, END, 35, 'layer');
+} else if (!T.footer) {
+  clip('<img class="corner-logo" src="assets/brand/villa-beach-monogram.png" alt="">', 0, END, 35, 'layer');
+}
 if (!FINAL) clip(`<div class="draft">${esc(T.draftLabel ?? 'VERSION DE TRAVAIL · voix off et musique à finaliser')}</div>`, 0, DUR, 50, 'layer');
 
 const html = `<!doctype html>

@@ -1,0 +1,54 @@
+{
+  "draftLabel": "VERSION DE TRAVAIL · musique à finaliser",
+  "footer": "31.12.2026 · Réservations 01 84 60 20 46",
+  "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet Stories Instagram",
+  "title": "Story 8 — Anniversaire",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 7
+  },
+  "scenes": [
+    {
+      "id": "a",
+      "start": 0,
+      "end": 7,
+      "media": "assets/photos/groupe-neon-villabeach.jpg",
+      "fx": "50% 45%",
+      "grade": "dark",
+      "zoom": "in",
+      "celebrate": true,
+      "texts": [
+        {
+          "role": "title",
+          "text": "Né en décembre ?",
+          "at": 0.3,
+          "end": 1.8
+        },
+        {
+          "role": "price",
+          "label": "Offre anniversaire",
+          "text": "1 bouteille offerte",
+          "at": 1.9
+        },
+        {
+          "role": "menu",
+          "text": "pour 5 entrées · pièce d'identité requise",
+          "at": 2.3
+        }
+      ]
+    }
+  ],
+  "subtitles": [],
+  "music": {
+    "sections": [
+      {
+        "style": "drop",
+        "start": 0,
+        "end": 7
+      }
+    ]
+  },
+  "sticker": "Partager à un ami né en décembre"
+}

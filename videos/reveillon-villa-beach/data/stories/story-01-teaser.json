@@ -1,0 +1,46 @@
+{
+  "draftLabel": "VERSION DE TRAVAIL · musique à finaliser",
+  "footer": "31.12.2026 · Réservations 01 84 60 20 46",
+  "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet Stories Instagram",
+  "title": "Story 1 — Teaser",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 7
+  },
+  "scenes": [
+    {
+      "id": "a",
+      "start": 0,
+      "end": 7,
+      "media": "assets/photos/silhouette-lumieres-villabeach.jpg",
+      "fx": "50% 50%",
+      "grade": "night",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "mid",
+          "text": "Une nuit exceptionnelle",
+          "at": 0.6
+        },
+        {
+          "role": "low",
+          "text": "se prépare…",
+          "at": 3.0
+        }
+      ]
+    }
+  ],
+  "subtitles": [],
+  "music": {
+    "sections": [
+      {
+        "style": "intro",
+        "start": 0,
+        "end": 7
+      }
+    ]
+  },
+  "sticker": "Compte à rebours (fin : 31/12/2026 19:00)"
+}

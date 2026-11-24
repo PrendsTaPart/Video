@@ -37,6 +37,28 @@ Les photos de plats ne sont pas légendées comme des plats du menu, sauf le tar
 Le service bouteilles/tables VIP n'a pas de photo dédiée : le Reel 4 utilise bar, flamme,
 plateau de cocktails et bouteille au seau.
 
+## Stories Instagram — plan de campagne Excel (onglet « Stories Instagram »)
+
+10 stories 1080 × 1920, 7 à 8 s chacune, musique seule (pas de voix off : les stories se
+regardent souvent sans le son). Pied de page constant : monogramme · 31.12.2026 · 01 84 60 20 46.
+Timelines : `scripts/stories-data.py` → `data/stories/*.json` ; rendu : `bash scripts/render-stories.sh`.
+Fichiers : `renders/stories/story-NN-*_9x16_version-de-travail.mp4`.
+
+| Story | Sticker à ajouter dans l'app Instagram |
+|---|---|
+| 01 Teaser — « Une nuit exceptionnelle se prépare… » | Compte à rebours (31/12/2026 19:00) |
+| 02 Annonce — Le plus grand réveillon du Nouvel An · 31.12.2026 | Lien (après publication du site) ou appel |
+| 03 4 salles — « Quelle sera la vôtre ? » | Sondage Généraliste / Latino / 80-2000 / Caraïbes |
+| 04 Dîner — 120 € / 180 € / dès 19 h | Réserver le dîner |
+| 05 VIP — Packs à partir de 200 € | Appel / réservation |
+| 06 Compte à rebours — 10…1 → 2027 ! | Partager / taguer |
+| 07 Clubbing — 20 / 30 / 40 / 100 € | Réserver |
+| 08 Anniversaire — né en décembre, 1 bouteille offerte pour 5 entrées | Partager à un ami |
+| 09 Dress code — Chic & élégant | Question « Ta tenue du 31 ? » |
+| 10 Dernier CTA — Réservez votre soirée + téléphone | Lien de prévente / appel |
+
+Les stickers se posent à la publication, dans la zone libre centrale (≈ 1080–1400 px).
+
 ## Points à valider avant diffusion
 
 1. **Voix off — manquante** (Reels 1, 3, 4 et teaser ; Reel 2 optionnelle, Reel 5 sans voix).

@@ -1,0 +1,72 @@
+{
+  "draftLabel": "VERSION DE TRAVAIL · musique à finaliser",
+  "footer": "31.12.2026 · Réservations 01 84 60 20 46",
+  "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet Stories Instagram",
+  "title": "Story 4 — Dîner",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 8
+  },
+  "scenes": [
+    {
+      "id": "a",
+      "start": 0,
+      "end": 2.5,
+      "media": "assets/photos/table-dressee-rose-bougies.jpg",
+      "fx": "50% 50%",
+      "grade": "warm",
+      "zoom": "in",
+      "texts": [
+        {
+          "role": "title",
+          "text": "Un dîner d'exception",
+          "at": 0.2
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "start": 2.5,
+      "end": 8,
+      "media": "assets/photos/tartare-crevettes-mangue.jpg",
+      "fx": "50% 50%",
+      "grade": "dark",
+      "zoom": "in",
+      "cards": [
+        {
+          "big": "120 € / pers.",
+          "small": "Dîner de fête",
+          "at": 2.7
+        },
+        {
+          "big": "180 € / pers.",
+          "small": "Dîner Champagne",
+          "at": 3.7
+        },
+        {
+          "big": "Dès 19 h",
+          "small": "Ouverture du restaurant",
+          "at": 4.7
+        }
+      ]
+    }
+  ],
+  "subtitles": [],
+  "music": {
+    "sections": [
+      {
+        "style": "intro",
+        "start": 0,
+        "end": 2.5
+      },
+      {
+        "style": "lounge",
+        "start": 2.5,
+        "end": 8
+      }
+    ]
+  },
+  "sticker": "Réserver le dîner (lien ou appel)"
+}
