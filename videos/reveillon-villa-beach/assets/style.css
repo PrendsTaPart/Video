@@ -1,0 +1,152 @@
+/* Charte Villa Beach (site « Villa Beach Brilliance ») :
+   noir #0B0A08, brun nuit #1A1410, or #C9A45C, dégradé or #E8D39A → #9C7B3B,
+   crème #F2EAD6, accent ambre #E07A2F. Bebas Neue / Inter / Cormorant Garamond.
+   Zones sûres Reels/TikTok : textes entre x 80–930 et y 260–1480. */
+@font-face { font-family: "Bebas Neue"; src: url("fonts/bebas-neue-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "Cormorant Garamond"; src: url("fonts/cormorant-garamond-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "Cormorant Garamond"; src: url("fonts/cormorant-garamond-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "Cormorant Garamond"; src: url("fonts/cormorant-garamond-latin-600-italic.woff2") format("woff2"); font-weight: 600; font-style: italic; }
+@font-face { font-family: "Cormorant Garamond"; src: url("fonts/cormorant-garamond-latin-700-italic.woff2") format("woff2"); font-weight: 700; font-style: italic; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+
+:root {
+  --noir: #0B0A08; --brun: #1A1410; --or: #C9A45C; --or-clair: #E8D39A; --or-fonce: #9C7B3B;
+  --creme: #F2EAD6; --ambre: #E07A2F;
+  --grad-or: linear-gradient(135deg, #F6E7B8 0%, #E8D39A 30%, #C9A45C 60%, #9C7B3B 100%);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--noir); }
+body { font-family: "Inter", sans-serif; color: var(--creme); }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--noir); }
+
+.scene, .layer, .media { position: absolute; inset: 0; }
+.media { width: 1080px; height: 1920px; object-fit: cover; }
+.scene img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ov { position: absolute; inset: 0; }
+.gold { background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* ---------- étalonnages ---------- */
+.grade-dusk, .grade-dusk img { filter: brightness(.78) saturate(1.15) sepia(.18) contrast(1.05); }
+.ov-dusk { background: linear-gradient(180deg, rgba(11,10,8,.92) 0%, rgba(11,10,8,.78) 30%, rgba(11,10,8,.15) 52%, rgba(11,10,8,.15) 60%, rgba(11,10,8,.85) 100%); }
+.grade-club img { filter: contrast(1.12) saturate(1.2) brightness(.8); }
+.ov-club { background: linear-gradient(180deg, rgba(11,10,8,.85), rgba(60,20,90,.25) 45%, rgba(11,10,8,.85)); }
+.grade-warm img { filter: brightness(.82) sepia(.22) saturate(1.15) contrast(1.05); }
+.ov-warm { background: linear-gradient(180deg, rgba(26,20,16,.2) 0%, rgba(26,20,16,.1) 40%, rgba(11,10,8,.85) 100%); }
+/* Salle 1 : photo N&B colorisée façon club (magenta / cyan) */
+.grade-salle-gen img { filter: grayscale(1) contrast(1.25) brightness(.85); }
+.ov-salle-gen { background: linear-gradient(160deg, rgba(255,0,170,.55), rgba(0,200,255,.45)); mix-blend-mode: color; }
+/* Salle 2 : chaleur latine rouge / ambre */
+.grade-salle-latino img { filter: saturate(1.3) contrast(1.15) brightness(.8); }
+.ov-salle-latino { background: linear-gradient(180deg, rgba(200,30,40,.45), rgba(224,122,47,.35)); mix-blend-mode: color; }
+/* Salle 3 : rétro néon violet / rose */
+.grade-salle-retro img { filter: saturate(1.4) contrast(1.2) brightness(.75) hue-rotate(-20deg); }
+.ov-salle-retro { background: linear-gradient(180deg, rgba(120,40,220,.55), rgba(255,60,160,.45)); mix-blend-mode: color; }
+/* Salle 4 : tropical vert / jaune */
+.grade-salle-carib img { filter: saturate(1.35) contrast(1.1) brightness(.78); }
+.ov-salle-carib { background: linear-gradient(180deg, rgba(0,160,110,.5), rgba(255,200,0,.35)); mix-blend-mode: color; }
+.grade-night img { filter: blur(5px) brightness(.45) saturate(1.1); }
+.ov-night { background: radial-gradient(ellipse at 50% 40%, rgba(201,164,92,.2), rgba(11,10,8,.7) 70%); }
+.grade-midnight img { filter: brightness(.85) saturate(1.25) contrast(1.1); }
+.ov-midnight { background: linear-gradient(180deg, rgba(11,10,8,.4), rgba(11,10,8,0) 40%, rgba(11,10,8,.8)); }
+.grade-blur img { filter: blur(16px) brightness(.38) saturate(1.2); }
+.ov-blur { background: linear-gradient(180deg, rgba(26,20,16,.4), rgba(11,10,8,.7)); }
+
+/* lisibilité générale : voile bas pour les sous-titres sur toutes les scènes */
+.scene::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 760px;
+  background: linear-gradient(180deg, rgba(11,10,8,0), rgba(11,10,8,.7)); }
+
+/* ---------- effets salles ---------- */
+.fx-beams { mix-blend-mode: screen; overflow: hidden; }
+.beam { position: absolute; bottom: -200px; width: 220px; height: 2600px; transform-origin: 50% 100%;
+  background: linear-gradient(0deg, rgba(255,255,255,.55), rgba(255,0,200,.25) 40%, rgba(0,0,0,0) 85%); filter: blur(18px); }
+.b1 { left: 120px; } .b2 { left: 720px; background: linear-gradient(0deg, rgba(255,255,255,.5), rgba(0,200,255,.3) 40%, rgba(0,0,0,0) 85%); }
+.b3 { left: 430px; width: 160px; }
+.scan { position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(0,0,0,.28) 0 2px, rgba(0,0,0,0) 2px 6px); mix-blend-mode: multiply; }
+.grid80 { position: absolute; left: -300px; right: -300px; bottom: 0; height: 760px;
+  background-image: linear-gradient(rgba(255,80,200,.55) 2px, transparent 2px), linear-gradient(90deg, rgba(255,80,200,.55) 2px, transparent 2px);
+  background-size: 120px 120px; transform: perspective(500px) rotateX(62deg); transform-origin: 50% 100%; opacity: .7; }
+.pulse { position: absolute; inset: 0; }
+.pulse-salle-latino .pulse { background: radial-gradient(circle at 50% 60%, rgba(255,90,40,.6), rgba(0,0,0,0) 65%); mix-blend-mode: screen; }
+.pulse-salle-carib .pulse { background: radial-gradient(circle at 50% 55%, rgba(255,220,60,.55), rgba(0,180,120,.2) 45%, rgba(0,0,0,0) 70%); mix-blend-mode: screen; }
+
+/* ---------- textes ---------- */
+.pos-kicker { top: 300px; } .pos-title { top: 360px; }
+.pos-brand { top: 330px; } .pos-tagline { top: 450px; }
+.pos-chip { top: 360px; } .pos-price { top: 340px; } .pos-menu { top: 1010px; }
+.pos-burst { top: 560px; } .pos-headline { top: 760px; }
+.pos-salle { top: 300px; } .pos-center { top: 0; } .pos-cdk { top: 330px; }
+.pos-kicker, .pos-title, .pos-brand, .pos-tagline, .pos-chip, .pos-price, .pos-menu, .pos-burst, .pos-headline, .pos-salle, .pos-cdk { bottom: auto; height: auto; }
+
+.t-kicker { margin: 0 150px 0 80px; font: 700 34px "Inter"; letter-spacing: .32em; text-transform: uppercase; color: var(--or-clair); }
+.t-title { text-wrap: balance; margin: 0 150px 0 80px; font: 700 124px/0.98 "Cormorant Garamond"; }
+.t-title .txt { background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 4px 18px rgba(0,0,0,.9)); }
+.t-brand { margin: 0 150px 0 80px; font: 400 86px/1 "Bebas Neue"; letter-spacing: .04em; white-space: nowrap; }
+.t-brand .txt { background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.t-tagline { margin: 0 150px 0 80px; font: italic 600 70px/1.08 "Cormorant Garamond"; color: var(--creme); text-shadow: 0 4px 30px rgba(0,0,0,.8); }
+.t-chip { margin-left: 80px; display: inline-block; padding: 26px 44px; border: 2px solid var(--or); border-radius: 999px;
+  background: rgba(11,10,8,.62); font: 400 92px/1 "Bebas Neue"; letter-spacing: .05em; color: var(--creme); }
+.t-price { margin: 0 150px 0 80px; padding: 34px 40px; border-radius: 22px; border: 2px solid rgba(201,164,92,.8); background: rgba(11,10,8,.72); display: inline-flex; flex-direction: column; gap: 14px; }
+.t-price .lbl { font: 700 40px "Inter"; letter-spacing: .22em; text-transform: uppercase; color: var(--or-clair); text-shadow: 0 2px 16px rgba(0,0,0,.9); }
+.t-price .txt { font: 700 150px/1 "Cormorant Garamond"; background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 6px 24px rgba(0,0,0,.7)); }
+.t-menu { margin: 0 150px 0 80px; padding: 22px 30px; border-left: 4px solid var(--or); background: rgba(11,10,8,.6);
+  font: italic 600 50px/1.15 "Cormorant Garamond"; color: var(--creme); text-wrap: balance; }
+.t-burst { text-align: center; margin: 0 80px; font: 700 150px/1 "Cormorant Garamond"; font-style: italic; }
+.t-burst .txt { background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 30px rgba(232,211,154,.8)); }
+.t-headline { text-wrap: balance; text-align: center; margin: 0 80px; font: 400 160px/1 "Bebas Neue"; letter-spacing: .03em; color: var(--creme);
+  text-shadow: 0 0 40px rgba(232,211,154,.7), 0 6px 30px rgba(0,0,0,.8); }
+
+/* cartouches de salle : même gabarit, typo/couleur propre à chaque ambiance */
+.salle { margin: 0 150px 0 80px; }
+.s-num { font: 700 36px "Inter"; letter-spacing: .3em; text-transform: uppercase; color: var(--or-clair); text-shadow: 0 2px 14px rgba(0,0,0,.9); }
+.s-name { margin-top: 10px; font: 400 150px/0.95 "Bebas Neue"; letter-spacing: .02em; color: #fff; text-shadow: 0 6px 34px rgba(0,0,0,.75); }
+.s-rule { margin: 22px 0 20px; width: 260px; height: 5px; background: var(--grad-or); transform-origin: 0 50%; }
+.s-genres { font: 700 44px/1.3 "Inter"; color: var(--creme); text-shadow: 0 2px 16px rgba(0,0,0,.95); }
+.salle-salle-gen .s-name { color: #fff; text-shadow: 0 0 30px rgba(255,0,200,.9), 0 0 60px rgba(0,200,255,.6); }
+.salle-salle-latino .s-name { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 700; font-size: 128px; line-height: .98; color: #fff; text-shadow: 0 0 28px rgba(230,50,30,1), 0 4px 18px rgba(0,0,0,.9); }
+.salle-salle-retro .s-name { font-size: 190px; color: #fff; text-shadow: 6px 0 0 rgba(255,40,180,.9), -6px 0 0 rgba(0,230,255,.9), 0 0 40px rgba(160,60,255,.9); }
+.salle-salle-carib .s-name { color: #FFE680; text-shadow: 0 0 30px rgba(0,180,120,.95), 0 6px 30px rgba(0,0,0,.6); }
+
+.pill { margin-left: 80px; display: inline-flex; align-items: center; gap: 28px; padding: 30px 50px; border-radius: 999px;
+  border: 2px solid rgba(232,211,154,.7); background: rgba(11,10,8,.66); font: 400 104px/1 "Bebas Neue"; letter-spacing: .04em; color: var(--creme); }
+.dot { width: 26px; height: 26px; border-radius: 50%; background: var(--grad-or); box-shadow: 0 0 24px var(--or-clair); }
+
+.cd-bg { position: absolute; inset: 0; background: radial-gradient(circle at 50% 46%, #3a2a14 0%, var(--brun) 35%, var(--noir) 75%); }
+.cd-num { position: absolute; left: 0; right: 0; top: 560px; text-align: center; font: 400 620px/1 "Bebas Neue";
+  background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 50px rgba(232,211,154,.55)); }
+.cd-ring { position: absolute; left: 290px; top: 600px; width: 500px; height: 500px; border-radius: 50%; border: 8px solid var(--or-clair); }
+.cd-kicker { text-align: center; font: 700 40px "Inter"; letter-spacing: .5em; text-transform: uppercase; color: var(--or-clair); }
+
+.flash { position: absolute; inset: 0; background: radial-gradient(circle at 50% 45%, #fff 0%, #F6E7B8 40%, rgba(232,211,154,0) 80%); }
+.confetti, .bubbles { overflow: hidden; }
+.cf { position: absolute; top: 0; border-radius: 2px; }
+.bb { position: absolute; top: 0; border-radius: 50%; border: 2px solid rgba(255,248,225,.85);
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.9), rgba(232,211,154,.25) 40%, rgba(255,255,255,0) 70%); }
+.gl { position: absolute; border-radius: 50%; background: var(--or-clair); box-shadow: 0 0 12px var(--or); }
+
+.card { margin: 0 150px 0 80px; padding: 40px 46px; border: 2px solid rgba(201,164,92,.85); border-radius: 22px;
+  background: rgba(26,20,16,.72); box-shadow: 0 20px 60px rgba(0,0,0,.5); }
+.c-big { font: 400 112px/1 "Bebas Neue"; letter-spacing: .03em; background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.c-small { margin-top: 10px; font: italic 600 58px/1.1 "Cormorant Garamond"; color: var(--creme); }
+
+.end-bg { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 30%, #3a2a14 0%, var(--brun) 40%, var(--noir) 80%); }
+.endcard { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 250px 140px 0 80px; }
+.e-logo { width: 200px; height: 200px; }
+.e-title { margin-top: 30px; font: 700 112px/1 "Cormorant Garamond"; background: var(--grad-or); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.e-sub { text-wrap: balance; margin-top: 26px; font: 700 36px/1.3 "Inter"; letter-spacing: .08em; text-transform: uppercase; color: var(--creme); }
+.e-rule { margin: 42px 0 36px; width: 240px; height: 3px; background: var(--grad-or); }
+.e-venue { font: 400 86px/1 "Bebas Neue"; letter-spacing: .08em; color: var(--creme); }
+.e-addr { margin-top: 18px; font: 500 40px/1.3 "Inter"; color: var(--creme); }
+.e-phone { margin-top: 44px; padding: 26px 50px 22px; border-radius: 26px; background: var(--grad-or); color: var(--noir);
+  font: 400 128px/1 "Bebas Neue"; letter-spacing: .04em; display: flex; flex-direction: column; align-items: center; }
+.e-tel { font: 800 28px/1 "Inter"; letter-spacing: .3em; text-transform: uppercase; margin-bottom: 10px; }
+.e-url { margin-top: 30px; font: 700 46px "Inter"; color: var(--or-clair); }
+
+.pos-sub { top: 1330px; bottom: auto; height: auto; text-align: center; padding: 0 150px 0 80px; }
+.sub { display: inline-block; padding: 14px 26px; border-radius: 14px; background: rgba(11,10,8,.62);
+  font: 800 54px/1.2 "Inter"; color: #fff; }
+
+.corner-logo { position: absolute; left: 80px; top: 1530px; width: 96px; height: 96px; opacity: .9; }
+.draft { position: absolute; left: 0; right: 0; top: 150px; text-align: center; font: 800 26px "Inter"; letter-spacing: .08em;
+  color: #111; background: rgba(255,196,0,.92); padding: 10px 0; }

@@ -1,0 +1,14 @@
+{
+  "name": "reveillon-villa-beach",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:final": "node scripts/build.mjs --final",
+    "music": "python3 scripts/music.py assets/music/musique-travail.wav",
+    "check": "npx hyperframes lint && npx hyperframes validate",
+    "render": "npx hyperframes render --output renders/video-muette.mp4",
+    "mix": "bash scripts/mix.sh",
+    "srt": "node scripts/srt.mjs"
+  }
+}
