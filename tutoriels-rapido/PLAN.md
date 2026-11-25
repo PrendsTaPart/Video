@@ -334,7 +334,7 @@ Hébergement des vidéos (décision de Michael, 13/11/2026) : 720p, dans la bibl
 Mise à jour du site : `python3 _gabarit/export-site.py /home/user/rapido-software/resources/data/academie.json`.
 - [ ] W1 — Remplacer les captures et démos de la page RapidoCRM par les vrais écrans filmés (boucles vidéo courtes + animations HTML/CSS)
 - [ ] W2 — Idem page RapidoCMS
-- [ ] W3 — Idem page RapidoRH
+- [x] W3 — Idem page RapidoRH : 10 vrais écrans (25/11, rapido-software, branche ccr-dbfe6358-2gefhr), reliés aux tutoriels ; forum et réunions vides dans la base de démonstration (laissés en animation)
 - [x] W5 — Marketplace de prompts (/marketplace-prompts) : 46 prompts CRM/CMS/RH/suite, filtres logiciel · catégorie · fonctionnalité · outil MCP, champs [entre crochets] en formulaire, Claude / ChatGPT / Mistral, bouton Infos → tutoriel (commit b0aee81, branche ccr-dbfe6358-2gefhr)
 - [x] W4 — Accueil : section « tutoriels » qui présente les vidéos réalisées → « Académie Rapido » (/academie, page vidéo, section accueil et pages produit), branche ccr-dbfe6358-2gefhr, commit 08cf25d
 
