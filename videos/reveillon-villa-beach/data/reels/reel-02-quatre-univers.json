@@ -1,102 +1,132 @@
 {
-  "draftLabel": "VERSION DE TRAVAIL · voix off et musique à finaliser",
+  "dateBadge": "Jeudi 31 décembre 2026",
   "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet TikTok Reels",
   "title": "Reel 2 — 4 univers",
   "format": {
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "duration": 20
+    "duration": 20.6
   },
   "scenes": [
     {
-      "id": "s1",
+      "id": "gen",
       "start": 0.0,
       "end": 3.0,
       "media": "assets/photos/dj-neon-villabeach.jpg",
       "fx": "30% 50%",
       "grade": "salle-gen",
-      "zoom": "in",
+      "trans": "none",
       "salle": {
-        "num": "Salle 1",
+        "num": "Salle 1 / 4",
         "name": "Team Généraliste ?",
         "genres": "Hits · Pop · R&B · House"
       }
     },
     {
-      "id": "s2",
+      "id": "lat",
       "start": 3.0,
       "end": 6.0,
       "media": "assets/photos/salle-latino-couple-1.jpg",
       "fx": "45% 40%",
       "grade": "salle-latino",
-      "zoom": "in",
+      "trans": "whip",
       "salle": {
-        "num": "Salle 2",
-        "name": "Team Latino ?",
+        "num": "Salle 2 / 4",
+        "name": "Team Latino / SBK ?",
         "genres": "Salsa · Bachata · Kizomba"
       }
     },
     {
-      "id": "s3",
+      "id": "ret",
       "start": 6.0,
       "end": 9.0,
       "media": "assets/photos/fete-villa.jpg",
       "fx": "35% 45%",
       "grade": "salle-retro",
-      "zoom": "in",
+      "trans": "zoom",
       "salle": {
-        "num": "Salle 3",
-        "name": "Team 80-90-2000 ?",
+        "num": "Salle 3 / 4",
+        "name": "Team 80 / 90 / 2000 ?",
         "genres": "Disco · Funk · Classics"
       }
     },
     {
-      "id": "s4",
+      "id": "car",
       "start": 9.0,
       "end": 12.0,
       "media": "assets/photos/couple-danse.jpg",
       "fx": "55% 40%",
       "grade": "salle-carib",
-      "zoom": "in",
+      "trans": "rise",
       "salle": {
-        "num": "Salle 4",
+        "num": "Salle 4 / 4",
         "name": "Team Caraïbéenne ?",
         "genres": "Zouk · Dancehall · Shatta"
       }
     },
     {
-      "id": "t",
+      "id": "g",
       "start": 12.0,
-      "end": 14.0,
-      "media": "assets/photos/piste-mains-levees.jpg",
-      "fx": "55% 50%",
-      "grade": "club",
-      "celebrate": true,
+      "end": 14.6,
+      "type": "grid4",
+      "trans": "flash",
+      "grid": [
+        {
+          "media": "assets/photos/dj-platines-nb.jpg",
+          "fx": "40% 50%",
+          "grade": "salle-gen",
+          "label": "Généraliste",
+          "at": 0
+        },
+        {
+          "media": "assets/photos/couple-danse-salsa.jpg",
+          "fx": "50% 40%",
+          "grade": "salle-latino",
+          "label": "Latino",
+          "at": 0.15
+        },
+        {
+          "media": "assets/photos/piste-mains-levees.jpg",
+          "fx": "55% 50%",
+          "grade": "salle-retro",
+          "label": "80-90-2000",
+          "at": 0.3
+        },
+        {
+          "media": "assets/photos/couple-danse-sombre.jpg",
+          "fx": "50% 40%",
+          "grade": "salle-carib",
+          "label": "Caraïbes",
+          "at": 0.45
+        }
+      ],
       "texts": [
         {
-          "role": "mid",
-          "text": "4 salles, 4 ambiances !",
-          "at": 12.1
+          "role": "stamp",
+          "text": "Et vous, team quoi ?",
+          "at": 13.0,
+          "top": 860
         }
       ]
     },
     {
       "id": "fin",
-      "start": 14.0,
-      "end": 20.0,
+      "start": 14.6,
+      "end": 20.6,
       "type": "endcard",
-      "date": "31 décembre 2026",
-      "title": "Quelle sera votre salle ?",
+      "date": "Jeudi 31 décembre 2026",
+      "title": "4 salles, une seule nuit",
+      "note": null,
       "sub": "Préventes conseillées • Accès prioritaire",
       "venue": "Domaine Villa Beach",
       "address": "23 rue des Pyrénées, 91090 Lisses",
       "phone": "01 84 60 20 46",
       "url": null,
-      "qr": null
+      "qr": null,
+      "bgVideo": "assets/video/jardin-pergola-9x16.mp4"
     }
   ],
-  "subtitles": [],
   "voiceover": {
     "optional": true,
     "lines": [
@@ -131,12 +161,12 @@
       {
         "style": "drop",
         "start": 12.0,
-        "end": 14.0
+        "end": 14.6
       },
       {
         "style": "outro",
-        "start": 14.0,
-        "end": 20.0
+        "start": 14.6,
+        "end": 20.6
       }
     ]
   }

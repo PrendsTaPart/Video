@@ -1,6 +1,5 @@
 {
-  "draftLabel": "VERSION DE TRAVAIL · musique à finaliser",
-  "footer": "31.12.2026 · Réservations 01 84 60 20 46",
+  "footer": "Jeudi 31 décembre 2026|Réservations 01 84 60 20 46",
   "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet Stories Instagram",
   "title": "Story 10 — Dernier CTA",
   "format": {
@@ -15,17 +14,19 @@
       "start": 0,
       "end": 7,
       "type": "endcard",
-      "date": "31 décembre 2026",
+      "date": "Jeudi 31 décembre 2026",
       "title": "Réservez votre soirée",
-      "sub": "Préventes conseillées • Accès prioritaire",
+      "note": "Dernières places · préventes conseillées",
+      "sub": "Accès prioritaire",
       "venue": "Domaine Villa Beach",
       "address": "23 rue des Pyrénées, 91090 Lisses",
       "phone": "01 84 60 20 46",
       "url": null,
-      "qr": null
+      "qr": null,
+      "bgVideo": "assets/video/terrasse-pergola.mp4",
+      "trans": "none"
     }
   ],
-  "subtitles": [],
   "music": {
     "sections": [
       {
@@ -35,5 +36,5 @@
       }
     ]
   },
-  "sticker": "Téléphone / lien de prévente"
+  "sticker": "Appel / lien de prévente"
 }

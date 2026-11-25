@@ -1,6 +1,5 @@
 {
-  "draftLabel": "VERSION DE TRAVAIL · musique à finaliser",
-  "footer": "31.12.2026 · Réservations 01 84 60 20 46",
+  "footer": "Jeudi 31 décembre 2026|Réservations 01 84 60 20 46",
   "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet Stories Instagram",
   "title": "Story 8 — Anniversaire",
   "format": {
@@ -17,14 +16,14 @@
       "media": "assets/photos/groupe-neon-villabeach.jpg",
       "fx": "50% 45%",
       "grade": "dark",
-      "zoom": "in",
       "celebrate": true,
       "texts": [
         {
           "role": "title",
           "text": "Né en décembre ?",
           "at": 0.3,
-          "end": 1.8
+          "end": 1.8,
+          "out": true
         },
         {
           "role": "price",
@@ -40,7 +39,6 @@
       ]
     }
   ],
-  "subtitles": [],
   "music": {
     "sections": [
       {

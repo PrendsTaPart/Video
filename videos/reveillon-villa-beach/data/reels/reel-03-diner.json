@@ -1,163 +1,167 @@
 {
-  "draftLabel": "VERSION DE TRAVAIL · voix off et musique à finaliser",
+  "dateBadge": "Jeudi 31 décembre 2026",
   "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet TikTok Reels",
-  "title": "Reel 3 — Dîner de fête",
+  "title": "Reel 3 — Dîner du réveillon (menu exclusif)",
   "format": {
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "duration": 22
+    "duration": 24
   },
   "scenes": [
     {
-      "id": "a",
+      "id": "v",
       "start": 0,
-      "end": 3,
-      "media": "assets/photos/table-dressee-rose-bougies.jpg",
-      "fx": "50% 50%",
-      "grade": "warm",
-      "zoom": "in",
+      "end": 3.0,
+      "type": "video",
+      "media": "assets/video/terrasse-approche.mp4",
+      "grade": "dusk",
       "texts": [
         {
           "role": "kicker",
-          "text": "Réveillon 31.12.2026",
-          "at": 0.1
+          "text": "Un soir. Un seul menu.",
+          "at": 0.15
         },
         {
           "role": "title",
-          "text": "Un dîner d'exception",
-          "at": 0.3
+          "text": "Le dîner du réveillon",
+          "at": 0.4
         }
       ]
     },
     {
-      "id": "b",
-      "start": 3,
-      "end": 6,
-      "media": "assets/photos/tartare-crevettes-mangue.jpg",
+      "id": "t",
+      "start": 3.0,
+      "end": 5.6,
+      "media": "assets/photos/table-dressee-rose-bougies.jpg",
       "fx": "50% 50%",
       "grade": "warm",
-      "zoom": "in",
+      "trans": "whip",
       "texts": [
         {
-          "role": "chip",
-          "text": "Foie gras ou tartare",
+          "role": "mid",
+          "text": "Servi uniquement le 31 décembre",
+          "top": 620,
           "at": 3.1
-        }
-      ]
-    },
-    {
-      "id": "c",
-      "start": 6,
-      "end": 10,
-      "media": "assets/photos/serveur-cocktails-plateau.jpg",
-      "fx": "50% 50%",
-      "grade": "softblur",
-      "texts": [
-        {
-          "role": "mid",
-          "text": "Veau ou Saint‑Jacques",
-          "at": 6.1
         },
         {
-          "role": "low",
-          "text": "plats au choix",
-          "at": 6.4
-        }
-      ]
-    },
-    {
-      "id": "d",
-      "start": 10,
-      "end": 13,
-      "media": "assets/photos/table-dressee-rose-bougies.jpg",
-      "fx": "20% 50%",
-      "grade": "softblur",
-      "texts": [
-        {
-          "role": "mid",
-          "text": "Bûches du Nouvel An",
-          "at": 10.1
-        },
-        {
-          "role": "low",
-          "text": "dessert",
-          "at": 10.4
+          "role": "stamp",
+          "text": "Menu exclusif",
+          "at": 4.0,
+          "top": 1040
         }
       ]
     },
     {
       "id": "e",
-      "start": 13,
-      "end": 16,
+      "start": 5.6,
+      "end": 7.8,
+      "media": "assets/photos/tartare-crevettes-mangue.jpg",
+      "fx": "50% 50%",
+      "grade": "warm",
+      "trans": "zoom",
+      "texts": [
+        {
+          "role": "chip",
+          "text": "Tartare exotique",
+          "at": 5.7
+        },
+        {
+          "role": "low",
+          "text": "avocat · crevettes · saumon · mangue",
+          "at": 6.0,
+          "top": 1060
+        }
+      ]
+    },
+    {
+      "id": "m",
+      "start": 7.8,
+      "end": 14.4,
+      "type": "menucard",
+      "trans": "rise",
+      "bg": {
+        "media": "assets/photos/table-dressee-rose-bougies.jpg",
+        "fx": "30% 50%",
+        "grade": "softblur"
+      },
+      "menu": {
+        "kicker": "Menu du Nouvel An",
+        "title": "31 décembre 2026",
+        "stamp": "Exclusif\n31.12 uniquement",
+        "stampAt": 4.4,
+        "courses": [
+          {
+            "k": "Apéritif",
+            "v": "2 amuse-bouches & coupe de bulles"
+          },
+          {
+            "k": "Entrée au choix",
+            "v": "Foie gras maison, chutney de figues · ou tartare exotique"
+          },
+          {
+            "k": "Plat au choix",
+            "v": "Pavé de veau, gratin dauphinois · ou noix de Saint-Jacques, risotto aux cèpes"
+          },
+          {
+            "k": "Dessert",
+            "v": "Assortiment de bûches du Nouvel An"
+          },
+          {
+            "k": "Boissons",
+            "v": "1 bouteille de vin pour 2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "p",
+      "start": 14.4,
+      "end": 18.0,
       "media": "assets/photos/tartare-crevettes-mangue.jpg",
       "fx": "80% 50%",
       "grade": "blur",
+      "trans": "flash",
       "cards": [
         {
           "big": "120 € / pers.",
-          "small": "Dîner de fête · vin inclus",
-          "at": 13.1
+          "small": "Dîner de fête",
+          "at": 14.5
         },
         {
           "big": "180 € / pers.",
           "small": "Dîner Champagne",
-          "at": 13.8
+          "at": 15.1
         },
         {
           "big": "Dès 19 h",
           "small": "puis les 4 salles jusqu'à 05 h",
-          "at": 14.5
+          "at": 15.7
         }
       ]
     },
     {
       "id": "fin",
-      "start": 16,
-      "end": 22,
+      "start": 18.0,
+      "end": 24.0,
       "type": "endcard",
-      "date": "31 décembre 2026",
+      "date": "Jeudi 31 décembre 2026",
       "title": "Réservez votre dîner",
+      "note": "Menu exclusif · uniquement le 31.12",
       "sub": "Préventes conseillées • Accès prioritaire",
       "venue": "Domaine Villa Beach",
       "address": "23 rue des Pyrénées, 91090 Lisses",
       "phone": "01 84 60 20 46",
       "url": null,
-      "qr": null
-    }
-  ],
-  "subtitles": [
-    {
-      "start": 0.3,
-      "end": 2.9,
-      "text": "Pour commencer la nouvelle année avec élégance"
-    },
-    {
-      "start": 3.1,
-      "end": 5.4,
-      "text": "découvrez notre dîner de fête"
-    },
-    {
-      "start": 6.1,
-      "end": 8.2,
-      "text": "Un menu raffiné, deux formules"
-    },
-    {
-      "start": 8.2,
-      "end": 11.4,
-      "text": "et l'accès aux quatre salles"
-    },
-    {
-      "start": 11.4,
-      "end": 12.9,
-      "text": "pour poursuivre la soirée"
+      "qr": null,
+      "bgVideo": "assets/video/terrasse-pergola.mp4"
     }
   ],
   "voiceover": {
     "lines": [
       {
         "start": 0.3,
-        "text": "Pour commencer la nouvelle année avec élégance, découvrez notre dîner de fête. Un menu raffiné, deux formules et l'accès aux quatre salles pour poursuivre la soirée."
+        "text": "Pour commencer la nouvelle année avec élégance, découvrez notre dîner de fête. Un menu raffiné, servi uniquement le soir du réveillon, deux formules et l'accès aux quatre salles pour poursuivre la soirée."
       }
     ]
   },
@@ -171,12 +175,12 @@
       {
         "style": "lounge",
         "start": 3,
-        "end": 16
+        "end": 18
       },
       {
         "style": "outro",
-        "start": 16,
-        "end": 22
+        "start": 18,
+        "end": 24
       }
     ]
   }

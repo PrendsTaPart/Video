@@ -1,6 +1,5 @@
 {
-  "draftLabel": "VERSION DE TRAVAIL · musique à finaliser",
-  "footer": "31.12.2026 · Réservations 01 84 60 20 46",
+  "footer": "Jeudi 31 décembre 2026|Réservations 01 84 60 20 46",
   "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet Stories Instagram",
   "title": "Story 7 — Clubbing tarifs",
   "format": {
@@ -21,7 +20,8 @@
         {
           "role": "kicker",
           "text": "Clubbing · par personne",
-          "at": 0.1
+          "at": 0.1,
+          "top": 290
         }
       ],
       "rows": [
@@ -33,22 +33,21 @@
         {
           "label": "Entrée + 1 conso",
           "price": "30 €",
-          "at": 0.9
+          "at": 0.8
         },
         {
           "label": "Entrée + 3 consos",
           "price": "40 €",
-          "at": 1.4
+          "at": 1.2
         },
         {
           "label": "Entrée + 10 consos",
           "price": "100 €",
-          "at": 1.9
+          "at": 1.6
         }
       ]
     }
   ],
-  "subtitles": [],
   "music": {
     "sections": [
       {

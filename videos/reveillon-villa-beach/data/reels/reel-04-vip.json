@@ -1,5 +1,5 @@
 {
-  "draftLabel": "VERSION DE TRAVAIL · voix off et musique à finaliser",
+  "dateBadge": "Jeudi 31 décembre 2026",
   "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet TikTok Reels",
   "title": "Reel 4 — Expérience VIP",
   "format": {
@@ -13,25 +13,19 @@
       "id": "a",
       "start": 0,
       "end": 3,
-      "media": "assets/photos/amies-tenues-chic-bouteille.jpg",
-      "fx": "50% 35%",
-      "grade": "club",
-      "zoom": "in",
+      "type": "video",
+      "media": "assets/video/jardin-pergola-9x16.mp4",
+      "grade": "dusk",
       "texts": [
-        {
-          "role": "kicker",
-          "text": "Réveillon 31.12.2026",
-          "at": 0.1
-        },
         {
           "role": "brand",
           "text": "Votre réveillon",
-          "at": 0.25
+          "at": 0.15
         },
         {
           "role": "tagline",
           "text": "en mode VIP",
-          "at": 0.5
+          "at": 0.45
         }
       ]
     },
@@ -42,7 +36,7 @@
       "media": "assets/photos/amies-tenues-chic-bouteille.jpg",
       "fx": "45% 60%",
       "grade": "dark",
-      "zoom": "in",
+      "trans": "zoom",
       "texts": [
         {
           "role": "price",
@@ -64,7 +58,7 @@
       "media": "assets/photos/bar-flamme-cocktail.jpg",
       "fx": "50% 45%",
       "grade": "dark",
-      "zoom": "in",
+      "trans": "whip",
       "texts": [
         {
           "role": "price",
@@ -86,7 +80,7 @@
       "media": "assets/photos/serveur-cocktails-plateau.jpg",
       "fx": "55% 55%",
       "grade": "dark",
-      "zoom": "in",
+      "trans": "rise",
       "texts": [
         {
           "role": "price",
@@ -108,7 +102,7 @@
       "media": "assets/photos/groupe-neon-villabeach.jpg",
       "fx": "50% 45%",
       "grade": "dark",
-      "zoom": "in",
+      "trans": "flash",
       "texts": [
         {
           "role": "price",
@@ -128,31 +122,16 @@
       "start": 13,
       "end": 19,
       "type": "endcard",
-      "date": "31 décembre 2026",
+      "date": "Jeudi 31 décembre 2026",
       "title": "Réservez votre table",
+      "note": null,
       "sub": "Préventes conseillées • Accès prioritaire",
       "venue": "Domaine Villa Beach",
       "address": "23 rue des Pyrénées, 91090 Lisses",
       "phone": "01 84 60 20 46",
       "url": null,
-      "qr": null
-    }
-  ],
-  "subtitles": [
-    {
-      "start": 0.3,
-      "end": 2.9,
-      "text": "Tables, bouteilles et espaces VIP"
-    },
-    {
-      "start": 3.1,
-      "end": 5.4,
-      "text": "Choisissez votre pack"
-    },
-    {
-      "start": 5.6,
-      "end": 8.0,
-      "text": "et vivez le réveillon en grand"
+      "qr": null,
+      "bgVideo": "assets/video/terrasse-pergola.mp4"
     }
   ],
   "voiceover": {

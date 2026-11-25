@@ -1,5 +1,5 @@
 {
-  "draftLabel": "VERSION DE TRAVAIL · voix off et musique à finaliser",
+  "dateBadge": "Jeudi 31 décembre 2026",
   "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet TikTok Reels",
   "title": "Reel 5 — Countdown minuit",
   "format": {
@@ -13,22 +13,8 @@
       "id": "h",
       "start": 0,
       "end": 4,
-      "media": "assets/photos/silhouette-lumieres-villabeach.jpg",
-      "fx": "50% 50%",
-      "grade": "night",
-      "zoom": "in",
-      "texts": [
-        {
-          "role": "kicker",
-          "text": "31 décembre 2026",
-          "at": 0.1
-        },
-        {
-          "role": "big",
-          "text": "23:59",
-          "at": 0.3
-        }
-      ]
+      "type": "clock",
+      "digital": "23:59"
     },
     {
       "id": "dj",
@@ -37,12 +23,13 @@
       "media": "assets/photos/dj-neon-villabeach.jpg",
       "fx": "30% 50%",
       "grade": "club",
-      "zoom": "in",
+      "trans": "flash",
       "texts": [
         {
           "role": "big",
           "text": "Prêts ?",
-          "at": 4.1
+          "at": 4.1,
+          "top": 760
         }
       ]
     },
@@ -53,7 +40,15 @@
       "media": "assets/photos/piste-mains-levees.jpg",
       "fx": "60% 45%",
       "grade": "club",
-      "zoom": "in"
+      "trans": "whip",
+      "texts": [
+        {
+          "role": "mid",
+          "text": "Tous ensemble…",
+          "at": 6.1,
+          "top": 820
+        }
+      ]
     },
     {
       "id": "cd",
@@ -94,17 +89,18 @@
       "fx": "70% 40%",
       "grade": "midnight",
       "celebrate": true,
+      "trans": "flash",
       "texts": [
         {
           "role": "burst",
           "text": "Happy New Year",
-          "at": 11.1,
-          "end": 15
+          "at": 11.1
         },
         {
           "role": "big",
           "text": "2027 !",
-          "at": 11.4
+          "at": 11.4,
+          "top": 700
         }
       ]
     },
@@ -113,17 +109,18 @@
       "start": 15,
       "end": 21,
       "type": "endcard",
-      "date": "31 décembre 2026",
+      "date": "Jeudi 31 décembre 2026",
       "title": "Fêtez 2027 avec nous",
+      "note": null,
       "sub": "Préventes conseillées • Accès prioritaire",
       "venue": "Domaine Villa Beach",
       "address": "23 rue des Pyrénées, 91090 Lisses",
       "phone": "01 84 60 20 46",
       "url": null,
-      "qr": null
+      "qr": null,
+      "bgVideo": "assets/video/terrasse-pergola.mp4"
     }
   ],
-  "subtitles": [],
   "voiceover": {
     "lines": []
   },

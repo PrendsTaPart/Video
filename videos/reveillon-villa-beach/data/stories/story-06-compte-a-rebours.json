@@ -1,31 +1,37 @@
 {
-  "draftLabel": "VERSION DE TRAVAIL · musique à finaliser",
-  "footer": "31.12.2026 · Réservations 01 84 60 20 46",
+  "footer": "Jeudi 31 décembre 2026|Réservations 01 84 60 20 46",
   "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet Stories Instagram",
   "title": "Story 6 — Compte à rebours",
   "format": {
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "duration": 8
+    "duration": 9
   },
   "scenes": [
     {
-      "id": "cd",
+      "id": "ck",
       "start": 0,
-      "end": 5.1,
+      "end": 2.6,
+      "type": "clock",
+      "digital": "23:59"
+    },
+    {
+      "id": "cd",
+      "start": 2.6,
+      "end": 5.8,
       "type": "countdown",
       "beats": [
-        0.6,
-        1.05,
-        1.5,
-        1.95,
-        2.4,
-        2.85,
-        3.3,
-        3.75,
+        2.6,
+        2.92,
+        3.24,
+        3.56,
+        3.88,
         4.2,
-        4.65
+        4.52,
+        4.84,
+        5.16,
+        5.48
       ],
       "labels": [
         "10",
@@ -39,52 +45,59 @@
         "2",
         "1"
       ],
-      "kicker": "31.12.2026"
+      "kicker": "Minuit",
+      "trans": "flash"
     },
     {
       "id": "ny",
-      "start": 5.1,
-      "end": 8,
+      "start": 5.8,
+      "end": 9,
       "media": "assets/photos/fete-villa.jpg",
       "fx": "70% 40%",
       "grade": "midnight",
       "celebrate": true,
+      "trans": "flash",
       "texts": [
+        {
+          "role": "burst",
+          "text": "Happy New Year",
+          "at": 5.9
+        },
         {
           "role": "big",
           "text": "2027 !",
-          "at": 5.2
+          "at": 6.2,
+          "top": 700
         }
       ]
     }
   ],
-  "subtitles": [],
   "music": {
     "sections": [
       {
-        "style": "build",
+        "style": "intro",
         "start": 0,
-        "end": 0.6
+        "end": 2.6
       },
       {
         "style": "countdown",
         "beats": [
-          0.6,
-          1.05,
-          1.5,
-          1.95,
-          2.4,
-          2.85,
-          3.3,
-          3.75,
+          2.6,
+          2.92,
+          3.24,
+          3.56,
+          3.88,
           4.2,
-          4.65
+          4.52,
+          4.84,
+          5.16,
+          5.48
         ]
       },
       {
         "style": "drop",
-        "start": 5.1,
-        "end": 8
+        "start": 5.8,
+        "end": 9
       }
     ]
   },

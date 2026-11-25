@@ -1,72 +1,85 @@
 {
-  "draftLabel": "VERSION DE TRAVAIL · musique à finaliser",
-  "footer": "31.12.2026 · Réservations 01 84 60 20 46",
+  "footer": "Jeudi 31 décembre 2026|Réservations 01 84 60 20 46",
   "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet Stories Instagram",
-  "title": "Story 4 — Dîner",
+  "title": "Story 4 — Dîner (menu exclusif)",
   "format": {
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "duration": 8
+    "duration": 9
   },
   "scenes": [
     {
       "id": "a",
       "start": 0,
-      "end": 2.5,
-      "media": "assets/photos/table-dressee-rose-bougies.jpg",
+      "end": 2.4,
+      "media": "assets/photos/tartare-crevettes-mangue.jpg",
       "fx": "50% 50%",
       "grade": "warm",
-      "zoom": "in",
       "texts": [
         {
           "role": "title",
-          "text": "Un dîner d'exception",
-          "at": 0.2
+          "text": "Le menu du 31 décembre",
+          "at": 0.15
+        },
+        {
+          "role": "stamp",
+          "text": "Exclusif · un seul soir",
+          "at": 1.1,
+          "top": 1000
         }
       ]
     },
     {
-      "id": "b",
-      "start": 2.5,
-      "end": 8,
-      "media": "assets/photos/tartare-crevettes-mangue.jpg",
-      "fx": "50% 50%",
-      "grade": "dark",
-      "zoom": "in",
-      "cards": [
-        {
-          "big": "120 € / pers.",
-          "small": "Dîner de fête",
-          "at": 2.7
-        },
-        {
-          "big": "180 € / pers.",
-          "small": "Dîner Champagne",
-          "at": 3.7
-        },
-        {
-          "big": "Dès 19 h",
-          "small": "Ouverture du restaurant",
-          "at": 4.7
-        }
-      ]
+      "id": "m",
+      "start": 2.4,
+      "end": 9,
+      "type": "menucard",
+      "trans": "rise",
+      "bg": {
+        "media": "assets/photos/table-dressee-rose-bougies.jpg",
+        "fx": "40% 50%",
+        "grade": "softblur"
+      },
+      "menu": {
+        "kicker": "Menu exclusif · 31.12.2026",
+        "title": "120 € · 180 € Champagne",
+        "stamp": "Uniquement\nle 31.12",
+        "stampAt": 2.6,
+        "courses": [
+          {
+            "k": "Entrée",
+            "v": "Foie gras maison · ou tartare exotique"
+          },
+          {
+            "k": "Plat",
+            "v": "Pavé de veau · ou Saint-Jacques, risotto aux cèpes"
+          },
+          {
+            "k": "Dessert",
+            "v": "Bûches du Nouvel An"
+          },
+          {
+            "k": "Dès 19 h",
+            "v": "puis les 4 salles jusqu'à 05 h"
+          }
+        ]
+      }
     }
   ],
-  "subtitles": [],
   "music": {
     "sections": [
       {
         "style": "intro",
         "start": 0,
-        "end": 2.5
+        "end": 2.4
       },
       {
         "style": "lounge",
-        "start": 2.5,
-        "end": 8
+        "start": 2.4,
+        "end": 9
       }
     ]
   },
-  "sticker": "Réserver le dîner (lien ou appel)"
+  "sticker": "Réserver le dîner (appel / lien)"
 }

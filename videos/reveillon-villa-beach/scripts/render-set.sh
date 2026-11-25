@@ -10,10 +10,10 @@ cd "$(dirname "$0")/.."
 mkdir -p renders/$DIR assets/music/$DIR
 NAMES=("$@"); [[ ${#NAMES[@]} -eq 0 ]] && NAMES=($(ls data/$DIR | sed 's/\.json$//'))
 for n in "${NAMES[@]}"; do
-  node scripts/build.mjs "data/$DIR/$n.json" ${FINAL:+--final}
+  node scripts/build.mjs "data/$DIR/$n.json" ${DRAFT:+--draft}
   npx hyperframes render --quality ${QUALITY:-high} --output "renders/$DIR/$n-muette.mp4" --quiet 2>&1 | grep -iE "error|fail" || true
   python3 scripts/music.py "data/$DIR/$n.json" "assets/music/$DIR/$n.wav"
-  suffix=$([[ -n "${FINAL:-}" ]] && echo final || echo version-de-travail)
+  suffix=$([[ -n "${DRAFT:-}" ]] && echo version-de-travail || echo final)
   MUSIC="assets/music/$DIR/$n.wav" VOICE="assets/voice/$n.wav" bash scripts/mix.sh "renders/$DIR/$n-muette.mp4" "renders/$DIR/${n}_9x16_${suffix}.mp4"
   rm -f "renders/$DIR/$n-muette.mp4"
 done

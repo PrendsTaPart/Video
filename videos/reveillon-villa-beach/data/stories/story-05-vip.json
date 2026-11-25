@@ -1,6 +1,5 @@
 {
-  "draftLabel": "VERSION DE TRAVAIL · musique à finaliser",
-  "footer": "31.12.2026 · Réservations 01 84 60 20 46",
+  "footer": "Jeudi 31 décembre 2026|Réservations 01 84 60 20 46",
   "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet Stories Instagram",
   "title": "Story 5 — VIP",
   "format": {
@@ -13,43 +12,51 @@
     {
       "id": "a",
       "start": 0,
-      "end": 7,
-      "media": "assets/photos/amies-tenues-chic-bouteille.jpg",
-      "fx": "45% 45%",
-      "grade": "club",
-      "zoom": "in",
+      "end": 2.2,
+      "type": "video",
+      "media": "assets/video/jardin-pergola-9x16.mp4",
+      "grade": "dusk",
       "texts": [
         {
           "role": "title",
           "text": "Votre table vous attend",
-          "at": 0.2,
-          "end": 1.6
-        },
+          "at": 0.15
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "start": 2.2,
+      "end": 7,
+      "media": "assets/photos/amies-tenues-chic-bouteille.jpg",
+      "fx": "45% 45%",
+      "grade": "club",
+      "trans": "flash",
+      "texts": [
         {
           "role": "price",
           "label": "Packs VIP à partir de",
           "text": "200 €",
-          "at": 1.7
+          "at": 2.3
         },
         {
           "role": "menu",
           "text": "Table · bouteille · entrées incluses",
-          "at": 2.2
+          "at": 2.7
         }
       ]
     }
   ],
-  "subtitles": [],
   "music": {
     "sections": [
       {
         "style": "build",
         "start": 0,
-        "end": 2
+        "end": 2.2
       },
       {
         "style": "drop",
-        "start": 2,
+        "start": 2.2,
         "end": 7
       }
     ]

@@ -1,8 +1,7 @@
 {
-  "draftLabel": "VERSION DE TRAVAIL · musique à finaliser",
-  "footer": "31.12.2026 · Réservations 01 84 60 20 46",
+  "footer": "Jeudi 31 décembre 2026|Réservations 01 84 60 20 46",
   "source": "Plan_Campagne_Reveillon_Villa_Beach_2026.xlsx — onglet Stories Instagram",
-  "title": "Story 2 — Annonce",
+  "title": "Story 2 — Annonce (invitation)",
   "format": {
     "width": 1080,
     "height": 1920,
@@ -11,33 +10,24 @@
   },
   "scenes": [
     {
-      "id": "a",
+      "id": "inv",
       "start": 0,
       "end": 7,
-      "media": "assets/photos/fete-villa.jpg",
-      "fx": "40% 45%",
-      "grade": "midnight",
-      "zoom": "in",
-      "texts": [
-        {
-          "role": "kicker",
-          "text": "31.12.2026",
-          "at": 0.2
-        },
-        {
-          "role": "title",
-          "text": "Le plus grand réveillon du Nouvel An",
-          "at": 0.4
-        },
-        {
-          "role": "low",
-          "text": "Domaine Villa Beach • Lisses",
-          "at": 1.4
-        }
-      ]
+      "type": "invite",
+      "bg": {
+        "type": "video",
+        "media": "assets/video/jardin-pergola-9x16.mp4",
+        "grade": "endvideo"
+      },
+      "invite": {
+        "kicker": "Le plus grand réveillon",
+        "title": "du Nouvel An",
+        "date": "31 · 12 · 2026",
+        "venue": "Domaine Villa Beach · Lisses",
+        "at": 0.3
+      }
     }
   ],
-  "subtitles": [],
   "music": {
     "sections": [
       {
@@ -52,5 +42,5 @@
       }
     ]
   },
-  "sticker": "Lien de réservation (dès publication du site) ou appel"
+  "sticker": "Appel (puis lien dès publication du site)"
 }
