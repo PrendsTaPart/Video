@@ -225,7 +225,7 @@ body { font-family: "Inter", sans-serif; color: var(--creme); }
 .grid4 { position: absolute; left: 30px; right: 30px; top: 290px; height: 1300px; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 18px; }
 .cell { position: relative; overflow: hidden; border-radius: 22px; border: 2px solid rgba(201,164,92,.7); }
 .cell img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.cell-l { position: absolute; left: 18px; right: 18px; bottom: 22px; font: 400 64px/0.95 "Bebas Neue"; color: #fff; text-shadow: 0 4px 20px rgba(0,0,0,.9); }
+.cell-l { position: absolute; left: 18px; right: 18px; top: 20px; font: 400 64px/0.95 "Bebas Neue"; color: #fff; text-shadow: 0 4px 20px rgba(0,0,0,.9); }
 
 /* Carton d'invitation */
 .invite-wrap { position: absolute; inset: 0; perspective: 1400px; display: flex; align-items: flex-start; justify-content: center; padding-top: 420px; }

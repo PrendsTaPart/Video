@@ -37,7 +37,7 @@ R["reel-01-lancement"] = {**COMMON, "title": "Reel 1 — Grand lancement", "form
      {"media": P + "salle-latino-renverse.jpg", "fx": "45% 50%", "grade": "salle-latino", "label": "Latino / SBK"},
      {"media": P + "fete-villa.jpg", "fx": "35% 45%", "grade": "salle-retro", "label": "80 / 90 / 2000"},
      {"media": P + "couple-danse.jpg", "fx": "55% 40%", "grade": "salle-carib", "label": "Caraïbéenne"}],
-   "texts": [{"role": "stamp", "text": "4 salles · 4 ambiances", "at": 7.4, "top": 860}]},
+   "texts": [{"role": "stamp", "text": "4 salles · 4 ambiances", "at": 7.4, "top": 840}]},
   {"id": "dj", "start": 9.6, "end": 11.4, "media": P + "dj-platines-nb.jpg", "fx": "40% 50%", "grade": "salle-gen", "trans": "whip",
    "texts": [{"role": "mid", "text": "DJs invités", "at": 9.7, "top": 820}]},
   {"id": "bt", "start": 11.4, "end": 13.2, "media": P + "piste-mains-levees.jpg", "fx": "60% 45%", "grade": "club", "trans": "flash",
