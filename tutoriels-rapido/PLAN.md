@@ -169,7 +169,7 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM75 — Dessiner sa stratégie avec la Marketing Map
 - [x] CRM76 — Suivre ses prospects en direct sur la carte
 - [x] CRM77 — Écrire un article de blog optimisé SEO (18/11 : voix 1 105 crédits, 2e prise, publié RapidoCMS + Académie ; bouton « Enregistrer et publier » ajouté)
-- [ ] CRM78 — Mots-clés, scores et tendances : le calendrier de publication (26/11 : écran `/mots-cles` + « Sujets en hausse » existants, réalisable avec des mots-clés fictifs en base — DataForSEO non configuré, aucun appel payant ; le « calendrier de publication » n'existe pas : tutoriel limité aux mots-clés, scores et tendances)
+- [~] CRM78 — Mots-clés, scores et tendances (26/11, 7 h 20 : PRÊT À TOURNER — `CRM78/tuto.json` 8 paragraphes, données fictives `_gabarit/mots-cles-demo.php`, essai à blanc OK, copie de tournage resynchronisée avec identifiants DataForSEO FACTICES dans son seul `.env`, jamais de clic sur « Rechercher » ; **voix BLOQUÉE : ElevenLabs refuse la génération (« paiement échoué ou incomplet », compte past_due, 5 378 crédits restants)** → Michael doit régler la facture ElevenLabs ; ensuite UNE prise puis `bash _gabarit/make.sh CRM78 http://127.0.0.1:8124`)
 - [ ] CRM79 — Publicités Google Ads et Meta Ads pilotées par les agents IA (bloqué, 26/11 : aucun écran ni service « publicités » dans RapidoCRM — module à développer d'abord)
 - [~] CRM80 — La communication par entreprise et le tableau de bord KPI (26/11 : la communication par entreprise est couverte par CRM87 ; aucun écran « tableau de bord KPI » dans RapidoCRM — bloqué tant qu'il n'existe pas)
 - [x] CRM81 — Le portail client (lien magique : devis, factures, contrats, demandes, fidélité, rendez-vous) (17/11 : voix 938 crédits, 2e prise, publié RapidoCMS + Académie ; bugs corrigés : facture payée « À régler », aucune confirmation dans la boîte de réception)
@@ -531,3 +531,6 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
 - RH33 : scènes ajoutées dans `gen-rh.py`, demande fictive créée par `_gabarit/avant-RH33.sh` (Camille → Hugo, #marketing, tâche « Photos des produits phares »). Voix : une prise, 416 crédits.
 - Bug RapidoRH (non corrigé, code RapidoRH = accord de Michael) : après « Répondre » à une demande d'information, la réponse s'affiche mais la demande garde « En attente de réponse » et son champ jusqu'à la réouverture de la conversation (`Messaging.vue::answer()` appelle `poll()`, qui n'actualise pas le message de la demande). En base, le statut passe bien à `answered` et la tâche liée est relancée (`MessagingService::unblock`). Le tutoriel rouvre la conversation pour montrer « Répondu ».
 - Rappel : PostgreSQL peut être arrêté au redémarrage du conteneur (`service postgresql start` avant de tourner RapidoRH sur 8126 ; mot de passe démo RH : `Demo-Tuto-2026!`).
+
+## Journal — 26/11, 7 h 10
+- CRM78 préparé (scénario, données fictives, essai à blanc). Voix refusée par ElevenLabs : facture impayée (statut past_due) — aucune génération, aucun crédit débité, pas de nouvel essai. Action de Michael : régler la facture ElevenLabs.

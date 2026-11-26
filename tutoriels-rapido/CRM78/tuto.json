@@ -1,0 +1,110 @@
+{
+  "product": "crm",
+  "kicker": "Tutoriel RapidoCRM",
+  "intro": 3.0,
+  "outro": 4.5,
+  "voice": "audio/voix.mp3",
+  "transcript": "audio/transcript.json",
+  "capture": "captures/ecran.mp4",
+  "type_delay": 40,
+  "thumb_shot": "fin.png",
+  "end_cta": "Retrouvez tous les tutoriels dans l'Académie RapidoSoftware",
+  "fixes": {},
+  "id": "CRM78",
+  "title": "Choisir les bons mots-clés avant d'écrire",
+  "em": "bons mots-clés",
+  "tag": "2 min · Débutant",
+  "start_path": "/mots-cles?recherche=1",
+  "paragraphs": [
+    {
+      "key": "intro",
+      "text": "Avant d'écrire un article, choisissez les mots que vos clients tapent vraiment dans Google. RapidoCRM les trouve et les classe pour vous."
+    },
+    {
+      "key": "recherche",
+      "text": "Ouvrez Mots-clés. Tapez un sujet, choisissez le pays, puis lancez la recherche. Une même recherche est gardée trente jours : la relancer ne coûte rien."
+    },
+    {
+      "key": "historique",
+      "text": "Vos recherches restent dans la liste. Cliquez sur l'une d'elles pour retrouver ses résultats."
+    },
+    {
+      "key": "tableau",
+      "text": "Pour chaque mot-clé, vous voyez le volume de recherches par mois, la difficulté, l'intention de l'internaute et le coût par clic, sur douze mois."
+    },
+    {
+      "key": "score",
+      "text": "Le score sur cent résume tout : volume, intention d'achat, facilité, et lien avec vos produits. Commencez par les mieux notés."
+    },
+    {
+      "key": "tendances",
+      "text": "Sujets en hausse compare les trois derniers mois aux trois précédents, à partir de vos recherches, sans frais."
+    },
+    {
+      "key": "article",
+      "text": "Un mot-clé vous plaît ? Écrire un article ouvre le blog avec ce mot-clé déjà rempli."
+    },
+    {
+      "key": "outro",
+      "text": "Les bons mots, au bon moment. Retrouvez tous nos tutoriels dans l'Académie !"
+    }
+  ],
+  "scenes": [
+    {
+      "at": "intro",
+      "zone": "table"
+    },
+    {
+      "at": "recherche",
+      "label": "Un sujet, un pays",
+      "fill": [
+        [
+          "#mc",
+          "photographe mariage"
+        ]
+      ],
+      "zone": "#mc",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "historique",
+      "label": "Vos recherches",
+      "click": "a[href$='recherche=2']",
+      "wait": 0.5
+    },
+    {
+      "at": "historique",
+      "zone": "h6:text('Recherches')",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "tableau",
+      "zone": "table"
+    },
+    {
+      "at": "score",
+      "label": "Le score sur 100",
+      "zone": "table tbody tr:first-child"
+    },
+    {
+      "at": "tendances",
+      "label": "Sujets en hausse",
+      "zone": "h6:text('Sujets en hausse')",
+      "zone_closest": ".card"
+    },
+    {
+      "at": "article",
+      "label": "Écrire un article",
+      "click": "table tbody tr:first-child a.btn",
+      "wait": 0.8
+    },
+    {
+      "at": "article",
+      "zone": "#mot_cle"
+    },
+    {
+      "at": "outro",
+      "top": true
+    }
+  ]
+}
