@@ -534,3 +534,9 @@ Motion design (gabarit formation, voix Adam), une par étape du guide :
 
 ## Journal — 26/11, 7 h 10
 - CRM78 préparé (scénario, données fictives, essai à blanc). Voix refusée par ElevenLabs : facture impayée (statut past_due) — aucune génération, aucun crédit débité, pas de nouvel essai. Action de Michael : régler la facture ElevenLabs.
+
+## Journal — 26/11, 12 h 10 et 17 h 10
+
+- 12 h 10 : page du site « RapidoCRM + équipe RapidoRH » (`/solutions/crm/equipe-rapidorh`, PR brouillon rapido-software #53), captures réelles de l'écran Connexions avec données fictives (`_gabarit/equipe-rh-demo.php`, aucune connexion réelle). ElevenLabs toujours `past_due` : CRM78 non tourné.
+- 17 h 10 : ElevenLabs toujours `past_due`. Ajout des 5 employés IA récents sur /agents du site **en attente de Michael** (portraits 3D à générer = crédits Lovable ; tarifs et comparatif concurrents = décision commerciale). Académie du site vérifiée complète.
+- Tout ce qui reste est bloqué par une action humaine ou un module non développé : facture ElevenLabs (CRM78), fusion des PR #126 (rapido-crm) et #53 (site), AWS (déploiement RapidoRH), RapidoCMS non installé (CMS11–23), connexions réelles RapidoRH / RapidoCMS (CRM88, CRM89), clé Whereby (RH27), maquettes RapidoRH sans backend (RH13, RH16), modules absents (CRM71 prompteur, CRM79 publicités, CRM80 tableau KPI). **Tâche planifiée désactivée.**
