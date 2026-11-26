@@ -169,9 +169,9 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 - [x] CRM75 — Dessiner sa stratégie avec la Marketing Map
 - [x] CRM76 — Suivre ses prospects en direct sur la carte
 - [x] CRM77 — Écrire un article de blog optimisé SEO (18/11 : voix 1 105 crédits, 2e prise, publié RapidoCMS + Académie ; bouton « Enregistrer et publier » ajouté)
-- [ ] CRM78 — Mots-clés, scores et tendances : le calendrier de publication
-- [ ] CRM79 — Publicités Google Ads et Meta Ads pilotées par les agents IA
-- [ ] CRM80 — La communication par entreprise et le tableau de bord KPI
+- [ ] CRM78 — Mots-clés, scores et tendances : le calendrier de publication (26/11 : écran `/mots-cles` + « Sujets en hausse » existants, réalisable avec des mots-clés fictifs en base — DataForSEO non configuré, aucun appel payant ; le « calendrier de publication » n'existe pas : tutoriel limité aux mots-clés, scores et tendances)
+- [ ] CRM79 — Publicités Google Ads et Meta Ads pilotées par les agents IA (bloqué, 26/11 : aucun écran ni service « publicités » dans RapidoCRM — module à développer d'abord)
+- [~] CRM80 — La communication par entreprise et le tableau de bord KPI (26/11 : la communication par entreprise est couverte par CRM87 ; aucun écran « tableau de bord KPI » dans RapidoCRM — bloqué tant qu'il n'existe pas)
 - [x] CRM81 — Le portail client (lien magique : devis, factures, contrats, demandes, fidélité, rendez-vous) (17/11 : voix 938 crédits, 2e prise, publié RapidoCMS + Académie ; bugs corrigés : facture payée « À régler », aucune confirmation dans la boîte de réception)
 - [x] CRM82 — Sécuriser son compte : la double authentification (17/11 : voix 1 090 crédits, 2e prise après répartition des actions, publié RapidoCMS + Académie)
 - [x] CRM83 — La facture électronique Factur-X (17/11 : voix 978 crédits, publié RapidoCMS + Académie ; bouton « Compléter mon entreprise » ajouté au CRM)
@@ -332,8 +332,8 @@ non résolus** : 98 fichiers du build `public/build/assets` (dont le chunk parta
 Dépôt `rapido-software`, branche `ccr-dbfe6358-2gefhr` (jamais `production` sans l'accord de Michael).
 Hébergement des vidéos (décision de Michael, 13/11/2026) : 720p, dans la bibliothèque RapidoCMS du compte (S3).
 Mise à jour du site : `python3 _gabarit/export-site.py /home/user/rapido-software/resources/data/academie.json`.
-- [ ] W1 — Remplacer les captures et démos de la page RapidoCRM par les vrais écrans filmés (boucles vidéo courtes + animations HTML/CSS)
-- [ ] W2 — Idem page RapidoCMS
+- [x] W1 — Remplacer les captures et démos de la page RapidoCRM par les vrais écrans filmés (26/11 : vérifié, les 22 fonctionnalités de /solutions/crm ont un vrai écran `'shot'` ; captures des 16 et 17/11)
+- [x] W2 — Idem page RapidoCMS (26/11 : vérifié, les 9 fonctionnalités de /solutions/cms ont un vrai écran `'shot'`)
 - [x] W3 — Idem page RapidoRH : 10 vrais écrans (25/11, rapido-software, branche ccr-dbfe6358-2gefhr), reliés aux tutoriels ; forum et réunions vides dans la base de démonstration (laissés en animation)
 - [x] W5 — Marketplace de prompts (/marketplace-prompts) : 46 prompts CRM/CMS/RH/suite, filtres logiciel · catégorie · fonctionnalité · outil MCP, champs [entre crochets] en formulaire, Claude / ChatGPT / Mistral, bouton Infos → tutoriel (commit b0aee81, branche ccr-dbfe6358-2gefhr)
 - [x] W4 — Accueil : section « tutoriels » qui présente les vidéos réalisées → « Académie Rapido » (/academie, page vidéo, section accueil et pages produit), branche ccr-dbfe6358-2gefhr, commit 08cf25d
