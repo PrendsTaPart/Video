@@ -19,7 +19,7 @@ Cette année, offrez-vous un vrai réveillon de Noël, un jour plus tôt, au Dom
 ☎ Réservations : 01 84 60 20 46
 
 ## Post 02 — Save the date (post-02.png)
-Notez la date ✨ Mercredi 23 décembre 2026.
+Notez la date : mercredi 23 décembre 2026.
 Votre réveillon de Noël au Domaine Villa Beach : dîner de fête dès 19h, puis soirée jusqu'à 05h.
 Identifiez ceux avec qui vous voulez la passer 👇
 ☎ 01 84 60 20 46
@@ -59,7 +59,7 @@ Après le dîner, la fête continue 💃🕺
 DJs invités toute la nuit, jusqu'à 05h. Vous choisissez lequel ? 👇
 
 ## Post 07 — La soirée (post-07.png)
-Le programme de votre 23 décembre ✨
+Le programme de votre 23 décembre :
 19h : à table pour le dîner de Noël
 Toute la soirée : jeux, blind test géant et lots à gagner
 Jusqu'à 05h : DJs invités, deux dancefloors, deux univers musicaux
@@ -98,3 +98,9 @@ _L'abus d'alcool est dangereux pour la santé, à consommer avec modération._
 **Reel 3 — En famille** : Et pour les plus petits ? Un menu enfant de Noël à 29 € 🎁 Le 23 décembre, toute la famille réunie. ☎ 01 84 60 20 46
 **Reel 4 — L'ambiance** : 2 salles, 2 ambiances : Christmas Party ou Caribbean Vibes, jusqu'à 05h 💃 Le 23 décembre au Domaine Villa Beach. ☎ 01 84 60 20 46
 **Reel 5 — L'émotion** : La magie de Noël ne dépend pas d'une date, mais des personnes avec qui vous la partagez. ❤️ Rendez-vous le 23 décembre. ☎ 01 84 60 20 46 · _À consommer avec modération._
+
+---
+## Contrôles (27/11/2026)
+- Passe anti-voix-ia : faite. Emojis ✨ en double supprimés ; pas de formules creuses (« n'attendez plus », « vibrez », « sublime »…) ; tirets longs limités aux titres internes.
+- Contrôle brand-review : **impossible**, aucune marque Villa Beach dans RapidoCMS (company 321). La charte du site Lovable a servi de référence.
+- Brouillons RapidoCMS : **non créés**, aucun compte Instagram Villa Beach connecté (comptes présents : FoodEatUp, Plan'It, RapidoCMS).
