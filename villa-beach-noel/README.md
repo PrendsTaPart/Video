@@ -3,15 +3,16 @@
 Campagne du réveillon de Noël du **mercredi 23 décembre 2026** au Domaine Villa Beach (Lisses).
 Fil conducteur : *« Vous ne pouvez pas fêter Noël le 24 ? Invitez vos proches le 23. »*
 
-> ⚠️ **VERSION DE TRAVAIL.** Les vidéos portent le bandeau « VERSION DE TRAVAIL · À VALIDER » et **n'ont pas encore de voix off** (voir « Bloquants »).
+> ✅ **VERSION FINALE sans voix off** (validée par le client le 27/11/2026, faute de crédits ElevenLabs) : musique seule, textes et sous-titres incrustés.
+> Une version avec voix reste possible plus tard : déposer `audio/vo/vo01…vo09.mp3` et relancer le rendu.
 
 ## Livrables
 
 | Fichier | Contenu |
 |---|---|
-| `renders/villa-beach-noel-23-decembre_VERSION-DE-TRAVAIL.mp4` | Film principal 9:16, 1080×1920, 30 fps, 55 s |
+| `renders/villa-beach-noel-23-decembre.mp4` | Film principal 9:16, 1080×1920, 30 fps, 55 s |
 | `renders/*.srt` | Sous-titres de chaque vidéo (texte intégral de la voix off) |
-| `renders/reels/reel-1…5_VERSION-DE-TRAVAIL.mp4` | 5 Reels courts (15 à 20 s) : accroche, dîner, enfants, ambiance, émotion |
+| `renders/reels/reel-1…5.mp4` | 5 Reels courts (15 à 20 s) : accroche, dîner, enfants, ambiance, émotion |
 | `posts/post-01…10.png` | 10 publications Instagram 4:5 (1080×1350) |
 | `posts/legendes-instagram.md` | Légendes et hashtags des 10 posts et des 5 Reels |
 | `audio/music/music.mp3` | Musique de Noël originale (synthèse de mélodies du domaine public) |
@@ -36,9 +37,9 @@ python3 scripts/music.py audio/music/music.wav && ffmpeg -y -i audio/music/music
 ```
 `--wip` ajoute le bandeau « version de travail ». `--stills 2,10,20` produit des captures de contrôle.
 
-## Bloquants avant l'export final
+## Points ouverts
 
-1. **ElevenLabs : abonnement impayé.** Les 9 voix ont été refusées avec « Your subscription has a failed or incomplete payment », et la musique avec « Insufficient funds ». Une fois la facture réglée :
+1. **Voix off (optionnelle) : ElevenLabs sans crédits.** Les 9 voix ont été refusées avec « Your subscription has a failed or incomplete payment », et la musique avec « Insufficient funds ». Une fois la facture réglée :
    - générer les 9 répliques (voix **Atma**, `vq479zipNPD44hpCdbIh`, modèle `eleven_v4`) avec le texte de `audio/vo/script-voix-off.md`, dans le flow ElevenLabs « Villa Beach – Noël 23 décembre 2026 » ;
    - les enregistrer sous `audio/vo/vo01.mp3` … `vo09.mp3` ;
    - relancer les commandes de rendu. Le script mesure les vraies durées, recale les sous-titres et signale tout chevauchement.
