@@ -1,0 +1,9 @@
+{
+  "name": "villa-beach-noel",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node scripts/render.mjs",
+    "posts": "node scripts/posts.mjs"
+  }
+}

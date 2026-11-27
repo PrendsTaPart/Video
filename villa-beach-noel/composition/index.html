@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Villa Beach — Noël le 23 décembre</title>
+<style>
+@font-face { font-family: "Cormorant Garamond"; font-weight: 500; font-style: normal; src: url(fonts/cormorant-garamond-latin-500-normal.woff2); }
+@font-face { font-family: "Cormorant Garamond"; font-weight: 600; font-style: normal; src: url(fonts/cormorant-garamond-latin-600-normal.woff2); }
+@font-face { font-family: "Cormorant Garamond"; font-weight: 700; font-style: normal; src: url(fonts/cormorant-garamond-latin-700-normal.woff2); }
+@font-face { font-family: "Cormorant Garamond"; font-weight: 500; font-style: italic; src: url(fonts/cormorant-garamond-latin-500-italic.woff2); }
+@font-face { font-family: "Cormorant Garamond"; font-weight: 600; font-style: italic; src: url(fonts/cormorant-garamond-latin-600-italic.woff2); }
+@font-face { font-family: "Cormorant Garamond"; font-weight: 700; font-style: italic; src: url(fonts/cormorant-garamond-latin-700-italic.woff2); }
+@font-face { font-family: "Manrope"; font-weight: 400; src: url(fonts/manrope-latin-400-normal.woff2); }
+@font-face { font-family: "Manrope"; font-weight: 600; src: url(fonts/manrope-latin-600-normal.woff2); }
+@font-face { font-family: "Manrope"; font-weight: 700; src: url(fonts/manrope-latin-700-normal.woff2); }
+@font-face { font-family: "Manrope"; font-weight: 800; src: url(fonts/manrope-latin-800-normal.woff2); }
+
+/* Charte du site Lovable (src/styles.css) */
+:root {
+  --bg: oklch(0.17 0.05 158);
+  --fg: oklch(0.95 0.015 85);
+  --muted: oklch(0.8 0.03 85);
+  --gold: oklch(0.8 0.12 85);
+  --gold-light: oklch(0.9 0.09 90);
+  --gold-deep: oklch(0.65 0.12 70);
+  --burgundy: oklch(0.3 0.12 18);
+  --berry: oklch(0.55 0.2 22);
+  --fir: oklch(0.45 0.1 155);
+  --fir-deep: oklch(0.22 0.06 158);
+  --grad-gold: linear-gradient(135deg, var(--gold-light), var(--gold) 45%, var(--gold-deep));
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+#stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Manrope", sans-serif; color: var(--fg);
+  background: radial-gradient(ellipse at 50% 38%, oklch(0.8 0.12 85 / 16%), transparent 55%),
+              radial-gradient(ellipse at 0% 100%, var(--fir-deep), transparent 60%),
+              radial-gradient(ellipse at 100% 100%, var(--fir-deep), transparent 60%),
+              linear-gradient(180deg, oklch(0.2 0.1 18), var(--burgundy) 45%, var(--bg)); }
+canvas.fx { position: absolute; inset: 0; pointer-events: none; }
+.scene { position: absolute; inset: 0; opacity: 0; visibility: hidden; }
+.bgimg { position: absolute; inset: -40px; background-size: cover; background-position: center; }
+.shade { position: absolute; inset: 0; background: linear-gradient(180deg, oklch(0.12 0.06 18 / 0.75), oklch(0.15 0.08 18 / 0.35) 40%, oklch(0.12 0.04 158 / 0.85)); }
+.el { will-change: transform, opacity; }
+.center { position: absolute; left: 90px; right: 90px; text-align: center; }
+.display { font-family: "Cormorant Garamond", serif; font-weight: 600; line-height: 1.05; letter-spacing: -0.01em; }
+.display em { font-style: italic; }
+.gold { background: var(--grad-gold); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.kicker { font-size: 30px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+.rule { display: flex; align-items: center; justify-content: center; gap: 18px; }
+.rule span { height: 2px; width: 90px; background: var(--grad-gold); }
+.star { width: 34px; height: 34px; fill: var(--gold); filter: drop-shadow(0 0 14px var(--gold)); }
+.frame { position: absolute; left: 140px; width: 800px; height: 800px; border-radius: 20px; overflow: hidden;
+  box-shadow: 0 40px 90px -20px rgb(0 0 0 / 0.75), 0 0 0 3px oklch(0.8 0.12 85 / 0.85), 0 0 60px -10px oklch(0.8 0.12 85 / 0.45); }
+.frame > div { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.card { border-radius: 22px; border: 2px solid oklch(0.8 0.12 85 / 0.55); background: oklch(0.2 0.06 158 / 0.82); }
+.card.hi { background: oklch(0.32 0.12 18 / 0.92); border-color: var(--gold); box-shadow: 0 0 60px -12px oklch(0.8 0.12 85 / 0.6); }
+#subs { position: absolute; left: 100px; right: 120px; top: 1395px; text-align: center; }
+#subs div { display: inline-block; padding: 14px 26px; border-radius: 14px; background: oklch(0.1 0.03 20 / 0.72);
+  font-weight: 700; font-size: 44px; line-height: 1.28; color: #fff; text-shadow: 0 2px 8px rgb(0 0 0 / 0.6); }
+#wip { position: absolute; top: 140px; left: 0; right: 0; text-align: center; z-index: 50; }
+#wip span { display: inline-block; padding: 8px 20px; border: 2px solid #ffcf5a; color: #ffcf5a; background: rgb(0 0 0 / 0.55);
+  font: 800 24px "Manrope"; letter-spacing: 0.18em; border-radius: 8px; }
+.cal { position: absolute; left: 50%; width: 420px; height: 470px; margin-left: -210px; border-radius: 28px; overflow: hidden;
+  background: oklch(0.96 0.015 85); box-shadow: 0 40px 100px -20px rgb(0 0 0 / 0.8); text-align: center; color: var(--burgundy); }
+.cal .top { height: 120px; background: var(--berry); color: #fff; font: 800 40px "Manrope"; letter-spacing: 0.2em; line-height: 120px; text-transform: uppercase; }
+.cal .num { font: 700 250px/330px "Cormorant Garamond"; }
+.cal .ring { position: absolute; top: -18px; width: 26px; height: 60px; border-radius: 13px; background: var(--gold-deep); }
+.strike { position: absolute; left: 40px; right: 40px; top: 290px; height: 14px; border-radius: 7px; background: var(--berry); transform-origin: left center; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="bokeh" class="fx" width="1080" height="1920"></canvas>
+  <div id="scenes"></div>
+  <canvas id="snow" class="fx" width="1080" height="1920"></canvas>
+  <div id="subs"></div>
+  <div id="wip" hidden><span>VERSION DE TRAVAIL · À VALIDER</span></div>
+</div>
+<script type="module">
+import { TIMELINES, VO } from "./timelines.js";
+
+const params = new URLSearchParams(location.search);
+const TL = TIMELINES[params.get("tl") || "main"];
+if (params.get("wip") === "1") document.getElementById("wip").hidden = false;
+// Durées réelles des voix (injectées par le script de rendu), sinon estimations.
+const VODUR = JSON.parse(params.get("vodur") || "{}");
+
+const STAR = `<svg class="star" viewBox="0 0 24 24"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>`;
+const RULE = `<div class="rule"><span></span>${STAR}<span></span></div>`;
+const img = (n) => `img/${n}.jpg`;
+
+// ---------- easing / helpers ----------
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const ease = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const easeIO = (x) => { x = clamp(x); return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+
+// ---------- scene builders ----------
+// Chaque élément animé : data-in / data-out (s, relatifs à la scène), data-a (rise|zoom|fade|left|right|strike|pop)
+const B = {
+  hookQuestion: () => `
+    <div class="cal el" data-in="0.1" data-a="cal24" style="top:390px"><div class="top">Décembre</div><div class="num">24</div>
+      <div class="strike el" data-in="2.3" data-a="strike"></div></div>
+    <div class="center el display" data-in="0.25" data-a="rise" style="top:960px;font-size:98px">
+      Vous ne pouvez pas fêter Noël avec vos proches le <em class="gold">24 décembre</em>&nbsp;?</div>`,
+  hook23: () => `
+    <div class="cal el" data-in="0" data-a="cal23" style="top:370px;box-shadow:0 0 120px 10px oklch(0.8 0.12 85 / 0.55),0 40px 100px -20px rgb(0 0 0 / .8)">
+      <div class="top" style="background:var(--grad-gold);color:var(--burgundy)">Décembre</div><div class="num">23</div></div>
+    <div class="center el display" data-in="0.2" data-a="rise" style="top:960px;font-size:120px">
+      Et si vous les invitiez le <em class="gold">23</em>&nbsp;?</div>`,
+  hookMagic: () => `
+    <div class="center el" data-in="0" data-a="fade" style="top:590px">${RULE}</div>
+    <div class="center el display" data-in="0.1" data-a="rise" style="top:700px;font-size:116px">
+      Vivez la <em class="gold">magie de Noël</em><br>au Domaine<br>Villa Beach.</div>`,
+  dateCard: () => `
+    <img class="el" data-in="0" data-a="zoom" src="${img("logo")}" style="position:absolute;left:380px;top:370px;width:320px;height:320px;border-radius:50%;box-shadow:0 0 0 4px oklch(0.8 0.12 85 / .8),0 30px 80px -10px #000">
+    <div class="center el kicker" data-in="0.35" data-a="rise" style="top:780px;font-size:36px">Domaine Villa Beach • Lisses</div>
+    <div class="center el" data-in="0.5" data-a="fade" style="top:860px">${RULE}</div>
+    <div class="center el display gold" data-in="0.6" data-a="rise" style="top:930px;font-size:120px;font-style:italic;padding-bottom:10px">Mercredi</div>
+    <div class="center el display" data-in="0.75" data-a="rise" style="top:1070px;font-size:118px">23 décembre 2026</div>`,
+  photoTitle: (p) => `
+    <div class="bgimg" style="background-image:url(${img(p.img + "-blur")})"></div>
+    <div class="shade"></div>
+    <div class="center el kicker" data-in="0.1" data-a="rise" style="top:250px">${p.kicker}</div>
+    <div class="center el display" data-in="0.2" data-a="rise" style="top:315px;font-size:${p.size || (p.lines.length ? 88 : 92)}px">${p.title}</div>
+    <div class="frame el" data-in="0.05" data-a="zoom" style="top:${p.lines.length ? 560 : 590}px;${p.lines.length ? "height:470px" : "height:740px"}"><div class="kb" style="background-image:url(${img(p.img)})"></div></div>
+    ${p.lines.map((l, i) => `<div class="center el" data-in="${0.55 + i * 0.45}" data-a="left" style="top:${1065 + i * 82}px;font-size:40px;font-weight:600">
+        <span style="color:var(--gold)">✦</span> ${l}</div>`).join("")}
+    ${p.note ? `<div class="center el" data-in="${p.lines.length ? 1.9 : 0.8}" data-a="fade" style="top:${p.lines.length ? 1320 : 1350}px;font-size:30px;color:var(--muted);font-style:italic">${p.note}</div>` : ""}`,
+  offers: (p) => `
+    <div class="bgimg" style="background-image:url(${img(p.bg + "-blur")})"></div>
+    <div class="shade" style="opacity:.92"></div>
+    <div class="center el kicker" data-in="0.05" data-a="rise" style="top:270px">${p.kicker}</div>
+    <div class="center el display" data-in="0.15" data-a="rise" style="top:340px;font-size:104px">${p.title}</div>
+    <div class="center el" data-in="0.25" data-a="fade" style="top:470px">${RULE}</div>
+    ${p.cards.map((c, i) => p.stacked
+      ? `<div class="card el ${c.hi ? "hi" : ""}" data-in="${0.35 + i * 0.3}" data-a="${i % 2 ? "right" : "left"}"
+            style="position:absolute;left:120px;right:140px;top:${600 + i * 225}px;height:195px;display:flex;align-items:center;justify-content:space-between;padding:0 50px">
+           <div><div class="display" style="font-size:58px">${c.label}</div><div style="font-size:30px;color:var(--gold);font-weight:700;letter-spacing:.06em">${c.sub}</div></div>
+           <div style="text-align:right"><div class="display gold" style="font-size:96px;font-weight:700">${c.price}</div><div style="font-size:26px;color:var(--muted);margin-top:-6px">${c.unit}</div></div></div>`
+      : `<div class="card el ${c.hi ? "hi" : ""}" data-in="${0.4 + i * 0.35}" data-a="pop"
+            style="position:absolute;top:620px;left:${110 + i * 440}px;width:410px;height:600px;text-align:center;padding-top:60px">
+           <div style="font-size:46px">${i ? "🥂" : "🍽️"}</div>
+           <div class="display" style="font-size:54px;margin-top:22px">${c.label}</div>
+           <div style="font-size:30px;color:var(--gold);font-weight:700;letter-spacing:.06em;margin-top:10px">${c.sub}</div>
+           <div class="display gold" style="font-size:150px;font-weight:700;margin-top:24px">${c.price}</div>
+           <div style="font-size:30px;color:var(--muted)">${c.unit}</div></div>`).join("")}
+    <div class="center el" data-in="1.2" data-a="fade" style="top:${p.stacked ? 1290 : 1265}px;font-size:${p.stacked ? 26 : 30}px;color:var(--muted)">${p.foot}</div>`,
+  kidsMenu: () => `
+    <div class="bgimg" style="background-image:url(${img("diner-blur")})"></div>
+    <div class="shade" style="opacity:.95"></div>
+    <div class="center el" data-in="0.05" data-a="pop" style="top:250px;font-size:84px">🎁</div>
+    <div class="center el display" data-in="0.15" data-a="rise" style="top:370px;font-size:96px">La magie de Noël<br><em class="gold">aussi pour les petits</em></div>
+    <div class="el card hi" data-in="0.6" data-a="pop" style="position:absolute;left:290px;width:500px;top:630px;height:150px;text-align:center;padding-top:14px">
+      <div style="font-size:28px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:800">Menu enfant</div>
+      <div class="display gold" style="font-size:92px;font-weight:700;margin-top:-6px">29 €</div></div>
+    ${[["Entrée", "Mini-sapins feuilletés au jambon et au fromage"],
+       ["Plat", "Bavette de bœuf, pommes de terre rôties ou purée maison"],
+       ["Dessert", "Bûche caramel-vanille ou boule de glace au choix"],
+       ["Boisson", "Jus de fruits ou soda"]].map(([k, v], i) => `
+      <div class="el" data-in="${1.4 + i * 0.7}" data-a="left" style="position:absolute;left:120px;right:140px;top:${840 + i * 130}px;display:flex;gap:26px;align-items:baseline">
+        <div class="display gold" style="font-size:50px;font-style:italic;min-width:200px;text-align:right">${k}</div>
+        <div style="font-size:36px;font-weight:600;line-height:1.25">${v}</div></div>`).join("")}`,
+  rooms: () => `
+    <div class="bgimg" style="background-image:url(${img("fete-blur")})"></div>
+    <div class="shade"></div>
+    <div class="center el kicker" data-in="0.05" data-a="rise" style="top:250px">Noël · de 19h jusqu’à 05h</div>
+    <div class="center el display" data-in="0.15" data-a="rise" style="top:315px;font-size:118px"><em class="gold">2 salles,</em><br>2 ambiances</div>
+    ${[["fete", "Salle Généraliste", "Christmas Party !", "Hits · Pop · RnB · House · Dance"],
+       ["ambiance", "Salle Caribbean Vibes", "Noël sous le soleil des Caraïbes", "Kompa · Gouyad · Zouk · Dancehall · Shatta"]].map(([im, n, th, g], i) => `
+      <div class="card el" data-in="${0.7 + i * 1.3}" data-a="${i ? "right" : "left"}" style="position:absolute;left:110px;right:130px;top:${680 + i * 360}px;height:330px;display:flex;overflow:hidden">
+        <div style="width:330px;flex:none;background:url(${img(im)}) center/cover"></div>
+        <div style="padding:34px 32px">
+          <div class="display gold" style="font-size:52px;font-weight:700">${n}</div>
+          <div class="display" style="font-size:42px;font-style:italic;margin-top:6px">${th}</div>
+          <div style="font-size:27px;color:var(--muted);margin-top:16px;line-height:1.4">${g}</div></div></div>`).join("")}`,
+  quote: () => `
+    <div class="center el" data-in="0.05" data-a="fade" style="top:420px">${RULE}</div>
+    <div class="center el display" data-in="0.15" data-a="rise" style="top:540px;font-size:96px;font-style:italic;line-height:1.12">
+      Parce que la magie de Noël ne dépend pas d’une date,</div>
+    <div class="center el display" data-in="1.9" data-a="rise" style="top:930px;font-size:96px;font-style:italic;line-height:1.12">
+      mais des personnes avec qui vous <span class="gold">la partagez.</span></div>`,
+  final: () => `
+    <img class="el" data-in="0" data-a="zoom" src="${img("logo")}" style="position:absolute;left:420px;top:230px;width:240px;height:240px;border-radius:50%;box-shadow:0 0 0 4px oklch(0.8 0.12 85 / .8),0 30px 80px -10px #000">
+    <div class="center el display" data-in="0.25" data-a="rise" style="top:510px;font-size:86px">Cette année, Noël commence le <em class="gold">23 décembre.</em></div>
+    <div class="center el" data-in="0.7" data-a="rise" style="top:745px;font-size:36px;font-weight:700">Réservez dès maintenant votre réveillon de Noël.</div>
+    <div class="el card hi" data-in="1.0" data-a="pop" style="position:absolute;left:120px;right:140px;top:830px;height:400px;text-align:center;padding-top:34px">
+      <div style="font-size:30px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:800">Mercredi 23 décembre 2026</div>
+      <div class="display gold" style="font-size:78px;font-weight:700;margin-top:14px">Domaine Villa Beach</div>
+      <div style="font-size:34px;font-weight:600;margin-top:10px">23 rue des Pyrénées, 91090 Lisses</div>
+      <div style="margin:28px auto 0;display:inline-block;padding:14px 44px;border-radius:999px;background:var(--grad-gold);color:var(--burgundy);font-size:62px;font-weight:800;letter-spacing:.02em">☎ 01 84 60 20 46</div>
+    </div>
+    <div class="center el" data-in="1.6" data-a="fade" style="top:1262px;font-size:26px;color:var(--muted)">Dès 19h · Places limitées · Tenue chic et élégante</div>`,
+};
+
+// ---------- build DOM ----------
+const root = document.getElementById("scenes");
+const scenes = TL.scenes.map((s) => {
+  const d = document.createElement("div");
+  d.className = "scene";
+  d.innerHTML = B[s.type](s.props || {});
+  root.appendChild(d);
+  return { ...s, el: d, items: [...d.querySelectorAll(".el")], kb: d.querySelector(".kb"), bg: d.querySelector(".bgimg") };
+});
+
+// ---------- subtitles ----------
+function chunks(text, max = 44) {
+  const words = text.split(" "); const out = []; let cur = "";
+  for (const w of words) { if ((cur + " " + w).trim().length > max && cur) { out.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }
+  if (cur) out.push(cur);
+  // regroupe par 2 lignes
+  const res = []; for (let i = 0; i < out.length; i += 2) res.push(out.slice(i, i + 2).join("<br>"));
+  return res;
+}
+const SUBS = [];
+for (const v of TL.vo) {
+  if (v.sub === false) continue;
+  const meta = VO[v.id]; const dur = VODUR[v.id] ?? meta.est;
+  const parts = chunks(meta.text); const total = parts.reduce((a, p) => a + p.length, 0);
+  let t = v.at;
+  for (const p of parts) { const d = dur * p.length / total; SUBS.push({ from: t, to: t + d + 0.12, html: p }); t += d; }
+}
+const subsEl = document.getElementById("subs");
+
+// ---------- fx ----------
+const snowC = document.getElementById("snow").getContext("2d");
+const bokC = document.getElementById("bokeh").getContext("2d");
+const rnd = (i) => { const x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+const FLAKES = Array.from({ length: 90 }, (_, i) => ({ x: rnd(i) * 1080, s: 1.5 + rnd(i + 7) * 4.5, v: 40 + rnd(i + 3) * 90, ph: rnd(i + 11) * 1920, w: rnd(i + 5) * 6 }));
+const BOK = Array.from({ length: 26 }, (_, i) => ({ x: rnd(i + 50) * 1080, y: rnd(i + 80) * 1920, r: 30 + rnd(i + 90) * 110, hue: rnd(i + 70) > 0.5 ? "240,205,120" : "200,60,70", sp: 0.2 + rnd(i + 60) * 0.6 }));
+function drawFx(T) {
+  snowC.clearRect(0, 0, 1080, 1920);
+  for (const f of FLAKES) {
+    const y = (f.ph + T * f.v) % 2000 - 40; const x = f.x + Math.sin(T * 0.8 + f.w) * 22;
+    snowC.globalAlpha = 0.35 + f.s / 12; snowC.fillStyle = "#fff8ea";
+    snowC.beginPath(); snowC.arc(x, y, f.s, 0, 7); snowC.fill();
+  }
+  bokC.clearRect(0, 0, 1080, 1920);
+  for (const b of BOK) {
+    const a = 0.06 + 0.07 * (0.5 + 0.5 * Math.sin(T * b.sp * 2 + b.x));
+    const g = bokC.createRadialGradient(b.x, b.y - T * 8 * b.sp, 0, b.x, b.y - T * 8 * b.sp, b.r);
+    g.addColorStop(0, `rgba(${b.hue},${a})`); g.addColorStop(1, `rgba(${b.hue},0)`);
+    bokC.fillStyle = g; bokC.beginPath(); bokC.arc(b.x, b.y - T * 8 * b.sp, b.r, 0, 7); bokC.fill();
+  }
+}
+
+// ---------- per-element animation ----------
+function animEl(el, lt, sceneDur) {
+  const tin = parseFloat(el.dataset.in || 0); const a = el.dataset.a || "fade";
+  const p = ease((lt - tin) / 0.7);
+  let o = p, tf = "";
+  if (a === "rise") tf = `translateY(${(1 - p) * 50}px)`;
+  else if (a === "left") tf = `translateX(${(1 - p) * -80}px)`;
+  else if (a === "right") tf = `translateX(${(1 - p) * 80}px)`;
+  else if (a === "zoom") tf = `scale(${0.9 + 0.1 * p})`;
+  else if (a === "pop") { const q = ease((lt - tin) / 0.55); o = q; tf = `scale(${0.8 + 0.2 * q + Math.sin(q * Math.PI) * 0.04})`; }
+  else if (a === "strike") { const q = easeIO((lt - tin) / 0.5); o = q > 0 ? 1 : 0; tf = `scaleX(${q}) rotate(-8deg)`; }
+  else if (a === "cal24") { o = p; tf = `rotate(${-4 + (1 - p) * -6}deg) translateY(${(1 - p) * 60}px)`; }
+  else if (a === "cal23") { const q = ease((lt - tin) / 0.8); o = q; tf = `rotate(${(1 - q) * 14 + 3}deg) scale(${0.85 + 0.15 * q})`; }
+  el.style.opacity = o; el.style.transform = tf;
+}
+
+window.seek = (T) => {
+  drawFx(T);
+  for (const s of scenes) {
+    const lt = T - s.from; const dur = s.to - s.from;
+    const visible = T >= s.from - 0.001 && T < s.to + 0.45;
+    s.el.style.visibility = visible ? "visible" : "hidden";
+    if (!visible) continue;
+    const isLast = s === scenes[scenes.length - 1];
+    const fin = clamp(lt / 0.45); const fout = isLast ? 1 : 1 - clamp((T - s.to) / 0.45);
+    s.el.style.opacity = Math.min(fin, fout);
+    s.el.style.zIndex = T < s.to ? 2 : 1;
+    for (const e of s.items) animEl(e, lt, dur);
+    if (s.kb) s.kb.style.transform = `scale(${1.02 + 0.08 * clamp(lt / dur)})`;
+    if (s.bg) s.bg.style.transform = `scale(${1.05 + 0.05 * clamp(lt / dur)})`;
+  }
+  const sub = SUBS.find((x) => T >= x.from && T < x.to);
+  subsEl.innerHTML = sub ? `<div>${sub.html}</div>` : "";
+};
+window.TL = TL; window.SUBS = SUBS;
+const PRE = ["logo","diner","chef","dessert","fete","ambiance","dj"].flatMap(n=>[n, n+"-blur"]).filter(n=>n!=="logo-blur");
+await Promise.all(PRE.map(n=>new Promise(r=>{const i=new Image(); i.onload=i.onerror=()=>i.decode().then(r,r); i.src=`img/${n}.jpg`; window["__img_"+n]=i;})));
+await document.fonts.ready;
+await Promise.all([...document.images].map((i) => i.decode().catch(() => {})));
+window.seek(parseFloat(params.get("t") || 0));
+window.READY = true;
+</script>
+</body>
+</html>

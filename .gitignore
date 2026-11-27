@@ -21,3 +21,8 @@ videos/**/work/
 # Tutoriels Cocuisinage : copies des médias par sujet et artefacts HyperFrames, régénérés par build.py / rendre.sh
 videos/cocuisinage-tutoriels/*/media/
 videos/cocuisinage-tutoriels/**/.hyperframes/
+
+# Villa Beach Noël : captures de contrôle et rendus muets intermédiaires
+villa-beach-noel/renders/stills/
+villa-beach-noel/renders/**/*.video.mp4
+villa-beach-noel/audio/music/*.wav

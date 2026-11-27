@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Villa Beach — Publications Noël</title>
+<style>
+@font-face { font-family: "Cormorant Garamond"; font-weight: 600; src: url(fonts/cormorant-garamond-latin-600-normal.woff2); }
+@font-face { font-family: "Cormorant Garamond"; font-weight: 700; src: url(fonts/cormorant-garamond-latin-700-normal.woff2); }
+@font-face { font-family: "Cormorant Garamond"; font-weight: 600; font-style: italic; src: url(fonts/cormorant-garamond-latin-600-italic.woff2); }
+@font-face { font-family: "Cormorant Garamond"; font-weight: 700; font-style: italic; src: url(fonts/cormorant-garamond-latin-700-italic.woff2); }
+@font-face { font-family: "Manrope"; font-weight: 400; src: url(fonts/manrope-latin-400-normal.woff2); }
+@font-face { font-family: "Manrope"; font-weight: 600; src: url(fonts/manrope-latin-600-normal.woff2); }
+@font-face { font-family: "Manrope"; font-weight: 700; src: url(fonts/manrope-latin-700-normal.woff2); }
+@font-face { font-family: "Manrope"; font-weight: 800; src: url(fonts/manrope-latin-800-normal.woff2); }
+:root { --bg: oklch(0.17 0.05 158); --fg: oklch(0.95 0.015 85); --muted: oklch(0.82 0.03 85); --gold: oklch(0.8 0.12 85);
+  --gold-light: oklch(0.9 0.09 90); --gold-deep: oklch(0.65 0.12 70); --burgundy: oklch(0.3 0.12 18); --berry: oklch(0.55 0.2 22);
+  --fir-deep: oklch(0.22 0.06 158); --grad-gold: linear-gradient(135deg, var(--gold-light), var(--gold) 45%, var(--gold-deep)); }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; }
+.post { position: relative; width: 1080px; height: 1350px; overflow: hidden; color: var(--fg); font-family: "Manrope", sans-serif;
+  background: radial-gradient(ellipse at 50% 35%, oklch(0.8 0.12 85 / 16%), transparent 55%),
+              radial-gradient(ellipse at 0% 100%, var(--fir-deep), transparent 60%), radial-gradient(ellipse at 100% 100%, var(--fir-deep), transparent 60%),
+              linear-gradient(180deg, oklch(0.2 0.1 18), var(--burgundy) 45%, var(--bg)); }
+.post::after { content: ""; position: absolute; inset: 22px; border: 2px solid oklch(0.8 0.12 85 / 0.45); border-radius: 18px; pointer-events: none; }
+.bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.shade { position: absolute; inset: 0; background: linear-gradient(180deg, oklch(0.12 0.06 18 / 0.8), oklch(0.15 0.08 18 / 0.45) 45%, oklch(0.12 0.04 158 / 0.9)); }
+.c { position: absolute; left: 80px; right: 80px; text-align: center; }
+.d { font-family: "Cormorant Garamond", serif; font-weight: 600; line-height: 1.05; }
+.d em { font-style: italic; }
+.gold { background: var(--grad-gold); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.k { font-size: 26px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); font-weight: 800; }
+.rule { display: flex; align-items: center; justify-content: center; gap: 16px; }
+.rule span { height: 2px; width: 80px; background: var(--grad-gold); }
+.star { width: 28px; height: 28px; fill: var(--gold); filter: drop-shadow(0 0 12px var(--gold)); }
+.card { border-radius: 20px; border: 2px solid oklch(0.8 0.12 85 / 0.55); background: oklch(0.2 0.06 158 / 0.85); }
+.card.hi { background: oklch(0.32 0.12 18 / 0.93); border-color: var(--gold); box-shadow: 0 0 50px -12px oklch(0.8 0.12 85 / 0.6); }
+.ph { position: absolute; border-radius: 18px; background-size: cover; background-position: center; box-shadow: 0 30px 70px -20px #000, 0 0 0 3px oklch(0.8 0.12 85 / 0.85); }
+.foot { position: absolute; left: 0; right: 0; bottom: 52px; text-align: center; font-size: 24px; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); font-weight: 800; }
+.legal { position: absolute; left: 0; right: 0; bottom: 30px; text-align: center; font-size: 17px; color: var(--muted); }
+.logo { position: absolute; border-radius: 50%; box-shadow: 0 0 0 3px oklch(0.8 0.12 85 / .8), 0 20px 60px -10px #000; }
+.cal { position: absolute; width: 300px; height: 340px; border-radius: 24px; overflow: hidden; background: oklch(0.96 0.015 85); text-align: center; color: var(--burgundy); box-shadow: 0 30px 80px -20px #000; }
+.cal .top { height: 86px; line-height: 86px; background: var(--berry); color: #fff; font: 800 28px "Manrope"; letter-spacing: .2em; text-transform: uppercase; }
+.cal .num { font: 700 190px/250px "Cormorant Garamond"; }
+.dot { position: absolute; border-radius: 50%; background: #fff8ea; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const STAR = `<svg class="star" viewBox="0 0 24 24"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>`;
+const RULE = `<div class="rule"><span></span>${STAR}<span></span></div>`;
+const FOOT = `<div class="foot">Domaine Villa Beach • Lisses</div>`;
+const EVIN = `<div class="legal">L’abus d’alcool est dangereux pour la santé. À consommer avec modération.</div>`;
+const LOGO = (x, y, s) => `<img class="logo" src="img/logo.jpg" style="left:${x}px;top:${y}px;width:${s}px;height:${s}px">`;
+const P = {
+  1: () => `
+    <div class="c k" style="top:110px">Réveillon de Noël</div>
+    <div class="cal" style="left:150px;top:220px;transform:rotate(-7deg);opacity:.85"><div class="top">Déc.</div><div class="num">24</div>
+      <div style="position:absolute;left:30px;right:30px;top:200px;height:12px;border-radius:6px;background:var(--berry);transform:rotate(-10deg)"></div></div>
+    <div class="cal" style="left:620px;top:200px;transform:rotate(5deg);box-shadow:0 0 90px 6px oklch(0.8 0.12 85 / .55)"><div class="top" style="background:var(--grad-gold);color:var(--burgundy)">Déc.</div><div class="num">23</div></div>
+    <div class="c d" style="top:620px;font-size:96px">Et si Noël commençait<br>le <em class="gold">23 décembre</em>&nbsp;?</div>
+    <div class="c" style="top:880px;font-size:34px;line-height:1.45;color:var(--muted)">Vous ne pouvez pas réunir vos proches le 24&nbsp;?<br>Invitez-les le 23, au Domaine Villa Beach.</div>
+    <div class="c" style="top:1110px">${RULE}</div>
+    <div class="c" style="top:1170px;font-size:30px;font-weight:700">Mercredi 23 décembre 2026</div>
+    ${FOOT}`,
+  2: () => `
+    ${LOGO(400, 120, 280)}
+    <div class="c k" style="top:450px">Save the date</div>
+    <div class="c" style="top:510px">${RULE}</div>
+    <div class="c d gold" style="top:570px;font-size:130px;font-style:italic">Mercredi</div>
+    <div class="c d" style="top:720px;font-size:118px">23 décembre 2026</div>
+    <div class="c" style="top:890px;font-size:38px;font-weight:600">Votre réveillon de Noël au Domaine Villa Beach</div>
+    <div class="c" style="top:980px;font-size:30px;color:var(--muted)">Dîner de fête dès 19h · Soirée jusqu’à 05h</div>
+    <div class="c" style="top:1080px"><span style="display:inline-block;padding:14px 40px;border-radius:999px;background:var(--grad-gold);color:var(--burgundy);font-size:40px;font-weight:800">☎ 01 84 60 20 46</span></div>
+    ${FOOT}`,
+  3: () => `
+    <div class="bg" style="background-image:url(img/chef-blur.jpg)"></div><div class="shade"></div>
+    <div class="c k" style="top:95px">Le menu de Noël</div>
+    <div class="c d" style="top:150px;font-size:78px">Un dîner de Noël <em class="gold">d’exception</em></div>
+    <div class="ph" style="left:140px;top:280px;width:800px;height:470px;background-image:url(img/chef.jpg)"></div>
+    ${["Foie gras maison, chutney de figues & brioche toastée", "Noix de Saint-Jacques snackées, émulsion de corail", "Filet de bœuf Wellington, sauce Périgueux à la truffe", "Farandole de bûches gourmandes de Noël"].map((l, i) =>
+      `<div class="c" style="top:${800 + i * 78}px;font-size:33px;font-weight:600"><span style="color:var(--gold)">✦</span> ${l}</div>`).join("")}
+    <div class="c" style="top:1130px;font-size:26px;color:var(--muted);font-style:italic">Une sélection du menu · entrées et plats au choix · photo d’une création du Chef</div>
+    ${FOOT}`,
+  4: () => `
+    <div class="bg" style="background-image:url(img/dessert-blur.jpg)"></div><div class="shade" style="opacity:.92"></div>
+    <div class="c k" style="top:100px">Mercredi 23 décembre 2026</div>
+    <div class="c d" style="top:150px;font-size:104px">Nos formules <em class="gold">dîner</em></div>
+    <div class="c" style="top:290px">${RULE}</div>
+    ${[["Sans champagne", "79 €", "Menu complet de Noël, 1 bouteille de vin pour 2, cotillons, accès aux 2 salles jusqu’à 05h", false],
+       ["Avec champagne", "99 €", "Tout le menu de Noël + 1 bouteille de champagne supplémentaire pour 2 personnes", true]].map(([s, p, d, hi], i) => `
+      <div class="card ${hi ? "hi" : ""}" style="position:absolute;top:370px;left:${90 + i * 460}px;width:440px;height:680px;text-align:center;padding:50px 34px 0">
+        <div class="d" style="font-size:56px">Dîner de fête</div>
+        <div style="font-size:28px;color:var(--gold);font-weight:800;letter-spacing:.08em;margin-top:8px;text-transform:uppercase">${s}</div>
+        <div class="d gold" style="font-size:150px;font-weight:700;margin-top:30px">${p}</div>
+        <div style="font-size:26px;color:var(--muted)">par personne · TTC</div>
+        <div style="font-size:27px;line-height:1.45;margin-top:34px">${d}</div></div>`).join("")}
+    <div class="c" style="top:1100px;font-size:30px;font-weight:700">Réservations : 01 84 60 20 46</div>
+    <div class="foot" style="bottom:70px">Domaine Villa Beach • Lisses</div>${EVIN}`,
+  5: () => `
+    <div class="bg" style="background-image:url(img/diner-blur.jpg)"></div><div class="shade" style="opacity:.95"></div>
+    <div class="c" style="top:90px;font-size:70px">🎁</div>
+    <div class="c d" style="top:185px;font-size:92px">La magie de Noël<br><em class="gold">aussi pour les petits</em></div>
+    <div class="card hi" style="position:absolute;left:320px;width:440px;top:420px;height:140px;text-align:center;padding-top:12px">
+      <div style="font-size:24px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:800">Menu enfant</div>
+      <div class="d gold" style="font-size:86px;font-weight:700;margin-top:-6px">29 €</div></div>
+    ${[["Entrée", "Mini-sapins feuilletés au jambon et au fromage"], ["Plat", "Bavette de bœuf, pommes de terre rôties ou purée maison"],
+       ["Dessert", "Bûche de Noël caramel-vanille ou une boule de glace, parfum au choix"], ["Boisson", "Jus de fruits ou soda au choix"]].map(([k, v], i) => `
+      <div style="position:absolute;left:110px;right:110px;top:${620 + i * 120}px;display:flex;gap:26px;align-items:baseline">
+        <div class="d gold" style="font-size:46px;font-style:italic;min-width:190px;text-align:right">${k}</div>
+        <div style="font-size:31px;font-weight:600;line-height:1.3">${v}</div></div>`).join("")}
+    <div class="c" style="top:1130px;font-size:28px;color:var(--muted)">Mercredi 23 décembre 2026 · par enfant · TTC</div>
+    ${FOOT}`,
+  6: () => `
+    <div class="bg" style="background-image:url(img/fete-blur.jpg)"></div><div class="shade"></div>
+    <div class="c k" style="top:95px">Noël · de 19h jusqu’à 05h</div>
+    <div class="c d" style="top:145px;font-size:108px"><em class="gold">2 salles,</em> 2 ambiances</div>
+    ${[["fete", "Salle Généraliste", "Christmas Party !", "Hits du moment · Pop · RnB · House · Dance · Incontournables du clubbing"],
+       ["ambiance", "Salle Caribbean Vibes", "Noël sous le soleil des Caraïbes", "Kompa · Gouyad · Zouk · Dancehall · Shatta · Ragga"]].map(([im, n, th, g], i) => `
+      <div class="card" style="position:absolute;left:90px;right:90px;top:${330 + i * 400}px;height:370px;display:flex;overflow:hidden">
+        <div style="width:370px;flex:none;background:url(img/${im}.jpg) center/cover"></div>
+        <div style="padding:40px 34px">
+          <div class="d gold" style="font-size:46px;font-weight:700">${n}</div>
+          <div class="d" style="font-size:44px;font-style:italic;margin-top:8px">${th}</div>
+          <div style="font-size:26px;color:var(--muted);margin-top:18px;line-height:1.45">${g}</div></div></div>`).join("")}
+    <div class="c" style="top:1140px;font-size:28px;font-weight:600">DJs invités toute la nuit · 2 dancefloors</div>
+    ${FOOT}`,
+  7: () => `
+    <div class="bg" style="background-image:url(img/dj-blur.jpg)"></div><div class="shade"></div>
+    <div class="c k" style="top:95px">Mercredi 23 décembre 2026</div>
+    <div class="c d" style="top:145px;font-size:100px">La magie <em class="gold">de la soirée</em></div>
+    <div class="ph" style="left:140px;top:290px;width:800px;height:420px;background-image:url(img/dj.jpg)"></div>
+    ${[["19h · À table", "Ouverture du restaurant et dîner de Noël"], ["Des moments complices", "Jeux toute la soirée, blind test géant et lots à gagner"], ["Jusqu’à 05h · La fête", "DJs invités, deux dancefloors, deux univers musicaux"]].map(([k, v], i) => `
+      <div class="c" style="top:${760 + i * 120}px"><div class="d gold" style="font-size:48px;font-weight:700">${k}</div><div style="font-size:29px;margin-top:4px">${v}</div></div>`).join("")}
+    ${FOOT}`,
+  8: () => `
+    ${Array.from({ length: 60 }, (_, i) => { const r = (n) => { const x = Math.sin(i * 91.7 + n) * 43758.5; return x - Math.floor(x); }; const s = 2 + r(3) * 5; return `<div class="dot" style="left:${r(1) * 1080}px;top:${r(2) * 1350}px;width:${s}px;height:${s}px;opacity:${0.3 + r(4) * 0.6}"></div>`; }).join("")}
+    <div class="c" style="top:260px">${RULE}</div>
+    <div class="c d" style="top:350px;font-size:96px;font-style:italic;line-height:1.12">Parce que la magie de Noël ne dépend pas d’une date, mais des personnes avec qui vous <span class="gold">la partagez.</span></div>
+    <div class="c" style="top:930px;font-size:32px;font-weight:700">Cette année, Noël commence le 23 décembre.</div>
+    ${LOGO(470, 1010, 140)}
+    ${FOOT}`,
+  9: () => `
+    <div class="bg" style="background-image:url(img/ambiance-blur.jpg)"></div><div class="shade" style="opacity:.95"></div>
+    ${LOGO(440, 90, 200)}
+    <div class="c k" style="top:330px">Infos pratiques</div>
+    <div class="c d" style="top:385px;font-size:76px">Votre Noël <em class="gold">en toute sérénité</em></div>
+    ${[["📅", "Mercredi 23 décembre 2026 · restaurant dès 19h, soirée jusqu’à 05h"], ["📍", "23 rue des Pyrénées, 91090 Lisses"],
+       ["🏡", "Ancien corps de ferme rénové · 1 000 m² intérieurs · 3 bars"], ["🚗", "Grand parking sécurisé"], ["✨", "Tenue chic et élégante exigée"], ["☎", "01 84 60 20 46"]].map(([i2, v], i) => `
+      <div style="position:absolute;left:130px;right:110px;top:${560 + i * 90}px;display:flex;gap:26px;align-items:center;font-size:31px;font-weight:600">
+        <div style="width:56px;text-align:center;font-size:38px;color:var(--gold)">${i2}</div><div>${v}</div></div>`).join("")}
+    ${FOOT}`,
+  10: () => `
+    ${LOGO(450, 90, 180)}
+    <div class="c k" style="top:310px">Places limitées</div>
+    <div class="c d" style="top:360px;font-size:100px">Réservez votre <em class="gold">réveillon de Noël</em></div>
+    ${[["Dîner de Noël sans champagne", "79 €", "/pers."], ["Dîner de Noël avec champagne", "99 €", "/pers."], ["Menu enfant", "29 €", "/enfant"]].map(([l, p, u], i) => `
+      <div class="card ${i === 1 ? "hi" : ""}" style="position:absolute;left:110px;right:110px;top:${600 + i * 130}px;height:112px;display:flex;align-items:center;justify-content:space-between;padding:0 44px">
+        <div class="d" style="font-size:44px">${l}</div><div><span class="d gold" style="font-size:72px;font-weight:700">${p}</span><span style="font-size:22px;color:var(--muted)"> ${u}</span></div></div>`).join("")}
+    <div class="c" style="top:1015px;font-size:30px;font-weight:600">Mercredi 23 décembre 2026 · Domaine Villa Beach, Lisses</div>
+    <div class="c" style="top:1075px"><span style="display:inline-block;padding:14px 44px;border-radius:999px;background:var(--grad-gold);color:var(--burgundy);font-size:46px;font-weight:800">☎ 01 84 60 20 46</span></div>
+    <div class="foot" style="bottom:70px">Cette année, Noël commence le 23</div>${EVIN}`,
+};
+const n = new URLSearchParams(location.search).get("n") || "1";
+document.getElementById("root").innerHTML = `<div class="post">${P[n]()}</div>`;
+Promise.all([document.fonts.ready, ...[...document.images].map((i) => i.decode().catch(() => {}))]).then(() => setTimeout(() => (window.READY = true), 300));
+</script>
+</body>
+</html>
